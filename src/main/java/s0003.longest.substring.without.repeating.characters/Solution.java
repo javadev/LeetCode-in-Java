@@ -1,6 +1,6 @@
 package s0003.longest.substring.without.repeating.characters;
 
-class Solution {
+public class Solution {
     public int lengthOfLongestSubstring(String s) {
         int lastIndices[] = new int[256];
         for (int i = 0; i<256; i++) {

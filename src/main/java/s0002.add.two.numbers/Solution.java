@@ -8,7 +8,7 @@ package s0002.add.two.numbers;
  *     ListNode(int x) { val = x; }
  * }
  */
-class Solution {
+public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummyHead = new ListNode(0);
         ListNode p = l1, q = l2, curr = dummyHead;

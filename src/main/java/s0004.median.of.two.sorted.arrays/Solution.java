@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class Solution {
+public class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         List<Integer> l=new ArrayList<Integer>();
         double f;
