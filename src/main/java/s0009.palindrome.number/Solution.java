@@ -7,11 +7,10 @@ public class Solution {
         }
         int rev = 0;
         int localX = x;
-        while (localX > 0)
-        {
-          rev *= 10;
-          rev += localX % 10;
-          localX /= 10;
+        while (localX > 0) {
+            rev *= 10;
+            rev += localX % 10;
+            localX /= 10;
         }
         return rev == x;
     }

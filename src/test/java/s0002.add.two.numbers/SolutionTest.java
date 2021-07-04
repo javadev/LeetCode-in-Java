@@ -2,6 +2,7 @@ package s0002.add.two.numbers;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
 import org.junit.Test;
 
 public class SolutionTest {
@@ -13,6 +14,7 @@ public class SolutionTest {
         ListNode listNode2 = new ListNode(5);
         listNode2.next = new ListNode(6);
         listNode2.next.next = new ListNode(4);
-        assertThat(new Solution().addTwoNumbers(listNode1, listNode2).toString(), equalTo("7, 0, 8"));
+        assertThat(
+                new Solution().addTwoNumbers(listNode1, listNode2).toString(), equalTo("7, 0, 8"));
     }
 }
