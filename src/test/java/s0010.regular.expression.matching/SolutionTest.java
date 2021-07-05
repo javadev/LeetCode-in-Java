@@ -1,4 +1,4 @@
-package s0009.palindrome.number;
+package s0010.regular.expression.matching;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void isPalindrome() {
-        assertThat(new Solution().isPalindrome(121), equalTo(true));
+    public void isMatch() {
+        assertThat(new Solution().isMatch("aa", "a"), equalTo(false));
     }
 }

@@ -2,6 +2,7 @@ package s0006.zigzag.conversion;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
 import org.junit.Test;
 
 public class SolutionTest {

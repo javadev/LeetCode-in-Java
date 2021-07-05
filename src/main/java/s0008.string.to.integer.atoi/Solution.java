@@ -2,15 +2,14 @@ package s0008.string.to.integer.atoi;
 
 public class Solution {
     public int myAtoi(String str) {
-        if (str == null || str.length() == 0)
-            return 0;
+        if (str == null || str.length() == 0) return 0;
 
         int i = 0;
         boolean negetiveSign = false;
         char[] input = str.toCharArray();
 
         while (i < input.length && input[i] == ' ') {
-            i++;  
+            i++;
         }
 
         if (i == input.length) {
@@ -24,7 +23,7 @@ public class Solution {
 
         int num = 0;
         while (i < input.length && input[i] <= '9' && input[i] >= '0') {
-            int tem = input[i] - '0';  //current char
+            int tem = input[i] - '0'; // current char
             tem = negetiveSign ? -tem : tem;
 
             if (num == 0 && tem == '0') { // avoid invalid number like 038

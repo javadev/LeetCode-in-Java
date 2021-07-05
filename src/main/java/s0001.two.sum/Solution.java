@@ -21,7 +21,7 @@ public class Solution {
                 left++;
             }
         }
-        
+
         for (int i = 0; i < nums.length; i++) {
             if (nums1[left] == nums[i]) {
                 result[0] = i;
@@ -34,7 +34,7 @@ public class Solution {
                 break;
             }
         }
-        
+
         int tmp = result[0];
         result[0] = Math.min(result[0], result[1]);
         result[1] = Math.max(tmp, result[1]);

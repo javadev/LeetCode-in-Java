@@ -5,7 +5,8 @@ public class Solution {
         int start = 0, end = 0;
         char[] cs = s.toCharArray();
         for (int i = 0, max = 0, prev = 0; i < cs.length; ++i) {
-            if (i - max - 1 >= 0 && cs[i - max - 1] == cs[i]
+            if (i - max - 1 >= 0
+                    && cs[i - max - 1] == cs[i]
                     && (prev == i - 1 || isPalindrome(cs, i - max, i))) {
                 start = i - max - 1;
                 end = i + 1;
