@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void romanToInt() {
+    public void longestCommonPrefix() {
         assertThat(
                 new Solution().longestCommonPrefix(new String[] {"flower", "flow", "flight"}),
                 equalTo("fl"));
