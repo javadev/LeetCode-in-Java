@@ -1,6 +1,5 @@
 package s0019.remove.nth.node.from.end.of.list;
 
-
 public class Solution {
     int n;
 

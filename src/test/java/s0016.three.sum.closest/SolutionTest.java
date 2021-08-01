@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void threeSum() {
+    public void threeSumClosest() {
         assertThat(new Solution().threeSumClosest(new int[] {-1, 2, 1, -4}, 1), equalTo(2));
     }
 }
