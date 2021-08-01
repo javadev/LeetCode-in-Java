@@ -14,4 +14,14 @@ public class ListNode {
         this.val = val;
         this.next = next;
     }
+
+    public String toString() {
+        String result = "";
+        ListNode nextCopy = next;
+        while (nextCopy.next != null) {
+            result += ", " + nextCopy.val;
+            nextCopy = nextCopy.next;
+        }
+        return result;
+    }
 }
