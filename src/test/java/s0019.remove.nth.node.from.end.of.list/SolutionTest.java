@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void fourSum() {
+    public void removeNthFromEnd() {
         ListNode head = new ListNode();
         ListNode node1 = new ListNode();
         node1.val = 1;
