@@ -17,11 +17,15 @@ public class ListNode {
 
     public String toString() {
         String result = "";
-        ListNode nextCopy = next;
-        while (nextCopy.next != null) {
-            result += ", " + nextCopy.val;
-            nextCopy = nextCopy.next;
+        ListNode current = next;
+        while (current.next != null) {
+            result += current.val;
+            if (current.next != null) {
+                result += ", ";
+            }
+            current = current.next;
         }
+        result += current.val;
         return result;
     }
 }
