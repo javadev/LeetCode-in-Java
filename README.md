@@ -1,5 +1,6 @@
 # LeetCode-in-Java
 
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.javadev/leetcode-in-java.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.github.javadev%22%20AND%20a%3A%22leetcode-in-java%22)
 ![Java CI](https://github.com/javadev/LeetCode-in-Java/workflows/Java%20CI%20with%20Maven/badge.svg)
 
 Java Solution for LeetCode algorithm problems, continually updating.
