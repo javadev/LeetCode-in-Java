@@ -3,7 +3,6 @@ package s0023.merge.k.sorted.lists;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import java.util.Arrays;
 import org.junit.Test;
 
 public class SolutionTest {
