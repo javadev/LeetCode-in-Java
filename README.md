@@ -24,6 +24,6 @@ Include the following in your `pom.xml` for Maven:
 Gradle:
 
 ```groovy
-compile 'com.github.javadev:leetcode-in-java:1.2'
+implementation 'com.github.javadev:leetcode-in-java:1.2'
 ```
 
