@@ -2,7 +2,6 @@ package s0001.two.sum;
 
 import java.util.Arrays;
 
-@SuppressWarnings("java:S1598")
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
         if (nums == null || nums.length <= 1) {

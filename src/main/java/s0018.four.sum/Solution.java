@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Solution {
-    public static List<List<Integer>> fourSum(int[] nums, int target) {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> list = new ArrayList<>();
         Arrays.sort(nums);
         int n = nums.length;

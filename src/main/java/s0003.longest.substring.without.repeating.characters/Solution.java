@@ -2,7 +2,7 @@ package s0003.longest.substring.without.repeating.characters;
 
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
-        int lastIndices[] = new int[256];
+        int[] lastIndices = new int[256];
         for (int i = 0; i < 256; i++) {
             lastIndices[i] = -1;
         }
@@ -10,7 +10,6 @@ public class Solution {
         int maxLen = 0;
         int curLen = 0;
         int start = 0;
-        int bestStart = 0;
         for (int i = 0; i < s.length(); i++) {
             char cur = s.charAt(i);
             if (lastIndices[cur] < start) {
@@ -25,7 +24,6 @@ public class Solution {
 
             if (curLen > maxLen) {
                 maxLen = curLen;
-                bestStart = start;
             }
         }
 

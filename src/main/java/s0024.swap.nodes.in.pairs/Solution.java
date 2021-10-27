@@ -1,5 +1,7 @@
 package s0024.swap.nodes.in.pairs;
 
+import com.github.leetcode.ListNode;
+
 public class Solution {
     public ListNode swapPairs(ListNode head) {
         if (head == null) return head;
@@ -21,7 +23,9 @@ public class Solution {
         // base case
         if (len < 2) return head;
 
-        ListNode curr = head, prev = null, next = null;
+        ListNode curr = head;
+        ListNode prev = null;
+        ListNode next;
         for (int i = 0; i < 2; i++) {
             // reverse linked list code
             next = curr.next;

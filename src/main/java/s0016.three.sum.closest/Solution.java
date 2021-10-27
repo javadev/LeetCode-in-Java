@@ -25,11 +25,10 @@ public class Solution {
                 if (temp == target) return target;
                 if (temp < target) {
                     j++;
-                    sum = lessGap(sum, temp, target);
                 } else {
                     k--;
-                    sum = lessGap(sum, temp, target);
                 }
+                sum = lessGap(sum, temp, target);
             }
         }
         return sum;

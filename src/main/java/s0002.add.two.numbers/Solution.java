@@ -1,5 +1,7 @@
 package s0002.add.two.numbers;
 
+import com.github.leetcode.ListNode;
+
 /*
  * Definition for singly-linked list.
  * public class ListNode {

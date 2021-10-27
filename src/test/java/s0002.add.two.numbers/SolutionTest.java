@@ -3,6 +3,7 @@ package s0002.add.two.numbers;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+import com.github.leetcode.ListNode;
 import org.junit.Test;
 
 public class SolutionTest {

@@ -3,6 +3,7 @@ package s0019.remove.nth.node.from.end.of.list;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+import com.github.leetcode.ListNode;
 import org.junit.Test;
 
 public class SolutionTest {
@@ -24,6 +25,6 @@ public class SolutionTest {
         ListNode node5 = new ListNode();
         node5.val = 5;
         node4.next = node5;
-        assertThat(new Solution().removeNthFromEnd(head, 2).toString(), equalTo("1, 2, 3, 5"));
+        assertThat(new Solution().removeNthFromEnd(node1, 2).toString(), equalTo("1, 2, 3, 5"));
     }
 }

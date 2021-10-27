@@ -1,5 +1,7 @@
 package s0023.merge.k.sorted.lists;
 
+import com.github.leetcode.ListNode;
+
 public class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0) return null;
@@ -20,7 +22,7 @@ public class Solution {
     private ListNode mergeTwoLists(ListNode left, ListNode right) {
         if (left == null) return right;
         if (right == null) return left;
-        ListNode res = null;
+        ListNode res;
         if (left.val <= right.val) {
             res = left;
             left = left.next;

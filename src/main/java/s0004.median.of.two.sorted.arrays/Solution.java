@@ -6,10 +6,10 @@ import java.util.List;
 
 public class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        List<Integer> l = new ArrayList<Integer>();
+        List<Integer> l = new ArrayList<>();
         double f;
-        for (int i = 0; i < nums1.length; i++) l.add(nums1[i]);
-        for (int j = 0; j < nums2.length; j++) l.add(nums2[j]);
+        for (int j : nums1) l.add(j);
+        for (int i : nums2) l.add(i);
         Collections.sort(l);
         int k = l.size();
         if (k % 2 == 0) f = (double) ((l.get(k / 2 - 1)) + (l.get(k / 2))) / 2;

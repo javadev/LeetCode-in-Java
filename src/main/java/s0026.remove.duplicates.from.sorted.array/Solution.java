@@ -10,13 +10,11 @@ public class Solution {
             return n;
         }
         while (j <= n - 1) {
-            if (nums[i] == nums[j]) {
-                j++;
-            } else {
+            if (nums[i] != nums[j]) {
                 nums[i + 1] = nums[j];
                 i++;
-                j++;
             }
+            j++;
         }
 
         return i + 1;

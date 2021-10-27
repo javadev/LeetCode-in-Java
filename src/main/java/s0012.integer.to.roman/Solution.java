@@ -15,7 +15,7 @@ public class Solution {
         num = numerals(sb, num, 0, 0, m, ' ', ' ', 'M');
         num = numerals(sb, num, m, d, c, 'M', 'D', 'C');
         num = numerals(sb, num, c, l, x, 'C', 'L', 'X');
-        num = numerals(sb, num, x, v, i, 'X', 'V', 'I');
+        numerals(sb, num, x, v, i, 'X', 'V', 'I');
 
         return sb.toString();
     }

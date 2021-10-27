@@ -9,7 +9,8 @@ public class Solution {
         Arrays.sort(nums);
         final int len = nums.length;
         List<List<Integer>> result = new ArrayList<>();
-        int l = 0, r = 0;
+        int l;
+        int r;
         for (int i = 0; i < len - 2; i++) {
             l = i + 1;
             r = len - 1;

@@ -1,5 +1,7 @@
 package s0019.remove.nth.node.from.end.of.list;
 
+import com.github.leetcode.ListNode;
+
 public class Solution {
     int n;
 

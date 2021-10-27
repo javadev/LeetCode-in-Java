@@ -2,11 +2,11 @@ package s0010.regular.expression.matching;
 
 public class Solution {
     public boolean isMatch(String s, String p) {
-        Boolean dp[][] = new Boolean[s.length() + 1][p.length() + 1];
+        Boolean[][] dp = new Boolean[s.length() + 1][p.length() + 1];
         return isMatch(s, p, 0, 0, dp);
     }
 
-    public boolean isMatch(String s, String p, int i, int j, Boolean dp[][]) {
+    public boolean isMatch(String s, String p, int i, int j, Boolean[][] dp) {
         if (i == s.length() && j == p.length()) {
             return true;
         }
