@@ -29,8 +29,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <ciManagement>
-        <system>Travis CI</system>
-        <url>https://travis-ci.org/javadev/LeetCode-in-Java</url>
+        <system>GitHub Actions</system>
+        <url>https://github.com/javadev/LeetCode-in-Java/actions</url>
     </ciManagement>
     <issueManagement>
         <system>GitHub Issues</system>
