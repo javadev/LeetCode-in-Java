@@ -1,25 +1,32 @@
 package s0010_regular_expression_matching;
 
 public class Solution {
+
+    Boolean[][] cache;
+
     public boolean isMatch(String s, String p) {
-        Boolean[][] dp = new Boolean[s.length() + 1][p.length() + 1];
-        return isMatch(s, p, 0, 0, dp);
+        cache = new Boolean[s.length() + 1][p.length() + 1];
+        return isMatch(s, p, 0, 0);
     }
 
-    public boolean isMatch(String s, String p, int i, int j, Boolean[][] dp) {
-        if (i == s.length() && j == p.length()) {
-            return true;
-        }
+    public boolean isMatch(String s, String p, int i, int j) {
         if (j == p.length()) {
-            return false;
+            return i == s.length();
         }
-        if (dp[i][j] != null) {
-            return dp[i][j];
+
+        boolean result = false;
+
+        if (cache[i][j] != null) {
+            return cache[i][j];
         }
-        boolean ans = i < s.length() && (s.charAt(i) == p.charAt(j) || p.charAt(j) == '.');
-        if (j + 1 < p.length() && p.charAt(j + 1) == '*') {
-            return dp[i][j] = isMatch(s, p, i, j + 2, dp) || (ans && isMatch(s, p, i + 1, j, dp));
+
+        boolean firstMatch = i < s.length() && (s.charAt(i) == p.charAt(j) || p.charAt(j) == '.');
+
+        if ((j + 1) < p.length() && p.charAt(j + 1) == '*') {
+            result = (firstMatch && isMatch(s, p, i + 1, j)) || isMatch(s, p, i, j + 2);
+        } else {
+            result = firstMatch && isMatch(s, p, i + 1, j + 1);
         }
-        return dp[i][j] = ans && isMatch(s, p, i + 1, j + 1, dp);
+        return cache[i][j] = result;
     }
 }
