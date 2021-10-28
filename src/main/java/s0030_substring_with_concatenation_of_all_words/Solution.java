@@ -2,50 +2,44 @@ package s0030_substring_with_concatenation_of_all_words;
 
 import java.util.*;
 
+@SuppressWarnings("java:S127")
 public class Solution {
     public List<Integer> findSubstring(String s, String[] words) {
-        List<Integer> output = new ArrayList<>();
-        if (s == null || words == null || s.length() == 0 || words.length == 0) {
-            return output;
+        List<Integer> indices = new ArrayList<>();
+        if (words.length == 0) {
+            return indices;
         }
-        int wordLen = words[0].length(), wordsCount = 0;
-        Map<String, Integer> wordToCount = new HashMap<>();
+        // Put each word into a HashMap and calculate word frequency
+        Map<String, Integer> wordMap = new HashMap<>();
         for (String word : words) {
-            wordToCount.put(word, wordToCount.getOrDefault(word, 0) + 1);
-            wordsCount++;
+            wordMap.put(word, wordMap.getOrDefault(word, 0) + 1);
         }
-        int substringLen = wordLen * wordsCount;
-        for (int start = 0; start < wordLen; start++) {
-            Queue<String> queue = new LinkedList<>();
-            Map<String, Integer> substrWordToCount = new HashMap<>();
-            for (int lo = start, hi = start; hi <= s.length() - wordLen; hi += wordLen) {
-                String word = s.substring(hi, hi + wordLen);
-                if (!wordToCount.containsKey(word)) {
-                    queue = new LinkedList<>();
-                    lo = hi + wordLen;
-                    substrWordToCount = new HashMap<>();
-                } else {
-                    int substrWordCount = substrWordToCount.getOrDefault(word, 0);
-                    if (substrWordCount >= wordToCount.get(word)) {
-                        while (!queue.peek().equals(word)) {
-                            String wordToRemove = queue.poll();
-                            int count = substrWordToCount.get(wordToRemove);
-                            if (count == 1) substrWordToCount.remove(wordToRemove);
-                            else substrWordToCount.put(wordToRemove, count - 1);
-                            lo += wordLen;
-                        }
-                        lo += wordLen;
-                        queue.poll();
+        int wordLength = words[0].length();
+        int window = words.length * wordLength;
+        for (int i = 0; i < wordLength; i++) {
+            // move a word's length each time
+            for (int j = i; j + window <= s.length(); j = j + wordLength) {
+                // get the subStr
+                String subStr = s.substring(j, j + window);
+                Map<String, Integer> map = new HashMap<>();
+                // start from the last word
+                for (int k = words.length - 1; k >= 0; k--) {
+                    // get the word from subStr
+                    String word = subStr.substring(k * wordLength, (k + 1) * wordLength);
+                    int count = map.getOrDefault(word, 0) + 1;
+                    // if the num of the word is greater than wordMap's, move (k * wordLength) and
+                    // break
+                    if (count > wordMap.getOrDefault(word, 0)) {
+                        j = j + k * wordLength;
+                        break;
+                    } else if (k == 0) {
+                        indices.add(j);
                     } else {
-                        substrWordToCount.put(word, substrWordCount + 1);
-                    }
-                    queue.offer(word);
-                    if (queue.size() == wordsCount) {
-                        output.add(lo);
+                        map.put(word, count);
                     }
                 }
             }
         }
-        return output;
+        return indices;
     }
 }
