@@ -1,4 +1,4 @@
-package s0037_sudoku_solve;
+package s0037_sudoku_solver;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

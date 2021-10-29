@@ -1,4 +1,4 @@
-package s0037_sudoku_solve;
+package s0037_sudoku_solver;
 
 import java.util.ArrayList;
 import java.util.List;
