@@ -27,6 +27,7 @@ public class Solution {
         } else {
             result = firstMatch && isMatch(s, p, i + 1, j + 1);
         }
-        return cache[i][j] = result;
+        cache[i][j] = result;
+        return result;
     }
 }
