@@ -1,7 +1,9 @@
 package s0027_remove_element;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 import java.util.Arrays;
-import org.junit.Assert;
 import org.junit.Test;
 
 public class SolutionTest {
@@ -10,6 +12,6 @@ public class SolutionTest {
         int[] expected = new int[] {2, 2};
         int[] original = new int[] {3, 2, 2, 3};
         int end = new Solution().removeElement(original, 3);
-        Assert.assertArrayEquals(expected, Arrays.copyOfRange(original, 0, end));
+        assertThat(Arrays.copyOfRange(original, 0, end), equalTo(expected));
     }
 }

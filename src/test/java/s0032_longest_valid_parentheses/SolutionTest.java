@@ -1,11 +1,13 @@
 package s0032_longest_valid_parentheses;
 
-import org.junit.Assert;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 import org.junit.Test;
 
 public class SolutionTest {
     @Test
     public void longestValidParentheses() {
-        Assert.assertEquals(2, new Solution().longestValidParentheses("(()"));
+        assertThat(new Solution().longestValidParentheses("(()"), equalTo(2));
     }
 }
