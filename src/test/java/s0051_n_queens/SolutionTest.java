@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void nQueens() {
+    public void solveNQueens() {
         List<List<String>> actual = new Solution().solveNQueens(4);
         List<List<String>> expected = new ArrayList<>();
         expected.add(Arrays.asList(".Q..", "...Q", "Q...", "..Q."));

@@ -6,7 +6,9 @@ import java.util.List;
 
 public class Solution {
     public List<String> letterCombinations(String digits) {
-        if (digits.isEmpty()) return Collections.emptyList();
+        if (digits.isEmpty()) {
+            return Collections.emptyList();
+        }
         List<String> words = new ArrayList<>();
         char[] word = new char[digits.length()];
         helper(digits, word, 0, words);

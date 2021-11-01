@@ -19,7 +19,9 @@ public class Solution {
             return;
         }
         for (int i = 0; i < n; i++) {
-            if (pos[i] || pos[n + i + row] || pos[n + 2 * n - 1 + n - 1 + i - row]) continue;
+            if (pos[i] || pos[n + i + row] || pos[n + 2 * n - 1 + n - 1 + i - row]) {
+                continue;
+            }
             pos[i] = true;
             pos[n + i + row] = true;
             pos[n + 2 * n - 1 + n - 1 + i - row] = true;

@@ -12,17 +12,23 @@ public class Solution {
 
             if (nums[i] == val) {
                 occurTimes++;
-                if (j == i) return len - occurTimes;
+                if (j == i) {
+                    return len - occurTimes;
+                }
                 while (nums[j] == val) {
                     j--;
                     occurTimes++;
-                    if (j == i) return len - occurTimes;
+                    if (j == i) {
+                        return len - occurTimes;
+                    }
                 }
 
                 nums[i] = nums[j];
                 j--;
             }
-            if (i == j) return len - occurTimes;
+            if (i == j) {
+                return len - occurTimes;
+            }
         }
         return len - occurTimes;
     }

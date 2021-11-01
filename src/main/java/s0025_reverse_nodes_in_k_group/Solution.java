@@ -4,13 +4,17 @@ import com_github_leetcode.ListNode;
 
 public class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
-        if (head == null || head.next == null || k == 1) return head;
+        if (head == null || head.next == null || k == 1) {
+            return head;
+        }
         int j = 0;
         ListNode len = head;
         // loop for checking the length of the linklist, if the linklist is less than k, then return
         // as it is.
         while (j < k) {
-            if (len == null) return head;
+            if (len == null) {
+                return head;
+            }
             len = len.next;
             j++;
         }

@@ -31,9 +31,13 @@ public class Solution {
             }
         }
         boolean isMatch = true;
-        while (j < pattern.length() && pattern.charAt(j) == '*') j++;
+        while (j < pattern.length() && pattern.charAt(j) == '*') {
+            j++;
+        }
 
-        if (i != inputString.length() || j != pattern.length()) isMatch = false;
+        if (i != inputString.length() || j != pattern.length()) {
+            isMatch = false;
+        }
 
         return isMatch;
     }

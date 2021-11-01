@@ -2,7 +2,9 @@ package s0008_string_to_integer_atoi;
 
 public class Solution {
     public int myAtoi(String str) {
-        if (str == null || str.length() == 0) return 0;
+        if (str == null || str.length() == 0) {
+            return 0;
+        }
 
         int i = 0;
         boolean negetiveSign = false;

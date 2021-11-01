@@ -2,7 +2,9 @@ package s0042_trapping_rain_water;
 
 public class Solution {
     public int trap(int[] height) {
-        if (height == null || height.length <= 2) return 0;
+        if (height == null || height.length <= 2) {
+            return 0;
+        }
         int l = 0;
         int r = height.length - 1;
         int maxL = height[l];

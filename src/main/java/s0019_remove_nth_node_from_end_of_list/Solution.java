@@ -14,7 +14,9 @@ public class Solution {
     }
 
     private void removeNth(ListNode node) {
-        if (node.next == null) return;
+        if (node.next == null) {
+            return;
+        }
 
         removeNth(node.next);
         this.n--;

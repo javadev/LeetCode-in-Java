@@ -17,7 +17,9 @@ public class Solution {
         int result = -1;
         while (l <= r) {
             int mid = l + (r - l) / 2;
-            if (nums[mid] == target) result = mid;
+            if (nums[mid] == target) {
+                result = mid;
+            }
 
             if (nums[mid] < target || (nums[mid] == target && equals)) {
                 l = mid + 1;

@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void combinationSumII() {
+    public void combinationSum2() {
         List<List<Integer>> expected = new ArrayList<>();
 
         List<Integer> sub1 = new ArrayList<Integer>();

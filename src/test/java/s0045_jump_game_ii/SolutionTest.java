@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void jumpGameII() {
+    public void jump() {
         assertThat(new Solution().jump(new int[] {2, 3, 1, 1, 4}), equalTo(2));
     }
 }

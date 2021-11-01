@@ -2,8 +2,12 @@ package s0014_longest_common_prefix;
 
 public class Solution {
     public String longestCommonPrefix(String[] strs) {
-        if (strs.length < 1) return "";
-        if (strs.length == 1) return strs[0];
+        if (strs.length < 1) {
+            return "";
+        }
+        if (strs.length == 1) {
+            return strs[0];
+        }
 
         String temp = strs[0];
 

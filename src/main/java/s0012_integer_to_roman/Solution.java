@@ -26,67 +26,51 @@ public class Solution {
             int ten,
             int five,
             int one,
-            char c_ten,
-            char c_five,
-            char c_one) {
+            char cTen,
+            char cFive,
+            char cOne) {
         int div = num / one;
         switch (div) {
             case 9:
-                {
-                    sb.append(c_one);
-                    sb.append(c_ten);
-                    break;
-                }
+                sb.append(cOne);
+                sb.append(cTen);
+                break;
             case 8:
-                {
-                    sb.append(c_five);
-                    sb.append(c_one);
-                    sb.append(c_one);
-                    sb.append(c_one);
-                    break;
-                }
+                sb.append(cFive);
+                sb.append(cOne);
+                sb.append(cOne);
+                sb.append(cOne);
+                break;
             case 7:
-                {
-                    sb.append(c_five);
-                    sb.append(c_one);
-                    sb.append(c_one);
-                    break;
-                }
+                sb.append(cFive);
+                sb.append(cOne);
+                sb.append(cOne);
+                break;
             case 6:
-                {
-                    sb.append(c_five);
-                    sb.append(c_one);
-                    break;
-                }
+                sb.append(cFive);
+                sb.append(cOne);
+                break;
             case 5:
-                {
-                    sb.append(c_five);
-                    break;
-                }
+                sb.append(cFive);
+                break;
             case 4:
-                {
-                    sb.append(c_one);
-                    sb.append(c_five);
-                    break;
-                }
+                sb.append(cOne);
+                sb.append(cFive);
+                break;
             case 3:
-                {
-                    sb.append(c_one);
-                    sb.append(c_one);
-                    sb.append(c_one);
-                    break;
-                }
+                sb.append(cOne);
+                sb.append(cOne);
+                sb.append(cOne);
+                break;
             case 2:
-                {
-                    sb.append(c_one);
-                    sb.append(c_one);
-                    break;
-                }
+                sb.append(cOne);
+                sb.append(cOne);
+                break;
             case 1:
-                {
-                    sb.append(c_one);
-                    break;
-                }
+                sb.append(cOne);
+                break;
+            default:
+                break;
         }
         return num - (div * one);
     }

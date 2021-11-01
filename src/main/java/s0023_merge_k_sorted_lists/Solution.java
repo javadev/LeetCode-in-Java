@@ -4,7 +4,9 @@ import com_github_leetcode.ListNode;
 
 public class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
-        if (lists.length == 0) return null;
+        if (lists.length == 0) {
+            return null;
+        }
         return mergeKLists(lists, 0, lists.length);
     }
 
@@ -20,8 +22,12 @@ public class Solution {
     }
 
     private ListNode mergeTwoLists(ListNode left, ListNode right) {
-        if (left == null) return right;
-        if (right == null) return left;
+        if (left == null) {
+            return right;
+        }
+        if (right == null) {
+            return left;
+        }
         ListNode res;
         if (left.val <= right.val) {
             res = left;

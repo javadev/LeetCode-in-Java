@@ -52,6 +52,8 @@ public class Solution {
                 case 'M':
                     x += 1000;
                     break;
+                default:
+                    break;
             }
         }
         return x;

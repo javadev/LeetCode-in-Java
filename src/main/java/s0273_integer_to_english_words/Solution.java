@@ -31,7 +31,9 @@ public class Solution {
     String billion = "Billion ";
 
     public String numberToWords(int num) {
-        if (num == 0) return zero;
+        if (num == 0) {
+            return zero;
+        }
 
         StringBuilder sb = new StringBuilder();
 

@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void permutationsII() {
+    public void permuteUnique() {
         List<List<Integer>> expected = new ArrayList<>();
         expected.add(Arrays.asList(1, 1, 2));
         expected.add(Arrays.asList(1, 2, 1));

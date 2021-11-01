@@ -4,7 +4,9 @@ import com_github_leetcode.ListNode;
 
 public class Solution {
     public ListNode swapPairs(ListNode head) {
-        if (head == null) return head;
+        if (head == null) {
+            return head;
+        }
         int len = getLength(head);
         return reverse(head, len);
     }
@@ -21,7 +23,9 @@ public class Solution {
     // Recursive function to reverse in groups
     private ListNode reverse(ListNode head, int len) {
         // base case
-        if (len < 2) return head;
+        if (len < 2) {
+            return head;
+        }
 
         ListNode curr = head;
         ListNode prev = null;

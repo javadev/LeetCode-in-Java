@@ -20,7 +20,9 @@ public class Solution {
                             : 1;
             while (i + dp[i] < newStr.length
                     && i - dp[i] >= 0
-                    && newStr[i + dp[i]] == newStr[i - dp[i]]) dp[i]++;
+                    && newStr[i + dp[i]] == newStr[i - dp[i]]) {
+                dp[i]++;
+            }
             if (friendCenter + friendRadius < i + dp[i]) {
                 friendCenter = i;
                 friendRadius = dp[i];

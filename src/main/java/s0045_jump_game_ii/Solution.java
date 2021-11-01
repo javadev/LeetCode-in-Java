@@ -17,7 +17,9 @@ public class Solution {
                 minJump++;
             }
 
-            if (length >= nums.length - i - 1) return minJump;
+            if (length >= nums.length - i - 1) {
+                return minJump;
+            }
         }
 
         return minJump;
