@@ -15,7 +15,7 @@ Include the following in your `pom.xml` for Maven:
   <dependency>
     <groupId>com.github.javadev</groupId>
     <artifactId>leetcode-in-java</artifactId>
-    <version>1.2</version>
+    <version>1.3</version>
   </dependency>
   ...
 </dependencies>
@@ -24,6 +24,6 @@ Include the following in your `pom.xml` for Maven:
 Gradle:
 
 ```groovy
-implementation 'com.github.javadev:leetcode-in-java:1.2'
+implementation 'com.github.javadev:leetcode-in-java:1.3'
 ```
 
