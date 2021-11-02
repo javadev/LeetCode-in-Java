@@ -2,25 +2,31 @@ package s0006_zigzag_conversion;
 
 public class Solution {
     public String convert(String s, int numRows) {
-        if (s == null || s.length() <= numRows || numRows == 1) {
+        int sLen = s.length();
+        if (numRows == 1) {
             return s;
         }
-        char[] letters = new char[s.length()];
-        for (int i = 0, k = 0; i < numRows; i++) {
+        int maxDist = numRows * 2 - 2;
+        StringBuilder buf = new StringBuilder();
+        for (int i = 0; i < numRows; i++) {
+            int index = i;
             if (i == 0 || i == numRows - 1) {
-                for (int j = i; j < s.length(); j += 2 * numRows - 2) {
-                    letters[k++] = s.charAt(j);
+                while (index < sLen) {
+                    buf.append(s.charAt(index));
+                    index += maxDist;
                 }
-                continue;
-            }
-            letters[k++] = s.charAt(i);
-            for (int j = 2 * numRows - 2 - i; j < s.length(); j += 2 * numRows - 2) {
-                letters[k++] = s.charAt(j);
-                if (j + 2 * i < s.length()) {
-                    letters[k++] = s.charAt(j + 2 * i);
+            } else {
+                while (index < sLen) {
+                    buf.append(s.charAt(index));
+                    index += maxDist - i * 2;
+                    if (index >= sLen) {
+                        break;
+                    }
+                    buf.append(s.charAt(index));
+                    index += i * 2;
                 }
             }
         }
-        return new String(letters);
+        return buf.toString();
     }
 }
