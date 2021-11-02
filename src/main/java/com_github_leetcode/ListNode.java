@@ -18,17 +18,13 @@ public class ListNode {
 
     public String toString() {
         StringBuilder result = new StringBuilder("" + val);
-        if (next.next != null) {
-            result.append(", ");
-        }
         ListNode current = next;
         while (current.next != null) {
+            result.append(", ");
             result.append(current.val);
-            if (current.next != null) {
-                result.append(", ");
-            }
             current = current.next;
         }
+        result.append(", ");
         result.append(current.val);
         return result.toString();
     }
