@@ -15,7 +15,7 @@ import com_github_leetcode.ListNode;
 public class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null) {
-            return head;
+            return null;
         }
         ListNode current = head;
         ListNode next = current.next;

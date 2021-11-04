@@ -15,10 +15,10 @@ public class Solution {
                     list.next = new ListNode(l2.val);
                     l2 = l2.next;
                 }
-            } else if (l1 != null && l2 == null) {
+            } else if (l1 != null) {
                 list.next = new ListNode(l1.val);
                 l1 = l1.next;
-            } else if (l1 == null && l2 != null) {
+            } else {
                 list.next = new ListNode(l2.val);
                 l2 = l2.next;
             }

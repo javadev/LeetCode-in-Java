@@ -12,23 +12,15 @@ public class Solution {
         int v = 5;
         int i = 1;
 
-        num = numerals(sb, num, 0, 0, m, ' ', ' ', 'M');
-        num = numerals(sb, num, m, d, c, 'M', 'D', 'C');
-        num = numerals(sb, num, c, l, x, 'C', 'L', 'X');
-        numerals(sb, num, x, v, i, 'X', 'V', 'I');
+        num = numerals(sb, num, m, ' ', ' ', 'M');
+        num = numerals(sb, num, c, 'M', 'D', 'C');
+        num = numerals(sb, num, x, 'C', 'L', 'X');
+        numerals(sb, num, i, 'X', 'V', 'I');
 
         return sb.toString();
     }
 
-    public int numerals(
-            StringBuilder sb,
-            int num,
-            int ten,
-            int five,
-            int one,
-            char cTen,
-            char cFive,
-            char cOne) {
+    public int numerals(StringBuilder sb, int num, int one, char cTen, char cFive, char cOne) {
         int div = num / one;
         switch (div) {
             case 9:

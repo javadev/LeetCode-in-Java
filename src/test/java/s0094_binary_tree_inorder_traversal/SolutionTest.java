@@ -12,8 +12,7 @@ public class SolutionTest {
         TreeNode treeNode = new TreeNode(1);
         TreeNode treeNode2 = new TreeNode(2);
         treeNode.right = treeNode2;
-        TreeNode treeNode3 = new TreeNode(3);
-        treeNode2.left = treeNode3;
+        treeNode2.left = new TreeNode(3);
         assertThat(new Solution().inorderTraversal(treeNode).toString(), equalTo("[1, 3, 2]"));
     }
 }

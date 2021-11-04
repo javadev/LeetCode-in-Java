@@ -15,7 +15,7 @@ public class SolutionTest {
 
         List<Integer> sublist1 = new ArrayList<>();
         sublist1.add(7);
-        List<Integer> sublist2 = new ArrayList<Integer>();
+        List<Integer> sublist2 = new ArrayList<>();
         sublist2.addAll(Arrays.asList(3, 2, 2));
 
         expected.add(sublist1);

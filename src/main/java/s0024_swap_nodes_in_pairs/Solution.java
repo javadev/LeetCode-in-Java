@@ -5,7 +5,7 @@ import com_github_leetcode.ListNode;
 public class Solution {
     public ListNode swapPairs(ListNode head) {
         if (head == null) {
-            return head;
+            return null;
         }
         int len = getLength(head);
         return reverse(head, len);
@@ -38,8 +38,7 @@ public class Solution {
             curr = next;
         }
 
-        ListNode nextNode = reverse(curr, len - 2);
-        head.next = nextNode;
+        head.next = reverse(curr, len - 2);
         return prev;
     }
 }
