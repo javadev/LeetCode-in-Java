@@ -7,7 +7,11 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void validNumber() {
-        assertThat(new Solution().isNumber("0"), equalTo(true));
+    public void isNumber() {
+        Solution solution = new Solution();
+        assertThat(solution.isNumber("0"), equalTo(true));
+        assertThat(solution.isNumber("e"), equalTo(false));
+        assertThat(solution.isNumber("."), equalTo(false));
+        assertThat(solution.isNumber(".1"), equalTo(true));
     }
 }
