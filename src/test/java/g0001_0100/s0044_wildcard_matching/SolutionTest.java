@@ -7,7 +7,12 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void wildcardMatching() {
-        assertThat(new Solution().isMatch("aa", "a"), equalTo(false));
+    public void isMatch() {
+        Solution solution = new Solution();
+        assertThat(solution.isMatch("aa", "a"), equalTo(false));
+        assertThat(solution.isMatch("aa", "*"), equalTo(true));
+        assertThat(solution.isMatch("cb", "?a"), equalTo(false));
+        assertThat(solution.isMatch("adceb", "*a*b"), equalTo(true));
+        assertThat(solution.isMatch("acdcb", "a*c?b"), equalTo(false));
     }
 }

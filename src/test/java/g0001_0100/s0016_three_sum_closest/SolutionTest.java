@@ -8,6 +8,8 @@ import org.junit.Test;
 public class SolutionTest {
     @Test
     public void threeSumClosest() {
-        assertThat(new Solution().threeSumClosest(new int[] {-1, 2, 1, -4}, 1), equalTo(2));
+        Solution solution = new Solution();
+        assertThat(solution.threeSumClosest(new int[] {-1, 2, 1, -4}, 1), equalTo(2));
+        assertThat(solution.threeSumClosest(new int[] {0, 0, 0}, 1), equalTo(0));
     }
 }
