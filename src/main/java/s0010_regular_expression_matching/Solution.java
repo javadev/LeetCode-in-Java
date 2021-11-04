@@ -14,7 +14,7 @@ public class Solution {
             return i == s.length();
         }
 
-        boolean result = false;
+        boolean result;
 
         if (cache[i][j] != null) {
             return cache[i][j];

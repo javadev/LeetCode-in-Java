@@ -13,16 +13,16 @@ public class SolutionTest {
     public void combinationSum2() {
         List<List<Integer>> expected = new ArrayList<>();
 
-        List<Integer> sub1 = new ArrayList<Integer>();
+        List<Integer> sub1 = new ArrayList<>();
         sub1.addAll(Arrays.asList(1, 1, 6));
 
-        List<Integer> sub2 = new ArrayList<Integer>();
+        List<Integer> sub2 = new ArrayList<>();
         sub2.addAll(Arrays.asList(1, 2, 5));
 
-        List<Integer> sub3 = new ArrayList<Integer>();
+        List<Integer> sub3 = new ArrayList<>();
         sub3.addAll(Arrays.asList(1, 7));
 
-        List<Integer> sub4 = new ArrayList<Integer>();
+        List<Integer> sub4 = new ArrayList<>();
         sub4.addAll(Arrays.asList(2, 6));
 
         expected.add(sub1);

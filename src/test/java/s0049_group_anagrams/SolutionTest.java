@@ -11,7 +11,6 @@ import org.junit.Test;
 public class SolutionTest {
     @Test
     public void groupAnagrams() {
-
         List<List<String>> expected = new ArrayList<>();
         expected.add(Arrays.asList("eat", "tea", "ate"));
         expected.add(Arrays.asList("bat"));

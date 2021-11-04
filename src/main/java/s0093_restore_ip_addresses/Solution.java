@@ -13,15 +13,13 @@ public class Solution {
     void step(String s, int pos, int[] octets, int count, List<String> results) {
         if (count == 4 && pos == s.length()) {
             results.add(
-                    String.valueOf(
-                            new StringBuilder()
-                                    .append(octets[0])
-                                    .append('.')
-                                    .append(octets[1])
-                                    .append('.')
-                                    .append(octets[2])
-                                    .append('.')
-                                    .append(octets[3])));
+                    String.valueOf(octets[0])
+                            + '.'
+                            + octets[1]
+                            + '.'
+                            + octets[2]
+                            + '.'
+                            + octets[3]);
         } else if (count < 4 && pos < 12) {
             int octet = 0;
             for (int i = 0; i < 3; i++) {

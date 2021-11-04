@@ -11,9 +11,9 @@ import org.junit.Test;
 public class SolutionTest {
     @Test
     public void combinationSum() {
-        List<List<Integer>> expected = new ArrayList<List<Integer>>();
+        List<List<Integer>> expected = new ArrayList<>();
 
-        List<Integer> sublist1 = new ArrayList<Integer>();
+        List<Integer> sublist1 = new ArrayList<>();
         sublist1.add(7);
         List<Integer> sublist2 = new ArrayList<Integer>();
         sublist2.addAll(Arrays.asList(3, 2, 2));

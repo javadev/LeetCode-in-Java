@@ -2,7 +2,7 @@ package s0094_binary_tree_inorder_traversal;
 
 import com_github_leetcode.TreeNode;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /*
@@ -22,7 +22,9 @@ import java.util.List;
  */
 public class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-        if (root == null) return Arrays.asList();
+        if (root == null) {
+            return Collections.emptyList();
+        }
         List<Integer> answer = new ArrayList<>();
         inorderTraversal(root, answer);
         return answer;

@@ -9,7 +9,7 @@ public class Solution {
     public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> ans = new ArrayList<>();
         // Boundary case
-        if (n < 1 || n > 20 || k < 1 || k > n) {
+        if (n > 20 || k < 1 || k > n) {
             return ans;
         }
         backtrack(ans, n, k, 1, new Stack<>());
