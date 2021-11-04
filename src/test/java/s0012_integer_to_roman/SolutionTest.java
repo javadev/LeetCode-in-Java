@@ -8,6 +8,11 @@ import org.junit.Test;
 public class SolutionTest {
     @Test
     public void intToRoman() {
-        assertThat(new Solution().intToRoman(3), equalTo("III"));
+        Solution solution = new Solution();
+        assertThat(solution.intToRoman(3), equalTo("III"));
+        assertThat(solution.intToRoman(4), equalTo("IV"));
+        assertThat(solution.intToRoman(9), equalTo("IX"));
+        assertThat(solution.intToRoman(58), equalTo("LVIII"));
+        assertThat(solution.intToRoman(1994), equalTo("MCMXCIV"));
     }
 }
