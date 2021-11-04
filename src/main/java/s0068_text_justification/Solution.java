@@ -35,10 +35,14 @@ public class Solution {
                     // Creating the line
                     for (int j = startWord; j < (startWord + numWordsOnLine - 1); j++) {
                         sb.append(words[j]); // appending the word
-                        if (extraSp-- > 0) sb.append(' '); // appending an extra space, if required
-                        // appending the rest of the required spaces
-                        for (int k = 0; k < (maxWidth - lineTotal) / (numWordsOnLine - 1); k++)
+                        if (extraSp-- > 0) {
+                            // appending an extra space, if required
                             sb.append(' ');
+                        }
+                        // appending the rest of the required spaces
+                        for (int k = 0; k < (maxWidth - lineTotal) / (numWordsOnLine - 1); k++) {
+                            sb.append(' ');
+                        }
                     }
                     // appending the last word of the line
                     sb.append(words[startWord + numWordsOnLine - 1]);

@@ -24,9 +24,8 @@ public class Solution {
                     } else {
                         return false;
                     }
-                }
-                // Validate there is only one dot
-                else if (ch == '.') {
+                } else if (ch == '.') {
+                    // Validate there is only one dot
                     // Shouldn't have seen dot before as there can be only one
                     // Shouldn't have see exponent before
                     if (seenDot || seenExponent) {
@@ -34,9 +33,8 @@ public class Solution {
                     } else {
                         seenDot = true;
                     }
-                }
-                // Validate sign coming at 0th position or after e/E
-                else if (ch == '+' || ch == '-') {
+                } else if (ch == '+' || ch == '-') {
+                    // Validate sign coming at 0th position or after e/E
                     // Sign can only come at starting or after e
                     // That's the reason sign check do at the end
                     if (!(i == 0 || s.charAt(i - 1) == 'e' || s.charAt(i - 1) == 'E')) {

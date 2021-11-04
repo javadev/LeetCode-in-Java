@@ -16,7 +16,9 @@ public class Solution {
             boolean[] col,
             boolean[] diagonal,
             boolean[] antiDiagonal) {
-        if (r == n) return 1;
+        if (r == n) {
+            return 1;
+        }
 
         int count = 0;
         for (int c = 0; c < n; c++) {

@@ -5,11 +5,12 @@ public class Solution {
         int i = m - 1;
         int j = nums1.length - 1;
         int p2 = n - 1;
-        while (p2 >= 0)
+        while (p2 >= 0) {
             if (i >= 0 && nums1[i] > nums2[p2]) {
                 nums1[j--] = nums1[i--];
             } else {
                 nums1[j--] = nums2[p2--];
             }
+        }
     }
 }

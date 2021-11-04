@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void uniquePathsII() {
+    public void uniquePathsWithObstacles() {
         int[][] expected = {
             {
                 0, 0, 0,

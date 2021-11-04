@@ -6,8 +6,11 @@ public class Solution {
         int carry = 0;
         int sum;
         for (int i = digits.length - 1; i >= 0; i--) {
-            if (i == digits.length - 1) sum = digits[i] + carry + num;
-            else sum = digits[i] + carry;
+            if (i == digits.length - 1) {
+                sum = digits[i] + carry + num;
+            } else {
+                sum = digits[i] + carry;
+            }
             carry = sum / 10;
             digits[i] = sum % 10;
         }

@@ -8,12 +8,18 @@ public class Solution {
         Deque<String> stk = new ArrayDeque<>();
         int start = 0;
         while (start < path.length()) {
-            while (start < path.length() && path.charAt(start) == '/') start++;
+            while (start < path.length() && path.charAt(start) == '/') {
+                start++;
+            }
             int end = start;
-            while (end < path.length() && path.charAt(end) != '/') end++;
+            while (end < path.length() && path.charAt(end) != '/') {
+                end++;
+            }
             String s = path.substring(start, end);
             if (s.equals("..")) {
-                if (!stk.isEmpty()) stk.pop();
+                if (!stk.isEmpty()) {
+                    stk.pop();
+                }
             } else if (!s.equals(".") && !s.equals("")) {
                 stk.push(s);
             }

@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void nQueensII() {
+    public void totalNQueens() {
         assertThat(new Solution().totalNQueens(4), equalTo(2));
     }
 }

@@ -2,7 +2,9 @@ package s0064_minimum_path_sum;
 
 public class Solution {
     public int minPathSum(int[][] grid) {
-        if (grid.length == 1 && grid[0].length == 1) return grid[0][0];
+        if (grid.length == 1 && grid[0].length == 1) {
+            return grid[0][0];
+        }
         int[][] dm = new int[grid.length][grid[0].length];
         int s = 0;
         for (int r = grid.length - 1; r >= 0; r--) {
