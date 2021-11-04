@@ -8,43 +8,19 @@ public class Solution {
             y = s.charAt(i);
             switch (y) {
                 case 'I':
-                    if (i + 1 == s.length()) {
-                        x += 1;
-                    } else if (s.charAt(i + 1) == 'V') {
-                        x -= 1;
-                    } else if (s.charAt(i + 1) == 'X') {
-                        x -= 1;
-                    } else {
-                        x += 1;
-                    }
+                    x = getX(s, x, i, 1, 'V', 'X');
                     break;
                 case 'V':
                     x += 5;
                     break;
                 case 'X':
-                    if (i + 1 == s.length()) {
-                        x += 10;
-                    } else if (s.charAt(i + 1) == 'L') {
-                        x -= 10;
-                    } else if (s.charAt(i + 1) == 'C') {
-                        x -= 10;
-                    } else {
-                        x += 10;
-                    }
+                    x = getX(s, x, i, 10, 'L', 'C');
                     break;
                 case 'L':
                     x += 50;
                     break;
                 case 'C':
-                    if (i + 1 == s.length()) {
-                        x += 100;
-                    } else if (s.charAt(i + 1) == 'D') {
-                        x -= 100;
-                    } else if (s.charAt(i + 1) == 'M') {
-                        x -= 100;
-                    } else {
-                        x += 100;
-                    }
+                    x = getX(s, x, i, 100, 'D', 'M');
                     break;
                 case 'D':
                     x += 500;
@@ -55,6 +31,19 @@ public class Solution {
                 default:
                     break;
             }
+        }
+        return x;
+    }
+
+    private int getX(String s, int x, int i, int i2, char v, char x2) {
+        if (i + 1 == s.length()) {
+            x += i2;
+        } else if (s.charAt(i + 1) == v) {
+            x -= i2;
+        } else if (s.charAt(i + 1) == x2) {
+            x -= i2;
+        } else {
+            x += i2;
         }
         return x;
     }
