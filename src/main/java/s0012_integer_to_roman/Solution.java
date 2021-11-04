@@ -5,11 +5,8 @@ public class Solution {
 
         StringBuilder sb = new StringBuilder();
         int m = 1000;
-        int d = 500;
         int c = 100;
-        int l = 50;
         int x = 10;
-        int v = 5;
         int i = 1;
 
         num = numerals(sb, num, m, ' ', ' ', 'M');
