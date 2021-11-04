@@ -2,11 +2,9 @@ package s0069_sqrtx;
 
 public class Solution {
     public int mySqrt(int x) {
-
         int start = 1;
         int end = x / 2;
         int sqrt = start + (end - start) / 2;
-
         if (x == 0) {
             return 0;
         }

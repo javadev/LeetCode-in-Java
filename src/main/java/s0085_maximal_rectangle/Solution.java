@@ -2,7 +2,7 @@ package s0085_maximal_rectangle;
 
 public class Solution {
     public int maximalRectangle(char[][] matrix) {
-        /**
+        /*
          * idea: using [LC84 Largest Rectangle in Histogram]. For each row of the matrix, construct
          * the histogram based on the current row and the previous histogram (up to the previous
          * row), then compute the largest rectangle area using LC84.
@@ -31,7 +31,7 @@ public class Solution {
     }
 
     public int largestRectangleArea(int[] heights) {
-        /**
+        /*
          * idea: scan and store if a[i-1]<=a[i] (increasing), then as long as a[i]<a[i-1], then we
          * can compute the largest rectangle area with base a[j], for j<=i-1, and a[j]>a[i], which
          * is a[j]*(i-j). And meanwhile, all these bars (a[j]'s) are already done, and thus are

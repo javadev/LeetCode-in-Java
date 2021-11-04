@@ -6,7 +6,6 @@ public class Solution {
         boolean[] col = new boolean[n];
         boolean[] diagonal = new boolean[n + n - 1];
         boolean[] antiDiagonal = new boolean[n + n - 1];
-
         return totalNQueens(n, 0, row, col, diagonal, antiDiagonal);
     }
 

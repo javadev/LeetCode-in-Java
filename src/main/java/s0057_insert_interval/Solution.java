@@ -13,7 +13,6 @@ public class Solution {
         while (r >= 0 && newInterval[1] < intervals[r][0]) {
             r--;
         }
-
         int[][] res = new int[l + n - r][2];
         for (int i = 0; i < l; i++) {
             res[i] = Arrays.copyOf(intervals[i], intervals[i].length);
@@ -23,7 +22,6 @@ public class Solution {
         for (int i = l + 1, j = r + 1; j < n; i++, j++) {
             res[i] = intervals[j];
         }
-
         return res;
     }
 }
