@@ -1,4 +1,4 @@
-package s0307_range_sum_query_mutable;
+package g0301_0400.s0307_range_sum_query_mutable;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
