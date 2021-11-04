@@ -8,6 +8,11 @@ import org.junit.Test;
 public class SolutionTest {
     @Test
     public void isValid() {
-        assertThat(new Solution().isValid("()"), equalTo(true));
+        Solution solution = new Solution();
+        assertThat(solution.isValid("()"), equalTo(true));
+        assertThat(solution.isValid("()[]{}"), equalTo(true));
+        assertThat(solution.isValid("(]"), equalTo(false));
+        assertThat(solution.isValid("([)]"), equalTo(false));
+        assertThat(solution.isValid("{[]}"), equalTo(true));
     }
 }
