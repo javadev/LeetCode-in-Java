@@ -20,10 +20,6 @@ public class SolutionTest {
                 new Solution()
                         .groupAnagrams(new String[] {"eat", "tea", "tan", "ate", "nat", "bat"});
 
-        for (int i = 0; i < expected.size(); i++) {
-            for (int j = 0; j < expected.get(i).size(); j++) {
-                assertThat(actual.get(i).get(j), equalTo(expected.get(i).get(j)));
-            }
-        }
+        assertThat(actual, equalTo(expected));
     }
 }

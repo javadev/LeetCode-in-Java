@@ -23,8 +23,6 @@ public class SolutionTest {
 
         List<List<Integer>> actual = new Solution().combinationSum(new int[] {2, 3, 6, 7}, 7);
 
-        for (int i = 0; i < expected.size(); i++) {
-            assertThat(actual.get(i).toArray(), equalTo(expected.get(i).toArray()));
-        }
+        assertThat(actual, equalTo(expected));
     }
 }
