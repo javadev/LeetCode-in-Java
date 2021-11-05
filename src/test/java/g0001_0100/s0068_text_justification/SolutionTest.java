@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void textJustification() {
+    public void fullJustify() {
         String[] input =
                 new String[] {"This", "is", "an", "example", "of", "text", "justification."};
         List<String> actual = new Solution().fullJustify(input, 16);
@@ -19,8 +19,6 @@ public class SolutionTest {
         expected.add("example  of text");
         expected.add("justification.  ");
 
-        for (int i = 0; i < expected.size(); i++) {
-            assertThat(actual.get(i), equalTo(expected.get(i)));
-        }
+        assertThat(actual, equalTo(expected));
     }
 }

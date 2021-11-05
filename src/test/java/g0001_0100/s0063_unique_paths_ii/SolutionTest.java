@@ -9,9 +9,7 @@ public class SolutionTest {
     @Test
     public void uniquePathsWithObstacles() {
         int[][] expected = {
-            {
-                0, 0, 0,
-            },
+            {0, 0, 0},
             {0, 1, 0},
             {0, 0, 0}
         };

@@ -11,8 +11,6 @@ public class SolutionTest {
         int[][] expected = {{1, 5}, {6, 9}};
         int[][] actual = new Solution().insert(new int[][] {{1, 3}, {6, 9}}, new int[] {2, 5});
 
-        for (int i = 0; i < actual.length; i++) {
-            assertThat(actual[i], equalTo(expected[i]));
-        }
+        assertThat(actual, equalTo(expected));
     }
 }

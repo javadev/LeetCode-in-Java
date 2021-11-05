@@ -10,8 +10,6 @@ public class SolutionTest {
     public void generateMatrix() {
         int[][] actual = new Solution().generateMatrix(3);
         int[][] expected = {{1, 2, 3}, {8, 9, 4}, {7, 6, 5}};
-        for (int i = 0; i < expected.length; i++) {
-            assertThat(actual[i], equalTo(expected[i]));
-        }
+        assertThat(actual, equalTo(expected));
     }
 }
