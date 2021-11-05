@@ -10,6 +10,8 @@ public class SolutionTest {
     @Test
     public void subsetsWithDup() {
         int[][] expected = {{1}, {1, 2}, {1, 2, 2}, {2}, {2, 2}, {}};
-        assertThat(new Solution().subsetsWithDup(new int[] {1, 2, 2}), equalTo(ArrayUtils.getLists(expected)));
+        assertThat(
+                new Solution().subsetsWithDup(new int[] {1, 2, 2}),
+                equalTo(ArrayUtils.getLists(expected)));
     }
 }

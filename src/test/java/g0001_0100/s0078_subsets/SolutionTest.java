@@ -10,6 +10,8 @@ public class SolutionTest {
     @Test
     public void subsets() {
         int[][] expected = {{}, {1}, {1, 2}, {1, 2, 3}, {1, 3}, {2}, {2, 3}, {3}};
-        assertThat(new Solution().subsets(new int[] {1, 2, 3}), equalTo(ArrayUtils.getLists(expected)));
+        assertThat(
+                new Solution().subsets(new int[] {1, 2, 3}),
+                equalTo(ArrayUtils.getLists(expected)));
     }
 }

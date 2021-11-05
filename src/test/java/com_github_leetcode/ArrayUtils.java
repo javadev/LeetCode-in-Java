@@ -5,8 +5,7 @@ import java.util.List;
 
 public class ArrayUtils {
 
-    private ArrayUtils() {
-    }
+    private ArrayUtils() {}
 
     public static List<List<Integer>> getLists(int[][] expected) {
         List<List<Integer>> expectedList = new ArrayList<>();
