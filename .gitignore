@@ -1,8 +1,9 @@
 target/
 .idea/
 *.iml
-*.jar
 .project
 .classpath
 bin/
 .settings
+build/
+.gradle/
