@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'maven-publish'
+    id 'com.diffplug.spotless' version '5.15.1'
 }
 
 repositories {
@@ -34,4 +35,19 @@ publishing {
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
+}
+
+spotless {
+    java {
+        encoding 'UTF-8'
+        target fileTree(projectDir) {
+            include '**/*.java'
+            exclude '**/build/**'
+        }
+        importOrder '\\#', '', '*'
+        removeUnusedImports()
+        googleJavaFormat('1.7').aosp()
+        toggleOffOn()
+        endWithNewline()
+    }
 }
