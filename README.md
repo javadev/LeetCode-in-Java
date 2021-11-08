@@ -27,3 +27,9 @@ Gradle:
 implementation 'com.github.javadev:leetcode-in-java:1.3'
 ```
 
+#### Tips and Tricks
+
+* format code
+    * `gradlew spotlessJavaApply`
+* check formatting
+    * `gradlew spotlessJavaCheck`
