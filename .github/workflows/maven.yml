@@ -9,9 +9,6 @@ on:
   pull_request:
     branches: [ main ]
 
-env:
-  GRADLE_CACHE_KEY: ${{ github.run_id }}-gradle-${{ github.run_number }}-${{ github.run_number }}-${{ github.sha }}
-
 jobs:
   build:
 
@@ -26,8 +23,8 @@ jobs:
     - uses: actions/cache@v1
       with:
         path: ~/.gradle/caches
-        key: ${{ env.GRADLE_CACHE_KEY }}
-        restore-keys: ${{ env.GRADLE_CACHE_KEY }}
+        key: ${{ runner.os }}-gradle
+        restore-keys: ${{ runner.os }}-gradle
     - name: Build with Gradle
       run: chmod +x gradlew && ./gradlew spotlessJavaCheck test
 
