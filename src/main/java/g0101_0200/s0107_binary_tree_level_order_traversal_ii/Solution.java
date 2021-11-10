@@ -15,9 +15,7 @@ public class Solution {
     }
 
     public void getOrder(TreeNode root, int level) {
-        if (root == null) {
-            return;
-        } else {
+        if (root != null) {
             if (level + 1 > order.size()) {
                 order.add(new ArrayList<>());
             }
