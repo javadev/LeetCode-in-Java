@@ -9,7 +9,9 @@ import java.util.Queue;
 public class Solution {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
-        if (root == null) return result;
+        if (root == null) {
+            return result;
+        }
         Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
         q.add(null);
@@ -24,8 +26,12 @@ public class Solution {
                     level.addFirst(node.val);
                 }
 
-                if (node.left != null) q.add(node.left);
-                if (node.right != null) q.add(node.right);
+                if (node.left != null) {
+                    q.add(node.left);
+                }
+                if (node.right != null) {
+                    q.add(node.right);
+                }
                 node = q.remove();
             }
             result.add(level);

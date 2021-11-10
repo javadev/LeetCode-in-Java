@@ -16,7 +16,9 @@ public class Solution {
             res.add(new ArrayList<>(currArr));
         }
         for (int end = start; end < s.length(); end++) {
-            if (!isPanlindrome(s, start, end)) continue;
+            if (!isPanlindrome(s, start, end)) {
+                continue;
+            }
             currArr.add(s.substring(start, end + 1));
             backtracking(res, currArr, s, end + 1);
             currArr.remove(currArr.size() - 1);

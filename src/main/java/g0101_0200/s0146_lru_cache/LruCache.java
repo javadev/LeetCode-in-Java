@@ -3,20 +3,20 @@ package g0101_0200.s0146_lru_cache;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LRUCache {
+public class LruCache {
     int capacity;
-    Map<Integer, LRUCacheNode> cacheMap = new HashMap<>();
+    Map<Integer, LruCacheNode> cacheMap = new HashMap<>();
     // insert here
-    LRUCacheNode head;
+    LruCacheNode head;
     // remove here
-    LRUCacheNode tail;
+    LruCacheNode tail;
 
-    public LRUCache(int cap) {
+    public LruCache(int cap) {
         capacity = cap;
     }
 
     public int get(int key) {
-        LRUCacheNode val = cacheMap.get(key);
+        LruCacheNode val = cacheMap.get(key);
         if (val == null) {
             return -1;
         }
@@ -27,14 +27,14 @@ public class LRUCache {
     /*
      * Scenarios :
      * 1. Value key is already present.
-     * 		update
-     * 		move node to head
+     *          update
+     *          move node to head
      * 2. cache is not full
-     * 		cache is empty (create node and assign head and tail)
-     * 		cache is partially empty (add node to head and update head pointer)
+     *          cache is empty (create node and assign head and tail)
+     *          cache is partially empty (add node to head and update head pointer)
      * 3. cache is full
-     * 		remove node at tail, update head, tail pointers
-     * 		Recursively call put
+     *          remove node at tail, update head, tail pointers
+     *          Recursively call put
      *
      *
      * move node to head Scenarios
@@ -44,19 +44,19 @@ public class LRUCache {
      *
      */
     public void put(int key, int value) {
-        LRUCacheNode valNode = cacheMap.get(key);
+        LruCacheNode valNode = cacheMap.get(key);
         if (valNode != null) {
             valNode.value = value;
             moveToHead(valNode);
         } else {
             if (cacheMap.size() < capacity) {
                 if (cacheMap.size() == 0) {
-                    LRUCacheNode node = new LRUCacheNode(key, value);
+                    LruCacheNode node = new LruCacheNode(key, value);
                     cacheMap.put(key, node);
                     head = node;
                     tail = node;
                 } else {
-                    LRUCacheNode node = new LRUCacheNode(key, value);
+                    LruCacheNode node = new LruCacheNode(key, value);
                     cacheMap.put(key, node);
                     node.next = head;
                     head.prev = node;
@@ -64,7 +64,7 @@ public class LRUCache {
                 }
             } else {
                 // remove from tail
-                LRUCacheNode last = tail;
+                LruCacheNode last = tail;
                 tail = last.prev;
                 if (tail != null) {
                     tail.next = null;
@@ -85,7 +85,7 @@ public class LRUCache {
      * 2. Node is tail node
      * 3. Node in middle node
      */
-    private void moveToHead(LRUCacheNode node) {
+    private void moveToHead(LruCacheNode node) {
         if (node == head) {
             return;
         }
@@ -93,8 +93,8 @@ public class LRUCache {
             tail = node.prev;
         }
         // node is not head, it should have some valid prev node
-        LRUCacheNode prev = node.prev;
-        LRUCacheNode next = node.next;
+        LruCacheNode prev = node.prev;
+        LruCacheNode next = node.next;
         prev.next = next;
         if (next != null) {
             next.prev = prev;
@@ -103,17 +103,5 @@ public class LRUCache {
         node.next = head;
         head.prev = node;
         head = node;
-    }
-}
-
-class LRUCacheNode {
-    int key;
-    int value;
-    LRUCacheNode prev;
-    LRUCacheNode next;
-
-    public LRUCacheNode(int k, int v) {
-        key = k;
-        value = v;
     }
 }

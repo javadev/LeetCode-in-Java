@@ -35,7 +35,9 @@ public class Solution {
         }
         evalSwappedNodes(curr.left);
         if (prev != null && prev.val > curr.val) {
-            if (first == null) first = prev;
+            if (first == null) {
+                first = prev;
+            }
             second = curr;
         }
         prev = curr;
