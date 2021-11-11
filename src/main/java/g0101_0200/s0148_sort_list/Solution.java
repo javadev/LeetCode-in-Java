@@ -12,7 +12,8 @@ import com_github_leetcode.ListNode;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+@SuppressWarnings("java:S135")
+public class Solution {
     public ListNode sortList(ListNode head) {
         if (head == null || head.next == null) {
             return head;
