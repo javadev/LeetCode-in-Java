@@ -9,7 +9,9 @@ public class Solution {
             return 0;
         }
         int[][] dp = new int[triangle.size()][triangle.get(triangle.size() - 1).size()];
-        for (int[] temp : dp) Arrays.fill(temp, -10001);
+        for (int[] temp : dp) {
+            Arrays.fill(temp, -10001);
+        }
         return dfs(triangle, dp, 0, 0);
     }
 
