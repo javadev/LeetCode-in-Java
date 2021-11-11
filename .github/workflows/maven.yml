@@ -54,7 +54,7 @@ jobs:
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: 2ffe005643fe6ae61b68dc0869a8d18163d969a7
+          SONAR_TOKEN: 57752c1d9fabcc88fce3a19f77719addf6da830e
         run: mvn -B test jacoco:report org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.organization=javadev-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=javadev_LeetCode-in-Java
       - uses: codecov/codecov-action@v1
         with:
