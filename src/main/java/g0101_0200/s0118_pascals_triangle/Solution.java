@@ -3,6 +3,7 @@ package g0101_0200.s0118_pascals_triangle;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S2589")
 public class Solution {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> output = new ArrayList<>();
