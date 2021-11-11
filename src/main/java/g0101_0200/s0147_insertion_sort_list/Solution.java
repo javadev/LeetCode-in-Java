@@ -22,7 +22,7 @@ public class Solution {
             count++;
             tnode = tnode.next;
         }
-        int nums[] = new int[count];
+        int[] nums = new int[count];
         for (int i = 0; i < count; i++) {
             nums[i] = head.val;
             head = head.next;
