@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
-        if (triangle == null || triangle.size() == 0) {
+        if (triangle == null || triangle.isEmpty()) {
             return 0;
         }
         int[][] dp = new int[triangle.size()][triangle.get(triangle.size() - 1).size()];
