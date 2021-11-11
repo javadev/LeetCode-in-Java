@@ -7,7 +7,9 @@ import java.util.List;
 public class Solution {
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
         List<List<Integer>> res = new ArrayList<>();
-        if (root == null) return res;
+        if (root == null) {
+            return res;
+        }
         recur(res, new ArrayList<>(), 0, targetSum, root);
         return res;
     }

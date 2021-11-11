@@ -16,14 +16,18 @@ public class Solution {
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 TreeNode current = queue.poll();
-                if (current.left == null && current.right == null && d > 0) return d + 1;
-                if (current.right != null) queue.add(current.right);
-                if (current.left != null) queue.add(current.left);
+                if (current.left == null && current.right == null && d > 0) {
+                    return d + 1;
+                }
+                if (current.right != null) {
+                    queue.add(current.right);
+                }
+                if (current.left != null) {
+                    queue.add(current.left);
+                }
             }
-
             d++;
         }
-
         return d;
     }
 }
