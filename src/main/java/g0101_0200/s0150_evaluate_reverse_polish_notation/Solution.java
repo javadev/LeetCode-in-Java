@@ -2,6 +2,7 @@ package g0101_0200.s0150_evaluate_reverse_polish_notation;
 
 import java.util.Stack;
 
+@SuppressWarnings("java:S1149")
 public class Solution {
     public int evalRPN(String[] tokens) {
         Stack<Integer> st = new Stack<>();
