@@ -21,4 +21,9 @@ public class Node {
         this.right = right;
         this.next = next;
     }
+
+    @Override
+    public String toString() {
+        return "Node{" + "val=" + val + ",left=" + left + ",right=" + right + ",next=" + next + "}";
+    }
 }

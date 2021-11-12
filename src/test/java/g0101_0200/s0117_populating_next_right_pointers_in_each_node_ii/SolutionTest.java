@@ -9,18 +9,46 @@ import org.junit.Test;
 public class SolutionTest {
     @Test
     public void connect() {
-        Node root =
+        assertThat(new Solution().connect(null), equalTo(null));
+    }
+
+    @Test
+    public void connect2() {
+        Node node =
                 new Node(
                         1,
                         new Node(2, new Node(4), new Node(5), null),
-                        new Node(3, new Node(6), new Node(7), null),
+                        new Node(3, null, new Node(7), null),
                         null);
-        Node actual = new Solution().connect(root);
-        assertThat(actual.next, equalTo(null));
-        assertThat(actual.left.next, equalTo(actual.right));
-        assertThat(actual.left.left.next, equalTo(actual.left.right));
-        assertThat(actual.left.right.next, equalTo(actual.right.left));
-        assertThat(actual.right.left.next, equalTo(actual.right.right));
-        assertThat(actual.right.right.next, equalTo(null));
+
+        Node node7 = new Node(7);
+        Node node3 = new Node(3, null, node7, null);
+        Node node5 = new Node(5, null, null, node7);
+        Node node4 = new Node(4, null, null, node5);
+        Node node2 = new Node(2, node4, node5, node3);
+        Node node1 = new Node(1, node2, node3, null);
+
+        assertThat(new Solution().connect(node).toString(), equalTo(node1.toString()));
+    }
+
+    @Test
+    public void connect3() {
+        Node node =
+                new Node(
+                        1,
+                        new Node(2, new Node(4, new Node(7), null, null), new Node(5), null),
+                        new Node(3, null, new Node(6, null, new Node(8), null), null),
+                        null);
+
+        Node node8 = new Node(8, null, null, null);
+        Node node7 = new Node(7, null, null, node8);
+        Node node6 = new Node(6, null, node8, null);
+        Node node3 = new Node(3, null, node6, null);
+        Node node5 = new Node(5, null, null, node6);
+        Node node4 = new Node(4, node7, null, node5);
+        Node node2 = new Node(2, node4, node5, node3);
+        Node node1 = new Node(1, node2, node3, null);
+
+        assertThat(new Solution().connect(node).toString(), equalTo(node1.toString()));
     }
 }
