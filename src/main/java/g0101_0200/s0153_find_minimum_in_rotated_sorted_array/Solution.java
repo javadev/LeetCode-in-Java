@@ -21,7 +21,8 @@ public class Solution {
     }
 
     public int findMin(int[] nums) {
-        int l = 0, r = nums.length - 1;
+        int l = 0;
+        int r = nums.length - 1;
         return findMinUtil(nums, l, r);
     }
 }
