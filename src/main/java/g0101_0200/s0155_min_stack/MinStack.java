@@ -5,7 +5,9 @@ public class MinStack {
     Node currentNode;
 
     /** initialize your data structure here. */
-    public MinStack() {}
+    public MinStack() {
+        // no initialization needed.
+    }
 
     public void push(int val) {
         if (currentNode == null) {
