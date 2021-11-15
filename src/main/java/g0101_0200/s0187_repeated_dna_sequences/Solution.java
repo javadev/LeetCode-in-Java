@@ -9,8 +9,8 @@ public class Solution {
         if (s.length() < 10) {
             return Collections.emptyList();
         }
-        boolean seen[] = new boolean[1024 * 1024];
-        boolean added[] = new boolean[1024 * 1024];
+        boolean[] seen = new boolean[1024 * 1024];
+        boolean[] added = new boolean[1024 * 1024];
         char[] chars = s.toCharArray();
         int buf = 0;
         int[] map = new int[128];
@@ -30,7 +30,9 @@ public class Solution {
                     ans.add(new String(chars, i - 9, 10));
                     added[buf] = true;
                 }
-            } else seen[buf] = true;
+            } else {
+                seen[buf] = true;
+            }
         }
         return ans;
     }
