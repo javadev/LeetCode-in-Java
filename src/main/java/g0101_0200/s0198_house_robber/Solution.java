@@ -11,7 +11,7 @@ public class Solution {
         if (nums.length == 2) {
             return Math.max(nums[0], nums[1]);
         }
-        int profit[] = new int[nums.length];
+        int[] profit = new int[nums.length];
         profit[0] = nums[0];
         profit[1] = Math.max(nums[1], nums[0]);
         for (int i = 2; i < nums.length; i++) {
