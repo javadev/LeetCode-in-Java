@@ -21,7 +21,7 @@ import java.util.List;
  */
 public class Solution {
     public List<Integer> rightSideView(TreeNode root) {
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         recurse(root, 0, list);
         return list;
     }
