@@ -20,7 +20,8 @@ public class Solution {
         while (head != null && head.val == val) {
             head = head.next;
         }
-        ListNode r = head, t = head;
+        ListNode r = head;
+        ListNode t = head;
         while (r != null) {
             if (r.val == val) {
                 t.next = r.next;

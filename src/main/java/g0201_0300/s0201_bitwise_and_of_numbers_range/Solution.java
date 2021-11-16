@@ -1,7 +1,7 @@
 package g0201_0300.s0201_bitwise_and_of_numbers_range;
 
 public class Solution {
-    private static final int[] masks =
+    private static final int[] MASKS =
             new int[] {
                 0,
                 0x80000000,
@@ -38,6 +38,6 @@ public class Solution {
             };
 
     public int rangeBitwiseAnd(int left, int right) {
-        return left == right ? left : right & masks[Integer.numberOfLeadingZeros(left ^ right)];
+        return left == right ? left : right & MASKS[Integer.numberOfLeadingZeros(left ^ right)];
     }
 }
