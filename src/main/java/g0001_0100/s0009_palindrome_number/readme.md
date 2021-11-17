@@ -36,6 +36,6 @@ An integer is a **palindrome** when it reads the same backward as forward. For e
 
 **Constraints:**
 
-*   `-231 <= x <= 231 - 1`
+*   <code>-2<sup>31</sup> <= x <= 2<sup>31</sup> - 1</code>
 
 **Follow up:** Could you solve it without converting the integer to a string?
