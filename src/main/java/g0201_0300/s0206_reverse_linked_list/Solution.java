@@ -4,7 +4,6 @@ import com_github_leetcode.ListNode;
 
 public class Solution {
     public ListNode reverseList(ListNode head) {
-
         ListNode prev = null;
         ListNode curr = head;
         while (curr != null) {
