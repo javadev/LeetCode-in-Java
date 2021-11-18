@@ -9,15 +9,9 @@ import org.junit.Test;
 public class SolutionTest {
     @Test
     public void getIntersectionNode() {
-        ListNode nodeA =
-                new ListNode(4, new ListNode(1, new ListNode(8, new ListNode(4, new ListNode(5)))));
-        ListNode nodeB =
-                new ListNode(
-                        5,
-                        new ListNode(
-                                6,
-                                new ListNode(
-                                        1, new ListNode(8, new ListNode(4, new ListNode(5))))));
+        ListNode intersectionListNode = new ListNode(8, new ListNode(4, new ListNode(5)));
+        ListNode nodeA = new ListNode(4, new ListNode(1, intersectionListNode));
+        ListNode nodeB = new ListNode(5, new ListNode(6, new ListNode(1, intersectionListNode)));
 
         int intersectVal = 8;
         int skipA = 2;
@@ -29,7 +23,6 @@ public class SolutionTest {
             }
             nodeB = nodeB.next;
         }
-
         assertThat(new Solution().getIntersectionNode(nodeA, nodeB).val, equalTo(intersectVal));
     }
 }
