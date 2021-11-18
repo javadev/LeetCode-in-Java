@@ -7,7 +7,7 @@ public class Solution {
         ListNode pA = headA;
         ListNode pB = headB;
         while (pA != null || pB != null) {
-            if (pA != null && pB != null && pA.equals(pB)) {
+            if (pA != null && pB != null && pA.toString().equals(pB.toString())) {
                 return pA;
             }
             pA = pA == null ? headB : pA.next;
