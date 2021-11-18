@@ -16,6 +16,12 @@ public class ListNode {
         this.next = next;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return this.val == ((ListNode) obj).val;
+    }
+
+    @Override
     public String toString() {
         StringBuilder result = new StringBuilder("" + val);
         ListNode current = next;

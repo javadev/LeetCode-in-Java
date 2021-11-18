@@ -2,7 +2,7 @@ package g0101_0200.s0167_two_sum_ii_input_array_is_sorted;
 
 public class Solution {
     public int[] twoSum(int[] numbers, int target) {
-        int res[] = new int[2];
+        int[] res = new int[2];
         int i = 0;
         int j = numbers.length - 1;
 

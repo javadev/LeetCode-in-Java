@@ -27,6 +27,8 @@ public class Solution {
 
         if (count >= (arr.length / 2) + 1) {
             return majority;
-        } else return -1;
+        } else {
+            return -1;
+        }
     }
 }
