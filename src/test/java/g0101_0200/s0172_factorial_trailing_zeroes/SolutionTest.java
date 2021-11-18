@@ -10,4 +10,14 @@ public class SolutionTest {
     public void trailingZeroes() {
         assertThat(new Solution().trailingZeroes(3), equalTo(0));
     }
+
+    @Test
+    public void trailingZeroes2() {
+        assertThat(new Solution().trailingZeroes(5), equalTo(1));
+    }
+
+    @Test
+    public void trailingZeroes3() {
+        assertThat(new Solution().trailingZeroes(0), equalTo(0));
+    }
 }
