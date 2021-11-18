@@ -11,7 +11,7 @@ public class Solution {
             if (c == '.') {
                 break;
             } else {
-                numA = numA * 10 + ((int) c - 48);
+                numA = numA * 10 + (c - 48);
             }
         }
 
@@ -23,7 +23,7 @@ public class Solution {
             if (c == '.') {
                 break;
             } else {
-                numB = numB * 10 + ((int) c - 48);
+                numB = numB * 10 + (c - 48);
             }
         }
 
