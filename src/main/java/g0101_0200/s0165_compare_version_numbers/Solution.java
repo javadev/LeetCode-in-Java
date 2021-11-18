@@ -19,17 +19,17 @@ public class Solution {
             String s1 = removeLeadingZero(ver1[i]);
             i++;
             if (Integer.valueOf(s1) == 0) {
-            	continue;
+                continue;
             }
-            return (Integer.valueOf(s1) > 0) ? 1: -1;
+            return (Integer.valueOf(s1) > 0) ? 1 : -1;
         }
         while (i < ver2.length) {
             String s2 = removeLeadingZero(ver2[i]);
             i++;
             if (Integer.valueOf(s2) == 0) {
-            	continue;
+                continue;
             }
-            return (Integer.valueOf(s2) > 0) ? -1: 1;
+            return (Integer.valueOf(s2) > 0) ? -1 : 1;
         }
         return 0;
     }
@@ -37,8 +37,8 @@ public class Solution {
     private static String removeLeadingZero(String s) {
         int i = 0;
         while (i < s.length() && s.charAt(i) == '0') {
-        	i ++;
+            i++;
         }
-        return (i != s.length())  ? s.substring(i): "0";
+        return (i != s.length()) ? s.substring(i) : "0";
     }
 }
