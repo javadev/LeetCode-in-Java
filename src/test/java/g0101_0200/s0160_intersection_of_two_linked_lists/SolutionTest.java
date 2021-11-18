@@ -12,17 +12,13 @@ public class SolutionTest {
         ListNode intersectionListNode = new ListNode(8, new ListNode(4, new ListNode(5)));
         ListNode nodeA = new ListNode(4, new ListNode(1, intersectionListNode));
         ListNode nodeB = new ListNode(5, new ListNode(6, new ListNode(1, intersectionListNode)));
+        assertThat(new Solution().getIntersectionNode(nodeA, nodeB).val, equalTo(8));
+    }
 
-        int intersectVal = 8;
-        int skipA = 2;
-        int skipB = 3;
-
-        for (int i = 0; i < skipB; i++) {
-            if (i < skipA) {
-                nodeA = nodeA.next;
-            }
-            nodeB = nodeB.next;
-        }
-        assertThat(new Solution().getIntersectionNode(nodeA, nodeB).val, equalTo(intersectVal));
+    @Test
+    public void getIntersectionNode2() {
+        ListNode nodeA = new ListNode(4, new ListNode(1, new ListNode(2)));
+        ListNode nodeB = new ListNode(5, new ListNode(6, new ListNode(1, new ListNode(2))));
+        assertThat(new Solution().getIntersectionNode(nodeA, nodeB), equalTo(null));
     }
 }
