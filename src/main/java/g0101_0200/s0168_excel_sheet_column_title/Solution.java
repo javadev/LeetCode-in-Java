@@ -5,7 +5,9 @@ public class Solution {
         StringBuilder sb = new StringBuilder();
         while (n != 0) {
             int remainder = n % 26;
-            if (remainder == 0) remainder += 26;
+            if (remainder == 0) {
+                remainder += 26;
+            }
             if (n >= remainder) {
                 n -= remainder;
                 sb.append((char) (remainder + 64));
