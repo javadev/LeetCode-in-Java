@@ -9,6 +9,6 @@ public class SolutionTest {
     @Test
     public void compareVersion() {
 
-        assertThat(Solution.compareVersion("1.01", "1.001"), equalTo(0));
+        assertThat(new Solution().compareVersion("1.01", "1.001"), equalTo(0));
     }
 }

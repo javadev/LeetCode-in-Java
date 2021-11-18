@@ -8,6 +8,6 @@ import org.junit.Test;
 public class SolutionTest {
     @Test
     public void trailingZeroes() {
-        assertThat(Solution.trailingZeroes(3), equalTo(0));
+        assertThat(new Solution().trailingZeroes(3), equalTo(0));
     }
 }
