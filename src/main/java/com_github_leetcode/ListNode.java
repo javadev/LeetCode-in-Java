@@ -16,6 +16,7 @@ public class ListNode {
         this.next = next;
     }
 
+    @Override
     public String toString() {
         StringBuilder result = new StringBuilder("" + val);
         ListNode current = next;
