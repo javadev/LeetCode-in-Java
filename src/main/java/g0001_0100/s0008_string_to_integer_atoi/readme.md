@@ -48,7 +48,7 @@ The parsed integer is 42. Since 42 is in the range \[-2<sup>31</sup>, 2<sup>31</
     Step 2: " -42" ('-' is read, so the result should be negative)
                ^
     Step 3: " -42" ("42" is read in)
-                ^
+                 ^
     The parsed integer is -42.
 
 Since -42 is in the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final result is -42. 
@@ -66,7 +66,7 @@ Since -42 is in the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final res
     Step 2: "4193 with words" (no characters read because there is neither a '-' nor '+')
              ^
     Step 3: "4193 with words" ("4193" is read in; reading stops because the next character is a non-digit)
-                ^ 
+                 ^ 
     The parsed integer is 4193.
 
 Since 4193 is in the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final result is 4193. 
@@ -100,9 +100,9 @@ Since 0 is in the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final resul
     Step 1: "-91283472332" (no characters read because there is no leading whitespace)
             ^
     Step 2: "-91283472332" ('-' is read, so the result should be negative)
-             ^
+              ^
     Step 3: "-91283472332" ("91283472332" is read in)
-             ^
+                         ^
     The parsed integer is -91283472332.
 
 Since -91283472332 is less than the lower bound of the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final result is clamped to -2<sup>31</sup> = -2147483648.  
