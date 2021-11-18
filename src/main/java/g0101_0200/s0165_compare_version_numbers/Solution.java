@@ -3,43 +3,49 @@ package g0101_0200.s0165_compare_version_numbers;
 public class Solution {
 
     public int compareVersion(String version1, String version2) {
-        String[] ver1 = version1.split("\\.", 0);
-        String[] ver2 = version2.split("\\.", 0);
-        int i = 0;
-        while (i < ver1.length && i < ver2.length) {
-            String s1 = removeLeadingZero(ver1[i]);
-            String s2 = removeLeadingZero(ver2[i]);
-            if (Integer.valueOf(s1) > Integer.valueOf(s2)) {
-                return 1;
-            } else if (Integer.valueOf(s1) < Integer.valueOf(s2)) {
-                return -1;
+        // acquire first number
+        int numA = 0;
+        int i;
+        for (i = 0; i < version1.length(); i++) {
+            char c = version1.charAt(i);
+            if (c == '.') {
+                break;
+            } else {
+                numA = numA * 10 + ((int) c - 48);
             }
-            i++;
         }
-        while (i < ver1.length) {
-            String s1 = removeLeadingZero(ver1[i]);
-            i++;
-            if (Integer.valueOf(s1) == 0) {
-                continue;
-            }
-            return (Integer.valueOf(s1) > 0) ? 1 : -1;
-        }
-        while (i < ver2.length) {
-            String s2 = removeLeadingZero(ver2[i]);
-            i++;
-            if (Integer.valueOf(s2) == 0) {
-                continue;
-            }
-            return (Integer.valueOf(s2) > 0) ? -1 : 1;
-        }
-        return 0;
-    }
 
-    private String removeLeadingZero(String s) {
-        int i = 0;
-        while (i < s.length() && s.charAt(i) == '0') {
-            i++;
+        // acquire second number
+        int numB = 0;
+        int j;
+        for (j = 0; j < version2.length(); j++) {
+            char c = version2.charAt(j);
+            if (c == '.') {
+                break;
+            } else {
+                numB = numB * 10 + ((int) c - 48);
+            }
         }
-        return (i != s.length()) ? s.substring(i) : "0";
+
+        // compare
+        if (numA > numB) {
+            return 1;
+        } else if (numA < numB) {
+            return -1;
+        } else { // equal
+            String v1 = "";
+            String v2 = "";
+
+            if (i != version1.length()) v1 = version1.substring(i + 1);
+
+            if (j != version2.length()) v2 = version2.substring(j + 1);
+
+            // if both versions end here, they are equal
+            if (v1.equals("") && v2.equals("")) {
+                return 0;
+            } else {
+                return compareVersion(v1, v2);
+            }
+        }
     }
 }
