@@ -43,9 +43,9 @@ The parsed integer is 42. Since 42 is in the range \[-2<sup>31</sup>, 2<sup>31</
 
 **Explanation:**
 
-    Step 1: " \-42" (leading whitespace is read and ignored)
+    Step 1: " -42" (leading whitespace is read and ignored)
               ^ 
-    Step 2: " \-42" ('-' is read, so the result should be negative)
+    Step 2: " -42" ('-' is read, so the result should be negative)
                ^
     Step 3: " -42" ("42" is read in)
                 ^
