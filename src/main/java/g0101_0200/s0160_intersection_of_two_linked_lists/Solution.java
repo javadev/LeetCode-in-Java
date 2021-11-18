@@ -4,15 +4,12 @@ import com_github_leetcode.ListNode;
 
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        ListNode pA = headA;
-        ListNode pB = headB;
-        while (pA != null || pB != null) {
-            if (pA != null && pB != null && pA.toString().equals(pB.toString())) {
-                return pA;
-            }
-            pA = pA == null ? headB : pA.next;
-            pB = pB == null ? headA : pB.next;
+        ListNode node1 = headA;
+        ListNode node2 = headB;
+        while (!node1.toString().equals(node2.toString())) {
+            node1 = node1 == null ? headB : node1.next;
+            node2 = node2 == null ? headA : node2.next;
         }
-        return null;
+        return node1;
     }
 }
