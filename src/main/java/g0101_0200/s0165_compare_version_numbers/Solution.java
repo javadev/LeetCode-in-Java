@@ -1,6 +1,8 @@
 package g0101_0200.s0165_compare_version_numbers;
 
 public class Solution {
+    private Solution() {}
+
     public static int compareVersion(String version1, String version2) {
         String[] ver1 = version1.split("\\.", 0);
         String[] ver2 = version2.split("\\.", 0);

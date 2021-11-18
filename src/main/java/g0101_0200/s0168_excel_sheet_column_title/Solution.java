@@ -1,12 +1,17 @@
 package g0101_0200.s0168_excel_sheet_column_title;
 
 public class Solution {
-    public String convertToTitle(int columnNumber) {
-        String str = "";
-        while (columnNumber > 0) {
-            str = String.valueOf((char) (--columnNumber % 26 + 'A')) + str;
-            columnNumber /= 26;
+    public String convertToTitle(int n) {
+        StringBuilder sb = new StringBuilder();
+        while (n != 0) {
+            int remainder = n % 26;
+            if (remainder == 0) remainder += 26;
+            if (n >= remainder) {
+                n -= remainder;
+                sb.append((char) (remainder + 64));
+            }
+            n /= 26;
         }
-        return str;
+        return sb.reverse().toString();
     }
 }

@@ -3,6 +3,7 @@ package g0101_0200.s0166_fraction_to_recurring_decimal;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("java:S2153")
 public class Solution {
     public String fractionToDecimal(int numerator, int denominator) {
         if (numerator == 0) {

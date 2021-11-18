@@ -1,6 +1,8 @@
 package g0101_0200.s0172_factorial_trailing_zeroes;
 
 public class Solution {
+    private Solution() {}
+
     public static int trailingZeroes(int n) {
         int base = 5;
         int count = 0;
