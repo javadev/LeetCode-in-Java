@@ -99,7 +99,7 @@ Since 0 is in the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final resul
 
     Step 1: "-91283472332" (no characters read because there is no leading whitespace)
             ^
-    Step 2: "\-91283472332" ('-' is read, so the result should be negative)
+    Step 2: "-91283472332" ('-' is read, so the result should be negative)
              ^
     Step 3: "-91283472332" ("91283472332" is read in)
              ^
