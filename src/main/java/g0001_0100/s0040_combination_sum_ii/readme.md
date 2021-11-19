@@ -14,12 +14,12 @@ Each number in `candidates` may only be used **once** in the combination.
 
 **Output:**
 
-    \[
-    \[1,1,6\],
-    \[1,2,5\],
-    \[1,7\],
-    \[2,6\]
-    \] 
+    [
+    [1,1,6],
+    [1,2,5],
+    [1,7],
+    [2,6]
+    ] 
 
 **Example 2:**
 
@@ -27,10 +27,10 @@ Each number in `candidates` may only be used **once** in the combination.
 
 **Output:**
 
-    \[
-    \[1,2,2\],
-    \[5\]
-    \] 
+    [
+    [1,2,2],
+    [5]
+    ] 
 
 **Constraints:**
 
