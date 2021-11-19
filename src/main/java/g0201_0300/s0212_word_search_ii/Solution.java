@@ -59,7 +59,7 @@ public class Solution {
 
     static class Tree {
         private Tree[] children;
-        public String end;
+        private String end;
         private int length = 0;
 
         private Tree addChild(char c) {

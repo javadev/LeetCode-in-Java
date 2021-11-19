@@ -2,12 +2,14 @@ package g0201_0300.s0211_design_add_and_search_words_data_structure;
 
 import java.util.ArrayList;
 
+@SuppressWarnings({"unchecked", "java:S3626"})
 public class WordDictionary {
-    @SuppressWarnings("unchecked")
+
     private ArrayList<String>[] dict = new ArrayList[501];
 
-    /** Initialize your data structure here. */
-    public WordDictionary() {}
+    public WordDictionary() {
+        /** Initialize your data structure here. */
+    }
 
     /** Adds a word into the data structure. */
     public void addWord(String word) {
