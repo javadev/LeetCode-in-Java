@@ -24,4 +24,4 @@ Since the return type is an integer, the decimal digits are **truncated**, and o
 
 **Constraints:**
 
-*   `0 <= x <= 231 - 1`
+*   <code>0 <= x <= 2<sup>31</sup> - 1</code>
