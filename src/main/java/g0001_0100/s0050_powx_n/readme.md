@@ -27,5 +27,5 @@ Implement [pow(x, n)](http://www.cplusplus.com/reference/valarray/pow/), which c
 **Constraints:**
 
 *   `-100.0 < x < 100.0`
-*   `-231 <= n <= 231-1`
+*   <code>-2<sup>31</sup> <= n <= 2<sup>31</sup>-1</code>
 *   `-104 <= xn <= 104`

@@ -27,4 +27,4 @@ You must implement an algorithm that runs in `O(n)` time and uses constant extra
 **Constraints:**
 
 *   `1 <= nums.length <= 5 * 105`
-*   `-231 <= nums[i] <= 231 - 1`
+*   <code>-2<sup>31</sup> <= nums[i] <= 2<sup>31</sup> - 1</code>
