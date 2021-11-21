@@ -8,7 +8,6 @@ public class Solution {
                 max += prices[i] - prices[i - 1];
             }
         }
-
         return max;
     }
 }
