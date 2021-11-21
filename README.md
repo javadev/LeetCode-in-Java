@@ -4,6 +4,7 @@
 [![Java CI](https://github.com/javadev/LeetCode-in-Java/actions/workflows/maven.yml/badge.svg)](https://github.com/javadev/LeetCode-in-Java/actions/workflows/maven.yml)
 [![CodeQL](https://github.com/javadev/LeetCode-in-Java/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/javadev/LeetCode-in-Java/actions/workflows/codeql-analysis.yml)
 [![javadoc](https://javadoc.io/badge2/com.github.javadev/leetcode-in-java/javadoc.svg)](https://javadoc.io/doc/com.github.javadev/leetcode-in-java)
+[![Known Vulnerabilities](https://snyk.io/test/github/javadev/leetcode-in-java/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/javadev/leetcode-in-java?targetFile=pom.xml)
 
 Java Solution for LeetCode algorithm problems, continually updating.
 
