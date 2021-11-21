@@ -4,7 +4,7 @@ public class MinStack {
 
     Node currentNode;
 
-    /** initialize your data structure here. */
+    // initialize your data structure here.
     public MinStack() {
         // no initialization needed.
     }
@@ -14,7 +14,6 @@ public class MinStack {
             currentNode = new Node(val, val, null, null);
         } else {
             currentNode.nextNode = new Node(Math.min(currentNode.min, val), val, currentNode, null);
-
             currentNode = currentNode.nextNode;
         }
     }

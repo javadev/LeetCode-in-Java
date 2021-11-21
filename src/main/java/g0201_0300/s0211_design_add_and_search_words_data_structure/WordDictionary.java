@@ -8,10 +8,10 @@ public class WordDictionary {
     private ArrayList<String>[] dict = new ArrayList[501];
 
     public WordDictionary() {
-        /** Initialize your data structure here. */
+        // Initialize your data structure here.
     }
 
-    /** Adds a word into the data structure. */
+    // Adds a word into the data structure.
     public void addWord(String word) {
         ArrayList<String> a = dict[word.length()];
         if (a == null) {
@@ -21,10 +21,8 @@ public class WordDictionary {
         dict[word.length()] = a;
     }
 
-    /**
-     * Returns if the word is in the data structure. A word could contain the dot character '.' to
-     * represent any one letter.
-     */
+    // Returns if the word is in the data structure. A word could contain the dot character '.' to
+    // represent any one letter.
     public boolean search(String word) {
         if (dict[word.length()] == null) {
             return false;
@@ -47,7 +45,7 @@ public class WordDictionary {
     }
 }
 
-/**
+/*
  * Your WordDictionary object will be instantiated and called as such: WordDictionary obj = new
  * WordDictionary(); obj.addWord(word); boolean param_2 = obj.search(word);
  */
