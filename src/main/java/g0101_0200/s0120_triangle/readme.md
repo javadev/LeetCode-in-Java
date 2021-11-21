@@ -32,6 +32,6 @@ For each step, you may move to an adjacent number of the row below. More formall
 *   `1 <= triangle.length <= 200`
 *   `triangle[0].length == 1`
 *   `triangle[i].length == triangle[i - 1].length + 1`
-*   `-104 <= triangle[i][j] <= 104`
+*   <code>-10<sup>4</sup> <= triangle[i][j] <= 10<sup>4</sup></code>
 
 **Follow up:** Could you do this using only `O(n)` extra space, where `n` is the total number of rows in the triangle?

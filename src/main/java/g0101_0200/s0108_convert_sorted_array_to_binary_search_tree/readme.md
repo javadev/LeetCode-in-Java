@@ -28,6 +28,6 @@ A **height-balanced** binary tree is a binary tree in which the depth of the two
 
 **Constraints:**
 
-*   `1 <= nums.length <= 104`
-*   `-104 <= nums[i] <= 104`
+*   <code>1 <= nums.length <= 10<sup>4</sup></code>
+*   <code>-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup></code>
 *   `nums` is sorted in a **strictly increasing** order.

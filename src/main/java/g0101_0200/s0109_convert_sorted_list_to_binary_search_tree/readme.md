@@ -36,5 +36,5 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
 
 **Constraints:**
 
-*   The number of nodes in `head` is in the range `[0, 2 * 104]`.
-*   `-105 <= Node.val <= 105`
+*   The number of nodes in `head` is in the range <code>[0, 2 * 10<sup>4</sup>]</code>.
+*   <code>-10<sup>5</sup> <= Node.val <= 10<sup>5</sup></code>
