@@ -2,7 +2,7 @@
 
 Medium
 
-Given `n` non-negative integers `a1, a2, ..., an` , where each represents a point at coordinate `(i, ai)`. `n` vertical lines are drawn such that the two endpoints of the line `i` is at `(i, ai)` and `(i, 0)`. Find two lines, which, together with the x-axis forms a container, such that the container contains the most water.
+Given `n` non-negative integers <code>a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub></code> , where each represents a point at coordinate <code>(i, a<sub>i</sub>)</code>. `n` vertical lines are drawn such that the two endpoints of the line `i` is at <code>(i, a<sub>i</sub>)</code> and `(i, 0)`. Find two lines, which, together with the x-axis forms a container, such that the container contains the most water.
 
 **Notice** that you may not slant the container.
 
@@ -37,5 +37,5 @@ Given `n` non-negative integers `a1, a2, ..., an` , where each represents a poin
 **Constraints:**
 
 *   `n == height.length`
-*   `2 <= n <= 105`
-*   `0 <= height[i] <= 104`
+*   <code>2 <= n <= 10<sup>5</sup></code>
+*   <code>0 <= height[i] <= 10<sup>4</sup></code>

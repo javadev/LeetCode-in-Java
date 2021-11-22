@@ -18,6 +18,6 @@ Given two binary strings `a` and `b`, return _their sum as a binary string_.
 
 **Constraints:**
 
-*   `1 <= a.length, b.length <= 104`
+*   <code>1 <= a.length, b.length <= 10<sup>4</sup></code>
 *   `a` and `b` consist only of `'0'` or `'1'` characters.
 *   Each string does not contain leading zeros except for the zero itself.

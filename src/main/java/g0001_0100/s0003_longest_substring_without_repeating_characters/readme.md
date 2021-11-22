@@ -36,5 +36,5 @@ Given a string `s`, find the length of the **longest substring** without repeati
 
 **Constraints:**
 
-*   `0 <= s.length <= 5 * 104`
+*   <code>0 <= s.length <= 5 * 10<sup>4</sup></code>
 *   `s` consists of English letters, digits, symbols and spaces.

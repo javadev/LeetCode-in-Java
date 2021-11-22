@@ -24,5 +24,5 @@ Given an array of integers `heights` representing the histogram's bar height whe
 
 **Constraints:**
 
-*   `1 <= heights.length <= 105`
-*   `0 <= heights[i] <= 104`
+*   <code>1 <= heights.length <= 10<sup>5</sup></code>
+*   <code>0 <= heights[i] <= 10<sup>4</sup></code>

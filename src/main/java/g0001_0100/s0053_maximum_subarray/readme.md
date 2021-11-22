@@ -28,7 +28,7 @@ A **subarray** is a **contiguous** part of an array.
 
 **Constraints:**
 
-*   `1 <= nums.length <= 105`
-*   `-104 <= nums[i] <= 104`
+*   <code>1 <= nums.length <= 10<sup>5</sup></code>
+*   <code>-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup></code>
 
 **Follow up:** If you have figured out the `O(n)` solution, try coding another solution using the **divide and conquer** approach, which is more subtle.

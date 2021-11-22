@@ -24,5 +24,5 @@ The minimum depth is the number of nodes along the shortest path from the root n
 
 **Constraints:**
 
-*   The number of nodes in the tree is in the range `[0, 105]`.
+*   The number of nodes in the tree is in the range <code>[0, 10<sup>5</sup>]</code>.
 *   `-1000 <= Node.val <= 1000`

@@ -25,5 +25,5 @@ You may return the answer in **any order**.
 **Constraints:**
 
 *   `1 <= nums.length <= 200`
-*   `-109 <= nums[i] <= 109`
-*   `-109 <= target <= 109`
+*   <code>-10<sup>9</sup> <= nums[i] <= 10<sup>9</sup></code>
+*   <code>-10<sup>9</sup> <= target <= 10<sup>9</sup></code>

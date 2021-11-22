@@ -22,7 +22,12 @@ How many possible unique paths are there?
 
 **Output:** 3
 
-**Explanation:** From the top-left corner, there are a total of 3 ways to reach the bottom-right corner: 1. Right -> Down -> Down 2. Down -> Down -> Right 3. Down -> Right -> Down 
+**Explanation:**
+
+    From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:
+    1. Right -> Down -> Down
+    2. Down -> Down -> Right
+    3. Down -> Right -> Down 
 
 **Example 3:**
 
@@ -39,4 +44,4 @@ How many possible unique paths are there?
 **Constraints:**
 
 *   `1 <= m, n <= 100`
-*   It's guaranteed that the answer will be less than or equal to `2 * 109`.
+*   It's guaranteed that the answer will be less than or equal to <code>2 * 10<sup>9</sup></code>.

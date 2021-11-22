@@ -28,5 +28,5 @@ Given a string containing just the characters `'('` and `')'`, find the length o
 
 **Constraints:**
 
-*   `0 <= s.length <= 3 * 104`
+*   <code>0 <= s.length <= 3 * 10<sup>4</sup></code>
 *   `s[i]` is `'('`, or `')'`.

@@ -28,7 +28,7 @@ You must write an algorithm with `O(log n)` runtime complexity.
 
 **Constraints:**
 
-*   `0 <= nums.length <= 105`
-*   `-109 <= nums[i] <= 109`
+*   <code>0 <= nums.length <= 10<sup>5</sup></code>
+*   <code>-10<sup>9</sup> <= nums[i] <= 10<sup>9</sup></code>
 *   `nums` is a non-decreasing array.
-*   `-109 <= target <= 109`
+*   <code>-10<sup>9</sup> <= target <= 10<sup>9</sup></code>

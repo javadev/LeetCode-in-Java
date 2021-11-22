@@ -36,7 +36,7 @@ A **substring** is a contiguous sequence of characters within the string.
 
 *   `m == s.length`
 *   `n == t.length`
-*   `1 <= m, n <= 105`
+*   <code>1 <= m, n <= 10<sup>5</sup></code>
 *   `s` and `t` consist of uppercase and lowercase English letters.
 
 **Follow up:** Could you find an algorithm that runs in `O(m + n)` time?

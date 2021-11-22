@@ -31,7 +31,7 @@ You must write an algorithm with `O(log n)` runtime complexity.
 **Constraints:**
 
 *   `1 <= nums.length <= 5000`
-*   `-104 <= nums[i] <= 104`
+*   <code>-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup></code>
 *   All values of `nums` are **unique**.
 *   `nums` is an ascending array that is possibly rotated.
-*   `-104 <= target <= 104`
+*   <code>-10<sup>4</sup> <= target <= 10<sup>4</sup></code>

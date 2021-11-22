@@ -18,11 +18,11 @@ You may assume that `next()` calls will always be valid. That is, there will be 
 
 **Input** \["BSTIterator", "next", "next", "hasNext", "next", "hasNext", "next", "hasNext", "next", "hasNext"\] \[\[\[7, 3, 15, null, null, 9, 20\]\], \[\], \[\], \[\], \[\], \[\], \[\], \[\], \[\], \[\]\]
 
-**Output** \[null, 3, 7, true, 9, true, 15, true, 20, false\]
+**Output:** \[null, 3, 7, true, 9, true, 15, true, 20, false\]
 
-**Explanation**
+**Explanation:**
 
-    BSTIterator bSTIterator = new BSTIterator(\[7, 3, 15, null, null, 9, 20\]);
+    BSTIterator bSTIterator = new BSTIterator([7, 3, 15, null, null, 9, 20]);
     bSTIterator.next(); // return 3
     bSTIterator.next(); // return 7
     bSTIterator.hasNext(); // return True
@@ -35,9 +35,9 @@ You may assume that `next()` calls will always be valid. That is, there will be 
 
 **Constraints:**
 
-*   The number of nodes in the tree is in the range `[1, 105]`.
-*   `0 <= Node.val <= 106`
-*   At most `105` calls will be made to `hasNext`, and `next`.
+*   The number of nodes in the tree is in the range <code>[1, 10<sup>5</sup>]</code>.
+*   <code>0 <= Node.val <= 10<sup>6</sup></code>
+*   At most <code>10<sup>5</sup></code> calls will be made to `hasNext`, and `next`.
 
 **Follow up:**
 

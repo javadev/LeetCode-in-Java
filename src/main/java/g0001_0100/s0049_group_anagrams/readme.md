@@ -26,6 +26,6 @@ An **Anagram** is a word or phrase formed by rearranging the letters of a differ
 
 **Constraints:**
 
-*   `1 <= strs.length <= 104`
+*   <code>1 <= strs.length <= 10<sup>4</sup></code>
 *   `0 <= strs[i].length <= 100`
 *   `strs[i]` consists of lowercase English letters.
