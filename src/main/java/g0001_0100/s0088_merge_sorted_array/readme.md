@@ -38,6 +38,6 @@ The final sorted array should not be returned by the function, but instead be _s
 *   `nums2.length == n`
 *   `0 <= m, n <= 200`
 *   `1 <= m + n <= 200`
-*   `-109 <= nums1[i], nums2[j] <= 109`
+*   <code>-10<sup>9</sup> <= nums1[i], nums2[j] <= 10<sup>9</sup></code>
 
 **Follow up:** Can you come up with an algorithm that runs in `O(m + n)` time?

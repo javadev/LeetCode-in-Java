@@ -17,9 +17,9 @@ The judge will test your solution with the following code:
     int[] nums = [...]; // Input array
     int[] expectedNums = [...]; // The expected answer with correct length
 
-    int k = removeDuplicates(nums); // Calls your implementation assert
+    int k = removeDuplicates(nums); // Calls your implementation
 
-    k == expectedNums.length;
+    assert k == expectedNums.length;
     for (int i = 0; i < k; i++) {
         assert nums[i] == expectedNums[i];
     } 
@@ -44,6 +44,6 @@ If all assertions pass, then your solution will be **accepted**.
 
 **Constraints:**
 
-*   `0 <= nums.length <= 3 * 104`
+*   <code>0 <= nums.length <= 3 * 10<sup>4</sup></code>
 *   `-100 <= nums[i] <= 100`
 *   `nums` is sorted in **non-decreasing** order.

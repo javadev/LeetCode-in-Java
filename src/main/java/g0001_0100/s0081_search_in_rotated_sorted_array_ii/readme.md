@@ -25,8 +25,8 @@ You must decrease the overall operation steps as much as possible.
 **Constraints:**
 
 *   `1 <= nums.length <= 5000`
-*   `-104 <= nums[i] <= 104`
+*   <code>-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup></code>
 *   `nums` is guaranteed to be rotated at some pivot.
-*   `-104 <= target <= 104`
+*   <code>-10<sup>4</sup> <= target <= 10<sup>4</sup></code>
 
 **Follow up:** This problem is similar to [Search in Rotated Sorted Array](/problems/search-in-rotated-sorted-array/description/), but `nums` may contain **duplicates**. Would this affect the runtime complexity? How and why?

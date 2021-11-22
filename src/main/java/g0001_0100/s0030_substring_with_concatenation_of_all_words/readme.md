@@ -28,7 +28,7 @@ You can return the answer in **any order**.
 
 **Constraints:**
 
-*   `1 <= s.length <= 104`
+*   <code>1 <= s.length <= 10<sup>4</sup></code>
 *   `s` consists of lower-case English letters.
 *   `1 <= words.length <= 5000`
 *   `1 <= words[i].length <= 30`

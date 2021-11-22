@@ -24,5 +24,5 @@ Return `true` _if you can reach the last index, or_ `false` _otherwise_.
 
 **Constraints:**
 
-*   `1 <= nums.length <= 104`
-*   `0 <= nums[i] <= 105`
+*   <code>1 <= nums.length <= 10<sup>4</sup></code>
+*   <code>0 <= nums[i] <= 10<sup>5</sup></code>

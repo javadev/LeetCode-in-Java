@@ -33,4 +33,4 @@ Given a list of non-negative integers `nums`, arrange them such that they form t
 **Constraints:**
 
 *   `1 <= nums.length <= 100`
-*   `0 <= nums[i] <= 109`
+*   <code>0 <= nums[i] <= 10<sup>9</sup></code>

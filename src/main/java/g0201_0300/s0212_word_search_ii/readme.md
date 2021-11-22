@@ -28,7 +28,7 @@ Each word must be constructed from letters of sequentially adjacent cells, where
 *   `n == board[i].length`
 *   `1 <= m, n <= 12`
 *   `board[i][j]` is a lowercase English letter.
-*   `1 <= words.length <= 3 * 104`
+*   <code>1 <= words.length <= 3 * 10<sup>4</sup></code>
 *   `1 <= words[i].length <= 10`
 *   `words[i]` consists of lowercase English letters.
 *   All the strings of `words` are unique.

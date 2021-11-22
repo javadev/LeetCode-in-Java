@@ -2,7 +2,7 @@
 
 Medium
 
-Given an array of `intervals` where `intervals[i] = [starti, endi]`, merge all overlapping intervals, and return _an array of the non-overlapping intervals that cover all the intervals in the input_.
+Given an array of `intervals` where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, merge all overlapping intervals, and return _an array of the non-overlapping intervals that cover all the intervals in the input_.
 
 **Example 1:**
 
@@ -22,6 +22,6 @@ Given an array of `intervals` where `intervals[i] = [starti, endi]`, merge all o
 
 **Constraints:**
 
-*   `1 <= intervals.length <= 104`
+*   <code>1 <= intervals.length <= 10<sup>4</sup></code>
 *   `intervals[i].length == 2`
-*   `0 <= starti <= endi <= 104`
+*   <code>0 <= start<sub>i</sub> <= end<sub>i</sub> <= 10<sup>4</sup></code>
