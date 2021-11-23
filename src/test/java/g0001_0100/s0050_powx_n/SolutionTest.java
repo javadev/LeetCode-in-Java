@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void powxN() {
+    public void myPow() {
         assertThat(new Solution().myPow(2.00000, 10), equalTo(1024.00000));
     }
 }

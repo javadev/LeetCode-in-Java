@@ -8,8 +8,7 @@ import org.junit.Test;
 public class SolutionTest {
     @Test
     public void generateMatrix() {
-        int[][] actual = new Solution().generateMatrix(3);
         int[][] expected = {{1, 2, 3}, {8, 9, 4}, {7, 6, 5}};
-        assertThat(actual, equalTo(expected));
+        assertThat(new Solution().generateMatrix(3), equalTo(expected));
     }
 }

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ArrayUtils {
-
     private ArrayUtils() {}
 
     public static List<List<Integer>> getLists(int[][] expected) {

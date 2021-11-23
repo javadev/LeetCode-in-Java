@@ -8,13 +8,7 @@ import org.junit.Test;
 public class SolutionTest {
     @Test
     public void exist() {
-        assertThat(
-                new Solution()
-                        .exist(
-                                new char[][] {
-                                    {'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}
-                                },
-                                "ABCCED"),
-                equalTo(true));
+        char[][] input = {{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
+        assertThat(new Solution().exist(input, "ABCCED"), equalTo(true));
     }
 }

@@ -8,13 +8,12 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void rotateList() {
+    public void rotateRight() {
         ListNode headActual = new ListNode(1);
         headActual.next = new ListNode(2);
         headActual.next.next = new ListNode(3);
         headActual.next.next.next = new ListNode(4);
         headActual.next.next.next.next = new ListNode(5);
-
         assertThat(new Solution().rotateRight(headActual, 2).toString(), equalTo("4, 5, 1, 2, 3"));
     }
 }
