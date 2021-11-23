@@ -25,7 +25,9 @@ public class Solution {
 
     public List<String> binaryTreePaths(TreeNode root) {
         result = new ArrayList<>();
-        if (root == null) return result;
+        if (root == null) {
+            return result;
+        }
         sb = new StringBuilder();
         walkThrough(root);
         return result;
