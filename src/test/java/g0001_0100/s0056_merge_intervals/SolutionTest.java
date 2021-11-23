@@ -7,11 +7,9 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void mergeIntervals() {
+    public void merge() {
         int[][] input = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
         int[][] expected = {{1, 6}, {8, 10}, {15, 18}};
-        int[][] actual = new Solution().merge(input);
-
-        assertThat(actual, equalTo(expected));
+        assertThat(new Solution().merge(input), equalTo(expected));
     }
 }

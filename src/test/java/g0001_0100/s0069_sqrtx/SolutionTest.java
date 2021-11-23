@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void sqrtx() {
+    public void mySqrt() {
         assertThat(new Solution().mySqrt(4), equalTo(2));
     }
 }

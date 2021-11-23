@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void multiplyStrings() {
+    public void multiply() {
         assertThat(new Solution().multiply("2", "3"), equalTo("6"));
     }
 }
