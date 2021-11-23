@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 
 public class RangeFreqQuery {
-
     Map<Integer, List<Integer>> map;
 
     public RangeFreqQuery(int[] arr) {
@@ -21,19 +20,17 @@ public class RangeFreqQuery {
     }
 
     public int query(int left, int right, int value) {
-
         if (!map.containsKey(value)) {
             return 0;
         }
         List<Integer> list = map.get(value);
         int s = Collections.binarySearch(list, left);
         int e = Collections.binarySearch(list, right);
-
         if (s < 0) {
-            s = (s + 1) * (-1);
+            s = (s + 1) * -1;
         }
         if (e < 0) {
-            e = (e + 2) * (-1);
+            e = (e + 2) * -1;
         }
         return e - s + 1;
     }
