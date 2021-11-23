@@ -38,6 +38,8 @@ public class Solution {
                                 case '*':
                                     values.add(l * r);
                                     break;
+                                default:
+                                    break;
                             }
                         }
                     }
@@ -49,13 +51,16 @@ public class Solution {
     }
 
     private boolean hasOperator(String expression) {
-        for (int i = 0; i < expression.length(); i++)
+        for (int i = 0; i < expression.length(); i++) {
             switch (expression.charAt(i)) {
                 case '+':
                 case '-':
                 case '*':
                     return true;
+                default:
+                    break;
             }
+        }
         return false;
     }
 }
