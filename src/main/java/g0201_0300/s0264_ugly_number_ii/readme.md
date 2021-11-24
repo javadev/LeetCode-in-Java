@@ -1,43 +1,27 @@
-263\. Ugly Number
+264\. Ugly Number II
 
-Easy
+Medium
 
 An **ugly number** is a positive integer whose prime factors are limited to `2`, `3`, and `5`.
 
-Given an integer `n`, return `true` _if_ `n` _is an **ugly number**_.
+Given an integer `n`, return _the_ <code>n<sup>th</sup></code> _**ugly number**_.
 
 **Example 1:**
 
-**Input:** n = 6
+**Input:** n = 10
 
-**Output:** true
+**Output:** 12
 
-**Explanation:** 6 = 2 × 3
+**Explanation:** \[1, 2, 3, 4, 5, 6, 8, 9, 10, 12\] is the sequence of the first 10 ugly numbers. 
 
 **Example 2:**
 
-**Input:** n = 8
-
-**Output:** true
-
-**Explanation:** 8 = 2 × 2 × 2 
-
-**Example 3:**
-
-**Input:** n = 14
-
-**Output:** false
-
-**Explanation:** 14 is not ugly since it includes the prime factor 7. 
-
-**Example 4:**
-
 **Input:** n = 1
 
-**Output:** true
+**Output:** 1
 
 **Explanation:** 1 has no prime factors, therefore all of its prime factors are limited to 2, 3, and 5. 
 
 **Constraints:**
 
-*   <code>-2<sup>31</sup> <= n <= 2<sup>31</sup> - 1</code>
+*   `1 <= n <= 1690`
