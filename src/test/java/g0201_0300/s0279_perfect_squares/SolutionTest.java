@@ -10,4 +10,9 @@ public class SolutionTest {
     public void numSquares() {
         assertThat(new Solution().numSquares(12), equalTo(3));
     }
+
+    @Test
+    public void numSquares2() {
+        assertThat(new Solution().numSquares(13), equalTo(2));
+    }
 }
