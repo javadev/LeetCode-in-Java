@@ -10,4 +10,24 @@ public class SolutionTest {
     public void myAtoi() {
         assertThat(new Solution().myAtoi("42"), equalTo(42));
     }
+
+    @Test
+    public void myAtoi2() {
+        assertThat(new Solution().myAtoi("   -42"), equalTo(-42));
+    }
+
+    @Test
+    public void myAtoi3() {
+        assertThat(new Solution().myAtoi("4193 with words"), equalTo(4193));
+    }
+
+    @Test
+    public void myAtoi4() {
+        assertThat(new Solution().myAtoi("words and 987"), equalTo(0));
+    }
+
+    @Test
+    public void myAtoi5() {
+        assertThat(new Solution().myAtoi("-91283472332"), equalTo(-2147483648));
+    }
 }
