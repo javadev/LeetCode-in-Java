@@ -2,15 +2,12 @@ package g0001_0100.s0065_valid_number;
 
 public class Solution {
     public boolean isNumber(String s) {
-
         if (s == null || s.length() == 0) {
             return false;
         }
-
         boolean eSeen = false;
         boolean numberSeen = false;
         boolean decimalSeen = false;
-
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (c >= 48 && c <= 57) {
@@ -24,19 +21,16 @@ public class Solution {
                 if (eSeen || decimalSeen) {
                     return false;
                 }
-
                 decimalSeen = true;
             } else if (c == 'e' || c == 'E') {
                 if (i == s.length() - 1 || eSeen || !numberSeen) {
                     return false;
                 }
-
                 eSeen = true;
             } else {
                 return false;
             }
         }
-
         return numberSeen;
     }
 }
