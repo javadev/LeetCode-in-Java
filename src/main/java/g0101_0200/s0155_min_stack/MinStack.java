@@ -29,20 +29,6 @@ public class MinStack {
     public int getMin() {
         return currentNode.min;
     }
-
-    class Node {
-        int min;
-        int data;
-        Node nextNode;
-        Node previousNode;
-
-        Node(int min, int data, Node previousNode, Node nextNode) {
-            this.min = min;
-            this.data = data;
-            this.previousNode = previousNode;
-            this.nextNode = nextNode;
-        }
-    }
 }
 
 /*
