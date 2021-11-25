@@ -3,9 +3,10 @@ package g0201_0300.s0282_expression_add_operators;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S107")
 public class Solution {
     public List<String> addOperators(String num, int target) {
-        List<String> res = new ArrayList<String>();
+        List<String> res = new ArrayList<>();
         if (num.length() == 0 || Long.valueOf(num) > Integer.MAX_VALUE) {
             return res;
         }
