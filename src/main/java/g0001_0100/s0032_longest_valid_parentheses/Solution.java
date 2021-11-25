@@ -5,7 +5,6 @@ public class Solution {
         int max = 0;
         char[] s = symbols.toCharArray();
         int[] dp = new int[s.length];
-
         for (int i = 1; i < s.length; i++) {
             if (s[i] == ')') {
                 if (s[i - 1] == '(') {
@@ -18,11 +17,9 @@ public class Solution {
                         dp[i] += ((i - dp[i - 1]) >= 2) ? dp[i - dp[i - 1] - 2] : 0;
                     }
                 }
-
                 max = Math.max(max, dp[i]);
             }
         }
-
         return max;
     }
 }
