@@ -13,5 +13,11 @@ public class SolutionTest {
         assertThat(solution.isNumber("e"), equalTo(false));
         assertThat(solution.isNumber("."), equalTo(false));
         assertThat(solution.isNumber(".1"), equalTo(true));
+        assertThat(solution.isNumber("+.1"), equalTo(true));
+        assertThat(solution.isNumber("-.1"), equalTo(true));
+        assertThat(solution.isNumber("++.1"), equalTo(false));
+        assertThat(solution.isNumber("1e1"), equalTo(true));
+        assertThat(solution.isNumber("1E1"), equalTo(true));
+        assertThat(solution.isNumber("1.1E1"), equalTo(true));
     }
 }
