@@ -60,6 +60,7 @@
                 <configuration>
                     <archive>
                         <manifestEntries>
+                            <Automatic-Module-Name>com.github.leetcode</Automatic-Module-Name>
                             <Built-By></Built-By>
                             <Created-By></Created-By>
                             <Build-Jdk></Build-Jdk>
@@ -98,10 +99,6 @@
                     <failOnError>false</failOnError>
                     <additionalparam>-Xdoclint:all -Xdoclint:-missing</additionalparam>
                     <additionalOptions>-Xdoclint:all -Xdoclint:-missing</additionalOptions>
-                    <additionalJOptions>
-                        <additionalJOption>-Xdoclint:all</additionalJOption>
-                        <additionalJOption>-Xdoclint:-missing</additionalJOption>
-                    </additionalJOptions>
                 </configuration>
             </plugin>
             <plugin>
