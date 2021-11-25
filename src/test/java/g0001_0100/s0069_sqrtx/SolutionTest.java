@@ -10,4 +10,9 @@ public class SolutionTest {
     public void mySqrt() {
         assertThat(new Solution().mySqrt(4), equalTo(2));
     }
+
+    @Test
+    public void mySqrt2() {
+        assertThat(new Solution().mySqrt(8), equalTo(2));
+    }
 }

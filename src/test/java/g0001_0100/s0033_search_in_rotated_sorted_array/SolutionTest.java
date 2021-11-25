@@ -10,4 +10,14 @@ public class SolutionTest {
     public void search() {
         assertThat(new Solution().search(new int[] {4, 5, 6, 7, 0, 1, 2}, 0), equalTo(4));
     }
+
+    @Test
+    public void search2() {
+        assertThat(new Solution().search(new int[] {4, 5, 6, 7, 0, 1, 2}, 3), equalTo(-1));
+    }
+
+    @Test
+    public void search3() {
+        assertThat(new Solution().search(new int[] {1}, 0), equalTo(-1));
+    }
 }
