@@ -2,33 +2,22 @@ package g0001_0100.s0074_search_a_2d_matrix;
 
 public class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
-        int m = matrix.length;
-        int n = matrix[0].length;
-        for (int i = 0; i < m; i++) {
-            int[] cur = matrix[i];
-            int max = cur[n - 1];
-            if (max == target) {
-                return true;
-            }
-            if (max > target) {
-                int index = binarySearch(cur, 0, n - 1, target);
-                return index >= 0;
+        int endRow = matrix.length;
+        int endCol = matrix[0].length;
+        int targetRow = 0;
+        boolean result = false;
+        for (int i = 0; i < endRow; i++) {
+            if (matrix[i][endCol - 1] >= target) {
+                targetRow = i;
+                break;
             }
         }
-        return false;
-    }
-
-    int binarySearch(int[] arr, int l, int r, int x) {
-        if (r >= l) {
-            int mid = l + (r - l) / 2;
-            if (arr[mid] == x) {
-                return mid;
+        for (int i = 0; i < endCol; i++) {
+            if (matrix[targetRow][i] == target) {
+                result = true;
+                break;
             }
-            if (arr[mid] > x) {
-                return binarySearch(arr, l, mid - 1, x);
-            }
-            return binarySearch(arr, mid + 1, r, x);
         }
-        return -1;
+        return result;
     }
 }
