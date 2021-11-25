@@ -1,23 +1,42 @@
 package g0001_0100.s0032_longest_valid_parentheses;
 
 public class Solution {
-    public int longestValidParentheses(String symbols) {
+    public int longestValidParentheses(String s) {
         int max = 0;
-        char[] s = symbols.toCharArray();
-        int[] dp = new int[s.length];
-        for (int i = 1; i < s.length; i++) {
-            if (s[i] == ')') {
-                if (s[i - 1] == '(') {
-                    dp[i] = 2;
-                    dp[i] += (i >= 2) ? dp[i - 2] : 0;
-                } else {
-                    if (i - dp[i - 1] - 1 >= 0 && s[i - dp[i - 1] - 1] == '(') {
-                        dp[i] = 2;
-                        dp[i] += dp[i - 1];
-                        dp[i] += ((i - dp[i - 1]) >= 2) ? dp[i - dp[i - 1] - 2] : 0;
-                    }
-                }
-                max = Math.max(max, dp[i]);
+        int left = 0;
+        int right = 0;
+        int n = s.length();
+        char ch;
+        for (int i = 0; i < n; i++) {
+            ch = s.charAt(i);
+            if (ch == '(') {
+                left++;
+            } else {
+                right++;
+            }
+            if (right > left) {
+                left = 0;
+                right = 0;
+            }
+            if (left == right) {
+                max = Math.max(max, left + right);
+            }
+        }
+        left = 0;
+        right = 0;
+        for (int i = n - 1; i >= 0; i--) {
+            ch = s.charAt(i);
+            if (ch == '(') {
+                left++;
+            } else {
+                right++;
+            }
+            if (left > right) {
+                left = 0;
+                right = 0;
+            }
+            if (left == right) {
+                max = Math.max(max, left + right);
             }
         }
         return max;
