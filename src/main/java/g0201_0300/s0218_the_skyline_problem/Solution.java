@@ -24,8 +24,12 @@ public class Solution {
                 map.put(line[1], map.getOrDefault(line[1], 0) + 1);
             } else {
                 int f = map.get(-line[1]);
-                if (f == 1) map.remove(-line[1]);
-                else map.put(-line[1], f - 1);
+                if (f == 1) {
+                	map.remove(-line[1]);
+                }
+                else {
+                	map.put(-line[1], f - 1);
+                }
             }
             int curr = map.lastKey();
             if (curr != prev) {
