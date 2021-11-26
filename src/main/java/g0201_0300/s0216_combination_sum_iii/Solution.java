@@ -3,6 +3,7 @@ package g0201_0300.s0216_combination_sum_iii;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S5413")
 public class Solution {
     public List<List<Integer>> combinationSum3(int k, int n) {
         List<List<Integer>> res = new ArrayList<>();
@@ -13,7 +14,7 @@ public class Solution {
     private void solve(
             int k, int target, List<Integer> temp, List<List<Integer>> res, int sum, int start) {
         if (sum == target && temp.size() == k) {
-            res.add(new ArrayList<Integer>(temp));
+            res.add(new ArrayList<>(temp));
             return;
         }
 
