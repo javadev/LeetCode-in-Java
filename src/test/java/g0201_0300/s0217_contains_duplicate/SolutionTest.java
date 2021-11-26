@@ -10,4 +10,16 @@ public class SolutionTest {
     public void containsDuplicate() {
         assertThat(new Solution().containsDuplicate(new int[] {1, 2, 3, 1}), equalTo(true));
     }
+
+    @Test
+    public void containsDuplicate2() {
+        assertThat(new Solution().containsDuplicate(new int[] {1, 2, 3, 4}), equalTo(false));
+    }
+
+    @Test
+    public void containsDuplicate3() {
+        assertThat(
+                new Solution().containsDuplicate(new int[] {1, 1, 1, 3, 3, 4, 3, 2, 4, 2}),
+                equalTo(true));
+    }
 }
