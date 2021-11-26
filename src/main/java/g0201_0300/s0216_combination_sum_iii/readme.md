@@ -15,7 +15,10 @@ Return _a list of all possible valid combinations_. The list must not contain th
 
 **Output:** \[\[1,2,4\]\]
 
-**Explanation:** 1 + 2 + 4 = 7 There are no other valid combinations.
+**Explanation:**
+
+    1 + 2 + 4 = 7
+    There are no other valid combinations.
 
 **Example 2:**
 
@@ -23,7 +26,12 @@ Return _a list of all possible valid combinations_. The list must not contain th
 
 **Output:** \[\[1,2,6\],\[1,3,5\],\[2,3,4\]\]
 
-**Explanation:** 1 + 2 + 6 = 9 1 + 3 + 5 = 9 2 + 3 + 4 = 9 There are no other valid combinations. 
+**Explanation:**
+
+    1 + 2 + 6 = 9
+    1 + 3 + 5 = 9
+    2 + 3 + 4 = 9
+    There are no other valid combinations. 
 
 **Example 3:**
 
@@ -31,7 +39,10 @@ Return _a list of all possible valid combinations_. The list must not contain th
 
 **Output:** \[\]
 
-**Explanation:** There are no valid combinations. Using 4 different numbers in the range \[1,9\], the smallest sum we can get is 1+2+3+4 = 10 and since 10 > 1, there are no valid combination. 
+**Explanation:**
+
+    There are no valid combinations.
+    Using 4 different numbers in the range [1,9], the smallest sum we can get is 1+2+3+4 = 10 and since 10 > 1, there are no valid combination. 
 
 **Example 4:**
 
@@ -47,7 +58,10 @@ Return _a list of all possible valid combinations_. The list must not contain th
 
 **Output:** \[\[1,2,3,4,5,6,7,8,9\]\]
 
-**Explanation:** 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 45 There are no other valid combinations. 
+**Explanation:**
+
+    1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 45
+    There are no other valid combinations. 
 
 **Constraints:**
 
