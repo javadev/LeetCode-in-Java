@@ -2,27 +2,24 @@ package g0201_0300.s0273_integer_to_english_words;
 
 public class Solution {
 
-    String[] ones =
-            new String[] {
-                "One ", "Two ", "Three ", "Four ", "Five ", "Six ", "Seven ", "Eight ", "Nine "
-            };
-    String[] teens =
-            new String[] {
-                "Ten ",
-                "Eleven ",
-                "Twelve ",
-                "Thirteen ",
-                "Fourteen ",
-                "Fifteen ",
-                "Sixteen ",
-                "Seventeen ",
-                "Eighteen ",
-                "Nineteen "
-            };
-    String[] twenties =
-            new String[] {
-                "Twenty ", "Thirty ", "Forty ", "Fifty ", "Sixty ", "Seventy ", "Eighty ", "Ninety "
-            };
+    String[] ones = {
+        "One ", "Two ", "Three ", "Four ", "Five ", "Six ", "Seven ", "Eight ", "Nine "
+    };
+    String[] teens = {
+        "Ten ",
+        "Eleven ",
+        "Twelve ",
+        "Thirteen ",
+        "Fourteen ",
+        "Fifteen ",
+        "Sixteen ",
+        "Seventeen ",
+        "Eighteen ",
+        "Nineteen "
+    };
+    String[] twenties = {
+        "Twenty ", "Thirty ", "Forty ", "Fifty ", "Sixty ", "Seventy ", "Eighty ", "Ninety "
+    };
 
     String zero = "Zero";
     String hundred = "Hundred ";
