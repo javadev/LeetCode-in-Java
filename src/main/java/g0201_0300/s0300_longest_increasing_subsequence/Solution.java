@@ -13,7 +13,8 @@ public class Solution {
         int left = 1;
         int right = 1;
         for (int curr : nums) {
-            int start = left, end = right;
+            int start = left;
+            int end = right;
             // binary search, find the one that is lower than curr
             while (start + 1 < end) {
                 int mid = start + (end - start) / 2;

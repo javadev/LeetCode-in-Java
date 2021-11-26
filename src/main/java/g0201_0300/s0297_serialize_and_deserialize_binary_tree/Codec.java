@@ -12,9 +12,9 @@ import com_github_leetcode.TreeNode;
  * }
  */
 public class Codec {
-    private final int OFFSET = 1000;
-    private final String DELIM = "*";
-    int offset;
+    private static final int OFFSET = 1000;
+    private static final String DELIM = "*";
+    private int offset;
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
