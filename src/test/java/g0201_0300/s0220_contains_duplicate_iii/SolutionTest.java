@@ -12,4 +12,18 @@ public class SolutionTest {
                 new Solution().containsNearbyAlmostDuplicate(new int[] {1, 2, 3, 1}, 3, 0),
                 equalTo(true));
     }
+
+    @Test
+    public void containsNearbyAlmostDuplicate2() {
+        assertThat(
+                new Solution().containsNearbyAlmostDuplicate(new int[] {1, 0, 1, 1}, 1, 2),
+                equalTo(true));
+    }
+
+    @Test
+    public void containsNearbyAlmostDuplicate3() {
+        assertThat(
+                new Solution().containsNearbyAlmostDuplicate(new int[] {1, 5, 9, 1, 5, 9}, 2, 3),
+                equalTo(false));
+    }
 }
