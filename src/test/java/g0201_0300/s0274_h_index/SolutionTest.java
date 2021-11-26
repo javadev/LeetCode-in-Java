@@ -10,4 +10,9 @@ public class SolutionTest {
     public void hindex() {
         assertThat(new Solution().hindex(new int[] {3, 0, 6, 1, 5}), equalTo(3));
     }
+
+    @Test
+    public void hindex2() {
+        assertThat(new Solution().hindex(new int[] {1, 3, 1}), equalTo(1));
+    }
 }
