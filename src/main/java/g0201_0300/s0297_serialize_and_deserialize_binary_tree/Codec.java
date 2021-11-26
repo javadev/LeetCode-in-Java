@@ -40,7 +40,6 @@ public class Codec {
         sb.append(sb2.toString());
         serialize(root.left, sb);
         serialize(root.right, sb);
-        return;
     }
 
     // Decodes your encoded data to tree.
