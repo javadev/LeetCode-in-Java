@@ -25,10 +25,9 @@ public class Solution {
             } else {
                 int f = map.get(-line[1]);
                 if (f == 1) {
-                	map.remove(-line[1]);
-                }
-                else {
-                	map.put(-line[1], f - 1);
+                    map.remove(-line[1]);
+                } else {
+                    map.put(-line[1], f - 1);
                 }
             }
             int curr = map.lastKey();
