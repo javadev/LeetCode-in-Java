@@ -11,12 +11,12 @@ public class MedianFinder {
 
     // initialize your data structure here.
     public MedianFinder() {
-        maxHeap = new PriorityQueue<Integer>((a, b) -> (b - a));
-        minHeap = new PriorityQueue<Integer>();
+        maxHeap = new PriorityQueue<>((a, b) -> (b - a));
+        minHeap = new PriorityQueue<>();
     }
 
     public void addNum(int num) {
-        if (maxHeap.size() == 0 || maxHeap.peek() > num) {
+        if (maxHeap.isEmpty() || maxHeap.peek() > num) {
             maxHeap.offer(num);
         } else {
             minHeap.offer(num);

@@ -12,7 +12,7 @@ import com_github_leetcode.TreeNode;
  * }
  */
 public class Codec {
-    private static final int OFFSET = 1000;
+    private static final int BASE_OFFSET = 1000;
     private static final String DELIM = "*";
     private int offset;
 
@@ -31,7 +31,7 @@ public class Codec {
             sb.append(DELIM);
             return;
         }
-        String s = Integer.toHexString(root.val + OFFSET);
+        String s = Integer.toHexString(root.val + BASE_OFFSET);
         StringBuilder sb2 = new StringBuilder();
         for (int i = 0; i < 3 - s.length(); i++) {
             sb2.append('0');
@@ -50,7 +50,8 @@ public class Codec {
             return null;
         }
         TreeNode root =
-                new TreeNode(Integer.parseInt(data.substring(offset, offset + 3), 16) - OFFSET);
+                new TreeNode(
+                        Integer.parseInt(data.substring(offset, offset + 3), 16) - BASE_OFFSET);
         offset += 3;
         root.left = deserialize(data);
         root.right = deserialize(data);

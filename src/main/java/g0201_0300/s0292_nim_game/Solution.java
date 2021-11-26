@@ -2,9 +2,6 @@ package g0201_0300.s0292_nim_game;
 
 public class Solution {
     public boolean canWinNim(int n) {
-        if (n % 4 == 0) {
-            return false;
-        }
-        return true;
+        return !(n % 4 == 0);
     }
 }
