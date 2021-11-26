@@ -9,7 +9,9 @@ public class Solution {
         int len = nums.length;
         for (int i = 0; i < len; i++) {
             Integer index = map.put(nums[i], i);
-            if (index != null && Math.abs(index - i) <= k) return true;
+            if (index != null && Math.abs(index - i) <= k) {
+                return true;
+            }
         }
         return false;
     }
