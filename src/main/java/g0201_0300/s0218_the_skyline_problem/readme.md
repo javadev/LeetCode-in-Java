@@ -24,7 +24,11 @@ The **skyline** should be represented as a list of "key points" **sorted by thei
 
 **Output:** \[\[2,10\],\[3,15\],\[7,12\],\[12,0\],\[15,10\],\[20,8\],\[24,0\]\]
 
-**Explanation:** Figure A shows the buildings of the input. Figure B shows the skyline formed by those buildings. The red points in figure B represent the key points in the output list. 
+**Explanation:**
+
+    Figure A shows the buildings of the input.
+    Figure B shows the skyline formed by those buildings.
+    The red points in figure B represent the key points in the output list. 
 
 **Example 2:**
 
