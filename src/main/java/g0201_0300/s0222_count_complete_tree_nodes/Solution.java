@@ -4,15 +4,12 @@ import com_github_leetcode.TreeNode;
 
 public class Solution {
     public int countNodes(TreeNode root) {
-
         if (root == null) {
             return 0;
         }
-
         int leftHeight = leftHeight(root);
         int rightHeight = rightHeight(root);
-
-        /** case 1: When Height(Left sub-tree) = Height(right sub-tree) 2^h - 1 */
+        // case 1: When Height(Left sub-tree) = Height(right sub-tree) 2^h - 1
         if (leftHeight == rightHeight) {
             return (1 << leftHeight) - 1;
         } else {

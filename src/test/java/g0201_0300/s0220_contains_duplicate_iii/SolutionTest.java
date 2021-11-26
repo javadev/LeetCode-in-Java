@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void containsDuplicateIII() {
+    public void containsNearbyAlmostDuplicate() {
         assertThat(
                 new Solution().containsNearbyAlmostDuplicate(new int[] {1, 2, 3, 1}, 3, 0),
                 equalTo(true));

@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class SolutionTest {
     @Test
-    public void wordSearchII() {
+    public void findWords() {
         char[][] board = {
             {'o', 'a', 'a', 'n'}, {'e', 't', 'a', 'e'}, {'i', 'h', 'k', 'r'}, {'i', 'f', 'l', 'v'}
         };

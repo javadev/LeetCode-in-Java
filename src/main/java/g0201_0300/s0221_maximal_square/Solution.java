@@ -10,17 +10,13 @@ public class Solution {
         if (n == 0) {
             return 0;
         }
-
         int[][] dp = new int[m + 1][n + 1];
-
         int max = 0;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (matrix[i][j] == '1') {
-
                     // 1 + minimum from cell above, cell to the left, cell diagonal upper-left
                     int next = 1 + Math.min(dp[i][j], Math.min(dp[i + 1][j], dp[i][j + 1]));
-
                     // keep track of the maximum value seen
                     if (next > max) {
                         max = next;
@@ -29,7 +25,6 @@ public class Solution {
                 }
             }
         }
-
         return max * max;
     }
 }

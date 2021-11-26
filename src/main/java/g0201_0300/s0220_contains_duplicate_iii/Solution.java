@@ -1,29 +1,33 @@
 package g0201_0300.s0220_contains_duplicate_iii;
 
-import java.util.TreeSet;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
+    private long getId(long i, long w) {
+        return i < 0 ? (i + 1) / w - 1 : i / w;
+    }
+
     public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
-        if (k == 0 || nums.length <= 1) {
+        if (t < 0) {
             return false;
         }
-        TreeSet<Integer> kSet =
-                new TreeSet<>(
-                        (i1, i2) -> {
-                            long diff = (long) i1 - i2;
-                            if (Math.abs(diff) <= t) {
-                                return 0;
-                            } else {
-                                return diff > 0 ? +1 : -1;
-                            }
-                        });
-
+        Map<Long, Long> d = new HashMap<>();
+        long w = (long) t + 1;
         for (int i = 0; i < nums.length; ++i) {
-            if (!kSet.add(nums[i])) {
+            long m = getId(nums[i], w);
+            if (d.containsKey(m)) {
                 return true;
             }
+            if (d.containsKey(m - 1) && Math.abs(nums[i] - d.get(m - 1)) < w) {
+                return true;
+            }
+            if (d.containsKey(m + 1) && Math.abs(nums[i] - d.get(m + 1)) < w) {
+                return true;
+            }
+            d.put(m, (long) nums[i]);
             if (i >= k) {
-                kSet.remove(nums[i - k]);
+                d.remove(getId(nums[i - k], w));
             }
         }
         return false;

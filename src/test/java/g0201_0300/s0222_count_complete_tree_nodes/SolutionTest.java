@@ -9,16 +9,13 @@ import org.junit.Test;
 public class SolutionTest {
 
     @Test
-    public void countCompleteTreeNodes() {
+    public void countNodes() {
         TreeNode leftNodeLeftNode = new TreeNode(4);
         TreeNode leftNodeRightNode = new TreeNode(5);
         TreeNode leftNode = new TreeNode(2, leftNodeLeftNode, leftNodeRightNode);
-
         TreeNode rightNodeLeftNode = new TreeNode(6);
         TreeNode rightNode = new TreeNode(3, rightNodeLeftNode, null);
-
         TreeNode root = new TreeNode(1, leftNode, rightNode);
-
         assertThat(new Solution().countNodes(root), equalTo(6));
     }
 }

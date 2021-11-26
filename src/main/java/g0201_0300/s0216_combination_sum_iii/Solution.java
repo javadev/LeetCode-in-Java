@@ -17,15 +17,12 @@ public class Solution {
             res.add(new ArrayList<>(temp));
             return;
         }
-
         if (temp.size() >= k) {
             return;
         }
-
         if (sum > target) {
             return;
         }
-
         for (int i = start; i <= 9; i++) {
             temp.add(i);
             solve(k, target, temp, res, sum + i, i + 1);
