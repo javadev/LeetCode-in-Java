@@ -20,7 +20,6 @@ public class Solution {
     String[] twenties = {
         "Twenty ", "Thirty ", "Forty ", "Fifty ", "Sixty ", "Seventy ", "Eighty ", "Ninety "
     };
-
     String zero = "Zero";
     String hundred = "Hundred ";
     String thousand = "Thousand ";
@@ -31,26 +30,21 @@ public class Solution {
         if (num == 0) {
             return zero;
         }
-
         StringBuilder sb = new StringBuilder();
-
         processThreeDigits(sb, num / 1_000_000_000, billion);
         processThreeDigits(sb, num / 1_000_000, million);
         processThreeDigits(sb, num / 1_000, thousand);
         processThreeDigits(sb, num, null);
-
         return sb.toString().trim();
     }
 
     private void processThreeDigits(StringBuilder sb, int input, String name) {
         int threeDigit = input % 1000;
-
         if (threeDigit > 0) {
             if (threeDigit / 100 > 0) {
                 sb.append(ones[threeDigit / 100 - 1]);
                 sb.append(hundred);
             }
-
             if (threeDigit % 100 >= 20) {
                 sb.append(twenties[(threeDigit % 100) / 10 - 2]);
                 if (threeDigit % 10 > 0) {
@@ -61,7 +55,6 @@ public class Solution {
             } else if (threeDigit % 100 > 0 && threeDigit % 100 < 10) {
                 sb.append(ones[threeDigit % 10 - 1]);
             }
-
             if (name != null) {
                 sb.append(name);
             }
