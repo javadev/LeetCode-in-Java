@@ -11,8 +11,6 @@ public class Solution {
         int second = 1;
         int count1 = 0;
         int count2 = 0;
-        // now we have two candidates(any integer can be chosed as),and their votes are
-        // zero.
         for (int i = 0; i < len; i++) {
             int temp = nums[i];
             if (temp == first) {
@@ -25,18 +23,10 @@ public class Solution {
             } else if (count2 == 0) {
                 second = temp;
                 count2++;
-            }
-            // otherwise,if one of the vote is zero,that's meaning that
-            // we only have or even don't have a candidate.So we set the number to the
-            // candidate.
-            else {
+            } else {
                 count1--;
                 count2--;
-            } // where we have two candidates whose votes bigger than zero,
-            // but the current number is not one of them.Votes decrease by 1 and
-            // the current number complete its "mission" and is skipped at the same time.
-            // once the cycle finished,the target is left after all the counteraction,as its
-            // count is bigger than n/3.
+            }
         }
         count1 = 0;
         count2 = 0;
