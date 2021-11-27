@@ -18,7 +18,10 @@ Implement the `MyQueue` class:
 
 **Example 1:**
 
-**Input** \["MyQueue", "push", "push", "peek", "pop", "empty"\] \[\[\], \[1\], \[2\], \[\], \[\], \[\]\]
+**Input:**
+
+    ["MyQueue", "push", "push", "peek", "pop", "empty"\]
+    [[], [1], [2], [], [], []]
 
 **Output:** \[null, null, null, 1, 1, false\]
 
