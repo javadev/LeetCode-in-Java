@@ -60,3 +60,31 @@ jobs:
         with:
           file: ./**/target/site/jacoco/jacoco.xml
           name: codecov
+
+  mysql-test:
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ALLOW_EMPTY_PASSWORD: false
+          MYSQL_DATABASE: my_test
+        ports:
+          - 3306/tcp
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
+    steps:
+      - name: Shutdown Ubuntu MySQL (SUDO)
+        run: sudo service mysql stop
+
+      - name: Set up MySQL 5.7
+        uses: mirromutth/mysql-action@master
+        with:
+          mysql version: 5.7
+          mysql database: test
+          mysql root password: testpassword
+      - name: Verify mysql version
+        run: |
+          mysql --version
+          mysql --password=testpassword --protocol=tcp -hlocalhost -P3306 -uroot -proot -e "SHOW DATABASES"
