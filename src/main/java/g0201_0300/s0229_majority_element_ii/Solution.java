@@ -45,8 +45,12 @@ public class Solution {
             // check both of them is bigger than n/3.Becasue we may have only one satisfying
             // the demand.
             int temp = nums[i];
-            if (temp == first) count1++;
-            if (temp == second) count2++;
+            if (temp == first) {
+                count1++;
+            }
+            if (temp == second) {
+                count2++;
+            }
         }
         if (count1 > len / 3) {
             results.add(first);
