@@ -11,10 +11,8 @@ public class MyStackTest {
         MyStack stack = new MyStack();
         stack.push(1);
         stack.push(2);
-        assertThat(stack.top, equalTo(2));
-
+        assertThat(stack.top(), equalTo(2));
         assertThat(stack.pop(), equalTo(2));
-
         assertThat(stack.empty(), equalTo(false));
     }
 }

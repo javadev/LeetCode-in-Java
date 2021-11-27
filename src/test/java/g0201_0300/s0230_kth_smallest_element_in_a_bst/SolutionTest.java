@@ -12,10 +12,8 @@ public class SolutionTest {
     public void kthSmallest() {
         TreeNode rightBottomLeft = new TreeNode(2);
         TreeNode left = new TreeNode(1, null, rightBottomLeft);
-
         TreeNode right = new TreeNode(4);
         TreeNode root = new TreeNode(3, left, right);
-
         assertThat(new Solution().kthSmallest(root, 1), equalTo(1));
     }
 }

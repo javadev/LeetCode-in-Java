@@ -11,7 +11,6 @@ public class MyQueueTest {
         MyQueue myQueue = new MyQueue();
         myQueue.push(1);
         myQueue.push(2);
-
         assertThat(myQueue.peek(), equalTo(1));
         assertThat(myQueue.pop(), equalTo(1));
         assertThat(myQueue.empty(), equalTo(false));

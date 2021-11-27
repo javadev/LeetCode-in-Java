@@ -1,16 +1,14 @@
 package g0201_0300.s0224_basic_calculator;
 
 public class Solution {
-    int i = 0;
+    private int i = 0;
 
     public int calculate(String s) {
         char[] ca = s.toCharArray();
-
         return helper(ca);
     }
 
-    public int helper(char[] ca) {
-
+    private int helper(char[] ca) {
         int num = 0;
         int prenum = 0;
         boolean isPlus = true;

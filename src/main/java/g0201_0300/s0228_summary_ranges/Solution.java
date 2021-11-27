@@ -9,10 +9,12 @@ public class Solution {
         if (nums.length == 0) {
             return ranges;
         }
-        int n = nums.length; // size of array
-        int a = nums[0]; // start of range
-        int b = a; // end of range
-
+        // size of array
+        int n = nums.length;
+        // start of range
+        int a = nums[0];
+        // end of range
+        int b = a;
         StringBuilder strB = new StringBuilder();
         for (int i = 1; i < n; i++) {
             // we need to make a decision if the next element
@@ -26,7 +28,6 @@ public class Solution {
                 if (a != b) {
                     strB.append("->").append(b);
                 }
-
                 ranges.add(strB.toString());
                 // since nums[i] is not accounted for by our range a->b
                 // because nums[i] is not b+1, we need to set a and b
@@ -34,11 +35,11 @@ public class Solution {
                 // maybe it is b+2? b+3? b+4? all we know is it is not b+1
                 a = nums[i];
                 b = a;
-
                 // Reset string builder
                 strB.setLength(0);
             } else {
-                b++; // if the next element expands our range we do so
+                // if the next element expands our range we do so
+                b++;
             }
         }
         // the only range that is not accounted for at this point is the last range
@@ -48,7 +49,6 @@ public class Solution {
             strB.append("->").append(b);
         }
         ranges.add(strB.toString());
-
         return ranges;
     }
 }

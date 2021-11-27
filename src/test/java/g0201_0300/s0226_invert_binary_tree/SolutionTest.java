@@ -12,23 +12,17 @@ public class SolutionTest {
         TreeNode leftBottomLeft = new TreeNode(1);
         TreeNode leftBottomRight = new TreeNode(3);
         TreeNode left = new TreeNode(2, leftBottomLeft, leftBottomRight);
-
         TreeNode rightBottomLeft = new TreeNode(6);
         TreeNode rightBottomRight = new TreeNode(9);
         TreeNode right = new TreeNode(7, rightBottomLeft, rightBottomRight);
-
         TreeNode root = new TreeNode(4, left, right);
-
         TreeNode leftBottomLeftInverted = new TreeNode(9);
         TreeNode leftBottomRightInverted = new TreeNode(6);
         TreeNode leftInverted = new TreeNode(7, leftBottomLeftInverted, leftBottomRightInverted);
-
         TreeNode rightBottomLeftInverted = new TreeNode(3);
         TreeNode rightBottomRightInverted = new TreeNode(1);
         TreeNode rightInverted = new TreeNode(2, rightBottomLeftInverted, rightBottomRightInverted);
-
         TreeNode rootInverted = new TreeNode(4, leftInverted, rightInverted);
-
         assertThat(new Solution().invertTree(root).toString(), equalTo(rootInverted.toString()));
     }
 }
