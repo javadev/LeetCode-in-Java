@@ -17,8 +17,7 @@ public class Solution {
             int temp = nums[i];
             if (temp == first) {
                 count1++;
-            } // if the number is the one of the candidates,increase the votes.
-            else if (temp == second) {
+            } else if (temp == second) {
                 count2++;
             } else if (count1 == 0) {
                 first = temp;
