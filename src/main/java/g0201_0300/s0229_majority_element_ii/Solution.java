@@ -17,8 +17,7 @@ public class Solution {
             int temp = nums[i];
             if (temp == first) {
                 count1++;
-            }
-            // if the number is the one of the candidates,increase the votes.
+            } // if the number is the one of the candidates,increase the votes.
             else if (temp == second) {
                 count2++;
             } else if (count1 == 0) {
@@ -27,7 +26,8 @@ public class Solution {
             } else if (count2 == 0) {
                 second = temp;
                 count2++;
-            } // otherwise,if one of the vote is zero,that's meaning that
+            }
+            // otherwise,if one of the vote is zero,that's meaning that
             // we only have or even don't have a candidate.So we set the number to the
             // candidate.
             else {
