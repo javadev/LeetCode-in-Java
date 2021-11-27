@@ -29,6 +29,8 @@ public class Solution {
                     case '/':
                         tempSum /= num;
                         break;
+                    default:
+                        break;
                 }
                 lastSign = c;
                 num = 0;

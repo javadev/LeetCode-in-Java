@@ -22,12 +22,16 @@ public class Solution {
             return;
         }
 
-        if (node.left != null) count(node.left);
+        if (node.left != null) {
+            count(node.left);
+        }
         count++;
         if (count == k) {
             this.val = node.val;
             return;
         }
-        if (node.right != null) count(node.right);
+        if (node.right != null) {
+            count(node.right);
+        }
     }
 }

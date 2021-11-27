@@ -3,7 +3,8 @@ package g0201_0300.s0232_implement_queue_using_stacks;
 import java.util.Stack;
 
 public class MyQueue {
-    Stack<Integer> left, right;
+    Stack<Integer> left;
+    Stack<Integer> right;
     /** Initialize your data structure here. */
     public MyQueue() {
         left = new Stack<Integer>();

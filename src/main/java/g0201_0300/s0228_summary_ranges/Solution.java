@@ -37,7 +37,9 @@ public class Solution {
 
                 // Reset string builder
                 strB.setLength(0);
-            } else b++; // if the next element expands our range we do so
+            } else {
+                b++; // if the next element expands our range we do so
+            }
         }
         // the only range that is not accounted for at this point is the last range
         // if our a and b are not equal then we add the range accordingly
