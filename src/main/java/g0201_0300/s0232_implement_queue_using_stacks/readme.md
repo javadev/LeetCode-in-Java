@@ -20,10 +20,12 @@ Implement the `MyQueue` class:
 
 **Input:**
 
-    ["MyQueue", "push", "push", "peek", "pop", "empty"\]
+    ["MyQueue", "push", "push", "peek", "pop", "empty"]
     [[], [1], [2], [], [], []]
 
-**Output:** \[null, null, null, 1, 1, false\]
+**Output:**
+
+    [null, null, null, 1, 1, false]
 
 **Explanation:**
 
