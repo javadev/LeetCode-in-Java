@@ -1,5 +1,6 @@
 package g0201_0300.s0223_rectangle_area;
 
+@SuppressWarnings("java:S107")
 public class Solution {
     public int computeArea(int a, int b, int c, int d, int e, int f, int g, int h) {
         long left = Math.max(a, e);

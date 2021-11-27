@@ -27,7 +27,9 @@ public class Solution {
                         tempSum *= num;
                         break;
                     case '/':
-                        tempSum /= num;
+                        if (num != 0) {
+                            tempSum /= num;
+                        }
                         break;
                     default:
                         break;

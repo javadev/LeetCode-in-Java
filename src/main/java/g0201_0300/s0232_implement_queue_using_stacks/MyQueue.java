@@ -1,14 +1,15 @@
 package g0201_0300.s0232_implement_queue_using_stacks;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class MyQueue {
-    Stack<Integer> left;
-    Stack<Integer> right;
+    Deque<Integer> left;
+    Deque<Integer> right;
     /** Initialize your data structure here. */
     public MyQueue() {
-        left = new Stack<Integer>();
-        right = new Stack<Integer>();
+        left = new ArrayDeque<>();
+        right = new ArrayDeque<>();
     }
 
     /** Push element x to the back of queue. */
