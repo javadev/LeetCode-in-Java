@@ -10,4 +10,24 @@ public class SolutionTest {
     public void isPowerOfTwo() {
         assertThat(new Solution().isPowerOfTwo(1), equalTo(true));
     }
+
+    @Test
+    public void isPowerOfTwo2() {
+        assertThat(new Solution().isPowerOfTwo(16), equalTo(true));
+    }
+
+    @Test
+    public void isPowerOfTwo3() {
+        assertThat(new Solution().isPowerOfTwo(3), equalTo(false));
+    }
+
+    @Test
+    public void isPowerOfTwo4() {
+        assertThat(new Solution().isPowerOfTwo(4), equalTo(true));
+    }
+
+    @Test
+    public void isPowerOfTwo5() {
+        assertThat(new Solution().isPowerOfTwo(5), equalTo(false));
+    }
 }

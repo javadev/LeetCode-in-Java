@@ -10,4 +10,14 @@ public class SolutionTest {
     public void calculate() {
         assertThat(new Solution().calculate("1 + 1"), equalTo(2));
     }
+
+    @Test
+    public void calculate2() {
+        assertThat(new Solution().calculate(" 2-1 + 2 "), equalTo(3));
+    }
+
+    @Test
+    public void calculate3() {
+        assertThat(new Solution().calculate("(1+(4+5+2)-3)+(6+8)"), equalTo(23));
+    }
 }
