@@ -7,8 +7,6 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 public class Solution {
-    private Map<String, PriorityQueue<String>> map = new HashMap<>();
-
     public List<String> findItinerary(List<List<String>> tickets) {
         HashMap<String, PriorityQueue<String>> map = new HashMap<>();
         LinkedList<String> ans = new LinkedList<>();
@@ -25,7 +23,7 @@ public class Solution {
 
     private void dfs(Map<String, PriorityQueue<String>> map, String src, LinkedList<String> ans) {
         PriorityQueue<String> temp = map.get(src);
-        while (temp != null && temp.size() > 0) {
+        while (temp != null && !temp.isEmpty()) {
             String nbr = temp.remove();
             dfs(map, nbr, ans);
         }
