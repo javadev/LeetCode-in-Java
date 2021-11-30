@@ -11,6 +11,9 @@ repositories {
 
 dependencies {
     testImplementation 'junit:junit:[4.13.2,)'
+    testImplementation 'org.zapodot:embedded-db-junit:[2.0.2,)'
+    testImplementation 'org.slf4j:slf4j-api:[1.7.32,)'
+    testImplementation 'org.slf4j:slf4j-simple:[1.7.32,)'
 }
 
 group = 'com.github.javadev'
