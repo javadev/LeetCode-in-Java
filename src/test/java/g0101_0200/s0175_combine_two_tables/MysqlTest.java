@@ -40,9 +40,8 @@ public class MysqlTest {
             try (final Statement statement = connection.createStatement();
                     final ResultSet resultSet =
                             statement.executeQuery(
-                                    "SELECT P.FirstName, P.LastName,A.City,A.State"
-                                            + " FROM Person P"
-                                            + " LEFT JOIN Address A ON P.PersonId = A.PersonId")) {
+                                    "SELECT FirstName, LastName, City, State\n"
+                                            + "FROM Person LEFT JOIN Address USING (PersonId)")) {
                 assertThat(resultSet.next(), equalTo(true));
                 assertThat(resultSet.getNString(1), equalTo("Allen"));
                 assertThat(resultSet.getNString(2), equalTo("Wang"));
