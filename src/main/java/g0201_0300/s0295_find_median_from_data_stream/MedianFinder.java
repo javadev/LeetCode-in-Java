@@ -6,8 +6,8 @@ public class MedianFinder {
     // take two queues one is for storing upper half and the other is for lowerhalf
     // max stores the lower half
     // min heap stores the upper half
-    PriorityQueue<Integer> maxHeap;
-    PriorityQueue<Integer> minHeap;
+    private PriorityQueue<Integer> maxHeap;
+    private PriorityQueue<Integer> minHeap;
 
     // initialize your data structure here.
     public MedianFinder() {

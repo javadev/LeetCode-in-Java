@@ -1,15 +1,14 @@
 package g0001_0100.s0010_regular_expression_matching;
 
 public class Solution {
-
-    Boolean[][] cache;
+    private Boolean[][] cache;
 
     public boolean isMatch(String s, String p) {
         cache = new Boolean[s.length() + 1][p.length() + 1];
         return isMatch(s, p, 0, 0);
     }
 
-    public boolean isMatch(String s, String p, int i, int j) {
+    private boolean isMatch(String s, String p, int i, int j) {
         if (j == p.length()) {
             return i == s.length();
         }

@@ -30,7 +30,7 @@ public class Solution {
         return res;
     }
 
-    public int largestRectangleArea(int[] heights) {
+    private int largestRectangleArea(int[] heights) {
         /*
          * idea: scan and store if a[i-1]<=a[i] (increasing), then as long as a[i]<a[i-1], then we
          * can compute the largest rectangle area with base a[j], for j<=i-1, and a[j]>a[i], which

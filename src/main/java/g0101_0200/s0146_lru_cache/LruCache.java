@@ -4,12 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LruCache {
-    int capacity;
-    Map<Integer, LruCacheNode> cacheMap = new HashMap<>();
+    private int capacity;
+    private Map<Integer, LruCacheNode> cacheMap = new HashMap<>();
     // insert here
-    LruCacheNode head;
+    private LruCacheNode head;
     // remove here
-    LruCacheNode tail;
+    private LruCacheNode tail;
 
     public LruCache(int cap) {
         capacity = cap;

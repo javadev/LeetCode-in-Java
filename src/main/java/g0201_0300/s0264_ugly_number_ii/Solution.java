@@ -9,7 +9,7 @@ public class Solution {
         int ugly2 = 2;
         int ugly3 = 3;
         int ugly5 = 5;
-        int nextugly = 1;
+        int nextugly;
         ugly[0] = 1;
         for (int i = 1; i < n; i++) {
             nextugly = Math.min(Math.min(ugly2, ugly3), ugly5);

@@ -4,16 +4,16 @@ import com_github_leetcode.TreeNode;
 
 public class Solution {
     private int k;
-    int count = 0;
+    private int count = 0;
     private int val;
 
     public int kthSmallest(TreeNode root, int k) {
         this.k = k;
-        count(root);
+        calculate(root);
         return val;
     }
 
-    private void count(TreeNode node) {
+    private void calculate(TreeNode node) {
         if (node.left == null && node.right == null) {
             count++;
             if (count == k) {
@@ -21,9 +21,8 @@ public class Solution {
             }
             return;
         }
-
         if (node.left != null) {
-            count(node.left);
+            calculate(node.left);
         }
         count++;
         if (count == k) {
@@ -31,7 +30,7 @@ public class Solution {
             return;
         }
         if (node.right != null) {
-            count(node.right);
+            calculate(node.right);
         }
     }
 }

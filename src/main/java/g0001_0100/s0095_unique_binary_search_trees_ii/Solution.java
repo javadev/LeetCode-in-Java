@@ -43,7 +43,7 @@ public class Solution {
         return result;
     }
 
-    void insert(TreeNode dest, TreeNode n, TreeNode from) {
+    private void insert(TreeNode dest, TreeNode n, TreeNode from) {
         if (dest.val == from.val) {
             TreeNode h = dest.right;
             dest.right = n;
@@ -53,7 +53,7 @@ public class Solution {
         insert(dest.right, n, from);
     }
 
-    TreeNode copy(TreeNode n) {
+    private TreeNode copy(TreeNode n) {
         if (n == null) {
             return null;
         }

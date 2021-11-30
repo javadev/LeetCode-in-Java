@@ -1,11 +1,10 @@
 package g0201_0300.s0273_integer_to_english_words;
 
 public class Solution {
-
-    String[] ones = {
+    private String[] ones = {
         "One ", "Two ", "Three ", "Four ", "Five ", "Six ", "Seven ", "Eight ", "Nine "
     };
-    String[] teens = {
+    private String[] teens = {
         "Ten ",
         "Eleven ",
         "Twelve ",
@@ -17,14 +16,14 @@ public class Solution {
         "Eighteen ",
         "Nineteen "
     };
-    String[] twenties = {
+    private String[] twenties = {
         "Twenty ", "Thirty ", "Forty ", "Fifty ", "Sixty ", "Seventy ", "Eighty ", "Ninety "
     };
-    String zero = "Zero";
-    String hundred = "Hundred ";
-    String thousand = "Thousand ";
-    String million = "Million ";
-    String billion = "Billion ";
+    private String zero = "Zero";
+    private String hundred = "Hundred ";
+    private String thousand = "Thousand ";
+    private String million = "Million ";
+    private String billion = "Billion ";
 
     public String numberToWords(int num) {
         if (num == 0) {

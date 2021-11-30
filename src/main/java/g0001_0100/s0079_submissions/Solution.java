@@ -1,7 +1,8 @@
 package g0001_0100.s0079_submissions;
 
 public class Solution {
-    boolean backtrace(char[][] board, boolean[][] visited, String word, int index, int x, int y) {
+    private boolean backtrace(
+            char[][] board, boolean[][] visited, String word, int index, int x, int y) {
         if (index == word.length()) {
             return true;
         }

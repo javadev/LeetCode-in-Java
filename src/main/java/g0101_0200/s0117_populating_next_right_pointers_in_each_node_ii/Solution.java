@@ -51,7 +51,7 @@ public class Solution {
         return root;
     }
 
-    public Node adjacentRightNode(Node root) {
+    private Node adjacentRightNode(Node root) {
         Node temp = root;
         while (temp != null) {
             if (temp.left == null && temp.right == null) {

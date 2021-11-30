@@ -8,7 +8,7 @@ public class Solution {
         return find(0, nums.length - 1, nums);
     }
 
-    int find(int left, int right, int[] nums) {
+    private int find(int left, int right, int[] nums) {
         if (left + 1 >= right) {
             return Math.min(nums[left], nums[right]);
         }

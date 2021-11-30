@@ -11,7 +11,7 @@ public class Solution {
         return res;
     }
 
-    void solve(int[] nums, List<Integer> temp, List<List<Integer>> res, int start) {
+    private void solve(int[] nums, List<Integer> temp, List<List<Integer>> res, int start) {
         res.add(new ArrayList<>(temp));
         for (int i = start; i < nums.length; i++) {
             temp.add(nums[i]);

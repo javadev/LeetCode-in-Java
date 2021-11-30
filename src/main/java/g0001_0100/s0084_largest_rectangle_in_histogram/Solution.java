@@ -5,7 +5,7 @@ public class Solution {
         return largestArea(heights, 0, heights.length);
     }
 
-    int largestArea(int[] a, int start, int limit) {
+    private int largestArea(int[] a, int start, int limit) {
         if (a == null || a.length == 0) {
             return 0;
         }
@@ -37,7 +37,7 @@ public class Solution {
         }
     }
 
-    int findMinInArray(int[] a, int start, int limit) {
+    private int findMinInArray(int[] a, int start, int limit) {
         int min = Integer.MAX_VALUE;
         int minIndex = -1;
         for (int index = start; index < limit; index++) {
@@ -49,7 +49,7 @@ public class Solution {
         return minIndex;
     }
 
-    boolean checkIfSorted(int[] a, int start, int limit) {
+    private boolean checkIfSorted(int[] a, int start, int limit) {
         for (int i = start + 1; i < limit; i++) {
             if (a[i] < a[i - 1]) {
                 return false;
@@ -58,7 +58,7 @@ public class Solution {
         return true;
     }
 
-    int maxOfThreeNums(int a, int b, int c) {
+    private int maxOfThreeNums(int a, int b, int c) {
         return Math.max(Math.max(a, b), c);
     }
 }

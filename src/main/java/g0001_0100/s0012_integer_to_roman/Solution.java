@@ -17,7 +17,7 @@ public class Solution {
         return sb.toString();
     }
 
-    public int numerals(StringBuilder sb, int num, int one, char cTen, char cFive, char cOne) {
+    private int numerals(StringBuilder sb, int num, int one, char cTen, char cFive, char cOne) {
         int div = num / one;
         switch (div) {
             case 9:

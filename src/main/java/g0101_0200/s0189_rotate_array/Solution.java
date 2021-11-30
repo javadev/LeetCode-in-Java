@@ -1,7 +1,7 @@
 package g0101_0200.s0189_rotate_array;
 
 public class Solution {
-    public void reverse(int[] nums, int l, int r) {
+    private void reverse(int[] nums, int l, int r) {
         while (l <= r) {
             int temp = nums[l];
             nums[l] = nums[r];

@@ -21,7 +21,7 @@ public class Solution {
         return ans;
     }
 
-    public int bfs(
+    private int bfs(
             Map<String, Set<String>> graph,
             String beginWord,
             String endWord,
@@ -97,7 +97,7 @@ public class Solution {
         return length + 1;
     }
 
-    void dfs(
+    private void dfs(
             List<List<String>> ans,
             List<String> path,
             int targetLength,

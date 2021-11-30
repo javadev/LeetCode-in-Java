@@ -23,6 +23,6 @@ public class Solution {
                 ans[g]--;
             }
         }
-        return new StringBuilder().append(bulls).append("A").append(cows).append("B").toString();
+        return bulls + "A" + cows + "B";
     }
 }

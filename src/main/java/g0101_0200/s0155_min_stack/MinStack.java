@@ -1,8 +1,7 @@
 package g0101_0200.s0155_min_stack;
 
 public class MinStack {
-
-    Node currentNode;
+    private Node currentNode;
 
     // initialize your data structure here.
     public MinStack() {

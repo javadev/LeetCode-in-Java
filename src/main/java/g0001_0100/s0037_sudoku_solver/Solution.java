@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    List<int[]> emptyCells = new ArrayList<>();
-    int[] rows = new int[9];
-    int[] cols = new int[9];
-    int[] boxes = new int[9];
+    private List<int[]> emptyCells = new ArrayList<>();
+    private int[] rows = new int[9];
+    private int[] cols = new int[9];
+    private int[] boxes = new int[9];
 
     public void solveSudoku(char[][] board) {
         for (int r = 0; r < 9; r++) {
@@ -26,7 +26,7 @@ public class Solution {
         backtracking(board, 0);
     }
 
-    boolean backtracking(char[][] board, int i) {
+    private boolean backtracking(char[][] board, int i) {
         // Check if we filled all empty cells?
         if (i == emptyCells.size()) {
             return true;
@@ -58,7 +58,7 @@ public class Solution {
         return false;
     }
 
-    boolean hasBit(int x, int k) {
+    private boolean hasBit(int x, int k) {
         return (x >> k & 1) == 1;
     }
 }

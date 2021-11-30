@@ -3,7 +3,7 @@ package g0101_0200.s0124_binary_tree_maximum_path_sum;
 import com_github_leetcode.TreeNode;
 
 public class Solution {
-    int maxSum = Integer.MIN_VALUE;
+    private int maxSum = Integer.MIN_VALUE;
 
     public int maxPathSum(TreeNode root) {
         findMaxPathSum(root);

@@ -18,9 +18,9 @@ import com_github_leetcode.TreeNode;
  * }
  */
 public class Solution {
-    TreeNode prev = null;
-    TreeNode first = null;
-    TreeNode second = null;
+    private TreeNode prev = null;
+    private TreeNode first = null;
+    private TreeNode second = null;
 
     public void recoverTree(TreeNode root) {
         evalSwappedNodes(root);

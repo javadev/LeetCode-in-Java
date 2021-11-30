@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 public class RangeFreqQuery {
-    Map<Integer, List<Integer>> map;
+    private Map<Integer, List<Integer>> map;
 
     public RangeFreqQuery(int[] arr) {
         map = new HashMap<>();

@@ -10,7 +10,7 @@ public class Solution {
         return generate(sb, ans, n, n);
     }
 
-    public List<String> generate(StringBuilder sb, List<String> str, int open, int close) {
+    private List<String> generate(StringBuilder sb, List<String> str, int open, int close) {
         if (open == 0 && close == 0) {
             str.add(sb.toString());
             return str;

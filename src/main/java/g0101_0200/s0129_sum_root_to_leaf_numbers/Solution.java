@@ -18,14 +18,14 @@ import com_github_leetcode.TreeNode;
  * }
  */
 public class Solution {
-    int sum = 0;
+    private int sum = 0;
 
     public int sumNumbers(TreeNode root) {
         recurseSum(root, 0);
         return sum;
     }
 
-    public void recurseSum(TreeNode node, int curNum) {
+    private void recurseSum(TreeNode node, int curNum) {
         if (node.left == null && node.right == null) {
             sum += 10 * curNum + node.val;
         } else {

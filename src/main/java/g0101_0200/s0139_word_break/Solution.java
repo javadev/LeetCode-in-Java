@@ -23,7 +23,7 @@ public class Solution {
         return false;
     }
 
-    public boolean dfs(String s, int start, int end, int max, Set<String> set, boolean[] flag) {
+    private boolean dfs(String s, int start, int end, int max, Set<String> set, boolean[] flag) {
         if (!flag[end] && set.contains(s.substring(start, end))) {
             flag[end] = true;
             if (end == s.length()) {

@@ -14,7 +14,7 @@ import com_github_leetcode.ListNode;
  * }
  */
 public class Solution {
-    ListNode forward;
+    private ListNode forward;
 
     public void reorderList(ListNode head) {
         forward = head;

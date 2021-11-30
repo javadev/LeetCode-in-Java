@@ -20,7 +20,7 @@ public class Solution {
         long x = Math.abs(Long.valueOf(numerator));
         long y = Math.abs(Long.valueOf(denominator));
 
-        sb.append(String.valueOf(x / y));
+        sb.append(x / y);
 
         long remainder = x % y;
         if (remainder == 0) {
@@ -42,7 +42,7 @@ public class Solution {
             // store the remainder and the index of it's occurence in the String
             map.put(remainder, sb.length());
             remainder *= 10;
-            sb.append(String.valueOf(remainder / y));
+            sb.append(remainder / y);
             remainder %= y;
         }
         return sb.toString();

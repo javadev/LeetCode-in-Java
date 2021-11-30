@@ -9,7 +9,7 @@ public class Solution {
         return totalNQueens(n, 0, row, col, diagonal, antiDiagonal);
     }
 
-    public static int totalNQueens(
+    private static int totalNQueens(
             int n,
             int r,
             boolean[] row,

@@ -24,10 +24,9 @@ public class Solution {
                 return false;
             }
             return (trav(n.left, m.left) && trav(n.right, m.right));
-        } else if (n == null && m == null) {
-            return true;
+        } else {
+            return n == null && m == null;
         }
-        return false;
     }
 
     public boolean isSameTree(TreeNode p, TreeNode q) {

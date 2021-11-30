@@ -11,7 +11,7 @@ public class Solution {
             }
             int start = s.lastIndexOf(' ', i);
             sb.append(' ');
-            sb.append(s.substring(start + 1, i + 1));
+            sb.append(s, start + 1, i + 1);
             i = start - 1;
         }
         if (sb.length() > 0) {

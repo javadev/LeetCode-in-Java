@@ -47,7 +47,7 @@ public class Solution {
         // third pass to restore the links and return the head of the cloned nodes' list.
         Node newHead = null;
         while (curr != null) {
-            Node clonedNode = null;
+            Node clonedNode;
             if (newHead == null) {
                 clonedNode = curr.next;
                 newHead = clonedNode;

@@ -5,7 +5,7 @@ public class Solution {
         return binary(nums, 0, nums.length - 1, target);
     }
 
-    public boolean binary(int[] a, int i, int j, int t) {
+    private boolean binary(int[] a, int i, int j, int t) {
         if (i > j) {
             return false;
         }

@@ -19,7 +19,7 @@ public class Solution {
         return recur(grid, dm, 0, 0);
     }
 
-    static int recur(int[][] grid, int[][] dm, int r, int c) {
+    private int recur(int[][] grid, int[][] dm, int r, int c) {
         if (dm[r][c] == 0 && r != grid.length - 1 && c != grid[0].length - 1) {
             dm[r][c] = grid[r][c] + Math.min(recur(grid, dm, r + 1, c), recur(grid, dm, r, c + 1));
         }

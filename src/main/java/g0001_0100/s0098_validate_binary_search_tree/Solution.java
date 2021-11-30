@@ -24,7 +24,7 @@ public class Solution {
 
     // we will send a valid range and check whether the root lies in the range
     // and update the range for the subtrees
-    boolean solve(TreeNode root, long left, long right) {
+    private boolean solve(TreeNode root, long left, long right) {
         if (root == null) {
             return true;
         }

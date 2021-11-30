@@ -1,9 +1,9 @@
 package g0001_0100.s0036_valid_sudoku;
 
 public class Solution {
-    int j1;
-    int[] i1 = new int[9];
-    int[] b1 = new int[9];
+    private int j1;
+    private int[] i1 = new int[9];
+    private int[] b1 = new int[9];
 
     public boolean isValidSudoku(char[][] board) {
         for (int i = 0; i < 9; i++) {
@@ -17,7 +17,7 @@ public class Solution {
         return true;
     }
 
-    boolean checkValid(char[][] board, int i, int j) {
+    private boolean checkValid(char[][] board, int i, int j) {
         if (j == 0) {
             j1 = 0;
         }

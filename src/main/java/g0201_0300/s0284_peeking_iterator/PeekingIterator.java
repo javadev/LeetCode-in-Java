@@ -3,8 +3,8 @@ package g0201_0300.s0284_peeking_iterator;
 import java.util.Iterator;
 
 public class PeekingIterator implements Iterator<Integer> {
-    Iterator<Integer> it;
-    Integer current;
+    private Iterator<Integer> it;
+    private Integer current;
 
     public PeekingIterator(Iterator<Integer> iterator) {
         // initialize any member here.
