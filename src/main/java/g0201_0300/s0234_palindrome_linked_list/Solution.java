@@ -26,7 +26,7 @@ public class Solution {
         }
         // Compare left half and right half
         for (int i = 0; i < len; i++) {
-            if (head.val == prev.val) {
+            if (prev != null && head.val == prev.val) {
                 head = head.next;
                 prev = prev.next;
             } else {
