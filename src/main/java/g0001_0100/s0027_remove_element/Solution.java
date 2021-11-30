@@ -9,7 +9,6 @@ public class Solution {
         int j = len - 1;
         int occurTimes = 0;
         for (int i = 0; i < len; i++) {
-
             if (nums[i] == val) {
                 occurTimes++;
                 if (j == i) {
