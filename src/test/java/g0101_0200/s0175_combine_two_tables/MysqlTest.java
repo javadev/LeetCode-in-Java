@@ -47,6 +47,12 @@ public class MysqlTest {
                 assertThat(resultSet.getNString(2), equalTo("Wang"));
                 assertThat(resultSet.getNString(3), equalTo(null));
                 assertThat(resultSet.getNString(4), equalTo(null));
+                assertThat(resultSet.next(), equalTo(true));
+                assertThat(resultSet.getNString(1), equalTo("Bob"));
+                assertThat(resultSet.getNString(2), equalTo("Alice"));
+                assertThat(resultSet.getNString(3), equalTo("New York City"));
+                assertThat(resultSet.getNString(4), equalTo("New York"));
+                assertThat(resultSet.next(), equalTo(false));
             }
         }
     }
