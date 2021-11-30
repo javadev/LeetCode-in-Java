@@ -3,11 +3,15 @@ package g0101_0200.s0175_combine_two_tables;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.stream.Collectors;
 import org.junit.Rule;
 import org.junit.Test;
 import org.zapodot.junit.db.EmbeddedDatabaseRule;
@@ -34,14 +38,19 @@ public class MysqlTest {
                     .build();
 
     @Test
-    public void testScript() throws SQLException {
+    public void testScript() throws SQLException, FileNotFoundException {
         try (final Connection connection =
                 DriverManager.getConnection(embeddedDatabaseRule.getConnectionJdbcUrl())) {
             try (final Statement statement = connection.createStatement();
                     final ResultSet resultSet =
                             statement.executeQuery(
-                                    "SELECT FirstName, LastName, City, State\n"
-                                            + "FROM Person LEFT JOIN Address USING (PersonId)")) {
+                                    new BufferedReader(
+                                                    new FileReader(
+                                                            "src/main/java/g0101_0200/"
+                                                                    + "s0175_combine_two_tables/script.sql"))
+                                            .lines()
+                                            .collect(Collectors.joining("\n"))
+                                            .replaceAll("#.*?\\r?\\n", ""))) {
                 assertThat(resultSet.next(), equalTo(true));
                 assertThat(resultSet.getNString(1), equalTo("Allen"));
                 assertThat(resultSet.getNString(2), equalTo("Wang"));
