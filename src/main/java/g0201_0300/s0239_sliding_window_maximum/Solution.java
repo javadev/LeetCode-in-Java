@@ -11,7 +11,7 @@ public class Solution {
         int i = 0;
         int j = 0;
         while (j < nums.length) {
-            while (dq.size() > 0 && dq.peekLast() < nums[j]) {
+            while (!dq.isEmpty() && dq.peekLast() < nums[j]) {
                 dq.pollLast();
             }
             dq.addLast(nums[j]);
