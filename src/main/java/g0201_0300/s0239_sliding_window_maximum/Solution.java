@@ -8,7 +8,8 @@ public class Solution {
         int[] res = new int[n - k + 1];
         int x = 0;
         LinkedList<Integer> dq = new LinkedList<>();
-        int i = 0, j = 0;
+        int i = 0;
+        int j = 0;
         while (j < nums.length) {
             while (dq.size() > 0 && dq.peekLast() < nums[j]) {
                 dq.pollLast();
@@ -17,7 +18,9 @@ public class Solution {
             if (j - i + 1 == k) {
                 res[x] = dq.peekFirst();
                 ++x;
-                if (dq.peekFirst() == nums[i]) dq.pollFirst();
+                if (dq.peekFirst() == nums[i]) {
+                    dq.pollFirst();
+                }
                 ++i;
             }
             ++j;
