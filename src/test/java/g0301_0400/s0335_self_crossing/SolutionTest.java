@@ -20,4 +20,14 @@ public class SolutionTest {
     public void isSelfCrossing3() {
         assertThat(new Solution().isSelfCrossing(new int[] {1, 1, 1, 1}), equalTo(true));
     }
+
+    @Test
+    public void isSelfCrossing4() {
+        assertThat(new Solution().isSelfCrossing(new int[] {1, 1, 2, 1, 1}), equalTo(true));
+    }
+
+    @Test
+    public void isSelfCrossing5() {
+        assertThat(new Solution().isSelfCrossing(new int[] {4, 2, 1, 4}), equalTo(true));
+    }
 }
