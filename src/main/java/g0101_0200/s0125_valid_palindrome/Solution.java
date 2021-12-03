@@ -9,11 +9,11 @@ public class Solution {
             // Iterates through string to find first char which is alphanumeric.
             // Done to ignore non-alphanumeric characters.
             // Starts from 0 to j-1.
-            while (i < j && !isAlphaNumeric(s.charAt(i))) {
+            while (i < j && isNotAlphaNumeric(s.charAt(i))) {
                 i++;
             }
             // Similarly from j-1 to 0.
-            while (i < j && !isAlphaNumeric(s.charAt(j))) {
+            while (i < j && isNotAlphaNumeric(s.charAt(j))) {
                 j--;
             }
             // Checks if i is greater than or equal to j.
@@ -39,8 +39,8 @@ public class Solution {
         return res;
     }
 
-    private boolean isAlphaNumeric(char c) {
-        return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9');
+    private boolean isNotAlphaNumeric(char c) {
+        return (c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < '0' || c > '9');
     }
 
     private boolean isUpper(char c) {

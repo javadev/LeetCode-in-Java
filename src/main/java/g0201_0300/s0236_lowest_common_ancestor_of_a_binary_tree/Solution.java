@@ -27,9 +27,6 @@ public class Solution {
         if (left != null) {
             return left;
         }
-        if (right != null) {
-            return right;
-        }
-        return null;
+        return right;
     }
 }

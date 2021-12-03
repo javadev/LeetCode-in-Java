@@ -2,7 +2,6 @@ package g0201_0300.s0218_the_skyline_problem;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.TreeMap;
 
@@ -14,7 +13,7 @@ public class Solution {
             lines.add(new int[] {building[0], building[2]});
             lines.add(new int[] {building[1], -building[2]});
         }
-        Collections.sort(lines, (a, b) -> a[0] == b[0] ? b[1] - a[1] : a[0] - b[0]);
+        lines.sort((a, b) -> a[0] == b[0] ? b[1] - a[1] : a[0] - b[0]);
         TreeMap<Integer, Integer> map = new TreeMap<>();
         map.put(0, 1);
         int prev = 0;

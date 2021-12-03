@@ -31,9 +31,7 @@ public class WordDictionary {
         for (String s : a) {
             boolean match = true;
             for (int i = 0; i < word.length() && match; i++) {
-                if (word.charAt(i) == '.') {
-                    continue;
-                } else if (s.charAt(i) != word.charAt(i)) {
+                if (word.charAt(i) != '.' && s.charAt(i) != word.charAt(i)) {
                     match = false;
                 }
             }
