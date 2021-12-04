@@ -7,9 +7,9 @@ import com_github_leetcode.TreeNode;
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void preorderTraversal() {
+    void preorderTraversal() {
         TreeNode treeNode = new TreeNode(1);
         treeNode.right = new TreeNode(2);
         treeNode.right.left = new TreeNode(3);

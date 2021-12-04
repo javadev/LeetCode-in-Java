@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void searchRange() {
+    void searchRange() {
         int[] expected = new int[] {3, 4};
         int[] actual = new Solution().searchRange(new int[] {5, 7, 7, 8, 8, 10}, 8);
         assertThat(actual, equalTo(expected));

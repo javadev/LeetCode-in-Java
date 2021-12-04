@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void findMin() {
+    void findMin() {
         assertThat(new Solution().findMin(new int[] {1, 3, 5}), equalTo(1));
         assertThat(new Solution().findMin(new int[] {2, 2, 2, 0, 1}), equalTo(0));
     }

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class TrieTest {
     @Test
-    public void trie() {
+    void trie() {
         Trie trie = new Trie();
         trie.insert("apple");
         // return True

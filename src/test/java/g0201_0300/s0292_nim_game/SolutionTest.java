@@ -5,19 +5,19 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void canWinNim() {
+    void canWinNim() {
         assertThat(new Solution().canWinNim(4), equalTo(false));
     }
 
     @Test
-    public void canWinNim2() {
+    void canWinNim2() {
         assertThat(new Solution().canWinNim(1), equalTo(true));
     }
 
     @Test
-    public void canWinNim3() {
+    void canWinNim3() {
         assertThat(new Solution().canWinNim(2), equalTo(true));
     }
 }

@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void increasingTriplet() {
+    void increasingTriplet() {
         assertThat(new Solution().increasingTriplet(new int[] {1, 2, 3, 4, 5}), equalTo(true));
     }
 }

@@ -5,14 +5,14 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void countDigitOne() {
+    void countDigitOne() {
         assertThat(new Solution().countDigitOne(13), equalTo(6));
     }
 
     @Test
-    public void countDigitOne2() {
+    void countDigitOne2() {
         assertThat(new Solution().countDigitOne(0), equalTo(0));
     }
 }

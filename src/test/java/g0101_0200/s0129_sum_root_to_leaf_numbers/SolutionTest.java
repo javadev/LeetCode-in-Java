@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void sumNumbers() {
+    void sumNumbers() {
         TreeNode treeNode = new TreeNode(1);
         treeNode.left = new TreeNode(2);
         treeNode.right = new TreeNode(3);

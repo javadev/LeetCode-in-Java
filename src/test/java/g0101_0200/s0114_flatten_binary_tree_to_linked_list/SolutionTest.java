@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void flattenBinaryTreetoLinkedList() {
+    void flattenBinaryTreetoLinkedList() {
         TreeNode leftMostLeft = new TreeNode(3);
         TreeNode leftMostRight = new TreeNode(4);
         TreeNode leftRoot = new TreeNode(2, leftMostLeft, leftMostRight);

@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void containsNearbyDuplicate() {
+    void containsNearbyDuplicate() {
         assertThat(
                 new Solution().containsNearbyDuplicate(new int[] {1, 2, 3, 1}, 3), equalTo(true));
     }

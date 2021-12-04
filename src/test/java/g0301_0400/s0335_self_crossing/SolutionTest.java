@@ -5,34 +5,34 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void isSelfCrossing() {
+    void isSelfCrossing() {
         assertThat(new Solution().isSelfCrossing(new int[] {2, 1, 1, 2}), equalTo(true));
     }
 
     @Test
-    public void isSelfCrossing2() {
+    void isSelfCrossing2() {
         assertThat(new Solution().isSelfCrossing(new int[] {1, 2, 3, 4}), equalTo(false));
     }
 
     @Test
-    public void isSelfCrossing3() {
+    void isSelfCrossing3() {
         assertThat(new Solution().isSelfCrossing(new int[] {1, 1, 1, 1}), equalTo(true));
     }
 
     @Test
-    public void isSelfCrossing4() {
+    void isSelfCrossing4() {
         assertThat(new Solution().isSelfCrossing(new int[] {1, 1, 2, 1, 1}), equalTo(true));
     }
 
     @Test
-    public void isSelfCrossing5() {
+    void isSelfCrossing5() {
         assertThat(new Solution().isSelfCrossing(new int[] {4, 2, 1, 4}), equalTo(true));
     }
 
     @Test
-    public void isSelfCrossing6() {
+    void isSelfCrossing6() {
         assertThat(new Solution().isSelfCrossing(new int[] {1, 1, 1}), equalTo(false));
     }
 }

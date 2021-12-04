@@ -5,19 +5,19 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void rangeBitwiseAnd() {
+    void rangeBitwiseAnd() {
         assertThat(new Solution().rangeBitwiseAnd(5, 7), equalTo(4));
     }
 
     @Test
-    public void rangeBitwiseAnd2() {
+    void rangeBitwiseAnd2() {
         assertThat(new Solution().rangeBitwiseAnd(0, 0), equalTo(0));
     }
 
     @Test
-    public void rangeBitwiseAnd3() {
+    void rangeBitwiseAnd3() {
         assertThat(new Solution().rangeBitwiseAnd(1, 2147483647), equalTo(0));
     }
 }

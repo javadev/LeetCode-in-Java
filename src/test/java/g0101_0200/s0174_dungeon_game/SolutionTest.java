@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void dungeonGame() {
+    void dungeonGame() {
         int[][] input = {{-2, -3, 3}, {-5, -10, 1}, {10, 30, -5}};
         assertThat(new Solution().calculateMinimumHP(input), equalTo(7));
     }

@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void sortedArrayToBST() {
+    void sortedArrayToBST() {
         assertThat(
                 new Solution().sortedArrayToBST(new int[] {-10, -3, 0, 5, 9}).toString(),
                 equalTo("0,-10,null,-3,5,null,9"));

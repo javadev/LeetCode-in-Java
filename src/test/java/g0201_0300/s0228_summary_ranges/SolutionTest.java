@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void summaryRanges() {
+    void summaryRanges() {
         assertThat(
                 new Solution().summaryRanges(new int[] {0, 1, 2, 4, 5, 7}),
                 equalTo(Arrays.asList("0->2", "4->5", "7")));

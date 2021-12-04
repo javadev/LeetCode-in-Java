@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void generateMatrix() {
+    void generateMatrix() {
         int[][] expected = {{1, 2, 3}, {8, 9, 4}, {7, 6, 5}};
         assertThat(new Solution().generateMatrix(3), equalTo(expected));
     }

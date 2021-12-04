@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class MinStackTest {
     @Test
-    public void minStack() {
+    void minStack() {
         MinStack minStack = new MinStack();
         minStack.push(-2);
         minStack.push(0);

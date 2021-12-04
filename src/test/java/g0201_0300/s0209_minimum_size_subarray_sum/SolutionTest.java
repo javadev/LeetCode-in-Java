@@ -5,19 +5,19 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void minSubArrayLen() {
+    void minSubArrayLen() {
         assertThat(new Solution().minSubArrayLen(7, new int[] {2, 3, 1, 2, 4, 3}), equalTo(2));
     }
 
     @Test
-    public void minSubArrayLen2() {
+    void minSubArrayLen2() {
         assertThat(new Solution().minSubArrayLen(4, new int[] {1, 4, 4}), equalTo(1));
     }
 
     @Test
-    public void minSubArrayLen3() {
+    void minSubArrayLen3() {
         assertThat(
                 new Solution().minSubArrayLen(11, new int[] {1, 1, 1, 1, 1, 1, 1, 1}), equalTo(0));
     }

@@ -6,10 +6,10 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
 
     @Test
-    public void kthSmallest() {
+    void kthSmallest() {
         TreeNode rightBottomLeft = new TreeNode(2);
         TreeNode left = new TreeNode(1, null, rightBottomLeft);
         TreeNode right = new TreeNode(4);

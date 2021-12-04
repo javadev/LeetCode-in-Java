@@ -6,14 +6,14 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.left_right.Node;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void connect() {
+    void connect() {
         assertThat(new Solution().connect(null), equalTo(null));
     }
 
     @Test
-    public void connect2() {
+    void connect2() {
         Node node =
                 new Node(
                         1,

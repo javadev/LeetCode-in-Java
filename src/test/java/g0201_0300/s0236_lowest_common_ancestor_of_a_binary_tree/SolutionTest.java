@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void lowestCommonAncestor() {
+    void lowestCommonAncestor() {
         TreeNode leftNodeLeftNode = new TreeNode(6);
         TreeNode leftNodeRightNode = new TreeNode(2, new TreeNode(7), new TreeNode(4));
         TreeNode leftNode = new TreeNode(5, leftNodeLeftNode, leftNodeRightNode);
@@ -20,7 +20,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void lowestCommonAncestor2() {
+    void lowestCommonAncestor2() {
         TreeNode leftNodeLeftNode = new TreeNode(6);
         TreeNode leftNodeRightNode = new TreeNode(2, new TreeNode(7), new TreeNode(4));
         TreeNode leftNode = new TreeNode(5, leftNodeLeftNode, leftNodeRightNode);
@@ -32,7 +32,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void lowestCommonAncestor3() {
+    void lowestCommonAncestor3() {
         assertThat(
                 new Solution()
                         .lowestCommonAncestor(

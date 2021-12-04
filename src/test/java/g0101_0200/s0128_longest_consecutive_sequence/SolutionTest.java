@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void longestConsecutive() {
+    void longestConsecutive() {
         assertThat(new Solution().longestConsecutive(new int[] {100, 4, 200, 1, 3, 2}), equalTo(4));
     }
 }

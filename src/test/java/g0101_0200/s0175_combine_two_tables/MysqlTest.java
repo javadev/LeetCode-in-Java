@@ -38,7 +38,7 @@ public class MysqlTest {
                     .build();
 
     @Test
-    public void testScript() throws SQLException, FileNotFoundException {
+    void testScript() throws SQLException, FileNotFoundException {
         try (final Connection connection =
                 DriverManager.getConnection(embeddedDatabaseExtension.getConnectionJdbcUrl())) {
             try (final Statement statement = connection.createStatement();

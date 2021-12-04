@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void merge() {
+    void merge() {
         int[][] input = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
         int[][] expected = {{1, 6}, {8, 10}, {15, 18}};
         assertThat(new Solution().merge(input), equalTo(expected));

@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.random.Node;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void copyRandomList() {
+    void copyRandomList() {
         Node node7 = new Node(7);
         Node node13 = new Node(13);
         Node node11 = new Node(11);

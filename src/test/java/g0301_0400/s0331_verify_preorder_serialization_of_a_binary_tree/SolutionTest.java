@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void minPatches() {
+    void minPatches() {
         assertThat(new Solution().isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#"), equalTo(true));
     }
 }

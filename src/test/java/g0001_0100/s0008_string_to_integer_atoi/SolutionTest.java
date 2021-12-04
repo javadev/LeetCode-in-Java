@@ -5,29 +5,29 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void myAtoi() {
+    void myAtoi() {
         assertThat(new Solution().myAtoi("42"), equalTo(42));
     }
 
     @Test
-    public void myAtoi2() {
+    void myAtoi2() {
         assertThat(new Solution().myAtoi("   -42"), equalTo(-42));
     }
 
     @Test
-    public void myAtoi3() {
+    void myAtoi3() {
         assertThat(new Solution().myAtoi("4193 with words"), equalTo(4193));
     }
 
     @Test
-    public void myAtoi4() {
+    void myAtoi4() {
         assertThat(new Solution().myAtoi("words and 987"), equalTo(0));
     }
 
     @Test
-    public void myAtoi5() {
+    void myAtoi5() {
         assertThat(new Solution().myAtoi("-91283472332"), equalTo(-2147483648));
     }
 }

@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.ListNode;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void isPalindrome() {
+    void isPalindrome() {
         ListNode headActual = new ListNode(1);
         headActual.next = new ListNode(2);
         headActual.next.next = new ListNode(2);
@@ -17,7 +17,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void isPalindrome2() {
+    void isPalindrome2() {
         ListNode headActual = new ListNode(1);
         headActual.next = new ListNode(2);
         assertThat(new Solution().isPalindrome(headActual), equalTo(false));

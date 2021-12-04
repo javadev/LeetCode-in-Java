@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void balancedBinaryTree() {
+    void balancedBinaryTree() {
         TreeNode bottomLeft = new TreeNode(15);
         TreeNode bottomRight = new TreeNode(7);
 

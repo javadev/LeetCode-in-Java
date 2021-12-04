@@ -7,9 +7,9 @@ import com_github_leetcode.ArrayUtils;
 import com_github_leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void zigzagLevelOrder() {
+    void zigzagLevelOrder() {
         TreeNode left = new TreeNode(9, null, null);
         TreeNode right = new TreeNode(20, new TreeNode(15), new TreeNode(7));
         TreeNode root = new TreeNode(3, left, right);

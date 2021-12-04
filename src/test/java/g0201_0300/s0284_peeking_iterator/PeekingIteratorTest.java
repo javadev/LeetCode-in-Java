@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 public class PeekingIteratorTest {
     @Test
-    public void peekingIterator() {
+    void peekingIterator() {
         // [1,2,3]
         PeekingIterator peekingIterator = new PeekingIterator(Arrays.asList(1, 2, 3).iterator());
         // return 1, the pointer moves to the next element [1,2,3].

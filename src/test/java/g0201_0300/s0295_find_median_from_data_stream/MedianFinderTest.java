@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class MedianFinderTest {
     @Test
-    public void medianFinder() {
+    void medianFinder() {
         MedianFinder medianFinder = new MedianFinder();
         // arr = [1]
         medianFinder.addNum(1);

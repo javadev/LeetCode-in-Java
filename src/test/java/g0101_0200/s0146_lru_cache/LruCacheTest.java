@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class LruCacheTest {
     @Test
-    public void lruCache() {
+    void lruCache() {
         LruCache lruCache = new LruCache(2);
         // cache is {1=1}
         lruCache.put(1, 1);

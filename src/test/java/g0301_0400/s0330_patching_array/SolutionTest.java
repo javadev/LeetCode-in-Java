@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void minPatches() {
+    void minPatches() {
         assertThat(new Solution().minPatches(new int[] {1, 3}, 6), equalTo(1));
     }
 }

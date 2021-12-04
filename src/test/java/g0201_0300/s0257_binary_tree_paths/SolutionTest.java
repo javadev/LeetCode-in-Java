@@ -7,9 +7,9 @@ import com_github_leetcode.TreeNode;
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void binaryTreePaths() {
+    void binaryTreePaths() {
         TreeNode treeNode =
                 new TreeNode(1, new TreeNode(2, null, new TreeNode(5)), new TreeNode(3));
         assertThat(
@@ -18,7 +18,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void binaryTreePaths2() {
+    void binaryTreePaths2() {
         TreeNode treeNode = new TreeNode(1);
         assertThat(new Solution().binaryTreePaths(treeNode), equalTo(Arrays.asList("1")));
     }

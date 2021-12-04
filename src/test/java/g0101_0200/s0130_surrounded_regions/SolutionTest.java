@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void solve() {
+    void solve() {
         char[][] board =
                 new char[][] {
                     {'X', 'X', 'X', 'X'},

@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void basicCalculatorII() {
+    void basicCalculatorII() {
         assertThat(new Solution().calculate("3+2*2"), equalTo(7));
     }
 }

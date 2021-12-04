@@ -8,9 +8,9 @@ import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void solveNQueens() {
+    void solveNQueens() {
         List<List<String>> actual = new Solution().solveNQueens(4);
         List<List<String>> expected = new ArrayList<>();
         expected.add(Arrays.asList(".Q..", "...Q", "Q...", "..Q."));

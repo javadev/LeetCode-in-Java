@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void maximumGap() {
+    void maximumGap() {
 
         assertThat(new Solution().maximumGap(new int[] {3, 6, 9, 1}), equalTo(3));
     }

@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void shortestPathAllKeys() {
+    void shortestPathAllKeys() {
         Solution solution = new Solution();
         assertThat(
                 solution.shortestPathAllKeys(new String[] {"@.a.#", "###.#", "b.A.B"}), equalTo(8));

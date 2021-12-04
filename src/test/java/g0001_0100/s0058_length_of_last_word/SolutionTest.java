@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void lengthOfLastWord() {
+    void lengthOfLastWord() {
         assertThat(new Solution().lengthOfLastWord("Hello World"), equalTo(5));
     }
 }

@@ -5,16 +5,16 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void gameOfLife() {
+    void gameOfLife() {
         int[][] board = {{0, 1, 0}, {0, 0, 1}, {1, 1, 1}, {0, 0, 0}};
         new Solution().gameOfLife(board);
         assertThat(board, equalTo(new int[][] {{0, 0, 0}, {1, 0, 1}, {0, 1, 1}, {0, 1, 0}}));
     }
 
     @Test
-    public void gameOfLife2() {
+    void gameOfLife2() {
         int[][] board = {{1, 1}, {1, 0}};
         new Solution().gameOfLife(board);
         assertThat(board, equalTo(new int[][] {{1, 1}, {1, 1}}));

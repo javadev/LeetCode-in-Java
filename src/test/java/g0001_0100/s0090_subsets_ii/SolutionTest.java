@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.ArrayUtils;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void subsetsWithDup() {
+    void subsetsWithDup() {
         int[][] expected = {{1}, {1, 2}, {1, 2, 2}, {2}, {2, 2}, {}};
         assertThat(
                 new Solution().subsetsWithDup(new int[] {1, 2, 2}),

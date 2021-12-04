@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void minPathSum() {
+    void minPathSum() {
         int[][] expected = {{1, 3, 1}, {1, 5, 1}, {4, 2, 1}};
         assertThat(new Solution().minPathSum(expected), equalTo(7));
     }

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class WordDictionaryTest {
     @Test
-    public void worldDataStructure() {
+    void worldDataStructure() {
         String[] input = {"bad", "dad", "mad"};
 
         WordDictionary dictionary = new WordDictionary();

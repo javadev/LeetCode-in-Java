@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void findRepeatedDnaSequences() {
+    void findRepeatedDnaSequences() {
         assertThat(
                 new Solution().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"),
                 equalTo(Arrays.asList("AAAAACCCCC", "CCCCCAAAAA")));

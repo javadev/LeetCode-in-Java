@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void maxProduct() {
+    void maxProduct() {
         assertThat(new Solution().maxProduct(new int[] {2, 3, -2, 4}), equalTo(6));
     }
 }

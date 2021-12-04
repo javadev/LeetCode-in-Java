@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void intToRoman() {
+    void intToRoman() {
         Solution solution = new Solution();
         assertThat(solution.intToRoman(3), equalTo("III"));
         assertThat(solution.intToRoman(4), equalTo("IV"));

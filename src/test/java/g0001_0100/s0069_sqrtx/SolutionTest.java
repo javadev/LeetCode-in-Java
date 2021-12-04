@@ -5,14 +5,14 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void mySqrt() {
+    void mySqrt() {
         assertThat(new Solution().mySqrt(4), equalTo(2));
     }
 
     @Test
-    public void mySqrt2() {
+    void mySqrt2() {
         assertThat(new Solution().mySqrt(8), equalTo(2));
     }
 }

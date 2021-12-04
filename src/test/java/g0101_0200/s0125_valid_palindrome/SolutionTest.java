@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void isPalindrome() {
+    void isPalindrome() {
         assertThat(new Solution().isPalindrome("A man, a plan, a canal: Panama"), equalTo(true));
     }
 }

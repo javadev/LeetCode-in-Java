@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class MyStackTest {
     @Test
-    public void stackUsingQueue() {
+    void stackUsingQueue() {
         MyStack stack = new MyStack();
         stack.push(1);
         stack.push(2);

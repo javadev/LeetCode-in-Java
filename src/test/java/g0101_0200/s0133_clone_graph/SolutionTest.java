@@ -7,9 +7,9 @@ import com_github_leetcode.Node;
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void cloneGraph() {
+    void cloneGraph() {
         Node node1 = new Node(1);
         Node node2 = new Node(2);
         Node node3 = new Node(3);

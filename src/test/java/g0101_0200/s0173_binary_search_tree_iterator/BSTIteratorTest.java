@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 public class BSTIteratorTest {
 
     @Test
-    public void iteratorBST() {
+    void iteratorBST() {
         TreeNode left = new TreeNode(3);
         TreeNode right = new TreeNode(15, new TreeNode(9), new TreeNode(20));
         TreeNode root = new TreeNode(7, left, right);

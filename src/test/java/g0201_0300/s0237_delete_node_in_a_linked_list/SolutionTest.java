@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.ListNode;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void deleteNode() {
+    void deleteNode() {
         ListNode headActual = new ListNode(1);
         headActual.next = new ListNode(2);
         headActual.next.next = new ListNode(3);
@@ -18,7 +18,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void deleteNode2() {
+    void deleteNode2() {
         ListNode headActual = new ListNode(1);
         headActual.next = new ListNode(2);
         headActual.next.next = new ListNode(3);
@@ -28,7 +28,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void deleteNode3() {
+    void deleteNode3() {
         ListNode headActual = new ListNode(1);
         headActual.next = new ListNode(2);
         headActual.next.next = new ListNode(3);

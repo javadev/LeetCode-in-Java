@@ -7,9 +7,9 @@ import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void findItinerary() {
+    void findItinerary() {
         List<List<String>> input =
                 Arrays.asList(
                         Arrays.asList("MUC", "LHR"),

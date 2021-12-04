@@ -7,9 +7,9 @@ import com_github_leetcode.ArrayUtils;
 import com_github_leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void levelOrderBottom() {
+    void levelOrderBottom() {
         TreeNode bottomLeft = new TreeNode(15);
         TreeNode bottomRight = new TreeNode(7);
         TreeNode upRight = new TreeNode(20, bottomLeft, bottomRight);

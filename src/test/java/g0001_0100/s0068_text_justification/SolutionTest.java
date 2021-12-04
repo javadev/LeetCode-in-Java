@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void fullJustify() {
+    void fullJustify() {
         String[] input =
                 new String[] {"This", "is", "an", "example", "of", "text", "justification."};
         List<String> actual = new Solution().fullJustify(input, 16);

@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void numTrees() {
+    void numTrees() {
         assertThat(new Solution().numTrees(3), equalTo(5));
         assertThat(new Solution().numTrees(1), equalTo(1));
     }

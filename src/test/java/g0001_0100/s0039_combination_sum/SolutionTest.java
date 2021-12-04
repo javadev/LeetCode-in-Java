@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.ArrayUtils;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void combinationSum() {
+    void combinationSum() {
         assertThat(
                 new Solution().combinationSum(new int[] {2, 3, 6, 7}, 7),
                 equalTo(ArrayUtils.getLists(new int[][] {{7}, {3, 2, 2}})));

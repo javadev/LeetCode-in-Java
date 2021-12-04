@@ -5,24 +5,24 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void isUgly() {
+    void isUgly() {
         assertThat(new Solution().isUgly(6), equalTo(true));
     }
 
     @Test
-    public void isUgly2() {
+    void isUgly2() {
         assertThat(new Solution().isUgly(8), equalTo(true));
     }
 
     @Test
-    public void isUgly3() {
+    void isUgly3() {
         assertThat(new Solution().isUgly(14), equalTo(false));
     }
 
     @Test
-    public void isUgly4() {
+    void isUgly4() {
         assertThat(new Solution().isUgly(1), equalTo(true));
     }
 }

@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void candy() {
+    void candy() {
         assertThat(new Solution().candy(new int[] {1, 0, 2}), equalTo(5));
     }
 }

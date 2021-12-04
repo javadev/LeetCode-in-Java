@@ -5,14 +5,14 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void canFinish() {
+    void canFinish() {
         assertThat(new Solution().canFinish(2, new int[][] {{1, 0}}), equalTo(true));
     }
 
     @Test
-    public void canFinish2() {
+    void canFinish2() {
         assertThat(new Solution().canFinish(2, new int[][] {{1, 0}, {0, 1}}), equalTo(false));
     }
 }

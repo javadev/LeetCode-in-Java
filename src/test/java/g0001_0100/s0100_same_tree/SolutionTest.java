@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void isSameTree() {
+    void isSameTree() {
         TreeNode treeNode1 = new TreeNode(1);
         treeNode1.left = new TreeNode(2);
         treeNode1.right = new TreeNode(3);

@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void minDistance() {
+    void minDistance() {
         assertThat(new Solution().minDistance("horse", "ros"), equalTo(3));
     }
 }

@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void removeDuplicates() {
+    void removeDuplicates() {
         int[] array = new int[] {1, 1, 2};
         int end = new Solution().removeDuplicates(array);
         assertThat(Arrays.toString(Arrays.copyOfRange(array, 0, end)), equalTo("[1, 2]"));

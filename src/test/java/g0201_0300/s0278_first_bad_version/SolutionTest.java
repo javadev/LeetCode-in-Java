@@ -5,9 +5,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void firstBadVersion() {
+    void firstBadVersion() {
         assertThat(new Solution().firstBadVersion(5), equalTo(4));
     }
 }

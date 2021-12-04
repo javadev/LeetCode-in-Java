@@ -6,10 +6,10 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
 
     @Test
-    public void countNodes() {
+    void countNodes() {
         TreeNode leftNodeLeftNode = new TreeNode(4);
         TreeNode leftNodeRightNode = new TreeNode(5);
         TreeNode leftNode = new TreeNode(2, leftNodeLeftNode, leftNodeRightNode);
