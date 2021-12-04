@@ -55,7 +55,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: 57752c1d9fabcc88fce3a19f77719addf6da830e
-        run: mvn -B test jacoco:report org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.organization=javadev-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=javadev_LeetCode-in-Java
+        run: mvn -X test jacoco:report org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.organization=javadev-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=javadev_LeetCode-in-Java
       - uses: codecov/codecov-action@v1
         with:
           file: ./**/target/site/jacoco/jacoco.xml
