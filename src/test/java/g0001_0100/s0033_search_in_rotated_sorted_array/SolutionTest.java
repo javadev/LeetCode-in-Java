@@ -3,7 +3,7 @@ package g0001_0100.s0033_search_in_rotated_sorted_array;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class SolutionTest {
     @Test

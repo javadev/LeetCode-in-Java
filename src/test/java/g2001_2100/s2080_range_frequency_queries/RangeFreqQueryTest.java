@@ -3,7 +3,7 @@ package g2001_2100.s2080_range_frequency_queries;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class RangeFreqQueryTest {
     @Test

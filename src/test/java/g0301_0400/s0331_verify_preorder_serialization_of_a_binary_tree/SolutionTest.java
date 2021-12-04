@@ -3,7 +3,7 @@ package g0301_0400.s0331_verify_preorder_serialization_of_a_binary_tree;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class SolutionTest {
     @Test

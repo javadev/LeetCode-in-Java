@@ -3,7 +3,7 @@ package g0101_0200.s0166_fraction_to_recurring_decimal;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class SolutionTest {
     @Test

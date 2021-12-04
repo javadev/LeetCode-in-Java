@@ -3,7 +3,7 @@ package g0301_0400.s0307_range_sum_query_mutable;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class NumArrayTest {
     @Test

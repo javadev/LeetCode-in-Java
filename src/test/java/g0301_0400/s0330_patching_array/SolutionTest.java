@@ -3,7 +3,7 @@ package g0301_0400.s0330_patching_array;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class SolutionTest {
     @Test

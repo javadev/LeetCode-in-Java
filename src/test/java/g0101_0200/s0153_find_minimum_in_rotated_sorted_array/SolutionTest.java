@@ -3,7 +3,7 @@ package g0101_0200.s0153_find_minimum_in_rotated_sorted_array;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class SolutionTest {
     @Test
