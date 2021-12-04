@@ -108,6 +108,12 @@
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
+                    <execution>
+                        <id>report</id>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
                 </executions>
             </plugin>
             <plugin>
@@ -180,12 +186,12 @@
             <version>[2.2,)</version>
             <scope>test</scope>
         </dependency>
-<dependency>
-    <groupId>org.zapodot</groupId>
-    <artifactId>embedded-db-junit-jupiter</artifactId>
-    <version>[2.0.2,)</version>
-    <scope>test</scope>
-</dependency>
+        <dependency>
+            <groupId>org.zapodot</groupId>
+            <artifactId>embedded-db-junit-jupiter</artifactId>
+            <version>[2.0.2,)</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
