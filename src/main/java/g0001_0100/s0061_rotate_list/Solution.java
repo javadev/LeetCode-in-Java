@@ -1,5 +1,7 @@
 package g0001_0100.s0061_rotate_list;
 
+// #Medium #Two_Pointers #Linked_List
+
 import com_github_leetcode.ListNode;
 
 public class Solution {

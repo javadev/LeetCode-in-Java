@@ -1,5 +1,7 @@
 package g0001_0100.s0071_simplify_path;
 
+// #Medium #String #Stack
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 

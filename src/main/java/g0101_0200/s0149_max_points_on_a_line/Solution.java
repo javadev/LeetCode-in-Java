@@ -1,5 +1,7 @@
 package g0101_0200.s0149_max_points_on_a_line;
 
+// #Hard #Top_Interview_Questions #Hash_Table #Math #Geometry
+
 public class Solution {
     public int maxPoints(int[][] points) {
         if (points.length < 2) {

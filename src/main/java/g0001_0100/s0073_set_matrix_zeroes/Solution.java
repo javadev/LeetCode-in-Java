@@ -1,5 +1,7 @@
 package g0001_0100.s0073_set_matrix_zeroes;
 
+// #Medium #Top_Interview_Questions #Array #Hash_Table #Matrix
+
 public class Solution {
     // Approach: Use first row and first column for storing whether in future
     //           the entire row or column needs to be marked 0

@@ -1,5 +1,7 @@
 package g0001_0100.s0064_minimum_path_sum;
 
+// #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Matrix
+
 public class Solution {
     public int minPathSum(int[][] grid) {
         if (grid.length == 1 && grid[0].length == 1) {

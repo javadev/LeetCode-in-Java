@@ -1,5 +1,7 @@
 package g0001_0100.s0031_next_permutation;
 
+// #Medium #Top_100_Liked_Questions #Array #Two_Pointers
+
 public class Solution {
     public void nextPermutation(int[] nums) {
         if (nums == null || nums.length <= 1) {

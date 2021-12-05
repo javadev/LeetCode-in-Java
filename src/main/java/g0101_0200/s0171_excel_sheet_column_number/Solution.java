@@ -1,5 +1,7 @@
 package g0101_0200.s0171_excel_sheet_column_number;
 
+// #Easy #Top_Interview_Questions #String #Math
+
 public class Solution {
     public int titleToNumber(String s) {
         int num = 0;

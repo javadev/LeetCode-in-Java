@@ -1,5 +1,7 @@
 package g0001_0100.s0083_remove_duplicates_from_sorted_list;
 
+// #Easy #Linked_List
+
 import com_github_leetcode.ListNode;
 
 /*

@@ -1,5 +1,7 @@
 package g0201_0300.s0231_power_of_two;
 
+// #Easy #Math #Bit_Manipulation #Recursion
+
 public class Solution {
     public boolean isPowerOfTwo(int n) {
         if (n <= 0) {

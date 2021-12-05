@@ -1,5 +1,8 @@
 package g0201_0300.s0279_perfect_squares;
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Dynamic_Programming #Math
+// #Breadth_First_Search
+
 public class Solution {
     private boolean validSquare(int n) {
         int root = (int) Math.sqrt(n);

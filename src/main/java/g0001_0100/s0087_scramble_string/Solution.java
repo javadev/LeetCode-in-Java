@@ -1,5 +1,7 @@
 package g0001_0100.s0087_scramble_string;
 
+// #Hard #String #Dynamic_Programming
+
 public class Solution {
     public boolean isScramble(String s1, String s2) {
         int n = s1.length();

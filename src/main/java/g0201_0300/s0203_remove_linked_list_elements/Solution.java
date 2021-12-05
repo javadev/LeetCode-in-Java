@@ -1,5 +1,7 @@
 package g0201_0300.s0203_remove_linked_list_elements;
 
+// #Easy #Linked_List #Recursion
+
 import com_github_leetcode.ListNode;
 
 /*

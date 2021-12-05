@@ -1,5 +1,7 @@
 package g0001_0100.s0019_remove_nth_node_from_end_of_list;
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Two_Pointers #Linked_List
+
 import com_github_leetcode.ListNode;
 
 public class Solution {

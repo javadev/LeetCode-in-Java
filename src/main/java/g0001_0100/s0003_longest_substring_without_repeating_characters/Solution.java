@@ -1,5 +1,7 @@
 package g0001_0100.s0003_longest_substring_without_repeating_characters;
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Hash_Table #Sliding_Window
+
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
         int[] lastIndices = new int[256];

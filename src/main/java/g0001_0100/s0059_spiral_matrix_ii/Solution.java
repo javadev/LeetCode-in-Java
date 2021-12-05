@@ -1,5 +1,7 @@
 package g0001_0100.s0059_spiral_matrix_ii;
 
+// #Medium #Array #Matrix #Simulation
+
 public class Solution {
     public int[][] generateMatrix(int n) {
         int num = 1;

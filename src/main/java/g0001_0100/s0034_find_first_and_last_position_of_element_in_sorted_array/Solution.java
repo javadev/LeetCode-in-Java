@@ -1,5 +1,7 @@
 package g0001_0100.s0034_find_first_and_last_position_of_element_in_sorted_array;
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Binary_Search
+
 @SuppressWarnings("unused")
 public class Solution {
     public int[] searchRange(int[] nums, int target) {

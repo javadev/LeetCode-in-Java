@@ -1,5 +1,7 @@
 package g0101_0200.s0191_number_of_1_bits;
 
+// #Easy #Top_Interview_Questions #Bit_Manipulation
+
 public class Solution {
     public int hammingWeight(int n) {
         int sum = 0;

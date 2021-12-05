@@ -1,5 +1,7 @@
 package g0001_0100.s0006_zigzag_conversion;
 
+// #Medium #String
+
 public class Solution {
     public String convert(String s, int numRows) {
         int sLen = s.length();

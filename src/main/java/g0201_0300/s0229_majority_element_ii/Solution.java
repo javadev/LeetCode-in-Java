@@ -1,5 +1,7 @@
 package g0201_0300.s0229_majority_element_ii;
 
+// #Medium #Array #Hash_Table #Sorting #Counting
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,5 +1,8 @@
 package g0001_0100.s0062_unique_paths;
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Dynamic_Programming #Math
+// #Combinatorics
+
 public class Solution {
     public int uniquePaths(int m, int n) {
         int[][] dp = new int[m][n];

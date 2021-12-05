@@ -1,5 +1,7 @@
 package g0001_0100.s0036_valid_sudoku;
 
+// #Medium #Top_Interview_Questions #Array #Hash_Table #Matrix
+
 public class Solution {
     private int j1;
     private int[] i1 = new int[9];

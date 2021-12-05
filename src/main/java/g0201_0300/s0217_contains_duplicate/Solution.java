@@ -1,5 +1,7 @@
 package g0201_0300.s0217_contains_duplicate;
 
+// #Easy #Top_Interview_Questions #Array #Hash_Table #Sorting
+
 import java.util.Arrays;
 
 public class Solution {

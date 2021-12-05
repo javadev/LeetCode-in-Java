@@ -1,5 +1,7 @@
 package g0001_0100.s0030_substring_with_concatenation_of_all_words;
 
+// #Hard #String #Hash_Table #Sliding_Window
+
 import java.util.*;
 
 @SuppressWarnings("java:S127")

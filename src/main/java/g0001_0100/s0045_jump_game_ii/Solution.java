@@ -1,5 +1,7 @@
 package g0001_0100.s0045_jump_game_ii;
 
+// #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Greedy
+
 public class Solution {
     public int jump(int[] nums) {
         int length = 0;

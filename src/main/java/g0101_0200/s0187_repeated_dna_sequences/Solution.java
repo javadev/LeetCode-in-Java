@@ -1,5 +1,7 @@
 package g0101_0200.s0187_repeated_dna_sequences;
 
+// #Medium #String #Hash_Table #Bit_Manipulation #Sliding_Window #Hash_Function #Rolling_Hash
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

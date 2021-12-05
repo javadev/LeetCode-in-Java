@@ -1,5 +1,7 @@
 package g0201_0300.s0201_bitwise_and_of_numbers_range;
 
+// #Medium #Bit_Manipulation
+
 public class Solution {
     private static final int[] MASKS =
             new int[] {

@@ -1,5 +1,7 @@
 package g0001_0100.s0051_n_queens;
 
+// #Hard #Array #Backtracking
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

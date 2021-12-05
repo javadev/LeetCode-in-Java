@@ -1,5 +1,7 @@
 package g0101_0200.s0152_maximum_product_subarray;
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Dynamic_Programming
+
 public class Solution {
     public int maxProduct(int[] arr) {
         int ans = Integer.MIN_VALUE;

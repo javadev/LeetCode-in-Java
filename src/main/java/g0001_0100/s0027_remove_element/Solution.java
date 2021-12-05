@@ -1,5 +1,7 @@
 package g0001_0100.s0027_remove_element;
 
+// #Easy #Array #Two_Pointers
+
 public class Solution {
     public int removeElement(int[] nums, int val) {
         if (nums == null || nums.length == 0) {

@@ -1,5 +1,7 @@
 package g2001_2100.s2080_range_frequency_queries;
 
+// #Medium #Array #Hash_Table #Binary_Search #Design #Segment_Tree
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;

@@ -1,5 +1,7 @@
 package g0301_0400.s0334_increasing_triplet_subsequence;
 
+// #Medium #Top_Interview_Questions #Array #Greedy
+
 public class Solution {
     public boolean increasingTriplet(int[] nums) {
         int n = nums.length;

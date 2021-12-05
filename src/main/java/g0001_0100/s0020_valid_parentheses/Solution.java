@@ -1,5 +1,7 @@
 package g0001_0100.s0020_valid_parentheses;
 
+// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #String #Stack
+
 import java.util.Stack;
 
 @SuppressWarnings("java:S1149")

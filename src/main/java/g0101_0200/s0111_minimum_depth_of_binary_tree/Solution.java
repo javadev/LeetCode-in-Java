@@ -1,5 +1,7 @@
 package g0101_0200.s0111_minimum_depth_of_binary_tree;
 
+// #Easy #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+
 import com_github_leetcode.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;

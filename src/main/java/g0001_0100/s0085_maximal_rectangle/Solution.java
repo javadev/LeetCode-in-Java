@@ -1,5 +1,7 @@
 package g0001_0100.s0085_maximal_rectangle;
 
+// #Hard #Top_100_Liked_Questions #Array #Dynamic_Programming #Matrix #Stack #Monotonic_Stack
+
 public class Solution {
     public int maximalRectangle(char[][] matrix) {
         /*

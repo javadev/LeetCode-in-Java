@@ -1,5 +1,7 @@
 package g0001_0100.s0066_plus_one;
 
+// #Easy #Top_Interview_Questions #Array #Math
+
 public class Solution {
     public int[] plusOne(int[] digits) {
         int num = 1;

@@ -1,5 +1,7 @@
 package g0201_0300.s0278_first_bad_version;
 
+// #Easy #Binary_Search #Interactive
+
 /* The isBadVersion API is defined in the parent class VersionControl.
 boolean isBadVersion(int version); */
 

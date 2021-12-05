@@ -1,5 +1,7 @@
 package g0001_0100.s0100_same_tree;
 
+// #Easy #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+
 import com_github_leetcode.TreeNode;
 
 /*

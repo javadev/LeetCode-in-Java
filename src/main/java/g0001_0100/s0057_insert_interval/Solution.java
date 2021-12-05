@@ -1,5 +1,7 @@
 package g0001_0100.s0057_insert_interval;
 
+// #Medium #Array
+
 import java.util.Arrays;
 
 public class Solution {

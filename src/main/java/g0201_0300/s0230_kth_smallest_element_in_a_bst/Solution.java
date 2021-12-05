@@ -1,5 +1,8 @@
 package g0201_0300.s0230_kth_smallest_element_in_a_bst;
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Depth_First_Search #Tree #Binary_Tree
+// #Binary_Search_Tree
+
 import com_github_leetcode.TreeNode;
 
 public class Solution {

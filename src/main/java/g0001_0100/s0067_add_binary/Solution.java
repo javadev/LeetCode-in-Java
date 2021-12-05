@@ -1,5 +1,7 @@
 package g0001_0100.s0067_add_binary;
 
+// #Easy #String #Math #Bit_Manipulation #Simulation
+
 public class Solution {
     public String addBinary(String a, String b) {
         char[] aArray = a.toCharArray();

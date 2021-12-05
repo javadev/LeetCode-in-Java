@@ -1,5 +1,7 @@
 package g0201_0300.s0263_ugly_number;
 
+// #Easy #Math
+
 public class Solution {
     public boolean isUgly(int n) {
         if (n == 1) {

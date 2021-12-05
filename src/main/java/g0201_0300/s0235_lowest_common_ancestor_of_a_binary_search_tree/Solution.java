@@ -1,5 +1,7 @@
 package g0201_0300.s0235_lowest_common_ancestor_of_a_binary_search_tree;
 
+// #Easy #Depth_First_Search #Tree #Binary_Tree #Binary_Search_Tree
+
 import com_github_leetcode.TreeNode;
 
 public class Solution {

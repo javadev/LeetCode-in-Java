@@ -1,5 +1,7 @@
 package g0001_0100.s0035_search_insert_position;
 
+// #Easy #Top_100_Liked_Questions #Array #Binary_Search
+
 public class Solution {
     public int searchInsert(int[] nums, int target) {
         int lo = 0;

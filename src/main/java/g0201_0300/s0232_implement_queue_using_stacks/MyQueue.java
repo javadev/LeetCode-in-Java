@@ -1,5 +1,7 @@
 package g0201_0300.s0232_implement_queue_using_stacks;
 
+// #Easy #Stack #Design #Queue
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 

@@ -1,5 +1,7 @@
 package g0001_0100.s0072_edit_distance;
 
+// #Hard #Top_100_Liked_Questions #String #Dynamic_Programming
+
 @SuppressWarnings("java:S2234")
 public class Solution {
     public int minDistance(String w1, String w2) {

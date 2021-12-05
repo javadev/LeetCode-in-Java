@@ -1,5 +1,7 @@
 package g0101_0200.s0165_compare_version_numbers;
 
+// #Medium #String #Two_Pointers
+
 public class Solution {
 
     public int compareVersion(String version1, String version2) {

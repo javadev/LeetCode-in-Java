@@ -1,5 +1,7 @@
 package g0201_0300.s0225_implement_stack_using_queues;
 
+// #Easy #Stack #Design #Queue
+
 import java.util.LinkedList;
 import java.util.Queue;
 

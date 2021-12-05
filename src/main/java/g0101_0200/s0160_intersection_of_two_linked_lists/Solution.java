@@ -1,5 +1,7 @@
 package g0101_0200.s0160_intersection_of_two_linked_lists;
 
+// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Hash_Table #Two_Pointers #Linked_List
+
 import com_github_leetcode.ListNode;
 
 @SuppressWarnings("java:S2583")

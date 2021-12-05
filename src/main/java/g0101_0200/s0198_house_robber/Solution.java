@@ -1,5 +1,7 @@
 package g0101_0200.s0198_house_robber;
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Dynamic_Programming
+
 public class Solution {
     public int rob(int[] nums) {
         if (nums.length == 0) {

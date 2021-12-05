@@ -1,5 +1,7 @@
 package g0001_0100.s0001_two_sum;
 
+// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table
+
 import java.util.Arrays;
 
 public class Solution {

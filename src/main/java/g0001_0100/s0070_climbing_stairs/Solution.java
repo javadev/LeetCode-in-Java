@@ -1,5 +1,7 @@
 package g0001_0100.s0070_climbing_stairs;
 
+// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Dynamic_Programming #Math #Memoization
+
 public class Solution {
     public int climbStairs(int n) {
         if (n < 2) {

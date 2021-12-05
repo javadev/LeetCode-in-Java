@@ -1,5 +1,7 @@
 package g0101_0200.s0172_factorial_trailing_zeroes;
 
+// #Medium #Top_Interview_Questions #Math
+
 public class Solution {
 
     public int trailingZeroes(int n) {

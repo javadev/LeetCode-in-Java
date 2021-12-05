@@ -1,5 +1,7 @@
 package g0101_0200.s0168_excel_sheet_column_title;
 
+// #Easy #String #Math
+
 public class Solution {
     public String convertToTitle(int n) {
         StringBuilder sb = new StringBuilder();

@@ -1,5 +1,7 @@
 package g0201_0300.s0233_number_of_digit_one;
 
+// #Hard #Dynamic_Programming #Math #Recursion
+
 @SuppressWarnings("java:S127")
 public class Solution {
     public int countDigitOne(int n) {

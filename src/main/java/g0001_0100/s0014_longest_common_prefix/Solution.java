@@ -1,5 +1,7 @@
 package g0001_0100.s0014_longest_common_prefix;
 
+// #Easy #Top_Interview_Questions #String
+
 public class Solution {
     public String longestCommonPrefix(String[] strs) {
         if (strs.length < 1) {

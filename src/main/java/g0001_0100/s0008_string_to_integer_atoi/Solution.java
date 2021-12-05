@@ -1,5 +1,7 @@
 package g0001_0100.s0008_string_to_integer_atoi;
 
+// #Medium #Top_Interview_Questions #String
+
 public class Solution {
     public int myAtoi(String str) {
         if (str == null || str.length() == 0) {

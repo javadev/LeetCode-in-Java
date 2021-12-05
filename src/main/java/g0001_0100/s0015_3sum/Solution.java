@@ -1,4 +1,6 @@
-package g0001_0100.s0015_three_sum;
+package g0001_0100.s0015_3sum;
+
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Sorting #Two_Pointers
 
 import java.util.ArrayList;
 import java.util.Arrays;

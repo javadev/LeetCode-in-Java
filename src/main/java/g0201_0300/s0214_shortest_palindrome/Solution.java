@@ -1,5 +1,7 @@
 package g0201_0300.s0214_shortest_palindrome;
 
+// #Hard #String #Hash_Function #String_Matching #Rolling_Hash
+
 public class Solution {
     public String shortestPalindrome(String s) {
         int i;

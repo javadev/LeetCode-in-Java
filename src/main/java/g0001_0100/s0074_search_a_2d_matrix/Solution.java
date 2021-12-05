@@ -1,5 +1,7 @@
 package g0001_0100.s0074_search_a_2d_matrix;
 
+// #Medium #Array #Binary_Search #Matrix
+
 public class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         int endRow = matrix.length;

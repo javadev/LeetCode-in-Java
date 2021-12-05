@@ -1,5 +1,7 @@
 package g0001_0100.s0058_length_of_last_word;
 
+// #Easy #String
+
 public class Solution {
     public int lengthOfLastWord(String str) {
         int len = 0;

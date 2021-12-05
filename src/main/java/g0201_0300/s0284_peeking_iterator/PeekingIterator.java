@@ -1,5 +1,7 @@
 package g0201_0300.s0284_peeking_iterator;
 
+// #Medium #Array #Design #Iterator
+
 import java.util.Iterator;
 
 public class PeekingIterator implements Iterator<Integer> {

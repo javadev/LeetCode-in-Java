@@ -1,5 +1,7 @@
 package g0101_0200.s0188_best_time_to_buy_and_sell_stock_iv;
 
+// #Hard #Array #Dynamic_Programming
+
 public class Solution {
     public int maxProfit(int k, int[] prices) {
         int n = prices.length;

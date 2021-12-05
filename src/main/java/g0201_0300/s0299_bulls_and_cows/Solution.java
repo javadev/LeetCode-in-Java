@@ -1,5 +1,7 @@
 package g0201_0300.s0299_bulls_and_cows;
 
+// #Medium #String #Hash_Table #Counting
+
 public class Solution {
     public String getHint(String secret, String guess) {
         final int[] ans = new int[10];

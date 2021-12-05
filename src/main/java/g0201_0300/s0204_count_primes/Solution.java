@@ -1,5 +1,7 @@
 package g0201_0300.s0204_count_primes;
 
+// #Medium #Top_Interview_Questions #Array #Math #Enumeration #Number_Theory
+
 public class Solution {
     public int countPrimes(int n) {
         boolean[] isprime = new boolean[n];
