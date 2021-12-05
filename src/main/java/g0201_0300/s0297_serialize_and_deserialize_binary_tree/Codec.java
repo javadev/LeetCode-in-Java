@@ -1,6 +1,7 @@
 package g0201_0300.s0297_serialize_and_deserialize_binary_tree;
 
-// #Hard #Top_100_Liked_Questions #Top_Interview_Questions #String #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Design
+// #Hard #Top_100_Liked_Questions #Top_Interview_Questions #String #Depth_First_Search
+// #Breadth_First_Search #Tree #Binary_Tree #Design
 
 import com_github_leetcode.TreeNode;
 

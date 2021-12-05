@@ -1,6 +1,7 @@
 package g0001_0100.s0053_maximum_subarray;
 
-// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Array #Dynamic_Programming #Divide_and_Conquer
+// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Array #Dynamic_Programming
+// #Divide_and_Conquer
 
 public class Solution {
     public int maxSubArray(int[] nums) {

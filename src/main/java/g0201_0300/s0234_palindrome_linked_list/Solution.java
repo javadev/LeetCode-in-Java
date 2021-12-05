@@ -1,6 +1,7 @@
 package g0201_0300.s0234_palindrome_linked_list;
 
-// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Two_Pointers #Stack #Linked_List #Recursion
+// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Two_Pointers #Stack #Linked_List
+// #Recursion
 
 import com_github_leetcode.ListNode;
 
