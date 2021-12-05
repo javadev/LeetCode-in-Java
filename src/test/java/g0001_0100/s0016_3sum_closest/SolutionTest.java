@@ -1,4 +1,4 @@
-package g0001_0100.s0016_three_sum_closest;
+package g0001_0100.s0016_3sum_closest;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

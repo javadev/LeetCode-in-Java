@@ -1,4 +1,4 @@
-package g0001_0100.s0018_four_sum;
+package g0001_0100.s0018_4sum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
