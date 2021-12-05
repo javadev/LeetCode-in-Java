@@ -42,7 +42,8 @@ public class MysqlTest {
                                     new BufferedReader(
                                                     new FileReader(
                                                             "src/main/java/g0101_0200/"
-                                                                    + "s0176_second_highest_salary_medium_database/script.sql"))
+                                                                    + "s0176_second_highest_salary_medium_database/"
+                                                                    + "script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {

@@ -43,7 +43,8 @@ public class MysqlTest {
                                     new BufferedReader(
                                                     new FileReader(
                                                             "src/main/java/g0101_0200/"
-                                                                    + "s0180_consecutive_numbers_medium_database/script.sql"))
+                                                                    + "s0180_consecutive_numbers_medium_database/"
+                                                                    + "script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {
