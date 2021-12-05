@@ -1,4 +1,5 @@
 # Write your MySQL query statement below
+# #Medium #Database
 SELECT
     d.Name AS Department,
     Sel.Name AS Employee,

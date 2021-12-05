@@ -1,4 +1,5 @@
 # Write your MySQL query statement below
+# #Medium #Database
 SELECT ifnull(
                 (SELECT distinct(Salary)
                  FROM Employee
