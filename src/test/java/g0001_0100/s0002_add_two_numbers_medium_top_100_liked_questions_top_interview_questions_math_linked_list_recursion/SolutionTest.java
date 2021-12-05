@@ -1,4 +1,4 @@
-package g0001_0100.s0002_add_two_numbers;
+package g0001_0100.s0002_add_two_numbers_medium_top_100_liked_questions_top_interview_questions_math_linked_list_recursion;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0001_0100.s0001_two_sum;
+package g0001_0100.s0001_two_sum_easy_top_100_liked_questions_top_interview_questions_array_hash_table;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
