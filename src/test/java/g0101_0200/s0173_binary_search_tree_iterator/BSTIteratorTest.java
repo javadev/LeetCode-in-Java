@@ -4,12 +4,12 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.TreeNode;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class BSTIteratorTest {
+class BSTIteratorTest {
 
     @Test
-    public void iteratorBST() {
+    void iteratorBST() {
         TreeNode left = new TreeNode(3);
         TreeNode right = new TreeNode(15, new TreeNode(9), new TreeNode(20));
         TreeNode root = new TreeNode(7, left, right);

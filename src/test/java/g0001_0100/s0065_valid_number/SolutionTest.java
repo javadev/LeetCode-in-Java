@@ -3,11 +3,11 @@ package g0001_0100.s0065_valid_number;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void isNumber() {
+    void isNumber() {
         Solution solution = new Solution();
         assertThat(solution.isNumber("0"), equalTo(true));
         assertThat(solution.isNumber("e"), equalTo(false));

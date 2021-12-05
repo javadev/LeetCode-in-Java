@@ -4,11 +4,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.Arrays;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void removeDuplicates() {
+    void removeDuplicates() {
         int[] array = {1, 1, 1, 2, 2, 3};
         int end = new Solution().removeDuplicates(array);
         assertThat(Arrays.copyOfRange(array, 0, end), equalTo(new int[] {1, 1, 2, 2, 3}));

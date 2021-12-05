@@ -4,11 +4,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.ListNode;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void mergeKLists() {
+    void mergeKLists() {
         ListNode head = new ListNode();
         ListNode node1 = new ListNode();
         node1.val = 1;

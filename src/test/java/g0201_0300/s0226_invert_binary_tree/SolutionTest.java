@@ -4,11 +4,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.TreeNode;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void invertTree() {
+    void invertTree() {
         TreeNode leftBottomLeft = new TreeNode(1);
         TreeNode leftBottomRight = new TreeNode(3);
         TreeNode left = new TreeNode(2, leftBottomLeft, leftBottomRight);

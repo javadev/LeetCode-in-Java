@@ -4,11 +4,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.Arrays;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void generateParenthesis() {
+    void generateParenthesis() {
         assertThat(
                 new Solution().generateParenthesis(3),
                 equalTo(Arrays.asList("((()))", "(()())", "(())()", "()(())", "()()()")));

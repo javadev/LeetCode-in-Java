@@ -5,11 +5,11 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.TreeNode;
 import java.util.Arrays;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void rightSideView() {
+    void rightSideView() {
         TreeNode left = new TreeNode(2, null, new TreeNode(5));
         TreeNode right = new TreeNode(3, null, new TreeNode(4));
         TreeNode root = new TreeNode(1, left, right);
@@ -17,7 +17,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void rightSideView2() {
+    void rightSideView2() {
         TreeNode root = new TreeNode(1, null, new TreeNode(3));
         assertThat(new Solution().rightSideView(root), equalTo(Arrays.asList(1, 3)));
     }

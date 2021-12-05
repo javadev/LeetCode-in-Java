@@ -3,11 +3,11 @@ package g0201_0300.s0240_search_a_2d_matrix_ii;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void searchMatrix() {
+    void searchMatrix() {
         int[][] matrix = {
             {1, 4, 7, 11, 15},
             {2, 5, 8, 12, 19},
@@ -19,7 +19,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void searchMatrix2() {
+    void searchMatrix2() {
         int[][] matrix = {
             {1, 4, 7, 11, 15},
             {2, 5, 8, 12, 19},

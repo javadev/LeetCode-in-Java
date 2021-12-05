@@ -3,11 +3,11 @@ package g0201_0300.s0211_design_add_and_search_words_data_structure;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class WordDictionaryTest {
+class WordDictionaryTest {
     @Test
-    public void worldDataStructure() {
+    void worldDataStructure() {
         String[] input = {"bad", "dad", "mad"};
 
         WordDictionary dictionary = new WordDictionary();

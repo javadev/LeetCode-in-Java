@@ -12,16 +12,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.stream.Collectors;
-import org.junit.Rule;
-import org.junit.Test;
-import org.zapodot.junit.db.EmbeddedDatabaseRule;
-import org.zapodot.junit.db.common.CompatibilityMode;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.RegisterExtension;
+import org.zapodot.junit.db.EmbeddedDatabaseExtension;
 
-public class MysqlTest {
-    @Rule
-    public final EmbeddedDatabaseRule embeddedDatabaseRule =
-            EmbeddedDatabaseRule.builder()
-                    .withMode(CompatibilityMode.MySQL)
+class MysqlTest {
+    @RegisterExtension
+    static EmbeddedDatabaseExtension embeddedDatabaseExtension =
+            EmbeddedDatabaseExtension.Builder.h2()
                     .withInitialSql(
                             "CREATE TABLE Person(personId INTEGER PRIMARY KEY, lastName VARCHAR(512)"
                                     + ", firstName VARCHAR(512)); "
@@ -38,9 +36,9 @@ public class MysqlTest {
                     .build();
 
     @Test
-    public void testScript() throws SQLException, FileNotFoundException {
+    void testScript() throws SQLException, FileNotFoundException {
         try (final Connection connection =
-                DriverManager.getConnection(embeddedDatabaseRule.getConnectionJdbcUrl())) {
+                DriverManager.getConnection(embeddedDatabaseExtension.getConnectionJdbcUrl())) {
             try (final Statement statement = connection.createStatement();
                     final ResultSet resultSet =
                             statement.executeQuery(

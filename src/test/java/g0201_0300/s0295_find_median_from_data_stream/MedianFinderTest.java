@@ -3,11 +3,11 @@ package g0201_0300.s0295_find_median_from_data_stream;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class MedianFinderTest {
+class MedianFinderTest {
     @Test
-    public void medianFinder() {
+    void medianFinder() {
         MedianFinder medianFinder = new MedianFinder();
         // arr = [1]
         medianFinder.addNum(1);

@@ -3,11 +3,11 @@ package g0101_0200.s0169_majority_element;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void majorityElement() {
+    void majorityElement() {
         assertThat(new Solution().majorityElement(new int[] {3, 2, 3}), equalTo(3));
     }
 }
