@@ -7,38 +7,36 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.stream.Collectors;
+import javax.sql.DataSource;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.RegisterExtension;
-import org.zapodot.junit.db.EmbeddedDatabaseExtension;
+import org.zapodot.junit.db.annotations.EmbeddedDatabase;
+import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest;
+import org.zapodot.junit.db.common.CompatibilityMode;
 
+@EmbeddedDatabaseTest(
+        compatibilityMode = CompatibilityMode.MySQL,
+        initialSqls =
+                "CREATE TABLE Person(personId INTEGER PRIMARY KEY, lastName VARCHAR(512)"
+                        + ", firstName VARCHAR(512)); "
+                        + "INSERT INTO Person(personId, lastName, firstName) "
+                        + "VALUES (1, 'Wang', 'Allen'); "
+                        + "INSERT INTO Person(personId, lastName, firstName) "
+                        + "VALUES (2, 'Alice', 'Bob'); "
+                        + "CREATE TABLE Address(addressId INTEGER PRIMARY KEY, personId INTEGER"
+                        + ", city VARCHAR(512), state VARCHAR(512)); "
+                        + "INSERT INTO Address(addressId, personId, city, state) "
+                        + "VALUES (1, 2, 'New York City', 'New York'); "
+                        + "INSERT INTO Address(addressId, personId, city, state) "
+                        + "VALUES (2, 3, 'Leetcode', 'California'); ")
 class MysqlTest {
-    @RegisterExtension
-    static EmbeddedDatabaseExtension embeddedDatabaseExtension =
-            EmbeddedDatabaseExtension.Builder.h2()
-                    .withInitialSql(
-                            "CREATE TABLE Person(personId INTEGER PRIMARY KEY, lastName VARCHAR(512)"
-                                    + ", firstName VARCHAR(512)); "
-                                    + "INSERT INTO Person(personId, lastName, firstName) "
-                                    + "VALUES (1, 'Wang', 'Allen'); "
-                                    + "INSERT INTO Person(personId, lastName, firstName) "
-                                    + "VALUES (2, 'Alice', 'Bob'); "
-                                    + "CREATE TABLE Address(addressId INTEGER PRIMARY KEY, personId INTEGER"
-                                    + ", city VARCHAR(512), state VARCHAR(512)); "
-                                    + "INSERT INTO Address(addressId, personId, city, state) "
-                                    + "VALUES (1, 2, 'New York City', 'New York'); "
-                                    + "INSERT INTO Address(addressId, personId, city, state) "
-                                    + "VALUES (2, 3, 'Leetcode', 'California'); ")
-                    .build();
-
     @Test
-    void testScript() throws SQLException, FileNotFoundException {
-        try (final Connection connection =
-                DriverManager.getConnection(embeddedDatabaseExtension.getConnectionJdbcUrl())) {
+    void testScript(@EmbeddedDatabase DataSource dataSource)
+            throws SQLException, FileNotFoundException {
+        try (final Connection connection = dataSource.getConnection()) {
             try (final Statement statement = connection.createStatement();
                     final ResultSet resultSet =
                             statement.executeQuery(
