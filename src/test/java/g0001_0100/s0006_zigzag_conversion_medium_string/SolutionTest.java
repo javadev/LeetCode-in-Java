@@ -1,4 +1,4 @@
-package g0001_0100.s0006_zigzag_conversion;
+package g0001_0100.s0006_zigzag_conversion_medium_string;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0001_0100.s0008_string_to_integer_atoi;
+package g0001_0100.s0008_string_to_integer_atoi_medium_top_interview_questions_string;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

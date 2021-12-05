@@ -1,4 +1,4 @@
-package g0001_0100.s0009_palindrome_number;
+package g0001_0100.s0009_palindrome_number_easy_math;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

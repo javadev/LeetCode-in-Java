@@ -1,4 +1,4 @@
-package g0001_0100.s0004_median_of_two_sorted_arrays;
+package g0001_0100.s0004_median_of_two_sorted_arrays_hard_top_100_liked_questions_top_interview_questions_array_binary_search_divide_and_conquer;
 
 import java.util.ArrayList;
 import java.util.Collections;

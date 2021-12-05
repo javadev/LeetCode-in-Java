@@ -1,4 +1,4 @@
-package g0001_0100.s0005_longest_palindromic_substring;
+package g0001_0100.s0005_longest_palindromic_substring_medium_top_100_liked_questions_top_interview_questions_string_dynamic_programming;
 
 public class Solution {
     public String longestPalindrome(String s) {

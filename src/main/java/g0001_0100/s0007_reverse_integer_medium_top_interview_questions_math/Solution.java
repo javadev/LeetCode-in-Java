@@ -1,4 +1,4 @@
-package g0001_0100.s0007_reverse_integer;
+package g0001_0100.s0007_reverse_integer_medium_top_interview_questions_math;
 
 public class Solution {
     public int reverse(int x) {
