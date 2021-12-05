@@ -1,4 +1,4 @@
-package g0001_0100.s0060_permutation_sequence;
+package g0001_0100.s0060_permutation_sequence_hard_math_recursion;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

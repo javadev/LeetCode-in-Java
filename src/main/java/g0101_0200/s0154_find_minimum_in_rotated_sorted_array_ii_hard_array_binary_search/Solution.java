@@ -1,4 +1,4 @@
-package g0101_0200.s0154_find_minimum_in_rotated_sorted_array_ii;
+package g0101_0200.s0154_find_minimum_in_rotated_sorted_array_ii_hard_array_binary_search;
 
 public class Solution {
     public int findMin(int[] nums) {

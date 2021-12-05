@@ -1,4 +1,4 @@
-package g0001_0100.s0063_unique_paths_ii;
+package g0001_0100.s0063_unique_paths_ii_medium_array_dynamic_programming_matrix;
 
 public class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {

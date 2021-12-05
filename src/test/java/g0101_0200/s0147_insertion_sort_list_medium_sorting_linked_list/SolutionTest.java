@@ -1,4 +1,4 @@
-package g0101_0200.s0147_insertion_sort_list;
+package g0101_0200.s0147_insertion_sort_list_medium_sorting_linked_list;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

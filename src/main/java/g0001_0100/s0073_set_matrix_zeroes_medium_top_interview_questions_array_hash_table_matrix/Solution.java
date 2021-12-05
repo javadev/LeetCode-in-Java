@@ -1,4 +1,4 @@
-package g0001_0100.s0073_set_matrix_zeroes;
+package g0001_0100.s0073_set_matrix_zeroes_medium_top_interview_questions_array_hash_table_matrix;
 
 public class Solution {
     // Approach: Use first row and first column for storing whether in future

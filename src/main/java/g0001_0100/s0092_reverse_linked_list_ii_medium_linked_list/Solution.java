@@ -1,4 +1,4 @@
-package g0001_0100.s0092_reverse_linked_list_ii;
+package g0001_0100.s0092_reverse_linked_list_ii_medium_linked_list;
 
 import com_github_leetcode.ListNode;
 

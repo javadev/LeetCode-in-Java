@@ -1,4 +1,4 @@
-package g0101_0200.s0109_convert_sorted_list_to_binary_search_tree;
+package g0101_0200.s0109_convert_sorted_list_to_binary_search_tree_medium_tree_binary_tree_linked_list_binary_search_tree_divide_and_conquer;
 
 import com_github_leetcode.ListNode;
 import com_github_leetcode.TreeNode;

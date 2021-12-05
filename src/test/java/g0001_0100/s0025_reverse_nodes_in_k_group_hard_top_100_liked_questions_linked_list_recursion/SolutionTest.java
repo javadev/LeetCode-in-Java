@@ -1,4 +1,4 @@
-package g0001_0100.s0025_reverse_nodes_in_k_group;
+package g0001_0100.s0025_reverse_nodes_in_k_group_hard_top_100_liked_questions_linked_list_recursion;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

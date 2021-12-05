@@ -1,4 +1,4 @@
-package g0101_0200.s0178_rank_scores;
+package g0101_0200.s0178_rank_scores_medium_database;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -42,7 +42,7 @@ public class MysqlTest {
                                     new BufferedReader(
                                                     new FileReader(
                                                             "src/main/java/g0101_0200/"
-                                                                    + "s0178_rank_scores/script.sql"))
+                                                                    + "s0178_rank_scores_medium_database/script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {

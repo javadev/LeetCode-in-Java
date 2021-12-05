@@ -1,4 +1,4 @@
-package g0201_0300.s0204_count_primes;
+package g0201_0300.s0204_count_primes_medium_top_interview_questions_array_math_enumeration_number_theory;
 
 public class Solution {
     public int countPrimes(int n) {

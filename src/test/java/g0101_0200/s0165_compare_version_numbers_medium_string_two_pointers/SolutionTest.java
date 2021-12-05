@@ -1,4 +1,4 @@
-package g0101_0200.s0165_compare_version_numbers;
+package g0101_0200.s0165_compare_version_numbers_medium_string_two_pointers;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

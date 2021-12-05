@@ -1,4 +1,4 @@
-package g0001_0100.s0019_remove_nth_node_from_end_of_list;
+package g0001_0100.s0019_remove_nth_node_from_end_of_list_medium_top_100_liked_questions_top_interview_questions_two_pointers_linked_list;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

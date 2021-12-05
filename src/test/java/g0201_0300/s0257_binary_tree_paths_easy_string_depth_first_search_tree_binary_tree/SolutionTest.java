@@ -1,4 +1,4 @@
-package g0201_0300.s0257_binary_tree_paths;
+package g0201_0300.s0257_binary_tree_paths_easy_string_depth_first_search_tree_binary_tree;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

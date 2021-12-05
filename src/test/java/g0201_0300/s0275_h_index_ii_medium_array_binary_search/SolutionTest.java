@@ -1,4 +1,4 @@
-package g0201_0300.s0275_h_index_ii;
+package g0201_0300.s0275_h_index_ii_medium_array_binary_search;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

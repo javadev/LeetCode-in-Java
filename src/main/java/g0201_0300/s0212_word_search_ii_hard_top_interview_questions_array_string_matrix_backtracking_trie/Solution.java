@@ -1,4 +1,4 @@
-package g0201_0300.s0212_word_search_ii;
+package g0201_0300.s0212_word_search_ii_hard_top_interview_questions_array_string_matrix_backtracking_trie;
 
 import java.util.ArrayList;
 import java.util.Collections;

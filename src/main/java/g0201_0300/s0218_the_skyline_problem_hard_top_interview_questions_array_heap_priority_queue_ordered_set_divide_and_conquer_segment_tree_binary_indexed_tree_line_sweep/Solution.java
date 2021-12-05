@@ -1,4 +1,4 @@
-package g0201_0300.s0218_the_skyline_problem;
+package g0201_0300.s0218_the_skyline_problem_hard_top_interview_questions_array_heap_priority_queue_ordered_set_divide_and_conquer_segment_tree_binary_indexed_tree_line_sweep;
 
 import java.util.ArrayList;
 import java.util.Arrays;

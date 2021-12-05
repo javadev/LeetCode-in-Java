@@ -1,4 +1,4 @@
-package g0101_0200.s0137_single_number_ii;
+package g0101_0200.s0137_single_number_ii_medium_array_bit_manipulation;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0301_0400.s0334_increasing_triplet_subsequence;
+package g0301_0400.s0334_increasing_triplet_subsequence_medium_top_interview_questions_array_greedy;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

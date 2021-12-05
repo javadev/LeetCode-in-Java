@@ -1,4 +1,4 @@
-package g0201_0300.s0264_ugly_number_ii;
+package g0201_0300.s0264_ugly_number_ii_medium_dynamic_programming_hash_table_math_heap_priority_queue;
 
 public class Solution {
     public int nthUglyNumber(int n) {

@@ -1,4 +1,4 @@
-package g0101_0200.s0116_populating_next_right_pointers_in_each_node;
+package g0101_0200.s0116_populating_next_right_pointers_in_each_node_medium_top_interview_questions_depth_first_search_breadth_first_search_tree_binary_tree;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

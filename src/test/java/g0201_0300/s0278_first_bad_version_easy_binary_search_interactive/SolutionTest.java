@@ -1,4 +1,4 @@
-package g0201_0300.s0278_first_bad_version;
+package g0201_0300.s0278_first_bad_version_easy_binary_search_interactive;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

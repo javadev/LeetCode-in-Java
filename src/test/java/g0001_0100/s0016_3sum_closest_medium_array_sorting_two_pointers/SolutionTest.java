@@ -1,4 +1,4 @@
-package g0001_0100.s0016_3sum_closest;
+package g0001_0100.s0016_3sum_closest_medium_array_sorting_two_pointers;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

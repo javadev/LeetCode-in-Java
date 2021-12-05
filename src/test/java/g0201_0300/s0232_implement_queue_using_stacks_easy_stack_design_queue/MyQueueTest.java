@@ -1,4 +1,4 @@
-package g0201_0300.s0232_implement_queue_using_stacks;
+package g0201_0300.s0232_implement_queue_using_stacks_easy_stack_design_queue;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

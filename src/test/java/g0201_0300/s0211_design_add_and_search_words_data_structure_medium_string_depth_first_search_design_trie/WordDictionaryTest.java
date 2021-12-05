@@ -1,4 +1,4 @@
-package g0201_0300.s0211_design_add_and_search_words_data_structure;
+package g0201_0300.s0211_design_add_and_search_words_data_structure_medium_string_depth_first_search_design_trie;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

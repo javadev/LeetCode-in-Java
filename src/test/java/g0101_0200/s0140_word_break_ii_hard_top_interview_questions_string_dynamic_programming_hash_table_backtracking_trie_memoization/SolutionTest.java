@@ -1,4 +1,4 @@
-package g0101_0200.s0140_word_break_ii;
+package g0101_0200.s0140_word_break_ii_hard_top_interview_questions_string_dynamic_programming_hash_table_backtracking_trie_memoization;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0101_0200.s0113_path_sum_ii;
+package g0101_0200.s0113_path_sum_ii_medium_depth_first_search_tree_binary_tree_backtracking;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

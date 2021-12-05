@@ -1,4 +1,4 @@
-package g0101_0200.s0119_pascals_triangle_ii;
+package g0101_0200.s0119_pascals_triangle_ii_easy_array_dynamic_programming;
 
 import java.util.ArrayList;
 import java.util.List;

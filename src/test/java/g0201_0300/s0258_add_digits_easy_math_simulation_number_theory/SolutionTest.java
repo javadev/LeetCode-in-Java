@@ -1,4 +1,4 @@
-package g0201_0300.s0258_add_digits;
+package g0201_0300.s0258_add_digits_easy_math_simulation_number_theory;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

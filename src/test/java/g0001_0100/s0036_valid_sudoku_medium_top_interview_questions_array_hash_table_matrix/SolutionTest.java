@@ -1,4 +1,4 @@
-package g0001_0100.s0036_valid_sudoku;
+package g0001_0100.s0036_valid_sudoku_medium_top_interview_questions_array_hash_table_matrix;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

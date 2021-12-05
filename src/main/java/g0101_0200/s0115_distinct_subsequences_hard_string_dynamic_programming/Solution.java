@@ -1,4 +1,4 @@
-package g0101_0200.s0115_distinct_subsequences;
+package g0101_0200.s0115_distinct_subsequences_hard_string_dynamic_programming;
 
 public class Solution {
     public int numDistinct(String text, String text2) {

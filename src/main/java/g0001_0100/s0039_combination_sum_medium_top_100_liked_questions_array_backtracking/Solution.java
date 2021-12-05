@@ -1,4 +1,4 @@
-package g0001_0100.s0039_combination_sum;
+package g0001_0100.s0039_combination_sum_medium_top_100_liked_questions_array_backtracking;
 
 import java.util.ArrayList;
 import java.util.List;

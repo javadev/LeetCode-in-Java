@@ -1,4 +1,4 @@
-package g0201_0300.s0203_remove_linked_list_elements;
+package g0201_0300.s0203_remove_linked_list_elements_easy_linked_list_recursion;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

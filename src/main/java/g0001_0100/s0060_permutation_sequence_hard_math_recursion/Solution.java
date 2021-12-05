@@ -1,4 +1,4 @@
-package g0001_0100.s0060_permutation_sequence;
+package g0001_0100.s0060_permutation_sequence_hard_math_recursion;
 
 public class Solution {
     public String getPermutation(int n, int k) {

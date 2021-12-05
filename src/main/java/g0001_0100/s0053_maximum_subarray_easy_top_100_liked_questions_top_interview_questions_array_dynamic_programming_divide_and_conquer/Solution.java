@@ -1,4 +1,4 @@
-package g0001_0100.s0053_maximum_subarray;
+package g0001_0100.s0053_maximum_subarray_easy_top_100_liked_questions_top_interview_questions_array_dynamic_programming_divide_and_conquer;
 
 public class Solution {
     public int maxSubArray(int[] nums) {

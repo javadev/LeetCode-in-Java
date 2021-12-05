@@ -1,4 +1,4 @@
-package g0101_0200.s0190_reverse_bits;
+package g0101_0200.s0190_reverse_bits_easy_top_interview_questions_bit_manipulation_divide_and_conquer;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

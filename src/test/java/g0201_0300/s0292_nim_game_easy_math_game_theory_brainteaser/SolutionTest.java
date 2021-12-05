@@ -1,4 +1,4 @@
-package g0201_0300.s0292_nim_game;
+package g0201_0300.s0292_nim_game_easy_math_game_theory_brainteaser;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0101_0200.s0164_maximum_gap;
+package g0101_0200.s0164_maximum_gap_hard_array_sorting_bucket_sort_radix_sort;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

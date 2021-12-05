@@ -1,4 +1,4 @@
-package g0101_0200.s0110_balanced_binary_tree;
+package g0101_0200.s0110_balanced_binary_tree_easy_depth_first_search_tree_binary_tree;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

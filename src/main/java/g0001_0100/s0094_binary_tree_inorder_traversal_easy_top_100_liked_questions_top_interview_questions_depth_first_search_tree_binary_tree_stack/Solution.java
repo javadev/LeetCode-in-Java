@@ -1,4 +1,4 @@
-package g0001_0100.s0094_binary_tree_inorder_traversal;
+package g0001_0100.s0094_binary_tree_inorder_traversal_easy_top_100_liked_questions_top_interview_questions_depth_first_search_tree_binary_tree_stack;
 
 import com_github_leetcode.TreeNode;
 import java.util.ArrayList;

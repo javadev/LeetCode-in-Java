@@ -1,4 +1,4 @@
-package g0101_0200.s0138_copy_list_with_random_pointer;
+package g0101_0200.s0138_copy_list_with_random_pointer_medium_top_100_liked_questions_top_interview_questions_hash_table_linked_list;
 
 import com_github_leetcode.random.Node;
 

@@ -1,4 +1,4 @@
-package g0301_0400.s0332_reconstruct_itinerary;
+package g0301_0400.s0332_reconstruct_itinerary_hard_depth_first_search_graph_eulerian_circuit;
 
 import java.util.HashMap;
 import java.util.LinkedList;

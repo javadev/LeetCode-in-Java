@@ -1,4 +1,4 @@
-package g0201_0300.s0274_h_index;
+package g0201_0300.s0274_h_index_medium_array_sorting_counting_sort;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

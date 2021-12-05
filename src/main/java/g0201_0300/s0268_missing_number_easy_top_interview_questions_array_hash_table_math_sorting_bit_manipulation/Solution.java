@@ -1,4 +1,4 @@
-package g0201_0300.s0268_missing_number;
+package g0201_0300.s0268_missing_number_easy_top_interview_questions_array_hash_table_math_sorting_bit_manipulation;
 
 public class Solution {
     public int missingNumber(int[] nums) {

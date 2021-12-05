@@ -1,4 +1,4 @@
-package g0001_0100.s0099_recover_binary_search_tree;
+package g0001_0100.s0099_recover_binary_search_tree_medium_depth_first_search_tree_binary_tree_binary_search_tree;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

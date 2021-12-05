@@ -1,4 +1,4 @@
-package g0001_0100.s0014_longest_common_prefix;
+package g0001_0100.s0014_longest_common_prefix_easy_top_interview_questions_string;
 
 public class Solution {
     public String longestCommonPrefix(String[] strs) {

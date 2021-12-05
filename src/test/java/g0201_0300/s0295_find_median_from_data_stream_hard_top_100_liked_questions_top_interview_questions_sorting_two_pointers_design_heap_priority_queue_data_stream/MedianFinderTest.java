@@ -1,4 +1,4 @@
-package g0201_0300.s0295_find_median_from_data_stream;
+package g0201_0300.s0295_find_median_from_data_stream_hard_top_100_liked_questions_top_interview_questions_sorting_two_pointers_design_heap_priority_queue_data_stream;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

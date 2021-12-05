@@ -1,4 +1,4 @@
-package g0201_0300.s0289_game_of_life;
+package g0201_0300.s0289_game_of_life_medium_top_interview_questions_array_matrix_simulation;
 
 public class Solution {
     public void gameOfLife(int[][] board) {

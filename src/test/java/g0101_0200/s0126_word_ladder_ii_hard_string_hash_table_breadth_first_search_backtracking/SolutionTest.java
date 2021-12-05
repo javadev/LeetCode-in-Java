@@ -1,4 +1,4 @@
-package g0101_0200.s0126_word_ladder_ii;
+package g0101_0200.s0126_word_ladder_ii_hard_string_hash_table_breadth_first_search_backtracking;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0101_0200.s0133_clone_graph;
+package g0101_0200.s0133_clone_graph_medium_hash_table_depth_first_search_breadth_first_search_graph;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

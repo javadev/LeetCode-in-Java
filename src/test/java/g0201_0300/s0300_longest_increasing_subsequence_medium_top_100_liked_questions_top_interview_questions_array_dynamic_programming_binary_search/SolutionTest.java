@@ -1,4 +1,4 @@
-package g0201_0300.s0300_longest_increasing_subsequence;
+package g0201_0300.s0300_longest_increasing_subsequence_medium_top_100_liked_questions_top_interview_questions_array_dynamic_programming_binary_search;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

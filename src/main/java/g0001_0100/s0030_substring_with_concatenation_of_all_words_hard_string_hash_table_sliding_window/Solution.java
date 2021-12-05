@@ -1,4 +1,4 @@
-package g0001_0100.s0030_substring_with_concatenation_of_all_words;
+package g0001_0100.s0030_substring_with_concatenation_of_all_words_hard_string_hash_table_sliding_window;
 
 import java.util.*;
 

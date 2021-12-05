@@ -1,4 +1,4 @@
-package g0001_0100.s0018_4sum;
+package g0001_0100.s0018_4sum_medium_array_sorting_two_pointers;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

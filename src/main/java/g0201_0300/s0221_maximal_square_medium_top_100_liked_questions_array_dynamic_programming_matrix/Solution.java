@@ -1,4 +1,4 @@
-package g0201_0300.s0221_maximal_square;
+package g0201_0300.s0221_maximal_square_medium_top_100_liked_questions_array_dynamic_programming_matrix;
 
 public class Solution {
     public int maximalSquare(char[][] matrix) {

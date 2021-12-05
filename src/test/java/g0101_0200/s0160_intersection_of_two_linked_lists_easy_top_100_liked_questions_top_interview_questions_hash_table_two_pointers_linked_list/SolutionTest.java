@@ -1,4 +1,4 @@
-package g0101_0200.s0160_intersection_of_two_linked_lists;
+package g0101_0200.s0160_intersection_of_two_linked_lists_easy_top_100_liked_questions_top_interview_questions_hash_table_two_pointers_linked_list;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

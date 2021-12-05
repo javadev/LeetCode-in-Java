@@ -1,4 +1,4 @@
-package g0201_0300.s0231_power_of_two;
+package g0201_0300.s0231_power_of_two_easy_math_bit_manipulation_recursion;
 
 public class Solution {
     public boolean isPowerOfTwo(int n) {

@@ -1,4 +1,4 @@
-package g0201_0300.s0223_rectangle_area;
+package g0201_0300.s0223_rectangle_area_medium_math_geometry;
 
 @SuppressWarnings("java:S107")
 public class Solution {

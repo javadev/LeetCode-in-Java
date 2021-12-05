@@ -1,4 +1,4 @@
-package g0201_0300.s0236_lowest_common_ancestor_of_a_binary_tree;
+package g0201_0300.s0236_lowest_common_ancestor_of_a_binary_tree_medium_top_100_liked_questions_top_interview_questions_depth_first_search_tree_binary_tree;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

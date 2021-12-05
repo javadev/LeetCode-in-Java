@@ -1,4 +1,4 @@
-package g0101_0200.s0171_excel_sheet_column_number;
+package g0101_0200.s0171_excel_sheet_column_number_easy_top_interview_questions_string_math;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

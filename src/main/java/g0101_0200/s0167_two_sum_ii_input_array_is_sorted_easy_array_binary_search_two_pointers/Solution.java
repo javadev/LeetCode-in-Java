@@ -1,4 +1,4 @@
-package g0101_0200.s0167_two_sum_ii_input_array_is_sorted;
+package g0101_0200.s0167_two_sum_ii_input_array_is_sorted_easy_array_binary_search_two_pointers;
 
 public class Solution {
     public int[] twoSum(int[] numbers, int target) {

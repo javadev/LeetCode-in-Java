@@ -1,4 +1,4 @@
-package g0001_0100.s0042_trapping_rain_water;
+package g0001_0100.s0042_trapping_rain_water_hard_top_100_liked_questions_top_interview_questions_array_dynamic_programming_two_pointers_stack_monotonic_stack;
 
 public class Solution {
     public int trap(int[] height) {

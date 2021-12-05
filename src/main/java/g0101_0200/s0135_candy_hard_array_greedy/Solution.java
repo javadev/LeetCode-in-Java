@@ -1,4 +1,4 @@
-package g0101_0200.s0135_candy;
+package g0101_0200.s0135_candy_hard_array_greedy;
 
 public class Solution {
     public int candy(int[] ratings) {

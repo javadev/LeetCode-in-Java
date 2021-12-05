@@ -1,4 +1,4 @@
-package g0101_0200.s0134_gas_station;
+package g0101_0200.s0134_gas_station_medium_top_interview_questions_array_greedy;
 
 public class Solution {
     public int canCompleteCircuit(int[] gas, int[] cost) {

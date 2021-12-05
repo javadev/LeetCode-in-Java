@@ -1,4 +1,4 @@
-package g0101_0200.s0127_word_ladder;
+package g0101_0200.s0127_word_ladder_hard_top_interview_questions_string_hash_table_breadth_first_search;
 
 import java.util.HashSet;
 import java.util.List;

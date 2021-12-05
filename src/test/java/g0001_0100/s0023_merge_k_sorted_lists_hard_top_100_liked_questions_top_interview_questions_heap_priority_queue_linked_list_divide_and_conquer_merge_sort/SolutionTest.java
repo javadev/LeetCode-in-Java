@@ -1,4 +1,4 @@
-package g0001_0100.s0023_merge_k_sorted_lists;
+package g0001_0100.s0023_merge_k_sorted_lists_hard_top_100_liked_questions_top_interview_questions_heap_priority_queue_linked_list_divide_and_conquer_merge_sort;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

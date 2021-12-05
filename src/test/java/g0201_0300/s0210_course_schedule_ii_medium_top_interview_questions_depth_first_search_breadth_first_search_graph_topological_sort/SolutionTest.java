@@ -1,4 +1,4 @@
-package g0201_0300.s0210_course_schedule_ii;
+package g0201_0300.s0210_course_schedule_ii_medium_top_interview_questions_depth_first_search_breadth_first_search_graph_topological_sort;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0001_0100.s0044_wildcard_matching;
+package g0001_0100.s0044_wildcard_matching_hard_top_interview_questions_string_dynamic_programming_greedy_recursion;
 
 public class Solution {
     public boolean isMatch(String inputString, String pattern) {

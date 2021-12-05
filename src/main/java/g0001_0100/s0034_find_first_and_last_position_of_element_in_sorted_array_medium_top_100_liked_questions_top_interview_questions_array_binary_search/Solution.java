@@ -1,4 +1,4 @@
-package g0001_0100.s0034_find_first_and_last_position_of_element_in_sorted_array;
+package g0001_0100.s0034_find_first_and_last_position_of_element_in_sorted_array_medium_top_100_liked_questions_top_interview_questions_array_binary_search;
 
 @SuppressWarnings("unused")
 public class Solution {

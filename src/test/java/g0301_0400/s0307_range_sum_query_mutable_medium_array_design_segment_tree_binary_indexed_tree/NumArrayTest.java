@@ -1,4 +1,4 @@
-package g0301_0400.s0307_range_sum_query_mutable;
+package g0301_0400.s0307_range_sum_query_mutable_medium_array_design_segment_tree_binary_indexed_tree;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

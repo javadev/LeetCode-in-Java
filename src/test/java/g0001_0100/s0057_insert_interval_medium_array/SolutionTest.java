@@ -1,4 +1,4 @@
-package g0001_0100.s0057_insert_interval;
+package g0001_0100.s0057_insert_interval_medium_array;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

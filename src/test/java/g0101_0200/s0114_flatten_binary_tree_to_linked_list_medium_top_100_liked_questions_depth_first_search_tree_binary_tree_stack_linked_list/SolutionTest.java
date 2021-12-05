@@ -1,4 +1,4 @@
-package g0101_0200.s0114_flatten_binary_tree_to_linked_list;
+package g0101_0200.s0114_flatten_binary_tree_to_linked_list_medium_top_100_liked_questions_depth_first_search_tree_binary_tree_stack_linked_list;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

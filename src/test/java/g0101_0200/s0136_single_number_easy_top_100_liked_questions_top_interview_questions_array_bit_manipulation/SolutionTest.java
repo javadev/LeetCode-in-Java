@@ -1,4 +1,4 @@
-package g0101_0200.s0136_single_number;
+package g0101_0200.s0136_single_number_easy_top_100_liked_questions_top_interview_questions_array_bit_manipulation;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

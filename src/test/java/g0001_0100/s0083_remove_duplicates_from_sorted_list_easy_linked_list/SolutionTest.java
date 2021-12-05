@@ -1,4 +1,4 @@
-package g0001_0100.s0083_remove_duplicates_from_sorted_list;
+package g0001_0100.s0083_remove_duplicates_from_sorted_list_easy_linked_list;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

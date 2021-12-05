@@ -1,4 +1,4 @@
-package g0201_0300.s0290_word_pattern;
+package g0201_0300.s0290_word_pattern_easy_string_hash_table;
 
 import java.util.HashMap;
 import java.util.Map;

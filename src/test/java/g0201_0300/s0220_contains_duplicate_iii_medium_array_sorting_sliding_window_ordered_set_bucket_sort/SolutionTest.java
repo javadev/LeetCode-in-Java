@@ -1,4 +1,4 @@
-package g0201_0300.s0220_contains_duplicate_iii;
+package g0201_0300.s0220_contains_duplicate_iii_medium_array_sorting_sliding_window_ordered_set_bucket_sort;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

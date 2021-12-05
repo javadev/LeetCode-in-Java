@@ -1,4 +1,4 @@
-package g0101_0200.s0168_excel_sheet_column_title;
+package g0101_0200.s0168_excel_sheet_column_title_easy_string_math;
 
 public class Solution {
     public String convertToTitle(int n) {

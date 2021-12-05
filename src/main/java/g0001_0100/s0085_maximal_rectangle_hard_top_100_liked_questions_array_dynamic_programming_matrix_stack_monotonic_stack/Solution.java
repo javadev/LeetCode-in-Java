@@ -1,4 +1,4 @@
-package g0001_0100.s0085_maximal_rectangle;
+package g0001_0100.s0085_maximal_rectangle_hard_top_100_liked_questions_array_dynamic_programming_matrix_stack_monotonic_stack;
 
 public class Solution {
     public int maximalRectangle(char[][] matrix) {

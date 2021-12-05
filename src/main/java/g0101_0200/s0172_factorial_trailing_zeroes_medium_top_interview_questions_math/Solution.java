@@ -1,4 +1,4 @@
-package g0101_0200.s0172_factorial_trailing_zeroes;
+package g0101_0200.s0172_factorial_trailing_zeroes_medium_top_interview_questions_math;
 
 public class Solution {
 

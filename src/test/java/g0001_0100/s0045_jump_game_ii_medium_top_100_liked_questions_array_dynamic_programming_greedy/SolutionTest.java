@@ -1,4 +1,4 @@
-package g0001_0100.s0045_jump_game_ii;
+package g0001_0100.s0045_jump_game_ii_medium_top_100_liked_questions_array_dynamic_programming_greedy;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

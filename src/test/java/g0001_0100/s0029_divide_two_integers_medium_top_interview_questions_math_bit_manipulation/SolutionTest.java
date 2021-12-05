@@ -1,4 +1,4 @@
-package g0001_0100.s0029_divide_two_integers;
+package g0001_0100.s0029_divide_two_integers_medium_top_interview_questions_math_bit_manipulation;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

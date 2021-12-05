@@ -1,4 +1,4 @@
-package g0001_0100.s0047_permutations_ii;
+package g0001_0100.s0047_permutations_ii_medium_array_backtracking;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

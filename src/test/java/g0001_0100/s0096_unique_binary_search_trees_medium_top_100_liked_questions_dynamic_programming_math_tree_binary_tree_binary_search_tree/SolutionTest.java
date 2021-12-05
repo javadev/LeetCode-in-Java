@@ -1,4 +1,4 @@
-package g0001_0100.s0096_unique_binary_search_trees;
+package g0001_0100.s0096_unique_binary_search_trees_medium_top_100_liked_questions_dynamic_programming_math_tree_binary_tree_binary_search_tree;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0001_0100.s0048_rotate_image;
+package g0001_0100.s0048_rotate_image_medium_top_100_liked_questions_top_interview_questions_array_math_matrix;
 
 public class Solution {
     public void rotate(int[][] matrix) {

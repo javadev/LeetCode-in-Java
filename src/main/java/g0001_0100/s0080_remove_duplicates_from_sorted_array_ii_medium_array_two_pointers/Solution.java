@@ -1,4 +1,4 @@
-package g0001_0100.s0080_remove_duplicates_from_sorted_array_ii;
+package g0001_0100.s0080_remove_duplicates_from_sorted_array_ii_medium_array_two_pointers;
 
 public class Solution {
     public int removeDuplicates(int[] nums) {

@@ -1,4 +1,4 @@
-package g0101_0200.s0199_binary_tree_right_side_view;
+package g0101_0200.s0199_binary_tree_right_side_view_medium_top_100_liked_questions_depth_first_search_breadth_first_search_tree_binary_tree;
 
 import com_github_leetcode.TreeNode;
 import java.util.ArrayList;

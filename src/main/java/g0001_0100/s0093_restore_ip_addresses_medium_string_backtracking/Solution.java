@@ -1,4 +1,4 @@
-package g0001_0100.s0093_restore_ip_addresses;
+package g0001_0100.s0093_restore_ip_addresses_medium_string_backtracking;
 
 import java.util.ArrayList;
 import java.util.List;

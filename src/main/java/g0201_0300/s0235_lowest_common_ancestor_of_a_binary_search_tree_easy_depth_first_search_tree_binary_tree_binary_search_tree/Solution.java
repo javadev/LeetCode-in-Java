@@ -1,4 +1,4 @@
-package g0201_0300.s0235_lowest_common_ancestor_of_a_binary_search_tree;
+package g0201_0300.s0235_lowest_common_ancestor_of_a_binary_search_tree_easy_depth_first_search_tree_binary_tree_binary_search_tree;
 
 import com_github_leetcode.TreeNode;
 

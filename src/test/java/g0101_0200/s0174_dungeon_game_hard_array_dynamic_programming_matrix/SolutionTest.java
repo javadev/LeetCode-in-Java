@@ -1,4 +1,4 @@
-package g0101_0200.s0174_dungeon_game;
+package g0101_0200.s0174_dungeon_game_hard_array_dynamic_programming_matrix;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

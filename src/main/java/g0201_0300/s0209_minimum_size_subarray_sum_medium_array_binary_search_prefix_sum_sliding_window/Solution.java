@@ -1,4 +1,4 @@
-package g0201_0300.s0209_minimum_size_subarray_sum;
+package g0201_0300.s0209_minimum_size_subarray_sum_medium_array_binary_search_prefix_sum_sliding_window;
 
 public class Solution {
     public int minSubArrayLen(int target, int[] nums) {

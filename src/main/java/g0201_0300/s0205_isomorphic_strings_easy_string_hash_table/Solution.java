@@ -1,4 +1,4 @@
-package g0201_0300.s0205_isomorphic_strings;
+package g0201_0300.s0205_isomorphic_strings_easy_string_hash_table;
 
 public class Solution {
     public boolean isIsomorphic(String s, String t) {

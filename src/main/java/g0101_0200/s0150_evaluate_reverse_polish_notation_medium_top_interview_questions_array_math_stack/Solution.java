@@ -1,4 +1,4 @@
-package g0101_0200.s0150_evaluate_reverse_polish_notation;
+package g0101_0200.s0150_evaluate_reverse_polish_notation_medium_top_interview_questions_array_math_stack;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package g0001_0100.s0098_validate_binary_search_tree;
+package g0001_0100.s0098_validate_binary_search_tree_medium_top_100_liked_questions_top_interview_questions_depth_first_search_tree_binary_tree_binary_search_tree;
 
 import com_github_leetcode.TreeNode;
 

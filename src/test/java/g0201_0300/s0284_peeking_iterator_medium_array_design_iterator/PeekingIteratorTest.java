@@ -1,4 +1,4 @@
-package g0201_0300.s0284_peeking_iterator;
+package g0201_0300.s0284_peeking_iterator_medium_array_design_iterator;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

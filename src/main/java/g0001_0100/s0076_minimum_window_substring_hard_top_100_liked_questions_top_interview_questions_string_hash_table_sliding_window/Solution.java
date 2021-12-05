@@ -1,4 +1,4 @@
-package g0001_0100.s0076_minimum_window_substring;
+package g0001_0100.s0076_minimum_window_substring_hard_top_100_liked_questions_top_interview_questions_string_hash_table_sliding_window;
 
 public class Solution {
     public String minWindow(String s, String t) {

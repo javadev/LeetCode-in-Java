@@ -1,4 +1,4 @@
-package g0101_0200.s0129_sum_root_to_leaf_numbers;
+package g0101_0200.s0129_sum_root_to_leaf_numbers_medium_depth_first_search_tree_binary_tree;
 
 import com_github_leetcode.TreeNode;
 

@@ -1,4 +1,4 @@
-package g0101_0200.s0149_max_points_on_a_line;
+package g0101_0200.s0149_max_points_on_a_line_hard_top_interview_questions_hash_table_math_geometry;
 
 public class Solution {
     public int maxPoints(int[][] points) {

@@ -1,4 +1,4 @@
-package g0001_0100.s0026_remove_duplicates_from_sorted_array;
+package g0001_0100.s0026_remove_duplicates_from_sorted_array_easy_top_interview_questions_array_two_pointers;
 
 public class Solution {
     public int removeDuplicates(int[] nums) {

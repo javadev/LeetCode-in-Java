@@ -1,4 +1,4 @@
-package g0201_0300.s0263_ugly_number;
+package g0201_0300.s0263_ugly_number_easy_math;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

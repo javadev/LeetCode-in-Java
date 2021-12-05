@@ -1,4 +1,4 @@
-package g0001_0100.s0075_sort_colors;
+package g0001_0100.s0075_sort_colors_medium_top_100_liked_questions_top_interview_questions_array_sorting_two_pointers;
 
 public class Solution {
     public void sortColors(int[] nums) {

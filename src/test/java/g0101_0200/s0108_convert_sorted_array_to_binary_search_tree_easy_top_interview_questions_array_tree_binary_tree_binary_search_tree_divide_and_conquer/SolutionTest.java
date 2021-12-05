@@ -1,4 +1,4 @@
-package g0101_0200.s0108_convert_sorted_array_to_binary_search_tree;
+package g0101_0200.s0108_convert_sorted_array_to_binary_search_tree_easy_top_interview_questions_array_tree_binary_tree_binary_search_tree_divide_and_conquer;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

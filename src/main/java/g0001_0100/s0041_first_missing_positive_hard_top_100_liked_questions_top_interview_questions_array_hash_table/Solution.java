@@ -1,4 +1,4 @@
-package g0001_0100.s0041_first_missing_positive;
+package g0001_0100.s0041_first_missing_positive_hard_top_100_liked_questions_top_interview_questions_array_hash_table;
 
 public class Solution {
     public int firstMissingPositive(int[] nums) {

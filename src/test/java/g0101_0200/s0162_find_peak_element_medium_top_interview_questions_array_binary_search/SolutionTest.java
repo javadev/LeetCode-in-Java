@@ -1,4 +1,4 @@
-package g0101_0200.s0162_find_peak_element;
+package g0101_0200.s0162_find_peak_element_medium_top_interview_questions_array_binary_search;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

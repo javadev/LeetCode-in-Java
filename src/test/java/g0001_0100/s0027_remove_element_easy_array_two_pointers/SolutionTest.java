@@ -1,4 +1,4 @@
-package g0001_0100.s0027_remove_element;
+package g0001_0100.s0027_remove_element_easy_array_two_pointers;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

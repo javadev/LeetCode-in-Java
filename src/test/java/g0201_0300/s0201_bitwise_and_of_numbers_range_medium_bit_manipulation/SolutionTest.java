@@ -1,4 +1,4 @@
-package g0201_0300.s0201_bitwise_and_of_numbers_range;
+package g0201_0300.s0201_bitwise_and_of_numbers_range_medium_bit_manipulation;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

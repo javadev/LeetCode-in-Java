@@ -1,4 +1,4 @@
-package g0001_0100.s0031_next_permutation;
+package g0001_0100.s0031_next_permutation_medium_top_100_liked_questions_array_two_pointers;
 
 public class Solution {
     public void nextPermutation(int[] nums) {

@@ -1,4 +1,4 @@
-package g0001_0100.s0090_subsets_ii;
+package g0001_0100.s0090_subsets_ii_medium_array_bit_manipulation_backtracking;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

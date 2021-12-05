@@ -1,4 +1,4 @@
-package g0001_0100.s0095_unique_binary_search_trees_ii;
+package g0001_0100.s0095_unique_binary_search_trees_ii_medium_dynamic_programming_tree_binary_tree_backtracking_binary_search_tree;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

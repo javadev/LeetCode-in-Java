@@ -1,4 +1,4 @@
-package g0001_0100.s0065_valid_number;
+package g0001_0100.s0065_valid_number_hard_string;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

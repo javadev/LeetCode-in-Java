@@ -1,4 +1,4 @@
-package g0101_0200.s0191_number_of_1_bits;
+package g0101_0200.s0191_number_of_1_bits_easy_top_interview_questions_bit_manipulation;
 
 public class Solution {
     public int hammingWeight(int n) {

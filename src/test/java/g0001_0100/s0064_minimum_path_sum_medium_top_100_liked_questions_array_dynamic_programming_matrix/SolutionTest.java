@@ -1,4 +1,4 @@
-package g0001_0100.s0064_minimum_path_sum;
+package g0001_0100.s0064_minimum_path_sum_medium_top_100_liked_questions_array_dynamic_programming_matrix;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0001_0100.s0051_n_queens;
+package g0001_0100.s0051_n_queens_hard_array_backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package g0101_0200.s0174_dungeon_game;
+package g0101_0200.s0174_dungeon_game_hard_array_dynamic_programming_matrix;
 
 public class Solution {
     public int calculateMinimumHP(int[][] dungeon) {

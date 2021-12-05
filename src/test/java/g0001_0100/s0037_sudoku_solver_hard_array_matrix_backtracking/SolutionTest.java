@@ -1,4 +1,4 @@
-package g0001_0100.s0037_sudoku_solver;
+package g0001_0100.s0037_sudoku_solver_hard_array_matrix_backtracking;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

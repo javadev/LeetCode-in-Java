@@ -1,4 +1,4 @@
-package g0101_0200.s0189_rotate_array;
+package g0101_0200.s0189_rotate_array_medium_top_100_liked_questions_top_interview_questions_array_math_two_pointers;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

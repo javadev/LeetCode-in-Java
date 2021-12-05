@@ -1,4 +1,4 @@
-package g0101_0200.s0101_symmetric_tree;
+package g0101_0200.s0101_symmetric_tree_easy_top_100_liked_questions_top_interview_questions_depth_first_search_breadth_first_search_tree_binary_tree;
 
 import com_github_leetcode.TreeNode;
 

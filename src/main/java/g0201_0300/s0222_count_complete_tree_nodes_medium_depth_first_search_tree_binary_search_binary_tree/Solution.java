@@ -1,4 +1,4 @@
-package g0201_0300.s0222_count_complete_tree_nodes;
+package g0201_0300.s0222_count_complete_tree_nodes_medium_depth_first_search_tree_binary_search_binary_tree;
 
 import com_github_leetcode.TreeNode;
 

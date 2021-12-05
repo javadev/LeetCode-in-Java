@@ -1,4 +1,4 @@
-package g0101_0200.s0173_binary_search_tree_iterator;
+package g0101_0200.s0173_binary_search_tree_iterator_medium_tree_binary_tree_stack_design_binary_search_tree_iterator;
 
 import com_github_leetcode.TreeNode;
 

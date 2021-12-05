@@ -1,4 +1,4 @@
-package g0001_0100.s0067_add_binary;
+package g0001_0100.s0067_add_binary_easy_string_math_bit_manipulation_simulation;
 
 public class Solution {
     public String addBinary(String a, String b) {

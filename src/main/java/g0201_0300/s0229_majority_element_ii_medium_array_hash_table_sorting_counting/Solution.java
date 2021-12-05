@@ -1,4 +1,4 @@
-package g0201_0300.s0229_majority_element_ii;
+package g0201_0300.s0229_majority_element_ii_medium_array_hash_table_sorting_counting;
 
 import java.util.ArrayList;
 import java.util.List;

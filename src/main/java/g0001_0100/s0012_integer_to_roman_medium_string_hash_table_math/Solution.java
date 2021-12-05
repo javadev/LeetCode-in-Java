@@ -1,4 +1,4 @@
-package g0001_0100.s0012_integer_to_roman;
+package g0001_0100.s0012_integer_to_roman_medium_string_hash_table_math;
 
 public class Solution {
     public String intToRoman(int num) {

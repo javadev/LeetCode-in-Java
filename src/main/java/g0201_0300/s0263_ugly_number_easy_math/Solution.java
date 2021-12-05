@@ -1,4 +1,4 @@
-package g0201_0300.s0263_ugly_number;
+package g0201_0300.s0263_ugly_number_easy_math;
 
 public class Solution {
     public boolean isUgly(int n) {

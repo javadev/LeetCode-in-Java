@@ -1,4 +1,4 @@
-package g0001_0100.s0091_decode_ways;
+package g0001_0100.s0091_decode_ways_medium_top_interview_questions_string_dynamic_programming;
 
 public class Solution {
     public int numDecodings(String s) {

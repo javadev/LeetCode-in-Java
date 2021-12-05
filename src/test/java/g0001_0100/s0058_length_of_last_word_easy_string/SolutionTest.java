@@ -1,4 +1,4 @@
-package g0001_0100.s0058_length_of_last_word;
+package g0001_0100.s0058_length_of_last_word_easy_string;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0201_0300.s0242_valid_anagram;
+package g0201_0300.s0242_valid_anagram_easy_top_interview_questions_string_hash_table_sorting;
 
 public class Solution {
     public boolean isAnagram(String s, String t) {

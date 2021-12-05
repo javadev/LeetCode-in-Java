@@ -1,4 +1,4 @@
-package g0101_0200.s0137_single_number_ii;
+package g0101_0200.s0137_single_number_ii_medium_array_bit_manipulation;
 
 public class Solution {
     public int singleNumber(int[] nums) {

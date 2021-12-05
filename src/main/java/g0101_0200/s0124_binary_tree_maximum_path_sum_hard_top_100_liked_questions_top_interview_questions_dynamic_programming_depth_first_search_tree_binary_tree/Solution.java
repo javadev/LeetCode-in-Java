@@ -1,4 +1,4 @@
-package g0101_0200.s0124_binary_tree_maximum_path_sum;
+package g0101_0200.s0124_binary_tree_maximum_path_sum_hard_top_100_liked_questions_top_interview_questions_dynamic_programming_depth_first_search_tree_binary_tree;
 
 import com_github_leetcode.TreeNode;
 

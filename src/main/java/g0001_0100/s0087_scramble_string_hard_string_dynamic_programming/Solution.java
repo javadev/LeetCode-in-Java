@@ -1,4 +1,4 @@
-package g0001_0100.s0087_scramble_string;
+package g0001_0100.s0087_scramble_string_hard_string_dynamic_programming;
 
 public class Solution {
     public boolean isScramble(String s1, String s2) {

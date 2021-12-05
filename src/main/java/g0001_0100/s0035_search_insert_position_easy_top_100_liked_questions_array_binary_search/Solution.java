@@ -1,4 +1,4 @@
-package g0001_0100.s0035_search_insert_position;
+package g0001_0100.s0035_search_insert_position_easy_top_100_liked_questions_array_binary_search;
 
 public class Solution {
     public int searchInsert(int[] nums, int target) {

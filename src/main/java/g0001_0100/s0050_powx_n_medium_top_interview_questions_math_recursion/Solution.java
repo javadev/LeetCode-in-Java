@@ -1,4 +1,4 @@
-package g0001_0100.s0050_powx_n;
+package g0001_0100.s0050_powx_n_medium_top_interview_questions_math_recursion;
 
 public class Solution {
     public double myPow(double x, int n) {

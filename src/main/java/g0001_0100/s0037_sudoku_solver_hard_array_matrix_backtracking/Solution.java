@@ -1,4 +1,4 @@
-package g0001_0100.s0037_sudoku_solver;
+package g0001_0100.s0037_sudoku_solver_hard_array_matrix_backtracking;
 
 import java.util.ArrayList;
 import java.util.List;

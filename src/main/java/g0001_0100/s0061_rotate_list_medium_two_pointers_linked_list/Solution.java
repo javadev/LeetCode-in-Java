@@ -1,4 +1,4 @@
-package g0001_0100.s0061_rotate_list;
+package g0001_0100.s0061_rotate_list_medium_two_pointers_linked_list;
 
 import com_github_leetcode.ListNode;
 

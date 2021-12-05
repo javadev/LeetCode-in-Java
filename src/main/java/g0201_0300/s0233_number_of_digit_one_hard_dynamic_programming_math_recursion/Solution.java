@@ -1,4 +1,4 @@
-package g0201_0300.s0233_number_of_digit_one;
+package g0201_0300.s0233_number_of_digit_one_hard_dynamic_programming_math_recursion;
 
 @SuppressWarnings("java:S127")
 public class Solution {

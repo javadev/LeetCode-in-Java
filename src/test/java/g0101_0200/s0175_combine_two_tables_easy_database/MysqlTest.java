@@ -1,4 +1,4 @@
-package g0101_0200.s0175_combine_two_tables;
+package g0101_0200.s0175_combine_two_tables_easy_database;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -47,7 +47,7 @@ public class MysqlTest {
                                     new BufferedReader(
                                                     new FileReader(
                                                             "src/main/java/g0101_0200/"
-                                                                    + "s0175_combine_two_tables/script.sql"))
+                                                                    + "s0175_combine_two_tables_easy_database/script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {

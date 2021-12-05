@@ -1,4 +1,4 @@
-package g0001_0100.s0097_interleaving_string;
+package g0001_0100.s0097_interleaving_string_medium_string_dynamic_programming;
 
 public class Solution {
     public boolean isInterleave(String s1, String s2, String s3) {

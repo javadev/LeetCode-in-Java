@@ -1,4 +1,4 @@
-package g0201_0300.s0213_house_robber_ii;
+package g0201_0300.s0213_house_robber_ii_medium_array_dynamic_programming;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0001_0100.s0038_count_and_say;
+package g0001_0100.s0038_count_and_say_medium_top_interview_questions_string;
 
 public class Solution {
     public String countAndSay(int n) {

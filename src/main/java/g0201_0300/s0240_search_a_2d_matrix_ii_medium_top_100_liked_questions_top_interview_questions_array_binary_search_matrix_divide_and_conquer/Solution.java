@@ -1,4 +1,4 @@
-package g0201_0300.s0240_search_a_2d_matrix_ii;
+package g0201_0300.s0240_search_a_2d_matrix_ii_medium_top_100_liked_questions_top_interview_questions_array_binary_search_matrix_divide_and_conquer;
 
 public class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {

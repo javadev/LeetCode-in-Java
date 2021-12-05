@@ -1,4 +1,4 @@
-package g0201_0300.s0238_product_of_array_except_self;
+package g0201_0300.s0238_product_of_array_except_self_medium_top_100_liked_questions_top_interview_questions_array_prefix_sum;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

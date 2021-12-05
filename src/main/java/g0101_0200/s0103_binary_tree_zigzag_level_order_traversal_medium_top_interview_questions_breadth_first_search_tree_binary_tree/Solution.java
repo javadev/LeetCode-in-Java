@@ -1,4 +1,4 @@
-package g0101_0200.s0103_binary_tree_zigzag_level_order_traversal;
+package g0101_0200.s0103_binary_tree_zigzag_level_order_traversal_medium_top_interview_questions_breadth_first_search_tree_binary_tree;
 
 import com_github_leetcode.TreeNode;
 import java.util.ArrayList;

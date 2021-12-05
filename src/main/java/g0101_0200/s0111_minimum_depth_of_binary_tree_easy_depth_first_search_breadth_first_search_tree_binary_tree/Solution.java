@@ -1,4 +1,4 @@
-package g0101_0200.s0111_minimum_depth_of_binary_tree;
+package g0101_0200.s0111_minimum_depth_of_binary_tree_easy_depth_first_search_breadth_first_search_tree_binary_tree;
 
 import com_github_leetcode.TreeNode;
 import java.util.LinkedList;

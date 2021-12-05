@@ -1,4 +1,4 @@
-package g0101_0200.s0125_valid_palindrome;
+package g0101_0200.s0125_valid_palindrome_easy_top_interview_questions_string_two_pointers;
 
 public class Solution {
     public boolean isPalindrome(String s) {

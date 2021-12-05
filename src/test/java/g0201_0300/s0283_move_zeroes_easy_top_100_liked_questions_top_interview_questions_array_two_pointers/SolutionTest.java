@@ -1,4 +1,4 @@
-package g0201_0300.s0283_move_zeroes;
+package g0201_0300.s0283_move_zeroes_easy_top_100_liked_questions_top_interview_questions_array_two_pointers;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

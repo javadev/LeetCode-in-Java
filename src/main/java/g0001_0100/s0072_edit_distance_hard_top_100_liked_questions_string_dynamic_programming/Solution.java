@@ -1,4 +1,4 @@
-package g0001_0100.s0072_edit_distance;
+package g0001_0100.s0072_edit_distance_hard_top_100_liked_questions_string_dynamic_programming;
 
 @SuppressWarnings("java:S2234")
 public class Solution {

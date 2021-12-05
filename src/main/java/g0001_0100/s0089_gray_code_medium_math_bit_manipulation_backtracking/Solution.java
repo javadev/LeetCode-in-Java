@@ -1,4 +1,4 @@
-package g0001_0100.s0089_gray_code;
+package g0001_0100.s0089_gray_code_medium_math_bit_manipulation_backtracking;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,4 @@
-package g0201_0300.s0282_expression_add_operators;
+package g0201_0300.s0282_expression_add_operators_hard_string_math_backtracking;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

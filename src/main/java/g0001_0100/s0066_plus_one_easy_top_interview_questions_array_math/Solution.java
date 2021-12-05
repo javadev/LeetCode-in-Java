@@ -1,4 +1,4 @@
-package g0001_0100.s0066_plus_one;
+package g0001_0100.s0066_plus_one_easy_top_interview_questions_array_math;
 
 public class Solution {
     public int[] plusOne(int[] digits) {

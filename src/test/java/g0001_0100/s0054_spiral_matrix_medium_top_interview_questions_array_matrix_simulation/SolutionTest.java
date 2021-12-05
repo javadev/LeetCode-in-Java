@@ -1,4 +1,4 @@
-package g0001_0100.s0054_spiral_matrix;
+package g0001_0100.s0054_spiral_matrix_medium_top_interview_questions_array_matrix_simulation;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

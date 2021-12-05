@@ -1,4 +1,4 @@
-package g0001_0100.s0014_longest_common_prefix;
+package g0001_0100.s0014_longest_common_prefix_easy_top_interview_questions_string;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

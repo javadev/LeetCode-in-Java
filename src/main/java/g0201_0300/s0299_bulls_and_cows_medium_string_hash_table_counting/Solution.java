@@ -1,4 +1,4 @@
-package g0201_0300.s0299_bulls_and_cows;
+package g0201_0300.s0299_bulls_and_cows_medium_string_hash_table_counting;
 
 public class Solution {
     public String getHint(String secret, String guess) {

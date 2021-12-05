@@ -1,4 +1,4 @@
-package g0001_0100.s0074_search_a_2d_matrix;
+package g0001_0100.s0074_search_a_2d_matrix_medium_array_binary_search_matrix;
 
 public class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {

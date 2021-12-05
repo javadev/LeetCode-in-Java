@@ -1,4 +1,4 @@
-package g0101_0200.s0132_palindrome_partitioning_ii;
+package g0101_0200.s0132_palindrome_partitioning_ii_hard_string_dynamic_programming;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0001_0100.s0046_permutations;
+package g0001_0100.s0046_permutations_medium_top_100_liked_questions_top_interview_questions_array_backtracking;
 
 import java.util.ArrayList;
 import java.util.List;

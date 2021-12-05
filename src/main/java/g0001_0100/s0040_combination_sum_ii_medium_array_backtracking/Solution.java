@@ -1,4 +1,4 @@
-package g0001_0100.s0040_combination_sum_ii;
+package g0001_0100.s0040_combination_sum_ii_medium_array_backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package g0201_0300.s0279_perfect_squares;
+package g0201_0300.s0279_perfect_squares_medium_top_100_liked_questions_top_interview_questions_dynamic_programming_math_breadth_first_search;
 
 public class Solution {
     private boolean validSquare(int n) {

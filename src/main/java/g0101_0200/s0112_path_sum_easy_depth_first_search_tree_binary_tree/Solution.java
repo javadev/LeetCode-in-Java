@@ -1,4 +1,4 @@
-package g0101_0200.s0112_path_sum;
+package g0101_0200.s0112_path_sum_easy_depth_first_search_tree_binary_tree;
 
 import com_github_leetcode.TreeNode;
 

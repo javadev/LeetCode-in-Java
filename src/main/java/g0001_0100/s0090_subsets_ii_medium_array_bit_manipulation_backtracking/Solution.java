@@ -1,4 +1,4 @@
-package g0001_0100.s0090_subsets_ii;
+package g0001_0100.s0090_subsets_ii_medium_array_bit_manipulation_backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;

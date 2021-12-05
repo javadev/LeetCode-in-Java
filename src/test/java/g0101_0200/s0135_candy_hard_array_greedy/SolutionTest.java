@@ -1,4 +1,4 @@
-package g0101_0200.s0135_candy;
+package g0101_0200.s0135_candy_hard_array_greedy;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

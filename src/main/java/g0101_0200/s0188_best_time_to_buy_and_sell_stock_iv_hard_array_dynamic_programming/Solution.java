@@ -1,4 +1,4 @@
-package g0101_0200.s0188_best_time_to_buy_and_sell_stock_iv;
+package g0101_0200.s0188_best_time_to_buy_and_sell_stock_iv_hard_array_dynamic_programming;
 
 public class Solution {
     public int maxProfit(int k, int[] prices) {

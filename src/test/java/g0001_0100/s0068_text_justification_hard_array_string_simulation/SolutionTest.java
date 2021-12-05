@@ -1,4 +1,4 @@
-package g0001_0100.s0068_text_justification;
+package g0001_0100.s0068_text_justification_hard_array_string_simulation;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

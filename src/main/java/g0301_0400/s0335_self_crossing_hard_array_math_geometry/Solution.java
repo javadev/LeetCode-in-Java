@@ -1,4 +1,4 @@
-package g0301_0400.s0335_self_crossing;
+package g0301_0400.s0335_self_crossing_hard_array_math_geometry;
 
 public class Solution {
 

@@ -1,4 +1,4 @@
-package g0201_0300.s0227_basic_calculator_ii;
+package g0201_0300.s0227_basic_calculator_ii_medium_top_interview_questions_string_math_stack;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

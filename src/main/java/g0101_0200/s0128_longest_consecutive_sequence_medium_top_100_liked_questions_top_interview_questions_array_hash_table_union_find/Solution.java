@@ -1,4 +1,4 @@
-package g0101_0200.s0128_longest_consecutive_sequence;
+package g0101_0200.s0128_longest_consecutive_sequence_medium_top_100_liked_questions_top_interview_questions_array_hash_table_union_find;
 
 import java.util.Arrays;
 

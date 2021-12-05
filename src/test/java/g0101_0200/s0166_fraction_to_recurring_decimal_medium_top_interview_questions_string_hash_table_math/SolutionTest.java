@@ -1,4 +1,4 @@
-package g0101_0200.s0166_fraction_to_recurring_decimal;
+package g0101_0200.s0166_fraction_to_recurring_decimal_medium_top_interview_questions_string_hash_table_math;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

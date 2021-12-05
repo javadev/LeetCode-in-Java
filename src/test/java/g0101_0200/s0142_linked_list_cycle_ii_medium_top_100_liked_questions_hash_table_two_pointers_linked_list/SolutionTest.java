@@ -1,4 +1,4 @@
-package g0101_0200.s0142_linked_list_cycle_ii;
+package g0101_0200.s0142_linked_list_cycle_ii_medium_top_100_liked_questions_hash_table_two_pointers_linked_list;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

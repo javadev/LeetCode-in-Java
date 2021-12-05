@@ -1,4 +1,4 @@
-package g0101_0200.s0120_triangle;
+package g0101_0200.s0120_triangle_medium_array_dynamic_programming;
 
 import java.util.Arrays;
 import java.util.List;

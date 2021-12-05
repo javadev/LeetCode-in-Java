@@ -1,4 +1,4 @@
-package g0201_0300.s0205_isomorphic_strings;
+package g0201_0300.s0205_isomorphic_strings_easy_string_hash_table;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

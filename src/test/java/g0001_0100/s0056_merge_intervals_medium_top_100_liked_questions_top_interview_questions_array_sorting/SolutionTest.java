@@ -1,4 +1,4 @@
-package g0001_0100.s0056_merge_intervals;
+package g0001_0100.s0056_merge_intervals_medium_top_100_liked_questions_top_interview_questions_array_sorting;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

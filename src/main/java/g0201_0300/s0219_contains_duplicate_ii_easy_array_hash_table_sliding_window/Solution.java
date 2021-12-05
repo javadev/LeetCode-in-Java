@@ -1,4 +1,4 @@
-package g0201_0300.s0219_contains_duplicate_ii;
+package g0201_0300.s0219_contains_duplicate_ii_easy_array_hash_table_sliding_window;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package g0001_0100.s0088_merge_sorted_array;
+package g0001_0100.s0088_merge_sorted_array_easy_top_interview_questions_array_sorting_two_pointers;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

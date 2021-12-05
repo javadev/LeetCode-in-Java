@@ -1,4 +1,4 @@
-package g0001_0100.s0086_partition_list;
+package g0001_0100.s0086_partition_list_medium_two_pointers_linked_list;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0001_0100.s0017_letter_combinations_of_a_phone_number;
+package g0001_0100.s0017_letter_combinations_of_a_phone_number_medium_top_100_liked_questions_top_interview_questions_string_hash_table_backtracking;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

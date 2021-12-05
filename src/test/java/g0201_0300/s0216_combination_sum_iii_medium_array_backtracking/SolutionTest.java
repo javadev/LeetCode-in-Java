@@ -1,4 +1,4 @@
-package g0201_0300.s0216_combination_sum_iii;
+package g0201_0300.s0216_combination_sum_iii_medium_array_backtracking;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

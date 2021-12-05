@@ -1,4 +1,4 @@
-package g0101_0200.s0191_number_of_1_bits;
+package g0101_0200.s0191_number_of_1_bits_easy_top_interview_questions_bit_manipulation;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,4 +1,4 @@
-package g0201_0300.s0217_contains_duplicate;
+package g0201_0300.s0217_contains_duplicate_easy_top_interview_questions_array_hash_table_sorting;
 
 import java.util.Arrays;
 

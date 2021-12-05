@@ -1,4 +1,4 @@
-package g0101_0200.s0126_word_ladder_ii;
+package g0101_0200.s0126_word_ladder_ii_hard_string_hash_table_breadth_first_search_backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;

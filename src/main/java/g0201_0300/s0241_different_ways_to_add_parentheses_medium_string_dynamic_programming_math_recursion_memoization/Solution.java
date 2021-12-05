@@ -1,4 +1,4 @@
-package g0201_0300.s0241_different_ways_to_add_parentheses;
+package g0201_0300.s0241_different_ways_to_add_parentheses_medium_string_dynamic_programming_math_recursion_memoization;
 
 import java.util.ArrayList;
 import java.util.HashMap;

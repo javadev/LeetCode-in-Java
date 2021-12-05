@@ -1,4 +1,4 @@
-package g0101_0200.s0154_find_minimum_in_rotated_sorted_array_ii;
+package g0101_0200.s0154_find_minimum_in_rotated_sorted_array_ii_hard_array_binary_search;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

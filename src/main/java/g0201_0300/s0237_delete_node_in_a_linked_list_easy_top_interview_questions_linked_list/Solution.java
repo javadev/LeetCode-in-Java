@@ -1,4 +1,4 @@
-package g0201_0300.s0237_delete_node_in_a_linked_list;
+package g0201_0300.s0237_delete_node_in_a_linked_list_easy_top_interview_questions_linked_list;
 
 import com_github_leetcode.ListNode;
 

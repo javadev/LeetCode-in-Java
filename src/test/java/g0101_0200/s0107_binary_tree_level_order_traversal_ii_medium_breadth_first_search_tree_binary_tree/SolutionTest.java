@@ -1,4 +1,4 @@
-package g0101_0200.s0107_binary_tree_level_order_traversal_ii;
+package g0101_0200.s0107_binary_tree_level_order_traversal_ii_medium_breadth_first_search_tree_binary_tree;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

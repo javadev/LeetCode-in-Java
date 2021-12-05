@@ -1,4 +1,4 @@
-package g0201_0300.s0228_summary_ranges;
+package g0201_0300.s0228_summary_ranges_easy_array;
 
 import java.util.ArrayList;
 import java.util.List;

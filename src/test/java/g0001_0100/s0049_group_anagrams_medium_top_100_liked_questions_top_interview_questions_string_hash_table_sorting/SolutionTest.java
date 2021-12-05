@@ -1,4 +1,4 @@
-package g0001_0100.s0049_group_anagrams;
+package g0001_0100.s0049_group_anagrams_medium_top_100_liked_questions_top_interview_questions_string_hash_table_sorting;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

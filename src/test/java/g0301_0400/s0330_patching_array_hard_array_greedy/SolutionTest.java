@@ -1,4 +1,4 @@
-package g0301_0400.s0330_patching_array;
+package g0301_0400.s0330_patching_array_hard_array_greedy;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

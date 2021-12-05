@@ -1,4 +1,4 @@
-package g0101_0200.s0131_palindrome_partitioning;
+package g0101_0200.s0131_palindrome_partitioning_medium_top_interview_questions_string_dynamic_programming_backtracking;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

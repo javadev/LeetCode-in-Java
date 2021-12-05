@@ -1,4 +1,4 @@
-package g0001_0100.s0081_search_in_rotated_sorted_array_ii;
+package g0001_0100.s0081_search_in_rotated_sorted_array_ii_medium_array_binary_search;
 
 public class Solution {
     public boolean search(int[] nums, int target) {

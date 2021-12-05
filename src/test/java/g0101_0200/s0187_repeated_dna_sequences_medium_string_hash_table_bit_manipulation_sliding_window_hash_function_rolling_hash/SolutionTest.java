@@ -1,4 +1,4 @@
-package g0101_0200.s0187_repeated_dna_sequences;
+package g0101_0200.s0187_repeated_dna_sequences_medium_string_hash_table_bit_manipulation_sliding_window_hash_function_rolling_hash;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

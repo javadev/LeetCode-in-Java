@@ -1,4 +1,4 @@
-package g0001_0100.s0032_longest_valid_parentheses;
+package g0001_0100.s0032_longest_valid_parentheses_hard_top_100_liked_questions_string_dynamic_programming_stack;
 
 public class Solution {
     public int longestValidParentheses(String s) {

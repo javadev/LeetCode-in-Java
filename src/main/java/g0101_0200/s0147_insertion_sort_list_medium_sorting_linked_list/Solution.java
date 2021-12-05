@@ -1,4 +1,4 @@
-package g0101_0200.s0147_insertion_sort_list;
+package g0101_0200.s0147_insertion_sort_list_medium_sorting_linked_list;
 
 import com_github_leetcode.ListNode;
 import java.util.Arrays;

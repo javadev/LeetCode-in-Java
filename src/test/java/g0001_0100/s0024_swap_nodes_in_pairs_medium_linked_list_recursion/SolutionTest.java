@@ -1,4 +1,4 @@
-package g0001_0100.s0024_swap_nodes_in_pairs;
+package g0001_0100.s0024_swap_nodes_in_pairs_medium_linked_list_recursion;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

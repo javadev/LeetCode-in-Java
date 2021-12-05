@@ -1,4 +1,4 @@
-package g0101_0200.s0169_majority_element;
+package g0101_0200.s0169_majority_element_easy_top_100_liked_questions_top_interview_questions_array_hash_table_sorting_counting_divide_and_conquer;
 
 public class Solution {
     public int majorityElement(int[] arr) {

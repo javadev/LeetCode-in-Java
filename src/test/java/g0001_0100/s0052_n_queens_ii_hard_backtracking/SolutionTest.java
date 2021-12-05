@@ -1,4 +1,4 @@
-package g0001_0100.s0052_n_queens_ii;
+package g0001_0100.s0052_n_queens_ii_hard_backtracking;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

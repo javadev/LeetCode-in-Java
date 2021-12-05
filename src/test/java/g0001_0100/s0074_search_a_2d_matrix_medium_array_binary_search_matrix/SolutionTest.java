@@ -1,4 +1,4 @@
-package g0001_0100.s0074_search_a_2d_matrix;
+package g0001_0100.s0074_search_a_2d_matrix_medium_array_binary_search_matrix;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

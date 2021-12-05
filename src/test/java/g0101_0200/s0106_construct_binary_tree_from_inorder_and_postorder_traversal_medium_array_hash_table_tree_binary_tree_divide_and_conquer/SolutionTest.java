@@ -1,4 +1,4 @@
-package g0101_0200.s0106_construct_binary_tree_from_inorder_and_postorder_traversal;
+package g0101_0200.s0106_construct_binary_tree_from_inorder_and_postorder_traversal_medium_array_hash_table_tree_binary_tree_divide_and_conquer;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
