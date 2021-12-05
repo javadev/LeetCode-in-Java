@@ -1,4 +1,4 @@
-package g2001_2100.s2080_range_frequency_queries;
+package g2001_2100.s2080_range_frequency_queries_medium_array_hash_table_binary_search_design_segment_tree;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

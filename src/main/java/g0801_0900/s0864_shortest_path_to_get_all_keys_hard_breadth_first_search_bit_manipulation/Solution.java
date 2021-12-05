@@ -1,4 +1,4 @@
-package g0801_0900.s0864_shortest_path_to_get_all_keys;
+package g0801_0900.s0864_shortest_path_to_get_all_keys_hard_breadth_first_search_bit_manipulation;
 
 import java.util.LinkedList;
 
