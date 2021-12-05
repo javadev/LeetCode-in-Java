@@ -4,11 +4,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.Arrays;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void partition() {
+    void partition() {
         assertThat(
                 new Solution().partition("aab"),
                 equalTo(Arrays.asList(Arrays.asList("a", "a", "b"), Arrays.asList("aa", "b"))));

@@ -6,11 +6,11 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void groupAnagrams() {
+    void groupAnagrams() {
         List<List<String>> expected = new ArrayList<>();
         expected.add(Arrays.asList("eat", "tea", "ate"));
         expected.add(Arrays.asList("bat"));

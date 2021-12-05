@@ -4,11 +4,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.TreeNode;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class CodecTest {
+class CodecTest {
     @Test
-    public void codec() {
+    void codec() {
         TreeNode treeNode =
                 new TreeNode(1, new TreeNode(2), new TreeNode(3, new TreeNode(4), new TreeNode(5)));
         Codec codec = new Codec();

@@ -4,11 +4,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.TreeNode;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void constructBinaryTree() {
+    void constructBinaryTree() {
         int[] inorder = {9, 3, 15, 20, 7};
         int[] postorder = {9, 15, 7, 20, 3};
         TreeNode actual = new Solution().buildTree(inorder, postorder);

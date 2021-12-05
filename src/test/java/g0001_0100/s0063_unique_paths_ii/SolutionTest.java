@@ -3,11 +3,11 @@ package g0001_0100.s0063_unique_paths_ii;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void uniquePathsWithObstacles() {
+    void uniquePathsWithObstacles() {
         int[][] expected = {
             {0, 0, 0},
             {0, 1, 0},

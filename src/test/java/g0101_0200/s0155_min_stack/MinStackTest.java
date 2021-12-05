@@ -3,11 +3,11 @@ package g0101_0200.s0155_min_stack;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class MinStackTest {
+class MinStackTest {
     @Test
-    public void minStack() {
+    void minStack() {
         MinStack minStack = new MinStack();
         minStack.push(-2);
         minStack.push(0);

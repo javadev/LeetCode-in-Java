@@ -4,11 +4,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.ListNode;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void convertSortedListToBST() {
+    void convertSortedListToBST() {
         ListNode nodes =
                 new ListNode(
                         -10, new ListNode(-3, new ListNode(0, new ListNode(5, new ListNode(9)))));

@@ -3,11 +3,11 @@ package g0101_0200.s0146_lru_cache;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class LruCacheTest {
+class LruCacheTest {
     @Test
-    public void lruCache() {
+    void lruCache() {
         LruCache lruCache = new LruCache(2);
         // cache is {1=1}
         lruCache.put(1, 1);

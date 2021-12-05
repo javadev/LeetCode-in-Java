@@ -4,11 +4,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.Arrays;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void spiralOrder() {
+    void spiralOrder() {
         int[][] input = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         assertThat(
                 new Solution().spiralOrder(input),

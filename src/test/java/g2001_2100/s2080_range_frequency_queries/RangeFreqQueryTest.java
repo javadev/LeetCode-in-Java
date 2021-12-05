@@ -3,11 +3,11 @@ package g2001_2100.s2080_range_frequency_queries;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class RangeFreqQueryTest {
+class RangeFreqQueryTest {
     @Test
-    public void rangeFreqQuery() {
+    void rangeFreqQuery() {
         RangeFreqQuery rangeFreqQuery =
                 new RangeFreqQuery(new int[] {12, 33, 4, 56, 22, 2, 34, 33, 22, 12, 34, 56});
         // return 1. The value 4 occurs 1 time in the subarray [33, 4]

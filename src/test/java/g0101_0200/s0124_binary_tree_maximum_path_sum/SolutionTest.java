@@ -4,11 +4,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.TreeNode;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void findMaxPathSum() {
+    void findMaxPathSum() {
         TreeNode treeNode = TreeNode.create(new int[] {1, 2, 3});
         assertThat(new Solution().findMaxPathSum(treeNode), equalTo(6));
     }

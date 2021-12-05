@@ -3,11 +3,11 @@ package g0001_0100.s0013_roman_to_integer;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void romanToInt() {
+    void romanToInt() {
         Solution solution = new Solution();
         assertThat(solution.romanToInt("III"), equalTo(3));
         assertThat(solution.romanToInt("IV"), equalTo(4));

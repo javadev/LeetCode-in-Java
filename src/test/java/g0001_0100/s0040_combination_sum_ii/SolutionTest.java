@@ -4,11 +4,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.ArrayUtils;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
     @Test
-    public void combinationSum2() {
+    void combinationSum2() {
         int[][] expected = {{1, 1, 6}, {1, 2, 5}, {1, 7}, {2, 6}};
         assertThat(
                 new Solution().combinationSum2(new int[] {10, 1, 2, 7, 6, 1, 5}, 8),
