@@ -1,5 +1,7 @@
 package g0101_0200.s0162_find_peak_element;
 
+// #Medium #Top_Interview_Questions #Array #Binary_Search
+
 public class Solution {
     public int findPeakElement(int[] nums) {
         int start = 0;

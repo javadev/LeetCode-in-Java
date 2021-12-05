@@ -1,5 +1,7 @@
 package g0201_0300.s0283_move_zeroes;
 
+// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Array #Two_Pointers
+
 public class Solution {
     public void moveZeroes(int[] nums) {
         int firstZero = 0;

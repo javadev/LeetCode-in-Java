@@ -1,5 +1,7 @@
 package g0001_0100.s0091_decode_ways;
 
+// #Medium #Top_Interview_Questions #String #Dynamic_Programming
+
 public class Solution {
     public int numDecodings(String s) {
         if (s.charAt(0) == '0') {

@@ -1,5 +1,7 @@
 package g0001_0100.s0012_integer_to_roman;
 
+// #Medium #String #Hash_Table #Math
+
 public class Solution {
     public String intToRoman(int num) {
 

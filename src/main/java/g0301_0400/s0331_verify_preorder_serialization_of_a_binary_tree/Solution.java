@@ -1,5 +1,7 @@
 package g0301_0400.s0331_verify_preorder_serialization_of_a_binary_tree;
 
+// #Medium #String #Tree #Binary_Tree #Stack
+
 public class Solution {
     public boolean isValidSerialization(String preorder) {
         int count = 1;

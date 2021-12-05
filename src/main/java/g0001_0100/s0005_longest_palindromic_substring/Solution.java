@@ -1,5 +1,7 @@
 package g0001_0100.s0005_longest_palindromic_substring;
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming
+
 public class Solution {
     public String longestPalindrome(String s) {
         char[] newStr = new char[s.length() * 2 + 1];

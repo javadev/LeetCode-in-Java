@@ -1,5 +1,7 @@
 package g0001_0100.s0060_permutation_sequence;
 
+// #Hard #Math #Recursion
+
 public class Solution {
     public String getPermutation(int n, int k) {
         char[] res = new char[n];

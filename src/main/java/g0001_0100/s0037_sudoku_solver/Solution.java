@@ -1,5 +1,7 @@
 package g0001_0100.s0037_sudoku_solver;
 
+// #Hard #Array #Matrix #Backtracking
+
 import java.util.ArrayList;
 import java.util.List;
 

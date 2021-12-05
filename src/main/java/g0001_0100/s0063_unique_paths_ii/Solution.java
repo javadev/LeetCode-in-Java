@@ -1,5 +1,7 @@
 package g0001_0100.s0063_unique_paths_ii;
 
+// #Medium #Array #Dynamic_Programming #Matrix
+
 public class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         // if start point has obstacle, there's no path

@@ -1,5 +1,7 @@
 package g0001_0100.s0084_largest_rectangle_in_histogram;
 
+// #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Stack #Monotonic_Stack
+
 public class Solution {
     public int largestRectangleArea(int[] heights) {
         return largestArea(heights, 0, heights.length);

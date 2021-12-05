@@ -1,5 +1,7 @@
 package g0101_0200.s0190_reverse_bits;
 
+// #Easy #Top_Interview_Questions #Bit_Manipulation #Divide_and_Conquer
+
 public class Solution {
     // you need treat n as an unsigned value
     public int reverseBits(int n) {

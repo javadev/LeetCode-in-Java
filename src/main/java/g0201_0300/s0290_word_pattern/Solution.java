@@ -1,5 +1,7 @@
 package g0201_0300.s0290_word_pattern;
 
+// #Easy #String #Hash_Table
+
 import java.util.HashMap;
 import java.util.Map;
 

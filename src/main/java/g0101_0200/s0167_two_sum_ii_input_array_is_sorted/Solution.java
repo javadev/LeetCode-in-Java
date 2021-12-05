@@ -1,5 +1,7 @@
 package g0101_0200.s0167_two_sum_ii_input_array_is_sorted;
 
+// #Easy #Array #Binary_Search #Two_Pointers
+
 public class Solution {
     public int[] twoSum(int[] numbers, int target) {
         int[] res = new int[2];

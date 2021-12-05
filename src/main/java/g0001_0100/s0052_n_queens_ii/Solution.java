@@ -1,5 +1,7 @@
 package g0001_0100.s0052_n_queens_ii;
 
+// #Hard #Backtracking
+
 public class Solution {
     public int totalNQueens(int n) {
         boolean[] row = new boolean[n];

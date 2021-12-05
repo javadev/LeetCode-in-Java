@@ -1,5 +1,7 @@
 package g0201_0300.s0264_ugly_number_ii;
 
+// #Medium #Dynamic_Programming #Hash_Table #Math #Heap_Priority_Queue
+
 public class Solution {
     public int nthUglyNumber(int n) {
         int[] ugly = new int[n];

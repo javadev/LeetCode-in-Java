@@ -1,5 +1,7 @@
 package g0201_0300.s0300_longest_increasing_subsequence;
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Dynamic_Programming #Binary_Search
+
 public class Solution {
     public int lengthOfLIS(int[] nums) {
         if (nums == null || nums.length == 0) {

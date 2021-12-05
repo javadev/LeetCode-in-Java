@@ -1,5 +1,7 @@
 package g0001_0100.s0047_permutations_ii;
 
+// #Medium #Array #Backtracking
+
 import java.util.ArrayList;
 import java.util.List;
 

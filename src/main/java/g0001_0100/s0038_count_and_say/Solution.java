@@ -1,5 +1,7 @@
 package g0001_0100.s0038_count_and_say;
 
+// #Medium #Top_Interview_Questions #String
+
 public class Solution {
     public String countAndSay(int n) {
         if (n == 1) {

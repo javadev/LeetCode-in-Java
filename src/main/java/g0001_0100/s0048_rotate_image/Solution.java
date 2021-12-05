@@ -1,5 +1,7 @@
 package g0001_0100.s0048_rotate_image;
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Math #Matrix
+
 public class Solution {
     public void rotate(int[][] matrix) {
         int n = matrix.length;

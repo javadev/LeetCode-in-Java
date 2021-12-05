@@ -1,5 +1,7 @@
 package g0001_0100.s0049_group_anagrams;
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Hash_Table #Sorting
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;

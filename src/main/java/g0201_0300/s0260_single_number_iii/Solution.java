@@ -1,5 +1,7 @@
 package g0201_0300.s0260_single_number_iii;
 
+// #Medium #Array #Bit_Manipulation
+
 public class Solution {
     public int[] singleNumber(int[] nums) {
         int xorSum = 0;

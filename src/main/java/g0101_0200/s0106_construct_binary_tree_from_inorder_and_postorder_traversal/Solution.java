@@ -1,5 +1,7 @@
 package g0101_0200.s0106_construct_binary_tree_from_inorder_and_postorder_traversal;
 
+// #Medium #Array #Hash_Table #Tree #Binary_Tree #Divide_and_Conquer
+
 import com_github_leetcode.TreeNode;
 
 public class Solution {

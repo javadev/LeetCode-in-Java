@@ -1,5 +1,7 @@
 package g0001_0100.s0081_search_in_rotated_sorted_array_ii;
 
+// #Medium #Array #Binary_Search
+
 public class Solution {
     public boolean search(int[] nums, int target) {
         return binary(nums, 0, nums.length - 1, target);

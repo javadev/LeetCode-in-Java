@@ -1,5 +1,7 @@
 package g0101_0200.s0169_majority_element;
 
+// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table #Sorting #Counting #Divide_and_Conquer
+
 public class Solution {
     public int majorityElement(int[] arr) {
         int count = 1;

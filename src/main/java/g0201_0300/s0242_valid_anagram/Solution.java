@@ -1,5 +1,7 @@
 package g0201_0300.s0242_valid_anagram;
 
+// #Easy #Top_Interview_Questions #String #Hash_Table #Sorting
+
 public class Solution {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {

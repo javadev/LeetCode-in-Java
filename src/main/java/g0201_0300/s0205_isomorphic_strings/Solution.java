@@ -1,5 +1,7 @@
 package g0201_0300.s0205_isomorphic_strings;
 
+// #Easy #String #Hash_Table
+
 public class Solution {
     public boolean isIsomorphic(String s, String t) {
         int[] map = new int[128];

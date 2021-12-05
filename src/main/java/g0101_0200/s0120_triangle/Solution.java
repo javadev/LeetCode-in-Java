@@ -1,5 +1,7 @@
 package g0101_0200.s0120_triangle;
 
+// #Medium #Array #Dynamic_Programming
+
 import java.util.Arrays;
 import java.util.List;
 

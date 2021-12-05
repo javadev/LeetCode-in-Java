@@ -1,5 +1,7 @@
 package g0001_0100.s0032_longest_valid_parentheses;
 
+// #Hard #Top_100_Liked_Questions #String #Dynamic_Programming #Stack
+
 public class Solution {
     public int longestValidParentheses(String s) {
         int max = 0;

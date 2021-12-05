@@ -1,5 +1,7 @@
 package g0001_0100.s0041_first_missing_positive;
 
+// #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table
+
 public class Solution {
     public int firstMissingPositive(int[] nums) {
         for (int i = 0; i < nums.length; i++) {

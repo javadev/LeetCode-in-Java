@@ -1,5 +1,7 @@
 package g0201_0300.s0202_happy_number;
 
+// #Easy #Top_Interview_Questions #Hash_Table #Math #Two_Pointers
+
 public class Solution {
     public boolean isHappy(int n) {
         boolean happy = false;

@@ -1,5 +1,7 @@
 package g0101_0200.s0125_valid_palindrome;
 
+// #Easy #Top_Interview_Questions #String #Two_Pointers
+
 public class Solution {
     public boolean isPalindrome(String s) {
         int i = 0;

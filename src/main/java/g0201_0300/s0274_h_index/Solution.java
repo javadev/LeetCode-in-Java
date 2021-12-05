@@ -1,5 +1,7 @@
 package g0201_0300.s0274_h_index;
 
+// #Medium #Array #Sorting #Counting_Sort
+
 import java.util.Arrays;
 
 public class Solution {

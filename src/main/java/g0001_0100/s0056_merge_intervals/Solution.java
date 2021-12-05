@@ -1,5 +1,7 @@
 package g0001_0100.s0056_merge_intervals;
 
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Sorting
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

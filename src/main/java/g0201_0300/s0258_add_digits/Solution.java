@@ -1,5 +1,7 @@
 package g0201_0300.s0258_add_digits;
 
+// #Easy #Math #Simulation #Number_Theory
+
 public class Solution {
     public int addDigits(int num) {
         if (num == 0) {

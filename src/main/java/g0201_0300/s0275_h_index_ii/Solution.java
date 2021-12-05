@@ -1,5 +1,7 @@
 package g0201_0300.s0275_h_index_ii;
 
+// #Medium #Array #Binary_Search
+
 public class Solution {
     public int hindex(int[] citations) {
         int lo = 1;

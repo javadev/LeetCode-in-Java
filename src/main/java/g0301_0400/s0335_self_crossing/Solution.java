@@ -1,5 +1,7 @@
 package g0301_0400.s0335_self_crossing;
 
+// #Hard #Array #Math #Geometry
+
 public class Solution {
 
     public boolean isSelfCrossing(int[] x) {

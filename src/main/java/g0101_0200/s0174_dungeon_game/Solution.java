@@ -1,5 +1,7 @@
 package g0101_0200.s0174_dungeon_game;
 
+// #Hard #Array #Dynamic_Programming #Matrix
+
 public class Solution {
     public int calculateMinimumHP(int[][] dungeon) {
         int m = dungeon.length;

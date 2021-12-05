@@ -1,5 +1,7 @@
 package g0001_0100.s0069_sqrtx;
 
+// #Easy #Top_Interview_Questions #Math #Binary_Search
+
 public class Solution {
     public int mySqrt(int x) {
         int start = 1;

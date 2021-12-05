@@ -1,5 +1,7 @@
 package g0101_0200.s0135_candy;
 
+// #Hard #Array #Greedy
+
 public class Solution {
     public int candy(int[] ratings) {
         int[] candies = new int[ratings.length];

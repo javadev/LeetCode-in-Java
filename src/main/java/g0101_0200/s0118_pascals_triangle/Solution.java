@@ -1,5 +1,7 @@
 package g0101_0200.s0118_pascals_triangle;
 
+// #Easy #Top_Interview_Questions #Array #Dynamic_Programming
+
 import java.util.ArrayList;
 import java.util.List;
 

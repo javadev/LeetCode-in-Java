@@ -1,5 +1,7 @@
 package g0201_0300.s0221_maximal_square;
 
+// #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Matrix
+
 public class Solution {
     public int maximalSquare(char[][] matrix) {
         int m = matrix.length;

@@ -1,5 +1,7 @@
 package g0001_0100.s0007_reverse_integer;
 
+// #Medium #Top_Interview_Questions #Math
+
 public class Solution {
     public int reverse(int x) {
         long rev = 0;

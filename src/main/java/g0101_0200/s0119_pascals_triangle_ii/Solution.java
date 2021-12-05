@@ -1,5 +1,7 @@
 package g0101_0200.s0119_pascals_triangle_ii;
 
+// #Easy #Array #Dynamic_Programming
+
 import java.util.ArrayList;
 import java.util.List;
 

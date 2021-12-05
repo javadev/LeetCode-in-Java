@@ -1,5 +1,7 @@
 package g0001_0100.s0016_3sum_closest;
 
+// #Medium #Array #Sorting #Two_Pointers
+
 import java.util.Arrays;
 
 public class Solution {

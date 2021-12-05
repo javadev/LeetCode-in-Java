@@ -1,5 +1,7 @@
 package g0101_0200.s0115_distinct_subsequences;
 
+// #Hard #String #Dynamic_Programming
+
 public class Solution {
     public int numDistinct(String text, String text2) {
         if (text.length() < text2.length()) {

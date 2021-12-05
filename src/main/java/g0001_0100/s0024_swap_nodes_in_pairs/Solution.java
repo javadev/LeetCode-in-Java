@@ -1,5 +1,7 @@
 package g0001_0100.s0024_swap_nodes_in_pairs;
 
+// #Medium #Linked_List #Recursion
+
 import com_github_leetcode.ListNode;
 
 public class Solution {

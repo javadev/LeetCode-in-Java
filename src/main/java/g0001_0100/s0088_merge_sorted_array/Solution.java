@@ -1,5 +1,7 @@
 package g0001_0100.s0088_merge_sorted_array;
 
+// #Easy #Top_Interview_Questions #Array #Sorting #Two_Pointers
+
 public class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1;

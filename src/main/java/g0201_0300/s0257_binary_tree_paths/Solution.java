@@ -1,5 +1,7 @@
 package g0201_0300.s0257_binary_tree_paths;
 
+// #Easy #String #Depth_First_Search #Tree #Binary_Tree
+
 import com_github_leetcode.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
