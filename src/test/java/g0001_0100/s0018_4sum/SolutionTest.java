@@ -1,4 +1,4 @@
-package g0001_0100.s0018_four_sum;
+package g0001_0100.s0018_4sum;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
