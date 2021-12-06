@@ -7,10 +7,6 @@ public class Node {
     public Node right;
     public Node next;
 
-    public Node() {
-        this.val = 0;
-    }
-
     public Node(int val) {
         this.val = val;
     }
