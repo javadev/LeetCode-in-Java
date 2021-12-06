@@ -10,4 +10,14 @@ class SolutionTest {
     void strStr() {
         assertThat(new Solution().strStr("hello", "ll"), equalTo(2));
     }
+
+    @Test
+    void strStr2() {
+        assertThat(new Solution().strStr("hello", ""), equalTo(0));
+    }
+
+    @Test
+    void strStr3() {
+        assertThat(new Solution().strStr("hello", "oo"), equalTo(-1));
+    }
 }
