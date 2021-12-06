@@ -13,7 +13,7 @@ class SolutionTest {
 
     @Test
     void plusOne2() {
-        assertThat(new Solution().plusOne(new int[] {4,3,2,1}), equalTo(new int[] {4,3,2,2}));
+        assertThat(new Solution().plusOne(new int[] {4, 3, 2, 1}), equalTo(new int[] {4, 3, 2, 2}));
     }
 
     @Test
