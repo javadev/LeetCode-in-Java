@@ -24,7 +24,8 @@ public class TreeNode {
         TreeNode root = new TreeNode(treeValues.get(0));
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
-        for (int i = 1; i < treeValues.size(); i++) {
+        int i = 1;
+        while (i < treeValues.size()) {
             TreeNode curr = queue.poll();
             if (treeValues.get(i) != null) {
                 curr.left = new TreeNode(treeValues.get(i));
@@ -34,6 +35,7 @@ public class TreeNode {
                 curr.right = new TreeNode(treeValues.get(i));
                 queue.offer(curr.right);
             }
+            i++;
         }
         return root;
     }
