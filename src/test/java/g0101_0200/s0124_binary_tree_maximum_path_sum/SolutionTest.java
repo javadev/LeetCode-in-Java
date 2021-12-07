@@ -9,8 +9,14 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void findMaxPathSum() {
-        TreeNode treeNode = TreeNode.create(Arrays.asList(1, 2, null, 3));
-        assertThat(new Solution().findMaxPathSum(treeNode), equalTo(6));
+    void maxPathSum() {
+        TreeNode treeNode = TreeNode.create(Arrays.asList(1, 2, 3));
+        assertThat(new Solution().maxPathSum(treeNode), equalTo(6));
+    }
+
+    @Test
+    void maxPathSum2() {
+        TreeNode treeNode = TreeNode.create(Arrays.asList(-10, 9, 20, null, null, 15, 7));
+        assertThat(new Solution().maxPathSum(treeNode), equalTo(42));
     }
 }
