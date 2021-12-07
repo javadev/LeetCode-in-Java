@@ -10,13 +10,13 @@ import java.util.Map;
 
 public class Twitter {
     // userId --> user followers
-    private Map<Integer, HashSet<Integer>> twitter;
+    private Map<Integer, HashSet<Integer>> twitterData;
     // head of linked list that stores all the tweets
     private Tweet head;
 
     public Twitter() {
         head = new Tweet(-1, -1);
-        twitter = new HashMap<>();
+        twitterData = new HashMap<>();
     }
 
     public void postTweet(int userId, int tweetId) {
@@ -30,7 +30,7 @@ public class Twitter {
     public List<Integer> getNewsFeed(int userId) {
         checkNewUser(userId);
         List<Integer> res = new ArrayList<>();
-        HashSet<Integer> followers = twitter.get(userId);
+        HashSet<Integer> followers = twitterData.get(userId);
         Tweet t = head.next;
         while (t != null && res.size() < 10) {
             if (followers.contains(t.userId)) {
@@ -44,7 +44,7 @@ public class Twitter {
     public void follow(int followerId, int followeeId) {
         checkNewUser(followeeId);
         checkNewUser(followerId);
-        twitter.get(followerId).add(followeeId);
+        twitterData.get(followerId).add(followeeId);
     }
 
     public void unfollow(int followerId, int followeeId) {
@@ -54,15 +54,15 @@ public class Twitter {
             return;
         }
         checkNewUser(followerId);
-        twitter.get(followerId).remove(followeeId);
+        twitterData.get(followerId).remove(followeeId);
     }
 
     public void checkNewUser(int userId) {
-        if (twitter.containsKey(userId)) {
+        if (twitterData.containsKey(userId)) {
             return;
         }
-        twitter.put(userId, new HashSet<>());
+        twitterData.put(userId, new HashSet<>());
         // follow  yourself
-        twitter.get(userId).add(userId);
+        twitterData.get(userId).add(userId);
     }
 }
