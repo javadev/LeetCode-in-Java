@@ -20,28 +20,6 @@ public class TreeNode {
         this.right = right;
     }
 
-    private static int index = 0;
-
-    public static TreeNode create(int[] arr) {
-        index = 0;
-        return create1(arr);
-    }
-
-    private static TreeNode create1(int[] arr) {
-        if (arr.length == index) {
-            return null;
-        }
-        if (arr[index] == '#') {
-            index++;
-            return null;
-        } else {
-            TreeNode res = new TreeNode(arr[index++]);
-            res.left = create1(arr);
-            res.right = create1(arr);
-            return res;
-        }
-    }
-
     public static TreeNode create(List<Integer> treeValues) {
         TreeNode root = new TreeNode(treeValues.get(0));
         Queue<TreeNode> queue = new LinkedList<>();

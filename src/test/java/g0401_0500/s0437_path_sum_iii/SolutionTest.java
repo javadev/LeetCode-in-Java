@@ -18,4 +18,16 @@ class SolutionTest {
                                 8),
                 equalTo(3));
     }
+
+    @Test
+    void pathSum2() {
+        assertThat(
+                new Solution()
+                        .pathSum(
+                                TreeNode.create(
+                                        Arrays.asList(
+                                                5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1)),
+                                22),
+                equalTo(3));
+    }
 }
