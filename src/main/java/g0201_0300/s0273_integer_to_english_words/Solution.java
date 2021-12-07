@@ -26,8 +26,7 @@ public class Solution {
 
     public String numberToWords(int num) {
         if (num == 0) {
-            String zero = "Zero";
-            return zero;
+            return "Zero";
         }
         StringJoiner joiner = new StringJoiner("");
         processThreeDigits(joiner, num / 1_000_000_000, "Billion ");
