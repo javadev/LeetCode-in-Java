@@ -58,7 +58,9 @@ public class Twitter {
     }
 
     public void checkNewUser(int userId) {
-        if (twitter.containsKey(userId)) return;
+        if (twitter.containsKey(userId)) {
+            return;
+        }
         twitter.put(userId, new HashSet<>());
         // follow  yourself
         twitter.get(userId).add(userId);
