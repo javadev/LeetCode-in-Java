@@ -4,9 +4,9 @@ package g0201_0300.s0202_happy_number;
 
 public class Solution {
     public boolean isHappy(int n) {
-        boolean happy = false;
+        boolean happy;
         int a = n;
-        int rem = 0;
+        int rem;
         int sum = 0;
         if (a == 1 || a == 7) {
             happy = true;
