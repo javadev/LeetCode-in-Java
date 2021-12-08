@@ -12,7 +12,9 @@ public class Solution {
             map[p.charAt(i) - 'a']++;
         }
         List<Integer> res = new ArrayList<>();
-        for (int i = 0, j = 0; i < s.length(); ++i) {
+        int i = 0;
+        int j = 0;
+        while (i < s.length()) {
             int idx = s.charAt(i) - 'a';
             // add the new character
             map[idx]--;
@@ -31,6 +33,7 @@ public class Solution {
             if (i >= p.length() - 1 && finish) {
                 res.add(j);
             }
+            i++;
         }
         return res;
     }
