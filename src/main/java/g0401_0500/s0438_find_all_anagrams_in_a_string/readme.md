@@ -26,7 +26,8 @@ An **Anagram** is a word or phrase formed by rearranging the letters of a differ
 **Explanation:**
 
     The substring with start index = 0 is "ab", which is an anagram of "ab".
-    The substring with start index = 1 is "ba", which is an anagram of "ab". The substring with start index = 2 is "ab", which is an anagram of "ab". 
+    The substring with start index = 1 is "ba", which is an anagram of "ab".
+    The substring with start index = 2 is "ab", which is an anagram of "ab". 
 
 **Constraints:**
 
