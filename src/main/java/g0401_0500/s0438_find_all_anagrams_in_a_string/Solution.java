@@ -20,15 +20,14 @@ public class Solution {
             if (i >= p.length()) {
                 map[s.charAt(j++) - 'a']++;
             }
-
             boolean finish = true;
-            for (int k = 0; k < 26; k++)
+            for (int k = 0; k < 26; k++) {
                 // if it is not an anagram of string p
                 if (map[k] != 0) {
                     finish = false;
                     break;
                 }
-
+            }
             if (i >= p.length() - 1 && finish) {
                 res.add(j);
             }
