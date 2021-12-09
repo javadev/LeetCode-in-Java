@@ -14,7 +14,7 @@ public class Solution {
             return 0;
         }
 
-        int dp[][] = new int[(sum + s) / 2 + 1][nums.length + 1];
+        int[][] dp = new int[(sum + s) / 2 + 1][nums.length + 1];
         dp[0][0] = 1;
         // empty knapsack must be processed specially
         for (int i = 0; i < nums.length; i++) {
