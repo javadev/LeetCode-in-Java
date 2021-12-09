@@ -2,6 +2,7 @@ package g0701_0800.s0739_daily_temperatures;
 
 // #Medium #Top_100_Liked_Questions #Array #Stack #Monotonic_Stack
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
         int[] sol = new int[temperatures.length];
