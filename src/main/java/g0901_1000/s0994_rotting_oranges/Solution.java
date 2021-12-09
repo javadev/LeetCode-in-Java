@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class Solution {
     public int orangesRotting(int[][] grid) {
-        Queue<int[]> queue = new LinkedList<int[]>();
+        Queue<int[]> queue = new LinkedList<>();
         int row = grid.length;
         int col = grid[0].length;
         int countActive = 0;
@@ -43,7 +43,7 @@ public class Solution {
                     queue.add(new int[] {x, y});
                 }
             }
-            if (queue.size() != 0) {
+            if (!queue.isEmpty()) {
                 countCurrent++;
             }
         }
