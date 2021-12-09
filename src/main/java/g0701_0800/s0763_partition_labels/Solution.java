@@ -13,7 +13,10 @@ public class Solution {
         for (int i = 0; i < letters.length; i++) {
             position[letters[i] - 'a'] = i;
         }
-        for (int i = 0, prev = -1, max = 0; i < letters.length; i++) {
+        int i = 0;
+        int prev = -1;
+        int max = 0;
+        while (i < letters.length) {
             if (position[letters[i] - 'a'] > max) {
                 max = position[letters[i] - 'a'];
             }
@@ -21,6 +24,7 @@ public class Solution {
                 result.add(i - prev);
                 prev = i;
             }
+            i++;
         }
         return result;
     }
