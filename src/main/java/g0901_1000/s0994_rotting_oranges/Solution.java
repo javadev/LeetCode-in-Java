@@ -26,13 +26,13 @@ public class Solution {
         }
         int countCurrent = 0;
         int count = 0;
-        int dx[] = {0, 0, 1, -1};
-        int dy[] = {1, -1, 0, 0};
+        int[] dx = {0, 0, 1, -1};
+        int[] dy = {1, -1, 0, 0};
         while (!queue.isEmpty()) {
             int size = queue.size();
             count += size;
             for (int i = 0; i < size; i++) {
-                int arr[] = queue.poll();
+                int[] arr = queue.poll();
                 for (int j = 0; j < 4; j++) {
                     int x = arr[0] + dx[j];
                     int y = arr[1] + dy[j];
