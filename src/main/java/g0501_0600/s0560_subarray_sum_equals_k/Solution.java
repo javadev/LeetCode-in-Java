@@ -7,7 +7,6 @@ import java.util.Map;
 
 public class Solution {
     public int subarraySum(int[] nums, int k) {
-        int size = nums.length;
         int tempSum = 0;
         int ret = 0;
         Map<Integer, Integer> sumCount = new HashMap<>();
