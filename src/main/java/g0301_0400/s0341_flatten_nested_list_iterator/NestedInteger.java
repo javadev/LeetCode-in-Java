@@ -17,7 +17,7 @@ public class NestedInteger {
         if (this.list != null) {
             this.list.add(nestedInteger);
         } else {
-            this.list = new ArrayList();
+            this.list = new ArrayList<>();
             this.list.add(nestedInteger);
         }
     }
@@ -31,7 +31,7 @@ public class NestedInteger {
     }
 
     public NestedInteger() {
-        this.list = new ArrayList();
+        this.list = new ArrayList<>();
     }
 
     public boolean isInteger() {
@@ -44,23 +44,5 @@ public class NestedInteger {
 
     public List<NestedInteger> getList() {
         return list;
-    }
-
-    public String printNi(NestedInteger thisNi, StringBuilder sb) {
-        if (thisNi.isInteger()) {
-            sb.append(thisNi.integer);
-            sb.append(",");
-        }
-        sb.append("[");
-        for (NestedInteger ni : thisNi.list) {
-            if (ni.isInteger()) {
-                sb.append(ni.integer);
-                sb.append(",");
-            } else {
-                printNi(ni, sb);
-            }
-        }
-        sb.append("]");
-        return sb.toString();
     }
 }

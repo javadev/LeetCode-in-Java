@@ -28,7 +28,7 @@ class NestedIteratorTest {
     }
 
     @Test
-    public void nestedIterator2() {
+    void nestedIterator2() {
         NestedInteger integer1 = new NestedInteger(1);
         NestedInteger integer2 = new NestedInteger(2);
         NestedInteger integer3 = new NestedInteger(3);

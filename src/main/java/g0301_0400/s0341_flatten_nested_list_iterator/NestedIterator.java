@@ -2,10 +2,7 @@ package g0301_0400.s0341_flatten_nested_list_iterator;
 
 // #Medium #Top_Interview_Questions #Depth_First_Search #Tree #Stack #Design #Queue #Iterator
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Stack;
+import java.util.*;
 
 /*
  * // This is the interface that allows for creating nested lists.
@@ -24,8 +21,8 @@ import java.util.Stack;
  *     public List<NestedInteger> getList();
  * }
  */
+@SuppressWarnings("java:S2272")
 public class NestedIterator implements Iterator<Integer> {
-
     private Stack<ListIterator<NestedInteger>> stack;
     private ListIterator<NestedInteger> it;
     private NestedInteger next;
