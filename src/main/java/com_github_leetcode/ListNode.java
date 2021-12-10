@@ -1,5 +1,7 @@
 package com_github_leetcode;
 
+import java.util.Objects;
+
 @SuppressWarnings("java:S1104")
 public class ListNode {
     public int val;
@@ -19,14 +21,16 @@ public class ListNode {
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder("" + val);
-        ListNode current = next;
-        while (current.next != null) {
+        if (Objects.nonNull(next)) {
+            ListNode current = next;
+            while (current.next != null) {
+                result.append(", ");
+                result.append(current.val);
+                current = current.next;
+            }
             result.append(", ");
             result.append(current.val);
-            current = current.next;
         }
-        result.append(", ");
-        result.append(current.val);
         return result.toString();
     }
 }
