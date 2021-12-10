@@ -13,32 +13,38 @@ public class Solution {
         for (int i = 0; i < board[0].length; i++) {
             // first row
             if (board[0][i] == 'O') {
-                dfs(board, 0, i); // It will covert O and all it's touching O's to #
+                // It will covert O and all it's touching O's to #
+                dfs(board, 0, i);
             }
             // last row
             if (board[board.length - 1][i] == 'O') {
-                dfs(board, board.length - 1, i); // Coverts O's to #'s (same thing as above)
+                // Coverts O's to #'s (same thing as above)
+                dfs(board, board.length - 1, i);
             }
         }
         // Traverse first and last Column (boundaries)
         for (int i = 0; i < board.length; i++) {
             // first Column
             if (board[i][0] == 'O') {
-                dfs(board, i, 0); // Converts O's to #'s
+                // Converts O's to #'s
+                dfs(board, i, 0);
             }
             // last Column
             if (board[i][board[0].length - 1] == 'O') {
-                dfs(board, i, board[0].length - 1); // Coverts O's to #'s
+                // Coverts O's to #'s
+                dfs(board, i, board[0].length - 1);
             }
         }
         // Traverse through entire matrix
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
                 if (board[i][j] == 'O') {
-                    board[i][j] = 'X'; // Convert O's to X's
+                    // Convert O's to X's
+                    board[i][j] = 'X';
                 }
                 if (board[i][j] == '#') {
-                    board[i][j] = 'O'; // Convert #'s to O's
+                    // Convert #'s to O's
+                    board[i][j] = 'O';
                 }
             }
         }

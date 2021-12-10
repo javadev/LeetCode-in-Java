@@ -7,15 +7,12 @@ public class Solution {
         if (str == null || str.length() == 0) {
             return 0;
         }
-
         int i = 0;
         boolean negetiveSign = false;
         char[] input = str.toCharArray();
-
         while (i < input.length && input[i] == ' ') {
             i++;
         }
-
         if (i == input.length) {
             return 0;
         } else if (input[i] == '+') {
@@ -24,13 +21,13 @@ public class Solution {
             i++;
             negetiveSign = true;
         }
-
         int num = 0;
         while (i < input.length && input[i] <= '9' && input[i] >= '0') {
-            int tem = input[i] - '0'; // current char
+            // current char
+            int tem = input[i] - '0';
             tem = negetiveSign ? -tem : tem;
-
-            if (num == 0 && tem == '0') { // avoid invalid number like 038
+            // avoid invalid number like 038
+            if (num == 0 && tem == '0') {
                 i++;
             } else if (num == Integer.MIN_VALUE / 10 && tem <= -8 || num < Integer.MIN_VALUE / 10) {
                 return Integer.MIN_VALUE;

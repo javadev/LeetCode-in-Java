@@ -9,7 +9,8 @@ public class Solution {
         }
         int n = s.length();
         int[] f = new int[n + 1];
-        f[0] = 1; // Auxiliary
+        // Auxiliary
+        f[0] = 1;
         f[1] = 1;
         for (int i = 2; i <= n; i++) {
             // Calculate the independent number

@@ -40,7 +40,8 @@ public class Solution {
                 num = 0;
             }
         }
-        sum += tempSum; // finally, add tempSum to sum
+        // finally, add tempSum to sum
+        sum += tempSum;
         return sum;
     }
 }

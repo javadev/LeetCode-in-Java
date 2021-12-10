@@ -36,7 +36,8 @@ public class Solution {
 
                     // Creating the line
                     for (int j = startWord; j < (startWord + numWordsOnLine - 1); j++) {
-                        sb.append(words[j]); // appending the word
+                        // appending the word
+                        sb.append(words[j]);
                         if (extraSp-- > 0) {
                             // appending an extra space, if required
                             sb.append(' ');

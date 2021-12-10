@@ -15,8 +15,8 @@ public class Solution {
             }
             // if this is true, then the possible rotation can only be in the second half
             if (nums[lo] <= nums[mid]) {
-                if (nums[lo] <= target
-                        && target <= nums[mid]) { // the target is in the first half only if it's
+                // the target is in the first half only if it's
+                if (nums[lo] <= target && target <= nums[mid]) {
                     // included
                     hi = mid - 1;
                 } else {

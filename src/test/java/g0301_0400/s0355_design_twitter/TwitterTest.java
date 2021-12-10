@@ -10,7 +10,8 @@ class TwitterTest {
     @Test
     void twitter() {
         Twitter twitter = new Twitter();
-        twitter.postTweet(1, 5); // User 1 posts a new tweet (id = 5).
+        // User 1 posts a new tweet (id = 5).
+        twitter.postTweet(1, 5);
         // User 1's news feed should return a list with 1 tweet id -> [5]. return [5]
         assertThat(twitter.getNewsFeed(1), equalTo(Arrays.asList(5)));
         // User 1 follows user 2.

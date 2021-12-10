@@ -16,7 +16,6 @@ public class Solution {
                 numA = numA * 10 + (c - 48);
             }
         }
-
         // acquire second number
         int numB = 0;
         int j;
@@ -28,24 +27,21 @@ public class Solution {
                 numB = numB * 10 + (c - 48);
             }
         }
-
         // compare
         if (numA > numB) {
             return 1;
         } else if (numA < numB) {
             return -1;
-        } else { // equal
+        } else {
+            // equal
             String v1 = "";
             String v2 = "";
-
             if (i != version1.length()) {
                 v1 = version1.substring(i + 1);
             }
-
             if (j != version2.length()) {
                 v2 = version2.substring(j + 1);
             }
-
             // if both versions end here, they are equal
             if (v1.equals("") && v2.equals("")) {
                 return 0;

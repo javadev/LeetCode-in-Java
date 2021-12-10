@@ -35,7 +35,8 @@ public class Solution {
         }
         // C1 is pointing to 1st node of K group, which is now going to point to the next K group
         // linklist.
-        head.next = reverseKGroup(n, k); // recursion, for futher remaining linked list.
+        // recursion, for futher remaining linked list.
+        head.next = reverseKGroup(n, k);
         return prev;
     }
 }

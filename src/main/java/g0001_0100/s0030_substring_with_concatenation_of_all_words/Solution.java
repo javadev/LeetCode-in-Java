@@ -2,7 +2,10 @@ package g0001_0100.s0030_substring_with_concatenation_of_all_words;
 
 // #Hard #String #Hash_Table #Sliding_Window
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @SuppressWarnings("java:S127")
 public class Solution {

@@ -44,7 +44,8 @@ public class NestedIterator implements Iterator<Integer> {
     @Override
     public boolean hasNext() {
         while (it.hasNext() || !stack.isEmpty()) {
-            if (!it.hasNext()) { // end of list
+            // end of list
+            if (!it.hasNext()) {
                 it = stack.pop();
                 continue;
             }

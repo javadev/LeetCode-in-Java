@@ -24,7 +24,8 @@ public class Solution {
                 // lastMatch will tell from which index we start comparing the string if we
                 // encounter * in pattern
                 j = starIdx + 1;
-                lastMatch++; // we are saying we included more characters in * so we incremented the
+                // we are saying we included more characters in * so we incremented the
+                lastMatch++;
                 // index
                 i = lastMatch;
 
