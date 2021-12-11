@@ -4,8 +4,8 @@ package g0301_0400.s0345_reverse_vowels_of_a_string;
 
 public class Solution {
     private boolean isVowel(char c) {
-        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'
-                || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
+        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E'
+                || c == 'I' || c == 'O' || c == 'U';
     }
 
     private StringBuilder swap(StringBuilder s, int l, int r) {
