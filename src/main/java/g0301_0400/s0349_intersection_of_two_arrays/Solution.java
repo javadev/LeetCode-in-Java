@@ -1,9 +1,9 @@
 package g0301_0400.s0349_intersection_of_two_arrays;
 
+// #Easy #Array #Hash_Table #Sorting #Binary_Search #Two_Pointers
+
 import java.util.ArrayList;
 import java.util.List;
-
-// #Easy #Array #Hash_Table #Sorting #Binary_Search #Two_Pointers
 
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
