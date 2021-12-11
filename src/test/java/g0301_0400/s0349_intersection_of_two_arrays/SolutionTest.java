@@ -17,6 +17,6 @@ class SolutionTest {
     void intersection2() {
         assertThat(
                 new Solution().intersection(new int[] {4, 9, 5}, new int[] {9, 4, 9, 8, 4}),
-                equalTo(new int[] {4, 9}));
+                equalTo(new int[] {9, 4}));
     }
 }

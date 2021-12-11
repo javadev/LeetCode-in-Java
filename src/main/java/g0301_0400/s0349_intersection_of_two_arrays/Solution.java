@@ -5,23 +5,19 @@ import java.util.List;
 
 // #Easy #Array #Hash_Table #Sorting #Binary_Search #Two_Pointers
 
-public class Solution {
+class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
-        List<Integer> intersectionList = new ArrayList<>();
-
-        for (int j : nums1) {
-            for (int k : nums2) {
-                if (j == k && !intersectionList.contains(j)) {
-                    intersectionList.add(j);
-                }
+        boolean occ[]=new boolean[1001];
+        for(int i=0;i<nums1.length;i++) occ[nums1[i]]=true;
+        List<Integer> res=new ArrayList<>();
+        for(int i=0;i<nums2.length;i++){
+            if(occ[nums2[i]]){
+                occ[nums2[i]]=false;
+                res.add(nums2[i]);
             }
         }
-        int[] result = new int[intersectionList.size()];
-
-        for (int i = 0; i < intersectionList.size(); i++) {
-            result[i] = intersectionList.get(i);
-        }
-
+        int result[]=new int[res.size()];
+        for(int i=0;i<res.size();i++)   result[i]=res.get(i);
         return result;
     }
 }
