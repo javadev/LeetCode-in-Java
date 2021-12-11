@@ -1,11 +1,11 @@
 package g0301_0400.s0345_reverse_vowels_of_a_string;
 
-class Solution {
+// #Easy #String #Two_Pointers
+
+public class Solution {
     static boolean isVowel(char c) {
-        return (c == 'a' || c == 'A' || c == 'e'
-                || c == 'E' || c == 'i' || c == 'I'
-                || c == 'o' || c == 'O' || c == 'u'
-                || c == 'U');
+        return (c == 'a' || c == 'A' || c == 'e' || c == 'E' || c == 'i' || c == 'I' || c == 'o'
+                || c == 'O' || c == 'u' || c == 'U');
     }
 
     public String reverseVowels(String str) {
@@ -27,11 +27,9 @@ class Solution {
             str1[i] = str1[j];
             str1[j] = t;
 
-
             i++;
             j--;
         }
         return String.copyValueOf(str1);
-
     }
 }
