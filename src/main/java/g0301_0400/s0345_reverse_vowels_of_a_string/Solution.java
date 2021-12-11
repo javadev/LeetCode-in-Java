@@ -26,7 +26,7 @@ public class Solution {
             while (l < r && !isVowel(s.charAt(r))) {
                 r--;
             }
-            res = swap(res, l, r);
+            swap(res, l, r);
             l++;
             r--;
         }
