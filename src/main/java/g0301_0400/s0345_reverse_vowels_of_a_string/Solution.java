@@ -8,11 +8,10 @@ public class Solution {
                 || c == 'I' || c == 'O' || c == 'U';
     }
 
-    private StringBuilder swap(StringBuilder s, int l, int r) {
+    private void swap(StringBuilder s, int l, int r) {
         char tmp = s.charAt(l);
         s.setCharAt(l, s.charAt(r));
         s.setCharAt(r, tmp);
-        return s;
     }
 
     public String reverseVowels(String s) {

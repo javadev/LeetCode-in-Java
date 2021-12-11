@@ -5,7 +5,7 @@ package g0301_0400.s0349_intersection_of_two_arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+public class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
         boolean[] occ = new boolean[1001];
         for (int i = 0; i < nums1.length; i++) {
