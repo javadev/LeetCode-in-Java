@@ -51,6 +51,6 @@ public class Solution {
             }
             minutes >>>= 1;
         }
-        return (counter == turnedOn) ? true : false;
+        return counter == turnedOn;
     }
 }
