@@ -1,14 +1,13 @@
 # Write your MySQL query statement below
 # #Hard #Database
-SELECT d.Name AS Department, e.Name AS Employee, e.Salary
-FROM Employee e
-JOIN Department d
-ON e.DepartmentId = d.Id
-WHERE e.Salary IN (
-    SELECT e2.Salary FROM (
-        SELECT DISTINCT e3.Salary FROM Employee e3
-        WHERE e3.DepartmentID = d.Id
-        ORDER BY e3.Salary DESC
-        LIMIT 3
-    ) AS e2
-);
+SELECT D.name AS Department,
+       A.name AS Employee,
+       A.salary AS Salary
+FROM
+    (SELECT *,
+            dense_rank() over(PARTITION BY departmentID
+                ORDER BY salary DESC) AS rn
+     FROM Employee) A
+        INNER JOIN Department D ON A.departmentid = D.id
+WHERE A.rn < 4
+ORDER BY Department, Salary DESC
