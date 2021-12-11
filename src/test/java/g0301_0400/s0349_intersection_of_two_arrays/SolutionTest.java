@@ -9,16 +9,14 @@ class SolutionTest {
     @Test
     void intersection() {
         assertThat(
-                new g0301_0400.s0349_intersection_of_two_arrays.Solution()
-                        .intersection(new int[] {1, 2, 2, 1}, new int[] {2, 2}),
+                new Solution().intersection(new int[] {1, 2, 2, 1}, new int[] {2, 2}),
                 equalTo(new int[] {2}));
     }
 
     @Test
     void intersection2() {
         assertThat(
-                new g0301_0400.s0349_intersection_of_two_arrays.Solution()
-                        .intersection(new int[] {4, 9, 5}, new int[] {9, 4, 9, 8, 4}),
+                new Solution().intersection(new int[] {4, 9, 5}, new int[] {9, 4, 9, 8, 4}),
                 equalTo(new int[] {4, 9}));
     }
 }

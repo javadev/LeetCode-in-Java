@@ -17,7 +17,11 @@ public class Solution {
             }
         }
         int[] result = new int[intersectionList.size()];
-        for (int i = 0; i < intersectionList.size(); i++) result[i] = intersectionList.get(i);
+
+        for (int i = 0; i < intersectionList.size(); i++) {
+            result[i] = intersectionList.get(i);
+        }
+
         return result;
     }
 }

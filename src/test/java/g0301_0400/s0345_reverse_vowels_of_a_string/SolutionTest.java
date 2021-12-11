@@ -8,16 +8,11 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void reverseVowels() {
-        assertThat(
-                new g0301_0400.s0345_reverse_vowels_of_a_string.Solution().reverseVowels("hello"),
-                equalTo("holle"));
+        assertThat(new Solution().reverseVowels("hello"), equalTo("holle"));
     }
 
     @Test
     void reverseVowels2() {
-        assertThat(
-                new g0301_0400.s0345_reverse_vowels_of_a_string.Solution()
-                        .reverseVowels("leetcode"),
-                equalTo("leotcede"));
+        assertThat(new Solution().reverseVowels("leetcode"), equalTo("leotcede"));
     }
 }
