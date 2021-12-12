@@ -2,26 +2,28 @@ package g0301_0400.s0343_integer_break;
 
 // #Medium #Dynamic_Programming #Math
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class Solution {
-    private final Map<Integer, Integer> memo = new HashMap<>();
+    private int[] arr;
 
     public int integerBreak(int n) {
-        if (memo.containsKey(n)) {
-            return memo.get(n);
+        arr = new int[n + 1];
+        arr[2] = 1;
+        // only case involve with 1 other than 2 is 3
+        return n == 3 ? 2 : dp(n);
+    }
+
+    private int dp(int n) {
+        if (n <= 2) {
+            return arr[2];
+        } else if (arr[n] != 0) {
+            return arr[n];
+        } else {
+            int prod = 1;
+            for (int i = 2; i <= n; i++) {
+                prod = Math.max(prod, i * dp(n - i));
+            }
+            arr[n] = prod;
         }
-        if (n == 2) {
-            return 1;
-        }
-        int ans = 0;
-        for (int i = 1; i <= n / 2; i++) {
-            int ret = integerBreak(n - i);
-            int product = Math.max(i * (n - i), i * ret);
-            ans = Math.max(ans, product);
-        }
-        memo.put(n, ans);
-        return ans;
+        return arr[n];
     }
 }
