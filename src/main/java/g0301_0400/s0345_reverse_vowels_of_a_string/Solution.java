@@ -4,31 +4,28 @@ package g0301_0400.s0345_reverse_vowels_of_a_string;
 
 public class Solution {
     private boolean isVowel(char c) {
-        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E'
-                || c == 'I' || c == 'O' || c == 'U';
+        return c == 'a' || c == 'A' || c == 'e' || c == 'E' || c == 'i' || c == 'I' || c == 'o'
+                || c == 'O' || c == 'u' || c == 'U';
     }
 
-    private void swap(StringBuilder s, int l, int r) {
-        char tmp = s.charAt(l);
-        s.setCharAt(l, s.charAt(r));
-        s.setCharAt(r, tmp);
-    }
-
-    public String reverseVowels(String s) {
-        int l = 0;
-        int r = s.length() - 1;
-        StringBuilder res = new StringBuilder(s);
-        while (l < r) {
-            while (l < r && !isVowel(s.charAt(l))) {
-                l++;
+    public String reverseVowels(String str) {
+        int i = 0;
+        int j = str.length() - 1;
+        char[] str1 = str.toCharArray();
+        while (i < j) {
+            if (!isVowel(str1[i])) {
+                i++;
+            } else if (!isVowel(str1[j])) {
+                j--;
+            } else {
+                // swapping
+                char t = str1[i];
+                str1[i] = str1[j];
+                str1[j] = t;
+                i++;
+                j--;
             }
-            while (l < r && !isVowel(s.charAt(r))) {
-                r--;
-            }
-            swap(res, l, r);
-            l++;
-            r--;
         }
-        return res.toString();
+        return String.copyValueOf(str1);
     }
 }
