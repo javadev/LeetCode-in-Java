@@ -20,6 +20,7 @@ class SolutionTest {
                 equalTo(1));
     }
 
+    @Test
     void numIslands2() {
         assertThat(
                 new Solution()

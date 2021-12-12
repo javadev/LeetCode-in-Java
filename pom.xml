@@ -149,6 +149,7 @@
                 </executions>
                 <configuration>
                     <failOnError>false</failOnError>
+                    <detectJavaApiLink>false</detectJavaApiLink>
                 </configuration>
             </plugin>
             <plugin>
