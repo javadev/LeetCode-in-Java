@@ -10,11 +10,6 @@ public class SummaryRanges {
         int min;
         int max;
 
-        public Node(int min, int max) {
-            this.min = min;
-            this.max = max;
-        }
-
         public Node(int val) {
             min = val;
             max = val;
