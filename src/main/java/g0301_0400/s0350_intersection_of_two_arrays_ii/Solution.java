@@ -22,8 +22,7 @@ public class Solution {
                 // Check if nums1 value is less then nums2 value;
                 // Increment "i"
                 i++;
-            }
-            else if (nums1[i] > nums2[j]) {
+            } else if (nums1[i] > nums2[j]) {
                 // Check if nums2 value is less then nums1 value;
                 // Increment "j"
                 j++;
