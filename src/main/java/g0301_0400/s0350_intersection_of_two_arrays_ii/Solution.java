@@ -18,13 +18,13 @@ public class Solution {
         int k = 0;
         // Loop will run until "i" & "j" doesn't reach the array boundary;
         while (i < nums1.length && j < nums2.length) {
-            // Check if nums1 value is less then nums2 value;
             if (nums1[i] < nums2[j]) {
+                // Check if nums1 value is less then nums2 value;
                 // Increment "i"
                 i++;
             }
-            // Check if nums2 value is less then nums1 value;
             else if (nums1[i] > nums2[j]) {
+                // Check if nums2 value is less then nums1 value;
                 // Increment "j"
                 j++;
 
