@@ -12,10 +12,8 @@ public class Solution {
         for (int[] enve : envelopes) {
             int i = 0;
             int j = size;
-
             while (i != j) {
                 int mid = i + ((j - i) >> 1);
-
                 if (tails[mid] < enve[1]) {
                     i = mid + 1;
                 } else {

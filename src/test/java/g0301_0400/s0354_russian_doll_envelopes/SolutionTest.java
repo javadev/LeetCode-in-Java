@@ -2,9 +2,7 @@ package g0301_0400.s0354_russian_doll_envelopes;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-
 import org.junit.jupiter.api.Test;
-
 class SolutionTest {
 
     @Test
