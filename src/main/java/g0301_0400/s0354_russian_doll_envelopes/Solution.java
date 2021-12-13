@@ -12,7 +12,8 @@ public class Solution {
         int size = 0;
 
         for (int[] enve : envelopes) {
-            int i = 0, j = size;
+            int i = 0;
+            int j = size;
 
             while (i != j) {
                 int mid = i + ((j - i) >> 1);
