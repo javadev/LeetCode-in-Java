@@ -21,8 +21,8 @@ public class SummaryRanges {
         }
     }
 
-    List<Node> list;
-    // Initialize your data structure here.
+    private List<Node> list;
+
     public SummaryRanges() {
         list = new ArrayList<>();
     }
@@ -47,20 +47,22 @@ public class SummaryRanges {
     }
 
     public int[][] getIntervals() {
-        for (int i = 1; i < list.size(); i++) {
+        int i = 1;
+        while (i < list.size()) {
             Node prev = list.get(i - 1);
             Node curr = list.get(i);
             if (curr.min == prev.max + 1) {
                 prev.max = curr.max;
                 list.remove(i--);
             }
+            i++;
         }
         int len = list.size();
         int[][] res = new int[len][2];
-        for (int i = 0; i < len; i++) {
-            Node node = list.get(i);
-            res[i][0] = node.min;
-            res[i][1] = node.max;
+        for (int j = 0; j < len; j++) {
+            Node node = list.get(j);
+            res[j][0] = node.min;
+            res[j][1] = node.max;
         }
         return res;
     }
