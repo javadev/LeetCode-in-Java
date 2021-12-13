@@ -7,10 +7,8 @@ import java.util.Arrays;
 public class Solution {
     public int maxEnvelopes(int[][] envelopes) {
         Arrays.sort(envelopes, (a, b) -> a[0] != b[0] ? a[0] - b[0] : b[1] - a[1]);
-
         int[] tails = new int[envelopes.length];
         int size = 0;
-
         for (int[] enve : envelopes) {
             int i = 0;
             int j = size;
@@ -29,7 +27,6 @@ public class Solution {
                 size++;
             }
         }
-
         return size;
     }
 }

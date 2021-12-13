@@ -2,7 +2,13 @@ package g0301_0400.s0352_data_stream_as_disjoint_intervals;
 
 // #Hard #Binary_Search #Design #Ordered_Set
 
-import java.util.*;
+
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.NavigableSet;
+import java.util.TreeSet;
+import java.util.Set;
+
 
 public class SummaryRanges {
 
