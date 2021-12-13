@@ -26,7 +26,9 @@ public class Solution {
             else if (nums1[i] > nums2[j]) {
                 // Increment "j"
                 j++;
-            } else { // Check if nums1 value is equals to nums2 value;
+
+            } else {
+                // Check if nums1 value is equals to nums2 value;
                 // Dump into nums1 and increment k, increment i & increment j as well;
                 nums1[k++] = nums1[i++];
                 j++;
