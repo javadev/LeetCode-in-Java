@@ -146,6 +146,7 @@
         </module>
         <module name="SingleLineJavadoc"/>
         <module name="TrailingComment"/>
+        <module name="AvoidStarImport"/>
     </module>
 
 </module>
