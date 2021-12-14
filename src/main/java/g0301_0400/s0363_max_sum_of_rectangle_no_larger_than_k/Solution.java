@@ -111,11 +111,13 @@ public class Solution {
                 int pre = 0;
                 if (groupingRows) {
                     for (int t = 0; t < localN; t++) {
-                        sum[t] += pre += matrix[j][t];
+                        pre += matrix[j][t];
+                        sum[t] += pre;
                     }
                 } else {
                     for (int t = 0; t < localN; t++) {
-                        sum[t] += pre += matrix[t][j];
+                        pre += matrix[t][j];
+                        sum[t] += pre;
                     }
                 }
                 res = Math.max(res, maxSumSubArray(sum, k));
