@@ -7,13 +7,13 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void maxSumSubMatrix() {
+    void maxSumSubmatrix() {
         assertThat(
-                new Solution().maxSumSubMatrix(new int[][] {{1, 0, 1}, {0, -2, 3}}, 2), equalTo(2));
+                new Solution().maxSumSubmatrix(new int[][] {{1, 0, 1}, {0, -2, 3}}, 2), equalTo(2));
     }
 
     @Test
-    void maxSumSubMatrix2() {
-        assertThat(new Solution().maxSumSubMatrix(new int[][] {{2, 2, -1}}, 3), equalTo(3));
+    void maxSumSubmatrix2() {
+        assertThat(new Solution().maxSumSubmatrix(new int[][] {{2, 2, -1}}, 3), equalTo(3));
     }
 }
