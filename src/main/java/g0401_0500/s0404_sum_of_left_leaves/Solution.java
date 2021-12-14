@@ -25,7 +25,7 @@ public class Solution {
     public int sumOfLeftLeaves(TreeNode root) {
         List<Integer> arr = new ArrayList<>();
         traverse(root, arr);
-        return get_sum(arr);
+        return getSum(arr);
     }
 
     private void traverse(TreeNode root, List<Integer> arr) {
@@ -39,7 +39,7 @@ public class Solution {
         traverse(root.right, arr);
     }
 
-    private int get_sum(List<Integer> arr) {
+    private int getSum(List<Integer> arr) {
         int sum = 0;
         for (int i = 0; i < arr.size(); i++) {
             sum += arr.get(i);
