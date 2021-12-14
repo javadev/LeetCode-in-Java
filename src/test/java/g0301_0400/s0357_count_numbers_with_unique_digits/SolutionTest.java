@@ -7,12 +7,12 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
 
     @Test
-    void testCountNumbersWithUniqueDigits() {
+    void countNumbersWithUniqueDigits() {
         assertThat(new Solution().countNumbersWithUniqueDigits(2), equalTo(91));
     }
 
     @Test
-    void testCountNumbersWithUniqueDigits2() {
+    void countNumbersWithUniqueDigits2() {
         assertThat(new Solution().countNumbersWithUniqueDigits(0), equalTo(1));
     }
 }

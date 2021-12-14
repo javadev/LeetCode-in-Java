@@ -58,38 +58,38 @@ public class Solution {
         return res;
     }
 
-    private int mergeSort(int[] A, int l, int r, int k) {
+    private int mergeSort(int[] a, int l, int r, int k) {
         if (l == r) {
-            return A[l] <= k ? A[l] : Integer.MIN_VALUE;
+            return a[l] <= k ? a[l] : Integer.MIN_VALUE;
         }
         int m = l + ((r - l) >> 1);
-        int res = mergeSort(A, l, m, k);
+        int res = mergeSort(a, l, m, k);
         if (res == k) {
             return res;
         }
-        res = Math.max(res, mergeSort(A, m + 1, r, k));
+        res = Math.max(res, mergeSort(a, m + 1, r, k));
         if (res == k) {
             return res;
         }
-        return Math.max(res, merge(A, l, m, r, k));
+        return Math.max(res, merge(a, l, m, r, k));
     }
 
-    private int maxSumSubArray(int[] A) {
+    private int maxSumSubArray(int[] a) {
         int min = 0;
         int res = Integer.MIN_VALUE;
-        for (int sum : A) {
+        for (int sum : a) {
             res = Math.max(res, sum - min);
             min = Math.min(min, sum);
         }
         return res;
     }
 
-    private int maxSumSubArray(int[] A, int k) {
-        int res = maxSumSubArray(A);
+    private int maxSumSubArray(int[] a, int k) {
+        int res = maxSumSubArray(a);
         if (res <= k) {
             return res;
         }
-        return mergeSort(A.clone(), 0, A.length - 1, k);
+        return mergeSort(a.clone(), 0, a.length - 1, k);
     }
 
     public int maxSumSubMatrix(int[][] matrix, int k) {
