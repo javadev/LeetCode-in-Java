@@ -94,28 +94,28 @@ public class Solution {
     }
 
     public int maxSumSubMatrix(int[][] matrix, int k) {
-        int x = matrix.length;
-        int y = x == 0 ? 0 : matrix[0].length;
+        int localM = matrix.length;
+        int localN = localM == 0 ? 0 : matrix[0].length;
         int res = Integer.MIN_VALUE;
         boolean groupingRows = true;
-        if (x > y) {
-            int temp = x;
-            x = y;
-            y = temp;
+        if (localM > localN) {
+            int temp = localM;
+            localM = localN;
+            localN = temp;
             groupingRows = false;
         }
-        int[] sum = new int[y];
-        this.m = new int[y];
-        for (int i = 0; i < x; i++) {
+        int[] sum = new int[localN];
+        this.m = new int[localN];
+        for (int i = 0; i < localM; i++) {
             Arrays.fill(sum, 0);
-            for (int j = i; j < x; j++) {
+            for (int j = i; j < localM; j++) {
                 int pre = 0;
                 if (groupingRows) {
-                    for (int t = 0; t < y; t++) {
+                    for (int t = 0; t < localN; t++) {
                         sum[t] += pre += matrix[j][t];
                     }
                 } else {
-                    for (int t = 0; t < y; t++) {
+                    for (int t = 0; t < localN; t++) {
                         sum[t] += pre += matrix[t][j];
                     }
                 }
