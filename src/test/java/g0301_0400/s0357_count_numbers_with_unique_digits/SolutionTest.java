@@ -6,7 +6,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
-
     @Test
     void countNumbersWithUniqueDigits() {
         assertThat(new Solution().countNumbersWithUniqueDigits(2), equalTo(91));

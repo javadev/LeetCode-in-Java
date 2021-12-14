@@ -63,16 +63,16 @@ public class Solution {
         if (l == r) {
             return a[l] <= k ? a[l] : Integer.MIN_VALUE;
         }
-        int m = l + ((r - l) >> 1);
-        int res = mergeSort(a, l, m, k);
+        int localM = l + ((r - l) >> 1);
+        int res = mergeSort(a, l, localM, k);
         if (res == k) {
             return res;
         }
-        res = Math.max(res, mergeSort(a, m + 1, r, k));
+        res = Math.max(res, mergeSort(a, localM + 1, r, k));
         if (res == k) {
             return res;
         }
-        return Math.max(res, merge(a, l, m, r, k));
+        return Math.max(res, merge(a, l, localM, r, k));
     }
 
     private int maxSumSubArray(int[] a) {
