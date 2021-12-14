@@ -2,6 +2,7 @@ package g0301_0400.s0363_max_sum_of_rectangle_no_larger_than_k;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {

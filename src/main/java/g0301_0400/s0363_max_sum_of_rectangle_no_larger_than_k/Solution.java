@@ -28,7 +28,8 @@ public class Solution {
 
     private int merge(int[] a, int l, int m, int r, int k) {
         int res = Integer.MIN_VALUE;
-        for (int j = m + 1, i = l; j <= r; j++) {
+        for (int j = m + 1; j <= r; j++) {
+            int i = l;
             while (i <= m && a[j] - a[i] > k) {
                 i++;
             }
@@ -93,28 +94,28 @@ public class Solution {
     }
 
     public int maxSumSubMatrix(int[][] matrix, int k) {
-        int m = matrix.length;
-        int n = m == 0 ? 0 : matrix[0].length;
+        int x = matrix.length;
+        int y = x == 0 ? 0 : matrix[0].length;
         int res = Integer.MIN_VALUE;
         boolean groupingRows = true;
-        if (m > n) {
-            int temp = m;
-            m = n;
-            n = temp;
+        if (x > y) {
+            int temp = x;
+            x = y;
+            y = temp;
             groupingRows = false;
         }
-        int[] sum = new int[n];
-        this.m = new int[n];
-        for (int i = 0; i < m; i++) {
+        int[] sum = new int[y];
+        this.m = new int[y];
+        for (int i = 0; i < x; i++) {
             Arrays.fill(sum, 0);
-            for (int j = i; j < m; j++) {
+            for (int j = i; j < x; j++) {
                 int pre = 0;
                 if (groupingRows) {
-                    for (int t = 0; t < n; t++) {
+                    for (int t = 0; t < y; t++) {
                         sum[t] += pre += matrix[j][t];
                     }
                 } else {
-                    for (int t = 0; t < n; t++) {
+                    for (int t = 0; t < y; t++) {
                         sum[t] += pre += matrix[t][j];
                     }
                 }
