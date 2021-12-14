@@ -2,7 +2,6 @@ package g0301_0400.s0357_count_numbers_with_unique_digits;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
