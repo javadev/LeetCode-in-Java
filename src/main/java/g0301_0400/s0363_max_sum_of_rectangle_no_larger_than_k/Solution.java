@@ -11,10 +11,12 @@ package g0301_0400.s0363_max_sum_of_rectangle_no_larger_than_k;
 
 * So how exactly do we compute result during merge step?
 * Suppose we are merging left prefix subarray and right prefix subarray.
-* Remember from previous approach, for each index we're trying to find an old prefix sum which is just greater than or equal to current prefix sum - k.
+* Remember from previous approach, for each index we're trying to find an old prefix sum which is just greater than or
+* equal to current prefix sum - k.
 * So we can iterate over right subarray and for each index j, keep incrementing the pointer
 * in left array i (initialized to start index) till that situation is false (or basically prefix[i] < prefix[j] - k).
-* This way, we can compute the result for all cross subarrays (i.e. i in left subarray and j in right subarray) in linear time.
+* This way, we can compute the result for all cross subarrays (i.e. i in left subarray and j in right subarray)
+* in linear time.
 * After this, we do the standard merging part of merge sort.
 *
 */
@@ -22,18 +24,18 @@ package g0301_0400.s0363_max_sum_of_rectangle_no_larger_than_k;
 import java.util.Arrays;
 
 public class Solution {
-    private int[] M;
+    private int[] m;
 
-    private int merge(int[] A, int l, int m, int r, int k) {
+    private int merge(int[] a, int l, int m, int r, int k) {
         int res = Integer.MIN_VALUE;
         for (int j = m + 1, i = l; j <= r; j++) {
-            while (i <= m && A[j] - A[i] > k) {
+            while (i <= m && a[j] - a[i] > k) {
                 i++;
             }
             if (i > m) {
                 break;
             }
-            res = Math.max(res, A[j] - A[i]);
+            res = Math.max(res, a[j] - a[i]);
             if (res == k) {
                 return res;
             }
@@ -42,16 +44,16 @@ public class Solution {
         int j = m + 1;
         int t = 0;
         while (i <= m && j <= r) {
-            M[t++] = A[i] <= A[j] ? A[i++] : A[j++];
+            this.m[t++] = a[i] <= a[j] ? a[i++] : a[j++];
         }
         while (i <= m) {
-            M[t++] = A[i++];
+            this.m[t++] = a[i++];
         }
         while (j <= r) {
-            M[t++] = A[j++];
+            this.m[t++] = a[j++];
         }
         for (i = l; i <= r; i++) {
-            A[i] = M[i - l];
+            a[i] = this.m[i - l];
         }
         return res;
     }
@@ -72,8 +74,9 @@ public class Solution {
         return Math.max(res, merge(A, l, m, r, k));
     }
 
-    private int maxSumSubarray(int[] A) {
-        int min = 0, res = Integer.MIN_VALUE;
+    private int maxSumSubArray(int[] A) {
+        int min = 0;
+        int res = Integer.MIN_VALUE;
         for (int sum : A) {
             res = Math.max(res, sum - min);
             min = Math.min(min, sum);
@@ -81,9 +84,11 @@ public class Solution {
         return res;
     }
 
-    private int maxSumSubarray(int[] A, int k) {
-        int res = maxSumSubarray(A);
-        if (res <= k) return res;
+    private int maxSumSubArray(int[] A, int k) {
+        int res = maxSumSubArray(A);
+        if (res <= k) {
+            return res;
+        }
         return mergeSort(A.clone(), 0, A.length - 1, k);
     }
 
@@ -99,7 +104,7 @@ public class Solution {
             groupingRows = false;
         }
         int[] sum = new int[n];
-        this.M = new int[n];
+        this.m = new int[n];
         for (int i = 0; i < m; i++) {
             Arrays.fill(sum, 0);
             for (int j = i; j < m; j++) {
@@ -113,7 +118,7 @@ public class Solution {
                         sum[t] += pre += matrix[t][j];
                     }
                 }
-                res = Math.max(res, maxSumSubarray(sum, k));
+                res = Math.max(res, maxSumSubArray(sum, k));
                 if (res == k) {
                     return res;
                 }
