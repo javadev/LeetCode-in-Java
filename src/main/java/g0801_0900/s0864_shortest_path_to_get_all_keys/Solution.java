@@ -5,6 +5,7 @@ package g0801_0900.s0864_shortest_path_to_get_all_keys;
 import java.util.LinkedList;
 import java.util.Queue;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     private int m;
     private int n;
