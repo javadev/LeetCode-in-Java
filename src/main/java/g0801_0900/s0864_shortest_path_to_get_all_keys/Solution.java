@@ -80,9 +80,7 @@ public class Solution {
                             && grid[nx][ny] <= 'F'
                             && ((nState & (1 << (grid[nx][ny] - 'A'))) == 0)) {
                         continue;
-                    }
-                    // not seen before
-                    if (!visited[nx][ny][nState]) {
+                    } else if (!visited[nx][ny][nState]) {
                         q.add(new int[] {nx, ny, nState});
                         visited[nx][ny][nState] = true;
                     }
