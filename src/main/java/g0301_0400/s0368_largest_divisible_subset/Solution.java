@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Solution {
     // Helper class containing value and an arraylist
-    public class Helper {
+    private class Helper {
         int val;
         List<Integer> al;
 
@@ -34,11 +34,9 @@ public class Solution {
             int max2 = 0;
             int pos = i;
             for (int j = 0; j < i; j++) {
-                if (nums[i] % nums[j] == 0) {
-                    if (max2 < dp[j].val) {
-                        max2 = dp[j].val;
-                        pos = j;
-                    }
+                if (nums[i] % nums[j] == 0 && max2 < dp[j].val) {
+                    max2 = dp[j].val;
+                    pos = j;
                 }
             }
             // max2 = 0, means no element exists which can divide the present element

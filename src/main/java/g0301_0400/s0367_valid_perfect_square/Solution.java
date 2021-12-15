@@ -13,7 +13,7 @@ public class Solution {
         long end = num;
         long mid = 0;
         while (start <= end) {
-            // untill start is lesser or equal to end do this
+            // until start is lesser or equal to end do this
             // Finding middle value
             mid = start + (end - start) / 2;
             if (mid * mid == num) {
