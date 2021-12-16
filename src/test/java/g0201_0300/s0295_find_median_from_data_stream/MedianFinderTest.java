@@ -20,4 +20,13 @@ class MedianFinderTest {
         // return 2.0
         assertThat(medianFinder.findMedian(), equalTo(2.0));
     }
+
+    @Test
+    void medianFinder2() {
+        MedianFinder medianFinder = new MedianFinder();
+        medianFinder.addNum(1);
+        medianFinder.addNum(3);
+        medianFinder.addNum(-1);
+        assertThat(medianFinder.findMedian(), equalTo(1.0));
+    }
 }
