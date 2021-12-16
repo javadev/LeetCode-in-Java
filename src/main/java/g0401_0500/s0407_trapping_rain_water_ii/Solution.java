@@ -2,6 +2,7 @@ package g0401_0500.s0407_trapping_rain_water_ii;
 
 // #Hard #Array #Breadth_First_Search #Matrix #Heap_Priority_Queue
 
+import java.util.Objects;
 import java.util.PriorityQueue;
 
 public class Solution {
@@ -22,10 +23,16 @@ public class Solution {
         }
 
         @Override
-        public boolean equals(Object obj) {
-            return row == ((Cell) obj).row
-                    && col == ((Cell) obj).col
-                    && value == ((Cell) obj).value;
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Cell cell = (Cell) o;
+            return row == cell.row && col == cell.col && value == cell.value;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(row, col, value);
         }
     }
 
