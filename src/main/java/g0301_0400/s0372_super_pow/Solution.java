@@ -25,11 +25,11 @@ public class Solution {
             while (n % p == 0) {
                 n /= p;
             }
-            result *= (1.0 - (1.0 / (float) p));
+            result *= 1.0 - 1.0 / p;
         }
         if (n > 1) {
             // if starting n was also prime (so it was greater than sqrt(n))
-            result *= (1.0 - (1.0 / (float) n));
+            result *= (1.0 - (1.0 / n));
         }
         return (int) result;
     }
