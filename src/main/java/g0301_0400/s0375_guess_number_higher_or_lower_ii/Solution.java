@@ -2,6 +2,7 @@ package g0301_0400.s0375_guess_number_higher_or_lower_ii;
 
 // #Medium #Dynamic_Programming #Math #Game_Theory
 
+@SuppressWarnings("java:S135")
 public class Solution {
     int[][] matrix;
 
