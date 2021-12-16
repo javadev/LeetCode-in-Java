@@ -20,6 +20,13 @@ public class Solution {
         public int compareTo(Cell other) {
             return value - other.value;
         }
+
+        @Override
+        public boolean equals(Object obj) {
+            return row == ((Cell) obj).row
+                    && col == ((Cell) obj).col
+                    && value == ((Cell) obj).value;
+        }
     }
 
     private int water;
@@ -29,7 +36,7 @@ public class Solution {
         if (heightMap.length == 0) {
             return 0;
         }
-        PriorityQueue<Cell> walls = new PriorityQueue<Cell>();
+        PriorityQueue<Cell> walls = new PriorityQueue<>();
         water = 0;
         visited1 = new boolean[heightMap.length][heightMap[0].length];
         int rows = heightMap.length;
@@ -48,7 +55,7 @@ public class Solution {
             visited1[r][cols - 1] = true;
         }
         // end build wall
-        while (walls.size() > 0) {
+        while (!walls.isEmpty()) {
             Cell min = walls.poll();
             visit(heightMap, min, walls);
         }
@@ -63,23 +70,19 @@ public class Solution {
     }
 
     private void fill(int[][] height, int row, int col, PriorityQueue<Cell> walls, int min) {
-        if (row < 0 || col < 0) {
-            return;
-        } else if (row >= height.length || col >= height[0].length) {
-            return;
-        } else if (visited1[row][col]) {
-            return;
-        } else if (height[row][col] >= min) {
-            walls.add(new Cell(row, col, height[row][col]));
-            visited1[row][col] = true;
-            return;
-        } else {
-            water += min - height[row][col];
-            visited1[row][col] = true;
-            fill(height, row + 1, col, walls, min);
-            fill(height, row - 1, col, walls, min);
-            fill(height, row, col + 1, walls, min);
-            fill(height, row, col - 1, walls, min);
+        if (((row >= 0 && col >= 0) && (row < height.length && col < height[0].length))
+                && !visited1[row][col]) {
+            if (height[row][col] >= min) {
+                walls.add(new Cell(row, col, height[row][col]));
+                visited1[row][col] = true;
+            } else {
+                water += min - height[row][col];
+                visited1[row][col] = true;
+                fill(height, row + 1, col, walls, min);
+                fill(height, row - 1, col, walls, min);
+                fill(height, row, col + 1, walls, min);
+                fill(height, row, col - 1, walls, min);
+            }
         }
     }
 }
