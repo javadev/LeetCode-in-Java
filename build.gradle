@@ -2,7 +2,10 @@ plugins {
     id 'java'
     id 'maven-publish'
     id 'com.diffplug.spotless' version '5.15.1'
+    id 'org.sonarqube' version '3.0'
 }
+
+apply plugin: 'jacoco'
 
 repositories {
     mavenLocal()
@@ -56,5 +59,11 @@ spotless {
         googleJavaFormat('1.7').aosp()
         toggleOffOn()
         endWithNewline()
+    }
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
     }
 }
