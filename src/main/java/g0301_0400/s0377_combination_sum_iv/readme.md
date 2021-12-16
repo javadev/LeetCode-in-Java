@@ -12,7 +12,17 @@ The test cases are generated so that the answer can fit in a **32-bit** integer.
 
 **Output:** 7
 
-**Explanation:** The possible combination ways are: (1, 1, 1, 1) (1, 1, 2) (1, 2, 1) (1, 3) (2, 1, 1) (2, 2) (3, 1) Note that different sequences are counted as different combinations.
+**Explanation:**
+
+    The possible combination ways are:
+    (1, 1, 1, 1)
+    (1, 1, 2)
+    (1, 2, 1)
+    (1, 3)
+    (2, 1, 1)
+    (2, 2)
+    (3, 1)
+    Note that different sequences are counted as different combinations.
 
 **Example 2:**
 
