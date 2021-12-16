@@ -17,7 +17,7 @@ public class Solution {
     }
 
     private int phi(int n) {
-        float result = n;
+        double result = n;
         for (int p = 2; p * p <= n; p++) {
             if (n % p > 0) {
                 continue;
