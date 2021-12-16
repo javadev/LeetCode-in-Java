@@ -2,10 +2,9 @@ plugins {
     id 'java'
     id 'maven-publish'
     id 'com.diffplug.spotless' version '5.15.1'
-    id 'org.sonarqube' version '3.0'
+    id 'org.sonarqube' version '3.3'
+    id 'jacoco'
 }
-
-apply plugin: 'jacoco'
 
 repositories {
     mavenLocal()
