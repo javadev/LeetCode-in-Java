@@ -48,6 +48,7 @@ public class Solution {
                 break;
             }
         }
-        return dp[from - 1][to - 1] = result;
+        dp[from - 1][to - 1] = result;
+        return dp[from - 1][to - 1];
     }
 }

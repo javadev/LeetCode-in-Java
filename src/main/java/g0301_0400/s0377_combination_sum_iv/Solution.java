@@ -27,6 +27,7 @@ public class Solution {
         for (int i : nums) {
             count += result(nums, target - i);
         }
-        return storage[target] = count;
+        storage[target] = count;
+        return storage[target];
     }
 }
