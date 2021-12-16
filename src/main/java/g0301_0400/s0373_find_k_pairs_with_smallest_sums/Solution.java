@@ -21,7 +21,7 @@ public class Solution {
         }
     }
 
-    public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
+    public List<List<Integer>> ksmallestPairs(int[] nums1, int[] nums2, int k) {
         PriorityQueue<Node> queue = new PriorityQueue<Node>((a, b) -> a.sum < b.sum ? -1 : 1);
         List<List<Integer>> res = new ArrayList<>();
         for (int i = 0; i < nums1.length && i < k; i++) {

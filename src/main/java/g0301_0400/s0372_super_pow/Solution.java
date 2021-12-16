@@ -3,17 +3,17 @@ package g0301_0400.s0372_super_pow;
 // #Medium #Math #Divide_and_Conquer
 
 public class Solution {
-    private static final int mod = 1337;
+    private static final int MOD = 1337;
 
     public int superPow(int a, int[] b) {
-        int phi = phi(mod);
+        int phi = phi(MOD);
         int arrMod = arrMod(b, phi);
         if (isGreaterOrEqual(b, phi)) {
             // Cycle has started
             // cycle starts at phi with length phi
-            return exp(a % mod, phi + arrMod);
+            return exp(a % MOD, phi + arrMod);
         }
-        return exp(a % mod, arrMod);
+        return exp(a % MOD, arrMod);
     }
 
     private int phi(int n) {
@@ -60,9 +60,9 @@ public class Solution {
         int y = 1;
         while (b > 0) {
             if (b % 2 == 1) {
-                y = (y * a) % mod;
+                y = (y * a) % MOD;
             }
-            a = (a * a) % mod;
+            a = (a * a) % MOD;
             b /= 2;
         }
         return y;

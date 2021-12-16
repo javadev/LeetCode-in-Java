@@ -9,9 +9,9 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void kSmallestPairs() {
+    void ksmallestPairs() {
         assertThat(
-                new Solution().kSmallestPairs(new int[] {1, 7, 11}, new int[] {2, 4, 6}, 3),
+                new Solution().ksmallestPairs(new int[] {1, 7, 11}, new int[] {2, 4, 6}, 3),
                 equalTo(
                         new ArrayList<>(
                                 Arrays.asList(
@@ -21,16 +21,16 @@ class SolutionTest {
     }
 
     @Test
-    void kSmallestPairs2() {
+    void ksmallestPairs2() {
         assertThat(
-                new Solution().kSmallestPairs(new int[] {1, 1, 2}, new int[] {1, 2, 3}, 2),
+                new Solution().ksmallestPairs(new int[] {1, 1, 2}, new int[] {1, 2, 3}, 2),
                 equalTo(new ArrayList<>(Arrays.asList(Arrays.asList(1, 1), Arrays.asList(1, 1)))));
     }
 
     @Test
-    void kSmallestPairs3() {
+    void ksmallestPairs3() {
         assertThat(
-                new Solution().kSmallestPairs(new int[] {1, 2}, new int[] {3}, 3),
+                new Solution().ksmallestPairs(new int[] {1, 2}, new int[] {3}, 3),
                 equalTo(new ArrayList<>(Arrays.asList(Arrays.asList(1, 3), Arrays.asList(2, 3)))));
     }
 }
