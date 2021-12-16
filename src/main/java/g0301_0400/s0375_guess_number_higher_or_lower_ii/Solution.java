@@ -20,11 +20,13 @@ Optimization:
 */
 
 public class Solution {
+    Integer[][] dp;
+
     public int getMoneyAmount(int n) {
         dp = new Integer[n][n];
         return solve(1, n);
     }
-    Integer[][] dp;
+
     private int solve(int from, int to) {
         if (from >= to) {
             return 0;
