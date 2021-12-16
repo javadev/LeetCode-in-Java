@@ -28,6 +28,6 @@ public class Solution {
             count += result(nums, target - i);
         }
         storage[target] = count;
-        return storage[target];
+        return count;
     }
 }
