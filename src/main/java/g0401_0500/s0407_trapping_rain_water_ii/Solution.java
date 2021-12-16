@@ -32,7 +32,8 @@ public class Solution {
         PriorityQueue<Cell> walls = new PriorityQueue<Cell>();
         water = 0;
         visited1 = new boolean[heightMap.length][heightMap[0].length];
-        int rows = heightMap.length, cols = heightMap[0].length;
+        int rows = heightMap.length;
+        int cols = heightMap[0].length;
         // build wall
         for (int c = 0; c < cols; c++) {
             walls.add(new Cell(0, c, heightMap[0][c]));
