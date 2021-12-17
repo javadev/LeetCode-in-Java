@@ -4,7 +4,7 @@ package g0001_0100.s0028_implement_strstr;
 
 public class Solution {
     public int strStr(String haystack, String needle) {
-        if (needle == null) {
+        if (needle.isEmpty()) {
             return 0;
         }
         int m = haystack.length();
