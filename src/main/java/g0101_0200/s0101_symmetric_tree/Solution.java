@@ -16,11 +16,7 @@ public class Solution {
 
     private boolean helper(TreeNode leftNode, TreeNode rightNode) {
         if (leftNode == null || rightNode == null) {
-            boolean isSymetrical = false;
-            if (leftNode == null && rightNode == null) {
-                isSymetrical = true;
-            }
-            return isSymetrical;
+            return leftNode == null && rightNode == null;
         }
 
         if (leftNode.val != rightNode.val) {

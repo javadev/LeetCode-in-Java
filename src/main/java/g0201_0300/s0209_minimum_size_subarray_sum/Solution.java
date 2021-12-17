@@ -10,9 +10,7 @@ public class Solution {
         int min = Integer.MAX_VALUE;
         while (j < nums.length) {
             sum += nums[j];
-            if (sum < target) {
-                j++;
-            } else {
+            if (sum >= target) {
                 while (i <= j) {
                     if (sum - nums[i] >= target) {
                         sum = sum - nums[i];
@@ -24,8 +22,8 @@ public class Solution {
                 if (j - i + 1 < min) {
                     min = j - i + 1;
                 }
-                j++;
             }
+            j++;
         }
         if (min == Integer.MAX_VALUE) {
             return 0;

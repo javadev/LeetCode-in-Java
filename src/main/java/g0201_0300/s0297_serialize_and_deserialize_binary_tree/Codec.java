@@ -40,7 +40,7 @@ public class Codec {
             sb2.append('0');
         }
         sb2.append(s);
-        sb.append(sb2.toString());
+        sb.append(sb2);
         serialize(root.left, sb);
         serialize(root.right, sb);
     }

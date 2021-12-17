@@ -32,9 +32,10 @@ public class WordDictionary {
         ArrayList<String> a = dict[word.length()];
         for (String s : a) {
             boolean match = true;
-            for (int i = 0; i < word.length() && match; i++) {
+            for (int i = 0; i < word.length(); i++) {
                 if (word.charAt(i) != '.' && s.charAt(i) != word.charAt(i)) {
                     match = false;
+                    break;
                 }
             }
             if (match) {
