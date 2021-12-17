@@ -2,7 +2,7 @@ package g0301_0400.s0374_guess_number_higher_or_lower;
 
 // #Easy #Binary_Search #Interactive
 
-/**
+/*
  * Forward declaration of guess API.
  *
  * @param num your guess
