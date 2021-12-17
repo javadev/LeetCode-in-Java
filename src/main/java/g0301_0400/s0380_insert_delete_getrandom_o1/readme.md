@@ -15,8 +15,8 @@ You must implement the functions of the class such that each function works in *
 
 **Input** 
 
-    \["RandomizedSet", "insert", "remove", "insert", "getRandom", "remove", "insert", "getRandom"\] 
-    \[\[\], \[1\], \[2\], \[2\], \[\], \[1\], \[2\], \[\]\]
+    ["RandomizedSet", "insert", "remove", "insert", "getRandom", "remove", "insert", "getRandom"] 
+    [[], [1], [2], [2], [], [1], [2], []]
 
 **Output:** \[null, true, false, true, 2, true, false, 2\]
 
