@@ -8,7 +8,7 @@ import java.util.List;
 public class Solution {
     public List<Integer> findDuplicates(int[] nums) {
         int num = nums.length;
-        int count[] = new int[num];
+        int[] count = new int[num];
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < num; i++) {
             // count number of times each number appears
