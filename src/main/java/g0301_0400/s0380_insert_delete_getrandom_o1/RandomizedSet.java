@@ -9,11 +9,13 @@ import java.util.Map;
 
 @SuppressWarnings("java:S2245")
 public class RandomizedSet {
-    List<Integer> list = new ArrayList<Integer>();
-    Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+    List<Integer> list = new ArrayList<>();
+    Map<Integer, Integer> map = new HashMap<>();
 
     /* Initialize your data structure here. */
-    public RandomizedSet() {}
+    public RandomizedSet() {
+        // empty constructor
+    }
 
     /* Inserts a value to the set. Returns true if the set did not already contain the specified element. */
     public boolean insert(int val) {
