@@ -21,12 +21,12 @@ public class Solution {
 
     // use long in case of overflow
     private int calSteps(int n, long n1, long n2) {
-        int steps = 0;
+        long steps = 0;
         while (n1 <= n) {
             steps += Math.min(n + 1L, n2) - n1;
             n1 *= 10;
             n2 *= 10;
         }
-        return steps;
+        return (int) steps;
     }
 }
