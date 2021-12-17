@@ -31,12 +31,7 @@ public class Solution {
         // if passes height check
         //  - Check if left subtree is balanced and if the right subtree is balanced
         //  - If one of both are imbalanced, then the tree is imbalanced
-        boolean isBalanced = false;
-        if (heightDiff <= 1 && isBalanced(root.left) && isBalanced(root.right)) {
-
-            isBalanced = true;
-        }
-        return isBalanced;
+        return heightDiff <= 1 && isBalanced(root.left) && isBalanced(root.right);
     }
 
     public int getMaxHeight(TreeNode root) {

@@ -24,11 +24,10 @@ public class Solution {
         while (null != next) {
             if (current.val == next.val) {
                 current.next = next.next;
-                next = current.next;
             } else {
                 current = next;
-                next = current.next;
             }
+            next = current.next;
         }
         return head;
     }
