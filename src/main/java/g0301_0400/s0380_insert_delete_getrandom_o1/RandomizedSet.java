@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("java:S2245")
 public class RandomizedSet {
     List<Integer> list = new ArrayList<Integer>();
     Map<Integer, Integer> map = new HashMap<Integer, Integer>();
