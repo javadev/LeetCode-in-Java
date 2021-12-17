@@ -5,7 +5,8 @@ package g0401_0500.s0415_add_strings;
 public class Solution {
     public String addStrings(String num1, String num2) {
         StringBuilder result = new StringBuilder();
-        for (int i = num1.length() - 1, j = num2.length() - 1, carry = 0;
+        int carry = 0;
+        for (int i = num1.length() - 1, j = num2.length() - 1;
                 i >= 0 || j >= 0 || carry != 0;
                 i--, j--) {
             int sum = carry;
