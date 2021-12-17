@@ -2,19 +2,22 @@ package g0301_0400.s0380_insert_delete_getrandom_o1;
 
 // #Medium #Top_Interview_Questions #Array #Hash_Table #Math #Design #Randomized
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@SuppressWarnings("java:S2245")
 public class RandomizedSet {
-    List<Integer> list = new ArrayList<>();
-    Map<Integer, Integer> map = new HashMap<>();
+    private final SecureRandom rand;
+    private final List<Integer> list;
+    private final Map<Integer, Integer> map;
 
     /* Initialize your data structure here. */
     public RandomizedSet() {
-        // empty constructor
+        this.rand = new SecureRandom();
+        this.list = new ArrayList<>();
+        this.map = new HashMap<>();
     }
 
     /* Inserts a value to the set. Returns true if the set did not already contain the specified element. */
@@ -45,8 +48,7 @@ public class RandomizedSet {
 
     /* Get a random element from the set. */
     public int getRandom() {
-        int a = (int) (Math.random() * list.size());
-        return list.get(a);
+        return list.get(rand.nextInt(list.size()));
     }
 }
 
