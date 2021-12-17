@@ -13,47 +13,42 @@ public class RandomizedSet {
     private final List<Integer> list;
     private final Map<Integer, Integer> map;
 
-    // Initialize your data structure here.
+    /* Initialize your data structure here. */
     public RandomizedSet() {
         this.rand = new SecureRandom();
         this.list = new ArrayList<>();
         this.map = new HashMap<>();
     }
 
-    // Inserts a value to the set. Returns true if the set did not already contain the specified
-    // element.
-
+    /* Inserts a value to the set. Returns true if the set did not already contain the specified element. */
     public boolean insert(int val) {
-        if (this.map.containsKey(val)) {
+        if (map.containsKey(val)) {
             return false;
         }
-        this.list.add(val);
-        this.map.put(val, list.size() - 1);
+        map.put(val, list.size());
+        list.add(val);
+
         return true;
     }
 
-    // Removes a value from the set. Returns true if the set contained the specified element.
+    /* Removes a value from the set. Returns true if the set contained the specified element. */
     public boolean remove(int val) {
-        if (!this.map.containsKey(val)) {
+        if (!map.containsKey(val)) {
             return false;
         }
-        int index = this.map.get(val);
-        if (index == this.list.size() - 1) {
-            this.list.remove(index);
-            this.map.remove(val);
-            return true;
-        }
-        int value = list.get(list.size() - 1);
-        this.list.set(index, value);
-        this.list.remove(this.list.size() - 1);
-        this.map.remove(val);
-        this.map.put(value, index);
+        int swap1 = map.get(val);
+        int swap2 = list.size() - 1;
+        int val2 = list.get(swap2);
+        map.put(val2, swap1);
+        map.remove(val);
+        list.set(swap1, val2);
+        list.remove(list.size() - 1);
         return true;
     }
 
-    // Get a random element from the set.
+    /* Get a random element from the set. */
     public int getRandom() {
-        return this.list.get(rand.nextInt(list.size()));
+        return list.get(rand.nextInt(list.size()));
     }
 }
 
