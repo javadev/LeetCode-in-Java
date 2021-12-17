@@ -7,9 +7,11 @@ public class Solution {
         if (needle.isEmpty()) {
             return 0;
         }
-        for (int i = 0; i <= haystack.length() - needle.length(); i++) {
-            if (haystack.substring(i, i + needle.length()).equals(needle)) {
-                return i;
+        int m = haystack.length();
+        int n = needle.length();
+        for (int start = 0; start < m - n + 1; start++) {
+            if (haystack.substring(start, start + n).equals(needle)) {
+                return start;
             }
         }
         return -1;
