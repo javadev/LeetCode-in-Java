@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 class RandomizedSetTest {
     @Test
-    void RandomizedSet() {
+    void randomizedSet() {
         List<String> result = new ArrayList<>();
         RandomizedSet randomizedSet = null;
         result.add(randomizedSet + "");

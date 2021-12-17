@@ -38,17 +38,13 @@ public class Solution {
         int col = matrix[0].length - 1;
         int count = 0;
         while (row < matrix.length && col >= 0) {
-            if (matrix[row][col] == target) {
+            if (matrix[row][col] <= target) {
                 // get the count in current row
                 count += col + 1;
                 row++;
             } else if (matrix[row][col] > target) {
                 // eliminate the current col
                 col--;
-            } else {
-                // get the count in current row
-                count += col + 1;
-                row++;
             }
         }
         return count;
