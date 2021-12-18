@@ -19,28 +19,28 @@ You must implement the functions of the class such that each function works on *
 
 **Input**
 
-    \["RandomizedCollection", "insert", "insert", "insert", "getRandom", "remove", "getRandom"\] 
-    \[\[\], \[1\], \[1\], \[2\], \[\], \[1\], \[\]\]
+    ["RandomizedCollection", "insert", "insert", "insert", "getRandom", "remove", "getRandom"]
+    [[], [1], [1], [2], [], [1], []]
 
 **Output:**
 
-    \[null, true, false, true, 2, true, 1\]
+    [null, true, false, true, 2, true, 1]
 
 **Explanation:** 
 
-        RandomizedCollection randomizedCollection = new RandomizedCollection(); 
-        randomizedCollection.insert(1);     // return true since the collection does not contain 1. 
-                                            // Inserts 1 into the collection. 
-        randomizedCollection.insert(1);     // return false since the collection contains 1. 
-                                            // Inserts another 1 into the collection. Collection now contains \[1,1\]. 
-        randomizedCollection.insert(2);     // return true since the collection does not contain 2. 
-                                            // Inserts 2 into the collection. Collection now contains \[1,1,2\]. 
-        randomizedCollection.getRandom();   // getRandom should: 
-                                            // - return 1 with probability 2/3, or 
-                                            // - return 2 with probability 1/3. 
-        randomizedCollection.remove(1);     // return true since the collection contains 1. 
-                                            // Removes 1 from the collection. Collection now contains [1,2]. 
-        randomizedCollection.getRandom();   // getRandom should return 1 or 2, both equally likely.
+    RandomizedCollection randomizedCollection = new RandomizedCollection(); 
+    randomizedCollection.insert(1);     // return true since the collection does not contain 1. 
+                                        // Inserts 1 into the collection. 
+    randomizedCollection.insert(1);     // return false since the collection contains 1. 
+                                        // Inserts another 1 into the collection. Collection now contains \[1,1\]. 
+    randomizedCollection.insert(2);     // return true since the collection does not contain 2. 
+                                        // Inserts 2 into the collection. Collection now contains \[1,1,2\]. 
+    randomizedCollection.getRandom();   // getRandom should: 
+                                        // - return 1 with probability 2/3, or 
+                                        // - return 2 with probability 1/3. 
+    randomizedCollection.remove(1);     // return true since the collection contains 1. 
+                                        // Removes 1 from the collection. Collection now contains [1,2]. 
+    randomizedCollection.getRandom();   // getRandom should return 1 or 2, both equally likely.
 
 **Constraints:**
 
