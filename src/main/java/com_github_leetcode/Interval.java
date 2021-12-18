@@ -42,7 +42,7 @@ public class Interval implements Comparable<Interval> {
     @Override
     public int compareTo(Interval o) {
         int compareStart = o.start;
-        //ascending order
+        // ascending order
         return this.start - compareStart;
     }
 
