@@ -15,12 +15,12 @@ Implement the `Solution` class:
 
 **Input** 
 
-    \["Solution", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom"\] 
-    \[\[\[1, 2, 3\]\], \[\], \[\], \[\], \[\], \[\]\]
+    ["Solution", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom"] 
+    [[[1, 2, 3]], [], [], [], [], []]
 
 **Output:** 
 
-    \[null, 1, 3, 2, 2, 3\]
+    [null, 1, 3, 2, 2, 3]
 
 **Explanation:**
 
