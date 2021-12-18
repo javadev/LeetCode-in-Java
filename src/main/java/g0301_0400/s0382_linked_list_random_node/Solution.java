@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    List<Integer> al;
-    SecureRandom rand;
+    private List<Integer> al;
+    private SecureRandom rand;
 
     public Solution(ListNode head) {
         al = new ArrayList<>();

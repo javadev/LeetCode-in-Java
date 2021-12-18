@@ -13,13 +13,18 @@ Implement the `Solution` class:
 
 ![](https://assets.leetcode.com/uploads/2021/03/16/getrand-linked-list.jpg)
 
-**Input** \["Solution", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom"\] \[\[\[1, 2, 3\]\], \[\], \[\], \[\], \[\], \[\]\]
+**Input** 
 
-**Output:** \[null, 1, 3, 2, 2, 3\]
+    \["Solution", "getRandom", "getRandom", "getRandom", "getRandom", "getRandom"\] 
+    \[\[\[1, 2, 3\]\], \[\], \[\], \[\], \[\], \[\]\]
+
+**Output:** 
+
+    \[null, 1, 3, 2, 2, 3\]
 
 **Explanation:**
 
-    Solution solution = new Solution(\[1, 2, 3\]); 
+    Solution solution = new Solution([1, 2, 3]); 
     solution.getRandom(); // return 1 
     solution.getRandom(); // return 3 
     solution.getRandom(); // return 2 

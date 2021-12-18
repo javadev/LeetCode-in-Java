@@ -17,9 +17,14 @@ You must implement the functions of the class such that each function works on *
 
 **Example 1:**
 
-**Input** \["RandomizedCollection", "insert", "insert", "insert", "getRandom", "remove", "getRandom"\] \[\[\], \[1\], \[1\], \[2\], \[\], \[1\], \[\]\]
+**Input**
 
-**Output:** \[null, true, false, true, 2, true, 1\]
+    \["RandomizedCollection", "insert", "insert", "insert", "getRandom", "remove", "getRandom"\] 
+    \[\[\], \[1\], \[1\], \[2\], \[\], \[1\], \[\]\]
+
+**Output:**
+
+    \[null, true, false, true, 2, true, 1\]
 
 **Explanation:** 
 
@@ -34,7 +39,7 @@ You must implement the functions of the class such that each function works on *
                                             // - return 1 with probability 2/3, or 
                                             // - return 2 with probability 1/3. 
         randomizedCollection.remove(1);     // return true since the collection contains 1. 
-                                            // Removes 1 from the collection. Collection now contains \[1,2\]. 
+                                            // Removes 1 from the collection. Collection now contains [1,2]. 
         randomizedCollection.getRandom();   // getRandom should return 1 or 2, both equally likely.
 
 **Constraints:**

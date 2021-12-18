@@ -8,8 +8,8 @@ import java.util.HashSet;
 
 public class RandomizedCollection {
     private HashMap<Integer, HashSet<Integer>> hashMap;
-    int[] arr;
-    int size;
+    private int[] arr;
+    private int size;
     SecureRandom rand;
 
     public RandomizedCollection() {
