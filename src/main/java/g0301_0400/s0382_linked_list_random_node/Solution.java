@@ -1,7 +1,8 @@
 package g0301_0400.s0382_linked_list_random_node;
 
-import com_github_leetcode.ListNode;
+// #Medium #Math #Linked_List #Randomized #Reservoir_Sampling
 
+import com_github_leetcode.ListNode;
 import java.util.ArrayList;
 import java.util.List;
 
