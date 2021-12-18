@@ -6,11 +6,12 @@ import java.security.SecureRandom;
 import java.util.HashMap;
 import java.util.HashSet;
 
+@SuppressWarnings("java:S3824")
 public class RandomizedCollection {
     private HashMap<Integer, HashSet<Integer>> hashMap;
     private int[] arr;
     private int size;
-    SecureRandom rand;
+    private SecureRandom rand;
 
     public RandomizedCollection() {
         hashMap = new HashMap<>();
