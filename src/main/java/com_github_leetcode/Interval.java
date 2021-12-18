@@ -1,5 +1,6 @@
 package com_github_leetcode;
 
+@SuppressWarnings("java:S1104")
 public class Interval implements Comparable<Interval> {
     public int start;
     public int end;

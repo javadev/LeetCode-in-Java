@@ -2,6 +2,7 @@ package com_github_leetcode;
 
 import java.util.List;
 
+@SuppressWarnings("java:S1104")
 public class Employee {
     /** It's the unique id of each node; unique id of this employee */
     public int id;
