@@ -8,7 +8,8 @@ public class CommonUtils {
     public static char[][] convertLeetCodeRegular2DCharArrayInputIntoJavaArray(String input) {
         /*
          * LeetCode 2-d char array usually comes in like this:
-         * ["#"," ","#"],[" "," ","#"],["#","c"," "] which is wrapped in double quotes instead of single quotes which makes it not usable in Java code.
+         * ["#"," ","#"],[" "," ","#"],["#","c"," "] which is wrapped in double quotes instead
+         * of single quotes which makes it not usable in Java code.
          * This method helps with the conversion.
          */
         String[] arrays = input.split("],\\[");
