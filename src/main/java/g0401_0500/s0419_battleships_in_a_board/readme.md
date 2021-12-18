@@ -1,32 +1,30 @@
-﻿417\. Pacific Atlantic Water Flow
+﻿419\. Battleships in a Board
 
 Medium
 
-There is an `m x n` rectangular island that borders both the **Pacific Ocean** and **Atlantic Ocean**. The **Pacific Ocean** touches the island's left and top edges, and the **Atlantic Ocean** touches the island's right and bottom edges.
+Given an `m x n` matrix `board` where each cell is a battleship `'X'` or empty `'.'`, return _the number of the **battleships** on_ `board`.
 
-The island is partitioned into a grid of square cells. You are given an `m x n` integer matrix `heights` where `heights[r][c]` represents the **height above sea level** of the cell at coordinate `(r, c)`.
-
-The island receives a lot of rain, and the rain water can flow to neighboring cells directly north, south, east, and west if the neighboring cell's height is **less than or equal to** the current cell's height. Water can flow from any cell adjacent to an ocean into the ocean.
-
-Return _a **2D list** of grid coordinates_ `result` _where_ <code>result[i] = [r<sub>i</sub>, c<sub>i</sub>]</code> _denotes that rain water can flow from cell_ <code>(r<sub>i</sub>, c<sub>i</sub>)</code> _to **both** the Pacific and Atlantic oceans_.
+**Battleships** can only be placed horizontally or vertically on `board`. In other words, they can only be made of the shape `1 x k` (`1` row, `k` columns) or `k x 1` (`k` rows, `1` column), where `k` can be of any size. At least one horizontal or vertical cell separates between two battleships (i.e., there are no adjacent battleships).
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/08/waterflow-grid.jpg)
+![](https://assets.leetcode.com/uploads/2021/04/10/battelship-grid.jpg)
 
-**Input:** heights = \[\[1,2,2,3,5\],\[3,2,3,4,4\],\[2,4,5,3,1\],\[6,7,1,4,5\],\[5,1,1,2,4\]\]
+**Input:** board = \[\["X",".",".","X"\],\[".",".",".","X"\],\[".",".",".","X"\]\]
 
-**Output:** \[\[0,4\],\[1,3\],\[1,4\],\[2,2\],\[3,0\],\[3,1\],\[4,0\]\] 
+**Output:** 2 
 
 **Example 2:**
 
-**Input:** heights = \[\[2,1\],\[1,2\]\]
+**Input:** board = \[\["."\]\]
 
-**Output:** \[\[0,0\],\[0,1\],\[1,0\],\[1,1\]\] 
+**Output:** 0 
 
 **Constraints:**
 
-*   `m == heights.length`
-*   `n == heights[r].length`
+*   `m == board.length`
+*   `n == board[i].length`
 *   `1 <= m, n <= 200`
-*   <code>0 <= heights[r][c] <= 10<sup>5</sup></code>
+*   `board[i][j]` is either `'.'` or `'X'`.
+
+**Follow up:** Could you do it in one-pass, using only `O(1)` extra memory and without modifying the values `board`?
