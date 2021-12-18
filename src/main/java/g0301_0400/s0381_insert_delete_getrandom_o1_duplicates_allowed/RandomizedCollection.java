@@ -23,7 +23,7 @@ public class RandomizedCollection {
         boolean exists = true;
         if (!hashMap.containsKey(val)) {
             exists = false;
-            hashMap.put(val, new HashSet<Integer>());
+            hashMap.put(val, new HashSet<>());
         }
         hashMap.get(val).add(size);
         arr[size] = val;
