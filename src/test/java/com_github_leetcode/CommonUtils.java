@@ -5,6 +5,13 @@ import java.util.List;
 
 public class CommonUtils {
 
+    public static void printArray(int[] nums) {
+        for (int i : nums) {
+            System.out.print(i + ", ");
+        }
+        System.out.println();
+    }
+
     public static char[][] convertLeetCodeRegular2DCharArrayInputIntoJavaArray(String input) {
         /*
          * LeetCode 2-d char array usually comes in like this:
