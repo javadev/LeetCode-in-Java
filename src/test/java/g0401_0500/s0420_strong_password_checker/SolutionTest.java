@@ -20,4 +20,14 @@ class SolutionTest {
     void strongPasswordChecker3() {
         assertThat(new Solution().strongPasswordChecker("1337C0d3"), equalTo(0));
     }
+
+    @Test
+    void strongPasswordChecker4() {
+        assertThat(new Solution().strongPasswordChecker("aaa"), equalTo(3));
+    }
+
+    @Test
+    void strongPasswordChecker5() {
+        assertThat(new Solution().strongPasswordChecker("aaa1"), equalTo(2));
+    }
 }
