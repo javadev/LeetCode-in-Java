@@ -1,5 +1,7 @@
 package g0301_0400.s0384_shuffle_an_array;
 
+// #Medium #Top_Interview_Questions #Array #Math #Randomized
+
 import java.security.SecureRandom;
 
 public class Solution {
