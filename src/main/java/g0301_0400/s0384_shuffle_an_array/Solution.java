@@ -2,15 +2,15 @@ package g0301_0400.s0384_shuffle_an_array;
 
 // #Medium #Top_Interview_Questions #Array #Math #Randomized
 
-import java.util.Random;
+import java.security.SecureRandom;
 
 public class Solution {
     private int[] arr;
-    private Random ran;
+    private SecureRandom ran;
 
     public Solution(int[] nums) {
         arr = nums;
-        ran = new Random();
+        ran = new SecureRandom();
     }
 
     public int[] reset() {
