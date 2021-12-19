@@ -1,5 +1,7 @@
 package g0001_0100.s0043_multiple_strings;
 
+// #Medium #String #Math #Simulation
+
 public class Solution {
     private int[] getIntArray(String s) {
         char[] chars = s.toCharArray();

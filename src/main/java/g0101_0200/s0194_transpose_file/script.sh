@@ -1,4 +1,5 @@
 # Read from the file file.txt and print its transposed content to stdout.
+# #Medium #Shell
 wordcount=$(head -1 file.txt | wc -w)
 col_n=1
 while [[ $col_n -le $wordcount ]]; do
