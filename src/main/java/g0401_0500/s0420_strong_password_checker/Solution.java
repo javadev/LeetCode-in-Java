@@ -10,21 +10,22 @@ public class Solution {
         int d = 1;
         char[] carr = s.toCharArray();
         int[] arr = new int[carr.length];
-        for (int i = 0; i < arr.length; ) {
-            if (Character.isLowerCase(carr[i])) {
+        int i1 = 0;
+        while (i1 < arr.length) {
+            if (Character.isLowerCase(carr[i1])) {
                 a1 = 0;
             }
-            if (Character.isUpperCase(carr[i])) {
+            if (Character.isUpperCase(carr[i1])) {
                 a2 = 0;
             }
-            if (Character.isDigit(carr[i])) {
+            if (Character.isDigit(carr[i1])) {
                 d = 0;
             }
-            int j = i;
-            while (i < carr.length && carr[i] == carr[j]) {
-                i++;
+            int j = i1;
+            while (i1 < carr.length && carr[i1] == carr[j]) {
+                i1++;
             }
-            arr[j] = i - j;
+            arr[j] = i1 - j;
         }
         int totalMissing = (a1 + a2 + d);
         if (arr.length < 6) {
@@ -48,7 +49,6 @@ public class Solution {
                     arr[i] -= overLen;
                     overLen -= need;
                 }
-
                 if (arr[i] >= 3) {
                     leftOver += arr[i] / 3;
                 }
