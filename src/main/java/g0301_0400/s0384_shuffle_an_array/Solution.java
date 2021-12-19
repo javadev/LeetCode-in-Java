@@ -2,37 +2,29 @@ package g0301_0400.s0384_shuffle_an_array;
 
 // #Medium #Top_Interview_Questions #Array #Math #Randomized
 
-import java.security.SecureRandom;
+import java.util.Random;
 
 public class Solution {
-    // credit:
-    // https://leetcode.com/problems/shuffle-an-array/discuss/85958/First-Accepted-Solution-Java
-    private int[] nums;
-    private SecureRandom random;
+    private int[] arr;
+    private Random ran;
 
     public Solution(int[] nums) {
-        this.nums = nums;
-        this.random = new SecureRandom();
+        arr = nums;
+        ran = new Random();
     }
 
-    // Resets the array to its original configuration and return it.
     public int[] reset() {
-        return this.nums;
+        return arr;
     }
 
-    // Returns a random shuffling of the array.
     public int[] shuffle() {
-        int[] shuffled = this.nums.clone();
-        for (int i = 1; i < nums.length; i++) {
-            int j = random.nextInt(i + 1);
-            swap(shuffled, i, j);
+        int[] random = arr.clone();
+        for (int i = random.length - 1; i > 0; i--) {
+            int rand = ran.nextInt(i + 1);
+            int temp = random[i];
+            random[i] = random[rand];
+            random[rand] = temp;
         }
-        return shuffled;
-    }
-
-    private void swap(int[] shuffled, int i, int j) {
-        int tmp = shuffled[i];
-        shuffled[i] = shuffled[j];
-        shuffled[j] = tmp;
+        return random;
     }
 }
