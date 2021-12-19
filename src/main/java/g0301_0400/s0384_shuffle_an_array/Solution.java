@@ -5,8 +5,6 @@ package g0301_0400.s0384_shuffle_an_array;
 import java.security.SecureRandom;
 
 public class Solution {
-    // credit:
-    // https://leetcode.com/problems/shuffle-an-array/discuss/85958/First-Accepted-Solution-Java
     private int[] nums;
     private SecureRandom random;
 
@@ -23,7 +21,7 @@ public class Solution {
     // Returns a random shuffling of the array.
     public int[] shuffle() {
         int[] shuffled = this.nums.clone();
-        for (int i = 1; i < nums.length; i++) {
+        for (int i = nums.length - 1; i > 0; i--) {
             int j = random.nextInt(i + 1);
             swap(shuffled, i, j);
         }
