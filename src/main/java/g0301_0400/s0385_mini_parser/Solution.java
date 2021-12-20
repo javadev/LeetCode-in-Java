@@ -3,7 +3,6 @@ package g0301_0400.s0385_mini_parser;
 // #Medium #String #Depth_First_Search #Stack
 
 import com_github_leetcode.NestedInteger;
-import java.util.ArrayList;
 
 public class Solution {
     private int i = 0;
@@ -14,7 +13,7 @@ public class Solution {
 
     private NestedInteger getAns(String s) {
         if (s.charAt(i) == '[') {
-            NestedInteger ni = new NestedInteger(new ArrayList<>());
+            NestedInteger ni = new NestedInteger();
             i++;
             while (i < s.length() && s.charAt(i) != ']') {
                 ni.add(getAns(s));
