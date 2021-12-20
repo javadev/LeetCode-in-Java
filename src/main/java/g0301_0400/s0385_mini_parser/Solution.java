@@ -9,23 +9,24 @@ public class Solution {
     int i = 0;
 
     public NestedInteger deserialize(String s) {
-        return get_ans(s);
+        return getAns(s);
     }
 
-    private NestedInteger get_ans(String s) {
+    private NestedInteger getAns(String s) {
         if (s.charAt(i) == '[') {
             NestedInteger ni = new NestedInteger(new ArrayList<>());
             i++;
             while (i < s.length() && s.charAt(i) != ']') {
-                ni.add(get_ans(s));
+                ni.add(getAns(s));
             }
             i++;
             return ni;
         } else if (s.charAt(i) == ',') {
             i++;
-            return get_ans(s);
+            return getAns(s);
         } else {
-            int x = 0, m = 1;
+            int x = 0;
+            int m = 1;
             if (s.charAt(i) == '-') {
                 i++;
                 m = -1;

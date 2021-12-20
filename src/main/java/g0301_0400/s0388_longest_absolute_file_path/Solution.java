@@ -35,8 +35,9 @@ public class Solution {
                 stack.push(currStrLen + 1);
             }
             nextLevel = 0;
-            i = i + 1; // increment one to let it pass "\n" and start from "\t"
-            while (i < input.length() - 1 && input.substring(i, i + 1).equals("\t")) {
+            // increment one to let it pass "\n" and start from "\t"
+            i = i + 1;
+            while (i < input.length() - 1 && input.charAt(i) == '\t') {
                 nextLevel++;
                 i = i + 1;
             }
@@ -53,10 +54,8 @@ public class Solution {
                         j++;
                     }
                 }
-            } else if (nextLevel == currLevel) {
-                if (!isFile && !stack.isEmpty()) {
-                    currDirLen -= stack.pop();
-                }
+            } else if (nextLevel == currLevel && !isFile && !stack.isEmpty()) {
+                currDirLen -= stack.pop();
             }
             if (nextLevel == 0) {
                 currDirLen = 0;
