@@ -1,6 +1,4 @@
-package g0301_0400.s0341_flatten_nested_list_iterator;
-
-// #Medium #Top_Interview_Questions #Depth_First_Search #Tree #Stack #Design #Queue #Iterator
+package com_github_leetcode;
 
 import java.util.List;
 

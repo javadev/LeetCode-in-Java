@@ -3,7 +3,7 @@ package g0301_0400.s0385_mini_parser;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import g0301_0400.s0341_flatten_nested_list_iterator.NestedInteger;
+import com_github_leetcode.NestedInteger;
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
