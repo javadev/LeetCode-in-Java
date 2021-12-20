@@ -1,9 +1,9 @@
 package g0301_0400.s0387_first_unique_character_in_a_string;
 
-import org.junit.jupiter.api.Test;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
