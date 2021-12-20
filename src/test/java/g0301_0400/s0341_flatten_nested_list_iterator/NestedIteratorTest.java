@@ -3,6 +3,7 @@ package g0301_0400.s0341_flatten_nested_list_iterator;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+import com_github_leetcode.NestedInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

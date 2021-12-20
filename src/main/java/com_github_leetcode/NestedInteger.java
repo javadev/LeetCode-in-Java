@@ -1,12 +1,15 @@
-package g0301_0400.s0341_flatten_nested_list_iterator;
+package com_github_leetcode;
 
-// #Medium #Top_Interview_Questions #Depth_First_Search #Tree #Stack #Design #Queue #Iterator
-
+import java.util.ArrayList;
 import java.util.List;
 
 public class NestedInteger {
     private List<NestedInteger> list;
     private Integer integer;
+
+    public NestedInteger() {
+        this.list = new ArrayList<>();
+    }
 
     public NestedInteger(List<NestedInteger> list) {
         this.list = list;

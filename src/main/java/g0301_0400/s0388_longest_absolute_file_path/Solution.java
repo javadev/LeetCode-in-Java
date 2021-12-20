@@ -2,11 +2,12 @@ package g0301_0400.s0388_longest_absolute_file_path;
 
 // #Medium #String #Depth_First_Search #Stack
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class Solution {
     public int lengthLongestPath(String input) {
-        Stack<Integer> stack = new Stack();
+        Deque<Integer> stack = new ArrayDeque<>();
         int longestLen = 0;
         int currDirLen = 0;
         int i = 0;

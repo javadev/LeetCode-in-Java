@@ -2,6 +2,7 @@ package g0301_0400.s0341_flatten_nested_list_iterator;
 
 // #Medium #Top_Interview_Questions #Depth_First_Search #Tree #Stack #Design #Queue #Iterator
 
+import com_github_leetcode.NestedInteger;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Iterator;
