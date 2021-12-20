@@ -20,7 +20,16 @@ Each element is either an integer or a list whose elements may also be integers 
 
 **Output:** [123,[456,[789]]]
 
-**Explanation:** Return a NestedInteger object containing a nested list with 2 elements: 1. An integer containing value 123. 2. A nested list containing two elements: i. An integer containing value 456. ii. A nested list with one element: a. An integer containing value 789
+**Explanation:** 
+Return a NestedInteger object containing a nested list with 2 elements: 
+1. An integer containing value 123. 
+2. A nested list containing two elements:
+   
+   i. An integer containing value 456. 
+   
+    ii. A nested list with one element:
+        
+    a. An integer containing value 789
 
 **Constraints:**
 

@@ -6,7 +6,7 @@ import g0301_0400.s0341_flatten_nested_list_iterator.NestedInteger;
 import java.util.ArrayList;
 
 public class Solution {
-    int i = 0;
+    private int i = 0;
 
     public NestedInteger deserialize(String s) {
         return getAns(s);
