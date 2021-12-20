@@ -27,4 +27,8 @@ public class NestedInteger {
     public List<NestedInteger> getList() {
         return list;
     }
+
+    public void add(NestedInteger nestedInteger) {
+        this.list.add(nestedInteger);
+    }
 }
