@@ -7,17 +7,24 @@ import java.util.List;
 
 public class Solution {
     public List<Integer> lexicalOrder(int n) {
-        List<Integer> list = new ArrayList<>();
-        for (int i = 1; i <= Math.min(n, 9); i++) {
-            dfs(i, list, n);
-        }
-        return list;
+        List<Integer> lst = new ArrayList<>();
+        dfs(lst, n, 0);
+        return lst;
     }
 
-    private void dfs(int x, List<Integer> list, int n) {
-        list.add(x);
-        for (int i = 0; i < 10 && x * 10 + i <= n; i++) {
-            dfs(x * 10 + i, list, n);
+    private void dfs(List<Integer> lst, int n, int num) {
+        for (int i = 0; i <= 9; i++) {
+            int cur = 10 * num + i;
+            // get rid of 0
+            if (cur == 0) {
+                continue;
+            }
+            // when larger than n, return to the previous level
+            if (cur > n) {
+                return;
+            }
+            lst.add(cur);
+            dfs(lst, n, cur);
         }
     }
 }
