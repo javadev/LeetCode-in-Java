@@ -10,7 +10,13 @@ Here, we have `dir` as the only directory in the root. `dir` contains two subdir
 
 In text form, it looks like this (with ⟶ representing the tab character):
 
-dir ⟶ subdir1 ⟶ ⟶ file1.ext ⟶ ⟶ subsubdir1 ⟶ subdir2 ⟶ ⟶ subsubdir2 ⟶ ⟶ ⟶ file2.ext
+    dir 
+    ⟶ subdir1
+    ⟶ ⟶ file1.ext
+    ⟶ ⟶ subsubdir1
+    ⟶ subdir2
+    ⟶ ⟶ subsubdir2
+    ⟶ ⟶ ⟶ file2.ext
 
 If we were to write this representation in code, it will look like this: `"dir  
 \tsubdir1  
