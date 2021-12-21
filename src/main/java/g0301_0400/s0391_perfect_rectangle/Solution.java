@@ -30,7 +30,9 @@ public class Solution {
             }
             if (container.contains(p3)) {
                 container.remove(p3);
-            } else container.add(p3);
+            } else {
+                container.add(p3);
+            }
             if (container.contains(p4)) {
                 container.remove(p4);
             } else {
@@ -74,8 +76,8 @@ public class Solution {
             if (o == null || getClass() != o.getClass()) {
                 return false;
             }
-            Point Point = (Point) o;
-            return x == Point.x && y == Point.y;
+            Point point = (Point) o;
+            return x == point.x && y == point.y;
         }
 
         @Override
