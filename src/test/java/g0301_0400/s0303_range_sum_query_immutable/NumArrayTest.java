@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class NumArrayTest {
     @Test
-    void createSumUpdateSum() {
+    void numArray() {
         NumArray numArray = new NumArray(new int[] {-2, 0, 3, -5, 2, -1});
         // return (-2) + 0 + 3 = 1
         assertThat(numArray.sumRange(0, 2), equalTo(1));
