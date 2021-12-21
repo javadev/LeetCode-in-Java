@@ -20,24 +20,20 @@ public class Solution {
             Point p4 = new Point(rectangle[0], rectangle[3]);
             if (container.contains(p1)) {
                 container.remove(p1);
-            }
-            else {
+            } else {
                 container.add(p1);
             }
             if (container.contains(p2)) {
                 container.remove(p2);
-            }
-            else {
+            } else {
                 container.add(p2);
             }
             if (container.contains(p3)) {
                 container.remove(p3);
-            }
-            else container.add(p3);
+            } else container.add(p3);
             if (container.contains(p4)) {
                 container.remove(p4);
-            }
-            else {
+            } else {
                 container.add(p4);
             }
         }
@@ -46,7 +42,8 @@ public class Solution {
             return false;
         }
 
-        // these four points represent the last perfect rectangle, check this rectangle area to the totalArea
+        // these four points represent the last perfect rectangle, check this rectangle area to the
+        // totalArea
         int minX = Integer.MAX_VALUE;
         int maxX = Integer.MIN_VALUE;
         int minY = Integer.MAX_VALUE;
@@ -78,8 +75,7 @@ public class Solution {
                 return false;
             }
             Point Point = (Point) o;
-            return x == Point.x &&
-                    y == Point.y;
+            return x == Point.x && y == Point.y;
         }
 
         @Override
