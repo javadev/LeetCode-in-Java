@@ -12,8 +12,9 @@ public class Solution {
         }
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-                if ((masks[i] & masks[j]) == 0)
+                if ((masks[i] & masks[j]) == 0) {
                     res = Math.max(res, words[i].length() * words[j].length());
+                }
             }
         }
         return res;
