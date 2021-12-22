@@ -13,21 +13,17 @@ Implement the `Solution` class:
 
 **Input** 
 
-["Solution", "pick", "pick", "pick"] 
-
-[[[1, 2, 3, 3, 3]], [3], [1], [3]]
+    ["Solution", "pick", "pick", "pick"] 
+    [[[1, 2, 3, 3, 3]], [3], [1], [3]]
 
 **Output:** [null, 4, 0, 2]
 
 **Explanation:** 
 
-Solution solution = new Solution([1, 2, 3, 3, 3]); 
-
-solution.pick(3); // It should return either index 2, 3, or 4 randomly. Each index should have equal probability of returning. 
-
-solution.pick(1); // It should return 0. Since in the array only nums[0] is equal to 1. 
-
-solution.pick(3); // It should return either index 2, 3, or 4 randomly. Each index should have equal probability of returning.
+    Solution solution = new Solution([1, 2, 3, 3, 3]); 
+    solution.pick(3); // It should return either index 2, 3, or 4 randomly. Each index should have equal probability of returning. 
+    solution.pick(1); // It should return 0. Since in the array only nums[0] is equal to 1. 
+    solution.pick(3); // It should return either index 2, 3, or 4 randomly. Each index should have equal probability of returning.
 
 **Constraints:**
 
