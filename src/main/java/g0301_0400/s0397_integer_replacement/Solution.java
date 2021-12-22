@@ -1,9 +1,9 @@
 package g0301_0400.s0397_integer_replacement;
 
+// #Medium #Dynamic_Programming #Greedy #Bit_Manipulation #Memoization
+
 import java.util.HashMap;
 import java.util.Map;
-
-// #Medium #Dynamic_Programming #Greedy #Bit_Manipulation #Memoization
 
 public class Solution {
     public int integerReplacement(int n) {
