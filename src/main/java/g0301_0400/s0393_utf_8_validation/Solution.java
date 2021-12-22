@@ -3,9 +3,7 @@ package g0301_0400.s0393_utf_8_validation;
 // #Medium #Array #Bit_Manipulation
 
 public class Solution {
-    /**
-     * credit: https://discuss.leetcode.com/topic/58338/bit-manipulation-java-6ms/4
-     */
+    // credit: https://discuss.leetcode.com/topic/58338/bit-manipulation-java-6ms/4
     public boolean validUtf8(int[] data) {
         int count = 0;
         for (int d : data) {
