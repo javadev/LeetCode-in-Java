@@ -17,53 +17,53 @@ public class Solution {
         rate = new HashMap<>();
         int n = equations.size();
         for (int i = 0; i < n; ++i) {
-            String X = equations.get(i).get(0);
-            String Y = equations.get(i).get(1);
-            root.put(X, X);
-            root.put(Y, Y);
-            rate.put(X, 1.0);
-            rate.put(Y, 1.0);
+            String x = equations.get(i).get(0);
+            String y = equations.get(i).get(1);
+            root.put(x, x);
+            root.put(y, y);
+            rate.put(x, 1.0);
+            rate.put(y, 1.0);
         }
 
         for (int i = 0; i < n; ++i) {
-            String X = equations.get(i).get(0);
-            String Y = equations.get(i).get(1);
-            union(X, Y, values[i]);
+            String x = equations.get(i).get(0);
+            String y = equations.get(i).get(1);
+            union(x, y, values[i]);
         }
 
         double[] result = new double[queries.size()];
         for (int i = 0; i < queries.size(); ++i) {
-            String X = queries.get(i).get(0);
-            String Y = queries.get(i).get(1);
-            if (!root.containsKey(X) || !root.containsKey(Y)) {
+            String x = queries.get(i).get(0);
+            String y = queries.get(i).get(1);
+            if (!root.containsKey(x) || !root.containsKey(y)) {
                 result[i] = -1;
                 continue;
             }
 
-            String rootx = findRoot(X, X, 1.0);
-            String rooty = findRoot(Y, Y, 1.0);
-            result[i] = rootx.equals(rooty) ? rate.get(X) / rate.get(Y) : -1.0;
+            String rootX = findRoot(x, x, 1.0);
+            String rootY = findRoot(y, y, 1.0);
+            result[i] = rootX.equals(rootY) ? rate.get(x) / rate.get(y) : -1.0;
         }
 
         return result;
     }
 
-    private void union(String X, String Y, double v) {
-        String rootx = findRoot(X, X, 1.0);
-        String rooty = findRoot(Y, Y, 1.0);
+    private void union(String x, String y, double v) {
+        String rootx = findRoot(x, x, 1.0);
+        String rooty = findRoot(y, y, 1.0);
         root.put(rootx, rooty);
-        double r1 = rate.get(X);
-        double r2 = rate.get(Y);
+        double r1 = rate.get(x);
+        double r2 = rate.get(y);
         rate.put(rootx, v * r2 / r1);
     }
 
-    private String findRoot(String originalX, String X, double r) {
-        if (root.get(X).equals(X)) {
-            root.put(originalX, X);
-            rate.put(originalX, r * rate.get(X));
-            return X;
+    private String findRoot(String originalX, String x, double r) {
+        if (root.get(x).equals(x)) {
+            root.put(originalX, x);
+            rate.put(originalX, r * rate.get(x));
+            return x;
         }
 
-        return findRoot(originalX, root.get(X), r * rate.get(X));
+        return findRoot(originalX, root.get(x), r * rate.get(x));
     }
 }

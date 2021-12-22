@@ -1,16 +1,17 @@
 package g0301_0400.s0397_integer_replacement;
 
 import java.util.HashMap;
+import java.util.Map;
 
 // #Medium #Dynamic_Programming #Greedy #Bit_Manipulation #Memoization
 
 public class Solution {
     public int integerReplacement(int n) {
-        HashMap<Integer, Integer> dp = new HashMap();
+        Map<Integer, Integer> dp = new HashMap<>();
         return solve(n, dp);
     }
 
-    public static int solve(int n, HashMap<Integer, Integer> dp) {
+    public static int solve(int n, Map<Integer, Integer> dp) {
         if (n == 1) {
             return 0;
         }
