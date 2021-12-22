@@ -1,9 +1,9 @@
 package g0301_0400.s0397_integer_replacement;
 
-import org.junit.jupiter.api.Test;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test

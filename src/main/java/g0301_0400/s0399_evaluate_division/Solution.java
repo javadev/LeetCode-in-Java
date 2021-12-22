@@ -7,11 +7,12 @@ import java.util.List;
 import java.util.Map;
 
 public class Solution {
-    //Credit: https://medium.com/@null00/leetcode-evaluate-division-52a0158488c1
+    // Credit: https://medium.com/@null00/leetcode-evaluate-division-52a0158488c1
     private Map<String, String> root;
     private Map<String, Double> rate;
 
-    public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
+    public double[] calcEquation(
+            List<List<String>> equations, double[] values, List<List<String>> queries) {
         root = new HashMap<>();
         rate = new HashMap<>();
         int n = equations.size();
