@@ -8,12 +8,12 @@ public class Solution {
             return 0;
         }
         int[][] dp = new int[nums.length][nums.length];
-        return baloonBrustDp(nums, 0, nums.length - 1, dp);
+        return balloonBurstDp(nums, dp);
     }
 
-    private int baloonBrustDp(int[] nums, int si, int ei, int[][] dp) {
+    private int balloonBurstDp(int[] nums, int[][] dp) {
         for (int gap = 0; gap < nums.length; gap++) {
-            for (si = 0, ei = gap; ei < nums.length; si++, ei++) {
+            for (int si = 0, ei = gap; ei < nums.length; si++, ei++) {
                 int l = (si - 1 == -1) ? 1 : nums[si - 1];
                 int r = (ei + 1 == nums.length) ? 1 : nums[ei + 1];
                 int maxAns = (int) -1e7;
