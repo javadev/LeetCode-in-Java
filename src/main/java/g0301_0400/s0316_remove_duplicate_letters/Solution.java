@@ -13,7 +13,8 @@ public class Solution {
         StringBuilder sb = new StringBuilder();
         // i = index of the input string
         // j = index of the output stringBuilder
-        for (int i = 0, j = 0; i < s.length(); i++) {
+        int j = 0;
+        for (int i = 0; i < s.length(); i++) {
             char curr = s.charAt(i);
             // If the curr char is NOT already added in the final string
             if (!charAdded[curr - 'a']) {
