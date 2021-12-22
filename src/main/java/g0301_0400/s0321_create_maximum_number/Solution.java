@@ -30,7 +30,8 @@ public class Solution {
         if (size == 0) {
             return;
         }
-        for (int i = 0, j = 0; i < nums.length; i++) {
+        int j = 0;
+        for (int i = 0; i < nums.length; i++) {
             while (j > 0 && nums.length - i + j > size && nums[i] > maxSub[j - 1]) {
                 j--;
             }
