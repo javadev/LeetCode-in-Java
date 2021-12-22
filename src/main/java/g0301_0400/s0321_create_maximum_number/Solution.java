@@ -52,7 +52,8 @@ public class Solution {
             } else if (i >= size1) {
                 merge[idx] = maxSub2[j++];
             } else {
-                int ii = i, jj = j;
+                int ii = i;
+                int jj = j;
                 while (ii < size1 && jj < size2 && maxSub1[ii] == maxSub2[jj]) {
                     ii++;
                     jj++;
