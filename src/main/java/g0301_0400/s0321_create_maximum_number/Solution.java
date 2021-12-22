@@ -42,12 +42,16 @@ public class Solution {
 
     private int[] merge(int[] maxSub1, int[] maxSub2, int size1, int size2, int[] res) {
         int[] merge = new int[res.length];
-        int i = 0, j = 0, idx = 0;
+        int i = 0;
+        int j = 0;
+        int idx = 0;
         boolean equal = true;
         while (i < size1 || j < size2) {
-            if (j >= size2) merge[idx] = maxSub1[i++];
-            else if (i >= size1) merge[idx] = maxSub2[j++];
-            else {
+            if (j >= size2) {
+                merge[idx] = maxSub1[i++];
+            } else if (i >= size1) {
+                merge[idx] = maxSub2[j++];
+            } else {
                 int ii = i, jj = j;
                 while (ii < size1 && jj < size2 && maxSub1[ii] == maxSub2[jj]) {
                     ii++;
