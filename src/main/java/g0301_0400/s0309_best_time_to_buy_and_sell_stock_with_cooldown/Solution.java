@@ -34,7 +34,8 @@ public class Solution {
      *
      * (1) We have to `rest` before we `buy` and
      * (2) we have to `buy` before we `sell`
-     * One tricky point is how do you make sure you sell before you buy, since from the equations it seems that [buy, rest, buy] is entirely possible.
+     * One tricky point is how do you make sure you sell before you buy, since from the equations it seems that
+     * [buy, rest, buy] is entirely possible.
      *
      * Well, the answer lies within the fact that buy[i] <= rest[i] which means rest[i] =
      * max(sell[i-1], rest[i-1]). That made sure [buy, rest, buy] is never occurred.

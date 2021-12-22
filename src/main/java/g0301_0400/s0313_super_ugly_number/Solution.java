@@ -4,7 +4,9 @@ package g0301_0400.s0313_super_ugly_number;
 
 class Solution {
     public static int nthSuperUglyNumber(int n, int[] primes) {
-        if (primes.length == 0) return 1;
+        if (primes.length == 0) {
+            return 1;
+        }
         int[] uglies = new int[n];
         uglies[0] = 1;
         int[] uglyToMultiplyBy = new int[primes.length];

@@ -4,7 +4,9 @@ package g0301_0400.s0312_burst_balloons;
 
 public class Solution {
     public int maxCoins(int[] nums) {
-        if (nums.length == 0) return 0;
+        if (nums.length == 0) {
+            return 0;
+        }
         int[][] dp = new int[nums.length][nums.length];
         return baloonBrustDp(nums, 0, nums.length - 1, dp);
     }

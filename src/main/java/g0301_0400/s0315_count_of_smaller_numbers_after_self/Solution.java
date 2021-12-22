@@ -8,12 +8,14 @@ import java.util.List;
 
 public class Solution {
     public List<Integer> countSmaller(int[] nums) {
-        int minVal = 10001, maxVal = -10001;
+        int minVal = 10001;
+        int maxVal = -10001;
         for (int a : nums) {
             minVal = Math.min(minVal, a);
             maxVal = Math.max(maxVal, a);
         }
-        int range = maxVal - (minVal - 1) + 1, offset = -(minVal - 1);
+        int range = maxVal - (minVal - 1) + 1;
+        int offset = -(minVal - 1);
         FenwickTree bit = new FenwickTree(range);
         LinkedList<Integer> ans = new LinkedList<>();
         for (int n = nums.length, i = n - 1; i >= 0; i--) {
@@ -34,12 +36,16 @@ public class Solution {
         }
 
         public void update(int i, int v) {
-            for (; i < n; i += Integer.lowestOneBit(i)) bit[i] += v;
+            for (; i < n; i += Integer.lowestOneBit(i)) {
+                bit[i] += v;
+            }
         }
         // prefix sum query
         private int ps(int j) {
             int ps = 0;
-            for (; j != 0; j -= Integer.lowestOneBit(j)) ps += bit[j];
+            for (; j != 0; j -= Integer.lowestOneBit(j)) {
+                ps += bit[j];
+            }
             return ps;
         }
     }

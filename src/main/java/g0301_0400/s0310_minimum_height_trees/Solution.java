@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public List<Integer> findMinHeightTrees(int n, int[][] edges) {
         List<Integer> answer = new ArrayList<>();
