@@ -11,7 +11,7 @@ public class Solution {
         return solve(n, dp);
     }
 
-    public static int solve(int n, Map<Integer, Integer> dp) {
+    private int solve(int n, Map<Integer, Integer> dp) {
         if (n == 1) {
             return 0;
         }
