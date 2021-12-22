@@ -17,4 +17,16 @@ public class ArrayUtils {
         }
         return expectedList;
     }
+
+    public static List<List<String>> getLists(String[][] expected) {
+        List<List<String>> expectedList = new ArrayList<>();
+        for (String[] value : expected) {
+            List<String> expectedItem = new ArrayList<>();
+            expectedList.add(expectedItem);
+            for (String item : value) {
+                expectedItem.add(item);
+            }
+        }
+        return expectedList;
+    }
 }
