@@ -11,7 +11,7 @@ public class Solution {
         if (end - start < k) {
             return 0;
         }
-        int nums[] = new int[26];
+        int[] nums = new int[26];
         for (int i = start; i < end; i++) {
             nums[s.charAt(i) - 'a']++;
         }
