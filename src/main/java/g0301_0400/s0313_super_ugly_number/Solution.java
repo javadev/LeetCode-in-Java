@@ -2,7 +2,7 @@ package g0301_0400.s0313_super_ugly_number;
 
 // #Medium #Array #Dynamic_Programming #Hash_Table #Math #Heap_Priority_Queue
 
-class Solution {
+public class Solution {
     public static int nthSuperUglyNumber(int n, int[] primes) {
         if (primes.length == 0) {
             return 1;
