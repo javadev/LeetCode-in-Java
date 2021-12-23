@@ -15,15 +15,12 @@ public class Solution {
                 map.put(sum, map.getOrDefault(sum, 0) + 1);
             }
         }
-
         for (int k : nums1) {
             for (int i : nums2) {
                 int m = -(k + i);
                 count += map.getOrDefault(m, 0);
             }
         }
-
         return count;
     }
-
 }
