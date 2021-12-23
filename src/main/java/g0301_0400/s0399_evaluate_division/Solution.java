@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 
 public class Solution {
-    // Credit: https://medium.com/@null00/leetcode-evaluate-division-52a0158488c1
     private Map<String, String> root;
     private Map<String, Double> rate;
 
@@ -16,9 +15,9 @@ public class Solution {
         root = new HashMap<>();
         rate = new HashMap<>();
         int n = equations.size();
-        for (int i = 0; i < n; ++i) {
-            String x = equations.get(i).get(0);
-            String y = equations.get(i).get(1);
+        for (List<String> equation : equations) {
+            String x = equation.get(0);
+            String y = equation.get(1);
             root.put(x, x);
             root.put(y, y);
             rate.put(x, 1.0);
@@ -30,7 +29,6 @@ public class Solution {
             String y = equations.get(i).get(1);
             union(x, y, values[i]);
         }
-
         double[] result = new double[queries.size()];
         for (int i = 0; i < queries.size(); ++i) {
             String x = queries.get(i).get(0);
@@ -39,22 +37,20 @@ public class Solution {
                 result[i] = -1;
                 continue;
             }
-
             String rootX = findRoot(x, x, 1.0);
             String rootY = findRoot(y, y, 1.0);
             result[i] = rootX.equals(rootY) ? rate.get(x) / rate.get(y) : -1.0;
         }
-
         return result;
     }
 
     private void union(String x, String y, double v) {
-        String rootx = findRoot(x, x, 1.0);
-        String rooty = findRoot(y, y, 1.0);
-        root.put(rootx, rooty);
+        String rootX = findRoot(x, x, 1.0);
+        String rootY = findRoot(y, y, 1.0);
+        root.put(rootX, rootY);
         double r1 = rate.get(x);
         double r2 = rate.get(y);
-        rate.put(rootx, v * r2 / r1);
+        rate.put(rootX, v * r2 / r1);
     }
 
     private String findRoot(String originalX, String x, double r) {
@@ -63,7 +59,6 @@ public class Solution {
             rate.put(originalX, r * rate.get(x));
             return x;
         }
-
         return findRoot(originalX, root.get(x), r * rate.get(x));
     }
 }
