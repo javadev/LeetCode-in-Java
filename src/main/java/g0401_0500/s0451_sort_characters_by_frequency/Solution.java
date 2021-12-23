@@ -14,18 +14,18 @@ public class Solution {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
         TreeMap<Integer, List<Character>> reverseMap = new TreeMap<>(Collections.reverseOrder());
-        for (char c : map.keySet()) {
-            int freq = map.get(c);
+        for (Map.Entry<Character, Integer> c : map.entrySet()) {
+            int freq = map.get(c.getKey());
             if (!reverseMap.containsKey(freq)) {
                 reverseMap.put(freq, new ArrayList<>());
             }
-            reverseMap.get(freq).add(c);
+            reverseMap.get(freq).add(c.getKey());
         }
         StringBuilder sb = new StringBuilder();
-        for (int freq : reverseMap.keySet()) {
-            List<Character> list = reverseMap.get(freq);
+        for (Map.Entry<Integer, List<Character>> freq : reverseMap.entrySet()) {
+            List<Character> list = reverseMap.get(freq.getKey());
             for (char c : list) {
-                for (int i = 0; i < freq; i++) {
+                for (int i = 0; i < freq.getKey(); i++) {
                     sb.append(c);
                 }
             }

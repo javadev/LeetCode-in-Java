@@ -20,7 +20,6 @@ public class Solution {
             if (points[i][0] > end) {
                 minArrows++;
                 end = points[i][1];
-                ;
             }
         }
         return minArrows;

@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    public void findMinArrowShots() {
+    void findMinArrowShots() {
         int[][] points =
                 CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[10,16],[2,8],[1,6],[7,12]");
@@ -16,7 +16,7 @@ class SolutionTest {
     }
 
     @Test
-    public void findMinArrowShots2() {
+    void findMinArrowShots2() {
         int[][] points =
                 CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[1,2],[3,4],[5,6],[7,8]");
@@ -24,7 +24,7 @@ class SolutionTest {
     }
 
     @Test
-    public void findMinArrowShots3() {
+    void findMinArrowShots3() {
         int[][] points =
                 CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[1,2],[2,3],[3,4],[4,5]");

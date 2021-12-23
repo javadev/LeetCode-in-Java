@@ -7,12 +7,12 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    public void minMoves() {
+    void minMoves() {
         assertThat(new Solution().minMoves(new int[] {1, 2, 3}), equalTo(3));
     }
 
     @Test
-    public void minMoves2() {
+    void minMoves2() {
         assertThat(new Solution().minMoves(new int[] {1, 1, 1}), equalTo(0));
     }
 }
