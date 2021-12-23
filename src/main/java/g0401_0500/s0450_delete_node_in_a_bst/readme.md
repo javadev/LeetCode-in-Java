@@ -17,7 +17,12 @@ Basically, the deletion can be divided into two stages:
 
 **Output:** [5,4,6,2,null,null,7]
 
-**Explanation:** Given key to delete is 3. So we find the node with value 3 and delete it. One valid answer is [5,4,6,2,null,null,7], shown in the above BST. Please notice that another valid answer is [5,2,6,null,4,null,7] and it's also accepted. ![](https://assets.leetcode.com/uploads/2020/09/04/del_node_supp.jpg)
+**Explanation:**
+
+    Given key to delete is 3. So we find the node with value 3 and delete it.
+    One valid answer is [5,4,6,2,null,null,7], shown in the above BST.
+    Please notice that another valid answer is [5,2,6,null,4,null,7] and it's also accepted.
+![](https://assets.leetcode.com/uploads/2020/09/04/del_node_supp.jpg)
 
 **Example 2:**
 
