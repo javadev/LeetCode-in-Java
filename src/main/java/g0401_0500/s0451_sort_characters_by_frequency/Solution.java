@@ -16,9 +16,7 @@ public class Solution {
         TreeMap<Integer, List<Character>> reverseMap = new TreeMap<>(Collections.reverseOrder());
         for (Map.Entry<Character, Integer> c : map.entrySet()) {
             int freq = map.get(c.getKey());
-            if (!reverseMap.containsKey(freq)) {
-                reverseMap.put(freq, new ArrayList<>());
-            }
+            reverseMap.computeIfAbsent(freq, k -> new ArrayList<>());
             reverseMap.get(freq).add(c.getKey());
         }
         StringBuilder sb = new StringBuilder();
