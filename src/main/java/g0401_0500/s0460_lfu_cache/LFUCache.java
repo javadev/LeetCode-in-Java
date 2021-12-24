@@ -5,14 +5,6 @@ package g0401_0500.s0460_lfu_cache;
 import java.util.HashMap;
 import java.util.Map;
 
-class Node {
-    Node prev;
-    Node next;
-    int key = -1;
-    int val;
-    int freq;
-}
-
 public class LFUCache {
 
     private final Map<Integer, Node> endOfBlock;
