@@ -9,7 +9,9 @@ public class Solution {
         Arrays.sort(g);
         Arrays.sort(s);
         int result = 0;
-        for (int i = 0, j = 0; i < g.length && j < s.length; ) {
+        int i = 0;
+        int j = 0;
+        while (i < g.length && j < s.length) {
             if (s[j] >= g[i]) {
                 result++;
                 i++;
