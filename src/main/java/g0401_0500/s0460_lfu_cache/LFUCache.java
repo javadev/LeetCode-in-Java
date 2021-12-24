@@ -31,7 +31,7 @@ public class LFUCache {
                     return newEndNode.val;
                 }
             }
-            if (newEndNode.next != null){
+            if (newEndNode.next != null) {
                 newEndNode.next.prev = newEndNode.prev;
             }
             newEndNode.prev.next = newEndNode.next;
@@ -43,7 +43,7 @@ public class LFUCache {
                 endNode = endOfBlock.get(newEndNode.freq);
             }
             endOfBlock.put(newEndNode.freq, newEndNode);
-            if (endNode.next != null){
+            if (endNode.next != null) {
                 endNode.next.prev = newEndNode;
             }
             newEndNode.next = endNode.next;
@@ -56,7 +56,7 @@ public class LFUCache {
 
     public void put(int key, int value) {
         Node endNode, newEndNode;
-        if (capacity == 0){
+        if (capacity == 0) {
             return;
         }
         if (map.containsKey(key)) {
@@ -67,7 +67,7 @@ public class LFUCache {
                 Node toDelete = linkedList.next;
                 map.remove(toDelete.key);
 
-                if (toDelete.next != null){
+                if (toDelete.next != null) {
                     toDelete.next.prev = linkedList;
                 }
                 linkedList.next = toDelete.next;
@@ -90,14 +90,13 @@ public class LFUCache {
 
             endOfBlock.put(1, newEndNode);
 
-            if (endNode.next != null){
+            if (endNode.next != null) {
                 endNode.next.prev = newEndNode;
             }
             newEndNode.next = endNode.next;
             endNode.next = newEndNode;
             newEndNode.prev = endNode;
         }
-
     }
 
     void findNewEndOfBlock(Node node) {
@@ -111,8 +110,8 @@ public class LFUCache {
 }
 
 class Node {
-    Node prev,next;
-    int key=-1;
+    Node prev, next;
+    int key = -1;
     int val;
     int freq;
 }
