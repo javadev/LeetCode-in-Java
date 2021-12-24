@@ -8,12 +8,13 @@ public class Solution {
         if (n < 2) {
             return false;
         }
-        for (int i = 0; i < (n + 1) / 2; ++i) {
+        int i = 0;
+        while (i < (n + 1) / 2) {
             if (n % (i + 1) != 0) {
+                i++;
                 continue;
             }
             boolean match = true;
-
             String substring = s.substring(0, i + 1);
             int skippedI = i;
             for (int j = i + 1; j < n; j += i + 1) {
@@ -27,6 +28,7 @@ public class Solution {
                 return true;
             }
             i = skippedI;
+            i++;
         }
         return false;
     }
