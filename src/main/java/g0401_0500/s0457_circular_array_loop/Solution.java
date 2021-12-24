@@ -23,7 +23,8 @@ public class Solution {
                 // steps to jump;
                 int jump = arr[curr] % n;
                 // Jumping x steps backwards is same as jumping (n-x) steps forward
-                curr = (curr + jump + n) % n; // going to next index;
+                // going to next index;
+                curr = (curr + jump + n) % n;
                 if (map.containsKey(curr)) {
                     // value already processed
                     if (map.get(curr) == start) {
@@ -40,13 +41,8 @@ public class Solution {
     }
 
     private boolean isValidCycle(int start, int curr, int[] arr) {
-
-        if ((arr[start] > 0 && arr[curr] < 0)
-                || (arr[start] < 0 && arr[curr] > 0)
-                || (arr[curr] % arr.length == 0)) {
-            return false;
-        }
-
-        return true;
+        return (arr[start] <= 0 || arr[curr] >= 0)
+                && (arr[start] >= 0 || arr[curr] <= 0)
+                && (arr[curr] % arr.length != 0);
     }
 }

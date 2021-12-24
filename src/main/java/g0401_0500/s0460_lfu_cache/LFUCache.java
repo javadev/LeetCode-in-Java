@@ -5,23 +5,32 @@ package g0401_0500.s0460_lfu_cache;
 import java.util.HashMap;
 import java.util.Map;
 
+class Node {
+    Node prev;
+    Node next;
+    int key = -1;
+    int val;
+    int freq;
+}
+
 public class LFUCache {
 
-    private Map<Integer, Node> endOfBlock;
-    private Map<Integer, Node> map;
-    private int capacity;
-    private Node linkedList;
+    private final Map<Integer, Node> endOfBlock;
+    private final Map<Integer, Node> map;
+    private final int capacity;
+    private final Node linkedList;
 
     public LFUCache(int capacity) {
         endOfBlock = new HashMap<>();
-        map = new HashMap();
+        map = new HashMap<>();
         this.capacity = capacity;
         linkedList = new Node();
     }
 
     public int get(int key) {
         if (map.containsKey(key)) {
-            Node newEndNode = map.get(key), endNode;
+            Node newEndNode = map.get(key);
+            Node endNode;
             Node currEndNode = endOfBlock.get(newEndNode.freq);
             if (currEndNode == newEndNode) {
                 findNewEndOfBlock(newEndNode);
@@ -55,7 +64,8 @@ public class LFUCache {
     }
 
     public void put(int key, int value) {
-        Node endNode, newEndNode;
+        Node endNode;
+        Node newEndNode;
         if (capacity == 0) {
             return;
         }
@@ -107,11 +117,4 @@ public class LFUCache {
             endOfBlock.remove(node.freq);
         }
     }
-}
-
-class Node {
-    Node prev, next;
-    int key = -1;
-    int val;
-    int freq;
 }
