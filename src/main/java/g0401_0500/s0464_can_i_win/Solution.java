@@ -22,16 +22,12 @@ public class Solution {
         for (int i = 1; i <= maxChoosableInteger; i++) {
             // current number to pick
             int cur = 1 << (i - 1);
-            if ((cur & state) == 0) {
-                // i is not used
-                // set i as used in state
-                if (i >= desiredTotal
-                        || !canWin(state | cur, dp, desiredTotal - i, maxChoosableInteger)) {
-                    // i is greater than the desired total
-                    // or the other player cannot win after the current player picks i
-                    dp[state] = true;
-                    return dp[state];
-                }
+            if ((cur & state) == 0 && i >= desiredTotal
+                    || !canWin(state | cur, dp, desiredTotal - i, maxChoosableInteger)) {
+                // i is greater than the desired total
+                // or the other player cannot win after the current player picks i
+                dp[state] = true;
+                return dp[state];
             }
         }
         dp[state] = false;
