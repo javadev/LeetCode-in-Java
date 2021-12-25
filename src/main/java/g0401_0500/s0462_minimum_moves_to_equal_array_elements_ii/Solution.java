@@ -1,5 +1,7 @@
 package g0401_0500.s0462_minimum_moves_to_equal_array_elements_ii;
 
+// #Medium #Array #Math #Sorting
+
 import java.util.Arrays;
 
 public class Solution {

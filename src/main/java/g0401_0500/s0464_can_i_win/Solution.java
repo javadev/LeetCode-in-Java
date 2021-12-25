@@ -6,58 +6,35 @@ public class Solution {
     public boolean canIWin(int maxChoosableInteger, int desiredTotal) {
         if (desiredTotal <= maxChoosableInteger) {
             return true;
-        } else if (desiredTotal > (maxChoosableInteger * (maxChoosableInteger + 1)) / 2) {
+        }
+        if (1.0 * maxChoosableInteger * (1 + maxChoosableInteger) / 2 < desiredTotal) {
             return false;
         }
-        int[] dp = new int[(int) Math.pow(2, maxChoosableInteger) + 1];
-        return recursion(maxChoosableInteger, desiredTotal, true, 0, dp);
+        return canWin(0, new Boolean[1 << maxChoosableInteger], desiredTotal, maxChoosableInteger);
     }
 
-    private boolean recursion(int m, int d, boolean turn, int visited, int[] dp) {
-        if (d <= 0 && !turn) {
-            return true;
-        } else if (d <= 0) {
-            return false;
-        } else if (turn) {
-            if (dp[visited] == 0) {
-                int temp = 1;
-                int counter = 1;
-                while (counter <= m) {
-                    if ((temp & visited) == 0) {
-                        boolean check = recursion(m, d - counter, !turn, visited | temp, dp);
-                        if (check) {
-                            dp[visited] = 1;
-                            break;
-                        }
-                    }
-                    temp = temp << 1;
-                    counter++;
-                }
-                if (dp[visited] == 0) {
-                    dp[visited] = -1;
-                }
-            }
-            return dp[visited] == 1;
-        } else {
-            if (dp[visited] == 0) {
-                int temp = 1;
-                int counter = 1;
-                while (counter <= m) {
-                    if ((temp & visited) == 0) {
-                        boolean check = recursion(m, d - counter, !turn, visited | temp, dp);
-                        if (!check) {
-                            dp[visited] = 1;
-                            break;
-                        }
-                    }
-                    temp = temp << 1;
-                    counter++;
-                }
-                if (dp[visited] == 0) {
-                    dp[visited] = -1;
-                }
-            }
-            return dp[visited] != 1;
+    private boolean canWin(int state, Boolean[] dp, int desiredTotal, int maxChoosableInteger) {
+        // state is the bitmap representation of the current state of choosable integers left
+        // dp[state] represents whether the current player can win the game at state
+        if (dp[state] != null) {
+            return dp[state];
         }
+        for (int i = 1; i <= maxChoosableInteger; i++) {
+            // current number to pick
+            int cur = 1 << (i - 1);
+            if ((cur & state) == 0) {
+                // i is not used
+                // set i as used in state
+                if (i >= desiredTotal
+                        || !canWin(state | cur, dp, desiredTotal - i, maxChoosableInteger)) {
+                    // i is greater than the desired total
+                    // or the other player cannot win after the current player picks i
+                    dp[state] = true;
+                    return dp[state];
+                }
+            }
+        }
+        dp[state] = false;
+        return dp[state];
     }
 }
