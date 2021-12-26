@@ -55,18 +55,24 @@ public class Solution {
             }
 
             root = root.next[words[i].charAt(j) - 'a'];
-            if (root == null) return;
+            if (root == null) {
+                return;
+            }
         }
 
         for (int j : root.list) {
-            if (i == j) continue;
+            if (i == j) {
+                continue;
+            }
             res.add(Arrays.asList(i, j));
         }
     }
 
     private boolean isPalindrome(String word, int i, int j) {
         while (i < j) {
-            if (word.charAt(i++) != word.charAt(j--)) return false;
+            if (word.charAt(i++) != word.charAt(j--)) {
+                return false;
+            }
         }
         return true;
     }
