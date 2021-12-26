@@ -18,16 +18,17 @@ The functions `get` and `put` must each run in `O(1)` average time complexity.
 
 **Example 1:**
 
-**Input** ["LFUCache", "put", "put", "get", "put", "get", "get", "put", "get", "get", "get"] 
+**Input**
 
-[[2], [1, 1], [2, 2], [1], [3, 3], [2], [3], [4, 4], [1], [3], [4]]
+    ["LFUCache", "put", "put", "get", "put", "get", "get", "put", "get", "get", "get"] 
+    [[2], [1, 1], [2, 2], [1], [3, 3], [2], [3], [4, 4], [1], [3], [4]]
 
-**Output:** [null, null, null, 1, null, -1, 3, null, -1, 3, 4]
+**Output:** \[null, null, null, 1, null, -1, 3, null, -1, 3, 4\]
 
 **Explanation:** 
 
     // cnt(x) = the use counter for key x 
-    
+   
     // cache=[] will show the last used order for tiebreakers (leftmost element is most recent) 
     
     LFUCache lfu = new LFUCache(2); 
