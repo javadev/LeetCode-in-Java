@@ -6,7 +6,6 @@ import com_github_leetcode.TreeNode;
 
 public class Solution {
     /*
-     * credit: https://discuss.leetcode.com/topic/65792/recursive-easy-to-understand-java-solution
      * Steps:
      * 1. Recursively find the node that has the same value as the key, while setting the left/right nodes equal
      * to the returned subtree
@@ -31,7 +30,6 @@ public class Solution {
             } else if (root.right == null) {
                 return root.left;
             }
-
             TreeNode minNode = getMin(root.right);
             root.val = minNode.val;
             root.right = deleteNode(root.right, root.val);
