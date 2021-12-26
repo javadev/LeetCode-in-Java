@@ -25,7 +25,8 @@ public class Solution {
         int k = mid;
         int t = mid;
         long[] cache = new long[end - start];
-        for (int i = start, r = 0; i < mid; i++, r++) {
+        int r = 0;
+        for (int i = start; i < mid; i++) {
             while (k < end && sums[k] - sums[i] < lower) {
                 k++;
             }
@@ -37,6 +38,7 @@ public class Solution {
             }
             cache[r] = sums[i];
             count += j - k;
+            r++;
         }
         System.arraycopy(cache, 0, sums, start, t - start);
         return count;
