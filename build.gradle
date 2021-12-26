@@ -11,6 +11,19 @@ repositories {
     mavenCentral()
 }
 
+sourceSets {
+    main.java.srcDirs = [
+        'src/main/java/com_github_leetcode/**',
+        'src/main/java/g0401_0500/**',
+        'src/main/java/g0501_0600/**'
+    ] 
+    test.java.srcDirs = [
+        'src/test/java/com_github_leetcode/**',
+        'src/test/java/g0401_0500/**',
+        'src/main/java/g0501_0600/**'
+    ] 
+}
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:[5.8.2,)'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:[5.8.2,)'
