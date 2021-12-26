@@ -8,7 +8,8 @@ public class Solution {
     public void wiggleSort(int[] nums) {
         Arrays.sort(nums);
         int[] result = new int[nums.length];
-        int index = nums.length - 1, i = 1;
+        int index = nums.length - 1;
+        int i = 1;
         // Start filling all peaks (which is all at odd indexes) from start
         for (; i < nums.length; i += 2) {
             result[i] = nums[index];
