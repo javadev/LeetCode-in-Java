@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Solution {
     // Helper class containing value and an arraylist
-    private class Helper {
+    private static class Helper {
         int val;
         List<Integer> al;
 

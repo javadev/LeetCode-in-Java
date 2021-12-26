@@ -25,7 +25,7 @@ public class Solution {
         return ans;
     }
 
-    private class FenwickTree {
+    private static class FenwickTree {
         // binary index tree, index 0 is not used
         int[] bit;
         int n;
