@@ -1,5 +1,7 @@
 package g0401_0500.s0451_sort_characters_by_frequency;
 
+// #Medium #String #Hash_Table #Sorting #Heap_Priority_Queue #Counting #Bucket_Sort
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
