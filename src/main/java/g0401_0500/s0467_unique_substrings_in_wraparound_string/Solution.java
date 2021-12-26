@@ -9,17 +9,17 @@ public class Solution {
         int[] map = new int[26];
         int len = 0;
         for (int i = 0; i < n; i++) {
-            if (i > 0 && ((str[i - 1] + 1 == str[i]) || (str[i - 1] == 'z' && str[i] == 'a'))){
+            if (i > 0 && ((str[i - 1] + 1 == str[i]) || (str[i - 1] == 'z' && str[i] == 'a'))) {
                 len += 1;
-            }
-            else{
+            } else {
                 len = 1;
             }
-            // we are storing the max len of string for each letter and then we will count all these length.
+            // we are storing the max len of string for each letter and then we will count all these
+            // length.
             map[str[i] - 'a'] = Math.max(map[str[i] - 'a'], len);
         }
         int answer = 0;
-        for (int num : map){
+        for (int num : map) {
             answer += num;
         }
         return answer;

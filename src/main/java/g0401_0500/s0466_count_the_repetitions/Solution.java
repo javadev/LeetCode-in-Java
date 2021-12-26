@@ -13,7 +13,7 @@ public class Solution {
         int s2Count = 0;
         int s2Idx = 0;
         while (memo[s2Idx] == null) {
-            memo[s2Idx] = new int[]{s1Count, s2Count};
+            memo[s2Idx] = new int[] {s1Count, s2Count};
             for (char c1 : ss1) {
                 if (c1 == ss2[s2Idx]) {
                     s2Idx++;
