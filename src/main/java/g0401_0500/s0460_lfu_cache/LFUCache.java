@@ -6,6 +6,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LFUCache {
+    private static class Node {
+        Node prev;
+        Node next;
+        int key = -1;
+        int val;
+        int freq;
+    }
 
     private final Map<Integer, Node> endOfBlock;
     private final Map<Integer, Node> map;
@@ -101,7 +108,7 @@ public class LFUCache {
         }
     }
 
-    void findNewEndOfBlock(Node node) {
+    private void findNewEndOfBlock(Node node) {
         Node prev = node.prev;
         if (prev.freq == node.freq) {
             endOfBlock.put(node.freq, prev);
