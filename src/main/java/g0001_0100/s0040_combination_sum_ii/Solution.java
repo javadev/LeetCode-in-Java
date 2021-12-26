@@ -30,8 +30,6 @@ public class Solution {
         for (int i = start; i < candidates.length && target >= candidates[i]; i++) {
             // If candidate[i] equals candidate[i-1], then solutions for i is subset of
             // solution of i-1
-            // Refer:
-            // https://leetcode.com/problems/combination-sum-ii/discuss/16861/Java-solution-using-dfs-easy-understand/977097
             if (i == start || (i > start && candidates[i] != candidates[i - 1])) {
                 sum.addLast(candidates[i]);
                 // call on 'i+1' (not i) to avoid duplicate usage of same element

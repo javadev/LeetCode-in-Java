@@ -3,7 +3,6 @@ package g0301_0400.s0396_rotate_function;
 // #Medium #Dynamic_Programming #Math
 
 public class Solution {
-    // Reference: https://discuss.leetcode.com/topic/58459/java-o-n-solution-with-explanation
     public int maxRotateFunction(int[] nums) {
         int allSum = 0;
         int len = nums.length;

@@ -7,8 +7,6 @@ import java.util.LinkedList;
 
 public class Solution {
     /*
-     * credit: https://discuss.leetcode.com/topic/67881/single-pass-c-o-n-space-and-time-solution-8-lines-with-
-     * detailed-explanation
      * It scans only once, this is the power of using correct data structure.
      * It goes from the right to the left.
      * It keeps pushing elements into the stack,
