@@ -13,7 +13,6 @@ public class Solution {
     public List<String> findAllConcatenatedWordsInADict(String[] words) {
         root = new Trie();
         Arrays.sort(words, (a, b) -> Integer.compare(a.length(), b.length()));
-        int n = words.length;
         for (String word : words) {
             Trie ptr = root;
             if (search(word, 0, 0)) {
@@ -31,9 +30,9 @@ public class Solution {
         return ans;
     }
 
-    private boolean search(String cur, int idx, int word_cnt) {
+    private boolean search(String cur, int idx, int wordCnt) {
         if (idx == cur.length()) {
-            return word_cnt >= 2;
+            return wordCnt >= 2;
         }
         Trie ptr = root;
         for (int i = idx; i < cur.length(); i++) {
@@ -41,14 +40,14 @@ public class Solution {
                 return false;
             }
             if (ptr.nxt[cur.charAt(i) - 'a'].endHere) {
-                boolean ret = search(cur, i + 1, word_cnt + 1);
+                boolean ret = search(cur, i + 1, wordCnt + 1);
                 if (ret) {
                     return true;
                 }
             }
             ptr = ptr.nxt[cur.charAt(i) - 'a'];
         }
-        return ptr.endHere && word_cnt >= 2;
+        return ptr.endHere && wordCnt >= 2;
     }
 
     private static class Trie {
