@@ -4,6 +4,7 @@ package g0401_0500.s0468_validate_ip_address;
 
 public class Solution {
     private static final String NEITHER = "Neither";
+
     public String validIPAddress(String ip) {
         if (ip.length() == 0) {
             return NEITHER;
@@ -28,7 +29,7 @@ public class Solution {
                 }
                 for (int j = 0; j < num.length(); j++) {
                     char ch = num.charAt(j);
-                    if(ch>9){
+                    if (ch > 9) {
                         if (Character.isLowerCase(ch) && ch > 'f') {
                             return NEITHER;
                         } else if (Character.isUpperCase(ch) && ch > 'F') {
