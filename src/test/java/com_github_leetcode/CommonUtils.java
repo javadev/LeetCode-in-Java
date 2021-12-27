@@ -1,6 +1,7 @@
 package com_github_leetcode;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class CommonUtils {
@@ -159,9 +160,7 @@ public class CommonUtils {
             } else {
                 strings = arrays[i].split(",");
             }
-            for (int j = 0; j < strings.length; j++) {
-                level.add(strings[j]);
-            }
+            Collections.addAll(level, strings);
             result.add(level);
         }
         return result;
