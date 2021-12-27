@@ -29,12 +29,10 @@ public class Solution {
                 }
                 for (int j = 0; j < num.length(); j++) {
                     char ch = num.charAt(j);
-                    if (ch > 9) {
-                        if (Character.isLowerCase(ch) && ch > 'f') {
-                            return NEITHER;
-                        } else if (Character.isUpperCase(ch) && ch > 'F') {
-                            return NEITHER;
-                        }
+                    if (ch > 9
+                            && (Character.isLowerCase(ch) && ch > 'f'
+                                    || Character.isUpperCase(ch) && ch > 'F')) {
+                        return NEITHER;
                     }
                 }
             }
