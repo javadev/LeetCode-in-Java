@@ -9,15 +9,6 @@ public class Node {
     public Node bottomLeft;
     public Node bottomRight;
 
-    public Node() {
-        this.val = false;
-        this.isLeaf = false;
-        this.topLeft = null;
-        this.topRight = null;
-        this.bottomLeft = null;
-        this.bottomRight = null;
-    }
-
     public Node(boolean val, boolean isLeaf) {
         this.val = val;
         this.isLeaf = isLeaf;
@@ -44,14 +35,11 @@ public class Node {
 
     @Override
     public String toString() {
-        if (topLeft != null && topRight != null && bottomLeft != null && bottomRight != null) {
-            return getNode(this)
-                    + getNode(topLeft)
-                    + getNode(topRight)
-                    + getNode(bottomLeft)
-                    + getNode(bottomRight);
-        }
-        return "";
+        return getNode(this)
+                + getNode(topLeft)
+                + getNode(topRight)
+                + getNode(bottomLeft)
+                + getNode(bottomRight);
     }
 
     private String getNode(Node node) {
