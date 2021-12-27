@@ -9,7 +9,7 @@ public class Solution {
     public int findMaximumXOR(int[] nums) {
         int max = 0;
         int mask = 0;
-        Set<Integer> set = new HashSet<Integer>();
+        Set<Integer> set = new HashSet<>();
         int maxNum = 0;
         for (int i : nums) {
             maxNum = Math.max(maxNum, i);

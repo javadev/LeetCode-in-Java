@@ -11,7 +11,7 @@ public class Solution {
         char[] sArr = s.toCharArray();
         int currMax = 0;
         int maxLen = 0;
-        char curr = ' ';
+        char curr;
         while (right < len) {
             curr = sArr[right];
             count[curr]++;
