@@ -28,9 +28,7 @@ public class Solution {
         }
         int[] minmax = findminmax(intervals);
         for (int i = minmax[1] - 1; i >= minmax[0] + 1; i--) {
-            if (!map.containsKey(i)) {
-                map.put(i, map.get(i + 1));
-            }
+            map.computeIfAbsent(i, k -> map.get(k + 1));
         }
         for (int i = 0; i < n; i++) {
             result[i] = map.getOrDefault(intervals[i][1], -1);
