@@ -1,6 +1,7 @@
 package com_github_leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ArrayUtils {
@@ -23,9 +24,7 @@ public class ArrayUtils {
         for (String[] value : expected) {
             List<String> expectedItem = new ArrayList<>();
             expectedList.add(expectedItem);
-            for (String item : value) {
-                expectedItem.add(item);
-            }
+            expectedItem.addAll(Arrays.asList(value));
         }
         return expectedList;
     }
