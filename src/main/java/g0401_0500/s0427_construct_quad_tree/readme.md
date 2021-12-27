@@ -12,7 +12,7 @@ A Quad-Tree is a tree data structure in which each internal node has exactly fou
 
 *   `val`: True if the node represents a grid of 1's or False if the node represents a grid of 0's.
 *   `isLeaf`: True if the node is leaf node on the tree or False if the node has the four children.
-
+```
     class Node {
         public boolean val;
         public boolean isLeaf;
@@ -21,7 +21,7 @@ A Quad-Tree is a tree data structure in which each internal node has exactly fou
         public Node bottomLeft;
         public Node bottomRight;
     }
-
+```
 We can construct a Quad-Tree from a two-dimensional area using the following steps:
 
 1.  If the current grid has the same value (i.e all `1's` or all `0's`) set `isLeaf` True and set `val` to the value of the grid and set the four children to Null and stop.
