@@ -2,43 +2,59 @@ package g0401_0500.s0473_matchsticks_to_square;
 
 // #Medium #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
 
+import java.util.Arrays;
+
 public class Solution {
-    public boolean makesquare(int[] matchsticks) {
-        if (matchsticks.length < 4) {
+    private boolean[] vs;
+    private int m = 0;
+    private int sum = 0;
+    private int max = 0;
+    private int e = 0;
+
+    public boolean makesquare(int[] nums) {
+        m = nums.length;
+        if (m < 4) {
             return false;
         }
-        int totalSum = 0;
-        for (int m : matchsticks) {
-            totalSum += m;
+        for (int n : nums) {
+            sum += n;
+            max = Math.max(max, n);
         }
-        if (totalSum % 4 != 0) {
+        if (sum % 4 != 0 || max > sum / 4) {
             return false;
         }
-        int target = totalSum / 4;
-        boolean[] used = new boolean[matchsticks.length];
-        return backtracking(matchsticks, used, target, 0, 0, 0);
+        Arrays.sort(nums);
+        e = sum / 4;
+        vs = new boolean[m];
+        vs[0] = true;
+        return dfs(nums, 1, nums[0], 4);
     }
 
-    private boolean backtracking(
-            int[] matchsticks, boolean[] used, int target, int count, int currSum, int start) {
-        if (count == 3) {
-            return true;
-        }
-        if (currSum > target) {
-            return false;
-        }
-        if (currSum == target) {
-            return backtracking(matchsticks, used, target, count + 1, 0, 0);
-        }
-        for (int i = start; i < matchsticks.length; i++) {
-            if (!used[i]) {
-                used[i] = true;
-                if (backtracking(
-                        matchsticks, used, target, count, currSum + matchsticks[i], i + 1)) {
-                    return true;
+    private boolean dfs(int[] nums, int idx, int tot, int cnt) {
+        if (tot == e) {
+            if (--cnt == 1) return true;
+            for (int i = 0; i < m; i++) {
+                if (vs[i]) {
+                    continue;
                 }
-                used[i] = false;
+                vs[i] = true;
+                boolean res = dfs(nums, i + 1, nums[i], cnt);
+                vs[i] = false;
+                return res;
             }
+        }
+        for (int i = idx; i < m; i++) {
+            if (vs[i]) {
+                continue;
+            }
+            if (nums[i] + tot > e) {
+                return false;
+            }
+            vs[i] = true;
+            if (dfs(nums, i + 1, tot + nums[i], cnt)) {
+                return true;
+            }
+            vs[i] = false;
         }
         return false;
     }
