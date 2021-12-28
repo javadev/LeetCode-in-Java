@@ -20,7 +20,7 @@ Implement the MedianFinder class:
     ["MedianFinder", "addNum", "addNum", "findMedian", "addNum", "findMedian"]
     [[], [1], [2], [], [3], []]
 
-**Output:** \[null, null, null, 1.5, null, 2.0\]
+**Output:** [null, null, null, 1.5, null, 2.0]
 
 **Explanation:**
 

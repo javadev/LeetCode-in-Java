@@ -8,9 +8,9 @@ Reconstruct and return _the queue that is represented by the input array_ `peopl
 
 **Example 1:**
 
-**Input:** people = \[\[7,0\],\[4,4\],\[7,1\],\[5,0\],\[6,1\],\[5,2\]\]
+**Input:** people = [[7,0],[4,4],[7,1],[5,0],[6,1],[5,2]]
 
-**Output:** \[\[5,0\],\[7,0\],\[5,2\],\[6,1\],\[4,4\],\[7,1\]\]
+**Output:** [[5,0],[7,0],[5,2],[6,1],[4,4],[7,1]]
 
 **Explanation:**
 
@@ -24,9 +24,9 @@ Reconstruct and return _the queue that is represented by the input array_ `peopl
 
 **Example 2:**
 
-**Input:** people = \[\[6,0\],\[5,0\],\[4,0\],\[3,2\],\[2,2\],\[1,4\]\]
+**Input:** people = [[6,0],[5,0],[4,0],[3,2],[2,2],[1,4]]
 
-**Output:** \[\[4,0\],\[5,0\],\[2,2\],\[3,2\],\[1,4\],\[6,0\]\] 
+**Output:** [[4,0],[5,0],[2,2],[3,2],[1,4],[6,0]] 
 
 **Constraints:**
 

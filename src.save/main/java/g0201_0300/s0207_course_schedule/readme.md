@@ -10,7 +10,7 @@ Return `true` if you can finish all courses. Otherwise, return `false`.
 
 **Example 1:**
 
-**Input:** numCourses = 2, prerequisites = \[\[1,0\]\]
+**Input:** numCourses = 2, prerequisites = [[1,0]]
 
 **Output:** true
 
@@ -18,7 +18,7 @@ Return `true` if you can finish all courses. Otherwise, return `false`.
 
 **Example 2:**
 
-**Input:** numCourses = 2, prerequisites = \[\[1,0\],\[0,1\]\]
+**Input:** numCourses = 2, prerequisites = [[1,0],[0,1]]
 
 **Output:** false
 
@@ -30,4 +30,4 @@ Return `true` if you can finish all courses. Otherwise, return `false`.
 *   `0 <= prerequisites.length <= 5000`
 *   `prerequisites[i].length == 2`
 *   <code>0 <= a<sub>i</sub>, b<sub>i</sub> < numCourses</code>
-*   All the pairs prerequisites\[i\] are **unique**.
+*   All the pairs prerequisites[i] are **unique**.

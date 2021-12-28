@@ -8,7 +8,7 @@ Given the `root` of a binary search tree, and an integer `k`, return _the_ <code
 
 ![](https://assets.leetcode.com/uploads/2021/01/28/kthtree1.jpg)
 
-**Input:** root = \[3,1,4,null,2\], k = 1
+**Input:** root = [3,1,4,null,2], k = 1
 
 **Output:** 1 
 
@@ -16,7 +16,7 @@ Given the `root` of a binary search tree, and an integer `k`, return _the_ <code
 
 ![](https://assets.leetcode.com/uploads/2021/01/28/kthtree2.jpg)
 
-**Input:** root = \[5,3,6,2,4,null,null,1\], k = 3
+**Input:** root = [5,3,6,2,4,null,null,1], k = 3
 
 **Output:** 3 
 

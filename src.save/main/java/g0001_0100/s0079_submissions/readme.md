@@ -10,7 +10,7 @@ The word can be constructed from letters of sequentially adjacent cells, where a
 
 ![](https://assets.leetcode.com/uploads/2020/11/04/word2.jpg)
 
-**Input:** board = \[\["A","B","C","E"\],\["S","F","C","S"\],\["A","D","E","E"\]\], word = "ABCCED"
+**Input:** board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
 
 **Output:** true 
 
@@ -18,7 +18,7 @@ The word can be constructed from letters of sequentially adjacent cells, where a
 
 ![](https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg)
 
-**Input:** board = \[\["A","B","C","E"\],\["S","F","C","S"\],\["A","D","E","E"\]\], word = "SEE"
+**Input:** board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE"
 
 **Output:** true 
 
@@ -26,7 +26,7 @@ The word can be constructed from letters of sequentially adjacent cells, where a
 
 ![](https://assets.leetcode.com/uploads/2020/10/15/word3.jpg)
 
-**Input:** board = \[\["A","B","C","E"\],\["S","F","C","S"\],\["A","D","E","E"\]\], word = "ABCB"
+**Input:** board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB"
 
 **Output:** false 
 

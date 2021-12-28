@@ -10,7 +10,7 @@ Find and return _the **maximum** profit you can achieve_.
 
 **Example 1:**
 
-**Input:** prices = \[7,1,5,3,6,4\]
+**Input:** prices = [7,1,5,3,6,4]
 
 **Output:** 7
 
@@ -18,7 +18,7 @@ Find and return _the **maximum** profit you can achieve_.
 
 **Example 2:**
 
-**Input:** prices = \[1,2,3,4,5\]
+**Input:** prices = [1,2,3,4,5]
 
 **Output:** 4
 
@@ -26,7 +26,7 @@ Find and return _the **maximum** profit you can achieve_.
 
 **Example 3:**
 
-**Input:** prices = \[7,6,4,3,1\]
+**Input:** prices = [7,6,4,3,1]
 
 **Output:** 0
 

@@ -20,7 +20,7 @@ Implement the `PeekingIterator` class:
     ["PeekingIterator", "next", "peek", "next", "next", "hasNext"]
     [[[1, 2, 3]], [], [], [], [], []]
 
-**Output:** \[null, 1, 2, 2, 3, false\]
+**Output:** [null, 1, 2, 2, 3, false]
 
 **Explanation:**
 

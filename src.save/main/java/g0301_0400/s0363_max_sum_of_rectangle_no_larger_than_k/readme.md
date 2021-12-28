@@ -10,15 +10,15 @@ It is **guaranteed** that there will be a rectangle with a sum no larger than `k
 
 ![](https://assets.leetcode.com/uploads/2021/03/18/sum-grid.jpg)
 
-**Input:** matrix = \[\[1,0,1\],\[0,-2,3\]\], k = 2
+**Input:** matrix = [[1,0,1],[0,-2,3]], k = 2
 
 **Output:** 2
 
-**Explanation:** Because the sum of the blue rectangle \[\[0, 1\], \[-2, 3\]\] is 2, and 2 is the max number no larger than k (k = 2). 
+**Explanation:** Because the sum of the blue rectangle [[0, 1], [-2, 3]] is 2, and 2 is the max number no larger than k (k = 2). 
 
 **Example 2:**
 
-**Input:** matrix = \[\[2,2,-1\]\], k = 3
+**Input:** matrix = [[2,2,-1]], k = 3
 
 **Output:** 3 
 

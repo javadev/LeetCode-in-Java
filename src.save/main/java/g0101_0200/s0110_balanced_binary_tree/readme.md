@@ -12,7 +12,7 @@ For this problem, a height-balanced binary tree is defined as:
 
 ![](https://assets.leetcode.com/uploads/2020/10/06/balance_1.jpg)
 
-**Input:** root = \[3,9,20,null,null,15,7\]
+**Input:** root = [3,9,20,null,null,15,7]
 
 **Output:** true 
 
@@ -20,13 +20,13 @@ For this problem, a height-balanced binary tree is defined as:
 
 ![](https://assets.leetcode.com/uploads/2020/10/06/balance_2.jpg)
 
-**Input:** root = \[1,2,2,3,3,null,null,4,4\]
+**Input:** root = [1,2,2,3,3,null,null,4,4]
 
 **Output:** false 
 
 **Example 3:**
 
-**Input:** root = \[\]
+**Input:** root = []
 
 **Output:** true 
 

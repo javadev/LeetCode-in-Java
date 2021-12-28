@@ -12,7 +12,7 @@ Return the number of different **expressions** that you can build, which evaluat
 
 **Example 1:**
 
-**Input:** nums = \[1,1,1,1,1\], target = 3
+**Input:** nums = [1,1,1,1,1], target = 3
 
 **Output:** 5
 
@@ -27,7 +27,7 @@ Return the number of different **expressions** that you can build, which evaluat
 
 **Example 2:**
 
-**Input:** nums = \[1\], target = 1
+**Input:** nums = [1], target = 1
 
 **Output:** 1 
 

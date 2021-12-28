@@ -12,7 +12,7 @@ It is guaranteed that the given RPN expression is always valid. That means the e
 
 **Example 1:**
 
-**Input:** tokens = \["2","1","+","3","\*"\]
+**Input:** tokens = ["2","1","+","3","\*"]
 
 **Output:** 9
 
@@ -20,7 +20,7 @@ It is guaranteed that the given RPN expression is always valid. That means the e
 
 **Example 2:**
 
-**Input:** tokens = \["4","13","5","/","+"\]
+**Input:** tokens = ["4","13","5","/","+"]
 
 **Output:** 6
 
@@ -28,7 +28,7 @@ It is guaranteed that the given RPN expression is always valid. That means the e
 
 **Example 3:**
 
-**Input:** tokens = \["10","6","9","3","+","-11","\*","/","\*","17","+","5","+"\]
+**Input:** tokens = ["10","6","9","3","+","-11","\*","/","\*","17","+","5","+"]
 
 **Output:** 22
 

@@ -12,17 +12,17 @@ Given two words, `beginWord` and `endWord`, and a dictionary `wordList`, return 
 
 **Example 1:**
 
-**Input:** beginWord = "hit", endWord = "cog", wordList = \["hot","dot","dog","lot","log","cog"\]
+**Input:** beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]
 
-**Output:** \[\["hit","hot","dot","dog","cog"\],\["hit","hot","lot","log","cog"\]\]
+**Output:** [["hit","hot","dot","dog","cog"],["hit","hot","lot","log","cog"]]
 
 **Explanation:** There are 2 shortest transformation sequences: "hit" -> "hot" -> "dot" -> "dog" -> "cog" "hit" -> "hot" -> "lot" -> "log" -> "cog" 
 
 **Example 2:**
 
-**Input:** beginWord = "hit", endWord = "cog", wordList = \["hot","dot","dog","lot","log"\]
+**Input:** beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]
 
-**Output:** \[\]
+**Output:** []
 
 **Explanation:** The endWord "cog" is not in wordList, therefore there is no valid transformation sequence. 
 

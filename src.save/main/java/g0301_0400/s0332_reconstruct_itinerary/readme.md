@@ -14,17 +14,17 @@ You may assume all tickets form at least one valid itinerary. You must use all t
 
 ![](https://assets.leetcode.com/uploads/2021/03/14/itinerary1-graph.jpg)
 
-**Input:** tickets = \[\["MUC","LHR"\],\["JFK","MUC"\],\["SFO","SJC"\],\["LHR","SFO"\]\]
+**Input:** tickets = [["MUC","LHR"],["JFK","MUC"],["SFO","SJC"],["LHR","SFO"]]
 
-**Output:** \["JFK","MUC","LHR","SFO","SJC"\] 
+**Output:** ["JFK","MUC","LHR","SFO","SJC"] 
 
 **Example 2:**
 
 ![](https://assets.leetcode.com/uploads/2021/03/14/itinerary2-graph.jpg)
 
-**Input:** tickets = \[\["JFK","SFO"\],\["JFK","ATL"\],\["SFO","ATL"\],\["ATL","JFK"\],\["ATL","SFO"\]\]
+**Input:** tickets = [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]
 
-**Output:** \["JFK","ATL","JFK","SFO","ATL","SFO"\]
+**Output:** ["JFK","ATL","JFK","SFO","ATL","SFO"]
 
 **Explanation:**
 

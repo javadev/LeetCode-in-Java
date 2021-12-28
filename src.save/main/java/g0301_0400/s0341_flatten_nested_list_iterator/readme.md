@@ -22,19 +22,19 @@ If `res` matches the expected flattened list, then your code will be judged as c
 
 **Example 1:**
 
-**Input:** nestedList = \[\[1,1\],2,\[1,1\]\]
+**Input:** nestedList = [[1,1],2,[1,1]]
 
-**Output:** \[1,1,2,1,1\]
+**Output:** [1,1,2,1,1]
 
-**Explanation:** By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: \[1,1,2,1,1\]. 
+**Explanation:** By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,1,2,1,1]. 
 
 **Example 2:**
 
-**Input:** nestedList = \[1,\[4,\[6\]\]\]
+**Input:** nestedList = [1,[4,[6]]]
 
-**Output:** \[1,4,6\]
+**Output:** [1,4,6]
 
-**Explanation:** By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: \[1,4,6\]. 
+**Explanation:** By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,4,6]. 
 
 **Constraints:**
 

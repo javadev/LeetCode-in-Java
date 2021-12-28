@@ -8,21 +8,21 @@ An **Anagram** is a word or phrase formed by rearranging the letters of a differ
 
 **Example 1:**
 
-**Input:** strs = \["eat","tea","tan","ate","nat","bat"\]
+**Input:** strs = ["eat","tea","tan","ate","nat","bat"]
 
-**Output:** \[\["bat"\],\["nat","tan"\],\["ate","eat","tea"\]\] 
+**Output:** [["bat"],["nat","tan"],["ate","eat","tea"]] 
 
 **Example 2:**
 
-**Input:** strs = \[""\]
+**Input:** strs = [""]
 
-**Output:** \[\[""\]\] 
+**Output:** [[""]] 
 
 **Example 3:**
 
-**Input:** strs = \["a"\]
+**Input:** strs = ["a"]
 
-**Output:** \[\["a"\]\] 
+**Output:** [["a"]] 
 
 **Constraints:**
 

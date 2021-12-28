@@ -8,7 +8,7 @@ Given an integer `n`, return _an array_ `ans` _of length_ `n + 1` _such that for
 
 **Input:** n = 2
 
-**Output:** \[0,1,1\]
+**Output:** [0,1,1]
 
 **Explanation:**
 
@@ -20,7 +20,7 @@ Given an integer `n`, return _an array_ `ans` _of length_ `n + 1` _such that for
 
 **Input:** n = 5
 
-**Output:** \[0,1,1,2,1,2\]
+**Output:** [0,1,1,2,1,2]
 
 **Explanation:**
 

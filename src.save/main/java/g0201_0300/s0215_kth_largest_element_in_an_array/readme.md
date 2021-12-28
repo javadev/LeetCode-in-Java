@@ -8,13 +8,13 @@ Note that it is the <code>k<sup>th</sup></code> largest element in the sorted or
 
 **Example 1:**
 
-**Input:** nums = \[3,2,1,5,6,4\], k = 2
+**Input:** nums = [3,2,1,5,6,4], k = 2
 
 **Output:** 5 
 
 **Example 2:**
 
-**Input:** nums = \[3,2,3,1,2,4,5,5,6\], k = 4
+**Input:** nums = [3,2,3,1,2,4,5,5,6], k = 4
 
 **Output:** 4 
 

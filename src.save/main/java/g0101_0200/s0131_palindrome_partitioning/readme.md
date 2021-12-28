@@ -10,13 +10,13 @@ A **palindrome** string is a string that reads the same backward as forward.
 
 **Input:** s = "aab"
 
-**Output:** \[\["a","a","b"\],\["aa","b"\]\] 
+**Output:** [["a","a","b"],["aa","b"]] 
 
 **Example 2:**
 
 **Input:** s = "a"
 
-**Output:** \[\["a"\]\] 
+**Output:** [["a"]] 
 
 **Constraints:**
 

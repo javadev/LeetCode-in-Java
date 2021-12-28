@@ -22,7 +22,7 @@ You must implement the functions of the class such that each function works on *
     ["RandomizedCollection", "insert", "insert", "insert", "getRandom", "remove", "getRandom"]
     [[], [1], [1], [2], [], [1], []]
 
-**Output:** \[null, true, false, true, 2, true, 1\]
+**Output:** [null, true, false, true, 2, true, 1]
 
 **Explanation:** 
 

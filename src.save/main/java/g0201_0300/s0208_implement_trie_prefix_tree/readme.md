@@ -18,7 +18,7 @@ Implement the Trie class:
     ["Trie", "insert", "search", "search", "startsWith", "insert", "search"]
     [[], ["apple"], ["apple"], ["app"], ["app"], ["app"], ["app"]]
 
-**Output:** \[null, null, true, false, true, null, true\]
+**Output:** [null, null, true, false, true, null, true]
 
 **Explanation:**
 

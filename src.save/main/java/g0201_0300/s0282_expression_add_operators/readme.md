@@ -10,7 +10,7 @@ Note that operands in the returned expressions **should not** contain leading ze
 
 **Input:** num = "123", target = 6
 
-**Output:** \["1\*2\*3","1+2+3"\]
+**Output:** ["1\*2\*3","1+2+3"]
 
 **Explanation:** Both "1\*2\*3" and "1+2+3" evaluate to 6. 
 
@@ -18,7 +18,7 @@ Note that operands in the returned expressions **should not** contain leading ze
 
 **Input:** num = "232", target = 8
 
-**Output:** \["2\*3+2","2+3\*2"\]
+**Output:** ["2\*3+2","2+3\*2"]
 
 **Explanation:** Both "2\*3+2" and "2+3\*2" evaluate to 8. 
 
@@ -26,7 +26,7 @@ Note that operands in the returned expressions **should not** contain leading ze
 
 **Input:** num = "105", target = 5
 
-**Output:** \["1\*0+5","10-5"\]
+**Output:** ["1\*0+5","10-5"]
 
 **Explanation:**
 
@@ -37,7 +37,7 @@ Note that operands in the returned expressions **should not** contain leading ze
 
 **Input:** num = "00", target = 0
 
-**Output:** \["0\*0","0+0","0-0"\]
+**Output:** ["0\*0","0+0","0-0"]
 
 **Explanation:**
 
@@ -48,7 +48,7 @@ Note that operands in the returned expressions **should not** contain leading ze
 
 **Input:** num = "3456237490", target = 9191
 
-**Output:** \[\]
+**Output:** []
 
 **Explanation:** There are no expressions that can be created from "3456237490" to evaluate to 9191. 
 

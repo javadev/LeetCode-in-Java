@@ -8,21 +8,21 @@ Given the `head` of a linked list and an integer `val`, remove all the nodes of 
 
 ![](https://assets.leetcode.com/uploads/2021/03/06/removelinked-list.jpg)
 
-**Input:** head = \[1,2,6,3,4,5,6\], val = 6
+**Input:** head = [1,2,6,3,4,5,6], val = 6
 
-**Output:** \[1,2,3,4,5\] 
+**Output:** [1,2,3,4,5] 
 
 **Example 2:**
 
-**Input:** head = \[\], val = 1
+**Input:** head = [], val = 1
 
-**Output:** \[\] 
+**Output:** [] 
 
 **Example 3:**
 
-**Input:** head = \[7,7,7,7\], val = 7
+**Input:** head = [7,7,7,7], val = 7
 
-**Output:** \[\] 
+**Output:** [] 
 
 **Constraints:**
 

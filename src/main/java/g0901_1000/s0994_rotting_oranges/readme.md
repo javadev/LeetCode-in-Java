@@ -16,13 +16,13 @@ Return _the minimum number of minutes that must elapse until no cell has a fresh
 
 ![](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
 
-**Input:** grid = \[\[2,1,1\],\[1,1,0\],\[0,1,1\]\]
+**Input:** grid = [[2,1,1],[1,1,0],[0,1,1]]
 
 **Output:** 4 
 
 **Example 2:**
 
-**Input:** grid = \[\[2,1,1\],\[0,1,1\],\[1,0,1\]\]
+**Input:** grid = [[2,1,1],[0,1,1],[1,0,1]]
 
 **Output:** -1
 
@@ -30,7 +30,7 @@ Return _the minimum number of minutes that must elapse until no cell has a fresh
 
 **Example 3:**
 
-**Input:** grid = \[\[0,2\]\]
+**Input:** grid = [[0,2]]
 
 **Output:** 0
 

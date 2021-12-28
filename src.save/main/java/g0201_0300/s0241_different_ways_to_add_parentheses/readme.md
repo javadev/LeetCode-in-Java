@@ -8,7 +8,7 @@ Given a string `expression` of numbers and operators, return _all possible resul
 
 **Input:** expression = "2-1-1"
 
-**Output:** \[0,2\]
+**Output:** [0,2]
 
 **Explanation:** ((2-1)-1) = 0 (2-(1-1)) = 2 
 
@@ -16,7 +16,7 @@ Given a string `expression` of numbers and operators, return _all possible resul
 
 **Input:** expression = "2\*3-4\*5"
 
-**Output:** \[-34,-14,-10,-10,10\]
+**Output:** [-34,-14,-10,-10,10]
 
 **Explanation:**
 

@@ -10,7 +10,7 @@ Find the maximum profit you can achieve. You may complete **at most two transact
 
 **Example 1:**
 
-**Input:** prices = \[3,3,5,0,0,3,1,4\]
+**Input:** prices = [3,3,5,0,0,3,1,4]
 
 **Output:** 6
 
@@ -18,7 +18,7 @@ Find the maximum profit you can achieve. You may complete **at most two transact
 
 **Example 2:**
 
-**Input:** prices = \[1,2,3,4,5\]
+**Input:** prices = [1,2,3,4,5]
 
 **Output:** 4
 
@@ -26,7 +26,7 @@ Find the maximum profit you can achieve. You may complete **at most two transact
 
 **Example 3:**
 
-**Input:** prices = \[7,6,4,3,1\]
+**Input:** prices = [7,6,4,3,1]
 
 **Output:** 0
 
@@ -34,7 +34,7 @@ Find the maximum profit you can achieve. You may complete **at most two transact
 
 **Example 4:**
 
-**Input:** prices = \[1\]
+**Input:** prices = [1]
 
 **Output:** 0 
 

@@ -20,7 +20,7 @@ A **subarray** is a contiguous sequence of elements within an array. `arr[left..
     ["RangeFreqQuery", "query", "query"]
     [[[12, 33, 4, 56, 22, 2, 34, 33, 22, 12, 34, 56]], [1, 2, 4], [0, 11, 33]]
 
-**Output:** \[null, 1, 2\]
+**Output:** [null, 1, 2]
 
 **Explanation:**
 

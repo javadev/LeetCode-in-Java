@@ -8,13 +8,13 @@ Given `n` pairs of parentheses, write a function to _generate all combinations o
 
 **Input:** n = 3
 
-**Output:** \["((()))","(()())","(())()","()(())","()()()"\] 
+**Output:** ["((()))","(()())","(())()","()(())","()()()"] 
 
 **Example 2:**
 
 **Input:** n = 1
 
-**Output:** \["()"\] 
+**Output:** ["()"] 
 
 **Constraints:**
 

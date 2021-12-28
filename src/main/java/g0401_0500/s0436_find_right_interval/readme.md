@@ -10,37 +10,37 @@ Return _an array of **right interval** indices for each interval `i`_. If no **r
 
 **Example 1:**
 
-**Input:** intervals = \[\[1,2\]\]
+**Input:** intervals = [[1,2]]
 
-**Output:** \[-1\]
+**Output:** [-1]
 
 **Explanation:** There is only one interval in the collection, so it outputs -1. 
 
 **Example 2:**
 
-**Input:** intervals = \[\[3,4\],\[2,3\],\[1,2\]\]
+**Input:** intervals = [[3,4],[2,3],[1,2]]
 
-**Output:** \[-1,0,1\]
+**Output:** [-1,0,1]
 
 **Explanation:**
 
-There is no right interval for \[3,4\].
+There is no right interval for [3,4].
 
-The right interval for \[2,3\] is \[3,4\] since start<sub>0</sub> = 3 is the smallest start that is >= end<sub>1</sub> = 3.
+The right interval for [2,3] is [3,4] since start<sub>0</sub> = 3 is the smallest start that is >= end<sub>1</sub> = 3.
 
-The right interval for \[1,2\] is \[2,3\] since start<sub>1</sub> = 2 is the smallest start that is >= end<sub>2</sub> = 2.
+The right interval for [1,2] is [2,3] since start<sub>1</sub> = 2 is the smallest start that is >= end<sub>2</sub> = 2.
 
 **Example 3:**
 
-**Input:** intervals = \[\[1,4\],\[2,3\],\[3,4\]\]
+**Input:** intervals = [[1,4],[2,3],[3,4]]
 
-**Output:** \[-1,2,-1\]
+**Output:** [-1,2,-1]
 
 **Explanation:**
 
-There is no right interval for \[1,4\] and \[3,4\].
+There is no right interval for [1,4] and [3,4].
 
-The right interval for \[2,3\] is \[3,4\] since start<sub>2</sub> = 3 is the smallest start that is >= end<sub>1</sub> = 3.
+The right interval for [2,3] is [3,4] since start<sub>2</sub> = 3 is the smallest start that is >= end<sub>1</sub> = 3.
 
 **Constraints:**
 

@@ -6,7 +6,7 @@ Given a string array `words`, return _the maximum value of_ `length(word[i]) * l
 
 **Example 1:**
 
-**Input:** words = \["abcw","baz","foo","bar","xtfn","abcdef"\]
+**Input:** words = ["abcw","baz","foo","bar","xtfn","abcdef"]
 
 **Output:** 16
 
@@ -14,7 +14,7 @@ Given a string array `words`, return _the maximum value of_ `length(word[i]) * l
 
 **Example 2:**
 
-**Input:** words = \["a","ab","abc","d","cd","bcd","abcd"\]
+**Input:** words = ["a","ab","abc","d","cd","bcd","abcd"]
 
 **Output:** 4
 
@@ -22,7 +22,7 @@ Given a string array `words`, return _the maximum value of_ `length(word[i]) * l
 
 **Example 3:**
 
-**Input:** words = \["a","aa","aaa","aaaa"\]
+**Input:** words = ["a","aa","aaa","aaaa"]
 
 **Output:** 0
 

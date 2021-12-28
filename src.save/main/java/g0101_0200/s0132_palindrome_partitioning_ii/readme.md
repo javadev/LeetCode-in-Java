@@ -12,7 +12,7 @@ Return _the minimum cuts needed_ for a palindrome partitioning of `s`.
 
 **Output:** 1
 
-**Explanation:** The palindrome partitioning \["aa","b"\] could be produced using 1 cut. 
+**Explanation:** The palindrome partitioning ["aa","b"] could be produced using 1 cut. 
 
 **Example 2:**
 

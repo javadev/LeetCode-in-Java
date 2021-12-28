@@ -10,9 +10,9 @@ It is **guaranteed** that the number of unique combinations that sum up to `targ
 
 **Example 1:**
 
-**Input:** candidates = \[2,3,6,7\], target = 7
+**Input:** candidates = [2,3,6,7], target = 7
 
-**Output:** \[\[2,2,3\],\[7\]\]
+**Output:** [[2,2,3],[7]]
 
 **Explanation:**
 
@@ -22,27 +22,27 @@ It is **guaranteed** that the number of unique combinations that sum up to `targ
 
 **Example 2:**
 
-**Input:** candidates = \[2,3,5\], target = 8
+**Input:** candidates = [2,3,5], target = 8
 
-**Output:** \[\[2,2,2,2\],\[2,3,3\],\[3,5\]\] 
+**Output:** [[2,2,2,2],[2,3,3],[3,5]] 
 
 **Example 3:**
 
-**Input:** candidates = \[2\], target = 1
+**Input:** candidates = [2], target = 1
 
-**Output:** \[\] 
+**Output:** [] 
 
 **Example 4:**
 
-**Input:** candidates = \[1\], target = 1
+**Input:** candidates = [1], target = 1
 
-**Output:** \[\[1\]\] 
+**Output:** [[1]] 
 
 **Example 5:**
 
-**Input:** candidates = \[1\], target = 2
+**Input:** candidates = [1], target = 2
 
-**Output:** \[\[1,1\]\] 
+**Output:** [[1,1]] 
 
 **Constraints:**
 

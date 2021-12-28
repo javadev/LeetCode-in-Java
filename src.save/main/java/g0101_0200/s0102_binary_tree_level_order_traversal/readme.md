@@ -8,21 +8,21 @@ Given the `root` of a binary tree, return _the level order traversal of its node
 
 ![](https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg)
 
-**Input:** root = \[3,9,20,null,null,15,7\]
+**Input:** root = [3,9,20,null,null,15,7]
 
-**Output:** \[\[3\],\[9,20\],\[15,7\]\] 
+**Output:** [[3],[9,20],[15,7]] 
 
 **Example 2:**
 
-**Input:** root = \[1\]
+**Input:** root = [1]
 
-**Output:** \[\[1\]\] 
+**Output:** [[1]] 
 
 **Example 3:**
 
-**Input:** root = \[\]
+**Input:** root = []
 
-**Output:** \[\] 
+**Output:** [] 
 
 **Constraints:**
 

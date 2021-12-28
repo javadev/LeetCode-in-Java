@@ -8,21 +8,21 @@ Merge two sorted linked lists and return it as a **sorted** list. The list shoul
 
 ![](https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg)
 
-**Input:** l1 = \[1,2,4\], l2 = \[1,3,4\]
+**Input:** l1 = [1,2,4], l2 = [1,3,4]
 
-**Output:** \[1,1,2,3,4,4\] 
+**Output:** [1,1,2,3,4,4] 
 
 **Example 2:**
 
-**Input:** l1 = \[\], l2 = \[\]
+**Input:** l1 = [], l2 = []
 
-**Output:** \[\] 
+**Output:** [] 
 
 **Example 3:**
 
-**Input:** l1 = \[\], l2 = \[0\]
+**Input:** l1 = [], l2 = [0]
 
-**Output:** \[0\] 
+**Output:** [0] 
 
 **Constraints:**
 

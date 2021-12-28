@@ -10,7 +10,7 @@ A **leaf** is a node with no children.
 
 ![](https://assets.leetcode.com/uploads/2021/01/18/pathsum1.jpg)
 
-**Input:** root = \[5,4,8,11,null,13,4,7,2,null,null,null,1\], targetSum = 22
+**Input:** root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22
 
 **Output:** true 
 
@@ -18,13 +18,13 @@ A **leaf** is a node with no children.
 
 ![](https://assets.leetcode.com/uploads/2021/01/18/pathsum2.jpg)
 
-**Input:** root = \[1,2,3\], targetSum = 5
+**Input:** root = [1,2,3], targetSum = 5
 
 **Output:** false 
 
 **Example 3:**
 
-**Input:** root = \[1,2\], targetSum = 0
+**Input:** root = [1,2], targetSum = 0
 
 **Output:** false 
 

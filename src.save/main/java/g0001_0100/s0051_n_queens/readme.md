@@ -14,7 +14,7 @@ Each solution contains a distinct board configuration of the n-queens' placement
 
 **Input:** n = 4
 
-**Output:** \[\[".Q..","...Q","Q...","..Q."\],\["..Q.","Q...","...Q",".Q.."\]\]
+**Output:** [[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
 
 **Explanation:** There exist two distinct solutions to the 4-queens puzzle as shown above 
 
@@ -22,7 +22,7 @@ Each solution contains a distinct board configuration of the n-queens' placement
 
 **Input:** n = 1
 
-**Output:** \[\["Q"\]\] 
+**Output:** [["Q"]] 
 
 **Constraints:**
 

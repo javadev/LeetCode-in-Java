@@ -8,7 +8,7 @@ Given an array of integers `heights` representing the histogram's bar height whe
 
 ![](https://assets.leetcode.com/uploads/2021/01/04/histogram.jpg)
 
-**Input:** heights = \[2,1,5,6,2,3\]
+**Input:** heights = [2,1,5,6,2,3]
 
 **Output:** 10
 
@@ -18,7 +18,7 @@ Given an array of integers `heights` representing the histogram's bar height whe
 
 ![](https://assets.leetcode.com/uploads/2021/01/04/histogram-1.jpg)
 
-**Input:** heights = \[2,4\]
+**Input:** heights = [2,4]
 
 **Output:** 4 
 

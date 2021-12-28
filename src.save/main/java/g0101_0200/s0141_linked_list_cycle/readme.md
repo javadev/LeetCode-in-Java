@@ -12,7 +12,7 @@ Return `true` _if there is a cycle in the linked list_. Otherwise, return `false
 
 ![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png)
 
-**Input:** head = \[3,2,0,-4\], pos = 1
+**Input:** head = [3,2,0,-4], pos = 1
 
 **Output:** true
 
@@ -22,7 +22,7 @@ Return `true` _if there is a cycle in the linked list_. Otherwise, return `false
 
 ![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png)
 
-**Input:** head = \[1,2\], pos = 0
+**Input:** head = [1,2], pos = 0
 
 **Output:** true
 
@@ -32,7 +32,7 @@ Return `true` _if there is a cycle in the linked list_. Otherwise, return `false
 
 ![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png)
 
-**Input:** head = \[1\], pos = -1
+**Input:** head = [1], pos = -1
 
 **Output:** false
 

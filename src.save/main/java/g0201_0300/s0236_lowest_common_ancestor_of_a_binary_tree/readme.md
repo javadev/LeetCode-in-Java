@@ -10,7 +10,7 @@ According to the [definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/
 
 ![](https://assets.leetcode.com/uploads/2018/12/14/binarytree.png)
 
-**Input:** root = \[3,5,1,6,2,0,8,null,null,7,4\], p = 5, q = 1
+**Input:** root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
 
 **Output:** 3
 
@@ -20,7 +20,7 @@ According to the [definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/
 
 ![](https://assets.leetcode.com/uploads/2018/12/14/binarytree.png)
 
-**Input:** root = \[3,5,1,6,2,0,8,null,null,7,4\], p = 5, q = 4
+**Input:** root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
 
 **Output:** 5
 
@@ -28,7 +28,7 @@ According to the [definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/
 
 **Example 3:**
 
-**Input:** root = \[1,2\], p = 1, q = 2
+**Input:** root = [1,2], p = 1, q = 2
 
 **Output:** 1 
 

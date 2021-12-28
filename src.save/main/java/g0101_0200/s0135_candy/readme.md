@@ -13,7 +13,7 @@ Return _the minimum number of candies you need to have to distribute the candies
 
 **Example 1:**
 
-**Input:** ratings = \[1,0,2\]
+**Input:** ratings = [1,0,2]
 
 **Output:** 5
 
@@ -21,7 +21,7 @@ Return _the minimum number of candies you need to have to distribute the candies
 
 **Example 2:**
 
-**Input:** ratings = \[1,2,2\]
+**Input:** ratings = [1,2,2]
 
 **Output:** 4
 

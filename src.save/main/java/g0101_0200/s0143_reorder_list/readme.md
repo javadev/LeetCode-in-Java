@@ -16,17 +16,17 @@ You may not modify the values in the list's nodes. Only nodes themselves may be 
 
 ![](https://assets.leetcode.com/uploads/2021/03/04/reorder1linked-list.jpg)
 
-**Input:** head = \[1,2,3,4\]
+**Input:** head = [1,2,3,4]
 
-**Output:** \[1,4,2,3\] 
+**Output:** [1,4,2,3] 
 
 **Example 2:**
 
 ![](https://assets.leetcode.com/uploads/2021/03/09/reorder2-linked-list.jpg)
 
-**Input:** head = \[1,2,3,4,5\]
+**Input:** head = [1,2,3,4,5]
 
-**Output:** \[1,5,2,4,3\] 
+**Output:** [1,5,2,4,3] 
 
 **Constraints:**
 

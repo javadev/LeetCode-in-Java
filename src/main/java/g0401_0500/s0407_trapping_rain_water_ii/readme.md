@@ -8,7 +8,7 @@ Given an `m x n` integer matrix `heightMap` representing the height of each unit
 
 ![](https://assets.leetcode.com/uploads/2021/04/08/trap1-3d.jpg)
 
-**Input:** heightMap = \[\[1,4,3,1,3,2\],\[3,2,1,3,2,4\],\[2,3,3,2,3,1\]\]
+**Input:** heightMap = [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]]
 
 **Output:** 4
 
@@ -22,7 +22,7 @@ Given an `m x n` integer matrix `heightMap` representing the height of each unit
 
 ![](https://assets.leetcode.com/uploads/2021/04/08/trap2-3d.jpg)
 
-**Input:** heightMap = \[\[3,3,3,3,3\],\[3,2,2,2,3\],\[3,2,1,2,3\],\[3,2,2,2,3\],\[3,3,3,3,3\]\]
+**Input:** heightMap = [[3,3,3,3,3],[3,2,2,2,3],[3,2,1,2,3],[3,2,2,2,3],[3,3,3,3,3]]
 
 **Output:** 10 
 

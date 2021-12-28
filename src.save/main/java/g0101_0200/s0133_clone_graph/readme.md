@@ -22,9 +22,9 @@ The given node will always be the first node with `val = 1`. You must return the
 
 ![](https://assets.leetcode.com/uploads/2019/11/04/133_clone_graph_question.png)
 
-**Input:** adjList = \[\[2,4\],\[1,3\],\[2,4\],\[1,3\]\]
+**Input:** adjList = [[2,4],[1,3],[2,4],[1,3]]
 
-**Output:** \[\[2,4\],\[1,3\],\[2,4\],\[1,3\]\]
+**Output:** [[2,4],[1,3],[2,4],[1,3]]
 
 **Explanation:**
 
@@ -38,17 +38,17 @@ The given node will always be the first node with `val = 1`. You must return the
 
 ![](https://assets.leetcode.com/uploads/2020/01/07/graph.png)
 
-**Input:** adjList = \[\[\]\]
+**Input:** adjList = [[]]
 
-**Output:** \[\[\]\]
+**Output:** [[]]
 
 **Explanation:** Note that the input contains one empty list. The graph consists of only one node with val = 1 and it does not have any neighbors. 
 
 **Example 3:**
 
-**Input:** adjList = \[\]
+**Input:** adjList = []
 
-**Output:** \[\]
+**Output:** []
 
 **Explanation:** This an empty graph, it does not have any nodes. 
 
@@ -56,9 +56,9 @@ The given node will always be the first node with `val = 1`. You must return the
 
 ![](https://assets.leetcode.com/uploads/2020/01/07/graph-1.png)
 
-**Input:** adjList = \[\[2\],\[1\]\]
+**Input:** adjList = [[2],[1]]
 
-**Output:** \[\[2\],\[1\]\] 
+**Output:** [[2],[1]] 
 
 **Constraints:**
 

@@ -12,7 +12,7 @@ Return `true` if your path crosses itself, and `false` if it does not.
 
 ![](https://assets.leetcode.com/uploads/2021/03/14/selfcross1-plane.jpg)
 
-**Input:** distance = \[2,1,1,2\]
+**Input:** distance = [2,1,1,2]
 
 **Output:** true 
 
@@ -20,7 +20,7 @@ Return `true` if your path crosses itself, and `false` if it does not.
 
 ![](https://assets.leetcode.com/uploads/2021/03/14/selfcross2-plane.jpg)
 
-**Input:** distance = \[1,2,3,4\]
+**Input:** distance = [1,2,3,4]
 
 **Output:** false 
 
@@ -28,7 +28,7 @@ Return `true` if your path crosses itself, and `false` if it does not.
 
 ![](https://assets.leetcode.com/uploads/2021/03/14/selfcross3-plane.jpg)
 
-**Input:** distance = \[1,1,1,1\]
+**Input:** distance = [1,1,1,1]
 
 **Output:** true 
 
