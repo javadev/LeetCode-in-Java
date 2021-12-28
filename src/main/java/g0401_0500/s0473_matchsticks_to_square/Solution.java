@@ -33,8 +33,10 @@ public class Solution {
         for (int i = start; i < matchsticks.length; i++) {
             if (!used[i]) {
                 used[i] = true;
-                if (backtracking(matchsticks, used, target, count, currSum + matchsticks[i], i + 1))
+                if (backtracking(
+                        matchsticks, used, target, count, currSum + matchsticks[i], i + 1)) {
                     return true;
+                }
                 used[i] = false;
             }
         }
