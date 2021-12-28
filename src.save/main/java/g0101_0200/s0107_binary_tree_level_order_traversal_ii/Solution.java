@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Solution {
-    List<List<Integer>> order = new ArrayList<>();
+    private List<List<Integer>> order = new ArrayList<>();
 
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
         getOrder(root, 0);

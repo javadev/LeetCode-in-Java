@@ -9,7 +9,6 @@ import java.util.List;
 public class Solution {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> output = new ArrayList<>();
-
         for (int i = 0; i < numRows; i++) {
             List<Integer> currRow = new ArrayList<>();
             for (int j = 0; j <= i; j++) {

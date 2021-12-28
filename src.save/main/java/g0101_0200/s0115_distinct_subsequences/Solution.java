@@ -16,7 +16,6 @@ public class Solution {
         int[] dp = new int[move];
         int j = 1;
         int k = 1;
-
         for (int i = 0; i < text2.length(); i++) {
             boolean firstMatch = true;
             for (; j < move; j++) {
@@ -40,7 +39,6 @@ public class Solution {
             if (dp[move - 1] == 0) {
                 return 0;
             }
-
             j = k;
         }
         return dp[move - 1];

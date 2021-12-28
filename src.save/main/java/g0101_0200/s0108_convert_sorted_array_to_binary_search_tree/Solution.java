@@ -10,20 +10,17 @@ public class Solution {
         return makeTree(num, 0, num.length - 1);
     }
 
-    public TreeNode makeTree(int[] num, int left, int right) {
+    private TreeNode makeTree(int[] num, int left, int right) {
         /*2. left as lowest# can't be greater than right*/
         if (left > right) {
             return null;
         }
-
         /*3. Set median# as node*/
         int mid = (left + right) / 2;
         TreeNode midNode = new TreeNode(num[mid]);
-
         /*4. Set mid node's kids*/
         midNode.left = makeTree(num, left, mid - 1);
         midNode.right = makeTree(num, mid + 1, right);
-
         /*5. Sends node back || Goes back to prev node*/
         return midNode;
     }

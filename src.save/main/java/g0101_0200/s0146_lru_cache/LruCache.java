@@ -7,6 +7,18 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LruCache {
+    private static class LruCacheNode {
+        int key;
+        int value;
+        LruCacheNode prev;
+        LruCacheNode next;
+
+        public LruCacheNode(int k, int v) {
+            key = k;
+            value = v;
+        }
+    }
+
     private int capacity;
     private Map<Integer, LruCacheNode> cacheMap = new HashMap<>();
     // insert here

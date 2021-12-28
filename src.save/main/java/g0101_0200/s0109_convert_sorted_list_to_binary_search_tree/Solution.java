@@ -11,7 +11,6 @@ public class Solution {
         if (head == null) {
             return null;
         }
-
         // No next node -> this node will become leaf
         if (head.next == null) {
             TreeNode leaf = new TreeNode(head.val);
@@ -19,27 +18,21 @@ public class Solution {
             leaf.right = null;
             return leaf;
         }
-
         ListNode slow = head;
         // Head-Start fast by 1 to get slow = mid -1
         ListNode fast = head.next.next;
-
         // Find the mid of list
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
-
         // slow.next ->  mid = our "root"
         TreeNode root = new TreeNode(slow.next.val);
-
         // Right sub tree from mid - end
         root.right = sortedListToBST(slow.next.next);
-
         // Left sub tree from head - mid (chop slow.next)
         slow.next = null;
         root.left = sortedListToBST(head);
-
         return root;
     }
 }

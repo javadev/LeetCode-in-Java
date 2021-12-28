@@ -12,7 +12,7 @@ public class Solution {
         return cloneGraph(node, new HashMap<>());
     }
 
-    public Node cloneGraph(Node node, Map<Node, Node> processedNodes) {
+    private Node cloneGraph(Node node, Map<Node, Node> processedNodes) {
         if (node == null) {
             return null;
         } else if (processedNodes.get(node) != null) {

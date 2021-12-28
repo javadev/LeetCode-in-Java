@@ -10,7 +10,6 @@ public class Solution {
         int[] buffer = new int[rowIndex + 1];
         buffer[0] = 1;
         computeRow(buffer, 1);
-
         // Copy buffer to List of Integer.
         List<Integer> ans = new ArrayList<>(buffer.length);
         for (int i = 0; i < buffer.length; i++) {

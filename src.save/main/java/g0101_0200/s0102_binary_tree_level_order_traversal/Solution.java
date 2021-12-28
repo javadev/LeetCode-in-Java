@@ -23,14 +23,12 @@ public class Solution {
             root = queue.remove();
             while (!queue.isEmpty() && root != null) {
                 level.add(root.val);
-
                 if (root.left != null) {
                     queue.add(root.left);
                 }
                 if (root.right != null) {
                     queue.add(root.right);
                 }
-
                 root = queue.remove();
             }
             result.add(level);
