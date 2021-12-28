@@ -8,7 +8,7 @@ public class Solution {
             return false;
         }
         int totalSum = 0;
-        for (int m : matchsticks){
+        for (int m : matchsticks) {
             totalSum += m;
         }
         if (totalSum % 4 != 0) {
@@ -19,7 +19,8 @@ public class Solution {
         return backtracking(matchsticks, used, target, 0, 0, 0);
     }
 
-    private boolean backtracking(int[] matchsticks, boolean[] used, int target, int count, int currSum, int start) {
+    private boolean backtracking(
+            int[] matchsticks, boolean[] used, int target, int count, int currSum, int start) {
         if (count == 3) {
             return true;
         }
@@ -32,7 +33,8 @@ public class Solution {
         for (int i = start; i < matchsticks.length; i++) {
             if (!used[i]) {
                 used[i] = true;
-                if (backtracking(matchsticks, used, target, count, currSum + matchsticks[i], i + 1)) return true;
+                if (backtracking(matchsticks, used, target, count, currSum + matchsticks[i], i + 1))
+                    return true;
                 used[i] = false;
             }
         }

@@ -21,10 +21,14 @@ public class Solution {
                 res = Math.max(heaters[ht] - houses[hs], res);
                 hs++;
             } else if (houses[hs] <= heaters[ht + 1]) {
-                res = Math.max(res, Math.min(houses[hs] - heaters[ht], heaters[ht + 1] - houses[hs]));
+                res =
+                        Math.max(
+                                res,
+                                Math.min(houses[hs] - heaters[ht], heaters[ht + 1] - houses[hs]));
                 hs++;
-            } else
+            } else {
                 ht++;
+            }
         }
         if (ht == n - 1) {
             res = Math.max(res, houses[m - 1] - heaters[n - 1]);
