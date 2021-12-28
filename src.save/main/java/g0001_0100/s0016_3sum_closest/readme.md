@@ -10,7 +10,7 @@ You may assume that each input would have exactly one solution.
 
 **Example 1:**
 
-**Input:** nums = \[-1,2,1,-4\], target = 1
+**Input:** nums = [-1,2,1,-4], target = 1
 
 **Output:** 2
 
@@ -18,7 +18,7 @@ You may assume that each input would have exactly one solution.
 
 **Example 2:**
 
-**Input:** nums = \[0,0,0\], target = 1
+**Input:** nums = [0,0,0], target = 1
 
 **Output:** 0 
 

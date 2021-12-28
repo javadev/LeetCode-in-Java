@@ -8,7 +8,7 @@ Return _the minimum number of patches required_.
 
 **Example 1:**
 
-**Input:** nums = \[1,3\], n = 6
+**Input:** nums = [1,3], n = 6
 
 **Output:** 1
 
@@ -21,15 +21,15 @@ Return _the minimum number of patches required_.
 
 **Example 2:**
 
-**Input:** nums = \[1,5,10\], n = 20
+**Input:** nums = [1,5,10], n = 20
 
 **Output:** 2
 
-**Explanation:** The two patches can be \[2, 4\]. 
+**Explanation:** The two patches can be [2, 4]. 
 
 **Example 3:**
 
-**Input:** nums = \[1,2,2\], n = 5
+**Input:** nums = [1,2,2], n = 5
 
 **Output:** 0 
 

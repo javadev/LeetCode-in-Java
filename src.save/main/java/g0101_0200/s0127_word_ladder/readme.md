@@ -12,7 +12,7 @@ Given two words, `beginWord` and `endWord`, and a dictionary `wordList`, return 
 
 **Example 1:**
 
-**Input:** beginWord = "hit", endWord = "cog", wordList = \["hot","dot","dog","lot","log","cog"\]
+**Input:** beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]
 
 **Output:** 5
 
@@ -20,7 +20,7 @@ Given two words, `beginWord` and `endWord`, and a dictionary `wordList`, return 
 
 **Example 2:**
 
-**Input:** beginWord = "hit", endWord = "cog", wordList = \["hot","dot","dog","lot","log"\]
+**Input:** beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]
 
 **Output:** 0
 

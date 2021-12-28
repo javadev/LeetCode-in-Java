@@ -10,17 +10,17 @@ Each word must be constructed from letters of sequentially adjacent cells, where
 
 ![](https://assets.leetcode.com/uploads/2020/11/07/search1.jpg)
 
-**Input:** board = \[\["o","a","a","n"\],\["e","t","a","e"\],\["i","h","k","r"\],\["i","f","l","v"\]\], words = \["oath","pea","eat","rain"\]
+**Input:** board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"]
 
-**Output:** \["eat","oath"\] 
+**Output:** ["eat","oath"] 
 
 **Example 2:**
 
 ![](https://assets.leetcode.com/uploads/2020/11/07/search2.jpg)
 
-**Input:** board = \[\["a","b"\],\["c","d"\]\], words = \["abcb"\]
+**Input:** board = [["a","b"],["c","d"]], words = ["abcb"]
 
-**Output:** \[\] 
+**Output:** [] 
 
 **Constraints:**
 

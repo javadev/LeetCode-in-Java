@@ -20,7 +20,7 @@ Implement the `NumArray` class:
     ["NumArray", "sumRange", "update", "sumRange"]
     [[[1, 3, 5]], [0, 2], [1, 2], [0, 2]]
 
-**Output:** \[null, 9, null, 8\]
+**Output:** [null, 9, null, 8]
 
 **Explanation:**
 

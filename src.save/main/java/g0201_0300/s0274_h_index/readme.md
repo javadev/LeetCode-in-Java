@@ -10,7 +10,7 @@ If there are several possible values for `h`, the maximum one is taken as the `h
 
 **Example 1:**
 
-**Input:** citations = \[3,0,6,1,5\]
+**Input:** citations = [3,0,6,1,5]
 
 **Output:** 3
 
@@ -21,7 +21,7 @@ If there are several possible values for `h`, the maximum one is taken as the `h
 
 **Example 2:**
 
-**Input:** citations = \[1,3,1\]
+**Input:** citations = [1,3,1]
 
 **Output:** 1 
 

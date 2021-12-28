@@ -14,13 +14,13 @@ Given a string `s` that represents a **DNA sequence**, return all the **`10`\-le
 
 **Input:** s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
 
-**Output:** \["AAAAACCCCC","CCCCCAAAAA"\] 
+**Output:** ["AAAAACCCCC","CCCCCAAAAA"] 
 
 **Example 2:**
 
 **Input:** s = "AAAAAAAAAAAAA"
 
-**Output:** \["AAAAAAAAAA"\] 
+**Output:** ["AAAAAAAAAA"] 
 
 **Constraints:**
 

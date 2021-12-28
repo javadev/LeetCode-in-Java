@@ -10,7 +10,7 @@ If the frog's last jump was `k` units, its next jump must be either `k - 1`, `k`
 
 **Example 1:**
 
-**Input:** stones = \[0,1,3,5,6,8,12,17\]
+**Input:** stones = [0,1,3,5,6,8,12,17]
 
 **Output:** true
 
@@ -18,7 +18,7 @@ If the frog's last jump was `k` units, its next jump must be either `k - 1`, `k`
 
 **Example 2:**
 
-**Input:** stones = \[0,1,2,3,4,8,9,11\]
+**Input:** stones = [0,1,2,3,4,8,9,11]
 
 **Output:** false
 

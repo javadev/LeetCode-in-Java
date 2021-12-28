@@ -12,7 +12,7 @@ Given the `root` of a binary tree, return _the maximum **path sum** of any **non
 
 ![](https://assets.leetcode.com/uploads/2020/10/13/exx1.jpg)
 
-**Input:** root = \[1,2,3\]
+**Input:** root = [1,2,3]
 
 **Output:** 6
 
@@ -22,7 +22,7 @@ Given the `root` of a binary tree, return _the maximum **path sum** of any **non
 
 ![](https://assets.leetcode.com/uploads/2020/10/13/exx2.jpg)
 
-**Input:** root = \[-10,9,20,null,null,15,7\]
+**Input:** root = [-10,9,20,null,null,15,7]
 
 **Output:** 42
 

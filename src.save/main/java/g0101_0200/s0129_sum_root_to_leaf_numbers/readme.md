@@ -16,7 +16,7 @@ A **leaf** node is a node with no children.
 
 ![](https://assets.leetcode.com/uploads/2021/02/19/num1tree.jpg)
 
-**Input:** root = \[1,2,3\]
+**Input:** root = [1,2,3]
 
 **Output:** 25
 
@@ -26,7 +26,7 @@ A **leaf** node is a node with no children.
 
 ![](https://assets.leetcode.com/uploads/2021/02/19/num2tree.jpg)
 
-**Input:** root = \[4,9,0,5,1\]
+**Input:** root = [4,9,0,5,1]
 
 **Output:** 1026
 

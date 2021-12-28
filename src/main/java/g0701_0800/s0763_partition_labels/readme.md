@@ -10,7 +10,7 @@ Return _a list of integers representing the size of these parts_.
 
 **Input:** s = "ababcbacadefegdehijhklij"
 
-**Output:** \[9,7,8\]
+**Output:** [9,7,8]
 
 **Explanation:**
 
@@ -22,7 +22,7 @@ Return _a list of integers representing the size of these parts_.
 
 **Input:** s = "eccbbbbdec"
 
-**Output:** \[10\] 
+**Output:** [10] 
 
 **Constraints:**
 

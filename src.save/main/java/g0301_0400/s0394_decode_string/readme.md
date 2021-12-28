@@ -12,25 +12,25 @@ Furthermore, you may assume that the original data does not contain any digits a
 
 **Example 1:**
 
-**Input:** s = "3\[a\]2\[bc\]"
+**Input:** s = "3[a]2[bc]"
 
 **Output:** "aaabcbc" 
 
 **Example 2:**
 
-**Input:** s = "3\[a2\[c\]\]"
+**Input:** s = "3[a2[c]]"
 
 **Output:** "accaccacc" 
 
 **Example 3:**
 
-**Input:** s = "2\[abc\]3\[cd\]ef"
+**Input:** s = "2[abc]3[cd]ef"
 
 **Output:** "abcabccdcdcdef" 
 
 **Example 4:**
 
-**Input:** s = "abc3\[cd\]xyz"
+**Input:** s = "abc3[cd]xyz"
 
 **Output:** "abccdcdcdxyz" 
 

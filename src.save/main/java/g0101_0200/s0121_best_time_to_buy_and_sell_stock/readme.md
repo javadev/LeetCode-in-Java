@@ -10,7 +10,7 @@ Return _the maximum profit you can achieve from this transaction_. If you cannot
 
 **Example 1:**
 
-**Input:** prices = \[7,1,5,3,6,4\]
+**Input:** prices = [7,1,5,3,6,4]
 
 **Output:** 5
 
@@ -18,7 +18,7 @@ Return _the maximum profit you can achieve from this transaction_. If you cannot
 
 **Example 2:**
 
-**Input:** prices = \[7,6,4,3,1\]
+**Input:** prices = [7,6,4,3,1]
 
 **Output:** 0
 

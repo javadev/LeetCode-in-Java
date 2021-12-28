@@ -8,7 +8,7 @@ Given a string `s` and a dictionary of strings `wordDict`, return `true` if `s` 
 
 **Example 1:**
 
-**Input:** s = "leetcode", wordDict = \["leet","code"\]
+**Input:** s = "leetcode", wordDict = ["leet","code"]
 
 **Output:** true
 
@@ -16,7 +16,7 @@ Given a string `s` and a dictionary of strings `wordDict`, return `true` if `s` 
 
 **Example 2:**
 
-**Input:** s = "applepenapple", wordDict = \["apple","pen"\]
+**Input:** s = "applepenapple", wordDict = ["apple","pen"]
 
 **Output:** true
 
@@ -24,7 +24,7 @@ Given a string `s` and a dictionary of strings `wordDict`, return `true` if `s` 
 
 **Example 3:**
 
-**Input:** s = "catsandog", wordDict = \["cats","dog","sand","and","cat"\]
+**Input:** s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]
 
 **Output:** false 
 

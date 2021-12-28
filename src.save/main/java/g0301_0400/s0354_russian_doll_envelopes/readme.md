@@ -12,15 +12,15 @@ Return _the maximum number of envelopes you can Russian doll (i.e., put one insi
 
 **Example 1:**
 
-**Input:** envelopes = \[\[5,4\],\[6,4\],\[6,7\],\[2,3\]\]
+**Input:** envelopes = [[5,4],[6,4],[6,7],[2,3]]
 
 **Output:** 3
 
-**Explanation:** The maximum number of envelopes you can Russian doll is `3` (\[2,3\] => \[5,4\] => \[6,7\]).
+**Explanation:** The maximum number of envelopes you can Russian doll is `3` ([2,3] => [5,4] => [6,7]).
 
 **Example 2:**
 
-**Input:** envelopes = \[\[1,1\],\[1,1\],\[1,1\]\]
+**Input:** envelopes = [[1,1],[1,1],[1,1]]
 
 **Output:** 1
 

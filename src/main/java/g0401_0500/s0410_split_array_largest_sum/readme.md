@@ -8,7 +8,7 @@ Write an algorithm to minimize the largest sum among these `m` subarrays.
 
 **Example 1:**
 
-**Input:** nums = \[7,2,5,10,8\], m = 2
+**Input:** nums = [7,2,5,10,8], m = 2
 
 **Output:** 18
 
@@ -20,13 +20,13 @@ Write an algorithm to minimize the largest sum among these `m` subarrays.
 
 **Example 2:**
 
-**Input:** nums = \[1,2,3,4,5\], m = 2
+**Input:** nums = [1,2,3,4,5], m = 2
 
 **Output:** 9 
 
 **Example 3:**
 
-**Input:** nums = \[1,4,4\], m = 3
+**Input:** nums = [1,4,4], m = 3
 
 **Output:** 4 
 

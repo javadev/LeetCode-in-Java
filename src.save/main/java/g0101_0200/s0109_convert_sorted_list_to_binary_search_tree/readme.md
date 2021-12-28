@@ -10,29 +10,29 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
 
 ![](https://assets.leetcode.com/uploads/2020/08/17/linked.jpg)
 
-**Input:** head = \[-10,-3,0,5,9\]
+**Input:** head = [-10,-3,0,5,9]
 
-**Output:** \[0,-3,9,-10,null,5\]
+**Output:** [0,-3,9,-10,null,5]
 
-**Explanation:** One possible answer is \[0,-3,9,-10,null,5\], which represents the shown height balanced BST. 
+**Explanation:** One possible answer is [0,-3,9,-10,null,5], which represents the shown height balanced BST. 
 
 **Example 2:**
 
-**Input:** head = \[\]
+**Input:** head = []
 
-**Output:** \[\] 
+**Output:** [] 
 
 **Example 3:**
 
-**Input:** head = \[0\]
+**Input:** head = [0]
 
-**Output:** \[0\] 
+**Output:** [0] 
 
 **Example 4:**
 
-**Input:** head = \[1,3\]
+**Input:** head = [1,3]
 
-**Output:** \[3,1\] 
+**Output:** [3,1] 
 
 **Constraints:**
 

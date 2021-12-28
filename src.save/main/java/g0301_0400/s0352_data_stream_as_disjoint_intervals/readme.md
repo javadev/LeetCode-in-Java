@@ -17,7 +17,7 @@ Implement the `SummaryRanges` class:
     ["SummaryRanges", "addNum", "getIntervals", "addNum", "getIntervals", "addNum", "getIntervals", "addNum", "getIntervals", "addNum", "getIntervals"]
     [[], [1], [], [3], [], [7], [], [2], [], [6], []]
 
-**Output:** \[null, null, \[\[1, 1\]\], null, \[\[1, 1\], \[3, 3\]\], null, \[\[1, 1\], \[3, 3\], \[7, 7\]\], null, \[\[1, 3\], \[7, 7\]\], null, \[\[1, 3\], \[6, 7\]\]\]
+**Output:** [null, null, [[1, 1]], null, [[1, 1], [3, 3]], null, [[1, 1], [3, 3], [7, 7]], null, [[1, 3], [7, 7]], null, [[1, 3], [6, 7]]]
 
 **Explanation:**
 

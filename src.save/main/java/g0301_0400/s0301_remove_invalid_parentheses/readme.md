@@ -10,19 +10,19 @@ Return _all the possible results_. You may return the answer in **any order**.
 
 **Input:** s = "()())()"
 
-**Output:** \["(())()","()()()"\] 
+**Output:** ["(())()","()()()"] 
 
 **Example 2:**
 
 **Input:** s = "(a)())()"
 
-**Output:** \["(a())()","(a)()()"\] 
+**Output:** ["(a())()","(a)()()"] 
 
 **Example 3:**
 
 **Input:** s = ")("
 
-**Output:** \[""\] 
+**Output:** [""] 
 
 **Constraints:**
 

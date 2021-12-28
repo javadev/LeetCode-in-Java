@@ -10,13 +10,13 @@ Given an `m x n` matrix `board` where each cell is a battleship `'X'` or empty `
 
 ![](https://assets.leetcode.com/uploads/2021/04/10/battelship-grid.jpg)
 
-**Input:** board = \[\["X",".",".","X"\],\[".",".",".","X"\],\[".",".",".","X"\]\]
+**Input:** board = [["X",".",".","X"],[".",".",".","X"],[".",".",".","X"]]
 
 **Output:** 2 
 
 **Example 2:**
 
-**Input:** board = \[\["."\]\]
+**Input:** board = [["."]]
 
 **Output:** 0 
 

@@ -6,7 +6,7 @@ Given an integer array `nums`, return _the **third distinct maximum** number in 
 
 **Example 1:**
 
-**Input:** nums = \[3,2,1\]
+**Input:** nums = [3,2,1]
 
 **Output:** 1
 
@@ -14,7 +14,7 @@ Given an integer array `nums`, return _the **third distinct maximum** number in 
 
 **Example 2:**
 
-**Input:** nums = \[1,2\]
+**Input:** nums = [1,2]
 
 **Output:** 2
 
@@ -22,7 +22,7 @@ Given an integer array `nums`, return _the **third distinct maximum** number in 
 
 **Example 3:**
 
-**Input:** nums = \[2,2,3,1\]
+**Input:** nums = [2,2,3,1]
 
 **Output:** 1
 

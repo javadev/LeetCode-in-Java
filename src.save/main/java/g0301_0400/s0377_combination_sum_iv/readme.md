@@ -8,7 +8,7 @@ The test cases are generated so that the answer can fit in a **32-bit** integer.
 
 **Example 1:**
 
-**Input:** nums = \[1,2,3\], target = 4
+**Input:** nums = [1,2,3], target = 4
 
 **Output:** 7
 
@@ -26,7 +26,7 @@ The test cases are generated so that the answer can fit in a **32-bit** integer.
 
 **Example 2:**
 
-**Input:** nums = \[9\], target = 3
+**Input:** nums = [9], target = 3
 
 **Output:** 0
 

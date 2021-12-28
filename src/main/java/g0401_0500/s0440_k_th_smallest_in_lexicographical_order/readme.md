@@ -10,7 +10,7 @@ Given two integers `n` and `k`, return _the_ <code>k<sup>th</sup></code> _lexico
 
 **Output:** 10
 
-**Explanation:** The lexicographical order is \[1, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9\], so the second smallest number is 10. 
+**Explanation:** The lexicographical order is [1, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9], so the second smallest number is 10. 
 
 **Example 2:**
 

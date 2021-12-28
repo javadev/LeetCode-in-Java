@@ -10,7 +10,7 @@ The path does not need to start or end at the root or a leaf, but it must go dow
 
 ![](https://assets.leetcode.com/uploads/2021/04/09/pathsum3-1-tree.jpg)
 
-**Input:** root = \[10,5,-3,3,2,null,11,3,-2,null,1\], targetSum = 8
+**Input:** root = [10,5,-3,3,2,null,11,3,-2,null,1], targetSum = 8
 
 **Output:** 3
 
@@ -18,7 +18,7 @@ The path does not need to start or end at the root or a leaf, but it must go dow
 
 **Example 2:**
 
-**Input:** root = \[5,4,8,11,null,13,4,7,2,null,null,5,1\], targetSum = 22
+**Input:** root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22
 
 **Output:** 3 
 

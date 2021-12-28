@@ -17,25 +17,25 @@ An input string is valid if:
 
 **Example 2:**
 
-**Input:** s = "()\[\]{}"
+**Input:** s = "()[]{}"
 
 **Output:** true 
 
 **Example 3:**
 
-**Input:** s = "(\]"
+**Input:** s = "(]"
 
 **Output:** false 
 
 **Example 4:**
 
-**Input:** s = "(\[)\]"
+**Input:** s = "([)]"
 
 **Output:** false 
 
 **Example 5:**
 
-**Input:** s = "{\[\]}"
+**Input:** s = "{[]}"
 
 **Output:** true 
 

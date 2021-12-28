@@ -10,7 +10,7 @@ Find the maximum profit you can achieve. You may complete at most `k` transactio
 
 **Example 1:**
 
-**Input:** k = 2, prices = \[2,4,1\]
+**Input:** k = 2, prices = [2,4,1]
 
 **Output:** 2
 
@@ -18,7 +18,7 @@ Find the maximum profit you can achieve. You may complete at most `k` transactio
 
 **Example 2:**
 
-**Input:** k = 2, prices = \[3,2,6,5,0,3\]
+**Input:** k = 2, prices = [3,2,6,5,0,3]
 
 **Output:** 7
 

@@ -8,7 +8,7 @@ Given the `root` of a binary tree, _check whether it is a mirror of itself_ (i.e
 
 ![](https://assets.leetcode.com/uploads/2021/02/19/symtree1.jpg)
 
-**Input:** root = \[1,2,2,3,4,4,3\]
+**Input:** root = [1,2,2,3,4,4,3]
 
 **Output:** true 
 
@@ -16,7 +16,7 @@ Given the `root` of a binary tree, _check whether it is a mirror of itself_ (i.e
 
 ![](https://assets.leetcode.com/uploads/2021/02/19/symtree2.jpg)
 
-**Input:** root = \[1,2,2,null,3,null,3\]
+**Input:** root = [1,2,2,null,3,null,3]
 
 **Output:** false 
 

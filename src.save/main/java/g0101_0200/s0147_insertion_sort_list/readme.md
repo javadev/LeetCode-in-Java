@@ -18,17 +18,17 @@ The following is a graphical example of the insertion sort algorithm. The partia
 
 ![](https://assets.leetcode.com/uploads/2021/03/04/sort1linked-list.jpg)
 
-**Input:** head = \[4,2,1,3\]
+**Input:** head = [4,2,1,3]
 
-**Output:** \[1,2,3,4\] 
+**Output:** [1,2,3,4] 
 
 **Example 2:**
 
 ![](https://assets.leetcode.com/uploads/2021/03/04/sort2linked-list.jpg)
 
-**Input:** head = \[-1,5,3,4,0\]
+**Input:** head = [-1,5,3,4,0]
 
-**Output:** \[-1,0,3,4,5\] 
+**Output:** [-1,0,3,4,5] 
 
 **Constraints:**
 

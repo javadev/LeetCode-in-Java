@@ -8,7 +8,7 @@ Given an integer array `nums` representing the amount of money of each house, re
 
 **Example 1:**
 
-**Input:** nums = \[1,2,3,1\]
+**Input:** nums = [1,2,3,1]
 
 **Output:** 4
 
@@ -19,7 +19,7 @@ Given an integer array `nums` representing the amount of money of each house, re
 
 **Example 2:**
 
-**Input:** nums = \[2,7,9,3,1\]
+**Input:** nums = [2,7,9,3,1]
 
 **Output:** 12
 

@@ -18,7 +18,7 @@ Return _the knight's minimum initial health so that he can rescue the princess_.
 
 ![](https://assets.leetcode.com/uploads/2021/03/13/dungeon-grid-1.jpg)
 
-**Input:** dungeon = \[\[-2,-3,3\],\[-5,-10,1\],\[10,30,-5\]\]
+**Input:** dungeon = [[-2,-3,3],[-5,-10,1],[10,30,-5]]
 
 **Output:** 7
 
@@ -26,7 +26,7 @@ Return _the knight's minimum initial health so that he can rescue the princess_.
 
 **Example 2:**
 
-**Input:** dungeon = \[\[0\]\]
+**Input:** dungeon = [[0]]
 
 **Output:** 1 
 

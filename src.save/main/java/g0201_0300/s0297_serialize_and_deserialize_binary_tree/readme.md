@@ -12,27 +12,27 @@ Design an algorithm to serialize and deserialize a binary tree. There is no rest
 
 ![](https://assets.leetcode.com/uploads/2020/09/15/serdeser.jpg)
 
-**Input:** root = \[1,2,3,null,null,4,5\]
+**Input:** root = [1,2,3,null,null,4,5]
 
-**Output:** \[1,2,3,null,null,4,5\] 
+**Output:** [1,2,3,null,null,4,5] 
 
 **Example 2:**
 
-**Input:** root = \[\]
+**Input:** root = []
 
-**Output:** \[\] 
+**Output:** [] 
 
 **Example 3:**
 
-**Input:** root = \[1\]
+**Input:** root = [1]
 
-**Output:** \[1\] 
+**Output:** [1] 
 
 **Example 4:**
 
-**Input:** root = \[1,2\]
+**Input:** root = [1,2]
 
-**Output:** \[1,2\] 
+**Output:** [1,2] 
 
 **Constraints:**
 

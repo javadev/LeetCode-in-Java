@@ -14,7 +14,7 @@ A **valid BST** is defined as follows:
 
 ![](https://assets.leetcode.com/uploads/2020/12/01/tree1.jpg)
 
-**Input:** root = \[2,1,3\]
+**Input:** root = [2,1,3]
 
 **Output:** true 
 
@@ -22,7 +22,7 @@ A **valid BST** is defined as follows:
 
 ![](https://assets.leetcode.com/uploads/2020/12/01/tree2.jpg)
 
-**Input:** root = \[5,1,4,null,null,3,6\]
+**Input:** root = [5,1,4,null,null,3,6]
 
 **Output:** false
 

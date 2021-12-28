@@ -10,7 +10,7 @@ Return _the maximum coins you can collect by bursting the balloons wisely_.
 
 **Example 1:**
 
-**Input:** nums = \[3,1,5,8\]
+**Input:** nums = [3,1,5,8]
 
 **Output:** 167
 
@@ -21,7 +21,7 @@ Return _the maximum coins you can collect by bursting the balloons wisely_.
 
 **Example 2:**
 
-**Input:** nums = \[1,5\]
+**Input:** nums = [1,5]
 
 **Output:** 10 
 

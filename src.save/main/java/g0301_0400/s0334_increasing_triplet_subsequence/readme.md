@@ -6,7 +6,7 @@ Given an integer array `nums`, return `true` _if there exists a triple of indice
 
 **Example 1:**
 
-**Input:** nums = \[1,2,3,4,5\]
+**Input:** nums = [1,2,3,4,5]
 
 **Output:** true
 
@@ -14,7 +14,7 @@ Given an integer array `nums`, return `true` _if there exists a triple of indice
 
 **Example 2:**
 
-**Input:** nums = \[5,4,3,2,1\]
+**Input:** nums = [5,4,3,2,1]
 
 **Output:** false
 
@@ -22,11 +22,11 @@ Given an integer array `nums`, return `true` _if there exists a triple of indice
 
 **Example 3:**
 
-**Input:** nums = \[2,1,5,0,4,6\]
+**Input:** nums = [2,1,5,0,4,6]
 
 **Output:** true
 
-**Explanation:** The triplet (3, 4, 5) is valid because nums\[3\] == 0 < nums\[4\] == 4 < nums\[5\] == 6. 
+**Explanation:** The triplet (3, 4, 5) is valid because nums[3] == 0 < nums[4] == 4 < nums[5] == 6. 
 
 **Constraints:**
 

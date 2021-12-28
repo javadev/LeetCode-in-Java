@@ -19,7 +19,7 @@ Implement the `MinStack` class:
     ["MinStack","push","push","push","getMin","pop","top","getMin"]
     [[],[-2],[0],[-3],[],[],[],[]]
 
-**Output:** \[null,null,null,null,-3,null,0,-2\]
+**Output:** [null,null,null,null,-3,null,0,-2]
 
 **Explanation:**
 

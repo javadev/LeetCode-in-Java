@@ -10,7 +10,7 @@ Given two integer arrays `gas` and `cost`, return _the starting gas station's in
 
 **Example 1:**
 
-**Input:** gas = \[1,2,3,4,5\], cost = \[3,4,5,1,2\]
+**Input:** gas = [1,2,3,4,5], cost = [3,4,5,1,2]
 
 **Output:** 3
 
@@ -26,7 +26,7 @@ Given two integer arrays `gas` and `cost`, return _the starting gas station's in
 
 **Example 2:**
 
-**Input:** gas = \[2,3,4\], cost = \[3,4,3\]
+**Input:** gas = [2,3,4], cost = [3,4,3]
 
 **Output:** -1
 

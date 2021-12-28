@@ -6,7 +6,7 @@ Given an integer array `nums`, return _the maximum result of_ `nums[i] XOR nums[
 
 **Example 1:**
 
-**Input:** nums = \[3,10,5,25,2,8\]
+**Input:** nums = [3,10,5,25,2,8]
 
 **Output:** 28
 
@@ -14,7 +14,7 @@ Given an integer array `nums`, return _the maximum result of_ `nums[i] XOR nums[
 
 **Example 2:**
 
-**Input:** nums = \[14,70,53,83,49,91,36,80,92,51,66,70\]
+**Input:** nums = [14,70,53,83,49,91,36,80,92,51,66,70]
 
 **Output:** 127 
 

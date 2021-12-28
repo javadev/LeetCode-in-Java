@@ -33,7 +33,7 @@ The algorithm for `myAtoi(string s)` is as follows:
     Step 3: "42" ("42" is read in)
                ^
 
-The parsed integer is 42. Since 42 is in the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final result is 42. 
+The parsed integer is 42. Since 42 is in the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final result is 42. 
 
 **Example 2:**
 
@@ -51,7 +51,7 @@ The parsed integer is 42. Since 42 is in the range \[-2<sup>31</sup>, 2<sup>31</
                  ^
     The parsed integer is -42.
 
-Since -42 is in the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final result is -42. 
+Since -42 is in the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final result is -42. 
 
 **Example 3:**
 
@@ -69,7 +69,7 @@ Since -42 is in the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final res
                  ^ 
     The parsed integer is 4193.
 
-Since 4193 is in the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final result is 4193. 
+Since 4193 is in the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final result is 4193. 
 
 **Example 4:**
 
@@ -87,7 +87,7 @@ Since 4193 is in the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final re
              ^
     The parsed integer is 0 because no digits were read.
 
-Since 0 is in the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final result is 0. 
+Since 0 is in the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final result is 0. 
 
 **Example 5:**
 
@@ -105,7 +105,7 @@ Since 0 is in the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final resul
                          ^
     The parsed integer is -91283472332.
 
-Since -91283472332 is less than the lower bound of the range \[-2<sup>31</sup>, 2<sup>31</sup> - 1\], the final result is clamped to -2<sup>31</sup> = -2147483648.  
+Since -91283472332 is less than the lower bound of the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final result is clamped to -2<sup>31</sup> = -2147483648.  
 
 **Constraints:**
 

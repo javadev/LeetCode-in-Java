@@ -8,7 +8,7 @@ Given an `m x n` binary `matrix` filled with `0`'s and `1`'s, _find the largest 
 
 ![](https://assets.leetcode.com/uploads/2020/11/26/max1grid.jpg)
 
-**Input:** matrix = \[\["1","0","1","0","0"\],\["1","0","1","1","1"\],\["1","1","1","1","1"\],\["1","0","0","1","0"\]\]
+**Input:** matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
 
 **Output:** 4 
 
@@ -16,13 +16,13 @@ Given an `m x n` binary `matrix` filled with `0`'s and `1`'s, _find the largest 
 
 ![](https://assets.leetcode.com/uploads/2020/11/26/max2grid.jpg)
 
-**Input:** matrix = \[\["0","1"\],\["1","0"\]\]
+**Input:** matrix = [["0","1"],["1","0"]]
 
 **Output:** 1 
 
 **Example 3:**
 
-**Input:** matrix = \[\["0"\]\]
+**Input:** matrix = [["0"]]
 
 **Output:** 0 
 

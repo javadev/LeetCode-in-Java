@@ -18,7 +18,7 @@ Implement the `NumArray` class:
     ["NumArray", "sumRange", "sumRange", "sumRange"]
     [[[-2, 0, 3, -5, 2, -1]], [0, 2], [2, 5], [0, 5]]
 
-**Output:** \[null, 1, -1, -3\]
+**Output:** [null, 1, -1, -3]
 
 **Explanation:**
 

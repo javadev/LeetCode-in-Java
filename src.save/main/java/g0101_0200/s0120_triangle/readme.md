@@ -8,7 +8,7 @@ For each step, you may move to an adjacent number of the row below. More formall
 
 **Example 1:**
 
-**Input:** triangle = \[\[2\],\[3,4\],\[6,5,7\],\[4,1,8,3\]\]
+**Input:** triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]
 
 **Output:** 11
 
@@ -23,7 +23,7 @@ For each step, you may move to an adjacent number of the row below. More formall
 
 **Example 2:**
 
-**Input:** triangle = \[\[-10\]\]
+**Input:** triangle = [[-10]]
 
 **Output:** -10 
 

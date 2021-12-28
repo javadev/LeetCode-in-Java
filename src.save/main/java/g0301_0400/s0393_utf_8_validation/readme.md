@@ -23,7 +23,7 @@ This is how the UTF-8 encoding would work:
 
 **Example 1:**
 
-**Input:** data = \[197,130,1\]
+**Input:** data = [197,130,1]
 
 **Output:** true
 
@@ -31,7 +31,7 @@ This is how the UTF-8 encoding would work:
 
 **Example 2:**
 
-**Input:** data = \[235,140,4\]
+**Input:** data = [235,140,4]
 
 **Output:** false
 

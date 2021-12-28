@@ -10,9 +10,9 @@ Return _the ordering of courses you should take to finish all courses_. If there
 
 **Example 1:**
 
-**Input:** numCourses = 2, prerequisites = \[\[1,0\]\]
+**Input:** numCourses = 2, prerequisites = [[1,0]]
 
-**Output:** \[0,1\]
+**Output:** [0,1]
 
 **Explanation:**
 
@@ -21,9 +21,9 @@ Return _the ordering of courses you should take to finish all courses_. If there
 
 **Example 2:**
 
-**Input:** numCourses = 4, prerequisites = \[\[1,0\],\[2,0\],\[3,1\],\[3,2\]\]
+**Input:** numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]
 
-**Output:** \[0,2,1,3\]
+**Output:** [0,2,1,3]
 
 **Explanation:**
 
@@ -32,9 +32,9 @@ Return _the ordering of courses you should take to finish all courses_. If there
 
 **Example 3:**
 
-**Input:** numCourses = 1, prerequisites = \[\]
+**Input:** numCourses = 1, prerequisites = []
 
-**Output:** \[0\] 
+**Output:** [0] 
 
 **Constraints:**
 

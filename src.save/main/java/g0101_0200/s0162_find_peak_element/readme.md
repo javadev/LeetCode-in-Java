@@ -12,7 +12,7 @@ You must write an algorithm that runs in `O(log n)` time.
 
 **Example 1:**
 
-**Input:** nums = \[1,2,3,1\]
+**Input:** nums = [1,2,3,1]
 
 **Output:** 2
 
@@ -20,7 +20,7 @@ You must write an algorithm that runs in `O(log n)` time.
 
 **Example 2:**
 
-**Input:** nums = \[1,2,1,3,5,6,4\]
+**Input:** nums = [1,2,1,3,5,6,4]
 
 **Output:** 5
 

@@ -22,7 +22,7 @@ Return _the lowest number of moves to acquire all keys_. If it is impossible, re
 
 ![](https://assets.leetcode.com/uploads/2021/07/23/lc-keys2.jpg)
 
-**Input:** grid = \["@.a.#","###.#","b.A.B"\]
+**Input:** grid = ["@.a.#","###.#","b.A.B"]
 
 **Output:** 8
 
@@ -32,7 +32,7 @@ Return _the lowest number of moves to acquire all keys_. If it is impossible, re
 
 ![](https://assets.leetcode.com/uploads/2021/07/23/lc-key2.jpg)
 
-**Input:** grid = \["@..aA","..B#.","....b"\]
+**Input:** grid = ["@..aA","..B#.","....b"]
 
 **Output:** 6 
 
@@ -40,7 +40,7 @@ Return _the lowest number of moves to acquire all keys_. If it is impossible, re
 
 ![](https://assets.leetcode.com/uploads/2021/07/23/lc-keys3.jpg)
 
-**Input:** grid = \["@Aa"\]
+**Input:** grid = ["@Aa"]
 
 **Output:** -1 
 
