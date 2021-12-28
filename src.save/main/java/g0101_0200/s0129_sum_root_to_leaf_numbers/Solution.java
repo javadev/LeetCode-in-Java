@@ -34,7 +34,6 @@ public class Solution {
             if (node.left != null) {
                 recurseSum(node.left, 10 * curNum + node.val);
             }
-
             if (node.right != null) {
                 recurseSum(node.right, 10 * curNum + node.val);
             }

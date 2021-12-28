@@ -20,7 +20,7 @@ public class Solution {
         return dp[n];
     }
 
-    public void expandAround(char[] t, int i, int j, int[] dp) {
+    private void expandAround(char[] t, int i, int j, int[] dp) {
         while (i >= 0 && j < t.length && t[i] == t[j]) {
             dp[j + 1] = Math.min(dp[j + 1], dp[i] + 1);
             i--;

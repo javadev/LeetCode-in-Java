@@ -10,7 +10,6 @@ public class Solution {
         if (root == null) {
             return true;
         }
-
         return helper(root.left, root.right);
     }
 
@@ -18,11 +17,9 @@ public class Solution {
         if (leftNode == null || rightNode == null) {
             return leftNode == null && rightNode == null;
         }
-
         if (leftNode.val != rightNode.val) {
             return false;
         }
-
         return helper(leftNode.left, rightNode.right) && helper(leftNode.right, rightNode.left);
     }
 }

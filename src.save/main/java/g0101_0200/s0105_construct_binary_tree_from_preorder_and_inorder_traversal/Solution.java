@@ -8,8 +8,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Solution {
-    int j;
-    Map<Integer, Integer> map = new HashMap<>();
+    private int j;
+    private Map<Integer, Integer> map = new HashMap<>();
 
     public int get(int key) {
         return map.get(key);

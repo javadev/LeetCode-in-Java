@@ -43,11 +43,9 @@ public class Solution {
                 root.left.next = adjacentRightNode(root.next);
             }
         }
-
         if (root.right != null) {
             root.right.next = adjacentRightNode(root.next);
         }
-
         connect(root.right);
         connect(root.left);
         return root;
