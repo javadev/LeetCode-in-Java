@@ -9,8 +9,8 @@ public class Solution {
         long left = (max / pow_10);
         long t = pow_10 / 11;
         t -= ~t & 1;
-        for (long i = left; i > 0; i--){
-            for (long j = t, num = gen(i); j >= i / 11; j -= 2){
+        for (long i = left; i > 0; i--) {
+            for (long j = t, num = gen(i); j >= i / 11; j -= 2) {
                 if (num % j == 0) {
                     return (int) (num % 1337);
                 }
