@@ -13,6 +13,13 @@ public class CommonUtils {
         System.out.println();
     }
 
+    public static void printArray(double[] nums) {
+        for (double i : nums) {
+            System.out.print(i + ", ");
+        }
+        System.out.println();
+    }
+
     public static char[][] convertLeetCodeRegular2DCharArrayInputIntoJavaArray(String input) {
         /*
          * LeetCode 2-d char array usually comes in like this:
