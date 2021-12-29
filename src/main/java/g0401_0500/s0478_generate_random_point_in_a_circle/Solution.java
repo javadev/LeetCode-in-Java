@@ -11,7 +11,6 @@ public class Solution {
     private final SecureRandom random = new SecureRandom();
 
     public Solution(double radius, double xCenter, double yCenter) {
-
         this.radius = radius;
         this.xCenter = xCenter;
         this.yCenter = yCenter;
