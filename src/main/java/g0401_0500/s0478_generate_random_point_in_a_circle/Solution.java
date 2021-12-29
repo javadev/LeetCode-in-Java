@@ -6,29 +6,29 @@ import java.security.SecureRandom;
 
 public class Solution {
     private final double radius;
-    private final double x_center;
-    private final double y_center;
+    private final double xCenter;
+    private final double yCenter;
     private final SecureRandom random = new SecureRandom();
 
-    public Solution(double radius, double x_center, double y_center) {
+    public Solution(double radius, double xCenter, double yCenter) {
 
         this.radius = radius;
-        this.x_center = x_center;
-        this.y_center = y_center;
+        this.xCenter = xCenter;
+        this.yCenter = yCenter;
     }
 
     public double[] randPoint() {
-        double x = getCoordinate(x_center);
-        double y = getCoordinate(y_center);
+        double x = getCoordinate(xCenter);
+        double y = getCoordinate(yCenter);
         while (getDistance(x, y) >= radius * radius) {
-            x = getCoordinate(x_center);
-            y = getCoordinate(y_center);
+            x = getCoordinate(xCenter);
+            y = getCoordinate(yCenter);
         }
         return new double[] {x, y};
     }
 
     private double getDistance(double x, double y) {
-        return (x_center - x) * (x_center - x) + (y_center - y) * (y_center - y);
+        return (xCenter - x) * (xCenter - x) + (yCenter - y) * (yCenter - y);
     }
 
     private double getCoordinate(double center) {
