@@ -21,7 +21,10 @@ public class Solution {
 
     private long gen(long x) {
         long r = x;
-        for (; x > 0; r = r * 10 + x % 10, x /= 10) {}
+        while (x > 0) {
+            r = r * 10 + x % 10;
+            x /= 10;
+        }
         return r;
     }
 }
