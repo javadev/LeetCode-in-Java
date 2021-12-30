@@ -2,6 +2,7 @@ package g0401_0500.s0480_sliding_window_median;
 
 // #Hard #Array #Hash_Table #Heap_Priority_Queue #Sliding_Window
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.TreeSet;
 
@@ -13,12 +14,8 @@ public class Solution {
         int len = nums.length;
         double[] result = new double[len - k + 1];
         if (k == 1) {
-            for (int i = 0; i < len; i++) {
-                result[i] = nums[i];
-            }
-            return result;
+            return Arrays.copyOf(nums, nums.length);
         }
-
         Comparator<Integer> comparator =
                 (a, b) ->
                         (nums[a] != nums[b]
@@ -26,7 +23,6 @@ public class Solution {
                                 : Integer.compare(a, b));
         TreeSet<Integer> smallNums = new TreeSet<>(comparator.reversed());
         TreeSet<Integer> largeNums = new TreeSet<>(comparator);
-
         for (int i = 0; i < len; i++) {
             if (i >= k) {
                 removeElement(smallNums, largeNums, i - k);
@@ -36,7 +32,6 @@ public class Solution {
                 result[i - (k - 1)] = getMedian(smallNums, largeNums, nums);
             }
         }
-
         return result;
     }
 
