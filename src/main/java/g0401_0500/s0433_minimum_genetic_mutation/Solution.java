@@ -35,7 +35,6 @@ public class Solution {
         for (String s : bank) {
             set.add(s);
         }
-        char[] genes = new char[] {'A', 'T', 'C', 'G'};
         Queue<String> queue = new LinkedList<>();
         queue.offer(start);
         int step = 0;
