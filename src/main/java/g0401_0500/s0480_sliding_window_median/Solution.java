@@ -19,8 +19,11 @@ public class Solution {
             return result;
         }
 
-        Comparator<Integer> comparator = (a, b) -> (nums[a] != nums[b] ? Integer.compare(nums[a], nums[b]) :
-                Integer.compare(a, b));
+        Comparator<Integer> comparator =
+                (a, b) ->
+                        (nums[a] != nums[b]
+                                ? Integer.compare(nums[a], nums[b])
+                                : Integer.compare(a, b));
         TreeSet<Integer> smallNums = new TreeSet<>(comparator.reversed());
         TreeSet<Integer> largeNums = new TreeSet<>(comparator);
 
@@ -45,7 +48,8 @@ public class Solution {
         }
     }
 
-    private void removeElement(TreeSet<Integer> smallNums, TreeSet<Integer> largeNums, int[] nums, int idx) {
+    private void removeElement(
+            TreeSet<Integer> smallNums, TreeSet<Integer> largeNums, int[] nums, int idx) {
         if (largeNums.contains(idx)) {
             largeNums.remove(idx);
             if (smallNums.size() == largeNums.size() + 2) {

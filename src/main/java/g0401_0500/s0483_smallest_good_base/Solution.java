@@ -9,12 +9,12 @@ public class Solution {
     public String smallestGoodBase(String n) {
         return sol1(n);
     }
-    
+
     private String sol1(String n) {
         long x = Long.parseLong(n);
         List<Long> ans = new ArrayList<>();
-        ans.add(x-1);
-        long y = x-1;
+        ans.add(x - 1);
+        long y = x - 1;
         for (int i = 2; i < 63; i++) {
             double dm = Math.pow(y, 1.0 / i);
             long dml = (long) dm;
@@ -29,9 +29,9 @@ public class Solution {
             }
         }
         long end = ans.get(ans.size() - 1);
-        return end+"";
+        return end + "";
     }
-    
+
     private long poly(long b, int n) {
         long ans = 1;
         long m = 1;
@@ -41,7 +41,7 @@ public class Solution {
         }
         return ans;
     }
-    
+
     private void ln(String f, Object... p) {
         System.out.println((p == null) ? f : String.format(f, p));
     }

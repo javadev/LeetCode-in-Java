@@ -1,9 +1,9 @@
 package g0401_0500.s0483_smallest_good_base;
 
-import org.junit.jupiter.api.Test;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
@@ -18,6 +18,8 @@ class SolutionTest {
 
     @Test
     void smallestGoodBase3() {
-        assertThat(new Solution().smallestGoodBase("1000000000000000000"), equalTo("999999999999999999"));
+        assertThat(
+                new Solution().smallestGoodBase("1000000000000000000"),
+                equalTo("999999999999999999"));
     }
 }
