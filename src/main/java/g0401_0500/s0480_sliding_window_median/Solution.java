@@ -5,6 +5,7 @@ package g0401_0500.s0480_sliding_window_median;
 import java.util.Comparator;
 import java.util.TreeSet;
 
+@SuppressWarnings("java:S3012")
 public class Solution {
     public double[] medianSlidingWindow(int[] nums, int k) {
         if (nums == null || k <= 0) {
