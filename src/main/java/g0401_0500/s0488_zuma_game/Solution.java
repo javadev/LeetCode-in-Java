@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int findMinStep(String board, String hand) {
         List<Character> boardList = new ArrayList<>();
@@ -17,8 +18,7 @@ public class Solution {
         for (char c : hand.toCharArray()) {
             handList.add(c);
         }
-        int res = findMinStep(boardList, handList);
-        return res;
+        return findMinStep(boardList, handList);
     }
 
     private int findMinStep(List<Character> boardList, List<Character> handList) {
@@ -36,7 +36,7 @@ public class Solution {
             Set<Character> duplicate = new HashSet<>();
             for (int handListIndex = 0; handListIndex < handList.size(); handListIndex++) {
                 if (boardListIndex > 0
-                        && boardList.get(boardListIndex - 1) == handList.get(handListIndex)) {
+                        && boardList.get(boardListIndex - 1).equals(handList.get(handListIndex))) {
                     continue;
                 }
                 if (duplicate.contains(handList.get(handListIndex))) {
@@ -46,18 +46,21 @@ public class Solution {
                 }
                 boolean goodCase1 =
                         (boardListIndex < boardList.size()
-                                && boardList.get(boardListIndex) == handList.get(handListIndex));
+                                && boardList
+                                        .get(boardListIndex)
+                                        .equals(handList.get(handListIndex)));
                 boolean goodCase2 =
                         (boardListIndex > 0
                                 && boardListIndex < boardList.size()
-                                && boardList.get(boardListIndex - 1)
-                                        == boardList.get(boardListIndex)
-                                && boardList.get(boardListIndex - 1)
-                                        != handList.get(handListIndex));
+                                && boardList
+                                        .get(boardListIndex - 1)
+                                        .equals(boardList.get(boardListIndex))
+                                && !boardList
+                                        .get(boardListIndex - 1)
+                                        .equals(handList.get(handListIndex)));
                 if (!goodCase1 && !goodCase2) {
                     continue;
                 }
-
                 List<Character> boardListClone = new ArrayList<>(boardList);
                 List<Character> handListClone = new ArrayList<>(handList);
                 boardListClone.add(boardListIndex, handListClone.remove(handListIndex));
@@ -82,7 +85,7 @@ public class Solution {
             for (int i = 0; i < boardList.size() - 2; i++) {
                 int repeatLen = 1;
                 for (int j = i + 1; j < boardList.size(); j++) {
-                    if (boardList.get(j) == boardList.get(j - 1)) {
+                    if (boardList.get(j).equals(boardList.get(j - 1))) {
                         repeatLen++;
                     } else {
                         break;

@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+@SuppressWarnings("java:S5413")
 public class Solution {
     public List<List<Integer>> findSubsequences(int[] nums) {
         if (nums == null || nums.length == 1) {
@@ -23,7 +24,7 @@ public class Solution {
             answer.add(new ArrayList<>(currList));
         }
         for (int i = start; i < nums.length; i++) {
-            if (currList.size() == 0 || currList.get(currList.size() - 1) <= nums[i]) {
+            if (currList.isEmpty() || currList.get(currList.size() - 1) <= nums[i]) {
                 currList.add(nums[i]);
                 backtracking(nums, i + 1, currList, answer);
                 currList.remove(currList.size() - 1);
