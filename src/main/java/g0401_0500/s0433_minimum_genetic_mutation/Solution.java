@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Set;
 
+@SuppressWarnings("java:S3012")
 public class Solution {
-
-    private List<String> isInBank(Set<String> set, String cur, char[] genes) {
+    private List<String> isInBank(Set<String> set, String cur) {
         List<String> res = new ArrayList<>();
         for (String each : set) {
             int diff = 0;
@@ -46,7 +46,7 @@ public class Solution {
                 if (cur.equals(end)) {
                     return step;
                 }
-                for (String next : isInBank(set, cur, genes)) {
+                for (String next : isInBank(set, cur)) {
                     queue.offer(next);
                     set.remove(next);
                 }
