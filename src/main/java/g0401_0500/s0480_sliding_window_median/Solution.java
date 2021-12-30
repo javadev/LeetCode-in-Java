@@ -2,7 +2,6 @@ package g0401_0500.s0480_sliding_window_median;
 
 // #Hard #Array #Hash_Table #Heap_Priority_Queue #Sliding_Window
 
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.TreeSet;
 
@@ -14,7 +13,10 @@ public class Solution {
         int len = nums.length;
         double[] result = new double[len - k + 1];
         if (k == 1) {
-            return Arrays.copyOf(nums, nums.length);
+            for (int i = 0; i < len; i++) {
+                result[i] = nums[i];
+            }
+            return result;
         }
         Comparator<Integer> comparator =
                 (a, b) ->
