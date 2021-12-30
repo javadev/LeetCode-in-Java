@@ -84,23 +84,23 @@ public class AllOne {
 
         @Override
         public String toString() {
-            String res = "";
+            StringBuilder res = new StringBuilder();
             Node node = head;
             while (node != null) {
-                res += "(" + node.key + ", " + node.val + ") ->";
+                res.append("(" + node.key + ", " + node.val + ") ->");
                 node = node.next;
             }
-            return res;
+            return res.toString();
         }
 
         String toBackwardString() {
-            String res = "";
+            StringBuilder res = new StringBuilder();
             Node node = tail;
             while (node != null) {
-                res = "(" + node.key + ", " + node.val + ") <- " + res;
+                res.insert(0, "(" + node.key + ", " + node.val + ") <- ");
                 node = node.prev;
             }
-            return res;
+            return res.toString();
         }
     }
 
@@ -108,7 +108,9 @@ public class AllOne {
     private Map<String, Node> counter = new HashMap<>();
 
     /* Initialize your data structure here. */
-    public AllOne() {}
+    public AllOne() {
+        // empty
+    }
 
     /* Inserts a new key <Key> with value 1. Or increments an existing key by 1. */
     public void inc(String key) {
