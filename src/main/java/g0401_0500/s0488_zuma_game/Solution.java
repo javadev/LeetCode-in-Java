@@ -102,8 +102,16 @@ public class Solution {
     }
 
     public boolean isValid(List<Character> boardList, List<Character> handList) {
-        int boardR = 0, boardY = 0, boardB = 0, boardG = 0, boardW = 0;
-        int handR = 0, handY = 0, handB = 0, handG = 0, handW = 0;
+        int boardR = 0;
+        int boardY = 0;
+        int boardB = 0;
+        int boardG = 0;
+        int boardW = 0;
+        int handR = 0;
+        int handY = 0;
+        int handB = 0;
+        int handG = 0;
+        int handW = 0;
         for (char c : boardList) {
             if (c == 'R') {
                 boardR++;

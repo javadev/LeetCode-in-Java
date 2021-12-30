@@ -2,6 +2,7 @@ package g0401_0500.s0486_predict_the_winner;
 
 // #Medium #Array #Dynamic_Programming #Math #Recursion #Game_Theory
 
+@SuppressWarnings("java:S3012")
 public class Solution {
     public boolean predictTheWinner(int[] nums) {
         int n = nums.length;
