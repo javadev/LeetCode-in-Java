@@ -29,7 +29,7 @@ public class Solution {
 
         for (int i = 0; i < len; i++) {
             if (i >= k) {
-                removeElement(smallNums, largeNums, nums, i - k);
+                removeElement(smallNums, largeNums, i - k);
             }
             addElement(smallNums, largeNums, i);
             if (i >= k - 1) {
@@ -48,8 +48,7 @@ public class Solution {
         }
     }
 
-    private void removeElement(
-            TreeSet<Integer> smallNums, TreeSet<Integer> largeNums, int[] nums, int idx) {
+    private void removeElement(TreeSet<Integer> smallNums, TreeSet<Integer> largeNums, int idx) {
         if (largeNums.contains(idx)) {
             largeNums.remove(idx);
             if (smallNums.size() == largeNums.size() + 2) {

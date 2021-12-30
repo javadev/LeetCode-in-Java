@@ -41,8 +41,4 @@ public class Solution {
         }
         return ans;
     }
-
-    private void ln(String f, Object... p) {
-        System.out.println((p == null) ? f : String.format(f, p));
-    }
 }
