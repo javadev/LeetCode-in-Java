@@ -20,5 +20,6 @@ class AllOneTest {
         assertThat(allOne.getMaxKey(), equalTo("hello"));
         // return "leet"
         assertThat(allOne.getMinKey(), equalTo("leet"));
+        allOne.dec("leet");
     }
 }

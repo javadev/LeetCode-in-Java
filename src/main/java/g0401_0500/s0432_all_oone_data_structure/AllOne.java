@@ -81,27 +81,6 @@ public class AllOne {
                 tail = node.prev;
             }
         }
-
-        @Override
-        public String toString() {
-            StringBuilder res = new StringBuilder();
-            Node node = head;
-            while (node != null) {
-                res.append("(" + node.key + ", " + node.val + ") ->");
-                node = node.next;
-            }
-            return res.toString();
-        }
-
-        String toBackwardString() {
-            StringBuilder res = new StringBuilder();
-            Node node = tail;
-            while (node != null) {
-                res.insert(0, "(" + node.key + ", " + node.val + ") <- ");
-                node = node.prev;
-            }
-            return res.toString();
-        }
     }
 
     private DoubleLinkedList dll = new DoubleLinkedList();
