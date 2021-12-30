@@ -20,7 +20,7 @@ public class Solution {
         int res = findMinStep(boardList, handList);
         return res;
     }
-    
+
     private int findMinStep(List<Character> boardList, List<Character> handList) {
         if (boardList.isEmpty()) {
             return 0;
@@ -32,10 +32,11 @@ public class Solution {
             return -1;
         }
         int res = Integer.MAX_VALUE;
-        for (int boardListIndex=0; boardListIndex<=boardList.size(); boardListIndex++) {            
+        for (int boardListIndex = 0; boardListIndex <= boardList.size(); boardListIndex++) {
             Set<Character> duplicate = new HashSet<>();
-            for (int handListIndex=0; handListIndex<handList.size(); handListIndex++) {
-                if (boardListIndex > 0 && boardList.get(boardListIndex-1) == handList.get(handListIndex)) {
+            for (int handListIndex = 0; handListIndex < handList.size(); handListIndex++) {
+                if (boardListIndex > 0
+                        && boardList.get(boardListIndex - 1) == handList.get(handListIndex)) {
                     continue;
                 }
                 if (duplicate.contains(handList.get(handListIndex))) {
@@ -43,15 +44,20 @@ public class Solution {
                 } else {
                     duplicate.add(handList.get(handListIndex));
                 }
-                boolean goodCase1 = (boardListIndex < boardList.size() &&
-                        boardList.get(boardListIndex) == handList.get(handListIndex));
-                boolean goodCase2 = (boardListIndex > 0 && boardListIndex < boardList.size() &&
-                        boardList.get(boardListIndex-1) == boardList.get(boardListIndex) &&
-                        boardList.get(boardListIndex-1) != handList.get(handListIndex));
+                boolean goodCase1 =
+                        (boardListIndex < boardList.size()
+                                && boardList.get(boardListIndex) == handList.get(handListIndex));
+                boolean goodCase2 =
+                        (boardListIndex > 0
+                                && boardListIndex < boardList.size()
+                                && boardList.get(boardListIndex - 1)
+                                        == boardList.get(boardListIndex)
+                                && boardList.get(boardListIndex - 1)
+                                        != handList.get(handListIndex));
                 if (!goodCase1 && !goodCase2) {
                     continue;
                 }
-                
+
                 List<Character> boardListClone = new ArrayList<>(boardList);
                 List<Character> handListClone = new ArrayList<>(handList);
                 boardListClone.add(boardListIndex, handListClone.remove(handListIndex));
@@ -62,21 +68,21 @@ public class Solution {
                 }
             }
         }
-        
+
         if (res == Integer.MAX_VALUE) {
             return -1;
         }
         return res + 1;
     }
-    
+
     public void cleanup(List<Character> boardList) {
         boolean isCleanup = false;
         while (!isCleanup) {
             isCleanup = true;
-            for (int i=0; i<boardList.size()-2; i++) {
+            for (int i = 0; i < boardList.size() - 2; i++) {
                 int repeatLen = 1;
-                for (int j=i+1; j<boardList.size(); j++) {
-                    if (boardList.get(j) == boardList.get(j-1)) {
+                for (int j = i + 1; j < boardList.size(); j++) {
+                    if (boardList.get(j) == boardList.get(j - 1)) {
                         repeatLen++;
                     } else {
                         break;
@@ -91,7 +97,7 @@ public class Solution {
             }
         }
     }
-    
+
     public boolean isValid(List<Character> boardList, List<Character> handList) {
         int boardR = 0, boardY = 0, boardB = 0, boardG = 0, boardW = 0;
         int handR = 0, handY = 0, handB = 0, handG = 0, handW = 0;
