@@ -22,7 +22,13 @@ Return _the **total** number of seconds that Ashe is poisoned_.
 
 **Output:** 3
 
-**Explanation:** Teemo's attacks on Ashe go as follows: - At second 1, Teemo attacks, and Ashe is poisoned for seconds 1 and 2. - At second 2 however, Teemo attacks again and resets the poison timer. Ashe is poisoned for seconds 2 and 3. Ashe is poisoned for seconds 1, 2, and 3, which is 3 seconds in total.
+**Explanation:** 
+
+Teemo's attacks on Ashe go as follows: 
+
+- At second 1, Teemo attacks, and Ashe is poisoned for seconds 1 and 2. 
+
+- At second 2 however, Teemo attacks again and resets the poison timer. Ashe is poisoned for seconds 2 and 3. Ashe is poisoned for seconds 1, 2, and 3, which is 3 seconds in total.
 
 **Constraints:**
 

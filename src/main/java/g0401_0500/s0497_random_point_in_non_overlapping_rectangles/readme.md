@@ -21,7 +21,14 @@ Implement the `Solution` class:
 
 **Output:** [null, [1, -2], [1, -1], [-1, -2], [-2, -2], [0, 0]]
 
-**Explanation:** Solution solution = new Solution([[-2, -2, 1, 1], [2, 2, 4, 6]]); solution.pick(); // return [1, -2] solution.pick(); // return [1, -1] solution.pick(); // return [-1, -2] solution.pick(); // return [-2, -2] solution.pick(); // return [0, 0]
+**Explanation:** 
+
+    Solution solution = new Solution([[-2, -2, 1, 1], [2, 2, 4, 6]]);
+    solution.pick(); // return [1, -2]
+    solution.pick(); // return [1, -1]
+    solution.pick(); // return [-1, -2]
+    solution.pick(); // return [-2, -2]
+    solution.pick(); // return [0, 0]
 
 **Constraints:**
 
