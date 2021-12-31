@@ -19,13 +19,13 @@ public class Solution {
             weights[i] = (i == 0 ? 0 : weights[i - 1]) + count;
         }
     }
-    
+
     public int[] pick() {
         int picked = 1 + random.nextInt(weights[weights.length - 1]);
         int idx = findGreaterOrEqual(picked);
         return getRandomPoint(idx);
     }
-    
+
     private int findGreaterOrEqual(int target) {
         int left = 0, right = weights.length - 1;
         while (left + 1 < right) {
@@ -38,11 +38,12 @@ public class Solution {
         }
         return weights[left] >= target ? left : right;
     }
-    
+
     private int[] getRandomPoint(int idx) {
         int[] r = rects[idx];
         int left = r[0], right = r[2], bot = r[1], top = r[3];
-        return new int[]{left + random.nextInt(right - left + 1),
-                         bot + random.nextInt(top - bot + 1)};
+        return new int[] {
+            left + random.nextInt(right - left + 1), bot + random.nextInt(top - bot + 1)
+        };
     }
 }

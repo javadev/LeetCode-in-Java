@@ -19,7 +19,6 @@ public class Solution {
                 end = timeSeries[i] + duration - 1;
                 poisonDuration += end - start + 1;
             }
-
         }
         return poisonDuration;
     }
