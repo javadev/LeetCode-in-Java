@@ -6,8 +6,6 @@ package g0401_0500.s0493_reverse_pairs;
 import java.util.Arrays;
 
 public class Solution {
-    // reference:
-    // https://discuss.leetcode.com/topic/78933/very-short-and-clear-mergesort-bst-java-solutions
     public int reversePairs(int[] nums) {
         return mergeSort(nums, 0, nums.length - 1);
     }
