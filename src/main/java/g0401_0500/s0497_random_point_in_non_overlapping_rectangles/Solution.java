@@ -27,7 +27,8 @@ public class Solution {
     }
 
     private int findGreaterOrEqual(int target) {
-        int left = 0, right = weights.length - 1;
+        int left = 0;
+        int right = weights.length - 1;
         while (left + 1 < right) {
             int mid = left + (right - left) / 2;
             if (weights[mid] >= target) {
@@ -41,7 +42,10 @@ public class Solution {
 
     private int[] getRandomPoint(int idx) {
         int[] r = rects[idx];
-        int left = r[0], right = r[2], bot = r[1], top = r[3];
+        int left = r[0];
+        int right = r[2];
+        int bot = r[1];
+        int top = r[3];
         return new int[] {
             left + random.nextInt(right - left + 1), bot + random.nextInt(top - bot + 1)
         };
