@@ -11,7 +11,6 @@ public class Solution {
         for (int i = 0; i < nums2.length; i++) {
             indexMap.put(nums2[i], i);
         }
-
         for (int i = 0; i < nums1.length; i++) {
             int num = nums1[i];
             int index = indexMap.get(num);
@@ -32,7 +31,6 @@ public class Solution {
                 }
             }
         }
-
         return nums1;
     }
 }
