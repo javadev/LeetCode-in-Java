@@ -18,9 +18,10 @@ public class Solution {
         }
         int mid = start + (end - start) / 2;
         int cnt = mergeSort(nums, start, mid) + mergeSort(nums, mid + 1, end);
-        for (int i = start, j = mid + 1; i <= mid; i++) {
+        for (int i = start; i <= mid; i++) {
             // it has to be 2.0 instead of 2, otherwise it's going to stack overflow, i.e. test3 is
             // going to fail
+            int j = mid + 1;
             while (j <= end && nums[i] > nums[j] * 2.0) {
                 j++;
             }
