@@ -3,7 +3,7 @@ package g0401_0500.s0443_string_compression;
 // #Medium #String #Two_Pointers
 
 public class Solution {
-    /** This is breaking the rules, it's not in-place. */
+    /* This is breaking the rules, it's not in-place. */
     public int compress(char[] chars) {
         if (chars == null || chars.length == 0) {
             return 0;
