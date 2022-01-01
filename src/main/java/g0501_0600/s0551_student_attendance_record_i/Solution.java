@@ -5,7 +5,8 @@ package g0501_0600.s0551_student_attendance_record_i;
 public class Solution {
     public boolean checkRecord(String s) {
         int aCount = 0;
-        for (int i = 0; i < s.length(); i++) {
+        int i = 0;
+        while (i < s.length()) {
             if (s.charAt(i) == 'A') {
                 aCount++;
                 if (aCount > 1) {
@@ -22,6 +23,7 @@ public class Solution {
                 }
                 i--;
             }
+            i++;
         }
         return true;
     }
