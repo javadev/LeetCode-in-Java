@@ -5,7 +5,7 @@ package g0401_0500.s0435_non_overlapping_intervals;
 import java.util.Arrays;
 
 public class Solution {
-    /**
+    /*
      * This is sorting my starting time, the key here is that we'll want to update end time when an
      * erasure is needed: we use the smaller end time instead of the bigger one which is more likely
      * to overlap with others.
