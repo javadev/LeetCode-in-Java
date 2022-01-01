@@ -8,7 +8,9 @@ import java.util.List;
 public class Solution {
     private boolean check(String str, String word) {
         for (char ch : word.toCharArray()) {
-            if (str.indexOf(ch) < 0) return false;
+            if (str.indexOf(ch) < 0) {
+                return false;
+            }
         }
         return true;
     }

@@ -2,22 +2,16 @@ package g0501_0600.s0502_ipo;
 
 // #Hard #Array #Sorting #Greedy #Heap_Priority_Queue
 
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class Solution {
-    public int findMaximizedCapital(int k, int W, int[] profits, int[] capital) {
+    public int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
         PriorityQueue<int[]> minCapital =
-                new PriorityQueue<>(
-                        (int[] a, int[] b) -> {
-                            return a[1] - b[1];
-                        });
-        PriorityQueue<int[]> maxProfit =
-                new PriorityQueue<>(
-                        (int[] a, int[] b) -> {
-                            return b[0] - a[0];
-                        });
+                new PriorityQueue<>(Comparator.comparingInt((int[] a) -> a[1]));
+        PriorityQueue<int[]> maxProfit = new PriorityQueue<>((int[] a, int[] b) -> b[0] - a[0]);
         for (int i = 0; i < profits.length; i++) {
-            if (W >= capital[i]) {
+            if (w >= capital[i]) {
                 maxProfit.offer(new int[] {profits[i], capital[i]});
             } else {
                 minCapital.offer(new int[] {profits[i], capital[i]});
@@ -26,12 +20,12 @@ public class Solution {
         int count = 0;
         while (count < k && !maxProfit.isEmpty()) {
             int[] temp = maxProfit.poll();
-            W += temp[0];
+            w += temp[0];
             count += 1;
-            while (!minCapital.isEmpty() && minCapital.peek()[1] <= W) {
+            while (!minCapital.isEmpty() && minCapital.peek()[1] <= w) {
                 maxProfit.offer(minCapital.poll());
             }
         }
-        return W;
+        return w;
     }
 }
