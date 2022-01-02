@@ -14,11 +14,15 @@ public class Solution {
         HashMap<Integer, Integer> hm = new HashMap<>();
         fun(root, hm);
         int maxvalue = Integer.MIN_VALUE;
-        for (Map.Entry map : hm.entrySet()) {
-            if ((int) map.getValue() > maxvalue) maxvalue = (int) map.getValue();
+        for (Map.Entry<Integer, Integer> map : hm.entrySet()) {
+            if (map.getValue() > maxvalue) {
+                maxvalue = map.getValue();
+            }
         }
-        for (Map.Entry map : hm.entrySet()) {
-            if ((int) map.getValue() == maxvalue) arr.add((int) map.getKey());
+        for (Map.Entry<Integer, Integer> map : hm.entrySet()) {
+            if (map.getValue() == maxvalue) {
+                arr.add(map.getKey());
+            }
         }
         int[] newArr = new int[arr.size()];
         for (int i = 0; i < arr.size(); i++) {
@@ -28,12 +32,17 @@ public class Solution {
     }
 
     private int fun(TreeNode node, HashMap<Integer, Integer> hm) {
-        if (node == null) return 0;
+        if (node == null) {
+            return 0;
+        }
         int left = fun(node.left, hm);
         int right = fun(node.right, hm);
         int sum = node.val + left + right;
-        if (hm.containsKey(sum)) hm.put(sum, hm.get(sum) + 1);
-        else hm.put(sum, 0);
+        if (hm.containsKey(sum)) {
+            hm.put(sum, hm.get(sum) + 1);
+        } else {
+            hm.put(sum, 0);
+        }
         return sum;
     }
 }

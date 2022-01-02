@@ -35,6 +35,9 @@ public class Solution {
 
     public int findBottomLeftValue(TreeNode root) {
         int[] a = func(root, 0);
-        return a[0];
+        if (a != null && a.length > 0) {
+            return a[0];
+        }
+        return -1;
     }
 }
