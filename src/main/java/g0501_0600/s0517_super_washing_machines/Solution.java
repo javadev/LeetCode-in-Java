@@ -16,7 +16,7 @@ public class Solution {
         int cnt = 0;
         int max = 0;
         for (int load : machines) {
-            cnt += load - avg; // load-avg is "gain/lose"
+            cnt += load - avg;
             max = Math.max(Math.max(max, Math.abs(cnt)), load - avg);
         }
         return max;
