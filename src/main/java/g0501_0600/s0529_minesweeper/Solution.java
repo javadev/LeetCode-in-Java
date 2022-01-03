@@ -3,7 +3,7 @@ package g0501_0600.s0529_minesweeper;
 // #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix
 
 public class Solution {
-    private static final int[][] direction = {
+    private static final int[][] DIRECTION = {
         {1, 0}, {-1, 0}, {0, 1}, {0, -1}, {-1, -1}, {-1, 1}, {1, -1}, {1, 1}
     };
 
@@ -19,8 +19,10 @@ public class Solution {
             if (numOfMine != 0) {
                 board[row][col] = (char) (numOfMine + '0');
                 return;
-            } else board[row][col] = 'B';
-            for (int[] i : direction) {
+            } else {
+                board[row][col] = 'B';
+            }
+            for (int[] i : DIRECTION) {
                 dfs(board, row + i[0], col + i[1]);
             }
         }
@@ -29,7 +31,7 @@ public class Solution {
     private int bfs(char[][] board, int row, int col) {
         int numOfMine = 0;
 
-        for (int[] i : direction) {
+        for (int[] i : DIRECTION) {
             int newRow = row + i[0];
             int newCol = col + i[1];
             if (newRow >= 0
