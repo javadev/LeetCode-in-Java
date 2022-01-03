@@ -18,10 +18,8 @@ public class Solution {
                 lower++;
             }
         }
-        if (firstUpper) {
-            if (upper > 1) {
-                firstUpper = false;
-            }
+        if (firstUpper && upper > 1) {
+            firstUpper = false;
         }
         return upper == n || lower == n || firstUpper;
     }
