@@ -10,12 +10,28 @@ import java.util.Map;
 
 public class Solution {
     private static class Pair {
-        public String word;
-        public int index;
+        private String word;
+        private int index;
 
         public Pair(String word, int index) {
             this.index = index;
             this.word = word;
+        }
+
+        public String getWord() {
+            return word;
+        }
+
+        public void setWord(String word) {
+            this.word = word;
+        }
+
+        public int getIndex() {
+            return index;
+        }
+
+        public void setIndex(int index) {
+            this.index = index;
         }
     }
 
@@ -31,7 +47,7 @@ public class Solution {
         int maxLen = 0;
         String res = "";
         for (int i = 0; i < s.length(); i++) {
-            if (map.get(s.charAt(i)).size() > 0) {
+            if (!map.get(s.charAt(i)).isEmpty()) {
                 Deque<Pair> deque = map.get(s.charAt(i));
                 int size = deque.size();
                 for (int j = 0; j < size; j++) {
@@ -41,10 +57,8 @@ public class Solution {
                         if (maxLen < pair.word.length()) {
                             maxLen = pair.word.length();
                             res = pair.word;
-                        } else if (maxLen == pair.word.length()) {
-                            if (res.compareTo(pair.word) > 0) {
-                                res = pair.word;
-                            }
+                        } else if (maxLen == pair.word.length() && res.compareTo(pair.word) > 0) {
+                            res = pair.word;
                         }
                     } else {
                         pair.index++;
