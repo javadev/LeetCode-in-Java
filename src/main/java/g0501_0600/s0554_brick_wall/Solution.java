@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class Solution {
     public int leastBricks(List<List<Integer>> wall) {
-        Map<Integer, Integer> map = new HashMap();
+        Map<Integer, Integer> map = new HashMap<>();
         for (List<Integer> row : wall) {
             int sum = 0;
             for (int i = 0; i < row.size() - 1; i++) {
@@ -22,8 +22,8 @@ public class Solution {
             }
         }
         int result = wall.size();
-        for (int key : map.keySet()) {
-            result = Math.min(result, wall.size() - map.get(key));
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            result = Math.min(result, wall.size() - entry.getValue());
         }
         return result;
     }
