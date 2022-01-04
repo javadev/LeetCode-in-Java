@@ -5,6 +5,7 @@ package g0501_0600.s0514_freedom_trail;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public int findRotateSteps(String ring, String key) {
         List<Integer>[] indexs = new List[26];
