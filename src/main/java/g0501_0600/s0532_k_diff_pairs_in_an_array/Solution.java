@@ -25,10 +25,8 @@ public class Solution {
                     res++;
                 }
             }
-
             set.add(n);
         }
-
         return res;
     }
 }
