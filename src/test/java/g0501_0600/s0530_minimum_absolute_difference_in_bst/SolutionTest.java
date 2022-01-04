@@ -5,7 +5,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.TreeNode;
 import com_github_leetcode.TreeUtils;
-import java.util.ArrayList;
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +12,7 @@ class SolutionTest {
     @Test
     void getMinimumDifference() {
         TreeNode treeNode =
-                TreeUtils.constructBinaryTree(new ArrayList<>(Arrays.asList(4, 2, 6, 1, 3)));
+                TreeUtils.constructBinaryTree(Arrays.asList(4, 2, 6, 1, 3));
         assertThat(new Solution().getMinimumDifference(treeNode), equalTo(1));
     }
 
@@ -21,7 +20,7 @@ class SolutionTest {
     void getMinimumDifference2() {
         TreeNode treeNode =
                 TreeUtils.constructBinaryTree(
-                        new ArrayList<>(Arrays.asList(1, 0, 48, null, null, 12, 49)));
+                        Arrays.asList(1, 0, 48, null, null, 12, 49));
         assertThat(new Solution().getMinimumDifference(treeNode), equalTo(1));
     }
 }
