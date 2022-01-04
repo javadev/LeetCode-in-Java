@@ -27,9 +27,6 @@ class Node {
 
 public class Solution {
     public Node intersect(Node n1, Node n2) {
-        if (n1 == null || n2 == null) {
-            return new Node();
-        }
         if (n1.isLeaf) {
             return n1.val ? n1 : n2;
         }

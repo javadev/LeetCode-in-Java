@@ -22,21 +22,6 @@ public class Node {
         this.bottomRight = null;
     }
 
-    public Node(
-            boolean val,
-            boolean isLeaf,
-            Node topLeft,
-            Node topRight,
-            Node bottomLeft,
-            Node bottomRight) {
-        this.val = val;
-        this.isLeaf = isLeaf;
-        this.topLeft = topLeft;
-        this.topRight = topRight;
-        this.bottomLeft = bottomLeft;
-        this.bottomRight = bottomRight;
-    }
-
     @Override
     public String toString() {
         return getNode(this)
@@ -47,12 +32,8 @@ public class Node {
     }
 
     private String getNode(Node node) {
-        if (node == null) {
-            return "[]";
-        } else {
-            String isLeafLocal = node.isLeaf ? "1" : "0";
-            String valLocal = node.val ? "1" : "0";
-            return "[" + isLeafLocal + "," + valLocal + "]";
-        }
+        String isLeafLocal = node.isLeaf ? "1" : "0";
+        String valLocal = node.val ? "1" : "0";
+        return "[" + isLeafLocal + "," + valLocal + "]";
     }
 }
