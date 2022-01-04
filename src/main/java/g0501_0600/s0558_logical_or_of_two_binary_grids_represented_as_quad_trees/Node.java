@@ -47,8 +47,12 @@ public class Node {
     }
 
     private String getNode(Node node) {
-        return node == null
-                ? "[]"
-                : "[" + (node.isLeaf ? "1" : "0") + "," + (node.val ? "1" : "0") + "]";
+        if (node == null) {
+            return "[]";
+        } else {
+            String isLeafLocal = node.isLeaf ? "1" : "0";
+            String valLocal = node.val ? "1" : "0";
+            return "[" + isLeafLocal + "," + valLocal + "]";
+        }
     }
 }
