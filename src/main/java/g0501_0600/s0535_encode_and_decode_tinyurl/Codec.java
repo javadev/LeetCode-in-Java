@@ -9,7 +9,6 @@ public class Codec {
     private final Map<String, String> map = new HashMap<>();
     private static final String DIGITS =
             "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    private static final int BASE = 62;
 
     public String encode(String longUrl) {
         long cur = 0;
