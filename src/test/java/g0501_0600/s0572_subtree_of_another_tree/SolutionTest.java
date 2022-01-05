@@ -10,18 +10,18 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void isSubtreeFound() {
+    void isSubtree() {
         TreeNode treeNode = TreeUtils.constructBinaryTree(Arrays.asList(3, 4, 5, 1, 2));
         TreeNode subTree = TreeUtils.constructBinaryTree(Arrays.asList(4, 1, 2));
-        assertThat(new Solution().isSubtreeFound(treeNode, subTree), equalTo(true));
+        assertThat(new Solution().isSubtree(treeNode, subTree), equalTo(true));
     }
 
     @Test
-    void isSubtreeFound2() {
+    void isSubtree2() {
         TreeNode treeNode =
                 TreeUtils.constructBinaryTree(
                         Arrays.asList(3, 4, 5, 1, 2, null, null, null, null, 0));
         TreeNode subTree = TreeUtils.constructBinaryTree(Arrays.asList(4, 1, 2));
-        assertThat(new Solution().isSubtreeFound(treeNode, subTree), equalTo(false));
+        assertThat(new Solution().isSubtree(treeNode, subTree), equalTo(false));
     }
 }

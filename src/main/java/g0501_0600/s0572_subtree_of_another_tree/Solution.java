@@ -5,23 +5,29 @@ package g0501_0600.s0572_subtree_of_another_tree;
 import com_github_leetcode.TreeNode;
 
 public class Solution {
-    public boolean isSubtreeFound(TreeNode root, TreeNode subRoot) {
-        if (root == null) {
-            return false;
-        }
-        if (same(root, subRoot)) {
+    private boolean isSubtreeFound(TreeNode root, TreeNode subRoot) {
+        if (root == null && subRoot == null) {
             return true;
         }
-        return isSubtreeFound(root.left, subRoot) || isSubtreeFound(root.right, subRoot);
-    }
-
-    private boolean same(TreeNode s, TreeNode t) {
-        if (s == null || t == null) {
-            return s == t;
-        }
-        if (s.val != t.val) {
+        if (root == null || subRoot == null) {
             return false;
         }
-        return same(s.left, t.left) && same(s.right, t.right);
+        if (root.val == subRoot.val) {
+            return isSubtreeFound(root.left, subRoot.left) && isSubtree(root.right, subRoot.right);
+        } else {
+            return false;
+        }
+    }
+
+    public boolean isSubtree(TreeNode root, TreeNode subRoot) {
+        if (root == null && subRoot == null) {
+            return true;
+        }
+        if (root == null || subRoot == null) {
+            return false;
+        }
+        return isSubtreeFound(root, subRoot)
+                || isSubtree(root.left, subRoot)
+                || isSubtree(root.right, subRoot);
     }
 }
