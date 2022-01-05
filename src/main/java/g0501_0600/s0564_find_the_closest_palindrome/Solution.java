@@ -29,8 +29,9 @@ public class Solution {
     }
 
     private long palindromeGenerator(long num, int length) {
-        if (num < 10) return 9;
-
+        if (num < 10) {
+            return 9;
+        }
         int numOfDigits = String.valueOf(num).length();
         if (numOfDigits > length) {
             return ((long) Math.pow(10, numOfDigits - 1) + 1);
@@ -45,7 +46,6 @@ public class Solution {
             num += (int) ((temp / digit) * Math.pow(10, j));
             temp = temp % digit;
         }
-
         return num;
     }
 
