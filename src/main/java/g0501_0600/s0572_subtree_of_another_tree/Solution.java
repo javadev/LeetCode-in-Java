@@ -5,7 +5,7 @@ package g0501_0600.s0572_subtree_of_another_tree;
 import com_github_leetcode.TreeNode;
 
 public class Solution {
-    public boolean isSubtreeFound(TreeNode root, TreeNode subRoot) {
+    private boolean isSubtreeFound(TreeNode root, TreeNode subRoot) {
         if (root == null && subRoot == null) {
             return true;
         }
