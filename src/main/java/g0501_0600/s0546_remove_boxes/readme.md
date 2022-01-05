@@ -14,7 +14,13 @@ Return _the maximum points you can get_.
 
 **Output:** 23
 
-**Explanation:** [1, 3, 2, 2, 2, 3, 4, 3, 1] ----> [1, 3, 3, 4, 3, 1] (3\*3=9 points) ----> [1, 3, 3, 3, 1] (1\*1=1 points) ----> [1, 1] (3\*3=9 points) ----> [] (2\*2=4 points)
+**Explanation:**
+
+    [1, 3, 2, 2, 2, 3, 4, 3, 1] ----> [1, 3, 3, 4, 3, 1]
+    (3\*3=9 points) ----> [1, 3, 3, 3, 1]
+    (1\*1=1 points) ----> [1, 1]
+    (3\*3=9 points) ----> []
+    (2\*2=4 points)
 
 **Example 2:**
 
