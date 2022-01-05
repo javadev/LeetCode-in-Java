@@ -2,6 +2,7 @@ package g0501_0600.s0564_find_the_closest_palindrome;
 
 // #Hard #String #Math
 
+@SuppressWarnings("java:S2184")
 public class Solution {
     public String nearestPalindromic(String n) {
         if (n.length() == 1) {
