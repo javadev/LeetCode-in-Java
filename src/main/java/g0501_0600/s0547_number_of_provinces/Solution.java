@@ -31,6 +31,7 @@ public class Solution {
         if (arr[a] == -1) {
             return a;
         }
-        return arr[a] = find(arr[a], arr);
+        arr[a] = find(arr[a], arr);
+        return arr[a];
     }
 }
