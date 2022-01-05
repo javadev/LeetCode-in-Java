@@ -29,8 +29,9 @@ public class Solution {
         int min = 60 * 24;
         for (int i = 0; i < (times.length + times.length / 2); i++) {
             if (i < times.length) {
-                if (times[i] && prev == -1) prev = i;
-                else if (times[i]) {
+                if (times[i] && prev == -1) {
+                    prev = i;
+                } else if (times[i]) {
                     min = Math.min(min, i - prev);
                     prev = i;
                 }
