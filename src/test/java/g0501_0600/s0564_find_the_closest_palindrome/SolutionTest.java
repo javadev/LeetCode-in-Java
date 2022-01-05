@@ -1,9 +1,9 @@
 package g0501_0600.s0564_find_the_closest_palindrome;
 
-import org.junit.jupiter.api.Test;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test

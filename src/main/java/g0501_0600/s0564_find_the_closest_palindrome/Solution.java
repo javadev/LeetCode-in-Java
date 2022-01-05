@@ -4,34 +4,39 @@ package g0501_0600.s0564_find_the_closest_palindrome;
 
 public class Solution {
     public String nearestPalindromic(String n) {
-        if (n.length() == 1){
+        if (n.length() == 1) {
             return String.valueOf(Integer.parseInt(n) - 1);
         }
         long num = Long.parseLong(n);
         int offset = (int) Math.pow(10, n.length() / 2);
-        long first = isPalindrome(n)?
-                palindromeGenerator(num + offset, n.length()) :
-                palindromeGenerator(num, n.length());
-        long second = first < num ?
-                palindromeGenerator(num + offset, n.length()) :
-                palindromeGenerator(num - offset, n.length());
+        long first =
+                isPalindrome(n)
+                        ? palindromeGenerator(num + offset, n.length())
+                        : palindromeGenerator(num, n.length());
+        long second =
+                first < num
+                        ? palindromeGenerator(num + offset, n.length())
+                        : palindromeGenerator(num - offset, n.length());
 
-        if (first + second == 2 * num){
-            return first < second? String.valueOf(first) : String.valueOf(second);
+        if (first + second == 2 * num) {
+            return first < second ? String.valueOf(first) : String.valueOf(second);
         }
 
-        return Math.abs(num - first) > Math.abs(num - second)? String.valueOf(second) : String.valueOf(first);
+        return Math.abs(num - first) > Math.abs(num - second)
+                ? String.valueOf(second)
+                : String.valueOf(first);
     }
-    
+
     private long palindromeGenerator(long num, int length) {
         if (num < 10) return 9;
 
         int numOfDigits = String.valueOf(num).length();
         if (numOfDigits > length) {
             return ((long) Math.pow(10, numOfDigits - 1) + 1);
-        }else if (numOfDigits < length)
+        } else if (numOfDigits < length) {
             return ((long) Math.pow(10, numOfDigits) - 1);
-        
+        }
+
         num = num - num % (long) Math.pow(10, numOfDigits / 2);
         long temp = num;
         for (int j = 0; j < numOfDigits / 2; j++) {
@@ -51,5 +56,4 @@ public class Solution {
         }
         return true;
     }
-
 }
