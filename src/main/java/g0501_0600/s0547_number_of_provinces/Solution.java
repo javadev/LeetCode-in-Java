@@ -27,7 +27,7 @@ public class Solution {
         return 0;
     }
 
-    private int find(int a, int arr[]) {
+    private int find(int a, int[] arr) {
         if (arr[a] == -1) {
             return a;
         }
