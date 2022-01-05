@@ -2,6 +2,7 @@ package g0501_0600.s0564_find_the_closest_palindrome;
 
 // #Hard #String #Math
 
+@SuppressWarnings("java:S2184")
 public class Solution {
     public String nearestPalindromic(String n) {
         if (n.length() == 1) {
@@ -28,8 +29,9 @@ public class Solution {
     }
 
     private long palindromeGenerator(long num, int length) {
-        if (num < 10) return 9;
-
+        if (num < 10) {
+            return 9;
+        }
         int numOfDigits = String.valueOf(num).length();
         if (numOfDigits > length) {
             return ((long) Math.pow(10, numOfDigits - 1) + 1);
@@ -44,7 +46,6 @@ public class Solution {
             num += (int) ((temp / digit) * Math.pow(10, j));
             temp = temp % digit;
         }
-
         return num;
     }
 
