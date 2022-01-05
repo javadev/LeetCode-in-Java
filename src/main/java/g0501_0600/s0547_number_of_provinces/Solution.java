@@ -1,5 +1,7 @@
 package g0501_0600.s0547_number_of_provinces;
 
+// #Medium #Depth_First_Search #Breadth_First_Search #Graph #Union_Find
+
 import java.util.Arrays;
 
 public class Solution {

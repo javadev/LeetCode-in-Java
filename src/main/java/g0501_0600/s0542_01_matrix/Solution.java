@@ -1,8 +1,8 @@
 package g0501_0600.s0542_01_matrix;
 
-import java.util.Arrays;
-
 // #Medium #Array #Dynamic_Programming #Breadth_First_Search #Matrix
+
+import java.util.Arrays;
 
 public class Solution {
     public int[][] updateMatrix(int[][] mat) {
