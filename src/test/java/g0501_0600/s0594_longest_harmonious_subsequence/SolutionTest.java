@@ -10,4 +10,14 @@ class SolutionTest {
     void findLHS() {
         assertThat(new Solution().findLHS(new int[] {1, 3, 2, 2, 5, 2, 3, 7}), equalTo(5));
     }
+
+    @Test
+    void findLHS2() {
+        assertThat(new Solution().findLHS(new int[] {1, 2, 3, 4}), equalTo(2));
+    }
+
+    @Test
+    void findLHS3() {
+        assertThat(new Solution().findLHS(new int[] {1, 1, 1, 1}), equalTo(0));
+    }
 }
