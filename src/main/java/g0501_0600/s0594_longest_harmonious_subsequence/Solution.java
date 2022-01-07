@@ -13,10 +13,8 @@ public class Solution {
         int cur = nums[0];
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] > cur) {
-                if (lastN > 0 && curN > 0) {
-                    if (lastN + curN > max) {
-                        max = lastN + curN;
-                    }
+                if (lastN > 0 && curN > 0 && lastN + curN > max) {
+                    max = lastN + curN;
                 }
                 // if diff more than 1, don't count
                 lastN = nums[i] - cur == 1 ? curN : 0;
@@ -26,10 +24,8 @@ public class Solution {
                 curN++;
             }
         }
-        if (lastN > 0 && curN > 0) {
-            if (lastN + curN > max) {
-                max = lastN + curN;
-            }
+        if (lastN > 0 && curN > 0 && lastN + curN > max) {
+            max = lastN + curN;
         }
         return max;
     }
