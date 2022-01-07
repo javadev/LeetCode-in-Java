@@ -16,9 +16,13 @@ public class Solution {
             if ((n & (1 << k)) != 0) {
                 // if that bit is on
                 ans += f[k];
-                if (preBit != 0) return ans;
+                if (preBit != 0) {
+                    return ans;
+                }
                 preBit = 1;
-            } else preBit = 0;
+            } else {
+                preBit = 0;
+            }
         }
         return ans + 1;
     }
