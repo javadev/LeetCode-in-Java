@@ -8,7 +8,9 @@ public class Solution {
     public int findLHS(int[] nums) {
         Arrays.sort(nums);
         int max = 0;
-        int lastN = 0, curN = 1, cur = nums[0];
+        int lastN = 0;
+        int curN = 1;
+        int cur = nums[0];
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] > cur) {
                 if (lastN > 0 && curN > 0) {
