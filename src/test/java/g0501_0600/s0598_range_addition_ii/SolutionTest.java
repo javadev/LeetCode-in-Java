@@ -9,14 +9,8 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void maxCount() {
-        assertThat(
-                new Solution()
-                        .maxCount(
-                                3,
-                                3,
-                                CommonUtils
-                                        .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                                                "[2,2],[3,3]")),
-                equalTo(4));
+        int[][] javaArray =
+                CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[2,2],[3,3]");
+        assertThat(new Solution().maxCount(3, 3, javaArray), equalTo(4));
     }
 }

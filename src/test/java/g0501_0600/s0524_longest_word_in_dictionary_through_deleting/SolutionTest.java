@@ -3,7 +3,6 @@ package g0501_0600.s0524_longest_word_in_dictionary_through_deleting;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
@@ -13,16 +12,14 @@ class SolutionTest {
         assertThat(
                 new Solution()
                         .findLongestWord(
-                                "abpcplea",
-                                new ArrayList<>(Arrays.asList("ale", "apple", "monkey", "plea"))),
+                                "abpcplea", Arrays.asList("ale", "apple", "monkey", "plea")),
                 equalTo("apple"));
     }
 
     @Test
     void findLongestWord2() {
         assertThat(
-                new Solution()
-                        .findLongestWord("abpcplea", new ArrayList<>(Arrays.asList("a", "b", "c"))),
+                new Solution().findLongestWord("abpcplea", Arrays.asList("a", "b", "c")),
                 equalTo("a"));
     }
 }

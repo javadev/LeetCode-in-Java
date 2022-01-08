@@ -8,15 +8,13 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void matrixReshape() {
-        assertThat(
-                new Solution().matrixReshape(new int[][] {{1, 2}, {3, 4}}, 1, 4),
-                equalTo(new int[][] {{1, 2, 3, 4}}));
+        int[][] mat = {{1, 2}, {3, 4}};
+        assertThat(new Solution().matrixReshape(mat, 1, 4), equalTo(new int[][] {{1, 2, 3, 4}}));
     }
 
     @Test
     void matrixReshape2() {
-        assertThat(
-                new Solution().matrixReshape(new int[][] {{1, 2}, {3, 4}}, 2, 4),
-                equalTo(new int[][] {{1, 2}, {3, 4}}));
+        int[][] mat = {{1, 2}, {3, 4}};
+        assertThat(new Solution().matrixReshape(mat, 2, 4), equalTo(mat));
     }
 }
