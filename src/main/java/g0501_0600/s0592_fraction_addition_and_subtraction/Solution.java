@@ -12,7 +12,7 @@ public class Solution {
 
     private String format(int a, int b) {
         int gcd = Math.abs(gcd(a, b));
-        return String.valueOf(a / gcd) + "/" + String.valueOf(b / gcd);
+        return String.valueOf(a / gcd) + "/" + (b / gcd);
     }
 
     private int[] parse(String s) {

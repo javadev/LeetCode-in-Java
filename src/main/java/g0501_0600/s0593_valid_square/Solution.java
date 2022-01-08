@@ -23,10 +23,7 @@ public class Solution {
         if (distancesSquared[4] != distancesSquared[5]) {
             return false;
         }
-        if (distancesSquared[5] != 2 * distancesSquared[0]) {
-            return false;
-        }
-        return true;
+        return distancesSquared[5] == 2 * distancesSquared[0];
     }
 
     private int getDistanceSquared(int[] p1, int[] p2) {
