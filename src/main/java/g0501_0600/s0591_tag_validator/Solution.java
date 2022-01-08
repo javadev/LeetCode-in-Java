@@ -8,7 +8,8 @@ import java.util.Deque;
 public class Solution {
     public boolean isValid(String code) {
         Deque<String> stack = new ArrayDeque<>();
-        for (int i = 0; i < code.length(); ) {
+        int i = 0;
+        while (i < code.length()) {
             if (i > 0 && stack.isEmpty()) {
                 return false;
             }
