@@ -8,16 +8,10 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void findRestaurant() {
-        assertThat(
-                new Solution()
-                        .findRestaurant(
-                                new String[] {"Shogun", "Tapioca Express", "Burger King", "KFC"},
-                                new String[] {
-                                    "Piatti",
-                                    "The Grill at Torrey Pines",
-                                    "Hungry Hunter Steakhouse",
-                                    "Shogun"
-                                }),
-                equalTo(new String[] {"Shogun"}));
+        String[] list1 = {"Shogun", "Tapioca Express", "Burger King", "KFC"};
+        String[] list2 = {
+            "Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun"
+        };
+        assertThat(new Solution().findRestaurant(list1, list2), equalTo(new String[] {"Shogun"}));
     }
 }
