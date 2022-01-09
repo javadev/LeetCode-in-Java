@@ -2,8 +2,7 @@ package g0501_0600.s0587_erect_the_fence;
 
 // #Hard #Array #Math #Geometry
 
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.Arrays;
 
 public class Solution {
     private static final int MAX = 100;
@@ -28,11 +27,7 @@ public class Solution {
             }
             st[idx++] = trees[i];
         }
-        Set<int[]> result = new LinkedHashSet<>();
-        for (int i = 0; i < idx; i++) {
-            result.add(st[i]);
-        }
-        return result.toArray(new int[result.size()][]);
+        return Arrays.stream(st, 0, idx).distinct().toArray(int[][]::new);
     }
 
     private void radixSort2D(int[][] trees) {
