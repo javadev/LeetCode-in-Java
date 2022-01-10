@@ -49,4 +49,9 @@ class SolutionTest {
                 new Solution().postorder(node1),
                 equalTo(Arrays.asList(2, 6, 14, 11, 7, 3, 12, 8, 4, 13, 9, 10, 5, 1)));
     }
+
+    @Test
+    void postorder3() {
+        assertThat(new Solution().postorder(null), equalTo(Arrays.asList()));
+    }
 }
