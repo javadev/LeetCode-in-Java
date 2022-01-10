@@ -46,13 +46,6 @@ class SolutionTest {
                             "%s:%s",
                             hour < 10 ? "0" + hour : hour, minute < 10 ? "0" + minute : minute));
             index++;
-            hour = index / 60 % 24;
-            minute = index % 60;
-            timePoints.add(
-                    String.format(
-                            "%s:%s",
-                            hour < 10 ? "0" + hour : hour, minute < 10 ? "0" + minute : minute));
-            index++;
         }
         assertThat(new Solution().findMinDifference(timePoints), equalTo(1));
     }
