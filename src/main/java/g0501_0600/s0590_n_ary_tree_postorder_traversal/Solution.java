@@ -20,7 +20,7 @@ class Node {
 
     public Node(int _val, List<Node> _neighbors) {
         val = _val;
-        children = _neighbors;
+        neighbors = _neighbors;
     }
 };
 */
