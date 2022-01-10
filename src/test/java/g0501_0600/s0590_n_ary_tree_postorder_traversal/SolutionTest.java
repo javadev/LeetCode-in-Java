@@ -20,4 +20,33 @@ class SolutionTest {
         node3.neighbors = Arrays.asList(node5, node6);
         assertThat(new Solution().postorder(node1), equalTo(Arrays.asList(5, 6, 3, 2, 4, 1)));
     }
+
+    @Test
+    void postorder2() {
+        Node node1 = new Node(1);
+        Node node2 = new Node(2);
+        Node node3 = new Node(3);
+        Node node4 = new Node(4);
+        Node node5 = new Node(5);
+        Node node6 = new Node(6);
+        Node node7 = new Node(7);
+        Node node8 = new Node(8);
+        Node node9 = new Node(9);
+        Node node10 = new Node(10);
+        Node node11 = new Node(11);
+        Node node12 = new Node(12);
+        Node node13 = new Node(13);
+        Node node14 = new Node(14);
+        node11.neighbors = Arrays.asList(node14);
+        node7.neighbors = Arrays.asList(node11);
+        node3.neighbors = Arrays.asList(node6, node7);
+        node8.neighbors = Arrays.asList(node12);
+        node4.neighbors = Arrays.asList(node8);
+        node9.neighbors = Arrays.asList(node13);
+        node5.neighbors = Arrays.asList(node9, node10);
+        node1.neighbors = Arrays.asList(node2, node3, node4, node5);
+        assertThat(
+                new Solution().postorder(node1),
+                equalTo(Arrays.asList(2, 6, 14, 11, 7, 3, 12, 8, 4, 13, 9, 10, 5, 1)));
+    }
 }
