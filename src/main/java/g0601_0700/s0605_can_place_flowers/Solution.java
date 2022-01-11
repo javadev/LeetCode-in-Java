@@ -1,0 +1,28 @@
+package g0601_0700.s0605_can_place_flowers;
+
+// #Easy #Array #Greedy
+
+public class Solution {
+    public boolean canPlaceFlowers(int[] flowerbed, int n) {
+        for (int i = 0; i < flowerbed.length; i++) {
+            if (flowerbed[i] == 0 && n > 0) {
+                boolean left = false;
+                if (i == 0 || flowerbed[i - 1] == 0) {
+                    left = true;
+                }
+                boolean right = false;
+                if (i == flowerbed.length - 1 || flowerbed[i + 1] == 0) {
+                    right = true;
+                }
+                if (left && right) {
+                    flowerbed[i] = 1;
+                    n--;
+                }
+            }
+            if (n == 0) {
+                break;
+            }
+        }
+        return n == 0;
+    }
+}
