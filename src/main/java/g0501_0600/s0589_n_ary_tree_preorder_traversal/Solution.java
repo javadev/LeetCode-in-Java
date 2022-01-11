@@ -32,8 +32,10 @@ public class Solution {
         return res;
     }
 
-    void preorderHelper(List<Integer> res, Node root) {
-        if (root == null) return;
+    private void preorderHelper(List<Integer> res, Node root) {
+        if (root == null) {
+            return;
+        }
         res.add(root.val);
         for (Node node : root.neighbors) {
             preorderHelper(res, node);
