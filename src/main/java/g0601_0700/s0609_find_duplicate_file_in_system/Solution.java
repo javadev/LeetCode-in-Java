@@ -25,7 +25,9 @@ public class Solution {
 
         List<List<String>> result = new ArrayList<>();
         for (List<String> list : map.values()) {
-            if (list.size() > 1) result.add(list);
+            if (list.size() > 1) {
+                result.add(list);
+            }
         }
         return result;
     }
