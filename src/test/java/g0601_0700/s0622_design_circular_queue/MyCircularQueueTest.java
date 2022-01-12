@@ -13,10 +13,10 @@ class MyCircularQueueTest {
         assertThat(myCircularQueue.enQueue(2), equalTo(true));
         assertThat(myCircularQueue.enQueue(3), equalTo(true));
         assertThat(myCircularQueue.enQueue(4), equalTo(false));
-        assertThat(myCircularQueue.Rear(), equalTo(3));
+        assertThat(myCircularQueue.rear(), equalTo(3));
         assertThat(myCircularQueue.isFull(), equalTo(true));
         assertThat(myCircularQueue.deQueue(), equalTo(true));
         assertThat(myCircularQueue.enQueue(4), equalTo(true));
-        assertThat(myCircularQueue.Rear(), equalTo(4));
+        assertThat(myCircularQueue.rear(), equalTo(4));
     }
 }

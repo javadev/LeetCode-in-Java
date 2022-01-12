@@ -4,7 +4,7 @@ package g0601_0700.s0611_valid_triangle_number;
 
 public class Solution {
     public int triangleNumber(int[] nums) {
-        int n = nums.length;
+        int n;
         int max = 0;
         int[] count = new int[1001];
         for (int i : nums) {

@@ -38,14 +38,14 @@ public class MyCircularQueue {
         return true;
     }
 
-    public int Rear() {
+    public int rear() {
         if (size == 0) {
             return -1;
         }
         return dumyHead.right.val;
     }
 
-    public int Front() {
+    public int front() {
         if (size == 0) {
             return -1;
         }
