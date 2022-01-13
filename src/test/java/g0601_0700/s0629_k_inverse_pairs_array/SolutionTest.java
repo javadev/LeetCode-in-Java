@@ -7,12 +7,12 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void kInversePairs() {
-        assertThat(new Solution().kInversePairs(3, 0), equalTo(1));
+    void kinversepairs() {
+        assertThat(new Solution().kinversepairs(3, 0), equalTo(1));
     }
 
     @Test
-    void kInversePairs2() {
-        assertThat(new Solution().kInversePairs(3, 1), equalTo(2));
+    void kinversepairs2() {
+        assertThat(new Solution().kinversepairs(3, 1), equalTo(2));
     }
 }

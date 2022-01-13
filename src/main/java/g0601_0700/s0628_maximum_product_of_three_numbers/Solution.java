@@ -1,5 +1,7 @@
 package g0601_0700.s0628_maximum_product_of_three_numbers;
 
+// #Easy #Array #Math #Sorting
+
 public class Solution {
     public int maximumProduct(int[] a) {
         int min1 = Integer.MAX_VALUE;
