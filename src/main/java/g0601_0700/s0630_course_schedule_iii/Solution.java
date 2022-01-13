@@ -4,6 +4,7 @@ package g0601_0700.s0630_course_schedule_iii;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int scheduleCourse(int[][] courses) {
         Arrays.sort(courses, (a, b) -> a[1] - b[1]);
@@ -37,14 +38,6 @@ public class Solution {
             return heap;
         }
 
-        public int getPin() {
-            return pin;
-        }
-
-        public void setPin(int pin) {
-            this.pin = pin;
-        }
-
         public void add(int e) {
             heap[pin] = e;
             int temp = pin;
@@ -76,12 +69,11 @@ public class Solution {
                         if (heap[temp * 2 + 1] > heap[temp * 2 + 2]) {
                             heap[temp] = heap[temp * 2 + 1];
                             temp = temp * 2 + 1;
-                            heap[temp] = h0;
                         } else {
                             heap[temp] = heap[temp * 2 + 2];
                             temp = temp * 2 + 2;
-                            heap[temp] = h0;
                         }
+                        heap[temp] = h0;
                     } else {
                         break;
                     }

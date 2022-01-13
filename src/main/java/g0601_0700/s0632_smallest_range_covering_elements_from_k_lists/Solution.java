@@ -7,6 +7,7 @@ import java.util.Objects;
 import java.util.PriorityQueue;
 
 public class Solution {
+    @SuppressWarnings("java:S1210")
     static class Triplet implements Comparable<Triplet> {
         int value;
         int row;
