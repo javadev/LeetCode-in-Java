@@ -69,12 +69,11 @@ public class Solution {
                         if (heap[temp * 2 + 1] > heap[temp * 2 + 2]) {
                             heap[temp] = heap[temp * 2 + 1];
                             temp = temp * 2 + 1;
-                            heap[temp] = h0;
                         } else {
                             heap[temp] = heap[temp * 2 + 2];
                             temp = temp * 2 + 2;
-                            heap[temp] = h0;
                         }
+                        heap[temp] = h0;
                     } else {
                         break;
                     }
