@@ -21,4 +21,17 @@ class SolutionTest {
     void scheduleCourse3() {
         assertThat(new Solution().scheduleCourse(new int[][] {{3, 2}, {4, 3}}), equalTo(0));
     }
+
+    @Test
+    void scheduleCourse4() {
+        int[][] input =
+                new int[][] {
+                    {100, 200},
+                    {200, 1300},
+                    {1000, 1250},
+                    {2000, 3200},
+                    {300, 1200}
+                };
+        assertThat(new Solution().scheduleCourse(input), equalTo(4));
+    }
 }
