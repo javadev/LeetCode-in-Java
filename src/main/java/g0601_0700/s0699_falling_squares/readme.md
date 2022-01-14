@@ -20,7 +20,15 @@ Return _an integer array_ `ans` _where_ `ans[i]` _represents the height describe
 
 **Output:** [2,5,5]
 
-**Explanation:** After the first drop, the tallest stack is square 1 with a height of 2. After the second drop, the tallest stack is squares 1 and 2 with a height of 5. After the third drop, the tallest stack is still squares 1 and 2 with a height of 5. Thus, we return an answer of [2, 5, 5]. 
+**Explanation:**
+
+After the first drop, the tallest stack is square 1 with a height of 2.
+
+After the second drop, the tallest stack is squares 1 and 2 with a height of 5.
+
+After the third drop, the tallest stack is still squares 1 and 2 with a height of 5.
+
+Thus, we return an answer of [2, 5, 5]. 
 
 **Example 2:**
 
@@ -28,7 +36,15 @@ Return _an integer array_ `ans` _where_ `ans[i]` _represents the height describe
 
 **Output:** [100,100]
 
-**Explanation:** After the first drop, the tallest stack is square 1 with a height of 100. After the second drop, the tallest stack is either square 1 or square 2, both with heights of 100. Thus, we return an answer of [100, 100]. Note that square 2 only brushes the right side of square 1, which does not count as landing on it. 
+**Explanation:**
+
+After the first drop, the tallest stack is square 1 with a height of 100.
+
+After the second drop, the tallest stack is either square 1 or square 2, both with heights of 100.
+
+Thus, we return an answer of [100, 100].
+
+Note that square 2 only brushes the right side of square 1, which does not count as landing on it. 
 
 **Constraints:**
 
