@@ -38,7 +38,7 @@ public class Solution {
                 // Remove any course that is longer than current course
                 // will work, but we remove the longest one with the help
                 // of heap (pq).
-                if (pq.size() > 0 && pq.peek() > course[0]) {
+                if (!pq.isEmpty() && pq.peek() > course[0]) {
                     time -= pq.poll();
                     time += course[0];
                     pq.offer(course[0]);
