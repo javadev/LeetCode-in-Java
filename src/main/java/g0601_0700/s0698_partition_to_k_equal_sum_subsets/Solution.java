@@ -9,7 +9,8 @@ public class Solution {
         if (nums == null || nums.length == 0) {
             return false;
         }
-        int n = nums.length, sum = 0;
+        int n = nums.length;
+        int sum = 0;
         for (int num : nums) sum += num;
         if (sum % k != 0) {
             return false;
