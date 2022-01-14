@@ -28,15 +28,14 @@ public class Solution {
                 // bitmask
                 int tmp = i | (1 << j);
                 // skip if the bit is already taken
-                if (tmp == i) {
-                    continue;
+                if (tmp != i) {
+                    // num too big for current subset
+                    if (nums[j] > rem) {
+                        break;
+                    }
+                    // cumulative sum
+                    dp[tmp] = dp[i] + nums[j];
                 }
-                // num too big for current subset
-                if (nums[j] > rem) {
-                    break;
-                }
-                // cumulative sum
-                dp[tmp] = dp[i] + nums[j];
             }
         }
         // true if total sum of all nums is the same
