@@ -1,5 +1,7 @@
 package g0601_0700.s0638_shopping_offers;
 
+// #Medium #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask #Memoization
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
