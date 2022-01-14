@@ -11,7 +11,9 @@ public class Solution {
         }
         int n = nums.length;
         int sum = 0;
-        for (int num : nums) sum += num;
+        for (int num : nums) {
+            sum += num;
+        }
         if (sum % k != 0) {
             return false;
         }
