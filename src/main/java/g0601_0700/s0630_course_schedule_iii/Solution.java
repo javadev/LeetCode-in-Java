@@ -28,17 +28,16 @@ public class Solution {
             if (time + course[0] <= course[1]) {
                 time += course[0];
                 pq.offer(course[0]);
-            }
-            // If adding this ecxeeds the limit. We can still add it
-            // if-and-only-if there are courses longer than current
-            // one. If so, by removing a longer course, current shorter
-            // course can fit in for sure. Although the total course
-            // count is the same, the overall time consumed is shorter.
-            // Which gives us more room for future courses.
-            // Remove any course that is longer than current course
-            // will work, but we remove the longest one with the help
-            // of heap (pq).
-            else {
+            } else {
+                // If adding this ecxeeds the limit. We can still add it
+                // if-and-only-if there are courses longer than current
+                // one. If so, by removing a longer course, current shorter
+                // course can fit in for sure. Although the total course
+                // count is the same, the overall time consumed is shorter.
+                // Which gives us more room for future courses.
+                // Remove any course that is longer than current course
+                // will work, but we remove the longest one with the help
+                // of heap (pq).
                 if (pq.size() > 0 && pq.peek() > course[0]) {
                     time -= pq.poll();
                     time += course[0];
