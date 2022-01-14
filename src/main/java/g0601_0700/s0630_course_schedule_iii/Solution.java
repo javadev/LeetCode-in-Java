@@ -3,83 +3,50 @@ package g0601_0700.s0630_course_schedule_iii;
 // #Hard #Array #Greedy #Heap_Priority_Queue
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 @SuppressWarnings("java:S135")
 public class Solution {
     public int scheduleCourse(int[][] courses) {
+        // Sort the courses based on their deadline date.
         Arrays.sort(courses, (a, b) -> a[1] - b[1]);
-        int course = 0;
+        // Only the duration is stored. We don't care which course
+        // is the longest, we only care about the total courses can
+        // be taken.
+        // If the question wants the course ids to be returned.
+        // Consider use a Pair<Duration, CourseId> int pair.
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b - a);
+        // Total time consumed.
         int time = 0;
-        MaxHeap heap = new MaxHeap(courses.length);
-        for (int[] cours : courses) {
-            if (cours[1] - time >= cours[0]) {
-                time += cours[0];
-                course++;
-                heap.add(cours[0]);
-            } else if (cours[0] < heap.getHeap()[0]) {
-                int t = heap.pop();
-                heap.add(cours[0]);
-                time = time - t + cours[0];
-            }
-        }
-        return course;
-    }
-
-    static class MaxHeap {
-        private final int[] heap;
-        private int pin;
-
-        public MaxHeap(int mexLen) {
-            this.heap = new int[mexLen];
-            this.pin = 0;
-        }
-
-        public int[] getHeap() {
-            return heap;
-        }
-
-        public void add(int e) {
-            heap[pin] = e;
-            int temp = pin;
-            pin++;
-            while (temp > 0 && heap[(temp - 1) / 2] < e) {
-                heap[temp] = heap[(temp - 1) / 2];
-                temp = (temp - 1) / 2;
-                heap[temp] = e;
-            }
-        }
-
-        public int pop() {
-            int res = heap[0];
-            pin--;
-            heap[0] = heap[pin];
-            int h0 = heap[0];
-            int temp = 0;
-            while (temp * 2 + 1 < pin) {
-                if (temp * 2 + 2 == pin) {
-                    if (heap[temp * 2 + 1] > h0) {
-                        heap[temp] = heap[temp * 2 + 1];
-                        temp = temp * 2 + 1;
-                        heap[temp] = h0;
-                    } else {
-                        break;
-                    }
-                } else {
-                    if (h0 < heap[temp * 2 + 1] || h0 < heap[temp * 2 + 2]) {
-                        if (heap[temp * 2 + 1] > heap[temp * 2 + 2]) {
-                            heap[temp] = heap[temp * 2 + 1];
-                            temp = temp * 2 + 1;
-                        } else {
-                            heap[temp] = heap[temp * 2 + 2];
-                            temp = temp * 2 + 2;
-                        }
-                        heap[temp] = h0;
-                    } else {
-                        break;
-                    }
+        // At the given time `course`, the overall "time limit" is
+        // course[1]. All courses in pq is already 'valid'. But
+        // adding this course[0] might exceed the course[1] limit.
+        for (int[] course : courses) {
+            // If adding this course doesn't exceed. Let's add it
+            // for now. (Greedy algo). We might remove it later if
+            // we have a "better" solution at that time.
+            if (time + course[0] <= course[1]) {
+                time += course[0];
+                pq.offer(course[0]);
+            } else {
+                // If adding this ecxeeds the limit. We can still add it
+                // if-and-only-if there are courses longer than current
+                // one. If so, by removing a longer course, current shorter
+                // course can fit in for sure. Although the total course
+                // count is the same, the overall time consumed is shorter.
+                // Which gives us more room for future courses.
+                // Remove any course that is longer than current course
+                // will work, but we remove the longest one with the help
+                // of heap (pq).
+                if (!pq.isEmpty() && pq.peek() > course[0]) {
+                    time -= pq.poll();
+                    time += course[0];
+                    pq.offer(course[0]);
                 }
+                // If no course in consider (pq) is shorter than the
+                // current course. It is safe to discard it.
             }
-            return res;
         }
+        return pq.size();
     }
 }
