@@ -15,4 +15,10 @@ class SolutionTest {
         TreeNode expected = TreeUtils.constructBinaryTree(Arrays.asList(2, 1, 3));
         assertThat(new Solution().searchBST(root, 2).toString(), equalTo(expected.toString()));
     }
+
+    @Test
+    void searchBST2() {
+        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(4, 2, 7, 1, 3));
+        assertThat(new Solution().searchBST(root, 5), equalTo(null));
+    }
 }
