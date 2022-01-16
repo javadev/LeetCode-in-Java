@@ -4,7 +4,8 @@ package g0601_0700.s0696_count_binary_substrings;
 
 public class Solution {
     public int countBinarySubstrings(String s) {
-        int start = 0, ans = 0;
+        int start = 0;
+        int ans = 0;
         char[] arr = s.toCharArray();
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] != arr[i - 1]) {
