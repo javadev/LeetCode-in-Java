@@ -4,7 +4,9 @@ package g0601_0700.s0650_2_keys_keyboard;
 
 public class Solution {
     public int minSteps(int n) {
-        int count = 1, cost = 0, addValue = 1;
+        int count = 1;
+        int cost = 0;
+        int addValue = 1;
         while (count < n) {
             cost++;
             count += addValue;
