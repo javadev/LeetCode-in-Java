@@ -8,7 +8,9 @@ public class Solution {
         while (n != 0) {
             int v = n & 1;
             n = n >> 1;
-            if (prev == v) return false;
+            if (prev == v) {
+                return false;
+            }
             prev = v;
         }
         return true;
