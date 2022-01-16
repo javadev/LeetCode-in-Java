@@ -1,6 +1,8 @@
 package g0601_0700.s0640_solve_the_equation;
 
-class Solution {
+// #Medium #String #Math #Simulation
+
+public class Solution {
     public String solveEquation(String equation) {
         String[] eqs = equation.split("=");
 

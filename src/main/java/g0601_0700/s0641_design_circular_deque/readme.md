@@ -18,7 +18,11 @@ Implement the `MyCircularDeque` class:
 
 **Example 1:**
 
-**Input** ["MyCircularDeque", "insertLast", "insertLast", "insertFront", "insertFront", "getRear", "isFull", "deleteLast", "insertFront", "getFront"] [[3], [1], [2], [3], [4], [], [], [], [4], []]
+**Input** 
+
+["MyCircularDeque", "insertLast", "insertLast", "insertFront", "insertFront", "getRear", "isFull", "deleteLast", "insertFront", "getFront"] 
+
+[[3], [1], [2], [3], [4], [], [], [], [4], []]
 
 **Output:** [null, true, true, true, false, 2, true, true, true, 4]
 
