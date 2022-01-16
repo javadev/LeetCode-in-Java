@@ -19,7 +19,8 @@ class Solution {
     private int[] evaluate(String eq) {
         char[] arr = eq.toCharArray();
         boolean f = false;
-        int a = 0, b = 0;
+        int a = 0;
+        int b = 0;
 
         int i = 0;
         if (arr[0] == '-') {

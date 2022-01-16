@@ -40,7 +40,6 @@ public class MyCircularDeque {
             return false;
         }
         front = (front - 1 + data.length) % data.length;
-        int val = data[front];
         size--;
         return true;
     }
@@ -50,7 +49,6 @@ public class MyCircularDeque {
             return false;
         }
         rear = (rear + 1) % data.length;
-        int val = data[rear];
         size--;
         return true;
     }
