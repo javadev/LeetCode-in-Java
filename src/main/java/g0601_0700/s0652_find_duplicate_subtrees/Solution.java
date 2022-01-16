@@ -3,15 +3,15 @@ package g0601_0700.s0652_find_duplicate_subtrees;
 // #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
 
 import com_github_leetcode.TreeNode;
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
 public class Solution {
     public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
         Map<String, Integer> map = new HashMap<>();
-        List<TreeNode> list = new LinkedList<>();
+        List<TreeNode> list = new ArrayList<>();
         helper(root, map, list);
         return list;
     }
