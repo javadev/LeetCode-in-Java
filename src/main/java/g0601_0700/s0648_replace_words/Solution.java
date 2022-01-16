@@ -2,13 +2,10 @@ package g0601_0700.s0648_replace_words;
 
 // #Medium #Array #String #Hash_Table #Trie
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Solution {
     public String replaceWords(List<String> dictionary, String sentence) {
-        Map<String, String> rootWordsMap = new HashMap<>();
         Trie trie = new Trie();
         dictionary.forEach(trie::insert);
         String[] allWords = sentence.split(" ");
@@ -63,13 +60,13 @@ public class Solution {
 
         public String getRootForWord(String word) {
             Node node = root;
-            String rootWord = "";
+            StringBuilder rootWord = new StringBuilder();
             for (int i = 0; i < word.length(); i++) {
                 if (node.containsKey(word.charAt(i))) {
-                    rootWord = rootWord + word.charAt(i);
+                    rootWord.append(word.charAt(i));
                     node = node.get(word.charAt(i));
                     if (node.isWordCompleted()) {
-                        return rootWord;
+                        return rootWord.toString();
                     }
 
                 } else {
