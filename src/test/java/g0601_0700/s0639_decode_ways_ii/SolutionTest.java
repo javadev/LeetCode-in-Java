@@ -20,4 +20,9 @@ class SolutionTest {
     void numDecodings3() {
         assertThat(new Solution().numDecodings("2*"), equalTo(15));
     }
+
+    @Test
+    void numDecodings4() {
+        assertThat(new Solution().numDecodings("134*92*0*9*"), equalTo(3600));
+    }
 }
