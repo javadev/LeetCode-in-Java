@@ -7,21 +7,20 @@ import java.util.List;
 
 public class Solution {
     public List<Integer> findClosestElements(int[] arr, int k, int x) {
-        int lo = 0;
-        int hi = arr.length - 1;
-        List<Integer> ans = new ArrayList<>();
-        while (hi - lo > k - 1) {
-            if (Math.abs(arr[lo] - x) > Math.abs(arr[hi] - x)) {
-                lo++;
+        int left = 0;
+        int right = arr.length - k;
+        List<Integer> answer = new ArrayList<>();
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (x - arr[mid] > arr[mid + k] - x) {
+                left = mid + 1;
             } else {
-                hi--;
+                right = mid;
             }
         }
-
-        for (int i = lo; i <= hi; i++) {
-            ans.add(arr[i]);
+        for (int i = left; i < left + k; i++) {
+            answer.add(arr[i]);
         }
-
-        return ans;
+        return answer;
     }
 }
