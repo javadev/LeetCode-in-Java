@@ -6,7 +6,7 @@ public class Solution {
     public int[] maxSumOfThreeSubarrays(int[] nums, int k) {
         int len = nums.length;
         if (len < 3 * k) {
-            return null;
+            return new int[] {};
         }
         int[] res = new int[3];
         int[][] left = new int[2][len];
