@@ -1,30 +1,29 @@
-﻿647\. Palindromic Substrings
+﻿658\. Find K Closest Elements
 
 Medium
 
-Given a string `s`, return _the number of **palindromic substrings** in it_.
+Given a **sorted** integer array `arr`, two integers `k` and `x`, return the `k` closest integers to `x` in the array. The result should also be sorted in ascending order.
 
-A string is a **palindrome** when it reads the same backward as forward.
+An integer `a` is closer to `x` than an integer `b` if:
 
-A **substring** is a contiguous sequence of characters within the string.
+*   `|a - x| < |b - x|`, or
+*   `|a - x| == |b - x|` and `a < b`
 
 **Example 1:**
 
-**Input:** s = "abc"
+**Input:** arr = [1,2,3,4,5], k = 4, x = 3
 
-**Output:** 3
-
-**Explanation:** Three palindromic strings: "a", "b", "c". 
+**Output:** [1,2,3,4] 
 
 **Example 2:**
 
-**Input:** s = "aaa"
+**Input:** arr = [1,2,3,4,5], k = 4, x = -1
 
-**Output:** 6
-
-**Explanation:** Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa". 
+**Output:** [1,2,3,4] 
 
 **Constraints:**
 
-*   `1 <= s.length <= 1000`
-*   `s` consists of lowercase English letters.
+*   `1 <= k <= arr.length`
+*   <code>1 <= arr.length <= 10<sup>4</sup></code>
+*   `arr` is sorted in **ascending** order.
+*   <code>-10<sup>4</sup> <= arr[i], x <= 10<sup>4</sup></code>
