@@ -11,11 +11,16 @@ public class Solution {
         int hi = arr.length - 1;
         List<Integer> ans = new ArrayList<>();
         while (hi - lo > k - 1) {
-            if (Math.abs(arr[lo] - x) > Math.abs(arr[hi] - x)) lo++;
-            else hi--;
+            if (Math.abs(arr[lo] - x) > Math.abs(arr[hi] - x)) {
+                lo++;
+            } else {
+                hi--;
+            }
         }
 
-        for (int i = lo; i <= hi; i++) ans.add(arr[i]);
+        for (int i = lo; i <= hi; i++) {
+            ans.add(arr[i]);
+        }
 
         return ans;
     }
