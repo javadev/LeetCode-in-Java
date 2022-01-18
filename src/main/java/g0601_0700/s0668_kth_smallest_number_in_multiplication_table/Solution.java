@@ -3,11 +3,9 @@ package g0601_0700.s0668_kth_smallest_number_in_multiplication_table;
 // #Hard #Binary_Search
 
 public class Solution {
-
     public int findKthNumber(int m, int n, int k) {
         int lo = 1;
         int hi = m * n;
-
         while (lo < hi) {
             int mid = lo + (hi - lo) / 2;
             int col = n;
