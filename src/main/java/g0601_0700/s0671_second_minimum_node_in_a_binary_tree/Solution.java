@@ -10,7 +10,9 @@ public class Solution {
     int diff = Integer.MAX_VALUE;
 
     public int findSecondMinimumValue(TreeNode root) {
-        if (root == null) return -1;
+        if (root == null) {
+            return -1;
+        }
         if (root.val < min) {
             min = root.val;
         }
