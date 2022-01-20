@@ -9,15 +9,12 @@ public class Solution {
         if (root == null) {
             return root;
         }
-
         if (root.val > r) {
             return trimBST(root.left, l, r);
         }
-
         if (root.val < l) {
             return trimBST(root.right, l, r);
         }
-
         root.left = trimBST(root.left, l, r);
         root.right = trimBST(root.right, l, r);
         return root;
