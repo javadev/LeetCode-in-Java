@@ -20,4 +20,24 @@ class SolutionTest {
     void flipLights3() {
         assertThat(new Solution().flipLights(3, 1), equalTo(4));
     }
+
+    @Test
+    void flipLights4() {
+        assertThat(new Solution().flipLights(1, 0), equalTo(1));
+    }
+
+    @Test
+    void flipLights5() {
+        assertThat(new Solution().flipLights(3, 2), equalTo(7));
+    }
+
+    @Test
+    void flipLights6() {
+        assertThat(new Solution().flipLights(3, 3), equalTo(8));
+    }
+
+    @Test
+    void flipLights7() {
+        assertThat(new Solution().flipLights(4, 4), equalTo(8));
+    }
 }
