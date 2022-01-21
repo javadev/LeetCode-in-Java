@@ -17,7 +17,9 @@ public class Solution {
 
         for (List<Integer> integers : forest) {
             for (int v : integers) {
-                if (v > 1) pq.add(v);
+                if (v > 1) {
+                    pq.add(v);
+                }
             }
         }
         int steps = 0;
