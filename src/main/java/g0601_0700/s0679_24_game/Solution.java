@@ -2,6 +2,8 @@ package g0601_0700.s0679_24_game;
 
 // #Hard #Array #Math #Backtracking
 
+import java.util.Arrays;
+
 public class Solution {
     private static final double EPS = 1e-6;
 
@@ -50,10 +52,7 @@ public class Solution {
     }
 
     public boolean judgePoint24(int[] nums) {
-        double[] a = new double[nums.length];
-        for (int i = 0; i < nums.length; i++) {
-            a[i] = nums[i];
-        }
+        double[] a = Arrays.stream(nums).asDoubleStream().toArray();
         return backtrack(a, a.length);
     }
 }
