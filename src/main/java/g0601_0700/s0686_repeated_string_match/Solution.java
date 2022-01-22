@@ -13,18 +13,15 @@ public class Solution {
                 return -1;
             }
         }
-        if (a == null || b == null) {
-            return -1;
-        }
 
         int lenB = b.length() - 1;
-        StringBuffer sb = new StringBuffer(a);
-        int lenSb_A = sb.length() - 1;
+        StringBuilder sb = new StringBuilder(a);
+        int lenSbA = sb.length() - 1;
         int repeatCount = 1;
-        while (lenSb_A < lenB) {
+        while (lenSbA < lenB) {
             sb.append(a);
             repeatCount++;
-            lenSb_A = sb.length() - 1;
+            lenSbA = sb.length() - 1;
         }
         if (!isFound(sb, b)) {
             sb.append(a);
@@ -34,7 +31,7 @@ public class Solution {
         return repeatCount;
     }
 
-    private boolean isFound(StringBuffer a, String b) {
+    private boolean isFound(StringBuilder a, String b) {
         for (int i = 0; i < a.length(); i++) {
             int k = i;
             int m = 0;

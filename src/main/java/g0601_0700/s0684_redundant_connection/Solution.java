@@ -29,6 +29,6 @@ public class Solution {
         if (par[x] == x) {
             return x;
         }
-        return par[x] = find(par[x]);
+        return find(par[x]);
     }
 }
