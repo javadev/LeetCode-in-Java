@@ -7,8 +7,8 @@ public class Solution {
         int len1 = s1.length();
         int len2 = s2.length();
         int[][] dp = new int[len1 + 1][len2 + 1];
-        char c1 = ' ';
-        char c2 = ' ';
+        char c1;
+        char c2;
         for (int i = 1; i < len1 + 1; i++) {
             dp[i][0] = dp[i - 1][0] + s1.charAt(i - 1);
         }
