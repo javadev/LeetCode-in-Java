@@ -15,7 +15,11 @@ Implement the `MapSum` class:
 
 **Example 1:**
 
-**Input** ["MapSum", "insert", "sum", "insert", "sum"] [[], ["apple", 3], ["ap"], ["app", 2], ["ap"]]
+**Input** 
+
+["MapSum", "insert", "sum", "insert", "sum"] [[], 
+
+["apple", 3], ["ap"], ["app", 2], ["ap"]]
 
 **Output:** [null, null, 3, null, 5]
 
