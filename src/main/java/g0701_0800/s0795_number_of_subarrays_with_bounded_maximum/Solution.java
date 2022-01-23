@@ -4,7 +4,8 @@ package g0701_0800.s0795_number_of_subarrays_with_bounded_maximum;
 
 public class Solution {
     public int numSubarrayBoundedMax(int[] nums, int left, int right) {
-        int i = 0, j = 0;
+        int i = 0;
+        int j = 0;
         int count = 0;
         int tempSum = 0;
         while (j < nums.length) {
