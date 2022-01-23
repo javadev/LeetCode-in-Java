@@ -39,14 +39,13 @@ public class Solution {
         updatedKnown[position] = 1;
         for (int i = 0; i < statements[position].length; i++) {
             int answer = statements[position][i];
-            if (answer == 2) {
-                continue;
+            if (answer != 2) {
+                if (known[i] != 2 && answer != known[i]) {
+                    conflictDetected = true;
+                    break;
+                }
+                updatedKnown[i] = answer;
             }
-            if (known[i] != 2 && answer != known[i]) {
-                conflictDetected = true;
-                break;
-            }
-            updatedKnown[i] = answer;
         }
         return conflictDetected ? 0 : max(statements, updatedKnown, position + 1);
     }
