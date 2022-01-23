@@ -3,7 +3,7 @@ package g0701_0800.s0799_champagne_tower;
 // #Medium #Dynamic_Programming
 
 public class Solution {
-    public double champagneTower(int poured, int query_row, int query_glass) {
+    public double champagneTower(int poured, int queryRow, int queryGlass) {
         int curRow = 0;
         // first row
         double[] cur = new double[] {poured};
@@ -23,8 +23,8 @@ public class Solution {
                 }
             }
             // got to the desired row, return the glass amount
-            if (curRow == query_row) {
-                return cur[query_glass];
+            if (curRow == queryRow) {
+                return cur[queryGlass];
             }
             cur = next;
             curRow++;
