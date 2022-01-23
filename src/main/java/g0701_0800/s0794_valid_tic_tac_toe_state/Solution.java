@@ -40,34 +40,26 @@ public class Solution {
         // yourself & see)
         if ((cX - 1) == cO) {
             // These are all horizaontal, vertical, diagonal
-            if ((a1 == a2 && a2 == a3 && a1 == 'O')
-                    || (a4 == a5 && a5 == a6 && a4 == 'O')
-                    || (a7 == a8 && a8 == a9 && a7 == 'O')
-                    || (a1 == a5 && a5 == a9 && a1 == 'O')
-                    || (a3 == a5 && a5 == a7 && a3 == 'O')
-                    || (a1 == a4 && a4 == a7 && a1 == 'O')
-                    || (a2 == a5 && a5 == a8 && a2 == 'O')
-                    || (a3 == a6 && a6 == a9 && a3 == 'O')) {
-                return false;
-            } else {
-                return true;
-            }
+            return (a1 != a2 || a2 != a3 || a1 != 'O')
+                    && (a4 != a5 || a5 != a6 || a4 != 'O')
+                    && (a7 != a8 || a8 != a9 || a7 != 'O')
+                    && (a1 != a5 || a5 != a9 || a1 != 'O')
+                    && (a3 != a5 || a5 != a7 || a3 != 'O')
+                    && (a1 != a4 || a4 != a7 || a1 != 'O')
+                    && (a2 != a5 || a5 != a8 || a2 != 'O')
+                    && (a3 != a6 || a6 != a9 || a3 != 'O');
         } else if (cX == cO) {
             // if X=4 and O=4 (ie both r equal) then 'X' cannot win amd
             // if we find such a case then we need to return false else the sequence is fine(try
             // yourself & see)
-            if ((a1 == a2 && a2 == a3 && a1 == 'X')
-                    || (a4 == a5 && a5 == a6 && a4 == 'X')
-                    || (a7 == a8 && a8 == a9 && a7 == 'X')
-                    || (a1 == a5 && a5 == a9 && a1 == 'X')
-                    || (a3 == a5 && a5 == a7 && a3 == 'X')
-                    || (a1 == a4 && a4 == a7 && a1 == 'X')
-                    || (a2 == a5 && a5 == a8 && a2 == 'X')
-                    || (a3 == a6 && a6 == a9 && a3 == 'X')) {
-                return false;
-            } else {
-                return true;
-            }
+            return (a1 != a2 || a2 != a3 || a1 != 'X')
+                    && (a4 != a5 || a5 != a6 || a4 != 'X')
+                    && (a7 != a8 || a8 != a9 || a7 != 'X')
+                    && (a1 != a5 || a5 != a9 || a1 != 'X')
+                    && (a3 != a5 || a5 != a7 || a3 != 'X')
+                    && (a1 != a4 || a4 != a7 || a1 != 'X')
+                    && (a2 != a5 || a5 != a8 || a2 != 'X')
+                    && (a3 != a6 || a6 != a9 || a3 != 'X');
         }
         return false;
     }
