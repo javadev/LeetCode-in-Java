@@ -4,6 +4,7 @@ package g0701_0800.s0706_design_hashmap;
 
 import java.util.ArrayList;
 
+@SuppressWarnings("unchecked")
 public class MyHashMap {
 
     ArrayList[] arr = null;

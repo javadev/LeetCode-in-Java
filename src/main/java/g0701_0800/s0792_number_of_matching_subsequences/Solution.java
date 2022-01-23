@@ -5,6 +5,7 @@ package g0701_0800.s0792_number_of_matching_subsequences;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public int numMatchingSubseq(String s, String[] words) {
         List<Node>[] buckets = new ArrayList[26];
