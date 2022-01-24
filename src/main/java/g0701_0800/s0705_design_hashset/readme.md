@@ -12,7 +12,10 @@ Implement `MyHashSet` class:
 
 **Example 1:**
 
-**Input** ["MyHashSet", "add", "add", "contains", "contains", "add", "contains", "remove", "contains"] [[], [1], [2], [1], [3], [2], [2], [2], [2]]
+**Input**
+
+    ["MyHashSet", "add", "add", "contains", "contains", "add", "contains", "remove", "contains"]
+    [[], [1], [2], [1], [3], [2], [2], [2], [2]]
 
 **Output:** [null, null, null, true, false, null, true, null, false]
 
