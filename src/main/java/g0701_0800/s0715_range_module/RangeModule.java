@@ -41,7 +41,6 @@ public class RangeModule {
         }
         Interval prev = pos;
         Interval curr = pos.next;
-        Interval addBack = null;
         while (curr != null && curr.start < right) {
             if (curr.start < left) {
                 insert(prev, new Interval(curr.start, left));
