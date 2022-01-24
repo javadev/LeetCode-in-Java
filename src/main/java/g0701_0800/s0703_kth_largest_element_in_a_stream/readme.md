@@ -14,7 +14,6 @@ Implement `KthLargest` class:
 **Input** 
 
     ["KthLargest", "add", "add", "add", "add", "add"] 
-    
     [[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]]
 
 **Output:** [null, 4, 5, 5, 8, 8]
