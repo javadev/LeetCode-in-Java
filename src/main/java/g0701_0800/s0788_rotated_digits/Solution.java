@@ -6,23 +6,17 @@ public class Solution {
     public int rotatedDigits(int n) {
         int[] flag = new int[n + 1];
         flag[0] = 2;
-        if (n >= 1) {
-            flag[1] = 2;
+        int[] indexesValueTwo = {1, 8};
+        for (int value : indexesValueTwo) {
+            if (n >= value) {
+                flag[value] = 2;
+            }
         }
-        if (n >= 8) {
-            flag[8] = 2;
-        }
-        if (n >= 2) {
-            flag[2] = 1;
-        }
-        if (n >= 5) {
-            flag[5] = 1;
-        }
-        if (n >= 6) {
-            flag[6] = 1;
-        }
-        if (n >= 9) {
-            flag[9] = 1;
+        int[] indexesValueOne = {2, 5, 6, 9};
+        for (int value : indexesValueOne) {
+            if (n >= value) {
+                flag[value] = 1;
+            }
         }
         int rs = 0;
         for (int i = 1; i <= n; i++) {
