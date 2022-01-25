@@ -11,6 +11,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
 
+@SuppressWarnings("java:S1149")
 public class Solution {
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
         Map<String, String> emailToName = new HashMap<>();
