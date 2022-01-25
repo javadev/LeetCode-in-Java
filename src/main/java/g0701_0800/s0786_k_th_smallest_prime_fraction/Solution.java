@@ -9,7 +9,7 @@ public class Solution {
         double high = 1.0;
         while (low < high) {
             double mid = (low + high) / 2;
-            int[] res = getFractionsLessThanMid(arr, k, n, mid);
+            int[] res = getFractionsLessThanMid(arr, n, mid);
             if (res[0] == k) {
                 return new int[] {arr[res[1]], arr[res[2]]};
             } else if (res[0] > k) {
@@ -21,7 +21,7 @@ public class Solution {
         return new int[] {};
     }
 
-    private int[] getFractionsLessThanMid(int arr[], int k, int n, double mid) {
+    private int[] getFractionsLessThanMid(int arr[], int n, double mid) {
         double maxLessThanMid = 0.0;
         // stores indices of max fraction less than mid;
         int x = 0;

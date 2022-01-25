@@ -27,16 +27,15 @@ public class Solution {
         int rs = 0;
         for (int i = 1; i <= n; i++) {
             int residual = i % 10;
-            if (flag[residual] == 0) {
-                continue;
-            }
-            if ((residual == 1 || residual == 0 || residual == 8) && (flag[i / 10] == 2)) {
-                flag[i] = 2;
-                continue;
-            }
-            if (flag[i / 10] != 0) {
-                flag[i] = 1;
-                rs++;
+            if (flag[residual] != 0) {
+                if ((residual == 1 || residual == 0 || residual == 8) && (flag[i / 10] == 2)) {
+                    flag[i] = 2;
+                    continue;
+                }
+                if (flag[i / 10] != 0) {
+                    flag[i] = 1;
+                    rs++;
+                }
             }
         }
         return rs;
