@@ -21,7 +21,7 @@ public class Solution {
         return new int[] {};
     }
 
-    private int[] getFractionsLessThanMid(int arr[], int n, double mid) {
+    private int[] getFractionsLessThanMid(int[] arr, int n, double mid) {
         double maxLessThanMid = 0.0;
         // stores indices of max fraction less than mid;
         int x = 0;
