@@ -9,12 +9,15 @@ public class Solution {
         double high = 1.0;
         while (low < high) {
             double mid = (low + high) / 2;
-            int res[] = getFractionsLessThanMid(arr, k, n, mid);
-            if (res[0] == k) return new int[] {arr[res[1]], arr[res[2]]};
-            else if (res[0] > k) high = mid;
-            else low = mid;
+            int[] res = getFractionsLessThanMid(arr, k, n, mid);
+            if (res[0] == k) {
+                return new int[] {arr[res[1]], arr[res[2]]};
+            } else if (res[0] > k) {
+                high = mid;
+            } else {
+                low = mid;
+            }
         }
-
         return new int[] {};
     }
 

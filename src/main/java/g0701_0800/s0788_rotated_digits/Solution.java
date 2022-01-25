@@ -4,7 +4,7 @@ package g0701_0800.s0788_rotated_digits;
 
 public class Solution {
     public int rotatedDigits(int n) {
-        int flag[] = new int[n + 1];
+        int[] flag = new int[n + 1];
         flag[0] = 2;
         if (n >= 1) {
             flag[1] = 2;
