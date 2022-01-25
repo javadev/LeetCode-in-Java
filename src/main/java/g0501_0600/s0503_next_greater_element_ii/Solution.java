@@ -6,7 +6,6 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class Solution {
-    // credit: https://leetcode.com/articles/next-greater-element-ii/
     public int[] nextGreaterElements(int[] nums) {
         int[] result = new int[nums.length];
         Deque<Integer> stack = new ArrayDeque<>();

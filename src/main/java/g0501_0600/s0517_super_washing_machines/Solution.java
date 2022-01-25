@@ -3,7 +3,6 @@ package g0501_0600.s0517_super_washing_machines;
 // #Hard #Array #Greedy
 
 public class Solution {
-    // Reference: https://discuss.leetcode.com/topic/79938/super-short-easy-java-o-n-solution
     public int findMinMoves(int[] machines) {
         int total = 0;
         for (int i : machines) {

@@ -4,9 +4,6 @@ package g0401_0500.s0474_ones_and_zeroes;
 
 public class Solution {
     /*
-     * credit: https://leetcode.com/problems/ones-and-zeroes/discuss/95811/Java-Iterative-DP-Solution-O(mn)-Space and
-     * https://leetcode.com/problems/ones-and-zeroes/discuss/95811/Java-Iterative-DP-Solution-O(mn)-Space/100352
-     * <p>
      * The problem can be interpreted as:
      * What's the max number of str can we pick from strs with limitation of m "0"s and n "1"s.
      *
