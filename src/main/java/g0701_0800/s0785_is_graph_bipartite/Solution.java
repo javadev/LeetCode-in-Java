@@ -20,7 +20,7 @@ public class Solution {
         }
         color[curr] = c;
         for (int x : graph[curr]) {
-            if (color[x] == c || helper(graph, x, c * -1, color) == false) {
+            if (color[x] == c || !helper(graph, x, c * -1, color)) {
                 return false;
             }
         }
