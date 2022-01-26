@@ -24,12 +24,10 @@ public class Solution {
         Map<String, Integer> count = new HashMap<>();
         for (int i = formula.length() - 1; i >= 0; --i) {
             char c = formula.charAt(i);
-
             if (c == '(') {
                 product /= mlrStack.pop();
                 continue;
             }
-
             int rank = 1;
             int mlr = 0;
             while (isDigit(c)) {
@@ -42,11 +40,9 @@ public class Solution {
             }
             mlrStack.push(mlr);
             product *= mlr;
-
             if (c == ')') {
                 continue;
             }
-
             StringBuilder atom = new StringBuilder();
             while (isLower(c)) {
                 atom.insert(0, c);
@@ -54,9 +50,7 @@ public class Solution {
             }
             atom.insert(0, c);
             String name = atom.toString();
-
             count.put(name, count.getOrDefault(name, 0) + product);
-
             product /= mlrStack.pop();
         }
         List<String> atomList = new ArrayList<>(count.keySet());
