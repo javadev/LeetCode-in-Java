@@ -41,16 +41,13 @@ public class Solution {
                 } else if (!multiComment) {
                     sb.append(ch);
                 }
-
                 index++;
             }
-
             if (sb.length() > 0 && !multiComment) {
                 result.add(sb.toString());
                 sb.setLength(0);
             }
         }
-
         return result;
     }
 }
