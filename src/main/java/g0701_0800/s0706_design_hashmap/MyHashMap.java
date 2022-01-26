@@ -7,7 +7,7 @@ import java.util.ArrayList;
 @SuppressWarnings("unchecked")
 public class MyHashMap {
 
-    ArrayList[] arr = null;
+    ArrayList[] arr;
 
     public MyHashMap() {
         arr = new ArrayList[1000];

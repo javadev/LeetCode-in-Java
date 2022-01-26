@@ -7,7 +7,7 @@ public class Solution {
         int n = graph.length;
         int[] color = new int[n];
         for (int i = 0; i < n; i++) {
-            if (color[i] == 0 && !helper(graph, i, -1, color)) {
+            if (color[i] == 0 && helper(graph, i, -1, color)) {
                 return false;
             }
         }
@@ -16,14 +16,14 @@ public class Solution {
 
     private boolean helper(int[][] graph, int curr, int c, int[] color) {
         if (color[curr] == c) {
-            return true;
+            return false;
         }
         color[curr] = c;
         for (int x : graph[curr]) {
-            if (color[x] == c || !helper(graph, x, c * -1, color)) {
-                return false;
+            if (color[x] == c || helper(graph, x, c * -1, color)) {
+                return true;
             }
         }
-        return true;
+        return false;
     }
 }
