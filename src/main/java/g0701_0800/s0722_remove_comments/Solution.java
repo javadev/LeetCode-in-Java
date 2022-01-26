@@ -5,6 +5,7 @@ package g0701_0800.s0722_remove_comments;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public List<String> removeComments(String[] source) {
         List<String> result = new ArrayList<>();
