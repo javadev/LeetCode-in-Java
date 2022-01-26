@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 
+@SuppressWarnings("java:S1149")
 public class Solution {
     private boolean isLower(char c) {
         return c >= 97 && c <= 122;
@@ -22,10 +23,12 @@ public class Solution {
         int product = 1;
         Stack<Integer> mlrStack = new Stack<>();
         Map<String, Integer> count = new HashMap<>();
-        for (int i = formula.length() - 1; i >= 0; --i) {
+        int i = formula.length() - 1;
+        while (i >= 0) {
             char c = formula.charAt(i);
             if (c == '(') {
                 product /= mlrStack.pop();
+                i--;
                 continue;
             }
             int rank = 1;
@@ -41,6 +44,7 @@ public class Solution {
             mlrStack.push(mlr);
             product *= mlr;
             if (c == ')') {
+                i--;
                 continue;
             }
             StringBuilder atom = new StringBuilder();
@@ -52,6 +56,7 @@ public class Solution {
             String name = atom.toString();
             count.put(name, count.getOrDefault(name, 0) + product);
             product /= mlrStack.pop();
+            i--;
         }
         List<String> atomList = new ArrayList<>(count.keySet());
         atomList.sort(Comparator.naturalOrder());
