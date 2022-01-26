@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 
-@SuppressWarnings("java:S1149")
+@SuppressWarnings({"java:S135", "java:S1149"})
 public class Solution {
     private boolean isLower(char c) {
         return c >= 97 && c <= 122;
