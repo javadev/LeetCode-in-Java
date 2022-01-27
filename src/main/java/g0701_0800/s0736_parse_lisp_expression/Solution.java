@@ -2,18 +2,16 @@ package g0701_0800.s0736_parse_lisp_expression;
 
 // #Hard #String #Hash_Table #Stack #Recursion
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
 public class Solution {
     static class Exp {
-        Stack<Exp> exps;
+        Deque<Exp> exps;
         String op;
         Exp parent;
 
         public Exp(Exp from) {
-            this.exps = new Stack<>();
+            this.exps = new LinkedList<>();
             this.parent = from;
         }
 
@@ -41,7 +39,8 @@ public class Solution {
     }
 
     private Exp buildTree(String exp) {
-        Exp root = new Exp(null), cur = root;
+        Exp root = new Exp(null);
+        Exp cur = root;
         int n = exp.length() - 1;
         while (n >= 0) {
             char c = exp.charAt(n);
@@ -54,7 +53,9 @@ public class Solution {
                 cur = cur.parent;
             } else if (c != ' ') {
                 int pre = n;
-                while (pre >= 0 && exp.charAt(pre) != '(' && exp.charAt(pre) != ' ') pre--;
+                while (pre >= 0 && exp.charAt(pre) != '(' && exp.charAt(pre) != ' ') {
+                    pre--;
+                }
                 Exp next = new Exp(cur);
                 next.op = exp.substring(pre + 1, n + 1);
                 cur.exps.push(next);

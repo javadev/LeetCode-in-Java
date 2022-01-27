@@ -15,7 +15,9 @@ public class Solution {
                 || r < 0
                 || c < 0
                 || img[r][c] == n
-                || img[r][c] != o) return;
+                || img[r][c] != o) {
+            return;
+        }
         img[r][c] = n;
         helper(img, r + 1, c, n, o);
         helper(img, r - 1, c, n, o);
