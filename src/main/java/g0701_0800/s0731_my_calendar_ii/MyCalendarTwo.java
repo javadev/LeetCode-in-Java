@@ -5,7 +5,6 @@ package g0701_0800.s0731_my_calendar_ii;
 import java.util.TreeMap;
 
 public class MyCalendarTwo {
-
     private final TreeMap<Integer, Integer> map;
     private final TreeMap<Integer, Integer> overlap;
 
