@@ -14,10 +14,7 @@ public class Solution {
             if (num % 10 != 0) {
                 while (num > 0) {
                     int temp = num % 10;
-                    if (temp == 0) {
-                        dividing = false;
-                        break;
-                    } else if (i % temp == 0) {
+                    if (i % temp == 0) {
                         dividing = true;
                     } else {
                         dividing = false;

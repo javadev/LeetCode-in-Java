@@ -15,7 +15,9 @@ public class MyCalendarThree {
     }
 
     private void updateTree(Node root, int start, int end) {
-        if (root == null) return;
+        if (root == null) {
+            return;
+        }
         if (root.low >= start && root.high <= end) {
             root.val++;
             if (root.left != null) {

@@ -14,7 +14,6 @@ public class MyCalendar {
             this.end = end;
         }
 
-        @Override
         public int compareTo(Meeting anotherMeeting) {
             return this.start - anotherMeeting.start;
         }
@@ -23,7 +22,7 @@ public class MyCalendar {
     private final TreeSet<Meeting> meetings;
 
     public MyCalendar() {
-        meetings = new TreeSet<Meeting>();
+        meetings = new TreeSet<>();
     }
 
     public boolean book(int start, int end) {
