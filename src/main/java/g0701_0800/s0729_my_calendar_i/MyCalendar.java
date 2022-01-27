@@ -4,6 +4,7 @@ import java.util.TreeSet;
 
 // #Medium #Design #Ordered_Set #Segment_Tree
 
+@SuppressWarnings("java:S1210")
 public class MyCalendar {
     static class Meeting implements Comparable<Meeting> {
         public final int start;
@@ -14,6 +15,7 @@ public class MyCalendar {
             this.end = end;
         }
 
+        @Override
         public int compareTo(Meeting anotherMeeting) {
             return this.start - anotherMeeting.start;
         }
