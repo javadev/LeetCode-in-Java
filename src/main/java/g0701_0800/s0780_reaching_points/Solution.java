@@ -9,7 +9,8 @@ public class Solution {
                 if (ty == sy) {
                     // ty==sy
                     return (tx - sx) % sy == 0;
-                } else { // ty > sy
+                } else {
+                    // ty > sy
                     tx %= ty;
                 }
             } else if (sx == tx) {
