@@ -26,13 +26,11 @@ public class Solution {
             int curr = spfa.poll();
             visited[curr] = false;
             for (int i = 1; i <= n; i++) {
-                if (graph[curr][i] != -1) {
-                    if (dist[i] > dist[curr] + graph[curr][i]) {
-                        dist[i] = dist[curr] + graph[curr][i];
-                        if (!visited[i]) {
-                            spfa.add(i);
-                            visited[i] = true;
-                        }
+                if (graph[curr][i] != -1 && dist[i] > dist[curr] + graph[curr][i]) {
+                    dist[i] = dist[curr] + graph[curr][i];
+                    if (!visited[i]) {
+                        spfa.add(i);
+                        visited[i] = true;
                     }
                 }
             }
