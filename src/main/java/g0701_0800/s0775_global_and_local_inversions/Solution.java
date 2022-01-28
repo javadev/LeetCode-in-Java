@@ -10,11 +10,11 @@ public class Solution {
      * <p>
      * Time: O(n)
      */
-    public boolean isIdealPermutation(int[] a) {
-        int min = a.length;
-        for (int i = a.length - 1; i >= 2; i--) {
-            min = Math.min(min, a[i]);
-            if (a[i - 2] > min) {
+    public boolean isIdealPermutation(int[] nums) {
+        int min = nums.length;
+        for (int i = nums.length - 1; i >= 2; i--) {
+            min = Math.min(min, nums[i]);
+            if (nums[i - 2] > min) {
                 return false;
             }
         }
