@@ -27,12 +27,8 @@ public class Solution {
                 }
             }
 
-            if (j == 26) {
-                if (ans.isEmpty()) {
-                    ans = str;
-                } else if (ans.length() > str.length()) {
-                    ans = str;
-                }
+            if (j == 26 && (ans.isEmpty() || ans.length() > str.length())) {
+                ans = str;
             }
         }
         return ans;

@@ -19,7 +19,8 @@ public class Solution {
         while (true) {
             int id = 0;
             Set<Integer> visited = new HashSet<>();
-            Map<Integer, Set<Integer>> islands = new HashMap<>(), scores = new HashMap<>();
+            Map<Integer, Set<Integer>> islands = new HashMap<>();
+            Map<Integer, Set<Integer>> scores = new HashMap<>();
             Map<Integer, Integer> walls = new HashMap<>();
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
