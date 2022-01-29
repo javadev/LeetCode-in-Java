@@ -3,10 +3,10 @@ package g0701_0800.s0767_reorganize_string;
 // #Medium #String #Hash_Table #Sorting #Greedy #Heap_Priority_Queue #Counting
 
 public class Solution {
-    public String reorganizeString(String S) {
+    public String reorganizeString(String s) {
         int[] hash = new int[26];
-        for (int i = 0; i < S.length(); i++) {
-            hash[S.charAt(i) - 'a']++;
+        for (int i = 0; i < s.length(); i++) {
+            hash[s.charAt(i) - 'a']++;
         }
         int max = 0;
         int letter = 0;
@@ -16,10 +16,10 @@ public class Solution {
                 letter = i;
             }
         }
-        if (max > (S.length() + 1) / 2) {
+        if (max > (s.length() + 1) / 2) {
             return "";
         }
-        char[] res = new char[S.length()];
+        char[] res = new char[s.length()];
         int idx = 0;
         while (hash[letter] > 0) {
             res[idx] = (char) (letter + 'a');
