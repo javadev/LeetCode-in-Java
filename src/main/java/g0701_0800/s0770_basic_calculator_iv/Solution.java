@@ -9,16 +9,15 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("java:S1104")
 public class Solution {
     public List<String> basicCalculatorIV(String expression, String[] evalvars, int[] evalints) {
         Map<String, Integer> knownVars = new HashMap<>();
         for (int i = 0; i < evalvars.length; i++) {
             knownVars.put(evalvars[i], evalints[i]);
         }
-
         LinkedList<Expr> expressions = new LinkedList<>();
         LinkedList<String> ops = new LinkedList<>();
-
         for (String token : parseExpression(expression)) {
             if (Character.isDigit(token.charAt(0))) {
                 expressions.push(new Expr("", Integer.parseInt(token)));
@@ -54,20 +53,20 @@ public class Solution {
         Collections.sort(
                 output,
                 (a, b) -> {
-                    int a_star = 0;
-                    int b_star = 0;
+                    int aStar = 0;
+                    int bStar = 0;
                     for (int i = 0; i < a.length(); i++) {
                         if (a.charAt(i) == '*') {
-                            a_star++;
+                            aStar++;
                         }
                     }
                     for (int i = 0; i < b.length(); i++) {
                         if (b.charAt(i) == '*') {
-                            b_star++;
+                            bStar++;
                         }
                     }
-                    if (a_star != b_star) {
-                        return b_star - a_star;
+                    if (aStar != bStar) {
+                        return bStar - aStar;
                     }
                     return a.split("\\*", 2)[1].compareTo(b.split("\\*", 2)[1]);
                 });
