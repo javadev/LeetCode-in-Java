@@ -54,14 +54,17 @@ public class Solution {
         Collections.sort(
                 output,
                 (a, b) -> {
-                    int a_star = 0, b_star = 0;
+                    int a_star = 0;
+                    int b_star = 0;
                     for (int i = 0; i < a.length(); i++) {
                         if (a.charAt(i) == '*') {
                             a_star++;
                         }
                     }
                     for (int i = 0; i < b.length(); i++) {
-                        if (b.charAt(i) == '*') b_star++;
+                        if (b.charAt(i) == '*') {
+                            b_star++;
+                        }
                     }
                     if (a_star != b_star) {
                         return b_star - a_star;
@@ -109,7 +112,7 @@ public class Solution {
             }
         } else {
             // *
-            for (String t1 : e1.terms.keySet())
+            for (String t1 : e1.terms.keySet()) {
                 for (String t2 : e2.terms.keySet()) {
                     String resTerm = generateTerm(t1, t2);
                     res.terms.put(
@@ -117,6 +120,7 @@ public class Solution {
                             e1.terms.get(t1) * e2.terms.get(t2)
                                     + res.terms.getOrDefault(resTerm, 0));
                 }
+            }
         }
         expressions.push(res);
     }
