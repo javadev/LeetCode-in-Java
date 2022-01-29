@@ -33,7 +33,6 @@ public class Solution {
             foundStr = crackStr.toString();
             return;
         }
-
         int root = 10 * prev % ((int) Math.pow(10, n));
         for (int i = 0; i < k; i++) {
             int current = root + i;
