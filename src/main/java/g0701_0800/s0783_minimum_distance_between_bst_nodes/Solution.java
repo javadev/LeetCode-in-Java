@@ -28,12 +28,10 @@ public class Solution {
             return min;
         }
         minDiffInBST(root.left);
-        if (prev == -1) {
-            prev = root.val;
-        } else {
+        if (prev != -1) {
             min = Math.min(min, Math.abs(root.val - prev));
-            prev = root.val;
         }
+        prev = root.val;
         minDiffInBST(root.right);
         return min;
     }
