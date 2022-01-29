@@ -9,7 +9,7 @@ public class Solution {
         int n = 0;
         long[] endStartPairs = new long[intervals.length];
         for (int[] interval : intervals) {
-            endStartPairs[n] = (long) (-interval[0]) & 0xFFFFFFFFL;
+            endStartPairs[n] = -interval[0] & 0xFFFFFFFFL;
             endStartPairs[n++] |= (long) (interval[1]) << 32;
         }
         Arrays.sort(endStartPairs);
