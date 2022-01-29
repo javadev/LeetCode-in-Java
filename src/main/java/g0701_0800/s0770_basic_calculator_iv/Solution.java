@@ -89,7 +89,9 @@ public class Solution {
                 output.add("(");
             }
             int closing = 0;
-            for (; token.charAt(token.length() - 1 - closing) == ')'; closing++) {}
+            while (token.charAt(token.length() - 1 - closing) == ')') {
+                closing++;
+            }
             output.add(token.substring(opening, token.length() - closing));
             while (closing-- > 0) {
                 output.add(")");
