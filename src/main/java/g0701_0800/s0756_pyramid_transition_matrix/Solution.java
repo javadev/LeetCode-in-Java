@@ -15,7 +15,7 @@ public class Solution {
         }
         char save = c[i];
         char p = 'A';
-        for (int v = map[c[i] - 'A'][c[i + 1] - 'A']; v != 0; v >>= 1, p++){
+        for (int v = map[c[i] - 'A'][c[i + 1] - 'A']; v != 0; v >>= 1, p++) {
             if ((v & 1) != 0) {
                 c[i] = p;
                 if (dfs(c, i + 1, l, map)) {
