@@ -2,8 +2,7 @@
 
 Medium
 
-Given a C++ program, remove comments from it. The program source is an array of strings `source` where `source[i]` is the <code>i<sup>th</sup></code> line of the source code. This represents the result of splitting the original source code string by the newline character `'  
-'`.
+Given a C++ program, remove comments from it. The program source is an array of strings `source` where `source[i]` is the <code>i<sup>th</sup></code> line of the source code. This represents the result of splitting the original source code string by the newline character `'\n'`.
 
 In C++, there are two types of comments, line comments, and block comments.
 
@@ -59,9 +58,7 @@ After removing the comments from the source code, return _the source code in the
 
 **Output:** ["ab"]
 
-**Explanation:** The original source string is "a/*comment  
-line  
-more_comment*/b", where we have bolded the newline characters. After deletion, the implicit newline characters are deleted, leaving the string "ab", which when delimited by newline characters becomes ["ab"].
+**Explanation:** The original source string is "a/*comment\nline\nmore_comment*/b", where we have bolded the newline characters. After deletion, the implicit newline characters are deleted, leaving the string "ab", which when delimited by newline characters becomes ["ab"].
 
 **Constraints:**
 
