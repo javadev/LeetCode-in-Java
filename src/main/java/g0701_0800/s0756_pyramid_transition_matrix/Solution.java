@@ -6,22 +6,23 @@ import java.util.List;
 
 public class Solution {
 
-    private boolean dfs(char[] c, int i, int L, int[][] map) {
-        if (L == 1) {
+    private boolean dfs(char[] c, int i, int l, int[][] map) {
+        if (l == 1) {
             return true;
         }
-        if (i == L - 1) {
-            return dfs(c, 0, L - 1, map);
+        if (i == l - 1) {
+            return dfs(c, 0, l - 1, map);
         }
         char save = c[i];
         char p = 'A';
-        for (int v = map[c[i] - 'A'][c[i + 1] - 'A']; v != 0; v >>= 1, p++)
+        for (int v = map[c[i] - 'A'][c[i + 1] - 'A']; v != 0; v >>= 1, p++){
             if ((v & 1) != 0) {
                 c[i] = p;
-                if (dfs(c, i + 1, L, map)) {
+                if (dfs(c, i + 1, l, map)) {
                     return true;
                 }
             }
+        }
         c[i] = save;
         return false;
     }
