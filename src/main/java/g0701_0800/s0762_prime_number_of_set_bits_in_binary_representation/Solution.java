@@ -10,7 +10,8 @@ public class Solution {
         notPrime[1] = true;
         sieve(notPrime);
         for (int i = left; i <= right; i++) {
-            int num = i, setBits = 0;
+            int num = i;
+            int setBits = 0;
             while (num > 0) {
                 num = num & (num - 1);
                 setBits++;
