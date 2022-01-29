@@ -13,8 +13,10 @@ public class Solution {
             endStartPairs[n++] |= (long) (interval[1]) << 32;
         }
         Arrays.sort(endStartPairs);
-        int min = -2, max = -1;
-        int curStart, curEnd;
+        int min = -2;
+        int max = -1;
+        int curStart;
+        int curEnd;
         int res = 0;
         for (long endStartPair : endStartPairs) {
             curStart = -(int) endStartPair;
