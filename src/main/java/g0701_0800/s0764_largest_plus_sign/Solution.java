@@ -16,15 +16,19 @@ public class Solution {
         // For Left and Up only
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                left[i][j] = mat[i][j] ? 0 : 1 + (j == 0 ? 0 : left[i][j - 1]);
-                up[i][j] = mat[i][j] ? 0 : 1 + (i == 0 ? 0 : up[i - 1][j]);
+                int i1 = j == 0 ? 0 : left[i][j - 1];
+                left[i][j] = mat[i][j] ? 0 : 1 + i1;
+                int i2 = i == 0 ? 0 : up[i - 1][j];
+                up[i][j] = mat[i][j] ? 0 : 1 + i2;
             }
         }
         // For Right and Down and simoultaneously get answer
         for (int i = n - 1; i >= 0; i--) {
             for (int j = n - 1; j >= 0; j--) {
-                right[i][j] = mat[i][j] ? 0 : 1 + (j == n - 1 ? 0 : right[i][j + 1]);
-                down[i][j] = mat[i][j] ? 0 : 1 + (i == n - 1 ? 0 : down[i + 1][j]);
+                int i1 = j == n - 1 ? 0 : right[i][j + 1];
+                right[i][j] = mat[i][j] ? 0 : 1 + i1;
+                int i2 = i == n - 1 ? 0 : down[i + 1][j];
+                down[i][j] = mat[i][j] ? 0 : 1 + i2;
                 int x = Math.min(Math.min(left[i][j], up[i][j]), Math.min(right[i][j], down[i][j]));
                 ans = Math.max(ans, x);
             }
