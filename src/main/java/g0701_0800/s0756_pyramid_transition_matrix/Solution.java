@@ -5,7 +5,6 @@ package g0701_0800.s0756_pyramid_transition_matrix;
 import java.util.List;
 
 public class Solution {
-
     private boolean dfs(char[] c, int i, int l, int[][] map) {
         if (l == 1) {
             return true;
