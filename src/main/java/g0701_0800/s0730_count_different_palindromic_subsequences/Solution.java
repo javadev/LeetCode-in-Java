@@ -16,9 +16,7 @@ public class Solution {
             dp[i][i] = 1;
             int l2 = -1;
             for (int j = i - 1; j >= 0; j--) {
-                if (s.charAt(j) != c) {
-                    dp[j][i] = deal(dp[j][i - 1] + deta, big);
-                } else {
+                if (s.charAt(j) == c) {
                     if (l2 < 0) {
                         l2 = j;
                         deta = dp[j + 1][i - 1] + 1;
@@ -26,8 +24,8 @@ public class Solution {
                         deta = dp[j + 1][i - 1] - dp[j + 1][l2 - 1];
                     }
                     deta = deal(deta, big);
-                    dp[j][i] = deal(dp[j][i - 1] + deta, big);
                 }
+                dp[j][i] = deal(dp[j][i - 1] + deta, big);
             }
         }
         return deal(dp[0][len - 1], big);
