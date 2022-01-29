@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
+@SuppressWarnings("java:S1104")
 public class Solution {
     private static class Node {
         public String board;
