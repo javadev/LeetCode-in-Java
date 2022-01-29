@@ -13,18 +13,13 @@ public class Solution {
         for (String end : deadEnds) {
             visited.add(Integer.parseInt(end));
         }
-
         if (visited.contains(0)) {
             return -1;
         }
-
         Queue<int[]> queue = new LinkedList<>();
-
         queue.add(new int[] {0, 0});
         visited.add(0);
-
         int numTarget = Integer.parseInt(target);
-
         while (!queue.isEmpty()) {
             int[] node = queue.poll();
             int number = node[0];
@@ -32,9 +27,7 @@ public class Solution {
             if (number == numTarget) {
                 return dist;
             }
-
             int[] neighbors = getNeighbors(number);
-
             for (int neighbor : neighbors) {
                 if (visited.contains(neighbor)) {
                     continue;
