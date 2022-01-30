@@ -6,9 +6,9 @@ public class RLEIterator {
     private int index;
     private int[] array;
 
-    public RLEIterator(int[] A) {
+    public RLEIterator(int[] encoding) {
         index = 0;
-        array = A;
+        array = encoding;
     }
 
     public int next(int n) {
