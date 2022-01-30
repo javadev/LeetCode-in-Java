@@ -2,9 +2,10 @@ package g0801_0900.s0900_rle_iterator;
 
 // #Medium #Array #Design #Counting #Iterator
 
+@SuppressWarnings("java:S135")
 public class RLEIterator {
     private int index;
-    private int[] array;
+    private final int[] array;
 
     public RLEIterator(int[] encoding) {
         index = 0;
