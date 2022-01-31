@@ -6,7 +6,8 @@ public class Solution {
     public int[] numberOfLines(int[] widths, String s) {
         int count = 0;
         int line = 0;
-        for (int i = 0; i < s.length(); i++) {
+        int i = 0;
+        while (i < s.length()) {
             count += widths[s.charAt(i) - 'a'];
             if (count == 100) {
                 line++;
@@ -17,6 +18,7 @@ public class Solution {
                 i--;
                 count = 0;
             }
+            i++;
         }
         if (count > 0 && count < 100) {
             line++;
