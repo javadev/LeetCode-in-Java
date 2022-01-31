@@ -3,17 +3,17 @@ package g0801_0900.s0809_expressive_words;
 // #Medium #Array #String #Two_Pointers
 
 public class Solution {
-    public int expressiveWords(String S, String[] words) {
+    public int expressiveWords(String s, String[] words) {
         int ans = 0;
         for (String w : words) {
-            if (check(S, w)) {
+            if (check(s, w)) {
                 ans++;
             }
         }
         return ans;
     }
 
-    private boolean check(String S, String w) {
+    private boolean check(String s, String w) {
         int i = 0;
         int j = 0;
         /* Logic is to check whether character at same index of S and w are same
@@ -23,17 +23,14 @@ public class Solution {
            3. If  len1 >= 3 and len2 < len1, means we can make the char in w stretchy to match len1
            4. else, return false, because it's not possible to stretch the char in w
         */
-        while (i < S.length() && j < w.length()) {
-            char ch1 = S.charAt(i);
+        while (i < s.length() && j < w.length()) {
+            char ch1 = s.charAt(i);
             char ch2 = w.charAt(j);
 
-            int len1 = getLen(S, i);
+            int len1 = getLen(s, i);
             int len2 = getLen(w, j);
             if (ch1 == ch2) {
-                if (len1 == len2) {
-                    i = i + len1;
-                    j = j + len2;
-                } else if (len1 >= 3 && len2 < len1) {
+                if (len1 == len2 || (len1 >= 3 && len2 < len1)) {
                     i = i + len1;
                     j = j + len2;
                 } else {
@@ -43,7 +40,7 @@ public class Solution {
                 return false;
             }
         }
-        return i == S.length() && j == w.length();
+        return i == s.length() && j == w.length();
     }
 
     private int getLen(String value, int i) {
