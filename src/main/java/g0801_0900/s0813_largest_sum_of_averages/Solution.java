@@ -21,6 +21,7 @@ public class Solution {
                 maxAvg = Math.max(maxAvg, sum / (i - idx + 1));
             }
         }
-        return memo[k][idx] = maxAvg;
+        memo[k][idx] = maxAvg;
+        return maxAvg;
     }
 }
