@@ -18,7 +18,9 @@ public class Solution {
                     head = head.next;
                 }
                 result++;
-            } else head = head.next;
+            } else {
+                head = head.next;
+            }
         }
         return result;
     }
