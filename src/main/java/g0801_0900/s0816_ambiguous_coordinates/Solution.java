@@ -5,14 +5,13 @@ package g0801_0900.s0816_ambiguous_coordinates;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S107")
 public class Solution {
     public List<String> ambiguousCoordinates(String s) {
         char[] sc = s.toCharArray();
         List<String> result = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
-
         for (int commaPos = 2; commaPos < sc.length - 1; commaPos++) {
-
             if (isValidNum(sc, 1, commaPos - 1)) {
                 if (isValidNum(sc, commaPos, sc.length - 2)) {
                     buildNums(result, sb, sc, commaPos - 1, 0, commaPos, sc.length - 2, 0);
@@ -23,7 +22,6 @@ public class Solution {
                     }
                 }
             }
-
             for (int dp1Idx = 2; dp1Idx < commaPos; dp1Idx++) {
                 if (isValidDPNum(sc, 1, commaPos - 1, dp1Idx)) {
                     if (isValidNum(sc, commaPos, sc.length - 2)) {

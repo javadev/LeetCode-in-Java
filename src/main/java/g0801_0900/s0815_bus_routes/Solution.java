@@ -10,21 +10,19 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Set;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public int numBusesToDestination(int[][] routes, int source, int target) {
         if (source == target) {
             return 0;
         }
-
         Set<Integer> targetRoutes = new HashSet<>();
         Queue<Integer> queue = new ArrayDeque<>();
         boolean[] taken = new boolean[routes.length];
         List<Integer>[] graph = buildGraph(routes, source, target, queue, targetRoutes, taken);
-
-        if (targetRoutes.size() == 0) {
+        if (targetRoutes.isEmpty()) {
             return -1;
         }
-
         int bus = 1;
         while (!queue.isEmpty()) {
             int size = queue.size();
@@ -33,7 +31,6 @@ public class Solution {
                 if (targetRoutes.contains(route)) {
                     return bus;
                 }
-
                 for (int nextRoute : graph[route]) {
                     if (!taken[nextRoute]) {
                         queue.offer(nextRoute);
@@ -41,10 +38,8 @@ public class Solution {
                     }
                 }
             }
-
             bus++;
         }
-
         return -1;
     }
 
@@ -57,23 +52,19 @@ public class Solution {
             boolean[] taken) {
         int len = routes.length;
         ArrayList[] graph = new ArrayList[len];
-
         for (int i = 0; i < len; i++) {
             Arrays.sort(routes[i]);
             graph[i] = new ArrayList<Integer>();
-
             int id = Arrays.binarySearch(routes[i], source);
             if (id >= 0) {
                 queue.offer(i);
                 taken[i] = true;
             }
-
             id = Arrays.binarySearch(routes[i], target);
             if (id >= 0) {
                 targetRoutes.add(i);
             }
         }
-
         for (int i = 0; i < len; i++) {
             for (int j = i + 1; j < len; j++) {
                 if (commonStop(routes[i], routes[j])) {
@@ -82,7 +73,6 @@ public class Solution {
                 }
             }
         }
-
         return graph;
     }
 
@@ -98,7 +88,6 @@ public class Solution {
                 idB++;
             }
         }
-
         return false;
     }
 }

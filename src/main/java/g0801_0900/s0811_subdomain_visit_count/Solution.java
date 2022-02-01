@@ -5,13 +5,14 @@ package g0801_0900.s0811_subdomain_visit_count;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Solution {
     public List<String> subdomainVisits(String[] d) {
-        HashMap<String, Integer> fmap = new HashMap<>();
+        Map<String, Integer> fmap = new HashMap<>();
         for (String s : d) {
             int rep = 0;
-            int i = 0;
+            int i;
             for (i = 0; i < s.length(); i++) {
                 char c = s.charAt(i);
                 if (c >= '0' && c <= '9') {
@@ -24,24 +25,26 @@ public class Solution {
             seperate(rep, str, fmap);
         }
         List<String> res = new ArrayList<>();
-        for (String key : fmap.keySet()) {
+        for (Map.Entry<String, Integer> entry : fmap.entrySet()) {
             String comp = "";
-            comp += fmap.get(key);
+            comp += entry.getValue();
             comp += " ";
-            comp += key;
+            comp += entry.getKey();
             res.add(comp);
         }
         return res;
     }
 
-    private void seperate(int rep, String s, HashMap<String, Integer> fmap) {
-        for (int i = s.length() - 1; i >= 0; i--) {
-            String toHash = "";
+    private void seperate(int rep, String s, Map<String, Integer> fmap) {
+        int i = s.length() - 1;
+        while (i >= 0) {
+            String toHash;
             while (i >= 0 && s.charAt(i) != '.') {
                 i--;
             }
             toHash = s.substring(i + 1);
             fmap.put(toHash, fmap.getOrDefault(toHash, 0) + rep);
+            i--;
         }
     }
 }
