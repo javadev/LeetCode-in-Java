@@ -21,7 +21,7 @@ public class Solution {
                 }
             }
             String str = s.substring(i + 1);
-            Seperate(rep, str, fmap);
+            seperate(rep, str, fmap);
         }
         List<String> res = new ArrayList<>();
         for (String key : fmap.keySet()) {
@@ -34,14 +34,14 @@ public class Solution {
         return res;
     }
 
-    private void Seperate(int rep, String s, HashMap<String, Integer> fmap) {
+    private void seperate(int rep, String s, HashMap<String, Integer> fmap) {
         for (int i = s.length() - 1; i >= 0; i--) {
-            String to_Hash = "";
+            String toHash = "";
             while (i >= 0 && s.charAt(i) != '.') {
                 i--;
             }
-            to_Hash = s.substring(i + 1);
-            fmap.put(to_Hash, fmap.getOrDefault(to_Hash, 0) + rep);
+            toHash = s.substring(i + 1);
+            fmap.put(toHash, fmap.getOrDefault(toHash, 0) + rep);
         }
     }
 }
