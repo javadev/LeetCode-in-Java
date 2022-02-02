@@ -21,7 +21,9 @@ public class Solution {
             }
         }
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == min) list.add(i);
+            if (s.charAt(i) == min) {
+                list.add(i);
+            }
         }
         String ans = s;
         for (int i = 0; i < list.size(); i++) {
