@@ -9,7 +9,7 @@ import java.util.Map;
 public class Solution {
     private Map<Integer, Long> dp = new HashMap<>();
     private Map<Integer, Integer> nums = new HashMap<>();
-    private final int mod = (int) 1e9 + 7;
+    private static final int mod = (int) 1e9 + 7;
 
     public int numFactoredBinaryTrees(int[] arr) {
         Arrays.sort(arr);

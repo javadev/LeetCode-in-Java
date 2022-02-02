@@ -18,6 +18,7 @@ class SolutionTest {
         assertThat(
                 new Solution().toGoatLatin("The quick brown fox jumped over the lazy dog"),
                 equalTo(
-                        "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"));
+                        "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa "
+                                + "overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"));
     }
 }
