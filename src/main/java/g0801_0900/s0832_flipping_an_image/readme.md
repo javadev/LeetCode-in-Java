@@ -1,81 +1,44 @@
-﻿831\. Masking Personal Information
+﻿832\. Flipping an Image
 
-Medium
+Easy
 
-You are given a personal information string `s`, representing either an **email address** or a **phone number**. Return _the **masked** personal information using the below rules_.
+Given an `n x n` binary matrix `image`, flip the image **horizontally**, then invert it, and return _the resulting image_.
 
-**Email address:**
+To flip an image horizontally means that each row of the image is reversed.
 
-An email address is:
+*   For example, flipping `[1,1,0]` horizontally results in `[0,1,1]`.
 
-*   A **name** consisting of uppercase and lowercase English letters, followed by
-*   The `'@'` symbol, followed by
-*   The **domain** consisting of uppercase and lowercase English letters with a dot `'.'` somewhere in the middle (not the first or last character).
+To invert an image means that each `0` is replaced by `1`, and each `1` is replaced by `0`.
 
-To mask an email:
-
-*   The uppercase letters in the **name** and **domain** must be converted to lowercase letters.
-*   The middle letters of the **name** (i.e., all but the first and last letters) must be replaced by 5 asterisks `"*****"`.
-
-**Phone number:**
-
-A phone number is formatted as follows:
-
-*   The phone number contains 10-13 digits.
-*   The last 10 digits make up the **local number**.
-*   The remaining 0-3 digits, in the beginning, make up the **country code**.
-*   **Separation characters** from the set `{'+', '-', '(', ')', ' '}` separate the above digits in some way.
-
-To mask a phone number:
-
-*   Remove all **separation characters**.
-*   The masked phone number should have the form:
-    *   `"***-***-XXXX"` if the country code has 0 digits.
-    *   `"+*-***-***-XXXX"` if the country code has 1 digit.
-    *   `"+**-***-***-XXXX"` if the country code has 2 digits.
-    *   `"+***-***-***-XXXX"` if the country code has 3 digits.
-*   `"XXXX"` is the last 4 digits of the **local number**.
+*   For example, inverting `[0,1,1]` results in `[1,0,0]`.
 
 **Example 1:**
 
-**Input:** s = "LeetCode@LeetCode.com"
+**Input:** image = [[1,1,0],[1,0,1],[0,0,0]]
 
-**Output:** "l\*\*\*\*\*e@leetcode.com"
+**Output:** [[1,0,0],[0,1,0],[1,1,1]]
 
-**Explanation:** s is an email address. 
+**Explanation:**
 
-The name and domain are converted to lowercase, and the middle of the name is replaced by 5 asterisks.
+First reverse each row: [[0,1,1],[1,0,1],[0,0,0]].
+
+Then, invert the image: [[1,0,0],[0,1,0],[1,1,1]] 
 
 **Example 2:**
 
-**Input:** s = "AB@qq.com"
+**Input:** image = [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]
 
-**Output:** "a\*\*\*\*\*b@qq.com"
+**Output:** [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
 
-**Explanation:** s is an email address. 
+**Explanation:**
 
-The name and domain are converted to lowercase, and the middle of the name is replaced by 5 asterisks. 
+First reverse each row: [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]].
 
-Note that even though "ab" is 2 characters, it still must have 5 asterisks in the middle.
-
-**Example 3:**
-
-**Input:** s = "1(234)567-890"
-
-**Output:** "\*\*\*-\*\*\*-7890"
-
-**Explanation:** s is a phone number. 
-
-There are 10 digits, so the local number is 10 digits and the country code is 0 digits. 
-
-Thus, the resulting masked number is "\*\*\*-\*\*\*-7890".
+Then invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]] 
 
 **Constraints:**
 
-*   `s` is either a **valid** email or a phone number.
-*   If `s` is an email:
-    *   `8 <= s.length <= 40`
-    *   `s` consists of uppercase and lowercase English letters and exactly one `'@'` symbol and `'.'` symbol.
-*   If `s` is a phone number:
-    *   `10 <= s.length <= 20`
-    *   `s` consists of digits, spaces, and the symbols `'('`, `')'`, `'-'`, and `'+'`.
+*   `n == image.length`
+*   `n == image[i].length`
+*   `1 <= n <= 20`
+*   `images[i][j]` is either `0` or `1`.
