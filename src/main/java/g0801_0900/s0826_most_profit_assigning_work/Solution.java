@@ -4,20 +4,20 @@ package g0801_0900.s0826_most_profit_assigning_work;
 
 public class Solution {
     public int maxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {
-        int N = 100000;
-        int[] max_profit = new int[N];
-		
-        for (int i=0; i<difficulty.length; i++) {
-            max_profit[difficulty[i]] = Math.max(max_profit[difficulty[i]], profit[i]);
+        int n = 100000;
+        int[] maxProfit = new int[n];
+
+        for (int i = 0; i < difficulty.length; i++) {
+            maxProfit[difficulty[i]] = Math.max(maxProfit[difficulty[i]], profit[i]);
         }
 
-        for (int i=1; i<N; i++) {
-            max_profit[i] = Math.max(max_profit[i], max_profit[i-1]);
+        for (int i = 1; i < n; i++) {
+            maxProfit[i] = Math.max(maxProfit[i], maxProfit[i - 1]);
         }
-        
-        int sum=0;
-        for (int efficiency:worker) {
-            sum += max_profit[efficiency];
+
+        int sum = 0;
+        for (int efficiency : worker) {
+            sum += maxProfit[efficiency];
         }
         return sum;
     }
