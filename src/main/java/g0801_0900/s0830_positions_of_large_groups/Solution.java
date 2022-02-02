@@ -12,7 +12,9 @@ public class Solution {
         int i = 0;
         while (i < s.length()) {
             int j = i;
-            while (j < s.length() && s.charAt(j) == s.charAt(i)) j++;
+            while (j < s.length() && s.charAt(j) == s.charAt(i)) {
+                j++;
+            }
             if ((j - 1) - i + 1 >= 3) {
                 map.add(Arrays.asList(i, j - 1));
             }
