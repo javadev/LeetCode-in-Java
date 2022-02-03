@@ -21,6 +21,7 @@ import java.util.List;
  *     }
  * }
  */
+@SuppressWarnings("unchecked")
 class Solution {
     public List<TreeNode> allPossibleFBT(int n) {
         if (n % 2 == 0) {

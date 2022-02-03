@@ -6,15 +6,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
-
     private int n;
     private int[] count;
     private int[] answer;
     private List<Integer>[] graph;
 
     private void postorder(int node, int parent) {
-
         for (int child : graph[node]) {
             if (child != parent) {
                 postorder(child, node);
@@ -35,26 +34,20 @@ public class Solution {
     }
 
     public int[] sumOfDistancesInTree(int n, int[][] edges) {
-
         this.n = n;
         count = new int[n];
         answer = new int[n];
         graph = new List[n];
-
         Arrays.fill(count, 1);
-
         for (int i = 0; i < n; i++) {
             graph[i] = new ArrayList<>();
         }
-
         for (int[] edge : edges) {
             graph[edge[0]].add(edge[1]);
             graph[edge[1]].add(edge[0]);
         }
-
         postorder(0, -1);
         preorder(0, -1);
-
         return answer;
     }
 }
