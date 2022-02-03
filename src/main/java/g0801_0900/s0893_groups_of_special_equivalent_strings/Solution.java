@@ -18,7 +18,8 @@ public class Solution {
 
     private String getHashBySwap(char[] chars) {
         for (int i = 0; i < chars.length; i++) {
-            for (int j = i + 2; j < chars.length; ) {
+            int j = i + 2;
+            while (j < chars.length) {
                 if (chars[i] > chars[j]) {
                     char temp = chars[j];
                     chars[j] = chars[i];
