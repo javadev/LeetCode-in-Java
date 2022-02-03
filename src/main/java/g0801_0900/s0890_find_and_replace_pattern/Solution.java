@@ -4,16 +4,16 @@ package g0801_0900.s0890_find_and_replace_pattern;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public List<String> findAndReplacePattern(String[] words, String pattern) {
         List<String> finalans = new ArrayList<>();
         if (pattern.length() == 1) {
-            for (int i = 0; i < words.length; i++) {
-                finalans.add(words[i]);
-            }
+            Collections.addAll(finalans, words);
             return finalans;
         }
         for (int i = 0; i < words.length; i++) {
@@ -28,7 +28,6 @@ public class Solution {
                         if (j == words[i].length() - 1) {
                             finalans.add(words[i]);
                         }
-                        continue;
                     } else {
                         break;
                     }
