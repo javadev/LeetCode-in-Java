@@ -5,10 +5,10 @@ package g0801_0900.s0893_groups_of_special_equivalent_strings;
 import java.util.HashSet;
 
 public class Solution {
-    public int numSpecialEquivGroups(String[] A) {
+    public int numSpecialEquivGroups(String[] words) {
         HashSet<String> set = new HashSet<>();
         int result = 0;
-        for (String str : A) {
+        for (String str : words) {
             if (set.add(getHashBySwap(str.toCharArray()))) {
                 result++;
             }

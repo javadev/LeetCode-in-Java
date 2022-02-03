@@ -17,7 +17,8 @@ public class Solution {
     }
 
     private int hiddenSides(int i, int j, int[][] grid) {
-        int hidden = 0, tower = grid[i][j];
+        int hidden = 0;
+        int tower = grid[i][j];
         if (j + 1 < grid[i].length && grid[i][j + 1] > 0) {
             hidden += Math.min(tower, grid[i][j + 1]);
         }
