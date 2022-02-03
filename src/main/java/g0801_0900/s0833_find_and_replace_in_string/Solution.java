@@ -12,8 +12,8 @@ public class Solution {
         for (int i = 0; i < indices.length; ++i) {
             stringIndexToKIndex.put(indices[i], i);
         }
-
-        for (int indexIntoS = 0; indexIntoS < s.length(); ++indexIntoS) {
+        int indexIntoS = 0;
+        while (indexIntoS < s.length()) {
             if (stringIndexToKIndex.containsKey(indexIntoS)) {
                 String substringInSources = sources[stringIndexToKIndex.get(indexIntoS)];
                 if (indexIntoS + substringInSources.length() <= s.length()) {
@@ -31,8 +31,8 @@ public class Solution {
             } else {
                 sb.append(s.charAt(indexIntoS));
             }
+            indexIntoS++;
         }
-
         return sb.toString();
     }
 }
