@@ -5,6 +5,7 @@ package g0801_0900.s0886_possible_bipartition;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public boolean possibleBipartition(int n, int[][] dislikes) {
         // build graph
@@ -15,11 +16,9 @@ public class Solution {
         boolean[] marked = new boolean[n];
         boolean[] colors = new boolean[n];
         for (int v = 0; v < n; v++) {
-            if (!marked[v]) {
-                if (!checkBipartiteDFS(g, marked, colors, v)) {
-                    // No need to run on other connected components if one component has failed.
-                    return false;
-                }
+            if (!marked[v] && !checkBipartiteDFS(g, marked, colors, v)) {
+                // No need to run on other connected components if one component has failed.
+                return false;
             }
         }
         return true;
@@ -43,11 +42,9 @@ public class Solution {
 
     private static class Graph {
         private ArrayList<Integer>[] adj;
-        private int v;
 
         public Graph(int v) {
-            this.v = v;
-            adj = (ArrayList<Integer>[]) new ArrayList[v];
+            adj = new ArrayList[v];
             for (int i = 0; i < v; i++) {
                 adj[i] = new ArrayList<>();
             }
