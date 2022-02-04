@@ -10,10 +10,8 @@ public class Solution {
         for (int k = 1; k < ch.length - 1; k++) {
             ch[k] = dominoes.charAt(k - 1);
         }
-
         int i = 0;
         int j = 1;
-
         while (j < ch.length) {
             while (ch[j] == '.') {
                 j++;
@@ -46,12 +44,10 @@ public class Solution {
                 j++;
             }
         }
-
-        StringBuilder sb = new StringBuilder("");
+        StringBuilder sb = new StringBuilder();
         for (int k = 1; k < ch.length - 1; k++) {
             sb.append(ch[k]);
         }
-
         return sb.toString();
     }
 }
