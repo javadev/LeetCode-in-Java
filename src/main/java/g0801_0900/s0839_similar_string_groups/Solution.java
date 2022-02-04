@@ -22,7 +22,6 @@ public class Solution {
         Queue<String> qu = new LinkedList<>();
         qu.add(strs[i]);
         visited[i] = true;
-
         while (!qu.isEmpty()) {
             String s = qu.poll();
             for (int j = 0; j < strs.length; j++) {
@@ -55,7 +54,6 @@ public class Solution {
                 return false;
             }
         }
-
         return true;
     }
 }
