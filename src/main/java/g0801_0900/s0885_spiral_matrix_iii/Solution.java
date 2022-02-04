@@ -2,6 +2,7 @@ package g0801_0900.s0885_spiral_matrix_iii;
 
 // #Medium #Array #Matrix #Simulation
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int[][] spiralMatrixIII(int rows, int cols, int y, int x) {
         int j;
