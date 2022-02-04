@@ -6,9 +6,7 @@ public class Solution {
     public boolean isMonotonic(int[] nums) {
         int i = 0;
         for (; i < nums.length - 1; i++) {
-            if (nums[i] <= nums[i + 1]) {
-                continue;
-            } else {
+            if (nums[i] > nums[i + 1]) {
                 break;
             }
         }
@@ -17,9 +15,7 @@ public class Solution {
         }
         i = 0;
         for (; i < nums.length - 1; i++) {
-            if (nums[i] >= nums[i + 1]) {
-                continue;
-            } else {
+            if (nums[i] < nums[i + 1]) {
                 break;
             }
         }
