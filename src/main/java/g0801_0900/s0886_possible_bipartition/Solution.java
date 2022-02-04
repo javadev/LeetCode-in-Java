@@ -30,9 +30,10 @@ public class Solution {
         for (int w : g.adj(v)) {
             if (!marked[w]) {
                 colors[w] = !colors[v];
-                if (!checkBipartiteDFS(g, marked, colors, w))
+                if (!checkBipartiteDFS(g, marked, colors, w)) {
                     // this is to break for other neighbours
                     return false;
+                }
             } else if (colors[v] == colors[w]) {
                 return false;
             }
