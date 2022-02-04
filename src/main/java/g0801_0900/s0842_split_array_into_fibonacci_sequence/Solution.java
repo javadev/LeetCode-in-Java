@@ -5,6 +5,7 @@ package g0801_0900.s0842_split_array_into_fibonacci_sequence;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S5413")
 public class Solution {
     public List<Integer> splitIntoFibonacci(String num) {
         List<Integer> res = new ArrayList<>();
