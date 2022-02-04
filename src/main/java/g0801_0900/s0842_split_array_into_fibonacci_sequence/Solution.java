@@ -16,7 +16,6 @@ public class Solution {
         if (idx == s.length() && res.size() >= 3) {
             return true;
         }
-
         for (int i = idx; i < s.length(); i++) {
             if (s.charAt(idx) == '0' && i > idx) {
                 return false;
