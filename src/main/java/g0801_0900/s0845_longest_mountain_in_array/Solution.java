@@ -5,7 +5,8 @@ package g0801_0900.s0845_longest_mountain_in_array;
 public class Solution {
     public int longestMountain(int[] arr) {
         int s = 0;
-        for (int i = 1; i < arr.length - 1; i++) {
+        int i = 1;
+        while (i < arr.length - 1) {
             if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
                 int j = i;
                 int tem = 1;
@@ -21,6 +22,7 @@ public class Solution {
                 s = Math.max(s, tem);
                 i = j;
             }
+            i++;
         }
         return s;
     }
