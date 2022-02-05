@@ -20,11 +20,9 @@ public class Solution {
                 j--;
             }
         }
-
         if (i == j) {
             return boats + 1;
         }
-
         return boats;
     }
 }
