@@ -36,7 +36,7 @@ public class Solution {
     public void getReachableNodes(
             Map<Integer, Map<Integer, boolean[]>> graph,
             Set<Integer> traceNodes,
-            LinkedHashSet<Integer> router,
+            Set<Integer> router,
             Integer fromNode,
             int maxMoves) {
         traceNodes.add(fromNode);
