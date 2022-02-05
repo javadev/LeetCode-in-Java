@@ -2,6 +2,7 @@ package g0801_0900.s0880_decoded_string_at_index;
 
 // #Medium #String #Stack
 
+@SuppressWarnings("java:S3518")
 public class Solution {
     public String decodeAtIndex(String s, int k) {
         long length = 0;
