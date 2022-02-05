@@ -21,7 +21,6 @@ public class Solution {
                     res.append(currChar);
                 }
             }
-
         }
         return res.toString();
     }
