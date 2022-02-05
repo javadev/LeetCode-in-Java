@@ -17,9 +17,9 @@ public class Solution {
             map.put(word, map.getOrDefault(word, 0) + 1);
         }
         List<String> result = new ArrayList<>();
-        for (String key : map.keySet()) {
-            if (map.get(key) == 1) {
-                result.add(key);
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            if (entry.getValue() == 1) {
+                result.add(entry.getKey());
             }
         }
         String[] strs = new String[result.size()];
