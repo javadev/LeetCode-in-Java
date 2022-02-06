@@ -23,13 +23,10 @@ public class Solution {
         } else if (b <= 0) {
             return 0;
         }
-
-        double prob = 0;
-
+        double prob;
         if (mem[a][b] != null) {
             return mem[a][b];
         }
-
         prob = find(a - 4, b, mem);
         prob += find(a - 3, b - 1, mem);
         prob += find(a - 2, b - 2, mem);
@@ -46,9 +43,7 @@ public class Solution {
         } else if (b <= 0) {
             return 0;
         }
-
-        double prob = 0;
-
+        double prob;
         prob = find(a - 100, b);
         prob += find(a - 75, b - 25);
         prob += find(a - 50, b - 50);
