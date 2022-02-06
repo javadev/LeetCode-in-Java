@@ -5,6 +5,7 @@ package g0801_0900.s0872_leaf_similar_trees;
 import com_github_leetcode.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Solution {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
@@ -17,7 +18,7 @@ public class Solution {
             return false;
         }
         for (int i = 0; i < list1.size(); i++) {
-            if (list1.get(i) != list2.get(i)) {
+            if (!Objects.equals(list1.get(i), list2.get(i))) {
                 return false;
             }
         }
