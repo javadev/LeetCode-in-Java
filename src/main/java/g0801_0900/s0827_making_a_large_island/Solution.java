@@ -57,7 +57,7 @@ public class Solution {
             }
         }
         int m = 0;
-        int t = 0;
+        int t;
         HashMap<Integer, Integer> sz = new HashMap<>();
         for (int i = 0; i < rl; i++) {
             for (int j = 0; j < cl; j++) {
