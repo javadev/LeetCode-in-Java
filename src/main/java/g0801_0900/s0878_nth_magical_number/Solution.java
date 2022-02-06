@@ -2,6 +2,7 @@ package g0801_0900.s0878_nth_magical_number;
 
 // #Hard #Math #Binary_Search
 
+@SuppressWarnings("java:S3518")
 public class Solution {
     private static final int MOD = 1_000_000_007;
 
