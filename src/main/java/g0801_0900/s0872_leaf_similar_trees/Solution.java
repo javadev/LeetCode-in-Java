@@ -8,8 +8,8 @@ import java.util.List;
 
 public class Solution {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
-        List list1 = new ArrayList<>();
-        List list2 = new ArrayList<>();
+        List<Integer> list1 = new ArrayList<>();
+        List<Integer> list2 = new ArrayList<>();
         preOrder(root1, list1);
         preOrder(root2, list2);
         // compare the lists
