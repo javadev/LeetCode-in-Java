@@ -6,7 +6,10 @@ public class Solution {
     private static final int MOD = 1_000_000_007;
 
     public int nthMagicalNumber(int n, int a, int b) {
-        long c = lcm(a, b), l = 2, r = n * c, ans = r;
+        long c = lcm(a, b);
+        long l = 2;
+        long r = n * c;
+        long ans = r;
         while (l <= r) {
             long mid = l + (r - l) / 2;
             long cnt = mid / a + mid / b - mid / c;
