@@ -27,7 +27,8 @@ public class Solution {
             mTwo.put(c, mTwo.containsKey(c) ? mTwo.get(c) + 1 : 1);
         }
         for (Map.Entry<Character, Integer> entry : mTwo.entrySet()) {
-            if (!m.containsKey(entry.getKey()) || !Objects.equals(entry.getValue(), m.get(entry.getKey()))) {
+            if (!m.containsKey(entry.getKey())
+                    || !Objects.equals(entry.getValue(), m.get(entry.getKey()))) {
                 return false;
             }
         }
