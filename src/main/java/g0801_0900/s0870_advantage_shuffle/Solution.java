@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.PriorityQueue;
 
+@SuppressWarnings("java:S5413")
 public class Solution {
     public int[] advantageCount(int[] nums1, int[] nums2) {
         PriorityQueue<Integer> pque = new PriorityQueue<>();
