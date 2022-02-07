@@ -10,7 +10,8 @@ class Solution {
     public int robotSim(int[] commands, int[][] obstacles) {
         // 0=right, 1=up, 2=left, 3=down
         int direction = 1;
-        int x = 0, y = 0;
+        int x = 0;
+        int y = 0;
         int maxDis = 0;
         Map<Integer, TreeSet<Integer>> xMap = new HashMap<>(obstacles.length);
         Map<Integer, TreeSet<Integer>> yMap = new HashMap<>(obstacles.length);
