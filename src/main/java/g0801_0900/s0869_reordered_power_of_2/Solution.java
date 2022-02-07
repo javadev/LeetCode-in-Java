@@ -4,6 +4,7 @@ package g0801_0900.s0869_reordered_power_of_2;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class Solution {
     public boolean reorderedPowerOf2(int n) {
@@ -26,7 +27,7 @@ public class Solution {
             mTwo.put(c, mTwo.containsKey(c) ? mTwo.get(c) + 1 : 1);
         }
         for (char c : mTwo.keySet()) {
-            if (!m.containsKey(c) || mTwo.get(c) != m.get(c)) {
+            if (!m.containsKey(c) || !Objects.equals(mTwo.get(c), m.get(c))) {
                 return false;
             }
         }
