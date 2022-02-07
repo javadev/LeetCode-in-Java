@@ -13,9 +13,9 @@ public class Solution {
         }
 
         long res = 0;
-        final int MOD = (int) (1e9 + 7);
+        final int mod = (int) (1e9 + 7);
         for (int[] m : memo) {
-            res = (res + (long) (m[2] - m[0]) * (long) (m[3] - m[1])) % MOD;
+            res = (res + (long) (m[2] - m[0]) * (long) (m[3] - m[1])) % mod;
         }
 
         return (int) res;
