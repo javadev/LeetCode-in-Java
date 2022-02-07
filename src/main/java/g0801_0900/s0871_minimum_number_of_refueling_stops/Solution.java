@@ -20,7 +20,7 @@ public class Solution {
             while (start < end && currentFuel >= stations[start][0]) {
                 pq.add(stations[start++]);
             }
-            if (pq.size() == 0) {
+            if (pq.isEmpty()) {
                 return -1;
             }
             int[] current = pq.poll();
