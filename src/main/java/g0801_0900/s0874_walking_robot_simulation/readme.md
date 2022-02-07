@@ -25,7 +25,17 @@ Return _the **maximum Euclidean distance** that the robot ever gets from the ori
 
 **Output:** 25
 
-**Explanation:** The robot starts at (0, 0): 1. Move north 4 units to (0, 4). 2. Turn right. 3. Move east 3 units to (3, 4). The furthest point the robot ever gets from the origin is (3, 4), which squared is 3<sup>2</sup> + 4<sup>2</sup> = 25 units away.
+**Explanation:**
+
+The robot starts at (0, 0):
+
+1. Move north 4 units to (0, 4).
+
+2. Turn right.
+
+3. Move east 3 units to (3, 4).
+
+The furthest point the robot ever gets from the origin is (3, 4), which squared is 3<sup>2</sup> + 4<sup>2</sup> = 25 units away.
 
 **Example 2:**
 
