@@ -2,6 +2,7 @@ package g0901_1000.s0999_available_captures_for_rook;
 
 // #Easy #Array #Matrix #Simulation
 
+@SuppressWarnings("java:S135")
 public class Solution {
     private int[] directions = new int[] {0, 1, 0, -1, 0};
 
