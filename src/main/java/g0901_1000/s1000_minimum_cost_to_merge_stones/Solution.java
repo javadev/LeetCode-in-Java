@@ -16,8 +16,12 @@ public class Solution {
     }
 
     private int merge(int[] stones, int start, int end, int k, int[] s, int[][] mem) {
-        if (start == end) return 0;
-        if (end - start < k - 1) return -1;
+        if (start == end) {
+            return 0;
+        }
+        if (end - start < k - 1) {
+            return -1;
+        }
         if (mem[start][end] != 0) {
             return mem[start][end];
         }
