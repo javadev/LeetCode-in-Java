@@ -2,13 +2,14 @@ package g0801_0900.s0856_score_of_parentheses;
 
 // #Medium #String #Stack
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class Solution {
-    public int scoreOfParentheses(String S) {
-        Stack<Integer> stack = new Stack<>();
-        for (int i = 0; i < S.length(); i++) {
-            if (S.charAt(i) == '(') {
+    public int scoreOfParentheses(String s) {
+        Deque<Integer> stack = new ArrayDeque<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(') {
                 stack.push(-1);
             } else {
                 int curr = 0;
