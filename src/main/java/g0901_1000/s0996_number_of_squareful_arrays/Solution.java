@@ -10,7 +10,9 @@ public class Solution {
 
     public int numSquarefulPerms(int[] nums) {
         int n = nums.length;
-        if (n < 2) return count;
+        if (n < 2) {
+            return count;
+        }
         backtrack(nums, n, 0);
         return count;
     }
@@ -21,10 +23,13 @@ public class Solution {
         }
         Set<Integer> set = new HashSet<>();
         for (int i = start; i < n; i++) {
-            if (set.contains(nums[i])) continue;
+            if (set.contains(nums[i])) {
+                continue;
+            }
             swap(nums, start, i);
-            if (start == 0 || isPerfectSq(nums[start], nums[start - 1]))
+            if (start == 0 || isPerfectSq(nums[start], nums[start - 1])) {
                 backtrack(nums, n, start + 1);
+            }
             swap(nums, start, i);
             set.add(nums[i]);
         }
