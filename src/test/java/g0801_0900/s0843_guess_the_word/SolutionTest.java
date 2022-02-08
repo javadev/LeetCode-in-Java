@@ -14,7 +14,7 @@ class SolutionTest {
                         new String[] {"acckzz", "ccbazz", "eiowzz", "abcczz"},
                         word -> {
                             numCalls[0]++;
-                            int result = -1;
+                            int result;
                             switch (word) {
                                 case "acckzz":
                                     result = 6;
@@ -27,6 +27,9 @@ class SolutionTest {
                                     break;
                                 case "abcczz":
                                     result = 4;
+                                    break;
+                                default:
+                                    result = -1;
                                     break;
                             }
                             return result;
