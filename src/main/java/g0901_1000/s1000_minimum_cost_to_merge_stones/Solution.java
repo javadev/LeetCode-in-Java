@@ -47,10 +47,9 @@ public class Solution {
                 continue;
             }
             int b = backtrack(stones, i + 1, end, k, ck - 1, s, mem);
-            if (b < 0) {
-                continue;
+            if (b >= 0) {
+                min = Math.min(m + b, min);
             }
-            min = Math.min(m + b, min);
         }
         if (min == Integer.MAX_VALUE) {
             return -1;
