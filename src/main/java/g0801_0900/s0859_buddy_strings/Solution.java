@@ -4,10 +4,8 @@ package g0801_0900.s0859_buddy_strings;
 
 public class Solution {
     public boolean buddyStrings(String s, String goal) {
-        int diffCount = 0;
         int first = -1;
         int second = -1;
-
         int[] sCounts = new int[26];
         if (s.equals(goal)) {
             for (int i = 0; i < s.length(); i++) {
@@ -17,12 +15,10 @@ public class Solution {
                 }
             }
         }
-
         for (int i = 0; i < s.length(); i++) {
             char curr = s.charAt(i);
             sCounts[curr - 'a']++;
             if (curr != goal.charAt(i)) {
-                diffCount++;
                 if (first == -1) {
                     first = i;
                 } else {
@@ -35,7 +31,6 @@ public class Solution {
                 }
             }
         }
-
         return false;
     }
 }
