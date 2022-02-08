@@ -13,12 +13,13 @@ public class ExamRoom {
     Node tail = new Node(-1, map);
     int n;
 
-    {
+    public ExamRoom() {
         head.next = tail;
         tail.pre = head;
     }
 
     public ExamRoom(int n) {
+        this();
         this.n = n;
     }
 
@@ -74,15 +75,9 @@ class Node {
     }
 
     void delete() {
-        Node left = this.pre, right = this.next;
+        Node left = this.pre;
+        Node right = this.next;
         left.next = right;
         right.pre = left;
-    }
-
-    void print() {
-        for (Node cur = this; cur != null; cur = cur.next) {
-            System.out.print(cur.val + "->");
-        }
-        System.out.println();
     }
 }
