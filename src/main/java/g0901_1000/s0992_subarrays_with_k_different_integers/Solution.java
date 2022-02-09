@@ -7,7 +7,10 @@ public class Solution {
         int res = 0;
         int prefix = 0;
         int[] cnt = new int[nums.length + 1];
-        for (int i = 0, j = 0, uniqueCount = 0; i < nums.length; i++) {
+        int i = 0;
+        int j = 0;
+        int uniqueCount = 0;
+        while (i < nums.length) {
             if (cnt[nums[i]]++ == 0) {
                 uniqueCount++;
             }
@@ -23,6 +26,7 @@ public class Solution {
             if (uniqueCount == k) {
                 res += prefix + 1;
             }
+            i++;
         }
         return res;
     }
