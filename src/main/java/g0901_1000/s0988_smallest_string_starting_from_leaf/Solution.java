@@ -12,7 +12,7 @@ public class Solution {
         return res;
     }
 
-    public void dfs(TreeNode root, StringBuilder currStr) {
+    private void dfs(TreeNode root, StringBuilder currStr) {
         if (root == null) {
             return;
         }
