@@ -8,7 +8,6 @@ import java.util.Deque;
 
 public class Solution {
     public int shortestSubarray(int[] nums, int k) {
-        int n = nums.length;
         Deque<long[]> dq = new ArrayDeque<>();
         dq.offer(new long[] {-1, 0});
         int i = 0;
