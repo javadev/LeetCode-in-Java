@@ -2,17 +2,15 @@ package g0901_1000.s0901_online_stock_span;
 
 // #Medium #Stack #Design #Monotonic_Stack #Data_Stream
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
 public class StockSpanner {
     private final Map<Integer, Integer> map;
-    private final Stack<Integer> stocks;
+    private final Deque<Integer> stocks;
     private int index;
 
     public StockSpanner() {
-        stocks = new Stack<>();
+        stocks = new LinkedList<>();
         index = -1;
         map = new HashMap<>();
         stocks.push(-1);

@@ -15,7 +15,7 @@ public class Solution {
             boolean flag = false;
             for (String digit : digits) {
                 if (digit.charAt(0) < num.charAt(i)) {
-                    ans += (int) Math.pow(d, l - i - 1);
+                    ans += (int) Math.pow(d, (l - i - 1) * 1.0);
                 } else if (num.charAt(i) == digit.charAt(0)) {
                     flag = true;
                     break;
