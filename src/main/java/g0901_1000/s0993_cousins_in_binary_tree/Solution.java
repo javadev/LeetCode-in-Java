@@ -42,10 +42,7 @@ public class Solution {
             return false;
         }
         // Check for siblings at parent
-        if ((root.left.val == x && root.right.val == y)
-                || (root.right.val == x && root.left.val == y)) {
-            return true;
-        }
-        return false;
+        return root.left.val == x && root.right.val == y
+                || root.right.val == x && root.left.val == y;
     }
 }
