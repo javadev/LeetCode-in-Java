@@ -2,7 +2,10 @@ package g0901_1000.s0901_online_stock_span;
 
 // #Medium #Stack #Design #Monotonic_Stack #Data_Stream
 
-import java.util.*;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
 
 public class StockSpanner {
     private final Map<Integer, Integer> map;
@@ -17,7 +20,9 @@ public class StockSpanner {
     }
 
     public int next(int price) {
-        if (index != -1) stocks.push(index);
+        if (index != -1) {
+            stocks.push(index);
+        }
         map.put(++index, price);
         if (stocks.size() == 1) {
             return (index - stocks.peek());
