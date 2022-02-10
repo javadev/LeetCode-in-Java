@@ -12,12 +12,12 @@ public class Solution {
         HashMap<Character, Integer> map = new HashMap<>();
         for (String str : equations) {
             char ch = str.charAt(0);
-            if (map.containsKey(ch) == false) {
+            if (!map.containsKey(ch)) {
                 map.put(ch, counter);
                 counter++;
             }
             ch = str.charAt(3);
-            if (map.containsKey(ch) == false) {
+            if (!map.containsKey(ch)) {
                 map.put(ch, counter);
                 counter++;
             }
@@ -53,6 +53,7 @@ public class Solution {
         if (par[x] == x) {
             return x;
         }
-        return par[x] = find(par[x]);
+        par[x] = find(par[x]);
+        return par[x];
     }
 }
