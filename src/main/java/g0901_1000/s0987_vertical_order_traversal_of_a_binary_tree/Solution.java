@@ -3,11 +3,8 @@ package g0901_1000.s0987_vertical_order_traversal_of_a_binary_tree;
 // #Hard #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
 
 import com_github_leetcode.TreeNode;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.TreeMap;
+
+import java.util.*;
 
 /**
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode left; TreeNode
@@ -29,10 +26,10 @@ public class Solution {
         TreeMap<Integer, Queue<Node>> map = new TreeMap<>();
         helper(root, map, 0, 0);
         List<List<Integer>> ret = new ArrayList<>();
-        for (int c : map.keySet()) {
+        for (Map.Entry<Integer, Queue<Node>> entry : map.entrySet()) {
             List<Integer> list = new ArrayList<>();
             ret.add(list);
-            Queue<Node> q = map.get(c);
+            Queue<Node> q = entry.getValue();
             while (!q.isEmpty()) {
                 list.add(q.poll().val);
             }
@@ -46,7 +43,7 @@ public class Solution {
         }
         map.putIfAbsent(
                 c,
-                new PriorityQueue<Node>((a, b) -> a.row != b.row ? a.row - b.row : a.val - b.val));
+                new PriorityQueue<>((a, b) -> a.row != b.row ? a.row - b.row : a.val - b.val));
         map.get(c).add(new Node(r, cur.val));
         helper(cur.left, map, r + 1, c - 1);
         helper(cur.right, map, r + 1, c + 1);
