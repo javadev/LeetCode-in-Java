@@ -3,7 +3,6 @@ package g0901_1000.s0987_vertical_order_traversal_of_a_binary_tree;
 // #Hard #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
 
 import com_github_leetcode.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -47,8 +46,7 @@ public class Solution {
             return;
         }
         map.putIfAbsent(
-                c,
-                new PriorityQueue<>((a, b) -> a.row != b.row ? a.row - b.row : a.val - b.val));
+                c, new PriorityQueue<>((a, b) -> a.row != b.row ? a.row - b.row : a.val - b.val));
         map.get(c).add(new Node(r, cur.val));
         helper(cur.left, map, r + 1, c - 1);
         helper(cur.right, map, r + 1, c + 1);
