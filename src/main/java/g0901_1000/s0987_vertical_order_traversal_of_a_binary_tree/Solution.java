@@ -4,7 +4,12 @@ package g0901_1000.s0987_vertical_order_traversal_of_a_binary_tree;
 
 import com_github_leetcode.TreeNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.TreeMap;
 
 /**
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode left; TreeNode
