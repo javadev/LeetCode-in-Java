@@ -3,8 +3,8 @@ package g0901_1000.s0980_unique_paths_iii;
 // #Hard #Array #Matrix #Bit_Manipulation #Backtracking
 
 public class Solution {
-    private int[] row = {0, 0, 1, -1};
-    private int col[] = {1, -1, 0, 0};
+    private final int[] row = {0, 0, 1, -1};
+    private final int[] col = {1, -1, 0, 0};
 
     private int isSafe(int[][] grid, int rows, int cols, int i, int j) {
         if (i < 0 || j < 0 || i >= rows || j >= cols || grid[i][j] == -1) {
