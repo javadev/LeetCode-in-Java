@@ -20,12 +20,10 @@ public class Solution {
             int curVal = arr[i];
             int maxS = findMaxS(curVal);
             int minL = findMinL(curVal);
-            if (minL != -1) {
-                if (even[minL]) {
-                    // System.out.println("find minL is true at: "+minL+" start from "+i);
-                    odd[i] = even[minL];
-                    count++;
-                }
+            if (minL != -1 && even[minL]) {
+                // System.out.println("find minL is true at: "+minL+" start from "+i);
+                odd[i] = even[minL];
+                count++;
             }
             if (maxS != -1) {
                 even[i] = odd[maxS];
