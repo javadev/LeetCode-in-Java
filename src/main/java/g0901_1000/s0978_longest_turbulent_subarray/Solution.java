@@ -15,13 +15,14 @@ public class Solution {
             return arr[0] == arr[1] ? 1 : 2;
         }
         for (l = 0, r = 1; r < n - 1; r++) {
-            int dif_l = arr[r] - arr[r - 1], dif_r = arr[r] - arr[r + 1];
-            if (dif_l == 0 && dif_r == 0) {
+            int difL = arr[r] - arr[r - 1];
+            int difR = arr[r] - arr[r + 1];
+            if (difL == 0 && difR == 0) {
                 l = r + 1;
-            } else if (dif_l == 0) {
+            } else if (difL == 0) {
                 ans = Math.max(ans, r - l);
                 l = r;
-            } else if (!((dif_l < 0 && dif_r < 0) || (dif_l > 0 && dif_r > 0))) {
+            } else if (!((difL < 0 && difR < 0) || (difL > 0 && difR > 0))) {
                 ans = Math.max(ans, r - l + 1);
                 l = r;
             }

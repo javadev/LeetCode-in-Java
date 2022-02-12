@@ -5,7 +5,7 @@ package g0901_1000.s0975_odd_even_jump;
 import java.util.Arrays;
 
 public class Solution {
-    int[] valToPos;
+    private int[] valToPos;
 
     public int oddEvenJumps(int[] arr) {
         int size = arr.length;
