@@ -10,7 +10,6 @@ public class Solution {
         if (deck.length < 2) {
             return false;
         }
-
         Map<Integer, Integer> mapReps = new HashMap<>();
         for (int card : deck) {
             if (!mapReps.containsKey(card)) {
@@ -19,15 +18,12 @@ public class Solution {
                 mapReps.put(card, mapReps.get(card) + 1);
             }
         }
-
         int num = 0;
         int[] arrReps = new int[mapReps.size()];
         for (Map.Entry<Integer, Integer> e : mapReps.entrySet()) {
             arrReps[num++] = e.getValue();
         }
-
         num = arrGCD(arrReps, arrReps.length);
-
         return num > 1;
     }
 
@@ -40,7 +36,6 @@ public class Solution {
         for (int i = 1; i < n; i++) {
             result = gcd(arr[i], result);
         }
-
         return result;
     }
 }
