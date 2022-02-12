@@ -4,7 +4,8 @@ package g0901_1000.s0906_super_palindromes;
 
 public class Solution {
     public int superpalindromesInRange(String left, String right) {
-        long l = Long.parseLong(left), r = Long.parseLong(right);
+        long l = Long.parseLong(left);
+        long r = Long.parseLong(right);
         int cnt = 0;
         long cur = 1;
         while (true) {
@@ -12,9 +13,15 @@ public class Solution {
             long p2 = getPalindromeExcLastDigit(cur);
             long sq1 = p1 * p1;
             long sq2 = p2 * p2;
-            if (sq2 > r) break;
-            if (sq1 >= l && sq1 <= r && isPalindrome(sq1)) cnt++;
-            if (sq2 >= l && isPalindrome(sq2)) cnt++;
+            if (sq2 > r) {
+                break;
+            }
+            if (sq1 >= l && sq1 <= r && isPalindrome(sq1)) {
+                cnt++;
+            }
+            if (sq2 >= l && isPalindrome(sq2)) {
+                cnt++;
+            }
             cur++;
         }
         return cnt;

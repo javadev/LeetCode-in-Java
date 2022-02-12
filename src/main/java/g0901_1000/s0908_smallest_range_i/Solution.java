@@ -4,7 +4,8 @@ package g0901_1000.s0908_smallest_range_i;
 
 public class Solution {
     public int smallestRangeI(int[] nums, int k) {
-        int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
         for (int num : nums) {
             min = Math.min(min, num);
             max = Math.max(max, num);
