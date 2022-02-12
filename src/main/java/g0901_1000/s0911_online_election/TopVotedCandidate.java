@@ -42,7 +42,6 @@ public class TopVotedCandidate {
                 }
             }
         }
-
         return winnersAtTimeT[lo];
     }
 }
