@@ -4,7 +4,8 @@ package g0901_1000.s0905_sort_array_by_parity;
 
 public class Solution {
     public int[] sortArrayByParity(int[] a) {
-        for (int i = 0, j = a.length - 1; i < j; i++) {
+        int j = a.length - 1;
+        for (int i = 0; i < j; i++) {
             if (a[i] % 2 != 0) {
                 while (j > i && a[j] % 2 != 0) {
                     j--;

@@ -3,7 +3,7 @@ package g0901_1000.s0907_sum_of_subarray_minimums;
 // #Medium #Array #Dynamic_Programming #Stack #Monotonic_Stack
 
 public class Solution {
-    private final int mod = 1_000_000_007;
+    private static final int MOD = 1_000_000_007;
 
     private int calculateRight(int i, int start, int[] right, int[] arr, int len) {
         if (start >= len) {
@@ -13,7 +13,7 @@ public class Solution {
             return 0;
         }
         return (1 + right[start] + calculateRight(i, start + right[start] + 1, right, arr, len))
-                % mod;
+                % MOD;
     }
 
     private int calculateLeft(int i, int start, int[] left, int[] arr, int len) {
@@ -23,7 +23,7 @@ public class Solution {
         if (arr[start] <= arr[i]) {
             return 0;
         }
-        return (1 + left[start] + calculateLeft(i, start - left[start] - 1, left, arr, len)) % mod;
+        return (1 + left[start] + calculateLeft(i, start - left[start] - 1, left, arr, len)) % MOD;
     }
 
     public int sumSubarrayMins(int[] arr) {
@@ -44,7 +44,7 @@ public class Solution {
         for (int i = 0; i < len; ++i) {
             long modl = 1_000_000_007;
             answer += (int) (((((1 + left[i]) * (long) (1 + right[i])) % modl) * arr[i]) % modl);
-            answer %= mod;
+            answer %= MOD;
         }
         return answer;
     }
