@@ -1,9 +1,9 @@
 package g0901_1000.s0909_snakes_and_ladders;
 
+// #Medium #Array #Breadth_First_Search #Matrix
+
 import java.util.LinkedList;
 import java.util.Queue;
-
-// #Medium #Array #Breadth_First_Search #Matrix
 
 public class Solution {
     private int size;
