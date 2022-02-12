@@ -19,9 +19,9 @@ public class Solution {
             }
         }
         int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = 0; j < nums.length; j++) {
-                int val = nums[i] & nums[j];
+        for (int j : nums) {
+            for (int num : nums) {
+                int val = j & num;
                 if (val == 0) {
                     count += nums.length;
                 } else {
