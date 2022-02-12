@@ -2,58 +2,48 @@ package g0901_1000.s1000_minimum_cost_to_merge_stones;
 
 // #Hard #Array #Dynamic_Programming
 
+import java.util.Arrays;
+
 public class Solution {
+    private int[][] memo;
+    private int[] prefixSum;
+
     public int mergeStones(int[] stones, int k) {
         int n = stones.length;
-        int[][] mem = new int[n][n];
-        int[] s = new int[n];
-        int sum = 0;
-        for (int i = 0; i < n; i++) {
-            sum += stones[i];
-            s[i] = sum;
+        if ((n - 1) % (k - 1) != 0) {
+            return -1;
         }
-        return merge(stones, 0, n - 1, k, s, mem);
+        memo = new int[n][n];
+        for (int[] arr : memo) {
+            Arrays.fill(arr, -1);
+        }
+        prefixSum = new int[n + 1];
+        for (int i = 1; i < n + 1; i++) {
+            prefixSum[i] = prefixSum[i - 1] + stones[i - 1];
+        }
+        return dp(0, n - 1, k);
     }
 
-    private int merge(int[] stones, int start, int end, int k, int[] s, int[][] mem) {
-        if (start == end) {
-            return 0;
+    private int dp(int left, int right, int k) {
+        if (memo[left][right] > 0) {
+            return memo[left][right];
         }
-        if (end - start < k - 1) {
-            return -1;
+        if (right - left + 1 < k) {
+            memo[left][right] = 0;
+            return memo[left][right];
         }
-        if (mem[start][end] != 0) {
-            return mem[start][end];
+        if (right - left + 1 == k) {
+            memo[left][right] = prefixSum[right + 1] - prefixSum[left];
+            return memo[left][right];
         }
-        int result = backtrack(stones, start, end, k, k, s, mem);
-        if (result >= 0) {
-            result += s[end] - (start == 0 ? 0 : s[start - 1]);
+        int val = Integer.MAX_VALUE;
+        for (int i = 0; left + i + 1 <= right; i += k - 1) {
+            val = Math.min(val, dp(left, left + i, k) + dp(left + i + 1, right, k));
         }
-        mem[start][end] = result;
-        return result;
-    }
-
-    private int backtrack(int[] stones, int start, int end, int k, int ck, int[] s, int[][] mem) {
-        if (end - start < ck - 1) {
-            return -1;
+        if ((right - left) % (k - 1) == 0) {
+            val += prefixSum[right + 1] - prefixSum[left];
         }
-        if (ck == 1) {
-            return merge(stones, start, end, k, s, mem);
-        }
-        int min = Integer.MAX_VALUE;
-        for (int i = start; i < end; i++) {
-            int m = merge(stones, start, i, k, s, mem);
-            if (m < 0) {
-                continue;
-            }
-            int b = backtrack(stones, i + 1, end, k, ck - 1, s, mem);
-            if (b >= 0) {
-                min = Math.min(m + b, min);
-            }
-        }
-        if (min == Integer.MAX_VALUE) {
-            return -1;
-        }
-        return min;
+        memo[left][right] = val;
+        return val;
     }
 }
