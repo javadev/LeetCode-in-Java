@@ -35,8 +35,11 @@ public class TopVotedCandidate {
                 if (times[mid] == t) {
                     lo = mid;
                     break;
-                } else if (times[mid] > t) hi = mid;
-                else lo = mid;
+                } else if (times[mid] > t) {
+                    hi = mid;
+                } else {
+                    lo = mid;
+                }
             }
         }
 

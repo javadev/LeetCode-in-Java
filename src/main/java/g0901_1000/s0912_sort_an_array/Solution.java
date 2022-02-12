@@ -20,7 +20,7 @@ public class Solution {
         return mergeSortedArray(leftArray, rightArray);
     }
 
-    private int[] mergeSortedArray(int[] a, int b[]) {
+    private int[] mergeSortedArray(int[] a, int[] b) {
         int[] ans = new int[a.length + b.length];
         int i = 0;
         int j = 0;
