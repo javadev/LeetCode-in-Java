@@ -2,12 +2,9 @@ package g0901_1000.s0982_triples_with_bitwise_and_equal_to_zero;
 
 // #Hard #Array #Hash_Table #Bit_Manipulation
 
-import java.util.HashMap;
-
 public class Solution {
     public int countTriplets(int[] nums) {
         int[] arr = new int[1 << 17];
-        HashMap<Integer, Integer> maskMap = new HashMap<>();
         for (int num : nums) {
             int mask = 0;
             for (int i = 0; i < 16; i++) {
@@ -17,7 +14,6 @@ public class Solution {
             }
             int s = mask;
             while (s > 0) {
-                // maskMap.put(s, maskMap.getOrDefault(s, 0) + 1);
                 arr[s]++;
                 s = (s - 1) & mask;
             }
