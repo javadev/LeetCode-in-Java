@@ -25,7 +25,6 @@ public class Solution {
         int i = 0;
         int j = 0;
         int k = 0;
-
         while (i < a.length && j < b.length) {
             if (a[i] < b[j]) {
                 ans[k++] = a[i++];
@@ -36,11 +35,9 @@ public class Solution {
         while (i < a.length) {
             ans[k++] = a[i++];
         }
-
         while (j < b.length) {
             ans[k++] = b[j++];
         }
-
         return ans;
     }
 }
