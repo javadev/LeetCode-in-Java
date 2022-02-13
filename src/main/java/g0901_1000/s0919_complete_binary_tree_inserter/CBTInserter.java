@@ -52,10 +52,10 @@ public class CBTInserter {
     }
 
     private void deleteFullNode() {
-        while (this.q.size() > 0) {
+        while (!this.q.isEmpty()) {
             TreeNode peek = this.q.peek();
             if (peek.left != null && peek.right != null) {
-                TreeNode pop = this.q.poll();
+                this.q.poll();
             } else {
                 break;
             }
