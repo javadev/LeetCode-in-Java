@@ -18,6 +18,6 @@ class CBTInserterTest {
 
         TreeNode expected = TreeNode.create(Arrays.asList(1, 2, 3, 4));
 
-        assertThat(cBTInserter.get_root().toString(), equalTo(expected.toString()));
+        assertThat(cBTInserter.getRoot().toString(), equalTo(expected.toString()));
     }
 }

@@ -26,8 +26,12 @@ public class CBTInserter {
             while (size-- > 0) {
                 TreeNode poll = hlq.poll();
                 this.q.add(poll);
-                if (Objects.requireNonNull(poll).left != null) hlq.add(poll.left);
-                if (poll.right != null) hlq.add(poll.right);
+                if (Objects.requireNonNull(poll).left != null) {
+                    hlq.add(poll.left);
+                }
+                if (poll.right != null) {
+                    hlq.add(poll.right);
+                }
             }
         }
     }
@@ -58,7 +62,7 @@ public class CBTInserter {
         }
     }
 
-    public TreeNode get_root() {
+    public TreeNode getRoot() {
         return this.head;
     }
 }

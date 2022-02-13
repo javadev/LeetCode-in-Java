@@ -5,9 +5,9 @@ package g0901_1000.s0921_minimum_add_to_make_parentheses_valid;
 import java.util.Stack;
 
 public class Solution {
-    public int minAddToMakeValid(String S) {
+    public int minAddToMakeValid(String s) {
         Stack<Character> stack = new Stack<>();
-        for (char c : S.toCharArray()) {
+        for (char c : s.toCharArray()) {
             if (c == ')') {
                 if (!stack.isEmpty() && stack.peek() == '(') {
                     stack.pop();
