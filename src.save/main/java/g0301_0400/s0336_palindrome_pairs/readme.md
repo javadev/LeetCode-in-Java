@@ -1,4 +1,4 @@
-﻿336\. Palindrome Pairs
+336\. Palindrome Pairs
 
 Hard
 

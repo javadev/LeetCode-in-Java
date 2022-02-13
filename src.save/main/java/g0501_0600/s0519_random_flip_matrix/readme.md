@@ -1,4 +1,4 @@
-﻿519\. Random Flip Matrix
+519\. Random Flip Matrix
 
 Medium
 

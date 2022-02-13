@@ -1,4 +1,4 @@
-﻿328\. Odd Even Linked List
+328\. Odd Even Linked List
 
 Medium
 

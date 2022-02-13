@@ -1,4 +1,4 @@
-﻿332\. Reconstruct Itinerary
+332\. Reconstruct Itinerary
 
 Hard
 

@@ -1,4 +1,4 @@
-﻿495\. Teemo Attacking
+495\. Teemo Attacking
 
 Easy
 

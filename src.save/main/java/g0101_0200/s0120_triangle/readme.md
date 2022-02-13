@@ -1,4 +1,4 @@
-﻿120\. Triangle
+120\. Triangle
 
 Medium
 

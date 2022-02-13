@@ -1,4 +1,4 @@
-﻿658\. Find K Closest Elements
+658\. Find K Closest Elements
 
 Medium
 

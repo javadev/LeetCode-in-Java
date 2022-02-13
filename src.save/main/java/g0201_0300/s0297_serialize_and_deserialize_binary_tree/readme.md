@@ -1,4 +1,4 @@
-﻿297\. Serialize and Deserialize Binary Tree
+297\. Serialize and Deserialize Binary Tree
 
 Hard
 

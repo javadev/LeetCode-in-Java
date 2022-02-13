@@ -1,4 +1,4 @@
-﻿786\. K-th Smallest Prime Fraction
+786\. K-th Smallest Prime Fraction
 
 Hard
 

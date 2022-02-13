@@ -1,4 +1,4 @@
-﻿886\. Possible Bipartition
+886\. Possible Bipartition
 
 Medium
 

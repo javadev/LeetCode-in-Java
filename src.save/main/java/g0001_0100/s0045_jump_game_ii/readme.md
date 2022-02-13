@@ -1,4 +1,4 @@
-﻿45\. Jump Game II
+45\. Jump Game II
 
 Medium
 

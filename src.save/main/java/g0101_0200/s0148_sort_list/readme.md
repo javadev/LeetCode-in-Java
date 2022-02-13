@@ -1,4 +1,4 @@
-﻿148\. Sort List
+148\. Sort List
 
 Medium
 

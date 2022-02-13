@@ -1,4 +1,4 @@
-﻿99\. Recover Binary Search Tree
+99\. Recover Binary Search Tree
 
 Medium
 

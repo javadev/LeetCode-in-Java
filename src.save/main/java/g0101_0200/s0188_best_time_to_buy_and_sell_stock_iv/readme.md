@@ -1,4 +1,4 @@
-﻿188\. Best Time to Buy and Sell Stock IV
+188\. Best Time to Buy and Sell Stock IV
 
 Hard
 

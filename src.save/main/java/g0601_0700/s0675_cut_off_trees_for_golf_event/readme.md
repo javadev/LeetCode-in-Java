@@ -1,4 +1,4 @@
-﻿675\. Cut Off Trees for Golf Event
+675\. Cut Off Trees for Golf Event
 
 Hard
 

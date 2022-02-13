@@ -1,4 +1,4 @@
-﻿503\. Next Greater Element II
+503\. Next Greater Element II
 
 Medium
 

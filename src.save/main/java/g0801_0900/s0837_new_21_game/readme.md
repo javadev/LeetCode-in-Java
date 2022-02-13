@@ -1,4 +1,4 @@
-﻿837\. New 21 Game
+837\. New 21 Game
 
 Medium
 

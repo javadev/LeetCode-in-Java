@@ -1,4 +1,4 @@
-﻿740\. Delete and Earn
+740\. Delete and Earn
 
 Medium
 

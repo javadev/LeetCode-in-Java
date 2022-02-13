@@ -1,4 +1,4 @@
-﻿372\. Super Pow
+372\. Super Pow
 
 Medium
 

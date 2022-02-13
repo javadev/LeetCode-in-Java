@@ -1,4 +1,4 @@
-﻿819\. Most Common Word
+819\. Most Common Word
 
 Easy
 

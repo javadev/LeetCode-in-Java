@@ -1,4 +1,4 @@
-﻿149\. Max Points on a Line
+149\. Max Points on a Line
 
 Hard
 

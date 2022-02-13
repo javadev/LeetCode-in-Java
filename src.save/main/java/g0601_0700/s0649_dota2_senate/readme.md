@@ -1,4 +1,4 @@
-﻿649\. Dota2 Senate
+649\. Dota2 Senate
 
 Medium
 

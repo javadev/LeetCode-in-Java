@@ -1,4 +1,4 @@
-﻿530\. Minimum Absolute Difference in BST
+530\. Minimum Absolute Difference in BST
 
 Easy
 

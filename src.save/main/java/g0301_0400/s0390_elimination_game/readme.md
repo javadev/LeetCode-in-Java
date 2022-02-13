@@ -1,4 +1,4 @@
-﻿390\. Elimination Game
+390\. Elimination Game
 
 Medium
 

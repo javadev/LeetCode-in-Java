@@ -1,4 +1,4 @@
-﻿560\. Subarray Sum Equals K
+560\. Subarray Sum Equals K
 
 Medium
 

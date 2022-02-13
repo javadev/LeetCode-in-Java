@@ -1,4 +1,4 @@
-﻿841\. Keys and Rooms
+841\. Keys and Rooms
 
 Medium
 

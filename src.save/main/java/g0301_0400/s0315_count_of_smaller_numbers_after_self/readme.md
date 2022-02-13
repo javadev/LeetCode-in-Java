@@ -1,4 +1,4 @@
-﻿315\. Count of Smaller Numbers After Self
+315\. Count of Smaller Numbers After Self
 
 Hard
 

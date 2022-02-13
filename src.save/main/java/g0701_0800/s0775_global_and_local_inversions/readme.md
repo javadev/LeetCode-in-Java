@@ -1,4 +1,4 @@
-﻿775\. Global and Local Inversions
+775\. Global and Local Inversions
 
 Medium
 

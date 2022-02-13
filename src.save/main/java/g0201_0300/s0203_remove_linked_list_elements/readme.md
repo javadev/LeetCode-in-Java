@@ -1,4 +1,4 @@
-﻿203\. Remove Linked List Elements
+203\. Remove Linked List Elements
 
 Easy
 

@@ -1,4 +1,4 @@
-﻿596\. Classes More Than 5 Students
+596\. Classes More Than 5 Students
 
 Easy
 

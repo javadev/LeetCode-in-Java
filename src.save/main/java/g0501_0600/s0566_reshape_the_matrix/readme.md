@@ -1,4 +1,4 @@
-﻿566\. Reshape the Matrix
+566\. Reshape the Matrix
 
 Easy
 

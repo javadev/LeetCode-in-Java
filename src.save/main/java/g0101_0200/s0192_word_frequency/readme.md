@@ -1,4 +1,4 @@
-﻿192\. Word Frequency
+192\. Word Frequency
 
 Medium
 

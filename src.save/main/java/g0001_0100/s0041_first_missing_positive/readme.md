@@ -1,4 +1,4 @@
-﻿41\. First Missing Positive
+41\. First Missing Positive
 
 Hard
 

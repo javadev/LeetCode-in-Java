@@ -1,4 +1,4 @@
-﻿817\. Linked List Components
+817\. Linked List Components
 
 Medium
 

@@ -1,4 +1,4 @@
-﻿595\. Big Countries
+595\. Big Countries
 
 Easy
 

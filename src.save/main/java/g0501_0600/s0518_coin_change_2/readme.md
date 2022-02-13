@@ -1,4 +1,4 @@
-﻿518\. Coin Change 2
+518\. Coin Change 2
 
 Medium
 

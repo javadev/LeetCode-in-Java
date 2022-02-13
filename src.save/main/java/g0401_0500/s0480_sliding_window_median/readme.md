@@ -1,4 +1,4 @@
-﻿480\. Sliding Window Median
+480\. Sliding Window Median
 
 Hard
 

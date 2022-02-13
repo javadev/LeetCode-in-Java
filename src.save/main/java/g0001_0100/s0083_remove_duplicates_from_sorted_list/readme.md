@@ -1,4 +1,4 @@
-﻿83\. Remove Duplicates from Sorted List
+83\. Remove Duplicates from Sorted List
 
 Easy
 

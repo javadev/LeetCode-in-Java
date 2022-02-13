@@ -1,4 +1,4 @@
-﻿150\. Evaluate Reverse Polish Notation
+150\. Evaluate Reverse Polish Notation
 
 Medium
 

@@ -1,4 +1,4 @@
-﻿832\. Flipping an Image
+832\. Flipping an Image
 
 Easy
 

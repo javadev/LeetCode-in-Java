@@ -1,4 +1,4 @@
-﻿432\. All O\`one Data Structure
+432\. All O\`one Data Structure
 
 Hard
 

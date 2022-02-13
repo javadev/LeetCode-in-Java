@@ -1,4 +1,4 @@
-﻿805\. Split Array With Same Average
+805\. Split Array With Same Average
 
 Hard
 

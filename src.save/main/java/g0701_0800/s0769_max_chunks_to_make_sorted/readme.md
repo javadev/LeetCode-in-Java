@@ -1,4 +1,4 @@
-﻿769\. Max Chunks To Make Sorted
+769\. Max Chunks To Make Sorted
 
 Medium
 

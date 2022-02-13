@@ -1,4 +1,4 @@
-﻿327\. Count of Range Sum
+327\. Count of Range Sum
 
 Hard
 

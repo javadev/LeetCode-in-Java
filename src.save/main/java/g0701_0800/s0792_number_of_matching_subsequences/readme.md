@@ -1,4 +1,4 @@
-﻿792\. Number of Matching Subsequences
+792\. Number of Matching Subsequences
 
 Medium
 

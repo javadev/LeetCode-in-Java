@@ -1,4 +1,4 @@
-﻿92\. Reverse Linked List II
+92\. Reverse Linked List II
 
 Medium
 

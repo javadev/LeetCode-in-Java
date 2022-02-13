@@ -1,4 +1,4 @@
-﻿831\. Masking Personal Information
+831\. Masking Personal Information
 
 Medium
 

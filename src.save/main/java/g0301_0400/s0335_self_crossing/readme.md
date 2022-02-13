@@ -1,4 +1,4 @@
-﻿335\. Self Crossing
+335\. Self Crossing
 
 Hard
 

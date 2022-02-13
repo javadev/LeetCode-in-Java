@@ -1,4 +1,4 @@
-﻿539\. Minimum Time Difference
+539\. Minimum Time Difference
 
 Medium
 

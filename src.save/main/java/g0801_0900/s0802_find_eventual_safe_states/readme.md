@@ -1,4 +1,4 @@
-﻿802\. Find Eventual Safe States
+802\. Find Eventual Safe States
 
 Medium
 

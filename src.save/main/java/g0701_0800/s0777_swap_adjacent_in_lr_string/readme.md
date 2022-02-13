@@ -1,4 +1,4 @@
-﻿777\. Swap Adjacent in LR String
+777\. Swap Adjacent in LR String
 
 Medium
 

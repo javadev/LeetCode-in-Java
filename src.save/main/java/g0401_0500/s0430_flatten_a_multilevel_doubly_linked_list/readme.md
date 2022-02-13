@@ -1,4 +1,4 @@
-﻿430\. Flatten a Multilevel Doubly Linked List
+430\. Flatten a Multilevel Doubly Linked List
 
 Medium
 

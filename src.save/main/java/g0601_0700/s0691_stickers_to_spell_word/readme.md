@@ -1,4 +1,4 @@
-﻿691\. Stickers to Spell Word
+691\. Stickers to Spell Word
 
 Hard
 

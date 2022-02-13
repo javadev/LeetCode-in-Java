@@ -1,4 +1,4 @@
-﻿648\. Replace Words
+648\. Replace Words
 
 Medium
 

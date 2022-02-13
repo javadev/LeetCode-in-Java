@@ -1,4 +1,4 @@
-﻿994\. Rotting Oranges
+994\. Rotting Oranges
 
 Medium
 

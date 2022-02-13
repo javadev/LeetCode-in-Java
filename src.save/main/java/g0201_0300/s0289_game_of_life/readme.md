@@ -1,4 +1,4 @@
-﻿289\. Game of Life
+289\. Game of Life
 
 Medium
 

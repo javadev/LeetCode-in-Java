@@ -1,4 +1,4 @@
-﻿304\. Range Sum Query 2D - Immutable
+304\. Range Sum Query 2D - Immutable
 
 Medium
 

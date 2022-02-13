@@ -1,4 +1,4 @@
-﻿741\. Cherry Pickup
+741\. Cherry Pickup
 
 Hard
 

@@ -1,4 +1,4 @@
-﻿621\. Task Scheduler
+621\. Task Scheduler
 
 Medium
 

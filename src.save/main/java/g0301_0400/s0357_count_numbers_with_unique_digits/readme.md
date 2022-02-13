@@ -1,4 +1,4 @@
-﻿357\. Count Numbers with Unique Digits
+357\. Count Numbers with Unique Digits
 
 Medium
 

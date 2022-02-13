@@ -1,4 +1,4 @@
-﻿543\. Diameter of Binary Tree
+543\. Diameter of Binary Tree
 
 Easy
 

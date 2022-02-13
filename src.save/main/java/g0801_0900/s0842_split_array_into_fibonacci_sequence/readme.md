@@ -1,4 +1,4 @@
-﻿842\. Split Array into Fibonacci Sequence
+842\. Split Array into Fibonacci Sequence
 
 Medium
 

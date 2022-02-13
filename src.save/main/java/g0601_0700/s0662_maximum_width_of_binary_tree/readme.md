@@ -1,4 +1,4 @@
-﻿662\. Maximum Width of Binary Tree
+662\. Maximum Width of Binary Tree
 
 Medium
 

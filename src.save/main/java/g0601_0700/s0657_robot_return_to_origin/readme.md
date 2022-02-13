@@ -1,4 +1,4 @@
-﻿657\. Robot Return to Origin
+657\. Robot Return to Origin
 
 Easy
 

@@ -1,4 +1,4 @@
-﻿205\. Isomorphic Strings
+205\. Isomorphic Strings
 
 Easy
 

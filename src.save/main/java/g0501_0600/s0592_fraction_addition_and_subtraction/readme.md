@@ -1,4 +1,4 @@
-﻿591\. Tag Validator
+591\. Tag Validator
 
 Hard
 

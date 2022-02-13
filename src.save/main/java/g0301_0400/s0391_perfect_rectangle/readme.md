@@ -1,4 +1,4 @@
-﻿391\. Perfect Rectangle
+391\. Perfect Rectangle
 
 Hard
 

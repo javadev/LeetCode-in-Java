@@ -1,4 +1,4 @@
-﻿813\. Largest Sum of Averages
+813\. Largest Sum of Averages
 
 Medium
 

@@ -1,4 +1,4 @@
-﻿405\. Convert a Number to Hexadecimal
+405\. Convert a Number to Hexadecimal
 
 Easy
 

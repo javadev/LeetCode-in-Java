@@ -1,4 +1,4 @@
-﻿626\. Exchange Seats
+626\. Exchange Seats
 
 Medium
 

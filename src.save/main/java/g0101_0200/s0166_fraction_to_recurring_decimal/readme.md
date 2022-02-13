@@ -1,4 +1,4 @@
-﻿166\. Fraction to Recurring Decimal
+166\. Fraction to Recurring Decimal
 
 Medium
 

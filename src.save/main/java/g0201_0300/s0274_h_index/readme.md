@@ -1,4 +1,4 @@
-﻿274\. H-Index
+274\. H-Index
 
 Medium
 

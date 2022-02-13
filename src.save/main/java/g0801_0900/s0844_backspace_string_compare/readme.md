@@ -1,4 +1,4 @@
-﻿844\. Backspace String Compare
+844\. Backspace String Compare
 
 Easy
 

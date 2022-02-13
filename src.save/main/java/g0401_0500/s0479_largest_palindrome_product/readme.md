@@ -1,4 +1,4 @@
-﻿479\. Largest Palindrome Product
+479\. Largest Palindrome Product
 
 Hard
 

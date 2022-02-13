@@ -1,4 +1,4 @@
-﻿338\. Counting Bits
+338\. Counting Bits
 
 Easy
 

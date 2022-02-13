@@ -1,4 +1,4 @@
-﻿25\. Reverse Nodes in k-Group
+25\. Reverse Nodes in k-Group
 
 Hard
 

@@ -1,4 +1,4 @@
-﻿850\. Rectangle Area II
+850\. Rectangle Area II
 
 Hard
 

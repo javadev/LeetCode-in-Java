@@ -1,4 +1,4 @@
-﻿184\. Department Highest Salary
+184\. Department Highest Salary
 
 Medium
 
