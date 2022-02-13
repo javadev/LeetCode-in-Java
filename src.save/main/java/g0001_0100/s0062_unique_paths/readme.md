@@ -1,4 +1,4 @@
-﻿62\. Unique Paths
+62\. Unique Paths
 
 Medium
 

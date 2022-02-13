@@ -1,4 +1,4 @@
-﻿808\. Soup Servings
+808\. Soup Servings
 
 Medium
 

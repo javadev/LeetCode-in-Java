@@ -1,4 +1,4 @@
-﻿606\. Construct String from Binary Tree
+606\. Construct String from Binary Tree
 
 Easy
 

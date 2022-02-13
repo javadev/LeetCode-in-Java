@@ -1,4 +1,4 @@
-﻿341\. Flatten Nested List Iterator
+341\. Flatten Nested List Iterator
 
 Medium
 

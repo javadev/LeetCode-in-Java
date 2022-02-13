@@ -1,4 +1,4 @@
-﻿324\. Wiggle Sort II
+324\. Wiggle Sort II
 
 Medium
 

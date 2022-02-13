@@ -1,4 +1,4 @@
-﻿851\. Loud and Rich
+851\. Loud and Rich
 
 Medium
 

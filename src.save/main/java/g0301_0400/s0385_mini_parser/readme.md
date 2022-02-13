@@ -1,4 +1,4 @@
-﻿385\. Mini Parser
+385\. Mini Parser
 
 Medium
 

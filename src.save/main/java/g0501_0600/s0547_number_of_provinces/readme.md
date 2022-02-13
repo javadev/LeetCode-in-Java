@@ -1,4 +1,4 @@
-﻿547\. Number of Provinces
+547\. Number of Provinces
 
 Medium
 

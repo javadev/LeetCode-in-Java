@@ -1,4 +1,4 @@
-﻿856\. Score of Parentheses
+856\. Score of Parentheses
 
 Medium
 

@@ -1,4 +1,4 @@
-﻿413\. Arithmetic Slices
+413\. Arithmetic Slices
 
 Medium
 

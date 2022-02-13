@@ -1,4 +1,4 @@
-﻿209\. Minimum Size Subarray Sum
+209\. Minimum Size Subarray Sum
 
 Medium
 

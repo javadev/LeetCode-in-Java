@@ -1,4 +1,4 @@
-﻿559\. Maximum Depth of N-ary Tree
+559\. Maximum Depth of N-ary Tree
 
 Easy
 

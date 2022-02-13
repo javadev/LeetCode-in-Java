@@ -1,4 +1,4 @@
-﻿376\. Wiggle Subsequence
+376\. Wiggle Subsequence
 
 Medium
 

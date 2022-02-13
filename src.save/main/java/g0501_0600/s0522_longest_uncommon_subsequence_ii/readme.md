@@ -1,4 +1,4 @@
-﻿522\. Longest Uncommon Subsequence II
+522\. Longest Uncommon Subsequence II
 
 Medium
 

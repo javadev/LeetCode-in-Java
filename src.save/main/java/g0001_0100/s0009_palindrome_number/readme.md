@@ -1,4 +1,4 @@
-﻿9\. Palindrome Number
+9\. Palindrome Number
 
 Easy
 

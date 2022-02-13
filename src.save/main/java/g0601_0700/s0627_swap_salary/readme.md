@@ -1,4 +1,4 @@
-﻿627\. Swap Salary
+627\. Swap Salary
 
 Easy
 

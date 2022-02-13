@@ -1,4 +1,4 @@
-﻿461\. Hamming Distance
+461\. Hamming Distance
 
 Easy
 

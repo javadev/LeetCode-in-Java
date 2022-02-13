@@ -1,4 +1,4 @@
-﻿730\. Count Different Palindromic Subsequences
+730\. Count Different Palindromic Subsequences
 
 Hard
 

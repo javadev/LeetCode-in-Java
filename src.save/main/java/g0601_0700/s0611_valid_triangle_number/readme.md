@@ -1,4 +1,4 @@
-﻿611\. Valid Triangle Number
+611\. Valid Triangle Number
 
 Medium
 

@@ -1,4 +1,4 @@
-﻿365\. Water and Jug Problem
+365\. Water and Jug Problem
 
 Medium
 

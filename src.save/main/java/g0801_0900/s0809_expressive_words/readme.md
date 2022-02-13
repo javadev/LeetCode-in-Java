@@ -1,4 +1,4 @@
-﻿809\. Expressive Words
+809\. Expressive Words
 
 Medium
 

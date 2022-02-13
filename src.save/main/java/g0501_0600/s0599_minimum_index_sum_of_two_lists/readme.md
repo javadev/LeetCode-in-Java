@@ -1,4 +1,4 @@
-﻿599\. Minimum Index Sum of Two Lists
+599\. Minimum Index Sum of Two Lists
 
 Easy
 

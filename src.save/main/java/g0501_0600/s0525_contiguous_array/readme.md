@@ -1,4 +1,4 @@
-﻿525\. Contiguous Array
+525\. Contiguous Array
 
 Medium
 

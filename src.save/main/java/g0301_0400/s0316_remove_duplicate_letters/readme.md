@@ -1,4 +1,4 @@
-﻿316\. Remove Duplicate Letters
+316\. Remove Duplicate Letters
 
 Medium
 

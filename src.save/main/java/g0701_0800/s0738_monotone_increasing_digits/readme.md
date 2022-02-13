@@ -1,4 +1,4 @@
-﻿738\. Monotone Increasing Digits
+738\. Monotone Increasing Digits
 
 Medium
 

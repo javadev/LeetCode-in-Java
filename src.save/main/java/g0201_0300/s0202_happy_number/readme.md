@@ -1,4 +1,4 @@
-﻿202\. Happy Number
+202\. Happy Number
 
 Easy
 

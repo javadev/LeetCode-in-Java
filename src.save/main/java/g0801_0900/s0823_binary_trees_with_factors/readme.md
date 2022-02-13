@@ -1,4 +1,4 @@
-﻿823\. Binary Trees With Factors
+823\. Binary Trees With Factors
 
 Medium
 

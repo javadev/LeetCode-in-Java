@@ -1,4 +1,4 @@
-﻿180\. Consecutive Numbers
+180\. Consecutive Numbers
 
 Medium
 

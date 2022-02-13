@@ -1,4 +1,4 @@
-﻿632\. Smallest Range Covering Elements from K Lists
+632\. Smallest Range Covering Elements from K Lists
 
 Hard
 

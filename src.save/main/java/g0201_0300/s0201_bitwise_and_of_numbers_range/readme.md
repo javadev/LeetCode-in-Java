@@ -1,4 +1,4 @@
-﻿201\. Bitwise AND of Numbers Range
+201\. Bitwise AND of Numbers Range
 
 Medium
 

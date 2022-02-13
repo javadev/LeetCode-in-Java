@@ -1,4 +1,4 @@
-﻿46\. Permutations
+46\. Permutations
 
 Medium
 

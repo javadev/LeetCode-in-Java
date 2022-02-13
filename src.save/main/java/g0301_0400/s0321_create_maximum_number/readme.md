@@ -1,4 +1,4 @@
-﻿321\. Create Maximum Number
+321\. Create Maximum Number
 
 Hard
 

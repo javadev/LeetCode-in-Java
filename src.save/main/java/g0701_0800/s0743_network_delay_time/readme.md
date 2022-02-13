@@ -1,4 +1,4 @@
-﻿743\. Network Delay Time
+743\. Network Delay Time
 
 Medium
 

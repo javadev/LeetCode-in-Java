@@ -1,4 +1,4 @@
-﻿400\. Nth Digit
+400\. Nth Digit
 
 Medium
 

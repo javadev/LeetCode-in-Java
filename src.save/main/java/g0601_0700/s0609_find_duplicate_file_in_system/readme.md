@@ -1,4 +1,4 @@
-﻿609\. Find Duplicate File in System
+609\. Find Duplicate File in System
 
 Medium
 

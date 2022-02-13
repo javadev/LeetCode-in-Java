@@ -1,4 +1,4 @@
-﻿110\. Balanced Binary Tree
+110\. Balanced Binary Tree
 
 Easy
 

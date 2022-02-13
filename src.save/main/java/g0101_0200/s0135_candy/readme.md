@@ -1,4 +1,4 @@
-﻿135\. Candy
+135\. Candy
 
 Hard
 

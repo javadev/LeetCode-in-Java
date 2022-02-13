@@ -1,4 +1,4 @@
-﻿421\. Maximum XOR of Two Numbers in an Array
+421\. Maximum XOR of Two Numbers in an Array
 
 Medium
 

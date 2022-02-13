@@ -1,4 +1,4 @@
-﻿846\. Hand of Straights
+846\. Hand of Straights
 
 Medium
 

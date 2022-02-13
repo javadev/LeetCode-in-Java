@@ -1,4 +1,4 @@
-﻿456\. 132 Pattern
+456\. 132 Pattern
 
 Medium
 

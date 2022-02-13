@@ -1,4 +1,4 @@
-﻿778\. Swim in Rising Water
+778\. Swim in Rising Water
 
 Hard
 

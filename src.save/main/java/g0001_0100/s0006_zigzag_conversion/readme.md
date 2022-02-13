@@ -1,4 +1,4 @@
-﻿6\. Zigzag Conversion
+6\. Zigzag Conversion
 
 Medium
 

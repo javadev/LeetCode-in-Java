@@ -1,4 +1,4 @@
-﻿389\. Find the Difference
+389\. Find the Difference
 
 Easy
 

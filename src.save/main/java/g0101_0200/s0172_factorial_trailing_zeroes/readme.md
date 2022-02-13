@@ -1,4 +1,4 @@
-﻿172\. Factorial Trailing Zeroes
+172\. Factorial Trailing Zeroes
 
 Medium
 

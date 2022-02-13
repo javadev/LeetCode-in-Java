@@ -1,4 +1,4 @@
-﻿82\. Remove Duplicates from Sorted List II
+82\. Remove Duplicates from Sorted List II
 
 Medium
 

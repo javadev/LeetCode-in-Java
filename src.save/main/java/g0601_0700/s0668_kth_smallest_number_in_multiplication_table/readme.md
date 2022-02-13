@@ -1,4 +1,4 @@
-﻿668\. Kth Smallest Number in Multiplication Table
+668\. Kth Smallest Number in Multiplication Table
 
 Hard
 

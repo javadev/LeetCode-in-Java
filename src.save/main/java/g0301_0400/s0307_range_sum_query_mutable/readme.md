@@ -1,4 +1,4 @@
-﻿307\. Range Sum Query - Mutable
+307\. Range Sum Query - Mutable
 
 Medium
 

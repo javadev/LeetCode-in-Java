@@ -1,4 +1,4 @@
-﻿131\. Palindrome Partitioning
+131\. Palindrome Partitioning
 
 Medium
 

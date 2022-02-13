@@ -1,4 +1,4 @@
-﻿101\. Symmetric Tree
+101\. Symmetric Tree
 
 Easy
 

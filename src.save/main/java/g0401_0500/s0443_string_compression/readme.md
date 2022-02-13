@@ -1,4 +1,4 @@
-﻿443\. String Compression
+443\. String Compression
 
 Medium
 

@@ -1,4 +1,4 @@
-﻿847\. Shortest Path Visiting All Nodes
+847\. Shortest Path Visiting All Nodes
 
 Hard
 

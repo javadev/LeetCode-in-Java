@@ -1,4 +1,4 @@
-﻿134\. Gas Station
+134\. Gas Station
 
 Medium
 

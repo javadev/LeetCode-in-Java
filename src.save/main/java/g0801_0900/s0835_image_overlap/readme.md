@@ -1,4 +1,4 @@
-﻿835\. Image Overlap
+835\. Image Overlap
 
 Medium
 

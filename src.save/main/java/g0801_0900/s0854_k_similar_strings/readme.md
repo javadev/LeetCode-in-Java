@@ -1,4 +1,4 @@
-﻿854\. K-Similar Strings
+854\. K-Similar Strings
 
 Hard
 

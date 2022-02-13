@@ -1,4 +1,4 @@
-﻿617\. Merge Two Binary Trees
+617\. Merge Two Binary Trees
 
 Easy
 

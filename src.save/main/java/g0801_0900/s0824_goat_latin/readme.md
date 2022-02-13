@@ -1,4 +1,4 @@
-﻿824\. Goat Latin
+824\. Goat Latin
 
 Easy
 

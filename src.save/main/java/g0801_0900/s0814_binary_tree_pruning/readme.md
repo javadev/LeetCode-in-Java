@@ -1,4 +1,4 @@
-﻿814\. Binary Tree Pruning
+814\. Binary Tree Pruning
 
 Medium
 

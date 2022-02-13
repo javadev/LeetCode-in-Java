@@ -1,4 +1,4 @@
-﻿375\. Guess Number Higher or Lower II
+375\. Guess Number Higher or Lower II
 
 Medium
 

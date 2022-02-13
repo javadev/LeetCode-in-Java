@@ -1,4 +1,4 @@
-﻿12\. Integer to Roman
+12\. Integer to Roman
 
 Medium
 

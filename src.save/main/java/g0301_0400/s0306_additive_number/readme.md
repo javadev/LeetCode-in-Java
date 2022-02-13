@@ -1,4 +1,4 @@
-﻿306\. Additive Number
+306\. Additive Number
 
 Medium
 

@@ -1,4 +1,4 @@
-﻿623\. Add One Row to Tree
+623\. Add One Row to Tree
 
 Medium
 

@@ -1,4 +1,4 @@
-﻿515\. Find Largest Value in Each Tree Row
+515\. Find Largest Value in Each Tree Row
 
 Medium
 

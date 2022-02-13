@@ -1,4 +1,4 @@
-﻿858\. Mirror Reflection
+858\. Mirror Reflection
 
 Medium
 

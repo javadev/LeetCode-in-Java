@@ -1,4 +1,4 @@
-﻿885\. Spiral Matrix III
+885\. Spiral Matrix III
 
 Medium
 

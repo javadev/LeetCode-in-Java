@@ -1,4 +1,4 @@
-﻿190\. Reverse Bits
+190\. Reverse Bits
 
 Easy
 

@@ -1,4 +1,4 @@
-﻿68\. Text Justification
+68\. Text Justification
 
 Hard
 

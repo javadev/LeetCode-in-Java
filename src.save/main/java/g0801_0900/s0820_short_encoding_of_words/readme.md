@@ -1,4 +1,4 @@
-﻿820\. Short Encoding of Words
+820\. Short Encoding of Words
 
 Medium
 

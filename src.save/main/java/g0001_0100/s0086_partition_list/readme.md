@@ -1,4 +1,4 @@
-﻿86\. Partition List
+86\. Partition List
 
 Medium
 

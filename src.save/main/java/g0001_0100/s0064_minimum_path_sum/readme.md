@@ -1,4 +1,4 @@
-﻿64\. Minimum Path Sum
+64\. Minimum Path Sum
 
 Medium
 

@@ -1,4 +1,4 @@
-﻿818\. Race Car
+818\. Race Car
 
 Hard
 

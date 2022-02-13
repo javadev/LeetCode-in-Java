@@ -1,4 +1,4 @@
-﻿319\. Bulb Switcher
+319\. Bulb Switcher
 
 Medium
 

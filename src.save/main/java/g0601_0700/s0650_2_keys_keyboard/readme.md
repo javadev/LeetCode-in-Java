@@ -1,4 +1,4 @@
-﻿650\. 2 Keys Keyboard
+650\. 2 Keys Keyboard
 
 Medium
 

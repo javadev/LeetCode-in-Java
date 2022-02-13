@@ -1,4 +1,4 @@
-﻿575\. Distribute Candies
+575\. Distribute Candies
 
 Easy
 

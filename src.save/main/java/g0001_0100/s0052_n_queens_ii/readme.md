@@ -1,4 +1,4 @@
-﻿52\. N-Queens II
+52\. N-Queens II
 
 Hard
 

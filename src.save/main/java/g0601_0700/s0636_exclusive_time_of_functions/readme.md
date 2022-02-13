@@ -1,4 +1,4 @@
-﻿636\. Exclusive Time of Functions
+636\. Exclusive Time of Functions
 
 Medium
 

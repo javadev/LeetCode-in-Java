@@ -1,4 +1,4 @@
-﻿111\. Minimum Depth of Binary Tree
+111\. Minimum Depth of Binary Tree
 
 Easy
 

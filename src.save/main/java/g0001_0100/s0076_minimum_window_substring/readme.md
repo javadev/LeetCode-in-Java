@@ -1,4 +1,4 @@
-﻿76\. Minimum Window Substring
+76\. Minimum Window Substring
 
 Hard
 

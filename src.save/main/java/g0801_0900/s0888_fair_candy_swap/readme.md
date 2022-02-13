@@ -1,4 +1,4 @@
-﻿888\. Fair Candy Swap
+888\. Fair Candy Swap
 
 Easy
 

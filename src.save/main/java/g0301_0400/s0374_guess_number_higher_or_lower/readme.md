@@ -1,4 +1,4 @@
-﻿374\. Guess Number Higher or Lower
+374\. Guess Number Higher or Lower
 
 Easy
 

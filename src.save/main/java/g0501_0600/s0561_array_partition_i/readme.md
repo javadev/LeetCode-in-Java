@@ -1,4 +1,4 @@
-﻿561\. Array Partition I
+561\. Array Partition I
 
 Easy
 

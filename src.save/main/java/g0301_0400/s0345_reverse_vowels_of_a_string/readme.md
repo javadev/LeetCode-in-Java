@@ -1,4 +1,4 @@
-﻿345\. Reverse Vowels of a String
+345\. Reverse Vowels of a String
 
 Easy
 

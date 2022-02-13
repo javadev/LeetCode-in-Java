@@ -1,4 +1,4 @@
-﻿87\. Scramble String
+87\. Scramble String
 
 Hard
 

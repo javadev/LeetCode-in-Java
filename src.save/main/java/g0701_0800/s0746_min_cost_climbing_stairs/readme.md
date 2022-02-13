@@ -1,4 +1,4 @@
-﻿746\. Min Cost Climbing Stairs
+746\. Min Cost Climbing Stairs
 
 Easy
 
