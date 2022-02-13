@@ -31,6 +31,7 @@ public class Solution {
                             + (usedSong - k) * helper(songNumber + 1, l, usedSong, n, k, dp);
         }
         int mod = (int) 1e9 + 7;
-        return dp[songNumber][usedSong] = ans % mod;
+        dp[songNumber][usedSong] = ans % mod;
+        return ans % mod;
     }
 }

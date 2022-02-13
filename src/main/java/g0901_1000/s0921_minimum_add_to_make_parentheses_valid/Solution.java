@@ -4,6 +4,7 @@ package g0901_1000.s0921_minimum_add_to_make_parentheses_valid;
 
 import java.util.Stack;
 
+@SuppressWarnings("java:S1149")
 public class Solution {
     public int minAddToMakeValid(String s) {
         Stack<Character> stack = new Stack<>();
