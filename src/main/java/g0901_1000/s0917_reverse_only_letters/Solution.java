@@ -3,8 +3,8 @@ package g0901_1000.s0917_reverse_only_letters;
 // #Easy #String #Two_Pointers
 
 public class Solution {
-    public String reverseOnlyLetters(String S) {
-        char[] array = S.toCharArray();
+    public String reverseOnlyLetters(String s) {
+        char[] array = s.toCharArray();
         for (int i = 0, j = array.length - 1; i < j; ) {
             if (Character.isLetter(array[i]) && Character.isLetter(array[j])) {
                 char temp = array[i];

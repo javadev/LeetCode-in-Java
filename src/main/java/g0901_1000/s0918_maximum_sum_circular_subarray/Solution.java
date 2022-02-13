@@ -28,6 +28,8 @@ public class Solution {
 
         if (sumOfArray == minSumSubarray) {
             return maxSumSubarray;
-        } else return Math.max(maxSumSubarray, sumOfArray - minSumSubarray);
+        } else {
+            return Math.max(maxSumSubarray, sumOfArray - minSumSubarray);
+        }
     }
 }
