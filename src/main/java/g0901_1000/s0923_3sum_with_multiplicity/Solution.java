@@ -1,5 +1,7 @@
 package g0901_1000.s0923_3sum_with_multiplicity;
 
+// #Medium #Array #Hash_Table #Sorting #Two_Pointers #Counting
+
 public class Solution {
     private static final int MOD = (int) 1e9 + 7;
     private static final int MAX = 100;
