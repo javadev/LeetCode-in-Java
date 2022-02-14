@@ -15,6 +15,7 @@ public class Solution {
         if (memo[n] != 0) {
             return memo[n];
         }
-        return memo[n] = fib(n - 1) + fib(n - 2);
+        memo[n] = fib(n - 1) + fib(n - 2);
+        return memo[n];
     }
 }
