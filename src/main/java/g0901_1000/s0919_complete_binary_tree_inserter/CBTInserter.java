@@ -14,7 +14,6 @@ public class CBTInserter {
     public CBTInserter(TreeNode root) {
         this.q = new LinkedList<>();
         this.head = root;
-
         addToQueue();
     }
 
@@ -42,12 +41,10 @@ public class CBTInserter {
         TreeNode peek = q.peek();
         if (Objects.requireNonNull(peek).left == null) {
             peek.left = nn;
-
         } else {
             peek.right = nn;
         }
         this.q.add(nn);
-
         return peek.val;
     }
 
