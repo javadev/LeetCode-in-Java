@@ -10,7 +10,6 @@ public class Solution {
         if (typed.length() < name.length()) {
             return false;
         }
-
         while (i < name.length() && j < typed.length()) {
             while (j < typed.length() && typed.charAt(j) != name.charAt(i)) {
                 if (typed.charAt(j) != prev) {
@@ -21,22 +20,18 @@ public class Solution {
                 }
                 j++;
             }
-
             prev = name.charAt(i);
             i++;
             j++;
         }
-
         if (i < name.length()) {
             return false;
         }
-
         for (; j < typed.length(); j++) {
             if (typed.charAt(j) != prev) {
                 return false;
             }
         }
-
         return true;
     }
 }
