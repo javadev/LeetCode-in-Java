@@ -2,7 +2,7 @@ package g0901_1000.s0926_flip_string_to_monotone_increasing;
 
 // #Medium #String #Dynamic_Programming
 
-class Solution {
+public class Solution {
     public int minFlipsMonoIncr(String s) {
         if (s == null || s.length() <= 1) {
             return 0;
