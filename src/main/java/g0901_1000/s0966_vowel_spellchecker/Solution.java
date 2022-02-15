@@ -47,13 +47,9 @@ public class Solution {
         for (String word : wordlist) {
             matched.add(word);
             String s = word.toLowerCase();
-            if (!capitalizations.containsKey(s)) {
-                capitalizations.put(s, word);
-            }
+            capitalizations.putIfAbsent(s, word);
             s = removeVowels(s);
-            if (!vowelErrors.containsKey(s)) {
-                vowelErrors.put(s, word);
-            }
+            vowelErrors.putIfAbsent(s, word);
         }
         for (int i = 0; i < queries.length; i++) {
             answer[i] = solveQuery(queries[i]);
