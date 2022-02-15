@@ -31,7 +31,8 @@ public class Solution {
             }
         } else {
             int last = can % 10;
-            int a = last + k, b = last - k;
+            int a = last + k;
+            int b = last - k;
             if (b >= 0) {
                 dfs(list, can * 10 + b, len + 1, n, k);
             }
