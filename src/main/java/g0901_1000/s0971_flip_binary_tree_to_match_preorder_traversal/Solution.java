@@ -29,7 +29,6 @@ public class Solution {
         }
         if (root.val != voyage[preIndex]) {
             isFlipPossible = false;
-            return;
         } else {
             if (preIndex + 1 < voyage.length
                     && root.left != null
