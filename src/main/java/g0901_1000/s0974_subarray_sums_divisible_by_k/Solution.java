@@ -8,8 +8,8 @@ public class Solution {
         int ans = 0;
         int sum = 0;
         map[0] = 1;
-        for (int i = 0; i < nums.length; i++) {
-            sum += nums[i];
+        for (int num : nums) {
+            sum += num;
             int temp = sum % k;
             if (temp < 0) {
                 temp += k;
