@@ -3,13 +3,13 @@ package g0901_1000.s0931_minimum_falling_path_sum;
 // #Medium #Array #Dynamic_Programming #Matrix
 
 public class Solution {
-    public int minFallingPathSum(int[][] a) {
-        int size = a.length;
+    public int minFallingPathSum(int[][] matrix) {
+        int size = matrix.length;
         int[][] dp = new int[size][size];
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (i == 0) {
-                    dp[i][j] = a[i][j];
+                    dp[i][j] = matrix[i][j];
                 } else {
                     int lastRow = dp[i - 1][j];
                     if (j - 1 >= 0) {
@@ -18,7 +18,7 @@ public class Solution {
                     if (j + 1 < size) {
                         lastRow = Math.min(dp[i - 1][j + 1], lastRow);
                     }
-                    dp[i][j] = lastRow + a[i][j];
+                    dp[i][j] = lastRow + matrix[i][j];
                 }
             }
         }
