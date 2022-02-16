@@ -11,7 +11,8 @@ public class Solution {
 
         for (String s : emails) {
             StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < s.length(); i++) {
+            int i = 0;
+            while (i < s.length()) {
                 char c = s.charAt(i);
                 if (c == '+' || c == '@') {
                     sb.append('@');
@@ -21,6 +22,7 @@ public class Solution {
                 } else if (c != '.') {
                     sb.append(c);
                 }
+                i++;
             }
             set.add(sb.toString());
         }
