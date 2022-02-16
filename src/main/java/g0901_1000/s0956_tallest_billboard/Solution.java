@@ -6,7 +6,6 @@ import java.util.Arrays;
 
 public class Solution {
     public int tallestBillboard(int[] rods) {
-        int n = rods.length;
         int maxDiff = 0;
         for (int rod : rods) {
             maxDiff += rod;
