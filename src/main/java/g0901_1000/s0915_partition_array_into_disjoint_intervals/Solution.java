@@ -11,7 +11,6 @@ public class Solution {
                 partition = i;
             }
         }
-
         return partition + 1;
     }
 }

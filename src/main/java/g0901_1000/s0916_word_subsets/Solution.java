@@ -16,7 +16,6 @@ public class Solution {
                 target[ch1 - 'a'] = Math.max(target[ch1 - 'a'], temp[ch1 - 'a']);
             }
         }
-
         for (String s1 : words1) {
             int[] count = new int[26];
             for (char ch1 : s1.toCharArray()) {
@@ -27,7 +26,6 @@ public class Solution {
                 l1.add(s1);
             }
         }
-
         return l1;
     }
 
@@ -37,7 +35,6 @@ public class Solution {
                 return false;
             }
         }
-
         return true;
     }
 }

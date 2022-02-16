@@ -16,7 +16,6 @@ public class Solution {
         queue.add(1);
         visited[0] = true;
         int step = 0;
-
         while (!queue.isEmpty()) {
             int queueSize = queue.size();
             for (int i = 0; i < queueSize; i++) {
@@ -39,7 +38,6 @@ public class Solution {
                     }
                 }
             }
-
             step++;
         }
 
@@ -54,7 +52,6 @@ public class Solution {
         } else {
             horizontal = this.size - 1 - (index - 1) % this.size;
         }
-
         return new int[] {vertical, horizontal};
     }
 }

@@ -8,7 +8,6 @@ import java.util.Set;
 public class Solution {
     public int numUniqueEmails(String[] emails) {
         Set<String> set = new HashSet<>();
-
         for (String s : emails) {
             StringBuilder sb = new StringBuilder();
             int i = 0;

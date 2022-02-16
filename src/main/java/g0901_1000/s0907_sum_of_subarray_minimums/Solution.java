@@ -39,7 +39,6 @@ public class Solution {
         for (int i = 1; i < len; ++i) {
             left[i] = calculateLeft(i, i - 1, left, arr, len);
         }
-
         int answer = 0;
         for (int i = 0; i < len; ++i) {
             long modl = 1_000_000_007;

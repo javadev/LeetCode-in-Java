@@ -17,15 +17,12 @@ public class Solution {
         if (nums.length == 1) {
             return nums[0];
         }
-
         int sumOfArray = 0;
         for (int i : nums) {
             sumOfArray += i;
         }
-
         int maxSumSubarray = kadane(nums, 1);
         int minSumSubarray = kadane(nums, -1) * -1;
-
         if (sumOfArray == minSumSubarray) {
             return maxSumSubarray;
         } else {
