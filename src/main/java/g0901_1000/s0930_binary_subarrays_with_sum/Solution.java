@@ -15,7 +15,6 @@ public class Solution {
         int left = 0;
         int right = 0;
         int res = 0;
-
         while (right < nums.length) {
             windowSum += nums[right++];
             while (left < right && windowSum > goal) {
@@ -23,7 +22,6 @@ public class Solution {
             }
             res += (right - left);
         }
-
         return res;
     }
 }
