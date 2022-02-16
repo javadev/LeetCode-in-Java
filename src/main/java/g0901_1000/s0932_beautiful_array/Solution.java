@@ -10,7 +10,6 @@ public class Solution {
 
     public int[] beautifulArray(int n) {
         memo = new HashMap<>();
-
         return helper(n);
     }
 
@@ -19,11 +18,9 @@ public class Solution {
             memo.put(1, new int[] {1});
             return new int[] {1};
         }
-
         if (memo.containsKey(n)) {
             return memo.get(n);
         }
-
         int mid = (n + 1) / 2;
         int[] left = helper(mid);
         int[] right = helper(n - mid);
@@ -34,7 +31,6 @@ public class Solution {
         for (int i = mid; i < n; i++) {
             rst[i] = right[i - mid] * 2;
         }
-
         memo.put(n, rst);
         return rst;
     }
