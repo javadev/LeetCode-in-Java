@@ -6,14 +6,30 @@ import java.util.List;
 
 public class CommonUtils {
 
-    public static void printArray(int[] nums) {
+    public static void printArrayInteger(int[] nums) {
         for (int i : nums) {
             System.out.print(i + ", ");
         }
         System.out.println();
     }
 
-    public static void printArray(double[] nums) {
+    public static boolean compareArray(int[] arr1, int[] arr2) {
+        for (int i : arr1) {
+            boolean include = false;
+            for (int j : arr2) {
+                if (i == j) {
+                    include = true;
+                    break;
+                }
+            }
+            if (!include) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void printArrayDouble(double[] nums) {
         for (double i : nums) {
             System.out.print(i + ", ");
         }
