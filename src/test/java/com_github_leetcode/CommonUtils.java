@@ -6,7 +6,7 @@ import java.util.List;
 
 public class CommonUtils {
 
-    public static void printArray(int[] nums) {
+    public static void printArrayInteger(int[] nums) {
         for (int i : nums) {
             System.out.print(i + ", ");
         }
@@ -29,7 +29,7 @@ public class CommonUtils {
         return true;
     }
 
-    public static void printArray(double[] nums) {
+    public static void printArrayDouble(double[] nums) {
         for (double i : nums) {
             System.out.print(i + ", ");
         }

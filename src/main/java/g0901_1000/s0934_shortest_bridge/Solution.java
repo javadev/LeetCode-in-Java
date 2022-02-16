@@ -33,7 +33,7 @@ public class Solution {
 
         int level = -1;
 
-        while (q.size() != 0) {
+        while (!q.isEmpty()) {
             int size = q.size();
             level++;
             while (size-- > 0) {
