@@ -13,6 +13,22 @@ public class CommonUtils {
         System.out.println();
     }
 
+    public static boolean compareArray(int[] arr1, int[] arr2) {
+        for (int i : arr1) {
+            boolean include = false;
+            for (int j : arr2) {
+                if (i == j) {
+                    include = true;
+                    break;
+                }
+            }
+            if (!include) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void printArray(double[] nums) {
         for (double i : nums) {
             System.out.print(i + ", ");
