@@ -18,12 +18,10 @@ public class Solution {
         int index2 = -1;
         int index3 = -1;
         int totalOnes = 0;
-
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 0) {
                 continue;
             }
-
             totalOnes += arr[i];
             if (totalOnes == 1) {
                 index1 = i;
@@ -33,7 +31,6 @@ public class Solution {
                 index3 = i;
             }
         }
-
         while (index3 < arr.length) {
             if (arr[index1] == arr[index3] && arr[index2] == arr[index3]) {
                 ++index1;
@@ -43,7 +40,6 @@ public class Solution {
                 return new int[] {-1, -1};
             }
         }
-
         return new int[] {index1 - 1, index2};
     }
 }

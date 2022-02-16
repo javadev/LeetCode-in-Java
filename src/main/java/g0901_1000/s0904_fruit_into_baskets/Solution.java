@@ -7,11 +7,9 @@ public class Solution {
         int end = 1;
         int basket1 = fruits[0];
         int basket2 = -1;
-
         int secondFruitIndex = -1;
         int maxTotal = 1;
         int counter = 1;
-
         while (end < fruits.length) {
             if (fruits[end - 1] != fruits[end]) {
                 if (basket2 == -1) {
