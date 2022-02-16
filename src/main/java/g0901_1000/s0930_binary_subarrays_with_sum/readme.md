@@ -14,10 +14,13 @@ A **subarray** is a contiguous part of the array.
 
 **Explanation:** The 4 subarrays are bolded and underlined below: 
     
-    [**1,0,1**,0,1] 
-    [**1,0,1,0**,1] 
-    [1,**0,1,0,1**] 
-    [1,0,**1,0,1**]
+[**1,0,1**,0,1] 
+
+[**1,0,1,0**,1] 
+
+[1,**0,1,0,1**] 
+
+[1,0,**1,0,1**]
 
 **Example 2:**
 
