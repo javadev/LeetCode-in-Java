@@ -6,7 +6,8 @@ public class Solution {
     public int maxWidthRamp(int[] nums) {
         int m = nums.length;
         int[] dp = new int[m];
-        int minInd = 0, ramp = 0;
+        int minInd = 0;
+        int ramp = 0;
         for (int i = 0; i < m; i++) {
             int prInd = minInd;
             while (prInd > 0 && nums[i] >= nums[dp[prInd]]) {

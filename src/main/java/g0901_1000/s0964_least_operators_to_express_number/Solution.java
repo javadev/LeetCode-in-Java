@@ -33,8 +33,11 @@ public class Solution {
         int res = Integer.MAX_VALUE;
         int mod = (int) (target % x);
         if (mod == 0) {
-            if (ex == 0) res = Math.min(res, dfs(ex + 1, target)); // not use
-            else res = Math.min(res, dfs(ex + 1, target / x)); // not use
+            if (ex == 0) {
+                res = Math.min(res, dfs(ex + 1, target)); // not use
+            } else {
+                res = Math.min(res, dfs(ex + 1, target / x)); // not use
+            }
         } else {
             // division is needed
             if (ex == 0) {
