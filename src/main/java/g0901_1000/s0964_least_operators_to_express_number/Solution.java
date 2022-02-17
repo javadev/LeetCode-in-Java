@@ -34,9 +34,11 @@ public class Solution {
         int mod = (int) (target % x);
         if (mod == 0) {
             if (ex == 0) {
-                res = Math.min(res, dfs(ex + 1, target)); // not use
+                // not use
+                res = Math.min(res, dfs(ex + 1, target));
             } else {
-                res = Math.min(res, dfs(ex + 1, target / x)); // not use
+                // not use
+                res = Math.min(res, dfs(ex + 1, target / x));
             }
         } else {
             // division is needed
