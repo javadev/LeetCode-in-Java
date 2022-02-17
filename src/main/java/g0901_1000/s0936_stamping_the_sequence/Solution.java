@@ -1,6 +1,6 @@
 package g0901_1000.s0936_stamping_the_sequence;
 
-// #Hard #String #Greedy #Stack #Queue
+// #Hard #String #Greedy #Stack #Queue #2022_02_17_Time_4_ms_(90.57%)_Space_45.7_MB_(30.19%)
 
 import java.util.ArrayList;
 import java.util.List;
