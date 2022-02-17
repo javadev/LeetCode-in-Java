@@ -15,7 +15,6 @@ public class Solution {
             subseqAtPrevIndexOfMyLastOcc[str.charAt(crntStrIdx) - 'a'] = prev;
             prev = curr;
         }
-
-        return (prev - 1);
+        return prev - 1;
     }
 }
