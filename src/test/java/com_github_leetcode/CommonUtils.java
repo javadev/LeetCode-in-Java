@@ -13,6 +13,13 @@ public class CommonUtils {
         System.out.println();
     }
 
+    public static void printArray(double[] nums) {
+        for (double i : nums) {
+            System.out.print(i + ", ");
+        }
+        System.out.println();
+    }
+
     public static boolean compareArray(int[] arr1, int[] arr2) {
         for (int i : arr1) {
             boolean include = false;
@@ -27,13 +34,6 @@ public class CommonUtils {
             }
         }
         return true;
-    }
-
-    public static void printArray(double[] nums) {
-        for (double i : nums) {
-            System.out.print(i + ", ");
-        }
-        System.out.println();
     }
 
     public static char[][] convertLeetCodeRegular2DCharArrayInputIntoJavaArray(String input) {
