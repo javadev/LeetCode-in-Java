@@ -6,13 +6,13 @@ public class Solution {
     public int distinctSubseqII(String str) {
         int m = (int) (1e9) + 7;
         int prev = 1;
-        int[] subseqAtPrevIndex_of_myLastOcc = new int[26];
+        int[] subseqAtPrevIndexOfMyLastOcc = new int[26];
         for (int i = 1; i <= str.length(); i++) {
             int crntStrIdx = i - 1;
-            int subtract = subseqAtPrevIndex_of_myLastOcc[str.charAt(crntStrIdx) - 'a'];
+            int subtract = subseqAtPrevIndexOfMyLastOcc[str.charAt(crntStrIdx) - 'a'];
             int curr = (2 * prev) % m;
             curr = (curr + m - subtract) % m;
-            subseqAtPrevIndex_of_myLastOcc[str.charAt(crntStrIdx) - 'a'] = prev;
+            subseqAtPrevIndexOfMyLastOcc[str.charAt(crntStrIdx) - 'a'] = prev;
             prev = curr;
         }
 

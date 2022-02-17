@@ -4,6 +4,7 @@ package g0901_1000.s0937_reorder_data_in_log_files;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.TreeMap;
 
 public class Solution {
@@ -22,8 +23,8 @@ public class Solution {
         }
         String[] reorderedLogs = new String[logs.length];
         int i = 0;
-        for (String key : letterLogMap.keySet()) {
-            reorderedLogs[i++] = letterLogMap.get(key);
+        for (Map.Entry<String, String> key : letterLogMap.entrySet()) {
+            reorderedLogs[i++] = key.getValue();
         }
         for (String log : digitLogList) {
             reorderedLogs[i++] = log;

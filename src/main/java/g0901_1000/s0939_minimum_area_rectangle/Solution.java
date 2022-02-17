@@ -33,8 +33,7 @@ public class Solution {
                 if (area >= min || area == 0) {
                     continue;
                 }
-                if (map.get(p1[0]).contains(p2[1])
-                        && map.get(p2[0]).contains(p1[1])) { // find other two points
+                if (map.get(p1[0]).contains(p2[1]) && map.get(p2[0]).contains(p1[1])) {
                     min = area;
                 }
             }
