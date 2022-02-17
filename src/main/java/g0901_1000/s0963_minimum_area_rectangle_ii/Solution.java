@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public double minAreaFreeRect(int[][] points) {
         Map<Integer, Set<Integer>> map = new HashMap<>();
@@ -32,7 +33,11 @@ public class Solution {
                     int x = dx1 + points[k][0];
                     int y = dy1 + points[k][1];
                     area = calculateArea(points, i, j, k);
-                    if (!(area >= minArea) && map.get(x) != null && map.get(x).contains(y)) {
+                    if (area >= minArea) {
+                        continue;
+                    }
+                    // 4th point exists
+                    if (map.get(x) != null && map.get(x).contains(y)) {
                         minArea = area;
                     }
                 }
