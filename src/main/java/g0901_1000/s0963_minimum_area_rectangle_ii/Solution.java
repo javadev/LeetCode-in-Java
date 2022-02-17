@@ -32,11 +32,7 @@ public class Solution {
                     int x = dx1 + points[k][0];
                     int y = dy1 + points[k][1];
                     area = calculateArea(points, i, j, k);
-                    if (area >= minArea) {
-                        continue;
-                    }
-                    // 4th point exists
-                    if (map.get(x) != null && map.get(x).contains(y)) {
+                    if (!(area >= minArea) && map.get(x) != null && map.get(x).contains(y)) {
                         minArea = area;
                     }
                 }
