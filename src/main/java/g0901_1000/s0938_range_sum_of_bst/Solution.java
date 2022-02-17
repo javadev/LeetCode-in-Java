@@ -1,30 +1,39 @@
 package g0901_1000.s0938_range_sum_of_bst;
 
 // #Easy #Depth_First_Search #Tree #Binary_Tree #Binary_Search_Tree
-// #2022_02_17_Time_3_ms_(19.20%)_Space_49.8_MB_(72.04%)
+// #2022_02_17_Time_0_ms_(100.00%)_Space_67.6_MB_(10.68%)
 
 import com_github_leetcode.TreeNode;
-import java.util.ArrayList;
-import java.util.List;
 
+/*
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 public class Solution {
     public int rangeSumBST(TreeNode root, int low, int high) {
         if (root == null) {
             return 0;
         }
-        List<Integer> list = new ArrayList<>();
-        dfs(root, low, high, list);
-        return list.stream().mapToInt(num -> num).sum();
-    }
-
-    private void dfs(TreeNode root, int l, int r, List<Integer> list) {
-        if (root == null) {
-            return;
+        if (root.val <= high && root.val >= low) {
+            int sum = root.val;
+            int left = rangeSumBST(root.left, low, high);
+            int right = rangeSumBST(root.right, low, high);
+            return sum + left + right;
+        } else if (root.val < low) {
+            return rangeSumBST(root.right, low, high);
+        } else {
+            return rangeSumBST(root.left, low, high);
         }
-        if (root.val <= r && root.val >= l) {
-            list.add(root.val);
-        }
-        dfs(root.left, l, r, list);
-        dfs(root.right, l, r, list);
     }
 }
