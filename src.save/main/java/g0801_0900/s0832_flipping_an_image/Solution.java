@@ -3,12 +3,12 @@ package g0801_0900.s0832_flipping_an_image;
 // #Easy #Array #Matrix #Two_Pointers #Simulation
 
 public class Solution {
-    public int[][] flipAndInvertImage(int[][] a) {
-        int m = a.length;
-        int n = a[0].length;
+    public int[][] flipAndInvertImage(int[][] image) {
+        int m = image.length;
+        int n = image[0].length;
         int[][] result = new int[m][n];
         for (int i = 0; i < m; i++) {
-            int[] flipped = (reverse(a[i]));
+            int[] flipped = (reverse(image[i]));
             result[i] = invert(flipped);
         }
         return result;
