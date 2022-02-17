@@ -3,13 +3,13 @@ package g0601_0700.s0628_maximum_product_of_three_numbers;
 // #Easy #Array #Math #Sorting
 
 public class Solution {
-    public int maximumProduct(int[] a) {
+    public int maximumProduct(int[] nums) {
         int min1 = Integer.MAX_VALUE;
         int min2 = Integer.MAX_VALUE;
         int max1 = Integer.MIN_VALUE;
         int max2 = Integer.MIN_VALUE;
         int max3 = Integer.MIN_VALUE;
-        for (int i : a) {
+        for (int i : nums) {
             if (i > max1) {
                 max3 = max2;
                 max2 = max1;
