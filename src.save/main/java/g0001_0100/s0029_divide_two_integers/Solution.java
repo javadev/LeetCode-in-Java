@@ -1,6 +1,7 @@
 package g0001_0100.s0029_divide_two_integers;
 
 // #Medium #Top_Interview_Questions #Math #Bit_Manipulation
+// #2022_02_18_Time_3_ms_(33.42%)_Space_41_MB_(23.90%)
 
 public class Solution {
     public int divide(int dividend, int divisor) {

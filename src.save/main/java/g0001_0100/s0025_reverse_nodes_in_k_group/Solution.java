@@ -1,6 +1,7 @@
 package g0001_0100.s0025_reverse_nodes_in_k_group;
 
 // #Hard #Top_100_Liked_Questions #Linked_List #Recursion
+// #2022_02_18_Time_0_ms_(100.00%)_Space_46.3_MB_(6.30%)
 
 import com_github_leetcode.ListNode;
 
