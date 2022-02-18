@@ -1,4 +1,4 @@
-package g0001_0100.s0043_multiple_strings;
+package g0001_0100.s0043_multiply_strings;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

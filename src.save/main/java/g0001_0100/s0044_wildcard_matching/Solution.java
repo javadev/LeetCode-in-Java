@@ -1,6 +1,7 @@
 package g0001_0100.s0044_wildcard_matching;
 
 // #Hard #Top_Interview_Questions #String #Dynamic_Programming #Greedy #Recursion
+// #2022_02_18_Time_4_ms_(92.10%)_Space_44.2_MB_(60.20%)
 
 public class Solution {
     public boolean isMatch(String inputString, String pattern) {
