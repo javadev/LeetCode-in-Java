@@ -39,7 +39,7 @@ public class Solution {
         return maxConnection;
     }
 
-    public void union(int[] roots, int a, int b, int[] sizes) {
+    private void union(int[] roots, int a, int b, int[] sizes) {
         int rootA = getRoot(roots, a);
         int rootB = getRoot(roots, b);
         if (rootA != rootB) {
@@ -48,7 +48,7 @@ public class Solution {
         }
     }
 
-    public int getRoot(int[] roots, int a) {
+    private int getRoot(int[] roots, int a) {
         if (roots[a] == a) {
             return a;
         }
