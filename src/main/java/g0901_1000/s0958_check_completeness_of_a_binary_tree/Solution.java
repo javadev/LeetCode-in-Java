@@ -36,7 +36,7 @@ public class Solution {
         boolean seenNull = false;
         /* 4. While the queue isn't empty.
         //   Catch that null, and if there is a # after, it's not complete */
-        while (queue.size() > 0) {
+        while (!queue.isEmpty()) {
             TreeNode node = queue.poll();
             if (node == null) {
                 seenNull = true;
