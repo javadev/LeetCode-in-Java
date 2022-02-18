@@ -1,6 +1,7 @@
 package g0001_0100.s0031_next_permutation;
 
 // #Medium #Top_100_Liked_Questions #Array #Two_Pointers
+// #2022_02_18_Time_1_ms_(74.73%)_Space_43.4_MB_(24.57%)
 
 public class Solution {
     public void nextPermutation(int[] nums) {
