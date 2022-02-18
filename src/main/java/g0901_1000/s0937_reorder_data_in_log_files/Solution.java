@@ -22,7 +22,9 @@ public class Solution {
                     int cmp =
                             o1.substring(o1.indexOf(" ") + 1)
                                     .compareTo(o2.substring(o2.indexOf(" ") + 1));
-                    if (cmp == 0) return o1.compareTo(o2);
+                    if (cmp == 0) {
+                        return o1.compareTo(o2);
+                    }
                     return cmp;
                 });
         int i = 0;
