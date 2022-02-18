@@ -1,6 +1,6 @@
 package g0001_0100.s0060_permutation_sequence;
 
-// #Hard #Math #Recursion
+// #Hard #Math #Recursion #2022_02_19_Time_0_ms_(100.00%)_Space_39.5_MB_(40.79%)
 
 public class Solution {
     public String getPermutation(int n, int k) {
