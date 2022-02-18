@@ -24,7 +24,6 @@ public class Solution {
             for (int factor = 1; factor <= sqrt; factor++) {
                 if (a % factor == 0) {
                     int otherFactor = a / factor;
-                    int factorRoot = getRoot(roots, factor);
                     int otherFactorRoot = getRoot(roots, otherFactor);
                     if (factor != 1) {
                         union(roots, thisRoot, factor, sizes);
@@ -53,6 +52,7 @@ public class Solution {
         if (roots[a] == a) {
             return a;
         }
-        return roots[a] = getRoot(roots, roots[a]);
+        roots[a] = getRoot(roots, roots[a]);
+        return roots[a];
     }
 }
