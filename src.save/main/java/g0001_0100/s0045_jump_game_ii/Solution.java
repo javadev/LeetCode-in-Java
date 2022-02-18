@@ -1,6 +1,7 @@
 package g0001_0100.s0045_jump_game_ii;
 
-// #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Greedy
+// #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Greedy #Dynamic_Programming_I_Day_4
+// #2022_02_18_Time_1_ms_(99.67%)_Space_42.5_MB_(72.35%)
 
 public class Solution {
     public int jump(int[] nums) {

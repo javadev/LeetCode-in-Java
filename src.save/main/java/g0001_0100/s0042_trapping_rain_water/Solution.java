@@ -1,7 +1,8 @@
 package g0001_0100.s0042_trapping_rain_water;
 
 // #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Dynamic_Programming #Two_Pointers
-// #Stack #Monotonic_Stack
+// #Stack #Monotonic_Stack #Dynamic_Programming_I_Day_9
+// #2022_02_18_Time_1_ms_(92.60%)_Space_46_MB_(11.92%)
 
 public class Solution {
     public int trap(int[] height) {
