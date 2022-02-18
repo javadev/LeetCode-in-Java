@@ -1,6 +1,7 @@
 package g0001_0100.s0050_powx_n;
 
 // #Medium #Top_Interview_Questions #Math #Recursion
+// #2022_02_18_Time_1_ms_(71.59%)_Space_42.2_MB_(26.88%)
 
 public class Solution {
     public double myPow(double x, int n) {
