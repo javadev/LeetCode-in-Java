@@ -49,7 +49,7 @@ public class Solution {
 
     private Set<String> concatenateSet(Set<String> set1, Set<String> set2) {
         if (set1.isEmpty() || set2.isEmpty()) {
-            return set2.size() > 0 ? new HashSet<>(set2) : new HashSet<>(set1);
+            return !set2.isEmpty() ? new HashSet<>(set2) : new HashSet<>(set1);
         }
         Set<String> res = new HashSet<>();
         for (String s1 : set1) {
