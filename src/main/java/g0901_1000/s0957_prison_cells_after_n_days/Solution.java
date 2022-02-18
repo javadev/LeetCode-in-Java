@@ -33,7 +33,9 @@ public class Solution {
     private int[] getNextDay(int[] arr) {
         int[] ret = new int[8];
         for (int i = 1; i < 7; ++i) {
-            if (arr[i - 1] == arr[i + 1]) ret[i] = 1;
+            if (arr[i - 1] == arr[i + 1]) {
+                ret[i] = 1;
+            }
         }
         return ret;
     }
