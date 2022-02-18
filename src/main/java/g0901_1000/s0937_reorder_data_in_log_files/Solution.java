@@ -1,34 +1,39 @@
 package g0901_1000.s0937_reorder_data_in_log_files;
 
-// #Easy #Array #String #Sorting #2022_02_17_Time_2_ms_(99.96%)_Space_42_MB_(73.63%)
+// #Easy #Array #String #Sorting #2022_02_18_Time_4_ms_(91.55%)_Space_45.5_MB_(49.57%)
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
 
 public class Solution {
     public String[] reorderLogFiles(String[] logs) {
-        TreeMap<String, String> letterLogMap = new TreeMap<>();
-        List<String> digitLogList = new ArrayList<>();
+        String[] res = new String[logs.length];
+        List<String> letterLogs = new ArrayList<>();
+        List<String> digitLogs = new ArrayList<>();
         for (String log : logs) {
-            int firstSpaceIndex = log.indexOf(' ');
-            String id = log.substring(0, firstSpaceIndex);
-            if (Character.isAlphabetic(log.charAt(firstSpaceIndex + 1))) {
-                String key = log.substring(firstSpaceIndex + 1) + id;
-                letterLogMap.put(key, log);
+            if (Character.isLetter(log.charAt(log.indexOf(" ") + 1))) {
+                letterLogs.add(log);
             } else {
-                digitLogList.add(log);
+                digitLogs.add(log);
             }
         }
-        String[] reorderedLogs = new String[logs.length];
+        letterLogs.sort(
+                (o1, o2) -> {
+                    int cmp =
+                            o1.substring(o1.indexOf(" ") + 1)
+                                    .compareTo(o2.substring(o2.indexOf(" ") + 1));
+                    if (cmp == 0) {
+                        return o1.compareTo(o2);
+                    }
+                    return cmp;
+                });
         int i = 0;
-        for (Map.Entry<String, String> key : letterLogMap.entrySet()) {
-            reorderedLogs[i++] = key.getValue();
+        for (String log : letterLogs) {
+            res[i++] = log;
         }
-        for (String log : digitLogList) {
-            reorderedLogs[i++] = log;
+        for (String log : digitLogs) {
+            res[i++] = log;
         }
-        return reorderedLogs;
+        return res;
     }
 }
