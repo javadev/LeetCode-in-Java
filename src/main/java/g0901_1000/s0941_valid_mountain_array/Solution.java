@@ -6,11 +6,9 @@ public class Solution {
     public boolean validMountainArray(int[] arr) {
         int i = 0;
         for (; i < arr.length - 1; i++) {
-            if (arr[i] < arr[i + 1]) {
-                continue;
-            } else if (arr[i] == arr[i + 1]) {
+            if (arr[i] == arr[i + 1]) {
                 return false;
-            } else {
+            } else if (arr[i] > arr[i + 1]) {
                 break;
             }
         }
@@ -18,9 +16,7 @@ public class Solution {
             return false;
         }
         for (; i < arr.length - 1; i++) {
-            if (arr[i] > arr[i + 1]) {
-                continue;
-            } else {
+            if (arr[i] <= arr[i + 1]) {
                 return false;
             }
         }

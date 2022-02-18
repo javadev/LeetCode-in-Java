@@ -87,23 +87,23 @@ public class Solution {
         if (mask == 0) {
             return 0;
         }
-        int max = memo[i][mask];
+        int maxMemo = memo[i][mask];
         int maxj = -1;
-        if (max != -1) {
-            return max;
+        if (maxMemo != -1) {
+            return maxMemo;
         }
         int m = mask;
         while (m != 0) {
             int j = Integer.numberOfTrailingZeros(m);
             int score = lcsps[remap[i]][remap[j]] + dpts(j, mask ^ (1 << j), memo, next);
-            if (score > max) {
-                max = score;
+            if (score > maxMemo) {
+                maxMemo = score;
                 maxj = j;
             }
             m ^= 1 << j;
         }
         next[i][mask] = maxj;
-        memo[i][mask] = max;
+        memo[i][mask] = maxMemo;
         return memo[i][mask];
     }
 
