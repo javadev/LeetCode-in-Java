@@ -1,6 +1,6 @@
 package g0001_0100.s0059_spiral_matrix_ii;
 
-// #Medium #Array #Matrix #Simulation
+// #Medium #Array #Matrix #Simulation #2022_02_19_Time_0_ms_(100.00%)_Space_42.5_MB_(5.31%)
 
 public class Solution {
     public int[][] generateMatrix(int n) {

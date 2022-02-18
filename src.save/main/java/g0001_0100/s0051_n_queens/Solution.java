@@ -1,6 +1,6 @@
 package g0001_0100.s0051_n_queens;
 
-// #Hard #Array #Backtracking
+// #Hard #Array #Backtracking #2022_02_19_Time_3_ms_(87.94%)_Space_45.5_MB_(21.87%)
 
 import java.util.ArrayList;
 import java.util.Arrays;
