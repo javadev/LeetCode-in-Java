@@ -32,12 +32,15 @@ public class Solution {
         this.maxOrder = new int[n];
         this.remap = new int[n];
         this.k = 0;
-        for (int i = n - 1, j = 0; i > -1; i--) {
+        int i = n - 1;
+        int j = 0;
+        while (i > -1) {
             if (maxcp[i] == 0 && maxcs[i] == 0) {
                 maxOrder[n - 1 - k++] = i;
             } else {
                 remap[j++] = i;
             }
+            i--;
         }
         if (k < n) {
             dpts();
@@ -45,7 +48,7 @@ public class Solution {
 
         StringBuilder sb = new StringBuilder();
         sb.append(words[maxOrder[0]]);
-        for (int i = 1; i < n; i++) {
+        for (i = 1; i < n; i++) {
             sb.append(words[maxOrder[i]].substring(lcsps[maxOrder[i - 1]][maxOrder[i]]));
         }
         return sb.toString();
@@ -69,10 +72,14 @@ public class Solution {
             }
         }
         maxOrder[0] = remap[first];
-        for (int i = 1, j = first, m = mask ^ (1 << first); i < ndp; i++) {
+        int i = 1;
+        int j = first;
+        int m = mask ^ (1 << first);
+        while (i < ndp) {
             j = next[j][m];
             maxOrder[i] = remap[j];
             m ^= (1 << j);
+            i++;
         }
     }
 
@@ -85,7 +92,8 @@ public class Solution {
         if (max != -1) {
             return max;
         }
-        for (int m = mask; m != 0; ) {
+        int m = mask;
+        while (m != 0) {
             int j = Integer.numberOfTrailingZeros(m);
             int score = lcsps[remap[i]][remap[j]] + dpts(j, mask ^ (1 << j), memo, next);
             if (score > max) {
@@ -95,11 +103,13 @@ public class Solution {
             m ^= 1 << j;
         }
         next[i][mask] = maxj;
-        return memo[i][mask] = max;
+        memo[i][mask] = max;
+        return memo[i][mask];
     }
 
     private int lcsp(String s1, String s2) {
-        int n1 = s1.length(), n2 = s2.length();
+        int n1 = s1.length();
+        int n2 = s2.length();
         for (int i = Math.max(1, n1 - n2 + 1); i < n1; i++) {
             if (s1.endsWith(s2.substring(0, n1 - i))) {
                 return n1 - i;

@@ -5,17 +5,17 @@ package g0901_1000.s0942_di_string_match;
 
 public class Solution {
 
-    public int[] diStringMatch(String S) {
-        int[] arr = new int[S.length() + 1];
-        int max = S.length();
-        for (int i = 0; i < S.length(); i++) {
-            if (S.charAt(i) == 'D') {
+    public int[] diStringMatch(String s) {
+        int[] arr = new int[s.length() + 1];
+        int max = s.length();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == 'D') {
                 arr[i] = max;
                 max--;
             }
         }
-        for (int i = S.length() - 1; i >= 0 && max > 0; i--) {
-            if (S.charAt(i) == 'I' && arr[i + 1] == 0) {
+        for (int i = s.length() - 1; i >= 0 && max > 0; i--) {
+            if (s.charAt(i) == 'I' && arr[i + 1] == 0) {
                 arr[i + 1] = max;
                 max--;
             }
