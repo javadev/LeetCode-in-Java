@@ -1,6 +1,6 @@
 package g0001_0100.s0061_rotate_list;
 
-// #Medium #Two_Pointers #Linked_List
+// #Medium #Two_Pointers #Linked_List #2022_02_19_Time_0_ms_(100.00%)_Space_41.7_MB_(34.97%)
 
 import com_github_leetcode.ListNode;
 
