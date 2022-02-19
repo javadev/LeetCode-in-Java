@@ -1,6 +1,7 @@
 package g0001_0100.s0076_minimum_window_substring;
 
 // #Hard #Top_100_Liked_Questions #Top_Interview_Questions #String #Hash_Table #Sliding_Window
+// #2022_02_19_Time_3_ms_(98.09%)_Space_44_MB_(44.72%)
 
 public class Solution {
     public String minWindow(String s, String t) {
