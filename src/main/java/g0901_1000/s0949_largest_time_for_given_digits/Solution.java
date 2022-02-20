@@ -11,12 +11,10 @@ public class Solution {
                 if (i != j) {
                     String hour = getTime(arr, i, j, 23, false);
                     String min = getTime(arr, i, j, 59, true);
-                    if (hour != null && min != null) {
-                        if (hour.compareTo(maxHour) > 0) {
-                            buf.setLength(0);
-                            buf.append(hour).append(':').append(min);
-                            maxHour = hour;
-                        }
+                    if (hour != null && min != null && hour.compareTo(maxHour) > 0) {
+                        buf.setLength(0);
+                        buf.append(hour).append(':').append(min);
+                        maxHour = hour;
                     }
                 }
             }
