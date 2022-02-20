@@ -20,7 +20,6 @@ public class Solution {
                 stack.push(c);
             }
         }
-
         return stack.isEmpty();
     }
 }
