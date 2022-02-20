@@ -11,7 +11,6 @@ public class Solution {
         HashMap<Integer, Integer> d1 = new HashMap<>();
         HashMap<Integer, Integer> d2 = new HashMap<>();
         HashMap<Integer, Integer> cellno = new HashMap<>();
-
         for (int[] lamp : lamps) {
             int row1 = lamp[0];
             int col1 = lamp[1];
@@ -22,7 +21,6 @@ public class Solution {
             int cell = row1 * n + col1;
             cellno.put(cell, cellno.getOrDefault(cell, 0) + 1);
         }
-
         int[][] dir = {{-1, 0}, {-1, 1}, {0, 1}, {1, 1}, {1, 0}, {1, -1}, {0, -1}, {-1, -1}};
         int[] ans = new int[queries.length];
         for (int i = 0; i < queries.length; i++) {
@@ -49,7 +47,6 @@ public class Solution {
                         row.put(row1, rowval);
                     }
                 }
-
                 if (col.containsKey(col1)) {
                     int colval = col.get(col1);
                     colval -= val;
@@ -59,7 +56,6 @@ public class Solution {
                         col.put(col1, colval);
                     }
                 }
-
                 if (d1.containsKey(row1 + col1)) {
                     int d1val = d1.get(row1 + col1);
                     d1val -= val;
@@ -69,7 +65,6 @@ public class Solution {
                         row.put((row1 + col1), d1val);
                     }
                 }
-
                 if (d2.containsKey(row1 - col1)) {
                     int d2val = d2.get(row1 - col1);
                     d2val -= val;
@@ -96,7 +91,6 @@ public class Solution {
                             row.put(rowdash, rowval);
                         }
                     }
-
                     if (col.containsKey(coldash)) {
                         int colval = col.get(coldash);
                         colval -= val;
@@ -106,7 +100,6 @@ public class Solution {
                             col.put(coldash, colval);
                         }
                     }
-
                     if (d1.containsKey(rowdash + coldash)) {
                         int d1val = d1.get(rowdash + coldash);
                         d1val -= val;
@@ -116,7 +109,6 @@ public class Solution {
                             row.put((rowdash + coldash), d1val);
                         }
                     }
-
                     if (d2.containsKey(rowdash - coldash)) {
                         int d2val = d2.get(rowdash - coldash);
                         d2val -= val;
@@ -129,7 +121,6 @@ public class Solution {
                 }
             }
         }
-
         return ans;
     }
 }
