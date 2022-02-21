@@ -1,6 +1,6 @@
 package g0001_0100.s0092_reverse_linked_list_ii;
 
-// #Medium #Linked_List
+// #Medium #Linked_List #2022_02_21_Time_0_ms_(100.00%)_Space_41.9_MB_(17.34%)
 
 import com_github_leetcode.ListNode;
 
