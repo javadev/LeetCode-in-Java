@@ -26,7 +26,9 @@ public class Solution {
             if (nl < nr) {
                 avg += (double) count[l] * l;
                 nl += count[l];
-                if (count[l] > count[mode]) mode = l;
+                if (count[l] > count[mode]) {
+                    mode = l;
+                }
                 mx = Math.max(mx, l);
                 mn = Math.min(mn, l);
                 mid1 = l;
@@ -34,14 +36,16 @@ public class Solution {
             } else {
                 avg += (double) count[r] * r;
                 nr += count[r];
-                if (count[r] > count[mode]) mode = r;
+                if (count[r] > count[mode]) {
+                    mode = r;
+                }
                 mx = Math.max(mx, r);
                 mn = Math.min(mn, r);
                 mid2 = r;
                 r--;
             }
         }
-        avg /= (nl + nr);
+        avg /= nl + nr;
         // Find median
         if (nl < nr) {
             mid = mid2;
