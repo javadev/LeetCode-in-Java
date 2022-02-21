@@ -5,7 +5,6 @@ package g1001_1100.s1010_pairs_of_songs_with_total_durations_divisible_by_60;
 public class Solution {
     public int numPairsDivisibleBy60(int[] time) {
         int[] remainder = new int[60];
-        int n = time.length;
         int ans = 0;
         for (int j : time) {
             int rem = j % 60;
