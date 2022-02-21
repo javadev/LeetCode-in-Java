@@ -1,29 +1,37 @@
 package g0001_0100.s0004_median_of_two_sorted_arrays;
 
 // #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Binary_Search #Divide_and_Conquer
-// #2022_02_17_Time_9_ms_(16.49%)_Space_50.8_MB_(5.72%)
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+// #2022_02_21_Time_3_ms_(79.08%)_Space_50_MB_(17.49%)
 
 public class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        List<Integer> l = new ArrayList<>();
-        double f;
-        for (int j : nums1) {
-            l.add(j);
+        if (nums2.length < nums1.length) {
+            return findMedianSortedArrays(nums2, nums1);
         }
-        for (int i : nums2) {
-            l.add(i);
+        int cut1 = 0;
+        int cut2 = 0;
+        int n1 = nums1.length;
+        int n2 = nums2.length;
+        int low = 0;
+        int high = n1;
+        while (low <= high) {
+            cut1 = (low + high) / 2;
+            cut2 = ((n1 + n2 + 1) / 2) - cut1;
+            int l1 = cut1 == 0 ? Integer.MIN_VALUE : nums1[cut1 - 1];
+            int l2 = cut2 == 0 ? Integer.MIN_VALUE : nums2[cut2 - 1];
+            int r1 = cut1 == n1 ? Integer.MAX_VALUE : nums1[cut1];
+            int r2 = cut2 == n2 ? Integer.MAX_VALUE : nums2[cut2];
+            if (l1 <= r2 && l2 <= r1) {
+                if ((n1 + n2) % 2 == 0) {
+                    return (Math.max(l1, l2) + Math.min(r1, r2)) / 2.0;
+                }
+                return Math.max(l1, l2);
+            } else if (l1 > r2) {
+                high = cut1 - 1;
+            } else {
+                low = cut1 + 1;
+            }
         }
-        Collections.sort(l);
-        int k = l.size();
-        if (k % 2 == 0) {
-            f = (double) ((l.get(k / 2 - 1)) + (l.get(k / 2))) / 2;
-        } else {
-            f = l.get(((k + 1) / 2) - 1);
-        }
-        return f;
+        return 0.0f;
     }
 }
