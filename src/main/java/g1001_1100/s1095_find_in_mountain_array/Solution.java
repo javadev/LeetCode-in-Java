@@ -58,4 +58,3 @@ public class Solution {
         return target == mountainArray.get(leftIndex) ? leftIndex : -1;
     }
 }
-
