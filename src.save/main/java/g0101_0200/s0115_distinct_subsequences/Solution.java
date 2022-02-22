@@ -1,6 +1,6 @@
 package g0101_0200.s0115_distinct_subsequences;
 
-// #Hard #String #Dynamic_Programming
+// #Hard #String #Dynamic_Programming #2022_02_22_Time_3_ms_(99.53%)_Space_42.1_MB_(93.65%)
 
 public class Solution {
     public int numDistinct(String text, String text2) {

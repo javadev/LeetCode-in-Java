@@ -1,6 +1,7 @@
 package g0101_0200.s0114_flatten_binary_tree_to_linked_list;
 
 // #Medium #Top_100_Liked_Questions #Depth_First_Search #Tree #Binary_Tree #Stack #Linked_List
+// #2022_02_22_Time_1_ms_(69.36%)_Space_42.6_MB_(22.05%)
 
 import com_github_leetcode.TreeNode;
 
