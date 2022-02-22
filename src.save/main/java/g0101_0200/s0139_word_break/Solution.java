@@ -1,7 +1,8 @@
 package g0101_0200.s0139_word_break;
 
-// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming
-// #Hash_Table #Trie #Memoization
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Hash_Table
+// #Dynamic_Programming #Trie #Memoization #Dynamic_Programming_I_Day_9
+// #2022_02_22_Time_2_ms_(96.55%)_Space_42.2_MB_(63.03%)
 
 import java.util.HashSet;
 import java.util.List;
