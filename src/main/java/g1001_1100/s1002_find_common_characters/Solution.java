@@ -5,6 +5,7 @@ package g1001_1100.s1002_find_common_characters;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S112")
 public class Solution {
     public List<String> commonChars(String[] words) {
         if (words == null) {
