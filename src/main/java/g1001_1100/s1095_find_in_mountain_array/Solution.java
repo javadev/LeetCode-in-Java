@@ -59,8 +59,3 @@ public class Solution {
     }
 }
 
-interface MountainArray {
-    int get(int index);
-
-    int length();
-}
