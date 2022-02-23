@@ -29,11 +29,14 @@ public class Solution {
         while (!maxHeap.isEmpty() && numWanted > 0) {
             Node cur = maxHeap.poll();
             if (labelAddedCount.containsKey(cur.label)
-                    && labelAddedCount.get(cur.label) >= useLimit) continue;
-            if (cur.val <= 0) break;
-            ans += cur.val;
-            labelAddedCount.put(cur.label, labelAddedCount.getOrDefault(cur.label, 0) + 1);
-            numWanted--;
+                    && labelAddedCount.get(cur.label) >= useLimit) {
+                continue;
+            }
+            if (cur.val > 0) {
+                ans += cur.val;
+                labelAddedCount.put(cur.label, labelAddedCount.getOrDefault(cur.label, 0) + 1);
+                numWanted--;
+            }
         }
         return ans;
     }
