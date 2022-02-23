@@ -1,6 +1,7 @@
 package g0101_0200.s0141_linked_list_cycle;
 
 // #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Hash_Table #Two_Pointers #Linked_List
+// #Data_Structure_I_Day_7_Linked_List #2022_02_23_Time_0_ms_(100.00%)_Space_46.5_MB_(9.38%)
 
 import com_github_leetcode.ListNode;
 
