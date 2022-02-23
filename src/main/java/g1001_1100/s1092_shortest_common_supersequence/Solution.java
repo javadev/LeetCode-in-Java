@@ -20,10 +20,11 @@ public class Solution {
                 }
             }
         }
-
-        int l = dp[m][n]; // Length of the ShortestSuperSequence
+        // Length of the ShortestSuperSequence
+        int l = dp[m][n];
         char[] arr = new char[l];
-        int i = m, j = n;
+        int i = m;
+        int j = n;
         while (i > 0 && j > 0) {
             /* If current character in str1 and str2 are same, then
             current character is part of shortest supersequence */
