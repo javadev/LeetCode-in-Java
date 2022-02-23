@@ -1,6 +1,6 @@
 package g0101_0200.s0153_find_minimum_in_rotated_sorted_array;
 
-// #Medium #Array #Binary_Search
+// #Medium #Array #Binary_Search #2022_02_23_Time_0_ms_(100.00%)_Space_41.9_MB_(37.13%)
 
 public class Solution {
     private int findMinUtil(int[] nums, int l, int r) {
