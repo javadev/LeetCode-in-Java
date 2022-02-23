@@ -18,9 +18,7 @@ public class Solution {
         } else {
             return 0;
         }
-
         m = -1;
-
-        return (num + clumsy(n - 4));
+        return num + clumsy(n - 4);
     }
 }
