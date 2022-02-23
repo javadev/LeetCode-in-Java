@@ -4,7 +4,6 @@ package g1001_1100.s1007_minimum_domino_rotations_for_equal_row;
 
 public class Solution {
     public int minDominoRotations(int[] tops, int[] bottoms) {
-
         int top = tops[0];
         int tCount = 0;
         int bCount = 0;
@@ -30,7 +29,6 @@ public class Solution {
             bSwaps = bottoms.length - bCount;
             swaps = Math.min(tSwaps, bSwaps);
         }
-
         int bottom = bottoms[0];
         int tCount1 = 0;
         int bCount1 = 0;
@@ -56,7 +54,6 @@ public class Solution {
             bSwaps1 = bottoms.length - bCount1;
             swaps1 = Math.min(tSwaps1, bSwaps1);
         }
-
         int[] ans = new int[2];
         if (swaps1 < swaps) {
             ans[0] = swaps1;
@@ -65,7 +62,6 @@ public class Solution {
             ans[0] = swaps;
             ans[1] = swaps1;
         }
-
         if (ans[0] != -1) {
             return ans[0];
         } else {
