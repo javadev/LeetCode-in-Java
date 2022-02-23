@@ -1,7 +1,7 @@
 package g0101_0200.s0146_lru_cache;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Hash_Table #Design #Linked_List
-// #Doubly_Linked_List
+// #Doubly_Linked_List #2022_02_23_Time_82_ms_(59.12%)_Space_124.8_MB_(63.96%)
 
 import java.util.HashMap;
 import java.util.Map;

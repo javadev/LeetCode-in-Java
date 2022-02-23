@@ -1,6 +1,6 @@
 package g0101_0200.s0147_insertion_sort_list;
 
-// #Medium #Sorting #Linked_List
+// #Medium #Sorting #Linked_List #2022_02_23_Time_3_ms_(92.25%)_Space_45.8_MB_(5.45%)
 
 import com_github_leetcode.ListNode;
 import java.util.Arrays;
