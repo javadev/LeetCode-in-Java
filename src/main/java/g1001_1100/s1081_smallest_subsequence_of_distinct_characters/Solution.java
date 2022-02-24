@@ -1,6 +1,7 @@
 package g1001_1100.s1081_smallest_subsequence_of_distinct_characters;
 
-// #Medium #String #Greedy #Stack #Monotonic_Stack #2022_02_24_Time_2_ms_(97.16%)_Space_40.2_MB_(41.62%)
+// #Medium #String #Greedy #Stack #Monotonic_Stack
+// #2022_02_24_Time_2_ms_(97.16%)_Space_40.2_MB_(41.62%)
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
@@ -13,7 +14,7 @@ public class Solution {
         int[] freq = new int[26];
         boolean[] exist = new boolean[26];
         Arrays.fill(exist, false);
-        for(char ch: s.toCharArray()) {
+        for (char ch : s.toCharArray()) {
             freq[ch - 'a']++;
         }
         for (int i = 0; i < n; i++) {
