@@ -73,15 +73,15 @@ public class Solution {
     }
 
     private int calcNumberOfNoRepeat(int numberOfDigits) {
-        int noRepeatCount = 0;
+        int repeatCount = 0;
         int mutations = 9;
         for (int i = 0; i < numberOfDigits; i++) {
             if (i == 0) {
-                noRepeatCount = mutations;
+                repeatCount = mutations;
             } else {
-                noRepeatCount *= mutations--;
+                repeatCount *= mutations--;
             }
         }
-        return noRepeatCount;
+        return repeatCount;
     }
 }
