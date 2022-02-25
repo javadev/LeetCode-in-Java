@@ -8,7 +8,8 @@ import java.util.List;
 public class Solution {
     public String removeOuterParentheses(String s) {
         List<String> primitives = new ArrayList<>();
-        for (int i = 1; i < s.length(); i++) {
+        int i = 1;
+        while (i < s.length()) {
             int initialI = i - 1;
             int left = 1;
             while (i < s.length() && left > 0) {
@@ -20,6 +21,7 @@ public class Solution {
                 i++;
             }
             primitives.add(s.substring(initialI, i));
+            i++;
         }
         StringBuilder sb = new StringBuilder();
         for (String primitive : primitives) {
