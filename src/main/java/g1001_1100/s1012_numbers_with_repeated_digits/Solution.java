@@ -4,13 +4,13 @@ package g1001_1100.s1012_numbers_with_repeated_digits;
 
 import java.util.HashSet;
 
+@SuppressWarnings("java:S2583")
 public class Solution {
     private int noRepeatCount = 0;
 
     public int numDupDigitsAtMostN(int n) {
         int nStrLength = String.valueOf(n).length();
         int allNineLength = 0;
-
         if (n < 0 || nStrLength < 2) {
             return 0;
         } else if (Math.pow(10, nStrLength) - 1 == n) {
@@ -18,11 +18,9 @@ public class Solution {
         } else {
             allNineLength = nStrLength - 1;
         }
-
         for (int numberOfDigits = 1; numberOfDigits <= allNineLength; numberOfDigits++) {
             noRepeatCount += calcNumberOfNoRepeat(numberOfDigits);
         }
-
         if (Math.pow(10, nStrLength) - 1 > n) {
             int mutations = 10;
             HashSet<Integer> hs = new HashSet<>();
