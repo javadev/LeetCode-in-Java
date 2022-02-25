@@ -8,13 +8,11 @@ import java.util.List;
 public class Solution {
     public List<Boolean> prefixesDivBy5(int[] a) {
         List<Boolean> result = new ArrayList<>(a.length);
-
         int remainder = 0;
         for (int j : a) {
             remainder = (j + (remainder << 1)) % 5;
             result.add(remainder == 0);
         }
-
         return result;
     }
 }
