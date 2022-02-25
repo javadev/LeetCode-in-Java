@@ -6,20 +6,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    public String removeOuterParentheses(String S) {
+    public String removeOuterParentheses(String s) {
         List<String> primitives = new ArrayList<>();
-        for (int i = 1; i < S.length(); i++) {
+        for (int i = 1; i < s.length(); i++) {
             int initialI = i - 1;
             int left = 1;
-            while (i < S.length() && left > 0) {
-                if (S.charAt(i) == '(') {
+            while (i < s.length() && left > 0) {
+                if (s.charAt(i) == '(') {
                     left++;
                 } else {
                     left--;
                 }
                 i++;
             }
-            primitives.add(S.substring(initialI, i));
+            primitives.add(s.substring(initialI, i));
         }
         StringBuilder sb = new StringBuilder();
         for (String primitive : primitives) {

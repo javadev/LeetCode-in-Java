@@ -6,7 +6,8 @@ public class Solution {
     public String baseNeg2(int n) {
         StringBuilder sb = new StringBuilder(Integer.toBinaryString(n));
         sb.reverse();
-        int carry = 0, sum;
+        int carry = 0;
+        int sum;
         int pos = 0;
         while (pos < sb.length()) {
             sum = carry + sb.charAt(pos) - '0';
