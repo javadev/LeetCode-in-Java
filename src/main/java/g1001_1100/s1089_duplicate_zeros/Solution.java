@@ -5,8 +5,10 @@ package g1001_1100.s1089_duplicate_zeros;
 public class Solution {
     public void duplicateZeros(int[] arr) {
         int countZero = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == 0) countZero++;
+        for (int k : arr) {
+            if (k == 0) {
+                countZero++;
+            }
         }
         int len = arr.length + countZero;
         // We just need O(1) space if we scan from back
