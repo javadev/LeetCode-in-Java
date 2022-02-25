@@ -22,7 +22,6 @@ public class Solution {
                 carry = 0;
             }
         }
-
         return sb.reverse().toString();
     }
 }
