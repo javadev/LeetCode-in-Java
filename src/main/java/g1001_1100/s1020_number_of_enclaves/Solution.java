@@ -14,9 +14,7 @@ public class Solution {
         if (a[x][y] == 0) {
             return;
         }
-
         visited[x][y] = true;
-
         walk(a, visited, x - 1, y);
         walk(a, visited, x, y - 1);
         walk(a, visited, x, y + 1);
@@ -27,17 +25,14 @@ public class Solution {
         int n = a.length;
         int m = a[0].length;
         boolean[][] visited = new boolean[n][m];
-
         for (int i = 0; i < n; ++i) {
             walk(a, visited, i, 0);
             walk(a, visited, i, m - 1);
         }
-
         for (int j = 0; j < m; ++j) {
             walk(a, visited, 0, j);
             walk(a, visited, n - 1, j);
         }
-
         int unreachables = 0;
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < m; ++j) {
@@ -46,7 +41,6 @@ public class Solution {
                 }
             }
         }
-
         return unreachables;
     }
 }
