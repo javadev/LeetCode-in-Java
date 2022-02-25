@@ -34,7 +34,7 @@ public class Solution {
                             (int)
                                     (n
                                             / Math.pow(
-                                                    10, String.valueOf(n).length() - (index2 + 1))
+                                                    10, String.valueOf(n).length() - (index2 + 1.0))
                                             % 10);
                     if (index2 < index1) {
                         if (hs.contains(index2Digit)) {
@@ -50,8 +50,9 @@ public class Solution {
                             int inIndex2Range = 0;
                             for (int j : hs) {
                                 if ((index2 < nStrLength - 1 && j <= index2Digit - 1)
-                                        || (index2 == nStrLength - 1 && j <= index2Digit))
+                                        || (index2 == nStrLength - 1 && j <= index2Digit)) {
                                     inIndex2Range++;
+                                }
                             }
                             if (index2 == nStrLength - 1) {
                                 noRepeatCountLocal = index2Digit + 1 - inIndex2Range;
@@ -63,7 +64,9 @@ public class Solution {
                         noRepeatCountLocal *= mutations - index2;
                     }
                 }
-                if (noRepeatCountLocal > 0) noRepeatCount += noRepeatCountLocal;
+                if (noRepeatCountLocal > 0) {
+                    noRepeatCount += noRepeatCountLocal;
+                }
             }
         }
         return n - noRepeatCount;
@@ -73,8 +76,9 @@ public class Solution {
         int noRepeatCount = 0;
         int mutations = 9;
         for (int i = 0; i < numberOfDigits; i++) {
-            if (i == 0) noRepeatCount = mutations;
-            else {
+            if (i == 0) {
+                noRepeatCount = mutations;
+            } else {
                 noRepeatCount *= mutations--;
             }
         }
