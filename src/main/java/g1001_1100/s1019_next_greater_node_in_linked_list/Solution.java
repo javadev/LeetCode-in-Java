@@ -11,15 +11,12 @@ public class Solution {
         int i = 0;
         int[] arr = new int[len];
         int[] idx = new int[len];
-
         while (head != null) {
             arr[i] = head.val;
             head = head.next;
             i++;
         }
-
         hlp(arr, idx, 0);
-
         i = 0;
         while (i < idx.length) {
             int j = idx[i];
@@ -31,7 +28,6 @@ public class Solution {
             i++;
         }
         arr[i - 1] = 0;
-
         return arr;
     }
 
@@ -40,14 +36,11 @@ public class Solution {
             idx[i] = -1;
             return;
         }
-
         hlp(arr, idx, i + 1);
         int j = i + 1;
-
         while (j != -1 && arr[i] >= arr[j]) {
             j = idx[j];
         }
-
         if ((j != -1) && arr[i] >= arr[j]) {
             idx[i] = -1;
         } else {
