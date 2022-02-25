@@ -13,7 +13,9 @@ public class Solution {
         int len = arr.length + countZero;
         // We just need O(1) space if we scan from back
         // i point to the original array, j point to the new location
-        for (int i = arr.length - 1, j = len - 1; i < j; i--, j--) {
+        int i = arr.length - 1;
+        int j = len - 1;
+        while (i < j) {
             if (arr[i] != 0) {
                 if (j < arr.length) {
                     arr[j] = arr[i];
@@ -28,6 +30,8 @@ public class Solution {
                     arr[j] = arr[i];
                 }
             }
+            i--;
+            j--;
         }
     }
 }
