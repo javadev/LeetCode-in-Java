@@ -1,0 +1,30 @@
+package g1001_1100.s1021_remove_outermost_parentheses;
+
+// #Easy #String #Stack #2022_02_25_Time_4_ms_(75.39%)_Space_42.3_MB_(50.45%)
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Solution {
+    public String removeOuterParentheses(String S) {
+        List<String> primitives = new ArrayList<>();
+        for (int i = 1; i < S.length(); i++) {
+            int initialI = i - 1;
+            int left = 1;
+            while (i < S.length() && left > 0) {
+                if (S.charAt(i) == '(') {
+                    left++;
+                } else {
+                    left--;
+                }
+                i++;
+            }
+            primitives.add(S.substring(initialI, i));
+        }
+        StringBuilder sb = new StringBuilder();
+        for (String primitive : primitives) {
+            sb.append(primitive.substring(1, primitive.length() - 1));
+        }
+        return sb.toString();
+    }
+}
