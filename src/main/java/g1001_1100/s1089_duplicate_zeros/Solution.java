@@ -9,8 +9,8 @@ public class Solution {
             if (arr[i] == 0) countZero++;
         }
         int len = arr.length + countZero;
-        //We just need O(1) space if we scan from back
-        //i point to the original array, j point to the new location
+        // We just need O(1) space if we scan from back
+        // i point to the original array, j point to the new location
         for (int i = arr.length - 1, j = len - 1; i < j; i--, j--) {
             if (arr[i] != 0) {
                 if (j < arr.length) {
@@ -22,7 +22,7 @@ public class Solution {
                 }
                 j--;
                 if (j < arr.length) {
-                    //copy twice when hit '0'
+                    // copy twice when hit '0'
                     arr[j] = arr[i];
                 }
             }

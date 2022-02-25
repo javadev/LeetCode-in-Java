@@ -8,15 +8,15 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void duplicateZeros() {
-        int[] input = {1,0,2,3,0,4,5,0};
+        int[] input = {1, 0, 2, 3, 0, 4, 5, 0};
         new Solution().duplicateZeros(input);
-        assertThat(input, equalTo(new int[] {1,0,0,2,3,0,0,4}));
+        assertThat(input, equalTo(new int[] {1, 0, 0, 2, 3, 0, 0, 4}));
     }
 
     @Test
     void duplicateZeros2() {
-        int[] input = {1,2,3};
+        int[] input = {1, 2, 3};
         new Solution().duplicateZeros(input);
-        assertThat(input, equalTo(new int[] {1,2,3}));
+        assertThat(input, equalTo(new int[] {1, 2, 3}));
     }
 }
