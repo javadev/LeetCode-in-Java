@@ -17,7 +17,7 @@ public class Solution {
         }
 
         int ans = 0;
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) {
             for (int j = i - 1; j >= 0; j--) {
                 int difference = nums[i] - nums[j] + diff;
                 int temp = dp[j][difference];
@@ -26,6 +26,7 @@ public class Solution {
                     ans = dp[i][difference];
                 }
             }
+        }
 
         return ans;
     }
