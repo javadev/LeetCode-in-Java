@@ -16,7 +16,9 @@ public class Solution {
     }
 
     private Boolean check(String query, String pattern) {
-        int patternLen = pattern.length(), patternPos = 0, uppercaseCount = 0;
+        int patternLen = pattern.length();
+        int patternPos = 0;
+        int uppercaseCount = 0;
         for (int i = 0; i < query.length(); i++) {
             char c = query.charAt(i);
             if (Character.isUpperCase(c)) {
