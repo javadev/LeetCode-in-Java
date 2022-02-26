@@ -19,7 +19,6 @@ public class Solution {
                         .add(new int[] {i, j});
             }
         }
-
         int[][] res = new int[rows * cols][];
         int i = 0;
         for (List<int[]> list : map.values()) {
