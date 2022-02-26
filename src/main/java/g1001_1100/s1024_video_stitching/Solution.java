@@ -10,8 +10,9 @@ public class Solution {
         int count = 0;
         int covered = 0;
         for (int i = 0, start = 0; start < time; count++, start = covered) {
-            for (; i < clips.length && clips[i][0] <= start; i++) {
+            while (i < clips.length && clips[i][0] <= start) {
                 covered = Math.max(covered, clips[i][1]);
+                i++;
             }
             if (start == covered) {
                 return -1;
