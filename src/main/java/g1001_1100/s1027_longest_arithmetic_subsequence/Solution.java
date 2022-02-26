@@ -15,7 +15,6 @@ public class Solution {
         for (int[] d : dp) {
             Arrays.fill(d, 1);
         }
-
         int ans = 0;
         for (int i = 0; i < n; i++) {
             for (int j = i - 1; j >= 0; j--) {
@@ -27,29 +26,26 @@ public class Solution {
                 }
             }
         }
-
         return ans;
     }
 
-    public int maxElement(int[] arr) {
+    private int maxElement(int[] arr) {
         int max = Integer.MIN_VALUE;
         for (Integer e : arr) {
             if (max < e) {
                 max = e;
             }
         }
-
         return max;
     }
 
-    public int minElement(int[] arr) {
+    private int minElement(int[] arr) {
         int min = Integer.MAX_VALUE;
         for (Integer e : arr) {
             if (min > e) {
                 min = e;
             }
         }
-
         return min;
     }
 }
