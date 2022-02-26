@@ -9,7 +9,9 @@ public class Solution {
         Arrays.sort(clips, (a, b) -> a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]);
         int count = 0;
         int covered = 0;
-        for (int i = 0, start = 0; start < time; count++, start = covered) {
+        int i = 0;
+        int start = 0;
+        while (start < time) {
             while (i < clips.length && clips[i][0] <= start) {
                 covered = Math.max(covered, clips[i][1]);
                 i++;
@@ -17,6 +19,8 @@ public class Solution {
             if (start == covered) {
                 return -1;
             }
+            count++;
+            start = covered;
         }
         return count;
     }
