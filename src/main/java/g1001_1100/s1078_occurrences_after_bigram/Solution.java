@@ -10,10 +10,8 @@ public class Solution {
         List<String> list = new ArrayList<>();
         String[] str = text.split(" ");
         for (int i = 0; i < str.length; i++) {
-            if (str[i].equals(first)) {
-                if (str.length - 1 >= i + 2 && str[i + 1].equals(second)) {
-                    list.add(str[i + 2]);
-                }
+            if (str[i].equals(first) && str.length - 1 >= i + 2 && str[i + 1].equals(second)) {
+                list.add(str[i + 2]);
             }
         }
         String[] s = new String[list.size()];
