@@ -6,9 +6,9 @@ package g1001_1100.s1042_flower_planting_with_no_adjacent;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private List<Integer>[] graph;
-    private int n;
     private int[] color;
     private boolean[] visited;
 
