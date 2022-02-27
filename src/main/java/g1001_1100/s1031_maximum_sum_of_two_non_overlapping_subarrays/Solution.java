@@ -14,46 +14,33 @@ public class Solution {
             if (i < f - 1) {
                 continue;
             }
-
             pref[i] = Math.max(i > 0 ? pref[i - 1] : 0, sum);
-
             sum -= nums[i + 1 - f];
         }
-
         sum = 0;
         for (int i = n - 1; i >= 0; i--) {
             sum += nums[i];
             if (i > n - f) {
                 continue;
             }
-
             suff[i] = Math.max(i < n - 1 ? suff[i + 1] : 0, sum);
-
             sum -= nums[i + f - 1];
         }
-
         sum = 0;
-
         for (int i = 0; i < s - 1; i++) {
             sum += nums[i];
         }
-
         int ans = Integer.MIN_VALUE;
         for (int i = s - 1; i < n; i++) {
-
             sum += nums[i];
-
             if (i >= s) {
                 ans = Math.max(ans, pref[i - s] + sum);
             }
-
             if (i < n - 1) {
                 ans = Math.max(ans, suff[i + 1] + sum);
             }
-
             sum -= nums[i + 1 - s];
         }
-
         return ans;
     }
 }
