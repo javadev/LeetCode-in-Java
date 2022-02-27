@@ -16,7 +16,7 @@ public class Solution {
         return 2;
     }
 
-    private int maxMoves(int x, int y, int z) {
+    private int maxMoves(int x, int z) {
         return z - x - 2;
     }
 
@@ -25,7 +25,7 @@ public class Solution {
         Arrays.sort(t);
 
         int min = minMoves(t[0], t[1], t[2]);
-        int max = maxMoves(t[0], t[1], t[2]);
+        int max = maxMoves(t[0], t[2]);
 
         return new int[] {min, max};
     }
