@@ -48,7 +48,7 @@ spotless {
     java {
         encoding 'UTF-8'
         target fileTree(projectDir) {
-            include '**/src/*.java'
+            include '**/src/**/*.java'
             exclude '**/build/**'
         }
         importOrder '\\#', '', '*'
