@@ -12,7 +12,6 @@ public class Solution {
         if (y - x <= 2 || z - y <= 2) {
             return 1;
         }
-
         return 2;
     }
 
@@ -23,10 +22,8 @@ public class Solution {
     public int[] numMovesStones(int a, int b, int c) {
         int[] t = {a, b, c};
         Arrays.sort(t);
-
         int min = minMoves(t[0], t[1], t[2]);
         int max = maxMoves(t[0], t[2]);
-
         return new int[] {min, max};
     }
 }
