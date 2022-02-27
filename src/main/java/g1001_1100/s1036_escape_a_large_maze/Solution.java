@@ -17,8 +17,8 @@ public class Solution {
                 blocks.add(b[0] * 1000000 + b[1]);
             }
         }
-        return dfs(blocks, source, source[0], source[1], new HashSet<Integer>(), target)
-                && dfs(blocks, target, target[0], target[1], new HashSet<Integer>(), source);
+        return dfs(blocks, source, source[0], source[1], new HashSet<>(), target)
+                && dfs(blocks, target, target[0], target[1], new HashSet<>(), source);
     }
 
     private boolean dfs(
