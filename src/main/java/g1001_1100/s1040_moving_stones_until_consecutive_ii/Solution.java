@@ -21,13 +21,11 @@ public class Solution {
                 i++;
                 continue;
             }
-
             if (wsize == n - 1 && scount == n - 1) {
                 minMoves = Math.min(minMoves, 2);
             } else {
                 minMoves = Math.min(minMoves, n - scount);
             }
-
             j++;
         }
         ans[0] = minMoves;
@@ -40,7 +38,6 @@ public class Solution {
                             ((stones[n - 1] - stones[1]) - (n - 1) + 1),
                             ((stones[n - 2] - stones[0]) - (n - 1) + 1));
         }
-
         ans[1] = maxMoves;
         return ans;
     }
