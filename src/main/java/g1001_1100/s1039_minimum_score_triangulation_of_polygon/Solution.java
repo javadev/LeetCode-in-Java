@@ -6,11 +6,11 @@ import java.util.Arrays;
 
 public class Solution {
 
-    private static final int[][] dP = new int[101][101];
+    private static final int[][] DP = new int[101][101];
 
     public int minScoreTriangulation(int[] values) {
         int n = values.length;
-        for (int[] row : dP) {
+        for (int[] row : DP) {
             Arrays.fill(row, -1);
         }
         return util(values, 1, n - 1);
@@ -20,8 +20,8 @@ public class Solution {
         if (i >= j) {
             return 0;
         }
-        if (dP[i][j] != -1) {
-            return dP[i][j];
+        if (DP[i][j] != -1) {
+            return DP[i][j];
         }
 
         int ans = Integer.MAX_VALUE;
@@ -33,9 +33,9 @@ public class Solution {
                             + (values[i - 1] * values[k] * values[j]);
 
             ans = Math.min(ans, temp);
-            dP[i][j] = ans;
+            DP[i][j] = ans;
         }
 
-        return dP[i][j];
+        return DP[i][j];
     }
 }
