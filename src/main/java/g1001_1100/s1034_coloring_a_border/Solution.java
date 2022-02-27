@@ -1,8 +1,6 @@
 package g1001_1100.s1034_coloring_a_border;
 
 // #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix
-// #2022_02_27_Time_11_ms_(5.70%)_Space_55.1_MB_(9.60%)
-// #2022_02_27_Time_1_ms_(93.85%)_Space_55_MB_(9.60%)
 // #2022_02_27_Time_1_ms_(93.85%)_Space_55.3_MB_(9.60%)
 
 public class Solution {
@@ -26,23 +24,18 @@ public class Solution {
                 || Math.abs(grid[r][c]) != stColor) {
             return 0;
         }
-
         if (grid[r][c] == -stColor) {
             return 1;
         }
-
         grid[r][c] = -grid[r][c];
-
         int count = 0;
         count += getComp(grid, r - 1, c, color, stColor);
         count += getComp(grid, r + 1, c, color, stColor);
         count += getComp(grid, r, c - 1, color, stColor);
         count += getComp(grid, r, c + 1, color, stColor);
-
         if (count == 4) {
             grid[r][c] = -grid[r][c];
         }
-
         return 1;
     }
 }
