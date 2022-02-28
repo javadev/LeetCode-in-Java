@@ -1,0 +1,113 @@
+package g1101_1200.s1106_parsing_a_boolean_expression;
+
+// #Hard #String #Stack #Recursion #2022_02_28_Time_3_ms_(93.78%)_Space_42_MB_(70.54%)
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Solution {
+    private String source;
+    private int index;
+
+    public boolean parseBoolExpr(String expression) {
+        this.source = expression;
+        this.index = 0;
+
+        return expr();
+    }
+
+    private boolean expr() {
+        boolean res = false;
+
+        if (match('!')) {
+            res = not();
+        } else if (match('&')) {
+            res = and();
+        } else if (match('|')) {
+            res = or();
+        } else {
+            res = bool();
+        }
+
+        return res;
+    }
+
+    private boolean not() {
+        consume('!', "Expect '!'");
+
+        return !group().get(0);
+    }
+
+    private boolean or() {
+        consume('|', "Expect '|'");
+
+        boolean res = false;
+        for (boolean e : group()) {
+            res |= e;
+        }
+
+        return res;
+    }
+
+    private boolean and() {
+        consume('&', "Expect '&'");
+
+        boolean res = true;
+        for (boolean e : group()) {
+            res &= e;
+        }
+
+        return res;
+    }
+
+    private List<Boolean> group() {
+        consume('(', "Expect '('");
+
+        List<Boolean> res = new ArrayList<>();
+        while (!match(')')) {
+            res.add(expr());
+
+            if (match(',')) {
+                advance();
+            }
+        }
+
+        consume(')', "Expect ')'");
+
+        return res;
+    }
+
+    private boolean bool() {
+        boolean isTrue = match('t');
+        advance();
+        return isTrue;
+    }
+
+    private boolean isAtEnd() {
+        return index >= source.length();
+    }
+
+    private void advance() {
+        if (isAtEnd()) return;
+
+        index++;
+    }
+
+    private char peek() {
+        return source.charAt(index);
+    }
+
+    private boolean match(char ch) {
+        if (isAtEnd()) return false;
+
+        return peek() == ch;
+    }
+
+    private void consume(char ch, String message) {
+        if (!match(ch)) {
+            System.out.println(message);
+            return;
+        }
+        advance();
+    }
+}
