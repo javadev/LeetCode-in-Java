@@ -20,7 +20,7 @@ Include the following in your `pom.xml` for Maven:
   <dependency>
     <groupId>com.github.javadev</groupId>
     <artifactId>leetcode-in-java</artifactId>
-    <version>1.6</version>
+    <version>1.7</version>
   </dependency>
   ...
 </dependencies>
@@ -29,7 +29,7 @@ Include the following in your `pom.xml` for Maven:
 Gradle:
 
 ```groovy
-implementation 'com.github.javadev:leetcode-in-java:1.6'
+implementation 'com.github.javadev:leetcode-in-java:1.7'
 ```
 
 #### Tips and Tricks
