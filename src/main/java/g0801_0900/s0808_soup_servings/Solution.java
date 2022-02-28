@@ -34,20 +34,4 @@ public class Solution {
         mem[a][b] = 0.25 * prob;
         return mem[a][b];
     }
-
-    private double find(int a, int b) {
-        if (a <= 0 && b <= 0) {
-            return 0.5;
-        } else if (a <= 0) {
-            return 1;
-        } else if (b <= 0) {
-            return 0;
-        }
-        double prob;
-        prob = find(a - 100, b);
-        prob += find(a - 75, b - 25);
-        prob += find(a - 50, b - 50);
-        prob += find(a - 25, b - 75);
-        return 0.25 * prob;
-    }
 }

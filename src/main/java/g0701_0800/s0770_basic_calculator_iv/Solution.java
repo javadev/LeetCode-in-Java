@@ -50,8 +50,7 @@ public class Solution {
                 output.add("" + expr.terms.get(term) + (term.equals("") ? "" : "*" + term));
             }
         }
-        Collections.sort(
-                output,
+        output.sort(
                 (a, b) -> {
                     int aStar = 0;
                     int bStar = 0;
