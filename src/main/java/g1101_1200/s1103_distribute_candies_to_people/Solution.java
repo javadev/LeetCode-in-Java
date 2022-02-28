@@ -6,7 +6,6 @@ public class Solution {
     public int[] distributeCandies(int candies, int numPeople) {
         int[] candiesDistribution = new int[numPeople];
         int count = 1;
-
         while (candies > 0) {
             for (int i = 0; i < numPeople; i++) {
                 if (candies >= count) {
@@ -17,13 +16,11 @@ public class Solution {
                     candiesDistribution[i] += candies;
                     candies -= candies;
                 }
-
                 if (candies == 0) {
                     return candiesDistribution;
                 }
             }
         }
-
         return candiesDistribution;
     }
 }
