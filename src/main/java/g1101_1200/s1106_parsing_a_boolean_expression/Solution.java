@@ -88,7 +88,9 @@ public class Solution {
     }
 
     private void advance() {
-        if (isAtEnd()) return;
+        if (isAtEnd()) {
+            return;
+        }
 
         index++;
     }
@@ -98,14 +100,15 @@ public class Solution {
     }
 
     private boolean match(char ch) {
-        if (isAtEnd()) return false;
+        if (isAtEnd()) {
+            return false;
+        }
 
         return peek() == ch;
     }
 
     private void consume(char ch, String message) {
         if (!match(ch)) {
-            System.out.println(message);
             return;
         }
         advance();
