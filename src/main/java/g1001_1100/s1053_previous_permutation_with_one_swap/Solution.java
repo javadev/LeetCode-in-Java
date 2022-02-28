@@ -8,11 +8,9 @@ public class Solution {
             int diff = Integer.MAX_VALUE;
             int index = i;
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] - arr[j] > 0) {
-                    if (diff > arr[i] - arr[j]) {
-                        diff = arr[i] - arr[j];
-                        index = j;
-                    }
+                if (arr[i] - arr[j] > 0 && diff > arr[i] - arr[j]) {
+                    diff = arr[i] - arr[j];
+                    index = j;
                 }
             }
             if (diff != Integer.MAX_VALUE) {
