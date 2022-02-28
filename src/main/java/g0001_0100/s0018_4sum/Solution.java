@@ -29,7 +29,7 @@ public class Solution {
                 while (k < l) {
                     int sum = nums[i] + nums[j] + nums[k] + nums[l];
                     if (sum == target) {
-                        ArrayList<Integer> l1 = new ArrayList<Integer>();
+                        ArrayList<Integer> l1 = new ArrayList<>();
                         l1.add(nums[i]);
                         l1.add(nums[j]);
                         l1.add(nums[k]);

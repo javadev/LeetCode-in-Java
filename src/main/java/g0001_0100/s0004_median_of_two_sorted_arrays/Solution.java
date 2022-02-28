@@ -3,6 +3,7 @@ package g0001_0100.s0004_median_of_two_sorted_arrays;
 // #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Binary_Search #Divide_and_Conquer
 // #2022_02_21_Time_3_ms_(79.08%)_Space_50_MB_(17.49%)
 
+@SuppressWarnings("java:S2234")
 public class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         if (nums2.length < nums1.length) {
