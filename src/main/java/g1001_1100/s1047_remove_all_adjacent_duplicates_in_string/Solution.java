@@ -15,7 +15,7 @@ public class Solution {
             if (slow == 0 || array[fast] != array[slow - 1]) {
                 array[slow++] = array[fast++];
             } else {
-                if (fast < length && array[fast] == array[slow - 1]) {
+                if (array[fast] == array[slow - 1]) {
                     fast++;
                 }
                 slow--;
