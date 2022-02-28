@@ -4,6 +4,8 @@ package g1101_1200.s1106_parsing_a_boolean_expression;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Solution {
     private String source;
@@ -95,6 +97,7 @@ public class Solution {
 
     private void consume(char ch, String message) {
         if (!match(ch)) {
+            Logger.getLogger(Solution.class.getName()).log(Level.SEVERE, () -> message);
             return;
         }
         advance();
