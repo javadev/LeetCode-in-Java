@@ -19,7 +19,7 @@ public class Solution {
                 if (s.length() < p2 + 1) {
                     res.append(s.substring(p1 + k));
                 } else {
-                    res.append(s.substring(p1 + k, p2 + 1));
+                    res.append(s, p1 + k, p2 + 1);
                 }
             }
             p1 = p1 + 2 * k;

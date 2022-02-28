@@ -16,19 +16,15 @@ public class Solution {
         int i = arr.length - 1;
         int j = len - 1;
         while (i < j) {
-            if (arr[i] != 0) {
-                if (j < arr.length) {
-                    arr[j] = arr[i];
-                }
-            } else {
+            // copy twice when hit '0'
+            if (arr[i] == 0) {
                 if (j < arr.length) {
                     arr[j] = arr[i];
                 }
                 j--;
-                if (j < arr.length) {
-                    // copy twice when hit '0'
-                    arr[j] = arr[i];
-                }
+            }
+            if (j < arr.length) {
+                arr[j] = arr[i];
             }
             i--;
             j--;

@@ -4,6 +4,6 @@ package g0501_0600.s0504_base_7;
 
 public class Solution {
     public String convertToBase7(int num) {
-        return String.valueOf(Integer.toString(num, 7));
+        return Integer.toString(num, 7);
     }
 }

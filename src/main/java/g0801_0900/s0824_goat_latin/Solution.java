@@ -12,7 +12,7 @@ public class Solution {
                 sb.append(word).append("ma");
             } else {
                 char firstChar = word.charAt(0);
-                sb.append(word.substring(1, word.length())).append(firstChar).append("ma");
+                sb.append(word.substring(1)).append(firstChar).append("ma");
             }
             a.append("a");
             sb.append(a);
