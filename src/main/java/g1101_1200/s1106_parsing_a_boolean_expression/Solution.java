@@ -12,13 +12,11 @@ public class Solution {
     public boolean parseBoolExpr(String expression) {
         this.source = expression;
         this.index = 0;
-
         return expr();
     }
 
     private boolean expr() {
         boolean res = false;
-
         if (match('!')) {
             res = not();
         } else if (match('&')) {
@@ -28,52 +26,42 @@ public class Solution {
         } else {
             res = bool();
         }
-
         return res;
     }
 
     private boolean not() {
         consume('!', "Expect '!'");
-
         return !group().get(0);
     }
 
     private boolean or() {
         consume('|', "Expect '|'");
-
         boolean res = false;
         for (boolean e : group()) {
             res |= e;
         }
-
         return res;
     }
 
     private boolean and() {
         consume('&', "Expect '&'");
-
         boolean res = true;
         for (boolean e : group()) {
             res &= e;
         }
-
         return res;
     }
 
     private List<Boolean> group() {
         consume('(', "Expect '('");
-
         List<Boolean> res = new ArrayList<>();
         while (!match(')')) {
             res.add(expr());
-
             if (match(',')) {
                 advance();
             }
         }
-
         consume(')', "Expect ')'");
-
         return res;
     }
 
@@ -91,7 +79,6 @@ public class Solution {
         if (isAtEnd()) {
             return;
         }
-
         index++;
     }
 
@@ -103,7 +90,6 @@ public class Solution {
         if (isAtEnd()) {
             return false;
         }
-
         return peek() == ch;
     }
 
