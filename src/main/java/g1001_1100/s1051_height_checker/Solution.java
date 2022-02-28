@@ -21,7 +21,9 @@ public class Solution {
             }
         }
         for (int i = 0; i < heights.length; i++) {
-            if (actualLine[i] != heights[i]) heightDiff++;
+            if (actualLine[i] != heights[i]) {
+                heightDiff++;
+            }
         }
         return heightDiff;
     }
