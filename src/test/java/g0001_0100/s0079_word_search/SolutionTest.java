@@ -1,4 +1,4 @@
-package g0001_0100.s0079_submissions;
+package g0001_0100.s0079_word_search;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
