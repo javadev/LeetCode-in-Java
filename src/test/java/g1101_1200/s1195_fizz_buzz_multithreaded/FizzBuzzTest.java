@@ -38,13 +38,16 @@ class FizzBuzzTest {
         new Thread(
                         () -> {
                             try {
-                                fizzBuzz.number(value -> {});
+                                fizzBuzz.number(
+                                        value -> {
+                                            fizz[0]++;
+                                        });
                             } catch (InterruptedException e) {
                             }
                         })
                 .start();
         TimeUnit.MILLISECONDS.sleep(100);
-        assertThat(fizz[0], equalTo(7));
+        assertThat(fizz[0], equalTo(15));
     }
 
     @Test
@@ -78,12 +81,15 @@ class FizzBuzzTest {
         new Thread(
                         () -> {
                             try {
-                                fizzBuzz.number(value -> {});
+                                fizzBuzz.number(
+                                        value -> {
+                                            fizz[0]++;
+                                        });
                             } catch (InterruptedException e) {
                             }
                         })
                 .start();
         TimeUnit.MILLISECONDS.sleep(100);
-        assertThat(fizz[0], equalTo(2));
+        assertThat(fizz[0], equalTo(5));
     }
 }
