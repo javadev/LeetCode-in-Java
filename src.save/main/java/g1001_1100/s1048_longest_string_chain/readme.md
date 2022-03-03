@@ -18,7 +18,7 @@ Return _the **length** of the **longest possible word chain** with words chosen 
 
 **Output:** 4
 
-**Explanation:**: One of the longest word chains is ["a","ba","bda","bdca"].
+**Explanation:** One of the longest word chains is ["a","ba","bda","bdca"].
 
 **Example 2:**
 
