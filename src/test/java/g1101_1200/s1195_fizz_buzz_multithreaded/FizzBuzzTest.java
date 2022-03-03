@@ -43,7 +43,47 @@ class FizzBuzzTest {
                             }
                         })
                 .start();
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.MILLISECONDS.sleep(100);
         assertThat(fizz[0], equalTo(7));
+    }
+
+    @Test
+    void fizzBuzz2() throws InterruptedException {
+        int[] fizz = {0};
+        FizzBuzz fizzBuzz = new FizzBuzz(5);
+        new Thread(
+                        () -> {
+                            try {
+                                fizzBuzz.fizz(() -> fizz[0]++);
+                            } catch (InterruptedException e) {
+                            }
+                        })
+                .start();
+        new Thread(
+                        () -> {
+                            try {
+                                fizzBuzz.buzz(() -> fizz[0]++);
+                            } catch (InterruptedException e) {
+                            }
+                        })
+                .start();
+        new Thread(
+                        () -> {
+                            try {
+                                fizzBuzz.fizzbuzz(() -> fizz[0]++);
+                            } catch (InterruptedException e) {
+                            }
+                        })
+                .start();
+        new Thread(
+                        () -> {
+                            try {
+                                fizzBuzz.number(value -> {});
+                            } catch (InterruptedException e) {
+                            }
+                        })
+                .start();
+        TimeUnit.MILLISECONDS.sleep(100);
+        assertThat(fizz[0], equalTo(2));
     }
 }
