@@ -28,7 +28,8 @@ public class Solution {
     }
 
     private long kadane(int[] arr) {
-        long max = arr[0], cur = 0;
+        long max = arr[0];
+        long cur = 0;
         for (int n : arr) {
             cur += n;
             max = Math.max(max, cur);

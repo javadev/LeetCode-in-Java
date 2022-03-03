@@ -5,6 +5,7 @@ package g1101_1200.s1195_fizz_buzz_multithreaded;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.IntConsumer;
 
+@SuppressWarnings("java:S1130")
 public class FizzBuzz {
     private final AtomicInteger count = new AtomicInteger(1);
 
