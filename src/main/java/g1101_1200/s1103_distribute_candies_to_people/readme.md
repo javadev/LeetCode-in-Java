@@ -34,7 +34,7 @@ On the fourth turn, ans[3] += 1 (because there is only one candy left), and the 
 
 **Output:** [5,2,3]
 
-**Explanation:**  
+**Explanation:**
 
 On the first turn, ans[0] += 1, and the array is [1,0,0]. 
 

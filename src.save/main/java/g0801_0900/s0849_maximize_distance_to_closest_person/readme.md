@@ -18,7 +18,7 @@ Return _that maximum distance to the closest person_.
 
 **Output:** 2
 
-**Explanation:**  
+**Explanation:**
 
 If Alex sits in the second open seat (i.e. seats[2]), then the closest person has distance 2. 
 
@@ -32,7 +32,7 @@ Thus, the maximum distance to the closest person is 2.
 
 **Output:** 3
 
-**Explanation:**  
+**Explanation:**
 
 If Alex sits in the last seat (i.e. seats[3]), the closest person is 3 seats away. 
 

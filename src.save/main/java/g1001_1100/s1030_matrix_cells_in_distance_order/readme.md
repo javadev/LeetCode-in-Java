@@ -12,7 +12,7 @@ Return _the minimum cost to fly every person to a city_ such that exactly `n` pe
 
 **Output:** 110
 
-**Explanation:**  
+**Explanation:**
 
 The first person goes to city A for a cost of 10. 
 

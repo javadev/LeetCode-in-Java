@@ -12,7 +12,7 @@ Recall that a _subsequence_ of an array `nums` is a list <code>nums[i<sub>1</sub
 
 **Output:** 4
 
-**Explanation:**  The whole array is an arithmetic sequence with steps of length = 3.
+**Explanation:** The whole array is an arithmetic sequence with steps of length = 3.
 
 **Example 2:**
 
@@ -20,7 +20,7 @@ Recall that a _subsequence_ of an array `nums` is a list <code>nums[i<sub>1</sub
 
 **Output:** 3
 
-**Explanation:**  The longest arithmetic subsequence is [4,7,10].
+**Explanation:** The longest arithmetic subsequence is [4,7,10].
 
 **Example 3:**
 
@@ -28,7 +28,7 @@ Recall that a _subsequence_ of an array `nums` is a list <code>nums[i<sub>1</sub
 
 **Output:** 4
 
-**Explanation:**  The longest arithmetic subsequence is [20,15,10,5].
+**Explanation:** The longest arithmetic subsequence is [20,15,10,5].
 
 **Constraints:**
 

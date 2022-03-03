@@ -12,7 +12,7 @@ As the answer can be very large, return it **modulo** <code>10<sup>9</sup> + 7</
 
 **Output:** 20
 
-**Explanation:**  
+**Explanation:**
 
     Enumerating by the values (arr[i], arr[j], arr[k]): 
     (1, 2, 5) occurs 8 times; 
@@ -26,7 +26,7 @@ As the answer can be very large, return it **modulo** <code>10<sup>9</sup> + 7</
 
 **Output:** 12
 
-**Explanation:**  
+**Explanation:**
 
 arr[i] = 1, arr[j] = arr[k] = 2 occurs 12 times: 
 
