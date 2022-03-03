@@ -8,9 +8,8 @@ public class Solution {
         int maxWithOneDeletion = arr[0];
         int maxOverall = arr[0];
         for (int i = 1; i < arr.length; i++) {
-            int numToProcess = arr[i],
-                    nextMaxWithNoDeletions =
-                            Math.max(maxWithNoDeletions + numToProcess, numToProcess);
+            int numToProcess = arr[i];
+            int nextMaxWithNoDeletions = Math.max(maxWithNoDeletions + numToProcess, numToProcess);
             int nextMaxWithOneDeletion =
                     Math.max(maxWithOneDeletion + numToProcess, maxWithNoDeletions);
             maxOverall =
