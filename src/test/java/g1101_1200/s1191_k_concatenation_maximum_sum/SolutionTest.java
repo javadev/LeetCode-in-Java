@@ -20,4 +20,9 @@ class SolutionTest {
     void kConcatenationMaxSum3() {
         assertThat(new Solution().kConcatenationMaxSum(new int[] {-1, -2}, 7), equalTo(0));
     }
+
+    @Test
+    void kConcatenationMaxSum4() {
+        assertThat(new Solution().kConcatenationMaxSum(new int[] {-1, -2}, 1), equalTo(-1));
+    }
 }
