@@ -7,7 +7,6 @@ import java.util.Arrays;
 
 public class Solution {
     public int makeArrayIncreasing(int[] arr1, int[] arr2) {
-        int l1 = arr1.length;
         Arrays.sort(arr2);
         int start = 0;
         for (int i = 0; i < arr2.length; i++) {

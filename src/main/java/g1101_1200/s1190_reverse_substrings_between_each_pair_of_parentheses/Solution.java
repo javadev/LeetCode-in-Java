@@ -6,7 +6,8 @@ public class Solution {
     public String reverseParentheses(String s) {
         int n = s.length();
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < n; i++) {
+        int i = 0;
+        while (i < n) {
             if (s.charAt(i) == '(') {
                 int l = 1;
                 int r = 0;
@@ -25,6 +26,7 @@ public class Solution {
             } else {
                 sb.append(s.charAt(i));
             }
+            i++;
         }
         return sb.toString();
     }
