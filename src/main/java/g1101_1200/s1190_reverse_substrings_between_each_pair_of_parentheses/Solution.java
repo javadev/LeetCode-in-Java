@@ -13,13 +13,18 @@ public class Solution {
                 int idx = i;
                 while (l != r) {
                     i++;
-                    if (s.charAt(i) == '(') l++;
-                    else if (s.charAt(i) == ')') r++;
+                    if (s.charAt(i) == '(') {
+                        l++;
+                    } else if (s.charAt(i) == ')') {
+                        r++;
+                    }
                 }
                 String reversed = reverseParentheses(s.substring(idx + 1, i));
                 StringBuilder temp = new StringBuilder().append(reversed);
                 sb.append(temp.reverse());
-            } else sb.append(s.charAt(i));
+            } else {
+                sb.append(s.charAt(i));
+            }
         }
         return sb.toString();
     }
