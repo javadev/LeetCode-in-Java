@@ -12,9 +12,9 @@ public class Solution {
     }
 
     private List<Boolean> canMakeP(String s, int[][] qs) {
-        int N = s.length();
-        int[] counts = new int[N];
-        for (int i = 0; i < N; i++) {
+        int n = s.length();
+        int[] counts = new int[n];
+        for (int i = 0; i < n; i++) {
             int m = 0;
             if (i > 0) {
                 m = counts[i - 1];
@@ -31,7 +31,9 @@ public class Solution {
     }
 
     private boolean check(int[] q, int[] counts) {
-        int l = q[0], r = q[1], k = q[2];
+        int l = q[0];
+        int r = q[1];
+        int k = q[2];
         int prev = l > 0 ? counts[l - 1] : 0;
         int kk = Integer.bitCount(prev ^ counts[r]);
         return (kk / 2) <= k;

@@ -4,13 +4,15 @@ package g1101_1200.s1186_maximum_subarray_sum_with_one_deletion;
 
 public class Solution {
     public int maximumSum(int[] arr) {
-        int maxWithNoDeletions = arr[0], maxWithOneDeletion = arr[0], maxOverall = arr[0];
+        int maxWithNoDeletions = arr[0];
+        int maxWithOneDeletion = arr[0];
+        int maxOverall = arr[0];
         for (int i = 1; i < arr.length; i++) {
             int numToProcess = arr[i],
                     nextMaxWithNoDeletions =
-                            Math.max(maxWithNoDeletions + numToProcess, numToProcess),
-                    nextMaxWithOneDeletion =
-                            Math.max(maxWithOneDeletion + numToProcess, maxWithNoDeletions);
+                            Math.max(maxWithNoDeletions + numToProcess, numToProcess);
+            int nextMaxWithOneDeletion =
+                    Math.max(maxWithOneDeletion + numToProcess, maxWithNoDeletions);
             maxOverall =
                     Math.max(maxOverall, Math.max(nextMaxWithNoDeletions, nextMaxWithOneDeletion));
             maxWithNoDeletions = nextMaxWithNoDeletions;

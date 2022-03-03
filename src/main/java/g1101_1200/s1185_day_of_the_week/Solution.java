@@ -19,20 +19,18 @@ public class Solution {
 
     private int chooseYear(int year) {
         if (year >= 100 && year < 200) {
-            return (int) Math.floor((year - 100) / 4) + year - 100 + 5;
+            return (int) Math.floor((year - 100.0) / 4) + year - 100 + 5;
         } else if (year >= 200 && year < 300) {
-            return (int) Math.floor((year - 200) / 4) + year - 200 + 3;
+            return (int) Math.floor((year - 200.0) / 4) + year - 200 + 3;
         } else if (year >= 300 && year < 400) {
-            return (int) Math.floor((year - 300) / 4) + year - 300 + 1;
+            return (int) Math.floor((year - 300.0) / 4) + year - 300 + 1;
         } else {
-            return (int) Math.floor(year / 4) + year;
+            return (int) Math.floor(year * 1.0 / 4) + year;
         }
     }
 
     private int chooseMonth(int month) {
         switch (month) {
-            case 1:
-                return 0;
             case 2:
             case 3:
                 return 3;
@@ -54,8 +52,9 @@ public class Solution {
                 return 24;
             case 12:
                 return 26;
+            default:
+                return 0;
         }
-        return 0;
     }
 
     private String chooseDay(int day) {
@@ -74,7 +73,8 @@ public class Solution {
                 return "Friday";
             case 6:
                 return "Saturday";
+            default:
+                return "";
         }
-        return "";
     }
 }

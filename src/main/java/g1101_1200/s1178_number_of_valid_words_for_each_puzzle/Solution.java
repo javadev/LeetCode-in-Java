@@ -28,9 +28,11 @@ public class Solution {
             int sub = puzzlemask;
             int count = 0;
             while (sub != 0) {
-                boolean _1stCharPresent = (sub & first) == first;
+                boolean firstCharPresent = (sub & first) == first;
                 boolean wordvalid = map.containsKey(sub);
-                if (_1stCharPresent && wordvalid) count += map.get(sub);
+                if (firstCharPresent && wordvalid) {
+                    count += map.get(sub);
+                }
 
                 sub = (sub - 1) & puzzlemask;
             }
