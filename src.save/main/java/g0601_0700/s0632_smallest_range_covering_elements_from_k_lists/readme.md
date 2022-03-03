@@ -12,7 +12,7 @@ We define the range `[a, b]` is smaller than range `[c, d]` if `b - a < d - c` *
 
 **Output:** [20,24]
 
-**Explanation:**  List 1: [4, 10, 15, 24,26], 24 is in range [20,24]. List 2: [0, 9, 12, 20], 20 is in range [20,24]. List 3: [5, 18, 22, 30], 22 is in range [20,24].
+**Explanation:** List 1: [4, 10, 15, 24,26], 24 is in range [20,24]. List 2: [0, 9, 12, 20], 20 is in range [20,24]. List 3: [5, 18, 22, 30], 22 is in range [20,24].
 
 **Example 2:**
 
