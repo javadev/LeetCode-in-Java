@@ -1,6 +1,7 @@
 package g0101_0200.s0190_reverse_bits;
 
 // #Easy #Top_Interview_Questions #Bit_Manipulation #Divide_and_Conquer
+// #Algorithm_I_Day_14_Bit_Manipulation #2022_03_04_Time_1_ms_(89.07%)_Space_42.1_MB_(38.84%)
 
 public class Solution {
     // you need treat n as an unsigned value
