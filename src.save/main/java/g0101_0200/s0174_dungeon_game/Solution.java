@@ -1,6 +1,6 @@
 package g0101_0200.s0174_dungeon_game;
 
-// #Hard #Array #Dynamic_Programming #Matrix
+// #Hard #Array #Dynamic_Programming #Matrix #2022_03_04_Time_1_ms_(96.60%)_Space_44.5_MB_(13.03%)
 
 public class Solution {
     public int calculateMinimumHP(int[][] dungeon) {
