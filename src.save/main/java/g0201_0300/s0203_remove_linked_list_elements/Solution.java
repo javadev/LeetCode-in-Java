@@ -1,6 +1,7 @@
 package g0201_0300.s0203_remove_linked_list_elements;
 
-// #Easy #Linked_List #Recursion
+// #Easy #Linked_List #Recursion #Data_Structure_I_Day_7_Linked_List
+// #2022_03_04_Time_1_ms_(90.35%)_Space_49.2_MB_(24.46%)
 
 import com_github_leetcode.ListNode;
 
