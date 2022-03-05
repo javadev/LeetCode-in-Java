@@ -1,52 +1,80 @@
 package g0201_0300.s0211_design_add_and_search_words_data_structure;
 
 // #Medium #String #Depth_First_Search #Design #Trie
+// #2022_03_05_Time_403_ms_(18.89%)_Space_103.7_MB_(18.65%)
 
-import java.util.ArrayList;
-
-@SuppressWarnings({"unchecked", "java:S3626"})
 public class WordDictionary {
 
-    private ArrayList<String>[] dict = new ArrayList[501];
+    private static class Node {
+        char value;
+        boolean isEnd;
+        Node[] childs;
 
-    public WordDictionary() {
-        // Initialize your data structure here.
-    }
-
-    // Adds a word into the data structure.
-    public void addWord(String word) {
-        ArrayList<String> a = dict[word.length()];
-        if (a == null) {
-            a = new ArrayList<>();
+        Node(char value) {
+            this.value = value;
+            this.isEnd = false;
+            this.childs = new Node[26];
         }
-        a.add(word);
-        dict[word.length()] = a;
+
+        Node getChild(char ch) {
+            return this.childs[ch - 'a'];
+        }
+
+        boolean isChild(char ch) {
+            return getChild(ch) != null;
+        }
+
+        void addChild(char ch) {
+            this.childs[ch - 'a'] = new Node(ch);
+        }
+    }
+    // dummy value
+    private Node root = new Node('a');
+
+    public WordDictionary() {}
+
+    public void addWord(String word) {
+        Node node = root;
+        for (int i = 0; i < word.length(); i++) {
+            char ch = word.charAt(i);
+            if (!node.isChild(ch)) node.addChild(ch);
+            node = node.getChild(ch);
+        }
+        node.isEnd = true;
     }
 
-    // Returns if the word is in the data structure. A word could contain the dot character '.' to
-    // represent any one letter.
     public boolean search(String word) {
-        if (dict[word.length()] == null) {
+        return dfs(this.root, word, 0);
+    }
+
+    public boolean dfs(Node root, String word, int index) {
+        if (root == null) {
             return false;
         }
-        ArrayList<String> a = dict[word.length()];
-        for (String s : a) {
-            boolean match = true;
-            for (int i = 0; i < word.length(); i++) {
-                if (word.charAt(i) != '.' && s.charAt(i) != word.charAt(i)) {
-                    match = false;
-                    break;
+        // if reached end of word
+        if (index == word.length()) {
+            return root.isEnd;
+        }
+        char ch = word.charAt(index);
+        if (ch == '.') {
+            for (Node child : root.childs) {
+                boolean found = dfs(child, word, index + 1);
+                if (found) {
+                    return true;
                 }
             }
-            if (match) {
-                return true;
-            }
+            return false;
         }
-        return false;
+        if (!root.isChild(ch)) {
+            return false;
+        }
+        return dfs(root.getChild(ch), word, index + 1);
     }
 }
 
 /*
- * Your WordDictionary object will be instantiated and called as such: WordDictionary obj = new
- * WordDictionary(); obj.addWord(word); boolean param_2 = obj.search(word);
+ * Your WordDictionary object will be instantiated and called as such:
+ * WordDictionary obj = new WordDictionary();
+ * obj.addWord(word);
+ * boolean param_2 = obj.search(word);
  */
