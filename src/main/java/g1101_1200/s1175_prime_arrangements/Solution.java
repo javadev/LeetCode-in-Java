@@ -6,7 +6,7 @@ import java.math.BigInteger;
 import java.util.Arrays;
 
 public class Solution {
-    static int mod = 1000000007;
+    private static int mod = 1000000007;
 
     public int numPrimeArrangements(int n) {
         int numberOfPrimes = generatePrimes(n);
@@ -39,7 +39,6 @@ public class Solution {
                 count++;
             }
         }
-
         return count;
     }
 }
