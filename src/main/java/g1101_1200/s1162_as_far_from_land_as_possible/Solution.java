@@ -36,15 +36,12 @@ public class Solution {
                 for (int j = 0; j < dir.length - 1; j++) {
                     int x = currX + dir[j];
                     int y = currY + dir[j + 1];
-                    if (x < 0 || x == n || y < 0 || y == m || vis[x][y]) {
-                        continue;
+
+                    if (x >= 0 && x != n && y >= 0 && y != n && !vis[x][y]) {
+                        maxDistance = Math.max(maxDistance, level);
+                        vis[x][y] = true;
+                        q.add(new int[] {x, y});
                     }
-                    if (grid[x][y] == 1) {
-                        continue;
-                    }
-                    maxDistance = Math.max(maxDistance, level);
-                    vis[x][y] = true;
-                    q.add(new int[] {x, y});
                 }
             }
             level++;
