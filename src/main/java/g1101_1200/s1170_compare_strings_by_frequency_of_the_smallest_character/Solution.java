@@ -11,13 +11,11 @@ public class Solution {
         for (int i = 0; i < queries.length; i++) {
             queriesMinFrequecies[i] = computeLowestFrequency(queries[i]);
         }
-
         int[] wordsMinFrequecies = new int[words.length];
         for (int i = 0; i < words.length; i++) {
             wordsMinFrequecies[i] = computeLowestFrequency(words[i]);
         }
         Arrays.sort(wordsMinFrequecies);
-
         int[] result = new int[queries.length];
         for (int i = 0; i < result.length; i++) {
             result[i] = search(wordsMinFrequecies, queriesMinFrequecies[i]);
