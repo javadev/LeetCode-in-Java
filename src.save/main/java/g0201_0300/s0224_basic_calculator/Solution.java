@@ -1,6 +1,6 @@
 package g0201_0300.s0224_basic_calculator;
 
-// #Hard #String #Math #Stack #Recursion
+// #Hard #String #Math #Stack #Recursion #2022_03_05_Time_3_ms_(98.82%)_Space_43.8_MB_(56.30%)
 
 public class Solution {
     private int i = 0;
