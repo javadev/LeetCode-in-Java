@@ -1,0 +1,32 @@
+package g1101_1200.s1145_binary_tree_coloring_game;
+
+// #Medium #Depth_First_Search #Tree #Binary_Tree
+// #2022_03_05_Time_0_ms_(100.00%)_Space_42.3_MB_(11.83%)
+
+import com_github_leetcode.TreeNode;
+
+public class Solution {
+    public boolean btreeGameWinningMove(TreeNode root, int n, int x) {
+        if (root == null) {
+            return false;
+        }
+
+        if (root.val == x) {
+            int leftCount = countNodes(root.left);
+            int rightCount = countNodes(root.right);
+            int parent = n - (leftCount + rightCount + 1);
+
+            return parent > (leftCount + rightCount)
+                    || leftCount > (parent + rightCount)
+                    || rightCount > (parent + leftCount);
+        }
+        return btreeGameWinningMove(root.left, n, x) || btreeGameWinningMove(root.right, n, x);
+    }
+
+    private int countNodes(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        return countNodes(root.left) + countNodes(root.right) + 1;
+    }
+}
