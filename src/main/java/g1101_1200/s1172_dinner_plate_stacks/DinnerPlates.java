@@ -16,7 +16,7 @@ public class DinnerPlates {
     public DinnerPlates(int capacity) {
         stacks = new ArrayList<>();
         stackCap = capacity;
-        leftIndex = new TreeSet<Integer>();
+        leftIndex = new TreeSet<>();
     }
 
     public void push(int val) {
@@ -29,7 +29,7 @@ public class DinnerPlates {
             return;
         }
         if (stacks.isEmpty() || stacks.get(stacks.size() - 1).size() == stackCap) {
-            Stack<Integer> newStack = new Stack<Integer>();
+            Stack<Integer> newStack = new Stack<>();
             stacks.add(newStack);
         }
         stacks.get(stacks.size() - 1).push(val);

@@ -3,10 +3,14 @@ package g1101_1200.s1169_invalid_transactions;
 // #Medium #Array #String #Hash_Table #Sorting
 // #2022_03_05_Time_11_ms_(89.89%)_Space_43.2_MB_(79.45%)
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class Solution {
-    public List invalidTransactions(String[] transactions) {
+    public List<String> invalidTransactions(String[] transactions) {
 
         Map<String, TreeMap<Integer, Transaction>> map = new HashMap<>();
         List<String> result = new ArrayList<>();
