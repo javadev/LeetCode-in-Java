@@ -10,10 +10,8 @@ public class Solution {
             rightToLeft[i] = grid[i].clone();
             bottomToUp[i] = grid[i].clone();
         }
-
         int row = grid.length;
         int col = grid[0].length;
-
         for (int i = 0; i < row; i++) {
             for (int j = col - 2; j >= 0; j--) {
                 if (grid[i][j] == 1) {
@@ -21,7 +19,6 @@ public class Solution {
                 }
             }
         }
-
         for (int j = 0; j < col; j++) {
             for (int i = row - 2; i >= 0; i--) {
                 if (grid[i][j] == 1) {
@@ -29,9 +26,7 @@ public class Solution {
                 }
             }
         }
-
         int res = 0;
-
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
                 int curLen = rightToLeft[i][j];
@@ -47,7 +42,6 @@ public class Solution {
                 }
             }
         }
-
         return res * res;
     }
 }
