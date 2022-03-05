@@ -19,7 +19,7 @@ public class Solution {
             sum += piles[i + j];
             ans = Math.max(ans, sum - solve(i + j + 1, Math.max(j + 1, m), piles, dp));
         }
-        return dp[i][m] = ans;
+        return ans;
     }
 
     public int stoneGameII(int[] piles) {

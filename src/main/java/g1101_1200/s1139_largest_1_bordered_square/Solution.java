@@ -42,8 +42,7 @@ public class Solution {
                         if (k > res) {
                             res = k;
                         }
-                        break; // start from largest length, so if we found one, we don't have to
-                        // check the smaller length
+                        break;
                     }
                 }
             }

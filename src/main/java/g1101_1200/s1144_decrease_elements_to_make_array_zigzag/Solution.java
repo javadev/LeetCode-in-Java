@@ -4,7 +4,7 @@ package g1101_1200.s1144_decrease_elements_to_make_array_zigzag;
 
 public class Solution {
     public int movesToMakeZigzag(int[] nums) {
-        int ans = Integer.MAX_VALUE;
+        int ans;
         int n = nums.length;
         int cur = 0;
         if (n == 1) {
@@ -35,12 +35,11 @@ public class Solution {
         cur = 0;
         nums = clone;
         for (int i = 1; i < n; i += 2) {
-            if (i != n - 1) {
-                if (nums[i] <= nums[i + 1]) {
-                    cur += (nums[i + 1] - nums[i] + 1);
-                    nums[i + 1] = nums[i] - 1;
-                }
+            if (i != n - 1 && nums[i] <= nums[i + 1]) {
+                cur += (nums[i + 1] - nums[i] + 1);
+                nums[i + 1] = nums[i] - 1;
             }
+
             if (nums[i] <= nums[i - 1]) {
                 cur += (nums[i - 1] - nums[i] + 1);
             }
