@@ -11,10 +11,12 @@ public class Solution {
         }
         int ans = 0;
         int distinct = 0;
-        char cMin = '#';
-        char cMax = '#';
+        char cMin;
+        char cMax;
         int[] window = new int[26];
-        for (int l = 0, r = 0; r < n; r++) {
+        int l = 0;
+        int r = 0;
+        while (r < n) {
             char cur = text.charAt(r);
             window[cur - 'a']++;
             cMin = minFreq(window);
@@ -36,6 +38,7 @@ public class Solution {
                 cMin = minFreq(window);
             }
             ans = Math.max(ans, r - l + 1);
+            r++;
         }
         return ans;
     }
