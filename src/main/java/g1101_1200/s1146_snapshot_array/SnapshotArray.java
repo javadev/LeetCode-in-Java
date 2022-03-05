@@ -35,9 +35,9 @@ public class SnapshotArray {
         return snapId;
     }
 
-    public int get(int index, int snap_id) {
+    public int get(int index, int snapId) {
         if (indexToSnapMap.containsKey(index)) {
-            Map.Entry<Integer, Integer> value = indexToSnapMap.get(index).ceilingEntry(snap_id);
+            Map.Entry<Integer, Integer> value = indexToSnapMap.get(index).ceilingEntry(snapId);
             if (value != null) {
                 return value.getValue();
             }
