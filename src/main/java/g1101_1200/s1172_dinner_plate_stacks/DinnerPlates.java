@@ -10,8 +10,8 @@ import java.util.TreeSet;
 
 public class DinnerPlates {
     private final List<Stack<Integer>> stacks;
-    int stackCap;
-    TreeSet<Integer> leftIndex;
+    private int stackCap;
+    private TreeSet<Integer> leftIndex;
 
     public DinnerPlates(int capacity) {
         stacks = new ArrayList<>();
