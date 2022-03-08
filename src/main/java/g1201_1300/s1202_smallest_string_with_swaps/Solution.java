@@ -37,17 +37,19 @@ public class Solution {
         int[] root;
         int[] rank;
 
-        UF(int N) {
-            root = new int[N];
-            rank = new int[N];
-            for (int i = 0; i < N; i++) {
+        UF(int n) {
+            root = new int[n];
+            rank = new int[n];
+            for (int i = 0; i < n; i++) {
                 root[i] = i;
                 rank[i] = 1;
             }
         }
 
         int find(int u) {
-            if (u == root[u]) return u;
+            if (u == root[u]) {
+                return u;
+            }
             return root[u] = find(root[u]);
         }
 

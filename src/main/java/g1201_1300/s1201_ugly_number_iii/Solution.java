@@ -5,7 +5,8 @@ package g1201_1300.s1201_ugly_number_iii;
 public class Solution {
 
     private long getLcm(long a, long b) {
-        long mx = a, mn = b;
+        long mx = a;
+        long mn = b;
         if (a < b) {
             mx = b;
             mn = a;

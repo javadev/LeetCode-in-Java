@@ -9,8 +9,8 @@ import java.util.Stack;
 
 public class Solution {
 
-    static int[] topoSort(int V, ArrayList<ArrayList<Integer>> adj) {
-        int[] indegree = new int[V];
+    static int[] topoSort(int temp, ArrayList<ArrayList<Integer>> adj) {
+        int[] indegree = new int[temp];
         for (ArrayList<Integer> edges : adj) {
             for (Integer edge : edges) {
                 indegree[edge]++;
@@ -18,7 +18,7 @@ public class Solution {
         }
 
         Stack<Integer> q = new Stack<>();
-        for (int i = 0; i < V; ++i) {
+        for (int i = 0; i < temp; ++i) {
             if (indegree[i] == 0) {
                 q.push(i);
             }
@@ -43,7 +43,7 @@ public class Solution {
             }
         }
 
-        if (topo.size() != V) {
+        if (topo.size() != temp) {
             return new int[0];
         } else {
             int[] ans = new int[topo.size()];

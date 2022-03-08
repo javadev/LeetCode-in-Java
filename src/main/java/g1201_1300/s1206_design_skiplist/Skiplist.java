@@ -4,7 +4,7 @@ package g1201_1300.s1206_design_skiplist;
 
 public class Skiplist {
     private static final int INIT_CAPACITY = 8;
-    private final int MIN_BOUNDARY;
+    private final int minBoundary;
     private final Node head;
     private int headCapacity;
     private int headLevel = 0;
@@ -30,7 +30,7 @@ public class Skiplist {
         if (size < INIT_CAPACITY) {
             size = INIT_CAPACITY;
         }
-        MIN_BOUNDARY = size / 2;
+        minBoundary = size / 2;
         headCapacity = size;
         head = new Node(0, size);
     }
@@ -91,7 +91,7 @@ public class Skiplist {
         }
 
         if (head.next[headLevel - 1] == null
-                && --headLevel >= MIN_BOUNDARY
+                && --headLevel >= minBoundary
                 && headLevel == headCapacity / 4) {
             resizeHead(headCapacity / 2);
         }
