@@ -12,7 +12,7 @@ class ZeroEvenOddTest {
     void zeroEvenOdd() throws InterruptedException {
         int[] zeroEvenOddData = {0};
         IntConsumer consumer = (data) -> zeroEvenOddData[0]++;
-        int n = 2;
+        int n = 5;
         ZeroEvenOdd zeroEvenOdd = new ZeroEvenOdd(n);
         Thread firstThread =
                 new Thread(
@@ -50,6 +50,6 @@ class ZeroEvenOddTest {
         secondThread.join();
         thirdThread.join();
         TimeUnit.MILLISECONDS.sleep(100);
-        assertThat(zeroEvenOddData[0], equalTo(4));
+        assertThat(zeroEvenOddData[0], equalTo(10));
     }
 }
