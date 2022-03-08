@@ -11,15 +11,9 @@ class FooTest {
     void foo() throws InterruptedException {
         int[] fooData = {0};
         Foo foo = new Foo();
-        new Thread(
-                        () -> foo.first(() -> fooData[0]++))
-                .start();
-        new Thread(
-                        () -> foo.second(() -> fooData[0]++))
-                .start();
-        new Thread(
-                        () -> foo.third(() -> fooData[0]++))
-                .start();
+        new Thread(() -> foo.first(() -> fooData[0]++)).start();
+        new Thread(() -> foo.second(() -> fooData[0]++)).start();
+        new Thread(() -> foo.third(() -> fooData[0]++)).start();
         TimeUnit.MILLISECONDS.sleep(100);
         assertThat(fooData[0], equalTo(3));
     }
