@@ -5,6 +5,7 @@ package g1101_1200.s1116_print_zero_even_odd;
 import java.util.concurrent.Semaphore;
 import java.util.function.IntConsumer;
 
+@SuppressWarnings({"java:S2142", "java:S2583"})
 public class ZeroEvenOdd {
     private int n;
 

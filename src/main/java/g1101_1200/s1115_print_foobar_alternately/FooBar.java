@@ -4,6 +4,7 @@ package g1101_1200.s1115_print_foobar_alternately;
 
 import java.util.concurrent.Semaphore;
 
+@SuppressWarnings("java:S2142")
 public class FooBar {
     private int n;
 
@@ -16,8 +17,7 @@ public class FooBar {
         barSemaphore = new Semaphore(1);
         try {
             barSemaphore.acquire();
-        } catch (InterruptedException e) {
-            // nothing to do
+        } catch (InterruptedException ignored) {
         }
     }
 
