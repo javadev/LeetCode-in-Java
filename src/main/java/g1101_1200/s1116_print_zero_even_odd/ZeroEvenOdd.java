@@ -19,6 +19,7 @@ public class ZeroEvenOdd {
             oddSemaphore.acquire();
             evenSemaphore.acquire();
         } catch (InterruptedException ignored) {
+            // ignored
         }
     }
 

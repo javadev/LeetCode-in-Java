@@ -18,6 +18,7 @@ public class FooBar {
         try {
             barSemaphore.acquire();
         } catch (InterruptedException ignored) {
+            // ignored
         }
     }
 
