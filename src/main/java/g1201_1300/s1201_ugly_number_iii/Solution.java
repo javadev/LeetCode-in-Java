@@ -27,7 +27,7 @@ public class Solution {
 
         long left = 1;
         long right = 2000000001;
-        if(a!=0 && b!=0 && c!=0){
+        if (a != 0 && b != 0 && c != 0) {
             while (left < right) {
                 long mid = left + (right - left) / 2;
                 if (mid / a + mid / b + mid / c - mid / ab - mid / ac - mid / bc + mid / abc >= n) {
