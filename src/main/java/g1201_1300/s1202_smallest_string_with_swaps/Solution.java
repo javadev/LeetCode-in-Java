@@ -50,7 +50,9 @@ public class Solution {
             if (u == root[u]) {
                 return u;
             }
-            return root[u] = find(root[u]);
+
+            root[u] = find(root[u]);
+            return root[u];
         }
 
         void union(int u, int v) {
