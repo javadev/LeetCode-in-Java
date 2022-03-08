@@ -12,28 +12,13 @@ class FooTest {
         int[] fooData = {0};
         Foo foo = new Foo();
         new Thread(
-                        () -> {
-                            try {
-                                foo.first(() -> fooData[0]++);
-                            } catch (InterruptedException e) {
-                            }
-                        })
+                        () -> foo.first(() -> fooData[0]++))
                 .start();
         new Thread(
-                        () -> {
-                            try {
-                                foo.second(() -> fooData[0]++);
-                            } catch (InterruptedException e) {
-                            }
-                        })
+                        () -> foo.second(() -> fooData[0]++))
                 .start();
         new Thread(
-                        () -> {
-                            try {
-                                foo.third(() -> fooData[0]++);
-                            } catch (InterruptedException e) {
-                            }
-                        })
+                        () -> foo.third(() -> fooData[0]++))
                 .start();
         TimeUnit.MILLISECONDS.sleep(100);
         assertThat(fooData[0], equalTo(3));
