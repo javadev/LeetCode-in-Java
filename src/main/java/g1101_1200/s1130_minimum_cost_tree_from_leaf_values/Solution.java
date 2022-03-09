@@ -2,12 +2,13 @@ package g1101_1200.s1130_minimum_cost_tree_from_leaf_values;
 
 // #Medium #Dynamic_Programming #Greedy #Stack #Monotonic_Stack #2022_03_09_Time_2_ms_(82.90%)_Space_41.9_MB_(34.83%)
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class Solution {
     public int mctFromLeafValues(int[] arr) {
         int res = 0;
-        Stack<Integer> st = new Stack<>();
+        Deque<Integer> st = new ArrayDeque<>();
         st.push(Integer.MAX_VALUE);
         for (int num : arr) {
             // do until the present num is bigger than nums in stack (we need to maintain the
@@ -26,7 +27,7 @@ public class Solution {
         }
         // if the size is 2 or less we do not to worry because we have already used it in above step
         // since 1st num we added was Integer.MAX, and we do not need to use that, so just do this
-        // step if the size > 2(basically there are atleast 2 elements from the array)
+        // step if the size > 2 (basically there are at least 2 elements from the array)
         while (st.size() > 2) {
             int smallestLeaf = st.pop();
             int smallerLeaf = st.peek();
