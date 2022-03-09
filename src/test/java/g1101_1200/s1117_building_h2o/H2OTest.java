@@ -15,9 +15,9 @@ class H2OTest {
         ThreadPoolExecutor executor =
                 new ThreadPoolExecutor(6, 30, 15, TimeUnit.SECONDS, new ArrayBlockingQueue<>(12));
         for (int i = 0; i < 12; i++) {
-            executor.execute(new HydrogenRunnable(h2o));
-            executor.execute(new OxygenRunnable(h2o));
-            executor.execute(new HydrogenRunnable(h2o));
+            executor.execute(new H2O.HydrogenRunnable(h2o));
+            executor.execute(new H2O.OxygenRunnable(h2o));
+            executor.execute(new H2O.HydrogenRunnable(h2o));
         }
         assertThat(true, equalTo(true));
     }

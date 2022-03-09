@@ -26,38 +26,38 @@ public class H2O {
         releaseOxygen.run();
         hSemaphore.release(2);
     }
-}
 
-class HydrogenRunnable implements Runnable {
-    private H2O h2O;
+    public static class HydrogenRunnable implements Runnable {
+        private H2O h2O;
 
-    public HydrogenRunnable(H2O h2O) {
-        this.h2O = h2O;
-    }
+        public HydrogenRunnable(H2O h2O) {
+            this.h2O = h2O;
+        }
 
-    @Override
-    public void run() {
-        try {
-            h2O.hydrogen(() -> System.out.print('H'));
-        } catch (InterruptedException ignored) {
-            // ignored
+        @Override
+        public void run() {
+            try {
+                h2O.hydrogen(() -> System.out.print('H'));
+            } catch (InterruptedException ignored) {
+                // ignored
+            }
         }
     }
-}
 
-class OxygenRunnable implements Runnable {
-    private H2O h2O;
+    public static class OxygenRunnable implements Runnable {
+        private H2O h2O;
 
-    public OxygenRunnable(H2O h2O) {
-        this.h2O = h2O;
-    }
+        public OxygenRunnable(H2O h2O) {
+            this.h2O = h2O;
+        }
 
-    @Override
-    public void run() {
-        try {
-            h2O.oxygen(() -> System.out.print('O'));
-        } catch (InterruptedException ignored) {
-            // ignored
+        @Override
+        public void run() {
+            try {
+                h2O.oxygen(() -> System.out.print('O'));
+            } catch (InterruptedException ignored) {
+                // ignored
+            }
         }
     }
 }
