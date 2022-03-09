@@ -9,7 +9,6 @@ public class Solution {
         int end = 0;
         int currCost = 0;
         int maxLength = Integer.MIN_VALUE;
-
         while (end < s.length()) {
             currCost += Math.abs(s.charAt(end) - t.charAt(end));
             while (currCost > maxCost) {
@@ -21,7 +20,6 @@ public class Solution {
             }
             end++;
         }
-
         return maxLength;
     }
 }
