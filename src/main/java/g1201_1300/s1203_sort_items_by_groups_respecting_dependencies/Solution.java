@@ -7,33 +7,29 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+@SuppresWarnings("java:S1149")
 public class Solution {
 
-    static int[] topoSort(int temp, ArrayList<ArrayList<Integer>> adj) {
+    private static int[] topoSort(int temp, ArrayList<ArrayList<Integer>> adj) {
         int[] indegree = new int[temp];
         for (ArrayList<Integer> edges : adj) {
             for (Integer edge : edges) {
                 indegree[edge]++;
             }
         }
-
         Stack<Integer> q = new Stack<>();
         for (int i = 0; i < temp; ++i) {
             if (indegree[i] == 0) {
                 q.push(i);
             }
         }
-
-        if (q.size() == 0) {
+        if (q.isEmpty()) {
             return new int[0];
         }
-
         ArrayList<Integer> topo = new ArrayList<>();
-
-        while (q.size() != 0) {
+        while (!q.isEmpty()) {
             int v = q.pop();
             topo.add(v);
-
             ArrayList<Integer> edges = adj.get(v);
             for (int nbr : edges) {
                 indegree[nbr]--;
@@ -42,7 +38,6 @@ public class Solution {
                 }
             }
         }
-
         if (topo.size() != temp) {
             return new int[0];
         } else {
@@ -55,18 +50,16 @@ public class Solution {
     }
 
     public int[] sortItems(int n, int m, int[] group, List<List<Integer>> beforeItems) {
-
         ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
         int nodes = n + 2 * m;
         for (int i = 0; i < nodes; ++i) {
             graph.add(new ArrayList<>());
         }
-
         for (int i = 0; i < n; ++i) {
             List<Integer> before = beforeItems.get(i);
             if (group[i] == -1 && before.size() == 0) {
                 continue;
-            } else if (before.size() == 0) {
+            } else if (before.isEmpty()) {
                 int groupStart = n + group[i] * 2;
                 int ge = n + group[i] * 2 + 1;
                 graph.get(groupStart).add(i);
@@ -85,7 +78,6 @@ public class Solution {
                 int groupEnd = n + group[i] * 2 + 1;
                 graph.get(groupStart).add(i);
                 graph.get(i).add(groupEnd);
-
                 for (int temp : before) {
                     if (group[temp] == -1) {
                         graph.get(temp).add(groupStart);
@@ -100,12 +92,10 @@ public class Solution {
                 }
             }
         }
-
         int[] temp = topoSort(nodes, graph);
         if (temp.length == 0) {
             return temp;
         }
-
         int[] ans = new int[n];
         int j = 0;
         for (int k : temp) {
