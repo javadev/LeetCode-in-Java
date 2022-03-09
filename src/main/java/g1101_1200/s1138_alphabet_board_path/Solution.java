@@ -30,8 +30,7 @@ public class Solution {
         return path.toString();
     }
 
-    public StringBuilder helper(String dir, int time)
-    {
+    public StringBuilder helper(String dir, int time) {
         StringBuilder path = new StringBuilder();
         for (int i = 0; i < time; i++) {
             path.append(dir);
