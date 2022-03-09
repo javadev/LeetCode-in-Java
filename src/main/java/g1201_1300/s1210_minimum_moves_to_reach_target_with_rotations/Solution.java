@@ -3,6 +3,7 @@ package g1201_1300.s1210_minimum_moves_to_reach_target_with_rotations;
 // #Hard #Array #Breadth_First_Search #Matrix #2022_03_09_Time_29_ms_(78.57%)_Space_53.8_MB_(76.19%)
 
 import java.util.LinkedList;
+import java.util.Objects;
 import java.util.Queue;
 
 public class Solution {
@@ -18,7 +19,9 @@ public class Solution {
             int levelSize = bq.size();
             for (int l = 0; l < levelSize; l++) {
                 int[] cur = bq.poll();
-                int xtail = cur[0], ytail = cur[1], dir = cur[2];
+                int xtail = Objects.requireNonNull(cur)[0];
+                int ytail = cur[1];
+                int dir = cur[2];
                 if (xtail == n - 1 && ytail == n - 2 && dir == 1) {
                     return level;
                 }
