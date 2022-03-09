@@ -28,8 +28,11 @@ public class Solution {
             int[] shortestPaths) {
         int level = 0;
         q.add(0);
-        if (blue) vis[0][1] = true;
-        else vis[0][0] = true;
+        if (blue) {
+            vis[0][1] = true;
+        } else {
+            vis[0][0] = true;
+        }
         while (!q.isEmpty()) {
             int size = q.size();
             while (size-- > 0) {
