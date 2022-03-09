@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-@SuppresWarnings("java:S1149")
+@SuppressWarnings("java:S1149")
 public class Solution {
 
     private static int[] topoSort(int temp, ArrayList<ArrayList<Integer>> adj) {
