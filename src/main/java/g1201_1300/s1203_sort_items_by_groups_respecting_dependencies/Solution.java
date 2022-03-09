@@ -58,6 +58,7 @@ public class Solution {
         for (int i = 0; i < n; ++i) {
             List<Integer> before = beforeItems.get(i);
             if (group[i] == -1 && before.isEmpty()) {
+                // continue
             } else if (before.isEmpty()) {
                 int groupStart = n + group[i] * 2;
                 int ge = n + group[i] * 2 + 1;
