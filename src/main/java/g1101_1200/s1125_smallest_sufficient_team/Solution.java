@@ -12,7 +12,8 @@ public class Solution {
     private List<Integer> ans = new ArrayList<>();
 
     public int[] smallestSufficientTeam(String[] skills, List<List<String>> people) {
-        int n = skills.length, m = people.size();
+        int n = skills.length;
+        int m = people.size();
         Map<String, Integer> map = new HashMap<>();
         for (int i = 0; i < n; i++) {
             map.put(skills[i], i);
