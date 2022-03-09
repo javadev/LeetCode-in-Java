@@ -13,7 +13,6 @@ public class Solution {
         Queue<int[]> bq = new LinkedList<>();
         bq.offer(new int[] {0, 0, 1});
         visited[0][0] |= 1;
-
         int level = 0;
         while (!bq.isEmpty()) {
             int levelSize = bq.size();
@@ -25,10 +24,8 @@ public class Solution {
                 if (xtail == n - 1 && ytail == n - 2 && dir == 1) {
                     return level;
                 }
-
                 int xhead = xtail + (dir == 1 ? 0 : 1);
                 int yhead = ytail + (dir == 1 ? 1 : 0);
-
                 if (dir == 2) {
                     if (ytail + 1 < n
                             && grid[xtail][ytail + 1] != 1
@@ -37,13 +34,11 @@ public class Solution {
                             bq.offer(new int[] {xtail, ytail, 1});
                             visited[xtail][ytail] |= 1;
                         }
-
                         if ((visited[xtail][ytail + 1] & 2) == 0) {
                             bq.offer(new int[] {xtail, ytail + 1, 2});
                             visited[xtail][ytail + 1] |= 2;
                         }
                     }
-
                     if (xhead + 1 < n
                             && grid[xhead + 1][yhead] != 1
                             && (visited[xhead][yhead] & 2) == 0) {
@@ -58,13 +53,11 @@ public class Solution {
                             bq.offer(new int[] {xtail, ytail, 2});
                             visited[xtail][ytail] |= 2;
                         }
-
                         if ((visited[xtail + 1][ytail] & 1) == 0) {
                             bq.offer(new int[] {xtail + 1, ytail, 1});
                             visited[xtail + 1][ytail] |= 1;
                         }
                     }
-
                     if (yhead + 1 < n
                             && grid[xhead][yhead + 1] != 1
                             && (visited[xhead][yhead] & 1) == 0) {
@@ -73,10 +66,8 @@ public class Solution {
                     }
                 }
             }
-
             level += 1;
         }
-
         return -1;
     }
 }
