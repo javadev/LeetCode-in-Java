@@ -4,6 +4,7 @@ package g1101_1200.s1117_building_h2o;
 
 import java.util.concurrent.Semaphore;
 
+@SuppressWarnings("java:S106")
 public class H2O {
     private Semaphore hSemaphore;
     private Semaphore oSemaphore;
