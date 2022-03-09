@@ -2,7 +2,7 @@ package g1201_1300.s1206_design_skiplist;
 
 // #Hard #Design #Linked_List #2022_03_08_Time_14_ms_(96.71%)_Space_48_MB_(85.19%)
 
-@SupressWarnings("java:S2245")
+@SuppressWarnings("java:S2245")
 public class Skiplist {
     private static final int INIT_CAPACITY = 8;
     private final int minBoundary;
