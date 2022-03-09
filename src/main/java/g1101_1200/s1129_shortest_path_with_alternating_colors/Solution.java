@@ -11,7 +11,8 @@ import java.util.Queue;
 
 public class Solution {
     private static class Pair {
-        int color, node;
+        int color;
+        int node;
 
         Pair(int node, int color) {
             this.node = node;
@@ -52,22 +53,31 @@ public class Solution {
 
     public int[] shortestAlternatingPaths(int n, int[][] redEdges, int[][] blueEdges) {
         List<List<Pair>> graph = new ArrayList<>();
-        for (int i = 0; i < n; i++) graph.add(new ArrayList<>());
+        for (int i = 0; i < n; i++) {
+            graph.add(new ArrayList<>());
+        }
         for (int[] edge : redEdges) {
-            int a = edge[0], b = edge[1];
-            graph.get(a).add(new Pair(b, 0)); // red -> 0
+            int a = edge[0];
+            int b = edge[1];
+            // red -> 0
+            graph.get(a).add(new Pair(b, 0));
         }
         for (int[] edge : blueEdges) {
-            int u = edge[0], v = edge[1];
-            graph.get(u).add(new Pair(v, 1)); // blue -> 1
+            int u = edge[0];
+            int v = edge[1];
+            // blue -> 1
+            graph.get(u).add(new Pair(v, 1));
         }
         int[] shortestPaths = new int[n];
         Queue<Integer> q = new LinkedList<>();
         Arrays.fill(shortestPaths, Integer.MAX_VALUE);
         bfs(q, new boolean[n][2], graph, true, shortestPaths);
         bfs(q, new boolean[n][2], graph, false, shortestPaths);
-        for (int i = 0; i < n; i++)
-            if (shortestPaths[i] == Integer.MAX_VALUE) shortestPaths[i] = -1;
+        for (int i = 0; i < n; i++) {
+            if (shortestPaths[i] == Integer.MAX_VALUE) {
+                shortestPaths[i] = -1;
+            }
+        }
         return shortestPaths;
     }
 }
