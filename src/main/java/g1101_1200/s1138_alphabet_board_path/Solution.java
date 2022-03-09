@@ -4,8 +4,11 @@ package g1101_1200.s1138_alphabet_board_path;
 
 public class Solution {
     public String alphabetBoardPath(String target) {
-        if (target.length() == 0) return "";
-        int sourceRow = 0, sourceCol = 0;
+        if (target.length() == 0) {
+            return "";
+        }
+        int sourceRow = 0;
+        int sourceCol = 0;
         StringBuilder path = new StringBuilder();
         for (char c : target.toCharArray()) {
             int position = c - 97;
