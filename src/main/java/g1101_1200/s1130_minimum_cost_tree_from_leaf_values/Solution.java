@@ -1,6 +1,6 @@
 package g1101_1200.s1130_minimum_cost_tree_from_leaf_values;
 
-// #Medium #Dynamic_Programming #Greedy #Stack #Monotonic_Stack
+// #Medium #Dynamic_Programming #Greedy #Stack #Monotonic_Stack #2022_03_09_Time_2_ms_(82.90%)_Space_41.9_MB_(34.83%)
 
 import java.util.Stack;
 
@@ -15,15 +15,13 @@ public class Solution {
             while (st.peek() <= num) {
                 // find two smallest leafs (integer on top of stack is smallest and at bottom is
                 // largest UPTIL NOW)
+                // the next smaller leaf could either be present num or the
                 int smallestLeaf = st.pop();
-                int smallerLeaf =
-                        Math.min(
-                                st.peek(),
-                                num); // the next smaller leaf could either be present num or the
+                int smallerLeaf = Math.min(st.peek(), num);
                 // num on top of stack after above pop()
-                res += smallestLeaf * smallerLeaf; // multiply minimum leafs to reduce the SUM
+                // multiply minimum leafs to reduce the SUM
+                res += smallestLeaf * smallerLeaf;
             }
-
             st.push(num);
         }
         // if the size is 2 or less we do not to worry because we have already used it in above step
