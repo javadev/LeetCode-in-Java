@@ -2,6 +2,7 @@ package g1201_1300.s1206_design_skiplist;
 
 // #Hard #Design #Linked_List #2022_03_08_Time_14_ms_(96.71%)_Space_48_MB_(85.19%)
 
+@SupressWarnings("java:S2245")
 public class Skiplist {
     private static final int INIT_CAPACITY = 8;
     private final int minBoundary;
@@ -56,7 +57,6 @@ public class Skiplist {
         Node[] update = new Node[headLevel + 1];
         update[headLevel] = head;
         buildUpdate(num, update);
-
         int level = getRandomLevel();
         if (level > headLevel) {
             if (headLevel == headCapacity) {
@@ -64,7 +64,6 @@ public class Skiplist {
             }
             headLevel++;
         }
-
         Node x = new Node(num, level);
         for (int i = 0; i < level; i++) {
             Node n = update[i].next[i];
@@ -82,14 +81,12 @@ public class Skiplist {
         if (update[0].next[0] == null || update[0].next[0].val != num) {
             return false;
         }
-
         for (int i = 0; i < headLevel; i++) {
             if (update[i].next[i] == null || update[i].next[i].val != num) {
                 break;
             }
             update[i].next[i] = update[i].next[i].next[i];
         }
-
         if (head.next[headLevel - 1] == null
                 && --headLevel >= minBoundary
                 && headLevel == headCapacity / 4) {
