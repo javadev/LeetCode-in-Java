@@ -22,18 +22,18 @@ public class Solution {
             if (status[curBox] == 0) {
                 unseen++;
                 boxes.offer(curBox);
-                continue;
-            }
-            unseen = 0;
-            // collect candies
-            collectedCandies += candies[curBox];
-            // open keys
-            for (int key : keys[curBox]) {
-                status[key] = 1;
-            }
-            // collect contained boxes
-            for (int box : containedBoxes[curBox]) {
-                boxes.offer(box);
+            } else {
+                unseen = 0;
+                // collect candies
+                collectedCandies += candies[curBox];
+                // open keys
+                for (int key : keys[curBox]) {
+                    status[key] = 1;
+                }
+                // collect contained boxes
+                for (int box : containedBoxes[curBox]) {
+                    boxes.offer(box);
+                }
             }
         }
         return collectedCandies;

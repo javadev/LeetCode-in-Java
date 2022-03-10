@@ -6,6 +6,7 @@ package g1201_1300.s1297_maximum_number_of_occurrences_of_a_substring;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("java:S1172")
 public class Solution {
     public int maxFreq(String s, int max, int minSize, int maxSize) {
         // the map of occurrences
