@@ -25,7 +25,8 @@ public class CombinationIterator {
         if (sb.length() == combinationLength) {
             list.add(sb.toString());
         } else {
-            for (int i = start; i < characters.length(); ) {
+            int i = start;
+            while (i < characters.length()) {
                 if (!visited[i]) {
                     sb.append(characters.charAt(i));
                     visited[i] = true;
