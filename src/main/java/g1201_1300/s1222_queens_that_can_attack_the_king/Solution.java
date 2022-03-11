@@ -15,7 +15,7 @@ public class Solution {
         List<List<Integer>> result = new ArrayList<>();
         Map<Integer, Set<Integer>> queensLoc = new HashMap<>();
         for (int[] queen : queens) {
-            Set<Integer> queensY = queensLoc.getOrDefault(queen[0], new HashSet<Integer>());
+            Set<Integer> queensY = queensLoc.getOrDefault(queen[0], new HashSet<>());
             queensY.add(queen[1]);
             queensLoc.put(queen[0], queensY);
         }
@@ -41,7 +41,7 @@ public class Solution {
         }
 
         if (queens.containsKey(x) && queens.get(x).contains(y)) {
-            result.add(new ArrayList<Integer>(Arrays.asList(x, y)));
+            result.add(new ArrayList<>(Arrays.asList(x, y)));
             return;
         }
 
