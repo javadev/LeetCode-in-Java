@@ -4,31 +4,31 @@ package g1201_1300.s1220_count_vowels_permutation;
 
 public class Solution {
     public int countVowelPermutation(int n) {
-        int MOD = (int) 1e9 + 7;
-        int prev_a = 1;
-        int prev_e = 1;
-        int prev_i = 1;
-        int prev_o = 1;
-        int prev_u = 1;
+        int mod = (int) 1e9 + 7;
+        int prevA = 1;
+        int prevE = 1;
+        int prevI = 1;
+        int prevO = 1;
+        int prevU = 1;
 
         while (n-- > 1) {
-            int a = ((prev_e + prev_i) % MOD + prev_u) % MOD;
+            int a = ((prevE + prevI) % mod + prevU) % mod;
 
-            int e = (prev_a + prev_i) % MOD;
+            int e = (prevA + prevI) % mod;
 
-            int i = (prev_e + prev_o) % MOD;
+            int i = (prevE + prevO) % mod;
 
-            int o = prev_i;
+            int o = prevI;
 
-            int u = (prev_i + prev_o) % MOD;
+            int u = (prevI + prevO) % mod;
 
-            prev_a = a;
-            prev_e = e;
-            prev_i = i;
-            prev_o = o;
-            prev_u = u;
+            prevA = a;
+            prevE = e;
+            prevI = i;
+            prevO = o;
+            prevU = u;
         }
 
-        return ((((prev_a + prev_e) % MOD + prev_i) % MOD + prev_o) % MOD + prev_u) % MOD;
+        return ((((prevA + prevE) % mod + prevI) % mod + prevO) % mod + prevU) % mod;
     }
 }

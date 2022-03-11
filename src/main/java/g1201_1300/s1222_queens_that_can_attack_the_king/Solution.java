@@ -70,6 +70,7 @@ public class Solution {
             case "sw":
                 dfs(queens, x + 1, y - 1, result, direction);
                 break;
+            default:
         }
     }
 }

@@ -21,7 +21,9 @@ public class Solution {
     }
 
     private void gold(int[][] grid, int row, int col, int gold) {
-        if (gold > maxGold) maxGold = gold;
+        if (gold > maxGold) {
+            maxGold = gold;
+        }
         if (row > 0 && grid[row - 1][col] != 0) {
             int currGold = grid[row - 1][col];
             grid[row - 1][col] = 0;
