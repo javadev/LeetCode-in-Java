@@ -36,6 +36,22 @@ public class CommonUtils {
         return true;
     }
 
+    public static boolean compareMatrix(List<List<Integer>> mt1, List<List<Integer>> mt2) {
+        for (List<Integer> i : mt1) {
+            boolean include = false;
+            for (List<Integer> j : mt2) {
+                if (i.toString().equals(j.toString())) {
+                    include = true;
+                    break;
+                }
+            }
+            if (!include) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static char[][] convertLeetCodeRegular2DCharArrayInputIntoJavaArray(String input) {
         /*
          * LeetCode 2-d char array usually comes in like this:
