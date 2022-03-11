@@ -16,7 +16,6 @@ public class Solution {
                 }
             }
         }
-        System.out.println(maxGold);
         return maxGold;
     }
 
