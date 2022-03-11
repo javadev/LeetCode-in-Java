@@ -15,10 +15,8 @@ public class Solution {
             } else {
                 dp[cur] = Math.max(dp[cur], dp[last] + 1);
             }
-
             res = Math.max(res, dp[cur]);
         }
-
         return res;
     }
 }
