@@ -16,7 +16,7 @@ public class DiningPhilosophers {
 
     // call the run() method of any runnable to execute its code
     public void wantsToEat(
-            int i,
+            int philosopher,
             Runnable pickLeftFork,
             Runnable pickRightFork,
             Runnable eat,
@@ -24,15 +24,15 @@ public class DiningPhilosophers {
             Runnable putRightFork)
             throws InterruptedException {
         eating.acquire();
-        forks[i].acquire();
-        forks[(i + 1) % 5].acquire();
+        forks[philosopher].acquire();
+        forks[(philosopher + 1) % 5].acquire();
         pickLeftFork.run();
         pickRightFork.run();
         eat.run();
         putLeftFork.run();
         putRightFork.run();
-        forks[i].release();
-        forks[(i + 1) % 5].release();
+        forks[philosopher].release();
+        forks[(philosopher + 1) % 5].release();
         eating.release();
     }
 }
