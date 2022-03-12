@@ -1,9 +1,9 @@
 package g1201_1300.s1253_reconstruct_a_2_row_binary_matrix;
 
+// #Medium #Array #Greedy #Matrix #2022_03_12_Time_18_ms_(57.27%)_Space_111.1_MB_(42.74%)
+
 import java.util.ArrayList;
 import java.util.List;
-
-// #Medium #Array #Greedy #Matrix #2022_03_12_Time_18_ms_(57.27%)_Space_111.1_MB_(42.74%)
 
 public class Solution {
     public List<List<Integer>> reconstructMatrix(int upper, int lower, int[] colsum) {
@@ -42,8 +42,8 @@ public class Solution {
             return res;
         }
 
-        res.add(new ArrayList<Integer>());
-        res.add(new ArrayList<Integer>());
+        res.add(new ArrayList<>());
+        res.add(new ArrayList<>());
         for (int i = 0; i < n; i++) {
             res.get(0).add(upperRow[i]);
             res.get(1).add(lowerRow[i]);
