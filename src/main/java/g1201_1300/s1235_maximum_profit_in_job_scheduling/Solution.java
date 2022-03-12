@@ -7,18 +7,15 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class Solution {
-
     public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
         int n = startTime.length;
         int[][] time = new int[n][3];
-
         for (int i = 0; i < n; i++) {
             time[i][0] = startTime[i];
             time[i][1] = endTime[i];
             time[i][2] = profit[i];
         }
-        Arrays.sort(time, Comparator.comparingDouble(a -> a[1]));
-
+        Arrays.sort(time, Comparator.comparingInt(a -> a[1]));
         int[][] maxP = new int[n][2];
         int lastPos = -1;
         int currProfit;
@@ -36,7 +33,6 @@ public class Solution {
                 maxP[lastPos][1] = time[i][1];
             }
         }
-
         return maxP[lastPos][0];
     }
 }
