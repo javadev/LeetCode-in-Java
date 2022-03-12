@@ -26,7 +26,8 @@ public class DiningPhilosophers {
 
         int leftForkIndex = (philosopher + 1) % 5;
 
-        Lock firstFork, secondFork;
+        Lock firstFork;
+        Lock secondFork;
         Runnable pickFirstFork;
         Runnable pickSecondFork;
         Runnable putFirstFork;
