@@ -16,13 +16,13 @@ public class Solution {
             map.put(groupSizes[i], list);
         }
         List<List<Integer>> result = new ArrayList<>();
-        for (int key : map.keySet()) {
-            List<Integer> list = map.get(key);
+        for (Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {
+            List<Integer> list = entry.getValue();
             int i = 0;
             do {
-                result.add(list.subList(i, i + key));
-                i += key;
-            } while (i + key <= list.size());
+                result.add(list.subList(i, i + entry.getKey()));
+                i += entry.getKey();
+            } while (i + entry.getKey() <= list.size());
         }
         return result;
     }
