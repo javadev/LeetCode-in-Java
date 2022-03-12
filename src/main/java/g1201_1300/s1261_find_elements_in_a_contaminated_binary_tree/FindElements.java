@@ -7,14 +7,16 @@ import com_github_leetcode.TreeNode;
 import java.util.HashMap;
 
 public class FindElements {
-    HashMap<Integer, Integer> map = new HashMap();
+    private final HashMap<Integer, Integer> map = new HashMap<>();
 
     public FindElements(TreeNode root) {
         helper(root, 0);
     }
 
     private void helper(TreeNode root, int x) {
-        if (root == null) return;
+        if (root == null) {
+            return;
+        }
         root.val = x;
         map.put(x, 0);
         helper(root.left, 2 * x + 1);
@@ -22,7 +24,6 @@ public class FindElements {
     }
 
     public boolean find(int target) {
-        if (map.containsKey(target)) return true;
-        return false;
+        return map.containsKey(target);
     }
 }

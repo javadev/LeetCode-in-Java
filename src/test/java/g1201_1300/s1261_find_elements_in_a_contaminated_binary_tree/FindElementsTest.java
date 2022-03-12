@@ -7,7 +7,7 @@ import com_github_leetcode.TreeNode;
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
-class SolutionTest {
+class FindElementsTest {
     @Test
     void findElementsTest() {
         FindElements findElements = new FindElements(TreeNode.create(Arrays.asList(-1, null, -1)));
