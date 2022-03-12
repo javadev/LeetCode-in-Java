@@ -47,18 +47,13 @@ public class DiningPhilosophers {
             putFirstFork = putLeftFork;
             putSecondFork = putRightFork;
         }
-
         firstFork.lock();
         pickFirstFork.run();
-
         secondFork.lock();
         pickSecondFork.run();
-
         eat.run();
-
         putFirstFork.run();
         firstFork.unlock();
-
         putSecondFork.run();
         secondFork.unlock();
     }
