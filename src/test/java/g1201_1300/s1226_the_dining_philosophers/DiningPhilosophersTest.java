@@ -18,21 +18,11 @@ class DiningPhilosophersTest {
                                 try {
                                     d.wantsToEat(
                                             0,
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            });
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++);
                                 } catch (InterruptedException e) {
                                     e.printStackTrace();
                                 }
@@ -45,21 +35,11 @@ class DiningPhilosophersTest {
                                 try {
                                     d.wantsToEat(
                                             1,
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            });
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++);
                                 } catch (InterruptedException e) {
                                     e.printStackTrace();
                                 }
@@ -72,21 +52,11 @@ class DiningPhilosophersTest {
                                 try {
                                     d.wantsToEat(
                                             2,
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            });
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++);
                                 } catch (InterruptedException e) {
                                     e.printStackTrace();
                                 }
@@ -99,21 +69,11 @@ class DiningPhilosophersTest {
                                 try {
                                     d.wantsToEat(
                                             3,
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            });
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++);
                                 } catch (InterruptedException e) {
                                     e.printStackTrace();
                                 }
@@ -126,21 +86,11 @@ class DiningPhilosophersTest {
                                 try {
                                     d.wantsToEat(
                                             4,
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            },
-                                            () -> {
-                                                calls[0]++;
-                                            });
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++,
+                                            () -> calls[0]++);
                                 } catch (InterruptedException e) {
                                     e.printStackTrace();
                                 }
