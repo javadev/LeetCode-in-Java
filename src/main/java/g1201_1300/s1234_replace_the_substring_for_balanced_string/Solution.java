@@ -17,7 +17,8 @@ public class Solution {
         if (excess == 0) {
             return 0;
         }
-        for (int i = 0, j = 0; i < n; i++) {
+        int j = 0;
+        for (int i = 0; i < n; i++) {
             if (--cnt[s.charAt(i)] == 0) {
                 excess--;
             }
@@ -28,8 +29,8 @@ public class Solution {
                 ans = Math.min(i - j + 1, ans);
                 j++;
             }
+            j++;
         }
-
         return ans;
     }
 }
