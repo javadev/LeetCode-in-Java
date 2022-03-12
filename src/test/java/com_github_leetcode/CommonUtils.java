@@ -36,6 +36,22 @@ public class CommonUtils {
         return true;
     }
 
+    public static boolean compareArray(List<Integer> arr1, List<Integer> arr2) {
+        for (int i : arr1) {
+            boolean include = false;
+            for (int j : arr2) {
+                if (i == j) {
+                    include = true;
+                    break;
+                }
+            }
+            if (!include) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static boolean compareMatrix(List<List<Integer>> mt1, List<List<Integer>> mt2) {
         for (List<Integer> i : mt1) {
             boolean include = false;
