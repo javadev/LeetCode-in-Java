@@ -1,60 +1,38 @@
 package g1201_1300.s1226_the_dining_philosophers;
 
-// #Medium #Concurrency #2022_03_12_Time_9_ms_(99.62%)_Space_43_MB_(78.59%)
+// #Medium #Concurrency #2022_03_12_Time_10_ms_(83.56%)_Space_42.9_MB_(80.88%)
 
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.Semaphore;
 
 public class DiningPhilosophers {
+    private Semaphore[] forks = new Semaphore[5];
+    private Semaphore eating = new Semaphore(4);
 
-    private final Lock[] forks =
-            new Lock[] {
-                new ReentrantLock(),
-                new ReentrantLock(),
-                new ReentrantLock(),
-                new ReentrantLock(),
-                new ReentrantLock()
-            };
+    public DiningPhilosophers() {
+        for (int i = 0; i < 5; i++) {
+            forks[i] = new Semaphore(1);
+        }
+    }
 
+    // call the run() method of any runnable to execute its code
     public void wantsToEat(
-            int philosopher,
+            int i,
             Runnable pickLeftFork,
             Runnable pickRightFork,
             Runnable eat,
             Runnable putLeftFork,
-            Runnable putRightFork) {
-
-        int leftForkIndex = (philosopher + 1) % 5;
-
-        Lock firstFork;
-        Lock secondFork;
-        Runnable pickFirstFork;
-        Runnable pickSecondFork;
-        Runnable putFirstFork;
-        Runnable putSecondFork;
-        if (philosopher % 2 == 0) {
-            firstFork = forks[philosopher];
-            secondFork = forks[leftForkIndex];
-            pickFirstFork = pickRightFork;
-            pickSecondFork = pickLeftFork;
-            putFirstFork = putRightFork;
-            putSecondFork = putLeftFork;
-        } else {
-            firstFork = forks[leftForkIndex];
-            secondFork = forks[philosopher];
-            pickFirstFork = pickLeftFork;
-            pickSecondFork = pickRightFork;
-            putFirstFork = putLeftFork;
-            putSecondFork = putRightFork;
-        }
-        firstFork.lock();
-        pickFirstFork.run();
-        secondFork.lock();
-        pickSecondFork.run();
+            Runnable putRightFork)
+            throws InterruptedException {
+        eating.acquire();
+        forks[i].acquire();
+        forks[(i + 1) % 5].acquire();
+        pickLeftFork.run();
+        pickRightFork.run();
         eat.run();
-        putFirstFork.run();
-        firstFork.unlock();
-        putSecondFork.run();
-        secondFork.unlock();
+        putLeftFork.run();
+        putRightFork.run();
+        forks[i].release();
+        forks[(i + 1) % 5].release();
+        eating.release();
     }
 }
