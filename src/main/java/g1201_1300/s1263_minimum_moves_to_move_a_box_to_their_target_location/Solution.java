@@ -31,15 +31,17 @@ public class Solution {
                     return steps;
                 }
                 for (int i = 0; i < 4; i++) {
-                    int[] newPlayerLoc = new int[] {cur[0] + dirs[i][0], cur[1] + dirs[i][1]};
-                    int[] newBoxLoc = new int[] {cur[0] - dirs[i][0], cur[1] - dirs[i][1]};
-                    if (visited[cur[0]][cur[1]][i]
-                            || isOutOfBounds(newPlayerLoc, newBoxLoc)
-                            || !isReachable(newPlayerLoc, cur)) {
-                        continue;
+                    if (cur != null) {
+                        int[] newPlayerLoc = new int[] {cur[0] + dirs[i][0], cur[1] + dirs[i][1]};
+                        int[] newBoxLoc = new int[] {cur[0] - dirs[i][0], cur[1] - dirs[i][1]};
+                        if (visited[cur[0]][cur[1]][i]
+                                || isOutOfBounds(newPlayerLoc, newBoxLoc)
+                                || !isReachable(newPlayerLoc, cur)) {
+                            continue;
+                        }
+                        visited[cur[0]][cur[1]][i] = true;
+                        q.offer(new int[] {newBoxLoc[0], newBoxLoc[1], cur[0], cur[1]});
                     }
-                    visited[cur[0]][cur[1]][i] = true;
-                    q.offer(new int[] {newBoxLoc[0], newBoxLoc[1], cur[0], cur[1]});
                 }
             }
             steps++;
