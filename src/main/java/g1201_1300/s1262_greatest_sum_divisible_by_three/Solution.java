@@ -5,28 +5,28 @@ package g1201_1300.s1262_greatest_sum_divisible_by_three;
 public class Solution {
     public int maxSumDivThree(int[] nums) {
         int sum = 0;
-        int smallest_num_with_mod_1 = 10001;
-        int second_smallest_num_with_mod_1 = 10002;
-        int smallest_num_with_mod_2 = 10001;
-        int second_smallest_num_with_mod_2 = 10002;
+        int smallestNumWithMod1 = 10001;
+        int secondSmallestNumWithMod1 = 10002;
+        int smallestNumWithMod2 = 10001;
+        int secondSmallestNumWithMod2 = 10002;
         for (int i : nums) {
             sum += i;
             if (i % 3 == 1) {
-                if (i <= smallest_num_with_mod_1) {
-                    int temp = smallest_num_with_mod_1;
-                    smallest_num_with_mod_1 = i;
-                    second_smallest_num_with_mod_1 = temp;
-                } else if (i < second_smallest_num_with_mod_1) {
-                    second_smallest_num_with_mod_1 = i;
+                if (i <= smallestNumWithMod1) {
+                    int temp = smallestNumWithMod1;
+                    smallestNumWithMod1 = i;
+                    secondSmallestNumWithMod1 = temp;
+                } else if (i < secondSmallestNumWithMod1) {
+                    secondSmallestNumWithMod1 = i;
                 }
             }
             if (i % 3 == 2) {
-                if (i <= smallest_num_with_mod_2) {
-                    int temp = smallest_num_with_mod_2;
-                    smallest_num_with_mod_2 = i;
-                    second_smallest_num_with_mod_2 = temp;
-                } else if (i < second_smallest_num_with_mod_2) {
-                    second_smallest_num_with_mod_2 = i;
+                if (i <= smallestNumWithMod2) {
+                    int temp = smallestNumWithMod2;
+                    smallestNumWithMod2 = i;
+                    secondSmallestNumWithMod2 = temp;
+                } else if (i < secondSmallestNumWithMod2) {
+                    secondSmallestNumWithMod2 = i;
                 }
             }
         }
@@ -35,14 +35,14 @@ public class Solution {
         } else if (sum % 3 == 2) {
             int min =
                     Math.min(
-                            smallest_num_with_mod_2,
-                            smallest_num_with_mod_1 + second_smallest_num_with_mod_1);
+                            smallestNumWithMod2,
+                            smallestNumWithMod1 + secondSmallestNumWithMod1);
             return sum - min;
         } else if (sum % 3 == 1) {
             int min =
                     Math.min(
-                            smallest_num_with_mod_1,
-                            smallest_num_with_mod_2 + second_smallest_num_with_mod_2);
+                            smallestNumWithMod1,
+                            smallestNumWithMod2 + secondSmallestNumWithMod2);
             return sum - min;
         }
         return sum;

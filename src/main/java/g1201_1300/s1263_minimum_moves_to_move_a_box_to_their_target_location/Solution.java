@@ -16,7 +16,9 @@ public class Solution {
         n = grid.length;
         m = grid[0].length;
         this.grid = grid;
-        int[] box = new int[2], target = new int[2], player = new int[2];
+        int[] box = new int[2];
+        int[] target = new int[2];
+        int[] player = new int[2];
         findLocations(box, target, player);
         Queue<int[]> q = new LinkedList<>();
         q.offer(new int[] {box[0], box[1], player[0], player[1]});
