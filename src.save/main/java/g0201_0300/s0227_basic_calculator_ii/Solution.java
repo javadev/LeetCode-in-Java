@@ -1,6 +1,7 @@
 package g0201_0300.s0227_basic_calculator_ii;
 
 // #Medium #Top_Interview_Questions #String #Math #Stack
+// #2022_03_14_Time_9_ms_(88.15%)_Space_43.5_MB_(65.58%)
 
 public class Solution {
     public int calculate(String s) {
