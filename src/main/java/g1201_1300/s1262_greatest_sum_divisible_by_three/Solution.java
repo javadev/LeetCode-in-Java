@@ -34,15 +34,11 @@ public class Solution {
             return sum;
         } else if (sum % 3 == 2) {
             int min =
-                    Math.min(
-                            smallestNumWithMod2,
-                            smallestNumWithMod1 + secondSmallestNumWithMod1);
+                    Math.min(smallestNumWithMod2, smallestNumWithMod1 + secondSmallestNumWithMod1);
             return sum - min;
         } else if (sum % 3 == 1) {
             int min =
-                    Math.min(
-                            smallestNumWithMod1,
-                            smallestNumWithMod2 + secondSmallestNumWithMod2);
+                    Math.min(smallestNumWithMod1, smallestNumWithMod2 + secondSmallestNumWithMod2);
             return sum - min;
         }
         return sum;
