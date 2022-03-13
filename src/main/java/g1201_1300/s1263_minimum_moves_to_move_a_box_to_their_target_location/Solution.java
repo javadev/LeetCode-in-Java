@@ -18,8 +18,7 @@ public class Solution {
         this.grid = grid;
         int[] box = new int[2], target = new int[2], player = new int[2];
         findLocations(box, target, player);
-
-        Queue<int[]> q = new LinkedList();
+        Queue<int[]> q = new LinkedList<>();
         q.offer(new int[] {box[0], box[1], player[0], player[1]});
         // for 4 directions
         boolean[][][] visited = new boolean[n][m][4];
@@ -56,8 +55,9 @@ public class Solution {
         q.offer(new int[] {cur[2], cur[3]});
         while (!q.isEmpty()) {
             int[] playerLoc = q.poll();
-            if (playerLoc[0] == targetPlayerLoc[0] && playerLoc[1] == targetPlayerLoc[1])
+            if (playerLoc[0] == targetPlayerLoc[0] && playerLoc[1] == targetPlayerLoc[1]) {
                 return true;
+            }
             for (int[] d : dirs) {
                 int x = playerLoc[0] + d[0];
                 int y = playerLoc[1] + d[1];
