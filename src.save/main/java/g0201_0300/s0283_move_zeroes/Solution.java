@@ -1,6 +1,8 @@
 package g0201_0300.s0283_move_zeroes;
 
 // #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Array #Two_Pointers
+// #Algorithm_I_Day_3_Two_Pointers #Programming_Skills_I_Day_6_Array
+// #2022_03_14_Time_2_ms_(74.00%)_Space_54.7_MB_(38.66%)
 
 public class Solution {
     public void moveZeroes(int[] nums) {

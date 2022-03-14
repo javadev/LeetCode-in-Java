@@ -1,6 +1,6 @@
 package g0201_0300.s0284_peeking_iterator;
 
-// #Medium #Array #Design #Iterator
+// #Medium #Array #Design #Iterator #2022_03_14_Time_5_ms_(78.72%)_Space_43.3_MB_(11.23%)
 
 import java.util.Iterator;
 
