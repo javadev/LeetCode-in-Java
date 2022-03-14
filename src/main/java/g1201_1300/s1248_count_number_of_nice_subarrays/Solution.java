@@ -10,7 +10,7 @@ public class Solution {
         int num = 0;
         int endIndex;
         int res = 0;
-        boolean hasK = false;
+        boolean hasK;
         for (int i = 0; i < nums.length; i++) {
             hasK = false;
             endIndex = i;
