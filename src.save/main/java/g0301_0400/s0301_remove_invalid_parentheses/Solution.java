@@ -1,6 +1,7 @@
 package g0301_0400.s0301_remove_invalid_parentheses;
 
 // #Hard #String #Breadth_First_Search #Backtracking
+// #2022_03_14_Time_4_ms_(86.17%)_Space_42.6_MB_(71.40%)
 
 import java.util.ArrayList;
 import java.util.List;
