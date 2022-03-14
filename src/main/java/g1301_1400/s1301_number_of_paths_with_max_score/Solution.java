@@ -5,7 +5,7 @@ package g1301_1400.s1301_number_of_paths_with_max_score;
 import java.util.List;
 
 public class Solution {
-    private static final int[][] directions = new int[][] {{1, 0}, {0, 1}, {1, 1}};
+    private static final int[][] DIRECTIONS = new int[][] {{1, 0}, {0, 1}, {1, 1}};
 
     public int[] pathsWithMaxScore(List<String> board) {
         int rows = board.size();
@@ -23,7 +23,7 @@ public class Solution {
                     int paths = 0;
                     int currentScore = current == 'E' ? 0 : current - '0';
 
-                    for (int[] dir : directions) {
+                    for (int[] dir : DIRECTIONS) {
                         int nextR = r + dir[0];
                         int nextC = c + dir[1];
 
