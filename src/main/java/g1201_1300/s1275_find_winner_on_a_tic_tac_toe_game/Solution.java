@@ -12,10 +12,8 @@ public class Solution {
             } else {
                 board[moves[i][0]][moves[i][1]] = "O";
             }
-            if (i > 3) {
-                if (!wins(board).equals("")) {
-                    return wins(board);
-                }
+            if (i > 3 && !wins(board).equals("")) {
+                return wins(board);
             }
         }
         return moves.length == 9 ? "Draw" : "Pending";

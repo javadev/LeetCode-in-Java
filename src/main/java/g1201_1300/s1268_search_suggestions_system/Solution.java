@@ -14,8 +14,7 @@ public class Solution {
             trie.insert(p);
         }
 
-        List<List<String>> res = trie.getResult(searchWord);
-        return res;
+        return trie.getResult(searchWord);
     }
 
     static class Trie {
@@ -43,7 +42,9 @@ public class Solution {
             for (int i = 0; i < searchWord.length(); i++) {
                 char c = searchWord.charAt(i);
                 List<String> temp = new ArrayList<>();
-                if (curr != null) curr = curr.get(c);
+                if (curr != null) {
+                    curr = curr.get(c);
+                }
 
                 for (int j = 0; j < 3 && curr != null && j < curr.getList().size(); j++) {
                     temp.add(curr.getList().get(j));
