@@ -1,6 +1,7 @@
 package g0301_0400.s0313_super_ugly_number;
 
-// #Medium #Array #Dynamic_Programming #Hash_Table #Math #Heap_Priority_Queue
+// #Medium #Array #Hash_Table #Dynamic_Programming #Math #Heap_Priority_Queue
+// #2022_03_14_Time_280_ms_(86.61%)_Space_46.9_MB_(30.44%)
 
 public class Solution {
     public int nthSuperUglyNumber(int n, int[] primes) {

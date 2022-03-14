@@ -1,6 +1,7 @@
 package g0301_0400.s0310_minimum_height_trees;
 
 // #Medium #Depth_First_Search #Breadth_First_Search #Graph #Topological_Sort
+// #2022_03_14_Time_22_ms_(94.43%)_Space_75.7_MB_(51.83%)
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -1,6 +1,7 @@
 package g0301_0400.s0303_range_sum_query_immutable;
 
-// #Easy #Array #Design #Prefix_Sum
+// #Easy #Array #Design #Prefix_Sum #Programming_Skills_I_Day_12_Class_&_Object
+// #2022_03_14_Time_6_ms_(100.00%)_Space_45_MB_(89.49%)
 
 public class NumArray {
     private int[] sums;
