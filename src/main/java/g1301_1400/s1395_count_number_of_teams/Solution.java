@@ -1,6 +1,7 @@
 package g1301_1400.s1395_count_number_of_teams;
 
 // #Medium #Array #Dynamic_Programming #Binary_Indexed_Tree
+// #2022_03_14_Time_18_ms_(91.75%)_Space_44.9_MB_(10.22%)
 
 import java.util.Arrays;
 
