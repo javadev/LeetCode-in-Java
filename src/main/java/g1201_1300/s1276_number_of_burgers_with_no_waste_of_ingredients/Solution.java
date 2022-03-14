@@ -10,9 +10,7 @@ public class Solution {
         List<Integer> numbers = new ArrayList<>();
         int numberOfCheese = cheeseSlices * 4;
         int remaining = numberOfCheese - tomatoSlices;
-        if (remaining < 0 || remaining % 2 == 1) {
-            return numbers;
-        } else {
+        if (remaining >= 0 && remaining % 2 != 1) {
             int numberOfSmall = remaining / 2;
             int numberOfLarge = cheeseSlices - numberOfSmall;
             if (numberOfLarge < 0) {
@@ -20,7 +18,7 @@ public class Solution {
             }
             numbers.add(numberOfLarge);
             numbers.add(numberOfSmall);
-            return numbers;
         }
+        return numbers;
     }
 }
