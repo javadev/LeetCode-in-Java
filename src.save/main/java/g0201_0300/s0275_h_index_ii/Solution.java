@@ -1,9 +1,9 @@
 package g0201_0300.s0275_h_index_ii;
 
-// #Medium #Array #Binary_Search
+// #Medium #Array #Binary_Search #2022_03_14_Time_0_ms_(100.00%)_Space_52.2_MB_(44.51%)
 
 public class Solution {
-    public int hindex(int[] citations) {
+    public int hIndex(int[] citations) {
         int lo = 1;
         int hi = 1000;
         int ans = 0;
