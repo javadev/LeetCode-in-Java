@@ -1,6 +1,6 @@
 package g0201_0300.s0263_ugly_number;
 
-// #Easy #Math
+// #Easy #Math #2022_03_14_Time_1_ms_(95.93%)_Space_41.7_MB_(19.40%)
 
 public class Solution {
     public boolean isUgly(int n) {

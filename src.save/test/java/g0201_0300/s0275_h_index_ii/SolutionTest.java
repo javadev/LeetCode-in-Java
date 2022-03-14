@@ -7,7 +7,12 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void hindex() {
-        assertThat(new Solution().hindex(new int[] {0, 1, 3, 5, 6}), equalTo(3));
+    void hIndex() {
+        assertThat(new Solution().hIndex(new int[] {0, 1, 3, 5, 6}), equalTo(3));
+    }
+
+    @Test
+    void hIndex2() {
+        assertThat(new Solution().hIndex(new int[] {1, 2, 100}), equalTo(2));
     }
 }

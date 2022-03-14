@@ -1,11 +1,11 @@
 package g0201_0300.s0274_h_index;
 
-// #Medium #Array #Sorting #Counting_Sort
+// #Medium #Array #Sorting #Counting_Sort #2022_03_14_Time_2_ms_(51.85%)_Space_43_MB_(5.41%)
 
 import java.util.Arrays;
 
 public class Solution {
-    public int hindex(int[] citations) {
+    public int hIndex(int[] citations) {
         // Sort array then traverse from end keep track of counter denoting total elements seen so
         // far
         Arrays.sort(citations);
