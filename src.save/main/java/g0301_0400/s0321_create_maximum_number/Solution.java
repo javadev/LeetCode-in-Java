@@ -1,6 +1,6 @@
 package g0301_0400.s0321_create_maximum_number;
 
-// #Hard #Greedy #Stack #Monotonic_Stack
+// #Hard #Greedy #Stack #Monotonic_Stack #2022_03_15_Time_9_ms_(93.46%)_Space_46.3_MB_(74.23%)
 
 public class Solution {
     public int[] maxNumber(int[] nums1, int[] nums2, int k) {
