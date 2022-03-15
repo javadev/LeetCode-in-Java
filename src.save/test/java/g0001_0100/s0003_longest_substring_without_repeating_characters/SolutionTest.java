@@ -10,4 +10,14 @@ class SolutionTest {
     void lengthOfLongestSubstring() {
         assertThat(new Solution().lengthOfLongestSubstring("abcabcbb"), equalTo(3));
     }
+
+    @Test
+    void lengthOfLongestSubstring2() {
+        assertThat(new Solution().lengthOfLongestSubstring("bbbbb"), equalTo(1));
+    }
+
+    @Test
+    void lengthOfLongestSubstring3() {
+        assertThat(new Solution().lengthOfLongestSubstring("pwwkew"), equalTo(3));
+    }
 }
