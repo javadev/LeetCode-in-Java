@@ -1,5 +1,8 @@
 package g1301_1400.s1311_get_watched_videos_by_your_friends;
 
+// #Medium #Array #Hash_Table #Sorting #Breadth_First_Search
+// #2022_03_15_Time_39_ms_(73.81%)_Space_69.9_MB_(22.62%)
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -31,7 +34,6 @@ public class Solution {
         queue.add(id);
         visited[id] = true;
         int currLevel = 0;
-
         while (!queue.isEmpty()) {
             int size = queue.size();
             while (size-- > 0) {
@@ -44,14 +46,11 @@ public class Solution {
                     }
                 }
             }
-
             currLevel++;
-
             if (currLevel == level) {
                 break;
             }
         }
-
         Map<String, VideoCount> map = new HashMap<>();
         while (!queue.isEmpty()) {
             Integer f = queue.poll();
@@ -61,7 +60,6 @@ public class Solution {
                 map.get(video).count++;
             }
         }
-
         PriorityQueue<VideoCount> pq =
                 new PriorityQueue<>(
                         (v1, v2) ->
@@ -71,12 +69,10 @@ public class Solution {
         for (Map.Entry<String, VideoCount> key : map.entrySet()) {
             pq.add(key.getValue());
         }
-
         List<String> res = new ArrayList<>();
         while (!pq.isEmpty()) {
             res.add(pq.poll().v);
         }
-
         return res;
     }
 }
