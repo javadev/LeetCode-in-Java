@@ -10,4 +10,9 @@ class SolutionTest {
     void convert() {
         assertThat(new Solution().convert("PAYPALISHIRING", 3), equalTo("PAHNAPLSIIGYIR"));
     }
+
+    @Test
+    void convert2() {
+        assertThat(new Solution().convert("PAYPALISHIRING", 4), equalTo("PINALSIGYAHRPI"));
+    }
 }

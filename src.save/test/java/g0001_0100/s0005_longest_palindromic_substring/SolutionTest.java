@@ -10,4 +10,9 @@ class SolutionTest {
     void longestPalindrome() {
         assertThat(new Solution().longestPalindrome("babad"), equalTo("bab"));
     }
+
+    @Test
+    void longestPalindrome2() {
+        assertThat(new Solution().longestPalindrome("cbbd"), equalTo("bb"));
+    }
 }

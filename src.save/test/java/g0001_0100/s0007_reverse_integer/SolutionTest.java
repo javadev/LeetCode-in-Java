@@ -10,4 +10,14 @@ class SolutionTest {
     void reverse() {
         assertThat(new Solution().reverse(123), equalTo(321));
     }
+
+    @Test
+    void reverse2() {
+        assertThat(new Solution().reverse(-123), equalTo(-321));
+    }
+
+    @Test
+    void reverse3() {
+        assertThat(new Solution().reverse(120), equalTo(21));
+    }
 }
