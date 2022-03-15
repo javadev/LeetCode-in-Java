@@ -36,14 +36,9 @@ public class Solution {
         map.put("25#", "y");
         map.put("26#", "z");
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < s.length(); ) {
-            if (Integer.parseInt("" + s.charAt(i)) == 1
-                    && i + 1 < s.length()
-                    && i + 2 < s.length()
-                    && s.charAt(i + 2) == '#') {
-                sb.append(map.get(s.substring(i, i + 3)));
-                i += 3;
-            } else if (Integer.parseInt("" + s.charAt(i)) == 2
+        int i = 0;
+        while (i < s.length()) {
+            if ((Integer.parseInt("" + s.charAt(i)) == 1 || Integer.parseInt("" + s.charAt(i)) == 2)
                     && i + 1 < s.length()
                     && i + 2 < s.length()
                     && s.charAt(i + 2) == '#') {

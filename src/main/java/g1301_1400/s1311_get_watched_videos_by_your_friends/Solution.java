@@ -68,8 +68,8 @@ public class Solution {
                                 (v1.count == v2.count)
                                         ? v1.v.compareTo(v2.v)
                                         : v1.count - v2.count);
-        for (String key : map.keySet()) {
-            pq.add(map.get(key));
+        for (Map.Entry<String, VideoCount> key : map.entrySet()) {
+            pq.add(key.getValue());
         }
 
         List<String> res = new ArrayList<>();

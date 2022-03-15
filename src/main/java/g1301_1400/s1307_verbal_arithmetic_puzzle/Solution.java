@@ -27,8 +27,8 @@ public class Solution {
         Arrays.fill(map, -1);
 
         int maxLength = 0;
-        for (int i = 0, j; i < words.length; i++) {
-            j = words[i].length();
+        for (int i = 0; i < words.length; i++) {
+            int j = words[i].length();
             if (j > maxLength) {
                 maxLength = j;
             }
@@ -86,8 +86,8 @@ public class Solution {
     }
 
     private void backtrack(int r, int c, int sum) {
-        char UNUSED = '\u0000';
-        if (grid[r][c] == UNUSED) {
+        char unused = '\u0000';
+        if (grid[r][c] == unused) {
             placeNextNum(r, c, sum);
         } else {
             int ci = grid[r][c] - 'A';
@@ -97,7 +97,9 @@ public class Solution {
                     if (canPlace(ci, d)) {
                         placeNum(ci, d);
                         placeNextNum(r, c, sum / 10);
-                        if (solved) return;
+                        if (solved) {
+                            return;
+                        }
                         removeNum(ci, d);
                     }
                 } else {
@@ -111,7 +113,9 @@ public class Solution {
                         if (canPlace(ci, d)) {
                             placeNum(ci, d);
                             placeNextNum(r, c, sum + d);
-                            if (solved) return;
+                            if (solved) {
+                                return;
+                            }
                             removeNum(ci, d);
                         }
                     }
