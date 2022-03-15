@@ -1,9 +1,25 @@
 package g0301_0400.s0337_house_robber_iii;
 
 // #Medium #Top_100_Liked_Questions #Dynamic_Programming #Depth_First_Search #Tree #Binary_Tree
+// #2022_03_15_Time_1_ms_(87.96%)_Space_44.1_MB_(55.84%)
 
 import com_github_leetcode.TreeNode;
 
+/*
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 public class Solution {
     public int rob(TreeNode root) {
         int[] out = robRec(root);

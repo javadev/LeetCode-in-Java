@@ -1,6 +1,7 @@
 package g0301_0400.s0338_counting_bits;
 
 // #Easy #Dynamic_Programming #Bit_Manipulation
+// #2022_03_15_Time_1_ms_(99.97%)_Space_46.6_MB_(76.56%)
 
 public class Solution {
     public int[] countBits(int num) {
