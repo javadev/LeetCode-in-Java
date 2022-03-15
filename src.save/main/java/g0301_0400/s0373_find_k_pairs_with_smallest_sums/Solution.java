@@ -1,6 +1,6 @@
 package g0301_0400.s0373_find_k_pairs_with_smallest_sums;
 
-// #Medium #Array #Heap_Priority_Queue
+// #Medium #Array #Heap_Priority_Queue #2022_03_15_Time_58_ms_(29.29%)_Space_125_MB_(32.75%)
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,7 @@ public class Solution {
         }
     }
 
-    public List<List<Integer>> ksmallestPairs(int[] nums1, int[] nums2, int k) {
+    public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
         PriorityQueue<Node> queue = new PriorityQueue<>((a, b) -> a.sum < b.sum ? -1 : 1);
         List<List<Integer>> res = new ArrayList<>();
         for (int i = 0; i < nums1.length && i < k; i++) {

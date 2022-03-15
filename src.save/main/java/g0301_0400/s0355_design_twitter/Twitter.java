@@ -19,7 +19,7 @@ public class Twitter {
         int userId;
         int tweetId;
         Tweet next;
-    
+
         Tweet(int uId, int tId) {
             userId = uId;
             tweetId = tId;
