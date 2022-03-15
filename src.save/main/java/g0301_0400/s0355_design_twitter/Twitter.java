@@ -1,6 +1,7 @@
 package g0301_0400.s0355_design_twitter;
 
 // #Medium #Hash_Table #Design #Heap_Priority_Queue #Linked_List
+// #2022_03_15_Time_8_ms_(99.79%)_Space_40.4_MB_(62.20%)
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,6 +14,17 @@ public class Twitter {
     private Map<Integer, HashSet<Integer>> twitterData;
     // head of linked list that stores all the tweets
     private Tweet head;
+
+    private static class Tweet {
+        int userId;
+        int tweetId;
+        Tweet next;
+    
+        Tweet(int uId, int tId) {
+            userId = uId;
+            tweetId = tId;
+        }
+    }
 
     public Twitter() {
         head = new Tweet(-1, -1);

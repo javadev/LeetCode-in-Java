@@ -1,6 +1,6 @@
 package g0301_0400.s0352_data_stream_as_disjoint_intervals;
 
-// #Hard #Binary_Search #Design #Ordered_Set
+// #Hard #Binary_Search #Design #Ordered_Set #2022_03_15_Time_94_ms_(76.26%)_Space_74.1_MB_(52.53%)
 
 import java.util.ArrayList;
 import java.util.List;
