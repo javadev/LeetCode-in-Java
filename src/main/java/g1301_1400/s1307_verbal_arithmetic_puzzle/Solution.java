@@ -15,17 +15,14 @@ public class Solution {
 
     public boolean isSolvable(String[] words, String result) {
         this.solved = false;
-
         int rows = words.length + 1;
         this.cols = result.length();
         this.grid = new char[rows][cols];
         this.mustNotBeZero = new boolean[26];
         this.usedDigit = new boolean[10];
         this.resultRow = rows - 1;
-
         this.map = new int[26];
         Arrays.fill(map, -1);
-
         int maxLength = 0;
         for (int i = 0; i < words.length; i++) {
             int j = words[i].length();
@@ -45,7 +42,6 @@ public class Solution {
         if (maxLength + 1 < cols) {
             return false;
         }
-
         int j = cols;
         if (j > 1) {
             mustNotBeZero[result.charAt(0) - 'A'] = true;
@@ -53,9 +49,7 @@ public class Solution {
         for (char c : result.toCharArray()) {
             grid[resultRow][--j] = c;
         }
-
         backtrack(0, 0, 0);
-
         return solved;
     }
 
