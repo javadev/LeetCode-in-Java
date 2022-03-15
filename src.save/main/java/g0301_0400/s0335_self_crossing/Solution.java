@@ -1,9 +1,8 @@
 package g0301_0400.s0335_self_crossing;
 
-// #Hard #Array #Math #Geometry
+// #Hard #Array #Math #Geometry #2022_03_15_Time_6_ms_(44.12%)_Space_51.3_MB_(52.94%)
 
 public class Solution {
-
     public boolean isSelfCrossing(int[] x) {
         if (x.length < 4) {
             return false;
