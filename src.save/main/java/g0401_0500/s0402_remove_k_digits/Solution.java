@@ -1,6 +1,7 @@
 package g0401_0500.s0402_remove_k_digits;
 
 // #Medium #String #Greedy #Stack #Monotonic_Stack
+// #2022_03_16_Time_6_ms_(90.82%)_Space_45.6_MB_(44.06%)
 
 public class Solution {
     public String removeKdigits(String num, int k) {
