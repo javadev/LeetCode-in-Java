@@ -1,6 +1,7 @@
 package g0301_0400.s0398_random_pick_index;
 
 // #Medium #Hash_Table #Math #Randomized #Reservoir_Sampling
+// #2022_03_16_Time_105_ms_(48.44%)_Space_68.9_MB_(76.80%)
 
 /*
  * Using Reservoir Sampling

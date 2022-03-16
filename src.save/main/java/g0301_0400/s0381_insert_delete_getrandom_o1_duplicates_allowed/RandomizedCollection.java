@@ -1,6 +1,7 @@
 package g0301_0400.s0381_insert_delete_getrandom_o1_duplicates_allowed;
 
 // #Hard #Array #Hash_Table #Math #Design #Randomized
+// #2022_03_16_Time_141_ms_(5.09%)_Space_97.1_MB_(51.88%)
 
 import java.security.SecureRandom;
 import java.util.HashMap;
