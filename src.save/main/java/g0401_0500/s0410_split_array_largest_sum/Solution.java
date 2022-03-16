@@ -1,6 +1,7 @@
 package g0401_0500.s0410_split_array_largest_sum;
 
 // #Hard #Array #Dynamic_Programming #Greedy #Binary_Search
+// #2022_03_16_Time_1_ms_(84.88%)_Space_41.4_MB_(59.15%)
 
 public class Solution {
     public int splitArray(int[] nums, int m) {
