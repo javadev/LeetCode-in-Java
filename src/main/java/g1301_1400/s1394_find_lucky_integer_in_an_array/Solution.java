@@ -9,7 +9,9 @@ public class Solution {
             numbers[j]++;
         }
         for (int i = 500; i > 0; i--) {
-            if (i == numbers[i]) return i;
+            if (i == numbers[i]) {
+                return i;
+            }
         }
         return -1;
     }
