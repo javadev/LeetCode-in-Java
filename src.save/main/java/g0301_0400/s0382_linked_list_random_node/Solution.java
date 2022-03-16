@@ -1,6 +1,7 @@
 package g0301_0400.s0382_linked_list_random_node;
 
 // #Medium #Math #Linked_List #Randomized #Reservoir_Sampling
+// #2022_03_16_Time_66_ms_(5.34%)_Space_53.1_MB_(5.34%)
 
 import com_github_leetcode.ListNode;
 import java.security.SecureRandom;

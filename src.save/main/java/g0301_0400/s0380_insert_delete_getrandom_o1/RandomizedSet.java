@@ -1,6 +1,7 @@
 package g0301_0400.s0380_insert_delete_getrandom_o1;
 
 // #Medium #Top_Interview_Questions #Array #Hash_Table #Math #Design #Randomized
+// #Programming_Skills_II_Day_20 #2022_03_16_Time_143_ms_(9.42%)_Space_84.7_MB_(99.21%)
 
 import java.security.SecureRandom;
 import java.util.ArrayList;

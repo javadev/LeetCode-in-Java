@@ -1,6 +1,7 @@
 package g0301_0400.s0394_decode_string;
 
 // #Medium #Top_100_Liked_Questions #String #Stack #Recursion
+// #2022_03_16_Time_1_ms_(83.81%)_Space_42.1_MB_(38.87%)
 
 public class Solution {
     private int i = 0;

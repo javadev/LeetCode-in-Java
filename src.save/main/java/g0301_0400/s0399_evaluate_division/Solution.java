@@ -1,6 +1,7 @@
 package g0301_0400.s0399_evaluate_division;
 
 // #Medium #Array #Depth_First_Search #Breadth_First_Search #Graph #Union_Find #Shortest_Path
+// #2022_03_16_Time_1_ms_(97.67%)_Space_42.6_MB_(43.14%)
 
 import java.util.HashMap;
 import java.util.List;
