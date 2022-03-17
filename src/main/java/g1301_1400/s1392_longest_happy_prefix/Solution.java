@@ -16,7 +16,7 @@ public class Solution {
             prefixHash = (prefixHash * times + s.charAt(i)) % mod;
             suffixHash = (multiplier * s.charAt(s.length() - i - 1) + suffixHash) % mod;
             if (prefixHash == suffixHash) {
-                len = i + 1;
+                len = (long) i + 1;
             }
             multiplier = multiplier * times % mod;
         }
