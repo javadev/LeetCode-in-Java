@@ -5,10 +5,10 @@ package g1301_1400.s1388_pizza_with_3n_slices;
 
 public class Solution {
     public int maxSizeSlices(int[] slices) {
-        int N = slices.length;
-        int third = N / 3;
+        int n = slices.length;
+        int third = n / 3;
         return Math.max(
-                maxSizeSlices(slices, 0, N - 2, third), maxSizeSlices(slices, 1, N - 1, third));
+                maxSizeSlices(slices, 0, n - 2, third), maxSizeSlices(slices, 1, n - 1, third));
     }
 
     private int maxSizeSlices(int[] slices, int start, int end, int parts) {
