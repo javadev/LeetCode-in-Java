@@ -61,19 +61,19 @@ public class Solution {
 
     private int[] getNext(String e) {
         int len = e.length();
-        int[] next = new int[len];
-        next[0] = -1;
+        int[] localNext = new int[len];
+        localNext[0] = -1;
         int last = -1;
         int i = 0;
         while (i < len - 1) {
             if (last == -1 || e.charAt(i) == e.charAt(last)) {
                 i++;
                 last++;
-                next[i] = last;
+                localNext[i] = last;
             } else {
-                last = next[last];
+                last = localNext[last];
             }
         }
-        return next;
+        return localNext;
     }
 }
