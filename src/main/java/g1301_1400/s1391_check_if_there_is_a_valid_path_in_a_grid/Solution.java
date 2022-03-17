@@ -36,11 +36,12 @@ public class Solution {
                     continue;
                 }
                 // go to the next cell and come back to orign to see if port directions are same
-                for (int[] backDir : dirs[grid[nx][ny] - 1])
+                for (int[] backDir : dirs[grid[nx][ny] - 1]) {
                     if (nx + backDir[0] == x && ny + backDir[1] == y) {
                         visited[nx][ny] = true;
                         q.add(new int[] {nx, ny});
                     }
+                }
             }
         }
         return visited[m - 1][n - 1];
