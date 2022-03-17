@@ -34,9 +34,7 @@ public class UndergroundSystem {
     }
 
     public void checkIn(int id, String stationName, int t) {
-        if (!travelerMap.containsKey(id)) {
-            travelerMap.put(id, new LinkedList<>());
-        }
+        travelerMap.putIfAbsent(id, new LinkedList<>());
         travelerMap.get(id).add(new StationAndTime(stationName, t));
     }
 
