@@ -8,7 +8,6 @@ public class Solution {
     private int[] next;
 
     public int findGoodStrings(int n, String s1, String s2, String evil) {
-        // s1--
         char[] s1arr = s1.toCharArray();
         for (int i = s1.length() - 1; i >= 0; i--) {
             if (s1arr[i] > 'a') {
@@ -70,7 +69,9 @@ public class Solution {
                 i++;
                 last++;
                 next[i] = last;
-            } else last = next[last];
+            } else {
+                last = next[last];
+            }
         }
         return next;
     }

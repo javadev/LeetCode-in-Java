@@ -20,6 +20,16 @@ public class Solution {
         return countLargestGroup(largest, map);
     }
 
+    private int countLargestGroup(int largest, int[] arr) {
+        int count = 0;
+        for (int val : arr) {
+            if (val == largest) {
+                count++;
+            }
+        }
+        return count;
+    }
+
     private int getSumOfDigits(int num) {
         int sum = 0;
         while (num > 0) {
@@ -27,13 +37,5 @@ public class Solution {
             num /= 10;
         }
         return sum;
-    }
-
-    private int countLargestGroup(int largest, int[] arr) {
-        int count = 0;
-        for (int val : arr) {
-            if (val == largest) count++;
-        }
-        return count;
     }
 }
