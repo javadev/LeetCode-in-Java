@@ -7,7 +7,12 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void countLargestGroup() {
+        assertThat(new Solution().countLargestGroup(13), equalTo(4));
+    }
+
+    @Test
+    void countLargestGroup2() {
+        assertThat(new Solution().countLargestGroup(13), equalTo(4));
     }
 }
