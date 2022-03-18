@@ -13,11 +13,11 @@ class SolutionTest {
 
     @Test
     void twoSum2() {
-        assertThat(new Solution().twoSum(new int[] {3,2,4}, 6), equalTo(new int[] {1, 2}));
+        assertThat(new Solution().twoSum(new int[] {3, 2, 4}, 6), equalTo(new int[] {1, 2}));
     }
 
     @Test
     void twoSum3() {
-        assertThat(new Solution().twoSum(new int[] {3,3}, 6), equalTo(new int[] {0, 1}));
+        assertThat(new Solution().twoSum(new int[] {3, 3}, 6), equalTo(new int[] {0, 1}));
     }
 }
