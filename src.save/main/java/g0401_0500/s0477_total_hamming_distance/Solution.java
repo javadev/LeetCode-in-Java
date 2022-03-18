@@ -1,6 +1,6 @@
 package g0401_0500.s0477_total_hamming_distance;
 
-// #Medium #Array #Math #Bit_Manipulation
+// #Medium #Array #Math #Bit_Manipulation #2022_03_18_Time_5_ms_(90.97%)_Space_53.9_MB_(55.17%)
 
 public class Solution {
     public int totalHammingDistance(int[] nums) {
