@@ -1,6 +1,7 @@
 package g0401_0500.s0430_flatten_a_multilevel_doubly_linked_list;
 
 // #Medium #Depth_First_Search #Linked_List #Doubly_Linked_List
+// #2022_03_18_Time_0_ms_(100.00%)_Space_42.3_MB_(32.42%)
 
 /*
 // Definition for a Node.

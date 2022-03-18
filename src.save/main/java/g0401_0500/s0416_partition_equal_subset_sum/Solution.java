@@ -1,6 +1,7 @@
 package g0401_0500.s0416_partition_equal_subset_sum;
 
 // #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming
+// #2022_03_18_Time_1_ms_(99.87%)_Space_41.5_MB_(90.64%)
 
 public class Solution {
     public boolean canPartition(int[] nums) {

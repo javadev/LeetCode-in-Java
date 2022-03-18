@@ -1,6 +1,7 @@
 package g0401_0500.s0427_construct_quad_tree;
 
 // #Medium #Array #Tree #Matrix #Divide_and_Conquer
+// #2022_03_18_Time_1_ms_(85.16%)_Space_46.3_MB_(67.10%)
 
 public class Solution {
     public Node construct(int[][] grid) {
