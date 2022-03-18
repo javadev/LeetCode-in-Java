@@ -1,6 +1,6 @@
 package g0401_0500.s0443_string_compression;
 
-// #Medium #String #Two_Pointers
+// #Medium #String #Two_Pointers #2022_03_18_Time_2_ms_(60.36%)_Space_45_MB_(7.26%)
 
 public class Solution {
     /* This is breaking the rules, it's not in-place. */
