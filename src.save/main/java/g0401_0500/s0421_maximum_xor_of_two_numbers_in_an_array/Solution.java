@@ -1,6 +1,7 @@
 package g0401_0500.s0421_maximum_xor_of_two_numbers_in_an_array;
 
 // #Medium #Array #Hash_Table #Bit_Manipulation #Trie
+// #2022_03_18_Time_22_ms_(99.22%)_Space_73.3_MB_(76.50%)
 
 import java.util.HashSet;
 import java.util.Set;

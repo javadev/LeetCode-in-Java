@@ -1,6 +1,6 @@
 package g0401_0500.s0414_third_maximum_number;
 
-// #Easy #Array #Sorting
+// #Easy #Array #Sorting #2022_03_18_Time_1_ms_(96.71%)_Space_42_MB_(75.84%)
 
 public class Solution {
     public int thirdMax(int[] nums) {

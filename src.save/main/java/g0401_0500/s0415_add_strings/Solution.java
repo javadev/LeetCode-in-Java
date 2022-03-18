@@ -1,6 +1,7 @@
 package g0401_0500.s0415_add_strings;
 
-// #Easy #String #Math #Simulation
+// #Easy #String #Math #Simulation #Data_Structure_II_Day_6_String
+// #2022_03_18_Time_3_ms_(75.64%)_Space_43_MB_(59.01%)
 
 public class Solution {
     public String addStrings(String num1, String num2) {
