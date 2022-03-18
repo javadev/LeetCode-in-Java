@@ -1,6 +1,8 @@
 package g0401_0500.s0451_sort_characters_by_frequency;
 
 // #Medium #String #Hash_Table #Sorting #Heap_Priority_Queue #Counting #Bucket_Sort
+// #Data_Structure_II_Day_21_Heap_Priority_Queue
+// #2022_03_18_Time_18_ms_(70.93%)_Space_48.6_MB_(61.40%)
 
 import java.util.ArrayList;
 import java.util.Collections;
