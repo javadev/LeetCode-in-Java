@@ -12,4 +12,11 @@ class SolutionTest {
                 new Solution().longestCommonPrefix(new String[] {"flower", "flow", "flight"}),
                 equalTo("fl"));
     }
+
+    @Test
+    void longestCommonPrefix2() {
+        assertThat(
+                new Solution().longestCommonPrefix(new String[] {"dog", "racecar", "car"}),
+                equalTo(""));
+    }
 }
