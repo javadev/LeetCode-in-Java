@@ -5,7 +5,8 @@ package g1301_1400.s1314_matrix_block_sum;
 
 public class Solution {
     public int[][] matrixBlockSum(int[][] mat, int k) {
-        int rows = mat.length, cols = mat[0].length;
+        int rows = mat.length;
+        int cols = mat[0].length;
         int[][] prefixSum = new int[rows + 1][cols + 1];
         for (int i = 1; i <= rows; i++) {
             for (int j = 1; j <= cols; j++) {
@@ -18,18 +19,19 @@ public class Solution {
         }
 
         int[][] result = new int[rows][cols];
-        for (int i = 0; i < rows; i++)
+        for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                int i_min = Math.max(i - k, 0);
-                int i_max = Math.min(i + k, rows - 1);
-                int j_min = Math.max(j - k, 0);
-                int j_max = Math.min(j + k, cols - 1);
+                int iMin = Math.max(i - k, 0);
+                int iMax = Math.min(i + k, rows - 1);
+                int jMin = Math.max(j - k, 0);
+                int jMax = Math.min(j + k, cols - 1);
                 result[i][j] =
-                        prefixSum[i_min][j_min]
-                                + prefixSum[i_max + 1][j_max + 1]
-                                - prefixSum[i_max + 1][j_min]
-                                - prefixSum[i_min][j_max + 1];
+                        prefixSum[iMin][jMin]
+                                + prefixSum[iMax + 1][jMax + 1]
+                                - prefixSum[iMax + 1][jMin]
+                                - prefixSum[iMin][jMax + 1];
             }
+        }
         return result;
     }
 }
