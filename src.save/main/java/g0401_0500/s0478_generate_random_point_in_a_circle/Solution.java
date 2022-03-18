@@ -1,14 +1,15 @@
 package g0401_0500.s0478_generate_random_point_in_a_circle;
 
 // #Medium #Math #Geometry #Randomized #Rejection_Sampling
+// #2022_03_18_Time_196_ms_(98.10%)_Space_51.3_MB_(87.97%)
 
-import java.security.SecureRandom;
+import java.util.Random;
 
 public class Solution {
     private final double radius;
     private final double xCenter;
     private final double yCenter;
-    private final SecureRandom random = new SecureRandom();
+    private final Random random = new Random();
 
     public Solution(double radius, double xCenter, double yCenter) {
         this.radius = radius;

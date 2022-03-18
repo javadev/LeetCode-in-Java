@@ -1,17 +1,17 @@
 package g0301_0400.s0384_shuffle_an_array;
 
 // #Medium #Top_Interview_Questions #Array #Math #Randomized #Algorithm_II_Day_20_Others
-// #2022_03_16_Time_158_ms_(29.10%)_Space_81.8_MB_(20.96%)
+// #2022_03_18_Time_65_ms_(94.59%)_Space_50.3_MB_(91.27%)
 
-import java.security.SecureRandom;
+import java.util.Random;
 
 public class Solution {
     private int[] nums;
-    private SecureRandom random;
+    private Random random;
 
     public Solution(int[] nums) {
         this.nums = nums;
-        this.random = new SecureRandom();
+        this.random = new Random();
     }
 
     // Resets the array to its original configuration and return it.

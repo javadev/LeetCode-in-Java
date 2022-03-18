@@ -1,15 +1,16 @@
 package g0501_0600.s0528_random_pick_with_weight;
 
 // #Medium #Math #Binary_Search #Prefix_Sum #Randomized
+// #2022_03_18_Time_29_ms_(83.26%)_Space_46.5_MB_(94.36%)
 
-import java.security.SecureRandom;
 import java.util.Comparator;
 import java.util.Objects;
+import java.util.Random;
 import java.util.TreeSet;
 
 public class Solution {
     private int prefix;
-    private final SecureRandom random;
+    private final Random random;
     private final TreeSet<int[]> treeSet;
 
     public Solution(int[] w) {
@@ -19,7 +20,7 @@ public class Solution {
             prefix += w[i];
             treeSet.add(new int[] {prefix, i});
         }
-        random = new SecureRandom();
+        random = new Random();
     }
 
     public int pickIndex() {

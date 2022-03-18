@@ -1,24 +1,24 @@
 package g0301_0400.s0381_insert_delete_getrandom_o1_duplicates_allowed;
 
 // #Hard #Array #Hash_Table #Math #Design #Randomized
-// #2022_03_16_Time_141_ms_(5.09%)_Space_97.1_MB_(51.88%)
+// #2022_03_18_Time_26_ms_(100.00%)_Space_92.4_MB_(81.64%)
 
-import java.security.SecureRandom;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Random;
 
 @SuppressWarnings("java:S3824")
 public class RandomizedCollection {
     private HashMap<Integer, HashSet<Integer>> hashMap;
     private int[] arr;
     private int size;
-    private SecureRandom rand;
+    private Random rand;
 
     public RandomizedCollection() {
         hashMap = new HashMap<>();
         size = 0;
         arr = new int[200000];
-        rand = new SecureRandom();
+        rand = new Random();
     }
 
     public boolean insert(int val) {

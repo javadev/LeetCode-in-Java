@@ -1,12 +1,12 @@
 package g0401_0500.s0470_implement_rand10_using_rand7;
 
 // #Medium #Math #Randomized #Probability_and_Statistics #Rejection_Sampling
-// #2022_03_18_Time_157_ms_(5.09%)_Space_49.3_MB_(64.62%)
+// #2022_03_18_Time_10_ms_(51.04%)_Space_50.5_MB_(44.91%)
 
-import java.security.SecureRandom;
+import java.util.Random;
 
 public class Solution {
-    private final SecureRandom secureRandom = new SecureRandom();
+    private final Random random = new Random();
 
     public int rand10() {
         int x = rand7();
@@ -19,6 +19,6 @@ public class Solution {
     }
 
     private int rand7() {
-        return secureRandom.nextInt(7) + 1;
+        return random.nextInt(7) + 1;
     }
 }

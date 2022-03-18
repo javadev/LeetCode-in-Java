@@ -1,18 +1,21 @@
 package g0701_0800.s0710_random_pick_with_blacklist;
 
-import java.security.SecureRandom;
+// #Hard #Hash_Table #Math #Sorting #Binary_Search #Randomized
+// #2022_03_18_Time_56_ms_(74.41%)_Space_70.7_MB_(46.45%)
+
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 public class Solution {
 
     private final Map<Integer, Integer> map;
-    private final SecureRandom r;
+    private final Random r;
     private final int upperLimit;
 
     public Solution(int n, int[] blacklist) {
         map = new HashMap<>();
-        r = new SecureRandom();
+        r = new Random();
         upperLimit = n - blacklist.length;
         for (int val : blacklist) {
             map.put(val, -1);
