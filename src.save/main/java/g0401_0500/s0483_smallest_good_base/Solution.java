@@ -1,6 +1,6 @@
 package g0401_0500.s0483_smallest_good_base;
 
-// #Hard #Math #Binary_Search
+// #Hard #Math #Binary_Search #2022_03_18_Time_3_ms_(87.88%)_Space_42.7_MB_(30.30%)
 
 import java.util.ArrayList;
 import java.util.List;

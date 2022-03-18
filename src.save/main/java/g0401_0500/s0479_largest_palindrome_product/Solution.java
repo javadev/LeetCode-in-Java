@@ -1,6 +1,6 @@
 package g0401_0500.s0479_largest_palindrome_product;
 
-// #Hard #Math
+// #Hard #Math #2022_03_18_Time_6_ms_(97.54%)_Space_41.3_MB_(66.39%)
 
 public class Solution {
     public int largestPalindrome(int n) {
