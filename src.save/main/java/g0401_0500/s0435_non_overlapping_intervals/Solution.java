@@ -1,6 +1,7 @@
 package g0401_0500.s0435_non_overlapping_intervals;
 
-// #Medium #Array #Dynamic_Programming #Sorting #Greedy
+// #Medium #Array #Dynamic_Programming #Sorting #Greedy #Data_Structure_II_Day_4_Array
+// #2022_03_18_Time_109_ms_(26.80%)_Space_100.2_MB_(64.71%)
 
 import java.util.Arrays;
 

@@ -1,6 +1,8 @@
 package g0401_0500.s0438_find_all_anagrams_in_a_string;
 
 // #Medium #Top_100_Liked_Questions #String #Hash_Table #Sliding_Window
+// #Algorithm_II_Day_5_Sliding_Window #Programming_Skills_II_Day_12
+// #2022_03_18_Time_8_ms_(87.18%)_Space_48_MB_(43.23%)
 
 import java.util.ArrayList;
 import java.util.List;
