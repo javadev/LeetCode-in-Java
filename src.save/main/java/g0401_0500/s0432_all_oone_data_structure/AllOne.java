@@ -1,6 +1,7 @@
 package g0401_0500.s0432_all_oone_data_structure;
 
 // #Hard #Hash_Table #Design #Linked_List #Doubly_Linked_List
+// #2022_03_18_Time_97_ms_(54.00%)_Space_107_MB_(15.94%)
 
 import java.util.HashMap;
 import java.util.Map;

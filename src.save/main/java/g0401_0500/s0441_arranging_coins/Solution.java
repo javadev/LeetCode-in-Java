@@ -1,6 +1,6 @@
 package g0401_0500.s0441_arranging_coins;
 
-// #Easy #Math #Binary_Search
+// #Easy #Math #Binary_Search #2022_03_18_Time_2_ms_(87.99%)_Space_41.6_MB_(30.85%)
 
 public class Solution {
     public int arrangeCoins(int n) {

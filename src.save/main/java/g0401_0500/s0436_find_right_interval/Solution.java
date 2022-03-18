@@ -1,6 +1,6 @@
 package g0401_0500.s0436_find_right_interval;
 
-// #Medium #Array #Sorting #Binary_Search
+// #Medium #Array #Sorting #Binary_Search #2022_03_18_Time_17_ms_(87.90%)_Space_57.9_MB_(8.42%)
 
 import java.util.HashMap;
 import java.util.Map;
