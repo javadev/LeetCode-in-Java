@@ -15,4 +15,11 @@ class SolutionTest {
                         ArrayUtils.getLists(
                                 new int[][] {{-2, -1, 1, 2}, {-2, 0, 0, 2}, {-1, 0, 0, 1}})));
     }
+
+    @Test
+    void fourSum2() {
+        assertThat(
+                new Solution().fourSum(new int[] {2, 2, 2, 2, 2}, 8),
+                equalTo(ArrayUtils.getLists(new int[][] {{2, 2, 2, 2}})));
+    }
 }
