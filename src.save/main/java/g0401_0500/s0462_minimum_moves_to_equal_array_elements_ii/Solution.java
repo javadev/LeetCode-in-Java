@@ -1,6 +1,6 @@
 package g0401_0500.s0462_minimum_moves_to_equal_array_elements_ii;
 
-// #Medium #Array #Math #Sorting
+// #Medium #Array #Math #Sorting #2022_03_18_Time_3_ms_(94.38%)_Space_43.3_MB_(66.95%)
 
 import java.util.Arrays;
 
