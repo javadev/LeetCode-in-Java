@@ -1,6 +1,7 @@
 package g0401_0500.s0472_concatenated_words;
 
 // #Hard #Array #String #Dynamic_Programming #Depth_First_Search #Trie
+// #2022_03_18_Time_84_ms_(79.03%)_Space_81.6_MB_(50.56%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

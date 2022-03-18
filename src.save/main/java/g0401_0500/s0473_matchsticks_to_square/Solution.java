@@ -1,6 +1,7 @@
 package g0401_0500.s0473_matchsticks_to_square;
 
 // #Medium #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
+// #2022_03_18_Time_241_ms_(18.95%)_Space_42.1_MB_(40.60%)
 
 public class Solution {
     public boolean makesquare(int[] matchsticks) {
