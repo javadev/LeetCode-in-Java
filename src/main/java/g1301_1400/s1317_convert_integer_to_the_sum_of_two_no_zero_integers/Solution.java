@@ -14,7 +14,7 @@ public class Solution {
                 right--;
             }
         }
-        return new int[]{};
+        return new int[] {};
     }
 
     private boolean noZero(int num) {
