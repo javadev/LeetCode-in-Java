@@ -1,7 +1,7 @@
 package g0301_0400.s0398_random_pick_index;
 
 // #Medium #Hash_Table #Math #Randomized #Reservoir_Sampling
-// #2022_03_16_Time_105_ms_(48.44%)_Space_68.9_MB_(76.80%)
+// #2022_03_18_Time_75_ms_(74.64%)_Space_68.8_MB_(76.92%)
 
 /*
  * Using Reservoir Sampling
@@ -21,15 +21,15 @@ package g0301_0400.s0398_random_pick_index;
  * N = Length of the input array.
  */
 
-import java.security.SecureRandom;
+import java.util.Random;
 
 public class Solution {
     private final int[] nums;
-    private final SecureRandom random;
+    private final Random random;
 
     public Solution(int[] nums) {
         this.nums = nums;
-        this.random = new SecureRandom();
+        this.random = new Random();
     }
 
     public int pick(int target) {

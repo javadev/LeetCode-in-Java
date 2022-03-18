@@ -1,18 +1,19 @@
 package g0401_0500.s0497_random_point_in_non_overlapping_rectangles;
 
 // #Medium #Math #Binary_Search #Prefix_Sum #Ordered_Set #Randomized #Reservoir_Sampling
+// #2022_03_18_Time_83_ms_(61.48%)_Space_68_MB_(53.28%)
 
-import java.security.SecureRandom;
+import java.util.Random;
 
 public class Solution {
     private final int[] weights;
     private final int[][] rects;
-    private final SecureRandom random;
+    private final Random random;
 
     public Solution(int[][] rects) {
         this.weights = new int[rects.length];
         this.rects = rects;
-        this.random = new SecureRandom();
+        this.random = new Random();
         for (int i = 0; i < rects.length; i++) {
             int[] rect = rects[i];
             int count = (1 + rect[2] - rect[0]) * (1 + rect[3] - rect[1]);

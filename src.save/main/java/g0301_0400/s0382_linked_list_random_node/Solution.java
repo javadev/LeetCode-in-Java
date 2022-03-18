@@ -1,20 +1,20 @@
 package g0301_0400.s0382_linked_list_random_node;
 
 // #Medium #Math #Linked_List #Randomized #Reservoir_Sampling
-// #2022_03_16_Time_66_ms_(5.34%)_Space_53.1_MB_(5.34%)
+// #2022_03_18_Time_7_ms_(100.00%)_Space_44.1_MB_(87.88%)
 
 import com_github_leetcode.ListNode;
-import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Solution {
     private List<Integer> al;
-    private SecureRandom rand;
+    private Random rand;
 
     public Solution(ListNode head) {
         al = new ArrayList<>();
-        rand = new SecureRandom();
+        rand = new Random();
         while (head != null) {
             al.add(head.val);
             head = head.next;
