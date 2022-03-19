@@ -13,7 +13,9 @@ public class Solution {
     }
 
     private int find(Character f1, Character f2, int index) {
-        if (index == word.length()) return 0;
+        if (index == word.length()) {
+            return 0;
+        }
 
         Integer result = dp[f1 == null ? 0 : f1 - 'A' + 1][f2 == null ? 0 : f2 - 'A' + 1][index];
         if (result != null) {
@@ -31,7 +33,9 @@ public class Solution {
     }
 
     private int move(Character c1, Character c2) {
-        if (c1 == null) return 0;
+        if (c1 == null) {
+            return 0;
+        }
 
         int c1x = (c1 - 'A') % 6;
         int c1y = (c1 - 'A') / 6;
