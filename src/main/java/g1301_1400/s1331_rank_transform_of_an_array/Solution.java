@@ -5,6 +5,7 @@ package g1301_1400.s1331_rank_transform_of_an_array;
 import java.util.Arrays;
 import java.util.HashMap;
 
+@SuppressWarnings({})
 public class Solution {
     public int[] arrayRankTransform(int[] arr) {
 
@@ -13,7 +14,9 @@ public class Solution {
         HashMap<Integer, Integer> mp = new HashMap<>();
         int i = 1;
         for (Integer x : tmp) {
-            if (!mp.containsKey(x)) mp.put(x, i++);
+            if (!mp.containsKey(x)) {
+                mp.put(x, i++);
+            }
         }
 
         i = 0;
