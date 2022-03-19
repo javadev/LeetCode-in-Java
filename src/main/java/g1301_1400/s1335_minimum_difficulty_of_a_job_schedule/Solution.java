@@ -8,34 +8,26 @@ public class Solution {
         if (totalJobs < d) {
             return -1;
         }
-
         int maxJobsOneDay = totalJobs - d + 1;
         int[] map = new int[totalJobs];
-
         int maxDiff = Integer.MIN_VALUE;
         for (int k = totalJobs - 1; k > totalJobs - 1 - maxJobsOneDay; k--) {
             maxDiff = Math.max(maxDiff, jobDifficulty[k]);
             map[k] = maxDiff;
         }
-
         for (int day = d - 1; day > 0; day--) {
-
             int maxEndIndex = (totalJobs - 1) - (d - day);
             int maxStartIndex = maxEndIndex - maxJobsOneDay + 1;
-
             for (int startIndex = maxStartIndex; startIndex <= maxEndIndex; startIndex++) {
                 map[startIndex] = Integer.MAX_VALUE;
                 int maxDiffOfTheDay = Integer.MIN_VALUE;
                 for (int endIndex = startIndex; endIndex <= maxEndIndex; endIndex++) {
                     maxDiffOfTheDay = Math.max(maxDiffOfTheDay, jobDifficulty[endIndex]);
-
                     int totalDiff = maxDiffOfTheDay + map[endIndex + 1];
-
                     map[startIndex] = Math.min(map[startIndex], totalDiff);
                 }
             }
         }
-
         return map[0];
     }
 }
