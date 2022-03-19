@@ -5,7 +5,7 @@ package g1301_1400.s1331_rank_transform_of_an_array;
 import java.util.Arrays;
 import java.util.HashMap;
 
-@SuppressWarnings({})
+@SuppressWarnings("java:S3824")
 public class Solution {
     public int[] arrayRankTransform(int[] arr) {
         int[] tmp = Arrays.copyOf(arr, arr.length);
