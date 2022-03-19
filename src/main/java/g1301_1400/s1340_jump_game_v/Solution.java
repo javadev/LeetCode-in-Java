@@ -5,13 +5,9 @@ package g1301_1400.s1340_jump_game_v;
 public class Solution {
 
     public int maxJumps(int[] arr, int d) {
-
         int n = arr.length;
-
         int[] dp = new int[n];
-
         int jumps = 0;
-
         for (int i = 0; i < n; i++) {
             jumps = Math.max(jumps, helper(arr, d, i, dp));
         }
@@ -23,18 +19,14 @@ public class Solution {
         if (dp[i] != 0) {
             return dp[i];
         }
-
         int l = Math.max(0, i - d);
         int r = Math.min(i + d, arr.length - 1);
-
         for (int j = i - 1; j >= l && arr[i] > arr[j]; j--) {
             temp = Math.max(temp, helper(arr, d, j, dp));
         }
-
         for (int j = i + 1; j <= r && arr[i] > arr[j]; j++) {
             temp = Math.max(temp, helper(arr, d, j, dp));
         }
-
         return 1 + temp;
     }
 }
