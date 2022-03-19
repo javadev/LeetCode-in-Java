@@ -10,7 +10,7 @@ public class Solution {
 
         int[] tmp = Arrays.copyOf(arr, arr.length);
         Arrays.sort(tmp);
-        HashMap<Integer, Integer> mp = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> mp = new HashMap<>();
         int i = 1;
         for (Integer x : tmp) {
             mp.putIfAbsent(x, i++);
