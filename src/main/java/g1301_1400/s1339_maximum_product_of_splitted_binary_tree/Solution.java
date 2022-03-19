@@ -36,9 +36,11 @@ public class Solution {
     }
 
     public int maxProduct(TreeNode root) {
-        if (root == null) return 0;
+        if (root == null) {
+            return 0;
+        }
         total = sumTree(root);
         helper(root);
-        return (int) (maxProduct % 1000000007l);
+        return (int) (maxProduct % 1000000007L);
     }
 }

@@ -35,6 +35,6 @@ public class Solution {
             temp = Math.max(temp, helper(arr, d, j, dp));
         }
 
-        return dp[i] = 1 + temp;
+        return 1 + temp;
     }
 }
