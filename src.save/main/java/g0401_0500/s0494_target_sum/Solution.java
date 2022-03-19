@@ -1,6 +1,7 @@
 package g0401_0500.s0494_target_sum;
 
 // #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Backtracking
+// #2022_03_19_Time_10_ms_(82.41%)_Space_44.5_MB_(37.47%)
 
 public class Solution {
     public int findTargetSumWays(int[] nums, int s) {
