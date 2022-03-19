@@ -1,11 +1,27 @@
 package g0501_0600.s0501_find_mode_in_binary_search_tree;
 
 // #Easy #Depth_First_Search #Tree #Binary_Tree #Binary_Search_Tree
+// #2022_03_19_Time_1_ms_(91.60%)_Space_45.9_MB_(46.05%)
 
 import com_github_leetcode.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 public class Solution {
     private Integer prev = null;
     private int max = 0;

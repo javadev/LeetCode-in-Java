@@ -1,6 +1,7 @@
 package g0501_0600.s0515_find_largest_value_in_each_tree_row;
 
 // #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #2022_03_19_Time_1_ms_(96.84%)_Space_42.2_MB_(81.99%)
 
 import com_github_leetcode.TreeNode;
 import java.util.ArrayList;
@@ -8,6 +9,21 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+/*
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 public class Solution {
     public List<Integer> largestValues(TreeNode root) {
         List<Integer> list = new ArrayList<>();

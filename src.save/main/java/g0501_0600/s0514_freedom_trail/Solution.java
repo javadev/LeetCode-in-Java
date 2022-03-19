@@ -1,6 +1,7 @@
 package g0501_0600.s0514_freedom_trail;
 
 // #Hard #String #Dynamic_Programming #Depth_First_Search #Breadth_First_Search
+// #2022_03_19_Time_17_ms_(75.84%)_Space_54.2_MB_(19.33%)
 
 import java.util.ArrayList;
 import java.util.List;

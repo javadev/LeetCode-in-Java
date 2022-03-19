@@ -1,6 +1,7 @@
 package g0501_0600.s0503_next_greater_element_ii;
 
-// #Medium #Array #Stack #Monotonic_Stack
+// #Medium #Array #Stack #Monotonic_Stack #Programming_Skills_II_Day_10
+// #2022_03_19_Time_7_ms_(95.85%)_Space_43.9_MB_(84.67%)
 
 import java.util.ArrayDeque;
 import java.util.Deque;
