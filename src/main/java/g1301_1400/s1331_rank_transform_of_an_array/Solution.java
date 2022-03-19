@@ -13,7 +13,7 @@ public class Solution {
         HashMap<Integer, Integer> mp = new HashMap<>();
         int i = 1;
         for (Integer x : tmp) {
-            mp.putIfAbsent(x, i++);
+            if (!mp.containsKey(x)) mp.put(x, i++);
         }
 
         i = 0;
