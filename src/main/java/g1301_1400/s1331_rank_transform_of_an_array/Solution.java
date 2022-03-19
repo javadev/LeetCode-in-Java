@@ -10,15 +10,15 @@ public class Solution {
 
         int[] tmp = Arrays.copyOf(arr, arr.length);
         Arrays.sort(tmp);
-        HashMap<Integer, Integer> mp = new HashMap<Integer, Integer>();
-        int i = 1;
+        HashMap<Integer, Integer> mp = new HashMap<>();
+        final int[] i = {1};
         for (Integer x : tmp) {
-            if (!mp.containsKey(x)) mp.put(x, i++);
+            mp.computeIfAbsent(x, k -> mp.put(k, i[0]++));
         }
 
-        i = 0;
+        i[0] = 0;
         for (Integer x : arr) {
-            arr[i++] = mp.get(x);
+            arr[i[0]++] = mp.get(x);
         }
         return arr;
     }

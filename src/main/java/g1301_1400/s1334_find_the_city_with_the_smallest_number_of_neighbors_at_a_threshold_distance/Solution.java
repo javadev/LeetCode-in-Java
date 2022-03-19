@@ -48,7 +48,9 @@ public class Solution {
 
                 if (!map.containsKey(i)) {
                     map.put(i, new ArrayList<>());
-                    if (dist[i][j] <= maxDist && i != j) map.get(i).add(j);
+                    if (dist[i][j] <= maxDist && i != j) {
+                        map.get(i).add(j);
+                    }
                 } else if (map.containsKey(i) && dist[i][j] <= maxDist && i != j) {
 
                     map.get(i).add(j);
