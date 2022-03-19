@@ -9,7 +9,8 @@ public class Solution {
         }
         int[] dp = new int[n + 1];
 
-        int nxtLargest = 0, current = 0;
+        int nxtLargest = 0;
+        int current = 0;
         int amount = 0;
         for (int i = 0; i < ranges.length; i++) {
             if (ranges[i] > 0) {
