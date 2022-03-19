@@ -6,32 +6,27 @@ package g1301_1400.s1339_maximum_product_of_splitted_binary_tree;
 import com_github_leetcode.TreeNode;
 
 public class Solution {
+    private long maxProduct = 0;
+    private long total = 0;
 
     public int sumTree(TreeNode node) {
         if (node == null) {
             return 0;
         }
-
         node.val += sumTree(node.left) + sumTree(node.right);
         return node.val;
     }
-
-    private long maxProduct = 0;
-    private long total = 0;
 
     private void helper(TreeNode root) {
         if (root == null) {
             return;
         }
-
         helper(root.left);
         helper(root.right);
         long leftSubtreeVal = root.left != null ? root.left.val : 0L;
         long leftProduct = leftSubtreeVal * (total - leftSubtreeVal);
-
         long rightSubtreeVal = root.right != null ? root.right.val : 0L;
         long rightProduct = rightSubtreeVal * (total - rightSubtreeVal);
-
         maxProduct = Math.max(maxProduct, Math.max(leftProduct, rightProduct));
     }
 
