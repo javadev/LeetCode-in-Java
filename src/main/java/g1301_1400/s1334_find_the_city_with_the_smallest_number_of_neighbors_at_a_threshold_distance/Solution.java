@@ -45,14 +45,12 @@ public class Solution {
         HashMap<Integer, List<Integer>> map = new HashMap<>();
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-
                 if (!map.containsKey(i)) {
                     map.put(i, new ArrayList<>());
                     if (dist[i][j] <= maxDist && i != j) {
                         map.get(i).add(j);
                     }
                 } else if (map.containsKey(i) && dist[i][j] <= maxDist && i != j) {
-
                     map.get(i).add(j);
                 }
             }
