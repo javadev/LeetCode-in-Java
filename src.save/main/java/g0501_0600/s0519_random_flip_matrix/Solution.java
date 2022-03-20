@@ -7,8 +7,8 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
+@SuppressWarnings("java:S2245")
 public class Solution {
-
     private final int cols;
     private final int total;
     private final Random rand;

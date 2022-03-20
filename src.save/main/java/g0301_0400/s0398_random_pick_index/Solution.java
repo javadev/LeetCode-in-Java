@@ -23,6 +23,7 @@ package g0301_0400.s0398_random_pick_index;
 
 import java.util.Random;
 
+@SuppressWarnings("java:S2245")
 public class Solution {
     private final int[] nums;
     private final Random random;

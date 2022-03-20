@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+@SuppressWarnings("java:S2245")
 public class RandomizedSet {
     private final Random rand;
     private final List<Integer> list;

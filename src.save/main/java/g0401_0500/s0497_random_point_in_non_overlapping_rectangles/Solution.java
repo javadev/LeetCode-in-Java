@@ -5,6 +5,7 @@ package g0401_0500.s0497_random_point_in_non_overlapping_rectangles;
 
 import java.util.Random;
 
+@SuppressWarnings("java:S2245")
 public class Solution {
     private final int[] weights;
     private final int[][] rects;

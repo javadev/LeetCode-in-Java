@@ -5,6 +5,7 @@ package g0401_0500.s0470_implement_rand10_using_rand7;
 
 import java.util.Random;
 
+@SuppressWarnings("java:S2245")
 public class Solution {
     private final Random random = new Random();
 

@@ -5,6 +5,7 @@ package g0401_0500.s0478_generate_random_point_in_a_circle;
 
 import java.util.Random;
 
+@SuppressWarnings("java:S2245")
 public class Solution {
     private final double radius;
     private final double xCenter;
