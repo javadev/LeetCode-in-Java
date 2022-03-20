@@ -1,6 +1,7 @@
 package g0501_0600.s0526_beautiful_arrangement;
 
 // #Medium #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
+// #2022_03_20_Time_3_ms_(98.99%)_Space_41.5_MB_(26.41%)
 
 public class Solution {
     public int countArrangement(int n) {

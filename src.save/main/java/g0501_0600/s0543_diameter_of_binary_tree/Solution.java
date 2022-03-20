@@ -1,6 +1,7 @@
 package g0501_0600.s0543_diameter_of_binary_tree;
 
 // #Easy #Top_100_Liked_Questions #Depth_First_Search #Tree #Binary_Tree
+// #2022_03_20_Time_1_ms_(55.16%)_Space_43.3_MB_(41.25%)
 
 import com_github_leetcode.TreeNode;
 

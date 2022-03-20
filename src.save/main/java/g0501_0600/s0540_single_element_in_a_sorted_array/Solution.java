@@ -1,6 +1,6 @@
 package g0501_0600.s0540_single_element_in_a_sorted_array;
 
-// #Medium #Array #Binary_Search
+// #Medium #Array #Binary_Search #2022_03_20_Time_0_ms_(100.00%)_Space_61_MB_(16.72%)
 
 public class Solution {
     public int singleNonDuplicate(int[] nums) {

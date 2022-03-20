@@ -1,7 +1,7 @@
 package g0501_0600.s0519_random_flip_matrix;
 
 // #Medium #Hash_Table #Math #Randomized #Reservoir_Sampling
-// #2022_03_18_Time_38_ms_(73.74%)_Space_50.9_MB_(37.37%)
+// #2022_03_20_Time_39_ms_(68.47%)_Space_51.3_MB_(13.51%)
 
 import java.util.HashSet;
 import java.util.Random;

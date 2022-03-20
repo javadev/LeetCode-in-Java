@@ -1,6 +1,6 @@
 package g0501_0600.s0553_optimal_division;
 
-// #Medium #Array #Dynamic_Programming #Math
+// #Medium #Array #Dynamic_Programming #Math #2022_03_20_Time_1_ms_(96.63%)_Space_42.1_MB_(55.06%)
 
 public class Solution {
     public String optimalDivision(int[] nums) {
