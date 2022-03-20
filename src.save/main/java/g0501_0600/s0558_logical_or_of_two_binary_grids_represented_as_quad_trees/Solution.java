@@ -1,6 +1,6 @@
 package g0501_0600.s0558_logical_or_of_two_binary_grids_represented_as_quad_trees;
 
-// #Medium #Tree #Divide_and_Conquer
+// #Medium #Tree #Divide_and_Conquer #2022_03_20_Time_0_ms_(100.00%)_Space_54.3_MB_(29.58%)
 
 /*
 // Definition for a QuadTree node.
@@ -24,7 +24,6 @@ class Node {
     }
 };
 */
-
 public class Solution {
     public Node intersect(Node n1, Node n2) {
         if (n1.isLeaf) {
