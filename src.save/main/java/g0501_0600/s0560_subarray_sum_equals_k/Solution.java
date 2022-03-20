@@ -1,6 +1,7 @@
 package g0501_0600.s0560_subarray_sum_equals_k;
 
-// #Medium #Top_100_Liked_Questions #Array #Hash_Table #Prefix_Sum
+// #Medium #Top_100_Liked_Questions #Array #Hash_Table #Prefix_Sum #Data_Structure_II_Day_5_Array
+// #2022_03_20_Time_18_ms_(89.51%)_Space_44.8_MB_(93.50%)
 
 import java.util.HashMap;
 import java.util.Map;

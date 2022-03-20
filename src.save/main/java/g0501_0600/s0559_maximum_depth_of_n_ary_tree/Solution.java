@@ -1,6 +1,7 @@
 package g0501_0600.s0559_maximum_depth_of_n_ary_tree;
 
 // #Easy #Depth_First_Search #Breadth_First_Search #Tree
+// #2022_03_20_Time_1_ms_(78.18%)_Space_43.9_MB_(56.52%)
 
 import com_github_leetcode.Node;
 
@@ -22,7 +23,6 @@ class Node {
     }
 };
 */
-
 public class Solution {
     private int max = 0;
 

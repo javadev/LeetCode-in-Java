@@ -1,6 +1,6 @@
 package g0501_0600.s0593_valid_square;
 
-// #Medium #Math #Geometry
+// #Medium #Math #Geometry #2022_03_20_Time_1_ms_(97.14%)_Space_42.4_MB_(32.38%)
 
 import java.util.Arrays;
 

@@ -1,6 +1,6 @@
 package g0501_0600.s0575_distribute_candies;
 
-// #Easy #Array #Hash_Table
+// #Easy #Array #Hash_Table #2022_03_20_Time_64_ms_(40.90%)_Space_105.5_MB_(61.44%)
 
 import java.util.HashSet;
 import java.util.Set;

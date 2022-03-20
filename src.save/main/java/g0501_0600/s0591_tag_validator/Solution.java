@@ -1,6 +1,6 @@
 package g0501_0600.s0591_tag_validator;
 
-// #Hard #String #Stack
+// #Hard #String #Stack #2022_03_20_Time_3_ms_(70.89%)_Space_42.3_MB_(56.33%)
 
 import java.util.ArrayDeque;
 import java.util.Deque;

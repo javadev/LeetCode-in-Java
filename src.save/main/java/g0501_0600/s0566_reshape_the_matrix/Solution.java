@@ -1,6 +1,7 @@
 package g0501_0600.s0566_reshape_the_matrix;
 
-// #Easy #Array #Matrix #Simulation
+// #Easy #Array #Matrix #Simulation #Data_Structure_I_Day_4_Array #Programming_Skills_I_Day_7_Array
+// #2022_03_20_Time_1_ms_(84.34%)_Space_50_MB_(65.51%)
 
 public class Solution {
     public int[][] matrixReshape(int[][] mat, int r, int c) {

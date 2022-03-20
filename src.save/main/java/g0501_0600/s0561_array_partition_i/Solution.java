@@ -1,6 +1,7 @@
 package g0501_0600.s0561_array_partition_i;
 
 // #Easy #Array #Sorting #Greedy #Counting_Sort
+// #2022_03_20_Time_18_ms_(31.77%)_Space_53.6_MB_(59.76%)
 
 import java.util.Arrays;
 
