@@ -1,12 +1,11 @@
 package g0501_0600.s0539_minimum_time_difference;
 
-// #Medium #Array #String #Math #Sorting
+// #Medium #Array #String #Math #Sorting #2022_03_20_Time_3_ms_(93.52%)_Space_44.5_MB_(65.24%)
 
 import java.util.Arrays;
 import java.util.List;
 
 public class Solution {
-
     public int findMinDifference(List<String> timePoints) {
         if (timePoints.size() < 300) {
             return smallInputSize(timePoints);
@@ -24,7 +23,6 @@ public class Solution {
             }
             times[hours * 60 + minutes] = true;
         }
-
         int prev = -1;
         int min = 60 * 24;
         for (int i = 0; i < (times.length + times.length / 2); i++) {
@@ -55,7 +53,6 @@ public class Solution {
             int minutes = Integer.parseInt(time.substring(3, 5));
             times[j++] = hours * 60 + minutes;
         }
-
         Arrays.sort(times);
         int min = 60 * 24;
         for (int i = 1; i <= times.length; i++) {

@@ -1,6 +1,6 @@
 package g0501_0600.s0537_complex_number_multiplication;
 
-// #Medium #String #Math #Simulation
+// #Medium #String #Math #Simulation #2022_03_20_Time_7_ms_(62.22%)_Space_42.5_MB_(27.62%)
 
 public class Solution {
     public String complexNumberMultiply(String num1, String num2) {
