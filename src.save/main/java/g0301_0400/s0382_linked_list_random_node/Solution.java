@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+@SuppressWarnings("java:S2245")
 public class Solution {
     private List<Integer> al;
     private Random rand;

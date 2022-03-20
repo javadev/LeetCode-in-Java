@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Random;
 
-@SuppressWarnings("java:S3824")
+@SuppressWarnings({"java:S3824", "java:S2245"})
 public class RandomizedCollection {
     private HashMap<Integer, HashSet<Integer>> hashMap;
     private int[] arr;

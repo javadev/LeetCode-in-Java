@@ -8,6 +8,7 @@ import java.util.Objects;
 import java.util.Random;
 import java.util.TreeSet;
 
+@SuppressWarnings("java:S2245")
 public class Solution {
     private int prefix;
     private final Random random;

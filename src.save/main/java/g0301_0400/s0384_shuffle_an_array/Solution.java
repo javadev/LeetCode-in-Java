@@ -5,6 +5,7 @@ package g0301_0400.s0384_shuffle_an_array;
 
 import java.util.Random;
 
+@SuppressWarnings("java:S2245")
 public class Solution {
     private int[] nums;
     private Random random;

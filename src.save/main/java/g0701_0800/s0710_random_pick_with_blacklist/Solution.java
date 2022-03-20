@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
+@SuppressWarnings("java:S2245")
 public class Solution {
-
     private final Map<Integer, Integer> map;
     private final Random r;
     private final int upperLimit;
