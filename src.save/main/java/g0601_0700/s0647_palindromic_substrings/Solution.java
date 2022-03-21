@@ -1,6 +1,7 @@
 package g0601_0700.s0647_palindromic_substrings;
 
 // #Medium #Top_100_Liked_Questions #String #Dynamic_Programming
+// #2022_03_21_Time_2_ms_(98.77%)_Space_41.7_MB_(75.10%)
 
 public class Solution {
     private void expand(char[] a, int l, int r, int[] res) {

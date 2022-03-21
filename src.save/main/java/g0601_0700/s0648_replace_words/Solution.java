@@ -1,6 +1,6 @@
 package g0601_0700.s0648_replace_words;
 
-// #Medium #Array #String #Hash_Table #Trie
+// #Medium #Array #String #Hash_Table #Trie #2022_03_21_Time_14_ms_(87.12%)_Space_58.8_MB_(59.91%)
 
 import java.util.List;
 
