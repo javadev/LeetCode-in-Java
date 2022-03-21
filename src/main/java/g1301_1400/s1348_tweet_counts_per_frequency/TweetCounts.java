@@ -36,7 +36,8 @@ public class TweetCounts {
         int sfreq = convFreqToSecond(freq);
         Map<Integer, Map<Integer, Map<Integer, List<Integer>>>> dstore = store.get(tweetName);
         int[] chunks = new int[(endTime - startTime) / sfreq + 1];
-        int sd = startTime / DAY, ed = endTime / DAY;
+        int sd = startTime / DAY;
+        int ed = endTime / DAY;
         for (int d = sd; d <= ed; d++) {
             if (!dstore.containsKey(d)) {
                 continue;
@@ -61,9 +62,9 @@ public class TweetCounts {
                     if (!mstore.containsKey(m)) {
                         continue;
                     }
-                    for (Integer record : mstore.get(m)) {
-                        if (startTime <= record && record <= endTime) {
-                            chunks[(record - startTime) / sfreq]++;
+                    for (Integer rc : mstore.get(m)) {
+                        if (startTime <= rc && rc <= endTime) {
+                            chunks[(rc - startTime) / sfreq]++;
                         }
                     }
                 }
@@ -84,7 +85,8 @@ public class TweetCounts {
                 return HOUR;
             case "day":
                 return DAY;
+            default:
+                return 0;
         }
-        return 0;
     }
 }

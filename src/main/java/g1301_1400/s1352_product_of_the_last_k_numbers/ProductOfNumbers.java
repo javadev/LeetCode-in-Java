@@ -11,7 +11,7 @@ public class ProductOfNumbers {
     private List<Integer> list = new ArrayList<>();
 
     public void add(int num) {
-        if (num > 0 && list.size() > 0) {
+        if (num > 0 && !list.isEmpty()) {
             list.add(list.get(list.size() - 1) * num);
         } else {
             list = new ArrayList<>();

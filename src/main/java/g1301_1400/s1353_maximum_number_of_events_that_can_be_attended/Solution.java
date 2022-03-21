@@ -16,10 +16,10 @@ public class Solution {
             while (i < events.length && events[i][0] == day) {
                 heap.offer(events[i++][1]);
             }
-            while (heap.size() > 0 && heap.peek() < day) {
+            while (!heap.isEmpty() && heap.peek() < day) {
                 heap.poll();
             }
-            if (heap.size() > 0) {
+            if (!heap.isEmpty()) {
                 heap.poll();
                 maxEvents++;
             }
