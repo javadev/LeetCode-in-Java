@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-@SuppressWarnings({"unchecked", "java:S3518"})
+@SuppressWarnings("unchecked")
 public class Solution {
     public double frogPosition(int n, int[][] edges, int t, int target) {
         List<Integer>[] graph = new ArrayList[n];
@@ -35,7 +35,7 @@ public class Solution {
                     }
                 }
                 for (int next : graph[vertex]) {
-                    if (!visited[next]) {
+                    if (!visited[next] && nextVerticesCount > 0) {
                         visited[next] = true;
                         queue.offer(next);
                         probabilities[next] = probabilities[vertex] / nextVerticesCount;
