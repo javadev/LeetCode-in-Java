@@ -7,40 +7,40 @@ import com_github_leetcode.TreeNode;
 
 public class Solution {
     public int maxSumBST(TreeNode root) {
-        iSbst temp = checkBST(root);
+        IsBST temp = checkBST(root);
 
         return Math.max(temp.maxSum, 0);
     }
 
-    private static class iSbst {
+    private static class IsBST {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
-        boolean isBST = true;
+        boolean isBst = true;
         int sum = 0;
         int maxSum = Integer.MIN_VALUE;
     }
 
-    private iSbst checkBST(TreeNode root) {
+    private IsBST checkBST(TreeNode root) {
         if (root == null) {
-            return new iSbst();
+            return new IsBST();
         }
 
-        iSbst lp = checkBST(root.left);
-        iSbst rp = checkBST(root.right);
+        IsBST lp = checkBST(root.left);
+        IsBST rp = checkBST(root.right);
 
-        iSbst mp = new iSbst();
+        IsBST mp = new IsBST();
         mp.max = Math.max(root.val, Math.max(lp.max, rp.max));
         mp.min = Math.min(root.val, Math.min(lp.min, rp.min));
         mp.sum = lp.sum + rp.sum + root.val;
 
         boolean check = root.val > lp.max && root.val < rp.min;
-        if (lp.isBST && rp.isBST && check) {
-            mp.isBST = true;
+        if (lp.isBst && rp.isBst && check) {
+            mp.isBst = true;
             int tempMax = Math.max(mp.sum, Math.max(lp.sum, rp.sum));
             mp.maxSum = Math.max(tempMax, Math.max(lp.maxSum, rp.maxSum));
 
         } else {
-            mp.isBST = false;
+            mp.isBst = false;
             mp.maxSum = Math.max(lp.maxSum, rp.maxSum);
         }
         return mp;
