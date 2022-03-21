@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Queue;
 
+@SuppressWarnings("java:S1172")
 public class Solution {
     private static class Pair {
         int emp;
@@ -36,7 +37,7 @@ public class Solution {
         int maxtime = 0;
         Queue<Pair> que = new ArrayDeque<>();
         que.add(new Pair(head, informTime[head]));
-        while (que.size() > 0) {
+        while (!que.isEmpty()) {
             Pair rem = que.remove();
             maxtime = Math.max(rem.time, maxtime);
             if (map.containsKey(rem.emp)) {
