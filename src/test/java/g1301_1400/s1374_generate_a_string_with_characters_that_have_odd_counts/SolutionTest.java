@@ -1,9 +1,9 @@
 package g1301_1400.s1374_generate_a_string_with_characters_that_have_odd_counts;
 
-import org.junit.jupiter.api.Test;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
