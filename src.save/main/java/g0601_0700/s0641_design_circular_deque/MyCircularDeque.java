@@ -1,6 +1,6 @@
 package g0601_0700.s0641_design_circular_deque;
 
-// #Medium #Array #Design #Linked_List #Queue
+// #Medium #Array #Design #Linked_List #Queue #2022_03_21_Time_3_ms_(100.00%)_Space_42.9_MB_(84.01%)
 
 public class MyCircularDeque {
     private final int[] data;
@@ -76,3 +76,16 @@ public class MyCircularDeque {
         return size == data.length;
     }
 }
+
+/*
+ * Your MyCircularDeque object will be instantiated and called as such:
+ * MyCircularDeque obj = new MyCircularDeque(k);
+ * boolean param_1 = obj.insertFront(value);
+ * boolean param_2 = obj.insertLast(value);
+ * boolean param_3 = obj.deleteFront();
+ * boolean param_4 = obj.deleteLast();
+ * int param_5 = obj.getFront();
+ * int param_6 = obj.getRear();
+ * boolean param_7 = obj.isEmpty();
+ * boolean param_8 = obj.isFull();
+ */

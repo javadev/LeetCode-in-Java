@@ -1,9 +1,9 @@
 package g0601_0700.s0629_k_inverse_pairs_array;
 
-// #Hard #Dynamic_Programming
+// #Hard #Dynamic_Programming #2022_03_21_Time_19_ms_(94.44%)_Space_41.1_MB_(94.44%)
 
 public class Solution {
-    public int kinversePairs(int n, int k) {
+    public int kInversePairs(int n, int k) {
         k = Math.min(k, n * (n - 1) / 2 - k);
         if (k < 0) {
             return 0;

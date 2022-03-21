@@ -1,6 +1,7 @@
 package g0601_0700.s0622_design_circular_queue;
 
-// #Medium #Array #Design #Linked_List #Queue
+// #Medium #Array #Design #Linked_List #Queue #Programming_Skills_II_Day_20
+// #2022_03_21_Time_3_ms_(100.00%)_Space_42.8_MB_(83.38%)
 
 public class MyCircularQueue {
     private final DoubleLinkedNode dumyHead = new DoubleLinkedNode(0);
@@ -70,3 +71,14 @@ public class MyCircularQueue {
         }
     }
 }
+
+/*
+ * Your MyCircularQueue object will be instantiated and called as such:
+ * MyCircularQueue obj = new MyCircularQueue(k);
+ * boolean param_1 = obj.enQueue(value);
+ * boolean param_2 = obj.deQueue();
+ * int param_3 = obj.front();
+ * int param_4 = obj.rear();
+ * boolean param_5 = obj.isEmpty();
+ * boolean param_6 = obj.isFull();
+ */
