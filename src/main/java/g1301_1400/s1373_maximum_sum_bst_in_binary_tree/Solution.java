@@ -7,12 +7,12 @@ import com_github_leetcode.TreeNode;
 
 public class Solution {
     public int maxSumBST(TreeNode root) {
-        isbst temp = checkBST(root);
+        iSbst temp = checkBST(root);
 
         return Math.max(temp.maxSum, 0);
     }
 
-    private static class isbst {
+    private static class iSbst {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
         boolean isBST = true;
@@ -20,15 +20,15 @@ public class Solution {
         int maxSum = Integer.MIN_VALUE;
     }
 
-    private isbst checkBST(TreeNode root) {
+    private iSbst checkBST(TreeNode root) {
         if (root == null) {
-            return new isbst();
+            return new iSbst();
         }
 
-        isbst lp = checkBST(root.left);
-        isbst rp = checkBST(root.right);
+        iSbst lp = checkBST(root.left);
+        iSbst rp = checkBST(root.right);
 
-        isbst mp = new isbst();
+        iSbst mp = new iSbst();
         mp.max = Math.max(root.val, Math.max(lp.max, rp.max));
         mp.min = Math.min(root.val, Math.min(lp.min, rp.min));
         mp.sum = lp.sum + rp.sum + root.val;
