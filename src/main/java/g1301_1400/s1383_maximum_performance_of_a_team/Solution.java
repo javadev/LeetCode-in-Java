@@ -14,7 +14,8 @@ public class Solution {
             engineers[i][1] = efficiency[i];
         }
         Arrays.sort(engineers, (engineer1, engineer2) -> engineer2[1] - engineer1[1]);
-        long speedSum = 0, maximumPerformance = 0;
+        long speedSum = 0;
+        long maximumPerformance = 0;
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         for (int[] engineer : engineers) {
             if (minHeap.size() == k) {
