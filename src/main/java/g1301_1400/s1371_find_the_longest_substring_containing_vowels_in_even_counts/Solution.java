@@ -24,7 +24,6 @@ public class Solution {
             }
             arr[i] = sum;
         }
-
         for (int i = 0; i < s.length(); i++) {
             if (result != null && result > s.length() - i) {
                 break;
@@ -39,7 +38,6 @@ public class Solution {
                 }
             }
         }
-
         return result == null ? 0 : result;
     }
 }
