@@ -6,15 +6,12 @@ public class Solution {
     public int[] closestDivisors(int num) {
         int sqrt1 = (int) Math.sqrt(num + 1.0);
         int sqrt2 = (int) Math.sqrt(num + 2.0);
-
         if (sqrt1 * sqrt1 == num + 1) {
             return new int[] {sqrt1, sqrt1};
         }
-
         if (sqrt2 * sqrt2 == num + 2) {
             return new int[] {sqrt2, sqrt2};
         }
-
         int[] ans1 = new int[2];
         for (int i = sqrt1; i >= 1; i--) {
             if ((num + 1) % i == 0) {
@@ -22,7 +19,6 @@ public class Solution {
                 break;
             }
         }
-
         int[] ans2 = new int[2];
         for (int i = sqrt2; i >= 1; i--) {
             if ((num + 2) % i == 0) {
