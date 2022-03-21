@@ -23,7 +23,7 @@ public class Solution {
         return arr[k - 1][0];
     }
 
-    public int getStepCount(int val) {
+    private int getStepCount(int val) {
         if (cacheMap.containsKey(val)) {
             return cacheMap.get(val);
         }
