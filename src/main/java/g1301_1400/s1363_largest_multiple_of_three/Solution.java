@@ -35,16 +35,6 @@ public class Solution {
             if (found) {
                 return printRes(counts);
             }
-            for (int i = 2; i < 10; i += 3) {
-                if (counts[i] > 1) {
-                    counts[i] -= 2;
-                    found = true;
-                    break;
-                }
-            }
-            if (found) {
-                return printRes(counts);
-            }
             boolean found1 = false;
             for (int i = 2; i < 10; i += 3) {
                 if (counts[i] > 0) {
@@ -59,49 +49,13 @@ public class Solution {
                         break;
                     }
                 }
-            }
-            if (found) {
-                return printRes(counts);
             }
         } else if (total % 3 == 2) {
-            boolean found = false;
             for (int i = 2; i < 10; i += 3) {
                 if (counts[i] > 0) {
                     counts[i]--;
-                    found = true;
                     break;
                 }
-            }
-            if (found) {
-                return printRes(counts);
-            }
-            for (int i = 1; i < 10; i += 3) {
-                if (counts[i] > 1) {
-                    counts[i] -= 2;
-                    found = true;
-                    break;
-                }
-            }
-            if (found) {
-                return printRes(counts);
-            }
-            boolean found1 = false;
-            for (int i = 1; i < 10; i += 3) {
-                if (counts[i] > 0) {
-                    counts[i]--;
-                    if (found1) {
-                        found = true;
-                    }
-                    if (!found1) {
-                        found1 = true;
-                    }
-                    if (found) {
-                        break;
-                    }
-                }
-            }
-            if (found) {
-                return printRes(counts);
             }
         }
         return "";

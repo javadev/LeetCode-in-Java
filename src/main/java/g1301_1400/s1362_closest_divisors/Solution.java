@@ -4,8 +4,8 @@ package g1301_1400.s1362_closest_divisors;
 
 public class Solution {
     public int[] closestDivisors(int num) {
-        int sqrt1 = (int) Math.sqrt(num + 1);
-        int sqrt2 = (int) Math.sqrt(num + 2);
+        int sqrt1 = (int) Math.sqrt(num + 1.0);
+        int sqrt2 = (int) Math.sqrt(num + 2.0);
 
         if (sqrt1 * sqrt1 == num + 1) {
             return new int[] {sqrt1, sqrt1};
