@@ -16,7 +16,9 @@ public class Solution {
         Queue<Pair> queue = new LinkedList<>();
 
         addAllTheNodeInRange(0, 0, grid, queue, visited);
-        if (visited[grid.length - 1][grid[0].length - 1] == 1) return 0;
+        if (visited[grid.length - 1][grid[0].length - 1] == 1) {
+            return 0;
+        }
 
         int cost = 0;
         while (!queue.isEmpty()) {

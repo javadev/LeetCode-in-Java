@@ -32,8 +32,8 @@ public class Solution {
             for (int j = s.length() - 1; j >= i; j--) {
                 int e = arr[j];
                 int k = (i - 1) < 0 ? 0 : arr[i - 1];
-                int M = e ^ k;
-                if (M == 0) {
+                int m = e ^ k;
+                if (m == 0) {
                     this.result = result == null ? (j - i) + 1 : Math.max(result, (j - i) + 1);
                     break;
                 }
