@@ -11,27 +11,21 @@ public class Solution {
     private final int[][] dir = new int[][] {{0, 0}, {0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
     public int minCost(int[][] grid) {
-
         int[][] visited = new int[grid.length][grid[0].length];
         Queue<Pair> queue = new LinkedList<>();
-
         addAllTheNodeInRange(0, 0, grid, queue, visited);
         if (visited[grid.length - 1][grid[0].length - 1] == 1) {
             return 0;
         }
-
         int cost = 0;
         while (!queue.isEmpty()) {
             cost++;
-
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 Pair pa = queue.poll();
-
                 for (int k = 1; k < dir.length; k++) {
                     int m = Objects.requireNonNull(pa).x + dir[k][0];
                     int n = pa.y + dir[k][1];
-
                     addAllTheNodeInRange(m, n, grid, queue, visited);
                     if (visited[grid.length - 1][grid[0].length - 1] == 1) {
                         return cost;
@@ -39,7 +33,6 @@ public class Solution {
                 }
             }
         }
-
         return -1;
     }
 
@@ -59,8 +52,8 @@ public class Solution {
     }
 
     private static class Pair {
-        public int x;
-        public int y;
+        int x;
+        int y;
 
         public Pair(int x, int y) {
             this.x = x;
