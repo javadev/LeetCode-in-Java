@@ -5,19 +5,13 @@ package g1301_1400.s1359_count_all_valid_pickup_and_delivery_options;
 
 public class Solution {
     public int countOrders(int n) {
-
         long[] dp = new long[n + 1];
         dp[1] = 1;
-
         long mod = (long) 1e9 + 7;
-
         for (int i = 2; i <= n; i++) {
-
             long gaps = (i - 1) * 2L + 1;
-
             dp[i] = gaps * (gaps + 1) / 2 * dp[i - 1] % mod;
         }
-
         return (int) dp[n];
     }
 }
