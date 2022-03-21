@@ -5,6 +5,7 @@ package g1301_1400.s1373_maximum_sum_bst_in_binary_tree;
 
 import com_github_leetcode.TreeNode;
 
+@SuppressWarnings("java:S1700")
 public class Solution {
     public int maxSumBST(TreeNode root) {
         IsBST temp = checkBST(root);
