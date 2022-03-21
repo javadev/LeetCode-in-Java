@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-@SuppressWarnings("unchecked")
+@SuppressWarnings({"unchecked", "java:S3518"})
 public class Solution {
     public double frogPosition(int n, int[][] edges, int t, int target) {
         List<Integer>[] graph = new ArrayList[n];
