@@ -8,7 +8,6 @@ import com_github_leetcode.TreeNode;
 public class Solution {
     public int maxSumBST(TreeNode root) {
         IsBST temp = checkBST(root);
-
         return Math.max(temp.maxSum, 0);
     }
 
@@ -24,21 +23,17 @@ public class Solution {
         if (root == null) {
             return new IsBST();
         }
-
         IsBST lp = checkBST(root.left);
         IsBST rp = checkBST(root.right);
-
         IsBST mp = new IsBST();
         mp.max = Math.max(root.val, Math.max(lp.max, rp.max));
         mp.min = Math.min(root.val, Math.min(lp.min, rp.min));
         mp.sum = lp.sum + rp.sum + root.val;
-
         boolean check = root.val > lp.max && root.val < rp.min;
         if (lp.isBst && rp.isBst && check) {
             mp.isBst = true;
             int tempMax = Math.max(mp.sum, Math.max(lp.sum, rp.sum));
             mp.maxSum = Math.max(tempMax, Math.max(lp.maxSum, rp.maxSum));
-
         } else {
             mp.isBst = false;
             mp.maxSum = Math.max(lp.maxSum, rp.maxSum);
