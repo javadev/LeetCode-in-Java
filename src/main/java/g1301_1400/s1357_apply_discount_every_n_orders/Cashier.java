@@ -14,7 +14,7 @@ public class Cashier {
 
     public Cashier(int n, int discount, int[] products, int[] prices) {
         this.n = n;
-        this.discount = (double) discount;
+        this.discount = discount;
         this.products = products;
         this.prices = prices;
     }
@@ -22,12 +22,12 @@ public class Cashier {
     public double getBill(int[] product, int[] amount) {
         double bill = 0.0;
         int[] productsInt = this.products;
-        Integer[] products = Arrays.stream(productsInt).boxed().toArray(Integer[]::new);
-        int[] prices = this.prices;
+        Integer[] localProducts = Arrays.stream(productsInt).boxed().toArray(Integer[]::new);
+        int[] localPrices = this.prices;
         for (int i = 0; i < product.length; i++) {
             int ithAmount = amount[i];
             int id = product[i];
-            int price = prices[Arrays.asList(products).indexOf(id)];
+            int price = localPrices[Arrays.asList(localProducts).indexOf(id)];
             bill += price * ithAmount;
         }
         if (this.customer % n == 0) {

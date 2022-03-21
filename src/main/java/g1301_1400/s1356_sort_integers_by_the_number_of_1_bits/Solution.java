@@ -15,15 +15,13 @@ public class Solution {
         Map<Integer, List<Integer>> map = new HashMap<>();
         for (int num : arr) {
             int count = Integer.bitCount(num);
-            if (!map.containsKey(count)) {
-                map.put(count, new ArrayList<>());
-            }
+            map.putIfAbsent(count, new ArrayList<>());
             map.get(count).add(num);
         }
         int[] result = new int[arr.length];
         int i = 0;
-        for (int count : map.keySet()) {
-            List<Integer> list = map.get(count);
+        for (Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {
+            List<Integer> list = entry.getValue();
             Collections.sort(list);
             for (int num : list) {
                 result[i++] = num;
