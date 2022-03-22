@@ -1,6 +1,6 @@
 package g0601_0700.s0677_map_sum_pairs;
 
-// #Medium #String #Hash_Table #Design #Trie
+// #Medium #String #Hash_Table #Design #Trie #2022_03_22_Time_17_ms_(70.10%)_Space_43.5_MB_(21.07%)
 
 public class MapSum {
     static class Node {
@@ -52,3 +52,10 @@ public class MapSum {
         return sum + sumHelper(curr);
     }
 }
+
+/*
+ * Your MapSum object will be instantiated and called as such:
+ * MapSum obj = new MapSum();
+ * obj.insert(key,val);
+ * int param_2 = obj.sum(prefix);
+ */

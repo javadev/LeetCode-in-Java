@@ -1,6 +1,12 @@
 package g0601_0700.s0690_employee_importance;
 
 // #Medium #Hash_Table #Depth_First_Search #Breadth_First_Search
+// #2022_03_22_Time_7_ms_(77.84%)_Space_58.8_MB_(21.60%)
+
+import com_github_leetcode.Employee;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /*
 // Definition for Employee.
@@ -10,12 +16,6 @@ class Employee {
     public List<Integer> subordinates;
 };
 */
-
-import com_github_leetcode.Employee;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 public class Solution {
     public int getImportance(List<Employee> employees, int id) {
         Map<Integer, Employee> map = new HashMap<>();
