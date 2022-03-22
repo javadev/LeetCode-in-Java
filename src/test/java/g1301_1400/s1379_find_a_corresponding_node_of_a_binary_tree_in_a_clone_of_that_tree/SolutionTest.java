@@ -19,7 +19,7 @@ class SolutionTest {
     }
 
     @Test
-    public void getTargetCopy2() {
+    void getTargetCopy2() {
         TreeNode original = TreeNode.create(Arrays.asList(7));
         TreeNode cloned = TreeNode.create(Arrays.asList(7));
         TreeNode target = TreeNode.create(Arrays.asList(7));
@@ -27,7 +27,7 @@ class SolutionTest {
     }
 
     @Test
-    public void getTargetCopy3() {
+    void getTargetCopy3() {
         TreeNode original =
                 TreeNode.create(
                         Arrays.asList(8, null, 6, null, 5, null, 4, null, 3, null, 2, null, 1));
@@ -41,7 +41,7 @@ class SolutionTest {
     }
 
     @Test
-    public void getTargetCopy4() {
+    void getTargetCopy4() {
         TreeNode original = TreeNode.create(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
         TreeNode cloned = TreeNode.create(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
         TreeNode target = TreeNode.create(Arrays.asList(5, 10));
@@ -51,7 +51,7 @@ class SolutionTest {
     }
 
     @Test
-    public void getTargetCopy5() {
+    void getTargetCopy5() {
         TreeNode original = TreeNode.create(Arrays.asList(1, 2, null, 3));
         TreeNode cloned = TreeNode.create(Arrays.asList(1, 2, null, 3));
         TreeNode target = TreeNode.create(Arrays.asList(2, 3));
