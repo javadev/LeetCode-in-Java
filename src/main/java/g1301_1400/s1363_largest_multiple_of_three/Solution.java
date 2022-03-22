@@ -1,63 +1,63 @@
 package g1301_1400.s1363_largest_multiple_of_three;
 
-// #Hard #Array #Dynamic_Programming #Greedy #2022_03_21_Time_8_ms_(68.94%)_Space_42.9_MB_(89.39%)
+// #Hard #Array #Dynamic_Programming #Greedy #2022_03_22_Time_5_ms_(84.67%)_Space_53.3_MB_(70.80%)
 
-import java.util.Collections;
+import java.util.Arrays;
 
 public class Solution {
-    private String printRes(int[] counts) {
-        StringBuilder ans = new StringBuilder();
-        for (int i = 9; i > -1; i--) {
-            ans.append(String.join("", Collections.nCopies(counts[i], String.valueOf(i))));
-        }
-        String regex = "^0+(?!$)";
-        return ans.toString().replaceAll(regex, "");
-    }
-
     public String largestMultipleOfThree(int[] digits) {
-        int[] counts = new int[10];
-        int total = 0;
-        for (int digit : digits) {
-            counts[digit] += 1;
-            total += digit;
+        int sum = 0;
+        int[] count = new int[10];
+        // Here we are using the property that any no is divisible by 3 when its sum of digits is
+        // divisible by 3
+        // get sum of digits and count of each digit
+        for (int x : digits) {
+            sum += x;
+            count[x]++;
         }
-        if (total % 3 == 0) {
-            return printRes(counts);
-        } else if (total % 3 == 1) {
-            boolean found = false;
-            for (int i = 1; i < 10; i += 3) {
-                if (counts[i] > 0) {
-                    counts[i]--;
-                    found = true;
-                    break;
-                }
-            }
-            if (found) {
-                return printRes(counts);
-            }
-            boolean found1 = false;
-            for (int i = 2; i < 10; i += 3) {
-                if (counts[i] > 0) {
-                    counts[i]--;
-                    if (found1) {
-                        found = true;
-                    }
-                    if (!found1) {
-                        found1 = true;
-                    }
-                    if (found) {
+        StringBuilder sb = new StringBuilder();
+        int[] copied = Arrays.copyOf(count, count.length);
+        // if sum % 3 != 0 then processing required
+        if (sum % 3 != 0) {
+            int rem = sum % 3;
+            int oldRem = rem;
+            while (oldRem != 0) {
+                while (rem != 0) {
+                    // if the remainder that we are trying to delete and its required digits is not
+                    // present
+                    // then the value will become -ve at that digit
+                    copied[rem % 10]--;
+                    // increase the remainder by 3 each time a -ve value is found
+                    // and reset the rem and copied from orig count array and break
+                    if (copied[rem % 10] < 0) {
+                        oldRem += 3;
+                        rem = oldRem;
+                        copied = Arrays.copyOf(count, count.length);
                         break;
                     }
-                }
-            }
-        } else if (total % 3 == 2) {
-            for (int i = 2; i < 10; i += 3) {
-                if (counts[i] > 0) {
-                    counts[i]--;
-                    break;
+                    rem /= 10;
+                    if (rem == 0) {
+                        oldRem = 0;
+                    }
                 }
             }
         }
-        return "";
+        // generate the largest number by considering from the last digit ie 9,8,7,6...
+        for (int i = 9; i >= 0; i--) {
+            int val = copied[i];
+            while (val > 0) {
+                sb.append(i);
+                val--;
+            }
+        }
+        // check for any leading zeroes and remove
+        while (sb.length() > 1) {
+            if (sb.charAt(0) != '0') {
+                break;
+            } else {
+                sb.deleteCharAt(0);
+            }
+        }
+        return sb.toString();
     }
 }
