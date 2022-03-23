@@ -1,6 +1,7 @@
 package g0801_0900.s0805_split_array_with_same_average;
 
 // #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Bitmask
+// #2022_03_23_Time_1323_ms_(22.41%)_Space_42.1_MB_(78.14%)
 
 import java.util.Arrays;
 
