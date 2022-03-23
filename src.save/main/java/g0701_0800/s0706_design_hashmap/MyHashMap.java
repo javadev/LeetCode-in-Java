@@ -1,13 +1,13 @@
 package g0701_0800.s0706_design_hashmap;
 
-// #Easy #Array #Hash_Table #Design #Linked_List #Hash_Function
+// #Easy #Array #Hash_Table #Design #Linked_List #Hash_Function #Data_Structure_II_Day_2_Array
+// #2022_03_23_Time_13_ms_(95.71%)_Space_45.8_MB_(98.32%)
 
 import java.util.ArrayList;
 
 @SuppressWarnings("unchecked")
 public class MyHashMap {
-
-    ArrayList[] arr = null;
+    private ArrayList[] arr = null;
 
     public MyHashMap() {
         arr = new ArrayList[1000];

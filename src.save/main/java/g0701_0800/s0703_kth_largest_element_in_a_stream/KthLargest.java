@@ -1,11 +1,11 @@
 package g0701_0800.s0703_kth_largest_element_in_a_stream;
 
 // #Easy #Tree #Binary_Tree #Design #Heap_Priority_Queue #Binary_Search_Tree #Data_Stream
+// #2022_03_23_Time_22_ms_(52.43%)_Space_52.7_MB_(31.26%)
 
 import java.util.PriorityQueue;
 
 public class KthLargest {
-
     private final int maxSize;
     private final PriorityQueue<Integer> heap;
 

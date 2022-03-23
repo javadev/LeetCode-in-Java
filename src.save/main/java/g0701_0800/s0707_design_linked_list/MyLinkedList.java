@@ -1,10 +1,10 @@
 package g0701_0800.s0707_design_linked_list;
 
-// #Medium #Design #Linked_List
+// #Medium #Design #Linked_List #Data_Structure_II_Day_12_Linked_List #Programming_Skills_II_Day_19
+// #2022_03_23_Time_10_ms_(70.60%)_Space_50.6_MB_(48.08%)
 
 public class MyLinkedList {
-
-    static class Node {
+    private static class Node {
         int val;
         Node next;
 
@@ -105,3 +105,13 @@ public class MyLinkedList {
         size--;
     }
 }
+
+/*
+ * Your MyLinkedList object will be instantiated and called as such:
+ * MyLinkedList obj = new MyLinkedList();
+ * int param_1 = obj.get(index);
+ * obj.addAtHead(val);
+ * obj.addAtTail(val);
+ * obj.addAtIndex(index,val);
+ * obj.deleteAtIndex(index);
+ */
