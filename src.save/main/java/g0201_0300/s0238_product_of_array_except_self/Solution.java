@@ -7,8 +7,8 @@ public class Solution {
     public int[] productExceptSelf(int[] nums) {
         int product = 1;
         int[] ans = new int[nums.length];
-        for (int i = 0; i < nums.length; i++) {
-            product = product * nums[i];
+        for (int num : nums) {
+            product = product * num;
         }
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) {

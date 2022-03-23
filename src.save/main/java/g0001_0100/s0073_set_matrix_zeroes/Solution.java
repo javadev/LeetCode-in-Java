@@ -12,8 +12,8 @@ public class Solution {
         boolean row0 = false;
         boolean col0 = false;
         // Check if 0th col needs to be market all 0s in future
-        for (int i = 0; i < m; i++) {
-            if (matrix[i][0] == 0) {
+        for (int[] ints : matrix) {
+            if (ints[0] == 0) {
                 col0 = true;
                 break;
             }

@@ -19,8 +19,8 @@ public class Solution {
             }
         }
         int total = 0;
-        for (int i = 0; i < candies.length; i++) {
-            total += candies[i];
+        for (int candy : candies) {
+            total += candy;
         }
         return total;
     }

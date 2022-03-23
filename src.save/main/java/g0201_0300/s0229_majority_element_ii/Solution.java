@@ -16,8 +16,7 @@ public class Solution {
         int count2 = 0;
         // now we have two candidates(any integer can be chosed as),and their votes are
         // zero.
-        for (int i = 0; i < len; i++) {
-            int temp = nums[i];
+        for (int temp : nums) {
             if (temp == first) {
                 count1++;
             } else if (temp == second) {
@@ -43,10 +42,9 @@ public class Solution {
         }
         count1 = 0;
         count2 = 0;
-        for (int i = 0; i < len; i++) {
+        for (int temp : nums) {
             // check both of them is bigger than n/3.Becasue we may have only one satisfying
             // the demand.
-            int temp = nums[i];
             if (temp == first) {
                 count1++;
             }

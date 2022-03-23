@@ -6,8 +6,8 @@ package g0401_0500.s0416_partition_equal_subset_sum;
 public class Solution {
     public boolean canPartition(int[] nums) {
         int sum = 0;
-        for (int i = 0; i < nums.length; i++) {
-            sum = sum + nums[i];
+        for (int num : nums) {
+            sum = sum + num;
         }
         if (sum % 2 != 0) {
             return false;

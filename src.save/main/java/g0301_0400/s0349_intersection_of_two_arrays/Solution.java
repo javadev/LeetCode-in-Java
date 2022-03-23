@@ -9,14 +9,14 @@ import java.util.List;
 public class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
         boolean[] occ = new boolean[1001];
-        for (int i = 0; i < nums1.length; i++) {
-            occ[nums1[i]] = true;
+        for (int k : nums1) {
+            occ[k] = true;
         }
         List<Integer> res = new ArrayList<>();
-        for (int i = 0; i < nums2.length; i++) {
-            if (occ[nums2[i]]) {
-                occ[nums2[i]] = false;
-                res.add(nums2[i]);
+        for (int j : nums2) {
+            if (occ[j]) {
+                occ[j] = false;
+                res.add(j);
             }
         }
         int[] result = new int[res.size()];

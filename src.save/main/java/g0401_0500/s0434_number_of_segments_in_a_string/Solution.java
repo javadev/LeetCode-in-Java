@@ -10,8 +10,8 @@ public class Solution {
         }
         String[] splitted = s.split(" ");
         int result = 0;
-        for (int i = 0; i < splitted.length; i++) {
-            if (splitted[i].length() > 0) {
+        for (String value : splitted) {
+            if (value.length() > 0) {
                 result++;
             }
         }

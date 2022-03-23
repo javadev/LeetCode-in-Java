@@ -39,15 +39,15 @@ public class Solution {
         reverse(inp, k + 1, inp.length - 1);
         // Build result
         int ret = 0;
-        for (int i = 0; i < inp.length; i++) {
-            int digit = inp[i] - '0';
+        for (char c : inp) {
+            int digit = c - '0';
             // Handle the case if ret > Integer.MAX_VALUE - This idea is borrowed from problem  8.
             // String to Integer (atoi)
             if (ret > Integer.MAX_VALUE / 10
                     || (ret == Integer.MAX_VALUE / 10 && digit > Integer.MAX_VALUE % 10)) {
                 return -1;
             }
-            ret = ret * 10 + (inp[i] - '0');
+            ret = ret * 10 + (c - '0');
         }
         return ret;
     }

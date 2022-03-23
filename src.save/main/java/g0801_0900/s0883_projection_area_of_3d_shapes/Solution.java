@@ -8,14 +8,14 @@ public class Solution {
         int m = grid[0].length;
         int sum = n * m;
         int count = 0;
-        for (int i = 0; i < n; i++) {
+        for (int[] ints : grid) {
             int max = Integer.MIN_VALUE;
             for (int j = 0; j < m; j++) {
-                if (grid[i][j] == 0) {
+                if (ints[j] == 0) {
                     count++;
                 }
-                if (max < grid[i][j]) {
-                    max = grid[i][j];
+                if (max < ints[j]) {
+                    max = ints[j];
                 }
             }
             sum += max;

@@ -16,7 +16,7 @@ public class Solution {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
         List<Integer> freq = new ArrayList<>(map.values());
-        Collections.sort(freq, Collections.reverseOrder());
+        freq.sort(Collections.reverseOrder());
         int i = 0;
         int count = 0;
         int totalLength = arr.length;
