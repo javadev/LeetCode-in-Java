@@ -20,7 +20,9 @@ public class Solution {
             } else {
                 allOne = false;
                 max = Math.max(max, e - s - 1);
-                while (nums[s] != 0) s++;
+                while (nums[s] != 0) {
+                    s++;
+                }
                 s++;
                 extraZero = false;
             }
