@@ -30,6 +30,9 @@ public class Solution {
         if (nums[e - 1] == 1) {
             max = Math.max(max, e - s - 1);
         }
-        return allOne ? nums.length - 1 : max == Integer.MIN_VALUE ? 0 : max;
+        if (allOne) {
+            return nums.length - 1;
+        }
+        return max == Integer.MIN_VALUE ? 0 : max;
     }
 }
