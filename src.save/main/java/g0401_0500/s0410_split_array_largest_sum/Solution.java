@@ -8,9 +8,9 @@ public class Solution {
         int maxVal = 0;
         int minVal = nums[0];
 
-        for (int i = 0; i < nums.length; i++) {
-            maxVal += nums[i];
-            minVal = Math.max(minVal, nums[i]);
+        for (int num : nums) {
+            maxVal += num;
+            minVal = Math.max(minVal, num);
         }
 
         while (minVal < maxVal) {

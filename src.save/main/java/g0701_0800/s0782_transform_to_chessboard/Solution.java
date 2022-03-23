@@ -9,9 +9,9 @@ public class Solution {
         int rowToMove = 0;
         int rowOneCnt = 0;
         int colOneCnt = 0;
-        for (int i = 0; i < n; i++) {
+        for (int[] ints : board) {
             for (int j = 0; j < n; j++) {
-                if (((board[0][0] ^ board[i][0]) ^ (board[i][j] ^ board[0][j])) == 1) {
+                if (((board[0][0] ^ ints[0]) ^ (ints[j] ^ board[0][j])) == 1) {
                     return -1;
                 }
             }

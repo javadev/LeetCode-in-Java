@@ -7,8 +7,8 @@ public class Solution {
     public int maxProduct(int[] arr) {
         int ans = Integer.MIN_VALUE;
         int cprod = 1;
-        for (int i = 0; i < arr.length; i++) {
-            cprod = cprod * arr[i];
+        for (int j : arr) {
+            cprod = cprod * j;
             ans = Math.max(ans, cprod);
             if (cprod == 0) {
                 cprod = 1;

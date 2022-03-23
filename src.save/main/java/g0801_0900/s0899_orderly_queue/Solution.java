@@ -26,9 +26,9 @@ public class Solution {
             }
         }
         String ans = s;
-        for (int i = 0; i < list.size(); i++) {
-            String after = s.substring(0, list.get(i));
-            String before = s.substring(list.get(i));
+        for (Integer integer : list) {
+            String after = s.substring(0, integer);
+            String before = s.substring(integer);
             String f = before + after;
             if (f.compareTo(ans) < 0) {
                 ans = f;

@@ -13,8 +13,8 @@ public class Solution {
         while (n > 0) {
             Integer[] temp = new Integer[n1.length * 2];
             int pos = 0;
-            for (int i = 0; i < n1.length; i++) {
-                temp[pos++] = n1[i];
+            for (Integer integer : n1) {
+                temp[pos++] = integer;
             }
             for (int i = n1.length - 1; i >= 0; i--) {
                 temp[pos++] = n1[i] | shift;

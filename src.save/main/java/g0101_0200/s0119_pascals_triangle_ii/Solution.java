@@ -13,8 +13,8 @@ public class Solution {
         computeRow(buffer, 1);
         // Copy buffer to List of Integer.
         List<Integer> ans = new ArrayList<>(buffer.length);
-        for (int i = 0; i < buffer.length; i++) {
-            ans.add(buffer[i]);
+        for (int j : buffer) {
+            ans.add(j);
         }
         return ans;
     }

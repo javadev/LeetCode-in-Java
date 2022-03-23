@@ -13,9 +13,9 @@ public class Solution {
     public List<String> findItinerary(List<List<String>> tickets) {
         HashMap<String, PriorityQueue<String>> map = new HashMap<>();
         LinkedList<String> ans = new LinkedList<>();
-        for (int i = 0; i < tickets.size(); i++) {
-            String src = tickets.get(i).get(0);
-            String dest = tickets.get(i).get(1);
+        for (List<String> ticket : tickets) {
+            String src = ticket.get(0);
+            String dest = ticket.get(1);
             PriorityQueue<String> pq = map.getOrDefault(src, new PriorityQueue<>());
             pq.add(dest);
             map.put(src, pq);

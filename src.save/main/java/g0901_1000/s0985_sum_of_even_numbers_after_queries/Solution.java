@@ -6,8 +6,8 @@ public class Solution {
     public int[] sumEvenAfterQueries(int[] nums, int[][] queries) {
         int[] result = new int[queries.length];
         int res = 0;
-        for (int i = 0; i < nums.length; i++) {
-            res += (nums[i] & 1) == 0 ? nums[i] : 0;
+        for (int num : nums) {
+            res += (num & 1) == 0 ? num : 0;
         }
         int k = 0;
         for (int[] query : queries) {

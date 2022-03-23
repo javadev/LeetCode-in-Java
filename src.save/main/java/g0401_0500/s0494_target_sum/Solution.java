@@ -7,8 +7,8 @@ public class Solution {
     public int findTargetSumWays(int[] nums, int s) {
         int sum = 0;
         s = Math.abs(s);
-        for (int i = 0; i < nums.length; i++) {
-            sum += nums[i];
+        for (int num : nums) {
+            sum += num;
         }
         // Invalid s, just return 0
         if (s > sum || (sum + s) % 2 != 0) {

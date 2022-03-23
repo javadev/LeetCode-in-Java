@@ -16,24 +16,24 @@ public class Solution {
             Collections.addAll(finalans, words);
             return finalans;
         }
-        for (int i = 0; i < words.length; i++) {
+        for (String word : words) {
             char[] check = new char[26];
             Arrays.fill(check, '1');
             HashMap<Character, Character> ans = new HashMap<>();
-            for (int j = 0; j < words[i].length(); j++) {
+            for (int j = 0; j < word.length(); j++) {
                 char pat = pattern.charAt(j);
-                char wor = words[i].charAt(j);
+                char wor = word.charAt(j);
                 if (ans.containsKey(pat)) {
                     if (ans.get(pat) == wor) {
-                        if (j == words[i].length() - 1) {
-                            finalans.add(words[i]);
+                        if (j == word.length() - 1) {
+                            finalans.add(word);
                         }
                     } else {
                         break;
                     }
                 } else {
-                    if (j == words[i].length() - 1 && check[wor - 'a'] == '1') {
-                        finalans.add(words[i]);
+                    if (j == word.length() - 1 && check[wor - 'a'] == '1') {
+                        finalans.add(word);
                     }
                     if (check[wor - 'a'] != '1' && check[wor - 'a'] != pat) {
                         break;

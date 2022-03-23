@@ -10,9 +10,9 @@ public class Solution {
         int num = nums.length;
         int[] count = new int[num];
         List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < num; i++) {
+        for (int j : nums) {
             // count number of times each number appears
-            count[nums[i] - 1] += 1;
+            count[j - 1] += 1;
         }
         for (int i = 0; i < num; i++) {
             // if count of num is 2 add pos to list

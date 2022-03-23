@@ -6,10 +6,10 @@ package g1301_1400.s1385_find_the_distance_value_between_two_arrays;
 public class Solution {
     public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
         int count = 0;
-        for (int i = 0; i < arr1.length; i++) {
+        for (int k : arr1) {
             int j = 0;
             for (; j < arr2.length; j++) {
-                if (Math.abs(arr1[i] - arr2[j]) <= d) {
+                if (Math.abs(k - arr2[j]) <= d) {
                     break;
                 }
             }

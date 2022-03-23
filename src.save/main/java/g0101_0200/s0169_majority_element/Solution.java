@@ -23,8 +23,8 @@ public class Solution {
 
         // For Confirmation
         count = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == majority) {
+        for (int j : arr) {
+            if (j == majority) {
                 count++;
             }
         }

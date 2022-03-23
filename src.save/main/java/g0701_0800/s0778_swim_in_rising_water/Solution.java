@@ -12,9 +12,9 @@ public class Solution {
     public int swimInWater(int[][] grid) {
         int max = 0;
         // find the maximum value in the matrix
-        for (int i = 0; i < grid.length; i++) {
+        for (int[] ints : grid) {
             for (int j = 0; j < grid[0].length; j++) {
-                max = Math.max(max, grid[i][j]);
+                max = Math.max(max, ints[j]);
             }
         }
         int l = 0;

@@ -9,11 +9,11 @@ import java.util.Stack;
 public class Solution {
     public int evalRPN(String[] tokens) {
         Stack<Integer> st = new Stack<>();
-        for (int i = 0; i < tokens.length; i++) {
-            if (!Character.isDigit(tokens[i].charAt(tokens[i].length() - 1))) {
-                st.push(eval(st.pop(), st.pop(), tokens[i]));
+        for (String token : tokens) {
+            if (!Character.isDigit(token.charAt(token.length() - 1))) {
+                st.push(eval(st.pop(), st.pop(), token));
             } else {
-                st.push(Integer.parseInt(tokens[i]));
+                st.push(Integer.parseInt(token));
             }
         }
         return st.pop();
