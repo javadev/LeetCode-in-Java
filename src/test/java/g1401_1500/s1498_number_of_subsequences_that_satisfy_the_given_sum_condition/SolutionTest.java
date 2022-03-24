@@ -8,16 +8,16 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void numSubseq() {
-        assertThat(new Solution().numSubseq(new int[] {3,5,6,7}, 9), equalTo(4));
+        assertThat(new Solution().numSubseq(new int[] {3, 5, 6, 7}, 9), equalTo(4));
     }
 
     @Test
     void numSubseq2() {
-        assertThat(new Solution().numSubseq(new int[] {3,3,6,8}, 10), equalTo(6));
+        assertThat(new Solution().numSubseq(new int[] {3, 3, 6, 8}, 10), equalTo(6));
     }
 
     @Test
     void numSubseq3() {
-        assertThat(new Solution().numSubseq(new int[] {2,3,3,4,6,7}, 12), equalTo(61));
+        assertThat(new Solution().numSubseq(new int[] {2, 3, 3, 4, 6, 7}, 12), equalTo(61));
     }
 }
