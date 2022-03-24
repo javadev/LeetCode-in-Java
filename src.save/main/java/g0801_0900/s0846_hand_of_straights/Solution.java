@@ -1,6 +1,6 @@
 package g0801_0900.s0846_hand_of_straights;
 
-// #Medium #Array #Hash_Table #Sorting #Greedy
+// #Medium #Array #Hash_Table #Sorting #Greedy #2022_03_24_Time_19_ms_(96.16%)_Space_43_MB_(93.42%)
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -18,7 +18,6 @@ public class Solution {
             int cnt = map.getOrDefault(num, 0);
             map.put(num, ++cnt);
         }
-
         for (int num : hand) {
             int cnt = map.get(num);
             if (cnt <= 0) {
@@ -36,7 +35,6 @@ public class Solution {
                 ++loop;
             }
         }
-
         return true;
     }
 }

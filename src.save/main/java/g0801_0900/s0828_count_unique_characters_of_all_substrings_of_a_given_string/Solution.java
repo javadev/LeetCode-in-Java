@@ -1,6 +1,6 @@
 package g0801_0900.s0828_count_unique_characters_of_all_substrings_of_a_given_string;
 
-// #Hard #String #Dynamic_Programming
+// #Hard #String #Dynamic_Programming #2022_03_24_Time_101_ms_(18.42%)_Space_69_MB_(14.84%)
 
 import java.util.HashMap;
 

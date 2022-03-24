@@ -1,6 +1,7 @@
 package g0801_0900.s0843_guess_the_word;
 
 // #Hard #Array #String #Math #Game_Theory #Interactive
+// #2022_03_24_Time_2_ms_(68.01%)_Space_41.5_MB_(70.30%)
 
 import java.util.Arrays;
 import java.util.Collections;
