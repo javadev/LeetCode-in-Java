@@ -1,6 +1,7 @@
 package g0701_0800.s0719_find_k_th_smallest_pair_distance;
 
 // #Hard #Array #Sorting #Binary_Search #Two_Pointers
+// #2022_03_24_Time_8_ms_(81.40%)_Space_44.6_MB_(48.69%)
 
 import java.util.Arrays;
 

@@ -1,6 +1,6 @@
 package g0701_0800.s0726_number_of_atoms;
 
-// #Hard #String #Hash_Table #Stack
+// #Hard #String #Hash_Table #Stack #2022_03_24_Time_4_ms_(87.22%)_Space_42.7_MB_(28.23%)
 
 import java.util.ArrayList;
 import java.util.Comparator;

@@ -1,9 +1,8 @@
 package g0701_0800.s0715_range_module;
 
-// #Hard #Design #Ordered_Set #Segment_Tree
+// #Hard #Design #Ordered_Set #Segment_Tree #2022_03_24_Time_35_ms_(98.62%)_Space_50_MB_(97.66%)
 
 public class RangeModule {
-
     private final Interval head;
 
     public RangeModule() {
