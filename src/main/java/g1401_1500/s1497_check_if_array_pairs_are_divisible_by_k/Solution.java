@@ -12,10 +12,8 @@ public class Solution {
             return false;
         }
         for (int i = 1; i <= k / 2; i++) {
-            if (i == k - i) {
-                if (freq[i] % 2 != 0) {
-                    return false;
-                }
+            if (i == k - i && freq[i] % 2 != 0) {
+                return false;
             }
             if (freq[i] != freq[k - i]) {
                 return false;
