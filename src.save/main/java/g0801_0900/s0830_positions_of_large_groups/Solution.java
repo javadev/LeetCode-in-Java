@@ -1,6 +1,6 @@
 package g0801_0900.s0830_positions_of_large_groups;
 
-// #Easy #String
+// #Easy #String #2022_03_24_Time_2_ms_(80.94%)_Space_44.3_MB_(74.84%)
 
 import java.util.ArrayList;
 import java.util.Arrays;
