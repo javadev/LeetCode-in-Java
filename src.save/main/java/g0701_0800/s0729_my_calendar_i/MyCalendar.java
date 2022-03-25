@@ -1,8 +1,9 @@
 package g0701_0800.s0729_my_calendar_i;
 
-import java.util.TreeSet;
+// #Medium #Design #Ordered_Set #Segment_Tree #Programming_Skills_II_Day_20
+// #2022_03_25_Time_17_ms_(97.23%)_Space_43_MB_(87.36%)
 
-// #Medium #Design #Ordered_Set #Segment_Tree
+import java.util.TreeSet;
 
 @SuppressWarnings("java:S1210")
 public class MyCalendar {
@@ -40,3 +41,9 @@ public class MyCalendar {
         return false;
     }
 }
+
+/*
+ * Your MyCalendar object will be instantiated and called as such:
+ * MyCalendar obj = new MyCalendar();
+ * boolean param_1 = obj.book(start,end);
+ */
