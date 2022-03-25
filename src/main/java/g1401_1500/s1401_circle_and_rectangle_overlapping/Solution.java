@@ -14,19 +14,16 @@ public class Solution {
                 return true;
             }
         }
-
         for (int x = x1; x <= x2; x++) {
             if (dist(x, y2, xCenter, yCenter) <= circleDistance) {
                 return true;
             }
         }
-
         for (int y = y1; y <= y2; y++) {
             if (dist(x1, y, xCenter, yCenter) <= circleDistance) {
                 return true;
             }
         }
-
         for (int y = y1; y <= y2; y++) {
             if (dist(x2, y, xCenter, yCenter) <= circleDistance) {
                 return true;
