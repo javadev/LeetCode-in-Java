@@ -17,8 +17,7 @@ public class Solution {
             } else {
                 if (s.charAt(i) == '0') {
                     steps += 2;
-                }
-                else {
+                } else {
                     steps++;
                 }
             }
