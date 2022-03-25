@@ -1,10 +1,19 @@
 package g0701_0800.s0745_prefix_and_suffix_search;
 
-// #Hard #String #Design #Trie
+// #Hard #String #Design #Trie #2022_03_25_Time_366_ms_(76.15%)_Space_262.7_MB_(32.80%)
 
 public class WordFilter {
+    private static class TrieNode {
+        TrieNode[] children;
+        int weight;
 
-    TrieNode root = new TrieNode();
+        TrieNode() {
+            this.children = new TrieNode[27];
+            this.weight = 0;
+        }
+    }
+
+    private TrieNode root = new TrieNode();
 
     public WordFilter(String[] words) {
         for (int i = 0; i < words.length; i++) {
