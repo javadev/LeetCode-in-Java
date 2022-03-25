@@ -1,6 +1,6 @@
 package g0701_0800.s0732_my_calendar_iii;
 
-// #Hard #Design #Ordered_Set #Segment_Tree
+// #Hard #Design #Ordered_Set #Segment_Tree #2022_03_25_Time_40_ms_(95.37%)_Space_61.9_MB_(11.11%)
 
 public class MyCalendarThree {
     private final Node root;
@@ -63,3 +63,9 @@ public class MyCalendarThree {
         }
     }
 }
+
+/*
+ * Your MyCalendarThree object will be instantiated and called as such:
+ * MyCalendarThree obj = new MyCalendarThree();
+ * int param_1 = obj.book(start,end);
+ */

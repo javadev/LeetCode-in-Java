@@ -1,6 +1,6 @@
 package g0701_0800.s0731_my_calendar_ii;
 
-// #Medium #Design #Ordered_Set #Segment_Tree
+// #Medium #Design #Ordered_Set #Segment_Tree #2022_03_25_Time_27_ms_(97.74%)_Space_54.6_MB_(48.74%)
 
 import java.util.TreeMap;
 
@@ -32,3 +32,9 @@ public class MyCalendarTwo {
         return false;
     }
 }
+
+/*
+ * Your MyCalendarTwo object will be instantiated and called as such:
+ * MyCalendarTwo obj = new MyCalendarTwo();
+ * boolean param_1 = obj.book(start,end);
+ */
