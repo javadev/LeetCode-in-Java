@@ -15,8 +15,12 @@ public class Solution {
                     steps++;
                 }
             } else {
-                if (s.charAt(i) == '0') steps += 2;
-                else steps++;
+                if (s.charAt(i) == '0') {
+                    steps += 2;
+                }
+                else {
+                    steps++;
+                }
             }
         }
         return steps + carry;
