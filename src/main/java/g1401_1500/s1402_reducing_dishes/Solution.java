@@ -8,7 +8,6 @@ import java.util.Arrays;
 public class Solution {
     public int maxSatisfaction(int[] satisfaction) {
         Arrays.sort(satisfaction);
-
         int sum = 0;
         int mulSum = 0;
         for (int i = 0; i < satisfaction.length; i++) {
