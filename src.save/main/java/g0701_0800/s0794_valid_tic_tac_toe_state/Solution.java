@@ -1,6 +1,6 @@
 package g0701_0800.s0794_valid_tic_tac_toe_state;
 
-// #Medium #Array #String
+// #Medium #Array #String #2022_03_26_Time_0_ms_(100.00%)_Space_42.1_MB_(13.47%)
 
 public class Solution {
     public boolean validTicTacToe(String[] board) {
