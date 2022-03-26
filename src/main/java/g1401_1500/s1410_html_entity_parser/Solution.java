@@ -5,7 +5,8 @@ package g1401_1500.s1410_html_entity_parser;
 public class Solution {
     public String entityParser(String text) {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < text.length(); i++) {
+        int i = 0;
+        while (i < text.length()) {
             if (text.charAt(i) != '&') {
                 sb.append(text.charAt(i));
             } else {
@@ -31,6 +32,7 @@ public class Solution {
                     sb.append(text.charAt(i));
                 }
             }
+            i++;
         }
         return sb.toString();
     }

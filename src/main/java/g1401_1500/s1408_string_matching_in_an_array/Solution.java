@@ -12,10 +12,8 @@ public class Solution {
         Set<String> set = new HashSet<>();
         for (String word : words) {
             for (String s : words) {
-                if (!word.equals(s) && word.length() < s.length()) {
-                    if (s.contains(word)) {
-                        set.add(word);
-                    }
+                if (!word.equals(s) && word.length() < s.length() && s.contains(word)) {
+                    set.add(word);
                 }
             }
         }

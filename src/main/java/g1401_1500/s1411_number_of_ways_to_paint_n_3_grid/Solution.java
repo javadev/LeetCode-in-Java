@@ -5,7 +5,7 @@ package g1401_1500.s1411_number_of_ways_to_paint_n_3_grid;
 import java.util.Arrays;
 
 public class Solution {
-    private static final int mod = 1000000007;
+    private static final int MOD = 1000000007;
 
     public int numOfWays(int n) {
         int[][] dp = new int[n + 1][12];
@@ -34,7 +34,7 @@ public class Solution {
                     if (s == -1) {
                         break;
                     }
-                    sum = (sum + dp[i - 1][s - 1]) % mod;
+                    sum = (sum + dp[i - 1][s - 1]) % MOD;
                 }
                 dp[i][j] = sum;
             }
@@ -42,7 +42,7 @@ public class Solution {
 
         int total = 0;
         for (int i = 0; i < 12; i++) {
-            total = (total + dp[n][i]) % mod;
+            total = (total + dp[n][i]) % MOD;
         }
         return total;
     }
