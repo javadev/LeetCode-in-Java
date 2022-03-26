@@ -19,4 +19,9 @@ class SolutionTest {
                 new Solution().entityParser("and I quote: &quot;...&quot;"),
                 equalTo("and I quote: \"...\""));
     }
+
+    @Test
+    void entityParser3() {
+        assertThat(new Solution().entityParser("&frasl;&apos;&gt;&lt;"), equalTo("/'><"));
+    }
 }
