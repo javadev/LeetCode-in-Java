@@ -13,18 +13,21 @@ public class Solution {
 
         Arrays.fill(dp[1], 1);
 
-        transfer[0] = new int[] {5, 6, 8, 9, 10};
-        transfer[1] = new int[] {5, 8, 7, 9, -1};
-        transfer[2] = new int[] {5, 6, 9, 10, 12};
-        transfer[3] = new int[] {6, 10, 11, 12, -1};
-        transfer[4] = new int[] {1, 2, 3, 11, 12};
-        transfer[5] = new int[] {1, 3, 4, 11, -1};
-        transfer[6] = new int[] {2, 9, 10, 12, -1};
-        transfer[7] = new int[] {1, 2, 10, 11, 12};
-        transfer[8] = new int[] {1, 2, 3, 7, -1};
-        transfer[9] = new int[] {1, 3, 4, 7, 8};
-        transfer[10] = new int[] {4, 5, 6, 8, -1};
-        transfer[11] = new int[] {3, 4, 5, 7, 8};
+        transfer =
+                new int[][] {
+                    {5, 6, 8, 9, 10},
+                    {5, 8, 7, 9, -1},
+                    {5, 6, 9, 10, 12},
+                    {6, 10, 11, 12, -1},
+                    {1, 2, 3, 11, 12},
+                    {1, 3, 4, 11, -1},
+                    {2, 9, 10, 12, -1},
+                    {1, 2, 10, 11, 12},
+                    {1, 2, 3, 7, -1},
+                    {1, 3, 4, 7, 8},
+                    {4, 5, 6, 8, -1},
+                    {3, 4, 5, 7, 8}
+                };
 
         for (int i = 2; i <= n; i++) {
             for (int j = 0; j < 12; j++) {
