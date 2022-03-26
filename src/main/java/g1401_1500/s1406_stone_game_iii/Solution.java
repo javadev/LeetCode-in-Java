@@ -7,12 +7,9 @@ import java.util.Arrays;
 
 public class Solution {
     public String stoneGameIII(int[] stoneValue) {
-
         int[] dp = new int[stoneValue.length + 1];
-
         Arrays.fill(dp, 0);
         int i = stoneValue.length - 1;
-
         while (i >= 0) {
             int ans = Integer.MIN_VALUE;
             ans = Math.max(ans, stoneValue[i] - dp[i + 1]);
@@ -28,15 +25,10 @@ public class Solution {
             dp[i] = ans;
             i--;
         }
-
         int value = dp[0];
         if (value > 0) {
             return "Alice";
         }
-        if (value == 0) {
-            return "Tie";
-        } else {
-            return "Bob";
-        }
+        return value == 0 ? "Tie" : "Bob";
     }
 }
