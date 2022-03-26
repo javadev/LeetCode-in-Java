@@ -7,12 +7,9 @@ import java.util.List;
 
 public class Solution {
     public int findMinFibonacciNumbers(int k) {
-
         List<Integer> list = new ArrayList<>();
-
         list.add(1);
         list.add(1);
-
         int prev = 1;
         int curr = 1;
         while (prev <= k) {
