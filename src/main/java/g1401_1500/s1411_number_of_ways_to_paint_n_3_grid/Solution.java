@@ -9,11 +9,8 @@ public class Solution {
 
     public int numOfWays(int n) {
         int[][] dp = new int[n + 1][12];
-        int[][] transfer = new int[12][5];
-
         Arrays.fill(dp[1], 1);
-
-        transfer =
+        int[][] transfer =
                 new int[][] {
                     {5, 6, 8, 9, 10},
                     {5, 8, 7, 9, -1},
@@ -28,7 +25,6 @@ public class Solution {
                     {4, 5, 6, 8, -1},
                     {3, 4, 5, 7, 8}
                 };
-
         for (int i = 2; i <= n; i++) {
             for (int j = 0; j < 12; j++) {
                 int[] prevStates = transfer[j];
@@ -42,7 +38,6 @@ public class Solution {
                 dp[i][j] = sum;
             }
         }
-
         int total = 0;
         for (int i = 0; i < 12; i++) {
             total = (total + dp[n][i]) % MOD;
