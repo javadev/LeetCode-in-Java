@@ -1,6 +1,6 @@
 package g1401_1500.s1410_html_entity_parser;
 
-// #Medium #String #Hash_Table #2022_03_27_Time_32_ms_(92.47%)_Space_57.8_MB_(69.89%)
+// #Medium #String #Hash_Table #2022_03_27_Time_19_ms_(98.92%)_Space_42.6_MB_(100.00%)
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,11 +20,13 @@ public class Solution {
             char c = text.charAt(i);
             if (c == '&') {
                 int index = text.indexOf(";", i);
-                String pattern = index >= 0 ? text.substring(i, index + 1) : text;
-                if (map.containsKey(pattern)) {
-                    sb.append(map.get(pattern));
-                    i += pattern.length() - 1;
-                    continue;
+                if (index >= 0) {
+                    String pattern = text.substring(i, index + 1);
+                    if (map.containsKey(pattern)) {
+                        sb.append(map.get(pattern));
+                        i += pattern.length() - 1;
+                        continue;
+                    }
                 }
             }
             sb.append(c);
