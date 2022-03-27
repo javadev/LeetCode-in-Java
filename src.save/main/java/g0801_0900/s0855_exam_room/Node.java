@@ -3,7 +3,6 @@ package g0801_0900.s0855_exam_room;
 import java.util.Map;
 
 class Node {
-
     Node pre;
     Node next;
     int val;

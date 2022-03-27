@@ -1,17 +1,16 @@
 package g0801_0900.s0855_exam_room;
 
-// #Medium #Design #Ordered_Set
+// #Medium #Design #Ordered_Set #2022_03_27_Time_19_ms_(74.01%)_Space_45.8_MB_(67.28%)
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
 public class ExamRoom {
-
-    Map<Integer, Node> map = new HashMap<>();
-    Node head = new Node(-1, map);
-    Node tail = new Node(-1, map);
-    int n;
+    private Map<Integer, Node> map = new HashMap<>();
+    private Node head = new Node(-1, map);
+    private Node tail = new Node(-1, map);
+    private int n;
 
     public ExamRoom() {
         head.next = tail;

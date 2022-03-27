@@ -1,6 +1,6 @@
 package g0801_0900.s0858_mirror_reflection;
 
-// #Medium #Math #Geometry
+// #Medium #Math #Geometry #2022_03_27_Time_0_ms_(100.00%)_Space_40.8_MB_(64.41%)
 
 public class Solution {
     public int mirrorReflection(int p, int q) {
