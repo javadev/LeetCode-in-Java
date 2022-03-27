@@ -1,6 +1,6 @@
 package g0801_0900.s0868_binary_gap;
 
-// #Easy #Math #Bit_Manipulation
+// #Easy #Math #Bit_Manipulation #2022_03_27_Time_3_ms_(9.45%)_Space_41.4_MB_(24.80%)
 
 import java.util.ArrayList;
 import java.util.List;
