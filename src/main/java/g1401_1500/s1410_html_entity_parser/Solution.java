@@ -16,7 +16,8 @@ public class Solution {
         map.put("&frasl;", "/");
         int n = text.length();
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < n; i++) {
+        int i = 0;
+        while (i < n) {
             char c = text.charAt(i);
             if (c == '&') {
                 int index = text.indexOf(";", i);
@@ -24,12 +25,13 @@ public class Solution {
                     String pattern = text.substring(i, index + 1);
                     if (map.containsKey(pattern)) {
                         sb.append(map.get(pattern));
-                        i += pattern.length() - 1;
+                        i += pattern.length();
                         continue;
                     }
                 }
             }
             sb.append(c);
+            i++;
         }
         return sb.toString();
     }
