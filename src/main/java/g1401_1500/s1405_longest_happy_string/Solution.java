@@ -9,7 +9,6 @@ public class Solution {
         int[] remains = new int[] {a, b, c};
         char[] chars = new char[] {'a', 'b', 'c'};
         int preIndex = -1;
-
         do {
             int index;
             boolean largest;
@@ -31,13 +30,11 @@ public class Solution {
             }
             remains[index]--;
             sb.append(chars[index]);
-
             if (remains[index] > 0 && largest) {
                 remains[index]--;
                 sb.append(chars[index]);
             }
             preIndex = index;
-
         } while (remains[0] + remains[1] + remains[2] != remains[preIndex]);
         return sb.toString();
     }
