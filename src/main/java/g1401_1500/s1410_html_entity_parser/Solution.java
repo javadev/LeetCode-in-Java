@@ -1,38 +1,33 @@
 package g1401_1500.s1410_html_entity_parser;
 
-// #Medium #String #Hash_Table #2022_03_26_Time_15_ms_(98.92%)_Space_42.6_MB_(100.00%)
+// #Medium #String #Hash_Table #2022_03_27_Time_32_ms_(92.47%)_Space_57.8_MB_(69.89%)
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
     public String entityParser(String text) {
+        Map<String, String> map = new HashMap<>();
+        map.put("&quot;", "\"");
+        map.put("&apos;", "'");
+        map.put("&amp;", "&");
+        map.put("&gt;", ">");
+        map.put("&lt;", "<");
+        map.put("&frasl;", "/");
+        int n = text.length();
         StringBuilder sb = new StringBuilder();
-        int i = 0;
-        while (i < text.length()) {
-            if (text.charAt(i) != '&') {
-                sb.append(text.charAt(i));
-            } else {
-                if (text.startsWith("&frasl;", i)) {
-                    sb.append("/");
-                    i += 6;
-                } else if (text.startsWith("&quot;", i)) {
-                    sb.append("\"");
-                    i += 5;
-                } else if (text.startsWith("&apos;", i)) {
-                    sb.append("'");
-                    i += 5;
-                } else if (text.startsWith("&amp;", i)) {
-                    sb.append("&");
-                    i += 4;
-                } else if (text.startsWith("&gt;", i)) {
-                    sb.append(">");
-                    i += 3;
-                } else if (text.startsWith("&lt;", i)) {
-                    sb.append("<");
-                    i += 3;
-                } else {
-                    sb.append(text.charAt(i));
+        for (int i = 0; i < n; i++) {
+            char c = text.charAt(i);
+            if (c == '&') {
+                int index = text.indexOf(";", i);
+                String pattern = index >= 0 ? text.substring(i, index + 1) : text;
+                if (map.containsKey(pattern)) {
+                    sb.append(map.get(pattern));
+                    i += pattern.length() - 1;
+                    continue;
                 }
             }
-            i++;
+            sb.append(c);
         }
         return sb.toString();
     }
