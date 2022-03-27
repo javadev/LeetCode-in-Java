@@ -22,6 +22,6 @@ class SolutionTest {
 
     @Test
     void entityParser3() {
-        assertThat(new Solution().entityParser("&frasl;&apos;&gt;&lt;"), equalTo("/'><"));
+        assertThat(new Solution().entityParser("&frasl;&apos;&gt;&lt;&lt"), equalTo("/'><&lt"));
     }
 }
