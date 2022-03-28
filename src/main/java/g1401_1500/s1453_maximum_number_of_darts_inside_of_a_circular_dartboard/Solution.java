@@ -68,26 +68,24 @@ public class Solution {
     }
 
     public int numPoints(int[][] points, int r) {
-        {
-            int n = points.length;
-            double[][] dis = new double[n][n];
-            for (int i = 0; i < n - 1; i++) {
-                for (int j = i + 1; j < n; j++) {
-                    dis[i][j] =
-                            dis[j][i] =
-                                    Math.sqrt(
-                                            Math.pow(points[i][0] * 1.0 - points[j][0], 2)
-                                                    + Math.pow(
-                                                            points[i][1] * 1.0 - points[j][1], 2));
-                }
-            }
 
-            int ans = 0;
-            for (int i = 0; i < n; i++) {
-                ans = Math.max(ans, getPointsInside(i, r, n, points, dis));
+        int n = points.length;
+        double[][] dis = new double[n][n];
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = i + 1; j < n; j++) {
+                dis[i][j] =
+                        dis[j][i] =
+                                Math.sqrt(
+                                        Math.pow(points[i][0] * 1.0 - points[j][0], 2)
+                                                + Math.pow(points[i][1] * 1.0 - points[j][1], 2));
             }
-
-            return ans;
         }
+
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            ans = Math.max(ans, getPointsInside(i, r, n, points, dis));
+        }
+
+        return ans;
     }
 }
