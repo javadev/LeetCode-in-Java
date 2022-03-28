@@ -43,7 +43,7 @@ public class Solution {
         }
         if (steps > 0) {
             return steps + 2;
-        } else if (hasApple.get(node)) {
+        } else if (Boolean.TRUE.equals(hasApple.get(node))) {
             return 2;
         } else {
             return 0;
