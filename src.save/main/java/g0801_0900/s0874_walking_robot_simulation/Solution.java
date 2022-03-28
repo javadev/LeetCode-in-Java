@@ -1,6 +1,6 @@
 package g0801_0900.s0874_walking_robot_simulation;
 
-// #Medium #Array #Simulation
+// #Medium #Array #Simulation #2022_03_28_Time_16_ms_(93.75%)_Space_50.9_MB_(75.89%)
 
 import java.util.HashMap;
 import java.util.Map;

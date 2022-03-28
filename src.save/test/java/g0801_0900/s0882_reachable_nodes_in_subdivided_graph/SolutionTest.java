@@ -7,27 +7,26 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void reachableNodesTle() {
+    void reachableNodes() {
         assertThat(
-                new Solution()
-                        .reachableNodesTle(new int[][] {{0, 1, 10}, {0, 2, 1}, {1, 2, 2}}, 6, 3),
+                new Solution().reachableNodes(new int[][] {{0, 1, 10}, {0, 2, 1}, {1, 2, 2}}, 6, 3),
                 equalTo(13));
     }
 
     @Test
-    void reachableNodesTle2() {
+    void reachableNodes2() {
         assertThat(
                 new Solution()
-                        .reachableNodesTle(
+                        .reachableNodes(
                                 new int[][] {{0, 1, 4}, {1, 2, 6}, {0, 2, 8}, {1, 3, 1}}, 10, 4),
                 equalTo(23));
     }
 
     @Test
-    void reachableNodesTle3() {
+    void reachableNodes3() {
         assertThat(
                 new Solution()
-                        .reachableNodesTle(
+                        .reachableNodes(
                                 new int[][] {{1, 2, 4}, {1, 4, 5}, {1, 3, 1}, {2, 3, 4}, {3, 4, 5}},
                                 17,
                                 5),
