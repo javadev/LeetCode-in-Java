@@ -8,7 +8,6 @@ public class Solution {
     public String largestNumber(int[] cost, int target) {
         int[][] dp = new int[10][5001];
         Arrays.fill(dp[0], -1);
-
         for (int i = 1; i <= cost.length; i++) {
             for (int j = 1; j <= target; j++) {
                 if (cost[i - 1] > j) {
@@ -24,7 +23,6 @@ public class Solution {
                     } else {
                         temp = Math.max(t, temp);
                     }
-
                     if (dp[i - 1][j] == -1) {
                         dp[i][j] = temp;
                     } else if (temp == -1) {
@@ -41,7 +39,6 @@ public class Solution {
         int i = 9;
         StringBuilder result = new StringBuilder();
         while (target > 0) {
-
             if ((target - cost[i - 1] >= 0 && dp[i][target - cost[i - 1]] + 1 == dp[i][target])
                     || (target - cost[i - 1] >= 0
                             && dp[i - 1][target - cost[i - 1]] + 1 == dp[i][target])) {
@@ -51,7 +48,6 @@ public class Solution {
                 i--;
             }
         }
-
         return result.toString();
     }
 }
