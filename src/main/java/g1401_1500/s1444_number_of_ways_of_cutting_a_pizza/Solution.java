@@ -37,27 +37,27 @@ public class Solution {
         return dfs(0, 0, m, n, k - 1, prefix, dp);
     }
 
-    private int dfs(int m, int n, int M, int N, int k, int[][] prefix, int[][][] dp) {
+    private int dfs(int m, int n, int temp1, int temp2, int k, int[][] prefix, int[][][] dp) {
         if (k == 0) {
-            return hasApple(prefix, m, n, M - 1, N - 1) ? 1 : 0;
+            return hasApple(prefix, m, n, temp1 - 1, temp2 - 1) ? 1 : 0;
         }
         if (dp[m][n][k] != -1) {
             return dp[m][n][k];
         }
 
         int local = 0;
-        for (int x = m; x < M - 1; ++x) {
+        for (int x = m; x < temp1 - 1; ++x) {
             local =
                     (local
-                                    + (hasApple(prefix, m, n, x, N - 1) ? 1 : 0)
-                                            * dfs(x + 1, n, M, N, k - 1, prefix, dp))
+                                    + (hasApple(prefix, m, n, x, temp2 - 1) ? 1 : 0)
+                                            * dfs(x + 1, n, temp1, temp2, k - 1, prefix, dp))
                             % K_MOD;
         }
-        for (int y = n; y < N - 1; ++y) {
+        for (int y = n; y < temp2 - 1; ++y) {
             local =
                     (local
-                                    + (hasApple(prefix, m, n, M - 1, y) ? 1 : 0)
-                                            * dfs(m, y + 1, M, N, k - 1, prefix, dp))
+                                    + (hasApple(prefix, m, n, temp1 - 1, y) ? 1 : 0)
+                                            * dfs(m, y + 1, temp1, temp2, k - 1, prefix, dp))
                             % K_MOD;
         }
 
