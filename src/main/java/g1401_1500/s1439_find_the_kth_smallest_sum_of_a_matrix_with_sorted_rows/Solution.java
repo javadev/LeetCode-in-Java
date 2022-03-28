@@ -4,7 +4,6 @@ package g1401_1500.s1439_find_the_kth_smallest_sum_of_a_matrix_with_sorted_rows;
 // #2022_03_28_Time_40_ms_(75.79%)_Space_54.2_MB_(53.31%)
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Objects;
 import java.util.TreeSet;
 
@@ -12,19 +11,16 @@ public class Solution {
     public int kthSmallest(int[][] mat, int k) {
         TreeSet<int[]> treeSet =
                 new TreeSet<>(
-                        new Comparator<int[]>() {
-                            @Override
-                            public int compare(int[] o1, int[] o2) {
-                                if (o1[0] != o2[0]) {
-                                    return o1[0] - o2[0];
-                                } else {
-                                    for (int i = 1; i < o1.length; i++) {
-                                        if (o1[i] != o2[i]) {
-                                            return o1[i] - o2[i];
-                                        }
+                        (o1, o2) -> {
+                            if (o1[0] != o2[0]) {
+                                return o1[0] - o2[0];
+                            } else {
+                                for (int i = 1; i < o1.length; i++) {
+                                    if (o1[i] != o2[i]) {
+                                        return o1[i] - o2[i];
                                     }
-                                    return 0;
                                 }
+                                return 0;
                             }
                         });
         int m = mat.length;

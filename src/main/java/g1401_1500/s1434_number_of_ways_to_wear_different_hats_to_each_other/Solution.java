@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Solution {
     public int numberWays(List<List<Integer>> hats) {
-        long Mod = 1000000007L;
+        long mod = 1000000007L;
 
         int size = hats.size();
         boolean[][] possible = new boolean[size][41];
@@ -26,7 +26,7 @@ public class Solution {
                         dp[j] += dp[j ^ (1 << k)];
                     }
                 }
-                dp[j] %= Mod;
+                dp[j] %= mod;
             }
         }
         return (int) dp[(1 << size) - 1];
