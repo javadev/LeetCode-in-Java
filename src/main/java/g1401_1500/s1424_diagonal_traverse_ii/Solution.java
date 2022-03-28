@@ -28,7 +28,6 @@ public class Solution {
             }
             pos++;
         } while (!queue.isEmpty() || pos < nums.size());
-
         return ans.stream().mapToInt(o -> o).toArray();
     }
 }
