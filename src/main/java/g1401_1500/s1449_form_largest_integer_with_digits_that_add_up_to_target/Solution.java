@@ -19,11 +19,19 @@ public class Solution {
                                     ? -1
                                     : 1 + dp[i - 1][j - cost[i - 1]];
                     int t = (dp[i][j - cost[i - 1]] == -1) ? -1 : 1 + dp[i][j - cost[i - 1]];
-                    temp = (t == -1) ? temp : (temp == -1) ? t : Math.max(t, temp);
-                    dp[i][j] =
-                            (dp[i - 1][j] == -1)
-                                    ? temp
-                                    : (temp == -1) ? dp[i - 1][j] : Math.max(temp, dp[i - 1][j]);
+                    if (t != -1 && temp == -1) {
+                        temp = t;
+                    } else {
+                        temp = Math.max(t, temp);
+                    }
+
+                    if (dp[i - 1][j] == -1) {
+                        dp[i][j] = temp;
+                    } else if (temp == -1) {
+                        dp[i][j] = dp[i - 1][j];
+                    } else {
+                        dp[i][j] = Math.max(temp, dp[i - 1][j]);
+                    }
                 }
             }
         }
@@ -34,11 +42,9 @@ public class Solution {
         StringBuilder result = new StringBuilder();
         while (target > 0) {
 
-            if (target - cost[i - 1] >= 0 && dp[i][target - cost[i - 1]] + 1 == dp[i][target]) {
-                result.append(i);
-                target -= cost[i - 1];
-            } else if (target - cost[i - 1] >= 0
-                    && dp[i - 1][target - cost[i - 1]] + 1 == dp[i][target]) {
+            if ((target - cost[i - 1] >= 0 && dp[i][target - cost[i - 1]] + 1 == dp[i][target])
+                    || (target - cost[i - 1] >= 0
+                            && dp[i - 1][target - cost[i - 1]] + 1 == dp[i][target])) {
                 result.append(i);
                 target -= cost[i - 1];
             } else {

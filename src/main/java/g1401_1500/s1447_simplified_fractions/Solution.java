@@ -10,7 +10,9 @@ public class Solution {
 
         List<String> result = new ArrayList<>();
 
-        if (n == 1) return result;
+        if (n == 1) {
+            return result;
+        }
         StringBuilder str = new StringBuilder();
         for (int denom = 2; denom <= n; denom++) {
             for (int num = 1; num < denom; num++) {
