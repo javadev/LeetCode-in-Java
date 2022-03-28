@@ -1,6 +1,7 @@
 package g0801_0900.s0886_possible_bipartition;
 
 // #Medium #Depth_First_Search #Breadth_First_Search #Graph #Union_Find
+// #Graph_Theory_I_Day_14_Graph_Theory #2022_03_28_Time_20_ms_(80.12%)_Space_75.6_MB_(32.57%)
 
 import java.util.ArrayList;
 import java.util.List;
