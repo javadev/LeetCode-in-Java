@@ -16,12 +16,10 @@ public class Solution {
                 maxQ.removeLast();
             }
             maxQ.offerLast(right);
-
             while (!minQ.isEmpty() && nums[right] < nums[minQ.peekLast()]) {
                 minQ.removeLast();
             }
             minQ.offerLast(right);
-
             while (nums[maxQ.peekFirst()] - nums[minQ.peekFirst()] > limit) {
                 if (maxQ.peekFirst() == left) {
                     maxQ.removeFirst();
