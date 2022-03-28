@@ -20,9 +20,7 @@ public class Solution {
             int tableNumber = Integer.parseInt(order.get(1));
             String dishName = order.get(2);
             dishSet.add(dishName);
-            if (!map.containsKey(tableNumber)) {
-                map.put(tableNumber, new HashMap<>());
-            }
+            map.putIfAbsent(tableNumber, new HashMap<>());
             Map<String, Integer> dishCountMap = map.get(tableNumber);
             if (!dishCountMap.containsKey(dishName)) {
                 dishCountMap.put(dishName, 1);
@@ -35,12 +33,12 @@ public class Solution {
         dishes.add(0, "Table");
         List<List<String>> result = new ArrayList<>();
         result.add(dishes);
-        for (int tableNumber : map.keySet()) {
+        for (Map.Entry<Integer, Map<String, Integer>> entry : map.entrySet()) {
             List<String> row = new ArrayList<>();
-            row.add("" + tableNumber);
+            row.add("" + entry.getKey());
             for (int i = 1; i < dishes.size(); i++) {
-                if (map.get(tableNumber).containsKey(dishes.get(i))) {
-                    row.add(Integer.toString(map.get(tableNumber).get(dishes.get(i))));
+                if (map.get(entry.getKey()).containsKey(dishes.get(i))) {
+                    row.add(Integer.toString(map.get(entry.getKey()).get(dishes.get(i))));
                 } else {
                     row.add("0");
                 }
