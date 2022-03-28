@@ -33,8 +33,11 @@ public class Solution {
             Set<Integer> visited) {
         int steps = 0;
         for (int child : graph.getOrDefault(node, Collections.emptyList())) {
-            if (visited.contains(child)) continue;
-            else visited.add(child);
+            if (visited.contains(child)) {
+                continue;
+            } else {
+                visited.add(child);
+            }
             steps += helper(graph, hasApple, child, visited);
         }
         if (steps > 0) {

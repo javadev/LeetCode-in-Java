@@ -10,12 +10,12 @@ public class Solution {
         if (pizza == null || pizza.length == 0) {
             return 0;
         }
-        int M = pizza.length;
-        int N = pizza[0].length();
-        int[][] prefix = new int[M + 1][N + 1];
+        int m = pizza.length;
+        int n = pizza[0].length();
+        int[][] prefix = new int[m + 1][n + 1];
 
-        for (int i = 0; i < M; ++i) {
-            for (int j = 0; j < N; ++j) {
+        for (int i = 0; i < m; ++i) {
+            for (int j = 0; j < n; ++j) {
                 prefix[i + 1][j + 1] =
                         prefix[i][j + 1]
                                 + prefix[i + 1][j]
@@ -24,17 +24,17 @@ public class Solution {
             }
         }
 
-        int[][][] dp = new int[M][N][k];
+        int[][][] dp = new int[m][n][k];
 
-        for (int i = 0; i < M; ++i) {
-            for (int j = 0; j < N; ++j) {
+        for (int i = 0; i < m; ++i) {
+            for (int j = 0; j < n; ++j) {
                 for (int s = 0; s < k; ++s) {
                     dp[i][j][s] = -1;
                 }
             }
         }
 
-        return dfs(0, 0, M, N, k - 1, prefix, dp);
+        return dfs(0, 0, m, n, k - 1, prefix, dp);
     }
 
     private int dfs(int m, int n, int M, int N, int k, int[][] prefix, int[][][] dp) {

@@ -10,7 +10,9 @@ public class Solution {
             int xor = arr[i];
             for (int k = i + 1; k < arr.length; k++) {
                 xor ^= arr[k];
-                if (xor == 0) count += k - i;
+                if (xor == 0) {
+                    count += k - i;
+                }
             }
         }
         return count;
