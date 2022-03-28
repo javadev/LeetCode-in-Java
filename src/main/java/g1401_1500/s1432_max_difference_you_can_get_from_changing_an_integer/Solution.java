@@ -1,79 +1,37 @@
 package g1401_1500.s1432_max_difference_you_can_get_from_changing_an_integer;
 
-// #Medium #Math #Greedy #2022_03_28_Time_2_ms_(65.28%)_Space_42.1_MB_(13.89%)
+// #Medium #Math #Greedy #2022_03_28_Time_1_ms_(97.22%)_Space_39.4_MB_(80.56%)
+
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class Solution {
     public int maxDiff(int num) {
-        int smallest = getSmallest(num);
-        int biggest = getBiggest(num);
-        return biggest - smallest;
-    }
-
-    private int getBiggest(int num) {
-        int firstDigit = Integer.parseInt(Integer.toString(num).substring(0, 1));
-        if (firstDigit == 9) {
-            String remainder = Integer.toString(num).substring(1);
-            int numberToChangeToNine = 0;
-            for (char c : remainder.toCharArray()) {
-                if (c != '9') {
-                    numberToChangeToNine = Integer.parseInt("" + c);
-                    break;
-                }
+        Deque<Integer> stack = new ArrayDeque<>();
+        int xMax = 9, yMax = 9, xMin = 0, yMin = 0, min = 0, max = 0;
+        boolean areDigitsUnique = true;
+        while (num != 0) {
+            if (!stack.isEmpty() && num % 10 != stack.peek()) {
+				areDigitsUnique = false;
+			}
+            stack.push(num % 10);
+            num /= 10;
+            if (stack.peek() != 9) {
+                xMax = stack.peek();
             }
-            StringBuilder sb = new StringBuilder();
-            sb.append('9');
-            for (char c : remainder.toCharArray()) {
-                if (Integer.parseInt(c + "") == numberToChangeToNine) {
-                    sb.append("9");
-                } else {
-                    sb.append(c);
-                }
+            if (stack.peek() > 1) {
+                xMin = stack.peek();
             }
-            return Integer.parseInt(sb.toString());
-        } else {
-            StringBuilder sb = new StringBuilder();
-            for (char c : Integer.toString(num).toCharArray()) {
-                if (Integer.parseInt("" + c) == firstDigit) {
-                    sb.append("9");
-                } else {
-                    sb.append(c);
-                }
-            }
-            return Integer.parseInt(sb.toString());
         }
-    }
-
-    private int getSmallest(int num) {
-        int firstDigit = Integer.parseInt(Integer.toString(num).substring(0, 1));
-        if (firstDigit == 1) {
-            String remainder = Integer.toString(num).substring(1);
-            int numberToChangeToZero = 0;
-            for (char c : remainder.toCharArray()) {
-                if (c != '0' && c != '1') {
-                    numberToChangeToZero = Integer.parseInt("" + c);
-                    break;
-                }
-            }
-            StringBuilder sb = new StringBuilder();
-            sb.append('1');
-            for (char c : remainder.toCharArray()) {
-                if (Integer.parseInt(c + "") == numberToChangeToZero) {
-                    sb.append("0");
-                } else {
-                    sb.append(c);
-                }
-            }
-            return Integer.parseInt(sb.toString());
-        } else {
-            StringBuilder sb = new StringBuilder();
-            for (char c : Integer.toString(num).toCharArray()) {
-                if (Integer.parseInt("" + c) == firstDigit) {
-                    sb.append("1");
-                } else {
-                    sb.append(c);
-                }
-            }
-            return Integer.parseInt(sb.toString());
+        if (areDigitsUnique || stack.peek() == xMin) {
+            // Handles no leading zeros/non zero constraints.
+            yMin = 1;
         }
+        while (!stack.isEmpty()) {
+            min = min * 10 + (stack.peek() == xMin ? yMin : stack.peek());
+            max = max * 10 + (stack.peek() == xMax ? yMax : stack.peek());
+            stack.pop();
+        }
+        return max - min;
     }
 }
