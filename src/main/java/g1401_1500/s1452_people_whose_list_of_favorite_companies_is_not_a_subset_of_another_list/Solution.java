@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+@SuppressWarnings("java:S1119")
 public class Solution {
     public List<Integer> peopleIndexes(List<List<String>> favoriteCompanies) {
         int n = favoriteCompanies.size();
@@ -15,7 +16,6 @@ public class Solution {
         for (List<String> list : favoriteCompanies) {
             in.add(new HashSet<>(list));
         }
-
         outer:
         for (int i = 0; i < n; i++) {
             for (int j : res) {
@@ -23,7 +23,6 @@ public class Solution {
                     continue outer;
                 }
             }
-
             for (int j = i + 1; j < n; j++) {
                 if (isSubset(in.get(i), in.get(j))) {
                     continue outer;
@@ -31,7 +30,6 @@ public class Solution {
             }
             res.add(i);
         }
-
         return res;
     }
 
