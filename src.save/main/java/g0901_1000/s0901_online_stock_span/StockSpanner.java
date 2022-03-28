@@ -1,6 +1,7 @@
 package g0901_1000.s0901_online_stock_span;
 
 // #Medium #Stack #Design #Monotonic_Stack #Data_Stream
+// #2022_03_28_Time_47_ms_(76.17%)_Space_88.8_MB_(5.16%)
 
 import java.util.Deque;
 import java.util.HashMap;
@@ -33,3 +34,9 @@ public class StockSpanner {
         return (index - stocks.peek());
     }
 }
+
+/*
+ * Your StockSpanner object will be instantiated and called as such:
+ * StockSpanner obj = new StockSpanner();
+ * int param_1 = obj.next(price);
+ */

@@ -1,6 +1,7 @@
 package g0901_1000.s0911_online_election;
 
 // #Medium #Array #Hash_Table #Binary_Search #Design
+// #2022_03_28_Time_63_ms_(98.81%)_Space_50.5_MB_(99.53%)
 
 public class TopVotedCandidate {
     private final int[] times;
@@ -45,3 +46,9 @@ public class TopVotedCandidate {
         return winnersAtTimeT[lo];
     }
 }
+
+/*
+ * Your TopVotedCandidate object will be instantiated and called as such:
+ * TopVotedCandidate obj = new TopVotedCandidate(persons, times);
+ * int param_1 = obj.q(t);
+ */
