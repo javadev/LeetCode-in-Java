@@ -20,7 +20,7 @@ public class Solution {
         StringBuilder sb = new StringBuilder();
         boolean first = true;
         for (Map.Entry<Integer, List<String>> len : map.entrySet()) {
-            List<String> strings = map.get(len.getKey());
+            List<String> strings = len.getValue();
             for (String str : strings) {
                 if (first) {
                     str = Character.toUpperCase(str.charAt(0)) + str.substring(1);
