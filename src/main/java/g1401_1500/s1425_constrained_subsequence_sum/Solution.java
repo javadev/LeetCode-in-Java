@@ -14,14 +14,14 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             int take = nums[i];
 
-            while (mono.size() > 0 && i - mono.getFirst()[0] > k) {
+            while (!mono.isEmpty() && i - mono.getFirst()[0] > k) {
                 mono.removeFirst();
             }
-            if (mono.size() > 0) {
+            if (!mono.isEmpty()) {
                 int mx = Math.max(0, mono.getFirst()[1]);
                 take += mx;
             }
-            while (mono.size() > 0 && take > mono.getLast()[1]) {
+            while (!mono.isEmpty() && take > mono.getLast()[1]) {
                 mono.removeLast();
             }
 

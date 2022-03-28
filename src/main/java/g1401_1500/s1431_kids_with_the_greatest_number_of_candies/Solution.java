@@ -12,8 +12,8 @@ public class Solution {
             max = Math.max(max, i);
         }
         List<Boolean> result = new ArrayList<>();
-        for (int i = 0; i < candies.length; i++) {
-            if (candies[i] + extraCandies >= max) {
+        for (int candy : candies) {
+            if (candy + extraCandies >= max) {
                 result.add(true);
             } else {
                 result.add(false);
