@@ -8,12 +8,17 @@ import java.util.Deque;
 public class Solution {
     public int maxDiff(int num) {
         Deque<Integer> stack = new ArrayDeque<>();
-        int xMax = 9, yMax = 9, xMin = 0, yMin = 0, min = 0, max = 0;
+        int xMax = 9;
+        int yMax = 9;
+        int xMin = 0;
+        int yMin = 0;
+        int min = 0;
+        int max = 0;
         boolean areDigitsUnique = true;
         while (num != 0) {
             if (!stack.isEmpty() && num % 10 != stack.peek()) {
-				areDigitsUnique = false;
-			}
+                areDigitsUnique = false;
+            }
             stack.push(num % 10);
             num /= 10;
             if (stack.peek() != 9) {
