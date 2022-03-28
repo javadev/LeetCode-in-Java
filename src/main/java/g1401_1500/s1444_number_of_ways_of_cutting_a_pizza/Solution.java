@@ -3,6 +3,7 @@ package g1401_1500.s1444_number_of_ways_of_cutting_a_pizza;
 // #Hard #Array #Dynamic_Programming #Matrix #Memoization
 // #2022_03_28_Time_14_ms_(46.03%)_Space_41.8_MB_(65.08%)
 
+@SuppressWarnings("java:S2234")
 public class Solution {
     private static final int K_MOD = (int) (1e9 + 7);
 
@@ -23,9 +24,7 @@ public class Solution {
                                 - prefix[i][j];
             }
         }
-
         int[][][] dp = new int[m][n][k];
-
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
                 for (int s = 0; s < k; ++s) {
@@ -33,7 +32,6 @@ public class Solution {
                 }
             }
         }
-
         return dfs(0, 0, m, n, k - 1, prefix, dp);
     }
 
@@ -44,7 +42,6 @@ public class Solution {
         if (dp[m][n][k] != -1) {
             return dp[m][n][k];
         }
-
         int local = 0;
         for (int x = m; x < temp1 - 1; ++x) {
             local =
@@ -60,7 +57,6 @@ public class Solution {
                                             * dfs(m, y + 1, temp1, temp2, k - 1, prefix, dp))
                             % K_MOD;
         }
-
         dp[m][n][k] = local;
         return dp[m][n][k];
     }
