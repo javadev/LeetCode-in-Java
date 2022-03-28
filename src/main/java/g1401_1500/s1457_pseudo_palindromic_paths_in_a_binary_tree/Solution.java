@@ -17,7 +17,8 @@ public class Solution {
     }
 
     private int isPalidrome() {
-        int c = 0, s = 0;
+        int c = 0;
+        int s = 0;
         for (int i = 0; i < 10; i++) {
             s += arr[i];
             if (arr[i] % 2 != 0) {

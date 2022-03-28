@@ -18,7 +18,16 @@ public class Solution {
 
         @Override
         public int compareTo(Angle o) {
-            return (a > o.a) ? 1 : (a < o.a) ? -1 : enter == o.enter ? 0 : enter ? -1 : 1;
+            if (a > o.a) {
+                return 1;
+            } else if (a < o.a) {
+                return -1;
+            } else if (enter == o.enter) {
+                return 0;
+            } else if (enter) {
+                return -1;
+            }
+            return 1;
         }
     }
 
@@ -28,7 +37,10 @@ public class Solution {
         for (int j = 0; j < n; j++) {
             if (i != j && dis[i][j] <= 2 * r) {
                 double b = Math.acos(dis[i][j] / (2 * r));
-                double a = Math.atan2(points[j][1] - points[i][1], points[j][0] - points[i][0]);
+                double a =
+                        Math.atan2(
+                                points[j][1] - points[i][1] * 1.0,
+                                points[j][0] * 1.0 - points[i][0]);
                 double alpha = a - b;
                 double beta = a + b;
                 angles.add(new Angle(alpha, true));
@@ -64,8 +76,9 @@ public class Solution {
                     dis[i][j] =
                             dis[j][i] =
                                     Math.sqrt(
-                                            Math.pow(points[i][0] - points[j][0], 2)
-                                                    + Math.pow(points[i][1] - points[j][1], 2));
+                                            Math.pow(points[i][0] * 1.0 - points[j][0], 2)
+                                                    + Math.pow(
+                                                            points[i][1] * 1.0 - points[j][1], 2));
                 }
             }
 

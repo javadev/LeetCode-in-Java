@@ -12,19 +12,23 @@ public class Solution {
         int n = favoriteCompanies.size();
         List<Integer> res = new ArrayList<>();
         List<Set<String>> in = new ArrayList<>();
-        for (List<String> list : favoriteCompanies) in.add(new HashSet<>(list));
+        for (List<String> list : favoriteCompanies) {
+            in.add(new HashSet<>(list));
+        }
 
         outer:
         for (int i = 0; i < n; i++) {
-            for (int j : res)
+            for (int j : res) {
                 if (isSubset(in.get(i), in.get(j))) {
                     continue outer;
                 }
+            }
 
-            for (int j = i + 1; j < n; j++)
+            for (int j = i + 1; j < n; j++) {
                 if (isSubset(in.get(i), in.get(j))) {
                     continue outer;
                 }
+            }
             res.add(i);
         }
 
