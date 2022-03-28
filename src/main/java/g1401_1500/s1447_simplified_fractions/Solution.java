@@ -5,11 +5,10 @@ package g1401_1500.s1447_simplified_fractions;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S2234")
 public class Solution {
     public List<String> simplifiedFractions(int n) {
-
         List<String> result = new ArrayList<>();
-
         if (n == 1) {
             return result;
         }
@@ -26,14 +25,12 @@ public class Solution {
     }
 
     private int checkGCD(int a, int b) {
-
         if (a < b) {
             return checkGCD(b, a);
         }
         if (a == b || a % b == 0 || b == 1) {
             return b;
         }
-
         return checkGCD(a % b, b);
     }
 }
