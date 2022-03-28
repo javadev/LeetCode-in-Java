@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+@SuppressWarnings("java:S1210")
 public class Solution {
     private static class Angle implements Comparable<Angle> {
         double a;
@@ -33,7 +34,6 @@ public class Solution {
 
     private int getPointsInside(int i, double r, int n, int[][] points, double[][] dis) {
         List<Angle> angles = new ArrayList<>(2 * n);
-
         for (int j = 0; j < n; j++) {
             if (i != j && dis[i][j] <= 2 * r) {
                 double b = Math.acos(dis[i][j] / (2 * r));
@@ -47,9 +47,7 @@ public class Solution {
                 angles.add(new Angle(beta, false));
             }
         }
-
         Collections.sort(angles);
-
         int count = 1;
         int res = 1;
         for (Angle a : angles) {
@@ -58,17 +56,14 @@ public class Solution {
             } else {
                 count--;
             }
-
             if (count > res) {
                 res = count;
             }
         }
-
         return res;
     }
 
     public int numPoints(int[][] points, int r) {
-
         int n = points.length;
         double[][] dis = new double[n][n];
         for (int i = 0; i < n - 1; i++) {
@@ -80,12 +75,10 @@ public class Solution {
                                                 + Math.pow(points[i][1] * 1.0 - points[j][1], 2));
             }
         }
-
         int ans = 0;
         for (int i = 0; i < n; i++) {
             ans = Math.max(ans, getPointsInside(i, r, n, points, dis));
         }
-
         return ans;
     }
 }
