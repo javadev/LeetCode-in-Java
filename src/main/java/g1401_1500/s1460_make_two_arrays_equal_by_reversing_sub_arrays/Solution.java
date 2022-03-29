@@ -19,7 +19,7 @@ public class Solution {
             }
         }
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (map.get(entry.getKey()) != 0) {
+            if (entry.getValue() != 0) {
                 return false;
             }
         }
