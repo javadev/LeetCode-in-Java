@@ -1,6 +1,7 @@
 package g0901_1000.s0920_number_of_music_playlists;
 
 // #Hard #Dynamic_Programming #Math #Combinatorics
+// #2022_03_29_Time_2_ms_(96.55%)_Space_43.2_MB_(25.12%)
 
 import java.util.Arrays;
 
