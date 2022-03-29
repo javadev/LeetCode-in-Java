@@ -18,8 +18,8 @@ public class Solution {
                 map.put(num, map.get(num) - 1);
             }
         }
-        for (int key : map.keySet()) {
-            if (map.get(key) != 0) {
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (map.get(entry.getKey()) != 0) {
                 return false;
             }
         }
