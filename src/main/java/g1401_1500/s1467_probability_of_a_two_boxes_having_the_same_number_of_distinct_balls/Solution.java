@@ -7,7 +7,9 @@ public class Solution {
     public double getProbability(int[] balls) {
         int m = balls.length;
         int s = 0;
-        for (int b : balls) s += b;
+        for (int b : balls) {
+            s += b;
+        }
         double[][] c = new double[s + 1][s / 2 + 1];
         c[0][0] = 1;
         for (int i = 1; i < s + 1; i++) {

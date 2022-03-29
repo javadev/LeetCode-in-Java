@@ -14,14 +14,13 @@ public class Solution {
             maxVertical = Math.max(maxVertical, diff);
         }
         maxVertical = Math.max(maxVertical, (long) w - verticalCuts[verticalCuts.length - 1]);
-        long max_horizontal = 0;
-        max_horizontal = Math.max(max_horizontal, horizontalCuts[0]);
+        long maxHorizontal = Math.max(0L, horizontalCuts[0]);
         for (int i = 1; i < horizontalCuts.length; i++) {
             int diff = (horizontalCuts[i] - horizontalCuts[i - 1]);
-            max_horizontal = Math.max(max_horizontal, diff);
+            maxHorizontal = Math.max(maxHorizontal, diff);
         }
-        max_horizontal =
-                Math.max(max_horizontal, (long) h - horizontalCuts[horizontalCuts.length - 1]);
-        return (int) (maxVertical % 1000000007 * max_horizontal % 1000000007) % 1000000007;
+        maxHorizontal =
+                Math.max(maxHorizontal, (long) h - horizontalCuts[horizontalCuts.length - 1]);
+        return (int) (maxVertical % 1000000007 * maxHorizontal % 1000000007) % 1000000007;
     }
 }
