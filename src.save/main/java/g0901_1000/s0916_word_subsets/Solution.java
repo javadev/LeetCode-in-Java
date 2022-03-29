@@ -1,6 +1,6 @@
 package g0901_1000.s0916_word_subsets;
 
-// #Medium #Array #String #Hash_Table
+// #Medium #Array #String #Hash_Table #2022_03_29_Time_30_ms_(57.30%)_Space_88_MB_(54.80%)
 
 import java.util.ArrayList;
 import java.util.List;
