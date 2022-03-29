@@ -8,7 +8,6 @@ public class Solution {
         int n = grid[0].length;
         int[][][] dp = new int[n][n][m];
         dp[0][n - 1][0] = grid[0][0] + grid[0][n - 1];
-
         for (int k = 1; k < m; k++) {
             for (int i = 0; i <= Math.min(n - 1, k); i++) {
                 for (int j = n - 1; j >= Math.max(0, n - 1 - k); j--) {
@@ -16,7 +15,6 @@ public class Solution {
                 }
             }
         }
-
         int result = 0;
         for (int i = 0; i <= Math.min(n - 1, m); i++) {
             for (int j = n - 1; j >= Math.max(0, n - 1 - m); j--) {
