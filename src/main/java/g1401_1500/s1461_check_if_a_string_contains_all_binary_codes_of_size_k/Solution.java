@@ -11,9 +11,7 @@ public class Solution {
         int total = (int) Math.pow(2, k);
         int start = 0;
         int end = start + k;
-
         Set<String> st = new HashSet<>();
-
         while (end <= s.length()) {
             String sbStr = s.substring(start, end);
             st.add(sbStr);
