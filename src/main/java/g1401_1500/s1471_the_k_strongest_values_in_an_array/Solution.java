@@ -9,7 +9,8 @@ public class Solution {
         Arrays.sort(arr);
         int[] array = new int[k];
         int median = arr[(arr.length - 1) / 2];
-        int start = 0, end = arr.length - 1;
+        int start = 0;
+        int end = arr.length - 1;
         for (int i = 0; i < k; i++) {
             if (Math.abs(arr[end] - median) >= Math.abs(arr[start] - median)) {
                 array[i] = arr[end];

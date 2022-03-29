@@ -8,7 +8,7 @@ public class Solution {
     private int nColors;
     private int[][] cost;
 
-    public int minCost(int[] houses, int[][] cost, int nHouses, int nColors, int tGroups) {
+    public int minCost(int[] houses, int[][] cost, int nColors, int tGroups) {
         this.cost = cost;
         this.houses = houses;
         this.memo = new int[houses.length][nColors + 1][tGroups + 1];
