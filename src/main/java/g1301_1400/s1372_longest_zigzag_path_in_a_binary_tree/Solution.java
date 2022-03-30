@@ -5,6 +5,21 @@ package g1301_1400.s1372_longest_zigzag_path_in_a_binary_tree;
 
 import com_github_leetcode.TreeNode;
 
+/*
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 public class Solution {
     private int maxLength = 0;
 
