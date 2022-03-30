@@ -31,7 +31,9 @@ public class WordDictionary {
     // dummy value
     private Node root = new Node('a');
 
-    public WordDictionary() {}
+    public WordDictionary() {
+        // empty constructor
+    }
 
     public void addWord(String word) {
         Node node = root;
