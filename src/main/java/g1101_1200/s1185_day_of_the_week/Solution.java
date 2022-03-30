@@ -6,8 +6,11 @@ public class Solution {
     public String dayOfTheWeek(int day, int month, int year) {
         int counter = 0;
         for (int i = 1971; i < year; i++) {
-            if (isLeapYear(i)) counter += 366;
-            else counter += 365;
+            if (isLeapYear(i)) {
+                counter += 366;
+            } else {
+                counter += 365;
+            }
         }
         for (int i = 1; i < month; i++) {
             counter += dayOfMonth(i);
