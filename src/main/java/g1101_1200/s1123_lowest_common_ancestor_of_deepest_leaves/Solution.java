@@ -5,6 +5,21 @@ package g1101_1200.s1123_lowest_common_ancestor_of_deepest_leaves;
 
 import com_github_leetcode.TreeNode;
 
+/*
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 public class Solution {
     public TreeNode lcaDeepestLeaves(TreeNode root) {
         if (root == null) {

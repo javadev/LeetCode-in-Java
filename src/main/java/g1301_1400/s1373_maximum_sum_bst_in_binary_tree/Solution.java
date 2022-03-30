@@ -5,6 +5,21 @@ package g1301_1400.s1373_maximum_sum_bst_in_binary_tree;
 
 import com_github_leetcode.TreeNode;
 
+/*
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 @SuppressWarnings("java:S1700")
 public class Solution {
     public int maxSumBST(TreeNode root) {
