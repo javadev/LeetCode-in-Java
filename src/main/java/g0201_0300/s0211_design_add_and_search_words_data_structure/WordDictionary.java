@@ -37,7 +37,9 @@ public class WordDictionary {
         Node node = root;
         for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
-            if (!node.isChild(ch)) node.addChild(ch);
+            if (!node.isChild(ch)) {
+                node.addChild(ch);
+            }
             node = node.getChild(ch);
         }
         node.isEnd = true;
