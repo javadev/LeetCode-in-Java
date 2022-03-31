@@ -1,6 +1,6 @@
 package g0901_1000.s0999_available_captures_for_rook;
 
-// #Easy #Array #Matrix #Simulation
+// #Easy #Array #Matrix #Simulation #2022_03_31_Time_0_ms_(100.00%)_Space_41.8_MB_(28.74%)
 
 @SuppressWarnings("java:S135")
 public class Solution {

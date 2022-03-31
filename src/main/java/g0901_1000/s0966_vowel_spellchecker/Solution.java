@@ -1,6 +1,6 @@
 package g0901_1000.s0966_vowel_spellchecker;
 
-// #Medium #Array #String #Hash_Table
+// #Medium #Array #String #Hash_Table #2022_03_31_Time_17_ms_(98.95%)_Space_46.7_MB_(91.62%)
 
 import java.util.HashMap;
 import java.util.HashSet;
