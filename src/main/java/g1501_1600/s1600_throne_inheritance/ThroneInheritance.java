@@ -8,6 +8,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class ThroneInheritance {
     private String king;
@@ -38,10 +40,10 @@ public class ThroneInheritance {
     }
 
     public void dfs(
-            HashMap<String, LinkedHashSet<String>> graph,
+            Map<String, LinkedHashSet<String>> graph,
             String src,
             List<String> l,
-            HashSet<String> visited) {
+            Set<String> visited) {
         visited.add(src);
         if (!isDead.contains(src)) {
             l.add(src);
