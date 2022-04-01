@@ -22,7 +22,13 @@ Given a string `board`, representing the row of balls on the board, and a string
 
 **Output:** -1
 
-**Explanation:** It is impossible to clear all the balls. The best you can do is: - Insert 'R' so the board becomes WRRRBBW. WRRRBBW -> WBBW. - Insert 'B' so the board becomes WBBBW. WBBBW -> WW. There are still balls remaining on the board, and you are out of balls to insert.
+**Explanation:** It is impossible to clear all the balls. The best you can do is:
+
+- Insert 'R' so the board becomes WRRRBBW. WRRRBBW -> WBBW.
+
+- Insert 'B' so the board becomes WBBBW. WBBBW -> WW.
+
+There are still balls remaining on the board, and you are out of balls to insert.
 
 **Example 2:**
 
@@ -30,7 +36,13 @@ Given a string `board`, representing the row of balls on the board, and a string
 
 **Output:** 2
 
-**Explanation:** To make the board empty: - Insert 'R' so the board becomes WWRRRBBWW. WWRRRBBWW -> WWBBWW. - Insert 'B' so the board becomes WWBBBWW. WWBBBWW -> WWWW -> empty. 2 balls from your hand were needed to clear the board.
+**Explanation:** To make the board empty:
+
+- Insert 'R' so the board becomes WWRRRBBWW. WWRRRBBWW -> WWBBWW.
+
+- Insert 'B' so the board becomes WWBBBWW. WWBBBWW -> WWWW -> empty.
+
+2 balls from your hand were needed to clear the board.
 
 **Example 3:**
 
@@ -38,7 +50,13 @@ Given a string `board`, representing the row of balls on the board, and a string
 
 **Output:** 2
 
-**Explanation:** To make the board empty: - Insert 'G' so the board becomes GG. - Insert 'G' so the board becomes GGG. GGG -> empty. 2 balls from your hand were needed to clear the board.
+**Explanation:** To make the board empty:
+
+- Insert 'G' so the board becomes GG.
+
+- Insert 'G' so the board becomes GGG. GGG -> empty.
+
+2 balls from your hand were needed to clear the board.
 
 **Constraints:**
 
