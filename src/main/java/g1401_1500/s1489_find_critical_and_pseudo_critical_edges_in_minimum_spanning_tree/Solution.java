@@ -43,7 +43,7 @@ public class Solution {
             if (!mstSet[ind]) {
                 Set<Integer> cur = new HashSet<>();
                 boolean p = path(f, t, w, -1, mst, g, cur);
-                if (p && cur.size() > 0) {
+                if (p && !cur.isEmpty()) {
                     pce.addAll(cur);
                     pce.add(ind);
                 }
@@ -106,7 +106,10 @@ public class Solution {
         }
 
         public int find(int i) {
-            return (i == parent[i]) ? i : (parent[i] = find(parent[i]));
+            if (i == parent[i]) {
+                return i;
+            }
+            return parent[i] = find(parent[i]);
         }
 
         public boolean union(int u, int v) {
