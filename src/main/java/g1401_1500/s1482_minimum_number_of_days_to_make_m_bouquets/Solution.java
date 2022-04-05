@@ -8,7 +8,8 @@ public class Solution {
         if (m * k > n) {
             return -1;
         }
-        int left = 1, right = 1;
+        int left = 1;
+        int right = 1;
         for (int day : bloomDay) {
             right = Math.max(right, day);
         }
@@ -29,8 +30,8 @@ public class Solution {
     private boolean judge(int[] bloomDay, int m, int k, int guess) {
         int bouquets = 0;
         int cnt = 0;
-        for (int i = 0; i < bloomDay.length; i++) {
-            if (bloomDay[i] <= guess) {
+        for (int j : bloomDay) {
+            if (j <= guess) {
                 cnt++;
                 if (cnt == k) {
                     cnt = 0;

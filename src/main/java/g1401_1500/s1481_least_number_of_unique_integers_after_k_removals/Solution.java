@@ -12,7 +12,8 @@ public class Solution {
         for (int a : arr) {
             count.put(a, 1 + count.getOrDefault(a, 0));
         }
-        int remaining = count.size(), occur = 1;
+        int remaining = count.size();
+        int occur = 1;
         int[] occurrenceCount = new int[arr.length + 1];
 
         for (int v : count.values()) {
