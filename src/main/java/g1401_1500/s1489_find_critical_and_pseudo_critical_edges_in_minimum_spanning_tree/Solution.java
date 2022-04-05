@@ -10,6 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public List<List<Integer>> findCriticalAndPseudoCriticalEdges(int n, int[][] edges) {
         // {w, ind}
