@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-@SuppressWarnings("unchecked")
+@SuppressWarnings({"unchecked", "java:S106"})
 public class Solution {
     public List<List<Integer>> findCriticalAndPseudoCriticalEdges(int n, int[][] edges) {
         // {w, ind}
@@ -67,18 +67,17 @@ public class Solution {
         return ans;
     }
 
-    boolean path(int f, int t, int w, int p, List<Integer>[] mst, int[][][] g, Set<Integer> ind) {
+    private boolean path(
+            int f, int t, int w, int p, List<Integer>[] mst, int[][][] g, Set<Integer> ind) {
         if (f == t) {
             return true;
         }
         for (int nbr : mst[f]) {
-            if (p != nbr) {
-                if (path(nbr, t, w, f, mst, g, ind)) {
-                    if (g[f][nbr][0] == w) {
-                        ind.add(g[f][nbr][1]);
-                    }
-                    return true;
+            if (p != nbr && path(nbr, t, w, f, mst, g, ind)) {
+                if (g[f][nbr][0] == w) {
+                    ind.add(g[f][nbr][1]);
                 }
+                return true;
             }
         }
         return false;
@@ -110,7 +109,8 @@ public class Solution {
             if (i == parent[i]) {
                 return i;
             }
-            return parent[i] = find(parent[i]);
+            parent[i] = find(parent[i]);
+            return parent[i];
         }
 
         public boolean union(int u, int v) {
