@@ -18,8 +18,8 @@ public class TreeAncestor {
 
         steps.add(1);
         stepMap.put(1, parent);
-        int STEP_BASE = 10;
-        int step = STEP_BASE;
+        int stepBase = 10;
+        int step = stepBase;
 
         while (step * 2 < n) {
             int[] stepArr = new int[n];
@@ -27,7 +27,7 @@ public class TreeAncestor {
 
             for (int i = 0; i < n; i++) {
                 int cur = i;
-                for (int repeat = 0; repeat < STEP_BASE && cur != -1; repeat++) {
+                for (int repeat = 0; repeat < stepBase && cur != -1; repeat++) {
                     cur = lastStepArr[cur];
                 }
                 stepArr[i] = cur;
@@ -35,7 +35,7 @@ public class TreeAncestor {
 
             steps.add(step);
             stepMap.put(step, stepArr);
-            step *= STEP_BASE;
+            step *= stepBase;
         }
     }
 
