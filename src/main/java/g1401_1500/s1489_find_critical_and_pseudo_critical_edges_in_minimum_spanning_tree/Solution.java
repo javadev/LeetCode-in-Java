@@ -12,7 +12,7 @@ import java.util.Set;
 
 public class Solution {
     public List<List<Integer>> findCriticalAndPseudoCriticalEdges(int n, int[][] edges) {
-        // {w,ind}
+        // {w, ind}
         int[][][] g = new int[n][n][2];
         for (int i = 0; i < edges.length; i++) {
             int[] e = edges[i];
@@ -36,7 +36,8 @@ public class Solution {
         List<Integer> ce = new LinkedList<>();
         // pseudo critical edges
         for (int[] edge : edges) {
-            int f = edge[0], t = edge[1];
+            int f = edge[0];
+            int t = edge[1];
             int w = edge[2];
             int ind = g[f][t][1];
             if (!mstSet[ind]) {
@@ -53,8 +54,8 @@ public class Solution {
         }
         // critical edges
         for (int[] edge : edges) {
-            int f = edge[0], t = edge[1];
-            int w = edge[2];
+            int f = edge[0];
+            int t = edge[1];
             int ind = g[f][t][1];
             if (mstSet[ind] && !pce.contains(ind)) {
                 ce.add(ind);
@@ -109,7 +110,8 @@ public class Solution {
         }
 
         public boolean union(int u, int v) {
-            int pu = find(u), pv = find(v);
+            int pu = find(u);
+            int pv = find(v);
             if (pu == pv) {
                 return false;
             }
