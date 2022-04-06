@@ -7,7 +7,8 @@ import java.util.Set;
 
 public class Solution {
     public int maxUniqueSplit(String s) {
-        int lo = 1, hi = s.length();
+        int lo = 1;
+        int hi = s.length();
         // binary search
         while (lo < hi) {
             int mid = (lo + hi + 1) >> 1;
