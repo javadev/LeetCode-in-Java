@@ -15,16 +15,13 @@ public class TreeAncestor {
     public TreeAncestor(int n, int[] parent) {
         steps = new ArrayList<>();
         stepMap = new HashMap<>();
-
         steps.add(1);
         stepMap.put(1, parent);
         int stepBase = 10;
         int step = stepBase;
-
         while (step * 2 < n) {
             int[] stepArr = new int[n];
             int[] lastStepArr = stepMap.get(steps.get(steps.size() - 1));
-
             for (int i = 0; i < n; i++) {
                 int cur = i;
                 for (int repeat = 0; repeat < stepBase && cur != -1; repeat++) {
@@ -32,7 +29,6 @@ public class TreeAncestor {
                 }
                 stepArr[i] = cur;
             }
-
             steps.add(step);
             stepMap.put(step, stepArr);
             step *= stepBase;
@@ -50,7 +46,6 @@ public class TreeAncestor {
             }
             index--;
         }
-
         return node;
     }
 }
