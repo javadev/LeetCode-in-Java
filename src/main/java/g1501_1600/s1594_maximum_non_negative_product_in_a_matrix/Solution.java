@@ -41,10 +41,10 @@ public class Solution {
         // DP
         for (int i = 1; i < rows; i++) {
             for (int j = 1; j < cols; j++) {
-                long up1 = dp[i - 1][j].max * (long) grid[i][j];
-                long up2 = dp[i - 1][j].min * (long) grid[i][j];
-                long left1 = dp[i][j - 1].max * (long) grid[i][j];
-                long left2 = dp[i][j - 1].min * (long) grid[i][j];
+                long up1 = dp[i - 1][j].max * grid[i][j];
+                long up2 = dp[i - 1][j].min * grid[i][j];
+                long left1 = dp[i][j - 1].max * grid[i][j];
+                long left2 = dp[i][j - 1].min * grid[i][j];
                 // max(up1, up2, left1, left2)
                 dp[i][j].max = Math.max(up1, Math.max(up2, Math.max(left1, left2)));
                 // min(up1, up2, left1, left2)
