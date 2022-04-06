@@ -1,11 +1,10 @@
 package com_github_leetcode;
 
-import org.junit.jupiter.api.Test;
-
-import java.util.Collections;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
+import java.util.Collections;
+import org.junit.jupiter.api.Test;
 
 class NodeTest {
     @Test
@@ -31,7 +30,11 @@ class NodeTest {
 
     @Test
     void constructor4() {
-        Node node = new Node(1, Collections.singletonList(new Node(2, Collections.singletonList(new Node(3)))));
+        Node node =
+                new Node(
+                        1,
+                        Collections.singletonList(
+                                new Node(2, Collections.singletonList(new Node(3)))));
         assertThat(node.val, equalTo(1));
         assertThat(node.toString(), equalTo("[[3]]"));
     }
