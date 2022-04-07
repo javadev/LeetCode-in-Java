@@ -6,6 +6,7 @@ package g1501_1600.s1595_minimum_cost_to_connect_two_groups_of_points;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("java:S6213")
 public class Solution {
     public int connectTwoGroups(List<List<Integer>> cost) {
         // size of set 1
