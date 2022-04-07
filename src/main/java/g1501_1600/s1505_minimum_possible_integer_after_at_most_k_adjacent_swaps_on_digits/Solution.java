@@ -32,10 +32,8 @@ public class Solution {
                     curIndex++;
                     reduceMove[digit]++;
                     for (int j = 0; j <= 9; j++) {
-                        if (j != digit) {
-                            if (digitPos[j] > digitPos[digit]) {
-                                reduceMove[j]++;
-                            }
+                        if (j != digit && digitPos[j] > digitPos[digit]) {
+                            reduceMove[j]++;
                         }
                     }
                     boolean find = false;
