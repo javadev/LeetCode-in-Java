@@ -10,19 +10,16 @@ public class Solution {
             if (i < left.length && left[i] > highestLeft) {
                 highestLeft = left[i];
             }
-
             if (i < right.length && right[i] < smallestRight) {
                 smallestRight = right[i];
             }
         }
-
         if (left.length != 0 && right.length == 0) {
             return highestLeft;
         }
         if (right.length != 0 && left.length == 0) {
             return Math.abs(smallestRight - n);
         }
-
         return Math.max(highestLeft, Math.abs(smallestRight - n));
     }
 }
