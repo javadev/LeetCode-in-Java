@@ -61,7 +61,6 @@ public class Solution {
                 sb.append(chars[i]);
             }
         }
-
         return sb.toString();
     }
 }
