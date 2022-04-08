@@ -1,63 +1,36 @@
 package g1501_1600.s1507_reformat_date;
 
-// #Easy #String #2022_04_07_Time_6_ms_(61.24%)_Space_40.3_MB_(94.08%)
+// #Easy #String #2022_04_08_Time_1_ms_(98.73%)_Space_42.5_MB_(46.87%)
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
     public String reformatDate(String date) {
-        String[] dates = date.split(" ");
-        return dates[2] + "-" + getMonth(dates[1]) + "-" + getDay(dates[0]);
-    }
-
-    private String getDay(String day) {
-        String formatedDay = day.substring(0, day.length() - 2);
-        if (formatedDay.length() == 1) {
-            return "0" + formatedDay;
+        StringBuilder sb = new StringBuilder();
+        Map<String, String> map = new HashMap<>();
+        map.put("Jan", "01");
+        map.put("Feb", "02");
+        map.put("Mar", "03");
+        map.put("Apr", "04");
+        map.put("May", "05");
+        map.put("Jun", "06");
+        map.put("Jul", "07");
+        map.put("Aug", "08");
+        map.put("Sep", "09");
+        map.put("Oct", "10");
+        map.put("Nov", "11");
+        map.put("Dec", "12");
+        sb.append(date.substring(date.length() - 4));
+        sb.append('-');
+        sb.append(map.get(date.substring(date.length() - 8, date.length() - 5)));
+        sb.append('-');
+        if (Character.isDigit(date.charAt(1))) {
+            sb.append(date, 0, 2);
+        } else {
+            sb.append('0');
+            sb.append(date.charAt(0));
         }
-        return formatedDay;
-    }
-
-    private String getMonth(String month) {
-        String result = "";
-        switch (month) {
-            case "Jan":
-                result = "01";
-                break;
-            case "Feb":
-                result = "02";
-                break;
-            case "Mar":
-                result = "03";
-                break;
-            case "Apr":
-                result = "04";
-                break;
-            case "May":
-                result = "05";
-                break;
-            case "Jun":
-                result = "06";
-                break;
-            case "Jul":
-                result = "07";
-                break;
-            case "Aug":
-                result = "08";
-                break;
-            case "Sep":
-                result = "09";
-                break;
-            case "Oct":
-                result = "10";
-                break;
-            case "Nov":
-                result = "11";
-                break;
-            case "Dec":
-                result = "12";
-                break;
-            default:
-                result = "";
-        }
-        return result;
+        return sb.toString();
     }
 }
