@@ -4,7 +4,10 @@ package g1501_1600.s1534_count_good_triplets;
 
 public class Solution {
     public int countGoodTriplets(int[] arr, int a, int b, int c) {
-        int i, j, k, count = 0;
+        int i;
+        int j;
+        int k;
+        int count = 0;
         for (i = 0; i < (arr.length) - 2; i++) {
             for (j = i + 1; j < (arr.length) - 1; j++) {
                 if (Math.abs(arr[i] - arr[j]) <= a) {
