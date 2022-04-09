@@ -20,12 +20,12 @@ public class Solution {
         double xMid = minX + (maxX - minX) / 2;
         double yMid = minY + (maxY - minY) / 2;
 
-        double JUMP = Math.max(maxX - minX, maxY - minY);
+        double jump = Math.max(maxX - minX, maxY - minY);
 
         double ans = getTotalDistance(xMid, yMid, positions);
 
-        while (JUMP > 0.00001) {
-            List<double[]> list = getFourCorners(xMid, yMid, JUMP);
+        while (jump > 0.00001) {
+            List<double[]> list = getFourCorners(xMid, yMid, jump);
             boolean found = false;
             for (double[] point : list) {
                 double pointAns = getTotalDistance(point[0], point[1], positions);
@@ -37,7 +37,9 @@ public class Solution {
                 }
             }
 
-            if (!found) JUMP = JUMP / 2;
+            if (!found) {
+                jump = jump / 2;
+            }
         }
 
         return ans;
