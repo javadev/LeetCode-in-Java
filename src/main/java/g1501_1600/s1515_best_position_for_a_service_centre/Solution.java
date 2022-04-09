@@ -45,12 +45,12 @@ public class Solution {
         return ans;
     }
 
-    private List<double[]> getFourCorners(double xMid, double yMid, double JUMP) {
+    private List<double[]> getFourCorners(double xMid, double yMid, double jump) {
         List<double[]> list = new ArrayList<>();
-        list.add(new double[] {xMid - JUMP, yMid + JUMP});
-        list.add(new double[] {xMid + JUMP, yMid + JUMP});
-        list.add(new double[] {xMid - JUMP, yMid - JUMP});
-        list.add(new double[] {xMid + JUMP, yMid - JUMP});
+        list.add(new double[] {xMid - jump, yMid + jump});
+        list.add(new double[] {xMid + jump, yMid + jump});
+        list.add(new double[] {xMid - jump, yMid - jump});
+        list.add(new double[] {xMid + jump, yMid - jump});
 
         return list;
     }
