@@ -57,7 +57,6 @@ public class Solution {
                 res = Math.min(res, cost + getLen(most));
             }
         }
-
         dp[pos][k] = res;
         return res;
     }
