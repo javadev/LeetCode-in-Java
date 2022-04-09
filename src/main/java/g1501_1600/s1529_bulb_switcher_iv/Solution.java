@@ -6,14 +6,12 @@ public class Solution {
     public int minFlips(String target) {
         int flipCount = target.charAt(0) - 48;
         char prev = target.charAt(0);
-
         for (char ch : target.toCharArray()) {
             if (ch != prev) {
                 flipCount++;
                 prev = ch;
             }
         }
-
         return flipCount;
     }
 }
