@@ -6,7 +6,6 @@ public class Solution {
     public int numSub(String s) {
         long count = 0;
         long res = 0;
-
         for (char ch : s.toCharArray()) {
             if (ch == '0') {
                 res += count * (count + 1) / 2;
@@ -15,7 +14,6 @@ public class Solution {
                 count++;
             }
         }
-
         res += count * (count + 1) / 2;
         return (int) (res % 1000000007);
     }
