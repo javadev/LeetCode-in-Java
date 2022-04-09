@@ -22,11 +22,9 @@ public class Solution {
             double w = succProb[i];
             nodeToNodesList[u].add(v);
             nodeToProbabilitiesList[u].add(w);
-
             nodeToNodesList[v].add(u);
             nodeToProbabilitiesList[v].add(w);
         }
-
         double[] probabilities = new double[n];
         probabilities[start] = 1.0;
         boolean[] visited = new boolean[n];
@@ -36,7 +34,6 @@ public class Solution {
         while (!queue.isEmpty()) {
             int u = queue.poll();
             visited[u] = false;
-
             for (int i = 0; i < nodeToNodesList[u].size(); i++) {
                 int v = nodeToNodesList[u].get(i);
                 double w = nodeToProbabilitiesList[u].get(i);
@@ -49,7 +46,6 @@ public class Solution {
                 }
             }
         }
-
         return probabilities[end];
     }
 }
