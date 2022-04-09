@@ -13,7 +13,6 @@ public class Solution {
         int[] lefts = new int[26];
         int[] rights = new int[26];
         Arrays.fill(lefts, -1);
-
         for (int i = 0; i < s.length(); i++) {
             int idx = s.charAt(i) - 'a';
             if (lefts[idx] == -1) {
@@ -21,11 +20,9 @@ public class Solution {
             }
             rights[idx] = i;
         }
-
         List<String> result = new ArrayList<>();
         Deque<int[]> stack = new ArrayDeque<>();
         int[] top = null;
-
         for (int i = 0; i < s.length(); i++) {
             int idx = s.charAt(i) - 'a';
             if (i == lefts[idx]) {
@@ -52,7 +49,6 @@ public class Solution {
                 top = null;
             }
         }
-
         return result;
     }
 }
