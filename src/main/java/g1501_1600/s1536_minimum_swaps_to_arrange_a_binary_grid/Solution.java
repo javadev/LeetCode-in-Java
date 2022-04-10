@@ -16,11 +16,9 @@ public class Solution {
             while (j < len && preProcess[j] < minValueRequired) {
                 j++;
             }
-
             if (j == len) {
                 return -1;
             }
-
             while (j != i) {
                 swap++;
                 int temp = preProcess[j];
@@ -29,7 +27,6 @@ public class Solution {
                 j--;
             }
         }
-
         return swap;
     }
 
@@ -41,7 +38,6 @@ public class Solution {
             }
             cnt++;
         }
-
         return cnt;
     }
 }
