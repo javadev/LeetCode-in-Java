@@ -4,21 +4,28 @@ package g1501_1600.s1540_can_convert_string_in_k_moves;
 
 class Solution {
     public boolean canConvertString(String s, String t, int k) {
-        int len1 = s.length(), len2 = t.length();
+        int len1 = s.length();
+        int len2 = t.length();
 
-        if (len1 != len2) return false;
+        if (len1 != len2) {
+            return false;
+        }
 
-        if (s.equals(t)) return true;
+        if (s.equals(t)) {
+            return true;
+        }
 
-        int[] Freq = new int[26];
+        int[] freq = new int[26];
 
         int multiple = k / 26;
         for (int i = 0; i < 26; i++) {
-            Freq[i] = multiple;
+            freq[i] = multiple;
         }
 
         int rem = k % 26;
-        for (int i = 1; i <= rem; i++) Freq[i]++;
+        for (int i = 1; i <= rem; i++) {
+            freq[i]++;
+        }
 
         int movesRemaining = k;
 
@@ -33,8 +40,8 @@ class Solution {
 
             int diff = (ch2 - ch1 + 26) % 26;
 
-            if (Freq[diff] > 0) {
-                Freq[diff]--;
+            if (freq[diff] > 0) {
+                freq[diff]--;
                 movesRemaining--;
             } else {
                 return false;
