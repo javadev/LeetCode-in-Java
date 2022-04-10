@@ -26,17 +26,14 @@ public class Solution {
                 sum2 = 0;
             }
         }
-
         while (start1 < nums1.length) {
             sum1 += nums1[start1];
             start1++;
         }
-
         while (start2 < nums2.length) {
             sum2 += nums2[start2];
             start2++;
         }
-
         return (int) ((Math.max(sum1, sum2) + result) % mod);
     }
 }
