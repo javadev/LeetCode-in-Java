@@ -13,7 +13,6 @@ public class Solution {
             } else {
                 winTimes++;
             }
-
             if (winTimes >= k) {
                 return winner;
             }
