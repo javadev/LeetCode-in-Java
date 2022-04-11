@@ -28,14 +28,12 @@ public class Solution {
         for (int id = 0; id < k; id++) {
             available.add(id);
         }
-
         for (int i = 0; i < n; i++) {
             int defaultServer = (i % k);
             while (!busy.isEmpty() && busy.peek().busyTime <= arrival[i]) {
                 Server top = busy.poll();
                 available.add(top.id);
             }
-
             if (available.isEmpty()) {
                 continue;
             }
@@ -46,19 +44,16 @@ public class Solution {
             busy.add(new Server(nextServer, requestEnd));
             requestCount[nextServer]++;
         }
-
         int maxRequests = Integer.MIN_VALUE;
         List<Integer> busiestServers = new ArrayList<>();
         for (int id = 0; id < k; id++) {
             maxRequests = Math.max(maxRequests, requestCount[id]);
         }
-
         for (int id = 0; id < k; id++) {
             if (requestCount[id] == maxRequests) {
                 busiestServers.add(id);
             }
         }
-
         return busiestServers;
     }
 }
