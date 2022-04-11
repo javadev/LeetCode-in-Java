@@ -4,39 +4,23 @@ package g1501_1600.s1562_find_latest_group_of_size_m;
 
 public class Solution {
     public int findLatestStep(int[] arr, int m) {
-
-        int[] length_at_index = new int[arr.length + 2];
-
-        int[] count_of_length = new int[arr.length + 1];
-
+        int[] lengthAtIndex = new int[arr.length + 2];
+        int[] countOfLength = new int[arr.length + 1];
         int res = -1;
-
         int step = 1;
-
         for (int i : arr) {
-
-            int left_length = length_at_index[i - 1];
-
-            int right_length = length_at_index[i + 1];
-
-            int new_length = left_length + right_length + 1;
-
-            length_at_index[i] = new_length;
-
-            length_at_index[i - left_length] = new_length;
-
-            length_at_index[i + right_length] = new_length;
-
-            count_of_length[new_length] += 1;
-
-            count_of_length[left_length] -= 1;
-
-            count_of_length[right_length] -= 1;
-
-            if (count_of_length[m] > 0) {
+            int leftLength = lengthAtIndex[i - 1];
+            int rightLength = lengthAtIndex[i + 1];
+            int newLength = leftLength + rightLength + 1;
+            lengthAtIndex[i] = newLength;
+            lengthAtIndex[i - leftLength] = newLength;
+            lengthAtIndex[i + rightLength] = newLength;
+            countOfLength[newLength] += 1;
+            countOfLength[leftLength] -= 1;
+            countOfLength[rightLength] -= 1;
+            if (countOfLength[m] > 0) {
                 res = step;
             }
-
             step++;
         }
 
