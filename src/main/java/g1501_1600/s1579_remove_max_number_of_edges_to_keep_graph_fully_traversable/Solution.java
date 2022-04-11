@@ -74,7 +74,9 @@ public class Solution {
     }
 
     public int find(int x, int[] arr) {
-        if (arr[x] == x) return x;
+        if (arr[x] == x) {
+            return x;
+        }
         int temp = find(arr[x], arr);
         arr[x] = temp;
         return temp;
