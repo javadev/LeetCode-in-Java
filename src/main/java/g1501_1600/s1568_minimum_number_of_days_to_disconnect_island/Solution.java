@@ -34,7 +34,6 @@ public class Solution {
                 }
             }
         }
-
         if (numOfIslands >= 2) {
             return 0;
         }
@@ -70,7 +69,6 @@ public class Solution {
             if (nx < 0 || ny < 0 || nx >= grid.length || ny >= grid[0].length) {
                 continue;
             }
-
             if (grid[nx][ny] == 1) {
                 children++;
                 tarjan(
@@ -93,7 +91,6 @@ public class Solution {
                 lows[x][y] = Math.min(lows[x][y], times[nx][ny]);
             }
         }
-
         if (prex == -1 && children > 1) {
             articulationPoints.add(x * grid.length + y);
         }
