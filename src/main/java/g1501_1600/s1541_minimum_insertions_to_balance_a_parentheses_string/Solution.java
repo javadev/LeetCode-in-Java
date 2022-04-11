@@ -4,7 +4,6 @@ package g1501_1600.s1541_minimum_insertions_to_balance_a_parentheses_string;
 
 public class Solution {
     public int minInsertions(String s) {
-
         int conClosed = 0;
         int opened = 0;
         int total = 0;
@@ -20,7 +19,6 @@ public class Solution {
                     }
                 }
             } else {
-
                 if (conClosed == 1) {
                     if (opened > 0) {
                         opened--;
@@ -33,7 +31,6 @@ public class Solution {
                 opened += 1;
             }
         }
-
         if (conClosed == 1) {
             if (opened > 0) {
                 opened--;
@@ -42,7 +39,6 @@ public class Solution {
                 total += 2;
             }
         }
-
         total += opened * 2;
         return total;
     }
