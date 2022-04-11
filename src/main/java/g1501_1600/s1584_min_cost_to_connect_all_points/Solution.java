@@ -68,7 +68,7 @@ public class Solution {
         int dis;
         int v;
 
-        public Pair() {};
+        public Pair() {}
 
         public Pair(int dis, int v) {
             this.dis = dis;
