@@ -10,10 +10,8 @@ public class Solution {
         boolean[][] visited = new boolean[n + 1][m + 1];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                if (!visited[i][j]) {
-                    if (cycle(grid, i, j, visited, grid[i][j])) {
-                        return true;
-                    }
+                if (!visited[i][j] && cycle(grid, i, j, visited, grid[i][j])) {
+                    return true;
                 }
             }
         }

@@ -37,12 +37,12 @@ public class Solution {
         }
 
         int mostVisitedCount = 0;
-        for (int key : map.keySet()) {
-            mostVisitedCount = Math.max(mostVisitedCount, map.get(key));
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            mostVisitedCount = Math.max(mostVisitedCount, entry.getValue());
         }
-        for (int key : map.keySet()) {
-            if (map.get(key) == mostVisitedCount) {
-                result.add(key);
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (entry.getValue() == mostVisitedCount) {
+                result.add(entry.getKey());
             }
         }
         Collections.sort(result);
