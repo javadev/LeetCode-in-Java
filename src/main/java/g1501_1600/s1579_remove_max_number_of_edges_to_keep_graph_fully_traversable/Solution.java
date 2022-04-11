@@ -24,12 +24,18 @@ public class Solution {
             int v = edge[2];
             if (type == 1) {
                 boolean a = union(u, v, alice, rankAlice);
-                if (a) countAlice--;
-                else remove++;
+                if (a) {
+                    countAlice--;
+                } else {
+                    remove++;
+                }
             } else if (type == 2) {
                 boolean b = union(u, v, bob, rankBob);
-                if (b) countBob--;
-                else remove++;
+                if (b) {
+                    countBob--;
+                } else {
+                    remove++;
+                }
             } else {
                 boolean b = union(u, v, bob, rankBob);
                 boolean a = union(u, v, alice, rankAlice);
