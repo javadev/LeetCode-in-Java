@@ -16,7 +16,6 @@ public class Solution {
             map.putIfAbsent(keyName[i], new ArrayList<>());
             map.get(keyName[i]).add(keyTime[i]);
         }
-
         List<String> soln = new ArrayList<>();
         for (Map.Entry<String, List<String>> entry : map.entrySet()) {
             List<String> timeStamps = entry.getValue();
@@ -26,14 +25,12 @@ public class Solution {
                 String[] third = timeStamps.get(i + 2).split(":");
                 int hourDiff = Integer.parseInt(third[0]) - Integer.parseInt(first[0]);
                 int minDiff = Integer.parseInt(third[1]) - Integer.parseInt(first[1]);
-
                 if (hourDiff == 0 || (hourDiff == 1 && minDiff <= 0)) {
                     soln.add(entry.getKey());
                     break;
                 }
             }
         }
-
         Collections.sort(soln);
         return soln;
     }
