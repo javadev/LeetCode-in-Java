@@ -25,7 +25,6 @@ public class Solution {
         if (visited[i][j]) {
             return true;
         }
-
         visited[i][j] = true;
         char temp = grid[i][j];
         grid[i][j] = '*';
