@@ -49,8 +49,9 @@ public class CombinationIterator {
     }
 }
 
-/**
- * Your CombinationIterator object will be instantiated and called as such: CombinationIterator obj
- * = new CombinationIterator(characters, combinationLength); String param_1 = obj.next(); boolean
- * param_2 = obj.hasNext();
+/*
+ * Your CombinationIterator object will be instantiated and called as such:
+ * CombinationIterator obj = new CombinationIterator(characters, combinationLength);
+ * String param_1 = obj.next();
+ * boolean param_2 = obj.hasNext();
  */
