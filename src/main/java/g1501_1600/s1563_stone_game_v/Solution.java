@@ -35,6 +35,7 @@ public class Solution {
                 max = Math.max(max, r + gameDP(ps, k, j, dp));
             }
         }
-        return dp[i][j] = max;
+        dp[i][j] = max;
+        return max;
     }
 }
