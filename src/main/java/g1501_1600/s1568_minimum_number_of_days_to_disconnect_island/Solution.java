@@ -6,6 +6,7 @@ package g1501_1600.s1568_minimum_number_of_days_to_disconnect_island;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S107")
 public class Solution {
     private final int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
