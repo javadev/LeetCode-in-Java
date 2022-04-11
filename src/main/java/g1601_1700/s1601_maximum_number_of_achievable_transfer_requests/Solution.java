@@ -25,7 +25,6 @@ public class Solution {
         helper(requests, index + 1, count, num + 1);
         count[requests[index][0]]--;
         count[requests[index][1]]++;
-
         helper(requests, index + 1, count, num);
     }
 }
