@@ -10,7 +10,8 @@ public class Solution {
     private final int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
     public int minDays(int[][] grid) {
-        int m = grid.length, n = grid[0].length;
+        int m = grid.length;
+        int n = grid[0].length;
         int numOfIslands = 0;
         boolean hasArticulationPoint = false;
         int color = 1;
@@ -26,7 +27,7 @@ public class Solution {
                     int[] islandSize = new int[1];
                     tarjan(i, j, -1, -1, 0, time, low, grid, articulationPoints, color, islandSize);
                     minIslandSize = Math.min(minIslandSize, islandSize[0]);
-                    if (articulationPoints.size() > 0) {
+                    if (!articulationPoints.isEmpty()) {
                         hasArticulationPoint = true;
                     }
                 }
