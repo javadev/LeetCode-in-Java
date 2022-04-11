@@ -8,13 +8,10 @@ import java.util.Map;
 
 public class Solution {
     public int maxNonOverlapping(int[] nums, int target) {
-        int culSum = 0, res = 0;
-        Map<Integer, Integer> map =
-                new HashMap() {
-                    {
-                        put(0, 0);
-                    }
-                };
+        int culSum = 0;
+        int res = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, 0);
         for (int num : nums) {
             culSum += num;
             if (map.containsKey(culSum - target)) {
