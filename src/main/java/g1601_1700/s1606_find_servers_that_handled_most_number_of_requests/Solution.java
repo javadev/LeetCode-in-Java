@@ -36,7 +36,9 @@ public class Solution {
                 available.add(top.id);
             }
 
-            if (available.isEmpty()) continue;
+            if (available.isEmpty()) {
+                continue;
+            }
             Integer nextServer = available.ceiling(defaultServer);
             nextServer = (nextServer != null) ? nextServer : available.ceiling(0);
             int requestEnd = arrival[i] + load[i];
@@ -52,7 +54,9 @@ public class Solution {
         }
 
         for (int id = 0; id < k; id++) {
-            if (requestCount[id] == maxRequests) busiestServers.add(id);
+            if (requestCount[id] == maxRequests) {
+                busiestServers.add(id);
+            }
         }
 
         return busiestServers;
