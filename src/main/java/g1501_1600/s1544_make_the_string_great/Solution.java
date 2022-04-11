@@ -4,6 +4,7 @@ package g1501_1600.s1544_make_the_string_great;
 
 import java.util.Stack;
 
+@SuppressWarnings("java:S1149")
 public class Solution {
     public String makeGood(String s) {
         Stack<Character> stack = new Stack<>();
