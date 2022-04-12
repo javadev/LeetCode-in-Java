@@ -21,7 +21,7 @@ public class Solution {
                 angles.add(a);
             }
         }
-        ;
+        
         Collections.sort(angles);
 
         int s = 0;
