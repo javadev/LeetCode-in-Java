@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeSet;
 
-class Solution {
+public class Solution {
     public int robotSim(int[] commands, int[][] obstacles) {
         // 0=right, 1=up, 2=left, 3=down
         int direction = 1;
