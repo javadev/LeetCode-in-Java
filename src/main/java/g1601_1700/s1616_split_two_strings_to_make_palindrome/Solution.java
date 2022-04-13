@@ -7,17 +7,17 @@ public class Solution {
         return check(a, b) || check(b, a);
     }
 
-    private boolean check(String a, String b){
+    private boolean check(String a, String b) {
         int i = 0, j = b.length() - 1;
-        while(j > i && a.charAt(i) == b.charAt(j)){
+        while (j > i && a.charAt(i) == b.charAt(j)) {
             ++i;
             --j;
         }
         return isPalindrome(a, i, j) || isPalindrome(b, i, j);
     }
 
-    private boolean isPalindrome(String s, int i, int j){
-        while(j > i && s.charAt(i) == s.charAt(j)){
+    private boolean isPalindrome(String s, int i, int j) {
+        while (j > i && s.charAt(i) == s.charAt(j)) {
             ++i;
             --j;
         }
