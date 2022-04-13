@@ -23,14 +23,12 @@ public class Solution {
         }
         int ps = ((int) Math.pow(2, n)) - 1;
         for (int set = 3; set <= ps; set++) {
+            // is power of 2
             boolean isp2 = set != 0 && ((set & (set - 1)) == 0);
             if (!isp2) {
-
                 ans = 0;
                 vis = 0;
-
                 dfs(graph, set, Integer.highestOneBit(set), -1);
-
                 if (vis == set) {
                     dist[ans - 1]++;
                 }
