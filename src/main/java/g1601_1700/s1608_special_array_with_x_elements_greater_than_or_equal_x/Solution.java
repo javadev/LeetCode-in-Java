@@ -6,11 +6,11 @@ package g1601_1700.s1608_special_array_with_x_elements_greater_than_or_equal_x;
 import java.util.Arrays;
 
 public class Solution {
-    public int specialArray(int[] arr) {
-        Arrays.sort(arr);
-        for (int i = arr.length; i > 0; i--) {
-            int size = arr.length - i;
-            if ((arr[size] > i || arr[size] == i) && (i == arr.length || arr[size - 1] < i)) {
+    public int specialArray(int[] nums) {
+        Arrays.sort(nums);
+        for (int i = nums.length; i > 0; i--) {
+            int size = nums.length - i;
+            if ((nums[size] > i || nums[size] == i) && (i == nums.length || nums[size - 1] < i)) {
                 return i;
             }
         }
