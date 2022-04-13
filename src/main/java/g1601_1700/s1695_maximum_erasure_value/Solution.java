@@ -7,17 +7,15 @@ public class Solution {
         int ans = 0;
         int sum = 0;
         boolean[] seen = new boolean[10001];
-        int i = 0;
         int j = 0;
-        while (i < nums.length) {
-            while (seen[nums[i]]) {
+        for (int num : nums) {
+            while (seen[num]) {
                 seen[nums[j]] = false;
                 sum -= nums[j++];
             }
-            seen[nums[i]] = true;
-            sum += nums[i];
+            seen[num] = true;
+            sum += num;
             ans = Math.max(sum, ans);
-            i++;
         }
         return ans;
     }
