@@ -4,7 +4,8 @@ package g1601_1700.s1695_maximum_erasure_value;
 
 public class Solution {
     public int maximumUniqueSubarray(int[] nums) {
-        int ans = 0, sum = 0;
+        int ans = 0;
+        int sum = 0;
         boolean[] seen = new boolean[10001];
         for (int i = 0, j = 0; i < nums.length; i++) {
             while (seen[nums[i]]) {
