@@ -23,7 +23,7 @@ public class Solution {
         }
         int ps = ((int) Math.pow(2, n)) - 1;
         for (int set = 3; set <= ps; set++) {
-            boolean isp2 = set != 0 && ((set & (set - 1)) == 0); // is power of 2
+            boolean isp2 = set != 0 && ((set & (set - 1)) == 0);
             if (!isp2) {
 
                 ans = 0;
@@ -44,7 +44,8 @@ public class Solution {
             return 0;
         }
         vis = vis | c;
-        int fdist = 0, sdist = 0;
+        int fdist = 0;
+        int sdist = 0;
         for (int i : graph.get(c)) {
             if (i != p) {
                 int dist = dfs(graph, set, i, c);
