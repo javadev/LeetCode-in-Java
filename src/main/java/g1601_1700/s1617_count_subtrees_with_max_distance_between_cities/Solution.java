@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("java:S5329")
 public class Solution {
     private int ans = 0;
     private int vis = 0;
