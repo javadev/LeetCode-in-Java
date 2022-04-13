@@ -7,7 +7,8 @@ public class Solution {
         int ans = 0;
         int sum = 0;
         boolean[] seen = new boolean[10001];
-        int i = 0, j = 0;
+        int i = 0;
+        int j = 0;
         while (i < nums.length) {
             while (seen[nums[i]]) {
                 seen[nums[j]] = false;
