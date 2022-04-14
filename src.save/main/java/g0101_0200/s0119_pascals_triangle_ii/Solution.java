@@ -1,6 +1,6 @@
 package g0101_0200.s0119_pascals_triangle_ii;
 
-// #Easy #Array #Dynamic_Programming #Dynamic_Programming_I_Day_12
+// #Easy #Array #Dynamic_Programming #Data_Structure_II_Day_3_Array #Dynamic_Programming_I_Day_12
 // #2022_02_22_Time_0_ms_(100.00%)_Space_41.9_MB_(14.49%)
 
 import java.util.ArrayList;

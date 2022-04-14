@@ -1,6 +1,7 @@
 package g0901_1000.s0953_verifying_an_alien_dictionary;
 
-// #Easy #Array #String #Hash_Table #2022_02_18_Time_0_ms_(100.00%)_Space_40.9_MB_(26.29%)
+// #Easy #Array #String #Hash_Table #Programming_Skills_I_Day_9_String
+// #2022_02_18_Time_0_ms_(100.00%)_Space_40.9_MB_(26.29%)
 
 public class Solution {
     public boolean isAlienSorted(String[] words, String order) {

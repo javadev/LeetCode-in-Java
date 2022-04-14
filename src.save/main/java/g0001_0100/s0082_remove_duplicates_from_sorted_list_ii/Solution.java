@@ -1,6 +1,7 @@
 package g0001_0100.s0082_remove_duplicates_from_sorted_list_ii;
 
-// #Medium #Two_Pointers #Linked_List #2022_02_21_Time_1_ms_(70.85%)_Space_43.2_MB_(29.91%)
+// #Medium #Two_Pointers #Linked_List #Data_Structure_II_Day_11_Linked_List
+// #Algorithm_II_Day_3_Two_Pointers #2022_02_21_Time_1_ms_(70.85%)_Space_43.2_MB_(29.91%)
 
 import com_github_leetcode.ListNode;
 
