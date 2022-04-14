@@ -1,6 +1,7 @@
 package g0701_0800.s0744_find_smallest_letter_greater_than_target;
 
-// #Easy #Array #Binary_Search #2022_03_25_Time_0_ms_(100.00%)_Space_42.5_MB_(91.35%)
+// #Easy #Array #Binary_Search #Binary_Search_I_Day_4
+// #2022_03_25_Time_0_ms_(100.00%)_Space_42.5_MB_(91.35%)
 
 public class Solution {
     public char nextGreatestLetter(char[] letters, char target) {

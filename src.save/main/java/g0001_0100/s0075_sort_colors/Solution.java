@@ -1,7 +1,7 @@
 package g0001_0100.s0075_sort_colors;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Sorting #Two_Pointers
-// #2022_02_19_Time_1_ms_(33.23%)_Space_42_MB_(27.36%)
+// #Data_Structure_II_Day_2_Array #2022_02_19_Time_1_ms_(33.23%)_Space_42_MB_(27.36%)
 
 public class Solution {
     public void sortColors(int[] nums) {

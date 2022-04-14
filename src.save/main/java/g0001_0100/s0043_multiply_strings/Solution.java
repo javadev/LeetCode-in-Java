@@ -1,6 +1,7 @@
 package g0001_0100.s0043_multiply_strings;
 
-// #Medium #String #Math #Simulation #2022_02_18_Time_3_ms_(96.85%)_Space_42.8_MB_(35.10%)
+// #Medium #String #Math #Simulation #Data_Structure_II_Day_8_String #Programming_Skills_II_Day_4
+// #2022_02_18_Time_3_ms_(96.85%)_Space_42.8_MB_(35.10%)
 
 public class Solution {
     private int[] getIntArray(String s) {

@@ -1,7 +1,7 @@
 package g0001_0100.s0001_two_sum;
 
 // #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table
-// #2022_02_17_Time_3_ms_(80.08%)_Space_45.6_MB_(13.25%)
+// #Data_Structure_I_Day_2_Array #2022_02_17_Time_3_ms_(80.08%)_Space_45.6_MB_(13.25%)
 
 import java.util.Arrays;
 
