@@ -8,9 +8,12 @@ public class Solution {
         int n = stones.length;
         int[] dp = new int[n];
         for (int i = n - 1; i >= 0; i--) {
-            for (int j = i + 1, sum = stones[i]; j < n; j++) {
+            int j = i + 1;
+            int sum = stones[i];
+            while (j < n) {
                 sum += stones[j];
                 dp[j] = Math.max(sum - stones[i] - dp[j], sum - stones[j] - dp[j - 1]);
+                j++;
             }
         }
         return dp[n - 1];

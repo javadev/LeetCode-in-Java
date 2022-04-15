@@ -7,7 +7,7 @@ public class Solution {
         char[] tempArray = n.toCharArray();
         int result = 0;
         for (int i = 0; i < n.length(); i++) {
-            result = Math.max(result, (int) tempArray[i] - 48);
+            result = Math.max(result, tempArray[i] - 48);
         }
         return result;
     }
