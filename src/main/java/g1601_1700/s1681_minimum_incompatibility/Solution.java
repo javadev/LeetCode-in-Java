@@ -43,7 +43,9 @@ public class Solution {
             return;
         }
         int minSize = size;
-        int prevMin, prevMax, diff;
+        int prevMin;
+        int prevMax;
+        int diff;
         for (Node node : nodes) {
             if (node.size == minSize || node.visited[nums[idx]]) {
                 continue;
