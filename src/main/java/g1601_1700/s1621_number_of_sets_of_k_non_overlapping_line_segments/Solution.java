@@ -8,7 +8,6 @@ public class Solution {
             int[] dp = new int[k];
             int[] sums = new int[k];
             int mod = (int) (1e9 + 7);
-
             for (int diff = 1; diff < n - k + 1; diff++) {
                 dp[0] = ((diff + 1) * diff) >> 1;
                 sums[0] = (sums[0] + dp[0]) % mod;
@@ -17,7 +16,6 @@ public class Solution {
                     sums[segments - 1] = (sums[segments - 1] + dp[segments - 1]) % mod;
                 }
             }
-
             return dp[k - 1];
         } else {
             return 0;
