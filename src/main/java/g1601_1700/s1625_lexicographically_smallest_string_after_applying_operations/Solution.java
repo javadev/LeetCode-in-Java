@@ -42,7 +42,9 @@ public class Solution {
         b = b % s.length();
         b = s.length() - b;
         s = s.substring(b) + s.substring(0, b);
-        if (ans.compareTo(s) > 0) ans = s;
+        if (ans.compareTo(s) > 0) {
+            ans = s;
+        }
         return s;
     }
 
