@@ -16,6 +16,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:[5.8.2,)'
     testImplementation 'org.hamcrest:hamcrest-core:[2.2,)'
     testImplementation 'org.zapodot:embedded-db-junit-jupiter:[2.0.2,)'
+    testImplementation 'com.h2database:h2:[2.1.212,)'
 }
 
 test {
