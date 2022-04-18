@@ -12,7 +12,7 @@ class SolutionTest {
     }
 
     @Test
-    void longestDiverseString1() {
+    void longestDiverseString2() {
         assertThat(new Solution().longestDiverseString(7, 1, 0), equalTo("aabaa"));
     }
 }
