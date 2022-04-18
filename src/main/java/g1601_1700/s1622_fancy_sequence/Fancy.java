@@ -12,7 +12,7 @@ public class Fancy {
     private long rMult = 1;
     private int size = 0;
     private int[] inverses = cache();
-    
+
     public void append(int val) {
         long result = (val - add + MOD) * rMult % MOD;
         if (size >= values.length) {
@@ -20,14 +20,17 @@ public class Fancy {
         }
         values[size++] = ((int) result);
     }
+
     public void addAll(int inc) {
         add = (add + inc) % MOD;
     }
+
     public void multAll(int m) {
         mult = mult * m % MOD;
         add = add * m % MOD;
         rMult = rMult * inverses[m] % MOD;
     }
+
     public int getIndex(int idx) {
         if (idx >= size) {
             return -1;
@@ -46,6 +49,7 @@ public class Fancy {
         }
         return (int) y;
     }
+
     private int[] cache() {
         inverses = new int[101];
         inverses[0] = 0;

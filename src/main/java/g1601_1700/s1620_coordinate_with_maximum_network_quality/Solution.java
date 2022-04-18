@@ -35,11 +35,9 @@ public class Solution {
         minY -= radius;
         maxY += radius;
 
-        if (minX < 0)
-            minX = 0;
+        if (minX < 0) minX = 0;
 
-        if (minY < 0)
-            minY = 0;
+        if (minY < 0) minY = 0;
 
         int maxQuality = Integer.MIN_VALUE;
         int[] ans = new int[2];
@@ -48,11 +46,10 @@ public class Solution {
             for (int j = minY; j <= maxY; j++) {
                 quality = 0;
                 for (int[] tower : towers) {
-                    double dist = Math.sqrt(Math.pow((i - tower[0]), 2) +
-                            Math.pow((j - tower[1]), 2));
+                    double dist =
+                            Math.sqrt(Math.pow((i - tower[0]), 2) + Math.pow((j - tower[1]), 2));
 
-                    if (dist <= (double) radius)
-                        quality += (int) Math.floor(tower[2] / (1 + dist));
+                    if (dist <= (double) radius) quality += (int) Math.floor(tower[2] / (1 + dist));
                 }
                 if (quality > maxQuality) {
                     maxQuality = quality;

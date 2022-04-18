@@ -6,6 +6,7 @@ import java.util.HashSet;
 
 public class Solution {
     private String ans = "z";
+
     private void dfs(String s, int a, int b, HashSet<String> set) {
         if (set.contains(s)) {
             return;
@@ -41,8 +42,7 @@ public class Solution {
         b = b % s.length();
         b = s.length() - b;
         s = s.substring(b) + s.substring(0, b);
-        if (ans.compareTo(s) > 0)
-            ans = s;
+        if (ans.compareTo(s) > 0) ans = s;
         return s;
     }
 
