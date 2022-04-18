@@ -40,7 +40,7 @@ public class Fancy {
 
     private int multiplicativeInverse(int x) {
         long y = 1;
-        long m = Fancy.MOD - 2;
+        long m = (long) Fancy.MOD - 2;
         long p = x;
         for (int i = 0; 1L << i < m; i++, p = p * p % Fancy.MOD) {
             if ((m >> i & 1) == 1) {
