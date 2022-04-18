@@ -8,11 +8,20 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void shortestPathAllKeys() {
-        Solution solution = new Solution();
         assertThat(
-                solution.shortestPathAllKeys(new String[] {"@.a.#", "###.#", "b.A.B"}), equalTo(8));
+                new Solution().shortestPathAllKeys(new String[] {"@.a.#", "###.#", "b.A.B"}),
+                equalTo(8));
+    }
+
+    @Test
+    void shortestPathAllKeys2() {
         assertThat(
-                solution.shortestPathAllKeys(new String[] {"@..aA", "..B#.", "....b"}), equalTo(6));
-        assertThat(solution.shortestPathAllKeys(new String[] {"@Aa"}), equalTo(-1));
+                new Solution().shortestPathAllKeys(new String[] {"@..aA", "..B#.", "....b"}),
+                equalTo(6));
+    }
+
+    @Test
+    void shortestPathAllKeys3() {
+        assertThat(new Solution().shortestPathAllKeys(new String[] {"@Aa"}), equalTo(-1));
     }
 }
