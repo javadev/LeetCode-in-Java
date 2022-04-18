@@ -5,13 +5,14 @@ package g1601_1700.s1686_stone_game_vi;
 
 import java.util.PriorityQueue;
 
+@SuppressWarnings("java:S1210")
 public class Solution {
     private static class Pair implements Comparable<Pair> {
         int sum;
         int a;
         int b;
 
-        Pair(int sum, int a, int b) {
+        Pair(int a, int b) {
             this.sum = a + b;
             this.a = a;
             this.b = b;
@@ -25,7 +26,7 @@ public class Solution {
     public int stoneGameVI(int[] aliceValues, int[] bobValues) {
         PriorityQueue<Pair> pq = new PriorityQueue<>();
         for (int i = 0; i < aliceValues.length; i++) {
-            pq.add(new Pair(aliceValues[i] + bobValues[i], aliceValues[i], bobValues[i]));
+            pq.add(new Pair(aliceValues[i], bobValues[i]));
         }
         boolean turn = true;
         int a = 0;
