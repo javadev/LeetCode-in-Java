@@ -10,4 +10,9 @@ class SolutionTest {
     void divide() {
         assertThat(new Solution().divide(10, 3), equalTo(3));
     }
+
+    @Test
+    void divide2() {
+        assertThat(new Solution().divide(7, -3), equalTo(-2));
+    }
 }

@@ -9,9 +9,15 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void removeElement() {
-        int[] expected = new int[] {2, 2};
-        int[] original = new int[] {3, 2, 2, 3};
+        int[] original = {3, 2, 2, 3};
         int end = new Solution().removeElement(original, 3);
-        assertThat(Arrays.copyOfRange(original, 0, end), equalTo(expected));
+        assertThat(Arrays.copyOfRange(original, 0, end), equalTo(new int[] {2, 2}));
+    }
+
+    @Test
+    void removeElement2() {
+        int[] original = {0, 1, 2, 2, 3, 0, 4, 2};
+        int end = new Solution().removeElement(original, 2);
+        assertThat(Arrays.copyOfRange(original, 0, end), equalTo(new int[] {0, 1, 4, 0, 3}));
     }
 }
