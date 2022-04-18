@@ -28,7 +28,8 @@ public class Solution {
             pq.add(new Pair(aliceValues[i] + bobValues[i], aliceValues[i], bobValues[i]));
         }
         boolean turn = true;
-        int a = 0, b = 0;
+        int a = 0;
+        int b = 0;
         while (!pq.isEmpty()) {
             if (turn) {
                 a += pq.poll().a;
