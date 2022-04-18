@@ -26,12 +26,10 @@ public class Solution {
             val = (val + a) % 10;
             temp[i] = (char) (val + '0');
         }
-
         s = new String(temp);
         if (ans.compareTo(s) > 0) {
             ans = s;
         }
-
         return s;
     }
 
@@ -49,7 +47,6 @@ public class Solution {
     }
 
     public String findLexSmallestString(String s, int a, int b) {
-
         HashSet<String> set = new HashSet<>();
         dfs(s, a, b, set);
         return ans;
