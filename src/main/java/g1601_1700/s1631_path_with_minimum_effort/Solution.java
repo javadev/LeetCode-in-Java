@@ -5,6 +5,7 @@ package g1601_1700.s1631_path_with_minimum_effort;
 
 import java.util.PriorityQueue;
 
+@SuppressWarnings("java:S1210")
 public class Solution {
     private static class Pair implements Comparable<Pair> {
         int row;
