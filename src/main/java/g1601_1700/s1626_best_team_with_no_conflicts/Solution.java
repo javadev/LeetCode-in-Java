@@ -6,7 +6,7 @@ package g1601_1700.s1626_best_team_with_no_conflicts;
 import java.util.Arrays;
 
 public class Solution {
-    static class Pair {
+    private static class Pair {
         int score;
         int age;
 
@@ -21,15 +21,12 @@ public class Solution {
     public int bestTeamScore(int[] scores, int[] ages) {
         int n = ages.length;
         Pair[] p = new Pair[n];
-
         for (int[] x : memo) {
             Arrays.fill(x, -1);
         }
-
         for (int i = 0; i < n; i++) {
             p[i] = new Pair(scores[i], ages[i]);
         }
-
         Arrays.sort(p, (a, b) -> (a.score == b.score) ? (a.age - b.age) : a.score - b.score);
         return find(p, 0, 0, n);
     }
@@ -38,11 +35,9 @@ public class Solution {
         if (i >= n) {
             return 0;
         }
-
         if (memo[i][max] != -1) {
             return memo[i][max];
         }
-
         if (p[i].age >= max) {
             int x1 = p[i].score + find(p, i + 1, p[i].age, n);
             int x2 = find(p, i + 1, max, n);
