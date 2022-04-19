@@ -13,4 +13,18 @@ class SolutionTest {
                 new Solution().threeSum(new int[] {-1, 0, 1, 2, -1, -4}),
                 equalTo(ArrayUtils.getLists(new int[][] {{-1, -1, 2}, {-1, 0, 1}})));
     }
+
+    @Test
+    void threeSum2() {
+        assertThat(
+                new Solution().threeSum(new int[] {}),
+                equalTo(ArrayUtils.getLists(new int[][] {})));
+    }
+
+    @Test
+    void threeSum3() {
+        assertThat(
+                new Solution().threeSum(new int[] {0}),
+                equalTo(ArrayUtils.getLists(new int[][] {})));
+    }
 }

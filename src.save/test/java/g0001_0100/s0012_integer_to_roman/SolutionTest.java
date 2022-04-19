@@ -8,11 +8,26 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void intToRoman() {
-        Solution solution = new Solution();
-        assertThat(solution.intToRoman(3), equalTo("III"));
-        assertThat(solution.intToRoman(4), equalTo("IV"));
-        assertThat(solution.intToRoman(9), equalTo("IX"));
-        assertThat(solution.intToRoman(58), equalTo("LVIII"));
-        assertThat(solution.intToRoman(1994), equalTo("MCMXCIV"));
+        assertThat(new Solution().intToRoman(3), equalTo("III"));
+    }
+
+    @Test
+    void intToRoman2() {
+        assertThat(new Solution().intToRoman(4), equalTo("IV"));
+    }
+
+    @Test
+    void intToRoman3() {
+        assertThat(new Solution().intToRoman(9), equalTo("IX"));
+    }
+
+    @Test
+    void intToRoman4() {
+        assertThat(new Solution().intToRoman(58), equalTo("LVIII"));
+    }
+
+    @Test
+    void intToRoman5() {
+        assertThat(new Solution().intToRoman(1994), equalTo("MCMXCIV"));
     }
 }
