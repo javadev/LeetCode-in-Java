@@ -27,7 +27,7 @@ public class Solution {
             }
         }
 
-        List<Boolean> result = new ArrayList<Boolean>(edges);
+        List<Boolean> result = new ArrayList<>(edges);
         for (int[] query : queries) {
             result.add(set.find(query[0]) == set.find(query[1]));
         }

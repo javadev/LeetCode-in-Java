@@ -7,7 +7,9 @@ import java.util.PriorityQueue;
 
 public class Solution {
     private static class Pair implements Comparable<Pair> {
-        int row, col, diff;
+        int row;
+        int col;
+        int diff;
 
         Pair(int row, int col, int diff) {
             this.row = row;
@@ -21,16 +23,19 @@ public class Solution {
     }
 
     public int minimumEffortPath(int[][] heights) {
-        int n = heights.length, m = heights[0].length;
+        int n = heights.length;
+        int m = heights[0].length;
         PriorityQueue<Pair> pq = new PriorityQueue<>();
         pq.add(new Pair(0, 0, 0));
         boolean[][] vis = new boolean[n][m];
         int[] dx = {-1, 0, 1, 0};
         int[] dy = {0, 1, 0, -1};
         int min = Integer.MAX_VALUE;
-        while (pq.size() > 0) {
+        while (!pq.isEmpty()) {
             Pair p = pq.remove();
-            int row = p.row, col = p.col, diff = p.diff;
+            int row = p.row;
+            int col = p.col;
+            int diff = p.diff;
             if (vis[row][col]) {
                 continue;
             }
@@ -39,7 +44,8 @@ public class Solution {
                 min = Math.min(min, diff);
             }
             for (int i = 0; i < 4; i++) {
-                int r = row + dx[i], c = col + dy[i];
+                int r = row + dx[i];
+                int c = col + dy[i];
                 if (r < 0 || c < 0 || r >= n || c >= m || vis[r][c]) {
                     continue;
                 }

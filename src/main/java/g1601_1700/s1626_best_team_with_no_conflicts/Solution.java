@@ -7,7 +7,8 @@ import java.util.Arrays;
 
 public class Solution {
     static class Pair {
-        int score, age;
+        int score;
+        int age;
 
         Pair(int score, int age) {
             this.score = score;
@@ -45,9 +46,11 @@ public class Solution {
         if (p[i].age >= max) {
             int x1 = p[i].score + find(p, i + 1, p[i].age, n);
             int x2 = find(p, i + 1, max, n);
-            return memo[i][max] = Math.max(x1, x2);
+            memo[i][max] = Math.max(x1, x2);
+            return memo[i][max];
         } else {
-            return memo[i][max] = find(p, i + 1, max, n);
+            memo[i][max] = find(p, i + 1, max, n);
+            return memo[i][max];
         }
     }
 }

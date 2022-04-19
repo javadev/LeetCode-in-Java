@@ -29,19 +29,19 @@ public class Solution {
             }
         }
         Map<Integer, List<Character>> map2 = new HashMap<>();
-        for (char c : map.keySet()) {
-            int duration = map.get(c);
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            int duration = entry.getValue();
             if (!map2.containsKey(duration)) {
                 map2.put(duration, new ArrayList<>());
             }
-            map2.get(duration).add(c);
+            map2.get(duration).add(entry.getKey());
         }
         int max = -1;
-        for (int duration : map2.keySet()) {
-            List<Character> chars = map2.get(duration);
+        for (Map.Entry<Integer, List<Character>> entry : map2.entrySet()) {
+            List<Character> chars = entry.getValue();
             Collections.sort(chars);
-            map2.put(duration, chars);
-            max = Math.max(max, duration);
+            map2.put(entry.getKey(), chars);
+            max = Math.max(max, entry.getKey());
         }
         return map2.get(max).get(map2.get(max).size() - 1);
     }
