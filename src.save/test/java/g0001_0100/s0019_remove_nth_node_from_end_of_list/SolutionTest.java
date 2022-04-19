@@ -9,10 +9,8 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void removeNthFromEnd() {
-        ListNode head = new ListNode();
         ListNode node1 = new ListNode();
         node1.val = 1;
-        head.next = node1;
         ListNode node2 = new ListNode();
         node2.val = 2;
         node1.next = node2;
@@ -26,5 +24,12 @@ class SolutionTest {
         node5.val = 5;
         node4.next = node5;
         assertThat(new Solution().removeNthFromEnd(node1, 2).toString(), equalTo("1, 2, 3, 5"));
+    }
+
+    @Test
+    void removeNthFromEnd2() {
+        ListNode node1 = new ListNode();
+        node1.val = 1;
+        assertThat(new Solution().removeNthFromEnd(node1, 1), equalTo(null));
     }
 }

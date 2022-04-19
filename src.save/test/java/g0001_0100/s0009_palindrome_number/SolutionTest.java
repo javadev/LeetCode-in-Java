@@ -10,4 +10,14 @@ class SolutionTest {
     void isPalindrome() {
         assertThat(new Solution().isPalindrome(121), equalTo(true));
     }
+
+    @Test
+    void isPalindrome2() {
+        assertThat(new Solution().isPalindrome(-121), equalTo(false));
+    }
+
+    @Test
+    void isPalindrome3() {
+        assertThat(new Solution().isPalindrome(10), equalTo(false));
+    }
 }

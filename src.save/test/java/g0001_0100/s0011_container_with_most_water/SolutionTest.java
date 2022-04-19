@@ -10,4 +10,9 @@ class SolutionTest {
     void maxArea() {
         assertThat(new Solution().maxArea(new int[] {1, 8, 6, 2, 5, 4, 8, 3, 7}), equalTo(49));
     }
+
+    @Test
+    void maxArea2() {
+        assertThat(new Solution().maxArea(new int[] {1, 1}), equalTo(1));
+    }
 }
