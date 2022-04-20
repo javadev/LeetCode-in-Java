@@ -7,20 +7,17 @@ public class Solution {
 
     public int numWays(String[] words, String target) {
         int[][] counts = precompute(words);
-
         Integer[][] memo = new Integer[target.length()][words[0].length()];
         return solve(memo, counts, words, target, 0, 0);
     }
 
     private int[][] precompute(String[] words) {
         int[][] counts = new int[words[0].length()][26];
-
         for (String word : words) {
             for (int idx = 0; idx < word.length(); idx++) {
                 counts[idx][word.charAt(idx) - 'a']++;
             }
         }
-
         return counts;
     }
 
@@ -29,20 +26,15 @@ public class Solution {
         if (idx >= target.length()) {
             return 1;
         }
-
         if (len >= words[0].length() || words[0].length() - len < target.length() - idx) {
             return 0;
         }
-
         if (memo[idx][len] != null) {
             return memo[idx][len];
         }
-
         int answer = 0;
-
         answer += solve(memo, counts, words, target, idx, len + 1);
         answer %= MOD;
-
         answer +=
                 (int)
                         ((long) solve(memo, counts, words, target, idx + 1, len + 1)
