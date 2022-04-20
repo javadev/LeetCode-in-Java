@@ -49,7 +49,7 @@ public class Solution {
                                 * counts[len][target.charAt(idx) - 'a']
                                 % MOD);
         answer %= MOD;
-
-        return memo[idx][len] = answer;
+        memo[idx][len] = answer;
+        return memo[idx][len];
     }
 }

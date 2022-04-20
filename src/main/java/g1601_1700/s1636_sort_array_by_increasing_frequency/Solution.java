@@ -16,22 +16,20 @@ public class Solution {
             count.put(num, count.getOrDefault(num, 0) + 1);
         }
         TreeMap<Integer, List<Integer>> map = new TreeMap<>();
-        for (int num : count.keySet()) {
-            int freq = count.get(num);
-            if (!map.containsKey(freq)) {
-                map.put(freq, new ArrayList<>());
-            }
+        for (Map.Entry<Integer, Integer> entry : count.entrySet()) {
+            int freq = entry.getValue();
+            map.putIfAbsent(freq, new ArrayList<>());
             List<Integer> list = map.get(freq);
-            list.add(num);
+            list.add(entry.getKey());
             map.put(freq, list);
         }
         int[] result = new int[nums.length];
         int i = 0;
-        for (int num : map.keySet()) {
-            List<Integer> list = map.get(num);
-            Collections.sort(list, Collections.reverseOrder());
-            int k = num;
-            for (int j = 0; j < list.size(); j++, k = num) {
+        for (Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {
+            List<Integer> list = entry.getValue();
+            list.sort(Collections.reverseOrder());
+            int k = entry.getKey();
+            for (int j = 0; j < list.size(); j++, k = entry.getKey()) {
                 while (k-- > 0) {
                     result[i++] = list.get(j);
                 }

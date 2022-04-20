@@ -16,11 +16,12 @@ public class Solution {
 
         for (int r = rowCount - 1; r >= 0; r--) {
             for (int c = colCount - 1; c >= 0; c--) {
-                nums[numsIdx++] = ((long) matrix[r][c] << 32) | ((long) r << 16) | (long) c;
+                nums[numsIdx++] = ((long) matrix[r][c] << 32) | ((long) r << 16) | c;
             }
         }
         Arrays.sort(nums);
-        for (int nIdx = 0; nIdx < numsIdx; ) {
+        int nIdx = 0;
+        while (nIdx < numsIdx) {
             long num = nums[nIdx] & 0xFFFFFFFF00000000L;
             int endIdx = nIdx + 1;
             while (endIdx < numsIdx && ((nums[endIdx] & 0xFFFFFFFF00000000L) == num)) {
@@ -67,7 +68,8 @@ public class Solution {
         if (ufind[idx] < 0) {
             return idx;
         } else {
-            return ufind[idx] = getIdx(ufind, ufind[idx]);
+            ufind[idx] = getIdx(ufind, ufind[idx]);
+            return ufind[idx];
         }
     }
 }
