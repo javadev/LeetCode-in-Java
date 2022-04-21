@@ -1,6 +1,6 @@
 package g1201_1300.s1261_find_elements_in_a_contaminated_binary_tree;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Design
+// #Medium #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Design
 // #2022_03_13_Time_24_ms_(84.00%)_Space_57.1_MB_(10.00%)
 
 import com_github_leetcode.TreeNode;

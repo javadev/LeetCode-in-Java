@@ -1,6 +1,6 @@
 package g1401_1500.s1447_simplified_fractions;
 
-// #Medium #Math #2022_03_28_Time_33_ms_(69.60%)_Space_67.7_MB_(81.94%)
+// #Medium #String #Math #Number_Theory #2022_03_28_Time_33_ms_(69.60%)_Space_67.7_MB_(81.94%)
 
 import java.util.ArrayList;
 import java.util.List;

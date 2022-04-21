@@ -1,6 +1,6 @@
 package g0001_0100.s0077_combinations;
 
-// #Medium #Array #Backtracking #Algorithm_I_Day_11_Recursion_Backtracking
+// #Medium #Backtracking #Algorithm_I_Day_11_Recursion_Backtracking
 // #2022_02_19_Time_5_ms_(89.72%)_Space_54.9_MB_(26.60%)
 
 import java.util.ArrayList;

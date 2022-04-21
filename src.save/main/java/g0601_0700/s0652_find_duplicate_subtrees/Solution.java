@@ -1,6 +1,6 @@
 package g0601_0700.s0652_find_duplicate_subtrees;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #Medium #Hash_Table #Depth_First_Search #Tree #Binary_Tree
 // #2022_03_21_Time_32_ms_(60.16%)_Space_55.4_MB_(34.89%)
 
 import com_github_leetcode.TreeNode;
