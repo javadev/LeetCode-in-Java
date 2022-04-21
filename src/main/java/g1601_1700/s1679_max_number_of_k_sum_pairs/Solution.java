@@ -1,28 +1,28 @@
 package g1601_1700.s1679_max_number_of_k_sum_pairs;
 
 // #Medium #Array #Hash_Table #Sorting #Two_Pointers
-// #2022_04_21_Time_22_ms_(85.31%)_Space_67.1_MB_(70.80%)
+// #2022_04_21_Time_20_ms_(91.22%)_Space_52.7_MB_(87.98%)
 
 import java.util.Arrays;
 
 public class Solution {
     public int maxOperations(int[] nums, int k) {
         Arrays.sort(nums);
-        int i = 0;
-        int c = 0;
-        int j = nums.length - 1;
-        while (i < j) {
-            int sum = nums[i] + nums[j];
+        int start = 0;
+        int end = nums.length - 1;
+        int count = 0;
+        while (start < end) {
+            int sum = nums[start] + nums[end];
             if (sum == k) {
-                c++;
-                i++;
-                j--;
-            } else if (sum > k) {
-                j--;
+                count++;
+                start++;
+                end--;
+            } else if (sum < k) {
+                start++;
             } else {
-                i++;
+                end--;
             }
         }
-        return c;
+        return count;
     }
 }
