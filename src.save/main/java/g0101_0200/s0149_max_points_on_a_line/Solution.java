@@ -1,6 +1,6 @@
 package g0101_0200.s0149_max_points_on_a_line;
 
-// #Hard #Top_Interview_Questions #Hash_Table #Math #Geometry #Algorithm_II_Day_21_Others
+// #Hard #Top_Interview_Questions #Array #Hash_Table #Math #Geometry #Algorithm_II_Day_21_Others
 // #2022_02_23_Time_4_ms_(98.44%)_Space_41.3_MB_(61.51%)
 
 public class Solution {

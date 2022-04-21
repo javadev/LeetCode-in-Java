@@ -1,7 +1,6 @@
 package g0401_0500.s0448_find_all_numbers_disappeared_in_an_array;
 
-// #Easy #Top_100_Liked_Questions #Array #Hash_Table
-// #2022_03_18_Time_3_ms_(100.00%)_Space_50.5_MB_(86.06%)
+// #Easy #Array #Hash_Table #2022_03_18_Time_3_ms_(100.00%)_Space_50.5_MB_(86.06%)
 
 import java.util.ArrayList;
 import java.util.List;
