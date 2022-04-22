@@ -7,14 +7,14 @@ public class Solution {
     private static final long MODULO = (long) 1e9 + 7;
 
     public int createSortedArray(int[] instructions) {
-        int MAX_VALUE = 0;
+        int maxValue = 0;
         for (int num : instructions) {
-            MAX_VALUE = Math.max(MAX_VALUE, num);
+            maxValue = Math.max(maxValue, num);
         }
-        int[] bit = new int[MAX_VALUE + 1];
+        int[] bit = new int[maxValue + 1];
         long cost = 0;
         for (int i = 0; i < instructions.length; i++) {
-            updateBIT(bit, MAX_VALUE, instructions[i]);
+            updateBIT(bit, maxValue, instructions[i]);
             cost +=
                     Math.min(
                             queryBIT(bit, instructions[i] - 1),
@@ -23,8 +23,8 @@ public class Solution {
         return (int) (cost % MODULO);
     }
 
-    private void updateBIT(int[] bit, int MAX_VALUE, int x) {
-        while (x <= MAX_VALUE) {
+    private void updateBIT(int[] bit, int maxValue, int x) {
+        while (x <= maxValue) {
             bit[x] += 1;
             x += x & -x;
         }

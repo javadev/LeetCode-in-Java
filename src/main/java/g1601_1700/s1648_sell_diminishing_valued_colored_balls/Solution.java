@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class Solution {
     public int maxProfit(int[] inventory, int orders) {
         int n = inventory.length;
-        long MOD = (long) 1e9 + 7;
+        long mod = (long) 1e9 + 7;
         long totalValue = 0;
 
         Arrays.sort(inventory);
@@ -19,15 +19,15 @@ public class Solution {
             if (i == 0 || inventory[i] > inventory[i - 1]) {
                 long diff = i == 0 ? inventory[i] : inventory[i] - inventory[i - 1];
                 if (count * diff < orders) {
-                    totalValue += (2L * inventory[i] - diff + 1) * diff * count / 2 % MOD;
+                    totalValue += (2L * inventory[i] - diff + 1) * diff * count / 2 % mod;
                     orders -= count * diff;
                 } else {
                     diff = orders / count;
                     long remainder = orders % count;
 
-                    totalValue += (2L * inventory[i] - diff + 1) * diff * count / 2 % MOD;
-                    totalValue += (inventory[i] - diff) * remainder % MOD;
-                    totalValue %= MOD;
+                    totalValue += (2L * inventory[i] - diff + 1) * diff * count / 2 % mod;
+                    totalValue += (inventory[i] - diff) * remainder % mod;
+                    totalValue %= mod;
                     break;
                 }
             }
