@@ -10,9 +10,7 @@ public class Solution {
         int n = inventory.length;
         long mod = (long) 1e9 + 7;
         long totalValue = 0;
-
         Arrays.sort(inventory);
-
         int count = 0;
         for (int i = n - 1; i >= 0; i--) {
             count++;
@@ -24,7 +22,6 @@ public class Solution {
                 } else {
                     diff = orders / count;
                     long remainder = orders % count;
-
                     totalValue += (2L * inventory[i] - diff + 1) * diff * count / 2 % mod;
                     totalValue += (inventory[i] - diff) * remainder % mod;
                     totalValue %= mod;
