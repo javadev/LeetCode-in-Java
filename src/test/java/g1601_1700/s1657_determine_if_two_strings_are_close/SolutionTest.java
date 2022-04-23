@@ -20,4 +20,14 @@ class SolutionTest {
     void closeStrings3() {
         assertThat(new Solution().closeStrings("cabbba", "abbccc"), equalTo(true));
     }
+
+    @Test
+    void closeStrings4() {
+        assertThat(new Solution().closeStrings("aa", "aa"), equalTo(true));
+    }
+
+    @Test
+    void closeStrings5() {
+        assertThat(new Solution().closeStrings("a", "b"), equalTo(false));
+    }
 }
