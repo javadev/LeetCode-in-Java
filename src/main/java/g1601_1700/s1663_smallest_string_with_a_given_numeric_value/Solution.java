@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Solution {
     public String getSmallestString(int n, int k) {
-        char res[] = new char[n];
+        char[] res = new char[n];
         Arrays.fill(res, 'a');
         k -= n;
         while (k > 0) {

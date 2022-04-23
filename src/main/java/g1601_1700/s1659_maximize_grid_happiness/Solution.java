@@ -4,7 +4,8 @@ package g1601_1700.s1659_maximize_grid_happiness;
 // #2022_04_23_Time_95_ms_(75.00%)_Space_53.1_MB_(58.33%)
 
 public class Solution {
-    private int m, n;
+    private int m;
+    private int n;
     private int[][][][][] dp;
     private int notPlace = 0;
     private int intro = 1;
