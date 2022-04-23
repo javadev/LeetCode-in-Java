@@ -37,7 +37,9 @@ public class Solution {
                 }
                 if (!c.backward) {
                     int backward = c.i - b;
-                    if (backward == x) return step + 1;
+                    if (backward == x) {
+                        return step + 1;
+                    }
                     if (backward > 0 && !v[backward]) {
                         q.offer(new Pair(backward, true));
                         v[backward] = true;
