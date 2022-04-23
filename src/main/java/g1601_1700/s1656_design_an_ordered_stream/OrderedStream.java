@@ -1,6 +1,7 @@
 package g1601_1700.s1656_design_an_ordered_stream;
 
 // #Easy #Array #Hash_Table #Design #Data_Stream
+// #2022_04_23_Time_95_ms_(74.07%)_Space_84.5_MB_(69.74%)
 
 import java.util.ArrayList;
 import java.util.List;
