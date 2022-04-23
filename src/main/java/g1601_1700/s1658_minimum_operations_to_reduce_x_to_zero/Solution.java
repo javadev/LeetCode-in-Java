@@ -5,14 +5,14 @@ package g1601_1700.s1658_minimum_operations_to_reduce_x_to_zero;
 
 public class Solution {
     public int minOperations(int[] nums, int x) {
-        int total_array_sum = 0;
+        int totalArraySum = 0;
         for (int each : nums) {
-            total_array_sum += each;
+            totalArraySum += each;
         }
-        if (total_array_sum == x) {
+        if (totalArraySum == x) {
             return nums.length;
         }
-        int target = total_array_sum - x;
+        int target = totalArraySum - x;
         // as we need to find value equal to x so that x-x=0,
         // and we need to search the longest sub array with sum equal t0 total array sum -x;
         int sum = 0;
