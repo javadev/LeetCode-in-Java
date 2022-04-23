@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Solution {
-    class Pair {
+    private static class Pair {
         int i;
         boolean backward;
 

@@ -13,14 +13,18 @@ public class Solution {
     }
 
     private boolean dfs(int[] counter, int[] quantity, int quantityId) {
-        if (quantityId < 0) return true;
-
+        if (quantityId < 0) {
+            return true;
+        }
         for (int i = 0; i < counter.length; i++) {
-            if (i > 0 && counter[i] == counter[i - 1]) continue;
-
+            if (i > 0 && counter[i] == counter[i - 1]) {
+                continue;
+            }
             if (counter[i] >= quantity[quantityId]) {
                 counter[i] -= quantity[quantityId];
-                if (dfs(counter, quantity, quantityId - 1)) return true;
+                if (dfs(counter, quantity, quantityId - 1)) {
+                    return true;
+                }
                 counter[i] += quantity[quantityId];
             }
         }
