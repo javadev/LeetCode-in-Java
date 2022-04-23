@@ -68,6 +68,7 @@ public class Solution {
             nextState += extro;
             max = Math.max(max, temp + dfs(x, y + 1, ic, ec - 1, nextState));
         }
-        return dp[x][y][ic][ec][state] = max;
+        dp[x][y][ic][ec][state] = max;
+        return max;
     }
 }
