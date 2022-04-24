@@ -4,6 +4,7 @@ package g1701_1800.s1719_number_of_ways_to_reconstruct_a_tree;
 
 import java.util.HashSet;
 
+@SuppressWarnings("java:S1119")
 public class Solution {
     public int checkWays(int[][] pairs) {
         int[][] adj = new int[501][501];
