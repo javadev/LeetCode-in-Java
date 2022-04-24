@@ -9,17 +9,17 @@ public class Solution {
     private final int mod = (int) Math.pow(10, 9) + 7;
 
     public int waysToSplit(int[] nums) {
-        int totalSum = 0;
+        int localTotalSum = 0;
         int[] sum = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
-            totalSum += nums[i];
-            sum[i] = totalSum;
+            localTotalSum += nums[i];
+            sum[i] = localTotalSum;
         }
 
-        if (totalSum == 0) {
+        if (localTotalSum == 0) {
             return (int) (getPerm(nums.length) % mod);
         }
-        this.totalSum = totalSum;
+        this.totalSum = localTotalSum;
         sumArr = sum;
 
         long cnt = 0;
@@ -29,7 +29,7 @@ public class Solution {
         int sum3 = nums[a3Ptr];
 
         while (a3Ptr - a1Ptr > 1) {
-            if (sum3 >= (totalSum - sum3) / 2) {
+            if (sum3 >= (localTotalSum - sum3) / 2) {
                 int r = findMax(a3Ptr, sum3);
                 if (r != -1) {
                     int l = findMin(a3Ptr, sum3);

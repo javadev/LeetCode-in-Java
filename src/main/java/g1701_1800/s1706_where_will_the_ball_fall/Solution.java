@@ -16,16 +16,14 @@ public class Solution {
                     currentJ++;
                     if (currentJ < n && grid[currentI][currentJ] == 1) {
                         currentI++;
-                    }
-                    else {
+                    } else {
                         break;
                     }
                 } else {
                     currentJ--;
                     if (currentJ >= 0 && grid[currentI][currentJ] == -1) {
                         currentI++;
-                    }
-                    else {
+                    } else {
                         break;
                     }
                 }
@@ -33,8 +31,7 @@ public class Solution {
 
             if (currentI == m) {
                 res[j] = currentJ;
-            }
-            else {
+            } else {
                 res[j] = -1;
             }
         }

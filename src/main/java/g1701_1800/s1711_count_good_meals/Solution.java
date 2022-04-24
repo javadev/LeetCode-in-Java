@@ -8,7 +8,9 @@ public class Solution {
 
     public int countPairs(int[] d) {
         HashMap<Integer, Integer> map = new HashMap<>();
-        for (int k : d) map.put(k, map.getOrDefault(k, 0) + 1);
+        for (int k : d) {
+            map.put(k, map.getOrDefault(k, 0) + 1);
+        }
 
         long result = 0;
         for (Iterator<Map.Entry<Integer, Integer>> it = map.entrySet().iterator(); it.hasNext(); ) {
