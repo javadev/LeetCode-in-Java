@@ -11,20 +11,32 @@ public class Solution {
         for (int j = 0; j < n; j++) {
             int currentJ = j;
             int currentI = 0;
-            while (currentJ >= 0 && currentJ < n && currentI < m) {
+            while (currentJ < n && currentI < m) {
                 if (grid[currentI][currentJ] == 1) {
                     currentJ++;
-                    if (currentJ < n && grid[currentI][currentJ] == 1) currentI++;
-                    else break;
+                    if (currentJ < n && grid[currentI][currentJ] == 1) {
+                        currentI++;
+                    }
+                    else {
+                        break;
+                    }
                 } else {
                     currentJ--;
-                    if (currentJ >= 0 && grid[currentI][currentJ] == -1) currentI++;
-                    else break;
+                    if (currentJ >= 0 && grid[currentI][currentJ] == -1) {
+                        currentI++;
+                    }
+                    else {
+                        break;
+                    }
                 }
             }
 
-            if (currentI == m) res[j] = currentJ;
-            else res[j] = -1;
+            if (currentI == m) {
+                res[j] = currentJ;
+            }
+            else {
+                res[j] = -1;
+            }
         }
         return res;
     }
