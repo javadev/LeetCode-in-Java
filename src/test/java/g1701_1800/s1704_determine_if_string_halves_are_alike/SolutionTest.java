@@ -15,4 +15,14 @@ class SolutionTest {
     void halvesAreAlike2() {
         assertThat(new Solution().halvesAreAlike("textbook"), equalTo(false));
     }
+
+    @Test
+    void halvesAreAlike3() {
+        assertThat(new Solution().halvesAreAlike(""), equalTo(false));
+    }
+
+    @Test
+    void halvesAreAlike4() {
+        assertThat(new Solution().halvesAreAlike("aeiouAEIOU"), equalTo(true));
+    }
 }
