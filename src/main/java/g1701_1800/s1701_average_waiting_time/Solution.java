@@ -15,6 +15,6 @@ public class Solution {
                 ans = ans + (ctime - customers[i][0]);
             }
         }
-        return (double) Math.round(ans / customers.length * 100000d) / 100000d;
+        return Math.round(ans / customers.length * 100000d) / 100000d;
     }
 }
