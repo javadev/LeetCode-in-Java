@@ -24,7 +24,6 @@ public class Solution {
 
     public int[] maximizeXor(int[] nums, int[][] queries) {
         Arrays.sort(nums);
-
         int len = queries.length;
         int[][] queryWithIndex = new int[len][3];
         for (int i = 0; i < len; i++) {
@@ -33,20 +32,16 @@ public class Solution {
             queryWithIndex[i][2] = i;
         }
         Arrays.sort(queryWithIndex, new QueryComparator());
-
         int numId = 0;
         int[] ans = new int[len];
-
         Node root = new Node();
         for (int i = 0; i < len; i++) {
             while (numId < nums.length && nums[numId] <= queryWithIndex[i][1]) {
                 addNumToTree(nums[numId], root);
                 numId++;
             }
-
             ans[queryWithIndex[i][2]] = maxXOR(queryWithIndex[i][0], root);
         }
-
         return ans;
     }
 
@@ -71,7 +66,6 @@ public class Solution {
         if (node.one == null && node.zero == null) {
             return -1;
         }
-
         int ans = 0;
         for (int i = 31; i >= 0 && node != null; i--) {
             int digit = (num >> i) & 1;
@@ -91,7 +85,6 @@ public class Solution {
                 }
             }
         }
-
         return ans;
     }
 }
