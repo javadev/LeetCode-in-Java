@@ -12,7 +12,7 @@ public class Solution {
         }
     }
 
-    private int helper(char v[], char c1, char c2, int score) {
+    private int helper(char[] v, char c1, char c2, int score) {
         int left = -1;
         int right = 0;
         int res = 0;

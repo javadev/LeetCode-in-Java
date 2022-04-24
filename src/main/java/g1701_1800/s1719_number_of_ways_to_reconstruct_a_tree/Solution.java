@@ -14,7 +14,7 @@ public class Solution {
             set.add(pair[0]);
             set.add(pair[1]);
         }
-        int N = set.size();
+        int n = set.size();
         int[] num = new int[501];
         for (int i = 0; i < 501; i++) {
             for (int j = 0; j < 501; j++) {
@@ -23,12 +23,12 @@ public class Solution {
         }
         int c = 0;
         for (int i = 0; i < 501; i++) {
-            if (num[i] == N - 1) {
+            if (num[i] == n - 1) {
                 c++;
             }
         }
         for (int j = 0; j < 501; j++) {
-            if (num[j] == N - 1) {
+            if (num[j] == n - 1) {
                 num[j] = 0;
                 for (int k = 0; k < 501; k++) {
                     if (adj[j][k] > 0) {
