@@ -11,7 +11,7 @@ public class Solution {
         int eatenApples = 0;
         for (int i = 0; i < apples.length || !minHeap.isEmpty(); i++) {
             if (i < apples.length) {
-                minHeap.offer(new int[]{i + days[i], apples[i]});
+                minHeap.offer(new int[] {i + days[i], apples[i]});
             }
             while (!minHeap.isEmpty() && (minHeap.peek()[0] <= i || minHeap.peek()[1] <= 0)) {
                 minHeap.poll();

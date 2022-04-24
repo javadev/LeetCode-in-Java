@@ -7,15 +7,14 @@ public class Solution {
         char[] bs = binary.toCharArray();
         int zcount = 0;
         int pos = -1;
-        for(int i = bs.length - 1; i >= 0; i--){
-            if(bs[i] == '0') {
+        for (int i = bs.length - 1; i >= 0; i--) {
+            if (bs[i] == '0') {
                 bs[i] = '1';
                 zcount++;
                 pos = i;
             }
-            
         }
-        if(pos >= 0) {
+        if (pos >= 0) {
             bs[pos + zcount - 1] = '0';
         }
         return new String(bs);
