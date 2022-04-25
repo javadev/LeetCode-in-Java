@@ -4,11 +4,11 @@ package g1701_1800.s1721_swapping_nodes_in_a_linked_list;
 
 import com_github_leetcode.ListNode;
 
+@SuppressWarnings("java:S2259")
 public class Solution {
     public ListNode swapNodes(ListNode head, int k) {
         int length = 0;
         int secondIndex;
-
         ListNode temp1 = null;
         ListNode temp2 = null;
         ListNode temp3 = head;
@@ -16,7 +16,6 @@ public class Solution {
             length++;
             temp3 = temp3.next;
         }
-
         secondIndex = length - k + 1;
         temp3 = head;
         try {
@@ -32,8 +31,8 @@ public class Solution {
             int value = temp1.val;
             temp1.val = temp2.val;
             temp2.val = value;
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+        } catch (Exception ignored) {
+            // ignore
         }
         return head;
     }
