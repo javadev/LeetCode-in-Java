@@ -8,6 +8,7 @@ import java.util.Deque;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("java:S3824")
 public class AuthenticationManager {
     int inc;
     Map<String, Integer> expireMap;

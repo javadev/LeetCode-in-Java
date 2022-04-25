@@ -8,7 +8,7 @@ public class Solution {
         int sl = -1;
         for (char ch : s.toCharArray()) {
             if (Character.isDigit(ch)) {
-                int n = (int) ch - '0';
+                int n = ch - '0';
                 if (n > largest) {
                     sl = largest;
                     largest = n;
