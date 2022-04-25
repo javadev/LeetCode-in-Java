@@ -6,12 +6,15 @@ package g1701_1800.s1722_minimize_hamming_distance_after_swap_operations;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Solution {
     public int minimumHammingDistance(int[] source, int[] target, int[][] allowedSwaps) {
-        int i, N = source.length, weight = 0;
-        int[] parent = new int[N];
-        for (i = 0; i < N; i++) {
+        int i;
+        int n = source.length;
+        int weight = 0;
+        int[] parent = new int[n];
+        for (i = 0; i < n; i++) {
             parent[i] = i;
         }
 
@@ -20,23 +23,23 @@ public class Solution {
         }
 
         HashMap<Integer, List<Integer>> components = new HashMap<>();
-        for (i = 0; i < N; i++) {
+        for (i = 0; i < n; i++) {
             find(i, parent);
             List<Integer> list = components.getOrDefault(parent[i], new ArrayList<>());
             list.add(i);
             components.put(parent[i], list);
         }
 
-        for (Integer key : components.keySet()) {
-            weight += getHammingDistance(source, target, components.get(key));
+        for (Map.Entry<Integer, List<Integer>> entry : components.entrySet()) {
+            weight += getHammingDistance(source, target, entry.getValue());
         }
 
         return weight;
     }
 
     private int getHammingDistance(int[] source, int[] target, List<Integer> indices) {
-        HashMap<Integer, Integer> list1 = new HashMap<Integer, Integer>();
-        HashMap<Integer, Integer> list2 = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> list1 = new HashMap<>();
+        HashMap<Integer, Integer> list2 = new HashMap<>();
 
         for (int i : indices) {
             list1.put(target[i], 1 + list1.getOrDefault(target[i], 0));
@@ -45,8 +48,8 @@ public class Solution {
 
         int size = indices.size();
 
-        for (int key : list1.keySet()) {
-            size -= Math.min(list1.get(key), list2.getOrDefault(key, 0));
+        for (Map.Entry<Integer, Integer> entry : list1.entrySet()) {
+            size -= Math.min(entry.getValue(), list2.getOrDefault(entry.getKey(), 0));
         }
 
         return size;

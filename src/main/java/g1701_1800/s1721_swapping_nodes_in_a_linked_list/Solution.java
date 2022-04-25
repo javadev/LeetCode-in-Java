@@ -19,18 +19,22 @@ public class Solution {
 
         secondIndex = length - k + 1;
         temp3 = head;
-        for (int i = 1; i <= length; i++) {
-            if (i == k) {
-                temp1 = temp3;
+        try {
+            for (int i = 1; i <= length; i++) {
+                if (i == k) {
+                    temp1 = temp3;
+                }
+                if (i == secondIndex) {
+                    temp2 = temp3;
+                }
+                temp3 = temp3.next;
             }
-            if (i == secondIndex) {
-                temp2 = temp3;
-            }
-            temp3 = temp3.next;
+            int value = temp1.val;
+            temp1.val = temp2.val;
+            temp2.val = value;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
-        int value = temp1.val;
-        temp1.val = temp2.val;
-        temp2.val = value;
         return head;
     }
 }
