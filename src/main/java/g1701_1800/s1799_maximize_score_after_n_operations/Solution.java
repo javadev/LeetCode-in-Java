@@ -31,7 +31,8 @@ public class Solution {
                 }
             }
         }
-        return memo[mask] = maxScore;
+        memo[mask] = maxScore;
+        return maxScore;
     }
 
     private int gcd(int a, int b) {
