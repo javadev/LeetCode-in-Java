@@ -15,7 +15,7 @@ class AuthenticationManagerTest {
         // Generates a new token with tokenId "aaa" at time 2.
         authenticationManager.generate("aaa", 2);
         // The token with tokenId "aaa" is the only unexpired one at time 6, so return 1.
-        assertThat(authenticationManager.countUnexpiredTokens(6), equalTo(2));
+        assertThat(authenticationManager.countUnexpiredTokens(6), equalTo(1));
         // Generates a new token with tokenId "bbb" at time 7.
         authenticationManager.generate("bbb", 7);
         // The token with tokenId "aaa" expired at time 7, and 8 >= 7, so at time 8 the renew
