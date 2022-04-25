@@ -1,16 +1,22 @@
 package g1701_1800.s1725_number_of_rectangles_that_can_form_the_largest_square;
 
-// #Easy #Array #2022_04_25_Time_9_ms_(9.22%)_Space_42.6_MB_(87.06%)
-
-import java.util.TreeMap;
+// #Easy #Array #2022_04_25_Time_1_ms_(100.00%)_Space_53.6_MB_(64.54%)
 
 public class Solution {
     public int countGoodRectangles(int[][] rectangles) {
-        TreeMap<Integer, Integer> map = new TreeMap<>();
-        for (int[] rec : rectangles) {
-            int min = Math.min(rec[0], rec[1]);
-            map.put(min, map.getOrDefault(min, 0) + 1);
+        int maxSoFar = 0;
+        int count = 0;
+        for (int[] rectangle : rectangles) {
+            int sqLen = Math.min(rectangle[0], rectangle[1]);
+            if (maxSoFar <= sqLen) {
+                if (maxSoFar < sqLen) {
+                    maxSoFar = sqLen;
+                    count = 1;
+                } else {
+                    count++;
+                }
+            }
         }
-        return map.lastEntry().getValue();
+        return count;
     }
 }
