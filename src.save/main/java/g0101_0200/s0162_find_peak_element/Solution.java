@@ -1,7 +1,7 @@
 package g0101_0200.s0162_find_peak_element;
 
 // #Medium #Top_Interview_Questions #Array #Binary_Search #Algorithm_II_Day_2_Binary_Search
-// #2022_03_04_Time_0_ms_(100.00%)_Space_43.1_MB_(21.18%)
+// #Binary_Search_II_Day_12 #2022_03_04_Time_0_ms_(100.00%)_Space_43.1_MB_(21.18%)
 
 public class Solution {
     public int findPeakElement(int[] nums) {
