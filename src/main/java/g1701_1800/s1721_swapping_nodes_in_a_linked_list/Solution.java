@@ -29,10 +29,11 @@ public class Solution {
             }
             node = node.next;
         }
-
-        int tem = beg.val;
-        beg.val = end.val;
-        end.val = tem;
+        if (beg != null) {
+            int tem = beg.val;
+            beg.val = end.val;
+            end.val = tem;
+        }
         return head;
     }
 }
