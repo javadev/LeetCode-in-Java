@@ -14,10 +14,10 @@ public class Solution {
             sb.append(word2.charAt(i));
         }
         if (min == size1) {
-            sb.append(word2.substring(size1, size2));
+            sb.append(word2, size1, size2);
         }
         if (min == size2) {
-            sb.append(word1.substring(size2, size1));
+            sb.append(word1, size2, size1);
         }
         return sb.toString();
     }
