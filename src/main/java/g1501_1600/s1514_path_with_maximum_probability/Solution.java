@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public double maxProbability(int n, int[][] edges, double[] succProb, int start, int end) {
         List<Integer>[] nodeToNodesList = new List[n];
