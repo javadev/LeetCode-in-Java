@@ -1,143 +1,122 @@
 package g0401_0500.s0432_all_oone_data_structure;
 
 // #Hard #Hash_Table #Design #Linked_List #Doubly_Linked_List
-// #2022_03_18_Time_97_ms_(54.00%)_Space_107_MB_(15.94%)
+// #2022_04_28_Time_87_ms_(62.81%)_Space_107.5_MB_(9.84%)
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class AllOne {
-    private static class Node {
-        String key;
-        int val;
-        Node prev;
-        Node next;
+    // maintain a doubly linked list of Buckets
+    private Bucket head;
+    private Bucket tail;
+    // for accessing a specific Bucket among the Bucket list in O(1) time
+    private Map<Integer, Bucket> countBucketMap;
+    // keep track of count of keys
+    private Map<String, Integer> keyCountMap;
 
-        Node(String key, int val) {
-            this.key = key;
-            this.val = val;
+    // each Bucket contains all the keys with the same count
+    private class Bucket {
+        int count;
+        Set<String> keySet;
+        Bucket next;
+        Bucket pre;
+
+        public Bucket(int cnt) {
+            count = cnt;
+            keySet = new HashSet<>();
         }
     }
-
-    private static class DoubleLinkedList {
-        Node head;
-        Node tail;
-
-        DoubleLinkedList() {}
-
-        // Swap adjacent nodes till the node fits to its position
-        Node fixOrder(Node node) {
-            while (node.next != null && node.val > node.next.val) {
-                swapAdjacentNodes(node, node.next);
-            }
-            while (node.prev != null && node.val < node.prev.val) {
-                swapAdjacentNodes(node.prev, node);
-            }
-            return node;
-        }
-
-        // Swap two adjacent nodes, where node1 -> node2
-        void swapAdjacentNodes(Node node1, Node node2) {
-            node1.next = node2.next;
-            node2.prev = node1.prev;
-            if (node1.next != null) {
-                node1.next.prev = node1;
-            }
-            if (node2.prev != null) {
-                node2.prev.next = node2;
-            }
-            node1.prev = node2;
-            node2.next = node1;
-            // node0 -> node2 -> node1 -> node3
-            if (node1 == head) {
-                head = node2;
-            }
-            if (node2 == tail) {
-                tail = node1;
-            }
-        }
-        // New node has counter 1 and should be at the head of the list
-        Node add(Node node) {
-            node.next = head;
-            if (head != null) {
-                head.prev = node;
-            }
-            head = node;
-            // is it is the first node
-            if (tail == null) {
-                tail = head;
-            }
-            return node;
-        }
-
-        void remove(Node node) {
-            if (node.prev != null) {
-                node.prev.next = node.next;
-            } else {
-                head = node.next;
-            }
-            if (node.next != null) {
-                node.next.prev = node.prev;
-            } else {
-                tail = node.prev;
-            }
-        }
-    }
-
-    private DoubleLinkedList dll = new DoubleLinkedList();
-    private Map<String, Node> counter = new HashMap<>();
 
     /* Initialize your data structure here. */
     public AllOne() {
-        // empty
+        head = new Bucket(Integer.MIN_VALUE);
+        tail = new Bucket(Integer.MAX_VALUE);
+        head.next = tail;
+        tail.pre = head;
+        countBucketMap = new HashMap<>();
+        keyCountMap = new HashMap<>();
     }
 
     /* Inserts a new key <Key> with value 1. Or increments an existing key by 1. */
     public void inc(String key) {
-        Node node = counter.get(key);
-        if (node == null) {
-            node = new Node(key, 1);
-            counter.put(key, node);
-            // add first
-            dll.add(node);
+        if (keyCountMap.containsKey(key)) {
+            changeKey(key, 1);
         } else {
-            node.val++;
-            // after increment/decrement node may have incorrect position.
-            dll.fixOrder(node);
+            keyCountMap.put(key, 1);
+            if (head.next.count != 1) {
+                addBucketAfter(new Bucket(1), head);
+            }
+            head.next.keySet.add(key);
+            countBucketMap.put(1, head.next);
         }
     }
 
     /* Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. */
     public void dec(String key) {
-        Node node = counter.get(key);
-        if (node == null) {
-            return;
-        }
-        node.val--;
-        if (node.val == 0) {
-            counter.remove(key);
-            // completely remove node from list
-            dll.remove(node);
-        } else {
-            // after increment/decrement node may have incorrect position.
-            dll.fixOrder(node);
+        if (keyCountMap.containsKey(key)) {
+            int count = keyCountMap.get(key);
+            if (count == 1) {
+                keyCountMap.remove(key);
+                removeKeyFromBucket(countBucketMap.get(count), key);
+            } else {
+                changeKey(key, -1);
+            }
         }
     }
 
     /* Returns one of the keys with maximal value. */
     public String getMaxKey() {
-        if (dll.tail == null) {
-            return "";
-        }
-        return dll.tail.key;
+        return tail.pre == head ? "" : (String) tail.pre.keySet.iterator().next();
     }
 
     /* Returns one of the keys with Minimal value. */
     public String getMinKey() {
-        if (dll.head == null) {
-            return "";
+        return head.next == tail ? "" : (String) head.next.keySet.iterator().next();
+    }
+
+    // helper function to make change on given key according to offset
+    private void changeKey(String key, int offset) {
+        int count = keyCountMap.get(key);
+        keyCountMap.put(key, count + offset);
+        Bucket curBucket = countBucketMap.get(count);
+        Bucket newBucket;
+        if (countBucketMap.containsKey(count + offset)) {
+            // target Bucket already exists
+            newBucket = countBucketMap.get(count + offset);
+        } else {
+            // add new Bucket
+            newBucket = new Bucket(count + offset);
+            countBucketMap.put(count + offset, newBucket);
+            addBucketAfter(newBucket, offset == 1 ? curBucket : curBucket.pre);
         }
-        return dll.head.key;
+        newBucket.keySet.add(key);
+        removeKeyFromBucket(curBucket, key);
+    }
+
+    private void removeKeyFromBucket(Bucket bucket, String key) {
+        bucket.keySet.remove(key);
+        if (bucket.keySet.isEmpty()) {
+            removeBucketFromList(bucket);
+            countBucketMap.remove(bucket.count);
+        }
+    }
+
+    private void removeBucketFromList(Bucket bucket) {
+        bucket.pre.next = bucket.next;
+        bucket.next.pre = bucket.pre;
+        bucket.next = null;
+        bucket.pre = null;
+    }
+
+    // add newBucket after preBucket
+    private void addBucketAfter(Bucket newBucket, Bucket preBucket) {
+        newBucket.pre = preBucket;
+        newBucket.next = preBucket.next;
+        preBucket.next.pre = newBucket;
+        preBucket.next = newBucket;
     }
 }
 
