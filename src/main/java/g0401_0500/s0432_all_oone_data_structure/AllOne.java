@@ -98,7 +98,7 @@ public class AllOne {
 
     private void removeKeyFromBucket(Bucket bucket, String key) {
         bucket.keySet.remove(key);
-        if (bucket.keySet.size() == 0) {
+        if (bucket.keySet.isEmpty()) {
             removeBucketFromList(bucket);
             countBucketMap.remove(bucket.count);
         }
