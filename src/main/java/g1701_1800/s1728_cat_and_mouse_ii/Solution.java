@@ -13,7 +13,8 @@ public class Solution {
     private int[][][] memo;
 
     public boolean canMouseWin(String[] grid, int catJump, int mouseJump) {
-        int m = grid.length, n = grid[0].length();
+        int m = grid.length;
+        int n = grid[0].length();
         int mousePos = 0;
         int catPos = 0;
         for (int i = 0; i < m; i++) {
@@ -37,8 +38,8 @@ public class Solution {
                 if (c == '#' || c == 'F') {
                     continue;
                 }
-                int CAT_TURN = 1;
-                dfs(i * n + j, foodPos, CAT_TURN);
+                int catTurn = 1;
+                dfs(i * n + j, foodPos, catTurn);
             }
         }
         return memo[mousePos][catPos][mouseTurn] < 0;
@@ -46,7 +47,8 @@ public class Solution {
 
     private List<Integer>[] buildGraph(int jump, String[] grid) {
         int[][] dirs = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
-        int m = grid.length, n = grid[0].length();
+        int m = grid.length;
+        int n = grid[0].length();
         List<Integer>[] graph = new List[m * n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -58,7 +60,8 @@ public class Solution {
                 list.add(i * n + j);
                 for (int[] dir : dirs) {
                     for (int step = 1; step <= jump; step++) {
-                        int x = i + dir[0] * step, y = j + dir[1] * step;
+                        int x = i + dir[0] * step;
+                        int y = j + dir[1] * step;
                         if (x < 0 || x >= m || y < 0 || y >= n || grid[x].charAt(y) == '#') {
                             break;
                         }
@@ -70,7 +73,7 @@ public class Solution {
         return graph;
     }
 
-    private void dfs(int p1, int p2, int turn) { // p1: player 1, p2: player 2
+    private void dfs(int p1, int p2, int turn) {
         if (p1 == p2) {
             return;
         }
