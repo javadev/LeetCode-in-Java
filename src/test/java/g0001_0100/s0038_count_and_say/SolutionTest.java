@@ -8,10 +8,21 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void countAndSay() {
-        Solution solution = new Solution();
-        assertThat(solution.countAndSay(1), equalTo("1"));
-        assertThat(solution.countAndSay(2), equalTo("11"));
-        assertThat(solution.countAndSay(3), equalTo("21"));
-        assertThat(solution.countAndSay(4), equalTo("1211"));
+        assertThat(new Solution().countAndSay(1), equalTo("1"));
+    }
+
+    @Test
+    void countAndSay2() {
+        assertThat(new Solution().countAndSay(2), equalTo("11"));
+    }
+
+    @Test
+    void countAndSay3() {
+        assertThat(new Solution().countAndSay(3), equalTo("21"));
+    }
+
+    @Test
+    void countAndSay4() {
+        assertThat(new Solution().countAndSay(4), equalTo("1211"));
     }
 }

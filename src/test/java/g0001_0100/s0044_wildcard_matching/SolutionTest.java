@@ -8,11 +8,26 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void isMatch() {
-        Solution solution = new Solution();
-        assertThat(solution.isMatch("aa", "a"), equalTo(false));
-        assertThat(solution.isMatch("aa", "*"), equalTo(true));
-        assertThat(solution.isMatch("cb", "?a"), equalTo(false));
-        assertThat(solution.isMatch("adceb", "*a*b"), equalTo(true));
-        assertThat(solution.isMatch("acdcb", "a*c?b"), equalTo(false));
+        assertThat(new Solution().isMatch("aa", "a"), equalTo(false));
+    }
+
+    @Test
+    void isMatch2() {
+        assertThat(new Solution().isMatch("aa", "*"), equalTo(true));
+    }
+
+    @Test
+    void isMatch3() {
+        assertThat(new Solution().isMatch("cb", "?a"), equalTo(false));
+    }
+
+    @Test
+    void isMatch4() {
+        assertThat(new Solution().isMatch("adceb", "*a*b"), equalTo(true));
+    }
+
+    @Test
+    void isMatch5() {
+        assertThat(new Solution().isMatch("acdcb", "a*c?b"), equalTo(false));
     }
 }
