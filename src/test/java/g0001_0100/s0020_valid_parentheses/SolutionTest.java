@@ -8,11 +8,26 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void isValid() {
-        Solution solution = new Solution();
-        assertThat(solution.isValid("()"), equalTo(true));
-        assertThat(solution.isValid("()[]{}"), equalTo(true));
-        assertThat(solution.isValid("(]"), equalTo(false));
-        assertThat(solution.isValid("([)]"), equalTo(false));
-        assertThat(solution.isValid("{[]}"), equalTo(true));
+        assertThat(new Solution().isValid("()"), equalTo(true));
+    }
+
+    @Test
+    void isValid2() {
+        assertThat(new Solution().isValid("()[]{}"), equalTo(true));
+    }
+
+    @Test
+    void isValid3() {
+        assertThat(new Solution().isValid("(]"), equalTo(false));
+    }
+
+    @Test
+    void isValid4() {
+        assertThat(new Solution().isValid("([)]"), equalTo(false));
+    }
+
+    @Test
+    void isValid5() {
+        assertThat(new Solution().isValid("{[]}"), equalTo(true));
     }
 }

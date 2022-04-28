@@ -13,4 +13,9 @@ class SolutionTest {
                 new Solution().generateParenthesis(3),
                 equalTo(Arrays.asList("((()))", "(()())", "(())()", "()(())", "()()()")));
     }
+
+    @Test
+    void generateParenthesis2() {
+        assertThat(new Solution().generateParenthesis(1), equalTo(Arrays.asList("()")));
+    }
 }
