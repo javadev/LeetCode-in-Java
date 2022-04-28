@@ -6,13 +6,13 @@ public class Solution {
     public double averageWaitingTime(int[][] customers) {
         int ctime = 0;
         double ans = 0;
-        for (int i = 0; i < customers.length; i++) {
-            if (customers[i][0] >= ctime) {
-                ctime = customers[i][0] + customers[i][1];
-                ans = ans + (ctime - customers[i][0]);
+        for (int[] customer : customers) {
+            if (customer[0] >= ctime) {
+                ctime = customer[0] + customer[1];
+                ans = ans + (ctime - customer[0]);
             } else {
-                ctime = ctime + customers[i][1];
-                ans = ans + (ctime - customers[i][0]);
+                ctime = ctime + customer[1];
+                ans = ans + (ctime - customer[0]);
             }
         }
         return Math.round(ans / customers.length * 100000d) / 100000d;
