@@ -6,8 +6,9 @@ package g1701_1800.s1728_cat_and_mouse_ii;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
-    private final int mouseTurn = 0;
+    private static final int MOUSE_TURN = 0;
     private final List<Integer>[][] graphs = new List[2][];
     private int foodPos;
     private int[][][] memo;
@@ -42,7 +43,7 @@ public class Solution {
                 dfs(i * n + j, foodPos, catTurn);
             }
         }
-        return memo[mousePos][catPos][mouseTurn] < 0;
+        return memo[mousePos][catPos][MOUSE_TURN] < 0;
     }
 
     private List<Integer>[] buildGraph(int jump, String[] grid) {
@@ -86,9 +87,7 @@ public class Solution {
         memo[p1][p2][turn] = -1;
         turn ^= 1;
         for (int w : graphs[turn][p2]) {
-            if (turn == mouseTurn) {
-                dfs(w, p1, turn);
-            } else if (++memo[w][p1][turn] == graphs[turn][w].size()) {
+            if (turn == MOUSE_TURN || ++memo[w][p1][turn] == graphs[turn][w].size()) {
                 dfs(w, p1, turn);
             }
         }
