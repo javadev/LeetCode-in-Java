@@ -6,7 +6,7 @@ package g0101_0200.s0146_lru_cache;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LruCache {
+public class LRUCache {
     private static class LruCacheNode {
         int key;
         int value;
@@ -26,7 +26,7 @@ public class LruCache {
     // remove here
     private LruCacheNode tail;
 
-    public LruCache(int cap) {
+    public LRUCache(int cap) {
         capacity = cap;
     }
 
@@ -120,3 +120,10 @@ public class LruCache {
         head = node;
     }
 }
+
+/*
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache obj = new LRUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
+ */
