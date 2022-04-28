@@ -18,7 +18,7 @@ public class AllOne {
     private Map<String, Integer> keyCountMap;
 
     // each Bucket contains all the keys with the same count
-    private class Bucket {
+    private static class Bucket {
         int count;
         Set<String> keySet;
         Bucket next;

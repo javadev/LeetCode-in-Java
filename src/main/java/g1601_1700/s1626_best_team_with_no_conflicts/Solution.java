@@ -42,10 +42,9 @@ public class Solution {
             int x1 = p[i].score + find(p, i + 1, p[i].age, n);
             int x2 = find(p, i + 1, max, n);
             memo[i][max] = Math.max(x1, x2);
-            return memo[i][max];
         } else {
             memo[i][max] = find(p, i + 1, max, n);
-            return memo[i][max];
         }
+        return memo[i][max];
     }
 }
