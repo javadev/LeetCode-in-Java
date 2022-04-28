@@ -20,7 +20,7 @@ import org.zapodot.junit.db.common.CompatibilityMode;
 @EmbeddedDatabaseTest(
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
-                "CREATE TABLE Scores(id INTEGER PRIMARY KEY, score decimal); "
+                "CREATE TABLE Scores(id INTEGER PRIMARY KEY, score float); "
                         + "INSERT INTO Scores(id, score) VALUES (1, 3.50); "
                         + "INSERT INTO Scores(id, score) VALUES (2, 3.65); "
                         + "INSERT INTO Scores(id, score) VALUES (3, 4.00); "
