@@ -7,8 +7,21 @@ import org.junit.jupiter.api.Test;
 
 class TreeAncestorTest {
     @Test
-    void treeAncestorTest() {
+    void treeAncestor() {
         TreeAncestor treeAncestor = new TreeAncestor(7, new int[] {-1, 0, 0, 1, 1, 2, 2});
+        assertThat(treeAncestor.getKthAncestor(3, 1), equalTo(1));
+        assertThat(treeAncestor.getKthAncestor(5, 2), equalTo(0));
+        assertThat(treeAncestor.getKthAncestor(6, 3), equalTo(-1));
+    }
+
+    @Test
+    void treeAncestor2() {
+        TreeAncestor treeAncestor =
+                new TreeAncestor(
+                        21,
+                        new int[] {
+                            -1, 0, 0, 1, 1, 2, 2, -1, 0, 0, 1, 1, 2, 2, -1, 0, 0, 1, 1, 2, 2
+                        });
         assertThat(treeAncestor.getKthAncestor(3, 1), equalTo(1));
         assertThat(treeAncestor.getKthAncestor(5, 2), equalTo(0));
         assertThat(treeAncestor.getKthAncestor(6, 3), equalTo(-1));
