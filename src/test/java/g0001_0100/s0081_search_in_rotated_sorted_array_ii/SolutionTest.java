@@ -8,8 +8,11 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void search() {
-        Solution solution = new Solution();
-        assertThat(solution.search(new int[] {2, 5, 6, 0, 0, 1, 2}, 0), equalTo(true));
-        assertThat(solution.search(new int[] {2, 5, 6, 0, 0, 1, 2}, 3), equalTo(false));
+        assertThat(new Solution().search(new int[] {2, 5, 6, 0, 0, 1, 2}, 0), equalTo(true));
+    }
+
+    @Test
+    void search2() {
+        assertThat(new Solution().search(new int[] {2, 5, 6, 0, 0, 1, 2}, 3), equalTo(false));
     }
 }
