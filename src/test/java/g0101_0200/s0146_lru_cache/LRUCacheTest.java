@@ -5,10 +5,10 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-class LruCacheTest {
+class LRUCacheTest {
     @Test
     void lruCache() {
-        LruCache lruCache = new LruCache(2);
+        LRUCache lruCache = new LRUCache(2);
         // cache is {1=1}
         lruCache.put(1, 1);
         // cache is {1=1, 2=2}
