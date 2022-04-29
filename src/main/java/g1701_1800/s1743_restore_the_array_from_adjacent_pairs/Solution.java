@@ -25,9 +25,9 @@ public class Solution {
 
         int[] res = new int[graph.size()];
 
-        for (Integer key : graph.keySet()) {
-            if (graph.get(key).size() == 1) {
-                res[0] = key;
+        for (Map.Entry<Integer, List<Integer>> entry : graph.entrySet()) {
+            if (entry.getValue().size() == 1) {
+                res[0] = entry.getKey();
                 break;
             }
         }
