@@ -1,38 +1,22 @@
 package g1401_1500.s1401_circle_and_rectangle_overlapping;
 
-// #Medium #Math #Geometry #2022_03_25_Time_2_ms_(6.67%)_Space_41.2_MB_(25.00%)
+// #Medium #Math #Geometry #2022_04_29_Time_0_ms_(100.00%)_Space_40.5_MB_(68.97%)
 
 public class Solution {
     public boolean checkOverlap(
-            int radius, int xCenter, int yCenter, int x1, int y1, int x2, int y2) {
-        if (x1 <= xCenter && x2 >= xCenter && y1 <= yCenter && y2 >= yCenter) {
-            return true;
-        }
-        int circleDistance = radius * radius;
-        for (int x = x1; x <= x2; x++) {
-            if (dist(x, y1, xCenter, yCenter) <= circleDistance) {
-                return true;
-            }
-        }
-        for (int x = x1; x <= x2; x++) {
-            if (dist(x, y2, xCenter, yCenter) <= circleDistance) {
-                return true;
-            }
-        }
-        for (int y = y1; y <= y2; y++) {
-            if (dist(x1, y, xCenter, yCenter) <= circleDistance) {
-                return true;
-            }
-        }
-        for (int y = y1; y <= y2; y++) {
-            if (dist(x2, y, xCenter, yCenter) <= circleDistance) {
-                return true;
-            }
-        }
-        return false;
+            int radius, int x_center, int y_center, int x1, int y1, int x2, int y2) {
+        // Find the closest point to the circle within the rectangle
+        int closestX = clamp(x_center, x1, x2);
+        int closestY = clamp(y_center, y1, y2);
+        // Calculate the distance between the circle's center and this closest point
+        int distanceX = x_center - closestX;
+        int distanceY = y_center - closestY;
+        // If the distance is less than the circle's radius, an intersection occurs
+        int distanceSquared = distanceX * distanceX + distanceY * distanceY;
+        return distanceSquared <= radius * radius;
     }
 
-    private int dist(int x1, int y1, int x2, int y2) {
-        return (x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2);
+    private int clamp(int val, int min, int max) {
+        return Math.max(min, Math.min(max, val));
     }
 }
