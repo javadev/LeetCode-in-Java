@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    private final int mod = 1_000_000_007;
+    private static final int MOD = 1_000_000_007;
     private long[][] tri;
     private List<Integer> primes;
 
@@ -40,7 +40,7 @@ public class Solution {
         for (int i = 0; i <= m; i++) {
             res[i][0] = 1;
             for (int j = 1; j <= Math.min(n, i); j++) {
-                res[i][j] = (res[i - 1][j - 1] + res[i - 1][j]) % mod;
+                res[i][j] = (res[i - 1][j - 1] + res[i - 1][j]) % MOD;
             }
         }
         return res;
@@ -57,8 +57,8 @@ public class Solution {
                 cnt++;
                 target /= prime;
             }
-            res = (res * tri[cnt + n - 1][cnt]) % mod;
+            res = (res * tri[cnt + n - 1][cnt]) % MOD;
         }
-        return target > 1 ? (int) (res * n % mod) : (int) res;
+        return target > 1 ? (int) (res * n % MOD) : (int) res;
     }
 }

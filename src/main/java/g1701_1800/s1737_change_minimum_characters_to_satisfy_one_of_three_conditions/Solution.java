@@ -7,7 +7,8 @@ public class Solution {
     public int minCharacters(String s1, String s2) {
         int[] a = new int[26];
         int[] b = new int[26];
-        int l1 = s1.length(), l2 = s2.length();
+        int l1 = s1.length();
+        int l2 = s2.length();
         for (char i : s1.toCharArray()) {
             a[i - 'a']++;
         }
