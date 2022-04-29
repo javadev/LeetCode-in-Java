@@ -7,21 +7,20 @@ import java.util.Map;
 
 public class Solution {
     public boolean uniqueOccurrences(int[] arr) {
-        Map<Integer, Integer> mp = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < arr.length; i++) {
-            if (mp.containsKey(arr[i])) {
-                mp.put(arr[i], mp.get(arr[i]) + 1);
+            if (map.containsKey(arr[i])) {
+                map.put(arr[i], map.get(arr[i]) + 1);
             } else {
-                mp.put(arr[i], 1);
+                map.put(arr[i], 1);
             }
         }
-        // map for check unique number of  count
+        // map for check unique number of count
         Map<Integer, Integer> uni = new HashMap<>();
-        for (Integer val : mp.values()) {
+        for (Integer val : map.values()) {
             if (uni.containsKey(val)) {
                 return false;
             } else {
-
                 uni.put(val, 1);
             }
         }
