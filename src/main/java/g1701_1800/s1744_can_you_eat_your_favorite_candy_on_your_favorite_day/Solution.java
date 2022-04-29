@@ -15,7 +15,6 @@ public class Solution {
             long cap = queries[i][2];
             result[i] = ((day + 1) * cap > candiesComm[type]) && day < candiesComm[type + 1];
         }
-
         return result;
     }
 }
