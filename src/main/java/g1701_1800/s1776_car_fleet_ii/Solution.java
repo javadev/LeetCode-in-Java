@@ -9,15 +9,12 @@ import java.util.LinkedList;
 public class Solution {
     public double[] getCollisionTimes(int[][] cars) {
         Deque<Integer> stack = new LinkedList<>();
-
         int n = cars.length;
         double[] ans = new double[n];
-
         for (int i = n - 1; i >= 0; i--) {
             ans[i] = -1.0;
             int[] presentCar = cars[i];
             int presentCarSpeed = presentCar[1];
-
             while (!stack.isEmpty()) {
                 int previousCar = stack.peekLast();
                 int previousCarSpeed = cars[previousCar][1];
@@ -29,10 +26,8 @@ public class Solution {
                 }
                 stack.pollLast();
             }
-
             stack.offerLast(i);
         }
-
         return ans;
     }
 
