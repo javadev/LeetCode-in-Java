@@ -44,12 +44,14 @@ public class Solution {
         pq.add(new Pair(n, 0));
         while (pq.size() > 0) {
             Pair rem = pq.remove();
-            if (vis[rem.v]) continue;
+            if (vis[rem.v]) {
+                continue;
+            }
             dtl[rem.v] = rem.cwt;
             vis[rem.v] = true;
-            for (Edge E : graph.get(rem.v)) {
-                if (!vis[E.v]) {
-                    pq.add(new Pair(E.v, rem.cwt + E.wt));
+            for (Edge edge : graph.get(rem.v)) {
+                if (!vis[edge.v]) {
+                    pq.add(new Pair(edge.v, rem.cwt + edge.wt));
                 }
             }
         }
@@ -58,15 +60,17 @@ public class Solution {
     }
 
     private int dfs(List<List<Edge>> graph, int vtx, boolean[] vis, int n) {
-        if (vtx == n) return 1;
+        if (vtx == n) {
+            return 1;
+        }
         long ans = 0;
         vis[vtx] = true;
-        for (Edge E : graph.get(vtx)) {
-            if (!vis[E.v] && dtl[E.v] < dtl[vtx]) {
-                int x = dfs(graph, E.v, vis, n);
+        for (Edge edge : graph.get(vtx)) {
+            if (!vis[edge.v] && dtl[edge.v] < dtl[vtx]) {
+                int x = dfs(graph, edge.v, vis, n);
                 ans = (ans + x) % M;
-            } else if (dtl[E.v] < dtl[vtx] && vis[E.v]) {
-                ans = (ans + dp[E.v]) % M;
+            } else if (dtl[edge.v] < dtl[vtx] && vis[edge.v]) {
+                ans = (ans + dp[edge.v]) % M;
             }
         }
         dp[vtx] = (int) ans;
