@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Map;
 
 public class Solution {
-
     private static class Result {
         private Map<List<String>, Integer> map;
 
@@ -130,11 +129,11 @@ public class Solution {
         Map<List<String>, Integer> map1 = r1.getMap();
         Map<List<String>, Integer> map2 = r2.getMap();
         Map<List<String>, Integer> map = new HashMap<>();
-        for (List<String> key1 : map1.keySet()) {
-            map.put(key1, map.getOrDefault(key1, 0) + map1.get(key1));
+        for (Map.Entry<List<String>, Integer> entry1 : map1.entrySet()) {
+            map.put(entry1.getKey(), map.getOrDefault(entry1.getKey(), 0) + entry1.getValue());
         }
-        for (List<String> key2 : map2.keySet()) {
-            map.put(key2, map.getOrDefault(key2, 0) - map2.get(key2));
+        for (Map.Entry<List<String>, Integer> entry2 : map2.entrySet()) {
+            map.put(entry2.getKey(), map.getOrDefault(entry2.getKey(), 0) - entry2.getValue());
         }
         return new Result(map);
     }
