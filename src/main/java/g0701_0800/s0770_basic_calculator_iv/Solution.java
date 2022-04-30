@@ -9,7 +9,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@SuppressWarnings("java:S1104")
 public class Solution {
 
     private static class Result {
@@ -103,12 +102,12 @@ public class Solution {
         Map<List<String>, Integer> map1 = r1.getMap();
         Map<List<String>, Integer> map2 = r2.getMap();
         Map<List<String>, Integer> map = new HashMap<>();
-        for (List<String> key1 : map1.keySet()) {
-            for (List<String> key2 : map2.keySet()) {
-                List<String> key = new ArrayList<>(key1);
-                key.addAll(key2);
+        for (Map.Entry<List<String>, Integer> entry1 : map1.entrySet()) {
+            for (Map.Entry<List<String>, Integer> entry2 : map2.entrySet()) {
+                List<String> key = new ArrayList<>(entry1.getKey());
+                key.addAll(entry2.getKey());
                 Collections.sort(key);
-                map.put(key, map.getOrDefault(key, 0) + map1.get(key1) * map2.get(key2));
+                map.put(key, map.getOrDefault(key, 0) + entry1.getValue() * entry2.getValue());
             }
         }
         return new Result(map);
@@ -118,11 +117,11 @@ public class Solution {
         Map<List<String>, Integer> map1 = r1.getMap();
         Map<List<String>, Integer> map2 = r2.getMap();
         Map<List<String>, Integer> map = new HashMap<>();
-        for (List<String> key1 : map1.keySet()) {
-            map.put(key1, map.getOrDefault(key1, 0) + map1.get(key1));
+        for (Map.Entry<List<String>, Integer> entry1 : map1.entrySet()) {
+            map.put(entry1.getKey(), map.getOrDefault(entry1.getKey(), 0) + entry1.getValue());
         }
-        for (List<String> key2 : map2.keySet()) {
-            map.put(key2, map.getOrDefault(key2, 0) + map2.get(key2));
+        for (Map.Entry<List<String>, Integer> entry2 : map2.entrySet()) {
+            map.put(entry2.getKey(), map.getOrDefault(entry2.getKey(), 0) + entry2.getValue());
         }
         return new Result(map);
     }
