@@ -6,7 +6,7 @@ package g1701_1800.s1766_tree_of_coprimes;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-@SuppressWarnings("java:S107")
+@SuppressWarnings({"unchecked", "java:S107"})
 public class Solution {
     private void dfs(
             int[] v2n,
