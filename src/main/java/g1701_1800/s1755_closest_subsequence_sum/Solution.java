@@ -12,7 +12,7 @@ public class Solution {
     public int minAbsDifference(int[] nums, int goal) {
         int n = nums.length;
         int nFirst = (int) Math.pow(2, (double) n / 2);
-        int nSecond = (int) Math.pow(2, n - n / 2);
+        int nSecond = (int) Math.pow(2, n - (double) n / 2);
         int[] first = new int[nFirst];
         int[] second = new int[nSecond];
         helper(nums, first, 0, n / 2 - 1);
