@@ -30,24 +30,24 @@ public class Solution {
 
         int[] count = new int[2 * maxDegree + 1];
 
-        for (int d1 : degreeCount.keySet()) {
-            for (int d2 : degreeCount.keySet()) {
-                count[d1 + d2] +=
+        for (Map.Entry<Integer, Integer> d1 : degreeCount.entrySet()) {
+            for (Map.Entry<Integer, Integer> d2 : degreeCount.entrySet()) {
+                count[d1.getKey() + d2.getKey()] +=
                         (d1 == d2)
-                                ? degreeCount.get(d1) * (degreeCount.get(d1) - 1)
-                                : degreeCount.get(d1) * degreeCount.get(d2);
+                                ? d1.getValue() * (d1.getValue() - 1)
+                                : d1.getValue() * d2.getValue();
             }
         }
         for (int i = 0; i < count.length; i++) {
             count[i] /= 2;
         }
 
-        for (int e : edgeCount.keySet()) {
-            int u = e / n;
-            int v = e % n;
+        for (Map.Entry<Integer, Integer> e : edgeCount.entrySet()) {
+            int u = e.getKey() / n;
+            int v = e.getKey() % n;
 
             count[degree[u] + degree[v]]--;
-            count[degree[u] + degree[v] - edgeCount.get(e)]++;
+            count[degree[u] + degree[v] - e.getValue()]++;
         }
 
         for (int i = count.length - 2; i >= 0; i--) {
