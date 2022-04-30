@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
+@SuppressWarnings("java:S1210")
 public class Solution {
     private static class Pair implements Comparable<Pair> {
         int v;
@@ -42,7 +43,7 @@ public class Solution {
         boolean[] vis = new boolean[n + 1];
         dtl = new int[n + 1];
         pq.add(new Pair(n, 0));
-        while (pq.size() > 0) {
+        while (!pq.isEmpty()) {
             Pair rem = pq.remove();
             if (vis[rem.v]) {
                 continue;
