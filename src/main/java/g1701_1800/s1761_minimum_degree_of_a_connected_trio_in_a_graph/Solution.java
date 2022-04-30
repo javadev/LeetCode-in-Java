@@ -6,14 +6,12 @@ public class Solution {
     public int minTrioDegree(int n, int[][] edges) {
         int[] degrees = new int[n + 1];
         int[][] adjMatrix = new int[n + 1][n + 1];
-
         for (int[] edge : edges) {
             adjMatrix[edge[0]][edge[1]] = 1;
             adjMatrix[edge[1]][edge[0]] = 1;
             degrees[edge[0]]++;
             degrees[edge[1]]++;
         }
-
         int minTrios = Integer.MAX_VALUE;
         for (int i = 1; i <= n; i++) {
             for (int j = i + 1; j <= n; j++) {
