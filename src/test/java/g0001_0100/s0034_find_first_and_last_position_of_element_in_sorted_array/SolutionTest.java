@@ -12,4 +12,18 @@ class SolutionTest {
         int[] actual = new Solution().searchRange(new int[] {5, 7, 7, 8, 8, 10}, 8);
         assertThat(actual, equalTo(expected));
     }
+
+    @Test
+    void searchRange2() {
+        int[] expected = new int[] {-1, -1};
+        int[] actual = new Solution().searchRange(new int[] {5, 7, 7, 8, 8, 10}, 6);
+        assertThat(actual, equalTo(expected));
+    }
+
+    @Test
+    void searchRange3() {
+        int[] expected = new int[] {-1, -1};
+        int[] actual = new Solution().searchRange(new int[] {}, 0);
+        assertThat(actual, equalTo(expected));
+    }
 }
