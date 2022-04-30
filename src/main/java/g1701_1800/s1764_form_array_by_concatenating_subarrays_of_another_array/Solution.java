@@ -8,7 +8,6 @@ import java.util.List;
 
 public class Solution {
     public boolean canChoose(int[][] groups, int[] nums) {
-        int n = groups.length;
         List<Integer> numsInt = new ArrayList<>();
         for (int num : nums) {
             numsInt.add(num);

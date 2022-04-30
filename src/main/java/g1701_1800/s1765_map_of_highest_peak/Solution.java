@@ -23,9 +23,11 @@ public class Solution {
         while (!q.isEmpty()) {
             Queue<int[]> q1 = new LinkedList<>();
             for (int[] cur : q) {
-                int x = cur[0], y = cur[1];
+                int x = cur[0];
+                int y = cur[1];
                 for (int i = 0; i < 4; i++) {
-                    int nx = x + dir[i], ny = y + dir[i + 1];
+                    int nx = x + dir[i];
+                    int ny = y + dir[i + 1];
                     if (nx >= 0
                             && nx < isWater.length
                             && ny >= 0
