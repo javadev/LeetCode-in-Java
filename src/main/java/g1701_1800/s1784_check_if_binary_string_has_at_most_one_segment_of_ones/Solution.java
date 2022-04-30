@@ -5,7 +5,8 @@ package g1701_1800.s1784_check_if_binary_string_has_at_most_one_segment_of_ones;
 public class Solution {
     public boolean checkOnesSegment(String s) {
         boolean metOne = false;
-        for (int i = 0; i < s.length(); i++) {
+        int i = 0;
+        while (i < s.length()) {
             if (s.charAt(i) == '1' && metOne) {
                 return false;
             }
@@ -15,6 +16,7 @@ public class Solution {
                     i++;
                 }
             }
+            i++;
         }
         return true;
     }
