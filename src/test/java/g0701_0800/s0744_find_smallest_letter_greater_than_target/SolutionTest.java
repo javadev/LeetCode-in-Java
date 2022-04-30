@@ -23,4 +23,10 @@ class SolutionTest {
         assertThat(
                 new Solution().nextGreatestLetter(new char[] {'c', 'f', 'j'}, 'd'), equalTo('f'));
     }
+
+    @Test
+    void nextGreatestLetter4() {
+        assertThat(
+                new Solution().nextGreatestLetter(new char[] {'c', 'f', 'j'}, 'k'), equalTo('c'));
+    }
 }
