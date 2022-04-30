@@ -5,14 +5,14 @@ package g1701_1800.s1751_maximum_number_of_events_that_can_be_attended_ii;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Optional;
 
 public class Solution {
     public int maxValue(int[][] events, int k) {
         if (k == 1) {
-            boolean present =
-                    Arrays.stream(events).max(Comparator.comparingInt(e -> e[2])).isPresent();
-            if (present) {
-                return Arrays.stream(events).max(Comparator.comparingInt(e -> e[2])).get()[2];
+            Optional<int[]> value = Arrays.stream(events).max(Comparator.comparingInt(e -> e[2]));
+            if (value.isPresent()) {
+                return value.get()[2];
             } else {
                 throw new NullPointerException();
             }
