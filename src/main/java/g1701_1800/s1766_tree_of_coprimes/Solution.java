@@ -29,8 +29,8 @@ public class Solution {
         }
         ans[node] = n;
 
-        int v2n_old = v2n[v];
-        int v2d_old = v2d[v];
+        int v2NOld = v2n[v];
+        int v2DOld = v2d[v];
 
         v2n[v] = node;
         v2d[v] = depth;
@@ -41,8 +41,8 @@ public class Solution {
             dfs(v2n, v2d, depth + 1, node, child, ans, nums, neighbors);
         }
 
-        v2n[v] = v2n_old;
-        v2d[v] = v2d_old;
+        v2n[v] = v2NOld;
+        v2d[v] = v2DOld;
     }
 
     private int gcd(int x, int y) {
@@ -54,7 +54,9 @@ public class Solution {
         int n = nums.length;
 
         ArrayList<Integer>[] neighbors = new ArrayList[n];
-        for (int i = 0; i < n; i++) neighbors[i] = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            neighbors[i] = new ArrayList<>();
+        }
         for (int[] edge : edges) {
             neighbors[edge[0]].add(edge[1]);
             neighbors[edge[1]].add(edge[0]);

@@ -12,11 +12,12 @@ public class Solution {
         int[] prev = new int[m + 1];
 
         while (--row >= 0) {
-            for (int i = 0; i <= row; ++i)
+            for (int i = 0; i <= row; ++i) {
                 dp[i] =
                         Math.max(
                                 prev[i] + mult[row] * nums[n - row + i - 1],
                                 prev[i + 1] + mult[row] * nums[i]);
+            }
 
             prev = dp;
         }
