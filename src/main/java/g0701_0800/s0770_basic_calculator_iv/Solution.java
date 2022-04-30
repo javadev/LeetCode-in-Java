@@ -1,158 +1,193 @@
 package g0701_0800.s0770_basic_calculator_iv;
 
 // #Hard #String #Hash_Table #Math #Stack #Recursion
-// #2022_03_26_Time_17_ms_(66.18%)_Space_45.8_MB_(60.29%)
+// #2022_04_30_Time_8_ms_(96.92%)_Space_42.9_MB_(93.85%)
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-@SuppressWarnings("java:S1104")
 public class Solution {
+    private static class Result {
+        private Map<List<String>, Integer> map;
+
+        Result() {
+            map = new HashMap<>();
+        }
+
+        Result(Map<List<String>, Integer> map) {
+            this.map = map;
+        }
+
+        void update(List<String> key, int val) {
+            map.put(key, map.getOrDefault(key, 0) + val);
+        }
+
+        Map<List<String>, Integer> getMap() {
+            return map;
+        }
+
+        List<String> toList() {
+            List<List<String>> keyList = new ArrayList<>(map.keySet());
+            Map<List<String>, String> list2String = new HashMap<>();
+            for (List<String> key : keyList) {
+                StringBuilder sb = new StringBuilder();
+                for (String k : key) {
+                    sb.append(k).append("*");
+                }
+                list2String.put(key, sb.toString());
+            }
+            keyList.sort(
+                    (a, b) ->
+                            (a.size() == b.size()
+                                    ? list2String.get(a).compareTo(list2String.get(b))
+                                    : b.size() - a.size()));
+            List<String> res = new ArrayList<>();
+            for (List<String> key : keyList) {
+                if (map.get(key) == 0) {
+                    continue;
+                }
+                StringBuilder sb = new StringBuilder();
+                sb.append(map.get(key));
+                for (String k : key) {
+                    sb.append("*").append(k);
+                }
+                res.add(sb.toString());
+            }
+            return res;
+        }
+    }
+
+    private Map<String, Integer> evalMap;
+    private int i = 0;
+
     public List<String> basicCalculatorIV(String expression, String[] evalvars, int[] evalints) {
-        Map<String, Integer> knownVars = new HashMap<>();
-        for (int i = 0; i < evalvars.length; i++) {
-            knownVars.put(evalvars[i], evalints[i]);
+        evalMap = new HashMap<>();
+        for (int j = 0; j < evalvars.length; j++) {
+            evalMap.put(evalvars[j], evalints[j]);
         }
-        LinkedList<Expr> expressions = new LinkedList<>();
-        LinkedList<String> ops = new LinkedList<>();
-        for (String token : parseExpression(expression)) {
-            if (Character.isDigit(token.charAt(0))) {
-                expressions.push(new Expr("", Integer.parseInt(token)));
-            } else if (token.equals("(")) {
-                ops.push("(");
-            } else if (token.equals(")")) {
-                while (!ops.peek().equals("(")) {
-                    doOneEval(ops, expressions);
-                }
-                ops.pop();
-            } else if (token.equals("+") || token.equals("-") || token.equals("*")) {
-                int rank = getRank(token);
-                while (!ops.isEmpty() && !ops.peek().equals("(") && getRank(ops.peek()) >= rank) {
-                    doOneEval(ops, expressions);
-                }
-                ops.push(token);
-            } else if (knownVars.containsKey(token)) {
-                expressions.push(new Expr("", knownVars.get(token)));
+        i = -1;
+        next(expression);
+        Result res = expression(expression);
+        return res.toList();
+    }
+
+    private Result expression(String s) {
+        Result res = term(s);
+        while (i < s.length() && (s.charAt(i) == '+' || s.charAt(i) == '-')) {
+            int c = s.charAt(i);
+            next(s);
+            if (c == '+') {
+                res = add(res, term(s));
             } else {
-                expressions.push(new Expr(token, 1));
+                res = subtract(res, term(s));
             }
         }
-        while (!ops.isEmpty()) {
-            doOneEval(ops, expressions);
-        }
-        Expr expr = expressions.peek();
-        List<String> output = new ArrayList<>();
-        for (String term : expr.terms.keySet()) {
-            if (expr.terms.get(term) != 0) {
-                output.add("" + expr.terms.get(term) + (term.equals("") ? "" : "*" + term));
-            }
-        }
-        output.sort(
-                (a, b) -> {
-                    int aStar = 0;
-                    int bStar = 0;
-                    for (int i = 0; i < a.length(); i++) {
-                        if (a.charAt(i) == '*') {
-                            aStar++;
-                        }
-                    }
-                    for (int i = 0; i < b.length(); i++) {
-                        if (b.charAt(i) == '*') {
-                            bStar++;
-                        }
-                    }
-                    if (aStar != bStar) {
-                        return bStar - aStar;
-                    }
-                    return a.split("\\*", 2)[1].compareTo(b.split("\\*", 2)[1]);
-                });
-        return output;
+        return res;
     }
 
-    private int getRank(String op) {
-        if (op.equals("+") || op.equals("-")) {
-            return 1;
+    private Result term(String s) {
+        Result res = factor(s);
+        while (i < s.length() && s.charAt(i) == '*') {
+            next(s);
+            res = multiply(res, factor(s));
         }
-        // *
-        return 2;
+        return res;
     }
 
-    private List<String> parseExpression(String s) {
-        List<String> output = new ArrayList<>();
-        for (String token : s.split(" ")) {
-            int opening = 0;
-            for (; token.charAt(opening) == '('; opening++) {
-                output.add("(");
-            }
-            int closing = 0;
-            while (token.charAt(token.length() - 1 - closing) == ')') {
-                closing++;
-            }
-            output.add(token.substring(opening, token.length() - closing));
-            while (closing-- > 0) {
-                output.add(")");
+    private Result multiply(Result r1, Result r2) {
+        Map<List<String>, Integer> map1 = r1.getMap();
+        Map<List<String>, Integer> map2 = r2.getMap();
+        Map<List<String>, Integer> map = new HashMap<>();
+        for (Map.Entry<List<String>, Integer> entry1 : map1.entrySet()) {
+            for (Map.Entry<List<String>, Integer> entry2 : map2.entrySet()) {
+                List<String> key = new ArrayList<>(entry1.getKey());
+                key.addAll(entry2.getKey());
+                Collections.sort(key);
+                map.put(key, map.getOrDefault(key, 0) + entry1.getValue() * entry2.getValue());
             }
         }
-        return output;
+        return new Result(map);
     }
 
-    private void doOneEval(LinkedList<String> ops, LinkedList<Expr> expressions) {
-        Expr e2 = expressions.pop();
-        Expr e1 = expressions.pop();
-        Expr res = new Expr("", 0);
-        String op = ops.pop();
-        if (op.equals("+") || op.equals("-")) {
-            int sign = op.equals("-") ? -1 : 1;
-            res.terms = e1.terms;
-            for (String term : e2.terms.keySet()) {
-                res.terms.put(term, sign * e2.terms.get(term) + res.terms.getOrDefault(term, 0));
-            }
-        } else {
-            // *
-            for (String t1 : e1.terms.keySet()) {
-                for (String t2 : e2.terms.keySet()) {
-                    String resTerm = generateTerm(t1, t2);
-                    res.terms.put(
-                            resTerm,
-                            e1.terms.get(t1) * e2.terms.get(t2)
-                                    + res.terms.getOrDefault(resTerm, 0));
-                }
-            }
+    private Result add(Result r1, Result r2) {
+        Map<List<String>, Integer> map1 = r1.getMap();
+        Map<List<String>, Integer> map2 = r2.getMap();
+        Map<List<String>, Integer> map = new HashMap<>();
+        for (Map.Entry<List<String>, Integer> entry1 : map1.entrySet()) {
+            map.put(entry1.getKey(), map.getOrDefault(entry1.getKey(), 0) + entry1.getValue());
         }
-        expressions.push(res);
+        for (Map.Entry<List<String>, Integer> entry2 : map2.entrySet()) {
+            map.put(entry2.getKey(), map.getOrDefault(entry2.getKey(), 0) + entry2.getValue());
+        }
+        return new Result(map);
     }
 
-    private String generateTerm(String t1, String t2) {
-        if (t1.equals("")) {
-            return t2;
+    private Result subtract(Result r1, Result r2) {
+        Map<List<String>, Integer> map1 = r1.getMap();
+        Map<List<String>, Integer> map2 = r2.getMap();
+        Map<List<String>, Integer> map = new HashMap<>();
+        for (Map.Entry<List<String>, Integer> entry1 : map1.entrySet()) {
+            map.put(entry1.getKey(), map.getOrDefault(entry1.getKey(), 0) + entry1.getValue());
         }
-        if (t2.equals("")) {
-            return t1;
+        for (Map.Entry<List<String>, Integer> entry2 : map2.entrySet()) {
+            map.put(entry2.getKey(), map.getOrDefault(entry2.getKey(), 0) - entry2.getValue());
         }
-        List<String> parts = new ArrayList<>();
-        Collections.addAll(parts, t1.split("\\*"));
-        Collections.addAll(parts, t2.split("\\*"));
-        Collections.sort(parts);
+        return new Result(map);
+    }
+
+    private Result factor(String s) {
+        Result res = new Result();
+        if (s.charAt(i) == '(') {
+            next(s);
+            res = expression(s);
+            next(s);
+            return res;
+        }
+        if (Character.isLowerCase(s.charAt(i))) {
+            return identifier(s);
+        }
+        res.update(new ArrayList<>(), number(s));
+        return res;
+    }
+
+    private Result identifier(String s) {
+        Result res = new Result();
         StringBuilder sb = new StringBuilder();
-        for (String part : parts) {
-            sb.append(part + "*");
+        while (i < s.length() && Character.isLowerCase(s.charAt(i))) {
+            sb.append(s.charAt(i));
+            i++;
         }
-        if (sb.length() > 0) {
-            sb.setLength(sb.length() - 1);
+        i--;
+        next(s);
+        String variable = sb.toString();
+        if (evalMap.containsKey(variable)) {
+            res.update(new ArrayList<>(), evalMap.get(variable));
+        } else {
+            List<String> key = new ArrayList<>();
+            key.add(variable);
+            res.update(key, 1);
         }
-        return sb.toString();
+        return res;
     }
 
-    private static class Expr {
-        public Map<String, Integer> terms;
+    private int number(String s) {
+        int res = 0;
+        while (i < s.length() && s.charAt(i) >= '0' && s.charAt(i) <= '9') {
+            res = res * 10 + (s.charAt(i) - '0');
+            i++;
+        }
+        i--;
+        next(s);
+        return res;
+    }
 
-        public Expr(String term, int val) {
-            terms = new HashMap<>();
-            terms.put(term, val);
+    private void next(String s) {
+        i++;
+        while (i < s.length() && s.charAt(i) == ' ') {
+            i++;
         }
     }
 }

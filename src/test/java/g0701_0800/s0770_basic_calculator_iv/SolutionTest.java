@@ -25,4 +25,12 @@ class SolutionTest {
                                 new int[] {1, 12}),
                 equalTo(Arrays.asList("-1*pressure", "5")));
     }
+
+    @Test
+    void basicCalculatorIV3() {
+        assertThat(
+                new Solution()
+                        .basicCalculatorIV("(e + 8) * (e - 8)", new String[] {}, new int[] {}),
+                equalTo(Arrays.asList("1*e*e", "-64")));
+    }
 }
