@@ -8,26 +8,20 @@ import java.util.Set;
 
 public class Solution {
     public String longestNiceSubstring(String s) {
-
         int index = isNotNiceString(s);
-
         if (index == -1) {
             return s;
         }
-
         String left = longestNiceSubstring(s.substring(0, index));
         String right = longestNiceSubstring(s.substring(index + 1));
-
         return left.length() >= right.length() ? left : right;
     }
 
     private int isNotNiceString(String s) {
         Set<Character> set = new HashSet<>();
-
         for (char c : s.toCharArray()) {
             set.add(c);
         }
-
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (!set.contains(Character.toLowerCase(c))
@@ -35,7 +29,6 @@ public class Solution {
                 return i;
             }
         }
-
         return -1;
     }
 }
