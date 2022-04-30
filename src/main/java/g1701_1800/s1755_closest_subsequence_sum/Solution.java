@@ -8,14 +8,15 @@ import java.util.Arrays;
 public class Solution {
     private int idx;
     private int sum;
+
     public int minAbsDifference(int[] nums, int goal) {
         int n = nums.length;
 
-        int n_first = (int)Math.pow(2, (double) n / 2);
-        int n_second = (int)Math.pow(2, n - n / 2);
+        int nFirst = (int) Math.pow(2, (double) n / 2);
+        int nSecond = (int) Math.pow(2, n - n / 2);
 
-        int[] first = new int[n_first];
-        int[] second = new int[n_second];
+        int[] first = new int[nFirst];
+        int[] second = new int[nSecond];
 
         helper(nums, first, 0, n / 2 - 1);
         idx = sum = 0;
@@ -25,10 +26,10 @@ public class Solution {
         Arrays.sort(second);
 
         int low = 0;
-        int high = n_second - 1;
+        int high = nSecond - 1;
 
         int ans = Integer.MAX_VALUE;
-        while (low < n_first && high >= 0) {
+        while (low < nFirst && high >= 0) {
             int sum = first[low] + second[high];
             ans = Math.min(ans, Math.abs(sum - goal));
 
@@ -37,9 +38,9 @@ public class Solution {
             }
 
             if (sum < goal) {
-                low ++;
+                low++;
             } else {
-                high --;
+                high--;
             }
         }
 
@@ -47,9 +48,9 @@ public class Solution {
     }
 
     private void helper(int[] nums, int[] arr, int start, int end) {
-        for (int i = start; i <= end; i ++) {
+        for (int i = start; i <= end; i++) {
             sum += nums[i];
-            arr[idx ++] = sum;
+            arr[idx++] = sum;
             helper(nums, arr, i + 1, end);
             sum -= nums[i];
         }

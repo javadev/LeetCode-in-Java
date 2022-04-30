@@ -1,9 +1,9 @@
 package g1701_1800.s1758_minimum_changes_to_make_alternating_binary_string;
 
-import org.junit.jupiter.api.Test;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test

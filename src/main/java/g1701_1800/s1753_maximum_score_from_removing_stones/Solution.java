@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Solution {
     public int maximumScore(int a, int b, int c) {
-        int[] nums = new int[]{a, b, c};
+        int[] nums = new int[] {a, b, c};
         Arrays.sort(nums);
         if (nums[0] + nums[1] < nums[2]) {
             return nums[0] + nums[1];
