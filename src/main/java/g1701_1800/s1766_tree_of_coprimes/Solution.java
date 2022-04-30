@@ -17,10 +17,8 @@ public class Solution {
             int[] ans,
             int[] nums,
             ArrayList<Integer>[] neighbors) {
-
         int d = Integer.MIN_VALUE;
         int n = -1;
-
         int v = nums[node];
         for (int i = 1; i <= 50; i++) {
             if (v2n[i] != -1 && v2d[i] > d && gcd(i, v) == 1) {
@@ -29,10 +27,8 @@ public class Solution {
             }
         }
         ans[node] = n;
-
         int v2NOld = v2n[v];
         int v2DOld = v2d[v];
-
         v2n[v] = node;
         v2d[v] = depth;
         for (int child : neighbors[node]) {
@@ -50,9 +46,7 @@ public class Solution {
     }
 
     public int[] getCoprimes(int[] nums, int[][] edges) {
-
         int n = nums.length;
-
         ArrayList<Integer>[] neighbors = new ArrayList[n];
         for (int i = 0; i < n; i++) {
             neighbors[i] = new ArrayList<>();
@@ -61,7 +55,6 @@ public class Solution {
             neighbors[edge[0]].add(edge[1]);
             neighbors[edge[1]].add(edge[0]);
         }
-
         int[] ans = new int[n];
         int[] v2n = new int[51];
         int[] v2d = new int[51];
