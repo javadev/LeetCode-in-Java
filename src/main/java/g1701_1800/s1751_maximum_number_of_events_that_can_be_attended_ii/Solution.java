@@ -9,7 +9,13 @@ import java.util.Comparator;
 public class Solution {
     public int maxValue(int[][] events, int k) {
         if (k == 1) {
-            return Arrays.stream(events).max(Comparator.comparingInt(e -> e[2])).get()[2];
+            boolean present =
+                    Arrays.stream(events).max(Comparator.comparingInt(e -> e[2])).isPresent();
+            if (present) {
+                return Arrays.stream(events).max(Comparator.comparingInt(e -> e[2])).get()[2];
+            } else {
+                throw new NullPointerException();
+            }
         }
 
         int n = events.length;
