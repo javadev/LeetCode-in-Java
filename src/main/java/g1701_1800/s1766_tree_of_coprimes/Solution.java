@@ -40,7 +40,6 @@ public class Solution {
             }
             dfs(v2n, v2d, depth + 1, node, child, ans, nums, neighbors);
         }
-
         v2n[v] = v2NOld;
         v2d[v] = v2DOld;
     }

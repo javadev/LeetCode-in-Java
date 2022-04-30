@@ -25,7 +25,6 @@ public class Solution {
                 countFromLeft--;
                 countFromRight++;
             }
-
             moves -= countFromLeft;
             moves += countFromRight;
         }

@@ -18,7 +18,6 @@ public class Solution {
                                 prev[i] + mult[row] * nums[n - row + i - 1],
                                 prev[i + 1] + mult[row] * nums[i]);
             }
-
             prev = dp;
         }
 
