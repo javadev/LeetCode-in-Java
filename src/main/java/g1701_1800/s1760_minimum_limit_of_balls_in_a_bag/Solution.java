@@ -7,7 +7,6 @@ public class Solution {
     public int minimumSize(int[] nums, int maxOperations) {
         int left = 1;
         int right = 1_000_000_000;
-
         while (left < right) {
             int mid = left + (right - left) / 2;
             if (operations(nums, mid) > maxOperations) {
@@ -24,7 +23,6 @@ public class Solution {
         for (int num : nums) {
             operations += (num - 1) / mid;
         }
-
         return operations;
     }
 }
