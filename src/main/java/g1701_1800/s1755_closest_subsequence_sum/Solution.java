@@ -11,39 +11,30 @@ public class Solution {
 
     public int minAbsDifference(int[] nums, int goal) {
         int n = nums.length;
-
         int nFirst = (int) Math.pow(2, (double) n / 2);
         int nSecond = (int) Math.pow(2, n - n / 2);
-
         int[] first = new int[nFirst];
         int[] second = new int[nSecond];
-
         helper(nums, first, 0, n / 2 - 1);
         idx = sum = 0;
         helper(nums, second, n / 2, n - 1);
-
         Arrays.sort(first);
         Arrays.sort(second);
-
         int low = 0;
         int high = nSecond - 1;
-
         int ans = Integer.MAX_VALUE;
         while (low < nFirst && high >= 0) {
-            int sum = first[low] + second[high];
-            ans = Math.min(ans, Math.abs(sum - goal));
-
+            int localSum = first[low] + second[high];
+            ans = Math.min(ans, Math.abs(localSum - goal));
             if (ans == 0) {
                 break;
             }
-
-            if (sum < goal) {
+            if (localSum < goal) {
                 low++;
             } else {
                 high--;
             }
         }
-
         return ans;
     }
 
