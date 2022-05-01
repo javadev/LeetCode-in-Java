@@ -1,34 +1,45 @@
-1250\. Check If It Is a Good Array
+1252\. Cells with Odd Values in a Matrix
 
-Hard
+Easy
 
-Given an array `nums` of positive integers. Your task is to select some subset of `nums`, multiply each element by an integer and add all these numbers. The array is said to be **good **if you can obtain a sum of `1` from the array by any possible subset and multiplicand.
+There is an `m x n` matrix that is initialized to all `0`'s. There is also a 2D array `indices` where each <code>indices[i] = [r<sub>i</sub>, c<sub>i</sub>]</code> represents a **0-indexed location** to perform some increment operations on the matrix.
 
-Return `True` if the array is **good **otherwise return `False`.
+For each location `indices[i]`, do **both** of the following:
+
+1.  Increment **all** the cells on row <code>r<sub>i</sub></code>.
+2.  Increment **all** the cells on column <code>c<sub>i</sub></code>.
+
+Given `m`, `n`, and `indices`, return _the **number of odd-valued cells** in the matrix after applying the increment to all locations in_ `indices`.
 
 **Example 1:**
 
-**Input:** nums = [12,5,7,23]
+![](https://assets.leetcode.com/uploads/2019/10/30/e1.png)
 
-**Output:** true
+**Input:** m = 2, n = 3, indices = [[0,1],[1,1]]
 
-**Explanation:** Pick numbers 5 and 7. 5\*3 + 7\*(-2) = 1
+**Output:** 6
+
+**Explanation:** Initial matrix = [[0,0,0],[0,0,0]].
+
+After applying first increment it becomes [[1,2,1],[0,1,0]].
+
+The final matrix is [[1,3,1],[1,3,1]], which contains 6 odd numbers. 
 
 **Example 2:**
 
-**Input:** nums = [29,6,10]
+![](https://assets.leetcode.com/uploads/2019/10/30/e2.png)
 
-**Output:** true
+**Input:** m = 2, n = 2, indices = [[1,1],[0,0]]
 
-**Explanation:** Pick numbers 29, 6 and 10. 29\*1 + 6\*(-3) + 10\*(-1) = 1
+**Output:** 0
 
-**Example 3:**
-
-**Input:** nums = [3,6]
-
-**Output:** false
+**Explanation:** Final matrix = [[2,2],[2,2]]. There are no odd numbers in the final matrix. 
 
 **Constraints:**
 
-*   `1 <= nums.length <= 10^5`
-*   `1 <= nums[i] <= 10^9`
+*   `1 <= m, n <= 50`
+*   `1 <= indices.length <= 100`
+*   <code>0 <= r<sub>i</sub> < m</code>
+*   <code>0 <= c<sub>i</sub> < n</code>
+
+**Follow up:** Could you solve this in `O(n + m + indices.length)` time with only `O(n + m)` extra space?

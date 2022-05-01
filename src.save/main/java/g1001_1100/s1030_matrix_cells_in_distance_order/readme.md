@@ -1,44 +1,43 @@
-1029\. Two City Scheduling
+1030\. Matrix Cells in Distance Order
 
-Medium
+Easy
 
-A company is planning to interview `2n` people. Given the array `costs` where <code>costs[i] = [aCost<sub>i</sub>, bCost<sub>i</sub>]</code>, the cost of flying the <code>i<sup>th</sup></code> person to city `a` is <code>aCost<sub>i</sub></code>, and the cost of flying the <code>i<sup>th</sup></code> person to city `b` is <code>bCost<sub>i</sub></code>.
+You are given four integers `row`, `cols`, `rCenter`, and `cCenter`. There is a `rows x cols` matrix and you are on the cell with the coordinates `(rCenter, cCenter)`.
 
-Return _the minimum cost to fly every person to a city_ such that exactly `n` people arrive in each city.
+Return _the coordinates of all cells in the matrix, sorted by their **distance** from_ `(rCenter, cCenter)` _from the smallest distance to the largest distance_. You may return the answer in **any order** that satisfies this condition.
+
+The **distance** between two cells <code>(r<sub>1</sub>, c<sub>1</sub>)</code> and <code>(r<sub>2</sub>, c<sub>2</sub>)</code> is <code>|r<sub>1</sub> - r<sub>2</sub>| + |c<sub>1</sub> - c<sub>2</sub>|</code>.
 
 **Example 1:**
 
-**Input:** costs = [[10,20],[30,200],[400,50],[30,20]]
+**Input:** rows = 1, cols = 2, rCenter = 0, cCenter = 0
 
-**Output:** 110
+**Output:** [[0,0],[0,1]]
 
-**Explanation:**
-
-The first person goes to city A for a cost of 10. 
-
-The second person goes to city A for a cost of 30. 
-
-The third person goes to city B for a cost of 50. 
-
-The fourth person goes to city B for a cost of 20. 
-
-The total minimum cost is 10 + 30 + 50 + 20 = 110 to have half the people interviewing in each city.
+**Explanation:** The distances from (0, 0) to other cells are: [0,1] 
 
 **Example 2:**
 
-**Input:** costs = [[259,770],[448,54],[926,667],[184,139],[840,118],[577,469]]
+**Input:** rows = 2, cols = 2, rCenter = 0, cCenter = 1
 
-**Output:** 1859
+**Output:** [[0,1],[0,0],[1,1],[1,0]]
+
+**Explanation:** The distances from (0, 1) to other cells are: [0,1,1,2]
+
+The answer [[0,1],[1,1],[0,0],[1,0]] would also be accepted as correct. 
 
 **Example 3:**
 
-**Input:** costs = [[515,563],[451,713],[537,709],[343,819],[855,779],[457,60],[650,359],[631,42]]
+**Input:** rows = 2, cols = 3, rCenter = 1, cCenter = 2
 
-**Output:** 3086
+**Output:** [[1,2],[0,2],[1,1],[0,1],[1,0],[0,0]]
+
+**Explanation:** The distances from (1, 2) to other cells are: [0,1,1,2,2,3]
+
+There are other answers that would also be accepted as correct, such as [[1,2],[1,1],[0,2],[1,0],[0,1],[0,0]]. 
 
 **Constraints:**
 
-*   `2 * n == costs.length`
-*   `2 <= costs.length <= 100`
-*   `costs.length` is even.
-*   <code>1 <= aCost<sub>i</sub>, bCost<sub>i</sub> <= 1000</code>
+*   `1 <= rows, cols <= 100`
+*   `0 <= rCenter < rows`
+*   `0 <= cCenter < cols`

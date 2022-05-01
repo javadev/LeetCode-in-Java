@@ -1,31 +1,32 @@
-441\. Arranging Coins
+442\. Find All Duplicates in an Array
 
-Easy
+Medium
 
-You have `n` coins and you want to build a staircase with these coins. The staircase consists of `k` rows where the <code>i<sup>th</sup></code> row has exactly `i` coins. The last row of the staircase **may be** incomplete.
+Given an integer array `nums` of length `n` where all the integers of `nums` are in the range `[1, n]` and each integer appears **once** or **twice**, return _an array of all the integers that appears **twice**_.
 
-Given the integer `n`, return _the number of **complete rows** of the staircase you will build_.
+You must write an algorithm that runs in `O(n) `time and uses only constant extra space.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/09/arrangecoins1-grid.jpg)
+**Input:** nums = [4,3,2,7,8,2,3,1]
 
-**Input:** n = 5
-
-**Output:** 2
-
-**Explanation:** Because the 3<sup>rd</sup> row is incomplete, we return 2. 
+**Output:** [2,3] 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/04/09/arrangecoins2-grid.jpg)
+**Input:** nums = [1,1,2]
 
-**Input:** n = 8
+**Output:** [1] 
 
-**Output:** 3
+**Example 3:**
 
-**Explanation:** Because the 4<sup>th</sup> row is incomplete, we return 3. 
+**Input:** nums = [1]
+
+**Output:** [] 
 
 **Constraints:**
 
-*   <code>1 <= n <= 2<sup>31</sup> - 1</code>
+*   `n == nums.length`
+*   <code>1 <= n <= 10<sup>5</sup></code>
+*   `1 <= nums[i] <= n`
+*   Each element in `nums` appears **once** or **twice**.
