@@ -1,25 +1,33 @@
-1037\. Valid Boomerang
+1038\. Binary Search Tree to Greater Sum Tree
 
-Easy
+Medium
 
-Given an array `points` where <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> represents a point on the **X-Y** plane, return `true` _if these points are a **boomerang**_.
+Given the `root` of a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus the sum of all keys greater than the original key in BST.
 
-A **boomerang** is a set of three points that are **all distinct** and **not in a straight line**.
+As a reminder, a _binary search tree_ is a tree that satisfies these constraints:
+
+*   The left subtree of a node contains only nodes with keys **less than** the node's key.
+*   The right subtree of a node contains only nodes with keys **greater than** the node's key.
+*   Both the left and right subtrees must also be binary search trees.
 
 **Example 1:**
 
-**Input:** points = [[1,1],[2,3],[3,2]]
+![](https://assets.leetcode.com/uploads/2019/05/02/tree.png)
 
-**Output:** true
+**Input:** root = [4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]
+
+**Output:** [30,36,21,36,35,26,15,null,null,null,33,null,null,null,8] 
 
 **Example 2:**
 
-**Input:** points = [[1,1],[2,2],[3,3]]
+**Input:** root = [0,null,1]
 
-**Output:** false
+**Output:** [1,null,1] 
 
 **Constraints:**
 
-*   `points.length == 3`
-*   `points[i].length == 2`
-*   <code>0 <= x<sub>i</sub>, y<sub>i</sub> <= 100</code>
+*   The number of nodes in the tree is in the range `[1, 100]`.
+*   `0 <= Node.val <= 100`
+*   All the values in the tree are **unique**.
+
+**Note:** This question is the same as 538: [https://leetcode.com/problems/convert-bst-to-greater-tree/](https://leetcode.com/problems/convert-bst-to-greater-tree/)

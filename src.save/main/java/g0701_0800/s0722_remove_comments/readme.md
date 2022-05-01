@@ -1,4 +1,4 @@
-722. Remove Comments
+722\. Remove Comments
 
 Medium
 

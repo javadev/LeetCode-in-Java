@@ -1,39 +1,34 @@
-1009\. Complement of Base 10 Integer
+1010\. Pairs of Songs With Total Durations Divisible by 60
 
-Easy
+Medium
 
-The **complement** of an integer is the integer you get when you flip all the `0`'s to `1`'s and all the `1`'s to `0`'s in its binary representation.
+You are given a list of songs where the <code>i<sup>th</sup></code> song has a duration of `time[i]` seconds.
 
-*   For example, The integer `5` is `"101"` in binary and its **complement** is `"010"` which is the integer `2`.
-
-Given an integer `n`, return _its complement_.
+Return _the number of pairs of songs for which their total duration in seconds is divisible by_ `60`. Formally, we want the number of indices `i`, `j` such that `i < j` with `(time[i] + time[j]) % 60 == 0`.
 
 **Example 1:**
 
-**Input:** n = 5
+**Input:** time = [30,20,150,100,40]
 
-**Output:** 2
+**Output:** 3
 
-**Explanation:** 5 is "101" in binary, with complement "010" in binary, which is 2 in base-10.
+**Explanation:** Three pairs have a total duration divisible by 60:
+
+(time[0] = 30, time[2] = 150): total duration 180
+
+(time[1] = 20, time[3] = 100): total duration 120
+
+(time[1] = 20, time[4] = 40): total duration 60 
 
 **Example 2:**
 
-**Input:** n = 7
+**Input:** time = [60,60,60]
 
-**Output:** 0
+**Output:** 3
 
-**Explanation:** 7 is "111" in binary, with complement "000" in binary, which is 0 in base-10.
-
-**Example 3:**
-
-**Input:** n = 10
-
-**Output:** 5
-
-**Explanation:** 10 is "1010" in binary, with complement "0101" in binary, which is 5 in base-10.
+**Explanation:** All three pairs have a total duration of 120, which is divisible by 60. 
 
 **Constraints:**
 
-*   <code>0 <= n < 10<sup>9</sup></code>
-
-**Note:** This question is the same as 476: [https://leetcode.com/problems/number-complement/](https://leetcode.com/problems/number-complement/)
+*   <code>1 <= time.length <= 6 * 10<sup>4</sup></code>
+*   `1 <= time[i] <= 500`

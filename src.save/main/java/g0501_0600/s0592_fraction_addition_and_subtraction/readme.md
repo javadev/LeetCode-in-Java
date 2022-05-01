@@ -1,59 +1,33 @@
-591\. Tag Validator
+592\. Fraction Addition and Subtraction
 
-Hard
+Medium
 
-Given a string representing a code snippet, implement a tag validator to parse the code and return whether it is valid.
+Given a string `expression` representing an expression of fraction addition and subtraction, return the calculation result in string format.
 
-A code snippet is valid if all the following rules hold:
-
-1.  The code must be wrapped in a **valid closed tag**. Otherwise, the code is invalid.
-2.  A **closed tag** (not necessarily valid) has exactly the following format : `<TAG_NAME>TAG_CONTENT</TAG_NAME>`. Among them, `<TAG_NAME>` is the start tag, and `</TAG_NAME>` is the end tag. The TAG\_NAME in start and end tags should be the same. A closed tag is **valid** if and only if the TAG\_NAME and TAG\_CONTENT are valid.
-3.  A **valid** `TAG_NAME` only contain **upper-case letters**, and has length in range [1,9]. Otherwise, the `TAG_NAME` is **invalid**.
-4.  A **valid** `TAG_CONTENT` may contain other **valid closed tags**, **cdata** and any characters (see note1) **EXCEPT** unmatched `<`, unmatched start and end tag, and unmatched or closed tags with invalid TAG\_NAME. Otherwise, the `TAG_CONTENT` is **invalid**.
-5.  A start tag is unmatched if no end tag exists with the same TAG\_NAME, and vice versa. However, you also need to consider the issue of unbalanced when tags are nested.
-6.  A `<` is unmatched if you cannot find a subsequent `>`. And when you find a `<` or `</`, all the subsequent characters until the next `>` should be parsed as TAG\_NAME (not necessarily valid).
-7.  The cdata has the following format : `<![CDATA[CDATA_CONTENT]]>`. The range of `CDATA_CONTENT` is defined as the characters between `<![CDATA[` and the **first subsequent** `]]>`.
-8.  `CDATA_CONTENT` may contain **any characters**. The function of cdata is to forbid the validator to parse `CDATA_CONTENT`, so even it has some characters that can be parsed as tag (no matter valid or invalid), you should treat it as **regular characters**.
+The final result should be an [irreducible fraction](https://en.wikipedia.org/wiki/Irreducible_fraction). If your final result is an integer, change it to the format of a fraction that has a denominator `1`. So in this case, `2` should be converted to `2/1`.
 
 **Example 1:**
 
-**Input:** code = "<DIV>This is the first line <![CDATA[<div>]]></DIV>"
+**Input:** expression = "-1/2+1/2"
 
-**Output:** true
-
-**Explanation:**
-
-    The code is wrapped in a closed tag : <DIV> and </DIV>.
-    The TAG_NAME is valid, the TAG_CONTENT consists of some characters and cdata.
-    Although CDATA_CONTENT has an unmatched start tag with invalid TAG_NAME, it should be considered as plain text, not parsed as a tag.
-    So TAG_CONTENT is valid, and then the code is valid. Thus return true. 
+**Output:** "0/1" 
 
 **Example 2:**
 
-**Input:** code = "<DIV>>> ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>"
+**Input:** expression = "-1/2+1/2+1/3"
 
-**Output:** true
-
-**Explanation:**
-
-    We first separate the code into : start_tag|tag_content|end_tag.
-    start_tag -> "<DIV>"
-    end_tag -> "</DIV>"
-    tag_content could also be separated into : text1|cdata|text2.
-    text1 -> ">> ![cdata[]] "
-    cdata -> "<![CDATA[<div>]>]]>", where the CDATA_CONTENT is "<div>]>"
-    text2 -> "]]>>]" The reason why start_tag is NOT "<DIV>>>" is because of the rule 6.
-    The reason why cdata is NOT "<![CDATA[<div>]>]]>]]>" is because of the rule 7. 
+**Output:** "1/3" 
 
 **Example 3:**
 
-**Input:** code = "<A> <B> </A> </B>"
+**Input:** expression = "1/3-1/2"
 
-**Output:** false
-
-**Explanation:** Unbalanced. If "<A>" is closed, then "<B>" must be unmatched, and vice versa. 
+**Output:** "-1/6" 
 
 **Constraints:**
 
-*   `1 <= code.length <= 500`
-*   `code` consists of English letters, digits, `'<'`, `'>'`, `'/'`, `'!'`, `'['`, `']'`, `'.'`, and `' '`.
+*   The input string only contains `'0'` to `'9'`, `'/'`, `'+'` and `'-'`. So does the output.
+*   Each fraction (input and output) has the format `±numerator/denominator`. If the first input fraction or the output is positive, then `'+'` will be omitted.
+*   The input only contains valid **irreducible fractions**, where the **numerator** and **denominator** of each fraction will always be in the range `[1, 10]`. If the denominator is `1`, it means this fraction is actually an integer in a fraction format defined above.
+*   The number of given fractions will be in the range `[1, 10]`.
+*   The numerator and denominator of the **final result** are guaranteed to be valid and in the range of **32-bit** int.

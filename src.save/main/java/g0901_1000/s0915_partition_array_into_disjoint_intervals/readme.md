@@ -1,31 +1,35 @@
-914\. X of a Kind in a Deck of Cards
+915\. Partition Array into Disjoint Intervals
 
-Easy
+Medium
 
-In a deck of cards, each card has an integer written on it.
+Given an integer array `nums`, partition it into two (contiguous) subarrays `left` and `right` so that:
 
-Return `true` if and only if you can choose `X >= 2` such that it is possible to split the entire deck into 1 or more groups of cards, where:
+*   Every element in `left` is less than or equal to every element in `right`.
+*   `left` and `right` are non-empty.
+*   `left` has the smallest possible size.
 
-*   Each group has exactly `X` cards.
-*   All the cards in each group have the same integer.
+Return _the length of_ `left` _after such a partitioning_.
+
+Test cases are generated such that partitioning exists.
 
 **Example 1:**
 
-**Input:** deck = [1,2,3,4,4,3,2,1]
+**Input:** nums = [5,0,3,8,6]
 
-**Output:** true
+**Output:** 3
 
-**Explanation:**: Possible partition [1,1],[2,2],[3,3],[4,4].
+**Explanation:** left = [5,0,3], right = [8,6] 
 
 **Example 2:**
 
-**Input:** deck = [1,1,1,2,2,2,3,3]
+**Input:** nums = [1,1,1,0,6,12]
 
-**Output:** false
+**Output:** 4
 
-**Explanation:**: No possible partition.
+**Explanation:** left = [1,1,1,0], right = [6,12] 
 
 **Constraints:**
 
-*   <code>1 <= deck.length <= 10<sup>4</sup></code>
-*   <code>0 <= deck[i] < 10<sup>4</sup></code>
+*   <code>2 <= nums.length <= 10<sup>5</sup></code>
+*   <code>0 <= nums[i] <= 10<sup>6</sup></code>
+*   There is at least one valid answer for the given input.
