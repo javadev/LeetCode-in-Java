@@ -12,4 +12,18 @@ class SolutionTest {
         new Solution().nextPermutation(array);
         assertThat(array, equalTo(new int[] {1, 3, 2}));
     }
+
+    @Test
+    void nextPermutation2() {
+        int[] array = new int[] {3, 2, 1};
+        new Solution().nextPermutation(array);
+        assertThat(array, equalTo(new int[] {1, 2, 3}));
+    }
+
+    @Test
+    void nextPermutation3() {
+        int[] array = new int[] {1, 1, 5};
+        new Solution().nextPermutation(array);
+        assertThat(array, equalTo(new int[] {1, 5, 1}));
+    }
 }

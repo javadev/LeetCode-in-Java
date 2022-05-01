@@ -10,4 +10,14 @@ class SolutionTest {
     void myPow() {
         assertThat(new Solution().myPow(2.00000, 10), equalTo(1024.00000));
     }
+
+    @Test
+    void myPow2() {
+        assertThat(new Solution().myPow(2.10000, 3), equalTo(9.261000000000001));
+    }
+
+    @Test
+    void myPow3() {
+        assertThat(new Solution().myPow(2.00000, -2), equalTo(0.25000));
+    }
 }

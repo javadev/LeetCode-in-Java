@@ -14,4 +14,12 @@ class SolutionTest {
                 new Solution().permuteUnique(new int[] {1, 1, 2}),
                 equalTo(ArrayUtils.getLists(expected)));
     }
+
+    @Test
+    void permuteUnique2() {
+        int[][] expected = {{1, 2, 3}, {1, 3, 2}, {2, 1, 3}, {2, 3, 1}, {3, 2, 1}, {3, 1, 2}};
+        assertThat(
+                new Solution().permuteUnique(new int[] {1, 2, 3}),
+                equalTo(ArrayUtils.getLists(expected)));
+    }
 }

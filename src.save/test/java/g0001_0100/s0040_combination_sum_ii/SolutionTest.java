@@ -14,4 +14,12 @@ class SolutionTest {
                 new Solution().combinationSum2(new int[] {10, 1, 2, 7, 6, 1, 5}, 8),
                 equalTo(ArrayUtils.getLists(expected)));
     }
+
+    @Test
+    void combinationSum22() {
+        int[][] expected = {{1, 2, 2}, {5}};
+        assertThat(
+                new Solution().combinationSum2(new int[] {2, 5, 2, 1, 2}, 5),
+                equalTo(ArrayUtils.getLists(expected)));
+    }
 }
