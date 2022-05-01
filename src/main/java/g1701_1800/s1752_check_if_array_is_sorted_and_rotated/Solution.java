@@ -1,31 +1,19 @@
 package g1701_1800.s1752_check_if_array_is_sorted_and_rotated;
 
-// #Easy #Array #2022_04_30_Time_3_ms_(5.38%)_Space_42.8_MB_(6.77%)
-
-import java.util.Arrays;
+// #Easy #Array #2022_05_01_Time_0_ms_(100.00%)_Space_42.4_MB_(9.86%)
 
 public class Solution {
     public boolean check(int[] nums) {
-        int[] copy = Arrays.copyOf(nums, nums.length);
-        Arrays.sort(copy);
-        for (int i = 1; i <= nums.length; i++) {
-            int[] rotated = rotate(nums, i);
-            if (Arrays.equals(rotated, copy)) {
-                return true;
+        int checker = 0;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i - 1] > nums[i]) {
+                checker++;
             }
         }
-        return false;
-    }
-
-    private int[] rotate(int[] nums, int start) {
-        int[] rotated = new int[nums.length];
-        int j = 0;
-        for (int i = start; i < nums.length; i++, j++) {
-            rotated[j] = nums[i];
+        // checking if the last element is greater than the first
+        if (nums[nums.length - 1] > nums[0]) {
+            checker++;
         }
-        for (int i = 0; i < start; i++) {
-            rotated[j++] = nums[i];
-        }
-        return rotated;
+        return checker <= 1;
     }
 }
