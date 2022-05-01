@@ -14,4 +14,17 @@ class SolutionTest {
                 new Solution().permute(new int[] {1, 2, 3}),
                 equalTo(ArrayUtils.getLists(expected)));
     }
+
+    @Test
+    void permute2() {
+        int[][] expected = {{0, 1}, {1, 0}};
+        assertThat(
+                new Solution().permute(new int[] {0, 1}), equalTo(ArrayUtils.getLists(expected)));
+    }
+
+    @Test
+    void permute3() {
+        int[][] expected = {{1}};
+        assertThat(new Solution().permute(new int[] {1}), equalTo(ArrayUtils.getLists(expected)));
+    }
 }

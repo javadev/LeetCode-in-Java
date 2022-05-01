@@ -20,4 +20,20 @@ class SolutionTest {
                         .groupAnagrams(new String[] {"eat", "tea", "tan", "ate", "nat", "bat"});
         assertThat(actual, equalTo(expected));
     }
+
+    @Test
+    void groupAnagrams2() {
+        List<List<String>> expected = new ArrayList<>();
+        expected.add(Arrays.asList(""));
+        List<List<String>> actual = new Solution().groupAnagrams(new String[] {""});
+        assertThat(actual, equalTo(expected));
+    }
+
+    @Test
+    void groupAnagrams3() {
+        List<List<String>> expected = new ArrayList<>();
+        expected.add(Arrays.asList("a"));
+        List<List<String>> actual = new Solution().groupAnagrams(new String[] {"a"});
+        assertThat(actual, equalTo(expected));
+    }
 }

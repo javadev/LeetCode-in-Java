@@ -13,4 +13,18 @@ class SolutionTest {
                 new Solution().combinationSum(new int[] {2, 3, 6, 7}, 7),
                 equalTo(ArrayUtils.getLists(new int[][] {{7}, {3, 2, 2}})));
     }
+
+    @Test
+    void combinationSum2() {
+        assertThat(
+                new Solution().combinationSum(new int[] {2, 3, 5}, 8),
+                equalTo(ArrayUtils.getLists(new int[][] {{5, 3}, {3, 3, 2}, {2, 2, 2, 2}})));
+    }
+
+    @Test
+    void combinationSum3() {
+        assertThat(
+                new Solution().combinationSum(new int[] {2}, 1),
+                equalTo(ArrayUtils.getLists(new int[][] {})));
+    }
 }

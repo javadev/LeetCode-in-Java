@@ -10,4 +10,9 @@ class SolutionTest {
     void jump() {
         assertThat(new Solution().jump(new int[] {2, 3, 1, 1, 4}), equalTo(2));
     }
+
+    @Test
+    void jump2() {
+        assertThat(new Solution().jump(new int[] {2, 3, 0, 1, 4}), equalTo(2));
+    }
 }

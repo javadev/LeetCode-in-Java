@@ -10,4 +10,9 @@ class SolutionTest {
     void multiply() {
         assertThat(new Solution().multiply("2", "3"), equalTo("6"));
     }
+
+    @Test
+    void multiply2() {
+        assertThat(new Solution().multiply("123", "456"), equalTo("56088"));
+    }
 }
