@@ -5,6 +5,17 @@ package g0101_0200.s0160_intersection_of_two_linked_lists;
 
 import com_github_leetcode.ListNode;
 
+/*
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
 @SuppressWarnings("java:S2583")
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
