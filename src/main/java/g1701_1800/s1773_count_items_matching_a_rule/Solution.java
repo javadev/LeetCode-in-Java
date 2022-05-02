@@ -13,8 +13,8 @@ public class Solution {
         } else if (ruleKey.equals("name")) {
             checkRuleNum = 2;
         }
-        for (int i = 0; i < items.size(); i++) {
-            if ((items.get(i).get(checkRuleNum)).equals(ruleValue)) {
+        for (List<String> item : items) {
+            if (item.get(checkRuleNum).equals(ruleValue)) {
                 ans++;
             }
         }
