@@ -12,7 +12,6 @@ public class Solution {
             pairsCount += (pairsCountHigh - pairsCountLow);
             root.insertNumber(num);
         }
-
         return pairsCount;
     }
 
@@ -31,11 +30,10 @@ public class Solution {
                 curr = curr.child[numIthBit];
             }
         }
-
         return pairs;
     }
 
-    static class Trie {
+    private static class Trie {
         Trie[] child;
         int count;
 
@@ -46,16 +44,12 @@ public class Solution {
 
         public void insertNumber(int num) {
             Trie curr = this;
-
             for (int i = 14; i >= 0; i--) {
                 int ithBit = (num >> i) & 1;
-
                 if (curr.child[ithBit] == null) {
                     curr.child[ithBit] = new Trie();
                 }
-
                 curr.child[ithBit].count++;
-
                 curr = curr.child[ithBit];
             }
         }
