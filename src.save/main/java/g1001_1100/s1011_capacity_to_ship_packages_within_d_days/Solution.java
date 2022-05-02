@@ -10,11 +10,9 @@ public class Solution {
             sum += val;
             max = Math.max(max, val);
         }
-
         int lo = max;
         int hi = sum;
         int ans = 0;
-
         while (lo <= hi) {
             int mid = lo + (hi - lo) / 2;
             if (isPossible(weights, mid, days)) {
@@ -30,7 +28,6 @@ public class Solution {
     private boolean isPossible(int[] arr, int mid, int days) {
         int capacity = 1;
         int sum = 0;
-
         for (int j : arr) {
             sum += j;
             if (sum > mid) {
