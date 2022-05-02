@@ -10,7 +10,8 @@ public class Solution {
     public int numDifferentIntegers(String word) {
         Set<String> ints = new HashSet<>();
         char[] chars = word.toCharArray();
-        int start = -1, stop = 0;
+        int start = -1;
+        int stop = 0;
         for (int i = 0; i < chars.length; i++) {
             if (chars[i] >= '0' && chars[i] <= '9') {
                 if (start == -1) {

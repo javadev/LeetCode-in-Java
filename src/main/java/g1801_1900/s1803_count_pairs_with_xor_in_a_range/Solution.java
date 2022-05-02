@@ -16,12 +16,12 @@ public class Solution {
         return pairsCount;
     }
 
-    private int countPairsWhoseXorLessThanX(int num, Trie root, int X) {
+    private int countPairsWhoseXorLessThanX(int num, Trie root, int x) {
         int pairs = 0;
         Trie curr = root;
         for (int i = 14; i >= 0 && curr != null; i--) {
             int numIthBit = (num >> i) & 1;
-            int xIthBit = (X >> i) & 1;
+            int xIthBit = (x >> i) & 1;
             if (xIthBit == 1) {
                 if (curr.child[numIthBit] != null) {
                     pairs += curr.child[numIthBit].count;
