@@ -32,12 +32,10 @@ public class Solution {
         if (root == null) {
             return;
         }
-
         if (maxAncestor == -1) {
             traverse(root.left, root.val, root.val);
             traverse(root.right, root.val, root.val);
         }
-
         if (maxAncestor != -1) {
             max = Math.max(max, Math.abs(maxAncestor - root.val));
             max = Math.max(max, Math.abs(minAncestor - root.val));
