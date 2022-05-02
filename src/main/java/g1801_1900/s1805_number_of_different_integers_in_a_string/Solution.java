@@ -6,20 +6,20 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Solution {
-    
+
     public int numDifferentIntegers(String word) {
         Set<String> ints = new HashSet<>();
         char[] chars = word.toCharArray();
         int start = -1, stop = 0;
-        for(int i = 0; i < chars.length; i++) {
-            if(chars[i] >= '0' && chars[i] <= '9') {
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] >= '0' && chars[i] <= '9') {
                 if (start == -1) {
                     start = i;
                 }
                 stop = i;
             } else if (start != -1) {
-				ints.add(extractInt(chars, start, stop));
-				start = -1;
+                ints.add(extractInt(chars, start, stop));
+                start = -1;
             }
         }
         if (start != -1) {
@@ -27,16 +27,16 @@ public class Solution {
         }
         return ints.size();
     }
-    
+
     private String extractInt(char[] chrs, int start, int stop) {
         StringBuilder stb = new StringBuilder();
-        while(start <= stop && chrs[start] == '0') {
+        while (start <= stop && chrs[start] == '0') {
             start++;
         }
         if (start >= stop) {
             stb.append(chrs[stop]);
         } else {
-            while(start <= stop) {
+            while (start <= stop) {
                 stb.append(chrs[start++]);
             }
         }

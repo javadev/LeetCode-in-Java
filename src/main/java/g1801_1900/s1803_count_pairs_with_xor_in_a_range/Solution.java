@@ -58,8 +58,6 @@ public class Solution {
 
                 curr = curr.child[ithBit];
             }
-
         }
     }
 }
-
