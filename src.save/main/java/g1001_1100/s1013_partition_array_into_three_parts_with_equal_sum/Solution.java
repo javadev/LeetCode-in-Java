@@ -1,38 +1,39 @@
 package g1001_1100.s1013_partition_array_into_three_parts_with_equal_sum;
 
-// #Easy #Array #Greedy #2022_02_25_Time_3_ms_(53.27%)_Space_60.1_MB_(28.68%)
+// #Easy #Array #Greedy #2022_05_02_Time_1_ms_(100.00%)_Space_60.6_MB_(25.47%)
 
 public class Solution {
-    public boolean canThreePartsEqualSum(int[] a) {
+    public boolean canThreePartsEqualSum(int[] arr) {
+        int len = arr.length;
         int sum = 0;
-        for (int j : a) {
-            sum += j;
+        for (int i = 0; i < len; i++) {
+            sum += arr[i];
         }
+        // 1. Base condition , the sum should be equally divided into 3 parts
         if (sum % 3 != 0) {
             return false;
         }
-        int equalSum = sum / 3;
-        int left = 0;
-        int leftSum = 0;
-        while (left < a.length - 2 && leftSum != equalSum) {
-            leftSum += a[left++];
+        int eq = sum / 3;
+        // to keep track of occurences of sum in the sub array
+        int count = 0;
+        int temp = 0;
+        for (int i = 0; i < len; i++) {
+            // 2. Base / Break condition for loop , i.e. if the count is 2,
+            // i.e. sum has been achieved twice ( and there is more indices
+            // to go through since we are in the loop again ) then return true
+            if (count == 2) {
+                return true;
+            }
+            // 3. Adding to temp array
+            temp += arr[i];
+            // 4. If sum is achieved , increase the count
+            if (temp == eq) {
+                count++;
+                // put temp=0 to start summing up from the next indices
+                temp = 0;
+            }
         }
-        if (left > a.length - 2 || leftSum != equalSum) {
-            return false;
-        }
-
-        int right = a.length - 1;
-        int rightSum = 0;
-        while (right > left && rightSum != equalSum) {
-            rightSum += a[right--];
-        }
-        if (right < left || rightSum != equalSum) {
-            return false;
-        }
-        int middleSum = 0;
-        for (int i = left; i <= right; i++) {
-            middleSum += a[i];
-        }
-        return middleSum == equalSum;
+        // 5. If the above conditoin fails , result is false
+        return false;
     }
 }
