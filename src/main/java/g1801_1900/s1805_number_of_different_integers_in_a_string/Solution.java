@@ -6,7 +6,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Solution {
-
     public int numDifferentIntegers(String word) {
         Set<String> ints = new HashSet<>();
         char[] chars = word.toCharArray();
