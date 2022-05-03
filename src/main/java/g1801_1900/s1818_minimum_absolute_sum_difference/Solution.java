@@ -32,7 +32,7 @@ public class Solution {
         int total = 0;
         int preSave = 0;
         for (int i = 0; i < nums1.length; i++) {
-            int current = (int) Math.abs(nums1[i] - nums2[i]);
+            int current = Math.abs(nums1[i] - nums2[i]);
             total += current;
             int save =
                     current

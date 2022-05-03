@@ -20,12 +20,12 @@ public class Solution {
                 count++;
                 continue;
             }
-            int temp_gcd = 0;
+            int tempGcd = 0;
             for (int j = i; j <= max; j += i) {
                 if (present[j]) {
-                    temp_gcd = gcd(temp_gcd, j);
+                    tempGcd = gcd(tempGcd, j);
                 }
-                if (temp_gcd == i) {
+                if (tempGcd == i) {
                     count++;
                     break;
                 }
