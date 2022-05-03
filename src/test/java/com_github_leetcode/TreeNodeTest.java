@@ -30,6 +30,13 @@ class TreeNodeTest {
     }
 
     @Test
+    void create4() {
+        TreeNode treeNode = TreeNode.create(Arrays.asList(1, null, 2, 3));
+        assertThat(treeNode.val, equalTo(1));
+        assertThat(treeNode.toString(), equalTo("1,null,2,3,null"));
+    }
+
+    @Test
     void constructor() {
         TreeNode treeNode = new TreeNode(1, null, null);
         assertThat(treeNode.val, equalTo(1));
