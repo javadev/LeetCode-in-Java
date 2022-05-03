@@ -5,7 +5,6 @@ package g1801_1900.s1814_count_nice_pairs_in_an_array;
 import java.util.HashMap;
 
 public class Solution {
-
     private int rev(int n) {
         int r = 0;
         while (n > 0) {
@@ -26,7 +25,6 @@ public class Solution {
             cnt = cnt % mod;
             revMap.put(lhs, prevCnt + 1);
         }
-
         return cnt;
     }
 }
