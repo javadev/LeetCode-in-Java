@@ -11,7 +11,7 @@ public class Solution {
         int breaks = 0;
         int j = 0;
         int i = 0;
-        for (; i < shortWords.length && j < longWords.length; ) {
+        while (i < shortWords.length && j < longWords.length) {
             if (shortWords[i].equals(longWords[j])) {
                 j++;
                 i++;
@@ -29,11 +29,10 @@ public class Solution {
                 || (i == shortWords.length && breaks == 0)) {
             return true;
         }
-        // we'll check from the left side and move towards the right side
         i = shortWords.length - 1;
         j = longWords.length - 1;
         breaks = 0;
-        for (; i >= 0 && j >= 0; ) {
+        while (i >= 0 && j >= 0) {
             if (shortWords[i].equals(longWords[j])) {
                 i--;
                 j--;

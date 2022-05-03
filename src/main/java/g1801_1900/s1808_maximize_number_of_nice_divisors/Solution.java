@@ -15,7 +15,9 @@ public class Solution {
 
         long r = 1;
         while (e > 0) {
-            if ((e & 1) == 1) r = r * b % m;
+            if ((e & 1) == 1) {
+                r = r * b % m;
+            }
             e = e >> 1;
             b = b * b % m;
         }

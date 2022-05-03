@@ -13,7 +13,8 @@ public class Solution {
             knowledgeMapper.put(pair.get(0), pair.get(1));
         }
         StringBuilder answer = new StringBuilder();
-        for (int i = 0; i < s.length(); i++) {
+        int i = 0;
+        while (i < s.length()) {
             char letter = s.charAt(i);
             if (letter == '(') {
                 StringBuilder key = new StringBuilder();
@@ -26,6 +27,7 @@ public class Solution {
             } else {
                 answer.append(letter);
             }
+            i++;
         }
         return answer.toString();
     }
