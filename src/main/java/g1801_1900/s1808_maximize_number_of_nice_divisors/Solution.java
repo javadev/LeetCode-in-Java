@@ -10,9 +10,7 @@ public class Solution {
         if (e == 0 || b == 1) {
             return 1;
         }
-
         b %= m;
-
         long r = 1;
         while (e > 0) {
             if ((e & 1) == 1) {
