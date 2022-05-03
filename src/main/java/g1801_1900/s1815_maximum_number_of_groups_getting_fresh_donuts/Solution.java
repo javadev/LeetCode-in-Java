@@ -16,7 +16,6 @@ public class Solution {
         int remGroup = 0;
         for (int group : groups) {
             int g = group % batchSize;
-
             if (g == 0) {
                 res++;
             } else if (count[batchSize - g] > 0) {
@@ -41,7 +40,6 @@ public class Solution {
         if (MAP.containsKey(s)) {
             return MAP.get(s);
         }
-
         if (curr == 0) {
             res++;
             curr = batch;
@@ -52,7 +50,6 @@ public class Solution {
                 continue;
             }
             count[i]--;
-
             val = Math.max(val, dfs((curr - i + batch) % batch, remain - 1, count, batch));
             count[i]++;
         }
