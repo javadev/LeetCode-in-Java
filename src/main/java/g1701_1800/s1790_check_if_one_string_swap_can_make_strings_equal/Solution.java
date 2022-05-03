@@ -34,10 +34,6 @@ public class Solution {
             return false;
         }
         // When there are 2 char different, and swap them can make two string equal, we return true;
-        if (s1.charAt(i1) == s2.charAt(i2) && s1.charAt(i2) == s2.charAt(i1)) {
-            return true;
-        }
-        // dummy return
-        return false;
+        return s1.charAt(i1) == s2.charAt(i2) && s1.charAt(i2) == s2.charAt(i1);
     }
 }
