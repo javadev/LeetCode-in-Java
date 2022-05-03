@@ -13,10 +13,8 @@ public class Solution {
             return res;
         }
         Arrays.sort(logs, Comparator.comparingInt((int[] a) -> a[0]).thenComparingInt(a -> a[1]));
-
         int[] result = new int[k];
         int start = 1;
-
         int prevUser = logs[0][0];
         int prevMin = logs[0][1];
         int count = 1;
