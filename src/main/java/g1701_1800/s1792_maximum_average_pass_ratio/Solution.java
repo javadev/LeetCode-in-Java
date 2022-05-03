@@ -17,7 +17,8 @@ public class Solution {
         }
         while (extraStudents >= 1) {
             double[] temp = heap.poll();
-            double pass = temp[1] + 1, total = temp[2] + 1;
+            double pass = temp[1] + 1;
+            double total = temp[2] + 1;
             double delta = profit(pass, total);
             heap.offer(new double[] {delta, pass, total});
             extraStudents--;
