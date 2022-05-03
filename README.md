@@ -32,13 +32,6 @@ Gradle:
 implementation 'com.github.javadev:leetcode-in-java:1.9'
 ```
 
-#### Tips and Tricks
-
-* format code
-    * `gradlew spotlessJavaApply`
-* check formatting
-    * `gradlew spotlessJavaCheck`
-
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
 
 ## Algorithms
@@ -1469,7 +1462,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.9'
 Your ideas/fixes/algorithms are more than welcome!
 
 1. Fork this repo
-2. Clone your forked repo (`git clone https://github.com/YOUR_GITHUB_USERNAME/LeetCode-in-Java`) onto your local machine
+2. Clone your forked repo (`git clone https://github.com/YOUR_GITHUB_USERNAME/LeetCode-in-Java.git`) onto your local machine
 3. `cd` into your cloned directory, create your feature branch (`git checkout -b my-awesome-fix`)
 4. `git add` your desired changes to this repo
 5. Commit your changes (`git commit -m 'Added some awesome features/fixes'`)
