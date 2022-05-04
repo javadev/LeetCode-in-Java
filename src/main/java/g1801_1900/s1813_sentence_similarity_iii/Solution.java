@@ -1,51 +1,23 @@
 package g1801_1900.s1813_sentence_similarity_iii;
 
-// #Medium #Array #String #Two_Pointers #2022_05_03_Time_3_ms_(40.12%)_Space_42.3_MB_(43.02%)
+// #Medium #Array #String #Two_Pointers #2022_05_04_Time_3_ms_(41.38%)_Space_42.8_MB_(10.34%)
 
 public class Solution {
-    public boolean areSentencesSimilar(String sentence1, String sentence2) {
-        String shorter = sentence1.length() < sentence2.length() ? sentence1 : sentence2;
-        String longer = shorter.equals(sentence1) ? sentence2 : sentence1;
-        String[] shortWords = shorter.split(" ");
-        String[] longWords = longer.split(" ");
-        int breaks = 0;
-        int j = 0;
+    public boolean areSentencesSimilar(String s1, String s2) {
+        String[] words1 = s1.split(" ");
+        String[] words2 = s2.split(" ");
         int i = 0;
-        while (i < shortWords.length && j < longWords.length) {
-            if (shortWords[i].equals(longWords[j])) {
-                j++;
-                i++;
-            } else {
-                breaks++;
-                if (breaks > 1) {
-                    break;
-                }
-                while (j < longWords.length && !longWords[j].equals(shortWords[i])) {
-                    j++;
-                }
-            }
+        int n1 = words1.length;
+        int n2 = words2.length;
+        if (n1 > n2) {
+            return areSentencesSimilar(s2, s1);
         }
-        if ((breaks == 1 && i == shortWords.length && j == longWords.length)
-                || (i == shortWords.length && breaks == 0)) {
-            return true;
+        while (i < n1 && words1[i].equals(words2[i])) {
+            ++i;
         }
-        i = shortWords.length - 1;
-        j = longWords.length - 1;
-        breaks = 0;
-        while (i >= 0 && j >= 0) {
-            if (shortWords[i].equals(longWords[j])) {
-                i--;
-                j--;
-            } else {
-                breaks++;
-                if (breaks > 1) {
-                    return false;
-                }
-                while (j >= 0 && !longWords[j].equals(shortWords[i])) {
-                    j--;
-                }
-            }
+        while (i < n1 && words1[i].equals(words2[n2 - n1 + i])) {
+            ++i;
         }
-        return (breaks == 1 && i == -1 && j == -1) || (breaks == 0 && i == -1);
+        return i == n1;
     }
 }
