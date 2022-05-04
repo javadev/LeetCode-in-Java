@@ -13,4 +13,11 @@ class SolutionTest {
         int end = new Solution().removeDuplicates(array);
         assertThat(Arrays.toString(Arrays.copyOfRange(array, 0, end)), equalTo("[1, 2]"));
     }
+
+    @Test
+    void removeDuplicates2() {
+        int[] array = new int[] {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+        int end = new Solution().removeDuplicates(array);
+        assertThat(Arrays.toString(Arrays.copyOfRange(array, 0, end)), equalTo("[0, 1, 2, 3, 4]"));
+    }
 }
