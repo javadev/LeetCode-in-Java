@@ -8,8 +8,14 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void merge() {
-        int[][] input = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
-        int[][] expected = {{1, 6}, {8, 10}, {15, 18}};
-        assertThat(new Solution().merge(input), equalTo(expected));
+        assertThat(
+                new Solution().merge(new int[][] {{1, 3}, {2, 6}, {8, 10}, {15, 18}}),
+                equalTo(new int[][] {{1, 6}, {8, 10}, {15, 18}}));
+    }
+
+    @Test
+    void merge2() {
+        assertThat(
+                new Solution().merge(new int[][] {{1, 4}, {4, 5}}), equalTo(new int[][] {{1, 5}}));
     }
 }

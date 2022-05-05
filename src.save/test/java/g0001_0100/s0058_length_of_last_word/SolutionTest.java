@@ -10,4 +10,14 @@ class SolutionTest {
     void lengthOfLastWord() {
         assertThat(new Solution().lengthOfLastWord("Hello World"), equalTo(5));
     }
+
+    @Test
+    void lengthOfLastWord2() {
+        assertThat(new Solution().lengthOfLastWord("   fly me   to   the moon  "), equalTo(4));
+    }
+
+    @Test
+    void lengthOfLastWord3() {
+        assertThat(new Solution().lengthOfLastWord("luffy is still joyboy"), equalTo(6));
+    }
 }

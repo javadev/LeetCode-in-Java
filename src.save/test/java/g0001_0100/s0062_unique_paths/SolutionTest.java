@@ -10,4 +10,9 @@ class SolutionTest {
     void uniquePaths() {
         assertThat(new Solution().uniquePaths(3, 7), equalTo(28));
     }
+
+    @Test
+    void uniquePaths2() {
+        assertThat(new Solution().uniquePaths(3, 2), equalTo(3));
+    }
 }

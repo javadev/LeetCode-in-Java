@@ -10,4 +10,14 @@ class SolutionTest {
     void getPermutation() {
         assertThat(new Solution().getPermutation(3, 3), equalTo("213"));
     }
+
+    @Test
+    void getPermutation2() {
+        assertThat(new Solution().getPermutation(4, 9), equalTo("2314"));
+    }
+
+    @Test
+    void getPermutation3() {
+        assertThat(new Solution().getPermutation(3, 1), equalTo("123"));
+    }
 }

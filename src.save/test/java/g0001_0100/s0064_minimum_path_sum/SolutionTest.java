@@ -8,7 +8,13 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void minPathSum() {
-        int[][] expected = {{1, 3, 1}, {1, 5, 1}, {4, 2, 1}};
-        assertThat(new Solution().minPathSum(expected), equalTo(7));
+        int[][] grid = {{1, 3, 1}, {1, 5, 1}, {4, 2, 1}};
+        assertThat(new Solution().minPathSum(grid), equalTo(7));
+    }
+
+    @Test
+    void minPathSum2() {
+        int[][] grid = {{1, 2, 3}, {4, 5, 6}};
+        assertThat(new Solution().minPathSum(grid), equalTo(12));
     }
 }

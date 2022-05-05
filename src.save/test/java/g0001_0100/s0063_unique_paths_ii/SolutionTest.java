@@ -8,11 +8,20 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void uniquePathsWithObstacles() {
-        int[][] expected = {
-            {0, 0, 0},
-            {0, 1, 0},
-            {0, 0, 0}
-        };
-        assertThat(new Solution().uniquePathsWithObstacles(expected), equalTo(2));
+        assertThat(
+                new Solution()
+                        .uniquePathsWithObstacles(
+                                new int[][] {
+                                    {0, 0, 0},
+                                    {0, 1, 0},
+                                    {0, 0, 0}
+                                }),
+                equalTo(2));
+    }
+
+    @Test
+    void uniquePathsWithObstacles2() {
+        assertThat(
+                new Solution().uniquePathsWithObstacles(new int[][] {{0, 1}, {0, 0}}), equalTo(1));
     }
 }
