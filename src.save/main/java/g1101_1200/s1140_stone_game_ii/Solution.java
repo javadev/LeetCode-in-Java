@@ -26,14 +26,14 @@ public class Solution {
         return dp[i][m] = ans;
     }
 
-    public int stoneGameII(int[] p) {
+    public int stoneGameII(int[] piles) {
         int sum = 0;
         for (int[] arr1 : dp) {
             Arrays.fill(arr1, -1);
         }
-        for (int z : p) {
+        for (int z : piles) {
             sum += z;
         }
-        return (sum + help(0, 1, p)) / 2;
+        return (sum + help(0, 1, piles)) / 2;
     }
 }
