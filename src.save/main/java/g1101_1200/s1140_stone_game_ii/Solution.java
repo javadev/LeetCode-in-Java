@@ -23,7 +23,8 @@ public class Solution {
                 ans = Math.max(ans, total - help(i + j + 1, Math.max(m, j + 1), p));
             }
         }
-        return dp[i][m] = ans;
+        dp[i][m] = ans;
+        return ans;
     }
 
     public int stoneGameII(int[] piles) {
