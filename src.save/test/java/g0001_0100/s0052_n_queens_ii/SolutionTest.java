@@ -10,4 +10,9 @@ class SolutionTest {
     void totalNQueens() {
         assertThat(new Solution().totalNQueens(4), equalTo(2));
     }
+
+    @Test
+    void totalNQueens2() {
+        assertThat(new Solution().totalNQueens(1), equalTo(1));
+    }
 }

@@ -8,7 +8,13 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void generateMatrix() {
-        int[][] expected = {{1, 2, 3}, {8, 9, 4}, {7, 6, 5}};
-        assertThat(new Solution().generateMatrix(3), equalTo(expected));
+        assertThat(
+                new Solution().generateMatrix(3),
+                equalTo(new int[][] {{1, 2, 3}, {8, 9, 4}, {7, 6, 5}}));
+    }
+
+    @Test
+    void generateMatrix2() {
+        assertThat(new Solution().generateMatrix(1), equalTo(new int[][] {{1}}));
     }
 }
