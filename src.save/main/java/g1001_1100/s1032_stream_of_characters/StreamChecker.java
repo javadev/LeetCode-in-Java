@@ -52,3 +52,9 @@ public class StreamChecker {
         return false;
     }
 }
+
+/*
+ * Your StreamChecker object will be instantiated and called as such:
+ * StreamChecker obj = new StreamChecker(words);
+ * boolean param_1 = obj.query(letter);
+ */
