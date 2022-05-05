@@ -2,6 +2,11 @@ package g1101_1200.s1156_swap_for_longest_repeated_character_substring;
 
 // #Medium #String #Sliding_Window #2022_05_05_Time_12_ms_(47.37%)_Space_44.1_MB_(22.11%)
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class Solution {
     private static class Pair {
         public char character;
