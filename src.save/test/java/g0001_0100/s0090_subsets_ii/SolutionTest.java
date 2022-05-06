@@ -14,4 +14,12 @@ class SolutionTest {
                 new Solution().subsetsWithDup(new int[] {1, 2, 2}),
                 equalTo(ArrayUtils.getLists(expected)));
     }
+
+    @Test
+    void subsetsWithDup2() {
+        int[][] expected = {{0}, {}};
+        assertThat(
+                new Solution().subsetsWithDup(new int[] {0}),
+                equalTo(ArrayUtils.getLists(expected)));
+    }
 }

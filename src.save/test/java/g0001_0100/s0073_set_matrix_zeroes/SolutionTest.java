@@ -12,4 +12,11 @@ class SolutionTest {
         new Solution().setZeroes(matrix);
         assertThat(matrix, equalTo(new int[][] {{1, 0, 1}, {0, 0, 0}, {1, 0, 1}}));
     }
+
+    @Test
+    void setZeroes2() {
+        int[][] matrix = {{0, 1, 2, 0}, {3, 4, 5, 2}, {1, 3, 1, 5}};
+        new Solution().setZeroes(matrix);
+        assertThat(matrix, equalTo(new int[][] {{0, 0, 0, 0}, {0, 4, 5, 0}, {0, 3, 1, 0}}));
+    }
 }

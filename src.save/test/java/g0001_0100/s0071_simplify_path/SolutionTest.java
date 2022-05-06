@@ -10,4 +10,14 @@ class SolutionTest {
     void simplifyPath() {
         assertThat(new Solution().simplifyPath("/home/"), equalTo("/home"));
     }
+
+    @Test
+    void simplifyPath2() {
+        assertThat(new Solution().simplifyPath("/../"), equalTo("/"));
+    }
+
+    @Test
+    void simplifyPath3() {
+        assertThat(new Solution().simplifyPath("/home//foo/"), equalTo("/home/foo"));
+    }
 }
