@@ -43,17 +43,17 @@ public class MKAverage {
 
         if (num >= min.lastKey() && num <= max.firstKey()) {
             middle.add(num);
-            avg += (double) num / c;
+            avg += num / c;
         } else if (num < min.lastKey()) {
             min.add(num);
             int val = min.removeMax();
             middle.add(val);
-            avg += (double) val / c;
+            avg += val / c;
         } else if (num > max.firstKey()) {
             max.add(num);
             int val = max.removeMin();
             middle.add(val);
-            avg += (double) val / c;
+            avg += val / c;
         }
 
         q.offer(num);
@@ -61,17 +61,17 @@ public class MKAverage {
         if (q.size() > m) {
             num = q.poll();
             if (middle.containsKey(num)) {
-                avg -= (double) num / c;
+                avg -= num / c;
                 middle.remove(num);
             } else if (min.containsKey(num)) {
                 min.remove(num);
                 int val = middle.removeMin();
-                avg -= (double) val / c;
+                avg -= val / c;
                 min.add(val);
             } else if (max.containsKey(num)) {
                 max.remove(num);
                 int val = middle.removeMax();
-                avg -= (double) val / c;
+                avg -= val / c;
                 max.add(val);
             }
         }
@@ -85,32 +85,32 @@ public class MKAverage {
     }
 
     static class Bst {
-        TreeMap<Integer, Integer> bst;
+        TreeMap<Integer, Integer> map;
         int size;
 
         public Bst() {
-            this.bst = new TreeMap<>();
+            this.map = new TreeMap<>();
             this.size = 0;
         }
 
         void add(int num) {
-            int count = bst.getOrDefault(num, 0) + 1;
-            bst.put(num, count);
+            int count = map.getOrDefault(num, 0) + 1;
+            map.put(num, count);
             size++;
         }
 
         void remove(int num) {
-            int count = bst.getOrDefault(num, 1) - 1;
+            int count = map.getOrDefault(num, 1) - 1;
             if (count > 0) {
-                bst.put(num, count);
+                map.put(num, count);
             } else {
-                bst.remove(num);
+                map.remove(num);
             }
             size--;
         }
 
         int removeMin() {
-            int key = bst.firstKey();
+            int key = map.firstKey();
 
             remove(key);
 
@@ -118,7 +118,7 @@ public class MKAverage {
         }
 
         int removeMax() {
-            int key = bst.lastKey();
+            int key = map.lastKey();
 
             remove(key);
 
@@ -126,15 +126,15 @@ public class MKAverage {
         }
 
         boolean containsKey(int key) {
-            return bst.containsKey(key);
+            return map.containsKey(key);
         }
 
         int firstKey() {
-            return bst.firstKey();
+            return map.firstKey();
         }
 
         int lastKey() {
-            return bst.lastKey();
+            return map.lastKey();
         }
     }
 }

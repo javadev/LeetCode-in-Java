@@ -7,7 +7,8 @@ public class Solution {
     public int minSideJumps(int[] obstacles) {
         int sideJumps = 0;
         int currLane = 2;
-        for (int i = 0; i < obstacles.length - 1; i++) {
+        int i = 0;
+        while (i < obstacles.length - 1) {
             if (obstacles[i + 1] == currLane) {
                 if (obstacles[i] != 0) {
                     currLane = getNextLane(obstacles[i], obstacles[i + 1]);
@@ -25,6 +26,7 @@ public class Solution {
                 }
                 sideJumps++;
             }
+            i++;
         }
         return sideJumps;
     }
