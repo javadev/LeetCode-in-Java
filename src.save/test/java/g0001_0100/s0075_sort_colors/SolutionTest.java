@@ -12,4 +12,11 @@ class SolutionTest {
         new Solution().sortColors(array);
         assertThat(array, equalTo(new int[] {0, 0, 1, 1, 2, 2}));
     }
+
+    @Test
+    void sortColors2() {
+        int[] array = {2, 0, 1};
+        new Solution().sortColors(array);
+        assertThat(array, equalTo(new int[] {0, 1, 2}));
+    }
 }

@@ -10,4 +10,14 @@ class SolutionTest {
     void numDecodings() {
         assertThat(new Solution().numDecodings("12"), equalTo(2));
     }
+
+    @Test
+    void numDecodings2() {
+        assertThat(new Solution().numDecodings("226"), equalTo(3));
+    }
+
+    @Test
+    void numDecodings3() {
+        assertThat(new Solution().numDecodings("06"), equalTo(0));
+    }
 }

@@ -12,4 +12,11 @@ class SolutionTest {
         new Solution().merge(array, 3, new int[] {2, 5, 6}, 3);
         assertThat(array, equalTo(new int[] {1, 2, 2, 3, 5, 6}));
     }
+
+    @Test
+    void merge2() {
+        int[] array = new int[] {1};
+        new Solution().merge(array, 1, new int[] {}, 0);
+        assertThat(array, equalTo(new int[] {1}));
+    }
 }

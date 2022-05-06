@@ -10,4 +10,9 @@ class SolutionTest {
     void grayCode() {
         assertThat(new Solution().grayCode(2).toArray(), equalTo(new int[] {0, 1, 3, 2}));
     }
+
+    @Test
+    void grayCode2() {
+        assertThat(new Solution().grayCode(1).toArray(), equalTo(new int[] {0, 1}));
+    }
 }

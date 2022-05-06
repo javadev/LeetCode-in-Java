@@ -10,4 +10,9 @@ class SolutionTest {
     void climbStairs() {
         assertThat(new Solution().climbStairs(2), equalTo(2));
     }
+
+    @Test
+    void climbStairs2() {
+        assertThat(new Solution().climbStairs(3), equalTo(3));
+    }
 }

@@ -10,4 +10,9 @@ class SolutionTest {
     void largestRectangleArea() {
         assertThat(new Solution().largestRectangleArea(new int[] {2, 1, 5, 6, 2, 3}), equalTo(10));
     }
+
+    @Test
+    void largestRectangleArea2() {
+        assertThat(new Solution().largestRectangleArea(new int[] {2, 4}), equalTo(4));
+    }
 }

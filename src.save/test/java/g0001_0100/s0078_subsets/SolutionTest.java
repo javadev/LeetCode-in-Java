@@ -14,4 +14,10 @@ class SolutionTest {
                 new Solution().subsets(new int[] {1, 2, 3}),
                 equalTo(ArrayUtils.getLists(expected)));
     }
+
+    @Test
+    void subsets2() {
+        int[][] expected = {{}, {0}};
+        assertThat(new Solution().subsets(new int[] {0}), equalTo(ArrayUtils.getLists(expected)));
+    }
 }

@@ -10,4 +10,9 @@ class SolutionTest {
     void minDistance() {
         assertThat(new Solution().minDistance("horse", "ros"), equalTo(3));
     }
+
+    @Test
+    void minDistance2() {
+        assertThat(new Solution().minDistance("intention", "execution"), equalTo(5));
+    }
 }

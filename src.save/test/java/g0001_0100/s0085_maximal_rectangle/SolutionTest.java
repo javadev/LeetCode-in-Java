@@ -16,4 +16,16 @@ class SolutionTest {
         };
         assertThat(new Solution().maximalRectangle(array), equalTo(6));
     }
+
+    @Test
+    void maximalRectangle2() {
+        char[][] array = {{'0'}};
+        assertThat(new Solution().maximalRectangle(array), equalTo(0));
+    }
+
+    @Test
+    void maximalRectangle3() {
+        char[][] array = {{'1'}};
+        assertThat(new Solution().maximalRectangle(array), equalTo(1));
+    }
 }

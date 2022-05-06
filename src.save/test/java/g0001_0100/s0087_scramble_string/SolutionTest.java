@@ -10,4 +10,14 @@ class SolutionTest {
     void isScramble() {
         assertThat(new Solution().isScramble("great", "rgeat"), equalTo(true));
     }
+
+    @Test
+    void isScramble2() {
+        assertThat(new Solution().isScramble("abcde", "caebd"), equalTo(false));
+    }
+
+    @Test
+    void isScramble3() {
+        assertThat(new Solution().isScramble("a", "a"), equalTo(true));
+    }
 }
