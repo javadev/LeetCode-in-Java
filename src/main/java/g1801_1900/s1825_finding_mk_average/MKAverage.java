@@ -28,7 +28,7 @@ public class MKAverage {
         this.q = new ArrayDeque<>();
     }
 
-    public void addElement(int num) {        
+    public void addElement(int num) {
         if (min.size < k) {
             min.add(num);
             q.offer(num);
@@ -40,7 +40,7 @@ public class MKAverage {
             q.offer(num);
             return;
         }
-        
+
         if (num >= min.lastKey() && num <= max.firstKey()) {
             middle.add(num);
             avg += (double) num / c;
@@ -78,14 +78,16 @@ public class MKAverage {
     }
 
     public int calculateMKAverage() {
-        if (q.size() < m) return -1;
+        if (q.size() < m) {
+            return -1;
+        }
         return (int) avg;
     }
 
     static class Bst {
         TreeMap<Integer, Integer> bst;
         int size;
-        
+
         public Bst() {
             this.bst = new TreeMap<>();
             this.size = 0;
@@ -122,15 +124,15 @@ public class MKAverage {
 
             return key;
         }
-        
+
         boolean containsKey(int key) {
             return bst.containsKey(key);
         }
-        
+
         int firstKey() {
             return bst.firstKey();
         }
-        
+
         int lastKey() {
             return bst.lastKey();
         }

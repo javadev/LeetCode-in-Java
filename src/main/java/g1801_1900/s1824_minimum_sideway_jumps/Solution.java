@@ -8,16 +8,17 @@ public class Solution {
         int sideJumps = 0;
         int currLane = 2;
         for (int i = 0; i < obstacles.length - 1; i++) {
-            if (obstacles[i+1] == currLane) {
+            if (obstacles[i + 1] == currLane) {
                 if (obstacles[i] != 0) {
-                    currLane = getNextLane(obstacles[i], obstacles[i+1]);
+                    currLane = getNextLane(obstacles[i], obstacles[i + 1]);
                 } else {
                     int j = i + 2;
-                    while (j < obstacles.length && (obstacles[j] == 0 || obstacles[j] == obstacles[i+1])) {
+                    while (j < obstacles.length
+                            && (obstacles[j] == 0 || obstacles[j] == obstacles[i + 1])) {
                         j++;
                     }
                     if (j < obstacles.length) {
-                        currLane = getNextLane(obstacles[i+1], obstacles[j]);
+                        currLane = getNextLane(obstacles[i + 1], obstacles[j]);
                     } else {
                         i = obstacles.length - 1;
                     }
@@ -27,18 +28,17 @@ public class Solution {
         }
         return sideJumps;
     }
-    
+
     private int getNextLane(int nextObstacle, int nextNextObstacle) {
-        if ((nextObstacle == 2 && nextNextObstacle == 3) ||
-            (nextObstacle == 3 && nextNextObstacle == 2)) {
+        if ((nextObstacle == 2 && nextNextObstacle == 3)
+                || (nextObstacle == 3 && nextNextObstacle == 2)) {
             return 1;
         }
-        if ((nextObstacle == 1 && nextNextObstacle == 3) ||
-            (nextObstacle == 3 && nextNextObstacle == 1)) {
+        if ((nextObstacle == 1 && nextNextObstacle == 3)
+                || (nextObstacle == 3 && nextNextObstacle == 1)) {
             return 2;
-        }
-        else {
-			return 3;
+        } else {
+            return 3;
         }
     }
 }

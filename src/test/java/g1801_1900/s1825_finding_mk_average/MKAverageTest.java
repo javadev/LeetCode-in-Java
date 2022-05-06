@@ -1,9 +1,9 @@
 package g1801_1900.s1825_finding_mk_average;
 
-import org.junit.jupiter.api.Test;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 class MKAverageTest {
     @Test
@@ -13,10 +13,10 @@ class MKAverageTest {
         obj.addElement(1);
         assertThat(obj.calculateMKAverage(), equalTo(-1));
         obj.addElement(10);
-        assertThat(obj.calculateMKAverage(),equalTo(3));
+        assertThat(obj.calculateMKAverage(), equalTo(3));
         obj.addElement(5);
         obj.addElement(5);
         obj.addElement(5);
-        assertThat(obj.calculateMKAverage(),equalTo(5));
+        assertThat(obj.calculateMKAverage(), equalTo(5));
     }
 }
