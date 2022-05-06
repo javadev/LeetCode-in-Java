@@ -10,4 +10,9 @@ class SolutionTest {
     void addBinary() {
         assertThat(new Solution().addBinary("11", "1"), equalTo("100"));
     }
+
+    @Test
+    void addBinary2() {
+        assertThat(new Solution().addBinary("1010", "1011"), equalTo("10101"));
+    }
 }
