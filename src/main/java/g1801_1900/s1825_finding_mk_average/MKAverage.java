@@ -7,6 +7,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.TreeMap;
 
+@SuppressWarnings("java:S2184")
 public class MKAverage {
     private final double m;
     private final double k;
