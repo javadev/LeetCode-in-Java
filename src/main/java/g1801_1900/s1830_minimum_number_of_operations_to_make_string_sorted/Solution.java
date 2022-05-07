@@ -20,15 +20,20 @@ public class Solution {
         long ans = 0;
         for (int i = 0; i < n; i++) {
             len--;
-            int bound = s.charAt(i) - 'a', first = 0;
+            int bound = s.charAt(i) - 'a';
+            int first = 0;
             long rev = 1;
             for (int k = 0; k < 26; k++) {
-                if (k < bound) first += count[k];
+                if (k < bound) {
+                    first += count[k];
+                }
                 rev = (rev * fact[count[k]]) % mod;
             }
             ans =
                     ans % mod
-                            + (((first * fact[len]) % mod) * (modPow(rev, mod - 2, mod)) % mod)
+                            + (((first * fact[len]) % mod)
+                                            * (modPow(rev, (long) mod - 2, mod))
+                                            % mod)
                                     % mod;
             ans = ans % mod;
             count[bound]--;
@@ -36,13 +41,13 @@ public class Solution {
         return (int) ans;
     }
 
-    private long modPow(long x, long n, int M) {
+    private long modPow(long x, long n, int m) {
         long result = 1;
         while (n > 0) {
             if ((n & 1) != 0) {
-                result = (result * x) % M;
+                result = (result * x) % m;
             }
-            x = (x * x) % M;
+            x = (x * x) % m;
             n = n >> 1;
         }
         return result;
