@@ -6,6 +6,7 @@ package g1801_1900.s1845_seat_reservation_manager;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+@SuppressWarnings("java:S1172")
 public class SeatManager {
     private final Queue<Integer> seats;
     private int smallest;
