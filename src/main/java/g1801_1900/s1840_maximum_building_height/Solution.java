@@ -11,20 +11,16 @@ public class Solution {
             return n - 1;
         }
         int m = restrictions.length;
-
         Arrays.sort(restrictions, Comparator.comparingInt(a -> a[0]));
-
         for (int i = m - 2; i >= 0; i--) {
             restrictions[i][1] =
                     Math.min(
                             restrictions[i][1],
                             restrictions[i + 1][1] + restrictions[i + 1][0] - restrictions[i][0]);
         }
-
         int id = 1;
         int height = 0;
         int res = 0;
-
         for (int[] r : restrictions) {
             int currMax;
             if (r[1] >= height + r[0] - id) {
@@ -37,11 +33,9 @@ public class Solution {
             id = r[0];
             res = Math.max(res, currMax);
         }
-
         if (id != n) {
             res = Math.max(res, height + n - id);
         }
-
         return res;
     }
 }
