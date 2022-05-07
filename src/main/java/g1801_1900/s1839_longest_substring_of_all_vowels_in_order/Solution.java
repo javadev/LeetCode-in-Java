@@ -6,7 +6,7 @@ public class Solution {
     public int longestBeautifulSubstring(String word) {
         int cnt = 1;
         int len = 1;
-        int max_len = 0;
+        int maxLen = 0;
         for (int i = 1; i != word.length(); ++i) {
             if (word.charAt(i - 1) == word.charAt(i)) {
                 ++len;
@@ -19,9 +19,9 @@ public class Solution {
             }
 
             if (cnt == 5) {
-                max_len = Math.max(max_len, len);
+                maxLen = Math.max(maxLen, len);
             }
         }
-        return max_len;
+        return maxLen;
     }
 }
