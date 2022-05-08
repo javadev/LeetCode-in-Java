@@ -14,7 +14,9 @@ public class Solution {
             if (n1[po1] > n2[po2]) {
                 po1++;
             } else {
-                if (po2 != po1) res = Math.max(res, po2 - po1);
+                if (po2 != po1) {
+                    res = Math.max(res, po2 - po1);
+                }
                 po2++;
             }
         }

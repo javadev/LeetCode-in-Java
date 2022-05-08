@@ -30,14 +30,14 @@ public class Solution {
         }
         long res = 0L;
         long[] preSum = new long[n];
-        preSum[0] = (long) nums[0];
+        preSum[0] = nums[0];
         for (int i = 1; i < n; i++) {
-            preSum[i] = preSum[i - 1] + (long) nums[i];
+            preSum[i] = preSum[i - 1] + nums[i];
         }
         for (int i = 0; i < n; i++) {
             long sum =
                     left[i] == -1 ? preSum[right[i] - 1] : preSum[right[i] - 1] - preSum[left[i]];
-            long cur = (long) nums[i] * sum;
+            long cur = nums[i] * sum;
             res = Math.max(cur, res);
         }
         return (int) (res % mod);
