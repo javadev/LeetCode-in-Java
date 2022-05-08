@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-@SuppressWarnings("java:S135")
+@SuppressWarnings({"java:S135", "unchecked"})
 public class Solution {
     public int largestPathValue(String colors, int[][] edges) {
         int len = colors.length();
