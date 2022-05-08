@@ -12,7 +12,6 @@ public class Solution {
     public int largestPathValue(String colors, int[][] edges) {
         int len = colors.length();
         List<Integer>[] graph = buildGraph(len, edges);
-
         int[] frequencies = new int[26];
         HashMap<Integer, int[]> calculatedFrequencies = new HashMap<>();
         int[] status = new int[len];
@@ -21,7 +20,6 @@ public class Solution {
                 continue;
             }
             int[] localMax = runDFS(graph, i, calculatedFrequencies, status, colors);
-
             if (localMax[26] == -1) {
                 Arrays.fill(frequencies, -1);
                 break;
@@ -31,12 +29,10 @@ public class Solution {
                 }
             }
         }
-
         int max = Integer.MIN_VALUE;
         for (int freq : frequencies) {
             max = Math.max(max, freq);
         }
-
         return max;
     }
 
@@ -49,32 +45,25 @@ public class Solution {
         if (calculatedFrequencies.containsKey(node)) {
             return calculatedFrequencies.get(node);
         }
-
         int[] frequencies = new int[27];
         if (status[node] == 1) {
             frequencies[26] = -1;
             return frequencies;
         }
-
         status[node] = 1;
         for (int neighbour : graph[node]) {
             int[] localMax = runDFS(graph, neighbour, calculatedFrequencies, status, colors);
-
             if (localMax[26] == -1) {
                 return localMax;
             }
-
             for (int i = 0; i < 26; i++) {
                 frequencies[i] = Math.max(frequencies[i], localMax[i]);
             }
         }
         status[node] = 2;
-
         int color = colors.charAt(node) - 'a';
         frequencies[color]++;
-
         calculatedFrequencies.put(node, frequencies);
-
         return frequencies;
     }
 
@@ -83,11 +72,9 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             graph[i] = new ArrayList<>();
         }
-
         for (int[] edge : edges) {
             graph[edge[0]].add(edge[1]);
         }
-
         return graph;
     }
 }
