@@ -15,4 +15,14 @@ class SolutionTest {
         treeNode2.left = new TreeNode(3);
         assertThat(new Solution().inorderTraversal(treeNode).toString(), equalTo("[1, 3, 2]"));
     }
+
+    @Test
+    void inorderTraversal2() {
+        assertThat(new Solution().inorderTraversal(null).toString(), equalTo("[]"));
+    }
+
+    @Test
+    void inorderTraversal3() {
+        assertThat(new Solution().inorderTraversal(new TreeNode(1)).toString(), equalTo("[1]"));
+    }
 }

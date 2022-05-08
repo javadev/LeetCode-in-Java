@@ -12,12 +12,16 @@ class SolutionTest {
         TreeNode treeNode1 = new TreeNode(2);
         treeNode1.left = new TreeNode(1);
         treeNode1.right = new TreeNode(3);
-        TreeNode treeNode2 = new TreeNode(5);
-        treeNode2.left = new TreeNode(1);
-        treeNode2.right = new TreeNode(4);
-        treeNode2.right.left = new TreeNode(3);
-        treeNode2.right.right = new TreeNode(6);
         assertThat(new Solution().isValidBST(treeNode1), equalTo(true));
-        assertThat(new Solution().isValidBST(treeNode2), equalTo(false));
+    }
+
+    @Test
+    void isValidBST2() {
+        TreeNode treeNode = new TreeNode(5);
+        treeNode.left = new TreeNode(1);
+        treeNode.right = new TreeNode(4);
+        treeNode.right.left = new TreeNode(3);
+        treeNode.right.right = new TreeNode(6);
+        assertThat(new Solution().isValidBST(treeNode), equalTo(false));
     }
 }

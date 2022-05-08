@@ -9,16 +9,20 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void recoverTree() {
-        TreeNode treeNode1 = new TreeNode(1);
-        treeNode1.left = new TreeNode(3);
-        treeNode1.left.right = new TreeNode(2);
-        TreeNode treeNode2 = new TreeNode(3);
-        treeNode2.left = new TreeNode(1);
-        treeNode2.right = new TreeNode(4);
-        treeNode2.right.left = new TreeNode(2);
-        new Solution().recoverTree(treeNode1);
-        new Solution().recoverTree(treeNode2);
-        assertThat(treeNode1.toString(), equalTo("3,1,null,2,null"));
-        assertThat(treeNode2.toString(), equalTo("2,1,4,3,null"));
+        TreeNode treeNode = new TreeNode(1);
+        treeNode.left = new TreeNode(3);
+        treeNode.left.right = new TreeNode(2);
+        new Solution().recoverTree(treeNode);
+        assertThat(treeNode.toString(), equalTo("3,1,null,2,null"));
+    }
+
+    @Test
+    void recoverTree2() {
+        TreeNode treeNode = new TreeNode(3);
+        treeNode.left = new TreeNode(1);
+        treeNode.right = new TreeNode(4);
+        treeNode.right.left = new TreeNode(2);
+        new Solution().recoverTree(treeNode);
+        assertThat(treeNode.toString(), equalTo("2,1,4,3,null"));
     }
 }
