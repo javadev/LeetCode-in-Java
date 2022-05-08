@@ -21,7 +21,6 @@ public class Solution {
                 swap(result, lo++, hi--);
             }
         }
-
         int ans = 0;
         char[] arr = num.toCharArray();
         for (int i = 0; i < arr.length; i++) {
@@ -37,7 +36,6 @@ public class Solution {
                 swap(result, j, j + 1);
             }
         }
-
         return ans;
     }
 
