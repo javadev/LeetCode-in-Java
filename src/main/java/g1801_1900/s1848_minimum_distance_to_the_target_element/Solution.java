@@ -7,11 +7,9 @@ public class Solution {
         int result = 0;
         int minDiff = Integer.MAX_VALUE;
         for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == target) {
-                if (Math.abs(start - i) < minDiff) {
-                    minDiff = Math.abs(start - i);
-                    result = minDiff;
-                }
+            if (nums[i] == target && Math.abs(start - i) < minDiff) {
+                minDiff = Math.abs(start - i);
+                result = minDiff;
             }
         }
         return result;
