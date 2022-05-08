@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int largestPathValue(String colors, int[][] edges) {
         int len = colors.length();
