@@ -4,29 +4,30 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.TreeNode;
+import com_github_leetcode.TreeUtils;
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
 
 class SolutionTest {
     @Test
     void isSameTree() {
-        TreeNode treeNode1 = new TreeNode(1);
-        treeNode1.left = new TreeNode(2);
-        treeNode1.right = new TreeNode(3);
-        TreeNode treeNode2 = new TreeNode(1);
-        treeNode2.left = new TreeNode(2);
-        treeNode2.right = new TreeNode(3);
-        TreeNode treeNode3 = new TreeNode(1);
-        treeNode3.left = new TreeNode(2);
-        TreeNode treeNode4 = new TreeNode(1);
-        treeNode4.right = new TreeNode(2);
-        TreeNode treeNode5 = new TreeNode(1);
-        treeNode5.left = new TreeNode(2);
-        treeNode5.right = new TreeNode(1);
-        TreeNode treeNode6 = new TreeNode(1);
-        treeNode6.left = new TreeNode(1);
-        treeNode6.right = new TreeNode(2);
-        assertThat(new Solution().isSameTree(treeNode1, treeNode2), equalTo(true));
-        assertThat(new Solution().isSameTree(treeNode3, treeNode4), equalTo(false));
-        assertThat(new Solution().isSameTree(treeNode5, treeNode6), equalTo(false));
+        TreeNode p = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3));
+        TreeNode q = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3));
+        assertThat(new Solution().isSameTree(p, q), equalTo(true));
+    }
+
+    @Test
+    void isSameTree2() {
+        TreeNode p = TreeUtils.constructBinaryTree(Arrays.asList(1, 2));
+        TreeNode q = TreeUtils.constructBinaryTree(Arrays.asList(1, null, 2));
+        assertThat(new Solution().isSameTree(p, q), equalTo(false));
+    }
+
+    @Test
+    void isSameTree3() {
+        TreeNode p = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 1));
+        TreeNode q = TreeUtils.constructBinaryTree(Arrays.asList(1, 1, 2));
+        assertThat(new Solution().isSameTree(p, q), equalTo(false));
     }
 }
