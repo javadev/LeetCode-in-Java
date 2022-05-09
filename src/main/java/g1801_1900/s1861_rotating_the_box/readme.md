@@ -18,38 +18,50 @@ Return _an_ `n x m` _matrix representing the box after the rotation described ab
 
 ![](https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcodewithstones.png)
 
-**Input:** box = [["#",".","#"]]
+**Input:**
 
-**Output:** [["."], 
-             ["#"], 
-             ["#"]]
+    box = [["#",".","#"]]
+
+**Output:**
+
+    [["."], 
+     ["#"], 
+     ["#"]]
 
 **Example 2:**
 
 ![](https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcode2withstones.png)
 
-**Input:** box = [["#",".","*","."], 
-                  ["#","#","*","."]]
+**Input:**
 
-**Output:** [["#","."], 
-             ["#","#"], 
-             ["*","*"], 
-             [".","."]]
+    box = [["#",".","*","."], 
+           ["#","#","*","."]]
+
+**Output:**
+
+    [["#","."], 
+     ["#","#"], 
+     ["*","*"], 
+     [".","."]]
 
 **Example 3:**
 
 ![](https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcode3withstone.png)
 
-**Input:** box = [["#","#","*",".","*","."], 
-                  ["#","#","#","*",".","."], 
-                  ["#","#","#",".","#","."]]
+**Input:**
 
-**Output:** [[".","#","#"], 
-             [".","#","#"], 
-             ["#","#","*"], 
-             ["#","*","."], 
-             ["#",".","*"], 
-             ["#",".","."]]
+    box = [["#","#","*",".","*","."], 
+           ["#","#","#","*",".","."], 
+           ["#","#","#",".","#","."]]
+
+**Output:**
+
+    [[".","#","#"], 
+     [".","#","#"], 
+     ["#","#","*"], 
+     ["#","*","."], 
+     ["#",".","*"], 
+     ["#",".","."]]
 
 **Constraints:**
 
