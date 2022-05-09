@@ -15,4 +15,9 @@ class SolutionTest {
     void chalkReplacer2() {
         assertThat(new Solution().chalkReplacer(new int[] {3, 4, 1, 2}, 25), equalTo(1));
     }
+
+    @Test
+    void chalkReplacer3() {
+        assertThat(new Solution().chalkReplacer(new int[] {1, 2, -1, -2}, 25), equalTo(0));
+    }
 }

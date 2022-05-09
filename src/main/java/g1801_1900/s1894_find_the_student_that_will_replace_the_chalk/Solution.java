@@ -5,10 +5,13 @@ package g1801_1900.s1894_find_the_student_that_will_replace_the_chalk;
 
 public class Solution {
     public int chalkReplacer(int[] chalk, int k) {
-        k = (int) (k % sum(chalk));
+        long localSum = sum(chalk);
         int currentIndex = 0;
-        while (chalk[currentIndex] <= k) {
-            k -= chalk[currentIndex++];
+        if (localSum != 0) {
+            int localK = (int) (k % localSum);
+            while (chalk[currentIndex] <= localK) {
+                localK -= chalk[currentIndex++];
+            }
         }
         return currentIndex;
     }
