@@ -1,26 +1,25 @@
 package g1801_1900.s1861_rotating_the_box;
 
-// #Medium #Array #Matrix #Two_Pointers #2022_05_09_Time_9_ms_(84.22%)_Space_141.2_MB_(50.05%)
-
-import java.util.Arrays;
+// #Medium #Array #Matrix #Two_Pointers #2022_05_09_Time_8_ms_(92.84%)_Space_145.6_MB_(5.03%)
 
 public class Solution {
     public char[][] rotateTheBox(char[][] box) {
-        char[][] result = new char[box[0].length][box.length];
-        for (char[] row : result) {
-            Arrays.fill(row, '#');
-        }
-        for (int i = 0; i < box.length; i++) {
-            int col = box.length - 1 - i;
-            int stones = 0;
-            for (int j = 0; j < box[0].length; j++) {
+        int n = box.length;
+        int m = box[0].length;
+        char[][] result = new char[m][n];
+        for (int i = 0; i < n; i++) {
+            int j = m - 1;
+            int idx = m - 1;
+            while (j >= 0) {
                 if (box[i][j] == '#') {
-                    stones++;
-                } else if (box[i][j] == '*') {
-                    stones = 0;
-                    result[j][col] = '*';
+                    result[j--][n - i - 1] = '.';
+                    result[idx--][n - i - 1] = '#';
                 } else {
-                    result[j - stones][col] = '.';
+                    char c = box[i][j];
+                    result[j--][n - i - 1] = c;
+                    if (c == '*') {
+                        idx = j;
+                    }
                 }
             }
         }
