@@ -5,18 +5,31 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.ArrayUtils;
 import com_github_leetcode.TreeNode;
+import com_github_leetcode.TreeUtils;
+import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
     void levelOrderBottom() {
-        TreeNode bottomLeft = new TreeNode(15);
-        TreeNode bottomRight = new TreeNode(7);
-        TreeNode upRight = new TreeNode(20, bottomLeft, bottomRight);
-        TreeNode upLeft = new TreeNode(9);
-        TreeNode root = new TreeNode(3, upLeft, upRight);
+        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(3, 9, 20, null, null, 15, 7));
         assertThat(
                 new Solution().levelOrderBottom(root),
                 equalTo(ArrayUtils.getLists(new int[][] {{15, 7}, {9, 20}, {3}})));
+    }
+
+    @Test
+    void levelOrderBottom2() {
+        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(1));
+        assertThat(
+                new Solution().levelOrderBottom(root),
+                equalTo(ArrayUtils.getLists(new int[][] {{1}})));
+    }
+
+    @Test
+    void levelOrderBottom3() {
+        assertThat(
+                new Solution().levelOrderBottom(null),
+                equalTo(ArrayUtils.getLists(new int[][] {})));
     }
 }

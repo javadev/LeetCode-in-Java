@@ -14,4 +14,12 @@ class SolutionTest {
         TreeNode actual = new Solution().buildTree(preorder, inorder);
         assertThat(actual.toString(), equalTo("3,9,20,15,7"));
     }
+
+    @Test
+    void constructBinaryTree2() {
+        int[] preorder = {-1};
+        int[] inorder = {-1};
+        TreeNode actual = new Solution().buildTree(preorder, inorder);
+        assertThat(actual.toString(), equalTo("-1"));
+    }
 }

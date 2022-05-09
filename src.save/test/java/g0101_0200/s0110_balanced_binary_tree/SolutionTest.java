@@ -4,17 +4,26 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.TreeNode;
+import com_github_leetcode.TreeUtils;
+import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
     void balancedBinaryTree() {
-        TreeNode bottomLeft = new TreeNode(15);
-        TreeNode bottomRight = new TreeNode(7);
-
-        TreeNode upRight = new TreeNode(20, bottomLeft, bottomRight);
-        TreeNode upLeft = new TreeNode(9);
-        TreeNode root = new TreeNode(3, upLeft, upRight);
+        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(3, 9, 20, null, null, 15, 7));
         assertThat(new Solution().isBalanced(root), equalTo(true));
+    }
+
+    @Test
+    void balancedBinaryTree2() {
+        TreeNode root =
+                TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 2, 3, 3, null, null, 4, 4));
+        assertThat(new Solution().isBalanced(root), equalTo(false));
+    }
+
+    @Test
+    void balancedBinaryTree3() {
+        assertThat(new Solution().isBalanced(null), equalTo(true));
     }
 }
