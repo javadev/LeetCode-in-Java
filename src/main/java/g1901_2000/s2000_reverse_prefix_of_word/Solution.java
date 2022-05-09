@@ -1,20 +1,19 @@
 package g1901_2000.s2000_reverse_prefix_of_word;
 
-// #Easy #String #Two_Pointers #2022_05_09_Time_1_ms_(75.76%)_Space_42.6_MB_(28.07%)
+// #Easy #String #Two_Pointers #2022_05_09_Time_0_ms_(100.00%)_Space_40.7_MB_(79.75%)
 
 public class Solution {
     public String reversePrefix(String word, char ch) {
-        String temp = Character.toString(ch);
-        StringBuilder sb = new StringBuilder();
-        if (!word.contains(temp)) {
-            return word;
+        int i = 0;
+        int j = word.indexOf(ch);
+        char[] charArr = word.toCharArray();
+        while (i < j) {
+            char temp = charArr[i];
+            charArr[i] = charArr[j];
+            charArr[j] = temp;
+            i++;
+            j--;
         }
-        for (int i = word.indexOf(ch); i >= 0; i--) {
-            sb.append(word.charAt(i));
-        }
-        for (int i = word.indexOf(ch) + 1; i < word.length(); i++) {
-            sb.append(word.charAt(i));
-        }
-        return sb.toString();
+        return String.valueOf(charArr);
     }
 }
