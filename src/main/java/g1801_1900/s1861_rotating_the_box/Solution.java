@@ -1,28 +1,27 @@
 package g1801_1900.s1861_rotating_the_box;
 
-// #Medium #Array #Matrix #Two_Pointers #2022_05_09_Time_11_ms_(63.70%)_Space_141_MB_(55.18%)
+// #Medium #Array #Matrix #Two_Pointers #2022_05_09_Time_9_ms_(84.22%)_Space_141.2_MB_(50.05%)
+
+import java.util.Arrays;
 
 public class Solution {
     public char[][] rotateTheBox(char[][] box) {
-        int m = box.length;
-        int n = box[0].length;
-        char[][] result = new char[n][m];
-        for (int i = m - 1; i >= 0; i--) {
-            int free = -1;
-            for (int j = n - 1; j >= 0; j--) {
-                if (box[i][j] == '.' && free == -1) {
-                    free = j;
+        char[][] result = new char[box[0].length][box.length];
+        for(char[] row : result) {
+            Arrays.fill(row, '#');
+        }
+        for(int i = 0; i < box.length; i++) {
+            int col = box.length - 1 - i;
+            int stones = 0;
+            for(int j = 0; j < box[0].length; j++) {
+                if (box[i][j] == '#') {
+                    stones++;
                 } else if (box[i][j] == '*') {
-                    free = -1;
-                } else if (box[i][j] == '#' && free != -1) {
-                    box[i][j] = '.';
-                    box[i][free] = '#';
-                    free = free - 1;
+                    stones = 0;
+                    result[j][col] = '*';
+                } else {
+                    result[j - stones][col] = '.';
                 }
-            }
-            // this part can be further optimized by doing this in above for-loop
-            for (int j = 0; j < n; j++) {
-                result[j][m - 1 - i] = box[i][j];
             }
         }
         return result;
