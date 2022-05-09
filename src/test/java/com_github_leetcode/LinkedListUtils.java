@@ -3,7 +3,6 @@ package com_github_leetcode;
 import java.util.List;
 
 public class LinkedListUtils {
-
     public static ListNode contructLinkedList(int[] nums) {
         if (nums == null || nums.length == 0) {
             return null;
