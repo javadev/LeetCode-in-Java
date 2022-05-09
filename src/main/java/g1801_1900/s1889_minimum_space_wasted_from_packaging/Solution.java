@@ -5,6 +5,7 @@ package g1801_1900.s1889_minimum_space_wasted_from_packaging;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     private static final int MOD = 1_000_000_007;
 
