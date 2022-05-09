@@ -4,15 +4,15 @@ package g1901_2000.s2000_reverse_prefix_of_word;
 
 public class Solution {
     public String reversePrefix(String word, char ch) {
-       String temp = Character.toString(ch);
-       StringBuilder sb = new StringBuilder();
-       if(!word.contains(temp)){
-           return word;
-       }
-        for (int i = word.indexOf(ch); i >= 0; i--) {
-              sb.append(word.charAt(i));
+        String temp = Character.toString(ch);
+        StringBuilder sb = new StringBuilder();
+        if (!word.contains(temp)) {
+            return word;
         }
-        for (int i = word.indexOf(ch)+1; i < word.length(); i++) {
+        for (int i = word.indexOf(ch); i >= 0; i--) {
+            sb.append(word.charAt(i));
+        }
+        for (int i = word.indexOf(ch) + 1; i < word.length(); i++) {
             sb.append(word.charAt(i));
         }
         return sb.toString();
