@@ -58,7 +58,9 @@ public class Solution {
             int m = l + (h - l) / 2;
             if (packages[m] <= key) {
                 l = m + 1;
-            } else h = m;
+            } else {
+                h = m;
+            }
         }
         return h - 1;
     }
