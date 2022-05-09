@@ -1,35 +1,27 @@
 package g1801_1900.s1861_rotating_the_box;
 
-// #Medium #Array #Matrix #Two_Pointers #2022_05_08_Time_16_ms_(30.81%)_Space_77.6_MB_(95.11%)
+// #Medium #Array #Matrix #Two_Pointers #2022_05_09_Time_8_ms_(92.84%)_Space_145.6_MB_(5.03%)
 
 public class Solution {
     public char[][] rotateTheBox(char[][] box) {
-        int m = box.length;
-        int n = box[0].length;
-        for (int i = 0; i < m; i++) {
-            for (int j = n - 1; j >= 0; j--) {
+        int n = box.length;
+        int m = box[0].length;
+        char[][] result = new char[m][n];
+        for (int i = 0; i < n; i++) {
+            int j = m - 1;
+            int idx = m - 1;
+            while (j >= 0) {
                 if (box[i][j] == '#') {
-                    int empty = j + 1;
-                    while (empty < n && box[i][empty] == '.') {
-                        empty++;
-                    }
-                    if (empty < n && box[i][empty] == '.') {
-                        box[i][empty] = '#';
-                        box[i][j] = '.';
-                    } else if (empty - 1 < n && box[i][empty - 1] == '.') {
-                        box[i][empty - 1] = '#';
-                        box[i][j] = '.';
+                    result[j--][n - i - 1] = '.';
+                    result[idx--][n - i - 1] = '#';
+                } else {
+                    char c = box[i][j];
+                    result[j--][n - i - 1] = c;
+                    if (c == '*') {
+                        idx = j;
                     }
                 }
             }
-        }
-        char[][] result = new char[n][m];
-        int k = m - 1;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                result[j][k] = box[i][j];
-            }
-            k--;
         }
         return result;
     }
