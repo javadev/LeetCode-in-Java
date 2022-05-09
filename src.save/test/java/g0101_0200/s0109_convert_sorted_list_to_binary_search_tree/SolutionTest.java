@@ -16,4 +16,9 @@ class SolutionTest {
                 new Solution().sortedListToBST(nodes).toString(),
                 equalTo("0,-3,-10,null,9,5,null"));
     }
+
+    @Test
+    void convertSortedListToBST2() {
+        assertThat(new Solution().sortedListToBST(null), equalTo(null));
+    }
 }

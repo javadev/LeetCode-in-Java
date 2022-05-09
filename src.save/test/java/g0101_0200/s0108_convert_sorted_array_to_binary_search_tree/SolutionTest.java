@@ -12,4 +12,10 @@ class SolutionTest {
                 new Solution().sortedArrayToBST(new int[] {-10, -3, 0, 5, 9}).toString(),
                 equalTo("0,-10,null,-3,5,null,9"));
     }
+
+    @Test
+    void sortedArrayToBST2() {
+        assertThat(
+                new Solution().sortedArrayToBST(new int[] {1, 3}).toString(), equalTo("1,null,3"));
+    }
 }
