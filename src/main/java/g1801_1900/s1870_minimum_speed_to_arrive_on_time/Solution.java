@@ -13,7 +13,7 @@ public class Solution {
         double cost = 0;
         for (int i = 0; i < n - 1; i++) {
             // same as ceil(doubleTime/doubleSpeed)
-            cost += (dist[i] - 1.0) / spe + 1;
+            cost += ((double) dist[i] - 1) / spe + 1;
         }
         cost += (double) dist[n - 1] / (double) spe;
         return cost <= h;
