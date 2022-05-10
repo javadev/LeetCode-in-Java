@@ -6,7 +6,7 @@ public class Solution {
     public boolean checkZeroOnes(String s) {
         int zeroes = 0;
         int ones = 0;
-        int i=0;
+        int i = 0;
         while (i < s.length()) {
             int start = i;
             while (i < s.length() && s.charAt(i) == '0') {
@@ -22,7 +22,6 @@ public class Solution {
             if (i > start) {
                 ones = Math.max(ones, i - start);
             }
-            i++;
         }
         return ones > zeroes;
     }
