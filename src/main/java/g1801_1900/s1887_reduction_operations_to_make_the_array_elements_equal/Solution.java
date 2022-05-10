@@ -4,7 +4,7 @@ package g1801_1900.s1887_reduction_operations_to_make_the_array_elements_equal;
 
 public class Solution {
     public int reductionOperations(int[] nums) {
-        int arr[] = new int[100001];
+        int[] arr = new int[100001];
         for (int i : nums) {
             arr[i]++;
         }
