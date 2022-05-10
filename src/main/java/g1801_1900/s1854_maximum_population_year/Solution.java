@@ -1,27 +1,25 @@
 package g1801_1900.s1854_maximum_population_year;
 
-// #Easy #Array #Counting #2022_05_08_Time_10_ms_(9.66%)_Space_43.8_MB_(6.38%)
-
-import java.util.HashMap;
-import java.util.Map;
+// #Easy #Array #Counting #2022_05_10_Time_0_ms_(100.00%)_Space_42.7_MB_(24.42%)
 
 public class Solution {
     public int maximumPopulation(int[][] logs) {
-        int maxCnt = 0;
-        int earliest = logs[0][0];
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int[] people : logs) {
-            for (int i = people[0]; i < people[1]; i++) {
-                int val = map.getOrDefault(i, 0) + 1;
-                map.put(i, val);
-                if (maxCnt < val) {
-                    maxCnt = val;
-                    earliest = i;
-                } else if (maxCnt == val) {
-                    earliest = Math.min(earliest, i);
-                }
+        int[] arr = new int[101];
+        for (int i = 0; i < logs.length; i++) {
+            arr[logs[i][0] - 1950]++;
+            arr[logs[i][1] - 1950]--;
+        }
+        for (int i = 1; i < 101; i++) {
+            arr[i] += arr[i - 1];
+        }
+        int maxyear = 1950;
+        int max = 0;
+        for (int i = 0; i < 101; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                maxyear = i + 1950;
             }
         }
-        return earliest;
+        return maxyear;
     }
 }
