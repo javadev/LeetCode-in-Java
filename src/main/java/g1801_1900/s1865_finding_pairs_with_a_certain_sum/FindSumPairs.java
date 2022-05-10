@@ -6,10 +6,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FindSumPairs {
-
-    Map<Integer, Integer> numFreq = new HashMap<>();
-    int[] nums1;
-    int[] nums2;
+    private Map<Integer, Integer> numFreq = new HashMap<>();
+    private int[] nums1;
+    private int[] nums2;
 
     public FindSumPairs(int[] nums1, int[] nums2) {
         this.nums1 = nums1;
@@ -30,7 +29,6 @@ public class FindSumPairs {
         for (int num : nums1) {
             res += numFreq.getOrDefault(tot - num, 0);
         }
-
         return res;
     }
 }
