@@ -23,7 +23,9 @@ public class Solution {
         if (h + 1 <= n) {
             return -1;
         }
-        int max = fmax(dist) * 100, lo = 1, hi = max;
+        int max = fmax(dist) * 100;
+        int lo = 1;
+        int hi = max;
         while (lo < hi) {
             int mid = (lo + hi) / 2;
             // speed of mid is possible, move to left side
