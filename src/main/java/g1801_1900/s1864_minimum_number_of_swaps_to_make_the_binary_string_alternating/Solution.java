@@ -15,10 +15,13 @@ public class Solution {
             }
         }
 
-        if ((count[0][0] == 0 && count[1][1] == 0) || (count[0][1] == 0 && count[1][0] == 0))
+        if ((count[0][0] == 0 && count[1][1] == 0) || (count[0][1] == 0 && count[1][0] == 0)) {
             return 0;
+        }
 
-        if (count[0][0] != count[1][1] && count[0][1] != count[1][0]) return -1;
+        if (count[0][0] != count[1][1] && count[0][1] != count[1][0]) {
+            return -1;
+        }
 
         int ans1 = count[0][0] == count[1][1] ? count[0][0] : Integer.MAX_VALUE;
         int ans2 = count[0][1] == count[1][0] ? count[0][1] : Integer.MAX_VALUE;
