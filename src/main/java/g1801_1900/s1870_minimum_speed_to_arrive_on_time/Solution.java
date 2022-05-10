@@ -9,14 +9,14 @@ public class Solution {
         return fmin(dist, n, hour);
     }
 
-    private boolean p(int[] dist, int n, double H, int spe) {
+    private boolean p(int[] dist, int n, double h, int spe) {
         double cost = 0;
         for (int i = 0; i < n - 1; i++) {
             // same as ceil(doubleTime/doubleSpeed)
-            cost += (dist[i] - 1) / spe + 1;
+            cost += (dist[i] - 1.0) / spe + 1;
         }
         cost += (double) dist[n - 1] / (double) spe;
-        return cost <= H;
+        return cost <= h;
     }
 
     private int fmin(int[] dist, int n, double h) {
