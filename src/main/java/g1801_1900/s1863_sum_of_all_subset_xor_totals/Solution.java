@@ -6,6 +6,7 @@ package g1801_1900.s1863_sum_of_all_subset_xor_totals;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S5413")
 public class Solution {
     public int subsetXORSum(int[] nums) {
         int sum = 0;
