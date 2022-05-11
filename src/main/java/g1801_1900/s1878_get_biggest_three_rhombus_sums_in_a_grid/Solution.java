@@ -10,7 +10,8 @@ public class Solution {
         int capicity = 3;
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
-        int m = grid.length, n = grid[0].length;
+        int m = grid.length;
+        int n = grid[0].length;
         int[][][] preSum = new int[m][n][2];
         int maxLen = Math.min(m, n) / 2;
 
@@ -59,8 +60,7 @@ public class Solution {
     private void addToMinHeap(PriorityQueue<Integer> minHeap, int num, int capicity) {
         if (minHeap.size() == 0 || (minHeap.size() < capicity && !minHeap.contains(num))) {
             minHeap.offer(num);
-        }
-        else {
+        } else {
             if (num > minHeap.peek() && !minHeap.contains(num)) {
                 minHeap.poll();
                 minHeap.offer(num);
