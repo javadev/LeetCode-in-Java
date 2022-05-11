@@ -9,12 +9,10 @@ public class Solution {
     public int[] getBiggestThree(int[][] grid) {
         int capicity = 3;
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
-
         int m = grid.length;
         int n = grid[0].length;
         int[][][] preSum = new int[m][n][2];
         int maxLen = Math.min(m, n) / 2;
-
         for (int r = 0; r < m; r++) {
             for (int c = 0; c < n; c++) {
                 addToMinHeap(minHeap, grid[r][c], capicity);
@@ -28,7 +26,6 @@ public class Solution {
                                 : grid[r][c];
             }
         }
-
         for (int r = 0; r < m; r++) {
             for (int c = 0; c < n; c++) {
                 for (int l = 1; l <= maxLen; l++) {
@@ -37,18 +34,15 @@ public class Solution {
                             || !valid(m, n, r - 2 * l, c)) {
                         break;
                     }
-
                     int rhombus = preSum[r][c][0] - preSum[r - l][c - l][0];
                     rhombus += preSum[r][c][1] - preSum[r - l][c + l][1];
                     rhombus += preSum[r - l][c - l][1] - preSum[r - 2 * l][c][1];
                     rhombus += preSum[r - l][c + l][0] - preSum[r - 2 * l][c][0];
                     rhombus += -grid[r][c] + grid[r - 2 * l][c];
-
                     addToMinHeap(minHeap, rhombus, capicity);
                 }
             }
         }
-
         int size = minHeap.size();
         int[] res = new int[size];
         for (int i = size - 1; i >= 0; i--) {
