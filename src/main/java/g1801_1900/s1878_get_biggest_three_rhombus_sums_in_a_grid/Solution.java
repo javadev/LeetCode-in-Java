@@ -17,16 +17,25 @@ public class Solution {
         for (int r = 0; r < m; r++) {
             for (int c = 0; c < n; c++) {
                 addToMinHeap(minHeap, grid[r][c], capicity);
-                preSum[r][c][0] += valid(m, n, r - 1, c - 1) ? grid[r][c] + preSum[r - 1][c - 1][0] : grid[r][c];
-                preSum[r][c][1] += valid(m, n, r - 1, c + 1) ? grid[r][c] + preSum[r - 1][c + 1][1] : grid[r][c];
+                preSum[r][c][0] +=
+                        valid(m, n, r - 1, c - 1)
+                                ? grid[r][c] + preSum[r - 1][c - 1][0]
+                                : grid[r][c];
+                preSum[r][c][1] +=
+                        valid(m, n, r - 1, c + 1)
+                                ? grid[r][c] + preSum[r - 1][c + 1][1]
+                                : grid[r][c];
             }
         }
 
         for (int r = 0; r < m; r++) {
             for (int c = 0; c < n; c++) {
                 for (int l = 1; l <= maxLen; l++) {
-                    if (!valid(m, n, r - l, c - l) || !valid(m, n, r - l, c + l) || !valid(m, n, r - 2 * l, c))
+                    if (!valid(m, n, r - l, c - l)
+                            || !valid(m, n, r - l, c + l)
+                            || !valid(m, n, r - 2 * l, c)) {
                         break;
+                    }
 
                     int rhombus = preSum[r][c][0] - preSum[r - l][c - l][0];
                     rhombus += preSum[r][c][1] - preSum[r - l][c + l][1];
@@ -41,14 +50,16 @@ public class Solution {
 
         int size = minHeap.size();
         int[] res = new int[size];
-        for (int i = size - 1; i >= 0; i--)
+        for (int i = size - 1; i >= 0; i--) {
             res[i] = minHeap.poll();
+        }
         return res;
     }
 
     private void addToMinHeap(PriorityQueue<Integer> minHeap, int num, int capicity) {
-        if (minHeap.size() == 0 || (minHeap.size() < capicity && !minHeap.contains(num)))
+        if (minHeap.size() == 0 || (minHeap.size() < capicity && !minHeap.contains(num))) {
             minHeap.offer(num);
+        }
         else {
             if (num > minHeap.peek() && !minHeap.contains(num)) {
                 minHeap.poll();

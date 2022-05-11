@@ -6,8 +6,8 @@ public class Solution {
     public String maxValue(String n, int x) {
         int i = 0;
         int sign = n.charAt(0) == '-' ? -1 : 1;
-        for(; i < n.length(); i++) {
-            if(n.charAt(i) != '-' && (sign * (n.charAt(i) - '0') < sign * x)) {
+        for (; i < n.length(); i++) {
+            if (n.charAt(i) != '-' && (sign * (n.charAt(i) - '0') < sign * x)) {
                 break;
             }
         }

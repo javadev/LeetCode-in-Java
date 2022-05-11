@@ -8,23 +8,31 @@ import java.util.Arrays;
 public class Solution {
     public int minimumXORSum(int[] nums1, int[] nums2) {
         int l = nums1.length;
-        int [] dp = new int [1<<l];
+        int[] dp = new int[1 << l];
         Arrays.fill(dp, -1);
-        dp[0] = 0;    
-        return dfs(dp.length -1 , l, nums1, nums2, dp, l); 
+        dp[0] = 0;
+        return dfs(dp.length - 1, l, nums1, nums2, dp, l);
     }
-    
-    private int dfs(int state, int length, int [] nums1, int [] nums2, int [] dp, int totalLength){
-        if(dp[state] >= 0) {
+
+    private int dfs(int state, int length, int[] nums1, int[] nums2, int[] dp, int totalLength) {
+        if (dp[state] >= 0) {
             return dp[state];
         }
         int min = Integer.MAX_VALUE;
-        int currIndex = totalLength-length;
-        for(int i =0, index = 0;i<length;index++){
-            if( ((state >> index)&1) == 1){
-                min = Math.min(min, 
-                               (nums2[currIndex]^ nums1[index]) +
-                               dfs(state ^ (1 << index) , length-1, nums1, nums2, dp, totalLength));
+        int currIndex = totalLength - length;
+        for (int i = 0, index = 0; i < length; index++) {
+            if (((state >> index) & 1) == 1) {
+                min =
+                        Math.min(
+                                min,
+                                (nums2[currIndex] ^ nums1[index])
+                                        + dfs(
+                                                state ^ (1 << index),
+                                                length - 1,
+                                                nums1,
+                                                nums2,
+                                                dp,
+                                                totalLength));
                 i++;
             }
         }
