@@ -31,15 +31,13 @@ public class Solution {
     }
 
     public int numberOfGoodSubsets(int[] nums) {
-        int n = nums.length;
-        int i;
         int[] primes = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29};
         int[] mask = new int[31];
         int[] freq = new int[31];
         for (int x : nums) {
             freq[x]++;
         }
-        for (i = 1; i <= 30; i++) {
+        for (int i = 1; i <= 30; i++) {
             for (int j = 0; j < primes.length; j++) {
                 if (i % primes[j] == 0) {
                     if ((i / primes[j]) % primes[j] == 0) {
@@ -52,7 +50,7 @@ public class Solution {
         }
         long[] dp = new long[1024];
         dp[0] = 1;
-        for (i = 1; i <= 30; i++) {
+        for (int i = 1; i <= 30; i++) {
             if (mask[i] != 0) {
                 for (int j = 0; j < 1024; j++) {
                     if ((mask[i] & j) == 0 && dp[j] > 0) {
@@ -62,7 +60,7 @@ public class Solution {
             }
         }
         long ans = 0;
-        for (i = 1; i < 1024; i++) {
+        for (int i = 1; i < 1024; i++) {
             ans = add(ans, dp[i]);
         }
         ans = mul(ans, pow(2, freq[1]));
