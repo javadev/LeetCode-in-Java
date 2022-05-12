@@ -52,7 +52,7 @@ public class Solution {
     }
 
     private void addToMinHeap(PriorityQueue<Integer> minHeap, int num, int capicity) {
-        if (minHeap.size() == 0 || (minHeap.size() < capicity && !minHeap.contains(num))) {
+        if (minHeap.isEmpty() || (minHeap.size() < capicity && !minHeap.contains(num))) {
             minHeap.offer(num);
         } else {
             if (num > minHeap.peek() && !minHeap.contains(num)) {
