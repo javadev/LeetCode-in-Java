@@ -20,19 +20,11 @@ public class Solution {
         }
         int min = Integer.MAX_VALUE;
         int currIndex = totalLength - length;
-        for (int i = 0, index = 0; i < length; index++) {
+        int i = 0;
+        for (int index = 0; i < length; index++) {
             if (((state >> index) & 1) == 1) {
-                min =
-                        Math.min(
-                                min,
-                                (nums2[currIndex] ^ nums1[index])
-                                        + dfs(
-                                                state ^ (1 << index),
-                                                length - 1,
-                                                nums1,
-                                                nums2,
-                                                dp,
-                                                totalLength));
+                int result = dfs(state ^ (1 << index), length - 1, nums1, nums2, dp, totalLength);
+                min = Math.min(min, (nums2[currIndex] ^ nums1[index]) + result);
                 i++;
             }
         }
