@@ -31,7 +31,6 @@ public class Solution {
                     node.bits = new BitSet(101);
                     node.bits.set(nums[i]);
                     node.minDiff = INF;
-
                     tree[ti] = node;
                 } else {
                     int mid = i + (j - i) / 2;
@@ -56,7 +55,8 @@ public class Solution {
         }
 
         private int findMinDiff(BitSet bits) {
-            int first = bits.nextSetBit(1); // minimum value of number is 1.
+            // minimum value of number is 1.
+            int first = bits.nextSetBit(1);
             int minDiff = INF;
             while (first != -1) {
                 int next = bits.nextSetBit(first + 1);
