@@ -1,49 +1,40 @@
 package g1901_2000.s1904_the_number_of_full_rounds_you_have_played;
 
-// #Medium #String #Math #2022_05_11_Time_2_ms_(37.11%)_Space_42.1_MB_(40.55%)
+// #Medium #String #Math #2022_05_12_Time_0_ms_(100.00%)_Space_40_MB_(96.23%)
 
 public class Solution {
-    public int numberOfRounds(String startTime, String finishTime) {
-        int rounds = 0;
-        int startHour = Integer.parseInt(startTime.split(":")[0]);
-        int endHour = Integer.parseInt(finishTime.split(":")[0]);
-        int startMin = Integer.parseInt(startTime.split(":")[1]);
-        int endMin = Integer.parseInt(finishTime.split(":")[1]);
-        if (endHour < startHour || endHour == startHour && endMin < startMin) {
-            endHour += 24;
+    private final int MID_NIGHT_END = 1440;
+    private final int MID_NIGHT_START = 0;
+    private final int ROUND_INTERVAL = 15;
+
+    public int numberOfRounds(String loginTime, String logoutTime) {
+        int loginSerializeTime = serializeTime(loginTime);
+        int logoutSerializeTime = serializeTime(logoutTime);
+        if (logoutSerializeTime - 14 < loginSerializeTime
+                && logoutSerializeTime > loginSerializeTime) {
+            return 0;
         }
-        if (startHour == endHour) {
-            if (startMin == 0 && endMin >= 15) {
-                rounds++;
-            }
-            if (startMin <= 15 && endMin >= 30) {
-                rounds++;
-            }
-            if (startMin <= 30 && endMin >= 45) {
-                rounds++;
-            }
-        } else {
-            // compute all full rounds in the start hour
-            if (startMin == 0) {
-                rounds += 4;
-            } else if (startMin <= 15) {
-                rounds += 3;
-            } else if (startMin <= 30) {
-                rounds += 2;
-            } else if (startMin <= 45) {
-                rounds++;
-            }
-            // compute all full rounds in the finish hour
-            if (endMin >= 45) {
-                rounds += 3;
-            } else if (endMin >= 30) {
-                rounds += 2;
-            } else if (endMin >= 15) {
-                rounds++;
-            }
-            // compute all full rounds in the all full hours between finishHour and startHour
-            rounds += (endHour - startHour - 1) * 4;
+        loginSerializeTime = maskSerializeTime(loginSerializeTime, 14);
+        logoutSerializeTime = maskSerializeTime(logoutSerializeTime, 0);
+        if (loginSerializeTime == logoutSerializeTime) {
+            return 0;
         }
-        return rounds;
+        if (loginSerializeTime > logoutSerializeTime + 14) {
+            return calculateFullRounds(loginSerializeTime, MID_NIGHT_END)
+                    + calculateFullRounds(MID_NIGHT_START, logoutSerializeTime);
+        }
+        return calculateFullRounds(loginSerializeTime, logoutSerializeTime);
+    }
+
+    private int maskSerializeTime(int serializeTime, int mask) {
+        return (serializeTime + mask) / ROUND_INTERVAL * ROUND_INTERVAL;
+    }
+
+    private int serializeTime(String time) {
+        return Integer.parseInt(time.substring(0, 2)) * 60 + Integer.parseInt(time.substring(3, 5));
+    }
+
+    private int calculateFullRounds(int login, int logout) {
+        return (logout - login) / ROUND_INTERVAL;
     }
 }
