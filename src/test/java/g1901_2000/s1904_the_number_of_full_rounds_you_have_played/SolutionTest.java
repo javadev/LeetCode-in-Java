@@ -15,4 +15,9 @@ class SolutionTest {
     void numberOfRounds2() {
         assertThat(new Solution().numberOfRounds("21:30", "03:00"), equalTo(22));
     }
+
+    @Test
+    void numberOfRounds3() {
+        assertThat(new Solution().numberOfRounds("21:30", "21:30"), equalTo(0));
+    }
 }
