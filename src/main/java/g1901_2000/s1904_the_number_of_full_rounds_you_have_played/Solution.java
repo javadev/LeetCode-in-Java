@@ -9,9 +9,7 @@ public class Solution {
         int endHour = Integer.parseInt(finishTime.split(":")[0]);
         int startMin = Integer.parseInt(startTime.split(":")[1]);
         int endMin = Integer.parseInt(finishTime.split(":")[1]);
-        if (endHour < startHour) {
-            endHour += 24;
-        } else if (endHour == startHour && endMin < startMin) {
+        if (endHour < startHour || endHour == startHour && endMin < startMin) {
             endHour += 24;
         }
         if (startHour == endHour) {
@@ -24,7 +22,6 @@ public class Solution {
             if (startMin <= 30 && endMin >= 45) {
                 rounds++;
             }
-            return rounds;
         } else {
             // compute all full rounds in the start hour
             if (startMin == 0) {
@@ -36,7 +33,6 @@ public class Solution {
             } else if (startMin <= 45) {
                 rounds++;
             }
-
             // compute all full rounds in the finish hour
             if (endMin >= 45) {
                 rounds += 3;
@@ -45,10 +41,9 @@ public class Solution {
             } else if (endMin >= 15) {
                 rounds++;
             }
-
             // compute all full rounds in the all full hours between finishHour and startHour
             rounds += (endHour - startHour - 1) * 4;
-            return rounds;
         }
+        return rounds;
     }
 }
