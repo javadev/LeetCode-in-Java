@@ -11,9 +11,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.TreeSet;
 
+@SuppressWarnings("java:S1172")
 public class MovieRentingSystem {
-
-    static class Point {
+    private static class Point {
         int movie;
         int shop;
         int price;
@@ -25,10 +25,9 @@ public class MovieRentingSystem {
         }
     }
 
-    HashMap<Integer, TreeSet<Point>> unrentedMovies = new HashMap<>();
-    HashMap<String, Integer> shopMovieToPrice = new HashMap<>();
-
-    Comparator<Point> comparator =
+    private HashMap<Integer, TreeSet<Point>> unrentedMovies = new HashMap<>();
+    private HashMap<String, Integer> shopMovieToPrice = new HashMap<>();
+    private Comparator<Point> comparator =
             (o1, o2) -> {
                 if (o1.price != o2.price) {
                     return Integer.compare(o1.price, o2.price);
@@ -38,18 +37,14 @@ public class MovieRentingSystem {
                     return Integer.compare(o1.movie, o2.movie);
                 }
             };
-
-    TreeSet<Point> rented = new TreeSet<>(comparator);
+    private TreeSet<Point> rented = new TreeSet<>(comparator);
 
     public MovieRentingSystem(int n, int[][] entries) {
-
         for (int[] entry : entries) {
             int shop = entry[0];
             int movie = entry[1];
             int price = entry[2];
-
             unrentedMovies.putIfAbsent(movie, new TreeSet<>(comparator));
-
             unrentedMovies.get(movie).add(new Point(movie, shop, price));
             shopMovieToPrice.put(shop + "+" + movie, price);
         }
