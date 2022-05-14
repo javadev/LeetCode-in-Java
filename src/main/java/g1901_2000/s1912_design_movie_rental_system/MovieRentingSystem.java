@@ -3,7 +3,13 @@ package g1901_2000.s1912_design_movie_rental_system;
 // #Hard #Array #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set
 // #2022_05_14_Time_562_ms_(74.14%)_Space_175.3_MB_(91.38%)
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.TreeSet;
 
 public class MovieRentingSystem {
 
@@ -42,9 +48,7 @@ public class MovieRentingSystem {
             int movie = entry[1];
             int price = entry[2];
 
-            if (!unrentedMovies.containsKey(movie)) {
-                unrentedMovies.put(movie, new TreeSet<>(comparator));
-            }
+            unrentedMovies.putIfAbsent(movie, new TreeSet<>(comparator));
 
             unrentedMovies.get(movie).add(new Point(movie, shop, price));
             shopMovieToPrice.put(shop + "+" + movie, price);
