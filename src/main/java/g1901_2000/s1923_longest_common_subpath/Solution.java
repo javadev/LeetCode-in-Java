@@ -2,7 +2,8 @@ package g1901_2000.s1923_longest_common_subpath;
 
 import java.util.HashSet;
 
-class Solution {
+@SuppressWarnings("java:S1172")
+public class Solution {
     private static final long BASE = 100001;
     private static final long MOD = (long) (Math.pow(10, 11) + 7);
     private long[] pow;
@@ -15,15 +16,12 @@ class Solution {
         }
         pow = new long[min + 1];
         pow[0]++;
-
         for (int i = 1; i <= min; i++) {
             pow[i] = (pow[i - 1] * BASE) % MOD;
         }
-
         int st = 1;
         int end = min;
         int mid = (st + end) / 2;
-
         while (st <= end) {
             if (commonSubstring(paths, mid)) {
                 res = mid;
@@ -31,7 +29,6 @@ class Solution {
             } else {
                 end = mid - 1;
             }
-
             mid = (st + end) / 2;
         }
         return res;
@@ -51,17 +48,14 @@ class Solution {
     private HashSet<Long> rollingHash(int[] a, int l) {
         HashSet<Long> set = new HashSet<>();
         long hash = 0;
-
         for (int i = 0; i < l; i++) {
             hash = (hash * BASE + a[i]) % MOD;
         }
         set.add(hash);
-
         for (int n = a.length, curr = l, prev = 0; curr < n; prev++, curr++) {
             hash = (((hash * BASE) % MOD - (a[prev] * pow[l]) % MOD + a[curr]) + MOD) % MOD;
             set.add(hash);
         }
-
         return set;
     }
 }
