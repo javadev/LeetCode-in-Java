@@ -16,7 +16,6 @@ public class Solution {
     public int waysToBuildRooms(int[] a) {
         int n = a.length;
         graph = new ArrayList[n];
-        int[] cnt = new int[n];
         Arrays.setAll(graph, e -> new ArrayList<>());
 
         fact = new long[a.length + 10];
@@ -40,14 +39,14 @@ public class Solution {
         int cnt = 0;
         List<long[]> list = new ArrayList<>();
         for (int next : graph[root]) {
-            long v[] = dfs(next);
+            long[] v = dfs(next);
             cnt += v[0];
             list.add(v);
         }
 
         res[0] += cnt;
         long com = 1;
-        for (long p[] : list) {
+        for (long[] p : list) {
             long choose = c(cnt, (int) (p[0]));
             cnt -= p[0];
             com = com * choose;

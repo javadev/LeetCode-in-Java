@@ -9,7 +9,9 @@ public class Solution {
     }
 
     private void rotateInternal(int[][] grid, int left, int right, int up, int bottom, int k) {
-        if (left > right || up > bottom) return;
+        if (left > right || up > bottom) {
+            return;
+        }
         int loopLen = (right - left + 1) * 2 + (bottom - up + 1) * 2 - 4;
         int realK = k % loopLen;
         if (realK != 0) {
@@ -29,7 +31,7 @@ public class Solution {
         while (idx < arr.length) {
             arr[idx] = grid[currPoint[0]][currPoint[1]];
             idx++;
-            currPoint = getNextPosCC(grid, left, right, up, bottom, currPoint);
+            currPoint = getNextPosCC(left, right, up, bottom, currPoint);
             if (idx == k) {
                 startPointAfterRotation = currPoint;
             }
@@ -37,15 +39,18 @@ public class Solution {
 
         idx = 0;
         currPoint = startPointAfterRotation;
-        while (idx < arr.length) {
-            grid[currPoint[0]][currPoint[1]] = arr[idx];
-            idx++;
-            currPoint = getNextPosCC(grid, left, right, up, bottom, currPoint);
+        if (currPoint != null) {
+            while (idx < arr.length) {
+                grid[currPoint[0]][currPoint[1]] = arr[idx];
+                idx++;
+                currPoint = getNextPosCC(left, right, up, bottom, currPoint);
+            }
         }
     }
 
-    private int[] getNextPosCC(int[][] grid, int left, int right, int up, int bottom, int[] curr) {
-        int x = curr[0], y = curr[1];
+    private int[] getNextPosCC(int left, int right, int up, int bottom, int[] curr) {
+        int x = curr[0];
+        int y = curr[1];
         if (x == up && y > left) {
             return new int[] {x, y - 1};
         } else if (y == left && x < bottom) {
