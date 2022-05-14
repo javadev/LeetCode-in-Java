@@ -8,7 +8,8 @@ class Solution {
     private long[] pow;
 
     public int longestCommonSubpath(int n, int[][] paths) {
-        int res = 0, min = Integer.MAX_VALUE;
+        int res = 0;
+        int min = Integer.MAX_VALUE;
         for (int[] path : paths) {
             min = Math.min(min, path.length);
         }
@@ -19,13 +20,19 @@ class Solution {
             pow[i] = (pow[i - 1] * BASE) % MOD;
         }
 
-        for (int st = 1, end = min, mid = (st + end) / 2; st <= end; mid = (st + end) / 2) {
+        int st = 1;
+        int end = min;
+        int mid = (st + end) / 2;
+
+        while (st <= end) {
             if (commonSubstring(paths, mid)) {
                 res = mid;
                 st = mid + 1;
             } else {
                 end = mid - 1;
             }
+
+            mid = (st + end) / 2;
         }
         return res;
     }

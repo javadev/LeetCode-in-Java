@@ -4,7 +4,8 @@ package g1901_2000.s1927_sum_game;
 
 public class Solution {
     public boolean sumGame(String num) {
-        int count = 0, diff = 0;
+        int count = 0;
+        int diff = 0;
         int l = num.length();
         for (int i = 0; i < num.length(); i++) {
             if (num.charAt(i) == '?') {
