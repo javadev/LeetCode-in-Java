@@ -17,14 +17,12 @@ public class Solution {
         int n = a.length;
         graph = new ArrayList[n];
         Arrays.setAll(graph, e -> new ArrayList<>());
-
         fact = new long[a.length + 10];
         fact[0] = fact[1] = 1;
         for (int i = 2; i < fact.length; i++) {
             fact[i] = fact[i - 1] * i;
             fact[i] %= MOD;
         }
-
         for (int i = 1; i < a.length; i++) {
             int pre = a[i];
             graph[pre].add(i);
@@ -40,10 +38,9 @@ public class Solution {
         List<long[]> list = new ArrayList<>();
         for (int next : graph[root]) {
             long[] v = dfs(next);
-            cnt += v[0];
+            cnt += (int) v[0];
             list.add(v);
         }
-
         res[0] += cnt;
         long com = 1;
         for (long[] p : list) {
@@ -54,7 +51,6 @@ public class Solution {
             com = com * p[1];
             com %= MOD;
         }
-
         res[1] = com;
         return res;
     }
