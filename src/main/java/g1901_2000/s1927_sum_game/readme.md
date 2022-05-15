@@ -2,7 +2,7 @@
 
 Medium
 
-Alice and Bob take turns playing a game, with **Alice**** starting first**.
+Alice and Bob take turns playing a game, with **Alice starting first**.
 
 You are given a string `num` of **even length** consisting of digits and `'?'` characters. On each turn, a player will do the following if there is still at least one `'?'` in `num`:
 
