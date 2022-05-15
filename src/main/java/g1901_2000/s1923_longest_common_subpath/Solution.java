@@ -1,5 +1,8 @@
 package g1901_2000.s1923_longest_common_subpath;
 
+// #Hard #Array #Binary_Search #Hash_Function #Rolling_Hash #Suffix_Array
+// #2022_05_15_Time_517_ms_(73.88%)_Space_209.3_MB_(50.00%)
+
 import java.util.HashSet;
 
 @SuppressWarnings("java:S1172")
