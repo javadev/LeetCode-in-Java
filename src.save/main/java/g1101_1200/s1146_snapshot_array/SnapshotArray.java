@@ -1,6 +1,6 @@
 package g1101_1200.s1146_snapshot_array;
 
-// #Medium #Array #Hash_Table #Binary_Search #Design #Binary_Search_II_Day_18
+// #Medium #Array #Hash_Table #Binary_Search #Design #Acceptance_37.0% #Binary_Search_II_Day_18
 // #2022_03_05_Time_37_ms_(87.93%)_Space_75.2_MB_(81.59%)
 
 import java.util.HashMap;

@@ -1,6 +1,7 @@
 package g1301_1400.s1340_jump_game_v;
 
-// #Hard #Array #Dynamic_Programming #Sorting #2022_03_19_Time_13_ms_(71.33%)_Space_47.7_MB_(46.67%)
+// #Hard #Array #Dynamic_Programming #Sorting #Acceptance_62.2%
+// #2022_03_19_Time_13_ms_(71.33%)_Space_47.7_MB_(46.67%)
 
 public class Solution {
     public int maxJumps(int[] arr, int d) {

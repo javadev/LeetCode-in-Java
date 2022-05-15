@@ -1,6 +1,6 @@
 package g0601_0700.s0671_second_minimum_node_in_a_binary_tree;
 
-// #Easy #Depth_First_Search #Tree #Binary_Tree
+// #Easy #Depth_First_Search #Tree #Binary_Tree #Acceptance_43.7%
 // #2022_03_22_Time_0_ms_(100.00%)_Space_41.6_MB_(31.26%)
 
 import com_github_leetcode.TreeNode;

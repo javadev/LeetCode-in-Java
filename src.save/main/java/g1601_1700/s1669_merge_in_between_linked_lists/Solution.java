@@ -1,6 +1,6 @@
 package g1601_1700.s1669_merge_in_between_linked_lists;
 
-// #Medium #Linked_List #2022_04_22_Time_2_ms_(76.51%)_Space_104.4_MB_(49.36%)
+// #Medium #Linked_List #Acceptance_74.5% #2022_04_22_Time_2_ms_(76.51%)_Space_104.4_MB_(49.36%)
 
 import com_github_leetcode.ListNode;
 

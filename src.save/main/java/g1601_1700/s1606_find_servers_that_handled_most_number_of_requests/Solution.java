@@ -1,6 +1,6 @@
 package g1601_1700.s1606_find_servers_that_handled_most_number_of_requests;
 
-// #Hard #Array #Greedy #Heap_Priority_Queue #Ordered_Set
+// #Hard #Array #Greedy #Heap_Priority_Queue #Ordered_Set #Acceptance_41.0%
 // #2022_04_11_Time_118_ms_(98.21%)_Space_61.4_MB_(84.23%)
 
 import java.util.ArrayList;

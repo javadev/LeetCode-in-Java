@@ -1,6 +1,7 @@
 package g1201_1300.s1240_tiling_a_rectangle_with_the_fewest_squares;
 
-// #Hard #Dynamic_Programming #Backtracking #2022_03_12_Time_3_ms_(62.18%)_Space_40.9_MB_(54.49%)
+// #Hard #Dynamic_Programming #Backtracking #Acceptance_53.7%
+// #2022_03_12_Time_3_ms_(62.18%)_Space_40.9_MB_(54.49%)
 
 public class Solution {
     private int n;

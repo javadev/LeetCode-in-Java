@@ -1,6 +1,7 @@
 package g0201_0300.s0299_bulls_and_cows;
 
-// #Medium #String #Hash_Table #Counting #2022_03_14_Time_8_ms_(67.24%)_Space_43.3_MB_(22.27%)
+// #Medium #String #Hash_Table #Counting #Acceptance_47.3%
+// #2022_03_14_Time_8_ms_(67.24%)_Space_43.3_MB_(22.27%)
 
 public class Solution {
     public String getHint(String secret, String guess) {

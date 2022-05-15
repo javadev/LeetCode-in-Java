@@ -1,6 +1,7 @@
 package g0301_0400.s0396_rotate_function;
 
-// #Medium #Array #Dynamic_Programming #Math #2022_03_16_Time_3_ms_(98.51%)_Space_54.4_MB_(90.05%)
+// #Medium #Array #Dynamic_Programming #Math #Acceptance_39.4%
+// #2022_03_16_Time_3_ms_(98.51%)_Space_54.4_MB_(90.05%)
 
 public class Solution {
     public int maxRotateFunction(int[] nums) {

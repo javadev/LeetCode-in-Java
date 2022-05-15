@@ -1,6 +1,6 @@
 package g1601_1700.s1626_best_team_with_no_conflicts;
 
-// #Medium #Array #Dynamic_Programming #Sorting
+// #Medium #Array #Dynamic_Programming #Sorting #Acceptance_40.7%
 // #2022_04_18_Time_38_ms_(92.31%)_Space_42.2_MB_(93.12%)
 
 import java.util.Arrays;

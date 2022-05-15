@@ -1,6 +1,6 @@
 package g0601_0700.s0606_construct_string_from_binary_tree;
 
-// #Easy #String #Depth_First_Search #Tree #Binary_Tree
+// #Easy #String #Depth_First_Search #Tree #Binary_Tree #Acceptance_57.7%
 // #2022_03_21_Time_1_ms_(100.00%)_Space_42.3_MB_(91.51%)
 
 import com_github_leetcode.TreeNode;

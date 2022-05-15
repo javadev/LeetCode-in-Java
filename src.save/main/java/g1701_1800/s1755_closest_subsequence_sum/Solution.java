@@ -1,6 +1,6 @@
 package g1701_1800.s1755_closest_subsequence_sum;
 
-// #Hard #Array #Dynamic_Programming #Two_Pointers #Bit_Manipulation #Bitmask
+// #Hard #Array #Dynamic_Programming #Two_Pointers #Bit_Manipulation #Bitmask #Acceptance_36.2%
 // #2022_04_30_Time_383_ms_(87.60%)_Space_65.5_MB_(78.51%)
 
 import java.util.Arrays;

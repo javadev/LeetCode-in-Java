@@ -1,6 +1,6 @@
 package g1901_2000.s1904_the_number_of_full_rounds_you_have_played;
 
-// #Medium #String #Math #2022_05_12_Time_0_ms_(100.00%)_Space_40_MB_(96.23%)
+// #Medium #String #Math #Acceptance_46.8% #2022_05_12_Time_0_ms_(100.00%)_Space_40_MB_(96.23%)
 
 public class Solution {
     private static final int MID_NIGHT_END = 1440;

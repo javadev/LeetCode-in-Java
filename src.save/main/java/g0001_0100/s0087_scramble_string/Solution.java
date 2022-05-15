@@ -1,6 +1,7 @@
 package g0001_0100.s0087_scramble_string;
 
-// #Hard #String #Dynamic_Programming #2022_02_21_Time_23_ms_(54.15%)_Space_44.1_MB_(52.46%)
+// #Hard #String #Dynamic_Programming #Acceptance_35.6%
+// #2022_02_21_Time_23_ms_(54.15%)_Space_44.1_MB_(52.46%)
 
 public class Solution {
     public boolean isScramble(String s1, String s2) {

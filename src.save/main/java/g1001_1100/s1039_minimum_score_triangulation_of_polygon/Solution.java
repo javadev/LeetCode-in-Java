@@ -1,6 +1,7 @@
 package g1001_1100.s1039_minimum_score_triangulation_of_polygon;
 
-// #Medium #Array #Dynamic_Programming #2022_02_27_Time_6_ms_(38.60%)_Space_42.2_MB_(8.48%)
+// #Medium #Array #Dynamic_Programming #Acceptance_52.5%
+// #2022_02_27_Time_6_ms_(38.60%)_Space_42.2_MB_(8.48%)
 
 import java.util.Arrays;
 

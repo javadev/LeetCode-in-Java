@@ -1,6 +1,6 @@
 package g1101_1200.s1170_compare_strings_by_frequency_of_the_smallest_character;
 
-// #Medium #Array #String #Hash_Table #Sorting #Binary_Search
+// #Medium #Array #String #Hash_Table #Sorting #Binary_Search #Acceptance_61.1%
 // #2022_03_05_Time_7_ms_(57.89%)_Space_46.5_MB_(35.67%)
 
 import java.util.Arrays;

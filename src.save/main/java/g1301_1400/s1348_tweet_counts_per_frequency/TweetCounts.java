@@ -1,6 +1,6 @@
 package g1301_1400.s1348_tweet_counts_per_frequency;
 
-// #Medium #Hash_Table #Sorting #Binary_Search #Design #Ordered_Set
+// #Medium #Hash_Table #Sorting #Binary_Search #Design #Ordered_Set #Acceptance_43.1%
 // #2022_03_21_Time_86_ms_(99.44%)_Space_53.5_MB_(82.58%)
 
 import java.util.ArrayList;

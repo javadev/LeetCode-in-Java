@@ -1,6 +1,6 @@
 package g1401_1500.s1417_reformat_the_string;
 
-// #Easy #String #2022_03_26_Time_4_ms_(88.39%)_Space_42.7_MB_(84.19%)
+// #Easy #String #Acceptance_56.3% #2022_03_26_Time_4_ms_(88.39%)_Space_42.7_MB_(84.19%)
 
 import java.util.ArrayList;
 import java.util.List;

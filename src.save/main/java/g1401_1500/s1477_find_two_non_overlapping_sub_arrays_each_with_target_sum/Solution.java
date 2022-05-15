@@ -1,6 +1,6 @@
 package g1401_1500.s1477_find_two_non_overlapping_sub_arrays_each_with_target_sum;
 
-// #Medium #Array #Hash_Table #Dynamic_Programming #Binary_Search #Sliding_Window
+// #Medium #Array #Hash_Table #Dynamic_Programming #Binary_Search #Sliding_Window #Acceptance_36.8%
 // #2022_04_04_Time_8_ms_(89.43%)_Space_50.1_MB_(97.73%)
 
 import java.util.Arrays;

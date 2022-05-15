@@ -1,5 +1,6 @@
 # Write your MySQL query statement below
-# #Easy #Database #SQL_I_Day_4_Union_&_Select #2022_04_25_Time_497_ms_(64.83%)_Space_0B_(100.00%)
+# #Easy #Database #Acceptance_90.7% #SQL_I_Day_4_Union_&_Select
+# #2022_04_25_Time_497_ms_(64.83%)_Space_0B_(100.00%)
 SELECT product_id, 'store1' AS store, store1 AS price
 FROM Products
 WHERE store1 IS NOT NULL

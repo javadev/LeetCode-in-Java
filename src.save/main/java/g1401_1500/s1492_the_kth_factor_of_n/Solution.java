@@ -1,6 +1,6 @@
 package g1401_1500.s1492_the_kth_factor_of_n;
 
-// #Medium #Math #2022_04_05_Time_1_ms_(83.94%)_Space_41.6_MB_(14.02%)
+// #Medium #Math #Acceptance_62.0% #2022_04_05_Time_1_ms_(83.94%)_Space_41.6_MB_(14.02%)
 
 import java.util.ArrayList;
 import java.util.List;

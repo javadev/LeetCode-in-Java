@@ -1,6 +1,6 @@
 package g0201_0300.s0223_rectangle_area;
 
-// #Medium #Math #Geometry #2022_03_05_Time_2_ms_(99.58%)_Space_41.2_MB_(53.89%)
+// #Medium #Math #Geometry #Acceptance_40.1% #2022_03_05_Time_2_ms_(99.58%)_Space_41.2_MB_(53.89%)
 
 @SuppressWarnings("java:S107")
 public class Solution {

@@ -1,6 +1,6 @@
 package g0701_0800.s0765_couples_holding_hands;
 
-// #Hard #Depth_First_Search #Greedy #Breadth_First_Search #Graph #Union_Find
+// #Hard #Depth_First_Search #Greedy #Breadth_First_Search #Graph #Union_Find #Acceptance_56.5%
 // #2022_03_26_Time_0_ms_(100.00%)_Space_41.6_MB_(54.28%)
 
 public class Solution {

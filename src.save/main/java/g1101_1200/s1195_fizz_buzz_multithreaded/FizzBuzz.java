@@ -1,6 +1,6 @@
 package g1101_1200.s1195_fizz_buzz_multithreaded;
 
-// #Medium #Concurrency #2022_03_03_Time_8_ms_(80.09%)_Space_43.2_MB_(6.17%)
+// #Medium #Concurrency #Acceptance_72.2% #2022_03_03_Time_8_ms_(80.09%)_Space_43.2_MB_(6.17%)
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.IntConsumer;

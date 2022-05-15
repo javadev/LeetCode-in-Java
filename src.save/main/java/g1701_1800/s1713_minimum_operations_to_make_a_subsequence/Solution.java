@@ -1,6 +1,6 @@
 package g1701_1800.s1713_minimum_operations_to_make_a_subsequence;
 
-// #Hard #Array #Hash_Table #Greedy #Binary_Search
+// #Hard #Array #Hash_Table #Greedy #Binary_Search #Acceptance_48.9%
 // #2022_04_24_Time_81_ms_(95.39%)_Space_60.5_MB_(96.05%)
 
 import java.util.ArrayList;

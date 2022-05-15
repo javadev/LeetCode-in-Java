@@ -1,6 +1,7 @@
 package g1601_1700.s1622_fancy_sequence;
 
-// #Hard #Math #Design #Segment_Tree #2022_04_18_Time_40_ms_(96.55%)_Space_74.7_MB_(100.00%)
+// #Hard #Math #Design #Segment_Tree #Acceptance_15.5%
+// #2022_04_18_Time_40_ms_(96.55%)_Space_74.7_MB_(100.00%)
 
 import java.util.Arrays;
 

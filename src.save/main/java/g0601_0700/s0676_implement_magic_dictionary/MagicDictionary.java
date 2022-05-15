@@ -1,6 +1,7 @@
 package g0601_0700.s0676_implement_magic_dictionary;
 
-// #Medium #String #Hash_Table #Design #Trie #2022_03_22_Time_38_ms_(86.83%)_Space_52.7_MB_(76.19%)
+// #Medium #String #Hash_Table #Design #Trie #Acceptance_56.6%
+// #2022_03_22_Time_38_ms_(86.83%)_Space_52.7_MB_(76.19%)
 
 public class MagicDictionary {
     private String[] dictionaryWords;

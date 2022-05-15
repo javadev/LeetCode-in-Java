@@ -1,6 +1,6 @@
 package g0201_0300.s0221_maximal_square;
 
-// #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Matrix
+// #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Matrix #Acceptance_43.5%
 // #Dynamic_Programming_I_Day_16 #2022_03_05_Time_6_ms_(80.89%)_Space_59.9_MB_(5.32%)
 
 public class Solution {

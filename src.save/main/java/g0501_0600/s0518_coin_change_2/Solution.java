@@ -1,6 +1,6 @@
 package g0501_0600.s0518_coin_change_2;
 
-// #Medium #Array #Dynamic_Programming #Dynamic_Programming_I_Day_20
+// #Medium #Array #Dynamic_Programming #Acceptance_57.6% #Dynamic_Programming_I_Day_20
 // #2022_03_19_Time_3_ms_(91.32%)_Space_42.2_MB_(57.00%)
 
 public class Solution {

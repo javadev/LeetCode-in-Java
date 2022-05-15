@@ -1,6 +1,6 @@
 package g0901_1000.s0993_cousins_in_binary_tree;
 
-// #Easy #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #Easy #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Acceptance_53.8%
 // #2022_03_31_Time_1_ms_(60.08%)_Space_42.3_MB_(27.64%)
 
 import com_github_leetcode.TreeNode;

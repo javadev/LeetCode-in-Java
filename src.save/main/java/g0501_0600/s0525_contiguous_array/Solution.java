@@ -1,6 +1,7 @@
 package g0501_0600.s0525_contiguous_array;
 
-// #Medium #Array #Hash_Table #Prefix_Sum #2022_03_20_Time_17_ms_(92.02%)_Space_51.3_MB_(88.87%)
+// #Medium #Array #Hash_Table #Prefix_Sum #Acceptance_46.4%
+// #2022_03_20_Time_17_ms_(92.02%)_Space_51.3_MB_(88.87%)
 
 import java.util.HashMap;
 

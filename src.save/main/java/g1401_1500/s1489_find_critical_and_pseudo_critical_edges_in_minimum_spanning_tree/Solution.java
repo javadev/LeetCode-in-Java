@@ -1,7 +1,7 @@
 package g1401_1500.s1489_find_critical_and_pseudo_critical_edges_in_minimum_spanning_tree;
 
 // #Hard #Sorting #Graph #Union_Find #Minimum_Spanning_Tree #Strongly_Connected_Component
-// #2022_04_05_Time_17_ms_(100.00%)_Space_42.8_MB_(86.75%)
+// #Acceptance_53.0% #2022_04_05_Time_17_ms_(100.00%)_Space_42.8_MB_(86.75%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

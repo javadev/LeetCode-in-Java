@@ -1,6 +1,7 @@
 package g1401_1500.s1476_subrectangle_queries;
 
-// #Medium #Array #Matrix #Design #2022_04_04_Time_20_ms_(97.61%)_Space_44.6_MB_(95.87%)
+// #Medium #Array #Matrix #Design #Acceptance_88.2%
+// #2022_04_04_Time_20_ms_(97.61%)_Space_44.6_MB_(95.87%)
 
 public class SubrectangleQueries {
     private final int[][] rectangle;

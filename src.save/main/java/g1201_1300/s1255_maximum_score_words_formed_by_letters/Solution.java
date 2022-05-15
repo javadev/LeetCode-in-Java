@@ -1,7 +1,7 @@
 package g1201_1300.s1255_maximum_score_words_formed_by_letters;
 
 // #Hard #Array #String #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
-// #2022_03_12_Time_1_ms_(98.36%)_Space_39.9_MB_(69.95%)
+// #Acceptance_72.2% #2022_03_12_Time_1_ms_(98.36%)_Space_39.9_MB_(69.95%)
 
 public class Solution {
     private int[] score;

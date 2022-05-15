@@ -1,6 +1,6 @@
 package g1401_1500.s1409_queries_on_a_permutation_with_key;
 
-// #Medium #Array #Simulation #Binary_Indexed_Tree
+// #Medium #Array #Simulation #Binary_Indexed_Tree #Acceptance_82.9%
 // #2022_03_26_Time_15_ms_(38.43%)_Space_43.2_MB_(60.33%)
 
 import java.util.ArrayList;

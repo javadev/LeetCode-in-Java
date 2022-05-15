@@ -1,6 +1,6 @@
 package g1101_1200.s1131_maximum_of_absolute_value_expression;
 
-// #Medium #Array #Math #2022_03_09_Time_8_ms_(60.95%)_Space_49.5_MB_(87.57%)
+// #Medium #Array #Math #Acceptance_49.8% #2022_03_09_Time_8_ms_(60.95%)_Space_49.5_MB_(87.57%)
 
 public class Solution {
     public int maxAbsValExpr(int[] arr1, int[] arr2) {

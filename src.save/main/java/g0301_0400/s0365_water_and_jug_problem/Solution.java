@@ -1,6 +1,6 @@
 package g0301_0400.s0365_water_and_jug_problem;
 
-// #Medium #Math #Depth_First_Search #Breadth_First_Search
+// #Medium #Math #Depth_First_Search #Breadth_First_Search #Acceptance_34.7%
 // #Graph_Theory_I_Day_11_Breadth_First_Search
 // #2022_03_15_Time_0_ms_(100.00%)_Space_38.9_MB_(84.92%)
 

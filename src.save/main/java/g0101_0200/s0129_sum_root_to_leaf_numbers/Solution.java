@@ -1,6 +1,6 @@
 package g0101_0200.s0129_sum_root_to_leaf_numbers;
 
-// #Medium #Depth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Tree #Binary_Tree #Acceptance_57.1%
 // #2022_02_22_Time_0_ms_(100.00%)_Space_39.9_MB_(36.66%)
 
 import com_github_leetcode.TreeNode;

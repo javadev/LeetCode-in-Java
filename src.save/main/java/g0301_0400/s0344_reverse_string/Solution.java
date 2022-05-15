@@ -1,7 +1,7 @@
 package g0301_0400.s0344_reverse_string;
 
-// #Easy #Top_Interview_Questions #String #Two_Pointers #Recursion #Algorithm_I_Day_4_Two_Pointers
-// #2022_03_15_Time_1_ms_(87.94%)_Space_54.6_MB_(42.01%)
+// #Easy #Top_Interview_Questions #String #Two_Pointers #Recursion #Acceptance_74.9%
+// #Algorithm_I_Day_4_Two_Pointers #2022_03_15_Time_1_ms_(87.94%)_Space_54.6_MB_(42.01%)
 
 public class Solution {
     public void reverseString(char[] s) {

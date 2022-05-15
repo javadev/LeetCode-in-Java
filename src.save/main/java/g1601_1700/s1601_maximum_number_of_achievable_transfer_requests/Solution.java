@@ -1,6 +1,6 @@
 package g1601_1700.s1601_maximum_number_of_achievable_transfer_requests;
 
-// #Hard #Array #Bit_Manipulation #Backtracking #Enumeration
+// #Hard #Array #Bit_Manipulation #Backtracking #Enumeration #Acceptance_50.8%
 // #2022_04_11_Time_26_ms_(84.02%)_Space_42.3_MB_(62.89%)
 
 public class Solution {

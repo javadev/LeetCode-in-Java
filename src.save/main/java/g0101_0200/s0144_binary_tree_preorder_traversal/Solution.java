@@ -1,7 +1,7 @@
 package g0101_0200.s0144_binary_tree_preorder_traversal;
 
-// #Easy #Depth_First_Search #Tree #Binary_Tree #Stack #Data_Structure_I_Day_10_Tree
-// #2022_02_23_Time_1_ms_(42.23%)_Space_42.4_MB_(12.48%)
+// #Easy #Depth_First_Search #Tree #Binary_Tree #Stack #Acceptance_62.6%
+// #Data_Structure_I_Day_10_Tree #2022_02_23_Time_1_ms_(42.23%)_Space_42.4_MB_(12.48%)
 
 import com_github_leetcode.TreeNode;
 import java.util.ArrayList;

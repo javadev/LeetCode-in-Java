@@ -1,6 +1,7 @@
 package g0301_0400.s0385_mini_parser;
 
-// #Medium #String #Depth_First_Search #Stack #2022_03_16_Time_3_ms_(97.44%)_Space_44.6_MB_(60.81%)
+// #Medium #String #Depth_First_Search #Stack #Acceptance_35.9%
+// #2022_03_16_Time_3_ms_(97.44%)_Space_44.6_MB_(60.81%)
 
 import com_github_leetcode.NestedInteger;
 

@@ -1,6 +1,6 @@
 package g0901_1000.s0987_vertical_order_traversal_of_a_binary_tree;
 
-// #Hard #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #Hard #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Acceptance_41.6%
 // #2022_03_31_Time_4_ms_(71.48%)_Space_44.1_MB_(6.86%)
 
 import com_github_leetcode.TreeNode;

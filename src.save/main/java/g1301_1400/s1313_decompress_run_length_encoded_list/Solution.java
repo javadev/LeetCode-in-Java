@@ -1,6 +1,6 @@
 package g1301_1400.s1313_decompress_run_length_encoded_list;
 
-// #Easy #Array #2022_03_18_Time_11_ms_(10.55%)_Space_49_MB_(17.49%)
+// #Easy #Array #Acceptance_85.9% #2022_03_18_Time_11_ms_(10.55%)_Space_49_MB_(17.49%)
 
 import java.util.ArrayList;
 import java.util.List;

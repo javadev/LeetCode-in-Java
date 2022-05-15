@@ -1,6 +1,7 @@
 package g1801_1900.s1865_finding_pairs_with_a_certain_sum;
 
-// #Medium #Array #Hash_Table #Design #2022_05_10_Time_195_ms_(83.97%)_Space_74.2_MB_(92.11%)
+// #Medium #Array #Hash_Table #Design #Acceptance_49.5%
+// #2022_05_10_Time_195_ms_(83.97%)_Space_74.2_MB_(92.11%)
 
 import java.util.HashMap;
 import java.util.Map;

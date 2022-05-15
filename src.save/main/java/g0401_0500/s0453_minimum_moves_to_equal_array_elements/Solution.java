@@ -1,6 +1,6 @@
 package g0401_0500.s0453_minimum_moves_to_equal_array_elements;
 
-// #Medium #Array #Math #2022_03_18_Time_1_ms_(100.00%)_Space_42.9_MB_(89.50%)
+// #Medium #Array #Math #Acceptance_54.2% #2022_03_18_Time_1_ms_(100.00%)_Space_42.9_MB_(89.50%)
 
 public class Solution {
     public int minMoves(int[] nums) {

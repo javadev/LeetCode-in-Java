@@ -1,6 +1,6 @@
 package g1701_1800.s1733_minimum_number_of_people_to_teach;
 
-// #Medium #Array #Greedy #2022_04_28_Time_11_ms_(98.57%)_Space_56.3_MB_(95.71%)
+// #Medium #Array #Greedy #Acceptance_40.8% #2022_04_28_Time_11_ms_(98.57%)_Space_56.3_MB_(95.71%)
 
 import java.util.ArrayList;
 import java.util.HashSet;

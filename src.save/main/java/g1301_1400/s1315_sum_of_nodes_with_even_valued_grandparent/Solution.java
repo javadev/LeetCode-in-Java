@@ -1,6 +1,6 @@
 package g1301_1400.s1315_sum_of_nodes_with_even_valued_grandparent;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Acceptance_85.3%
 // #2022_03_18_Time_2_ms_(78.61%)_Space_52.9_MB_(21.61%)
 
 import com_github_leetcode.TreeNode;

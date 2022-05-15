@@ -1,6 +1,7 @@
 package g1101_1200.s1105_filling_bookcase_shelves;
 
-// #Medium #Array #Dynamic_Programming #2022_02_28_Time_4_ms_(23.85%)_Space_42.7_MB_(31.80%)
+// #Medium #Array #Dynamic_Programming #Acceptance_58.1%
+// #2022_02_28_Time_4_ms_(23.85%)_Space_42.7_MB_(31.80%)
 
 import java.util.Arrays;
 

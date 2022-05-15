@@ -1,6 +1,6 @@
 package g1201_1300.s1254_number_of_closed_islands;
 
-// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Union_Find
+// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Union_Find #Acceptance_63.4%
 // #Graph_Theory_I_Day_2_Matrix_Related_Problems
 // #2022_03_12_Time_3_ms_(55.59%)_Space_46.4_MB_(60.84%)
 

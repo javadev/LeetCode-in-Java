@@ -1,7 +1,7 @@
 package g1101_1200.s1147_longest_chunked_palindrome_decomposition;
 
 // #Hard #String #Dynamic_Programming #Greedy #Two_Pointers #Hash_Function #Rolling_Hash
-// #2022_03_05_Time_11_ms_(44.95%)_Space_42.8_MB_(60.55%)
+// #Acceptance_60.2% #2022_03_05_Time_11_ms_(44.95%)_Space_42.8_MB_(60.55%)
 
 public class Solution {
     public int longestDecomposition(String text) {

@@ -1,6 +1,7 @@
 package g1001_1100.s1024_video_stitching;
 
-// #Medium #Array #Dynamic_Programming #Greedy #2022_02_26_Time_1_ms_(88.78%)_Space_42.3_MB_(11.00%)
+// #Medium #Array #Dynamic_Programming #Greedy #Acceptance_50.1%
+// #2022_02_26_Time_1_ms_(88.78%)_Space_42.3_MB_(11.00%)
 
 import java.util.Arrays;
 

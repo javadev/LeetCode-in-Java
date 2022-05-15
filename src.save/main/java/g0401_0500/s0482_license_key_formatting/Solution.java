@@ -1,6 +1,6 @@
 package g0401_0500.s0482_license_key_formatting;
 
-// #Easy #String #2022_03_18_Time_7_ms_(98.60%)_Space_45.8_MB_(45.67%)
+// #Easy #String #Acceptance_43.1% #2022_03_18_Time_7_ms_(98.60%)_Space_45.8_MB_(45.67%)
 
 public class Solution {
     public String licenseKeyFormatting(String s, int k) {

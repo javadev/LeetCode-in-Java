@@ -1,6 +1,6 @@
 package g1101_1200.s1122_relative_sort_array;
 
-// #Easy #Array #Hash_Table #Sorting #Counting_Sort
+// #Easy #Array #Hash_Table #Sorting #Counting_Sort #Acceptance_68.2%
 // #2022_03_09_Time_0_ms_(100.00%)_Space_42.7_MB_(39.18%)
 
 public class Solution {

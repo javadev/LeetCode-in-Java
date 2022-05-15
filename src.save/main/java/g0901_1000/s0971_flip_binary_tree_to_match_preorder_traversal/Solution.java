@@ -1,6 +1,6 @@
 package g0901_1000.s0971_flip_binary_tree_to_match_preorder_traversal;
 
-// #Medium #Depth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Tree #Binary_Tree #Acceptance_49.9%
 // #2022_03_31_Time_0_ms_(100.00%)_Space_43.3_MB_(30.85%)
 
 import com_github_leetcode.TreeNode;

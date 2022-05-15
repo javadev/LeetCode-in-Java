@@ -1,6 +1,7 @@
 package g0101_0200.s0123_best_time_to_buy_and_sell_stock_iii;
 
-// #Hard #Array #Dynamic_Programming #2022_02_22_Time_1_ms_(100.00%)_Space_58.7_MB_(75.57%)
+// #Hard #Array #Dynamic_Programming #Acceptance_43.3%
+// #2022_02_22_Time_1_ms_(100.00%)_Space_58.7_MB_(75.57%)
 
 public class Solution {
     public int maxProfit(int[] prices) {

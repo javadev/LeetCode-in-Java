@@ -1,6 +1,6 @@
 package g0701_0800.s0725_split_linked_list_in_parts;
 
-// #Medium #Linked_List #2022_03_24_Time_1_ms_(30.85%)_Space_43.9_MB_(61.88%)
+// #Medium #Linked_List #Acceptance_56.9% #2022_03_24_Time_1_ms_(30.85%)_Space_43.9_MB_(61.88%)
 
 import com_github_leetcode.ListNode;
 import java.util.Objects;

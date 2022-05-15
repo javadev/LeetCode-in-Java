@@ -1,6 +1,7 @@
 package g1301_1400.s1365_how_many_numbers_are_smaller_than_the_current_number;
 
-// #Easy #Array #Hash_Table #Sorting #Counting #2022_03_21_Time_26_ms_(6.46%)_Space_45_MB_(18.09%)
+// #Easy #Array #Hash_Table #Sorting #Counting #Acceptance_86.4%
+// #2022_03_21_Time_26_ms_(6.46%)_Space_45_MB_(18.09%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

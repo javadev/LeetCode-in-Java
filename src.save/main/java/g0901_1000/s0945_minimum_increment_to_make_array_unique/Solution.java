@@ -1,6 +1,7 @@
 package g0901_1000.s0945_minimum_increment_to_make_array_unique;
 
-// #Medium #Array #Sorting #Greedy #Counting #2022_02_20_Time_9_ms_(95.25%)_Space_77.7_MB_(55.09%)
+// #Medium #Array #Sorting #Greedy #Counting #Acceptance_49.1%
+// #2022_02_20_Time_9_ms_(95.25%)_Space_77.7_MB_(55.09%)
 
 public class Solution {
     public int minIncrementForUnique(int[] nums) {

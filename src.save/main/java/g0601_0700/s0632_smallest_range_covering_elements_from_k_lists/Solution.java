@@ -1,6 +1,6 @@
 package g0601_0700.s0632_smallest_range_covering_elements_from_k_lists;
 
-// #Hard #Array #Hash_Table #Sorting #Greedy #Heap_Priority_Queue #Sliding_Window
+// #Hard #Array #Hash_Table #Sorting #Greedy #Heap_Priority_Queue #Sliding_Window #Acceptance_58.6%
 // #2022_03_21_Time_31_ms_(87.39%)_Space_57.6_MB_(18.58%)
 
 import java.util.List;

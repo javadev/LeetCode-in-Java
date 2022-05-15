@@ -1,6 +1,6 @@
 package g1901_2000.s1905_count_sub_islands;
 
-// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Union_Find
+// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Union_Find #Acceptance_66.1%
 // #Graph_Theory_I_Day_3_Matrix_Related_Problems
 // #2022_05_11_Time_24_ms_(85.54%)_Space_142.6_MB_(18.19%)
 

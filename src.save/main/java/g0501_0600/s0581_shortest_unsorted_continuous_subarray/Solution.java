@@ -1,6 +1,6 @@
 package g0501_0600.s0581_shortest_unsorted_continuous_subarray;
 
-// #Medium #Array #Sorting #Greedy #Two_Pointers #Stack #Monotonic_Stack
+// #Medium #Array #Sorting #Greedy #Two_Pointers #Stack #Monotonic_Stack #Acceptance_36.0%
 // #2022_03_20_Time_1_ms_(98.19%)_Space_42.8_MB_(89.50%)
 
 public class Solution {

@@ -1,6 +1,6 @@
 package g0801_0900.s0823_binary_trees_with_factors;
 
-// #Medium #Array #Hash_Table #Dynamic_Programming
+// #Medium #Array #Hash_Table #Dynamic_Programming #Acceptance_43.7%
 // #2022_03_23_Time_28_ms_(80.54%)_Space_42.6_MB_(79.87%)
 
 import java.util.Arrays;

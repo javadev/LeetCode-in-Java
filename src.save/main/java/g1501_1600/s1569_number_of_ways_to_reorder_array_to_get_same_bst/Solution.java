@@ -1,7 +1,7 @@
 package g1501_1600.s1569_number_of_ways_to_reorder_array_to_get_same_bst;
 
 // #Hard #Array #Dynamic_Programming #Math #Tree #Binary_Tree #Union_Find #Binary_Search_Tree
-// #Divide_and_Conquer #Memoization #Combinatorics
+// #Divide_and_Conquer #Memoization #Combinatorics #Acceptance_49.2%
 // #2022_04_11_Time_21_ms_(97.44%)_Space_49.9_MB_(92.31%)
 
 public class Solution {

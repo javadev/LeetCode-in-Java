@@ -1,6 +1,7 @@
 package g0801_0900.s0817_linked_list_components;
 
-// #Medium #Hash_Table #Linked_List #2022_03_23_Time_7_ms_(76.10%)_Space_54_MB_(54.99%)
+// #Medium #Hash_Table #Linked_List #Acceptance_58.1%
+// #2022_03_23_Time_7_ms_(76.10%)_Space_54_MB_(54.99%)
 
 import com_github_leetcode.ListNode;
 import java.util.HashSet;

@@ -1,6 +1,6 @@
 package g1101_1200.s1129_shortest_path_with_alternating_colors;
 
-// #Medium #Breadth_First_Search #Graph #Graph_Theory_I_Day_10_Standard_Traversal
+// #Medium #Breadth_First_Search #Graph #Acceptance_42.2% #Graph_Theory_I_Day_10_Standard_Traversal
 // #2022_03_09_Time_5_ms_(90.28%)_Space_48.2_MB_(35.18%)
 
 import java.util.ArrayList;

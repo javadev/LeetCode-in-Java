@@ -1,6 +1,7 @@
 package g1301_1400.s1324_print_words_vertically;
 
-// #Medium #Array #String #Simulation #2022_03_19_Time_1_ms_(90.59%)_Space_42.3_MB_(43.21%)
+// #Medium #Array #String #Simulation #Acceptance_59.7%
+// #2022_03_19_Time_1_ms_(90.59%)_Space_42.3_MB_(43.21%)
 
 import java.util.ArrayList;
 import java.util.List;

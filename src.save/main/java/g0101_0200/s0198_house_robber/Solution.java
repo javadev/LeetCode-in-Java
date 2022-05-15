@@ -1,7 +1,7 @@
 package g0101_0200.s0198_house_robber;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Dynamic_Programming
-// #Algorithm_I_Day_12_Dynamic_Programming #Dynamic_Programming_I_Day_3
+// #Acceptance_47.3% #Algorithm_I_Day_12_Dynamic_Programming #Dynamic_Programming_I_Day_3
 // #2022_03_04_Time_0_ms_(100.00%)_Space_42_MB_(11.54%)
 
 public class Solution {

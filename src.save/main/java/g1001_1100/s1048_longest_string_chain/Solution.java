@@ -1,6 +1,6 @@
 package g1001_1100.s1048_longest_string_chain;
 
-// #Medium #Array #String #Hash_Table #Dynamic_Programming #Two_Pointers
+// #Medium #Array #String #Hash_Table #Dynamic_Programming #Two_Pointers #Acceptance_57.9%
 // #2022_02_28_Time_23_ms_(97.92%)_Space_46.6_MB_(66.36%)
 
 import java.util.ArrayList;

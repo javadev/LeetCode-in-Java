@@ -1,6 +1,7 @@
 package g1401_1500.s1423_maximum_points_you_can_obtain_from_cards;
 
-// #Medium #Array #Prefix_Sum #Sliding_Window #2022_03_28_Time_4_ms_(31.70%)_Space_65.6_MB_(39.85%)
+// #Medium #Array #Prefix_Sum #Sliding_Window #Acceptance_50.1%
+// #2022_03_28_Time_4_ms_(31.70%)_Space_65.6_MB_(39.85%)
 
 public class Solution {
     public int maxScore(int[] cardPoints, int k) {

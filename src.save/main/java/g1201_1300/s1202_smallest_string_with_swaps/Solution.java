@@ -1,7 +1,7 @@
 package g1201_1300.s1202_smallest_string_with_swaps;
 
 // #Medium #String #Hash_Table #Depth_First_Search #Breadth_First_Search #Union_Find
-// #2022_03_08_Time_43_ms_(86.82%)_Space_94.1_MB_(64.69%)
+// #Acceptance_57.1% #2022_03_08_Time_43_ms_(86.82%)_Space_94.1_MB_(64.69%)
 
 import java.util.HashMap;
 import java.util.List;

@@ -1,6 +1,6 @@
 package g0801_0900.s0810_chalkboard_xor_game;
 
-// #Hard #Array #Math #Bit_Manipulation #Game_Theory #Brainteaser
+// #Hard #Array #Math #Bit_Manipulation #Game_Theory #Brainteaser #Acceptance_53.5%
 // #2022_03_23_Time_0_ms_(100.00%)_Space_41.6_MB_(95.74%)
 
 public class Solution {

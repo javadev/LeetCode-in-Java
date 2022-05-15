@@ -1,6 +1,6 @@
 package g1001_1100.s1028_recover_a_tree_from_preorder_traversal;
 
-// #Hard #String #Depth_First_Search #Tree #Binary_Tree
+// #Hard #String #Depth_First_Search #Tree #Binary_Tree #Acceptance_72.5%
 // #2022_02_26_Time_5_ms_(77.57%)_Space_46.5_MB_(30.81%)
 
 import com_github_leetcode.TreeNode;

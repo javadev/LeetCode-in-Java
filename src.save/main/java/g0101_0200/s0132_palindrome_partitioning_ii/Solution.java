@@ -1,6 +1,7 @@
 package g0101_0200.s0132_palindrome_partitioning_ii;
 
-// #Hard #String #Dynamic_Programming #2022_02_22_Time_2_ms_(99.72%)_Space_41.7_MB_(75.39%)
+// #Hard #String #Dynamic_Programming #Acceptance_33.2%
+// #2022_02_22_Time_2_ms_(99.72%)_Space_41.7_MB_(75.39%)
 
 import java.util.Arrays;
 

@@ -1,6 +1,6 @@
 package g0401_0500.s0494_target_sum;
 
-// #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Backtracking
+// #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Backtracking #Acceptance_45.4%
 // #2022_03_19_Time_10_ms_(82.41%)_Space_44.5_MB_(37.47%)
 
 public class Solution {

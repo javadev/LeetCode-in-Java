@@ -1,6 +1,6 @@
 package g1901_2000.s1912_design_movie_rental_system;
 
-// #Hard #Array #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set
+// #Hard #Array #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set #Acceptance_41.6%
 // #2022_05_14_Time_562_ms_(74.14%)_Space_175.3_MB_(91.38%)
 
 import java.util.ArrayList;

@@ -1,6 +1,7 @@
 package g1701_1800.s1735_count_ways_to_make_array_with_product;
 
-// #Hard #Array #Dynamic_Programming #Math #2022_04_29_Time_189_ms_(43.75%)_Space_50.3_MB_(56.25%)
+// #Hard #Array #Dynamic_Programming #Math #Acceptance_49.3%
+// #2022_04_29_Time_189_ms_(43.75%)_Space_50.3_MB_(56.25%)
 
 import java.util.ArrayList;
 import java.util.List;

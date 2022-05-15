@@ -1,6 +1,7 @@
 package g0401_0500.s0467_unique_substrings_in_wraparound_string;
 
-// #Medium #String #Dynamic_Programming #2022_03_18_Time_5_ms_(88.61%)_Space_43.3_MB_(34.18%)
+// #Medium #String #Dynamic_Programming #Acceptance_37.6%
+// #2022_03_18_Time_5_ms_(88.61%)_Space_43.3_MB_(34.18%)
 
 public class Solution {
     public int findSubstringInWraproundString(String p) {

@@ -1,6 +1,7 @@
 package g0501_0600.s0576_out_of_boundary_paths;
 
-// #Medium #Dynamic_Programming #2022_03_20_Time_7_ms_(74.13%)_Space_42.4_MB_(65.17%)
+// #Medium #Dynamic_Programming #Acceptance_40.1%
+// #2022_03_20_Time_7_ms_(74.13%)_Space_42.4_MB_(65.17%)
 
 import java.util.Arrays;
 

@@ -1,6 +1,6 @@
 package g1101_1200.s1192_critical_connections_in_a_network;
 
-// #Hard #Depth_First_Search #Graph #Biconnected_Component
+// #Hard #Depth_First_Search #Graph #Biconnected_Component #Acceptance_52.1%
 // #2022_03_03_Time_127_ms_(89.39%)_Space_262.1_MB_(59.13%)
 
 import java.util.ArrayList;

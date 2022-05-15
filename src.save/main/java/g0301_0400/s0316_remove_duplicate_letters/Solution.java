@@ -1,6 +1,6 @@
 package g0301_0400.s0316_remove_duplicate_letters;
 
-// #Medium #String #Greedy #Stack #Monotonic_Stack
+// #Medium #String #Greedy #Stack #Monotonic_Stack #Acceptance_44.0%
 // #2022_03_15_Time_2_ms_(98.39%)_Space_42.4_MB_(58.70%)
 
 public class Solution {

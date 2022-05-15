@@ -1,6 +1,7 @@
 package g0701_0800.s0773_sliding_puzzle;
 
-// #Hard #Array #Breadth_First_Search #Matrix #2022_03_26_Time_9_ms_(81.80%)_Space_43.8_MB_(56.22%)
+// #Hard #Array #Breadth_First_Search #Matrix #Acceptance_63.2%
+// #2022_03_26_Time_9_ms_(81.80%)_Space_43.8_MB_(56.22%)
 
 import java.util.HashSet;
 import java.util.LinkedList;

@@ -1,6 +1,6 @@
 package g0501_0600.s0572_subtree_of_another_tree;
 
-// #Easy #Depth_First_Search #Tree #Binary_Tree #Hash_Function #String_Matching
+// #Easy #Depth_First_Search #Tree #Binary_Tree #Hash_Function #String_Matching #Acceptance_45.4%
 // #Algorithm_II_Day_7_Breadth_First_Search_Depth_First_Search
 // #2022_03_20_Time_0_ms_(100.00%)_Space_41.8_MB_(96.46%)
 

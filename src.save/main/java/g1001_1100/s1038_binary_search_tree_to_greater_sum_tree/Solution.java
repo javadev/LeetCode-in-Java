@@ -1,6 +1,6 @@
 package g1001_1100.s1038_binary_search_tree_to_greater_sum_tree;
 
-// #Medium #Depth_First_Search #Tree #Binary_Tree #Binary_Search_Tree
+// #Medium #Depth_First_Search #Tree #Binary_Tree #Binary_Search_Tree #Acceptance_84.8%
 // #2022_02_27_Time_0_ms_(100.00%)_Space_42.2_MB_(6.86%)
 
 import com_github_leetcode.TreeNode;

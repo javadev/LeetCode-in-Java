@@ -1,6 +1,6 @@
 package g1001_1100.s1034_coloring_a_border;
 
-// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix
+// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Acceptance_48.5%
 // #2022_02_27_Time_1_ms_(93.85%)_Space_55.3_MB_(9.60%)
 
 public class Solution {

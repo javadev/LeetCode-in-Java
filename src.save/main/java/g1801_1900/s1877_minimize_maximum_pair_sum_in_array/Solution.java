@@ -1,6 +1,6 @@
 package g1801_1900.s1877_minimize_maximum_pair_sum_in_array;
 
-// #Medium #Array #Sorting #Greedy #Two_Pointers
+// #Medium #Array #Sorting #Greedy #Two_Pointers #Acceptance_80.7%
 // #2022_05_10_Time_62_ms_(82.87%)_Space_50.5_MB_(99.71%)
 
 import java.util.Arrays;

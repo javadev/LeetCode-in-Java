@@ -1,6 +1,6 @@
 package g1201_1300.s1291_sequential_digits;
 
-// #Medium #Enumeration #2022_03_10_Time_0_ms_(100.00%)_Space_42_MB_(5.03%)
+// #Medium #Enumeration #Acceptance_60.9% #2022_03_10_Time_0_ms_(100.00%)_Space_42_MB_(5.03%)
 
 import java.util.ArrayList;
 import java.util.List;

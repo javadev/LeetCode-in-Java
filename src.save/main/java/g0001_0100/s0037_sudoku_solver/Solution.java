@@ -1,6 +1,7 @@
 package g0001_0100.s0037_sudoku_solver;
 
-// #Hard #Array #Matrix #Backtracking #2022_02_18_Time_6_ms_(88.24%)_Space_41.2_MB_(34.36%)
+// #Hard #Array #Matrix #Backtracking #Acceptance_54.1%
+// #2022_02_18_Time_6_ms_(88.24%)_Space_41.2_MB_(34.36%)
 
 import java.util.ArrayList;
 import java.util.List;

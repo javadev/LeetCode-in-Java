@@ -1,6 +1,6 @@
 package g0301_0400.s0328_odd_even_linked_list;
 
-// #Medium #Top_Interview_Questions #Linked_List
+// #Medium #Top_Interview_Questions #Linked_List #Acceptance_59.6%
 // #2022_03_15_Time_0_ms_(100.00%)_Space_41.7_MB_(79.98%)
 
 import com_github_leetcode.ListNode;

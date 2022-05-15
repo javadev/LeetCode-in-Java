@@ -1,6 +1,6 @@
 package g1301_1400.s1317_convert_integer_to_the_sum_of_two_no_zero_integers;
 
-// #Easy #Math #2022_03_19_Time_1_ms_(84.36%)_Space_42.4_MB_(12.73%)
+// #Easy #Math #Acceptance_56.9% #2022_03_19_Time_1_ms_(84.36%)_Space_42.4_MB_(12.73%)
 
 public class Solution {
     public int[] getNoZeroIntegers(int n) {

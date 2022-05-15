@@ -1,6 +1,6 @@
 package g1201_1300.s1284_minimum_number_of_flips_to_convert_binary_matrix_to_zero_matrix;
 
-// #Hard #Array #Breadth_First_Search #Matrix #Bit_Manipulation
+// #Hard #Array #Breadth_First_Search #Matrix #Bit_Manipulation #Acceptance_72.3%
 // #2022_03_11_Time_2_ms_(89.29%)_Space_40_MB_(77.10%)
 
 import java.util.ArrayDeque;

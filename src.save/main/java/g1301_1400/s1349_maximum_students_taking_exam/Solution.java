@@ -1,6 +1,6 @@
 package g1301_1400.s1349_maximum_students_taking_exam;
 
-// #Hard #Array #Dynamic_Programming #Matrix #Bit_Manipulation #Bitmask
+// #Hard #Array #Dynamic_Programming #Matrix #Bit_Manipulation #Bitmask #Acceptance_47.0%
 // #2022_03_21_Time_4_ms_(76.98%)_Space_42.4_MB_(28.06%)
 
 import java.util.Arrays;

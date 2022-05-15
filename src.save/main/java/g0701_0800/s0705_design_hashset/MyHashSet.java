@@ -1,6 +1,6 @@
 package g0701_0800.s0705_design_hashset;
 
-// #Easy #Array #Hash_Table #Design #Linked_List #Hash_Function
+// #Easy #Array #Hash_Table #Design #Linked_List #Hash_Function #Acceptance_66.4%
 // #2022_03_23_Time_29_ms_(57.06%)_Space_85_MB_(12.64%)
 
 public class MyHashSet {

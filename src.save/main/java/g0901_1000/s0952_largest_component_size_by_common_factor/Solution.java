@@ -1,6 +1,7 @@
 package g0901_1000.s0952_largest_component_size_by_common_factor;
 
-// #Hard #Array #Math #Union_Find #2022_02_18_Time_225_ms_(76.99%)_Space_64.2_MB_(65.49%)
+// #Hard #Array #Math #Union_Find #Acceptance_40.3%
+// #2022_02_18_Time_225_ms_(76.99%)_Space_64.2_MB_(65.49%)
 
 public class Solution {
     public int largestComponentSize(int[] nums) {

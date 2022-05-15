@@ -1,6 +1,7 @@
 package g0601_0700.s0688_knight_probability_in_chessboard;
 
-// #Medium #Dynamic_Programming #2022_03_22_Time_7_ms_(85.13%)_Space_42.5_MB_(58.12%)
+// #Medium #Dynamic_Programming #Acceptance_51.6%
+// #2022_03_22_Time_7_ms_(85.13%)_Space_42.5_MB_(58.12%)
 
 public class Solution {
     private final int[][] directions =

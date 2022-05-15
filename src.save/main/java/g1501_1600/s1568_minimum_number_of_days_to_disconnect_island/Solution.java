@@ -1,7 +1,7 @@
 package g1501_1600.s1568_minimum_number_of_days_to_disconnect_island;
 
 // #Hard #Array #Depth_First_Search #Breadth_First_Search #Matrix #Strongly_Connected_Component
-// #2022_04_11_Time_1_ms_(100.00%)_Space_41.8_MB_(91.49%)
+// #Acceptance_48.5% #2022_04_11_Time_1_ms_(100.00%)_Space_41.8_MB_(91.49%)
 
 import java.util.ArrayList;
 import java.util.List;

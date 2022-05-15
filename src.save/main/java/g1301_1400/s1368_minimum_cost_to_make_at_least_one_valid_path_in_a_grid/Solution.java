@@ -1,7 +1,7 @@
 package g1301_1400.s1368_minimum_cost_to_make_at_least_one_valid_path_in_a_grid;
 
 // #Hard #Array #Breadth_First_Search #Matrix #Heap_Priority_Queue #Graph #Shortest_Path
-// #2022_03_21_Time_8_ms_(99.38%)_Space_42.6_MB_(88.85%)
+// #Acceptance_60.8% #2022_03_21_Time_8_ms_(99.38%)_Space_42.6_MB_(88.85%)
 
 import java.util.LinkedList;
 import java.util.Objects;

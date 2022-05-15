@@ -1,6 +1,6 @@
 package g0801_0900.s0882_reachable_nodes_in_subdivided_graph;
 
-// #Hard #Heap_Priority_Queue #Graph #Shortest_Path
+// #Hard #Heap_Priority_Queue #Graph #Shortest_Path #Acceptance_50.1%
 // #2022_03_28_Time_28_ms_(95.85%)_Space_66.3_MB_(87.56%)
 
 import java.util.ArrayList;

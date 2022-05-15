@@ -1,6 +1,6 @@
 package g0401_0500.s0495_teemo_attacking;
 
-// #Easy #Array #Simulation #2022_03_19_Time_4_ms_(26.85%)_Space_53.7_MB_(50.49%)
+// #Easy #Array #Simulation #Acceptance_56.9% #2022_03_19_Time_4_ms_(26.85%)_Space_53.7_MB_(50.49%)
 
 public class Solution {
     public int findPoisonedDuration(int[] timeSeries, int duration) {

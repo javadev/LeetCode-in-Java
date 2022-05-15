@@ -1,6 +1,7 @@
 package g1401_1500.s1419_minimum_number_of_frogs_croaking;
 
-// #Medium #String #Counting #2022_03_26_Time_19_ms_(32.16%)_Space_42.6_MB_(86.27%)
+// #Medium #String #Counting #Acceptance_49.7%
+// #2022_03_26_Time_19_ms_(32.16%)_Space_42.6_MB_(86.27%)
 
 public class Solution {
     public int minNumberOfFrogs(String s) {

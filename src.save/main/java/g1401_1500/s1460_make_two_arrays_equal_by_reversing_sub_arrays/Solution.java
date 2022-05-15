@@ -1,6 +1,7 @@
 package g1401_1500.s1460_make_two_arrays_equal_by_reversing_sub_arrays;
 
-// #Easy #Array #Hash_Table #Sorting #2022_03_29_Time_13_ms_(14.65%)_Space_47.6_MB_(22.39%)
+// #Easy #Array #Hash_Table #Sorting #Acceptance_72.5%
+// #2022_03_29_Time_13_ms_(14.65%)_Space_47.6_MB_(22.39%)
 
 import java.util.HashMap;
 import java.util.Map;

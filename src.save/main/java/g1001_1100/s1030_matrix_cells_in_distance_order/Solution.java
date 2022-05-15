@@ -1,6 +1,6 @@
 package g1001_1100.s1030_matrix_cells_in_distance_order;
 
-// #Easy #Array #Math #Sorting #Matrix #Geometry
+// #Easy #Array #Math #Sorting #Matrix #Geometry #Acceptance_69.1%
 // #2022_02_27_Time_15_ms_(69.74%)_Space_72.2_MB_(52.05%)
 
 import java.util.ArrayList;

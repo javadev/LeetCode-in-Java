@@ -1,6 +1,6 @@
 package g0401_0500.s0459_repeated_substring_pattern;
 
-// #Easy #String #String_Matching #Programming_Skills_II_Day_2
+// #Easy #String #String_Matching #Acceptance_43.6% #Programming_Skills_II_Day_2
 // #2022_03_18_Time_9_ms_(90.15%)_Space_50.5_MB_(46.55%)
 
 public class Solution {

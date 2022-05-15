@@ -1,6 +1,6 @@
 package g1201_1300.s1239_maximum_length_of_a_concatenated_string_with_unique_characters;
 
-// #Medium #Array #String #Bit_Manipulation #Backtracking
+// #Medium #Array #String #Bit_Manipulation #Backtracking #Acceptance_50.5%
 // #2022_03_12_Time_9_ms_(88.28%)_Space_45.3_MB_(68.10%)
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package g1901_2000.s1916_count_ways_to_build_rooms_in_an_ant_colony;
 
-// #Hard #Dynamic_Programming #Math #Tree #Graph #Topological_Sort #Combinatorics
+// #Hard #Dynamic_Programming #Math #Tree #Graph #Topological_Sort #Combinatorics #Acceptance_48.3%
 // #2022_05_14_Time_1527_ms_(34.38%)_Space_106_MB_(87.50%)
 
 import java.math.BigInteger;

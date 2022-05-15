@@ -1,8 +1,8 @@
 package g0001_0100.s0062_unique_paths;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Dynamic_Programming #Math
-// #Combinatorics #Algorithm_II_Day_13_Dynamic_Programming #Dynamic_Programming_I_Day_15
-// #2022_02_19_Time_1_ms_(45.44%)_Space_41.1_MB_(12.23%)
+// #Combinatorics #Acceptance_60.1% #Algorithm_II_Day_13_Dynamic_Programming
+// #Dynamic_Programming_I_Day_15 #2022_02_19_Time_1_ms_(45.44%)_Space_41.1_MB_(12.23%)
 
 public class Solution {
     public int uniquePaths(int m, int n) {

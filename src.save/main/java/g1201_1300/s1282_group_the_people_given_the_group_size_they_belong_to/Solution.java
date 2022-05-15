@@ -1,6 +1,6 @@
 package g1201_1300.s1282_group_the_people_given_the_group_size_they_belong_to;
 
-// #Medium #Array #Hash_Table #2022_03_12_Time_6_ms_(79.04%)_Space_54.9_MB_(6.83%)
+// #Medium #Array #Hash_Table #Acceptance_85.3% #2022_03_12_Time_6_ms_(79.04%)_Space_54.9_MB_(6.83%)
 
 import java.util.ArrayList;
 import java.util.HashMap;

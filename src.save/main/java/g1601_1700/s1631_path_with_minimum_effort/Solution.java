@@ -1,7 +1,8 @@
 package g1601_1700.s1631_path_with_minimum_effort;
 
 // #Medium #Array #Depth_First_Search #Breadth_First_Search #Binary_Search #Matrix
-// #Heap_Priority_Queue #Union_Find #2022_04_19_Time_75_ms_(60.52%)_Space_42.8_MB_(86.40%)
+// #Heap_Priority_Queue #Union_Find #Acceptance_55.0%
+// #2022_04_19_Time_75_ms_(60.52%)_Space_42.8_MB_(86.40%)
 
 import java.util.PriorityQueue;
 

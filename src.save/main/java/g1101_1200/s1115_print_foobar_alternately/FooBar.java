@@ -1,6 +1,6 @@
 package g1101_1200.s1115_print_foobar_alternately;
 
-// #Medium #Concurrency #2022_03_08_Time_16_ms_(90.05%)_Space_42.4_MB_(58.80%)
+// #Medium #Concurrency #Acceptance_60.8% #2022_03_08_Time_16_ms_(90.05%)_Space_42.4_MB_(58.80%)
 
 import java.util.concurrent.Semaphore;
 

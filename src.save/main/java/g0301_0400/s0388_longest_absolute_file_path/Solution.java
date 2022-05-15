@@ -1,6 +1,7 @@
 package g0301_0400.s0388_longest_absolute_file_path;
 
-// #Medium #String #Depth_First_Search #Stack #2022_03_16_Time_2_ms_(52.22%)_Space_42.5_MB_(14.38%)
+// #Medium #String #Depth_First_Search #Stack #Acceptance_46.0%
+// #2022_03_16_Time_2_ms_(52.22%)_Space_42.5_MB_(14.38%)
 
 import java.util.ArrayDeque;
 import java.util.Deque;

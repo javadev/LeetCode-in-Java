@@ -1,6 +1,6 @@
 package g1201_1300.s1286_iterator_for_combination;
 
-// #Medium #String #Design #Backtracking #Iterator
+// #Medium #String #Design #Backtracking #Iterator #Acceptance_73.3%
 // #2022_03_11_Time_10_ms_(95.00%)_Space_44.1_MB_(83.81%)
 
 import java.util.ArrayList;

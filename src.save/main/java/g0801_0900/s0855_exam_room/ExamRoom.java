@@ -1,6 +1,7 @@
 package g0801_0900.s0855_exam_room;
 
-// #Medium #Design #Ordered_Set #2022_03_27_Time_19_ms_(74.01%)_Space_45.8_MB_(67.28%)
+// #Medium #Design #Ordered_Set #Acceptance_43.6%
+// #2022_03_27_Time_19_ms_(74.01%)_Space_45.8_MB_(67.28%)
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,6 +1,6 @@
 package g1101_1200.s1114_print_in_order;
 
-// #Easy #Concurrency #2022_03_08_Time_16_ms_(77.21%)_Space_42.4_MB_(49.45%)
+// #Easy #Concurrency #Acceptance_68.2% #2022_03_08_Time_16_ms_(77.21%)_Space_42.4_MB_(49.45%)
 
 public class Foo {
     private volatile boolean firstFinished;

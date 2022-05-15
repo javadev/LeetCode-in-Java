@@ -1,6 +1,6 @@
 package g0201_0300.s0220_contains_duplicate_iii;
 
-// #Medium #Array #Sorting #Sliding_Window #Ordered_Set #Bucket_Sort
+// #Medium #Array #Sorting #Sliding_Window #Ordered_Set #Bucket_Sort #Acceptance_21.7%
 // #2022_03_05_Time_46_ms_(62.24%)_Space_53.6_MB_(36.79%)
 
 import java.util.HashMap;

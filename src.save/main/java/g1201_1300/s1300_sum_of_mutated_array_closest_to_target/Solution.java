@@ -1,6 +1,6 @@
 package g1201_1300.s1300_sum_of_mutated_array_closest_to_target;
 
-// #Medium #Array #Sorting #Binary_Search #Binary_Search_II_Day_16
+// #Medium #Array #Sorting #Binary_Search #Acceptance_42.8% #Binary_Search_II_Day_16
 // #2022_03_08_Time_7_ms_(33.33%)_Space_47.5_MB_(28.89%)
 
 import java.util.Arrays;

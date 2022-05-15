@@ -1,7 +1,7 @@
 package g1401_1500.s1457_pseudo_palindromic_paths_in_a_binary_tree;
 
 // #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Bit_Manipulation
-// #2022_03_28_Time_35_ms_(43.73%)_Space_109.2_MB_(42.57%)
+// #Acceptance_67.2% #2022_03_28_Time_35_ms_(43.73%)_Space_109.2_MB_(42.57%)
 
 import com_github_leetcode.TreeNode;
 

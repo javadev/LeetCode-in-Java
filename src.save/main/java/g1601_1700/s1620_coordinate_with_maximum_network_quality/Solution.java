@@ -1,6 +1,7 @@
 package g1601_1700.s1620_coordinate_with_maximum_network_quality;
 
-// #Medium #Array #Enumeration #2022_04_18_Time_111_ms_(7.14%)_Space_41_MB_(92.86%)
+// #Medium #Array #Enumeration #Acceptance_37.1%
+// #2022_04_18_Time_111_ms_(7.14%)_Space_41_MB_(92.86%)
 
 public class Solution {
     public int[] bestCoordinate(int[][] towers, int radius) {

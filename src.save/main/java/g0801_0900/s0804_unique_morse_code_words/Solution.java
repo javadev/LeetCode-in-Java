@@ -1,6 +1,7 @@
 package g0801_0900.s0804_unique_morse_code_words;
 
-// #Easy #Array #String #Hash_Table #2022_03_23_Time_2_ms_(89.27%)_Space_41.9_MB_(64.05%)
+// #Easy #Array #String #Hash_Table #Acceptance_80.0%
+// #2022_03_23_Time_2_ms_(89.27%)_Space_41.9_MB_(64.05%)
 
 import java.util.HashSet;
 import java.util.Set;

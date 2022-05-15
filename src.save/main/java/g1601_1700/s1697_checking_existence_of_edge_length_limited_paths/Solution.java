@@ -1,6 +1,7 @@
 package g1601_1700.s1697_checking_existence_of_edge_length_limited_paths;
 
-// #Hard #Array #Sorting #Graph #Union_Find #2022_04_13_Time_94_ms_(90.48%)_Space_71.6_MB_(95.24%)
+// #Hard #Array #Sorting #Graph #Union_Find #Acceptance_48.9%
+// #2022_04_13_Time_94_ms_(90.48%)_Space_71.6_MB_(95.24%)
 
 import java.util.Arrays;
 

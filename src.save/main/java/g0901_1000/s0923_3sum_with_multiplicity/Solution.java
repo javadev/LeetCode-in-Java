@@ -1,6 +1,6 @@
 package g0901_1000.s0923_3sum_with_multiplicity;
 
-// #Medium #Array #Hash_Table #Sorting #Two_Pointers #Counting
+// #Medium #Array #Hash_Table #Sorting #Two_Pointers #Counting #Acceptance_45.5%
 // #2022_03_29_Time_14_ms_(69.20%)_Space_44.2_MB_(48.00%)
 
 public class Solution {

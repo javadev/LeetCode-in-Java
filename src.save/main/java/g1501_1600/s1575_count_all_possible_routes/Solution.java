@@ -1,6 +1,6 @@
 package g1501_1600.s1575_count_all_possible_routes;
 
-// #Hard #Array #Dynamic_Programming #Memoization
+// #Hard #Array #Dynamic_Programming #Memoization #Acceptance_57.6%
 // #2022_04_11_Time_111_ms_(72.26%)_Space_44.6_MB_(64.16%)
 
 public class Solution {

@@ -1,7 +1,7 @@
 package g1301_1400.s1376_time_needed_to_inform_all_employees;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Programming_Skills_II_Day_11
-// #Graph_Theory_I_Day_9_Standard_Traversal
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Acceptance_58.1%
+// #Programming_Skills_II_Day_11 #Graph_Theory_I_Day_9_Standard_Traversal
 // #2022_03_21_Time_225_ms_(22.36%)_Space_121.5_MB_(65.53%)
 
 import java.util.ArrayDeque;

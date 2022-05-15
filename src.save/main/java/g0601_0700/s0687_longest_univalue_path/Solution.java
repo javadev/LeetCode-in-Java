@@ -1,6 +1,6 @@
 package g0601_0700.s0687_longest_univalue_path;
 
-// #Medium #Depth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Tree #Binary_Tree #Acceptance_39.5%
 // #2022_03_22_Time_3_ms_(79.43%)_Space_68.5_MB_(25.41%)
 
 import com_github_leetcode.TreeNode;

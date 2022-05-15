@@ -1,6 +1,6 @@
 package g1801_1900.s1863_sum_of_all_subset_xor_totals;
 
-// #Easy #Array #Math #Bit_Manipulation #Backtracking #Combinatorics
+// #Easy #Array #Math #Bit_Manipulation #Backtracking #Combinatorics #Acceptance_78.4%
 // #2022_05_10_Time_22_ms_(11.36%)_Space_52.2_MB_(6.49%)
 
 import java.util.ArrayList;

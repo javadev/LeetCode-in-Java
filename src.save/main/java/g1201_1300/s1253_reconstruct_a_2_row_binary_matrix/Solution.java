@@ -1,6 +1,7 @@
 package g1201_1300.s1253_reconstruct_a_2_row_binary_matrix;
 
-// #Medium #Array #Greedy #Matrix #2022_03_12_Time_18_ms_(57.27%)_Space_111.1_MB_(42.74%)
+// #Medium #Array #Greedy #Matrix #Acceptance_43.3%
+// #2022_03_12_Time_18_ms_(57.27%)_Space_111.1_MB_(42.74%)
 
 import java.util.ArrayList;
 import java.util.List;

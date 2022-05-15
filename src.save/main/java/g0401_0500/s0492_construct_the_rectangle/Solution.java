@@ -1,6 +1,6 @@
 package g0401_0500.s0492_construct_the_rectangle;
 
-// #Easy #Math #2022_03_19_Time_1_ms_(74.25%)_Space_41.9_MB_(17.67%)
+// #Easy #Math #Acceptance_52.7% #2022_03_19_Time_1_ms_(74.25%)_Space_41.9_MB_(17.67%)
 
 public class Solution {
     /*

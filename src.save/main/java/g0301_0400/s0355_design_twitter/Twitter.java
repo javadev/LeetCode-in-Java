@@ -1,6 +1,6 @@
 package g0301_0400.s0355_design_twitter;
 
-// #Medium #Hash_Table #Design #Heap_Priority_Queue #Linked_List
+// #Medium #Hash_Table #Design #Heap_Priority_Queue #Linked_List #Acceptance_34.6%
 // #2022_03_15_Time_8_ms_(99.79%)_Space_40.4_MB_(62.20%)
 
 import java.util.ArrayList;

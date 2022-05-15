@@ -1,6 +1,7 @@
 package g0601_0700.s0677_map_sum_pairs;
 
-// #Medium #String #Hash_Table #Design #Trie #2022_03_22_Time_17_ms_(70.10%)_Space_43.5_MB_(21.07%)
+// #Medium #String #Hash_Table #Design #Trie #Acceptance_57.0%
+// #2022_03_22_Time_17_ms_(70.10%)_Space_43.5_MB_(21.07%)
 
 public class MapSum {
     static class Node {

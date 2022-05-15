@@ -1,6 +1,6 @@
 package g1601_1700.s1681_minimum_incompatibility;
 
-// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask
+// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask #Acceptance_37.1%
 // #2022_04_17_Time_1_ms_(100.00%)_Space_39.8_MB_(97.56%)
 
 import java.util.Arrays;

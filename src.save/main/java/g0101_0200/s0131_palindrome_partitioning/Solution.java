@@ -1,7 +1,7 @@
 package g0101_0200.s0131_palindrome_partitioning;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming
-// #Backtracking #2022_02_22_Time_19_ms_(53.74%)_Space_194.8_MB_(9.14%)
+// #Backtracking #Acceptance_59.6% #2022_02_22_Time_19_ms_(53.74%)_Space_194.8_MB_(9.14%)
 
 import java.util.ArrayList;
 import java.util.List;

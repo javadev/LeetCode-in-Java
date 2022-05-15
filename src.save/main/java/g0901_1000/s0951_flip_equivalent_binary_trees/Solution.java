@@ -1,6 +1,6 @@
 package g0901_1000.s0951_flip_equivalent_binary_trees;
 
-// #Medium #Depth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Tree #Binary_Tree #Acceptance_66.7%
 // #2022_03_30_Time_0_ms_(100.00%)_Space_43_MB_(7.64%)
 
 import com_github_leetcode.TreeNode;

@@ -1,6 +1,6 @@
 package g0101_0200.s0166_fraction_to_recurring_decimal;
 
-// #Medium #Top_Interview_Questions #String #Hash_Table #Math
+// #Medium #Top_Interview_Questions #String #Hash_Table #Math #Acceptance_23.6%
 // #2022_03_04_Time_4_ms_(33.10%)_Space_41.6_MB_(26.44%)
 
 import java.util.HashMap;

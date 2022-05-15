@@ -1,6 +1,6 @@
 package g1801_1900.s1837_sum_of_digits_in_base_k;
 
-// #Easy #Math #2022_05_07_Time_1_ms_(10.42%)_Space_38.9_MB_(91.55%)
+// #Easy #Math #Acceptance_76.4% #2022_05_07_Time_1_ms_(10.42%)_Space_38.9_MB_(91.55%)
 
 public class Solution {
     public int sumBase(int n, int k) {

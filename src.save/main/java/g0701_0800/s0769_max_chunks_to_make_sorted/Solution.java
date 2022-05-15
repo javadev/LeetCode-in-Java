@@ -1,6 +1,6 @@
 package g0701_0800.s0769_max_chunks_to_make_sorted;
 
-// #Medium #Array #Sorting #Greedy #Stack #Monotonic_Stack
+// #Medium #Array #Sorting #Greedy #Stack #Monotonic_Stack #Acceptance_57.7%
 // #2022_03_26_Time_0_ms_(100.00%)_Space_41.8_MB_(23.34%)
 
 public class Solution {

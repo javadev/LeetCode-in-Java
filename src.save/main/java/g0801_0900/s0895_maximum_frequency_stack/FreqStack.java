@@ -1,6 +1,6 @@
 package g0801_0900.s0895_maximum_frequency_stack;
 
-// #Hard #Hash_Table #Stack #Design #Ordered_Set
+// #Hard #Hash_Table #Stack #Design #Ordered_Set #Acceptance_66.4%
 // #2022_03_28_Time_43_ms_(65.81%)_Space_70.1_MB_(27.87%)
 
 import java.util.HashMap;

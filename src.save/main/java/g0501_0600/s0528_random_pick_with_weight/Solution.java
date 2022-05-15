@@ -1,6 +1,6 @@
 package g0501_0600.s0528_random_pick_with_weight;
 
-// #Medium #Math #Binary_Search #Prefix_Sum #Randomized #Binary_Search_II_Day_13
+// #Medium #Math #Binary_Search #Prefix_Sum #Randomized #Acceptance_46.1% #Binary_Search_II_Day_13
 // #2022_03_18_Time_29_ms_(83.26%)_Space_46.5_MB_(94.36%)
 
 import java.util.Comparator;

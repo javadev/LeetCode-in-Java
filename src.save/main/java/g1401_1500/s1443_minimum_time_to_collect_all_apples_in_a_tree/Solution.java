@@ -1,6 +1,6 @@
 package g1401_1500.s1443_minimum_time_to_collect_all_apples_in_a_tree;
 
-// #Medium #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree
+// #Medium #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Acceptance_55.6%
 // #2022_03_28_Time_75_ms_(57.75%)_Space_85.1_MB_(85.45%)
 
 import java.util.ArrayList;

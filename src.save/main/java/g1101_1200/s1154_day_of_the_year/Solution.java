@@ -1,6 +1,6 @@
 package g1101_1200.s1154_day_of_the_year;
 
-// #Easy #String #Math #2022_03_05_Time_9_ms_(95.40%)_Space_42.2_MB_(90.80%)
+// #Easy #String #Math #Acceptance_50.9% #2022_03_05_Time_9_ms_(95.40%)_Space_42.2_MB_(90.80%)
 
 public class Solution {
     public int dayOfYear(String date) {

@@ -1,6 +1,7 @@
 package g0801_0900.s0891_sum_of_subsequence_widths;
 
-// #Hard #Array #Math #Sorting #2022_03_28_Time_56_ms_(30.61%)_Space_75.1_MB_(66.04%)
+// #Hard #Array #Math #Sorting #Acceptance_35.7%
+// #2022_03_28_Time_56_ms_(30.61%)_Space_75.1_MB_(66.04%)
 
 import java.util.Arrays;
 

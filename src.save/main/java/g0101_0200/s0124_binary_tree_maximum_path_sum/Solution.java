@@ -1,7 +1,7 @@
 package g0101_0200.s0124_binary_tree_maximum_path_sum;
 
 // #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Dynamic_Programming #Depth_First_Search
-// #Tree #Binary_Tree #2022_02_22_Time_1_ms_(76.01%)_Space_47.6_MB_(29.62%)
+// #Tree #Binary_Tree #Acceptance_37.7% #2022_02_22_Time_1_ms_(76.01%)_Space_47.6_MB_(29.62%)
 
 import com_github_leetcode.TreeNode;
 

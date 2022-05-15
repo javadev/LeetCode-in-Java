@@ -1,6 +1,6 @@
 package g1601_1700.s1609_even_odd_tree;
 
-// #Medium #Breadth_First_Search #Tree #Binary_Tree
+// #Medium #Breadth_First_Search #Tree #Binary_Tree #Acceptance_53.0%
 // #2022_04_12_Time_8_ms_(98.81%)_Space_56.9_MB_(99.32%)
 
 import com_github_leetcode.TreeNode;

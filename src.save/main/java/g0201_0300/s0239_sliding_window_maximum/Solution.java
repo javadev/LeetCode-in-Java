@@ -1,7 +1,8 @@
 package g0201_0300.s0239_sliding_window_maximum;
 
 // #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Heap_Priority_Queue
-// #Sliding_Window #Queue #Monotonic_Queue #2022_03_14_Time_25_ms_(95.01%)_Space_52.5_MB_(98.58%)
+// #Sliding_Window #Queue #Monotonic_Queue #Acceptance_46.2%
+// #2022_03_14_Time_25_ms_(95.01%)_Space_52.5_MB_(98.58%)
 
 import java.util.LinkedList;
 

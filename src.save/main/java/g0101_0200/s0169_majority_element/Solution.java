@@ -1,7 +1,7 @@
 package g0101_0200.s0169_majority_element;
 
 // #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table #Sorting #Counting
-// #Divide_and_Conquer #Data_Structure_II_Day_1_Array
+// #Divide_and_Conquer #Acceptance_63.0% #Data_Structure_II_Day_1_Array
 // #2022_03_04_Time_2_ms_(83.81%)_Space_56.6_MB_(22.94%)
 
 public class Solution {

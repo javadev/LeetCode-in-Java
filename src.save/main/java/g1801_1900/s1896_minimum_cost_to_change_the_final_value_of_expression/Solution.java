@@ -1,6 +1,6 @@
 package g1801_1900.s1896_minimum_cost_to_change_the_final_value_of_expression;
 
-// #Hard #String #Dynamic_Programming #Math #Stack
+// #Hard #String #Dynamic_Programming #Math #Stack #Acceptance_53.9%
 // #2022_05_03_Time_29_ms_(95.24%)_Space_63.8_MB_(77.78%)
 
 public class Solution {

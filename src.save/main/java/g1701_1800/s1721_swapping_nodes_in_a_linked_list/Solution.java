@@ -1,6 +1,7 @@
 package g1701_1800.s1721_swapping_nodes_in_a_linked_list;
 
-// #Medium #Two_Pointers #Linked_List #2022_04_25_Time_2_ms_(100.00%)_Space_182.3_MB_(38.16%)
+// #Medium #Two_Pointers #Linked_List #Acceptance_68.3%
+// #2022_04_25_Time_2_ms_(100.00%)_Space_182.3_MB_(38.16%)
 
 import com_github_leetcode.ListNode;
 

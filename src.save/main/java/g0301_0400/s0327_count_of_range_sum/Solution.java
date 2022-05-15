@@ -1,7 +1,7 @@
 package g0301_0400.s0327_count_of_range_sum;
 
 // #Hard #Array #Binary_Search #Ordered_Set #Divide_and_Conquer #Segment_Tree #Binary_Indexed_Tree
-// #Merge_Sort #2022_03_15_Time_64_ms_(87.41%)_Space_55.5_MB_(89.38%)
+// #Merge_Sort #Acceptance_36.0% #2022_03_15_Time_64_ms_(87.41%)_Space_55.5_MB_(89.38%)
 
 public class Solution {
     public int countRangeSum(int[] nums, int lower, int upper) {

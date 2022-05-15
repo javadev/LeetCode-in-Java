@@ -1,6 +1,6 @@
 package g1101_1200.s1175_prime_arrangements;
 
-// #Easy #Math #2022_03_05_Time_6_ms_(10.00%)_Space_42.1_MB_(5.71%)
+// #Easy #Math #Acceptance_52.9% #2022_03_05_Time_6_ms_(10.00%)_Space_42.1_MB_(5.71%)
 
 import java.math.BigInteger;
 import java.util.Arrays;

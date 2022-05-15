@@ -1,6 +1,6 @@
 package g1501_1600.s1594_maximum_non_negative_product_in_a_matrix;
 
-// #Medium #Array #Dynamic_Programming #Matrix
+// #Medium #Array #Dynamic_Programming #Matrix #Acceptance_33.1%
 // #2022_04_06_Time_1_ms_(100.00%)_Space_41.7_MB_(89.38%)
 
 public class Solution {

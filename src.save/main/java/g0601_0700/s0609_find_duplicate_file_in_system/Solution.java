@@ -1,6 +1,7 @@
 package g0601_0700.s0609_find_duplicate_file_in_system;
 
-// #Medium #Array #String #Hash_Table #2022_03_21_Time_20_ms_(97.68%)_Space_51.3_MB_(87.10%)
+// #Medium #Array #String #Hash_Table #Acceptance_63.8%
+// #2022_03_21_Time_20_ms_(97.68%)_Space_51.3_MB_(87.10%)
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,6 +1,6 @@
 package g1801_1900.s1825_finding_mk_average;
 
-// #Hard #Design #Heap_Priority_Queue #Ordered_Set #Queue
+// #Hard #Design #Heap_Priority_Queue #Ordered_Set #Queue #Acceptance_33.7%
 // #2022_05_06_Time_83_ms_(60.59%)_Space_96.3_MB_(77.83%)
 
 import java.util.ArrayDeque;

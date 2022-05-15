@@ -1,6 +1,6 @@
 package g0201_0300.s0290_word_pattern;
 
-// #Easy #String #Hash_Table #Data_Structure_II_Day_7_String
+// #Easy #String #Hash_Table #Acceptance_40.2% #Data_Structure_II_Day_7_String
 // #2022_03_14_Time_1_ms_(91.62%)_Space_41.9_MB_(13.47%)
 
 import java.util.HashMap;

@@ -1,6 +1,7 @@
 package g0401_0500.s0457_circular_array_loop;
 
-// #Medium #Array #Hash_Table #Two_Pointers #2022_03_18_Time_2_ms_(73.72%)_Space_41.4_MB_(62.53%)
+// #Medium #Array #Hash_Table #Two_Pointers #Acceptance_31.7%
+// #2022_03_18_Time_2_ms_(73.72%)_Space_41.4_MB_(62.53%)
 
 import java.util.HashMap;
 import java.util.Map;

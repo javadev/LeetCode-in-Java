@@ -1,6 +1,6 @@
 package g1501_1600.s1600_throne_inheritance;
 
-// #Medium #Hash_Table #Depth_First_Search #Tree #Design
+// #Medium #Hash_Table #Depth_First_Search #Tree #Design #Acceptance_63.1%
 // #2022_04_01_Time_267_ms_(90.38%)_Space_114.3_MB_(85.58%)
 
 import java.util.ArrayList;

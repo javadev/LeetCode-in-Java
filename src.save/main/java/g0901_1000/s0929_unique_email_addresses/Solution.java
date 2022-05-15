@@ -1,6 +1,7 @@
 package g0901_1000.s0929_unique_email_addresses;
 
-// #Easy #Array #String #Hash_Table #2022_03_29_Time_10_ms_(92.59%)_Space_45.3_MB_(79.48%)
+// #Easy #Array #String #Hash_Table #Acceptance_67.3%
+// #2022_03_29_Time_10_ms_(92.59%)_Space_45.3_MB_(79.48%)
 
 import java.util.HashSet;
 import java.util.Set;

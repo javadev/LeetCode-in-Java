@@ -1,6 +1,6 @@
 package g1201_1300.s1206_design_skiplist;
 
-// #Hard #Design #Linked_List #2022_03_08_Time_14_ms_(96.71%)_Space_48_MB_(85.19%)
+// #Hard #Design #Linked_List #Acceptance_59.9% #2022_03_08_Time_14_ms_(96.71%)_Space_48_MB_(85.19%)
 
 @SuppressWarnings("java:S2245")
 public class Skiplist {

@@ -1,6 +1,6 @@
 package g1601_1700.s1670_design_front_middle_back_queue;
 
-// #Medium #Array #Design #Linked_List #Queue #Data_Stream
+// #Medium #Array #Design #Linked_List #Queue #Data_Stream #Acceptance_55.7%
 // #2022_04_22_Time_5_ms_(100.00%)_Space_42.8_MB_(84.98%)
 
 public class FrontMiddleBackQueue {

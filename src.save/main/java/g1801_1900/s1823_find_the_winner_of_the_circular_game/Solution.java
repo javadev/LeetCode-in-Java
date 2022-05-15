@@ -1,7 +1,7 @@
 package g1801_1900.s1823_find_the_winner_of_the_circular_game;
 
-// #Medium #Array #Math #Simulation #Recursion #Queue #Data_Structure_II_Day_14_Stack_Queue
-// #2022_05_06_Time_3_ms_(64.85%)_Space_41.9_MB_(31.61%)
+// #Medium #Array #Math #Simulation #Recursion #Queue #Acceptance_76.4%
+// #Data_Structure_II_Day_14_Stack_Queue #2022_05_06_Time_3_ms_(64.85%)_Space_41.9_MB_(31.61%)
 
 import java.util.ArrayList;
 import java.util.List;

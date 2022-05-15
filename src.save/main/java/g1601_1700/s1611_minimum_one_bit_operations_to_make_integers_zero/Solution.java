@@ -1,6 +1,6 @@
 package g1601_1700.s1611_minimum_one_bit_operations_to_make_integers_zero;
 
-// #Hard #Dynamic_Programming #Bit_Manipulation #Memoization
+// #Hard #Dynamic_Programming #Bit_Manipulation #Memoization #Acceptance_62.5%
 // #2022_04_12_Time_1_ms_(88.24%)_Space_39.5_MB_(84.80%)
 
 import java.util.LinkedList;

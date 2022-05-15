@@ -1,6 +1,7 @@
 package g0001_0100.s0093_restore_ip_addresses;
 
-// #Medium #String #Backtracking #2022_02_21_Time_12_ms_(26.89%)_Space_43.2_MB_(22.54%)
+// #Medium #String #Backtracking #Acceptance_41.9%
+// #2022_02_21_Time_12_ms_(26.89%)_Space_43.2_MB_(22.54%)
 
 import java.util.ArrayList;
 import java.util.List;

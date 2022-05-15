@@ -1,6 +1,6 @@
 package g1701_1800.s1774_closest_dessert_cost;
 
-// #Medium #Array #Dynamic_Programming #Backtracking
+// #Medium #Array #Dynamic_Programming #Backtracking #Acceptance_45.9%
 // #2022_04_27_Time_5_ms_(82.32%)_Space_42.3_MB_(20.34%)
 
 @SuppressWarnings("java:S1871")

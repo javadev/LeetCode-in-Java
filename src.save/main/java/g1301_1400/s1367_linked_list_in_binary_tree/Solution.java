@@ -1,7 +1,8 @@
 package g1301_1400.s1367_linked_list_in_binary_tree;
 
 // #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Linked_List
-// #Programming_Skills_II_Day_4 #2022_03_21_Time_2_ms_(61.23%)_Space_49.7_MB_(35.63%)
+// #Acceptance_42.8% #Programming_Skills_II_Day_4
+// #2022_03_21_Time_2_ms_(61.23%)_Space_49.7_MB_(35.63%)
 
 import com_github_leetcode.ListNode;
 import com_github_leetcode.TreeNode;

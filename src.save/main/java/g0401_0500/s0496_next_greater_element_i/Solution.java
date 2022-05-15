@@ -1,7 +1,7 @@
 package g0401_0500.s0496_next_greater_element_i;
 
-// #Easy #Array #Hash_Table #Stack #Monotonic_Stack #Programming_Skills_I_Day_5_Function
-// #2022_03_19_Time_3_ms_(84.97%)_Space_44.9_MB_(10.32%)
+// #Easy #Array #Hash_Table #Stack #Monotonic_Stack #Acceptance_70.1%
+// #Programming_Skills_I_Day_5_Function #2022_03_19_Time_3_ms_(84.97%)_Space_44.9_MB_(10.32%)
 
 import java.util.HashMap;
 import java.util.Map;

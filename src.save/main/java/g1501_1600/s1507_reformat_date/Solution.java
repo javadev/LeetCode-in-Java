@@ -1,6 +1,6 @@
 package g1501_1600.s1507_reformat_date;
 
-// #Easy #String #2022_04_08_Time_1_ms_(98.73%)_Space_42.5_MB_(46.87%)
+// #Easy #String #Acceptance_61.9% #2022_04_08_Time_1_ms_(98.73%)_Space_42.5_MB_(46.87%)
 
 import java.util.HashMap;
 import java.util.Map;

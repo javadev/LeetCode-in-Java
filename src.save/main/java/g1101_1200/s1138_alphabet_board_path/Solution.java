@@ -1,6 +1,7 @@
 package g1101_1200.s1138_alphabet_board_path;
 
-// #Medium #String #Hash_Table #2022_03_09_Time_1_ms_(76.10%)_Space_42.1_MB_(37.65%)
+// #Medium #String #Hash_Table #Acceptance_52.4%
+// #2022_03_09_Time_1_ms_(76.10%)_Space_42.1_MB_(37.65%)
 
 public class Solution {
     public String alphabetBoardPath(String target) {

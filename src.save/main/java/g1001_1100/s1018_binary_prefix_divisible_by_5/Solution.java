@@ -1,6 +1,6 @@
 package g1001_1100.s1018_binary_prefix_divisible_by_5;
 
-// #Easy #Array #2022_02_25_Time_3_ms_(84.58%)_Space_49.7_MB_(32.50%)
+// #Easy #Array #Acceptance_47.5% #2022_02_25_Time_3_ms_(84.58%)_Space_49.7_MB_(32.50%)
 
 import java.util.ArrayList;
 import java.util.List;

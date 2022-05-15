@@ -1,6 +1,6 @@
 package g1001_1100.s1032_stream_of_characters;
 
-// #Hard #Array #String #Design #Trie #Data_Stream
+// #Hard #Array #String #Design #Trie #Data_Stream #Acceptance_51.4%
 // #2022_02_27_Time_137_ms_(81.54%)_Space_148.2_MB_(53.37%)
 
 public class StreamChecker {

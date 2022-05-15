@@ -1,6 +1,6 @@
 package g1801_1900.s1872_stone_game_viii;
 
-// #Hard #Array #Dynamic_Programming #Math #Prefix_Sum #Game_Theory
+// #Hard #Array #Dynamic_Programming #Math #Prefix_Sum #Game_Theory #Acceptance_52.3%
 // #2022_05_11_Time_3_ms_(98.18%)_Space_50.9_MB_(98.18%)
 
 public class Solution {

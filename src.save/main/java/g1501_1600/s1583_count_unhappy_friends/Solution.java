@@ -1,6 +1,7 @@
 package g1501_1600.s1583_count_unhappy_friends;
 
-// #Medium #Array #Simulation #2022_04_11_Time_3_ms_(93.13%)_Space_63.8_MB_(64.81%)
+// #Medium #Array #Simulation #Acceptance_58.0%
+// #2022_04_11_Time_3_ms_(93.13%)_Space_63.8_MB_(64.81%)
 
 import java.util.HashMap;
 import java.util.Map;

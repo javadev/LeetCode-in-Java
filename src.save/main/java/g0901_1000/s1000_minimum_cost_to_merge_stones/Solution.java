@@ -1,6 +1,7 @@
 package g0901_1000.s1000_minimum_cost_to_merge_stones;
 
-// #Hard #Array #Dynamic_Programming #2022_04_20_Time_1_ms_(99.65%)_Space_41.5_MB_(82.62%)
+// #Hard #Array #Dynamic_Programming #Acceptance_42.0%
+// #2022_04_20_Time_1_ms_(99.65%)_Space_41.5_MB_(82.62%)
 
 import java.util.Arrays;
 

@@ -1,7 +1,7 @@
 package g0101_0200.s0116_populating_next_right_pointers_in_each_node;
 
 // #Medium #Top_Interview_Questions #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
-// #Linked_List #Algorithm_I_Day_8_Breadth_First_Search_Depth_First_Search
+// #Linked_List #Acceptance_57.3% #Algorithm_I_Day_8_Breadth_First_Search_Depth_First_Search
 // #2022_02_22_Time_0_ms_(100.00%)_Space_47.4_MB_(15.15%)
 
 import com_github_leetcode.left_right.Node;

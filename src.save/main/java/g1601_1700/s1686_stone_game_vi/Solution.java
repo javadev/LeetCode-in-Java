@@ -1,6 +1,6 @@
 package g1601_1700.s1686_stone_game_vi;
 
-// #Medium #Array #Math #Sorting #Greedy #Heap_Priority_Queue #Game_Theory
+// #Medium #Array #Math #Sorting #Greedy #Heap_Priority_Queue #Game_Theory #Acceptance_53.7%
 // #2022_04_18_Time_139_ms_(62.50%)_Space_60.1_MB_(73.53%)
 
 import java.util.PriorityQueue;

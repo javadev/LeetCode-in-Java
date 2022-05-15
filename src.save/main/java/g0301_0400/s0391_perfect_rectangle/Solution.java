@@ -1,6 +1,6 @@
 package g0301_0400.s0391_perfect_rectangle;
 
-// #Hard #Array #Line_Sweep #2022_03_16_Time_49_ms_(67.32%)_Space_64.9_MB_(22.57%)
+// #Hard #Array #Line_Sweep #Acceptance_32.1% #2022_03_16_Time_49_ms_(67.32%)_Space_64.9_MB_(22.57%)
 
 import java.util.HashSet;
 import java.util.Objects;

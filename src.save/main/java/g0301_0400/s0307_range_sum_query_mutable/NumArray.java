@@ -1,6 +1,6 @@
 package g0301_0400.s0307_range_sum_query_mutable;
 
-// #Medium #Array #Design #Segment_Tree #Binary_Indexed_Tree
+// #Medium #Array #Design #Segment_Tree #Binary_Indexed_Tree #Acceptance_38.7%
 // #2022_03_14_Time_61_ms_(98.40%)_Space_73.8_MB_(80.22%)
 
 public class NumArray {

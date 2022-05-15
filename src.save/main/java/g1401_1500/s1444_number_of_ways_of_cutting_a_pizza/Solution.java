@@ -1,6 +1,6 @@
 package g1401_1500.s1444_number_of_ways_of_cutting_a_pizza;
 
-// #Hard #Array #Dynamic_Programming #Matrix #Memoization
+// #Hard #Array #Dynamic_Programming #Matrix #Memoization #Acceptance_55.2%
 // #2022_03_28_Time_14_ms_(46.03%)_Space_41.8_MB_(65.08%)
 
 @SuppressWarnings("java:S2234")

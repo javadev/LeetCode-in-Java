@@ -1,6 +1,7 @@
 package g1801_1900.s1807_evaluate_the_bracket_pairs_of_a_string;
 
-// #Medium #Array #String #Hash_Table #2022_05_03_Time_40_ms_(80.47%)_Space_79.8_MB_(96.48%)
+// #Medium #Array #String #Hash_Table #Acceptance_66.7%
+// #2022_05_03_Time_40_ms_(80.47%)_Space_79.8_MB_(96.48%)
 
 import java.util.HashMap;
 import java.util.List;

@@ -1,6 +1,6 @@
 package g1401_1500.s1496_path_crossing;
 
-// #Easy #String #Hash_Table #2022_03_23_Time_1_ms_(97.41%)_Space_42.9_MB_(31.41%)
+// #Easy #String #Hash_Table #Acceptance_55.8% #2022_03_23_Time_1_ms_(97.41%)_Space_42.9_MB_(31.41%)
 
 import java.util.ArrayDeque;
 import java.util.Deque;

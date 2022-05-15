@@ -1,6 +1,6 @@
 package g1801_1900.s1866_number_of_ways_to_rearrange_sticks_with_k_sticks_visible;
 
-// #Hard #Dynamic_Programming #Math #Combinatorics
+// #Hard #Dynamic_Programming #Math #Combinatorics #Acceptance_55.4%
 // #2022_05_10_Time_67_ms_(96.33%)_Space_55.1_MB_(80.73%)
 
 import java.util.Arrays;

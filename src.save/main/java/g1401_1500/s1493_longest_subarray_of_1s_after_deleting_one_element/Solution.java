@@ -1,6 +1,6 @@
 package g1401_1500.s1493_longest_subarray_of_1s_after_deleting_one_element;
 
-// #Medium #Dynamic_Programming #Math #Sliding_Window
+// #Medium #Dynamic_Programming #Math #Sliding_Window #Acceptance_60.1%
 // #2022_03_23_Time_2_ms_(87.25%)_Space_58.4_MB_(29.26%)
 
 public class Solution {

@@ -1,7 +1,7 @@
 package g0401_0500.s0464_can_i_win;
 
 // #Medium #Dynamic_Programming #Math #Bit_Manipulation #Bitmask #Memoization #Game_Theory
-// #2022_03_18_Time_159_ms_(84.80%)_Space_76.6_MB_(80.60%)
+// #Acceptance_29.8% #2022_03_18_Time_159_ms_(84.80%)_Space_76.6_MB_(80.60%)
 
 public class Solution {
     public boolean canIWin(int maxChoosableInteger, int desiredTotal) {

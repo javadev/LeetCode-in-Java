@@ -1,6 +1,7 @@
 package g0601_0700.s0641_design_circular_deque;
 
-// #Medium #Array #Design #Linked_List #Queue #2022_03_21_Time_3_ms_(100.00%)_Space_42.9_MB_(84.01%)
+// #Medium #Array #Design #Linked_List #Queue #Acceptance_57.2%
+// #2022_03_21_Time_3_ms_(100.00%)_Space_42.9_MB_(84.01%)
 
 public class MyCircularDeque {
     private final int[] data;

@@ -1,6 +1,6 @@
 package g1901_2000.s1910_remove_all_occurrences_of_a_substring;
 
-// #Medium #String #2022_05_12_Time_11_ms_(39.18%)_Space_44.9_MB_(30.00%)
+// #Medium #String #Acceptance_72.1% #2022_05_12_Time_11_ms_(39.18%)_Space_44.9_MB_(30.00%)
 
 public class Solution {
     public String removeOccurrences(String s, String part) {

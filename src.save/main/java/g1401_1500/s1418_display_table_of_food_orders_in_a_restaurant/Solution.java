@@ -1,6 +1,6 @@
 package g1401_1500.s1418_display_table_of_food_orders_in_a_restaurant;
 
-// #Medium #Array #String #Hash_Table #Sorting #Ordered_Set
+// #Medium #Array #String #Hash_Table #Sorting #Ordered_Set #Acceptance_72.5%
 // #2022_03_26_Time_42_ms_(77.01%)_Space_126.7_MB_(59.77%)
 
 import java.util.ArrayList;

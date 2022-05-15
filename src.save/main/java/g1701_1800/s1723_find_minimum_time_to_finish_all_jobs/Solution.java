@@ -1,6 +1,6 @@
 package g1701_1800.s1723_find_minimum_time_to_finish_all_jobs;
 
-// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
+// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask #Acceptance_43.0%
 // #2022_04_25_Time_3_ms_(76.73%)_Space_41.4_MB_(72.04%)
 
 public class Solution {

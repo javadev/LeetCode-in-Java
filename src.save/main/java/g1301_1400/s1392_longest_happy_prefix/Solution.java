@@ -1,6 +1,6 @@
 package g1301_1400.s1392_longest_happy_prefix;
 
-// #Hard #String #Hash_Function #String_Matching #Rolling_Hash
+// #Hard #String #Hash_Function #String_Matching #Rolling_Hash #Acceptance_44.4%
 // #2022_03_17_Time_39_ms_(28.37%)_Space_42.6_MB_(94.23%)
 
 public class Solution {

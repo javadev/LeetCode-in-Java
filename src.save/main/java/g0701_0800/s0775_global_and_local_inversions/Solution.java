@@ -1,6 +1,6 @@
 package g0701_0800.s0775_global_and_local_inversions;
 
-// #Medium #Array #Math #2022_03_26_Time_1_ms_(99.74%)_Space_51.6_MB_(90.31%)
+// #Medium #Array #Math #Acceptance_45.1% #2022_03_26_Time_1_ms_(99.74%)_Space_51.6_MB_(90.31%)
 
 public class Solution {
     /*

@@ -1,6 +1,6 @@
 package g0801_0900.s0869_reordered_power_of_2;
 
-// #Medium #Math #Sorting #Counting #Enumeration
+// #Medium #Math #Sorting #Counting #Enumeration #Acceptance_61.3%
 // #2022_03_28_Time_9_ms_(25.97%)_Space_42.8_MB_(11.69%)
 
 import java.util.HashMap;

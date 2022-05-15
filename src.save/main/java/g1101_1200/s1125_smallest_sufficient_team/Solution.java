@@ -1,6 +1,6 @@
 package g1101_1200.s1125_smallest_sufficient_team;
 
-// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask
+// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask #Acceptance_47.7%
 // #2022_03_09_Time_3_ms_(98.82%)_Space_42.6_MB_(81.66%)
 
 import java.util.ArrayList;

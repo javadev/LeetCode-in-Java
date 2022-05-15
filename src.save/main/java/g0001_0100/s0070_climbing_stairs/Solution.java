@@ -1,7 +1,7 @@
 package g0001_0100.s0070_climbing_stairs;
 
 // #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Dynamic_Programming #Math #Memoization
-// #Algorithm_I_Day_12_Dynamic_Programming #Dynamic_Programming_I_Day_2
+// #Acceptance_51.1% #Algorithm_I_Day_12_Dynamic_Programming #Dynamic_Programming_I_Day_2
 // #2022_02_19_Time_0_ms_(100.00%)_Space_41.3_MB_(5.87%)
 
 public class Solution {

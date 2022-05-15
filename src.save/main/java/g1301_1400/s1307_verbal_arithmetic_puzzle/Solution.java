@@ -1,6 +1,7 @@
 package g1301_1400.s1307_verbal_arithmetic_puzzle;
 
-// #Hard #Array #String #Math #Backtracking #2022_03_15_Time_6_ms_(95.74%)_Space_41.5_MB_(46.81%)
+// #Hard #Array #String #Math #Backtracking #Acceptance_34.7%
+// #2022_03_15_Time_6_ms_(95.74%)_Space_41.5_MB_(46.81%)
 
 import java.util.Arrays;
 

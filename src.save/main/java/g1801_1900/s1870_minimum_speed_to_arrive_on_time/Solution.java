@@ -1,6 +1,6 @@
 package g1801_1900.s1870_minimum_speed_to_arrive_on_time;
 
-// #Medium #Array #Binary_Search #Binary_Search_II_Day_6
+// #Medium #Array #Binary_Search #Acceptance_36.3% #Binary_Search_II_Day_6
 // #2022_05_10_Time_86_ms_(88.58%)_Space_100.1_MB_(51.38%)
 
 @SuppressWarnings("java:S2184")

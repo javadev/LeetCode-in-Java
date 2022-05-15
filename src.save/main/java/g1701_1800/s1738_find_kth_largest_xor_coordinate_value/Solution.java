@@ -1,7 +1,7 @@
 package g1701_1800.s1738_find_kth_largest_xor_coordinate_value;
 
 // #Medium #Array #Matrix #Bit_Manipulation #Heap_Priority_Queue #Prefix_Sum #Divide_and_Conquer
-// #Quickselect #2022_04_29_Time_40_ms_(97.08%)_Space_208.6_MB_(58.39%)
+// #Quickselect #Acceptance_61.9% #2022_04_29_Time_40_ms_(97.08%)_Space_208.6_MB_(58.39%)
 
 public class Solution {
     public int kthLargestValue(int[][] matrix, int k) {

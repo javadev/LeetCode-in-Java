@@ -1,6 +1,6 @@
 package g1601_1700.s1617_count_subtrees_with_max_distance_between_cities;
 
-// #Hard #Dynamic_Programming #Tree #Bit_Manipulation #Bitmask #Enumeration
+// #Hard #Dynamic_Programming #Tree #Bit_Manipulation #Bitmask #Enumeration #Acceptance_65.5%
 // #2022_04_13_Time_52_ms_(78.95%)_Space_43.1_MB_(52.63%)
 
 import java.util.ArrayList;

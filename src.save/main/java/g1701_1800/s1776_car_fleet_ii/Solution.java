@@ -1,6 +1,6 @@
 package g1701_1800.s1776_car_fleet_ii;
 
-// #Hard #Array #Math #Stack #Heap_Priority_Queue #Monotonic_Stack
+// #Hard #Array #Math #Stack #Heap_Priority_Queue #Monotonic_Stack #Acceptance_52.7%
 // #2022_04_30_Time_19_ms_(93.81%)_Space_100.6_MB_(87.17%)
 
 import java.util.Deque;

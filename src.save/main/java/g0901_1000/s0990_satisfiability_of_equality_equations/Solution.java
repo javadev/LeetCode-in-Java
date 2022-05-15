@@ -1,6 +1,7 @@
 package g0901_1000.s0990_satisfiability_of_equality_equations;
 
-// #Medium #Array #String #Graph #Union_Find #2022_03_31_Time_5_ms_(24.79%)_Space_43.5_MB_(18.67%)
+// #Medium #Array #String #Graph #Union_Find #Acceptance_50.1%
+// #2022_03_31_Time_5_ms_(24.79%)_Space_43.5_MB_(18.67%)
 
 import java.util.HashMap;
 

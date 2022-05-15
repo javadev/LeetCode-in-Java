@@ -1,6 +1,7 @@
 package g0501_0600.s0539_minimum_time_difference;
 
-// #Medium #Array #String #Math #Sorting #2022_03_20_Time_3_ms_(93.52%)_Space_44.5_MB_(65.24%)
+// #Medium #Array #String #Math #Sorting #Acceptance_55.0%
+// #2022_03_20_Time_3_ms_(93.52%)_Space_44.5_MB_(65.24%)
 
 import java.util.Arrays;
 import java.util.List;

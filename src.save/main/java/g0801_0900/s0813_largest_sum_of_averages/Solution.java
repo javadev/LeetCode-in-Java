@@ -1,6 +1,7 @@
 package g0801_0900.s0813_largest_sum_of_averages;
 
-// #Medium #Array #Dynamic_Programming #2022_03_23_Time_4_ms_(97.01%)_Space_42.5_MB_(18.51%)
+// #Medium #Array #Dynamic_Programming #Acceptance_52.5%
+// #2022_03_23_Time_4_ms_(97.01%)_Space_42.5_MB_(18.51%)
 
 public class Solution {
     public double largestSumOfAverages(int[] nums, int k) {

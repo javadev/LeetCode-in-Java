@@ -1,6 +1,6 @@
 package g0801_0900.s0857_minimum_cost_to_hire_k_workers;
 
-// #Hard #Array #Sorting #Greedy #Heap_Priority_Queue
+// #Hard #Array #Sorting #Greedy #Heap_Priority_Queue #Acceptance_51.7%
 // #2022_03_27_Time_26_ms_(85.40%)_Space_42.6_MB_(95.75%)
 
 import java.util.Arrays;

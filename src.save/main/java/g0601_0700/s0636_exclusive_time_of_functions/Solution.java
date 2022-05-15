@@ -1,6 +1,6 @@
 package g0601_0700.s0636_exclusive_time_of_functions;
 
-// #Medium #Array #Stack #2022_03_21_Time_17_ms_(76.73%)_Space_52.4_MB_(28.28%)
+// #Medium #Array #Stack #Acceptance_60.4% #2022_03_21_Time_17_ms_(76.73%)_Space_52.4_MB_(28.28%)
 
 import java.util.ArrayDeque;
 import java.util.Deque;

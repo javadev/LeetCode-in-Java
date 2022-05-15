@@ -1,6 +1,6 @@
 package g0401_0500.s0474_ones_and_zeroes;
 
-// #Medium #Array #String #Dynamic_Programming
+// #Medium #Array #String #Dynamic_Programming #Acceptance_44.6%
 // #2022_03_18_Time_41_ms_(68.79%)_Space_42.7_MB_(67.67%)
 
 public class Solution {

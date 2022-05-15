@@ -1,6 +1,6 @@
 package g0301_0400.s0332_reconstruct_itinerary;
 
-// #Hard #Depth_First_Search #Graph #Eulerian_Circuit
+// #Hard #Depth_First_Search #Graph #Eulerian_Circuit #Acceptance_40.2%
 // #2022_03_15_Time_11_ms_(47.68%)_Space_50.5_MB_(23.60%)
 
 import java.util.HashMap;

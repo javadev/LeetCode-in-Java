@@ -1,6 +1,7 @@
 package g0401_0500.s0481_magical_string;
 
-// #Medium #String #Two_Pointers #2022_03_18_Time_5_ms_(88.46%)_Space_43.2_MB_(34.62%)
+// #Medium #String #Two_Pointers #Acceptance_49.8%
+// #2022_03_18_Time_5_ms_(88.46%)_Space_43.2_MB_(34.62%)
 
 public class Solution {
     public int magicalString(int n) {

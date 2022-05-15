@@ -1,6 +1,6 @@
 package g1301_1400.s1309_decrypt_string_from_alphabet_to_integer_mapping;
 
-// #Easy #String #Programming_Skills_I_Day_9_String
+// #Easy #String #Acceptance_78.8% #Programming_Skills_I_Day_9_String
 // #2022_03_15_Time_6_ms_(28.25%)_Space_42.6_MB_(29.40%)
 
 import java.util.HashMap;

@@ -1,6 +1,6 @@
 package g0601_0700.s0622_design_circular_queue;
 
-// #Medium #Array #Design #Linked_List #Queue #Programming_Skills_II_Day_20
+// #Medium #Array #Design #Linked_List #Queue #Acceptance_48.7% #Programming_Skills_II_Day_20
 // #2022_03_21_Time_3_ms_(100.00%)_Space_42.8_MB_(83.38%)
 
 public class MyCircularQueue {

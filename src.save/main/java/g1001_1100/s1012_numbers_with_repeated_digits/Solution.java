@@ -1,6 +1,7 @@
 package g1001_1100.s1012_numbers_with_repeated_digits;
 
-// #Hard #Dynamic_Programming #Math #2022_02_25_Time_3_ms_(28.17%)_Space_41.8_MB_(7.04%)
+// #Hard #Dynamic_Programming #Math #Acceptance_38.4%
+// #2022_02_25_Time_3_ms_(28.17%)_Space_41.8_MB_(7.04%)
 
 import java.util.HashSet;
 

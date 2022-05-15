@@ -1,6 +1,6 @@
 package g1101_1200.s1143_longest_common_subsequence;
 
-// #Medium #String #Dynamic_Programming #Algorithm_II_Day_17_Dynamic_Programming
+// #Medium #String #Dynamic_Programming #Acceptance_58.9% #Algorithm_II_Day_17_Dynamic_Programming
 // #Dynamic_Programming_I_Day_19 #2022_03_05_Time_9_ms_(93.92%)_Space_45.8_MB_(56.55%)
 
 public class Solution {

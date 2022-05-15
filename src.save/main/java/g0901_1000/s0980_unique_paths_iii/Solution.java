@@ -1,6 +1,6 @@
 package g0901_1000.s0980_unique_paths_iii;
 
-// #Hard #Array #Matrix #Bit_Manipulation #Backtracking
+// #Hard #Array #Matrix #Bit_Manipulation #Backtracking #Acceptance_79.4%
 // #2022_03_31_Time_0_ms_(100.00%)_Space_39.3_MB_(98.32%)
 
 public class Solution {

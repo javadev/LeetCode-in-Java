@@ -1,6 +1,6 @@
 package g1301_1400.s1352_product_of_the_last_k_numbers;
 
-// #Medium #Array #Math #Design #Queue #Data_Stream
+// #Medium #Array #Math #Design #Queue #Data_Stream #Acceptance_48.0%
 // #2022_03_21_Time_24_ms_(60.43%)_Space_75.7_MB_(61.31%)
 
 import java.util.ArrayList;

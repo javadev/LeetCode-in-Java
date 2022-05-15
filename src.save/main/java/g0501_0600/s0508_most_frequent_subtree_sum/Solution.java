@@ -1,6 +1,6 @@
 package g0501_0600.s0508_most_frequent_subtree_sum;
 
-// #Medium #Hash_Table #Depth_First_Search #Tree #Binary_Tree
+// #Medium #Hash_Table #Depth_First_Search #Tree #Binary_Tree #Acceptance_62.9%
 // #2022_03_19_Time_6_ms_(77.55%)_Space_45.9_MB_(51.67%)
 
 import com_github_leetcode.TreeNode;

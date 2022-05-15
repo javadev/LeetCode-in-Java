@@ -1,6 +1,6 @@
 package g0201_0300.s0238_product_of_array_except_self;
 
-// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Prefix_Sum
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Prefix_Sum #Acceptance_64.0%
 // #Data_Structure_II_Day_5_Array #2022_03_14_Time_1_ms_(100.00%)_Space_50_MB_(94.82%)
 
 public class Solution {

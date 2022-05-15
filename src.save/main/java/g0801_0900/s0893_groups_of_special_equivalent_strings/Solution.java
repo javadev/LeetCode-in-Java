@@ -1,6 +1,7 @@
 package g0801_0900.s0893_groups_of_special_equivalent_strings;
 
-// #Medium #Array #String #Hash_Table #2022_03_28_Time_3_ms_(99.09%)_Space_43.3_MB_(79.09%)
+// #Medium #Array #String #Hash_Table #Acceptance_70.6%
+// #2022_03_28_Time_3_ms_(99.09%)_Space_43.3_MB_(79.09%)
 
 import java.util.HashSet;
 

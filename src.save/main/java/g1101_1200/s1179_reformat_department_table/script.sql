@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# #Easy #Database #2022_03_09_Time_493_ms_(64.80%)_Space_0B_(100.00%)
+# #Easy #Database #Acceptance_82.4% #2022_03_09_Time_493_ms_(64.80%)_Space_0B_(100.00%)
 SELECT
 id,
 SUM(CASE WHEN month = 'Jan' THEN revenue ELSE NULL END) AS Jan_Revenue,

@@ -1,6 +1,7 @@
 package g1301_1400.s1301_number_of_paths_with_max_score;
 
-// #Hard #Array #Dynamic_Programming #Matrix #2022_03_14_Time_14_ms_(72.31%)_Space_46.1_MB_(23.08%)
+// #Hard #Array #Dynamic_Programming #Matrix #Acceptance_38.8%
+// #2022_03_14_Time_14_ms_(72.31%)_Space_46.1_MB_(23.08%)
 
 import java.util.List;
 

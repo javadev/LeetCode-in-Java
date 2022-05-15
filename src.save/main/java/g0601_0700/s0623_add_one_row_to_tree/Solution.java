@@ -1,6 +1,6 @@
 package g0601_0700.s0623_add_one_row_to_tree;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Acceptance_54.0%
 // #2022_03_21_Time_0_ms_(100.00%)_Space_45.6_MB_(29.97%)
 
 import com_github_leetcode.TreeNode;

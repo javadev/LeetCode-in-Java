@@ -1,6 +1,6 @@
 package g0801_0900.s0850_rectangle_area_ii;
 
-// #Hard #Array #Ordered_Set #Segment_Tree #Line_Sweep
+// #Hard #Array #Ordered_Set #Segment_Tree #Line_Sweep #Acceptance_53.3%
 // #2022_03_24_Time_4_ms_(97.00%)_Space_43.2_MB_(41.20%)
 
 import java.util.ArrayList;

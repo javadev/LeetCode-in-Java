@@ -1,6 +1,7 @@
 package g0901_1000.s0964_least_operators_to_express_number;
 
-// #Hard #Dynamic_Programming #Math #2022_03_31_Time_16_ms_(37.78%)_Space_43.4_MB_(11.11%)
+// #Hard #Dynamic_Programming #Math #Acceptance_47.5%
+// #2022_03_31_Time_16_ms_(37.78%)_Space_43.4_MB_(11.11%)
 
 import java.util.HashMap;
 import java.util.Map;

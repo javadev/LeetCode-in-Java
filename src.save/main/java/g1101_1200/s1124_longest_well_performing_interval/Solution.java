@@ -1,6 +1,6 @@
 package g1101_1200.s1124_longest_well_performing_interval;
 
-// #Medium #Array #Hash_Table #Stack #Prefix_Sum #Monotonic_Stack
+// #Medium #Array #Hash_Table #Stack #Prefix_Sum #Monotonic_Stack #Acceptance_34.3%
 // #2022_03_09_Time_13_ms_(71.38%)_Space_54_MB_(37.10%)
 
 import java.util.HashMap;

@@ -1,7 +1,7 @@
 package g1801_1900.s1857_largest_color_value_in_a_directed_graph;
 
 // #Hard #Hash_Table #Dynamic_Programming #Graph #Counting #Memoization #Topological_Sort
-// #2022_05_08_Time_110_ms_(73.53%)_Space_108.2_MB_(86.97%)
+// #Acceptance_39.8% #2022_05_08_Time_110_ms_(73.53%)_Space_108.2_MB_(86.97%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

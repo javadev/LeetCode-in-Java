@@ -1,6 +1,6 @@
 package g0201_0300.s0233_number_of_digit_one;
 
-// #Hard #Dynamic_Programming #Math #Recursion
+// #Hard #Dynamic_Programming #Math #Recursion #Acceptance_33.6%
 // #2022_03_14_Time_0_ms_(100.00%)_Space_40.4_MB_(61.06%)
 
 @SuppressWarnings("java:S127")

@@ -1,6 +1,7 @@
 package g0801_0900.s0820_short_encoding_of_words;
 
-// #Medium #Array #String #Hash_Table #Trie #2022_03_23_Time_35_ms_(49.44%)_Space_57.5_MB_(50.55%)
+// #Medium #Array #String #Hash_Table #Trie #Acceptance_55.3%
+// #2022_03_23_Time_35_ms_(49.44%)_Space_57.5_MB_(50.55%)
 
 import java.util.Arrays;
 

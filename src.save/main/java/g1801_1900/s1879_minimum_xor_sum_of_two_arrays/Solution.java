@@ -1,6 +1,6 @@
 package g1801_1900.s1879_minimum_xor_sum_of_two_arrays;
 
-// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask
+// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask #Acceptance_42.5%
 // #2022_05_11_Time_15_ms_(63.49%)_Space_42.6_MB_(53.97%)
 
 import java.util.Arrays;

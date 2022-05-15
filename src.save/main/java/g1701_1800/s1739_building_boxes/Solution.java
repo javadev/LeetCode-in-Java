@@ -1,6 +1,7 @@
 package g1701_1800.s1739_building_boxes;
 
-// #Hard #Math #Greedy #Binary_Search #2022_04_29_Time_1_ms_(84.38%)_Space_39.2_MB_(84.38%)
+// #Hard #Math #Greedy #Binary_Search #Acceptance_51.0%
+// #2022_04_29_Time_1_ms_(84.38%)_Space_39.2_MB_(84.38%)
 
 public class Solution {
     static final double ONE_THIRD = 1.0d / 3.0d;

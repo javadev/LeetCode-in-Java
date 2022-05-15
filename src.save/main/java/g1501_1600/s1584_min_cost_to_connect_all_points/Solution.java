@@ -1,6 +1,6 @@
 package g1501_1600.s1584_min_cost_to_connect_all_points;
 
-// #Medium #Array #Union_Find #Minimum_Spanning_Tree
+// #Medium #Array #Union_Find #Minimum_Spanning_Tree #Acceptance_64.3%
 // #2022_04_11_Time_134_ms_(87.37%)_Space_50.1_MB_(95.72%)
 
 import java.util.Arrays;

@@ -1,6 +1,6 @@
 package g0501_0600.s0523_continuous_subarray_sum;
 
-// #Medium #Array #Hash_Table #Math #Prefix_Sum
+// #Medium #Array #Hash_Table #Math #Prefix_Sum #Acceptance_27.3%
 // #2022_03_20_Time_25_ms_(78.40%)_Space_90.4_MB_(67.54%)
 
 import java.util.HashMap;

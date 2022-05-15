@@ -1,7 +1,7 @@
 package g1701_1800.s1728_cat_and_mouse_ii;
 
 // #Hard #Dynamic_Programming #Math #Breadth_First_Search #Graph #Memoization #Game_Theory
-// #2022_04_28_Time_12_ms_(99.12%)_Space_42.7_MB_(96.49%)
+// #Acceptance_41.3% #2022_04_28_Time_12_ms_(99.12%)_Space_42.7_MB_(96.49%)
 
 import java.util.ArrayList;
 import java.util.List;

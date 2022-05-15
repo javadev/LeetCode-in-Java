@@ -1,6 +1,6 @@
 package g0901_1000.s0914_x_of_a_kind_in_a_deck_of_cards;
 
-// #Easy #Array #Hash_Table #Math #Counting #Number_Theory
+// #Easy #Array #Hash_Table #Math #Counting #Number_Theory #Acceptance_32.9%
 // #2022_03_29_Time_16_ms_(19.29%)_Space_52.2_MB_(35.81%)
 
 import java.util.HashMap;

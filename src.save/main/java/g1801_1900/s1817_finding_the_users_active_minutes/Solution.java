@@ -1,6 +1,7 @@
 package g1801_1900.s1817_finding_the_users_active_minutes;
 
-// #Medium #Array #Hash_Table #2022_05_03_Time_16_ms_(91.64%)_Space_121.1_MB_(48.79%)
+// #Medium #Array #Hash_Table #Acceptance_80.8%
+// #2022_05_03_Time_16_ms_(91.64%)_Space_121.1_MB_(48.79%)
 
 import java.util.Arrays;
 import java.util.Comparator;

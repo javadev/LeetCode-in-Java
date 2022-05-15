@@ -1,6 +1,6 @@
 package g1601_1700.s1648_sell_diminishing_valued_colored_balls;
 
-// #Medium #Array #Math #Sorting #Greedy #Binary_Search #Heap_Priority_Queue
+// #Medium #Array #Math #Sorting #Greedy #Binary_Search #Heap_Priority_Queue #Acceptance_30.9%
 // #Binary_Search_II_Day_19 #2022_04_22_Time_27_ms_(80.64%)_Space_56.4_MB_(80.28%)
 
 import java.util.Arrays;

@@ -1,6 +1,7 @@
 package g1601_1700.s1625_lexicographically_smallest_string_after_applying_operations;
 
-// #Medium #String #Breadth_First_Search #2022_04_18_Time_91_ms_(91.80%)_Space_51.6_MB_(72.13%)
+// #Medium #String #Breadth_First_Search #Acceptance_66.0%
+// #2022_04_18_Time_91_ms_(91.80%)_Space_51.6_MB_(72.13%)
 
 import java.util.HashSet;
 

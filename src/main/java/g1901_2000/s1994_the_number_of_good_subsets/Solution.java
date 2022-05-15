@@ -1,6 +1,6 @@
 package g1901_2000.s1994_the_number_of_good_subsets;
 
-// #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Bitmask
+// #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Bitmask #Acceptance_34.1%
 // #2022_05_12_Time_15_ms_(94.29%)_Space_125_MB_(11.43%)
 
 public class Solution {

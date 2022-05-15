@@ -1,6 +1,7 @@
 package g1301_1400.s1396_design_underground_system;
 
-// #Medium #String #Hash_Table #Design #2022_03_17_Time_89_ms_(89.64%)_Space_55.2_MB_(88.83%)
+// #Medium #String #Hash_Table #Design #Acceptance_73.5%
+// #2022_03_17_Time_89_ms_(89.64%)_Space_55.2_MB_(88.83%)
 
 import java.util.HashMap;
 import java.util.LinkedList;

@@ -1,6 +1,7 @@
 package g1601_1700.s1674_minimum_moves_to_make_array_complementary;
 
-// #Medium #Array #Hash_Table #Prefix_Sum #2022_04_19_Time_29_ms_(22.22%)_Space_96.3_MB_(14.29%)
+// #Medium #Array #Hash_Table #Prefix_Sum #Acceptance_37.4%
+// #2022_04_19_Time_29_ms_(22.22%)_Space_96.3_MB_(14.29%)
 
 public class Solution {
     public int minMoves(int[] nums, int limit) {

@@ -1,6 +1,6 @@
 package g1801_1900.s1889_minimum_space_wasted_from_packaging;
 
-// #Hard #Array #Sorting #Binary_Search #Prefix_Sum
+// #Hard #Array #Sorting #Binary_Search #Prefix_Sum #Acceptance_30.1%
 // #2022_05_09_Time_98_ms_(45.92%)_Space_128.3_MB_(32.65%)
 
 import java.util.Arrays;

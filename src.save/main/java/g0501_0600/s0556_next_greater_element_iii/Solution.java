@@ -1,6 +1,6 @@
 package g0501_0600.s0556_next_greater_element_iii;
 
-// #Medium #String #Math #Two_Pointers #Programming_Skills_II_Day_10
+// #Medium #String #Math #Two_Pointers #Acceptance_33.9% #Programming_Skills_II_Day_10
 // #2022_03_20_Time_0_ms_(100.00%)_Space_39.2_MB_(70.26%)
 
 public class Solution {

@@ -1,6 +1,6 @@
 package g1801_1900.s1845_seat_reservation_manager;
 
-// #Medium #Design #Heap_Priority_Queue #Programming_Skills_II_Day_17
+// #Medium #Design #Heap_Priority_Queue #Acceptance_61.7% #Programming_Skills_II_Day_17
 // #2022_05_07_Time_47_ms_(87.63%)_Space_107.1_MB_(45.03%)
 
 import java.util.PriorityQueue;

@@ -1,6 +1,6 @@
 package g0301_0400.s0375_guess_number_higher_or_lower_ii;
 
-// #Medium #Dynamic_Programming #Math #Game_Theory
+// #Medium #Dynamic_Programming #Math #Game_Theory #Acceptance_45.5%
 // #2022_03_16_Time_1_ms_(100.00%)_Space_41_MB_(78.48%)
 
 @SuppressWarnings("java:S135")

@@ -1,6 +1,6 @@
 package g0701_0800.s0746_min_cost_climbing_stairs;
 
-// #Easy #Array #Dynamic_Programming #Dynamic_Programming_I_Day_2
+// #Easy #Array #Dynamic_Programming #Acceptance_58.9% #Dynamic_Programming_I_Day_2
 // #2022_03_25_Time_1_ms_(86.38%)_Space_43.6_MB_(54.14%)
 
 public class Solution {

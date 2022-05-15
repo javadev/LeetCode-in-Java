@@ -1,6 +1,6 @@
 package g0201_0300.s0214_shortest_palindrome;
 
-// #Hard #String #Hash_Function #String_Matching #Rolling_Hash
+// #Hard #String #Hash_Function #String_Matching #Rolling_Hash #Acceptance_31.8%
 // #2022_03_05_Time_3_ms_(94.71%)_Space_43.6_MB_(23.95%)
 
 public class Solution {

@@ -1,6 +1,7 @@
 package g0801_0900.s0842_split_array_into_fibonacci_sequence;
 
-// #Medium #String #Backtracking #2022_03_24_Time_4_ms_(62.81%)_Space_43.6_MB_(32.65%)
+// #Medium #String #Backtracking #Acceptance_37.8%
+// #2022_03_24_Time_4_ms_(62.81%)_Space_43.6_MB_(32.65%)
 
 import java.util.ArrayList;
 import java.util.List;

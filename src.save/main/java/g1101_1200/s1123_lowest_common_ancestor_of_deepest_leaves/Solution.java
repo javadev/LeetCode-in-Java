@@ -1,7 +1,7 @@
 package g1101_1200.s1123_lowest_common_ancestor_of_deepest_leaves;
 
 // #Medium #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
-// #2022_03_09_Time_1_ms_(76.02%)_Space_44.2_MB_(44.41%)
+// #Acceptance_70.2% #2022_03_09_Time_1_ms_(76.02%)_Space_44.2_MB_(44.41%)
 
 import com_github_leetcode.TreeNode;
 

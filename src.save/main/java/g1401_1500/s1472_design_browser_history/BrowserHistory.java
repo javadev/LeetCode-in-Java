@@ -1,6 +1,6 @@
 package g1401_1500.s1472_design_browser_history;
 
-// #Medium #Array #Stack #Design #Linked_List #Data_Stream #Doubly_Linked_List
+// #Medium #Array #Stack #Design #Linked_List #Data_Stream #Doubly_Linked_List #Acceptance_75.0%
 // #2022_03_29_Time_76_ms_(82.33%)_Space_86.4_MB_(14.42%)
 
 public class BrowserHistory {

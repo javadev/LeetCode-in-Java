@@ -1,6 +1,6 @@
 package g0501_0600.s0513_find_bottom_left_tree_value;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Acceptance_65.3%
 // #2022_03_23_Time_1_ms_(80.06%)_Space_43.9_MB_(46.80%)
 
 import com_github_leetcode.TreeNode;

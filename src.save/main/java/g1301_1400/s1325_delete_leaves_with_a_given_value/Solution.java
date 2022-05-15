@@ -1,6 +1,6 @@
 package g1301_1400.s1325_delete_leaves_with_a_given_value;
 
-// #Medium #Depth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Tree #Binary_Tree #Acceptance_74.8%
 // #2022_03_19_Time_2_ms_(33.61%)_Space_45_MB_(25.67%)
 
 import com_github_leetcode.TreeNode;

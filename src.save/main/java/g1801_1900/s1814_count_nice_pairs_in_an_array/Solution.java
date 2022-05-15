@@ -1,6 +1,7 @@
 package g1801_1900.s1814_count_nice_pairs_in_an_array;
 
-// #Medium #Array #Hash_Table #Math #Counting #2022_05_03_Time_47_ms_(83.12%)_Space_77.6_MB_(28.57%)
+// #Medium #Array #Hash_Table #Math #Counting #Acceptance_40.5%
+// #2022_05_03_Time_47_ms_(83.12%)_Space_77.6_MB_(28.57%)
 
 import java.util.HashMap;
 

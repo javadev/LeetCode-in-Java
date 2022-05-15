@@ -1,6 +1,7 @@
 package g0001_0100.s0058_length_of_last_word;
 
-// #Easy #String #Programming_Skills_II_Day_6 #2022_02_19_Time_0_ms_(100.00%)_Space_40.4_MB_(32.82%)
+// #Easy #String #Acceptance_37.8% #Programming_Skills_II_Day_6
+// #2022_02_19_Time_0_ms_(100.00%)_Space_40.4_MB_(32.82%)
 
 public class Solution {
     public int lengthOfLastWord(String str) {

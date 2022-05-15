@@ -1,6 +1,6 @@
 package g1901_2000.s1913_maximum_product_difference_between_two_pairs;
 
-// #Easy #Array #Sorting #2022_05_14_Time_8_ms_(57.76%)_Space_54.8_MB_(5.81%)
+// #Easy #Array #Sorting #Acceptance_81.3% #2022_05_14_Time_8_ms_(57.76%)_Space_54.8_MB_(5.81%)
 
 import java.util.Arrays;
 

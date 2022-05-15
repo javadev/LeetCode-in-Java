@@ -1,6 +1,6 @@
 package g0301_0400.s0381_insert_delete_getrandom_o1_duplicates_allowed;
 
-// #Hard #Array #Hash_Table #Math #Design #Randomized
+// #Hard #Array #Hash_Table #Math #Design #Randomized #Acceptance_35.5%
 // #2022_03_18_Time_26_ms_(100.00%)_Space_92.4_MB_(81.64%)
 
 import java.util.HashMap;

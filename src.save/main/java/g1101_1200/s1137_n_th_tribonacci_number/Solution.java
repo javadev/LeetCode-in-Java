@@ -1,6 +1,6 @@
 package g1101_1200.s1137_n_th_tribonacci_number;
 
-// #Easy #Dynamic_Programming #Math #Memoization #Dynamic_Programming_I_Day_1
+// #Easy #Dynamic_Programming #Math #Memoization #Acceptance_62.9% #Dynamic_Programming_I_Day_1
 // #2022_03_09_Time_0_ms_(100.00%)_Space_41.3_MB_(10.42%)
 
 public class Solution {

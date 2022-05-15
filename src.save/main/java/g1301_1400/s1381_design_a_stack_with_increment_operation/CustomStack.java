@@ -1,6 +1,7 @@
 package g1301_1400.s1381_design_a_stack_with_increment_operation;
 
-// #Medium #Array #Stack #Design #2022_03_22_Time_8_ms_(62.23%)_Space_50.1_MB_(60.11%)
+// #Medium #Array #Stack #Design #Acceptance_77.1%
+// #2022_03_22_Time_8_ms_(62.23%)_Space_50.1_MB_(60.11%)
 
 public class CustomStack {
     private int top;

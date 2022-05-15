@@ -1,6 +1,6 @@
 package g1301_1400.s1338_reduce_array_size_to_the_half;
 
-// #Medium #Array #Hash_Table #Sorting #Greedy #Heap_Priority_Queue
+// #Medium #Array #Hash_Table #Sorting #Greedy #Heap_Priority_Queue #Acceptance_68.4%
 // #2022_03_19_Time_61_ms_(73.82%)_Space_83.5_MB_(71.31%)
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package g1301_1400.s1366_rank_teams_by_votes;
 
-// #Medium #Array #String #Hash_Table #Sorting #Counting
+// #Medium #Array #String #Hash_Table #Sorting #Counting #Acceptance_58.5%
 // #2022_03_21_Time_5_ms_(95.68%)_Space_44.1_MB_(64.58%)
 
 import java.util.Arrays;

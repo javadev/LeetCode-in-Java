@@ -1,6 +1,7 @@
 package g0401_0500.s0403_frog_jump;
 
-// #Hard #Array #Dynamic_Programming #2022_03_16_Time_18_ms_(97.19%)_Space_54.4_MB_(72.95%)
+// #Hard #Array #Dynamic_Programming #Acceptance_43.0%
+// #2022_03_16_Time_18_ms_(97.19%)_Space_54.4_MB_(72.95%)
 
 import java.util.HashMap;
 import java.util.HashSet;

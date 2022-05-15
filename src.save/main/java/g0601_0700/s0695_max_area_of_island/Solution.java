@@ -1,6 +1,6 @@
 package g0601_0700.s0695_max_area_of_island;
 
-// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Union_Find
+// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Union_Find #Acceptance_69.8%
 // #Algorithm_I_Day_7_Breadth_First_Search_Depth_First_Search
 // #Graph_Theory_I_Day_2_Matrix_Related_Problems
 // #2022_03_22_Time_3_ms_(76.79%)_Space_47.1_MB_(55.25%)

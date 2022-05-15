@@ -1,6 +1,6 @@
 package g1601_1700.s1672_richest_customer_wealth;
 
-// #Easy #Array #Matrix #Programming_Skills_I_Day_6_Array
+// #Easy #Array #Matrix #Acceptance_89.2% #Programming_Skills_I_Day_6_Array
 // #2022_04_23_Time_0_ms_(100.00%)_Space_44.1_MB_(7.31%)
 
 public class Solution {

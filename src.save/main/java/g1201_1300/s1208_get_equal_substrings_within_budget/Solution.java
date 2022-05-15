@@ -1,6 +1,6 @@
 package g1201_1300.s1208_get_equal_substrings_within_budget;
 
-// #Medium #String #Binary_Search #Prefix_Sum #Sliding_Window
+// #Medium #String #Binary_Search #Prefix_Sum #Sliding_Window #Acceptance_46.6%
 // #2022_03_09_Time_7_ms_(73.41%)_Space_43.3_MB_(45.62%)
 
 public class Solution {

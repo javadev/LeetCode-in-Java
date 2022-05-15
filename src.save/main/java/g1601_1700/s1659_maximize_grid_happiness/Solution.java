@@ -1,6 +1,6 @@
 package g1601_1700.s1659_maximize_grid_happiness;
 
-// #Hard #Dynamic_Programming #Bit_Manipulation #Bitmask #Memoization
+// #Hard #Dynamic_Programming #Bit_Manipulation #Bitmask #Memoization #Acceptance_37.7%
 // #2022_04_23_Time_95_ms_(75.00%)_Space_53.1_MB_(58.33%)
 
 public class Solution {

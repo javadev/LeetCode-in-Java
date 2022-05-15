@@ -1,6 +1,6 @@
 package g1201_1300.s1237_find_positive_integer_solution_for_a_given_equation;
 
-// #Medium #Math #Binary_Search #Two_Pointers #Interactive
+// #Medium #Math #Binary_Search #Two_Pointers #Interactive #Acceptance_69.3%
 // #2022_03_12_Time_2_ms_(79.60%)_Space_41.7_MB_(45.96%)
 
 import java.util.ArrayList;

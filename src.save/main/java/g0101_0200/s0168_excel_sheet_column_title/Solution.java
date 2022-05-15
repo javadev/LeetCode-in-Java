@@ -1,6 +1,6 @@
 package g0101_0200.s0168_excel_sheet_column_title;
 
-// #Easy #String #Math #2022_03_04_Time_0_ms_(100.00%)_Space_40.7_MB_(51.16%)
+// #Easy #String #Math #Acceptance_34.0% #2022_03_04_Time_0_ms_(100.00%)_Space_40.7_MB_(51.16%)
 
 public class Solution {
     public String convertToTitle(int n) {

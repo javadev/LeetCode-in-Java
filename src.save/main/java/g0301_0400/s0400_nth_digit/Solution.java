@@ -1,6 +1,7 @@
 package g0301_0400.s0400_nth_digit;
 
-// #Medium #Math #Binary_Search #2022_03_16_Time_0_ms_(100.00%)_Space_39_MB_(64.52%)
+// #Medium #Math #Binary_Search #Acceptance_33.5%
+// #2022_03_16_Time_0_ms_(100.00%)_Space_39_MB_(64.52%)
 
 public class Solution {
     /*

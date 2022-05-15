@@ -1,6 +1,6 @@
 package g0901_1000.s0954_array_of_doubled_pairs;
 
-// #Medium #Array #Hash_Table #Sorting #Greedy
+// #Medium #Array #Hash_Table #Sorting #Greedy #Acceptance_38.7%
 // #2022_02_18_Time_18_ms_(97.19%)_Space_72.1_MB_(48.50%)
 
 import java.util.Arrays;

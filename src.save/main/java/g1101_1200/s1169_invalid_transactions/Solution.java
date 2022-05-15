@@ -1,6 +1,6 @@
 package g1101_1200.s1169_invalid_transactions;
 
-// #Medium #Array #String #Hash_Table #Sorting
+// #Medium #Array #String #Hash_Table #Sorting #Acceptance_30.1%
 // #2022_03_05_Time_11_ms_(89.89%)_Space_43.2_MB_(79.45%)
 
 import java.util.ArrayList;

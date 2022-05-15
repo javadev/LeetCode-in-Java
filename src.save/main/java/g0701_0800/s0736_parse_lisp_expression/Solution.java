@@ -1,6 +1,7 @@
 package g0701_0800.s0736_parse_lisp_expression;
 
-// #Hard #String #Hash_Table #Stack #Recursion #2022_03_25_Time_4_ms_(95.58%)_Space_42_MB_(93.81%)
+// #Hard #String #Hash_Table #Stack #Recursion #Acceptance_51.2%
+// #2022_03_25_Time_4_ms_(95.58%)_Space_42_MB_(93.81%)
 
 import java.util.Deque;
 import java.util.HashMap;

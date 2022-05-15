@@ -1,6 +1,7 @@
 package g1901_2000.s1903_largest_odd_number_in_string;
 
-// #Easy #String #Math #Greedy #2022_05_11_Time_6_ms_(23.18%)_Space_43.2_MB_(81.76%)
+// #Easy #String #Math #Greedy #Acceptance_56.6%
+// #2022_05_11_Time_6_ms_(23.18%)_Space_43.2_MB_(81.76%)
 
 public class Solution {
     public String largestOddNumber(String num) {

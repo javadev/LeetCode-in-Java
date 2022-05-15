@@ -1,6 +1,6 @@
 package g1101_1200.s1162_as_far_from_land_as_possible;
 
-// #Medium #Array #Dynamic_Programming #Breadth_First_Search #Matrix
+// #Medium #Array #Dynamic_Programming #Breadth_First_Search #Matrix #Acceptance_48.0%
 // #Graph_Theory_I_Day_4_Matrix_Related_Problems
 // #2022_03_05_Time_12_ms_(89.17%)_Space_42.6_MB_(90.73%)
 

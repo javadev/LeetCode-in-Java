@@ -1,6 +1,6 @@
 package g1001_1100.s1027_longest_arithmetic_subsequence;
 
-// #Medium #Array #Hash_Table #Dynamic_Programming #Binary_Search
+// #Medium #Array #Hash_Table #Dynamic_Programming #Binary_Search #Acceptance_48.1%
 // #2022_02_26_Time_47_ms_(98.28%)_Space_50.8_MB_(93.45%)
 
 import java.util.Arrays;

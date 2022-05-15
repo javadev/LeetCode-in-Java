@@ -1,6 +1,6 @@
 package g0101_0200.s0142_linked_list_cycle_ii;
 
-// #Medium #Top_100_Liked_Questions #Hash_Table #Two_Pointers #Linked_List
+// #Medium #Top_100_Liked_Questions #Hash_Table #Two_Pointers #Linked_List #Acceptance_44.3%
 // #Data_Structure_II_Day_10_Linked_List #2022_02_23_Time_0_ms_(100.00%)_Space_45_MB_(12.41%)
 
 import com_github_leetcode.ListNode;

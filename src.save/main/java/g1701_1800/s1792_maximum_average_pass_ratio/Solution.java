@@ -1,6 +1,6 @@
 package g1701_1800.s1792_maximum_average_pass_ratio;
 
-// #Medium #Array #Greedy #Heap_Priority_Queue
+// #Medium #Array #Greedy #Heap_Priority_Queue #Acceptance_50.9%
 // #2022_05_03_Time_456_ms_(89.78%)_Space_83.8_MB_(96.44%)
 
 import java.util.PriorityQueue;

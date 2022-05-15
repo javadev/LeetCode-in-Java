@@ -1,7 +1,7 @@
 package g1401_1500.s1483_kth_ancestor_of_a_tree_node;
 
 // #Hard #Dynamic_Programming #Depth_First_Search #Breadth_First_Search #Tree #Binary_Search #Design
-// #2022_04_05_Time_60_ms_(93.28%)_Space_82.3_MB_(88.81%)
+// #Acceptance_33.4% #2022_04_05_Time_60_ms_(93.28%)_Space_82.3_MB_(88.81%)
 
 import java.util.ArrayList;
 import java.util.HashMap;

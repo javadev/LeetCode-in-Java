@@ -1,6 +1,7 @@
 package g0301_0400.s0393_utf_8_validation;
 
-// #Medium #Array #Bit_Manipulation #2022_03_16_Time_1_ms_(100.00%)_Space_47_MB_(66.67%)
+// #Medium #Array #Bit_Manipulation #Acceptance_39.2%
+// #2022_03_16_Time_1_ms_(100.00%)_Space_47_MB_(66.67%)
 
 public class Solution {
     public boolean validUtf8(int[] data) {

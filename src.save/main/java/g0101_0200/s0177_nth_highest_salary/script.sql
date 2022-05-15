@@ -1,4 +1,5 @@
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+# #Medium #Database #Acceptance_36.2% #2022_03_04_Time_328_ms_(65.32%)_Space_0B_(100.00%)
 BEGIN
 DECLARE M INT;
 SET M=N-1;

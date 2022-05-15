@@ -1,6 +1,6 @@
 package g1701_1800.s1797_design_authentication_manager;
 
-// #Medium #Hash_Table #Design #Programming_Skills_II_Day_19
+// #Medium #Hash_Table #Design #Acceptance_54.1% #Programming_Skills_II_Day_19
 // #2022_04_25_Time_41_ms_(92.67%)_Space_62.1_MB_(31.08%)
 
 import java.util.ArrayDeque;

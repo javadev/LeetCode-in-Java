@@ -1,6 +1,6 @@
 package g0301_0400.s0380_insert_delete_getrandom_o1;
 
-// #Medium #Top_Interview_Questions #Array #Hash_Table #Math #Design #Randomized
+// #Medium #Top_Interview_Questions #Array #Hash_Table #Math #Design #Randomized #Acceptance_51.4%
 // #Programming_Skills_II_Day_20 #2022_03_18_Time_20_ms_(99.24%)_Space_92_MB_(89.28%)
 
 import java.util.ArrayList;

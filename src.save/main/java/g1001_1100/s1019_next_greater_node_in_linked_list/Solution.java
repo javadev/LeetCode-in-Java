@@ -1,6 +1,6 @@
 package g1001_1100.s1019_next_greater_node_in_linked_list;
 
-// #Medium #Array #Stack #Linked_List #Monotonic_Stack
+// #Medium #Array #Stack #Linked_List #Monotonic_Stack #Acceptance_59.6%
 // #2022_02_25_Time_11_ms_(96.35%)_Space_68.4_MB_(69.90%)
 
 import com_github_leetcode.ListNode;

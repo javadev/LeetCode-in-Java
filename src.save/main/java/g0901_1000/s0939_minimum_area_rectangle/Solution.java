@@ -1,6 +1,6 @@
 package g0901_1000.s0939_minimum_area_rectangle;
 
-// #Medium #Array #Hash_Table #Math #Sorting #Geometry
+// #Medium #Array #Hash_Table #Math #Sorting #Geometry #Acceptance_53.6%
 // #2022_03_30_Time_63_ms_(94.31%)_Space_54.6_MB_(73.31%)
 
 import java.util.Arrays;

@@ -1,6 +1,7 @@
 package g0801_0900.s0900_rle_iterator;
 
-// #Medium #Array #Design #Counting #Iterator #2022_03_28_Time_3_ms_(100.00%)_Space_41.8_MB_(96.19%)
+// #Medium #Array #Design #Counting #Iterator #Acceptance_58.8%
+// #2022_03_28_Time_3_ms_(100.00%)_Space_41.8_MB_(96.19%)
 
 @SuppressWarnings("java:S135")
 public class RLEIterator {

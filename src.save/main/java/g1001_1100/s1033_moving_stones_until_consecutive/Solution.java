@@ -1,6 +1,6 @@
 package g1001_1100.s1033_moving_stones_until_consecutive;
 
-// #Medium #Math #Brainteaser #2022_02_27_Time_1_ms_(86.36%)_Space_42.7_MB_(6.82%)
+// #Medium #Math #Brainteaser #Acceptance_45.0% #2022_02_27_Time_1_ms_(86.36%)_Space_42.7_MB_(6.82%)
 
 import java.util.Arrays;
 

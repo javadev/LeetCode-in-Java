@@ -1,6 +1,6 @@
 package g1401_1500.s1494_parallel_courses_ii;
 
-// #Hard #Dynamic_Programming #Bit_Manipulation #Graph #Bitmask
+// #Hard #Dynamic_Programming #Bit_Manipulation #Graph #Bitmask #Acceptance_31.7%
 // #2022_03_23_Time_325_ms_(42.24%)_Space_43.3_MB_(52.43%)
 
 import java.util.Arrays;

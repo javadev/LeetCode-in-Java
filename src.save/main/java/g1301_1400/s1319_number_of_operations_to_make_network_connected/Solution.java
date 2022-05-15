@@ -1,6 +1,6 @@
 package g1301_1400.s1319_number_of_operations_to_make_network_connected;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Graph #Union_Find
+// #Medium #Depth_First_Search #Breadth_First_Search #Graph #Union_Find #Acceptance_57.8%
 // #Graph_Theory_I_Day_8_Standard_Traversal #2022_03_19_Time_9_ms_(67.64%)_Space_64.6_MB_(49.60%)
 
 import java.util.Arrays;

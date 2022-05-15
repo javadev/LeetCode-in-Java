@@ -1,6 +1,6 @@
 package g1501_1600.s1579_remove_max_number_of_edges_to_keep_graph_fully_traversable;
 
-// #Hard #Graph #Union_Find #2022_04_11_Time_30_ms_(66.23%)_Space_83.1_MB_(95.61%)
+// #Hard #Graph #Union_Find #Acceptance_51.2% #2022_04_11_Time_30_ms_(66.23%)_Space_83.1_MB_(95.61%)
 
 import java.util.Arrays;
 

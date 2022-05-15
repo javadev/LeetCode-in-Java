@@ -1,6 +1,6 @@
 package g1601_1700.s1680_concatenation_of_consecutive_binary_numbers;
 
-// #Medium #Math #Bit_Manipulation #Simulation
+// #Medium #Math #Bit_Manipulation #Simulation #Acceptance_52.6%
 // #2022_04_15_Time_70_ms_(95.05%)_Space_39.2_MB_(98.02%)
 
 public class Solution {

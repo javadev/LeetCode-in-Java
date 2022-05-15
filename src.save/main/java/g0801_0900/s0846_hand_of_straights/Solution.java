@@ -1,6 +1,7 @@
 package g0801_0900.s0846_hand_of_straights;
 
-// #Medium #Array #Hash_Table #Sorting #Greedy #2022_03_24_Time_19_ms_(96.16%)_Space_43_MB_(93.42%)
+// #Medium #Array #Hash_Table #Sorting #Greedy #Acceptance_56.2%
+// #2022_03_24_Time_19_ms_(96.16%)_Space_43_MB_(93.42%)
 
 import java.util.Arrays;
 import java.util.HashMap;

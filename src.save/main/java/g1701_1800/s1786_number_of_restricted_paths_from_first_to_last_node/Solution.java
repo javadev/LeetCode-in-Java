@@ -1,7 +1,7 @@
 package g1701_1800.s1786_number_of_restricted_paths_from_first_to_last_node;
 
 // #Medium #Dynamic_Programming #Heap_Priority_Queue #Graph #Topological_Sort #Shortest_Path
-// #2022_04_30_Time_86_ms_(88.56%)_Space_73.5_MB_(85.34%)
+// #Acceptance_38.7% #2022_04_30_Time_86_ms_(88.56%)_Space_73.5_MB_(85.34%)
 
 import java.util.ArrayList;
 import java.util.List;

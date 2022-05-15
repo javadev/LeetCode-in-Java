@@ -1,6 +1,6 @@
 package g1301_1400.s1333_filter_restaurants_by_vegan_friendly_price_and_distance;
 
-// #Medium #Array #Sorting #2022_03_19_Time_10_ms_(55.43%)_Space_58_MB_(52.00%)
+// #Medium #Array #Sorting #Acceptance_58.9% #2022_03_19_Time_10_ms_(55.43%)_Space_58_MB_(52.00%)
 
 import java.util.ArrayList;
 import java.util.List;

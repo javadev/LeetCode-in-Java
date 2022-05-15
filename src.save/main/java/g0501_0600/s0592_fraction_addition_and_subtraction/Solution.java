@@ -1,6 +1,7 @@
 package g0501_0600.s0592_fraction_addition_and_subtraction;
 
-// #Medium #String #Math #Simulation #2022_03_20_Time_4_ms_(98.58%)_Space_40.3_MB_(83.27%)
+// #Medium #String #Math #Simulation #Acceptance_51.8%
+// #2022_03_20_Time_4_ms_(98.58%)_Space_40.3_MB_(83.27%)
 
 import java.util.ArrayList;
 import java.util.List;

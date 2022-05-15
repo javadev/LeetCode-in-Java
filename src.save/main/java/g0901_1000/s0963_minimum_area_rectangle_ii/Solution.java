@@ -1,6 +1,7 @@
 package g0901_1000.s0963_minimum_area_rectangle_ii;
 
-// #Medium #Array #Math #Geometry #2022_03_31_Time_12_ms_(92.95%)_Space_43.1_MB_(83.55%)
+// #Medium #Array #Math #Geometry #Acceptance_54.5%
+// #2022_03_31_Time_12_ms_(92.95%)_Space_43.1_MB_(83.55%)
 
 import java.util.HashMap;
 import java.util.HashSet;

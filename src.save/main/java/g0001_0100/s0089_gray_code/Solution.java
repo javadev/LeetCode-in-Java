@@ -1,6 +1,6 @@
 package g0001_0100.s0089_gray_code;
 
-// #Medium #Math #Bit_Manipulation #Backtracking
+// #Medium #Math #Bit_Manipulation #Backtracking #Acceptance_55.3%
 // #2022_02_21_Time_2_ms_(99.93%)_Space_47.3_MB_(80.24%)
 
 import java.util.Arrays;

@@ -1,7 +1,7 @@
 package g0301_0400.s0324_wiggle_sort_ii;
 
 // #Medium #Top_Interview_Questions #Array #Sorting #Divide_and_Conquer #Quickselect
-// #2022_03_15_Time_6_ms_(69.23%)_Space_56.2_MB_(21.55%)
+// #Acceptance_32.3% #2022_03_15_Time_6_ms_(69.23%)_Space_56.2_MB_(21.55%)
 
 import java.util.Arrays;
 

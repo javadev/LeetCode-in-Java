@@ -1,6 +1,6 @@
 package g1201_1300.s1226_the_dining_philosophers;
 
-// #Medium #Concurrency #2022_03_12_Time_10_ms_(83.56%)_Space_42.9_MB_(80.88%)
+// #Medium #Concurrency #Acceptance_57.2% #2022_03_12_Time_10_ms_(83.56%)_Space_42.9_MB_(80.88%)
 
 import java.util.concurrent.Semaphore;
 

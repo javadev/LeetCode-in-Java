@@ -1,6 +1,6 @@
 package g1101_1200.s1200_minimum_absolute_difference;
 
-// #Easy #Array #Sorting #2022_02_27_Time_14_ms_(98.30%)_Space_52_MB_(84.02%)
+// #Easy #Array #Sorting #Acceptance_69.8% #2022_02_27_Time_14_ms_(98.30%)_Space_52_MB_(84.02%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

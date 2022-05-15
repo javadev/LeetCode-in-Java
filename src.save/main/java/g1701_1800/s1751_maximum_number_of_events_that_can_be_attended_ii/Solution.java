@@ -1,6 +1,6 @@
 package g1701_1800.s1751_maximum_number_of_events_that_can_be_attended_ii;
 
-// #Hard #Array #Dynamic_Programming #Binary_Search
+// #Hard #Array #Dynamic_Programming #Binary_Search #Acceptance_54.8%
 // #2022_04_30_Time_12_ms_(98.33%)_Space_84.7_MB_(92.22%)
 
 import java.util.Arrays;

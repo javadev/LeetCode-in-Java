@@ -1,6 +1,7 @@
 package g0901_1000.s0932_beautiful_array;
 
-// #Medium #Array #Math #Divide_and_Conquer #2022_03_30_Time_1_ms_(89.66%)_Space_43_MB_(38.97%)
+// #Medium #Array #Math #Divide_and_Conquer #Acceptance_64.8%
+// #2022_03_30_Time_1_ms_(89.66%)_Space_43_MB_(38.97%)
 
 import java.util.HashMap;
 import java.util.Map;

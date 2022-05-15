@@ -1,6 +1,6 @@
 package g1301_1400.s1311_get_watched_videos_by_your_friends;
 
-// #Medium #Array #Hash_Table #Sorting #Breadth_First_Search
+// #Medium #Array #Hash_Table #Sorting #Breadth_First_Search #Acceptance_45.2%
 // #2022_03_15_Time_39_ms_(73.81%)_Space_69.9_MB_(22.62%)
 
 import java.util.ArrayList;

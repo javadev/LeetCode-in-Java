@@ -1,6 +1,6 @@
 package g1801_1900.s1829_maximum_xor_for_each_query;
 
-// #Medium #Array #Bit_Manipulation #Prefix_Sum
+// #Medium #Array #Bit_Manipulation #Prefix_Sum #Acceptance_76.2%
 // #2022_05_07_Time_7_ms_(20.94%)_Space_152.5_MB_(6.86%)
 
 public class Solution {

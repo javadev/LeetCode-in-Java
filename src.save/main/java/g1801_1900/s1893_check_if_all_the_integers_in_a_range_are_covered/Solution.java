@@ -1,6 +1,7 @@
 package g1801_1900.s1893_check_if_all_the_integers_in_a_range_are_covered;
 
-// #Easy #Array #Hash_Table #Prefix_Sum #2022_05_09_Time_1_ms_(72.81%)_Space_42.4_MB_(39.06%)
+// #Easy #Array #Hash_Table #Prefix_Sum #Acceptance_50.9%
+// #2022_05_09_Time_1_ms_(72.81%)_Space_42.4_MB_(39.06%)
 
 public class Solution {
     public boolean isCovered(int[][] ranges, int left, int right) {

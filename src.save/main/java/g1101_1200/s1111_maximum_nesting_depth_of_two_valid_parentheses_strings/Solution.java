@@ -1,6 +1,6 @@
 package g1101_1200.s1111_maximum_nesting_depth_of_two_valid_parentheses_strings;
 
-// #Medium #String #Stack #2022_03_01_Time_1_ms_(99.73%)_Space_44.5_MB_(26.26%)
+// #Medium #String #Stack #Acceptance_73.2% #2022_03_01_Time_1_ms_(99.73%)_Space_44.5_MB_(26.26%)
 
 public class Solution {
     public int[] maxDepthAfterSplit(String seq) {

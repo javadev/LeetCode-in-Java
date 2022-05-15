@@ -1,6 +1,6 @@
 package g1801_1900.s1878_get_biggest_three_rhombus_sums_in_a_grid;
 
-// #Medium #Array #Math #Sorting #Matrix #Heap_Priority_Queue #Prefix_Sum
+// #Medium #Array #Math #Sorting #Matrix #Heap_Priority_Queue #Prefix_Sum #Acceptance_45.7%
 // #2022_05_11_Time_41_ms_(82.03%)_Space_54.2_MB_(58.98%)
 
 import java.util.PriorityQueue;

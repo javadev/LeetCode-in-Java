@@ -1,6 +1,7 @@
 package g0001_0100.s0038_count_and_say;
 
-// #Medium #Top_Interview_Questions #String #2022_02_18_Time_3_ms_(84.24%)_Space_41.7_MB_(38.69%)
+// #Medium #Top_Interview_Questions #String #Acceptance_48.7%
+// #2022_02_18_Time_3_ms_(84.24%)_Space_41.7_MB_(38.69%)
 
 public class Solution {
     public String countAndSay(int n) {

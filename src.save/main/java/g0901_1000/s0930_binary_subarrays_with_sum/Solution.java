@@ -1,6 +1,6 @@
 package g0901_1000.s0930_binary_subarrays_with_sum;
 
-// #Medium #Array #Hash_Table #Prefix_Sum #Sliding_Window
+// #Medium #Array #Hash_Table #Prefix_Sum #Sliding_Window #Acceptance_48.9%
 // #2022_03_29_Time_3_ms_(84.84%)_Space_56.9_MB_(44.53%)
 
 public class Solution {

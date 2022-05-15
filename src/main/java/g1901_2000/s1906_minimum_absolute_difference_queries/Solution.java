@@ -1,6 +1,7 @@
 package g1901_2000.s1906_minimum_absolute_difference_queries;
 
-// #Medium #Array #Hash_Table #2022_05_11_Time_176_ms_(71.61%)_Space_82.6_MB_(95.48%)
+// #Medium #Array #Hash_Table #Acceptance_43.4%
+// #2022_05_11_Time_176_ms_(71.61%)_Space_82.6_MB_(95.48%)
 
 import java.util.Arrays;
 import java.util.BitSet;

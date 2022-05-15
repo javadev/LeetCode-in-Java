@@ -1,6 +1,6 @@
 package g1001_1100.s1042_flower_planting_with_no_adjacent;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Graph
+// #Medium #Depth_First_Search #Breadth_First_Search #Graph #Acceptance_49.9%
 // #2022_02_27_Time_19_ms_(89.02%)_Space_72.1_MB_(61.13%)
 
 import java.util.ArrayList;

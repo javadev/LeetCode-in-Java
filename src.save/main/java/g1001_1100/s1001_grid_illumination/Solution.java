@@ -1,6 +1,6 @@
 package g1001_1100.s1001_grid_illumination;
 
-// #Hard #Array #Hash_Table #2022_02_20_Time_75_ms_(90.57%)_Space_59_MB_(81.13%)
+// #Hard #Array #Hash_Table #Acceptance_36.1% #2022_02_20_Time_75_ms_(90.57%)_Space_59_MB_(81.13%)
 
 import java.util.HashMap;
 

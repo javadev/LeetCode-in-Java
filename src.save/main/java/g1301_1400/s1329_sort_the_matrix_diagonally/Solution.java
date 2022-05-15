@@ -1,6 +1,7 @@
 package g1301_1400.s1329_sort_the_matrix_diagonally;
 
-// #Medium #Array #Sorting #Matrix #2022_03_19_Time_15_ms_(26.03%)_Space_47.7_MB_(56.76%)
+// #Medium #Array #Sorting #Matrix #Acceptance_81.4%
+// #2022_03_19_Time_15_ms_(26.03%)_Space_47.7_MB_(56.76%)
 
 import java.util.ArrayList;
 import java.util.Collections;

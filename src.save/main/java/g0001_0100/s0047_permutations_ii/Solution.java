@@ -1,6 +1,6 @@
 package g0001_0100.s0047_permutations_ii;
 
-// #Medium #Array #Backtracking #Algorithm_II_Day_10_Recursion_Backtracking
+// #Medium #Array #Backtracking #Acceptance_55.4% #Algorithm_II_Day_10_Recursion_Backtracking
 // #2022_02_18_Time_2_ms_(86.24%)_Space_48_MB_(27.21%)
 
 import java.util.ArrayList;

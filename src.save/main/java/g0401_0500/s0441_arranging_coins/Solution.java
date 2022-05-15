@@ -1,6 +1,6 @@
 package g0401_0500.s0441_arranging_coins;
 
-// #Easy #Math #Binary_Search #Binary_Search_I_Day_6
+// #Easy #Math #Binary_Search #Acceptance_45.4% #Binary_Search_I_Day_6
 // #2022_03_18_Time_2_ms_(87.99%)_Space_41.6_MB_(30.85%)
 
 public class Solution {

@@ -1,6 +1,6 @@
 package g1101_1200.s1144_decrease_elements_to_make_array_zigzag;
 
-// #Medium #Array #Greedy #2022_03_05_Time_0_ms_(100.00%)_Space_39.8_MB_(54.76%)
+// #Medium #Array #Greedy #Acceptance_47.0% #2022_03_05_Time_0_ms_(100.00%)_Space_39.8_MB_(54.76%)
 
 public class Solution {
     public int movesToMakeZigzag(int[] nums) {

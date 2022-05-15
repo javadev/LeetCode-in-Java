@@ -1,6 +1,6 @@
 package g0801_0900.s0871_minimum_number_of_refueling_stops;
 
-// #Hard #Array #Dynamic_Programming #Greedy #Heap_Priority_Queue
+// #Hard #Array #Dynamic_Programming #Greedy #Heap_Priority_Queue #Acceptance_35.7%
 // #2022_03_28_Time_3_ms_(88.52%)_Space_48.8_MB_(60.04%)
 
 import java.util.PriorityQueue;

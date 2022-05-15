@@ -1,6 +1,6 @@
 package g0801_0900.s0814_binary_tree_pruning;
 
-// #Medium #Depth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Tree #Binary_Tree #Acceptance_71.0%
 // #2022_03_23_Time_0_ms_(100.00%)_Space_39.9_MB_(75.94%)
 
 import com_github_leetcode.TreeNode;

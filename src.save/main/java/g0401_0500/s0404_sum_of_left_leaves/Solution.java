@@ -1,6 +1,6 @@
 package g0401_0500.s0404_sum_of_left_leaves;
 
-// #Easy #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #Easy #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Acceptance_55.2%
 // #Programming_Skills_I_Day_10_Linked_List_&_Tree
 // #2022_03_16_Time_0_ms_(100.00%)_Space_40.1_MB_(69.43%)
 

@@ -1,6 +1,6 @@
 package g1801_1900.s1855_maximum_distance_between_a_pair_of_values;
 
-// #Medium #Array #Greedy #Binary_Search #Two_Pointers #Binary_Search_I_Day_11
+// #Medium #Array #Greedy #Binary_Search #Two_Pointers #Acceptance_50.7% #Binary_Search_I_Day_11
 // #2022_05_08_Time_4_ms_(62.20%)_Space_102.5_MB_(38.31%)
 
 public class Solution {

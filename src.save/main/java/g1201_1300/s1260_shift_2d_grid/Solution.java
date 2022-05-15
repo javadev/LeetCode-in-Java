@@ -1,6 +1,7 @@
 package g1201_1300.s1260_shift_2d_grid;
 
-// #Easy #Array #Matrix #Simulation #2022_03_13_Time_17_ms_(14.82%)_Space_54.2_MB_(47.71%)
+// #Easy #Array #Matrix #Simulation #Acceptance_68.1%
+// #2022_03_13_Time_17_ms_(14.82%)_Space_54.2_MB_(47.71%)
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -1,6 +1,6 @@
 package g0201_0300.s0211_design_add_and_search_words_data_structure;
 
-// #Medium #String #Depth_First_Search #Design #Trie
+// #Medium #String #Depth_First_Search #Design #Trie #Acceptance_44.0%
 // #2022_03_05_Time_403_ms_(18.89%)_Space_103.7_MB_(18.65%)
 
 public class WordDictionary {

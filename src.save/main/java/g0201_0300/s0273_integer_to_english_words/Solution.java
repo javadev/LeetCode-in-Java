@@ -1,6 +1,7 @@
 package g0201_0300.s0273_integer_to_english_words;
 
-// #Hard #String #Math #Recursion #2022_03_14_Time_5_ms_(83.37%)_Space_42.1_MB_(60.23%)
+// #Hard #String #Math #Recursion #Acceptance_29.6%
+// #2022_03_14_Time_5_ms_(83.37%)_Space_42.1_MB_(60.23%)
 
 import java.util.StringJoiner;
 

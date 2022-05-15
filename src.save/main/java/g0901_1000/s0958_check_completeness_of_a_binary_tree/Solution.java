@@ -1,6 +1,6 @@
 package g0901_1000.s0958_check_completeness_of_a_binary_tree;
 
-// #Medium #Breadth_First_Search #Tree #Binary_Tree
+// #Medium #Breadth_First_Search #Tree #Binary_Tree #Acceptance_53.7%
 // #2022_02_18_Time_2_ms_(43.56%)_Space_42.6_MB_(18.09%)
 
 import com_github_leetcode.TreeNode;

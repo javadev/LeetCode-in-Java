@@ -1,6 +1,6 @@
 package g0301_0400.s0354_russian_doll_envelopes;
 
-// #Hard #Array #Dynamic_Programming #Sorting #Binary_Search
+// #Hard #Array #Dynamic_Programming #Sorting #Binary_Search #Acceptance_38.9%
 // #2022_03_15_Time_65_ms_(67.49%)_Space_73.9_MB_(66.98%)
 
 import java.util.Arrays;

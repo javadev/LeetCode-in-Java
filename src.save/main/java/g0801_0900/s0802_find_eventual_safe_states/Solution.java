@@ -1,6 +1,6 @@
 package g0801_0900.s0802_find_eventual_safe_states;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Graph #Topological_Sort
+// #Medium #Depth_First_Search #Breadth_First_Search #Graph #Topological_Sort #Acceptance_52.7%
 // #Graph_Theory_I_Day_9_Standard_Traversal #2022_03_23_Time_7_ms_(74.93%)_Space_71.1_MB_(44.58%)
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package g0101_0200.s0134_gas_station;
 
-// #Medium #Top_Interview_Questions #Array #Greedy
+// #Medium #Top_Interview_Questions #Array #Greedy #Acceptance_44.5%
 // #2022_02_22_Time_3_ms_(61.54%)_Space_81.3_MB_(7.19%)
 
 public class Solution {

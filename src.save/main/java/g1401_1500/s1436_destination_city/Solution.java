@@ -1,6 +1,6 @@
 package g1401_1500.s1436_destination_city;
 
-// #Easy #String #Hash_Table #2022_03_28_Time_7_ms_(11.79%)_Space_44.2_MB_(27.60%)
+// #Easy #String #Hash_Table #Acceptance_77.7% #2022_03_28_Time_7_ms_(11.79%)_Space_44.2_MB_(27.60%)
 
 import java.util.HashSet;
 import java.util.List;

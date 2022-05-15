@@ -1,6 +1,6 @@
 package g0801_0900.s0897_increasing_order_search_tree;
 
-// #Easy #Depth_First_Search #Tree #Binary_Tree #Stack #Binary_Search_Tree
+// #Easy #Depth_First_Search #Tree #Binary_Tree #Stack #Binary_Search_Tree #Acceptance_78.3%
 // #2022_03_28_Time_0_ms_(100.00%)_Space_39.9_MB_(83.16%)
 
 import com_github_leetcode.TreeNode;

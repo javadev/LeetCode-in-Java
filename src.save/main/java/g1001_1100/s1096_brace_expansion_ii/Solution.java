@@ -1,6 +1,6 @@
 package g1001_1100.s1096_brace_expansion_ii;
 
-// #Hard #String #Breadth_First_Search #Stack #Backtracking
+// #Hard #String #Breadth_First_Search #Stack #Backtracking #Acceptance_62.7%
 // #2022_02_18_Time_23_ms_(60.36%)_Space_50.3_MB_(28.57%)
 
 import java.util.ArrayList;

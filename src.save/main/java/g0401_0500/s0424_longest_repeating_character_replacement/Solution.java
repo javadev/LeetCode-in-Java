@@ -1,6 +1,7 @@
 package g0401_0500.s0424_longest_repeating_character_replacement;
 
-// #Medium #String #Hash_Table #Sliding_Window #2022_03_18_Time_5_ms_(92.61%)_Space_43.2_MB_(49.35%)
+// #Medium #String #Hash_Table #Sliding_Window #Acceptance_50.8%
+// #2022_03_18_Time_5_ms_(92.61%)_Space_43.2_MB_(49.35%)
 
 public class Solution {
     public int characterReplacement(String s, int k) {

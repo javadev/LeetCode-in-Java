@@ -1,6 +1,6 @@
 package g1301_1400.s1397_find_all_good_strings;
 
-// #Hard #String #Dynamic_Programming #String_Matching
+// #Hard #String #Dynamic_Programming #String_Matching #Acceptance_41.4%
 // #2022_03_17_Time_85_ms_(41.25%)_Space_42.5_MB_(83.75%)
 
 @SuppressWarnings("java:S1172")

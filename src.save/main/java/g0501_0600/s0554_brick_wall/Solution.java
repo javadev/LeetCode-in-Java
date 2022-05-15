@@ -1,6 +1,7 @@
 package g0501_0600.s0554_brick_wall;
 
-// #Medium #Array #Hash_Table #2022_03_20_Time_13_ms_(75.64%)_Space_56.2_MB_(5.86%)
+// #Medium #Array #Hash_Table #Acceptance_52.6%
+// #2022_03_20_Time_13_ms_(75.64%)_Space_56.2_MB_(5.86%)
 
 import java.util.HashMap;
 import java.util.List;

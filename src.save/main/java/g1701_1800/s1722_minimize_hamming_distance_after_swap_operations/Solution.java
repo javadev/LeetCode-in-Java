@@ -1,6 +1,6 @@
 package g1701_1800.s1722_minimize_hamming_distance_after_swap_operations;
 
-// #Medium #Array #Depth_First_Search #Union_Find
+// #Medium #Array #Depth_First_Search #Union_Find #Acceptance_48.1%
 // #2022_04_25_Time_51_ms_(94.82%)_Space_77.5_MB_(96.89%)
 
 import java.util.ArrayList;

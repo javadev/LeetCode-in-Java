@@ -1,6 +1,7 @@
 package g1201_1300.s1222_queens_that_can_attack_the_king;
 
-// #Medium #Array #Matrix #Simulation #2022_03_11_Time_1_ms_(89.88%)_Space_42.6_MB_(53.57%)
+// #Medium #Array #Matrix #Simulation #Acceptance_71.2%
+// #2022_03_11_Time_1_ms_(89.88%)_Space_42.6_MB_(53.57%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,6 +1,6 @@
 package g0501_0600.s0563_binary_tree_tilt;
 
-// #Easy #Depth_First_Search #Tree #Binary_Tree
+// #Easy #Depth_First_Search #Tree #Binary_Tree #Acceptance_58.6%
 // #2022_03_20_Time_0_ms_(100.00%)_Space_45.6_MB_(25.19%)
 
 import com_github_leetcode.TreeNode;

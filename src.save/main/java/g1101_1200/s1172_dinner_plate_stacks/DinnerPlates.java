@@ -1,6 +1,6 @@
 package g1101_1200.s1172_dinner_plate_stacks;
 
-// #Hard #Hash_Table #Stack #Design #Heap_Priority_Queue
+// #Hard #Hash_Table #Stack #Design #Heap_Priority_Queue #Acceptance_34.3%
 // #2022_03_05_Time_63_ms_(96.74%)_Space_121.6_MB_(92.39%)
 
 import java.util.ArrayList;

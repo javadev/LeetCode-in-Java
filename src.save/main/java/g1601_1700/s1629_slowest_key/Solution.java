@@ -1,6 +1,6 @@
 package g1601_1700.s1629_slowest_key;
 
-// #Easy #Array #String #2022_04_18_Time_4_ms_(14.60%)_Space_42.9_MB_(72.62%)
+// #Easy #Array #String #Acceptance_59.6% #2022_04_18_Time_4_ms_(14.60%)_Space_42.9_MB_(72.62%)
 
 import java.util.ArrayList;
 import java.util.Collections;

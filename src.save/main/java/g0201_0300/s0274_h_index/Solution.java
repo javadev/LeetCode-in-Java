@@ -1,6 +1,7 @@
 package g0201_0300.s0274_h_index;
 
-// #Medium #Array #Sorting #Counting_Sort #2022_03_14_Time_2_ms_(51.85%)_Space_43_MB_(5.41%)
+// #Medium #Array #Sorting #Counting_Sort #Acceptance_37.6%
+// #2022_03_14_Time_2_ms_(51.85%)_Space_43_MB_(5.41%)
 
 import java.util.Arrays;
 

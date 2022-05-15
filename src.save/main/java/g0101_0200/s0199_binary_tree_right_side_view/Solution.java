@@ -1,6 +1,6 @@
 package g0101_0200.s0199_binary_tree_right_side_view;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Acceptance_59.7%
 // #Data_Structure_II_Day_16_Tree #2022_03_04_Time_1_ms_(92.96%)_Space_43.2_MB_(6.01%)
 
 import com_github_leetcode.TreeNode;

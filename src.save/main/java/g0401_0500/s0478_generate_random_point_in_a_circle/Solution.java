@@ -1,6 +1,6 @@
 package g0401_0500.s0478_generate_random_point_in_a_circle;
 
-// #Medium #Math #Geometry #Randomized #Rejection_Sampling
+// #Medium #Math #Geometry #Randomized #Rejection_Sampling #Acceptance_39.4%
 // #2022_03_18_Time_196_ms_(98.10%)_Space_51.3_MB_(87.97%)
 
 import java.util.Random;

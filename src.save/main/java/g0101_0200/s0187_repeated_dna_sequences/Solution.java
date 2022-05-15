@@ -1,7 +1,8 @@
 package g0101_0200.s0187_repeated_dna_sequences;
 
 // #Medium #String #Hash_Table #Bit_Manipulation #Sliding_Window #Hash_Function #Rolling_Hash
-// #Data_Structure_II_Day_9_String #2022_03_04_Time_32_ms_(67.58%)_Space_73.2_MB_(6.07%)
+// #Acceptance_44.8% #Data_Structure_II_Day_9_String
+// #2022_03_04_Time_32_ms_(67.58%)_Space_73.2_MB_(6.07%)
 
 import java.util.ArrayList;
 import java.util.Collections;

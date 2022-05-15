@@ -1,6 +1,6 @@
 package g0501_0600.s0516_longest_palindromic_subsequence;
 
-// #Medium #String #Dynamic_Programming #Dynamic_Programming_I_Day_17
+// #Medium #String #Dynamic_Programming #Acceptance_59.4% #Dynamic_Programming_I_Day_17
 // #2022_03_19_Time_31_ms_(96.10%)_Space_51.9_MB_(82.26%)
 
 public class Solution {

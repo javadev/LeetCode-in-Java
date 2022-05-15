@@ -1,6 +1,7 @@
 package g1801_1900.s1803_count_pairs_with_xor_in_a_range;
 
-// #Hard #Array #Bit_Manipulation #Trie #2022_05_02_Time_77_ms_(100.00%)_Space_70.3_MB_(61.54%)
+// #Hard #Array #Bit_Manipulation #Trie #Acceptance_46.2%
+// #2022_05_02_Time_77_ms_(100.00%)_Space_70.3_MB_(61.54%)
 
 public class Solution {
     public int countPairs(int[] nums, int low, int high) {

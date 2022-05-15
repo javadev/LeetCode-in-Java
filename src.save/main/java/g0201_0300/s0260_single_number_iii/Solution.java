@@ -1,6 +1,7 @@
 package g0201_0300.s0260_single_number_iii;
 
-// #Medium #Array #Bit_Manipulation #2022_03_14_Time_1_ms_(98.18%)_Space_45.4_MB_(27.48%)
+// #Medium #Array #Bit_Manipulation #Acceptance_67.2%
+// #2022_03_14_Time_1_ms_(98.18%)_Space_45.4_MB_(27.48%)
 
 public class Solution {
     public int[] singleNumber(int[] nums) {

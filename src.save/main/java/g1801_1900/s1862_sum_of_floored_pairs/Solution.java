@@ -1,6 +1,6 @@
 package g1801_1900.s1862_sum_of_floored_pairs;
 
-// #Hard #Array #Math #Binary_Search #Prefix_Sum
+// #Hard #Array #Math #Binary_Search #Prefix_Sum #Acceptance_28.0%
 // #2022_05_08_Time_115_ms_(70.91%)_Space_57.2_MB_(81.82%)
 
 import java.util.Arrays;

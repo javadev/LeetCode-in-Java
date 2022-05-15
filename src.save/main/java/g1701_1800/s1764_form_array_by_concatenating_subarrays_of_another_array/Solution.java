@@ -1,6 +1,7 @@
 package g1701_1800.s1764_form_array_by_concatenating_subarrays_of_another_array;
 
-// #Medium #Array #Greedy #String_Matching #2022_04_30_Time_7_ms_(16.90%)_Space_42.4_MB_(85.92%)
+// #Medium #Array #Greedy #String_Matching #Acceptance_53.0%
+// #2022_04_30_Time_7_ms_(16.90%)_Space_42.4_MB_(85.92%)
 
 import java.util.ArrayList;
 import java.util.Collections;

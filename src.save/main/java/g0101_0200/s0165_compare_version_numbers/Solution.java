@@ -1,6 +1,7 @@
 package g0101_0200.s0165_compare_version_numbers;
 
-// #Medium #String #Two_Pointers #2022_03_04_Time_1_ms_(90.80%)_Space_42.2_MB_(39.21%)
+// #Medium #String #Two_Pointers #Acceptance_34.6%
+// #2022_03_04_Time_1_ms_(90.80%)_Space_42.2_MB_(39.21%)
 
 public class Solution {
     public int compareVersion(String version1, String version2) {

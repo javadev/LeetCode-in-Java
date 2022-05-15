@@ -1,6 +1,7 @@
 package g0701_0800.s0731_my_calendar_ii;
 
-// #Medium #Design #Ordered_Set #Segment_Tree #2022_03_25_Time_27_ms_(97.74%)_Space_54.6_MB_(48.74%)
+// #Medium #Design #Ordered_Set #Segment_Tree #Acceptance_53.4%
+// #2022_03_25_Time_27_ms_(97.74%)_Space_54.6_MB_(48.74%)
 
 import java.util.TreeMap;
 

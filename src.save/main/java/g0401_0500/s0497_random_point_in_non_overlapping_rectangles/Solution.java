@@ -1,7 +1,7 @@
 package g0401_0500.s0497_random_point_in_non_overlapping_rectangles;
 
 // #Medium #Math #Binary_Search #Prefix_Sum #Ordered_Set #Randomized #Reservoir_Sampling
-// #2022_03_19_Time_44_ms_(97.50%)_Space_48.3_MB_(88.33%)
+// #Acceptance_39.1% #2022_03_19_Time_44_ms_(97.50%)_Space_48.3_MB_(88.33%)
 
 import java.util.Random;
 

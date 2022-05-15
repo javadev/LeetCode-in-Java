@@ -1,6 +1,7 @@
 package g1001_1100.s1095_find_in_mountain_array;
 
-// #Hard #Array #Binary_Search #Interactive #2022_02_22_Time_0_ms_(100.00%)_Space_42.1_MB_(37.47%)
+// #Hard #Array #Binary_Search #Interactive #Acceptance_35.9%
+// #2022_02_22_Time_0_ms_(100.00%)_Space_42.1_MB_(37.47%)
 
 public class Solution {
     public int findInMountainArray(int target, MountainArray mountainArr) {

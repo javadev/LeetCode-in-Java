@@ -1,6 +1,6 @@
 package g0301_0400.s0392_is_subsequence;
 
-// #Easy #String #Dynamic_Programming #Two_Pointers #Dynamic_Programming_I_Day_19
+// #Easy #String #Dynamic_Programming #Two_Pointers #Acceptance_51.0% #Dynamic_Programming_I_Day_19
 // #2022_03_16_Time_0_ms_(100.00%)_Space_42.2_MB_(40.05%)
 
 public class Solution {

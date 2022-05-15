@@ -1,6 +1,6 @@
 package g1801_1900.s1824_minimum_sideway_jumps;
 
-// #Medium #Array #Dynamic_Programming #Greedy
+// #Medium #Array #Dynamic_Programming #Greedy #Acceptance_49.2%
 // #2022_05_06_Time_17_ms_(96.34%)_Space_217.7_MB_(56.10%)
 
 public class Solution {

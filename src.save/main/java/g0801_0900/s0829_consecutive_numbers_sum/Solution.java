@@ -1,6 +1,6 @@
 package g0801_0900.s0829_consecutive_numbers_sum;
 
-// #Hard #Math #Enumeration #2022_03_24_Time_3_ms_(93.37%)_Space_41.1_MB_(38.00%)
+// #Hard #Math #Enumeration #Acceptance_41.1% #2022_03_24_Time_3_ms_(93.37%)_Space_41.1_MB_(38.00%)
 
 public class Solution {
     public int consecutiveNumbersSum(int n) {

@@ -1,6 +1,6 @@
 package g0001_0100.s0041_first_missing_positive;
 
-// #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table
+// #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table #Acceptance_36.0%
 // #2022_02_18_Time_3_ms_(85.60%)_Space_129.5_MB_(14.65%)
 
 public class Solution {

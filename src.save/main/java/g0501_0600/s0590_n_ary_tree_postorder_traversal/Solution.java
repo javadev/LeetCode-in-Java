@@ -1,6 +1,7 @@
 package g0501_0600.s0590_n_ary_tree_postorder_traversal;
 
-// #Easy #Depth_First_Search #Tree #Stack #2022_03_20_Time_0_ms_(100.00%)_Space_42.9_MB_(90.33%)
+// #Easy #Depth_First_Search #Tree #Stack #Acceptance_76.2%
+// #2022_03_20_Time_0_ms_(100.00%)_Space_42.9_MB_(90.33%)
 
 import com_github_leetcode.Node;
 import java.util.ArrayList;

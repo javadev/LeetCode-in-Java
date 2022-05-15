@@ -1,6 +1,6 @@
 package g1301_1400.s1305_all_elements_in_two_binary_search_trees;
 
-// #Medium #Depth_First_Search #Sorting #Tree #Binary_Tree #Binary_Search_Tree
+// #Medium #Depth_First_Search #Sorting #Tree #Binary_Tree #Binary_Search_Tree #Acceptance_79.6%
 // #2022_03_14_Time_25_ms_(63.82%)_Space_73.1_MB_(66.80%)
 
 import com_github_leetcode.TreeNode;

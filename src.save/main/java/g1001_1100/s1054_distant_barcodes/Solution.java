@@ -1,6 +1,6 @@
 package g1001_1100.s1054_distant_barcodes;
 
-// #Medium #Array #Hash_Table #Sorting #Greedy #Heap_Priority_Queue #Counting
+// #Medium #Array #Hash_Table #Sorting #Greedy #Heap_Priority_Queue #Counting #Acceptance_45.2%
 // #2022_02_28_Time_45_ms_(64.21%)_Space_69.1_MB_(71.24%)
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package g1001_1100.s1023_camelcase_matching;
 
-// #Medium #String #Two_Pointers #Trie #String_Matching
+// #Medium #String #Two_Pointers #Trie #String_Matching #Acceptance_59.3%
 // #2022_02_26_Time_1_ms_(73.86%)_Space_43_MB_(6.82%)
 
 import java.util.LinkedList;

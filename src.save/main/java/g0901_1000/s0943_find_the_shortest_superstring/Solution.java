@@ -1,6 +1,6 @@
 package g0901_1000.s0943_find_the_shortest_superstring;
 
-// #Hard #Array #String #Dynamic_Programming #Bit_Manipulation #Bitmask
+// #Hard #Array #String #Dynamic_Programming #Bit_Manipulation #Bitmask #Acceptance_45.4%
 // #2022_03_30_Time_16_ms_(100.00%)_Space_42.3_MB_(95.24%)
 
 import java.util.Arrays;

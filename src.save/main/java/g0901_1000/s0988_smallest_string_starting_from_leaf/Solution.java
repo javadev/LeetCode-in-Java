@@ -1,6 +1,6 @@
 package g0901_1000.s0988_smallest_string_starting_from_leaf;
 
-// #Medium #String #Depth_First_Search #Tree #Binary_Tree
+// #Medium #String #Depth_First_Search #Tree #Binary_Tree #Acceptance_48.8%
 // #2022_03_31_Time_4_ms_(58.47%)_Space_44.1_MB_(60.60%)
 
 import com_github_leetcode.TreeNode;

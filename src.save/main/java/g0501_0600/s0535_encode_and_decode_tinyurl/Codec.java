@@ -1,6 +1,6 @@
 package g0501_0600.s0535_encode_and_decode_tinyurl;
 
-// #Medium #String #Hash_Table #Design #Hash_Function
+// #Medium #String #Hash_Table #Design #Hash_Function #Acceptance_85.4%
 // #2022_05_01_Time_4_ms_(65.42%)_Space_43.4_MB_(58.94%)
 
 import java.util.HashMap;

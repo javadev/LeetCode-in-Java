@@ -1,6 +1,6 @@
 package g1501_1600.s1582_special_positions_in_a_binary_matrix;
 
-// #Easy #Array #Matrix #2022_04_11_Time_2_ms_(82.12%)_Space_52.5_MB_(17.36%)
+// #Easy #Array #Matrix #Acceptance_65.0% #2022_04_11_Time_2_ms_(82.12%)_Space_52.5_MB_(17.36%)
 
 public class Solution {
     public int numSpecial(int[][] mat) {

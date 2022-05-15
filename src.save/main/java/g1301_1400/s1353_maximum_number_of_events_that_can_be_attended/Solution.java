@@ -1,6 +1,6 @@
 package g1301_1400.s1353_maximum_number_of_events_that_can_be_attended;
 
-// #Medium #Array #Greedy #Heap_Priority_Queue
+// #Medium #Array #Greedy #Heap_Priority_Queue #Acceptance_33.4%
 // #2022_03_21_Time_70_ms_(21.66%)_Space_99.6_MB_(39.91%)
 
 import java.util.Arrays;

@@ -1,6 +1,6 @@
 package g0601_0700.s0690_employee_importance;
 
-// #Medium #Hash_Table #Depth_First_Search #Breadth_First_Search
+// #Medium #Hash_Table #Depth_First_Search #Breadth_First_Search #Acceptance_64.1%
 // #2022_03_22_Time_7_ms_(77.84%)_Space_58.8_MB_(21.60%)
 
 import com_github_leetcode.Employee;

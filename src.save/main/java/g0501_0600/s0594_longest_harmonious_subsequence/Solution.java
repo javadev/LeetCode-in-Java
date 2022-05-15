@@ -1,6 +1,7 @@
 package g0501_0600.s0594_longest_harmonious_subsequence;
 
-// #Easy #Array #Hash_Table #Sorting #2022_03_20_Time_11_ms_(99.77%)_Space_42.6_MB_(95.06%)
+// #Easy #Array #Hash_Table #Sorting #Acceptance_52.7%
+// #2022_03_20_Time_11_ms_(99.77%)_Space_42.6_MB_(95.06%)
 
 import java.util.Arrays;
 

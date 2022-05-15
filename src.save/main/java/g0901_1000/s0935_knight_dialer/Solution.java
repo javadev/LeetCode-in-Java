@@ -1,6 +1,7 @@
 package g0901_1000.s0935_knight_dialer;
 
-// #Medium #Dynamic_Programming #2022_03_30_Time_4_ms_(99.08%)_Space_42.2_MB_(81.87%)
+// #Medium #Dynamic_Programming #Acceptance_49.1%
+// #2022_03_30_Time_4_ms_(99.08%)_Space_42.2_MB_(81.87%)
 
 import java.util.ArrayList;
 import java.util.List;

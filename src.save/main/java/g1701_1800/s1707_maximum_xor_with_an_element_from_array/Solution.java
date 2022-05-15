@@ -1,6 +1,7 @@
 package g1701_1800.s1707_maximum_xor_with_an_element_from_array;
 
-// #Hard #Array #Bit_Manipulation #Trie #2022_04_24_Time_150_ms_(97.24%)_Space_91.7_MB_(99.31%)
+// #Hard #Array #Bit_Manipulation #Trie #Acceptance_43.3%
+// #2022_04_24_Time_150_ms_(97.24%)_Space_91.7_MB_(99.31%)
 
 import java.util.Arrays;
 import java.util.Comparator;

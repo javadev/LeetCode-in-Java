@@ -1,7 +1,7 @@
 package g0201_0300.s0264_ugly_number_ii;
 
-// #Medium #Hash_Table #Dynamic_Programming #Math #Heap_Priority_Queue #Dynamic_Programming_I_Day_11
-// #2022_03_14_Time_3_ms_(88.43%)_Space_42.8_MB_(37.28%)
+// #Medium #Hash_Table #Dynamic_Programming #Math #Heap_Priority_Queue #Acceptance_45.3%
+// #Dynamic_Programming_I_Day_11 #2022_03_14_Time_3_ms_(88.43%)_Space_42.8_MB_(37.28%)
 
 public class Solution {
     public int nthUglyNumber(int n) {

@@ -1,6 +1,6 @@
 package g0901_1000.s0919_complete_binary_tree_inserter;
 
-// #Medium #Breadth_First_Search #Tree #Binary_Tree #Design
+// #Medium #Breadth_First_Search #Tree #Binary_Tree #Design #Acceptance_64.1%
 // #2022_03_29_Time_11_ms_(96.06%)_Space_42.7_MB_(92.12%)
 
 import com_github_leetcode.TreeNode;

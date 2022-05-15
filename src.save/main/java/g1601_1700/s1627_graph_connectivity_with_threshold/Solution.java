@@ -1,6 +1,7 @@
 package g1601_1700.s1627_graph_connectivity_with_threshold;
 
-// #Hard #Array #Math #Union_Find #2022_04_18_Time_7_ms_(98.45%)_Space_75.7_MB_(97.93%)
+// #Hard #Array #Math #Union_Find #Acceptance_44.6%
+// #2022_04_18_Time_7_ms_(98.45%)_Space_75.7_MB_(97.93%)
 
 import java.util.ArrayList;
 import java.util.List;

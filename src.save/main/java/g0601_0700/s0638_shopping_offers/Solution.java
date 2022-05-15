@@ -1,7 +1,7 @@
 package g0601_0700.s0638_shopping_offers;
 
 // #Medium #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask #Memoization
-// #2022_03_21_Time_6_ms_(71.06%)_Space_42.6_MB_(71.63%)
+// #Acceptance_54.6% #2022_03_21_Time_6_ms_(71.06%)_Space_42.6_MB_(71.63%)
 
 import java.util.ArrayList;
 import java.util.HashMap;

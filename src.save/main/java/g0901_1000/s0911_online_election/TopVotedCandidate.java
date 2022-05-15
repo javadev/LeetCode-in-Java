@@ -1,6 +1,6 @@
 package g0901_1000.s0911_online_election;
 
-// #Medium #Array #Hash_Table #Binary_Search #Design #Binary_Search_II_Day_20
+// #Medium #Array #Hash_Table #Binary_Search #Design #Acceptance_51.7% #Binary_Search_II_Day_20
 // #2022_03_28_Time_63_ms_(98.81%)_Space_50.5_MB_(99.53%)
 
 public class TopVotedCandidate {

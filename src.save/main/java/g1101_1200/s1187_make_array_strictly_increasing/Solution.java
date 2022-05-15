@@ -1,6 +1,6 @@
 package g1101_1200.s1187_make_array_strictly_increasing;
 
-// #Hard #Array #Dynamic_Programming #Binary_Search
+// #Hard #Array #Dynamic_Programming #Binary_Search #Acceptance_44.5%
 // #2022_03_03_Time_33_ms_(95.51%)_Space_42.4_MB_(82.02%)
 
 import java.util.Arrays;

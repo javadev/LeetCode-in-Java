@@ -1,6 +1,6 @@
 package g0801_0900.s0811_subdomain_visit_count;
 
-// #Medium #Array #String #Hash_Table #Counting
+// #Medium #Array #String #Hash_Table #Counting #Acceptance_74.3%
 // #2022_03_23_Time_5_ms_(100.00%)_Space_42.8_MB_(95.59%)
 
 import java.util.ArrayList;

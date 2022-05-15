@@ -1,6 +1,6 @@
 package g0701_0800.s0721_accounts_merge;
 
-// #Medium #Array #String #Depth_First_Search #Breadth_First_Search #Union_Find
+// #Medium #Array #String #Depth_First_Search #Breadth_First_Search #Union_Find #Acceptance_55.9%
 // #2022_03_24_Time_71_ms_(31.21%)_Space_68.3_MB_(18.21%)
 
 import java.util.ArrayList;

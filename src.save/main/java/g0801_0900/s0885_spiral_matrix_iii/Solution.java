@@ -1,6 +1,7 @@
 package g0801_0900.s0885_spiral_matrix_iii;
 
-// #Medium #Array #Matrix #Simulation #2022_03_28_Time_3_ms_(95.45%)_Space_64_MB_(42.42%)
+// #Medium #Array #Matrix #Simulation #Acceptance_72.5%
+// #2022_03_28_Time_3_ms_(95.45%)_Space_64_MB_(42.42%)
 
 @SuppressWarnings("java:S135")
 public class Solution {

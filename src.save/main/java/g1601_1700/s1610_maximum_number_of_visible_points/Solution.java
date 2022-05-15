@@ -1,6 +1,6 @@
 package g1601_1700.s1610_maximum_number_of_visible_points;
 
-// #Hard #Array #Math #Sorting #Sliding_Window #Geometry
+// #Hard #Array #Math #Sorting #Sliding_Window #Geometry #Acceptance_36.8%
 // #2022_04_12_Time_122_ms_(97.44%)_Space_86.3_MB_(94.58%)
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package g0901_1000.s0968_binary_tree_cameras;
 
-// #Hard #Dynamic_Programming #Depth_First_Search #Tree #Binary_Tree
+// #Hard #Dynamic_Programming #Depth_First_Search #Tree #Binary_Tree #Acceptance_42.0%
 // #2022_03_31_Time_0_ms_(100.00%)_Space_41.4_MB_(98.84%)
 
 import com_github_leetcode.TreeNode;

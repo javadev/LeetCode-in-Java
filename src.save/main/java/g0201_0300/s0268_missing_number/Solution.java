@@ -1,7 +1,7 @@
 package g0201_0300.s0268_missing_number;
 
 // #Easy #Top_Interview_Questions #Array #Hash_Table #Math #Sorting #Bit_Manipulation
-// #2022_03_14_Time_0_ms_(100.00%)_Space_51.1_MB_(42.73%)
+// #Acceptance_59.5% #2022_03_14_Time_0_ms_(100.00%)_Space_51.1_MB_(42.73%)
 
 public class Solution {
     public int missingNumber(int[] nums) {

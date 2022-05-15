@@ -1,6 +1,7 @@
 package g1101_1200.s1186_maximum_subarray_sum_with_one_deletion;
 
-// #Medium #Array #Dynamic_Programming #2022_03_03_Time_3_ms_(94.48%)_Space_52.3_MB_(76.90%)
+// #Medium #Array #Dynamic_Programming #Acceptance_40.7%
+// #2022_03_03_Time_3_ms_(94.48%)_Space_52.3_MB_(76.90%)
 
 public class Solution {
     public int maximumSum(int[] arr) {

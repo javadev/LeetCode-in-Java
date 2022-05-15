@@ -1,6 +1,6 @@
 package g0101_0200.s0126_word_ladder_ii;
 
-// #Hard #String #Hash_Table #Breadth_First_Search #Backtracking
+// #Hard #String #Hash_Table #Breadth_First_Search #Backtracking #Acceptance_27.0%
 // #2022_02_22_Time_4_ms_(99.18%)_Space_42.4_MB_(70.92%)
 
 import java.util.ArrayList;

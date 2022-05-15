@@ -1,6 +1,7 @@
 package g1301_1400.s1357_apply_discount_every_n_orders;
 
-// #Medium #Array #Hash_Table #Design #2022_03_21_Time_174_ms_(58.82%)_Space_125.4_MB_(66.39%)
+// #Medium #Array #Hash_Table #Design #Acceptance_69.0%
+// #2022_03_21_Time_174_ms_(58.82%)_Space_125.4_MB_(66.39%)
 
 import java.util.HashMap;
 import java.util.Map;

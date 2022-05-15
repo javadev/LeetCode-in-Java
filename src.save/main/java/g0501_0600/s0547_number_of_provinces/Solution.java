@@ -1,6 +1,6 @@
 package g0501_0600.s0547_number_of_provinces;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Graph #Union_Find
+// #Medium #Depth_First_Search #Breadth_First_Search #Graph #Union_Find #Acceptance_62.6%
 // #Algorithm_II_Day_6_Breadth_First_Search_Depth_First_Search
 // #Graph_Theory_I_Day_8_Standard_Traversal #2022_03_20_Time_1_ms_(94.56%)_Space_54.1_MB_(42.80%)
 

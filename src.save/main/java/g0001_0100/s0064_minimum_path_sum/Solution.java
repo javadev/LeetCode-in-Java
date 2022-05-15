@@ -1,6 +1,6 @@
 package g0001_0100.s0064_minimum_path_sum;
 
-// #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Matrix
+// #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Matrix #Acceptance_59.4%
 // #Dynamic_Programming_I_Day_16 #2022_02_19_Time_1_ms_(99.65%)_Space_45.8_MB_(22.41%)
 
 public class Solution {

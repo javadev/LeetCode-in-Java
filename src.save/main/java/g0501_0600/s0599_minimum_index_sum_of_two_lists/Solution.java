@@ -1,6 +1,7 @@
 package g0501_0600.s0599_minimum_index_sum_of_two_lists;
 
-// #Easy #Array #String #Hash_Table #2022_03_20_Time_7_ms_(93.97%)_Space_42.8_MB_(89.09%)
+// #Easy #Array #String #Hash_Table #Acceptance_52.7%
+// #2022_03_20_Time_7_ms_(93.97%)_Space_42.8_MB_(89.09%)
 
 import java.util.ArrayList;
 import java.util.HashMap;

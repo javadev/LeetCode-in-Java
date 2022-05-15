@@ -1,6 +1,7 @@
 package g1101_1200.s1128_number_of_equivalent_domino_pairs;
 
-// #Easy #Array #Hash_Table #Counting #2022_03_09_Time_10_ms_(69.88%)_Space_51.4_MB_(88.61%)
+// #Easy #Array #Hash_Table #Counting #Acceptance_46.4%
+// #2022_03_09_Time_10_ms_(69.88%)_Space_51.4_MB_(88.61%)
 
 import java.util.HashMap;
 import java.util.Map;

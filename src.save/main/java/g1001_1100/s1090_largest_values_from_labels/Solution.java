@@ -1,6 +1,6 @@
 package g1001_1100.s1090_largest_values_from_labels;
 
-// #Medium #Array #Hash_Table #Sorting #Greedy #Counting
+// #Medium #Array #Hash_Table #Sorting #Greedy #Counting #Acceptance_60.6%
 // #2022_02_23_Time_14_ms_(95.96%)_Space_43.2_MB_(80.43%)
 
 import java.util.HashMap;

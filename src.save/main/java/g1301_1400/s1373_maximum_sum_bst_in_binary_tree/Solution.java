@@ -1,7 +1,7 @@
 package g1301_1400.s1373_maximum_sum_bst_in_binary_tree;
 
 // #Hard #Dynamic_Programming #Depth_First_Search #Tree #Binary_Tree #Binary_Search_Tree
-// #2022_03_22_Time_15_ms_(47.56%)_Space_81.5_MB_(11.51%)
+// #Acceptance_38.7% #2022_03_22_Time_15_ms_(47.56%)_Space_81.5_MB_(11.51%)
 
 import com_github_leetcode.TreeNode;
 

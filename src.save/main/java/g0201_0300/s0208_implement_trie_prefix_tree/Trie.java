@@ -1,7 +1,7 @@
 package g0201_0300.s0208_implement_trie_prefix_tree;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Hash_Table #Design #Trie
-// #2022_03_04_Time_63_ms_(55.40%)_Space_67.2_MB_(42.09%)
+// #Acceptance_58.3% #2022_03_04_Time_63_ms_(55.40%)_Space_67.2_MB_(42.09%)
 
 @SuppressWarnings("java:S1104")
 public class Trie {

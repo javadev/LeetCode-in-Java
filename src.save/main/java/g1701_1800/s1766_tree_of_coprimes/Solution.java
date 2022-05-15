@@ -1,6 +1,6 @@
 package g1701_1800.s1766_tree_of_coprimes;
 
-// #Hard #Math #Depth_First_Search #Breadth_First_Search #Tree
+// #Hard #Math #Depth_First_Search #Breadth_First_Search #Tree #Acceptance_38.2%
 // #2022_04_30_Time_111_ms_(94.07%)_Space_155.4_MB_(40.68%)
 
 import java.util.ArrayList;

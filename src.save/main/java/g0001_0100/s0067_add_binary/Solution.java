@@ -1,6 +1,6 @@
 package g0001_0100.s0067_add_binary;
 
-// #Easy #String #Math #Bit_Manipulation #Simulation #Programming_Skills_II_Day_5
+// #Easy #String #Math #Bit_Manipulation #Simulation #Acceptance_50.5% #Programming_Skills_II_Day_5
 // #2022_02_19_Time_3_ms_(67.14%)_Space_42.4_MB_(14.42%)
 
 public class Solution {

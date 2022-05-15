@@ -1,6 +1,7 @@
 package g0901_1000.s0950_reveal_cards_in_increasing_order;
 
-// #Medium #Array #Sorting #Simulation #Queue #2022_03_30_Time_1_ms_(100.00%)_Space_42.6_MB_(83.19%)
+// #Medium #Array #Sorting #Simulation #Queue #Acceptance_77.1%
+// #2022_03_30_Time_1_ms_(100.00%)_Space_42.6_MB_(83.19%)
 
 import java.util.Arrays;
 

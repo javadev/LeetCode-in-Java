@@ -1,6 +1,6 @@
 package g0901_1000.s0907_sum_of_subarray_minimums;
 
-// #Medium #Array #Dynamic_Programming #Stack #Monotonic_Stack
+// #Medium #Array #Dynamic_Programming #Stack #Monotonic_Stack #Acceptance_33.9%
 // #2022_03_28_Time_20_ms_(95.88%)_Space_64_MB_(76.91%)
 
 public class Solution {

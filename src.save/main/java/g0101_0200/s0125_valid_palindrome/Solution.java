@@ -1,6 +1,6 @@
 package g0101_0200.s0125_valid_palindrome;
 
-// #Easy #Top_Interview_Questions #String #Two_Pointers
+// #Easy #Top_Interview_Questions #String #Two_Pointers #Acceptance_41.8%
 // #2022_02_22_Time_3_ms_(88.82%)_Space_43.4_MB_(41.11%)
 
 public class Solution {

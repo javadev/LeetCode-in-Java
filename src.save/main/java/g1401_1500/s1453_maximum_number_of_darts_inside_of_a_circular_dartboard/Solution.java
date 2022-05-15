@@ -1,6 +1,7 @@
 package g1401_1500.s1453_maximum_number_of_darts_inside_of_a_circular_dartboard;
 
-// #Hard #Array #Math #Geometry #2022_03_28_Time_22_ms_(100.00%)_Space_41.7_MB_(96.43%)
+// #Hard #Array #Math #Geometry #Acceptance_36.6%
+// #2022_03_28_Time_22_ms_(100.00%)_Space_41.7_MB_(96.43%)
 
 import java.util.ArrayList;
 import java.util.Collections;

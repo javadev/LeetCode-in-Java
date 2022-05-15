@@ -1,6 +1,6 @@
 package g1601_1700.s1678_goal_parser_interpretation;
 
-// #Easy #String #Programming_Skills_I_Day_8_String
+// #Easy #String #Acceptance_85.8% #Programming_Skills_I_Day_8_String
 // #2022_04_21_Time_0_ms_(100.00%)_Space_40.4_MB_(87.95%)
 
 public class Solution {

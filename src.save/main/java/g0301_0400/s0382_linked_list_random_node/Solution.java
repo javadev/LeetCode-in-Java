@@ -1,6 +1,6 @@
 package g0301_0400.s0382_linked_list_random_node;
 
-// #Medium #Math #Linked_List #Randomized #Reservoir_Sampling
+// #Medium #Math #Linked_List #Randomized #Reservoir_Sampling #Acceptance_59.0%
 // #2022_03_18_Time_7_ms_(100.00%)_Space_44.1_MB_(87.88%)
 
 import com_github_leetcode.ListNode;

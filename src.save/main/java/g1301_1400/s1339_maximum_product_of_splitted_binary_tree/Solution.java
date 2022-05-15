@@ -1,6 +1,6 @@
 package g1301_1400.s1339_maximum_product_of_splitted_binary_tree;
 
-// #Medium #Depth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Tree #Binary_Tree #Acceptance_43.0%
 // #2022_03_19_Time_11_ms_(83.43%)_Space_68.5_MB_(64.19%)
 
 import com_github_leetcode.TreeNode;

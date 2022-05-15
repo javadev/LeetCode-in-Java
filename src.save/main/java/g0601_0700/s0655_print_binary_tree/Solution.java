@@ -1,6 +1,6 @@
 package g0601_0700.s0655_print_binary_tree;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Acceptance_60.0%
 // #2022_03_21_Time_1_ms_(98.04%)_Space_42.4_MB_(79.96%)
 
 import com_github_leetcode.TreeNode;

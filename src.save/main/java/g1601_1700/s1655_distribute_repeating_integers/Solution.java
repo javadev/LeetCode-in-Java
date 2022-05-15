@@ -1,6 +1,6 @@
 package g1601_1700.s1655_distribute_repeating_integers;
 
-// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
+// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask #Acceptance_40.2%
 // #2022_04_23_Time_7_ms_(94.23%)_Space_75.4_MB_(73.08%)
 
 import java.util.Arrays;

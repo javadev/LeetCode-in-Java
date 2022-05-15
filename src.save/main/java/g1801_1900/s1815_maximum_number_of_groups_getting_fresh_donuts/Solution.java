@@ -1,6 +1,6 @@
 package g1801_1900.s1815_maximum_number_of_groups_getting_fresh_donuts;
 
-// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask #Memoization
+// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask #Memoization #Acceptance_39.8%
 // #2022_05_03_Time_7_ms_(86.67%)_Space_43.6_MB_(73.33%)
 
 import java.util.Arrays;

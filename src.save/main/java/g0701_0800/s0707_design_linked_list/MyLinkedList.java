@@ -1,7 +1,7 @@
 package g0701_0800.s0707_design_linked_list;
 
-// #Medium #Design #Linked_List #Data_Structure_II_Day_12_Linked_List #Programming_Skills_II_Day_19
-// #2022_03_23_Time_10_ms_(70.60%)_Space_50.6_MB_(48.08%)
+// #Medium #Design #Linked_List #Acceptance_27.0% #Data_Structure_II_Day_12_Linked_List
+// #Programming_Skills_II_Day_19 #2022_03_23_Time_10_ms_(70.60%)_Space_50.6_MB_(48.08%)
 
 public class MyLinkedList {
     private static class Node {

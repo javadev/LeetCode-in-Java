@@ -1,7 +1,7 @@
 package g0901_1000.s0996_number_of_squareful_arrays;
 
 // #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Backtracking #Bitmask
-// #2022_03_31_Time_2_ms_(72.32%)_Space_41.9_MB_(32.14%)
+// #Acceptance_49.1% #2022_03_31_Time_2_ms_(72.32%)_Space_41.9_MB_(32.14%)
 
 import java.util.HashSet;
 import java.util.Set;

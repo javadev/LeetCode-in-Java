@@ -1,6 +1,6 @@
 package g0201_0300.s0213_house_robber_ii;
 
-// #Medium #Array #Dynamic_Programming #Algorithm_II_Day_12_Dynamic_Programming
+// #Medium #Array #Dynamic_Programming #Acceptance_39.9% #Algorithm_II_Day_12_Dynamic_Programming
 // #Dynamic_Programming_I_Day_3 #2022_03_05_Time_1_ms_(31.05%)_Space_40.7_MB_(45.44%)
 
 public class Solution {

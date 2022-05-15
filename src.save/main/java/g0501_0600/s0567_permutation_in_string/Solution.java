@@ -1,7 +1,7 @@
 package g0501_0600.s0567_permutation_in_string;
 
-// #Medium #String #Hash_Table #Two_Pointers #Sliding_Window #Algorithm_I_Day_6_Sliding_Window
-// #2022_03_20_Time_4_ms_(95.23%)_Space_43.6_MB_(40.52%)
+// #Medium #String #Hash_Table #Two_Pointers #Sliding_Window #Acceptance_44.6%
+// #Algorithm_I_Day_6_Sliding_Window #2022_03_20_Time_4_ms_(95.23%)_Space_43.6_MB_(40.52%)
 
 public class Solution {
     public boolean checkInclusion(String s1, String s2) {

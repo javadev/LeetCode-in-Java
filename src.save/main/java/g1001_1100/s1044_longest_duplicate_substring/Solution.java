@@ -1,7 +1,7 @@
 package g1001_1100.s1044_longest_duplicate_substring;
 
 // #Hard #String #Binary_Search #Sliding_Window #Hash_Function #Rolling_Hash #Suffix_Array
-// #2022_02_27_Time_447_ms_(62.53%)_Space_118.6_MB_(57.97%)
+// #Acceptance_31.1% #2022_02_27_Time_447_ms_(62.53%)_Space_118.6_MB_(57.97%)
 
 import java.util.ArrayList;
 import java.util.HashSet;

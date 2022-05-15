@@ -1,6 +1,7 @@
 package g0401_0500.s0419_battleships_in_a_board;
 
-// #Medium #Array #Depth_First_Search #Matrix #2022_03_18_Time_1_ms_(83.10%)_Space_44.4_MB_(38.04%)
+// #Medium #Array #Depth_First_Search #Matrix #Acceptance_73.6%
+// #2022_03_18_Time_1_ms_(83.10%)_Space_44.4_MB_(38.04%)
 
 public class Solution {
     public int countBattleships(char[][] board) {

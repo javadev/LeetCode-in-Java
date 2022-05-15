@@ -1,6 +1,6 @@
 package g0001_0100.s0059_spiral_matrix_ii;
 
-// #Medium #Array #Matrix #Simulation #Data_Structure_II_Day_3_Array
+// #Medium #Array #Matrix #Simulation #Acceptance_65.0% #Data_Structure_II_Day_3_Array
 // #2022_02_19_Time_0_ms_(100.00%)_Space_42.5_MB_(5.31%)
 
 public class Solution {
