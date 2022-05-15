@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private static final int MOD = 1000000007;
     private List<Integer>[] graph;
