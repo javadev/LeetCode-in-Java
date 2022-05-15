@@ -21,16 +21,12 @@ public class Solution {
         if (n == 2) {
             return (int) (6L * powMod(3, m - 1) % P);
         }
-
         int totalTemplates = 1 << (m - 2);
         int totalPaintings = binPow(3, m);
-
         int[] paintingToTemplate = new int[totalPaintings];
         long[] paintingCountForTemplate = new long[totalTemplates];
         long[][] templateEdgeCount = new long[totalTemplates][totalTemplates];
-
         Map<Integer, Integer> templateToIndex = new HashMap<>(1 << (m - 2));
-
         int templateCounter = 0;
         for (int i = 0; i < totalPaintings; i++) {
             int type = getType(i, m);
@@ -66,7 +62,6 @@ public class Solution {
                 templateEdgeCount[i][j] /= c;
             }
         }
-
         long[][] matrixPower = matrixPower(templateEdgeCount, (long) n - 1);
         long ans = 0;
         for (int i = 0; i < totalTemplates; i++) {
