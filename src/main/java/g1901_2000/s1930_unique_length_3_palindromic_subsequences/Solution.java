@@ -10,13 +10,11 @@ public class Solution {
     public int countPalindromicSubsequence(String s) {
         int[] last = new int[26];
         Arrays.fill(last, -1);
-
         for (int i = s.length() - 1; i >= 0; i--) {
             if (last[s.charAt(i) - 'a'] == -1) {
                 last[s.charAt(i) - 'a'] = i;
             }
         }
-
         int ans = 0;
         int[] count = new int[26];
         Map<Integer, int[]> first = new HashMap<>();
@@ -38,7 +36,6 @@ public class Solution {
                 first.put(cur, count.clone());
             }
         }
-
         return ans;
     }
 }
