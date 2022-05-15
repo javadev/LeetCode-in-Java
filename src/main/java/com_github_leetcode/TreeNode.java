@@ -21,7 +21,7 @@ public class TreeNode {
     }
 
     public static TreeNode create(List<Integer> treeValues) {
-        TreeNode root = !treeValues.isEmpty() ? new TreeNode(treeValues.get(0)) : null;
+        TreeNode root = treeValues.isEmpty() ? null : new TreeNode(treeValues.get(0));
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
         int i = 1;

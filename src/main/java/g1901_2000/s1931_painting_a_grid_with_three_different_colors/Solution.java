@@ -1,5 +1,7 @@
 package g1901_2000.s1931_painting_a_grid_with_three_different_colors;
 
+// #Hard #Dynamic_Programming #2022_05_15_Time_7_ms_(99.32%)_Space_41.3_MB_(97.30%)
+
 import java.util.HashMap;
 import java.util.Map;
 

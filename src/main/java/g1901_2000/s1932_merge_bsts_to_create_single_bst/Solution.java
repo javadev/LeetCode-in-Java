@@ -1,5 +1,8 @@
 package g1901_2000.s1932_merge_bsts_to_create_single_bst;
 
+// #Hard #Hash_Table #Depth_First_Search #Tree #Binary_Search #Binary_Tree
+// #2022_05_15_Time_87_ms_(48.43%)_Space_145.9_MB_(64.15%)
+
 import com_github_leetcode.TreeNode;
 import java.util.ArrayDeque;
 import java.util.HashMap;
