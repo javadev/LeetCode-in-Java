@@ -22,13 +22,11 @@ public class Solution {
         final int n = passingFees.length;
         final int[] minTime = new int[n];
         Arrays.fill(minTime, Integer.MAX_VALUE);
-
         final Graph graph = new Graph();
         for (final int[] edge : edges) {
             graph.addEdge(edge[0], edge[1], edge[2]);
         }
         pq.offer(new Tuple(0, passingFees[0], 0));
-
         while (!pq.isEmpty()) {
             final Tuple curr = pq.poll();
             if (curr.time > maxTime || curr.time >= minTime[curr.node]) {
@@ -49,7 +47,6 @@ public class Solution {
                 pq.offer(new Tuple(edge.dst, curr.cost + passingFees[edge.dst], time));
             }
         }
-
         return -1;
     }
 
