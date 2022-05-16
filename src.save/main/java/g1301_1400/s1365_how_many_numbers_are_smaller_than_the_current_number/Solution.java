@@ -1,23 +1,24 @@
 package g1301_1400.s1365_how_many_numbers_are_smaller_than_the_current_number;
 
-// #Easy #Array #Hash_Table #Sorting #Counting #2022_03_21_Time_26_ms_(6.46%)_Space_45_MB_(18.09%)
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+// #Easy #Array #Hash_Table #Sorting #Counting #2022_05_16_Time_1_ms_(99.78%)_Space_45_MB_(22.25%)
 
 public class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
-        int[] result = new int[nums.length];
-        int[] tmp = Arrays.copyOf(nums, nums.length);
-        Arrays.sort(tmp);
-        List<Integer> list = new ArrayList<>();
-        for (int i : tmp) {
-            list.add(i);
-        }
+        int[] ans = new int[nums.length];
+        int[] temp = new int[101];
         for (int i = 0; i < nums.length; i++) {
-            result[i] = list.indexOf(nums[i]);
+            temp[nums[i]]++;
         }
-        return result;
+        for (int i = 1; i < 101; i++) {
+            temp[i] += temp[i - 1];
+        }
+        for (int i = 0; i < ans.length; i++) {
+            if (nums[i] == 0) {
+                ans[i] = 0;
+            } else {
+                ans[i] = temp[nums[i] - 1];
+            }
+        }
+        return ans;
     }
 }
