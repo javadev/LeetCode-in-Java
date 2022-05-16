@@ -12,13 +12,7 @@ import java.util.PriorityQueue;
 public class Solution {
     public int minCost(int maxTime, int[][] edges, int[] passingFees) {
         final PriorityQueue<Tuple> pq =
-                new PriorityQueue<>(
-                        (a, b) -> {
-                            if (a.cost != b.cost) {
-                                return a.cost - b.cost;
-                            }
-                            return a.time - b.time;
-                        });
+                new PriorityQueue<>((a, b) -> a.cost == b.cost ? a.time - b.time : a.cost - b.cost);
         final int n = passingFees.length;
         final int[] minTime = new int[n];
         Arrays.fill(minTime, Integer.MAX_VALUE);
@@ -69,10 +63,6 @@ public class Solution {
             this.dst = dst;
             this.weight = weight;
         }
-
-        public String toString() {
-            return "(" + src + "," + dst + "," + weight + ")";
-        }
     }
 
     private static class Tuple {
@@ -84,10 +74,6 @@ public class Solution {
             this.node = node;
             this.cost = cost;
             this.time = time;
-        }
-
-        public String toString() {
-            return "(" + node + "," + cost + "," + time + ")";
         }
     }
 }
