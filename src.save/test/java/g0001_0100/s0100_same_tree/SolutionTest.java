@@ -5,9 +5,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.TreeNode;
 import com_github_leetcode.TreeUtils;
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
+import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
