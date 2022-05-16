@@ -12,13 +12,7 @@ import java.util.PriorityQueue;
 public class Solution {
     public int minCost(int maxTime, int[][] edges, int[] passingFees) {
         final PriorityQueue<Tuple> pq =
-                new PriorityQueue<>(
-                        (a, b) -> {
-                            if (a.cost != b.cost) {
-                                return a.cost - b.cost;
-                            }
-                            return a.time - b.time;
-                        });
+                new PriorityQueue<>((a, b) -> a.cost == b.cost ? a.time - b.time : a.cost - b.cost);
         final int n = passingFees.length;
         final int[] minTime = new int[n];
         Arrays.fill(minTime, Integer.MAX_VALUE);
@@ -29,22 +23,18 @@ public class Solution {
         pq.offer(new Tuple(0, passingFees[0], 0));
         while (!pq.isEmpty()) {
             final Tuple curr = pq.poll();
-            if (curr.time > maxTime || curr.time >= minTime[curr.node]) {
-                continue;
-            }
-            minTime[curr.node] = curr.time;
-            if (curr.node == n - 1) {
-                return curr.cost;
-            }
-            for (final Edge edge : graph.getEdges(curr.node)) {
-                final int time = curr.time + edge.weight;
-                if (time > maxTime) {
-                    continue;
+            if (curr.time <= maxTime && curr.time < minTime[curr.node]) {
+                minTime[curr.node] = curr.time;
+                if (curr.node == n - 1) {
+                    return curr.cost;
                 }
-                if (time >= minTime[edge.dst]) {
-                    continue;
+                for (final Edge edge : graph.getEdges(curr.node)) {
+                    final int time = curr.time + edge.weight;
+                    if (time > maxTime || time >= minTime[edge.dst]) {
+                        continue;
+                    }
+                    pq.offer(new Tuple(edge.dst, curr.cost + passingFees[edge.dst], time));
                 }
-                pq.offer(new Tuple(edge.dst, curr.cost + passingFees[edge.dst], time));
             }
         }
         return -1;
@@ -54,8 +44,8 @@ public class Solution {
         private final Map<Integer, List<Edge>> edges = new HashMap<>();
 
         private void addEdge(final int src, final int dst, final int weight) {
-            this.edges.computeIfAbsent(src, k -> new ArrayList<>()).add(new Edge(src, dst, weight));
-            this.edges.computeIfAbsent(dst, k -> new ArrayList<>()).add(new Edge(dst, src, weight));
+            this.edges.computeIfAbsent(src, k -> new ArrayList<>()).add(new Edge(dst, weight));
+            this.edges.computeIfAbsent(dst, k -> new ArrayList<>()).add(new Edge(src, weight));
         }
 
         private List<Edge> getEdges(final int node) {
@@ -64,18 +54,12 @@ public class Solution {
     }
 
     private static final class Edge {
-        private final int src;
         private final int dst;
         private final int weight;
 
-        private Edge(final int src, final int dst, final int weight) {
-            this.src = src;
+        private Edge(final int dst, final int weight) {
             this.dst = dst;
             this.weight = weight;
-        }
-
-        public String toString() {
-            return "(" + src + "," + dst + "," + weight + ")";
         }
     }
 
@@ -88,10 +72,6 @@ public class Solution {
             this.node = node;
             this.cost = cost;
             this.time = time;
-        }
-
-        public String toString() {
-            return "(" + node + "," + cost + "," + time + ")";
         }
     }
 }
