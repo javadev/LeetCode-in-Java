@@ -11,7 +11,8 @@ public class Solution {
         }
         int[] ret = new int[queries.length];
         for (int q = 0; q < queries.length; q++) {
-            int cur = queries[q][0], value = queries[q][1];
+            int cur = queries[q][0];
+            int value = queries[q][1];
             for (int p = 30; p >= 0; p--) {
                 int msk = 1 << p;
                 if ((value & msk) != (cur & msk)) {

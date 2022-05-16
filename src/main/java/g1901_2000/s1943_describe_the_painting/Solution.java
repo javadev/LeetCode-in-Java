@@ -29,7 +29,8 @@ public class Solution {
         }
 
         long mixedColor = 0;
-        for (int end = 1, start = 1; end < n; end++) {
+        int start = 1;
+        for (int end = 1; end < n; end++) {
             if (endpoint[end]) {
                 if (mixedColor > 0) {
                     result.add(Arrays.asList((long) start, (long) end, mixedColor));
