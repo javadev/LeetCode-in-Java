@@ -23,13 +23,15 @@ public class Solution {
             }
             // p is now a prime number, set self as root.
             nodes[p] = p;
-            for (int group = p, num = p + p; num <= max; num += p) {
+            int group = p;
+            int num = p + p;
+            while (num <= max) {
                 int existing = nodes[num];
                 if (existing < 0) {
                     // 1st hit, set group
                     nodes[num] = group;
                 } else if (existing <= 1) {
-                    // value doens't exist in nums
+                    // value doesn't exist in nums
                     nodes[num] = 1;
                 } else if ((existing = root(nodes, existing)) < group) {
                     nodes[group] = existing;
@@ -37,6 +39,7 @@ public class Solution {
                 } else {
                     nodes[existing] = group;
                 }
+                num += p;
             }
         }
         for (int i = 0; i < len; i++) {
