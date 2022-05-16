@@ -29,22 +29,18 @@ public class Solution {
         pq.offer(new Tuple(0, passingFees[0], 0));
         while (!pq.isEmpty()) {
             final Tuple curr = pq.poll();
-            if (curr.time > maxTime || curr.time >= minTime[curr.node]) {
-                continue;
-            }
-            minTime[curr.node] = curr.time;
-            if (curr.node == n - 1) {
-                return curr.cost;
-            }
-            for (final Edge edge : graph.getEdges(curr.node)) {
-                final int time = curr.time + edge.weight;
-                if (time > maxTime) {
-                    continue;
+            if (curr.time <= maxTime && curr.time < minTime[curr.node]) {
+                minTime[curr.node] = curr.time;
+                if (curr.node == n - 1) {
+                    return curr.cost;
                 }
-                if (time >= minTime[edge.dst]) {
-                    continue;
+                for (final Edge edge : graph.getEdges(curr.node)) {
+                    final int time = curr.time + edge.weight;
+                    if (time > maxTime || time >= minTime[edge.dst]) {
+                        continue;
+                    }
+                    pq.offer(new Tuple(edge.dst, curr.cost + passingFees[edge.dst], time));
                 }
-                pq.offer(new Tuple(edge.dst, curr.cost + passingFees[edge.dst], time));
             }
         }
         return -1;

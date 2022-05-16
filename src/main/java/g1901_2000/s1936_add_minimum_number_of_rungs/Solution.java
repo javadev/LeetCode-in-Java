@@ -6,7 +6,8 @@ public class Solution {
     public int addRungs(int[] rungs, int dist) {
         int addons = 0;
         int currentHeight = 0;
-        for (int i = 0; i < rungs.length; ) {
+        int i = 0;
+        while (i < rungs.length) {
             int nextRung = rungs[i];
             if (nextRung - currentHeight <= dist) {
                 currentHeight = nextRung;
