@@ -44,8 +44,8 @@ public class Solution {
         private final Map<Integer, List<Edge>> edges = new HashMap<>();
 
         private void addEdge(final int src, final int dst, final int weight) {
-            this.edges.computeIfAbsent(src, k -> new ArrayList<>()).add(new Edge(src, dst, weight));
-            this.edges.computeIfAbsent(dst, k -> new ArrayList<>()).add(new Edge(dst, src, weight));
+            this.edges.computeIfAbsent(src, k -> new ArrayList<>()).add(new Edge(dst, weight));
+            this.edges.computeIfAbsent(dst, k -> new ArrayList<>()).add(new Edge(src, weight));
         }
 
         private List<Edge> getEdges(final int node) {
@@ -54,12 +54,10 @@ public class Solution {
     }
 
     private static final class Edge {
-        private final int src;
         private final int dst;
         private final int weight;
 
-        private Edge(final int src, final int dst, final int weight) {
-            this.src = src;
+        private Edge(final int dst, final int weight) {
             this.dst = dst;
             this.weight = weight;
         }
