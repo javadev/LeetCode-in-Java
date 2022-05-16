@@ -10,15 +10,12 @@ public class Solution {
     public List<List<Long>> splitPainting(int[][] segments) {
         List<List<Long>> result = new ArrayList<>();
         int n = 1;
-
         for (int[] s : segments) {
             n = Math.max(n, s[1]);
         }
         n += 1;
-
         long[] line = new long[n];
         boolean[] endpoint = new boolean[n];
-
         for (int[] s : segments) {
             int start = s[0];
             int end = s[1];
@@ -27,7 +24,6 @@ public class Solution {
             line[end] -= color;
             endpoint[start] = endpoint[end] = true;
         }
-
         long mixedColor = 0;
         int start = 1;
         for (int end = 1; end < n; end++) {
@@ -37,10 +33,8 @@ public class Solution {
                 }
                 start = end;
             }
-
             mixedColor += line[end];
         }
-
         return result;
     }
 }
