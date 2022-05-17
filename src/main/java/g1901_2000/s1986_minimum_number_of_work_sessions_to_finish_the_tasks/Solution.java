@@ -14,7 +14,7 @@ public class Solution {
         // maximum, each task take 1 session to finish
         int j = len;
         while (i < j) {
-            // try m sessions to see whether can work
+            // try m sessions to see whether it can work
             int m = (i + j) / 2;
             if (canFit(tasks, new int[m], sessionTime, len - 1)) {
                 j = m;
@@ -35,10 +35,7 @@ public class Solution {
         // try each spot
         for (int i = 0; i < sessions.length; i++) {
             // current spot cannot fit
-            if (sessions[i] + tasks[idx] > sessionTime) {
-                continue;
-            }
-            if (dup.contains(sessions[i] + tasks[idx])) {
+            if (sessions[i] + tasks[idx] > sessionTime || dup.contains(sessions[i] + tasks[idx])) {
                 continue;
             }
             dup.add(sessions[i] + tasks[idx]);
