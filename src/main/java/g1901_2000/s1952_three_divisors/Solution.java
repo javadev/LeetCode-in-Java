@@ -1,6 +1,6 @@
 package g1901_2000.s1952_three_divisors;
 
-// #Easy #Math #2022_05_18_Time_3_ms_(6.76%)_Space_39.9_MB_(72.52%)
+// #Easy #Math #2022_05_18_Time_1_ms_(84.91%)_Space_39.4_MB_(79.95%)
 
 public class Solution {
     public boolean isThree(int n) {
