@@ -1,56 +1,47 @@
-1946\. Largest Number After Mutating Substring
+1947\. Maximum Compatibility Score Sum
 
 Medium
 
-You are given a string `num`, which represents a large integer. You are also given a **0-indexed** integer array `change` of length `10` that maps each digit `0-9` to another digit. More formally, digit `d` maps to digit `change[d]`.
+There is a survey that consists of `n` questions where each question's answer is either `0` (no) or `1` (yes).
 
-You may **choose** to **mutate a single substring** of `num`. To mutate a substring, replace each digit `num[i]` with the digit it maps to in `change` (i.e. replace `num[i]` with `change[num[i]]`).
+The survey was given to `m` students numbered from `0` to `m - 1` and `m` mentors numbered from `0` to `m - 1`. The answers of the students are represented by a 2D integer array `students` where `students[i]` is an integer array that contains the answers of the <code>i<sup>th</sup></code> student (**0-indexed**). The answers of the mentors are represented by a 2D integer array `mentors` where `mentors[j]` is an integer array that contains the answers of the <code>j<sup>th</sup></code> mentor (**0-indexed**).
 
-Return _a string representing the **largest** possible integer after **mutating** (or choosing not to) a **single substring** of_ `num`.
+Each student will be assigned to **one** mentor, and each mentor will have **one** student assigned to them. The **compatibility score** of a student-mentor pair is the number of answers that are the same for both the student and the mentor.
 
-A **substring** is a contiguous sequence of characters within the string.
+*   For example, if the student's answers were `[1, 0, 1]` and the mentor's answers were `[0, 0, 1]`, then their compatibility score is 2 because only the second and the third answers are the same.
+
+You are tasked with finding the optimal student-mentor pairings to **maximize** the **sum of the compatibility scores**.
+
+Given `students` and `mentors`, return _the **maximum compatibility score sum** that can be achieved._
 
 **Example 1:**
 
-**Input:** num = "132", change = [9,8,5,0,3,6,4,2,6,8]
+**Input:** students = [[1,1,0],[1,0,1],[0,0,1]], mentors = [[1,0,0],[0,0,1],[1,1,0]]
 
-**Output:** "832"
+**Output:** 8
 
-**Explanation:** Replace the substring "1": 
+**Explanation:** We assign students to mentors in the following way: 
 
-- 1 maps to change[1] = 8. Thus, "132" becomes "832". 
+- student 0 to mentor 2 with a compatibility score of 3. 
+
+- student 1 to mentor 0 with a compatibility score of 2. 
   
-"832" is the largest number that can be created, so return it.
+student 2 to mentor 1 with a compatibility score of 3. 
+
+The compatibility score sum is 3 + 2 + 3 = 8.
 
 **Example 2:**
 
-**Input:** num = "021", change = [9,4,3,5,7,2,1,9,0,6]
+**Input:** students = [[0,0],[0,0],[0,0]], mentors = [[1,1],[1,1],[1,1]]
 
-**Output:** "934"
+**Output:** 0
 
-**Explanation:** Replace the substring "021": 
-
-- 0 maps to change[0] = 9. 
-
-- 2 maps to change[2] = 3. 
-
-- 1 maps to change[1] = 4. 
-  
-Thus, "021" becomes "934". 
-
-"934" is the largest number that can be created, so return it.
-
-**Example 3:**
-
-**Input:** num = "5", change = [1,4,7,5,3,2,5,6,9,4]
-
-**Output:** "5"
-
-**Explanation:** "5" is already the largest number that can be created, so return it.
+**Explanation:** The compatibility score of any student-mentor pair is 0.
 
 **Constraints:**
 
-*   <code>1 <= num.length <= 10<sup>5</sup></code>
-*   `num` consists of only digits `0-9`.
-*   `change.length == 10`
-*   `0 <= change[d] <= 9`
+*   `m == students.length == mentors.length`
+*   `n == students[i].length == mentors[j].length`
+*   `1 <= m, n <= 8`
+*   `students[i][k]` is either `0` or `1`.
+*   `mentors[j][k]` is either `0` or `1`.
