@@ -17,7 +17,6 @@ public class Solution {
                 ans.append(s.charAt(i));
             }
         }
-
         return ans.toString();
     }
 }
