@@ -16,16 +16,13 @@ public class Solution {
     public List<List<String>> deleteDuplicateFolder(List<List<String>> paths) {
         duplicates = new HashMap<>();
         Folder rootFolder = new Folder("", null);
-
         for (List<String> path : paths) {
             Folder folder = rootFolder;
             for (String foldername : path) {
                 folder = folder.addSubFolder(foldername);
             }
         }
-
         rootFolder.calculateHash();
-
         for (Map.Entry<String, ArrayList<Folder>> entry : duplicates.entrySet()) {
             ArrayList<Folder> foldersWithSameHash = entry.getValue();
             if (foldersWithSameHash != null && foldersWithSameHash.size() > 1) {
@@ -34,46 +31,41 @@ public class Solution {
                 }
             }
         }
-
         foldersWithRemovedNames = new ArrayList<>();
-
         for (Map.Entry<String, Folder> entry : rootFolder.subFolders.entrySet()) {
             Folder folder = entry.getValue();
             List<String> path = new ArrayList<>();
             folder.addPaths(path);
         }
-
         return foldersWithRemovedNames;
     }
 
     private class Folder {
-        public String name;
-        public Map<String, Folder> subFolders;
-        public Folder parent;
-        public String folderHash;
+        private String name;
+        private Map<String, Folder> subFolders;
+        private Folder parent;
+        private String folderHash;
 
-        public Folder(String folderName, Folder parentFolder) {
+        private Folder(String folderName, Folder parentFolder) {
             name = folderName;
             subFolders = new HashMap<>();
             folderHash = "";
             parent = parentFolder;
         }
 
-        public Folder addSubFolder(String foldername) {
+        private Folder addSubFolder(String foldername) {
             Folder subFolder = subFolders.get(foldername);
             if (subFolder == null) {
                 subFolder = new Folder(foldername, this);
                 subFolders.put(foldername, subFolder);
             }
-
             return subFolder;
         }
 
-        public void calculateHash() {
+        private void calculateHash() {
             List<String> subFolderNames = new ArrayList<>(subFolders.keySet());
             Collections.sort(subFolderNames);
             StringBuilder builder = new StringBuilder();
-
             for (String foldername : subFolderNames) {
                 Folder folder = subFolders.get(foldername);
                 folder.calculateHash();
@@ -85,7 +77,6 @@ public class Solution {
                     builder.append(')');
                 }
             }
-
             folderHash = builder.toString();
             if (folderHash.length() > 0) {
                 ArrayList<Folder> duplicateFolders =
@@ -94,11 +85,10 @@ public class Solution {
             }
         }
 
-        public void addPaths(List<String> parentPath) {
+        private void addPaths(List<String> parentPath) {
             List<String> currentPath = new ArrayList<>(parentPath);
             currentPath.add(name);
             foldersWithRemovedNames.add(currentPath);
-
             for (Map.Entry<String, Folder> entry : subFolders.entrySet()) {
                 Folder folder = entry.getValue();
                 folder.addPaths(currentPath);

@@ -44,6 +44,7 @@ public class Solution {
                 ans = Math.max(ans, dp[idx][i] + dp(idx + 1, mask | (1 << i)));
             }
         }
-        return memo[idx][mask] = ans;
+        memo[idx][mask] = ans;
+        return ans;
     }
 }
