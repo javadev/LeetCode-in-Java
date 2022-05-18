@@ -54,12 +54,7 @@ public class Solution {
         }
 
         private Folder addSubFolder(String foldername) {
-            Folder subFolder = subFolders.get(foldername);
-            if (subFolder == null) {
-                subFolder = new Folder(foldername, this);
-                subFolders.put(foldername, subFolder);
-            }
-            return subFolder;
+            return subFolders.computeIfAbsent(foldername, f -> new Folder(f, this));
         }
 
         private void calculateHash() {
