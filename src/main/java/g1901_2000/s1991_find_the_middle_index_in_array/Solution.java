@@ -11,7 +11,8 @@ public class Solution {
             sum += n;
         }
         // consider leftSum = 0, rightSum = sum
-        int leftSum = 0, rightSum = sum;
+        int leftSum = 0;
+        int rightSum = sum;
         /*
          Traverse the array: At each index, subtract the element from rightSum and
          check if leftSum equals rightSum. If they do, return the index.
