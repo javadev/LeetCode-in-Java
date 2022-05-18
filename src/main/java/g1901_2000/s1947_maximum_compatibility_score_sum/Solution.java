@@ -27,7 +27,6 @@ public class Solution {
         for (int[] x : memo) {
             Arrays.fill(x, -1);
         }
-
         return dp(0, 0);
     }
 
