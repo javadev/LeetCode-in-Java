@@ -11,7 +11,6 @@ public class Solution {
             int val = nums[i] - '0';
             arr[i] = (char) (change[val] + '0');
         }
-
         boolean flag = false;
         for (int i = 0; i < n; i++) {
             if (nums[i] < arr[i]) {
@@ -21,7 +20,6 @@ public class Solution {
                 break;
             }
         }
-
         return String.valueOf(nums);
     }
 }
