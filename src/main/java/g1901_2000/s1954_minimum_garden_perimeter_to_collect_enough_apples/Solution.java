@@ -7,11 +7,9 @@ public class Solution {
         long l = 1;
         long r = 1000000;
         long res = l;
-
         while (l <= r) {
             long m = l + (r - l) / 2;
             boolean isPossible = check(m, neededApples);
-
             if (isPossible) {
                 res = m;
                 r = m - 1;
