@@ -6,11 +6,9 @@ public class Solution {
     public int countSpecialSubsequences(int[] nums) {
         int mod = 1000000007;
         int[] dp = new int[] {1, 0, 0, 0};
-
         for (int n : nums) {
             dp[n + 1] = (dp[n] + 2 * dp[n + 1] % mod) % mod;
         }
-
         return dp[3];
     }
 }
