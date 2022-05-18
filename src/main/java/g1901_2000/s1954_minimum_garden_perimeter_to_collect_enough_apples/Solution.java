@@ -24,6 +24,6 @@ public class Solution {
         long sum = len * (len + 1) / 2;
         long applesPerQuadrant = 2 * len * sum;
         long totalCount = 4 * sum + 4 * applesPerQuadrant;
-        return (totalCount >= neededApples);
+        return totalCount >= neededApples;
     }
 }
