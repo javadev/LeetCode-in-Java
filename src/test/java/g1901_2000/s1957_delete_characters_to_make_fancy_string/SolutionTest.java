@@ -20,4 +20,14 @@ class SolutionTest {
     void makeFancyString3() {
         assertThat(new Solution().makeFancyString("aab"), equalTo("aab"));
     }
+
+    @Test
+    void makeFancyString4() {
+        assertThat(new Solution().makeFancyString("aa"), equalTo("aa"));
+    }
+
+    @Test
+    void makeFancyString5() {
+        assertThat(new Solution().makeFancyString("a"), equalTo("a"));
+    }
 }
