@@ -6,9 +6,9 @@ You are given a tree with `n` nodes numbered from `0` to `n - 1` in the form of 
 
 The data structure should support the following functions:
 
-*   **Lock:** **Locks** the given node for the given user and prevents other users from locking the same node. You may only lock a node using this function if the node is unlocked.
+*   **Lock: Locks** the given node for the given user and prevents other users from locking the same node. You may only lock a node using this function if the node is unlocked.
 *   **Unlock: Unlocks** the given node for the given user. You may only unlock a node using this function if it is currently locked by the same user.
-*   **Upgrade**: **Locks** the given node for the given user and **unlocks** all of its descendants **regardless** of who locked it. You may only upgrade a node if **all** 3 conditions are true:
+*   **Upgrade: Locks** the given node for the given user and **unlocks** all of its descendants **regardless** of who locked it. You may only upgrade a node if **all** 3 conditions are true:
     *   The node is unlocked,
     *   It has at least one locked descendant (by **any** user), and
     *   It does not have any locked ancestors.
