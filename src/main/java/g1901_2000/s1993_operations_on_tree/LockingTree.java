@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class LockingTree {
-    private int a[][];
+    private int[][] a;
     private HashMap<Integer, List<Integer>> map = new HashMap<>();
 
     public LockingTree(int[] parent) {
@@ -54,7 +54,7 @@ public class LockingTree {
         }
         int f = 0;
         LinkedList<Integer> que = new LinkedList<>();
-        int v[] = new int[a.length];
+        int[] v = new int[a.length];
         que.add(num);
         v[num] = 1;
         while (que.size() > 0) {
