@@ -43,7 +43,7 @@ Return _the order in which the CPU will process the tasks._
 
 **Output:** [4,3,2,0,1]
 
-**Explanation:****:** The events go as follows: 
+**Explanation:** The events go as follows: 
 
 - At time = 7, all the tasks become available. Available tasks = {0,1,2,3,4}. 
 
