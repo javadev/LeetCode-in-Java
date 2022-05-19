@@ -30,4 +30,9 @@ class SolutionTest {
     void makeFancyString5() {
         assertThat(new Solution().makeFancyString("a"), equalTo("a"));
     }
+
+    @Test
+    void makeFancyString6() {
+        assertThat(new Solution().makeFancyString(""), equalTo(""));
+    }
 }
