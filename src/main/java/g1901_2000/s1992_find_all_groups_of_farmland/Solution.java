@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    private List<int[]> res = new ArrayList<>();
+    private final List<int[]> res = new ArrayList<>();
 
     public int[][] findFarmland(int[][] land) {
         if (land == null || land.length == 0) {
@@ -15,7 +15,6 @@ public class Solution {
         }
         int m = land.length;
         int n = land[0].length;
-        int count = 0;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (land[i][j] == 1) {
