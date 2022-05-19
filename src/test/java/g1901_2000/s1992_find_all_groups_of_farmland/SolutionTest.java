@@ -24,4 +24,14 @@ class SolutionTest {
     void findFarmland3() {
         assertThat(new Solution().findFarmland(new int[][] {{0}}), equalTo(new int[][] {}));
     }
+
+    @Test
+    void findFarmland4() {
+        assertThat(new Solution().findFarmland(new int[][] {}), equalTo(new int[][] {}));
+    }
+
+    @Test
+    void findFarmland5() {
+        assertThat(new Solution().findFarmland(null), equalTo(new int[][] {}));
+    }
 }
