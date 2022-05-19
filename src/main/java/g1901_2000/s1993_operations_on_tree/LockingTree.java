@@ -57,7 +57,7 @@ public class LockingTree {
         int[] v = new int[a.length];
         que.add(num);
         v[num] = 1;
-        while (que.size() > 0) {
+        while (!que.isEmpty()) {
             int t = que.get(0);
             que.remove(0);
             List<Integer> p = map.getOrDefault(t, new ArrayList<>());
