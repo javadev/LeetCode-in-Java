@@ -19,7 +19,7 @@ Return _the largest possible **score** you can achieve after playing any number 
 
 **Output:** 0
 
-**Explanation:****:** Playing the only token in the bag is impossible because you either have too little power or too little score.
+**Explanation:** Playing the only token in the bag is impossible because you either have too little power or too little score.
 
 **Example 2:**
 

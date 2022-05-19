@@ -4,7 +4,7 @@ Medium
 
 You are given an array of `intervals`, where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code> and each <code>start<sub>i</sub></code> is **unique**.
 
-The **r****ight**** interval** for an interval `i` is an interval `j` such that <code>start<sub>j</sub></code><code> >= end<sub>i</sub></code> and <code>start<sub>j</sub></code> is **minimized**.
+The **right interval** for an interval `i` is an interval `j` such that <code>start<sub>j</sub></code><code> >= end<sub>i</sub></code> and <code>start<sub>j</sub></code> is **minimized**.
 
 Return _an array of **right interval** indices for each interval `i`_. If no **right interval** exists for interval `i`, then put `-1` at index `i`.
 
