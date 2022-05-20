@@ -7,7 +7,12 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void distinctSubsequences() {
+    void numDistinct() {
         assertThat(new Solution().numDistinct("rabbbit", "rabbit"), equalTo(3));
+    }
+
+    @Test
+    void numDistinct2() {
+        assertThat(new Solution().numDistinct("babgbag", "bag"), equalTo(5));
     }
 }

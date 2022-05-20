@@ -4,27 +4,27 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.TreeNode;
+import com_github_leetcode.TreeUtils;
+import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void pathSum() {
-        TreeNode fourthLevelLeftMostLeft = new TreeNode(7);
-        TreeNode fourthLevelLeftMostRight = new TreeNode(2);
-
-        TreeNode thirtLevelLeftMostRoot =
-                new TreeNode(11, fourthLevelLeftMostLeft, fourthLevelLeftMostRight);
-
-        TreeNode secondLevelLeftMostRoot = new TreeNode(4, thirtLevelLeftMostRoot, null);
-
-        TreeNode fourthLevelRightMostRight = new TreeNode(1);
-        TreeNode thirdLevelRightRoot = new TreeNode(4, fourthLevelRightMostRight, null);
-        TreeNode thirdLevelLeftRoot = new TreeNode(13);
-
-        TreeNode secondLevelRightRoot = new TreeNode(8, thirdLevelLeftRoot, thirdLevelRightRoot);
-
-        TreeNode root = new TreeNode(5, secondLevelLeftMostRoot, secondLevelRightRoot);
-
+    void hasPathSum() {
+        TreeNode root =
+                TreeUtils.constructBinaryTree(
+                        Arrays.asList(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1));
         assertThat(new Solution().hasPathSum(root, 22), equalTo(true));
+    }
+
+    @Test
+    void hasPathSum2() {
+        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 3));
+        assertThat(new Solution().hasPathSum(root, 22), equalTo(false));
+    }
+
+    @Test
+    void hasPathSum3() {
+        assertThat(new Solution().hasPathSum(null, 0), equalTo(false));
     }
 }
