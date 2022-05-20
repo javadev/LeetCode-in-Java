@@ -7,7 +7,6 @@ public class Solution {
         int n = arr.length;
         k++;
         int[][] dp = new int[n][k + 1];
-
         for (int j = 1; j <= k; j++) {
             for (int i = n - 1; i >= 0; i--) {
                 int ele = n - i;
@@ -15,7 +14,6 @@ public class Solution {
                     dp[i][j] = 0;
                     continue;
                 }
-
                 if (j == 1) {
                     int sum = 0;
                     int maxEle = -1;
@@ -23,7 +21,6 @@ public class Solution {
                         maxEle = Math.max(maxEle, arr[l]);
                         sum += arr[l];
                     }
-
                     dp[i][j] = (maxEle * (n - i)) - sum;
                     continue;
                 }
@@ -37,11 +34,9 @@ public class Solution {
                     int myAns = (maxEle * (cut - i + 1)) - (sum);
                     ans = Math.min(ans, recAns + myAns);
                 }
-
                 dp[i][j] = ans;
             }
         }
-
         return dp[0][k];
     }
 }
