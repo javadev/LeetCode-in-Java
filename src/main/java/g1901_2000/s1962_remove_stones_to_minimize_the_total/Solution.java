@@ -8,7 +8,10 @@ import java.util.PriorityQueue;
 public class Solution {
     public int minStoneSum(int[] piles, int k) {
         PriorityQueue<Integer> descendingQueue = new PriorityQueue<>(Collections.reverseOrder());
-        int sum = 0, newValue, currentValue, half;
+        int sum = 0;
+        int newValue;
+        int currentValue;
+        int half;
         for (int stones : piles) {
             sum += stones;
             descendingQueue.offer(stones);

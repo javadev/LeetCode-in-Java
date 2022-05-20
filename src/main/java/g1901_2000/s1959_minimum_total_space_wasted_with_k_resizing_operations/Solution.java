@@ -17,7 +17,8 @@ public class Solution {
                 }
 
                 if (j == 1) {
-                    int sum = 0, maxEle = -1;
+                    int sum = 0;
+                    int maxEle = -1;
                     for (int l = i; l < n; l++) {
                         maxEle = Math.max(maxEle, arr[l]);
                         sum += arr[l];
