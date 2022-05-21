@@ -16,12 +16,10 @@ public class Solution {
         if (n == 1) {
             return 1;
         }
-
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = num.charAt(i) - '0' + 1;
         }
-
         int[] suffixArray = new SuffixArrayTools().buildSuffixArray(arr);
         int[] invSuffixArray = new SuffixArrayTools().inverseSuffixArray(suffixArray);
         int[] lcp =
@@ -35,13 +33,11 @@ public class Solution {
                 lcpMat[i][j] = Math.min(lcpMat[i][j - 1], lcpMat[j][j]);
             }
         }
-
         long[] prev = new long[n + 1];
         long[] next = new long[n + 1];
         long[] tmp;
         prev[0] = 1;
         next[0] = 1;
-
         for (int d = 1; d <= n; d++) {
             System.arraycopy(prev, 1, next, 1, n);
             for (int j1 = 0, i1 = j1 - d, j2 = j1 + d; j2 <= n; j1++, j2++, i1++) {
@@ -132,11 +128,9 @@ public class Solution {
                 }
                 i++;
             }
-
             radixPass(s12, sa12, s, 2, n02, k);
             radixPass(sa12, s12, s, 1, n02, k);
             radixPass(s12, sa12, s, 0, n02, k);
-
             int name = 0;
             int c0 = -1;
             int c1 = -1;
@@ -154,7 +148,6 @@ public class Solution {
                     s12[sa12[i] / 3 + n0] = name;
                 }
             }
-
             if (name < n02) {
                 suffixArray(s12, sa12, n02, name);
                 for (i = 0; i < n02; i++) {
