@@ -22,7 +22,7 @@ public class Solution {
             arr[i] = num.charAt(i) - '0' + 1;
         }
 
-        int[] suffixArray = new SuffixArrayTools().buildSuffixArray(arr, 10);
+        int[] suffixArray = new SuffixArrayTools().buildSuffixArray(arr);
         int[] invSuffixArray = new SuffixArrayTools().inverseSuffixArray(suffixArray);
         int[] lcp =
                 SuffixArrayTools.buildLongestCommonPrefixArray(arr, suffixArray, invSuffixArray);
@@ -68,12 +68,12 @@ public class Solution {
     }
 
     static class SuffixArrayTools {
-        int[] buildSuffixArray(int[] arr, int K) {
+        int[] buildSuffixArray(int[] arr) {
             int n = arr.length;
             int[] s = Arrays.copyOf(arr, n + 3);
-            int[] SA = new int[n];
-            suffixArray(s, SA, n, K);
-            return SA;
+            int[] sa = new int[n];
+            suffixArray(s, sa, n, 10);
+            return sa;
         }
 
         private int[] inverseSuffixArray(int[] suffixArray) {
@@ -135,7 +135,10 @@ public class Solution {
             radixPass(sa12, s12, s, 1, n02, k);
             radixPass(s12, sa12, s, 0, n02, k);
 
-            int name = 0, c0 = -1, c1 = -1, c2 = -1;
+            int name = 0;
+            int c0 = -1;
+            int c1 = -1;
+            int c2 = -1;
             for (int i = 0; i < n02; i++) {
                 if (s[sa12[i]] != c0 || s[sa12[i] + 1] != c1 || s[sa12[i] + 2] != c2) {
                     name++;
@@ -174,12 +177,12 @@ public class Solution {
                 if (sa12[t] < n0
                         ? leq(s[i], s12[sa12[t] + n0], s[j], s12[j / 3])
                         : leq(
-                        s[i],
-                        s[i + 1],
-                        s12[sa12[t] - n0 + 1],
-                        s[j],
-                        s[j + 1],
-                        s12[j / 3 + n0])) {
+                                s[i],
+                                s[i + 1],
+                                s12[sa12[t] - n0 + 1],
+                                s[j],
+                                s[j + 1],
+                                s12[j / 3 + n0])) {
                     sa[i1] = i;
                     t++;
                     if (t == n02) {
@@ -199,16 +202,16 @@ public class Solution {
             }
         }
 
-        private int getI(int[] SA12, int n0, int t) {
-            return SA12[t] < n0 ? SA12[t] * 3 + 1 : (SA12[t] - n0) * 3 + 2;
+        private int getI(int[] sa12, int n0, int t) {
+            return sa12[t] < n0 ? sa12[t] * 3 + 1 : (sa12[t] - n0) * 3 + 2;
         }
 
-        private void radixPass(int[] a, int[] b, int[] r, int shift, int n, int K) {
-            int[] c = new int[K + 1];
+        private void radixPass(int[] a, int[] b, int[] r, int shift, int n, int k) {
+            int[] c = new int[k + 1];
             for (int i = 0; i < n; i++) {
                 c[r[a[i] + shift]]++;
             }
-            for (int i = 0, sum = 0; i <= K; i++) {
+            for (int i = 0, sum = 0; i <= k; i++) {
                 int t = c[i];
                 c[i] = sum;
                 sum += t;

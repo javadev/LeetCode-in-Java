@@ -5,13 +5,15 @@ package g1901_2000.s1981_minimize_the_difference_between_target_and_chosen_eleme
 
 public class Solution {
     public int minimizeTheDifference(int[][] mat, int target) {
-        int n = mat[0].length, m = mat.length;
+        int m = mat.length;
         boolean[][] seen = new boolean[m][m * 70 + 1];
         dfs(0, mat, 0, seen);
         for (int i = 0; true; i++) {
             for (int j = 0, sign = 1; j < 2; j++, sign *= -1) {
                 int k = target - i * sign;
-                if (k >= 0 && k <= m * 70 && seen[m - 1][k]) return i;
+                if (k >= 0 && k <= m * 70 && seen[m - 1][k]) {
+                    return i;
+                }
             }
         }
     }
