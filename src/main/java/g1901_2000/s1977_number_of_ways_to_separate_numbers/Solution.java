@@ -224,12 +224,15 @@ public class Solution {
             for (int i = 0; i < n; i++) {
                 c[r[a[i] + shift]]++;
             }
-            for (int i = 0, sum = 0; i <= k; i++) {
+            int i = 0;
+            int sum = 0;
+            while (i <= k) {
                 int t = c[i];
                 c[i] = sum;
                 sum += t;
+                i++;
             }
-            for (int i = 0; i < n; i++) {
+            for (i = 0; i < n; i++) {
                 b[c[r[a[i] + shift]]++] = a[i];
             }
         }
