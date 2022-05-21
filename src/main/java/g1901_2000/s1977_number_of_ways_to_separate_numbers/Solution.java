@@ -124,11 +124,13 @@ public class Solution {
             int[] sa12 = new int[n02 + 3];
             int[] s0 = new int[n0];
             int[] sa0 = new int[n0];
-
-            for (int i = 0, j = 0; i < n + (n0 - n1); i++) {
+            int i = 0;
+            int j = 0;
+            while (i < n + (n0 - n1)) {
                 if (i % 3 != 0) {
                     s12[j++] = i;
                 }
+                i++;
             }
 
             radixPass(s12, sa12, s, 2, n02, k);
@@ -139,7 +141,7 @@ public class Solution {
             int c0 = -1;
             int c1 = -1;
             int c2 = -1;
-            for (int i = 0; i < n02; i++) {
+            for (i = 0; i < n02; i++) {
                 if (s[sa12[i]] != c0 || s[sa12[i] + 1] != c1 || s[sa12[i] + 2] != c2) {
                     name++;
                     c0 = s[sa12[i]];
@@ -155,25 +157,29 @@ public class Solution {
 
             if (name < n02) {
                 suffixArray(s12, sa12, n02, name);
-                for (int i = 0; i < n02; i++) {
+                for (i = 0; i < n02; i++) {
                     s12[sa12[i]] = i + 1;
                 }
             } else {
-                for (int i = 0; i < n02; i++) {
+                for (i = 0; i < n02; i++) {
                     sa12[s12[i] - 1] = i;
                 }
             }
-
-            for (int i = 0, j = 0; i < n02; i++) {
+            i = 0;
+            j = 0;
+            while (i < n02) {
                 if (sa12[i] < n0) {
                     s0[j++] = 3 * sa12[i];
                 }
+                i++;
             }
             radixPass(s0, sa0, s, 0, n0, k);
-
-            for (int p = 0, t = n0 - n1, i1 = 0; i1 < n; i1++) {
-                int i = getI(sa12, n0, t);
-                int j = sa0[p];
+            int p = 0;
+            int t = n0 - n1;
+            int i1 = 0;
+            while (i1 < n) {
+                i = getI(sa12, n0, t);
+                j = sa0[p];
                 if (sa12[t] < n0
                         ? leq(s[i], s12[sa12[t] + n0], s[j], s12[j / 3])
                         : leq(
@@ -186,19 +192,26 @@ public class Solution {
                     sa[i1] = i;
                     t++;
                     if (t == n02) {
-                        for (i1++; p < n0; p++, i1++) {
+                        i1++;
+                        while (p < n0) {
                             sa[i1] = sa0[p];
+                            p++;
+                            i1++;
                         }
                     }
                 } else {
                     sa[i1] = j;
                     p++;
                     if (p == n0) {
-                        for (i1++; t < n02; t++, i1++) {
+                        i1++;
+                        while (t < n02) {
                             sa[i1] = getI(sa12, n0, t);
+                            t++;
+                            i1++;
                         }
                     }
                 }
+                i1++;
             }
         }
 
