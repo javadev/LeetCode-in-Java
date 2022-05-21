@@ -28,7 +28,7 @@ public class Solution {
         }
         pq.add(new long[] {0, 0});
         if (!pq.isEmpty()) {
-            while (pq.size() > 0) {
+            while (!pq.isEmpty()) {
                 long[] ele = pq.remove();
                 long dis = ele[1];
                 long node = ele[0];
