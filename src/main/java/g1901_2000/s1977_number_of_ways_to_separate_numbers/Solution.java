@@ -5,6 +5,7 @@ package g1901_2000.s1977_number_of_ways_to_separate_numbers;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S3012")
 public class Solution {
     private static final int P = 1_000_000_007;
 
