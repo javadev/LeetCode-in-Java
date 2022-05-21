@@ -11,7 +11,7 @@ import java.util.Queue;
 
 public class Solution {
     private int dijkstra(int[][] roads, int n) {
-        long mod = (int) 1e9 + 7;
+        long mod = (int) 1e9 + 7L;
         Queue<long[]> pq = new PriorityQueue<>(Comparator.comparingLong(l -> l[1]));
         long[] ways = new long[n];
         long[] dist = new long[n];
@@ -19,25 +19,29 @@ public class Solution {
         dist[0] = 0;
         ways[0] = 1;
         ArrayList<long[]>[] graph = new ArrayList[n];
-        for (int i = 0; i < graph.length; i++) graph[i] = new ArrayList<>();
+        for (int i = 0; i < graph.length; i++) {
+            graph[i] = new ArrayList<>();
+        }
         for (int[] road : roads) {
             graph[road[0]].add(new long[] {road[1], road[2]});
             graph[road[1]].add(new long[] {road[0], road[2]});
         }
         pq.add(new long[] {0, 0});
-        while (pq.size() > 0) {
-            long[] ele = pq.remove();
-            long dis = ele[1];
-            long node = ele[0];
-            for (long[] e : graph[(int) node]) {
-                long wt = e[1];
-                long adjNode = e[0];
-                if (wt + dis < dist[(int) adjNode]) {
-                    dist[(int) adjNode] = wt + dis;
-                    ways[(int) adjNode] = ways[(int) node];
-                    pq.add(new long[] {adjNode, dist[(int) adjNode]});
-                } else if (wt + dis == dist[(int) adjNode]) {
-                    ways[(int) adjNode] = (ways[(int) node] + ways[(int) adjNode]) % mod;
+        if (!pq.isEmpty()) {
+            while (pq.size() > 0) {
+                long[] ele = pq.remove();
+                long dis = ele[1];
+                long node = ele[0];
+                for (long[] e : graph[(int) node]) {
+                    long wt = e[1];
+                    long adjNode = e[0];
+                    if (wt + dis < dist[(int) adjNode]) {
+                        dist[(int) adjNode] = wt + dis;
+                        ways[(int) adjNode] = ways[(int) node];
+                        pq.add(new long[] {adjNode, dist[(int) adjNode]});
+                    } else if (wt + dis == dist[(int) adjNode]) {
+                        ways[(int) adjNode] = (ways[(int) node] + ways[(int) adjNode]) % mod;
+                    }
                 }
             }
         }
