@@ -16,7 +16,6 @@ public class Solution {
         arr[0] = obstacles[0];
         ans[0] = 1;
         for (int i = 1; i < length; i++) {
-
             int val = obstacles[i];
             if (val >= arr[len - 1]) {
                 arr[len++] = val;
@@ -27,7 +26,6 @@ public class Solution {
                 ans[i] = idx + 1;
             }
         }
-
         return ans;
     }
 
@@ -42,7 +40,6 @@ public class Solution {
                 hi = mid - 1;
             }
         }
-
         return ans;
     }
 }
