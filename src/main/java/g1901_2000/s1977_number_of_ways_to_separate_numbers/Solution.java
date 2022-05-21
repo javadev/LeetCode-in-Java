@@ -46,10 +46,14 @@ public class Solution {
             System.arraycopy(prev, 1, next, 1, n);
             for (int j1 = 0, i1 = j1 - d, j2 = j1 + d; j2 <= n; j1++, j2++, i1++) {
                 if (arr[j1] != 1) {
-                    if (i1 < 0 || arr[i1] != 1 && ok(i1, j1, d, invSuffixArray, lcpMat))
+                    if (i1 < 0 || arr[i1] != 1 && ok(i1, j1, d, invSuffixArray, lcpMat)) {
                         next[j2] += next[j1];
-                    else next[j2] += prev[j1];
-                    if (next[j2] >= P) next[j2] -= P;
+                    } else {
+                        next[j2] += prev[j1];
+                    }
+                    if (next[j2] >= P) {
+                        next[j2] -= P;
+                    }
                 }
             }
             tmp = prev;
@@ -75,7 +79,9 @@ public class Solution {
         private int[] inverseSuffixArray(int[] suffixArray) {
             int n = suffixArray.length;
             int[] ans = new int[n];
-            for (int i = 0; i < n; i++) ans[suffixArray[i]] = i;
+            for (int i = 0; i < n; i++) {
+                ans[suffixArray[i]] = i;
+            }
             return ans;
         }
 
@@ -85,12 +91,16 @@ public class Solution {
             int[] lcp = new int[n - 1];
             int k = 0;
             for (int i = 0; i < n; i++) {
-                if (k > 0) k--;
+                if (k > 0) {
+                    k--;
+                }
                 if (invSuffixArray[i] == n - 1) {
                     k = 0;
                 } else {
                     int j = suffixArray[invSuffixArray[i] + 1];
-                    while (i + k < n && j + k < n && arr[i + k] == arr[j + k]) k++;
+                    while (i + k < n && j + k < n && arr[i + k] == arr[j + k]) {
+                        k++;
+                    }
                     lcp[invSuffixArray[i]] = k;
                 }
             }
@@ -106,13 +116,20 @@ public class Solution {
         }
 
         private void suffixArray(int[] s, int[] sa, int n, int k) {
-            int n0 = (n + 2) / 3, n1 = (n + 1) / 3, n2 = n / 3, n02 = n0 + n2;
+            int n0 = (n + 2) / 3;
+            int n1 = (n + 1) / 3;
+            int n2 = n / 3;
+            int n02 = n0 + n2;
             int[] s12 = new int[n02 + 3];
             int[] sa12 = new int[n02 + 3];
             int[] s0 = new int[n0];
             int[] sa0 = new int[n0];
 
-            for (int i = 0, j = 0; i < n + (n0 - n1); i++) if (i % 3 != 0) s12[j++] = i;
+            for (int i = 0, j = 0; i < n + (n0 - n1); i++) {
+                if (i % 3 != 0) {
+                    s12[j++] = i;
+                }
+            }
 
             radixPass(s12, sa12, s, 2, n02, k);
             radixPass(sa12, s12, s, 1, n02, k);
@@ -135,8 +152,14 @@ public class Solution {
 
             if (name < n02) {
                 suffixArray(s12, sa12, n02, name);
-                for (int i = 0; i < n02; i++) s12[sa12[i]] = i + 1;
-            } else for (int i = 0; i < n02; i++) sa12[s12[i] - 1] = i;
+                for (int i = 0; i < n02; i++) {
+                    s12[sa12[i]] = i + 1;
+                }
+            } else {
+                for (int i = 0; i < n02; i++) {
+                    sa12[s12[i] - 1] = i;
+                }
+            }
 
             for (int i = 0, j = 0; i < n02; i++) {
                 if (sa12[i] < n0) {
@@ -151,18 +174,19 @@ public class Solution {
                 if (sa12[t] < n0
                         ? leq(s[i], s12[sa12[t] + n0], s[j], s12[j / 3])
                         : leq(
-                                s[i],
-                                s[i + 1],
-                                s12[sa12[t] - n0 + 1],
-                                s[j],
-                                s[j + 1],
-                                s12[j / 3 + n0])) {
+                        s[i],
+                        s[i + 1],
+                        s12[sa12[t] - n0 + 1],
+                        s[j],
+                        s[j + 1],
+                        s12[j / 3 + n0])) {
                     sa[i1] = i;
                     t++;
-                    if (t == n02)
+                    if (t == n02) {
                         for (i1++; p < n0; p++, i1++) {
                             sa[i1] = sa0[p];
                         }
+                    }
                 } else {
                     sa[i1] = j;
                     p++;
