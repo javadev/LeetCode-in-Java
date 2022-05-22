@@ -59,7 +59,11 @@ public class Solution {
         }
 
         private int find(int x) {
-            return x == parent[x] ? x : (parent[x] = find(parent[x]));
+            if (x == parent[x]) {
+                return x;
+            }
+            parent[x] = find(parent[x]);
+            return parent[x];
         }
 
         private void union(int x, int y) {
