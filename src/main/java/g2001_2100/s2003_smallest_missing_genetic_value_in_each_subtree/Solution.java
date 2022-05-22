@@ -1,6 +1,7 @@
 package g2001_2100.s2003_smallest_missing_genetic_value_in_each_subtree;
 
 // #Hard #Dynamic_Programming #Depth_First_Search #Tree #Union_Find
+// #2022_05_22_Time_126_ms_(85.18%)_Space_154.3_MB_(66.67%)
 
 import java.util.ArrayList;
 import java.util.List;
