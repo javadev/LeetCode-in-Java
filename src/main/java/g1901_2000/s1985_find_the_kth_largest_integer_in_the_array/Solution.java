@@ -5,6 +5,7 @@ package g1901_2000.s1985_find_the_kth_largest_integer_in_the_array;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S2234")
 public class Solution {
     public String kthLargestNumber(String[] nums, int k) {
         Arrays.sort(nums, (n1, n2) -> compareStringInt(n2, n1));

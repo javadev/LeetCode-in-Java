@@ -8,6 +8,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int maxProduct(String s) {
         if (s.length() == 2) {
@@ -32,7 +33,6 @@ public class Solution {
             if (cur.cnt == 1) {
                 break;
             }
-
             for (int j = i + 1; j < list.size(); ++j) {
                 State cand = list.get(j);
                 if ((cur.mask & cand.mask) < 1) {
@@ -53,7 +53,6 @@ public class Solution {
         if (!visited.add(s)) {
             return;
         }
-
         if (chars[s.i] == chars[s.j]) {
             int m = s.mask | (1 << s.i) | (1 << s.j);
             int nextCnt = s.cnt + (s.i < s.j ? 2 : 1);
