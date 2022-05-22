@@ -1,44 +1,46 @@
-2001\. Number of Pairs of Interchangeable Rectangles
+2002\. Maximum Product of the Length of Two Palindromic Subsequences
 
 Medium
 
-You are given `n` rectangles represented by a **0-indexed** 2D integer array `rectangles`, where <code>rectangles[i] = [width<sub>i</sub>, height<sub>i</sub>]</code> denotes the width and height of the <code>i<sup>th</sup></code> rectangle.
+Given a string `s`, find two **disjoint palindromic subsequences** of `s` such that the **product** of their lengths is **maximized**. The two subsequences are **disjoint** if they do not both pick a character at the same index.
 
-Two rectangles `i` and `j` (`i < j`) are considered **interchangeable** if they have the **same** width-to-height ratio. More formally, two rectangles are **interchangeable** if <code>width<sub>i</sub>/height<sub>i</sub> == width<sub>j</sub>/height<sub>j</sub></code> (using decimal division, not integer division).
+Return _the **maximum** possible **product** of the lengths of the two palindromic subsequences_.
 
-Return _the **number** of pairs of **interchangeable** rectangles in_ `rectangles`.
+A **subsequence** is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters. A string is **palindromic** if it reads the same forward and backward.
 
 **Example 1:**
 
-**Input:** rectangles = [[4,8],[3,6],[10,20],[15,30]]
+![example-1](https://assets.leetcode.com/uploads/2021/08/24/two-palindromic-subsequences.png)
 
-**Output:** 6
+**Input:** s = "leetcodecom"
 
-**Explanation:** The following are the interchangeable pairs of rectangles by index (0-indexed): 
+**Output:** 9
 
-- Rectangle 0 with rectangle 1: 4/8 == 3/6. 
+**Explanation:**: An optimal solution is to choose "ete" for the 1<sup>st</sup> subsequence and "cdc" for the 2<sup>nd</sup> subsequence.
 
-- Rectangle 0 with rectangle 2: 4/8 == 10/20. 
-
-- Rectangle 0 with rectangle 3: 4/8 == 15/30. 
-
-- Rectangle 1 with rectangle 2: 3/6 == 10/20. 
-
-- Rectangle 1 with rectangle 3: 3/6 == 15/30. 
-
-- Rectangle 2 with rectangle 3: 10/20 == 15/30.
+The product of their lengths is: 3 \* 3 = 9. 
 
 **Example 2:**
 
-**Input:** rectangles = [[4,5],[7,8]]
+**Input:** s = "bb"
 
-**Output:** 0
+**Output:** 1
 
-**Explanation:** There are no interchangeable pairs of rectangles.
+**Explanation:**: An optimal solution is to choose "b" (the first character) for the 1<sup>st</sup> subsequence and "b" (the second character) for the 2<sup>nd</sup> subsequence.
+
+The product of their lengths is: 1 \* 1 = 1. 
+
+**Example 3:**
+
+**Input:** s = "accbcaxxcxx"
+
+**Output:** 25
+
+**Explanation:**: An optimal solution is to choose "accca" for the 1<sup>st</sup> subsequence and "xxcxx" for the 2<sup>nd</sup> subsequence.
+
+The product of their lengths is: 5 \* 5 = 25. 
 
 **Constraints:**
 
-*   `n == rectangles.length`
-*   <code>1 <= n <= 10<sup>5</sup></code>
-*   `rectangles[i].length == 2`
-*   <code>1 <= width<sub>i</sub>, height<sub>i</sub> <= 10<sup>5</sup></code>
+*   `2 <= s.length <= 12`
+*   `s` consists of lowercase English letters only.
