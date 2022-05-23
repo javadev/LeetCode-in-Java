@@ -10,4 +10,9 @@ class SolutionTest {
     void candy() {
         assertThat(new Solution().candy(new int[] {1, 0, 2}), equalTo(5));
     }
+
+    @Test
+    void candy2() {
+        assertThat(new Solution().candy(new int[] {1, 2, 2}), equalTo(4));
+    }
 }

@@ -25,4 +25,15 @@ class SolutionTest {
         assertThat(
                 new Solution().cloneGraph(node).toString(), equalTo("[[2,4],[1,3],[2,4],[1,3]]"));
     }
+
+    @Test
+    void cloneGraph2() {
+        Node node1 = new Node(1);
+        assertThat(new Solution().cloneGraph(node1).toString(), equalTo("[]"));
+    }
+
+    @Test
+    void cloneGraph3() {
+        assertThat(new Solution().cloneGraph(null), equalTo(null));
+    }
 }
