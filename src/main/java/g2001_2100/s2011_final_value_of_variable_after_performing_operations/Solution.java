@@ -4,10 +4,15 @@ package g2001_2100.s2011_final_value_of_variable_after_performing_operations;
 
 public class Solution {
     public int finalValueAfterOperations(String[] operations) {
-        int c1 = 0, c2 = 0;
+        int c1 = 0;
+        int c2 = 0;
         for (int i = 0; i < operations.length; i++) {
-            if (operations[i].equals("--X") || operations[i].equals("X--")) ++c1;
-            else ++c2;
+            if (operations[i].equals("--X") || operations[i].equals("X--")) { 
+                ++c1;
+            }
+            else {
+                ++c2;
+            }
         }
         return c2 - c1;
     }
