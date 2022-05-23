@@ -9,23 +9,15 @@ class SolutionTest {
     @Test
     void getAverages() {
         assertThat(
-            new Solution()
-                .getAverages(
-                    new int[] {7,4,3,9,1,8,5,2,6}, 3),
-            equalTo(new int[] {-1,-1,-1,5,4,4,-1,-1,-1}));
+                new Solution().getAverages(new int[] {7, 4, 3, 9, 1, 8, 5, 2, 6}, 3),
+                equalTo(new int[] {-1, -1, -1, 5, 4, 4, -1, -1, -1}));
     }
+
     void getAverages2() {
-        assertThat(
-            new Solution()
-                .getAverages(
-                    new int[] {100000}, 0),
-            equalTo(new int[] {100000}));
+        assertThat(new Solution().getAverages(new int[] {100000}, 0), equalTo(new int[] {100000}));
     }
+
     void getAverages3() {
-        assertThat(
-            new Solution()
-                .getAverages(
-                    new int[] {8}, 100000),
-            equalTo(new int[] {-1}));
+        assertThat(new Solution().getAverages(new int[] {8}, 100000), equalTo(new int[] {-1}));
     }
 }
