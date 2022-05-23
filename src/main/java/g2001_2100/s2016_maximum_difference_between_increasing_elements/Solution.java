@@ -1,7 +1,6 @@
 package g2001_2100.s2016_maximum_difference_between_increasing_elements;
 
-// #Array
-// #2022_05_23_Time_0ms_(100%)_Space_42.9_MB_(20.20%)
+// #Easy #Array #2022_05_23_Time_0_ms_(100.00%)_Space_41.4_MB_(94.03%)
 
 public class Solution {
     public int maximumDifference(int[] nums) {
@@ -15,9 +14,6 @@ public class Solution {
                 ans = nums[i + 1] - mini;
             }
         }
-        if (ans <= 0) {
-            return -1;
-        }
-        return ans;
+        return ans <= 0 ? -1 : ans;
     }
 }
