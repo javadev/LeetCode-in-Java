@@ -22,15 +22,15 @@ Given a **0-indexed** integer array `plants` of `n` integers, where `plants[i]` 
 
 **Explanation:**
 
-Start at the river with a full watering can: - 
+Start at the river with a full watering can: -
 
  Walk to plant 0 (1 step) and water it. Watering can has 3 units of water.
 
-Walk to plant 1 (1 step) and water it. Watering can has 1 unit of water. - Since you cannot completely water plant 2, walk back to the river to refill (2 steps). 
+Walk to plant 1 (1 step) and water it. Watering can has 1 unit of water. - Since you cannot completely water plant 2, walk back to the river to refill (2 steps).
 
-Walk to plant 2 (3 steps) and water it. Watering can has 2 units of water. - Since you cannot completely water plant 3, walk back to the river to refill (3 steps). 
+Walk to plant 2 (3 steps) and water it. Watering can has 2 units of water. - Since you cannot completely water plant 3, walk back to the river to refill (3 steps).
 
-Walk to plant 3 (4 steps) and water it. 
+Walk to plant 3 (4 steps) and water it.
 
 Steps needed = 1 + 1 + 2 + 3 + 3 + 4 = 14.
 
@@ -42,15 +42,15 @@ Steps needed = 1 + 1 + 2 + 3 + 3 + 4 = 14.
 
 **Explanation:**
 
-Start at the river with a full watering can: 
+Start at the river with a full watering can:
 
-Water plants 0, 1, and 2 (3 steps). Return to river (3 steps). 
+Water plants 0, 1, and 2 (3 steps). Return to river (3 steps).
 
-Water plant 3 (4 steps). Return to river (4 steps). 
+Water plant 3 (4 steps). Return to river (4 steps).
 
-Water plant 4 (5 steps). Return to river (5 steps). 
+Water plant 4 (5 steps). Return to river (5 steps).
 
-Water plant 5 (6 steps). 
+Water plant 5 (6 steps).
 
 Steps needed = 3 + 3 + 4 + 4 + 5 + 5 + 6 = 30.
 
@@ -62,7 +62,7 @@ Steps needed = 3 + 3 + 4 + 4 + 5 + 5 + 6 = 30.
 
 **Explanation:**
 
-You have to refill before watering each plant. 
+You have to refill before watering each plant.
 
 Steps needed = 1 + 1 + 2 + 2 + 3 + 3 + 4 + 4 + 5 + 5 + 6 + 6 + 7 = 49.
 
@@ -70,5 +70,5 @@ Steps needed = 1 + 1 + 2 + 2 + 3 + 3 + 4 + 4 + 5 + 5 + 6 + 6 + 7 = 49.
 
 * `n == plants.length`
 * `1 <= n <= 1000`
-* `1 <= plants[i] <= 10<sup>6</sup>`
-* `max(plants[i]) <= capacity <= 10<sup>9</sup>`
+* `1 <= plants[i] <= 10⁶`
+* `max(plants[i]) <= capacity <= 10⁹`
