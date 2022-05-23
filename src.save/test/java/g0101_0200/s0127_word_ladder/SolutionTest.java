@@ -17,4 +17,13 @@ class SolutionTest {
                                 Arrays.asList("hot", "dot", "dog", "lot", "log", "cog")),
                 equalTo(5));
     }
+
+    @Test
+    void ladderLength2() {
+        assertThat(
+                new Solution()
+                        .ladderLength(
+                                "hit", "cog", Arrays.asList("hot", "dot", "dog", "lot", "log")),
+                equalTo(0));
+    }
 }
