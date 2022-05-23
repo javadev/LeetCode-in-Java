@@ -6,10 +6,9 @@ public class Solution {
     public int finalValueAfterOperations(String[] operations) {
         int xValue = 0;
         for (String word : operations) {
-            if (word.contains("+")) { 
+            if (word.contains("+")) {
                 xValue++;
-            }
-            else {
+            } else {
                 xValue--;
             }
         }
