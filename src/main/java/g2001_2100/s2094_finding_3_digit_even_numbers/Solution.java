@@ -28,7 +28,8 @@ public class Solution {
                 continue;
             }
             digitMap[i]--;
-            dfs(result, digitMap, idx, val += i);
+            val += i;
+            dfs(result, digitMap, idx, val);
             val -= i;
             digitMap[i]++;
         }
