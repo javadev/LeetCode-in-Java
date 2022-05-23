@@ -10,7 +10,7 @@ class SolutionTest {
     void maximumDifference() {
         assertThat(
             new Solution()
-                .smallestMissingValueSubtree(
+                .maximumDifference(
                     new int[] {7,1,5,4}),
             equalTo(4));
     }
@@ -19,7 +19,7 @@ class SolutionTest {
     void maximumDifference2() {
         assertThat(
             new Solution()
-                .smallestMissingValueSubtree(
+                .maximumDifference(
                     new int[] {9,4,3,2}),
             equalTo(-1));
     }
@@ -28,7 +28,7 @@ class SolutionTest {
     void maximumDifference3() {
         assertThat(
             new Solution()
-                .smallestMissingValueSubtree(
+                .maximumDifference(
                     new int[] {1,5,2,10}),
             equalTo(9));
     }
