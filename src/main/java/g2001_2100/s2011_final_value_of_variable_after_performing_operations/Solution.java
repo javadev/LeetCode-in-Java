@@ -1,6 +1,6 @@
 package g2001_2100.s2011_final_value_of_variable_after_performing_operations;
 
-// #Easy #Array #String #Simulation #2021_10_26_Time_2_ms_(36.12%)_Space_40.1_MB_(100%)
+// #Easy #Array #String #Simulation #2022_05_23_Time_1_ms_(94.40%)_Space_43.6_MB_(26.15%)
 
 public class Solution {
     public int finalValueAfterOperations(String[] operations) {
