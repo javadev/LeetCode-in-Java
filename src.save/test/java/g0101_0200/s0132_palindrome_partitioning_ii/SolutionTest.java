@@ -10,4 +10,14 @@ class SolutionTest {
     void minCut() {
         assertThat(new Solution().minCut("aab"), equalTo(1));
     }
+
+    @Test
+    void minCut2() {
+        assertThat(new Solution().minCut("a"), equalTo(0));
+    }
+
+    @Test
+    void minCut3() {
+        assertThat(new Solution().minCut("ab"), equalTo(1));
+    }
 }

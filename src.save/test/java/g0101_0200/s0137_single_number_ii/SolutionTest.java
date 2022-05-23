@@ -10,4 +10,9 @@ class SolutionTest {
     void singleNumber() {
         assertThat(new Solution().singleNumber(new int[] {2, 2, 3, 2}), equalTo(3));
     }
+
+    @Test
+    void singleNumber2() {
+        assertThat(new Solution().singleNumber(new int[] {0, 1, 0, 1, 0, 1, 99}), equalTo(99));
+    }
 }
