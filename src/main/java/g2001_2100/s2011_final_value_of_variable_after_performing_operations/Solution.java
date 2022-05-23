@@ -6,8 +6,12 @@ public class Solution {
     public int finalValueAfterOperations(String[] operations) {
         int xValue = 0;
         for (String word : operations) {
-            if (word.contains("+")) xValue++;
-            else xValue--;
+            if (word.contains("+")) { 
+                xValue++;
+            }
+            else {
+                xValue--;
+            }
         }
         return xValue;
     }
