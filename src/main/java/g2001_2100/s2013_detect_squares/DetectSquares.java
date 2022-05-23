@@ -29,8 +29,8 @@ public class DetectSquares {
         int ans = 0;
         int x = point[0];
         int y = point[1];
-        for (Integer key : map.keySet()) {
-            int[] diap = map.get(key);
+        for (Map.Entry<Integer, int[]> entry : map.entrySet()) {
+            int[] diap = entry.getValue();
             int x1 = diap[0];
             int y1 = diap[1];
             int num = diap[2];

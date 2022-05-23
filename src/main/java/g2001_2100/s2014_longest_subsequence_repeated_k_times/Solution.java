@@ -8,7 +8,6 @@ import java.util.ArrayList;
 public class Solution {
     public String longestSubsequenceRepeatedK(String s, int k) {
         char[] ca = s.toCharArray();
-        int n = ca.length;
 
         char[] freq = new char[26];
         for (char value : ca) {
@@ -20,7 +19,8 @@ public class Solution {
         String ans = "";
         for (int i = 0; i < 26; i++) {
             if (freq[i] >= k) {
-                cand[1].add(ans = "" + (char) ('a' + i));
+                ans = "" + (char) ('a' + i);
+                cand[1].add(ans);
             }
         }
         for (int i = 2; i < 8; i++) {
@@ -29,7 +29,8 @@ public class Solution {
                 for (String c : cand[1]) {
                     String next = prev + c;
                     if (isSubsequenceRepeatedK(ca, next, k)) {
-                        cand[i].add(ans = next);
+                        ans = next;
+                        cand[i].add(ans);
                     }
                 }
             }
