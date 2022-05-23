@@ -11,19 +11,24 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void deleteMiddle() {
-        ListNode node1 = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 3, 4, 7, 1, 2, 6));
-        assertThat(new Solution().deleteMiddle(node1).toString(), equalTo("1, 3, 4, 1, 2, 6"));
+        ListNode node = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 3, 4, 7, 1, 2, 6));
+        assertThat(new Solution().deleteMiddle(node).toString(), equalTo("1, 3, 4, 1, 2, 6"));
     }
 
     @Test
     void deleteMiddle2() {
-        ListNode node2 = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 2, 3, 4));
-        assertThat(new Solution().deleteMiddle(node2).toString(), equalTo("1, 2, 4"));
+        ListNode node = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 2, 3, 4));
+        assertThat(new Solution().deleteMiddle(node).toString(), equalTo("1, 2, 4"));
     }
 
     @Test
     void deleteMiddle3() {
-        ListNode node3 = LinkedListUtils.createSinglyLinkedList(Arrays.asList(2, 1));
-        assertThat(new Solution().deleteMiddle(node3).toString(), equalTo("2"));
+        ListNode node = LinkedListUtils.createSinglyLinkedList(Arrays.asList(2, 1));
+        assertThat(new Solution().deleteMiddle(node).toString(), equalTo("2"));
+    }
+
+    @Test
+    void deleteMiddle4() {
+        assertThat(new Solution().deleteMiddle(new ListNode()), equalTo(null));
     }
 }
