@@ -7,10 +7,9 @@ public class Solution {
         int c1 = 0;
         int c2 = 0;
         for (int i = 0; i < operations.length; i++) {
-            if (operations[i].equals("--X") || operations[i].equals("X--")) { 
+            if (operations[i].equals("--X") || operations[i].equals("X--")) {
                 ++c1;
-            }
-            else {
+            } else {
                 ++c2;
             }
         }
