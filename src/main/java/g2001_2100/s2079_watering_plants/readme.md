@@ -68,7 +68,7 @@ Steps needed = 1 + 1 + 2 + 2 + 3 + 3 + 4 + 4 + 5 + 5 + 6 + 6 + 7 = 49.
 
 **Constraints:**
 
-* `n == plants.length`
-* <code>`1 <= n <= 1000 `</code>
-* <code>`1<=plants[i]<= 10 `<sup>`6 `</sup></code>
-* <code>`max(plants[i])<= capacity <= 10 `<sup>`9 `</sup></code>
+*`n == plants.length`
+*<code>`1 <= n <= 1000 `</code>
+*<code>`1<=plants[i]<= 10 `<sup>`6 `</sup></code>
+*<code>`max(plants[i])<= capacity <= 10 `<sup>`9 `</sup></code>
