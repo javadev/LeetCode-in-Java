@@ -10,7 +10,9 @@ public class Solution {
         int n = nums.length;
         int duplicates = 0;
         int maxContinuous = 0;
-        for (int start = 0, end = 0; end < n; end++) {
+        int start = 0;
+        int end = 0;
+        while (end < n) {
             if (end > 0 && nums[end] == nums[end - 1]) {
                 duplicates++;
             }
@@ -21,6 +23,7 @@ public class Solution {
                 }
             }
             maxContinuous = Math.max(maxContinuous, end - start + 1 - duplicates);
+            end++;
         }
         return n - maxContinuous;
     }
