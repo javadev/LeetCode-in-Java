@@ -4,11 +4,11 @@ package g2001_2100.s2011_final_value_of_variable_after_performing_operations;
 
 public class Solution {
     public int finalValueAfterOperations(String[] operations) {
-        int c1 = 0, c2 = 0;
-        for (int i = 0; i < operations.length; i++) {
-            if (operations[i].equals("--X") || operations[i].equals("X--")) ++c1;
-            else ++c2;
+        int xValue = 0;
+        for (String word : operations) {
+            if (word.contains("+")) xValue++;
+            else xValue--;
         }
-        return c2 - c1;
+        return xValue;
     }
 }
