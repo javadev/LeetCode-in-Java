@@ -26,4 +26,11 @@ class SolutionTest {
                             {'X', 'O', 'X', 'X'}
                         }));
     }
+
+    @Test
+    void solve2() {
+        char[][] board = new char[][] {{'X'}};
+        new Solution().solve(board);
+        assertThat(board, equalTo(new char[][] {{'X'}}));
+    }
 }
