@@ -34,9 +34,7 @@ public class DetectSquares {
             int x1 = diap[0];
             int y1 = diap[1];
             int num = diap[2];
-            if (Math.abs(x - x1) != Math.abs(y - y1) || x == x1 || y == y1) {
-                continue;
-            } else {
+            if (Math.abs(x - x1) == Math.abs(y - y1) && x != x1 && y != y1) {
                 int p1hash = x * MUL + y1;
                 int p2hash = x1 * MUL + y;
                 if (map.containsKey(p1hash) && map.containsKey(p2hash)) {
