@@ -18,7 +18,9 @@ import com_github_leetcode.ListNode;
 
 public class Solution {
     public ListNode deleteMiddle(ListNode head) {
-        if (head.next == null) return null;
+        if (head.next == null) {
+            return null;
+        }
         ListNode slow = head;
         ListNode fast = head.next.next;
         while (fast != null && fast.next != null) {
