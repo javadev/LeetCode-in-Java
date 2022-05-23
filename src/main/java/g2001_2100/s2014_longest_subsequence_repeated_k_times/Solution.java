@@ -5,15 +5,14 @@ package g2001_2100.s2014_longest_subsequence_repeated_k_times;
 
 import java.util.ArrayList;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public String longestSubsequenceRepeatedK(String s, int k) {
         char[] ca = s.toCharArray();
-
         char[] freq = new char[26];
         for (char value : ca) {
             ++freq[value - 'a'];
         }
-
         ArrayList<String>[] cand = new ArrayList[8];
         cand[1] = new ArrayList<>();
         String ans = "";
