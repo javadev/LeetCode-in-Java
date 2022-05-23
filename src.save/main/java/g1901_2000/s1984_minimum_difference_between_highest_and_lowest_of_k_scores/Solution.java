@@ -1,6 +1,6 @@
 package g1901_2000.s1984_minimum_difference_between_highest_and_lowest_of_k_scores;
 
-// #Easy #Array #Sorting #Sliding_Window #2022_05_22_Time_10_ms_(7.97%)_Space_47_MB_(57.18%)
+// #Easy #Array #Sorting #Sliding_Window #2022_05_23_Time_4_ms_(95.43%)_Space_42.1_MB_(94.99%)
 
 import java.util.Arrays;
 
