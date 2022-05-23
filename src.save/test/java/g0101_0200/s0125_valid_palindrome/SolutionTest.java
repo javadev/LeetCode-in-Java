@@ -10,4 +10,14 @@ class SolutionTest {
     void isPalindrome() {
         assertThat(new Solution().isPalindrome("A man, a plan, a canal: Panama"), equalTo(true));
     }
+
+    @Test
+    void isPalindrome2() {
+        assertThat(new Solution().isPalindrome("race a car"), equalTo(false));
+    }
+
+    @Test
+    void isPalindrome3() {
+        assertThat(new Solution().isPalindrome(" "), equalTo(true));
+    }
 }
