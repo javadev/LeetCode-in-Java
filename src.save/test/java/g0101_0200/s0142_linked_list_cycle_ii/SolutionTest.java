@@ -14,6 +14,21 @@ class SolutionTest {
         listNode1.next.next = new ListNode(0);
         listNode1.next.next.next = new ListNode(-4);
         listNode1.next.next.next.next = listNode1.next;
-        assertThat(new Solution().detectCycle(listNode1), equalTo(listNode1.next));
+        assertThat(new Solution().detectCycle(listNode1) == listNode1.next, equalTo(true));
     }
+
+    @Test
+    void detectCycle2() {
+        ListNode listNode1 = new ListNode(1);
+        listNode1.next = new ListNode(2);
+        listNode1.next.next = listNode1;
+        assertThat(new Solution().detectCycle(listNode1) == listNode1, equalTo(true));
+    }
+
+    @Test
+    void detectCycle3() {
+        ListNode listNode1 = new ListNode(1);
+        assertThat(new Solution().detectCycle(listNode1), equalTo(null));
+    }
+
 }

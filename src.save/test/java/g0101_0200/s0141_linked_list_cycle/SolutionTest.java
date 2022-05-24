@@ -16,4 +16,18 @@ class SolutionTest {
         listNode1.next.next.next.next = listNode1.next;
         assertThat(new Solution().hasCycle(listNode1), equalTo(true));
     }
+
+    @Test
+    void hasCycle2() {
+        ListNode listNode1 = new ListNode(1);
+        listNode1.next = new ListNode(2);
+        listNode1.next.next = listNode1;
+        assertThat(new Solution().hasCycle(listNode1), equalTo(true));
+    }
+
+    @Test
+    void hasCycle3() {
+        ListNode listNode1 = new ListNode(1);
+        assertThat(new Solution().hasCycle(listNode1), equalTo(false));
+    }
 }
