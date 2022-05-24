@@ -1,6 +1,7 @@
-﻿# Write your MySQL query statement below
-# #Easy #Database #SQL_I_Day_7_Function #2022_05_05_Time_459_ms_(54.44%)_Space_0B_(100.00%)
-SELECT activity_date AS day, COUNT(DISTINCT user_id) AS active_users
-FROM Activity
-GROUP BY day
-HAVING day > (SELECT SUBDATE("2019-07-27", INTERVAL 30 DAY))
+# Write your MySQL query statement below
+# #Easy #Database #SQL_I_Day_7_Function #2022_05_24_Time_543_ms_(29.24%)_Space_0B_(100.00%)
+select activity_date as day, count(distinct user_id) as active_users
+from Activity
+where activity_date between '2019-06-28' and '2019-07-27'
+group by day
+having count(activity_type) > 0;
