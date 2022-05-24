@@ -36,7 +36,6 @@ public class Solution {
                     a[i]--;
                 }
             } else {
-
                 return new int[0];
             }
         }
@@ -45,7 +44,6 @@ public class Solution {
                 return new int[0];
             }
         }
-
         return ans;
     }
 }
