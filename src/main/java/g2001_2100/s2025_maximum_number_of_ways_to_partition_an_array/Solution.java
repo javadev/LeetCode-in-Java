@@ -32,7 +32,7 @@ public class Solution {
 
         for (int j = 0; j < n; j++) {
             int ways = 0;
-            long newDiff = k - nums[j];
+            long newDiff = (long) k - nums[j];
             ArrayList<Integer> leftList = partDiffs.get(newDiff);
             if (leftList != null) {
                 int i = upperBound(leftList, j);
