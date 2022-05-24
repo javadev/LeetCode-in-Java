@@ -14,7 +14,6 @@ import com_github_leetcode.ListNode;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-
 public class Solution {
     public ListNode deleteMiddle(ListNode head) {
         if (head.next == null) {
