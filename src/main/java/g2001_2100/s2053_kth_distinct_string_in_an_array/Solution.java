@@ -1,6 +1,7 @@
 package g2001_2100.s2053_kth_distinct_string_in_an_array;
 
 // #Easy #Array #Hash Table #String #Counting
+// #2022_10_1_Time_6_ms_(80.09%)_Space_42_MB(78.45%)
 
 import java.util.HashMap;
 import java.util.Map;
