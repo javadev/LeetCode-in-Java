@@ -11,7 +11,8 @@ public class Solution {
 
     public int scoreOfStudents(String s, int[] answers) {
         ArrayDeque<Integer> st = new ArrayDeque<>();
-        int n = s.length(), i = 0;
+        int n = s.length();
+        int i = 0;
         dp = new HashSet<?>[n][n];
         while (i < n) {
             if (s.charAt(i) - '0' >= 0 && s.charAt(i) - '9' <= 0) {
@@ -25,7 +26,8 @@ public class Solution {
                 i++;
             }
         }
-        int res = 0, ret = 0;
+        int res = 0;
+        int ret = 0;
         while (!st.isEmpty()) {
             res += st.pop();
         }
