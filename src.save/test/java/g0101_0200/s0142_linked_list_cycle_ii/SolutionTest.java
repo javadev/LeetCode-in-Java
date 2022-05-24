@@ -30,5 +30,4 @@ class SolutionTest {
         ListNode listNode1 = new ListNode(1);
         assertThat(new Solution().detectCycle(listNode1), equalTo(null));
     }
-
 }

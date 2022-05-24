@@ -19,17 +19,20 @@ class SolutionTest {
 
     @Test
     void wordBreak2() {
-        List<String> wordDict = Arrays.asList("apple","pen","applepen","pine","pineapple");
+        List<String> wordDict = Arrays.asList("apple", "pen", "applepen", "pine", "pineapple");
         assertThat(
                 new Solution().wordBreak("pineapplepenapple", wordDict),
-                equalTo(Arrays.asList("pine apple pen apple", "pine applepen apple", "pineapple pen apple")));
+                equalTo(
+                        Arrays.asList(
+                                "pine apple pen apple",
+                                "pine applepen apple",
+                                "pineapple pen apple")));
     }
 
     @Test
     void wordBreak3() {
-        List<String> wordDict = Arrays.asList("cats","dog","sand","and","cat");
+        List<String> wordDict = Arrays.asList("cats", "dog", "sand", "and", "cat");
         assertThat(
-                new Solution().wordBreak("catsandog", wordDict),
-                equalTo(Collections.emptyList()));
+                new Solution().wordBreak("catsandog", wordDict), equalTo(Collections.emptyList()));
     }
 }
