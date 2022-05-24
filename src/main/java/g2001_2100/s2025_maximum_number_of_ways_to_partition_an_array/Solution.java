@@ -29,7 +29,6 @@ public class Solution {
                     partDiffs.computeIfAbsent(partDiff, k1 -> new ArrayList<>());
             idxSet.add(i);
         }
-
         for (int j = 0; j < n; j++) {
             int ways = 0;
             long newDiff = (long) k - nums[j];
