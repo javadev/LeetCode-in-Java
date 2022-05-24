@@ -45,7 +45,7 @@ The query result format is in the following example.
     | Corona Masks  | Sell      | 5             | 500    |
     | Corona Masks  | Buy       | 6             | 1000   |
     | Handbags      | Sell      | 29            | 7000   |
-    | Corona Masks  | Sell      | 10             | 10000 |
+    | Corona Masks  | Sell      | 10            | 10000  |
     +---------------+-----------+---------------+--------+
 
 **Output:**
