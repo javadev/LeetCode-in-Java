@@ -5,7 +5,8 @@ package g2001_2100.s2027_minimum_moves_to_convert_string;
 public class Solution {
     public int minimumMoves(String s) {
         int moves = 0;
-        for (int i = 0; i < s.length(); ) {
+        int i = 0;
+        while (i < s.length()) {
             if (s.charAt(i) == 'O') {
                 i++;
                 continue;

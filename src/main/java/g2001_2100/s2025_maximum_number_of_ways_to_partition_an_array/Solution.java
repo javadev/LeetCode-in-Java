@@ -5,6 +5,7 @@ package g2001_2100.s2025_maximum_number_of_ways_to_partition_an_array;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Solution {
@@ -18,7 +19,9 @@ public class Solution {
         Map<Long, ArrayList<Integer>> partDiffs = new HashMap<>();
         int maxWays = 0;
         for (int i = 1; i < n; i++) {
-            long partL = ps[i - 1], partR = ps[n - 1] - partL, partDiff = partR - partL;
+            long partL = ps[i - 1];
+            long partR = ps[n - 1] - partL;
+            long partDiff = partR - partL;
             if (partDiff == 0) {
                 maxWays++;
             }
@@ -45,8 +48,11 @@ public class Solution {
         return maxWays;
     }
 
-    public static int upperBound(ArrayList<Integer> arr, int val) {
-        int ans = -1, n = arr.size(), l = 0, r = n;
+    public static int upperBound(List<Integer> arr, int val) {
+        int ans = -1;
+        int n = arr.size();
+        int l = 0;
+        int r = n;
         while (l <= r) {
             int mid = l + (r - l) / 2;
             if (mid == n) {
