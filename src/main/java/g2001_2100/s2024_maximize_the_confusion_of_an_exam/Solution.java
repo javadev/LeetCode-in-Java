@@ -28,7 +28,6 @@ public class Solution {
                 right++;
             }
         }
-
         right = 0;
         k = originalK;
         while (k > 0 && right < answerKey.length()) {
