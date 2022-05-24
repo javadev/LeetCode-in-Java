@@ -1,9 +1,9 @@
 package g2001_2100.s2027_minimum_moves_to_convert_string;
 
-import org.junit.jupiter.api.Test;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test

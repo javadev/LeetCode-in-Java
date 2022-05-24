@@ -9,55 +9,56 @@ import java.util.Map;
 
 public class Solution {
     public int waysToPartition(int[] nums, int k) {
-        int n= nums.length;
-        long[] ps= new long[n];
-        ps[0]= nums[0];
-        for(int i=1; i<n; i++){
-            ps[i]= ps[i-1] + nums[i];
+        int n = nums.length;
+        long[] ps = new long[n];
+        ps[0] = nums[0];
+        for (int i = 1; i < n; i++) {
+            ps[i] = ps[i - 1] + nums[i];
         }
-        Map<Long, ArrayList<Integer>> partDiffs= new HashMap<>();
-        int maxWays= 0;
-        for(int i=1; i<n; i++){
-            long partL= ps[i-1], partR= ps[n-1]-partL, partDiff= partR-partL;
-            if(partDiff==0) {
+        Map<Long, ArrayList<Integer>> partDiffs = new HashMap<>();
+        int maxWays = 0;
+        for (int i = 1; i < n; i++) {
+            long partL = ps[i - 1], partR = ps[n - 1] - partL, partDiff = partR - partL;
+            if (partDiff == 0) {
                 maxWays++;
             }
-            ArrayList<Integer> idxSet = partDiffs.computeIfAbsent(partDiff, k1 -> new ArrayList<>());
+            ArrayList<Integer> idxSet =
+                    partDiffs.computeIfAbsent(partDiff, k1 -> new ArrayList<>());
             idxSet.add(i);
         }
 
-        for(int j=0; j<n; j++){
-            int ways= 0;
-            long newDiff= k-nums[j];
-            ArrayList<Integer> leftList= partDiffs.get(newDiff); 
-            if(leftList!=null){
-                int i= upperBound(leftList, j);
-                ways+= leftList.size()-i;
+        for (int j = 0; j < n; j++) {
+            int ways = 0;
+            long newDiff = k - nums[j];
+            ArrayList<Integer> leftList = partDiffs.get(newDiff);
+            if (leftList != null) {
+                int i = upperBound(leftList, j);
+                ways += leftList.size() - i;
             }
-            ArrayList<Integer> rightList= partDiffs.get(-newDiff);
-            if(rightList!=null){
-                int i= upperBound(rightList, j);
-                ways+= i;
+            ArrayList<Integer> rightList = partDiffs.get(-newDiff);
+            if (rightList != null) {
+                int i = upperBound(rightList, j);
+                ways += i;
             }
-            maxWays= Math.max(ways, maxWays);
+            maxWays = Math.max(ways, maxWays);
         }
         return maxWays;
-    }    
+    }
 
-    public static int upperBound(ArrayList<Integer> arr, int val){
-        int ans= -1, n= arr.size(), l= 0, r= n;
-        while(l<=r){
-            int mid= l+(r-l)/2;
-            if(mid==n) {
+    public static int upperBound(ArrayList<Integer> arr, int val) {
+        int ans = -1, n = arr.size(), l = 0, r = n;
+        while (l <= r) {
+            int mid = l + (r - l) / 2;
+            if (mid == n) {
                 return n;
             }
-            if(arr.get(mid)>val){
-                ans= mid;
-                r= mid-1;
-            }else{
-                l= mid+1;
+            if (arr.get(mid) > val) {
+                ans = mid;
+                r = mid - 1;
+            } else {
+                l = mid + 1;
             }
         }
         return ans;
-    } 
+    }
 }
