@@ -46,9 +46,9 @@ The query result format is in the following example.
     +------------+--------------+------------+
     | product_id | product_name | unit_price |
     +------------+--------------+------------+
-    | 1 | S8 | 1000 |
-    | 2 | G4 | 800 |
-    | 3 | iPhone | 1400 |
+    | 1          | S8           | 1000       |
+    | 2          | G4           | 800        |
+    | 3          | iPhone       | 1400       |
     +------------+--------------+------------+
     
     Sales table:
