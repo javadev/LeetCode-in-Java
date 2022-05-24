@@ -6,14 +6,15 @@ package g2001_2100.s2019_the_score_of_students_solving_math_expression;
 import java.util.ArrayDeque;
 import java.util.HashSet;
 
+@SuppressWarnings("unchecked")
 public class Solution {
-    private HashSet<?>[][] dp;
+    private HashSet<Integer>[][] dp;
 
     public int scoreOfStudents(String s, int[] answers) {
         ArrayDeque<Integer> st = new ArrayDeque<>();
         int n = s.length();
         int i = 0;
-        dp = new HashSet<?>[n][n];
+        dp = new HashSet[n][n];
         while (i < n) {
             if (s.charAt(i) - '0' >= 0 && s.charAt(i) - '9' <= 0) {
                 st.push(s.charAt(i) - '0');
@@ -44,7 +45,7 @@ public class Solution {
 
     private HashSet<Integer> opts(int i, int j, String s) {
         if (dp[i][j] != null) {
-            return (HashSet<Integer>) dp[i][j];
+            return dp[i][j];
         }
         if (i == j) {
             HashSet<Integer> res = new HashSet<>();
