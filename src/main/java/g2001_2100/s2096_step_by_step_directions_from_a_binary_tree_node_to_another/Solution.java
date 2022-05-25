@@ -7,7 +7,9 @@ import com_github_leetcode.TreeNode;
 
 public class Solution {
     private boolean find(TreeNode n, int val, StringBuilder sb) {
-        if (n.val == val) return true;
+        if (n.val == val) {
+            return true;
+        }
         if (n.left != null && find(n.left, val, sb)) {
             sb.append("L");
         } else if (n.right != null && find(n.right, val, sb)) {
@@ -21,8 +23,9 @@ public class Solution {
         StringBuilder d = new StringBuilder();
         find(root, startValue, s);
         find(root, destValue, d);
-        int i = 0, max_i = Math.min(d.length(), s.length());
-        while (i < max_i && s.charAt(s.length() - i - 1) == d.charAt(d.length() - i - 1)) {
+        int i = 0;
+        int maxI = Math.min(d.length(), s.length());
+        while (i < maxI && s.charAt(s.length() - i - 1) == d.charAt(d.length() - i - 1)) {
             ++i;
         }
         StringBuilder result = new StringBuilder();
