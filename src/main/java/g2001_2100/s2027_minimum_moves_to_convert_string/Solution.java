@@ -1,24 +1,19 @@
 package g2001_2100.s2027_minimum_moves_to_convert_string;
 
-// #Easy #String #Greedy #2022_05_25_Time_4_ms_(5.74%)_Space_42.1_MB_(37.50%)
+// #Easy #String #Greedy #2022_05_25_Time_0_ms_(100.00%)_Space_40_MB_(97.32%)
 
 public class Solution {
     public int minimumMoves(String s) {
-        int moves = 0;
+        int r = 0;
         int i = 0;
-        while (i < s.length()) {
-            if (s.charAt(i) == 'O') {
-                i++;
-                continue;
+        char[] sArray = s.toCharArray();
+        while (i < sArray.length) {
+            if (sArray[i] == 'X') {
+                r++;
+                i += 2;
             }
-            String candidate = i + 3 <= s.length() ? s.substring(i, i + 3) : s.substring(i);
-            if (candidate.contains("X")) {
-                moves++;
-                i += 3;
-            } else {
-                i++;
-            }
+            i++;
         }
-        return moves;
+        return r;
     }
 }
