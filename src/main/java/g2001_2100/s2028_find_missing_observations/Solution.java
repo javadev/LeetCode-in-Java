@@ -11,11 +11,9 @@ public class Solution {
             msum += roll;
         }
         int totalmn = mean * (m + n) - msum;
-
         if (totalmn < n || totalmn > n * 6) {
             return new int[0];
         }
-
         int j = 0;
         while (totalmn > 0) {
             int dice = Math.min(6, totalmn - n + 1);
