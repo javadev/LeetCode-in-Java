@@ -27,7 +27,8 @@ public class Solution {
         }
 
         for (int state = 0; state < (1 << n); state++) {
-            int sum1 = 0, sum2 = 0;
+            int sum1 = 0;
+            int sum2 = 0;
             for (int i = 0; i < n; i++) {
                 if ((state & (1 << i)) == 0) {
                     continue;

@@ -26,7 +26,7 @@ public class StockPrice {
     public StockPrice() {
         map = new HashMap<>();
         maxHeap =
-                new PriorityQueue<Record>(
+                new PriorityQueue<>(
                         (r1, r2) -> {
                             if (r1.price.equals(r2.price)) {
                                 return 0;
@@ -35,7 +35,7 @@ public class StockPrice {
                             }
                         });
         minHeap =
-                new PriorityQueue<Record>(
+                new PriorityQueue<>(
                         (r1, r2) -> {
                             if (r1.price.equals(r2.price)) {
                                 return 0;
