@@ -46,7 +46,7 @@ class FizzBuzzTest {
                             }
                         })
                 .start();
-        TimeUnit.MILLISECONDS.sleep(200);
+        TimeUnit.MILLISECONDS.sleep(300);
         assertThat(fizz[0], equalTo(15));
     }
 
@@ -89,7 +89,7 @@ class FizzBuzzTest {
                             }
                         })
                 .start();
-        TimeUnit.MILLISECONDS.sleep(100);
+        TimeUnit.MILLISECONDS.sleep(300);
         assertThat(fizz[0], equalTo(5));
     }
 }
