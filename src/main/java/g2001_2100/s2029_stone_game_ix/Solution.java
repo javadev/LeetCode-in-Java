@@ -47,7 +47,6 @@ public class Solution {
                     } else {
                         return false;
                     }
-
                 } else if (sum % 3 == 2) {
                     if (freq[0] > 0) {
                         freq[0]--;
@@ -58,7 +57,6 @@ public class Solution {
                         return false;
                     }
                 }
-
             } else {
                 if (sum % 3 == 2) {
                     if (freq[0] > 0) {
@@ -69,7 +67,6 @@ public class Solution {
                     } else {
                         return true;
                     }
-
                 } else if (sum % 3 == 1) {
                     if (freq[0] > 0) {
                         freq[0]--;
