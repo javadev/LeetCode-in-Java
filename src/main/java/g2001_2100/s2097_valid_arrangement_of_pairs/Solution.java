@@ -26,16 +26,8 @@ public class Solution {
             int d = pair[1];
             Queue<Integer> set = adList.computeIfAbsent(s, k -> new LinkedList<>());
             set.add(d);
-            int[] sEdgeCnt = inOutEdge.get(s);
-            int[] dEdgeCnt = inOutEdge.get(d);
-            if (sEdgeCnt == null) {
-                sEdgeCnt = new int[2];
-                inOutEdge.put(s, sEdgeCnt);
-            }
-            if (dEdgeCnt == null) {
-                dEdgeCnt = new int[2];
-                inOutEdge.put(d, dEdgeCnt);
-            }
+            int[] sEdgeCnt = inOutEdge.computeIfAbsent(s, k -> new int[2]);
+            int[] dEdgeCnt = inOutEdge.computeIfAbsent(d, k -> new int[2]);
             sEdgeCnt[1]++;
             dEdgeCnt[0]++;
         }
@@ -47,7 +39,7 @@ public class Solution {
         if (edges == null) {
             return idx;
         }
-        while (edges.size() > 0) {
+        while (!edges.isEmpty()) {
             int edge = edges.poll();
             idx = getRes(edge, adList, res, idx);
             res[idx--] = new int[] {k, edge};
