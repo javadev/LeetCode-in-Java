@@ -6,6 +6,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import java.util.concurrent.TimeUnit;
 import org.junit.jupiter.api.Test;
 
+@SuppressWarnings("java:S2925")
 class DiningPhilosophersTest {
     @Test
     void diningPhilosophers() throws InterruptedException {

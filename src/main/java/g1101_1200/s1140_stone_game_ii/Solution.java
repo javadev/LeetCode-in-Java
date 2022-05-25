@@ -10,7 +10,8 @@ public class Solution {
 
     private int help(int i, int m, int[] p) {
         if (i >= p.length) {
-            return dp[i][m] = 0;
+            dp[i][m] = 0;
+            return 0;
         }
         if (dp[i][m] != -1) {
             return dp[i][m];
