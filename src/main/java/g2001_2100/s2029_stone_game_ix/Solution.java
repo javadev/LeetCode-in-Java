@@ -5,17 +5,16 @@ package g2001_2100.s2029_stone_game_ix;
 
 public class Solution {
     private int[] stones;
+
     public boolean stoneGameIX(int[] stones) {
         this.stones = stones;
-        int [] freq = new int[3];
+        int[] freq = new int[3];
         for (int i : stones) {
             if (i % 3 == 0) {
                 freq[0]++;
-            }
-            else if (i % 3 == 1) {
+            } else if (i % 3 == 1) {
                 freq[1]++;
-            }
-            else {
+            } else {
                 freq[2]++;
             }
         }
@@ -31,10 +30,10 @@ public class Solution {
             b[2]--;
             b2 = fun(b, 2);
         }
-        return b1 || b2 ;
+        return b1 || b2;
     }
-    
-    private boolean fun (int[] freq, int sum) {
+
+    private boolean fun(int[] freq, int sum) {
         int n = stones.length;
         int i = 1;
         while (i < n) {
@@ -42,45 +41,39 @@ public class Solution {
                 if (sum % 3 == 1) {
                     if (freq[0] > 0) {
                         freq[0]--;
-                    }
-                    else if (freq[1] > 0) {
+                    } else if (freq[1] > 0) {
                         freq[1]--;
                         sum += 1;
                     } else {
                         return false;
                     }
-                    
+
                 } else if (sum % 3 == 2) {
                     if (freq[0] > 0) {
                         freq[0]--;
-                    }
-                    else if (freq[2] > 0) {
+                    } else if (freq[2] > 0) {
                         freq[2]--;
                         sum += 2;
-                    }
-                    else {
+                    } else {
                         return false;
                     }
                 }
-                    
+
             } else {
                 if (sum % 3 == 2) {
                     if (freq[0] > 0) {
                         freq[0]--;
-                    }
-                    else if (freq[2] > 0) {
+                    } else if (freq[2] > 0) {
                         freq[2]--;
                         sum += 2;
-                    }
-                    else {
+                    } else {
                         return true;
                     }
-                    
+
                 } else if (sum % 3 == 1) {
                     if (freq[0] > 0) {
                         freq[0]--;
-                    }
-                    else if (freq[1] > 0) {
+                    } else if (freq[1] > 0) {
                         freq[1]--;
                         sum += 1;
                     } else {

@@ -33,7 +33,6 @@ public class Solution {
                     return -1;
                 }
                 res += rem / x;
-
             }
         }
         return res;
