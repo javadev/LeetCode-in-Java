@@ -42,9 +42,9 @@ public class StockPrice {
 
     public int maximum() {
         while (true) {
-            Record record = maxHeap.peek();
-            if (map.get(record.time).equals(record.price)) {
-                return record.price;
+            Record rec = maxHeap.peek();
+            if (map.get(rec.time).equals(rec.price)) {
+                return rec.price;
             }
             maxHeap.poll();
         }
@@ -52,9 +52,9 @@ public class StockPrice {
 
     public int minimum() {
         while (true) {
-            Record record = minHeap.peek();
-            if (map.get(record.time).equals(record.price)) {
-                return record.price;
+            Record rec = minHeap.peek();
+            if (map.get(rec.time).equals(rec.price)) {
+                return rec.price;
             }
             minHeap.poll();
         }
