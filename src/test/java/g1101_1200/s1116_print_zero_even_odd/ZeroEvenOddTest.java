@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.IntConsumer;
 import org.junit.jupiter.api.Test;
 
+@SuppressWarnings("java:S2925")
 class ZeroEvenOddTest {
     @Test
     void zeroEvenOdd() throws InterruptedException {

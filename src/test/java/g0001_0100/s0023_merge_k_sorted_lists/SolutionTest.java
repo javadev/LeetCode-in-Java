@@ -20,7 +20,7 @@ class SolutionTest {
     }
 
     @Test
-    public void mergeKLists2() {
+    void mergeKLists2() {
         ListNode head1 = LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 3, 5, 7, 11));
         ListNode head2 = LinkedListUtils.createSinglyLinkedList(Arrays.asList(2, 8, 12));
         ListNode head3 = LinkedListUtils.createSinglyLinkedList(Arrays.asList(4, 6, 9, 10));

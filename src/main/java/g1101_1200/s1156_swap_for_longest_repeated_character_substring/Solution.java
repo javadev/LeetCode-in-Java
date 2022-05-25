@@ -9,8 +9,8 @@ import java.util.Map;
 
 public class Solution {
     private static class Pair {
-        public char character;
-        public int count;
+        char character;
+        int count;
 
         public Pair(char c, int count) {
             this.character = c;
@@ -22,7 +22,8 @@ public class Solution {
         List<Pair> pairs = new ArrayList<>();
         Map<Character, Integer> map = new HashMap<>();
         // collect counts for each char-block
-        for (int i = 0; i < text.length(); ) {
+        int i = 0;
+        while (i < text.length()) {
             char c = text.charAt(i);
             int count = 0;
             while (i < text.length() && text.charAt(i) == c) {
@@ -46,11 +47,11 @@ public class Solution {
         }
         // case 2, find xxxxYxxxxx pattern
         // we need total count to make sure whether a swap is possible!
-        for (int i = 1; i < pairs.size() - 1; i++) {
-            if (pairs.get(i - 1).character == pairs.get(i + 1).character
-                    && pairs.get(i).count == 1) {
-                int totalCount = map.get(pairs.get(i - 1).character);
-                int groupSum = pairs.get(i - 1).count + pairs.get(i + 1).count;
+        for (int j = 1; j < pairs.size() - 1; j++) {
+            if (pairs.get(j - 1).character == pairs.get(j + 1).character
+                    && pairs.get(j).count == 1) {
+                int totalCount = map.get(pairs.get(j - 1).character);
+                int groupSum = pairs.get(j - 1).count + pairs.get(j + 1).count;
                 if (totalCount > groupSum) {
                     max = Math.max(max, groupSum + 1);
                 } else {

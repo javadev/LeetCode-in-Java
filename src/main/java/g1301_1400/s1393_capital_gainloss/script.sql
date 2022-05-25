@@ -9,4 +9,4 @@ FROM
 GROUP BY
     stock_name
 ORDER BY
-    operation_day;
+    operation_day asc;
