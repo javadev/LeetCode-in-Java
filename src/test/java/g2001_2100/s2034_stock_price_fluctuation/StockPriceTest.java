@@ -14,7 +14,6 @@ class StockPriceTest {
         assertThat(stockPrice.current(), equalTo(5));
         assertThat(stockPrice.maximum(), equalTo(10));
         stockPrice.update(1, 3);
-
         assertThat(stockPrice.maximum(), equalTo(5));
         stockPrice.update(4, 2);
         assertThat(stockPrice.minimum(), equalTo(2));
