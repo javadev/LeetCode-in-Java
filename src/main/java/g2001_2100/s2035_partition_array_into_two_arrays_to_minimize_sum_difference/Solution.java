@@ -12,7 +12,6 @@ public class Solution {
         if (nums == null || nums.length == 0) {
             return -1;
         }
-
         int n = nums.length / 2;
         int sum = 0;
         List<List<Integer>> arr1 = new ArrayList<>();
@@ -25,7 +24,6 @@ public class Solution {
                 sum += nums[i + n];
             }
         }
-
         for (int state = 0; state < (1 << n); state++) {
             int sum1 = 0;
             int sum2 = 0;
@@ -42,16 +40,13 @@ public class Solution {
             arr1.get(numOfEleInSet).add(sum1);
             arr2.get(numOfEleInSet).add(sum2);
         }
-
         for (int i = 0; i <= n; i++) {
             Collections.sort(arr2.get(i));
         }
-
         int min = Integer.MAX_VALUE;
         for (int i = 0; i <= n; i++) {
             List<Integer> sums1 = arr1.get(i);
             List<Integer> sums2 = arr2.get(n - i);
-
             for (int s1 : sums1) {
                 int idx = Collections.binarySearch(sums2, sum / 2 - s1);
                 if (idx < 0) {
@@ -73,7 +68,6 @@ public class Solution {
                 }
             }
         }
-
         return min;
     }
 }
