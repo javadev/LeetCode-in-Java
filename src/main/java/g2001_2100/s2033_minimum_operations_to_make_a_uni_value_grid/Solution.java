@@ -17,17 +17,14 @@ public class Solution {
         Arrays.sort(arr);
         int target = arr[arr.length / 2];
         int res = 0;
-
         for (int i = 0; i < arr.length; i++) {
             if (i < arr.length / 2) {
-
                 int rem = target - arr[i];
                 if (rem % x != 0) {
                     return -1;
                 }
                 res += rem / x;
             } else {
-
                 int rem = arr[i] - target;
                 if (rem % x != 0) {
                     return -1;
