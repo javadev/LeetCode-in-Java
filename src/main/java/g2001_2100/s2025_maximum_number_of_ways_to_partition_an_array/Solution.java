@@ -47,7 +47,7 @@ public class Solution {
         return maxWays;
     }
 
-    public static int upperBound(List<Integer> arr, int val) {
+    private int upperBound(List<Integer> arr, int val) {
         int ans = -1;
         int n = arr.size();
         int l = 0;
