@@ -9,6 +9,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private int dijkstra(int[][] roads, int n) {
         long mod = (int) 1e9 + 7L;
