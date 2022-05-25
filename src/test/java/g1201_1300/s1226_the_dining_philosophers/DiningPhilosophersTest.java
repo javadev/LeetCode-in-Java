@@ -97,7 +97,7 @@ class DiningPhilosophersTest {
                             }
                         })
                 .start();
-        TimeUnit.MILLISECONDS.sleep(200);
+        TimeUnit.MILLISECONDS.sleep(350);
         assertThat(calls[0], equalTo(25));
     }
 }
