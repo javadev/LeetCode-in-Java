@@ -6,6 +6,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import java.util.concurrent.TimeUnit;
 import org.junit.jupiter.api.Test;
 
+@SuppressWarnings("java:S2925")
 class FooTest {
     @Test
     void foo() throws InterruptedException {
@@ -14,7 +15,7 @@ class FooTest {
         new Thread(() -> foo.first(() -> fooData[0]++)).start();
         new Thread(() -> foo.second(() -> fooData[0]++)).start();
         new Thread(() -> foo.third(() -> fooData[0]++)).start();
-        TimeUnit.MILLISECONDS.sleep(100);
+        TimeUnit.MILLISECONDS.sleep(200);
         assertThat(fooData[0], equalTo(3));
     }
 }
