@@ -9,10 +9,9 @@ class WordDictionaryTest {
     @Test
     void worldDataStructure() {
         String[] input = {"bad", "dad", "mad"};
-
         WordDictionary dictionary = new WordDictionary();
-        for (int i = 0; i < input.length; i++) {
-            dictionary.addWord(input[i]);
+        for (String s : input) {
+            dictionary.addWord(s);
         }
         assertThat(dictionary.search("pad"), equalTo(false));
         assertThat(dictionary.search("bad"), equalTo(true));

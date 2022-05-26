@@ -16,4 +16,16 @@ class SolutionTest {
         };
         assertThat(new Solution().maximalSquare(input), equalTo(4));
     }
+
+    @Test
+    void maximalSquare2() {
+        char[][] input = {{'0', '1'}, {'1', '0'}};
+        assertThat(new Solution().maximalSquare(input), equalTo(1));
+    }
+
+    @Test
+    void maximalSquare3() {
+        char[][] input = {{'0'}};
+        assertThat(new Solution().maximalSquare(input), equalTo(0));
+    }
 }

@@ -10,4 +10,9 @@ class SolutionTest {
     void isHappy() {
         assertThat(new Solution().isHappy(19), equalTo(true));
     }
+
+    @Test
+    void isHappy2() {
+        assertThat(new Solution().isHappy(2), equalTo(false));
+    }
 }

@@ -10,4 +10,14 @@ class SolutionTest {
     void countPrimes() {
         assertThat(new Solution().countPrimes(10), equalTo(4));
     }
+
+    @Test
+    void countPrimes2() {
+        assertThat(new Solution().countPrimes(0), equalTo(0));
+    }
+
+    @Test
+    void countPrimes3() {
+        assertThat(new Solution().countPrimes(1), equalTo(0));
+    }
 }

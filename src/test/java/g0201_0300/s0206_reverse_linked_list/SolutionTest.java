@@ -16,4 +16,16 @@ class SolutionTest {
         headActual.next.next.next.next = new ListNode(5);
         assertThat(new Solution().reverseList(headActual).toString(), equalTo("5, 4, 3, 2, 1"));
     }
+
+    @Test
+    void reverseList2() {
+        ListNode headActual = new ListNode(1);
+        headActual.next = new ListNode(2);
+        assertThat(new Solution().reverseList(headActual).toString(), equalTo("2, 1"));
+    }
+
+    @Test
+    void reverseList3() {
+        assertThat(new Solution().reverseList(null), equalTo(null));
+    }
 }

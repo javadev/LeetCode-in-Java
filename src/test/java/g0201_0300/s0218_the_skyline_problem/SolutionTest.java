@@ -13,4 +13,11 @@ class SolutionTest {
         int[][] expected = {{2, 10}, {3, 15}, {7, 12}, {12, 0}, {15, 10}, {20, 8}, {24, 0}};
         assertThat(new Solution().getSkyline(buildings), equalTo(ArrayUtils.getLists(expected)));
     }
+
+    @Test
+    void getSkyline2() {
+        int[][] buildings = {{0, 2, 3}, {2, 5, 3}};
+        int[][] expected = {{0, 3}, {5, 0}};
+        assertThat(new Solution().getSkyline(buildings), equalTo(ArrayUtils.getLists(expected)));
+    }
 }

@@ -10,4 +10,9 @@ class SolutionTest {
     void shortestPalindrome() {
         assertThat(new Solution().shortestPalindrome("aacecaaa"), equalTo("aaacecaaa"));
     }
+
+    @Test
+    void shortestPalindrome2() {
+        assertThat(new Solution().shortestPalindrome("abcd"), equalTo("dcbabcd"));
+    }
 }
