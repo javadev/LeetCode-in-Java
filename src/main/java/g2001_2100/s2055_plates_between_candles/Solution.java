@@ -5,25 +5,25 @@ package g2001_2100.s2055_plates_between_candles;
 
 public class Solution {
     public int[] platesBetweenCandles(String s, int[][] queries) {
-        char[] S = s.toCharArray();
-        int n = S.length;
+        char[] s_array = s.toCharArray();
+        int n = s_array.length;
 
         int[] nextCandle = new int[n + 1];
 
         nextCandle[n] = -1;
         for (int i = n - 1; i >= 0; i--) {
-            nextCandle[i] = S[i] == '|' ? i : nextCandle[i + 1];
+            nextCandle[i] = s_array[i] == '|' ? i : nextCandle[i + 1];
         }
 
         int[] prevCandle = new int[n];
         int[] prevPlates = new int[n];
         int countPlate = 0;
-        if (S[0] == '*') {
+        if (s_array[0] == '*') {
             countPlate = 1;
             prevCandle[0] = -1;
         }
         for (int i = 1; i < n; i++) {
-            if (S[i] == '|') {
+            if (s_array[i] == '|') {
                 prevCandle[i] = i;
                 prevPlates[i] = countPlate;
             } else {

@@ -10,8 +10,7 @@ class SolutionTest {
     @Test
     void platesBetweenCandles() {
         int[][] queries =
-                CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[[2,5],[5,9]]");
+                CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[2,5],[5,9]");
         assertThat(
                 new Solution().platesBetweenCandles("**|**|***|", queries),
                 equalTo(new int[] {2, 3}));
@@ -21,7 +20,7 @@ class SolutionTest {
     void platesBetweenCandles2() {
         int[][] queries =
                 CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
-                        "[[1,17],[4,5],[14,17],[5,11],[15,16]]");
+                        "[1,17],[4,5],[14,17],[5,11],[15,16]");
         assertThat(
                 new Solution().platesBetweenCandles("***|**|*****|**||**|*", queries),
                 equalTo(new int[] {9, 0, 0, 0, 0}));
