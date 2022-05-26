@@ -1,7 +1,7 @@
 package g2001_2100.s2043_simple_bank_system;
 
 // #Medium #Array #Hash_Table #Design #Simulation
-// #2022_05_26_Time_159_ms_(48.01%)_Space_133.1_MB_(20.58%)
+// #2022_05_27_Time_128_ms_(72.30%)_Space_81_MB_(76.62%)
 
 public class Bank {
     private final long[] accounts;
@@ -39,3 +39,11 @@ public class Bank {
         return false;
     }
 }
+
+/*
+ * Your Bank object will be instantiated and called as such:
+ * Bank obj = new Bank(balance);
+ * boolean param_1 = obj.transfer(account1,account2,money);
+ * boolean param_2 = obj.deposit(account,money);
+ * boolean param_3 = obj.withdraw(account,money);
+ */
