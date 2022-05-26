@@ -3,16 +3,14 @@ package g1901_2000.s1977_number_of_ways_to_separate_numbers;
 // #Hard #String #Dynamic_Programming #Suffix_Array
 // #2022_05_26_Time_730_ms_(43.42%)_Space_324_MB_(27.63%)
 
-@SuppressWarnings("java:S3012")
 public class Solution {
     private int[][] lcp;
     private long[][] dp;
     private long[][] dps;
-    private long mod = 1000000007;
     private String num;
     private int n;
 
-    // Pre compute Longest Common Prefix sequence for each index in the string
+    // Pre-compute The Longest Common Prefix sequence for each index in the string
     private void calcLCP() {
         for (int i = n - 1; i >= 0; i--) {
             for (int j = n - 1; j >= 0; j--) {
@@ -26,13 +24,7 @@ public class Solution {
     // compare substring of same length for value
     private boolean compare(int i, int j, int len) {
         int common = lcp[i][j];
-        if (common >= len) {
-            return true;
-        }
-        if (num.charAt(i + common) < num.charAt(j + common)) {
-            return true;
-        }
-        return false;
+        return common >= len || num.charAt(i + common) < num.charAt(j + common);
     }
 
     // calculates number of possible separations
@@ -45,8 +37,9 @@ public class Solution {
             // for substring starting at index i
             long sum = 0;
             for (int j = n - 1; j >= i; j--) {
+                long mod = 1000000007;
                 if (j == n - 1) {
-                    // whole substring from index i is a valid possible list of interger(single
+                    // whole substring from index i is a valid possible list of integer (single
                     // integer in this case)
                     dp[i][j] = 1;
                 } else {
