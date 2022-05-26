@@ -5,7 +5,8 @@ package g2001_2100.s2049_count_nodes_with_the_highest_score;
 
 public class Solution {
     static class Node {
-        Node left, right;
+        Node left;
+        Node right;
     }
 
     private int size;

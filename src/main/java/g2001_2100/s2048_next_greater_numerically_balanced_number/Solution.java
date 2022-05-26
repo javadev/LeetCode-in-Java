@@ -24,7 +24,7 @@ public class Solution {
         return ans;
     }
 
-    private int make(int cur, int n, int end, boolean[] select, int[] arr) { // Get all permutation.
+    private int make(int cur, int n, int end, boolean[] select, int[] arr) {
         if (end == 0) {
             return cur > n ? cur : Integer.MAX_VALUE;
         }

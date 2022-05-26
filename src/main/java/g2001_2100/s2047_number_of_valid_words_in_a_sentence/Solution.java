@@ -35,9 +35,6 @@ public class Solution {
                 } else if (Character.isDigit(token.charAt(i))) {
                     valid = false;
                     break;
-                } else if (Character.isDigit(token.charAt(i))) {
-                    valid = false;
-                    break;
                 }
             }
             if (valid) {
