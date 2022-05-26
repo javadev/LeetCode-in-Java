@@ -56,10 +56,9 @@ public class Solution {
             if (i == pathValue - 1) {
                 break;
             }
-            if ((sum / change) % 2 == 0) {
-                continue;
+            if ((sum / change) % 2 != 0) {
+                sum = (sum / change + 1) * change;
             }
-            sum = (sum / change + 1) * change;
         }
         return sum;
     }
