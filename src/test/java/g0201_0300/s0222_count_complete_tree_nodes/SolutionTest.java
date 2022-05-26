@@ -18,4 +18,14 @@ class SolutionTest {
         TreeNode root = new TreeNode(1, leftNode, rightNode);
         assertThat(new Solution().countNodes(root), equalTo(6));
     }
+
+    @Test
+    void countNodes2() {
+        assertThat(new Solution().countNodes(null), equalTo(0));
+    }
+
+    @Test
+    void countNodes3() {
+        assertThat(new Solution().countNodes(new TreeNode(1)), equalTo(1));
+    }
 }

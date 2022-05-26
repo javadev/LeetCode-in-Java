@@ -19,4 +19,18 @@ class SolutionTest {
         assertThat(
                 new Solution().removeElements(headActual, 6).toString(), equalTo("1, 2, 3, 4, 5"));
     }
+
+    @Test
+    void removeElements2() {
+        assertThat(new Solution().removeElements(null, 1), equalTo(null));
+    }
+
+    @Test
+    void removeElements3() {
+        ListNode headActual = new ListNode(7);
+        headActual.next = new ListNode(7);
+        headActual.next.next = new ListNode(7);
+        headActual.next.next.next = new ListNode(7);
+        assertThat(new Solution().removeElements(headActual, 7), equalTo(null));
+    }
 }

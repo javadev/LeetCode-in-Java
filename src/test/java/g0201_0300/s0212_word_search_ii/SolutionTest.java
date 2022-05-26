@@ -4,6 +4,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
@@ -17,7 +18,13 @@ class SolutionTest {
         List<String> expected = new ArrayList<>();
         expected.add("oath");
         expected.add("eat");
-
         assertThat(new Solution().findWords(board, words), equalTo(expected));
+    }
+
+    @Test
+    void findWords2() {
+        char[][] board = {{'a', 'b'}, {'c', 'd'}};
+        String[] words = {"abcb"};
+        assertThat(new Solution().findWords(board, words), equalTo(Collections.emptyList()));
     }
 }
