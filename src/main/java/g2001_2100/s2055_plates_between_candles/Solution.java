@@ -7,14 +7,11 @@ public class Solution {
     public int[] platesBetweenCandles(String s, int[][] queries) {
         char[] sa = s.toCharArray();
         int n = sa.length;
-
         int[] nextCandle = new int[n + 1];
-
         nextCandle[n] = -1;
         for (int i = n - 1; i >= 0; i--) {
             nextCandle[i] = sa[i] == '|' ? i : nextCandle[i + 1];
         }
-
         int[] prevCandle = new int[n];
         int[] prevPlates = new int[n];
         int countPlate = 0;
@@ -31,14 +28,12 @@ public class Solution {
                 countPlate++;
             }
         }
-
         int len = queries.length;
         int[] res = new int[len];
         for (int i = 0; i < len; i++) {
             int[] query = queries[i];
             int start = query[0];
             int end = query[1];
-
             int curPlates = 0;
             int endCandle = prevCandle[end];
             if (endCandle >= start) {
@@ -46,10 +41,8 @@ public class Solution {
 
                 curPlates = prevPlates[endCandle] - prevPlates[startCandle];
             }
-
             res[i] = curPlates;
         }
-
         return res;
     }
 }
