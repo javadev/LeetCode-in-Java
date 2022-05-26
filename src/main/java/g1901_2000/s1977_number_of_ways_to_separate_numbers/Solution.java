@@ -1,7 +1,7 @@
 package g1901_2000.s1977_number_of_ways_to_separate_numbers;
 
 // #Hard #String #Dynamic_Programming #Suffix_Array
-// #2022_05_26_Time_730_ms_(43.42%)_Space_324_MB_(27.63%)
+// #2022_05_26_Time_604_ms_(59.21%)_Space_359.3_MB_(5.26%)
 
 public class Solution {
     private int[][] lcp;
