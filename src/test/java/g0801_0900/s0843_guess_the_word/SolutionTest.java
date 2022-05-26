@@ -5,6 +5,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
+@SuppressWarnings("java:S5976")
 class SolutionTest {
     @Test
     void findSecretWord() {
