@@ -7,7 +7,8 @@ import java.util.List;
 
 public class Solution {
     public List<Integer> targetIndices(int[] nums, int target) {
-        int count = 0, lessthan = 0;
+        int count = 0;
+        int lessthan = 0;
         for (int n : nums) {
             if (n == target) {
                 count++;
