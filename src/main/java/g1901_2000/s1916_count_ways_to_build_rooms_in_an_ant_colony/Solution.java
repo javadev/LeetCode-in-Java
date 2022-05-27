@@ -14,18 +14,18 @@ public class Solution {
     private List<Integer>[] graph;
     private long[] fact;
 
-    public int waysToBuildRooms(int[] a) {
-        int n = a.length;
+    public int waysToBuildRooms(int[] prevRoom) {
+        int n = prevRoom.length;
         graph = new ArrayList[n];
         Arrays.setAll(graph, e -> new ArrayList<>());
-        fact = new long[a.length + 10];
+        fact = new long[prevRoom.length + 10];
         fact[0] = fact[1] = 1;
         for (int i = 2; i < fact.length; i++) {
             fact[i] = fact[i - 1] * i;
             fact[i] %= MOD;
         }
-        for (int i = 1; i < a.length; i++) {
-            int pre = a[i];
+        for (int i = 1; i < prevRoom.length; i++) {
+            int pre = prevRoom[i];
             graph[pre].add(i);
         }
 
@@ -58,10 +58,10 @@ public class Solution {
 
     private long c(int i, int j) {
         long mod = 1000000007;
-        long a = fact[i];
+        long prevRoom = fact[i];
         long b = ((fact[i - j] % mod) * (fact[j] % mod)) % mod;
         BigInteger value = BigInteger.valueOf(b);
         long binverse = value.modInverse(BigInteger.valueOf(mod)).longValue();
-        return ((a) * (binverse % mod)) % mod;
+        return (prevRoom * (binverse % mod)) % mod;
     }
 }

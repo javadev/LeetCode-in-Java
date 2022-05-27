@@ -9,6 +9,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public int secondMinimum(int n, int[][] edges, int time, int change) {
         List<Integer>[] adj = new ArrayList[n];
