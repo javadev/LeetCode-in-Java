@@ -1,44 +1,20 @@
 package g2001_2100.s2087_minimum_cost_homecoming_of_a_robot_in_a_grid;
 
-// #Medium #Array #Greedy #Matrix #2022_05_27_Time_1_ms_(98.94%)_Space_62.1_MB_(77.25%)
+// #Medium #Array #Greedy #Matrix #2022_05_27_Time_2_ms_(79.89%)_Space_61.9_MB_(83.07%)
 
 public class Solution {
     public int minCost(int[] startPos, int[] homePos, int[] rowCosts, int[] colCosts) {
-        int total = 0;
-        // if home is to the down of start move, down till there
-        if (homePos[0] > startPos[0]) {
-            int i = startPos[0] + 1;
-            while (i <= homePos[0]) {
-                // adding cost while moving corresponding to the cell
-                total += rowCosts[i];
-                i++;
-            }
-            // else if home is up from the start, move up till there
-        } else if (homePos[0] < startPos[0]) {
-            int i = startPos[0] - 1;
-            while (i >= homePos[0]) {
-                // adding cost while moving corresponding to the cell
-                total += rowCosts[i];
-                i--;
-            }
+        int cost = 0;
+        for (int i = Math.min(startPos[0], homePos[0]);
+                i <= Math.max(startPos[0], homePos[0]);
+                i++) {
+            cost += rowCosts[i];
         }
-        // if home is right to the start, move right till there
-        if (homePos[1] > startPos[1]) {
-            int i = startPos[1] + 1;
-            while (i <= homePos[1]) {
-                // adding cost while moving corresponding to the cell
-                total += colCosts[i];
-                i++;
-            }
-            // else if home is left to the start, move left till there
-        } else if (homePos[1] < startPos[1]) {
-            int i = startPos[1] - 1;
-            while (i >= homePos[1]) {
-                // adding cost while moving corresponding to the cell
-                total += colCosts[i];
-                i--;
-            }
+        for (int j = Math.min(startPos[1], homePos[1]);
+                j <= Math.max(startPos[1], homePos[1]);
+                j++) {
+            cost += colCosts[j];
         }
-        return total;
+        return cost - rowCosts[startPos[0]] - colCosts[startPos[1]];
     }
 }
