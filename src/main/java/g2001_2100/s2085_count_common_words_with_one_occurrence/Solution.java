@@ -8,10 +8,8 @@ import java.util.Objects;
 public class Solution {
     public int countWords(String[] words1, String[] words2) {
         int count = 0;
-        HashMap<String, Integer> map = new HashMap<String, Integer>();
-        HashMap<String, Integer> map1 = new HashMap<String, Integer>();
-        int n1 = words1.length;
-        int n2 = words2.length;
+        HashMap<String, Integer> map = new HashMap<>();
+        HashMap<String, Integer> map1 = new HashMap<>();
         // Putting the "words1" array in the map
         for (String s : words1) {
             if (!map.containsKey(s)) {
