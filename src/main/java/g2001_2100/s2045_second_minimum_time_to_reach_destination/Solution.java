@@ -24,7 +24,6 @@ public class Solution {
         }
         int[] dis1 = new int[n];
         int[] dis2 = new int[n];
-
         Arrays.fill(dis1, Integer.MAX_VALUE);
         Arrays.fill(dis2, Integer.MAX_VALUE);
         dis1[0] = 0;
@@ -34,7 +33,6 @@ public class Solution {
             int[] temp = queue.poll();
             int cur = temp[0];
             int path = temp[1];
-
             for (int node : adj[cur]) {
                 int newPath = path + 1;
                 if (newPath < dis1[node]) {
