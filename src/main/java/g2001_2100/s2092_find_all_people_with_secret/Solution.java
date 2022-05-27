@@ -55,7 +55,9 @@ public class Solution {
         public UF(int n) {
             parent = new int[n];
             rank = new int[n];
-            for (int i = 0; i < n; i++) parent[i] = i;
+            for (int i = 0; i < n; i++) {
+                parent[i] = i;
+            }
         }
 
         public void union(int p, int q) {
