@@ -4,7 +4,8 @@ package g2001_2100.s2088_count_fertile_pyramids_in_a_land;
 
 public class Solution {
     public int countPyramids(int[][] grid) {
-        int m = grid.length, n = grid[0].length;
+        int m = grid.length;
+        int n = grid[0].length;
         int[][] rev = new int[m][n];
         for (int i = 0; i < m; ++i) {
             System.arraycopy(grid[i], 0, rev[m - i - 1], 0, n);
@@ -13,9 +14,12 @@ public class Solution {
     }
 
     private int cal(int[][] grid) {
-        int m = grid.length, n = grid[0].length, res = 0;
+        int m = grid.length;
+        int n = grid[0].length;
+        int res = 0;
         for (int i = 1; i < m; ++i) {
-            for (int j = 0, cnt = 0; j < n; ++j) {
+            int cnt = 0;
+            for (int j = 0; j < n; ++j) {
                 if (0 != grid[i][j]) {
                     cnt++;
                 } else {
