@@ -14,8 +14,11 @@ public class Solution {
         int n2 = words2.length;
         // Putting the "words1" array in the map
         for (String s : words1) {
-            if (!map.containsKey(s)) map.put(s, 1);
-            else map.put(s, map.get(s) + 1);
+            if (!map.containsKey(s)) {
+                map.put(s, 1);
+            } else {
+                map.put(s, map.get(s) + 1);
+            }
         }
         // Putting "words2" array in another map
         for (String s : words2) {
