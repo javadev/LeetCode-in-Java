@@ -30,9 +30,12 @@ Given a linked list `head`, return _an array of length 2 containing_ `[minDistan
 
 **Output:** [1,3]
 
-**Explanation:** There are three critical points: 
-- [5,3,**1**,2,5,1,2]: The third node is a local minima because 1 is less than 3 and 2. 
-- [5,3,1,2,**5**,1,2]: The fifth node is a local maxima because 5 is greater than 2 and 1. 
+**Explanation:** There are three critical points:
+
+- [5,3,**1**,2,5,1,2]: The third node is a local minima because 1 is less than 3 and 2.
+
+- [5,3,1,2,**5**,1,2]: The fifth node is a local maxima because 5 is greater than 2 and 1.
+
 - [5,3,1,2,5,**1**,2]: The sixth node is a local minima because 1 is less than 5 and 2. 
 
 The minimum distance is between the fifth and the sixth node. minDistance = 6 - 5 = 1. 
@@ -47,9 +50,12 @@ The maximum distance is between the third and the sixth node. maxDistance = 6 - 
 
 **Output:** [3,3]
 
-**Explanation:** There are two critical points: 
-- [1,**3**,2,2,3,2,2,2,7]: The second node is a local maxima because 3 is greater than 1 and 2. 
-- [1,3,2,2,**3**,2,2,2,7]: The fifth node is a local maxima because 3 is greater than 2 and 2. 
+**Explanation:** There are two critical points:
+
+- [1,**3**,2,2,3,2,2,2,7]: The second node is a local maxima because 3 is greater than 1 and 2.
+
+- [1,3,2,2,**3**,2,2,2,7]: The fifth node is a local maxima because 3 is greater than 2 and 2.
+
 Both the minimum and maximum distances are between the second and the fifth node. 
 
 Thus, minDistance and maxDistance is 5 - 2 = 3. 
