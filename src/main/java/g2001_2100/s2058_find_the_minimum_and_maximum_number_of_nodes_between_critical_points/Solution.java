@@ -5,7 +5,7 @@ package g2001_2100.s2058_find_the_minimum_and_maximum_number_of_nodes_between_cr
 
 import com_github_leetcode.ListNode;
 
-class Solution {
+public class Solution {
     public int[] nodesBetweenCriticalPoints(ListNode head) {
         ListNode p = head;
         ListNode c = p.next;
