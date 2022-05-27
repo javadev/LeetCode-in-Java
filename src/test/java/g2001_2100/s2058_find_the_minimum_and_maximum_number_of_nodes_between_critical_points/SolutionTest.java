@@ -12,19 +12,19 @@ class SolutionTest {
     @Test
     void nodesBetweenCriticalPoints() {
         ListNode node = LinkedListUtils.createSinglyLinkedList(Arrays.asList(3, 1));
-        assertThat(new Solution().nodesBetweenCriticalPoints(node).toString(), equalTo("-1,-1"));
+        assertThat(new Solution().nodesBetweenCriticalPoints(node), equalTo(new int[] {-1, -1}));
     }
 
     @Test
     void nodesBetweenCriticalPoints2() {
         ListNode node = LinkedListUtils.createSinglyLinkedList(Arrays.asList(5, 3, 1, 2, 5, 1, 2));
-        assertThat(new Solution().nodesBetweenCriticalPoints(node).toString(), equalTo("1,3"));
+        assertThat(new Solution().nodesBetweenCriticalPoints(node), equalTo(new int[] {1, 3}));
     }
 
     @Test
     void nodesBetweenCriticalPoints3() {
         ListNode node =
                 LinkedListUtils.createSinglyLinkedList(Arrays.asList(1, 3, 2, 2, 3, 2, 2, 2, 7));
-        assertThat(new Solution().nodesBetweenCriticalPoints(node).toString(), equalTo("3,3"));
+        assertThat(new Solution().nodesBetweenCriticalPoints(node), equalTo(new int[] {3, 3}));
     }
 }
