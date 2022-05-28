@@ -20,9 +20,11 @@ Return _the **minimum** number of operations needed to convert_ `x = start` _int
 
 **Output:** 2
 
-**Explanation:** We can go from 2 → 14 → 12 with the following 2 operations. 
-- 2 + 12 = 14 
-- 14 - 2 = 12 
+**Explanation:** We can go from 2 → 14 → 12 with the following 2 operations.
+
+- 2 + 12 = 14
+
+- 14 - 2 = 12
 
 **Example 2:**
 
@@ -30,8 +32,10 @@ Return _the **minimum** number of operations needed to convert_ `x = start` _int
 
 **Output:** 2
 
-**Explanation:** We can go from 0 → 3 → -4 with the following 2 operations. 
-- 0 + 3 = 3 
+**Explanation:** We can go from 0 → 3 → -4 with the following 2 operations.
+
+- 0 + 3 = 3
+
 - 3 - 7 = -4 
 
 Note that the last operation sets x out of the range 0 <= x <= 1000, which is valid. 
