@@ -1,8 +1,8 @@
 package g2001_2100.s2068_check_whether_two_strings_are_almost_equivalent;
 
-// #Easy#String #Hash_Table #Counting #2022_05_28_Time_1_ms(94.83)_Space_42.7_MB(23.62%)
+// #Easy #String #Hash_Table #Counting #2022_05_28_Time_1_ms_(94.83%)_Space_42.7_MB_(23.62%)
 
-class Solution {
+public class Solution {
     public boolean checkAlmostEquivalent(String word1, String word2) {
         int[] freq = new int[26];
         for (int i = 0; i < word1.length(); i++) {
