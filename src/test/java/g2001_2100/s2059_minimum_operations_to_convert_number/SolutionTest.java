@@ -13,11 +13,11 @@ class SolutionTest {
 
     @Test
     void minimumOperations2() {
-        assertThat(new Solution().minimumOperations(new int[] {3,5,7}, 0, -4), equalTo(2));
+        assertThat(new Solution().minimumOperations(new int[] {3, 5, 7}, 0, -4), equalTo(2));
     }
 
     @Test
     void minimumOperations3() {
-        assertThat(new Solution().minimumOperations(new int[] {2,8,16}, 0, 1), equalTo(-1));
+        assertThat(new Solution().minimumOperations(new int[] {2, 8, 16}, 0, 1), equalTo(-1));
     }
 }

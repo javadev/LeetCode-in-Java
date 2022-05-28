@@ -9,7 +9,7 @@ class Solution {
         boolean seen[] = new boolean[1001];
         List<Integer> q = Arrays.asList(goal);
         int cnt = 0;
-        while(!q.isEmpty()) {
+        while (!q.isEmpty()) {
             ++cnt;
             List<Integer> q1 = new ArrayList<>();
             for (int x : q)
@@ -19,12 +19,12 @@ class Solution {
                             if (xn == start) {
                                 return cnt;
                             }
-                            seen[xn] = true; 
+                            seen[xn] = true;
                             q1.add(xn);
                         }
                 }
             q = q1;
-        }    
+        }
         return -1;
     }
 }
