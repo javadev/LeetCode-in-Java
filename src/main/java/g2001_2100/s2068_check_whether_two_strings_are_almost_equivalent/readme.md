@@ -24,12 +24,18 @@ The difference is 4, which is more than the allowed 3.
 
 **Output:** true
 
-**Explanation:** The differences between the frequencies of each letter in word1 and word2 are at most 3: 
-- 'a' appears 1 time in word1 and 4 times in word2. The difference is 3. 
-- 'b' appears 1 time in word1 and 1 time in word2. The difference is 0. 
-- 'c' appears 1 time in word1 and 2 times in word2. The difference is 1. 
-- 'd' appears 1 time in word1 and 0 times in word2. The difference is 1. 
-- 'e' appears 2 times in word1 and 0 times in word2. The difference is 2. 
+**Explanation:** The differences between the frequencies of each letter in word1 and word2 are at most 3:
+ 
+- 'a' appears 1 time in word1 and 4 times in word2. The difference is 3.
+
+- 'b' appears 1 time in word1 and 1 time in word2. The difference is 0.
+
+- 'c' appears 1 time in word1 and 2 times in word2. The difference is 1.
+
+- 'd' appears 1 time in word1 and 0 times in word2. The difference is 1.
+
+- 'e' appears 2 times in word1 and 0 times in word2. The difference is 2.
+
 - 'f' appears 1 time in word1 and 0 times in word2. The difference is 1. 
 
 **Example 3:**
@@ -38,10 +44,14 @@ The difference is 4, which is more than the allowed 3.
 
 **Output:** true
 
-**Explanation:** The differences between the frequencies of each letter in word1 and word2 are at most 3: 
-- 'a' appears 2 times in word1 and 4 times in word2. The difference is 2. 
-- 'b' appears 2 times in word1 and 5 times in word2. The difference is 3. 
-- 'c' appears 3 times in word1 and 0 times in word2. The difference is 3. 
+**Explanation:** The differences between the frequencies of each letter in word1 and word2 are at most 3:
+
+- 'a' appears 2 times in word1 and 4 times in word2. The difference is 2.
+
+- 'b' appears 2 times in word1 and 5 times in word2. The difference is 3.
+
+- 'c' appears 3 times in word1 and 0 times in word2. The difference is 3.
+
 - 'd' appears 2 times in word1 and 0 times in word2. The difference is 2. 
 
 **Constraints:**
