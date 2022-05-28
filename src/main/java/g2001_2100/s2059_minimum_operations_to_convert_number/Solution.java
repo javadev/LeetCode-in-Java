@@ -8,7 +8,7 @@ import java.util.List;
 
 class Solution {
     public int minimumOperations(int[] nums, int start, int goal) {
-        boolean seen[] = new boolean[1001];
+        boolean[] seen = new boolean[1001];
         List<Integer> q = Arrays.asList(goal);
         int cnt = 0;
         while (!q.isEmpty()) {
