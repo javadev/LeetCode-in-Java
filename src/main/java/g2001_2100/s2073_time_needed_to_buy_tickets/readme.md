@@ -8,7 +8,7 @@ You are given a **0-indexed** integer array `tickets` of length `n` where the nu
 
 Each person takes **exactly 1 second** to buy a ticket. A person can only buy **1 ticket at a time** and has to go back to **the end** of the line (which happens **instantaneously**) in order to buy more tickets. If a person does not have any tickets left to buy, the person will **leave** the line.
 
-Return _the **time taken** for the person at position_ `k`**_(0-indexed)_ **_to finish buying tickets_.
+Return _the **time taken** for the person at position_ `k`_**(0-indexed)** to finish buying tickets_.
 
 **Example 1:**
 
