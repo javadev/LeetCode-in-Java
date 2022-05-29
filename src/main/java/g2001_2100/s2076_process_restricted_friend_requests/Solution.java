@@ -33,9 +33,9 @@ public class Solution {
         return res;
     }
 
-    private class UnionFind {
-        public int n;
-        public int[] parent;
+    private static class UnionFind {
+        int n;
+        int[] parent;
 
         public UnionFind(int n) {
             this.n = n;
