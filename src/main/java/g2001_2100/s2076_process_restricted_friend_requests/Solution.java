@@ -26,7 +26,8 @@ public class Solution {
             }
             if (flag) {
                 res[i] = true;
-                uf.parent[p1] = p2; // Union
+                // Union
+                uf.parent[p1] = p2;
             }
         }
         return res;
