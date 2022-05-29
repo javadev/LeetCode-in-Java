@@ -23,7 +23,6 @@ public class Solution {
     private Boolean[][][] memo;
 
     public boolean possiblyEquals(String s1, String s2) {
-
         this.s1 = s1;
         this.s2 = s2;
         memo = new Boolean[s1.length() + 1][s2.length() + 1][2000];
@@ -51,7 +50,6 @@ public class Solution {
             stringMatched = memo[i1][i2][diff + 999];
             return;
         }
-
         List<int[]> indexNums1 = new ArrayList<>();
         int num1 = 0;
         int x1 = i1;
@@ -60,7 +58,6 @@ public class Solution {
             indexNums1.add(new int[] {x1, num1});
             x1++;
         }
-
         List<int[]> indexNums2 = new ArrayList<>();
         int num2 = 0;
         int x2 = i2;
@@ -69,7 +66,6 @@ public class Solution {
             indexNums2.add(new int[] {x2, num2});
             x2++;
         }
-
         if (diff == 0) {
             char c1 = s1.charAt(i1);
             char c2 = s2.charAt(i2);
@@ -107,7 +103,6 @@ public class Solution {
                 }
             }
         }
-
         memo[i1][i2][diff + 999] = stringMatched;
     }
 }
