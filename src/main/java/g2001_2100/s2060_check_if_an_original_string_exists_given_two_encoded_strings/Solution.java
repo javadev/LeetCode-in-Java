@@ -74,11 +74,13 @@ public class Solution {
             char c1 = s1.charAt(i1);
             char c2 = s2.charAt(i2);
             if (Character.isLetter(c1) && Character.isLetter(c2)) {
-                if (c1 != c2) return;
+                if (c1 != c2) {
+                    return;
+                }
                 dfs(i1 + 1, i2 + 1, diff);
                 return;
             } else {
-                if (indexNums1.size() > 0) {
+                if (!indexNums1.isEmpty()) {
                     for (int[] num1Item : indexNums1) {
                         dfs(num1Item[0] + 1, i2, diff + num1Item[1]);
                     }

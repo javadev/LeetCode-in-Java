@@ -58,14 +58,20 @@ public class Solution {
             maxQuality = Math.max(maxQuality, curValue);
         }
         int tmp = values[start];
-        if (tmp != 0) values[start] = 0;
+        if (tmp != 0) {
+            values[start] = 0;
+        }
         for (Node node : graph.get(start)) {
             int v = node.i;
             int time = node.time;
             int value = values[v];
-            if (value != 0) values[v] = 0;
+            if (value != 0) {
+                values[v] = 0;
+            }
             dfs(graph, v, curTime + time, maxTime, curValue + value, values);
-            if (value != 0) values[v] = value;
+            if (value != 0) {
+                values[v] = value;
+            }
         }
         if (tmp != 0) {
             values[start] = tmp;
