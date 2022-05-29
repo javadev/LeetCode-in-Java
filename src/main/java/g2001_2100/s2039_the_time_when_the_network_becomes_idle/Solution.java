@@ -26,7 +26,6 @@ public class Solution {
         while (!pq.isEmpty()) {
             int[] a = pq.poll();
             int node = a[0];
-            int cost = a[1];
             for (Integer nn : adj.get(node)) {
                 if (distance[node] + 1 < distance[nn]) {
                     distance[nn] = 1 + distance[node];
@@ -37,8 +36,10 @@ public class Solution {
         int max = 0;
         for (int i = 1; i < n; i++) {
             int num1 = 2 * distance[i];
-            int num2 = (num1 / pat[i]);
-            if (num1 % pat[i] != 0) num2++;
+            int num2 = num1 / pat[i];
+            if (num1 % pat[i] != 0) {
+                num2++;
+            }
             num2--;
             num2 *= pat[i];
             max = Math.max(max, num2 + num1);
