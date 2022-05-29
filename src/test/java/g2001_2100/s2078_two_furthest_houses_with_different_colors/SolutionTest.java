@@ -1,4 +1,4 @@
-package g2001_2100.s2078_tow_furthest_house_with_different_colors;
+package g2001_2100.s2078_two_furthest_houses_with_different_colors;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
