@@ -1,6 +1,6 @@
 package g2001_2100.s2078_two_furthest_houses_with_different_colors;
 
-// #Easy #Array #Greedy #2022_05_29_Time_0_ms(100%)_Space_43_MB(5.49%)
+// #Easy #Array #Greedy #2022_05_29_Time_0_ms_(100%)_Space_43_MB_(5.49%)
 
 public class Solution {
     public int maxDistance(int[] colors) {
