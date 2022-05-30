@@ -9,7 +9,7 @@ import java.util.Comparator;
 public class Solution {
     public int[] maximumBeauty(int[][] items, int[] queries) {
         int[] res = new int[queries.length];
-        Arrays.sort(items, Comparator.comparingInt((a) -> a[1]));
+        Arrays.sort(items, Comparator.comparingInt(a -> a[1]));
         for (int i = 0; i < res.length; i++) {
             res[i] = maxBeauty(items, queries[i]);
         }
