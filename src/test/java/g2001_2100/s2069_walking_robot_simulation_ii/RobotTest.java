@@ -32,4 +32,16 @@ class RobotTest {
         // return "West"
         assertThat(robot.getDir(), equalTo("West"));
     }
+
+    @Test
+    void robot2() {
+        // Initialize the grid and the robot at (0, 0) facing East.
+        Robot robot = new Robot(0, 0);
+        // It moves two steps East to (2, 0), and faces East.
+        robot.step(2);
+        // It moves two steps East to (4, 0), and faces East.
+        robot.step(2);
+        // return [0, -4]
+        assertThat(robot.getPos(), equalTo(new int[] {0, -4}));
+    }
 }
