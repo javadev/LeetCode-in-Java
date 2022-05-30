@@ -7,7 +7,6 @@ import com_github_leetcode.CommonUtils;
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
-
     @Test
     public void maximumBeauty() {
         int[][] items =
