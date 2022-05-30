@@ -26,7 +26,7 @@ public class Solution {
             endPosition[i].add(positions[i]);
             int dirIndex = 0;
             switch (pieces[i]) {
-                case "rook":
+                case "rook":              
                     dirIndex = 0;
                     break;
                 case "queen":
@@ -34,6 +34,8 @@ public class Solution {
                     break;
                 case "bishop":
                     dirIndex = 2;
+                    break;
+                default:
                     break;
             }
             for (int[] d : dirs[dirIndex]) {
