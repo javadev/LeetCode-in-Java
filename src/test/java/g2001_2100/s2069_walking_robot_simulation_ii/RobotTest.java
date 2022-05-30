@@ -37,9 +37,9 @@ class RobotTest {
     void robot2() {
         // Initialize the grid and the robot at (0, 0) facing East.
         Robot robot = new Robot(0, 0);
-        // It moves two steps East to (2, 0), and faces East.
+        // It moves two steps East to (0, -2), and faces East.
         robot.step(2);
-        // It moves two steps East to (4, 0), and faces East.
+        // It moves two steps East to (0, -4), and faces East.
         robot.step(2);
         // return [0, -4]
         assertThat(robot.getPos(), equalTo(new int[] {0, -4}));
@@ -55,7 +55,7 @@ class RobotTest {
         robot.step(2);
         // It moves two steps East to (6, 0), and faces East.
         robot.step(2);
-        // return [0, -6]
+        // return [1, 1]
         assertThat(robot.getPos(), equalTo(new int[] {1, 1}));
     }
 }
