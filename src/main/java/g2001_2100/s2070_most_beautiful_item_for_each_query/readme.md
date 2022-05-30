@@ -14,17 +14,19 @@ Return _an array_ `answer` _of the same length as_ `queries` _where_ `answer[j]`
 
 **Output:** [2,4,5,5,6,6]
 
-**Explanation:** -
+**Explanation:**
 
-For queries[0]=1, [1,2] is the only item which has price <= 1. Hence, the answer for this query is 2.
+- For queries[0]=1, [1,2] is the only item which has price <= 1. Hence, the answer for this query is 2.
 
-- For queries[1]=2, the items which can be considered are [1,2] and [2,4]. 
+- For queries[1]=2, the items which can be considered are [1,2] and [2,4].
 
-The maximum beauty among them is 4. 
-- For queries[2]=3 and queries[3]=4, the items which can be considered are [1,2], [3,2], [2,4], and [3,5]. 
+The maximum beauty among them is 4.
 
-The maximum beauty among them is 5. 
-- For queries[4]=5 and queries[5]=6, all items can be considered. 
+- For queries[2]=3 and queries[3]=4, the items which can be considered are [1,2], [3,2], [2,4], and [3,5].
+
+The maximum beauty among them is 5.
+
+- For queries[4]=5 and queries[5]=6, all items can be considered.
 
 Hence, the answer for them is the maximum beauty of all items, i.e., 6. 
 
@@ -34,7 +36,9 @@ Hence, the answer for them is the maximum beauty of all items, i.e., 6.
 
 **Output:** [4]
 
-**Explanation:** The price of every item is equal to 1, so we choose the item with the maximum beauty 4. 
+**Explanation:**
+
+The price of every item is equal to 1, so we choose the item with the maximum beauty 4.
 
 Note that multiple items can have the same price and/or beauty. 
 
@@ -44,7 +48,9 @@ Note that multiple items can have the same price and/or beauty.
 
 **Output:** [0]
 
-**Explanation:** No item has a price less than or equal to 5, so no item can be chosen. 
+**Explanation:**
+
+No item has a price less than or equal to 5, so no item can be chosen.
 
 Hence, the answer to the query is 0. 
 
