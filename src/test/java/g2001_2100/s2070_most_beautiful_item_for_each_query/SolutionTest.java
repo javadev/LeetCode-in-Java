@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    public void maximumBeauty() {
+    void maximumBeauty() {
         int[][] items =
                 CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[1,2],[3,2],[2,4],[5,6],[3,5]");
@@ -18,7 +18,7 @@ class SolutionTest {
     }
 
     @Test
-    public void maximumBeauty2() {
+    void maximumBeauty2() {
         int[][] items =
                 CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                         "[1,2],[1,2],[1,3],[1,4]");
@@ -28,7 +28,7 @@ class SolutionTest {
     }
 
     @Test
-    public void maximumBeauty3() {
+    void maximumBeauty3() {
         int[][] items =
                 CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[10,1000]");
         int[] queries = new int[] {5};
