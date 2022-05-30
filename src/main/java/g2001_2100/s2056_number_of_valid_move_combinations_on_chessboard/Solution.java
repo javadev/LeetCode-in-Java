@@ -51,7 +51,6 @@ public class Solution {
                 }
             }
         }
-
         return dfs(positions, endPosition, new int[pieces.length], 0);
     }
 
@@ -63,13 +62,11 @@ public class Solution {
             }
             return check(p, stop, stopIndex);
         }
-
         int res = 0;
         for (int i = 0; i < stop[cur].size(); i++) {
             stopIndex[cur] = i;
             res += dfs(positions, stop, stopIndex, cur + 1);
         }
-
         return res;
     }
 
