@@ -12,7 +12,8 @@ Return _**all** lonely numbers in_ `nums`. You may return the answer in **any or
 
 **Output:** [10,8]
 
-**Explanation:** 
+**Explanation:**
+
 - 10 is a lonely number since it appears exactly once and 9 and 11 does not appear in nums. 
 
 - 8 is a lonely number since it appears exactly once and 7 and 9 does not appear in nums. 
