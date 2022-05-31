@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     // 0: rook, queen, bishop
     private int[][][] dirs = {

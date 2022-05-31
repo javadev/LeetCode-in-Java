@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public int maximumDetonation(int[][] bombs) {
         int n = bombs.length;
