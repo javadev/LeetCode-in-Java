@@ -30,7 +30,8 @@ Note that [8, 10] may also be returned.
 
 **Output:** [1,5]
 
-**Explanation:** 
+**Explanation:**
+
 - 1 is a lonely number since it appears exactly once and 0 and 2 does not appear in nums. 
 
 - 5 is a lonely number since it appears exactly once and 4 and 6 does not appear in nums. 
