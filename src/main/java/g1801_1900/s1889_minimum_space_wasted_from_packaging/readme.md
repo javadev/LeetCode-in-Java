@@ -18,7 +18,7 @@ Return _the **minimum total wasted space** by choosing the box supplier **optima
 
 **Output:** 6
 
-**Explanation:**: It is optimal to choose the first supplier, using two size-4 boxes and one size-8 box.
+**Explanation:** It is optimal to choose the first supplier, using two size-4 boxes and one size-8 box.
 
 The total waste is (4-2) + (4-3) + (8-5) = 6. 
 

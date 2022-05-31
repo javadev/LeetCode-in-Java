@@ -16,7 +16,7 @@ A **subsequence** is a string that can be derived from another string by deletin
 
 **Output:** 9
 
-**Explanation:**: An optimal solution is to choose "ete" for the 1<sup>st</sup> subsequence and "cdc" for the 2<sup>nd</sup> subsequence.
+**Explanation:** An optimal solution is to choose "ete" for the 1<sup>st</sup> subsequence and "cdc" for the 2<sup>nd</sup> subsequence.
 
 The product of their lengths is: 3 \* 3 = 9. 
 
@@ -26,7 +26,7 @@ The product of their lengths is: 3 \* 3 = 9.
 
 **Output:** 1
 
-**Explanation:**: An optimal solution is to choose "b" (the first character) for the 1<sup>st</sup> subsequence and "b" (the second character) for the 2<sup>nd</sup> subsequence.
+**Explanation:** An optimal solution is to choose "b" (the first character) for the 1<sup>st</sup> subsequence and "b" (the second character) for the 2<sup>nd</sup> subsequence.
 
 The product of their lengths is: 1 \* 1 = 1. 
 
@@ -36,7 +36,7 @@ The product of their lengths is: 1 \* 1 = 1.
 
 **Output:** 25
 
-**Explanation:**: An optimal solution is to choose "accca" for the 1<sup>st</sup> subsequence and "xxcxx" for the 2<sup>nd</sup> subsequence.
+**Explanation:** An optimal solution is to choose "accca" for the 1<sup>st</sup> subsequence and "xxcxx" for the 2<sup>nd</sup> subsequence.
 
 The product of their lengths is: 5 \* 5 = 25. 
 

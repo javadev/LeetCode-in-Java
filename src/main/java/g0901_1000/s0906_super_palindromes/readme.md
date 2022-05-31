@@ -12,7 +12,7 @@ Given two positive integers `left` and `right` represented as strings, return _t
 
 **Output:** 4
 
-**Explanation:**: 4, 9, 121, and 484 are superpalindromes. Note that 676 is not a superpalindrome: 26 \* 26 = 676, but 26 is not a palindrome.
+**Explanation:** 4, 9, 121, and 484 are superpalindromes. Note that 676 is not a superpalindrome: 26 \* 26 = 676, but 26 is not a palindrome.
 
 **Example 2:**
 

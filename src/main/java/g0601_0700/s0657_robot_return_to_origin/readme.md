@@ -16,7 +16,7 @@ Return `true` _if the robot returns to the origin after it finishes all of its m
 
 **Output:** true
 
-**Explanation:**: The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true. 
+**Explanation:** The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true. 
 
 **Example 2:**
 
@@ -24,7 +24,7 @@ Return `true` _if the robot returns to the origin after it finishes all of its m
 
 **Output:** false
 
-**Explanation:**: The robot moves left twice. It ends up two "moves" to the left of the origin. We return false because it is not at the origin at the end of its moves. 
+**Explanation:** The robot moves left twice. It ends up two "moves" to the left of the origin. We return false because it is not at the origin at the end of its moves. 
 
 **Constraints:**
 

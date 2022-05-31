@@ -15,7 +15,7 @@ Return _an array_ `answer`_, where_ `answer[i]` _is the answer to the_ <code>i<s
 
 **Output:** [0,3,2,3]
 
-**Explanation:**: The queries are answered as follows: 
+**Explanation:** The queries are answered as follows: 
 
 1<sup>st</sup> query: nums = [0,1,1,3], k = 0 since 0 XOR 1 XOR 1 XOR 3 XOR 0 = 3. 
 
@@ -31,7 +31,7 @@ Return _an array_ `answer`_, where_ `answer[i]` _is the answer to the_ <code>i<s
 
 **Output:** [5,2,6,5]
 
-**Explanation:**: The queries are answered as follows: 
+**Explanation:** The queries are answered as follows: 
 
 1<sup>st</sup> query: nums = [2,3,4,7], k = 5 since 2 XOR 3 XOR 4 XOR 7 XOR 5 = 7. 
 

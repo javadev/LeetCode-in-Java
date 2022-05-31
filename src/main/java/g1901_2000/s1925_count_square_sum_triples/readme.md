@@ -12,7 +12,7 @@ Given an integer `n`, return _the number of **square triples** such that_ `1 <= 
 
 **Output:** 2
 
-**Explanation:**: The square triples are (3,4,5) and (4,3,5).
+**Explanation:** The square triples are (3,4,5) and (4,3,5).
 
 **Example 2:**
 
@@ -20,7 +20,7 @@ Given an integer `n`, return _the number of **square triples** such that_ `1 <= 
 
 **Output:** 4
 
-**Explanation:**: The square triples are (3,4,5), (4,3,5), (6,8,10), and (8,6,10).
+**Explanation:** The square triples are (3,4,5), (4,3,5), (6,8,10), and (8,6,10).
 
 **Constraints:**
 

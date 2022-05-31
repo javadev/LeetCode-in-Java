@@ -14,7 +14,7 @@ A **substring** is a contiguous sequence of characters within a string.
 
 **Output:** 5
 
-**Explanation:**: One way to split maximally is ['a', 'b', 'ab', 'c', 'cc']. Splitting like ['a', 'b', 'a', 'b', 'c', 'cc'] is not valid as you have 'a' and 'b' multiple times.
+**Explanation:** One way to split maximally is ['a', 'b', 'ab', 'c', 'cc']. Splitting like ['a', 'b', 'a', 'b', 'c', 'cc'] is not valid as you have 'a' and 'b' multiple times.
 
 **Example 2:**
 
@@ -22,7 +22,7 @@ A **substring** is a contiguous sequence of characters within a string.
 
 **Output:** 2
 
-**Explanation:**: One way to split maximally is ['a', 'ba'].
+**Explanation:** One way to split maximally is ['a', 'ba'].
 
 **Example 3:**
 
@@ -30,7 +30,7 @@ A **substring** is a contiguous sequence of characters within a string.
 
 **Output:** 1
 
-**Explanation:**: It is impossible to split the string any further.
+**Explanation:** It is impossible to split the string any further.
 
 **Constraints:**
 
