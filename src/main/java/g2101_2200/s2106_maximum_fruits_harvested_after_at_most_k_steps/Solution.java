@@ -6,11 +6,11 @@ package g2101_2200.s2106_maximum_fruits_harvested_after_at_most_k_steps;
 public class Solution {
     public int maxTotalFruits(int[][] fruits, int startPos, int k) {
         int res = 0;
-
         for (int left = 0, right = 0, sum = 0; right < fruits.length; right++) {
             sum += fruits[right][1];
-            while (left <= right && !isValidRange(fruits[left][0], fruits[right][0], startPos, k))
+            while (left <= right && !isValidRange(fruits[left][0], fruits[right][0], startPos, k)) {
                 sum -= fruits[left++][1];
+            }
             res = Math.max(sum, res);
         }
 
@@ -22,8 +22,9 @@ public class Solution {
             return startPos - leftPos <= k;
         } else if (leftPos >= startPos) {
             return rightPos - startPos <= k;
-        } else { // leftPos < startPos < rightPos
-            int left = startPos - leftPos, right = rightPos - startPos;
+        } else {
+            int left = startPos - leftPos;
+            int right = rightPos - startPos;
             return left <= right ? left * 2 + right <= k : right * 2 + left <= k;
         }
     }
