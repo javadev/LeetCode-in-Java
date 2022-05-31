@@ -25,7 +25,7 @@ A **subsequence** is derived from another sequence `arr` by deleting any number 
 
 **Output:** 3
 
-**Explanation:**: The longest subsequence that is fibonacci-like: [1,11,12], [3,11,14] or [7,11,18].
+**Explanation:** The longest subsequence that is fibonacci-like: [1,11,12], [3,11,14] or [7,11,18].
 
 **Constraints:**
 

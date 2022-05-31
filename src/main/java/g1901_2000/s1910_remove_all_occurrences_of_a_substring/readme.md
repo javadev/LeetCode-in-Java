@@ -16,7 +16,7 @@ A **substring** is a contiguous sequence of characters in a string.
 
 **Output:** "dab"
 
-**Explanation:**: The following operations are done: 
+**Explanation:** The following operations are done: 
 
 - s = "da**abc**baabcbc", remove "abc" starting at index 2, so s = "dabaabcbc". 
 
@@ -30,7 +30,7 @@ A **substring** is a contiguous sequence of characters in a string.
 
 **Output:** "ab"
 
-**Explanation:**: The following operations are done: 
+**Explanation:** The following operations are done: 
 
 - s = "axxx**xy**yyyb", remove "xy" starting at index 4 so s = "axxxyyyb".
 

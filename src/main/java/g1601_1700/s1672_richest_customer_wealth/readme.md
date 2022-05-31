@@ -26,7 +26,7 @@ Both customers are considered the richest with a wealth of 6 each, so return 6.
 
 **Output:** 10
 
-**Explanation:**:
+**Explanation:**
 
 1st customer has wealth = 6
 

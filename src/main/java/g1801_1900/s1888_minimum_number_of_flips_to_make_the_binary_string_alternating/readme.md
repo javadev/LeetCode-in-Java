@@ -19,7 +19,7 @@ The string is called **alternating** if no two adjacent characters are equal.
 
 **Output:** 2
 
-**Explanation:**: Use the first operation two times to make s = "100011".
+**Explanation:** Use the first operation two times to make s = "100011".
 
 Then, use the second operation on the third and sixth elements to make s = "101010".
 
@@ -29,7 +29,7 @@ Then, use the second operation on the third and sixth elements to make s = "1010
 
 **Output:** 0
 
-**Explanation:**: The string is already alternating.
+**Explanation:** The string is already alternating.
 
 **Example 3:**
 
@@ -37,7 +37,7 @@ Then, use the second operation on the third and sixth elements to make s = "1010
 
 **Output:** 1
 
-**Explanation:**: Use the second operation on the second element to make s = "1010".
+**Explanation:** Use the second operation on the second element to make s = "1010".
 
 **Constraints:**
 

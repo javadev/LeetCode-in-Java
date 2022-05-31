@@ -16,7 +16,7 @@ The rank represents how large the element is. The rank has the following rules:
 
 **Output:** [4,1,2,3]
 
-**Explanation:**: 40 is the largest element. 10 is the smallest. 20 is the second smallest. 30 is the third smallest.
+**Explanation:** 40 is the largest element. 10 is the smallest. 20 is the second smallest. 30 is the third smallest.
 
 **Example 2:**
 
@@ -24,7 +24,7 @@ The rank represents how large the element is. The rank has the following rules:
 
 **Output:** [1,1,1]
 
-**Explanation:**: Same elements share the same rank.
+**Explanation:** Same elements share the same rank.
 
 **Example 3:**
 

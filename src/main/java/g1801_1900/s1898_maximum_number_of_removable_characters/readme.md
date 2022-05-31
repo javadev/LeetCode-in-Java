@@ -16,7 +16,7 @@ A **subsequence** of a string is a new string generated from the original string
 
 **Output:** 2
 
-**Explanation:**: After removing the characters at indices 3 and 1, "a**b**c**a**cb" becomes "accb".
+**Explanation:** After removing the characters at indices 3 and 1, "a**b**c**a**cb" becomes "accb".
 
 "ab" is a subsequence of "**a**cc**b**".
 
@@ -30,7 +30,7 @@ Hence, the maximum k is 2.
 
 **Output:** 1
 
-**Explanation:**: After removing the character at index 3, "abc**b**ddddd" becomes "abcddddd".
+**Explanation:** After removing the character at index 3, "abc**b**ddddd" becomes "abcddddd".
 
 "abcd" is a subsequence of "**abcd**dddd".
 
@@ -40,7 +40,7 @@ Hence, the maximum k is 2.
 
 **Output:** 0
 
-**Explanation:**: If you remove the first index in the array removable, "abc" is no longer a subsequence.
+**Explanation:** If you remove the first index in the array removable, "abc" is no longer a subsequence.
 
 **Constraints:**
 

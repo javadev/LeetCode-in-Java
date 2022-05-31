@@ -10,7 +10,7 @@ Given an array of integers `arr` and an integer `k`. Find the _least number of u
 
 **Output:** 1
 
-**Explanation:**: Remove the single 4, only 5 is left.
+**Explanation:** Remove the single 4, only 5 is left.
 
 **Example 2:**
 
@@ -18,7 +18,7 @@ Given an array of integers `arr` and an integer `k`. Find the _least number of u
 
 **Output:** 2
 
-**Explanation:**: Remove 4, 2 and either one of the two 1s or three 3s. 1 and 3 will be left.
+**Explanation:** Remove 4, 2 and either one of the two 1s or three 3s. 1 and 3 will be left.
 
 **Constraints:**
 

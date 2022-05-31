@@ -15,7 +15,7 @@ Return `true` if and only if you can choose `X >= 2` such that it is possible to
 
 **Output:** true
 
-**Explanation:**: Possible partition [1,1],[2,2],[3,3],[4,4].
+**Explanation:** Possible partition [1,1],[2,2],[3,3],[4,4].
 
 **Example 2:**
 
@@ -23,7 +23,7 @@ Return `true` if and only if you can choose `X >= 2` such that it is possible to
 
 **Output:** false
 
-**Explanation:**: No possible partition.
+**Explanation:** No possible partition.
 
 **Constraints:**
 

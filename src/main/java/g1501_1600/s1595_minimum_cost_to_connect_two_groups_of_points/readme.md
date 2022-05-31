@@ -16,7 +16,7 @@ Return _the minimum cost it takes to connect the two groups_.
 
 **Output:** 17
 
-**Explanation:**: The optimal way of connecting the groups is:
+**Explanation:** The optimal way of connecting the groups is:
 
 1--A
 
@@ -32,7 +32,7 @@ This results in a total cost of 17.
 
 **Output:** 4
 
-**Explanation:**: The optimal way of connecting the groups is:
+**Explanation:** The optimal way of connecting the groups is:
 
 1--A
 
