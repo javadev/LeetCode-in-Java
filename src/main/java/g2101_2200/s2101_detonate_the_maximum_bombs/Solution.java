@@ -11,12 +11,15 @@ public class Solution {
     public int maximumDetonation(int[][] bombs) {
         int n = bombs.length;
         List<Integer>[] graph = new List[n];
-        for (int i = 0; i < n; i++) graph[i] = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            graph[i] = new ArrayList<>();
+        }
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-                double dx = bombs[i][0] - bombs[j][0];
-                double dy = bombs[i][1] - bombs[j][1];
-                double r1 = bombs[i][2], r2 = bombs[j][2];
+                double dx = bombs[i][0] - (double) bombs[j][0];
+                double dy = bombs[i][1] - (double) bombs[j][1];
+                double r1 = bombs[i][2];
+                double r2 = bombs[j][2];
                 double dist = dx * dx + dy * dy;
                 if (dist <= r1 * r1) {
                     graph[i].add(j);

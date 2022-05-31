@@ -29,7 +29,7 @@ public class SORTracker {
 
     public SORTracker() {
         tSet1 =
-                new TreeSet<Location>(
+                new TreeSet<>(
                         (a, b) -> {
                             if (a.score != b.score) {
                                 return b.getScore() - a.getScore();
@@ -39,7 +39,7 @@ public class SORTracker {
                         });
 
         tSet2 =
-                new TreeSet<Location>(
+                new TreeSet<>(
                         (a, b) -> {
                             if (a.score != b.score) {
                                 return b.getScore() - a.getScore();
