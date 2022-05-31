@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    public int kIncreasing(int[] A, int k) {
-        int n = A.length;
+    public int kIncreasing(int[] a, int k) {
+        int n = a.length;
         int res = 0;
         for (int s = 0; s < k; s++) {
             List<Integer> dp = new ArrayList<>();
             for (int i = s; i < n; i += k) {
-                if (!bsearch(dp, A[i])) {
-                    dp.add(A[i]);
+                if (!bsearch(dp, a[i])) {
+                    dp.add(a[i]);
                 }
             }
             res += dp.size();
