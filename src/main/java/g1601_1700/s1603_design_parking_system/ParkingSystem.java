@@ -1,6 +1,6 @@
 package g1601_1700.s1603_design_parking_system;
 
-// #Easy #Design #Simulation #Counting #Programming_Skills_I_Day_12_Class_&_Object
+// #Easy #Design #Simulation #Counting #Programming_Skills_I_Day_12_Class_and_Object
 // #2022_04_11_Time_8_ms_(76.16%)_Space_54.3_MB_(65.10%)
 
 public class ParkingSystem {
