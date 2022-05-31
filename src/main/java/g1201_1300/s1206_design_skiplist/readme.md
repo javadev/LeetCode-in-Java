@@ -26,7 +26,11 @@ Note that duplicates may exist in the Skiplist, your code needs to handle this s
 
 **Example 1:**
 
-**Input** ["Skiplist", "add", "add", "add", "search", "add", "search", "erase", "erase", "search"] [[], [1], [2], [3], [0], [4], [1], [0], [1], [1]]
+**Input**
+
+["Skiplist", "add", "add", "add", "search", "add", "search", "erase", "erase", "search"]
+
+[[], [1], [2], [3], [0], [4], [1], [0], [1], [1]]
 
 **Output:** [null, null, null, null, false, null, true, false, true, false]
 
