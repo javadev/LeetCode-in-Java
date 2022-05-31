@@ -7,7 +7,8 @@ public class Solution {
     public int maxTotalFruits(int[][] fruits, int startPos, int k) {
         int res = 0;
         int sum = 0;
-        for (int left = 0, right = 0; right < fruits.length; right++) {
+        int left = 0;
+        for (int right = 0; right < fruits.length; right++) {
             sum += fruits[right][1];
             while (left <= right && !isValidRange(fruits[left][0], fruits[right][0], startPos, k)) {
                 sum -= fruits[left++][1];
