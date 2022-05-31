@@ -13,7 +13,6 @@ class Node {
     public Node bottomLeft;
     public Node bottomRight;
 
-    
     public Node() {
         this.val = false;
         this.isLeaf = false;
@@ -22,7 +21,7 @@ class Node {
         this.bottomLeft = null;
         this.bottomRight = null;
     }
-    
+
     public Node(boolean val, boolean isLeaf) {
         this.val = val;
         this.isLeaf = isLeaf;
@@ -31,7 +30,7 @@ class Node {
         this.bottomLeft = null;
         this.bottomRight = null;
     }
-    
+
     public Node(boolean val, boolean isLeaf, Node topLeft, Node topRight, Node bottomLeft, Node bottomRight) {
         this.val = val;
         this.isLeaf = isLeaf;
