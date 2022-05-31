@@ -10,13 +10,15 @@ public class Solution {
         }
 
         int equivalentIndex = -1;
-        for (int i = 0; i < string.length(); i++) {
+        int i = 0;
+        while (i < string.length()) {
             equivalentIndex++;
             if (stringChars[equivalentIndex] == ' ') {
                 i--;
-                continue;
+            } else {
+                stringChars[equivalentIndex] = string.charAt(i);
             }
-            stringChars[equivalentIndex] = string.charAt(i);
+            i++;
         }
         return new String(stringChars);
     }

@@ -1,7 +1,6 @@
 package g2101_2200.s2111_minimum_operations_to_make_the_array_k_increasing;
 
-// #Hard #Array #Binary_Search #2022_05_31_Time_97_ms_(22.90%)_Space_123.6_MB_(54.96%)// #Hard
-// #Array #Binary_Search #2022_05_31_Time_97_ms_(22.90%)_Space_123.6_MB_(54.96%)
+// #Hard #Array #Binary_Search #2022_05_31_Time_97_ms_(22.90%)_Space_123.6_MB_(54.96%)
 
 import java.util.ArrayList;
 import java.util.List;
