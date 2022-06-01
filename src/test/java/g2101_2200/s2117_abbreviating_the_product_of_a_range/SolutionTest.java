@@ -20,4 +20,9 @@ class SolutionTest {
     void abbreviateProduct3() {
         assertThat(new Solution().abbreviateProduct(371, 375), equalTo("7219856259e3"));
     }
+
+    @Test
+    void abbreviateProduct4() {
+        assertThat(new Solution().abbreviateProduct(10000, 100005), equalTo("99240...51744e22505"));
+    }
 }
