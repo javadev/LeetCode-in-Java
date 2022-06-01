@@ -40,4 +40,24 @@ class SolutionTest {
     void canBeValid7() {
         assertThat(new Solution().canBeValid("()()", ""), equalTo(true));
     }
+
+    @Test
+    void canBeValid8() {
+        assertThat(
+                new Solution()
+                        .canBeValid(
+                                "))))(())((()))))((()((((((())())((()))((((())()()))(()",
+                                "101100101111110000000101000101001010110001110000000101"),
+                equalTo(false));
+    }
+
+    @Test
+    void canBeValid9() {
+        assertThat(
+                new Solution()
+                        .canBeValid(
+                                "())(()(()(())()())(())((())(()())((())))))(((((((())(()))))(",
+                                "100011110110011011010111100111011101111110000101001101001111"),
+                equalTo(false));
+    }
 }
