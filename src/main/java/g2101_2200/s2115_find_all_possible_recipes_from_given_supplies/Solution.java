@@ -35,14 +35,12 @@ public class Solution {
             }
             indegree.put(recipe, numberOfDependencies);
         }
-
         Queue<String> q = new LinkedList<>();
         for (Map.Entry<String, Integer> entry : indegree.entrySet()) {
             if (entry.getValue() == 0) {
                 q.add(entry.getKey());
             }
         }
-
         List<String> res = new ArrayList<>();
         while (!q.isEmpty()) {
             String recipe = q.remove();
