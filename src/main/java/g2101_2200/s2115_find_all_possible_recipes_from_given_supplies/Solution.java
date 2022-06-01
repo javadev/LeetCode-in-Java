@@ -3,7 +3,15 @@ package g2101_2200.s2115_find_all_possible_recipes_from_given_supplies;
 // #Medium #Array #String #Hash_Table #Graph #Topological_Sort
 // #2022_06_01_Time_43_ms_(85.86%)_Space_78.1_MB_(40.51%)
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.HashSet;
+import java.util.Collections;
+import java.util.Queue;
+import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Solution {
     public List<String> findAllRecipes(
@@ -39,13 +47,14 @@ public class Solution {
         while (!q.isEmpty()) {
             String recipe = q.remove();
             res.add(recipe);
-            if (adj.containsKey(recipe))
+            if (adj.containsKey(recipe)) {
                 for (String dep : adj.get(recipe)) {
                     indegree.put(dep, indegree.get(dep) - 1);
                     if (indegree.get(dep) == 0) {
                         q.add(dep);
                     }
                 }
+            }
         }
         return res;
     }
