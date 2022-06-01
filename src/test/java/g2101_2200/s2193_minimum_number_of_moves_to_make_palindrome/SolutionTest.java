@@ -15,4 +15,11 @@ class SolutionTest {
     void minMovesToMakePalindrome2() {
         assertThat(new Solution().minMovesToMakePalindrome("letelt"), equalTo(2));
     }
+
+    @Test
+    void minMovesToMakePalindrome3() {
+        assertThat(
+                new Solution().minMovesToMakePalindrome("skwhhaaunskegmdtutlgtteunmuuludii"),
+                equalTo(163));
+    }
 }
