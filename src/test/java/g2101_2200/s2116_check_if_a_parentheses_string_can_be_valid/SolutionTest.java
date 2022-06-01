@@ -33,11 +33,11 @@ class SolutionTest {
 
     @Test
     void canBeValid6() {
-        assertThat(new Solution().canBeValid(")", null), equalTo(false));
+        assertThat(new Solution().canBeValid("()()", null), equalTo(true));
     }
 
     @Test
     void canBeValid7() {
-        assertThat(new Solution().canBeValid(")", ""), equalTo(false));
+        assertThat(new Solution().canBeValid("()()", ""), equalTo(true));
     }
 }
