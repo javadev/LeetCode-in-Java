@@ -7,25 +7,25 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 public class Solution {
-    public int longestPath(int[] parent, String S) {
+    public int longestPath(int[] parent, String s) {
         // for first max length
-        int[] f = new int[S.length()];
-        Arrays.fill(f, 0);
+        int[] first = new int[s.length()];
+        Arrays.fill(first, 0);
         // for second max length
-        int[] s = new int[S.length()];
-        Arrays.fill(s, 0);
+        int[] second = new int[s.length()];
+        Arrays.fill(second, 0);
         // for number of children for this node
-        int[] c = new int[S.length()];
-        Arrays.fill(c, 0);
-        for (int i = 1; i != S.length(); i++) {
+        int[] children = new int[s.length()];
+        Arrays.fill(children, 0);
+        for (int i = 1; i != s.length(); i++) {
             // calculate all children for each node
-            c[parent[i]]++;
+            children[parent[i]]++;
         }
         // for traversal from leafs to root
         LinkedList<Integer> st = new LinkedList<>();
         // put all leafs
-        for (int i = 1; i != S.length(); i++) {
-            if (c[i] == 0) {
+        for (int i = 1; i != s.length(); i++) {
+            if (children[i] == 0) {
                 st.add(i);
             }
         }
@@ -37,28 +37,28 @@ public class Solution {
             if (i == 0) {
                 continue;
             }
-            if (--c[parent[i]] == 0) {
+            if (--children[parent[i]] == 0) {
                 // decrease number of children by parent node and if number of children
                 st.add(parent[i]);
             }
             // is equal 0 - our parent became a leaf
-            // if leterrs isnt equal
-            if (S.charAt(parent[i]) != S.charAt(i)) {
+            // if letters isn't equal
+            if (s.charAt(parent[i]) != s.charAt(i)) {
                 // fetch maximal path from node
-                int maxi = 1 + Math.max(f[i], s[i]);
+                int maxi = 1 + Math.max(first[i], second[i]);
                 // and update maximal first and second path from parent
-                if (maxi >= f[parent[i]]) {
-                    s[parent[i]] = f[parent[i]];
-                    f[parent[i]] = maxi;
-                } else if (s[parent[i]] < maxi) {
-                    s[parent[i]] = maxi;
+                if (maxi >= first[parent[i]]) {
+                    second[parent[i]] = first[parent[i]];
+                    first[parent[i]] = maxi;
+                } else if (second[parent[i]] < maxi) {
+                    second[parent[i]] = maxi;
                 }
             }
         }
         // fetch answer
         int ans = 0;
-        for (int i = 0; i != S.length(); i++) {
-            ans = Math.max(ans, f[i] + s[i]);
+        for (int i = 0; i != s.length(); i++) {
+            ans = Math.max(ans, first[i] + second[i]);
         }
         return ans + 1;
     }
