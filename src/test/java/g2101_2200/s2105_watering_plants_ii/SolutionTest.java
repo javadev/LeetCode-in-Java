@@ -20,4 +20,9 @@ class SolutionTest {
     void minimumRefill3() {
         assertThat(new Solution().minimumRefill(new int[] {5}, 10, 8), equalTo(0));
     }
+
+    @Test
+    void minimumRefill4() {
+        assertThat(new Solution().minimumRefill(new int[] {1, 2, 4, 4, 5}, 6, 5), equalTo(2));
+    }
 }
