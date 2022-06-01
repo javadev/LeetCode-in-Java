@@ -1,3 +1,5 @@
+package g2101_2200.s2154_keep_multiplying_found_values_by_two;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
