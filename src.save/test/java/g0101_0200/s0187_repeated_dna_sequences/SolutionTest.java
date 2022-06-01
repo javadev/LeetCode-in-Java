@@ -4,6 +4,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.Arrays;
+import java.util.Collections;
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
@@ -12,5 +13,12 @@ class SolutionTest {
         assertThat(
                 new Solution().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"),
                 equalTo(Arrays.asList("AAAAACCCCC", "CCCCCAAAAA")));
+    }
+
+    @Test
+    void findRepeatedDnaSequences2() {
+        assertThat(
+                new Solution().findRepeatedDnaSequences("AAAAAAAAAAAAA"),
+                equalTo(Collections.singletonList("AAAAAAAAAA")));
     }
 }

@@ -9,6 +9,10 @@ class SolutionTest {
     @Test
     void findMin() {
         assertThat(new Solution().findMin(new int[] {1, 3, 5}), equalTo(1));
+    }
+
+    @Test
+    void findMin2() {
         assertThat(new Solution().findMin(new int[] {2, 2, 2, 0, 1}), equalTo(0));
     }
 }

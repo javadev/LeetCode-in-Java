@@ -10,4 +10,9 @@ class SolutionTest {
     void largestNumber() {
         assertThat(new Solution().largestNumber(new int[] {10, 2}), equalTo("210"));
     }
+
+    @Test
+    void largestNumber2() {
+        assertThat(new Solution().largestNumber(new int[] {3, 30, 34, 5, 9}), equalTo("9534330"));
+    }
 }

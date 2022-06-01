@@ -11,4 +11,10 @@ class SolutionTest {
         int[][] input = {{-2, -3, 3}, {-5, -10, 1}, {10, 30, -5}};
         assertThat(new Solution().calculateMinimumHP(input), equalTo(7));
     }
+
+    @Test
+    void dungeonGame2() {
+        int[][] input = {{0}};
+        assertThat(new Solution().calculateMinimumHP(input), equalTo(1));
+    }
 }

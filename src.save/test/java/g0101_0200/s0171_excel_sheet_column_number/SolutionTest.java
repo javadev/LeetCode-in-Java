@@ -10,4 +10,14 @@ class SolutionTest {
     void titleToNumber() {
         assertThat(new Solution().titleToNumber("A"), equalTo(1));
     }
+
+    @Test
+    void titleToNumber2() {
+        assertThat(new Solution().titleToNumber("AB"), equalTo(28));
+    }
+
+    @Test
+    void titleToNumber3() {
+        assertThat(new Solution().titleToNumber("ZY"), equalTo(701));
+    }
 }

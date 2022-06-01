@@ -10,4 +10,9 @@ class SolutionTest {
     void majorityElement() {
         assertThat(new Solution().majorityElement(new int[] {3, 2, 3}), equalTo(3));
     }
+
+    @Test
+    void majorityElement2() {
+        assertThat(new Solution().majorityElement(new int[] {2, 2, 1, 1, 1, 2, 2}), equalTo(2));
+    }
 }

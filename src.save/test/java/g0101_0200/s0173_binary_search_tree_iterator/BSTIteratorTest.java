@@ -13,9 +13,7 @@ class BSTIteratorTest {
         TreeNode left = new TreeNode(3);
         TreeNode right = new TreeNode(15, new TreeNode(9), new TreeNode(20));
         TreeNode root = new TreeNode(7, left, right);
-
         BSTIterator iterator = new BSTIterator(root);
-
         assertThat(iterator.next(), equalTo(3));
         assertThat(iterator.next(), equalTo(7));
         assertThat(iterator.hasNext(), equalTo(true));
