@@ -20,4 +20,24 @@ class SolutionTest {
     void canBeValid3() {
         assertThat(new Solution().canBeValid(")", "0"), equalTo(false));
     }
+
+    @Test
+    void canBeValid4() {
+        assertThat(new Solution().canBeValid(null, "0"), equalTo(true));
+    }
+
+    @Test
+    void canBeValid5() {
+        assertThat(new Solution().canBeValid("", "0"), equalTo(true));
+    }
+
+    @Test
+    void canBeValid6() {
+        assertThat(new Solution().canBeValid(")", null), equalTo(false));
+    }
+
+    @Test
+    void canBeValid7() {
+        assertThat(new Solution().canBeValid(")", ""), equalTo(false));
+    }
 }
