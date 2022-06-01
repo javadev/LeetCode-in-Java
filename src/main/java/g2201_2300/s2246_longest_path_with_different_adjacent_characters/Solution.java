@@ -30,7 +30,7 @@ public class Solution {
             }
         }
         // traversal from leafs to root
-        while (st.size() != 0) {
+        while (!st.isEmpty()) {
             // fetch current node
             int i = st.pollLast();
             // if we in root - ignore it
