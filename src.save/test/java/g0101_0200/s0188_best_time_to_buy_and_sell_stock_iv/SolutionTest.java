@@ -9,6 +9,10 @@ class SolutionTest {
     @Test
     void maxProfit() {
         assertThat(new Solution().maxProfit(2, new int[] {2, 4, 1}), equalTo(2));
+    }
+
+    @Test
+    void maxProfit2() {
         assertThat(new Solution().maxProfit(2, new int[] {3, 2, 6, 5, 0, 3}), equalTo(7));
     }
 }

@@ -9,7 +9,15 @@ class SolutionTest {
     @Test
     void evalRPN() {
         assertThat(new Solution().evalRPN(new String[] {"2", "1", "+", "3", "*"}), equalTo(9));
+    }
+
+    @Test
+    void evalRPN2() {
         assertThat(new Solution().evalRPN(new String[] {"4", "13", "5", "/", "+"}), equalTo(6));
+    }
+
+    @Test
+    void evalRPN3() {
         assertThat(
                 new Solution()
                         .evalRPN(

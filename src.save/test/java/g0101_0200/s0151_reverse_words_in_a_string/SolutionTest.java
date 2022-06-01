@@ -10,4 +10,14 @@ class SolutionTest {
     void reverseWords() {
         assertThat(new Solution().reverseWords("the sky is blue"), equalTo("blue is sky the"));
     }
+
+    @Test
+    void reverseWords2() {
+        assertThat(new Solution().reverseWords("  hello world  "), equalTo("world hello"));
+    }
+
+    @Test
+    void reverseWords3() {
+        assertThat(new Solution().reverseWords("a good   example"), equalTo("example good a"));
+    }
 }

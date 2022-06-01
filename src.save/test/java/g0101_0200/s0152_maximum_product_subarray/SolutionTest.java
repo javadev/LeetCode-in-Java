@@ -10,4 +10,9 @@ class SolutionTest {
     void maxProduct() {
         assertThat(new Solution().maxProduct(new int[] {2, 3, -2, 4}), equalTo(6));
     }
+
+    @Test
+    void maxProduct2() {
+        assertThat(new Solution().maxProduct(new int[] {-2, 0, -1}), equalTo(0));
+    }
 }
