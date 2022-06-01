@@ -5,12 +5,17 @@ package g2101_2200.s2154_keep_multiplying_found_values_by_two;
 
 public class Solution {
     public int findFinalValue(int[] nums, int original) {
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == original) {
-                original = original * 2;
-                i = -1;
-            }
+        while (linearSearch(nums, original)) {
+            original *= 2;
         }
         return original;
+    }
+
+    boolean linearSearch(int[] nums, int target) {
+        for (int i : nums)
+            if (i == target) {
+                return true;
+            }
+        return false;
     }
 }
