@@ -8,7 +8,8 @@ import java.util.List;
 public class Solution {
     public List<Integer> findKDistantIndices(int[] nums, int key, int k) {
         List<Integer> ans = new ArrayList<>();
-        int start = 0, n = nums.length;
+        int start = 0;
+        int n = nums.length;
         for (int i = 0; i < n; i++) {
             if (nums[i] == key) {
                 start = Math.max(i - k, start);
