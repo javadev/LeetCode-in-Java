@@ -20,7 +20,6 @@ public class Solution {
             list.add(i);
             map.put(a[i], list);
         }
-
         long[] ans = new long[n];
         Arrays.fill(ans, 0);
         for (List<Integer> list : map.values()) {
@@ -30,7 +29,6 @@ public class Solution {
                 sum = sum + list.get(i) - first;
             }
             ans[first] = sum;
-
             int prevElements = 0;
             int nextElements = list.size() - 2;
             for (int i = 1; i < list.size(); i++) {
@@ -41,7 +39,6 @@ public class Solution {
                 nextElements--;
             }
         }
-
         return ans;
     }
 }
