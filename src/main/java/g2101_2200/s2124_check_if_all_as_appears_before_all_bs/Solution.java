@@ -15,18 +15,15 @@ public class Solution {
                 break;
             }
         }
-
         for (int i = 0; i <= s.length() - 1; i++) {
             if (s.charAt(i) == 'b') {
                 bStartIndex = i;
                 break;
             }
         }
-
         if (aEndIndex == -1 || bStartIndex == -1) {
             return true;
         }
-
         return bStartIndex > aEndIndex;
     }
 }
