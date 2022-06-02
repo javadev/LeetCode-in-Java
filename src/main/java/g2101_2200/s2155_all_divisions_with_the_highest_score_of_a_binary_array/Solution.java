@@ -7,7 +7,9 @@ import java.util.List;
 
 public class Solution {
     public List<Integer> maxScoreIndices(int[] nums) {
-        int curone = 0, curzero = 0, max = 0;
+        int curone = 0;
+        int curzero = 0;
+        int max = 0;
         for (int i : nums) {
             curone += i;
         }
