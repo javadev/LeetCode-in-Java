@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int[] recoverArray(int[] nums) {
         int n2 = nums.length;
@@ -31,7 +32,8 @@ public class Solution {
                 continue;
             }
             Arrays.fill(visited, false);
-            for (int j = 0, itr; j < n2; j++) {
+            int itr;
+            for (int j = 0; j < n2; j++) {
                 if (visited[j]) {
                     continue;
                 }
@@ -39,8 +41,9 @@ public class Solution {
                     break;
                 }
                 int[] pos = map.get(nums[j] + k2);
-                for (itr = pos[0]; itr < pos[1] && visited[itr]; itr++) {
-                    continue;
+                itr = pos[0];
+                while (itr < pos[1] && visited[itr]) {
+                    itr++;
                 }
                 if (itr == pos[1]) {
                     break;
