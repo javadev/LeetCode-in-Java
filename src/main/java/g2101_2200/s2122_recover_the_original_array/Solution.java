@@ -9,20 +9,24 @@ import java.util.Map;
 
 public class Solution {
     public int[] recoverArray(int[] nums) {
-        int n2 = nums.length, n = n2 / 2;
+        int n2 = nums.length;
+        int n = n2 / 2;
         int[] res = new int[n];
         boolean[] visited = new boolean[n2];
         Map<Integer, int[]> map = new HashMap<>();
         Arrays.sort(nums);
         map.put(nums[0], new int[] {0, 1});
-        for (int i = 1; i < n2; i++)
+        for (int i = 1; i < n2; i++) {
             if (nums[i] != nums[i - 1]) {
                 map.get(nums[i - 1])[1] = i;
                 map.put(nums[i], new int[] {i, i + 1});
             }
+        }
         map.get(nums[n2 - 1])[1] = n2;
         for (int i = 1; i <= n; i++) {
-            int k2 = nums[i] - nums[0], k = k2 / 2, idx = 0;
+            int k2 = nums[i] - nums[0];
+            int k = k2 / 2;
+            int idx = 0;
             if (k2 == 0 || k2 % 2 != 0) {
                 continue;
             }
@@ -35,7 +39,9 @@ public class Solution {
                     break;
                 }
                 int[] pos = map.get(nums[j] + k2);
-                for (itr = pos[0]; itr < pos[1] && visited[itr]; itr++) ;
+                for (itr = pos[0]; itr < pos[1] && visited[itr]; itr++) {
+                    continue;
+                }
                 if (itr == pos[1]) {
                     break;
                 }

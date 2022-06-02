@@ -14,7 +14,9 @@ public class Solution {
         Map<Integer, List<Integer>> map = new HashMap<>();
         for (int i = 0; i < n; i++) {
             List<Integer> list = map.get(a[i]);
-            if (list == null) list = new ArrayList<>();
+            if (list == null) {
+                list = new ArrayList<>();
+            }
             list.add(i);
             map.put(a[i], list);
         }
@@ -29,7 +31,8 @@ public class Solution {
             }
             ans[first] = sum;
 
-            int prevElements = 0, nextElements = list.size() - 2;
+            int prevElements = 0;
+            int nextElements = list.size() - 2;
             for (int i = 1; i < list.size(); i++) {
                 int diff = list.get(i) - list.get(i - 1);
                 sum = sum + (long) diff * (prevElements - nextElements);
