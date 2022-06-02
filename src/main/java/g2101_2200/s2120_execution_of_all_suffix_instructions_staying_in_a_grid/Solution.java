@@ -36,7 +36,6 @@ public class Solution {
             }
             answer[i] = count;
         }
-
         return answer;
     }
 }
