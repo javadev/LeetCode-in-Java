@@ -10,7 +10,7 @@ class SolutionTest {
     @Test
     void maxScoreIndices() {
         assertThat(
-                new Solution().maxScoreIndices(new int[] {0,0,1,0}),
+                new Solution().maxScoreIndices(new int[] {0, 0, 1, 0}),
                 equalTo(Arrays.asList(2, 4)));
     }
 
