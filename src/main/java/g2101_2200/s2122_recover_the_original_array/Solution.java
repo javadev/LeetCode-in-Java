@@ -6,7 +6,6 @@ package g2101_2200.s2122_recover_the_original_array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-@SuppressWarnings("java:S135")
 public class Solution {
     private int[] res;
 
