@@ -12,7 +12,6 @@ public class Solution {
         for (int k : fav) {
             follow[k]++;
         }
-
         int[] pathlen = new int[len];
         boolean[] visit = new boolean[len];
         ArrayDeque<Integer> q = new ArrayDeque<>();
@@ -30,7 +29,6 @@ public class Solution {
                 q.offer(j);
             }
         }
-
         int maxCycle = 0;
         int sumPath = 0;
         int i = 0;
@@ -51,7 +49,6 @@ public class Solution {
             }
             i++;
         }
-
         return Math.max(maxCycle, sumPath);
     }
 }
