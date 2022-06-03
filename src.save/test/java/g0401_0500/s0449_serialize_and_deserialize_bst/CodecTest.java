@@ -6,7 +6,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
-class SolutionTest {
+class CodecTest {
     @Test
     void serializeDeserialize() {
         TreeNode expectedRoot = new TreeNode(3);
