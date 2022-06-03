@@ -9,22 +9,24 @@ import java.util.Map;
 public class Solution {
     public int longestPalindrome(String[] words) {
         Map<String, Integer> counter = new HashMap<>();
-        for (String word : words) counter.put(word, counter.getOrDefault(word, 0) + 1);
+        for (String word : words) {
+            counter.put(word, counter.getOrDefault(word, 0) + 1);
+        }
         int pairPalindrome = 0;
         int selfPalindrome = 0;
-        for (String word : counter.keySet()) {
-            if (isPalindrome(word)) {
-                int count = counter.get(word);
+        for (Map.Entry<String, Integer> word : counter.entrySet()) {
+            if (isPalindrome(word.getKey())) {
+                int count = word.getValue();
                 if (count % 2 == 1 && selfPalindrome % 2 == 0) {
                     selfPalindrome += count;
                 } else {
                     selfPalindrome += count - count % 2;
                 }
             } else {
-                String palindrome = palindrome(word);
+                String palindrome = palindrome(word.getKey());
                 Integer count = counter.get(palindrome);
                 if (count != null) {
-                    pairPalindrome += Math.min(count, counter.get(word));
+                    pairPalindrome += Math.min(count, word.getValue());
                 }
             }
         }

@@ -31,10 +31,12 @@ public class Solution {
             }
         }
 
-        int maxCycle = 0, sumPath = 0;
-        for (int i = 0; i < len; i++) {
+        int maxCycle = 0;
+        int sumPath = 0;
+        int i = 0;
+        while (i < len) {
             if (visit[i]) {
-                continue;
+                i++;
             }
             int clen = 0;
             while (!visit[i]) {
@@ -47,6 +49,7 @@ public class Solution {
             } else {
                 maxCycle = Math.max(maxCycle, clen);
             }
+            i++;
         }
 
         return Math.max(maxCycle, sumPath);
