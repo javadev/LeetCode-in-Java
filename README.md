@@ -1136,6 +1136,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |------|----------------|------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|----------|---------
 | 0002 |[Add Two Numbers](src.save/main/java/g0001_0100/s0002_add_two_numbers)| [Java](src.save/main/java/g0001_0100/s0002_add_two_numbers/Solution.java) | Medium | Top_100_Liked_Questions, Top_Interview_Questions, Math, Linked_List, Recursion, Data_Structure_II_Day_10_Linked_List, Programming_Skills_II_Day_15 | 1 | 100.00
+| 0445 |[Add Two Numbers II](src.save/main/java/g0401_0500/s0445_add_two_numbers_ii)| [Java](src.save/main/java/g0401_0500/s0445_add_two_numbers_ii/Solution.java) | Medium | Math, Stack, Linked_List, Programming_Skills_II_Day_15 | 3 | 81.96
 
 #### Day 16
 
@@ -1326,6 +1327,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |------|----------------|------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|----------|---------
 | 0197 |[Rising Temperature](src.save/main/java/g0101_0200/s0197_rising_temperature)| [Sql](src.save/main/java/g0101_0200/s0197_rising_temperature/script.sql) | Easy | Database, SQL_I_Day_6_Union | 401 | 79.45
+| 0607 |[Sales Person](src.save/main/java/g0601_0700/s0607_sales_person)| [Sql](src.save/main/java/g0601_0700/s0607_sales_person/script.sql) | Easy | Database, SQL_I_Day_6_Union | 1046 | 86.04
 
 #### Day 7 Function
 
@@ -1339,6 +1341,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |------|----------------|------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|----------|---------
+| 0586 |[Customer Placing the Largest Number of Orders](src.save/main/java/g0501_0600/s0586_customer_placing_the_largest_number_of_orders)| [Sql](src.save/main/java/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql) | Easy | Database, SQL_I_Day_8_Function | 392 | 90.54
+| 0511 |[Game Play Analysis I](src.save/main/java/g0501_0600/s0511_game_play_analysis_i)| [Sql](src.save/main/java/g0501_0600/s0511_game_play_analysis_i/script.sql) | Easy | Database, SQL_I_Day_8_Function | 620 | 35.70
 | 1890 |[The Latest Login in 2020](src.save/main/java/g1801_1900/s1890_the_latest_login_in_2020)| [Sql](src.save/main/java/g1801_1900/s1890_the_latest_login_in_2020/script.sql) | Easy | Database, SQL_I_Day_8_Function | 571 | 73.59
 | 1741 |[Find Total Time Spent by Each Employee](src.save/main/java/g1701_1800/s1741_find_total_time_spent_by_each_employee)| [Sql](src.save/main/java/g1701_1800/s1741_find_total_time_spent_by_each_employee/script.sql) | Easy | Database, SQL_I_Day_8_Function | 414 | 93.27
 
@@ -2562,6 +2566,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0611 |[Valid Triangle Number](src.save/main/java/g0601_0700/s0611_valid_triangle_number)| [Java](src.save/main/java/g0601_0700/s0611_valid_triangle_number/Solution.java) | Medium | Array, Sorting, Greedy, Binary_Search, Two_Pointers, Binary_Search_II_Day_1 | 10 | 100.00
 | 0609 |[Find Duplicate File in System](src.save/main/java/g0601_0700/s0609_find_duplicate_file_in_system)| [Java](src.save/main/java/g0601_0700/s0609_find_duplicate_file_in_system/Solution.java) | Medium | Array, String, Hash_Table | 20 | 97.68
 | 0608 |[Tree Node](src.save/main/java/g0601_0700/s0608_tree_node)| [Sql](src.save/main/java/g0601_0700/s0608_tree_node/script.sql) | Medium | Database, SQL_I_Day_4_Union_and_Select | 347 | 95.17
+| 0607 |[Sales Person](src.save/main/java/g0601_0700/s0607_sales_person)| [Sql](src.save/main/java/g0601_0700/s0607_sales_person/script.sql) | Easy | Database, SQL_I_Day_6_Union | 1046 | 86.04
 | 0606 |[Construct String from Binary Tree](src.save/main/java/g0601_0700/s0606_construct_string_from_binary_tree)| [Java](src.save/main/java/g0601_0700/s0606_construct_string_from_binary_tree/Solution.java) | Easy | String, Depth_First_Search, Tree, Binary_Tree | 1 | 100.00
 | 0605 |[Can Place Flowers](src.save/main/java/g0601_0700/s0605_can_place_flowers)| [Java](src.save/main/java/g0601_0700/s0605_can_place_flowers/Solution.java) | Easy | Array, Greedy | 1 | 96.77
 | 0601 |[Human Traffic of Stadium](src.save/main/java/g0601_0700/s0601_human_traffic_of_stadium)| [Sql](src.save/main/java/g0601_0700/s0601_human_traffic_of_stadium/script.sql) | Hard | Database | 328 | 62.41
@@ -2577,6 +2582,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0590 |[N-ary Tree Postorder Traversal](src.save/main/java/g0501_0600/s0590_n_ary_tree_postorder_traversal)| [Java](src.save/main/java/g0501_0600/s0590_n_ary_tree_postorder_traversal/Solution.java) | Easy | Depth_First_Search, Tree, Stack | 0 | 100.00
 | 0589 |[N-ary Tree Preorder Traversal](src.save/main/java/g0501_0600/s0589_n_ary_tree_preorder_traversal)| [Java](src.save/main/java/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.java) | Easy | Depth_First_Search, Tree, Stack, Programming_Skills_I_Day_5_Function | 2 | 54.35
 | 0587 |[Erect the Fence](src.save/main/java/g0501_0600/s0587_erect_the_fence)| [Java](src.save/main/java/g0501_0600/s0587_erect_the_fence/Solution.java) | Hard | Array, Math, Geometry | 10 | 87.50
+| 0586 |[Customer Placing the Largest Number of Orders](src.save/main/java/g0501_0600/s0586_customer_placing_the_largest_number_of_orders)| [Sql](src.save/main/java/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql) | Easy | Database, SQL_I_Day_8_Function | 392 | 90.54
 | 0584 |[Find Customer Referee](src.save/main/java/g0501_0600/s0584_find_customer_referee)| [Sql](src.save/main/java/g0501_0600/s0584_find_customer_referee/script.sql) | Easy | Database, SQL_I_Day_1_Select | 505 | 43.87
 | 0583 |[Delete Operation for Two Strings](src.save/main/java/g0501_0600/s0583_delete_operation_for_two_strings)| [Java](src.save/main/java/g0501_0600/s0583_delete_operation_for_two_strings/Solution.java) | Medium | String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming | 12 | 73.04
 | 0581 |[Shortest Unsorted Continuous Subarray](src.save/main/java/g0501_0600/s0581_shortest_unsorted_continuous_subarray)| [Java](src.save/main/java/g0501_0600/s0581_shortest_unsorted_continuous_subarray/Solution.java) | Medium | Array, Sorting, Greedy, Two_Pointers, Stack, Monotonic_Stack | 1 | 98.19
@@ -2626,6 +2632,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0515 |[Find Largest Value in Each Tree Row](src.save/main/java/g0501_0600/s0515_find_largest_value_in_each_tree_row)| [Java](src.save/main/java/g0501_0600/s0515_find_largest_value_in_each_tree_row/Solution.java) | Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 1 | 96.84
 | 0514 |[Freedom Trail](src.save/main/java/g0501_0600/s0514_freedom_trail)| [Java](src.save/main/java/g0501_0600/s0514_freedom_trail/Solution.java) | Hard | String, Dynamic_Programming, Depth_First_Search, Breadth_First_Search | 17 | 75.84
 | 0513 |[Find Bottom Left Tree Value](src.save/main/java/g0501_0600/s0513_find_bottom_left_tree_value)| [Java](src.save/main/java/g0501_0600/s0513_find_bottom_left_tree_value/Solution.java) | Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 1 | 80.06
+| 0511 |[Game Play Analysis I](src.save/main/java/g0501_0600/s0511_game_play_analysis_i)| [Sql](src.save/main/java/g0501_0600/s0511_game_play_analysis_i/script.sql) | Easy | Database, SQL_I_Day_8_Function | 620 | 35.70
 | 0509 |[Fibonacci Number](src.save/main/java/g0501_0600/s0509_fibonacci_number)| [Java](src.save/main/java/g0501_0600/s0509_fibonacci_number/Solution.java) | Easy | Dynamic_Programming, Math, Recursion, Memoization, Dynamic_Programming_I_Day_1 | 0 | 100.00
 | 0508 |[Most Frequent Subtree Sum](src.save/main/java/g0501_0600/s0508_most_frequent_subtree_sum)| [Java](src.save/main/java/g0501_0600/s0508_most_frequent_subtree_sum/Solution.java) | Medium | Hash_Table, Depth_First_Search, Tree, Binary_Tree | 6 | 77.55
 | 0507 |[Perfect Number](src.save/main/java/g0501_0600/s0507_perfect_number)| [Java](src.save/main/java/g0501_0600/s0507_perfect_number/Solution.java) | Easy | Math | 2 | 73.73
@@ -2677,7 +2684,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0452 |[Minimum Number of Arrows to Burst Balloons](src.save/main/java/g0401_0500/s0452_minimum_number_of_arrows_to_burst_balloons)| [Java](src.save/main/java/g0401_0500/s0452_minimum_number_of_arrows_to_burst_balloons/Solution.java) | Medium | Array, Sorting, Greedy | 80 | 76.91
 | 0451 |[Sort Characters By Frequency](src.save/main/java/g0401_0500/s0451_sort_characters_by_frequency)| [Java](src.save/main/java/g0401_0500/s0451_sort_characters_by_frequency/Solution.java) | Medium | String, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Bucket_Sort, Data_Structure_II_Day_21_Heap_Priority_Queue | 18 | 70.93
 | 0450 |[Delete Node in a BST](src.save/main/java/g0401_0500/s0450_delete_node_in_a_bst)| [Java](src.save/main/java/g0401_0500/s0450_delete_node_in_a_bst/Solution.java) | Medium | Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_II_Day_16_Tree | 0 | 100.00
+| 0449 |[Serialize and Deserialize BST](src.save/main/java/g0401_0500/s0449_serialize_and_deserialize_bst)| [Java](src.save/main/java/g0401_0500/s0449_serialize_and_deserialize_bst/Codec.java) | Medium | String, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Design, Binary_Search_Tree | 1 | 99.70
 | 0448 |[Find All Numbers Disappeared in an Array](src.save/main/java/g0401_0500/s0448_find_all_numbers_disappeared_in_an_array)| [Java](src.save/main/java/g0401_0500/s0448_find_all_numbers_disappeared_in_an_array/Solution.java) | Easy | Array, Hash_Table | 3 | 100.00
+| 0447 |[Number of Boomerangs](src.save/main/java/g0401_0500/s0447_number_of_boomerangs)| [Java](src.save/main/java/g0401_0500/s0447_number_of_boomerangs/Solution.java) | Medium | Array, Hash_Table, Math | 156 | 80.44
+| 0446 |[Arithmetic Slices II - Subsequence](src.save/main/java/g0401_0500/s0446_arithmetic_slices_ii_subsequence)| [Java](src.save/main/java/g0401_0500/s0446_arithmetic_slices_ii_subsequence/Solution.java) | Hard | Array, Dynamic_Programming | 67 | 95.78
+| 0445 |[Add Two Numbers II](src.save/main/java/g0401_0500/s0445_add_two_numbers_ii)| [Java](src.save/main/java/g0401_0500/s0445_add_two_numbers_ii/Solution.java) | Medium | Math, Stack, Linked_List, Programming_Skills_II_Day_15 | 3 | 81.96
 | 0443 |[String Compression](src.save/main/java/g0401_0500/s0443_string_compression)| [Java](src.save/main/java/g0401_0500/s0443_string_compression/Solution.java) | Medium | String, Two_Pointers | 2 | 60.36
 | 0442 |[Find All Duplicates in an Array](src.save/main/java/g0401_0500/s0442_find_all_duplicates_in_an_array)| [Java](src.save/main/java/g0401_0500/s0442_find_all_duplicates_in_an_array/Solution.java) | Medium | Array, Hash_Table | 5 | 94.88
 | 0441 |[Arranging Coins](src.save/main/java/g0401_0500/s0441_arranging_coins)| [Java](src.save/main/java/g0401_0500/s0441_arranging_coins/Solution.java) | Easy | Math, Binary_Search, Binary_Search_I_Day_6 | 2 | 87.99
