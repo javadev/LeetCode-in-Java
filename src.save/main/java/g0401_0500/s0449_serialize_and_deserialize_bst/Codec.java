@@ -15,9 +15,10 @@ import com_github_leetcode.TreeNode;
  * }
  */
 public class Codec {
-    final char split = (char) 0;
-    final int min = 1;
+    private final char split = (char) 0;
+    private final int min = 1;
     private int cur;
+
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
