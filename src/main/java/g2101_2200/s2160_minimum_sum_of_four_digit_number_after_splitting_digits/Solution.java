@@ -5,7 +5,7 @@ package g2101_2200.s2160_minimum_sum_of_four_digit_number_after_splitting_digits
 import java.util.Arrays;
 
 public class Solution {
-    public String minimumSum(String value) {
+    public int minimumSum(int num) {
         int[] dig = new int[4];
         int cur = 0;
         while (num > 0) {
