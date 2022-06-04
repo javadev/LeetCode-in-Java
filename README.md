@@ -40,7 +40,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-|-
-| 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate)| [Java](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java) | Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 27 | 16.94
+| 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate)| [Java](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java) | Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 10 | 67.20
 | 0053 |[Maximum Subarray](src.save/main/java/g0001_0100/s0053_maximum_subarray)| [Java](src.save/main/java/g0001_0100/s0053_maximum_subarray/Solution.java) | Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Divide_and_Conquer | 1 | 100.00
 
 #### Day 2 Array
@@ -1020,7 +1020,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1356 |[Sort Integers by The Number of 1 Bits](src.save/main/java/g1301_1400/s1356_sort_integers_by_the_number_of_1_bits)| [Java](src.save/main/java/g1301_1400/s1356_sort_integers_by_the_number_of_1_bits/Solution.java) | Easy | Array, Sorting, Bit_Manipulation, Counting | 10 | 65.50
 | 0232 |[Implement Queue using Stacks](src.save/main/java/g0201_0300/s0232_implement_queue_using_stacks)| [Java](src.save/main/java/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.java) | Easy | Stack, Design, Queue | 1 | 56.63
 | 0242 |[Valid Anagram](src.save/main/java/g0201_0300/s0242_valid_anagram)| [Java](src.save/main/java/g0201_0300/s0242_valid_anagram/Solution.java) | Easy | Top_Interview_Questions, String, Hash_Table, Sorting | 2 | 98.88
-| 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate)| [Java](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java) | Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 27 | 16.94
+| 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate)| [Java](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java) | Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 10 | 67.20
 
 #### Day 12 Class and Object
 
@@ -2842,7 +2842,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0220 |[Contains Duplicate III](src.save/main/java/g0201_0300/s0220_contains_duplicate_iii)| [Java](src.save/main/java/g0201_0300/s0220_contains_duplicate_iii/Solution.java) | Medium | Array, Sorting, Sliding_Window, Ordered_Set, Bucket_Sort | 46 | 62.24
 | 0219 |[Contains Duplicate II](src.save/main/java/g0201_0300/s0219_contains_duplicate_ii)| [Java](src.save/main/java/g0201_0300/s0219_contains_duplicate_ii/Solution.java) | Easy | Array, Hash_Table, Sliding_Window | 44 | 42.18
 | 0218 |[The Skyline Problem](src.save/main/java/g0201_0300/s0218_the_skyline_problem)| [Java](src.save/main/java/g0201_0300/s0218_the_skyline_problem/Solution.java) | Hard | Top_Interview_Questions, Array, Heap_Priority_Queue, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Line_Sweep | 21 | 80.36
-| 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate)| [Java](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java) | Easy | Top_Interview_Questions, Array, Hash_Table, Sorting, Data_Structure_I_Day_1_Array, Programming_Skills_I_Day_11_Containers_and_Libraries | 27 | 16.94
+| 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate)| [Java](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java) | Easy | Top_Interview_Questions, Array, Hash_Table, Sorting, Data_Structure_I_Day_1_Array, Programming_Skills_I_Day_11_Containers_and_Libraries | 10 | 67.20
 | 0216 |[Combination Sum III](src.save/main/java/g0201_0300/s0216_combination_sum_iii)| [Java](src.save/main/java/g0201_0300/s0216_combination_sum_iii/Solution.java) | Medium | Array, Backtracking | 1 | 78.74
 | 0215 |[Kth Largest Element in an Array](src.save/main/java/g0201_0300/s0215_kth_largest_element_in_an_array)| [Java](src.save/main/java/g0201_0300/s0215_kth_largest_element_in_an_array/Solution.java) | Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Quickselect, Data_Structure_II_Day_20_Heap_Priority_Queue | 2 | 93.01
 | 0214 |[Shortest Palindrome](src.save/main/java/g0201_0300/s0214_shortest_palindrome)| [Java](src.save/main/java/g0201_0300/s0214_shortest_palindrome/Solution.java) | Hard | String, Hash_Function, String_Matching, Rolling_Hash | 3 | 94.71
