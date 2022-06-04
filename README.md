@@ -47,7 +47,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0001 |[Two Sum](src.save/main/java/g0001_0100/s0001_two_sum/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table | 3 | 80.08
+| 0001 |[Two Sum](src.save/main/java/g0001_0100/s0001_two_sum/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table | 1 | 99.68
 | 0088 |[Merge Sorted Array](src.save/main/java/g0001_0100/s0088_merge_sorted_array/Solution.java)| Easy | Top_Interview_Questions, Array, Sorting, Two_Pointers | 0 | 100.00
 
 #### Day 3 Array
@@ -1372,9 +1372,28 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2181 |[Merge Nodes in Between Zeros](src/main/java/g2101_2200/s2181_merge_nodes_in_between_zeros/Solution.java)| Medium | Simulation, Linked_List | 6 | 96.26
 | 2172 |[Maximum AND Sum of Array](src/main/java/g2101_2200/s2172_maximum_and_sum_of_array/Solution.java)| Hard | Array, Dynamic_Programming, Bit_Manipulation, Bitmask | 21 | 87.50
 | 2166 |[Design Bitset](src/main/java/g2101_2200/s2166_design_bitset/Bitset.java)| Medium | Array, Hash_Table, Design | 81 | 73.38
+| 2162 |[Minimum Cost to Set Cooking Time](src/main/java/g2101_2200/s2162_minimum_cost_to_set_cooking_time/Solution.java)| Medium | Math, Enumeration | 1 | 95.82
+| 2161 |[Partition Array According to Given Pivot](src/main/java/g2101_2200/s2161_partition_array_according_to_given_pivot/Solution.java)| Medium | Array, Two_Pointers, Simulation | 7 | 72.76
+| 2160 |[Minimum Sum of Four Digit Number After Splitting Digits](src/main/java/g2101_2200/s2160_minimum_sum_of_four_digit_number_after_splitting_digits/Solution.java)| Easy | Math, Sorting, Greedy | 1 | 78.31
+| 2155 |[All Divisions With the Highest Score of a Binary Array](src/main/java/g2101_2200/s2155_all_divisions_with_the_highest_score_of_a_binary_array/Solution.java)| Medium | Array | 18 | 98.41
 | 2154 |[Keep Multiplying Found Values by Two](src/main/java/g2101_2200/s2154_keep_multiplying_found_values_by_two/Solution.java)| Easy | Array, Hash_Table, Sorting, Simulation | 1 | 93.21
 | 2151 |[Maximum Good People Based on Statements](src/main/java/g2101_2200/s2151_maximum_good_people_based_on_statements/Solution.java)| Hard | Array, Bit_Manipulation, Backtracking, Enumeration | 76 | 47.57
 | 2150 |[Find All Lonely Numbers in the Array](src/main/java/g2101_2200/s2150_find_all_lonely_numbers_in_the_array/Solution.java)| Medium | Array, Hash_Table, Counting | 93 | 70.66
+| 2136 |[Earliest Possible Day of Full Bloom](src/main/java/g2101_2200/s2136_earliest_possible_day_of_full_bloom/Solution.java)| Hard | Array, Sorting, Greedy | 63 | 94.92
+| 2135 |[Count Words Obtained After Adding a Letter](src/main/java/g2101_2200/s2135_count_words_obtained_after_adding_a_letter/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Bit_Manipulation | 67 | 93.08
+| 2134 |[Minimum Swaps to Group All 1's Together II](src/main/java/g2101_2200/s2134_minimum_swaps_to_group_all_1s_together_ii/Solution.java)| Medium | Array, Sliding_Window | 11 | 72.59
+| 2133 |[Check if Every Row and Column Contains All Numbers](src/main/java/g2101_2200/s2133_check_if_every_row_and_column_contains_all_numbers/Solution.java)| Easy | Array, Hash_Table, Matrix | 32 | 64.12
+| 2132 |[Stamping the Grid](src/main/java/g2101_2200/s2132_stamping_the_grid/Solution.java)| Hard | Array, Greedy, Matrix, Prefix_Sum | 11 | 93.06
+| 2131 |[Longest Palindrome by Concatenating Two Letter Words](src/main/java/g2101_2200/s2131_longest_palindrome_by_concatenating_two_letter_words/Solution.java)| Medium | Array, String, Hash_Table, Greedy, Counting | 73 | 76.60
+| 2130 |[Maximum Twin Sum of a Linked List](src/main/java/g2101_2200/s2130_maximum_twin_sum_of_a_linked_list/Solution.java)| Medium | Two_Pointers, Stack, Linked_List | 9 | 57.92
+| 2129 |[Capitalize the Title](src/main/java/g2101_2200/s2129_capitalize_the_title/Solution.java)| Easy | String | 2 | 94.22
+| 2127 |[Maximum Employees to Be Invited to a Meeting](src/main/java/g2101_2200/s2127_maximum_employees_to_be_invited_to_a_meeting/Solution.java)| Hard | Depth_First_Search, Graph, Topological_Sort | 37 | 85.71
+| 2126 |[Destroying Asteroids](src/main/java/g2101_2200/s2126_destroying_asteroids/Solution.java)| Medium | Array, Sorting, Greedy | 25 | 83.82
+| 2125 |[Number of Laser Beams in a Bank](src/main/java/g2101_2200/s2125_number_of_laser_beams_in_a_bank/Solution.java)| Medium | Array, String, Math, Matrix | 19 | 76.00
+| 2124 |[Check if All A's Appears Before All B's](src/main/java/g2101_2200/s2124_check_if_all_as_appears_before_all_bs/Solution.java)| Easy | String | 1 | 73.82
+| 2122 |[Recover the Original Array](src/main/java/g2101_2200/s2122_recover_the_original_array/Solution.java)| Hard | Array, Hash_Table, Sorting, Enumeration | 19 | 89.04
+| 2121 |[Intervals Between Identical Elements](src/main/java/g2101_2200/s2121_intervals_between_identical_elements/Solution.java)| Medium | Array, Hash_Table, Prefix_Sum | 93 | 79.63
+| 2120 |[Execution of All Suffix Instructions Staying in a Grid](src/main/java/g2101_2200/s2120_execution_of_all_suffix_instructions_staying_in_a_grid/Solution.java)| Medium | String, Simulation | 31 | 88.00
 | 2119 |[A Number After a Double Reversal](src/main/java/g2101_2200/s2119_a_number_after_a_double_reversal/Solution.java)| Easy | Math | 0 | 100.00
 | 2117 |[Abbreviating the Product of a Range](src/main/java/g2101_2200/s2117_abbreviating_the_product_of_a_range/Solution.java)| Hard | Math | 70 | 89.47
 | 2116 |[Check if a Parentheses String Can Be Valid](src/main/java/g2101_2200/s2116_check_if_a_parentheses_string_can_be_valid/Solution.java)| Medium | String, Greedy, Stack | 19 | 85.53
@@ -3050,7 +3069,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0004 |[Median of Two Sorted Arrays](src.save/main/java/g0001_0100/s0004_median_of_two_sorted_arrays/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Divide_and_Conquer | 3 | 79.08
 | 0003 |[Longest Substring Without Repeating Characters](src.save/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window, Algorithm_I_Day_6_Sliding_Window | 3 | 95.99
 | 0002 |[Add Two Numbers](src.save/main/java/g0001_0100/s0002_add_two_numbers/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Math, Linked_List, Recursion, Data_Structure_II_Day_10_Linked_List, Programming_Skills_II_Day_15 | 1 | 100.00
-| 0001 |[Two Sum](src.save/main/java/g0001_0100/s0001_two_sum/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Data_Structure_I_Day_2_Array | 3 | 80.08
+| 0001 |[Two Sum](src.save/main/java/g0001_0100/s0001_two_sum/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Data_Structure_I_Day_2_Array | 1 | 99.68
 
 ## Contributing
 Your ideas/fixes/algorithms are more than welcome!
