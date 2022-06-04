@@ -20,4 +20,9 @@ class SolutionTest {
     void twoSum3() {
         assertThat(new Solution().twoSum(new int[] {3, 3}, 6), equalTo(new int[] {0, 1}));
     }
+
+    @Test
+    void twoSum4() {
+        assertThat(new Solution().twoSum(new int[] {3, 3}, 7), equalTo(new int[] {-1, -1}));
+    }
 }
