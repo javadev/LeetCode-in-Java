@@ -10,8 +10,7 @@ public class Solution {
         for (int i = 1; i < l; i++) {
             if (nums[i] == 1) {
                 ones[i] = ones[i - 1] + 1;
-            }
-            else {
+            } else {
                 ones[i] = ones[i - 1];
             }
         }
@@ -30,8 +29,7 @@ public class Solution {
 
             if (ei >= si) {
                 totalones = ones[ei] - (si == 0 ? 0 : ones[si - 1]);
-            }
-            else {
+            } else {
                 totalones = ones[ei] + (ones[l - 1] - ones[si - 1]);
             }
 

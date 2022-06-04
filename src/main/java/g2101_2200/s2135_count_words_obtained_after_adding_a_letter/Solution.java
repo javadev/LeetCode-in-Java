@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class Solution {
     private Set<Integer> set;
-    
+
     private void preprocess(String[] words) {
         set = new HashSet<>();
         for (String word : words) {
@@ -16,47 +16,47 @@ public class Solution {
             set.add(bitMap);
         }
     }
-    
+
     private boolean matches(String word) {
         return matches(getBitMap(word));
     }
-    
+
     private boolean matches(int bitMap) {
         return set.contains(bitMap);
     }
-    
+
     private int getBitMap(String word) {
         int result = 0;
         for (int i = 0; i < word.length(); i++) {
             int position = word.charAt(i) - 'a';
-            
+
             result |= (1 << position);
         }
-        
+
         return result;
     }
-    
+
     private int addBit(int bitMap, char c) {
         int position = c - 'a';
         bitMap |= (1 << position);
         return bitMap;
     }
-    
+
     private int removeBit(int bitMap, char c) {
         int position = c - 'a';
         bitMap &= ~(1 << position);
         return bitMap;
     }
-    
+
     public int wordCount(String[] startWords, String[] targetWords) {
         if (startWords == null || startWords.length == 0) {
             return 0;
         }
-        
+
         if (targetWords == null || targetWords.length == 0) {
             return 0;
         }
-        
+
         preprocess(startWords);
         int count = 0;
         for (String word : targetWords) {
@@ -66,14 +66,14 @@ public class Solution {
                 if (i > 0) {
                     bitMap = addBit(bitMap, word.charAt(i - 1));
                 }
-                
+
                 if (matches(bitMap)) {
                     count++;
                     break;
                 }
             }
         }
-        
+
         return count;
     }
 }

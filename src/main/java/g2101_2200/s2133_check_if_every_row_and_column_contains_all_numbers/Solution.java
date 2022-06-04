@@ -18,11 +18,11 @@ public class Solution {
             }
             set.clear();
         }
-        for(int i = 0; i<matrix[0].length; i++){
+        for (int i = 0; i < matrix[0].length; i++) {
             for (int[] ints : matrix) {
                 set.add(ints[i]);
             }
-            if(set.size() != n){
+            if (set.size() != n) {
                 return false;
             }
             set.clear();
