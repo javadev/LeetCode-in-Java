@@ -25,10 +25,8 @@ public class Solution {
         int result = 0;
         for (int i = 0; i < word.length(); i++) {
             int position = word.charAt(i) - 'a';
-
             result |= (1 << position);
         }
-
         return result;
     }
 
@@ -48,11 +46,9 @@ public class Solution {
         if (startWords == null || startWords.length == 0) {
             return 0;
         }
-
         if (targetWords == null || targetWords.length == 0) {
             return 0;
         }
-
         preprocess(startWords);
         int count = 0;
         for (String word : targetWords) {
@@ -62,14 +58,12 @@ public class Solution {
                 if (i > 0) {
                     bitMap = addBit(bitMap, word.charAt(i - 1));
                 }
-
                 if (matches(bitMap)) {
                     count++;
                     break;
                 }
             }
         }
-
         return count;
     }
 }
