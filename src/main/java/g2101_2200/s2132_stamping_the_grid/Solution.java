@@ -35,7 +35,6 @@ public class Solution {
                             return false;
                         }
                     }
-
                     if (j + 1 < rl && row[j + 1] == 1 && j - w + 1 >= 0) {
                         if (i > 0
                                 && grid[i - 1][j] == 1
@@ -52,32 +51,26 @@ public class Solution {
                     }
                     continue;
                 }
-
                 if (1 < j - prev && j - prev <= w) {
                     return false;
                 }
-
                 prev = j;
             }
             if (1 < row.length - prev && row.length - prev <= w) {
                 return false;
             }
         }
-
         for (int i = 0; i < rl; i++) {
             int prev = -1;
             for (int j = 0; j < grid.length; j++) {
                 if (grid[j][i] == 0) {
                     continue;
                 }
-
                 if (1 < j - prev && j - prev <= h) {
                     return false;
                 }
-
                 prev = j;
             }
-
             if (1 < grid.length - prev && grid.length - prev <= h) {
                 return false;
             }
