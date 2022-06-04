@@ -17,10 +17,6 @@ public class Solution {
         }
     }
 
-    private boolean matches(String word) {
-        return matches(getBitMap(word));
-    }
-
     private boolean matches(int bitMap) {
         return set.contains(bitMap);
     }

@@ -21,7 +21,8 @@ public class Solution {
 
         int ws = ones[l - 1];
         int minSwaps = Integer.MAX_VALUE;
-        int si = 0, ei;
+        int si = 0;
+        int ei;
 
         while (si < nums.length) {
             ei = (si + ws - 1) % l;
