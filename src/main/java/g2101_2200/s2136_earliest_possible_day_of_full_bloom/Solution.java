@@ -5,6 +5,7 @@ package g2101_2200.s2136_earliest_possible_day_of_full_bloom;
 import java.util.Arrays;
 import java.util.Collections;
 
+@SuppressWarnings("java:S1210")
 public class Solution {
     public int earliestFullBloom(int[] plantTime, int[] growTime) {
         int n = plantTime.length;
