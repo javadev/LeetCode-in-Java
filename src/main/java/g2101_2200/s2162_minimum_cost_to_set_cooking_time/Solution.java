@@ -4,7 +4,8 @@ package g2101_2200.s2162_minimum_cost_to_set_cooking_time;
 
 public class Solution {
     public int minCostSetTime(int startAt, int moveCost, int pushCost, int targetSeconds) {
-        int mins = targetSeconds / 60, secs = targetSeconds % 60;
+        int mins = targetSeconds / 60;
+        int secs = targetSeconds % 60;
         return Math.min(
                 cost(mins, secs, startAt, moveCost, pushCost),
                 cost(mins - 1, secs + 60, startAt, moveCost, pushCost));
