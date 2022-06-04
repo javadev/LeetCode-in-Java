@@ -13,9 +13,8 @@ public class Solution {
         for (int n : nums) {
             if (set.contains(n)) {
                 return true;
-            } else {
-                set.add(n);
             }
+            set.add(n);
         }
         return false;
     }
