@@ -20,7 +20,6 @@ public class Solution {
             count[rem]++;
             tempNum = tempNum / 10;
         }
-
         long output = 0;
         if (num > 0) {
             output = output * 10 + min;
