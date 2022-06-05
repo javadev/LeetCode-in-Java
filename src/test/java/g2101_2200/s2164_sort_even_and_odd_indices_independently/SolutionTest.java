@@ -15,6 +15,6 @@ class SolutionTest {
 
     @Test
     void sortEvenOdd2() {
-        assertThat(new Solution().sortEvenOdd(new int[] {2, 1}), equalTo(new int[] {1, 2}));
+        assertThat(new Solution().sortEvenOdd(new int[] {2, 1}), equalTo(new int[] {2, 1}));
     }
 }
