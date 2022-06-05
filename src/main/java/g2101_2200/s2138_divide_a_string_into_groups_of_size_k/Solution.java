@@ -11,7 +11,8 @@ public class Solution {
         int t = k;
         List<String> str = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < s.length(); i++) {
+        int i = 0;
+        while (i < s.length()) {
             if (t > 0) {
                 sb.append(s.charAt(i));
                 t--;
@@ -21,6 +22,7 @@ public class Solution {
                 sb.setLength(0);
                 i--;
             }
+            i++;
         }
         if (t > 0) {
             while (t-- > 0) {
