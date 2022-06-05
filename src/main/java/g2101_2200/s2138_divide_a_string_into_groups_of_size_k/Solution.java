@@ -30,8 +30,8 @@ public class Solution {
             }
         }
         str.add(sb.toString());
-        for (int i = 0; i < str.size(); i++) {
-            ans[i] = str.get(i);
+        for (int j = 0; j < str.size(); j++) {
+            ans[j] = str.get(j);
         }
         return ans;
     }
