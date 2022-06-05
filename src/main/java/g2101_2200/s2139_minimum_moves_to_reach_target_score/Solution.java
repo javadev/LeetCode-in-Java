@@ -9,7 +9,6 @@ public class Solution {
             if (maxDoubles > 0 && target % 2 == 0) {
                 maxDoubles--;
                 target = target / 2;
-
             } else {
                 if (maxDoubles == 0) {
                     count = count + target - 1;
@@ -18,7 +17,6 @@ public class Solution {
                     target = target - 1;
                 }
             }
-
             count++;
         }
         return count;
