@@ -3,7 +3,6 @@ package g2101_2200.s2191_sort_the_jumbled_numbers;
 // #Medium #Array #Sorting #2022_06_07_Time_117_ms_(96.53%)_Space_50.8_MB_(90.75%)
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Solution {
