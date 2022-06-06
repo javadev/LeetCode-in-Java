@@ -8,11 +8,11 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void countPairs() {
-        assertThat(new Solution().countPairs(new int[] {3,1,2,2,2,1,3}, 2), equalTo(4));
+        assertThat(new Solution().countPairs(new int[] {3, 1, 2, 2, 2, 1, 3}, 2), equalTo(4));
     }
 
     @Test
     void countPairs2() {
-        assertThat(new Solution().countPairs(new int[] {1,2,3,4}, 1), equalTo(0));
+        assertThat(new Solution().countPairs(new int[] {1, 2, 3, 4}, 1), equalTo(0));
     }
 }

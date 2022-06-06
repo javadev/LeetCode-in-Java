@@ -5,7 +5,7 @@ package g2101_2200.s2177_find_three_consecutive_integers_that_sum_to_a_given_num
 public class Solution {
     public long[] sumOfThree(long num) {
         if (num % 3 == 0) {
-            return new long[] {num/3 - 1, num/3, num/3 + 1};
+            return new long[] {num / 3 - 1, num / 3, num / 3 + 1};
         }
         return new long[0];
     }

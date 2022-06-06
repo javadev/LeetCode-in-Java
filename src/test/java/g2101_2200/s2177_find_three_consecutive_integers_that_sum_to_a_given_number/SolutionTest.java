@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void sumOfThree() {
-        assertThat(new Solution().sumOfThree(33L), equalTo(new long[] {10,11,12}));
+        assertThat(new Solution().sumOfThree(33L), equalTo(new long[] {10, 11, 12}));
     }
 
     @Test
