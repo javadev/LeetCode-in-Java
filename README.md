@@ -405,7 +405,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0034 |[Find First and Last Position of Element in Sorted Array](src.save/main/java/g0001_0100/s0034_find_first_and_last_position_of_element_in_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search | 1 | 30.87
+| 0034 |[Find First and Last Position of Element in Sorted Array](src.save/main/java/g0001_0100/s0034_find_first_and_last_position_of_element_in_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search | 0 | 100.00
 | 0033 |[Search in Rotated Sorted Array](src.save/main/java/g0001_0100/s0033_search_in_rotated_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search | 0 | 100.00
 | 0074 |[Search a 2D Matrix](src.save/main/java/g0001_0100/s0074_search_a_2d_matrix/Solution.java)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Matrix | 0 | 100.00
 
@@ -588,7 +588,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0278 |[First Bad Version](src.save/main/java/g0201_0300/s0278_first_bad_version/Solution.java)| Easy | Binary_Search, Interactive | 12 | 99.50
-| 0034 |[Find First and Last Position of Element in Sorted Array](src.save/main/java/g0001_0100/s0034_find_first_and_last_position_of_element_in_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search | 1 | 30.87
+| 0034 |[Find First and Last Position of Element in Sorted Array](src.save/main/java/g0001_0100/s0034_find_first_and_last_position_of_element_in_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search | 0 | 100.00
 
 #### Day 6
 
@@ -1389,7 +1389,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2135 |[Count Words Obtained After Adding a Letter](src/main/java/g2101_2200/s2135_count_words_obtained_after_adding_a_letter/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Bit_Manipulation | 67 | 93.08
 | 2134 |[Minimum Swaps to Group All 1's Together II](src/main/java/g2101_2200/s2134_minimum_swaps_to_group_all_1s_together_ii/Solution.java)| Medium | Array, Sliding_Window | 11 | 72.59
 | 2133 |[Check if Every Row and Column Contains All Numbers](src/main/java/g2101_2200/s2133_check_if_every_row_and_column_contains_all_numbers/Solution.java)| Easy | Array, Hash_Table, Matrix | 32 | 64.12
-| 2132 |[Stamping the Grid](src/main/java/g2101_2200/s2132_stamping_the_grid/Solution.java)| Hard | Array, Greedy, Matrix, Prefix_Sum | 11 | 93.06
+| 2132 |[Stamping the Grid](src/main/java/g2101_2200/s2132_stamping_the_grid/Solution.java)| Hard | Array, Greedy, Matrix, Prefix_Sum | 7 | 100.00
 | 2131 |[Longest Palindrome by Concatenating Two Letter Words](src/main/java/g2101_2200/s2131_longest_palindrome_by_concatenating_two_letter_words/Solution.java)| Medium | Array, String, Hash_Table, Greedy, Counting | 73 | 76.60
 | 2130 |[Maximum Twin Sum of a Linked List](src/main/java/g2101_2200/s2130_maximum_twin_sum_of_a_linked_list/Solution.java)| Medium | Two_Pointers, Stack, Linked_List | 9 | 57.92
 | 2129 |[Capitalize the Title](src/main/java/g2101_2200/s2129_capitalize_the_title/Solution.java)| Easy | String | 2 | 94.22
@@ -1504,12 +1504,12 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1987 |[Number of Unique Good Subsequences](src.save/main/java/g1901_2000/s1987_number_of_unique_good_subsequences/Solution.java)| Hard | String, Dynamic_Programming | 19 | 53.78
 | 1986 |[Minimum Number of Work Sessions to Finish the Tasks](src.save/main/java/g1901_2000/s1986_minimum_number_of_work_sessions_to_finish_the_tasks/Solution.java)| Medium | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 2 | 90.18
 | 1985 |[Find the Kth Largest Integer in the Array](src.save/main/java/g1901_2000/s1985_find_the_kth_largest_integer_in_the_array/Solution.java)| Medium | Array, String, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Quickselect | 34 | 77.42
-| 1984 |[Minimum Difference Between Highest and Lowest of K Scores](src.save/main/java/g1901_2000/s1984_minimum_difference_between_highest_and_lowest_of_k_scores/Solution.java)| Easy | Array, Sorting, Sliding_Window | 10 | 7.97
+| 1984 |[Minimum Difference Between Highest and Lowest of K Scores](src.save/main/java/g1901_2000/s1984_minimum_difference_between_highest_and_lowest_of_k_scores/Solution.java)| Easy | Array, Sorting, Sliding_Window | 4 | 95.43
 | 1982 |[Find Array Given Subset Sums](src.save/main/java/g1901_2000/s1982_find_array_given_subset_sums/Solution.java)| Hard | Array, Divide_and_Conquer | 70 | 64.91
 | 1981 |[Minimize the Difference Between Target and Chosen Elements](src.save/main/java/g1901_2000/s1981_minimize_the_difference_between_target_and_chosen_elements/Solution.java)| Medium | Array, Dynamic_Programming, Matrix | 480 | 90.78
 | 1980 |[Find Unique Binary String](src.save/main/java/g1901_2000/s1980_find_unique_binary_string/Solution.java)| Medium | Array, String, Backtracking | 7 | 31.88
 | 1979 |[Find Greatest Common Divisor of Array](src.save/main/java/g1901_2000/s1979_find_greatest_common_divisor_of_array/Solution.java)| Easy | Array, Math, Number_Theory | 5 | 10.46
-| 1977 |[Number of Ways to Separate Numbers](src.save/main/java/g1901_2000/s1977_number_of_ways_to_separate_numbers/Solution.java)| Hard | String, Dynamic_Programming, Suffix_Array | 150 | 94.52
+| 1977 |[Number of Ways to Separate Numbers](src.save/main/java/g1901_2000/s1977_number_of_ways_to_separate_numbers/Solution.java)| Hard | String, Dynamic_Programming, Suffix_Array | 604 | 59.21
 | 1976 |[Number of Ways to Arrive at Destination](src.save/main/java/g1901_2000/s1976_number_of_ways_to_arrive_at_destination/Solution.java)| Medium | Dynamic_Programming, Graph, Topological_Sort, Shortest_Path | 14 | 77.59
 | 1975 |[Maximum Matrix Sum](src.save/main/java/g1901_2000/s1975_maximum_matrix_sum/Solution.java)| Medium | Array, Greedy, Matrix | 4 | 100.00
 | 1974 |[Minimum Time to Type Word Using Special Typewriter](src.save/main/java/g1901_2000/s1974_minimum_time_to_type_word_using_special_typewriter/Solution.java)| Easy | String, Greedy | 1 | 74.90
@@ -1959,7 +1959,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1404 |[Number of Steps to Reduce a Number in Binary Representation to One](src.save/main/java/g1401_1500/s1404_number_of_steps_to_reduce_a_number_in_binary_representation_to_one/Solution.java)| Medium | String, Bit_Manipulation | 1 | 62.90
 | 1403 |[Minimum Subsequence in Non-Increasing Order](src.save/main/java/g1401_1500/s1403_minimum_subsequence_in_non_increasing_order/Solution.java)| Easy | Array, Sorting, Greedy | 4 | 79.60
 | 1402 |[Reducing Dishes](src.save/main/java/g1401_1500/s1402_reducing_dishes/Solution.java)| Hard | Array, Dynamic_Programming, Sorting, Greedy | 3 | 66.20
-| 1401 |[Circle and Rectangle Overlapping](src.save/main/java/g1401_1500/s1401_circle_and_rectangle_overlapping/Solution.java)| Medium | Math, Geometry | 2 | 6.67
+| 1401 |[Circle and Rectangle Overlapping](src.save/main/java/g1401_1500/s1401_circle_and_rectangle_overlapping/Solution.java)| Medium | Math, Geometry | 0 | 100.00
 | 1400 |[Construct K Palindrome Strings](src.save/main/java/g1301_1400/s1400_construct_k_palindrome_strings/Solution.java)| Medium | String, Hash_Table, Greedy, Counting | 5 | 94.62
 | 1399 |[Count Largest Group](src.save/main/java/g1301_1400/s1399_count_largest_group/Solution.java)| Easy | Hash_Table, Math | 3 | 98.21
 | 1397 |[Find All Good Strings](src.save/main/java/g1301_1400/s1397_find_all_good_strings/Solution.java)| Hard | String, Dynamic_Programming, String_Matching | 85 | 41.25
@@ -1991,7 +1991,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1368 |[Minimum Cost to Make at Least One Valid Path in a Grid](src.save/main/java/g1301_1400/s1368_minimum_cost_to_make_at_least_one_valid_path_in_a_grid/Solution.java)| Hard | Array, Breadth_First_Search, Matrix, Heap_Priority_Queue, Graph, Shortest_Path | 8 | 99.38
 | 1367 |[Linked List in Binary Tree](src.save/main/java/g1301_1400/s1367_linked_list_in_binary_tree/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Linked_List, Programming_Skills_II_Day_4 | 2 | 61.23
 | 1366 |[Rank Teams by Votes](src.save/main/java/g1301_1400/s1366_rank_teams_by_votes/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Counting | 5 | 95.68
-| 1365 |[How Many Numbers Are Smaller Than the Current Number](src.save/main/java/g1301_1400/s1365_how_many_numbers_are_smaller_than_the_current_number/Solution.java)| Easy | Array, Hash_Table, Sorting, Counting | 26 | 6.46
+| 1365 |[How Many Numbers Are Smaller Than the Current Number](src.save/main/java/g1301_1400/s1365_how_many_numbers_are_smaller_than_the_current_number/Solution.java)| Easy | Array, Hash_Table, Sorting, Counting | 1 | 99.78
 | 1363 |[Largest Multiple of Three](src.save/main/java/g1301_1400/s1363_largest_multiple_of_three/Solution.java)| Hard | Array, Dynamic_Programming, Greedy | 5 | 84.67
 | 1362 |[Closest Divisors](src.save/main/java/g1301_1400/s1362_closest_divisors/Solution.java)| Medium | Math | 8 | 84.91
 | 1361 |[Validate Binary Tree Nodes](src.save/main/java/g1301_1400/s1361_validate_binary_tree_nodes/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Graph, Union_Find | 8 | 69.78
@@ -2105,7 +2105,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1210 |[Minimum Moves to Reach Target with Rotations](src.save/main/java/g1201_1300/s1210_minimum_moves_to_reach_target_with_rotations/Solution.java)| Hard | Array, Breadth_First_Search, Matrix | 29 | 78.57
 | 1209 |[Remove All Adjacent Duplicates in String II](src.save/main/java/g1201_1300/s1209_remove_all_adjacent_duplicates_in_string_ii/Solution.java)| Medium | String, Stack | 15 | 88.34
 | 1208 |[Get Equal Substrings Within Budget](src.save/main/java/g1201_1300/s1208_get_equal_substrings_within_budget/Solution.java)| Medium | String, Binary_Search, Prefix_Sum, Sliding_Window | 7 | 73.41
-| 1207 |[Unique Number of Occurrences](src.save/main/java/g1201_1300/s1207_unique_number_of_occurrences/Solution.java)| Easy | Array, Hash_Table | 8 | 5.98
+| 1207 |[Unique Number of Occurrences](src.save/main/java/g1201_1300/s1207_unique_number_of_occurrences/Solution.java)| Easy | Array, Hash_Table | 2 | 82.71
 | 1206 |[Design Skiplist](src.save/main/java/g1201_1300/s1206_design_skiplist/Skiplist.java)| Hard | Design, Linked_List | 14 | 96.71
 | 1203 |[Sort Items by Groups Respecting Dependencies](src.save/main/java/g1201_1300/s1203_sort_items_by_groups_respecting_dependencies/Solution.java)| Hard | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 44 | 88.89
 | 1202 |[Smallest String With Swaps](src.save/main/java/g1201_1300/s1202_smallest_string_with_swaps/Solution.java)| Medium | String, Hash_Table, Depth_First_Search, Breadth_First_Search, Union_Find | 43 | 86.82
@@ -2134,7 +2134,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1160 |[Find Words That Can Be Formed by Characters](src.save/main/java/g1101_1200/s1160_find_words_that_can_be_formed_by_characters/Solution.java)| Easy | Array, String, Hash_Table | 53 | 30.13
 | 1158 |[Market Analysis I](src.save/main/java/g1101_1200/s1158_market_analysis_i/script.sql)| Medium | Database, SQL_I_Day_9_Control_of_Flow | 1039 | 77.70
 | 1157 |[Online Majority Element In Subarray](src.save/main/java/g1101_1200/s1157_online_majority_element_in_subarray/MajorityChecker.java)| Hard | Array, Binary_Search, Design, Segment_Tree, Binary_Indexed_Tree | 56 | 100.00
-| 1156 |[Swap For Longest Repeated Character Substring](src.save/main/java/g1101_1200/s1156_swap_for_longest_repeated_character_substring/Solution.java)| Medium | String, Sliding_Window | 22 | 15.79
+| 1156 |[Swap For Longest Repeated Character Substring](src.save/main/java/g1101_1200/s1156_swap_for_longest_repeated_character_substring/Solution.java)| Medium | String, Sliding_Window | 12 | 47.37
 | 1155 |[Number of Dice Rolls With Target Sum](src.save/main/java/g1101_1200/s1155_number_of_dice_rolls_with_target_sum/Solution.java)| Medium | Dynamic_Programming | 17 | 78.89
 | 1154 |[Day of the Year](src.save/main/java/g1101_1200/s1154_day_of_the_year/Solution.java)| Easy | String, Math | 9 | 95.40
 | 1148 |[Article Views I](src.save/main/java/g1101_1200/s1148_article_views_i/script.sql)| Easy | Database, SQL_I_Day_5_Union | 459 | 44.85
@@ -2144,7 +2144,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1144 |[Decrease Elements To Make Array Zigzag](src.save/main/java/g1101_1200/s1144_decrease_elements_to_make_array_zigzag/Solution.java)| Medium | Array, Greedy | 0 | 100.00
 | 1143 |[Longest Common Subsequence](src.save/main/java/g1101_1200/s1143_longest_common_subsequence/Solution.java)| Medium | String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19 | 9 | 93.92
 | 1141 |[User Activity for the Past 30 Days I](src.save/main/java/g1101_1200/s1141_user_activity_for_the_past_30_days_i/script.sql)| Easy | Database, SQL_I_Day_7_Function | 543 | 29.24
-| 1140 |[Stone Game II](src.save/main/java/g1101_1200/s1140_stone_game_ii/Solution.java)| Medium | Array, Dynamic_Programming, Math, Game_Theory | 7 | 68.62
+| 1140 |[Stone Game II](src.save/main/java/g1101_1200/s1140_stone_game_ii/Solution.java)| Medium | Array, Dynamic_Programming, Math, Game_Theory | 12 | 44.22
 | 1139 |[Largest 1-Bordered Square](src.save/main/java/g1101_1200/s1139_largest_1_bordered_square/Solution.java)| Medium | Array, Dynamic_Programming, Matrix | 8 | 53.28
 | 1138 |[Alphabet Board Path](src.save/main/java/g1101_1200/s1138_alphabet_board_path/Solution.java)| Medium | String, Hash_Table | 1 | 76.10
 | 1137 |[N-th Tribonacci Number](src.save/main/java/g1101_1200/s1137_n_th_tribonacci_number/Solution.java)| Easy | Dynamic_Programming, Math, Memoization, Dynamic_Programming_I_Day_1 | 0 | 100.00
@@ -2221,11 +2221,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1020 |[Number of Enclaves](src.save/main/java/g1001_1100/s1020_number_of_enclaves/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find, Graph_Theory_I_Day_3_Matrix_Related_Problems | 6 | 68.24
 | 1019 |[Next Greater Node In Linked List](src.save/main/java/g1001_1100/s1019_next_greater_node_in_linked_list/Solution.java)| Medium | Array, Stack, Linked_List, Monotonic_Stack | 11 | 96.35
 | 1018 |[Binary Prefix Divisible By 5](src.save/main/java/g1001_1100/s1018_binary_prefix_divisible_by_5/Solution.java)| Easy | Array | 3 | 84.58
-| 1017 |[Convert to Base -2](src.save/main/java/g1001_1100/s1017_convert_to_base_2/Solution.java)| Medium | Math | 2 | 34.15
+| 1017 |[Convert to Base -2](src.save/main/java/g1001_1100/s1017_convert_to_base_2/Solution.java)| Medium | Math | 1 | 89.45
 | 1016 |[Binary String With Substrings Representing 1 To N](src.save/main/java/g1001_1100/s1016_binary_string_with_substrings_representing_1_to_n/Solution.java)| Medium | String | 0 | 100.00
 | 1015 |[Smallest Integer Divisible by K](src.save/main/java/g1001_1100/s1015_smallest_integer_divisible_by_k/Solution.java)| Medium | Hash_Table, Math | 2 | 90.67
 | 1014 |[Best Sightseeing Pair](src.save/main/java/g1001_1100/s1014_best_sightseeing_pair/Solution.java)| Medium | Array, Dynamic_Programming, Dynamic_Programming_I_Day_7 | 2 | 99.86
-| 1013 |[Partition Array Into Three Parts With Equal Sum](src.save/main/java/g1001_1100/s1013_partition_array_into_three_parts_with_equal_sum/Solution.java)| Easy | Array, Greedy | 3 | 53.27
+| 1013 |[Partition Array Into Three Parts With Equal Sum](src.save/main/java/g1001_1100/s1013_partition_array_into_three_parts_with_equal_sum/Solution.java)| Easy | Array, Greedy | 1 | 100.00
 | 1012 |[Numbers With Repeated Digits](src.save/main/java/g1001_1100/s1012_numbers_with_repeated_digits/Solution.java)| Hard | Dynamic_Programming, Math | 3 | 28.17
 | 1011 |[Capacity To Ship Packages Within D Days](src.save/main/java/g1001_1100/s1011_capacity_to_ship_packages_within_d_days/Solution.java)| Medium | Array, Greedy, Binary_Search | 10 | 75.31
 | 1010 |[Pairs of Songs With Total Durations Divisible by 60](src.save/main/java/g1001_1100/s1010_pairs_of_songs_with_total_durations_divisible_by_60/Solution.java)| Medium | Array, Hash_Table, Counting | 4 | 64.39
@@ -2314,7 +2314,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0927 |[Three Equal Parts](src.save/main/java/g0901_1000/s0927_three_equal_parts/Solution.java)| Hard | Array, Math | 2 | 90.20
 | 0926 |[Flip String to Monotone Increasing](src.save/main/java/g0901_1000/s0926_flip_string_to_monotone_increasing/Solution.java)| Medium | String, Dynamic_Programming | 12 | 63.41
 | 0925 |[Long Pressed Name](src.save/main/java/g0901_1000/s0925_long_pressed_name/Solution.java)| Easy | String, Two_Pointers | 1 | 84.87
-| 0924 |[Minimize Malware Spread](src.save/main/java/g0901_1000/s0924_minimize_malware_spread/Solution.java)| Hard | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 127 | 5.44
+| 0924 |[Minimize Malware Spread](src.save/main/java/g0901_1000/s0924_minimize_malware_spread/Solution.java)| Hard | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 10 | 47.21
 | 0923 |[3Sum With Multiplicity](src.save/main/java/g0901_1000/s0923_3sum_with_multiplicity/Solution.java)| Medium | Array, Hash_Table, Sorting, Two_Pointers, Counting | 14 | 69.20
 | 0922 |[Sort Array By Parity II](src.save/main/java/g0901_1000/s0922_sort_array_by_parity_ii/Solution.java)| Easy | Array, Sorting, Two_Pointers | 4 | 52.95
 | 0921 |[Minimum Add to Make Parentheses Valid](src.save/main/java/g0901_1000/s0921_minimum_add_to_make_parentheses_valid/Solution.java)| Medium | String, Greedy, Stack | 2 | 33.69
@@ -2370,7 +2370,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0871 |[Minimum Number of Refueling Stops](src.save/main/java/g0801_0900/s0871_minimum_number_of_refueling_stops/Solution.java)| Hard | Array, Dynamic_Programming, Greedy, Heap_Priority_Queue | 3 | 88.52
 | 0870 |[Advantage Shuffle](src.save/main/java/g0801_0900/s0870_advantage_shuffle/Solution.java)| Medium | Array, Sorting, Greedy | 188 | 28.01
 | 0869 |[Reordered Power of 2](src.save/main/java/g0801_0900/s0869_reordered_power_of_2/Solution.java)| Medium | Math, Sorting, Counting, Enumeration | 9 | 25.97
-| 0868 |[Binary Gap](src.save/main/java/g0801_0900/s0868_binary_gap/Solution.java)| Easy | Math, Bit_Manipulation | 3 | 9.45
+| 0868 |[Binary Gap](src.save/main/java/g0801_0900/s0868_binary_gap/Solution.java)| Easy | Math, Bit_Manipulation | 1 | 82.94
 | 0867 |[Transpose Matrix](src.save/main/java/g0801_0900/s0867_transpose_matrix/Solution.java)| Easy | Array, Matrix, Simulation | 1 | 60.83
 | 0866 |[Prime Palindrome](src.save/main/java/g0801_0900/s0866_prime_palindrome/Solution.java)| Medium | Math | 2 | 84.68
 | 0865 |[Smallest Subtree with all the Deepest Nodes](src.save/main/java/g0801_0900/s0865_smallest_subtree_with_all_the_deepest_nodes/Solution.java)| Medium | Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 0 | 100.00
@@ -2464,7 +2464,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0775 |[Global and Local Inversions](src.save/main/java/g0701_0800/s0775_global_and_local_inversions/Solution.java)| Medium | Array, Math | 1 | 99.74
 | 0773 |[Sliding Puzzle](src.save/main/java/g0701_0800/s0773_sliding_puzzle/Solution.java)| Hard | Array, Breadth_First_Search, Matrix | 9 | 81.80
 | 0771 |[Jewels and Stones](src.save/main/java/g0701_0800/s0771_jewels_and_stones/Solution.java)| Easy | String, Hash_Table | 1 | 91.74
-| 0770 |[Basic Calculator IV](src.save/main/java/g0701_0800/s0770_basic_calculator_iv/Solution.java)| Hard | String, Hash_Table, Math, Stack, Recursion | 17 | 66.18
+| 0770 |[Basic Calculator IV](src.save/main/java/g0701_0800/s0770_basic_calculator_iv/Solution.java)| Hard | String, Hash_Table, Math, Stack, Recursion | 8 | 96.92
 | 0769 |[Max Chunks To Make Sorted](src.save/main/java/g0701_0800/s0769_max_chunks_to_make_sorted/Solution.java)| Medium | Array, Sorting, Greedy, Stack, Monotonic_Stack | 0 | 100.00
 | 0768 |[Max Chunks To Make Sorted II](src.save/main/java/g0701_0800/s0768_max_chunks_to_make_sorted_ii/Solution.java)| Hard | Array, Sorting, Greedy, Stack, Monotonic_Stack | 1 | 87.58
 | 0767 |[Reorganize String](src.save/main/java/g0701_0800/s0767_reorganize_string/Solution.java)| Medium | String, Hash_Table, Sorting, Greedy, Heap_Priority_Queue, Counting | 1 | 94.60
@@ -2636,7 +2636,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0539 |[Minimum Time Difference](src.save/main/java/g0501_0600/s0539_minimum_time_difference/Solution.java)| Medium | Array, String, Math, Sorting | 3 | 93.52
 | 0538 |[Convert BST to Greater Tree](src.save/main/java/g0501_0600/s0538_convert_bst_to_greater_tree/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 1 | 83.78
 | 0537 |[Complex Number Multiplication](src.save/main/java/g0501_0600/s0537_complex_number_multiplication/Solution.java)| Medium | String, Math, Simulation | 7 | 62.22
-| 0535 |[Encode and Decode TinyURL](src.save/main/java/g0501_0600/s0535_encode_and_decode_tinyurl/Codec.java)| Medium | String, Hash_Table, Design, Hash_Function | 3 | 82.89
+| 0535 |[Encode and Decode TinyURL](src.save/main/java/g0501_0600/s0535_encode_and_decode_tinyurl/Codec.java)| Medium | String, Hash_Table, Design, Hash_Function | 4 | 65.42
 | 0532 |[K-diff Pairs in an Array](src.save/main/java/g0501_0600/s0532_k_diff_pairs_in_an_array/Solution.java)| Medium | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 14 | 49.69
 | 0530 |[Minimum Absolute Difference in BST](src.save/main/java/g0501_0600/s0530_minimum_absolute_difference_in_bst/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 0 | 100.00
 | 0529 |[Minesweeper](src.save/main/java/g0501_0600/s0529_minesweeper/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 0 | 100.00
@@ -3042,7 +3042,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0037 |[Sudoku Solver](src.save/main/java/g0001_0100/s0037_sudoku_solver/Solution.java)| Hard | Array, Matrix, Backtracking | 6 | 88.24
 | 0036 |[Valid Sudoku](src.save/main/java/g0001_0100/s0036_valid_sudoku/Solution.java)| Medium | Top_Interview_Questions, Array, Hash_Table, Matrix, Data_Structure_I_Day_5_Array | 2 | 92.22
 | 0035 |[Search Insert Position](src.save/main/java/g0001_0100/s0035_search_insert_position/Solution.java)| Easy | Top_100_Liked_Questions, Array, Binary_Search, Algorithm_I_Day_1_Binary_Search, Binary_Search_I_Day_2 | 0 | 100.00
-| 0034 |[Find First and Last Position of Element in Sorted Array](src.save/main/java/g0001_0100/s0034_find_first_and_last_position_of_element_in_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Algorithm_II_Day_1_Binary_Search, Binary_Search_I_Day_5 | 1 | 30.87
+| 0034 |[Find First and Last Position of Element in Sorted Array](src.save/main/java/g0001_0100/s0034_find_first_and_last_position_of_element_in_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Algorithm_II_Day_1_Binary_Search, Binary_Search_I_Day_5 | 0 | 100.00
 | 0033 |[Search in Rotated Sorted Array](src.save/main/java/g0001_0100/s0033_search_in_rotated_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Algorithm_II_Day_1_Binary_Search, Binary_Search_I_Day_11 | 0 | 100.00
 | 0032 |[Longest Valid Parentheses](src.save/main/java/g0001_0100/s0032_longest_valid_parentheses/Solution.java)| Hard | Top_100_Liked_Questions, String, Dynamic_Programming, Stack | 2 | 89.17
 | 0031 |[Next Permutation](src.save/main/java/g0001_0100/s0031_next_permutation/Solution.java)| Medium | Top_100_Liked_Questions, Array, Two_Pointers | 1 | 74.73
