@@ -1372,6 +1372,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2181 |[Merge Nodes in Between Zeros](src/main/java/g2101_2200/s2181_merge_nodes_in_between_zeros/Solution.java)| Medium | Simulation, Linked_List | 6 | 96.26
 | 2172 |[Maximum AND Sum of Array](src/main/java/g2101_2200/s2172_maximum_and_sum_of_array/Solution.java)| Hard | Array, Dynamic_Programming, Bit_Manipulation, Bitmask | 21 | 87.50
 | 2166 |[Design Bitset](src/main/java/g2101_2200/s2166_design_bitset/Bitset.java)| Medium | Array, Hash_Table, Design | 81 | 73.38
+| 2165 |[Smallest Value of the Rearranged Number](src/main/java/g2101_2200/s2165_smallest_value_of_the_rearranged_number/Solution.java)| Medium | Math, Sorting | 1 | 100.00
+| 2164 |[Sort Even and Odd Indices Independently](src/main/java/g2101_2200/s2164_sort_even_and_odd_indices_independently/Solution.java)| Easy | Array, Sorting | 2 | 97.22
 | 2162 |[Minimum Cost to Set Cooking Time](src/main/java/g2101_2200/s2162_minimum_cost_to_set_cooking_time/Solution.java)| Medium | Math, Enumeration | 1 | 95.82
 | 2161 |[Partition Array According to Given Pivot](src/main/java/g2101_2200/s2161_partition_array_according_to_given_pivot/Solution.java)| Medium | Array, Two_Pointers, Simulation | 7 | 72.76
 | 2160 |[Minimum Sum of Four Digit Number After Splitting Digits](src/main/java/g2101_2200/s2160_minimum_sum_of_four_digit_number_after_splitting_digits/Solution.java)| Easy | Math, Sorting, Greedy | 1 | 78.31
@@ -1379,6 +1381,10 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2154 |[Keep Multiplying Found Values by Two](src/main/java/g2101_2200/s2154_keep_multiplying_found_values_by_two/Solution.java)| Easy | Array, Hash_Table, Sorting, Simulation | 1 | 93.21
 | 2151 |[Maximum Good People Based on Statements](src/main/java/g2101_2200/s2151_maximum_good_people_based_on_statements/Solution.java)| Hard | Array, Bit_Manipulation, Backtracking, Enumeration | 76 | 47.57
 | 2150 |[Find All Lonely Numbers in the Array](src/main/java/g2101_2200/s2150_find_all_lonely_numbers_in_the_array/Solution.java)| Medium | Array, Hash_Table, Counting | 93 | 70.66
+| 2141 |[Maximum Running Time of N Computers](src/main/java/g2101_2200/s2141_maximum_running_time_of_n_computers/Solution.java)| Hard | Array, Sorting, Greedy, Binary_Search | 24 | 70.39
+| 2140 |[Solving Questions With Brainpower](src/main/java/g2101_2200/s2140_solving_questions_with_brainpower/Solution.java)| Medium | Array, Dynamic_Programming | 5 | 98.77
+| 2139 |[Minimum Moves to Reach Target Score](src/main/java/g2101_2200/s2139_minimum_moves_to_reach_target_score/Solution.java)| Medium | Math, Greedy | 1 | 37.95
+| 2138 |[Divide a String Into Groups of Size k](src/main/java/g2101_2200/s2138_divide_a_string_into_groups_of_size_k/Solution.java)| Easy | String, Simulation | 2 | 70.97
 | 2136 |[Earliest Possible Day of Full Bloom](src/main/java/g2101_2200/s2136_earliest_possible_day_of_full_bloom/Solution.java)| Hard | Array, Sorting, Greedy | 63 | 94.92
 | 2135 |[Count Words Obtained After Adding a Letter](src/main/java/g2101_2200/s2135_count_words_obtained_after_adding_a_letter/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Bit_Manipulation | 67 | 93.08
 | 2134 |[Minimum Swaps to Group All 1's Together II](src/main/java/g2101_2200/s2134_minimum_swaps_to_group_all_1s_together_ii/Solution.java)| Medium | Array, Sliding_Window | 11 | 72.59
