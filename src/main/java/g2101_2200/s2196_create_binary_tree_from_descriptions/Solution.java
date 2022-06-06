@@ -22,7 +22,7 @@ import java.util.Map;
  *     }
  * }
  */
-class Solution {
+public class Solution {
     public TreeNode createBinaryTree(int[][] descriptions) {
         Map<Integer, Data> map = new HashMap<>();
         for (int[] description : descriptions) {
