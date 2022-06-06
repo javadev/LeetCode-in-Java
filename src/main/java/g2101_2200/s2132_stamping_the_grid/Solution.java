@@ -1,6 +1,6 @@
 package g2101_2200.s2132_stamping_the_grid;
 
-// #Hard #Array #Greedy #Matrix #Prefix_Sum #2022_06_04_Time_11_ms_(93.06%)_Space_129.3_MB_(71.53%)
+// #Hard #Array #Greedy #Matrix #Prefix_Sum #2022_06_06_Time_7_ms_(100.00%)_Space_86.8_MB_(81.21%)
 
 public class Solution {
     private boolean canPaved(int[][] grid, int is, int js, int ie, int je) {
@@ -21,33 +21,14 @@ public class Solution {
             int prev = -1;
             for (int j = 0; j < row.length; j++) {
                 if (row[j] == 0) {
-                    if (j == prev + 1 && j > 0 && j + w - 1 < rl) {
-                        if (i > 0
-                                && grid[i - 1][j] == 1
-                                && i + h - 1 < grid.length
-                                && canPaved(grid, i, j, i + h - 1, j + w - 1)) {
-                            return false;
-                        }
-                        if (i + 1 < grid.length
-                                && grid[i + 1][j] == 1
-                                && i - h + 1 >= 0
-                                && canPaved(grid, i - h + 1, j, i, j + w - 1)) {
-                            return false;
-                        }
-                    }
-                    if (j + 1 < rl && row[j + 1] == 1 && j - w + 1 >= 0) {
-                        if (i > 0
-                                && grid[i - 1][j] == 1
-                                && i + h - 1 < grid.length
-                                && canPaved(grid, i, j - w + 1, i + h - 1, j)) {
-                            return false;
-                        }
-                        if (i + 1 < grid.length
-                                && grid[i + 1][j] == 1
-                                && i - h + 1 >= 0
-                                && canPaved(grid, i - h + 1, j - w + 1, i, j)) {
-                            return false;
-                        }
+                    if (j + 1 < rl
+                            && row[j + 1] == 1
+                            && j - w + 1 >= 0
+                            && i + 1 < grid.length
+                            && grid[i + 1][j] == 1
+                            && i - h + 1 >= 0
+                            && canPaved(grid, i - h + 1, j - w + 1, i, j)) {
+                        return false;
                     }
                     continue;
                 }
