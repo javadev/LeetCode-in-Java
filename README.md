@@ -1367,6 +1367,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 |------|----------------|-------------|-------------|----------|---------
 | 2246 |[Longest Path With Different Adjacent Characters](src/main/java/g2201_2300/s2246_longest_path_with_different_adjacent_characters/Solution.java)| Hard | Array, String, Depth_First_Search, Tree, Graph, Topological_Sort | 75 | 97.79
 | 2200 |[Find All K-Distant Indices in an Array](src/main/java/g2101_2200/s2200_find_all_k_distant_indices_in_an_array/Solution.java)| Easy | Array | 2 | 95.30
+| 2195 |[Append K Integers With Minimal Sum](src/main/java/g2101_2200/s2195_append_k_integers_with_minimal_sum/Solution.java)| Medium | Array, Math, Sorting, Greedy | 19 | 96.88
+| 2194 |[Cells in a Range on an Excel Sheet](src/main/java/g2101_2200/s2194_cells_in_a_range_on_an_excel_sheet/Solution.java)| Easy | String | 1 | 99.92
 | 2193 |[Minimum Number of Moves to Make Palindrome](src/main/java/g2101_2200/s2193_minimum_number_of_moves_to_make_palindrome/Solution.java)| Hard | String, Greedy, Two_Pointers, Binary_Indexed_Tree | 8 | 98.76
 | 2187 |[Minimum Time to Complete Trips](src/main/java/g2101_2200/s2187_minimum_time_to_complete_trips/Solution.java)| Medium | Array, Binary_Search | 187 | 95.03
 | 2181 |[Merge Nodes in Between Zeros](src/main/java/g2101_2200/s2181_merge_nodes_in_between_zeros/Solution.java)| Medium | Simulation, Linked_List | 6 | 96.26
