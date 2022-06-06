@@ -1372,6 +1372,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2195 |[Append K Integers With Minimal Sum](src/main/java/g2101_2200/s2195_append_k_integers_with_minimal_sum/Solution.java)| Medium | Array, Math, Sorting, Greedy | 19 | 96.88
 | 2194 |[Cells in a Range on an Excel Sheet](src/main/java/g2101_2200/s2194_cells_in_a_range_on_an_excel_sheet/Solution.java)| Easy | String | 1 | 99.92
 | 2193 |[Minimum Number of Moves to Make Palindrome](src/main/java/g2101_2200/s2193_minimum_number_of_moves_to_make_palindrome/Solution.java)| Hard | String, Greedy, Two_Pointers, Binary_Indexed_Tree | 8 | 98.76
+| 2188 |[Minimum Time to Finish the Race](src/main/java/g2101_2200/s2188_minimum_time_to_finish_the_race/Solution.java)| Hard | Array, Dynamic_Programming | 15 | 93.69
 | 2187 |[Minimum Time to Complete Trips](src/main/java/g2101_2200/s2187_minimum_time_to_complete_trips/Solution.java)| Medium | Array, Binary_Search | 187 | 95.03
 | 2181 |[Merge Nodes in Between Zeros](src/main/java/g2101_2200/s2181_merge_nodes_in_between_zeros/Solution.java)| Medium | Simulation, Linked_List | 6 | 96.26
 | 2177 |[Find Three Consecutive Integers That Sum to a Given Number](src/main/java/g2101_2200/s2177_find_three_consecutive_integers_that_sum_to_a_given_number/Solution.java)| Medium | Math, Simulation | 1 | 78.46
