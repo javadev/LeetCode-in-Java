@@ -28,7 +28,9 @@ Lap 3: Change tires to a new tire 0 for 5 seconds and then finish the lap in ano
 
 Lap 4: Continue with tire 0 and finish the lap in 2 \* 3 = 6 seconds.
 
-Total time = 2 + 6 + 5 + 2 + 6 = 21 seconds. The minimum time to complete the race is 21 seconds. 
+Total time = 2 + 6 + 5 + 2 + 6 = 21 seconds.
+
+The minimum time to complete the race is 21 seconds. 
 
 **Example 2:**
 
