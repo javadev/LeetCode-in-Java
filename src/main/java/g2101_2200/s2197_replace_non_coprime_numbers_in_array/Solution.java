@@ -5,6 +5,7 @@ package g2101_2200.s2197_replace_non_coprime_numbers_in_array;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S2234")
 public class Solution {
     public List<Integer> replaceNonCoprimes(int[] nums) {
         ArrayList<Integer> res = new ArrayList<>();
@@ -22,7 +23,7 @@ public class Solution {
             int gcd = gcd(first, second);
             if (gcd > 1) {
                 long lcm = ((long) first * (long) second) / gcd;
-                if (res.size() > 0) {
+                if (!res.isEmpty()) {
                     res.remove(res.size() - 1);
                 }
                 res.add((int) lcm);
