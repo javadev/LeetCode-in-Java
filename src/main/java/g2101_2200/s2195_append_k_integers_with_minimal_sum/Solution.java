@@ -18,7 +18,7 @@ public class Solution {
                 n++;
             }
         }
-        long t = n + k;
+        long t = n + (long) k;
         return (1 + t) * t / 2 - sum;
     }
 }
