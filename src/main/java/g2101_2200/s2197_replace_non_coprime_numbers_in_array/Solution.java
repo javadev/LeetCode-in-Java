@@ -1,6 +1,6 @@
 package g2101_2200.s2197_replace_non_coprime_numbers_in_array;
 
-// #Hard #Array #Math #Stack #Number_Theory #2022_06_06_Time_94_ms_(61.99%)_Space_175.3_MB_(5.43%)
+// #Hard #Array #Math #Stack #Number_Theory #2022_06_06_Time_60_ms_(85.52%)_Space_88.9_MB_(80.09%)
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,12 +9,6 @@ import java.util.List;
 public class Solution {
     public List<Integer> replaceNonCoprimes(int[] nums) {
         ArrayList<Integer> res = new ArrayList<>();
-        if (nums.length < 2 || (nums.length == 2 && gcd(nums[0], nums[1]) == 1)) {
-            for (int ele : nums) {
-                res.add(ele);
-            }
-            return res;
-        }
         int i = 1;
         res.add(nums[0]);
         while (i < nums.length) {
