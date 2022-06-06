@@ -154,7 +154,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0075 |[Sort Colors](src.save/main/java/g0001_0100/s0075_sort_colors/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Two_Pointers | 1 | 33.23
-| 0056 |[Merge Intervals](src.save/main/java/g0001_0100/s0056_merge_intervals/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting | 22 | 12.57
+| 0056 |[Merge Intervals](src.save/main/java/g0001_0100/s0056_merge_intervals/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting | 7 | 97.44
 | 0706 |[Design HashMap](src.save/main/java/g0701_0800/s0706_design_hashmap/MyHashMap.java)| Easy | Array, Hash_Table, Design, Linked_List, Hash_Function | 13 | 95.71
 
 #### Day 3 Array
@@ -3030,7 +3030,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0059 |[Spiral Matrix II](src.save/main/java/g0001_0100/s0059_spiral_matrix_ii/Solution.java)| Medium | Array, Matrix, Simulation, Data_Structure_II_Day_3_Array | 0 | 100.00
 | 0058 |[Length of Last Word](src.save/main/java/g0001_0100/s0058_length_of_last_word/Solution.java)| Easy | String, Programming_Skills_II_Day_6 | 0 | 100.00
 | 0057 |[Insert Interval](src.save/main/java/g0001_0100/s0057_insert_interval/Solution.java)| Medium | Array | 1 | 99.15
-| 0056 |[Merge Intervals](src.save/main/java/g0001_0100/s0056_merge_intervals/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Data_Structure_II_Day_2_Array | 22 | 12.57
+| 0056 |[Merge Intervals](src.save/main/java/g0001_0100/s0056_merge_intervals/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Data_Structure_II_Day_2_Array | 7 | 97.44
 | 0055 |[Jump Game](src.save/main/java/g0001_0100/s0055_jump_game/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Greedy, Algorithm_II_Day_12_Dynamic_Programming, Dynamic_Programming_I_Day_4 | 2 | 87.28
 | 0054 |[Spiral Matrix](src.save/main/java/g0001_0100/s0054_spiral_matrix/Solution.java)| Medium | Top_Interview_Questions, Array, Matrix, Simulation, Programming_Skills_II_Day_8 | 0 | 100.00
 | 0053 |[Maximum Subarray](src.save/main/java/g0001_0100/s0053_maximum_subarray/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Divide_and_Conquer, Data_Structure_I_Day_1_Array, Dynamic_Programming_I_Day_5 | 1 | 100.00
