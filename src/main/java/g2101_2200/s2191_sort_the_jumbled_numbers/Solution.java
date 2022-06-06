@@ -35,13 +35,14 @@ public class Solution {
             RealNum realNum = new RealNum(mapping, num, i);
             realNums.add(realNum);
         }
-        realNums.sort((a, b) -> {
-            int retval = a.real - b.real;
-            if (retval != 0) {
-                return retval;
-            }
-            return a.index - b.index;
-        });
+        realNums.sort(
+                (a, b) -> {
+                    int retval = a.real - b.real;
+                    if (retval != 0) {
+                        return retval;
+                    }
+                    return a.index - b.index;
+                });
         int[] retval = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
             retval[i] = realNums.get(i).orig;
