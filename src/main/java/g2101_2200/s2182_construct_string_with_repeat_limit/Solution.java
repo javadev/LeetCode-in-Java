@@ -12,8 +12,12 @@ public class Solution {
         for (char c : s.toCharArray()) {
             freq[c]++;
         }
-        for (char max = 'z', second = 'y'; ; ) {
-            while (max >= 'a' && freq[max] == 0) max--;
+        char max = 'z';
+        char second = 'y';
+        while (true) {
+            while (max >= 'a' && freq[max] == 0) {
+                max--;
+            }
             if (max < 'a') {
                 break;
             }
