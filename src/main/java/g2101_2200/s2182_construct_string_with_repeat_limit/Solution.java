@@ -37,7 +37,8 @@ public class Solution {
             if (second < 'a') {
                 break;
             }
-            --freq[result[index++] = second];
+            result[index++] = second;
+            freq[second]--;
         }
         return new String(result, 0, index);
     }
