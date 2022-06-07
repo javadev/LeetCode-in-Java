@@ -23,7 +23,7 @@ public class Solution {
         return count;
     }
 
-    public int gcd(int a, int b) {
+    private int gcd(int a, int b) {
         if (a > b) {
             return gcd(b, a);
         }
