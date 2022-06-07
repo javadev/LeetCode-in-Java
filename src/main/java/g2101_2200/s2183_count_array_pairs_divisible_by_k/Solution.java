@@ -5,6 +5,7 @@ package g2101_2200.s2183_count_array_pairs_divisible_by_k;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("java:S2234")
 public class Solution {
     public long countPairs(int[] nums, int k) {
         long count = 0L;
