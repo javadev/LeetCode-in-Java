@@ -6,7 +6,8 @@ public class Solution {
     public int countElements(int[] a) {
         int min = a[0];
         int max = a[0];
-        int minocr = 1, maxocr = 1;
+        int minocr = 1;
+        int maxocr = 1;
         for (int i = 1; i < a.length; ++i) {
             {
                 if (a[i] < min) {

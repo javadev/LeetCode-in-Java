@@ -3,7 +3,10 @@ package g2101_2200.s2146_k_highest_ranked_items_within_a_price_range;
 // #Medium #Array #Sorting #Breadth_First_Search #Matrix #Heap_Priority_Queue
 // #2022_06_07_Time_81_ms_(88.84%)_Space_65.7_MB_(99.30%)
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 public class Solution {
     static class Item {
@@ -60,8 +63,7 @@ public class Solution {
                 }
             }
         }
-        Collections.sort(
-                items,
+        items.sort(
                 (a, b) -> {
                     int distDiff = a.dist - b.dist;
                     if (distDiff == 0) {
@@ -78,7 +80,7 @@ public class Solution {
                     return distDiff;
                 });
         List<List<Integer>> ans = new LinkedList<>();
-        while (k-- > 0 && items.size() > 0) {
+        while (k-- > 0 && !items.isEmpty()) {
             Item item = items.poll();
             ans.add(Arrays.asList(item.row, item.col));
         }
