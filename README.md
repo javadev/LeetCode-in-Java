@@ -1377,6 +1377,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2190 |[Most Frequent Number Following Key In an Array](src/main/java/g2101_2200/s2190_most_frequent_number_following_key_in_an_array/Solution.java)| Easy | Array, Hash_Table, Counting | 1 | 100.00
 | 2188 |[Minimum Time to Finish the Race](src/main/java/g2101_2200/s2188_minimum_time_to_finish_the_race/Solution.java)| Hard | Array, Dynamic_Programming | 15 | 93.69
 | 2187 |[Minimum Time to Complete Trips](src/main/java/g2101_2200/s2187_minimum_time_to_complete_trips/Solution.java)| Medium | Array, Binary_Search | 187 | 95.03
+| 2183 |[Count Array Pairs Divisible by K](src/main/java/g2101_2200/s2183_count_array_pairs_divisible_by_k/Solution.java)| Hard | Array, Math, Number_Theory | 849 | 44.54
+| 2182 |[Construct String With Repeat Limit](src/main/java/g2101_2200/s2182_construct_string_with_repeat_limit/Solution.java)| Medium | String, Greedy, Heap_Priority_Queue, Counting | 26 | 96.11
 | 2181 |[Merge Nodes in Between Zeros](src/main/java/g2101_2200/s2181_merge_nodes_in_between_zeros/Solution.java)| Medium | Simulation, Linked_List | 6 | 96.26
 | 2177 |[Find Three Consecutive Integers That Sum to a Given Number](src/main/java/g2101_2200/s2177_find_three_consecutive_integers_that_sum_to_a_given_number/Solution.java)| Medium | Math, Simulation | 1 | 78.46
 | 2176 |[Count Equal and Divisible Pairs in an Array](src/main/java/g2101_2200/s2176_count_equal_and_divisible_pairs_in_an_array/Solution.java)| Easy | Array | 4 | 78.29
