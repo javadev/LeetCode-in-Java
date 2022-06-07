@@ -20,4 +20,9 @@ class SolutionTest {
     void numberOfArrays3() {
         assertThat(new Solution().numberOfArrays(new int[] {4, -7, 2}, 3, 6), equalTo(0));
     }
+
+    @Test
+    void numberOfArrays4() {
+        assertThat(new Solution().numberOfArrays(new int[] {4, -7, 2}, 3, 3), equalTo(0));
+    }
 }
