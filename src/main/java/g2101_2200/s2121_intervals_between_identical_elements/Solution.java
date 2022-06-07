@@ -9,16 +9,16 @@ import java.util.List;
 import java.util.Map;
 
 public class Solution {
-    public long[] getDistances(int[] a) {
-        int n = a.length;
+    public long[] getDistances(int[] arr) {
+        int n = arr.length;
         Map<Integer, List<Integer>> map = new HashMap<>();
         for (int i = 0; i < n; i++) {
-            List<Integer> list = map.get(a[i]);
+            List<Integer> list = map.get(arr[i]);
             if (list == null) {
                 list = new ArrayList<>();
             }
             list.add(i);
-            map.put(a[i], list);
+            map.put(arr[i], list);
         }
         long[] ans = new long[n];
         Arrays.fill(ans, 0);
