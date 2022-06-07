@@ -9,23 +9,19 @@ public class Solution {
         int minocr = 1;
         int maxocr = 1;
         for (int i = 1; i < a.length; ++i) {
-            {
-                if (a[i] < min) {
-                    min = a[i];
-                    minocr = 1;
-                } else if (a[i] == min) {
-                    minocr++;
-                }
+            if (a[i] < min) {
+                min = a[i];
+                minocr = 1;
+            } else if (a[i] == min) {
+                minocr++;
             }
-            {
-                if (a[i] > max) {
-                    max = a[i];
-                    maxocr = 1;
-                } else if (a[i] == max) {
-                    maxocr++;
-                }
+            if (a[i] > max) {
+                max = a[i];
+                maxocr = 1;
+            } else if (a[i] == max) {
+                maxocr++;
             }
         }
-        return (min == max) ? 0 : a.length - minocr - maxocr;
+        return min == max ? 0 : a.length - minocr - maxocr;
     }
 }
