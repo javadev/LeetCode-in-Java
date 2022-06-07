@@ -15,4 +15,9 @@ class SolutionTest {
     void minCostSetTime2() {
         assertThat(new Solution().minCostSetTime(0, 1, 2, 76), equalTo(6));
     }
+
+    @Test
+    void minCostSetTime3() {
+        assertThat(new Solution().minCostSetTime(0, 9, 18, 460), equalTo(81));
+    }
 }
