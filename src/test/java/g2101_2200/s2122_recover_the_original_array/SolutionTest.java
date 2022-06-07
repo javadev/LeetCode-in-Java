@@ -22,4 +22,11 @@ class SolutionTest {
     void recoverArray3() {
         assertThat(new Solution().recoverArray(new int[] {5, 435}), equalTo(new int[] {220}));
     }
+
+    @Test
+    void recoverArray4() {
+        assertThat(
+                new Solution().recoverArray(new int[] {1, 50, 99, 101, 150, 199}),
+                equalTo(new int[] {51, 100, 149}));
+    }
 }
