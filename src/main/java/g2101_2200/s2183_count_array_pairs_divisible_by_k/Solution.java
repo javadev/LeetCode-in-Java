@@ -7,15 +7,14 @@ import java.util.Map;
 
 public class Solution {
     public long countPairs(int[] nums, int k) {
-        int n = nums.length;
         long count = 0L;
         Map<Integer, Long> map = new HashMap<>();
         for (int num : nums) {
             int gd = gcd(num, k);
             int want = k / gd;
-            for (int p : map.keySet()) {
-                if (p % want == 0) {
-                    count += map.get(p);
+            for (Map.Entry<Integer, Long> entry : map.entrySet()) {
+                if (entry.getKey() % want == 0) {
+                    count += entry.getValue();
                 }
             }
             map.put(gd, map.getOrDefault(gd, 0L) + 1L);
