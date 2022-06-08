@@ -8,11 +8,11 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void minimumDifference() {
-        assertThat(new Solution().minimumDifference(new int[] {3, 1, 2}), equalTo(-1));
+        assertThat(new Solution().minimumDifference(new int[] {3, 1, 2}), equalTo(-1L));
     }
 
     @Test
     void minimumDifference2() {
-        assertThat(new Solution().minimumDifference(new int[] {7, 9, 5, 8, 1, 3}), equalTo(1));
+        assertThat(new Solution().minimumDifference(new int[] {7, 9, 5, 8, 1, 3}), equalTo(1L));
     }
 }
