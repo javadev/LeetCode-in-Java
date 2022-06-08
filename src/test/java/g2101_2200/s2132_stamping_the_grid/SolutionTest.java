@@ -74,4 +74,10 @@ class SolutionTest {
         assertThat(
                 new Solution().possibleToStamp(new int[][] {{0, 1}, {0, 0}}, 2, 2), equalTo(false));
     }
+
+    @Test
+    void possibleToStamp7() {
+        assertThat(
+                new Solution().possibleToStamp(new int[][] {{1, 1, 0, 0}}, 1, 3), equalTo(false));
+    }
 }
