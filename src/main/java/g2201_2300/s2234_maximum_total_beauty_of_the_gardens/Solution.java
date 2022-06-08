@@ -14,7 +14,8 @@ public class Solution {
             prefix[i + 1] = prefix[i] + Math.min(flowers[i], target);
         }
         long res = 0;
-        for (int c = 0, i = n - 1; c <= n; ++c) {
+        int i = n - 1;
+        for (int c = 0; c <= n; ++c) {
             long remain = prefix[n] - prefix[n - c] + newFlowers - c * (long) target;
             long min = 0;
             if (0 > remain) {
@@ -28,12 +29,12 @@ public class Solution {
             }
             if (0 <= i) {
                 long dif = flowers[i] * (long) (i + 1) - prefix[i + 1];
-                min = Math.min(target - 1, flowers[i] + (remain - dif) / (i + 1));
+                min = Math.min(target - 1L, flowers[i] + (remain - dif) / (i + 1));
                 if (i + 1 < n - c) {
                     min = Math.min(min, flowers[i + 1]);
                 }
             }
-            res = Math.max(res, c * (long) full + min * (long) partial);
+            res = Math.max(res, c * (long) full + min * partial);
         }
         return res;
     }
