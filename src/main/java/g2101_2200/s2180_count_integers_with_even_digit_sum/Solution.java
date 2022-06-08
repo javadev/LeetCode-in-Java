@@ -5,9 +5,8 @@ package g2101_2200.s2180_count_integers_with_even_digit_sum;
 public class Solution {
     public int countEven(int n) {
         if (n % 2 == 1) {
-            return n/2;
-        }
-        else {
+            return n / 2;
+        } else {
             int ans = 0;
             int num = n;
             while (num != 0) {
@@ -15,10 +14,9 @@ public class Solution {
                 num /= 10;
             }
             if (ans % 2 == 0) {
-                return n/2;
-            }
-            else {
-                return n/2 - 1;
+                return n / 2;
+            } else {
+                return n / 2 - 1;
             }
         }
     }
