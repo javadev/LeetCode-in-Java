@@ -20,17 +20,17 @@ public class Solution {
         for (Integer key : map.keySet()) {
             keyset.add(key);
         }
-        int total_groups = 0;
-        int max_size = 0;
+        int totalGroups = 0;
+        int maxSize = 0;
         for (Integer key : keyset) {
             if (!map.containsKey(key)) {
                 continue;
             }
-            total_groups++;
+            totalGroups++;
             int size = dfs(key, map);
-            max_size = Math.max(size, max_size);
+            maxSize = Math.max(size, maxSize);
         }
-        return new int[] {total_groups, max_size};
+        return new int[] {totalGroups, maxSize};
     }
 
     private int dfs(Integer key, HashMap<Integer, Integer> map) {

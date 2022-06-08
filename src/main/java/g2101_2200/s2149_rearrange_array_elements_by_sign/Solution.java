@@ -7,7 +7,9 @@ public class Solution {
         int[] negatives = new int[nums.length / 2];
         int[] positives = new int[nums.length / 2];
         int[] result = new int[nums.length];
-        int pPtr = 0, nPtr = 0, rPtr = 0;
+        int pPtr = 0;
+        int nPtr = 0;
+        int rPtr = 0;
 
         for (int num : nums) {
             if (num > 0) {
