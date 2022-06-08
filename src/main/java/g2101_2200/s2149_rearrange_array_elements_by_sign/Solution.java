@@ -10,7 +10,6 @@ public class Solution {
         int pPtr = 0;
         int nPtr = 0;
         int rPtr = 0;
-
         for (int num : nums) {
             if (num > 0) {
                 positives[pPtr++] = num;
@@ -18,7 +17,6 @@ public class Solution {
                 negatives[nPtr++] = num;
             }
         }
-
         pPtr = 0;
         nPtr = 0;
         while (pPtr < positives.length && nPtr < negatives.length) {
