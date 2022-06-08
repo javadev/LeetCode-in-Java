@@ -12,7 +12,9 @@ The **digit sum** of a positive integer is the sum of all its digits.
 
 **Output:** 2
 
-**Explanation:** The only integers less than or equal to 4 whose digit sums are even are 2 and 4.
+**Explanation:** 
+
+The only integers less than or equal to 4 whose digit sums are even are 2 and 4.
 
 **Example 2:**
 
@@ -20,7 +22,11 @@ The **digit sum** of a positive integer is the sum of all its digits.
 
 **Output:** 14
 
-**Explanation:** The 14 integers less than or equal to 30 whose digit sums are even are 2, 4, 6, 8, 11, 13, 15, 17, 19, 20, 22, 24, 26, and 28.
+**Explanation:** 
+
+The 14 integers less than or equal to 30 whose digit sums are even are 
+
+2, 4, 6, 8, 11, 13, 15, 17, 19, 20, 22, 24, 26, and 28.
 
 **Constraints:**
 
