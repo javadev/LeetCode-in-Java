@@ -1417,7 +1417,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2130 |[Maximum Twin Sum of a Linked List](src/main/java/g2101_2200/s2130_maximum_twin_sum_of_a_linked_list/Solution.java)| Medium | Two_Pointers, Stack, Linked_List | 9 | 57.92
 | 2129 |[Capitalize the Title](src/main/java/g2101_2200/s2129_capitalize_the_title/Solution.java)| Easy | String | 2 | 94.22
 | 2127 |[Maximum Employees to Be Invited to a Meeting](src/main/java/g2101_2200/s2127_maximum_employees_to_be_invited_to_a_meeting/Solution.java)| Hard | Depth_First_Search, Graph, Topological_Sort | 37 | 85.71
-| 2126 |[Destroying Asteroids](src/main/java/g2101_2200/s2126_destroying_asteroids/Solution.java)| Medium | Array, Sorting, Greedy | 25 | 83.82
+| 2126 |[Destroying Asteroids](src/main/java/g2101_2200/s2126_destroying_asteroids/Solution.java)| Medium | Array, Sorting, Greedy | 6 | 99.27
 | 2125 |[Number of Laser Beams in a Bank](src/main/java/g2101_2200/s2125_number_of_laser_beams_in_a_bank/Solution.java)| Medium | Array, String, Math, Matrix | 19 | 76.00
 | 2124 |[Check if All A's Appears Before All B's](src/main/java/g2101_2200/s2124_check_if_all_as_appears_before_all_bs/Solution.java)| Easy | String | 1 | 73.82
 | 2122 |[Recover the Original Array](src/main/java/g2101_2200/s2122_recover_the_original_array/Solution.java)| Hard | Array, Hash_Table, Sorting, Enumeration | 19 | 89.04
