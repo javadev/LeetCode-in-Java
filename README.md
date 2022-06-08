@@ -1389,16 +1389,21 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2176 |[Count Equal and Divisible Pairs in an Array](src/main/java/g2101_2200/s2176_count_equal_and_divisible_pairs_in_an_array/Solution.java)| Easy | Array | 4 | 78.29
 | 2172 |[Maximum AND Sum of Array](src/main/java/g2101_2200/s2172_maximum_and_sum_of_array/Solution.java)| Hard | Array, Dynamic_Programming, Bit_Manipulation, Bitmask | 21 | 87.50
 | 2169 |[Count Operations to Obtain Zero](src/main/java/g2101_2200/s2169_count_operations_to_obtain_zero/Solution.java)| Easy | Math, Simulation | 0 | 100.00
+| 2167 |[Minimum Time to Remove All Cars Containing Illegal Goods](src/main/java/g2101_2200/s2167_minimum_time_to_remove_all_cars_containing_illegal_goods/Solution.java)| Hard | String, Dynamic_Programming | 46 | 61.00
 | 2166 |[Design Bitset](src/main/java/g2101_2200/s2166_design_bitset/Bitset.java)| Medium | Array, Hash_Table, Design | 81 | 73.38
 | 2165 |[Smallest Value of the Rearranged Number](src/main/java/g2101_2200/s2165_smallest_value_of_the_rearranged_number/Solution.java)| Medium | Math, Sorting | 1 | 100.00
 | 2164 |[Sort Even and Odd Indices Independently](src/main/java/g2101_2200/s2164_sort_even_and_odd_indices_independently/Solution.java)| Easy | Array, Sorting | 2 | 97.22
+| 2163 |[Minimum Difference in Sums After Removal of Elements](src/main/java/g2101_2200/s2163_minimum_difference_in_sums_after_removal_of_elements/Solution.java)| Hard | Array, Dynamic_Programming, Heap_Priority_Queue | 298 | 57.14
 | 2162 |[Minimum Cost to Set Cooking Time](src/main/java/g2101_2200/s2162_minimum_cost_to_set_cooking_time/Solution.java)| Medium | Math, Enumeration | 1 | 95.82
 | 2161 |[Partition Array According to Given Pivot](src/main/java/g2101_2200/s2161_partition_array_according_to_given_pivot/Solution.java)| Medium | Array, Two_Pointers, Simulation | 7 | 72.76
 | 2160 |[Minimum Sum of Four Digit Number After Splitting Digits](src/main/java/g2101_2200/s2160_minimum_sum_of_four_digit_number_after_splitting_digits/Solution.java)| Easy | Math, Sorting, Greedy | 1 | 78.31
+| 2157 |[Groups of Strings](src/main/java/g2101_2200/s2157_groups_of_strings/Solution.java)| Hard | String, Bit_Manipulation, Union_Find | 451 | 93.86
+| 2156 |[Find Substring With Given Hash Value](src/main/java/g2101_2200/s2156_find_substring_with_given_hash_value/Solution.java)| Hard | String, Sliding_Window, Hash_Function, Rolling_Hash | 37 | 36.57
 | 2155 |[All Divisions With the Highest Score of a Binary Array](src/main/java/g2101_2200/s2155_all_divisions_with_the_highest_score_of_a_binary_array/Solution.java)| Medium | Array | 18 | 98.41
 | 2154 |[Keep Multiplying Found Values by Two](src/main/java/g2101_2200/s2154_keep_multiplying_found_values_by_two/Solution.java)| Easy | Array, Hash_Table, Sorting, Simulation | 1 | 93.21
 | 2151 |[Maximum Good People Based on Statements](src/main/java/g2101_2200/s2151_maximum_good_people_based_on_statements/Solution.java)| Hard | Array, Bit_Manipulation, Backtracking, Enumeration | 76 | 47.57
 | 2150 |[Find All Lonely Numbers in the Array](src/main/java/g2101_2200/s2150_find_all_lonely_numbers_in_the_array/Solution.java)| Medium | Array, Hash_Table, Counting | 93 | 70.66
+| 2149 |[Rearrange Array Elements by Sign](src/main/java/g2101_2200/s2149_rearrange_array_elements_by_sign/Solution.java)| Medium | Array, Two_Pointers, Simulation | 10 | 34.66
 | 2148 |[Count Elements With Strictly Smaller and Greater Elements](src/main/java/g2101_2200/s2148_count_elements_with_strictly_smaller_and_greater_elements/Solution.java)| Easy | Array, Sorting | 0 | 100.00
 | 2147 |[Number of Ways to Divide a Long Corridor](src/main/java/g2101_2200/s2147_number_of_ways_to_divide_a_long_corridor/Solution.java)| Hard | String, Dynamic_Programming, Math | 54 | 62.96
 | 2146 |[K Highest Ranked Items Within a Price Range](src/main/java/g2101_2200/s2146_k_highest_ranked_items_within_a_price_range/Solution.java)| Medium | Array, Sorting, Breadth_First_Search, Matrix, Heap_Priority_Queue | 81 | 88.84
