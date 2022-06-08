@@ -15,4 +15,9 @@ class SolutionTest {
     void countEven2() {
         assertThat(new Solution().countEven(30), equalTo(14));
     }
+
+    @Test
+    void countEven3() {
+        assertThat(new Solution().countEven(11), equalTo(5));
+    }
 }
