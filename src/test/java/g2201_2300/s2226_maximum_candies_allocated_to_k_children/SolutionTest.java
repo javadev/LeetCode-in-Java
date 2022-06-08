@@ -15,4 +15,9 @@ class SolutionTest {
     void maximumCandies2() {
         assertThat(new Solution().maximumCandies(new int[] {2, 5}, 11), equalTo(0));
     }
+
+    @Test
+    void maximumCandies3() {
+        assertThat(new Solution().maximumCandies(new int[] {1, 2, 3, 4, 10}, 5), equalTo(3));
+    }
 }
