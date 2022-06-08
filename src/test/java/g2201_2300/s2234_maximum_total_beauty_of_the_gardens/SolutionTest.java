@@ -8,11 +8,11 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void maximumBeauty() {
-        assertThat(new Solution().maximumBeauty(new int[] {1, 3, 1, 1}, 7, 6, 12, 1), equalTo(14));
+        assertThat(new Solution().maximumBeauty(new int[] {1, 3, 1, 1}, 7, 6, 12, 1), equalTo(14L));
     }
 
     @Test
     void maximumBeauty2() {
-        assertThat(new Solution().maximumBeauty(new int[] {2, 4, 5, 3}, 10, 5, 2, 6), equalTo(30));
+        assertThat(new Solution().maximumBeauty(new int[] {2, 4, 5, 3}, 10, 5, 2, 6), equalTo(30L));
     }
 }
