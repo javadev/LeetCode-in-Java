@@ -25,7 +25,7 @@ public class Solution {
         int length = asteroids.length;
         int smallOrEqualIndex = startIndex - 1;
         for (int i = startIndex; i < length; ++i) {
-            if (asteroids[i] <= mass && i != smallOrEqualIndex) {
+            if (asteroids[i] <= mass) {
                 smallOrEqualIndex++;
                 swap(asteroids, i, smallOrEqualIndex);
             }
