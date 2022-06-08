@@ -1368,6 +1368,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2246 |[Longest Path With Different Adjacent Characters](src/main/java/g2201_2300/s2246_longest_path_with_different_adjacent_characters/Solution.java)| Hard | Array, String, Depth_First_Search, Tree, Graph, Topological_Sort | 75 | 97.79
 | 2241 |[Design an ATM Machine](src/main/java/g2201_2300/s2241_design_an_atm_machine/ATM.java)| Medium | Array, Greedy, Design | 192 | 24.16
 | 2234 |[Maximum Total Beauty of the Gardens](src/main/java/g2201_2300/s2234_maximum_total_beauty_of_the_gardens/Solution.java)| Hard | Array, Sorting, Greedy, Binary_Search, Two_Pointers | 63 | 73.03
+| 2226 |[Maximum Candies Allocated to K Children](src/main/java/g2201_2300/s2226_maximum_candies_allocated_to_k_children/Solution.java)| Medium | Array, Binary_Search | 46 | 78.19
 | 2200 |[Find All K-Distant Indices in an Array](src/main/java/g2101_2200/s2200_find_all_k_distant_indices_in_an_array/Solution.java)| Easy | Array | 2 | 95.30
 | 2197 |[Replace Non-Coprime Numbers in Array](src/main/java/g2101_2200/s2197_replace_non_coprime_numbers_in_array/Solution.java)| Hard | Array, Math, Stack, Number_Theory | 60 | 85.52
 | 2196 |[Create Binary Tree From Descriptions](src/main/java/g2101_2200/s2196_create_binary_tree_from_descriptions/Solution.java)| Medium | Array, Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 85 | 76.70
