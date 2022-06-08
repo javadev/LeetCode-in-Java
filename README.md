@@ -1377,6 +1377,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2190 |[Most Frequent Number Following Key In an Array](src/main/java/g2101_2200/s2190_most_frequent_number_following_key_in_an_array/Solution.java)| Easy | Array, Hash_Table, Counting | 1 | 100.00
 | 2188 |[Minimum Time to Finish the Race](src/main/java/g2101_2200/s2188_minimum_time_to_finish_the_race/Solution.java)| Hard | Array, Dynamic_Programming | 15 | 93.69
 | 2187 |[Minimum Time to Complete Trips](src/main/java/g2101_2200/s2187_minimum_time_to_complete_trips/Solution.java)| Medium | Array, Binary_Search | 187 | 95.03
+| 2186 |[Minimum Number of Steps to Make Two Strings Anagram II](src/main/java/g2101_2200/s2186_minimum_number_of_steps_to_make_two_strings_anagram_ii/Solution.java)| Medium | String, Hash_Table, Counting | 22 | 77.11
+| 2185 |[Counting Words With a Given Prefix](src/main/java/g2101_2200/s2185_counting_words_with_a_given_prefix/Solution.java)| Easy | Array, String | 0 | 100.00
 | 2183 |[Count Array Pairs Divisible by K](src/main/java/g2101_2200/s2183_count_array_pairs_divisible_by_k/Solution.java)| Hard | Array, Math, Number_Theory | 849 | 44.54
 | 2182 |[Construct String With Repeat Limit](src/main/java/g2101_2200/s2182_construct_string_with_repeat_limit/Solution.java)| Medium | String, Greedy, Heap_Priority_Queue, Counting | 26 | 96.11
 | 2181 |[Merge Nodes in Between Zeros](src/main/java/g2101_2200/s2181_merge_nodes_in_between_zeros/Solution.java)| Medium | Simulation, Linked_List | 6 | 96.26
