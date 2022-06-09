@@ -1369,6 +1369,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2241 |[Design an ATM Machine](src/main/java/g2201_2300/s2241_design_an_atm_machine/ATM.java)| Medium | Array, Greedy, Design | 192 | 24.16
 | 2234 |[Maximum Total Beauty of the Gardens](src/main/java/g2201_2300/s2234_maximum_total_beauty_of_the_gardens/Solution.java)| Hard | Array, Sorting, Greedy, Binary_Search, Two_Pointers | 63 | 73.03
 | 2226 |[Maximum Candies Allocated to K Children](src/main/java/g2201_2300/s2226_maximum_candies_allocated_to_k_children/Solution.java)| Medium | Array, Binary_Search | 46 | 78.19
+| 2221 |[Find Triangular Sum of an Array](src/main/java/g2201_2300/s2221_find_triangular_sum_of_an_array/Solution.java)| Medium | Array, Math, Simulation, Combinatorics | 78 | 83.64
+| 2215 |[Find the Difference of Two Arrays](src/main/java/g2201_2300/s2215_find_the_difference_of_two_arrays/Solution.java)| Easy | Array, Hash_Table | 11 | 87.39
 | 2200 |[Find All K-Distant Indices in an Array](src.save/main/java/g2101_2200/s2200_find_all_k_distant_indices_in_an_array/Solution.java)| Easy | Array | 2 | 95.30
 | 2197 |[Replace Non-Coprime Numbers in Array](src.save/main/java/g2101_2200/s2197_replace_non_coprime_numbers_in_array/Solution.java)| Hard | Array, Math, Stack, Number_Theory | 60 | 85.52
 | 2196 |[Create Binary Tree From Descriptions](src.save/main/java/g2101_2200/s2196_create_binary_tree_from_descriptions/Solution.java)| Medium | Array, Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 85 | 76.70
