@@ -16,7 +16,7 @@ public class Solution {
     }
 
     private Set<Integer> createSet(int[] array) {
-        Set<Integer> set = new HashSet<Integer>();
+        Set<Integer> set = new HashSet<>();
         for (int x : array) {
             set.add(x);
         }
@@ -24,7 +24,7 @@ public class Solution {
     }
 
     private List<Integer> getMissing(Set<Integer> first, Set<Integer> second) {
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         for (int x : first) {
             if (!second.contains(x)) {
                 list.add(x);
