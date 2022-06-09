@@ -1385,9 +1385,14 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2183 |[Count Array Pairs Divisible by K](src/main/java/g2101_2200/s2183_count_array_pairs_divisible_by_k/Solution.java)| Hard | Array, Math, Number_Theory | 849 | 44.54
 | 2182 |[Construct String With Repeat Limit](src/main/java/g2101_2200/s2182_construct_string_with_repeat_limit/Solution.java)| Medium | String, Greedy, Heap_Priority_Queue, Counting | 26 | 96.11
 | 2181 |[Merge Nodes in Between Zeros](src/main/java/g2101_2200/s2181_merge_nodes_in_between_zeros/Solution.java)| Medium | Simulation, Linked_List | 6 | 96.26
+| 2180 |[Count Integers With Even Digit Sum](src/main/java/g2101_2200/s2180_count_integers_with_even_digit_sum/Solution.java)| Easy | Math, Simulation | 0 | 100.00
+| 2179 |[Count Good Triplets in an Array](src/main/java/g2101_2200/s2179_count_good_triplets_in_an_array/Solution.java)| Hard | Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 16 | 92.94
+| 2178 |[Maximum Split of Positive Even Integers](src/main/java/g2101_2200/s2178_maximum_split_of_positive_even_integers/Solution.java)| Medium | Math, Greedy | 16 | 78.96
 | 2177 |[Find Three Consecutive Integers That Sum to a Given Number](src/main/java/g2101_2200/s2177_find_three_consecutive_integers_that_sum_to_a_given_number/Solution.java)| Medium | Math, Simulation | 1 | 78.46
 | 2176 |[Count Equal and Divisible Pairs in an Array](src/main/java/g2101_2200/s2176_count_equal_and_divisible_pairs_in_an_array/Solution.java)| Easy | Array | 4 | 78.29
 | 2172 |[Maximum AND Sum of Array](src/main/java/g2101_2200/s2172_maximum_and_sum_of_array/Solution.java)| Hard | Array, Dynamic_Programming, Bit_Manipulation, Bitmask | 21 | 87.50
+| 2171 |[Removing Minimum Number of Magic Beans](src/main/java/g2101_2200/s2171_removing_minimum_number_of_magic_beans/Solution.java)| Medium | Array, Sorting, Prefix_Sum | 42 | 77.68
+| 2170 |[Minimum Operations to Make the Array Alternating](src/main/java/g2101_2200/s2170_minimum_operations_to_make_the_array_alternating/Solution.java)| Medium | Array, Hash_Table, Greedy, Counting | 8 | 100.00
 | 2169 |[Count Operations to Obtain Zero](src/main/java/g2101_2200/s2169_count_operations_to_obtain_zero/Solution.java)| Easy | Math, Simulation | 0 | 100.00
 | 2167 |[Minimum Time to Remove All Cars Containing Illegal Goods](src/main/java/g2101_2200/s2167_minimum_time_to_remove_all_cars_containing_illegal_goods/Solution.java)| Hard | String, Dynamic_Programming | 46 | 61.00
 | 2166 |[Design Bitset](src/main/java/g2101_2200/s2166_design_bitset/Bitset.java)| Medium | Array, Hash_Table, Design | 81 | 73.38
