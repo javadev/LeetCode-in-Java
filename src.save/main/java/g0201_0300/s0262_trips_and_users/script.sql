@@ -1,4 +1,4 @@
-﻿# Write your MySQL query statement below
+# Write your MySQL query statement below
 # #Hard #Database #2022_03_14_Time_449_ms_(79.92%)_Space_0B_(100.00%)
 SELECT request_at AS "Day",
        ROUND(SUM(CASE
