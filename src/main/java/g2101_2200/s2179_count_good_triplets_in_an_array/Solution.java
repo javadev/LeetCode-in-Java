@@ -6,7 +6,8 @@ package g2101_2200.s2179_count_good_triplets_in_an_array;
 public class Solution {
     public long goodTriplets(int[] nums1, int[] nums2) {
         int n = nums1.length;
-        int[] idx = new int[n], arr = new int[n];
+        int[] idx = new int[n];
+        int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             idx[nums2[i]] = i;
         }

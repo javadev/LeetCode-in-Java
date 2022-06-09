@@ -13,8 +13,9 @@ public class Solution {
             sum += beans[i];
         }
         long minbeans = Long.MAX_VALUE;
-        long prefix = 0, suffix = 0;
-        long count = 0;
+        long prefix = 0;
+        long suffix;
+        long count;
         for (int i = 0; i < n; i++) {
             prefix += beans[i];
             suffix = sum - prefix;
