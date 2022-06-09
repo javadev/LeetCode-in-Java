@@ -12,9 +12,7 @@ Given a 2D integer array `nums` where `nums[i]` is a non-empty array of **distin
 
 **Explanation:** 
 
-The only integers present in each of nums[0] = [**3**,1,2,**4**,5], nums[1] = [1,2,**3**,**4**], and 
-
-nums[2] = [**3**,**4**,5,6] are 3 and 4, so we return [3,4].
+The only integers present in each of nums[0] = [**3**,1,2,**4**,5], nums[1] = [1,2,**3**,**4**], and nums[2] = [**3**,**4**,5,6] are 3 and 4, so we return [3,4].
 
 **Example 2:**
 
@@ -24,9 +22,7 @@ nums[2] = [**3**,**4**,5,6] are 3 and 4, so we return [3,4].
 
 **Explanation:** 
 
-There does not exist any integer present both in nums[0] and nums[1], so we return an 
-
-empty list [].
+There does not exist any integer present both in nums[0] and nums[1], so we return an empty list [].
 
 **Constraints:**
 
