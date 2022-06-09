@@ -1369,85 +1369,85 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2241 |[Design an ATM Machine](src/main/java/g2201_2300/s2241_design_an_atm_machine/ATM.java)| Medium | Array, Greedy, Design | 192 | 24.16
 | 2234 |[Maximum Total Beauty of the Gardens](src/main/java/g2201_2300/s2234_maximum_total_beauty_of_the_gardens/Solution.java)| Hard | Array, Sorting, Greedy, Binary_Search, Two_Pointers | 63 | 73.03
 | 2226 |[Maximum Candies Allocated to K Children](src/main/java/g2201_2300/s2226_maximum_candies_allocated_to_k_children/Solution.java)| Medium | Array, Binary_Search | 46 | 78.19
-| 2200 |[Find All K-Distant Indices in an Array](src/main/java/g2101_2200/s2200_find_all_k_distant_indices_in_an_array/Solution.java)| Easy | Array | 2 | 95.30
-| 2197 |[Replace Non-Coprime Numbers in Array](src/main/java/g2101_2200/s2197_replace_non_coprime_numbers_in_array/Solution.java)| Hard | Array, Math, Stack, Number_Theory | 60 | 85.52
-| 2196 |[Create Binary Tree From Descriptions](src/main/java/g2101_2200/s2196_create_binary_tree_from_descriptions/Solution.java)| Medium | Array, Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 85 | 76.70
-| 2195 |[Append K Integers With Minimal Sum](src/main/java/g2101_2200/s2195_append_k_integers_with_minimal_sum/Solution.java)| Medium | Array, Math, Sorting, Greedy | 19 | 96.88
-| 2194 |[Cells in a Range on an Excel Sheet](src/main/java/g2101_2200/s2194_cells_in_a_range_on_an_excel_sheet/Solution.java)| Easy | String | 1 | 99.92
-| 2193 |[Minimum Number of Moves to Make Palindrome](src/main/java/g2101_2200/s2193_minimum_number_of_moves_to_make_palindrome/Solution.java)| Hard | String, Greedy, Two_Pointers, Binary_Indexed_Tree | 8 | 98.76
-| 2192 |[All Ancestors of a Node in a Directed Acyclic Graph](src/main/java/g2101_2200/s2192_all_ancestors_of_a_node_in_a_directed_acyclic_graph/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 82 | 90.80
-| 2191 |[Sort the Jumbled Numbers](src/main/java/g2101_2200/s2191_sort_the_jumbled_numbers/Solution.java)| Medium | Array, Sorting | 117 | 96.53
-| 2190 |[Most Frequent Number Following Key In an Array](src/main/java/g2101_2200/s2190_most_frequent_number_following_key_in_an_array/Solution.java)| Easy | Array, Hash_Table, Counting | 1 | 100.00
-| 2188 |[Minimum Time to Finish the Race](src/main/java/g2101_2200/s2188_minimum_time_to_finish_the_race/Solution.java)| Hard | Array, Dynamic_Programming | 15 | 93.69
-| 2187 |[Minimum Time to Complete Trips](src/main/java/g2101_2200/s2187_minimum_time_to_complete_trips/Solution.java)| Medium | Array, Binary_Search | 187 | 95.03
-| 2186 |[Minimum Number of Steps to Make Two Strings Anagram II](src/main/java/g2101_2200/s2186_minimum_number_of_steps_to_make_two_strings_anagram_ii/Solution.java)| Medium | String, Hash_Table, Counting | 22 | 77.11
-| 2185 |[Counting Words With a Given Prefix](src/main/java/g2101_2200/s2185_counting_words_with_a_given_prefix/Solution.java)| Easy | Array, String | 0 | 100.00
-| 2183 |[Count Array Pairs Divisible by K](src/main/java/g2101_2200/s2183_count_array_pairs_divisible_by_k/Solution.java)| Hard | Array, Math, Number_Theory | 849 | 44.54
-| 2182 |[Construct String With Repeat Limit](src/main/java/g2101_2200/s2182_construct_string_with_repeat_limit/Solution.java)| Medium | String, Greedy, Heap_Priority_Queue, Counting | 26 | 96.11
-| 2181 |[Merge Nodes in Between Zeros](src/main/java/g2101_2200/s2181_merge_nodes_in_between_zeros/Solution.java)| Medium | Simulation, Linked_List | 6 | 96.26
-| 2180 |[Count Integers With Even Digit Sum](src/main/java/g2101_2200/s2180_count_integers_with_even_digit_sum/Solution.java)| Easy | Math, Simulation | 0 | 100.00
-| 2179 |[Count Good Triplets in an Array](src/main/java/g2101_2200/s2179_count_good_triplets_in_an_array/Solution.java)| Hard | Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 16 | 92.94
-| 2178 |[Maximum Split of Positive Even Integers](src/main/java/g2101_2200/s2178_maximum_split_of_positive_even_integers/Solution.java)| Medium | Math, Greedy | 16 | 78.96
-| 2177 |[Find Three Consecutive Integers That Sum to a Given Number](src/main/java/g2101_2200/s2177_find_three_consecutive_integers_that_sum_to_a_given_number/Solution.java)| Medium | Math, Simulation | 1 | 78.46
-| 2176 |[Count Equal and Divisible Pairs in an Array](src/main/java/g2101_2200/s2176_count_equal_and_divisible_pairs_in_an_array/Solution.java)| Easy | Array | 4 | 78.29
-| 2172 |[Maximum AND Sum of Array](src/main/java/g2101_2200/s2172_maximum_and_sum_of_array/Solution.java)| Hard | Array, Dynamic_Programming, Bit_Manipulation, Bitmask | 21 | 87.50
-| 2171 |[Removing Minimum Number of Magic Beans](src/main/java/g2101_2200/s2171_removing_minimum_number_of_magic_beans/Solution.java)| Medium | Array, Sorting, Prefix_Sum | 42 | 77.68
-| 2170 |[Minimum Operations to Make the Array Alternating](src/main/java/g2101_2200/s2170_minimum_operations_to_make_the_array_alternating/Solution.java)| Medium | Array, Hash_Table, Greedy, Counting | 8 | 100.00
-| 2169 |[Count Operations to Obtain Zero](src/main/java/g2101_2200/s2169_count_operations_to_obtain_zero/Solution.java)| Easy | Math, Simulation | 0 | 100.00
-| 2167 |[Minimum Time to Remove All Cars Containing Illegal Goods](src/main/java/g2101_2200/s2167_minimum_time_to_remove_all_cars_containing_illegal_goods/Solution.java)| Hard | String, Dynamic_Programming | 46 | 61.00
-| 2166 |[Design Bitset](src/main/java/g2101_2200/s2166_design_bitset/Bitset.java)| Medium | Array, Hash_Table, Design | 81 | 73.38
-| 2165 |[Smallest Value of the Rearranged Number](src/main/java/g2101_2200/s2165_smallest_value_of_the_rearranged_number/Solution.java)| Medium | Math, Sorting | 1 | 100.00
-| 2164 |[Sort Even and Odd Indices Independently](src/main/java/g2101_2200/s2164_sort_even_and_odd_indices_independently/Solution.java)| Easy | Array, Sorting | 2 | 97.22
-| 2163 |[Minimum Difference in Sums After Removal of Elements](src/main/java/g2101_2200/s2163_minimum_difference_in_sums_after_removal_of_elements/Solution.java)| Hard | Array, Dynamic_Programming, Heap_Priority_Queue | 298 | 57.14
-| 2162 |[Minimum Cost to Set Cooking Time](src/main/java/g2101_2200/s2162_minimum_cost_to_set_cooking_time/Solution.java)| Medium | Math, Enumeration | 1 | 95.82
-| 2161 |[Partition Array According to Given Pivot](src/main/java/g2101_2200/s2161_partition_array_according_to_given_pivot/Solution.java)| Medium | Array, Two_Pointers, Simulation | 7 | 72.76
-| 2160 |[Minimum Sum of Four Digit Number After Splitting Digits](src/main/java/g2101_2200/s2160_minimum_sum_of_four_digit_number_after_splitting_digits/Solution.java)| Easy | Math, Sorting, Greedy | 1 | 78.31
-| 2157 |[Groups of Strings](src/main/java/g2101_2200/s2157_groups_of_strings/Solution.java)| Hard | String, Bit_Manipulation, Union_Find | 451 | 93.86
-| 2156 |[Find Substring With Given Hash Value](src/main/java/g2101_2200/s2156_find_substring_with_given_hash_value/Solution.java)| Hard | String, Sliding_Window, Hash_Function, Rolling_Hash | 37 | 36.57
-| 2155 |[All Divisions With the Highest Score of a Binary Array](src/main/java/g2101_2200/s2155_all_divisions_with_the_highest_score_of_a_binary_array/Solution.java)| Medium | Array | 18 | 98.41
-| 2154 |[Keep Multiplying Found Values by Two](src/main/java/g2101_2200/s2154_keep_multiplying_found_values_by_two/Solution.java)| Easy | Array, Hash_Table, Sorting, Simulation | 1 | 93.21
-| 2151 |[Maximum Good People Based on Statements](src/main/java/g2101_2200/s2151_maximum_good_people_based_on_statements/Solution.java)| Hard | Array, Bit_Manipulation, Backtracking, Enumeration | 76 | 47.57
-| 2150 |[Find All Lonely Numbers in the Array](src/main/java/g2101_2200/s2150_find_all_lonely_numbers_in_the_array/Solution.java)| Medium | Array, Hash_Table, Counting | 93 | 70.66
-| 2149 |[Rearrange Array Elements by Sign](src/main/java/g2101_2200/s2149_rearrange_array_elements_by_sign/Solution.java)| Medium | Array, Two_Pointers, Simulation | 10 | 34.66
-| 2148 |[Count Elements With Strictly Smaller and Greater Elements](src/main/java/g2101_2200/s2148_count_elements_with_strictly_smaller_and_greater_elements/Solution.java)| Easy | Array, Sorting | 0 | 100.00
-| 2147 |[Number of Ways to Divide a Long Corridor](src/main/java/g2101_2200/s2147_number_of_ways_to_divide_a_long_corridor/Solution.java)| Hard | String, Dynamic_Programming, Math | 54 | 62.96
-| 2146 |[K Highest Ranked Items Within a Price Range](src/main/java/g2101_2200/s2146_k_highest_ranked_items_within_a_price_range/Solution.java)| Medium | Array, Sorting, Breadth_First_Search, Matrix, Heap_Priority_Queue | 81 | 88.84
-| 2145 |[Count the Hidden Sequences](src/main/java/g2101_2200/s2145_count_the_hidden_sequences/Solution.java)| Medium | Array, Prefix_Sum | 7 | 36.03
-| 2144 |[Minimum Cost of Buying Candies With Discount](src/main/java/g2101_2200/s2144_minimum_cost_of_buying_candies_with_discount/Solution.java)| Easy | Array, Sorting, Greedy | 2 | 97.50
-| 2141 |[Maximum Running Time of N Computers](src/main/java/g2101_2200/s2141_maximum_running_time_of_n_computers/Solution.java)| Hard | Array, Sorting, Greedy, Binary_Search | 24 | 70.39
-| 2140 |[Solving Questions With Brainpower](src/main/java/g2101_2200/s2140_solving_questions_with_brainpower/Solution.java)| Medium | Array, Dynamic_Programming | 5 | 98.77
-| 2139 |[Minimum Moves to Reach Target Score](src/main/java/g2101_2200/s2139_minimum_moves_to_reach_target_score/Solution.java)| Medium | Math, Greedy | 1 | 37.95
-| 2138 |[Divide a String Into Groups of Size k](src/main/java/g2101_2200/s2138_divide_a_string_into_groups_of_size_k/Solution.java)| Easy | String, Simulation | 2 | 70.97
-| 2136 |[Earliest Possible Day of Full Bloom](src/main/java/g2101_2200/s2136_earliest_possible_day_of_full_bloom/Solution.java)| Hard | Array, Sorting, Greedy | 63 | 94.92
-| 2135 |[Count Words Obtained After Adding a Letter](src/main/java/g2101_2200/s2135_count_words_obtained_after_adding_a_letter/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Bit_Manipulation | 67 | 93.08
-| 2134 |[Minimum Swaps to Group All 1's Together II](src/main/java/g2101_2200/s2134_minimum_swaps_to_group_all_1s_together_ii/Solution.java)| Medium | Array, Sliding_Window | 11 | 72.59
-| 2133 |[Check if Every Row and Column Contains All Numbers](src/main/java/g2101_2200/s2133_check_if_every_row_and_column_contains_all_numbers/Solution.java)| Easy | Array, Hash_Table, Matrix | 32 | 64.12
-| 2132 |[Stamping the Grid](src/main/java/g2101_2200/s2132_stamping_the_grid/Solution.java)| Hard | Array, Greedy, Matrix, Prefix_Sum | 7 | 100.00
-| 2131 |[Longest Palindrome by Concatenating Two Letter Words](src/main/java/g2101_2200/s2131_longest_palindrome_by_concatenating_two_letter_words/Solution.java)| Medium | Array, String, Hash_Table, Greedy, Counting | 73 | 76.60
-| 2130 |[Maximum Twin Sum of a Linked List](src/main/java/g2101_2200/s2130_maximum_twin_sum_of_a_linked_list/Solution.java)| Medium | Two_Pointers, Stack, Linked_List | 9 | 57.92
-| 2129 |[Capitalize the Title](src/main/java/g2101_2200/s2129_capitalize_the_title/Solution.java)| Easy | String | 2 | 94.22
-| 2127 |[Maximum Employees to Be Invited to a Meeting](src/main/java/g2101_2200/s2127_maximum_employees_to_be_invited_to_a_meeting/Solution.java)| Hard | Depth_First_Search, Graph, Topological_Sort | 37 | 85.71
-| 2126 |[Destroying Asteroids](src/main/java/g2101_2200/s2126_destroying_asteroids/Solution.java)| Medium | Array, Sorting, Greedy | 6 | 99.27
-| 2125 |[Number of Laser Beams in a Bank](src/main/java/g2101_2200/s2125_number_of_laser_beams_in_a_bank/Solution.java)| Medium | Array, String, Math, Matrix | 19 | 76.00
-| 2124 |[Check if All A's Appears Before All B's](src/main/java/g2101_2200/s2124_check_if_all_as_appears_before_all_bs/Solution.java)| Easy | String | 1 | 73.82
-| 2122 |[Recover the Original Array](src/main/java/g2101_2200/s2122_recover_the_original_array/Solution.java)| Hard | Array, Hash_Table, Sorting, Enumeration | 19 | 89.04
-| 2121 |[Intervals Between Identical Elements](src/main/java/g2101_2200/s2121_intervals_between_identical_elements/Solution.java)| Medium | Array, Hash_Table, Prefix_Sum | 93 | 79.63
-| 2120 |[Execution of All Suffix Instructions Staying in a Grid](src/main/java/g2101_2200/s2120_execution_of_all_suffix_instructions_staying_in_a_grid/Solution.java)| Medium | String, Simulation | 31 | 88.00
-| 2119 |[A Number After a Double Reversal](src/main/java/g2101_2200/s2119_a_number_after_a_double_reversal/Solution.java)| Easy | Math | 0 | 100.00
-| 2117 |[Abbreviating the Product of a Range](src/main/java/g2101_2200/s2117_abbreviating_the_product_of_a_range/Solution.java)| Hard | Math | 70 | 89.47
-| 2116 |[Check if a Parentheses String Can Be Valid](src/main/java/g2101_2200/s2116_check_if_a_parentheses_string_can_be_valid/Solution.java)| Medium | String, Greedy, Stack | 19 | 85.53
-| 2115 |[Find All Possible Recipes from Given Supplies](src/main/java/g2101_2200/s2115_find_all_possible_recipes_from_given_supplies/Solution.java)| Medium | Array, String, Hash_Table, Graph, Topological_Sort | 43 | 85.86
-| 2114 |[Maximum Number of Words Found in Sentences](src/main/java/g2101_2200/s2114_maximum_number_of_words_found_in_sentences/Solution.java)| Easy | Array, String | 4 | 69.59
-| 2111 |[Minimum Operations to Make the Array K-Increasing](src/main/java/g2101_2200/s2111_minimum_operations_to_make_the_array_k_increasing/Solution.java)| Hard | Array, Binary_Search | 97 | 22.90
-| 2110 |[Number of Smooth Descent Periods of a Stock](src/main/java/g2101_2200/s2110_number_of_smooth_descent_periods_of_a_stock/Solution.java)| Medium | Array, Dynamic_Programming, Math | 3 | 77.27
-| 2109 |[Adding Spaces to a String](src/main/java/g2101_2200/s2109_adding_spaces_to_a_string/Solution.java)| Medium | Array, String, Simulation | 24 | 89.33
-| 2108 |[Find First Palindromic String in the Array](src/main/java/g2101_2200/s2108_find_first_palindromic_string_in_the_array/Solution.java)| Easy | Array, String, Two_Pointers | 3 | 84.92
-| 2106 |[Maximum Fruits Harvested After at Most K Steps](src/main/java/g2101_2200/s2106_maximum_fruits_harvested_after_at_most_k_steps/Solution.java)| Hard | Array, Binary_Search, Prefix_Sum, Sliding_Window | 4 | 86.67
-| 2105 |[Watering Plants II](src/main/java/g2101_2200/s2105_watering_plants_ii/Solution.java)| Medium | Array, Two_Pointers, Simulation | 5 | 78.24
-| 2104 |[Sum of Subarray Ranges](src/main/java/g2101_2200/s2104_sum_of_subarray_ranges/Solution.java)| Medium | Array, Stack, Monotonic_Stack | 21 | 77.85
-| 2103 |[Rings and Rods](src/main/java/g2101_2200/s2103_rings_and_rods/Solution.java)| Easy | String, Hash_Table | 2 | 46.84
-| 2102 |[Sequentially Ordinal Rank Tracker](src/main/java/g2101_2200/s2102_sequentially_ordinal_rank_tracker/SORTracker.java)| Hard | Design, Heap_Priority_Queue, Ordered_Set, Data_Stream | 194 | 79.48
-| 2101 |[Detonate the Maximum Bombs](src/main/java/g2101_2200/s2101_detonate_the_maximum_bombs/Solution.java)| Medium | Array, Math, Depth_First_Search, Breadth_First_Search, Graph, Geometry | 27 | 94.17
+| 2200 |[Find All K-Distant Indices in an Array](src.save/main/java/g2101_2200/s2200_find_all_k_distant_indices_in_an_array/Solution.java)| Easy | Array | 2 | 95.30
+| 2197 |[Replace Non-Coprime Numbers in Array](src.save/main/java/g2101_2200/s2197_replace_non_coprime_numbers_in_array/Solution.java)| Hard | Array, Math, Stack, Number_Theory | 60 | 85.52
+| 2196 |[Create Binary Tree From Descriptions](src.save/main/java/g2101_2200/s2196_create_binary_tree_from_descriptions/Solution.java)| Medium | Array, Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 85 | 76.70
+| 2195 |[Append K Integers With Minimal Sum](src.save/main/java/g2101_2200/s2195_append_k_integers_with_minimal_sum/Solution.java)| Medium | Array, Math, Sorting, Greedy | 19 | 96.88
+| 2194 |[Cells in a Range on an Excel Sheet](src.save/main/java/g2101_2200/s2194_cells_in_a_range_on_an_excel_sheet/Solution.java)| Easy | String | 1 | 99.92
+| 2193 |[Minimum Number of Moves to Make Palindrome](src.save/main/java/g2101_2200/s2193_minimum_number_of_moves_to_make_palindrome/Solution.java)| Hard | String, Greedy, Two_Pointers, Binary_Indexed_Tree | 8 | 98.76
+| 2192 |[All Ancestors of a Node in a Directed Acyclic Graph](src.save/main/java/g2101_2200/s2192_all_ancestors_of_a_node_in_a_directed_acyclic_graph/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 82 | 90.80
+| 2191 |[Sort the Jumbled Numbers](src.save/main/java/g2101_2200/s2191_sort_the_jumbled_numbers/Solution.java)| Medium | Array, Sorting | 117 | 96.53
+| 2190 |[Most Frequent Number Following Key In an Array](src.save/main/java/g2101_2200/s2190_most_frequent_number_following_key_in_an_array/Solution.java)| Easy | Array, Hash_Table, Counting | 1 | 100.00
+| 2188 |[Minimum Time to Finish the Race](src.save/main/java/g2101_2200/s2188_minimum_time_to_finish_the_race/Solution.java)| Hard | Array, Dynamic_Programming | 15 | 93.69
+| 2187 |[Minimum Time to Complete Trips](src.save/main/java/g2101_2200/s2187_minimum_time_to_complete_trips/Solution.java)| Medium | Array, Binary_Search | 187 | 95.03
+| 2186 |[Minimum Number of Steps to Make Two Strings Anagram II](src.save/main/java/g2101_2200/s2186_minimum_number_of_steps_to_make_two_strings_anagram_ii/Solution.java)| Medium | String, Hash_Table, Counting | 22 | 77.11
+| 2185 |[Counting Words With a Given Prefix](src.save/main/java/g2101_2200/s2185_counting_words_with_a_given_prefix/Solution.java)| Easy | Array, String | 0 | 100.00
+| 2183 |[Count Array Pairs Divisible by K](src.save/main/java/g2101_2200/s2183_count_array_pairs_divisible_by_k/Solution.java)| Hard | Array, Math, Number_Theory | 849 | 44.54
+| 2182 |[Construct String With Repeat Limit](src.save/main/java/g2101_2200/s2182_construct_string_with_repeat_limit/Solution.java)| Medium | String, Greedy, Heap_Priority_Queue, Counting | 26 | 96.11
+| 2181 |[Merge Nodes in Between Zeros](src.save/main/java/g2101_2200/s2181_merge_nodes_in_between_zeros/Solution.java)| Medium | Simulation, Linked_List | 6 | 96.26
+| 2180 |[Count Integers With Even Digit Sum](src.save/main/java/g2101_2200/s2180_count_integers_with_even_digit_sum/Solution.java)| Easy | Math, Simulation | 0 | 100.00
+| 2179 |[Count Good Triplets in an Array](src.save/main/java/g2101_2200/s2179_count_good_triplets_in_an_array/Solution.java)| Hard | Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 16 | 92.94
+| 2178 |[Maximum Split of Positive Even Integers](src.save/main/java/g2101_2200/s2178_maximum_split_of_positive_even_integers/Solution.java)| Medium | Math, Greedy | 16 | 78.96
+| 2177 |[Find Three Consecutive Integers That Sum to a Given Number](src.save/main/java/g2101_2200/s2177_find_three_consecutive_integers_that_sum_to_a_given_number/Solution.java)| Medium | Math, Simulation | 1 | 78.46
+| 2176 |[Count Equal and Divisible Pairs in an Array](src.save/main/java/g2101_2200/s2176_count_equal_and_divisible_pairs_in_an_array/Solution.java)| Easy | Array | 4 | 78.29
+| 2172 |[Maximum AND Sum of Array](src.save/main/java/g2101_2200/s2172_maximum_and_sum_of_array/Solution.java)| Hard | Array, Dynamic_Programming, Bit_Manipulation, Bitmask | 21 | 87.50
+| 2171 |[Removing Minimum Number of Magic Beans](src.save/main/java/g2101_2200/s2171_removing_minimum_number_of_magic_beans/Solution.java)| Medium | Array, Sorting, Prefix_Sum | 42 | 77.68
+| 2170 |[Minimum Operations to Make the Array Alternating](src.save/main/java/g2101_2200/s2170_minimum_operations_to_make_the_array_alternating/Solution.java)| Medium | Array, Hash_Table, Greedy, Counting | 8 | 100.00
+| 2169 |[Count Operations to Obtain Zero](src.save/main/java/g2101_2200/s2169_count_operations_to_obtain_zero/Solution.java)| Easy | Math, Simulation | 0 | 100.00
+| 2167 |[Minimum Time to Remove All Cars Containing Illegal Goods](src.save/main/java/g2101_2200/s2167_minimum_time_to_remove_all_cars_containing_illegal_goods/Solution.java)| Hard | String, Dynamic_Programming | 46 | 61.00
+| 2166 |[Design Bitset](src.save/main/java/g2101_2200/s2166_design_bitset/Bitset.java)| Medium | Array, Hash_Table, Design | 81 | 73.38
+| 2165 |[Smallest Value of the Rearranged Number](src.save/main/java/g2101_2200/s2165_smallest_value_of_the_rearranged_number/Solution.java)| Medium | Math, Sorting | 1 | 100.00
+| 2164 |[Sort Even and Odd Indices Independently](src.save/main/java/g2101_2200/s2164_sort_even_and_odd_indices_independently/Solution.java)| Easy | Array, Sorting | 2 | 97.22
+| 2163 |[Minimum Difference in Sums After Removal of Elements](src.save/main/java/g2101_2200/s2163_minimum_difference_in_sums_after_removal_of_elements/Solution.java)| Hard | Array, Dynamic_Programming, Heap_Priority_Queue | 298 | 57.14
+| 2162 |[Minimum Cost to Set Cooking Time](src.save/main/java/g2101_2200/s2162_minimum_cost_to_set_cooking_time/Solution.java)| Medium | Math, Enumeration | 1 | 95.82
+| 2161 |[Partition Array According to Given Pivot](src.save/main/java/g2101_2200/s2161_partition_array_according_to_given_pivot/Solution.java)| Medium | Array, Two_Pointers, Simulation | 7 | 72.76
+| 2160 |[Minimum Sum of Four Digit Number After Splitting Digits](src.save/main/java/g2101_2200/s2160_minimum_sum_of_four_digit_number_after_splitting_digits/Solution.java)| Easy | Math, Sorting, Greedy | 1 | 78.31
+| 2157 |[Groups of Strings](src.save/main/java/g2101_2200/s2157_groups_of_strings/Solution.java)| Hard | String, Bit_Manipulation, Union_Find | 451 | 93.86
+| 2156 |[Find Substring With Given Hash Value](src.save/main/java/g2101_2200/s2156_find_substring_with_given_hash_value/Solution.java)| Hard | String, Sliding_Window, Hash_Function, Rolling_Hash | 37 | 36.57
+| 2155 |[All Divisions With the Highest Score of a Binary Array](src.save/main/java/g2101_2200/s2155_all_divisions_with_the_highest_score_of_a_binary_array/Solution.java)| Medium | Array | 18 | 98.41
+| 2154 |[Keep Multiplying Found Values by Two](src.save/main/java/g2101_2200/s2154_keep_multiplying_found_values_by_two/Solution.java)| Easy | Array, Hash_Table, Sorting, Simulation | 1 | 93.21
+| 2151 |[Maximum Good People Based on Statements](src.save/main/java/g2101_2200/s2151_maximum_good_people_based_on_statements/Solution.java)| Hard | Array, Bit_Manipulation, Backtracking, Enumeration | 76 | 47.57
+| 2150 |[Find All Lonely Numbers in the Array](src.save/main/java/g2101_2200/s2150_find_all_lonely_numbers_in_the_array/Solution.java)| Medium | Array, Hash_Table, Counting | 93 | 70.66
+| 2149 |[Rearrange Array Elements by Sign](src.save/main/java/g2101_2200/s2149_rearrange_array_elements_by_sign/Solution.java)| Medium | Array, Two_Pointers, Simulation | 10 | 34.66
+| 2148 |[Count Elements With Strictly Smaller and Greater Elements](src.save/main/java/g2101_2200/s2148_count_elements_with_strictly_smaller_and_greater_elements/Solution.java)| Easy | Array, Sorting | 0 | 100.00
+| 2147 |[Number of Ways to Divide a Long Corridor](src.save/main/java/g2101_2200/s2147_number_of_ways_to_divide_a_long_corridor/Solution.java)| Hard | String, Dynamic_Programming, Math | 54 | 62.96
+| 2146 |[K Highest Ranked Items Within a Price Range](src.save/main/java/g2101_2200/s2146_k_highest_ranked_items_within_a_price_range/Solution.java)| Medium | Array, Sorting, Breadth_First_Search, Matrix, Heap_Priority_Queue | 81 | 88.84
+| 2145 |[Count the Hidden Sequences](src.save/main/java/g2101_2200/s2145_count_the_hidden_sequences/Solution.java)| Medium | Array, Prefix_Sum | 7 | 36.03
+| 2144 |[Minimum Cost of Buying Candies With Discount](src.save/main/java/g2101_2200/s2144_minimum_cost_of_buying_candies_with_discount/Solution.java)| Easy | Array, Sorting, Greedy | 2 | 97.50
+| 2141 |[Maximum Running Time of N Computers](src.save/main/java/g2101_2200/s2141_maximum_running_time_of_n_computers/Solution.java)| Hard | Array, Sorting, Greedy, Binary_Search | 24 | 70.39
+| 2140 |[Solving Questions With Brainpower](src.save/main/java/g2101_2200/s2140_solving_questions_with_brainpower/Solution.java)| Medium | Array, Dynamic_Programming | 5 | 98.77
+| 2139 |[Minimum Moves to Reach Target Score](src.save/main/java/g2101_2200/s2139_minimum_moves_to_reach_target_score/Solution.java)| Medium | Math, Greedy | 1 | 37.95
+| 2138 |[Divide a String Into Groups of Size k](src.save/main/java/g2101_2200/s2138_divide_a_string_into_groups_of_size_k/Solution.java)| Easy | String, Simulation | 2 | 70.97
+| 2136 |[Earliest Possible Day of Full Bloom](src.save/main/java/g2101_2200/s2136_earliest_possible_day_of_full_bloom/Solution.java)| Hard | Array, Sorting, Greedy | 63 | 94.92
+| 2135 |[Count Words Obtained After Adding a Letter](src.save/main/java/g2101_2200/s2135_count_words_obtained_after_adding_a_letter/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Bit_Manipulation | 67 | 93.08
+| 2134 |[Minimum Swaps to Group All 1's Together II](src.save/main/java/g2101_2200/s2134_minimum_swaps_to_group_all_1s_together_ii/Solution.java)| Medium | Array, Sliding_Window | 11 | 72.59
+| 2133 |[Check if Every Row and Column Contains All Numbers](src.save/main/java/g2101_2200/s2133_check_if_every_row_and_column_contains_all_numbers/Solution.java)| Easy | Array, Hash_Table, Matrix | 32 | 64.12
+| 2132 |[Stamping the Grid](src.save/main/java/g2101_2200/s2132_stamping_the_grid/Solution.java)| Hard | Array, Greedy, Matrix, Prefix_Sum | 7 | 100.00
+| 2131 |[Longest Palindrome by Concatenating Two Letter Words](src.save/main/java/g2101_2200/s2131_longest_palindrome_by_concatenating_two_letter_words/Solution.java)| Medium | Array, String, Hash_Table, Greedy, Counting | 73 | 76.60
+| 2130 |[Maximum Twin Sum of a Linked List](src.save/main/java/g2101_2200/s2130_maximum_twin_sum_of_a_linked_list/Solution.java)| Medium | Two_Pointers, Stack, Linked_List | 9 | 57.92
+| 2129 |[Capitalize the Title](src.save/main/java/g2101_2200/s2129_capitalize_the_title/Solution.java)| Easy | String | 2 | 94.22
+| 2127 |[Maximum Employees to Be Invited to a Meeting](src.save/main/java/g2101_2200/s2127_maximum_employees_to_be_invited_to_a_meeting/Solution.java)| Hard | Depth_First_Search, Graph, Topological_Sort | 37 | 85.71
+| 2126 |[Destroying Asteroids](src.save/main/java/g2101_2200/s2126_destroying_asteroids/Solution.java)| Medium | Array, Sorting, Greedy | 6 | 99.27
+| 2125 |[Number of Laser Beams in a Bank](src.save/main/java/g2101_2200/s2125_number_of_laser_beams_in_a_bank/Solution.java)| Medium | Array, String, Math, Matrix | 19 | 76.00
+| 2124 |[Check if All A's Appears Before All B's](src.save/main/java/g2101_2200/s2124_check_if_all_as_appears_before_all_bs/Solution.java)| Easy | String | 1 | 73.82
+| 2122 |[Recover the Original Array](src.save/main/java/g2101_2200/s2122_recover_the_original_array/Solution.java)| Hard | Array, Hash_Table, Sorting, Enumeration | 19 | 89.04
+| 2121 |[Intervals Between Identical Elements](src.save/main/java/g2101_2200/s2121_intervals_between_identical_elements/Solution.java)| Medium | Array, Hash_Table, Prefix_Sum | 93 | 79.63
+| 2120 |[Execution of All Suffix Instructions Staying in a Grid](src.save/main/java/g2101_2200/s2120_execution_of_all_suffix_instructions_staying_in_a_grid/Solution.java)| Medium | String, Simulation | 31 | 88.00
+| 2119 |[A Number After a Double Reversal](src.save/main/java/g2101_2200/s2119_a_number_after_a_double_reversal/Solution.java)| Easy | Math | 0 | 100.00
+| 2117 |[Abbreviating the Product of a Range](src.save/main/java/g2101_2200/s2117_abbreviating_the_product_of_a_range/Solution.java)| Hard | Math | 70 | 89.47
+| 2116 |[Check if a Parentheses String Can Be Valid](src.save/main/java/g2101_2200/s2116_check_if_a_parentheses_string_can_be_valid/Solution.java)| Medium | String, Greedy, Stack | 19 | 85.53
+| 2115 |[Find All Possible Recipes from Given Supplies](src.save/main/java/g2101_2200/s2115_find_all_possible_recipes_from_given_supplies/Solution.java)| Medium | Array, String, Hash_Table, Graph, Topological_Sort | 43 | 85.86
+| 2114 |[Maximum Number of Words Found in Sentences](src.save/main/java/g2101_2200/s2114_maximum_number_of_words_found_in_sentences/Solution.java)| Easy | Array, String | 4 | 69.59
+| 2111 |[Minimum Operations to Make the Array K-Increasing](src.save/main/java/g2101_2200/s2111_minimum_operations_to_make_the_array_k_increasing/Solution.java)| Hard | Array, Binary_Search | 97 | 22.90
+| 2110 |[Number of Smooth Descent Periods of a Stock](src.save/main/java/g2101_2200/s2110_number_of_smooth_descent_periods_of_a_stock/Solution.java)| Medium | Array, Dynamic_Programming, Math | 3 | 77.27
+| 2109 |[Adding Spaces to a String](src.save/main/java/g2101_2200/s2109_adding_spaces_to_a_string/Solution.java)| Medium | Array, String, Simulation | 24 | 89.33
+| 2108 |[Find First Palindromic String in the Array](src.save/main/java/g2101_2200/s2108_find_first_palindromic_string_in_the_array/Solution.java)| Easy | Array, String, Two_Pointers | 3 | 84.92
+| 2106 |[Maximum Fruits Harvested After at Most K Steps](src.save/main/java/g2101_2200/s2106_maximum_fruits_harvested_after_at_most_k_steps/Solution.java)| Hard | Array, Binary_Search, Prefix_Sum, Sliding_Window | 4 | 86.67
+| 2105 |[Watering Plants II](src.save/main/java/g2101_2200/s2105_watering_plants_ii/Solution.java)| Medium | Array, Two_Pointers, Simulation | 5 | 78.24
+| 2104 |[Sum of Subarray Ranges](src.save/main/java/g2101_2200/s2104_sum_of_subarray_ranges/Solution.java)| Medium | Array, Stack, Monotonic_Stack | 21 | 77.85
+| 2103 |[Rings and Rods](src.save/main/java/g2101_2200/s2103_rings_and_rods/Solution.java)| Easy | String, Hash_Table | 2 | 46.84
+| 2102 |[Sequentially Ordinal Rank Tracker](src.save/main/java/g2101_2200/s2102_sequentially_ordinal_rank_tracker/SORTracker.java)| Hard | Design, Heap_Priority_Queue, Ordered_Set, Data_Stream | 194 | 79.48
+| 2101 |[Detonate the Maximum Bombs](src.save/main/java/g2101_2200/s2101_detonate_the_maximum_bombs/Solution.java)| Medium | Array, Math, Depth_First_Search, Breadth_First_Search, Graph, Geometry | 27 | 94.17
 | 2100 |[Find Good Days to Rob the Bank](src.save/main/java/g2001_2100/s2100_find_good_days_to_rob_the_bank/Solution.java)| Medium | Array, Dynamic_Programming, Prefix_Sum | 13 | 46.46
 | 2099 |[Find Subsequence of Length K With the Largest Sum](src.save/main/java/g2001_2100/s2099_find_subsequence_of_length_k_with_the_largest_sum/Solution.java)| Easy | Array, Hash_Table, Sorting, Heap_Priority_Queue | 6 | 85.46
 | 2097 |[Valid Arrangement of Pairs](src.save/main/java/g2001_2100/s2097_valid_arrangement_of_pairs/Solution.java)| Hard | Depth_First_Search, Graph, Eulerian_Circuit | 158 | 100.00
