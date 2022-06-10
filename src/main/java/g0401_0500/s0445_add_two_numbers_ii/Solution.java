@@ -17,7 +17,9 @@ import com_github_leetcode.ListNode;
  */
 public class Solution {
     private ListNode reverse(ListNode head) {
-        if (head == null || head.next == null) return head;
+        if (head == null || head.next == null) {
+            return head;
+        }
         ListNode prev = null;
         ListNode curr = head;
         ListNode next = head.next;

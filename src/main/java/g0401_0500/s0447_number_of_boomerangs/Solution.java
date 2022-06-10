@@ -15,7 +15,9 @@ public class Solution {
                 }
                 int dis = dist(points[i], points[j]);
                 int prev = m.getOrDefault(dis, 0);
-                if (prev >= 1) ans += prev * 2;
+                if (prev >= 1) {
+                    ans += prev * 2;
+                }
                 m.put(dis, prev + 1);
             }
             m.clear();
