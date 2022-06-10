@@ -17,4 +17,14 @@ class SolutionTest {
                                         Arrays.asList(4, 2, 6, 1, 3, null, null))),
                 equalTo(1));
     }
+
+    @Test
+    void minDiffInBST2() {
+        assertThat(
+                new Solution()
+                        .minDiffInBST(
+                                TreeUtils.constructBinaryTree(
+                                        Arrays.asList(1, 0, 48, null, null, 12, 49))),
+                equalTo(1));
+    }
 }

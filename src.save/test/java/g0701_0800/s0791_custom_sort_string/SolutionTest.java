@@ -10,4 +10,9 @@ class SolutionTest {
     void customSortString() {
         assertThat(new Solution().customSortString("cba", "abcd"), equalTo("cbad"));
     }
+
+    @Test
+    void customSortString2() {
+        assertThat(new Solution().customSortString("cbafg", "abcd"), equalTo("cbad"));
+    }
 }
