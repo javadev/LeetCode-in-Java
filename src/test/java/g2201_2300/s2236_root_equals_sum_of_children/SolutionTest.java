@@ -3,16 +3,20 @@ package g2201_2300.s2236_root_equals_sum_of_children;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+import com_github_leetcode.TreeNode;
+import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
     void checkTree() {
-        assertThat(new Solution().checkTree(new int[] {10, 4, 6}), equalTo(true));
+        TreeNode treeNode = TreeNode.create(Arrays.asList(10, 4, 6));
+        assertThat(new Solution().checkTree(treeNode), equalTo(true));
     }
 
     @Test
     void checkTree2() {
-        assertThat(new Solution().checkTree(new int[] {5, 3, 1}), equalTo(false));
+        TreeNode treeNode = TreeNode.create(Arrays.asList(5, 3, 1));
+        assertThat(new Solution().checkTree(treeNode), equalTo(false));
     }
 }
