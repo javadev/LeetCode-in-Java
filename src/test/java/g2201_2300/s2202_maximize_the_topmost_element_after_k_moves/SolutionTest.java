@@ -15,4 +15,9 @@ class SolutionTest {
     void maximumTop2() {
         assertThat(new Solution().maximumTop(new int[] {2}, 1), equalTo(-1));
     }
+
+    @Test
+    void maximumTop3() {
+        assertThat(new Solution().maximumTop(new int[] {3}, 0), equalTo(3));
+    }
 }
