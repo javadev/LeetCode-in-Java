@@ -15,8 +15,8 @@ import com_github_leetcode.TreeNode;
  * }
  */
 public class Codec {
-    private final char split = (char) 0;
-    private final int min = 1;
+    private static final char SPLIT = (char) 0;
+    private static final int MIN = 1;
     private int cur;
 
     // Encodes a tree to a single string.
@@ -28,10 +28,10 @@ public class Codec {
 
     private void serializeDfs(TreeNode root, StringBuilder sb) {
         if (root == null) {
-            sb.append(split);
+            sb.append(SPLIT);
             return;
         }
-        sb.append((char) (root.val + min));
+        sb.append((char) (root.val + MIN));
         serializeDfs(root.left, sb);
         serializeDfs(root.right, sb);
     }
@@ -43,11 +43,11 @@ public class Codec {
     }
 
     private TreeNode deserializeDFS(char[] data) {
-        if (data[cur] == split) {
+        if (data[cur] == SPLIT) {
             cur++;
             return null;
         }
-        TreeNode node = new TreeNode((int) data[cur++] - min);
+        TreeNode node = new TreeNode(data[cur++] - MIN);
         node.left = deserializeDFS(data);
         node.right = deserializeDFS(data);
         return node;
