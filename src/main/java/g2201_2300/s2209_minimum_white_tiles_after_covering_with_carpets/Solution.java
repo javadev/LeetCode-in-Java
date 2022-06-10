@@ -8,7 +8,8 @@ public class Solution {
         int len = floor.length();
         int[][] dp = new int[numCarpets + 1][len + 1];
         int[] prefix = new int[len];
-        int tiles = 0, total = 0;
+        int tiles = 0;
+        int total = 0;
         for (int i = 0; i < len; i++) {
             // calculate total no of Tiles within the Carpet Length Window
             tiles += floor.charAt(i) - '0';
