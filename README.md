@@ -8,7 +8,7 @@
 [![javadoc](https://javadoc.io/badge2/com.github.javadev/leetcode-in-java/javadoc.svg)](https://javadoc.io/doc/com.github.javadev/leetcode-in-java)
 [![Known Vulnerabilities](https://snyk.io/test/github/javadev/leetcode-in-java/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/javadev/leetcode-in-java?targetFile=pom.xml)
 ![Java Version](https://img.shields.io/badge/java-%3E%3D%201.8-success)
-[![](https://img.shields.io/github/forks/javadev/LeetCode-in-Java?label=Fork%20me%20on%20GitHub%20&style=flat-square)](https://github.com/javadev/LeetCode-in-Java)
+[![](https://img.shields.io/github/forks/javadev/LeetCode-in-Java?label=Fork%20me%20on%20GitHub%20&style=flat-square)](https://github.com/javadev/LeetCode-in-Java/fork)
 
 Java Solution for LeetCode algorithm problems, continually updating.
 
