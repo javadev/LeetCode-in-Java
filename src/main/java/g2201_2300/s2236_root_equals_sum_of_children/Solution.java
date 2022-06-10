@@ -6,9 +6,6 @@ import com_github_leetcode.TreeNode;
 
 public class Solution {
     public boolean checkTree(TreeNode root) {
-        if (root.left.val + root.right.val == root.val) {
-            return true;
-        }
-        return false;
+        return root.left.val + root.right.val == root.val;
     }
 }
