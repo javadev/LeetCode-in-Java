@@ -14,4 +14,11 @@ class SolutionTest {
         };
         assertThat(new Solution().findRestaurant(list1, list2), equalTo(new String[] {"Shogun"}));
     }
+
+    @Test
+    void findRestaurant2() {
+        String[] list1 = {"Shogun", "Tapioca Express", "Burger King", "KFC"};
+        String[] list2 = {"KFC", "Shogun", "Burger King"};
+        assertThat(new Solution().findRestaurant(list1, list2), equalTo(new String[] {"Shogun"}));
+    }
 }
