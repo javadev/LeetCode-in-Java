@@ -12,4 +12,9 @@ class SolutionTest {
                 new Solution().maxSlidingWindow(new int[] {1, 3, -1, -3, 5, 3, 6, 7}, 3),
                 equalTo(new int[] {3, 3, 5, 5, 6, 7}));
     }
+
+    @Test
+    void maxSlidingWindow2() {
+        assertThat(new Solution().maxSlidingWindow(new int[] {1}, 1), equalTo(new int[] {1}));
+    }
 }

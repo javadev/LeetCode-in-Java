@@ -10,4 +10,9 @@ class SolutionTest {
     void firstBadVersion() {
         assertThat(new Solution().firstBadVersion(5), equalTo(4));
     }
+
+    @Test
+    void firstBadVersion2() {
+        assertThat(new Solution().firstBadVersion(1), equalTo(1));
+    }
 }

@@ -4,25 +4,20 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import com_github_leetcode.TreeNode;
+import com_github_leetcode.TreeUtils;
+import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
     void invertTree() {
-        TreeNode leftBottomLeft = new TreeNode(1);
-        TreeNode leftBottomRight = new TreeNode(3);
-        TreeNode left = new TreeNode(2, leftBottomLeft, leftBottomRight);
-        TreeNode rightBottomLeft = new TreeNode(6);
-        TreeNode rightBottomRight = new TreeNode(9);
-        TreeNode right = new TreeNode(7, rightBottomLeft, rightBottomRight);
-        TreeNode root = new TreeNode(4, left, right);
-        TreeNode leftBottomLeftInverted = new TreeNode(9);
-        TreeNode leftBottomRightInverted = new TreeNode(6);
-        TreeNode leftInverted = new TreeNode(7, leftBottomLeftInverted, leftBottomRightInverted);
-        TreeNode rightBottomLeftInverted = new TreeNode(3);
-        TreeNode rightBottomRightInverted = new TreeNode(1);
-        TreeNode rightInverted = new TreeNode(2, rightBottomLeftInverted, rightBottomRightInverted);
-        TreeNode rootInverted = new TreeNode(4, leftInverted, rightInverted);
-        assertThat(new Solution().invertTree(root).toString(), equalTo(rootInverted.toString()));
+        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(4, 2, 7, 1, 3, 6, 9));
+        assertThat(new Solution().invertTree(root).toString(), equalTo("4,7,9,6,2,3,1"));
+    }
+
+    @Test
+    void invertTree2() {
+        TreeNode root = TreeUtils.constructBinaryTree(Arrays.asList(2, 1, 3));
+        assertThat(new Solution().invertTree(root).toString(), equalTo("2,3,1"));
     }
 }

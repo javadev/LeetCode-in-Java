@@ -10,4 +10,9 @@ class SolutionTest {
     void rectangleArea() {
         assertThat(new Solution().computeArea(-3, 0, 3, 4, 0, -1, 9, 2), equalTo(45));
     }
+
+    @Test
+    void rectangleArea2() {
+        assertThat(new Solution().computeArea(-2, -2, 2, 2, -2, -2, 2, 2), equalTo(16));
+    }
 }
