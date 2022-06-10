@@ -6,7 +6,7 @@
 [![CodeQL](https://github.com/javadev/LeetCode-in-Java/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/javadev/LeetCode-in-Java/actions/workflows/codeql-analysis.yml)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=javadev_LeetCode-in-Java&metric=sqale_rating)](https://sonarcloud.io/summary/overall?id=javadev_LeetCode-in-Java)
 [![javadoc](https://javadoc.io/badge2/com.github.javadev/leetcode-in-java/javadoc.svg)](https://javadoc.io/doc/com.github.javadev/leetcode-in-java)
-[![](https://img.shields.io/github/forks/javadev/LeetCode-in-Java?label=Fork%20me%20on%20GitHub%20&style=flat-square)](https://github.com/javadev/LeetCode-in-Java/fork)
+[![](https://img.shields.io/github/forks/javadev/LeetCode-in-Java?label=Fork%20me%20on%20GitHub%20)](https://github.com/javadev/LeetCode-in-Java/fork)
 
 Java Solution for LeetCode algorithm problems, continually updating.
 
