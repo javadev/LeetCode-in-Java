@@ -44,6 +44,12 @@ class TreeNodeTest {
     }
 
     @Test
+    void create6() {
+        TreeNode treeNode = TreeNode.create(Collections.emptyList());
+        assertThat(treeNode, equalTo(null));
+    }
+
+    @Test
     void constructor() {
         TreeNode treeNode = new TreeNode(1, null, null);
         assertThat(treeNode.val, equalTo(1));
