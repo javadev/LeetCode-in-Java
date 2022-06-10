@@ -5,7 +5,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.Arrays;
 import java.util.Collections;
-
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
@@ -21,6 +20,7 @@ class SolutionTest {
 
     @Test
     void addOperators3() {
-        assertThat(new Solution().addOperators("3456237490", 9191), equalTo(Collections.emptyList()));
+        assertThat(
+                new Solution().addOperators("3456237490", 9191), equalTo(Collections.emptyList()));
     }
 }
