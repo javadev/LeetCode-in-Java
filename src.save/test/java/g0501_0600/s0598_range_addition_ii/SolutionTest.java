@@ -13,4 +13,17 @@ class SolutionTest {
                 CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[2,2],[3,3]");
         assertThat(new Solution().maxCount(3, 3, javaArray), equalTo(4));
     }
+
+    @Test
+    void maxCount2() {
+        int[][] javaArray =
+                CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                        "[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3]");
+        assertThat(new Solution().maxCount(3, 3, javaArray), equalTo(4));
+    }
+
+    @Test
+    void maxCount3() {
+        assertThat(new Solution().maxCount(3, 3, new int[][] {}), equalTo(9));
+    }
 }
