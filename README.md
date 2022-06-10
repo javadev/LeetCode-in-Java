@@ -1370,6 +1370,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2226 |[Maximum Candies Allocated to K Children](src/main/java/g2201_2300/s2226_maximum_candies_allocated_to_k_children/Solution.java)| Medium | Array, Binary_Search | 46 | 78.19
 | 2221 |[Find Triangular Sum of an Array](src/main/java/g2201_2300/s2221_find_triangular_sum_of_an_array/Solution.java)| Medium | Array, Math, Simulation, Combinatorics | 78 | 83.64
 | 2215 |[Find the Difference of Two Arrays](src/main/java/g2201_2300/s2215_find_the_difference_of_two_arrays/Solution.java)| Easy | Array, Hash_Table | 11 | 87.39
+| 2209 |[Minimum White Tiles After Covering With Carpets](src/main/java/g2201_2300/s2209_minimum_white_tiles_after_covering_with_carpets/Solution.java)| Hard | String, Dynamic_Programming, Prefix_Sum | 94 | 88.16
 | 2200 |[Find All K-Distant Indices in an Array](src.save/main/java/g2101_2200/s2200_find_all_k_distant_indices_in_an_array/Solution.java)| Easy | Array | 2 | 95.30
 | 2197 |[Replace Non-Coprime Numbers in Array](src.save/main/java/g2101_2200/s2197_replace_non_coprime_numbers_in_array/Solution.java)| Hard | Array, Math, Stack, Number_Theory | 60 | 85.52
 | 2196 |[Create Binary Tree From Descriptions](src.save/main/java/g2101_2200/s2196_create_binary_tree_from_descriptions/Solution.java)| Medium | Array, Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 85 | 76.70
