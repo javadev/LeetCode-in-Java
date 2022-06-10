@@ -10,4 +10,14 @@ class SolutionTest {
     void basicCalculatorII() {
         assertThat(new Solution().calculate("3+2*2"), equalTo(7));
     }
+
+    @Test
+    void basicCalculatorII2() {
+        assertThat(new Solution().calculate(" 3/2 "), equalTo(1));
+    }
+
+    @Test
+    void basicCalculatorII3() {
+        assertThat(new Solution().calculate(" 3+5 / 2 "), equalTo(5));
+    }
 }

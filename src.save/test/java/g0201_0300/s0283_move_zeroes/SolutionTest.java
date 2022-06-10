@@ -12,4 +12,11 @@ class SolutionTest {
         new Solution().moveZeroes(array);
         assertThat(array, equalTo(new int[] {1, 3, 12, 0, 0}));
     }
+
+    @Test
+    void moveZeroes2() {
+        int[] array = {0};
+        new Solution().moveZeroes(array);
+        assertThat(array, equalTo(new int[] {0}));
+    }
 }
