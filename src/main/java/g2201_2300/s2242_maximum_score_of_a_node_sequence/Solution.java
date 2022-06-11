@@ -4,6 +4,7 @@ package g2201_2300.s2242_maximum_score_of_a_node_sequence;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int maximumScore(int[] scores, int[][] edges) {
         // store only top 3 nodes (having highest scores)
