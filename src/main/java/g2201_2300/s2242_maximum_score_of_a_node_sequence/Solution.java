@@ -17,7 +17,8 @@ public class Solution {
         }
         int maxScore = -1;
         for (int[] edge : edges) {
-            int u = edge[0], v = edge[1];
+            int u = edge[0];
+            int v = edge[1];
             int score = scores[u] + scores[v];
             for (int i = 0; i < 3; i++) {
                 // if neighbour is current node, skip
