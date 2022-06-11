@@ -15,4 +15,9 @@ class SolutionTest {
     void maximumSubsequenceCount2() {
         assertThat(new Solution().maximumSubsequenceCount("aabb", "ab"), equalTo(6L));
     }
+
+    @Test
+    void maximumSubsequenceCount3() {
+        assertThat(new Solution().maximumSubsequenceCount("abdcdbc", "aa"), equalTo(1L));
+    }
 }
