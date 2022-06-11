@@ -18,9 +18,7 @@ public class Solution {
                 sum += s.charAt(i) - '0';
                 count++;
             }
-            if (count != 0) {
-                sb.append(sum);
-            }
+            sb.append(sum);
             s = sb.toString();
         }
         return s;
