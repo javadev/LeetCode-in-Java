@@ -9,7 +9,9 @@ public class Solution {
         if (first == second) {
             long res = 0;
             for (char c : text.toCharArray()) {
-                if (c == first) res++;
+                if (c == first) {
+                    res++;
+                }
             }
             return (res * (res + 1)) / 2;
         }
