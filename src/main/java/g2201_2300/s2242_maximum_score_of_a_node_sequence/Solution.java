@@ -1,6 +1,6 @@
 package g2201_2300.s2242_maximum_score_of_a_node_sequence;
 
-// #Hard #Array #Sorting #Graph #Enumeration #2022_06_11_Time_38_ms_(95.34%)_Space_132.6_MB_(13.98%)
+// #Hard #Array #Sorting #Graph #Enumeration #2022_06_11_Time_28_ms_(97.57%)_Space_133.9_MB_(11.84%)
 
 import java.util.Arrays;
 
@@ -64,11 +64,7 @@ public class Solution {
                 arr[2] = n;
             }
         } else {
-            if (scores[arr[0]] < scores[n]) {
-                arr[2] = arr[1];
-                arr[1] = arr[0];
-                arr[0] = n;
-            } else if (scores[arr[1]] < scores[n]) {
+            if (scores[arr[1]] < scores[n]) {
                 arr[2] = arr[1];
                 arr[1] = n;
             } else if (scores[arr[2]] < scores[n]) {
