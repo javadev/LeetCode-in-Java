@@ -26,7 +26,6 @@ public class Solution {
                 res += firstCount;
             }
         }
-        long ans = Math.max(res + secondCount, res + firstCount);
-        return ans;
+        return Math.max(res + secondCount, res + firstCount);
     }
 }
