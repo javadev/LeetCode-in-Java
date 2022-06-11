@@ -16,13 +16,15 @@ A **subsequence** is a string that can be derived from another string by deletin
 
 **Output:** 4
 
-**Explanation:** If we add pattern[0] = 'a' in between text[1] and text[2], we get "ab**a**dcdbc". Now, the number of times "ac" occurs as a subsequence is 4. 
+**Explanation:** 
+
+If we add pattern[0] = 'a' in between text[1] and text[2], we get "ab**a**dcdbc". Now, the number of times "ac" occurs as a subsequence is 4.
 
 Some other strings which have 4 subsequences "ac" after adding a character to text are "**a**abdcdbc" and "abd**a**cdbc". 
 
 However, strings such as "abdc**a**dbc", "abd**c**cdbc", and "abdcdbc**c**", although obtainable, have only 3 subsequences "ac" and are thus suboptimal. 
 
-It can be shown that it is not possible to get more than 4 subsequences "ac" by adding only one character.
+It can be shown that it is not possible to get more than 4 subsequences "ac" by adding only one character. 
 
 **Example 2:**
 
@@ -32,10 +34,10 @@ It can be shown that it is not possible to get more than 4 subsequences "ac" by 
 
 **Explanation:** 
 
-Some of the strings which can be obtained from text and have 6 subsequences "ab" are "**a**aabb", "aa**a**bb", and "aab**b**b".
+Some of the strings which can be obtained from text and have 6 subsequences "ab" are "**a**aabb", "aa**a**bb", and "aab**b**b". 
 
 **Constraints:**
 
-* `<code>`1 <= text.length <= 10 `<sup>`5 `</sup></code>`
-* `pattern.length == 2`
-* `text` and `pattern` consist only of lowercase English letters.
+*   <code>1 <= text.length <= 10<sup>5</sup></code>
+*   `pattern.length == 2`
+*   `text` and `pattern` consist only of lowercase English letters.
