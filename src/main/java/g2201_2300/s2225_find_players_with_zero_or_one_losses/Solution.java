@@ -21,12 +21,12 @@ public class Solution {
             map.putIfAbsent(winner, 0);
             map.put(loser, map.getOrDefault(loser, 0) + 1);
         }
-        for (int key : map.keySet()) {
-            if (map.get(key) == 0) {
-                list1.add(key);
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (entry.getValue() == 0) {
+                list1.add(entry.getKey());
             }
-            if (map.get(key) == 1) {
-                list2.add(key);
+            if (entry.getValue() == 1) {
+                list2.add(entry.getKey());
             }
         }
         Collections.sort(list1);
