@@ -1364,6 +1364,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2256 |[Minimum Average Difference](src/main/java/g2201_2300/s2256_minimum_average_difference/Solution.java)| Medium || 20 | 69.18
+| 2255 |[Count Prefixes of a Given String](src/main/java/g2201_2300/s2255_count_prefixes_of_a_given_string/Solution.java)| Easy || 1 | 94.82
 | 2248 |[Intersection of Multiple Arrays](src/main/java/g2201_2300/s2248_intersection_of_multiple_arrays/Solution.java)| Easy || 2 | 99.46
 | 2246 |[Longest Path With Different Adjacent Characters](src/main/java/g2201_2300/s2246_longest_path_with_different_adjacent_characters/Solution.java)| Hard | Array, String, Depth_First_Search, Tree, Graph, Topological_Sort | 75 | 97.79
 | 2245 |[Maximum Trailing Zeros in a Cornered Path](src/main/java/g2201_2300/s2245_maximum_trailing_zeros_in_a_cornered_path/Solution.java)| Medium | Array, Matrix, Prefix_Sum | 96 | 88.49
@@ -1375,8 +1377,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2236 |[Root Equals Sum of Children](src/main/java/g2201_2300/s2236_root_equals_sum_of_children/Solution.java)| Easy | Tree, Binary_Tree | 0 | 100.00
 | 2235 |[Add Two Integers](src/main/java/g2201_2300/s2235_add_two_integers/Solution.java)| Easy | Math | 1 | 48.94
 | 2234 |[Maximum Total Beauty of the Gardens](src/main/java/g2201_2300/s2234_maximum_total_beauty_of_the_gardens/Solution.java)| Hard | Array, Sorting, Greedy, Binary_Search, Two_Pointers | 63 | 73.03
+| 2227 |[Encrypt and Decrypt Strings](src/main/java/g2201_2300/s2227_encrypt_and_decrypt_strings/Encrypter.java)| Hard | Array, String, Hash_Table, Design, Trie | 143 | 74.74
 | 2226 |[Maximum Candies Allocated to K Children](src/main/java/g2201_2300/s2226_maximum_candies_allocated_to_k_children/Solution.java)| Medium | Array, Binary_Search | 46 | 78.19
+| 2225 |[Find Players With Zero or One Losses](src/main/java/g2201_2300/s2225_find_players_with_zero_or_one_losses/Solution.java)| Medium | Array, Hash_Table, Sorting, Counting | 96 | 87.03
+| 2224 |[Minimum Number of Operations to Convert Time](src/main/java/g2201_2300/s2224_minimum_number_of_operations_to_convert_time/Solution.java)| Easy | String, Greedy | 1 | 97.78
+| 2223 |[Sum of Scores of Built Strings](src/main/java/g2201_2300/s2223_sum_of_scores_of_built_strings/Solution.java)| Hard | String, Binary_Search, Hash_Function, String_Matching, Rolling_Hash, Suffix_Array | 21 | 63.91
+| 2222 |[Number of Ways to Select Buildings](src/main/java/g2201_2300/s2222_number_of_ways_to_select_buildings/Solution.java)| Medium | String, Dynamic_Programming, Prefix_Sum | 19 | 98.28
 | 2221 |[Find Triangular Sum of an Array](src/main/java/g2201_2300/s2221_find_triangular_sum_of_an_array/Solution.java)| Medium | Array, Math, Simulation, Combinatorics | 78 | 83.64
+| 2220 |[Minimum Bit Flips to Convert Number](src/main/java/g2201_2300/s2220_minimum_bit_flips_to_convert_number/Solution.java)| Easy | Bit_Manipulation | 1 | 67.86
+| 2218 |[Maximum Value of K Coins From Piles](src/main/java/g2201_2300/s2218_maximum_value_of_k_coins_from_piles/Solution.java)| Hard | Array, Dynamic_Programming, Prefix_Sum | 54 | 96.38
+| 2217 |[Find Palindrome With Fixed Length](src/main/java/g2201_2300/s2217_find_palindrome_with_fixed_length/Solution.java)| Medium | Array, Math | 37 | 88.60
 | 2216 |[Minimum Deletions to Make Array Beautiful](src/main/java/g2201_2300/s2216_minimum_deletions_to_make_array_beautiful/Solution.java)| Medium | Array, Greedy, Stack | 7 | 39.24
 | 2215 |[Find the Difference of Two Arrays](src/main/java/g2201_2300/s2215_find_the_difference_of_two_arrays/Solution.java)| Easy | Array, Hash_Table | 11 | 87.39
 | 2213 |[Longest Substring of One Repeating Character](src/main/java/g2201_2300/s2213_longest_substring_of_one_repeating_character/Solution.java)| Hard | Array, String, Ordered_Set, Segment_Tree | 141 | 86.81
@@ -1384,6 +1394,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2211 |[Count Collisions on a Road](src/main/java/g2201_2300/s2211_count_collisions_on_a_road/Solution.java)| Medium | String, Stack | 113 | 45.96
 | 2210 |[Count Hills and Valleys in an Array](src/main/java/g2201_2300/s2210_count_hills_and_valleys_in_an_array/Solution.java)| Easy | Array | 0 | 100.00
 | 2209 |[Minimum White Tiles After Covering With Carpets](src/main/java/g2201_2300/s2209_minimum_white_tiles_after_covering_with_carpets/Solution.java)| Hard | String, Dynamic_Programming, Prefix_Sum | 94 | 88.16
+| 2208 |[Minimum Operations to Halve Array Sum](src/main/java/g2201_2300/s2208_minimum_operations_to_halve_array_sum/Solution.java)| Medium | Array, Greedy, Heap_Priority_Queue | 237 | 89.24
 | 2207 |[Maximize Number of Subsequences in a String](src/main/java/g2201_2300/s2207_maximize_number_of_subsequences_in_a_string/Solution.java)| Medium | String, Greedy, Prefix_Sum | 8 | 100
 | 2206 |[Divide Array Into Equal Pairs](src/main/java/g2201_2300/s2206_divide_array_into_equal_pairs/Solution.java)| Easy | Array, Hash_Table, Bit_Manipulation, Counting | 1 | 100.00
 | 2203 |[Minimum Weighted Subgraph With the Required Paths](src/main/java/g2201_2300/s2203_minimum_weighted_subgraph_with_the_required_paths/Solution.java)| Hard | Graph, Shortest_Path | 92 | 97.26
