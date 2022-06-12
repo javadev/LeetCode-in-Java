@@ -15,7 +15,6 @@ public class Solution {
         List<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<>();
         List<List<Integer>> res = new ArrayList<>();
-
         for (int[] match : matches) {
             int winner = match[0];
             int loser = match[1];
@@ -24,7 +23,6 @@ public class Solution {
             }
             map.put(loser, map.getOrDefault(loser, 0) + 1);
         }
-
         for (int key : map.keySet()) {
             if (map.get(key) == 0) {
                 list1.add(key);
