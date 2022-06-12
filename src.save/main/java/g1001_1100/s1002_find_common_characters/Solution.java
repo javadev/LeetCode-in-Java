@@ -1,6 +1,6 @@
 package g1001_1100.s1002_find_common_characters;
 
-// #Easy #Array #String #Hash_Table #2022_02_20_Time_4_ms_(83.51%)_Space_43.9_MB_(23.45%)
+// #Easy #Array #String #Hash_Table #2022_06_12_Time_4_ms_(81.52%)_Space_44.9_MB_(22.84%)
 
 import java.util.ArrayList;
 import java.util.List;
