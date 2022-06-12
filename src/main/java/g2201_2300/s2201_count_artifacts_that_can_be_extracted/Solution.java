@@ -4,7 +4,6 @@ package g2201_2300.s2201_count_artifacts_that_can_be_extracted;
 
 public class Solution {
     public int digArtifacts(int n, int[][] artifacts, int[][] dig) {
-        int size = artifacts.length;
         int[][] ar = new int[n][n];
         for (int[] ints : dig) {
             ar[ints[0]][ints[1]] = 1;
@@ -27,7 +26,9 @@ public class Solution {
                     }
                     b++;
                 }
-                if (flag == 1) break;
+                if (flag == 1) {
+                    break;
+                }
                 a++;
             }
             if (a == x2 + 1 && b == y2 + 1) {

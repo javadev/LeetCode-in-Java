@@ -12,7 +12,9 @@ public class Solution {
         Map<Integer, Integer>[] g1 = new Map[n];
         Map<Integer, Integer>[] g2 = new Map[n];
         for (int[] edge : edges) {
-            int s1 = edge[0], s2 = edge[1], w = edge[2];
+            int s1 = edge[0];
+            int s2 = edge[1];
+            int w = edge[2];
             if (g1[s1] == null) {
                 g1[s1] = new HashMap<>();
             }
@@ -60,14 +62,14 @@ public class Solution {
         }
         return res;
     }
-}
 
-class State {
-    long w;
-    int id;
+    static class State {
+        long w;
+        int id;
 
-    State(int id, long w) {
-        this.id = id;
-        this.w = w;
+        State(int id, long w) {
+            this.id = id;
+            this.w = w;
+        }
     }
 }
