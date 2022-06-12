@@ -1,6 +1,6 @@
 package g2201_2300.s2256_minimum_average_difference;
 
-// #2022_06_12_Time_20_ms_(69.18%)_Space_72.2_MB_(82.10%)
+// #Medium #2022_06_12_Time_20_ms_(69.18%)_Space_72.2_MB_(82.10%)
 
 public class Solution {
     public int minimumAverageDifference(int[] nums) {
