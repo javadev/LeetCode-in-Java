@@ -4,8 +4,8 @@ package g2201_2300.s2217_find_palindrome_with_fixed_length;
 
 public class Solution {
     public long[] kthPalindrome(int[] queries, int intLength) {
-        long minHalf = (long) Math.pow(10, (intLength - 1) / 2);
-        long maxIndex = (long) Math.pow(10, (intLength + 1) / 2) - minHalf;
+        long minHalf = (long) Math.pow(10, (intLength - 1) / 2D);
+        long maxIndex = (long) Math.pow(10, (intLength + 1) / 2D) - minHalf;
         boolean isOdd = intLength % 2 == 1;
         long[] res = new long[queries.length];
         for (int i = 0; i < res.length; i++) {
