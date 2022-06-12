@@ -1,28 +1,29 @@
 package g2201_2300.s2256_minimum_average_difference;
 
-// #Medium #2022_06_12_Time_20_ms_(69.18%)_Space_72.2_MB_(82.10%)
+// #Medium #2022_06_12_Time_15_ms_(97.85%)_Space_71.2_MB_(84.53%)
 
 public class Solution {
     public int minimumAverageDifference(int[] nums) {
-        int n = nums.length;
-        long sum = 0;
-        for (int i = 0; i < n; i++) {
-            sum += nums[i];
+        long numsSum = 0;
+        for (int num : nums) {
+            numsSum += num;
         }
-        long min = Integer.MAX_VALUE;
-        int ans = -1;
-        long left = 0;
-        for (int i = 0; i < n; i++) {
-            left += nums[i];
-            sum -= nums[i];
-            long l = left / (i + 1);
-            long r = (i == n - 1) ? 0 : sum / (n - i - 1);
-            long abso = Math.abs(l - r);
-            if (min > abso) {
-                min = abso;
-                ans = i;
+        long minAverageDiff = Long.MAX_VALUE;
+        long sumFromFront = 0;
+        int index = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sumFromFront += nums[i];
+            int numbersRight = i == nums.length - 1 ? 1 : nums.length - i - 1;
+            long averageDiff =
+                    Math.abs(sumFromFront / (i + 1) - (numsSum - sumFromFront) / numbersRight);
+            if (minAverageDiff > averageDiff) {
+                minAverageDiff = averageDiff;
+                index = i;
+            }
+            if (averageDiff == 0) {
+                break;
             }
         }
-        return ans;
+        return index;
     }
 }
