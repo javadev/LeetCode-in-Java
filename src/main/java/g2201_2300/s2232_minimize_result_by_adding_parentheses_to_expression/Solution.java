@@ -1,6 +1,6 @@
 package g2201_2300.s2232_minimize_result_by_adding_parentheses_to_expression;
 
-// #Medium #String #Enumeration #2022_06_12_Time_2_ms_(85.97%)_Space_42.5_MB_(39.48%)
+// #Medium #String #Enumeration #2022_06_12_Time_1_ms_(99.60%)_Space_40.1_MB_(100.00%)
 
 public class Solution {
     // Variables for final solution, to avoid create combination Strings
@@ -24,10 +24,6 @@ public class Solution {
             if (i == currentRight) {
                 stringBuilder.append(')');
             }
-        }
-        // Edge case, if parentheses need to be inserted at the end of expression
-        if (currentRight == expression.length()) {
-            stringBuilder.append(')');
         }
         return stringBuilder.toString();
     }
