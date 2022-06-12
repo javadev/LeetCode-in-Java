@@ -16,7 +16,6 @@ public class Solution {
             }
             i = j + 2;
         }
-
         if ((nums.length - offset) % 2 != 0) {
             res++;
         }
