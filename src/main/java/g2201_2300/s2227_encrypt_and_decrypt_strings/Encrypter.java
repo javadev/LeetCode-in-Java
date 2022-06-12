@@ -85,7 +85,7 @@ public class Encrypter {
         return ans;
     }
 
-    static class Trie {
+    private static class Trie {
         Map<Character, Trie> links = new HashMap<>();
         boolean isTerminal = false;
         String word = null;
