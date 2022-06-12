@@ -6,7 +6,8 @@ public class Solution {
     public int minDeletion(int[] nums) {
         int offset = 0;
         int res = 0;
-        for (int i = 0; i < nums.length; ) {
+        int i = 0;
+        while (i < nums.length) {
             int j = i;
             while (j < nums.length - 1 && nums[j + 1] == nums[j] && (j - offset) % 2 == 0) {
                 offset++;

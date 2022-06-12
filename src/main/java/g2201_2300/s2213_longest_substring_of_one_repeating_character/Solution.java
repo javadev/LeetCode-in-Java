@@ -35,6 +35,7 @@ public class Solution {
 
         for (int i = 0; i < qChar.length; i++) {
             updateTree(root, queryIndices[i], qChar[i]);
+            assert root != null;
             result[i] = root.max;
         }
         return result;
