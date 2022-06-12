@@ -11,7 +11,9 @@ public class Solution {
         for (List<Integer> pile : piles) {
             int m = pile.size();
             int[] cum = new int[m + 1];
-            for (int i = 0; i < m; i++) cum[i + 1] = cum[i] + pile.get(i);
+            for (int i = 0; i < m; i++) {
+                cum[i + 1] = cum[i] + pile.get(i);
+            }
             int[] curdp = new int[k + 1];
             for (int i = 0; i <= k; i++) {
                 for (int j = 0; j <= m && i + j <= k; j++) {
