@@ -3,7 +3,6 @@ package g2201_2300.s2203_minimum_weighted_subgraph_with_the_required_paths;
 // #Hard #Graph #Shortest_Path #2022_06_12_Time_94_ms_(97.26%)_Space_90.7_MB_(99.32%)
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -23,9 +22,7 @@ public class Solution {
             graph[e[0]].add(new int[] {e[1], e[2]});
         }
         Queue<Node> queue =
-                new PriorityQueue(
-                        (Comparator<Node>)
-                                (node1, node2) -> Long.compare(node1.weight, node2.weight));
+                new PriorityQueue<>((node1, node2) -> Long.compare(node1.weight, node2.weight));
         queue.offer(new Node(0, src1, 0));
         weight[0][src1] = 0;
         queue.offer(new Node(1, src2, 0));
