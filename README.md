@@ -1377,11 +1377,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2234 |[Maximum Total Beauty of the Gardens](src/main/java/g2201_2300/s2234_maximum_total_beauty_of_the_gardens/Solution.java)| Hard | Array, Sorting, Greedy, Binary_Search, Two_Pointers | 63 | 73.03
 | 2226 |[Maximum Candies Allocated to K Children](src/main/java/g2201_2300/s2226_maximum_candies_allocated_to_k_children/Solution.java)| Medium | Array, Binary_Search | 46 | 78.19
 | 2221 |[Find Triangular Sum of an Array](src/main/java/g2201_2300/s2221_find_triangular_sum_of_an_array/Solution.java)| Medium | Array, Math, Simulation, Combinatorics | 78 | 83.64
+| 2216 |[Minimum Deletions to Make Array Beautiful](src/main/java/g2201_2300/s2216_minimum_deletions_to_make_array_beautiful/Solution.java)| Medium | Array, Greedy, Stack | 7 | 39.24
 | 2215 |[Find the Difference of Two Arrays](src/main/java/g2201_2300/s2215_find_the_difference_of_two_arrays/Solution.java)| Easy | Array, Hash_Table | 11 | 87.39
+| 2213 |[Longest Substring of One Repeating Character](src/main/java/g2201_2300/s2213_longest_substring_of_one_repeating_character/Solution.java)| Hard | Array, String, Ordered_Set, Segment_Tree | 141 | 86.81
+| 2212 |[Maximum Points in an Archery Competition](src/main/java/g2201_2300/s2212_maximum_points_in_an_archery_competition/Solution.java)| Medium | Array, Bit_Manipulation, Recursion, Enumeration | 7 | 78.16
+| 2211 |[Count Collisions on a Road](src/main/java/g2201_2300/s2211_count_collisions_on_a_road/Solution.java)| Medium | String, Stack | 113 | 45.96
+| 2210 |[Count Hills and Valleys in an Array](src/main/java/g2201_2300/s2210_count_hills_and_valleys_in_an_array/Solution.java)| Easy | Array | 0 | 100.00
 | 2209 |[Minimum White Tiles After Covering With Carpets](src/main/java/g2201_2300/s2209_minimum_white_tiles_after_covering_with_carpets/Solution.java)| Hard | String, Dynamic_Programming, Prefix_Sum | 94 | 88.16
 | 2207 |[Maximize Number of Subsequences in a String](src/main/java/g2201_2300/s2207_maximize_number_of_subsequences_in_a_string/Solution.java)| Medium | String, Greedy, Prefix_Sum | 8 | 100
 | 2206 |[Divide Array Into Equal Pairs](src/main/java/g2201_2300/s2206_divide_array_into_equal_pairs/Solution.java)| Easy | Array, Hash_Table, Bit_Manipulation, Counting | 1 | 100.00
-| 2203 |[Minimum Weighted Subgraph With the Required Paths](src/main/java/g2201_2300/s2203_minimum_weighted_subgraph_with_the_required_paths/Solution.java)| Hard | Graph, Shortest_Path | 241 | 50.34
+| 2203 |[Minimum Weighted Subgraph With the Required Paths](src/main/java/g2201_2300/s2203_minimum_weighted_subgraph_with_the_required_paths/Solution.java)| Hard | Graph, Shortest_Path | 92 | 97.26
 | 2202 |[Maximize the Topmost Element After K Moves](src/main/java/g2201_2300/s2202_maximize_the_topmost_element_after_k_moves/Solution.java)| Medium | Array, Greedy | 1 | 100.00
 | 2201 |[Count Artifacts That Can Be Extracted](src/main/java/g2201_2300/s2201_count_artifacts_that_can_be_extracted/Solution.java)| Medium | Array, Hash_Table, Simulation | 7 | 82.97
 | 2200 |[Find All K-Distant Indices in an Array](src.save/main/java/g2101_2200/s2200_find_all_k_distant_indices_in_an_array/Solution.java)| Easy | Array | 2 | 95.30
