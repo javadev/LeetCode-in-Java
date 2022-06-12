@@ -1379,7 +1379,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2221 |[Find Triangular Sum of an Array](src/main/java/g2201_2300/s2221_find_triangular_sum_of_an_array/Solution.java)| Medium | Array, Math, Simulation, Combinatorics | 78 | 83.64
 | 2215 |[Find the Difference of Two Arrays](src/main/java/g2201_2300/s2215_find_the_difference_of_two_arrays/Solution.java)| Easy | Array, Hash_Table | 11 | 87.39
 | 2209 |[Minimum White Tiles After Covering With Carpets](src/main/java/g2201_2300/s2209_minimum_white_tiles_after_covering_with_carpets/Solution.java)| Hard | String, Dynamic_Programming, Prefix_Sum | 94 | 88.16
+| 2207 |[Maximize Number of Subsequences in a String](src/main/java/g2201_2300/s2207_maximize_number_of_subsequences_in_a_string/Solution.java)| Medium | String, Greedy, Prefix_Sum | 8 | 100
+| 2206 |[Divide Array Into Equal Pairs](src/main/java/g2201_2300/s2206_divide_array_into_equal_pairs/Solution.java)| Easy | Array, Hash_Table, Bit_Manipulation, Counting | 1 | 100.00
+| 2203 |[Minimum Weighted Subgraph With the Required Paths](src/main/java/g2201_2300/s2203_minimum_weighted_subgraph_with_the_required_paths/Solution.java)| Hard | Graph, Shortest_Path | 241 | 50.34
 | 2202 |[Maximize the Topmost Element After K Moves](src/main/java/g2201_2300/s2202_maximize_the_topmost_element_after_k_moves/Solution.java)| Medium | Array, Greedy | 1 | 100.00
+| 2201 |[Count Artifacts That Can Be Extracted](src/main/java/g2201_2300/s2201_count_artifacts_that_can_be_extracted/Solution.java)| Medium | Array, Hash_Table, Simulation | 7 | 82.97
 | 2200 |[Find All K-Distant Indices in an Array](src.save/main/java/g2101_2200/s2200_find_all_k_distant_indices_in_an_array/Solution.java)| Easy | Array | 2 | 95.30
 | 2197 |[Replace Non-Coprime Numbers in Array](src.save/main/java/g2101_2200/s2197_replace_non_coprime_numbers_in_array/Solution.java)| Hard | Array, Math, Stack, Number_Theory | 60 | 85.52
 | 2196 |[Create Binary Tree From Descriptions](src.save/main/java/g2101_2200/s2196_create_binary_tree_from_descriptions/Solution.java)| Medium | Array, Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 85 | 76.70
