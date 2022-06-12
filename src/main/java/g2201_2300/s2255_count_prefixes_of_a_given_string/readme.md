@@ -1,4 +1,4 @@
-2255. Count Prefixes of a Given String
+2255\. Count Prefixes of a Given String
 
 Easy
 
@@ -14,11 +14,11 @@ A **prefix** of a string is a substring that occurs at the beginning of the stri
 
 **Output:** 3
 
-**Explanation:** 
+**Explanation:**
 
-The strings in words which are a prefix of s = "abc" are: 
+The strings in words which are a prefix of s = "abc" are:
 
-"a", "ab", and "abc". 
+"a", "ab", and "abc".
 
 Thus the number of strings in words which are a prefix of s is 3.
 
@@ -28,14 +28,14 @@ Thus the number of strings in words which are a prefix of s is 3.
 
 **Output:** 2
 
-**Explanation:** 
+**Explanation:**
 
-Both of the strings are a prefix of s. 
+Both of the strings are a prefix of s.
 
 Note that the same string can occur multiple times in words, and it should be counted each time.
 
 **Constraints:**
 
-* `1 <= words.length <= 1000`
-* `1 <= words[i].length, s.length <= 10`
-* `words[i]` and `s` consist of lowercase English letters **only**.
+*   `1 <= words.length <= 1000`
+*   `1 <= words[i].length, s.length <= 10`
+*   `words[i]` and `s` consist of lowercase English letters **only**.
