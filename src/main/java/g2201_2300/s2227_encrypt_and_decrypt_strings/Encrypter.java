@@ -39,7 +39,9 @@ public class Encrypter {
     }
 
     public String encrypt(String word1) {
-        if (encMem.containsKey(word1)) return encMem.get(word1);
+        if (encMem.containsKey(word1)) {
+            return encMem.get(word1);
+        }
         StringBuilder res = new StringBuilder();
         for (int i = 0; i < word1.length(); i++) {
             if (!keysMap.containsKey(word1.charAt(i))) {
@@ -120,7 +122,7 @@ public class Encrypter {
                 }
                 if (i == p.length() - 1 && t.links.get(p.charAt(i)).isTerminal) {
                     return true;
-                } ;
+                }
                 t = t.links.get(p.charAt(i));
             }
             return false;

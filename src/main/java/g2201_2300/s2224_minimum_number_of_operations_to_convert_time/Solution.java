@@ -8,7 +8,9 @@ public class Solution {
         curr = curr * 60;
         curr += Integer.parseInt(current.substring(3));
 
-        int corr = (Integer.parseInt(correct.substring(0, 2)) * 60) + (Integer.parseInt(correct.substring(3)));
+        int corr =
+                (Integer.parseInt(correct.substring(0, 2)) * 60)
+                        + (Integer.parseInt(correct.substring(3)));
 
         int diff = corr - curr;
         int step = 0;

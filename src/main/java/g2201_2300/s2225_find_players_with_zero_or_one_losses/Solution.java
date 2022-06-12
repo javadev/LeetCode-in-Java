@@ -3,12 +3,11 @@ package g2201_2300.s2225_find_players_with_zero_or_one_losses;
 // #Medium #Array #Hash_Table #Sorting #Counting
 // #2022_06_12_Time_96_ms_(87.03%)_Space_105.4_MB_(75.62%)
 
-
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Collections;
 
 public class Solution {
     public List<List<Integer>> findWinners(int[][] matches) {
@@ -16,7 +15,7 @@ public class Solution {
         List<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<>();
         List<List<Integer>> res = new ArrayList<>();
-        
+
         for (int[] match : matches) {
             int winner = match[0];
             int loser = match[1];
@@ -25,7 +24,7 @@ public class Solution {
             }
             map.put(loser, map.getOrDefault(loser, 0) + 1);
         }
-        
+
         for (int key : map.keySet()) {
             if (map.get(key) == 0) {
                 list1.add(key);
