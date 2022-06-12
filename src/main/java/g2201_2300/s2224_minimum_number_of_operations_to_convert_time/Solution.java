@@ -7,14 +7,11 @@ public class Solution {
         int curr = Integer.parseInt(current.substring(0, 2));
         curr = curr * 60;
         curr += Integer.parseInt(current.substring(3));
-
         int corr =
                 (Integer.parseInt(correct.substring(0, 2)) * 60)
                         + (Integer.parseInt(correct.substring(3)));
-
         int diff = corr - curr;
         int step = 0;
-
         if (diff % 60 == 0) {
             step = diff / 60;
             return step;
@@ -22,7 +19,6 @@ public class Solution {
             step = diff / 60;
             diff = diff % 60;
         }
-
         if (diff >= 15) {
             if (diff % 15 == 0) {
                 step += diff / 15;
@@ -32,7 +28,6 @@ public class Solution {
                 diff = diff % 15;
             }
         }
-
         if (diff >= 5) {
             if (diff % 5 == 0) {
                 step += diff / 5;
@@ -42,9 +37,7 @@ public class Solution {
                 diff = diff % 5;
             }
         }
-
         step += diff;
-
         return step;
     }
 }
