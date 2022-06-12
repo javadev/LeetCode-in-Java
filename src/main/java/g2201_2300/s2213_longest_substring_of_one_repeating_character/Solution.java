@@ -7,15 +7,11 @@ public class Solution {
     static class TreeNode {
         int start;
         int end;
-
         char leftChar;
         int leftCharLen;
-
         char rightChar;
         int rightCharLen;
-
         int max;
-
         TreeNode left;
         TreeNode right;
 
@@ -32,11 +28,11 @@ public class Solution {
         char[] qChar = queryCharacters.toCharArray();
         TreeNode root = buildTree(sChar, 0, sChar.length - 1);
         int[] result = new int[qChar.length];
-
         for (int i = 0; i < qChar.length; i++) {
             updateTree(root, queryIndices[i], qChar[i]);
-            assert root != null;
-            result[i] = root.max;
+            if (root != null) {
+                result[i] = root.max;
+            }
         }
         return result;
     }
@@ -52,12 +48,9 @@ public class Solution {
             root.leftCharLen = root.rightCharLen = 1;
             return root;
         }
-
         int middle = from + (to - from) / 2;
-
         root.left = buildTree(s, from, middle);
         root.right = buildTree(s, middle + 1, to);
-
         updateNode(root);
         return root;
     }
@@ -72,7 +65,6 @@ public class Solution {
         }
         updateTree(root.left, index, c);
         updateTree(root.right, index, c);
-
         updateNode(root);
     }
 
