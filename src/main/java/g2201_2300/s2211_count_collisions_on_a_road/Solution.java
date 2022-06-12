@@ -10,7 +10,7 @@ public class Solution {
         if (directions == null || directions.length() == 1) {
             return 0;
         }
-        Deque <Character> stack = new ArrayDeque<>();
+        Deque<Character> stack = new ArrayDeque<>();
         char[] direction = directions.toCharArray();
         char prevc = '0';
         int collision = 0;
