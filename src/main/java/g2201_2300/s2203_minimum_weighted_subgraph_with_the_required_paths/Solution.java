@@ -19,17 +19,14 @@ public class Solution {
                 g1[s1] = new HashMap<>();
             }
             g1[s1].put(s2, Math.min(w, g1[s1].getOrDefault(s2, Integer.MAX_VALUE)));
-
             if (g2[s2] == null) {
                 g2[s2] = new HashMap<>();
             }
             g2[s2].put(s1, Math.min(w, g2[s2].getOrDefault(s1, Integer.MAX_VALUE)));
         }
-
         Long[] dist1 = dijkstra(g1, src1);
         Long[] dist2 = dijkstra(g1, src2);
         Long[] dist3 = dijkstra(g2, dest);
-
         Long res = null;
         for (int i = 0; i < n; i += 1) {
             if (dist1[i] != null && dist2[i] != null && dist3[i] != null) {
@@ -63,7 +60,7 @@ public class Solution {
         return res;
     }
 
-    static class State {
+    private static class State {
         long w;
         int id;
 
