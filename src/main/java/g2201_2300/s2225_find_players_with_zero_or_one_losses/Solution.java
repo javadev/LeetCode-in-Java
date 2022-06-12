@@ -18,9 +18,7 @@ public class Solution {
         for (int[] match : matches) {
             int winner = match[0];
             int loser = match[1];
-            if (!map.containsKey(winner)) {
-                map.put(winner, 0);
-            }
+            map.putIfAbsent(winner, 0);
             map.put(loser, map.getOrDefault(loser, 0) + 1);
         }
         for (int key : map.keySet()) {
