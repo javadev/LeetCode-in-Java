@@ -16,4 +16,9 @@ class SolutionTest {
     void minimumAverageDifference2() {
         assertThat(new Solution().minimumAverageDifference(new int[] {0}), equalTo(0));
     }
+
+    @Test
+    void minimumAverageDifference3() {
+        assertThat(new Solution().minimumAverageDifference(new int[] {4, 2, 0}), equalTo(2));
+    }
 }
