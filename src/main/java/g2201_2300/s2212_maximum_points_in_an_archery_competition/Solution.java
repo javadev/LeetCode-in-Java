@@ -22,13 +22,11 @@ public class Solution {
             }
             return;
         }
-
         if (aliceArrows[index] + 1 <= numArrows) {
             ans[index] = aliceArrows[index] + 1;
             solve(numArrows - (aliceArrows[index] + 1), aliceArrows, index - 1, sum + index);
             ans[index] = 0;
         }
-
         solve(numArrows, aliceArrows, index - 1, sum);
     }
 }
