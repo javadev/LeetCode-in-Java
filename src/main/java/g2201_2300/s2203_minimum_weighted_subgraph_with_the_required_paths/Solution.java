@@ -1,6 +1,6 @@
 package g2201_2300.s2203_minimum_weighted_subgraph_with_the_required_paths;
 
-// #Hard #Graph #Shortest_Path #2022_06_12_Time_96_ms_(97.26%)_Space_93.5_MB_(99.32%)
+// #Hard #Graph #Shortest_Path #2022_06_12_Time_92_ms_(97.26%)_Space_93.5_MB_(99.32%)
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -29,10 +29,6 @@ public class Solution {
         weight[1][src2] = 0;
         while (!queue.isEmpty()) {
             Node curr = queue.poll();
-            if (curr.weight > weight[curr.index][curr.vertex]
-                    || curr.weight > weight[2][curr.vertex]) {
-                continue;
-            }
             if (curr.vertex == dest && curr.index == 2) {
                 return curr.weight;
             }
