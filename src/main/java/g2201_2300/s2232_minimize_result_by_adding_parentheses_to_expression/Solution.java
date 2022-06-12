@@ -16,7 +16,6 @@ public class Solution {
         // Build the final String. We add the parentheses to our expression in the already
         // calculated indices, defined as global variables.
         StringBuilder stringBuilder = new StringBuilder();
-
         for (int i = 0; i < expression.length(); i++) {
             if (i == currentLeft) {
                 stringBuilder.append('(');

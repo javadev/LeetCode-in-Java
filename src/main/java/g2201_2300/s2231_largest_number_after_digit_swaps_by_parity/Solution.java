@@ -5,13 +5,12 @@ package g2201_2300.s2231_largest_number_after_digit_swaps_by_parity;
 public class Solution {
     public int largestInteger(int num) {
         char[] str = String.valueOf(num).toCharArray();
-        int max = Integer.MIN_VALUE;
         char temp;
         for (int i = 0; i < str.length; i++) {
             temp = str[i];
             int swapIndex = i;
             boolean even = str[i] % 2 == 0;
-            max = Integer.MIN_VALUE;
+            int max = Integer.MIN_VALUE;
             if (even) {
                 for (int j = i + 1; j < str.length; j++) {
                     if (str[j] % 2 == 0 && str[j] > str[i] && str[j] > max) {
