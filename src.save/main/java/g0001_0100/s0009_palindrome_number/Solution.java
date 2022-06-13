@@ -1,6 +1,6 @@
 package g0001_0100.s0009_palindrome_number;
 
-// #Easy #Math #2022_02_17_Time_6_ms_(99.98%)_Space_41.3_MB_(57.22%)
+// #Easy #Math #2022_06_13_Time_13_ms_(58.99%)_Space_44.7_MB_(48.08%)
 
 public class Solution {
     public boolean isPalindrome(int x) {
