@@ -1858,7 +1858,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1624 |[Largest Substring Between Two Equal Characters](src.save/main/java/g1601_1700/s1624_largest_substring_between_two_equal_characters/Solution.java)| Easy | String, Hash_Table | 1 | 85.13
 | 1622 |[Fancy Sequence](src.save/main/java/g1601_1700/s1622_fancy_sequence/Fancy.java)| Hard | Math, Design, Segment_Tree | 40 | 96.55
 | 1621 |[Number of Sets of K Non-Overlapping Line Segments](src.save/main/java/g1601_1700/s1621_number_of_sets_of_k_non_overlapping_line_segments/Solution.java)| Medium | Dynamic_Programming, Math | 16 | 94.74
-| 1620 |[Coordinate With Maximum Network Quality](src.save/main/java/g1601_1700/s1620_coordinate_with_maximum_network_quality/Solution.java)| Medium | Array, Enumeration | 111 | 7.14
+| 1620 |[Coordinate With Maximum Network Quality](src.save/main/java/g1601_1700/s1620_coordinate_with_maximum_network_quality/Solution.java)| Medium | Array, Enumeration | 58 | 68.75
 | 1619 |[Mean of Array After Removing Some Elements](src.save/main/java/g1601_1700/s1619_mean_of_array_after_removing_some_elements/Solution.java)| Easy | Array, Sorting | 2 | 99.81
 | 1617 |[Count Subtrees With Max Distance Between Cities](src.save/main/java/g1601_1700/s1617_count_subtrees_with_max_distance_between_cities/Solution.java)| Hard | Dynamic_Programming, Tree, Bit_Manipulation, Bitmask, Enumeration | 52 | 78.95
 | 1616 |[Split Two Strings to Make Palindrome](src.save/main/java/g1601_1700/s1616_split_two_strings_to_make_palindrome/Solution.java)| Medium | String, Greedy, Two_Pointers | 4 | 89.77
@@ -2194,7 +2194,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1179 |[Reformat Department Table](src.save/main/java/g1101_1200/s1179_reformat_department_table/script.sql)| Easy | Database | 493 | 64.80
 | 1178 |[Number of Valid Words for Each Puzzle](src.save/main/java/g1101_1200/s1178_number_of_valid_words_for_each_puzzle/Solution.java)| Hard | Array, String, Hash_Table, Bit_Manipulation, Trie | 139 | 48.41
 | 1177 |[Can Make Palindrome from Substring](src.save/main/java/g1101_1200/s1177_can_make_palindrome_from_substring/Solution.java)| Medium | String, Hash_Table, Bit_Manipulation, Prefix_Sum | 13 | 93.08
-| 1175 |[Prime Arrangements](src.save/main/java/g1101_1200/s1175_prime_arrangements/Solution.java)| Easy | Math | 6 | 10.00
+| 1175 |[Prime Arrangements](src.save/main/java/g1101_1200/s1175_prime_arrangements/Solution.java)| Easy | Math | 0 | 100.00
 | 1172 |[Dinner Plate Stacks](src.save/main/java/g1101_1200/s1172_dinner_plate_stacks/DinnerPlates.java)| Hard | Hash_Table, Stack, Design, Heap_Priority_Queue | 63 | 96.74
 | 1171 |[Remove Zero Sum Consecutive Nodes from Linked List](src.save/main/java/g1101_1200/s1171_remove_zero_sum_consecutive_nodes_from_linked_list/Solution.java)| Medium | Hash_Table, Linked_List | 2 | 90.39
 | 1170 |[Compare Strings by Frequency of the Smallest Character](src.save/main/java/g1101_1200/s1170_compare_strings_by_frequency_of_the_smallest_character/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Binary_Search | 7 | 57.89
