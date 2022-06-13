@@ -1368,7 +1368,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2256 |[Minimum Average Difference](src/main/java/g2201_2300/s2256_minimum_average_difference/Solution.java)| Medium || 15 | 97.85
 | 2255 |[Count Prefixes of a Given String](src/main/java/g2201_2300/s2255_count_prefixes_of_a_given_string/Solution.java)| Easy || 1 | 94.82
 | 2251 |[Number of Flowers in Full Bloom](src/main/java/g2201_2300/s2251_number_of_flowers_in_full_bloom/Solution.java)| Hard || 113 | 69.23
-| 2250 |[Count Number of Rectangles Containing Each Point](src/main/java/g2201_2300/s2250_count_number_of_rectangles_containing_each_point/Solution.java)| Medium || 480 | 67.91
+| 2250 |[Count Number of Rectangles Containing Each Point](src/main/java/g2201_2300/s2250_count_number_of_rectangles_containing_each_point/Solution.java)| Medium || 49 | 98.80
 | 2249 |[Count Lattice Points Inside a Circle](src/main/java/g2201_2300/s2249_count_lattice_points_inside_a_circle/Solution.java)| Medium || 54 | 92.07
 | 2248 |[Intersection of Multiple Arrays](src/main/java/g2201_2300/s2248_intersection_of_multiple_arrays/Solution.java)| Easy || 2 | 99.46
 | 2246 |[Longest Path With Different Adjacent Characters](src/main/java/g2201_2300/s2246_longest_path_with_different_adjacent_characters/Solution.java)| Hard | Array, String, Depth_First_Search, Tree, Graph, Topological_Sort | 75 | 97.79
