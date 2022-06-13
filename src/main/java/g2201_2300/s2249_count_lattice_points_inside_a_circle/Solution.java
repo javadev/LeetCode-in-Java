@@ -18,8 +18,7 @@ public class Solution {
         for (int x = xMin; x <= xMax; x++) {
             for (int y = yMin; y <= yMax; y++) {
                 for (int[] c : circles) {
-                    if ((c[0] - x) * (c[0] - x) + (c[1] - y) * (c[1] - y)
-                            <= c[2] * c[2]) {
+                    if ((c[0] - x) * (c[0] - x) + (c[1] - y) * (c[1] - y) <= c[2] * c[2]) {
                         ans++;
                         break;
                     }

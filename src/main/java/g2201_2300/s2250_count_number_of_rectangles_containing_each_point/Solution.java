@@ -41,8 +41,7 @@ public class Solution {
             int mid = left + (right - left) / 2;
             if (list.get(mid) < target) {
                 left = mid + 1;
-            }
-            else {
+            } else {
                 right = mid;
             }
         }
