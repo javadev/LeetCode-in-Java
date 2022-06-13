@@ -1364,7 +1364,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
-| 2256 |[Minimum Average Difference](src/main/java/g2201_2300/s2256_minimum_average_difference/Solution.java)| Medium || 20 | 69.18
+| 2256 |[Minimum Average Difference](src/main/java/g2201_2300/s2256_minimum_average_difference/Solution.java)| Medium || 15 | 97.85
 | 2255 |[Count Prefixes of a Given String](src/main/java/g2201_2300/s2255_count_prefixes_of_a_given_string/Solution.java)| Easy || 1 | 94.82
 | 2248 |[Intersection of Multiple Arrays](src/main/java/g2201_2300/s2248_intersection_of_multiple_arrays/Solution.java)| Easy || 2 | 99.46
 | 2246 |[Longest Path With Different Adjacent Characters](src/main/java/g2201_2300/s2246_longest_path_with_different_adjacent_characters/Solution.java)| Hard | Array, String, Depth_First_Search, Tree, Graph, Topological_Sort | 75 | 97.79
@@ -1377,6 +1377,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2236 |[Root Equals Sum of Children](src/main/java/g2201_2300/s2236_root_equals_sum_of_children/Solution.java)| Easy | Tree, Binary_Tree | 0 | 100.00
 | 2235 |[Add Two Integers](src/main/java/g2201_2300/s2235_add_two_integers/Solution.java)| Easy | Math | 1 | 48.94
 | 2234 |[Maximum Total Beauty of the Gardens](src/main/java/g2201_2300/s2234_maximum_total_beauty_of_the_gardens/Solution.java)| Hard | Array, Sorting, Greedy, Binary_Search, Two_Pointers | 63 | 73.03
+| 2232 |[Minimize Result by Adding Parentheses to Expression](src/main/java/g2201_2300/s2232_minimize_result_by_adding_parentheses_to_expression/Solution.java)| Medium | String, Enumeration | 1 | 99.60
+| 2231 |[Largest Number After Digit Swaps by Parity](src/main/java/g2201_2300/s2231_largest_number_after_digit_swaps_by_parity/Solution.java)| Easy | Sorting, Heap_Priority_Queue | 1 | 98.32
 | 2227 |[Encrypt and Decrypt Strings](src/main/java/g2201_2300/s2227_encrypt_and_decrypt_strings/Encrypter.java)| Hard | Array, String, Hash_Table, Design, Trie | 143 | 74.74
 | 2226 |[Maximum Candies Allocated to K Children](src/main/java/g2201_2300/s2226_maximum_candies_allocated_to_k_children/Solution.java)| Medium | Array, Binary_Search | 46 | 78.19
 | 2225 |[Find Players With Zero or One Losses](src/main/java/g2201_2300/s2225_find_players_with_zero_or_one_losses/Solution.java)| Medium | Array, Hash_Table, Sorting, Counting | 96 | 87.03
