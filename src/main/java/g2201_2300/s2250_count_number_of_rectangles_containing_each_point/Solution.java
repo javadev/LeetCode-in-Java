@@ -1,6 +1,6 @@
 package g2201_2300.s2250_count_number_of_rectangles_containing_each_point;
 
-// #2022_06_13_Time_480_ms_(67.91%)_Space_101.4_MB_(59.28%)
+// #Medium #2022_06_13_Time_480_ms_(67.91%)_Space_101.4_MB_(59.28%)
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,7 +12,6 @@ public class Solution {
         for (int i = 1; i <= 100; i++) {
             bucket[i] = new ArrayList<>();
         }
-
         for (int[] rectangle : rectangles) {
             int w = rectangle[0], h = rectangle[1];
             bucket[h].add(w);
@@ -20,7 +19,6 @@ public class Solution {
         for (int i = 1; i <= 100; i++) {
             Collections.sort(bucket[i]);
         }
-
         int m = points.length;
         int[] res = new int[m];
         for (int i = 0; i < m; i++) {

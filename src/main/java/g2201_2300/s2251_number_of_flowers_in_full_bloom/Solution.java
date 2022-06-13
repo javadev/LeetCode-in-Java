@@ -1,6 +1,6 @@
 package g2201_2300.s2251_number_of_flowers_in_full_bloom;
 
-// #2022_06_13_Time_113_ms_(69.23%)_Space_113.1_MB_(51.62%)
+// #Hard #2022_06_13_Time_113_ms_(69.23%)_Space_113.1_MB_(51.62%)
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -18,7 +18,6 @@ public class Solution {
             t[i][1] = i;
         }
         Arrays.sort(t, Comparator.comparingInt(a -> a[0]));
-
         for (int[] ints : t) {
             while (!pq.isEmpty()) {
                 if (pq.peek().j < ints[0]) {
@@ -44,7 +43,7 @@ public class Solution {
         return ans;
     }
 
-    static class Pair {
+    private static class Pair {
         int i;
         int j;
 
