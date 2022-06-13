@@ -9,20 +9,11 @@ public class Solution {
         int n = rectangles.length;
         int q = points.length;
         int[][] es = new int[n + q][];
-        for (int i = 0; i < n; i++) {
-            es[i] = rectangles[i];
-        }
+        System.arraycopy(rectangles, 0, es, 0, n);
         for (int i = 0; i < q; i++) {
             es[n + i] = new int[] {points[i][0], points[i][1], i};
         }
-        Arrays.sort(
-                es,
-                (x, y) -> {
-                    if (x[0] != y[0]) {
-                        return -(x[0] - y[0]);
-                    }
-                    return x.length - y.length;
-                });
+        Arrays.sort(es, (x, y) -> x[0] != y[0] ? -(x[0] - y[0]) : x.length - y.length);
         int[] ct = new int[101];
         int[] ans = new int[q];
         for (int[] e : es) {
