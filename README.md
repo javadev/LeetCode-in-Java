@@ -46,7 +46,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0001 |[Two Sum](src.save/main/java/g0001_0100/s0001_two_sum/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table | 1 | 99.68
+| 0001 |[Two Sum](src.save/main/java/g0001_0100/s0001_two_sum/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table | 4 | 69.91
 | 0088 |[Merge Sorted Array](src.save/main/java/g0001_0100/s0088_merge_sorted_array/Solution.java)| Easy | Top_Interview_Questions, Array, Sorting, Two_Pointers | 0 | 100.00
 
 #### Day 3 Array
@@ -205,13 +205,13 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0187 |[Repeated DNA Sequences](src.save/main/java/g0101_0200/s0187_repeated_dna_sequences/Solution.java)| Medium | String, Hash_Table, Bit_Manipulation, Sliding_Window, Hash_Function, Rolling_Hash | 32 | 67.58
-| 0005 |[Longest Palindromic Substring](src.save/main/java/g0001_0100/s0005_longest_palindromic_substring/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming | 8 | 98.93
+| 0005 |[Longest Palindromic Substring](src.save/main/java/g0001_0100/s0005_longest_palindromic_substring/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming | 10 | 98.57
 
 #### Day 10 Linked List
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0002 |[Add Two Numbers](src.save/main/java/g0001_0100/s0002_add_two_numbers/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Math, Linked_List, Recursion | 1 | 100.00
+| 0002 |[Add Two Numbers](src.save/main/java/g0001_0100/s0002_add_two_numbers/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Math, Linked_List, Recursion | 2 | 98.23
 | 0142 |[Linked List Cycle II](src.save/main/java/g0101_0200/s0142_linked_list_cycle_ii/Solution.java)| Medium | Top_100_Liked_Questions, Hash_Table, Two_Pointers, Linked_List | 0 | 100.00
 
 #### Day 11 Linked List
@@ -337,7 +337,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0003 |[Longest Substring Without Repeating Characters](src.save/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window | 3 | 95.99
+| 0003 |[Longest Substring Without Repeating Characters](src.save/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window | 5 | 91.03
 | 0567 |[Permutation in String](src.save/main/java/g0501_0600/s0567_permutation_in_string/Solution.java)| Medium | String, Hash_Table, Two_Pointers, Sliding_Window | 4 | 95.23
 
 #### Day 7 Breadth-First Search Depth-First Search
@@ -501,7 +501,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0005 |[Longest Palindromic Substring](src.save/main/java/g0001_0100/s0005_longest_palindromic_substring/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming | 8 | 98.93
+| 0005 |[Longest Palindromic Substring](src.save/main/java/g0001_0100/s0005_longest_palindromic_substring/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming | 10 | 98.57
 | 0413 |[Arithmetic Slices](src.save/main/java/g0401_0500/s0413_arithmetic_slices/Solution.java)| Medium | Array, Dynamic_Programming | 0 | 100.00
 
 #### Day 15 Dynamic Programming
@@ -899,7 +899,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0005 |[Longest Palindromic Substring](src.save/main/java/g0001_0100/s0005_longest_palindromic_substring/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming | 8 | 98.93
+| 0005 |[Longest Palindromic Substring](src.save/main/java/g0001_0100/s0005_longest_palindromic_substring/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming | 10 | 98.57
 | 0516 |[Longest Palindromic Subsequence](src.save/main/java/g0501_0600/s0516_longest_palindromic_subsequence/Solution.java)| Medium | String, Dynamic_Programming | 31 | 96.10
 
 #### Day 18
@@ -1132,7 +1132,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0002 |[Add Two Numbers](src.save/main/java/g0001_0100/s0002_add_two_numbers/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Math, Linked_List, Recursion | 1 | 100.00
+| 0002 |[Add Two Numbers](src.save/main/java/g0001_0100/s0002_add_two_numbers/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Math, Linked_List, Recursion | 2 | 98.23
 | 0445 |[Add Two Numbers II](src.save/main/java/g0401_0500/s0445_add_two_numbers_ii/Solution.java)| Medium | Math, Stack, Linked_List | 3 | 81.96
 
 #### Day 16
@@ -3139,16 +3139,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0013 |[Roman to Integer](src.save/main/java/g0001_0100/s0013_roman_to_integer/Solution.java)| Easy | Top_Interview_Questions, String, Hash_Table, Math | 5 | 82.08
 | 0012 |[Integer to Roman](src.save/main/java/g0001_0100/s0012_integer_to_roman/Solution.java)| Medium | String, Hash_Table, Math | 7 | 70.99
 | 0011 |[Container With Most Water](src.save/main/java/g0001_0100/s0011_container_with_most_water/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Greedy, Two_Pointers, Algorithm_II_Day_4_Two_Pointers | 3 | 91.89
-| 0010 |[Regular Expression Matching](src.save/main/java/g0001_0100/s0010_regular_expression_matching/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Recursion | 1 | 100.00
-| 0009 |[Palindrome Number](src.save/main/java/g0001_0100/s0009_palindrome_number/Solution.java)| Easy | Math | 6 | 99.98
-| 0008 |[String to Integer (atoi)](src.save/main/java/g0001_0100/s0008_string_to_integer_atoi/Solution.java)| Medium | Top_Interview_Questions, String | 2 | 83.27
-| 0007 |[Reverse Integer](src.save/main/java/g0001_0100/s0007_reverse_integer/Solution.java)| Medium | Top_Interview_Questions, Math | 2 | 66.13
-| 0006 |[Zigzag Conversion](src.save/main/java/g0001_0100/s0006_zigzag_conversion/Solution.java)| Medium | String | 4 | 92.78
-| 0005 |[Longest Palindromic Substring](src.save/main/java/g0001_0100/s0005_longest_palindromic_substring/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Data_Structure_II_Day_9_String, Algorithm_II_Day_14_Dynamic_Programming, Dynamic_Programming_I_Day_17 | 8 | 98.93
-| 0004 |[Median of Two Sorted Arrays](src.save/main/java/g0001_0100/s0004_median_of_two_sorted_arrays/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Divide_and_Conquer | 3 | 79.08
-| 0003 |[Longest Substring Without Repeating Characters](src.save/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window, Algorithm_I_Day_6_Sliding_Window | 3 | 95.99
-| 0002 |[Add Two Numbers](src.save/main/java/g0001_0100/s0002_add_two_numbers/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Math, Linked_List, Recursion, Data_Structure_II_Day_10_Linked_List, Programming_Skills_II_Day_15 | 1 | 100.00
-| 0001 |[Two Sum](src.save/main/java/g0001_0100/s0001_two_sum/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Data_Structure_I_Day_2_Array | 1 | 99.68
+| 0010 |[Regular Expression Matching](src.save/main/java/g0001_0100/s0010_regular_expression_matching/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Recursion | 3 | 80.22
+| 0009 |[Palindrome Number](src.save/main/java/g0001_0100/s0009_palindrome_number/Solution.java)| Easy | Math | 13 | 58.99
+| 0008 |[String to Integer (atoi)](src.save/main/java/g0001_0100/s0008_string_to_integer_atoi/Solution.java)| Medium | Top_Interview_Questions, String | 3 | 57.89
+| 0007 |[Reverse Integer](src.save/main/java/g0001_0100/s0007_reverse_integer/Solution.java)| Medium | Top_Interview_Questions, Math | 2 | 66.74
+| 0006 |[Zigzag Conversion](src.save/main/java/g0001_0100/s0006_zigzag_conversion/Solution.java)| Medium | String | 3 | 98.64
+| 0005 |[Longest Palindromic Substring](src.save/main/java/g0001_0100/s0005_longest_palindromic_substring/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Data_Structure_II_Day_9_String, Algorithm_II_Day_14_Dynamic_Programming, Dynamic_Programming_I_Day_17 | 10 | 98.57
+| 0004 |[Median of Two Sorted Arrays](src.save/main/java/g0001_0100/s0004_median_of_two_sorted_arrays/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Divide_and_Conquer | 3 | 81.72
+| 0003 |[Longest Substring Without Repeating Characters](src.save/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window, Algorithm_I_Day_6_Sliding_Window | 5 | 91.03
+| 0002 |[Add Two Numbers](src.save/main/java/g0001_0100/s0002_add_two_numbers/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Math, Linked_List, Recursion, Data_Structure_II_Day_10_Linked_List, Programming_Skills_II_Day_15 | 2 | 98.23
+| 0001 |[Two Sum](src.save/main/java/g0001_0100/s0001_two_sum/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Data_Structure_I_Day_2_Array | 4 | 69.91
 
 ## Contributing
 Your ideas/fixes/algorithms are more than welcome!
