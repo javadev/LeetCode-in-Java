@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int[] fullBloomFlowers(int[][] flowers, int[] persons) {
         Arrays.sort(flowers, Comparator.comparingInt(a -> a[0]));
