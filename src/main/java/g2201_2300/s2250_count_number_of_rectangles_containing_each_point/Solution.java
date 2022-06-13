@@ -8,7 +8,6 @@ import java.util.List;
 
 public class Solution {
     public int[] countRectangles(int[][] rectangles, int[][] points) {
-        int n = rectangles.length;
         List<Integer>[] bucket = new ArrayList[101];
         for (int i = 1; i <= 100; i++) {
             bucket[i] = new ArrayList<>();
@@ -25,7 +24,8 @@ public class Solution {
         int m = points.length;
         int[] res = new int[m];
         for (int i = 0; i < m; i++) {
-            int x = points[i][0], y = points[i][1];
+            int x = points[i][0];
+            int y = points[i][1];
             int count = 0;
             for (int h = y; h < bucket.length; h++) {
                 int index = ceiling(bucket[h], x);
@@ -37,11 +37,16 @@ public class Solution {
     }
 
     private int ceiling(List<Integer> list, int target) {
-        int left = 0, right = list.size();
+        int left = 0;
+        int right = list.size();
         while (left < right) {
             int mid = left + (right - left) / 2;
-            if (list.get(mid) < target) left = mid + 1;
-            else right = mid;
+            if (list.get(mid) < target) {
+                left = mid + 1;
+            }
+            else {
+                right = mid;
+            }
         }
         return left;
     }
