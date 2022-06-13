@@ -1,6 +1,6 @@
 package g0001_0100.s0007_reverse_integer;
 
-// #Medium #Top_Interview_Questions #Math #2022_02_17_Time_2_ms_(66.13%)_Space_41.4_MB_(15.90%)
+// #Medium #Top_Interview_Questions #Math #2022_06_13_Time_2_ms_(66.74%)_Space_41.4_MB_(48.76%)
 
 public class Solution {
     public int reverse(int x) {
