@@ -1,52 +1,39 @@
 package g2201_2300.s2250_count_number_of_rectangles_containing_each_point;
 
-// #Medium #2022_06_13_Time_480_ms_(67.91%)_Space_101.4_MB_(59.28%)
+// #Medium #2022_06_13_Time_49_ms_(98.80%)_Space_71.8_MB_(79.17%)
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.Arrays;
 
-@SuppressWarnings("unchecked")
 public class Solution {
     public int[] countRectangles(int[][] rectangles, int[][] points) {
-        List<Integer>[] bucket = new ArrayList[101];
-        for (int i = 1; i <= 100; i++) {
-            bucket[i] = new ArrayList<>();
+        int n = rectangles.length;
+        int q = points.length;
+        int[][] es = new int[n + q][];
+        for (int i = 0; i < n; i++) {
+            es[i] = rectangles[i];
         }
-        for (int[] rectangle : rectangles) {
-            int w = rectangle[0];
-            int h = rectangle[1];
-            bucket[h].add(w);
+        for (int i = 0; i < q; i++) {
+            es[n + i] = new int[] {points[i][0], points[i][1], i};
         }
-        for (int i = 1; i <= 100; i++) {
-            Collections.sort(bucket[i]);
-        }
-        int m = points.length;
-        int[] res = new int[m];
-        for (int i = 0; i < m; i++) {
-            int x = points[i][0];
-            int y = points[i][1];
-            int count = 0;
-            for (int h = y; h < bucket.length; h++) {
-                int index = ceiling(bucket[h], x);
-                count += bucket[h].size() - index;
-            }
-            res[i] = count;
-        }
-        return res;
-    }
-
-    private int ceiling(List<Integer> list, int target) {
-        int left = 0;
-        int right = list.size();
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (list.get(mid) < target) {
-                left = mid + 1;
+        Arrays.sort(
+                es,
+                (x, y) -> {
+                    if (x[0] != y[0]) {
+                        return -(x[0] - y[0]);
+                    }
+                    return x.length - y.length;
+                });
+        int[] ct = new int[101];
+        int[] ans = new int[q];
+        for (int[] e : es) {
+            if (e.length == 2) {
+                for (int i = 0; i <= e[1]; i++) {
+                    ct[i]++;
+                }
             } else {
-                right = mid;
+                ans[e[2]] = ct[e[1]];
             }
         }
-        return left;
+        return ans;
     }
 }
