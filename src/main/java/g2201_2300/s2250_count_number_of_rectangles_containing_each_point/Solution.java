@@ -13,7 +13,8 @@ public class Solution {
             bucket[i] = new ArrayList<>();
         }
         for (int[] rectangle : rectangles) {
-            int w = rectangle[0], h = rectangle[1];
+            int w = rectangle[0];
+            int h = rectangle[1];
             bucket[h].add(w);
         }
         for (int i = 1; i <= 100; i++) {
