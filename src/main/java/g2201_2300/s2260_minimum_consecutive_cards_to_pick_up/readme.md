@@ -12,9 +12,9 @@ Return _the **minimum** number of **consecutive** cards you have to pick up to h
 
 **Output:** 4
 
-**Explanation:** We can pick up the cards [3,4,2,3] which contain a matching pair of cards with value 3. 
+**Explanation:** We can pick up the cards [3,4,2,3] which contain a matching pair of cards with value 3.
 
-Note that picking up the cards [4,2,3,4] is also optimal. 
+Note that picking up the cards [4,2,3,4] is also optimal.
 
 **Example 2:**
 

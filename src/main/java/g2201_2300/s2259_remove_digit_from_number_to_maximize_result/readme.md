@@ -20,7 +20,7 @@ Return _the resulting string after removing **exactly one occurrence** of_ `digi
 
 **Output:** "231"
 
-**Explanation:** We can remove the first '1' to get "231" or remove the second '1' to get "123". 
+**Explanation:** We can remove the first '1' to get "231" or remove the second '1' to get "123".
 
 Since 231 > 123, we return "231".
 
@@ -30,13 +30,13 @@ Since 231 > 123, we return "231".
 
 **Output:** "51"
 
-**Explanation:** We can remove either the first or second '5' from "551". 
+**Explanation:** We can remove either the first or second '5' from "551".
 
 Both result in the string "51".
 
 **Constraints:**
 
-* `2 <= number.length <= 100`
-* `number` consists of digits from `'1'` to `'9'`.
-* `digit` is a digit from `'1'` to `'9'`.
-* `digit` occurs at least once in `number`.
+*   `2 <= number.length <= 100`
+*   `number` consists of digits from `'1'` to `'9'`.
+*   `digit` is a digit from `'1'` to `'9'`.
+*   `digit` occurs at least once in `number`.
