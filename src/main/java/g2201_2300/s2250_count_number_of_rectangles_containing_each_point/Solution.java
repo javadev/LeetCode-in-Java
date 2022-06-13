@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public int[] countRectangles(int[][] rectangles, int[][] points) {
         List<Integer>[] bucket = new ArrayList[101];
