@@ -1364,6 +1364,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2260 |[Minimum Consecutive Cards to Pick Up](src/main/java/g2201_2300/s2260_minimum_consecutive_cards_to_pick_up/Solution.java)| Medium | Array, Hash_Table, Sliding_Window | 50 | 97.04
+| 2259 |[Remove Digit From Number to Maximize Result](src/main/java/g2201_2300/s2259_remove_digit_from_number_to_maximize_result/Solution.java)| Easy | String, Greedy, Enumeration | 1 | 97.73
 | 2257 |[Count Unguarded Cells in the Grid](src/main/java/g2201_2300/s2257_count_unguarded_cells_in_the_grid/Solution.java)| Medium || 32 | 70.28
 | 2256 |[Minimum Average Difference](src/main/java/g2201_2300/s2256_minimum_average_difference/Solution.java)| Medium || 15 | 97.85
 | 2255 |[Count Prefixes of a Given String](src/main/java/g2201_2300/s2255_count_prefixes_of_a_given_string/Solution.java)| Easy || 1 | 94.82
