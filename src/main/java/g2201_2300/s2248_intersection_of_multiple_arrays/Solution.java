@@ -1,6 +1,6 @@
 package g2201_2300.s2248_intersection_of_multiple_arrays;
 
-// #Easy #2022_06_09_Time_2_ms_(99.46%)_Space_42.6_MB_(92.53%)
+// #Easy #Array #Hash_Table #Counting #2022_06_09_Time_2_ms_(99.46%)_Space_42.6_MB_(92.53%)
 
 import java.util.ArrayList;
 import java.util.List;

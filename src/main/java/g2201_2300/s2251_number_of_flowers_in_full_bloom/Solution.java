@@ -1,6 +1,7 @@
 package g2201_2300.s2251_number_of_flowers_in_full_bloom;
 
-// #Hard #2022_06_13_Time_113_ms_(69.23%)_Space_113.1_MB_(51.62%)
+// #Hard #Array #Hash Table #Binary_Search #Sorting #Prefix_Sum #Ordered_Set
+// #2022_06_13_Time_113_ms_(69.23%)_Space_113.1_MB_(51.62%)
 
 import java.util.Arrays;
 import java.util.Comparator;
