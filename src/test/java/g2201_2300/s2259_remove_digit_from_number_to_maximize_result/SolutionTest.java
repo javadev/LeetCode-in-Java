@@ -8,16 +8,16 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void removeDigit() {
-        assertThat(new Solution().removeDigit("123", "3"), equalTo("12"));
+        assertThat(new Solution().removeDigit("123", '3'), equalTo("12"));
     }
 
     @Test
     void removeDigit2() {
-        assertThat(new Solution().removeDigit("1231", "1"), equalTo("231"));
+        assertThat(new Solution().removeDigit("1231", '1'), equalTo("231"));
     }
 
     @Test
     void removeDigit3() {
-        assertThat(new Solution().removeDigit("551", "5"), equalTo("51"));
+        assertThat(new Solution().removeDigit("551", '5'), equalTo("51"));
     }
 }
