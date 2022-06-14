@@ -1,21 +1,18 @@
 package g0001_0100.s0012_integer_to_roman;
 
-// #Medium #String #Hash_Table #Math #2022_02_17_Time_7_ms_(70.99%)_Space_44.8_MB_(31.56%)
+// #Medium #String #Hash_Table #Math #2022_06_14_Time_7_ms_(75.71%)_Space_44.7_MB_(72.78%)
 
 public class Solution {
     public String intToRoman(int num) {
-
         StringBuilder sb = new StringBuilder();
         int m = 1000;
         int c = 100;
         int x = 10;
         int i = 1;
-
         num = numerals(sb, num, m, ' ', ' ', 'M');
         num = numerals(sb, num, c, 'M', 'D', 'C');
         num = numerals(sb, num, x, 'C', 'L', 'X');
         numerals(sb, num, i, 'X', 'V', 'I');
-
         return sb.toString();
     }
 
