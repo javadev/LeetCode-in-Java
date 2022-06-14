@@ -10,13 +10,10 @@ import java.util.Deque;
 public class BookMyShow {
     private final int n;
     private final int m;
-
     // max number of seats in a row for some segment of the rows
     private final int[] max;
-
     // total number of seats for some segment of the rows
     private final long[] total;
-
     // number of rows with zero free places on the left and on the right
     // using this to quickly skip already zero rows
     // actual nodes are placed in [1,this.n], the first and last element only shows there the first
@@ -84,7 +81,9 @@ public class BookMyShow {
     public boolean scatter(int k, int maxRow) {
         // find total number of free places in the rows [0; maxRow+1)
         long sum = total(0, 0, n, maxRow + 1);
-        if (sum < k) return false;
+        if (sum < k) {
+            return false;
+        }
         int i = 0;
         // to don't update parent for both of its children we use a queue
         Deque<Integer> deque = new ArrayDeque<>();
@@ -139,7 +138,8 @@ public class BookMyShow {
     private static int nextPow2(int n) {
         if ((n & (n - 1)) == 0) {
             return n;
-        } else return Integer.highestOneBit(n) << 1;
+        }
+        return Integer.highestOneBit(n) << 1;
     }
 }
 
