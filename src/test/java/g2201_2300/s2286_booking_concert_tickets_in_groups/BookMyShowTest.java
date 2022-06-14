@@ -24,4 +24,12 @@ class BookMyShowTest {
         assertThat(bms.scatter(5, 1), equalTo(false));
         // There is only one seat left in the hall.
     }
+
+    @Test
+    void bookMyShow2() {
+        // There are 2 rows with 6 seats each
+        BookMyShow bms = new BookMyShow(2, 6);
+        assertThat(bms.scatter(2, 1), equalTo(true));
+        assertThat(bms.scatter(8, 0), equalTo(false));
+    }
 }
