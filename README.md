@@ -1384,6 +1384,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2236 |[Root Equals Sum of Children](src/main/java/g2201_2300/s2236_root_equals_sum_of_children/Solution.java)| Easy | Tree, Binary_Tree | 0 | 100.00
 | 2235 |[Add Two Integers](src/main/java/g2201_2300/s2235_add_two_integers/Solution.java)| Easy | Math | 1 | 48.94
 | 2234 |[Maximum Total Beauty of the Gardens](src/main/java/g2201_2300/s2234_maximum_total_beauty_of_the_gardens/Solution.java)| Hard | Array, Sorting, Greedy, Binary_Search, Two_Pointers | 63 | 73.03
+| 2233 |[Maximum Product After K Increments](src/main/java/g2201_2300/s2233_maximum_product_after_k_increments/Solution.java)| Medium | Array, Greedy, Heap_Priority_Queue | 364 | 75.06
 | 2232 |[Minimize Result by Adding Parentheses to Expression](src/main/java/g2201_2300/s2232_minimize_result_by_adding_parentheses_to_expression/Solution.java)| Medium | String, Enumeration | 1 | 99.60
 | 2231 |[Largest Number After Digit Swaps by Parity](src/main/java/g2201_2300/s2231_largest_number_after_digit_swaps_by_parity/Solution.java)| Easy | Sorting, Heap_Priority_Queue | 1 | 98.32
 | 2227 |[Encrypt and Decrypt Strings](src/main/java/g2201_2300/s2227_encrypt_and_decrypt_strings/Encrypter.java)| Hard | Array, String, Hash_Table, Design, Trie | 143 | 74.74
