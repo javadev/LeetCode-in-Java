@@ -1,7 +1,7 @@
 package g0001_0100.s0028_implement_strstr;
 
 // #Easy #Top_Interview_Questions #String #Two_Pointers #String_Matching
-// #Programming_Skills_II_Day_1 #2022_02_18_Time_462_ms_(62.14%)_Space_144.8_MB_(7.41%)
+// #Programming_Skills_II_Day_1 #2022_06_14_Time_0_ms_(100.00%)_Space_40.4_MB_(83.88%)
 
 public class Solution {
     public int strStr(String haystack, String needle) {
