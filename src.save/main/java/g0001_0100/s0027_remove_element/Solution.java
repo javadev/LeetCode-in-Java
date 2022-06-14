@@ -1,6 +1,6 @@
 package g0001_0100.s0027_remove_element;
 
-// #Easy #Array #Two_Pointers #2022_02_18_Time_0_ms_(100.00%)_Space_42.8_MB_(11.97%)
+// #Easy #Array #Two_Pointers #2022_06_14_Time_0_ms_(100.00%)_Space_42.5_MB_(46.77%)
 
 public class Solution {
     public int removeElement(int[] nums, int val) {
@@ -23,7 +23,6 @@ public class Solution {
                         return len - occurTimes;
                     }
                 }
-
                 nums[i] = nums[j];
                 j--;
             }

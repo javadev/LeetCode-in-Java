@@ -2,7 +2,7 @@ package g0001_0100.s0022_generate_parentheses;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming
 // #Backtracking #Algorithm_II_Day_11_Recursion_Backtracking
-// #2022_02_17_Time_1_ms_(87.91%)_Space_43.6_MB_(19.97%)
+// #2022_06_14_Time_2_ms_(63.16%)_Space_43.2_MB_(69.21%)
 
 import java.util.ArrayList;
 import java.util.List;
