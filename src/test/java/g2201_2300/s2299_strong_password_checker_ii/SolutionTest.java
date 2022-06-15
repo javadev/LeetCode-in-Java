@@ -29,4 +29,9 @@ class SolutionTest {
                                 "ecuwcfoyajkolntovfniplayrxhzpmhrkhzonopcwxgupzhoupw"),
                 equalTo(false));
     }
+
+    @Test
+    void strongPasswordCheckerII5() {
+        assertThat(new Solution().strongPasswordCheckerII("\"|{}"), equalTo(false));
+    }
 }
