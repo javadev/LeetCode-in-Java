@@ -18,7 +18,9 @@ class SolutionTest {
 
     @Test
     void countCollisions3() {
-        assertThat(new Solution().countCollisions("SRRLRLRSRLRSSRRLSLRLLRSLSLLSSRRLSRSLSLRRS"), equalTo(28));
+        assertThat(
+                new Solution().countCollisions("SRRLRLRSRLRSSRRLSLRLLRSLSLLSSRRLSRSLSLRRS"),
+                equalTo(28));
     }
 
     @Test
