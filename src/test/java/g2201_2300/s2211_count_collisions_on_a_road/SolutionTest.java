@@ -15,4 +15,14 @@ class SolutionTest {
     void countCollisions2() {
         assertThat(new Solution().countCollisions("LLRR"), equalTo(0));
     }
+
+    @Test
+    void countCollisions3() {
+        assertThat(new Solution().countCollisions("SRRLRLRSRLRSSRRLSLRLLRSLSLLSSRRLSRSLSLRRS"), equalTo(28));
+    }
+
+    @Test
+    void countCollisions4() {
+        assertThat(new Solution().countCollisions("SSRSSRLLRSLLRSRSSRLRRRRLLRRLSSRR"), equalTo(20));
+    }
 }
