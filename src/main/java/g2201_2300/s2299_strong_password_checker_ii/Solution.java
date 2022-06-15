@@ -27,8 +27,6 @@ public class Solution {
                 d = true;
             } else if (special.indexOf(ch) != -1) {
                 s = true;
-            } else {
-                return false;
             }
         }
         return l && u && d && s;
