@@ -23,4 +23,9 @@ class SolutionTest {
                 new Solution().minimumLines(new int[][] {{3, 4}, {1, 2}, {7, 8}, {2, 3}}),
                 equalTo(1));
     }
+
+    @Test
+    void minimumLines3() {
+        assertThat(new Solution().minimumLines(new int[][] {{3, 4}}), equalTo(0));
+    }
 }
