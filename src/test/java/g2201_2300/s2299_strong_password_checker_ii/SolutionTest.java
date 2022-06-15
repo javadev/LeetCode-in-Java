@@ -32,6 +32,6 @@ class SolutionTest {
 
     @Test
     void strongPasswordCheckerII5() {
-        assertThat(new Solution().strongPasswordCheckerII("\"|{}"), equalTo(false));
+        assertThat(new Solution().strongPasswordCheckerII("\"|{}\"|{}"), equalTo(false));
     }
 }
