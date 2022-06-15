@@ -6,26 +6,20 @@ public class Solution {
     private char[][] grid;
     private int m;
     private int n;
-    public static final char LFTPAR = '(';
-    public static final char RGTPAR = ')';
+    private static final char LFTPAR = '(';
+    private static final char RGTPAR = ')';
 
     public boolean hasValidPath(char[][] grid) {
         this.grid = grid;
         this.m = grid.length;
         this.n = grid[0].length;
         Boolean[][][] dp = new Boolean[m][n][m + n + 1];
-
         if (grid[0][0] == RGTPAR) {
             return false;
         }
-        if (grid[m - 1][n - 1] == LFTPAR) {
-            return false;
-        }
-
         if ((m + n) % 2 == 0) {
             return false;
         }
-
         return dfs(0, 0, 0, 0, dp);
     }
 
@@ -45,12 +39,13 @@ public class Solution {
             return dp[u][v][open - close];
         }
         if (u == m - 1) {
-            return dp[u][v][open - close] = dfs(u, v + 1, open, close, dp);
+            boolean result = dfs(u, v + 1, open, close, dp);
+            dp[u][v][open - close] = result;
+            return result;
         }
         if (v == n - 1) {
             return dfs(u + 1, v, open, close, dp);
         }
-
         boolean rslt = false;
         if (grid[u][v] == LFTPAR) {
             rslt = dfs(u + 1, v, open, close, dp) || dfs(u, v + 1, open, close, dp);
