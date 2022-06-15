@@ -11,7 +11,7 @@ public class Solution {
         StringBuilder sb = new StringBuilder();
         while (i < s.length() && j < s.length()) {
             sb.append(s.charAt(j) - '0');
-            int val = Integer.valueOf(sb.toString());
+            int val = Integer.parseInt(sb.toString());
             if (j - i + 1 == k) {
                 if (val != 0 && num % val == 0) {
                     count++;
