@@ -1,7 +1,7 @@
 package g0001_0100.s0036_valid_sudoku;
 
 // #Medium #Top_Interview_Questions #Array #Hash_Table #Matrix #Data_Structure_I_Day_5_Array
-// #2022_02_18_Time_2_ms_(92.22%)_Space_45.1_MB_(34.95%)
+// #2022_06_15_Time_2_ms_(95.85%)_Space_45.4_MB_(73.69%)
 
 public class Solution {
     private int j1;
