@@ -30,7 +30,7 @@ Note:
 
 **Output:** "000"
 
-**Explanation:** "000" is the only good integer. 
+**Explanation:** "000" is the only good integer.
 
 **Example 3:**
 
@@ -38,7 +38,7 @@ Note:
 
 **Output:** ""
 
-**Explanation:** No substring of length 3 consists of only one unique digit. Therefore, there are no good integers. 
+**Explanation:** No substring of length 3 consists of only one unique digit. Therefore, there are no good integers.
 
 **Constraints:**
 
