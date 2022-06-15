@@ -13,7 +13,7 @@ public class Solution {
         if (!map.containsKey(a) || !map.containsKey(b)) {
             return 0;
         }
-        int common = 0;
+        long common = 0;
         Set<String> first = map.get(a);
         Set<String> second = map.get(b);
         for (String c : first) {
