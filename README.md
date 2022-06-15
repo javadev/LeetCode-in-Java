@@ -1370,7 +1370,10 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2286 |[Booking Concert Tickets in Groups](src/main/java/g2201_2300/s2286_booking_concert_tickets_in_groups/BookMyShow.java)| Hard | Binary_Search, Design, Binary_Indexed_Tree, Segment_Tree | 283 | 67.08
 | 2280 |[Minimum Lines to Represent a Line Chart](src/main/java/g2201_2300/s2280_minimum_lines_to_represent_a_line_chart/Solution.java)| Medium | Array, Math, Geometry, Sorting, Number_Theory | 40 | 96.09
 | 2274 |[Maximum Consecutive Floors Without Special Floors](src/main/java/g2201_2300/s2274_maximum_consecutive_floors_without_special_floors/Solution.java)| Medium | Array, Sorting | 33 | 99.36
+| 2270 |[Number of Ways to Split Array](src/main/java/g2201_2300/s2270_number_of_ways_to_split_array/Solution.java)| Medium | Array, Prefix_Sum | 4 | 77.55
 | 2269 |[Find the K-Beauty of a Number](src/main/java/g2201_2300/s2269_find_the_k_beauty_of_a_number/Solution.java)| Easy | Math, String, Sliding_Window | 2 | 38.88
+| 2267 |[Check if There Is a Valid Parentheses String Path](src/main/java/g2201_2300/s2267_check_if_there_is_a_valid_parentheses_string_path/Solution.java)| Hard | Array, Dynamic_Programming, Matrix | 93 | 77.48
+| 2266 |[Count Number of Texts](src/main/java/g2201_2300/s2266_count_number_of_texts/Solution.java)| Medium | Hash_Table, Math, String, Dynamic_Programming | 38 | 81.43
 | 2265 |[Count Nodes Equal to Average of Subtree](src/main/java/g2201_2300/s2265_count_nodes_equal_to_average_of_subtree/Solution.java)| Medium | Tree, Depth_First_Search, Binary_Tree | 1 | 99.12
 | 2264 |[Largest 3-Same-Digit Number in String](src/main/java/g2201_2300/s2264_largest_3_same_digit_number_in_string/Solution.java)| Easy | String | 3 | 74.57
 | 2262 |[Total Appeal of A String](src/main/java/g2201_2300/s2262_total_appeal_of_a_string/Solution.java)| Hard | Hash_Table, String, Dynamic_Programming | 6 | 97.92
