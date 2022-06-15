@@ -1364,6 +1364,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2306 |[Naming a Company](src/main/java/g2301_2400/s2306_naming_a_company/Solution.java)| Hard | Array, Hash_Table, String, Bit_Manipulation, Enumeration | 486 | 74.14
 | 2300 |[Successful Pairs of Spells and Potions](src/main/java/g2201_2300/s2300_successful_pairs_of_spells_and_potions/Solution.java)| Medium | Array, Two_Pointers, Binary_Search, Sorting | 85 | 71.70
 | 2299 |[Strong Password Checker II](src/main/java/g2201_2300/s2299_strong_password_checker_ii/Solution.java)| Easy | String | 1 | 97.32
 | 2293 |[Min Max Game](src/main/java/g2201_2300/s2293_min_max_game/Solution.java)| Easy | Array, Simulation | 1 | 90.39
