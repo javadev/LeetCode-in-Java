@@ -1368,6 +1368,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2293 |[Min Max Game](src/main/java/g2201_2300/s2293_min_max_game/Solution.java)| Easy | Array, Simulation | 1 | 90.39
 | 2286 |[Booking Concert Tickets in Groups](src/main/java/g2201_2300/s2286_booking_concert_tickets_in_groups/BookMyShow.java)| Hard | Binary_Search, Design, Binary_Indexed_Tree, Segment_Tree | 283 | 67.08
 | 2280 |[Minimum Lines to Represent a Line Chart](src/main/java/g2201_2300/s2280_minimum_lines_to_represent_a_line_chart/Solution.java)| Medium | Array, Math, Geometry, Sorting, Number_Theory | 40 | 96.09
+| 2274 |[Maximum Consecutive Floors Without Special Floors](src/main/java/g2201_2300/s2274_maximum_consecutive_floors_without_special_floors/Solution.java)| Medium | Array, Sorting | 33 | 99.36
 | 2260 |[Minimum Consecutive Cards to Pick Up](src/main/java/g2201_2300/s2260_minimum_consecutive_cards_to_pick_up/Solution.java)| Medium | Array, Hash_Table, Sliding_Window | 50 | 97.04
 | 2259 |[Remove Digit From Number to Maximize Result](src/main/java/g2201_2300/s2259_remove_digit_from_number_to_maximize_result/Solution.java)| Easy | String, Greedy, Enumeration | 1 | 97.73
 | 2257 |[Count Unguarded Cells in the Grid](src/main/java/g2201_2300/s2257_count_unguarded_cells_in_the_grid/Solution.java)| Medium | Array, Matrix, Simulation | 32 | 70.28
