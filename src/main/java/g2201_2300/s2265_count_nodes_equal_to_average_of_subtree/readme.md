@@ -27,7 +27,7 @@ For the node with value 0: The average of its subtree is 0 / 1 = 0.
 
 For the node with value 1: The average of its subtree is 1 / 1 = 1.
 
-For the node with value 6: The average of its subtree is 6 / 1 = 6. 
+For the node with value 6: The average of its subtree is 6 / 1 = 6.
 
 **Example 2:**
 
@@ -37,7 +37,7 @@ For the node with value 6: The average of its subtree is 6 / 1 = 6.
 
 **Output:** 1
 
-**Explanation:** For the node with value 1: The average of its subtree is 1 / 1 = 1. 
+**Explanation:** For the node with value 1: The average of its subtree is 1 / 1 = 1.
 
 **Constraints:**
 
