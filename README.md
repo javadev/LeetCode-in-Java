@@ -1365,6 +1365,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 2300 |[Successful Pairs of Spells and Potions](src/main/java/g2201_2300/s2300_successful_pairs_of_spells_and_potions/Solution.java)| Medium | Array, Two_Pointers, Binary_Search, Sorting | 85 | 71.70
+| 2299 |[Strong Password Checker II](src/main/java/g2201_2300/s2299_strong_password_checker_ii/Solution.java)| Easy | String | 1 | 97.32
 | 2293 |[Min Max Game](src/main/java/g2201_2300/s2293_min_max_game/Solution.java)| Easy | Array, Simulation | 1 | 90.39
 | 2286 |[Booking Concert Tickets in Groups](src/main/java/g2201_2300/s2286_booking_concert_tickets_in_groups/BookMyShow.java)| Hard | Binary_Search, Design, Binary_Indexed_Tree, Segment_Tree | 283 | 67.08
 | 2280 |[Minimum Lines to Represent a Line Chart](src/main/java/g2201_2300/s2280_minimum_lines_to_represent_a_line_chart/Solution.java)| Medium | Array, Math, Geometry, Sorting, Number_Theory | 40 | 96.09
