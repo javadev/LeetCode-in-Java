@@ -17,11 +17,13 @@ public class Solution {
         Set<String> first = map.get(a);
         Set<String> second = map.get(b);
         for (String c : first) {
-            if (second.contains(c)) common++;
+            if (second.contains(c)) {
+                common++;
+            }
         }
-        long uniqueA = (long) (first.size() - common);
-        long uniqueB = (long) (second.size() - common);
-        return uniqueA * uniqueB * 2l;
+        long uniqueA = first.size() - common;
+        long uniqueB = second.size() - common;
+        return uniqueA * uniqueB * 2L;
     }
 
     public long distinctNames(String[] ideas) {
@@ -30,7 +32,7 @@ public class Solution {
         for (String idea : ideas) {
             char startChar = idea.charAt(0);
             Set<String> values = map.getOrDefault(startChar, new HashSet<>());
-            values.add(idea.substring(1, idea.length()));
+            values.add(idea.substring(1));
             map.put(startChar, values);
         }
         for (int i = 0; i <= 26; i++) {
