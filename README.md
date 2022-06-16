@@ -1365,6 +1365,9 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 2306 |[Naming a Company](src/main/java/g2301_2400/s2306_naming_a_company/Solution.java)| Hard | Array, Hash_Table, String, Bit_Manipulation, Enumeration | 486 | 74.14
+| 2304 |[Minimum Path Cost in a Grid](src/main/java/g2301_2400/s2304_minimum_path_cost_in_a_grid/Solution.java)| Medium | Array, Dynamic_Programming, Matrix | 6 | 99.18
+| 2303 |[Calculate Amount Paid in Taxes](src/main/java/g2301_2400/s2303_calculate_amount_paid_in_taxes/Solution.java)| Easy | Array, Simulation | 1 | 92.41
+| 2302 |[Count Subarrays With Score Less Than K](src/main/java/g2301_2400/s2302_count_subarrays_with_score_less_than_k/Solution.java)| Hard | Array, Binary_Search, Sliding_Window, Prefix_Sum | 4 | 88.77
 | 2301 |[Match Substring After Replacement](src/main/java/g2301_2400/s2301_match_substring_after_replacement/Solution.java)| Hard | Array, Hash_Table, String, String_Matching | 205 | 94.20
 | 2300 |[Successful Pairs of Spells and Potions](src/main/java/g2201_2300/s2300_successful_pairs_of_spells_and_potions/Solution.java)| Medium | Array, Two_Pointers, Binary_Search, Sorting | 85 | 71.70
 | 2299 |[Strong Password Checker II](src/main/java/g2201_2300/s2299_strong_password_checker_ii/Solution.java)| Easy | String | 1 | 97.32
