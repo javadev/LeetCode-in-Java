@@ -1,6 +1,6 @@
 package g2201_2300.s2273_find_resultant_array_after_removing_anagrams;
 
-// #2022_06_16_Time_4_ms_(85.95%)_Space_46_MB_(40.70%)
+// #Easy #2022_06_16_Time_4_ms_(85.95%)_Space_46_MB_(40.70%)
 
 import java.util.ArrayList;
 import java.util.List;
