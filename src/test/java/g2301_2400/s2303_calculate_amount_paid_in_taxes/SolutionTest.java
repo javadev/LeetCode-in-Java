@@ -19,4 +19,11 @@ class SolutionTest {
                 new Solution().calculateTax(new int[][] {{1, 0}, {4, 25}, {5, 50}}, 2),
                 equalTo(0.25000));
     }
+
+    @Test
+    void calculateTax3() {
+        assertThat(
+                new Solution().calculateTax(new int[][] {{1, 0}, {4, 25}, {5, 50}}, 0),
+                equalTo(0D));
+    }
 }
