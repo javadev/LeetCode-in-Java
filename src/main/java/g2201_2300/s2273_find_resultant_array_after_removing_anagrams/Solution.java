@@ -1,44 +1,43 @@
 package g2201_2300.s2273_find_resultant_array_after_removing_anagrams;
 
-// #Easy #2022_06_16_Time_4_ms_(85.95%)_Space_46_MB_(40.70%)
+// #Easy #2022_06_16_Time_2_ms_(99.10%)_Space_42.3_MB_(98.64%)
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
     public List<String> removeAnagrams(String[] words) {
-        List<String> res = new ArrayList<>();
-        outerLoop:
-        for (int i = 0; i < words.length; ) {
-            res.add(words[i]);
-            int[] ci = getCharCount(words[i]);
-            int j = i + 1;
-            while (j <= words.length) {
-                if (j == words.length) {
-                    break outerLoop;
-                }
-                int[] cj = getCharCount(words[j]);
-                if (!areAnagrams(ci, cj)) {
-                    i = j;
-                    break;
-                }
-                j++;
+        List<String> result = new ArrayList<>();
+        if (words == null || words.length == 0) {
+            return result;
+        }
+        int uniqueWordIdx = 0, currIdx = 1;
+        result.add(words[uniqueWordIdx]);
+        while (currIdx < words.length) {
+            if (!isAnagram(words[currIdx], words[uniqueWordIdx])) {
+                uniqueWordIdx = currIdx;
+                result.add(words[uniqueWordIdx]);
             }
+            currIdx++;
         }
-        return res;
+        return result;
     }
 
-    private int[] getCharCount(String str) {
-        int[] count = new int[26];
-        for (int i = 0; i < str.length(); i++) {
-            count[str.charAt(i) - 'a']++;
+    /*
+    Utility to check if the 2 words are anagrams or not
+    */
+    private boolean isAnagram(String word1, String word2) {
+        int[] charMap = new int[26];
+        char[] word1Arr = word1.toCharArray();
+        char[] word2Arr = word2.toCharArray();
+        for (char a : word1Arr) {
+            charMap[a - 'a']++;
         }
-        return count;
-    }
-
-    private boolean areAnagrams(int[] c1, int[] c2) {
-        for (int i = 0; i < 26; i++) {
-            if (c1[i] != c2[i]) {
+        for (char a : word2Arr) {
+            charMap[a - 'a']--;
+        }
+        for (int a : charMap) {
+            if (a != 0) {
                 return false;
             }
         }
