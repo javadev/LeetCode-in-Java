@@ -1,6 +1,6 @@
 package g2201_2300.s2271_maximum_white_tiles_covered_by_a_carpet;
 
-// #2022_06_16_Time_74_ms_(71.51%)_Space_86_MB_(38.91%)
+// #Medium #2022_06_16_Time_74_ms_(71.51%)_Space_86_MB_(38.91%)
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -12,7 +12,6 @@ public class Solution {
         int maxCover = currentCover;
         int head = 1;
         int tail = 0;
-
         while (tail < tiles.length && head < tiles.length && maxCover < carpetLength) {
             if (tiles[head][1] - tiles[tail][0] + 1 <= carpetLength) {
                 currentCover += tiles[head][1] - tiles[head][0] + 1;
