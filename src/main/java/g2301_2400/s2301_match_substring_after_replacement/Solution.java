@@ -8,7 +8,8 @@ import java.util.Set;
 
 @SuppressWarnings("unchecked")
 public class Solution {
-    private char[] c1, c2;
+    private char[] c1;
+    private char[] c2;
     private Set<Character>[] al;
 
     public boolean matchReplacement(String s, String sub, char[][] mappings) {
