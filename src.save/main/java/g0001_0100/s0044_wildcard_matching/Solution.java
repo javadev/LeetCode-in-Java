@@ -1,7 +1,7 @@
 package g0001_0100.s0044_wildcard_matching;
 
 // #Hard #Top_Interview_Questions #String #Dynamic_Programming #Greedy #Recursion
-// #2022_02_18_Time_4_ms_(92.10%)_Space_44.2_MB_(60.20%)
+// #2022_06_16_Time_4_ms_(90.87%)_Space_44.1_MB_(77.96%)
 
 public class Solution {
     public boolean isMatch(String inputString, String pattern) {
@@ -9,7 +9,6 @@ public class Solution {
         int j = 0;
         int starIdx = -1;
         int lastMatch = -1;
-
         while (i < inputString.length()) {
             if (j < pattern.length()
                     && (inputString.charAt(i) == pattern.charAt(j) || pattern.charAt(j) == '?')) {
@@ -29,7 +28,6 @@ public class Solution {
                 lastMatch++;
                 // index
                 i = lastMatch;
-
             } else {
                 return false;
             }
@@ -38,11 +36,9 @@ public class Solution {
         while (j < pattern.length() && pattern.charAt(j) == '*') {
             j++;
         }
-
         if (i != inputString.length() || j != pattern.length()) {
             isMatch = false;
         }
-
         return isMatch;
     }
 }
