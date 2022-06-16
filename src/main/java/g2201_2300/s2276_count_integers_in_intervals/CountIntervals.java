@@ -17,7 +17,10 @@ public class CountIntervals {
     }
 
     public void add(int left, int right) {
-        Map.Entry<Integer, Integer> item = map.floorEntry(left).getValue() < left ? map.ceilingEntry(left) : map.floorEntry(left);
+        Map.Entry<Integer, Integer> item =
+                map.floorEntry(left).getValue() < left
+                        ? map.ceilingEntry(left)
+                        : map.floorEntry(left);
         while (item.getKey() <= right) {
             left = Math.min(left, item.getKey());
             right = Math.max(right, item.getValue());

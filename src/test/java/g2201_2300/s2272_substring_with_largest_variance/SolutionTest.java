@@ -1,9 +1,9 @@
 package g2201_2300.s2272_substring_with_largest_variance;
 
-import org.junit.jupiter.api.Test;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test

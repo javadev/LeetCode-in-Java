@@ -19,7 +19,8 @@ public class Solution {
                 maxCover = Math.max(maxCover, currentCover);
                 ++head;
             } else {
-                int possiblePartialCoverOverCurrentHead = carpetLength - (tiles[head][0] - tiles[tail][0]);
+                int possiblePartialCoverOverCurrentHead =
+                        carpetLength - (tiles[head][0] - tiles[tail][0]);
                 maxCover = Math.max(maxCover, currentCover + possiblePartialCoverOverCurrentHead);
                 currentCover = currentCover - (tiles[tail][1] - tiles[tail][0] + 1);
                 ++tail;
