@@ -11,7 +11,8 @@ public class Solution {
         if (words == null || words.length == 0) {
             return result;
         }
-        int uniqueWordIdx = 0, currIdx = 1;
+        int uniqueWordIdx = 0;
+        int currIdx = 1;
         result.add(words[uniqueWordIdx]);
         while (currIdx < words.length) {
             if (!isAnagram(words[currIdx], words[uniqueWordIdx])) {
