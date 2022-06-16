@@ -10,8 +10,9 @@ public class Solution {
         }
         double sum = 0;
         double prev = 0;
-        for (int i = 0; i < brackets.length; i++) {
-            double salary = Math.min(brackets[i][0], income), tax = brackets[i][1];
+        for (int[] bracket : brackets) {
+            double salary = Math.min(bracket[0], income);
+            double tax = bracket[1];
             sum += (salary - prev) * tax;
             prev = salary;
         }

@@ -12,8 +12,9 @@ public class Solution {
         for (int i = m - 2; i >= 0; i--) {
             for (int j = 0; j < n; j++) {
                 int min = Integer.MAX_VALUE;
-                for (int k = 0; k < n; k++)
+                for (int k = 0; k < n; k++) {
                     min = Math.min(min, grid[i][j] + moveCost[grid[i][j]][k] + dp[i + 1][k]);
+                }
                 dp[i][j] = min;
             }
         }
