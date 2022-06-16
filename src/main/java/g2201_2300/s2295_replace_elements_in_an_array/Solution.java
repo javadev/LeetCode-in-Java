@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class Solution {
     public int[] arrayChange(int[] nums, int[][] operations) {
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             map.put(nums[i], i);
         }
