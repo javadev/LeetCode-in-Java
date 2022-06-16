@@ -1,6 +1,6 @@
 package g2201_2300.s2276_count_integers_in_intervals;
 
-// #2022_06_16_Time_137_ms_(64.87%)_Space_152.3_MB_(28.68%)
+// #Hard #2022_06_16_Time_137_ms_(64.87%)_Space_152.3_MB_(28.68%)
 
 import java.util.Map;
 import java.util.TreeMap;
