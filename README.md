@@ -1365,6 +1365,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 2306 |[Naming a Company](src/main/java/g2301_2400/s2306_naming_a_company/Solution.java)| Hard | Array, Hash_Table, String, Bit_Manipulation, Enumeration | 486 | 74.14
+| 2305 |[Fair Distribution of Cookies](src/main/java/g2301_2400/s2305_fair_distribution_of_cookies/Solution.java)| Medium | Array, Dynamic_Programming, Backtracking, Bit_Manipulation, Bitmask | 14 | 84.35
 | 2304 |[Minimum Path Cost in a Grid](src/main/java/g2301_2400/s2304_minimum_path_cost_in_a_grid/Solution.java)| Medium | Array, Dynamic_Programming, Matrix | 6 | 99.18
 | 2303 |[Calculate Amount Paid in Taxes](src/main/java/g2301_2400/s2303_calculate_amount_paid_in_taxes/Solution.java)| Easy | Array, Simulation | 1 | 92.41
 | 2302 |[Count Subarrays With Score Less Than K](src/main/java/g2301_2400/s2302_count_subarrays_with_score_less_than_k/Solution.java)| Hard | Array, Binary_Search, Sliding_Window, Prefix_Sum | 4 | 88.77
