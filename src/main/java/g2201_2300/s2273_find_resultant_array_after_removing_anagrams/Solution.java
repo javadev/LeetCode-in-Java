@@ -12,7 +12,8 @@ public class Solution {
         for (int i = 0; i < words.length; ) {
             res.add(words[i]);
             int[] ci = getCharCount(words[i]);
-            for (int j = i + 1; j <= words.length; j++) {
+            int j = i + 1;
+            while (j <= words.length) {
                 if (j == words.length) {
                     break outerLoop;
                 }
@@ -21,6 +22,7 @@ public class Solution {
                     i = j;
                     break;
                 }
+                j++;
             }
         }
         return res;

@@ -16,7 +16,8 @@ public class Solution {
                 if (a == b || remainingA == 0 || remainingB == 0) {
                     continue;
                 }
-                int currBFreq = 0, currAFreq = 0;
+                int currBFreq = 0;
+                int currAFreq = 0;
                 for (int i = 0; i < s.length(); i++) {
                     int c = s.charAt(i) - 'a';
                     if (c == b) {
