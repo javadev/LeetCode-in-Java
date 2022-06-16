@@ -1375,7 +1375,12 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2293 |[Min Max Game](src/main/java/g2201_2300/s2293_min_max_game/Solution.java)| Easy | Array, Simulation | 1 | 90.39
 | 2286 |[Booking Concert Tickets in Groups](src/main/java/g2201_2300/s2286_booking_concert_tickets_in_groups/BookMyShow.java)| Hard | Binary_Search, Design, Binary_Indexed_Tree, Segment_Tree | 283 | 67.08
 | 2280 |[Minimum Lines to Represent a Line Chart](src/main/java/g2201_2300/s2280_minimum_lines_to_represent_a_line_chart/Solution.java)| Medium | Array, Math, Geometry, Sorting, Number_Theory | 40 | 96.09
+| 2276 |[Count Integers in Intervals](src/main/java/g2201_2300/s2276_count_integers_in_intervals/CountIntervals.java)| Hard || 137 | 64.87
+| 2275 |[Largest Combination With Bitwise AND Greater Than Zero](src/main/java/g2201_2300/s2275_largest_combination_with_bitwise_and_greater_than_zero/Solution.java)| Medium || 19 | 96.92
 | 2274 |[Maximum Consecutive Floors Without Special Floors](src/main/java/g2201_2300/s2274_maximum_consecutive_floors_without_special_floors/Solution.java)| Medium | Array, Sorting | 33 | 99.36
+| 2273 |[Find Resultant Array After Removing Anagrams](src/main/java/g2201_2300/s2273_find_resultant_array_after_removing_anagrams/Solution.java)| Easy || 2 | 99.10
+| 2272 |[Substring With Largest Variance](src/main/java/g2201_2300/s2272_substring_with_largest_variance/Solution.java)| Hard || 469 | 23.66
+| 2271 |[Maximum White Tiles Covered by a Carpet](src/main/java/g2201_2300/s2271_maximum_white_tiles_covered_by_a_carpet/Solution.java)| Medium || 74 | 71.51
 | 2270 |[Number of Ways to Split Array](src/main/java/g2201_2300/s2270_number_of_ways_to_split_array/Solution.java)| Medium | Array, Prefix_Sum | 4 | 77.55
 | 2269 |[Find the K-Beauty of a Number](src/main/java/g2201_2300/s2269_find_the_k_beauty_of_a_number/Solution.java)| Easy | Math, String, Sliding_Window | 2 | 38.88
 | 2267 |[Check if There Is a Valid Parentheses String Path](src/main/java/g2201_2300/s2267_check_if_there_is_a_valid_parentheses_string_path/Solution.java)| Hard | Array, Dynamic_Programming, Matrix | 93 | 77.48
