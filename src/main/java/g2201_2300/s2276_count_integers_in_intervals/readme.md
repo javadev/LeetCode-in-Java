@@ -17,11 +17,28 @@ Implement the `CountIntervals` class:
 
 **Example 1:**
 
-**Input** ["CountIntervals", "add", "add", "count", "add", "count"] [[], [2, 3], [7, 10], [], [5, 8], []]
+**Input**
+
+["CountIntervals", "add", "add", "count", "add", "count"]
+
+[[], [2, 3], [7, 10], [], [5, 8], []]
 
 **Output:** [null, null, null, 6, null, 8]
 
-**Explanation:** CountIntervals countIntervals = new CountIntervals(); // initialize the object with an empty set of intervals. countIntervals.add(2, 3); // add [2, 3] to the set of intervals. countIntervals.add(7, 10); // add [7, 10] to the set of intervals. countIntervals.count(); // return 6 // the integers 2 and 3 are present in the interval [2, 3]. // the integers 7, 8, 9, and 10 are present in the interval [7, 10]. countIntervals.add(5, 8); // add [5, 8] to the set of intervals. countIntervals.count(); // return 8 // the integers 2 and 3 are present in the interval [2, 3]. // the integers 5 and 6 are present in the interval [5, 8]. // the integers 7 and 8 are present in the intervals [5, 8] and [7, 10]. // the integers 9 and 10 are present in the interval [7, 10].
+**Explanation:**
+
+    CountIntervals countIntervals = new CountIntervals(); // initialize the object with an empty set of intervals.
+    countIntervals.add(2, 3);  // add [2, 3] to the set of intervals.
+    countIntervals.add(7, 10); // add [7, 10] to the set of intervals.
+    countIntervals.count();    // return 6
+                               // the integers 2 and 3 are present in the interval [2, 3].
+                               // the integers 7, 8, 9, and 10 are present in the interval [7, 10].
+    countIntervals.add(5, 8);  // add [5, 8] to the set of intervals.
+    countIntervals.count();    // return 8
+                               // the integers 2 and 3 are present in the interval [2, 3].
+                               // the integers 5 and 6 are present in the interval [5, 8].
+                               // the integers 7 and 8 are present in the intervals [5, 8] and [7, 10].
+                               // the integers 9 and 10 are present in the interval [7, 10].
 
 **Constraints:**
 
