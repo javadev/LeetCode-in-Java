@@ -21,4 +21,9 @@ class SolutionTest {
                                 new int[][] {{0, 1, 0, 0, 0}, {0, 1, 0, 1, 0}, {0, 0, 0, 1, 0}}),
                 equalTo(0));
     }
+
+    @Test
+    void minimumObstacles3() {
+        assertThat(new Solution().minimumObstacles(new int[][] {{1}}), equalTo(0));
+    }
 }
