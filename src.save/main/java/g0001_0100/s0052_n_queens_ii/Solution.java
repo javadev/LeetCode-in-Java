@@ -1,6 +1,6 @@
 package g0001_0100.s0052_n_queens_ii;
 
-// #Hard #Backtracking #2022_02_19_Time_1_ms_(95.66%)_Space_41_MB_(23.75%)
+// #Hard #Backtracking #2022_06_17_Time_1_ms_(97.55%)_Space_41.4_MB_(37.24%)
 
 public class Solution {
     public int totalNQueens(int n) {
@@ -21,7 +21,6 @@ public class Solution {
         if (r == n) {
             return 1;
         }
-
         int count = 0;
         for (int c = 0; c < n; c++) {
             if (!row[r] && !col[c] && !diagonal[r + c] && !antiDiagonal[r - c + n - 1]) {
