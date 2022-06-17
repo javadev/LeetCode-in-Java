@@ -12,8 +12,11 @@ public class Solution {
         for (int i = 0; i <= nums.length; i++) {
             int val = i == nums.length ? Integer.MAX_VALUE : nums[i];
             while (top >= 0 && nums[pos[top]] <= val) {
-                if (top == 0) max = Math.max(max, steps[pos[top--]]);
-                else steps[pos[--top]] = Math.max(steps[pos[top]] + 1, steps[pos[top + 1]]);
+                if (top == 0) {
+                    max = Math.max(max, steps[pos[top--]]);
+                } else {
+                    steps[pos[--top]] = Math.max(steps[pos[top]] + 1, steps[pos[top + 1]]);
+                }
             }
             pos[++top] = i;
         }
