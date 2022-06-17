@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class TextEditorTest {
     @Test
-    void TextEditor() {
+    void textEditor() {
         // The current text is "|". (The '|' character represents the cursor)
         TextEditor textEditor = new TextEditor();
         // The current text is "leetcode|".
@@ -15,7 +15,8 @@ class TextEditorTest {
         assertThat(textEditor.deleteText(4), equalTo(4));
         // The current text is "leet|".
         // 4 characters were deleted.
-        textEditor.addText("practice"); // The current text is "leetpractice|".
+        // The current text is "leetpractice|".
+        textEditor.addText("practice");
         assertThat(textEditor.cursorRight(3), equalTo("etpractice"));
         // The current text is "leetpractice|".
         // The cursor cannot be moved beyond the actual text and thus did not move.
