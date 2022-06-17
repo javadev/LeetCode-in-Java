@@ -4,7 +4,7 @@ package g2201_2300.s2296_design_a_text_editor;
 // #2022_06_17_Time_238_ms_(87.02%)_Space_57.6_MB_(93.83%)
 
 public class TextEditor {
-    private StringBuilder sb;
+    private final StringBuilder sb;
     private int cursor;
 
     public TextEditor() {
@@ -13,7 +13,7 @@ public class TextEditor {
     }
 
     public void addText(String text) {
-        sb = sb.insert(cursor, text);
+        sb.insert(cursor, text);
         cursor += text.length();
     }
 
@@ -30,12 +30,12 @@ public class TextEditor {
     }
 
     public String cursorLeft(int k) {
-        cursor = cursor - k >= 0 ? cursor - k : 0;
+        cursor = Math.max(cursor - k, 0);
         return sb.substring(Math.max(cursor - 10, 0), cursor);
     }
 
     public String cursorRight(int k) {
-        cursor = cursor + k > sb.length() ? sb.length() : cursor + k;
+        cursor = Math.min(cursor + k, sb.length());
         return sb.substring(Math.max(cursor - 10, 0), cursor);
     }
 }
