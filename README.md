@@ -1381,6 +1381,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2288 |[Apply Discount to Prices](src/main/java/g2201_2300/s2288_apply_discount_to_prices/Solution.java)| Medium | String | 82 | 97.98
 | 2287 |[Rearrange Characters to Make Target String](src/main/java/g2201_2300/s2287_rearrange_characters_to_make_target_string/Solution.java)| Easy | Hash_Table, String, Counting | 1 | 87.39
 | 2286 |[Booking Concert Tickets in Groups](src/main/java/g2201_2300/s2286_booking_concert_tickets_in_groups/BookMyShow.java)| Hard | Binary_Search, Design, Binary_Indexed_Tree, Segment_Tree | 283 | 67.08
+| 2283 |[Check if Number Has Equal Digit Count and Digit Value](src/main/java/g2201_2300/s2283_check_if_number_has_equal_digit_count_and_digit_value/Solution.java)| Easy | Hash_Table, String, Counting | 1 | 99.36
 | 2280 |[Minimum Lines to Represent a Line Chart](src/main/java/g2201_2300/s2280_minimum_lines_to_represent_a_line_chart/Solution.java)| Medium | Array, Math, Geometry, Sorting, Number_Theory | 40 | 96.09
 | 2276 |[Count Integers in Intervals](src/main/java/g2201_2300/s2276_count_integers_in_intervals/CountIntervals.java)| Hard || 137 | 64.87
 | 2275 |[Largest Combination With Bitwise AND Greater Than Zero](src/main/java/g2201_2300/s2275_largest_combination_with_bitwise_and_greater_than_zero/Solution.java)| Medium || 19 | 96.92
