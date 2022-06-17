@@ -1377,6 +1377,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2294 |[Partition Array Such That Maximum Difference Is K](src/main/java/g2201_2300/s2294_partition_array_such_that_maximum_difference_is_k/Solution.java)| Medium | Array, Greedy, Sorting | 35 | 94.09
 | 2293 |[Min Max Game](src/main/java/g2201_2300/s2293_min_max_game/Solution.java)| Easy | Array, Simulation | 1 | 90.39
 | 2290 |[Minimum Obstacle Removal to Reach Corner](src/main/java/g2201_2300/s2290_minimum_obstacle_removal_to_reach_corner/Solution.java)| Hard | Array, Breadth_First_Search, Graph, Heap_Priority_Queue, Matrix, Shortest_Path | 172 | 82.27
+| 2289 |[Steps to Make Array Non-decreasing](src/main/java/g2201_2300/s2289_steps_to_make_array_non_decreasing/Solution.java)| Medium | Array, Linked_List, Stack, Monotonic_Stack | 11 | 92.82
 | 2286 |[Booking Concert Tickets in Groups](src/main/java/g2201_2300/s2286_booking_concert_tickets_in_groups/BookMyShow.java)| Hard | Binary_Search, Design, Binary_Indexed_Tree, Segment_Tree | 283 | 67.08
 | 2280 |[Minimum Lines to Represent a Line Chart](src/main/java/g2201_2300/s2280_minimum_lines_to_represent_a_line_chart/Solution.java)| Medium | Array, Math, Geometry, Sorting, Number_Theory | 40 | 96.09
 | 2276 |[Count Integers in Intervals](src/main/java/g2201_2300/s2276_count_integers_in_intervals/CountIntervals.java)| Hard || 137 | 64.87
