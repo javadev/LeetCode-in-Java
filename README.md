@@ -1372,6 +1372,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2301 |[Match Substring After Replacement](src/main/java/g2301_2400/s2301_match_substring_after_replacement/Solution.java)| Hard | Array, Hash_Table, String, String_Matching | 205 | 94.20
 | 2300 |[Successful Pairs of Spells and Potions](src/main/java/g2201_2300/s2300_successful_pairs_of_spells_and_potions/Solution.java)| Medium | Array, Two_Pointers, Binary_Search, Sorting | 85 | 71.70
 | 2299 |[Strong Password Checker II](src/main/java/g2201_2300/s2299_strong_password_checker_ii/Solution.java)| Easy | String | 1 | 97.32
+| 2296 |[Design a Text Editor](src/main/java/g2201_2300/s2296_design_a_text_editor/TextEditor.java)| Hard | Linked_List, String, Stack, Design, Simulation, Doubly_Linked_List | 238 | 87.02
 | 2295 |[Replace Elements in an Array](src/main/java/g2201_2300/s2295_replace_elements_in_an_array/Solution.java)| Medium | Array, Hash_Table, Simulation | 89 | 65.26
 | 2293 |[Min Max Game](src/main/java/g2201_2300/s2293_min_max_game/Solution.java)| Easy | Array, Simulation | 1 | 90.39
 | 2286 |[Booking Concert Tickets in Groups](src/main/java/g2201_2300/s2286_booking_concert_tickets_in_groups/BookMyShow.java)| Hard | Binary_Search, Design, Binary_Indexed_Tree, Segment_Tree | 283 | 67.08
