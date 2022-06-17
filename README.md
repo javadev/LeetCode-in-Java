@@ -1374,6 +1374,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2299 |[Strong Password Checker II](src/main/java/g2201_2300/s2299_strong_password_checker_ii/Solution.java)| Easy | String | 1 | 97.32
 | 2296 |[Design a Text Editor](src/main/java/g2201_2300/s2296_design_a_text_editor/TextEditor.java)| Hard | Linked_List, String, Stack, Design, Simulation, Doubly_Linked_List | 238 | 87.02
 | 2295 |[Replace Elements in an Array](src/main/java/g2201_2300/s2295_replace_elements_in_an_array/Solution.java)| Medium | Array, Hash_Table, Simulation | 89 | 65.26
+| 2294 |[Partition Array Such That Maximum Difference Is K](src/main/java/g2201_2300/s2294_partition_array_such_that_maximum_difference_is_k/Solution.java)| Medium | Array, Greedy, Sorting | 35 | 94.09
 | 2293 |[Min Max Game](src/main/java/g2201_2300/s2293_min_max_game/Solution.java)| Easy | Array, Simulation | 1 | 90.39
 | 2286 |[Booking Concert Tickets in Groups](src/main/java/g2201_2300/s2286_booking_concert_tickets_in_groups/BookMyShow.java)| Hard | Binary_Search, Design, Binary_Indexed_Tree, Segment_Tree | 283 | 67.08
 | 2280 |[Minimum Lines to Represent a Line Chart](src/main/java/g2201_2300/s2280_minimum_lines_to_represent_a_line_chart/Solution.java)| Medium | Array, Math, Geometry, Sorting, Number_Theory | 40 | 96.09
