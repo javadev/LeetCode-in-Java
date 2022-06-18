@@ -1384,7 +1384,9 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2285 |[Maximum Total Importance of Roads](src/main/java/g2201_2300/s2285_maximum_total_importance_of_roads/Solution.java)| Medium | Greedy, Graph, Sorting, Heap_Priority_Queue | 54 | 41.07
 | 2284 |[Sender With Largest Word Count](src/main/java/g2201_2300/s2284_sender_with_largest_word_count/Solution.java)| Medium | Array, Hash_Table, String, Counting | 42 | 95.64
 | 2283 |[Check if Number Has Equal Digit Count and Digit Value](src/main/java/g2201_2300/s2283_check_if_number_has_equal_digit_count_and_digit_value/Solution.java)| Easy | Hash_Table, String, Counting | 1 | 99.36
+| 2281 |[Sum of Total Strength of Wizards](src/main/java/g2201_2300/s2281_sum_of_total_strength_of_wizards/Solution.java)| Hard | Array, Stack, Monotonic, Stack, Prefix_Sum | 142 | 68.92
 | 2280 |[Minimum Lines to Represent a Line Chart](src/main/java/g2201_2300/s2280_minimum_lines_to_represent_a_line_chart/Solution.java)| Medium | Array, Math, Geometry, Sorting, Number_Theory | 40 | 96.09
+| 2279 |[Maximum Bags With Full Capacity of Rocks](src/main/java/g2201_2300/s2279_maximum_bags_with_full_capacity_of_rocks/Solution.java)| Medium | Array, Greedy, Sorting | 17 | 91.12
 | 2276 |[Count Integers in Intervals](src/main/java/g2201_2300/s2276_count_integers_in_intervals/CountIntervals.java)| Hard || 137 | 64.87
 | 2275 |[Largest Combination With Bitwise AND Greater Than Zero](src/main/java/g2201_2300/s2275_largest_combination_with_bitwise_and_greater_than_zero/Solution.java)| Medium || 19 | 96.92
 | 2274 |[Maximum Consecutive Floors Without Special Floors](src/main/java/g2201_2300/s2274_maximum_consecutive_floors_without_special_floors/Solution.java)| Medium | Array, Sorting | 33 | 99.36
