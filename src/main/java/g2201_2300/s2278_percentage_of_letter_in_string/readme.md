@@ -26,6 +26,6 @@ The percentage of characters in s that equal the letter 'k' is 0%, so we return 
 
 **Constraints:**
 
-* ` 1 <= s.length <= 100`
-* ` s` consists of lowercase English letters.
-* ` letter` is a lowercase English letter.
+*   `1 <= s.length <= 100`
+*   `s` consists of lowercase English letters.
+*   `letter` is a lowercase English letter.
