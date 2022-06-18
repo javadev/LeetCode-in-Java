@@ -11,10 +11,10 @@ public class Solution {
 
     public int totalStrength(int[] nums) {
         int n = nums.length;
-        long[] forward = new long[n],
-                backward = new long[n],
-                prefix = new long[n + 1],
-                suffix = new long[n + 1];
+        long[] forward = new long[n];
+        long[] backward = new long[n];
+        long[] prefix = new long[n + 1];
+        long[] suffix = new long[n + 1];
         forward[0] = prefix[1] = nums[0];
         backward[n - 1] = suffix[n - 1] = nums[n - 1];
         for (int i = 1; i < n; ++i) {
@@ -67,7 +67,8 @@ public class Solution {
     }
 
     private long getPresum(long[] backward, long[] suffix, int from, int to, int m) {
-        int n = backward.length, cnt = to - from + 1;
+        int n = backward.length;
+        long cnt = to - from + 1;
         return (suffix[from] - suffix[to + 1] - cnt * (to + 1 == n ? 0 : backward[to + 1]) % mod)
                 % mod
                 * m
@@ -75,7 +76,7 @@ public class Solution {
     }
 
     private long getPostsum(long[] forward, long[] prefix, int from, int to, int m) {
-        int n = forward.length, cnt = to - from + 1;
+        long cnt = to - from + 1;
         return (prefix[to + 1] - prefix[from] - cnt * (0 == from ? 0 : forward[from - 1]) % mod)
                 % mod
                 * m
