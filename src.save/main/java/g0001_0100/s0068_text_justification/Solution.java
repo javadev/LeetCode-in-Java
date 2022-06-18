@@ -1,6 +1,6 @@
 package g0001_0100.s0068_text_justification;
 
-// #Hard #Array #String #Simulation #2022_02_19_Time_1_ms_(77.17%)_Space_42.3_MB_(21.54%)
+// #Hard #Array #String #Simulation #2022_06_18_Time_0_ms_(100.00%)_Space_43_MB_(5.50%)
 
 import java.util.ArrayList;
 import java.util.List;

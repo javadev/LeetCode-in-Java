@@ -1,7 +1,7 @@
 package g0001_0100.s0067_add_binary;
 
 // #Easy #String #Math #Bit_Manipulation #Simulation #Programming_Skills_II_Day_5
-// #2022_02_19_Time_3_ms_(67.14%)_Space_42.4_MB_(14.42%)
+// #2022_06_18_Time_2_ms_(88.95%)_Space_43.1_MB_(38.33%)
 
 public class Solution {
     public String addBinary(String a, String b) {

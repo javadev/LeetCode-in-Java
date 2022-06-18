@@ -1,6 +1,6 @@
 package g0001_0100.s0065_valid_number;
 
-// #Hard #String #2022_02_19_Time_4_ms_(46.38%)_Space_42_MB_(38.62%)
+// #Hard #String #2022_06_18_Time_1_ms_(100.00%)_Space_42_MB_(94.04%)
 
 public class Solution {
     public boolean isNumber(String s) {
