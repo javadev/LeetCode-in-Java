@@ -495,7 +495,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0045 |[Jump Game II](src.save/main/java/g0001_0100/s0045_jump_game_ii/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Greedy | 2 | 75.75
-| 0062 |[Unique Paths](src.save/main/java/g0001_0100/s0062_unique_paths/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics | 1 | 45.44
+| 0062 |[Unique Paths](src.save/main/java/g0001_0100/s0062_unique_paths/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics | 1 | 46.91
 
 #### Day 14 Dynamic Programming
 
@@ -579,7 +579,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0069 |[Sqrt(x)](src.save/main/java/g0001_0100/s0069_sqrtx/Solution.java)| Easy | Top_Interview_Questions, Math, Binary_Search | 1 | 99.48
+| 0069 |[Sqrt(x)](src.save/main/java/g0001_0100/s0069_sqrtx/Solution.java)| Easy | Top_Interview_Questions, Math, Binary_Search | 2 | 79.35
 | 0744 |[Find Smallest Letter Greater Than Target](src.save/main/java/g0701_0800/s0744_find_smallest_letter_greater_than_target/Solution.java)| Easy | Array, Binary_Search | 0 | 100.00
 
 #### Day 5
@@ -885,14 +885,14 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0062 |[Unique Paths](src.save/main/java/g0001_0100/s0062_unique_paths/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics | 1 | 45.44
-| 0063 |[Unique Paths II](src.save/main/java/g0001_0100/s0063_unique_paths_ii/Solution.java)| Medium | Array, Dynamic_Programming, Matrix | 1 | 56.99
+| 0062 |[Unique Paths](src.save/main/java/g0001_0100/s0062_unique_paths/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics | 1 | 46.91
+| 0063 |[Unique Paths II](src.save/main/java/g0001_0100/s0063_unique_paths_ii/Solution.java)| Medium | Array, Dynamic_Programming, Matrix | 0 | 100.00
 
 #### Day 16
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0064 |[Minimum Path Sum](src.save/main/java/g0001_0100/s0064_minimum_path_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix | 1 | 99.65
+| 0064 |[Minimum Path Sum](src.save/main/java/g0001_0100/s0064_minimum_path_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix | 1 | 99.94
 | 0221 |[Maximal Square](src.save/main/java/g0201_0300/s0221_maximal_square/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix | 6 | 80.89
 
 #### Day 17
@@ -1062,7 +1062,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0067 |[Add Binary](src.save/main/java/g0001_0100/s0067_add_binary/Solution.java)| Easy | String, Math, Bit_Manipulation, Simulation | 3 | 67.14
+| 0067 |[Add Binary](src.save/main/java/g0001_0100/s0067_add_binary/Solution.java)| Easy | String, Math, Bit_Manipulation, Simulation | 2 | 88.95
 | 0989 |[Add to Array-Form of Integer](src.save/main/java/g0901_1000/s0989_add_to_array_form_of_integer/Solution.java)| Easy | Array, Math | 7 | 65.92
 
 #### Day 6
@@ -1387,6 +1387,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2281 |[Sum of Total Strength of Wizards](src/main/java/g2201_2300/s2281_sum_of_total_strength_of_wizards/Solution.java)| Hard | Array, Stack, Monotonic, Stack, Prefix_Sum | 142 | 68.92
 | 2280 |[Minimum Lines to Represent a Line Chart](src/main/java/g2201_2300/s2280_minimum_lines_to_represent_a_line_chart/Solution.java)| Medium | Array, Math, Geometry, Sorting, Number_Theory | 40 | 96.09
 | 2279 |[Maximum Bags With Full Capacity of Rocks](src/main/java/g2201_2300/s2279_maximum_bags_with_full_capacity_of_rocks/Solution.java)| Medium | Array, Greedy, Sorting | 17 | 91.12
+| 2278 |[Percentage of Letter in String](src/main/java/g2201_2300/s2278_percentage_of_letter_in_string/Solution.java)| Easy | String | 0 | 100.00
 | 2276 |[Count Integers in Intervals](src/main/java/g2201_2300/s2276_count_integers_in_intervals/CountIntervals.java)| Hard || 137 | 64.87
 | 2275 |[Largest Combination With Bitwise AND Greater Than Zero](src/main/java/g2201_2300/s2275_largest_combination_with_bitwise_and_greater_than_zero/Solution.java)| Medium || 19 | 96.92
 | 2274 |[Maximum Consecutive Floors Without Special Floors](src/main/java/g2201_2300/s2274_maximum_consecutive_floors_without_special_floors/Solution.java)| Medium | Array, Sorting | 33 | 99.36
@@ -1400,6 +1401,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2265 |[Count Nodes Equal to Average of Subtree](src/main/java/g2201_2300/s2265_count_nodes_equal_to_average_of_subtree/Solution.java)| Medium | Tree, Depth_First_Search, Binary_Tree | 1 | 99.12
 | 2264 |[Largest 3-Same-Digit Number in String](src/main/java/g2201_2300/s2264_largest_3_same_digit_number_in_string/Solution.java)| Easy | String | 3 | 74.57
 | 2262 |[Total Appeal of A String](src/main/java/g2201_2300/s2262_total_appeal_of_a_string/Solution.java)| Hard | Hash_Table, String, Dynamic_Programming | 6 | 97.92
+| 2261 |[K Divisible Elements Subarrays](src/main/java/g2201_2300/s2261_k_divisible_elements_subarrays/Solution.java)| Array | Hash_Table, Trie, Rolling_Hash, Hash_Function, Enumeration | 73 | 92.32
 | 2260 |[Minimum Consecutive Cards to Pick Up](src/main/java/g2201_2300/s2260_minimum_consecutive_cards_to_pick_up/Solution.java)| Medium | Array, Hash_Table, Sliding_Window | 50 | 97.04
 | 2259 |[Remove Digit From Number to Maximize Result](src/main/java/g2201_2300/s2259_remove_digit_from_number_to_maximize_result/Solution.java)| Easy | String, Greedy, Enumeration | 1 | 97.73
 | 2257 |[Count Unguarded Cells in the Grid](src/main/java/g2201_2300/s2257_count_unguarded_cells_in_the_grid/Solution.java)| Medium | Array, Matrix, Simulation | 32 | 70.28
@@ -3117,14 +3119,14 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0072 |[Edit Distance](src.save/main/java/g0001_0100/s0072_edit_distance/Solution.java)| Hard | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_18_Dynamic_Programming, Dynamic_Programming_I_Day_19 | 7 | 66.86
 | 0071 |[Simplify Path](src.save/main/java/g0001_0100/s0071_simplify_path/Solution.java)| Medium | String, Stack | 4 | 87.52
 | 0070 |[Climbing Stairs](src.save/main/java/g0001_0100/s0070_climbing_stairs/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization, Algorithm_I_Day_12_Dynamic_Programming, Dynamic_Programming_I_Day_2 | 0 | 100.00
-| 0069 |[Sqrt(x)](src.save/main/java/g0001_0100/s0069_sqrtx/Solution.java)| Easy | Top_Interview_Questions, Math, Binary_Search, Binary_Search_I_Day_4 | 1 | 99.48
-| 0068 |[Text Justification](src.save/main/java/g0001_0100/s0068_text_justification/Solution.java)| Hard | Array, String, Simulation | 1 | 77.17
-| 0067 |[Add Binary](src.save/main/java/g0001_0100/s0067_add_binary/Solution.java)| Easy | String, Math, Bit_Manipulation, Simulation, Programming_Skills_II_Day_5 | 3 | 67.14
+| 0069 |[Sqrt(x)](src.save/main/java/g0001_0100/s0069_sqrtx/Solution.java)| Easy | Top_Interview_Questions, Math, Binary_Search, Binary_Search_I_Day_4 | 2 | 79.35
+| 0068 |[Text Justification](src.save/main/java/g0001_0100/s0068_text_justification/Solution.java)| Hard | Array, String, Simulation | 0 | 100.00
+| 0067 |[Add Binary](src.save/main/java/g0001_0100/s0067_add_binary/Solution.java)| Easy | String, Math, Bit_Manipulation, Simulation, Programming_Skills_II_Day_5 | 2 | 88.95
 | 0066 |[Plus One](src.save/main/java/g0001_0100/s0066_plus_one/Solution.java)| Easy | Top_Interview_Questions, Array, Math, Programming_Skills_II_Day_3 | 0 | 100.00
-| 0065 |[Valid Number](src.save/main/java/g0001_0100/s0065_valid_number/Solution.java)| Hard | String | 4 | 46.38
-| 0064 |[Minimum Path Sum](src.save/main/java/g0001_0100/s0064_minimum_path_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix, Dynamic_Programming_I_Day_16 | 1 | 99.65
-| 0063 |[Unique Paths II](src.save/main/java/g0001_0100/s0063_unique_paths_ii/Solution.java)| Medium | Array, Dynamic_Programming, Matrix, Dynamic_Programming_I_Day_15 | 1 | 56.99
-| 0062 |[Unique Paths](src.save/main/java/g0001_0100/s0062_unique_paths/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics, Algorithm_II_Day_13_Dynamic_Programming, Dynamic_Programming_I_Day_15 | 1 | 45.44
+| 0065 |[Valid Number](src.save/main/java/g0001_0100/s0065_valid_number/Solution.java)| Hard | String | 1 | 100.00
+| 0064 |[Minimum Path Sum](src.save/main/java/g0001_0100/s0064_minimum_path_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix, Dynamic_Programming_I_Day_16 | 1 | 99.94
+| 0063 |[Unique Paths II](src.save/main/java/g0001_0100/s0063_unique_paths_ii/Solution.java)| Medium | Array, Dynamic_Programming, Matrix, Dynamic_Programming_I_Day_15 | 0 | 100.00
+| 0062 |[Unique Paths](src.save/main/java/g0001_0100/s0062_unique_paths/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Combinatorics, Algorithm_II_Day_13_Dynamic_Programming, Dynamic_Programming_I_Day_15 | 1 | 46.91
 | 0061 |[Rotate List](src.save/main/java/g0001_0100/s0061_rotate_list/Solution.java)| Medium | Two_Pointers, Linked_List, Programming_Skills_II_Day_16 | 0 | 100.00
 | 0060 |[Permutation Sequence](src.save/main/java/g0001_0100/s0060_permutation_sequence/Solution.java)| Hard | Math, Recursion | 1 | 99.90
 | 0059 |[Spiral Matrix II](src.save/main/java/g0001_0100/s0059_spiral_matrix_ii/Solution.java)| Medium | Array, Matrix, Simulation, Data_Structure_II_Day_3_Array | 0 | 100.00
