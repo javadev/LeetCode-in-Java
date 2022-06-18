@@ -9,14 +9,14 @@ class Solution {
     public int countDistinct(int[] nums, int k, int p) {
         HashSet<Long> numSubarray = new HashSet<>();
         for (int i = 0; i < nums.length; i++) {
-            int count_div = 0;
+            int countdiv = 0;
             long hashCode = 1;
             for (int j = i; j < nums.length; j++) {
                 hashCode = 199L * hashCode + nums[j];
                 if (nums[j] % p == 0) {
-                    ++count_div;
+                    ++countdiv;
                 }
-                if (count_div <= k) {
+                if (countdiv <= k) {
                     numSubarray.add(hashCode);
                 } else {
                     break;
