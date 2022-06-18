@@ -17,7 +17,7 @@ A **subarray** is defined as a **non-empty** contiguous sequence of elements in 
 
 **Output:** 11
 
-**Explanation:** 
+**Explanation:**
 
 The elements at indices 0, 3, and 4 are divisible by p = 2. 
 
@@ -35,7 +35,7 @@ The subarray [2,3,3,2,2] should not be counted because it has 3 elements that ar
 
 **Output:** 10
 
-**Explanation:** 
+**Explanation:**
 
 All element of nums are divisible by p = 1. 
 
