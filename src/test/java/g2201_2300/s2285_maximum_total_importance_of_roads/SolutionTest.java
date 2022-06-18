@@ -12,13 +12,13 @@ class SolutionTest {
                 new Solution()
                         .maximumImportance(
                                 5, new int[][] {{0, 1}, {1, 2}, {2, 3}, {0, 2}, {1, 3}, {2, 4}}),
-                equalTo(43));
+                equalTo(43L));
     }
 
     @Test
     void maximumImportance2() {
         assertThat(
                 new Solution().maximumImportance(5, new int[][] {{0, 3}, {2, 4}, {1, 3}}),
-                equalTo(20));
+                equalTo(20L));
     }
 }
