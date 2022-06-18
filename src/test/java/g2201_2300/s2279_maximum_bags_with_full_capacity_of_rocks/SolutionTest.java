@@ -19,4 +19,15 @@ class SolutionTest {
                 new Solution().maximumBags(new int[] {10, 2, 2}, new int[] {2, 2, 0}, 100),
                 equalTo(3));
     }
+
+    @Test
+    void maximumBags3() {
+        assertThat(
+                new Solution()
+                        .maximumBags(
+                                new int[] {91, 54, 63, 99, 24, 45, 78},
+                                new int[] {35, 32, 45, 98, 6, 1, 25},
+                                17),
+                equalTo(1));
+    }
 }

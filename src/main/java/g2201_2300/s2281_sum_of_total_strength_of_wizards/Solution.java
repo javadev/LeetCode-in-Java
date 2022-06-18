@@ -29,7 +29,8 @@ public class Solution {
         Deque<Integer> dq = new LinkedList<>();
         for (int i = 0; i < n; ++i) {
             while (!dq.isEmpty() && nums[dq.peekLast()] >= nums[i]) {
-                int cur = dq.pollLast(), prev = dq.isEmpty() ? -1 : dq.peekLast();
+                int cur = dq.pollLast();
+                int prev = dq.isEmpty() ? -1 : dq.peekLast();
                 res =
                         (res
                                         + getSum(
@@ -41,7 +42,8 @@ public class Solution {
             dq.add(i);
         }
         while (!dq.isEmpty()) {
-            int cur = dq.pollLast(), prev = dq.isEmpty() ? -1 : dq.peekLast();
+            int cur = dq.pollLast();
+            int prev = dq.isEmpty() ? -1 : dq.peekLast();
             res =
                     (res
                                     + getSum(nums, forward, prefix, backward, suffix, prev, cur, n)
