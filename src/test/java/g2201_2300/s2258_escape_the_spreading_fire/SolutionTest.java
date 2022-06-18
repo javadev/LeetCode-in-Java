@@ -35,19 +35,4 @@ class SolutionTest {
                 new Solution().maximumMinutes(new int[][] {{0, 0, 0}, {2, 2, 0}, {1, 2, 0}}),
                 equalTo(1000000000));
     }
-
-    @Test
-    void maximumMinutes4() {
-        assertThat(
-                new Solution()
-                        .maximumMinutes(
-                                new int[][] {
-                                    {0, 2, 0, 0, 0, 0, 0},
-                                    {0, 0, 0, 2, 2, 1, 0},
-                                    {0, 2, 0, 0, 1, 2, 0},
-                                    {0, 0, 2, 2, 2, 0, 2},
-                                    {0, 0, 0, 0, 0, 0, 0}
-                                }),
-                equalTo(3));
-    }
 }
