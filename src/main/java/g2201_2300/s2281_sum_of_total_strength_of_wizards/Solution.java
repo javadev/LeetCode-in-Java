@@ -6,6 +6,7 @@ package g2201_2300.s2281_sum_of_total_strength_of_wizards;
 import java.util.Deque;
 import java.util.LinkedList;
 
+@SuppressWarnings("java:S107")
 public class Solution {
     private static int mod = (int) 1e9 + 7;
 
