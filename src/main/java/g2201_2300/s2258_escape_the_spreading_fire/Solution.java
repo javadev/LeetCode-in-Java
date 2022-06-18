@@ -82,8 +82,6 @@ public class Solution {
     }
 
     public int maximumMinutes(int[][] grid) {
-        int n = grid.length;
-        int m = grid[0].length;
         int[][] dir = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
         int[][] fire = setFire(grid, dir);
         int lo = 0;
