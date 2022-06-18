@@ -18,11 +18,12 @@ public class Solution {
         Map<Integer, Integer> rank = new HashMap<>();
         int i = n;
         while (i > 0) {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < n; j++) {
                 if (degree[j] == maxdegree) {
                     rank.put(j, i--);
                     degree[j] = Integer.MIN_VALUE;
                 }
+            }
             maxdegree = 0;
             for (int d : degree) {
                 maxdegree = Math.max(maxdegree, d);
