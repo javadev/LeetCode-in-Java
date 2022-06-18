@@ -5,7 +5,7 @@ package g2201_2300.s2261_k_divisible_elements_subarrays;
 
 import java.util.HashSet;
 
-class Solution {
+public class Solution {
     public int countDistinct(int[] nums, int k, int p) {
         HashSet<Long> numSubarray = new HashSet<>();
         for (int i = 0; i < nums.length; i++) {
