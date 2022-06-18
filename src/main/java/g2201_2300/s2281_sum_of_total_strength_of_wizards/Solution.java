@@ -70,7 +70,7 @@ public class Solution {
 
     private long getPresum(long[] backward, long[] suffix, int from, int to, int m) {
         int n = backward.length;
-        long cnt = to - from + 1;
+        long cnt = to - from + 1L;
         return (suffix[from] - suffix[to + 1] - cnt * (to + 1 == n ? 0 : backward[to + 1]) % mod)
                 % mod
                 * m
@@ -78,7 +78,7 @@ public class Solution {
     }
 
     private long getPostsum(long[] forward, long[] prefix, int from, int to, int m) {
-        long cnt = to - from + 1;
+        long cnt = to - from + 1L;
         return (prefix[to + 1] - prefix[from] - cnt * (0 == from ? 0 : forward[from - 1]) % mod)
                 % mod
                 * m
