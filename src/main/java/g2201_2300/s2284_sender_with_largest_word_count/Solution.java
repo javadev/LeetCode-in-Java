@@ -4,6 +4,7 @@ package g2201_2300.s2284_sender_with_largest_word_count;
 // #2022_06_18_Time_42_ms_(95.64%)_Space_49.8_MB_(94.99%)
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
     public String largestWordCount(String[] messages, String[] senders) {
@@ -18,10 +19,11 @@ public class Solution {
         }
         String result = "";
         int max = 0;
-        for (String key : x.keySet()) {
-            if (x.get(key) > max || x.get(key) == max && result.compareTo(key) < 0) {
-                max = x.get(key);
-                result = key;
+        for (Map.Entry<String, Integer> entry : x.entrySet()) {
+            if (entry.getValue() > max
+                    || entry.getValue() == max && result.compareTo(entry.getKey()) < 0) {
+                max = entry.getValue();
+                result = entry.getKey();
             }
         }
         return result;
