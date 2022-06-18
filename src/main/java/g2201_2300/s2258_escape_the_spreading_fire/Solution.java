@@ -53,7 +53,8 @@ public class Solution {
             int size = bfs.size();
             while (size-- > 0) {
                 int rm = bfs.removeFirst();
-                int x = rm / m, y = rm % m;
+                int x = rm / m;
+                int y = rm % m;
                 if (x == n - 1 && y == m - 1) {
                     return true;
                 }
