@@ -1,5 +1,8 @@
 package g2201_2300.s2285_maximum_total_importance_of_roads;
 
+// #Medium #Greedy #Graph #Sorting #Heap_Priority_Queue
+// #2022_06_18_Time_54_ms_(41.07%)_Space_129.2_MB_(19.05%)
+
 import java.util.HashMap;
 import java.util.Map;
 
