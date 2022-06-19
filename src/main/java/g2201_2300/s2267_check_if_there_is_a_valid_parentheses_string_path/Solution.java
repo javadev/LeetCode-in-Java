@@ -1,7 +1,6 @@
 package g2201_2300.s2267_check_if_there_is_a_valid_parentheses_string_path;
 
-// #Hard #Array #Dynamic_Programming #Matrix
-// #2022_06_15_Time_93_ms_(77.48%)_Space_128.2_MB_(27.18%)
+// #Hard #Array #Dynamic_Programming #Matrix #2022_06_15_Time_93_ms_(77.48%)_Space_128.2_MB_(27.18%)
 
 public class Solution {
     private char[][] grid;

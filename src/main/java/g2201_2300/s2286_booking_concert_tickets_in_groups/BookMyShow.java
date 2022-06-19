@@ -1,6 +1,6 @@
 package g2201_2300.s2286_booking_concert_tickets_in_groups;
 
-// #Hard #Binary_Search #Design #Binary_Indexed_Tree #Segment_Tree
+// #Hard #Binary_Search #Design #Segment_Tree #Binary_Indexed_Tree
 // #2022_06_14_Time_283_ms_(67.08%)_Space_132.3_MB_(30.03%)
 
 import java.util.ArrayDeque;

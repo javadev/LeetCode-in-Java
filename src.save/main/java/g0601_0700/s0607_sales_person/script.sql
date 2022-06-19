@@ -1,5 +1,6 @@
 # Write your MySQL query statement below
-# #Easy #Database #SQL_I_Day_6_Union #2022_06_03_Time_1046_ms_(86.04%)_Space_0B_(100.00%)
+# #Easy #LeetCode_Curated_SQL_70 #Database #SQL_I_Day_6_Union
+# #2022_06_03_Time_1046_ms_(86.04%)_Space_0B_(100.00%)
 SELECT NAME 
 FROM
 SALESPERSON 

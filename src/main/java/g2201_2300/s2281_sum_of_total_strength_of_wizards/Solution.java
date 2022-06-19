@@ -1,6 +1,6 @@
 package g2201_2300.s2281_sum_of_total_strength_of_wizards;
 
-// #Hard #Array #Stack #Monotonic #Stack #Prefix_Sum
+// #Hard #Array #Stack #Prefix_Sum #Monotonic_Stack
 // #2022_06_18_Time_142_ms_(68.92%)_Space_141.5_MB_(13.66%)
 
 import java.util.Deque;

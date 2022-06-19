@@ -1,6 +1,6 @@
 package g2201_2300.s2296_design_a_text_editor;
 
-// #Hard #Linked_List #String #Stack #Design #Simulation #Doubly_Linked_List
+// #Hard #String #Stack #Design #Simulation #Linked_List #Doubly_Linked_List
 // #2022_06_17_Time_238_ms_(87.02%)_Space_57.6_MB_(93.83%)
 
 public class TextEditor {

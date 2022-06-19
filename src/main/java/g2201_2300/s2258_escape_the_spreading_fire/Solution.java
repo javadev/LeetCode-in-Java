@@ -1,6 +1,6 @@
 package g2201_2300.s2258_escape_the_spreading_fire;
 
-// #Hard #Array #Binary #Search #Breadth_First_Search #Matrix
+// #Hard #Array #Breadth_First_Search #Binary_Search #Matrix
 // #2022_06_18_Time_33_ms_(77.40%)_Space_44.2_MB_(94.95%)
 
 import java.util.ArrayDeque;

@@ -1,6 +1,6 @@
 package g0001_0100.s0085_maximal_rectangle;
 
-// #Hard #Top_100_Liked_Questions #Array #Dynamic_Programming #Matrix #Stack #Monotonic_Stack
+// #Hard #Array #Dynamic_Programming #Matrix #Stack #Monotonic_Stack
 // #2022_02_21_Time_4_ms_(95.78%)_Space_53.7_MB_(37.27%)
 
 public class Solution {

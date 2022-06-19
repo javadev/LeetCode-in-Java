@@ -1,6 +1,6 @@
 package g2301_2400.s2306_naming_a_company;
 
-// #Hard #Array #Hash_Table #String #Bit_Manipulation #Enumeration
+// #Hard #Array #String #Hash_Table #Bit_Manipulation #Enumeration
 // #2022_06_15_Time_486_ms_(74.14%)_Space_83.3_MB_(58.98%)
 
 import java.util.HashMap;

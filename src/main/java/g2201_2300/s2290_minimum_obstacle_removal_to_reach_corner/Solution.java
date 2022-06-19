@@ -1,6 +1,6 @@
 package g2201_2300.s2290_minimum_obstacle_removal_to_reach_corner;
 
-// #Hard #Array #Breadth_First_Search #Graph #Heap_Priority_Queue #Matrix #Shortest_Path
+// #Hard #Array #Breadth_First_Search #Matrix #Heap_Priority_Queue #Graph #Shortest_Path
 // #2022_06_17_Time_172_ms_(82.27%)_Space_85.6_MB_(84.16%)
 
 import java.util.PriorityQueue;

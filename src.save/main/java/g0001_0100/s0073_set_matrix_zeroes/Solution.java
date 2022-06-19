@@ -1,6 +1,6 @@
 package g0001_0100.s0073_set_matrix_zeroes;
 
-// #Medium #Top_Interview_Questions #Array #Hash_Table #Matrix
+// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table #Matrix
 // #2022_06_19_Time_1_ms_(96.39%)_Space_54.3_MB_(37.73%)
 
 public class Solution {

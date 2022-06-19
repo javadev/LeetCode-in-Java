@@ -1,8 +1,7 @@
 package g0201_0300.s0210_course_schedule_ii;
 
-// #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Depth_First_Search
-// #Breadth_First_Search #Graph #Topological_Sort
-// #2022_03_04_Time_7_ms_(74.90%)_Space_50.1_MB_(23.04%)
+// #Medium #Top_Interview_Questions #Depth_First_Search #Breadth_First_Search #Graph
+// #Topological_Sort #2022_03_04_Time_7_ms_(74.90%)_Space_50.1_MB_(23.04%)
 
 import java.util.ArrayList;
 import java.util.HashMap;

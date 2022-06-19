@@ -1,6 +1,6 @@
 package g0701_0800.s0729_my_calendar_i;
 
-// #Medium #Design #Ordered_Set #Segment_Tree #Programming_Skills_II_Day_20
+// #Medium #Binary_Search #Design #Ordered_Set #Segment_Tree #Programming_Skills_II_Day_20
 // #2022_03_25_Time_17_ms_(97.23%)_Space_43_MB_(87.36%)
 
 import java.util.TreeSet;
