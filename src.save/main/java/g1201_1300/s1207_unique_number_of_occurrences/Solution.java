@@ -8,11 +8,11 @@ import java.util.Map;
 public class Solution {
     public boolean uniqueOccurrences(int[] arr) {
         Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < arr.length; i++) {
-            if (map.containsKey(arr[i])) {
-                map.put(arr[i], map.get(arr[i]) + 1);
+        for (int j : arr) {
+            if (map.containsKey(j)) {
+                map.put(j, map.get(j) + 1);
             } else {
-                map.put(arr[i], 1);
+                map.put(j, 1);
             }
         }
         // map for check unique number of count

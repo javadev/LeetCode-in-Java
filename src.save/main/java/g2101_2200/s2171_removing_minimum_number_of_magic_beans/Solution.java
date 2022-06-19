@@ -9,8 +9,8 @@ public class Solution {
         Arrays.sort(beans);
         int n = beans.length;
         long sum = 0;
-        for (int i = 0; i < n; i++) {
-            sum += beans[i];
+        for (int bean : beans) {
+            sum += bean;
         }
         long minbeans = Long.MAX_VALUE;
         long prefix = 0;

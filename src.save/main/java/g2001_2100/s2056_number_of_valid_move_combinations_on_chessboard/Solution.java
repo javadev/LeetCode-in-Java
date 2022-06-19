@@ -94,8 +94,8 @@ public class Solution {
                 }
             }
             Set<Integer> seen = new HashSet<>();
-            for (int i = 0; i < positions.length; i++) {
-                int key = positions[i][0] * 100 + positions[i][1];
+            for (int[] position : positions) {
+                int key = position[0] * 100 + position[1];
                 if (seen.contains(key)) {
                     return 0;
                 }

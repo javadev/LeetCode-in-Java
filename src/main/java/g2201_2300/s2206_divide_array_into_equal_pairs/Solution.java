@@ -6,8 +6,8 @@ package g2201_2300.s2206_divide_array_into_equal_pairs;
 public class Solution {
     public boolean divideArray(int[] nums) {
         int[] freq = new int[501];
-        for (int i = 0; i < nums.length; i++) {
-            ++freq[nums[i]];
+        for (int num : nums) {
+            ++freq[num];
         }
         for (int f : freq) {
             if (f % 2 != 0) {

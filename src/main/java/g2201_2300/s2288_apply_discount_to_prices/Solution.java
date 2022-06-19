@@ -6,8 +6,8 @@ public class Solution {
     public String discountPrices(String sentence, int discount) {
         String[] words = sentence.split(" ");
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < words.length; i++) {
-            sb.append(applyDiscount(words[i], discount));
+        for (String word : words) {
+            sb.append(applyDiscount(word, discount));
             sb.append(" ");
         }
         sb.deleteCharAt(sb.length() - 1);

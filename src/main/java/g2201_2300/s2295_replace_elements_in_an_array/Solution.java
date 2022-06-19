@@ -10,10 +10,10 @@ public class Solution {
         for (int i = 0; i < nums.length; i++) {
             map.put(nums[i], i);
         }
-        for (int i = 0; i < operations.length; i++) {
-            int index = map.get(operations[i][0]);
-            nums[index] = operations[i][1];
-            map.put(operations[i][1], index);
+        for (int[] operation : operations) {
+            int index = map.get(operation[0]);
+            nums[index] = operation[1];
+            map.put(operation[1], index);
         }
         return nums;
     }

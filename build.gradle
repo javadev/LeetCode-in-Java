@@ -66,3 +66,7 @@ jacocoTestReport {
         html.required = false
     }
 }
+
+test {
+    maxParallelForks = Runtime.runtime.availableProcessors()
+}

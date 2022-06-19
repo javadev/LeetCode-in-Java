@@ -6,8 +6,8 @@ public class Solution {
     public boolean canThreePartsEqualSum(int[] arr) {
         int len = arr.length;
         int sum = 0;
-        for (int i = 0; i < len; i++) {
-            sum += arr[i];
+        for (int j : arr) {
+            sum += j;
         }
         // 1. Base condition , the sum should be equally divided into 3 parts
         if (sum % 3 != 0) {
@@ -17,7 +17,7 @@ public class Solution {
         // to keep track of occurences of sum in the sub array
         int count = 0;
         int temp = 0;
-        for (int i = 0; i < len; i++) {
+        for (int j : arr) {
             // 2. Base / Break condition for loop , i.e. if the count is 2,
             // i.e. sum has been achieved twice ( and there is more indices
             // to go through since we are in the loop again ) then return true
@@ -25,7 +25,7 @@ public class Solution {
                 return true;
             }
             // 3. Adding to temp array
-            temp += arr[i];
+            temp += j;
             // 4. If sum is achieved , increase the count
             if (temp == eq) {
                 count++;
