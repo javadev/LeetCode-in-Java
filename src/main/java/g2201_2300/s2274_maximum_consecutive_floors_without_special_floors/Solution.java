@@ -9,12 +9,12 @@ public class Solution {
         Arrays.sort(special);
         int start = bottom;
         int ans = 0;
-        for (int i = 0; i < special.length; i++) {
-            if (special[i] - start > ans) {
-                ans = special[i] - start;
-                start = special[i] + 1;
+        for (int j : special) {
+            if (j - start > ans) {
+                ans = j - start;
+                start = j + 1;
             } else {
-                start = special[i] + 1;
+                start = j + 1;
             }
         }
         if (ans < top - special[special.length - 1]) {

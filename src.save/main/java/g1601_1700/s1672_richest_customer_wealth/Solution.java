@@ -6,10 +6,10 @@ package g1601_1700.s1672_richest_customer_wealth;
 public class Solution {
     public int maximumWealth(int[][] accounts) {
         int max = Integer.MIN_VALUE;
-        for (int i = 0; i < accounts.length; i++) {
+        for (int[] account : accounts) {
             int sum = 0;
-            for (int j = 0; j < accounts[i].length; j++) {
-                sum += accounts[i][j];
+            for (int j = 0; j < account.length; j++) {
+                sum += account[j];
             }
             max = Math.max(max, sum);
         }

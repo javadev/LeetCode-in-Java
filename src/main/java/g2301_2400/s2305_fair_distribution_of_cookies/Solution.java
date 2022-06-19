@@ -15,8 +15,8 @@ public class Solution {
     private void dfs(int[] c, int[] nums, int cur) {
         if (cur == c.length) {
             int r = 0;
-            for (int i = 0; i < nums.length; i++) {
-                r = Math.max(r, nums[i]);
+            for (int num : nums) {
+                r = Math.max(r, num);
             }
             res = Math.min(res, r);
             return;

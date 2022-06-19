@@ -11,8 +11,7 @@ public class Solution {
         PriorityQueue<Double> queue = new PriorityQueue<>(nums.length, Collections.reverseOrder());
         double sum = 0.0;
         int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            double num = nums[i];
+        for (double num : nums) {
             queue.add(num);
             sum += num;
         }
