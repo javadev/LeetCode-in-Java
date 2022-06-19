@@ -152,7 +152,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0075 |[Sort Colors](src.save/main/java/g0001_0100/s0075_sort_colors/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Two_Pointers | 1 | 33.23
+| 0075 |[Sort Colors](src.save/main/java/g0001_0100/s0075_sort_colors/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Two_Pointers | 0 | 100.00
 | 0056 |[Merge Intervals](src.save/main/java/g0001_0100/s0056_merge_intervals/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting | 13 | 55.73
 | 0706 |[Design HashMap](src.save/main/java/g0701_0800/s0706_design_hashmap/MyHashMap.java)| Easy | Array, Hash_Table, Design, Linked_List, Hash_Function | 13 | 95.71
 
@@ -372,7 +372,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0077 |[Combinations](src.save/main/java/g0001_0100/s0077_combinations/Solution.java)| Medium | Backtracking | 5 | 89.72
+| 0077 |[Combinations](src.save/main/java/g0001_0100/s0077_combinations/Solution.java)| Medium | Backtracking | 5 | 90.06
 | 0046 |[Permutations](src.save/main/java/g0001_0100/s0046_permutations/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Backtracking | 1 | 97.24
 | 0784 |[Letter Case Permutation](src.save/main/java/g0701_0800/s0784_letter_case_permutation/Solution.java)| Medium | String, Bit_Manipulation, Backtracking | 10 | 40.38
 
@@ -464,7 +464,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0078 |[Subsets](src.save/main/java/g0001_0100/s0078_subsets/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation, Backtracking | 1 | 79.43
+| 0078 |[Subsets](src.save/main/java/g0001_0100/s0078_subsets/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation, Backtracking | 1 | 87.15
 | 0090 |[Subsets II](src.save/main/java/g0001_0100/s0090_subsets_ii/Solution.java)| Medium | Array, Bit_Manipulation, Backtracking | 2 | 75.68
 
 #### Day 10 Recursion Backtracking
@@ -481,7 +481,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 |-|-|-|-|-|-
 | 0017 |[Letter Combinations of a Phone Number](src.save/main/java/g0001_0100/s0017_letter_combinations_of_a_phone_number/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Backtracking | 0 | 100.00
 | 0022 |[Generate Parentheses](src.save/main/java/g0001_0100/s0022_generate_parentheses/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Backtracking | 2 | 63.16
-| 0079 |[Word Search](src.save/main/java/g0001_0100/s0079_word_search/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Matrix, Backtracking | 178 | 45.01
+| 0079 |[Word Search](src.save/main/java/g0001_0100/s0079_word_search/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Matrix, Backtracking | 135 | 70.56
 
 #### Day 12 Dynamic Programming
 
@@ -529,7 +529,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0072 |[Edit Distance](src.save/main/java/g0001_0100/s0072_edit_distance/Solution.java)| Hard | Top_100_Liked_Questions, String, Dynamic_Programming | 7 | 66.86
+| 0072 |[Edit Distance](src.save/main/java/g0001_0100/s0072_edit_distance/Solution.java)| Hard | Top_100_Liked_Questions, String, Dynamic_Programming | 6 | 90.49
 | 0322 |[Coin Change](src.save/main/java/g0301_0400/s0322_coin_change/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Breadth_First_Search | 22 | 72.14
 | 0343 |[Integer Break](src.save/main/java/g0301_0400/s0343_integer_break/Solution.java)| Medium | Dynamic_Programming, Math | 0 | 100.00
 
@@ -915,7 +915,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 |-|-|-|-|-|-
 | 0392 |[Is Subsequence](src.save/main/java/g0301_0400/s0392_is_subsequence/Solution.java)| Easy | String, Dynamic_Programming, Two_Pointers | 0 | 100.00
 | 1143 |[Longest Common Subsequence](src.save/main/java/g1101_1200/s1143_longest_common_subsequence/Solution.java)| Medium | String, Dynamic_Programming | 9 | 93.92
-| 0072 |[Edit Distance](src.save/main/java/g0001_0100/s0072_edit_distance/Solution.java)| Hard | Top_100_Liked_Questions, String, Dynamic_Programming | 7 | 66.86
+| 0072 |[Edit Distance](src.save/main/java/g0001_0100/s0072_edit_distance/Solution.java)| Hard | Top_100_Liked_Questions, String, Dynamic_Programming | 6 | 90.49
 
 #### Day 20
 
@@ -1630,7 +1630,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1970 |[Last Day Where You Can Still Cross](src.save/main/java/g1901_2000/s1970_last_day_where_you_can_still_cross/Solution.java)| Hard | Array, Depth_First_Search, Breadth_First_Search, Binary_Search, Matrix, Union_Find | 14 | 95.24
 | 1969 |[Minimum Non-Zero Product of the Array Elements](src.save/main/java/g1901_2000/s1969_minimum_non_zero_product_of_the_array_elements/Solution.java)| Medium | Math, Greedy, Recursion | 0 | 100.00
 | 1968 |[Array With Elements Not Equal to Average of Neighbors](src.save/main/java/g1901_2000/s1968_array_with_elements_not_equal_to_average_of_neighbors/Solution.java)| Medium | Array, Sorting, Greedy | 6 | 92.86
-| 1967 |[Number of Strings That Appear as Substrings in Word](src.save/main/java/g1901_2000/s1967_number_of_strings_that_appear_as_substrings_in_word/Solution.java)| Easy | String | 3 | 10.82
+| 1967 |[Number of Strings That Appear as Substrings in Word](src.save/main/java/g1901_2000/s1967_number_of_strings_that_appear_as_substrings_in_word/Solution.java)| Easy | String | 1 | 82.02
 | 1965 |[Employees With Missing Information](src.save/main/java/g1901_2000/s1965_employees_with_missing_information/script.sql)| Easy | Database, SQL_I_Day_4_Union_and_Select | 617 | 30.40
 | 1964 |[Find the Longest Valid Obstacle Course at Each Position](src.save/main/java/g1901_2000/s1964_find_the_longest_valid_obstacle_course_at_each_position/Solution.java)| Hard | Array, Binary_Search, Binary_Indexed_Tree | 79 | 85.00
 | 1963 |[Minimum Number of Swaps to Make the String Balanced](src.save/main/java/g1901_2000/s1963_minimum_number_of_swaps_to_make_the_string_balanced/Solution.java)| Medium | String, Greedy, Two_Pointers, Stack | 17 | 93.71
@@ -3109,16 +3109,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0083 |[Remove Duplicates from Sorted List](src.save/main/java/g0001_0100/s0083_remove_duplicates_from_sorted_list/Solution.java)| Easy | Linked_List, Data_Structure_I_Day_8_Linked_List | 0 | 100.00
 | 0082 |[Remove Duplicates from Sorted List II](src.save/main/java/g0001_0100/s0082_remove_duplicates_from_sorted_list_ii/Solution.java)| Medium | Two_Pointers, Linked_List, Data_Structure_II_Day_11_Linked_List, Algorithm_II_Day_3_Two_Pointers | 1 | 70.85
 | 0081 |[Search in Rotated Sorted Array II](src.save/main/java/g0001_0100/s0081_search_in_rotated_sorted_array_ii/Solution.java)| Medium | Array, Binary_Search, Binary_Search_II_Day_12 | 1 | 73.34
-| 0080 |[Remove Duplicates from Sorted Array II](src.save/main/java/g0001_0100/s0080_remove_duplicates_from_sorted_array_ii/Solution.java)| Medium | Array, Two_Pointers | 1 | 77.11
-| 0079 |[Word Search](src.save/main/java/g0001_0100/s0079_word_search/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Matrix, Backtracking, Algorithm_II_Day_11_Recursion_Backtracking | 178 | 45.01
-| 0078 |[Subsets](src.save/main/java/g0001_0100/s0078_subsets/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation, Backtracking, Algorithm_II_Day_9_Recursion_Backtracking | 1 | 79.43
-| 0077 |[Combinations](src.save/main/java/g0001_0100/s0077_combinations/Solution.java)| Medium | Backtracking, Algorithm_I_Day_11_Recursion_Backtracking | 5 | 89.72
-| 0076 |[Minimum Window Substring](src.save/main/java/g0001_0100/s0076_minimum_window_substring/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window | 3 | 98.09
-| 0075 |[Sort Colors](src.save/main/java/g0001_0100/s0075_sort_colors/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Two_Pointers, Data_Structure_II_Day_2_Array | 1 | 33.23
+| 0080 |[Remove Duplicates from Sorted Array II](src.save/main/java/g0001_0100/s0080_remove_duplicates_from_sorted_array_ii/Solution.java)| Medium | Array, Two_Pointers | 1 | 82.32
+| 0079 |[Word Search](src.save/main/java/g0001_0100/s0079_word_search/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Matrix, Backtracking, Algorithm_II_Day_11_Recursion_Backtracking | 135 | 70.56
+| 0078 |[Subsets](src.save/main/java/g0001_0100/s0078_subsets/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation, Backtracking, Algorithm_II_Day_9_Recursion_Backtracking | 1 | 87.15
+| 0077 |[Combinations](src.save/main/java/g0001_0100/s0077_combinations/Solution.java)| Medium | Backtracking, Algorithm_I_Day_11_Recursion_Backtracking | 5 | 90.06
+| 0076 |[Minimum Window Substring](src.save/main/java/g0001_0100/s0076_minimum_window_substring/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window | 3 | 98.22
+| 0075 |[Sort Colors](src.save/main/java/g0001_0100/s0075_sort_colors/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Two_Pointers, Data_Structure_II_Day_2_Array | 0 | 100.00
 | 0074 |[Search a 2D Matrix](src.save/main/java/g0001_0100/s0074_search_a_2d_matrix/Solution.java)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Matrix, Data_Structure_I_Day_5_Array, Algorithm_II_Day_1_Binary_Search, Binary_Search_I_Day_8 | 0 | 100.00
-| 0073 |[Set Matrix Zeroes](src.save/main/java/g0001_0100/s0073_set_matrix_zeroes/Solution.java)| Medium | Top_Interview_Questions, Array, Hash_Table, Matrix | 2 | 60.26
-| 0072 |[Edit Distance](src.save/main/java/g0001_0100/s0072_edit_distance/Solution.java)| Hard | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_18_Dynamic_Programming, Dynamic_Programming_I_Day_19 | 7 | 66.86
-| 0071 |[Simplify Path](src.save/main/java/g0001_0100/s0071_simplify_path/Solution.java)| Medium | String, Stack | 4 | 87.52
+| 0073 |[Set Matrix Zeroes](src.save/main/java/g0001_0100/s0073_set_matrix_zeroes/Solution.java)| Medium | Top_Interview_Questions, Array, Hash_Table, Matrix | 1 | 96.39
+| 0072 |[Edit Distance](src.save/main/java/g0001_0100/s0072_edit_distance/Solution.java)| Hard | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_18_Dynamic_Programming, Dynamic_Programming_I_Day_19 | 6 | 90.49
+| 0071 |[Simplify Path](src.save/main/java/g0001_0100/s0071_simplify_path/Solution.java)| Medium | String, Stack | 4 | 95.43
 | 0070 |[Climbing Stairs](src.save/main/java/g0001_0100/s0070_climbing_stairs/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization, Algorithm_I_Day_12_Dynamic_Programming, Dynamic_Programming_I_Day_2 | 0 | 100.00
 | 0069 |[Sqrt(x)](src.save/main/java/g0001_0100/s0069_sqrtx/Solution.java)| Easy | Top_Interview_Questions, Math, Binary_Search, Binary_Search_I_Day_4 | 2 | 79.35
 | 0068 |[Text Justification](src.save/main/java/g0001_0100/s0068_text_justification/Solution.java)| Hard | Array, String, Simulation | 0 | 100.00
