@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
+@SuppressWarnings("java:S5778")
 class SolutionTest {
     @Test
     void greatestLetter() {
