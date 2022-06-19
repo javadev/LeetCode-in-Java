@@ -15,7 +15,7 @@ public class Solution {
         }
         char res = ' ';
         for (int i = 0; i < 26; ++i) {
-            if (lowers[i] & uppers[i]) {
+            if (lowers[i] && uppers[i]) {
                 res = (char) ('A' + i);
             }
         }
