@@ -1,6 +1,6 @@
 package g2201_2300.s2272_substring_with_largest_variance;
 
-// #Hard #2022_06_16_Time_469_ms_(23.66%)_Space_43.7_MB_(32.44%)
+// #Hard #Array #Dynamic_Programming #2022_06_16_Time_469_ms_(23.66%)_Space_43.7_MB_(32.44%)
 
 public class Solution {
     public int largestVariance(String s) {

@@ -1,6 +1,6 @@
 package g2201_2300.s2261_k_divisible_elements_subarrays;
 
-// #Array #Hash_Table #Trie #Rolling_Hash #Hash_Function #Enumeration
+// #Medium #Array #Hash_Table #Trie #Enumeration #Hash_Function #Rolling_Hash
 // #2022_06_18_Time_73_ms_(92.32%)_Space_67.2_MB_(78.03%)
 
 import java.util.HashSet;

@@ -1,6 +1,6 @@
 package g2001_2100.s2092_find_all_people_with_secret;
 
-// #Hard #Depth_First_Search #Sorting #Breadth_First_Search #Graph #Union_Find
+// #Hard #Sorting #Depth_First_Search #Breadth_First_Search #Graph #Union_Find
 // #2022_05_27_Time_95_ms_(84.86%)_Space_99.7_MB_(87.33%)
 
 import java.util.ArrayList;

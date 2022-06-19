@@ -1,6 +1,6 @@
 package g1901_2000.s1993_operations_on_tree;
 
-// #Medium #Hash_Table #Breadth_First_Search #Tree #Design
+// #Medium #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Design
 // #2022_05_19_Time_394_ms_(23.03%)_Space_167.4_MB_(5.26%)
 
 import java.util.ArrayList;

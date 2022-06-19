@@ -1,6 +1,6 @@
 package g0301_0400.s0390_elimination_game;
 
-// #Medium #Math #2022_03_16_Time_2_ms_(100.00%)_Space_41.3_MB_(71.55%)
+// #Medium #Math #Recursion #2022_03_16_Time_2_ms_(100.00%)_Space_41.3_MB_(71.55%)
 
 public class Solution {
     public int lastRemaining(int n) {

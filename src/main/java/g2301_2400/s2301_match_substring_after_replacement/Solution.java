@@ -1,6 +1,6 @@
 package g2301_2400.s2301_match_substring_after_replacement;
 
-// #Hard #Array #Hash_Table #String #String_Matching
+// #Hard #Array #String #Hash_Table #String_Matching
 // #2022_06_16_Time_205_ms_(94.20%)_Space_52.1_MB_(54.60%)
 
 import java.util.HashSet;

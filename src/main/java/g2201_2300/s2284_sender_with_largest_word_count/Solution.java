@@ -1,6 +1,6 @@
 package g2201_2300.s2284_sender_with_largest_word_count;
 
-// #Medium #Array #Hash_Table #String #Counting
+// #Medium #Array #String #Hash_Table #Counting
 // #2022_06_18_Time_42_ms_(95.64%)_Space_49.8_MB_(94.99%)
 
 import java.util.HashMap;
