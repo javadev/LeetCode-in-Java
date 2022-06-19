@@ -16,10 +16,10 @@ public class Solution {
                 i = ch - 'a';
                 sA[i] = true;
             }
-            if (uA[i] == sA[i]) {
-                if (gt < ('A' + i)) gt = (char) ('A' + i);
+            if (uA[i] == sA[i] && gt < ('A' + i)) {
+                gt = (char) ('A' + i);
             }
         }
-        return gt == ' ' ? "" : String.valueOf(gt);
+        return gt == ' ' ? "" : gt + "";
     }
 }
