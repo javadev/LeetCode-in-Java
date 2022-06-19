@@ -1,7 +1,7 @@
 package g0001_0100.s0073_set_matrix_zeroes;
 
 // #Medium #Top_Interview_Questions #Array #Hash_Table #Matrix
-// #2022_02_19_Time_2_ms_(60.26%)_Space_54.3_MB_(14.26%)
+// #2022_06_19_Time_1_ms_(96.39%)_Space_54.3_MB_(37.73%)
 
 public class Solution {
     // Approach: Use first row and first column for storing whether in future
