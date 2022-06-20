@@ -2259,7 +2259,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1316 |[Distinct Echo Substrings](src.save/main/java/g1301_1400/s1316_distinct_echo_substrings/Solution.java)| Hard | String, Dynamic_Programming, Sliding_Window, Trie, Hash_Function, Rolling_Hash | 165 | 93.15
 | 1315 |[Sum of Nodes with Even-Valued Grandparent](src.save/main/java/g1301_1400/s1315_sum_of_nodes_with_even_valued_grandparent/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 2 | 78.61
 | 1314 |[Matrix Block Sum](src.save/main/java/g1301_1400/s1314_matrix_block_sum/Solution.java)| Medium | Array, Matrix, Prefix_Sum, Dynamic_Programming_I_Day_14 | 5 | 67.46
-| 1313 |[Decompress Run-Length Encoded List](src.save/main/java/g1301_1400/s1313_decompress_run_length_encoded_list/Solution.java)| Easy | Array | 11 | 10.55
+| 1313 |[Decompress Run-Length Encoded List](src.save/main/java/g1301_1400/s1313_decompress_run_length_encoded_list/Solution.java)| Easy | Array | 1 | 98.11
 | 1312 |[Minimum Insertion Steps to Make a String Palindrome](src.save/main/java/g1301_1400/s1312_minimum_insertion_steps_to_make_a_string_palindrome/Solution.java)| Hard | String, Dynamic_Programming | 25 | 85.70
 | 1311 |[Get Watched Videos by Your Friends](src.save/main/java/g1301_1400/s1311_get_watched_videos_by_your_friends/Solution.java)| Medium | Array, Hash_Table, Sorting, Breadth_First_Search | 39 | 73.81
 | 1310 |[XOR Queries of a Subarray](src.save/main/java/g1301_1400/s1310_xor_queries_of_a_subarray/Solution.java)| Medium | Array, Bit_Manipulation, Prefix_Sum | 3 | 68.91
