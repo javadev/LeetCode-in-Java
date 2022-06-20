@@ -1,7 +1,7 @@
 package g0001_0100.s0083_remove_duplicates_from_sorted_list;
 
 // #Easy #Linked_List #Data_Structure_I_Day_8_Linked_List
-// #2022_02_21_Time_0_ms_(100.00%)_Space_41.7_MB_(36.90%)
+// #2022_06_20_Time_0_ms_(100.00%)_Space_44_MB_(64.59%)
 
 import com_github_leetcode.ListNode;
 
