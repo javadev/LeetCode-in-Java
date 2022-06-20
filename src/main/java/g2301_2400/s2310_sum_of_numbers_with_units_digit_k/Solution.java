@@ -10,12 +10,9 @@ public class Solution {
         }
         int x = nums % 10;
         for (int i = 1; i <= 10; i++) {
-            // check if the unit digits are equal for any case
-            if ((k * i) % 10 == x) {
-                // if yes,  check if n>k*i and return accordingly
-                if (nums >= k * i) {
-                    return i;
-                }
+            // check if the unit digits are equal for any case and if n>k*i
+            if ((k * i) % 10 == x && nums >= k * i) {
+                return i;
             }
         }
         // in case nothing matches
