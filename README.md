@@ -1471,6 +1471,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2310 |[Sum of Numbers With Units Digit K](src/main/java/g2301_2400/s2310_sum_of_numbers_with_units_digit_k/Solution.java)| Medium | Math | 1 | 66.67
 | 2309 |[Greatest English Letter in Upper and Lower Case](src/main/java/g2301_2400/s2309_greatest_english_letter_in_upper_and_lower_case/Solution.java)| Easy | Array | 5 | 75.00
 | 2306 |[Naming a Company](src/main/java/g2301_2400/s2306_naming_a_company/Solution.java)| Hard | Array, String, Hash_Table, Bit_Manipulation, Enumeration | 486 | 74.14
 | 2305 |[Fair Distribution of Cookies](src/main/java/g2301_2400/s2305_fair_distribution_of_cookies/Solution.java)| Medium | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 14 | 84.35
