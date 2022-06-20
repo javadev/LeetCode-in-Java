@@ -18,11 +18,11 @@ Note:
 
 **Output:** 5
 
-**Explanation:** The longest subsequence of s that makes up a binary number less than or equal to 5 is "00010", as this number is equal to 2 in decimal. 
+**Explanation:** The longest subsequence of s that makes up a binary number less than or equal to 5 is "00010", as this number is equal to 2 in decimal.
 
-Note that "00100" and "00101" are also possible, which are equal to 4 and 5 in decimal, respectively. 
+Note that "00100" and "00101" are also possible, which are equal to 4 and 5 in decimal, respectively.
 
-The length of this subsequence is 5, so 5 is returned. 
+The length of this subsequence is 5, so 5 is returned.
 
 **Example 2:**
 
@@ -30,9 +30,9 @@ The length of this subsequence is 5, so 5 is returned.
 
 **Output:** 6
 
-**Explanation:** "000001" is the longest subsequence of s that makes up a binary number less than or equal to 1, as this number is equal to 1 in decimal. 
+**Explanation:** "000001" is the longest subsequence of s that makes up a binary number less than or equal to 1, as this number is equal to 1 in decimal.
 
-The length of this subsequence is 6, so 6 is returned. 
+The length of this subsequence is 6, so 6 is returned.
 
 **Constraints:**
 
