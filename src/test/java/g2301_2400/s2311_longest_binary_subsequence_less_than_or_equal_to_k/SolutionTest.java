@@ -13,6 +13,6 @@ class SolutionTest {
 
     @Test
     void longestSubsequence2() {
-        assertThat(new Solution().longestSubsequence("00101001", 1), equalTo(-6));
+        assertThat(new Solution().longestSubsequence("00101001", 1), equalTo(6));
     }
 }
