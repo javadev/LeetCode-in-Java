@@ -1732,7 +1732,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1982 |[Find Array Given Subset Sums](src.save/main/java/g1901_2000/s1982_find_array_given_subset_sums/Solution.java)| Hard | Array, Divide_and_Conquer | 70 | 64.91
 | 1981 |[Minimize the Difference Between Target and Chosen Elements](src.save/main/java/g1901_2000/s1981_minimize_the_difference_between_target_and_chosen_elements/Solution.java)| Medium | Array, Dynamic_Programming, Matrix | 480 | 90.78
 | 1980 |[Find Unique Binary String](src.save/main/java/g1901_2000/s1980_find_unique_binary_string/Solution.java)| Medium | Array, String, Backtracking | 7 | 31.88
-| 1979 |[Find Greatest Common Divisor of Array](src.save/main/java/g1901_2000/s1979_find_greatest_common_divisor_of_array/Solution.java)| Easy | Array, Math, Number_Theory | 5 | 10.46
+| 1979 |[Find Greatest Common Divisor of Array](src.save/main/java/g1901_2000/s1979_find_greatest_common_divisor_of_array/Solution.java)| Easy | Array, Math, Number_Theory | 1 | 87.75
 | 1977 |[Number of Ways to Separate Numbers](src.save/main/java/g1901_2000/s1977_number_of_ways_to_separate_numbers/Solution.java)| Hard | String, Dynamic_Programming, Suffix_Array | 604 | 59.21
 | 1976 |[Number of Ways to Arrive at Destination](src.save/main/java/g1901_2000/s1976_number_of_ways_to_arrive_at_destination/Solution.java)| Medium | Dynamic_Programming, Graph, Topological_Sort, Shortest_Path | 14 | 77.59
 | 1975 |[Maximum Matrix Sum](src.save/main/java/g1901_2000/s1975_maximum_matrix_sum/Solution.java)| Medium | Array, Greedy, Matrix | 4 | 100.00
