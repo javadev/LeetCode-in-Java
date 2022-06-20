@@ -15,8 +15,6 @@ public class Solution {
                 // if yes,  check if n>k*i and return accordingly
                 if (nums >= k * i) {
                     return i;
-                } else {
-                    return -1;
                 }
             }
         }

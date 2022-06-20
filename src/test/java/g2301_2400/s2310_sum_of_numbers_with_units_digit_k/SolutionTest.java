@@ -20,4 +20,9 @@ class SolutionTest {
     void minimumNumbers3() {
         assertThat(new Solution().minimumNumbers(0, 7), equalTo(0));
     }
+
+    @Test
+    void minimumNumbers4() {
+        assertThat(new Solution().minimumNumbers(2, 8), equalTo(-1));
+    }
 }
