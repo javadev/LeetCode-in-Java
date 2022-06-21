@@ -508,7 +508,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0091 |[Decode Ways](src.save/main/java/g0001_0100/s0091_decode_ways/Solution.java)| Medium | Top_Interview_Questions, String, Dynamic_Programming | 2 | 64.33
+| 0091 |[Decode Ways](src.save/main/java/g0001_0100/s0091_decode_ways/Solution.java)| Medium | Top_Interview_Questions, String, Dynamic_Programming | 2 | 66.37
 | 0139 |[Word Break](src.save/main/java/g0101_0200/s0139_word_break/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Dynamic_Programming, Trie, Memoization | 2 | 96.55
 
 #### Day 16 Dynamic Programming
@@ -851,7 +851,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0413 |[Arithmetic Slices](src.save/main/java/g0401_0500/s0413_arithmetic_slices/Solution.java)| Medium | Array, Dynamic_Programming | 0 | 100.00
-| 0091 |[Decode Ways](src.save/main/java/g0001_0100/s0091_decode_ways/Solution.java)| Medium | Top_Interview_Questions, String, Dynamic_Programming | 2 | 64.33
+| 0091 |[Decode Ways](src.save/main/java/g0001_0100/s0091_decode_ways/Solution.java)| Medium | Top_Interview_Questions, String, Dynamic_Programming | 2 | 66.37
 
 #### Day 11
 
@@ -3201,15 +3201,15 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0102 |[Binary Tree Level Order Traversal](src.save/main/java/g0101_0200/s0102_binary_tree_level_order_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_I_Day_11_Tree, Level_1_Day_6_Tree | 0 | 100.00
 | 0101 |[Symmetric Tree](src.save/main/java/g0101_0200/s0101_symmetric_tree/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_I_Day_11_Tree | 0 | 100.00
 | 0100 |[Same Tree](src.save/main/java/g0001_0100/s0100_same_tree/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 0 | 100.00
-| 0099 |[Recover Binary Search Tree](src.save/main/java/g0001_0100/s0099_recover_binary_search_tree/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 3 | 71.74
+| 0099 |[Recover Binary Search Tree](src.save/main/java/g0001_0100/s0099_recover_binary_search_tree/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 3 | 76.33
 | 0098 |[Validate Binary Search Tree](src.save/main/java/g0001_0100/s0098_validate_binary_search_tree/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_I_Day_14_Tree, Level_1_Day_8_Binary_Search_Tree | 0 | 100.00
-| 0097 |[Interleaving String](src.save/main/java/g0001_0100/s0097_interleaving_string/Solution.java)| Medium | String, Dynamic_Programming | 1 | 96.15
+| 0097 |[Interleaving String](src.save/main/java/g0001_0100/s0097_interleaving_string/Solution.java)| Medium | String, Dynamic_Programming | 2 | 88.01
 | 0096 |[Unique Binary Search Trees](src.save/main/java/g0001_0100/s0096_unique_binary_search_trees/Solution.java)| Medium | Top_100_Liked_Questions, Dynamic_Programming, Math, Tree, Binary_Tree, Binary_Search_Tree, Dynamic_Programming_I_Day_11 | 0 | 100.00
-| 0095 |[Unique Binary Search Trees II](src.save/main/java/g0001_0100/s0095_unique_binary_search_trees_ii/Solution.java)| Medium | Dynamic_Programming, Tree, Binary_Tree, Backtracking, Binary_Search_Tree | 1 | 97.38
+| 0095 |[Unique Binary Search Trees II](src.save/main/java/g0001_0100/s0095_unique_binary_search_trees_ii/Solution.java)| Medium | Dynamic_Programming, Tree, Binary_Tree, Backtracking, Binary_Search_Tree | 1 | 99.82
 | 0094 |[Binary Tree Inorder Traversal](src.save/main/java/g0001_0100/s0094_binary_tree_inorder_traversal/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Stack, Data_Structure_I_Day_10_Tree | 0 | 100.00
-| 0093 |[Restore IP Addresses](src.save/main/java/g0001_0100/s0093_restore_ip_addresses/Solution.java)| Medium | String, Backtracking | 12 | 26.89
+| 0093 |[Restore IP Addresses](src.save/main/java/g0001_0100/s0093_restore_ip_addresses/Solution.java)| Medium | String, Backtracking | 13 | 24.23
 | 0092 |[Reverse Linked List II](src.save/main/java/g0001_0100/s0092_reverse_linked_list_ii/Solution.java)| Medium | Linked_List | 0 | 100.00
-| 0091 |[Decode Ways](src.save/main/java/g0001_0100/s0091_decode_ways/Solution.java)| Medium | Top_Interview_Questions, String, Dynamic_Programming, Algorithm_II_Day_15_Dynamic_Programming, Dynamic_Programming_I_Day_10 | 2 | 64.33
+| 0091 |[Decode Ways](src.save/main/java/g0001_0100/s0091_decode_ways/Solution.java)| Medium | Top_Interview_Questions, String, Dynamic_Programming, Algorithm_II_Day_15_Dynamic_Programming, Dynamic_Programming_I_Day_10 | 2 | 66.37
 | 0090 |[Subsets II](src.save/main/java/g0001_0100/s0090_subsets_ii/Solution.java)| Medium | Array, Bit_Manipulation, Backtracking, Algorithm_II_Day_9_Recursion_Backtracking | 2 | 82.94
 | 0089 |[Gray Code](src.save/main/java/g0001_0100/s0089_gray_code/Solution.java)| Medium | Math, Bit_Manipulation, Backtracking | 3 | 98.59
 | 0088 |[Merge Sorted Array](src.save/main/java/g0001_0100/s0088_merge_sorted_array/Solution.java)| Easy | Top_Interview_Questions, Array, Sorting, Two_Pointers, Data_Structure_I_Day_2_Array | 0 | 100.00
