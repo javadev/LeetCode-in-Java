@@ -2,7 +2,7 @@ package g0001_0100.s0096_unique_binary_search_trees;
 
 // #Medium #Top_100_Liked_Questions #Dynamic_Programming #Math #Tree #Binary_Tree
 // #Binary_Search_Tree #Dynamic_Programming_I_Day_11
-// #2022_02_21_Time_0_ms_(100.00%)_Space_41.5_MB_(6.36%)
+// #2022_06_21_Time_0_ms_(100.00%)_Space_40.4_MB_(72.43%)
 
 public class Solution {
     public int numTrees(int n) {
