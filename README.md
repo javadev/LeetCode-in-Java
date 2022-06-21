@@ -1836,7 +1836,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1866 |[Number of Ways to Rearrange Sticks With K Sticks Visible](src.save/main/java/g1801_1900/s1866_number_of_ways_to_rearrange_sticks_with_k_sticks_visible/Solution.java)| Hard | Dynamic_Programming, Math, Combinatorics | 67 | 96.33
 | 1865 |[Finding Pairs With a Certain Sum](src.save/main/java/g1801_1900/s1865_finding_pairs_with_a_certain_sum/FindSumPairs.java)| Medium | Array, Hash_Table, Design | 195 | 83.97
 | 1864 |[Minimum Number of Swaps to Make the Binary String Alternating](src.save/main/java/g1801_1900/s1864_minimum_number_of_swaps_to_make_the_binary_string_alternating/Solution.java)| Medium | String, Greedy | 3 | 43.20
-| 1863 |[Sum of All Subset XOR Totals](src.save/main/java/g1801_1900/s1863_sum_of_all_subset_xor_totals/Solution.java)| Easy | Array, Math, Bit_Manipulation, Backtracking, Combinatorics | 22 | 11.36
+| 1863 |[Sum of All Subset XOR Totals](src.save/main/java/g1801_1900/s1863_sum_of_all_subset_xor_totals/Solution.java)| Easy | Array, Math, Bit_Manipulation, Backtracking, Combinatorics | 0 | 100.00
 | 1862 |[Sum of Floored Pairs](src.save/main/java/g1801_1900/s1862_sum_of_floored_pairs/Solution.java)| Hard | Array, Math, Binary_Search, Prefix_Sum | 115 | 70.91
 | 1861 |[Rotating the Box](src.save/main/java/g1801_1900/s1861_rotating_the_box/Solution.java)| Medium | Array, Matrix, Two_Pointers | 8 | 92.84
 | 1860 |[Incremental Memory Leak](src.save/main/java/g1801_1900/s1860_incremental_memory_leak/Solution.java)| Medium | Simulation | 5 | 78.57
