@@ -1,39 +1,22 @@
 package g1801_1900.s1863_sum_of_all_subset_xor_totals;
 
 // #Easy #Array #Math #Bit_Manipulation #Backtracking #Combinatorics
-// #2022_05_10_Time_22_ms_(11.36%)_Space_52.2_MB_(6.49%)
+// #2022_06_21_Time_0_ms_(100.00%)_Space_39.3_MB_(96.98%)
 
-import java.util.ArrayList;
-import java.util.List;
-
-@SuppressWarnings("java:S5413")
 public class Solution {
     public int subsetXORSum(int[] nums) {
-        int sum = 0;
-        List<List<Integer>> subsets = subsets(nums);
-        for (List<Integer> subset : subsets) {
-            int xor = 0;
-            for (int i : subset) {
-                xor ^= i;
-            }
-            sum += xor;
+        if (nums.length == 0) {
+            return 0;
         }
-        return sum;
+        return subsetXORSum(nums, 0, 0);
     }
 
-    private List<List<Integer>> subsets(int[] nums) {
-        List<List<Integer>> result = new ArrayList<>();
-        backtracking(result, new ArrayList<>(), nums, 0);
-        return result;
-    }
-
-    private void backtracking(
-            List<List<Integer>> result, List<Integer> list, int[] nums, int start) {
-        result.add(new ArrayList<>(list));
-        for (int i = start; i < nums.length; i++) {
-            list.add(nums[i]);
-            backtracking(result, list, nums, i + 1);
-            list.remove(list.size() - 1);
+    private int subsetXORSum(int[] nums, int currIndex, int res) {
+        if (currIndex == nums.length) {
+            return res;
         }
+        int sum1 = subsetXORSum(nums, currIndex + 1, nums[currIndex] ^ res);
+        int sum2 = subsetXORSum(nums, currIndex + 1, res);
+        return sum1 + sum2;
     }
 }
