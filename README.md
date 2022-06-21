@@ -1708,7 +1708,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 2033 |[Minimum Operations to Make a Uni-Value Grid](src.save/main/java/g2001_2100/s2033_minimum_operations_to_make_a_uni_value_grid/Solution.java)| Medium | Array, Math, Sorting, Matrix | 41 | 87.53
 | 2032 |[Two Out of Three](src.save/main/java/g2001_2100/s2032_two_out_of_three/Solution.java)| Easy | Array, Hash_Table | 9 | 45.56
 | 2030 |[Smallest K-Length Subsequence With Occurrences of a Letter](src.save/main/java/g2001_2100/s2030_smallest_k_length_subsequence_with_occurrences_of_a_letter/Solution.java)| Hard | String, Greedy, Stack, Monotonic_Stack | 131 | 64.46
-| 2029 |[Stone Game IX](src.save/main/java/g2001_2100/s2029_stone_game_ix/Solution.java)| Medium | Array, Math, Greedy, Counting, Game_Theory | 31 | 10.87
+| 2029 |[Stone Game IX](src.save/main/java/g2001_2100/s2029_stone_game_ix/Solution.java)| Medium | Array, Math, Greedy, Counting, Game_Theory | 14 | 53.97
 | 2028 |[Find Missing Observations](src.save/main/java/g2001_2100/s2028_find_missing_observations/Solution.java)| Medium | Array, Math, Simulation | 10 | 31.40
 | 2027 |[Minimum Moves to Convert String](src.save/main/java/g2001_2100/s2027_minimum_moves_to_convert_string/Solution.java)| Easy | String, Greedy | 0 | 100.00
 | 2025 |[Maximum Number of Ways to Partition an Array](src.save/main/java/g2001_2100/s2025_maximum_number_of_ways_to_partition_an_array/Solution.java)| Hard | Array, Hash_Table, Prefix_Sum, Counting, Enumeration | 172 | 100.00
