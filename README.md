@@ -33,6 +33,20 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
 
+##
+* [Data Structure I](#data-structure-i)
+* [Data Structure II](#data-structure-ii)
+* [Algorithm I](#algorithm-i)
+* [Algorithm II](#algorithm-ii)
+* [Binary Search I](#binary-search-i)
+* [Binary Search II](#binary-search-ii)
+* [Dynamic Programming I](#dynamic-programming-i)
+* [Programming Skills I](#programming-skills-i)
+* [Programming Skills II](#programming-skills-ii)
+* [Graph Theory I](#graph-theory-i)
+* [SQL I](#sql-i)
+* [Level 1](#level-1)
+
 ### Data Structure I
 
 #### Day 1 Array
