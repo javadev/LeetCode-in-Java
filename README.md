@@ -2079,7 +2079,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1556 |[Thousand Separator](src.save/main/java/g1501_1600/s1556_thousand_separator/Solution.java)| Easy | String | 1 | 57.92
 | 1553 |[Minimum Number of Days to Eat N Oranges](src.save/main/java/g1501_1600/s1553_minimum_number_of_days_to_eat_n_oranges/Solution.java)| Hard | Dynamic_Programming, Memoization | 5 | 91.90
 | 1552 |[Magnetic Force Between Two Balls](src.save/main/java/g1501_1600/s1552_magnetic_force_between_two_balls/Solution.java)| Medium | Array, Sorting, Binary_Search, Binary_Search_II_Day_4 | 39 | 99.65
-| 1551 |[Minimum Operations to Make Array Equal](src.save/main/java/g1501_1600/s1551_minimum_operations_to_make_array_equal/Solution.java)| Medium | Math | 7 | 12.93
+| 1551 |[Minimum Operations to Make Array Equal](src.save/main/java/g1501_1600/s1551_minimum_operations_to_make_array_equal/Solution.java)| Medium | Math | 0 | 100.00
 | 1550 |[Three Consecutive Odds](src.save/main/java/g1501_1600/s1550_three_consecutive_odds/Solution.java)| Easy | Array | 0 | 100.00
 | 1547 |[Minimum Cost to Cut a Stick](src.save/main/java/g1501_1600/s1547_minimum_cost_to_cut_a_stick/Solution.java)| Hard | Array, Dynamic_Programming | 6 | 100.00
 | 1546 |[Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](src.save/main/java/g1501_1600/s1546_maximum_number_of_non_overlapping_subarrays_with_sum_equals_target/Solution.java)| Medium | Array, Hash_Table, Greedy, Prefix_Sum | 56 | 71.58
