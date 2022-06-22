@@ -1,7 +1,7 @@
 package g0101_0200.s0120_triangle;
 
 // #Medium #Array #Dynamic_Programming #Algorithm_I_Day_12_Dynamic_Programming
-// #Dynamic_Programming_I_Day_13 #2022_02_22_Time_1_ms_(99.76%)_Space_41.7_MB_(43.52%)
+// #Dynamic_Programming_I_Day_13 #2022_06_23_Time_2_ms_(94.63%)_Space_44.2_MB_(36.02%)
 
 import java.util.Arrays;
 import java.util.List;
