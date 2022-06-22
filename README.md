@@ -126,7 +126,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0102 |[Binary Tree Level Order Traversal](src.save/main/java/g0101_0200/s0102_binary_tree_level_order_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree | 0 | 100.00
+| 0102 |[Binary Tree Level Order Traversal](src.save/main/java/g0101_0200/s0102_binary_tree_level_order_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree | 1 | 91.09
 | 0104 |[Maximum Depth of Binary Tree](src.save/main/java/g0101_0200/s0104_maximum_depth_of_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 0 | 100.00
 | 0101 |[Symmetric Tree](src.save/main/java/g0101_0200/s0101_symmetric_tree/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 0 | 100.00
 
@@ -262,8 +262,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0108 |[Convert Sorted Array to Binary Search Tree](src.save/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/Solution.java)| Easy | Top_Interview_Questions, Array, Tree, Binary_Tree, Binary_Search_Tree, Divide_and_Conquer | 0 | 100.00
-| 0105 |[Construct Binary Tree from Preorder and Inorder Traversal](src.save/main/java/g0101_0200/s0105_construct_binary_tree_from_preorder_and_inorder_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Tree, Binary_Tree, Divide_and_Conquer | 1 | 99.69
-| 0103 |[Binary Tree Zigzag Level Order Traversal](src.save/main/java/g0101_0200/s0103_binary_tree_zigzag_level_order_traversal/Solution.java)| Medium | Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree | 1 | 86.98
+| 0105 |[Construct Binary Tree from Preorder and Inorder Traversal](src.save/main/java/g0101_0200/s0105_construct_binary_tree_from_preorder_and_inorder_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Tree, Binary_Tree, Divide_and_Conquer | 3 | 86.35
+| 0103 |[Binary Tree Zigzag Level Order Traversal](src.save/main/java/g0101_0200/s0103_binary_tree_zigzag_level_order_traversal/Solution.java)| Medium | Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree | 1 | 95.00
 
 #### Day 16 Tree
 
@@ -1055,7 +1055,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0110 |[Balanced Binary Tree](src.save/main/java/g0101_0200/s0110_balanced_binary_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree | 0 | 100.00
+| 0110 |[Balanced Binary Tree](src.save/main/java/g0101_0200/s0110_balanced_binary_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree | 1 | 98.82
 | 0459 |[Repeated Substring Pattern](src.save/main/java/g0401_0500/s0459_repeated_substring_pattern/Solution.java)| Easy | String, String_Matching | 9 | 90.15
 
 #### Day 3
@@ -1416,7 +1416,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0589 |[N-ary Tree Preorder Traversal](src.save/main/java/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.java)| Easy | Depth_First_Search, Tree, Stack | 2 | 54.35
-| 0102 |[Binary Tree Level Order Traversal](src.save/main/java/g0101_0200/s0102_binary_tree_level_order_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree | 0 | 100.00
+| 0102 |[Binary Tree Level Order Traversal](src.save/main/java/g0101_0200/s0102_binary_tree_level_order_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree | 1 | 91.09
 
 #### Day 7 Binary Search
 
@@ -2170,7 +2170,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1439 |[Find the Kth Smallest Sum of a Matrix With Sorted Rows](src.save/main/java/g1401_1500/s1439_find_the_kth_smallest_sum_of_a_matrix_with_sorted_rows/Solution.java)| Hard | Array, Binary_Search, Matrix, Heap_Priority_Queue | 40 | 75.79
 | 1438 |[Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](src.save/main/java/g1401_1500/s1438_longest_continuous_subarray_with_absolute_diff_less_than_or_equal_to_limit/Solution.java)| Medium | Array, Heap_Priority_Queue, Sliding_Window, Ordered_Set, Queue, Monotonic_Queue | 38 | 81.86
 | 1437 |[Check If All 1's Are at Least Length K Places Away](src.save/main/java/g1401_1500/s1437_check_if_all_1s_are_at_least_length_k_places_away/Solution.java)| Easy | Array | 2 | 73.75
-| 1436 |[Destination City](src.save/main/java/g1401_1500/s1436_destination_city/Solution.java)| Easy | String, Hash_Table | 7 | 11.79
+| 1436 |[Destination City](src.save/main/java/g1401_1500/s1436_destination_city/Solution.java)| Easy | String, Hash_Table | 3 | 81.47
 | 1434 |[Number of Ways to Wear Different Hats to Each Other](src.save/main/java/g1401_1500/s1434_number_of_ways_to_wear_different_hats_to_each_other/Solution.java)| Hard | Array, Dynamic_Programming, Bit_Manipulation, Bitmask | 31 | 77.92
 | 1433 |[Check If a String Can Break Another String](src.save/main/java/g1401_1500/s1433_check_if_a_string_can_break_another_string/Solution.java)| Medium | String, Sorting, Greedy | 9 | 77.89
 | 1432 |[Max Difference You Can Get From Changing an Integer](src.save/main/java/g1401_1500/s1432_max_difference_you_can_get_from_changing_an_integer/Solution.java)| Medium | Math, Greedy | 1 | 97.22
@@ -3204,15 +3204,15 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0113 |[Path Sum II](src.save/main/java/g0101_0200/s0113_path_sum_ii/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree, Backtracking, Data_Structure_II_Day_16_Tree | 1 | 100.00
 | 0112 |[Path Sum](src.save/main/java/g0101_0200/s0112_path_sum/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_I_Day_12_Tree | 0 | 100.00
 | 0111 |[Minimum Depth of Binary Tree](src.save/main/java/g0101_0200/s0111_minimum_depth_of_binary_tree/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 1 | 94.17
-| 0110 |[Balanced Binary Tree](src.save/main/java/g0101_0200/s0110_balanced_binary_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Programming_Skills_II_Day_2 | 0 | 100.00
-| 0109 |[Convert Sorted List to Binary Search Tree](src.save/main/java/g0101_0200/s0109_convert_sorted_list_to_binary_search_tree/Solution.java)| Medium | Tree, Binary_Tree, Linked_List, Binary_Search_Tree, Divide_and_Conquer | 1 | 80.17
+| 0110 |[Balanced Binary Tree](src.save/main/java/g0101_0200/s0110_balanced_binary_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Programming_Skills_II_Day_2 | 1 | 98.82
+| 0109 |[Convert Sorted List to Binary Search Tree](src.save/main/java/g0101_0200/s0109_convert_sorted_list_to_binary_search_tree/Solution.java)| Medium | Tree, Binary_Tree, Linked_List, Binary_Search_Tree, Divide_and_Conquer | 1 | 87.04
 | 0108 |[Convert Sorted Array to Binary Search Tree](src.save/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/Solution.java)| Easy | Top_Interview_Questions, Array, Tree, Binary_Tree, Binary_Search_Tree, Divide_and_Conquer, Data_Structure_II_Day_15_Tree | 0 | 100.00
-| 0107 |[Binary Tree Level Order Traversal II](src.save/main/java/g0101_0200/s0107_binary_tree_level_order_traversal_ii/Solution.java)| Medium | Breadth_First_Search, Tree, Binary_Tree | 1 | 93.94
-| 0106 |[Construct Binary Tree from Inorder and Postorder Traversal](src.save/main/java/g0101_0200/s0106_construct_binary_tree_from_inorder_and_postorder_traversal/Solution.java)| Medium | Array, Hash_Table, Tree, Binary_Tree, Divide_and_Conquer | 1 | 99.20
-| 0105 |[Construct Binary Tree from Preorder and Inorder Traversal](src.save/main/java/g0101_0200/s0105_construct_binary_tree_from_preorder_and_inorder_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Tree, Binary_Tree, Divide_and_Conquer, Data_Structure_II_Day_15_Tree | 1 | 99.69
+| 0107 |[Binary Tree Level Order Traversal II](src.save/main/java/g0101_0200/s0107_binary_tree_level_order_traversal_ii/Solution.java)| Medium | Breadth_First_Search, Tree, Binary_Tree | 1 | 97.71
+| 0106 |[Construct Binary Tree from Inorder and Postorder Traversal](src.save/main/java/g0101_0200/s0106_construct_binary_tree_from_inorder_and_postorder_traversal/Solution.java)| Medium | Array, Hash_Table, Tree, Binary_Tree, Divide_and_Conquer | 1 | 100.00
+| 0105 |[Construct Binary Tree from Preorder and Inorder Traversal](src.save/main/java/g0101_0200/s0105_construct_binary_tree_from_preorder_and_inorder_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Tree, Binary_Tree, Divide_and_Conquer, Data_Structure_II_Day_15_Tree | 3 | 86.35
 | 0104 |[Maximum Depth of Binary Tree](src.save/main/java/g0101_0200/s0104_maximum_depth_of_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_I_Day_11_Tree, Programming_Skills_I_Day_10_Linked_List_and_Tree | 0 | 100.00
-| 0103 |[Binary Tree Zigzag Level Order Traversal](src.save/main/java/g0101_0200/s0103_binary_tree_zigzag_level_order_traversal/Solution.java)| Medium | Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_II_Day_15_Tree | 1 | 86.98
-| 0102 |[Binary Tree Level Order Traversal](src.save/main/java/g0101_0200/s0102_binary_tree_level_order_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_I_Day_11_Tree, Level_1_Day_6_Tree | 0 | 100.00
+| 0103 |[Binary Tree Zigzag Level Order Traversal](src.save/main/java/g0101_0200/s0103_binary_tree_zigzag_level_order_traversal/Solution.java)| Medium | Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_II_Day_15_Tree | 1 | 95.00
+| 0102 |[Binary Tree Level Order Traversal](src.save/main/java/g0101_0200/s0102_binary_tree_level_order_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_I_Day_11_Tree, Level_1_Day_6_Tree | 1 | 91.09
 | 0101 |[Symmetric Tree](src.save/main/java/g0101_0200/s0101_symmetric_tree/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_I_Day_11_Tree | 0 | 100.00
 | 0100 |[Same Tree](src.save/main/java/g0001_0100/s0100_same_tree/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 0 | 100.00
 | 0099 |[Recover Binary Search Tree](src.save/main/java/g0001_0100/s0099_recover_binary_search_tree/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 3 | 76.33

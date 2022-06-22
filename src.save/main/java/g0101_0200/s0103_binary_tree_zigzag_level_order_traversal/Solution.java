@@ -1,7 +1,7 @@
 package g0101_0200.s0103_binary_tree_zigzag_level_order_traversal;
 
 // #Medium #Top_Interview_Questions #Breadth_First_Search #Tree #Binary_Tree
-// #Data_Structure_II_Day_15_Tree #2022_02_21_Time_1_ms_(86.98%)_Space_43.2_MB_(5.11%)
+// #Data_Structure_II_Day_15_Tree #2022_06_22_Time_1_ms_(95.00%)_Space_43.2_MB_(19.22%)
 
 import com_github_leetcode.TreeNode;
 import java.util.ArrayList;
@@ -43,7 +43,6 @@ public class Solution {
                 } else {
                     level.addFirst(node.val);
                 }
-
                 if (node.left != null) {
                     q.add(node.left);
                 }
@@ -54,7 +53,6 @@ public class Solution {
             }
             result.add(level);
             zig = !zig;
-
             level = new LinkedList<>();
             if (!q.isEmpty()) {
                 q.add(null);
