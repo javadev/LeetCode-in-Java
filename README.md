@@ -2150,7 +2150,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1463 |[Cherry Pickup II](src.save/main/java/g1401_1500/s1463_cherry_pickup_ii/Solution.java)| Hard | Array, Dynamic_Programming, Matrix | 10 | 99.58
 | 1462 |[Course Schedule IV](src.save/main/java/g1401_1500/s1462_course_schedule_iv/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 10 | 100.00
 | 1461 |[Check If a String Contains All Binary Codes of Size K](src.save/main/java/g1401_1500/s1461_check_if_a_string_contains_all_binary_codes_of_size_k/Solution.java)| Medium | String, Hash_Table, Bit_Manipulation, Hash_Function, Rolling_Hash | 169 | 52.07
-| 1460 |[Make Two Arrays Equal by Reversing Sub-arrays](src.save/main/java/g1401_1500/s1460_make_two_arrays_equal_by_reversing_sub_arrays/Solution.java)| Easy | Array, Hash_Table, Sorting | 13 | 14.65
+| 1460 |[Make Two Arrays Equal by Reversing Sub-arrays](src.save/main/java/g1401_1500/s1460_make_two_arrays_equal_by_reversing_sub_arrays/Solution.java)| Easy | Array, Hash_Table, Sorting | 4 | 74.61
 | 1458 |[Max Dot Product of Two Subsequences](src.save/main/java/g1401_1500/s1458_max_dot_product_of_two_subsequences/Solution.java)| Hard | Array, Dynamic_Programming | 6 | 98.36
 | 1457 |[Pseudo-Palindromic Paths in a Binary Tree](src.save/main/java/g1401_1500/s1457_pseudo_palindromic_paths_in_a_binary_tree/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Bit_Manipulation | 35 | 43.73
 | 1456 |[Maximum Number of Vowels in a Substring of Given Length](src.save/main/java/g1401_1500/s1456_maximum_number_of_vowels_in_a_substring_of_given_length/Solution.java)| Medium | String, Sliding_Window | 19 | 53.73
