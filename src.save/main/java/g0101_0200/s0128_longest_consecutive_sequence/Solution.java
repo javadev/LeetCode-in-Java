@@ -1,7 +1,7 @@
 package g0101_0200.s0128_longest_consecutive_sequence;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table #Union_Find
-// #2022_02_22_Time_17_ms_(84.46%)_Space_61.3_MB_(42.78%)
+// #2022_06_23_Time_18_ms_(91.05%)_Space_64.8_MB_(63.58%)
 
 import java.util.Arrays;
 

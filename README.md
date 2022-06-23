@@ -68,7 +68,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0350 |[Intersection of Two Arrays II](src.save/main/java/g0301_0400/s0350_intersection_of_two_arrays_ii/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 3 | 81.79
-| 0121 |[Best Time to Buy and Sell Stock](src.save/main/java/g0101_0200/s0121_best_time_to_buy_and_sell_stock/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 2 | 85.25
+| 0121 |[Best Time to Buy and Sell Stock](src.save/main/java/g0101_0200/s0121_best_time_to_buy_and_sell_stock/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 1 | 100.00
 
 #### Day 4 Array
 
@@ -471,7 +471,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1091 |[Shortest Path in Binary Matrix](src.save/main/java/g1001_1100/s1091_shortest_path_in_binary_matrix/Solution.java)| Medium | Array, Breadth_First_Search, Matrix | 22 | 69.99
-| 0130 |[Surrounded Regions](src.save/main/java/g0101_0200/s0130_surrounded_regions/Solution.java)| Medium | Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 2 | 80.58
+| 0130 |[Surrounded Regions](src.save/main/java/g0101_0200/s0130_surrounded_regions/Solution.java)| Medium | Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 2 | 84.66
 | 0797 |[All Paths From Source to Target](src.save/main/java/g0701_0800/s0797_all_paths_from_source_to_target/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Backtracking | 2 | 90.53
 
 #### Day 9 Recursion Backtracking
@@ -843,8 +843,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1014 |[Best Sightseeing Pair](src.save/main/java/g1001_1100/s1014_best_sightseeing_pair/Solution.java)| Medium | Array, Dynamic_Programming | 2 | 99.86
-| 0121 |[Best Time to Buy and Sell Stock](src.save/main/java/g0101_0200/s0121_best_time_to_buy_and_sell_stock/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 2 | 85.25
-| 0122 |[Best Time to Buy and Sell Stock II](src.save/main/java/g0101_0200/s0122_best_time_to_buy_and_sell_stock_ii/Solution.java)| Medium | Top_Interview_Questions, Array, Dynamic_Programming, Greedy | 2 | 34.31
+| 0121 |[Best Time to Buy and Sell Stock](src.save/main/java/g0101_0200/s0121_best_time_to_buy_and_sell_stock/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 1 | 100.00
+| 0122 |[Best Time to Buy and Sell Stock II](src.save/main/java/g0101_0200/s0122_best_time_to_buy_and_sell_stock_ii/Solution.java)| Medium | Top_Interview_Questions, Array, Dynamic_Programming, Greedy | 1 | 96.82
 
 #### Day 8
 
@@ -1272,7 +1272,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 |-|-|-|-|-|-
 | 0433 |[Minimum Genetic Mutation](src.save/main/java/g0401_0500/s0433_minimum_genetic_mutation/Solution.java)| Medium | String, Hash_Table, Breadth_First_Search | 0 | 100.00
 | 0752 |[Open the Lock](src.save/main/java/g0701_0800/s0752_open_the_lock/Solution.java)| Medium | Array, String, Hash_Table, Breadth_First_Search | 72 | 91.06
-| 0127 |[Word Ladder](src.save/main/java/g0101_0200/s0127_word_ladder/Solution.java)| Hard | Top_Interview_Questions, String, Hash_Table, Breadth_First_Search | 32 | 94.39
+| 0127 |[Word Ladder](src.save/main/java/g0101_0200/s0127_word_ladder/Solution.java)| Hard | Top_Interview_Questions, String, Hash_Table, Breadth_First_Search | 37 | 94.58
 
 #### Day 13 Graph Theory
 
@@ -1408,7 +1408,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0121 |[Best Time to Buy and Sell Stock](src.save/main/java/g0101_0200/s0121_best_time_to_buy_and_sell_stock/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 2 | 85.25
+| 0121 |[Best Time to Buy and Sell Stock](src.save/main/java/g0101_0200/s0121_best_time_to_buy_and_sell_stock/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 1 | 100.00
 | 0409 |[Longest Palindrome](src.save/main/java/g0401_0500/s0409_longest_palindrome/Solution.java)| Easy | String, Hash_Table, Greedy | 1 | 100.00
 
 #### Day 6 Tree
@@ -1486,7 +1486,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 2312 |[Selling Pieces of Wood](src/main/java/g2301_2400/s2312_selling_pieces_of_wood/Solution.java)| Hard | Backtracking | 78 | 63.64
-| 2311 |[Longest Binary Subsequence Less Than or Equal to K](src/main/java/g2301_2400/s2311_longest_binary_subsequence_less_than_or_equal_to_k/Solution.java)| Medium | Math | 1 | 100.00
+| 2311 |[Longest Binary Subsequence Less Than or Equal to K](src/main/java/g2301_2400/s2311_longest_binary_subsequence_less_than_or_equal_to_k/Solution.java)| Medium | String, Dynamic_Programming, Greedy, Memoization | 1 | 100.00
 | 2310 |[Sum of Numbers With Units Digit K](src/main/java/g2301_2400/s2310_sum_of_numbers_with_units_digit_k/Solution.java)| Medium | Math | 1 | 66.67
 | 2309 |[Greatest English Letter in Upper and Lower Case](src/main/java/g2301_2400/s2309_greatest_english_letter_in_upper_and_lower_case/Solution.java)| Easy | Array | 5 | 75.00
 | 2306 |[Naming a Company](src/main/java/g2301_2400/s2306_naming_a_company/Solution.java)| Hard | Array, String, Hash_Table, Bit_Manipulation, Enumeration | 486 | 74.14
@@ -3184,16 +3184,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0133 |[Clone Graph](src.save/main/java/g0101_0200/s0133_clone_graph/Solution.java)| Medium | Hash_Table, Depth_First_Search, Breadth_First_Search, Graph | 55 | 16.92
 | 0132 |[Palindrome Partitioning II](src.save/main/java/g0101_0200/s0132_palindrome_partitioning_ii/Solution.java)| Hard | String, Dynamic_Programming | 2 | 99.72
 | 0131 |[Palindrome Partitioning](src.save/main/java/g0101_0200/s0131_palindrome_partitioning/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Backtracking | 19 | 53.74
-| 0130 |[Surrounded Regions](src.save/main/java/g0101_0200/s0130_surrounded_regions/Solution.java)| Medium | Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find, Algorithm_II_Day_8_Breadth_First_Search_Depth_First_Search | 2 | 80.58
+| 0130 |[Surrounded Regions](src.save/main/java/g0101_0200/s0130_surrounded_regions/Solution.java)| Medium | Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find, Algorithm_II_Day_8_Breadth_First_Search_Depth_First_Search | 2 | 84.66
 | 0129 |[Sum Root to Leaf Numbers](src.save/main/java/g0101_0200/s0129_sum_root_to_leaf_numbers/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree | 0 | 100.00
-| 0128 |[Longest Consecutive Sequence](src.save/main/java/g0101_0200/s0128_longest_consecutive_sequence/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Union_Find | 17 | 84.46
-| 0127 |[Word Ladder](src.save/main/java/g0101_0200/s0127_word_ladder/Solution.java)| Hard | Top_Interview_Questions, String, Hash_Table, Breadth_First_Search, Graph_Theory_I_Day_12_Breadth_First_Search | 32 | 94.39
+| 0128 |[Longest Consecutive Sequence](src.save/main/java/g0101_0200/s0128_longest_consecutive_sequence/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Union_Find | 18 | 91.05
+| 0127 |[Word Ladder](src.save/main/java/g0101_0200/s0127_word_ladder/Solution.java)| Hard | Top_Interview_Questions, String, Hash_Table, Breadth_First_Search, Graph_Theory_I_Day_12_Breadth_First_Search | 37 | 94.58
 | 0126 |[Word Ladder II](src.save/main/java/g0101_0200/s0126_word_ladder_ii/Solution.java)| Hard | String, Hash_Table, Breadth_First_Search, Backtracking | 4 | 99.18
-| 0125 |[Valid Palindrome](src.save/main/java/g0101_0200/s0125_valid_palindrome/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers | 3 | 88.82
-| 0124 |[Binary Tree Maximum Path Sum](src.save/main/java/g0101_0200/s0124_binary_tree_maximum_path_sum/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree | 1 | 76.01
-| 0123 |[Best Time to Buy and Sell Stock III](src.save/main/java/g0101_0200/s0123_best_time_to_buy_and_sell_stock_iii/Solution.java)| Hard | Array, Dynamic_Programming | 1 | 100.00
-| 0122 |[Best Time to Buy and Sell Stock II](src.save/main/java/g0101_0200/s0122_best_time_to_buy_and_sell_stock_ii/Solution.java)| Medium | Top_Interview_Questions, Array, Dynamic_Programming, Greedy, Dynamic_Programming_I_Day_7 | 2 | 34.31
-| 0121 |[Best Time to Buy and Sell Stock](src.save/main/java/g0101_0200/s0121_best_time_to_buy_and_sell_stock/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Data_Structure_I_Day_3_Array, Dynamic_Programming_I_Day_7, Level_1_Day_5_Greedy | 2 | 85.25
+| 0125 |[Valid Palindrome](src.save/main/java/g0101_0200/s0125_valid_palindrome/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers | 3 | 98.64
+| 0124 |[Binary Tree Maximum Path Sum](src.save/main/java/g0101_0200/s0124_binary_tree_maximum_path_sum/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree | 1 | 99.46
+| 0123 |[Best Time to Buy and Sell Stock III](src.save/main/java/g0101_0200/s0123_best_time_to_buy_and_sell_stock_iii/Solution.java)| Hard | Array, Dynamic_Programming | 4 | 87.18
+| 0122 |[Best Time to Buy and Sell Stock II](src.save/main/java/g0101_0200/s0122_best_time_to_buy_and_sell_stock_ii/Solution.java)| Medium | Top_Interview_Questions, Array, Dynamic_Programming, Greedy, Dynamic_Programming_I_Day_7 | 1 | 96.82
+| 0121 |[Best Time to Buy and Sell Stock](src.save/main/java/g0101_0200/s0121_best_time_to_buy_and_sell_stock/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Data_Structure_I_Day_3_Array, Dynamic_Programming_I_Day_7, Level_1_Day_5_Greedy | 1 | 100.00
 | 0120 |[Triangle](src.save/main/java/g0101_0200/s0120_triangle/Solution.java)| Medium | Array, Dynamic_Programming, Algorithm_I_Day_12_Dynamic_Programming, Dynamic_Programming_I_Day_13 | 2 | 94.63
 | 0119 |[Pascal's Triangle II](src.save/main/java/g0101_0200/s0119_pascals_triangle_ii/Solution.java)| Easy | Array, Dynamic_Programming, Data_Structure_II_Day_3_Array, Dynamic_Programming_I_Day_12 | 0 | 100.00
 | 0118 |[Pascal's Triangle](src.save/main/java/g0101_0200/s0118_pascals_triangle/Solution.java)| Easy | Top_Interview_Questions, Array, Dynamic_Programming, Data_Structure_I_Day_4_Array, Dynamic_Programming_I_Day_12 | 1 | 67.08
