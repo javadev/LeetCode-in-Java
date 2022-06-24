@@ -1,6 +1,6 @@
 package g0101_0200.s0135_candy;
 
-// #Hard #Array #Greedy #2022_02_22_Time_3_ms_(76.49%)_Space_51.4_MB_(28.53%)
+// #Hard #Array #Greedy #2022_06_24_Time_2_ms_(99.95%)_Space_42.8_MB_(94.28%)
 
 import java.util.Arrays;
 
