@@ -158,7 +158,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0136 |[Single Number](src.save/main/java/g0101_0200/s0136_single_number/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation | 2 | 58.97
+| 0136 |[Single Number](src.save/main/java/g0101_0200/s0136_single_number/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation | 1 | 99.97
 | 0169 |[Majority Element](src.save/main/java/g0101_0200/s0169_majority_element/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Sorting, Counting, Divide_and_Conquer | 2 | 83.81
 | 0015 |[3Sum](src.save/main/java/g0001_0100/s0015_3sum/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Two_Pointers | 28 | 71.04
 
@@ -410,7 +410,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0190 |[Reverse Bits](src.save/main/java/g0101_0200/s0190_reverse_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation, Divide_and_Conquer | 1 | 89.07
-| 0136 |[Single Number](src.save/main/java/g0101_0200/s0136_single_number/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation | 2 | 58.97
+| 0136 |[Single Number](src.save/main/java/g0101_0200/s0136_single_number/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation | 1 | 99.97
 
 ### Algorithm II
 
@@ -523,7 +523,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0091 |[Decode Ways](src.save/main/java/g0001_0100/s0091_decode_ways/Solution.java)| Medium | Top_Interview_Questions, String, Dynamic_Programming | 2 | 66.37
-| 0139 |[Word Break](src.save/main/java/g0101_0200/s0139_word_break/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Dynamic_Programming, Trie, Memoization | 2 | 96.55
+| 0139 |[Word Break](src.save/main/java/g0101_0200/s0139_word_break/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Dynamic_Programming, Trie, Memoization | 2 | 97.08
 
 #### Day 16 Dynamic Programming
 
@@ -857,7 +857,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0139 |[Word Break](src.save/main/java/g0101_0200/s0139_word_break/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Dynamic_Programming, Trie, Memoization | 2 | 96.55
+| 0139 |[Word Break](src.save/main/java/g0101_0200/s0139_word_break/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Dynamic_Programming, Trie, Memoization | 2 | 97.08
 | 0042 |[Trapping Rain Water](src.save/main/java/g0001_0100/s0042_trapping_rain_water/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Two_Pointers, Stack, Monotonic_Stack | 1 | 98.06
 
 #### Day 10
@@ -3174,16 +3174,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0143 |[Reorder List](src.save/main/java/g0101_0200/s0143_reorder_list/Solution.java)| Medium | Two_Pointers, Stack, Linked_List, Recursion, Data_Structure_II_Day_13_Linked_List, Programming_Skills_II_Day_14 | 2 | 72.16
 | 0142 |[Linked List Cycle II](src.save/main/java/g0101_0200/s0142_linked_list_cycle_ii/Solution.java)| Medium | Top_100_Liked_Questions, Hash_Table, Two_Pointers, Linked_List, Data_Structure_II_Day_10_Linked_List, Level_1_Day_4_Linked_List | 0 | 100.00
 | 0141 |[Linked List Cycle](src.save/main/java/g0101_0200/s0141_linked_list_cycle/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Hash_Table, Two_Pointers, Linked_List, Data_Structure_I_Day_7_Linked_List | 0 | 100.00
-| 0140 |[Word Break II](src.save/main/java/g0101_0200/s0140_word_break_ii/Solution.java)| Hard | Top_Interview_Questions, String, Hash_Table, Dynamic_Programming, Backtracking, Trie, Memoization | 1 | 95.98
-| 0139 |[Word Break](src.save/main/java/g0101_0200/s0139_word_break/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Dynamic_Programming, Trie, Memoization, Algorithm_II_Day_15_Dynamic_Programming, Dynamic_Programming_I_Day_9 | 2 | 96.55
+| 0140 |[Word Break II](src.save/main/java/g0101_0200/s0140_word_break_ii/Solution.java)| Hard | Top_Interview_Questions, String, Hash_Table, Dynamic_Programming, Backtracking, Trie, Memoization | 1 | 99.05
+| 0139 |[Word Break](src.save/main/java/g0101_0200/s0139_word_break/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Dynamic_Programming, Trie, Memoization, Algorithm_II_Day_15_Dynamic_Programming, Dynamic_Programming_I_Day_9 | 2 | 97.08
 | 0138 |[Copy List with Random Pointer](src.save/main/java/g0101_0200/s0138_copy_list_with_random_pointer/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Hash_Table, Linked_List, Programming_Skills_II_Day_14 | 0 | 100.00
-| 0137 |[Single Number II](src.save/main/java/g0101_0200/s0137_single_number_ii/Solution.java)| Medium | Array, Bit_Manipulation | 1 | 91.46
-| 0136 |[Single Number](src.save/main/java/g0101_0200/s0136_single_number/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation, Data_Structure_II_Day_1_Array, Algorithm_I_Day_14_Bit_Manipulation | 2 | 58.97
-| 0135 |[Candy](src.save/main/java/g0101_0200/s0135_candy/Solution.java)| Hard | Array, Greedy | 3 | 76.49
-| 0134 |[Gas Station](src.save/main/java/g0101_0200/s0134_gas_station/Solution.java)| Medium | Top_Interview_Questions, Array, Greedy | 3 | 61.54
-| 0133 |[Clone Graph](src.save/main/java/g0101_0200/s0133_clone_graph/Solution.java)| Medium | Hash_Table, Depth_First_Search, Breadth_First_Search, Graph | 55 | 16.92
-| 0132 |[Palindrome Partitioning II](src.save/main/java/g0101_0200/s0132_palindrome_partitioning_ii/Solution.java)| Hard | String, Dynamic_Programming | 2 | 99.72
-| 0131 |[Palindrome Partitioning](src.save/main/java/g0101_0200/s0131_palindrome_partitioning/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Backtracking | 19 | 53.74
+| 0137 |[Single Number II](src.save/main/java/g0101_0200/s0137_single_number_ii/Solution.java)| Medium | Array, Bit_Manipulation | 0 | 100.00
+| 0136 |[Single Number](src.save/main/java/g0101_0200/s0136_single_number/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation, Data_Structure_II_Day_1_Array, Algorithm_I_Day_14_Bit_Manipulation | 1 | 99.97
+| 0135 |[Candy](src.save/main/java/g0101_0200/s0135_candy/Solution.java)| Hard | Array, Greedy | 2 | 99.95
+| 0134 |[Gas Station](src.save/main/java/g0101_0200/s0134_gas_station/Solution.java)| Medium | Top_Interview_Questions, Array, Greedy | 2 | 94.26
+| 0133 |[Clone Graph](src.save/main/java/g0101_0200/s0133_clone_graph/Solution.java)| Medium | Hash_Table, Depth_First_Search, Breadth_First_Search, Graph | 45 | 29.80
+| 0132 |[Palindrome Partitioning II](src.save/main/java/g0101_0200/s0132_palindrome_partitioning_ii/Solution.java)| Hard | String, Dynamic_Programming | 2 | 99.89
+| 0131 |[Palindrome Partitioning](src.save/main/java/g0101_0200/s0131_palindrome_partitioning/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Backtracking | 16 | 65.63
 | 0130 |[Surrounded Regions](src.save/main/java/g0101_0200/s0130_surrounded_regions/Solution.java)| Medium | Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find, Algorithm_II_Day_8_Breadth_First_Search_Depth_First_Search | 2 | 84.66
 | 0129 |[Sum Root to Leaf Numbers](src.save/main/java/g0101_0200/s0129_sum_root_to_leaf_numbers/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree | 0 | 100.00
 | 0128 |[Longest Consecutive Sequence](src.save/main/java/g0101_0200/s0128_longest_consecutive_sequence/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Union_Find | 18 | 91.05

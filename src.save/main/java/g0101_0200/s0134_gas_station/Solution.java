@@ -1,7 +1,7 @@
 package g0101_0200.s0134_gas_station;
 
 // #Medium #Top_Interview_Questions #Array #Greedy
-// #2022_02_22_Time_3_ms_(61.54%)_Space_81.3_MB_(7.19%)
+// #2022_06_24_Time_2_ms_(94.26%)_Space_62.5_MB_(87.11%)
 
 public class Solution {
     public int canCompleteCircuit(int[] gas, int[] cost) {
