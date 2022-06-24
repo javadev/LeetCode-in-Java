@@ -1,6 +1,6 @@
 package g0101_0200.s0151_reverse_words_in_a_string;
 
-// #Medium #String #Two_Pointers #2022_02_23_Time_3_ms_(96.37%)_Space_43.4_MB_(35.43%)
+// #Medium #String #Two_Pointers #2022_06_25_Time_2_ms_(99.94%)_Space_42.4_MB_(88.57%)
 
 public class Solution {
     public String reverseWords(String s) {
@@ -19,7 +19,6 @@ public class Solution {
         if (sb.length() > 0) {
             sb.deleteCharAt(0);
         }
-
         return sb.toString();
     }
 }
