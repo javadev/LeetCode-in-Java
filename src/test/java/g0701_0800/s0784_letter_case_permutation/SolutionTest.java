@@ -19,4 +19,9 @@ class SolutionTest {
         assertThat(
                 new Solution().letterCasePermutation("3z4"), equalTo(Arrays.asList("3z4", "3Z4")));
     }
+
+    @Test
+    void letterCasePermutation3() {
+        assertThat(new Solution().letterCasePermutation("C"), equalTo(Arrays.asList("C", "c")));
+    }
 }

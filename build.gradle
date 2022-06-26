@@ -50,6 +50,7 @@ spotless {
         encoding 'UTF-8'
         target fileTree(projectDir) {
             include '**/src/**/*.java'
+            exclude '**/build/**'
         }
         importOrder '\\#', '', '*'
         removeUnusedImports()
