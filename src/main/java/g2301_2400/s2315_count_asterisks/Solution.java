@@ -9,9 +9,13 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             if (s.charAt(i) == '|') {
                 i++;
-                while (s.charAt(i) != '|') i++;
+                while (s.charAt(i) != '|') {
+                    i++;
+                }
             }
-            if (s.charAt(i) == '*') c++;
+            if (s.charAt(i) == '*') {
+                c++;
+            }
         }
         return c;
     }
