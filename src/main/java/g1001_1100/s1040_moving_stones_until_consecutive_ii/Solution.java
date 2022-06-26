@@ -29,7 +29,7 @@ public class Solution {
             j++;
         }
         ans[0] = minMoves;
-        int maxMoves = 0;
+        int maxMoves;
         if (stones[1] == stones[0] + 1 || stones[n - 1] == stones[n - 2] + 1) {
             maxMoves = stones[n - 1] - stones[0] + 1 - n;
         } else {

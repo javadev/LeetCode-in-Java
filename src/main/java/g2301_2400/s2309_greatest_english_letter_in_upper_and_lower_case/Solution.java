@@ -8,7 +8,7 @@ public class Solution {
         boolean[] sA = new boolean[26];
         boolean[] uA = new boolean[26];
         for (char ch : s.toCharArray()) {
-            int i = 0;
+            int i;
             if (ch <= 'Z' && ch >= 'A') {
                 i = ch - 'A';
                 uA[i] = true;

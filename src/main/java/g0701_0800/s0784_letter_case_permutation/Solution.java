@@ -20,13 +20,13 @@ public class Solution {
             return;
         }
         if (Character.isDigit(s.charAt(curr))) {
-            helper(s, curr + 1, temp + s.substring(curr, curr + 1));
+            helper(s, curr + 1, temp + s.charAt(curr));
         } else {
             if (Character.isLowerCase(s.charAt(curr))) {
-                helper(s, curr + 1, temp + s.substring(curr, curr + 1));
+                helper(s, curr + 1, temp + s.charAt(curr));
                 helper(s, curr + 1, temp + (s.substring(curr, curr + 1)).toUpperCase());
             } else {
-                helper(s, curr + 1, temp + s.substring(curr, curr + 1));
+                helper(s, curr + 1, temp + s.charAt(curr));
                 helper(s, curr + 1, temp + (s.substring(curr, curr + 1)).toLowerCase());
             }
         }

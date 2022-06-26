@@ -46,7 +46,7 @@ public class Solution {
         if (v == n - 1) {
             return dfs(u + 1, v, open, close, dp);
         }
-        boolean rslt = false;
+        boolean rslt;
         if (grid[u][v] == LFTPAR) {
             rslt = dfs(u + 1, v, open, close, dp) || dfs(u, v + 1, open, close, dp);
         } else {

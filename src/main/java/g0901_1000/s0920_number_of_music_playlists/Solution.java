@@ -21,7 +21,7 @@ public class Solution {
         if (dp[songNumber][usedSong] != -1) {
             return dp[songNumber][usedSong];
         }
-        long ans = 0;
+        long ans;
         if (songNumber < k) {
             ans = (n - usedSong) * helper(songNumber + 1, l, usedSong + 1, n, k, dp);
         } else if (usedSong == n) {

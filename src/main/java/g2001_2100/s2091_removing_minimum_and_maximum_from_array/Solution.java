@@ -19,9 +19,9 @@ public class Solution {
                 maxIndex = i;
             }
         }
-        int firstCase = 0;
-        int secondCase = 0;
-        int thirdCase = 0;
+        int firstCase;
+        int secondCase;
+        int thirdCase;
         if (minIndex > maxIndex) {
             firstCase = minIndex + 1;
             secondCase = n - maxIndex;

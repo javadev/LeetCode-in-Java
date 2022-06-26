@@ -35,7 +35,7 @@ public class Solution {
                 break;
             }
         }
-        int maxReach = 0;
+        int maxReach;
         if (position == 0) {
             maxReach = rightMinDistance;
         } else if (position == seats.length - 1) {

@@ -9,12 +9,12 @@ import java.util.Set;
 public class Solution {
     public String destCity(List<List<String>> paths) {
         Set<String> set = new HashSet<>();
-        for (int i = 0; i < paths.size(); i++) {
-            set.add(paths.get(i).get(0));
+        for (List<String> strings : paths) {
+            set.add(strings.get(0));
         }
-        for (int i = 0; i < paths.size(); i++) {
-            if (!set.contains(paths.get(i).get(1))) {
-                return paths.get(i).get(1);
+        for (List<String> path : paths) {
+            if (!set.contains(path.get(1))) {
+                return path.get(1);
             }
         }
         return "";

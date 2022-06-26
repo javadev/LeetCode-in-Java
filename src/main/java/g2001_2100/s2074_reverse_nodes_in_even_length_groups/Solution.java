@@ -40,7 +40,7 @@ public class Solution {
 
     private ListNode[] reverse(ListNode head, int size) {
         ListNode prev = null;
-        ListNode forward = null;
+        ListNode forward;
         ListNode cur = head;
         while (size-- > 0) {
             forward = cur.next;

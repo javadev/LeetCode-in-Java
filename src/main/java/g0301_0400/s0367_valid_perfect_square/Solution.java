@@ -12,7 +12,7 @@ public class Solution {
         // long datatype can holds huge number.
         long start = 0;
         long end = num;
-        long mid = 0;
+        long mid;
         while (start <= end) {
             // until start is lesser or equal to end do this
             // Finding middle value

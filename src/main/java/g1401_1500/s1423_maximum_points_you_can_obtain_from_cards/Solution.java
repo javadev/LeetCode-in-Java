@@ -5,7 +5,7 @@ package g1401_1500.s1423_maximum_points_you_can_obtain_from_cards;
 public class Solution {
     public int maxScore(int[] cardPoints, int k) {
         int currSum = 0;
-        int maxSum = 0;
+        int maxSum;
         for (int i = 0; i < k; i++) {
             currSum += cardPoints[i];
         }

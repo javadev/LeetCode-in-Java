@@ -25,7 +25,7 @@ public class Solution {
             leftDash++;
             countDash++;
         }
-        int ans = 0;
+        int ans;
         ans = helper(boxes, leftDash + 1, right, 0) + (countDash + 1) * (countDash + 1);
         for (int i = leftDash + 1; i <= right; i++) {
             if (boxes[i] == boxes[leftDash]) {
