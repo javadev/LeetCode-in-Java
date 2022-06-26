@@ -8,7 +8,7 @@ public class Solution {
     public long countPairs(int n, int[][] edges) {
         DSU d = new DSU(n);
         HashMap<Integer, Integer> map = new HashMap<>();
-        for (int e[] : edges) {
+        for (int[] e : edges) {
             d.union(e[0], e[1]);
         }
         long ans = 0;
@@ -22,8 +22,8 @@ public class Solution {
     }
 
     private static class DSU {
-        int rank[];
-        int parent[];
+        int[] rank;
+        int[] parent;
 
         DSU(int n) {
             rank = new int[n + 1];
