@@ -14,7 +14,7 @@ public class Solution {
         long ans = 0;
         for (int i = 0; i < n; i++) {
             int p = d.findParent(i);
-            int cnt = map.containsKey(p) == true ? map.get(p) : 0;
+            int cnt = map.containsKey(p) ? map.get(p) : 0;
             ans += i - cnt;
             map.put(p, map.getOrDefault(p, 0) + 1);
         }
@@ -37,13 +37,16 @@ public class Solution {
             if (parent[node] == node) {
                 return node;
             }
-            return parent[node] = findParent(parent[node]);
+            parent[node] = findParent(parent[node]);
+            return findParent(parent[node]);
         }
 
         boolean union(int x, int y) {
             int px = findParent(x);
             int py = findParent(y);
-            if (px == py) return false;
+            if (px == py) {
+                return false;
+            }
             if (rank[px] < rank[py]) {
                 parent[px] = py;
             } else if (rank[px] > rank[py]) {
