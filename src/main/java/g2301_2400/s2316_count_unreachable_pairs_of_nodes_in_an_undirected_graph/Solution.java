@@ -1,6 +1,6 @@
 package g2301_2400.s2316_count_unreachable_pairs_of_nodes_in_an_undirected_graph;
 
-// #Medium #2022_06_26_Time_52_ms_(100.00%)_Space_179.6_MB_(75.00%)
+// #Medium #2022_06_26_Time_32_ms_(100.00%)_Space_108.9_MB_(100.00%)
 
 import java.util.HashMap;
 
@@ -47,9 +47,7 @@ public class Solution {
             if (px == py) {
                 return false;
             }
-            if (rank[px] < rank[py]) {
-                parent[px] = py;
-            } else if (rank[px] > rank[py]) {
+            if (rank[px] > rank[py]) {
                 parent[py] = px;
             } else {
                 parent[px] = py;
