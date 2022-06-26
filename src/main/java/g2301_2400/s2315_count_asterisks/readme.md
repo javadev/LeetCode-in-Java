@@ -14,9 +14,11 @@ Return _the number of_ `'*'` _in_ `s`_, **excluding** the_ `'*'` _between each p
 
 **Output:** 2
 
-**Explanation:** The considered characters are underlined: "l|\*e\*et|c\*\*o|\*de|".
+**Explanation:** The considered characters are underlined: "<ins>l</ins>|\*e\*et|<ins>c\*\*o</ins>|\*de|".
 
-The characters between the first and second '|' are excluded from the answer. Also, the characters between the third and fourth '|' are excluded from the answer. There are 2 asterisks considered. Therefore, we return 2.
+The characters between the first and second '|' are excluded from the answer.
+
+Also, the characters between the third and fourth '|' are excluded from the answer. There are 2 asterisks considered. Therefore, we return 2.
 
 **Example 2:**
 
@@ -32,7 +34,7 @@ The characters between the first and second '|' are excluded from the answer. Al
 
 **Output:** 5
 
-**Explanation:** The considered characters are underlined: "yo|uar|e\*\*|b|e\*\*\*au|tifu|l".
+**Explanation:** The considered characters are underlined: "<ins>yo</ins>|uar|<ins>e\*\*</ins>|b|<ins>e\*\*\*au</ins>|tifu|<ins>l</ins>".
 
 There are 5 asterisks considered. Therefore, we return 5.
 
