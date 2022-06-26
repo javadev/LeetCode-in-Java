@@ -1485,6 +1485,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2317 |[Maximum XOR After Operations](src/main/java/g2301_2400/s2317_maximum_xor_after_operations/Solution.java)| Medium || 1 | 100.00
 | 2316 |[Count Unreachable Pairs of Nodes in an Undirected Graph](src/main/java/g2301_2400/s2316_count_unreachable_pairs_of_nodes_in_an_undirected_graph/Solution.java)| Medium || 32 | 100.00
 | 2315 |[Count Asterisks](src/main/java/g2301_2400/s2315_count_asterisks/Solution.java)| Easy || 1 | 100.00
 | 2312 |[Selling Pieces of Wood](src/main/java/g2301_2400/s2312_selling_pieces_of_wood/Solution.java)| Hard | Backtracking | 78 | 63.64
