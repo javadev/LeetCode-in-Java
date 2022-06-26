@@ -32,6 +32,7 @@ public class Solution {
                 ans = (ans + dp(n - 1, x, prev)) % mod;
             }
         }
-        return memo[n][prev][pprev] = ans;
+        memo[n][prev][pprev] = ans;
+        return ans;
     }
 }
