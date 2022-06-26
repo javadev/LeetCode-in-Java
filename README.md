@@ -1485,7 +1485,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
-| 2316 |[Count Unreachable Pairs of Nodes in an Undirected Graph](src/main/java/g2301_2400/s2316_count_unreachable_pairs_of_nodes_in_an_undirected_graph/Solution.java)| Medium || 52 | 100.00
+| 2316 |[Count Unreachable Pairs of Nodes in an Undirected Graph](src/main/java/g2301_2400/s2316_count_unreachable_pairs_of_nodes_in_an_undirected_graph/Solution.java)| Medium || 32 | 100.00
 | 2315 |[Count Asterisks](src/main/java/g2301_2400/s2315_count_asterisks/Solution.java)| Easy || 1 | 100.00
 | 2312 |[Selling Pieces of Wood](src/main/java/g2301_2400/s2312_selling_pieces_of_wood/Solution.java)| Hard | Backtracking | 78 | 63.64
 | 2311 |[Longest Binary Subsequence Less Than or Equal to K](src/main/java/g2301_2400/s2311_longest_binary_subsequence_less_than_or_equal_to_k/Solution.java)| Medium | String, Dynamic_Programming, Greedy, Memoization | 1 | 100.00
