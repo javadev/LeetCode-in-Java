@@ -4,7 +4,7 @@ package g1601_1700.s1620_coordinate_with_maximum_network_quality;
 
 public class Solution {
     public int[] bestCoordinate(int[][] towers, int radius) {
-        int res[] = new int[2];
+        int[] res = new int[2];
         double maxQuality = 0;
         double quality = 0;
         int finalX = 0;

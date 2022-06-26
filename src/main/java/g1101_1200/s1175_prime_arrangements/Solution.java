@@ -13,7 +13,7 @@ public class Solution {
             c++;
         }
         int m = 1000000007;
-        long res = 1l;
+        long res = 1L;
         while ((n - c) > 0) {
             res *= (n - c);
             res %= m;
