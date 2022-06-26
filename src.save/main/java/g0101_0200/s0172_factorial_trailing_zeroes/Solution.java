@@ -1,6 +1,6 @@
 package g0101_0200.s0172_factorial_trailing_zeroes;
 
-// #Medium #Top_Interview_Questions #Math #2022_03_04_Time_1_ms_(81.96%)_Space_41.8_MB_(6.69%)
+// #Medium #Top_Interview_Questions #Math #2022_06_26_Time_1_ms_(85.61%)_Space_42.1_MB_(7.61%)
 
 public class Solution {
     public int trailingZeroes(int n) {

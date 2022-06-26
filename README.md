@@ -278,7 +278,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0230 |[Kth Smallest Element in a BST](src.save/main/java/g0201_0300/s0230_kth_smallest_element_in_a_bst/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 0 | 100.00
-| 0173 |[Binary Search Tree Iterator](src.save/main/java/g0101_0200/s0173_binary_search_tree_iterator/BSTIterator.java)| Medium | Tree, Binary_Tree, Stack, Design, Binary_Search_Tree, Iterator | 18 | 78.45
+| 0173 |[Binary Search Tree Iterator](src.save/main/java/g0101_0200/s0173_binary_search_tree_iterator/BSTIterator.java)| Medium | Tree, Binary_Tree, Stack, Design, Binary_Search_Tree, Iterator | 18 | 84.18
 
 #### Day 18 Tree
 
@@ -1154,7 +1154,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0061 |[Rotate List](src.save/main/java/g0001_0100/s0061_rotate_list/Solution.java)| Medium | Two_Pointers, Linked_List | 0 | 100.00
-| 0173 |[Binary Search Tree Iterator](src.save/main/java/g0101_0200/s0173_binary_search_tree_iterator/BSTIterator.java)| Medium | Tree, Binary_Tree, Stack, Design, Binary_Search_Tree, Iterator | 18 | 78.45
+| 0173 |[Binary Search Tree Iterator](src.save/main/java/g0101_0200/s0173_binary_search_tree_iterator/BSTIterator.java)| Medium | Tree, Binary_Tree, Stack, Design, Binary_Search_Tree, Iterator | 18 | 84.18
 
 #### Day 17
 
@@ -1323,13 +1323,13 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1965 |[Employees With Missing Information](src.save/main/java/g1901_2000/s1965_employees_with_missing_information/script.sql)| Easy | Database | 617 | 30.40
 | 1795 |[Rearrange Products Table](src.save/main/java/g1701_1800/s1795_rearrange_products_table/script.sql)| Easy | Database | 497 | 64.83
 | 0608 |[Tree Node](src.save/main/java/g0601_0700/s0608_tree_node/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 347 | 95.17
-| 0176 |[Second Highest Salary](src.save/main/java/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database | 203 | 63.47
+| 0176 |[Second Highest Salary](src.save/main/java/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database | 405 | 13.88
 
 #### Day 5 Union
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0175 |[Combine Two Tables](src.save/main/java/g0101_0200/s0175_combine_two_tables/script.sql)| Easy | Database | 449 | 30.35
+| 0175 |[Combine Two Tables](src.save/main/java/g0101_0200/s0175_combine_two_tables/script.sql)| Easy | Database | 491 | 32.30
 | 1581 |[Customer Who Visited but Did Not Make Any Transactions](src.save/main/java/g1501_1600/s1581_customer_who_visited_but_did_not_make_any_transactions/script.sql)| Easy | Database | 1039 | 76.99
 | 1148 |[Article Views I](src.save/main/java/g1101_1200/s1148_article_views_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 459 | 44.85
 
@@ -3141,16 +3141,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 0183 |[Customers Who Never Order](src.save/main/java/g0101_0200/s0183_customers_who_never_order/script.sql)| Easy | Database, SQL_I_Day_1_Select | 581 | 23.03
 | 0182 |[Duplicate Emails](src.save/main/java/g0101_0200/s0182_duplicate_emails/script.sql)| Easy | Database, SQL_I_Day_10_Where | 345 | 59.47
 | 0181 |[Employees Earning More Than Their Managers](src.save/main/java/g0101_0200/s0181_employees_earning_more_than_their_managers/script.sql)| Easy | Database | 385 | 52.30
-| 0180 |[Consecutive Numbers](src.save/main/java/g0101_0200/s0180_consecutive_numbers/script.sql)| Medium | Database | 636 | 19.31
-| 0179 |[Largest Number](src.save/main/java/g0101_0200/s0179_largest_number/Solution.java)| Medium | Top_Interview_Questions, String, Sorting, Greedy | 11 | 45.93
-| 0178 |[Rank Scores](src.save/main/java/g0101_0200/s0178_rank_scores/script.sql)| Medium | Database | 299 | 52.08
-| 0177 |[Nth Highest Salary](src.save/main/java/g0101_0200/s0177_nth_highest_salary/script.sql)| Medium | Database | 328 | 65.32
-| 0176 |[Second Highest Salary](src.save/main/java/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database, SQL_I_Day_4_Union_and_Select | 203 | 63.47
-| 0175 |[Combine Two Tables](src.save/main/java/g0101_0200/s0175_combine_two_tables/script.sql)| Easy | Database, SQL_I_Day_5_Union | 449 | 30.35
-| 0174 |[Dungeon Game](src.save/main/java/g0101_0200/s0174_dungeon_game/Solution.java)| Hard | Array, Dynamic_Programming, Matrix | 1 | 96.60
-| 0173 |[Binary Search Tree Iterator](src.save/main/java/g0101_0200/s0173_binary_search_tree_iterator/BSTIterator.java)| Medium | Tree, Binary_Tree, Stack, Design, Binary_Search_Tree, Iterator, Data_Structure_II_Day_17_Tree, Programming_Skills_II_Day_16 | 18 | 78.45
-| 0172 |[Factorial Trailing Zeroes](src.save/main/java/g0101_0200/s0172_factorial_trailing_zeroes/Solution.java)| Medium | Top_Interview_Questions, Math | 1 | 81.96
-| 0171 |[Excel Sheet Column Number](src.save/main/java/g0101_0200/s0171_excel_sheet_column_number/Solution.java)| Easy | Top_Interview_Questions, String, Math | 3 | 24.67
+| 0180 |[Consecutive Numbers](src.save/main/java/g0101_0200/s0180_consecutive_numbers/script.sql)| Medium | Database | 550 | 48.44
+| 0179 |[Largest Number](src.save/main/java/g0101_0200/s0179_largest_number/Solution.java)| Medium | Top_Interview_Questions, String, Sorting, Greedy | 10 | 54.50
+| 0178 |[Rank Scores](src.save/main/java/g0101_0200/s0178_rank_scores/script.sql)| Medium | Database | 290 | 66.73
+| 0177 |[Nth Highest Salary](src.save/main/java/g0101_0200/s0177_nth_highest_salary/script.sql)| Medium | Database | 342 | 71.87
+| 0176 |[Second Highest Salary](src.save/main/java/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database, SQL_I_Day_4_Union_and_Select | 405 | 13.88
+| 0175 |[Combine Two Tables](src.save/main/java/g0101_0200/s0175_combine_two_tables/script.sql)| Easy | Database, SQL_I_Day_5_Union | 491 | 32.30
+| 0174 |[Dungeon Game](src.save/main/java/g0101_0200/s0174_dungeon_game/Solution.java)| Hard | Array, Dynamic_Programming, Matrix | 0 | 100.00
+| 0173 |[Binary Search Tree Iterator](src.save/main/java/g0101_0200/s0173_binary_search_tree_iterator/BSTIterator.java)| Medium | Tree, Binary_Tree, Stack, Design, Binary_Search_Tree, Iterator, Data_Structure_II_Day_17_Tree, Programming_Skills_II_Day_16 | 18 | 84.18
+| 0172 |[Factorial Trailing Zeroes](src.save/main/java/g0101_0200/s0172_factorial_trailing_zeroes/Solution.java)| Medium | Top_Interview_Questions, Math | 1 | 85.61
+| 0171 |[Excel Sheet Column Number](src.save/main/java/g0101_0200/s0171_excel_sheet_column_number/Solution.java)| Easy | Top_Interview_Questions, String, Math | 2 | 76.43
 | 0169 |[Majority Element](src.save/main/java/g0101_0200/s0169_majority_element/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Sorting, Counting, Divide_and_Conquer, Data_Structure_II_Day_1_Array | 1 | 100.00
 | 0168 |[Excel Sheet Column Title](src.save/main/java/g0101_0200/s0168_excel_sheet_column_title/Solution.java)| Easy | String, Math | 0 | 100.00
 | 0167 |[Two Sum II - Input Array Is Sorted](src.save/main/java/g0101_0200/s0167_two_sum_ii_input_array_is_sorted/Solution.java)| Medium | Array, Binary_Search, Two_Pointers, Algorithm_I_Day_3_Two_Pointers, Binary_Search_I_Day_7 | 1 | 99.21
