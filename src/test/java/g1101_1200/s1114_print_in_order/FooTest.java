@@ -15,7 +15,7 @@ class FooTest {
         new Thread(() -> foo.first(() -> fooData[0]++)).start();
         new Thread(() -> foo.second(() -> fooData[0]++)).start();
         new Thread(() -> foo.third(() -> fooData[0]++)).start();
-        TimeUnit.MILLISECONDS.sleep(500);
+        TimeUnit.MILLISECONDS.sleep(600);
         assertThat(fooData[0], equalTo(3));
     }
 }
