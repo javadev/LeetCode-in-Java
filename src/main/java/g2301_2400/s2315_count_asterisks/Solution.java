@@ -6,7 +6,8 @@ public class Solution {
     public int countAsterisks(String s) {
         int c = 0;
         int n = s.length();
-        for (int i = 0; i < n; i++) {
+        int i = 0;
+        while (i < n) {
             if (s.charAt(i) == '|') {
                 i++;
                 while (s.charAt(i) != '|') {
@@ -16,6 +17,7 @@ public class Solution {
             if (s.charAt(i) == '*') {
                 c++;
             }
+            i++;
         }
         return c;
     }
