@@ -2177,7 +2177,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.10'
 | 1431 |[Kids With the Greatest Number of Candies](src.save/main/java/g1401_1500/s1431_kids_with_the_greatest_number_of_candies/Solution.java)| Easy | Array | 1 | 84.43
 | 1425 |[Constrained Subsequence Sum](src.save/main/java/g1401_1500/s1425_constrained_subsequence_sum/Solution.java)| Hard | Array, Dynamic_Programming, Heap_Priority_Queue, Sliding_Window, Queue, Monotonic_Queue | 69 | 30.52
 | 1424 |[Diagonal Traverse II](src.save/main/java/g1401_1500/s1424_diagonal_traverse_ii/Solution.java)| Medium | Array, Sorting, Heap_Priority_Queue | 39 | 85.56
-| 1423 |[Maximum Points You Can Obtain from Cards](src.save/main/java/g1401_1500/s1423_maximum_points_you_can_obtain_from_cards/Solution.java)| Medium | Array, Prefix_Sum, Sliding_Window | 4 | 31.70
+| 1423 |[Maximum Points You Can Obtain from Cards](src.save/main/java/g1401_1500/s1423_maximum_points_you_can_obtain_from_cards/Solution.java)| Medium | Array, Prefix_Sum, Sliding_Window | 2 | 94.06
 | 1422 |[Maximum Score After Splitting a String](src.save/main/java/g1401_1500/s1422_maximum_score_after_splitting_a_string/Solution.java)| Easy | String | 1 | 96.45
 | 1420 |[Build Array Where You Can Find The Maximum Exactly K Comparisons](src.save/main/java/g1401_1500/s1420_build_array_where_you_can_find_the_maximum_exactly_k_comparisons/Solution.java)| Hard | Dynamic_Programming | 22 | 86.32
 | 1419 |[Minimum Number of Frogs Croaking](src.save/main/java/g1401_1500/s1419_minimum_number_of_frogs_croaking/Solution.java)| Medium | String, Counting | 19 | 32.16
