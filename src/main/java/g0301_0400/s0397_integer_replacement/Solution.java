@@ -19,7 +19,7 @@ public class Solution {
         if (dp.containsKey(n)) {
             return dp.get(n);
         }
-        int ans = 0;
+        int ans;
         if (n % 2 == 0) {
             ans = 1 + solve(n >>> 1, dp);
         } else {

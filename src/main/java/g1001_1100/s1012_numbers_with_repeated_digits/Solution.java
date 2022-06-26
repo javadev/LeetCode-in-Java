@@ -10,7 +10,7 @@ public class Solution {
 
     public int numDupDigitsAtMostN(int n) {
         int nStrLength = String.valueOf(n).length();
-        int allNineLength = 0;
+        int allNineLength;
         if (n < 0 || nStrLength < 2) {
             return 0;
         } else if (Math.pow(10, nStrLength) - 1 == n) {

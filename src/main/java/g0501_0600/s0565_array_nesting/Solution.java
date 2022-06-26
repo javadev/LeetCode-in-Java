@@ -4,10 +4,10 @@ package g0501_0600.s0565_array_nesting;
 
 public class Solution {
     public int arrayNesting(int[] nums) {
-        int index = -1;
-        int value = 0;
+        int index;
+        int value;
         int maxLen = 0;
-        int len = 0;
+        int len;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != -1) {
                 index = i;

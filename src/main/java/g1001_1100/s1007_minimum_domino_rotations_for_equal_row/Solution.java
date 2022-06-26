@@ -7,8 +7,8 @@ public class Solution {
         int top = tops[0];
         int tCount = 0;
         int bCount = 0;
-        int tSwaps = 0;
-        int bSwaps = 0;
+        int tSwaps;
+        int bSwaps;
         int swaps = 0;
         boolean valid = true;
         for (int i = 0; i < tops.length; i++) {
@@ -32,8 +32,8 @@ public class Solution {
         int bottom = bottoms[0];
         int tCount1 = 0;
         int bCount1 = 0;
-        int tSwaps1 = 0;
-        int bSwaps1 = 0;
+        int tSwaps1;
+        int bSwaps1;
         int swaps1 = 0;
         boolean valid1 = true;
         for (int i = 0; i < bottoms.length; i++) {

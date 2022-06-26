@@ -5,7 +5,7 @@ package g2101_2200.s2165_smallest_value_of_the_rearranged_number;
 public class Solution {
     public long smallestNumber(long num) {
         int[] count = new int[10];
-        long tempNum = 0;
+        long tempNum;
         if (num > 0) {
             tempNum = num;
         } else {

@@ -9,8 +9,8 @@ public class Solution {
         if (nums2.length < nums1.length) {
             return findMedianSortedArrays(nums2, nums1);
         }
-        int cut1 = 0;
-        int cut2 = 0;
+        int cut1;
+        int cut2;
         int n1 = nums1.length;
         int n2 = nums2.length;
         int low = 0;

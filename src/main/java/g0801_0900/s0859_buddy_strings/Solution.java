@@ -5,7 +5,7 @@ package g0801_0900.s0859_buddy_strings;
 public class Solution {
     public boolean buddyStrings(String s, String goal) {
         int first = -1;
-        int second = -1;
+        int second;
         int[] sCounts = new int[26];
         if (s.equals(goal)) {
             for (int i = 0; i < s.length(); i++) {

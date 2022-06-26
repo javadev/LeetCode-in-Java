@@ -4,7 +4,7 @@ package g1701_1800.s1742_maximum_number_of_balls_in_a_box;
 
 public class Solution {
     public int countBalls(int lowLimit, int highLimit) {
-        int maxValue = 0;
+        int maxValue;
         int[] countArray = new int[46];
         int currentSum = getDigitSum(lowLimit);
         countArray[currentSum]++;

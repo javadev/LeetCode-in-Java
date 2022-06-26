@@ -9,7 +9,7 @@ public class Solution {
         int j = k;
         int res = nums[k];
         int min = nums[k];
-        boolean goLeft = true;
+        boolean goLeft;
         while (i >= 1 || j < nums.length - 1) {
             // sub array [i...j] is already traversed. Either goLeft or goRight to increase the
             // sequence

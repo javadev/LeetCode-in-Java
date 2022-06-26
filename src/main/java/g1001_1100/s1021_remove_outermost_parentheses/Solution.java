@@ -25,7 +25,7 @@ public class Solution {
         }
         StringBuilder sb = new StringBuilder();
         for (String primitive : primitives) {
-            sb.append(primitive.substring(1, primitive.length() - 1));
+            sb.append(primitive, 1, primitive.length() - 1);
         }
         return sb.toString();
     }

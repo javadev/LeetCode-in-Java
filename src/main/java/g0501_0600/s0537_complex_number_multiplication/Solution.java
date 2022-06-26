@@ -4,8 +4,8 @@ package g0501_0600.s0537_complex_number_multiplication;
 
 public class Solution {
     public String complexNumberMultiply(String num1, String num2) {
-        int countReal = 0;
-        int countImagine = 0;
+        int countReal;
+        int countImagine;
         int[] arr1 = new int[2];
         int[] arr2 = new int[2];
 

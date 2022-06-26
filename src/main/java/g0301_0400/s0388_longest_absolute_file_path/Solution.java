@@ -11,7 +11,7 @@ public class Solution {
         int longestLen = 0;
         int currDirLen = 0;
         int i = 0;
-        int currLevel = 0;
+        int currLevel;
         int nextLevel = 0;
         boolean isFile = false;
         Character period = '.';

@@ -12,7 +12,7 @@ public class Solution {
         }
         int[] first = null;
         int[] prev = cells;
-        int period = -1;
+        int period;
         int day = 0;
         while (n > 0) {
             day++;

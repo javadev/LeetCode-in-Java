@@ -8,8 +8,8 @@ public class Solution {
         int max = Integer.MIN_VALUE;
         for (int[] account : accounts) {
             int sum = 0;
-            for (int j = 0; j < account.length; j++) {
-                sum += account[j];
+            for (int i : account) {
+                sum += i;
             }
             max = Math.max(max, sum);
         }
