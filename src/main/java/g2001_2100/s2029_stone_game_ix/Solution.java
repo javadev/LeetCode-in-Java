@@ -23,16 +23,10 @@ public class Solution {
         int max = Math.max(one, two);
         int min = Math.min(one, two);
         if (zero % 2 == 0) {
-            if (min == 0) {
-                return false;
-            }
-            return true;
+            return min != 0;
         }
         if (zero % 2 == 1) {
-            if (max - 2 > min) {
-                return true;
-            }
-            return false;
+            return max - 2 > min;
         }
         return false;
     }

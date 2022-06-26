@@ -15,7 +15,7 @@ public class Solution {
                 for (int[] tower : towers) {
                     int x = tower[0] - i;
                     int y = tower[1] - j;
-                    double dist = Math.sqrt(x * x + y * y);
+                    double dist = Math.sqrt((double) x * x + y * y);
                     if (dist <= radius) {
                         quality += Math.floor(tower[2] / (1 + dist));
                     }

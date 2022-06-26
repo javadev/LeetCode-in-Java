@@ -14,8 +14,7 @@ public class Solution {
                 min = nums[i];
             }
         }
-        int ans = findGCD(max, min);
-        return ans;
+        return findGCD(max, min);
     }
 
     private int findGCD(int x, int y) {
