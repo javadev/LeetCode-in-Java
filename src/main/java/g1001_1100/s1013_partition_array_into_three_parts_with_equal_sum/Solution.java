@@ -4,7 +4,6 @@ package g1001_1100.s1013_partition_array_into_three_parts_with_equal_sum;
 
 public class Solution {
     public boolean canThreePartsEqualSum(int[] arr) {
-        int len = arr.length;
         int sum = 0;
         for (int j : arr) {
             sum += j;

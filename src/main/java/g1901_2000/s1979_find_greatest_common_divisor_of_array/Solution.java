@@ -14,12 +14,13 @@ public class Solution {
                 min = nums[i];
             }
         }
-        int ans = findGCD(max, min);
-        return ans;
+        return findGCD(max, min);
     }
 
     private int findGCD(int x, int y) {
-        int r = 0, a, b;
+        int r = 0;
+        int a;
+        int b;
         a = (x > y) ? x : y;
         b = (x < y) ? x : y;
         r = b;
