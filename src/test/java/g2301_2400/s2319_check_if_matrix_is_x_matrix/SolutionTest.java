@@ -23,4 +23,19 @@ class SolutionTest {
                 new Solution().checkXMatrix(new int[][] {{5, 7, 0}, {0, 3, 1}, {0, 5, 0}}),
                 equalTo(false));
     }
+
+    @Test
+    void checkXMatrix3() {
+        assertThat(
+                new Solution()
+                        .checkXMatrix(
+                                new int[][] {
+                                    {0, 0, 0, 0, 1},
+                                    {0, 4, 0, 1, 0},
+                                    {0, 0, 5, 0, 0},
+                                    {0, 5, 0, 2, 0},
+                                    {4, 0, 0, 0, 2}
+                                }),
+                equalTo(false));
+    }
 }
