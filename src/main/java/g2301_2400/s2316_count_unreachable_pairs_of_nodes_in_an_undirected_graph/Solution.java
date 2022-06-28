@@ -1,6 +1,7 @@
 package g2301_2400.s2316_count_unreachable_pairs_of_nodes_in_an_undirected_graph;
 
-// #Medium #2022_06_26_Time_32_ms_(100.00%)_Space_108.9_MB_(100.00%)
+// #Medium #Depth_First_Search #Breadth_First_Search #Union_Find #Graph
+// #2022_06_26_Time_32_ms_(100.00%)_Space_108.9_MB_(100.00%)
 
 import java.util.HashMap;
 
