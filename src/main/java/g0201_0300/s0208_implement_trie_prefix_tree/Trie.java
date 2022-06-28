@@ -1,7 +1,7 @@
 package g0201_0300.s0208_implement_trie_prefix_tree;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Hash_Table #Design #Trie
-// #2022_03_04_Time_63_ms_(55.40%)_Space_67.2_MB_(42.09%)
+// #2022_06_28_Time_34_ms_(99.90%)_Space_51_MB_(94.92%)
 
 @SuppressWarnings("java:S1104")
 public class Trie {
@@ -54,7 +54,6 @@ public class Trie {
             startWith = false;
             return false;
         }
-
         return search(word, root.children[index], idx + 1);
     }
 
