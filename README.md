@@ -269,7 +269,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0199 |[Binary Tree Right Side View](src/main/java/g0101_0200/s0199_binary_tree_right_side_view/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 1 | 92.96
+| 0199 |[Binary Tree Right Side View](src/main/java/g0101_0200/s0199_binary_tree_right_side_view/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 1 | 94.57
 | 0113 |[Path Sum II](src/main/java/g0101_0200/s0113_path_sum_ii/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree, Backtracking | 1 | 100.00
 | 0450 |[Delete Node in a BST](src/main/java/g0401_0500/s0450_delete_node_in_a_bst/Solution.java)| Medium | Tree, Binary_Tree, Binary_Search_Tree | 0 | 100.00
 
@@ -403,7 +403,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0231 |[Power of Two](src/main/java/g0201_0300/s0231_power_of_two/Solution.java)| Easy | Math, Bit_Manipulation, Recursion | 1 | 95.76
-| 0191 |[Number of 1 Bits](src/main/java/g0101_0200/s0191_number_of_1_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation | 0 | 100.00
+| 0191 |[Number of 1 Bits](src/main/java/g0101_0200/s0191_number_of_1_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation | 1 | 84.87
 
 #### Day 14 Bit Manipulation
 
@@ -456,7 +456,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0200 |[Number of Islands](src/main/java/g0101_0200/s0200_number_of_islands/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 4 | 73.02
+| 0200 |[Number of Islands](src/main/java/g0101_0200/s0200_number_of_islands/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 3 | 97.76
 | 0547 |[Number of Provinces](src/main/java/g0501_0600/s0547_number_of_provinces/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 1 | 94.56
 
 #### Day 7 Breadth First Search Depth First Search
@@ -959,7 +959,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0191 |[Number of 1 Bits](src/main/java/g0101_0200/s0191_number_of_1_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation | 0 | 100.00
+| 0191 |[Number of 1 Bits](src/main/java/g0101_0200/s0191_number_of_1_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation | 1 | 84.87
 | 1281 |[Subtract the Product and Sum of Digits of an Integer](src/main/java/g1201_1300/s1281_subtract_the_product_and_sum_of_digits_of_an_integer/Solution.java)| Easy | Math | 0 | 100.00
 
 #### Day 3 Conditional Statements
@@ -1192,7 +1192,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0733 |[Flood Fill](src/main/java/g0701_0800/s0733_flood_fill/Solution.java)| Easy | Array, Depth_First_Search, Breadth_First_Search, Matrix | 1 | 85.36
-| 0200 |[Number of Islands](src/main/java/g0101_0200/s0200_number_of_islands/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 4 | 73.02
+| 0200 |[Number of Islands](src/main/java/g0101_0200/s0200_number_of_islands/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 3 | 97.76
 
 #### Day 2 Matrix Related Problems
 
@@ -1306,7 +1306,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 |-|-|-|-|-|-
 | 1873 |[Calculate Special Bonus](src/main/java/g1801_1900/s1873_calculate_special_bonus/script.sql)| Easy | Database | 543 | 71.60
 | 0627 |[Swap Salary](src/main/java/g0601_0700/s0627_swap_salary/script.sql)| Easy | Database | 191 | 96.89
-| 0196 |[Delete Duplicate Emails](src/main/java/g0101_0200/s0196_delete_duplicate_emails/script.sql)| Easy | Database | 541 | 81.09
+| 0196 |[Delete Duplicate Emails](src/main/java/g0101_0200/s0196_delete_duplicate_emails/script.sql)| Easy | Database | 903 | 48.10
 
 #### Day 3 String Processing Functions
 
@@ -1337,7 +1337,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0197 |[Rising Temperature](src/main/java/g0101_0200/s0197_rising_temperature/script.sql)| Easy | Database | 401 | 79.45
+| 0197 |[Rising Temperature](src/main/java/g0101_0200/s0197_rising_temperature/script.sql)| Easy | Database | 342 | 93.76
 | 0607 |[Sales Person](src/main/java/g0601_0700/s0607_sales_person/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 1046 | 86.04
 
 #### Day 7 Function
@@ -1437,7 +1437,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0733 |[Flood Fill](src/main/java/g0701_0800/s0733_flood_fill/Solution.java)| Easy | Array, Depth_First_Search, Breadth_First_Search, Matrix | 1 | 85.36
-| 0200 |[Number of Islands](src/main/java/g0101_0200/s0200_number_of_islands/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 4 | 73.02
+| 0200 |[Number of Islands](src/main/java/g0101_0200/s0200_number_of_islands/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 3 | 97.76
 
 #### Day 10 Dynamic Programming
 
@@ -3126,16 +3126,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0203 |[Remove Linked List Elements](src/main/java/g0201_0300/s0203_remove_linked_list_elements/Solution.java)| Easy | Linked_List, Recursion, Data_Structure_I_Day_7_Linked_List | 1 | 90.35
 | 0202 |[Happy Number](src/main/java/g0201_0300/s0202_happy_number/Solution.java)| Easy | Top_Interview_Questions, Hash_Table, Math, Two_Pointers, Algorithm_II_Day_21_Others, Programming_Skills_I_Day_4_Loop | 1 | 93.34
 | 0201 |[Bitwise AND of Numbers Range](src/main/java/g0201_0300/s0201_bitwise_and_of_numbers_range/Solution.java)| Medium | Bit_Manipulation, Algorithm_II_Day_19_Bit_Manipulation | 10 | 40.99
-| 0200 |[Number of Islands](src/main/java/g0101_0200/s0200_number_of_islands/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find, Algorithm_II_Day_6_Breadth_First_Search_Depth_First_Search, Graph_Theory_I_Day_1_Matrix_Related_Problems, Level_1_Day_9_Graph/BFS/DFS | 4 | 73.02
-| 0199 |[Binary Tree Right Side View](src/main/java/g0101_0200/s0199_binary_tree_right_side_view/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_II_Day_16_Tree | 1 | 92.96
+| 0200 |[Number of Islands](src/main/java/g0101_0200/s0200_number_of_islands/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find, Algorithm_II_Day_6_Breadth_First_Search_Depth_First_Search, Graph_Theory_I_Day_1_Matrix_Related_Problems, Level_1_Day_9_Graph/BFS/DFS | 3 | 97.76
+| 0199 |[Binary Tree Right Side View](src/main/java/g0101_0200/s0199_binary_tree_right_side_view/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_II_Day_16_Tree | 1 | 94.57
 | 0198 |[House Robber](src/main/java/g0101_0200/s0198_house_robber/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Algorithm_I_Day_12_Dynamic_Programming, Dynamic_Programming_I_Day_3 | 0 | 100.00
-| 0197 |[Rising Temperature](src/main/java/g0101_0200/s0197_rising_temperature/script.sql)| Easy | Database, SQL_I_Day_6_Union | 401 | 79.45
-| 0196 |[Delete Duplicate Emails](src/main/java/g0101_0200/s0196_delete_duplicate_emails/script.sql)| Easy | Database, SQL_I_Day_2_Select_and_Order | 541 | 81.09
-| 0195 |[Tenth Line](src/main/java/g0101_0200/s0195_tenth_line/script.sh)| Easy | Shell | 4 | 93.33
-| 0194 |[Transpose File](src/main/java/g0101_0200/s0194_transpose_file/script.sh)| Medium | Shell | 0 | 100.00
-| 0193 |[Valid Phone Numbers](src/main/java/g0101_0200/s0193_valid_phone_numbers/script.sh)| Easy | Shell | 129 | 42.86
-| 0192 |[Word Frequency](src/main/java/g0101_0200/s0192_word_frequency/script.sh)| Medium | Shell | 152 | 38.56
-| 0191 |[Number of 1 Bits](src/main/java/g0101_0200/s0191_number_of_1_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation, Algorithm_I_Day_13_Bit_Manipulation, Programming_Skills_I_Day_2_Operator | 0 | 100.00
+| 0197 |[Rising Temperature](src/main/java/g0101_0200/s0197_rising_temperature/script.sql)| Easy | Database, SQL_I_Day_6_Union | 342 | 93.76
+| 0196 |[Delete Duplicate Emails](src/main/java/g0101_0200/s0196_delete_duplicate_emails/script.sql)| Easy | Database, SQL_I_Day_2_Select_and_Order | 903 | 48.10
+| 0195 |[Tenth Line](src/main/java/g0101_0200/s0195_tenth_line/script.sh)| Easy | Shell | 26 | 99.36
+| 0194 |[Transpose File](src/main/java/g0101_0200/s0194_transpose_file/script.sh)| Medium | Shell | 630 | 28.43
+| 0193 |[Valid Phone Numbers](src/main/java/g0101_0200/s0193_valid_phone_numbers/script.sh)| Easy | Shell | 112 | 75.54
+| 0192 |[Word Frequency](src/main/java/g0101_0200/s0192_word_frequency/script.sh)| Medium | Shell | 143 | 54.55
+| 0191 |[Number of 1 Bits](src/main/java/g0101_0200/s0191_number_of_1_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation, Algorithm_I_Day_13_Bit_Manipulation, Programming_Skills_I_Day_2_Operator | 1 | 84.87
 | 0190 |[Reverse Bits](src/main/java/g0101_0200/s0190_reverse_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation, Divide_and_Conquer, Algorithm_I_Day_14_Bit_Manipulation | 1 | 98.66
 | 0189 |[Rotate Array](src/main/java/g0101_0200/s0189_rotate_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Math, Two_Pointers, Algorithm_I_Day_2_Two_Pointers | 0 | 100.00
 | 0188 |[Best Time to Buy and Sell Stock IV](src/main/java/g0101_0200/s0188_best_time_to_buy_and_sell_stock_iv/Solution.java)| Hard | Array, Dynamic_Programming | 1 | 100.00
