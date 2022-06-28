@@ -1,7 +1,7 @@
 package g0201_0300.s0205_isomorphic_strings;
 
 // #Easy #String #Hash_Table #Level_1_Day_2_String
-// #2022_03_04_Time_1_ms_(100.00%)_Space_42.2_MB_(50.57%)
+// #2022_06_28_Time_2_ms_(99.97%)_Space_43.3_MB_(32.68%)
 
 public class Solution {
     public boolean isIsomorphic(String s, String t) {

@@ -1,7 +1,7 @@
 package g0201_0300.s0210_course_schedule_ii;
 
 // #Medium #Top_Interview_Questions #Depth_First_Search #Breadth_First_Search #Graph
-// #Topological_Sort #2022_03_04_Time_7_ms_(74.90%)_Space_50.1_MB_(23.04%)
+// #Topological_Sort #2022_06_28_Time_13_ms_(35.17%)_Space_50.7_MB_(22.84%)
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,11 +14,9 @@ public class Solution {
         for (int i = 0; i < numCourses; i++) {
             graph.put(i, new ArrayList<>());
         }
-
         for (int[] classes : prerequisites) {
             graph.get(classes[0]).add(classes[1]);
         }
-
         List<Integer> output = new ArrayList<>();
         Map<Integer, Boolean> visited = new HashMap<>();
         for (int c : graph.keySet()) {
@@ -26,7 +24,6 @@ public class Solution {
                 return new int[0];
             }
         }
-
         int[] res = new int[output.size()];
         for (int i = 0; i < output.size(); i++) {
             res[i] = output.get(i);
@@ -42,15 +39,12 @@ public class Solution {
         if (visited.containsKey(course)) {
             return visited.get(course);
         }
-
         visited.put(course, true);
-
         for (int c : graph.get(course)) {
             if (dfs(c, graph, visited, output)) {
                 return true;
             }
         }
-
         visited.put(course, false);
         output.add(course);
         return false;
