@@ -1,6 +1,6 @@
 package g2301_2400.s2318_number_of_distinct_roll_sequences;
 
-// #Hard #2022_06_26_Time_254_ms_(91.67%)_Space_51.6_MB_(58.33%)
+// #Hard #Dynamic_Programming #Memoization #2022_06_26_Time_254_ms_(91.67%)_Space_51.6_MB_(58.33%)
 
 public class Solution {
     private int[][][] memo = new int[10001][7][7];
