@@ -1485,6 +1485,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2320 |[Count Number of Ways to Place Houses](src/main/java/g2301_2400/s2320_count_number_of_ways_to_place_houses/Solution.java)| Medium | Dynamic_Programming | 13 | 82.46
+| 2319 |[Check if Matrix Is X-Matrix](src/main/java/g2301_2400/s2319_check_if_matrix_is_x_matrix/Solution.java)| Easy | Array, Matrix | 3 | 53.58
 | 2318 |[Number of Distinct Roll Sequences](src/main/java/g2301_2400/s2318_number_of_distinct_roll_sequences/Solution.java)| Hard || 254 | 91.67
 | 2317 |[Maximum XOR After Operations](src/main/java/g2301_2400/s2317_maximum_xor_after_operations/Solution.java)| Medium || 1 | 100.00
 | 2316 |[Count Unreachable Pairs of Nodes in an Undirected Graph](src/main/java/g2301_2400/s2316_count_unreachable_pairs_of_nodes_in_an_undirected_graph/Solution.java)| Medium || 32 | 100.00
