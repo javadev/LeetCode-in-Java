@@ -28,4 +28,11 @@ class SolutionTest {
                 new Solution().maximumsSplicedArray(new int[] {7, 11, 13}, new int[] {1, 1, 1}),
                 equalTo(31));
     }
+
+    @Test
+    void maximumsSplicedArray4() {
+        assertThat(
+                new Solution().maximumsSplicedArray(new int[] {1, 1, 1}, new int[] {7, 11, 13}),
+                equalTo(31));
+    }
 }
