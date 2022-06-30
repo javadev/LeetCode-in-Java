@@ -71,7 +71,8 @@ public class Solution {
         }
         for (int[] edge : edges) {
             // adding the edges
-            int u = edge[0], v = edge[1];
+            int u = edge[0];
+            int v = edge[1];
             graph[u].add(v);
             graph[v].add(u);
         }
