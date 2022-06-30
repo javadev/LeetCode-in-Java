@@ -5,6 +5,7 @@ package g2301_2400.s2322_minimum_score_after_removals_on_a_tree;
 
 import java.util.ArrayList;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private int ans = Integer.MAX_VALUE;
 
