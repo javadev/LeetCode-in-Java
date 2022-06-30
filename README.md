@@ -1485,6 +1485,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2322 |[Minimum Score After Removals on a Tree](src/main/java/g2301_2400/s2322_minimum_score_after_removals_on_a_tree/Solution.java)| Hard | Array, Bit_Manipulation, Tree, Depth_First_Search | 255 | 70.70
+| 2321 |[Maximum Score Of Spliced Array](src/main/java/g2301_2400/s2321_maximum_score_of_spliced_array/Solution.java)| Hard | Array, Dynamic_Programming | 3 | 99.68
 | 2320 |[Count Number of Ways to Place Houses](src/main/java/g2301_2400/s2320_count_number_of_ways_to_place_houses/Solution.java)| Medium | Dynamic_Programming | 13 | 82.46
 | 2319 |[Check if Matrix Is X-Matrix](src/main/java/g2301_2400/s2319_check_if_matrix_is_x_matrix/Solution.java)| Easy | Array, Matrix | 3 | 53.58
 | 2318 |[Number of Distinct Roll Sequences](src/main/java/g2301_2400/s2318_number_of_distinct_roll_sequences/Solution.java)| Hard | Dynamic_Programming, Memoization | 254 | 91.67
