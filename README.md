@@ -194,7 +194,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0215 |[Kth Largest Element in an Array](src.save/main/java/g0201_0300/s0215_kth_largest_element_in_an_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Quickselect | 2 | 93.01
+| 0215 |[Kth Largest Element in an Array](src.save/main/java/g0201_0300/s0215_kth_largest_element_in_an_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Quickselect | 5 | 70.82
 | 0347 |[Top K Frequent Elements](src.save/main/java/g0301_0400/s0347_top_k_frequent_elements/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Divide_and_Conquer, Quickselect, Bucket_Sort | 7 | 99.54
 
 #### Day 21 Heap Priority Queue
@@ -396,7 +396,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0213 |[House Robber II](src.save/main/java/g0201_0300/s0213_house_robber_ii/Solution.java)| Medium | Array, Dynamic_Programming | 1 | 31.05
+| 0213 |[House Robber II](src.save/main/java/g0201_0300/s0213_house_robber_ii/Solution.java)| Medium | Array, Dynamic_Programming | 0 | 100.00
 | 0055 |[Jump Game](src.save/main/java/g0001_0100/s0055_jump_game/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Greedy | 2 | 89.91
 
 #### Day 13 Dynamic Programming
@@ -709,7 +709,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0198 |[House Robber](src.save/main/java/g0101_0200/s0198_house_robber/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 0 | 100.00
-| 0213 |[House Robber II](src.save/main/java/g0201_0300/s0213_house_robber_ii/Solution.java)| Medium | Array, Dynamic_Programming | 1 | 31.05
+| 0213 |[House Robber II](src.save/main/java/g0201_0300/s0213_house_robber_ii/Solution.java)| Medium | Array, Dynamic_Programming | 0 | 100.00
 | 0740 |[Delete and Earn](src.save/main/java/g0701_0800/s0740_delete_and_earn/Solution.java)| Medium | Array, Hash_Table, Dynamic_Programming | 4 | 77.68
 
 #### Day 4
@@ -928,7 +928,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 1356 |[Sort Integers by The Number of 1 Bits](src.save/main/java/g1301_1400/s1356_sort_integers_by_the_number_of_1_bits/Solution.java)| Easy | Array, Sorting, Bit_Manipulation, Counting | 10 | 65.50
 | 0232 |[Implement Queue using Stacks](src.save/main/java/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.java)| Easy | Stack, Design, Queue | 1 | 56.63
 | 0242 |[Valid Anagram](src.save/main/java/g0201_0300/s0242_valid_anagram/Solution.java)| Easy | Top_Interview_Questions, String, Hash_Table, Sorting | 2 | 98.88
-| 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 10 | 67.20
+| 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 6 | 96.68
 
 #### Day 12 Class and Object
 
@@ -1382,7 +1382,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 10 | 67.20
+| 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 6 | 96.68
 | 0053 |[Maximum Subarray](src.save/main/java/g0001_0100/s0053_maximum_subarray/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Divide_and_Conquer | 2 | 63.61
 
 #### Day 2 Array
@@ -3110,16 +3110,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0223 |[Rectangle Area](src.save/main/java/g0201_0300/s0223_rectangle_area/Solution.java)| Medium | Math, Geometry | 2 | 99.58
 | 0222 |[Count Complete Tree Nodes](src.save/main/java/g0201_0300/s0222_count_complete_tree_nodes/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Search, Binary_Tree, Binary_Search_II_Day_10 | 0 | 100.00
 | 0221 |[Maximal Square](src.save/main/java/g0201_0300/s0221_maximal_square/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix, Dynamic_Programming_I_Day_16 | 6 | 80.89
-| 0220 |[Contains Duplicate III](src.save/main/java/g0201_0300/s0220_contains_duplicate_iii/Solution.java)| Medium | Array, Sorting, Sliding_Window, Ordered_Set, Bucket_Sort | 46 | 62.24
-| 0219 |[Contains Duplicate II](src.save/main/java/g0201_0300/s0219_contains_duplicate_ii/Solution.java)| Easy | Array, Hash_Table, Sliding_Window | 44 | 42.18
-| 0218 |[The Skyline Problem](src.save/main/java/g0201_0300/s0218_the_skyline_problem/Solution.java)| Hard | Top_Interview_Questions, Array, Heap_Priority_Queue, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Line_Sweep | 21 | 80.36
-| 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting, Data_Structure_I_Day_1_Array, Programming_Skills_I_Day_11_Containers_and_Libraries | 10 | 67.20
-| 0216 |[Combination Sum III](src.save/main/java/g0201_0300/s0216_combination_sum_iii/Solution.java)| Medium | Array, Backtracking | 1 | 78.74
-| 0215 |[Kth Largest Element in an Array](src.save/main/java/g0201_0300/s0215_kth_largest_element_in_an_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Quickselect, Data_Structure_II_Day_20_Heap_Priority_Queue | 2 | 93.01
-| 0214 |[Shortest Palindrome](src.save/main/java/g0201_0300/s0214_shortest_palindrome/Solution.java)| Hard | String, Hash_Function, String_Matching, Rolling_Hash | 3 | 94.71
-| 0213 |[House Robber II](src.save/main/java/g0201_0300/s0213_house_robber_ii/Solution.java)| Medium | Array, Dynamic_Programming, Algorithm_II_Day_12_Dynamic_Programming, Dynamic_Programming_I_Day_3 | 1 | 31.05
-| 0212 |[Word Search II](src.save/main/java/g0201_0300/s0212_word_search_ii/Solution.java)| Hard | Top_Interview_Questions, Array, String, Matrix, Backtracking, Trie | 20 | 96.11
-| 0211 |[Design Add and Search Words Data Structure](src.save/main/java/g0201_0300/s0211_design_add_and_search_words_data_structure/WordDictionary.java)| Medium | String, Depth_First_Search, Design, Trie | 403 | 18.89
+| 0220 |[Contains Duplicate III](src.save/main/java/g0201_0300/s0220_contains_duplicate_iii/Solution.java)| Medium | Array, Sorting, Sliding_Window, Ordered_Set, Bucket_Sort | 38 | 80.90
+| 0219 |[Contains Duplicate II](src.save/main/java/g0201_0300/s0219_contains_duplicate_ii/Solution.java)| Easy | Array, Hash_Table, Sliding_Window | 15 | 99.09
+| 0218 |[The Skyline Problem](src.save/main/java/g0201_0300/s0218_the_skyline_problem/Solution.java)| Hard | Top_Interview_Questions, Array, Heap_Priority_Queue, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Line_Sweep | 22 | 76.93
+| 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting, Data_Structure_I_Day_1_Array, Programming_Skills_I_Day_11_Containers_and_Libraries | 6 | 96.68
+| 0216 |[Combination Sum III](src.save/main/java/g0201_0300/s0216_combination_sum_iii/Solution.java)| Medium | Array, Backtracking | 1 | 81.35
+| 0215 |[Kth Largest Element in an Array](src.save/main/java/g0201_0300/s0215_kth_largest_element_in_an_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Quickselect, Data_Structure_II_Day_20_Heap_Priority_Queue | 5 | 70.82
+| 0214 |[Shortest Palindrome](src.save/main/java/g0201_0300/s0214_shortest_palindrome/Solution.java)| Hard | String, Hash_Function, String_Matching, Rolling_Hash | 3 | 96.59
+| 0213 |[House Robber II](src.save/main/java/g0201_0300/s0213_house_robber_ii/Solution.java)| Medium | Array, Dynamic_Programming, Algorithm_II_Day_12_Dynamic_Programming, Dynamic_Programming_I_Day_3 | 0 | 100.00
+| 0212 |[Word Search II](src.save/main/java/g0201_0300/s0212_word_search_ii/Solution.java)| Hard | Top_Interview_Questions, Array, String, Matrix, Backtracking, Trie | 21 | 99.42
+| 0211 |[Design Add and Search Words Data Structure](src.save/main/java/g0201_0300/s0211_design_add_and_search_words_data_structure/WordDictionary.java)| Medium | String, Depth_First_Search, Design, Trie | 445 | 96.00
 | 0210 |[Course Schedule II](src.save/main/java/g0201_0300/s0210_course_schedule_ii/Solution.java)| Medium | Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 13 | 35.17
 | 0209 |[Minimum Size Subarray Sum](src.save/main/java/g0201_0300/s0209_minimum_size_subarray_sum/Solution.java)| Medium | Array, Binary_Search, Prefix_Sum, Sliding_Window, Algorithm_II_Day_5_Sliding_Window, Binary_Search_II_Day_1 | 1 | 100.00
 | 0208 |[Implement Trie (Prefix Tree)](src.save/main/java/g0201_0300/s0208_implement_trie_prefix_tree/Trie.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Design, Trie | 34 | 99.90
@@ -3196,7 +3196,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0129 |[Sum Root to Leaf Numbers](src.save/main/java/g0101_0200/s0129_sum_root_to_leaf_numbers/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree | 0 | 100.00
 | 0128 |[Longest Consecutive Sequence](src.save/main/java/g0101_0200/s0128_longest_consecutive_sequence/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Union_Find | 18 | 91.05
 | 0127 |[Word Ladder](src.save/main/java/g0101_0200/s0127_word_ladder/Solution.java)| Hard | Top_Interview_Questions, String, Hash_Table, Breadth_First_Search, Graph_Theory_I_Day_12_Breadth_First_Search | 37 | 94.58
-| 0126 |[Word Ladder II](src.save/main/java/g0101_0200/s0126_word_ladder_ii/Solution.java)| Hard | String, Hash_Table, Breadth_First_Search, Backtracking | 4 | 99.18
+| 0126 |[Word Ladder II](src.save/main/java/g0101_0200/s0126_word_ladder_ii/Solution.java)| Hard | String, Hash_Table, Breadth_First_Search, Backtracking | 19 | 60.53
 | 0125 |[Valid Palindrome](src.save/main/java/g0101_0200/s0125_valid_palindrome/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers | 3 | 98.64
 | 0124 |[Binary Tree Maximum Path Sum](src.save/main/java/g0101_0200/s0124_binary_tree_maximum_path_sum/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree | 1 | 99.46
 | 0123 |[Best Time to Buy and Sell Stock III](src.save/main/java/g0101_0200/s0123_best_time_to_buy_and_sell_stock_iii/Solution.java)| Hard | Array, Dynamic_Programming | 4 | 87.18
