@@ -1,127 +1,114 @@
 package g0101_0200.s0126_word_ladder_ii;
 
 // #Hard #String #Hash_Table #Breadth_First_Search #Backtracking
-// #2022_02_22_Time_4_ms_(99.18%)_Space_42.4_MB_(70.92%)
+// #2022_07_02_Time_19_ms_(60.53%)_Space_43_MB_(90.12%)
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Queue;
 import java.util.Set;
 
-@SuppressWarnings("java:S135")
 public class Solution {
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
-        Map<String, Set<String>> graph = new HashMap<>();
-        int targetLength = bfs(graph, beginWord, endWord, wordList);
         List<List<String>> ans = new ArrayList<>();
-        if (targetLength == 0) {
+        // reverse graph start from endWord
+        Map<String, Set<String>> reverse = new HashMap<>();
+        // remove the duplicate words
+        Set<String> wordSet = new HashSet<>(wordList);
+        // remove the first word to avoid cycle path
+        wordSet.remove(beginWord);
+        // store current layer nodes
+        Queue<String> queue = new LinkedList<>();
+        // first layer has only beginWord
+        queue.add(beginWord);
+        // store nextLayer nodes
+        Set<String> nextLevel = new HashSet<>();
+        // find endWord flag
+        boolean findEnd = false;
+        // traverse current layer nodes
+        while (!queue.isEmpty()) {
+            String word = queue.remove();
+            for (String next : wordSet) {
+                // is ladder words
+                if (isLadder(word, next)) {
+                    // construct the reverse graph from endWord
+                    Set<String> reverseLadders =
+                            reverse.computeIfAbsent(next, k -> new HashSet<>());
+                    reverseLadders.add(word);
+                    if (endWord.equals(next)) {
+                        findEnd = true;
+                    }
+                    // store next layer nodes
+                    nextLevel.add(next);
+                }
+            }
+            // when current layer is all visited
+            if (queue.isEmpty()) {
+                // if find the endWord, then break the while loop
+                if (findEnd) {
+                    break;
+                }
+                // add next layer nodes to queue
+                queue.addAll(nextLevel);
+                // remove all next layer nodes in wordSet
+                wordSet.removeAll(nextLevel);
+                nextLevel.clear();
+            }
+        }
+        // if can't reach endWord from startWord, then return ans.
+        if (!findEnd) {
             return ans;
         }
-        dfs(ans, new ArrayList<>(), targetLength, beginWord, endWord, graph);
+        Set<String> path = new LinkedHashSet<>();
+        path.add(endWord);
+        // traverse reverse graph from endWord to beginWord
+        findPath(endWord, beginWord, reverse, ans, path);
         return ans;
     }
 
-    private int bfs(
-            Map<String, Set<String>> graph,
-            String beginWord,
+    private void findPath(
             String endWord,
-            List<String> wordList) {
-        Set<String> wordSet = new HashSet<>(wordList);
-        if (!wordSet.contains(endWord)) {
-            return 0;
-        }
-        wordSet.add(beginWord);
-        // Bi BFS
-        // two queue (startWord, endWord)
-        Set<String> set1 = new HashSet<>(Arrays.asList(beginWord));
-        Set<String> set2 = new HashSet<>(Arrays.asList(endWord));
-        Set<String> visited = new HashSet<>();
-        boolean isReversed = false;
-        // the number of words in the transformation sequence
-        int length = 0;
-        boolean found = false;
-        while (!set1.isEmpty() && !found) {
-            Set<String> newSet = new HashSet<>();
-            length++;
-            // check next layer
-            for (String word : set1) {
-                visited.add(word);
-                // check neighbor
-                char[] arrWord = word.toCharArray();
-                for (int i = 0; i < arrWord.length; i++) {
-                    char oldChar = arrWord[i];
-                    for (int j = 0; j < 26; j++) {
-                        char newChar = (char) ('a' + j);
-                        // skip original word
-                        if (newChar == oldChar) {
-                            continue;
-                        }
-                        arrWord[i] = newChar;
-                        String newWord = String.valueOf(arrWord);
-                        if (!wordSet.contains(newWord)) {
-                            continue;
-                        }
-                        if (set2.contains(newWord)) {
-                            found = true;
-                        }
-                        if (visited.contains(newWord)) {
-                            continue;
-                        }
-                        newSet.add(newWord);
-                        if (!isReversed) {
-                            graph.putIfAbsent(word, new HashSet<>());
-                            graph.get(word).add(newWord);
-                        } else {
-                            graph.putIfAbsent(newWord, new HashSet<>());
-                            graph.get(newWord).add(word);
-                        }
-                    }
-                    // revert change
-                    arrWord[i] = oldChar;
-                }
+            String beginWord,
+            Map<String, Set<String>> graph,
+            List<List<String>> ans,
+            Set<String> path) {
+        Set<String> next = graph.get(endWord);
+        if (next == null) return;
+        for (String word : next) {
+            path.add(word);
+            if (beginWord.equals(word)) {
+                List<String> shortestPath = new ArrayList<>(path);
+                // reverse words in shortest path
+                Collections.reverse(shortestPath);
+                // add the shortest path to ans.
+                ans.add(shortestPath);
+            } else {
+                findPath(word, beginWord, graph, ans, path);
             }
-            set1 = newSet;
-            // swap queue
-            // always make sure set1 is the smaller set
-            // so we can end early if there is no path from begin to end word (set1 will be empty)
-            if (set1.size() > set2.size()) {
-                Set<String> tmpVisited = set1;
-                set1 = set2;
-                set2 = tmpVisited;
-                isReversed = !isReversed;
-            }
+            path.remove(word);
         }
-        if (!found) {
-            return 0;
-        }
-        return length + 1;
     }
 
-    private void dfs(
-            List<List<String>> ans,
-            List<String> path,
-            int targetLength,
-            String beginWord,
-            String endWord,
-            Map<String, Set<String>> graph) {
-        path.add(beginWord);
-        if (path.size() > targetLength) {
-            path.remove(path.size() - 1);
-            return;
+    private boolean isLadder(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
         }
-        if (beginWord.equals(endWord)) {
-            ans.add(new ArrayList<>(path));
-            path.remove(path.size() - 1);
-            return;
-        }
-        if (graph.containsKey(beginWord)) {
-            for (String neighbor : graph.get(beginWord)) {
-                dfs(ans, path, targetLength, neighbor, endWord, graph);
+        int diffCount = 0;
+        int n = s.length();
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) != t.charAt(i)) {
+                diffCount++;
+            }
+            if (diffCount > 1) {
+                return false;
             }
         }
-        path.remove(path.size() - 1);
+        return diffCount == 1;
     }
 }
