@@ -35,7 +35,9 @@ public class Solution {
                 }
             }
             rowBegin++;
-            if (head == null) break;
+            if (head == null) {
+                break;
+            }
             // Traverse Down
             for (int j = rowBegin; j <= rowEnd; j++) {
                 result[j][colEnd] = head.val;
