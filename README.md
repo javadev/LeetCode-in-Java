@@ -1485,6 +1485,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2326 |[Spiral Matrix IV](src/main/java/g2301_2400/s2326_spiral_matrix_iv/Solution.java)| Medium || 12 | 83.33
+| 2325 |[Decode the Message](src/main/java/g2301_2400/s2325_decode_the_message/Solution.java)| Easy || 7 | 42.86
 | 2322 |[Minimum Score After Removals on a Tree](src/main/java/g2301_2400/s2322_minimum_score_after_removals_on_a_tree/Solution.java)| Hard | Array, Bit_Manipulation, Tree, Depth_First_Search | 255 | 70.70
 | 2321 |[Maximum Score Of Spliced Array](src/main/java/g2301_2400/s2321_maximum_score_of_spliced_array/Solution.java)| Hard | Array, Dynamic_Programming | 3 | 99.68
 | 2320 |[Count Number of Ways to Place Houses](src/main/java/g2301_2400/s2320_count_number_of_ways_to_place_houses/Solution.java)| Medium | Dynamic_Programming | 13 | 82.46
