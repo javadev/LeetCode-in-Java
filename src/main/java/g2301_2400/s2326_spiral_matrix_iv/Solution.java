@@ -15,6 +15,7 @@ import java.util.Arrays;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+@SuppressWarnings("java:S135")
 public class Solution {
     public int[][] spiralMatrix(int m, int n, ListNode head) {
         int[][] result = new int[m][n];
@@ -55,18 +56,12 @@ public class Solution {
                 for (int j = colEnd; j >= colBegin; j--) {
                     result[rowEnd][j] = head.val;
                     head = head.next;
-                    if (head == null) {
-                        break;
-                    }
                 }
                 if (head == null) {
                     break;
                 }
             }
             rowEnd--;
-            if (head == null) {
-                break;
-            }
             if (colBegin <= colEnd) {
                 // Traver Up
                 for (int j = rowEnd; j >= rowBegin; j--) {
@@ -81,9 +76,6 @@ public class Solution {
                 }
             }
             colBegin++;
-            if (head == null) {
-                break;
-            }
         }
         return result;
     }
