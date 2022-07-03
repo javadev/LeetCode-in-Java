@@ -15,6 +15,7 @@ import java.util.Arrays;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+@SuppressWarnings({"java:S135", "java:S2583"})
 public class Solution {
     public int[][] spiralMatrix(int m, int n, ListNode head) {
         int[][] result = new int[m][n];
