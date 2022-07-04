@@ -1,6 +1,6 @@
 package g0201_0300.s0223_rectangle_area;
 
-// #Medium #Math #Geometry #2022_03_05_Time_2_ms_(99.58%)_Space_41.2_MB_(53.89%)
+// #Medium #Math #Geometry #2022_07_04_Time_4_ms_(65.35%)_Space_43.4_MB_(31.18%)
 
 @SuppressWarnings("java:S107")
 public class Solution {
@@ -9,7 +9,6 @@ public class Solution {
         long right = Math.min(ax2, bx2);
         long top = Math.min(ay2, by2);
         long bottom = Math.max(ay1, by1);
-
         long area = (right - left) * (top - bottom);
         // if not overlaping, either of these two will be non-posittive
         // if right - left = 0, are will automtically be 0 as well
