@@ -1,7 +1,8 @@
 package g0001_0100.s0056_merge_intervals;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Sorting
-// #Data_Structure_II_Day_2_Array #2022_06_17_Time_13_ms_(55.73%)_Space_55.6_MB_(17.41%)
+// #Data_Structure_II_Day_2_Array #Level_2_Day_17_Interval
+// #2022_06_17_Time_13_ms_(55.73%)_Space_55.6_MB_(17.41%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

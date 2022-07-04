@@ -1,6 +1,6 @@
 package g0001_0100.s0057_insert_interval;
 
-// #Medium #Array #2022_06_17_Time_2_ms_(76.42%)_Space_47.6_MB_(51.50%)
+// #Medium #Array #Level_2_Day_17_Interval #2022_06_17_Time_2_ms_(76.42%)_Space_47.6_MB_(51.50%)
 
 import java.util.Arrays;
 
