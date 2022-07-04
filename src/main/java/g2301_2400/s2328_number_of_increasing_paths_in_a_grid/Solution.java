@@ -23,13 +23,14 @@ public class Solution {
         if (j < m - 1 && a[i][j + 1] > a[i][j]) {
             res += 1 + help(a, i, j + 1, n, m, dp);
         }
-        return dp[i][j] = (int) res % 1000000007;
+        dp[i][j] = (int) res % 1000000007;
+        return dp[i][j];
     }
 
     public int countPaths(int[][] grid) {
         int n = grid.length;
         int m = grid[0].length;
-        long ans = n * m;
+        long ans = (long) n * m;
         int[][] dp = new int[n][m];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
