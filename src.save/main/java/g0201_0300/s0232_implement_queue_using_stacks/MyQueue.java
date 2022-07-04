@@ -2,7 +2,7 @@ package g0201_0300.s0232_implement_queue_using_stacks;
 
 // #Easy #Stack #Design #Queue #Data_Structure_I_Day_9_Stack_Queue
 // #Programming_Skills_I_Day_11_Containers_and_Libraries #Level_2_Day_16_Design
-// #2022_03_14_Time_1_ms_(56.63%)_Space_41.9_MB_(36.65%)
+// #2022_07_04_Time_1_ms_(67.21%)_Space_41.8_MB_(58.63%)
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -45,3 +45,12 @@ public class MyQueue {
         return right.isEmpty() && left.isEmpty();
     }
 }
+
+/*
+ * Your MyQueue object will be instantiated and called as such:
+ * MyQueue obj = new MyQueue();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.peek();
+ * boolean param_4 = obj.empty();
+ */
