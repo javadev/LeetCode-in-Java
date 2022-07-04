@@ -173,7 +173,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0230 |[Kth Smallest Element in a BST](src.save/main/java/g0201_0300/s0230_kth_smallest_element_in_a_bst/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 0 | 100.00
+| 0230 |[Kth Smallest Element in a BST](src.save/main/java/g0201_0300/s0230_kth_smallest_element_in_a_bst/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 1 | 78.91
 | 0173 |[Binary Search Tree Iterator](src.save/main/java/g0101_0200/s0173_binary_search_tree_iterator/BSTIterator.java)| Medium | Tree, Binary_Tree, Stack, Design, Binary_Search_Tree, Iterator | 18 | 84.18
 
 #### Day 18 Tree
@@ -803,7 +803,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0064 |[Minimum Path Sum](src.save/main/java/g0001_0100/s0064_minimum_path_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix | 1 | 99.94
-| 0221 |[Maximal Square](src.save/main/java/g0201_0300/s0221_maximal_square/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix | 6 | 80.89
+| 0221 |[Maximal Square](src.save/main/java/g0201_0300/s0221_maximal_square/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix | 7 | 72.35
 
 #### Day 17
 
@@ -1441,7 +1441,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0108 |[Convert Sorted Array to Binary Search Tree](src.save/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/Solution.java)| Easy | Top_Interview_Questions, Array, Tree, Binary_Tree, Binary_Search_Tree, Divide_and_Conquer | 0 | 100.00
-| 0230 |[Kth Smallest Element in a BST](src.save/main/java/g0201_0300/s0230_kth_smallest_element_in_a_bst/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 0 | 100.00
+| 0230 |[Kth Smallest Element in a BST](src.save/main/java/g0201_0300/s0230_kth_smallest_element_in_a_bst/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 1 | 78.91
 | 0173 |[Binary Search Tree Iterator](src.save/main/java/g0101_0200/s0173_binary_search_tree_iterator/BSTIterator.java)| Medium | Tree, Binary_Tree, Stack, Design, Binary_Search_Tree, Iterator | 18 | 84.18
 
 #### Day 10 Graph/BFS/DFS
@@ -1508,7 +1508,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0735 |[Asteroid Collision](src.save/main/java/g0701_0800/s0735_asteroid_collision/Solution.java)| Medium | Array, Stack | 2 | 99.59
-| 0227 |[Basic Calculator II](src.save/main/java/g0201_0300/s0227_basic_calculator_ii/Solution.java)| Medium | Top_Interview_Questions, String, Math, Stack | 9 | 88.15
+| 0227 |[Basic Calculator II](src.save/main/java/g0201_0300/s0227_basic_calculator_ii/Solution.java)| Medium | Top_Interview_Questions, String, Math, Stack | 8 | 95.32
 
 #### Day 19 Union Find
 
@@ -3250,16 +3250,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0233 |[Number of Digit One](src.save/main/java/g0201_0300/s0233_number_of_digit_one/Solution.java)| Hard | Dynamic_Programming, Math, Recursion | 0 | 100.00
 | 0232 |[Implement Queue using Stacks](src.save/main/java/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.java)| Easy | Stack, Design, Queue, Data_Structure_I_Day_9_Stack_Queue, Programming_Skills_I_Day_11_Containers_and_Libraries | 1 | 56.63
 | 0231 |[Power of Two](src.save/main/java/g0201_0300/s0231_power_of_two/Solution.java)| Easy | Math, Bit_Manipulation, Recursion, Algorithm_I_Day_13_Bit_Manipulation | 1 | 95.76
-| 0230 |[Kth Smallest Element in a BST](src.save/main/java/g0201_0300/s0230_kth_smallest_element_in_a_bst/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_II_Day_17_Tree | 0 | 100.00
-| 0229 |[Majority Element II](src.save/main/java/g0201_0300/s0229_majority_element_ii/Solution.java)| Medium | Array, Hash_Table, Sorting, Counting | 2 | 91.84
+| 0230 |[Kth Smallest Element in a BST](src.save/main/java/g0201_0300/s0230_kth_smallest_element_in_a_bst/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_II_Day_17_Tree, Level_2_Day_9_Binary_Search_Tree | 1 | 78.91
+| 0229 |[Majority Element II](src.save/main/java/g0201_0300/s0229_majority_element_ii/Solution.java)| Medium | Array, Hash_Table, Sorting, Counting | 2 | 92.96
 | 0228 |[Summary Ranges](src.save/main/java/g0201_0300/s0228_summary_ranges/Solution.java)| Easy | Array | 0 | 100.00
-| 0227 |[Basic Calculator II](src.save/main/java/g0201_0300/s0227_basic_calculator_ii/Solution.java)| Medium | Top_Interview_Questions, String, Math, Stack | 9 | 88.15
-| 0226 |[Invert Binary Tree](src.save/main/java/g0201_0300/s0226_invert_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_I_Day_12_Tree | 0 | 100.00
+| 0227 |[Basic Calculator II](src.save/main/java/g0201_0300/s0227_basic_calculator_ii/Solution.java)| Medium | Top_Interview_Questions, String, Math, Stack, Level_2_Day_18_Stack | 8 | 95.32
+| 0226 |[Invert Binary Tree](src.save/main/java/g0201_0300/s0226_invert_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_I_Day_12_Tree, Level_2_Day_6_Tree | 0 | 100.00
 | 0225 |[Implement Stack using Queues](src.save/main/java/g0201_0300/s0225_implement_stack_using_queues/MyStack.java)| Easy | Stack, Design, Queue | 0 | 100.00
-| 0224 |[Basic Calculator](src.save/main/java/g0201_0300/s0224_basic_calculator/Solution.java)| Hard | String, Math, Stack, Recursion | 3 | 98.82
-| 0223 |[Rectangle Area](src.save/main/java/g0201_0300/s0223_rectangle_area/Solution.java)| Medium | Math, Geometry | 2 | 99.58
+| 0224 |[Basic Calculator](src.save/main/java/g0201_0300/s0224_basic_calculator/Solution.java)| Hard | String, Math, Stack, Recursion | 3 | 98.92
+| 0223 |[Rectangle Area](src.save/main/java/g0201_0300/s0223_rectangle_area/Solution.java)| Medium | Math, Geometry | 4 | 65.35
 | 0222 |[Count Complete Tree Nodes](src.save/main/java/g0201_0300/s0222_count_complete_tree_nodes/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Search, Binary_Tree, Binary_Search_II_Day_10 | 0 | 100.00
-| 0221 |[Maximal Square](src.save/main/java/g0201_0300/s0221_maximal_square/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix, Dynamic_Programming_I_Day_16 | 6 | 80.89
+| 0221 |[Maximal Square](src.save/main/java/g0201_0300/s0221_maximal_square/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix, Dynamic_Programming_I_Day_16 | 7 | 72.35
 | 0220 |[Contains Duplicate III](src.save/main/java/g0201_0300/s0220_contains_duplicate_iii/Solution.java)| Medium | Array, Sorting, Sliding_Window, Ordered_Set, Bucket_Sort | 38 | 80.90
 | 0219 |[Contains Duplicate II](src.save/main/java/g0201_0300/s0219_contains_duplicate_ii/Solution.java)| Easy | Array, Hash_Table, Sliding_Window | 15 | 99.09
 | 0218 |[The Skyline Problem](src.save/main/java/g0201_0300/s0218_the_skyline_problem/Solution.java)| Hard | Top_Interview_Questions, Array, Heap_Priority_Queue, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Line_Sweep | 22 | 76.93
