@@ -78,7 +78,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0240 |[Search a 2D Matrix II](src.save/main/java/g0201_0300/s0240_search_a_2d_matrix_ii/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Matrix, Divide_and_Conquer | 9 | 71.40
+| 0240 |[Search a 2D Matrix II](src.save/main/java/g0201_0300/s0240_search_a_2d_matrix_ii/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Matrix, Divide_and_Conquer | 7 | 86.73
 | 0435 |[Non-overlapping Intervals](src.save/main/java/g0401_0500/s0435_non_overlapping_intervals/Solution.java)| Medium | Array, Dynamic_Programming, Sorting, Greedy | 109 | 26.80
 
 #### Day 5 Array
@@ -180,7 +180,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0236 |[Lowest Common Ancestor of a Binary Tree](src.save/main/java/g0201_0300/s0236_lowest_common_ancestor_of_a_binary_tree/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree | 11 | 46.61
+| 0236 |[Lowest Common Ancestor of a Binary Tree](src.save/main/java/g0201_0300/s0236_lowest_common_ancestor_of_a_binary_tree/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree | 10 | 56.51
 | 0297 |[Serialize and Deserialize Binary Tree](src.save/main/java/g0201_0300/s0297_serialize_and_deserialize_binary_tree/Codec.java)| Hard | Top_Interview_Questions, String, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Design | 9 | 91.82
 
 #### Day 19 Graph
@@ -298,7 +298,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0231 |[Power of Two](src.save/main/java/g0201_0300/s0231_power_of_two/Solution.java)| Easy | Math, Bit_Manipulation, Recursion | 1 | 95.76
+| 0231 |[Power of Two](src.save/main/java/g0201_0300/s0231_power_of_two/Solution.java)| Easy | Math, Bit_Manipulation, Recursion | 1 | 100.00
 | 0191 |[Number of 1 Bits](src.save/main/java/g0101_0200/s0191_number_of_1_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation | 1 | 84.87
 
 #### Day 14 Bit Manipulation
@@ -602,7 +602,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0240 |[Search a 2D Matrix II](src.save/main/java/g0201_0300/s0240_search_a_2d_matrix_ii/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Matrix, Divide_and_Conquer | 9 | 71.40
+| 0240 |[Search a 2D Matrix II](src.save/main/java/g0201_0300/s0240_search_a_2d_matrix_ii/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Matrix, Divide_and_Conquer | 7 | 86.73
 | 0275 |[H-Index II](src.save/main/java/g0201_0300/s0275_h_index_ii/Solution.java)| Medium | Array, Binary_Search | 0 | 100.00
 
 #### Day 9
@@ -927,7 +927,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1356 |[Sort Integers by The Number of 1 Bits](src.save/main/java/g1301_1400/s1356_sort_integers_by_the_number_of_1_bits/Solution.java)| Easy | Array, Sorting, Bit_Manipulation, Counting | 10 | 65.50
-| 0232 |[Implement Queue using Stacks](src.save/main/java/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.java)| Easy | Stack, Design, Queue | 1 | 56.63
+| 0232 |[Implement Queue using Stacks](src.save/main/java/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.java)| Easy | Stack, Design, Queue | 1 | 67.21
 | 0242 |[Valid Anagram](src.save/main/java/g0201_0300/s0242_valid_anagram/Solution.java)| Easy | Top_Interview_Questions, String, Hash_Table, Sorting | 2 | 98.88
 | 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 6 | 96.68
 
@@ -1326,7 +1326,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0098 |[Validate Binary Search Tree](src.save/main/java/g0001_0100/s0098_validate_binary_search_tree/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 0 | 100.00
-| 0235 |[Lowest Common Ancestor of a Binary Search Tree](src.save/main/java/g0201_0300/s0235_lowest_common_ancestor_of_a_binary_search_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 7 | 52.79
+| 0235 |[Lowest Common Ancestor of a Binary Search Tree](src.save/main/java/g0201_0300/s0235_lowest_common_ancestor_of_a_binary_search_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 4 | 100.00
 
 #### Day 9 Graph/BFS/DFS
 
@@ -1399,7 +1399,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0019 |[Remove Nth Node From End of List](src.save/main/java/g0001_0100/s0019_remove_nth_node_from_end_of_list/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Two_Pointers, Linked_List | 1 | 59.72
-| 0234 |[Palindrome Linked List](src.save/main/java/g0201_0300/s0234_palindrome_linked_list/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Two_Pointers, Stack, Linked_List, Recursion | 5 | 89.76
+| 0234 |[Palindrome Linked List](src.save/main/java/g0201_0300/s0234_palindrome_linked_list/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Two_Pointers, Stack, Linked_List, Recursion | 6 | 76.07
 
 #### Day 4 Linked List
 
@@ -1492,7 +1492,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0232 |[Implement Queue using Stacks](src.save/main/java/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.java)| Easy | Stack, Design, Queue | 1 | 56.63
+| 0232 |[Implement Queue using Stacks](src.save/main/java/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.java)| Easy | Stack, Design, Queue | 1 | 67.21
 | 0155 |[Min Stack](src.save/main/java/g0101_0200/s0155_min_stack/MinStack.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Stack, Design | 3 | 100.00
 | 0208 |[Implement Trie (Prefix Tree)](src.save/main/java/g0201_0300/s0208_implement_trie_prefix_tree/Trie.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Design, Trie | 34 | 99.90
 
@@ -1589,7 +1589,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0020 |[Valid Parentheses](src.save/main/java/g0001_0100/s0020_valid_parentheses/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, String, Stack | 3 | 51.72
-| 0232 |[Implement Queue using Stacks](src.save/main/java/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.java)| Easy | Stack, Design, Queue | 1 | 56.63
+| 0232 |[Implement Queue using Stacks](src.save/main/java/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.java)| Easy | Stack, Design, Queue | 1 | 67.21
 
 #### Day 10 Tree
 
@@ -1627,7 +1627,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 |-|-|-|-|-|-
 | 0098 |[Validate Binary Search Tree](src.save/main/java/g0001_0100/s0098_validate_binary_search_tree/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 0 | 100.00
 | 0653 |[Two Sum IV - Input is a BST](src.save/main/java/g0601_0700/s0653_two_sum_iv_input_is_a_bst/Solution.java)| Easy | Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Two_Pointers, Binary_Search_Tree | 5 | 74.23
-| 0235 |[Lowest Common Ancestor of a Binary Search Tree](src.save/main/java/g0201_0300/s0235_lowest_common_ancestor_of_a_binary_search_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 7 | 52.79
+| 0235 |[Lowest Common Ancestor of a Binary Search Tree](src.save/main/java/g0201_0300/s0235_lowest_common_ancestor_of_a_binary_search_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 4 | 100.00
 
 ## Algorithms
 
@@ -3242,16 +3242,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0257 |[Binary Tree Paths](src.save/main/java/g0201_0300/s0257_binary_tree_paths/Solution.java)| Easy | String, Depth_First_Search, Tree, Binary_Tree, Backtracking | 2 | 91.59
 | 0242 |[Valid Anagram](src.save/main/java/g0201_0300/s0242_valid_anagram/Solution.java)| Easy | Top_Interview_Questions, String, Hash_Table, Sorting, Data_Structure_I_Day_6_String, Programming_Skills_I_Day_11_Containers_and_Libraries | 2 | 98.88
 | 0241 |[Different Ways to Add Parentheses](src.save/main/java/g0201_0300/s0241_different_ways_to_add_parentheses/Solution.java)| Medium | String, Dynamic_Programming, Math, Recursion, Memoization | 2 | 81.46
-| 0240 |[Search a 2D Matrix II](src.save/main/java/g0201_0300/s0240_search_a_2d_matrix_ii/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Matrix, Divide_and_Conquer, Data_Structure_II_Day_4_Array, Binary_Search_II_Day_8 | 9 | 71.40
-| 0239 |[Sliding Window Maximum](src.save/main/java/g0201_0300/s0239_sliding_window_maximum/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Heap_Priority_Queue, Sliding_Window, Queue, Monotonic_Queue | 25 | 95.01
+| 0240 |[Search a 2D Matrix II](src.save/main/java/g0201_0300/s0240_search_a_2d_matrix_ii/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Matrix, Divide_and_Conquer, Data_Structure_II_Day_4_Array, Binary_Search_II_Day_8 | 7 | 86.73
+| 0239 |[Sliding Window Maximum](src.save/main/java/g0201_0300/s0239_sliding_window_maximum/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Heap_Priority_Queue, Sliding_Window, Queue, Monotonic_Queue | 58 | 52.28
 | 0238 |[Product of Array Except Self](src.save/main/java/g0201_0300/s0238_product_of_array_except_self/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Prefix_Sum, Data_Structure_II_Day_5_Array | 1 | 100.00
 | 0237 |[Delete Node in a Linked List](src.save/main/java/g0201_0300/s0237_delete_node_in_a_linked_list/Solution.java)| Easy | Top_Interview_Questions, Linked_List | 0 | 100.00
-| 0236 |[Lowest Common Ancestor of a Binary Tree](src.save/main/java/g0201_0300/s0236_lowest_common_ancestor_of_a_binary_tree/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Data_Structure_II_Day_18_Tree | 11 | 46.61
-| 0235 |[Lowest Common Ancestor of a Binary Search Tree](src.save/main/java/g0201_0300/s0235_lowest_common_ancestor_of_a_binary_search_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_I_Day_14_Tree, Level_1_Day_8_Binary_Search_Tree | 7 | 52.79
-| 0234 |[Palindrome Linked List](src.save/main/java/g0201_0300/s0234_palindrome_linked_list/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Two_Pointers, Stack, Linked_List, Recursion, Level_2_Day_3_Linked_List | 5 | 89.76
+| 0236 |[Lowest Common Ancestor of a Binary Tree](src.save/main/java/g0201_0300/s0236_lowest_common_ancestor_of_a_binary_tree/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Data_Structure_II_Day_18_Tree | 10 | 56.51
+| 0235 |[Lowest Common Ancestor of a Binary Search Tree](src.save/main/java/g0201_0300/s0235_lowest_common_ancestor_of_a_binary_search_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_I_Day_14_Tree, Level_1_Day_8_Binary_Search_Tree | 4 | 100.00
+| 0234 |[Palindrome Linked List](src.save/main/java/g0201_0300/s0234_palindrome_linked_list/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Two_Pointers, Stack, Linked_List, Recursion, Level_2_Day_3_Linked_List | 6 | 76.07
 | 0233 |[Number of Digit One](src.save/main/java/g0201_0300/s0233_number_of_digit_one/Solution.java)| Hard | Dynamic_Programming, Math, Recursion | 0 | 100.00
-| 0232 |[Implement Queue using Stacks](src.save/main/java/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.java)| Easy | Stack, Design, Queue, Data_Structure_I_Day_9_Stack_Queue, Programming_Skills_I_Day_11_Containers_and_Libraries, Level_2_Day_16_Design | 1 | 56.63
-| 0231 |[Power of Two](src.save/main/java/g0201_0300/s0231_power_of_two/Solution.java)| Easy | Math, Bit_Manipulation, Recursion, Algorithm_I_Day_13_Bit_Manipulation | 1 | 95.76
+| 0232 |[Implement Queue using Stacks](src.save/main/java/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.java)| Easy | Stack, Design, Queue, Data_Structure_I_Day_9_Stack_Queue, Programming_Skills_I_Day_11_Containers_and_Libraries, Level_2_Day_16_Design | 1 | 67.21
+| 0231 |[Power of Two](src.save/main/java/g0201_0300/s0231_power_of_two/Solution.java)| Easy | Math, Bit_Manipulation, Recursion, Algorithm_I_Day_13_Bit_Manipulation | 1 | 100.00
 | 0230 |[Kth Smallest Element in a BST](src.save/main/java/g0201_0300/s0230_kth_smallest_element_in_a_bst/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_II_Day_17_Tree, Level_2_Day_9_Binary_Search_Tree | 1 | 78.91
 | 0229 |[Majority Element II](src.save/main/java/g0201_0300/s0229_majority_element_ii/Solution.java)| Medium | Array, Hash_Table, Sorting, Counting | 2 | 92.96
 | 0228 |[Summary Ranges](src.save/main/java/g0201_0300/s0228_summary_ranges/Solution.java)| Easy | Array | 0 | 100.00
