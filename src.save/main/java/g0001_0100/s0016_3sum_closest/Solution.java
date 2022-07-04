@@ -1,6 +1,7 @@
 package g0001_0100.s0016_3sum_closest;
 
-// #Medium #Array #Sorting #Two_Pointers #2022_06_14_Time_3_ms_(99.98%)_Space_43.5_MB_(16.47%)
+// #Medium #Array #Sorting #Two_Pointers #Level_2_Day_14_Sliding_Window/Two_Pointer
+// #2022_06_14_Time_3_ms_(99.98%)_Space_43.5_MB_(16.47%)
 
 import java.util.Arrays;
 

@@ -1,6 +1,6 @@
 package g0901_1000.s0947_most_stones_removed_with_same_row_or_column;
 
-// #Medium #Depth_First_Search #Graph #Union_Find
+// #Medium #Depth_First_Search #Graph #Union_Find #Level_2_Day_19_Union_Find
 // #2022_02_20_Time_5_ms_(98.95%)_Space_42.1_MB_(74.57%)
 
 import java.util.HashSet;
