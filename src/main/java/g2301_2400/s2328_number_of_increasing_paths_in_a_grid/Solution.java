@@ -3,7 +3,7 @@ package g2301_2400.s2328_number_of_increasing_paths_in_a_grid;
 // #Hard #2022_07_04_Time_43_ms_(100.00%)_Space_89.1_MB_(63.64%)
 
 public class Solution {
-    private int help(int a[][], int i, int j, int n, int m, int dp[][]) {
+    private int help(int[][] a, int i, int j, int n, int m, int[][] dp) {
         if (i < 0 || i >= n || j >= m || j < 0) {
             return 0;
         }
@@ -30,7 +30,7 @@ public class Solution {
         int n = grid.length;
         int m = grid[0].length;
         long ans = n * m;
-        int dp[][] = new int[n][m];
+        int[][] dp = new int[n][m];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 ans += help(grid, i, j, n, m, dp) % 1000000007;
