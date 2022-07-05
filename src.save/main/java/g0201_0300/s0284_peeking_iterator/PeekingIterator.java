@@ -1,8 +1,11 @@
 package g0201_0300.s0284_peeking_iterator;
 
-// #Medium #Array #Design #Iterator #2022_03_14_Time_5_ms_(78.72%)_Space_43.3_MB_(11.23%)
+// #Medium #Array #Design #Iterator #2022_07_06_Time_6_ms_(72.91%)_Space_43.3_MB_(14.85%)
 
 import java.util.Iterator;
+
+// Java Iterator interface reference:
+// https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html
 
 public class PeekingIterator implements Iterator<Integer> {
     private Iterator<Integer> it;
