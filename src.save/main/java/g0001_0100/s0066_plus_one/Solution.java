@@ -1,6 +1,6 @@
 package g0001_0100.s0066_plus_one;
 
-// #Easy #Top_Interview_Questions #Array #Math #Programming_Skills_II_Day_3
+// #Easy #Top_Interview_Questions #Array #Math #Programming_Skills_II_Day_3 #Udemy_Arrays
 // #2022_06_18_Time_0_ms_(100.00%)_Space_40.7_MB_(89.07%)
 
 public class Solution {

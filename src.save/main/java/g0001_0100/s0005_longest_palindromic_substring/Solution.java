@@ -2,7 +2,8 @@ package g0001_0100.s0005_longest_palindromic_substring;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming
 // #Data_Structure_II_Day_9_String #Algorithm_II_Day_14_Dynamic_Programming
-// #Dynamic_Programming_I_Day_17 #2022_06_13_Time_10_ms_(98.57%)_Space_43.4_MB_(54.20%)
+// #Dynamic_Programming_I_Day_17 #Udemy_Strings
+// #2022_06_13_Time_10_ms_(98.57%)_Space_43.4_MB_(54.20%)
 
 public class Solution {
     public String longestPalindrome(String s) {

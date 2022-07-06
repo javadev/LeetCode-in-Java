@@ -1,6 +1,6 @@
 package g0001_0100.s0050_powx_n;
 
-// #Medium #Top_Interview_Questions #Math #Recursion
+// #Medium #Top_Interview_Questions #Math #Recursion #Udemy_Integers
 // #2022_06_16_Time_1_ms_(82.34%)_Space_43.6_MB_(23.70%)
 
 public class Solution {

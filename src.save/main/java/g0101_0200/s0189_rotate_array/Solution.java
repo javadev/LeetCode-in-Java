@@ -1,7 +1,8 @@
 package g0101_0200.s0189_rotate_array;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Math #Two_Pointers
-// #Algorithm_I_Day_2_Two_Pointers #2022_06_27_Time_0_ms_(100.00%)_Space_58_MB_(96.22%)
+// #Algorithm_I_Day_2_Two_Pointers #Udemy_Arrays
+// #2022_06_27_Time_0_ms_(100.00%)_Space_58_MB_(96.22%)
 
 public class Solution {
     private void reverse(int[] nums, int l, int r) {

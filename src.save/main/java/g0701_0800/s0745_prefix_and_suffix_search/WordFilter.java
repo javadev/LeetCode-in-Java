@@ -1,6 +1,7 @@
 package g0701_0800.s0745_prefix_and_suffix_search;
 
-// #Hard #String #Design #Trie #2022_03_25_Time_366_ms_(76.15%)_Space_262.7_MB_(32.80%)
+// #Hard #String #Design #Trie #Udemy_Trie_and_Heap
+// #2022_03_25_Time_366_ms_(76.15%)_Space_262.7_MB_(32.80%)
 
 public class WordFilter {
     private static class TrieNode {
