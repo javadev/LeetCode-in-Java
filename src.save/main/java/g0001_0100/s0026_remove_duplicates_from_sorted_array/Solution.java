@@ -1,6 +1,6 @@
 package g0001_0100.s0026_remove_duplicates_from_sorted_array;
 
-// #Easy #Top_Interview_Questions #Array #Two_Pointers
+// #Easy #Top_Interview_Questions #Array #Two_Pointers #Udemy_Two_Pointers
 // #2022_06_14_Time_1_ms_(99.47%)_Space_48.3_MB_(13.92%)
 
 public class Solution {

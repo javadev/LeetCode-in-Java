@@ -1,6 +1,6 @@
 package g0401_0500.s0442_find_all_duplicates_in_an_array;
 
-// #Medium #Array #Hash_Table #2022_03_18_Time_5_ms_(94.88%)_Space_70.2_MB_(16.76%)
+// #Medium #Array #Hash_Table #Udemy_Arrays #2022_03_18_Time_5_ms_(94.88%)_Space_70.2_MB_(16.76%)
 
 import java.util.ArrayList;
 import java.util.List;

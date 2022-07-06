@@ -1,6 +1,6 @@
 package g1501_1600.s1572_matrix_diagonal_sum;
 
-// #Easy #Array #Matrix #Programming_Skills_I_Day_7_Array
+// #Easy #Array #Matrix #Programming_Skills_I_Day_7_Array #Udemy_2D_Arrays/Matrix
 // #2022_04_11_Time_3_ms_(10.25%)_Space_48.3_MB_(26.47%)
 
 import java.util.HashSet;

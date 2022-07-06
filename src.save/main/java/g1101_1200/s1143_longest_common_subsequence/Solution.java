@@ -2,7 +2,7 @@ package g1101_1200.s1143_longest_common_subsequence;
 
 // #Medium #Top_100_Liked_Questions #String #Dynamic_Programming
 // #Algorithm_II_Day_17_Dynamic_Programming #Dynamic_Programming_I_Day_19
-// #2022_03_05_Time_9_ms_(93.92%)_Space_45.8_MB_(56.55%)
+// #Udemy_Dynamic_Programming #2022_03_05_Time_9_ms_(93.92%)_Space_45.8_MB_(56.55%)
 
 public class Solution {
     public int longestCommonSubsequence(String text1, String text2) {
