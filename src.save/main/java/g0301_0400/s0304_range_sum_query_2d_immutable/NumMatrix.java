@@ -2,7 +2,7 @@ package g0301_0400.s0304_range_sum_query_2d_immutable;
 
 // #Medium #Array #Matrix #Design #Prefix_Sum #Dynamic_Programming_I_Day_14
 // #Programming_Skills_II_Day_13 #Udemy_2D_Arrays/Matrix
-// #2022_03_14_Time_103_ms_(98.60%)_Space_64.7_MB_(96.34%)
+// #2022_07_07_Time_153_ms_(87.51%)_Space_133.5_MB_(19.29%)
 
 public class NumMatrix {
     private int[][] tot;
@@ -27,3 +27,9 @@ public class NumMatrix {
                 + tot[row1][col1];
     }
 }
+
+/*
+ * Your NumMatrix object will be instantiated and called as such:
+ * NumMatrix obj = new NumMatrix(matrix);
+ * int param_1 = obj.sumRegion(row1,col1,row2,col2);
+ */
