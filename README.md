@@ -7,7 +7,7 @@
 [![javadoc](https://javadoc.io/badge2/com.github.javadev/leetcode-in-java/javadoc.svg)](https://javadoc.io/doc/com.github.javadev/leetcode-in-java)
 [![](https://img.shields.io/github/stars/javadev/LeetCode-in-Java?style=flat-square)](https://github.com/javadev/LeetCode-in-Java)
 [![](https://img.shields.io/github/forks/javadev/LeetCode-in-Java?style=flat-square)](https://github.com/javadev/LeetCode-in-Java/fork)
-[![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=javadev.leetcode-in-java&label=visitors&color=1D70B8&style=flat-square)](https://github.com/javadev/leetcode-in-java)
+[![](https://shields-io-visitor-counter.herokuapp.com/badge?page=javadev.leetcode-in-java&label=visitors&color=1D70B8&style=flat-square)](https://github.com/javadev/leetcode-in-java)
 
 Java Solution for LeetCode algorithm problems, continually updating.
 
@@ -791,7 +791,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1314 |[Matrix Block Sum](src.save/main/java/g1301_1400/s1314_matrix_block_sum/Solution.java)| Medium | Array, Matrix, Prefix_Sum | 5 | 67.46
-| 0304 |[Range Sum Query 2D - Immutable](src.save/main/java/g0301_0400/s0304_range_sum_query_2d_immutable/NumMatrix.java)| Medium | Array, Matrix, Design, Prefix_Sum | 103 | 98.60
+| 0304 |[Range Sum Query 2D - Immutable](src.save/main/java/g0301_0400/s0304_range_sum_query_2d_immutable/NumMatrix.java)| Medium | Array, Matrix, Design, Prefix_Sum | 153 | 87.51
 
 #### Day 15
 
@@ -938,7 +938,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1603 |[Design Parking System](src.save/main/java/g1601_1700/s1603_design_parking_system/ParkingSystem.java)| Easy | Design, Simulation, Counting | 8 | 76.16
-| 0303 |[Range Sum Query - Immutable](src.save/main/java/g0301_0400/s0303_range_sum_query_immutable/NumArray.java)| Easy | Array, Design, Prefix_Sum | 6 | 100.00
+| 0303 |[Range Sum Query - Immutable](src.save/main/java/g0301_0400/s0303_range_sum_query_immutable/NumArray.java)| Easy | Array, Design, Prefix_Sum | 7 | 100.00
 
 ### Programming Skills II
 
@@ -1030,7 +1030,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0304 |[Range Sum Query 2D - Immutable](src.save/main/java/g0301_0400/s0304_range_sum_query_2d_immutable/NumMatrix.java)| Medium | Array, Matrix, Design, Prefix_Sum | 103 | 98.60
+| 0304 |[Range Sum Query 2D - Immutable](src.save/main/java/g0301_0400/s0304_range_sum_query_2d_immutable/NumMatrix.java)| Medium | Array, Matrix, Design, Prefix_Sum | 153 | 87.51
 | 0910 |[Smallest Range II](src.save/main/java/g0901_1000/s0910_smallest_range_ii/Solution.java)| Medium | Array, Math, Sorting, Greedy | 10 | 73.16
 
 #### Day 14
@@ -1620,7 +1620,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0304 |[Range Sum Query 2D - Immutable](src.save/main/java/g0301_0400/s0304_range_sum_query_2d_immutable/NumMatrix.java)| Medium | Array, Matrix, Design, Prefix_Sum | 103 | 98.60
+| 0304 |[Range Sum Query 2D - Immutable](src.save/main/java/g0301_0400/s0304_range_sum_query_2d_immutable/NumMatrix.java)| Medium | Array, Matrix, Design, Prefix_Sum | 153 | 87.51
 | 0074 |[Search a 2D Matrix](src.save/main/java/g0001_0100/s0074_search_a_2d_matrix/Solution.java)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Matrix | 0 | 100.00
 | 0054 |[Spiral Matrix](src.save/main/java/g0001_0100/s0054_spiral_matrix/Solution.java)| Medium | Top_Interview_Questions, Array, Matrix, Simulation | 0 | 100.00
 | 0048 |[Rotate Image](src.save/main/java/g0001_0100/s0048_rotate_image/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Math, Matrix | 0 | 100.00
@@ -3426,13 +3426,13 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0315 |[Count of Smaller Numbers After Self](src.save/main/java/g0301_0400/s0315_count_of_smaller_numbers_after_self/Solution.java)| Hard | Top_Interview_Questions, Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 34 | 96.38
 | 0313 |[Super Ugly Number](src.save/main/java/g0301_0400/s0313_super_ugly_number/Solution.java)| Medium | Array, Dynamic_Programming, Math | 280 | 86.61
 | 0312 |[Burst Balloons](src.save/main/java/g0301_0400/s0312_burst_balloons/Solution.java)| Hard | Array, Dynamic_Programming | 53 | 86.06
-| 0310 |[Minimum Height Trees](src.save/main/java/g0301_0400/s0310_minimum_height_trees/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 22 | 94.43
+| 0310 |[Minimum Height Trees](src.save/main/java/g0301_0400/s0310_minimum_height_trees/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 25 | 93.99
 | 0309 |[Best Time to Buy and Sell Stock with Cooldown](src.save/main/java/g0301_0400/s0309_best_time_to_buy_and_sell_stock_with_cooldown/Solution.java)| Medium | Array, Dynamic_Programming, Dynamic_Programming_I_Day_8 | 0 | 100.00
-| 0307 |[Range Sum Query - Mutable](src.save/main/java/g0301_0400/s0307_range_sum_query_mutable/NumArray.java)| Medium | Array, Design, Segment_Tree, Binary_Indexed_Tree | 61 | 98.40
-| 0306 |[Additive Number](src.save/main/java/g0301_0400/s0306_additive_number/Solution.java)| Medium | String, Backtracking | 1 | 87.31
-| 0304 |[Range Sum Query 2D - Immutable](src.save/main/java/g0301_0400/s0304_range_sum_query_2d_immutable/NumMatrix.java)| Medium | Array, Matrix, Design, Prefix_Sum, Dynamic_Programming_I_Day_14, Programming_Skills_II_Day_13, Udemy_2D_Arrays/Matrix | 103 | 98.60
-| 0303 |[Range Sum Query - Immutable](src.save/main/java/g0301_0400/s0303_range_sum_query_immutable/NumArray.java)| Easy | Array, Design, Prefix_Sum, Programming_Skills_I_Day_12_Class_and_Object | 6 | 100.00
-| 0301 |[Remove Invalid Parentheses](src.save/main/java/g0301_0400/s0301_remove_invalid_parentheses/Solution.java)| Hard | String, Breadth_First_Search, Backtracking | 4 | 86.17
+| 0307 |[Range Sum Query - Mutable](src.save/main/java/g0301_0400/s0307_range_sum_query_mutable/NumArray.java)| Medium | Array, Design, Segment_Tree, Binary_Indexed_Tree | 99 | 88.96
+| 0306 |[Additive Number](src.save/main/java/g0301_0400/s0306_additive_number/Solution.java)| Medium | String, Backtracking | 2 | 71.98
+| 0304 |[Range Sum Query 2D - Immutable](src.save/main/java/g0301_0400/s0304_range_sum_query_2d_immutable/NumMatrix.java)| Medium | Array, Matrix, Design, Prefix_Sum, Dynamic_Programming_I_Day_14, Programming_Skills_II_Day_13, Udemy_2D_Arrays/Matrix | 153 | 87.51
+| 0303 |[Range Sum Query - Immutable](src.save/main/java/g0301_0400/s0303_range_sum_query_immutable/NumArray.java)| Easy | Array, Design, Prefix_Sum, Programming_Skills_I_Day_12_Class_and_Object | 7 | 100.00
+| 0301 |[Remove Invalid Parentheses](src.save/main/java/g0301_0400/s0301_remove_invalid_parentheses/Solution.java)| Hard | String, Breadth_First_Search, Backtracking | 3 | 91.59
 | 0300 |[Longest Increasing Subsequence](src.save/main/java/g0201_0300/s0300_longest_increasing_subsequence/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Binary_Search, Algorithm_II_Day_16_Dynamic_Programming, Binary_Search_II_Day_3, Dynamic_Programming_I_Day_18, Udemy_Dynamic_Programming | 3 | 98.63
 | 0299 |[Bulls and Cows](src.save/main/java/g0201_0300/s0299_bulls_and_cows/Solution.java)| Medium | String, Hash_Table, Counting, Level_1_Day_13_Hashmap | 6 | 86.69
 | 0297 |[Serialize and Deserialize Binary Tree](src.save/main/java/g0201_0300/s0297_serialize_and_deserialize_binary_tree/Codec.java)| Hard | Top_Interview_Questions, String, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Design, Data_Structure_II_Day_18_Tree, Udemy_Tree_Stack_Queue | 7 | 98.13
