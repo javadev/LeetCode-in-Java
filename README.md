@@ -3421,11 +3421,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0322 |[Coin Change](src.save/main/java/g0301_0400/s0322_coin_change/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Breadth_First_Search, Algorithm_II_Day_18_Dynamic_Programming, Dynamic_Programming_I_Day_20, Level_2_Day_12_Dynamic_Programming | 22 | 72.14
 | 0321 |[Create Maximum Number](src.save/main/java/g0301_0400/s0321_create_maximum_number/Solution.java)| Hard | Greedy, Stack, Monotonic_Stack | 9 | 93.46
 | 0319 |[Bulb Switcher](src.save/main/java/g0301_0400/s0319_bulb_switcher/Solution.java)| Medium | Math, Brainteaser | 0 | 100.00
-| 0318 |[Maximum Product of Word Lengths](src.save/main/java/g0301_0400/s0318_maximum_product_of_word_lengths/Solution.java)| Medium | Array, String, Bit_Manipulation | 10 | 81.97
-| 0316 |[Remove Duplicate Letters](src.save/main/java/g0301_0400/s0316_remove_duplicate_letters/Solution.java)| Medium | String, Greedy, Stack, Monotonic_Stack | 2 | 98.39
-| 0315 |[Count of Smaller Numbers After Self](src.save/main/java/g0301_0400/s0315_count_of_smaller_numbers_after_self/Solution.java)| Hard | Top_Interview_Questions, Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 34 | 96.38
-| 0313 |[Super Ugly Number](src.save/main/java/g0301_0400/s0313_super_ugly_number/Solution.java)| Medium | Array, Dynamic_Programming, Math | 280 | 86.61
-| 0312 |[Burst Balloons](src.save/main/java/g0301_0400/s0312_burst_balloons/Solution.java)| Hard | Array, Dynamic_Programming | 53 | 86.06
+| 0318 |[Maximum Product of Word Lengths](src.save/main/java/g0301_0400/s0318_maximum_product_of_word_lengths/Solution.java)| Medium | Array, String, Bit_Manipulation | 12 | 74.92
+| 0316 |[Remove Duplicate Letters](src.save/main/java/g0301_0400/s0316_remove_duplicate_letters/Solution.java)| Medium | String, Greedy, Stack, Monotonic_Stack | 3 | 92.27
+| 0315 |[Count of Smaller Numbers After Self](src.save/main/java/g0301_0400/s0315_count_of_smaller_numbers_after_self/Solution.java)| Hard | Top_Interview_Questions, Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 36 | 98.63
+| 0313 |[Super Ugly Number](src.save/main/java/g0301_0400/s0313_super_ugly_number/Solution.java)| Medium | Array, Dynamic_Programming, Math | 19 | 91.86
+| 0312 |[Burst Balloons](src.save/main/java/g0301_0400/s0312_burst_balloons/Solution.java)| Hard | Array, Dynamic_Programming | 50 | 89.02
 | 0310 |[Minimum Height Trees](src.save/main/java/g0301_0400/s0310_minimum_height_trees/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 25 | 93.99
 | 0309 |[Best Time to Buy and Sell Stock with Cooldown](src.save/main/java/g0301_0400/s0309_best_time_to_buy_and_sell_stock_with_cooldown/Solution.java)| Medium | Array, Dynamic_Programming, Dynamic_Programming_I_Day_8 | 0 | 100.00
 | 0307 |[Range Sum Query - Mutable](src.save/main/java/g0301_0400/s0307_range_sum_query_mutable/NumArray.java)| Medium | Array, Design, Segment_Tree, Binary_Indexed_Tree | 99 | 88.96
