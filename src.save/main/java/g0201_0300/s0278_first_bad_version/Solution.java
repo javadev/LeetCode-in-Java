@@ -4,7 +4,7 @@ package g0201_0300.s0278_first_bad_version;
 // #Level_1_Day_7_Binary_Search #2022_07_06_Time_15_ms_(87.89%)_Space_39.3_MB_(85.40%)
 
 /* The isBadVersion API is defined in the parent class VersionControl.
-      boolean isBadVersion(int version); */
+boolean isBadVersion(int version); */
 
 public class Solution extends VersionControl {
     public int firstBadVersion(int n) {
