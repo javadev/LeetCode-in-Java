@@ -441,7 +441,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0072 |[Edit Distance](src.save/main/java/g0001_0100/s0072_edit_distance/Solution.java)| Hard | Top_100_Liked_Questions, String, Dynamic_Programming | 6 | 90.49
-| 0322 |[Coin Change](src.save/main/java/g0301_0400/s0322_coin_change/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Breadth_First_Search | 22 | 72.14
+| 0322 |[Coin Change](src.save/main/java/g0301_0400/s0322_coin_change/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Breadth_First_Search | 17 | 91.77
 | 0343 |[Integer Break](src.save/main/java/g0301_0400/s0343_integer_break/Solution.java)| Medium | Dynamic_Programming, Math | 0 | 100.00
 
 #### Day 19 Bit Manipulation
@@ -832,7 +832,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0322 |[Coin Change](src.save/main/java/g0301_0400/s0322_coin_change/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Breadth_First_Search | 22 | 72.14
+| 0322 |[Coin Change](src.save/main/java/g0301_0400/s0322_coin_change/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Breadth_First_Search | 17 | 91.77
 | 0518 |[Coin Change 2](src.save/main/java/g0501_0600/s0518_coin_change_2/Solution.java)| Medium | Array, Dynamic_Programming | 3 | 91.32
 
 #### Day 21
@@ -1464,7 +1464,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0198 |[House Robber](src.save/main/java/g0101_0200/s0198_house_robber/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 0 | 100.00
-| 0322 |[Coin Change](src.save/main/java/g0301_0400/s0322_coin_change/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Breadth_First_Search | 22 | 72.14
+| 0322 |[Coin Change](src.save/main/java/g0301_0400/s0322_coin_change/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Breadth_First_Search | 17 | 91.77
 
 #### Day 13 Dynamic Programming
 
@@ -3411,14 +3411,14 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0334 |[Increasing Triplet Subsequence](src.save/main/java/g0301_0400/s0334_increasing_triplet_subsequence/Solution.java)| Medium | Top_Interview_Questions, Array, Greedy, Data_Structure_II_Day_5_Array | 3 | 61.85
 | 0332 |[Reconstruct Itinerary](src.save/main/java/g0301_0400/s0332_reconstruct_itinerary/Solution.java)| Hard | Depth_First_Search, Graph, Eulerian_Circuit | 11 | 47.68
 | 0331 |[Verify Preorder Serialization of a Binary Tree](src.save/main/java/g0301_0400/s0331_verify_preorder_serialization_of_a_binary_tree/Solution.java)| Medium | String, Tree, Binary_Tree, Stack | 3 | 94.01
-| 0330 |[Patching Array](src.save/main/java/g0301_0400/s0330_patching_array/Solution.java)| Hard | Array, Greedy | 0 | 100.00
-| 0329 |[Longest Increasing Path in a Matrix](src.save/main/java/g0301_0400/s0329_longest_increasing_path_in_a_matrix/Solution.java)| Hard | Top_Interview_Questions, Dynamic_Programming, Depth_First_Search, Breadth_First_Search, Graph, Memoization, Topological_Sort | 8 | 91.02
+| 0330 |[Patching Array](src.save/main/java/g0301_0400/s0330_patching_array/Solution.java)| Hard | Array, Greedy | 1 | 60.00
+| 0329 |[Longest Increasing Path in a Matrix](src.save/main/java/g0301_0400/s0329_longest_increasing_path_in_a_matrix/Solution.java)| Hard | Top_Interview_Questions, Dynamic_Programming, Depth_First_Search, Breadth_First_Search, Graph, Memoization, Topological_Sort | 8 | 97.60
 | 0328 |[Odd Even Linked List](src.save/main/java/g0301_0400/s0328_odd_even_linked_list/Solution.java)| Medium | Top_Interview_Questions, Linked_List, Level_2_Day_4_Linked_List, Udemy_Linked_List | 0 | 100.00
-| 0327 |[Count of Range Sum](src.save/main/java/g0301_0400/s0327_count_of_range_sum/Solution.java)| Hard | Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 64 | 87.41
-| 0326 |[Power of Three](src.save/main/java/g0301_0400/s0326_power_of_three/Solution.java)| Easy | Top_Interview_Questions, Math, Recursion | 18 | 79.91
-| 0324 |[Wiggle Sort II](src.save/main/java/g0301_0400/s0324_wiggle_sort_ii/Solution.java)| Medium | Top_Interview_Questions, Array, Sorting, Divide_and_Conquer, Quickselect | 6 | 69.23
-| 0322 |[Coin Change](src.save/main/java/g0301_0400/s0322_coin_change/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Breadth_First_Search, Algorithm_II_Day_18_Dynamic_Programming, Dynamic_Programming_I_Day_20, Level_2_Day_12_Dynamic_Programming | 22 | 72.14
-| 0321 |[Create Maximum Number](src.save/main/java/g0301_0400/s0321_create_maximum_number/Solution.java)| Hard | Greedy, Stack, Monotonic_Stack | 9 | 93.46
+| 0327 |[Count of Range Sum](src.save/main/java/g0301_0400/s0327_count_of_range_sum/Solution.java)| Hard | Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 111 | 66.02
+| 0326 |[Power of Three](src.save/main/java/g0301_0400/s0326_power_of_three/Solution.java)| Easy | Top_Interview_Questions, Math, Recursion | 18 | 85.35
+| 0324 |[Wiggle Sort II](src.save/main/java/g0301_0400/s0324_wiggle_sort_ii/Solution.java)| Medium | Top_Interview_Questions, Array, Sorting, Divide_and_Conquer, Quickselect | 4 | 93.22
+| 0322 |[Coin Change](src.save/main/java/g0301_0400/s0322_coin_change/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Breadth_First_Search, Algorithm_II_Day_18_Dynamic_Programming, Dynamic_Programming_I_Day_20, Level_2_Day_12_Dynamic_Programming | 17 | 91.77
+| 0321 |[Create Maximum Number](src.save/main/java/g0301_0400/s0321_create_maximum_number/Solution.java)| Hard | Greedy, Stack, Monotonic_Stack | 11 | 93.20
 | 0319 |[Bulb Switcher](src.save/main/java/g0301_0400/s0319_bulb_switcher/Solution.java)| Medium | Math, Brainteaser | 0 | 100.00
 | 0318 |[Maximum Product of Word Lengths](src.save/main/java/g0301_0400/s0318_maximum_product_of_word_lengths/Solution.java)| Medium | Array, String, Bit_Manipulation | 12 | 74.92
 | 0316 |[Remove Duplicate Letters](src.save/main/java/g0301_0400/s0316_remove_duplicate_letters/Solution.java)| Medium | String, Greedy, Stack, Monotonic_Stack | 3 | 92.27
