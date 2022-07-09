@@ -21,6 +21,7 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    maxParallelForks = Runtime.runtime.availableProcessors()
 }
 
 group = 'com.github.javadev'
@@ -65,8 +66,4 @@ jacocoTestReport {
         xml.required = true
         html.required = false
     }
-}
-
-test {
-    maxParallelForks = Runtime.runtime.availableProcessors()
 }
