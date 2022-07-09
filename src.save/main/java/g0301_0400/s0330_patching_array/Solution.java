@@ -1,6 +1,6 @@
 package g0301_0400.s0330_patching_array;
 
-// #Hard #Array #Greedy #2022_03_15_Time_0_ms_(100.00%)_Space_44.1_MB_(38.52%)
+// #Hard #Array #Greedy #2022_07_09_Time_1_ms_(60.00%)_Space_44.3_MB_(27.06%)
 
 public class Solution {
     public int minPatches(int[] nums, int n) {
