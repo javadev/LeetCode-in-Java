@@ -6,7 +6,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import com_github_leetcode.TreeNode;
 import java.util.Arrays;
 import java.util.Collections;
-
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
@@ -20,7 +19,9 @@ class SolutionTest {
 
     @Test
     void evaluateTree2() {
-        assertThat(new Solution().evaluateTree(TreeNode.create(Collections.singletonList(0))), equalTo(false));
+        assertThat(
+                new Solution().evaluateTree(TreeNode.create(Collections.singletonList(0))),
+                equalTo(false));
     }
 
     @Test
