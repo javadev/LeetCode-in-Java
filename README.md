@@ -86,7 +86,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0334 |[Increasing Triplet Subsequence](src.save/main/java/g0301_0400/s0334_increasing_triplet_subsequence/Solution.java)| Medium | Top_Interview_Questions, Array, Greedy | 3 | 61.85
+| 0334 |[Increasing Triplet Subsequence](src.save/main/java/g0301_0400/s0334_increasing_triplet_subsequence/Solution.java)| Medium | Top_Interview_Questions, Array, Greedy | 2 | 99.33
 | 0238 |[Product of Array Except Self](src.save/main/java/g0201_0300/s0238_product_of_array_except_self/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Prefix_Sum | 1 | 100.00
 | 0560 |[Subarray Sum Equals K](src.save/main/java/g0501_0600/s0560_subarray_sum_equals_k/Solution.java)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum | 18 | 89.51
 
@@ -1065,7 +1065,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0155 |[Min Stack](src.save/main/java/g0101_0200/s0155_min_stack/MinStack.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Stack, Design | 3 | 100.00
-| 0341 |[Flatten Nested List Iterator](src.save/main/java/g0301_0400/s0341_flatten_nested_list_iterator/NestedIterator.java)| Medium | Top_Interview_Questions, Depth_First_Search, Tree, Stack, Design, Queue, Iterator | 3 | 86.51
+| 0341 |[Flatten Nested List Iterator](src.save/main/java/g0301_0400/s0341_flatten_nested_list_iterator/NestedIterator.java)| Medium | Top_Interview_Questions, Depth_First_Search, Tree, Stack, Design, Queue, Iterator | 2 | 99.95
 
 #### Day 19
 
@@ -1670,7 +1670,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0297 |[Serialize and Deserialize Binary Tree](src.save/main/java/g0201_0300/s0297_serialize_and_deserialize_binary_tree/Codec.java)| Hard | Top_Interview_Questions, String, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Design | 7 | 98.13
 | 0124 |[Binary Tree Maximum Path Sum](src.save/main/java/g0101_0200/s0124_binary_tree_maximum_path_sum/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree | 1 | 99.46
 | 0098 |[Validate Binary Search Tree](src.save/main/java/g0001_0100/s0098_validate_binary_search_tree/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 0 | 100.00
-| 0337 |[House Robber III](src.save/main/java/g0301_0400/s0337_house_robber_iii/Solution.java)| Medium | Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree | 1 | 87.96
+| 0337 |[House Robber III](src.save/main/java/g0301_0400/s0337_house_robber_iii/Solution.java)| Medium | Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree | 1 | 91.77
 | 0236 |[Lowest Common Ancestor of a Binary Tree](src.save/main/java/g0201_0300/s0236_lowest_common_ancestor_of_a_binary_tree/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree | 10 | 56.51
 | 0968 |[Binary Tree Cameras](src.save/main/java/g0901_1000/s0968_binary_tree_cameras/Solution.java)| Hard | Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree | 0 | 100.00
 
@@ -1729,7 +1729,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0190 |[Reverse Bits](src.save/main/java/g0101_0200/s0190_reverse_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation, Divide_and_Conquer | 1 | 98.66
 | 0461 |[Hamming Distance](src.save/main/java/g0401_0500/s0461_hamming_distance/Solution.java)| Easy | Bit_Manipulation | 1 | 39.19
 | 1009 |[Complement of Base 10 Integer](src.save/main/java/g1001_1100/s1009_complement_of_base_10_integer/Solution.java)| Easy | Bit_Manipulation | 1 | 41.56
-| 0338 |[Counting Bits](src.save/main/java/g0301_0400/s0338_counting_bits/Solution.java)| Easy | Top_100_Liked_Questions, Dynamic_Programming, Bit_Manipulation | 1 | 99.97
+| 0338 |[Counting Bits](src.save/main/java/g0301_0400/s0338_counting_bits/Solution.java)| Easy | Top_100_Liked_Questions, Dynamic_Programming, Bit_Manipulation | 2 | 86.73
 | 0371 |[Sum of Two Integers](src.save/main/java/g0301_0400/s0371_sum_of_two_integers/Solution.java)| Medium | Top_Interview_Questions, Math, Bit_Manipulation | 0 | 100.00
 | 0029 |[Divide Two Integers](src.save/main/java/g0001_0100/s0029_divide_two_integers/Solution.java)| Medium | Top_Interview_Questions, Math, Bit_Manipulation | 1 | 99.96
 
@@ -3402,15 +3402,15 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0345 |[Reverse Vowels of a String](src.save/main/java/g0301_0400/s0345_reverse_vowels_of_a_string/Solution.java)| Easy | String, Two_Pointers | 4 | 86.90
 | 0344 |[Reverse String](src.save/main/java/g0301_0400/s0344_reverse_string/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers, Recursion, Algorithm_I_Day_4_Two_Pointers, Udemy_Strings | 1 | 87.94
 | 0343 |[Integer Break](src.save/main/java/g0301_0400/s0343_integer_break/Solution.java)| Medium | Dynamic_Programming, Math, Algorithm_II_Day_18_Dynamic_Programming, Dynamic_Programming_I_Day_21 | 0 | 100.00
-| 0342 |[Power of Four](src.save/main/java/g0301_0400/s0342_power_of_four/Solution.java)| Easy | Math, Bit_Manipulation, Recursion | 1 | 91.73
-| 0341 |[Flatten Nested List Iterator](src.save/main/java/g0301_0400/s0341_flatten_nested_list_iterator/NestedIterator.java)| Medium | Top_Interview_Questions, Depth_First_Search, Tree, Stack, Design, Queue, Iterator, Programming_Skills_II_Day_18 | 3 | 86.51
-| 0338 |[Counting Bits](src.save/main/java/g0301_0400/s0338_counting_bits/Solution.java)| Easy | Top_100_Liked_Questions, Dynamic_Programming, Bit_Manipulation, Udemy_Bit_Manipulation | 1 | 99.97
-| 0337 |[House Robber III](src.save/main/java/g0301_0400/s0337_house_robber_iii/Solution.java)| Medium | Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree, Udemy_Tree_Stack_Queue | 1 | 87.96
-| 0336 |[Palindrome Pairs](src.save/main/java/g0301_0400/s0336_palindrome_pairs/Solution.java)| Hard | Array, String, Hash_Table, Trie | 1219 | 54.97
-| 0335 |[Self Crossing](src.save/main/java/g0301_0400/s0335_self_crossing/Solution.java)| Hard | Array, Math, Geometry | 6 | 44.12
-| 0334 |[Increasing Triplet Subsequence](src.save/main/java/g0301_0400/s0334_increasing_triplet_subsequence/Solution.java)| Medium | Top_Interview_Questions, Array, Greedy, Data_Structure_II_Day_5_Array | 3 | 61.85
-| 0332 |[Reconstruct Itinerary](src.save/main/java/g0301_0400/s0332_reconstruct_itinerary/Solution.java)| Hard | Depth_First_Search, Graph, Eulerian_Circuit | 11 | 47.68
-| 0331 |[Verify Preorder Serialization of a Binary Tree](src.save/main/java/g0301_0400/s0331_verify_preorder_serialization_of_a_binary_tree/Solution.java)| Medium | String, Tree, Binary_Tree, Stack | 3 | 94.01
+| 0342 |[Power of Four](src.save/main/java/g0301_0400/s0342_power_of_four/Solution.java)| Easy | Math, Bit_Manipulation, Recursion | 1 | 100.00
+| 0341 |[Flatten Nested List Iterator](src.save/main/java/g0301_0400/s0341_flatten_nested_list_iterator/NestedIterator.java)| Medium | Top_Interview_Questions, Depth_First_Search, Tree, Stack, Design, Queue, Iterator, Programming_Skills_II_Day_18 | 2 | 99.95
+| 0338 |[Counting Bits](src.save/main/java/g0301_0400/s0338_counting_bits/Solution.java)| Easy | Top_100_Liked_Questions, Dynamic_Programming, Bit_Manipulation, Udemy_Bit_Manipulation | 2 | 86.73
+| 0337 |[House Robber III](src.save/main/java/g0301_0400/s0337_house_robber_iii/Solution.java)| Medium | Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree, Udemy_Tree_Stack_Queue | 1 | 91.77
+| 0336 |[Palindrome Pairs](src.save/main/java/g0301_0400/s0336_palindrome_pairs/Solution.java)| Hard | Array, String, Hash_Table, Trie | 1165 | 57.51
+| 0335 |[Self Crossing](src.save/main/java/g0301_0400/s0335_self_crossing/Solution.java)| Hard | Array, Math, Geometry | 5 | 79.38
+| 0334 |[Increasing Triplet Subsequence](src.save/main/java/g0301_0400/s0334_increasing_triplet_subsequence/Solution.java)| Medium | Top_Interview_Questions, Array, Greedy, Data_Structure_II_Day_5_Array | 2 | 99.33
+| 0332 |[Reconstruct Itinerary](src.save/main/java/g0301_0400/s0332_reconstruct_itinerary/Solution.java)| Hard | Depth_First_Search, Graph, Eulerian_Circuit | 4 | 100.00
+| 0331 |[Verify Preorder Serialization of a Binary Tree](src.save/main/java/g0301_0400/s0331_verify_preorder_serialization_of_a_binary_tree/Solution.java)| Medium | String, Tree, Binary_Tree, Stack | 2 | 99.12
 | 0330 |[Patching Array](src.save/main/java/g0301_0400/s0330_patching_array/Solution.java)| Hard | Array, Greedy | 1 | 60.00
 | 0329 |[Longest Increasing Path in a Matrix](src.save/main/java/g0301_0400/s0329_longest_increasing_path_in_a_matrix/Solution.java)| Hard | Top_Interview_Questions, Dynamic_Programming, Depth_First_Search, Breadth_First_Search, Graph, Memoization, Topological_Sort | 8 | 97.60
 | 0328 |[Odd Even Linked List](src.save/main/java/g0301_0400/s0328_odd_even_linked_list/Solution.java)| Medium | Top_Interview_Questions, Linked_List, Level_2_Day_4_Linked_List, Udemy_Linked_List | 0 | 100.00

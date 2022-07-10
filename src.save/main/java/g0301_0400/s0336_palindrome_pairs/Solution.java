@@ -1,6 +1,6 @@
 package g0301_0400.s0336_palindrome_pairs;
 
-// #Hard #Array #String #Hash_Table #Trie #2022_03_15_Time_1219_ms_(54.97%)_Space_248.7_MB_(55.27%)
+// #Hard #Array #String #Hash_Table #Trie #2022_07_10_Time_1165_ms_(57.51%)_Space_270.4_MB_(47.12%)
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -53,13 +53,11 @@ public class Solution {
                     && isPalindrome(words[i], j, words[i].length() - 1)) {
                 res.add(Arrays.asList(i, root.index));
             }
-
             root = root.next[words[i].charAt(j) - 'a'];
             if (root == null) {
                 return;
             }
         }
-
         for (int j : root.list) {
             if (i == j) {
                 continue;
