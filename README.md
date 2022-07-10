@@ -2776,7 +2776,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 1115 |[Print FooBar Alternately](src.save/main/java/g1101_1200/s1115_print_foobar_alternately/FooBar.java)| Medium | Concurrency | 16 | 90.05
 | 1114 |[Print in Order](src.save/main/java/g1101_1200/s1114_print_in_order/Foo.java)| Easy | Concurrency | 16 | 77.21
 | 1111 |[Maximum Nesting Depth of Two Valid Parentheses Strings](src.save/main/java/g1101_1200/s1111_maximum_nesting_depth_of_two_valid_parentheses_strings/Solution.java)| Medium | String, Stack | 1 | 99.73
-| 1110 |[Delete Nodes And Return Forest](src.save/main/java/g1101_1200/s1110_delete_nodes_and_return_forest/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree | 5 | 15.90
+| 1110 |[Delete Nodes And Return Forest](src.save/main/java/g1101_1200/s1110_delete_nodes_and_return_forest/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree | 2 | 87.37
 | 1109 |[Corporate Flight Bookings](src.save/main/java/g1101_1200/s1109_corporate_flight_bookings/Solution.java)| Medium | Array, Prefix_Sum | 3 | 87.75
 | 1108 |[Defanging an IP Address](src.save/main/java/g1101_1200/s1108_defanging_an_ip_address/Solution.java)| Easy | String | 0 | 100.00
 | 1106 |[Parsing A Boolean Expression](src.save/main/java/g1101_1200/s1106_parsing_a_boolean_expression/Solution.java)| Hard | String, Stack, Recursion | 3 | 93.78
