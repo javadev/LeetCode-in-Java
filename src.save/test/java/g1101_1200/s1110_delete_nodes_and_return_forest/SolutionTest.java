@@ -16,9 +16,9 @@ class SolutionTest {
                 new Solution().delNodes(root, new int[] {3, 5}).toString(),
                 equalTo(
                         Arrays.asList(
+                                        TreeNode.create(Arrays.asList(1, 2, null, 4)),
                                         TreeNode.create(Collections.singletonList(6)),
-                                        TreeNode.create(Collections.singletonList(7)),
-                                        TreeNode.create(Arrays.asList(1, 2, null, 4)))
+                                        TreeNode.create(Collections.singletonList(7)))
                                 .toString()));
     }
 
