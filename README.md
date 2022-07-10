@@ -1220,7 +1220,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 1965 |[Employees With Missing Information](src.save/main/java/g1901_2000/s1965_employees_with_missing_information/script.sql)| Easy | Database | 617 | 30.40
 | 1795 |[Rearrange Products Table](src.save/main/java/g1701_1800/s1795_rearrange_products_table/script.sql)| Easy | Database | 497 | 64.83
 | 0608 |[Tree Node](src.save/main/java/g0601_0700/s0608_tree_node/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 347 | 95.17
-| 0176 |[Second Highest Salary](src.save/main/java/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database | 405 | 13.88
+| 0176 |[Second Highest Salary](src.save/main/java/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database | 225 | 73.10
 
 #### Day 5 Union
 
@@ -3023,7 +3023,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0831 |[Masking Personal Information](src.save/main/java/g0801_0900/s0831_masking_personal_information/Solution.java)| Medium | String | 1 | 84.30
 | 0830 |[Positions of Large Groups](src.save/main/java/g0801_0900/s0830_positions_of_large_groups/Solution.java)| Easy | String | 2 | 80.94
 | 0829 |[Consecutive Numbers Sum](src.save/main/java/g0801_0900/s0829_consecutive_numbers_sum/Solution.java)| Hard | Math, Enumeration | 3 | 93.37
-| 0828 |[Count Unique Characters of All Substrings of a Given String](src.save/main/java/g0801_0900/s0828_count_unique_characters_of_all_substrings_of_a_given_string/Solution.java)| Hard | String, Hash_Table, Dynamic_Programming | 101 | 18.42
+| 0828 |[Count Unique Characters of All Substrings of a Given String](src.save/main/java/g0801_0900/s0828_count_unique_characters_of_all_substrings_of_a_given_string/Solution.java)| Hard | String, Hash_Table, Dynamic_Programming | 26 | 54.76
 | 0827 |[Making A Large Island](src.save/main/java/g0801_0900/s0827_making_a_large_island/Solution.java)| Hard | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 147 | 74.37
 | 0826 |[Most Profit Assigning Work](src.save/main/java/g0801_0900/s0826_most_profit_assigning_work/Solution.java)| Medium | Array, Sorting, Greedy, Binary_Search, Two_Pointers, Binary_Search_II_Day_11 | 21 | 83.83
 | 0825 |[Friends Of Appropriate Ages](src.save/main/java/g0801_0900/s0825_friends_of_appropriate_ages/Solution.java)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 3 | 87.71
@@ -3520,7 +3520,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0179 |[Largest Number](src.save/main/java/g0101_0200/s0179_largest_number/Solution.java)| Medium | Top_Interview_Questions, String, Sorting, Greedy | 10 | 54.50
 | 0178 |[Rank Scores](src.save/main/java/g0101_0200/s0178_rank_scores/script.sql)| Medium | Database | 290 | 66.73
 | 0177 |[Nth Highest Salary](src.save/main/java/g0101_0200/s0177_nth_highest_salary/script.sql)| Medium | Database | 342 | 71.87
-| 0176 |[Second Highest Salary](src.save/main/java/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database, SQL_I_Day_4_Union_and_Select | 405 | 13.88
+| 0176 |[Second Highest Salary](src.save/main/java/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database, SQL_I_Day_4_Union_and_Select | 225 | 73.10
 | 0175 |[Combine Two Tables](src.save/main/java/g0101_0200/s0175_combine_two_tables/script.sql)| Easy | Database, SQL_I_Day_5_Union | 491 | 32.30
 | 0174 |[Dungeon Game](src.save/main/java/g0101_0200/s0174_dungeon_game/Solution.java)| Hard | Array, Dynamic_Programming, Matrix | 0 | 100.00
 | 0173 |[Binary Search Tree Iterator](src.save/main/java/g0101_0200/s0173_binary_search_tree_iterator/BSTIterator.java)| Medium | Tree, Binary_Tree, Stack, Design, Binary_Search_Tree, Iterator, Data_Structure_II_Day_17_Tree, Programming_Skills_II_Day_16, Level_2_Day_9_Binary_Search_Tree | 18 | 84.18
