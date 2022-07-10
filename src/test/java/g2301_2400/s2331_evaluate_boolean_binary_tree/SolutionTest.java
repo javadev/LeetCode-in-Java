@@ -12,12 +12,12 @@ class SolutionTest {
     void evaluateTree() {
         assertThat(
                 new Solution()
-                        .evaluateTree(TreeNode.crete(Arrays.asList(2, 1, 3, null, null, 0, 1))),
+                        .evaluateTree(TreeNode.create(Arrays.asList(2, 1, 3, null, null, 0, 1))),
                 equalTo(true));
     }
 
     @Test
     void evaluateTree2() {
-        assertThat(new Solution().evaluateTree(TreeNode.crete(Arrays.asList(0))), equalTo(false));
+        assertThat(new Solution().evaluateTree(TreeNode.create(Arrays.asList(0))), equalTo(false));
     }
 }
