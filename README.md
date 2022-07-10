@@ -3425,7 +3425,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0318 |[Maximum Product of Word Lengths](src.save/main/java/g0301_0400/s0318_maximum_product_of_word_lengths/Solution.java)| Medium | Array, String, Bit_Manipulation | 12 | 74.92
 | 0316 |[Remove Duplicate Letters](src.save/main/java/g0301_0400/s0316_remove_duplicate_letters/Solution.java)| Medium | String, Greedy, Stack, Monotonic_Stack | 3 | 92.27
 | 0315 |[Count of Smaller Numbers After Self](src.save/main/java/g0301_0400/s0315_count_of_smaller_numbers_after_self/Solution.java)| Hard | Top_Interview_Questions, Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 36 | 98.63
-| 0313 |[Super Ugly Number](src.save/main/java/g0301_0400/s0313_super_ugly_number/Solution.java)| Medium | Array, Dynamic_Programming, Math | 19 | 91.86
+| 0313 |[Super Ugly Number](src.save/main/java/g0301_0400/s0313_super_ugly_number/Solution.java)| Medium | Array, Dynamic_Programming, Math | 16 | 96.57
 | 0312 |[Burst Balloons](src.save/main/java/g0301_0400/s0312_burst_balloons/Solution.java)| Hard | Array, Dynamic_Programming | 50 | 89.02
 | 0310 |[Minimum Height Trees](src.save/main/java/g0301_0400/s0310_minimum_height_trees/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 25 | 93.99
 | 0309 |[Best Time to Buy and Sell Stock with Cooldown](src.save/main/java/g0301_0400/s0309_best_time_to_buy_and_sell_stock_with_cooldown/Solution.java)| Medium | Array, Dynamic_Programming, Dynamic_Programming_I_Day_8 | 0 | 100.00

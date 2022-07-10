@@ -1,6 +1,6 @@
 package g0301_0400.s0313_super_ugly_number;
 
-// #Medium #Array #Dynamic_Programming #Math #2022_07_08_Time_19_ms_(91.86%)_Space_43.3_MB_(41.31%)
+// #Medium #Array #Dynamic_Programming #Math #2022_07_10_Time_16_ms_(96.57%)_Space_42.3_MB_(64.43%)
 
 public class Solution {
     public int nthSuperUglyNumber(int n, int[] primes) {
@@ -13,13 +13,13 @@ public class Solution {
         n1[0] = 1L;
         for (int i = 1; i < n; i++) {
             long min = Long.MAX_VALUE;
-            for (int j = 0; j < primes1.length; j++) {
-                min = Math.min(min, primes1[j]);
+            for (long l : primes1) {
+                min = Math.min(min, l);
             }
             n1[i] = min;
             for (int j = 0; j < primes1.length; j++) {
                 if (min == primes1[j]) {
-                    primes1[j] *= n1[++index[j]];
+                    primes1[j] = primes[j] * (n1[++index[j]]);
                 }
             }
         }

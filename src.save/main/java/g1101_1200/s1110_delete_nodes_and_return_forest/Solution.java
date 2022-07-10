@@ -5,9 +5,11 @@ package g1101_1200.s1110_delete_nodes_and_return_forest;
 
 import com_github_leetcode.TreeNode;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import java.util.Set;
 
 /*
  * Definition for a binary tree node.
@@ -28,7 +30,7 @@ public class Solution {
     private Set<Integer> toDelete;
     private Queue<TreeNode> nodes = new LinkedList<>();
 
-    public TreeNode deleteAndSplit(TreeNode root) {
+    private TreeNode deleteAndSplit(TreeNode root) {
         if (root == null) {
             return null;
         }
@@ -46,7 +48,7 @@ public class Solution {
         return root;
     }
 
-    private List<TreeNode> delNodes(TreeNode root, int[] localToDelete) {
+    public List<TreeNode> delNodes(TreeNode root, int[] localToDelete) {
         toDelete = new HashSet<>();
         for (int node : localToDelete) {
             toDelete.add(node);
