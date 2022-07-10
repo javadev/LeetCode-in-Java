@@ -6,10 +6,14 @@ import com_github_leetcode.TreeNode;
 
 public class Solution {
     public boolean evaluateTree(TreeNode root) {
-        return root.left == null
-                ? root.val == 1
-                : (root.val == 2
-                        ? evaluateTree(root.left) || evaluateTree(root.right)
-                        : evaluateTree(root.left) && evaluateTree(root.right));
+        if (root.left == null) {
+            return root.val == 1;
+        } else {
+            if (root.val == 2) {
+                return evaluateTree(root.left) || evaluateTree(root.right);
+            } else {
+                return evaluateTree(root.left) && evaluateTree(root.right);
+            }
+        }
     }
 }
