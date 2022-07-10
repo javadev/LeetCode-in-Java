@@ -2690,7 +2690,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 1263 |[Minimum Moves to Move a Box to Their Target Location](src.save/main/java/g1201_1300/s1263_minimum_moves_to_move_a_box_to_their_target_location/Solution.java)| Hard | Array, Breadth_First_Search, Matrix, Heap_Priority_Queue | 16 | 76.00
 | 1262 |[Greatest Sum Divisible by Three](src.save/main/java/g1201_1300/s1262_greatest_sum_divisible_by_three/Solution.java)| Medium | Array, Dynamic_Programming, Greedy | 5 | 95.82
 | 1261 |[Find Elements in a Contaminated Binary Tree](src.save/main/java/g1201_1300/s1261_find_elements_in_a_contaminated_binary_tree/FindElements.java)| Medium | Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Design | 24 | 84.00
-| 1260 |[Shift 2D Grid](src.save/main/java/g1201_1300/s1260_shift_2d_grid/Solution.java)| Easy | Array, Matrix, Simulation | 17 | 14.82
+| 1260 |[Shift 2D Grid](src.save/main/java/g1201_1300/s1260_shift_2d_grid/Solution.java)| Easy | Array, Matrix, Simulation | 6 | 89.10
 | 1255 |[Maximum Score Words Formed by Letters](src.save/main/java/g1201_1300/s1255_maximum_score_words_formed_by_letters/Solution.java)| Hard | Array, String, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 1 | 98.36
 | 1254 |[Number of Closed Islands](src.save/main/java/g1201_1300/s1254_number_of_closed_islands/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find, Graph_Theory_I_Day_2_Matrix_Related_Problems | 3 | 55.59
 | 1253 |[Reconstruct a 2-Row Binary Matrix](src.save/main/java/g1201_1300/s1253_reconstruct_a_2_row_binary_matrix/Solution.java)| Medium | Array, Greedy, Matrix | 18 | 57.27
