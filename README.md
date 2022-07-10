@@ -1848,6 +1848,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2332 |[The Latest Time to Catch a Bus](src/main/java/g2301_2400/s2332_the_latest_time_to_catch_a_bus/Solution.java)| Medium || 28 | 100.00
+| 2331 |[Evaluate Boolean Binary Tree](src/main/java/g2301_2400/s2331_evaluate_boolean_binary_tree/Solution.java)| Easy || 0 | 100.00
 | 2328 |[Number of Increasing Paths in a Grid](src/main/java/g2301_2400/s2328_number_of_increasing_paths_in_a_grid/Solution.java)| Hard | Array, Dynamic_Programming, Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort, Memoization, Matrix | 43 | 100.00
 | 2327 |[Number of People Aware of a Secret](src/main/java/g2301_2400/s2327_number_of_people_aware_of_a_secret/Solution.java)| Medium | Dynamic_Programming, Queue, Simulation | 7 | 80.00
 | 2326 |[Spiral Matrix IV](src/main/java/g2301_2400/s2326_spiral_matrix_iv/Solution.java)| Medium | Array, Linked_List, Matrix, Simulation | 12 | 83.33
