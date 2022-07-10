@@ -22,4 +22,11 @@ class SolutionTest {
                                 new int[] {20, 30, 10}, new int[] {19, 13, 26, 4, 25, 11, 21}, 2),
                 equalTo(20));
     }
+
+    @Test
+    void latestTimeCatchTheBus3() {
+        assertThat(
+                new Solution().latestTimeCatchTheBus(new int[] {3}, new int[] {2, 4}, 2),
+                equalTo(3));
+    }
 }
