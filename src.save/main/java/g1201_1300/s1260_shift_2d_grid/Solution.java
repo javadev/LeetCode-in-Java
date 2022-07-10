@@ -1,26 +1,37 @@
 package g1201_1300.s1260_shift_2d_grid;
 
-// #Easy #Array #Matrix #Simulation #2022_03_13_Time_17_ms_(14.82%)_Space_54.2_MB_(47.71%)
+// #Easy #Array #Matrix #Simulation #2022_07_10_Time_6_ms_(89.10%)_Space_54.8_MB_(44.55%)
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Solution {
     public List<List<Integer>> shiftGrid(int[][] grid, int k) {
-        int m = grid.length;
-        int n = grid[0].length;
-        int totalNumbers = m * n;
-        int start = totalNumbers - k % totalNumbers;
-        LinkedList<List<Integer>> result = new LinkedList<>();
-        for (int i = start; i < totalNumbers + start; i++) {
-            int moveIndex = i % totalNumbers;
-            int moveRow = moveIndex / n;
-            int moveColumn = moveIndex % n;
-            if ((i - start) % n == 0) {
-                result.add(new ArrayList<>());
+        if (grid == null) {
+            return null;
+        }
+        int[] flat = new int[grid.length * grid[0].length];
+        int index = 0;
+        for (int i = 0; i < grid.length; ++i) {
+            for (int j = 0; j < grid[0].length; ++j) {
+                flat[index++] = grid[i][j];
             }
-            result.peekLast().add(grid[moveRow][moveColumn]);
+        }
+        int mode = k % flat.length;
+        int readingIndex = flat.length - mode;
+        if (readingIndex == flat.length) {
+            readingIndex = 0;
+        }
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        for (int i = 0; i < grid.length; ++i) {
+            List<Integer> eachRow = new ArrayList<Integer>();
+            for (int j = 0; j < grid[0].length; ++j) {
+                eachRow.add(flat[readingIndex++]);
+                if (readingIndex == flat.length) {
+                    readingIndex = 0;
+                }
+            }
+            result.add(eachRow);
         }
         return result;
     }
