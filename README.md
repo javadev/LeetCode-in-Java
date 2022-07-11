@@ -197,7 +197,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0215 |[Kth Largest Element in an Array](src.save/main/java/g0201_0300/s0215_kth_largest_element_in_an_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Quickselect | 5 | 70.82
-| 0347 |[Top K Frequent Elements](src.save/main/java/g0301_0400/s0347_top_k_frequent_elements/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Divide_and_Conquer, Quickselect, Bucket_Sort | 7 | 99.54
+| 0347 |[Top K Frequent Elements](src.save/main/java/g0301_0400/s0347_top_k_frequent_elements/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Divide_and_Conquer, Quickselect, Bucket_Sort | 9 | 97.93
 
 #### Day 21 Heap Priority Queue
 
@@ -234,7 +234,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0344 |[Reverse String](src.save/main/java/g0301_0400/s0344_reverse_string/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers, Recursion | 1 | 87.94
+| 0344 |[Reverse String](src.save/main/java/g0301_0400/s0344_reverse_string/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers, Recursion | 1 | 99.91
 | 0557 |[Reverse Words in a String III](src.save/main/java/g0501_0600/s0557_reverse_words_in_a_string_iii/Solution.java)| Easy | String, Two_Pointers | 5 | 88.09
 
 #### Day 5 Two Pointers
@@ -532,7 +532,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0350 |[Intersection of Two Arrays II](src.save/main/java/g0301_0400/s0350_intersection_of_two_arrays_ii/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 3 | 81.79
+| 0350 |[Intersection of Two Arrays II](src.save/main/java/g0301_0400/s0350_intersection_of_two_arrays_ii/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 4 | 69.62
 | 0633 |[Sum of Square Numbers](src.save/main/java/g0601_0700/s0633_sum_of_square_numbers/Solution.java)| Medium | Math, Binary_Search, Two_Pointers | 4 | 82.92
 
 #### Day 11
@@ -1542,7 +1542,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0344 |[Reverse String](src.save/main/java/g0301_0400/s0344_reverse_string/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers, Recursion | 1 | 87.94
+| 0344 |[Reverse String](src.save/main/java/g0301_0400/s0344_reverse_string/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers, Recursion | 1 | 99.91
 | 0014 |[Longest Common Prefix](src.save/main/java/g0001_0100/s0014_longest_common_prefix/Solution.java)| Easy | Top_Interview_Questions, String | 1 | 84.75
 | 0187 |[Repeated DNA Sequences](src.save/main/java/g0101_0200/s0187_repeated_dna_sequences/Solution.java)| Medium | String, Hash_Table, Bit_Manipulation, Sliding_Window, Hash_Function, Rolling_Hash | 29 | 77.11
 | 0003 |[Longest Substring Without Repeating Characters](src.save/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window | 5 | 91.03
@@ -1759,7 +1759,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0350 |[Intersection of Two Arrays II](src.save/main/java/g0301_0400/s0350_intersection_of_two_arrays_ii/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 3 | 81.79
+| 0350 |[Intersection of Two Arrays II](src.save/main/java/g0301_0400/s0350_intersection_of_two_arrays_ii/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 4 | 69.62
 | 0121 |[Best Time to Buy and Sell Stock](src.save/main/java/g0101_0200/s0121_best_time_to_buy_and_sell_stock/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 1 | 100.00
 
 #### Day 4 Array
@@ -3393,16 +3393,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0368 |[Largest Divisible Subset](src.save/main/java/g0301_0400/s0368_largest_divisible_subset/Solution.java)| Medium | Array, Dynamic_Programming, Math, Sorting | 20 | 87.61
 | 0367 |[Valid Perfect Square](src.save/main/java/g0301_0400/s0367_valid_perfect_square/Solution.java)| Easy | Math, Binary_Search, Binary_Search_I_Day_3 | 0 | 100.00
 | 0365 |[Water and Jug Problem](src.save/main/java/g0301_0400/s0365_water_and_jug_problem/Solution.java)| Medium | Math, Depth_First_Search, Breadth_First_Search, Graph_Theory_I_Day_11_Breadth_First_Search | 0 | 100.00
-| 0363 |[Max Sum of Rectangle No Larger Than K](src.save/main/java/g0301_0400/s0363_max_sum_of_rectangle_no_larger_than_k/Solution.java)| Hard | Array, Dynamic_Programming, Binary_Search, Matrix, Ordered_Set | 69 | 97.33
+| 0363 |[Max Sum of Rectangle No Larger Than K](src.save/main/java/g0301_0400/s0363_max_sum_of_rectangle_no_larger_than_k/Solution.java)| Hard | Array, Dynamic_Programming, Binary_Search, Matrix, Ordered_Set | 70 | 99.21
 | 0357 |[Count Numbers with Unique Digits](src.save/main/java/g0301_0400/s0357_count_numbers_with_unique_digits/Solution.java)| Medium | Dynamic_Programming, Math, Backtracking | 0 | 100.00
-| 0355 |[Design Twitter](src.save/main/java/g0301_0400/s0355_design_twitter/Twitter.java)| Medium | Hash_Table, Design, Heap_Priority_Queue, Linked_List | 8 | 99.79
-| 0354 |[Russian Doll Envelopes](src.save/main/java/g0301_0400/s0354_russian_doll_envelopes/Solution.java)| Hard | Array, Dynamic_Programming, Sorting, Binary_Search | 65 | 67.49
-| 0352 |[Data Stream as Disjoint Intervals](src.save/main/java/g0301_0400/s0352_data_stream_as_disjoint_intervals/SummaryRanges.java)| Hard | Binary_Search, Design, Ordered_Set | 94 | 76.26
-| 0350 |[Intersection of Two Arrays II](src.save/main/java/g0301_0400/s0350_intersection_of_two_arrays_ii/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting, Binary_Search, Two_Pointers, Data_Structure_I_Day_3_Array, Binary_Search_I_Day_10 | 3 | 81.79
-| 0349 |[Intersection of Two Arrays](src.save/main/java/g0301_0400/s0349_intersection_of_two_arrays/Solution.java)| Easy | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 1 | 99.75
-| 0347 |[Top K Frequent Elements](src.save/main/java/g0301_0400/s0347_top_k_frequent_elements/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Divide_and_Conquer, Quickselect, Bucket_Sort, Data_Structure_II_Day_20_Heap_Priority_Queue | 7 | 99.54
-| 0345 |[Reverse Vowels of a String](src.save/main/java/g0301_0400/s0345_reverse_vowels_of_a_string/Solution.java)| Easy | String, Two_Pointers | 4 | 86.90
-| 0344 |[Reverse String](src.save/main/java/g0301_0400/s0344_reverse_string/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers, Recursion, Algorithm_I_Day_4_Two_Pointers, Udemy_Strings | 1 | 87.94
+| 0355 |[Design Twitter](src.save/main/java/g0301_0400/s0355_design_twitter/Twitter.java)| Medium | Hash_Table, Design, Heap_Priority_Queue, Linked_List | 14 | 74.65
+| 0354 |[Russian Doll Envelopes](src.save/main/java/g0301_0400/s0354_russian_doll_envelopes/Solution.java)| Hard | Array, Dynamic_Programming, Sorting, Binary_Search | 46 | 99.83
+| 0352 |[Data Stream as Disjoint Intervals](src.save/main/java/g0301_0400/s0352_data_stream_as_disjoint_intervals/SummaryRanges.java)| Hard | Binary_Search, Design, Ordered_Set | 109 | 62.48
+| 0350 |[Intersection of Two Arrays II](src.save/main/java/g0301_0400/s0350_intersection_of_two_arrays_ii/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting, Binary_Search, Two_Pointers, Data_Structure_I_Day_3_Array, Binary_Search_I_Day_10 | 4 | 69.62
+| 0349 |[Intersection of Two Arrays](src.save/main/java/g0301_0400/s0349_intersection_of_two_arrays/Solution.java)| Easy | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 1 | 99.77
+| 0347 |[Top K Frequent Elements](src.save/main/java/g0301_0400/s0347_top_k_frequent_elements/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Divide_and_Conquer, Quickselect, Bucket_Sort, Data_Structure_II_Day_20_Heap_Priority_Queue | 9 | 97.93
+| 0345 |[Reverse Vowels of a String](src.save/main/java/g0301_0400/s0345_reverse_vowels_of_a_string/Solution.java)| Easy | String, Two_Pointers | 3 | 98.02
+| 0344 |[Reverse String](src.save/main/java/g0301_0400/s0344_reverse_string/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers, Recursion, Algorithm_I_Day_4_Two_Pointers, Udemy_Strings | 1 | 99.91
 | 0343 |[Integer Break](src.save/main/java/g0301_0400/s0343_integer_break/Solution.java)| Medium | Dynamic_Programming, Math, Algorithm_II_Day_18_Dynamic_Programming, Dynamic_Programming_I_Day_21 | 0 | 100.00
 | 0342 |[Power of Four](src.save/main/java/g0301_0400/s0342_power_of_four/Solution.java)| Easy | Math, Bit_Manipulation, Recursion | 1 | 100.00
 | 0341 |[Flatten Nested List Iterator](src.save/main/java/g0301_0400/s0341_flatten_nested_list_iterator/NestedIterator.java)| Medium | Top_Interview_Questions, Depth_First_Search, Tree, Stack, Design, Queue, Iterator, Programming_Skills_II_Day_18 | 2 | 99.95
