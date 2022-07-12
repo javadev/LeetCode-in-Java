@@ -1,12 +1,12 @@
 package g0301_0400.s0377_combination_sum_iv;
 
 // #Medium #Array #Dynamic_Programming #Dynamic_Programming_I_Day_21
-// #2022_03_16_Time_1_ms_(91.72%)_Space_41.5_MB_(43.01%)
+// #2022_07_12_Time_1_ms_(92.54%)_Space_41.3_MB_(60.07%)
 
 import java.util.Arrays;
 
 public class Solution {
-    int[] storage;
+    private int[] storage;
 
     public int combinationSum4(int[] nums, int target) {
         storage = new int[target + 1];

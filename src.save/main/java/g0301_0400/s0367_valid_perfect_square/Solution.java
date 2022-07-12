@@ -1,7 +1,7 @@
 package g0301_0400.s0367_valid_perfect_square;
 
 // #Easy #Math #Binary_Search #Binary_Search_I_Day_3
-// #2022_03_15_Time_0_ms_(100.00%)_Space_41.7_MB_(7.15%)
+// #2022_07_12_Time_0_ms_(100.00%)_Space_40.9_MB_(49.73%)
 
 public class Solution {
     public boolean isPerfectSquare(int num) {

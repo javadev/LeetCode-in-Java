@@ -1,6 +1,6 @@
 package g0301_0400.s0372_super_pow;
 
-// #Medium #Math #Divide_and_Conquer #2022_03_15_Time_2_ms_(91.10%)_Space_45.4_MB_(57.63%)
+// #Medium #Math #Divide_and_Conquer #2022_07_12_Time_1_ms_(100.00%)_Space_42.4_MB_(87.15%)
 
 public class Solution {
     private static final int MOD = 1337;
