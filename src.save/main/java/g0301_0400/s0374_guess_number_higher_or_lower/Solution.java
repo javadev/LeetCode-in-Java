@@ -1,7 +1,7 @@
 package g0301_0400.s0374_guess_number_higher_or_lower;
 
 // #Easy #Binary_Search #Interactive #Binary_Search_I_Day_1
-// #2022_03_15_Time_0_ms_(100.00%)_Space_41_MB_(24.85%)
+// #2022_07_12_Time_0_ms_(100.00%)_Space_40.4_MB_(74.20%)
 
 /*
  * Forward declaration of guess API.

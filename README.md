@@ -839,7 +839,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0377 |[Combination Sum IV](src.save/main/java/g0301_0400/s0377_combination_sum_iv/Solution.java)| Medium | Array, Dynamic_Programming | 1 | 91.72
+| 0377 |[Combination Sum IV](src.save/main/java/g0301_0400/s0377_combination_sum_iv/Solution.java)| Medium | Array, Dynamic_Programming | 1 | 92.54
 | 0343 |[Integer Break](src.save/main/java/g0301_0400/s0343_integer_break/Solution.java)| Medium | Dynamic_Programming, Math | 0 | 100.00
 | 0279 |[Perfect Squares](src.save/main/java/g0201_0300/s0279_perfect_squares/Solution.java)| Medium | Top_Interview_Questions, Dynamic_Programming, Math, Breadth_First_Search | 1 | 100.00
 
@@ -3383,14 +3383,14 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0381 |[Insert Delete GetRandom O(1) - Duplicates allowed](src.save/main/java/g0301_0400/s0381_insert_delete_getrandom_o1_duplicates_allowed/RandomizedCollection.java)| Hard | Array, Hash_Table, Math, Design, Randomized | 26 | 100.00
 | 0380 |[Insert Delete GetRandom O(1)](src.save/main/java/g0301_0400/s0380_insert_delete_getrandom_o1/RandomizedSet.java)| Medium | Top_Interview_Questions, Array, Hash_Table, Math, Design, Randomized, Programming_Skills_II_Day_20 | 20 | 99.24
 | 0378 |[Kth Smallest Element in a Sorted Matrix](src.save/main/java/g0301_0400/s0378_kth_smallest_element_in_a_sorted_matrix/Solution.java)| Medium | Top_Interview_Questions, Array, Sorting, Binary_Search, Matrix, Heap_Priority_Queue | 0 | 100.00
-| 0377 |[Combination Sum IV](src.save/main/java/g0301_0400/s0377_combination_sum_iv/Solution.java)| Medium | Array, Dynamic_Programming, Dynamic_Programming_I_Day_21 | 1 | 91.72
+| 0377 |[Combination Sum IV](src.save/main/java/g0301_0400/s0377_combination_sum_iv/Solution.java)| Medium | Array, Dynamic_Programming, Dynamic_Programming_I_Day_21 | 1 | 92.54
 | 0376 |[Wiggle Subsequence](src.save/main/java/g0301_0400/s0376_wiggle_subsequence/Solution.java)| Medium | Array, Dynamic_Programming, Greedy, Dynamic_Programming_I_Day_18 | 0 | 100.00
-| 0375 |[Guess Number Higher or Lower II](src.save/main/java/g0301_0400/s0375_guess_number_higher_or_lower_ii/Solution.java)| Medium | Dynamic_Programming, Math, Game_Theory | 1 | 100.00
+| 0375 |[Guess Number Higher or Lower II](src.save/main/java/g0301_0400/s0375_guess_number_higher_or_lower_ii/Solution.java)| Medium | Dynamic_Programming, Math, Game_Theory | 2 | 100.00
 | 0374 |[Guess Number Higher or Lower](src.save/main/java/g0301_0400/s0374_guess_number_higher_or_lower/Solution.java)| Easy | Binary_Search, Interactive, Binary_Search_I_Day_1 | 0 | 100.00
-| 0373 |[Find K Pairs with Smallest Sums](src.save/main/java/g0301_0400/s0373_find_k_pairs_with_smallest_sums/Solution.java)| Medium | Array, Heap_Priority_Queue | 58 | 29.29
-| 0372 |[Super Pow](src.save/main/java/g0301_0400/s0372_super_pow/Solution.java)| Medium | Math, Divide_and_Conquer | 2 | 91.10
+| 0373 |[Find K Pairs with Smallest Sums](src.save/main/java/g0301_0400/s0373_find_k_pairs_with_smallest_sums/Solution.java)| Medium | Array, Heap_Priority_Queue | 59 | 46.79
+| 0372 |[Super Pow](src.save/main/java/g0301_0400/s0372_super_pow/Solution.java)| Medium | Math, Divide_and_Conquer | 1 | 100.00
 | 0371 |[Sum of Two Integers](src.save/main/java/g0301_0400/s0371_sum_of_two_integers/Solution.java)| Medium | Top_Interview_Questions, Math, Bit_Manipulation, Udemy_Bit_Manipulation | 0 | 100.00
-| 0368 |[Largest Divisible Subset](src.save/main/java/g0301_0400/s0368_largest_divisible_subset/Solution.java)| Medium | Array, Dynamic_Programming, Math, Sorting | 20 | 87.61
+| 0368 |[Largest Divisible Subset](src.save/main/java/g0301_0400/s0368_largest_divisible_subset/Solution.java)| Medium | Array, Dynamic_Programming, Math, Sorting | 24 | 87.83
 | 0367 |[Valid Perfect Square](src.save/main/java/g0301_0400/s0367_valid_perfect_square/Solution.java)| Easy | Math, Binary_Search, Binary_Search_I_Day_3 | 0 | 100.00
 | 0365 |[Water and Jug Problem](src.save/main/java/g0301_0400/s0365_water_and_jug_problem/Solution.java)| Medium | Math, Depth_First_Search, Breadth_First_Search, Graph_Theory_I_Day_11_Breadth_First_Search | 0 | 100.00
 | 0363 |[Max Sum of Rectangle No Larger Than K](src.save/main/java/g0301_0400/s0363_max_sum_of_rectangle_no_larger_than_k/Solution.java)| Hard | Array, Dynamic_Programming, Binary_Search, Matrix, Ordered_Set | 70 | 99.21
