@@ -1,13 +1,13 @@
 package g2301_2400.s2333_minimum_sum_of_squared_difference;
 
-// #Medium #2022_07_12_Time_18_ms_(89.38%)_Space_105.4_MB_(52.66%)
+// #Medium #2022_07_12_Time_15_ms_(95.13%)_Space_106.4_MB_(46.91%)
 
 public class Solution {
     public long minSumSquareDiff(int[] nums1, int[] nums2, int k1, int k2) {
         long minSumSquare = 0;
         int[] diffs = new int[100_001];
         long totalDiff = 0;
-        long kSum = k1 + k2;
+        long kSum = (long) k1 + k2;
         int currentDiff;
         int maxDiff = 0;
         for (int i = 0; i < nums1.length; i++) {

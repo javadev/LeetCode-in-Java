@@ -21,4 +21,16 @@ class SolutionTest {
                         .minSumSquareDiff(new int[] {1, 4, 10, 12}, new int[] {5, 8, 6, 9}, 1, 1),
                 equalTo(43L));
     }
+
+    @Test
+    void minSumSquareDiff3() {
+        assertThat(
+                new Solution()
+                        .minSumSquareDiff(
+                                new int[] {7, 11, 4, 19, 11, 5, 6, 1, 8},
+                                new int[] {4, 7, 6, 16, 12, 9, 10, 2, 10},
+                                3,
+                                6),
+                equalTo(27L));
+    }
 }
