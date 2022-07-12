@@ -1848,7 +1848,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
-| 2334 |[Subarray With Elements Greater Than Varying Threshold](src/main/java/g2301_2400/s2334_subarray_with_elements_greater_than_varying_threshold/Solution.java)| |||
+| 2334 |[Subarray With Elements Greater Than Varying Threshold](src/main/java/g2301_2400/s2334_subarray_with_elements_greater_than_varying_threshold/Solution.java)| Hard || 385 | 31.56
 | 2333 |[Minimum Sum of Squared Difference](src/main/java/g2301_2400/s2333_minimum_sum_of_squared_difference/Solution.java)| Medium || 18 | 89.38
 | 2332 |[The Latest Time to Catch a Bus](src/main/java/g2301_2400/s2332_the_latest_time_to_catch_a_bus/Solution.java)| Medium || 28 | 100.00
 | 2331 |[Evaluate Boolean Binary Tree](src/main/java/g2301_2400/s2331_evaluate_boolean_binary_tree/Solution.java)| Easy || 0 | 100.00
