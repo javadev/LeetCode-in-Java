@@ -2289,7 +2289,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 1768 |[Merge Strings Alternately](src.save/main/java/g1701_1800/s1768_merge_strings_alternately/Solution.java)| Easy | String, Two_Pointers, Programming_Skills_I_Day_8_String | 1 | 86.26
 | 1766 |[Tree of Coprimes](src.save/main/java/g1701_1800/s1766_tree_of_coprimes/Solution.java)| Hard | Math, Depth_First_Search, Breadth_First_Search, Tree | 111 | 94.07
 | 1765 |[Map of Highest Peak](src.save/main/java/g1701_1800/s1765_map_of_highest_peak/Solution.java)| Medium | Array, Breadth_First_Search, Matrix | 64 | 85.40
-| 1764 |[Form Array by Concatenating Subarrays of Another Array](src.save/main/java/g1701_1800/s1764_form_array_by_concatenating_subarrays_of_another_array/Solution.java)| Medium | Array, Greedy, String_Matching | 7 | 16.90
+| 1764 |[Form Array by Concatenating Subarrays of Another Array](src.save/main/java/g1701_1800/s1764_form_array_by_concatenating_subarrays_of_another_array/Solution.java)| Medium | Array, Greedy, String_Matching | 3 | 43.69
 | 1763 |[Longest Nice Substring](src.save/main/java/g1701_1800/s1763_longest_nice_substring/Solution.java)| Easy | String, Hash_Table, Bit_Manipulation, Sliding_Window | 5 | 61.88
 | 1761 |[Minimum Degree of a Connected Trio in a Graph](src.save/main/java/g1701_1800/s1761_minimum_degree_of_a_connected_trio_in_a_graph/Solution.java)| Hard | Graph | 33 | 89.17
 | 1760 |[Minimum Limit of Balls in a Bag](src.save/main/java/g1701_1800/s1760_minimum_limit_of_balls_in_a_bag/Solution.java)| Medium | Array, Binary_Search, Binary_Search_II_Day_3 | 44 | 78.49
