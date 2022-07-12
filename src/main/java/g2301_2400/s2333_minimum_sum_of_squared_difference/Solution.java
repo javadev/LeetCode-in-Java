@@ -45,7 +45,7 @@ public class Solution {
         }
         for (int i = 0; i <= maxDiff; i++) {
             if (diffs[i] > 0) {
-                minSumSquare += (long) (Math.pow((long) i, 2)) * diffs[i];
+                minSumSquare += (long) (Math.pow(i, 2)) * diffs[i];
             }
         }
         return minSumSquare;
