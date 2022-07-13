@@ -22,7 +22,6 @@ public class SmallestInfiniteSet {
                 ptr++;
             }
         }
-
         return val;
     }
 
