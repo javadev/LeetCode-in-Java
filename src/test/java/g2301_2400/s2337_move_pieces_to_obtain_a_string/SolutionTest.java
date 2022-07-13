@@ -20,4 +20,9 @@ class SolutionTest {
     void canChange3() {
         assertThat(new Solution().canChange("_R", "R_"), equalTo(false));
     }
+
+    @Test
+    void canChange4() {
+        assertThat(new Solution().canChange("_L__R__R_L", "L______RR_"), equalTo(false));
+    }
 }
