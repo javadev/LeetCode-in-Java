@@ -1,6 +1,6 @@
 package g0301_0400.s0386_lexicographical_numbers;
 
-// #Medium #Depth_First_Search #Trie #2022_03_16_Time_4_ms_(87.17%)_Space_56.9_MB_(38.24%)
+// #Medium #Depth_First_Search #Trie #2022_07_13_Time_4_ms_(93.65%)_Space_57.2_MB_(30.81%)
 
 import java.util.ArrayList;
 import java.util.List;

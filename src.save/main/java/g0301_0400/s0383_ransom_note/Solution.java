@@ -1,7 +1,7 @@
 package g0301_0400.s0383_ransom_note;
 
 // #Easy #String #Hash_Table #Counting #Data_Structure_I_Day_6_String
-// #2022_03_16_Time_1_ms_(99.79%)_Space_46.1_MB_(51.29%)
+// #2022_07_13_Time_1_ms_(99.97%)_Space_46_MB_(62.86%)
 
 public class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {

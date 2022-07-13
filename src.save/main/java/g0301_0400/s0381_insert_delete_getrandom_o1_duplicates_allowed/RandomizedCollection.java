@@ -1,7 +1,7 @@
 package g0301_0400.s0381_insert_delete_getrandom_o1_duplicates_allowed;
 
 // #Hard #Array #Hash_Table #Math #Design #Randomized
-// #2022_03_18_Time_26_ms_(100.00%)_Space_92.4_MB_(81.64%)
+// #2022_07_13_Time_63_ms_(50.82%)_Space_99.1_MB_(27.60%)
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -57,3 +57,11 @@ public class RandomizedCollection {
         return arr[idx];
     }
 }
+
+/*
+ * Your RandomizedCollection object will be instantiated and called as such:
+ * RandomizedCollection obj = new RandomizedCollection();
+ * boolean param_1 = obj.insert(val);
+ * boolean param_2 = obj.remove(val);
+ * int param_3 = obj.getRandom();
+ */

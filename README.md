@@ -454,7 +454,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0384 |[Shuffle an Array](src.save/main/java/g0301_0400/s0384_shuffle_an_array/Solution.java)| Medium | Top_Interview_Questions, Array, Math, Randomized | 65 | 94.59
+| 0384 |[Shuffle an Array](src.save/main/java/g0301_0400/s0384_shuffle_an_array/Solution.java)| Medium | Top_Interview_Questions, Array, Math, Randomized | 52 | 91.77
 
 #### Day 21 Others
 
@@ -824,7 +824,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0392 |[Is Subsequence](src.save/main/java/g0301_0400/s0392_is_subsequence/Solution.java)| Easy | String, Dynamic_Programming, Two_Pointers | 0 | 100.00
+| 0392 |[Is Subsequence](src.save/main/java/g0301_0400/s0392_is_subsequence/Solution.java)| Easy | String, Dynamic_Programming, Two_Pointers | 1 | 93.01
 | 1143 |[Longest Common Subsequence](src.save/main/java/g1101_1200/s1143_longest_common_subsequence/Solution.java)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 9 | 93.92
 | 0072 |[Edit Distance](src.save/main/java/g0001_0100/s0072_edit_distance/Solution.java)| Hard | Top_100_Liked_Questions, String, Dynamic_Programming | 6 | 90.49
 
@@ -904,7 +904,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 |-|-|-|-|-|-
 | 1768 |[Merge Strings Alternately](src.save/main/java/g1701_1800/s1768_merge_strings_alternately/Solution.java)| Easy | String, Two_Pointers | 1 | 86.26
 | 1678 |[Goal Parser Interpretation](src.save/main/java/g1601_1700/s1678_goal_parser_interpretation/Solution.java)| Easy | String | 0 | 100.00
-| 0389 |[Find the Difference](src.save/main/java/g0301_0400/s0389_find_the_difference/Solution.java)| Easy | String, Hash_Table, Sorting, Bit_Manipulation | 1 | 99.83
+| 0389 |[Find the Difference](src.save/main/java/g0301_0400/s0389_find_the_difference/Solution.java)| Easy | String, Hash_Table, Sorting, Bit_Manipulation | 1 | 100.00
 
 #### Day 9 String
 
@@ -1078,7 +1078,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0380 |[Insert Delete GetRandom O(1)](src.save/main/java/g0301_0400/s0380_insert_delete_getrandom_o1/RandomizedSet.java)| Medium | Top_Interview_Questions, Array, Hash_Table, Math, Design, Randomized | 20 | 99.24
+| 0380 |[Insert Delete GetRandom O(1)](src.save/main/java/g0301_0400/s0380_insert_delete_getrandom_o1/RandomizedSet.java)| Medium | Top_Interview_Questions, Array, Hash_Table, Math, Design, Randomized | 27 | 93.44
 | 0622 |[Design Circular Queue](src.save/main/java/g0601_0700/s0622_design_circular_queue/MyCircularQueue.java)| Medium | Array, Design, Linked_List, Queue | 3 | 100.00
 | 0729 |[My Calendar I](src.save/main/java/g0701_0800/s0729_my_calendar_i/MyCalendar.java)| Medium | Binary_Search, Design, Ordered_Set, Segment_Tree | 17 | 97.23
 
@@ -1285,7 +1285,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0205 |[Isomorphic Strings](src.save/main/java/g0201_0300/s0205_isomorphic_strings/Solution.java)| Easy | String, Hash_Table | 2 | 99.97
-| 0392 |[Is Subsequence](src.save/main/java/g0301_0400/s0392_is_subsequence/Solution.java)| Easy | String, Dynamic_Programming, Two_Pointers | 0 | 100.00
+| 0392 |[Is Subsequence](src.save/main/java/g0301_0400/s0392_is_subsequence/Solution.java)| Easy | String, Dynamic_Programming, Two_Pointers | 1 | 93.01
 
 #### Day 3 Linked List
 
@@ -1595,7 +1595,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0392 |[Is Subsequence](src.save/main/java/g0301_0400/s0392_is_subsequence/Solution.java)| Easy | String, Dynamic_Programming, Two_Pointers | 0 | 100.00
+| 0392 |[Is Subsequence](src.save/main/java/g0301_0400/s0392_is_subsequence/Solution.java)| Easy | String, Dynamic_Programming, Two_Pointers | 1 | 93.01
 | 0125 |[Valid Palindrome](src.save/main/java/g0101_0200/s0125_valid_palindrome/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers | 3 | 98.64
 | 0977 |[Squares of a Sorted Array](src.save/main/java/g0901_1000/s0977_squares_of_a_sorted_array/Solution.java)| Easy | Array, Sorting, Two_Pointers | 1 | 100.00
 | 0026 |[Remove Duplicates from Sorted Array](src.save/main/java/g0001_0100/s0026_remove_duplicates_from_sorted_array/Solution.java)| Easy | Top_Interview_Questions, Array, Two_Pointers | 1 | 99.47
@@ -1725,7 +1725,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0191 |[Number of 1 Bits](src.save/main/java/g0101_0200/s0191_number_of_1_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation | 1 | 84.87
-| 0389 |[Find the Difference](src.save/main/java/g0301_0400/s0389_find_the_difference/Solution.java)| Easy | String, Hash_Table, Sorting, Bit_Manipulation | 1 | 99.83
+| 0389 |[Find the Difference](src.save/main/java/g0301_0400/s0389_find_the_difference/Solution.java)| Easy | String, Hash_Table, Sorting, Bit_Manipulation | 1 | 100.00
 | 0190 |[Reverse Bits](src.save/main/java/g0101_0200/s0190_reverse_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation, Divide_and_Conquer | 1 | 98.66
 | 0461 |[Hamming Distance](src.save/main/java/g0401_0500/s0461_hamming_distance/Solution.java)| Easy | Bit_Manipulation | 1 | 39.19
 | 1009 |[Complement of Base 10 Integer](src.save/main/java/g1001_1100/s1009_complement_of_base_10_integer/Solution.java)| Easy | Bit_Manipulation | 1 | 41.56
@@ -1780,8 +1780,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0387 |[First Unique Character in a String](src.save/main/java/g0301_0400/s0387_first_unique_character_in_a_string/Solution.java)| Easy | Top_Interview_Questions, String, Hash_Table, Counting, Queue | 2 | 99.53
-| 0383 |[Ransom Note](src.save/main/java/g0301_0400/s0383_ransom_note/Solution.java)| Easy | String, Hash_Table, Counting | 1 | 99.79
+| 0387 |[First Unique Character in a String](src.save/main/java/g0301_0400/s0387_first_unique_character_in_a_string/Solution.java)| Easy | Top_Interview_Questions, String, Hash_Table, Counting, Queue | 1 | 100.00
+| 0383 |[Ransom Note](src.save/main/java/g0301_0400/s0383_ransom_note/Solution.java)| Easy | String, Hash_Table, Counting | 1 | 99.97
 | 0242 |[Valid Anagram](src.save/main/java/g0201_0300/s0242_valid_anagram/Solution.java)| Easy | Top_Interview_Questions, String, Hash_Table, Sorting | 2 | 99.01
 
 #### Day 7 Linked List
@@ -1849,7 +1849,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 2334 |[Subarray With Elements Greater Than Varying Threshold](src/main/java/g2301_2400/s2334_subarray_with_elements_greater_than_varying_threshold/Solution.java)| Hard || 385 | 31.56
-| 2333 |[Minimum Sum of Squared Difference](src/main/java/g2301_2400/s2333_minimum_sum_of_squared_difference/Solution.java)| Medium || 18 | 89.38
+| 2333 |[Minimum Sum of Squared Difference](src/main/java/g2301_2400/s2333_minimum_sum_of_squared_difference/Solution.java)| Medium || 15 | 95.13
 | 2332 |[The Latest Time to Catch a Bus](src/main/java/g2301_2400/s2332_the_latest_time_to_catch_a_bus/Solution.java)| Medium || 28 | 100.00
 | 2331 |[Evaluate Boolean Binary Tree](src/main/java/g2301_2400/s2331_evaluate_boolean_binary_tree/Solution.java)| Easy || 0 | 100.00
 | 2328 |[Number of Increasing Paths in a Grid](src/main/java/g2301_2400/s2328_number_of_increasing_paths_in_a_grid/Solution.java)| Hard | Array, Dynamic_Programming, Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort, Memoization, Matrix | 43 | 100.00
@@ -3371,20 +3371,20 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0395 |[Longest Substring with At Least K Repeating Characters](src.save/main/java/g0301_0400/s0395_longest_substring_with_at_least_k_repeating_characters/Solution.java)| Medium | Top_Interview_Questions, String, Hash_Table, Sliding_Window, Divide_and_Conquer | 0 | 100.00
 | 0394 |[Decode String](src.save/main/java/g0301_0400/s0394_decode_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Level_1_Day_14_Stack, Udemy_Strings | 1 | 83.81
 | 0393 |[UTF-8 Validation](src.save/main/java/g0301_0400/s0393_utf_8_validation/Solution.java)| Medium | Array, Bit_Manipulation | 1 | 100.00
-| 0392 |[Is Subsequence](src.save/main/java/g0301_0400/s0392_is_subsequence/Solution.java)| Easy | String, Dynamic_Programming, Two_Pointers, Dynamic_Programming_I_Day_19, Level_1_Day_2_String, Udemy_Two_Pointers | 0 | 100.00
-| 0391 |[Perfect Rectangle](src.save/main/java/g0301_0400/s0391_perfect_rectangle/Solution.java)| Hard | Array, Line_Sweep | 49 | 67.32
-| 0390 |[Elimination Game](src.save/main/java/g0301_0400/s0390_elimination_game/Solution.java)| Medium | Math, Recursion | 2 | 100.00
-| 0389 |[Find the Difference](src.save/main/java/g0301_0400/s0389_find_the_difference/Solution.java)| Easy | String, Hash_Table, Sorting, Bit_Manipulation, Programming_Skills_I_Day_8_String, Udemy_Bit_Manipulation | 1 | 99.83
-| 0388 |[Longest Absolute File Path](src.save/main/java/g0301_0400/s0388_longest_absolute_file_path/Solution.java)| Medium | String, Depth_First_Search, Stack | 2 | 52.22
-| 0387 |[First Unique Character in a String](src.save/main/java/g0301_0400/s0387_first_unique_character_in_a_string/Solution.java)| Easy | Top_Interview_Questions, String, Hash_Table, Counting, Queue, Data_Structure_I_Day_6_String | 2 | 99.53
-| 0386 |[Lexicographical Numbers](src.save/main/java/g0301_0400/s0386_lexicographical_numbers/Solution.java)| Medium | Depth_First_Search, Trie | 4 | 87.17
-| 0385 |[Mini Parser](src.save/main/java/g0301_0400/s0385_mini_parser/Solution.java)| Medium | String, Depth_First_Search, Stack | 3 | 97.44
-| 0384 |[Shuffle an Array](src.save/main/java/g0301_0400/s0384_shuffle_an_array/Solution.java)| Medium | Top_Interview_Questions, Array, Math, Randomized, Algorithm_II_Day_20_Others | 65 | 94.59
-| 0383 |[Ransom Note](src.save/main/java/g0301_0400/s0383_ransom_note/Solution.java)| Easy | String, Hash_Table, Counting, Data_Structure_I_Day_6_String | 1 | 99.79
-| 0382 |[Linked List Random Node](src.save/main/java/g0301_0400/s0382_linked_list_random_node/Solution.java)| Medium | Math, Linked_List, Randomized, Reservoir_Sampling | 7 | 100.00
-| 0381 |[Insert Delete GetRandom O(1) - Duplicates allowed](src.save/main/java/g0301_0400/s0381_insert_delete_getrandom_o1_duplicates_allowed/RandomizedCollection.java)| Hard | Array, Hash_Table, Math, Design, Randomized | 26 | 100.00
-| 0380 |[Insert Delete GetRandom O(1)](src.save/main/java/g0301_0400/s0380_insert_delete_getrandom_o1/RandomizedSet.java)| Medium | Top_Interview_Questions, Array, Hash_Table, Math, Design, Randomized, Programming_Skills_II_Day_20 | 20 | 99.24
-| 0378 |[Kth Smallest Element in a Sorted Matrix](src.save/main/java/g0301_0400/s0378_kth_smallest_element_in_a_sorted_matrix/Solution.java)| Medium | Top_Interview_Questions, Array, Sorting, Binary_Search, Matrix, Heap_Priority_Queue | 0 | 100.00
+| 0392 |[Is Subsequence](src.save/main/java/g0301_0400/s0392_is_subsequence/Solution.java)| Easy | String, Dynamic_Programming, Two_Pointers, Dynamic_Programming_I_Day_19, Level_1_Day_2_String, Udemy_Two_Pointers | 1 | 93.01
+| 0391 |[Perfect Rectangle](src.save/main/java/g0301_0400/s0391_perfect_rectangle/Solution.java)| Hard | Array, Line_Sweep | 67 | 54.55
+| 0390 |[Elimination Game](src.save/main/java/g0301_0400/s0390_elimination_game/Solution.java)| Medium | Math, Recursion | 4 | 81.16
+| 0389 |[Find the Difference](src.save/main/java/g0301_0400/s0389_find_the_difference/Solution.java)| Easy | String, Hash_Table, Sorting, Bit_Manipulation, Programming_Skills_I_Day_8_String, Udemy_Bit_Manipulation | 1 | 100.00
+| 0388 |[Longest Absolute File Path](src.save/main/java/g0301_0400/s0388_longest_absolute_file_path/Solution.java)| Medium | String, Depth_First_Search, Stack | 1 | 95.33
+| 0387 |[First Unique Character in a String](src.save/main/java/g0301_0400/s0387_first_unique_character_in_a_string/Solution.java)| Easy | Top_Interview_Questions, String, Hash_Table, Counting, Queue, Data_Structure_I_Day_6_String | 1 | 100.00
+| 0386 |[Lexicographical Numbers](src.save/main/java/g0301_0400/s0386_lexicographical_numbers/Solution.java)| Medium | Depth_First_Search, Trie | 4 | 93.65
+| 0385 |[Mini Parser](src.save/main/java/g0301_0400/s0385_mini_parser/Solution.java)| Medium | String, Depth_First_Search, Stack | 2 | 97.82
+| 0384 |[Shuffle an Array](src.save/main/java/g0301_0400/s0384_shuffle_an_array/Solution.java)| Medium | Top_Interview_Questions, Array, Math, Randomized, Algorithm_II_Day_20_Others | 52 | 91.77
+| 0383 |[Ransom Note](src.save/main/java/g0301_0400/s0383_ransom_note/Solution.java)| Easy | String, Hash_Table, Counting, Data_Structure_I_Day_6_String | 1 | 99.97
+| 0382 |[Linked List Random Node](src.save/main/java/g0301_0400/s0382_linked_list_random_node/Solution.java)| Medium | Math, Linked_List, Randomized, Reservoir_Sampling | 11 | 91.81
+| 0381 |[Insert Delete GetRandom O(1) - Duplicates allowed](src.save/main/java/g0301_0400/s0381_insert_delete_getrandom_o1_duplicates_allowed/RandomizedCollection.java)| Hard | Array, Hash_Table, Math, Design, Randomized | 63 | 50.82
+| 0380 |[Insert Delete GetRandom O(1)](src.save/main/java/g0301_0400/s0380_insert_delete_getrandom_o1/RandomizedSet.java)| Medium | Top_Interview_Questions, Array, Hash_Table, Math, Design, Randomized, Programming_Skills_II_Day_20 | 27 | 93.44
+| 0378 |[Kth Smallest Element in a Sorted Matrix](src.save/main/java/g0301_0400/s0378_kth_smallest_element_in_a_sorted_matrix/Solution.java)| Medium | Top_Interview_Questions, Array, Sorting, Binary_Search, Matrix, Heap_Priority_Queue | 1 | 92.14
 | 0377 |[Combination Sum IV](src.save/main/java/g0301_0400/s0377_combination_sum_iv/Solution.java)| Medium | Array, Dynamic_Programming, Dynamic_Programming_I_Day_21 | 1 | 92.54
 | 0376 |[Wiggle Subsequence](src.save/main/java/g0301_0400/s0376_wiggle_subsequence/Solution.java)| Medium | Array, Dynamic_Programming, Greedy, Dynamic_Programming_I_Day_18 | 0 | 100.00
 | 0375 |[Guess Number Higher or Lower II](src.save/main/java/g0301_0400/s0375_guess_number_higher_or_lower_ii/Solution.java)| Medium | Dynamic_Programming, Math, Game_Theory | 2 | 100.00
