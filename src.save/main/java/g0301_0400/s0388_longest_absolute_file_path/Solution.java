@@ -1,6 +1,6 @@
 package g0301_0400.s0388_longest_absolute_file_path;
 
-// #Medium #String #Depth_First_Search #Stack #2022_03_16_Time_2_ms_(52.22%)_Space_42.5_MB_(14.38%)
+// #Medium #String #Depth_First_Search #Stack #2022_07_13_Time_1_ms_(95.33%)_Space_40.3_MB_(91.09%)
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -64,7 +64,6 @@ public class Solution {
             }
             isFile = false;
         }
-
         return longestLen;
     }
 }

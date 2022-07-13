@@ -1,7 +1,7 @@
 package g0301_0400.s0378_kth_smallest_element_in_a_sorted_matrix;
 
 // #Medium #Top_Interview_Questions #Array #Sorting #Binary_Search #Matrix #Heap_Priority_Queue
-// #2022_03_16_Time_0_ms_(100.00%)_Space_57.2_MB_(27.04%)
+// #2022_07_13_Time_1_ms_(92.14%)_Space_58_MB_(9.74%)
 
 public class Solution {
     public int kthSmallest(int[][] matrix, int k) {
