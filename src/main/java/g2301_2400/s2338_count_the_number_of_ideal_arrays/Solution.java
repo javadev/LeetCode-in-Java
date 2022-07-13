@@ -29,7 +29,7 @@ public class Solution {
             invs[i] = mod - mod / i * invs[mod % i] % mod;
         }
         long result = maxValue;
-        long comb = n - 1;
+        long comb = (long) n - 1;
         for (int i = 2; i <= maxDistinct && i <= n; i++) {
             result += (sum[i] * comb) % mod;
             comb *= n - i;
