@@ -1848,6 +1848,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2338 |[Count the Number of Ideal Arrays](src/main/java/g2301_2400/s2338_count_the_number_of_ideal_arrays/Solution.java)| Hard | Math, Dynamic_Programming, Combinatorics, Number_Theory | 21 | 99.04
+| 2337 |[Move Pieces to Obtain a String](src/main/java/g2301_2400/s2337_move_pieces_to_obtain_a_string/Solution.java)| Medium | Two_Pointers, String | 23 | 82.39
 | 2336 |[Smallest Number in Infinite Set](src/main/java/g2301_2400/s2336_smallest_number_in_infinite_set/SmallestInfiniteSet.java)| Medium | Hash_Table, Design, Heap_Priority_Queue | 12 | 96.69
 | 2335 |[Minimum Amount of Time to Fill Cups](src/main/java/g2301_2400/s2335_minimum_amount_of_time_to_fill_cups/Solution.java)| Easy | Array, Greedy, Heap_Priority_Queue | 1 | 97.92
 | 2334 |[Subarray With Elements Greater Than Varying Threshold](src/main/java/g2301_2400/s2334_subarray_with_elements_greater_than_varying_threshold/Solution.java)| Hard || 385 | 31.56
