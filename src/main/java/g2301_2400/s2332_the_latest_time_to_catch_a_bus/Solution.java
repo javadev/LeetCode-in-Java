@@ -1,6 +1,7 @@
 package g2301_2400.s2332_the_latest_time_to_catch_a_bus;
 
-// #Medium #2022_07_10_Time_28_ms_(100.00%)_Space_59.3_MB_(100.00%)
+// #Medium #Array #Two_Pointers #Binary_Search #Sorting
+// #2022_07_10_Time_28_ms_(100.00%)_Space_59.3_MB_(100.00%)
 
 import java.util.Arrays;
 
