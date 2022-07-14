@@ -1,42 +1,31 @@
 package g0901_1000.s0914_x_of_a_kind_in_a_deck_of_cards;
 
 // #Easy #Array #Hash_Table #Math #Counting #Number_Theory
-// #2022_03_29_Time_16_ms_(19.29%)_Space_52.2_MB_(35.81%)
+// #2022_07_14_Time_11_ms_(51.18%)_Space_52.7_MB_(22.45%)
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class Solution {
     public boolean hasGroupsSizeX(int[] deck) {
-        if (deck.length < 2) {
-            return false;
-        }
-        Map<Integer, Integer> mapReps = new HashMap<>();
-        for (int card : deck) {
-            if (!mapReps.containsKey(card)) {
-                mapReps.put(card, 1);
+        HashMap<Integer, Integer> hmap = new HashMap<>();
+        for (int i = 0; i < deck.length; i++) {
+            if (hmap.containsKey(deck[i])) {
+                hmap.put(deck[i], hmap.get(deck[i]) + 1);
             } else {
-                mapReps.put(card, mapReps.get(card) + 1);
+                hmap.put(deck[i], 1);
             }
         }
-        int num = 0;
-        int[] arrReps = new int[mapReps.size()];
-        for (Map.Entry<Integer, Integer> e : mapReps.entrySet()) {
-            arrReps[num++] = e.getValue();
+        int x = hmap.get(deck[0]);
+        for (Integer i : hmap.keySet()) {
+            x = gcd(x, hmap.get(i));
         }
-        num = arrGCD(arrReps, arrReps.length);
-        return num > 1;
+        return x >= 2;
     }
 
     private int gcd(int a, int b) {
-        return b == 0 ? a : gcd(b, a % b);
-    }
-
-    private int arrGCD(int[] arr, int n) {
-        int result = arr[0];
-        for (int i = 1; i < n; i++) {
-            result = gcd(arr[i], result);
+        if (b == 0) {
+            return a;
         }
-        return result;
+        return gcd(b, a % b);
     }
 }

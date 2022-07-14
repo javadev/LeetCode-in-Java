@@ -2945,7 +2945,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0917 |[Reverse Only Letters](src.save/main/java/g0901_1000/s0917_reverse_only_letters/Solution.java)| Easy | String, Two_Pointers | 0 | 100.00
 | 0916 |[Word Subsets](src.save/main/java/g0901_1000/s0916_word_subsets/Solution.java)| Medium | Array, String, Hash_Table | 30 | 57.30
 | 0915 |[Partition Array into Disjoint Intervals](src.save/main/java/g0901_1000/s0915_partition_array_into_disjoint_intervals/Solution.java)| Medium | Array | 2 | 99.81
-| 0914 |[X of a Kind in a Deck of Cards](src.save/main/java/g0901_1000/s0914_x_of_a_kind_in_a_deck_of_cards/Solution.java)| Easy | Array, Hash_Table, Math, Counting, Number_Theory | 16 | 19.29
+| 0914 |[X of a Kind in a Deck of Cards](src.save/main/java/g0901_1000/s0914_x_of_a_kind_in_a_deck_of_cards/Solution.java)| Easy | Array, Hash_Table, Math, Counting, Number_Theory | 11 | 51.18
 | 0913 |[Cat and Mouse](src.save/main/java/g0901_1000/s0913_cat_and_mouse/Solution.java)| Hard | Dynamic_Programming, Math, Graph, Memoization, Topological_Sort, Game_Theory | 16 | 97.20
 | 0912 |[Sort an Array](src.save/main/java/g0901_1000/s0912_sort_an_array/Solution.java)| Medium | Array, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Merge_Sort, Bucket_Sort, Counting_Sort, Radix_Sort, Udemy_Sorting_Algorithms | 25 | 38.15
 | 0911 |[Online Election](src.save/main/java/g0901_1000/s0911_online_election/TopVotedCandidate.java)| Medium | Array, Hash_Table, Binary_Search, Design, Binary_Search_II_Day_20 | 63 | 98.81
