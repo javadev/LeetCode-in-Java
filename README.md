@@ -2957,7 +2957,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0905 |[Sort Array By Parity](src.save/main/java/g0901_1000/s0905_sort_array_by_parity/Solution.java)| Easy | Array, Sorting, Two_Pointers | 1 | 95.51
 | 0904 |[Fruit Into Baskets](src.save/main/java/g0901_1000/s0904_fruit_into_baskets/Solution.java)| Medium | Array, Hash_Table, Sliding_Window | 6 | 95.60
 | 0903 |[Valid Permutations for DI Sequence](src.save/main/java/g0901_1000/s0903_valid_permutations_for_di_sequence/Solution.java)| Hard | Dynamic_Programming | 3 | 74.00
-| 0902 |[Numbers At Most N Given Digit Set](src.save/main/java/g0901_1000/s0902_numbers_at_most_n_given_digit_set/Solution.java)| Hard | Array, Dynamic_Programming, Math, Binary_Search | 2 | 18.29
+| 0902 |[Numbers At Most N Given Digit Set](src.save/main/java/g0901_1000/s0902_numbers_at_most_n_given_digit_set/Solution.java)| Hard | Array, Dynamic_Programming, Math, Binary_Search | 1 | 87.03
 | 0901 |[Online Stock Span](src.save/main/java/g0901_1000/s0901_online_stock_span/StockSpanner.java)| Medium | Stack, Design, Monotonic_Stack, Data_Stream | 47 | 76.17
 | 0900 |[RLE Iterator](src.save/main/java/g0801_0900/s0900_rle_iterator/RLEIterator.java)| Medium | Array, Design, Counting, Iterator | 3 | 100.00
 | 0899 |[Orderly Queue](src.save/main/java/g0801_0900/s0899_orderly_queue/Solution.java)| Hard | String, Math, Sorting | 1 | 100.00

@@ -11,7 +11,7 @@ import java.util.Random;
 
 @SuppressWarnings("java:S2245")
 public class Solution {
-    //O(n) time | O(n) space
+    // O(n) time | O(n) space
     private Map<Integer, List<Integer>> map;
     private Random rand;
 
@@ -22,7 +22,7 @@ public class Solution {
             map.computeIfAbsent(nums[i], k -> new ArrayList<>()).add(i);
         }
     }
-    
+
     public int pick(int target) {
         List<Integer> list = map.get(target);
         return list.get(rand.nextInt(list.size()));
