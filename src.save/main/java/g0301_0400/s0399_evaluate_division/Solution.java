@@ -1,7 +1,7 @@
 package g0301_0400.s0399_evaluate_division;
 
 // #Medium #Array #Depth_First_Search #Breadth_First_Search #Graph #Union_Find #Shortest_Path
-// #2022_03_16_Time_1_ms_(97.67%)_Space_42.6_MB_(43.14%)
+// #2022_07_15_Time_1_ms_(99.52%)_Space_43_MB_(20.05%)
 
 import java.util.HashMap;
 import java.util.List;
@@ -24,7 +24,6 @@ public class Solution {
             rate.put(x, 1.0);
             rate.put(y, 1.0);
         }
-
         for (int i = 0; i < n; ++i) {
             String x = equations.get(i).get(0);
             String y = equations.get(i).get(1);

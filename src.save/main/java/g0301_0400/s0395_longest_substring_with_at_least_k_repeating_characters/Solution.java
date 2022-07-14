@@ -1,7 +1,7 @@
 package g0301_0400.s0395_longest_substring_with_at_least_k_repeating_characters;
 
 // #Medium #Top_Interview_Questions #String #Hash_Table #Sliding_Window #Divide_and_Conquer
-// #2022_03_16_Time_0_ms_(100.00%)_Space_41.9_MB_(62.59%)
+// #2022_07_15_Time_0_ms_(100.00%)_Space_42.4_MB_(47.47%)
 
 public class Solution {
     public int longestSubstring(String s, int k) {
@@ -16,7 +16,6 @@ public class Solution {
         for (int i = start; i < end; i++) {
             nums[s.charAt(i) - 'a']++;
         }
-
         for (int i = start; i < end; i++) {
             if (nums[s.charAt(i) - 'a'] < k) {
                 int j = i + 1;

@@ -921,7 +921,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 1290 |[Convert Binary Number in a Linked List to Integer](src.save/main/java/g1201_1300/s1290_convert_binary_number_in_a_linked_list_to_integer/Solution.java)| Easy | Math, Linked_List | 0 | 100.00
 | 0876 |[Middle of the Linked List](src.save/main/java/g0801_0900/s0876_middle_of_the_linked_list/Solution.java)| Easy | Two_Pointers, Linked_List | 0 | 100.00
 | 0104 |[Maximum Depth of Binary Tree](src.save/main/java/g0101_0200/s0104_maximum_depth_of_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 0 | 100.00
-| 0404 |[Sum of Left Leaves](src.save/main/java/g0401_0500/s0404_sum_of_left_leaves/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 0 | 100.00
+| 0404 |[Sum of Left Leaves](src.save/main/java/g0401_0500/s0404_sum_of_left_leaves/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 1 | 29.26
 
 #### Day 11 Containers and Libraries
 
@@ -1369,7 +1369,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0844 |[Backspace String Compare](src.save/main/java/g0801_0900/s0844_backspace_string_compare/Solution.java)| Easy | String, Two_Pointers, Stack, Simulation | 0 | 100.00
-| 0394 |[Decode String](src.save/main/java/g0301_0400/s0394_decode_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Stack, Recursion | 1 | 83.81
+| 0394 |[Decode String](src.save/main/java/g0301_0400/s0394_decode_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Stack, Recursion | 1 | 87.68
 
 #### Day 15 Heap
 
@@ -1548,7 +1548,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0003 |[Longest Substring Without Repeating Characters](src.save/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window | 5 | 91.03
 | 0020 |[Valid Parentheses](src.save/main/java/g0001_0100/s0020_valid_parentheses/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, String, Stack | 3 | 51.72
 | 0005 |[Longest Palindromic Substring](src.save/main/java/g0001_0100/s0005_longest_palindromic_substring/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming | 10 | 98.57
-| 0394 |[Decode String](src.save/main/java/g0301_0400/s0394_decode_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Stack, Recursion | 1 | 83.81
+| 0394 |[Decode String](src.save/main/java/g0301_0400/s0394_decode_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Stack, Recursion | 1 | 87.68
 | 0242 |[Valid Anagram](src.save/main/java/g0201_0300/s0242_valid_anagram/Solution.java)| Easy | Top_Interview_Questions, String, Hash_Table, Sorting | 2 | 99.01
 | 0049 |[Group Anagrams](src.save/main/java/g0001_0100/s0049_group_anagrams/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, String, Hash_Table, Sorting | 11 | 71.16
 | 0151 |[Reverse Words in a String](src.save/main/java/g0101_0200/s0151_reverse_words_in_a_string/Solution.java)| Medium | String, Two_Pointers | 2 | 99.94
@@ -3363,17 +3363,17 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0407 |[Trapping Rain Water II](src.save/main/java/g0401_0500/s0407_trapping_rain_water_ii/Solution.java)| Hard | Array, Breadth_First_Search, Matrix, Heap_Priority_Queue | 10 | 99.01
 | 0406 |[Queue Reconstruction by Height](src.save/main/java/g0401_0500/s0406_queue_reconstruction_by_height/Solution.java)| Medium | Array, Sorting, Greedy, Segment_Tree, Binary_Indexed_Tree | 9 | 74.45
 | 0405 |[Convert a Number to Hexadecimal](src.save/main/java/g0401_0500/s0405_convert_a_number_to_hexadecimal/Solution.java)| Easy | Math, Bit_Manipulation | 0 | 100.00
-| 0404 |[Sum of Left Leaves](src.save/main/java/g0401_0500/s0404_sum_of_left_leaves/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Programming_Skills_I_Day_10_Linked_List_and_Tree | 0 | 100.00
-| 0403 |[Frog Jump](src.save/main/java/g0401_0500/s0403_frog_jump/Solution.java)| Hard | Array, Dynamic_Programming | 18 | 97.19
-| 0402 |[Remove K Digits](src.save/main/java/g0401_0500/s0402_remove_k_digits/Solution.java)| Medium | String, Greedy, Stack, Monotonic_Stack | 6 | 90.82
-| 0401 |[Binary Watch](src.save/main/java/g0401_0500/s0401_binary_watch/Solution.java)| Easy | Bit_Manipulation, Backtracking | 1 | 98.21
+| 0404 |[Sum of Left Leaves](src.save/main/java/g0401_0500/s0404_sum_of_left_leaves/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Programming_Skills_I_Day_10_Linked_List_and_Tree | 1 | 29.26
+| 0403 |[Frog Jump](src.save/main/java/g0401_0500/s0403_frog_jump/Solution.java)| Hard | Array, Dynamic_Programming | 13 | 99.06
+| 0402 |[Remove K Digits](src.save/main/java/g0401_0500/s0402_remove_k_digits/Solution.java)| Medium | String, Greedy, Stack, Monotonic_Stack | 4 | 99.66
+| 0401 |[Binary Watch](src.save/main/java/g0401_0500/s0401_binary_watch/Solution.java)| Easy | Bit_Manipulation, Backtracking | 1 | 99.26
 | 0400 |[Nth Digit](src.save/main/java/g0301_0400/s0400_nth_digit/Solution.java)| Medium | Math, Binary_Search | 0 | 100.00
-| 0399 |[Evaluate Division](src.save/main/java/g0301_0400/s0399_evaluate_division/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Graph, Union_Find, Shortest_Path | 1 | 97.67
-| 0398 |[Random Pick Index](src.save/main/java/g0301_0400/s0398_random_pick_index/Solution.java)| Medium | Hash_Table, Math, Randomized, Reservoir_Sampling | 75 | 74.64
-| 0397 |[Integer Replacement](src.save/main/java/g0301_0400/s0397_integer_replacement/Solution.java)| Medium | Dynamic_Programming, Greedy, Bit_Manipulation, Memoization | 0 | 100.00
-| 0396 |[Rotate Function](src.save/main/java/g0301_0400/s0396_rotate_function/Solution.java)| Medium | Array, Dynamic_Programming, Math | 3 | 98.51
+| 0399 |[Evaluate Division](src.save/main/java/g0301_0400/s0399_evaluate_division/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Graph, Union_Find, Shortest_Path | 1 | 99.52
+| 0398 |[Random Pick Index](src.save/main/java/g0301_0400/s0398_random_pick_index/Solution.java)| Medium | Hash_Table, Math, Randomized, Reservoir_Sampling | 102 | 83.94
+| 0397 |[Integer Replacement](src.save/main/java/g0301_0400/s0397_integer_replacement/Solution.java)| Medium | Dynamic_Programming, Greedy, Bit_Manipulation, Memoization | 1 | 66.03
+| 0396 |[Rotate Function](src.save/main/java/g0301_0400/s0396_rotate_function/Solution.java)| Medium | Array, Dynamic_Programming, Math | 4 | 81.33
 | 0395 |[Longest Substring with At Least K Repeating Characters](src.save/main/java/g0301_0400/s0395_longest_substring_with_at_least_k_repeating_characters/Solution.java)| Medium | Top_Interview_Questions, String, Hash_Table, Sliding_Window, Divide_and_Conquer | 0 | 100.00
-| 0394 |[Decode String](src.save/main/java/g0301_0400/s0394_decode_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Level_1_Day_14_Stack, Udemy_Strings | 1 | 83.81
+| 0394 |[Decode String](src.save/main/java/g0301_0400/s0394_decode_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Level_1_Day_14_Stack, Udemy_Strings | 1 | 87.68
 | 0393 |[UTF-8 Validation](src.save/main/java/g0301_0400/s0393_utf_8_validation/Solution.java)| Medium | Array, Bit_Manipulation | 1 | 100.00
 | 0392 |[Is Subsequence](src.save/main/java/g0301_0400/s0392_is_subsequence/Solution.java)| Easy | String, Dynamic_Programming, Two_Pointers, Dynamic_Programming_I_Day_19, Level_1_Day_2_String, Udemy_Two_Pointers | 1 | 93.01
 | 0391 |[Perfect Rectangle](src.save/main/java/g0301_0400/s0391_perfect_rectangle/Solution.java)| Hard | Array, Line_Sweep | 67 | 54.55
