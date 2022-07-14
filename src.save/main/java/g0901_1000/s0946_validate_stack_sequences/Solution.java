@@ -1,13 +1,13 @@
 package g0901_1000.s0946_validate_stack_sequences;
 
-// #Medium #Array #Stack #Simulation #2022_02_20_Time_6_ms_(20.54%)_Space_44.7_MB_(28.97%)
+// #Medium #Array #Stack #Simulation #2022_07_14_Time_1_ms_(99.26%)_Space_42.2_MB_(83.70%)
 
+import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.LinkedList;
 
 public class Solution {
     public boolean validateStackSequences(int[] pushed, int[] popped) {
-        Deque<Integer> stack = new LinkedList<>();
+        Deque<Integer> stack = new ArrayDeque<>();
         int i = 0;
         int j = 0;
         int len = pushed.length;
