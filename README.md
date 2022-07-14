@@ -2283,7 +2283,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 1784 |[Check if Binary String Has at Most One Segment of Ones](src.save/main/java/g1701_1800/s1784_check_if_binary_string_has_at_most_one_segment_of_ones/Solution.java)| Easy | String | 1 | 65.60
 | 1782 |[Count Pairs Of Nodes](src.save/main/java/g1701_1800/s1782_count_pairs_of_nodes/Solution.java)| Hard | Binary_Search, Two_Pointers, Graph | 128 | 86.96
 | 1781 |[Sum of Beauty of All Substrings](src.save/main/java/g1701_1800/s1781_sum_of_beauty_of_all_substrings/Solution.java)| Medium | String, Hash_Table, Counting | 38 | 100.00
-| 1780 |[Check if Number is a Sum of Powers of Three](src.save/main/java/g1701_1800/s1780_check_if_number_is_a_sum_of_powers_of_three/Solution.java)| Medium | Math | 2 | 19.71
+| 1780 |[Check if Number is a Sum of Powers of Three](src.save/main/java/g1701_1800/s1780_check_if_number_is_a_sum_of_powers_of_three/Solution.java)| Medium | Math | 0 | 100.00
 | 1779 |[Find Nearest Point That Has the Same X or Y Coordinate](src.save/main/java/g1701_1800/s1779_find_nearest_point_that_has_the_same_x_or_y_coordinate/Solution.java)| Easy | Array, Programming_Skills_I_Day_3_Conditional_Statements | 1 | 100.00
 | 1776 |[Car Fleet II](src.save/main/java/g1701_1800/s1776_car_fleet_ii/Solution.java)| Hard | Array, Math, Stack, Heap_Priority_Queue, Monotonic_Stack | 19 | 93.81
 | 1775 |[Equal Sum Arrays With Minimum Number of Operations](src.save/main/java/g1701_1800/s1775_equal_sum_arrays_with_minimum_number_of_operations/Solution.java)| Medium | Array, Hash_Table, Greedy, Counting | 16 | 70.88
