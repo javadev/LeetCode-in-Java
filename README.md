@@ -2245,7 +2245,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 1833 |[Maximum Ice Cream Bars](src.save/main/java/g1801_1900/s1833_maximum_ice_cream_bars/Solution.java)| Medium | Array, Sorting, Greedy | 39 | 84.49
 | 1832 |[Check if the Sentence Is Pangram](src.save/main/java/g1801_1900/s1832_check_if_the_sentence_is_pangram/Solution.java)| Easy | String, Hash_Table | 3 | 41.29
 | 1830 |[Minimum Number of Operations to Make String Sorted](src.save/main/java/g1801_1900/s1830_minimum_number_of_operations_to_make_string_sorted/Solution.java)| Hard | String, Math, Combinatorics | 125 | 94.12
-| 1829 |[Maximum XOR for Each Query](src.save/main/java/g1801_1900/s1829_maximum_xor_for_each_query/Solution.java)| Medium | Array, Bit_Manipulation, Prefix_Sum | 7 | 20.94
+| 1829 |[Maximum XOR for Each Query](src.save/main/java/g1801_1900/s1829_maximum_xor_for_each_query/Solution.java)| Medium | Array, Bit_Manipulation, Prefix_Sum | 5 | 61.24
 | 1828 |[Queries on Number of Points Inside a Circle](src.save/main/java/g1801_1900/s1828_queries_on_number_of_points_inside_a_circle/Solution.java)| Medium | Array, Math, Geometry | 23 | 75.03
 | 1827 |[Minimum Operations to Make the Array Increasing](src.save/main/java/g1801_1900/s1827_minimum_operations_to_make_the_array_increasing/Solution.java)| Easy | Array, Greedy | 4 | 35.67
 | 1825 |[Finding MK Average](src.save/main/java/g1801_1900/s1825_finding_mk_average/MKAverage.java)| Hard | Design, Heap_Priority_Queue, Ordered_Set, Queue | 83 | 60.59
@@ -2913,7 +2913,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0949 |[Largest Time for Given Digits](src.save/main/java/g0901_1000/s0949_largest_time_for_given_digits/Solution.java)| Medium | String, Enumeration | 3 | 91.21
 | 0948 |[Bag of Tokens](src.save/main/java/g0901_1000/s0948_bag_of_tokens/Solution.java)| Medium | Array, Sorting, Greedy, Two_Pointers | 4 | 32.05
 | 0947 |[Most Stones Removed with Same Row or Column](src.save/main/java/g0901_1000/s0947_most_stones_removed_with_same_row_or_column/Solution.java)| Medium | Depth_First_Search, Graph, Union_Find, Level_2_Day_19_Union_Find | 5 | 98.95
-| 0946 |[Validate Stack Sequences](src.save/main/java/g0901_1000/s0946_validate_stack_sequences/Solution.java)| Medium | Array, Stack, Simulation | 6 | 20.54
+| 0946 |[Validate Stack Sequences](src.save/main/java/g0901_1000/s0946_validate_stack_sequences/Solution.java)| Medium | Array, Stack, Simulation | 1 | 99.26
 | 0945 |[Minimum Increment to Make Array Unique](src.save/main/java/g0901_1000/s0945_minimum_increment_to_make_array_unique/Solution.java)| Medium | Array, Sorting, Greedy, Counting | 9 | 95.25
 | 0944 |[Delete Columns to Make Sorted](src.save/main/java/g0901_1000/s0944_delete_columns_to_make_sorted/Solution.java)| Easy | Array, String | 11 | 59.39
 | 0943 |[Find the Shortest Superstring](src.save/main/java/g0901_1000/s0943_find_the_shortest_superstring/Solution.java)| Hard | Array, String, Dynamic_Programming, Bit_Manipulation, Bitmask | 16 | 100.00
