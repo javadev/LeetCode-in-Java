@@ -3307,7 +3307,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0476 |[Number Complement](src.save/main/java/g0401_0500/s0476_number_complement/Solution.java)| Easy | Bit_Manipulation | 0 | 100.00
 | 0475 |[Heaters](src.save/main/java/g0401_0500/s0475_heaters/Solution.java)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 8 | 99.30
 | 0474 |[Ones and Zeroes](src.save/main/java/g0401_0500/s0474_ones_and_zeroes/Solution.java)| Medium | Array, String, Dynamic_Programming | 41 | 68.79
-| 0473 |[Matchsticks to Square](src.save/main/java/g0401_0500/s0473_matchsticks_to_square/Solution.java)| Medium | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 241 | 18.95
+| 0473 |[Matchsticks to Square](src.save/main/java/g0401_0500/s0473_matchsticks_to_square/Solution.java)| Medium | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 161 | 55.12
 | 0472 |[Concatenated Words](src.save/main/java/g0401_0500/s0472_concatenated_words/Solution.java)| Hard | Array, String, Dynamic_Programming, Depth_First_Search, Trie | 84 | 79.03
 | 0470 |[Implement Rand10() Using Rand7()](src.save/main/java/g0401_0500/s0470_implement_rand10_using_rand7/Solution.java)| Medium | Math, Randomized, Probability_and_Statistics, Rejection_Sampling | 10 | 51.04
 | 0468 |[Validate IP Address](src.save/main/java/g0401_0500/s0468_validate_ip_address/Solution.java)| Medium | String | 1 | 98.15

@@ -1,45 +1,41 @@
 package g0401_0500.s0473_matchsticks_to_square;
 
 // #Medium #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
-// #2022_03_18_Time_241_ms_(18.95%)_Space_42.1_MB_(40.60%)
+// #2022_07_14_Time_161_ms_(55.12%)_Space_40.4_MB_(88.85%)
+
+import java.util.Arrays;
 
 public class Solution {
     public boolean makesquare(int[] matchsticks) {
         if (matchsticks.length < 4) {
             return false;
         }
-        int totalSum = 0;
-        for (int m : matchsticks) {
-            totalSum += m;
+        int per = 0;
+        for (int ele : matchsticks) {
+            per = ele + per;
         }
-        if (totalSum % 4 != 0) {
+        if (per % 4 != 0) {
             return false;
         }
-        int target = totalSum / 4;
-        boolean[] used = new boolean[matchsticks.length];
-        return backtracking(matchsticks, used, target, 0, 0, 0);
+        Arrays.sort(matchsticks);
+        int side = per / 4;
+        int[] sides = new int[] {side, side, side, side};
+        return help(matchsticks, matchsticks.length - 1, sides);
     }
 
-    private boolean backtracking(
-            int[] matchsticks, boolean[] used, int target, int count, int currSum, int start) {
-        if (count == 3) {
-            return true;
+    private boolean help(int[] nums, int i, int[] side) {
+        if (i == -1) {
+            return side[0] == 0 && side[1] == 0 && side[2] == 0 && side[3] == 0;
         }
-        if (currSum > target) {
-            return false;
-        }
-        if (currSum == target) {
-            return backtracking(matchsticks, used, target, count + 1, 0, 0);
-        }
-        for (int i = start; i < matchsticks.length; i++) {
-            if (!used[i]) {
-                used[i] = true;
-                if (backtracking(
-                        matchsticks, used, target, count, currSum + matchsticks[i], i + 1)) {
-                    return true;
-                }
-                used[i] = false;
+        for (int j = 0; j < 4; j++) {
+            if (nums[i] > side[j]) {
+                continue;
             }
+            side[j] -= nums[i];
+            if (help(nums, i - 1, side)) {
+                return true;
+            }
+            side[j] += nums[i];
         }
         return false;
     }
