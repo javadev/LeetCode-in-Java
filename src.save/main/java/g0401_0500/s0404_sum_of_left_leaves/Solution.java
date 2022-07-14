@@ -2,7 +2,7 @@ package g0401_0500.s0404_sum_of_left_leaves;
 
 // #Easy #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
 // #Programming_Skills_I_Day_10_Linked_List_and_Tree
-// #2022_03_16_Time_0_ms_(100.00%)_Space_40.1_MB_(69.43%)
+// #2022_07_15_Time_1_ms_(29.26%)_Space_42.7_MB_(7.22%)
 
 import com_github_leetcode.TreeNode;
 import java.util.ArrayList;

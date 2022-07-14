@@ -1,6 +1,6 @@
 package g0401_0500.s0401_binary_watch;
 
-// #Easy #Bit_Manipulation #Backtracking #2022_03_16_Time_1_ms_(98.21%)_Space_42.4_MB_(65.26%)
+// #Easy #Bit_Manipulation #Backtracking #2022_07_15_Time_1_ms_(99.26%)_Space_43.1_MB_(42.54%)
 
 import java.util.ArrayList;
 import java.util.List;

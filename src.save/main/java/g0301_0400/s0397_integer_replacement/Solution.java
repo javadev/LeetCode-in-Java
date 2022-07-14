@@ -1,7 +1,7 @@
 package g0301_0400.s0397_integer_replacement;
 
 // #Medium #Dynamic_Programming #Greedy #Bit_Manipulation #Memoization
-// #2022_03_16_Time_0_ms_(100.00%)_Space_39.3_MB_(62.74%)
+// #2022_07_15_Time_1_ms_(66.03%)_Space_41.7_MB_(9.89%)
 
 import java.util.HashMap;
 import java.util.Map;
