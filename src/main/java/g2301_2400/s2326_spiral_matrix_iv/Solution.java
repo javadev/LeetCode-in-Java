@@ -17,17 +17,17 @@ import com_github_leetcode.ListNode;
  */
 public class Solution {
     private enum Direction {
-        Right,
-        Down,
-        Left,
-        Up
+        RIGHT,
+        DOWN,
+        LEFT,
+        UP
     }
 
     public int[][] spiralMatrix(int m, int n, ListNode head) {
         int[][] arr = new int[m][n];
         int i = 0;
         int j = -1;
-        Direction direction = Direction.Right;
+        Direction direction = Direction.RIGHT;
         // Boundaries
         // ++ after Left to right Horizontal traversed
         int a = 0;
@@ -44,33 +44,33 @@ public class Solution {
                 head = head.next;
             }
             switch (direction) {
-                case Right:
+                case RIGHT:
                 default:
                     ++j;
                     if (j == b) {
-                        direction = Direction.Down;
+                        direction = Direction.DOWN;
                         ++a;
                     }
                     break;
-                case Down:
+                case DOWN:
                     ++i;
                     if (i == c) {
-                        direction = Direction.Left;
+                        direction = Direction.LEFT;
                     }
                     break;
-                case Left:
+                case LEFT:
                     --j;
                     if (j == d) {
                         --c;
-                        direction = Direction.Up;
+                        direction = Direction.UP;
                     }
                     break;
-                case Up:
+                case UP:
                     --i;
                     if (i == a) {
                         --b;
                         ++d;
-                        direction = Direction.Right;
+                        direction = Direction.RIGHT;
                     }
                     break;
             }
