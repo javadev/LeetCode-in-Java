@@ -45,6 +45,7 @@ public class Solution {
             }
             switch (direction) {
                 case Right:
+                default:
                     ++j;
                     if (j == b) {
                         direction = Direction.Down;
