@@ -1,10 +1,9 @@
 package g2301_2400.s2326_spiral_matrix_iv;
 
 // #Medium #Array #Linked_List #Matrix #Simulation
-// #2022_07_03_Time_12_ms_(83.33%)_Space_239.8_MB_(16.67%)
+// #2022_07_15_Time_12_ms_(85.48%)_Space_61.9_MB_(90.83%)
 
 import com_github_leetcode.ListNode;
-import java.util.Arrays;
 
 /*
  * Definition for singly-linked list.
@@ -16,77 +15,67 @@ import java.util.Arrays;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-@SuppressWarnings({"java:S135", "java:S2583"})
 public class Solution {
+    private enum Direction {
+        RIGHT,
+        DOWN,
+        LEFT,
+        UP
+    }
+
     public int[][] spiralMatrix(int m, int n, ListNode head) {
-        int[][] result = new int[m][n];
-        for (int[] x : result) {
-            Arrays.fill(x, -1);
-        }
-        int rowBegin = 0;
-        int rowEnd = m - 1;
-        int colBegin = 0;
-        int colEnd = n - 1;
-        while (rowBegin <= rowEnd && colBegin <= colEnd) {
-            // traverse right
-            for (int j = colBegin; j <= colEnd; j++) {
-                result[rowBegin][j] = head.val;
+        int[][] arr = new int[m][n];
+        int i = 0;
+        int j = -1;
+        Direction direction = Direction.RIGHT;
+        // Boundaries
+        // ++ after Left to right Horizontal traversed
+        int a = 0;
+        // -- after Down to Up vertical traversed
+        int b = n - 1;
+        // -- after Right to Left horizontal teversed
+        int c = m - 1;
+        // ++ after Down to Up vertical traversed
+        int d = 0;
+        for (int k = 0; k < m * n; ++k) {
+            int val = -1;
+            if (head != null) {
+                val = head.val;
                 head = head.next;
-                if (head == null) {
-                    break;
-                }
             }
-            rowBegin++;
-            if (head == null) {
-                break;
-            }
-            // Traverse Down
-            for (int j = rowBegin; j <= rowEnd; j++) {
-                result[j][colEnd] = head.val;
-                head = head.next;
-                if (head == null) {
-                    break;
-                }
-            }
-            colEnd--;
-            if (head == null) {
-                break;
-            }
-            if (rowBegin <= rowEnd) {
-                // Traverse Left
-                for (int j = colEnd; j >= colBegin; j--) {
-                    result[rowEnd][j] = head.val;
-                    head = head.next;
-                    if (head == null) {
-                        break;
+            switch (direction) {
+                case RIGHT:
+                    ++j;
+                    if (j == b) {
+                        direction = Direction.DOWN;
+                        ++a;
                     }
-                }
-                if (head == null) {
                     break;
-                }
-            }
-            rowEnd--;
-            if (head == null) {
-                break;
-            }
-            if (colBegin <= colEnd) {
-                // Traver Up
-                for (int j = rowEnd; j >= rowBegin; j--) {
-                    result[j][colBegin] = head.val;
-                    head = head.next;
-                    if (head == null) {
-                        break;
+                case DOWN:
+                    ++i;
+                    if (i == c) {
+                        direction = Direction.LEFT;
                     }
-                }
-                if (head == null) {
                     break;
-                }
+                case LEFT:
+                    --j;
+                    if (j == d) {
+                        --c;
+                        direction = Direction.UP;
+                    }
+                    break;
+                case UP:
+                default:
+                    --i;
+                    if (i == a) {
+                        --b;
+                        ++d;
+                        direction = Direction.RIGHT;
+                    }
+                    break;
             }
-            colBegin++;
-            if (head == null) {
-                break;
-            }
+            arr[i][j] = val;
         }
-        return result;
+        return arr;
     }
 }
