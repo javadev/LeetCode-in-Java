@@ -65,13 +65,13 @@ public class Solution {
                     }
                     break;
                 case UP:
+                default:
                     --i;
                     if (i == a) {
                         --b;
                         ++d;
                         direction = Direction.RIGHT;
                     }
-                default:
                     break;
             }
             arr[i][j] = val;
