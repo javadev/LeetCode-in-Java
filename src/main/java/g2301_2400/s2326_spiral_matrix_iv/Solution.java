@@ -45,7 +45,6 @@ public class Solution {
             }
             switch (direction) {
                 case RIGHT:
-                default:
                     ++j;
                     if (j == b) {
                         direction = Direction.DOWN;
@@ -72,6 +71,7 @@ public class Solution {
                         ++d;
                         direction = Direction.RIGHT;
                     }
+                default:
                     break;
             }
             arr[i][j] = val;
