@@ -1,18 +1,16 @@
 package g0401_0500.s0410_split_array_largest_sum;
 
 // #Hard #Array #Dynamic_Programming #Greedy #Binary_Search
-// #2022_03_16_Time_1_ms_(84.88%)_Space_41.4_MB_(59.15%)
+// #2022_07_16_Time_1_ms_(86.51%)_Space_41.4_MB_(68.72%)
 
 public class Solution {
     public int splitArray(int[] nums, int m) {
         int maxVal = 0;
         int minVal = nums[0];
-
         for (int num : nums) {
             maxVal += num;
             minVal = Math.max(minVal, num);
         }
-
         while (minVal < maxVal) {
             int midVal = minVal + (maxVal - minVal) / 2;
             // if we can split, try to reduce the midVal so decrease maxVal
@@ -23,7 +21,6 @@ public class Solution {
                 minVal = midVal + 1;
             }
         }
-
         return minVal;
     }
 

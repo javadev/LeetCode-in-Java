@@ -94,8 +94,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0415 |[Add Strings](src.save/main/java/g0401_0500/s0415_add_strings/Solution.java)| Easy | String, Math, Simulation | 3 | 75.64
-| 0409 |[Longest Palindrome](src.save/main/java/g0401_0500/s0409_longest_palindrome/Solution.java)| Easy | String, Hash_Table, Greedy | 1 | 100.00
+| 0415 |[Add Strings](src.save/main/java/g0401_0500/s0415_add_strings/Solution.java)| Easy | String, Math, Simulation | 3 | 82.41
+| 0409 |[Longest Palindrome](src.save/main/java/g0401_0500/s0409_longest_palindrome/Solution.java)| Easy | String, Hash_Table, Greedy | 2 | 92.90
 
 #### Day 7 String
 
@@ -1306,7 +1306,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0121 |[Best Time to Buy and Sell Stock](src.save/main/java/g0101_0200/s0121_best_time_to_buy_and_sell_stock/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 1 | 100.00
-| 0409 |[Longest Palindrome](src.save/main/java/g0401_0500/s0409_longest_palindrome/Solution.java)| Easy | String, Hash_Table, Greedy | 1 | 100.00
+| 0409 |[Longest Palindrome](src.save/main/java/g0401_0500/s0409_longest_palindrome/Solution.java)| Easy | String, Hash_Table, Greedy | 2 | 92.90
 
 #### Day 6 Tree
 
@@ -1470,7 +1470,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0416 |[Partition Equal Subset Sum](src.save/main/java/g0401_0500/s0416_partition_equal_subset_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming | 1 | 99.87
+| 0416 |[Partition Equal Subset Sum](src.save/main/java/g0401_0500/s0416_partition_equal_subset_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming | 2 | 99.96
 | 0152 |[Maximum Product Subarray](src.save/main/java/g0101_0200/s0152_maximum_product_subarray/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 0 | 100.00
 
 #### Day 14 Sliding Window/Two Pointer
@@ -1531,7 +1531,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0412 |[Fizz Buzz](src.save/main/java/g0401_0500/s0412_fizz_buzz/Solution.java)| Easy | Top_Interview_Questions, String, Math, Simulation | 3 | 32.80
+| 0412 |[Fizz Buzz](src.save/main/java/g0401_0500/s0412_fizz_buzz/Solution.java)| Easy | Top_Interview_Questions, String, Math, Simulation | 1 | 100.00
 | 0136 |[Single Number](src.save/main/java/g0101_0200/s0136_single_number/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Bit_Manipulation | 1 | 99.97
 | 0007 |[Reverse Integer](src.save/main/java/g0001_0100/s0007_reverse_integer/Solution.java)| Medium | Top_Interview_Questions, Math | 2 | 66.74
 | 0009 |[Palindrome Number](src.save/main/java/g0001_0100/s0009_palindrome_number/Solution.java)| Easy | Math | 13 | 58.99
@@ -1858,7 +1858,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 2331 |[Evaluate Boolean Binary Tree](src/main/java/g2301_2400/s2331_evaluate_boolean_binary_tree/Solution.java)| Easy | Binary_Search, Tree, Depth_First_Search | 0 | 100.00
 | 2328 |[Number of Increasing Paths in a Grid](src/main/java/g2301_2400/s2328_number_of_increasing_paths_in_a_grid/Solution.java)| Hard | Array, Dynamic_Programming, Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort, Memoization, Matrix | 43 | 100.00
 | 2327 |[Number of People Aware of a Secret](src/main/java/g2301_2400/s2327_number_of_people_aware_of_a_secret/Solution.java)| Medium | Dynamic_Programming, Queue, Simulation | 7 | 80.00
-| 2326 |[Spiral Matrix IV](src/main/java/g2301_2400/s2326_spiral_matrix_iv/Solution.java)| Medium | Array, Linked_List, Matrix, Simulation | 12 | 83.33
+| 2326 |[Spiral Matrix IV](src/main/java/g2301_2400/s2326_spiral_matrix_iv/Solution.java)| Medium | Array, Linked_List, Matrix, Simulation | 12 | 85.48
 | 2325 |[Decode the Message](src/main/java/g2301_2400/s2325_decode_the_message/Solution.java)| Easy | Hash_Table, String | 7 | 42.86
 | 2322 |[Minimum Score After Removals on a Tree](src/main/java/g2301_2400/s2322_minimum_score_after_removals_on_a_tree/Solution.java)| Hard | Array, Bit_Manipulation, Tree, Depth_First_Search | 255 | 70.70
 | 2321 |[Maximum Score Of Spliced Array](src/main/java/g2301_2400/s2321_maximum_score_of_spliced_array/Solution.java)| Hard | Array, Dynamic_Programming | 3 | 99.68
@@ -3353,16 +3353,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0420 |[Strong Password Checker](src.save/main/java/g0401_0500/s0420_strong_password_checker/Solution.java)| Hard | String, Greedy, Heap_Priority_Queue | 0 | 100.00
 | 0419 |[Battleships in a Board](src.save/main/java/g0401_0500/s0419_battleships_in_a_board/Solution.java)| Medium | Array, Depth_First_Search, Matrix | 1 | 83.10
 | 0417 |[Pacific Atlantic Water Flow](src.save/main/java/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Graph_Theory_I_Day_4_Matrix_Related_Problems, Level_2_Day_10_Graph/BFS/DFS, Udemy_Graph | 5 | 89.66
-| 0416 |[Partition Equal Subset Sum](src.save/main/java/g0401_0500/s0416_partition_equal_subset_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 1 | 99.87
-| 0415 |[Add Strings](src.save/main/java/g0401_0500/s0415_add_strings/Solution.java)| Easy | String, Math, Simulation, Data_Structure_II_Day_6_String | 3 | 75.64
-| 0414 |[Third Maximum Number](src.save/main/java/g0401_0500/s0414_third_maximum_number/Solution.java)| Easy | Array, Sorting | 1 | 96.71
+| 0416 |[Partition Equal Subset Sum](src.save/main/java/g0401_0500/s0416_partition_equal_subset_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 2 | 99.96
+| 0415 |[Add Strings](src.save/main/java/g0401_0500/s0415_add_strings/Solution.java)| Easy | String, Math, Simulation, Data_Structure_II_Day_6_String | 3 | 82.41
+| 0414 |[Third Maximum Number](src.save/main/java/g0401_0500/s0414_third_maximum_number/Solution.java)| Easy | Array, Sorting | 1 | 97.59
 | 0413 |[Arithmetic Slices](src.save/main/java/g0401_0500/s0413_arithmetic_slices/Solution.java)| Medium | Array, Dynamic_Programming, Algorithm_II_Day_14_Dynamic_Programming, Dynamic_Programming_I_Day_10 | 0 | 100.00
-| 0412 |[Fizz Buzz](src.save/main/java/g0401_0500/s0412_fizz_buzz/Solution.java)| Easy | Top_Interview_Questions, String, Math, Simulation, Udemy_Integers | 3 | 32.80
-| 0410 |[Split Array Largest Sum](src.save/main/java/g0401_0500/s0410_split_array_largest_sum/Solution.java)| Hard | Array, Dynamic_Programming, Greedy, Binary_Search | 1 | 84.88
-| 0409 |[Longest Palindrome](src.save/main/java/g0401_0500/s0409_longest_palindrome/Solution.java)| Easy | String, Hash_Table, Greedy, Data_Structure_II_Day_6_String, Level_1_Day_5_Greedy | 1 | 100.00
-| 0407 |[Trapping Rain Water II](src.save/main/java/g0401_0500/s0407_trapping_rain_water_ii/Solution.java)| Hard | Array, Breadth_First_Search, Matrix, Heap_Priority_Queue | 10 | 99.01
-| 0406 |[Queue Reconstruction by Height](src.save/main/java/g0401_0500/s0406_queue_reconstruction_by_height/Solution.java)| Medium | Array, Sorting, Greedy, Segment_Tree, Binary_Indexed_Tree | 9 | 74.45
-| 0405 |[Convert a Number to Hexadecimal](src.save/main/java/g0401_0500/s0405_convert_a_number_to_hexadecimal/Solution.java)| Easy | Math, Bit_Manipulation | 0 | 100.00
+| 0412 |[Fizz Buzz](src.save/main/java/g0401_0500/s0412_fizz_buzz/Solution.java)| Easy | Top_Interview_Questions, String, Math, Simulation, Udemy_Integers | 1 | 100.00
+| 0410 |[Split Array Largest Sum](src.save/main/java/g0401_0500/s0410_split_array_largest_sum/Solution.java)| Hard | Array, Dynamic_Programming, Greedy, Binary_Search | 1 | 86.51
+| 0409 |[Longest Palindrome](src.save/main/java/g0401_0500/s0409_longest_palindrome/Solution.java)| Easy | String, Hash_Table, Greedy, Data_Structure_II_Day_6_String, Level_1_Day_5_Greedy | 2 | 92.90
+| 0407 |[Trapping Rain Water II](src.save/main/java/g0401_0500/s0407_trapping_rain_water_ii/Solution.java)| Hard | Array, Breadth_First_Search, Matrix, Heap_Priority_Queue | 15 | 96.81
+| 0406 |[Queue Reconstruction by Height](src.save/main/java/g0401_0500/s0406_queue_reconstruction_by_height/Solution.java)| Medium | Array, Sorting, Greedy, Segment_Tree, Binary_Indexed_Tree | 5 | 99.82
+| 0405 |[Convert a Number to Hexadecimal](src.save/main/java/g0401_0500/s0405_convert_a_number_to_hexadecimal/Solution.java)| Easy | Math, Bit_Manipulation | 1 | 71.02
 | 0404 |[Sum of Left Leaves](src.save/main/java/g0401_0500/s0404_sum_of_left_leaves/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Programming_Skills_I_Day_10_Linked_List_and_Tree | 1 | 29.26
 | 0403 |[Frog Jump](src.save/main/java/g0401_0500/s0403_frog_jump/Solution.java)| Hard | Array, Dynamic_Programming | 13 | 99.06
 | 0402 |[Remove K Digits](src.save/main/java/g0401_0500/s0402_remove_k_digits/Solution.java)| Medium | String, Greedy, Stack, Monotonic_Stack | 4 | 99.66

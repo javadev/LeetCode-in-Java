@@ -1,7 +1,7 @@
 package g0401_0500.s0409_longest_palindrome;
 
 // #Easy #String #Hash_Table #Greedy #Data_Structure_II_Day_6_String #Level_1_Day_5_Greedy
-// #2022_03_16_Time_1_ms_(100.00%)_Space_40.1_MB_(75.61%)
+// #2022_07_16_Time_2_ms_(92.90%)_Space_40.5_MB_(95.32%)
 
 import java.util.BitSet;
 
