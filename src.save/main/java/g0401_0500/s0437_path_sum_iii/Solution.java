@@ -1,11 +1,9 @@
 package g0401_0500.s0437_path_sum_iii;
 
 // #Medium #Top_100_Liked_Questions #Depth_First_Search #Tree #Binary_Tree #Level_2_Day_7_Tree
-// #2022_03_18_Time_4_ms_(87.75%)_Space_44.5_MB_(27.82%)
+// #2022_07_16_Time_18_ms_(45.66%)_Space_42_MB_(88.96%)
 
 import com_github_leetcode.TreeNode;
-import java.util.HashMap;
-import java.util.Map;
 
 /*
  * Definition for a binary tree node.
@@ -23,24 +21,28 @@ import java.util.Map;
  * }
  */
 public class Solution {
-    private int count(TreeNode root, int targetSum, Map<Integer, Integer> hashMap, int currentSum) {
+    private int count = 0;
+
+    public int pathSum(TreeNode root, int targetSum) {
         if (root == null) {
             return 0;
         }
-        int count = 0;
-        if (hashMap.containsKey(currentSum + root.val - targetSum)) {
-            count = count + hashMap.get(currentSum + root.val - targetSum);
-        }
-        hashMap.put(currentSum + root.val, hashMap.getOrDefault(currentSum + root.val, 0) + 1);
-        int l1 = count(root.left, targetSum, hashMap, currentSum + root.val);
-        int l2 = count(root.right, targetSum, hashMap, currentSum + root.val);
-        hashMap.put(currentSum + root.val, hashMap.getOrDefault(currentSum + root.val, 0) - 1);
-        return l1 + l2 + count;
+        helper(root, targetSum, 0);
+        pathSum(root.left, targetSum);
+        pathSum(root.right, targetSum);
+        return count;
     }
 
-    public int pathSum(TreeNode root, int targetSum) {
-        Map<Integer, Integer> map = new HashMap<>();
-        map.put(0, 1);
-        return count(root, targetSum, map, 0);
+    public void helper(TreeNode node, int targetSum, long currSum) {
+        currSum += node.val;
+        if (targetSum == currSum) {
+            count++;
+        }
+        if (node.left != null) {
+            helper(node.left, targetSum, currSum);
+        }
+        if (node.right != null) {
+            helper(node.right, targetSum, currSum);
+        }
     }
 }
