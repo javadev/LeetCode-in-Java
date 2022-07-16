@@ -1002,7 +1002,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1630 |[Arithmetic Subarrays](src.save/main/java/g1601_1700/s1630_arithmetic_subarrays/Solution.java)| Medium | Array, Sorting | 8 | 93.62
-| 0429 |[N-ary Tree Level Order Traversal](src.save/main/java/g0401_0500/s0429_n_ary_tree_level_order_traversal/Solution.java)| Medium | Breadth_First_Search, Tree | 4 | 57.07
+| 0429 |[N-ary Tree Level Order Traversal](src.save/main/java/g0401_0500/s0429_n_ary_tree_level_order_traversal/Solution.java)| Medium | Breadth_First_Search, Tree | 3 | 80.26
 
 #### Day 10
 
@@ -1110,7 +1110,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1162 |[As Far from Land as Possible](src.save/main/java/g1101_1200/s1162_as_far_from_land_as_possible/Solution.java)| Medium | Array, Dynamic_Programming, Breadth_First_Search, Matrix | 12 | 89.17
-| 0417 |[Pacific Atlantic Water Flow](src.save/main/java/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 5 | 89.66
+| 0417 |[Pacific Atlantic Water Flow](src.save/main/java/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 5 | 92.62
 
 #### Day 5 Matrix Related Problems
 
@@ -1167,7 +1167,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0433 |[Minimum Genetic Mutation](src.save/main/java/g0401_0500/s0433_minimum_genetic_mutation/Solution.java)| Medium | String, Hash_Table, Breadth_First_Search | 0 | 100.00
+| 0433 |[Minimum Genetic Mutation](src.save/main/java/g0401_0500/s0433_minimum_genetic_mutation/Solution.java)| Medium | String, Hash_Table, Breadth_First_Search | 1 | 90.95
 | 0752 |[Open the Lock](src.save/main/java/g0701_0800/s0752_open_the_lock/Solution.java)| Medium | Array, String, Hash_Table, Breadth_First_Search | 72 | 91.06
 | 0127 |[Word Ladder](src.save/main/java/g0101_0200/s0127_word_ladder/Solution.java)| Hard | Top_Interview_Questions, String, Hash_Table, Breadth_First_Search | 37 | 94.58
 
@@ -1355,7 +1355,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0438 |[Find All Anagrams in a String](src.save/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window | 8 | 87.18
-| 0424 |[Longest Repeating Character Replacement](src.save/main/java/g0401_0500/s0424_longest_repeating_character_replacement/Solution.java)| Medium | String, Hash_Table, Sliding_Window | 5 | 92.61
+| 0424 |[Longest Repeating Character Replacement](src.save/main/java/g0401_0500/s0424_longest_repeating_character_replacement/Solution.java)| Medium | String, Hash_Table, Sliding_Window | 5 | 95.15
 
 #### Day 13 Hashmap
 
@@ -1450,7 +1450,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0994 |[Rotting Oranges](src.save/main/java/g0901_1000/s0994_rotting_oranges/Solution.java)| Medium | Array, Breadth_First_Search, Matrix | 3 | 74.27
-| 0417 |[Pacific Atlantic Water Flow](src.save/main/java/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 5 | 89.66
+| 0417 |[Pacific Atlantic Water Flow](src.save/main/java/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 5 | 92.62
 
 #### Day 11 Graph/BFS/DFS
 
@@ -1687,7 +1687,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 |-|-|-|-|-|-
 | 0200 |[Number of Islands](src.save/main/java/g0101_0200/s0200_number_of_islands/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 3 | 97.76
 | 0133 |[Clone Graph](src.save/main/java/g0101_0200/s0133_clone_graph/Solution.java)| Medium | Hash_Table, Depth_First_Search, Breadth_First_Search, Graph | 45 | 29.80
-| 0417 |[Pacific Atlantic Water Flow](src.save/main/java/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 5 | 89.66
+| 0417 |[Pacific Atlantic Water Flow](src.save/main/java/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 5 | 92.62
 
 #### Udemy Dynamic Programming
 
@@ -3342,17 +3342,17 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0436 |[Find Right Interval](src.save/main/java/g0401_0500/s0436_find_right_interval/Solution.java)| Medium | Array, Sorting, Binary_Search, Binary_Search_II_Day_11 | 17 | 87.90
 | 0435 |[Non-overlapping Intervals](src.save/main/java/g0401_0500/s0435_non_overlapping_intervals/Solution.java)| Medium | Array, Dynamic_Programming, Sorting, Greedy, Data_Structure_II_Day_4_Array | 109 | 26.80
 | 0434 |[Number of Segments in a String](src.save/main/java/g0401_0500/s0434_number_of_segments_in_a_string/Solution.java)| Easy | String | 0 | 100.00
-| 0433 |[Minimum Genetic Mutation](src.save/main/java/g0401_0500/s0433_minimum_genetic_mutation/Solution.java)| Medium | String, Hash_Table, Breadth_First_Search, Graph_Theory_I_Day_12_Breadth_First_Search | 0 | 100.00
-| 0432 |[All O\`one Data Structure](src.save/main/java/g0401_0500/s0432_all_oone_data_structure/AllOne.java)| Hard | Hash_Table, Design, Linked_List, Doubly_Linked_List | 87 | 62.81
+| 0433 |[Minimum Genetic Mutation](src.save/main/java/g0401_0500/s0433_minimum_genetic_mutation/Solution.java)| Medium | String, Hash_Table, Breadth_First_Search, Graph_Theory_I_Day_12_Breadth_First_Search | 1 | 90.95
+| 0432 |[All O\`one Data Structure](src.save/main/java/g0401_0500/s0432_all_oone_data_structure/AllOne.java)| Hard | Hash_Table, Design, Linked_List, Doubly_Linked_List | 101 | 52.51
 | 0430 |[Flatten a Multilevel Doubly Linked List](src.save/main/java/g0401_0500/s0430_flatten_a_multilevel_doubly_linked_list/Solution.java)| Medium | Depth_First_Search, Linked_List, Doubly_Linked_List | 0 | 100.00
-| 0429 |[N-ary Tree Level Order Traversal](src.save/main/java/g0401_0500/s0429_n_ary_tree_level_order_traversal/Solution.java)| Medium | Breadth_First_Search, Tree, Programming_Skills_II_Day_9 | 4 | 57.07
-| 0427 |[Construct Quad Tree](src.save/main/java/g0401_0500/s0427_construct_quad_tree/Solution.java)| Medium | Array, Tree, Matrix, Divide_and_Conquer | 1 | 85.16
-| 0424 |[Longest Repeating Character Replacement](src.save/main/java/g0401_0500/s0424_longest_repeating_character_replacement/Solution.java)| Medium | String, Hash_Table, Sliding_Window, Level_1_Day_12_Sliding_Window/Two_Pointer | 5 | 92.61
-| 0423 |[Reconstruct Original Digits from English](src.save/main/java/g0401_0500/s0423_reconstruct_original_digits_from_english/Solution.java)| Medium | String, Hash_Table, Math | 3 | 100.00
-| 0421 |[Maximum XOR of Two Numbers in an Array](src.save/main/java/g0401_0500/s0421_maximum_xor_of_two_numbers_in_an_array/Solution.java)| Medium | Array, Hash_Table, Bit_Manipulation, Trie | 22 | 99.22
+| 0429 |[N-ary Tree Level Order Traversal](src.save/main/java/g0401_0500/s0429_n_ary_tree_level_order_traversal/Solution.java)| Medium | Breadth_First_Search, Tree, Programming_Skills_II_Day_9 | 3 | 80.26
+| 0427 |[Construct Quad Tree](src.save/main/java/g0401_0500/s0427_construct_quad_tree/Solution.java)| Medium | Array, Tree, Matrix, Divide_and_Conquer | 0 | 100.00
+| 0424 |[Longest Repeating Character Replacement](src.save/main/java/g0401_0500/s0424_longest_repeating_character_replacement/Solution.java)| Medium | String, Hash_Table, Sliding_Window, Level_1_Day_12_Sliding_Window/Two_Pointer | 5 | 95.15
+| 0423 |[Reconstruct Original Digits from English](src.save/main/java/g0401_0500/s0423_reconstruct_original_digits_from_english/Solution.java)| Medium | String, Hash_Table, Math | 6 | 89.85
+| 0421 |[Maximum XOR of Two Numbers in an Array](src.save/main/java/g0401_0500/s0421_maximum_xor_of_two_numbers_in_an_array/Solution.java)| Medium | Array, Hash_Table, Bit_Manipulation, Trie | 14 | 100.00
 | 0420 |[Strong Password Checker](src.save/main/java/g0401_0500/s0420_strong_password_checker/Solution.java)| Hard | String, Greedy, Heap_Priority_Queue | 0 | 100.00
-| 0419 |[Battleships in a Board](src.save/main/java/g0401_0500/s0419_battleships_in_a_board/Solution.java)| Medium | Array, Depth_First_Search, Matrix | 1 | 83.10
-| 0417 |[Pacific Atlantic Water Flow](src.save/main/java/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Graph_Theory_I_Day_4_Matrix_Related_Problems, Level_2_Day_10_Graph/BFS/DFS, Udemy_Graph | 5 | 89.66
+| 0419 |[Battleships in a Board](src.save/main/java/g0401_0500/s0419_battleships_in_a_board/Solution.java)| Medium | Array, Depth_First_Search, Matrix | 0 | 100.00
+| 0417 |[Pacific Atlantic Water Flow](src.save/main/java/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Graph_Theory_I_Day_4_Matrix_Related_Problems, Level_2_Day_10_Graph/BFS/DFS, Udemy_Graph | 5 | 92.62
 | 0416 |[Partition Equal Subset Sum](src.save/main/java/g0401_0500/s0416_partition_equal_subset_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 2 | 99.96
 | 0415 |[Add Strings](src.save/main/java/g0401_0500/s0415_add_strings/Solution.java)| Easy | String, Math, Simulation, Data_Structure_II_Day_6_String | 3 | 82.41
 | 0414 |[Third Maximum Number](src.save/main/java/g0401_0500/s0414_third_maximum_number/Solution.java)| Easy | Array, Sorting | 1 | 97.59
