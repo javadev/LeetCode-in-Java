@@ -80,7 +80,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0240 |[Search a 2D Matrix II](src.save/main/java/g0201_0300/s0240_search_a_2d_matrix_ii/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Matrix, Divide_and_Conquer | 7 | 86.73
-| 0435 |[Non-overlapping Intervals](src.save/main/java/g0401_0500/s0435_non_overlapping_intervals/Solution.java)| Medium | Array, Dynamic_Programming, Sorting, Greedy | 109 | 26.80
+| 0435 |[Non-overlapping Intervals](src.save/main/java/g0401_0500/s0435_non_overlapping_intervals/Solution.java)| Medium | Array, Dynamic_Programming, Sorting, Greedy | 96 | 47.37
 
 #### Day 5 Array
 
@@ -345,7 +345,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0438 |[Find All Anagrams in a String](src.save/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window | 8 | 87.18
+| 0438 |[Find All Anagrams in a String](src.save/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window | 6 | 99.03
 | 0713 |[Subarray Product Less Than K](src.save/main/java/g0701_0800/s0713_subarray_product_less_than_k/Solution.java)| Medium | Array, Sliding_Window | 8 | 39.00
 | 0209 |[Minimum Size Subarray Sum](src.save/main/java/g0201_0300/s0209_minimum_size_subarray_sum/Solution.java)| Medium | Array, Binary_Search, Prefix_Sum, Sliding_Window | 1 | 100.00
 
@@ -504,7 +504,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0441 |[Arranging Coins](src.save/main/java/g0401_0500/s0441_arranging_coins/Solution.java)| Easy | Math, Binary_Search | 2 | 87.99
+| 0441 |[Arranging Coins](src.save/main/java/g0401_0500/s0441_arranging_coins/Solution.java)| Easy | Math, Binary_Search | 2 | 95.97
 | 1539 |[Kth Missing Positive Number](src.save/main/java/g1501_1600/s1539_kth_missing_positive_number/Solution.java)| Easy | Array, Binary_Search | 0 | 100.00
 
 #### Day 7
@@ -625,7 +625,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0826 |[Most Profit Assigning Work](src.save/main/java/g0801_0900/s0826_most_profit_assigning_work/Solution.java)| Medium | Array, Sorting, Greedy, Binary_Search, Two_Pointers | 21 | 83.83
-| 0436 |[Find Right Interval](src.save/main/java/g0401_0500/s0436_find_right_interval/Solution.java)| Medium | Array, Sorting, Binary_Search | 17 | 87.90
+| 0436 |[Find Right Interval](src.save/main/java/g0401_0500/s0436_find_right_interval/Solution.java)| Medium | Array, Sorting, Binary_Search | 20 | 81.51
 
 #### Day 12
 
@@ -1022,7 +1022,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0438 |[Find All Anagrams in a String](src.save/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window | 8 | 87.18
+| 0438 |[Find All Anagrams in a String](src.save/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window | 6 | 99.03
 | 0713 |[Subarray Product Less Than K](src.save/main/java/g0701_0800/s0713_subarray_product_less_than_k/Solution.java)| Medium | Array, Sliding_Window | 8 | 39.00
 
 #### Day 13
@@ -1044,7 +1044,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0002 |[Add Two Numbers](src.save/main/java/g0001_0100/s0002_add_two_numbers/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Math, Linked_List, Recursion | 2 | 98.23
-| 0445 |[Add Two Numbers II](src.save/main/java/g0401_0500/s0445_add_two_numbers_ii/Solution.java)| Medium | Math, Stack, Linked_List | 3 | 81.96
+| 0445 |[Add Two Numbers II](src.save/main/java/g0401_0500/s0445_add_two_numbers_ii/Solution.java)| Medium | Math, Stack, Linked_List | 3 | 90.38
 
 #### Day 16
 
@@ -1354,7 +1354,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0438 |[Find All Anagrams in a String](src.save/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window | 8 | 87.18
+| 0438 |[Find All Anagrams in a String](src.save/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window | 6 | 99.03
 | 0424 |[Longest Repeating Character Replacement](src.save/main/java/g0401_0500/s0424_longest_repeating_character_replacement/Solution.java)| Medium | String, Hash_Table, Sliding_Window | 5 | 95.15
 
 #### Day 13 Hashmap
@@ -1428,7 +1428,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0543 |[Diameter of Binary Tree](src.save/main/java/g0501_0600/s0543_diameter_of_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree | 1 | 55.16
-| 0437 |[Path Sum III](src.save/main/java/g0401_0500/s0437_path_sum_iii/Solution.java)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree | 4 | 87.75
+| 0437 |[Path Sum III](src.save/main/java/g0401_0500/s0437_path_sum_iii/Solution.java)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree | 18 | 45.66
 
 #### Day 8 Binary Search
 
@@ -1581,7 +1581,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0238 |[Product of Array Except Self](src.save/main/java/g0201_0300/s0238_product_of_array_except_self/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Prefix_Sum | 1 | 100.00
 | 1291 |[Sequential Digits](src.save/main/java/g1201_1300/s1291_sequential_digits/Solution.java)| Medium | Enumeration | 0 | 100.00
 | 0448 |[Find All Numbers Disappeared in an Array](src.save/main/java/g0401_0500/s0448_find_all_numbers_disappeared_in_an_array/Solution.java)| Easy | Array, Hash_Table | 3 | 100.00
-| 0442 |[Find All Duplicates in an Array](src.save/main/java/g0401_0500/s0442_find_all_duplicates_in_an_array/Solution.java)| Medium | Array, Hash_Table | 5 | 94.88
+| 0442 |[Find All Duplicates in an Array](src.save/main/java/g0401_0500/s0442_find_all_duplicates_in_an_array/Solution.java)| Medium | Array, Hash_Table | 5 | 98.83
 | 0041 |[First Missing Positive](src.save/main/java/g0001_0100/s0041_first_missing_positive/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table | 5 | 50.34
 | 0697 |[Degree of an Array](src.save/main/java/g0601_0700/s0697_degree_of_an_array/Solution.java)| Easy | Array, Hash_Table | 14 | 93.19
 | 0532 |[K-diff Pairs in an Array](src.save/main/java/g0501_0600/s0532_k_diff_pairs_in_an_array/Solution.java)| Medium | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 14 | 49.69
@@ -1632,7 +1632,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0114 |[Flatten Binary Tree to Linked List](src.save/main/java/g0101_0200/s0114_flatten_binary_tree_to_linked_list/Solution.java)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Stack, Linked_List | 1 | 75.27
-| 0445 |[Add Two Numbers II](src.save/main/java/g0401_0500/s0445_add_two_numbers_ii/Solution.java)| Medium | Math, Stack, Linked_List | 3 | 81.96
+| 0445 |[Add Two Numbers II](src.save/main/java/g0401_0500/s0445_add_two_numbers_ii/Solution.java)| Medium | Math, Stack, Linked_List | 3 | 90.38
 | 0328 |[Odd Even Linked List](src.save/main/java/g0301_0400/s0328_odd_even_linked_list/Solution.java)| Medium | Top_Interview_Questions, Linked_List | 0 | 100.00
 | 0061 |[Rotate List](src.save/main/java/g0001_0100/s0061_rotate_list/Solution.java)| Medium | Two_Pointers, Linked_List | 0 | 100.00
 | 0024 |[Swap Nodes in Pairs](src.save/main/java/g0001_0100/s0024_swap_nodes_in_pairs/Solution.java)| Medium | Top_100_Liked_Questions, Linked_List, Recursion | 0 | 100.00
@@ -3331,16 +3331,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0449 |[Serialize and Deserialize BST](src.save/main/java/g0401_0500/s0449_serialize_and_deserialize_bst/Codec.java)| Medium | String, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Design, Binary_Search_Tree | 1 | 99.70
 | 0448 |[Find All Numbers Disappeared in an Array](src.save/main/java/g0401_0500/s0448_find_all_numbers_disappeared_in_an_array/Solution.java)| Easy | Array, Hash_Table, Udemy_Arrays | 3 | 100.00
 | 0447 |[Number of Boomerangs](src.save/main/java/g0401_0500/s0447_number_of_boomerangs/Solution.java)| Medium | Array, Hash_Table, Math | 156 | 80.44
-| 0446 |[Arithmetic Slices II - Subsequence](src.save/main/java/g0401_0500/s0446_arithmetic_slices_ii_subsequence/Solution.java)| Hard | Array, Dynamic_Programming | 67 | 95.78
-| 0445 |[Add Two Numbers II](src.save/main/java/g0401_0500/s0445_add_two_numbers_ii/Solution.java)| Medium | Math, Stack, Linked_List, Programming_Skills_II_Day_15, Udemy_Linked_List | 3 | 81.96
-| 0443 |[String Compression](src.save/main/java/g0401_0500/s0443_string_compression/Solution.java)| Medium | String, Two_Pointers | 2 | 60.36
-| 0442 |[Find All Duplicates in an Array](src.save/main/java/g0401_0500/s0442_find_all_duplicates_in_an_array/Solution.java)| Medium | Array, Hash_Table, Udemy_Arrays | 5 | 94.88
-| 0441 |[Arranging Coins](src.save/main/java/g0401_0500/s0441_arranging_coins/Solution.java)| Easy | Math, Binary_Search, Binary_Search_I_Day_6 | 2 | 87.99
+| 0446 |[Arithmetic Slices II - Subsequence](src.save/main/java/g0401_0500/s0446_arithmetic_slices_ii_subsequence/Solution.java)| Hard | Array, Dynamic_Programming | 68 | 99.15
+| 0445 |[Add Two Numbers II](src.save/main/java/g0401_0500/s0445_add_two_numbers_ii/Solution.java)| Medium | Math, Stack, Linked_List, Programming_Skills_II_Day_15, Udemy_Linked_List | 3 | 90.38
+| 0443 |[String Compression](src.save/main/java/g0401_0500/s0443_string_compression/Solution.java)| Medium | String, Two_Pointers | 2 | 65.35
+| 0442 |[Find All Duplicates in an Array](src.save/main/java/g0401_0500/s0442_find_all_duplicates_in_an_array/Solution.java)| Medium | Array, Hash_Table, Udemy_Arrays | 5 | 98.83
+| 0441 |[Arranging Coins](src.save/main/java/g0401_0500/s0441_arranging_coins/Solution.java)| Easy | Math, Binary_Search, Binary_Search_I_Day_6 | 2 | 95.97
 | 0440 |[K-th Smallest in Lexicographical Order](src.save/main/java/g0401_0500/s0440_k_th_smallest_in_lexicographical_order/Solution.java)| Hard | Trie | 0 | 100.00
-| 0438 |[Find All Anagrams in a String](src.save/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Algorithm_II_Day_5_Sliding_Window, Programming_Skills_II_Day_12, Level_1_Day_12_Sliding_Window/Two_Pointer | 8 | 87.18
-| 0437 |[Path Sum III](src.save/main/java/g0401_0500/s0437_path_sum_iii/Solution.java)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree | 4 | 87.75
-| 0436 |[Find Right Interval](src.save/main/java/g0401_0500/s0436_find_right_interval/Solution.java)| Medium | Array, Sorting, Binary_Search, Binary_Search_II_Day_11 | 17 | 87.90
-| 0435 |[Non-overlapping Intervals](src.save/main/java/g0401_0500/s0435_non_overlapping_intervals/Solution.java)| Medium | Array, Dynamic_Programming, Sorting, Greedy, Data_Structure_II_Day_4_Array | 109 | 26.80
+| 0438 |[Find All Anagrams in a String](src.save/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Algorithm_II_Day_5_Sliding_Window, Programming_Skills_II_Day_12, Level_1_Day_12_Sliding_Window/Two_Pointer | 6 | 99.03
+| 0437 |[Path Sum III](src.save/main/java/g0401_0500/s0437_path_sum_iii/Solution.java)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree | 18 | 45.66
+| 0436 |[Find Right Interval](src.save/main/java/g0401_0500/s0436_find_right_interval/Solution.java)| Medium | Array, Sorting, Binary_Search, Binary_Search_II_Day_11 | 20 | 81.51
+| 0435 |[Non-overlapping Intervals](src.save/main/java/g0401_0500/s0435_non_overlapping_intervals/Solution.java)| Medium | Array, Dynamic_Programming, Sorting, Greedy, Data_Structure_II_Day_4_Array | 96 | 47.37
 | 0434 |[Number of Segments in a String](src.save/main/java/g0401_0500/s0434_number_of_segments_in_a_string/Solution.java)| Easy | String | 0 | 100.00
 | 0433 |[Minimum Genetic Mutation](src.save/main/java/g0401_0500/s0433_minimum_genetic_mutation/Solution.java)| Medium | String, Hash_Table, Breadth_First_Search, Graph_Theory_I_Day_12_Breadth_First_Search | 1 | 90.95
 | 0432 |[All O\`one Data Structure](src.save/main/java/g0401_0500/s0432_all_oone_data_structure/AllOne.java)| Hard | Hash_Table, Design, Linked_List, Doubly_Linked_List | 101 | 52.51
