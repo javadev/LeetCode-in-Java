@@ -79,7 +79,9 @@ public class Solution {
             List<List<String>> ans,
             Set<String> path) {
         Set<String> next = graph.get(endWord);
-        if (next == null) return;
+        if (next == null) {
+            return;
+        }
         for (String word : next) {
             path.add(word);
             if (beginWord.equals(word)) {
