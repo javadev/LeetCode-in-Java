@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void reformat() {
-        assertThat(new Solution().reformat("a0b1c2"), equalTo("0a1b2c"));
+        assertThat(new Solution().reformat("a0b1c2"), equalTo("a0b1c2"));
     }
 
     @Test
