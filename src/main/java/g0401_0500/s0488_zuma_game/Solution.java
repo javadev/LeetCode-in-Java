@@ -47,7 +47,9 @@ public class Solution {
             return map.get(key);
         }
         board = removeConsecutiveThreeOrMoreBalls(board);
-        int ans = 100, n = board.length(), m = hand.length();
+        int ans = 100;
+        int n = board.length();
+        int m = hand.length();
         if (n == 0 || m == 0) {
             map.put(key, n == 0 ? 0 : 100);
             return n == 0 ? 0 : 100;
