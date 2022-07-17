@@ -203,7 +203,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0451 |[Sort Characters By Frequency](src/main/java/g0401_0500/s0451_sort_characters_by_frequency/Solution.java)| Medium | String, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Bucket_Sort | 18 | 70.93
+| 0451 |[Sort Characters By Frequency](src/main/java/g0401_0500/s0451_sort_characters_by_frequency/Solution.java)| Medium | String, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Bucket_Sort | 13 | 89.63
 | 0973 |[K Closest Points to Origin](src/main/java/g0901_1000/s0973_k_closest_points_to_origin/Solution.java)| Medium | Array, Math, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Geometry, Quickselect | 4 | 98.26
 
 ### Algorithm I
@@ -1588,7 +1588,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0713 |[Subarray Product Less Than K](src/main/java/g0701_0800/s0713_subarray_product_less_than_k/Solution.java)| Medium | Array, Sliding_Window | 8 | 39.00
 | 1007 |[Minimum Domino Rotations For Equal Row](src/main/java/g1001_1100/s1007_minimum_domino_rotations_for_equal_row/Solution.java)| Medium | Array, Greedy | 5 | 79.64
 | 1306 |[Jump Game III](src/main/java/g1301_1400/s1306_jump_game_iii/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search | 2 | 96.23
-| 0456 |[132 Pattern](src/main/java/g0401_0500/s0456_132_pattern/Solution.java)| Medium | Array, Binary_Search, Stack, Ordered_Set, Monotonic_Stack | 15 | 80.22
+| 0456 |[132 Pattern](src/main/java/g0401_0500/s0456_132_pattern/Solution.java)| Medium | Array, Binary_Search, Stack, Ordered_Set, Monotonic_Stack | 16 | 82.41
 | 0239 |[Sliding Window Maximum](src/main/java/g0201_0300/s0239_sliding_window_maximum/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Heap_Priority_Queue, Sliding_Window, Queue, Monotonic_Queue | 58 | 52.28
 
 #### Udemy Two Pointers
@@ -2565,7 +2565,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 1420 |[Build Array Where You Can Find The Maximum Exactly K Comparisons](src/main/java/g1401_1500/s1420_build_array_where_you_can_find_the_maximum_exactly_k_comparisons/Solution.java)| Hard | Dynamic_Programming | 22 | 86.32
 | 1419 |[Minimum Number of Frogs Croaking](src/main/java/g1401_1500/s1419_minimum_number_of_frogs_croaking/Solution.java)| Medium | String, Counting | 19 | 32.16
 | 1418 |[Display Table of Food Orders in a Restaurant](src/main/java/g1401_1500/s1418_display_table_of_food_orders_in_a_restaurant/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Ordered_Set | 42 | 77.01
-| 1417 |[Reformat The String](src/main/java/g1401_1500/s1417_reformat_the_string/Solution.java)| Easy | String | 4 | 88.39
+| 1417 |[Reformat The String](src/main/java/g1401_1500/s1417_reformat_the_string/Solution.java)| Easy | String | 10 | 62.27
 | 1416 |[Restore The Array](src/main/java/g1401_1500/s1416_restore_the_array/Solution.java)| Hard | String, Dynamic_Programming | 34 | 100.00
 | 1415 |[The k-th Lexicographical String of All Happy Strings of Length n](src/main/java/g1401_1500/s1415_the_k_th_lexicographical_string_of_all_happy_strings_of_length_n/Solution.java)| Medium | String, Backtracking | 2 | 90.55
 | 1414 |[Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](src/main/java/g1401_1500/s1414_find_the_minimum_number_of_fibonacci_numbers_whose_sum_is_k/Solution.java)| Medium | Greedy | 2 | 67.22
@@ -3320,15 +3320,15 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0460 |[LFU Cache](src/main/java/g0401_0500/s0460_lfu_cache/LFUCache.java)| Hard | Hash_Table, Design, Linked_List, Doubly_Linked_List | 45 | 99.66
 | 0459 |[Repeated Substring Pattern](src/main/java/g0401_0500/s0459_repeated_substring_pattern/Solution.java)| Easy | String, String_Matching, Programming_Skills_II_Day_2 | 9 | 90.15
 | 0458 |[Poor Pigs](src/main/java/g0401_0500/s0458_poor_pigs/Solution.java)| Hard | Dynamic_Programming, Math, Combinatorics | 0 | 100.00
-| 0457 |[Circular Array Loop](src/main/java/g0401_0500/s0457_circular_array_loop/Solution.java)| Medium | Array, Hash_Table, Two_Pointers | 2 | 73.72
-| 0456 |[132 Pattern](src/main/java/g0401_0500/s0456_132_pattern/Solution.java)| Medium | Array, Binary_Search, Stack, Ordered_Set, Monotonic_Stack, Udemy_Arrays | 15 | 80.22
-| 0455 |[Assign Cookies](src/main/java/g0401_0500/s0455_assign_cookies/Solution.java)| Easy | Array, Sorting, Greedy | 11 | 42.95
-| 0454 |[4Sum II](src/main/java/g0401_0500/s0454_4sum_ii/Solution.java)| Medium | Top_Interview_Questions, Array, Hash_Table | 157 | 74.79
-| 0453 |[Minimum Moves to Equal Array Elements](src/main/java/g0401_0500/s0453_minimum_moves_to_equal_array_elements/Solution.java)| Medium | Array, Math | 1 | 100.00
-| 0452 |[Minimum Number of Arrows to Burst Balloons](src/main/java/g0401_0500/s0452_minimum_number_of_arrows_to_burst_balloons/Solution.java)| Medium | Array, Sorting, Greedy | 80 | 76.91
-| 0451 |[Sort Characters By Frequency](src/main/java/g0401_0500/s0451_sort_characters_by_frequency/Solution.java)| Medium | String, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Bucket_Sort, Data_Structure_II_Day_21_Heap_Priority_Queue | 18 | 70.93
+| 0457 |[Circular Array Loop](src/main/java/g0401_0500/s0457_circular_array_loop/Solution.java)| Medium | Array, Hash_Table, Two_Pointers | 1 | 83.72
+| 0456 |[132 Pattern](src/main/java/g0401_0500/s0456_132_pattern/Solution.java)| Medium | Array, Binary_Search, Stack, Ordered_Set, Monotonic_Stack, Udemy_Arrays | 16 | 82.41
+| 0455 |[Assign Cookies](src/main/java/g0401_0500/s0455_assign_cookies/Solution.java)| Easy | Array, Sorting, Greedy | 12 | 41.00
+| 0454 |[4Sum II](src/main/java/g0401_0500/s0454_4sum_ii/Solution.java)| Medium | Top_Interview_Questions, Array, Hash_Table | 133 | 95.19
+| 0453 |[Minimum Moves to Equal Array Elements](src/main/java/g0401_0500/s0453_minimum_moves_to_equal_array_elements/Solution.java)| Medium | Array, Math | 2 | 89.66
+| 0452 |[Minimum Number of Arrows to Burst Balloons](src/main/java/g0401_0500/s0452_minimum_number_of_arrows_to_burst_balloons/Solution.java)| Medium | Array, Sorting, Greedy | 84 | 71.26
+| 0451 |[Sort Characters By Frequency](src/main/java/g0401_0500/s0451_sort_characters_by_frequency/Solution.java)| Medium | String, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Bucket_Sort, Data_Structure_II_Day_21_Heap_Priority_Queue | 13 | 89.63
 | 0450 |[Delete Node in a BST](src/main/java/g0401_0500/s0450_delete_node_in_a_bst/Solution.java)| Medium | Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_II_Day_16_Tree | 0 | 100.00
-| 0449 |[Serialize and Deserialize BST](src/main/java/g0401_0500/s0449_serialize_and_deserialize_bst/Codec.java)| Medium | String, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Design, Binary_Search_Tree | 1 | 99.70
+| 0449 |[Serialize and Deserialize BST](src/main/java/g0401_0500/s0449_serialize_and_deserialize_bst/Codec.java)| Medium | String, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Design, Binary_Search_Tree | 1 | 99.59
 | 0448 |[Find All Numbers Disappeared in an Array](src/main/java/g0401_0500/s0448_find_all_numbers_disappeared_in_an_array/Solution.java)| Easy | Array, Hash_Table, Udemy_Arrays | 3 | 100.00
 | 0447 |[Number of Boomerangs](src/main/java/g0401_0500/s0447_number_of_boomerangs/Solution.java)| Medium | Array, Hash_Table, Math | 156 | 80.44
 | 0446 |[Arithmetic Slices II - Subsequence](src/main/java/g0401_0500/s0446_arithmetic_slices_ii_subsequence/Solution.java)| Hard | Array, Dynamic_Programming | 68 | 99.15
