@@ -5,6 +5,7 @@ package g1401_1500.s1417_reformat_the_string;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S5413")
 public class Solution {
     public String reformat(String s) {
         List<Character> chars = new ArrayList<>();
