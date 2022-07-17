@@ -22,7 +22,7 @@ public class Solution {
         prevLastCharIdx[s.charAt(0) - 'A'] = 0;
         for (int i = 1; i < len; i++) {
             char ch = s.charAt(i);
-            int chIdx = (int) (ch - 'A');
+            int chIdx = ch - 'A';
             int lastSeenIdx = lastCharIdx[chIdx];
             int prevLastIdx = prevLastCharIdx[chIdx];
             dp[i] = dp[i - 1] + 1;

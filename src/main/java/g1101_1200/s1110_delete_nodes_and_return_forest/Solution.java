@@ -55,7 +55,7 @@ public class Solution {
         }
         nodes.add(root);
         List<TreeNode> forests = new ArrayList<>();
-        while (nodes.size() > 0) {
+        while (!nodes.isEmpty()) {
             TreeNode node = nodes.poll();
             node = deleteAndSplit(node);
             if (node != null) {

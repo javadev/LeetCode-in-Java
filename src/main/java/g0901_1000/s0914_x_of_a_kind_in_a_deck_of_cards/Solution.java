@@ -4,20 +4,21 @@ package g0901_1000.s0914_x_of_a_kind_in_a_deck_of_cards;
 // #2022_07_14_Time_11_ms_(51.18%)_Space_52.7_MB_(22.45%)
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
     public boolean hasGroupsSizeX(int[] deck) {
         HashMap<Integer, Integer> hmap = new HashMap<>();
-        for (int i = 0; i < deck.length; i++) {
-            if (hmap.containsKey(deck[i])) {
-                hmap.put(deck[i], hmap.get(deck[i]) + 1);
+        for (int j : deck) {
+            if (hmap.containsKey(j)) {
+                hmap.put(j, hmap.get(j) + 1);
             } else {
-                hmap.put(deck[i], 1);
+                hmap.put(j, 1);
             }
         }
         int x = hmap.get(deck[0]);
-        for (Integer i : hmap.keySet()) {
-            x = gcd(x, hmap.get(i));
+        for (Map.Entry<Integer, Integer> entry : hmap.entrySet()) {
+            x = gcd(x, entry.getValue());
         }
         return x >= 2;
     }

@@ -3,14 +3,15 @@ package g0401_0500.s0488_zuma_game;
 // #Hard #String #Dynamic_Programming #Breadth_First_Search #Memoization
 // #2022_07_13_Time_1989_ms_(32.79%)_Space_56.5_MB_(81.97%)
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.HashMap;
-import java.util.Stack;
 
 public class Solution {
     private HashMap<String, Integer> map = new HashMap<>();
 
     private String removeConsecutiveThreeOrMoreBalls(String board) {
-        Stack<Character> st = new Stack<>();
+        Deque<Character> st = new ArrayDeque<>();
         int n = board.length();
         for (int i = 0; i < n; i++) {
             char ch = board.charAt(i);
