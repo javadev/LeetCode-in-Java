@@ -6,7 +6,6 @@ package g0401_0500.s0488_zuma_game;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.HashMap;
-import java.util.Stack;
 
 public class Solution {
     private HashMap<String, Integer> map = new HashMap<>();
