@@ -1848,6 +1848,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2342 |[Max Sum of a Pair With Equal Sum of Digits](src/main/java/g2301_2400/s2342_max_sum_of_a_pair_with_equal_sum_of_digits/Solution.java)| Medium || 99 | 100.00
+| 2341 |[Maximum Number of Pairs in Array](src/main/java/g2301_2400/s2341_maximum_number_of_pairs_in_array/Solution.java)| Easy || 2 | 80.00
 | 2338 |[Count the Number of Ideal Arrays](src/main/java/g2301_2400/s2338_count_the_number_of_ideal_arrays/Solution.java)| Hard | Math, Dynamic_Programming, Combinatorics, Number_Theory | 21 | 99.04
 | 2337 |[Move Pieces to Obtain a String](src/main/java/g2301_2400/s2337_move_pieces_to_obtain_a_string/Solution.java)| Medium | Two_Pointers, String | 23 | 82.39
 | 2336 |[Smallest Number in Infinite Set](src/main/java/g2301_2400/s2336_smallest_number_in_infinite_set/SmallestInfiniteSet.java)| Medium | Hash_Table, Design, Heap_Priority_Queue | 12 | 96.69
