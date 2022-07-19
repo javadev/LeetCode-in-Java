@@ -1,6 +1,6 @@
 package g2301_2400.s2343_query_kth_smallest_trimmed_number;
 
-// #Medium #2022_07_19_Time_61_ms_(75.00%)_Space_58.4_MB_(50.00%)
+// #Medium #2022_07_19_Time_52_ms_(75.00%)_Space_58.8_MB_(37.50%)
 
 import java.util.ArrayList;
 import java.util.Arrays;
