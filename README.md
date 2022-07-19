@@ -1848,6 +1848,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2344 |[Minimum Deletions to Make Array Divisible](src/main/java/g2301_2400/s2344_minimum_deletions_to_make_array_divisible/Solution.java)| Hard || 13 | 88.89
+| 2343 |[Query Kth Smallest Trimmed Number](src/main/java/g2301_2400/s2343_query_kth_smallest_trimmed_number/Solution.java)| Medium || 61 | 75.00
 | 2342 |[Max Sum of a Pair With Equal Sum of Digits](src/main/java/g2301_2400/s2342_max_sum_of_a_pair_with_equal_sum_of_digits/Solution.java)| Medium || 99 | 100.00
 | 2341 |[Maximum Number of Pairs in Array](src/main/java/g2301_2400/s2341_maximum_number_of_pairs_in_array/Solution.java)| Easy || 2 | 80.00
 | 2338 |[Count the Number of Ideal Arrays](src/main/java/g2301_2400/s2338_count_the_number_of_ideal_arrays/Solution.java)| Hard | Math, Dynamic_Programming, Combinatorics, Number_Theory | 21 | 99.04
