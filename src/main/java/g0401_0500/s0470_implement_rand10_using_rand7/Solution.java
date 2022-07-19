@@ -1,7 +1,7 @@
 package g0401_0500.s0470_implement_rand10_using_rand7;
 
 // #Medium #Math #Randomized #Probability_and_Statistics #Rejection_Sampling
-// #2022_03_18_Time_10_ms_(51.04%)_Space_50.5_MB_(44.91%)
+// #2022_07_19_Time_8_ms_(82.15%)_Space_50.7_MB_(31.69%)
 
 import java.util.Random;
 

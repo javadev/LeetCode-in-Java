@@ -953,7 +953,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0110 |[Balanced Binary Tree](src/main/java/g0101_0200/s0110_balanced_binary_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree | 1 | 98.82
-| 0459 |[Repeated Substring Pattern](src/main/java/g0401_0500/s0459_repeated_substring_pattern/Solution.java)| Easy | String, String_Matching | 9 | 90.15
+| 0459 |[Repeated Substring Pattern](src/main/java/g0401_0500/s0459_repeated_substring_pattern/Solution.java)| Easy | String, String_Matching | 8 | 96.64
 
 #### Day 3
 
@@ -1727,7 +1727,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0191 |[Number of 1 Bits](src/main/java/g0101_0200/s0191_number_of_1_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation | 1 | 84.87
 | 0389 |[Find the Difference](src/main/java/g0301_0400/s0389_find_the_difference/Solution.java)| Easy | String, Hash_Table, Sorting, Bit_Manipulation | 1 | 100.00
 | 0190 |[Reverse Bits](src/main/java/g0101_0200/s0190_reverse_bits/Solution.java)| Easy | Top_Interview_Questions, Bit_Manipulation, Divide_and_Conquer | 1 | 98.66
-| 0461 |[Hamming Distance](src/main/java/g0401_0500/s0461_hamming_distance/Solution.java)| Easy | Bit_Manipulation | 1 | 39.19
+| 0461 |[Hamming Distance](src/main/java/g0401_0500/s0461_hamming_distance/Solution.java)| Easy | Bit_Manipulation | 0 | 100.00
 | 1009 |[Complement of Base 10 Integer](src/main/java/g1001_1100/s1009_complement_of_base_10_integer/Solution.java)| Easy | Bit_Manipulation | 1 | 41.56
 | 0338 |[Counting Bits](src/main/java/g0301_0400/s0338_counting_bits/Solution.java)| Easy | Top_100_Liked_Questions, Dynamic_Programming, Bit_Manipulation | 2 | 86.73
 | 0371 |[Sum of Two Integers](src/main/java/g0301_0400/s0371_sum_of_two_integers/Solution.java)| Medium | Top_Interview_Questions, Math, Bit_Manipulation | 0 | 100.00
@@ -1849,7 +1849,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
 | 2344 |[Minimum Deletions to Make Array Divisible](src/main/java/g2301_2400/s2344_minimum_deletions_to_make_array_divisible/Solution.java)| Hard || 13 | 88.89
-| 2343 |[Query Kth Smallest Trimmed Number](src/main/java/g2301_2400/s2343_query_kth_smallest_trimmed_number/Solution.java)| Medium || 61 | 75.00
+| 2343 |[Query Kth Smallest Trimmed Number](src/main/java/g2301_2400/s2343_query_kth_smallest_trimmed_number/Solution.java)| Medium || 52 | 75.00
 | 2342 |[Max Sum of a Pair With Equal Sum of Digits](src/main/java/g2301_2400/s2342_max_sum_of_a_pair_with_equal_sum_of_digits/Solution.java)| Medium || 99 | 100.00
 | 2341 |[Maximum Number of Pairs in Array](src/main/java/g2301_2400/s2341_maximum_number_of_pairs_in_array/Solution.java)| Easy || 2 | 80.00
 | 2338 |[Count the Number of Ideal Arrays](src/main/java/g2301_2400/s2338_count_the_number_of_ideal_arrays/Solution.java)| Hard | Math, Dynamic_Programming, Combinatorics, Number_Theory | 21 | 99.04
@@ -3313,16 +3313,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0474 |[Ones and Zeroes](src/main/java/g0401_0500/s0474_ones_and_zeroes/Solution.java)| Medium | Array, String, Dynamic_Programming | 41 | 68.79
 | 0473 |[Matchsticks to Square](src/main/java/g0401_0500/s0473_matchsticks_to_square/Solution.java)| Medium | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 161 | 55.12
 | 0472 |[Concatenated Words](src/main/java/g0401_0500/s0472_concatenated_words/Solution.java)| Hard | Array, String, Dynamic_Programming, Depth_First_Search, Trie | 84 | 79.03
-| 0470 |[Implement Rand10() Using Rand7()](src/main/java/g0401_0500/s0470_implement_rand10_using_rand7/Solution.java)| Medium | Math, Randomized, Probability_and_Statistics, Rejection_Sampling | 10 | 51.04
-| 0468 |[Validate IP Address](src/main/java/g0401_0500/s0468_validate_ip_address/Solution.java)| Medium | String | 1 | 98.15
-| 0467 |[Unique Substrings in Wraparound String](src/main/java/g0401_0500/s0467_unique_substrings_in_wraparound_string/Solution.java)| Medium | String, Dynamic_Programming | 5 | 88.61
+| 0470 |[Implement Rand10() Using Rand7()](src/main/java/g0401_0500/s0470_implement_rand10_using_rand7/Solution.java)| Medium | Math, Randomized, Probability_and_Statistics, Rejection_Sampling | 8 | 82.15
+| 0468 |[Validate IP Address](src/main/java/g0401_0500/s0468_validate_ip_address/Solution.java)| Medium | String | 2 | 73.87
+| 0467 |[Unique Substrings in Wraparound String](src/main/java/g0401_0500/s0467_unique_substrings_in_wraparound_string/Solution.java)| Medium | String, Dynamic_Programming | 4 | 98.79
 | 0466 |[Count The Repetitions](src/main/java/g0401_0500/s0466_count_the_repetitions/Solution.java)| Hard | String, Dynamic_Programming | 1 | 100.00
-| 0464 |[Can I Win](src/main/java/g0401_0500/s0464_can_i_win/Solution.java)| Medium | Dynamic_Programming, Math, Bit_Manipulation, Bitmask, Memoization, Game_Theory | 159 | 84.80
-| 0463 |[Island Perimeter](src/main/java/g0401_0500/s0463_island_perimeter/Solution.java)| Easy | Array, Depth_First_Search, Breadth_First_Search, Matrix | 9 | 74.15
-| 0462 |[Minimum Moves to Equal Array Elements II](src/main/java/g0401_0500/s0462_minimum_moves_to_equal_array_elements_ii/Solution.java)| Medium | Array, Math, Sorting | 3 | 94.38
-| 0461 |[Hamming Distance](src/main/java/g0401_0500/s0461_hamming_distance/Solution.java)| Easy | Bit_Manipulation, Udemy_Bit_Manipulation | 1 | 39.19
-| 0460 |[LFU Cache](src/main/java/g0401_0500/s0460_lfu_cache/LFUCache.java)| Hard | Hash_Table, Design, Linked_List, Doubly_Linked_List | 45 | 99.66
-| 0459 |[Repeated Substring Pattern](src/main/java/g0401_0500/s0459_repeated_substring_pattern/Solution.java)| Easy | String, String_Matching, Programming_Skills_II_Day_2 | 9 | 90.15
+| 0464 |[Can I Win](src/main/java/g0401_0500/s0464_can_i_win/Solution.java)| Medium | Dynamic_Programming, Math, Bit_Manipulation, Bitmask, Memoization, Game_Theory | 138 | 90.47
+| 0463 |[Island Perimeter](src/main/java/g0401_0500/s0463_island_perimeter/Solution.java)| Easy | Array, Depth_First_Search, Breadth_First_Search, Matrix | 9 | 81.80
+| 0462 |[Minimum Moves to Equal Array Elements II](src/main/java/g0401_0500/s0462_minimum_moves_to_equal_array_elements_ii/Solution.java)| Medium | Array, Math, Sorting | 7 | 31.31
+| 0461 |[Hamming Distance](src/main/java/g0401_0500/s0461_hamming_distance/Solution.java)| Easy | Bit_Manipulation, Udemy_Bit_Manipulation | 0 | 100.00
+| 0460 |[LFU Cache](src/main/java/g0401_0500/s0460_lfu_cache/LFUCache.java)| Hard | Hash_Table, Design, Linked_List, Doubly_Linked_List | 86 | 81.25
+| 0459 |[Repeated Substring Pattern](src/main/java/g0401_0500/s0459_repeated_substring_pattern/Solution.java)| Easy | String, String_Matching, Programming_Skills_II_Day_2 | 8 | 96.64
 | 0458 |[Poor Pigs](src/main/java/g0401_0500/s0458_poor_pigs/Solution.java)| Hard | Dynamic_Programming, Math, Combinatorics | 0 | 100.00
 | 0457 |[Circular Array Loop](src/main/java/g0401_0500/s0457_circular_array_loop/Solution.java)| Medium | Array, Hash_Table, Two_Pointers | 1 | 83.72
 | 0456 |[132 Pattern](src/main/java/g0401_0500/s0456_132_pattern/Solution.java)| Medium | Array, Binary_Search, Stack, Ordered_Set, Monotonic_Stack, Udemy_Arrays | 16 | 82.41

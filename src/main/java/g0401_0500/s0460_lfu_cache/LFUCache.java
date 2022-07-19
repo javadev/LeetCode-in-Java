@@ -1,7 +1,7 @@
 package g0401_0500.s0460_lfu_cache;
 
 // #Hard #Hash_Table #Design #Linked_List #Doubly_Linked_List
-// #2022_03_18_Time_45_ms_(99.66%)_Space_117.9_MB_(98.21%)
+// #2022_07_19_Time_86_ms_(81.25%)_Space_132.8_MB_(87.71%)
 
 import java.util.HashMap;
 import java.util.Map;
@@ -108,3 +108,10 @@ public class LFUCache {
         }
     }
 }
+
+/*
+ * Your LFUCache object will be instantiated and called as such:
+ * LFUCache obj = new LFUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
+ */

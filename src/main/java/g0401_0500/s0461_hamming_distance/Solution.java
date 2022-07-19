@@ -1,7 +1,7 @@
 package g0401_0500.s0461_hamming_distance;
 
 // #Easy #Bit_Manipulation #Udemy_Bit_Manipulation
-// #2022_03_18_Time_1_ms_(39.19%)_Space_41.1_MB_(30.83%)
+// #2022_07_19_Time_0_ms_(100.00%)_Space_40.9_MB_(60.77%)
 
 public class Solution {
     public int hammingDistance(int x, int y) {
