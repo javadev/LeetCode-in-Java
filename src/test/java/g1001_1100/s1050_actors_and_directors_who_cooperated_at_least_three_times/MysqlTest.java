@@ -47,7 +47,7 @@ class MysqlTest {
                                                     new FileReader(
                                                             "src/main/java/g1001_1100/s1050_actors"
                                                                     + "_and_directors_who_cooperated_at_least"
-                                                                    + " _three_times/script.sql"))
+                                                                    + "_three_times/script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {
