@@ -41,24 +41,25 @@ class MysqlTest {
                             statement.executeQuery(
                                     new BufferedReader(
                                                     new FileReader(
-                                                            "src/main/java/g0601_0700/s0626_exchange_seats/script.sql"))
+                                                            "src/main/java/g0601_0700/" +
+                                                                    "s0626_exchange_seats/script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("1"));
+                assertThat(resultSet.getInt(1), equalTo(1));
                 assertThat(resultSet.getNString(2), equalTo("Doris"));
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("2"));
+                assertThat(resultSet.getInt(1), equalTo(2));
                 assertThat(resultSet.getNString(2), equalTo("Abbot"));
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("3"));
+                assertThat(resultSet.getInt(1), equalTo(3));
                 assertThat(resultSet.getNString(2), equalTo("Green"));
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("4"));
+                assertThat(resultSet.getInt(1), equalTo(4));
                 assertThat(resultSet.getNString(2), equalTo("Emerson"));
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("5"));
+                assertThat(resultSet.getInt(1), equalTo(5));
                 assertThat(resultSet.getNString(2), equalTo("Jeames"));
                 assertThat(resultSet.next(), equalTo(false));
             }

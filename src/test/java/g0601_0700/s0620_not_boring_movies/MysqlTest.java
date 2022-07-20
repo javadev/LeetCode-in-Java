@@ -47,12 +47,12 @@ class MysqlTest {
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("5"));
+                assertThat(resultSet.getInt(1), equalTo(5));
                 assertThat(resultSet.getNString(2), equalTo("House card"));
                 assertThat(resultSet.getNString(3), equalTo("Interesting"));
                 assertThat(resultSet.getNString(4), equalTo("9.1"));
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("1"));
+                assertThat(resultSet.getInt(1), equalTo(1));
                 assertThat(resultSet.getNString(2), equalTo("War"));
                 assertThat(resultSet.getNString(3), equalTo("great 3D"));
                 assertThat(resultSet.getNString(4), equalTo("8.9"));
