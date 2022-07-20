@@ -42,7 +42,8 @@ class MysqlTest {
                             statement.executeQuery(
                                     new BufferedReader(
                                                     new FileReader(
-                                                            "src/main/java/g0601_0700/s0620_not_boring_movies/script.sql"))
+                                                            "src/main/java/g0601_0700/"
+                                                                    + "s0620_not_boring_movies/script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {
