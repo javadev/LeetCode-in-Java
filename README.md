@@ -3302,17 +3302,17 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0486 |[Predict the Winner](src/main/java/g0401_0500/s0486_predict_the_winner/Solution.java)| Medium | Array, Dynamic_Programming, Math, Recursion, Game_Theory | 0 | 100.00
 | 0485 |[Max Consecutive Ones](src/main/java/g0401_0500/s0485_max_consecutive_ones/Solution.java)| Easy | Array | 1 | 100.00
 | 0483 |[Smallest Good Base](src/main/java/g0401_0500/s0483_smallest_good_base/Solution.java)| Hard | Math, Binary_Search | 3 | 87.88
-| 0482 |[License Key Formatting](src/main/java/g0401_0500/s0482_license_key_formatting/Solution.java)| Easy | String | 7 | 98.60
-| 0481 |[Magical String](src/main/java/g0401_0500/s0481_magical_string/Solution.java)| Medium | String, Two_Pointers | 5 | 88.46
-| 0480 |[Sliding Window Median](src/main/java/g0401_0500/s0480_sliding_window_median/Solution.java)| Hard | Array, Hash_Table, Heap_Priority_Queue, Sliding_Window | 46 | 80.65
-| 0479 |[Largest Palindrome Product](src/main/java/g0401_0500/s0479_largest_palindrome_product/Solution.java)| Hard | Math | 6 | 97.54
-| 0478 |[Generate Random Point in a Circle](src/main/java/g0401_0500/s0478_generate_random_point_in_a_circle/Solution.java)| Medium | Math, Geometry, Randomized, Rejection_Sampling | 196 | 98.10
-| 0477 |[Total Hamming Distance](src/main/java/g0401_0500/s0477_total_hamming_distance/Solution.java)| Medium | Array, Math, Bit_Manipulation | 5 | 90.97
+| 0482 |[License Key Formatting](src/main/java/g0401_0500/s0482_license_key_formatting/Solution.java)| Easy | String | 8 | 96.52
+| 0481 |[Magical String](src/main/java/g0401_0500/s0481_magical_string/Solution.java)| Medium | String, Two_Pointers | 5 | 93.33
+| 0480 |[Sliding Window Median](src/main/java/g0401_0500/s0480_sliding_window_median/Solution.java)| Hard | Array, Hash_Table, Heap_Priority_Queue, Sliding_Window | 60 | 70.77
+| 0479 |[Largest Palindrome Product](src/main/java/g0401_0500/s0479_largest_palindrome_product/Solution.java)| Hard | Math | 6 | 87.50
+| 0478 |[Generate Random Point in a Circle](src/main/java/g0401_0500/s0478_generate_random_point_in_a_circle/Solution.java)| Medium | Math, Geometry, Randomized, Rejection_Sampling | 342 | 56.21
+| 0477 |[Total Hamming Distance](src/main/java/g0401_0500/s0477_total_hamming_distance/Solution.java)| Medium | Array, Math, Bit_Manipulation | 5 | 95.10
 | 0476 |[Number Complement](src/main/java/g0401_0500/s0476_number_complement/Solution.java)| Easy | Bit_Manipulation | 0 | 100.00
-| 0475 |[Heaters](src/main/java/g0401_0500/s0475_heaters/Solution.java)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 8 | 99.30
-| 0474 |[Ones and Zeroes](src/main/java/g0401_0500/s0474_ones_and_zeroes/Solution.java)| Medium | Array, String, Dynamic_Programming | 41 | 68.79
-| 0473 |[Matchsticks to Square](src/main/java/g0401_0500/s0473_matchsticks_to_square/Solution.java)| Medium | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 161 | 55.12
-| 0472 |[Concatenated Words](src/main/java/g0401_0500/s0472_concatenated_words/Solution.java)| Hard | Array, String, Dynamic_Programming, Depth_First_Search, Trie | 84 | 79.03
+| 0475 |[Heaters](src/main/java/g0401_0500/s0475_heaters/Solution.java)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 9 | 99.61
+| 0474 |[Ones and Zeroes](src/main/java/g0401_0500/s0474_ones_and_zeroes/Solution.java)| Medium | Array, String, Dynamic_Programming | 41 | 60.42
+| 0473 |[Matchsticks to Square](src/main/java/g0401_0500/s0473_matchsticks_to_square/Solution.java)| Medium | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 165 | 53.96
+| 0472 |[Concatenated Words](src/main/java/g0401_0500/s0472_concatenated_words/Solution.java)| Hard | Array, String, Dynamic_Programming, Depth_First_Search, Trie | 84 | 74.09
 | 0470 |[Implement Rand10() Using Rand7()](src/main/java/g0401_0500/s0470_implement_rand10_using_rand7/Solution.java)| Medium | Math, Randomized, Probability_and_Statistics, Rejection_Sampling | 8 | 82.15
 | 0468 |[Validate IP Address](src/main/java/g0401_0500/s0468_validate_ip_address/Solution.java)| Medium | String | 2 | 73.87
 | 0467 |[Unique Substrings in Wraparound String](src/main/java/g0401_0500/s0467_unique_substrings_in_wraparound_string/Solution.java)| Medium | String, Dynamic_Programming | 4 | 98.79

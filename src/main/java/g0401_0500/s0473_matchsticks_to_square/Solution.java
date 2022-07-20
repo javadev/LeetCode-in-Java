@@ -1,7 +1,7 @@
 package g0401_0500.s0473_matchsticks_to_square;
 
 // #Medium #Array #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
-// #2022_07_14_Time_161_ms_(55.12%)_Space_40.4_MB_(88.85%)
+// #2022_07_20_Time_165_ms_(53.96%)_Space_41.8_MB_(64.07%)
 
 import java.util.Arrays;
 

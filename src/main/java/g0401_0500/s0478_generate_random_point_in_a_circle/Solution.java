@@ -1,7 +1,7 @@
 package g0401_0500.s0478_generate_random_point_in_a_circle;
 
 // #Medium #Math #Geometry #Randomized #Rejection_Sampling
-// #2022_03_18_Time_196_ms_(98.10%)_Space_51.3_MB_(87.97%)
+// #2022_07_20_Time_342_ms_(56.21%)_Space_128_MB_(45.56%)
 
 import java.util.Random;
 
@@ -36,3 +36,9 @@ public class Solution {
         return center - radius + random.nextDouble() * 2 * radius;
     }
 }
+
+/*
+ * Your Solution object will be instantiated and called as such:
+ * Solution obj = new Solution(radius, x_center, y_center);
+ * double[] param_1 = obj.randPoint();
+ */
