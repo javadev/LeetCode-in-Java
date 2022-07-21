@@ -31,6 +31,7 @@ import org.zapodot.junit.db.common.CompatibilityMode;
                         + "VALUES (1, 7000, 'Feb'); "
                         + "INSERT INTO department(id, revenue, \"month\") "
                         + "VALUES (1, 6000, 'Mar'); ")
+@SuppressWarnings("java:S5961")
 class MysqlTest {
     @Test
     void testScript(@EmbeddedDatabase DataSource dataSource)
