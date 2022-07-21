@@ -880,7 +880,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0589 |[N-ary Tree Preorder Traversal](src/main/java/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.java)| Easy | Depth_First_Search, Tree, Stack | 2 | 54.35
-| 0496 |[Next Greater Element I](src/main/java/g0401_0500/s0496_next_greater_element_i/Solution.java)| Easy | Array, Hash_Table, Stack, Monotonic_Stack | 3 | 84.97
+| 0496 |[Next Greater Element I](src/main/java/g0401_0500/s0496_next_greater_element_i/Solution.java)| Easy | Array, Hash_Table, Stack, Monotonic_Stack | 4 | 81.18
 | 1232 |[Check If It Is a Straight Line](src/main/java/g1201_1300/s1232_check_if_it_is_a_straight_line/Solution.java)| Easy | Array, Math, Geometry | 0 | 100.00
 
 #### Day 6 Array
@@ -3292,16 +3292,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0500 |[Keyboard Row](src/main/java/g0401_0500/s0500_keyboard_row/Solution.java)| Easy | Array, String, Hash_Table | 0 | 100.00
 | 0498 |[Diagonal Traverse](src/main/java/g0401_0500/s0498_diagonal_traverse/Solution.java)| Medium | Array, Matrix, Simulation | 2 | 96.07
 | 0497 |[Random Point in Non-overlapping Rectangles](src/main/java/g0401_0500/s0497_random_point_in_non_overlapping_rectangles/Solution.java)| Medium | Math, Binary_Search, Prefix_Sum, Ordered_Set, Randomized, Reservoir_Sampling | 44 | 97.50
-| 0496 |[Next Greater Element I](src/main/java/g0401_0500/s0496_next_greater_element_i/Solution.java)| Easy | Array, Hash_Table, Stack, Monotonic_Stack, Programming_Skills_I_Day_5_Function | 3 | 84.97
-| 0495 |[Teemo Attacking](src/main/java/g0401_0500/s0495_teemo_attacking/Solution.java)| Easy | Array, Simulation | 4 | 26.85
-| 0494 |[Target Sum](src/main/java/g0401_0500/s0494_target_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Backtracking | 10 | 82.41
-| 0493 |[Reverse Pairs](src/main/java/g0401_0500/s0493_reverse_pairs/Solution.java)| Hard | Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 121 | 31.13
-| 0492 |[Construct the Rectangle](src/main/java/g0401_0500/s0492_construct_the_rectangle/Solution.java)| Easy | Math | 1 | 74.25
-| 0491 |[Increasing Subsequences](src/main/java/g0401_0500/s0491_increasing_subsequences/Solution.java)| Medium | Array, Hash_Table, Bit_Manipulation, Backtracking | 22 | 46.38
-| 0488 |[Zuma Game](src/main/java/g0401_0500/s0488_zuma_game/Solution.java)| Hard | String, Dynamic_Programming, Breadth_First_Search, Memoization | 1989 | 32.79
-| 0486 |[Predict the Winner](src/main/java/g0401_0500/s0486_predict_the_winner/Solution.java)| Medium | Array, Dynamic_Programming, Math, Recursion, Game_Theory | 0 | 100.00
+| 0496 |[Next Greater Element I](src/main/java/g0401_0500/s0496_next_greater_element_i/Solution.java)| Easy | Array, Hash_Table, Stack, Monotonic_Stack, Programming_Skills_I_Day_5_Function | 4 | 81.18
+| 0495 |[Teemo Attacking](src/main/java/g0401_0500/s0495_teemo_attacking/Solution.java)| Easy | Array, Simulation | 2 | 97.97
+| 0494 |[Target Sum](src/main/java/g0401_0500/s0494_target_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Backtracking | 9 | 79.99
+| 0493 |[Reverse Pairs](src/main/java/g0401_0500/s0493_reverse_pairs/Solution.java)| Hard | Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 92 | 52.08
+| 0492 |[Construct the Rectangle](src/main/java/g0401_0500/s0492_construct_the_rectangle/Solution.java)| Easy | Math | 1 | 74.88
+| 0491 |[Increasing Subsequences](src/main/java/g0401_0500/s0491_increasing_subsequences/Solution.java)| Medium | Array, Hash_Table, Bit_Manipulation, Backtracking | 24 | 38.30
+| 0488 |[Zuma Game](src/main/java/g0401_0500/s0488_zuma_game/Solution.java)| Hard | String, Dynamic_Programming, Breadth_First_Search, Memoization | 1593 | 37.71
+| 0486 |[Predict the Winner](src/main/java/g0401_0500/s0486_predict_the_winner/Solution.java)| Medium | Array, Dynamic_Programming, Math, Recursion, Game_Theory | 1 | 85.17
 | 0485 |[Max Consecutive Ones](src/main/java/g0401_0500/s0485_max_consecutive_ones/Solution.java)| Easy | Array | 1 | 100.00
-| 0483 |[Smallest Good Base](src/main/java/g0401_0500/s0483_smallest_good_base/Solution.java)| Hard | Math, Binary_Search | 3 | 87.88
+| 0483 |[Smallest Good Base](src/main/java/g0401_0500/s0483_smallest_good_base/Solution.java)| Hard | Math, Binary_Search | 2 | 96.00
 | 0482 |[License Key Formatting](src/main/java/g0401_0500/s0482_license_key_formatting/Solution.java)| Easy | String | 8 | 96.52
 | 0481 |[Magical String](src/main/java/g0401_0500/s0481_magical_string/Solution.java)| Medium | String, Two_Pointers | 5 | 93.33
 | 0480 |[Sliding Window Median](src/main/java/g0401_0500/s0480_sliding_window_median/Solution.java)| Hard | Array, Hash_Table, Heap_Priority_Queue, Sliding_Window | 60 | 70.77

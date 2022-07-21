@@ -1,7 +1,7 @@
 package g0401_0500.s0494_target_sum;
 
 // #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Backtracking
-// #2022_03_19_Time_10_ms_(82.41%)_Space_44.5_MB_(37.47%)
+// #2022_07_21_Time_9_ms_(79.99%)_Space_45.2_MB_(32.79%)
 
 public class Solution {
     public int findTargetSumWays(int[] nums, int s) {
@@ -14,7 +14,6 @@ public class Solution {
         if (s > sum || (sum + s) % 2 != 0) {
             return 0;
         }
-
         int[][] dp = new int[(sum + s) / 2 + 1][nums.length + 1];
         dp[0][0] = 1;
         // empty knapsack must be processed specially
