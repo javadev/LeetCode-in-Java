@@ -21,7 +21,7 @@ import org.zapodot.junit.db.common.CompatibilityMode;
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
                 "CREATE TABLE Salary(id INTEGER PRIMARY KEY, name"
-                        +" VARCHAR, sex VARCHAR, salary INTEGER); "
+                        + " VARCHAR, sex VARCHAR, salary INTEGER); "
                         + "INSERT INTO Salary(id, name, sex, salary)"
                         + " VALUES (1, 'A', 'm', 2500); "
                         + "INSERT INTO Salary(id, name, sex, salary)"
