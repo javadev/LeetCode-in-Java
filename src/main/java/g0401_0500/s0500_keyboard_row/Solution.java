@@ -1,6 +1,6 @@
 package g0401_0500.s0500_keyboard_row;
 
-// #Easy #Array #String #Hash_Table #2022_03_19_Time_0_ms_(100.00%)_Space_42.1_MB_(35.04%)
+// #Easy #Array #String #Hash_Table #2022_07_24_Time_1_ms_(82.00%)_Space_42_MB_(48.14%)
 
 import java.util.ArrayList;
 import java.util.List;

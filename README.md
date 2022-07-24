@@ -1008,7 +1008,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0503 |[Next Greater Element II](src/main/java/g0501_0600/s0503_next_greater_element_ii/Solution.java)| Medium | Array, Stack, Monotonic_Stack | 7 | 95.85
+| 0503 |[Next Greater Element II](src/main/java/g0501_0600/s0503_next_greater_element_ii/Solution.java)| Medium | Array, Stack, Monotonic_Stack | 7 | 97.03
 | 0556 |[Next Greater Element III](src/main/java/g0501_0600/s0556_next_greater_element_iii/Solution.java)| Medium | String, Math, Two_Pointers | 0 | 100.00
 
 #### Day 11
@@ -3282,16 +3282,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0513 |[Find Bottom Left Tree Value](src/main/java/g0501_0600/s0513_find_bottom_left_tree_value/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 1 | 80.06
 | 0511 |[Game Play Analysis I](src/main/java/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_8_Function | 620 | 35.70
 | 0509 |[Fibonacci Number](src/main/java/g0501_0600/s0509_fibonacci_number/Solution.java)| Easy | Dynamic_Programming, Math, Recursion, Memoization, Dynamic_Programming_I_Day_1, Level_1_Day_10_Dynamic_Programming, Udemy_Dynamic_Programming | 0 | 100.00
-| 0508 |[Most Frequent Subtree Sum](src/main/java/g0501_0600/s0508_most_frequent_subtree_sum/Solution.java)| Medium | Hash_Table, Depth_First_Search, Tree, Binary_Tree | 6 | 77.55
-| 0507 |[Perfect Number](src/main/java/g0501_0600/s0507_perfect_number/Solution.java)| Easy | Math | 2 | 73.73
-| 0506 |[Relative Ranks](src/main/java/g0501_0600/s0506_relative_ranks/Solution.java)| Easy | Array, Sorting, Heap_Priority_Queue | 4 | 99.79
-| 0504 |[Base 7](src/main/java/g0501_0600/s0504_base_7/Solution.java)| Easy | Math | 1 | 94.93
-| 0503 |[Next Greater Element II](src/main/java/g0501_0600/s0503_next_greater_element_ii/Solution.java)| Medium | Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_10 | 7 | 95.85
-| 0502 |[IPO](src/main/java/g0501_0600/s0502_ipo/Solution.java)| Hard | Array, Sorting, Greedy, Heap_Priority_Queue | 43 | 92.06
-| 0501 |[Find Mode in Binary Search Tree](src/main/java/g0501_0600/s0501_find_mode_in_binary_search_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 1 | 91.60
-| 0500 |[Keyboard Row](src/main/java/g0401_0500/s0500_keyboard_row/Solution.java)| Easy | Array, String, Hash_Table | 0 | 100.00
-| 0498 |[Diagonal Traverse](src/main/java/g0401_0500/s0498_diagonal_traverse/Solution.java)| Medium | Array, Matrix, Simulation | 2 | 96.07
-| 0497 |[Random Point in Non-overlapping Rectangles](src/main/java/g0401_0500/s0497_random_point_in_non_overlapping_rectangles/Solution.java)| Medium | Math, Binary_Search, Prefix_Sum, Ordered_Set, Randomized, Reservoir_Sampling | 44 | 97.50
+| 0508 |[Most Frequent Subtree Sum](src/main/java/g0501_0600/s0508_most_frequent_subtree_sum/Solution.java)| Medium | Hash_Table, Depth_First_Search, Tree, Binary_Tree | 4 | 96.83
+| 0507 |[Perfect Number](src/main/java/g0501_0600/s0507_perfect_number/Solution.java)| Easy | Math | 2 | 80.46
+| 0506 |[Relative Ranks](src/main/java/g0501_0600/s0506_relative_ranks/Solution.java)| Easy | Array, Sorting, Heap_Priority_Queue | 11 | 72.65
+| 0504 |[Base 7](src/main/java/g0501_0600/s0504_base_7/Solution.java)| Easy | Math | 0 | 100.00
+| 0503 |[Next Greater Element II](src/main/java/g0501_0600/s0503_next_greater_element_ii/Solution.java)| Medium | Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_10 | 7 | 97.03
+| 0502 |[IPO](src/main/java/g0501_0600/s0502_ipo/Solution.java)| Hard | Array, Sorting, Greedy, Heap_Priority_Queue | 51 | 89.62
+| 0501 |[Find Mode in Binary Search Tree](src/main/java/g0501_0600/s0501_find_mode_in_binary_search_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 1 | 92.14
+| 0500 |[Keyboard Row](src/main/java/g0401_0500/s0500_keyboard_row/Solution.java)| Easy | Array, String, Hash_Table | 1 | 82.00
+| 0498 |[Diagonal Traverse](src/main/java/g0401_0500/s0498_diagonal_traverse/Solution.java)| Medium | Array, Matrix, Simulation | 4 | 59.46
+| 0497 |[Random Point in Non-overlapping Rectangles](src/main/java/g0401_0500/s0497_random_point_in_non_overlapping_rectangles/Solution.java)| Medium | Math, Binary_Search, Prefix_Sum, Ordered_Set, Randomized, Reservoir_Sampling | 53 | 94.83
 | 0496 |[Next Greater Element I](src/main/java/g0401_0500/s0496_next_greater_element_i/Solution.java)| Easy | Array, Hash_Table, Stack, Monotonic_Stack, Programming_Skills_I_Day_5_Function | 4 | 81.18
 | 0495 |[Teemo Attacking](src/main/java/g0401_0500/s0495_teemo_attacking/Solution.java)| Easy | Array, Simulation | 2 | 97.97
 | 0494 |[Target Sum](src/main/java/g0401_0500/s0494_target_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Backtracking | 9 | 79.99

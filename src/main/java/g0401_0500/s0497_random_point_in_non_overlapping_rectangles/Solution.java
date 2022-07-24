@@ -1,7 +1,7 @@
 package g0401_0500.s0497_random_point_in_non_overlapping_rectangles;
 
 // #Medium #Math #Binary_Search #Prefix_Sum #Ordered_Set #Randomized #Reservoir_Sampling
-// #2022_03_19_Time_44_ms_(97.50%)_Space_48.3_MB_(88.33%)
+// #2022_07_24_Time_53_ms_(94.83%)_Space_48.9_MB_(85.06%)
 
 import java.util.Random;
 
@@ -53,3 +53,9 @@ public class Solution {
         };
     }
 }
+
+/*
+ * Your Solution object will be instantiated and called as such:
+ * Solution obj = new Solution(rects);
+ * int[] param_1 = obj.pick();
+ */
