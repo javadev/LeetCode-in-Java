@@ -811,7 +811,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0005 |[Longest Palindromic Substring](src/main/java/g0001_0100/s0005_longest_palindromic_substring/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming | 10 | 98.57
-| 0516 |[Longest Palindromic Subsequence](src/main/java/g0501_0600/s0516_longest_palindromic_subsequence/Solution.java)| Medium | String, Dynamic_Programming | 31 | 96.10
+| 0516 |[Longest Palindromic Subsequence](src/main/java/g0501_0600/s0516_longest_palindromic_subsequence/Solution.java)| Medium | String, Dynamic_Programming | 88 | 58.87
 
 #### Day 18
 
@@ -833,7 +833,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0322 |[Coin Change](src/main/java/g0301_0400/s0322_coin_change/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Breadth_First_Search | 17 | 91.77
-| 0518 |[Coin Change 2](src/main/java/g0501_0600/s0518_coin_change_2/Solution.java)| Medium | Array, Dynamic_Programming | 3 | 91.32
+| 0518 |[Coin Change 2](src/main/java/g0501_0600/s0518_coin_change_2/Solution.java)| Medium | Array, Dynamic_Programming | 4 | 84.67
 
 #### Day 21
 
@@ -1250,7 +1250,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0586 |[Customer Placing the Largest Number of Orders](src/main/java/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 392 | 90.54
-| 0511 |[Game Play Analysis I](src/main/java/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 620 | 35.70
+| 0511 |[Game Play Analysis I](src/main/java/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 586 | 56.94
 | 1890 |[The Latest Login in 2020](src/main/java/g1801_1900/s1890_the_latest_login_in_2020/script.sql)| Easy | Database | 571 | 73.59
 | 1741 |[Find Total Time Spent by Each Employee](src/main/java/g1701_1800/s1741_find_total_time_spent_by_each_employee/script.sql)| Easy | Database | 414 | 93.27
 
@@ -3272,15 +3272,15 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 0523 |[Continuous Subarray Sum](src/main/java/g0501_0600/s0523_continuous_subarray_sum/Solution.java)| Medium | Array, Hash_Table, Math, Prefix_Sum | 25 | 78.40
 | 0522 |[Longest Uncommon Subsequence II](src/main/java/g0501_0600/s0522_longest_uncommon_subsequence_ii/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Two_Pointers | 1 | 100.00
 | 0521 |[Longest Uncommon Subsequence I](src/main/java/g0501_0600/s0521_longest_uncommon_subsequence_i/Solution.java)| Easy | String | 0 | 100.00
-| 0520 |[Detect Capital](src/main/java/g0501_0600/s0520_detect_capital/Solution.java)| Easy | String | 2 | 72.44
-| 0519 |[Random Flip Matrix](src/main/java/g0501_0600/s0519_random_flip_matrix/Solution.java)| Medium | Hash_Table, Math, Randomized, Reservoir_Sampling | 39 | 68.47
-| 0518 |[Coin Change 2](src/main/java/g0501_0600/s0518_coin_change_2/Solution.java)| Medium | Array, Dynamic_Programming, Dynamic_Programming_I_Day_20 | 3 | 91.32
-| 0517 |[Super Washing Machines](src/main/java/g0501_0600/s0517_super_washing_machines/Solution.java)| Hard | Array, Greedy | 0 | 100.00
-| 0516 |[Longest Palindromic Subsequence](src/main/java/g0501_0600/s0516_longest_palindromic_subsequence/Solution.java)| Medium | String, Dynamic_Programming, Dynamic_Programming_I_Day_17 | 31 | 96.10
-| 0515 |[Find Largest Value in Each Tree Row](src/main/java/g0501_0600/s0515_find_largest_value_in_each_tree_row/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 1 | 96.84
-| 0514 |[Freedom Trail](src/main/java/g0501_0600/s0514_freedom_trail/Solution.java)| Hard | String, Dynamic_Programming, Depth_First_Search, Breadth_First_Search | 17 | 75.84
-| 0513 |[Find Bottom Left Tree Value](src/main/java/g0501_0600/s0513_find_bottom_left_tree_value/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 1 | 80.06
-| 0511 |[Game Play Analysis I](src/main/java/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_8_Function | 620 | 35.70
+| 0520 |[Detect Capital](src/main/java/g0501_0600/s0520_detect_capital/Solution.java)| Easy | String | 2 | 65.95
+| 0519 |[Random Flip Matrix](src/main/java/g0501_0600/s0519_random_flip_matrix/Solution.java)| Medium | Hash_Table, Math, Randomized, Reservoir_Sampling | 38 | 79.28
+| 0518 |[Coin Change 2](src/main/java/g0501_0600/s0518_coin_change_2/Solution.java)| Medium | Array, Dynamic_Programming, Dynamic_Programming_I_Day_20 | 4 | 84.67
+| 0517 |[Super Washing Machines](src/main/java/g0501_0600/s0517_super_washing_machines/Solution.java)| Hard | Array, Greedy | 1 | 94.02
+| 0516 |[Longest Palindromic Subsequence](src/main/java/g0501_0600/s0516_longest_palindromic_subsequence/Solution.java)| Medium | String, Dynamic_Programming, Dynamic_Programming_I_Day_17 | 88 | 58.87
+| 0515 |[Find Largest Value in Each Tree Row](src/main/java/g0501_0600/s0515_find_largest_value_in_each_tree_row/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 2 | 85.27
+| 0514 |[Freedom Trail](src/main/java/g0501_0600/s0514_freedom_trail/Solution.java)| Hard | String, Dynamic_Programming, Depth_First_Search, Breadth_First_Search | 8 | 95.63
+| 0513 |[Find Bottom Left Tree Value](src/main/java/g0501_0600/s0513_find_bottom_left_tree_value/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 0 | 100.00
+| 0511 |[Game Play Analysis I](src/main/java/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_8_Function | 586 | 56.94
 | 0509 |[Fibonacci Number](src/main/java/g0501_0600/s0509_fibonacci_number/Solution.java)| Easy | Dynamic_Programming, Math, Recursion, Memoization, Dynamic_Programming_I_Day_1, Level_1_Day_10_Dynamic_Programming, Udemy_Dynamic_Programming | 0 | 100.00
 | 0508 |[Most Frequent Subtree Sum](src/main/java/g0501_0600/s0508_most_frequent_subtree_sum/Solution.java)| Medium | Hash_Table, Depth_First_Search, Tree, Binary_Tree | 4 | 96.83
 | 0507 |[Perfect Number](src/main/java/g0501_0600/s0507_perfect_number/Solution.java)| Easy | Math | 2 | 80.46
