@@ -20,17 +20,18 @@ import org.zapodot.junit.db.common.CompatibilityMode;
 @EmbeddedDatabaseTest(
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
-                "CREATE TABLE Patients(patient_id INTEGER PRIMARY KEY, patient_name VARCHAR, conditions VARCHAR); "
-                        + "INSERT INTO Patients(patient_id, patient_name, conditions) "
-                        + "VALUES (1, 'Daniel', 'YFEV COUGH'); "
-                        + "INSERT INTO Patients(patient_id, patient_name, conditions) "
-                        + "VALUES (2, 'Alice', ''); "
-                        + "INSERT INTO Patients(patient_id, patient_name, conditions) "
-                        + "VALUES (3, 'Bob', 'DIAB100 MYOP'); "
-                        + "INSERT INTO Patients(patient_id, patient_name, conditions) "
-                        + "VALUES (4, 'George', 'ACNE DIAB100'); "
-                        + "INSERT INTO Patients(patient_id, patient_name, conditions) "
-                        + "VALUES (5, 'Alain', 'DIAB201'); ")
+                "CREATE TABLE Patients(patient_id INTEGER PRIMARY KEY, patient_name"
+                        + " VARCHAR, conditions VARCHAR); "
+                        + "INSERT INTO Patients(patient_id, patient_name, conditions)"
+                        + " VALUES (1, 'Daniel', 'YFEV COUGH'); "
+                        + "INSERT INTO Patients(patient_id, patient_name, conditions)"
+                        + " VALUES (2, 'Alice', ''); "
+                        + "INSERT INTO Patients(patient_id, patient_name, conditions)"
+                        + " VALUES (3, 'Bob', 'DIAB100 MYOP'); "
+                        + "INSERT INTO Patients(patient_id, patient_name, conditions)"
+                        + " VALUES (4, 'George', 'ACNE DIAB100'); "
+                        + "INSERT INTO Patients(patient_id, patient_name, conditions)"
+                        + " VALUES (5, 'Alain', 'DIAB201'); ")
 class MysqlTest {
     @Test
     void testScript(@EmbeddedDatabase DataSource dataSource)
