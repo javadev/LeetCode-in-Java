@@ -30,4 +30,13 @@ class SolutionTest {
                                 new int[] {10, 10, 2, 12, 9}, new char[] {'a', 'b', 'c', 'a', 'd'}),
                 equalTo("Pair"));
     }
+
+    @Test
+    void bestHand4() {
+        assertThat(
+                new Solution()
+                        .bestHand(
+                                new int[] {13, 12, 3, 4, 7}, new char[] {'a', 'd', 'c', 'b', 'c'}),
+                equalTo("High Card"));
+    }
 }
