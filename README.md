@@ -1258,7 +1258,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1393 |[Capital Gain/Loss](src/main/java/g1301_1400/s1393_capital_gainloss/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 457 | 79.39
+| 1393 |[Capital Gain/Loss](src/main/java/g1301_1400/s1393_capital_gainloss/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 428 | 92.01
 | 1407 |[Top Travellers](src/main/java/g1401_1500/s1407_top_travellers/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 682 | 70.16
 | 1158 |[Market Analysis I](src/main/java/g1101_1200/s1158_market_analysis_i/script.sql)| Medium | Database | 1039 | 77.70
 
@@ -1848,6 +1848,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2347 |[Best Poker Hand](src/main/java/g2301_2400/s2347_best_poker_hand/Solution.java)| Easy | Array, Hash_Table, Counting | 1 | 76.92
 | 2344 |[Minimum Deletions to Make Array Divisible](src/main/java/g2301_2400/s2344_minimum_deletions_to_make_array_divisible/Solution.java)| Hard | Array, Math, Sorting, Heap_Priority_Queue, Number_Theory | 13 | 88.89
 | 2343 |[Query Kth Smallest Trimmed Number](src/main/java/g2301_2400/s2343_query_kth_smallest_trimmed_number/Solution.java)| Medium | Array, String, Divide_and_Conquer, Sorting, Heap_Priority_Queue, Radix_Sort, Quickselect | 52 | 75.00
 | 2342 |[Max Sum of a Pair With Equal Sum of Digits](src/main/java/g2301_2400/s2342_max_sum_of_a_pair_with_equal_sum_of_digits/Solution.java)| Medium | Array, Hash_Table, Sorting, Heap_Priority_Queue | 99 | 100.00
@@ -2591,7 +2592,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 | 1396 |[Design Underground System](src/main/java/g1301_1400/s1396_design_underground_system/UndergroundSystem.java)| Medium | String, Hash_Table, Design | 89 | 89.64
 | 1395 |[Count Number of Teams](src/main/java/g1301_1400/s1395_count_number_of_teams/Solution.java)| Medium | Array, Dynamic_Programming, Binary_Indexed_Tree | 18 | 91.75
 | 1394 |[Find Lucky Integer in an Array](src/main/java/g1301_1400/s1394_find_lucky_integer_in_an_array/Solution.java)| Easy | Array, Hash_Table, Counting | 2 | 82.56
-| 1393 |[Capital Gain/Loss](src/main/java/g1301_1400/s1393_capital_gainloss/script.sql)| Medium | LeetCode_Curated_SQL_70, Database, SQL_I_Day_9_Control_of_Flow | 457 | 79.39
+| 1393 |[Capital Gain/Loss](src/main/java/g1301_1400/s1393_capital_gainloss/script.sql)| Medium | LeetCode_Curated_SQL_70, Database, SQL_I_Day_9_Control_of_Flow | 428 | 92.01
 | 1392 |[Longest Happy Prefix](src/main/java/g1301_1400/s1392_longest_happy_prefix/Solution.java)| Hard | String, Hash_Function, String_Matching, Rolling_Hash | 39 | 28.37
 | 1391 |[Check if There is a Valid Path in a Grid](src/main/java/g1301_1400/s1391_check_if_there_is_a_valid_path_in_a_grid/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 14 | 85.37
 | 1390 |[Four Divisors](src/main/java/g1301_1400/s1390_four_divisors/Solution.java)| Medium | Array, Math | 13 | 97.25
