@@ -1848,7 +1848,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.11'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
-| 2347 |[Best Poker Hand](src/main/java/g2301_2400/s2347_best_poker_hand/Solution.java)| Easy || 1 | 76.92
+| 2347 |[Best Poker Hand](src/main/java/g2301_2400/s2347_best_poker_hand/Solution.java)| Easy | Array, Hash_Table, Counting | 1 | 76.92
 | 2344 |[Minimum Deletions to Make Array Divisible](src/main/java/g2301_2400/s2344_minimum_deletions_to_make_array_divisible/Solution.java)| Hard | Array, Math, Sorting, Heap_Priority_Queue, Number_Theory | 13 | 88.89
 | 2343 |[Query Kth Smallest Trimmed Number](src/main/java/g2301_2400/s2343_query_kth_smallest_trimmed_number/Solution.java)| Medium | Array, String, Divide_and_Conquer, Sorting, Heap_Priority_Queue, Radix_Sort, Quickselect | 52 | 75.00
 | 2342 |[Max Sum of a Pair With Equal Sum of Digits](src/main/java/g2301_2400/s2342_max_sum_of_a_pair_with_equal_sum_of_digits/Solution.java)| Medium | Array, Hash_Table, Sorting, Heap_Priority_Queue | 99 | 100.00
