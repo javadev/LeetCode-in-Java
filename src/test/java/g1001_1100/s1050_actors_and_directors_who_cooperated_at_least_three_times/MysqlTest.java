@@ -20,21 +20,22 @@ import org.zapodot.junit.db.common.CompatibilityMode;
 @EmbeddedDatabaseTest(
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
-                "CREATE TABLE ACTORDIRECTOR(actor_id INTEGER, director_id INTEGER, timestamp INTEGER PRIMARY KEY); "
-                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp) "
-                        + "VALUES (1, 1,0); "
-                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp) "
-                        + "VALUES (1, 1,1); "
-                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp) "
-                        + "VALUES (1, 1,2); "
-                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp) "
-                        + "VALUES (1, 2,3); "
-                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp) "
-                        + "VALUES (1, 2,4); "
-                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp) "
-                        + "VALUES (1, 1,5); "
-                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp) "
-                        + "VALUES (2, 1,6); ")
+                "CREATE TABLE ACTORDIRECTOR(actor_id INTEGER, director_id INTEGER,"
+                        + " timestamp INTEGER PRIMARY KEY); "
+                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp)"
+                        + " VALUES (1, 1, 0); "
+                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp)"
+                        + " VALUES (1, 1, 1); "
+                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp)"
+                        + " VALUES (1, 1, 2); "
+                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp)"
+                        + " VALUES (1, 2, 3); "
+                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp)"
+                        + " VALUES (1, 2, 4); "
+                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp)"
+                        + " VALUES (1, 1, 5); "
+                        + "INSERT INTO ACTORDIRECTOR(actor_id, director_id, timestamp)"
+                        + " VALUES (2, 1, 6); ")
 class MysqlTest {
     @Test
     void testScript(@EmbeddedDatabase DataSource dataSource)

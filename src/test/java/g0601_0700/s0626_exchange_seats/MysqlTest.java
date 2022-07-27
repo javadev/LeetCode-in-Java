@@ -21,16 +21,11 @@ import org.zapodot.junit.db.common.CompatibilityMode;
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
                 "CREATE TABLE seat(id INTEGER PRIMARY KEY, student VARCHAR(512));"
-                        + "INSERT INTO seat(id, student) "
-                        + "VALUES (1, 'Abbot'); "
-                        + "INSERT INTO seat(id, student) "
-                        + "VALUES (2, 'Doris'); "
-                        + "INSERT INTO seat(id, student) "
-                        + "VALUES (3, 'Emerson'); "
-                        + "INSERT INTO seat(id, student) "
-                        + "VALUES (4, 'Green'); "
-                        + "INSERT INTO seat(id, student) "
-                        + "VALUES (5, 'Jeames'); ")
+                        + "INSERT INTO seat(id, student) VALUES (1, 'Abbot'); "
+                        + "INSERT INTO seat(id, student) VALUES (2, 'Doris'); "
+                        + "INSERT INTO seat(id, student) VALUES (3, 'Emerson'); "
+                        + "INSERT INTO seat(id, student) VALUES (4, 'Green'); "
+                        + "INSERT INTO seat(id, student) VALUES (5, 'Jeames'); ")
 class MysqlTest {
     @Test
     void testScript(@EmbeddedDatabase DataSource dataSource)
