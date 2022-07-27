@@ -22,16 +22,16 @@ import org.zapodot.junit.db.common.CompatibilityMode;
         initialSqls =
                 "CREATE TABLE Person(personId INTEGER PRIMARY KEY, lastName VARCHAR(512)"
                         + ", firstName VARCHAR(512)); "
-                        + "INSERT INTO Person(personId, lastName, firstName) "
-                        + "VALUES (1, 'Wang', 'Allen'); "
-                        + "INSERT INTO Person(personId, lastName, firstName) "
-                        + "VALUES (2, 'Alice', 'Bob'); "
+                        + "INSERT INTO Person(personId, lastName, firstName)"
+                        + " VALUES (1, 'Wang', 'Allen'); "
+                        + "INSERT INTO Person(personId, lastName, firstName)"
+                        + " VALUES (2, 'Alice', 'Bob'); "
                         + "CREATE TABLE Address(addressId INTEGER PRIMARY KEY, personId INTEGER"
                         + ", city VARCHAR(512), state VARCHAR(512)); "
-                        + "INSERT INTO Address(addressId, personId, city, state) "
-                        + "VALUES (1, 2, 'New York City', 'New York'); "
-                        + "INSERT INTO Address(addressId, personId, city, state) "
-                        + "VALUES (2, 3, 'Leetcode', 'California'); ")
+                        + "INSERT INTO Address(addressId, personId, city, state)"
+                        + " VALUES (1, 2, 'New York City', 'New York'); "
+                        + "INSERT INTO Address(addressId, personId, city, state)"
+                        + " VALUES (2, 3, 'Leetcode', 'California'); ")
 class MysqlTest {
     @Test
     void testScript(@EmbeddedDatabase DataSource dataSource)

@@ -21,12 +21,9 @@ import org.zapodot.junit.db.common.CompatibilityMode;
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
                 "CREATE TABLE Employee(id INTEGER PRIMARY KEY, salary INTEGER); "
-                        + "INSERT INTO Employee(id, salary) "
-                        + "VALUES (1, 100); "
-                        + "INSERT INTO Employee(id, salary) "
-                        + "VALUES (2, 200); "
-                        + "INSERT INTO Employee(id, salary) "
-                        + "VALUES (3, 300); ")
+                        + "INSERT INTO Employee(id, salary) VALUES (1, 100); "
+                        + "INSERT INTO Employee(id, salary) VALUES (2, 200); "
+                        + "INSERT INTO Employee(id, salary) VALUES (3, 300); ")
 class MysqlTest {
     @Test
     void testScript(@EmbeddedDatabase DataSource dataSource)
