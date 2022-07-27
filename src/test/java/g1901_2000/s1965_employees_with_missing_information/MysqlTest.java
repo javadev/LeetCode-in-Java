@@ -21,18 +21,18 @@ import org.zapodot.junit.db.common.CompatibilityMode;
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
                 "CREATE TABLE Employees(employee_id INTEGER, name VARCHAR); "
-                        + "INSERT INTO Employees(employee_id, name) "
+                        + "INSERT INTO Employees(employee_id, name)"
                         + " VALUES (2, 'Crew'); "
-                        + "INSERT INTO Employees(employee_id, name) "
+                        + "INSERT INTO Employees(employee_id, name)"
                         + " VALUES (4, 'Haven'); "
-                        + "INSERT INTO Employees(employee_id, name) "
+                        + "INSERT INTO Employees(employee_id, name)"
                         + " VALUES (5, 'Kristian'); "
                         + "CREATE TABLE Salaries(employee_id INTEGER, salary INTEGER); "
-                        + "INSERT INTO Salaries(employee_id, salary) "
+                        + "INSERT INTO Salaries(employee_id, salary)"
                         + " VALUES (5, 76071); "
-                        + "INSERT INTO Salaries(employee_id, salary) "
+                        + "INSERT INTO Salaries(employee_id, salary)"
                         + " VALUES (1, 22517); "
-                        + "INSERT INTO Salaries(employee_id, salary) "
+                        + "INSERT INTO Salaries(employee_id, salary)"
                         + " VALUES (4, 63539); ")
 class MysqlTest {
     @Test
