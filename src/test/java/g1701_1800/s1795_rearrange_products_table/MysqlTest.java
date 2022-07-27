@@ -20,7 +20,8 @@ import org.zapodot.junit.db.common.CompatibilityMode;
 @EmbeddedDatabaseTest(
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
-                "CREATE TABLE Products(product_id INTEGER PRIMARY KEY, store1 INTEGER, store2 INTEGER, store3 INTEGER); "
+                "CREATE TABLE Products(product_id INTEGER PRIMARY KEY, store1 INTEGER, store2 INTEGER, "
+                        + " store3 INTEGER); "
                         + "INSERT INTO Products(product_id, store1, store2, store3) "
                         + " VALUES (0, 95, 100, 105); "
                         + "INSERT INTO Products(product_id, store1, store2, store3) "
