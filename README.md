@@ -639,7 +639,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0154 |[Find Minimum in Rotated Sorted Array II](src/main/java/g0101_0200/s0154_find_minimum_in_rotated_sorted_array_ii/Solution.java)| Hard | Array, Binary_Search | 1 | 77.09
-| 0528 |[Random Pick with Weight](src/main/java/g0501_0600/s0528_random_pick_with_weight/Solution.java)| Medium | Math, Binary_Search, Prefix_Sum, Randomized | 29 | 83.26
+| 0528 |[Random Pick with Weight](src/main/java/g0501_0600/s0528_random_pick_with_weight/Solution.java)| Medium | Math, Binary_Search, Prefix_Sum, Randomized | 42 | 50.90
 
 #### Day 14
 
@@ -1584,7 +1584,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | 0442 |[Find All Duplicates in an Array](src/main/java/g0401_0500/s0442_find_all_duplicates_in_an_array/Solution.java)| Medium | Array, Hash_Table | 5 | 98.83
 | 0041 |[First Missing Positive](src/main/java/g0001_0100/s0041_first_missing_positive/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table | 5 | 50.34
 | 0697 |[Degree of an Array](src/main/java/g0601_0700/s0697_degree_of_an_array/Solution.java)| Easy | Array, Hash_Table | 14 | 93.19
-| 0532 |[K-diff Pairs in an Array](src/main/java/g0501_0600/s0532_k_diff_pairs_in_an_array/Solution.java)| Medium | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 14 | 49.69
+| 0532 |[K-diff Pairs in an Array](src/main/java/g0501_0600/s0532_k_diff_pairs_in_an_array/Solution.java)| Medium | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 13 | 58.23
 | 0713 |[Subarray Product Less Than K](src/main/java/g0701_0800/s0713_subarray_product_less_than_k/Solution.java)| Medium | Array, Sliding_Window | 8 | 39.00
 | 1007 |[Minimum Domino Rotations For Equal Row](src/main/java/g1001_1100/s1007_minimum_domino_rotations_for_equal_row/Solution.java)| Medium | Array, Greedy | 5 | 79.64
 | 1306 |[Jump Game III](src/main/java/g1301_1400/s1306_jump_game_iii/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search | 2 | 96.23
@@ -3263,15 +3263,15 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | 0538 |[Convert BST to Greater Tree](src/main/java/g0501_0600/s0538_convert_bst_to_greater_tree/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 1 | 83.78
 | 0537 |[Complex Number Multiplication](src/main/java/g0501_0600/s0537_complex_number_multiplication/Solution.java)| Medium | String, Math, Simulation | 7 | 62.22
 | 0535 |[Encode and Decode TinyURL](src/main/java/g0501_0600/s0535_encode_and_decode_tinyurl/Codec.java)| Medium | String, Hash_Table, Design, Hash_Function | 4 | 65.42
-| 0532 |[K-diff Pairs in an Array](src/main/java/g0501_0600/s0532_k_diff_pairs_in_an_array/Solution.java)| Medium | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers, Udemy_Arrays | 14 | 49.69
-| 0530 |[Minimum Absolute Difference in BST](src/main/java/g0501_0600/s0530_minimum_absolute_difference_in_bst/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 0 | 100.00
+| 0532 |[K-diff Pairs in an Array](src/main/java/g0501_0600/s0532_k_diff_pairs_in_an_array/Solution.java)| Medium | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers, Udemy_Arrays | 13 | 58.23
+| 0530 |[Minimum Absolute Difference in BST](src/main/java/g0501_0600/s0530_minimum_absolute_difference_in_bst/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 1 | 92.05
 | 0529 |[Minesweeper](src/main/java/g0501_0600/s0529_minesweeper/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 0 | 100.00
-| 0528 |[Random Pick with Weight](src/main/java/g0501_0600/s0528_random_pick_with_weight/Solution.java)| Medium | Math, Binary_Search, Prefix_Sum, Randomized, Binary_Search_II_Day_13 | 29 | 83.26
-| 0526 |[Beautiful Arrangement](src/main/java/g0501_0600/s0526_beautiful_arrangement/Solution.java)| Medium | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 3 | 98.99
-| 0525 |[Contiguous Array](src/main/java/g0501_0600/s0525_contiguous_array/Solution.java)| Medium | Array, Hash_Table, Prefix_Sum | 17 | 92.02
-| 0524 |[Longest Word in Dictionary through Deleting](src/main/java/g0501_0600/s0524_longest_word_in_dictionary_through_deleting/Solution.java)| Medium | Array, String, Sorting, Two_Pointers | 10 | 97.43
-| 0523 |[Continuous Subarray Sum](src/main/java/g0501_0600/s0523_continuous_subarray_sum/Solution.java)| Medium | Array, Hash_Table, Math, Prefix_Sum | 25 | 78.40
-| 0522 |[Longest Uncommon Subsequence II](src/main/java/g0501_0600/s0522_longest_uncommon_subsequence_ii/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Two_Pointers | 1 | 100.00
+| 0528 |[Random Pick with Weight](src/main/java/g0501_0600/s0528_random_pick_with_weight/Solution.java)| Medium | Math, Binary_Search, Prefix_Sum, Randomized, Binary_Search_II_Day_13 | 42 | 50.90
+| 0526 |[Beautiful Arrangement](src/main/java/g0501_0600/s0526_beautiful_arrangement/Solution.java)| Medium | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 3 | 98.66
+| 0525 |[Contiguous Array](src/main/java/g0501_0600/s0525_contiguous_array/Solution.java)| Medium | Array, Hash_Table, Prefix_Sum | 31 | 80.05
+| 0524 |[Longest Word in Dictionary through Deleting](src/main/java/g0501_0600/s0524_longest_word_in_dictionary_through_deleting/Solution.java)| Medium | Array, String, Sorting, Two_Pointers | 19 | 89.67
+| 0523 |[Continuous Subarray Sum](src/main/java/g0501_0600/s0523_continuous_subarray_sum/Solution.java)| Medium | Array, Hash_Table, Math, Prefix_Sum | 37 | 41.45
+| 0522 |[Longest Uncommon Subsequence II](src/main/java/g0501_0600/s0522_longest_uncommon_subsequence_ii/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Two_Pointers | 1 | 99.61
 | 0521 |[Longest Uncommon Subsequence I](src/main/java/g0501_0600/s0521_longest_uncommon_subsequence_i/Solution.java)| Easy | String | 0 | 100.00
 | 0520 |[Detect Capital](src/main/java/g0501_0600/s0520_detect_capital/Solution.java)| Easy | String | 2 | 65.95
 | 0519 |[Random Flip Matrix](src/main/java/g0501_0600/s0519_random_flip_matrix/Solution.java)| Medium | Hash_Table, Math, Randomized, Reservoir_Sampling | 38 | 79.28

@@ -1,6 +1,6 @@
 package g0501_0600.s0521_longest_uncommon_subsequence_i;
 
-// #Easy #String #2022_03_20_Time_0_ms_(100.00%)_Space_42.6_MB_(6.24%)
+// #Easy #String #2022_07_28_Time_0_ms_(100.00%)_Space_40.2_MB_(87.89%)
 
 public class Solution {
     /*

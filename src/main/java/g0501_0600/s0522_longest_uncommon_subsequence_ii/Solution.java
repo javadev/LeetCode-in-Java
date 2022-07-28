@@ -1,7 +1,7 @@
 package g0501_0600.s0522_longest_uncommon_subsequence_ii;
 
 // #Medium #Array #String #Hash_Table #Sorting #Two_Pointers
-// #2022_03_20_Time_1_ms_(100.00%)_Space_42.6_MB_(5.73%)
+// #2022_07_28_Time_1_ms_(99.61%)_Space_41.7_MB_(40.70%)
 
 public class Solution {
     public int findLUSlength(String[] strs) {
