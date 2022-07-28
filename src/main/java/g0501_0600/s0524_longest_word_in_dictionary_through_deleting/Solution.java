@@ -1,7 +1,7 @@
 package g0501_0600.s0524_longest_word_in_dictionary_through_deleting;
 
 // #Medium #Array #String #Sorting #Two_Pointers
-// #2022_03_20_Time_10_ms_(97.43%)_Space_42.5_MB_(96.45%)
+// #2022_07_28_Time_19_ms_(89.67%)_Space_51.3_MB_(53.71%)
 
 import java.util.ArrayDeque;
 import java.util.Deque;

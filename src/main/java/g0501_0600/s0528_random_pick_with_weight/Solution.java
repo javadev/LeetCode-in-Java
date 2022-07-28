@@ -1,7 +1,7 @@
 package g0501_0600.s0528_random_pick_with_weight;
 
 // #Medium #Math #Binary_Search #Prefix_Sum #Randomized #Binary_Search_II_Day_13
-// #2022_03_18_Time_29_ms_(83.26%)_Space_46.5_MB_(94.36%)
+// #2022_07_28_Time_42_ms_(50.90%)_Space_60.1_MB_(13.48%)
 
 import java.util.Comparator;
 import java.util.Objects;
@@ -29,3 +29,9 @@ public class Solution {
         return Objects.requireNonNull(treeSet.ceiling(new int[] {target, 1}))[1];
     }
 }
+
+/*
+ * Your Solution object will be instantiated and called as such:
+ * Solution obj = new Solution(w);
+ * int param_1 = obj.pickIndex();
+ */
