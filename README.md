@@ -1848,6 +1848,9 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2350 |[Shortest Impossible Sequence of Rolls](src/main/java/g2301_2400/s2350_shortest_impossible_sequence_of_rolls/Solution.java)| Hard | Array, Hash_Table, Greedy | 54 | 47.18
+| 2349 |[Design a Number Container System](src/main/java/g2301_2400/s2349_design_a_number_container_system/NumberContainers.java)| Medium | Hash_Table, Design, Heap_Priority_Queue, Ordered_Set | 208 | 54.57
+| 2348 |[Number of Zero-Filled Subarrays](src/main/java/g2301_2400/s2348_number_of_zero_filled_subarrays/Solution.java)| Medium | Array, Math | 3 | 99.90
 | 2347 |[Best Poker Hand](src/main/java/g2301_2400/s2347_best_poker_hand/Solution.java)| Easy | Array, Hash_Table, Counting | 1 | 76.92
 | 2344 |[Minimum Deletions to Make Array Divisible](src/main/java/g2301_2400/s2344_minimum_deletions_to_make_array_divisible/Solution.java)| Hard | Array, Math, Sorting, Heap_Priority_Queue, Number_Theory | 13 | 88.89
 | 2343 |[Query Kth Smallest Trimmed Number](src/main/java/g2301_2400/s2343_query_kth_smallest_trimmed_number/Solution.java)| Medium | Array, String, Divide_and_Conquer, Sorting, Heap_Priority_Queue, Radix_Sort, Quickselect | 52 | 75.00
