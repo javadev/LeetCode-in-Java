@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeSet;
 
+@SuppressWarnings("java:S1186")
 public class NumberContainers {
     private Map<Integer, TreeSet<Integer>> indices = new HashMap<>();
     private Map<Integer, Integer> vals = new HashMap<>();
