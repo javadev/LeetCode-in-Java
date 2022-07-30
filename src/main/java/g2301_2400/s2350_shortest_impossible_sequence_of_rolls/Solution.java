@@ -6,17 +6,18 @@ import java.util.BitSet;
 
 public class Solution {
     public int shortestSequence(int[] rolls, int k) {
-        BitSet b = new BitSet(k + 1);
-        int cnt = 0, res = 1;
+        BitSet bitSet = new BitSet(k + 1);
+        int cnt = 0;
+        int res = 1;
         for (int roll : rolls) {
-            if (!b.get(roll)) {
-                b.set(roll);
+            if (!bitSet.get(roll)) {
+                bitSet.set(roll);
                 cnt++;
             }
             if (cnt == k) {
                 res++;
                 cnt = 0;
-                b.clear();
+                bitSet.clear();
             }
         }
         return res;
