@@ -8,9 +8,9 @@ public class Solution {
     public int shortestSequence(int[] rolls, int k) {
         BitSet b = new BitSet(k + 1);
         int cnt = 0, res = 1;
-        for (int i = 0; i < rolls.length; i++) {
-            if (!b.get(rolls[i])) {
-                b.set(rolls[i]);
+        for (int roll : rolls) {
+            if (!b.get(roll)) {
+                b.set(roll);
                 cnt++;
             }
             if (cnt == k) {
