@@ -1,19 +1,22 @@
 package g2301_2400.s2350_shortest_impossible_sequence_of_rolls;
 
-// #Hard #Array #Hash_Table #Greedy #2022_07_30_Time_54_ms_(47.18%)_Space_105.9_MB_(51.39%)
+// #Hard #Array #Hash_Table #Greedy #2022_07_30_Time_12_ms_(87.73%)_Space_84.9_MB_(79.95%)
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.BitSet;
 
 public class Solution {
     public int shortestSequence(int[] rolls, int k) {
-        int res = 1;
-        Set<Integer> set = new HashSet<>();
-        for (int roll : rolls) {
-            set.add(roll);
-            if (set.size() == k) {
+        BitSet b = new BitSet(k + 1);
+        int cnt = 0, res = 1;
+        for (int i = 0; i < rolls.length; i++) {
+            if (!b.get(rolls[i])) {
+                b.set(rolls[i]);
+                cnt++;
+            }
+            if (cnt == k) {
                 res++;
-                set.clear();
+                cnt = 0;
+                b.clear();
             }
         }
         return res;
