@@ -3,7 +3,7 @@ package g0501_0600.s0547_number_of_provinces;
 // #Medium #Depth_First_Search #Breadth_First_Search #Graph #Union_Find
 // #Algorithm_II_Day_6_Breadth_First_Search_Depth_First_Search
 // #Graph_Theory_I_Day_8_Standard_Traversal #Level_2_Day_19_Union_Find
-// #2022_03_20_Time_1_ms_(94.56%)_Space_54.1_MB_(42.80%)
+// #2022_08_02_Time_2_ms_(69.51%)_Space_54.2_MB_(42.16%)
 
 import java.util.Arrays;
 
