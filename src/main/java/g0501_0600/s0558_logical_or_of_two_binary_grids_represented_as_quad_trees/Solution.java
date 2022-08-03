@@ -1,6 +1,6 @@
 package g0501_0600.s0558_logical_or_of_two_binary_grids_represented_as_quad_trees;
 
-// #Medium #Tree #Divide_and_Conquer #2022_03_20_Time_0_ms_(100.00%)_Space_54.3_MB_(29.58%)
+// #Medium #Tree #Divide_and_Conquer #2022_08_03_Time_0_ms_(100.00%)_Space_53.7_MB_(67.05%)
 
 /*
 // Definition for a QuadTree node.
