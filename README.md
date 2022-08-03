@@ -78,7 +78,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0344 |[Reverse String](src/main/java/g0301_0400/s0344_reverse_string/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers, Recursion | 1 | 99.91
-| 0557 |[Reverse Words in a String III](src/main/java/g0501_0600/s0557_reverse_words_in_a_string_iii/Solution.java)| Easy | String, Two_Pointers | 5 | 88.09
+| 0557 |[Reverse Words in a String III](src/main/java/g0501_0600/s0557_reverse_words_in_a_string_iii/Solution.java)| Easy | String, Two_Pointers | 4 | 97.75
 
 #### Day 5 Two Pointers
 
@@ -1726,7 +1726,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 |-|-|-|-|-|-
 | 0334 |[Increasing Triplet Subsequence](src/main/java/g0301_0400/s0334_increasing_triplet_subsequence/Solution.java)| Medium | Top_Interview_Questions, Array, Greedy | 2 | 99.33
 | 0238 |[Product of Array Except Self](src/main/java/g0201_0300/s0238_product_of_array_except_self/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Prefix_Sum | 1 | 100.00
-| 0560 |[Subarray Sum Equals K](src/main/java/g0501_0600/s0560_subarray_sum_equals_k/Solution.java)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum | 18 | 89.51
+| 0560 |[Subarray Sum Equals K](src/main/java/g0501_0600/s0560_subarray_sum_equals_k/Solution.java)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum | 21 | 98.97
 
 #### Day 6 String
 
@@ -3245,16 +3245,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | 0566 |[Reshape the Matrix](src/main/java/g0501_0600/s0566_reshape_the_matrix/Solution.java)| Easy | Array, Matrix, Simulation, Data_Structure_I_Day_4_Array, Programming_Skills_I_Day_7_Array | 1 | 84.34
 | 0565 |[Array Nesting](src/main/java/g0501_0600/s0565_array_nesting/Solution.java)| Medium | Array, Depth_First_Search | 4 | 98.54
 | 0564 |[Find the Closest Palindrome](src/main/java/g0501_0600/s0564_find_the_closest_palindrome/Solution.java)| Hard | String, Math | 1 | 100.00
-| 0563 |[Binary Tree Tilt](src/main/java/g0501_0600/s0563_binary_tree_tilt/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree | 0 | 100.00
-| 0561 |[Array Partition I](src/main/java/g0501_0600/s0561_array_partition_i/Solution.java)| Easy | Array, Sorting, Greedy, Counting_Sort | 18 | 31.77
-| 0560 |[Subarray Sum Equals K](src/main/java/g0501_0600/s0560_subarray_sum_equals_k/Solution.java)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 18 | 89.51
-| 0559 |[Maximum Depth of N-ary Tree](src/main/java/g0501_0600/s0559_maximum_depth_of_n_ary_tree/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree | 1 | 78.18
+| 0563 |[Binary Tree Tilt](src/main/java/g0501_0600/s0563_binary_tree_tilt/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree | 1 | 81.35
+| 0561 |[Array Partition I](src/main/java/g0501_0600/s0561_array_partition_i/Solution.java)| Easy | Array, Sorting, Greedy, Counting_Sort | 14 | 84.99
+| 0560 |[Subarray Sum Equals K](src/main/java/g0501_0600/s0560_subarray_sum_equals_k/Solution.java)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 21 | 98.97
+| 0559 |[Maximum Depth of N-ary Tree](src/main/java/g0501_0600/s0559_maximum_depth_of_n_ary_tree/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree | 1 | 83.49
 | 0558 |[Logical OR of Two Binary Grids Represented as Quad-Trees](src/main/java/g0501_0600/s0558_logical_or_of_two_binary_grids_represented_as_quad_trees/Solution.java)| Medium | Tree, Divide_and_Conquer | 0 | 100.00
-| 0557 |[Reverse Words in a String III](src/main/java/g0501_0600/s0557_reverse_words_in_a_string_iii/Solution.java)| Easy | String, Two_Pointers, Algorithm_I_Day_4_Two_Pointers | 5 | 88.09
+| 0557 |[Reverse Words in a String III](src/main/java/g0501_0600/s0557_reverse_words_in_a_string_iii/Solution.java)| Easy | String, Two_Pointers, Algorithm_I_Day_4_Two_Pointers | 4 | 97.75
 | 0556 |[Next Greater Element III](src/main/java/g0501_0600/s0556_next_greater_element_iii/Solution.java)| Medium | String, Math, Two_Pointers, Programming_Skills_II_Day_10 | 0 | 100.00
-| 0554 |[Brick Wall](src/main/java/g0501_0600/s0554_brick_wall/Solution.java)| Medium | Array, Hash_Table | 13 | 75.64
-| 0553 |[Optimal Division](src/main/java/g0501_0600/s0553_optimal_division/Solution.java)| Medium | Array, Dynamic_Programming, Math | 1 | 96.63
-| 0552 |[Student Attendance Record II](src/main/java/g0501_0600/s0552_student_attendance_record_ii/Solution.java)| Hard | Dynamic_Programming | 8 | 99.21
+| 0554 |[Brick Wall](src/main/java/g0501_0600/s0554_brick_wall/Solution.java)| Medium | Array, Hash_Table | 12 | 87.69
+| 0553 |[Optimal Division](src/main/java/g0501_0600/s0553_optimal_division/Solution.java)| Medium | Array, Dynamic_Programming, Math | 0 | 100.00
+| 0552 |[Student Attendance Record II](src/main/java/g0501_0600/s0552_student_attendance_record_ii/Solution.java)| Hard | Dynamic_Programming | 11 | 98.55
 | 0551 |[Student Attendance Record I](src/main/java/g0501_0600/s0551_student_attendance_record_i/Solution.java)| Easy | String | 0 | 100.00
 | 0547 |[Number of Provinces](src/main/java/g0501_0600/s0547_number_of_provinces/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find, Algorithm_II_Day_6_Breadth_First_Search_Depth_First_Search, Graph_Theory_I_Day_8_Standard_Traversal, Level_2_Day_19_Union_Find | 2 | 69.51
 | 0546 |[Remove Boxes](src/main/java/g0501_0600/s0546_remove_boxes/Solution.java)| Hard | Array, Dynamic_Programming, Memoization | 45 | 95.58
