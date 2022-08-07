@@ -1848,6 +1848,9 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2353 |[Design a Food Rating System](src/main/java/g2301_2400/s2353_design_a_food_rating_system/FoodRatings.java)| Medium | Hash_Table, Design, Heap_Priority_Queue, Ordered_Set | 364 | 83.35
+| 2352 |[Equal Row and Column Pairs](src/main/java/g2301_2400/s2352_equal_row_and_column_pairs/Solution.java)| Medium | Array, Hash_Table, Matrix, Simulation | 7 | 98.94
+| 2351 |[First Letter to Appear Twice](src/main/java/g2301_2400/s2351_first_letter_to_appear_twice/Solution.java)| Easy | Hash_Table, String, Counting | 1 | 63.38
 | 2350 |[Shortest Impossible Sequence of Rolls](src/main/java/g2301_2400/s2350_shortest_impossible_sequence_of_rolls/Solution.java)| Hard | Array, Hash_Table, Greedy | 12 | 87.73
 | 2349 |[Design a Number Container System](src/main/java/g2301_2400/s2349_design_a_number_container_system/NumberContainers.java)| Medium | Hash_Table, Design, Heap_Priority_Queue, Ordered_Set | 208 | 54.57
 | 2348 |[Number of Zero-Filled Subarrays](src/main/java/g2301_2400/s2348_number_of_zero_filled_subarrays/Solution.java)| Medium | Array, Math | 3 | 99.90
