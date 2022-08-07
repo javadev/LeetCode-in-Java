@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class Solution {
     public long countExcellentPairs(int[] nums, int k) {
-        long cnt[] = new long[30];
+        long[] cnt = new long[30];
         long res = 0L;
         Set<Integer> set = new HashSet<>();
         for (int a : nums) {
