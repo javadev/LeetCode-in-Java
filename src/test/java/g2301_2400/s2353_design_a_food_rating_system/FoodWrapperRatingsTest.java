@@ -5,7 +5,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-class FoodRatingsTest {
+class FoodWrapperRatingsTest {
     @Test
     void foodRatings() {
         FoodRatings foodRatings =
