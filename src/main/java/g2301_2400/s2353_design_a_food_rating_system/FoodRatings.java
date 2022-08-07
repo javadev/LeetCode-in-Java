@@ -8,13 +8,13 @@ import java.util.HashMap;
 import java.util.TreeSet;
 
 public class FoodRatings {
-    HashMap<String, TreeSet<Food>> cus = new HashMap<>();
-    HashMap<String, Food> f = new HashMap<>();
+    private HashMap<String, TreeSet<Food>> cus = new HashMap<>();
+    private HashMap<String, Food> foodHashMap = new HashMap<>();
 
     public FoodRatings(String[] foods, String[] cuisines, int[] ratings) {
         for (int i = 0; i < foods.length; i++) {
             Food food = new Food(foods[i], ratings[i], cuisines[i]);
-            f.put(foods[i], food);
+            foodHashMap.put(foods[i], food);
             if (cus.containsKey(cuisines[i])) {
                 cus.get(cuisines[i]).add(food);
             } else {
@@ -26,7 +26,7 @@ public class FoodRatings {
     }
 
     public void changeRating(String food, int newRating) {
-        Food dish = f.get(food);
+        Food dish = foodHashMap.get(food);
         TreeSet<Food> pq = cus.get(dish.cus);
         pq.remove(dish);
         dish.rating = newRating;
