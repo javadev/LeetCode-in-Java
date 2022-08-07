@@ -8,17 +8,17 @@ import java.util.HashMap;
 import java.util.TreeSet;
 
 public class FoodRatings {
-    private HashMap<String, TreeSet<FoodWrapper>> cus = new HashMap<>();
-    private HashMap<String, FoodWrapper> foodHashMap = new HashMap<>();
+    private HashMap<String, TreeSet<Food>> cus = new HashMap<>();
+    private HashMap<String, Food> foodHashMap = new HashMap<>();
 
     public FoodRatings(String[] foods, String[] cuisines, int[] ratings) {
         for (int i = 0; i < foods.length; i++) {
-            FoodWrapper food = new FoodWrapper(foods[i], ratings[i], cuisines[i]);
+            Food food = new Food(foods[i], ratings[i], cuisines[i]);
             foodHashMap.put(foods[i], food);
             if (cus.containsKey(cuisines[i])) {
                 cus.get(cuisines[i]).add(food);
             } else {
-                TreeSet<FoodWrapper> pq = new TreeSet<>(new Comp());
+                TreeSet<Food> pq = new TreeSet<>(new Comp());
                 pq.add(food);
                 cus.put(cuisines[i], pq);
             }
@@ -26,33 +26,33 @@ public class FoodRatings {
     }
 
     public void changeRating(String food, int newRating) {
-        FoodWrapper dish = foodHashMap.get(food);
-        TreeSet<FoodWrapper> pq = cus.get(dish.cus);
+        Food dish = foodHashMap.get(food);
+        TreeSet<Food> pq = cus.get(dish.cus);
         pq.remove(dish);
         dish.rating = newRating;
         pq.add(dish);
     }
 
     public String highestRated(String cuisine) {
-        return cus.get(cuisine).first().food;
+        return cus.get(cuisine).first().foodItem;
     }
 
-    private static class Comp implements Comparator<FoodWrapper> {
-        public int compare(FoodWrapper f1, FoodWrapper f2) {
+    private static class Comp implements Comparator<Food> {
+        public int compare(Food f1, Food f2) {
             if (f1.rating == f2.rating) {
-                return f1.food.compareTo(f2.food);
+                return f1.foodItem.compareTo(f2.foodItem);
             }
             return Integer.compare(f2.rating, f1.rating);
         }
     }
 
-    private static class FoodWrapper {
-        private String food;
+    private static class Food {
+        private String foodItem;
         private String cus;
         private int rating;
 
-        FoodWrapper(String food, int rating, String cus) {
-            this.food = food;
+        Food(String food, int rating, String cus) {
+            this.foodItem = food;
             this.rating = rating;
             this.cus = cus;
         }
