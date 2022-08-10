@@ -92,7 +92,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0003 |[Longest Substring Without Repeating Characters](src.save/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window | 5 | 91.03
-| 0567 |[Permutation in String](src.save/main/java/g0501_0600/s0567_permutation_in_string/Solution.java)| Medium | String, Hash_Table, Two_Pointers, Sliding_Window | 4 | 95.23
+| 0567 |[Permutation in String](src.save/main/java/g0501_0600/s0567_permutation_in_string/Solution.java)| Medium | String, Hash_Table, Two_Pointers, Sliding_Window | 5 | 93.93
 
 #### Day 7 Breadth-First Search Depth-First Search
 
@@ -204,7 +204,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0117 |[Populating Next Right Pointers in Each Node II](src.save/main/java/g0101_0200/s0117_populating_next_right_pointers_in_each_node_ii/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Linked_List | 0 | 100.00
-| 0572 |[Subtree of Another Tree](src.save/main/java/g0501_0600/s0572_subtree_of_another_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Hash_Function, String_Matching | 0 | 100.00
+| 0572 |[Subtree of Another Tree](src.save/main/java/g0501_0600/s0572_subtree_of_another_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Hash_Function, String_Matching | 1 | 100.00
 
 #### Day 8 Breadth First Search Depth First Search
 
@@ -277,7 +277,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1143 |[Longest Common Subsequence](src.save/main/java/g1101_1200/s1143_longest_common_subsequence/Solution.java)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming | 9 | 93.92
-| 0583 |[Delete Operation for Two Strings](src.save/main/java/g0501_0600/s0583_delete_operation_for_two_strings/Solution.java)| Medium | String, Dynamic_Programming | 12 | 73.04
+| 0583 |[Delete Operation for Two Strings](src.save/main/java/g0501_0600/s0583_delete_operation_for_two_strings/Solution.java)| Medium | String, Dynamic_Programming | 12 | 79.10
 
 #### Day 18 Dynamic Programming
 
@@ -739,7 +739,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1572 |[Matrix Diagonal Sum](src.save/main/java/g1501_1600/s1572_matrix_diagonal_sum/Solution.java)| Easy | Array, Matrix | 3 | 10.25
-| 0566 |[Reshape the Matrix](src.save/main/java/g0501_0600/s0566_reshape_the_matrix/Solution.java)| Easy | Array, Matrix, Simulation | 1 | 84.34
+| 0566 |[Reshape the Matrix](src.save/main/java/g0501_0600/s0566_reshape_the_matrix/Solution.java)| Easy | Array, Matrix, Simulation | 1 | 90.08
 
 #### Day 8 String
 
@@ -1037,7 +1037,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 |-|-|-|-|-|-
 | 0595 |[Big Countries](src.save/main/java/g0501_0600/s0595_big_countries/script.sql)| Easy | Database | 241 | 92.61
 | 1757 |[Recyclable and Low Fat Products](src.save/main/java/g1701_1800/s1757_recyclable_and_low_fat_products/script.sql)| Easy | Database | 475 | 71.54
-| 0584 |[Find Customer Referee](src.save/main/java/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database | 505 | 43.87
+| 0584 |[Find Customer Referee](src.save/main/java/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database | 531 | 58.63
 | 0183 |[Customers Who Never Order](src.save/main/java/g0101_0200/s0183_customers_who_never_order/script.sql)| Easy | Database | 376 | 98.73
 
 #### Day 2 Select and Order
@@ -1092,7 +1092,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0586 |[Customer Placing the Largest Number of Orders](src.save/main/java/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 392 | 90.54
+| 0586 |[Customer Placing the Largest Number of Orders](src.save/main/java/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 484 | 66.42
 | 0511 |[Game Play Analysis I](src.save/main/java/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 586 | 56.94
 | 1890 |[The Latest Login in 2020](src.save/main/java/g1801_1900/s1890_the_latest_login_in_2020/script.sql)| Easy | Database | 571 | 73.59
 | 1741 |[Find Total Time Spent by Each Employee](src.save/main/java/g1701_1800/s1741_find_total_time_spent_by_each_employee/script.sql)| Easy | Database | 414 | 93.27
@@ -1609,7 +1609,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0566 |[Reshape the Matrix](src.save/main/java/g0501_0600/s0566_reshape_the_matrix/Solution.java)| Easy | Array, Matrix, Simulation | 1 | 84.34
+| 0566 |[Reshape the Matrix](src.save/main/java/g0501_0600/s0566_reshape_the_matrix/Solution.java)| Easy | Array, Matrix, Simulation | 1 | 90.08
 | 0118 |[Pascal's Triangle](src.save/main/java/g0101_0200/s0118_pascals_triangle/Solution.java)| Easy | Top_Interview_Questions, Array, Dynamic_Programming | 1 | 67.08
 
 #### Day 5 Array
@@ -3239,17 +3239,17 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | 0590 |[N-ary Tree Postorder Traversal](src.save/main/java/g0501_0600/s0590_n_ary_tree_postorder_traversal/Solution.java)| Easy | Depth_First_Search, Tree, Stack | 0 | 100.00
 | 0589 |[N-ary Tree Preorder Traversal](src.save/main/java/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.java)| Easy | Depth_First_Search, Tree, Stack, Programming_Skills_I_Day_5_Function, Level_1_Day_6_Tree | 2 | 54.35
 | 0587 |[Erect the Fence](src.save/main/java/g0501_0600/s0587_erect_the_fence/Solution.java)| Hard | Array, Math, Geometry | 10 | 87.50
-| 0586 |[Customer Placing the Largest Number of Orders](src.save/main/java/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_8_Function | 392 | 90.54
-| 0584 |[Find Customer Referee](src.save/main/java/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database, SQL_I_Day_1_Select | 505 | 43.87
-| 0583 |[Delete Operation for Two Strings](src.save/main/java/g0501_0600/s0583_delete_operation_for_two_strings/Solution.java)| Medium | String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming | 12 | 73.04
-| 0581 |[Shortest Unsorted Continuous Subarray](src.save/main/java/g0501_0600/s0581_shortest_unsorted_continuous_subarray/Solution.java)| Medium | Array, Sorting, Greedy, Two_Pointers, Stack, Monotonic_Stack | 1 | 98.19
-| 0576 |[Out of Boundary Paths](src.save/main/java/g0501_0600/s0576_out_of_boundary_paths/Solution.java)| Medium | Dynamic_Programming | 7 | 74.13
-| 0575 |[Distribute Candies](src.save/main/java/g0501_0600/s0575_distribute_candies/Solution.java)| Easy | Array, Hash_Table | 64 | 40.90
-| 0572 |[Subtree of Another Tree](src.save/main/java/g0501_0600/s0572_subtree_of_another_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Hash_Function, String_Matching, Algorithm_II_Day_7_Breadth_First_Search_Depth_First_Search | 0 | 100.00
-| 0567 |[Permutation in String](src.save/main/java/g0501_0600/s0567_permutation_in_string/Solution.java)| Medium | String, Hash_Table, Two_Pointers, Sliding_Window, Algorithm_I_Day_6_Sliding_Window | 4 | 95.23
-| 0566 |[Reshape the Matrix](src.save/main/java/g0501_0600/s0566_reshape_the_matrix/Solution.java)| Easy | Array, Matrix, Simulation, Data_Structure_I_Day_4_Array, Programming_Skills_I_Day_7_Array | 1 | 84.34
-| 0565 |[Array Nesting](src.save/main/java/g0501_0600/s0565_array_nesting/Solution.java)| Medium | Array, Depth_First_Search | 4 | 98.54
-| 0564 |[Find the Closest Palindrome](src.save/main/java/g0501_0600/s0564_find_the_closest_palindrome/Solution.java)| Hard | String, Math | 1 | 100.00
+| 0586 |[Customer Placing the Largest Number of Orders](src.save/main/java/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_8_Function | 484 | 66.42
+| 0584 |[Find Customer Referee](src.save/main/java/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database, SQL_I_Day_1_Select | 531 | 58.63
+| 0583 |[Delete Operation for Two Strings](src.save/main/java/g0501_0600/s0583_delete_operation_for_two_strings/Solution.java)| Medium | String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming | 12 | 79.10
+| 0581 |[Shortest Unsorted Continuous Subarray](src.save/main/java/g0501_0600/s0581_shortest_unsorted_continuous_subarray/Solution.java)| Medium | Array, Sorting, Greedy, Two_Pointers, Stack, Monotonic_Stack | 2 | 84.72
+| 0576 |[Out of Boundary Paths](src.save/main/java/g0501_0600/s0576_out_of_boundary_paths/Solution.java)| Medium | Dynamic_Programming | 5 | 92.95
+| 0575 |[Distribute Candies](src.save/main/java/g0501_0600/s0575_distribute_candies/Solution.java)| Easy | Array, Hash_Table | 67 | 42.81
+| 0572 |[Subtree of Another Tree](src.save/main/java/g0501_0600/s0572_subtree_of_another_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Hash_Function, String_Matching, Algorithm_II_Day_7_Breadth_First_Search_Depth_First_Search | 1 | 100.00
+| 0567 |[Permutation in String](src.save/main/java/g0501_0600/s0567_permutation_in_string/Solution.java)| Medium | String, Hash_Table, Two_Pointers, Sliding_Window, Algorithm_I_Day_6_Sliding_Window | 5 | 93.93
+| 0566 |[Reshape the Matrix](src.save/main/java/g0501_0600/s0566_reshape_the_matrix/Solution.java)| Easy | Array, Matrix, Simulation, Data_Structure_I_Day_4_Array, Programming_Skills_I_Day_7_Array | 1 | 90.08
+| 0565 |[Array Nesting](src.save/main/java/g0501_0600/s0565_array_nesting/Solution.java)| Medium | Array, Depth_First_Search | 5 | 95.44
+| 0564 |[Find the Closest Palindrome](src.save/main/java/g0501_0600/s0564_find_the_closest_palindrome/Solution.java)| Hard | String, Math | 2 | 100.00
 | 0563 |[Binary Tree Tilt](src.save/main/java/g0501_0600/s0563_binary_tree_tilt/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree | 1 | 81.35
 | 0561 |[Array Partition I](src.save/main/java/g0501_0600/s0561_array_partition_i/Solution.java)| Easy | Array, Sorting, Greedy, Counting_Sort | 14 | 84.99
 | 0560 |[Subarray Sum Equals K](src.save/main/java/g0501_0600/s0560_subarray_sum_equals_k/Solution.java)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array | 21 | 98.97
