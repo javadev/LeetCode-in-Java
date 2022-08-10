@@ -1,6 +1,6 @@
 package g0501_0600.s0564_find_the_closest_palindrome;
 
-// #Hard #String #Math #2022_03_20_Time_1_ms_(100.00%)_Space_40.4_MB_(87.67%)
+// #Hard #String #Math #2022_08_10_Time_2_ms_(100.00%)_Space_42.7_MB_(26.15%)
 
 @SuppressWarnings("java:S2184")
 public class Solution {
@@ -22,7 +22,6 @@ public class Solution {
         if (first + second == 2 * num) {
             return first < second ? String.valueOf(first) : String.valueOf(second);
         }
-
         return Math.abs(num - first) > Math.abs(num - second)
                 ? String.valueOf(second)
                 : String.valueOf(first);
@@ -38,7 +37,6 @@ public class Solution {
         } else if (numOfDigits < length) {
             return ((long) Math.pow(10, numOfDigits) - 1);
         }
-
         num = num - num % (long) Math.pow(10, numOfDigits / 2);
         long temp = num;
         for (int j = 0; j < numOfDigits / 2; j++) {
