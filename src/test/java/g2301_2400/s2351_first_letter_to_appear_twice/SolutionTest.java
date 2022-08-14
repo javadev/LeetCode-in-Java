@@ -15,4 +15,9 @@ class SolutionTest {
     void repeatedCharacter2() {
         assertThat(new Solution().repeatedCharacter("abcdd"), equalTo('d'));
     }
+
+    @Test
+    void repeatedCharacter3() {
+        assertThat(new Solution().repeatedCharacter("abcd"), equalTo('0'));
+    }
 }
