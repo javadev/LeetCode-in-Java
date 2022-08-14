@@ -1848,6 +1848,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2367 |[Number of Arithmetic Triplets](src/main/java/g2301_2400/s2367_number_of_arithmetic_triplets/Solution.java)| Easy | Array, Enumeration, Hash_Table, Two_Pointers | 3 | 66.67
+| 2366 |[Minimum Replacements to Sort the Array](src/main/java/g2301_2400/s2366_minimum_replacements_to_sort_the_array/Solution.java)| Hard | Array, Math, Greedy | 10 | 28.57
+| 2365 |[Task Scheduler II](src/main/java/g2301_2400/s2365_task_scheduler_ii/Solution.java)| Medium | Array, Simulation, Hash_Table | 70 | 55.56
+| 2364 |[Count Number of Bad Pairs](src/main/java/g2301_2400/s2364_count_number_of_bad_pairs/Solution.java)| Medium | Array, Hash_Table | 44 | 80.00
+| 2363 |[Merge Similar Items](src/main/java/g2301_2400/s2363_merge_similar_items/Solution.java)| Easy | Array, Sorting, Hash_Table, Ordered_Set | 3 | 100.00
 | 2360 |[Longest Cycle in a Graph](src/main/java/g2301_2400/s2360_longest_cycle_in_a_graph/Solution.java)| Hard | Depth_First_Search, Graph, Topological_Sort | 37 | 90.19
 | 2359 |[Find Closest Node to Given Two Nodes](src/main/java/g2301_2400/s2359_find_closest_node_to_given_two_nodes/Solution.java)| Medium | Depth_First_Search, Graph | 18 | 89.33
 | 2358 |[Maximum Number of Groups Entering a Competition](src/main/java/g2301_2400/s2358_maximum_number_of_groups_entering_a_competition/Solution.java)| Medium | Array, Math, Binary_Search, Greedy | 0 | 100.00
