@@ -1,21 +1,18 @@
 package g2301_2400.s2351_first_letter_to_appear_twice;
 
-// #Easy #Hash_Table #String #Counting #2022_08_07_Time_1_ms_(63.38%)_Space_41.7_MB_(82.50%)
-
-import java.util.HashMap;
+// #Easy #Hash_Table #String #Counting #2022_08_14_Time_0_ms_(100.00%)_Space_42.3_MB_(29.00%)
 
 public class Solution {
     public char repeatedCharacter(String s) {
-        HashMap<Character, Integer> map = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            if (map.containsKey(s.charAt(i))) {
-                if (map.get(s.charAt(i)) >= 1) {
-                    return s.charAt(i);
-                }
-            } else {
-                map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0) + 1);
+        int n = s.length();
+        int[] hm = new int[26];
+        for (int i = 0; i < n; i++) {
+            char c = s.charAt(i);
+            hm[c - 'a']++;
+            if (hm[c - 'a'] > 1) {
+                return c;
             }
         }
-        return 'c';
+        return '0';
     }
 }
