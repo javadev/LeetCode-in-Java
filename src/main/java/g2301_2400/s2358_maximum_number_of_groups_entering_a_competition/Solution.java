@@ -6,7 +6,6 @@ package g2301_2400.s2358_maximum_number_of_groups_entering_a_competition;
 public class Solution {
     public int maximumGroups(int[] grades) {
         int len = grades.length;
-        int groups = (int) (-1 + Math.sqrt(1 + 8 * len)) / 2;
-        return groups;
+        return (int) (-1 + Math.sqrt(1D + 8 * len)) / 2;
     }
 }
