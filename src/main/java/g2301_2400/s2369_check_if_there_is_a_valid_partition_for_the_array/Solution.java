@@ -24,7 +24,9 @@ public class Solution {
             } else if (canPartition[i - 1]) {
                 equal = false;
                 incOne = false;
-            } else return false;
+            } else {
+                return false;
+            }
 
             if (canPartition[i]) {
                 count = 0;
