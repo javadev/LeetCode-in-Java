@@ -1852,7 +1852,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | 2369 |[Check if There is a Valid Partition For The Array](src/main/java/g2301_2400/s2369_check_if_there_is_a_valid_partition_for_the_array/Solution.java)| Medium | Array, Dynamic_Programming | 7 | 81.82
 | 2368 |[Reachable Nodes With Restrictions](src/main/java/g2301_2400/s2368_reachable_nodes_with_restrictions/Solution.java)| Medium | Array, Tree, Graph, Hash_Table, Depth_First_Search, Breadth_First_Search | 59 | 85.71
 | 2367 |[Number of Arithmetic Triplets](src/main/java/g2301_2400/s2367_number_of_arithmetic_triplets/Solution.java)| Easy | Array, Enumeration, Hash_Table, Two_Pointers | 3 | 66.67
-| 2366 |[Minimum Replacements to Sort the Array](src/main/java/g2301_2400/s2366_minimum_replacements_to_sort_the_array/Solution.java)| Hard | Array, Math, Greedy | 10 | 28.57
+| 2366 |[Minimum Replacements to Sort the Array](src/main/java/g2301_2400/s2366_minimum_replacements_to_sort_the_array/Solution.java)| Hard | Array, Math, Greedy | 5 | 92.03
 | 2365 |[Task Scheduler II](src/main/java/g2301_2400/s2365_task_scheduler_ii/Solution.java)| Medium | Array, Simulation, Hash_Table | 70 | 55.56
 | 2364 |[Count Number of Bad Pairs](src/main/java/g2301_2400/s2364_count_number_of_bad_pairs/Solution.java)| Medium | Array, Hash_Table | 44 | 80.00
 | 2363 |[Merge Similar Items](src/main/java/g2301_2400/s2363_merge_similar_items/Solution.java)| Easy | Array, Sorting, Hash_Table, Ordered_Set | 3 | 100.00
