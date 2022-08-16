@@ -1,6 +1,6 @@
 package g2301_2400.s2369_check_if_there_is_a_valid_partition_for_the_array;
 
-// #Medium #Array #Dynamic_Programming #2022_08_15_Time_7_ms_(81.82%)_Space_84.8_MB_(27.27%)
+// #Medium #Array #Dynamic_Programming #2022_08_16_Time_7_ms_(81.82%)_Space_93.5_MB_(9.09%)
 
 public class Solution {
     public boolean validPartition(int[] nums) {
@@ -10,7 +10,6 @@ public class Solution {
         boolean equal = diff == 0;
         boolean incOne = diff == 1;
         canPartition[2] = equal;
-        int count = canPartition[2] ? 0 : 2;
         for (int i = 3; i < canPartition.length; i++) {
             diff = nums[i - 1] - nums[i - 2];
             if (diff == 0) {
@@ -21,19 +20,6 @@ public class Solution {
                 canPartition[i] = incOne && canPartition[i - 3];
                 equal = false;
                 incOne = true;
-            } else if (canPartition[i - 1]) {
-                equal = false;
-                incOne = false;
-            } else {
-                return false;
-            }
-
-            if (canPartition[i]) {
-                count = 0;
-            } else if (count == 2) {
-                return false;
-            } else {
-                count++;
             }
         }
         return canPartition[nums.length];
