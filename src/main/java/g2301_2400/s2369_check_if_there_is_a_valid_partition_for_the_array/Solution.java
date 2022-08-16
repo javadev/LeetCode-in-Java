@@ -10,7 +10,6 @@ public class Solution {
         boolean equal = diff == 0;
         boolean incOne = diff == 1;
         canPartition[2] = equal;
-        int count = canPartition[2] ? 0 : 2;
         for (int i = 3; i < canPartition.length; i++) {
             diff = nums[i - 1] - nums[i - 2];
             if (diff == 0) {
@@ -21,11 +20,6 @@ public class Solution {
                 canPartition[i] = incOne && canPartition[i - 3];
                 equal = false;
                 incOne = true;
-            }
-            if (canPartition[i]) {
-                count = 0;
-            } else {
-                count++;
             }
         }
         return canPartition[nums.length];
