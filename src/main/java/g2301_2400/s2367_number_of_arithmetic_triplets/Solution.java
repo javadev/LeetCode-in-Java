@@ -12,7 +12,6 @@ public class Solution {
         for (int x : nums) {
             set.add(x);
         }
-
         int ans = 0;
         for (int x : nums) {
             if (set.contains(x - diff) && set.contains(x + diff)) {
