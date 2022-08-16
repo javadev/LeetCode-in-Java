@@ -15,4 +15,14 @@ class SolutionTest {
     void validPartition2() {
         assertThat(new Solution().validPartition(new int[] {1, 1, 1, 2}), equalTo(false));
     }
+
+    @Test
+    void validPartition3() {
+        assertThat(new Solution().validPartition(new int[] {1, 2}), equalTo(false));
+    }
+
+    @Test
+    void validPartition4() {
+        assertThat(new Solution().validPartition(new int[] {1, 3}), equalTo(false));
+    }
 }
