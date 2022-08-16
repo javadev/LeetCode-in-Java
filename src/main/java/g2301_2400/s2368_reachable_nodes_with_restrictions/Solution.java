@@ -13,7 +13,7 @@ public class Solution {
     public int reachableNodes(int n, int[][] edges, int[] restricted) {
         List<Integer>[] graph = new ArrayList[n];
         for (int i = 0; i < n; i++) {
-            graph[i] = new ArrayList<Integer>();
+            graph[i] = new ArrayList<>();
         }
         for (int[] edge : edges) {
             int src = edge[0];
@@ -21,7 +21,7 @@ public class Solution {
             graph[src].add(dest);
             graph[dest].add(src);
         }
-        Queue<Integer> q = new ArrayDeque<Integer>();
+        Queue<Integer> q = new ArrayDeque<>();
         boolean[] visited = new boolean[n];
         q.offer(0);
         visited[0] = true;
