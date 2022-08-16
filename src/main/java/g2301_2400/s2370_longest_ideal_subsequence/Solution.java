@@ -13,7 +13,7 @@ public class Solution {
             int currans = 1;
             int temp = k;
             array[curr] += 1;
-            int j = curr - 1
+            int j = curr - 1;
             while (temp > 0) {
                 if (j == -1) {
                     break;
