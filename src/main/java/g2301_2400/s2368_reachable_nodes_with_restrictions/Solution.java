@@ -16,7 +16,8 @@ public class Solution {
             graph[i] = new ArrayList<Integer>();
         }
         for (int[] edge : edges) {
-            int src = edge[0], dest = edge[1];
+            int src = edge[0];
+            int dest = edge[1];
             graph[src].add(dest);
             graph[dest].add(src);
         }
