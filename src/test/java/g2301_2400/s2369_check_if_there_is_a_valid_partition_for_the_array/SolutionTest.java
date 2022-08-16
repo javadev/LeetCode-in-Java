@@ -25,4 +25,9 @@ class SolutionTest {
     void validPartition4() {
         assertThat(new Solution().validPartition(new int[] {1, 3}), equalTo(false));
     }
+
+    @Test
+    void validPartition5() {
+        assertThat(new Solution().validPartition(new int[] {1, 3, 10, 20}), equalTo(false));
+    }
 }
