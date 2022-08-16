@@ -16,7 +16,6 @@ public class Solution {
             } else {
                 adj[edges[i][0]].add(edges[i][1]);
             }
-
             if (adj[edges[i][1]] == null) {
                 LinkedList<Integer> dest = new LinkedList<>();
                 dest.add(edges[i][0]);
@@ -25,12 +24,10 @@ public class Solution {
                 adj[edges[i][1]].add(edges[i][0]);
             }
         }
-
         boolean[] visited = new boolean[n];
         for (int res : restricted) {
             visited[res] = true;
         }
-
         int count = 1;
         visited[0] = true;
         return countReachableNodes(0, adj, visited, count);
