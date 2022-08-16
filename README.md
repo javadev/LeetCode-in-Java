@@ -1848,6 +1848,9 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2370 |[Longest Ideal Subsequence](src/main/java/g2301_2400/s2370_longest_ideal_subsequence/Solution.java)| Medium | String, Hash_Table, Dynamic_Programming | 28 | 85.71
+| 2369 |[Check if There is a Valid Partition For The Array](src/main/java/g2301_2400/s2369_check_if_there_is_a_valid_partition_for_the_array/Solution.java)| Medium | Array, Dynamic_Programming | 5 | 100.00
+| 2368 |[Reachable Nodes With Restrictions](src/main/java/g2301_2400/s2368_reachable_nodes_with_restrictions/Solution.java)| Medium | Array, Tree, Graph, Hash_Table, Depth_First_Search, Breadth_First_Search | 88 | 42.86
 | 2367 |[Number of Arithmetic Triplets](src/main/java/g2301_2400/s2367_number_of_arithmetic_triplets/Solution.java)| Easy | Array, Enumeration, Hash_Table, Two_Pointers | 3 | 66.67
 | 2366 |[Minimum Replacements to Sort the Array](src/main/java/g2301_2400/s2366_minimum_replacements_to_sort_the_array/Solution.java)| Hard | Array, Math, Greedy | 10 | 28.57
 | 2365 |[Task Scheduler II](src/main/java/g2301_2400/s2365_task_scheduler_ii/Solution.java)| Medium | Array, Simulation, Hash_Table | 70 | 55.56
