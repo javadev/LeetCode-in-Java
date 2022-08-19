@@ -3078,7 +3078,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | 0808 |[Soup Servings](src.save/main/java/g0801_0900/s0808_soup_servings/Solution.java)| Medium | Dynamic_Programming, Math, Probability_and_Statistics | 1 | 96.04
 | 0807 |[Max Increase to Keep City Skyline](src.save/main/java/g0801_0900/s0807_max_increase_to_keep_city_skyline/Solution.java)| Medium | Array, Greedy, Matrix | 2 | 23.49
 | 0806 |[Number of Lines To Write String](src.save/main/java/g0801_0900/s0806_number_of_lines_to_write_string/Solution.java)| Easy | Array, String | 1 | 65.23
-| 0805 |[Split Array With Same Average](src.save/main/java/g0801_0900/s0805_split_array_with_same_average/Solution.java)| Hard | Array, Dynamic_Programming, Math, Bit_Manipulation, Bitmask | 1323 | 22.41
+| 0805 |[Split Array With Same Average](src.save/main/java/g0801_0900/s0805_split_array_with_same_average/Solution.java)| Hard | Array, Dynamic_Programming, Math, Bit_Manipulation, Bitmask | 1 | 100.00
 | 0804 |[Unique Morse Code Words](src.save/main/java/g0801_0900/s0804_unique_morse_code_words/Solution.java)| Easy | Array, String, Hash_Table | 2 | 89.27
 | 0803 |[Bricks Falling When Hit](src.save/main/java/g0801_0900/s0803_bricks_falling_when_hit/Solution.java)| Hard | Array, Matrix, Union_Find | 12 | 94.92
 | 0802 |[Find Eventual Safe States](src.save/main/java/g0801_0900/s0802_find_eventual_safe_states/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort, Graph_Theory_I_Day_9_Standard_Traversal | 7 | 74.93
