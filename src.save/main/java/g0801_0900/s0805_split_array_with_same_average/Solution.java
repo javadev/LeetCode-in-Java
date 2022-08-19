@@ -1,41 +1,41 @@
 package g0801_0900.s0805_split_array_with_same_average;
 
 // #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Bitmask
-// #2022_03_23_Time_1323_ms_(22.41%)_Space_42.1_MB_(78.14%)
+// #2022_08_19_Time_1_ms_(100.00%)_Space_41.6_MB_(95.76%)
 
 import java.util.Arrays;
 
 public class Solution {
+    private int[] nums;
+    private int[] sums;
+
     public boolean splitArraySameAverage(int[] nums) {
-        int m = nums.length;
-        int sum = 0;
-        for (int n : nums) {
-            sum += n;
+        int len = nums.length;
+        if (len == 1) {
+            return false;
         }
         Arrays.sort(nums);
-        for (int len = 1; len <= m / 2; len++) {
-            if (sum * len % m == 0 && dfs(nums, sum * len / m, len, 0)) {
+        sums = new int[len + 1];
+        for (int i = 0; i < len; i++) {
+            sums[i + 1] = sums[i] + nums[i];
+        }
+        int sum = sums[len];
+        this.nums = nums;
+        for (int i = 1, stop = len / 2; i <= stop; i++) {
+            if ((sum * i) % len == 0 && findSum(i, len, (sum * i) / len)) {
                 return true;
             }
         }
         return false;
     }
 
-    private boolean dfs(int[] nums, int sum, int len, int idx) {
-        if (len == 0) {
-            return sum == 0;
+    private boolean findSum(int k, int pos, int target) {
+        if (k == 1) {
+            while (nums[--pos] > target) {}
+            return nums[pos] == target;
         }
-        if (sum < 0 || idx >= nums.length) {
-            return false;
-        }
-        if (nums[idx] > sum / len) {
-            return false;
-        }
-        for (int i = idx; i < nums.length; i++) {
-            if (i > idx && nums[i] == nums[i - 1]) {
-                continue;
-            }
-            if (dfs(nums, sum - nums[i], len - 1, i + 1)) {
+        for (int i = pos; sums[i] - sums[i-- - k] >= target; ) {
+            if (sums[k - 1] <= target - nums[i] && findSum(k - 1, i, target - nums[i])) {
                 return true;
             }
         }
