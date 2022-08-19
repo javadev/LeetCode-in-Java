@@ -2394,7 +2394,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | 1679 |[Max Number of K-Sum Pairs](src.save/main/java/g1601_1700/s1679_max_number_of_k_sum_pairs/Solution.java)| Medium | Array, Hash_Table, Sorting, Two_Pointers | 20 | 91.22
 | 1678 |[Goal Parser Interpretation](src.save/main/java/g1601_1700/s1678_goal_parser_interpretation/Solution.java)| Easy | String, Programming_Skills_I_Day_8_String | 0 | 100.00
 | 1675 |[Minimize Deviation in Array](src.save/main/java/g1601_1700/s1675_minimize_deviation_in_array/Solution.java)| Hard | Array, Greedy, Heap_Priority_Queue, Ordered_Set | 104 | 88.83
-| 1674 |[Minimum Moves to Make Array Complementary](src.save/main/java/g1601_1700/s1674_minimum_moves_to_make_array_complementary/Solution.java)| Medium | Array, Hash_Table, Prefix_Sum | 29 | 22.22
+| 1674 |[Minimum Moves to Make Array Complementary](src.save/main/java/g1601_1700/s1674_minimum_moves_to_make_array_complementary/Solution.java)| Medium | Array, Hash_Table, Prefix_Sum | 12 | 80.39
 | 1673 |[Find the Most Competitive Subsequence](src.save/main/java/g1601_1700/s1673_find_the_most_competitive_subsequence/Solution.java)| Medium | Array, Greedy, Stack, Monotonic_Stack | 7 | 96.82
 | 1672 |[Richest Customer Wealth](src.save/main/java/g1601_1700/s1672_richest_customer_wealth/Solution.java)| Easy | Array, Matrix, Programming_Skills_I_Day_6_Array | 0 | 100.00
 | 1671 |[Minimum Number of Removals to Make Mountain Array](src.save/main/java/g1601_1700/s1671_minimum_number_of_removals_to_make_mountain_array/Solution.java)| Hard | Array, Dynamic_Programming, Greedy, Binary_Search | 19 | 81.23
