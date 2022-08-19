@@ -1848,6 +1848,10 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2376 |[Count Special Integers](src/main/java/g2301_2400/s2376_count_special_integers/Solution.java)| Hard | Math, Dynamic_Programming | 0 | 100.00
+| 2375 |[Construct Smallest Number From DI String](src/main/java/g2301_2400/s2375_construct_smallest_number_from_di_string/Solution.java)| Medium | String, Greedy, Stack, Backtracking | 0 | 100.00
+| 2374 |[Node With Highest Edge Score](src/main/java/g2301_2400/s2374_node_with_highest_edge_score/Solution.java)| Medium | Graph, Hash_Table | 4 | 97.68
+| 2373 |[Largest Local Values in a Matrix](src/main/java/g2301_2400/s2373_largest_local_values_in_a_matrix/Solution.java)| Easy | Array, Matrix | 2 | 99.97
 | 2370 |[Longest Ideal Subsequence](src/main/java/g2301_2400/s2370_longest_ideal_subsequence/Solution.java)| Medium | String, Hash_Table, Dynamic_Programming | 28 | 85.71
 | 2369 |[Check if There is a Valid Partition For The Array](src/main/java/g2301_2400/s2369_check_if_there_is_a_valid_partition_for_the_array/Solution.java)| Medium | Array, Dynamic_Programming | 7 | 81.82
 | 2368 |[Reachable Nodes With Restrictions](src/main/java/g2301_2400/s2368_reachable_nodes_with_restrictions/Solution.java)| Medium | Array, Tree, Graph, Hash_Table, Depth_First_Search, Breadth_First_Search | 59 | 85.71
