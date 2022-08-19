@@ -1,82 +1,81 @@
 package g0401_0500.s0488_zuma_game;
 
 // #Hard #String #Dynamic_Programming #Breadth_First_Search #Memoization
-// #2022_07_21_Time_1593_ms_(37.71%)_Space_234.5_MB_(13.12%)
+// #2022_08_19_Time_370_ms_(90.36%)_Space_95.2_MB_(69.88%)
 
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
-    private HashMap<String, Integer> map = new HashMap<>();
-
-    private String removeConsecutiveThreeOrMoreBalls(String board) {
-        Deque<Character> st = new ArrayDeque<>();
-        int n = board.length();
-        for (int i = 0; i < n; i++) {
-            char ch = board.charAt(i);
-            st.push(ch);
-            if (st.size() >= 3 && (i == n - 1 || ch != board.charAt(i + 1))) {
-                char a = st.pop();
-                char b = st.pop();
-                char c = st.pop();
-                if (a == b && b == c) {
-                    while (!st.isEmpty() && st.peek() == a) {
-                        st.pop();
-                    }
-                } else {
-                    st.push(c);
-                    st.push(b);
-                    st.push(a);
-                }
-            }
-        }
-        StringBuilder res = new StringBuilder();
-        while (!st.isEmpty()) {
-            res.append(st.pop());
-        }
-        return res.reverse().toString();
-    }
-
-    private String ss(String s, int i, int j) {
-        return s.substring(i, j);
-    }
-
-    private int solve(String board, String hand) {
-        String key = board + "#" + hand;
-        if (map.containsKey(key)) {
-            return map.get(key);
-        }
-        board = removeConsecutiveThreeOrMoreBalls(board);
-        int ans = 100;
-        int n = board.length();
-        int m = hand.length();
-        if (n == 0 || m == 0) {
-            map.put(key, n == 0 ? 0 : 100);
-            return n == 0 ? 0 : 100;
-        }
-        for (int i = 0; i < hand.length(); i++) {
-            for (int j = 0; j < n; j++) {
-                if (board.charAt(j) == hand.charAt(i)
-                        || (j < n - 1 && board.charAt(j) == board.charAt(j + 1))) {
-                    ans =
-                            Math.min(
-                                    ans,
-                                    1
-                                            + solve(
-                                                    ss(board, 0, j + 1)
-                                                            + hand.charAt(i)
-                                                            + ss(board, j + 1, n),
-                                                    ss(hand, 0, i) + ss(hand, i + 1, m)));
-                }
-            }
-        }
-        map.put(key, ans);
-        return ans;
-    }
-
     public int findMinStep(String board, String hand) {
-        int ans = solve(board, hand);
-        return ans >= 100 ? -1 : ans;
+        return dfs(board, hand);
+    }
+
+    private int dfs(String board, String hand) {
+        return findMinStepDp(board, hand, new HashMap<>());
+    }
+
+    private int findMinStepDp(String board, String hand, Map<String, Map<String, Integer>> dp) {
+        if (board.length() == 0) {
+            return 0;
+        }
+        if (hand.length() == 0) {
+            return -1;
+        }
+        if (dp.get(board) != null && dp.get(board).get(hand) != null) {
+            return dp.get(board).get(hand);
+        }
+        int min = -1;
+        for (int i = 0; i <= board.length(); i++) {
+            for (int j = 0; j < hand.length(); j++) {
+                if ((j == 0 || hand.charAt(j) != hand.charAt(j - 1))
+                        && (i == 0 || board.charAt(i - 1) != hand.charAt(j))
+                        && ((i < board.length() && board.charAt(i) == hand.charAt(j))
+                                || (i > 0
+                                        && i < board.length()
+                                        && board.charAt(i - 1) == board.charAt(i)
+                                        && board.charAt(i) != hand.charAt(j)))) {
+
+                    StringBuilder newS = new StringBuilder(board);
+                    newS.insert(i, hand.charAt(j));
+                    int sR =
+                            findMinStepDp(
+                                    removeRepeated(newS.toString()),
+                                    hand.substring(0, j) + hand.substring(j + 1, hand.length()),
+                                    dp);
+                    if (sR != -1) {
+                        min = min == -1 ? sR + 1 : Integer.min(min, sR + 1);
+                    }
+                }
+            }
+        }
+        dp.putIfAbsent(board, new HashMap<>());
+        dp.get(board).put(hand, min);
+        return min;
+    }
+
+    private String removeRepeated(String original) {
+        int count = 1;
+        int i = 1;
+        while (i < original.length()) {
+            if (original.charAt(i) == original.charAt(i - 1)) {
+                count++;
+                i++;
+            } else {
+                if (count >= 3) {
+                    return removeRepeated(
+                            original.substring(0, i - count)
+                                    + original.substring(i, original.length()));
+                } else {
+                    count = 1;
+                    i++;
+                }
+            }
+        }
+        if (count >= 3) {
+            return removeRepeated(original.substring(0, original.length() - count));
+        } else {
+            return original;
+        }
     }
 }
