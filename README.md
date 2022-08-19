@@ -2646,7 +2646,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | 1357 |[Apply Discount Every n Orders](src.save/main/java/g1301_1400/s1357_apply_discount_every_n_orders/Cashier.java)| Medium | Array, Hash_Table, Design | 174 | 58.82
 | 1356 |[Sort Integers by The Number of 1 Bits](src.save/main/java/g1301_1400/s1356_sort_integers_by_the_number_of_1_bits/Solution.java)| Easy | Array, Sorting, Bit_Manipulation, Counting, Programming_Skills_I_Day_11_Containers_and_Libraries | 10 | 65.50
 | 1354 |[Construct Target Array With Multiple Sums](src.save/main/java/g1301_1400/s1354_construct_target_array_with_multiple_sums/Solution.java)| Hard | Array, Heap_Priority_Queue | 2 | 100.00
-| 1353 |[Maximum Number of Events That Can Be Attended](src.save/main/java/g1301_1400/s1353_maximum_number_of_events_that_can_be_attended/Solution.java)| Medium | Array, Greedy, Heap_Priority_Queue | 70 | 21.66
+| 1353 |[Maximum Number of Events That Can Be Attended](src.save/main/java/g1301_1400/s1353_maximum_number_of_events_that_can_be_attended/Solution.java)| Medium | Array, Greedy, Heap_Priority_Queue | 53 | 99.53
 | 1352 |[Product of the Last K Numbers](src.save/main/java/g1301_1400/s1352_product_of_the_last_k_numbers/ProductOfNumbers.java)| Medium | Array, Math, Design, Queue, Data_Stream | 24 | 60.43
 | 1351 |[Count Negative Numbers in a Sorted Matrix](src.save/main/java/g1301_1400/s1351_count_negative_numbers_in_a_sorted_matrix/Solution.java)| Easy | Array, Binary_Search, Matrix, Binary_Search_I_Day_8 | 1 | 49.66
 | 1349 |[Maximum Students Taking Exam](src.save/main/java/g1301_1400/s1349_maximum_students_taking_exam/Solution.java)| Hard | Array, Dynamic_Programming, Matrix, Bit_Manipulation, Bitmask | 4 | 76.98
