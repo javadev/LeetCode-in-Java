@@ -6,7 +6,8 @@ public class Solution {
     public int edgeScore(int[] edges) {
         int n = edges.length;
         int[] score = new int[n];
-        int maxScore = 0, node = 0;
+        int maxScore = 0;
+        int node = 0;
         for (int i = 0; i < n; i++) {
             score[edges[i]] += i;
             if (score[edges[i]] >= maxScore) {
