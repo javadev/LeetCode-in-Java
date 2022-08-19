@@ -3318,7 +3318,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | 0493 |[Reverse Pairs](src.save/main/java/g0401_0500/s0493_reverse_pairs/Solution.java)| Hard | Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 92 | 52.08
 | 0492 |[Construct the Rectangle](src.save/main/java/g0401_0500/s0492_construct_the_rectangle/Solution.java)| Easy | Math | 1 | 74.88
 | 0491 |[Increasing Subsequences](src.save/main/java/g0401_0500/s0491_increasing_subsequences/Solution.java)| Medium | Array, Hash_Table, Bit_Manipulation, Backtracking | 24 | 38.30
-| 0488 |[Zuma Game](src.save/main/java/g0401_0500/s0488_zuma_game/Solution.java)| Hard | String, Dynamic_Programming, Breadth_First_Search, Memoization | 1593 | 37.71
+| 0488 |[Zuma Game](src.save/main/java/g0401_0500/s0488_zuma_game/Solution.java)| Hard | String, Dynamic_Programming, Breadth_First_Search, Memoization | 370 | 90.36
 | 0486 |[Predict the Winner](src.save/main/java/g0401_0500/s0486_predict_the_winner/Solution.java)| Medium | Array, Dynamic_Programming, Math, Recursion, Game_Theory | 1 | 85.17
 | 0485 |[Max Consecutive Ones](src.save/main/java/g0401_0500/s0485_max_consecutive_ones/Solution.java)| Easy | Array | 1 | 100.00
 | 0483 |[Smallest Good Base](src.save/main/java/g0401_0500/s0483_smallest_good_base/Solution.java)| Hard | Math, Binary_Search | 2 | 96.00
