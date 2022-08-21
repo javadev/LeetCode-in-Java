@@ -1,6 +1,6 @@
 package g2301_2400.s2322_minimum_score_after_removals_on_a_tree;
 
-// #Hard #Array #Bit_Manipulation #Tree #Depth_First_Search
+// #Hard #Array #Depth_First_Search #Tree #Bit_Manipulation
 // #2022_06_30_Time_255_ms_(70.70%)_Space_117.2_MB_(57.14%)
 
 import java.util.ArrayList;

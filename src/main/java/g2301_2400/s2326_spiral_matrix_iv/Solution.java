@@ -1,6 +1,6 @@
 package g2301_2400.s2326_spiral_matrix_iv;
 
-// #Medium #Array #Linked_List #Matrix #Simulation
+// #Medium #Array #Matrix #Simulation #Linked_List
 // #2022_07_15_Time_12_ms_(85.48%)_Space_61.9_MB_(90.83%)
 
 import com_github_leetcode.ListNode;

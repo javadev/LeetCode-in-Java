@@ -1,6 +1,6 @@
 package g2301_2400.s2376_count_special_integers;
 
-// #Hard #Math #Dynamic_Programming #2022_08_19_Time_0_ms_(100.00%)_Space_39.1_MB_(95.76%)
+// #Hard #Dynamic_Programming #Math #2022_08_19_Time_0_ms_(100.00%)_Space_39.1_MB_(95.76%)
 
 public class Solution {
     private int[] cntMap;
