@@ -1,6 +1,6 @@
 package g2301_2400.s2325_decode_the_message;
 
-// #Easy #Hash_Table #String #2022_07_03_Time_7_ms_(42.86%)_Space_42.6_MB_(57.14%)
+// #Easy #String #Hash_Table #2022_07_03_Time_7_ms_(42.86%)_Space_42.6_MB_(57.14%)
 
 import java.util.HashMap;
 import java.util.Map;

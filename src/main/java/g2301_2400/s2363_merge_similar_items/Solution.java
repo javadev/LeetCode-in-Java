@@ -1,6 +1,6 @@
 package g2301_2400.s2363_merge_similar_items;
 
-// #Easy #Array #Sorting #Hash_Table #Ordered_Set
+// #Easy #Array #Hash_Table #Sorting #Ordered_Set
 // #2022_08_14_Time_3_ms_(100.00%)_Space_43_MB_(100.00%)
 
 import java.util.ArrayList;

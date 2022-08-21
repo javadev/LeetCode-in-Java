@@ -1,6 +1,6 @@
 package g2301_2400.s2343_query_kth_smallest_trimmed_number;
 
-// #Medium #Array #String #Divide_and_Conquer #Sorting #Heap_Priority_Queue #Radix_Sort #Quickselect
+// #Medium #Array #String #Sorting #Heap_Priority_Queue #Divide_and_Conquer #Quickselect #Radix_Sort
 // #2022_07_19_Time_52_ms_(75.00%)_Space_58.8_MB_(37.50%)
 
 import java.util.ArrayList;

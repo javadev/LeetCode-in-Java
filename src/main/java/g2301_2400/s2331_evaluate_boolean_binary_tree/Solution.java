@@ -1,6 +1,6 @@
 package g2301_2400.s2331_evaluate_boolean_binary_tree;
 
-// #Easy #Binary_Search #Tree #Depth_First_Search
+// #Easy #Depth_First_Search #Tree #Binary_Search
 // #2022_07_10_Time_0_ms_(100.00%)_Space_46.1_MB_(85.71%)
 
 import com_github_leetcode.TreeNode;

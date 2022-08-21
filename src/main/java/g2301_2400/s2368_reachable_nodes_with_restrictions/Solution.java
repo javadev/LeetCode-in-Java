@@ -1,6 +1,6 @@
 package g2301_2400.s2368_reachable_nodes_with_restrictions;
 
-// #Medium #Array #Tree #Graph #Hash_Table #Depth_First_Search #Breadth_First_Search
+// #Medium #Array #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Graph
 // #2022_08_16_Time_59_ms_(85.71%)_Space_89.6_MB_(85.71%)
 
 import java.util.ArrayDeque;
