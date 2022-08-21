@@ -94,21 +94,21 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | 0003 |[Longest Substring Without Repeating Characters](src.save/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window | 5 | 91.03
 | 0567 |[Permutation in String](src.save/main/java/g0501_0600/s0567_permutation_in_string/Solution.java)| Medium | String, Hash_Table, Two_Pointers, Sliding_Window | 5 | 93.93
 
-#### Day 7 Breadth-First Search Depth-First Search
+#### Day 7 Breadth First Search Depth First Search
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0733 |[Flood Fill](src.save/main/java/g0701_0800/s0733_flood_fill/Solution.java)| Easy | Array, Depth_First_Search, Breadth_First_Search, Matrix | 1 | 85.36
 | 0695 |[Max Area of Island](src.save/main/java/g0601_0700/s0695_max_area_of_island/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 3 | 76.79
 
-#### Day 8 Breadth-First Search Depth-First Search
+#### Day 8 Breadth First Search Depth First Search
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0617 |[Merge Two Binary Trees](src.save/main/java/g0601_0700/s0617_merge_two_binary_trees/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 1 | 72.47
 | 0116 |[Populating Next Right Pointers in Each Node](src.save/main/java/g0101_0200/s0116_populating_next_right_pointers_in_each_node/Solution.java)| Medium | Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Linked_List | 0 | 100.00
 
-#### Day 9 Breadth-First Search Depth-First Search
+#### Day 9 Breadth First Search Depth First Search
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
