@@ -2113,7 +2113,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | 2040 |[Kth Smallest Product of Two Sorted Arrays](src.save/main/java/g2001_2100/s2040_kth_smallest_product_of_two_sorted_arrays/Solution.java)| Hard | Array, Binary_Search | 635 | 75.24
 | 2039 |[The Time When the Network Becomes Idle](src.save/main/java/g2001_2100/s2039_the_time_when_the_network_becomes_idle/Solution.java)| Medium | Array, Breadth_First_Search, Graph | 134 | 72.29
 | 2038 |[Remove Colored Pieces if Both Neighbors are the Same Color](src.save/main/java/g2001_2100/s2038_remove_colored_pieces_if_both_neighbors_are_the_same_color/Solution.java)| Medium | String, Math, Greedy, Game_Theory | 22 | 47.78
-| 2037 |[Minimum Number of Moves to Seat Everyone](src.save/main/java/g2001_2100/s2037_minimum_number_of_moves_to_seat_everyone/Solution.java)| Easy | Array, Sorting | 5 | 22.01
+| 2037 |[Minimum Number of Moves to Seat Everyone](src.save/main/java/g2001_2100/s2037_minimum_number_of_moves_to_seat_everyone/Solution.java)| Easy | Array, Sorting | 2 | 99.31
 | 2035 |[Partition Array Into Two Arrays to Minimize Sum Difference](src.save/main/java/g2001_2100/s2035_partition_array_into_two_arrays_to_minimize_sum_difference/Solution.java)| Hard | Array, Dynamic_Programming, Binary_Search, Two_Pointers, Bit_Manipulation, Ordered_Set, Bitmask | 1336 | 39.36
 | 2034 |[Stock Price Fluctuation](src.save/main/java/g2001_2100/s2034_stock_price_fluctuation/StockPrice.java)| Medium | Hash_Table, Design, Heap_Priority_Queue, Ordered_Set, Data_Stream | 163 | 65.51
 | 2033 |[Minimum Operations to Make a Uni-Value Grid](src.save/main/java/g2001_2100/s2033_minimum_operations_to_make_a_uni_value_grid/Solution.java)| Medium | Array, Math, Sorting, Matrix | 41 | 87.53
