@@ -1,6 +1,6 @@
 package g2001_2100.s2037_minimum_number_of_moves_to_seat_everyone;
 
-// #Easy #Array #Sorting #2022_05_25_Time_5_ms_(22.01%)_Space_43.7_MB_(67.19%)
+// #Easy #Array #Sorting #2022_08_22_Time_2_ms_(99.31%)_Space_41.7_MB_(98.89%)
 
 import java.util.Arrays;
 
