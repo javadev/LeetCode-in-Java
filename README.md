@@ -1848,6 +1848,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2380 |[Time Needed to Rearrange a Binary String](src/main/java/g2301_2400/s2380_time_needed_to_rearrange_a_binary_string/Solution.java)| Medium | String, Dynamic_Programming, Simulation | 3 | 70.00
+| 2379 |[Minimum Recolors to Get K Consecutive Black Blocks](src/main/java/g2301_2400/s2379_minimum_recolors_to_get_k_consecutive_black_blocks/Solution.java)| Easy | String, Sliding_Window | 1 | 80.00
 | 2376 |[Count Special Integers](src/main/java/g2301_2400/s2376_count_special_integers/Solution.java)| Hard | Dynamic_Programming, Math | 0 | 100.00
 | 2375 |[Construct Smallest Number From DI String](src/main/java/g2301_2400/s2375_construct_smallest_number_from_di_string/Solution.java)| Medium | String, Greedy, Stack, Backtracking | 0 | 100.00
 | 2374 |[Node With Highest Edge Score](src/main/java/g2301_2400/s2374_node_with_highest_edge_score/Solution.java)| Medium | Hash_Table, Graph | 4 | 97.68
