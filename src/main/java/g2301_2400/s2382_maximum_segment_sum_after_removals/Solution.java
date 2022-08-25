@@ -21,7 +21,7 @@ public class Solution {
                 return;
             }
             this.root[x] = x;
-            this.sum[x] = (long) value;
+            this.sum[x] = value;
         }
 
         public int find(int x) {
