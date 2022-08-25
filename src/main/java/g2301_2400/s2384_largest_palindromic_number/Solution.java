@@ -14,10 +14,8 @@ public class Solution {
         int c = 0;
         for (int i = 9; i >= 0; i--) {
             c = 0;
-            if (count[i] % 2 == 1) {
-                if (center == -1) {
-                    center = i;
-                }
+            if (count[i] % 2 == 1 && center == -1) {
+                center = i;
             }
             if (first.length() == 0 && i == 0) {
                 continue;

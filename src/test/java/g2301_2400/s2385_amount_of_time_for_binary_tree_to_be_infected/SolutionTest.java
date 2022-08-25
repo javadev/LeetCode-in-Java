@@ -21,4 +21,13 @@ class SolutionTest {
     void amountOfTime2() {
         assertThat(new Solution().amountOfTime(TreeNode.create(Arrays.asList(1)), 1), equalTo(0));
     }
+
+    @Test
+    void amountOfTime3() {
+        assertThat(
+                new Solution()
+                        .amountOfTime(
+                                TreeNode.create(Arrays.asList(1, 2, null, 3, null, 4, null, 5)), 4),
+                equalTo(3));
+    }
 }
