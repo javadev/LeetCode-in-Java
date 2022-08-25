@@ -56,9 +56,5 @@ public class Solution {
         Distance(int v) {
             this.val = v;
         }
-
-        public void changeD(int that) {
-            this.val = that;
-        }
     }
 }
