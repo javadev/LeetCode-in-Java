@@ -722,7 +722,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0589 |[N-ary Tree Preorder Traversal](src.save/main/java/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.java)| Easy | Depth_First_Search, Tree, Stack | 2 | 54.35
+| 0589 |[N-ary Tree Preorder Traversal](src.save/main/java/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.java)| Easy | Depth_First_Search, Tree, Stack | 1 | 90.98
 | 0496 |[Next Greater Element I](src.save/main/java/g0401_0500/s0496_next_greater_element_i/Solution.java)| Easy | Array, Hash_Table, Stack, Monotonic_Stack | 4 | 81.18
 | 1232 |[Check If It Is a Straight Line](src.save/main/java/g1201_1300/s1232_check_if_it_is_a_straight_line/Solution.java)| Easy | Array, Math, Geometry | 0 | 100.00
 
@@ -1035,7 +1035,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0595 |[Big Countries](src.save/main/java/g0501_0600/s0595_big_countries/script.sql)| Easy | Database | 241 | 92.61
+| 0595 |[Big Countries](src.save/main/java/g0501_0600/s0595_big_countries/script.sql)| Easy | Database | 262 | 84.64
 | 1757 |[Recyclable and Low Fat Products](src.save/main/java/g1701_1800/s1757_recyclable_and_low_fat_products/script.sql)| Easy | Database | 475 | 71.54
 | 0584 |[Find Customer Referee](src.save/main/java/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database | 531 | 58.63
 | 0183 |[Customers Who Never Order](src.save/main/java/g0101_0200/s0183_customers_who_never_order/script.sql)| Easy | Database | 376 | 98.73
@@ -1155,7 +1155,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0589 |[N-ary Tree Preorder Traversal](src.save/main/java/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.java)| Easy | Depth_First_Search, Tree, Stack | 2 | 54.35
+| 0589 |[N-ary Tree Preorder Traversal](src.save/main/java/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.java)| Easy | Depth_First_Search, Tree, Stack | 1 | 90.98
 | 0102 |[Binary Tree Level Order Traversal](src.save/main/java/g0101_0200/s0102_binary_tree_level_order_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree | 1 | 91.09
 
 #### Day 7 Binary Search
@@ -3247,15 +3247,15 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 | 0600 |[Non-negative Integers without Consecutive Ones](src.save/main/java/g0501_0600/s0600_non_negative_integers_without_consecutive_ones/Solution.java)| Hard | Dynamic_Programming | 2 | 74.62
 | 0599 |[Minimum Index Sum of Two Lists](src.save/main/java/g0501_0600/s0599_minimum_index_sum_of_two_lists/Solution.java)| Easy | Array, String, Hash_Table | 7 | 93.97
 | 0598 |[Range Addition II](src.save/main/java/g0501_0600/s0598_range_addition_ii/Solution.java)| Easy | Array, Math | 0 | 100.00
-| 0596 |[Classes More Than 5 Students](src.save/main/java/g0501_0600/s0596_classes_more_than_5_students/script.sql)| Easy | Database | 243 | 92.65
-| 0595 |[Big Countries](src.save/main/java/g0501_0600/s0595_big_countries/script.sql)| Easy | Database, SQL_I_Day_1_Select | 241 | 92.61
-| 0594 |[Longest Harmonious Subsequence](src.save/main/java/g0501_0600/s0594_longest_harmonious_subsequence/Solution.java)| Easy | Array, Hash_Table, Sorting | 11 | 99.77
-| 0593 |[Valid Square](src.save/main/java/g0501_0600/s0593_valid_square/Solution.java)| Medium | Math, Geometry | 1 | 97.14
-| 0592 |[Fraction Addition and Subtraction](src.save/main/java/g0501_0600/s0592_fraction_addition_and_subtraction/Solution.java)| Medium | String, Math, Simulation | 4 | 98.58
-| 0591 |[Tag Validator](src.save/main/java/g0501_0600/s0591_tag_validator/Solution.java)| Hard | String, Stack | 3 | 70.89
-| 0590 |[N-ary Tree Postorder Traversal](src.save/main/java/g0501_0600/s0590_n_ary_tree_postorder_traversal/Solution.java)| Easy | Depth_First_Search, Tree, Stack | 0 | 100.00
-| 0589 |[N-ary Tree Preorder Traversal](src.save/main/java/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.java)| Easy | Depth_First_Search, Tree, Stack, Programming_Skills_I_Day_5_Function, Level_1_Day_6_Tree | 2 | 54.35
-| 0587 |[Erect the Fence](src.save/main/java/g0501_0600/s0587_erect_the_fence/Solution.java)| Hard | Array, Math, Geometry | 10 | 87.50
+| 0596 |[Classes More Than 5 Students](src.save/main/java/g0501_0600/s0596_classes_more_than_5_students/script.sql)| Easy | Database | 290 | 74.62
+| 0595 |[Big Countries](src.save/main/java/g0501_0600/s0595_big_countries/script.sql)| Easy | Database, SQL_I_Day_1_Select | 262 | 84.64
+| 0594 |[Longest Harmonious Subsequence](src.save/main/java/g0501_0600/s0594_longest_harmonious_subsequence/Solution.java)| Easy | Array, Hash_Table, Sorting | 16 | 95.95
+| 0593 |[Valid Square](src.save/main/java/g0501_0600/s0593_valid_square/Solution.java)| Medium | Math, Geometry | 1 | 97.24
+| 0592 |[Fraction Addition and Subtraction](src.save/main/java/g0501_0600/s0592_fraction_addition_and_subtraction/Solution.java)| Medium | String, Math, Simulation | 6 | 91.33
+| 0591 |[Tag Validator](src.save/main/java/g0501_0600/s0591_tag_validator/Solution.java)| Hard | String, Stack | 2 | 94.35
+| 0590 |[N-ary Tree Postorder Traversal](src.save/main/java/g0501_0600/s0590_n_ary_tree_postorder_traversal/Solution.java)| Easy | Depth_First_Search, Tree, Stack | 1 | 90.45
+| 0589 |[N-ary Tree Preorder Traversal](src.save/main/java/g0501_0600/s0589_n_ary_tree_preorder_traversal/Solution.java)| Easy | Depth_First_Search, Tree, Stack, Programming_Skills_I_Day_5_Function, Level_1_Day_6_Tree | 1 | 90.98
+| 0587 |[Erect the Fence](src.save/main/java/g0501_0600/s0587_erect_the_fence/Solution.java)| Hard | Array, Math, Geometry | 12 | 90.91
 | 0586 |[Customer Placing the Largest Number of Orders](src.save/main/java/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database, SQL_I_Day_8_Function | 484 | 66.42
 | 0584 |[Find Customer Referee](src.save/main/java/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database, SQL_I_Day_1_Select | 531 | 58.63
 | 0583 |[Delete Operation for Two Strings](src.save/main/java/g0501_0600/s0583_delete_operation_for_two_strings/Solution.java)| Medium | String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming | 12 | 79.10
