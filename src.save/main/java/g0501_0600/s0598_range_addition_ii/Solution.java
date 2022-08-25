@@ -1,6 +1,6 @@
 package g0501_0600.s0598_range_addition_ii;
 
-// #Easy #Array #Math #2022_03_20_Time_0_ms_(100.00%)_Space_44.9_MB_(19.64%)
+// #Easy #Array #Math #2022_08_25_Time_0_ms_(100.00%)_Space_44.3_MB_(71.22%)
 
 public class Solution {
     /*

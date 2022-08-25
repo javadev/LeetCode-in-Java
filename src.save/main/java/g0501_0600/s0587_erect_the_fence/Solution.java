@@ -1,6 +1,6 @@
 package g0501_0600.s0587_erect_the_fence;
 
-// #Hard #Array #Math #Geometry #2022_03_20_Time_10_ms_(87.50%)_Space_55.1_MB_(6.25%)
+// #Hard #Array #Math #Geometry #2022_08_25_Time_12_ms_(90.91%)_Space_54.5_MB_(58.18%)
 
 import java.util.Arrays;
 
