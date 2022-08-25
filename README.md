@@ -1848,6 +1848,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2385 |[Amount of Time for Binary Tree to Be Infected](src/main/java/g2301_2400/s2385_amount_of_time_for_binary_tree_to_be_infected/Solution.java)| Medium | Tree, Binary_Tree, Depth_First_Search, Breadth_First_Search | 20 | 100.00
+| 2384 |[Largest Palindromic Number](src/main/java/g2301_2400/s2384_largest_palindromic_number/Solution.java)| Medium | String, Hash_Table, Greedy | 26 | 100.00
 | 2383 |[Minimum Hours of Training to Win a Competition](src/main/java/g2301_2400/s2383_minimum_hours_of_training_to_win_a_competition/Solution.java)| Easy | Array, Greedy | 0 | 100.00
 | 2382 |[Maximum Segment Sum After Removals](src/main/java/g2301_2400/s2382_maximum_segment_sum_after_removals/Solution.java)| Hard | Array, Prefix_Sum, Union_Find, Ordered_Set | 28 | 100.00
 | 2381 |[Shifting Letters II](src/main/java/g2301_2400/s2381_shifting_letters_ii/Solution.java)| Medium | Array, String, Prefix_Sum | 10 | 75.00
