@@ -1848,6 +1848,9 @@ implementation 'com.github.javadev:leetcode-in-java:1.12'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2383 |[Minimum Hours of Training to Win a Competition](src/main/java/g2301_2400/s2383_minimum_hours_of_training_to_win_a_competition/Solution.java)| |||
+| 2382 |[Maximum Segment Sum After Removals](src/main/java/g2301_2400/s2382_maximum_segment_sum_after_removals/Solution.java)| Hard | Array, Prefix_Sum, Union_Find, Ordered_Set | 28 | 100.00
+| 2381 |[Shifting Letters II](src/main/java/g2301_2400/s2381_shifting_letters_ii/Solution.java)| Medium | Array, String, Prefix_Sum | 10 | 75.00
 | 2380 |[Time Needed to Rearrange a Binary String](src/main/java/g2301_2400/s2380_time_needed_to_rearrange_a_binary_string/Solution.java)| Medium | String, Dynamic_Programming, Simulation | 3 | 70.00
 | 2379 |[Minimum Recolors to Get K Consecutive Black Blocks](src/main/java/g2301_2400/s2379_minimum_recolors_to_get_k_consecutive_black_blocks/Solution.java)| Easy | String, Sliding_Window | 1 | 80.00
 | 2376 |[Count Special Integers](src/main/java/g2301_2400/s2376_count_special_integers/Solution.java)| Hard | Dynamic_Programming, Math | 0 | 100.00
