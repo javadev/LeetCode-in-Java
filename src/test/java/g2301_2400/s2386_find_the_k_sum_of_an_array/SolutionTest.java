@@ -15,4 +15,11 @@ class SolutionTest {
     void kSum2() {
         assertThat(new Solution().kSum(new int[] {1, -2, 3, 4, -10, 12}, 16), equalTo(10L));
     }
+
+    @Test
+    void kSum3() {
+        assertThat(
+                new Solution().kSum(new int[] {-530219056, 353285209, 493533664}, 6),
+                equalTo(-36685392L));
+    }
 }

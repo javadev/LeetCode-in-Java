@@ -1,6 +1,6 @@
 package g2301_2400.s2386_find_the_k_sum_of_an_array;
 
-// #Hard #Array #Sorting #Heap_(Priority_Queue)
+// #Hard #Array #Sorting #Heap_Priority_Queue
 // #2022_08_25_Time_75_ms_(100.00%)_Space_86.8_MB_(33.33%)
 
 import java.util.Arrays;
@@ -22,14 +22,12 @@ public class Solution {
         pq.offer(new Pair<>(sum, 0));
         while (k-- > 1) {
             Pair<Long, Integer> top = pq.poll();
-            if (top != null) {
-                long s = top.getKey();
-                int i = top.getValue();
-                if (i < nums.length) {
-                    pq.offer(new Pair<>(s - nums[i], i + 1));
-                    if (i > 0) {
-                        pq.offer(new Pair<>(s - nums[i] + nums[i - 1], i + 1));
-                    }
+            long s = top.getKey();
+            int i = top.getValue();
+            if (i < nums.length) {
+                pq.offer(new Pair<>(s - nums[i], i + 1));
+                if (i > 0) {
+                    pq.offer(new Pair<>(s - nums[i] + nums[i - 1], i + 1));
                 }
             }
         }
