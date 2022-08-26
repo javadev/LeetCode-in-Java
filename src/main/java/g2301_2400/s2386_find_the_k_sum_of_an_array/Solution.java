@@ -22,14 +22,12 @@ public class Solution {
         pq.offer(new Pair<>(sum, 0));
         while (k-- > 1) {
             Pair<Long, Integer> top = pq.poll();
-            if (top != null) {
-                long s = top.getKey();
-                int i = top.getValue();
-                if (i < nums.length) {
-                    pq.offer(new Pair<>(s - nums[i], i + 1));
-                    if (i > 0) {
-                        pq.offer(new Pair<>(s - nums[i] + nums[i - 1], i + 1));
-                    }
+            long s = top.getKey();
+            int i = top.getValue();
+            if (i < nums.length) {
+                pq.offer(new Pair<>(s - nums[i], i + 1));
+                if (i > 0) {
+                    pq.offer(new Pair<>(s - nums[i] + nums[i - 1], i + 1));
                 }
             }
         }
