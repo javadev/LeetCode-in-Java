@@ -1,6 +1,6 @@
 package g2301_2400.s2386_find_the_k_sum_of_an_array;
 
-// #Hard #Array #Sorting #Heap_(Priority_Queue)
+// #Hard #Array #Sorting #Heap_Priority_Queue
 // #2022_08_25_Time_75_ms_(100.00%)_Space_86.8_MB_(33.33%)
 
 import java.util.Arrays;
