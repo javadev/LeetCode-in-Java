@@ -26,7 +26,8 @@ public class Solution {
 
     private int find(int[] root, int i) {
         if (root[i] != i) {
-            return root[i] = find(root, root[i]);
+            root[i] = find(root, root[i]);
+            return root[i];
         }
         return i;
     }

@@ -31,7 +31,11 @@ public class Solution {
 
     private boolean findSum(int k, int pos, int target) {
         if (k == 1) {
-            while (nums[--pos] > target) {}
+            while (true) {
+                if (nums[--pos] <= target) {
+                    break;
+                }
+            }
             return nums[pos] == target;
         }
         for (int i = pos; sums[i] - sums[i-- - k] >= target; ) {
