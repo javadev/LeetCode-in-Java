@@ -1,6 +1,6 @@
 package g0501_0600.s0529_minesweeper;
 
-// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix
+// #Medium #Array #Depth_First_Search #Breadth_First_Search #Matrix #Companies_Amazon
 // #2022_07_28_Time_0_ms_(100.00%)_Space_42.6_MB_(85.88%)
 
 public class Solution {

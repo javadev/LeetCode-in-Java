@@ -1,6 +1,6 @@
 package g0601_0700.s0675_cut_off_trees_for_golf_event;
 
-// #Hard #Array #Breadth_First_Search #Matrix #Heap_Priority_Queue
+// #Hard #Array #Breadth_First_Search #Matrix #Heap_Priority_Queue #Companies_Amazon
 // #2022_03_22_Time_417_ms_(73.86%)_Space_118.5_MB_(22.75%)
 
 import java.util.LinkedList;

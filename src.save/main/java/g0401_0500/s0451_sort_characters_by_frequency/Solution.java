@@ -1,7 +1,7 @@
 package g0401_0500.s0451_sort_characters_by_frequency;
 
 // #Medium #String #Hash_Table #Sorting #Heap_Priority_Queue #Counting #Bucket_Sort
-// #Data_Structure_II_Day_21_Heap_Priority_Queue
+// #Data_Structure_II_Day_21_Heap_Priority_Queue #Companies_Amazon
 // #2022_07_18_Time_13_ms_(89.63%)_Space_43.3_MB_(87.60%)
 
 import java.util.ArrayList;

@@ -1,6 +1,7 @@
 package g0301_0400.s0336_palindrome_pairs;
 
-// #Hard #Array #String #Hash_Table #Trie #2022_07_10_Time_1165_ms_(57.51%)_Space_270.4_MB_(47.12%)
+// #Hard #Array #String #Hash_Table #Trie #Companies_Airbnb
+// #2022_07_10_Time_1165_ms_(57.51%)_Space_270.4_MB_(47.12%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

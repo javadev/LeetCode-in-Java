@@ -1,6 +1,6 @@
 package g0601_0700.s0662_maximum_width_of_binary_tree;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Companies_Amazon
 // #2022_03_21_Time_2_ms_(78.93%)_Space_43.8_MB_(35.13%)
 
 import com_github_leetcode.TreeNode;

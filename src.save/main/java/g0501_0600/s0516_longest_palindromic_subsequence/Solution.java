@@ -1,6 +1,6 @@
 package g0501_0600.s0516_longest_palindromic_subsequence;
 
-// #Medium #String #Dynamic_Programming #Dynamic_Programming_I_Day_17
+// #Medium #String #Dynamic_Programming #Dynamic_Programming_I_Day_17 #Companies_Amazon
 // #2022_07_25_Time_88_ms_(58.87%)_Space_68.4_MB_(64.16%)
 
 public class Solution {

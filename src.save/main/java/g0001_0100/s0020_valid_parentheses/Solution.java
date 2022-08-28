@@ -1,7 +1,7 @@
 package g0001_0100.s0020_valid_parentheses;
 
 // #Easy #Top_100_Liked_Questions #Top_Interview_Questions #String #Stack
-// #Data_Structure_I_Day_9_Stack_Queue #Udemy_Strings
+// #Data_Structure_I_Day_9_Stack_Queue #Udemy_Strings #Companies_Airbnb #Companies_Amazon
 // #2022_06_14_Time_3_ms_(51.72%)_Space_41.5_MB_(73.27%)
 
 import java.util.Stack;
