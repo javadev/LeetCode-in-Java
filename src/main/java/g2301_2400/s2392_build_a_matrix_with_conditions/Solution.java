@@ -47,7 +47,7 @@ public class Solution {
         // need a 2-D list to be the graph, and fill the graph
         List<List<Integer>> graph = new ArrayList<>();
         for (int i = 0; i < k; i++) {
-            graph.add(new ArrayList<Integer>());
+            graph.add(new ArrayList<>());
         }
         // need a queue to do the BFS
         Queue<Integer> queue = new LinkedList<>();
