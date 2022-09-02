@@ -39,7 +39,7 @@ public class Solution {
         return res;
     }
 
-    private List<Integer> toposort(int k, int[][] A) {
+    private List<Integer> toposort(int k, int[][] matrix) {
         // need a int[] to record the indegree of each number [1, k]
         int[] deg = new int[k + 1];
         // need a list to record the order of each number, then return this list
@@ -51,8 +51,8 @@ public class Solution {
         }
         // need a queue to do the BFS
         Queue<Integer> queue = new LinkedList<>();
-        // First, we need to establish the graph, following the given A
-        for (int[] a : A) {
+        // First, we need to establish the graph, following the given matrix
+        for (int[] a : matrix) {
             int from = a[0];
             int to = a[1];
             graph.get(from - 1).add(to);
