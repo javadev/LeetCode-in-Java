@@ -1848,6 +1848,9 @@ implementation 'com.github.javadev:leetcode-in-java:1.13'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2397 |[Maximum Rows Covered by Columns](src/main/java/g2301_2400/s2397_maximum_rows_covered_by_columns/Solution.java)| Medium | Array, Matrix, Bit_Manipulation, Backtracking, Enumeration | 1 | 100.00
+| 2396 |[Strictly Palindromic Number](src/main/java/g2301_2400/s2396_strictly_palindromic_number/Solution.java)| Medium | Math, Two_Pointers, Brainteaser | 0 | 100.00
+| 2395 |[Find Subarrays With Equal Sum](src/main/java/g2301_2400/s2395_find_subarrays_with_equal_sum/Solution.java)| Easy | Array, Hash_Table | 0 | 100.00
 | 2392 |[Build a Matrix With Conditions](src/main/java/g2301_2400/s2392_build_a_matrix_with_conditions/Solution.java)| Hard | Array, Matrix, Graph, Topological_Sort | 9 | 97.22
 | 2391 |[Minimum Amount of Time to Collect Garbage](src/main/java/g2301_2400/s2391_minimum_amount_of_time_to_collect_garbage/Solution.java)| Medium | Array, String, Prefix_Sum | 7 | 98.86
 | 2390 |[Removing Stars From a String](src/main/java/g2301_2400/s2390_removing_stars_from_a_string/Solution.java)| Medium | String, Stack, Simulation | 31 | 90.55
