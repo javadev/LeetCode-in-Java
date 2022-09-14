@@ -15,4 +15,9 @@ class SolutionTest {
     void isStrictlyPalindromic2() {
         assertThat(new Solution().isStrictlyPalindromic(4), equalTo(false));
     }
+
+    @Test
+    void isStrictlyPalindromic3() {
+        assertThat(new Solution().isStrictlyPalindromic(9779), equalTo(false));
+    }
 }
