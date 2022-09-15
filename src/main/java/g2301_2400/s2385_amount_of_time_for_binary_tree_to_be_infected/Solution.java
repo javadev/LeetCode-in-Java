@@ -1,6 +1,6 @@
 package g2301_2400.s2385_amount_of_time_for_binary_tree_to_be_infected;
 
-// #Medium #Tree #Binary_Tree #Depth_First_Search #Breadth_First_Search
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
 // #2022_08_25_Time_20_ms_(100.00%)_Space_111.7_MB_(100.00%)
 
 import com_github_leetcode.TreeNode;
