@@ -1848,7 +1848,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.13'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
-| 2400 |[Number of Ways to Reach a Position After Exactly k Steps](src/main/java/g2301_2400/s2400_number_of_ways_to_reach_a_position_after_exactly_k_steps/Solution.java)| |||
+| 2400 |[Number of Ways to Reach a Position After Exactly k Steps](src/main/java/g2301_2400/s2400_number_of_ways_to_reach_a_position_after_exactly_k_steps/Solution.java)| Medium | Dynamic_Programming, Math, Combinatorics | 1 | 99.66
 | 2399 |[Check Distances Between Same Letters](src/main/java/g2301_2400/s2399_check_distances_between_same_letters/Solution.java)| Easy | Array, String, Hash_Table | 1 | 99.88
 | 2398 |[Maximum Number of Robots Within Budget](src/main/java/g2301_2400/s2398_maximum_number_of_robots_within_budget/Solution.java)| Hard | Array, Binary_Search, Prefix_Sum, Sliding_Window, Queue, Heap_(Priority_Queue) | 15 | 99.75
 | 2397 |[Maximum Rows Covered by Columns](src/main/java/g2301_2400/s2397_maximum_rows_covered_by_columns/Solution.java)| Medium | Array, Matrix, Bit_Manipulation, Backtracking, Enumeration | 1 | 100.00
