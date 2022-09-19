@@ -25,4 +25,9 @@ class SolutionTest {
     void numberOfWays4() {
         assertThat(new Solution().numberOfWays(1, 1000, 999), equalTo(1));
     }
+
+    @Test
+    void numberOfWays5() {
+        assertThat(new Solution().numberOfWays(272, 270, 6), equalTo(15));
+    }
 }
