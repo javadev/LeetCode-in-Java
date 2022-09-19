@@ -15,4 +15,14 @@ class SolutionTest {
     void numberOfWays2() {
         assertThat(new Solution().numberOfWays(2, 5, 10), equalTo(0));
     }
+
+    @Test
+    void numberOfWays3() {
+        assertThat(new Solution().numberOfWays(1, 10, 3), equalTo(0));
+    }
+
+    @Test
+    void numberOfWays4() {
+        assertThat(new Solution().numberOfWays(1, 1000, 999), equalTo(1));
+    }
 }

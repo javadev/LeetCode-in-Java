@@ -23,9 +23,9 @@ public class Solution {
         rev[1] = 1;
         int ans = k;
         for (int i = 2; i <= min; i++) {
-            rev[i] = (int) ((long) (mod - mod / i) * (long) rev[mod % i] % (long) mod);
-            ans = (int) ((long) ans * (long) (k - i + 1) % (long) mod);
-            ans = (int) ((long) ans * (long) rev[i] % (long) mod);
+            rev[i] = (int) ((long) (mod - mod / i) * (long) rev[mod % i] % mod);
+            ans = (int) ((long) ans * (long) (k - i + 1) % mod);
+            ans = (int) ((long) ans * (long) rev[i] % mod);
         }
         return ans;
     }
