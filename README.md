@@ -1848,82 +1848,83 @@ implementation 'com.github.javadev:leetcode-in-java:1.13'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
-| 2400 |[Number of Ways to Reach a Position After Exactly k Steps](src/main/java/g2301_2400/s2400_number_of_ways_to_reach_a_position_after_exactly_k_steps/Solution.java)| Medium | Dynamic_Programming, Math, Combinatorics | 1 | 99.66
-| 2399 |[Check Distances Between Same Letters](src/main/java/g2301_2400/s2399_check_distances_between_same_letters/Solution.java)| Easy | Array, String, Hash_Table | 1 | 99.88
-| 2398 |[Maximum Number of Robots Within Budget](src/main/java/g2301_2400/s2398_maximum_number_of_robots_within_budget/Solution.java)| Hard | Array, Binary_Search, Prefix_Sum, Sliding_Window, Queue, Heap_(Priority_Queue) | 15 | 99.75
-| 2397 |[Maximum Rows Covered by Columns](src/main/java/g2301_2400/s2397_maximum_rows_covered_by_columns/Solution.java)| Medium | Array, Matrix, Bit_Manipulation, Backtracking, Enumeration | 1 | 100.00
-| 2396 |[Strictly Palindromic Number](src/main/java/g2301_2400/s2396_strictly_palindromic_number/Solution.java)| Medium | Math, Two_Pointers, Brainteaser | 0 | 100.00
-| 2395 |[Find Subarrays With Equal Sum](src/main/java/g2301_2400/s2395_find_subarrays_with_equal_sum/Solution.java)| Easy | Array, Hash_Table | 0 | 100.00
-| 2392 |[Build a Matrix With Conditions](src/main/java/g2301_2400/s2392_build_a_matrix_with_conditions/Solution.java)| Hard | Array, Matrix, Graph, Topological_Sort | 9 | 97.22
-| 2391 |[Minimum Amount of Time to Collect Garbage](src/main/java/g2301_2400/s2391_minimum_amount_of_time_to_collect_garbage/Solution.java)| Medium | Array, String, Prefix_Sum | 7 | 98.86
-| 2390 |[Removing Stars From a String](src/main/java/g2301_2400/s2390_removing_stars_from_a_string/Solution.java)| Medium | String, Stack, Simulation | 31 | 90.55
-| 2389 |[Longest Subsequence With Limited Sum](src/main/java/g2301_2400/s2389_longest_subsequence_with_limited_sum/Solution.java)| Easy | Array, Sorting, Greedy, Binary_Search, Prefix_Sum | 4 | 99.97
-| 2386 |[Find the K-Sum of an Array](src/main/java/g2301_2400/s2386_find_the_k_sum_of_an_array/Solution.java)| Hard | Array, Sorting, Heap_Priority_Queue | 75 | 100.00
-| 2385 |[Amount of Time for Binary Tree to Be Infected](src/main/java/g2301_2400/s2385_amount_of_time_for_binary_tree_to_be_infected/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 20 | 100.00
-| 2384 |[Largest Palindromic Number](src/main/java/g2301_2400/s2384_largest_palindromic_number/Solution.java)| Medium | String, Hash_Table, Greedy | 26 | 100.00
-| 2383 |[Minimum Hours of Training to Win a Competition](src/main/java/g2301_2400/s2383_minimum_hours_of_training_to_win_a_competition/Solution.java)| Easy | Array, Greedy | 0 | 100.00
-| 2382 |[Maximum Segment Sum After Removals](src/main/java/g2301_2400/s2382_maximum_segment_sum_after_removals/Solution.java)| Hard | Array, Prefix_Sum, Union_Find, Ordered_Set | 28 | 100.00
-| 2381 |[Shifting Letters II](src/main/java/g2301_2400/s2381_shifting_letters_ii/Solution.java)| Medium | Array, String, Prefix_Sum | 10 | 75.00
-| 2380 |[Time Needed to Rearrange a Binary String](src/main/java/g2301_2400/s2380_time_needed_to_rearrange_a_binary_string/Solution.java)| Medium | String, Dynamic_Programming, Simulation | 3 | 70.00
-| 2379 |[Minimum Recolors to Get K Consecutive Black Blocks](src/main/java/g2301_2400/s2379_minimum_recolors_to_get_k_consecutive_black_blocks/Solution.java)| Easy | String, Sliding_Window | 1 | 80.00
-| 2376 |[Count Special Integers](src/main/java/g2301_2400/s2376_count_special_integers/Solution.java)| Hard | Dynamic_Programming, Math | 0 | 100.00
-| 2375 |[Construct Smallest Number From DI String](src/main/java/g2301_2400/s2375_construct_smallest_number_from_di_string/Solution.java)| Medium | String, Greedy, Stack, Backtracking | 0 | 100.00
-| 2374 |[Node With Highest Edge Score](src/main/java/g2301_2400/s2374_node_with_highest_edge_score/Solution.java)| Medium | Hash_Table, Graph | 4 | 97.68
-| 2373 |[Largest Local Values in a Matrix](src/main/java/g2301_2400/s2373_largest_local_values_in_a_matrix/Solution.java)| Easy | Array, Matrix | 2 | 99.97
-| 2370 |[Longest Ideal Subsequence](src/main/java/g2301_2400/s2370_longest_ideal_subsequence/Solution.java)| Medium | String, Hash_Table, Dynamic_Programming | 28 | 85.71
-| 2369 |[Check if There is a Valid Partition For The Array](src/main/java/g2301_2400/s2369_check_if_there_is_a_valid_partition_for_the_array/Solution.java)| Medium | Array, Dynamic_Programming | 7 | 81.82
-| 2368 |[Reachable Nodes With Restrictions](src/main/java/g2301_2400/s2368_reachable_nodes_with_restrictions/Solution.java)| Medium | Array, Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Graph | 59 | 85.71
-| 2367 |[Number of Arithmetic Triplets](src/main/java/g2301_2400/s2367_number_of_arithmetic_triplets/Solution.java)| Easy | Array, Hash_Table, Two_Pointers, Enumeration | 3 | 66.67
-| 2366 |[Minimum Replacements to Sort the Array](src/main/java/g2301_2400/s2366_minimum_replacements_to_sort_the_array/Solution.java)| Hard | Array, Math, Greedy | 10 | 28.57
-| 2365 |[Task Scheduler II](src/main/java/g2301_2400/s2365_task_scheduler_ii/Solution.java)| Medium | Array, Hash_Table, Simulation | 70 | 55.56
-| 2364 |[Count Number of Bad Pairs](src/main/java/g2301_2400/s2364_count_number_of_bad_pairs/Solution.java)| Medium | Array, Hash_Table | 44 | 80.00
-| 2363 |[Merge Similar Items](src/main/java/g2301_2400/s2363_merge_similar_items/Solution.java)| Easy | Array, Hash_Table, Sorting, Ordered_Set | 3 | 100.00
-| 2360 |[Longest Cycle in a Graph](src/main/java/g2301_2400/s2360_longest_cycle_in_a_graph/Solution.java)| Hard | Depth_First_Search, Graph, Topological_Sort | 37 | 90.19
-| 2359 |[Find Closest Node to Given Two Nodes](src/main/java/g2301_2400/s2359_find_closest_node_to_given_two_nodes/Solution.java)| Medium | Depth_First_Search, Graph | 18 | 89.33
-| 2358 |[Maximum Number of Groups Entering a Competition](src/main/java/g2301_2400/s2358_maximum_number_of_groups_entering_a_competition/Solution.java)| Medium | Array, Math, Greedy, Binary_Search | 0 | 100.00
-| 2357 |[Make Array Zero by Subtracting Equal Amounts](src/main/java/g2301_2400/s2357_make_array_zero_by_subtracting_equal_amounts/Solution.java)| Easy | Array, Hash_Table, Sorting, Heap_Priority_Queue, Simulation | 1 | 98.24
-| 2354 |[Number of Excellent Pairs](src/main/java/g2301_2400/s2354_number_of_excellent_pairs/Solution.java)| Hard | Array, Hash_Table, Binary_Search, Bit_Manipulation | 80 | 86.77
-| 2353 |[Design a Food Rating System](src/main/java/g2301_2400/s2353_design_a_food_rating_system/FoodRatings.java)| Medium | Hash_Table, Design, Heap_Priority_Queue, Ordered_Set | 364 | 83.35
-| 2352 |[Equal Row and Column Pairs](src/main/java/g2301_2400/s2352_equal_row_and_column_pairs/Solution.java)| Medium | Array, Hash_Table, Matrix, Simulation | 7 | 98.94
-| 2351 |[First Letter to Appear Twice](src/main/java/g2301_2400/s2351_first_letter_to_appear_twice/Solution.java)| Easy | String, Hash_Table, Counting | 0 | 100.00
-| 2350 |[Shortest Impossible Sequence of Rolls](src/main/java/g2301_2400/s2350_shortest_impossible_sequence_of_rolls/Solution.java)| Hard | Array, Hash_Table, Greedy | 12 | 87.73
-| 2349 |[Design a Number Container System](src/main/java/g2301_2400/s2349_design_a_number_container_system/NumberContainers.java)| Medium | Hash_Table, Design, Heap_Priority_Queue, Ordered_Set | 208 | 54.57
-| 2348 |[Number of Zero-Filled Subarrays](src/main/java/g2301_2400/s2348_number_of_zero_filled_subarrays/Solution.java)| Medium | Array, Math | 3 | 99.90
-| 2347 |[Best Poker Hand](src/main/java/g2301_2400/s2347_best_poker_hand/Solution.java)| Easy | Array, Hash_Table, Counting | 1 | 76.92
-| 2344 |[Minimum Deletions to Make Array Divisible](src/main/java/g2301_2400/s2344_minimum_deletions_to_make_array_divisible/Solution.java)| Hard | Array, Math, Sorting, Heap_Priority_Queue, Number_Theory | 13 | 88.89
-| 2343 |[Query Kth Smallest Trimmed Number](src/main/java/g2301_2400/s2343_query_kth_smallest_trimmed_number/Solution.java)| Medium | Array, String, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Quickselect, Radix_Sort | 52 | 75.00
-| 2342 |[Max Sum of a Pair With Equal Sum of Digits](src/main/java/g2301_2400/s2342_max_sum_of_a_pair_with_equal_sum_of_digits/Solution.java)| Medium | Array, Hash_Table, Sorting, Heap_Priority_Queue | 99 | 100.00
-| 2341 |[Maximum Number of Pairs in Array](src/main/java/g2301_2400/s2341_maximum_number_of_pairs_in_array/Solution.java)| Easy | Array, Hash_Table, Sorting | 2 | 80.00
-| 2338 |[Count the Number of Ideal Arrays](src/main/java/g2301_2400/s2338_count_the_number_of_ideal_arrays/Solution.java)| Hard | Dynamic_Programming, Math, Number_Theory, Combinatorics | 21 | 99.04
-| 2337 |[Move Pieces to Obtain a String](src/main/java/g2301_2400/s2337_move_pieces_to_obtain_a_string/Solution.java)| Medium | String, Two_Pointers | 23 | 82.39
-| 2336 |[Smallest Number in Infinite Set](src/main/java/g2301_2400/s2336_smallest_number_in_infinite_set/SmallestInfiniteSet.java)| Medium | Hash_Table, Design, Heap_Priority_Queue | 12 | 96.69
-| 2335 |[Minimum Amount of Time to Fill Cups](src/main/java/g2301_2400/s2335_minimum_amount_of_time_to_fill_cups/Solution.java)| Easy | Array, Greedy, Heap_Priority_Queue | 1 | 97.92
-| 2334 |[Subarray With Elements Greater Than Varying Threshold](src/main/java/g2301_2400/s2334_subarray_with_elements_greater_than_varying_threshold/Solution.java)| Hard | Array, Stack, Union_Find, Monotonic_Stack | 385 | 31.56
-| 2333 |[Minimum Sum of Squared Difference](src/main/java/g2301_2400/s2333_minimum_sum_of_squared_difference/Solution.java)| Medium | Array, Math, Sorting, Heap_Priority_Queue | 15 | 95.13
-| 2332 |[The Latest Time to Catch a Bus](src/main/java/g2301_2400/s2332_the_latest_time_to_catch_a_bus/Solution.java)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 28 | 100.00
-| 2331 |[Evaluate Boolean Binary Tree](src/main/java/g2301_2400/s2331_evaluate_boolean_binary_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Search | 0 | 100.00
-| 2328 |[Number of Increasing Paths in a Grid](src/main/java/g2301_2400/s2328_number_of_increasing_paths_in_a_grid/Solution.java)| Hard | Array, Dynamic_Programming, Depth_First_Search, Breadth_First_Search, Matrix, Graph, Memoization, Topological_Sort | 43 | 100.00
-| 2327 |[Number of People Aware of a Secret](src/main/java/g2301_2400/s2327_number_of_people_aware_of_a_secret/Solution.java)| Medium | Dynamic_Programming, Simulation, Queue | 7 | 80.00
-| 2326 |[Spiral Matrix IV](src/main/java/g2301_2400/s2326_spiral_matrix_iv/Solution.java)| Medium | Array, Matrix, Simulation, Linked_List | 12 | 85.48
-| 2325 |[Decode the Message](src/main/java/g2301_2400/s2325_decode_the_message/Solution.java)| Easy | String, Hash_Table | 7 | 42.86
-| 2322 |[Minimum Score After Removals on a Tree](src/main/java/g2301_2400/s2322_minimum_score_after_removals_on_a_tree/Solution.java)| Hard | Array, Depth_First_Search, Tree, Bit_Manipulation | 255 | 70.70
-| 2321 |[Maximum Score Of Spliced Array](src/main/java/g2301_2400/s2321_maximum_score_of_spliced_array/Solution.java)| Hard | Array, Dynamic_Programming | 3 | 99.68
-| 2320 |[Count Number of Ways to Place Houses](src/main/java/g2301_2400/s2320_count_number_of_ways_to_place_houses/Solution.java)| Medium | Dynamic_Programming | 13 | 82.46
-| 2319 |[Check if Matrix Is X-Matrix](src/main/java/g2301_2400/s2319_check_if_matrix_is_x_matrix/Solution.java)| Easy | Array, Matrix | 3 | 53.58
-| 2318 |[Number of Distinct Roll Sequences](src/main/java/g2301_2400/s2318_number_of_distinct_roll_sequences/Solution.java)| Hard | Dynamic_Programming, Memoization | 254 | 91.67
-| 2317 |[Maximum XOR After Operations](src/main/java/g2301_2400/s2317_maximum_xor_after_operations/Solution.java)| Medium | Array, Math, Bit_Manipulation | 1 | 100.00
-| 2316 |[Count Unreachable Pairs of Nodes in an Undirected Graph](src/main/java/g2301_2400/s2316_count_unreachable_pairs_of_nodes_in_an_undirected_graph/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 32 | 100.00
-| 2315 |[Count Asterisks](src/main/java/g2301_2400/s2315_count_asterisks/Solution.java)| Easy | String | 1 | 100.00
-| 2312 |[Selling Pieces of Wood](src/main/java/g2301_2400/s2312_selling_pieces_of_wood/Solution.java)| Hard | Backtracking | 78 | 63.64
-| 2311 |[Longest Binary Subsequence Less Than or Equal to K](src/main/java/g2301_2400/s2311_longest_binary_subsequence_less_than_or_equal_to_k/Solution.java)| Medium | String, Dynamic_Programming, Greedy, Memoization | 1 | 100.00
-| 2310 |[Sum of Numbers With Units Digit K](src/main/java/g2301_2400/s2310_sum_of_numbers_with_units_digit_k/Solution.java)| Medium | Math | 1 | 66.67
-| 2309 |[Greatest English Letter in Upper and Lower Case](src/main/java/g2301_2400/s2309_greatest_english_letter_in_upper_and_lower_case/Solution.java)| Easy | Array | 5 | 75.00
-| 2306 |[Naming a Company](src/main/java/g2301_2400/s2306_naming_a_company/Solution.java)| Hard | Array, String, Hash_Table, Bit_Manipulation, Enumeration | 486 | 74.14
-| 2305 |[Fair Distribution of Cookies](src/main/java/g2301_2400/s2305_fair_distribution_of_cookies/Solution.java)| Medium | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 14 | 84.35
-| 2304 |[Minimum Path Cost in a Grid](src/main/java/g2301_2400/s2304_minimum_path_cost_in_a_grid/Solution.java)| Medium | Array, Dynamic_Programming, Matrix | 6 | 99.18
-| 2303 |[Calculate Amount Paid in Taxes](src/main/java/g2301_2400/s2303_calculate_amount_paid_in_taxes/Solution.java)| Easy | Array, Simulation | 1 | 92.41
-| 2302 |[Count Subarrays With Score Less Than K](src/main/java/g2301_2400/s2302_count_subarrays_with_score_less_than_k/Solution.java)| Hard | Array, Binary_Search, Prefix_Sum, Sliding_Window | 4 | 88.77
-| 2301 |[Match Substring After Replacement](src/main/java/g2301_2400/s2301_match_substring_after_replacement/Solution.java)| Hard | Array, String, Hash_Table, String_Matching | 205 | 94.20
+| 2401 |[Longest Nice Subarray](src/main/java/g2401_2500/s2401_longest_nice_subarray/Solution.java)| Medium | Array, Bit_Manipulation, Sliding_Window | 4 | 87.45
+| 2400 |[Number of Ways to Reach a Position After Exactly k Steps](src.save/main/java/g2301_2400/s2400_number_of_ways_to_reach_a_position_after_exactly_k_steps/Solution.java)| Medium | Dynamic_Programming, Math, Combinatorics | 1 | 99.66
+| 2399 |[Check Distances Between Same Letters](src.save/main/java/g2301_2400/s2399_check_distances_between_same_letters/Solution.java)| Easy | Array, String, Hash_Table | 1 | 99.88
+| 2398 |[Maximum Number of Robots Within Budget](src.save/main/java/g2301_2400/s2398_maximum_number_of_robots_within_budget/Solution.java)| Hard | Array, Binary_Search, Prefix_Sum, Sliding_Window, Queue, Heap_(Priority_Queue) | 15 | 99.75
+| 2397 |[Maximum Rows Covered by Columns](src.save/main/java/g2301_2400/s2397_maximum_rows_covered_by_columns/Solution.java)| Medium | Array, Matrix, Bit_Manipulation, Backtracking, Enumeration | 1 | 100.00
+| 2396 |[Strictly Palindromic Number](src.save/main/java/g2301_2400/s2396_strictly_palindromic_number/Solution.java)| Medium | Math, Two_Pointers, Brainteaser | 0 | 100.00
+| 2395 |[Find Subarrays With Equal Sum](src.save/main/java/g2301_2400/s2395_find_subarrays_with_equal_sum/Solution.java)| Easy | Array, Hash_Table | 0 | 100.00
+| 2392 |[Build a Matrix With Conditions](src.save/main/java/g2301_2400/s2392_build_a_matrix_with_conditions/Solution.java)| Hard | Array, Matrix, Graph, Topological_Sort | 9 | 97.22
+| 2391 |[Minimum Amount of Time to Collect Garbage](src.save/main/java/g2301_2400/s2391_minimum_amount_of_time_to_collect_garbage/Solution.java)| Medium | Array, String, Prefix_Sum | 7 | 98.86
+| 2390 |[Removing Stars From a String](src.save/main/java/g2301_2400/s2390_removing_stars_from_a_string/Solution.java)| Medium | String, Stack, Simulation | 31 | 90.55
+| 2389 |[Longest Subsequence With Limited Sum](src.save/main/java/g2301_2400/s2389_longest_subsequence_with_limited_sum/Solution.java)| Easy | Array, Sorting, Greedy, Binary_Search, Prefix_Sum | 4 | 99.97
+| 2386 |[Find the K-Sum of an Array](src.save/main/java/g2301_2400/s2386_find_the_k_sum_of_an_array/Solution.java)| Hard | Array, Sorting, Heap_Priority_Queue | 75 | 100.00
+| 2385 |[Amount of Time for Binary Tree to Be Infected](src.save/main/java/g2301_2400/s2385_amount_of_time_for_binary_tree_to_be_infected/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 20 | 100.00
+| 2384 |[Largest Palindromic Number](src.save/main/java/g2301_2400/s2384_largest_palindromic_number/Solution.java)| Medium | String, Hash_Table, Greedy | 26 | 100.00
+| 2383 |[Minimum Hours of Training to Win a Competition](src.save/main/java/g2301_2400/s2383_minimum_hours_of_training_to_win_a_competition/Solution.java)| Easy | Array, Greedy | 0 | 100.00
+| 2382 |[Maximum Segment Sum After Removals](src.save/main/java/g2301_2400/s2382_maximum_segment_sum_after_removals/Solution.java)| Hard | Array, Prefix_Sum, Union_Find, Ordered_Set | 28 | 100.00
+| 2381 |[Shifting Letters II](src.save/main/java/g2301_2400/s2381_shifting_letters_ii/Solution.java)| Medium | Array, String, Prefix_Sum | 10 | 75.00
+| 2380 |[Time Needed to Rearrange a Binary String](src.save/main/java/g2301_2400/s2380_time_needed_to_rearrange_a_binary_string/Solution.java)| Medium | String, Dynamic_Programming, Simulation | 3 | 70.00
+| 2379 |[Minimum Recolors to Get K Consecutive Black Blocks](src.save/main/java/g2301_2400/s2379_minimum_recolors_to_get_k_consecutive_black_blocks/Solution.java)| Easy | String, Sliding_Window | 1 | 80.00
+| 2376 |[Count Special Integers](src.save/main/java/g2301_2400/s2376_count_special_integers/Solution.java)| Hard | Dynamic_Programming, Math | 0 | 100.00
+| 2375 |[Construct Smallest Number From DI String](src.save/main/java/g2301_2400/s2375_construct_smallest_number_from_di_string/Solution.java)| Medium | String, Greedy, Stack, Backtracking | 0 | 100.00
+| 2374 |[Node With Highest Edge Score](src.save/main/java/g2301_2400/s2374_node_with_highest_edge_score/Solution.java)| Medium | Hash_Table, Graph | 4 | 97.68
+| 2373 |[Largest Local Values in a Matrix](src.save/main/java/g2301_2400/s2373_largest_local_values_in_a_matrix/Solution.java)| Easy | Array, Matrix | 2 | 99.97
+| 2370 |[Longest Ideal Subsequence](src.save/main/java/g2301_2400/s2370_longest_ideal_subsequence/Solution.java)| Medium | String, Hash_Table, Dynamic_Programming | 28 | 85.71
+| 2369 |[Check if There is a Valid Partition For The Array](src.save/main/java/g2301_2400/s2369_check_if_there_is_a_valid_partition_for_the_array/Solution.java)| Medium | Array, Dynamic_Programming | 7 | 81.82
+| 2368 |[Reachable Nodes With Restrictions](src.save/main/java/g2301_2400/s2368_reachable_nodes_with_restrictions/Solution.java)| Medium | Array, Hash_Table, Depth_First_Search, Breadth_First_Search, Tree, Graph | 59 | 85.71
+| 2367 |[Number of Arithmetic Triplets](src.save/main/java/g2301_2400/s2367_number_of_arithmetic_triplets/Solution.java)| Easy | Array, Hash_Table, Two_Pointers, Enumeration | 3 | 66.67
+| 2366 |[Minimum Replacements to Sort the Array](src.save/main/java/g2301_2400/s2366_minimum_replacements_to_sort_the_array/Solution.java)| Hard | Array, Math, Greedy | 10 | 28.57
+| 2365 |[Task Scheduler II](src.save/main/java/g2301_2400/s2365_task_scheduler_ii/Solution.java)| Medium | Array, Hash_Table, Simulation | 70 | 55.56
+| 2364 |[Count Number of Bad Pairs](src.save/main/java/g2301_2400/s2364_count_number_of_bad_pairs/Solution.java)| Medium | Array, Hash_Table | 44 | 80.00
+| 2363 |[Merge Similar Items](src.save/main/java/g2301_2400/s2363_merge_similar_items/Solution.java)| Easy | Array, Hash_Table, Sorting, Ordered_Set | 3 | 100.00
+| 2360 |[Longest Cycle in a Graph](src.save/main/java/g2301_2400/s2360_longest_cycle_in_a_graph/Solution.java)| Hard | Depth_First_Search, Graph, Topological_Sort | 37 | 90.19
+| 2359 |[Find Closest Node to Given Two Nodes](src.save/main/java/g2301_2400/s2359_find_closest_node_to_given_two_nodes/Solution.java)| Medium | Depth_First_Search, Graph | 18 | 89.33
+| 2358 |[Maximum Number of Groups Entering a Competition](src.save/main/java/g2301_2400/s2358_maximum_number_of_groups_entering_a_competition/Solution.java)| Medium | Array, Math, Greedy, Binary_Search | 0 | 100.00
+| 2357 |[Make Array Zero by Subtracting Equal Amounts](src.save/main/java/g2301_2400/s2357_make_array_zero_by_subtracting_equal_amounts/Solution.java)| Easy | Array, Hash_Table, Sorting, Heap_Priority_Queue, Simulation | 1 | 98.24
+| 2354 |[Number of Excellent Pairs](src.save/main/java/g2301_2400/s2354_number_of_excellent_pairs/Solution.java)| Hard | Array, Hash_Table, Binary_Search, Bit_Manipulation | 80 | 86.77
+| 2353 |[Design a Food Rating System](src.save/main/java/g2301_2400/s2353_design_a_food_rating_system/FoodRatings.java)| Medium | Hash_Table, Design, Heap_Priority_Queue, Ordered_Set | 364 | 83.35
+| 2352 |[Equal Row and Column Pairs](src.save/main/java/g2301_2400/s2352_equal_row_and_column_pairs/Solution.java)| Medium | Array, Hash_Table, Matrix, Simulation | 7 | 98.94
+| 2351 |[First Letter to Appear Twice](src.save/main/java/g2301_2400/s2351_first_letter_to_appear_twice/Solution.java)| Easy | String, Hash_Table, Counting | 0 | 100.00
+| 2350 |[Shortest Impossible Sequence of Rolls](src.save/main/java/g2301_2400/s2350_shortest_impossible_sequence_of_rolls/Solution.java)| Hard | Array, Hash_Table, Greedy | 12 | 87.73
+| 2349 |[Design a Number Container System](src.save/main/java/g2301_2400/s2349_design_a_number_container_system/NumberContainers.java)| Medium | Hash_Table, Design, Heap_Priority_Queue, Ordered_Set | 208 | 54.57
+| 2348 |[Number of Zero-Filled Subarrays](src.save/main/java/g2301_2400/s2348_number_of_zero_filled_subarrays/Solution.java)| Medium | Array, Math | 3 | 99.90
+| 2347 |[Best Poker Hand](src.save/main/java/g2301_2400/s2347_best_poker_hand/Solution.java)| Easy | Array, Hash_Table, Counting | 1 | 76.92
+| 2344 |[Minimum Deletions to Make Array Divisible](src.save/main/java/g2301_2400/s2344_minimum_deletions_to_make_array_divisible/Solution.java)| Hard | Array, Math, Sorting, Heap_Priority_Queue, Number_Theory | 13 | 88.89
+| 2343 |[Query Kth Smallest Trimmed Number](src.save/main/java/g2301_2400/s2343_query_kth_smallest_trimmed_number/Solution.java)| Medium | Array, String, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Quickselect, Radix_Sort | 52 | 75.00
+| 2342 |[Max Sum of a Pair With Equal Sum of Digits](src.save/main/java/g2301_2400/s2342_max_sum_of_a_pair_with_equal_sum_of_digits/Solution.java)| Medium | Array, Hash_Table, Sorting, Heap_Priority_Queue | 99 | 100.00
+| 2341 |[Maximum Number of Pairs in Array](src.save/main/java/g2301_2400/s2341_maximum_number_of_pairs_in_array/Solution.java)| Easy | Array, Hash_Table, Sorting | 2 | 80.00
+| 2338 |[Count the Number of Ideal Arrays](src.save/main/java/g2301_2400/s2338_count_the_number_of_ideal_arrays/Solution.java)| Hard | Dynamic_Programming, Math, Number_Theory, Combinatorics | 21 | 99.04
+| 2337 |[Move Pieces to Obtain a String](src.save/main/java/g2301_2400/s2337_move_pieces_to_obtain_a_string/Solution.java)| Medium | String, Two_Pointers | 23 | 82.39
+| 2336 |[Smallest Number in Infinite Set](src.save/main/java/g2301_2400/s2336_smallest_number_in_infinite_set/SmallestInfiniteSet.java)| Medium | Hash_Table, Design, Heap_Priority_Queue | 12 | 96.69
+| 2335 |[Minimum Amount of Time to Fill Cups](src.save/main/java/g2301_2400/s2335_minimum_amount_of_time_to_fill_cups/Solution.java)| Easy | Array, Greedy, Heap_Priority_Queue | 1 | 97.92
+| 2334 |[Subarray With Elements Greater Than Varying Threshold](src.save/main/java/g2301_2400/s2334_subarray_with_elements_greater_than_varying_threshold/Solution.java)| Hard | Array, Stack, Union_Find, Monotonic_Stack | 385 | 31.56
+| 2333 |[Minimum Sum of Squared Difference](src.save/main/java/g2301_2400/s2333_minimum_sum_of_squared_difference/Solution.java)| Medium | Array, Math, Sorting, Heap_Priority_Queue | 15 | 95.13
+| 2332 |[The Latest Time to Catch a Bus](src.save/main/java/g2301_2400/s2332_the_latest_time_to_catch_a_bus/Solution.java)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 28 | 100.00
+| 2331 |[Evaluate Boolean Binary Tree](src.save/main/java/g2301_2400/s2331_evaluate_boolean_binary_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Search | 0 | 100.00
+| 2328 |[Number of Increasing Paths in a Grid](src.save/main/java/g2301_2400/s2328_number_of_increasing_paths_in_a_grid/Solution.java)| Hard | Array, Dynamic_Programming, Depth_First_Search, Breadth_First_Search, Matrix, Graph, Memoization, Topological_Sort | 43 | 100.00
+| 2327 |[Number of People Aware of a Secret](src.save/main/java/g2301_2400/s2327_number_of_people_aware_of_a_secret/Solution.java)| Medium | Dynamic_Programming, Simulation, Queue | 7 | 80.00
+| 2326 |[Spiral Matrix IV](src.save/main/java/g2301_2400/s2326_spiral_matrix_iv/Solution.java)| Medium | Array, Matrix, Simulation, Linked_List | 12 | 85.48
+| 2325 |[Decode the Message](src.save/main/java/g2301_2400/s2325_decode_the_message/Solution.java)| Easy | String, Hash_Table | 7 | 42.86
+| 2322 |[Minimum Score After Removals on a Tree](src.save/main/java/g2301_2400/s2322_minimum_score_after_removals_on_a_tree/Solution.java)| Hard | Array, Depth_First_Search, Tree, Bit_Manipulation | 255 | 70.70
+| 2321 |[Maximum Score Of Spliced Array](src.save/main/java/g2301_2400/s2321_maximum_score_of_spliced_array/Solution.java)| Hard | Array, Dynamic_Programming | 3 | 99.68
+| 2320 |[Count Number of Ways to Place Houses](src.save/main/java/g2301_2400/s2320_count_number_of_ways_to_place_houses/Solution.java)| Medium | Dynamic_Programming | 13 | 82.46
+| 2319 |[Check if Matrix Is X-Matrix](src.save/main/java/g2301_2400/s2319_check_if_matrix_is_x_matrix/Solution.java)| Easy | Array, Matrix | 3 | 53.58
+| 2318 |[Number of Distinct Roll Sequences](src.save/main/java/g2301_2400/s2318_number_of_distinct_roll_sequences/Solution.java)| Hard | Dynamic_Programming, Memoization | 254 | 91.67
+| 2317 |[Maximum XOR After Operations](src.save/main/java/g2301_2400/s2317_maximum_xor_after_operations/Solution.java)| Medium | Array, Math, Bit_Manipulation | 1 | 100.00
+| 2316 |[Count Unreachable Pairs of Nodes in an Undirected Graph](src.save/main/java/g2301_2400/s2316_count_unreachable_pairs_of_nodes_in_an_undirected_graph/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 32 | 100.00
+| 2315 |[Count Asterisks](src.save/main/java/g2301_2400/s2315_count_asterisks/Solution.java)| Easy | String | 1 | 100.00
+| 2312 |[Selling Pieces of Wood](src.save/main/java/g2301_2400/s2312_selling_pieces_of_wood/Solution.java)| Hard | Backtracking | 78 | 63.64
+| 2311 |[Longest Binary Subsequence Less Than or Equal to K](src.save/main/java/g2301_2400/s2311_longest_binary_subsequence_less_than_or_equal_to_k/Solution.java)| Medium | String, Dynamic_Programming, Greedy, Memoization | 1 | 100.00
+| 2310 |[Sum of Numbers With Units Digit K](src.save/main/java/g2301_2400/s2310_sum_of_numbers_with_units_digit_k/Solution.java)| Medium | Math | 1 | 66.67
+| 2309 |[Greatest English Letter in Upper and Lower Case](src.save/main/java/g2301_2400/s2309_greatest_english_letter_in_upper_and_lower_case/Solution.java)| Easy | Array | 5 | 75.00
+| 2306 |[Naming a Company](src.save/main/java/g2301_2400/s2306_naming_a_company/Solution.java)| Hard | Array, String, Hash_Table, Bit_Manipulation, Enumeration | 486 | 74.14
+| 2305 |[Fair Distribution of Cookies](src.save/main/java/g2301_2400/s2305_fair_distribution_of_cookies/Solution.java)| Medium | Array, Dynamic_Programming, Bit_Manipulation, Backtracking, Bitmask | 14 | 84.35
+| 2304 |[Minimum Path Cost in a Grid](src.save/main/java/g2301_2400/s2304_minimum_path_cost_in_a_grid/Solution.java)| Medium | Array, Dynamic_Programming, Matrix | 6 | 99.18
+| 2303 |[Calculate Amount Paid in Taxes](src.save/main/java/g2301_2400/s2303_calculate_amount_paid_in_taxes/Solution.java)| Easy | Array, Simulation | 1 | 92.41
+| 2302 |[Count Subarrays With Score Less Than K](src.save/main/java/g2301_2400/s2302_count_subarrays_with_score_less_than_k/Solution.java)| Hard | Array, Binary_Search, Prefix_Sum, Sliding_Window | 4 | 88.77
+| 2301 |[Match Substring After Replacement](src.save/main/java/g2301_2400/s2301_match_substring_after_replacement/Solution.java)| Hard | Array, String, Hash_Table, String_Matching | 205 | 94.20
 | 2300 |[Successful Pairs of Spells and Potions](src.save/main/java/g2201_2300/s2300_successful_pairs_of_spells_and_potions/Solution.java)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 85 | 71.70
 | 2299 |[Strong Password Checker II](src.save/main/java/g2201_2300/s2299_strong_password_checker_ii/Solution.java)| Easy | String | 1 | 97.32
 | 2296 |[Design a Text Editor](src.save/main/java/g2201_2300/s2296_design_a_text_editor/TextEditor.java)| Hard | String, Stack, Design, Simulation, Linked_List, Doubly_Linked_List | 238 | 87.02
