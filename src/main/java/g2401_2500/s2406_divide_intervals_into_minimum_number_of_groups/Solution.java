@@ -6,12 +6,12 @@ package g2401_2500.s2406_divide_intervals_into_minimum_number_of_groups;
 public class Solution {
     public int minGroups(int[][] intervals) {
         int maxElement = 0;
-        for (int i[] : intervals) {
+        for (int[] i : intervals) {
             maxElement = Math.max(maxElement, i[0]);
             maxElement = Math.max(maxElement, i[1]);
         }
         long[] prefixSum = new long[maxElement + 2];
-        for (int i[] : intervals) {
+        for (int[] i : intervals) {
             prefixSum[i[0]] += 1;
             prefixSum[i[1] + 1] -= 1;
         }
