@@ -34,7 +34,6 @@ public class Solution {
                     continue;
                 }
                 while (left < right) {
-
                     int sum = nums[left] + nums[right] + half;
                     if (sum == target) {
                         ret.add(Arrays.asList(nums[left++], nums[right--], nums[i], nums[j]));
