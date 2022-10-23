@@ -1848,6 +1848,10 @@ implementation 'com.github.javadev:leetcode-in-java:1.14'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2406 |[Divide Intervals Into Minimum Number of Groups](src/main/java/g2401_2500/s2406_divide_intervals_into_minimum_number_of_groups/Solution.java)| Medium | Array, Sorting, Greedy, Two_Pointers, Prefix_Sum, Heap_Priority_Queue | 144 | 71.27
+| 2405 |[Optimal Partition of String](src/main/java/g2401_2500/s2405_optimal_partition_of_string/Solution.java)| Medium | String, Hash_Table, Greedy | 7 | 99.40
+| 2404 |[Most Frequent Even Element](src/main/java/g2401_2500/s2404_most_frequent_even_element/Solution.java)| Easy | Array, Hash_Table, Counting | 32 | 81.60
+| 2402 |[Meeting Rooms III](src/main/java/g2401_2500/s2402_meeting_rooms_iii/Solution.java)| Hard | Array, Sorting, Heap_Priority_Queue | 124 | 72.79
 | 2401 |[Longest Nice Subarray](src/main/java/g2401_2500/s2401_longest_nice_subarray/Solution.java)| Medium | Array, Bit_Manipulation, Sliding_Window | 4 | 87.45
 | 2400 |[Number of Ways to Reach a Position After Exactly k Steps](src.save/main/java/g2301_2400/s2400_number_of_ways_to_reach_a_position_after_exactly_k_steps/Solution.java)| Medium | Dynamic_Programming, Math, Combinatorics | 1 | 99.66
 | 2399 |[Check Distances Between Same Letters](src.save/main/java/g2301_2400/s2399_check_distances_between_same_letters/Solution.java)| Easy | Array, String, Hash_Table | 1 | 99.88
