@@ -1848,6 +1848,10 @@ implementation 'com.github.javadev:leetcode-in-java:1.14'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2411 |[Smallest Subarrays With Maximum Bitwise OR](src/main/java/g2401_2500/s2411_smallest_subarrays_with_maximum_bitwise_or/Solution.java)| |||
+| 2410 |[Maximum Matching of Players With Trainers](src/main/java/g2401_2500/s2410_maximum_matching_of_players_with_trainers/Solution.java)| Medium | Array, Sorting, Greedy, Two_Pointers | 28 | 98.31
+| 2409 |[Count Days Spent Together](src/main/java/g2401_2500/s2409_count_days_spent_together/Solution.java)| Easy | String, Math | 0 | 100.00
+| 2407 |[Longest Increasing Subsequence II](src/main/java/g2401_2500/s2407_longest_increasing_subsequence_ii/Solution.java)| Hard | Array, Dynamic_Programming, Divide_and_Conquer, Queue, Segment_Tree, Binary_Indexed_Tree, Monotonic_Queue | 24 | 99.21
 | 2406 |[Divide Intervals Into Minimum Number of Groups](src/main/java/g2401_2500/s2406_divide_intervals_into_minimum_number_of_groups/Solution.java)| Medium | Array, Sorting, Greedy, Two_Pointers, Prefix_Sum, Heap_Priority_Queue | 144 | 71.27
 | 2405 |[Optimal Partition of String](src/main/java/g2401_2500/s2405_optimal_partition_of_string/Solution.java)| Medium | String, Hash_Table, Greedy | 7 | 99.40
 | 2404 |[Most Frequent Even Element](src/main/java/g2401_2500/s2404_most_frequent_even_element/Solution.java)| Easy | Array, Hash_Table, Counting | 32 | 81.60
