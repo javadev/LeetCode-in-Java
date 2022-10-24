@@ -1848,7 +1848,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.14'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
-| 2411 |[Smallest Subarrays With Maximum Bitwise OR](src/main/java/g2401_2500/s2411_smallest_subarrays_with_maximum_bitwise_or/Solution.java)| |||
+| 2411 |[Smallest Subarrays With Maximum Bitwise OR](src/main/java/g2401_2500/s2411_smallest_subarrays_with_maximum_bitwise_or/Solution.java)| Medium | Array, Binary_Search, Bit_Manipulation, Sliding_Window | 31 | 95.05
 | 2410 |[Maximum Matching of Players With Trainers](src/main/java/g2401_2500/s2410_maximum_matching_of_players_with_trainers/Solution.java)| Medium | Array, Sorting, Greedy, Two_Pointers | 28 | 98.31
 | 2409 |[Count Days Spent Together](src/main/java/g2401_2500/s2409_count_days_spent_together/Solution.java)| Easy | String, Math | 0 | 100.00
 | 2407 |[Longest Increasing Subsequence II](src/main/java/g2401_2500/s2407_longest_increasing_subsequence_ii/Solution.java)| Hard | Array, Dynamic_Programming, Divide_and_Conquer, Queue, Segment_Tree, Binary_Indexed_Tree, Monotonic_Queue | 24 | 99.21
