@@ -44,7 +44,9 @@ public class Solution {
 
     public int lengthOfLIS(int[] nums, int k) {
         int max = 0;
-        for (int n : nums) max = Math.max(max, n);
+        for (int n : nums) {
+            max = Math.max(max, n);
+        }
         SegTree seg = new SegTree(max);
         int ans = 0;
         for (int n : nums) {
