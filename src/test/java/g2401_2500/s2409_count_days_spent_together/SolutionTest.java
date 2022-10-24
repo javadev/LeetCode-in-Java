@@ -29,4 +29,10 @@ class SolutionTest {
         assertThat(
                 new Solution().countDaysTogether("08-06", "12-08", "02-04", "09-01"), equalTo(27));
     }
+
+    @Test
+    void countDaysTogether5() {
+        assertThat(
+                new Solution().countDaysTogether("03-05", "07-14", "04-14", "09-21"), equalTo(92));
+    }
 }
