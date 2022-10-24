@@ -17,4 +17,16 @@ class SolutionTest {
         assertThat(
                 new Solution().countDaysTogether("10-01", "10-31", "11-01", "12-31"), equalTo(0));
     }
+
+    @Test
+    void countDaysTogether3() {
+        assertThat(
+                new Solution().countDaysTogether("09-01", "10-19", "06-19", "10-20"), equalTo(49));
+    }
+
+    @Test
+    void countDaysTogether4() {
+        assertThat(
+                new Solution().countDaysTogether("08-06", "12-08", "02-04", "09-01"), equalTo(27));
+    }
 }
