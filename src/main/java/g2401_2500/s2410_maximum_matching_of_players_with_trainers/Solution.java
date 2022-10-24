@@ -5,11 +5,13 @@ package g2401_2500.s2410_maximum_matching_of_players_with_trainers;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int matchPlayersAndTrainers(int[] players, int[] trainers) {
         Arrays.sort(players);
         Arrays.sort(trainers);
-        int i = 0, j = 0;
+        int i = 0;
+        int j = 0;
         int count = 0;
         i = 0;
         while (i < players.length) {

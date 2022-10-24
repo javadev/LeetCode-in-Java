@@ -50,7 +50,7 @@ public class Solution {
         SegTree seg = new SegTree(max);
         int ans = 0;
         for (int n : nums) {
-            n = n -= 1;
+            n -= 1;
             int temp = seg.query(Math.max(0, n - k), n) + 1;
             ans = Math.max(ans, temp);
             seg.update(n, temp);
