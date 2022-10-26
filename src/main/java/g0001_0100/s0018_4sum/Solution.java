@@ -25,7 +25,8 @@ public class Solution {
                 if (j != i + 1 && nums[j] == nums[j - 1]) {
                     continue;
                 }
-                int left = j + 1, right = nums.length - 1;
+                int left = j + 1;
+                int right = nums.length - 1;
                 int half = nums[i] + nums[j];
                 if (half + nums[left] + nums[left + 1] > target) {
                     continue;
