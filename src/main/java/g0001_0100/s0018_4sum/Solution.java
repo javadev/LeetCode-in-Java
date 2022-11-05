@@ -10,7 +10,7 @@ import java.util.List;
 public class Solution {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> ret = new ArrayList<>();
-        if (nums == null && nums.length < 4) {
+        if (nums.length < 4) {
             return ret;
         }
         if (nums[0] == 1000000000 && nums[1] == 1000000000) {
