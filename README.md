@@ -3509,7 +3509,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.15'
 | 0279 |[Perfect Squares](src.save/main/java/g0201_0300/s0279_perfect_squares/Solution.java)| Medium | Top_Interview_Questions, Dynamic_Programming, Math, Breadth_First_Search, Dynamic_Programming_I_Day_21 | 1 | 100.00
 | 0278 |[First Bad Version](src.save/main/java/g0201_0300/s0278_first_bad_version/Solution.java)| Easy | Binary_Search, Interactive, Algorithm_I_Day_1_Binary_Search, Binary_Search_I_Day_5, Level_1_Day_7_Binary_Search | 15 | 87.89
 | 0275 |[H-Index II](src.save/main/java/g0201_0300/s0275_h_index_ii/Solution.java)| Medium | Array, Binary_Search, Binary_Search_II_Day_8 | 0 | 100.00
-| 0274 |[H-Index](src.save/main/java/g0201_0300/s0274_h_index/Solution.java)| Medium | Array, Sorting, Counting_Sort | 3 | 45.78
+| 0274 |[H-Index](src.save/main/java/g0201_0300/s0274_h_index/Solution.java)| Medium | Array, Sorting, Counting_Sort | 0 | 100.00
 | 0273 |[Integer to English Words](src.save/main/java/g0201_0300/s0273_integer_to_english_words/Solution.java)| Hard | String, Math, Recursion, Udemy_Strings | 3 | 95.67
 | 0268 |[Missing Number](src.save/main/java/g0201_0300/s0268_missing_number/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Math, Sorting, Binary_Search, Bit_Manipulation | 1 | 72.07
 | 0264 |[Ugly Number II](src.save/main/java/g0201_0300/s0264_ugly_number_ii/Solution.java)| Medium | Hash_Table, Dynamic_Programming, Math, Heap_Priority_Queue, Dynamic_Programming_I_Day_11 | 2 | 99.91
