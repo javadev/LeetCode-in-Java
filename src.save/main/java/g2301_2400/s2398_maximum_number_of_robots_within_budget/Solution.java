@@ -1,6 +1,6 @@
 package g2301_2400.s2398_maximum_number_of_robots_within_budget;
 
-// #Hard #Array #Binary_Search #Prefix_Sum #Sliding_Window #Queue #Heap_(Priority_Queue)
+// #Hard #Array #Binary_Search #Heap_Priority_Queue #Prefix_Sum #Sliding_Window #Queue
 // #2022_09_19_Time_15_ms_(99.75%)_Space_105.9_MB_(85.13%)
 
 public class Solution {

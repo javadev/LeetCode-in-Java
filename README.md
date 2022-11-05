@@ -1852,14 +1852,14 @@ implementation 'com.github.javadev:leetcode-in-java:1.15'
 | 2410 |[Maximum Matching of Players With Trainers](src/main/java/g2401_2500/s2410_maximum_matching_of_players_with_trainers/Solution.java)| Medium | Array, Sorting, Greedy, Two_Pointers | 28 | 98.31
 | 2409 |[Count Days Spent Together](src/main/java/g2401_2500/s2409_count_days_spent_together/Solution.java)| Easy | String, Math | 0 | 100.00
 | 2407 |[Longest Increasing Subsequence II](src/main/java/g2401_2500/s2407_longest_increasing_subsequence_ii/Solution.java)| Hard | Array, Dynamic_Programming, Divide_and_Conquer, Queue, Segment_Tree, Binary_Indexed_Tree, Monotonic_Queue | 24 | 99.21
-| 2406 |[Divide Intervals Into Minimum Number of Groups](src/main/java/g2401_2500/s2406_divide_intervals_into_minimum_number_of_groups/Solution.java)| Medium | Array, Sorting, Greedy, Two_Pointers, Prefix_Sum, Heap_Priority_Queue | 144 | 71.27
+| 2406 |[Divide Intervals Into Minimum Number of Groups](src/main/java/g2401_2500/s2406_divide_intervals_into_minimum_number_of_groups/Solution.java)| Medium | Array, Sorting, Greedy, Two_Pointers, Heap_Priority_Queue, Prefix_Sum | 144 | 71.27
 | 2405 |[Optimal Partition of String](src/main/java/g2401_2500/s2405_optimal_partition_of_string/Solution.java)| Medium | String, Hash_Table, Greedy | 7 | 99.40
 | 2404 |[Most Frequent Even Element](src/main/java/g2401_2500/s2404_most_frequent_even_element/Solution.java)| Easy | Array, Hash_Table, Counting | 32 | 81.60
 | 2402 |[Meeting Rooms III](src/main/java/g2401_2500/s2402_meeting_rooms_iii/Solution.java)| Hard | Array, Sorting, Heap_Priority_Queue | 124 | 72.79
 | 2401 |[Longest Nice Subarray](src/main/java/g2401_2500/s2401_longest_nice_subarray/Solution.java)| Medium | Array, Bit_Manipulation, Sliding_Window | 4 | 87.45
 | 2400 |[Number of Ways to Reach a Position After Exactly k Steps](src.save/main/java/g2301_2400/s2400_number_of_ways_to_reach_a_position_after_exactly_k_steps/Solution.java)| Medium | Dynamic_Programming, Math, Combinatorics | 1 | 99.66
 | 2399 |[Check Distances Between Same Letters](src.save/main/java/g2301_2400/s2399_check_distances_between_same_letters/Solution.java)| Easy | Array, String, Hash_Table | 1 | 99.88
-| 2398 |[Maximum Number of Robots Within Budget](src.save/main/java/g2301_2400/s2398_maximum_number_of_robots_within_budget/Solution.java)| Hard | Array, Binary_Search, Prefix_Sum, Sliding_Window, Queue, Heap_(Priority_Queue) | 15 | 99.75
+| 2398 |[Maximum Number of Robots Within Budget](src.save/main/java/g2301_2400/s2398_maximum_number_of_robots_within_budget/Solution.java)| Hard | Array, Binary_Search, Heap_Priority_Queue, Prefix_Sum, Sliding_Window, Queue | 15 | 99.75
 | 2397 |[Maximum Rows Covered by Columns](src.save/main/java/g2301_2400/s2397_maximum_rows_covered_by_columns/Solution.java)| Medium | Array, Matrix, Bit_Manipulation, Backtracking, Enumeration | 1 | 100.00
 | 2396 |[Strictly Palindromic Number](src.save/main/java/g2301_2400/s2396_strictly_palindromic_number/Solution.java)| Medium | Math, Two_Pointers, Brainteaser | 0 | 100.00
 | 2395 |[Find Subarrays With Equal Sum](src.save/main/java/g2301_2400/s2395_find_subarrays_with_equal_sum/Solution.java)| Easy | Array, Hash_Table | 0 | 100.00

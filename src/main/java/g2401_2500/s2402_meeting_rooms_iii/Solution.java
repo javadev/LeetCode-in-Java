@@ -1,7 +1,6 @@
 package g2401_2500.s2402_meeting_rooms_iii;
 
-// #Hard #Array #Sorting #Heap_Priority_Queue
-// #2022_10_23_Time_124_ms_(72.79%)_Space_107_MB_(80.70%)
+// #Hard #Array #Sorting #Heap_Priority_Queue #2022_10_23_Time_124_ms_(72.79%)_Space_107_MB_(80.70%)
 
 import java.util.Arrays;
 
