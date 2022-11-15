@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void smallestEvenMultiple() {
+        assertThat(new Solution().smallestEvenMultiple(0), equalTo(0));
     }
 }

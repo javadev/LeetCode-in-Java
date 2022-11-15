@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void longestContinuousSubstring() {
+        assertThat(new Solution().longestContinuousSubstring(""), equalTo(1));
     }
 }

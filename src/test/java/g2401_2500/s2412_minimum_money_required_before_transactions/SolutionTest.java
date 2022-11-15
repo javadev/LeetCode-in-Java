@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void minimumMoney() {
+        assertThat(new Solution().minimumMoney(new int[][] {}), equalTo(0L));
     }
 }

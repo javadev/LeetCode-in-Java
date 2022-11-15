@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void sumPrefixScores() {
+        assertThat(new Solution().sumPrefixScores(new String[] {}), equalTo(new int[] {}));
     }
 }
