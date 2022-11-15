@@ -5,12 +5,10 @@ package g2401_2500.s2416_sum_of_prefix_scores_of_strings;
 public class Solution {
     private Solution[] child;
     private int ct;
-    private boolean isEnd;
 
     public Solution() {
         child = new Solution[26];
         ct = 0;
-        isEnd = false;
     }
 
     public int[] sumPrefixScores(String[] words) {
@@ -35,21 +33,20 @@ public class Solution {
             cur.child[id].ct++;
             cur = cur.child[id];
         }
-        cur.isEnd = true;
     }
 
     private int countPre(String word) {
         Solution cur = this;
-        int ct = 0;
+        int localCt = 0;
         for (int i = 0; i < word.length(); i++) {
             int id = word.charAt(i) - 'a';
             if (cur.child[id] == null) {
-                return ct;
+                return localCt;
             }
-            ct += cur.ct;
+            localCt += cur.ct;
             cur = cur.child[id];
         }
-        ct += cur.ct;
-        return ct;
+        localCt += cur.ct;
+        return localCt;
     }
 }

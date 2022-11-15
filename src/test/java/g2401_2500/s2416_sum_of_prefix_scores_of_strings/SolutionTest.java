@@ -8,6 +8,13 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void sumPrefixScores() {
-        assertThat(new Solution().sumPrefixScores(new String[] {}), equalTo(new int[] {}));
+        assertThat(
+                new Solution().sumPrefixScores(new String[] {"abc", "ab", "bc", "b"}),
+                equalTo(new int[] {5, 4, 3, 2}));
+    }
+
+    @Test
+    void sumPrefixScores2() {
+        assertThat(new Solution().sumPrefixScores(new String[] {"abcd"}), equalTo(new int[] {4}));
     }
 }

@@ -8,6 +8,11 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void smallestEvenMultiple() {
-        assertThat(new Solution().smallestEvenMultiple(0), equalTo(0));
+        assertThat(new Solution().smallestEvenMultiple(5), equalTo(10));
+    }
+
+    @Test
+    void smallestEvenMultiple2() {
+        assertThat(new Solution().smallestEvenMultiple(6), equalTo(6));
     }
 }

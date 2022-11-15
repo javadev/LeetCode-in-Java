@@ -8,6 +8,11 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void longestContinuousSubstring() {
-        assertThat(new Solution().longestContinuousSubstring(""), equalTo(1));
+        assertThat(new Solution().longestContinuousSubstring("abacaba"), equalTo(2));
+    }
+
+    @Test
+    void longestContinuousSubstring2() {
+        assertThat(new Solution().longestContinuousSubstring("abcde"), equalTo(5));
     }
 }

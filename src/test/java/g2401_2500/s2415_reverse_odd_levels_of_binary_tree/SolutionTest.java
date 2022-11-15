@@ -11,7 +11,18 @@ class SolutionTest {
     @Test
     void reverseOddLevels() {
         assertThat(
-                new Solution().reverseOddLevels(TreeNode.create(Arrays.asList(1))).toString(),
-                equalTo("1"));
+                new Solution()
+                        .reverseOddLevels(TreeNode.create(Arrays.asList(2, 3, 5, 8, 13, 21, 34)))
+                        .toString(),
+                equalTo("2,5,8,13,3,21,34"));
+    }
+
+    @Test
+    void reverseOddLevels2() {
+        assertThat(
+                new Solution()
+                        .reverseOddLevels(TreeNode.create(Arrays.asList(7, 13, 11)))
+                        .toString(),
+                equalTo("7,11,13"));
     }
 }
