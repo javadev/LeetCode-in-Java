@@ -7,7 +7,20 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void sortPeople() {
+        assertThat(
+                new Solution()
+                        .sortPeople(
+                                new String[] {"Mary", "John", "Emma"}, new int[] {180, 165, 170}),
+                equalTo(new String[] {"Mary", "Emma", "John"}));
+    }
+
+    @Test
+    void sortPeople2() {
+        assertThat(
+                new Solution()
+                        .sortPeople(
+                                new String[] {"Alice", "Bob", "Bob"}, new int[] {155, 185, 150}),
+                equalTo(new String[] {"Bob", "Alice", "Bob"}));
     }
 }

@@ -7,7 +7,12 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void equalFrequency() {
+        assertThat(new Solution().equalFrequency("abcc"), equalTo(true));
+    }
+
+    @Test
+    void equalFrequency2() {
+        assertThat(new Solution().equalFrequency("aazz"), equalTo(false));
     }
 }

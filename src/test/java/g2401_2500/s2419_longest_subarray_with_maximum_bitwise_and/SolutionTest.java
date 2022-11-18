@@ -7,7 +7,12 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void longestSubarray() {
+        assertThat(new Solution().longestSubarray(new int[] {1, 2, 3, 3, 2, 2}), equalTo(2));
+    }
+
+    @Test
+    void longestSubarray2() {
+        assertThat(new Solution().longestSubarray(new int[] {1, 2, 3, 4}), equalTo(1));
     }
 }

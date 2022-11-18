@@ -5,9 +5,19 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void goodIndices() {
+        assertThat(
+                new Solution().goodIndices(new int[] {2, 1, 1, 1, 3, 4, 1}, 2),
+                equalTo(Arrays.asList(2, 3)));
+    }
+
+    @Test
+    void goodIndices2() {
+        assertThat(new Solution().goodIndices(new int[] {2, 1, 1, 2}, 2), equalTo(Collections.emptyList()));
     }
 }

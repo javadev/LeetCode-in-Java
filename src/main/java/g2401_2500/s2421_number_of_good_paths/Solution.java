@@ -1,7 +1,45 @@
 package g2401_2500.s2421_number_of_good_paths;
 
+// #Hard #Array #Tree #Graph #Union_Find #2022_11_18_Time_31_ms_(99.43%)_Space_62.2_MB_(94.18%)
+
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class Solution {
-    public String decode(String value) {
-        return value;
+    public int numberOfGoodPaths(int[] vals, int[][] edges) {
+        int n = vals.length;
+        int[] parent = new int[n];
+        int[] max_element = new int[n];
+        int[] count = new int[n];
+        for (int i = 0; i < n; i++) {
+            parent[i] = i;
+            max_element[i] = vals[i];
+            count[i] = 1;
+        }
+        Arrays.sort(edges, Comparator.comparingInt(a -> Math.max(vals[a[0]], vals[a[1]])));
+        int ans = n;
+        for (int[] it : edges) {
+            int a = findParent(parent, it[0]);
+            int b = findParent(parent, it[1]);
+            if (max_element[a] != max_element[b]) {
+                if (max_element[a] > max_element[b]) {
+                    parent[b] = a;
+                } else {
+                    parent[a] = b;
+                }
+            } else {
+                parent[b] = a;
+                ans += count[a] * count[b];
+                count[a] += count[b];
+            }
+        }
+        return ans;
+    }
+
+    private int findParent(int[] parent, int a) {
+        if (a == parent[a]) {
+            return a;
+        }
+        return parent[a] = findParent(parent, parent[a]);
     }
 }
