@@ -7,9 +7,11 @@ public class Solution {
     public int longestSubarray(int[] nums) {
         int maxVal = 0;
         int res = 0;
-        for (int i = 0; i < nums.length; i++) {
+        int i = 0;
+        while (i < nums.length) {
             int n = nums[i];
             if (n < maxVal) {
+                i++;
                 continue;
             }
             if (n > maxVal) {
@@ -22,6 +24,7 @@ public class Solution {
             }
             res = Math.max(res, j - i);
             i = j - 1;
+            i++;
         }
         return res;
     }

@@ -40,6 +40,7 @@ public class Solution {
         if (a == parent[a]) {
             return a;
         }
-        return parent[a] = findParent(parent, parent[a]);
+        parent[a] = findParent(parent, parent[a]);
+        return parent[a];
     }
 }
