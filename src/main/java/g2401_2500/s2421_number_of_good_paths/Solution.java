@@ -9,11 +9,11 @@ public class Solution {
     public int numberOfGoodPaths(int[] vals, int[][] edges) {
         int n = vals.length;
         int[] parent = new int[n];
-        int[] max_element = new int[n];
+        int[] maxElement = new int[n];
         int[] count = new int[n];
         for (int i = 0; i < n; i++) {
             parent[i] = i;
-            max_element[i] = vals[i];
+            maxElement[i] = vals[i];
             count[i] = 1;
         }
         Arrays.sort(edges, Comparator.comparingInt(a -> Math.max(vals[a[0]], vals[a[1]])));
@@ -21,8 +21,8 @@ public class Solution {
         for (int[] it : edges) {
             int a = findParent(parent, it[0]);
             int b = findParent(parent, it[1]);
-            if (max_element[a] != max_element[b]) {
-                if (max_element[a] > max_element[b]) {
+            if (maxElement[a] != maxElement[b]) {
+                if (maxElement[a] > maxElement[b]) {
                     parent[b] = a;
                 } else {
                     parent[a] = b;
