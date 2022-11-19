@@ -7,7 +7,16 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void numberOfPairs() {
+        assertThat(
+                new Solution().numberOfPairs(new int[] {3, 2, 5}, new int[] {2, 2, 1}, 1),
+                equalTo(3L));
+    }
+
+    @Test
+    void numberOfPairs2() {
+        assertThat(
+                new Solution().numberOfPairs(new int[] {3, -1}, new int[] {-2, 2}, -1),
+                equalTo(0L));
     }
 }
