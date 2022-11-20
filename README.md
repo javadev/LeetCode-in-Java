@@ -1858,7 +1858,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.15'
 | 2418 |[Sort the People](src/main/java/g2401_2500/s2418_sort_the_people/Solution.java)| Easy | Array, String, Hash_Table, Sorting | 3 | 99.81
 | 2416 |[Sum of Prefix Scores of Strings](src/main/java/g2401_2500/s2416_sum_of_prefix_scores_of_strings/Solution.java)| Hard | Array, String, Counting, Trie | 179 | 94.98
 | 2415 |[Reverse Odd Levels of Binary Tree](src/main/java/g2401_2500/s2415_reverse_odd_levels_of_binary_tree/Solution.java)| Medium | Tree, Binary_Tree, Depth_First_Search, Breadth_First_Search | 12 | 64.14
-| 2414 |[Length of the Longest Alphabetical Continuous Substring](src/main/java/g2401_2500/s2414_length_of_the_longest_alphabetical_continuous_substring/Solution.java)| Medium | String | 28 | 36.44
+| 2414 |[Length of the Longest Alphabetical Continuous Substring](src/main/java/g2401_2500/s2414_length_of_the_longest_alphabetical_continuous_substring/Solution.java)| Medium | String | 19 | 74.13
 | 2413 |[Smallest Even Multiple](src/main/java/g2401_2500/s2413_smallest_even_multiple/Solution.java)| Easy | Math, Number_Theory | 0 | 100.00
 | 2412 |[Minimum Money Required Before Transactions](src/main/java/g2401_2500/s2412_minimum_money_required_before_transactions/Solution.java)| Hard | Array, Sorting, Greedy | 4 | 97.57
 | 2411 |[Smallest Subarrays With Maximum Bitwise OR](src/main/java/g2401_2500/s2411_smallest_subarrays_with_maximum_bitwise_or/Solution.java)| Medium | Array, Binary_Search, Bit_Manipulation, Sliding_Window | 31 | 95.05
