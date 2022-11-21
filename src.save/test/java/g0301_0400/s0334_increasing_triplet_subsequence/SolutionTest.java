@@ -10,4 +10,14 @@ class SolutionTest {
     void increasingTriplet() {
         assertThat(new Solution().increasingTriplet(new int[] {1, 2, 3, 4, 5}), equalTo(true));
     }
+
+    @Test
+    void increasingTriplet2() {
+        assertThat(new Solution().increasingTriplet(new int[] {5, 4, 3, 2, 1}), equalTo(false));
+    }
+
+    @Test
+    void increasingTriplet3() {
+        assertThat(new Solution().increasingTriplet(new int[] {2, 1, 5, 0, 4, 6}), equalTo(true));
+    }
 }
