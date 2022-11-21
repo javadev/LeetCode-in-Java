@@ -20,4 +20,18 @@ class SolutionTest {
                 new Solution().findItinerary(input),
                 equalTo(Arrays.asList("JFK", "MUC", "LHR", "SFO", "SJC")));
     }
+
+    @Test
+    void findItinerary2() {
+        List<List<String>> input =
+                Arrays.asList(
+                        Arrays.asList("JFK", "SFO"),
+                        Arrays.asList("JFK", "ATL"),
+                        Arrays.asList("SFO", "ATL"),
+                        Arrays.asList("ATL", "JFK"),
+                        Arrays.asList("ATL", "SFO"));
+        assertThat(
+                new Solution().findItinerary(input),
+                equalTo(Arrays.asList("JFK", "ATL", "JFK", "SFO", "ATL", "SFO")));
+    }
 }
