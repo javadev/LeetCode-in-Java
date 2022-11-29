@@ -39,5 +39,6 @@ class SolutionTest {
         expected.next.next.next.next = new ListNode(1);
         expected.next.next.next.next.next = new ListNode(5);
         expected.next.next.next.next.next.next = new ListNode(4);
-        assertThat(new Solution().oddEvenList(node).toString(), equalTo(expected.toString()))
+        assertThat(new Solution().oddEvenList(node).toString(), equalTo(expected.toString()));
+    }
 }
