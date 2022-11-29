@@ -9,10 +9,10 @@ public class Solution {
         for (int citation : citations) {
             freqArray[Math.min(citation, len)]++;
         }
-        int total_so_far = 0;
+        int totalSoFar = 0;
         for (int k = len; k >= 0; k--) {
-            total_so_far += freqArray[k];
-            if (total_so_far >= k) {
+            totalSoFar += freqArray[k];
+            if (totalSoFar >= k) {
                 return k;
             }
         }
