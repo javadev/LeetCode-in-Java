@@ -1,6 +1,6 @@
 package g2401_2500.s2415_reverse_odd_levels_of_binary_tree;
 
-// #Medium #Tree #Binary_Tree #Depth_First_Search #Breadth_First_Search
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
 // #2022_11_15_Time_12_ms_(64.14%)_Space_49.7_MB_(87.20%)
 
 import com_github_leetcode.TreeNode;
