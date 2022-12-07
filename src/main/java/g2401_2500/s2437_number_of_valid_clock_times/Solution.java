@@ -7,15 +7,12 @@ public class Solution {
         int[] counts = new int[] {3, 10, 0, 6, 10};
         char[] ch = time.toCharArray();
         int result = 1;
-
         if (ch[0] == '2') {
             counts[1] = 4;
         }
-
         if ((ch[1] - '0') > 3) {
             counts[0] = 2;
         }
-
         if (ch[0] == '?' && ch[1] == '?') {
             counts[0] = 1;
             counts[1] = 24;
