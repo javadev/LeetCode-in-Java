@@ -6,7 +6,6 @@ public class Solution {
     public int maxSum(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
-
         int res = 0;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -19,7 +18,6 @@ public class Solution {
                 }
             }
         }
-
         return res;
     }
 
@@ -31,7 +29,6 @@ public class Solution {
     // Once we know an hourglass can be formed, just traverse the value
     private int calculate(int r, int c, int[][] grid) {
         int sum = 0;
-
         // Traverse the bottom and the top row of the hour glass at the same time
         for (int i = c; i <= c + 2; i++) {
             sum += grid[r][i];
@@ -39,7 +36,6 @@ public class Solution {
         }
         // Add the middle vlaue
         sum += grid[r + 1][c + 1];
-
         return sum;
     }
 }
