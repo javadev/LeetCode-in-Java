@@ -4,7 +4,6 @@ package g2401_2500.s2432_the_employee_that_worked_on_the_longest_task;
 
 public class Solution {
     public int hardestWorker(int[][] logs) {
-        int result;
         int i;
         int max;
         int tid;
@@ -23,7 +22,6 @@ public class Solution {
                 tid = logs[i][0];
             }
         }
-        result = tid;
-        return result;
+        return tid;
     }
 }
