@@ -1848,6 +1848,16 @@ implementation 'com.github.javadev:leetcode-in-java:1.16'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2438 |[Range Product Queries of Powers](src/main/java/g2401_2500/s2438_range_product_queries_of_powers/Solution.java)| Medium | Array, Bit_Manipulation, Prefix_Sum | 73 | 65.07
+| 2437 |[Number of Valid Clock Times](src/main/java/g2401_2500/s2437_number_of_valid_clock_times/Solution.java)| Easy | String, Enumeration | 0 | 100.00
+| 2435 |[Paths in Matrix Whose Sum Is Divisible by K](src/main/java/g2401_2500/s2435_paths_in_matrix_whose_sum_is_divisible_by_k/Solution.java)| Hard | Array, Dynamic_Programming, Matrix | 70 | 99.20
+| 2434 |[Using a Robot to Print the Lexicographically Smallest String](src/main/java/g2401_2500/s2434_using_a_robot_to_print_the_lexicographically_smallest_string/Solution.java)| Medium | String, Hash_Table, Greedy, Stack | 32 | 99.61
+| 2433 |[Find The Original Array of Prefix Xor](src/main/java/g2401_2500/s2433_find_the_original_array_of_prefix_xor/Solution.java)| Medium | Array, Bit_Manipulation | 2 | 96.00
+| 2432 |[The Employee That Worked on the Longest Task](src/main/java/g2401_2500/s2432_the_employee_that_worked_on_the_longest_task/Solution.java)| Easy | Array | 2 | 74.60
+| 2430 |[Maximum Deletions on a String](src/main/java/g2401_2500/s2430_maximum_deletions_on_a_string/Solution.java)| Hard | String, Dynamic_Programming, Hash_Function, String_Matching, Rolling_Hash | 159 | 93.39
+| 2429 |[Minimize XOR](src/main/java/g2401_2500/s2429_minimize_xor/Solution.java)| Medium | Greedy, Bit_Manipulation | 0 | 100.00
+| 2428 |[Maximum Sum of an Hourglass](src/main/java/g2401_2500/s2428_maximum_sum_of_an_hourglass/Solution.java)| Medium | Array, Matrix, Prefix_Sum | 4 | 93.51
+| 2427 |[Number of Common Factors](src/main/java/g2401_2500/s2427_number_of_common_factors/Solution.java)| Easy | Math, Enumeration, Number_Theory | 1 | 81.93
 | 2426 |[Number of Pairs Satisfying Inequality](src/main/java/g2401_2500/s2426_number_of_pairs_satisfying_inequality/Solution.java)| Hard | Array, Binary_Search, Ordered_Set, Divide_and_Conquer, Segment_Tree, Binary_Indexed_Tree, Merge_Sort | 12 | 99.69
 | 2425 |[Bitwise XOR of All Pairings](src/main/java/g2401_2500/s2425_bitwise_xor_of_all_pairings/Solution.java)| Medium | Array, Bit_Manipulation, Brainteaser | 5 | 38.15
 | 2424 |[Longest Uploaded Prefix](src/main/java/g2401_2500/s2424_longest_uploaded_prefix/LUPrefix.java)| Medium | Binary_Search, Design, Union_Find, Ordered_Set, Segment_Tree, Binary_Indexed_Tree, Heap_(Priority_Queue) | 35 | 99.68
