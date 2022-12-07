@@ -51,12 +51,14 @@ public class Solution {
         pows[0] = 1;
         hash[1] = s.charAt(0);
         for (int i = 1; i != n; i++) {
-            hash[i + 1] = (int) s.charAt(i) * (pows[i] = pows[i - 1] * 1000000007) + hash[i];
+            int temp = pows[i] = pows[i - 1] * 1000000007;
+            hash[i + 1] = s.charAt(i) * temp + hash[i];
         }
     }
 
     private boolean isBad() {
-        for (int i = 1; i < s.length(); ) {
+        int i = 1;
+        while (i < s.length()) {
             if (s.charAt(0) != s.charAt(i++)) {
                 return false;
             }
