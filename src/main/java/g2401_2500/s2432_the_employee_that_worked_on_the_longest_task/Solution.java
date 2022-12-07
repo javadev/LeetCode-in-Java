@@ -9,7 +9,6 @@ public class Solution {
         int max;
         int tid;
         int temp;
-
         max = 0;
         tid = Integer.MAX_VALUE;
         for (i = 0; i < logs.length; i++) {
@@ -17,7 +16,6 @@ public class Solution {
             if (i > 0) {
                 temp -= logs[i - 1][1];
             }
-
             if (temp > max) {
                 max = temp;
                 tid = logs[i][0];
@@ -26,7 +24,6 @@ public class Solution {
             }
         }
         result = tid;
-
         return result;
     }
 }
