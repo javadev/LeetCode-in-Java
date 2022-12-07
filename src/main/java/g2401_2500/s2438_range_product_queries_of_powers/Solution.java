@@ -9,7 +9,7 @@ import java.util.List;
 public class Solution {
     public int[] productQueries(int n, int[][] queries) {
         int length = queries.length;
-        final long MOD = (long) (1e9 + 7);
+        final long mod = (long) (1e9 + 7);
         // convert n to binary form
         // take the set bit and find the corresponding 2^i
         // now answer for the query
@@ -24,9 +24,9 @@ public class Solution {
             int right = query[1];
             long product = 1;
             for (int i = left; i <= right; i++) {
-                product = (product * productTakingPowers.get(i)) % MOD;
+                product = (product * productTakingPowers.get(i)) % mod;
             }
-            result[index++] = (int) (product % MOD);
+            result[index++] = (int) (product % mod);
         }
         return result;
     }
