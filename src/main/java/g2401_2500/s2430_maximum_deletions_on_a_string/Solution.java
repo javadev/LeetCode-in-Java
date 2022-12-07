@@ -29,7 +29,7 @@ public class Solution {
             return visited.get(mask);
         }
 
-        for (; b < s.length(); a++, id2++, b += 2)
+        for (; b < s.length(); a++, id2++, b += 2) {
             if ((hash[a + 1] - hash[id1]) * pows[id2] == (hash[b + 1] - hash[id2]) * pows[id1]) {
                 if (id2 + 1 == s.length()) {
                     ans = Math.max(ans, 2);
@@ -37,6 +37,7 @@ public class Solution {
                     ans = Math.max(ans, 1 + helper(id2, id2 + 1, id2, id2 + 1));
                 }
             }
+        }
 
         visited.put(mask, ans);
         return ans;
