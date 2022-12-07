@@ -28,7 +28,6 @@ public class Solution {
         if (visited.containsKey(mask)) {
             return visited.get(mask);
         }
-
         for (; b < s.length(); a++, id2++, b += 2) {
             if ((hash[a + 1] - hash[id1]) * pows[id2] == (hash[b + 1] - hash[id2]) * pows[id1]) {
                 if (id2 + 1 == s.length()) {
@@ -38,7 +37,6 @@ public class Solution {
                 }
             }
         }
-
         visited.put(mask, ans);
         return ans;
     }
@@ -47,7 +45,6 @@ public class Solution {
         int n = s.length();
         hash = new int[n + 1];
         pows = new int[n];
-
         pows[0] = 1;
         hash[1] = s.charAt(0);
         for (int i = 1; i != n; i++) {
@@ -63,7 +60,6 @@ public class Solution {
                 return false;
             }
         }
-
         return true;
     }
 }
