@@ -33,8 +33,7 @@ public class Solution {
             if ((hash[a + 1] - hash[id1]) * pows[id2] == (hash[b + 1] - hash[id2]) * pows[id1]) {
                 if (id2 + 1 == s.length()) {
                     ans = Math.max(ans, 2);
-                }
-                else {
+                } else {
                     ans = Math.max(ans, 1 + helper(id2, id2 + 1, id2, id2 + 1));
                 }
             }
