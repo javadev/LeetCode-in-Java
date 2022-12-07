@@ -5,7 +5,6 @@ import java.util.Arrays;
 // #Hard #Array #Dynamic_Programming #Matrix #2022_12_07_Time_70_ms_(99.20%)_Space_84.5_MB_(87.93%)
 
 public class Solution {
-    private static final int MODULO = 1000000007;
     private static int[][] p = new int[50005][50];
     private static int[][] r = new int[50005][50];
 
@@ -13,7 +12,8 @@ public class Solution {
         int m = grid.length;
         int n = grid[0].length;
 
-        for (int i = 0, x = 0; i < n; ++i) {
+        int x = 0;
+        for (int i = 0; i < n; ++i) {
             Arrays.fill(r[i], 0, k, 0);
             x += grid[0][i];
             r[i][x % k] = 1;
@@ -24,19 +24,21 @@ public class Solution {
             p = r;
             r = t;
 
-            int x = grid[i][0] % k;
+            x = grid[i][0] % k;
             for (int j = 0; j < k; ++j) {
                 r[0][(x + j) % k] = p[0][j];
             }
 
             for (int j = 1, pj = 0; j < n; ++j, ++pj) {
                 x = grid[i][j] % k;
-                for (int l = 0, y = (x > 0) ? (k - x) : 0; l < k; ++l, ++y) {
+                int y = (x > 0) ? (k - x) : 0;
+                for (int l = 0; l < k; ++l, ++y) {
                     if (y == k) {
                         y = 0;
                     }
 
-                    r[j][l] = (p[j][y] + r[pj][y]) % MODULO;
+                    int modulo = 1000000007;
+                    r[j][l] = (p[j][y] + r[pj][y]) % modulo;
                 }
             }
         }
