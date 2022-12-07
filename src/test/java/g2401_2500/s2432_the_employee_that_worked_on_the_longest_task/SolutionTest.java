@@ -9,19 +9,19 @@ class SolutionTest {
     @Test
     void hardestWorker() {
         assertThat(
-                new Solution().hardestWorker(10, new int[][] {{0, 3}, {2, 5}, {0, 9}, {1, 15}}),
+                new Solution().hardestWorker(new int[][] {{0, 3}, {2, 5}, {0, 9}, {1, 15}}),
                 equalTo(1));
     }
 
     @Test
     void hardestWorker2() {
         assertThat(
-                new Solution().hardestWorker(26, new int[][] {{1, 1}, {3, 7}, {2, 12}, {7, 17}}),
+                new Solution().hardestWorker(new int[][] {{1, 1}, {3, 7}, {2, 12}, {7, 17}}),
                 equalTo(3));
     }
 
     @Test
     void hardestWorker3() {
-        assertThat(new Solution().hardestWorker(2, new int[][] {{0, 10}, {10, 20}}), equalTo(0));
+        assertThat(new Solution().hardestWorker(new int[][] {{0, 10}, {10, 20}}), equalTo(0));
     }
 }

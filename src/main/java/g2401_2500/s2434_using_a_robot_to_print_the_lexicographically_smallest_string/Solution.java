@@ -12,16 +12,21 @@ public class Solution {
             next[i] = (char) ('a' + Math.min(c[i] - 'a', next[i + 1] - 'a'));
         }
         char[] stack = new char[n];
-        int j = 0, k = 0;
+        int j = 0;
+        int k = 0;
         for (int i = 0; i < n; ++i) {
             if (c[i] == next[i]) {
                 c[j++] = c[i];
-                while (k > 0 && stack[k - 1] <= next[i + 1]) c[j++] = stack[--k];
+                while (k > 0 && stack[k - 1] <= next[i + 1]) {
+                    c[j++] = stack[--k];
+                }
             } else {
                 stack[k++] = c[i];
             }
         }
-        while (k > 0) c[j++] = stack[--k];
+        while (k > 0) {
+            c[j++] = stack[--k];
+        }
         return new String(c);
     }
 }
