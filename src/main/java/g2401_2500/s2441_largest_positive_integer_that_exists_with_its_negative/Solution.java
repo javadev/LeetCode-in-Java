@@ -7,7 +7,8 @@ import java.util.Arrays;
 public class Solution {
     public int findMaxK(int[] nums) {
         int[] arr = new int[nums.length];
-        for (int i = 0, j = 0; i < nums.length; i++) {
+        int j = 0;
+        for (int i = 0; i < nums.length; i++) {
             if (nums[i] < 0) {
                 arr[j++] = nums[i];
             }
