@@ -16,7 +16,13 @@ Return _the answers to all queries_. If a single answer cannot be determined, re
 
 **Output:** [6.00000,0.50000,-1.00000,1.00000,-1.00000]
 
-**Explanation:** Given: _a / b = 2.0_, _b / c = 3.0_ queries are: _a / c = ?_, _b / a = ?_, _a / e = ?_, _a / a = ?_, _x / x = ?_ return: [6.0, 0.5, -1.0, 1.0, -1.0 ]
+**Explanation:**
+
+Given: _a / b = 2.0_, _b / c = 3.0_
+
+queries are: _a / c = ?_, _b / a = ?_, _a / e = ?_, _a / a = ?_, _x / x = ?_
+
+return: [6.0, 0.5, -1.0, 1.0, -1.0 ]
 
 **Example 2:**
 
