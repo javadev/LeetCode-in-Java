@@ -7,23 +7,19 @@ import java.util.HashSet;
 public class Solution {
     public int countDistinctIntegers(int[] nums) {
         HashSet<Integer> set = new HashSet<>();
-
         for (int i : nums) {
             set.add(i);
             set.add(reverseInt(i));
         }
-
         return set.size();
     }
 
     private static int reverseInt(int num) {
         int ret = 0;
-
         while (num != 0) {
             ret = (num % 10) + ret * 10;
             num /= 10;
         }
-
         return ret;
     }
 }
