@@ -6,6 +6,7 @@ package g2401_2500.s2440_create_components_with_same_value;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private int[] nums;
 
