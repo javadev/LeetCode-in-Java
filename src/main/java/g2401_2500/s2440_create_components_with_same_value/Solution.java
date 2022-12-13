@@ -20,12 +20,10 @@ public class Solution {
             graph[e[0]].add(e[1]);
             graph[e[1]].add(e[0]);
         }
-
         int sum = 0;
         for (int i : nums) {
             sum += i;
         }
-
         for (int k = n; k > 0; k--) {
             if (sum % k != 0) {
                 continue;
@@ -48,7 +46,6 @@ public class Solution {
             }
             return nums[i];
         }
-
         int sum = nums[i];
         for (int k : graph[i]) {
             if (k == prev) {
@@ -60,7 +57,6 @@ public class Solution {
             }
             sum += ans;
         }
-
         if (sum > target) {
             return -1;
         }
