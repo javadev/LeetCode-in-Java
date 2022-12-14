@@ -14,7 +14,7 @@ public class Solution {
         return set.size();
     }
 
-    private static int reverseInt(int num) {
+    private int reverseInt(int num) {
         int ret = 0;
         while (num != 0) {
             ret = (num % 10) + ret * 10;
