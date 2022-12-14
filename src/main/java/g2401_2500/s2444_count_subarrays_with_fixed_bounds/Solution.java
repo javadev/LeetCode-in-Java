@@ -7,7 +7,7 @@ public class Solution {
     public long countSubarrays(int[] nums, int minK, int maxK) {
         long ans = 0;
         int i = 0;
-        while ( i < nums.length) {
+        while (i < nums.length) {
             if (nums[i] >= minK && nums[i] <= maxK) {
                 int a = i;
                 int b = i;
