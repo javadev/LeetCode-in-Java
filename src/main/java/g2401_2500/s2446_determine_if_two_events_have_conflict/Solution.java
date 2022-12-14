@@ -4,8 +4,10 @@ package g2401_2500.s2446_determine_if_two_events_have_conflict;
 
 public class Solution {
     public boolean haveConflict(String[] event1, String[] event2) {
-        int aStart = getTimeSerial(event1[0]), aEnd = getTimeSerial(event1[1]);
-        int bStart = getTimeSerial(event2[0]), bEnd = getTimeSerial(event2[1]);
+        int aStart = getTimeSerial(event1[0]);
+        int aEnd = getTimeSerial(event1[1]);
+        int bStart = getTimeSerial(event2[0]);
+        int bEnd = getTimeSerial(event2[1]);
         return (bStart >= aStart && bStart <= aEnd) || (bStart <= aStart && bEnd >= aStart);
     }
 

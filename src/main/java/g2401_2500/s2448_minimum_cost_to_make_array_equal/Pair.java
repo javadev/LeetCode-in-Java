@@ -4,8 +4,8 @@ class Pair {
     int e;
     int c;
 
-    Pair(int _e, int _c) {
-        e = _e;
-        c = _c;
+    Pair(int e, int c) {
+        this.e = e;
+        this.c = c;
     }
 }

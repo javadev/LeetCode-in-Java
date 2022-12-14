@@ -6,13 +6,15 @@ package g2401_2500.s2444_count_subarrays_with_fixed_bounds;
 public class Solution {
     public long countSubarrays(int[] nums, int minK, int maxK) {
         long ans = 0;
-        for (int i = 0; i < nums.length; i++)
+        for (int i = 0; i < nums.length; i++) {
             if (nums[i] >= minK && nums[i] <= maxK) {
                 int a = i;
                 int b = i;
                 int mini = 0;
                 int maxi = 0;
-                while (++i != nums.length && (nums[i] >= minK && nums[i] <= maxK)) ;
+                while (i != nums.length && (nums[i] >= minK && nums[i] <= maxK)) {
+                    i++;
+                }
                 while (true) {
                     for (; b != i && (mini == 0 || maxi == 0); b++) {
                         if (nums[b] == minK) {
@@ -37,6 +39,7 @@ public class Solution {
                     }
                 }
             }
+        }
 
         return ans;
     }
