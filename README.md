@@ -1848,6 +1848,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.16'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2443 |[Sum of Number and Its Reverse](src/main/java/g2401_2500/s2443_sum_of_number_and_its_reverse/Solution.java)| Medium | Math, Enumeration | 265 | 80.33
+| 2442 |[Count Number of Distinct Integers After Reverse Operations](src/main/java/g2401_2500/s2442_count_number_of_distinct_integers_after_reverse_operations/Solution.java)| Medium | Array, Hash_Table, Math | 73 | 96.81
+| 2441 |[Largest Positive Integer That Exists With Its Negative](src/main/java/g2401_2500/s2441_largest_positive_integer_that_exists_with_its_negative/Solution.java)| Easy | Array, Hash_Table | 8 | 79.93
+| 2440 |[Create Components With Same Value](src/main/java/g2401_2500/s2440_create_components_with_same_value/Solution.java)| Hard | Array, Math, Tree, Enumeration, Depth_First_Search | 114 | 73.23
+| 2439 |[Minimize Maximum of Array](src/main/java/g2401_2500/s2439_minimize_maximum_of_array/Solution.java)| Medium | Array, Dynamic_Programming, Greedy, Binary_Search, Prefix_Sum | 10 | 90.25
 | 2438 |[Range Product Queries of Powers](src/main/java/g2401_2500/s2438_range_product_queries_of_powers/Solution.java)| Medium | Array, Bit_Manipulation, Prefix_Sum | 73 | 65.07
 | 2437 |[Number of Valid Clock Times](src/main/java/g2401_2500/s2437_number_of_valid_clock_times/Solution.java)| Easy | String, Enumeration | 0 | 100.00
 | 2435 |[Paths in Matrix Whose Sum Is Divisible by K](src/main/java/g2401_2500/s2435_paths_in_matrix_whose_sum_is_divisible_by_k/Solution.java)| Hard | Array, Dynamic_Programming, Matrix | 70 | 99.20
