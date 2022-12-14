@@ -1848,6 +1848,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.16'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2449 |[Minimum Number of Operations to Make Arrays Similar](src/main/java/g2401_2500/s2449_minimum_number_of_operations_to_make_arrays_similar/Solution.java)| Hard | Array, Sorting, Greedy | 57 | 87.86
+| 2448 |[Minimum Cost to Make Array Equal](src/main/java/g2401_2500/s2448_minimum_cost_to_make_array_equal/Solution.java)| Hard | Array, Sorting, Binary_Search, Prefix_Sum | 19 | 92.19
+| 2447 |[Number of Subarrays With GCD Equal to K](src/main/java/g2401_2500/s2447_number_of_subarrays_with_gcd_equal_to_k/Solution.java)| Medium | Array, Math, Number_Theory | 7 | 96.60
+| 2446 |[Determine if Two Events Have Conflict](src/main/java/g2401_2500/s2446_determine_if_two_events_have_conflict/Solution.java)| Easy | Array, String | 0 | 100.00
+| 2444 |[Count Subarrays With Fixed Bounds](src/main/java/g2401_2500/s2444_count_subarrays_with_fixed_bounds/Solution.java)| Hard | Array, Sliding_Window, Queue, Monotonic_Queue | 9 | 83.94
 | 2443 |[Sum of Number and Its Reverse](src/main/java/g2401_2500/s2443_sum_of_number_and_its_reverse/Solution.java)| Medium | Math, Enumeration | 265 | 80.33
 | 2442 |[Count Number of Distinct Integers After Reverse Operations](src/main/java/g2401_2500/s2442_count_number_of_distinct_integers_after_reverse_operations/Solution.java)| Medium | Array, Hash_Table, Math | 73 | 96.81
 | 2441 |[Largest Positive Integer That Exists With Its Negative](src/main/java/g2401_2500/s2441_largest_positive_integer_that_exists_with_its_negative/Solution.java)| Easy | Array, Hash_Table | 8 | 79.93
