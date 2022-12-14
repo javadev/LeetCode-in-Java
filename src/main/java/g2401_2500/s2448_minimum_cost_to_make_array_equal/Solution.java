@@ -26,7 +26,7 @@ public class Solution {
         }
 
         for (int i = 0; i < al.size(); i++) {
-            ans += Math.abs((long) nums[i] - (long) t) * ((long) cost[i]);
+            ans += Math.abs((long) nums[i] - (long) t) * cost[i];
         }
 
         return ans;

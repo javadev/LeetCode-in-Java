@@ -34,8 +34,7 @@ public class Solution {
         for (int i = 0; i < evenNums.size(); i++) {
             int num = evenNums.get(i);
             int tar = evenTar.get(i);
-
-            long diff = num - tar;
+            long diff = (long) num - tar;
             long iteration = diff / 2;
             if (diff > 0) {
                 countNegativeIteration += iteration;
@@ -47,7 +46,7 @@ public class Solution {
         for (int i = 0; i < oddNums.size(); i++) {
             int num = oddNums.get(i);
             int tar = oddTar.get(i);
-            long diff = num - tar;
+            long diff = (long) num - tar;
             long iteration = diff / 2;
             if (diff > 0) {
                 countNegativeIteration += iteration;
