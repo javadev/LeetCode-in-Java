@@ -8,6 +8,16 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Solution {
+    private static class Pair {
+        int e;
+        int c;
+
+        Pair(int e, int c) {
+            this.e = e;
+            this.c = c;
+        }
+    }
+
     public long minCost(int[] nums, int[] cost) {
         long sum = 0;
         List<Pair> al = new ArrayList<>();
@@ -24,11 +34,9 @@ public class Solution {
             s2 += al.get(i).c;
             t = al.get(i).e;
         }
-
         for (int i = 0; i < al.size(); i++) {
             ans += Math.abs((long) nums[i] - (long) t) * cost[i];
         }
-
         return ans;
     }
 }
