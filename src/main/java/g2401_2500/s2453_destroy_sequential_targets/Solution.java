@@ -13,21 +13,25 @@ import javafx.util.Pair;
 public class Solution {
     public int destroyTargets(int[] nums, int space) {
         Arrays.sort(nums);
-
-        Map<Integer, List<Integer>> freq = new HashMap<>(); // remainder, elements
+        Map<Integer, List<Integer>> freq = new HashMap<>();
         for (int num : nums) {
             int key = num % space;
-            if (!freq.containsKey(key)) freq.put(key, new ArrayList<>());
+            if (!freq.containsKey(key)) {
+                freq.put(key, new ArrayList<>());
+            }
             freq.get(key).add(num);
         }
-
         PriorityQueue<Pair<Integer, List<Integer>>> pq =
                 new PriorityQueue<>(
                         (o1, o2) -> {
-                            if (o1.getValue().size() < o2.getValue().size()) return 1;
-                            if (o1.getValue().size() > o2.getValue().size()) return -1;
+                            if (o1.getValue().size() < o2.getValue().size()) {
+                                return 1;
+                            }
+                            if (o1.getValue().size() > o2.getValue().size()) {
+                                return -1;
+                            }
                             return o1.getValue().get(0).compareTo(o2.getValue().get(0));
-                        }); //  remainder -> elements
+                        });
 
         for (Map.Entry<Integer, List<Integer>> entry : freq.entrySet()) {
             pq.offer(new Pair<>(entry.getKey(), entry.getValue()));
