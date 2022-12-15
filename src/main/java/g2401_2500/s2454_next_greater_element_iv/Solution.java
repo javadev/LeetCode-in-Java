@@ -11,7 +11,6 @@ public class Solution {
     public int[] secondGreaterElement(int[] nums) {
         int[] res = new int[nums.length];
         Arrays.fill(res, -1);
-
         Deque<Integer> stack1 = new ArrayDeque<>();
         Deque<Integer> stack2 = new ArrayDeque<>();
         Deque<Integer> tmp = new ArrayDeque<>();
@@ -19,15 +18,12 @@ public class Solution {
             while (!stack2.isEmpty() && nums[i] > nums[stack2.peek()]) {
                 res[stack2.pop()] = nums[i];
             }
-
             while (!stack1.isEmpty() && nums[i] > nums[stack1.peek()]) {
                 tmp.push(stack1.pop());
             }
-
             while (!tmp.isEmpty()) {
                 stack2.push(tmp.pop());
             }
-
             stack1.push(i);
         }
         return res;
