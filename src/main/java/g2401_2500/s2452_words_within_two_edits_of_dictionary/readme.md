@@ -14,7 +14,17 @@ Return _a list of all words from_ `queries`_,_ _that match with some word from_ 
 
 **Output:** ["word","note","wood"]
 
-**Explanation:** - Changing the 'r' in "word" to 'o' allows it to equal the dictionary word "wood". - Changing the 'n' to 'j' and the 't' to 'k' in "note" changes it to "joke". - It would take more than 2 edits for "ants" to equal a dictionary word. - "wood" can remain unchanged (0 edits) and match the corresponding dictionary word. Thus, we return ["word","note","wood"].
+**Explanation:**
+
+- Changing the 'r' in "word" to 'o' allows it to equal the dictionary word "wood".
+
+- Changing the 'n' to 'j' and the 't' to 'k' in "note" changes it to "joke".
+
+- It would take more than 2 edits for "ants" to equal a dictionary word.
+
+- "wood" can remain unchanged (0 edits) and match the corresponding dictionary word.
+
+Thus, we return ["word","note","wood"].
 
 **Example 2:**
 
@@ -22,7 +32,9 @@ Return _a list of all words from_ `queries`_,_ _that match with some word from_ 
 
 **Output:** []
 
-**Explanation:** Applying any two edits to "yes" cannot make it equal to "not". Thus, we return an empty array.
+**Explanation:**
+
+Applying any two edits to "yes" cannot make it equal to "not". Thus, we return an empty array.
 
 **Constraints:**
 
