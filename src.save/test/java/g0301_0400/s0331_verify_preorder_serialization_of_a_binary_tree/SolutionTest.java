@@ -10,4 +10,14 @@ class SolutionTest {
     void minPatches() {
         assertThat(new Solution().isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#"), equalTo(true));
     }
+
+    @Test
+    void minPatches2() {
+        assertThat(new Solution().isValidSerialization("1,#"), equalTo(false));
+    }
+
+    @Test
+    void minPatches3() {
+        assertThat(new Solution().isValidSerialization("9,#,#,1"), equalTo(false));
+    }
 }
