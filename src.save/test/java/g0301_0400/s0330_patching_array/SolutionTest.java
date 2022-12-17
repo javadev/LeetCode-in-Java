@@ -10,4 +10,14 @@ class SolutionTest {
     void minPatches() {
         assertThat(new Solution().minPatches(new int[] {1, 3}, 6), equalTo(1));
     }
+
+    @Test
+    void minPatches2() {
+        assertThat(new Solution().minPatches(new int[] {1, 5, 10}, 20), equalTo(2));
+    }
+
+    @Test
+    void minPatches3() {
+        assertThat(new Solution().minPatches(new int[] {1, 2, 2}, 5), equalTo(0));
+    }
 }
