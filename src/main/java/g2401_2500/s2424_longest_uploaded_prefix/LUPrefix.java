@@ -1,7 +1,7 @@
 package g2401_2500.s2424_longest_uploaded_prefix;
 
-// #Medium #Binary_Search #Design #Union_Find #Ordered_Set #Segment_Tree #Binary_Indexed_Tree
-// #Heap_(Priority_Queue) #2022_11_19_Time_35_ms_(99.68%)_Space_108.8_MB_(92.53%)
+// #Medium #Binary_Search #Design #Heap_Priority_Queue #Union_Find #Ordered_Set #Segment_Tree
+// #Binary_Indexed_Tree #2022_11_19_Time_35_ms_(99.68%)_Space_108.8_MB_(92.53%)
 
 public class LUPrefix {
     private boolean[] res;
