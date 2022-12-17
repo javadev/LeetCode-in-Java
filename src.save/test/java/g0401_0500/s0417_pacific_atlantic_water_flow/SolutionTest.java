@@ -18,4 +18,12 @@ class SolutionTest {
                 new Solution().pacificAtlantic(matrix),
                 equalTo(ArrayUtils.getLists(new int[][] {{0, 2}, {1, 1}, {1, 2}, {2, 0}})));
     }
+
+    @Test
+    void pacificAtlantic2() {
+        int[][] matrix = {{1}};
+        assertThat(
+                new Solution().pacificAtlantic(matrix),
+                equalTo(ArrayUtils.getLists(new int[][] {{0, 0}})));
+    }
 }
