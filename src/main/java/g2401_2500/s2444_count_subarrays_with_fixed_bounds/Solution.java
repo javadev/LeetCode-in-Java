@@ -25,11 +25,9 @@ public class Solution {
                             maxi++;
                         }
                     }
-
                     if (mini == 0 || maxi == 0) {
                         break;
                     }
-
                     for (; mini != 0 && maxi != 0; ans += 1 + (i - b), a++) {
                         if (nums[a] == minK) {
                             mini--;
@@ -42,7 +40,6 @@ public class Solution {
             }
             i++;
         }
-
         return ans;
     }
 }
