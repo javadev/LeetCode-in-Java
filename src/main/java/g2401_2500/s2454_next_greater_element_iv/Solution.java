@@ -1,6 +1,6 @@
 package g2401_2500.s2454_next_greater_element_iv;
 
-// #Hard #Array #Sorting #Binary_Search #Stack #Monotonic_Stack #Heap_(Priority_Queue)
+// #Hard #Array #Sorting #Binary_Search #Stack #Monotonic_Stack #Heap_Priority_Queue
 // #2022_12_15_Time_29_ms_(95.84%)_Space_57.4_MB_(93.32%)
 
 import java.util.ArrayDeque;
