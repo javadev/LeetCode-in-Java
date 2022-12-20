@@ -12,7 +12,6 @@ public class Solution {
         long current = 0;
         int i = 0;
         int j = 0;
-
         while (j < nums.length) {
             while (seen.contains(nums[j])) {
                 int val = nums[i++];
@@ -29,7 +28,6 @@ public class Solution {
                 i++;
             }
         }
-
         return sum;
     }
 }
