@@ -3,10 +3,7 @@ package g2401_2500.s2456_most_popular_video_creator;
 // #Medium #Array #String #Hash_Table #Sorting #Heap_Priority_Queue
 // #2022_12_16_Time_57_ms_(97.10%)_Space_85.2_MB_(99.42%)
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class Solution {
     public List<List<String>> mostPopularCreator(String[] creators, String[] ids, int[] views) {
@@ -25,9 +22,9 @@ public class Solution {
             }
         }
         List<List<String>> res = new ArrayList<>();
-        for (String key : totalViews.keySet()) {
-            if (totalViews.get(key) == globalMaxView) {
-                res.add(Arrays.asList(key, ids[maxView.get(key)]));
+        for (Map.Entry<String, Long> entry : totalViews.entrySet()) {
+            if (entry.getValue() == globalMaxView) {
+                res.add(Arrays.asList(entry.getKey(), ids[maxView.get(entry.getKey())]));
             }
         }
         return res;
