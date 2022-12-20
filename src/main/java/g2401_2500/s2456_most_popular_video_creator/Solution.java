@@ -1,6 +1,6 @@
 package g2401_2500.s2456_most_popular_video_creator;
 
-// #Medium #Array #String #Hash_Table #Sorting #Heap_(Priority_Queue)
+// #Medium #Array #String #Hash_Table #Sorting #Heap_Priority_Queue
 // #2022_12_16_Time_57_ms_(97.10%)_Space_85.2_MB_(99.42%)
 
 import java.util.ArrayList;
@@ -13,7 +13,6 @@ public class Solution {
         HashMap<String, Long> totalViews = new HashMap<>();
         HashMap<String, Integer> maxView = new HashMap<>();
         long globalMaxView = 0;
-
         for (int i = 0; i < creators.length; i++) {
             long currentView = totalViews.getOrDefault(creators[i], 0L) + views[i];
             globalMaxView = Math.max(currentView, globalMaxView);
@@ -25,7 +24,6 @@ public class Solution {
                 maxView.put(creators[i], i);
             }
         }
-
         List<List<String>> res = new ArrayList<>();
         for (String key : totalViews.keySet()) {
             if (totalViews.get(key) == globalMaxView) {
