@@ -29,7 +29,6 @@ public class Solution {
                 queries[i] = max;
             }
         }
-
         return queries;
     }
 
@@ -39,7 +38,6 @@ public class Solution {
         }
         int left = dfs(root.left, level + 1, map, levels);
         int right = dfs(root.right, level + 1, map, levels);
-
         int height = Math.max(left, right);
         int[] lev = levels.getOrDefault(level, new int[] {-1, -1});
         if (height >= lev[0]) {
