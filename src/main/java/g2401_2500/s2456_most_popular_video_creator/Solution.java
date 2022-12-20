@@ -10,26 +10,27 @@ import java.util.List;
 
 public class Solution {
     public List<List<String>> mostPopularCreator(String[] creators, String[] ids, int[] views) {
-        HashMap<String, Long> total_views = new HashMap<>();
-        HashMap<String, Integer> max_view = new HashMap<>();
-        long global_max_view = 0;
+        HashMap<String, Long> totalViews = new HashMap<>();
+        HashMap<String, Integer> maxView = new HashMap<>();
+        long globalMaxView = 0;
 
         for (int i = 0; i < creators.length; i++) {
-            long current_view = total_views.getOrDefault(creators[i], 0L) + views[i];
-            global_max_view = Math.max(current_view, global_max_view);
-            total_views.put(creators[i], current_view);
-            int last_index = max_view.getOrDefault(creators[i], -1);
-            if (!max_view.containsKey(creators[i])
-                    || views[last_index] < views[i]
-                    || (views[last_index] == views[i] && ids[last_index].compareTo(ids[i]) > 0)) {
-                max_view.put(creators[i], i);
+            long currentView = totalViews.getOrDefault(creators[i], 0L) + views[i];
+            globalMaxView = Math.max(currentView, globalMaxView);
+            totalViews.put(creators[i], currentView);
+            int lastIndex = maxView.getOrDefault(creators[i], -1);
+            if (!maxView.containsKey(creators[i])
+                    || views[lastIndex] < views[i]
+                    || (views[lastIndex] == views[i] && ids[lastIndex].compareTo(ids[i]) > 0)) {
+                maxView.put(creators[i], i);
             }
         }
 
         List<List<String>> res = new ArrayList<>();
-        for (String key : total_views.keySet()) {
-            if (total_views.get(key) == global_max_view)
-                res.add(Arrays.asList(key, ids[max_view.get(key)]));
+        for (String key : totalViews.keySet()) {
+            if (totalViews.get(key) == globalMaxView) {
+                res.add(Arrays.asList(key, ids[maxView.get(key)]));
+            }
         }
         return res;
     }
