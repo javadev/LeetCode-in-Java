@@ -1848,6 +1848,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.16'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2461 |[Maximum Sum of Distinct Subarrays With Length K](src/main/java/g2401_2500/s2461_maximum_sum_of_distinct_subarrays_with_length_k/Solution.java)| Medium | Array, Hash_Table, Sliding_Window | 40 | 93.40
+| 2460 |[Apply Operations to an Array](src/main/java/g2401_2500/s2460_apply_operations_to_an_array/Solution.java)| Easy | Array, Simulation | 1 | 87.93
+| 2458 |[Height of Binary Tree After Subtree Removal Queries](src/main/java/g2401_2500/s2458_height_of_binary_tree_after_subtree_removal_queries/Solution.java)| Hard | Array, Tree, Binary_Tree, Depth_First_Search, Breadth_First_Search | 52 | 87.45
+| 2457 |[Minimum Addition to Make Integer Beautiful](src/main/java/g2401_2500/s2457_minimum_addition_to_make_integer_beautiful/Solution.java)| Medium | Math, Greedy | 0 | 100.00
+| 2456 |[Most Popular Video Creator](src/main/java/g2401_2500/s2456_most_popular_video_creator/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Heap_Priority_Queue | 57 | 97.10
 | 2455 |[Average Value of Even Numbers That Are Divisible by Three](src/main/java/g2401_2500/s2455_average_value_of_even_numbers_that_are_divisible_by_three/Solution.java)| Easy | Array, Math | 1 | 100.00
 | 2454 |[Next Greater Element IV](src/main/java/g2401_2500/s2454_next_greater_element_iv/Solution.java)| Hard | Array, Sorting, Binary_Search, Stack, Heap_Priority_Queue, Monotonic_Stack | 29 | 95.84
 | 2453 |[Destroy Sequential Targets](src/main/java/g2401_2500/s2453_destroy_sequential_targets/Solution.java)| Medium | Array, Hash_Table, Counting | 33 | 96.27
