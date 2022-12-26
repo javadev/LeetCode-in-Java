@@ -875,7 +875,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.16'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0547 |[Number of Provinces](src/main/java/g0501_0600/s0547_number_of_provinces/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 2 | 69.51
-| 0947 |[Most Stones Removed with Same Row or Column](src/main/java/g0901_1000/s0947_most_stones_removed_with_same_row_or_column/Solution.java)| Medium | Depth_First_Search, Graph, Union_Find | 5 | 98.95
+| 0947 |[Most Stones Removed with Same Row or Column](src/main/java/g0901_1000/s0947_most_stones_removed_with_same_row_or_column/Solution.java)| Medium | Depth_First_Search, Graph, Union_Find | 7 | 98.83
 
 #### Day 20 Brute Force/Backtracking
 
@@ -3003,17 +3003,17 @@ implementation 'com.github.javadev:leetcode-in-java:1.16'
 | 0957 |[Prison Cells After N Days](src/main/java/g0901_1000/s0957_prison_cells_after_n_days/Solution.java)| Medium | Array, Hash_Table, Math, Bit_Manipulation | 1 | 97.82
 | 0956 |[Tallest Billboard](src/main/java/g0901_1000/s0956_tallest_billboard/Solution.java)| Hard | Array, Dynamic_Programming | 18 | 92.68
 | 0955 |[Delete Columns to Make Sorted II](src/main/java/g0901_1000/s0955_delete_columns_to_make_sorted_ii/Solution.java)| Medium | Array, String, Greedy | 2 | 68.84
-| 0954 |[Array of Doubled Pairs](src/main/java/g0901_1000/s0954_array_of_doubled_pairs/Solution.java)| Medium | Array, Hash_Table, Sorting, Greedy | 18 | 97.19
+| 0954 |[Array of Doubled Pairs](src/main/java/g0901_1000/s0954_array_of_doubled_pairs/Solution.java)| Medium | Array, Hash_Table, Sorting, Greedy | 13 | 98.71
 | 0953 |[Verifying an Alien Dictionary](src/main/java/g0901_1000/s0953_verifying_an_alien_dictionary/Solution.java)| Easy | Array, String, Hash_Table, Programming_Skills_I_Day_9_String | 0 | 100.00
-| 0952 |[Largest Component Size by Common Factor](src/main/java/g0901_1000/s0952_largest_component_size_by_common_factor/Solution.java)| Hard | Array, Math, Union_Find | 225 | 76.99
+| 0952 |[Largest Component Size by Common Factor](src/main/java/g0901_1000/s0952_largest_component_size_by_common_factor/Solution.java)| Hard | Array, Math, Union_Find | 198 | 92.41
 | 0951 |[Flip Equivalent Binary Trees](src/main/java/g0901_1000/s0951_flip_equivalent_binary_trees/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree | 0 | 100.00
 | 0950 |[Reveal Cards In Increasing Order](src/main/java/g0901_1000/s0950_reveal_cards_in_increasing_order/Solution.java)| Medium | Array, Sorting, Simulation, Queue | 1 | 100.00
-| 0949 |[Largest Time for Given Digits](src/main/java/g0901_1000/s0949_largest_time_for_given_digits/Solution.java)| Medium | String, Enumeration | 3 | 91.21
-| 0948 |[Bag of Tokens](src/main/java/g0901_1000/s0948_bag_of_tokens/Solution.java)| Medium | Array, Sorting, Greedy, Two_Pointers | 4 | 32.05
-| 0947 |[Most Stones Removed with Same Row or Column](src/main/java/g0901_1000/s0947_most_stones_removed_with_same_row_or_column/Solution.java)| Medium | Depth_First_Search, Graph, Union_Find, Level_2_Day_19_Union_Find | 5 | 98.95
-| 0946 |[Validate Stack Sequences](src/main/java/g0901_1000/s0946_validate_stack_sequences/Solution.java)| Medium | Array, Stack, Simulation | 1 | 99.26
-| 0945 |[Minimum Increment to Make Array Unique](src/main/java/g0901_1000/s0945_minimum_increment_to_make_array_unique/Solution.java)| Medium | Array, Sorting, Greedy, Counting | 9 | 95.25
-| 0944 |[Delete Columns to Make Sorted](src/main/java/g0901_1000/s0944_delete_columns_to_make_sorted/Solution.java)| Easy | Array, String | 11 | 59.39
+| 0949 |[Largest Time for Given Digits](src/main/java/g0901_1000/s0949_largest_time_for_given_digits/Solution.java)| Medium | String, Enumeration | 11 | 70.67
+| 0948 |[Bag of Tokens](src/main/java/g0901_1000/s0948_bag_of_tokens/Solution.java)| Medium | Array, Sorting, Greedy, Two_Pointers | 2 | 100.00
+| 0947 |[Most Stones Removed with Same Row or Column](src/main/java/g0901_1000/s0947_most_stones_removed_with_same_row_or_column/Solution.java)| Medium | Depth_First_Search, Graph, Union_Find, Level_2_Day_19_Union_Find | 7 | 98.83
+| 0946 |[Validate Stack Sequences](src/main/java/g0901_1000/s0946_validate_stack_sequences/Solution.java)| Medium | Array, Stack, Simulation | 1 | 98.95
+| 0945 |[Minimum Increment to Make Array Unique](src/main/java/g0901_1000/s0945_minimum_increment_to_make_array_unique/Solution.java)| Medium | Array, Sorting, Greedy, Counting | 5 | 99.79
+| 0944 |[Delete Columns to Make Sorted](src/main/java/g0901_1000/s0944_delete_columns_to_make_sorted/Solution.java)| Easy | Array, String | 9 | 87.09
 | 0943 |[Find the Shortest Superstring](src/main/java/g0901_1000/s0943_find_the_shortest_superstring/Solution.java)| Hard | Array, String, Dynamic_Programming, Bit_Manipulation, Bitmask | 16 | 100.00
 | 0942 |[DI String Match](src/main/java/g0901_1000/s0942_di_string_match/Solution.java)| Easy | Array, String, Math, Greedy, Two_Pointers | 4 | 33.74
 | 0941 |[Valid Mountain Array](src/main/java/g0901_1000/s0941_valid_mountain_array/Solution.java)| Easy | Array | 1 | 100.00
