@@ -1,6 +1,6 @@
 package g0901_1000.s0946_validate_stack_sequences;
 
-// #Medium #Array #Stack #Simulation #2022_07_14_Time_1_ms_(99.26%)_Space_42.2_MB_(83.70%)
+// #Medium #Array #Stack #Simulation #2022_12_26_Time_1_ms_(98.95%)_Space_42_MB_(87.24%)
 
 import java.util.ArrayDeque;
 import java.util.Deque;

@@ -1,7 +1,7 @@
 package g0901_1000.s0948_bag_of_tokens;
 
 // #Medium #Array #Sorting #Greedy #Two_Pointers
-// #2022_02_20_Time_4_ms_(32.05%)_Space_42.9_MB_(28.63%)
+// #2022_12_26_Time_2_ms_(100.00%)_Space_42_MB_(85.95%)
 
 import java.util.Arrays;
 
@@ -11,7 +11,6 @@ public class Solution {
         int score = 0;
         int l = 0;
         int r = tokens.length - 1;
-
         while (l <= r) {
             if (tokens[l] <= power) {
                 power -= tokens[l];
