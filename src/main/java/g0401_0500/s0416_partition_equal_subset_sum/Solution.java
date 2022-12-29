@@ -9,12 +9,10 @@ public class Solution {
         for (int num : nums) {
             sums += num;
         }
-        // odd
-        if ((sums % 2) == 1) {
+        if (sums % 2 == 1) {
             return false;
         }
         sums /= 2;
-        int n = nums.length;
         boolean[] dp = new boolean[sums + 1];
         dp[0] = true;
         for (int num : nums) {
