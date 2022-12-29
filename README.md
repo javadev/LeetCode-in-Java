@@ -829,7 +829,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.17'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0416 |[Partition Equal Subset Sum](src/main/java/g0401_0500/s0416_partition_equal_subset_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming | 2 | 99.96
+| 0416 |[Partition Equal Subset Sum](src/main/java/g0401_0500/s0416_partition_equal_subset_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming | 27 | 94.53
 | 0152 |[Maximum Product Subarray](src/main/java/g0101_0200/s0152_maximum_product_subarray/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 0 | 100.00
 
 #### Day 14 Sliding Window/Two Pointer
@@ -1850,7 +1850,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.17'
 |------|----------------|-------------|-------------|----------|---------
 | 2461 |[Maximum Sum of Distinct Subarrays With Length K](src/main/java/g2401_2500/s2461_maximum_sum_of_distinct_subarrays_with_length_k/Solution.java)| Medium | Array, Hash_Table, Sliding_Window | 40 | 93.40
 | 2460 |[Apply Operations to an Array](src/main/java/g2401_2500/s2460_apply_operations_to_an_array/Solution.java)| Easy | Array, Simulation | 1 | 87.93
-| 2458 |[Height of Binary Tree After Subtree Removal Queries](src/main/java/g2401_2500/s2458_height_of_binary_tree_after_subtree_removal_queries/Solution.java)| Hard | Array, Tree, Binary_Tree, Depth_First_Search, Breadth_First_Search | 52 | 87.45
+| 2458 |[Height of Binary Tree After Subtree Removal Queries](src/main/java/g2401_2500/s2458_height_of_binary_tree_after_subtree_removal_queries/Solution.java)| Hard | Array, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 52 | 87.45
 | 2457 |[Minimum Addition to Make Integer Beautiful](src/main/java/g2401_2500/s2457_minimum_addition_to_make_integer_beautiful/Solution.java)| Medium | Math, Greedy | 0 | 100.00
 | 2456 |[Most Popular Video Creator](src/main/java/g2401_2500/s2456_most_popular_video_creator/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Heap_Priority_Queue | 57 | 97.10
 | 2455 |[Average Value of Even Numbers That Are Divisible by Three](src/main/java/g2401_2500/s2455_average_value_of_even_numbers_that_are_divisible_by_three/Solution.java)| Easy | Array, Math | 1 | 100.00
@@ -3451,7 +3451,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.17'
 | 0420 |[Strong Password Checker](src/main/java/g0401_0500/s0420_strong_password_checker/Solution.java)| Hard | String, Greedy, Heap_Priority_Queue | 0 | 100.00
 | 0419 |[Battleships in a Board](src/main/java/g0401_0500/s0419_battleships_in_a_board/Solution.java)| Medium | Array, Depth_First_Search, Matrix | 0 | 100.00
 | 0417 |[Pacific Atlantic Water Flow](src/main/java/g0401_0500/s0417_pacific_atlantic_water_flow/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Graph_Theory_I_Day_4_Matrix_Related_Problems, Level_2_Day_10_Graph/BFS/DFS, Udemy_Graph | 5 | 92.62
-| 0416 |[Partition Equal Subset Sum](src/main/java/g0401_0500/s0416_partition_equal_subset_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 2 | 99.96
+| 0416 |[Partition Equal Subset Sum](src/main/java/g0401_0500/s0416_partition_equal_subset_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming | 27 | 94.53
 | 0415 |[Add Strings](src/main/java/g0401_0500/s0415_add_strings/Solution.java)| Easy | String, Math, Simulation, Data_Structure_II_Day_6_String | 3 | 82.41
 | 0414 |[Third Maximum Number](src/main/java/g0401_0500/s0414_third_maximum_number/Solution.java)| Easy | Array, Sorting | 1 | 97.59
 | 0413 |[Arithmetic Slices](src/main/java/g0401_0500/s0413_arithmetic_slices/Solution.java)| Medium | Array, Dynamic_Programming, Algorithm_II_Day_14_Dynamic_Programming, Dynamic_Programming_I_Day_10 | 0 | 100.00
