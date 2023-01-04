@@ -7,6 +7,10 @@ package g0201_0300.s0278_first_bad_version;
 boolean isBadVersion(int version); */
 
 public class Solution extends VersionControl {
+    public Solution(int bad) {
+        super(bad);
+    }
+
     public int firstBadVersion(int n) {
         int start = 1;
         int end = n;
