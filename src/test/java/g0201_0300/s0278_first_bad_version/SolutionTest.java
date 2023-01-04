@@ -21,6 +21,7 @@ class SolutionTest {
         assertThat(new Solution(98).firstBadVersion(99), equalTo(98));
     }
 
+    @Test
     void firstBadVersion4() {
         assertThat(new Solution(32).firstBadVersion(99), equalTo(98));
     }
