@@ -7,7 +7,13 @@ package g0201_0300.s0278_first_bad_version;
 boolean isBadVersion(int version); */
 
 public class VersionControl {
+    private int bad;
+
+    public VersionControl(int bad) {
+        this.bad = bad;
+    }
+
     public boolean isBadVersion(int version) {
-        return version % 2 == 0;
+        return version >= bad;
     }
 }
