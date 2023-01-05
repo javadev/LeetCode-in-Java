@@ -29,4 +29,21 @@ class SolutionTest {
         TreeNode q = TreeUtils.constructBinaryTree(Arrays.asList(1, 1, 2));
         assertThat(new Solution().isSameTree(p, q), equalTo(false));
     }
+
+    @Test
+    void isSameTree4() {
+        TreeNode p = TreeUtils.constructBinaryTree(Arrays.asList(1, 2, 1));
+        assertThat(new Solution().isSameTree(p, null), equalTo(false));
+    }
+
+    @Test
+    void isSameTree5() {
+        TreeNode q = TreeUtils.constructBinaryTree(Arrays.asList(1, 1, 2));
+        assertThat(new Solution().isSameTree(null, q), equalTo(false));
+    }
+
+    @Test
+    void isSameTree6() {
+        assertThat(new Solution().isSameTree(null, null), equalTo(true));
+    }
 }
