@@ -21,23 +21,12 @@ import com_github_leetcode.TreeNode;
  * }
  */
 public class Solution {
-    private boolean trav(TreeNode n, TreeNode m) {
-        if (n != null && m != null) {
-            if (n.val != m.val) {
-                return false;
-            }
-            return (trav(n.left, m.left) && trav(n.right, m.right));
-        } else {
-            return n == null && m == null;
-        }
-    }
-
     public boolean isSameTree(TreeNode p, TreeNode q) {
-        if (p == null && q == null) {
-            return true;
-        } else if (p == null || q == null) {
-            return false;
+        if (p == null || q == null) {
+            return p == null && q == null;
         }
-        return trav(p, q);
+        boolean b1 = isSameTree(p.left, q.left);
+        boolean b2 = isSameTree(p.right, q.right);
+        return p.val == q.val && b1 && b2;
     }
 }
