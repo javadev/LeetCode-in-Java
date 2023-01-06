@@ -3,10 +3,11 @@ package g0201_0300.s0211_design_add_and_search_words_data_structure;
 // #Medium #String #Depth_First_Search #Design #Trie
 // #2023_01_06_Time_308_ms_(99.46%)_Space_284.7_MB_(13.25%)
 
-@SuppressWarnings("java:S1186")
 public class WordDictionary {
 
-    public WordDictionary() {}
+    public WordDictionary() {
+        // empty constructor
+    }
 
     private static class Node {
         Node[] kids = new Node[26];
