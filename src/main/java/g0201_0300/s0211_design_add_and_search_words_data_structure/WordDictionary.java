@@ -1,78 +1,67 @@
 package g0201_0300.s0211_design_add_and_search_words_data_structure;
 
 // #Medium #String #Depth_First_Search #Design #Trie
-// #2022_07_02_Time_445_ms_(96.00%)_Space_104.3_MB_(83.47%)
+// #2023_01_06_Time_308_ms_(99.46%)_Space_284.7_MB_(13.25%)
 
 public class WordDictionary {
 
+    public WordDictionary() {}
+
     private static class Node {
-        char value;
-        boolean isEnd;
-        Node[] childs;
-
-        Node(char value) {
-            this.value = value;
-            this.isEnd = false;
-            this.childs = new Node[26];
-        }
-
-        Node getChild(char ch) {
-            return this.childs[ch - 'a'];
-        }
-
-        boolean isChild(char ch) {
-            return getChild(ch) != null;
-        }
-
-        void addChild(char ch) {
-            this.childs[ch - 'a'] = new Node(ch);
-        }
+        Node[] kids = new Node[26];
+        boolean isTerminal;
     }
-    // dummy value
-    private Node root = new Node('a');
 
-    public WordDictionary() {
-        // empty constructor
-    }
+    private final Node[] root = new Node[26];
 
     public void addWord(String word) {
-        Node node = root;
-        for (int i = 0; i < word.length(); i++) {
-            char ch = word.charAt(i);
-            if (!node.isChild(ch)) {
-                node.addChild(ch);
-            }
-            node = node.getChild(ch);
+        int n = word.length();
+        if (root[n] == null) {
+            root[n] = new Node();
         }
-        node.isEnd = true;
+        Node node = root[n];
+        for (int i = 0; i < n; i++) {
+            int c = word.charAt(i) - 'a';
+            Node kid = node.kids[c];
+            if (kid == null) {
+                kid = new Node();
+                node.kids[c] = kid;
+            }
+            node = kid;
+        }
+        node.isTerminal = true;
     }
 
     public boolean search(String word) {
-        return dfs(this.root, word, 0);
+        Node node = root[word.length()];
+        return node != null && dfs(0, node, word);
     }
 
-    public boolean dfs(Node root, String word, int index) {
-        if (root == null) {
+    private boolean dfs(int i, Node node, String word) {
+        int len = word.length();
+        if (i == len) {
             return false;
         }
-        // if reached end of word
-        if (index == word.length()) {
-            return root.isEnd;
-        }
-        char ch = word.charAt(index);
-        if (ch == '.') {
-            for (Node child : root.childs) {
-                boolean found = dfs(child, word, index + 1);
-                if (found) {
+        char c = word.charAt(i);
+        if (c == '.') {
+            for (Node kid : node.kids) {
+                if (kid == null) {
+                    continue;
+                }
+                if (i == len - 1 && kid.isTerminal || dfs(i + 1, kid, word)) {
                     return true;
                 }
             }
             return false;
         }
-        if (!root.isChild(ch)) {
+        Node kid = node.kids[c - 'a'];
+        if (kid == null) {
             return false;
         }
-        return dfs(root.getChild(ch), word, index + 1);
+        if (i == len - 1) {
+            return kid.isTerminal;
+        }
+        return dfs(i + 1, kid, word);
     }
 }
 
