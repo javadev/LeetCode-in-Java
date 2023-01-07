@@ -10,15 +10,15 @@ public class Solution {
         // Hint: Maintain two minheaps, one for the left end and one for the right end
         // This problem is intentionally made complex but actually we don't have to record the
         // indices
-        int N = costs.length;
+        int n = costs.length;
         PriorityQueue<Integer> leftMinHeap = new PriorityQueue<>();
         PriorityQueue<Integer> rightMinHeap = new PriorityQueue<>();
         long res = 0;
-        if (2 * candidates >= N) {
-            for (int i = 0; i <= N / 2; i++) {
+        if (2 * candidates >= n) {
+            for (int i = 0; i <= n / 2; i++) {
                 leftMinHeap.add(costs[i]);
             }
-            for (int i = N / 2 + 1; i < N; i++) {
+            for (int i = n / 2 + 1; i < n; i++) {
                 rightMinHeap.add(costs[i]);
             }
             while (!leftMinHeap.isEmpty() && !rightMinHeap.isEmpty() && k > 0) {
@@ -31,11 +31,11 @@ public class Solution {
             }
         } else {
             int left = candidates;
-            int right = N - candidates - 1;
+            int right = n - candidates - 1;
             for (int i = 0; i < candidates; i++) {
                 leftMinHeap.add(costs[i]);
             }
-            for (int i = N - candidates; i < N; i++) {
+            for (int i = n - candidates; i < n; i++) {
                 rightMinHeap.add(costs[i]);
             }
             while (!leftMinHeap.isEmpty() && !rightMinHeap.isEmpty() && k > 0) {
