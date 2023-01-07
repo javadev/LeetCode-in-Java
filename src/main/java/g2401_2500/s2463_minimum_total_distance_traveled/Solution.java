@@ -31,7 +31,7 @@ public class Solution {
         return res;
     }
 
-    long pop(int[][] d, int i, int[] r, int[][] f) {
+    private long pop(int[][] d, int i, int[] r, int[][] f) {
         long cost = Long.MAX_VALUE;
         int j;
         // try assigning robot to each factory starting from the leftmost
