@@ -5,6 +5,7 @@ package g2401_2500.s2463_minimum_total_distance_traveled;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("java:S3358")
 public class Solution {
     public long minimumTotalDistance(List<Integer> robot, int[][] f) {
         // sort factories :
