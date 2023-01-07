@@ -1848,6 +1848,9 @@ implementation 'com.github.javadev:leetcode-in-java:1.17'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2465 |[Number of Distinct Averages](src/main/java/g2401_2500/s2465_number_of_distinct_averages/Solution.java)| Easy | Array, Hash_Table, Sorting, Two_Pointers | 1 | 99.48
+| 2463 |[Minimum Total Distance Traveled](src/main/java/g2401_2500/s2463_minimum_total_distance_traveled/Solution.java)| Hard | Array, Dynamic_Programming, Sorting | 2 | 100.00
+| 2462 |[Total Cost to Hire K Workers](src/main/java/g2401_2500/s2462_total_cost_to_hire_k_workers/Solution.java)| Medium | Array, Two_Pointers, Heap_Priority_Queue, Simulation | 57 | 96.24
 | 2461 |[Maximum Sum of Distinct Subarrays With Length K](src/main/java/g2401_2500/s2461_maximum_sum_of_distinct_subarrays_with_length_k/Solution.java)| Medium | Array, Hash_Table, Sliding_Window | 40 | 93.40
 | 2460 |[Apply Operations to an Array](src/main/java/g2401_2500/s2460_apply_operations_to_an_array/Solution.java)| Easy | Array, Simulation | 1 | 87.93
 | 2458 |[Height of Binary Tree After Subtree Removal Queries](src/main/java/g2401_2500/s2458_height_of_binary_tree_after_subtree_removal_queries/Solution.java)| Hard | Array, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 52 | 87.45
