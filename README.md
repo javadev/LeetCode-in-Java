@@ -1848,6 +1848,10 @@ implementation 'com.github.javadev:leetcode-in-java:1.17'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2469 |[Convert the Temperature](src/main/java/g2401_2500/s2469_convert_the_temperature/Solution.java)| Easy | Math | 0 | 100.00
+| 2468 |[Split Message Based on Limit](src/main/java/g2401_2500/s2468_split_message_based_on_limit/Solution.java)| Hard | String, Binary_Search | 27 | 99.08
+| 2467 |[Most Profitable Path in a Tree](src/main/java/g2401_2500/s2467_most_profitable_path_in_a_tree/Solution.java)| Medium | Array, Tree, Graph, Depth_First_Search, Breadth_First_Search | 20 | 100.00
+| 2466 |[Count Ways To Build Good Strings](src/main/java/g2401_2500/s2466_count_ways_to_build_good_strings/Solution.java)| Medium | Dynamic_Programming | 8 | 99.59
 | 2465 |[Number of Distinct Averages](src/main/java/g2401_2500/s2465_number_of_distinct_averages/Solution.java)| Easy | Array, Hash_Table, Sorting, Two_Pointers | 1 | 99.48
 | 2463 |[Minimum Total Distance Traveled](src/main/java/g2401_2500/s2463_minimum_total_distance_traveled/Solution.java)| Hard | Array, Dynamic_Programming, Sorting | 2 | 100.00
 | 2462 |[Total Cost to Hire K Workers](src/main/java/g2401_2500/s2462_total_cost_to_hire_k_workers/Solution.java)| Medium | Array, Two_Pointers, Heap_Priority_Queue, Simulation | 57 | 96.24
