@@ -10,7 +10,9 @@ public class Solution {
         int n = amount.length;
         int[][] g = packU(n, edges);
         int[][] pars = parents(g, 0);
-        int[] par = pars[0], ord = pars[1], dep = pars[2];
+        int[] par = pars[0];
+        int[] ord = pars[1];
+        int[] dep = pars[2];
         int u = bob;
         for (int i = 0; i < (dep[bob] + 1) / 2; i++) {
             amount[u] = 0;
@@ -45,7 +47,8 @@ public class Solution {
         depth[0] = 0;
         int[] q = new int[n];
         q[0] = root;
-        for (int p = 0, r = 1; p < r; p++) {
+        int r = 1;
+        for (int p = 0; p < r; p++) {
             int cur = q[p];
             for (int nex : g[cur]) {
                 if (par[cur] != nex) {
