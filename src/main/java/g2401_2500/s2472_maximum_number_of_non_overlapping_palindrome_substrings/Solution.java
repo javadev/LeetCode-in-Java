@@ -6,21 +6,27 @@ import java.util.Arrays;
 
 public class Solution {
     public int maxPalindromes(String s, int k) {
-        int[] dp =
-                new int[s.length()]; // dp[i] is max number of qualified substring in s.substring(i)
+        int[] dp = new int[s.length()];
         Arrays.fill(dp, -1);
         return dfs(s, dp, k, 0);
     }
 
     private int dfs(String s, int[] dp, int k, int start) {
-        if (start >= s.length()) return 0;
-        if (dp[start] != -1) return dp[start];
+        if (start >= s.length()) {
+            return 0;
+        }
+        if (dp[start] != -1) {
+            return dp[start];
+        }
         int ans = 0;
         for (int n = 0; n <= 1; n++) {
             for (int i = start; i <= s.length() - k - n; i++) {
-                int left = i, right = i + k + n - 1;
+                int left = i;
+                int right = i + k + n - 1;
                 while (left < right) {
-                    if (s.charAt(left) != s.charAt(right)) break;
+                    if (s.charAt(left) != s.charAt(right)) {
+                        break;
+                    }
                     left++;
                     right--;
                 }

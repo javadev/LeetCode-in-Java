@@ -18,8 +18,12 @@ public class Solution {
         if ((root.left != null && root.right != null) && (root.left.val > root.right.val)) {
             count++;
         }
-        if (root.left != null) q.add(root.left);
-        if (root.right != null) q.add(root.right);
+        if (root.left != null) {
+            q.add(root.left);
+        }
+        if (root.right != null) {
+            q.add(root.right);
+        }
         while (!q.isEmpty()) {
             int size = q.size();
             List<Integer> al = new ArrayList<>();
@@ -43,7 +47,9 @@ public class Solution {
     private int helper(List<Integer> list) {
         int swaps = 0;
         int[] sorted = new int[list.size()];
-        for (int i = 0; i < sorted.length; i++) sorted[i] = list.get(i);
+        for (int i = 0; i < sorted.length; i++) {
+            sorted[i] = list.get(i);
+        }
         Arrays.sort(sorted);
         Map<Integer, Integer> ind = new HashMap<>();
         for (int i = 0; i < list.size(); i++) {
