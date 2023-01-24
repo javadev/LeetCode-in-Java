@@ -1848,6 +1848,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.17'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2476 |[Closest Nodes Queries in a Binary Search Tree](src/main/java/g2401_2500/s2476_closest_nodes_queries_in_a_binary_search_tree/Solution.java)| Medium | Array, Tree, Binary_Search, Binary_Tree, Depth_First_Search | 185 | 51.92
+| 2475 |[Number of Unequal Triplets in Array](src/main/java/g2401_2500/s2475_number_of_unequal_triplets_in_array/Solution.java)| Easy | Array, Hash_Table | 1 | 97.49
+| 2472 |[Maximum Number of Non-overlapping Palindrome Substrings](src/main/java/g2401_2500/s2472_maximum_number_of_non_overlapping_palindrome_substrings/Solution.java)| Hard | String, Dynamic_Programming | 2 | 91.04
+| 2471 |[Minimum Number of Operations to Sort a Binary Tree by Level](src/main/java/g2401_2500/s2471_minimum_number_of_operations_to_sort_a_binary_tree_by_level/Solution.java)| Medium | Tree, Binary_Tree, Breadth_First_Search | 76 | 76.46
+| 2470 |[Number of Subarrays With LCM Equal to K](src/main/java/g2401_2500/s2470_number_of_subarrays_with_lcm_equal_to_k/Solution.java)| Medium | Array, Math, Number_Theory | 23 | 62.35
 | 2469 |[Convert the Temperature](src/main/java/g2401_2500/s2469_convert_the_temperature/Solution.java)| Easy | Math | 0 | 100.00
 | 2468 |[Split Message Based on Limit](src/main/java/g2401_2500/s2468_split_message_based_on_limit/Solution.java)| Hard | String, Binary_Search | 27 | 99.08
 | 2467 |[Most Profitable Path in a Tree](src/main/java/g2401_2500/s2467_most_profitable_path_in_a_tree/Solution.java)| Medium | Array, Tree, Graph, Depth_First_Search, Breadth_First_Search | 20 | 100.00
