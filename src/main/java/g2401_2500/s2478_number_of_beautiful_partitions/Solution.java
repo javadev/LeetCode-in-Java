@@ -14,7 +14,8 @@ public class Solution {
             dp[0][i] = prime(cs[i]) ? 1 : 0;
         }
         for (int i = 1; i < k; ++i) {
-            for (int j = n - i * l, sum = 0; 0 <= j; --j) {
+            int sum = 0;
+            for (int j = n - i * l; 0 <= j; --j) {
                 int mod = (int) 1e9 + 7;
                 if (0 == dp[i - 1][j]) {
                     dp[i - 1][j] = sum;
@@ -22,7 +23,8 @@ public class Solution {
                     sum = (sum + dp[i - 1][j]) % mod;
                 }
             }
-            for (int j = 0, p = l - 1; j + l * i < n; ++j) {
+            int p = l - 1;
+            for (int j = 0; j + l * i < n; ++j) {
                 if (!prime(cs[j])) {
                     continue;
                 }

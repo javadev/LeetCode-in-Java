@@ -12,7 +12,9 @@ public class Solution {
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         int n = roads.length + 1;
         ans = 0L;
-        for (int i = 0; i < n; i++) adj.add(new ArrayList<>());
+        for (int i = 0; i < n; i++) {
+            adj.add(new ArrayList<>());
+        }
         for (int[] a : roads) {
             adj.get(a[0]).add(a[1]);
             adj.get(a[1]).add(a[0]);
