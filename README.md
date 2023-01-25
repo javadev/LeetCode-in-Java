@@ -1848,6 +1848,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.17'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2483 |[Minimum Penalty for a Shop](src/main/java/g2401_2500/s2483_minimum_penalty_for_a_shop/Solution.java)| Medium | String, Prefix_Sum | 17 | 69.62
+| 2482 |[Difference Between Ones and Zeros in Row and Column](src/main/java/g2401_2500/s2482_difference_between_ones_and_zeros_in_row_and_column/Solution.java)| Medium | Array, Matrix, Simulation | 9 | 94.05
+| 2481 |[Minimum Cuts to Divide a Circle](src/main/java/g2401_2500/s2481_minimum_cuts_to_divide_a_circle/Solution.java)| Easy | Math, Geometry | 0 | 100.00
+| 2478 |[Number of Beautiful Partitions](src/main/java/g2401_2500/s2478_number_of_beautiful_partitions/Solution.java)| Hard | String, Dynamic_Programming | 44 | 90.08
+| 2477 |[Minimum Fuel Cost to Report to the Capital](src/main/java/g2401_2500/s2477_minimum_fuel_cost_to_report_to_the_capital/Solution.java)| Medium | Tree, Graph, Breadth_First_Search, Depth_First_Search | 70 | 72.49
 | 2476 |[Closest Nodes Queries in a Binary Search Tree](src/main/java/g2401_2500/s2476_closest_nodes_queries_in_a_binary_search_tree/Solution.java)| Medium | Array, Tree, Binary_Search, Binary_Tree, Depth_First_Search | 185 | 51.92
 | 2475 |[Number of Unequal Triplets in Array](src/main/java/g2401_2500/s2475_number_of_unequal_triplets_in_array/Solution.java)| Easy | Array, Hash_Table | 1 | 97.49
 | 2472 |[Maximum Number of Non-overlapping Palindrome Substrings](src/main/java/g2401_2500/s2472_maximum_number_of_non_overlapping_palindrome_substrings/Solution.java)| Hard | String, Dynamic_Programming | 2 | 91.04
