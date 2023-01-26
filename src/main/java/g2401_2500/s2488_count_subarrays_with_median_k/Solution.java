@@ -16,7 +16,8 @@ public class Solution {
             }
         }
         int[][] arr = new int[n - idx][2];
-        for (int i = idx + 1, j = 1; i < n; i++) {
+        int j = 1;
+        for (int i = idx + 1; i < n; i++) {
             if (nums[i] < k) {
                 arr[j][0] = arr[j - 1][0] + 1;
                 arr[j][1] = arr[j - 1][1];
