@@ -1848,6 +1848,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.17'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2488 |[Count Subarrays With Median K](src/main/java/g2401_2500/s2488_count_subarrays_with_median_k/Solution.java)| Hard | Array, Hash_Table, Prefix_Sum | 24 | 72.25
+| 2487 |[Remove Nodes From Linked List](src/main/java/g2401_2500/s2487_remove_nodes_from_linked_list/Solution.java)| Medium | Stack, Linked_List, Monotonic_Stack, Recursion | 5 | 99.79
+| 2486 |[Append Characters to String to Make Subsequence](src/main/java/g2401_2500/s2486_append_characters_to_string_to_make_subsequence/Solution.java)| Medium | String, Greedy, Two_Pointers | 2 | 99.89
+| 2485 |[Find the Pivot Integer](src/main/java/g2401_2500/s2485_find_the_pivot_integer/Solution.java)| Easy | Math, Prefix_Sum | 1 | 95.67
+| 2484 |[Count Palindromic Subsequences](src/main/java/g2401_2500/s2484_count_palindromic_subsequences/Solution.java)| Hard | String, Dynamic_Programming | 93 | 76.16
 | 2483 |[Minimum Penalty for a Shop](src/main/java/g2401_2500/s2483_minimum_penalty_for_a_shop/Solution.java)| Medium | String, Prefix_Sum | 17 | 69.62
 | 2482 |[Difference Between Ones and Zeros in Row and Column](src/main/java/g2401_2500/s2482_difference_between_ones_and_zeros_in_row_and_column/Solution.java)| Medium | Array, Matrix, Simulation | 9 | 94.05
 | 2481 |[Minimum Cuts to Divide a Circle](src/main/java/g2401_2500/s2481_minimum_cuts_to_divide_a_circle/Solution.java)| Easy | Math, Geometry | 0 | 100.00
