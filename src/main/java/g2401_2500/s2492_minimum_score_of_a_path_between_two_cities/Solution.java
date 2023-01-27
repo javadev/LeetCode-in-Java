@@ -25,6 +25,6 @@ public class Solution {
     }
 
     private int find(int i) {
-        return dsu[i] == i ? i : (dsu[i] = find(dsu[i]));
+        return dsu[i] == i ? i : find(dsu[i]);
     }
 }

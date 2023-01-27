@@ -7,10 +7,8 @@ public class Solution {
         char[] letters = sentence.toCharArray();
         int len = letters.length;
         for (int i = 0; i < len - 1; ++i) {
-            if (letters[i] == ' ') {
-                if (letters[i - 1] != letters[i + 1]) {
-                    return false;
-                }
+            if (letters[i] == ' ' && letters[i - 1] != letters[i + 1]) {
+                return false;
             }
         }
         return letters[0] == letters[len - 1];
