@@ -24,7 +24,7 @@ public class Solution {
     }
 
     private long solve(ArrayList<ArrayList<Integer>> adj, int seats, int src, int parent) {
-        int people = 1;
+        long people = 1L;
         for (int i : adj.get(src)) {
             if (i != parent) {
                 people += solve(adj, seats, i, src);
