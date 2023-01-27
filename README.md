@@ -1848,6 +1848,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.17'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2496 |[Maximum Value of a String in an Array](src/main/java/g2401_2500/s2496_maximum_value_of_a_string_in_an_array/Solution.java)| Easy | Array, String | 1 | 92.00
+| 2493 |[Divide Nodes Into the Maximum Number of Groups](src/main/java/g2401_2500/s2493_divide_nodes_into_the_maximum_number_of_groups/Solution.java)| Hard | Graph, Union_Find, Breadth_First_Search | 443 | 77.02
+| 2492 |[Minimum Score of a Path Between Two Cities](src/main/java/g2401_2500/s2492_minimum_score_of_a_path_between_two_cities/Solution.java)| Medium | Graph, Union_Find, Depth_First_Search, Breadth_First_Search | 13 | 92.82
+| 2491 |[Divide Players Into Teams of Equal Skill](src/main/java/g2401_2500/s2491_divide_players_into_teams_of_equal_skill/Solution.java)| Medium | Array, Hash_Table, Sorting, Two_Pointers | 21 | 70.31
+| 2490 |[Circular Sentence](src/main/java/g2401_2500/s2490_circular_sentence/Solution.java)| Easy | String | 1 | 99.85
 | 2488 |[Count Subarrays With Median K](src/main/java/g2401_2500/s2488_count_subarrays_with_median_k/Solution.java)| Hard | Array, Hash_Table, Prefix_Sum | 24 | 72.25
 | 2487 |[Remove Nodes From Linked List](src/main/java/g2401_2500/s2487_remove_nodes_from_linked_list/Solution.java)| Medium | Stack, Linked_List, Monotonic_Stack, Recursion | 5 | 99.79
 | 2486 |[Append Characters to String to Make Subsequence](src/main/java/g2401_2500/s2486_append_characters_to_string_to_make_subsequence/Solution.java)| Medium | String, Greedy, Two_Pointers | 2 | 99.89
