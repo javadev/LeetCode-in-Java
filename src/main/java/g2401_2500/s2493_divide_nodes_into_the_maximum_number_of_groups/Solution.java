@@ -22,7 +22,8 @@ public class Solution {
             adj.get(edge[1]).add(edge[0]);
         }
         int[] comp = new int[n + 1];
-        int count = -1, ans = 0;
+        int count = -1;
+        int ans = 0;
         for (int i = 1; i <= n; i++) {
             if (visited[i] == -1) {
                 count++;

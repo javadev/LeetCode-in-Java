@@ -13,7 +13,9 @@ public class Solution {
         int sum = skill[i] + skill[j];
         long p = 0;
         while (i < j) {
-            if (skill[i] + skill[j] != sum) return -1;
+            if (skill[i] + skill[j] != sum) {
+                return -1;
+            }
             p += ((long) skill[i] * skill[j]);
             i++;
             j--;
