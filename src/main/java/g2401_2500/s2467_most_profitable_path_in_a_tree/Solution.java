@@ -1,6 +1,6 @@
 package g2401_2500.s2467_most_profitable_path_in_a_tree;
 
-// #Medium #Array #Tree #Graph #Depth_First_Search #Breadth_First_Search
+// #Medium #Array #Depth_First_Search #Breadth_First_Search #Tree #Graph
 // #2023_01_11_Time_20_ms_(100.00%)_Space_94_MB_(96.10%)
 
 import java.util.Arrays;

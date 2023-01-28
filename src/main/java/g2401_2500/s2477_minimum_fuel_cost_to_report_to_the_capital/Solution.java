@@ -1,6 +1,6 @@
 package g2401_2500.s2477_minimum_fuel_cost_to_report_to_the_capital;
 
-// #Medium #Tree #Graph #Breadth_First_Search #Depth_First_Search
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Graph
 // #2023_01_25_Time_70_ms_(72.49%)_Space_102.5_MB_(74.76%)
 
 import java.util.ArrayList;
