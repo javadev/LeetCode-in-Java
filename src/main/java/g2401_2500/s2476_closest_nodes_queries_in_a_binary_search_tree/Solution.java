@@ -1,6 +1,6 @@
 package g2401_2500.s2476_closest_nodes_queries_in_a_binary_search_tree;
 
-// #Medium #Array #Tree #Binary_Search #Binary_Tree #Depth_First_Search
+// #Medium #Array #Depth_First_Search #Tree #Binary_Search #Binary_Tree
 // #2023_01_24_Time_185_ms_(51.92%)_Space_98.4_MB_(75.00%)
 
 import com_github_leetcode.TreeNode;
