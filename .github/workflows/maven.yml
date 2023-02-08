@@ -9,6 +9,7 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions: read-all
 jobs:
   build-linux:
     name: build-linux
