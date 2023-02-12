@@ -11,4 +11,9 @@ class SolutionTest {
     void findAnagrams() {
         assertThat(new Solution().findAnagrams("cbaebabacd", "abc"), equalTo(Arrays.asList(0, 6)));
     }
+
+    @Test
+    void findAnagrams2() {
+        assertThat(new Solution().findAnagrams("abab", "ab"), equalTo(Arrays.asList(0, 1, 2)));
+    }
 }
