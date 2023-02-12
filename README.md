@@ -1848,6 +1848,10 @@ implementation 'com.github.javadev:leetcode-in-java:1.18'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2500 |[Delete Greatest Value in Each Row](src/main/java/g2401_2500/s2500_delete_greatest_value_in_each_row/Solution.java)| Easy | Array, Sorting, Matrix | 3 | 98.16
+| 2499 |[Minimum Total Cost to Make Arrays Unequal](src/main/java/g2401_2500/s2499_minimum_total_cost_to_make_arrays_unequal/Solution.java)| Hard | Array, Hash_Table, Greedy, Counting | 3 | 100.00
+| 2498 |[Frog Jump II](src/main/java/g2401_2500/s2498_frog_jump_ii/Solution.java)| Medium | Array, Greedy, Binary_Search | 1 | 100.00
+| 2497 |[Maximum Star Sum of a Graph](src/main/java/g2401_2500/s2497_maximum_star_sum_of_a_graph/Solution.java)| Medium | Array, Sorting, Greedy, Heap_Priority_Queue, Graph | 36 | 97.50
 | 2496 |[Maximum Value of a String in an Array](src/main/java/g2401_2500/s2496_maximum_value_of_a_string_in_an_array/Solution.java)| Easy | Array, String | 1 | 92.00
 | 2493 |[Divide Nodes Into the Maximum Number of Groups](src/main/java/g2401_2500/s2493_divide_nodes_into_the_maximum_number_of_groups/Solution.java)| Hard | Breadth_First_Search, Graph, Union_Find | 443 | 77.02
 | 2492 |[Minimum Score of a Path Between Two Cities](src/main/java/g2401_2500/s2492_minimum_score_of_a_path_between_two_cities/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 13 | 92.82
