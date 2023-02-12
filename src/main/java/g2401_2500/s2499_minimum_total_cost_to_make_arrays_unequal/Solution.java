@@ -21,7 +21,9 @@ public class Solution {
             }
         }
         int requiredBucket = 2 * max;
-        if (requiredBucket > n) return -1;
+        if (requiredBucket > n) {
+            return -1;
+        }
         int lackBucket = requiredBucket - totalBucket;
         for (int i = 0; i < n && lackBucket > 0; i++) {
             if (nums1[i] == maxKey || nums2[i] == maxKey || nums1[i] == nums2[i]) {
