@@ -25,12 +25,15 @@ public class Solution {
             return -1;
         }
         int lackBucket = requiredBucket - totalBucket;
-        for (int i = 0; i < n && lackBucket > 0; i++) {
+        int i = 0;
+        while (i < n && lackBucket > 0) {
             if (nums1[i] == maxKey || nums2[i] == maxKey || nums1[i] == nums2[i]) {
+                i++;
                 continue;
             }
             lackBucket--;
             cost += i;
+            i++;
         }
         if (lackBucket > 0) {
             return -1;
