@@ -9,7 +9,6 @@ public class Solution {
     private PriorityQueue<Integer>[] graphNodeIdToNodeValues;
 
     public int maxStarSum(int[] nodeValues, int[][] edges, int maxNumberOfEdges) {
-
         final int totalNodes = nodeValues.length;
         graphNodeIdToNodeValues = new PriorityQueue[totalNodes];
         for (int i = 0; i < totalNodes; ++i) {
