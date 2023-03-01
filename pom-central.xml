@@ -96,7 +96,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.3.1</version>
+                <version>3.4.1</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -107,16 +107,25 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <failOnError>false</failOnError>
-                    <additionalparam>-Xdoclint:all -Xdoclint:-missing</additionalparam>
-                    <additionalOptions>-Xdoclint:all -Xdoclint:-missing</additionalOptions>
-                    <doclet>ch.raffael.doclets.pegdown.PegdownDoclet</doclet>
-                    <docletArtifact>
-                        <groupId>ch.raffael.pegdown-doclet</groupId>
-                        <artifactId>pegdown-doclet</artifactId>
-                        <version>1.3</version>
-                    </docletArtifact>
                     <useStandardDocletOptions>true</useStandardDocletOptions>
+                    <doclet>org.jdrupes.mdoclet.MDoclet</doclet>
+                    <docletArtifacts>
+                        <docletArtifact>
+                            <groupId>org.jdrupes.mdoclet</groupId>
+                            <artifactId>doclet</artifactId>
+                            <version>1.0.10</version>
+                        </docletArtifact>
+                        <docletArtifact>
+                            <groupId>com.vladsch.flexmark</groupId>
+                            <artifactId>flexmark-all</artifactId>
+                            <version>0.64.0</version>
+                        </docletArtifact>
+                    </docletArtifacts>
+                    <additionalDependencies>
+                    </additionalDependencies>
+                    <additionalJOptions>
+                        <additionalJOption>-Xdoclint:all -Xdoclint:-missing</additionalJOption>
+                    </additionalJOptions>
                 </configuration>
             </plugin>
             <plugin>

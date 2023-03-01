@@ -96,7 +96,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.3.1</version>
+                <version>3.4.1</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -107,9 +107,26 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <failOnError>false</failOnError>
-                    <additionalparam>-Xdoclint:all -Xdoclint:-missing</additionalparam>
-                    <additionalOptions>-Xdoclint:all -Xdoclint:-missing</additionalOptions>
+                    <useStandardDocletOptions>true</useStandardDocletOptions>
+                    <doclet>org.jdrupes.mdoclet.MDoclet</doclet>
+                    <docletArtifacts>
+                        <docletArtifact>
+                            <groupId>org.jdrupes.mdoclet</groupId>
+                            <artifactId>doclet</artifactId>
+                            <version>3.1.0</version>
+                        </docletArtifact>
+                        <docletArtifact>
+                            <groupId>com.vladsch.flexmark</groupId>
+                            <artifactId>flexmark-all</artifactId>
+                            <version>0.64.0</version>
+                        </docletArtifact>
+                    </docletArtifacts>
+                    <additionalDependencies>
+                    </additionalDependencies>
+                    <additionalJOptions>
+                        <additionalJOption>-J--add-exports=jdk.javadoc/jdk.javadoc.internal.tool=ALL-UNNAMED</additionalJOption>
+                        <additionalJOption>-J--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED</additionalJOption>
+                    </additionalJOptions>
                 </configuration>
             </plugin>
             <plugin>

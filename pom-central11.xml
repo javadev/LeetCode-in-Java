@@ -121,7 +121,6 @@
                             <version>0.64.0</version>
                         </docletArtifact>
                     </docletArtifacts>
-                    <!--  Note: additionalDependencies are added to the -classpath, not the docletpath -->
                     <additionalDependencies>
                     </additionalDependencies>
                     <additionalJOptions>
