@@ -5,6 +5,7 @@ package g2401_2500.s2497_maximum_star_sum_of_a_graph;
 
 import java.util.PriorityQueue;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private PriorityQueue<Integer>[] graphNodeIdToNodeValues;
 
