@@ -113,12 +113,12 @@
                         <docletArtifact>
                             <groupId>org.jdrupes.mdoclet</groupId>
                             <artifactId>doclet</artifactId>
-                            <version>1.0.10</version>
+                            <version>1.1.0</version>
                         </docletArtifact>
                         <docletArtifact>
                             <groupId>com.vladsch.flexmark</groupId>
                             <artifactId>flexmark-all</artifactId>
-                            <version>0.64.0</version>
+                            <version>0.28.38</version>
                         </docletArtifact>
                     </docletArtifacts>
                     <additionalDependencies>
