@@ -6,20 +6,20 @@ package g2501_2600.s2501_longest_square_streak_in_an_array;
 public class Solution {
     public int longestSquareStreak(int[] nums) {
         int result = -1;
-        final int MAX = 100000;
-        boolean[] isExisted = new boolean[MAX + 1];
-        boolean[] isVisited = new boolean[MAX + 1];
+        final int max = 100000;
+        boolean[] isExisted = new boolean[max + 1];
+        boolean[] isVisited = new boolean[max + 1];
         for (int num : nums) {
             isExisted[num] = true;
         }
-        for (int i = 2; i * i <= MAX; i++) {
+        for (int i = 2; i * i <= max; i++) {
             if (!isExisted[i] || isVisited[i]) {
                 continue;
             }
             isVisited[i] = true;
             int length = 1;
             int j = i * i;
-            while (j >= 0 && j <= MAX && isExisted[j]) {
+            while (j >= 0 && j <= max && isExisted[j]) {
                 isVisited[j] = true;
                 length++;
                 j = j * j;
