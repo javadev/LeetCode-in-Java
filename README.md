@@ -1848,6 +1848,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.19'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2502 |[Design Memory Allocator](src/main/java/g2501_2600/s2502_design_memory_allocator/Allocator.java)| Medium | Array, Hash_Table, Design, Simulation | 9 | 100.00
+| 2501 |[Longest Square Streak in an Array](src/main/java/g2501_2600/s2501_longest_square_streak_in_an_array/Solution.java)| Medium | Array, Hash_Table, Dynamic_Programming, Sorting, Binary_Search | 4 | 99.73
 | 2500 |[Delete Greatest Value in Each Row](src.save/main/java/g2401_2500/s2500_delete_greatest_value_in_each_row/Solution.java)| Easy | Array, Sorting, Matrix | 3 | 98.16
 | 2499 |[Minimum Total Cost to Make Arrays Unequal](src.save/main/java/g2401_2500/s2499_minimum_total_cost_to_make_arrays_unequal/Solution.java)| Hard | Array, Hash_Table, Greedy, Counting | 3 | 100.00
 | 2498 |[Frog Jump II](src.save/main/java/g2401_2500/s2498_frog_jump_ii/Solution.java)| Medium | Array, Greedy, Binary_Search | 1 | 100.00
