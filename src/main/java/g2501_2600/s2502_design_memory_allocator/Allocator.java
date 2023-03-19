@@ -19,7 +19,6 @@ public class Allocator {
         if (cur == null) {
             return -1;
         }
-
         if (cur.size == size) {
             cur.id = mID;
             return cur.ind;
