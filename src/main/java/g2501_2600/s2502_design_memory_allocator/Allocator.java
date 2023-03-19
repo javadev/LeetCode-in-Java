@@ -39,13 +39,17 @@ public class Allocator {
 
     public int collapse(Node cur, int id) {
         // base case
-        if (cur == null) return 0;
+        if (cur == null) {
+            return 0;
+        }
         // include size if matching id
         int res = cur.id == id ? cur.size : 0;
         // recurse on child
         res += collapse(cur.next, id);
         // unallocate
-        if (cur.id == id) cur.id = -1;
+        if (cur.id == id) {
+            cur.id = -1;
+        }
         // collapse unallocated adjacent nodes
         while (cur.next != null && cur.next.id == -1 && cur.id == -1) {
             cur.size += cur.next.size;
