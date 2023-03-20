@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.javadev</groupId>
-    <artifactId>leetcode-in-java</artifactId>
+    <artifactId>leetcode-in-java11</artifactId>
     <packaging>jar</packaging>
     <version>1.19</version>
     <name>leetcode-in-java</name>
@@ -42,10 +42,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.0</version>
+                <version>3.11.0</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>11</source>
+                    <target>11</target>
                     <encoding>UTF-8</encoding>
                     <compilerArgs>
                         <arg>-Xlint:unchecked</arg>
@@ -56,7 +56,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
+                <version>3.0.0</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.junit.jupiter</groupId>
@@ -113,18 +113,19 @@
                         <docletArtifact>
                             <groupId>org.jdrupes.mdoclet</groupId>
                             <artifactId>doclet</artifactId>
-                            <version>1.1.0</version>
+                            <version>2.2.0</version>
                         </docletArtifact>
                         <docletArtifact>
                             <groupId>com.vladsch.flexmark</groupId>
                             <artifactId>flexmark-all</artifactId>
-                            <version>0.28.38</version>
+                            <version>0.62.2</version>
                         </docletArtifact>
                     </docletArtifacts>
                     <additionalDependencies>
                     </additionalDependencies>
                     <additionalJOptions>
-                        <additionalJOption>-Xdoclint:all -Xdoclint:-missing</additionalJOption>
+                        <additionalJOption>-J--add-exports=jdk.javadoc/jdk.javadoc.internal.tool=ALL-UNNAMED</additionalJOption>
+                        <additionalJOption>-J--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED</additionalJOption>
                     </additionalJOptions>
                 </configuration>
             </plugin>
