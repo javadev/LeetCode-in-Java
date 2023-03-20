@@ -29,8 +29,8 @@ public class Solution {
             }
         }
         int pairs = 0;
-        for (String key : map.keySet()) {
-            int freq = map.get(key);
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            int freq = entry.getValue();
             if (freq > 1) {
                 pairs += (freq * (freq - 1)) / 2;
             }

@@ -28,7 +28,7 @@ public class Solution {
         if ((oddNodes.size() & 1) == 1) {
             // can only have even numbers of odd nodes
             return false;
-        } else if (oddNodes.size() == 0) {
+        } else if (oddNodes.isEmpty()) {
             // zero situation
             return true;
         }
