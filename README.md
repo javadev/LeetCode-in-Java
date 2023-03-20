@@ -1848,6 +1848,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.19'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2509 |[Cycle Length Queries in a Tree](src/main/java/g2501_2600/s2509_cycle_length_queries_in_a_tree/Solution.java)| Hard | Tree, Binary_Tree | 12 | 99.26
+| 2508 |[Add Edges to Make Degrees of All Nodes Even](src/main/java/g2501_2600/s2508_add_edges_to_make_degrees_of_all_nodes_even/Solution.java)| Hard | Hash_Table, Graph | 33 | 100.00
+| 2507 |[Smallest Value After Replacing With Sum of Prime Factors](src/main/java/g2501_2600/s2507_smallest_value_after_replacing_with_sum_of_prime_factors/Solution.java)| Medium | Math, Number_Theory | 1 | 84.27
+| 2506 |[Count Pairs Of Similar Strings](src/main/java/g2501_2600/s2506_count_pairs_of_similar_strings/Solution.java)| Easy | Array, String, Hash_Table | 6 | 85.15
+| 2503 |[Maximum Number of Points From Grid Queries](src/main/java/g2501_2600/s2503_maximum_number_of_points_from_grid_queries/Solution.java)| Hard | Array, Sorting, Breadth_First_Search, Heap_Priority_Queue, Union_Find | 47 | 96.38
 | 2502 |[Design Memory Allocator](src/main/java/g2501_2600/s2502_design_memory_allocator/Allocator.java)| Medium | Array, Hash_Table, Design, Simulation | 9 | 100.00
 | 2501 |[Longest Square Streak in an Array](src/main/java/g2501_2600/s2501_longest_square_streak_in_an_array/Solution.java)| Medium | Array, Hash_Table, Dynamic_Programming, Sorting, Binary_Search | 4 | 99.73
 | 2500 |[Delete Greatest Value in Each Row](src.save/main/java/g2401_2500/s2500_delete_greatest_value_in_each_row/Solution.java)| Easy | Array, Sorting, Matrix | 3 | 98.16

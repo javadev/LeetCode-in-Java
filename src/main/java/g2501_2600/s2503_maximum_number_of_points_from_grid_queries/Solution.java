@@ -1,6 +1,6 @@
 package g2501_2600.s2503_maximum_number_of_points_from_grid_queries;
 
-// #Hard #Array #Sorting #Heap_Priority_Queue #Union_Find #Breadth_First_Search
+// #Hard #Array #Sorting #Breadth_First_Search #Heap_Priority_Queue #Union_Find
 // #2023_03_20_Time_47_ms_(96.38%)_Space_59.9_MB_(49.28%)
 
 import java.util.ArrayDeque;
