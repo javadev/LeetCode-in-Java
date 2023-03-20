@@ -8,14 +8,18 @@ import java.util.Map;
 public class Solution {
     public int similarPairs(String[] words) {
         int len = words.length;
-        if (len == 1) return 0;
+        if (len == 1) {
+            return 0;
+        }
         byte[][] alPh = new byte[len][26];
         Map<String, Integer> map = new HashMap<>();
         for (int i = 0; i < len; i++) {
             String word = words[i];
             for (char c : word.toCharArray()) {
                 int idx = c - 'a';
-                if (alPh[i][idx] == 0) alPh[i][idx]++;
+                if (alPh[i][idx] == 0) {
+                    alPh[i][idx]++;
+                }
             }
             String s = new String(alPh[i]);
             if (map.containsKey(s)) {

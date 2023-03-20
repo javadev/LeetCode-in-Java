@@ -20,12 +20,12 @@ public class Solution {
             return memo.get(n);
         }
         double r = Math.pow(n, 0.5);
-        int R = (int) r;
-        if (r - R == 0) {
-            return 2 * get(R);
+        int r1 = (int) r;
+        if (r - r1 == 0) {
+            return 2 * get(r1);
         }
         int res = 0;
-        for (int i = R; i >= 2; i--) {
+        for (int i = r1; i >= 2; i--) {
             if (n % i == 0) {
                 res = get(i) + get(n / i);
             }
