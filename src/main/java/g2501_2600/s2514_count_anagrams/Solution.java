@@ -10,14 +10,16 @@ public class Solution {
 
     public int countAnagrams(String s) {
         var charArray = s.toCharArray();
-        long ans = 1L, mul = 1L;
+        long ans = 1L;
+        long mul = 1L;
         var cnt = new int[26];
-        for (int i = 0, j = 0; i < charArray.length; ++i) {
-            if (charArray[i] == ' ') {
+        int j = 0;
+        for (char c : charArray) {
+            if (c == ' ') {
                 Arrays.fill(cnt, 0);
                 j = 0;
             } else {
-                mul = mul * ++cnt[charArray[i] - 'a'] % MOD;
+                mul = mul * ++cnt[c - 'a'] % MOD;
                 ans = ans * ++j % MOD;
             }
         }

@@ -14,6 +14,9 @@ public class Solution {
     public int minimizeSet(int divisor1, int divisor2, int uniqueCnt1, int uniqueCnt2) {
         long lo = 1;
         long hi = (int) 10e10;
+        if (divisor2 == 0) {
+            divisor2 = 1;
+        }
         long lcm = ((long) divisor1 * (long) divisor2) / gcd(divisor1, divisor2);
         while (lo < hi) {
             long mi = lo + (hi - lo) / 2;

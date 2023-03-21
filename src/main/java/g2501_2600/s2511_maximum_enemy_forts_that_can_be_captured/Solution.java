@@ -4,8 +4,10 @@ package g2501_2600.s2511_maximum_enemy_forts_that_can_be_captured;
 
 public class Solution {
     public int captureForts(int[] forts) {
-        int maxCapture = 0, n = forts.length;
-        for (int i = 0; i < n; i++) {
+        int maxCapture = 0;
+        int n = forts.length;
+        int i = 0;
+        while (i < n) {
             if (forts[i] == 1) {
                 int currMax = 0;
                 i++;
@@ -25,6 +27,7 @@ public class Solution {
                 if (i < n && forts[i] == 1) maxCapture = Math.max(maxCapture, currMax);
                 i--;
             }
+            i++;
         }
         return maxCapture;
     }

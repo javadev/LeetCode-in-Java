@@ -10,16 +10,16 @@ import java.util.PriorityQueue;
 
 public class Solution {
     public List<Integer> topStudents(
-            String[] positive_feedback,
-            String[] negative_feedback,
+            String[] positiveFeedback,
+            String[] negativeFeedback,
             String[] report,
-            int[] student_id,
+            int[] studentId,
             int k) {
         HashMap<String, Integer> feedback = new HashMap<>();
-        for (String s : positive_feedback) {
+        for (String s : positiveFeedback) {
             feedback.put(s, 3);
         }
-        for (String s : negative_feedback) {
+        for (String s : negativeFeedback) {
             feedback.put(s, -1);
         }
         PriorityQueue<Student> pq =
@@ -34,7 +34,7 @@ public class Solution {
             for (String subStr : split) {
                 sum += feedback.getOrDefault(subStr, 0);
             }
-            pq.offer(new Student(student_id[i], sum));
+            pq.offer(new Student(studentId[i], sum));
         }
         List<Integer> result = new ArrayList<>();
         while (!pq.isEmpty() && k-- > 0) {
