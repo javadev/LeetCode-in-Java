@@ -1848,6 +1848,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.19'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2515 |[Shortest Distance to Target String in a Circular Array](src/main/java/g2501_2600/s2515_shortest_distance_to_target_string_in_a_circular_array/Solution.java)| Easy | Array, String | 1 | 62.21
+| 2514 |[Count Anagrams](src/main/java/g2501_2600/s2514_count_anagrams/Solution.java)| Hard | String, Hash_Table, Math, Counting, Combinatorics | 22 | 100.00
+| 2513 |[Minimize the Maximum of Two Arrays](src/main/java/g2501_2600/s2513_minimize_the_maximum_of_two_arrays/Solution.java)| Medium | Math, Binary_Search, Number_Theory | 0 | 100.00
+| 2512 |[Reward Top K Students](src/main/java/g2501_2600/s2512_reward_top_k_students/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Heap_Priority_Queue | 72 | 94.76
+| 2511 |[Maximum Enemy Forts That Can Be Captured](src/main/java/g2501_2600/s2511_maximum_enemy_forts_that_can_be_captured/Solution.java)| Easy | Array, Two_Pointers | 0 | 100.00
 | 2509 |[Cycle Length Queries in a Tree](src/main/java/g2501_2600/s2509_cycle_length_queries_in_a_tree/Solution.java)| Hard | Tree, Binary_Tree | 12 | 99.26
 | 2508 |[Add Edges to Make Degrees of All Nodes Even](src/main/java/g2501_2600/s2508_add_edges_to_make_degrees_of_all_nodes_even/Solution.java)| Hard | Hash_Table, Graph | 33 | 100.00
 | 2507 |[Smallest Value After Replacing With Sum of Prime Factors](src/main/java/g2501_2600/s2507_smallest_value_after_replacing_with_sum_of_prime_factors/Solution.java)| Medium | Math, Number_Theory | 1 | 84.27
