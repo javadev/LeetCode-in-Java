@@ -29,7 +29,9 @@ public class Solution {
     private long pow(long x, int n) {
         var res = 1L;
         for (; n > 0; n /= 2) {
-            if (n % 2 > 0) res = res * x % MOD;
+            if (n % 2 > 0) {
+                res = res * x % MOD;
+            }
             x = x * x % MOD;
         }
         return res;

@@ -15,7 +15,9 @@ public class Solution {
                     currMax++;
                     i++;
                 }
-                if (i < n && forts[i] == -1) maxCapture = Math.max(maxCapture, currMax);
+                if (i < n && forts[i] == -1) {
+                    maxCapture = Math.max(maxCapture, currMax);
+                }
                 i--;
             } else if (forts[i] == -1) {
                 int currMax = 0;
@@ -24,7 +26,9 @@ public class Solution {
                     currMax++;
                     i++;
                 }
-                if (i < n && forts[i] == 1) maxCapture = Math.max(maxCapture, currMax);
+                if (i < n && forts[i] == 1) {
+                    maxCapture = Math.max(maxCapture, currMax);
+                }
                 i--;
             }
             i++;
