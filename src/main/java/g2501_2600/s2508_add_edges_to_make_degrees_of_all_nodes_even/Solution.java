@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public boolean isPossible(int n, List<List<Integer>> edges) {
         // first find odd edge nodes
