@@ -8,8 +8,8 @@ public class Solution {
             return -1;
         }
         int ans = Integer.MAX_VALUE;
-        int cnt[] = new int[3];
-        char arr[] = s.toCharArray();
+        int[] cnt = new int[3];
+        char[] arr = s.toCharArray();
         for(char ch : arr) {
             cnt[ch - 'a']++;
         }
@@ -19,9 +19,9 @@ public class Solution {
         ans = arr.length;
         int i = 0;
         int j = 0;
-        while(j < arr.length) {
+        while (j < arr.length) {
             cnt[arr[j] - 'a']--;
-            if(cnt[0] >= k && cnt[1] >= k && cnt[2] >= k) {
+            if (cnt[0] >= k && cnt[1] >= k && cnt[2] >= k) {
                 ans = Math.min(ans, arr.length - (j - i + 1));
                 j++;
             } else {
