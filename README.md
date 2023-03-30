@@ -1848,6 +1848,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.19'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2516 |[Take K of Each Character From Left and Right](src/main/java/g2501_2600/s2516_take_k_of_each_character_from_left_and_right/Solution.java)| Medium | String, Hash_Table, Sliding_Window | 6 | 94.24
 | 2515 |[Shortest Distance to Target String in a Circular Array](src/main/java/g2501_2600/s2515_shortest_distance_to_target_string_in_a_circular_array/Solution.java)| Easy | Array, String | 1 | 62.21
 | 2514 |[Count Anagrams](src/main/java/g2501_2600/s2514_count_anagrams/Solution.java)| Hard | String, Hash_Table, Math, Counting, Combinatorics | 22 | 100.00
 | 2513 |[Minimize the Maximum of Two Arrays](src/main/java/g2501_2600/s2513_minimize_the_maximum_of_two_arrays/Solution.java)| Medium | Math, Binary_Search, Number_Theory | 0 | 100.00
