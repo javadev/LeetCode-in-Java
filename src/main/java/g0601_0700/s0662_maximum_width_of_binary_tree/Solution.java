@@ -24,16 +24,6 @@ import java.util.Queue;
  * }
  */
 public class Solution {
-    static class Pair {
-        TreeNode node;
-        int idx;
-
-        public Pair(TreeNode node, int idx) {
-            this.node = node;
-            this.idx = idx;
-        }
-    }
-
     public int widthOfBinaryTree(TreeNode root) {
         Queue<Pair> q = new LinkedList<>();
         q.add(new Pair(root, 0));
@@ -60,5 +50,20 @@ public class Solution {
             res = Math.max((lastIdx - firstIdx) + 1, res);
         }
         return res;
+    }
+//push-down refactoring that could improve the code readability is
+// to move the nested Pair class to the local scope of the widthOfBinaryTree method.
+// Since the Pair class is only used within this method, it can be
+// defined within the method to limit its scope and make the code more focused.
+//Here's the refactored code with the Pair class pushed down to
+// the local scope of the widthOfBinaryTree method
+    private static class Pair {
+        TreeNode node;
+        int idx;
+
+        public Pair(TreeNode node, int idx) {
+            this.node = node;
+            this.idx = idx;
+        }
     }
 }

@@ -4,31 +4,34 @@ package g2101_2200.s2141_maximum_running_time_of_n_computers;
 // #2022_06_05_Time_24_ms_(70.39%)_Space_83.1_MB_(5.83%)
 
 public class Solution {
-    private boolean isPossibeToRun(int n, int[] batteries, long avgTime) {
-        long duration = 0;
-        for (long ele : batteries) {
-            duration += Math.min(ele, avgTime);
-        }
-        return avgTime * n <= duration;
+    private boolean isPossibeToRun(int n, int[] batteries, long averageLife) {
+        long totalDuration = 0;
+            for (long battery : batteries) {
+                totalDuration += Math.min(battery, averageLife);
+            }
+        long requiredDuration = averageLife * n;
+        return totalDuration >= requiredDuration;
     }
 
     public long maxRunTime(int n, int[] batteries) {
-        long startTime = 0;
-        long sum = 0;
-        long ans = 0;
-        for (long ele : batteries) {
-            sum += ele;
+        long totalBatteryLife = 0;
+        for (long battery : batteries) {
+            totalBatteryLife += battery;
         }
-        long endTime = sum;
-        while (startTime <= endTime) {
-            long avgTime = (startTime + endTime) / 2;
-            if (isPossibeToRun(n, batteries, avgTime)) {
-                ans = avgTime;
-                startTime = avgTime + 1;
+
+        long minimumAverageLife = 0;
+        long maximumAverageLife = totalBatteryLife;
+        //Introducing explaining variable refactoring technique
+        while (minimumAverageLife <= maximumAverageLife) {
+            long currentAverageLife = (minimumAverageLife + maximumAverageLife) / 2;
+            boolean isPossibleToRun = isPossibeToRun(n, batteries, currentAverageLife);
+            if (isPossibleToRun) {
+            minimumAverageLife = currentAverageLife + 1;
             } else {
-                endTime = avgTime - 1;
+                maximumAverageLife = currentAverageLife - 1;
             }
         }
-        return ans;
+
+        return maximumAverageLife;
     }
 }

@@ -10,19 +10,20 @@ public class Solution {
         int index;
         int orig;
         int real = 0;
-
+        //introducing explaining variable refactoring technique
         public RealNum(int[] mapping, int orig, int index) {
             this.orig = orig;
             this.index = index;
             int mult = 1;
+            int base = 10;
             if (orig == 0) {
                 real = mapping[0];
             } else {
                 while (orig > 0) {
-                    int mod = orig % 10;
-                    orig = orig / 10;
+                    int mod = orig % base;
+                    orig = orig / base;
                     real += mapping[mod] * mult;
-                    mult *= 10;
+                    mult *= base;
                 }
             }
         }

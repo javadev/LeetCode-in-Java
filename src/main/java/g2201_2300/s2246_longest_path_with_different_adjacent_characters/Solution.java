@@ -45,14 +45,7 @@ public class Solution {
             // if letters isn't equal
             if (s.charAt(parent[i]) != s.charAt(i)) {
                 // fetch maximal path from node
-                int maxi = 1 + Math.max(first[i], second[i]);
-                // and update maximal first and second path from parent
-                if (maxi >= first[parent[i]]) {
-                    second[parent[i]] = first[parent[i]];
-                    first[parent[i]] = maxi;
-                } else if (second[parent[i]] < maxi) {
-                    second[parent[i]] = maxi;
-                }
+                updateMaximalPaths(i, parent, first, second);
             }
         }
         // fetch answer
@@ -61,5 +54,15 @@ public class Solution {
             ans = Math.max(ans, first[i] + second[i]);
         }
         return ans + 1;
+    }
+    //Extract method refactoring technique applied here
+    private void updateMaximalPaths(int i, int[] parent, int[] first, int[] second) {
+        int maxi = 1 + Math.max(first[i], second[i]);
+        if (maxi >= first[parent[i]]) {
+            second[parent[i]] = first[parent[i]];
+            first[parent[i]] = maxi;
+        } else if (second[parent[i]] < maxi) {
+            second[parent[i]] = maxi;
+        }
     }
 }

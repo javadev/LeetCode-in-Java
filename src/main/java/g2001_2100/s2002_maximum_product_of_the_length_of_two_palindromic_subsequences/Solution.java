@@ -1,8 +1,5 @@
 package g2001_2100.s2002_maximum_product_of_the_length_of_two_palindromic_subsequences;
 
-// #Medium #String #Dynamic_Programming #Bit_Manipulation #Backtracking #Bitmask
-// #2022_05_22_Time_69_ms_(89.94%)_Space_53.8_MB_(41.42%)
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -19,8 +16,8 @@ public class Solution {
         Set<State> visited = new HashSet<>();
         for (int i = 0; i < chars.length; ++i) {
             int mask = 1 << i;
-            recur(chars, new State(i, i, 0, mask), list, visited);
-            recur(chars, new State(i, i + 1, 0, mask), list, visited);
+            recur(chars, new State(i, i, 0, mask, chars, visited), list);
+            recur(chars, new State(i, i + 1, 0, mask, chars, visited), list);
         }
         list.sort((a, b) -> b.cnt - a.cnt);
         int res = 1;
@@ -46,48 +43,21 @@ public class Solution {
         return res;
     }
 
-    private void recur(char[] chars, State s, List<State> list, Set<State> visited) {
+    private void recur(char[] chars, State s, List<State> list) {
         if (s.i < 0 || s.j >= chars.length) {
             return;
         }
-        if (!visited.add(s)) {
+        if (!s.visited.add(s)) {
             return;
         }
         if (chars[s.i] == chars[s.j]) {
             int m = s.mask | (1 << s.i) | (1 << s.j);
             int nextCnt = s.cnt + (s.i < s.j ? 2 : 1);
-            list.add(new State(s.i, s.j, nextCnt, m));
-            recur(chars, new State(s.i - 1, s.j + 1, nextCnt, m), list, visited);
+            list.add(new State(s.i, s.j, nextCnt, m, chars, s.visited));
+            recur(chars, new State(s.i - 1, s.j + 1, nextCnt, m, chars, s.visited), list);
         }
-        recur(chars, new State(s.i - 1, s.j, s.cnt, s.mask), list, visited);
-        recur(chars, new State(s.i, s.j + 1, s.cnt, s.mask), list, visited);
-    }
-
-    private static class State {
-        int i;
-        int j;
-        int cnt;
-        int mask;
-
-        public State(int i, int j, int cnt, int mask) {
-            this.i = i;
-            this.j = j;
-            this.cnt = cnt;
-            this.mask = mask;
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (o == null || o.getClass() != this.getClass()) {
-                return false;
-            }
-            State s = (State) o;
-            return this.i == s.i && this.j == s.j && this.mask == s.mask;
-        }
-
-        @Override
-        public int hashCode() {
-            return (this.i * 31 + this.j) * 31 + this.mask;
-        }
+        recur(chars, new State(s.i - 1, s.j, s.cnt, s.mask, chars, s.visited), list);
+        recur(chars, new State(s.i, s.j + 1, s.cnt, s.mask, chars, s.visited), list);
     }
 }
+

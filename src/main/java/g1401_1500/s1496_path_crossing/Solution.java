@@ -1,7 +1,5 @@
 package g1401_1500.s1496_path_crossing;
 
-// #Easy #String #Hash_Table #2022_03_23_Time_1_ms_(97.41%)_Space_42.9_MB_(31.41%)
-
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Objects;
@@ -13,25 +11,25 @@ public class Solution {
         for (char c : path.toCharArray()) {
             Coord last = visited.peek();
             if (c == 'N') {
-                Coord nextStep = new Coord(last.x, last.y + 1);
+                Coord nextStep = new Coord(last.getX(), last.getY() + 1);
                 if (visited.contains(nextStep)) {
                     return true;
                 }
                 visited.add(nextStep);
             } else if (c == 'S') {
-                Coord nextStep = new Coord(last.x, last.y - 1);
+                Coord nextStep = new Coord(last.getX(), last.getY() - 1);
                 if (visited.contains(nextStep)) {
                     return true;
                 }
                 visited.add(nextStep);
             } else if (c == 'E') {
-                Coord nextStep = new Coord(last.x - 1, last.y);
+                Coord nextStep = new Coord(last.getX() - 1, last.getY());
                 if (visited.contains(nextStep)) {
                     return true;
                 }
                 visited.add(nextStep);
             } else if (c == 'W') {
-                Coord nextStep = new Coord(last.x + 1, last.y);
+                Coord nextStep = new Coord(last.getX() + 1, last.getY());
                 if (visited.contains(nextStep)) {
                     return true;
                 }
@@ -41,13 +39,22 @@ public class Solution {
         return false;
     }
 
+    // Push-down x and y fields to Coord class (Push down variable/method refactoring technique)
     private static class Coord {
-        int x;
-        int y;
+        private final int x;
+        private final int y;
 
         public Coord(int x, int y) {
             this.x = x;
             this.y = y;
+        }
+
+        public int getX() {
+            return x;
+        }
+
+        public int getY() {
+            return y;
         }
 
         @Override

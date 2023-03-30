@@ -7,27 +7,29 @@ import java.util.List;
 
 @SuppressWarnings("java:S2234")
 public class Solution {
+    //introducing explaining variable refactoring technique
     public List<Integer> replaceNonCoprimes(int[] nums) {
-        ArrayList<Integer> res = new ArrayList<>();
-        int i = 1;
-        res.add(nums[0]);
-        while (i < nums.length) {
-            int first = res.get(res.size() - 1);
-            int second = nums[i];
-            int gcd = gcd(first, second);
-            if (gcd > 1) {
-                long lcm = ((long) first * (long) second) / gcd;
-                if (!res.isEmpty()) {
-                    res.remove(res.size() - 1);
+        ArrayList<Integer> result = new ArrayList<>();
+        int currentIndex = 1;
+        result.add(nums[0]);
+        while (currentIndex < nums.length) {
+            int previousNumber = result.get(result.size() - 1);
+            int currentNumber = nums[currentIndex];
+            int gcd = gcd(previousNumber, currentNumber);
+            boolean numbersAreNotCoprime = gcd > 1;
+            if (numbersAreNotCoprime) {
+                long lcm = ((long) previousNumber * (long) currentNumber) / gcd;
+                if (!result.isEmpty()) {
+                    result.remove(result.size() - 1);
                 }
-                res.add((int) lcm);
-                recursivelyCheck(res);
+                result.add((int) lcm);
+                recursivelyCheck(result);
             } else {
-                res.add(second);
+                result.add(currentNumber);
             }
-            i++;
+            currentIndex++;
         }
-        return res;
+        return result;
     }
 
     private int gcd(int a, int b) {

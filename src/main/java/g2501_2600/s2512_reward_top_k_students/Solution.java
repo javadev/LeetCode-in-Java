@@ -22,25 +22,26 @@ public class Solution {
         for (String s : negativeFeedback) {
             feedback.put(s, -1);
         }
-        PriorityQueue<Student> pq =
+        PriorityQueue<Student> queue =
                 new PriorityQueue<>(
                         (a, b) -> {
                             int result = Integer.compare(a.points, b.points);
                             return result == 0 ? Integer.compare(a.id, b.id) : -result;
                         });
         for (int i = 0; i < report.length; i++) {
-            String[] split = report[i].split(" ");
+            //rename method/variable name refactoring
+            String[] reportWords = report[i].split(" ");
             int sum = 0;
-            for (String subStr : split) {
-                sum += feedback.getOrDefault(subStr, 0);
+            for (String word : reportWords) {
+                sum += feedback.getOrDefault(word, 0);
             }
-            pq.offer(new Student(studentId[i], sum));
+            queue.offer(new Student(studentId[i], sum));
         }
-        List<Integer> result = new ArrayList<>();
-        while (!pq.isEmpty() && k-- > 0) {
-            result.add(pq.poll().id);
+        List<Integer> topStudents = new ArrayList<>();
+        while (!queue.isEmpty() && k-- > 0) {
+            topStudents.add(queue.poll().id);
         }
-        return result;
+        return topStudents;
     }
 
     private static class Student {

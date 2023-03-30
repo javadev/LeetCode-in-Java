@@ -18,24 +18,33 @@ public class Solution {
         int shortestSteps = m * n;
         while (!queue.isEmpty()) {
             int[] curr = queue.poll();
+            int currX = curr[0];
+            int currY = curr[1];
+            int currSteps = curr[2];
             for (int i = 0; i < directions.length - 1; i++) {
-                int nextX = curr[0] + directions[i];
-                int nextY = curr[1] + directions[i + 1];
-                if (nextX >= 0
-                        && nextX < m
-                        && nextY >= 0
-                        && nextY < n
-                        && maze[nextX][nextY] == '.'
-                        && !visited[nextX][nextY]) {
+                int nextX = currX + directions[i];
+                int nextY = currY + directions[i + 1];
+                //Decompose conditional refactoring technique
+                boolean isValidMove = isValidMove(nextX, nextY, maze, visited, m, n);
+                if (isValidMove) {
                     visited[nextX][nextY] = true;
-                    if (nextX == 0 || nextX == m - 1 || nextY == 0 || nextY == n - 1) {
-                        shortestSteps = Math.min(shortestSteps, curr[2] + 1);
+                    if (isExit(nextX, nextY, m, n)) {
+                        shortestSteps = Math.min(shortestSteps, currSteps + 1);
                     } else {
-                        queue.offer(new int[] {nextX, nextY, curr[2] + 1});
+                        queue.offer(new int[] {nextX, nextY, currSteps + 1});
                     }
                 }
             }
         }
         return shortestSteps == m * n ? -1 : shortestSteps;
     }
+
+    private boolean isValidMove(int x, int y, char[][] maze, boolean[][] visited, int m, int n) {
+        return x >= 0 && x < m && y >= 0 && y < n && maze[x][y] == '.' && !visited[x][y];
+    }
+
+    private boolean isExit(int x, int y, int m, int n) {
+        return x == 0 || x == m - 1 || y == 0 || y == n - 1;
+    }
 }
+
