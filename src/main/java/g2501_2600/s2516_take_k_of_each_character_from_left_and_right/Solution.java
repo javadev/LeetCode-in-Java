@@ -10,7 +10,7 @@ public class Solution {
         int ans = Integer.MAX_VALUE;
         int[] cnt = new int[3];
         char[] arr = s.toCharArray();
-        for(char ch : arr) {
+        for (char ch : arr) {
             cnt[ch - 'a']++;
         }
         if (cnt[0] < k || cnt[1] < k || cnt[2] < k) {
