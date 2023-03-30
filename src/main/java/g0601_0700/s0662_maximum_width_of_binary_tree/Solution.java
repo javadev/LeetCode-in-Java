@@ -51,12 +51,7 @@ public class Solution {
         }
         return res;
     }
-//push-down refactoring that could improve the code readability is
-// to move the nested Pair class to the local scope of the widthOfBinaryTree method.
-// Since the Pair class is only used within this method, it can be
-// defined within the method to limit its scope and make the code more focused.
-//Here's the refactored code with the Pair class pushed down to
-// the local scope of the widthOfBinaryTree method
+
     private static class Pair {
         TreeNode node;
         int idx;
