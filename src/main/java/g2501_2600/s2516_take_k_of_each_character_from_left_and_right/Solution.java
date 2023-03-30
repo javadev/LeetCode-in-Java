@@ -7,7 +7,6 @@ public class Solution {
         if (s.length() < 3 * k) {
             return -1;
         }
-        int ans = Integer.MAX_VALUE;
         int[] cnt = new int[3];
         char[] arr = s.toCharArray();
         for (char ch : arr) {
@@ -16,7 +15,7 @@ public class Solution {
         if (cnt[0] < k || cnt[1] < k || cnt[2] < k) {
             return -1;
         }
-        ans = arr.length;
+        int ans = arr.length;
         int i = 0;
         int j = 0;
         while (j < arr.length) {
