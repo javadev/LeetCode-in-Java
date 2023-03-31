@@ -12,7 +12,6 @@ public class NumArray {
         this.nums = nums;
         // copy the array into the tree
         System.arraycopy(nums, 0, tree, 1, nums.length);
-
         for (int i = 1; i < tree.length; i++) {
             int parent = i + (i & -i);
             if (parent < tree.length) {
