@@ -8,7 +8,7 @@ import java.util.List;
 @SuppressWarnings("unchecked")
 public class Solution {
     public boolean isPossible(int n, List<List<Integer>> edges) {
-        ArrayList<Integer>[] g = new ArrayList[n+1];
+        ArrayList<Integer>[] g = new ArrayList[n + 1];
         ArrayList<Integer> oddList = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
             g[i] = new ArrayList<>();
