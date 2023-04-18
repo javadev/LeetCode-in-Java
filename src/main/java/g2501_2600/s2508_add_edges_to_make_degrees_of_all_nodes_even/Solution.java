@@ -1,85 +1,66 @@
 package g2501_2600.s2508_add_edges_to_make_degrees_of_all_nodes_even;
 
-// #Hard #Hash_Table #Graph #2023_03_20_Time_33_ms_(100.00%)_Space_109.7_MB_(42.70%)
+// #Hard #Hash_Table #Graph #2023_04_18_Time_36_ms_(95.00%)_Space_86.3_MB_(93.33%)
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @SuppressWarnings("unchecked")
 public class Solution {
     public boolean isPossible(int n, List<List<Integer>> edges) {
-        // first find odd edge nodes
-        int[] degree = new int[n + 1];
-        for (List<Integer> edge : edges) {
-            degree[edge.get(0)]++;
-            degree[edge.get(1)]++;
-        }
-        List<Integer> oddNodes = new ArrayList<>();
+        ArrayList<Integer>[] g = new ArrayList[n+1];
+        ArrayList<Integer> oddList = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
-            if ((degree[i] & 1) == 1) {
-                oddNodes.add(i);
-            }
-            if (oddNodes.size() > 4) {
-                // cannot be larger than four
-                return false;
+            g[i] = new ArrayList<>();
+        }
+        for (List<Integer> edge : edges) {
+            int x = edge.get(0);
+            int y = edge.get(1);
+            g[x].add(y);
+            g[y].add(x);
+        }
+        for (int i = 1; i <= n; i++) {
+            if (g[i].size() % 2 == 1) {
+                oddList.add(i);
             }
         }
-        if ((oddNodes.size() & 1) == 1) {
-            // can only have even numbers of odd nodes
-            return false;
-        } else if (oddNodes.isEmpty()) {
-            // zero situation
+        int size = oddList.size();
+        if (size == 0) {
             return true;
         }
-        // find all edges of oddListNode
-        Set[] adjList = new HashSet[oddNodes.size()];
-        for (int i = 0; i < oddNodes.size(); i++) {
-            adjList[i] = new HashSet<>();
+        if (size == 1 || size == 3 || size > 4) {
+            return false;
         }
-        for (List<Integer> edge : edges) {
-            for (int i = 0; i < oddNodes.size(); i++) {
-                if ((int) edge.get(0) == oddNodes.get(i)) {
-                    adjList[i].add(edge.get(1));
-                }
-                if ((int) edge.get(1) == oddNodes.get(i)) {
-                    adjList[i].add(edge.get(0));
-                }
+        if (size == 2) {
+            int x = oddList.get(0);
+            int y = oddList.get(1);
+            if (isNotConnected(x, y, g)) {
+                return true;
             }
-        }
-        // to see if it is two or four
-        if (oddNodes.size() == 4) {
-            // can only connect each other
-            // have to detect if they have an edge or not
-            return adjList[0].size() < (n - 1)
-                    && adjList[1].size() < (n - 1)
-                    && adjList[2].size() < (n - 1)
-                    && adjList[3].size() < (n - 1)
-                    && ((!adjList[0].contains(oddNodes.get(1))
-                                    && !adjList[1].contains(oddNodes.get(0))
-                                    && !adjList[2].contains(oddNodes.get(3))
-                                    && !adjList[3].contains(oddNodes.get(2)))
-                            || (!adjList[0].contains(oddNodes.get(2))
-                                    && !adjList[2].contains(oddNodes.get(0))
-                                    && !adjList[1].contains(oddNodes.get(3))
-                                    && !adjList[3].contains(oddNodes.get(1)))
-                            || (!adjList[0].contains(oddNodes.get(3))
-                                    && !adjList[1].contains(oddNodes.get(2))
-                                    && !adjList[2].contains(oddNodes.get(1))));
-        } else {
-            // if two dont have an edge, could use it
-            if (adjList[0].contains(oddNodes.get(1))) {
-                // need to find a spare node
-                for (int i = 1; i <= n; i++) {
-                    if (adjList[0].contains(i) || adjList[1].contains(i)) {
-                        continue;
-                    }
+            for (int i = 1; i <= n; i++) {
+                if (i == x || i == y) {
+                    continue;
+                }
+                if (isNotConnected(i, x, g) && isNotConnected(i, y, g)) {
                     return true;
                 }
-                return false;
             }
+            return false;
+        }
+        int a = oddList.get(0);
+        int b = oddList.get(1);
+        int c = oddList.get(2);
+        int d = oddList.get(3);
+        if (isNotConnected(a, b, g) && isNotConnected(c, d, g)) {
             return true;
         }
+        if (isNotConnected(a, c, g) && isNotConnected(b, d, g)) {
+            return true;
+        }
+        return isNotConnected(a, d, g) && isNotConnected(b, c, g);
+    }
+
+    private boolean isNotConnected(int x, int y, ArrayList<Integer>[] g) {
+        return !g[x].contains(y);
     }
 }
