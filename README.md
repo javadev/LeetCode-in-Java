@@ -1848,6 +1848,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.20'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2522 |[Partition String Into Substrings With Values at Most K](src/main/java/g2501_2600/s2522_partition_string_into_substrings_with_values_at_most_k/Solution.java)| Medium | String, Dynamic_Programming, Greedy | 6 | 84.66
+| 2521 |[Distinct Prime Factors of Product of Array](src/main/java/g2501_2600/s2521_distinct_prime_factors_of_product_of_array/Solution.java)| Medium | Array, Hash_Table, Math, Number_Theory | 2 | 100.00
+| 2520 |[Count the Digits That Divide a Number](src/main/java/g2501_2600/s2520_count_the_digits_that_divide_a_number/Solution.java)| Easy | Math | 0 | 100.00
+| 2518 |[Number of Great Partitions](src/main/java/g2501_2600/s2518_number_of_great_partitions/Solution.java)| Hard | Array, Dynamic_Programming | 4 | 100.00
+| 2517 |[Maximum Tastiness of Candy Basket](src/main/java/g2501_2600/s2517_maximum_tastiness_of_candy_basket/Solution.java)| Medium | Array, Sorting, Binary_Search | 38 | 100.00
 | 2516 |[Take K of Each Character From Left and Right](src/main/java/g2501_2600/s2516_take_k_of_each_character_from_left_and_right/Solution.java)| Medium | String, Hash_Table, Sliding_Window | 6 | 94.24
 | 2515 |[Shortest Distance to Target String in a Circular Array](src/main/java/g2501_2600/s2515_shortest_distance_to_target_string_in_a_circular_array/Solution.java)| Easy | Array, String | 1 | 62.21
 | 2514 |[Count Anagrams](src/main/java/g2501_2600/s2514_count_anagrams/Solution.java)| Hard | String, Hash_Table, Math, Counting, Combinatorics | 22 | 100.00
