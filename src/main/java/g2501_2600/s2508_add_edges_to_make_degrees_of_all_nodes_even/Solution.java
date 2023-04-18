@@ -38,9 +38,6 @@ public class Solution {
                 return true;
             }
             for (int i = 1; i <= n; i++) {
-                if (i == x || i == y) {
-                    continue;
-                }
                 if (isNotConnected(i, x, g) && isNotConnected(i, y, g)) {
                     return true;
                 }

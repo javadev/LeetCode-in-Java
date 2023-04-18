@@ -82,4 +82,12 @@ class SolutionTest {
                                         })),
                 equalTo(true));
     }
+
+    @Test
+    void isPossible5() {
+        assertThat(
+                new Solution()
+                        .isPossible(6, ArrayUtils.getLists(new int[][] {{1, 6}, {1, 3}, {1, 4}, {4, 5}, {5, 2}})),
+                equalTo(true));
+    }
 }
