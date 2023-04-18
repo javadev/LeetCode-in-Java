@@ -11,7 +11,7 @@ public class Solution {
         long partitionValue = 0;
         long digit;
         for (int i = 0; i < s.length(); i++) {
-            digit = s.charAt(i) - '0';
+            digit = (long) s.charAt(i) - '0';
             if (digit > k) {
                 return -1;
             }
