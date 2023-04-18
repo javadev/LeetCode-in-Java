@@ -93,4 +93,15 @@ class SolutionTest {
                                         new int[][] {{1, 6}, {1, 3}, {1, 4}, {4, 5}, {5, 2}})),
                 equalTo(true));
     }
+
+    @Test
+    void isPossible6() {
+        assertThat(
+                new Solution()
+                        .isPossible(
+                                4,
+                                ArrayUtils.getLists(
+                                        new int[][] {{4, 1}, {3, 2}, {2, 4}, {1, 3}})),
+                equalTo(true));
+    }
 }
