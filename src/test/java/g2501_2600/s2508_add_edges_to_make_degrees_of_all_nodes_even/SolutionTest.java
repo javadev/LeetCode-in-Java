@@ -111,6 +111,6 @@ class SolutionTest {
                         .isPossible(
                                 4,
                                 ArrayUtils.getLists(new int[][] {{1, 2}, {2, 3}, {2, 4}, {3, 4}})),
-                equalTo(true));
+                equalTo(false));
     }
 }
