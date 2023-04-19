@@ -1848,6 +1848,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.20'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2528 |[Maximize the Minimum Powered City](src/main/java/g2501_2600/s2528_maximize_the_minimum_powered_city/Solution.java)| Hard | Array, Greedy, Binary_Search, Prefix_Sum, Sliding_Window, Queue | 51 | 77.59
+| 2527 |[Find Xor-Beauty of Array](src/main/java/g2501_2600/s2527_find_xor_beauty_of_array/Solution.java)| Medium | Array, Math, Bit_Manipulation | 1 | 100.00
+| 2526 |[Find Consecutive Integers from a Data Stream](src/main/java/g2501_2600/s2526_find_consecutive_integers_from_a_data_stream/DataStream.java)| Medium | Hash_Table, Design, Counting, Queue, Data_Stream | 32 | 94.65
+| 2525 |[Categorize Box According to Criteria](src/main/java/g2501_2600/s2525_categorize_box_according_to_criteria/Solution.java)| Easy | Math | 0 | 100.00
+| 2523 |[Closest Prime Numbers in Range](src/main/java/g2501_2600/s2523_closest_prime_numbers_in_range/Solution.java)| Medium | Math, Number_Theory | 1 | 100.00
 | 2522 |[Partition String Into Substrings With Values at Most K](src/main/java/g2501_2600/s2522_partition_string_into_substrings_with_values_at_most_k/Solution.java)| Medium | String, Dynamic_Programming, Greedy | 6 | 84.66
 | 2521 |[Distinct Prime Factors of Product of Array](src/main/java/g2501_2600/s2521_distinct_prime_factors_of_product_of_array/Solution.java)| Medium | Array, Hash_Table, Math, Number_Theory | 2 | 100.00
 | 2520 |[Count the Digits That Divide a Number](src/main/java/g2501_2600/s2520_count_the_digits_that_divide_a_number/Solution.java)| Easy | Math | 0 | 100.00
@@ -1860,7 +1865,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.20'
 | 2512 |[Reward Top K Students](src/main/java/g2501_2600/s2512_reward_top_k_students/Solution.java)| Medium | Array, String, Hash_Table, Sorting, Heap_Priority_Queue | 72 | 94.76
 | 2511 |[Maximum Enemy Forts That Can Be Captured](src/main/java/g2501_2600/s2511_maximum_enemy_forts_that_can_be_captured/Solution.java)| Easy | Array, Two_Pointers | 0 | 100.00
 | 2509 |[Cycle Length Queries in a Tree](src/main/java/g2501_2600/s2509_cycle_length_queries_in_a_tree/Solution.java)| Hard | Tree, Binary_Tree | 12 | 99.26
-| 2508 |[Add Edges to Make Degrees of All Nodes Even](src/main/java/g2501_2600/s2508_add_edges_to_make_degrees_of_all_nodes_even/Solution.java)| Hard | Hash_Table, Graph | 33 | 100.00
+| 2508 |[Add Edges to Make Degrees of All Nodes Even](src/main/java/g2501_2600/s2508_add_edges_to_make_degrees_of_all_nodes_even/Solution.java)| Hard | Hash_Table, Graph | 36 | 95.00
 | 2507 |[Smallest Value After Replacing With Sum of Prime Factors](src/main/java/g2501_2600/s2507_smallest_value_after_replacing_with_sum_of_prime_factors/Solution.java)| Medium | Math, Number_Theory | 1 | 84.27
 | 2506 |[Count Pairs Of Similar Strings](src/main/java/g2501_2600/s2506_count_pairs_of_similar_strings/Solution.java)| Easy | Array, String, Hash_Table | 6 | 85.15
 | 2503 |[Maximum Number of Points From Grid Queries](src/main/java/g2501_2600/s2503_maximum_number_of_points_from_grid_queries/Solution.java)| Hard | Array, Sorting, Breadth_First_Search, Heap_Priority_Queue, Union_Find | 47 | 96.38
