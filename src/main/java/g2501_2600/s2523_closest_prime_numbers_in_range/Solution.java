@@ -18,7 +18,7 @@ public class Solution {
                         x = prev;
                         y = i;
                         if (diff <= 2) {
-                            return new int[]{x, y};
+                            return new int[] {x, y};
                         }
                     }
                 }
