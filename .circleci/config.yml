@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Build gradle"
-          command: ./gradlew clean build
+          command: chmod +x gradlew && ./gradlew clean build
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
