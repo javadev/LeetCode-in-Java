@@ -1848,6 +1848,11 @@ implementation 'com.github.javadev:leetcode-in-java:1.20'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2535 |[Difference Between Element Sum and Digit Sum of an Array](src/main/java/g2501_2600/s2535_difference_between_element_sum_and_digit_sum_of_an_array/Solution.java)| Easy | Array, Math | 3 | 77.42
+| 2532 |[Time to Cross a Bridge](src/main/java/g2501_2600/s2532_time_to_cross_a_bridge/Solution.java)| Hard | Array, Heap_Priority_Queue, Simulation | 67 | 72.50
+| 2531 |[Make Number of Distinct Characters Equal](src/main/java/g2501_2600/s2531_make_number_of_distinct_characters_equal/Solution.java)| Medium | String, Hash_Table, Counting | 7 | 100.00
+| 2530 |[Maximal Score After Applying K Operations](src/main/java/g2501_2600/s2530_maximal_score_after_applying_k_operations/Solution.java)| Medium | Array, Greedy, Heap_Priority_Queue | 168 | 67.97
+| 2529 |[Maximum Count of Positive Integer and Negative Integer](src/main/java/g2501_2600/s2529_maximum_count_of_positive_integer_and_negative_integer/Solution.java)| Easy | Array, Binary_Search, Counting | 0 | 100.00
 | 2528 |[Maximize the Minimum Powered City](src/main/java/g2501_2600/s2528_maximize_the_minimum_powered_city/Solution.java)| Hard | Array, Greedy, Binary_Search, Prefix_Sum, Sliding_Window, Queue | 51 | 77.59
 | 2527 |[Find Xor-Beauty of Array](src/main/java/g2501_2600/s2527_find_xor_beauty_of_array/Solution.java)| Medium | Array, Math, Bit_Manipulation | 1 | 100.00
 | 2526 |[Find Consecutive Integers from a Data Stream](src/main/java/g2501_2600/s2526_find_consecutive_integers_from_a_data_stream/DataStream.java)| Medium | Hash_Table, Design, Counting, Queue, Data_Stream | 32 | 94.65
