@@ -43,9 +43,13 @@ public class Solution {
             } else {
                 // update duration
                 int left = Integer.MAX_VALUE;
-                if (!leftWHPQ.isEmpty() && n > 0) left = leftWHPQ.peek()[1];
+                if (!leftWHPQ.isEmpty() && n > 0) {
+                    left = leftWHPQ.peek()[1];
+                }
                 int right = Integer.MAX_VALUE;
-                if (!rightWHPQ.isEmpty()) right = rightWHPQ.peek()[1];
+                if (!rightWHPQ.isEmpty()) {
+                    right = rightWHPQ.peek()[1];
+                }
                 duration = Math.min(left, right);
             }
         }

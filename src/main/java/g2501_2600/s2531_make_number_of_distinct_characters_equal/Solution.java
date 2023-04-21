@@ -37,10 +37,16 @@ public class Solution {
         int[] zip = new int[26];
         for (int i = 0; i < 26; i++) {
             int d = 0;
-            if (c1[i] == 0) d = -1;
+            if (c1[i] == 0) {
+                d = -1;
+            }
             else {
-                if (c2[i] == 0) d++;
-                if (c1[i] == 1) d++;
+                if (c2[i] == 0) {
+                    d++;
+                }
+                if (c1[i] == 1) {
+                    d++;
+                }
             }
             zip[i] = d;
         }
@@ -54,7 +60,9 @@ public class Solution {
             count[word.charAt(i) - 'a']++;
         }
         for (int i = 0; i < 26; i++) {
-            if (count[i] > 0) count[26]++;
+            if (count[i] > 0) {
+                count[26]++;
+            }
         }
         return count;
     }
