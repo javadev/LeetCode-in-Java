@@ -39,8 +39,7 @@ public class Solution {
             int d = 0;
             if (c1[i] == 0) {
                 d = -1;
-            }
-            else {
+            } else {
                 if (c2[i] == 0) {
                     d++;
                 }
