@@ -14,7 +14,9 @@ public class Solution {
         Map<Integer, Integer> countMap = new HashMap<>(nums.length, 0.99f);
         long goodSubArrays = 0L;
         long current = 0L;
-        for (int left = 0, right = -1; left < nums.length; ) {
+        int left = 0;
+        int right = -1;
+        while (left < nums.length) {
             if (current < k) {
                 if (++right == nums.length) {
                     break;

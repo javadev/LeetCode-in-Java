@@ -38,7 +38,6 @@ public class Solution {
         if (tree[node].size() == 1 && node != 0) {
             return new long[] {price[node], 0};
         }
-        long temp = res;
         int i0 = -1;
         int i1 = -1;
         long l0 = 0;
