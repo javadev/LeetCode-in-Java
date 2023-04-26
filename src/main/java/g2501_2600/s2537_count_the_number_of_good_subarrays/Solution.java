@@ -10,7 +10,6 @@ public class Solution {
         if (nums.length < 2) {
             return 0L;
         }
-
         Map<Integer, Integer> countMap = new HashMap<>(nums.length, 0.99f);
         long goodSubArrays = 0L;
         long current = 0L;
@@ -47,7 +46,6 @@ public class Solution {
                 }
             }
         }
-
         return goodSubArrays;
     }
 }
