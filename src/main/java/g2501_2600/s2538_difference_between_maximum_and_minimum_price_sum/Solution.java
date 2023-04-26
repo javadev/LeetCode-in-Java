@@ -15,7 +15,6 @@ public class Solution {
         if (n == 1) {
             return 0;
         }
-
         this.price = price;
         tree = new ArrayList[n];
         for (int i = 0; i < n; i++) {
@@ -25,11 +24,9 @@ public class Solution {
             tree[e[0]].add(e[1]);
             tree[e[1]].add(e[0]);
         }
-
         visited = new boolean[n];
         visited[0] = true;
         dfs(0);
-
         return res;
     }
 
@@ -57,7 +54,6 @@ public class Solution {
             } else if (sub[0] > s0) {
                 s0 = sub[0];
             }
-
             if (sub[1] >= l1) {
                 s1 = l1;
                 l1 = sub[1];
@@ -66,7 +62,6 @@ public class Solution {
                 s1 = sub[1];
             }
         }
-
         if (s0 == 0) {
             // only one child. case: example 2
             res = Math.max(res, Math.max(l0, l1 + price[node]));
