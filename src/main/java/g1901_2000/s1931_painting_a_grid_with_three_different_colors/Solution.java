@@ -5,6 +5,7 @@ package g1901_2000.s1931_painting_a_grid_with_three_different_colors;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("java:S3824")
 public class Solution {
     public static final int P = 1_000_000_007;
 
