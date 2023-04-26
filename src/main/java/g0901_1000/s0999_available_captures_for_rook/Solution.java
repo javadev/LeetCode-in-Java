@@ -20,7 +20,7 @@ public class Solution {
                 }
             }
         }
-        int count = 0;
+        int[] count = {0};
         for (int i = 0; i < 4; i++) {
             int neighborRow = rowR + directions[i];
             int neighborCol = colR + directions[i + 1];
@@ -30,52 +30,68 @@ public class Solution {
                     && neighborCol < n
                     && board[neighborRow][neighborCol] != 'B') {
                 if (directions[i] == 0 && directions[i + 1] == 1) {
-                    while (neighborCol < n) {
-                        if (board[neighborRow][neighborCol] == 'p') {
-                            count++;
-                            break;
-                        } else if (board[neighborRow][neighborCol] == 'B') {
-                            break;
-                        } else {
-                            neighborCol++;
-                        }
-                    }
+                    extracted(board, n, count, neighborRow, neighborCol);
                 } else if (directions[i] == 1 && directions[i + 1] == 0) {
-                    while (neighborRow < m) {
-                        if (board[neighborRow][neighborCol] == 'p') {
-                            count++;
-                            break;
-                        } else if (board[neighborRow][neighborCol] == 'B') {
-                            break;
-                        } else {
-                            neighborRow++;
-                        }
-                    }
+                    extracted1(board, m, count, neighborRow, neighborCol);
                 } else if (directions[i] == 0 && directions[i + 1] == -1) {
-                    while (neighborCol >= 0) {
-                        if (board[neighborRow][neighborCol] == 'p') {
-                            count++;
-                            break;
-                        } else if (board[neighborRow][neighborCol] == 'B') {
-                            break;
-                        } else {
-                            neighborCol--;
-                        }
-                    }
+                    extracted(board, count, neighborRow, neighborCol);
                 } else {
-                    while (neighborRow >= 0) {
-                        if (board[neighborRow][neighborCol] == 'p') {
-                            count++;
-                            break;
-                        } else if (board[neighborRow][neighborCol] == 'B') {
-                            break;
-                        } else {
-                            neighborRow--;
-                        }
-                    }
+                    extracted1(board, count, neighborRow, neighborCol);
                 }
             }
         }
-        return count;
+        return count[0];
+    }
+
+    private void extracted(char[][] board, int[] count, int neighborRow, int neighborCol) {
+        while (neighborCol >= 0) {
+            if (board[neighborRow][neighborCol] == 'p') {
+                count[0]++;
+                break;
+            } else if (board[neighborRow][neighborCol] == 'B') {
+                break;
+            } else {
+                neighborCol--;
+            }
+        }
+    }
+
+    private void extracted(char[][] board, int n, int[] count, int neighborRow, int neighborCol) {
+        while (neighborCol < n) {
+            if (board[neighborRow][neighborCol] == 'p') {
+                count[0]++;
+                break;
+            } else if (board[neighborRow][neighborCol] == 'B') {
+                break;
+            } else {
+                neighborCol++;
+            }
+        }
+    }
+
+    private void extracted1(char[][] board, int[] count, int neighborRow, int neighborCol) {
+        while (neighborRow >= 0) {
+            if (board[neighborRow][neighborCol] == 'p') {
+                count[0]++;
+                break;
+            } else if (board[neighborRow][neighborCol] == 'B') {
+                break;
+            } else {
+                neighborRow--;
+            }
+        }
+    }
+
+    private void extracted1(char[][] board, int m, int[] count, int neighborRow, int neighborCol) {
+        while (neighborRow < m) {
+            if (board[neighborRow][neighborCol] == 'p') {
+                count[0]++;
+                break;
+            } else if (board[neighborRow][neighborCol] == 'B') {
+                break;
+            } else {
+                neighborRow++;
+            }
+        }
     }
 }
