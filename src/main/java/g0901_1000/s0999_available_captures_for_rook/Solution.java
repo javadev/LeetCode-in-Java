@@ -56,19 +56,6 @@ public class Solution {
         }
     }
 
-    private void extracted1(char[][] board, int[] count, int neighborRow, int neighborCol) {
-        while (neighborRow >= 0) {
-            if (board[neighborRow][neighborCol] == 'p') {
-                count[0]++;
-                break;
-            } else if (board[neighborRow][neighborCol] == 'B') {
-                break;
-            } else {
-                neighborRow--;
-            }
-        }
-    }
-
     private void extracted(char[][] board, int n, int[] count, int neighborRow, int neighborCol) {
         while (neighborCol < n) {
             if (board[neighborRow][neighborCol] == 'p') {
@@ -78,6 +65,19 @@ public class Solution {
                 break;
             } else {
                 neighborCol++;
+            }
+        }
+    }
+
+    private void extracted1(char[][] board, int[] count, int neighborRow, int neighborCol) {
+        while (neighborRow >= 0) {
+            if (board[neighborRow][neighborCol] == 'p') {
+                count[0]++;
+                break;
+            } else if (board[neighborRow][neighborCol] == 'B') {
+                break;
+            } else {
+                neighborRow--;
             }
         }
     }
