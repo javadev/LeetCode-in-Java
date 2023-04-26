@@ -19,7 +19,9 @@ public class Solution {
             int col = lamp[1];
             long key = row;
             key = key * n + col;
-            if (lampPlacements.contains(key)) continue;
+            if (lampPlacements.contains(key)) {
+                continue;
+            }
             incr(rowIlluminations, row);
             incr(colIlluminations, col);
             incr(posDiagIlluminations, row + col);
