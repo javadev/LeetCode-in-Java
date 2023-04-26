@@ -30,52 +30,61 @@ public class Solution {
                 Integer next = null;
                 switch (direction) {
                     case 0:
-                        if (yMap.containsKey(y)) {
-                            next = yMap.get(y).ceiling(x + 1);
-                        }
-                        if (next != null) {
-                            x = Math.min(x + cmd, next - 1);
-                        } else {
-                            x += cmd;
-                        }
+                        x = getXPlusOne(x, y, yMap, cmd, next);
                         break;
                     case 1:
-                        if (xMap.containsKey(x)) {
-                            next = xMap.get(x).ceiling(y + 1);
-                        }
-                        if (next != null) {
-                            y = Math.min(y + cmd, next - 1);
-                        } else {
-                            y += cmd;
-                        }
+                        y = getXPlusOne(y, x, xMap, cmd, next);
                         break;
                     case 2:
-                        if (yMap.containsKey(y)) {
-                            next = yMap.get(y).floor(x - 1);
-                        }
-                        if (next != null) {
-                            x = Math.max(x - cmd, next + 1);
-                        } else {
-                            x -= cmd;
-                        }
+                        x = getXMinusOne(x, y, yMap, cmd, next);
                         break;
                     case 3:
-                        if (xMap.containsKey(x)) {
-                            next = xMap.get(x).floor(y - 1);
-                        }
-                        if (next != null) {
-                            y = Math.max(y - cmd, next + 1);
-                        } else {
-                            y -= cmd;
-                        }
+                        y = getXMinusOne(y, x, xMap, cmd, next);
                         break;
                     default:
                         // error
                         break;
                 }
-                maxDis = Math.max(maxDis, x * x + y * y);
+                Result result = new Result(x, y);
+                maxDis = Math.max(maxDis, result.x * result.x + result.y * result.y);
             }
         }
         return maxDis;
+    }
+
+    private int getXMinusOne(
+            int x, int y, Map<Integer, TreeSet<Integer>> yMap, int cmd, Integer next) {
+        if (yMap.containsKey(y)) {
+            next = yMap.get(y).floor(x - 1);
+        }
+        if (next != null) {
+            x = Math.max(x - cmd, next + 1);
+        } else {
+            x -= cmd;
+        }
+        return x;
+    }
+
+    private int getXPlusOne(
+            int x, int y, Map<Integer, TreeSet<Integer>> yMap, int cmd, Integer next) {
+        if (yMap.containsKey(y)) {
+            next = yMap.get(y).ceiling(x + 1);
+        }
+        if (next != null) {
+            x = Math.min(x + cmd, next - 1);
+        } else {
+            x += cmd;
+        }
+        return x;
+    }
+
+    private static class Result {
+        public final int x;
+        public final int y;
+
+        public Result(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
     }
 }

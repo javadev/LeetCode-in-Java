@@ -1,82 +1,107 @@
 package g0801_0900.s0885_spiral_matrix_iii;
 
-// #Medium #Array #Matrix #Simulation #2022_03_28_Time_3_ms_(95.45%)_Space_64_MB_(42.42%)
+// #Medium #Array #Matrix #Simulation #2023_04_26_Time_2_ms_(100.00%)_Space_43.8_MB_(33.14%)
 
 @SuppressWarnings("java:S135")
 public class Solution {
     public int[][] spiralMatrixIII(int rows, int cols, int y, int x) {
-        int j;
-        int i = 0;
-        int moves = 0;
+        int localX = x;
+        int localY = y;
+        int[] i = {0};
+        int[] moves = {0};
         int[][] result = new int[rows * cols][2];
         result[0][0] = y;
         result[0][1] = x;
-        i++;
-        while (i < result.length) {
-            moves++;
+        i[0]++;
+        while (i[0] < result.length) {
+            moves[0]++;
             // Move right
-            if (y < 0 || y >= rows) {
-                x += moves;
-            } else {
-                for (j = 0; j < moves; j++) {
-                    x++;
-                    if (x >= 0 && x < cols && y >= 0 && y < rows) {
-                        result[i][0] = y;
-                        result[i][1] = x;
-                        i++;
-                    }
-                }
-            }
-            if (i >= result.length) {
+            localX = getXRight(rows, cols, localX, localY, i, moves, result);
+            if (i[0] >= result.length) {
                 break;
             }
             // Move down
-            if (x < 0 || x >= cols) {
-                y += moves;
-            } else {
-                for (j = 0; j < moves; j++) {
-                    y++;
-                    if (x >= 0 && x < cols && y >= 0 && y < rows) {
-                        result[i][0] = y;
-                        result[i][1] = x;
-                        i++;
-                    }
-                }
-            }
-            if (i >= result.length) {
+            localY = getYDown(rows, cols, localX, localY, i, moves, result);
+            if (i[0] >= result.length) {
                 break;
             }
-            moves++;
+            moves[0]++;
             // Move left
-            if (y < 0 || y >= rows) {
-                x -= moves;
-            } else {
-                for (j = 0; j < moves; j++) {
-                    x--;
-                    if (x >= 0 && x < cols && y >= 0 && y < rows) {
-                        result[i][0] = y;
-                        result[i][1] = x;
-                        i++;
-                    }
-                }
-            }
-            if (i >= result.length) {
+            localX = getXLeft(rows, cols, localX, localY, i, moves, result);
+            if (i[0] >= result.length) {
                 break;
             }
             // Move up
-            if (x < 0 || x >= cols) {
-                y -= moves;
-            } else {
-                for (j = 0; j < moves; j++) {
-                    y--;
-                    if (x >= 0 && x < cols && y >= 0 && y < rows) {
-                        result[i][0] = y;
-                        result[i][1] = x;
-                        i++;
-                    }
+            localY = getYUp(rows, cols, localX, localY, i, moves, result);
+        }
+        return result;
+    }
+
+    private int getYUp(
+            int rows, int cols, int localX, int localY, int[] i, int[] moves, int[][] result) {
+        if (localX < 0 || localX >= cols) {
+            localY -= moves[0];
+        } else {
+            for (int j = 0; j < moves[0]; j++) {
+                localY--;
+                if (localY >= 0 && localY < rows) {
+                    result[i[0]][0] = localY;
+                    result[i[0]][1] = localX;
+                    i[0]++;
                 }
             }
         }
-        return result;
+        return localY;
+    }
+
+    private int getXLeft(
+            int rows, int cols, int localX, int localY, int[] i, int[] moves, int[][] result) {
+        if (localY < 0 || localY >= rows) {
+            localX -= moves[0];
+        } else {
+            for (int j = 0; j < moves[0]; j++) {
+                localX--;
+                if (localX >= 0 && localX < cols) {
+                    result[i[0]][0] = localY;
+                    result[i[0]][1] = localX;
+                    i[0]++;
+                }
+            }
+        }
+        return localX;
+    }
+
+    private int getYDown(
+            int rows, int cols, int localX, int localY, int[] i, int[] moves, int[][] result) {
+        if (localX < 0 || localX >= cols) {
+            localY += moves[0];
+        } else {
+            for (int j = 0; j < moves[0]; j++) {
+                localY++;
+                if (localY >= 0 && localY < rows) {
+                    result[i[0]][0] = localY;
+                    result[i[0]][1] = localX;
+                    i[0]++;
+                }
+            }
+        }
+        return localY;
+    }
+
+    private int getXRight(
+            int rows, int cols, int localX, int localY, int[] i, int[] moves, int[][] result) {
+        if (localY < 0 || localY >= rows) {
+            localX += moves[0];
+        } else {
+            for (int j = 0; j < moves[0]; j++) {
+                localX++;
+                if (localX >= 0 && localX < cols) {
+                    result[i[0]][0] = localY;
+                    result[i[0]][1] = localX;
+                    i[0]++;
+                }
+            }
+        }
+        return localX;
     }
 }
