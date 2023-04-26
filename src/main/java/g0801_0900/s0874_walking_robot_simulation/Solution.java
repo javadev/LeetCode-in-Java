@@ -45,8 +45,7 @@ public class Solution {
                         // error
                         break;
                 }
-                Result result = new Result(x, y);
-                maxDis = Math.max(maxDis, result.x * result.x + result.y * result.y);
+                maxDis = Math.max(maxDis, x * x + y * y);
             }
         }
         return maxDis;
@@ -76,15 +75,5 @@ public class Solution {
             x += cmd;
         }
         return x;
-    }
-
-    private static class Result {
-        public final int x;
-        public final int y;
-
-        public Result(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
     }
 }
