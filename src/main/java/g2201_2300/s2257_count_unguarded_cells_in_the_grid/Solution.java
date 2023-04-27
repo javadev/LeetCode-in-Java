@@ -42,8 +42,7 @@ public class Solution {
 
     private void extracted1(int m, char[][] matrix, int currentRow, int currentCol) {
         while (currentRow <= m - 1) {
-            if (matrix[currentRow][currentCol] != 'W'
-                    && matrix[currentRow][currentCol] != 'G') {
+            if (matrix[currentRow][currentCol] != 'W' && matrix[currentRow][currentCol] != 'G') {
                 matrix[currentRow][currentCol] = 'R';
             } else {
                 break;
@@ -54,8 +53,7 @@ public class Solution {
 
     private void extracted1(char[][] matrix, int currentRow, int currentCol) {
         while (currentRow >= 0) {
-            if (matrix[currentRow][currentCol] != 'W'
-                    && matrix[currentRow][currentCol] != 'G') {
+            if (matrix[currentRow][currentCol] != 'W' && matrix[currentRow][currentCol] != 'G') {
                 matrix[currentRow][currentCol] = 'R';
             } else {
                 break;
@@ -66,8 +64,7 @@ public class Solution {
 
     private void extracted(int n, char[][] matrix, int currentRow, int currentCol) {
         while (currentCol <= n - 1) {
-            if (matrix[currentRow][currentCol] != 'W'
-                    && matrix[currentRow][currentCol] != 'G') {
+            if (matrix[currentRow][currentCol] != 'W' && matrix[currentRow][currentCol] != 'G') {
                 matrix[currentRow][currentCol] = 'R';
             } else {
                 break;
@@ -78,8 +75,7 @@ public class Solution {
 
     private void extracted(char[][] matrix, int currentRow, int currentCol) {
         while (currentCol >= 0) {
-            if (matrix[currentRow][currentCol] != 'W'
-                    && matrix[currentRow][currentCol] != 'G') {
+            if (matrix[currentRow][currentCol] != 'W' && matrix[currentRow][currentCol] != 'G') {
                 matrix[currentRow][currentCol] = 'R';
             } else {
                 break;

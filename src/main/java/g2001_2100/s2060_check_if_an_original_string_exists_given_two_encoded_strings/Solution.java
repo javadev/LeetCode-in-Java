@@ -90,7 +90,8 @@ public class Solution {
         memo[i1][i2][diff + 999] = stringMatched;
     }
 
-    private boolean extracted(int i1, int i2, int diff, List<int[]> indexNums1, List<int[]> indexNums2) {
+    private boolean extracted(
+            int i1, int i2, int diff, List<int[]> indexNums1, List<int[]> indexNums2) {
         char c1 = s1.charAt(i1);
         char c2 = s2.charAt(i2);
         if (Character.isLetter(c1) && Character.isLetter(c2)) {
