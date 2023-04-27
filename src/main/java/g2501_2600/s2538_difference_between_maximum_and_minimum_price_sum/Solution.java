@@ -5,6 +5,7 @@ package g2501_2600.s2538_difference_between_maximum_and_minimum_price_sum;
 
 import java.util.ArrayList;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private ArrayList<Integer>[] tree;
     private int[] price;
