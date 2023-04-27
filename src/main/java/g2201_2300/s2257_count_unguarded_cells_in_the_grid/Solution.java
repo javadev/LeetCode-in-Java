@@ -19,48 +19,16 @@ public class Solution {
         for (int i = 0; i <= guards.length - 1; i++) {
             int currentRow = guards[i][0];
             int currentCol = guards[i][1] - 1;
-            while (currentCol >= 0) {
-                if (matrix[currentRow][currentCol] != 'W'
-                        && matrix[currentRow][currentCol] != 'G') {
-                    matrix[currentRow][currentCol] = 'R';
-                } else {
-                    break;
-                }
-                currentCol--;
-            }
+            extracted(matrix, currentRow, currentCol);
             currentRow = guards[i][0];
             currentCol = guards[i][1] + 1;
-            while (currentCol <= n - 1) {
-                if (matrix[currentRow][currentCol] != 'W'
-                        && matrix[currentRow][currentCol] != 'G') {
-                    matrix[currentRow][currentCol] = 'R';
-                } else {
-                    break;
-                }
-                currentCol++;
-            }
+            extracted(n, matrix, currentRow, currentCol);
             currentRow = guards[i][0] - 1;
             currentCol = guards[i][1];
-            while (currentRow >= 0) {
-                if (matrix[currentRow][currentCol] != 'W'
-                        && matrix[currentRow][currentCol] != 'G') {
-                    matrix[currentRow][currentCol] = 'R';
-                } else {
-                    break;
-                }
-                currentRow--;
-            }
+            extracted1(matrix, currentRow, currentCol);
             currentRow = guards[i][0] + 1;
             currentCol = guards[i][1];
-            while (currentRow <= m - 1) {
-                if (matrix[currentRow][currentCol] != 'W'
-                        && matrix[currentRow][currentCol] != 'G') {
-                    matrix[currentRow][currentCol] = 'R';
-                } else {
-                    break;
-                }
-                currentRow++;
-            }
+            extracted1(m, matrix, currentRow, currentCol);
         }
         for (int i = 0; i <= m - 1; i++) {
             for (int j = 0; j <= n - 1; j++) {
@@ -70,5 +38,53 @@ public class Solution {
             }
         }
         return result;
+    }
+
+    private void extracted1(int m, char[][] matrix, int currentRow, int currentCol) {
+        while (currentRow <= m - 1) {
+            if (matrix[currentRow][currentCol] != 'W'
+                    && matrix[currentRow][currentCol] != 'G') {
+                matrix[currentRow][currentCol] = 'R';
+            } else {
+                break;
+            }
+            currentRow++;
+        }
+    }
+
+    private void extracted1(char[][] matrix, int currentRow, int currentCol) {
+        while (currentRow >= 0) {
+            if (matrix[currentRow][currentCol] != 'W'
+                    && matrix[currentRow][currentCol] != 'G') {
+                matrix[currentRow][currentCol] = 'R';
+            } else {
+                break;
+            }
+            currentRow--;
+        }
+    }
+
+    private void extracted(int n, char[][] matrix, int currentRow, int currentCol) {
+        while (currentCol <= n - 1) {
+            if (matrix[currentRow][currentCol] != 'W'
+                    && matrix[currentRow][currentCol] != 'G') {
+                matrix[currentRow][currentCol] = 'R';
+            } else {
+                break;
+            }
+            currentCol++;
+        }
+    }
+
+    private void extracted(char[][] matrix, int currentRow, int currentCol) {
+        while (currentCol >= 0) {
+            if (matrix[currentRow][currentCol] != 'W'
+                    && matrix[currentRow][currentCol] != 'G') {
+                matrix[currentRow][currentCol] = 'R';
+            } else {
+                break;
+            }
+            currentCol--;
+        }
     }
 }

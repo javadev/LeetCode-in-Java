@@ -67,24 +67,8 @@ public class Solution {
             x2++;
         }
         if (diff == 0) {
-            char c1 = s1.charAt(i1);
-            char c2 = s2.charAt(i2);
-            if (Character.isLetter(c1) && Character.isLetter(c2)) {
-                if (c1 != c2) {
-                    return;
-                }
-                dfs(i1 + 1, i2 + 1, diff);
+            if (extracted(i1, i2, diff, indexNums1, indexNums2)) {
                 return;
-            } else {
-                if (!indexNums1.isEmpty()) {
-                    for (int[] num1Item : indexNums1) {
-                        dfs(num1Item[0] + 1, i2, diff + num1Item[1]);
-                    }
-                } else {
-                    for (int[] num2Item : indexNums2) {
-                        dfs(i1, num2Item[0] + 1, diff - num2Item[1]);
-                    }
-                }
             }
         } else if (diff > 0) {
             if (Character.isLetter(s2.charAt(i2))) {
@@ -104,5 +88,28 @@ public class Solution {
             }
         }
         memo[i1][i2][diff + 999] = stringMatched;
+    }
+
+    private boolean extracted(int i1, int i2, int diff, List<int[]> indexNums1, List<int[]> indexNums2) {
+        char c1 = s1.charAt(i1);
+        char c2 = s2.charAt(i2);
+        if (Character.isLetter(c1) && Character.isLetter(c2)) {
+            if (c1 != c2) {
+                return true;
+            }
+            dfs(i1 + 1, i2 + 1, diff);
+            return true;
+        } else {
+            if (!indexNums1.isEmpty()) {
+                for (int[] num1Item : indexNums1) {
+                    dfs(num1Item[0] + 1, i2, diff + num1Item[1]);
+                }
+            } else {
+                for (int[] num2Item : indexNums2) {
+                    dfs(i1, num2Item[0] + 1, diff - num2Item[1]);
+                }
+            }
+        }
+        return false;
     }
 }
