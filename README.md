@@ -1,6 +1,6 @@
 # LeetCode-in-Java
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.javadev/leetcode-in-java?style=flat-square)](https://central.sonatype.com/artifact/com.github.javadev/leetcode-in-java/1.20)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.javadev/leetcode-in-java?style=flat-square)](https://central.sonatype.com/artifact/com.github.javadev/leetcode-in-java/1.21)
 [![MIT License](http://img.shields.io/badge/license-MIT-green.svg) ](https://github.com/javadev/leetcode-in-java/blob/main/LICENSE)
 [![Java CI](https://github.com/javadev/LeetCode-in-Java/actions/workflows/maven.yml/badge.svg)](https://github.com/javadev/LeetCode-in-Java/actions/workflows/maven.yml)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=javadev_LeetCode-in-Java&metric=sqale_rating)](https://sonarcloud.io/summary/overall?id=javadev_LeetCode-in-Java)
@@ -19,7 +19,7 @@ Include the following in your `pom.xml` for Maven:
   <dependency>
     <groupId>com.github.javadev</groupId>
     <artifactId>leetcode-in-java</artifactId>
-    <version>1.20</version>
+    <version>1.21</version>
   </dependency>
   ...
 </dependencies>
@@ -28,7 +28,7 @@ Include the following in your `pom.xml` for Maven:
 Gradle:
 
 ```groovy
-implementation 'com.github.javadev:leetcode-in-java:1.20'
+implementation 'com.github.javadev:leetcode-in-java:1.21'
 ```
 
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
@@ -2327,7 +2327,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.20'
 | 1936 |[Add Minimum Number of Rungs](src/main/java/g1901_2000/s1936_add_minimum_number_of_rungs/Solution.java)| Medium | Array, Greedy | 1 | 100.00
 | 1935 |[Maximum Number of Words You Can Type](src/main/java/g1901_2000/s1935_maximum_number_of_words_you_can_type/Solution.java)| Easy | String, Hash_Table | 2 | 95.06
 | 1932 |[Merge BSTs to Create Single BST](src/main/java/g1901_2000/s1932_merge_bsts_to_create_single_bst/Solution.java)| Hard | Hash_Table, Depth_First_Search, Tree, Binary_Search, Binary_Tree | 87 | 48.43
-| 1931 |[Painting a Grid With Three Different Colors](src/main/java/g1901_2000/s1931_painting_a_grid_with_three_different_colors/Solution.java)| Hard | Dynamic_Programming | 7 | 99.32
+| 1931 |[Painting a Grid With Three Different Colors](src/main/java/g1901_2000/s1931_painting_a_grid_with_three_different_colors/Solution.java)| Hard | Dynamic_Programming | 4 | 100.00
 | 1930 |[Unique Length-3 Palindromic Subsequences](src/main/java/g1901_2000/s1930_unique_length_3_palindromic_subsequences/Solution.java)| Medium | String, Hash_Table, Prefix_Sum | 31 | 93.44
 | 1929 |[Concatenation of Array](src/main/java/g1901_2000/s1929_concatenation_of_array/Solution.java)| Easy | Array | 1 | 92.52
 | 1928 |[Minimum Cost to Reach Destination in Time](src/main/java/g1901_2000/s1928_minimum_cost_to_reach_destination_in_time/Solution.java)| Hard | Dynamic_Programming, Graph | 52 | 87.97
@@ -3020,7 +3020,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.20'
 | 1004 |[Max Consecutive Ones III](src/main/java/g1001_1100/s1004_max_consecutive_ones_iii/Solution.java)| Medium | Array, Binary_Search, Prefix_Sum, Sliding_Window | 3 | 79.01
 | 1003 |[Check If Word Is Valid After Substitutions](src/main/java/g1001_1100/s1003_check_if_word_is_valid_after_substitutions/Solution.java)| Medium | String, Stack | 5 | 98.54
 | 1002 |[Find Common Characters](src/main/java/g1001_1100/s1002_find_common_characters/Solution.java)| Easy | Array, String, Hash_Table | 4 | 83.51
-| 1001 |[Grid Illumination](src/main/java/g1001_1100/s1001_grid_illumination/Solution.java)| Hard | Array, Hash_Table | 75 | 90.57
+| 1001 |[Grid Illumination](src/main/java/g1001_1100/s1001_grid_illumination/Solution.java)| Hard | Array, Hash_Table | 82 | 89.13
 | 1000 |[Minimum Cost to Merge Stones](src/main/java/g0901_1000/s1000_minimum_cost_to_merge_stones/Solution.java)| Hard | Array, Dynamic_Programming | 1 | 99.65
 | 0999 |[Available Captures for Rook](src/main/java/g0901_1000/s0999_available_captures_for_rook/Solution.java)| Easy | Array, Matrix, Simulation | 0 | 100.00
 | 0998 |[Maximum Binary Tree II](src/main/java/g0901_1000/s0998_maximum_binary_tree_ii/Solution.java)| Medium | Tree, Binary_Tree | 0 | 100.00
@@ -3136,7 +3136,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.20'
 | 0888 |[Fair Candy Swap](src/main/java/g0801_0900/s0888_fair_candy_swap/Solution.java)| Easy | Array, Hash_Table, Sorting, Binary_Search | 18 | 68.20
 | 0887 |[Super Egg Drop](src/main/java/g0801_0900/s0887_super_egg_drop/Solution.java)| Hard | Dynamic_Programming, Math, Binary_Search | 0 | 100.00
 | 0886 |[Possible Bipartition](src/main/java/g0801_0900/s0886_possible_bipartition/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find, Graph_Theory_I_Day_14_Graph_Theory | 20 | 80.12
-| 0885 |[Spiral Matrix III](src/main/java/g0801_0900/s0885_spiral_matrix_iii/Solution.java)| Medium | Array, Matrix, Simulation | 3 | 95.45
+| 0885 |[Spiral Matrix III](src/main/java/g0801_0900/s0885_spiral_matrix_iii/Solution.java)| Medium | Array, Matrix, Simulation | 2 | 100.00
 | 0884 |[Uncommon Words from Two Sentences](src/main/java/g0801_0900/s0884_uncommon_words_from_two_sentences/Solution.java)| Easy | String, Hash_Table | 1 | 100.00
 | 0883 |[Projection Area of 3D Shapes](src/main/java/g0801_0900/s0883_projection_area_of_3d_shapes/Solution.java)| Easy | Array, Math, Matrix, Geometry | 1 | 100.00
 | 0882 |[Reachable Nodes In Subdivided Graph](src/main/java/g0801_0900/s0882_reachable_nodes_in_subdivided_graph/Solution.java)| Hard | Heap_Priority_Queue, Graph, Shortest_Path | 28 | 95.85
