@@ -1848,9 +1848,10 @@ implementation 'com.github.javadev:leetcode-in-java:1.21'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2542 |[Maximum Subsequence Score](src/main/java/g2501_2600/s2542_maximum_subsequence_score/Solution.java)| Medium | Array, Sorting, Greedy, Heap_(Priority_Queue) | 94 | 84.75
 | 2541 |[Minimum Operations to Make Array Equal II](src/main/java/g2501_2600/s2541_minimum_operations_to_make_array_equal_ii/Solution.java)| Medium | Array, Math, Greedy | 3 | 100.00
 | 2540 |[Minimum Common Value](src/main/java/g2501_2600/s2540_minimum_common_value/Solution.java)| Easy | Array, Hash_Table, Binary_Search, Two_Pointers | 0 | 100.00
-| 2538 |[Difference Between Maximum and Minimum Price Sum](src/main/java/g2501_2600/s2538_difference_between_maximum_and_minimum_price_sum/Solution.java)| Hard | Array, Dynamic_Programming, Tree, Depth_First_Search | 43 | 95.19
+| 2538 |[Difference Between Maximum and Minimum Price Sum](src/main/java/g2501_2600/s2538_difference_between_maximum_and_minimum_price_sum/Solution.java)| Hard | Array, Dynamic_Programming, Depth_First_Search, Tree | 43 | 95.19
 | 2537 |[Count the Number of Good Subarrays](src/main/java/g2501_2600/s2537_count_the_number_of_good_subarrays/Solution.java)| Medium | Array, Hash_Table, Sliding_Window | 38 | 99.07
 | 2536 |[Increment Submatrices by One](src/main/java/g2501_2600/s2536_increment_submatrices_by_one/Solution.java)| Medium | Array, Matrix, Prefix_Sum | 12 | 88.15
 | 2535 |[Difference Between Element Sum and Digit Sum of an Array](src/main/java/g2501_2600/s2535_difference_between_element_sum_and_digit_sum_of_an_array/Solution.java)| Easy | Array, Math | 3 | 77.42
