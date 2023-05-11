@@ -8,7 +8,7 @@ public class Solution {
         char[] arr = s.toCharArray();
         int res = 0;
         for (int i = 0; i < arr.length; i++) {
-            res += Math.pow(-1, i) * (arr[i] - '0');
+            res += (int) Math.pow(-1, i) * (arr[i] - '0');
         }
         return res;
     }
