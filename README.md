@@ -1848,6 +1848,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.21'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2545 |[Sort the Students by Their Kth Score](src/main/java/g2501_2600/s2545_sort_the_students_by_their_kth_score/Solution.java)| Medium | Array, Sorting, Matrix | 1 | 99.50
+| 2544 |[Alternating Digit Sum](src/main/java/g2501_2600/s2544_alternating_digit_sum/Solution.java)| Easy | Math | 0 | 100.00
 | 2543 |[Check if Point Is Reachable](src/main/java/g2501_2600/s2543_check_if_point_is_reachable/Solution.java)| Hard | Math, Number_Theory | 0 | 100.00
 | 2542 |[Maximum Subsequence Score](src/main/java/g2501_2600/s2542_maximum_subsequence_score/Solution.java)| Medium | Array, Sorting, Greedy, Heap_(Priority_Queue) | 94 | 84.75
 | 2541 |[Minimum Operations to Make Array Equal II](src/main/java/g2501_2600/s2541_minimum_operations_to_make_array_equal_ii/Solution.java)| Medium | Array, Math, Greedy | 3 | 100.00
