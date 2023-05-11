@@ -1848,6 +1848,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.21'
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 2543 |[Check if Point Is Reachable](src/main/java/g2501_2600/s2543_check_if_point_is_reachable/Solution.java)| Hard | Math, Number_Theory | 0 | 100.00
 | 2542 |[Maximum Subsequence Score](src/main/java/g2501_2600/s2542_maximum_subsequence_score/Solution.java)| Medium | Array, Sorting, Greedy, Heap_(Priority_Queue) | 94 | 84.75
 | 2541 |[Minimum Operations to Make Array Equal II](src/main/java/g2501_2600/s2541_minimum_operations_to_make_array_equal_ii/Solution.java)| Medium | Array, Math, Greedy | 3 | 100.00
 | 2540 |[Minimum Common Value](src/main/java/g2501_2600/s2540_minimum_common_value/Solution.java)| Easy | Array, Hash_Table, Binary_Search, Two_Pointers | 0 | 100.00
