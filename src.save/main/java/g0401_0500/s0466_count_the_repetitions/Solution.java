@@ -26,7 +26,6 @@ public class Solution {
             s1Count++;
             s2CountMap[s1Count] = s2Count;
         }
-
         int n1Left = n1 - memo[s2Idx][0];
         int matchedPatternCount = n1Left / (s1Count - memo[s2Idx][0]) * (s2Count - memo[s2Idx][1]);
         n1Left = n1Left % (s1Count - memo[s2Idx][0]);
