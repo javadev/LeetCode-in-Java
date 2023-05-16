@@ -3399,6 +3399,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.21'
 | 0576 |[Out of Boundary Paths](src.save/main/java/g0501_0600/s0576_out_of_boundary_paths/Solution.java)| Medium | Dynamic_Programming | 5 | 92.95
 | 0575 |[Distribute Candies](src.save/main/java/g0501_0600/s0575_distribute_candies/Solution.java)| Easy | Array, Hash_Table | 67 | 42.81
 | 0572 |[Subtree of Another Tree](src.save/main/java/g0501_0600/s0572_subtree_of_another_tree/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Hash_Function, String_Matching, Algorithm_II_Day_7_Breadth_First_Search_Depth_First_Search | 1 | 100.00
+| 0570 |[Managers with at Least 5 Direct Reports](src.save/main/java/g0501_0600/s0570_managers_with_at_least_5_direct_reports/script.sql)| Medium | Database | 503 | 69.79
 | 0567 |[Permutation in String](src.save/main/java/g0501_0600/s0567_permutation_in_string/Solution.java)| Medium | String, Hash_Table, Two_Pointers, Sliding_Window, Algorithm_I_Day_6_Sliding_Window | 5 | 93.93
 | 0566 |[Reshape the Matrix](src.save/main/java/g0501_0600/s0566_reshape_the_matrix/Solution.java)| Easy | Array, Matrix, Simulation, Data_Structure_I_Day_4_Array, Programming_Skills_I_Day_7_Array | 1 | 90.08
 | 0565 |[Array Nesting](src.save/main/java/g0501_0600/s0565_array_nesting/Solution.java)| Medium | Array, Depth_First_Search | 5 | 95.44
@@ -3414,6 +3415,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.21'
 | 0553 |[Optimal Division](src.save/main/java/g0501_0600/s0553_optimal_division/Solution.java)| Medium | Array, Dynamic_Programming, Math | 0 | 100.00
 | 0552 |[Student Attendance Record II](src.save/main/java/g0501_0600/s0552_student_attendance_record_ii/Solution.java)| Hard | Dynamic_Programming | 11 | 98.55
 | 0551 |[Student Attendance Record I](src.save/main/java/g0501_0600/s0551_student_attendance_record_i/Solution.java)| Easy | String | 0 | 100.00
+| 0550 |[Game Play Analysis IV](src.save/main/java/g0501_0600/s0550_game_play_analysis_iv/script.sql)| Medium | Database | 685 | 100.00
 | 0547 |[Number of Provinces](src.save/main/java/g0501_0600/s0547_number_of_provinces/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find, Algorithm_II_Day_6_Breadth_First_Search_Depth_First_Search, Graph_Theory_I_Day_8_Standard_Traversal, Level_2_Day_19_Union_Find | 2 | 69.51
 | 0546 |[Remove Boxes](src.save/main/java/g0501_0600/s0546_remove_boxes/Solution.java)| Hard | Array, Dynamic_Programming, Memoization | 45 | 95.58
 | 0543 |[Diameter of Binary Tree](src.save/main/java/g0501_0600/s0543_diameter_of_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue | 1 | 65.86
