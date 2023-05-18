@@ -3823,4 +3823,58 @@ implementation 'com.github.javadev:leetcode-in-java:1.21'
 | 0047 |[Permutations II](src.save/main/java/g0001_0100/s0047_permutations_ii/Solution.java)| Medium | Array, Backtracking, Algorithm_II_Day_10_Recursion_Backtracking | 2 | 93.29
 | 0046 |[Permutations](src.save/main/java/g0001_0100/s0046_permutations/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Backtracking, Algorithm_I_Day_11_Recursion_Backtracking, Level_2_Day_20_Brute_Force/Backtracking, Udemy_Backtracking/Recursion | 1 | 97.24
 | 0045 |[Jump Game II](src.save/main/java/g0001_0100/s0045_jump_game_ii/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Greedy, Algorithm_II_Day_13_Dynamic_Programming, Dynamic_Programming_I_Day_4 | 2 | 75.75
-| 0044 |[Wildcard Matching](src.save/main/java/g0001_0100/s0044_wildcard_matching/Solution.java)| Hard | Top_Interview_Questions, String, Dynamic_Programming, Greedy, Recursion, Udemy_Dynamic_Programming | 4 | 
+| 0044 |[Wildcard Matching](src.save/main/java/g0001_0100/s0044_wildcard_matching/Solution.java)| Hard | Top_Interview_Questions, String, Dynamic_Programming, Greedy, Recursion, Udemy_Dynamic_Programming | 4 | 90.87
+| 0043 |[Multiply Strings](src.save/main/java/g0001_0100/s0043_multiply_strings/Solution.java)| Medium | String, Math, Simulation, Data_Structure_II_Day_8_String, Programming_Skills_II_Day_4, Level_2_Day_2_String | 2 | 99.84
+| 0042 |[Trapping Rain Water](src.save/main/java/g0001_0100/s0042_trapping_rain_water/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Two_Pointers, Stack, Monotonic_Stack, Dynamic_Programming_I_Day_9, Udemy_Two_Pointers | 1 | 98.06
+| 0041 |[First Missing Positive](src.save/main/java/g0001_0100/s0041_first_missing_positive/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Udemy_Arrays | 5 | 50.34
+| 0040 |[Combination Sum II](src.save/main/java/g0001_0100/s0040_combination_sum_ii/Solution.java)| Medium | Array, Backtracking, Algorithm_II_Day_10_Recursion_Backtracking | 4 | 86.03
+| 0039 |[Combination Sum](src.save/main/java/g0001_0100/s0039_combination_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Backtracking, Algorithm_II_Day_10_Recursion_Backtracking, Level_2_Day_20_Brute_Force/Backtracking, Udemy_Backtracking/Recursion | 3 | 92.97
+| 0038 |[Count and Say](src.save/main/java/g0001_0100/s0038_count_and_say/Solution.java)| Medium | Top_Interview_Questions, String | 2 | 99.52
+| 0037 |[Sudoku Solver](src.save/main/java/g0001_0100/s0037_sudoku_solver/Solution.java)| Hard | Array, Matrix, Backtracking | 3 | 98.89
+| 0036 |[Valid Sudoku](src.save/main/java/g0001_0100/s0036_valid_sudoku/Solution.java)| Medium | Top_Interview_Questions, Array, Hash_Table, Matrix, Data_Structure_I_Day_5_Array | 2 | 95.85
+| 0035 |[Search Insert Position](src.save/main/java/g0001_0100/s0035_search_insert_position/Solution.java)| Easy | Top_100_Liked_Questions, Array, Binary_Search, Algorithm_I_Day_1_Binary_Search, Binary_Search_I_Day_2 | 0 | 100.00
+| 0034 |[Find First and Last Position of Element in Sorted Array](src.save/main/java/g0001_0100/s0034_find_first_and_last_position_of_element_in_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Algorithm_II_Day_1_Binary_Search, Binary_Search_I_Day_5 | 0 | 100.00
+| 0033 |[Search in Rotated Sorted Array](src.save/main/java/g0001_0100/s0033_search_in_rotated_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Algorithm_II_Day_1_Binary_Search, Binary_Search_I_Day_11, Level_2_Day_8_Binary_Search, Udemy_Binary_Search | 0 | 100.00
+| 0032 |[Longest Valid Parentheses](src.save/main/java/g0001_0100/s0032_longest_valid_parentheses/Solution.java)| Hard | Top_100_Liked_Questions, String, Dynamic_Programming, Stack | 2 | 93.91
+| 0031 |[Next Permutation](src.save/main/java/g0001_0100/s0031_next_permutation/Solution.java)| Medium | Top_100_Liked_Questions, Array, Two_Pointers | 1 | 85.59
+| 0030 |[Substring with Concatenation of All Words](src.save/main/java/g0001_0100/s0030_substring_with_concatenation_of_all_words/Solution.java)| Hard | String, Hash_Table, Sliding_Window | 9 | 97.68
+| 0029 |[Divide Two Integers](src.save/main/java/g0001_0100/s0029_divide_two_integers/Solution.java)| Medium | Top_Interview_Questions, Math, Bit_Manipulation, Udemy_Bit_Manipulation | 1 | 99.96
+| 0028 |[Implement strStr()](src.save/main/java/g0001_0100/s0028_implement_strstr/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers, String_Matching, Programming_Skills_II_Day_1 | 0 | 100.00
+| 0027 |[Remove Element](src.save/main/java/g0001_0100/s0027_remove_element/Solution.java)| Easy | Array, Two_Pointers | 0 | 100.00
+| 0026 |[Remove Duplicates from Sorted Array](src.save/main/java/g0001_0100/s0026_remove_duplicates_from_sorted_array/Solution.java)| Easy | Top_Interview_Questions, Array, Two_Pointers, Udemy_Two_Pointers | 1 | 99.47
+| 0025 |[Reverse Nodes in k-Group](src.save/main/java/g0001_0100/s0025_reverse_nodes_in_k_group/Solution.java)| Hard | Top_100_Liked_Questions, Linked_List, Recursion, Data_Structure_II_Day_13_Linked_List, Udemy_Linked_List | 0 | 100.00
+| 0024 |[Swap Nodes in Pairs](src.save/main/java/g0001_0100/s0024_swap_nodes_in_pairs/Solution.java)| Medium | Top_100_Liked_Questions, Linked_List, Recursion, Data_Structure_II_Day_12_Linked_List, Udemy_Linked_List | 0 | 100.00
+| 0023 |[Merge k Sorted Lists](src.save/main/java/g0001_0100/s0023_merge_k_sorted_lists/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Heap_Priority_Queue, Linked_List, Divide_and_Conquer, Merge_Sort | 2 | 97.31
+| 0022 |[Generate Parentheses](src.save/main/java/g0001_0100/s0022_generate_parentheses/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Backtracking, Algorithm_II_Day_11_Recursion_Backtracking, Udemy_Backtracking/Recursion | 2 | 63.16
+| 0021 |[Merge Two Sorted Lists](src.save/main/java/g0001_0100/s0021_merge_two_sorted_lists/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Linked_List, Recursion, Data_Structure_I_Day_7_Linked_List, Algorithm_I_Day_10_Recursion_Backtracking, Level_1_Day_3_Linked_List, Udemy_Linked_List | 1 | 69.17
+| 0020 |[Valid Parentheses](src.save/main/java/g0001_0100/s0020_valid_parentheses/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, String, Stack, Data_Structure_I_Day_9_Stack_Queue, Udemy_Strings | 3 | 51.72
+| 0019 |[Remove Nth Node From End of List](src.save/main/java/g0001_0100/s0019_remove_nth_node_from_end_of_list/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Two_Pointers, Linked_List, Algorithm_I_Day_5_Two_Pointers, Level_2_Day_3_Linked_List | 1 | 59.72
+| 0018 |[4Sum](src.save/main/java/g0001_0100/s0018_4sum/Solution.java)| Medium | Array, Sorting, Two_Pointers | 3 | 99.47
+| 0017 |[Letter Combinations of a Phone Number](src.save/main/java/g0001_0100/s0017_letter_combinations_of_a_phone_number/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Backtracking, Algorithm_II_Day_11_Recursion_Backtracking, Udemy_Backtracking/Recursion | 0 | 100.00
+| 0016 |[3Sum Closest](src.save/main/java/g0001_0100/s0016_3sum_closest/Solution.java)| Medium | Array, Sorting, Two_Pointers, Level_2_Day_14_Sliding_Window/Two_Pointer | 3 | 99.98
+| 0015 |[3Sum](src.save/main/java/g0001_0100/s0015_3sum/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Two_Pointers, Data_Structure_II_Day_1_Array, Algorithm_II_Day_3_Two_Pointers, Udemy_Two_Pointers | 28 | 71.04
+| 0014 |[Longest Common Prefix](src.save/main/java/g0001_0100/s0014_longest_common_prefix/Solution.java)| Easy | Top_Interview_Questions, String, Level_2_Day_2_String, Udemy_Strings | 1 | 84.75
+| 0013 |[Roman to Integer](src.save/main/java/g0001_0100/s0013_roman_to_integer/Solution.java)| Easy | Top_Interview_Questions, String, Hash_Table, Math | 6 | 79.00
+| 0012 |[Integer to Roman](src.save/main/java/g0001_0100/s0012_integer_to_roman/Solution.java)| Medium | String, Hash_Table, Math | 7 | 75.71
+| 0011 |[Container With Most Water](src.save/main/java/g0001_0100/s0011_container_with_most_water/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Greedy, Two_Pointers, Algorithm_II_Day_4_Two_Pointers | 2 | 99.81
+| 0010 |[Regular Expression Matching](src.save/main/java/g0001_0100/s0010_regular_expression_matching/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Recursion, Udemy_Dynamic_Programming | 3 | 80.22
+| 0009 |[Palindrome Number](src.save/main/java/g0001_0100/s0009_palindrome_number/Solution.java)| Easy | Math, Udemy_Integers | 13 | 58.99
+| 0008 |[String to Integer (atoi)](src.save/main/java/g0001_0100/s0008_string_to_integer_atoi/Solution.java)| Medium | Top_Interview_Questions, String | 3 | 57.89
+| 0007 |[Reverse Integer](src.save/main/java/g0001_0100/s0007_reverse_integer/Solution.java)| Medium | Top_Interview_Questions, Math, Udemy_Integers | 2 | 66.74
+| 0006 |[Zigzag Conversion](src.save/main/java/g0001_0100/s0006_zigzag_conversion/Solution.java)| Medium | String | 3 | 98.64
+| 0005 |[Longest Palindromic Substring](src.save/main/java/g0001_0100/s0005_longest_palindromic_substring/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Data_Structure_II_Day_9_String, Algorithm_II_Day_14_Dynamic_Programming, Dynamic_Programming_I_Day_17, Udemy_Strings | 10 | 98.57
+| 0004 |[Median of Two Sorted Arrays](src.save/main/java/g0001_0100/s0004_median_of_two_sorted_arrays/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Divide_and_Conquer | 3 | 81.72
+| 0003 |[Longest Substring Without Repeating Characters](src.save/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window, Algorithm_I_Day_6_Sliding_Window, Level_2_Day_14_Sliding_Window/Two_Pointer, Udemy_Strings | 5 | 91.03
+| 0002 |[Add Two Numbers](src.save/main/java/g0001_0100/s0002_add_two_numbers/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Math, Linked_List, Recursion, Data_Structure_II_Day_10_Linked_List, Programming_Skills_II_Day_15 | 2 | 98.23
+| 0001 |[Two Sum](src.save/main/java/g0001_0100/s0001_two_sum/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Data_Structure_I_Day_2_Array, Level_1_Day_13_Hashmap, Udemy_Arrays | 4 | 69.91
+
+## Contributing
+Your ideas/fixes/algorithms are more than welcome!
+
+1. Fork this repo
+2. Clone your forked repo (`git clone https://github.com/YOUR_GITHUB_USERNAME/LeetCode-in-Java.git`) onto your local machine
+3. `cd` into your cloned directory, create your feature branch (`git checkout -b my-awesome-fix`)
+4. `git add` your desired changes to this repo
+5. Commit your changes (`git commit -m 'Added some awesome features/fixes'`)
+6. Push to the branch (`git push origin my-awesome-feature`)
+7. Open your forked repo on Github website, create a new Pull Request to this repo!
