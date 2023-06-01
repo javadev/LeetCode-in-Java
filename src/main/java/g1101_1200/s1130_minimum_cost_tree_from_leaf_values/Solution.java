@@ -1,7 +1,7 @@
 package g1101_1200.s1130_minimum_cost_tree_from_leaf_values;
 
 // #Medium #Dynamic_Programming #Greedy #Stack #Monotonic_Stack
-// #2022_03_09_Time_2_ms_(82.90%)_Space_41.9_MB_(34.83%)
+// #2023_06_01_Time_1_ms_(98.05%)_Space_40.4_MB_(69.65%)
 
 import java.util.ArrayDeque;
 import java.util.Deque;

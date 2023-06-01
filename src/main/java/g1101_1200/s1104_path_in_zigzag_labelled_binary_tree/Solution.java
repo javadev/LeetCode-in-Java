@@ -1,6 +1,6 @@
 package g1101_1200.s1104_path_in_zigzag_labelled_binary_tree;
 
-// #Medium #Math #Tree #Binary_Tree #2022_02_28_Time_1_ms_(58.50%)_Space_41.6_MB_(28.60%)
+// #Medium #Math #Tree #Binary_Tree #2023_06_01_Time_0_ms_(100.00%)_Space_40.1_MB_(82.91%)
 
 import java.util.LinkedList;
 import java.util.List;

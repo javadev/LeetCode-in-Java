@@ -1,7 +1,7 @@
 package g1101_1200.s1146_snapshot_array;
 
 // #Medium #Array #Hash_Table #Binary_Search #Design #Binary_Search_II_Day_18
-// #2022_03_05_Time_37_ms_(87.93%)_Space_75.2_MB_(81.59%)
+// #2023_06_01_Time_68_ms_(45.86%)_Space_78.9_MB_(59.57%)
 
 import java.util.HashMap;
 import java.util.Map;
@@ -45,3 +45,11 @@ public class SnapshotArray {
         return ar[index];
     }
 }
+
+/*
+ * Your SnapshotArray object will be instantiated and called as such:
+ * SnapshotArray obj = new SnapshotArray(length);
+ * obj.set(index,val);
+ * int param_2 = obj.snap();
+ * int param_3 = obj.get(index,snap_id);
+ */
