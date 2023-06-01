@@ -1,7 +1,7 @@
 package g1101_1200.s1110_delete_nodes_and_return_forest;
 
 // #Medium #Depth_First_Search #Tree #Binary_Tree
-// #2022_07_10_Time_2_ms_(87.37%)_Space_43.3_MB_(83.55%)
+// #2023_06_01_Time_1_ms_(98.05%)_Space_44.2_MB_(11.97%)
 
 import com_github_leetcode.TreeNode;
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package g1101_1200.s1116_print_zero_even_odd;
 
-// #Medium #Concurrency #2022_03_09_Time_5_ms_(99.83%)_Space_41_MB_(63.68%)
+// #Medium #Concurrency #2023_06_01_Time_7_ms_(38.76%)_Space_42_MB_(38.97%)
 
 import java.util.concurrent.Semaphore;
 import java.util.function.IntConsumer;

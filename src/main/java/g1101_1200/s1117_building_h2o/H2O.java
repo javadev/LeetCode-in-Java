@@ -1,6 +1,6 @@
 package g1101_1200.s1117_building_h2o;
 
-// #Medium #Concurrency #2022_03_09_Time_12_ms_(93.81%)_Space_42.9_MB_(89.01%)
+// #Medium #Concurrency #2023_06_01_Time_19_ms_(89.19%)_Space_45.9_MB_(7.13%)
 
 import java.util.concurrent.Semaphore;
 
