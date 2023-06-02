@@ -1,6 +1,6 @@
 package g1101_1200.s1156_swap_for_longest_repeated_character_substring;
 
-// #Medium #String #Sliding_Window #2022_05_05_Time_12_ms_(47.37%)_Space_44.1_MB_(22.11%)
+// #Medium #String #Sliding_Window #2023_06_02_Time_14_ms_(43.18%)_Space_43.8_MB_(6.82%)
 
 import java.util.ArrayList;
 import java.util.HashMap;

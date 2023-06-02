@@ -1,6 +1,6 @@
 package g1101_1200.s1160_find_words_that_can_be_formed_by_characters;
 
-// #Easy #Array #String #Hash_Table #2022_03_05_Time_53_ms_(30.13%)_Space_63.8_MB_(11.65%)
+// #Easy #Array #String #Hash_Table #2023_06_02_Time_31_ms_(42.06%)_Space_44.7_MB_(5.60%)
 
 import java.util.HashMap;
 import java.util.Map;
