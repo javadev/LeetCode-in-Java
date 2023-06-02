@@ -1,7 +1,7 @@
 package g1101_1200.s1157_online_majority_element_in_subarray;
 
 // #Hard #Array #Binary_Search #Design #Segment_Tree #Binary_Indexed_Tree
-// #2022_03_05_Time_56_ms_(100.00%)_Space_50.3_MB_(92.06%)
+// #2023_06_02_Time_108_ms_(95.24%)_Space_58.6_MB_(20.64%)
 
 import java.util.ArrayList;
 import java.util.Collections;
