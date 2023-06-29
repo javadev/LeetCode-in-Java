@@ -1,6 +1,6 @@
 # LeetCode-in-Java
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.javadev/leetcode-in-java?style=flat-square)](https://central.sonatype.com/artifact/com.github.javadev/leetcode-in-java/1.21)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.javadev/leetcode-in-java?style=flat-square)](https://central.sonatype.com/artifact/com.github.javadev/leetcode-in-java/1.22)
 [![MIT License](http://img.shields.io/badge/license-MIT-green.svg) ](https://github.com/javadev/leetcode-in-java/blob/main/LICENSE)
 [![Java CI](https://github.com/javadev/LeetCode-in-Java/actions/workflows/maven.yml/badge.svg)](https://github.com/javadev/LeetCode-in-Java/actions/workflows/maven.yml)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=javadev_LeetCode-in-Java&metric=sqale_rating)](https://sonarcloud.io/summary/overall?id=javadev_LeetCode-in-Java)
@@ -19,7 +19,7 @@ Include the following in your `pom.xml` for Maven:
   <dependency>
     <groupId>com.github.javadev</groupId>
     <artifactId>leetcode-in-java</artifactId>
-    <version>1.21</version>
+    <version>1.22</version>
   </dependency>
   ...
 </dependencies>
@@ -28,7 +28,7 @@ Include the following in your `pom.xml` for Maven:
 Gradle:
 
 ```groovy
-implementation 'com.github.javadev:leetcode-in-java:1.21'
+implementation 'com.github.javadev:leetcode-in-java:1.22'
 ```
 
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
