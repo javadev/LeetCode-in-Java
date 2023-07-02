@@ -8,11 +8,11 @@
 [![](https://img.shields.io/github/stars/javadev/LeetCode-in-Java?style=flat-square)](https://github.com/javadev/LeetCode-in-Java)
 [![](https://img.shields.io/github/forks/javadev/LeetCode-in-Java?style=flat-square)](https://github.com/javadev/LeetCode-in-Java/fork)
 
-Java Solution for LeetCode algorithm problems, continually updating.
+Java-based LeetCode algorithm problem solutions, regularly updated.
 
 ## Installation
 
-Include the following in your `pom.xml` for Maven:
+To configure your Maven project, add the following code to your pom.xml file:
 
 ```xml
 <dependencies>
@@ -25,7 +25,7 @@ Include the following in your `pom.xml` for Maven:
 </dependencies>
 ```
 
-Gradle:
+Gradle configuration:
 
 ```groovy
 implementation 'com.github.javadev:leetcode-in-java:1.22'
