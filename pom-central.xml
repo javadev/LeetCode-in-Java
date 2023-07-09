@@ -6,7 +6,7 @@
     <packaging>jar</packaging>
     <version>1.22</version>
     <name>leetcode-in-java</name>
-    <description>Java Solution for LeetCode algorithm problems, continually updating</description>
+    <description>Java-based LeetCode algorithm problem solutions, regularly updated</description>
     <url>https://github.com/javadev/LeetCode-in-Java</url>
     <developers>
         <developer>
