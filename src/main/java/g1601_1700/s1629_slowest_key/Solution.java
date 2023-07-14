@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("java:S3824")
 public class Solution {
     public char slowestKey(int[] releaseTimes, String keysPressed) {
         Map<Character, Integer> map = new HashMap<>();
