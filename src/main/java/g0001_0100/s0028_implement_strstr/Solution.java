@@ -1,7 +1,7 @@
-package g0001_0100.s0028_implement_strstr;
+package g0001_0100.s0028_find_the_index_of_the_first_occurrence_in_a_string;
 
 // #Easy #Top_Interview_Questions #String #Two_Pointers #String_Matching
-// #Programming_Skills_II_Day_1 #2022_06_14_Time_0_ms_(100.00%)_Space_40.4_MB_(83.88%)
+// #Programming_Skills_II_Day_1 #2023_08_09_Time_0_ms_(100.00%)_Space_40.5_MB_(71.14%)
 
 public class Solution {
     public int strStr(String haystack, String needle) {

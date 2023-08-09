@@ -1,7 +1,7 @@
 package g0001_0100.s0010_regular_expression_matching;
 
 // #Hard #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming #Recursion
-// #Udemy_Dynamic_Programming #2022_06_13_Time_3_ms_(80.22%)_Space_42.7_MB_(47.80%)
+// #Udemy_Dynamic_Programming #2023_08_09_Time_1_ms_(100.00%)_Space_41.1_MB_(61.00%)
 
 public class Solution {
     private Boolean[][] cache;
@@ -15,15 +15,11 @@ public class Solution {
         if (j == p.length()) {
             return i == s.length();
         }
-
         boolean result;
-
         if (cache[i][j] != null) {
             return cache[i][j];
         }
-
         boolean firstMatch = i < s.length() && (s.charAt(i) == p.charAt(j) || p.charAt(j) == '.');
-
         if ((j + 1) < p.length() && p.charAt(j + 1) == '*') {
             result = (firstMatch && isMatch(s, p, i + 1, j)) || isMatch(s, p, i, j + 2);
         } else {

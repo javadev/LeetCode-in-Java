@@ -1,6 +1,6 @@
 package g0001_0100.s0012_integer_to_roman;
 
-// #Medium #String #Hash_Table #Math #2022_06_14_Time_7_ms_(75.71%)_Space_44.7_MB_(72.78%)
+// #Medium #String #Hash_Table #Math #2023_08_09_Time_2_ms_(100.00%)_Space_43.2_MB_(81.21%)
 
 public class Solution {
     public String intToRoman(int num) {

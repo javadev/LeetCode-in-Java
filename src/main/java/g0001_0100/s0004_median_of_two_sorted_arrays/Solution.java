@@ -1,7 +1,7 @@
 package g0001_0100.s0004_median_of_two_sorted_arrays;
 
 // #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Binary_Search #Divide_and_Conquer
-// #2022_06_13_Time_3_ms_(81.72%)_Space_49.7_MB_(52.19%)
+// #2023_08_09_Time_1_ms_(100.00%)_Space_44.4_MB_(96.42%)
 
 @SuppressWarnings("java:S2234")
 public class Solution {

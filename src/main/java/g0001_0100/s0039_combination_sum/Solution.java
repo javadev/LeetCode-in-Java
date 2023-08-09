@@ -2,7 +2,7 @@ package g0001_0100.s0039_combination_sum;
 
 // #Medium #Top_100_Liked_Questions #Array #Backtracking #Algorithm_II_Day_10_Recursion_Backtracking
 // #Level_2_Day_20_Brute_Force/Backtracking #Udemy_Backtracking/Recursion
-// #2022_06_15_Time_3_ms_(92.97%)_Space_45.8_MB_(22.70%)
+// #2023_08_09_Time_1_ms_(100.00%)_Space_43.6_MB_(90.84%)
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,13 +24,11 @@ public class Solution {
             }
             return;
         }
-
         if (amount - coins[n - 1] >= 0) {
             subList.add(coins[n - 1]);
             combinationSumRec(n, coins, amount - coins[n - 1], subList, ans);
             subList.remove(subList.size() - 1);
         }
-
         combinationSumRec(n - 1, coins, amount, subList, ans);
     }
 }

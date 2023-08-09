@@ -1,6 +1,6 @@
 package g0001_0100.s0006_zigzag_conversion;
 
-// #Medium #String #2022_06_13_Time_3_ms_(98.64%)_Space_42.5_MB_(95.79%)
+// #Medium #String #2023_08_09_Time_2_ms_(99.99%)_Space_43.2_MB_(99.73%)
 
 public class Solution {
     public String convert(String s, int numRows) {
