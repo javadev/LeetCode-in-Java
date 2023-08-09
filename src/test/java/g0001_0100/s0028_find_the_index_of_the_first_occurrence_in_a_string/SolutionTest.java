@@ -1,4 +1,4 @@
-package g0001_0100.s0028_implement_strstr;
+package g0001_0100.s0028_find_the_index_of_the_first_occurrence_in_a_string;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
