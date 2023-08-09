@@ -1,7 +1,7 @@
 package g0001_0100.s0024_swap_nodes_in_pairs;
 
 // #Medium #Top_100_Liked_Questions #Linked_List #Recursion #Data_Structure_II_Day_12_Linked_List
-// #Udemy_Linked_List #2022_06_14_Time_0_ms_(100.00%)_Space_40.3_MB_(76.55%)
+// #Udemy_Linked_List #2023_08_09_Time_0_ms_(100.00%)_Space_40.7_MB_(10.83%)
 
 import com_github_leetcode.ListNode;
 
@@ -39,7 +39,6 @@ public class Solution {
         if (len < 2) {
             return head;
         }
-
         ListNode curr = head;
         ListNode prev = null;
         ListNode next;
@@ -50,7 +49,6 @@ public class Solution {
             prev = curr;
             curr = next;
         }
-
         head.next = reverse(curr, len - 2);
         return prev;
     }

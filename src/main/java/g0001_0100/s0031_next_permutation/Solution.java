@@ -1,19 +1,17 @@
 package g0001_0100.s0031_next_permutation;
 
 // #Medium #Top_100_Liked_Questions #Array #Two_Pointers
-// #2022_06_15_Time_1_ms_(85.59%)_Space_43.9_MB_(26.78%)
+// #2023_08_09_Time_0_ms_(100.00%)_Space_42_MB_(90.28%)
 
 public class Solution {
     public void nextPermutation(int[] nums) {
         if (nums == null || nums.length <= 1) {
             return;
         }
-
         int i = nums.length - 2;
         while (i >= 0 && nums[i] >= nums[i + 1]) {
             i--;
         }
-
         if (i >= 0) {
             int j = nums.length - 1;
             while (nums[j] <= nums[i]) {
