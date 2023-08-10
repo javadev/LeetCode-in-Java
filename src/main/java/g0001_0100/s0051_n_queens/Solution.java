@@ -1,7 +1,7 @@
 package g0001_0100.s0051_n_queens;
 
 // #Hard #Top_100_Liked_Questions #Array #Backtracking
-// #2022_06_17_Time_1_ms_(100.00%)_Space_42.5_MB_(90.22%)
+// #2023_08_11_Time_1_ms_(100.00%)_Space_43.6_MB_(97.17%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

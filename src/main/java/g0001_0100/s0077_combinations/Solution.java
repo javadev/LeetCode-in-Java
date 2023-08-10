@@ -1,11 +1,11 @@
 package g0001_0100.s0077_combinations;
 
 // #Medium #Backtracking #Algorithm_I_Day_11_Recursion_Backtracking
-// #2022_06_19_Time_5_ms_(90.06%)_Space_55.4_MB_(25.00%)
+// #2023_08_11_Time_11_ms_(77.40%)_Space_93_MB_(5.21%)
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
+import java.util.ArrayDeque;
 
 @SuppressWarnings("java:S1149")
 public class Solution {
@@ -15,11 +15,11 @@ public class Solution {
         if (n > 20 || k < 1 || k > n) {
             return ans;
         }
-        backtrack(ans, n, k, 1, new Stack<>());
+        backtrack(ans, n, k, 1, new ArrayDeque<>());
         return ans;
     }
 
-    private void backtrack(List<List<Integer>> ans, int n, int k, int s, Stack<Integer> stack) {
+    private void backtrack(List<List<Integer>> ans, int n, int k, int s, ArrayDeque<Integer> stack) {
         // Base case
         // If k becomes 0
         if (k == 0) {

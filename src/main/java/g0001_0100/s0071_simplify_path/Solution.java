@@ -1,6 +1,6 @@
 package g0001_0100.s0071_simplify_path;
 
-// #Medium #String #Stack #2022_06_19_Time_4_ms_(95.43%)_Space_44_MB_(51.55%)
+// #Medium #String #Stack #2023_08_11_Time_2_ms_(99.80%)_Space_41.7_MB_(99.37%)
 
 import java.util.ArrayDeque;
 import java.util.Deque;
