@@ -37,10 +37,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: f4f48f5dc3d59b444b238326cdf534ae5614cc59
       run: chmod +x gradlew && ./gradlew spotlessJavaCheck test jacocoTestReport sonar -Dsonar.projectKey=javadev_LeetCode-in-Java -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=javadev-github
-    - uses: codecov/codecov-action@v2
-      with:
-        file: build/reports/jacoco/test/jacocoTestReport.xml
-        name: codecov
 
   build-windows:
     name: build-windows
