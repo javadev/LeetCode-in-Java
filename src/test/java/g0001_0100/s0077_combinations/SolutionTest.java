@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void combine() {
-        int[][] expected = {{1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 4}, {3, 4}};
+        int[][] expected = {{2, 1}, {3, 1}, {4, 1}, {3, 2}, {4, 2}, {4, 3}};
         assertThat(new Solution().combine(4, 2), equalTo(ArrayUtils.getLists(expected)));
     }
 

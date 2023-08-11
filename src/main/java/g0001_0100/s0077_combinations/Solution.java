@@ -3,9 +3,9 @@ package g0001_0100.s0077_combinations;
 // #Medium #Backtracking #Algorithm_I_Day_11_Recursion_Backtracking
 // #2023_08_11_Time_11_ms_(77.40%)_Space_93_MB_(5.21%)
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.ArrayDeque;
 
 @SuppressWarnings("java:S1149")
 public class Solution {
@@ -19,7 +19,8 @@ public class Solution {
         return ans;
     }
 
-    private void backtrack(List<List<Integer>> ans, int n, int k, int s, ArrayDeque<Integer> stack) {
+    private void backtrack(
+            List<List<Integer>> ans, int n, int k, int s, ArrayDeque<Integer> stack) {
         // Base case
         // If k becomes 0
         if (k == 0) {
