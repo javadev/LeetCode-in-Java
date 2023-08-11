@@ -1,7 +1,7 @@
 package g0001_0100.s0069_sqrtx;
 
 // #Easy #Top_Interview_Questions #Math #Binary_Search #Binary_Search_I_Day_4
-// #2022_06_18_Time_2_ms_(79.35%)_Space_41.8_MB_(23.51%)
+// #2023_08_11_Time_1_ms_(99.51%)_Space_39.5_MB_(78.13%)
 
 public class Solution {
     public int mySqrt(int x) {

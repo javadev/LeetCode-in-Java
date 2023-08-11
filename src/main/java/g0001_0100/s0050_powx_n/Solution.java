@@ -1,7 +1,7 @@
 package g0001_0100.s0050_powx_n;
 
 // #Medium #Top_Interview_Questions #Math #Recursion #Udemy_Integers
-// #2022_06_16_Time_1_ms_(82.34%)_Space_43.6_MB_(23.70%)
+// #2023_08_11_Time_0_ms_(100.00%)_Space_41.2_MB_(14.99%)
 
 public class Solution {
     public double myPow(double x, int n) {
