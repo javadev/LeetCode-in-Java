@@ -20,7 +20,8 @@ import org.zapodot.junit.db.common.CompatibilityMode;
 @EmbeddedDatabaseTest(
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
-                "CREATE TABLE Transactions(id INTEGER, country VARCHAR, state VARCHAR, amount INTEGER, trans_date DATE); "
+                "CREATE TABLE Transactions(id INTEGER, country VARCHAR, state VARCHAR," +
+                        " amount INTEGER, trans_date DATE); "
                         + "INSERT INTO Transactions(id, country, state, amount, trans_date)"
                         + " VALUES (121, 'US', 'approved', 1000, '2018-12-18'); "
                         + "INSERT INTO Transactions(id, country, state, amount, trans_date)"
