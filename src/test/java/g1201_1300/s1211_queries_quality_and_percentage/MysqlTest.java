@@ -44,7 +44,8 @@ class MysqlTest {
                                     new BufferedReader(
                                                     new FileReader(
                                                             "src/main/java/g1201_1300/"
-                                                                    + "s1211_queries_quality_and_percentage/script.sql"))
+                                                                    + "s1211_queries_quality_and_percentage"
+                                                                    + "/script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {
