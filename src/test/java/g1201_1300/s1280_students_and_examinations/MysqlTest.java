@@ -1,11 +1,8 @@
 package g1201_1300.s1280_students_and_examinations;
 
-import org.junit.jupiter.api.Test;
-import org.zapodot.junit.db.annotations.EmbeddedDatabase;
-import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest;
-import org.zapodot.junit.db.common.CompatibilityMode;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
-import javax.sql.DataSource;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -14,52 +11,54 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.stream.Collectors;
-
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
+import javax.sql.DataSource;
+import org.junit.jupiter.api.Test;
+import org.zapodot.junit.db.annotations.EmbeddedDatabase;
+import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest;
+import org.zapodot.junit.db.common.CompatibilityMode;
 
 @EmbeddedDatabaseTest(
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
-                "CREATE TABLE Students(student_id INTEGER, student_name VARCHAR); " +
-                        "INSERT INTO Students(student_id, student_name)" +
-                        " VALUES (1, 'Alice'); " +
-                        "INSERT INTO Students(student_id, student_name)" +
-                        " VALUES (2, 'Bob'); " +
-                        "INSERT INTO Students(student_id, student_name)" +
-                        " VALUES (13, 'John'); " +
-                        "INSERT INTO Students(student_id, student_name)" +
-                        " VALUES (6, 'Alex'); " +
-                        "CREATE TABLE Subjects(subject_name VARCHAR); " +
-                        "INSERT INTO Subjects(subject_name)" +
-                        " VALUES ('Math'); " +
-                        "INSERT INTO Subjects(subject_name)" +
-                        " VALUES ('Physics'); " +
-                        "INSERT INTO Subjects(subject_name)" +
-                        " VALUES ('Programming'); " +
-                        "CREATE TABLE Examinations(student_id INTEGER, subject_name VARCHAR); " +
-                        "INSERT INTO Examinations(student_id, subject_name)" +
-                        " VALUES (1, 'Math'); " +
-                        "INSERT INTO Examinations(student_id, subject_name)" +
-                        " VALUES (1, 'Physics'); " +
-                        "INSERT INTO Examinations(student_id, subject_name)" +
-                        " VALUES (1, 'Programming'); " +
-                        "INSERT INTO Examinations(student_id, subject_name)" +
-                        " VALUES (2, 'Programming'); " +
-                        "INSERT INTO Examinations(student_id, subject_name)" +
-                        " VALUES (1, 'Physics'); " +
-                        "INSERT INTO Examinations(student_id, subject_name)" +
-                        " VALUES (1, 'Math'); " +
-                        "INSERT INTO Examinations(student_id, subject_name)" +
-                        " VALUES (13, 'Math'); " +
-                        "INSERT INTO Examinations(student_id, subject_name)" +
-                        " VALUES (13, 'Programming'); " +
-                        "INSERT INTO Examinations(student_id, subject_name)" +
-                        " VALUES (13, 'Physics'); " +
-                        "INSERT INTO Examinations(student_id, subject_name)" +
-                        " VALUES (2, 'Math'); " +
-                        "INSERT INTO Examinations(student_id, subject_name)" +
-                        " VALUES (1, 'Math'); ")
+                "CREATE TABLE Students(student_id INTEGER, student_name VARCHAR); "
+                        + "INSERT INTO Students(student_id, student_name)"
+                        + " VALUES (1, 'Alice'); "
+                        + "INSERT INTO Students(student_id, student_name)"
+                        + " VALUES (2, 'Bob'); "
+                        + "INSERT INTO Students(student_id, student_name)"
+                        + " VALUES (13, 'John'); "
+                        + "INSERT INTO Students(student_id, student_name)"
+                        + " VALUES (6, 'Alex'); "
+                        + "CREATE TABLE Subjects(subject_name VARCHAR); "
+                        + "INSERT INTO Subjects(subject_name)"
+                        + " VALUES ('Math'); "
+                        + "INSERT INTO Subjects(subject_name)"
+                        + " VALUES ('Physics'); "
+                        + "INSERT INTO Subjects(subject_name)"
+                        + " VALUES ('Programming'); "
+                        + "CREATE TABLE Examinations(student_id INTEGER, subject_name VARCHAR); "
+                        + "INSERT INTO Examinations(student_id, subject_name)"
+                        + " VALUES (1, 'Math'); "
+                        + "INSERT INTO Examinations(student_id, subject_name)"
+                        + " VALUES (1, 'Physics'); "
+                        + "INSERT INTO Examinations(student_id, subject_name)"
+                        + " VALUES (1, 'Programming'); "
+                        + "INSERT INTO Examinations(student_id, subject_name)"
+                        + " VALUES (2, 'Programming'); "
+                        + "INSERT INTO Examinations(student_id, subject_name)"
+                        + " VALUES (1, 'Physics'); "
+                        + "INSERT INTO Examinations(student_id, subject_name)"
+                        + " VALUES (1, 'Math'); "
+                        + "INSERT INTO Examinations(student_id, subject_name)"
+                        + " VALUES (13, 'Math'); "
+                        + "INSERT INTO Examinations(student_id, subject_name)"
+                        + " VALUES (13, 'Programming'); "
+                        + "INSERT INTO Examinations(student_id, subject_name)"
+                        + " VALUES (13, 'Physics'); "
+                        + "INSERT INTO Examinations(student_id, subject_name)"
+                        + " VALUES (2, 'Math'); "
+                        + "INSERT INTO Examinations(student_id, subject_name)"
+                        + " VALUES (1, 'Math'); ")
 class MysqlTest {
     @Test
     void testScript(@EmbeddedDatabase DataSource dataSource)
