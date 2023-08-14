@@ -59,6 +59,7 @@ import org.zapodot.junit.db.common.CompatibilityMode;
                         + " VALUES (2, 'Math'); "
                         + "INSERT INTO Examinations(student_id, subject_name)"
                         + " VALUES (1, 'Math'); ")
+@SuppressWarnings("java:S5961")
 class MysqlTest {
     @Test
     void testScript(@EmbeddedDatabase DataSource dataSource)
