@@ -589,7 +589,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0367 |[Valid Perfect Square](src.save/main/java/g0301_0400/s0367_valid_perfect_square/Solution.java)| Easy | Math, Binary_Search | 0 | 100.00
-| 1385 |[Find the Distance Value Between Two Arrays](src/main/java/g1301_1400/s1385_find_the_distance_value_between_two_arrays/Solution.java)| Easy | Array, Sorting, Binary_Search, Two_Pointers | 5 | 65.78
+| 1385 |[Find the Distance Value Between Two Arrays](src.save/main/java/g1301_1400/s1385_find_the_distance_value_between_two_arrays/Solution.java)| Easy | Array, Sorting, Binary_Search, Two_Pointers | 5 | 65.78
 
 #### Day 4
 
@@ -623,15 +623,15 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1351 |[Count Negative Numbers in a Sorted Matrix](src/main/java/g1301_1400/s1351_count_negative_numbers_in_a_sorted_matrix/Solution.java)| Easy | Array, Binary_Search, Matrix | 1 | 49.66
+| 1351 |[Count Negative Numbers in a Sorted Matrix](src.save/main/java/g1301_1400/s1351_count_negative_numbers_in_a_sorted_matrix/Solution.java)| Easy | Array, Binary_Search, Matrix | 1 | 49.66
 | 0074 |[Search a 2D Matrix](src.save/main/java/g0001_0100/s0074_search_a_2d_matrix/Solution.java)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Matrix | 0 | 100.00
 
 #### Day 9
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1337 |[The K Weakest Rows in a Matrix](src/main/java/g1301_1400/s1337_the_k_weakest_rows_in_a_matrix/Solution.java)| Easy | Array, Sorting, Binary_Search, Matrix, Heap_Priority_Queue | 1 | 99.77
-| 1346 |[Check If N and Its Double Exist](src/main/java/g1301_1400/s1346_check_if_n_and_its_double_exist/Solution.java)| Easy | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 1 | 99.64
+| 1337 |[The K Weakest Rows in a Matrix](src.save/main/java/g1301_1400/s1337_the_k_weakest_rows_in_a_matrix/Solution.java)| Easy | Array, Sorting, Binary_Search, Matrix, Heap_Priority_Queue | 1 | 99.77
+| 1346 |[Check If N and Its Double Exist](src.save/main/java/g1301_1400/s1346_check_if_n_and_its_double_exist/Solution.java)| Easy | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 1 | 99.64
 
 #### Day 10
 
@@ -701,7 +701,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1482 |[Minimum Number of Days to Make m Bouquets](src/main/java/g1401_1500/s1482_minimum_number_of_days_to_make_m_bouquets/Solution.java)| Medium | Array, Binary_Search | 25 | 69.18
+| 1482 |[Minimum Number of Days to Make m Bouquets](src.save/main/java/g1401_1500/s1482_minimum_number_of_days_to_make_m_bouquets/Solution.java)| Medium | Array, Binary_Search | 25 | 69.18
 | 1818 |[Minimum Absolute Sum Difference](src/main/java/g1801_1900/s1818_minimum_absolute_sum_difference/Solution.java)| Medium | Array, Sorting, Binary_Search, Ordered_Set | 13 | 99.44
 
 #### Day 8
@@ -758,7 +758,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1292 |[Maximum Side Length of a Square with Sum Less than or Equal to Threshold](src.save/main/java/g1201_1300/s1292_maximum_side_length_of_a_square_with_sum_less_than_or_equal_to_threshold/Solution.java)| Medium | Array, Binary_Search, Matrix, Prefix_Sum | 23 | 32.97
-| 1498 |[Number of Subsequences That Satisfy the Given Sum Condition](src/main/java/g1401_1500/s1498_number_of_subsequences_that_satisfy_the_given_sum_condition/Solution.java)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 27 | 99.13
+| 1498 |[Number of Subsequences That Satisfy the Given Sum Condition](src.save/main/java/g1401_1500/s1498_number_of_subsequences_that_satisfy_the_given_sum_condition/Solution.java)| Medium | Array, Sorting, Binary_Search, Two_Pointers | 27 | 99.13
 
 #### Day 16
 
@@ -779,7 +779,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1146 |[Snapshot Array](src.save/main/java/g1101_1200/s1146_snapshot_array/SnapshotArray.java)| Medium | Array, Hash_Table, Binary_Search, Design | 68 | 45.86
-| 1488 |[Avoid Flood in The City](src/main/java/g1401_1500/s1488_avoid_flood_in_the_city/Solution.java)| Medium | Array, Hash_Table, Greedy, Binary_Search, Heap_Priority_Queue | 82 | 75.08
+| 1488 |[Avoid Flood in The City](src.save/main/java/g1401_1500/s1488_avoid_flood_in_the_city/Solution.java)| Medium | Array, Hash_Table, Greedy, Binary_Search, Heap_Priority_Queue | 82 | 75.08
 
 #### Day 19
 
@@ -894,7 +894,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1314 |[Matrix Block Sum](src/main/java/g1301_1400/s1314_matrix_block_sum/Solution.java)| Medium | Array, Matrix, Prefix_Sum | 5 | 67.46
+| 1314 |[Matrix Block Sum](src.save/main/java/g1301_1400/s1314_matrix_block_sum/Solution.java)| Medium | Array, Matrix, Prefix_Sum | 5 | 67.46
 | 0304 |[Range Sum Query 2D - Immutable](src.save/main/java/g0301_0400/s0304_range_sum_query_2d_immutable/NumMatrix.java)| Medium | Array, Matrix, Design, Prefix_Sum | 153 | 87.51
 
 #### Day 15
@@ -955,7 +955,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1523 |[Count Odd Numbers in an Interval Range](src/main/java/g1501_1600/s1523_count_odd_numbers_in_an_interval_range/Solution.java)| Easy | Math | 0 | 100.00
-| 1491 |[Average Salary Excluding the Minimum and Maximum Salary](src/main/java/g1401_1500/s1491_average_salary_excluding_the_minimum_and_maximum_salary/Solution.java)| Easy | Array, Sorting | 0 | 100.00
+| 1491 |[Average Salary Excluding the Minimum and Maximum Salary](src.save/main/java/g1401_1500/s1491_average_salary_excluding_the_minimum_and_maximum_salary/Solution.java)| Easy | Array, Sorting | 0 | 100.00
 
 #### Day 2 Operator
 
@@ -1016,7 +1016,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0709 |[To Lower Case](src.save/main/java/g0701_0800/s0709_to_lower_case/Solution.java)| Easy | String | 1 | 71.74
-| 1309 |[Decrypt String from Alphabet to Integer Mapping](src/main/java/g1301_1400/s1309_decrypt_string_from_alphabet_to_integer_mapping/Solution.java)| Easy | String | 6 | 28.25
+| 1309 |[Decrypt String from Alphabet to Integer Mapping](src.save/main/java/g1301_1400/s1309_decrypt_string_from_alphabet_to_integer_mapping/Solution.java)| Easy | String | 6 | 28.25
 | 0953 |[Verifying an Alien Dictionary](src.save/main/java/g0901_1000/s0953_verifying_an_alien_dictionary/Solution.java)| Easy | Array, String, Hash_Table | 0 | 100.00
 
 #### Day 10 Linked List and Tree
@@ -1032,7 +1032,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1356 |[Sort Integers by The Number of 1 Bits](src/main/java/g1301_1400/s1356_sort_integers_by_the_number_of_1_bits/Solution.java)| Easy | Array, Sorting, Bit_Manipulation, Counting | 10 | 65.50
+| 1356 |[Sort Integers by The Number of 1 Bits](src.save/main/java/g1301_1400/s1356_sort_integers_by_the_number_of_1_bits/Solution.java)| Easy | Array, Sorting, Bit_Manipulation, Counting | 10 | 65.50
 | 0232 |[Implement Queue using Stacks](src.save/main/java/g0201_0300/s0232_implement_queue_using_stacks/MyQueue.java)| Easy | Stack, Design, Queue | 1 | 67.21
 | 0242 |[Valid Anagram](src.save/main/java/g0201_0300/s0242_valid_anagram/Solution.java)| Easy | Top_Interview_Questions, String, Hash_Table, Sorting | 2 | 99.01
 | 0217 |[Contains Duplicate](src.save/main/java/g0201_0300/s0217_contains_duplicate/Solution.java)| Easy | Top_Interview_Questions, Array, Hash_Table, Sorting | 6 | 96.68
@@ -1071,7 +1071,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1367 |[Linked List in Binary Tree](src/main/java/g1301_1400/s1367_linked_list_in_binary_tree/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Linked_List | 2 | 61.23
+| 1367 |[Linked List in Binary Tree](src.save/main/java/g1301_1400/s1367_linked_list_in_binary_tree/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Linked_List | 2 | 61.23
 | 0043 |[Multiply Strings](src.save/main/java/g0001_0100/s0043_multiply_strings/Solution.java)| Medium | String, Math, Simulation | 1 | 100.00
 
 #### Day 5
@@ -1120,7 +1120,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1376 |[Time Needed to Inform All Employees](src/main/java/g1301_1400/s1376_time_needed_to_inform_all_employees/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree | 225 | 22.36
+| 1376 |[Time Needed to Inform All Employees](src.save/main/java/g1301_1400/s1376_time_needed_to_inform_all_employees/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree | 225 | 22.36
 | 0049 |[Group Anagrams](src.save/main/java/g0001_0100/s0049_group_anagrams/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, String, Hash_Table, Sorting | 6 | 92.28
 
 #### Day 12
@@ -1243,13 +1243,13 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0547 |[Number of Provinces](src.save/main/java/g0501_0600/s0547_number_of_provinces/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 2 | 69.51
-| 1319 |[Number of Operations to Make Network Connected](src/main/java/g1301_1400/s1319_number_of_operations_to_make_network_connected/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 9 | 67.64
+| 1319 |[Number of Operations to Make Network Connected](src.save/main/java/g1301_1400/s1319_number_of_operations_to_make_network_connected/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 9 | 67.64
 
 #### Day 9 Standard Traversal
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1376 |[Time Needed to Inform All Employees](src/main/java/g1301_1400/s1376_time_needed_to_inform_all_employees/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree | 225 | 22.36
+| 1376 |[Time Needed to Inform All Employees](src.save/main/java/g1301_1400/s1376_time_needed_to_inform_all_employees/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Tree | 225 | 22.36
 | 0802 |[Find Eventual Safe States](src.save/main/java/g0801_0900/s0802_find_eventual_safe_states/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Topological_Sort | 7 | 74.93
 
 #### Day 10 Standard Traversal
@@ -1257,14 +1257,14 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1129 |[Shortest Path with Alternating Colors](src.save/main/java/g1101_1200/s1129_shortest_path_with_alternating_colors/Solution.java)| Medium | Breadth_First_Search, Graph | 4 | 96.63
-| 1466 |[Reorder Routes to Make All Paths Lead to the City Zero](src/main/java/g1401_1500/s1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph | 39 | 97.71
+| 1466 |[Reorder Routes to Make All Paths Lead to the City Zero](src.save/main/java/g1401_1500/s1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph | 39 | 97.71
 | 0847 |[Shortest Path Visiting All Nodes](src.save/main/java/g0801_0900/s0847_shortest_path_visiting_all_nodes/Solution.java)| Hard | Dynamic_Programming, Breadth_First_Search, Bit_Manipulation, Graph, Bitmask | 14 | 78.72
 
 #### Day 11 Breadth First Search
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1306 |[Jump Game III](src/main/java/g1301_1400/s1306_jump_game_iii/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search | 2 | 96.23
+| 1306 |[Jump Game III](src.save/main/java/g1301_1400/s1306_jump_game_iii/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search | 2 | 96.23
 | 1654 |[Minimum Jumps to Reach Home](src/main/java/g1601_1700/s1654_minimum_jumps_to_reach_home/Solution.java)| Medium | Array, Dynamic_Programming, Breadth_First_Search | 6 | 99.87
 | 0365 |[Water and Jug Problem](src.save/main/java/g0301_0400/s0365_water_and_jug_problem/Solution.java)| Medium | Math, Depth_First_Search, Breadth_First_Search | 0 | 100.00
 
@@ -1315,7 +1315,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1667 |[Fix Names in a Table](src/main/java/g1601_1700/s1667_fix_names_in_a_table/script.sql)| Easy | Database | 559 | 80.29
-| 1484 |[Group Sold Products By The Date](src/main/java/g1401_1500/s1484_group_sold_products_by_the_date/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 395 | 77.20
+| 1484 |[Group Sold Products By The Date](src.save/main/java/g1401_1500/s1484_group_sold_products_by_the_date/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 395 | 77.20
 | 1527 |[Patients With a Condition](src/main/java/g1501_1600/s1527_patients_with_a_condition/script.sql)| Easy | Database | 308 | 66.93
 
 #### Day 4 Union and Select
@@ -1363,8 +1363,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1393 |[Capital Gain/Loss](src/main/java/g1301_1400/s1393_capital_gainloss/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 428 | 92.01
-| 1407 |[Top Travellers](src/main/java/g1401_1500/s1407_top_travellers/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 682 | 70.16
+| 1393 |[Capital Gain/Loss](src.save/main/java/g1301_1400/s1393_capital_gainloss/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 428 | 92.01
+| 1407 |[Top Travellers](src.save/main/java/g1401_1500/s1407_top_travellers/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 682 | 70.16
 | 1158 |[Market Analysis I](src.save/main/java/g1101_1200/s1158_market_analysis_i/script.sql)| Medium | Database | 2919 | 12.20
 
 #### Day 10 Where
@@ -1382,7 +1382,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1480 |[Running Sum of 1d Array](src/main/java/g1401_1500/s1480_running_sum_of_1d_array/Solution.java)| Easy | Array, Prefix_Sum | 0 | 100.00
+| 1480 |[Running Sum of 1d Array](src.save/main/java/g1401_1500/s1480_running_sum_of_1d_array/Solution.java)| Easy | Array, Prefix_Sum | 0 | 100.00
 | 0724 |[Find Pivot Index](src.save/main/java/g0701_0800/s0724_find_pivot_index/Solution.java)| Easy | Array, Prefix_Sum | 2 | 69.67
 
 #### Day 2 String
@@ -1692,7 +1692,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 | 0532 |[K-diff Pairs in an Array](src.save/main/java/g0501_0600/s0532_k_diff_pairs_in_an_array/Solution.java)| Medium | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 13 | 58.23
 | 0713 |[Subarray Product Less Than K](src.save/main/java/g0701_0800/s0713_subarray_product_less_than_k/Solution.java)| Medium | Array, Sliding_Window | 8 | 39.00
 | 1007 |[Minimum Domino Rotations For Equal Row](src.save/main/java/g1001_1100/s1007_minimum_domino_rotations_for_equal_row/Solution.java)| Medium | Array, Greedy | 5 | 79.64
-| 1306 |[Jump Game III](src/main/java/g1301_1400/s1306_jump_game_iii/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search | 2 | 96.23
+| 1306 |[Jump Game III](src.save/main/java/g1301_1400/s1306_jump_game_iii/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search | 2 | 96.23
 | 0456 |[132 Pattern](src.save/main/java/g0401_0500/s0456_132_pattern/Solution.java)| Medium | Array, Binary_Search, Stack, Ordered_Set, Monotonic_Stack | 16 | 82.41
 | 0239 |[Sliding Window Maximum](src.save/main/java/g0201_0300/s0239_sliding_window_maximum/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Heap_Priority_Queue, Sliding_Window, Queue, Monotonic_Queue | 58 | 52.28
 
