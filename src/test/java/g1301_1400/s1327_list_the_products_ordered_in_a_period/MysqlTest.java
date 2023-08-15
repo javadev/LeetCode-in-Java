@@ -66,8 +66,9 @@ class MysqlTest {
                             statement.executeQuery(
                                     new BufferedReader(
                                                     new FileReader(
-                                                            "src/main/java/g1301_1400/s1327_list_the_products_ordered_in_a_period"
-                                                                    + "/script.sql"))
+                                                            "src/main/java/g1301_1400/"
+                                                                    + "s1327_list_the_products_"
+                                                                    + "ordered_in_a_period/script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {

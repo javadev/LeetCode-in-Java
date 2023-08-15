@@ -48,8 +48,9 @@ class MysqlTest {
                             statement.executeQuery(
                                     new BufferedReader(
                                                     new FileReader(
-                                                            "src/main/java/g1301_1400/s1378_replace_employee_id_with_the_unique_identifier"
-                                                                    + "/script.sql"))
+                                                            "src/main/java/g1301_1400/"
+                                                                    + "s1378_replace_employee_id_with_"
+                                                                    + "the_unique_identifier/script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {
