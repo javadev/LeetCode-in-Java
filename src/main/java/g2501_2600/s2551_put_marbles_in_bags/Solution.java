@@ -7,11 +7,11 @@ import java.util.Arrays;
 
 class Solution {
     public long putMarbles(int[] weights, int k) {
-        long minAns = weights[0] + weights[weights.length - 1];
-        long maxAns = weights[0] + weights[weights.length - 1];
+        long minAns = weights[0] + (long) weights[weights.length - 1];
+        long maxAns = weights[0] + (long) weights[weights.length - 1];
         long[] arr = new long[weights.length - 1];
         for (int i = 1; i < weights.length; i++) {
-            arr[i - 1] = weights[i] + weights[i - 1];
+            arr[i - 1] = weights[i] + (long) weights[i - 1];
         }
         Arrays.sort(arr);
         for (int i = 0; i < k - 1; i++) {
