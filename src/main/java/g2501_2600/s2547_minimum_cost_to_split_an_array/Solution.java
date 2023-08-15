@@ -10,11 +10,11 @@ class Solution {
             dp[startPos] = Integer.MAX_VALUE;
             int[] freq = new int[nums.length + 1];
             int nRepeated = 0;
-            for(int pos = startPos; pos < nums.length; pos++) {
+            for (int pos = startPos; pos < nums.length; pos++) {
                 int curNum = nums[pos];
                 if (freq[curNum] == 1) {
                     nRepeated += 2;
-                } else if(freq[curNum] > 0) {
+                } else if (freq[curNum] > 0) {
                     nRepeated++;
                 }
                 freq[curNum]++;
