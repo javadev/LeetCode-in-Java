@@ -36,8 +36,8 @@ import org.zapodot.junit.db.common.CompatibilityMode;
                         + " VALUES (3, 'Maria'); "
                         + "INSERT INTO Users(user_id, name)"
                         + " VALUES (4, 'James'); "
-                        + "CREATE TABLE MovieRating(movie_id INTEGER, user_id INTEGER, "
-                        + "rating INTEGER, created_at DATE); "
+                        + "CREATE TABLE MovieRating(movie_id INTEGER, user_id INTEGER,"
+                        + " rating INTEGER, created_at DATE); "
                         + "INSERT INTO MovieRating(movie_id, user_id, rating, created_at)"
                         + " VALUES (1, 1, 3, '2020-01-12'); "
                         + "INSERT INTO MovieRating(movie_id, user_id, rating, created_at)"
@@ -66,8 +66,8 @@ class MysqlTest {
                             statement.executeQuery(
                                     new BufferedReader(
                                                     new FileReader(
-                                                            "src/main/java/g1301_1400/s1341_movie_rating"
-                                                                    + "/script.sql"))
+                                                            "src/main/java/g1301_1400/"
+                                                                    + "s1341_movie_rating/script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {

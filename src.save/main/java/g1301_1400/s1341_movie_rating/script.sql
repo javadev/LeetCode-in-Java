@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# #Medium #Database #2023_08_15_Time_2843_ms_(48.31%)_Space_0B_(100.00%)
+# #Medium #Database #2023_08_16_Time_2515_ms_(78.94%)_Space_0B_(100.00%)
 (SELECT name results
 FROM Users as U, MovieRating as  MR
 WHERE U.user_id = MR.user_id
