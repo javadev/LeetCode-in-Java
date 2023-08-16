@@ -36,7 +36,8 @@ import org.zapodot.junit.db.common.CompatibilityMode;
                         + " VALUES (3, 'Maria'); "
                         + "INSERT INTO Users(user_id, name)"
                         + " VALUES (4, 'James'); "
-                        + "CREATE TABLE MovieRating(movie_id INTEGER, user_id INTEGER, rating INTEGER, created_at DATE); "
+                        + "CREATE TABLE MovieRating(movie_id INTEGER, user_id INTEGER," +
+                        " rating INTEGER, created_at DATE); "
                         + "INSERT INTO MovieRating(movie_id, user_id, rating, created_at)"
                         + " VALUES (1, 1, 3, '2020-01-12'); "
                         + "INSERT INTO MovieRating(movie_id, user_id, rating, created_at)"
