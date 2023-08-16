@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# #Easy #Database #2023_08_15_Time_1355_ms_(82.29%)_Space_0B_(100.00%)
+# #Easy #Database #2023_08_16_Time_1374_ms_(80.18%)_Space_0B_(100.00%)
 SELECT * FROM (
   SELECT
     a.product_name,
