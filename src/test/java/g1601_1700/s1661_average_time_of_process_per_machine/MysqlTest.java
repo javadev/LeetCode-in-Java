@@ -1,11 +1,8 @@
 package g1601_1700.s1661_average_time_of_process_per_machine;
 
-import org.junit.jupiter.api.Test;
-import org.zapodot.junit.db.annotations.EmbeddedDatabase;
-import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest;
-import org.zapodot.junit.db.common.CompatibilityMode;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
-import javax.sql.DataSource;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -14,39 +11,41 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.stream.Collectors;
-
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
+import javax.sql.DataSource;
+import org.junit.jupiter.api.Test;
+import org.zapodot.junit.db.annotations.EmbeddedDatabase;
+import org.zapodot.junit.db.annotations.EmbeddedDatabaseTest;
+import org.zapodot.junit.db.common.CompatibilityMode;
 
 @EmbeddedDatabaseTest(
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
-                "CREATE TABLE Activity(machine_id INTEGER, process_id INTEGER, " +
-                        "activity_type VARCHAR, timestamp DECIMAL(7, 3)); " +
-                        "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
-                        "VALUES (0, 0, 'start', 0.712); " +
-                        "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
-                        "VALUES (0, 0, 'end', 1.520); " +
-                        "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
-                        "VALUES (0, 1, 'start', 3.140); " +
-                        "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
-                        "VALUES (0, 1, 'end', 4.120); " +
-                        "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
-                        "VALUES (1, 0, 'start', 0.550); " +
-                        "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
-                        "VALUES (1, 0, 'end', 1.550); " +
-                        "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
-                        "VALUES (1, 1, 'start', 0.430); " +
-                        "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
-                        "VALUES (1, 1, 'end', 1.420); " +
-                        "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
-                        "VALUES (2, 0, 'start', 4.100); " +
-                        "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
-                        "VALUES (2, 0, 'end', 4.512); " +
-                        "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
-                        "VALUES (2, 1, 'start', 2.500); " +
-                        "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) " +
-                        "VALUES (2, 1, 'end', 5.000); ")
+                "CREATE TABLE Activity(machine_id INTEGER, process_id INTEGER, "
+                        + "activity_type VARCHAR, timestamp DECIMAL(7, 3)); "
+                        + "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) "
+                        + "VALUES (0, 0, 'start', 0.712); "
+                        + "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) "
+                        + "VALUES (0, 0, 'end', 1.520); "
+                        + "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) "
+                        + "VALUES (0, 1, 'start', 3.140); "
+                        + "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) "
+                        + "VALUES (0, 1, 'end', 4.120); "
+                        + "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) "
+                        + "VALUES (1, 0, 'start', 0.550); "
+                        + "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) "
+                        + "VALUES (1, 0, 'end', 1.550); "
+                        + "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) "
+                        + "VALUES (1, 1, 'start', 0.430); "
+                        + "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) "
+                        + "VALUES (1, 1, 'end', 1.420); "
+                        + "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) "
+                        + "VALUES (2, 0, 'start', 4.100); "
+                        + "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) "
+                        + "VALUES (2, 0, 'end', 4.512); "
+                        + "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) "
+                        + "VALUES (2, 1, 'start', 2.500); "
+                        + "INSERT INTO Activity(machine_id, process_id, activity_type, timestamp) "
+                        + "VALUES (2, 1, 'end', 5.000); ")
 class MysqlTest {
     @Test
     void testScript(@EmbeddedDatabase DataSource dataSource)
@@ -57,8 +56,8 @@ class MysqlTest {
                             statement.executeQuery(
                                     new BufferedReader(
                                                     new FileReader(
-                                                            "src/main/java/g1601_1700/s1661_average_time_" +
-                                                                    "of_process_per_machine/script.sql"))
+                                                            "src/main/java/g1601_1700/s1661_average_time_"
+                                                                    + "of_process_per_machine/script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {
