@@ -4,7 +4,6 @@ package g2501_2600.s2553_separate_the_digits_in_an_array;
 
 class Solution {
     public int[] separateDigits(int[] nums) {
-        int n = nums.length;
         StringBuilder str = new StringBuilder();
         for (int num : nums) {
             str.append(num);
