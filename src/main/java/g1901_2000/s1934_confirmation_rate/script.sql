@@ -13,7 +13,6 @@ WITH base_table AS (
         GROUP BY 1
     ) t
 )
-
 SELECT
     s.user_id,
     COALESCE(bt.confirmation_rate,0) AS confirmation_rate
