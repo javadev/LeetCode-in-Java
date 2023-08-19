@@ -2,7 +2,7 @@ package g2501_2600.s2559_count_vowel_strings_in_ranges;
 
 // #Medium #Array #String #Prefix_Sum #2023_08_19_Time_4_ms_(99.59%)_Space_85.6_MB_(78.46%)
 
-class Solution {
+public class Solution {
     private boolean validWord(String s) {
         char cStart = s.charAt(0);
         char cEnd = s.charAt(s.length() - 1);
