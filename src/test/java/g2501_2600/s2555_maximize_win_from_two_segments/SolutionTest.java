@@ -8,11 +8,11 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void maximizeWin() {
-        assertThat(new Solution().maximizeWin(new int[]{1,1,2,2,3,3,5}, 2), equalTo(7));
+        assertThat(new Solution().maximizeWin(new int[] {1, 1, 2, 2, 3, 3, 5}, 2), equalTo(7));
     }
 
     @Test
     void maximizeWin2() {
-        assertThat(new Solution().maximizeWin(new int[]{1,2,3,4}, 0), equalTo(2));
+        assertThat(new Solution().maximizeWin(new int[] {1, 2, 3, 4}, 0), equalTo(2));
     }
 }

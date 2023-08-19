@@ -8,12 +8,12 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void maxCount() {
-        assertThat(new Solution().maxCount(new int[] {1,6,5}, 5, 6), equalTo(2));
+        assertThat(new Solution().maxCount(new int[] {1, 6, 5}, 5, 6), equalTo(2));
     }
 
     @Test
     void maxCount2() {
-        assertThat(new Solution().maxCount(new int[] {1,2,3,4,5,6,7}, 8, 1), equalTo(0));
+        assertThat(new Solution().maxCount(new int[] {1, 2, 3, 4, 5, 6, 7}, 8, 1), equalTo(0));
     }
 
     @Test

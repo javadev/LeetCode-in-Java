@@ -9,15 +9,25 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void vowelStrings() {
-        assertThat(new Solution().vowelStrings(new String[]{"aba","bcb","ece","aa","e"},
-                CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[0,2],[1,4],[1,1]")),
-                equalTo(new int[]{2,3,0}));
+        assertThat(
+                new Solution()
+                        .vowelStrings(
+                                new String[] {"aba", "bcb", "ece", "aa", "e"},
+                                CommonUtils
+                                        .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                                                "[0,2],[1,4],[1,1]")),
+                equalTo(new int[] {2, 3, 0}));
     }
 
     @Test
     void vowelStrings2() {
-        assertThat(new Solution().vowelStrings(new String[]{"a","e","i"},
-                        CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[0,2],[0,1],[2,2]")),
-                equalTo(new int[]{3,2,1}));
+        assertThat(
+                new Solution()
+                        .vowelStrings(
+                                new String[] {"a", "e", "i"},
+                                CommonUtils
+                                        .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                                                "[0,2],[0,1],[2,2]")),
+                equalTo(new int[] {3, 2, 1}));
     }
 }

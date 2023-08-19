@@ -10,21 +10,21 @@ class Solution {
     public boolean isPossibleToCutPath(int[][] g) {
         n = g.length;
         m = g[0].length;
-        if(!dfs(0, 0, g)) {
+        if (!dfs(0, 0, g)) {
             return true;
         }
         g[0][0] = 1;
         return !dfs(0, 0, g);
     }
 
-    private boolean dfs(int r, int c, int[][] G){
-        if(r == n -1 && c == m -1) {
+    private boolean dfs(int r, int c, int[][] G) {
+        if (r == n - 1 && c == m - 1) {
             return true;
         }
-        if(r == n || c == m || G[r][c] == 0) {
+        if (r == n || c == m || G[r][c] == 0) {
             return false;
         }
         G[r][c] = 0;
-        return dfs(r, c+1, G) || dfs(r+1, c, G);
+        return dfs(r, c + 1, G) || dfs(r + 1, c, G);
     }
 }

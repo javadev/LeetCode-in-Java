@@ -8,11 +8,11 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void pickGifts() {
-        assertThat(new Solution().pickGifts(new int[]{25,64,9,4,100}, 4), equalTo(29L));
+        assertThat(new Solution().pickGifts(new int[] {25, 64, 9, 4, 100}, 4), equalTo(29L));
     }
 
     @Test
     void pickGifts2() {
-        assertThat(new Solution().pickGifts(new int[]{1,1,1,1}, 4), equalTo(4L));
+        assertThat(new Solution().pickGifts(new int[] {1, 1, 1, 1}, 4), equalTo(4L));
     }
 }
