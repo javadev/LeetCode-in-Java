@@ -5,7 +5,7 @@ package g2501_2600.s2551_put_marbles_in_bags;
 
 import java.util.Arrays;
 
-class Solution {
+public class Solution {
     public long putMarbles(int[] weights, int k) {
         long minAns = weights[0] + (long) weights[weights.length - 1];
         long maxAns = weights[0] + (long) weights[weights.length - 1];
