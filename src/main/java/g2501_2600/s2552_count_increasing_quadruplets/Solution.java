@@ -5,7 +5,7 @@ package g2501_2600.s2552_count_increasing_quadruplets;
 
 import java.util.Arrays;
 
-class Solution {
+public class Solution {
     public long countQuadruplets(int[] nums) {
         int n = nums.length;
         long[] dp = new long[n];
