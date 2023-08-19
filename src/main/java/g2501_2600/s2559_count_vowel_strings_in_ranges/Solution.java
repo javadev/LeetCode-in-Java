@@ -7,13 +7,8 @@ class Solution {
         char cStart = s.charAt(0);
         char cEnd = s.charAt(s.length() - 1);
         boolean flag1 =
-                cStart == 'a'
-                        || cStart == 'e'
-                        || cStart == 'i'
-                        || cStart == 'o'
-                        || cStart == 'u';
-        boolean flag2 =
-                cEnd == 'a' || cEnd == 'e' || cEnd == 'i' || cEnd == 'o' || cEnd == 'u';
+                cStart == 'a' || cStart == 'e' || cStart == 'i' || cStart == 'o' || cStart == 'u';
+        boolean flag2 = cEnd == 'a' || cEnd == 'e' || cEnd == 'i' || cEnd == 'o' || cEnd == 'u';
         return flag1 && flag2;
     }
 
