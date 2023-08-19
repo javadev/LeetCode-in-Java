@@ -17,14 +17,14 @@ class Solution {
         return !dfs(0, 0, g);
     }
 
-    private boolean dfs(int r, int c, int[][] G) {
+    private boolean dfs(int r, int c, int[][] g) {
         if (r == n - 1 && c == m - 1) {
             return true;
         }
-        if (r == n || c == m || G[r][c] == 0) {
+        if (r == n || c == m || g[r][c] == 0) {
             return false;
         }
-        G[r][c] = 0;
-        return dfs(r, c + 1, G) || dfs(r + 1, c, G);
+        g[r][c] = 0;
+        return dfs(r, c + 1, g) || dfs(r + 1, c, g);
     }
 }
