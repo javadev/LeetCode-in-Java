@@ -5,7 +5,7 @@ package g2501_2600.s2558_take_gifts_from_the_richest_pile;
 
 import java.util.PriorityQueue;
 
-class Solution {
+public class Solution {
     public long pickGifts(int[] gifts, int k) {
         PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> (b - a));
         long res = 0;
