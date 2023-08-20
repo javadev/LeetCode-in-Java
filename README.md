@@ -772,7 +772,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1802 |[Maximum Value at a Given Index in a Bounded Array](src.save/main/java/g1801_1900/s1802_maximum_value_at_a_given_index_in_a_bounded_array/Solution.java)| Medium | Greedy, Binary_Search | 2 | 58.44
-| 1901 |[Find a Peak Element II](src/main/java/g1901_2000/s1901_find_a_peak_element_ii/Solution.java)| Medium | Array, Binary_Search, Matrix, Divide_and_Conquer | 0 | 100.00
+| 1901 |[Find a Peak Element II](src.save/main/java/g1901_2000/s1901_find_a_peak_element_ii/Solution.java)| Medium | Array, Binary_Search, Matrix, Divide_and_Conquer | 0 | 100.00
 
 #### Day 18
 
@@ -1208,7 +1208,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 1020 |[Number of Enclaves](src.save/main/java/g1001_1100/s1020_number_of_enclaves/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 6 | 68.24
-| 1905 |[Count Sub Islands](src/main/java/g1901_2000/s1905_count_sub_islands/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 24 | 85.54
+| 1905 |[Count Sub Islands](src.save/main/java/g1901_2000/s1905_count_sub_islands/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix, Union_Find | 24 | 85.54
 
 #### Day 4 Matrix Related Problems
 
@@ -1229,7 +1229,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0934 |[Shortest Bridge](src.save/main/java/g0901_1000/s0934_shortest_bridge/Solution.java)| Medium | Array, Depth_First_Search, Breadth_First_Search, Matrix | 6 | 97.87
-| 1926 |[Nearest Exit from Entrance in Maze](src/main/java/g1901_2000/s1926_nearest_exit_from_entrance_in_maze/Solution.java)| Medium | Array, Breadth_First_Search, Matrix | 12 | 40.55
+| 1926 |[Nearest Exit from Entrance in Maze](src.save/main/java/g1901_2000/s1926_nearest_exit_from_entrance_in_maze/Solution.java)| Medium | Array, Breadth_First_Search, Matrix | 12 | 40.55
 
 #### Day 7 Standard Traversal
 
@@ -1322,7 +1322,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1965 |[Employees With Missing Information](src/main/java/g1901_2000/s1965_employees_with_missing_information/script.sql)| Easy | Database | 617 | 30.40
+| 1965 |[Employees With Missing Information](src.save/main/java/g1901_2000/s1965_employees_with_missing_information/script.sql)| Easy | Database | 617 | 30.40
 | 1795 |[Rearrange Products Table](src.save/main/java/g1701_1800/s1795_rearrange_products_table/script.sql)| Easy | Database | 497 | 64.83
 | 0608 |[Tree Node](src.save/main/java/g0601_0700/s0608_tree_node/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 347 | 95.17
 | 0176 |[Second Highest Salary](src.save/main/java/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database | 225 | 73.10
@@ -1518,7 +1518,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.22'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 2131 |[Longest Palindrome by Concatenating Two Letter Words](src/main/java/g2101_2200/s2131_longest_palindrome_by_concatenating_two_letter_words/Solution.java)| Medium | Array, String, Hash_Table, Greedy, Counting | 73 | 76.60
+| 2131 |[Longest Palindrome by Concatenating Two Letter Words](src.save/main/java/g2101_2200/s2131_longest_palindrome_by_concatenating_two_letter_words/Solution.java)| Medium | Array, String, Hash_Table, Greedy, Counting | 73 | 76.60
 | 0621 |[Task Scheduler](src.save/main/java/g0601_0700/s0621_task_scheduler/Solution.java)| Medium | Array, Hash_Table, Sorting, Greedy, Heap_Priority_Queue, Counting | 3 | 84.32
 
 #### Day 6 Tree
