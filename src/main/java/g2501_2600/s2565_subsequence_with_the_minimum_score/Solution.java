@@ -7,14 +7,16 @@ public class Solution {
         int m = s.length();
         int n = t.length();
         int[] left = new int[m];
-        for (int i = 0, j = 0; i < m; i++) {
+        int j = 0;
+        for (int i = 0; i < m; i++) {
             if (j < n && s.charAt(i) == t.charAt(j)) {
                 ++j;
             }
             left[i] = j;
         }
         int[] right = new int[m];
-        for (int i = m - 1, j = n - 1; i >= 0; i--) {
+        j = n - 1;
+        for (int i = m - 1; i >= 0; i--) {
             if (j >= 0 && s.charAt(i) == t.charAt(j)) {
                 --j;
             }

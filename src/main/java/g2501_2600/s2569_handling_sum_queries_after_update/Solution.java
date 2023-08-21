@@ -71,7 +71,8 @@ public class Solution {
             return node;
         }
         int mid = l + ((r - l) >> 1);
-        Segment left = build(nums, l, mid), right = build(nums, mid + 1, r);
+        Segment left = build(nums, l, mid);
+        Segment right = build(nums, mid + 1, r);
         Segment root = new Segment(l, r);
         root.left = left;
         root.right = right;
