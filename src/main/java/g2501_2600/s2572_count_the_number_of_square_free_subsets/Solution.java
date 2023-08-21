@@ -7,7 +7,7 @@ public class Solution {
     private final int[] count = new int[31];
     private final int[] masks = new int[31];
     private final long[][] cache = new long[31][1 << 6];
-    private static final long mod = 1_000_000_007;
+    private static final long MOD = 1_000_000_007;
 
     public int squareFreeSubsets(int[] nums) {
         int[] p = {1, 2, 3, 5, 7, 11, 13};
@@ -27,7 +27,7 @@ public class Solution {
             }
         }
         count[1] = powof2(count[1]);
-        return (int) ((dfs(30, 0) + mod - 1) % mod);
+        return (int) ((dfs(30, 0) + MOD - 1) % MOD);
     }
 
     private long dfs(int k, int mask) {
@@ -39,7 +39,7 @@ public class Solution {
         }
         long res = dfs(k - 1, mask);
         if (count[k] > 0 && (masks[k] & mask) == 0) {
-            res = (res + (count[k] * dfs(k - 1, mask | masks[k])) % mod) % mod;
+            res = (res + (count[k] * dfs(k - 1, mask | masks[k])) % MOD) % MOD;
         }
         cache[k][mask] = res;
         return cache[k][mask];
@@ -50,9 +50,9 @@ public class Solution {
         long res = 1;
         while (k > 0) {
             if (k % 2 == 1) {
-                res = (res * pow2) % mod;
+                res = (res * pow2) % MOD;
             }
-            pow2 = (pow2 * pow2) % mod;
+            pow2 = (pow2 * pow2) % MOD;
             k >>= 1;
         }
         return (int) res;
