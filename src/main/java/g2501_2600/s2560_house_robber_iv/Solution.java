@@ -23,7 +23,8 @@ public class Solution {
 
     private boolean check(int[] nums, int k, int val) {
         int ct = 0;
-        for (int i = 0; i < nums.length; i++) {
+        int i = 0;
+        while (i < nums.length) {
             if (nums[i] <= val) {
                 i++;
                 ct++;
@@ -31,6 +32,7 @@ public class Solution {
                     return true;
                 }
             }
+            i++;
         }
         return ct >= k;
     }

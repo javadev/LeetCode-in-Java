@@ -20,17 +20,17 @@ public class Solution {
 
     private long getConcatenationValue(int leftVal, int rightVal) {
         if ((long) rightVal == 10000) {
-            return (long) leftVal * 100000L + (long) rightVal;
+            return leftVal * 100000L + rightVal;
         }
         if ((long) rightVal >= 1000) {
-            return (long) leftVal * 10000L + (long) rightVal;
+            return leftVal * 10000L + rightVal;
         }
         if ((long) rightVal >= 100) {
-            return (long) leftVal * 1000L + (long) rightVal;
+            return leftVal * 1000L + rightVal;
         }
         if ((long) rightVal >= 10) {
-            return (long) leftVal * 100L + (long) rightVal;
+            return leftVal * 100L + rightVal;
         }
-        return (long) leftVal * 10L + (long) rightVal;
+        return leftVal * 10L + rightVal;
     }
 }
