@@ -19,7 +19,8 @@ public class Solution {
         int mi = 1 << 30;
         List<Integer> nums = new ArrayList<>();
         for (var e : cnt.entrySet()) {
-            int x = e.getKey(), v = e.getValue();
+            int x = e.getKey();
+            int v = e.getValue();
             if (v % 2 != 0) {
                 return -1;
             }
