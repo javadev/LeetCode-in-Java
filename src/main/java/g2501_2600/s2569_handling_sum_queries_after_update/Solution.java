@@ -14,14 +14,20 @@ public class Solution {
         }
         Segment root = build(nums1, 0, nums1.length - 1);
         for (int[] q : queries) {
-            if (1 == q[0]) root.flip(q[1], q[2]);
-            else if (2 == q[0]) sum += root.sum * q[1];
-            else dq.add(sum);
+            if (1 == q[0]) {
+                root.flip(q[1], q[2]);
+            } else if (2 == q[0]) {
+                sum += root.sum * q[1];
+            } else {
+                dq.add(sum);
+            }
         }
         int n = dq.size();
         int i = 0;
         long[] res = new long[n];
-        while (!dq.isEmpty()) res[i++] = dq.poll();
+        while (!dq.isEmpty()) {
+            res[i++] = dq.poll();
+        }
         return res;
     }
 
