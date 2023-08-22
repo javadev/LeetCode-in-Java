@@ -9,26 +9,26 @@ import java.util.List;
 import java.util.Map;
 
 public class Solution {
-    private static final int[] DIVIDE_TO = new int[(int) (1e6) + 1];
+    private final int[] divideTo = new int[(int) (1e6) + 1];
 
     private void fillDivideArray() {
-        for (int i = 1; i < DIVIDE_TO.length; i++) {
-            DIVIDE_TO[i] = i;
+        for (int i = 1; i < divideTo.length; i++) {
+            divideTo[i] = i;
         }
-        for (int i = 2; i * i < DIVIDE_TO.length; i++) {
-            if (DIVIDE_TO[i] != i) {
+        for (int i = 2; i * i < divideTo.length; i++) {
+            if (divideTo[i] != i) {
                 continue;
             }
-            for (int j = i + i; j < DIVIDE_TO.length; j += i) {
-                if (DIVIDE_TO[j] == j) {
-                    DIVIDE_TO[j] = i;
+            for (int j = i + i; j < divideTo.length; j += i) {
+                if (divideTo[j] == j) {
+                    divideTo[j] = i;
                 }
             }
         }
     }
 
     public int findValidSplit(int[] nums) {
-        if (DIVIDE_TO[1] == 0) {
+        if (divideTo[1] == 0) {
             fillDivideArray();
         }
         Map<Integer, Integer> dMap = new HashMap<>();
@@ -36,9 +36,9 @@ public class Solution {
         for (int i = 0; i < nums.length; i++) {
             dividers[i] = new ArrayList<>();
             while (nums[i] != 1) {
-                dividers[i].add(DIVIDE_TO[nums[i]]);
-                dMap.put(DIVIDE_TO[nums[i]], i);
-                nums[i] = nums[i] / DIVIDE_TO[nums[i]];
+                dividers[i].add(divideTo[nums[i]]);
+                dMap.put(divideTo[nums[i]], i);
+                nums[i] = nums[i] / divideTo[nums[i]];
             }
         }
         int nextEnd = 0;

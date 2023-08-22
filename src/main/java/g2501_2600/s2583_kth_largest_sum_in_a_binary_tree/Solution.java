@@ -26,8 +26,10 @@ import java.util.Random;
  *     }
  * }
  */
+@SuppressWarnings("java:S2245")
 public class Solution {
     public long kthLargestLevelSum(TreeNode root, int k) {
+        Random random = new Random();
         List<Long> ans = new ArrayList<>();
         Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
@@ -54,7 +56,7 @@ public class Solution {
         int idx;
         int end = ans.size() - 1;
         while (true) {
-            idx = new Random().nextInt(end - start + 1) + start;
+            idx = random.nextInt(end - start + 1) + start;
             Long piv = ans.get(idx);
             Collections.swap(ans, idx, end);
             idx = start;
