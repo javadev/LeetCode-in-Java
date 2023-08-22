@@ -13,7 +13,8 @@ public class Solution {
         Map<Integer, Integer> map = new HashMap<>();
         map.put(0, 1);
         for (int num : nums) {
-            count += map.merge(xor ^= num, 1, Integer::sum) - 1;
+            xor ^= num;
+            count += map.merge(xor, 1, Integer::sum) - 1;
         }
         return count;
     }

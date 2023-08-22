@@ -26,7 +26,8 @@ public class Solution {
             }
             ways = (ways + helper(types, target - pointsEarned, typeIndex + 1)) % MOD;
         }
-        return memo[typeIndex][target] = ways;
+        memo[typeIndex][target] = ways;
+        return memo[typeIndex][target];
     }
 
     public int waysToReachTarget(int target, int[][] types) {
