@@ -27,14 +27,14 @@ public class Solution {
                 return curr.time;
             }
             vis[curr.x][curr.y] = 1;
-            int curr_time = curr.time + 1;
+            int currTime = curr.time + 1;
             for (int i = 0; i < 4; i++) {
                 int newX = curr.x + xDir[i];
                 int newY = curr.y + yDir[i];
                 if (newX >= 0 && newY >= 0 && newX < m && newY < n && vis[newX][newY] == -1) {
                     vis[newX][newY] = 1;
-                    if (grid[newX][newY] <= curr_time) {
-                        pq.add(new Node(newX, newY, curr_time));
+                    if (grid[newX][newY] <= currTime) {
+                        pq.add(new Node(newX, newY, currTime));
                     } else {
                         if ((grid[newX][newY] - curr.time) % 2 == 0) {
                             pq.add(new Node(newX, newY, grid[newX][newY] + 1));
@@ -46,18 +46,5 @@ public class Solution {
             }
         }
         return -1;
-    }
-}
-
-class Node {
-
-    int x;
-    int y;
-    int time;
-
-    Node(int xx, int yy, int tt) {
-        x = xx;
-        y = yy;
-        time = tt;
     }
 }

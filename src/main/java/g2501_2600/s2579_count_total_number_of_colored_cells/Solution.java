@@ -4,6 +4,6 @@ package g2501_2600.s2579_count_total_number_of_colored_cells;
 
 public class Solution {
     public long coloredCells(int n) {
-        return (long) Math.pow(n, 2) + (long) Math.pow(n - 1, 2);
+        return (long) Math.pow(n, 2) + (long) Math.pow(n - (double) 1, 2);
     }
 }
