@@ -47,4 +47,16 @@ public class Solution {
         }
         return -1;
     }
+
+    private static class Node {
+        int x;
+        int y;
+        int time;
+
+        Node(int xx, int yy, int tt) {
+            x = xx;
+            y = yy;
+            time = tt;
+        }
+    }
 }
