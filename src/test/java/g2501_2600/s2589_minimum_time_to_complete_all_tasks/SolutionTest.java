@@ -26,6 +26,6 @@ class SolutionTest {
                                 CommonUtils
                                         .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
                                                 "[1,3,2],[2,5,3],[5,6,2]")),
-                equalTo(2));
+                equalTo(4));
     }
 }
