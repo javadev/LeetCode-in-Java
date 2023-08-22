@@ -21,13 +21,14 @@ public class Solution {
         int[] add = new int[n];
         int[] par = new int[n];
         dfs1(g, 0, -1, par);
-        for (int[] a : gu)
+        for (int[] a : gu) {
             if (par[a[1]] == a[0]) {
                 all++;
                 add[a[1]]--;
             } else {
                 add[a[0]]++;
             }
+        }
         dfs2(g, 0, -1, add);
         int ans = 0;
         for (int i : add) {

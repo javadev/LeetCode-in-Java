@@ -41,7 +41,8 @@ public class Solution {
                 nums[i] = nums[i] / DIVIDE_TO[nums[i]];
             }
         }
-        int nextEnd = 0, i = 0;
+        int nextEnd = 0;
+        int i = 0;
         while (i <= nextEnd) {
             for (int j = 0; j < dividers[i].size(); j++) {
                 nextEnd = Math.max(nextEnd, dMap.get(dividers[i].get(j)));
