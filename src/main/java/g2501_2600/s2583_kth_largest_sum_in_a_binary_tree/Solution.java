@@ -28,8 +28,9 @@ import java.util.Random;
  */
 @SuppressWarnings("java:S2245")
 public class Solution {
+    private final Random random = new Random();
+
     public long kthLargestLevelSum(TreeNode root, int k) {
-        Random random = new Random();
         List<Long> ans = new ArrayList<>();
         Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
