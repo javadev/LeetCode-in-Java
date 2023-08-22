@@ -8,11 +8,11 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void maxScore() {
-        assertThat(new Solution().maxScore(new int[]{2,-1,0,1,-3,3,-3}), equalTo(6));
+        assertThat(new Solution().maxScore(new int[] {2, -1, 0, 1, -3, 3, -3}), equalTo(6));
     }
 
     @Test
     void maxScore2() {
-        assertThat(new Solution().maxScore(new int[]{-2,-3,0}), equalTo(0));
+        assertThat(new Solution().maxScore(new int[] {-2, -3, 0}), equalTo(0));
     }
 }

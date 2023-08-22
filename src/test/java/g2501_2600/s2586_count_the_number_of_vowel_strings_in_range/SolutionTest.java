@@ -8,12 +8,14 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void vowelStrings() {
-        assertThat(new Solution().vowelStrings(new String[]{"are","amy","u"}, 0, 2), equalTo(2));
+        assertThat(new Solution().vowelStrings(new String[] {"are", "amy", "u"}, 0, 2), equalTo(2));
     }
 
     @Test
     void vowelStrings2() {
-        assertThat(new Solution().vowelStrings(new String[]{"hey","aeo","mu","ooo","artro"}, 1, 4),
+        assertThat(
+                new Solution()
+                        .vowelStrings(new String[] {"hey", "aeo", "mu", "ooo", "artro"}, 1, 4),
                 equalTo(3));
     }
 }

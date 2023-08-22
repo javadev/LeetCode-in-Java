@@ -10,9 +10,9 @@ public class Solution {
         Arrays.sort(nums);
         int count = 0;
         long sum = 0;
-        for(int i=nums.length-1;i>=0;i--){
+        for (int i = nums.length - 1; i >= 0; i--) {
             sum += nums[i];
-            if(sum>0) count++;
+            if (sum > 0) count++;
         }
         return count;
     }

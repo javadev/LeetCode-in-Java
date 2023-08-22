@@ -10,10 +10,10 @@ public class Solution {
     public long beautifulSubarrays(int[] nums) {
         long count = 0;
         int xor = 0;
-        Map<Integer,Integer> map = new HashMap<>();
-        map.put(0,1);
-        for(int num : nums){
-            count += map.merge(xor ^= num, 1, Integer::sum)-1;
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, 1);
+        for (int num : nums) {
+            count += map.merge(xor ^= num, 1, Integer::sum) - 1;
         }
         return count;
     }

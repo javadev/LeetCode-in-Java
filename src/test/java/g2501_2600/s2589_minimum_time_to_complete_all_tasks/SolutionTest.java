@@ -9,11 +9,23 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void findMinimumTime() {
-        assertThat(new Solution().findMinimumTime(CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[2,3,1],[4,5,1],[1,5,2]")), equalTo(2));
+        assertThat(
+                new Solution()
+                        .findMinimumTime(
+                                CommonUtils
+                                        .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                                                "[2,3,1],[4,5,1],[1,5,2]")),
+                equalTo(2));
     }
 
     @Test
     void findMinimumTime2() {
-        assertThat(new Solution().findMinimumTime(CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[1,3,2],[2,5,3],[5,6,2]")), equalTo(2));
+        assertThat(
+                new Solution()
+                        .findMinimumTime(
+                                CommonUtils
+                                        .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                                                "[1,3,2],[2,5,3],[5,6,2]")),
+                equalTo(2));
     }
 }

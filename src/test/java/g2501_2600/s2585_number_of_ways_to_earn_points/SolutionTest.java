@@ -9,15 +9,25 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void waysToReachTarget() {
-        assertThat(new Solution().waysToReachTarget(6,
-                CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[6,1],[3,2],[2,3]")),
+        assertThat(
+                new Solution()
+                        .waysToReachTarget(
+                                6,
+                                CommonUtils
+                                        .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                                                "[6,1],[3,2],[2,3]")),
                 equalTo(7));
     }
 
     @Test
     void waysToReachTarget2() {
-        assertThat(new Solution().waysToReachTarget(5,
-                        CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[50,1],[50,2],[50,5]")),
+        assertThat(
+                new Solution()
+                        .waysToReachTarget(
+                                5,
+                                CommonUtils
+                                        .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                                                "[50,1],[50,2],[50,5]")),
                 equalTo(4));
     }
 }
