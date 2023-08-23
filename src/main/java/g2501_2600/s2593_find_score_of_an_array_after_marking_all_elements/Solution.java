@@ -25,7 +25,7 @@ public class Solution {
             pq.add(new Point(i, arr[i]));
         }
         long ans = 0;
-        while (pq.size() != 0) {
+        while (!pq.isEmpty()) {
             Point p = pq.remove();
             int idx = p.idx;
             if (!visited[idx]) {

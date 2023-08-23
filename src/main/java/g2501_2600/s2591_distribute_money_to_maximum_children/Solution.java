@@ -18,9 +18,7 @@ public class Solution {
             ++numEighters;
             --possibleEighters;
         }
-        if (money > 0 && possibleEighters == 0) {
-            --numEighters;
-        } else if (money == 3 && possibleEighters == 1) {
+        if ((money > 0 && possibleEighters == 0) || (money == 3 && possibleEighters == 1)) {
             --numEighters;
         }
         return numEighters;

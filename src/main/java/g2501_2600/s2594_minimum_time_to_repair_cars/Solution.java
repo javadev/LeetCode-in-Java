@@ -21,7 +21,7 @@ public class Solution {
     private boolean canRepairAllCars(int[] ranks, int cars, long totalMinutes) {
         int repairedCars = 0;
         for (int i = 0; i < ranks.length && repairedCars < cars; i++) {
-            repairedCars += (int) Math.sqrt(totalMinutes / ranks[i]);
+            repairedCars += (int) Math.sqrt((double) totalMinutes / ranks[i]);
         }
         return repairedCars >= cars;
     }
