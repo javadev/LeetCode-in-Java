@@ -23,6 +23,6 @@ class SolutionTest {
 
     @Test
     void distMoney4() {
-        assertThat(new Solution().distMoney(1, 9), equalTo(0));
+        assertThat(new Solution().distMoney(2, 1), equalTo(0));
     }
 }
