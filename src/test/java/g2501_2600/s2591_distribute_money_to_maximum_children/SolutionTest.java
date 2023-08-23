@@ -15,4 +15,14 @@ class SolutionTest {
     void distMoney2() {
         assertThat(new Solution().distMoney(16, 2), equalTo(2));
     }
+
+    @Test
+    void distMoney3() {
+        assertThat(new Solution().distMoney(1, 2), equalTo(-1));
+    }
+
+    @Test
+    void distMoney4() {
+        assertThat(new Solution().distMoney(1, 9), equalTo(0));
+    }
 }
