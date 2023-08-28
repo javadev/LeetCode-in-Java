@@ -1,7 +1,7 @@
 package g2501_2600.s2584_split_the_array_to_make_coprime_products;
 
 // #Hard #Array #Hash_Table #Math #Number_Theory
-// #2023_08_22_Time_13_ms_(99.83%)_Space_60.3_MB_(92.18%)
+// #2023_08_28_Time_236_ms_(58.73%)_Space_56.2_MB_(15.87%)
 
 import java.util.ArrayList;
 import java.util.HashMap;
