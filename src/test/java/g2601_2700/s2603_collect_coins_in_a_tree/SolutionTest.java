@@ -9,16 +9,25 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void collectTheCoins() {
-        assertThat(new Solution().collectTheCoins(new int[]{1,0,0,0,0,1},
-                CommonUtils.convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[0,1],[1,2],[2,3],[3,4],[4,5]")),
+        assertThat(
+                new Solution()
+                        .collectTheCoins(
+                                new int[] {1, 0, 0, 0, 0, 1},
+                                CommonUtils
+                                        .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                                                "[0,1],[1,2],[2,3],[3,4],[4,5]")),
                 equalTo(2));
     }
 
     @Test
     void collectTheCoins2() {
-        assertThat(new Solution().collectTheCoins(new int[]{0,0,0,1,1,0,0,1},
-                        CommonUtils
-                                .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray("[0,1],[0,2],[1,3],[1,4],[2,5],[5,6],[5,7]")),
+        assertThat(
+                new Solution()
+                        .collectTheCoins(
+                                new int[] {0, 0, 0, 1, 1, 0, 0, 1},
+                                CommonUtils
+                                        .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                                                "[0,1],[0,2],[1,3],[1,4],[2,5],[5,6],[5,7]")),
                 equalTo(2));
     }
 }

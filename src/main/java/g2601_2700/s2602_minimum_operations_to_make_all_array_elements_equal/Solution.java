@@ -12,36 +12,36 @@ public class Solution {
         Arrays.sort(nums);
         long[] sum = new long[nums.length];
         sum[0] = nums[0];
-        for(int i = 1; i < nums.length; ++i){
-            sum[i] = sum[i - 1] + (long)nums[i];
+        for (int i = 1; i < nums.length; ++i) {
+            sum[i] = sum[i - 1] + (long) nums[i];
         }
         List<Long> res = new ArrayList<>();
-        for(int query: queries){
+        for (int query : queries) {
             res.add(getOperations(sum, nums, query));
         }
         return res;
     }
 
-    private long getOperations(long[] sum, int[] nums, int target){
+    private long getOperations(long[] sum, int[] nums, int target) {
         long res = 0;
         int index = getIndex(nums, target);
         int rightCounts = nums.length - 1 - index;
-        if(index > 0){
+        if (index > 0) {
             res += (long) index * target - sum[index - 1];
         }
-        if(rightCounts > 0){
-            res += sum[nums.length - 1] - sum[index] - (long)rightCounts * target;
+        if (rightCounts > 0) {
+            res += sum[nums.length - 1] - sum[index] - (long) rightCounts * target;
         }
-        res += (long)Math.abs(target - nums[index]);
+        res += (long) Math.abs(target - nums[index]);
         return res;
     }
 
-    private int getIndex(int[] nums, int target){
+    private int getIndex(int[] nums, int target) {
         int index = Arrays.binarySearch(nums, target);
-        if(index < 0) {
+        if (index < 0) {
             index = -(index + 1);
         }
-        if(index == nums.length) {
+        if (index == nums.length) {
             --index;
         }
         return index;

@@ -6,7 +6,7 @@ package g2601_2700.s2606_find_the_substring_with_maximum_cost;
 public class Solution {
     public int maximumCostSubstring(String s, String chars, int[] vals) {
         int[] alphabetCost = new int[26];
-        for(char ch = 'a'; ch <= 'z'; ch++){
+        for (char ch = 'a'; ch <= 'z'; ch++) {
             alphabetCost[ch - 'a'] = ((ch - 'a') + 1);
         }
         for (int i = 0; i < chars.length(); i++) {
@@ -16,7 +16,7 @@ public class Solution {
         }
         int currCost = 0;
         int maxCost = Integer.MIN_VALUE;
-        for(char ch : s.toCharArray()){
+        for (char ch : s.toCharArray()) {
             int cost = alphabetCost[ch - 'a'];
             currCost = Math.max(currCost + cost, cost);
             maxCost = Math.max(maxCost, currCost);

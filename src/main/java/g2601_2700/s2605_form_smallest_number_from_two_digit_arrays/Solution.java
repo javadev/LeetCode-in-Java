@@ -8,10 +8,10 @@ public class Solution {
     public int minNumber(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
         Arrays.sort(nums2);
-        int[] temp=new int[Math.max(nums1[nums1.length-1],nums2[nums2.length-1])+1];
-        int n1=nums1[0];
-        int n2=nums2[0];
-        int k=Math.min(n1*10+n2,n2*10+n1);
+        int[] temp = new int[Math.max(nums1[nums1.length - 1], nums2[nums2.length - 1]) + 1];
+        int n1 = nums1[0];
+        int n2 = nums2[0];
+        int k = Math.min(n1 * 10 + n2, n2 * 10 + n1);
         for (int value : nums1) {
             temp[value]++;
         }
@@ -22,6 +22,5 @@ public class Solution {
             }
         }
         return k;
-
     }
 }

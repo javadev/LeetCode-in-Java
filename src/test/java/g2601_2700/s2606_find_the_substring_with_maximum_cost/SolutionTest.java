@@ -8,11 +8,13 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void maximumCostSubstring() {
-        assertThat(new Solution().maximumCostSubstring("adaa", "d", new int[]{-1000}), equalTo(2));
+        assertThat(new Solution().maximumCostSubstring("adaa", "d", new int[] {-1000}), equalTo(2));
     }
 
     @Test
     void maximumCostSubstring2() {
-        assertThat(new Solution().maximumCostSubstring("abc", "abc", new int[]{-1,-1,-1}), equalTo(0));
+        assertThat(
+                new Solution().maximumCostSubstring("abc", "abc", new int[] {-1, -1, -1}),
+                equalTo(0));
     }
 }

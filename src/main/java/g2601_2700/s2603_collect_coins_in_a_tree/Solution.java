@@ -11,44 +11,45 @@ public class Solution {
     private List<Integer>[] graph;
     private int sum;
     private int ret;
+
     public int collectTheCoins(int[] coins, int[][] edges) {
         int n = coins.length;
-        this.coins=coins;
-        graph=new ArrayList[n];
-        for(int i = 0; i< n; i++){
-            graph[i]=new ArrayList<>();
+        this.coins = coins;
+        graph = new ArrayList[n];
+        for (int i = 0; i < n; i++) {
+            graph[i] = new ArrayList<>();
         }
-        for(int[] edge:edges){
+        for (int[] edge : edges) {
             graph[edge[0]].add(edge[1]);
             graph[edge[1]].add(edge[0]);
         }
-        for(int coin:coins){
-            sum+=coin;
+        for (int coin : coins) {
+            sum += coin;
         }
-        dfs(0,-1);
-        return Math.max(2*(ret-1),0);
+        dfs(0, -1);
+        return Math.max(2 * (ret - 1), 0);
     }
 
-    private int dfs(int node,int pre){
-        int cnt=0;
-        int s=0;
-        for(int nn:graph[node]){
-            if(nn!=pre){
-                int r=dfs(nn,node);
-                if(r-coins[nn]>0){
+    private int dfs(int node, int pre) {
+        int cnt = 0;
+        int s = 0;
+        for (int nn : graph[node]) {
+            if (nn != pre) {
+                int r = dfs(nn, node);
+                if (r - coins[nn] > 0) {
                     cnt++;
                 }
-                s+=r;
+                s += r;
             }
         }
-        if(pre!=-1){
-            if(sum-s-coins[node]-coins[pre]>0){
+        if (pre != -1) {
+            if (sum - s - coins[node] - coins[pre] > 0) {
                 cnt++;
             }
         }
-        if(cnt>=2){
+        if (cnt >= 2) {
             ret++;
         }
-        return s+coins[node];
+        return s + coins[node];
     }
 }

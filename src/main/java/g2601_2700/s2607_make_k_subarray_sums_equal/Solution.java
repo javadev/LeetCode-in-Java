@@ -8,8 +8,8 @@ import java.util.Arrays;
 public class Solution {
     public long makeSubKSumEqual(int[] arr, int k) {
         int n = arr.length;
-        int  h = gcd(n, k);
-        int  q = n / h;
+        int h = gcd(n, k);
+        int q = n / h;
         long ans = 0;
         for (int i = 0; i < h; i++) {
             int[] x = new int[q];
