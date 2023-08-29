@@ -43,7 +43,13 @@ public class Solution {
             if (pos == -1 && n <= prev) {
                 return false;
             }
-            prev = n - (pos == -1 ? 0 : (pos < 0 ? primes[-pos - 2] : primes[pos]));
+            final int index;
+            if (pos == -1) {
+                index = 0;
+            } else {
+                index = pos < 0 ? primes[-pos - 2] : primes[pos];
+            }
+            prev = n - index;
         }
         return true;
     }

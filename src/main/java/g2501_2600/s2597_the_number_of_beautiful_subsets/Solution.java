@@ -15,18 +15,18 @@ public class Solution {
             map.put(n, map.getOrDefault(n, 0) + 1);
         }
         int res = 1;
-        for (int key : map.keySet()) {
-            if (!map.containsKey(key - k)) {
-                if (!map.containsKey(key + k)) {
-                    res *= 1 << map.get(key);
-                } else {
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (!map.containsKey(entry.getKey() - k)) {
+                if (map.containsKey(entry.getKey() + k)) {
                     List<Integer> freq = new ArrayList<>();
-                    int localKey = key;
+                    int localKey = entry.getKey();
                     while (map.containsKey(localKey)) {
                         freq.add(map.get(localKey));
                         localKey += k;
                     }
                     res *= helper(freq);
+                } else {
+                    res *= 1 << entry.getValue();
                 }
             }
         }
