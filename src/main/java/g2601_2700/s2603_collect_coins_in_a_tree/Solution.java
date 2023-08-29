@@ -42,10 +42,8 @@ public class Solution {
                 s += r;
             }
         }
-        if (pre != -1) {
-            if (sum - s - coins[node] - coins[pre] > 0) {
-                cnt++;
-            }
+        if (pre != -1 && sum - s - coins[node] - coins[pre] > 0) {
+            cnt++;
         }
         if (cnt >= 2) {
             ret++;

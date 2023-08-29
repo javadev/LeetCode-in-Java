@@ -13,7 +13,7 @@ public class Solution {
         long[] sum = new long[nums.length];
         sum[0] = nums[0];
         for (int i = 1; i < nums.length; ++i) {
-            sum[i] = sum[i - 1] + (long) nums[i];
+            sum[i] = sum[i - 1] + nums[i];
         }
         List<Long> res = new ArrayList<>();
         for (int query : queries) {
@@ -32,7 +32,7 @@ public class Solution {
         if (rightCounts > 0) {
             res += sum[nums.length - 1] - sum[index] - (long) rightCounts * target;
         }
-        res += (long) Math.abs(target - nums[index]);
+        res += Math.abs(target - nums[index]);
         return res;
     }
 
