@@ -11,7 +11,9 @@ public class Solution {
         int[] a = new int[value];
         for (int i = 0; i < n; i++) {
             int k = nums[i] % value;
-            if (k < 0) k = (value + k) % value;
+            if (k < 0) {
+                k = (value + k) % value;
+            }
             a[k]++;
         }
         int[] minsResult = mins(a);
