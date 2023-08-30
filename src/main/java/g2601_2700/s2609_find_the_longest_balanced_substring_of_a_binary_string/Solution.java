@@ -9,7 +9,8 @@ public class Solution {
         int n = chars.length;
         int zero = 0;
         int one = 0;
-        for (int i = 0; i < n; i++) {
+        int i = 0;
+        while (i < n) {
             if (chars[i] == '0') {
                 zero++;
             } else {
@@ -25,6 +26,7 @@ public class Solution {
                 zero = 1;
                 one = 0;
             }
+            i++;
         }
 
         return max;
