@@ -2,11 +2,11 @@
 
 declare global {
     interface Array<T> {
-        last(): T | -1;
+        last(): T | -1
     }
 }
 
-Array.prototype.last = function () {//NOSONAR
+Array.prototype.last = function () { //NOSONAR
     return this.length !== 0 ? this[this.length - 1] : -1
 }
 
@@ -15,4 +15,4 @@ Array.prototype.last = function () {//NOSONAR
  * arr.last(); // 3
  */
 
-export { }
+export {}

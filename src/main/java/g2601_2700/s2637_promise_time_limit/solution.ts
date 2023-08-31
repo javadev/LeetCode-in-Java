@@ -1,18 +1,17 @@
 // #Easy #Medium #2023_08_31_Time_53_ms_(93.41%)_Space_42.7_MB_(62.71%)
 
-type Fn = (...params: any[]) => Promise<any>;
+type Fn = (...params: any[]) => Promise<any>
 
 function timeLimit(fn: Fn, t: number): Fn {
-  return async function (...args: any[]): Promise<any> {
-    const fns = fn(...args);
-    const timeLimitPromise = new Promise((_, reject) => {
-      setTimeout(() => {
-        reject(new Error('Time Limit Exceeded'));
-      }, t);
-    });
-
-    return Promise.race([fns, timeLimitPromise]);
-  };
+    return async function (...args: any[]): Promise<any> {
+        const fns = fn(...args)
+        const timeLimitPromise = new Promise((_, reject) => {
+            setTimeout(() => {
+                reject(new Error('Time Limit Exceeded'))
+            }, t)
+        })
+        return Promise.race([fns, timeLimitPromise])
+    }
 }
 
 /*
