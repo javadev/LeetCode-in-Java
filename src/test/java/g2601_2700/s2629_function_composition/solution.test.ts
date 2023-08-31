@@ -3,14 +3,14 @@ import { compose } from 'src/main/java/g2601_2700/s2629_function_composition/sol
 import { expect, test } from 'vitest'
 
 test('compose', () => {
-    let functions = [x => x + 1, x => x * x, x => 2 * x]
+    let functions = [(x) => x + 1, (x) => x * x, (x) => 2 * x]
     let x = 4
     const fn = compose(functions)
     expect(fn(x)).toEqual(65)
 })
 
 test('compose2', () => {
-    let functions = [x => 10 * x, x => 10 * x, x => 10 * x]
+    let functions = [(x) => 10 * x, (x) => 10 * x, (x) => 10 * x]
     let x = 1
     const fn = compose(functions)
     expect(fn(x)).toEqual(1000)
