@@ -1,19 +1,22 @@
-// #Medium #2023_08_31_Time_120_ms_(84.03%)_Space_105.8_MB_(40.16%)
+// #Medium #2023_08_31_Time_84_ms_(98.71%)_Space_61.8_MB_(94.52%)
 
-type MultiDimensionalArray = (number | MultiDimensionalArray)[];
+type MultiDimensionalArray = (number | MultiDimensionalArray)[]
 
-const flat = (arr: MultiDimensionalArray, n: number): MultiDimensionalArray => {
-  const result: MultiDimensionalArray = [];
-  for (let i = 0; i < arr.length; i++) { //NOSONAR
-    const el = arr[i];
-    if (Array.isArray(el) && n > 0) {
-      const flattened = flat(el, n - 1);
-      result.push(...flattened);
-    } else {
-      result.push(el);
+const flat = (arr: MultiDimensionalArray, depth: number): MultiDimensionalArray => {
+    const result: MultiDimensionalArray = []
+
+    const flatten = (nestedArray: MultiDimensionalArray, currentDepth: number) => {
+        for (const element of nestedArray) {
+            if (Array.isArray(element) && currentDepth > 0 && currentDepth <= depth) {
+                flatten(element, currentDepth - 1)
+            } else {
+                result.push(element)
+            }
+        }
     }
-  }
-  return result;
-};
+
+    flatten(arr, depth)
+    return result
+}
 
 export { flat }
