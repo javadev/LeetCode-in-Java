@@ -1,13 +1,20 @@
-// #Easy #2023_08_31_Time_52_ms_(91.40%)_Space_44.2_MB_(82.03%)
+// #Medium #2023_08_31_Time_120_ms_(84.03%)_Space_105.8_MB_(40.16%)
 
-type Fn = (accum: number, curr: number) => number
+type MultiDimensionalArray = (number | MultiDimensionalArray)[];
 
-function reduce(nums: number[], fn: Fn, init: number): number {
-    let accumulator = init
-    nums.forEach((num) => {
-        accumulator = fn(accumulator, num)
-    })
-    return accumulator
-}
+const flat = (arr: MultiDimensionalArray, n: number): MultiDimensionalArray => {
+  const result: MultiDimensionalArray = [];
 
-export { reduce }
+  for (let i = 0; i < arr.length; i++) {
+    const el = arr[i];
+    if (Array.isArray(el) && n > 0) {
+      const flattened = flat(el, n - 1);
+      result.push(...flattened);
+    } else {
+      result.push(el);
+    }
+  }
+  return result;
+};
+
+export { flat }
