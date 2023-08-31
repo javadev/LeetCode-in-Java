@@ -1,6 +1,6 @@
 // #Easy #2023_08_31_Time_58_ms_(95.63%)_Space_45.3_MB_(73.06%)
 
-type F = (x: number) => number;
+type F = (x: number) => number
 
 function compose(functions: F[]): F {
     return function (x) {
