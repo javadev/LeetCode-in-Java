@@ -27,20 +27,17 @@ function memoize(fn: Fn): Fn {
                     currentCache = currentCache.get(arg);
                 }
             }
-            else {
-                if (isEnd) {
-                    break;
-                }
-                else {
-                    const newSubCache = new Map();
+            else if (isEnd) {
+                 break;
+            } else {
+                 const newSubCache = new Map();
 
-                    currentCache.set(arg, newSubCache);
-                    currentCache = newSubCache;
-                }
+                 currentCache.set(arg, newSubCache);
+                 currentCache = newSubCache;
             }
         }
 
-        var value = fn.apply(null, args);
+        let value = fn(...args);
 
         currentCache.set(args[args.length - 1], value);
         return value;

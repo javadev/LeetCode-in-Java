@@ -6,7 +6,7 @@ declare global {
     }
 }
 
-Array.prototype.groupBy = function<T>(fn: (item: T) => string) {
+Array.prototype.groupBy = function<T>(fn: (item: T) => string) { //NOSONAR
   const returnObject: Record<string, T[]> = {};
   for (const item of this) {
     const key = fn(item);

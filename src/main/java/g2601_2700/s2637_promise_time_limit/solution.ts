@@ -7,7 +7,7 @@ function timeLimit(fn: Fn, t: number): Fn {
     const fns = fn(...args);
     const timeLimitPromise = new Promise((_, reject) => {
       setTimeout(() => {
-        reject("Time Limit Exceeded");
+        reject(new Error('Time Limit Exceeded'));
       }, t);
     });
 
