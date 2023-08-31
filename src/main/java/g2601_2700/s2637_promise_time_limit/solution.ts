@@ -10,7 +10,6 @@ function timeLimit(fn: Fn, t: number): Fn {
                 reject(new Error('Time Limit Exceeded'))
             }, t)
         })
-
         return Promise.race([fns, timeLimitPromise])
     }
 }
