@@ -19,7 +19,7 @@ test('timeLimit', async () => {
     } catch (err) {
         result = { rejected: err }
     }
-    expect(result).toEqual({ rejected: new Error('Time Limit Exceeded') })
+    expect(result).toEqual({ rejected: 'Time Limit Exceeded' })
 })
 
 test('timeLimit2', async () => {
