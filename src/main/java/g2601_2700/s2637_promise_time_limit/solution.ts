@@ -6,7 +6,7 @@ function timeLimit(fn: Fn, t: number): Fn {
     return async function (...args) {
         const timeout = new Promise<any>((_, reject) => {
             setTimeout(() => {
-                reject('Time Limit Exceeded')
+                reject('Time Limit Exceeded') //NOSONAR
             }, t)
         })
         return Promise.race([fn(...args), timeout])
