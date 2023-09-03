@@ -1,26 +1,23 @@
 package g1101_1200.s1105_filling_bookcase_shelves;
 
-// #Medium #Array #Dynamic_Programming #2023_06_01_Time_3_ms_(21.25%)_Space_41.2_MB_(94.90%)
-
-import java.util.Arrays;
+// #Medium #Array #Dynamic_Programming #2023_09_03_Time_0_ms_(100.00%)_Space_40.7_MB_(85.99%)
 
 public class Solution {
     public int minHeightShelves(int[][] books, int shelfWidth) {
-        int n = books.length;
-        int[] dp = new int[n + 1];
-        Arrays.fill(dp, Integer.MAX_VALUE);
-        dp[0] = 0;
-        for (int i = 1; i <= n; i++) {
-            int widthLeft = shelfWidth;
-            int maxH = 0;
-            for (int j = i - 1; j >= 0; j--) {
-                widthLeft -= books[j][0];
-                maxH = Math.max(maxH, books[j][1]);
-                if (widthLeft >= 0) {
-                    dp[i] = Math.min(dp[i], maxH + dp[j]);
-                }
+        int[] heights = new int[books.length];
+        heights[0] = books[0][1];
+        for (int i = 1; i < books.length; i++) {
+            int width = books[i][0];
+            heights[i] = books[i][1] + heights[i - 1];
+            int height = books[i][1];
+            int l = i - 1;
+            while (l >= 0 && width + books[l][0] <= shelfWidth) {
+                width += books[l][0];
+                height = Math.max(height, books[l][1]);
+                heights[i] = Math.min(heights[i], (l > 0 ? heights[l - 1] : 0) + height);
+                l--;
             }
         }
-        return dp[n];
+        return heights[books.length - 1];
     }
 }

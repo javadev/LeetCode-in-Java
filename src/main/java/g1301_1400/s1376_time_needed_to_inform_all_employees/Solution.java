@@ -1,51 +1,57 @@
 package g1301_1400.s1376_time_needed_to_inform_all_employees;
 
 // #Medium #Depth_First_Search #Breadth_First_Search #Tree #Programming_Skills_II_Day_11
-// #Graph_Theory_I_Day_9_Standard_Traversal
-// #2022_03_21_Time_225_ms_(22.36%)_Space_121.5_MB_(65.53%)
+// #Graph_Theory_I_Day_9_Standard_Traversal #2023_09_03_Time_8_ms_(99.85%)_Space_58_MB_(89.47%)
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Queue;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 @SuppressWarnings("java:S1172")
 public class Solution {
-    private static class Pair {
-        int emp;
-        int time;
-
-        Pair(int emp, int time) {
-            this.emp = emp;
-            this.time = time;
+    private int numOfMinutes1(int n, int headID, int[] manager, int[] informTime) {
+        Map<Integer, Set<Integer>> emap = new HashMap<>();
+        for (int i = 0; i < manager.length; i++) {
+            if (manager[i] == -1) {
+                continue;
+            }
+            Set<Integer> eset = emap.getOrDefault(manager[i], new HashSet<>());
+            eset.add(i);
+            emap.put(manager[i], eset);
         }
+        return maxNum(emap, headID, informTime);
+    }
+
+    private int maxNum(Map<Integer, Set<Integer>> emap, int headID, int[] informTime) {
+        int max = 0;
+        if (emap.containsKey(headID)) {
+            for (int i : emap.get(headID)) {
+                max = Math.max(max, maxNum(emap, i, informTime));
+            }
+        }
+        return max + informTime[headID];
+    }
+
+    private int numMinsDFS(int index, int[] manager, int[] informTime) {
+        if (manager[index] != -1) {
+            informTime[index] += numMinsDFS(manager[index], manager, informTime);
+            manager[index] = -1;
+        }
+        return informTime[index];
     }
 
     public int numOfMinutes(int n, int headID, int[] manager, int[] informTime) {
-        HashMap<Integer, List<Integer>> map = new HashMap<>();
-        int head = -1;
-        for (int i = 0; i < manager.length; i++) {
-            if (manager[i] == -1) {
-                head = i;
+        int time = informTime[headID];
+        for (int i = 0; i < n; i++) {
+            if (informTime[i] == 0) {
                 continue;
             }
-            int man = manager[i];
-            map.putIfAbsent(man, new ArrayList<>());
-            map.get(man).add(i);
-        }
-        int maxtime = 0;
-        Queue<Pair> que = new ArrayDeque<>();
-        que.add(new Pair(head, informTime[head]));
-        while (!que.isEmpty()) {
-            Pair rem = que.remove();
-            maxtime = Math.max(rem.time, maxtime);
-            if (map.containsKey(rem.emp)) {
-                for (int under : map.get(rem.emp)) {
-                    que.add(new Pair(under, rem.time + informTime[under]));
-                }
+            int timei = numMinsDFS(i, manager, informTime);
+            if (timei > time) {
+                time = timei;
             }
         }
-        return maxtime;
+        return time;
     }
 }

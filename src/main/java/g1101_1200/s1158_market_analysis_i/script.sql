@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
 # #Medium #Database #SQL_I_Day_9_Control_of_Flow
-# #2023_06_02_Time_2919_ms_(12.20%)_Space_0B_(100.00%)
+# #2023_09_03_Time_2511_ms_(78.92%)_Space_0B_(100.00%)
 SELECT U.user_id AS buyer_id, U.join_date, IFNULL(USERS_ORDERED_IN_2019.orders_in_2019, 0) AS orders_in_2019 FROM Users U
 LEFT JOIN (SELECT U.user_id AS user_id, COUNT(O.item_id) AS orders_in_2019 FROM Users U
 LEFT JOIN Orders O ON O.buyer_id = U.user_id
