@@ -10,19 +10,6 @@ import java.util.Set;
 
 @SuppressWarnings("java:S1172")
 public class Solution {
-    private int numOfMinutes1(int n, int headID, int[] manager, int[] informTime) {
-        Map<Integer, Set<Integer>> emap = new HashMap<>();
-        for (int i = 0; i < manager.length; i++) {
-            if (manager[i] == -1) {
-                continue;
-            }
-            Set<Integer> eset = emap.getOrDefault(manager[i], new HashSet<>());
-            eset.add(i);
-            emap.put(manager[i], eset);
-        }
-        return maxNum(emap, headID, informTime);
-    }
-
     private int maxNum(Map<Integer, Set<Integer>> emap, int headID, int[] informTime) {
         int max = 0;
         if (emap.containsKey(headID)) {

@@ -12,10 +12,8 @@ public class Solution {
             if (newVal > maxValue) {
                 maxValue = newVal;
                 maxIndex = i;
-            } else if (newVal == maxValue) {
-                if (keysPressed.charAt(i) > keysPressed.charAt(maxIndex)) {
-                    maxIndex = i;
-                }
+            } else if (newVal == maxValue && keysPressed.charAt(i) > keysPressed.charAt(maxIndex)) {
+                maxIndex = i;
             }
         }
         return keysPressed.charAt(maxIndex);
