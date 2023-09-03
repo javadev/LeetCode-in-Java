@@ -3,21 +3,8 @@ package g1301_1400.s1376_time_needed_to_inform_all_employees;
 // #Medium #Depth_First_Search #Breadth_First_Search #Tree #Programming_Skills_II_Day_11
 // #Graph_Theory_I_Day_9_Standard_Traversal #2023_09_03_Time_8_ms_(99.85%)_Space_58_MB_(89.47%)
 
-import java.util.Map;
-import java.util.Set;
-
 @SuppressWarnings("java:S1172")
 public class Solution {
-    private int maxNum(Map<Integer, Set<Integer>> emap, int headID, int[] informTime) {
-        int max = 0;
-        if (emap.containsKey(headID)) {
-            for (int i : emap.get(headID)) {
-                max = Math.max(max, maxNum(emap, i, informTime));
-            }
-        }
-        return max + informTime[headID];
-    }
-
     private int numMinsDFS(int index, int[] manager, int[] informTime) {
         if (manager[index] != -1) {
             informTime[index] += numMinsDFS(manager[index], manager, informTime);
