@@ -1,4 +1,4 @@
-**Time Complexity (Big O Time):**
+Time Complexity (Big O Time):
 The time complexity of this program is O(n), where "n" represents the length of the input string `s`. Here's the breakdown:
 
 1. The program iterates through each character of the input string `s` using a `for` loop. This loop runs for "n" iterations, where "n" is the length of the string.
@@ -11,7 +11,7 @@ The time complexity of this program is O(n), where "n" represents the length of 
 
 Since the loop runs for "n" iterations, and all operations inside the loop are constant time, the overall time complexity is O(n).
 
-**Space Complexity (Big O Space):**
+Space Complexity (Big O Space):
 The space complexity of this program is O(n), where "n" represents the length of the input string `s`. Here's why:
 
 1. The program uses a stack (`stack`) to keep track of the opening parentheses encountered while iterating through the string. In the worst case, when the input string contains only opening parentheses, the stack can grow to have a maximum of "n" elements, where "n" is the length of the input string.

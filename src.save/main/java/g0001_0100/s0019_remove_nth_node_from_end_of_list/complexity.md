@@ -1,4 +1,4 @@
-**Time Complexity (Big O Time):**
+Time Complexity (Big O Time):
 The time complexity of this program is O(L), where "L" is the length of the input linked list `head`. Here's the breakdown:
 
 1. The program uses a recursive approach to remove the nth node from the end of the linked list.
@@ -9,7 +9,7 @@ The time complexity of this program is O(L), where "L" is the length of the inpu
 
 Therefore, the overall time complexity is O(L), where "L" is the length of the linked list.
 
-**Space Complexity (Big O Space):**
+Space Complexity (Big O Space):
 The space complexity of this program is O(L), where "L" is the length of the input linked list `head`. Here's why:
 
 1. The program uses a recursive approach, and for each recursive call, it adds a new frame to the call stack. In the worst case, when the linked list is traversed from beginning to end, there can be a maximum of "L" recursive calls on the stack at once.

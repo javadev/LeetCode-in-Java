@@ -1,4 +1,4 @@
-**Time Complexity (Big O Time):**
+Time Complexity (Big O Time):
 The time complexity of this program is O(m*n), where "m" represents the length of the string `s`, and "n" represents the length of the string `p`. Here's the breakdown:
 
 1. The `cache` is a 2D Boolean array with dimensions (s.length() + 1) x (p.length() + 1). Therefore, it has O(m*n) space complexity.
@@ -11,7 +11,7 @@ The time complexity of this program is O(m*n), where "m" represents the length o
 
 Therefore, the overall time complexity is O(m*n).
 
-**Space Complexity (Big O Space):**
+Space Complexity (Big O Space):
 The space complexity of this program is O(m*n), primarily due to the `cache` 2D Boolean array. Additionally, there's a negligible amount of space used for other variables, such as `result`, `firstMatch`, `i`, and `j`, which are all constants and do not depend on the input size.
 
 Hence, the dominant factor in terms of space complexity is the `cache` array, which has O(m*n) space complexity.
