@@ -1,4 +1,5 @@
 **Time Complexity (Big O Time):**
+
 The time complexity of this program is O(n), where "n" represents the length of the input string `s`. Here's the breakdown:
 
 1. The program first creates a new string `newStr` by inserting '#' characters between each character in the original string `s`. This operation has a time complexity of O(n) because it processes each character of `s`.
@@ -10,6 +11,7 @@ The time complexity of this program is O(n), where "n" represents the length of 
 Therefore, the overall time complexity of the program is dominated by the linear-time Manacher's Algorithm, making it O(n).
 
 **Space Complexity (Big O Space):**
+
 The space complexity of this program is O(n), where "n" represents the length of the input string `s`. Here's why:
 
 1. The program creates a new character array `newStr` with a length of `s.length() * 2 + 1`. This array stores a modified version of the input string `s` with '#' characters inserted. The space used by `newStr` is proportional to the length of `s`, so it has a space complexity of O(n).

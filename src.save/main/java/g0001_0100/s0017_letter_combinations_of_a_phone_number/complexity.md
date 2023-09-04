@@ -1,4 +1,5 @@
 **Time Complexity (Big O Time):**
+
 The time complexity of this program is O(4^n), where "n" is the number of digits in the input string `digits`. Here's the breakdown:
 
 1. The program uses a recursive approach to generate all possible letter combinations for the input digits.
@@ -10,6 +11,7 @@ The time complexity of this program is O(4^n), where "n" is the number of digits
 4. Since there are "n" digits in the input string, and for each digit, there are a constant number of recursive calls (3 or 4), the overall time complexity is exponential, specifically O(4^n).
 
 **Space Complexity (Big O Space):**
+
 The space complexity of this program is O(n), where "n" is the number of digits in the input string `digits`. Here's why:
 
 1. The program uses a `StringBuilder` (`curr`) to build the current combination of letters. The maximum length of this `StringBuilder` is equal to the number of digits in the input string `digits`.
