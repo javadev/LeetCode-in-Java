@@ -2,7 +2,7 @@ package g0001_0100.s0005_longest_palindromic_substring;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Dynamic_Programming
 // #Data_Structure_II_Day_9_String #Algorithm_II_Day_14_Dynamic_Programming
-// #Dynamic_Programming_I_Day_17 #Udemy_Strings
+// #Dynamic_Programming_I_Day_17 #Udemy_Strings #Big_O_Time_O(n)_Space_O(n)
 // #2023_08_09_Time_7_ms_(97.94%)_Space_41.9_MB_(56.27%)
 
 public class Solution {
