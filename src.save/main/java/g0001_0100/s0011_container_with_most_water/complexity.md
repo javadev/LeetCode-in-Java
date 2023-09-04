@@ -1,4 +1,5 @@
 **Time Complexity (Big O Time):**
+
 The time complexity of this program is O(n), where "n" represents the number of elements in the `height` array. Here's the breakdown:
 
 1. The program uses a two-pointer approach with `left` and `right` pointers initialized at the beginning and end of the `height` array.
@@ -10,6 +11,7 @@ The time complexity of this program is O(n), where "n" represents the number of 
 Since the `while` loop runs until the `left` and `right` pointers meet in the middle, and each iteration performs constant-time operations, the overall time complexity is O(n), where "n" is the number of elements in the `height` array.
 
 **Space Complexity (Big O Space):**
+
 The space complexity of this program is O(1), which means it uses a constant amount of extra space that does not depend on the input size. The program uses only a few integer variables (`maxArea`, `left`, and `right`) to keep track of the maximum area and the positions of the two pointers. The space used by these variables remains constant regardless of the input size.
 
 Therefore, the overall space complexity is O(1).
