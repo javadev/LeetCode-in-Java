@@ -1,7 +1,7 @@
 package g0001_0100.s0041_first_missing_positive;
 
 // #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Array #Hash_Table #Udemy_Arrays
-// #2023_08_11_Time_2_ms_(57.59%)_Space_59.2_MB_(51.48%)
+// #Big_O_Time_O(n)_Space_O(n) #2023_08_11_Time_2_ms_(57.59%)_Space_59.2_MB_(51.48%)
 
 public class Solution {
     public int firstMissingPositive(int[] nums) {
