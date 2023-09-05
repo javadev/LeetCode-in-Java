@@ -16,12 +16,10 @@ public class Graph {
         for (int i = 0; i < n; i++) {
             adj.put(i, new ArrayList<>());
         }
-
         for (int[] edge : edges) {
             int u = edge[0];
             int v = edge[1];
             int cost = edge[2];
-
             ArrayList<Pair<Integer, Integer>> uList = adj.get(u);
             uList.add(new Pair<>(v, cost));
             adj.put(u, uList);
@@ -32,7 +30,6 @@ public class Graph {
         int u = edge[0];
         int v = edge[1];
         int cost = edge[2];
-
         ArrayList<Pair<Integer, Integer>> uList = adj.getOrDefault(u, new ArrayList<>());
         uList.add(new Pair<>(v, cost));
         adj.put(u, uList);
@@ -43,29 +40,23 @@ public class Graph {
                 new PriorityQueue<>((a, b) -> a.getValue() - b.getValue());
         int[] distance = new int[adj.size()];
         Arrays.fill(distance, Integer.MAX_VALUE);
-
         minHeap.add(new Pair<>(node1, 0));
         distance[node1] = 0;
-
         while (!minHeap.isEmpty()) {
             Pair<Integer, Integer> nodeCost = minHeap.poll();
             int node = nodeCost.getKey();
             int cost = nodeCost.getValue();
-
             if (node == node2) {
                 return cost;
             }
-
             if (cost > distance[node]) {
                 continue;
             }
-
             ArrayList<Pair<Integer, Integer>> neighbors = adj.get(node);
             if (neighbors != null) {
                 for (Pair<Integer, Integer> neighbor : neighbors) {
                     int next = neighbor.getKey();
                     int nextCost = neighbor.getValue();
-
                     if (cost + nextCost < distance[next]) {
                         distance[next] = cost + nextCost;
                         minHeap.add(new Pair<>(next, cost + nextCost));
@@ -73,7 +64,6 @@ public class Graph {
                 }
             }
         }
-
         return -1;
     }
 
