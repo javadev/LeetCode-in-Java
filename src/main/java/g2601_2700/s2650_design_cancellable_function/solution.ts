@@ -39,4 +39,3 @@ function cancellable<T>(generator: Generator<Promise<any>, T, unknown>): [() => 
  */
 
 export { cancellable }
-
