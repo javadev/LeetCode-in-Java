@@ -6,6 +6,7 @@ package g2601_2700.s2646_minimize_the_total_price_of_the_trips;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private List<Integer>[] graph;
     private int[] count;
