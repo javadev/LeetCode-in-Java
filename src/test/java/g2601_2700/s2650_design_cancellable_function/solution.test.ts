@@ -20,7 +20,7 @@ test('cancellable2', () => {
               result += yield new Promise(res => res(1));
               yield new Promise(res => setTimeout(res, 100));
               result += yield new Promise(res => res(1));
-            } catch(e) {
+            } catch(e) { //NOSONAR
               return result;
             }
             return result;
