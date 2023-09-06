@@ -3,7 +3,7 @@ import { inorderTraversal } from 'src/main/java/g2601_2700/s2649_nested_array_ge
 import { expect, test } from 'vitest'
 
 test('inorderTraversal', () => {
-    const gen = inorderTraversal([[[6]],[1,3],[]])
+    const gen = inorderTraversal([[[6]], [1, 3], []])
     expect(gen.next().value).toEqual(6)
     expect(gen.next().value).toEqual(1)
     expect(gen.next().value).toEqual(3)
