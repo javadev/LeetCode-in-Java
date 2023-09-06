@@ -5,6 +5,7 @@ package g2601_2700.s2608_shortest_cycle_in_a_graph;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private int output = 1001;
 
