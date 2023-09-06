@@ -1,6 +1,6 @@
 package g0001_0100.s0051_n_queens;
 
-// #Hard #Top_100_Liked_Questions #Array #Backtracking
+// #Hard #Top_100_Liked_Questions #Array #Backtracking #Big_O_Time_O(N!)_Space_O(N)
 // #2023_08_11_Time_1_ms_(100.00%)_Space_43.6_MB_(97.17%)
 
 import java.util.ArrayList;
