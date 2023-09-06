@@ -6,6 +6,7 @@ package g2601_2700.s2603_collect_coins_in_a_tree;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private int[] coins;
     private List<Integer>[] graph;
