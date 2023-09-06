@@ -9,13 +9,17 @@ public class Solution {
         for (int divisor : divisors) {
             int dividedNums = 0;
             for (int num : nums) {
-                if (num % divisor == 0) dividedNums++;
+                if (num % divisor == 0) {
+                    dividedNums++;
+                }
             }
             if (dividedNums > maxDividedNums) {
                 maxDividedNums = dividedNums;
                 maxDivisor = divisor;
             }
-            if (dividedNums == maxDividedNums && divisor < maxDivisor) maxDivisor = divisor;
+            if (dividedNums == maxDividedNums && divisor < maxDivisor) {
+                maxDivisor = divisor;
+            }
         }
         return maxDivisor;
     }
