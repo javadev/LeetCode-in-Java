@@ -25,4 +25,3 @@ function* fibGenerator(): Generator<number, any, number> {
  */
 
 export { fibGenerator }
-
