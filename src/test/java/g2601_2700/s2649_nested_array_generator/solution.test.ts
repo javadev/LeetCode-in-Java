@@ -7,4 +7,10 @@ test('inorderTraversal', () => {
     expect(gen.next().value).toEqual(6)
     expect(gen.next().value).toEqual(1)
     expect(gen.next().value).toEqual(3)
+    expect(gen.next().value).toEqual(undefined)
+})
+
+test('inorderTraversal2', () => {
+    const gen = inorderTraversal([])
+    expect(gen.next().value).toEqual(undefined)
 })
