@@ -6,7 +6,7 @@ function once(fn: Fn): Fn {
     let wasCalled = false
     return function (...args) {
         if (!wasCalled) {
-            wasCalled = true;
+            wasCalled = true
             return fn(...args)
         }
     }
