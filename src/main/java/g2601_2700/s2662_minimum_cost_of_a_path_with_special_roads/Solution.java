@@ -18,7 +18,9 @@ public class Solution {
                                     start[0], start[1],
                                     specialRoads[i][0], specialRoads[i][1])
                             + specialRoads[i][4];
-            if (dist[minDistIdx] > dist[i]) minDistIdx = i;
+            if (dist[minDistIdx] > dist[i]) {
+                minDistIdx = i;
+            }
         }
         int cost = dist(start[0], start[1], target[0], target[1]);
         while (minDistIdx != -1) {
