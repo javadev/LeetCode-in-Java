@@ -3,14 +3,13 @@
 type Fn = (...args: any[]) => any
 
 function once(fn: Fn): Fn {
-    let wasCalled = false;
+    let wasCalled = false
     return function (...args) {
         if (!wasCalled) {
             wasCalled = true;
-            return fn(...args);
+            return fn(...args)
         }
     }
 }
-
 
 export { once }
