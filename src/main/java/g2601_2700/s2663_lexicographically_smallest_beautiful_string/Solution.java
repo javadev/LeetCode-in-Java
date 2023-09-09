@@ -8,35 +8,23 @@ public class Solution {
         char[] chars = s.toCharArray();
         for (int i = n - 1; i >= 0; i--) {
             chars[i]++;
-            boolean canBuild = true;
-            if (chars[i] > 'a' + k - 1) {
-                continue;
-            }
-            while (isValid(chars, i)) {
+            while (chars[i] <= 'a' + k - 1 && isValid(chars, i)) {
                 chars[i]++;
-                if (chars[i] > 'a' + k - 1) {
-                    canBuild = false;
-                    break;
+            }
+            if (chars[i] <= 'a' + k - 1) {
+                for (int j = i + 1; j < n; j++) {
+                    chars[j] = 'a';
+                    while (isValid(chars, j)) {
+                        chars[j]++;
+                    }
                 }
+                return new String(chars);
             }
-            if (!canBuild) {
-                continue;
-            }
-            for (int j = i + 1; j < n; j++) {
-                chars[j] = 'a';
-                while (isValid(chars, j)) {
-                    chars[j]++;
-                }
-            }
-            return new String(chars);
         }
         return "";
     }
 
     private boolean isValid(char[] s, int i) {
-        if (i - 1 >= 0 && s[i - 1] == s[i]) {
-            return true;
-        }
-        return i - 2 >= 0 && s[i - 2] == s[i];
+        return (i - 1 >= 0 && s[i - 1] == s[i]) || (i - 2 >= 0 && s[i - 2] == s[i]);
     }
 }
