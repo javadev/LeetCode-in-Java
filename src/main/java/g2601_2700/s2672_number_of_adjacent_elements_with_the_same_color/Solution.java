@@ -13,10 +13,8 @@ public class Solution {
         for (int i = 0; i < q.length; i++) {
             int ind = q[i][0];
             int assColor = q[i][1];
-
             int leftColor = 0;
             int rytColor = 0;
-
             if (ind - 1 >= 0) {
                 leftColor = color[ind - 1];
             }
