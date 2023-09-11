@@ -9,16 +9,13 @@ public class Solution {
         for (int i = nums.length - 2; i >= 0; i--) {
             suffix[i] = suffix[i + 1] | nums[i + 1];
         }
-
         long prefix = 0L;
         long max = 0L;
-
         for (int i = 0; i <= nums.length - 1; i++) {
             long num = nums[i];
             max = Math.max(max, prefix | (num << k) | suffix[i]);
             prefix |= num;
         }
-
         return max;
     }
 }
