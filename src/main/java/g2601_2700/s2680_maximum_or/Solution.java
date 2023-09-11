@@ -15,7 +15,7 @@ public class Solution {
 
         for (int i = 0; i <= nums.length - 1; i++) {
             long num = nums[i];
-            max = Math.max(max, prefix | (num << k) | (long) suffix[i]);
+            max = Math.max(max, prefix | (num << k) | suffix[i]);
             prefix |= num;
         }
 
