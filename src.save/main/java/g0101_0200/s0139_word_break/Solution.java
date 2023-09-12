@@ -2,7 +2,7 @@ package g0101_0200.s0139_word_break;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Hash_Table
 // #Dynamic_Programming #Trie #Memoization #Algorithm_II_Day_15_Dynamic_Programming
-// #Dynamic_Programming_I_Day_9 #Udemy_Dynamic_Programming
+// #Dynamic_Programming_I_Day_9 #Udemy_Dynamic_Programming #Big_O_Time_O(M+max*N)_Space_O(M+N+max)
 // #2022_06_24_Time_2_ms_(97.08%)_Space_42.1_MB_(90.92%)
 
 import java.util.HashSet;
