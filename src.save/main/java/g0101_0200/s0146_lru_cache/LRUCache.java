@@ -1,7 +1,8 @@
 package g0101_0200.s0146_lru_cache;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Hash_Table #Design #Linked_List
-// #Doubly_Linked_List #Udemy_Linked_List #2022_06_24_Time_87_ms_(50.80%)_Space_125.2_MB_(58.73%)
+// #Doubly_Linked_List #Udemy_Linked_List #Big_O_Time_O(1)_Space_O(capacity)
+// #2022_06_24_Time_87_ms_(50.80%)_Space_125.2_MB_(58.73%)
 
 import java.util.HashMap;
 import java.util.Map;
