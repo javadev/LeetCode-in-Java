@@ -4,9 +4,9 @@ package g2601_2700.s2685_count_the_number_of_complete_components;
 // #2023_09_12_Time_5_ms_(98.65%)_Space_43.8_MB_(65.96%)
 
 public class Solution {
-    static class DSU {
-        public int[] roots;
-        public int[] sizes;
+    private static class DSU {
+        int[] roots;
+        int[] sizes;
 
         DSU(int n) {
             roots = new int[n];
