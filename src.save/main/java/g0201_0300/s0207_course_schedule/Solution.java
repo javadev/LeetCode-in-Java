@@ -1,7 +1,7 @@
 package g0201_0300.s0207_course_schedule;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Depth_First_Search
-// #Breadth_First_Search #Graph #Topological_Sort
+// #Breadth_First_Search #Graph #Topological_Sort #Big_O_Time_O(N)_Space_O(N)
 // #2022_06_28_Time_3_ms_(97.58%)_Space_48.2_MB_(49.51%)
 
 import java.util.ArrayList;
