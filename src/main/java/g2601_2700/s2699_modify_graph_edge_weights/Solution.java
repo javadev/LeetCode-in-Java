@@ -65,8 +65,12 @@ public class Solution {
         return edges;
     }
 
-    private void processQueue(int[][] edges, int source, PriorityQueue<int[]> pq,
-                              Integer[] distances, List<int[]>[] graph) {
+    private void processQueue(
+            int[][] edges,
+            int source,
+            PriorityQueue<int[]> pq,
+            Integer[] distances,
+            List<int[]>[] graph) {
         while (!pq.isEmpty()) {
             int[] c = pq.poll();
             if (distances[c[0]] != null) {
