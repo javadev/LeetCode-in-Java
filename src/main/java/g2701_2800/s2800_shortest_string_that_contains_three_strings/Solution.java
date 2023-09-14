@@ -32,8 +32,11 @@ public class Solution {
                 int ii = i + 1;
                 int match = 1;
                 for (int j = 1; j < b.length && ii < a.length; ++j) {
-                    if (a[ii] == b[j]) match++;
-                    else break;
+                    if (a[ii] == b[j]) {
+                        match++;
+                    } else {
+                        break;
+                    }
                     ii++;
                 }
                 if (match == b.length) {
@@ -45,18 +48,27 @@ public class Solution {
             }
         }
         char[] tmp = new char[b.length + insertIndex];
-        for (int i = 0; i < insertIndex; ++i) tmp[i] = a[i];
-        for (int i = 0; i < b.length; ++i) tmp[i + insertIndex] = b[i];
+        for (int i = 0; i < insertIndex; ++i) {
+            tmp[i] = a[i];
+        }
+        for (int i = 0; i < b.length; ++i) {
+            tmp[i + insertIndex] = b[i];
+        }
         return tmp;
     }
 
     private char[] getSmaller(char[] res, char[] test) {
-        if (res.length > test.length) return test;
-        else if (res.length < test.length) return res;
-        else {
+        if (res.length > test.length) {
+            return test;
+        } else if (res.length < test.length) {
+            return res;
+        } else {
             for (int i = 0; i < res.length; ++i) {
-                if (res[i] > test[i]) return test;
-                else if (res[i] < test[i]) return res;
+                if (res[i] > test[i]) {
+                    return test;
+                } else if (res[i] < test[i]) {
+                    return res;
+                }
             }
         }
         return res;

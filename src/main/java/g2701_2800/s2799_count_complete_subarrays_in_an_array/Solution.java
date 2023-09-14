@@ -16,7 +16,9 @@ public class Solution {
             }
         }
         map = new int[2001];
-        for (int i = 0; i <= last; ++i) map[nums[i]]++;
+        for (int i = 0; i <= last; ++i) {
+            map[nums[i]]++;
+        }
         int ans = 0;
         for (int i = 0; i < n; ++i) {
             int curr = 1;
@@ -30,7 +32,9 @@ public class Solution {
                 }
                 if (map[nums[i]] > 0) {
                     last = possLast;
-                } else break;
+                } else {
+                    break;
+                }
             }
         }
         return ans;
