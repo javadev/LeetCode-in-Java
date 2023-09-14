@@ -9,11 +9,9 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 public class Solution {
-    private List<int[]>[] graph;
-
     public int[][] modifiedGraphEdges(
             int n, int[][] edges, int source, int destination, int target) {
-        graph = new ArrayList[n];
+        List<int[]>[] graph = new ArrayList[n];
         for (int i = 0; i < n; i++) {
             graph[i] = new ArrayList<>();
         }
