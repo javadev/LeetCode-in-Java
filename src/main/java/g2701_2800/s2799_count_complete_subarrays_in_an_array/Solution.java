@@ -6,12 +6,10 @@ public class Solution {
     public int countCompleteSubarrays(int[] nums) {
         int n = nums.length;
         int[] map = new int[2001];
-        int distinct = 0;
         int last = 0;
         for (int i = 0; i < n; ++i) {
             map[nums[i]]++;
             if (map[nums[i]] == 1) {
-                distinct++;
                 last = i;
             }
         }
@@ -21,7 +19,6 @@ public class Solution {
         }
         int ans = 0;
         for (int i = 0; i < n; ++i) {
-            int curr = 1;
             ans += n - last;
             map[nums[i]]--;
             if (map[nums[i]] == 0) {

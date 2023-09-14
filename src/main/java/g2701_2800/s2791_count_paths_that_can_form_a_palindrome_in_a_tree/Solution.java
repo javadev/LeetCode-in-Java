@@ -29,13 +29,13 @@ public class Solution {
             int evenCount = mapCount.getOrDefault(currMap, 0);
             mapCount.put(currMap, evenCount + 1);
         }
-        for (int key : mapCount.keySet()) {
-            int value = mapCount.get(key);
+        for (Map.Entry<Integer, Integer> entry : mapCount.entrySet()) {
+            int value = entry.getValue();
             ans += (long) value * (value - 1) / 2;
             for (int i = 0; i <= 25; i++) {
                 int base = 1 << i;
-                if ((key & base) > 0 && mapCount.containsKey(key ^ base)) {
-                    ans += (long) value * mapCount.get(key ^ base);
+                if ((entry.getKey() & base) > 0 && mapCount.containsKey(entry.getKey() ^ base)) {
+                    ans += (long) value * mapCount.get(entry.getKey() ^ base);
                 }
             }
         }

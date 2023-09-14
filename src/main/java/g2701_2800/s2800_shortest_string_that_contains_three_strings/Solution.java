@@ -31,13 +31,12 @@ public class Solution {
             if (a[i] == b[0]) {
                 int ii = i + 1;
                 int match = 1;
-                for (int j = 1; j < b.length && ii < a.length; ++j) {
+                for (int j = 1; j < b.length && ii < a.length; j++, ii++) {
                     if (a[ii] == b[j]) {
                         match++;
                     } else {
                         break;
                     }
-                    ii++;
                 }
                 if (match == b.length) {
                     return a;
