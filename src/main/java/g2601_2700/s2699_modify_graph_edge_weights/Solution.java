@@ -24,22 +24,7 @@ public class Solution {
         PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(v -> v[1]));
         pq.add(new int[] {destination, 0});
         Integer[] distances = new Integer[n];
-        while (!pq.isEmpty()) {
-            int[] c = pq.poll();
-            if (distances[c[0]] != null) {
-                continue;
-            }
-            distances[c[0]] = c[1];
-            if (c[0] == source) {
-                continue;
-            }
-            for (int[] e : graph[c[0]]) {
-                if (distances[e[0]] != null) {
-                    continue;
-                }
-                pq.add(new int[] {e[0], c[1] + Math.abs(edges[e[1]][2])});
-            }
-        }
+        processQueue(edges, source, pq, distances, graph);
         if (distances[source] > target) {
             return new int[][] {};
         }
@@ -78,5 +63,25 @@ public class Solution {
             }
         }
         return edges;
+    }
+
+    private void processQueue(int[][] edges, int source, PriorityQueue<int[]> pq,
+                              Integer[] distances, List<int[]>[] graph) {
+        while (!pq.isEmpty()) {
+            int[] c = pq.poll();
+            if (distances[c[0]] != null) {
+                continue;
+            }
+            distances[c[0]] = c[1];
+            if (c[0] == source) {
+                continue;
+            }
+            for (int[] e : graph[c[0]]) {
+                if (distances[e[0]] != null) {
+                    continue;
+                }
+                pq.add(new int[] {e[0], c[1] + Math.abs(edges[e[1]][2])});
+            }
+        }
     }
 }
