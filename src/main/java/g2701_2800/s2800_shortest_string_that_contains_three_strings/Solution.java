@@ -47,12 +47,8 @@ public class Solution {
             }
         }
         char[] tmp = new char[b.length + insertIndex];
-        for (int i = 0; i < insertIndex; ++i) {
-            tmp[i] = a[i];
-        }
-        for (int i = 0; i < b.length; ++i) {
-            tmp[i + insertIndex] = b[i];
-        }
+        System.arraycopy(a, 0, tmp, 0, insertIndex);
+        System.arraycopy(b, 0, tmp, insertIndex, b.length);
         return tmp;
     }
 
