@@ -8,6 +8,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int[][] modifiedGraphEdges(
             int n, int[][] edges, int source, int destination, int target) {
@@ -53,7 +54,6 @@ public class Solution {
                 continue;
             }
             visited[c[0]] = true;
-
             if (c[0] == destination) {
                 return new int[][] {};
             }
