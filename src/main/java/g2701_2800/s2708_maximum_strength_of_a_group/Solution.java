@@ -30,7 +30,7 @@ public class Solution {
             if (num == 0) {
                 continue;
             }
-            result = Math.max(result, product / (long) num);
+            result = Math.max(result, product / num);
         }
         return result;
     }
