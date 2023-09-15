@@ -18,7 +18,8 @@ class SolutionTest {
 
     @Test
     void maxStrength3() {
-        assertThat(new Solution().maxStrength(
-            new int[] {8, 6, 0, 5, -4, -8, -4, 9, -1, 6, -4, 8, -5}), equalTo(265420800L));
+        assertThat(
+                new Solution().maxStrength(new int[] {8, 6, 0, 5, -4, -8, -4, 9, -1, 6, -4, 8, -5}),
+                equalTo(265420800L));
     }
 }
