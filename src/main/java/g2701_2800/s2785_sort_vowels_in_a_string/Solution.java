@@ -21,11 +21,11 @@ public class Solution {
                 while (i < result.length) {
                     if (countIndexMap[result[i]] == 0) {
                         i++;
-                        continue;
+                    } else {
+                        vowelCount[j]--;
+                        result[i++] = charMap[j - 1];
+                        break;
                     }
-                    vowelCount[j]--;
-                    result[i++] = charMap[j - 1];
-                    break;
                 }
             } else {
                 j++;
