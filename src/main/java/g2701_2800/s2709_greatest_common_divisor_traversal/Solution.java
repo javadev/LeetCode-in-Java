@@ -11,7 +11,11 @@ public class Solution {
     private int[] set;
 
     private int findParent(int u) {
-        return (u == set[u]) ? u : (set[u] = findParent(set[u]));
+        if (u == set[u]) {
+            return u;
+        }
+        set[u] = findParent(set[u]);
+        return set[u];
     }
 
     private void union(int a, int b) {
