@@ -17,10 +17,7 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 int val = mat[i][j];
-                if (!map.containsKey(val)) {
-                    map.put(val, new ArrayList<>());
-                }
-                map.get(val).add(new int[] {i, j});
+                map.computeIfAbsent(val, k -> new ArrayList<>()).add(new int[] {i, j});
             }
         }
         int[][] memo = new int[n][m];
