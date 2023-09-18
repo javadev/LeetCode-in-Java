@@ -22,7 +22,6 @@ public class Solution {
         int lo = tight1 ? (num1.charAt(i) - '0') : 0;
         int hi = tight2 ? (num2.charAt(i) - '0') : 9;
         int count = 0;
-
         for (int idx = lo; idx <= hi; idx++) {
             count =
                     (count % MOD
@@ -46,7 +45,6 @@ public class Solution {
         int minLength = num1.length();
         int leadingZeroes = maxLength - minLength;
         String num1extended = "0".repeat(leadingZeroes) + num1;
-
         dp = new int[maxLength][2][2][401];
         for (int i = 0; i < maxLength; i++) {
             for (int j = 0; j < 2; j++) {
@@ -55,7 +53,6 @@ public class Solution {
                 }
             }
         }
-
         int total = countStrings(0, true, true, maxSum, num1extended, num2);
         int unnecessary = countStrings(0, true, true, minSum - 1, num1extended, num2);
         int ans = (total - unnecessary) % MOD;
