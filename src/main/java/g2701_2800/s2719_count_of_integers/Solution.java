@@ -10,11 +10,15 @@ public class Solution {
 
     private int countStrings(
             int i, boolean tight1, boolean tight2, int sum, String num1, String num2) {
-        if (sum < 0) return 0;
-        if (i == num2.length()) return 1;
-        if (dp[i][tight1 ? 1 : 0][tight2 ? 1 : 0][sum] != -1)
+        if (sum < 0) {
+            return 0;
+        }
+        if (i == num2.length()) {
+            return 1;
+        }
+        if (dp[i][tight1 ? 1 : 0][tight2 ? 1 : 0][sum] != -1) {
             return dp[i][tight1 ? 1 : 0][tight2 ? 1 : 0][sum];
-
+        }
         int lo = tight1 ? (num1.charAt(i) - '0') : 0;
         int hi = tight2 ? (num2.charAt(i) - '0') : 9;
         int count = 0;
