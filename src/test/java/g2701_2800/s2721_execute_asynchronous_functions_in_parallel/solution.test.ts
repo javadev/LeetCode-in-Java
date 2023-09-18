@@ -22,4 +22,3 @@ test('promiseAll3', () => {
     ]
     promiseAll(functions).then((e) => expect(e).toEqual({ t: 150, resolved: [4, 10, 16] }))
 })
-
