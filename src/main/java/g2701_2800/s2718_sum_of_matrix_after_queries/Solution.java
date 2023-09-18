@@ -9,12 +9,10 @@ public class Solution {
         long sum = 0;
         int remainingRows = n;
         int remainingCols = n;
-
         for (int i = queries.length - 1; i >= 0; i--) {
             int type = queries[i][0];
             int index = queries[i][1];
             int value = queries[i][2];
-
             if ((type == 0 && !queriedRow[index]) || (type == 1 && !queriedCol[index])) {
                 sum += (long) value * (type == 0 ? remainingCols : remainingRows);
                 if (type == 0) {
@@ -26,7 +24,6 @@ public class Solution {
                 }
             }
         }
-
         return sum;
     }
 }
