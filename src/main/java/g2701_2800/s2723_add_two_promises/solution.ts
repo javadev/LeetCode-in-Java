@@ -10,4 +10,3 @@ async function addTwoPromises(promise1: Promise<number>, promise2: Promise<numbe
  */
 
 export { addTwoPromises }
-

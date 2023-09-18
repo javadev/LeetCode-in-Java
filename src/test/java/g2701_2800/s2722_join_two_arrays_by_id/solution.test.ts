@@ -41,4 +41,3 @@ test('join3', () => {
     const result = [{ id: 1, b: { c: 84 }, v: [1, 3], y: 48 }]
     expect(join(arr1, arr2)).toEqual(result)
 })
-

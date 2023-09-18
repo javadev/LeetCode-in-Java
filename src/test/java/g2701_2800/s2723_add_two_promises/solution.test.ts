@@ -12,4 +12,3 @@ test('addTwoPromises2', () => {
     const promise2 = new Promise((resolve) => setTimeout(() => resolve(-12), 30))
     addTwoPromises(promise1, promise2).then((e) => expect(e).toEqual(-2))
 })
-

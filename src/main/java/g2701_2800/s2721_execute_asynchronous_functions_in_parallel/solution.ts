@@ -28,4 +28,3 @@ async function promiseAll<T>(functions: (() => Promise<T>)[]): Promise<T[]> {
  */
 
 export { promiseAll }
-
