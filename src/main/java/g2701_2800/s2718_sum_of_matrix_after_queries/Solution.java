@@ -15,20 +15,15 @@ public class Solution {
             int index = queries[i][1];
             int value = queries[i][2];
 
-            if (type == 0) {
-                if (queriedRow[index]) {
-                    continue;
+            if ((type == 0 && !queriedRow[index]) || (type == 1 && !queriedCol[index])) {
+                sum += (long) value * (type == 0 ? remainingCols : remainingRows);
+                if (type == 0) {
+                    remainingRows--;
+                    queriedRow[index] = true;
+                } else {
+                    remainingCols--;
+                    queriedCol[index] = true;
                 }
-                sum += (long) value * remainingCols;
-                remainingRows--;
-                queriedRow[index] = true;
-            } else {
-                if (queriedCol[index]) {
-                    continue;
-                }
-                sum += (long) value * remainingRows;
-                remainingCols--;
-                queriedCol[index] = true;
             }
         }
 
