@@ -11,8 +11,7 @@ public class Solution {
         return add(set, n) && add(set, 2 * n) && add(set, 3 * n);
     }
 
-    private boolean add(Set<Integer> set, int _cur) {
-        int cur = _cur;
+    private boolean add(Set<Integer> set, int cur) {
         while (cur > 0) {
             int digit = cur % 10;
             if (digit == 0 || set.contains(digit)) {
