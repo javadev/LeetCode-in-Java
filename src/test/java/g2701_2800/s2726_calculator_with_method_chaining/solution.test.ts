@@ -10,4 +10,3 @@ test('calculator2', () => {
     const result = new Calculator(2).multiply(5).power(2).getResult()
     expect(result).toEqual(100)
 })
-

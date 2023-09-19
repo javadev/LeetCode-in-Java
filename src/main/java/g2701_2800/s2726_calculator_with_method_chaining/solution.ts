@@ -39,4 +39,3 @@ class Calculator {
 }
 
 export { Calculator }
-
