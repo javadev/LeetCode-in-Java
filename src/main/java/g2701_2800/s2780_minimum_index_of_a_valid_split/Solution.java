@@ -9,7 +9,8 @@ public class Solution {
         int n = nums.size();
         Integer[] numbers = new Integer[n];
         nums.toArray(numbers);
-        int majority = -1, count = 0;
+        int majority = -1;
+        int count = 0;
         for (int x : numbers) {
             if (count == 0) {
                 majority = x;
