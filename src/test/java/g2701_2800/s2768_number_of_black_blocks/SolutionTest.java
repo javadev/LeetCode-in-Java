@@ -3,7 +3,6 @@ package g2701_2800.s2768_number_of_black_blocks;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import java.util.*;
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {

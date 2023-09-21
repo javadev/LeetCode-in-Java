@@ -8,7 +8,10 @@ public class Solution {
         int dp1 = 1;
         int dp2 = 1;
         int n = nums1.length;
-        int t11, t12, t21, t22;
+        int t11;
+        int t12;
+        int t21;
+        int t22;
         for (int i = 1; i < n; i++) {
             t11 = (nums1[i - 1] <= nums1[i]) ? dp1 + 1 : 1;
             t12 = (nums1[i - 1] <= nums2[i]) ? dp1 + 1 : 1;
