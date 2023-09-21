@@ -7,12 +7,12 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    public void checkArray() {
+    void checkArray() {
         assertThat(new Solution().checkArray(new int[] {2, 2, 3, 1, 1, 0}, 3), equalTo(true));
     }
 
     @Test
-    public void checkArray2() {
+    void checkArray2() {
         assertThat(new Solution().checkArray(new int[] {1, 3, 1, 1}, 2), equalTo(false));
     }
 }
