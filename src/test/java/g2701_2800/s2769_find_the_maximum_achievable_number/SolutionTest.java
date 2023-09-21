@@ -7,12 +7,12 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    public void theMaximumAchievableX() {
+    void theMaximumAchievableX() {
         assertThat(new Solution().theMaximumAchievableX(4, 1), equalTo(6));
     }
 
     @Test
-    public void theMaximumAchievableX2() {
+    void theMaximumAchievableX2() {
         assertThat(new Solution().theMaximumAchievableX(3, 2), equalTo(7));
     }
 }
