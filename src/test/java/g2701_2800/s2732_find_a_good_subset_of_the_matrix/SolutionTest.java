@@ -30,4 +30,15 @@ class SolutionTest {
                                                 "[1,1,1],[1,1,1]")),
                 equalTo(List.of()));
     }
+
+    @Test
+    void goodSubsetofBinaryMatrix3() {
+        assertThat(
+                new Solution()
+                        .goodSubsetofBinaryMatrix(
+                                CommonUtils
+                                        .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                                                "[0,0,0]")),
+                equalTo(List.of(0)));
+    }
 }
