@@ -4,15 +4,18 @@ package g2701_2800.s2734_lexicographically_smallest_string_after_substring_opera
 
 public class Solution {
     public String smallestString(String s) {
-        int i = 0, n = s.length();
-        char[] A = s.toCharArray();
-        while (i < n && A[i] == 'a') {
+        int i = 0;
+        int n = s.length();
+        char[] a = s.toCharArray();
+        while (i < n && a[i] == 'a') {
             i++;
-            if (i == n) A[n - 1] = 'z';
+            if (i == n) {
+                a[n - 1] = 'z';
+            }
         }
-        while (i < n && A[i] != 'a') {
-            --A[i++];
+        while (i < n && a[i] != 'a') {
+            --a[i++];
         }
-        return String.valueOf(A);
+        return String.valueOf(a);
     }
 }

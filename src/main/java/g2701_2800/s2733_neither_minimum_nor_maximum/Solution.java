@@ -11,7 +11,9 @@ public class Solution {
             mx = Math.max(num, mx);
         }
         for (int num : nums) {
-            if (num != mn && num != mx) return num;
+            if (num != mn && num != mx) {
+                return num;
+            }
         }
         return -1;
     }
