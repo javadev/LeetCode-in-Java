@@ -18,7 +18,9 @@ public class Solution {
             entry = map.floorEntry(x);
         }
         entry = map.ceilingEntry(num);
-        if (entry == null || entry.getValue() < sum) map.put(num, sum);
+        if (entry == null || entry.getValue() < sum) {
+            map.put(num, sum);
+        }
     }
 
     public int queryVal(TreeMap<Integer, Integer> map, int num) {
@@ -38,7 +40,9 @@ public class Solution {
         }
         v.sort(Comparator.comparingInt(a -> a[0]));
         List<Integer> ind = new ArrayList<>();
-        for (int i = 0; i < m; i++) ind.add(i);
+        for (int i = 0; i < m; i++) {
+            ind.add(i);
+        }
         ind.sort((a, b) -> queries[b][0] - queries[a][0]);
         TreeMap<Integer, Integer> values = new TreeMap<>();
         int j = n - 1;
