@@ -7,10 +7,11 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.NavigableMap;
 import java.util.TreeMap;
 
 public class Solution {
-    public void update(TreeMap<Integer, Integer> map, int num, int sum) {
+    private void update(NavigableMap<Integer, Integer> map, int num, int sum) {
         Map.Entry<Integer, Integer> entry = map.floorEntry(num);
         while (entry != null && entry.getValue() <= sum) {
             map.remove(entry.getKey());
@@ -23,7 +24,7 @@ public class Solution {
         }
     }
 
-    public int queryVal(TreeMap<Integer, Integer> map, int num) {
+    private int queryVal(NavigableMap<Integer, Integer> map, int num) {
         Map.Entry<Integer, Integer> entry = map.ceilingEntry(num);
         if (entry == null) {
             return -1;

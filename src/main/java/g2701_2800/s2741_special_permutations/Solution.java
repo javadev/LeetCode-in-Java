@@ -32,6 +32,7 @@ public class Solution {
                 count = (count + backtrack(i, mask | (1 << i))) % mod;
             }
         }
-        return memo[preIndex][mask] = count;
+        memo[preIndex][mask] = count;
+        return memo[preIndex][mask];
     }
 }
