@@ -23,13 +23,13 @@ public class Solution {
             return memo[preIndex][mask];
         }
         int count = 0;
-        int MOD = (int) 1e9 + 7;
+        int mod = (int) 1e9 + 7;
         for (int i = 0; i < n; i++) {
             if ((mask & (1 << i)) == 0
                     && (mask == 0
                             || nums[i] % nums[preIndex] == 0
                             || nums[preIndex] % nums[i] == 0)) {
-                count = (count + backtrack(i, mask | (1 << i))) % MOD;
+                count = (count + backtrack(i, mask | (1 << i))) % mod;
             }
         }
         return memo[preIndex][mask] = count;
