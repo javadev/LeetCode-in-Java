@@ -7,12 +7,10 @@ public class Solution {
         int n = nums.length;
         int[] dp = new int[n];
         long res = 0;
-
         for (int i = 0; i < n; i++) {
             dp[i] = nums[i];
             res += nums[i];
         }
-
         for (int i = 1; i < n; i++) {
             long sum = (long) i * x;
             for (int j = 0; j < n; j++) {
@@ -22,7 +20,6 @@ public class Solution {
             }
             res = Math.min(res, sum);
         }
-
         return res;
     }
 }
