@@ -6,8 +6,10 @@ import java.util.Arrays;
 
 public class Solution {
     public int sumImbalanceNumbers(int[] nums) {
-        int n = nums.length, s = 0;
-        int[] left = new int[n], seen = new int[n + 2];
+        int n = nums.length;
+        int s = 0;
+        int[] left = new int[n];
+        int[] seen = new int[n + 2];
         Arrays.fill(seen, -1);
         for (int i = 0; i < n; i++) {
             left[i] = Math.max(seen[nums[i]], seen[nums[i] + 1]);

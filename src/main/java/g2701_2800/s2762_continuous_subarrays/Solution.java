@@ -6,7 +6,9 @@ package g2701_2800.s2762_continuous_subarrays;
 public class Solution {
     public long continuousSubarrays(int[] nums) {
         long res = 1;
-        int lower = nums[0] - 2, higher = nums[0] + 2, j = 0;
+        int lower = nums[0] - 2;
+        int higher = nums[0] + 2;
+        int j = 0;
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] >= lower && nums[i] <= higher) {
                 lower = Math.max(lower, nums[i] - 2);

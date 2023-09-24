@@ -23,13 +23,13 @@ public class Solution {
             return 999;
         }
         int temp = 999;
-        int run_count = 0;
+        int runCount = 0;
         for (int i = ind; i < s.length(); i++) {
-            run_count = run_count * 2;
+            runCount = runCount * 2;
             if (s.charAt(i) == '1') {
-                run_count++;
+                runCount++;
             }
-            if (this.ispower(run_count) == true) {
+            if (this.ispower(runCount) == true) {
                 temp = Math.min(temp, 1 + this.backtrack(i + 1, s));
             }
         }
