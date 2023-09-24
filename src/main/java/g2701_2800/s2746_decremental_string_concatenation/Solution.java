@@ -17,7 +17,9 @@ public class Solution {
     }
 
     private int solve(int idx, char prevFirst, char prevLast, int n, String[] words) {
-        if (idx == n) return 0;
+        if (idx == n) {
+            return 0;
+        }
         if (dp[idx][prevFirst - 'a'][prevLast - 'a'] != null) {
             return dp[idx][prevFirst - 'a'][prevLast - 'a'];
         }
