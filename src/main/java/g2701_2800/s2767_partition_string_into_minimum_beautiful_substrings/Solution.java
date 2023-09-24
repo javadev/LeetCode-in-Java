@@ -9,10 +9,7 @@ public class Solution {
         while (pow < num) {
             pow = pow * 5;
         }
-        if (pow == num) {
-            return true;
-        }
-        return false;
+        return pow == num;
     }
 
     private int backtrack(int ind, String s) {
