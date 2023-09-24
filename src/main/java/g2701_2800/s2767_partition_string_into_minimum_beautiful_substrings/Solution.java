@@ -26,7 +26,7 @@ public class Solution {
             if (s.charAt(i) == '1') {
                 runCount++;
             }
-            if (this.ispower(runCount) == true) {
+            if (this.ispower(runCount)) {
                 temp = Math.min(temp, 1 + this.backtrack(i + 1, s));
             }
         }
