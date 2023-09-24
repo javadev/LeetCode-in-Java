@@ -20,13 +20,10 @@ public class Solution {
                     higher = Math.min(higher, nums[j] + 2);
                     j--;
                 }
-
                 j++;
             }
-
             res += i - j + 1;
         }
-
         return res;
     }
 }
