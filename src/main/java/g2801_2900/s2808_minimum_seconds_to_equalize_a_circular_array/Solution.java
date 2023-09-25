@@ -15,7 +15,6 @@ public class Solution {
             int v = nums.get(i);
             hm.computeIfAbsent(v, k -> new ArrayList<>()).add(i);
         }
-
         for (List<Integer> list : hm.values()) {
             if (list.size() > 1) {
                 int curr = (list.get(0) + n - list.get(list.size() - 1)) / 2;
