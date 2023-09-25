@@ -11,7 +11,7 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             if (nums[i] == 1) {
                 if (lastOne != -1) {
-                    ans = ans * (long) (i - lastOne) % mod;
+                    ans = ans * (i - lastOne) % mod;
                 }
                 lastOne = i;
             }

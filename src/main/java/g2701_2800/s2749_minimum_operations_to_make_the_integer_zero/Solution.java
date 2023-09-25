@@ -5,7 +5,7 @@ package g2701_2800.s2749_minimum_operations_to_make_the_integer_zero;
 public class Solution {
     public int makeTheIntegerZero(int num1, int num2) {
         for (int i = 0; i <= 60; i++) {
-            long target = (long) num1 - (long) num2 * i;
+            long target = num1 - (long) num2 * i;
             long noOfBits = Long.bitCount(target);
             if (i >= noOfBits && i <= target) {
                 return i;
