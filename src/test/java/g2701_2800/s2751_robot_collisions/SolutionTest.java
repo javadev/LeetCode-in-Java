@@ -34,4 +34,13 @@ class SolutionTest {
                                 new int[] {1, 2, 5, 6}, new int[] {10, 10, 11, 11}, "RLRL"),
                 equalTo(List.of()));
     }
+
+    @Test
+    void survivedRobotsHealths4() {
+        assertThat(
+                new Solution()
+                        .survivedRobotsHealths(
+                                new int[] {1, 40}, new int[] {10, 11}, "RL"),
+                equalTo(List.of(10)));
+    }
 }
