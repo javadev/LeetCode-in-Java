@@ -13,10 +13,7 @@ public class Solution {
         HashMap<Integer, List<Integer>> hm = new HashMap<>();
         for (int i = 0; i < n; i++) {
             int v = nums.get(i);
-            if (!hm.containsKey(v)) {
-                hm.put(v, new ArrayList<>());
-            }
-            hm.get(v).add(i);
+            hm.computeIfAbsent(v, k -> new ArrayList<>()).add(i);
         }
 
         for (List<Integer> list : hm.values()) {

@@ -4,7 +4,7 @@ package g2801_2900.s2806_account_balance_after_rounded_purchase;
 
 public class Solution {
     public int accountBalanceAfterPurchase(int purchaseAmount) {
-        int x = (int) Math.floor((purchaseAmount + 5) / 10) * 10;
+        int x = (int) ((purchaseAmount + 5) / (double) 10) * 10;
         return 100 - x;
     }
 }

@@ -36,7 +36,9 @@ public class Solution {
                 count = (count + solve(s, i + 1, digit, nextHasBound, nextIsZero)) % MOD;
             }
         }
-        return dp[i][prevDigit][hasBound][curIsZero] = count;
+
+        dp[i][prevDigit][hasBound][curIsZero] = count;
+        return dp[i][prevDigit][hasBound][curIsZero];
     }
 
     private int isStep(String s) {
