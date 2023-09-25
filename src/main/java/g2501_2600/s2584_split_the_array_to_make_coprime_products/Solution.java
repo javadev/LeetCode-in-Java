@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private final int[] divideTo = new int[(int) (1e6) + 1];
 
