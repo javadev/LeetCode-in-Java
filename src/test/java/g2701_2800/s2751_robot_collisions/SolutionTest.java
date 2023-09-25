@@ -38,9 +38,7 @@ class SolutionTest {
     @Test
     void survivedRobotsHealths4() {
         assertThat(
-                new Solution()
-                        .survivedRobotsHealths(
-                                new int[] {1, 40}, new int[] {10, 11}, "RL"),
+                new Solution().survivedRobotsHealths(new int[] {1, 40}, new int[] {10, 11}, "RL"),
                 equalTo(List.of(10)));
     }
 }
