@@ -16,4 +16,9 @@ class SolutionTest {
     void numberOfGoodSubarraySplits2() {
         assertThat(new Solution().numberOfGoodSubarraySplits(new int[] {0, 1, 0}), equalTo(1));
     }
+
+    @Test
+    void numberOfGoodSubarraySplits3() {
+        assertThat(new Solution().numberOfGoodSubarraySplits(new int[] {0, 0}), equalTo(0));
+    }
 }
