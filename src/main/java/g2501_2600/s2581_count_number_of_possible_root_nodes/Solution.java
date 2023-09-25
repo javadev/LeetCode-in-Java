@@ -6,6 +6,7 @@ package g2501_2600.s2581_count_number_of_possible_root_nodes;
 import java.util.LinkedList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public int rootCount(int[][] eg, int[][] gu, int k) {
         int n = eg.length + 1;
