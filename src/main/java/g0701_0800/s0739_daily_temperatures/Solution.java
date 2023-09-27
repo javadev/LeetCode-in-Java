@@ -1,7 +1,7 @@
 package g0701_0800.s0739_daily_temperatures;
 
 // #Medium #Top_100_Liked_Questions #Array #Stack #Monotonic_Stack #Programming_Skills_II_Day_6
-// #2022_03_25_Time_10_ms_(94.99%)_Space_118.3_MB_(70.21%)
+// #Big_O_Time_O(n)_Space_O(n) #2022_03_25_Time_10_ms_(94.99%)_Space_118.3_MB_(70.21%)
 
 @SuppressWarnings("java:S135")
 public class Solution {
