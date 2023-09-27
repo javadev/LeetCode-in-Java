@@ -1,6 +1,7 @@
 package g0401_0500.s0494_target_sum;
 
 // #Medium #Top_100_Liked_Questions #Array #Dynamic_Programming #Backtracking
+// #Big_O_Time_O(n*(sum+s))_Space_O(n*(sum+s))
 // #2022_07_21_Time_9_ms_(79.99%)_Space_45.2_MB_(32.79%)
 
 public class Solution {
