@@ -12,4 +12,11 @@ class SolutionTest {
                 new Solution().maxSumOfThreeSubarrays(new int[] {1, 2, 1, 2, 6, 7, 5, 1}, 2),
                 equalTo(new int[] {0, 3, 5}));
     }
+
+    @Test
+    void maxSumOfThreeSubarrays2() {
+        assertThat(
+                new Solution().maxSumOfThreeSubarrays(new int[] {1, 2, 1, 2, 1, 2, 1, 2, 1}, 2),
+                equalTo(new int[] {0, 2, 4}));
+    }
 }
