@@ -13,4 +13,11 @@ class SolutionTest {
                 new Solution().fallingSquares(new int[][] {{1, 2}, {2, 3}, {6, 1}}),
                 equalTo(Arrays.asList(2, 5, 5)));
     }
+
+    @Test
+    void fallingSquares2() {
+        assertThat(
+                new Solution().fallingSquares(new int[][] {{100, 100}, {200, 100}}),
+                equalTo(Arrays.asList(100, 100)));
+    }
 }
