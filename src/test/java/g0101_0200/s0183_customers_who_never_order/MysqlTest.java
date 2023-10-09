@@ -22,14 +22,14 @@ import org.zapodot.junit.db.common.Engine;
         engine = Engine.H2,
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
-                "CREATE TABLE Customers(id INTEGER PRIMARY KEY, name VARCHAR); " +
-                    "INSERT INTO Customers(id, name) VALUES (1, 'Joe'); " +
-                    "INSERT INTO Customers(id, name) VALUES (2, 'Henry'); " +
-                    "INSERT INTO Customers(id, name) VALUES (3, 'Sam'); " +
-                    "INSERT INTO Customers(id, name) VALUES (4, 'Max'); " +
-                    "CREATE TABLE Orders(id INTEGER, customerId INTEGER); " +
-                    "INSERT INTO Orders(id, customerId) VALUES (1, 3); " +
-                    "INSERT INTO Orders(id, customerId) VALUES (2, 1); ")
+                "CREATE TABLE Customers(id INTEGER PRIMARY KEY, name VARCHAR); "
+                        + "INSERT INTO Customers(id, name) VALUES (1, 'Joe'); "
+                        + "INSERT INTO Customers(id, name) VALUES (2, 'Henry'); "
+                        + "INSERT INTO Customers(id, name) VALUES (3, 'Sam'); "
+                        + "INSERT INTO Customers(id, name) VALUES (4, 'Max'); "
+                        + "CREATE TABLE Orders(id INTEGER, customerId INTEGER); "
+                        + "INSERT INTO Orders(id, customerId) VALUES (1, 3); "
+                        + "INSERT INTO Orders(id, customerId) VALUES (2, 1); ")
 class MysqlTest {
     @Test
     void testScript(@EmbeddedDatabase DataSource dataSource)
@@ -46,9 +46,9 @@ class MysqlTest {
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("Henry"))
+                assertThat(resultSet.getNString(1), equalTo("Henry"));
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("Max"))
+                assertThat(resultSet.getNString(1), equalTo("Max"));
                 assertThat(resultSet.next(), equalTo(false));
             }
         }
