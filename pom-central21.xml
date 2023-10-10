@@ -113,25 +113,19 @@
                         <docletArtifact>
                             <groupId>org.jdrupes.mdoclet</groupId>
                             <artifactId>doclet</artifactId>
-                            <version>4.1.0</version>
+                            <version>3.1.0</version>
                         </docletArtifact>
                         <docletArtifact>
                             <groupId>com.vladsch.flexmark</groupId>
                             <artifactId>flexmark-all</artifactId>
-                            <version>0.64.8</version>
+                            <version>0.64.0</version>
                         </docletArtifact>
                     </docletArtifacts>
                     <additionalDependencies>
                     </additionalDependencies>
                     <additionalJOptions>
-                        <additionalJOption>-J--add-exports=jdk.javadoc/jdk.javadoc.internal.doclets.toolkit=ALL-UNNAMED</additionalJOption>
                         <additionalJOption>-J--add-exports=jdk.javadoc/jdk.javadoc.internal.tool=ALL-UNNAMED</additionalJOption>
-                        <additionalJOption>-J--add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED</additionalJOption>
-                        <additionalJOption>-J--add-exports=jdk.compiler/com.sun.tools.javac.model=ALL-UNNAMED</additionalJOption>
                         <additionalJOption>-J--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED</additionalJOption>
-                        <additionalJOption>-J--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED</additionalJOption>
-                        <additionalJOption>-J--add-exports=jdk.compiler/com.sun.tools.doclint=ALL-UNNAMED</additionalJOption>
-                        <additionalJOption>-J--add-exports=java.base/jdk.internal.misc=ALL-UNNAMED</additionalJOption>
                     </additionalJOptions>
                 </configuration>
             </plugin>
