@@ -4,7 +4,6 @@ package g1301_1400.s1333_filter_restaurants_by_vegan_friendly_price_and_distance
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Solution {
     public List<Integer> filterRestaurants(
@@ -18,6 +17,6 @@ public class Solution {
             }
         }
         list.sort((a, b) -> b[1] - a[1] == 0 ? b[0] - a[0] : b[1] - a[1]);
-        return list.stream().map(restaurant -> restaurant[0]).collect(Collectors.toList());
+        return list.stream().map(restaurant -> restaurant[0]).toList();
     }
 }
