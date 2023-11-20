@@ -39,7 +39,8 @@ public class Solution {
     }
 
     private ListNode revList(ListNode head) {
-        ListNode prev = null, nxt = null;
+        ListNode prev = null;
+        ListNode nxt = null;
         ListNode current = head;
         while (current != null) {
             nxt = current.next;

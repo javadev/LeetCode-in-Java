@@ -10,16 +10,27 @@ public class Solution {
     private static int[][] moves = new int[][] {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
     public int maximumSafenessFactor(List<List<Integer>> grid) {
-        final int yLen = grid.size(), xLen = grid.get(0).size();
+        final int yLen = grid.size();
+        final int xLen = grid.get(0).size();
         if (grid.get(0).get(0) == 1 || grid.get(yLen - 1).get(xLen - 1) == 1) {
             return 0;
         }
         int[][] secure = new int[yLen][xLen];
-        int[] deque = new int[yLen * xLen], nDeque = new int[yLen * xLen], tmpDeque;
+        int[] deque = new int[yLen * xLen];
+        int[] nDeque = new int[yLen * xLen];
+        int[] tmpDeque;
         int[] queue = new int[yLen * xLen];
         int[] root = new int[yLen * xLen];
-        int head = -1, tail = -1, qIdx = -1, end = yLen * xLen - 1;
-        int curY, curX, nextY, nextX, curID, nextID;
+        int head = -1;
+        int tail = -1;
+        int qIdx = -1;
+        int end = yLen * xLen - 1;
+        int curY;
+        int curX;
+        int nextY;
+        int nextX;
+        int curID;
+        int nextID;
         for (int y = 0; y < yLen; y++) {
             Arrays.fill(secure[y], -1);
             for (int x = 0; x < xLen; x++) {
