@@ -14,7 +14,8 @@ public class Solution {
         }
         Arrays.sort(nums, (a, b) -> a[1] - b[1]);
         int[] dp = new int[n + 1];
-        long sum1 = 0, sum2 = 0;
+        long sum1 = 0;
+        long sum2 = 0;
         for (int i = 0; i < n; i++) {
             sum1 += nums[i][0];
             sum2 += nums[i][1];

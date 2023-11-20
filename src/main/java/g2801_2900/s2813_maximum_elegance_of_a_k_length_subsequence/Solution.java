@@ -12,7 +12,8 @@ public class Solution {
         int n = items.length;
         boolean[] vis = new boolean[n];
         ArrayDeque<Long> arr = new ArrayDeque<>();
-        long distinct = 0, sum = 0;
+        long distinct = 0;
+        long sum = 0;
         for (int i = 0; i < k; i++) {
             sum += items[i][0];
             if (vis[items[i][1] - 1]) {

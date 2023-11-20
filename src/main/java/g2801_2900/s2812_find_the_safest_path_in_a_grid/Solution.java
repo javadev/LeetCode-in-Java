@@ -41,7 +41,8 @@ public class Solution {
                 }
             }
         }
-        int start = 0, stop = qIdx;
+        int start = 0;
+        int stop = qIdx;
         for (int t = 1; tail > -1; t++) {
             tmpDeque = deque;
             deque = nDeque;
