@@ -96,6 +96,7 @@ public class Solution {
         if (idx == root[idx]) {
             return idx;
         }
-        return root[idx] = find(root, root[idx]);
+        root[idx] = find(root, root[idx]);
+        return root[idx];
     }
 }
