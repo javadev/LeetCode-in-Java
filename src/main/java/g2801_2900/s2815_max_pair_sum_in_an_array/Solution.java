@@ -9,7 +9,8 @@ import java.util.PriorityQueue;
 
 public class Solution {
     public int maxSum(int[] nums) {
-        int maxSum = -1; // what we'll return
+        // what we'll return
+        int maxSum = -1;
         Map<Integer, PriorityQueue<Integer>> maximumDigitToNumber = new HashMap<>();
         for (int i = 1; i <= 9; ++i) {
             maximumDigitToNumber.put(i, new PriorityQueue<Integer>(Comparator.reverseOrder()));

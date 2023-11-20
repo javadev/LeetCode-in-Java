@@ -3,11 +3,15 @@ package g2801_2900.s2818_apply_operations_to_maximize_score;
 // #Hard #Array #Math #Greedy #Stack #Monotonic_Stack #Number_Theory
 // #2023_11_20_Time_94_ms_(100.00%)_Space_58.7_MB_(59.26%)
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.List;
+import java.util.PriorityQueue;
 
 public class Solution {
     private static final int N = 100000;
-    private static final int[] primeScores = computePrimeScores();
+    private static final int[] PRIME_SCORES = computePrimeScores();
     private static final int MOD = 1_000_000_000 + 7;
 
     public int maximumScore(List<Integer> nums, int k) {
@@ -20,7 +24,7 @@ public class Solution {
         for (int i = 0; i <= nums.size(); i++) {
             int score = Integer.MAX_VALUE;
             if (i < nums.size()) {
-                score = primeScores[nums.get(i)];
+                score = PRIME_SCORES[nums.get(i)];
             }
             // when an element is poped, its right bound is confirmed: (i - left + 1) * (right - i +
             // 1)
