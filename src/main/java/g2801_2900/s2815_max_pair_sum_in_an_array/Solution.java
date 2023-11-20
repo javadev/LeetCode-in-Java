@@ -13,7 +13,7 @@ public class Solution {
         int maxSum = -1;
         Map<Integer, PriorityQueue<Integer>> maximumDigitToNumber = new HashMap<>();
         for (int i = 1; i <= 9; ++i) {
-            maximumDigitToNumber.put(i, new PriorityQueue<Integer>(Comparator.reverseOrder()));
+            maximumDigitToNumber.put(i, new PriorityQueue<>(Comparator.reverseOrder()));
         }
         for (int n : nums) {
             maximumDigitToNumber.get(getMaximumDigit(n)).add(n);

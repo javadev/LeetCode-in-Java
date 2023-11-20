@@ -6,8 +6,9 @@ package g2801_2900.s2812_find_the_safest_path_in_a_grid;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("java:S6541")
 public class Solution {
-    private static int[][] moves = new int[][] {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+    private static final int[][] MOVES = new int[][] {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
     public int maximumSafenessFactor(List<List<Integer>> grid) {
         final int yLen = grid.size();
@@ -53,7 +54,7 @@ public class Solution {
             for (; head >= 0; head--) {
                 curY = deque[head] / xLen;
                 curX = deque[head] % xLen;
-                for (int[] move : moves) {
+                for (int[] move : MOVES) {
                     nextY = curY + move[0];
                     nextX = curX + move[1];
                     if (nextY >= 0
@@ -72,7 +73,7 @@ public class Solution {
             curY = queue[qIdx] / xLen;
             curX = queue[qIdx] % xLen;
             curID = curY * xLen + curX;
-            for (int[] move : moves) {
+            for (int[] move : MOVES) {
                 nextY = curY + move[0];
                 nextX = curX + move[1];
                 if (nextY >= 0

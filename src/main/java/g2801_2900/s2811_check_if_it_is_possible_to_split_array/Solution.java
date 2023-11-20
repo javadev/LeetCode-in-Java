@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Solution {
     public boolean canSplitArray(List<Integer> nums, int m) {
-        if (nums.size() < 3 && nums.size() >= 1) {
+        if (nums.size() < 3 && !nums.isEmpty()) {
             return true;
         }
         boolean ans = false;
