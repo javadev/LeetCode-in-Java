@@ -24,7 +24,7 @@ test {
 }
 
 group = 'com.github.javadev'
-version = '1.25-SNAPSHOT'
+version = '1.26-SNAPSHOT'
 description = 'leetcode-in-java'
 java.sourceCompatibility = JavaVersion.VERSION_17
 
