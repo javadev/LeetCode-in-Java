@@ -28,7 +28,6 @@ public class Solution {
                 // Check if nums2 value is less then nums1 value;
                 // Increment "j"
                 j++;
-
             } else {
                 // Check if nums1 value is equals to nums2 value;
                 // Dump into nums1 and increment k, increment i & increment j as well;
