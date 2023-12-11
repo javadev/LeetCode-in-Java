@@ -9,7 +9,7 @@ public class Solution {
             return (int) ((long) n * (n + 1) % mod / 2);
         }
         long toChange = n - (long) (k / 2);
-        long sum = (((long) n * ((long) n + 1)) / 2) % mod;
+        long sum = ((n * ((long) n + 1)) / 2) % mod;
         long remain = (long) k - ((k / 2) + 1);
         return (int) ((sum + (toChange * remain) % mod) % mod);
     }
