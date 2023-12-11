@@ -4,6 +4,7 @@ package g2801_2900.s2827_number_of_beautiful_integers_in_the_range;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S107")
 public class Solution {
     private int[][][][][] dp;
     private int maxLength;
