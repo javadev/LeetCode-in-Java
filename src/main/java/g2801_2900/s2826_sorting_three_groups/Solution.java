@@ -18,7 +18,9 @@ public class Solution {
 
             locMax++;
             arr[value - 1] = locMax;
-            if (locMax > max) max = locMax;
+            if (locMax > max) {
+                max = locMax;
+            }
         }
         return n - max;
     }
