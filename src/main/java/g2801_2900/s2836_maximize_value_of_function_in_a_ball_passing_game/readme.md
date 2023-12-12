@@ -18,47 +18,13 @@ Return _an integer denoting the **maximum** value of the function._
 
 **Example 1:**
 
-Pass Number
-
-Sender ID
-
-Receiver ID
-
-x + Receiver IDs
-
-2
-
-1
-
-2
-
-1
-
-3
-
-2
-
-1
-
-0
-
-3
-
-3
-
-0
-
-2
-
-5
-
-4
-
-2
-
-1
-
-6
+| Pass Number | Sender ID | Receiver ID | x + Receiver IDs
+|-------------|-----------|-------------|-----------------
+| <!-- --> | <!-- --> | <!-- --> | 2
+| 1 | 2 | 1 | 3
+| 2 | 1 | 0 | 3
+| 3 | 0 | 2 | 5
+| 4 | 2 | 1 | 6
 
 **Input:** receiver = [2,0,1], k = 4
 
@@ -68,39 +34,12 @@ x + Receiver IDs
 
 **Example 2:**
 
-Pass Number
-
-Sender ID
-
-Receiver ID
-
-x + Receiver IDs
-
-4
-
-1
-
-4
-
-3
-
-7
-
-2
-
-3
-
-2
-
-9
-
-3
-
-2
-
-1
-
-10
+| Pass Number | Sender ID | Receiver ID | x + Receiver IDs
+|-------------|-----------|-------------|-----------------
+| <!-- --> | <!-- --> | <!-- --> | 4
+| 1 | 4 | 3 | 7
+| 2 | 3 | 2 | 9
+| 3 | 2 | 1 | 10
 
 **Input:** receiver = [1,1,1,2,3], k = 3
 
