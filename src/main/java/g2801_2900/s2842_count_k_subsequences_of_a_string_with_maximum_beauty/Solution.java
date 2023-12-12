@@ -13,7 +13,9 @@ public class Solution {
             count[s.charAt(i) - 'a']++;
         }
         Arrays.sort(count);
-        if (k > 26 || count[26 - k] == 0) return 0;
+        if (k > 26 || count[26 - k] == 0) {
+            return 0;
+        }
         long res = 1;
         long comb = 1;
         long mod = (long) 1e9 + 7;
