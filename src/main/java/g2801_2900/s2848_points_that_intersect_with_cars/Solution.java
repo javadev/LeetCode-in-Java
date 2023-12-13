@@ -13,8 +13,12 @@ public class Solution {
             int num1 = list.get(0);
             int num2 = list.get(1);
 
-            if (num1 < min) min = num1;
-            if (num2 > max) max = num2;
+            if (num1 < min) {
+                min = num1;
+            }
+            if (num2 > max) {
+                max = num2;
+            }
 
             count[num1]--;
             count[num2 + 1]++;

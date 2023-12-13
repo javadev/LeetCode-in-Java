@@ -20,7 +20,8 @@ public class Solution {
             return false;
         }
 
-        int leftSum = 0, rightSum = 0;
+        int leftSum = 0;
+        int rightSum = 0;
         for (int i = 0, j = n - 1; i < j; i++, j--) {
             leftSum += str.charAt(i) - '0';
             rightSum += str.charAt(j) - '0';
