@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("java:S107")
 public class Solution {
     static class Node {
         int v;
@@ -49,14 +50,14 @@ public class Solution {
         for (int i = 0; i < queryCount; i++) {
             int src = queries[i][0];
             int dest = queries[i][1];
-            int lcaNode = lca(n, src, dest, up, height, level);
+            int lcaNode = lca(src, dest, up, height, level);
             res[i] = processResult(weightFreq[src], weightFreq[dest], weightFreq[lcaNode]);
         }
 
         return res;
     }
 
-    public int lca(int n, int src, int dest, int[][] up, int height, int[] level) {
+    public int lca(int src, int dest, int[][] up, int height, int[] level) {
         int curr1 = src;
         int curr2 = dest;
         int minlevel;

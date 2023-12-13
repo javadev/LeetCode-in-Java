@@ -8,7 +8,6 @@ import java.util.Map;
 
 public class Solution {
     public long countInterestingSubarrays(List<Integer> nums, int modulo, int k) {
-        int n = nums.size();
         int prefixCnt = 0;
         Map<Integer, Integer> freq = new HashMap<>();
         freq.put(0, 1);

@@ -22,10 +22,8 @@ public class Solution {
                 if (five == 0) {
                     five++;
                 }
-            } else if (number[i] == '2' || number[i] == '7') {
-                if (five == 1) {
-                    return n - i - 2;
-                }
+            } else if ((number[i] == '2' || number[i] == '7') && five == 1) {
+                return n - i - 2;
             }
         }
         if (zero == 1) {
