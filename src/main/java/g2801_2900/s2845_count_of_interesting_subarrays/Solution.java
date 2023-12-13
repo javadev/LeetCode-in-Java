@@ -20,7 +20,6 @@ public class Solution {
             interestingSubarrays += freq.getOrDefault(expectedPrefix, 0);
             freq.put(prefixCnt % modulo, freq.getOrDefault(prefixCnt % modulo, 0) + 1);
         }
-
         return interestingSubarrays;
     }
 }
