@@ -9,7 +9,7 @@ import java.util.List;
 
 @SuppressWarnings("java:S107")
 public class Solution {
-    static class Node {
+    private static class Node {
         int v;
         int w;
 
@@ -36,7 +36,6 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             up[i][0] = parent[i];
         }
-
         for (int i = 1; i < height; i++) {
             for (int j = 0; j < n; j++) {
                 if (up[j][i - 1] == -1) {
@@ -46,18 +45,16 @@ public class Solution {
                 up[j][i] = up[up[j][i - 1]][i - 1];
             }
         }
-
         for (int i = 0; i < queryCount; i++) {
             int src = queries[i][0];
             int dest = queries[i][1];
             int lcaNode = lca(src, dest, up, height, level);
             res[i] = processResult(weightFreq[src], weightFreq[dest], weightFreq[lcaNode]);
         }
-
         return res;
     }
 
-    public int lca(int src, int dest, int[][] up, int height, int[] level) {
+    private int lca(int src, int dest, int[][] up, int height, int[] level) {
         int curr1 = src;
         int curr2 = dest;
         int minlevel;
@@ -88,7 +85,7 @@ public class Solution {
         return getKthAncestor(curr1, minlevel - l + 1, up, height);
     }
 
-    public int getKthAncestor(int node, int k, int[][] up, int height) {
+    private int getKthAncestor(int node, int k, int[][] up, int height) {
         int curr = node;
         for (int i = 0; i < height && k >> i != 0; i++) {
             if (((1 << i) & k) != 0) {
@@ -115,7 +112,7 @@ public class Solution {
         return pathlen - max;
     }
 
-    public void dfs(
+    private void dfs(
             List<List<Node>> graph,
             int src,
             int currlevel,
