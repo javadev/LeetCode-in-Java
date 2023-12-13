@@ -13,13 +13,12 @@ public class Solution {
         return count;
     }
 
-    public boolean isSymmetric(int num) {
+    private boolean isSymmetric(int num) {
         String str = String.valueOf(num);
         int n = str.length();
         if (n % 2 != 0) {
             return false;
         }
-
         int leftSum = 0;
         int rightSum = 0;
         for (int i = 0, j = n - 1; i < j; i++, j--) {
