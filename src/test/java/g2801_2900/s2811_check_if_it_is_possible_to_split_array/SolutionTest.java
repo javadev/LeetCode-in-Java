@@ -21,4 +21,9 @@ class SolutionTest {
     void canSplitArray3() {
         assertThat(new Solution().canSplitArray(Arrays.asList(2, 3, 3, 2, 3), 6), equalTo(true));
     }
+
+    @Test
+    void canSplitArray4() {
+        assertThat(new Solution().canSplitArray(Arrays.asList(1), 1), equalTo(true));
+    }
 }
