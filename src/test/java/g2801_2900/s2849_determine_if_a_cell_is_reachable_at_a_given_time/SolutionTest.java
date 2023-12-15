@@ -15,4 +15,14 @@ class SolutionTest {
     void isReachableAtTime2() {
         assertThat(new Solution().isReachableAtTime(3, 1, 7, 3, 3), equalTo(false));
     }
+
+    @Test
+    void isReachableAtTime3() {
+        assertThat(new Solution().isReachableAtTime(3, 1, 3, 1, 3), equalTo(true));
+    }
+
+    @Test
+    void isReachableAtTime4() {
+        assertThat(new Solution().isReachableAtTime(3, 1, 3, 1, 1), equalTo(false));
+    }
 }
