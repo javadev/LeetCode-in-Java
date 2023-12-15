@@ -17,7 +17,7 @@ public class Solution {
         } else {
             int k;
             for (k = i + 1; k < nums.size(); k++) {
-                if (!(nums.get(k) > nums.get(k - 1))) {
+                if (nums.get(k) <= nums.get(k - 1)) {
                     break;
                 }
             }

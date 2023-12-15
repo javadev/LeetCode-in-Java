@@ -20,7 +20,8 @@ public class Solution {
         s = "#" + s;
         p = "#" + p;
         int[] ne = new int[n + 1];
-        for (int i = 2, j = 0; i <= n; i++) {
+        int j = 0;
+        for (int i = 2; i <= n; i++) {
             while (j > 0 && p.charAt(i) != p.charAt(j + 1)) {
                 j = ne[j];
             }
@@ -31,7 +32,8 @@ public class Solution {
         }
 
         int cnt = 0;
-        for (int i = 1, j = 0; i <= m; i++) {
+        j = 0;
+        for (int i = 1; i <= m; i++) {
             while (j > 0 && s.charAt(i) != p.charAt(j + 1)) {
                 j = ne[j];
             }
