@@ -30,6 +30,6 @@ public class Solution {
 
     private long hash(int x1, int y1) {
         long r = (long) 1e8;
-        return (long) x1 * r + (long) y1;
+        return x1 * r + y1;
     }
 }

@@ -47,7 +47,7 @@ public class Solution {
         long paiSa = 0L;
         for (int i = 0; i < n; i++) {
             long require = ((long) composition.get(idx).get(i)) * (mid);
-            long have = (long) stock.get(i);
+            long have = stock.get(i);
             long diff = require - have;
             if (diff > 0) {
                 paiSa += diff * ((long) cost.get(i));
