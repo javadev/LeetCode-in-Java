@@ -15,7 +15,8 @@ public class Solution {
             nexts[i] = new ArrayList<>();
         }
         for (int[] edge : edges) {
-            int u = edge[0], v = edge[1];
+            int u = edge[0];
+            int v = edge[1];
             nexts[u].add(new int[] {1, v});
             nexts[v].add(new int[] {-1, u});
         }
