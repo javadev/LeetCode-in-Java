@@ -23,9 +23,11 @@ public class Solution {
         dp[0] = 0;
         dp[1] = Math.min(x, diffs.get(1) - diffs.get(0));
         for (int i = 2; i < m; i++) {
-            if ((i & 1) == 1)
+            if ((i & 1) == 1) {
                 dp[i] = Math.min(dp[i - 1] + x, dp[i - 2] + diffs.get(i) - diffs.get(i - 1));
-            else dp[i] = Math.min(dp[i - 1], dp[i - 2] + diffs.get(i) - diffs.get(i - 1));
+            } else {
+                dp[i] = Math.min(dp[i - 1], dp[i - 2] + diffs.get(i) - diffs.get(i - 1));
+            }
         }
         return dp[m - 1];
     }

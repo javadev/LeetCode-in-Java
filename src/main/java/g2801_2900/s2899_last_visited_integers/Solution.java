@@ -16,8 +16,11 @@ public class Solution {
                 prevEle.add(words.get(i));
                 continue;
             }
-            if (count >= prevEle.size()) res.add(-1);
-            else res.add(Integer.parseInt(prevEle.get(prevEle.size() - count - 1)));
+            if (count >= prevEle.size()) {
+                res.add(-1);
+            } else {
+                res.add(Integer.parseInt(prevEle.get(prevEle.size() - count - 1)));
+            }
             count++;
         }
         return res;
