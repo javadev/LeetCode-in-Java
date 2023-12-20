@@ -6,6 +6,7 @@ package g2801_2900.s2900_longest_unequal_adjacent_groups_subsequence_i;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S1172")
 public class Solution {
     public List<String> getWordsInLongestSubsequence(int n, String[] words, int[] groups) {
         List<String> ans = new ArrayList<>();
