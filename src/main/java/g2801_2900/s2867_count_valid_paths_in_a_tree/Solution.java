@@ -13,32 +13,31 @@ public class Solution {
 
     private boolean[] preparePrime(int n) {
         // Sieve of Eratosthenes <3
-        boolean[] isPrime = new boolean[n + 1];
-        long paths = 0;
+        boolean[] isPrimeLocal = new boolean[n + 1];
         for (int i = 2; i < n + 1; i++) {
-            isPrime[i] = true;
+            isPrimeLocal[i] = true;
         }
         for (int i = 2; i <= n / 2; i++) {
             for (int j = 2 * i; j < n + 1; j += i) {
-                isPrime[j] = false;
+                isPrimeLocal[j] = false;
             }
         }
-        return isPrime;
+        return isPrimeLocal;
     }
 
     private List<Integer>[] prepareTree(int n, int[][] edges) {
-        List<Integer>[] treeEdges = new List[n + 1];
+        List<Integer>[] treeEdgesLocal = new List[n + 1];
         for (int[] edge : edges) {
-            if (treeEdges[edge[0]] == null) {
-                treeEdges[edge[0]] = new ArrayList<>();
+            if (treeEdgesLocal[edge[0]] == null) {
+                treeEdgesLocal[edge[0]] = new ArrayList<>();
             }
-            treeEdges[edge[0]].add(edge[1]);
-            if (treeEdges[edge[1]] == null) {
-                treeEdges[edge[1]] = new ArrayList<>();
+            treeEdgesLocal[edge[0]].add(edge[1]);
+            if (treeEdgesLocal[edge[1]] == null) {
+                treeEdgesLocal[edge[1]] = new ArrayList<>();
             }
-            treeEdges[edge[1]].add(edge[0]);
+            treeEdgesLocal[edge[1]].add(edge[0]);
         }
-        return treeEdges;
+        return treeEdgesLocal;
     }
 
     private long[] countPathDfs(int node, int parent) {
