@@ -45,7 +45,6 @@ public class Solution {
                 leftSum[i] += leftSum[prevSmallerIdx];
             }
         }
-
         long[] rightSum = new long[n];
         rightSum[n - 1] = mH.get(n - 1);
         for (int i = n - 2; i >= 0; i--) {
@@ -61,7 +60,6 @@ public class Solution {
             long totalSum = leftSum[i] + rightSum[i] - mH.get(i);
             ans = Math.max(ans, totalSum);
         }
-
         return ans;
     }
 }
