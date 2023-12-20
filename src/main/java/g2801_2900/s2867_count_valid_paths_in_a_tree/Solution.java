@@ -6,13 +6,14 @@ package g2801_2900.s2867_count_valid_paths_in_a_tree;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private boolean[] isPrime;
     private List<Integer>[] treeEdges;
     private long r;
 
     private boolean[] preparePrime(int n) {
-        // Sieve of Eratosthenes <3
+        // Sieve of Eratosthenes < 3
         boolean[] isPrimeLocal = new boolean[n + 1];
         for (int i = 2; i < n + 1; i++) {
             isPrimeLocal[i] = true;
@@ -42,12 +43,10 @@ public class Solution {
 
     private long[] countPathDfs(int node, int parent) {
         long[] v = new long[] {isPrime[node] ? 0 : 1, isPrime[node] ? 1 : 0};
-
         List<Integer> edges = treeEdges[node];
         if (edges == null) {
             return v;
         }
-
         for (Integer neigh : edges) {
             if (neigh == parent) {
                 continue;
