@@ -15,4 +15,9 @@ class SolutionTest {
     void maxSubarrays2() {
         assertThat(new Solution().maxSubarrays(new int[] {5, 7, 1, 3}), equalTo(1));
     }
+
+    @Test
+    void maxSubarrays3() {
+        assertThat(new Solution().maxSubarrays(new int[] {5}), equalTo(1));
+    }
 }
