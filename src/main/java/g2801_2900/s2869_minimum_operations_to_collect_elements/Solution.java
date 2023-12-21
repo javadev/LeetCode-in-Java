@@ -26,7 +26,7 @@ public class Solution {
         return fin;
     }
 
-    static class Pair {
+    private static class Pair {
         boolean isVisited;
         int totalVisitedTillNow;
 
