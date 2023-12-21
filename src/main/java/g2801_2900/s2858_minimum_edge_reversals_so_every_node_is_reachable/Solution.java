@@ -8,6 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public int[] minEdgeReversals(int n, int[][] edges) {
         List<int[]>[] nexts = new List[n];
