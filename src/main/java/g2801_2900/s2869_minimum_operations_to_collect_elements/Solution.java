@@ -17,9 +17,7 @@ public class Solution {
         }
         int fin = -1;
         for (Pair pair : visited) {
-            if (pair != null && !pair.isVisited) {
-                return -1;
-            } else if (pair != null) {
+            if (pair != null) {
                 fin = Math.max(fin, pair.totalVisitedTillNow);
             }
         }
