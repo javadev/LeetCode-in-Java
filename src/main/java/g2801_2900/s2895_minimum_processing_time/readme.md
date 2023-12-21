@@ -32,7 +32,13 @@ Hence, it can be shown that the minimum time taken to execute all the tasks is 1
 
 **Explanation:**
 
-It's optimal to assign the tasks at indexes 1, 4, 5, 6 to the first processor which becomes available at time = 10, and the tasks at indexes 0, 2, 3, 7 to the second processor which becomes available at time = 20. Time taken by the first processor to finish execution of all tasks = max(10 + 3, 10 + 5, 10 + 8, 10 + 4) = 18. Time taken by the second processor to finish execution of all tasks = max(20 + 2, 20 + 1, 20 + 2, 20 + 3) = 23. Hence, it can be shown that the minimum time taken to execute all the tasks is 23. 
+It's optimal to assign the tasks at indexes 1, 4, 5, 6 to the first processor which becomes available at time = 10, and the tasks at indexes 0, 2, 3, 7 to the second processor which becomes available at time = 20.
+
+Time taken by the first processor to finish execution of all tasks = max(10 + 3, 10 + 5, 10 + 8, 10 + 4) = 18.
+
+Time taken by the second processor to finish execution of all tasks = max(20 + 2, 20 + 1, 20 + 2, 20 + 3) = 23.
+
+Hence, it can be shown that the minimum time taken to execute all the tasks is 23. 
 
 **Constraints:**
 
