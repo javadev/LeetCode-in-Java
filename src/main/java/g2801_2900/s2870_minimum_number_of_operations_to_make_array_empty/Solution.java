@@ -23,8 +23,6 @@ public class Solution {
                 return -1;
             }
             min += Math.ceil(count / (3 * 1.0));
-            i--;
-            i++;
         }
         return min;
     }
