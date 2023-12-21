@@ -23,7 +23,10 @@ class SolutionTest {
 
     @Test
     void maximumTripletValue4() {
-        assertThat(new Solution().maximumTripletValue(
-            new int[] {8, 6, 3, 13, 2, 12, 19, 5, 19, 6, 10, 11, 9}), equalTo(266L));
+        assertThat(
+                new Solution()
+                        .maximumTripletValue(
+                                new int[] {8, 6, 3, 13, 2, 12, 19, 5, 19, 6, 10, 11, 9}),
+                equalTo(266L));
     }
 }
