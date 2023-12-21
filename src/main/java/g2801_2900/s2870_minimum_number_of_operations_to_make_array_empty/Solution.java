@@ -11,7 +11,8 @@ public class Solution {
         int count;
         int min = 0;
         int current;
-        for (int i = 0; i < nums.length; i++) {
+        int i = 0;
+        while (i < nums.length) {
             current = nums[i];
             count = 0;
             while (i < nums.length && current == nums[i]) {
@@ -23,6 +24,7 @@ public class Solution {
             }
             min += Math.ceil(count / (3 * 1.0));
             i--;
+            i++;
         }
         return min;
     }
