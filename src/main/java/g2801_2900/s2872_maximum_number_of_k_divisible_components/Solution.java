@@ -1,6 +1,6 @@
 package g2801_2900.s2872_maximum_number_of_k_divisible_components;
 
-// #Hard #Dynamic_Programming #Tree #Depth_First_Search
+// #Hard #Dynamic_Programming #Depth_First_Search #Tree
 // #2023_12_21_Time_24_ms_(93.51%)_Space_65.3_MB_(19.48%)
 
 import java.util.ArrayList;

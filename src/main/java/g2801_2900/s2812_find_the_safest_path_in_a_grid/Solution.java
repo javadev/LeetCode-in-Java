@@ -1,6 +1,6 @@
 package g2801_2900.s2812_find_the_safest_path_in_a_grid;
 
-// #Medium #Array #Binary_Search #Matrix #Union_Find #Breadth_First_Search
+// #Medium #Array #Breadth_First_Search #Binary_Search #Matrix #Union_Find
 // #2023_11_20_Time_57_ms_(100.00%)_Space_65.3_MB_(77.00%)
 
 import java.util.Arrays;
