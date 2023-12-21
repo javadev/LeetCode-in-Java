@@ -8,7 +8,9 @@ import java.util.Arrays;
 public class Solution {
     public int minOperations(int[] nums) {
         Arrays.sort(nums);
-        int count, min = 0, current;
+        int count;
+        int min = 0;
+        int current;
         for (int i = 0; i < nums.length; i++) {
             current = nums[i];
             count = 0;
