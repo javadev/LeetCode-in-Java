@@ -22,7 +22,7 @@ public class Solution {
             if (count == 1) {
                 return -1;
             }
-            min += Math.ceil(count / (3 * 1.0));
+            min += (int) Math.ceil(count / (3 * 1.0));
         }
         return min;
     }
