@@ -20,4 +20,9 @@ class SolutionTest {
     void minSizeSubarray3() {
         assertThat(new Solution().minSizeSubarray(new int[] {2, 4, 6, 8}, 3), equalTo(-1));
     }
+
+    @Test
+    void minSizeSubarray4() {
+        assertThat(new Solution().minSizeSubarray(new int[] {0}, 1), equalTo(-1));
+    }
 }
