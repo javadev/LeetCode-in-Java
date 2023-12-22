@@ -1,4 +1,4 @@
-// #Easy #2023_12_22_Time_406_ms_(82.57%)_Space_59.2_MB_(81.15%)
+# #Easy #2023_12_22_Time_406_ms_(82.57%)_Space_59.2_MB_(81.15%)
 
 import pandas as pd
 
