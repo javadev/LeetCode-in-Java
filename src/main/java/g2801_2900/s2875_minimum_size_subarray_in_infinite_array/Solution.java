@@ -9,6 +9,9 @@ public class Solution {
         for (int num : nums) {
             sum += num;
         }
+        if (sum == 0) {
+            return -1;
+        }
         int result = (target / sum) * nums.length;
         sum = target % sum;
         int currentSum = 0;
