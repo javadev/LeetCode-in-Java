@@ -15,7 +15,7 @@ public class Solution {
         Arrays.fill(before, -1);
         int index = 0;
         int max = 1;
-        for (int i = 1; i < words.length; i++) {
+        for (int i = 1; i < n; i++) {
             for (int j = i - 1; j >= 0; j--) {
                 if (groups[i] != groups[j] && ham(words[i], words[j])) {
                     if (check[j] + 1 > check[i]) {
