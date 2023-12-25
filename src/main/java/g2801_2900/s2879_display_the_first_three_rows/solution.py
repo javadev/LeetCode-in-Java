@@ -4,4 +4,3 @@ import pandas as pd
 
 def selectFirstRows(zs: pd.DataFrame) -> pd.DataFrame:
     return zs.head(3)
-    
