@@ -17,14 +17,13 @@ public class Solution {
         int max = 1;
         for (int i = 1; i < n; i++) {
             for (int j = i - 1; j >= 0; j--) {
-                if (groups[i] != groups[j] && ham(words[i], words[j])) {
-                    if (check[j] + 1 > check[i]) {
-                        check[i] = check[j] + 1;
-                        before[i] = j;
-                        if (check[i] > max) {
-                            max = check[i];
-                            index = i;
-                        }
+                if (groups[i] != groups[j] && ham(words[i], words[j])
+                    && check[j] + 1 > check[i]) {
+                    check[i] = check[j] + 1;
+                    before[i] = j;
+                    if (check[i] > max) {
+                        max = check[i];
+                        index = i;
                     }
                 }
             }
