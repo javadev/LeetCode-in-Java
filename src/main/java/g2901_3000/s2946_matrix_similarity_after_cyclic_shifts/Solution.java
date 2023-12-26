@@ -14,7 +14,9 @@ public class Solution {
                         return false;
                     }
                 } else {
-                    if (mat[i][j] != mat[i][(j + k) % n]) return false;
+                    if (mat[i][j] != mat[i][(j + k) % n]) {
+                        return false;
+                    }
                 }
             }
         }

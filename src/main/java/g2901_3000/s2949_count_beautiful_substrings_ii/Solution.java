@@ -51,7 +51,9 @@ public class Solution {
     }
 
     private boolean isPrime(int v) {
-        if (v == 2) return true;
+        if (v == 2) {
+            return true;
+        }
         for (int d = 2; d * d <= v; d += 1) {
             if (v % d == 0) {
                 return false;

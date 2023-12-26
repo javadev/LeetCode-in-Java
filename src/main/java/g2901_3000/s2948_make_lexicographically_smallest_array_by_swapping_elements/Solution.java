@@ -39,7 +39,8 @@ public class Solution {
     }
 
     private static class Node {
-        int id, value;
+        int id;
+        int value;
         int group;
 
         Node(int id, int value) {
