@@ -1,68 +1,36 @@
 package g2901_3000.s2949_count_beautiful_substrings_ii;
 
 // #Hard #String #Hash_Table #Math #Prefix_Sum #Number_Theory
-// #2023_12_26_Time_30_ms_(91.18%)_Space_45.4_MB_(43.57%)
+// #2023_12_26_Time_29_ms_(92.10%)_Space_46_MB_(37.13%)
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public long beautifulSubstrings(String s, int k) {
-        int k2 = 2 * kTransform(k);
-        ArrayList<HashMap<Integer, Integer>> list = new ArrayList<>();
-        for (int j = 0; j < k2; j += 1) {
-            list.add(new HashMap<>());
-        }
-        list.get(0).put(0, 1);
-        int n = s.length();
-        int vcDiff = 0;
         long res = 0;
-        for (int i = 0; i < n; i += 1) {
-            int j = (i + 1) % k2;
+        int n = s.length();
+        int l = 1;
+        while ((l * l) % (4 * k) != 0) {
+            l++;
+        }
+        HashMap<Integer, Integer>[] seen = new HashMap[l];
+        for (int i = 0; i < l; ++i) {
+            seen[i] = new HashMap<>();
+        }
+        int v = 0;
+        seen[l - 1].put(0, 1);
+        for (int i = 0; i < n; ++i) {
             char c = s.charAt(i);
-            if (isV(c)) {
-                vcDiff += 1;
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                v += 1;
             } else {
-                vcDiff -= 1;
+                v -= 1;
             }
-            HashMap<Integer, Integer> jMap = list.get(j);
-            int count = jMap.getOrDefault(vcDiff, 0);
-            res += count;
-            jMap.put(vcDiff, count + 1);
+            int cnt = seen[i % l].getOrDefault(v, 0);
+            res += cnt;
+            seen[i % l].put(v, cnt + 1);
         }
         return res;
-    }
-
-    private int kTransform(int k) {
-        int k1 = k;
-        int k2 = 1;
-        for (int d = 2; d <= k1; d += 1) {
-            if (isPrime(d)) {
-                while (k1 % d == 0) {
-                    k2 *= d;
-                    k1 = k1 / d;
-                    if (k1 % d == 0) {
-                        k1 = k1 / d;
-                    }
-                }
-            }
-        }
-        return k2;
-    }
-
-    private boolean isPrime(int v) {
-        if (v == 2) {
-            return true;
-        }
-        for (int d = 2; d * d <= v; d += 1) {
-            if (v % d == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private boolean isV(char c) {
-        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
     }
 }
