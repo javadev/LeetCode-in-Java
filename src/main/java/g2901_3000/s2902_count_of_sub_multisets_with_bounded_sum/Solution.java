@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Solution {
 
-    private final int MOD = (int) 1e9 + 7;
+    private final int mod = (int) 1e9 + 7;
 
     private HashMap<Integer, Integer> map;
 
@@ -39,7 +39,7 @@ public class Solution {
             if (i != 0 && curSum >= l) {
                 ans = ans + 1;
             }
-            ans = ans % MOD;
+            ans = ans % mod;
         }
         dp[index][sum] = (int) ans;
         return (int) ans;
@@ -68,7 +68,7 @@ public class Solution {
         if (l == 0) {
             ans = ans + 1;
         }
-        ans = ans % MOD;
+        ans = ans % mod;
         return ans;
     }
 }
