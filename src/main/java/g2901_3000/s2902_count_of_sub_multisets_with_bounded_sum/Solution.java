@@ -13,7 +13,7 @@ public class Solution {
     private HashMap<Integer, Integer> map;
     private int[][] dp;
 
-    private int solve(ArrayList<Integer> al, int l, int r, int index, int sum) {
+    private int solve(List<Integer> al, int l, int r, int index, int sum) {
         if (sum > r) {
             return 0;
         }
