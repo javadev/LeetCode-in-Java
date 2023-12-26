@@ -9,11 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Solution {
-
     private static final int MOD = (int) 1e9 + 7;
-
     private HashMap<Integer, Integer> map;
-
     private int[][] dp;
 
     private int solve(ArrayList<Integer> al, int l, int r, int index, int sum) {
@@ -29,7 +26,6 @@ public class Solution {
         }
         int cur = al.get(index);
         int count = map.get(cur);
-
         for (int i = 0; i <= count; i++) {
             int curSum = sum + cur * i;
             if (curSum > r) {
@@ -47,7 +43,7 @@ public class Solution {
 
     public int countSubMultisets(List<Integer> nums, int l, int r) {
         map = new HashMap<>();
-        ArrayList<Integer> al = new ArrayList<>();
+        List<Integer> al = new ArrayList<>();
         for (int cur : nums) {
             int count = map.getOrDefault(cur, 0) + 1;
             map.put(cur, count);
@@ -57,7 +53,6 @@ public class Solution {
         }
         int n = al.size();
         dp = new int[n][r + 1];
-
         for (int i = 0; i < dp.length; i++) {
             for (int j = 0; j < dp[0].length; j++) {
                 dp[i][j] = -1;
