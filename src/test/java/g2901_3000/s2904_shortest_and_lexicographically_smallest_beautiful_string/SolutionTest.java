@@ -20,4 +20,9 @@ class SolutionTest {
     void shortestBeautifulSubstring3() {
         assertThat(new Solution().shortestBeautifulSubstring("000", 1), equalTo(""));
     }
+
+    @Test
+    void shortestBeautifulSubstring4() {
+        assertThat(new Solution().shortestBeautifulSubstring("001110101101101111", 10), equalTo("10101101101111"));
+    }
 }
