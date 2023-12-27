@@ -56,7 +56,8 @@ public class Solution {
                 min = count;
             }
         }
-        return cost[start][end] = min + 1;
+        cost[start][end] = min + 1;
+        return min + 1;
     }
 
     private Divisor[] getDivisors() {
