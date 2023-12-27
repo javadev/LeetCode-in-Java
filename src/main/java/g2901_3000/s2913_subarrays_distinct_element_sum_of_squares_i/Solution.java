@@ -17,12 +17,12 @@ public class Solution {
         int[] prev = new int[n];
         int[] foundAt = new int[101];
         boolean dupFound = false;
-        int i = 0;
-        while (i < n) {
-            if ((prev[i] = foundAt[numsArr[i]] - 1) >= 0) {
+        int j = 0;
+        while (j < n) {
+            if ((prev[j] = foundAt[numsArr[j]] - 1) >= 0) {
                 dupFound = true;
             }
-            foundAt[numsArr[i]] = ++i;
+            foundAt[numsArr[j]] = ++j;
         }
         if (!dupFound) {
             return (((((n + 4) * n + 5) * n) + 2) * n) / 12;
