@@ -4,8 +4,7 @@ package g2901_3000.s2911_minimum_changes_to_make_k_semi_palindromes;
 // #2023_12_27_Time_15_ms_(98.23%)_Space_45.2_MB_(45.13%)
 
 public class Solution {
-    private final int n = 200;
-    private final int inf = n;
+    private static final int INF = 200;
     private final Divisor[] divisors = getDivisors();
     private char[] cs;
     private int[][] cost;
@@ -26,18 +25,19 @@ public class Solution {
         if (dp[i][k] > 0) {
             return dp[i][k];
         }
-        int min = inf;
+        int min = INF;
         for (int j = (k - 1) * 2; j < i - 1; ++j) {
             min = Math.min(min, calc(j, k - 1) + change(j, i));
         }
-        return dp[i][k] = min;
+        dp[i][k] = min;
+        return min;
     }
 
     private int change(int start, int end) {
         if (cost[start][end] > 0) {
             return cost[start][end];
         }
-        int min = inf;
+        int min = INF;
         for (Divisor divisor = divisors[end - start]; divisor != null; divisor = divisor.next) {
             int d = divisor.value;
             int count = 0;
