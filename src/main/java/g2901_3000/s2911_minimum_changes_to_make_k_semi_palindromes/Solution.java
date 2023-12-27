@@ -12,12 +12,10 @@ public class Solution {
     private int[][] dp;
 
     public int minimumChanges(String s, int k) {
-
         cs = s.toCharArray();
         int n = cs.length;
         cost = new int[n - 1][n + 1];
         dp = new int[n + 1][k + 1];
-
         return calc(n, k) - k;
     }
 
@@ -25,11 +23,9 @@ public class Solution {
         if (k == 1) {
             return change(0, i);
         }
-
         if (dp[i][k] > 0) {
             return dp[i][k];
         }
-
         int min = inf;
         for (int j = (k - 1) * 2; j < i - 1; ++j) {
             min = Math.min(min, calc(j, k - 1) + change(j, i));
@@ -41,13 +37,13 @@ public class Solution {
         if (cost[start][end] > 0) {
             return cost[start][end];
         }
-
         int min = inf;
         for (Divisor divisor = divisors[end - start]; divisor != null; divisor = divisor.next) {
             int d = divisor.value;
             int count = 0;
             for (int i = 0; i < d; ++i) {
-                int left = start + i, right = end - d + i;
+                int left = start + i;
+                int right = end - d + i;
                 while (left + d <= right) {
                     if (cs[left] != cs[right]) {
                         count++;
@@ -73,7 +69,7 @@ public class Solution {
         return list;
     }
 
-    static class Divisor {
+    private static class Divisor {
         int value;
         Divisor next;
 
