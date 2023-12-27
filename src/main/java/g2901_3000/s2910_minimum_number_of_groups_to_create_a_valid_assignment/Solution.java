@@ -5,6 +5,7 @@ package g2901_3000.s2910_minimum_number_of_groups_to_create_a_valid_assignment;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("java:S1172")
 public class Solution {
     private int groupBySize(Map<Integer, Integer> countFreq, int size, int n) {
         int group = 0;
@@ -12,12 +13,10 @@ public class Solution {
             int len = e.getKey();
             int rem = len % (size + 1);
             int g = len / (size + 1);
-
             if (rem == 0) {
                 group += g * e.getValue();
                 continue;
             }
-
             int need = size - rem;
             if (g >= need) {
                 group += (g + 1) * e.getValue();
