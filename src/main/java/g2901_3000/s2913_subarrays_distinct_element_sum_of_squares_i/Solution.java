@@ -14,21 +14,19 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             numsArr[i] = nums.get(i);
         }
-
         int[] prev = new int[n];
         int[] foundAt = new int[101];
         boolean dupFound = false;
-        for (int i = 0; i < n; ) {
+        int i = 0;
+        while (i < n) {
             if ((prev[i] = foundAt[numsArr[i]] - 1) >= 0) {
                 dupFound = true;
             }
             foundAt[numsArr[i]] = ++i;
         }
-
         if (!dupFound) {
             return (((((n + 4) * n + 5) * n) + 2) * n) / 12;
         }
-
         int result = 0;
         for (int start = n - 1; start >= 0; start--) {
             int distinctCount = 0;
