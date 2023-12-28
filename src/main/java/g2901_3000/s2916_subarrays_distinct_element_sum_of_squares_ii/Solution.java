@@ -53,8 +53,12 @@ public class Solution {
     }
 
     private long query(int from, int to, SegmentTree me) {
-        if (to < from) return 0;
-        if (me.leftVal == me.rightVal) return me.sum;
+        if (to < from) {
+            return 0;
+        }
+        if (me.leftVal == me.rightVal) {
+            return me.sum;
+        }
         if (me.leftVal == from && me.rightVal == to) {
             return me.sum;
         } else {
@@ -83,9 +87,9 @@ public class Solution {
                 lastID = lastSeenAt.get(num);
             }
             long temp = query(lastID + 1, i - 1, root);
-            int MOD = 1_000_000_007;
-            rsf = (rsf + i - lastID + temp * 2) % MOD;
-            ans = (ans + rsf) % MOD;
+            int mod = 1_000_000_007;
+            rsf = (rsf + i - lastID + temp * 2) % mod;
+            ans = (ans + rsf) % mod;
             update(lastID + 1, i, root);
             lastSeenAt.put(num, i);
         }
