@@ -15,7 +15,9 @@ public class Solution {
         tree2 = new long[n + 1];
         int max = 0;
         for (int x : nums) {
-            if (x > max) max = x;
+            if (x > max) {
+                max = x;
+            }
         }
         int[] last = new int[max + 1];
         long ans = 0;
