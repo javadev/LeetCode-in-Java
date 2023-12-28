@@ -1,98 +1,57 @@
 package g2901_3000.s2916_subarrays_distinct_element_sum_of_squares_ii;
 
-import java.util.HashMap;
-import java.util.Map;
+// #Hard #Array #Dynamic_Programming #Segment_Tree #Binary_Indexed_Tree
+// #2023_12_28_Time_77_ms_(83.65%)_Space_56.5_MB_(83.65%)
 
 public class Solution {
-    private static class SegmentTree {
-        SegmentTree left;
-        SegmentTree right;
-        int leftVal;
-        int rightVal;
-        long sum;
-        long add;
-    }
-
-    private SegmentTree root;
-
-    private void buildTree(int n) {
-        root = new SegmentTree();
-        root.left = null;
-        root.right = null;
-        root.leftVal = 0;
-        root.rightVal = n;
-        root.sum = 0;
-        root.add = 0;
-    }
-
-    private void update(int from, int to, SegmentTree me) {
-        if (to < from) {
-            return;
-        }
-        me.sum += to - from + 1;
-        if (me.leftVal == from && me.rightVal == to) {
-            me.add++;
-        } else {
-            int mid = me.leftVal + (me.rightVal - me.leftVal) / 2;
-            if (me.left == null) {
-                me.left = new SegmentTree();
-                me.left.leftVal = me.leftVal;
-                me.left.rightVal = mid;
-                me.left.sum = (me.sum / (me.rightVal - me.leftVal + 1)) * (mid - me.leftVal + 1);
-                me.left.add = 0;
-                me.right = new SegmentTree();
-                me.right.leftVal = mid + 1;
-                me.right.rightVal = me.rightVal;
-                me.right.sum =
-                        (me.sum / (me.rightVal - me.leftVal + 1)) * (me.rightVal - (mid + 1) + 1);
-                me.right.add = 0;
-            }
-            update(from, Math.min(to, mid), me.left);
-            update(Math.max(from, mid + 1), to, me.right);
-        }
-    }
-
-    private long query(int from, int to, SegmentTree me) {
-        if (to < from) {
-            return 0;
-        }
-        if (me.leftVal == me.rightVal) {
-            return me.sum;
-        }
-        if (me.leftVal == from && me.rightVal == to) {
-            return me.sum;
-        } else {
-            if (me.left == null) {
-                return me.add * (to - from + 1);
-            } else {
-                int mid = me.leftVal + (me.rightVal - me.leftVal) / 2;
-                return query(from, Math.min(mid, to), me.left)
-                        + query(Math.max(mid + 1, from), to, me.right)
-                        + me.add * (to - from + 1);
-            }
-        }
-    }
+    private static final int MOD = (int) (1e9) + 7;
+    private int n;
+    private long[] tree1;
+    private long[] tree2;
 
     public int sumCounts(int[] nums) {
-        buildTree(nums.length - 1);
-        Map<Integer, Integer> lastSeenAt = new HashMap<>();
-        lastSeenAt.put(nums[0], 0);
-        long ans = 1L;
-        long rsf = 1L;
-        update(0, 0, root);
-        for (int i = 1; i < nums.length; ++i) {
-            int num = nums[i];
-            int lastID = -1;
-            if (lastSeenAt.containsKey(num)) {
-                lastID = lastSeenAt.get(num);
-            }
-            long temp = query(lastID + 1, i - 1, root);
-            int mod = 1_000_000_007;
-            rsf = (rsf + i - lastID + temp * 2) % mod;
-            ans = (ans + rsf) % mod;
-            update(lastID + 1, i, root);
-            lastSeenAt.put(num, i);
+        n = nums.length;
+        tree1 = new long[n + 1];
+        tree2 = new long[n + 1];
+        int max = 0;
+        for (int x : nums) {
+            if (x > max) max = x;
         }
-        return (int) ans;
+        int[] last = new int[max + 1];
+        long ans = 0;
+        long cur = 0;
+        for (int i = 1; i <= n; i++) {
+            int x = nums[i - 1];
+            int j = last[x];
+            cur += 2 * (query(i) - query(j)) + (i - j);
+            ans += cur;
+            update(j + 1, 1);
+            update(i + 1, -1);
+            last[x] = i;
+        }
+        return (int) (ans % MOD);
+    }
+
+    int lowbit(int index) {
+        return index & (-index);
+    }
+
+    void update(int index, int x) {
+        int v = index * x;
+        while (index <= n) {
+            tree1[index] += x;
+            tree2[index] += v;
+            index += lowbit(index);
+        }
+    }
+
+    long query(int index) {
+        long res = 0;
+        int p = index + 1;
+        while (index > 0) {
+            res += p * tree1[index] - tree2[index];
+            index -= lowbit(index);
+        }
+        return res;
     }
 }
