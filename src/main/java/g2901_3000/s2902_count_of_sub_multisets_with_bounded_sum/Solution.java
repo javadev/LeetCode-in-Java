@@ -1,69 +1,87 @@
 package g2901_3000.s2902_count_of_sub_multisets_with_bounded_sum;
 
 // #Hard #Array #Hash_Table #Dynamic_Programming #Sliding_Window
-// #2023_12_26_Time_2146_ms_(5.39%)_Space_70.7_MB_(23.08%)
+// #2023_12_29_Time_17_ms_(100.00%)_Space_45.4_MB_(59.02%)
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Solution {
-    private static final int MOD = (int) 1e9 + 7;
-    private HashMap<Integer, Integer> map;
-    private int[][] dp;
-
-    private int solve(List<Integer> al, int l, int r, int index, int sum) {
-        if (sum > r) {
-            return 0;
-        }
-        long ans = 0;
-        if (index >= al.size()) {
-            return (int) ans;
-        }
-        if (dp[index][sum] != -1) {
-            return dp[index][sum];
-        }
-        int cur = al.get(index);
-        int count = map.get(cur);
-        for (int i = 0; i <= count; i++) {
-            int curSum = sum + cur * i;
-            if (curSum > r) {
-                break;
-            }
-            ans = ans + solve(al, l, r, index + 1, curSum);
-            if (i != 0 && curSum >= l) {
-                ans = ans + 1;
-            }
-            ans = ans % MOD;
-        }
-        dp[index][sum] = (int) ans;
-        return (int) ans;
-    }
+    private static final int MOD = 1000000007;
+    private static final int MAX = 20001;
+    private static final IntMap map = new IntMap();
 
     public int countSubMultisets(List<Integer> nums, int l, int r) {
-        map = new HashMap<>();
-        List<Integer> al = new ArrayList<>();
-        for (int cur : nums) {
-            int count = map.getOrDefault(cur, 0) + 1;
-            map.put(cur, count);
-            if (count == 1) {
-                al.add(cur);
+        map.clear();
+        map.add(0);
+        int total = 0;
+        for (int num : nums) {
+            map.add(num);
+            total += num;
+        }
+        if (total < l) {
+            return 0;
+        }
+        r = Math.min(r, total);
+        final int[] cnt = new int[r + 1];
+        cnt[0] = map.map[0];
+        int sum = 0;
+        for (int i = 1; i < map.size; i++) {
+            final int val = map.vals[i];
+            final int count = map.map[val];
+            if (count > 0) {
+                sum = Math.min(r, sum + val * count);
+                update(cnt, val, count, sum);
             }
         }
-        int n = al.size();
-        dp = new int[n][r + 1];
-        for (int i = 0; i < dp.length; i++) {
-            for (int j = 0; j < dp[0].length; j++) {
-                dp[i][j] = -1;
+        int res = 0;
+        for (int i = l; i <= r; i++) {
+            res = (res + cnt[i]) % MOD;
+        }
+        return res;
+    }
+
+    private static void update(final int[] cnt, final int n, final int count, final int sum) {
+        if (count == 1) {
+            for (int i = sum; i >= n; i--) {
+                cnt[i] = (cnt[i] + cnt[i - n]) % MOD;
+            }
+        } else {
+            for (int i = n; i <= sum; i++) {
+                cnt[i] = (cnt[i] + cnt[i - n]) % MOD;
+            }
+            final int max = (count + 1) * n;
+            for (int i = sum; i >= max; i--) {
+                cnt[i] = (cnt[i] - cnt[i - max] + MOD) % MOD;
             }
         }
-        Collections.sort(al);
-        int ans = solve(al, l, r, 0, 0);
-        if (l == 0) {
-            ans = ans + 1;
+    }
+
+    private static final class IntMap {
+        final int[] map = new int[MAX];
+        final int[] vals = new int[MAX];
+        int size = 0;
+
+        void add(int v) {
+            if (map[v]++ == 0) {
+                vals[size++] = v;
+            }
         }
-        ans = ans % MOD;
-        return ans;
+
+        void clear() {
+            for (int i = 0; i < size; i++) {
+                map[vals[i]] = 0;
+            }
+            size = 0;
+        }
+
+        @Override
+        public String toString() {
+            return IntStream.of(vals)
+                    .limit(size)
+                    .mapToObj(v -> v + "=" + map[v])
+                    .collect(Collectors.joining(","));
+        }
     }
 }
