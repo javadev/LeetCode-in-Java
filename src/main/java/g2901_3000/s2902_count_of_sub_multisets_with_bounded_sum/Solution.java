@@ -4,20 +4,18 @@ package g2901_3000.s2902_count_of_sub_multisets_with_bounded_sum;
 // #2023_12_29_Time_17_ms_(100.00%)_Space_45.4_MB_(59.02%)
 
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class Solution {
     private static final int MOD = 1000000007;
     private static final int MAX = 20001;
-    private static final IntMap map = new IntMap();
+    private static final IntMap INT_MAP = new IntMap();
 
     public int countSubMultisets(List<Integer> nums, int l, int r) {
-        map.clear();
-        map.add(0);
+        INT_MAP.clear();
+        INT_MAP.add(0);
         int total = 0;
         for (int num : nums) {
-            map.add(num);
+            INT_MAP.add(num);
             total += num;
         }
         if (total < l) {
@@ -25,11 +23,11 @@ public class Solution {
         }
         r = Math.min(r, total);
         final int[] cnt = new int[r + 1];
-        cnt[0] = map.map[0];
+        cnt[0] = INT_MAP.map[0];
         int sum = 0;
-        for (int i = 1; i < map.size; i++) {
-            final int val = map.vals[i];
-            final int count = map.map[val];
+        for (int i = 1; i < INT_MAP.size; i++) {
+            final int val = INT_MAP.vals[i];
+            final int count = INT_MAP.map[val];
             if (count > 0) {
                 sum = Math.min(r, sum + val * count);
                 update(cnt, val, count, sum);
@@ -74,14 +72,6 @@ public class Solution {
                 map[vals[i]] = 0;
             }
             size = 0;
-        }
-
-        @Override
-        public String toString() {
-            return IntStream.of(vals)
-                    .limit(size)
-                    .mapToObj(v -> v + "=" + map[v])
-                    .collect(Collectors.joining(","));
         }
     }
 }
