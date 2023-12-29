@@ -28,4 +28,15 @@ class SolutionTest {
                                                 "[0,0,1],[1,0,1],[0,0,0]")),
                 equalTo(1));
     }
+
+    @Test
+    void findChampion3() {
+        assertThat(
+                new Solution()
+                        .findChampion(
+                                CommonUtils
+                                        .convertLeetCodeIrregularLengths2DArrayInputIntoJavaArray(
+                                                "[[0,0,0],[1,0,0],[1,1,0]]")),
+                equalTo(2));
+    }
 }
