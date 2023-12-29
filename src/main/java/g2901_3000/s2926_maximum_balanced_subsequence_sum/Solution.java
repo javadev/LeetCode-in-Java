@@ -48,7 +48,6 @@ public class Solution {
             ans = Math.max(ans, cur);
         }
         return ans;
-
     }
 
     private static class BIT {
