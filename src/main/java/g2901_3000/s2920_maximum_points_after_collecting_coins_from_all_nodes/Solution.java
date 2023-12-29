@@ -39,7 +39,8 @@ public class Solution {
         }
         if (dp[v][numOfWay2Parents] == -1) {
             int coinsV = coins[v] / (1 << numOfWay2Parents);
-            int s0 = coinsV - k, s1 = coinsV / 2;
+            int s0 = coinsV - k;
+            int s1 = coinsV / 2;
             for (int child : adjList[v]) {
                 if (child != p) {
                     s0 += rec(child, v, numOfWay2Parents);
