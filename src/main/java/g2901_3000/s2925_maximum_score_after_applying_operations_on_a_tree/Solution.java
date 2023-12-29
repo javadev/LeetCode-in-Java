@@ -1,6 +1,6 @@
 package g2901_3000.s2925_maximum_score_after_applying_operations_on_a_tree;
 
-// #Medium #Dynamic_Programming #Tree #Depth_First_Search
+// #Medium #Dynamic_Programming #Depth_First_Search #Tree
 // #2023_12_29_Time_22_ms_(79.74%)_Space_57.1_MB_(70.30%)
 
 import java.util.ArrayList;
