@@ -6,6 +6,7 @@ package g2901_3000.s2920_maximum_points_after_collecting_coins_from_all_nodes;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private List<Integer>[] adjList;
     private int[] coins;
