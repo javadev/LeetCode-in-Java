@@ -64,7 +64,7 @@ public class Solution {
             map.put(list.get(0), temp);
         }
         List<String> ans = new ArrayList<>();
-        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+        for (Map.Entry<String, List<Integer>> entry : map.entrySet()) {
             List<Integer> temp = entry.getValue();
             Collections.sort(temp);
             if (isHighAccess(temp)) {
