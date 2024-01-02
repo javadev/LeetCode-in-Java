@@ -1,49 +1,70 @@
-2933\. High-Access Employees
+2934\. Minimum Operations to Maximize Last Elements in Arrays
 
 Medium
 
-You are given a 2D **0-indexed** array of strings, `access_times`, with size `n`. For each `i` where `0 <= i <= n - 1`, `access_times[i][0]` represents the name of an employee, and `access_times[i][1]` represents the access time of that employee. All entries in `access_times` are within the same day.
+You are given two **0-indexed** integer arrays, `nums1` and `nums2`, both having length `n`.
 
-The access time is represented as **four digits** using a **24-hour** time format, for example, `"0800"` or `"2250"`.
+You are allowed to perform a series of **operations** (**possibly none**).
 
-An employee is said to be **high-access** if he has accessed the system **three or more** times within a **one-hour period**.
+In an operation, you select an index `i` in the range `[0, n - 1]` and **swap** the values of `nums1[i]` and `nums2[i]`.
 
-Times with exactly one hour of difference are **not** considered part of the same one-hour period. For example, `"0815"` and `"0915"` are not part of the same one-hour period.
+Your task is to find the **minimum** number of operations required to satisfy the following conditions:
 
-Access times at the start and end of the day are **not** counted within the same one-hour period. For example, `"0005"` and `"2350"` are not part of the same one-hour period.
+*   `nums1[n - 1]` is equal to the **maximum value** among all elements of `nums1`, i.e., `nums1[n - 1] = max(nums1[0], nums1[1], ..., nums1[n - 1])`.
+*   `nums2[n - 1]` is equal to the **maximum** **value** among all elements of `nums2`, i.e., `nums2[n - 1] = max(nums2[0], nums2[1], ..., nums2[n - 1])`.
 
-Return _a list that contains the names of **high-access** employees with any order you want._
+Return _an integer denoting the **minimum** number of operations needed to meet **both** conditions_, _or_ `-1` _if it is **impossible** to satisfy both conditions._
 
 **Example 1:**
 
-**Input:** access\_times = [["a","0549"],["b","0457"],["a","0532"],["a","0621"],["b","0540"]]
+**Input:** nums1 = [1,2,7], nums2 = [4,5,3]
 
-**Output:** ["a"]
+**Output:** 1
 
-**Explanation:** "a" has three access times in the one-hour period of [05:32, 06:31] which are 05:32, 05:49, and 06:21. But "b" does not have more than two access times at all. So the answer is ["a"].
+**Explanation:** In this example, an operation can be performed using index i = 2.
+
+When nums1[2] and nums2[2] are swapped, nums1 becomes [1,2,3] and nums2 becomes [4,5,7].
+
+Both conditions are now satisfied.
+
+It can be shown that the minimum number of operations needed to be performed is 1.
+
+So, the answer is 1.
 
 **Example 2:**
 
-**Input:** access\_times = [["d","0002"],["c","0808"],["c","0829"],["e","0215"],["d","1508"],["d","1444"],["d","1410"],["c","0809"]]
+**Input:** nums1 = [2,3,4,5,9], nums2 = [8,8,4,4,4]
 
-**Output:** ["c","d"]
+**Output:** 2
 
-**Explanation:** "c" has three access times in the one-hour period of [08:08, 09:07] which are 08:08, 08:09, and 08:29. "d" has also three access times in the one-hour period of [14:10, 15:09] which are 14:10, 14:44, and 15:08. However, "e" has just one access time, so it can not be in the answer and the final answer is ["c","d"].
+**Explanation:** In this example, the following operations can be performed:
+
+First operation using index i = 4.
+
+When nums1[4] and nums2[4] are swapped, nums1 becomes [2,3,4,5,4], and nums2 becomes [8,8,4,4,9].
+
+Another operation using index i = 3.
+
+When nums1[3] and nums2[3] are swapped, nums1 becomes [2,3,4,4,4], and nums2 becomes [8,8,4,5,9].
+
+Both conditions are now satisfied.
+
+It can be shown that the minimum number of operations needed to be performed is 2.
+
+So, the answer is 2.
 
 **Example 3:**
 
-**Input:** access\_times = [["cd","1025"],["ab","1025"],["cd","1046"],["cd","1055"],["ab","1124"],["ab","1120"]]
+**Input:** nums1 = [1,5,4], nums2 = [2,5,3]
 
-**Output:** ["ab","cd"]
+**Output:** -1
 
-**Explanation:** "ab" has three access times in the one-hour period of [10:25, 11:24] which are 10:25, 11:20, and 11:24. "cd" has also three access times in the one-hour period of [10:25, 11:24] which are 10:25, 10:46, and 10:55. So the answer is ["ab","cd"].
+**Explanation:** In this example, it is not possible to satisfy both conditions.
+
+So, the answer is -1.
 
 **Constraints:**
 
-*   `1 <= access_times.length <= 100`
-*   `access_times[i].length == 2`
-*   `1 <= access_times[i][0].length <= 10`
-*   `access_times[i][0]` consists only of English small letters.
-*   `access_times[i][1].length == 4`
-*   `access_times[i][1]` is in 24-hour time format.
-*   `access_times[i][1]` consists only of `'0'` to `'9'`.
+*   `1 <= n == nums1.length == nums2.length <= 1000`
+*   <code>1 <= nums1[i] <= 10<sup>9</sup></code>
+*   <code>1 <= nums2[i] <= 10<sup>9</sup></code>
