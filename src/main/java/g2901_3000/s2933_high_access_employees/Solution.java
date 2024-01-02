@@ -63,11 +63,11 @@ public class Solution {
             map.put(list.get(0), temp);
         }
         List<String> ans = new ArrayList<>();
-        for (String s : map.keySet()) {
-            List<Integer> temp = map.get(s);
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            List<Integer> temp = entry.getValue();
             Collections.sort(temp);
             if (isHighAccess(temp)) {
-                ans.add(s);
+                ans.add(entry.getKey());
             }
         }
         return ans;
