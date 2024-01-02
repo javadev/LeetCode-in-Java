@@ -11,7 +11,6 @@ public class Solution {
         int count2 = 0;
         max1 = Math.min(nums1[n - 1], nums2[n - 1]);
         max2 = Math.max(nums1[n - 1], nums2[n - 1]);
-
         for (int i = 0; i < n; i++) {
             int min = Math.min(nums1[i], nums2[i]);
             int max = Math.max(nums1[i], nums2[i]);
