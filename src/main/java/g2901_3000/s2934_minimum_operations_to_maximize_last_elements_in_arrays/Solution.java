@@ -13,7 +13,8 @@ public class Solution {
         max2 = Math.max(nums1[n - 1], nums2[n - 1]);
 
         for (int i = 0; i < n; i++) {
-            int min = Math.min(nums1[i], nums2[i]), max = Math.max(nums1[i], nums2[i]);
+            int min = Math.min(nums1[i], nums2[i]);
+            int max = Math.max(nums1[i], nums2[i]);
             if (max > max2 || min > max1) {
                 return -1;
             }

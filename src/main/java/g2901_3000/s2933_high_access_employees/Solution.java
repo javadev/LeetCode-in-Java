@@ -54,9 +54,9 @@ public class Solution {
         return val;
     }
 
-    public List<String> findHighAccessEmployees(List<List<String>> access_times) {
+    public List<String> findHighAccessEmployees(List<List<String>> accessTimes) {
         HashMap<String, List<Integer>> map = new HashMap<>();
-        for (List<String> list : access_times) {
+        for (List<String> list : accessTimes) {
             List<Integer> temp = map.getOrDefault(list.get(0), new ArrayList<>());
             int val = stringToInt(list.get(1));
             temp.add(val);
