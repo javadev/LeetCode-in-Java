@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.BitSet;
 
 public class Solution {
-    private static final int[] MAP = new int[1 << 20];
+    private final int[] map = new int[1 << 20];
 
     public int maximumStrongPairXor(int[] nums) {
         Arrays.sort(nums);
@@ -38,11 +38,11 @@ public class Solution {
     private boolean check(int[] nums, int masks, int ans, BitSet seen) {
         for (int x : nums) {
             int mask = x & masks;
-            if (seen.get(mask ^ ans) && x <= 2 * MAP[mask ^ ans]) {
+            if (seen.get(mask ^ ans) && x <= 2 * map[mask ^ ans]) {
                 return true;
             }
             seen.set(mask);
-            MAP[mask] = x;
+            map[mask] = x;
         }
         return false;
     }

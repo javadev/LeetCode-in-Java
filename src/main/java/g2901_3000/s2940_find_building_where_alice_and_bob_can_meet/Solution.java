@@ -13,10 +13,10 @@ public class Solution {
         l.offer(n - 1);
         gr[n - 1] = -1;
         for (int i = n - 2; i >= 0; i--) {
-            while (l.size() > 0 && heights[i] > heights[l.peek()]) {
+            while (!l.isEmpty() && heights[i] > heights[l.peek()]) {
                 l.pop();
             }
-            if (l.size() > 0) {
+            if (!l.isEmpty()) {
                 gr[i] = l.peek();
             } else {
                 gr[i] = -1;
