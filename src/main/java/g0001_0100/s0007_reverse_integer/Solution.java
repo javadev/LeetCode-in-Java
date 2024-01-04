@@ -1,7 +1,7 @@
 package g0001_0100.s0007_reverse_integer;
 
 // #Medium #Top_Interview_Questions #Math #Udemy_Integers
-// #2023_08_09_Time_1_ms_(99.69%)_Space_39.5_MB_(82.15%)
+// #2024_01_04_Time_1_ms_(96.61%)_Space_40.9_MB_(11.62%)
 
 public class Solution {
     public int reverse(int x) {
