@@ -4,6 +4,7 @@ package g2901_3000.s2943_maximize_area_of_square_hole_in_grid;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S1172")
 public class Solution {
     public int maximizeSquareHoleArea(int n, int m, int[] hBars, int[] vBars) {
         int x = find(hBars);
