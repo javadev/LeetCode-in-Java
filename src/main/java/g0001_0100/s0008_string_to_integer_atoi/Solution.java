@@ -1,6 +1,6 @@
 package g0001_0100.s0008_string_to_integer_atoi;
 
-// #Medium #Top_Interview_Questions #String #2023_08_09_Time_1_ms_(100.00%)_Space_41_MB_(98.97%)
+// #Medium #Top_Interview_Questions #String #2024_01_04_Time_1_ms_(100.00%)_Space_42.7_MB_(8.86%)
 
 public class Solution {
     public int myAtoi(String str) {
