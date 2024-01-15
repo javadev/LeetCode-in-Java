@@ -31,7 +31,6 @@ public class Solution {
                 if (cnt[cR - 'a'] == k + 1) {
                     good--;
                 }
-
                 if (j >= start + i * k) {
                     char cL = arr[j - i * k];
                     if (cnt[cL - 'a'] == k) {
