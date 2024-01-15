@@ -1,5 +1,7 @@
 package g2901_3000.s2954_count_the_number_of_infection_sequences;
 
+// #Hard #Array #Math #Combinatorics #2024_01_15_Time_11_ms_(99.61%)_Space_46.3_MB_(29.46%)
+
 public class Solution {
     private final int m = 100000;
     private final long[] fact = new long[m + 1];
