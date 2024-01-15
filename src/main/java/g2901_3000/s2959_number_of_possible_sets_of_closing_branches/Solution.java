@@ -37,7 +37,9 @@ public class Solution {
                 int[] curr = q.poll();
                 for (int[] adj : al.get(curr[0])) {
                     if (!m[adj[0]] && curr[1] + adj[1] <= dis[adj[0]]) {
-                        if (dis[adj[0]] == Integer.MAX_VALUE) nodeCount++;
+                        if (dis[adj[0]] == Integer.MAX_VALUE) {
+                            nodeCount++;
+                        }
                         dis[adj[0]] = curr[1] + adj[1];
                         q.add(new int[] {adj[0], dis[adj[0]]});
                     }
