@@ -5,7 +5,9 @@ package g2901_3000.s2953_count_complete_substrings;
 public class Solution {
     public int countCompleteSubstrings(String word, int k) {
         char[] arr = word.toCharArray();
-        int n = arr.length, result = 0, last = 0;
+        int n = arr.length;
+        int result = 0;
+        int last = 0;
         for (int i = 1; i <= n; i++) {
             if (i == n || Math.abs(arr[i] - arr[i - 1]) > 2) {
                 result += getCount(arr, k, last, i - 1);
