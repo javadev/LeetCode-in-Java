@@ -33,7 +33,7 @@ public class Solution {
             Arrays.fill(dis, Integer.MAX_VALUE);
             dis[startVertex] = 0;
             int nodeCount = 1;
-            while (q.size() > 0) {
+            while (!q.isEmpty()) {
                 int[] curr = q.poll();
                 for (int[] adj : al.get(curr[0])) {
                     if (!m[adj[0]] && curr[1] + adj[1] <= dis[adj[0]]) {
@@ -45,11 +45,8 @@ public class Solution {
                     }
                 }
             }
-
-            boolean temp = true;
             for (int i = 0; i < n; i++) {
                 if (!m[i] && dis[i] > maxDis) {
-                    temp = false;
                     return 0;
                 }
             }
