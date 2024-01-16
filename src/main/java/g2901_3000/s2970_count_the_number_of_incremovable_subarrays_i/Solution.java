@@ -7,8 +7,10 @@ public class Solution {
     public int incremovableSubarrayCount(int[] nums) {
         int n = nums.length;
         int res = 0;
-        for (int i = 0, left = Integer.MIN_VALUE; i < n; i++) {
-            for (int j = n - 1, right = Integer.MAX_VALUE; i <= j; j--) {
+        int left = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+            int right = Integer.MAX_VALUE;
+            for (int j = n - 1; i <= j; j--) {
                 res++;
                 if (left >= nums[j] || nums[j] >= right) {
                     break;
