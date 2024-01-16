@@ -8,23 +8,23 @@ import java.util.Map;
 
 public class Solution {
     public int numberOfGoodPartitions(int[] nums) {
-        Map<Integer,Integer> mp = new HashMap<>();
+        Map<Integer, Integer> mp = new HashMap<>();
         int n = nums.length;
-        for(int i = 0; i < n; i++){
-            mp.put(nums[i],i);
+        for (int i = 0; i < n; i++) {
+            mp.put(nums[i], i);
         }
         int i = 0;
         int j = 0;
         int cnt = 0;
-        while(i<n){
+        while (i < n) {
             j = Math.max(j, mp.get(nums[i]));
-            if(i==j){
+            if (i == j) {
                 cnt++;
             }
             i++;
         }
         int res = 1;
-        for(int k = 1; k < cnt; k++){
+        for (int k = 1; k < cnt; k++) {
             res = res * 2;
             int mod = 1000000007;
             res %= mod;

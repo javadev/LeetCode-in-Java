@@ -17,6 +17,6 @@ public class Solution {
                 found[n] = true;
             }
         }
-        return new int[]{repeated, sum + repeated};
+        return new int[] {repeated, sum + repeated};
     }
 }

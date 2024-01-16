@@ -8,7 +8,7 @@ public class Solution {
     public long minimumCost(int[] nums) {
         Arrays.sort(nums);
         int len = nums.length;
-        int m = len % 2 != 0 ? len / 2 : len/2 - 1;
+        int m = len % 2 != 0 ? len / 2 : len / 2 - 1;
         int previousPalindrome = getPreviousPalindrome(nums[m]);
         int nextPalindrome = getNextPalindrome(nums[m]);
         long ans1 = 0;
@@ -19,27 +19,27 @@ public class Solution {
         }
         return Math.min(ans1, ans2);
     }
-    
-    private int getPreviousPalindrome(int num){
+
+    private int getPreviousPalindrome(int num) {
         int previousPalindrome = num;
-        while(!isPalindrome(previousPalindrome)){
+        while (!isPalindrome(previousPalindrome)) {
             previousPalindrome--;
         }
         return previousPalindrome;
     }
 
-    private int getNextPalindrome(int num){
+    private int getNextPalindrome(int num) {
         int nextPalindrome = num;
-        while(!isPalindrome(nextPalindrome)){
+        while (!isPalindrome(nextPalindrome)) {
             nextPalindrome++;
         }
         return nextPalindrome;
     }
-    
-    private boolean isPalindrome(int num){
+
+    private boolean isPalindrome(int num) {
         int copyNum = num;
         int reverseNum = 0;
-        while(num > 0) {
+        while (num > 0) {
             reverseNum = reverseNum * 10 + num % 10;
             num /= 10;
         }

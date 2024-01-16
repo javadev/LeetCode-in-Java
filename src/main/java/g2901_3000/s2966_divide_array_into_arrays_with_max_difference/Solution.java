@@ -16,11 +16,7 @@ public class Solution {
             if (third - first > k) {
                 return new int[0][];
             }
-            result[j] = new int[] {
-                first,
-                nums[i + 1],
-                third
-            };
+            result[j] = new int[] {first, nums[i + 1], third};
         }
         return result;
     }
