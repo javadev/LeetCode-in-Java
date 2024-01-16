@@ -5,7 +5,8 @@ package g2901_3000.s2970_count_the_number_of_incremovable_subarrays_i;
 
 public class Solution {
     public int incremovableSubarrayCount(int[] nums) {
-        int n = nums.length, res = 0;
+        int n = nums.length;
+        int res = 0;
         for (int i = 0, left = Integer.MIN_VALUE; i < n; i++) {
             for (int j = n - 1, right = Integer.MAX_VALUE; i <= j; j--) {
                 res++;
