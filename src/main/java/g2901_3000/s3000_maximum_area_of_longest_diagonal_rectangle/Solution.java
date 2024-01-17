@@ -12,10 +12,8 @@ public class Solution {
         }
         int area = 0;
         for (int[] t : dimensions) {
-            if (t[0] * t[0] + t[1] * t[1] == mx) {
-                if (t[0] * t[1] > area) {
-                    area = t[0] * t[1];
-                }
+            if (t[0] * t[0] + t[1] * t[1] == mx && t[0] * t[1] > area) {
+                area = t[0] * t[1];
             }
         }
         return area;
