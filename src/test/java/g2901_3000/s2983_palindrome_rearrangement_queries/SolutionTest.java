@@ -28,4 +28,18 @@ class SolutionTest {
                 new Solution().canMakePalindromeQueries("acbcab", new int[][] {{1, 2, 4, 5}}),
                 equalTo(new boolean[] {true}));
     }
+
+    @Test
+    void canMakePalindromeQueries4() {
+        assertThat(
+                new Solution().canMakePalindromeQueries("bb", new int[][] {{0, 0, 1, 1}}),
+                equalTo(new boolean[] {true}));
+    }
+
+    @Test
+    void canMakePalindromeQueries5() {
+        assertThat(
+                new Solution().canMakePalindromeQueries("abcabc", new int[][] {{1, 1, 3, 5}, {0, 2, 5, 5}}),
+                equalTo(new boolean[] {true, true}));
+    }
 }
