@@ -28,7 +28,7 @@ public class Solution {
         }
         for (int i = 0; i < cost.length; i++) {
             dis[index.get(original[i])][index.get(changed[i])] =
-                    Math.min(dis[index.get(original[i])][index.get(changed[i])], (long) cost[i]);
+                    Math.min(dis[index.get(original[i])][index.get(changed[i])], cost[i]);
         }
         for (int k = 0; k < dis.length; k++) {
             for (int i = 0; i < dis.length; i++) {
