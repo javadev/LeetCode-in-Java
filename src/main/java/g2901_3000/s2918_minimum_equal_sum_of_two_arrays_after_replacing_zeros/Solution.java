@@ -26,7 +26,8 @@ public class Solution {
             return (sum2 - sum1 >= zero1Count) ? sum2 : -1;
         }
         long ans = Long.MAX_VALUE;
-        long p1 = zero1Count, p2 = zero1Count - (sum2 - sum1);
+        long p1 = zero1Count;
+        long p2 = zero1Count - (sum2 - sum1);
         if (p2 >= zero2Count) {
             ans = Math.min(ans, sum1 + p1);
         }
