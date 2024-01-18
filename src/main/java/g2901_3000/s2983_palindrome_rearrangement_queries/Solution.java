@@ -94,14 +94,6 @@ public class Solution {
             int b = queries[i][1];
             int c = queries[i][2];
             int d = queries[i][3];
-            // if the first or the last problematic pairs are not covered by either
-            // interval, we cannot make a palindrome
-            if ((a > problemPoint || b < problemPoint)
-                            && (d < opp(problemPoint) || c > opp(problemPoint))
-                    || (a > lastProblem || b < lastProblem)
-                            && (d < opp(lastProblem) || c > opp(lastProblem))) {
-                continue;
-            }
             // if either interval the problematic interval on its side, it does not matter
             // what happens with the other interval
             if (a <= problemPoint && b >= lastProblem
