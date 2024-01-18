@@ -51,7 +51,9 @@ public class Solution {
             }
         }
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getValue() >= 3) return entry.getKey();
+            if (entry.getValue() >= 3) {
+                return entry.getKey();
+            }
         }
         return -1;
     }
