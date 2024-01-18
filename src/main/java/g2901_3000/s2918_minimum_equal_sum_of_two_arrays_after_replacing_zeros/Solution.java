@@ -31,7 +31,6 @@ public class Solution {
         if (p2 >= zero2Count) {
             ans = Math.min(ans, sum1 + p1);
         }
-        p2 = zero2Count;
         p1 = (sum2 - sum1) + zero2Count;
         if (p1 >= zero1Count) {
             ans = Math.min(ans, sum1 + p1);
