@@ -36,4 +36,14 @@ class SolutionTest {
                                 }),
                 equalTo(-1L));
     }
+
+    @Test
+    void minSum5() {
+        assertThat(
+                new Solution()
+                        .minSum(
+                                new int[] {8, 13, 15, 18, 0, 18, 0, 0, 5, 20, 12, 27, 3, 14, 22, 0},
+                                new int[] {29, 1, 6, 0, 10, 24, 27, 17, 14, 13, 2, 19, 2, 11}),
+                equalTo(179L));
+    }
 }
