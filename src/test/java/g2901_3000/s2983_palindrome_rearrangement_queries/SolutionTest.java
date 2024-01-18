@@ -39,7 +39,18 @@ class SolutionTest {
     @Test
     void canMakePalindromeQueries5() {
         assertThat(
-                new Solution().canMakePalindromeQueries("abcabc", new int[][] {{1, 1, 3, 5}, {0, 2, 5, 5}}),
+                new Solution()
+                        .canMakePalindromeQueries(
+                                "abcabc", new int[][] {{1, 1, 3, 5}, {0, 2, 5, 5}}),
                 equalTo(new boolean[] {true, true}));
+    }
+
+    @Test
+    void canMakePalindromeQueries6() {
+        assertThat(
+                new Solution()
+                        .canMakePalindromeQueries(
+                                "ckwbnmqmtzbixrrkixbtbqzmnwmc", new int[][] {{1, 9, 15, 24}}),
+                equalTo(new boolean[] {true}));
     }
 }
