@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-@SuppressWarnings({"java:S6541", "java:S135"})
+@SuppressWarnings("java:S6541")
 public class Solution {
     private int n;
 
