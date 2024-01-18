@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings({"java:S6541", "java:S135"})
 public class Solution {
     private int n;
 
@@ -110,17 +111,19 @@ public class Solution {
             }
             // if the left interval covers the first problem, we use
             // dp to figure out if the right one is large enough
-            if (a <= problemPoint && b >= problemPoint) {
-                if (d >= dpFirst[b] && c <= opp(lastProblem)) {
-                    ret[i] = true;
-                }
+            if (a <= problemPoint
+                    && b >= problemPoint
+                    && d >= dpFirst[b]
+                    && c <= opp(lastProblem)) {
+                ret[i] = true;
             }
             // similarly for the case where the right interval covers
             // the first problem
-            if (d >= opp(problemPoint) && c <= opp(problemPoint)) {
-                if (a <= dpSecond[c] && b >= lastProblem) {
-                    ret[i] = true;
-                }
+            if (d >= opp(problemPoint)
+                    && c <= opp(problemPoint)
+                    && a <= dpSecond[c]
+                    && b >= lastProblem) {
+                ret[i] = true;
             }
         }
         return ret;
