@@ -77,4 +77,11 @@ class SolutionTest {
                                 }),
                 equalTo(257L));
     }
+
+    @Test
+    void minSum9() {
+        assertThat(
+                new Solution().minSum(new int[] {3, 2, 0, 1, 0}, new int[] {6, 5, 0}),
+                equalTo(12L));
+    }
 }
