@@ -1,7 +1,7 @@
 package g0001_0100.s0014_longest_common_prefix;
 
 // #Easy #Top_Interview_Questions #String #Level_2_Day_2_String #Udemy_Strings
-// #2023_08_09_Time_0_ms_(100.00%)_Space_40.2_MB_(83.48%)
+// #2024_02_11_Time_0_ms_(100.00%)_Space_42_MB_(19.08%)
 
 public class Solution {
     public String longestCommonPrefix(String[] strs) {
