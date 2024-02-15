@@ -41,80 +41,48 @@ You have to rotate the image [**in-place**](https://en.wikipedia.org/wiki/In-pla
 *   `1 <= n <= 20`
 *   `-1000 <= matrix[i][j] <= 1000`
 
-To solve the task of rotating an `n x n` 2D matrix by 90 degrees clockwise in Java, you can follow these steps. The approach taken here modifies the matrix in-place, adhering to the problem's constraints.
+To solve the "Rotate Image" problem in Java with a `Solution` class, we can follow these steps:
 
-### Steps to Rotate an Image by 90 Degrees Clockwise:
+1. Define a `Solution` class.
+2. Define a method named `rotate` that takes a 2D array `matrix` representing an image as input and rotates the image by 90 degrees clockwise.
+3. Determine the number of layers in the matrix, which is equal to half of the matrix's size.
+4. Iterate through each layer from outer to inner layers.
+5. For each layer:
+   - Iterate through each element in the current layer.
+   - Swap the elements of the current layer in a clockwise manner.
+6. Return the rotated matrix.
 
-1. **Transpose the Matrix:** Transposing a matrix involves swapping the matrix's rows with its columns. For a square matrix, you iterate through elements and swap `matrix[i][j]` with `matrix[j][i]` where `i < j`.
-
-2. **Reverse Each Row:** After transposing, the image is rotated 90 degrees anticlockwise. To achieve a clockwise rotation, you then reverse the elements of each row.
-
-### Example Code:
-
-Here's how you can implement these steps in Java:
+Here's the implementation:
 
 ```java
 public class Solution {
     public void rotate(int[][] matrix) {
         int n = matrix.length;
-        
-        // Step 1: Transpose the matrix
-        for (int i = 0; i < n; i++) {
-            for (int j = i; j < n; j++) {
-                // Swap matrix[i][j] with matrix[j][i]
-                int temp = matrix[i][j];
-                matrix[i][j] = matrix[j][i];
-                matrix[j][i] = temp;
-            }
-        }
-        
-        // Step 2: Reverse each row
-        for (int i = 0; i < n; i++) {
-            reverseRow(matrix, i);
-        }
-    }
-    
-    private void reverseRow(int[][] matrix, int row) {
-        int left = 0;
-        int right = matrix.length - 1;
-        
-        while (left < right) {
-            // Swap the elements
-            int temp = matrix[row][left];
-            matrix[row][left] = matrix[row][right];
-            matrix[row][right] = temp;
-            
-            left++;
-            right--;
-        }
-    }
+        int layers = n / 2;
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        int[][] matrix = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
-        };
-        
-        solution.rotate(matrix);
-        
-        // Print the rotated matrix to verify the result
-        for (int[] row : matrix) {
-            for (int num : row) {
-                System.out.print(num + " ");
+        for (int layer = 0; layer < layers; layer++) {
+            int first = layer;
+            int last = n - 1 - layer;
+            
+            for (int i = first; i < last; i++) {
+                int offset = i - first;
+                int top = matrix[first][i];
+                
+                // Move left to top
+                matrix[first][i] = matrix[last - offset][first];
+                
+                // Move bottom to left
+                matrix[last - offset][first] = matrix[last][last - offset];
+                
+                // Move right to bottom
+                matrix[last][last - offset] = matrix[i][last];
+                
+                // Move top to right
+                matrix[i][last] = top;
             }
-            System.out.println();
         }
     }
 }
 ```
 
-### Explanation:
-
-- The `rotate` method first transposes the matrix by swapping elements across the diagonal.
-- Then, it calls the `reverseRow` method for each row to reverse the order of elements, achieving the desired 90 degrees clockwise rotation.
-- The `reverseRow` method uses two pointers (`left` and `right`) to swap elements in a row until the row is reversed.
-- Finally, the main method demonstrates how to use the `rotate` method and prints the rotated matrix.
-
-This implementation modifies the matrix in-place without using additional memory for another matrix, fulfilling the problem's in-place requirement.
+This implementation provides a solution to the "Rotate Image" problem in Java. It rotates the given 2D matrix representing an image by 90 degrees clockwise in-place.
