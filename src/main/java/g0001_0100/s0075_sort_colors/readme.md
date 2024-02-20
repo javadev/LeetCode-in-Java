@@ -39,3 +39,46 @@ You must solve this problem without using the library's sort function.
 *   `nums[i]` is `0`, `1`, or `2`.
 
 **Follow up:** Could you come up with a one-pass algorithm using only constant extra space?
+
+To solve the "Sort Colors" problem in Java with the Solution class, follow these steps:
+
+1. Define a method `sortColors` in the `Solution` class that takes an array of integers `nums` as input and sorts it in-place according to the colors red, white, and blue.
+2. Initialize three pointers: `low`, `mid`, and `high`. `low` points to the beginning of the array, `mid` points to the current element being processed, and `high` points to the end of the array.
+3. Loop while `mid` is less than or equal to `high`:
+   - If `nums[mid]` is 0, swap `nums[low]` with `nums[mid]`, increment `low` and `mid`.
+   - If `nums[mid]` is 1, increment `mid`.
+   - If `nums[mid]` is 2, swap `nums[mid]` with `nums[high]`, decrement `high`.
+4. After the loop, the array will be sorted in-place according to the colors red, white, and blue.
+
+Here's the implementation of the `sortColors` method in Java:
+
+```java
+class Solution {
+    public void sortColors(int[] nums) {
+        int low = 0;
+        int mid = 0;
+        int high = nums.length - 1;
+        
+        while (mid <= high) {
+            if (nums[mid] == 0) {
+                swap(nums, low, mid);
+                low++;
+                mid++;
+            } else if (nums[mid] == 1) {
+                mid++;
+            } else {
+                swap(nums, mid, high);
+                high--;
+            }
+        }
+    }
+    
+    private void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+}
+```
+
+This implementation sorts the array in-place using a one-pass algorithm with constant extra space. It iterates through the array and swaps elements as needed to group them according to their colors. The time complexity of this solution is O(n), where n is the length of the array.
