@@ -13,8 +13,9 @@ public class Solution {
             }
             return 1;
         } else if (Math.abs(c - e) == Math.abs(d - f)) {
-            if (Math.abs(a - c) == Math.abs(b - d) && Math.abs(e - a) == Math.abs(f - b)
-                && ((a > e && a < c) || (a > c && a < e))) {
+            if (Math.abs(a - c) == Math.abs(b - d)
+                    && Math.abs(e - a) == Math.abs(f - b)
+                    && ((a > e && a < c) || (a > c && a < e))) {
                 return 2;
             }
             return 1;
