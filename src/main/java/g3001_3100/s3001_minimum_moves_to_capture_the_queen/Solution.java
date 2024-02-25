@@ -5,17 +5,17 @@ package g3001_3100.s3001_minimum_moves_to_capture_the_queen;
 public class Solution {
     public int minMovesToCaptureTheQueen(int a, int b, int c, int d, int e, int f) {
         if (a == e || b == f) {
-            if (a == c && ((d > b && d < f) || (d > f && d < b))) {
+            if (a == c && (d > b && d < f || d > f && d < b)) {
                 return 2;
             }
-            if (b == d && ((c > a && c < e) || (c > e && c < a))) {
+            if (b == d && (c > a && c < e || c > e && c < a)) {
                 return 2;
             }
             return 1;
         } else if (Math.abs(c - e) == Math.abs(d - f)) {
             if (Math.abs(a - c) == Math.abs(b - d)
                     && Math.abs(e - a) == Math.abs(f - b)
-                    && ((a > e && a < c) || (a > c && a < e))) {
+                    && (a > e && a < c || a > c && a < e)) {
                 return 2;
             }
             return 1;
