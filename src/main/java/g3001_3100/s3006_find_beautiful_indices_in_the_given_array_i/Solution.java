@@ -6,6 +6,7 @@ package g3001_3100.s3006_find_beautiful_indices_in_the_given_array_i;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S6541")
 public class Solution {
     public List<Integer> beautifulIndices(String s, String a, String b, int q) {
         char[] sc = s.toCharArray();
