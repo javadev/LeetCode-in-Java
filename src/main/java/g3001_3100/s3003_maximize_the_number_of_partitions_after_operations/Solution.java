@@ -30,7 +30,6 @@ public class Solution {
             ansr[i] = ans;
             usedr[i] = used;
         }
-
         int ansl = 0;
         ans = ansr[0];
         int l = 0;
@@ -56,7 +55,6 @@ public class Solution {
                 }
                 r++;
             }
-
             if (cntUsed == k) {
                 if (last - l > Integer.bitCount(usedBeforeLast)) {
                     ans = Math.max(ans, ansl + 1 + ansr[last]);
@@ -85,7 +83,6 @@ public class Solution {
             l = r;
             ansl++;
         }
-
         return ans;
     }
 }
