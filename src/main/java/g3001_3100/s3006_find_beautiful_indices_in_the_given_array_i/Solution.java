@@ -17,7 +17,8 @@ public class Solution {
 
         int[] comp = new int[sc.length];
         int[] st = new int[sc.length];
-        int si = 0, k;
+        int si = 0;
+        int k;
         mo = -bc.length + 1;
         if (bc[0] == sc[0]) {
             comp[0] = 1;
