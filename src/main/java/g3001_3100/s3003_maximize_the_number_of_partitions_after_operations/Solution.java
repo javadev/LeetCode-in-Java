@@ -33,7 +33,8 @@ public class Solution {
 
         int ansl = 0;
         ans = ansr[0];
-        for (int l = 0; l < n; ) {
+        int l = 0;
+        while (l < n) {
             used = 0;
             cntUsed = 0;
             int usedBeforeLast = 0;
