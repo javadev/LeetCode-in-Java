@@ -14,7 +14,6 @@ public class Solution {
         int[] lpsa = getLps(ac);
         int[] lpsb = getLps(bc);
         int mo;
-
         int[] comp = new int[sc.length];
         int[] st = new int[sc.length];
         int si = 0;
@@ -52,7 +51,6 @@ public class Solution {
         if (si == 0) {
             return ret;
         }
-
         if (sc[0] == ac[0]) {
             comp[0] = 1;
             if (ac.length == 1 && st[0] <= q) {
@@ -61,7 +59,6 @@ public class Solution {
         } else {
             comp[0] = 0;
         }
-
         for (int i = 1; i < comp.length; i++) {
             mo++;
             if (sc[i] == ac[0]) {
@@ -92,7 +89,6 @@ public class Solution {
                 }
             }
         }
-
         return ret;
     }
 
