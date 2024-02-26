@@ -5,6 +5,7 @@ package g3001_3100.s3005_count_elements_with_maximum_frequency;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int maxFrequencyElements(int[] nums) {
         if (nums.length == 1) {
