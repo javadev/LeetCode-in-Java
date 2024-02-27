@@ -16,7 +16,11 @@ Return _the **minimum** possible sum of the cost of these_ _subarrays_.
 
 **Output:** 5
 
-**Explanation:** The best possible way to divide nums into 3 subarrays is: [1,3], [2,6,4], and [2]. This choice is valid because i<sub>k-1</sub> - i<sub>1</sub> is 5 - 2 = 3 which is equal to dist. The total cost is nums[0] + nums[2] + nums[5] which is 1 + 2 + 2 = 5. It can be shown that there is no possible way to divide nums into 3 subarrays at a cost lower than 5.
+**Explanation:** The best possible way to divide nums into 3 subarrays is: [1,3], [2,6,4], and [2]. This choice is valid because i<sub>k-1</sub> - i<sub>1</sub> is 5 - 2 = 3 which is equal to dist.
+
+The total cost is nums[0] + nums[2] + nums[5] which is 1 + 2 + 2 = 5.
+
+It can be shown that there is no possible way to divide nums into 3 subarrays at a cost lower than 5.
 
 **Example 2:**
 
@@ -24,7 +28,13 @@ Return _the **minimum** possible sum of the cost of these_ _subarrays_.
 
 **Output:** 15
 
-**Explanation:** The best possible way to divide nums into 4 subarrays is: [10], [1], [2], and [2,2,1]. This choice is valid because i<sub>k-1</sub> - i<sub>1</sub> is 3 - 1 = 2 which is less than dist. The total cost is nums[0] + nums[1] + nums[2] + nums[3] which is 10 + 1 + 2 + 2 = 15. The division [10], [1], [2,2,2], and [1] is not valid, because the difference between i<sub>k-1</sub> and i<sub>1</sub> is 5 - 1 = 4, which is greater than dist. It can be shown that there is no possible way to divide nums into 4 subarrays at a cost lower than 15.
+**Explanation:** The best possible way to divide nums into 4 subarrays is: [10], [1], [2], and [2,2,1]. This choice is valid because i<sub>k-1</sub> - i<sub>1</sub> is 3 - 1 = 2 which is less than dist.
+
+The total cost is nums[0] + nums[1] + nums[2] + nums[3] which is 10 + 1 + 2 + 2 = 15.
+
+The division [10], [1], [2,2,2], and [1] is not valid, because the difference between i<sub>k-1</sub> and i<sub>1</sub> is 5 - 1 = 4, which is greater than dist.
+
+It can be shown that there is no possible way to divide nums into 4 subarrays at a cost lower than 15.
 
 **Example 3:**
 
@@ -32,7 +42,13 @@ Return _the **minimum** possible sum of the cost of these_ _subarrays_.
 
 **Output:** 36
 
-**Explanation:** The best possible way to divide nums into 4 subarrays is: [10], [8], and [18,9]. This choice is valid because i<sub>k-1</sub> - i<sub>1</sub> is 2 - 1 = 1 which is equal to dist.The total cost is nums[0] + nums[1] + nums[2] which is 10 + 8 + 18 = 36. The division [10], [8,18], and [9] is not valid, because the difference between i<sub>k-1</sub> and i<sub>1</sub> is 3 - 1 = 2, which is greater than dist. It can be shown that there is no possible way to divide nums into 3 subarrays at a cost lower than 36.
+**Explanation:** The best possible way to divide nums into 4 subarrays is: [10], [8], and [18,9]. This choice is valid because i<sub>k-1</sub> - i<sub>1</sub> is 2 - 1 = 1 which is equal to dist.
+
+The total cost is nums[0] + nums[1] + nums[2] which is 10 + 8 + 18 = 36.
+
+The division [10], [8,18], and [9] is not valid, because the difference between i<sub>k-1</sub> and i<sub>1</sub> is 3 - 1 = 2, which is greater than dist.
+
+It can be shown that there is no possible way to divide nums into 3 subarrays at a cost lower than 36.
 
 **Constraints:**
 
