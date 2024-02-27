@@ -16,7 +16,9 @@ public class Solution {
         long n = nums.length;
         long answer = Long.MAX_VALUE;
 
-        for (int currentWindow = 1; currentWindow <= Math.min(dist + 1, n - 1); currentWindow++) {
+        for (int currentWindow = 1;
+                currentWindow <= Math.min((long) dist + 1, n - 1);
+                currentWindow++) {
             sum += nums[currentWindow];
             used.add(currentWindow);
         }
