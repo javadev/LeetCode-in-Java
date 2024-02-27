@@ -14,7 +14,6 @@ public class Solution {
                 max = i;
             }
         }
-
         int n = nums.length;
         if (n == 1) {
             return 1;
@@ -22,7 +21,6 @@ public class Solution {
         if (max % min != 0) {
             return 1;
         }
-
         int count = 0;
         for (int i : nums) {
             if (i % min != 0 && i % min < min) {
@@ -32,7 +30,6 @@ public class Solution {
                 count++;
             }
         }
-
         return (count + 1) / 2;
     }
 }
