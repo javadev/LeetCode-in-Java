@@ -5,7 +5,6 @@ package g3001_3100.s3010_divide_an_array_into_subarrays_with_minimum_cost_i;
 public class Solution {
     public int minimumCost(int[] nums) {
         int first = nums[0];
-
         int min = 51;
         int secMin = 52;
         for (int i = 1; i < nums.length; i++) {
@@ -16,7 +15,6 @@ public class Solution {
                 secMin = nums[i];
             }
         }
-
         return first + min + secMin;
     }
 }
