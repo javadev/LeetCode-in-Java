@@ -36,7 +36,6 @@ public class Solution {
                 j = lpsA[aLen - 1];
             }
         }
-
         i = j = 0;
         while (i < n && !matchesA.isEmpty()) {
             if (s.charAt(i) == b.charAt(j)) {
@@ -61,7 +60,6 @@ public class Solution {
                 }
             }
         }
-
         return ans;
     }
 
