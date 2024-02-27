@@ -19,27 +19,22 @@ public class Solution {
         long sum = 0;
         long n = nums.length;
         long answer = Long.MAX_VALUE;
-
         for (int currentWindow = 1;
                 currentWindow <= Math.min((long) dist + 1, n - 1);
                 currentWindow++) {
             sum += nums[currentWindow];
             used.add(currentWindow);
         }
-
         while (used.size() > k) {
             int largeValueIndex = used.pollLast();
             sum -= nums[largeValueIndex];
             unused.add(largeValueIndex);
         }
-
         answer = Math.min(sum, answer);
-
         for (int currentWindow = dist + 2, prevWindow = 1;
                 currentWindow < n;
                 currentWindow++, prevWindow++) {
             unused.add(currentWindow);
-
             if (used.contains(prevWindow)) {
                 sum -= nums[prevWindow];
                 used.remove(prevWindow);
@@ -48,7 +43,6 @@ public class Solution {
                 used.add(smallValueIndex);
             } else {
                 unused.remove(prevWindow);
-
                 if (nums[used.last()] > nums[unused.first()]) {
                     int largeValueIndex = used.pollLast();
                     sum -= nums[largeValueIndex];
