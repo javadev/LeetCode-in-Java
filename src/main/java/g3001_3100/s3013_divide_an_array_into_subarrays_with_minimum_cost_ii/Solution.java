@@ -13,7 +13,8 @@ public class Solution {
                         nums[i] == nums[j]
                                 ? Integer.compare(i, j)
                                 : Integer.compare(nums[i], nums[j]);
-        TreeSet<Integer> used = new TreeSet<>(comparator), unused = new TreeSet<>(comparator);
+        TreeSet<Integer> used = new TreeSet<>(comparator);
+        TreeSet<Integer> unused = new TreeSet<>(comparator);
         k--;
         long sum = 0;
         long n = nums.length;
