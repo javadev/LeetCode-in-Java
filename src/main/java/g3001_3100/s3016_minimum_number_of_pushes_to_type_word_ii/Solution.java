@@ -10,7 +10,8 @@ public class Solution {
         for (var i = 0; i < l; ++i) {
             ++count[word.charAt(i) - 'a'];
         }
-        int j = 8, result = 0;
+        int j = 8;
+        int result = 0;
         while (true) {
             var mi = 0;
             for (var i = 0; i < 26; ++i) {

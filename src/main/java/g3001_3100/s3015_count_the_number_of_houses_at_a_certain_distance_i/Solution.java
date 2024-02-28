@@ -24,11 +24,11 @@ public class Solution {
         }
         for (int i = 1; i < n; i++) {
             for (int j = i + 1; j <= n; j++) {
-                int old_distance = j - i;
-                int new_distance = Math.abs(x - i) + Math.abs(y - j) + 1;
-                if (new_distance < old_distance) {
-                    answer[old_distance - 1] -= 2;
-                    answer[new_distance - 1] += 2;
+                int oldDistance = j - i;
+                int newDistance = Math.abs(x - i) + Math.abs(y - j) + 1;
+                if (newDistance < oldDistance) {
+                    answer[oldDistance - 1] -= 2;
+                    answer[newDistance - 1] += 2;
                 }
             }
         }
