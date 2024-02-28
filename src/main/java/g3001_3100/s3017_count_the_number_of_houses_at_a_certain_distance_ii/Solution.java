@@ -1,5 +1,8 @@
 package g3001_3100.s3017_count_the_number_of_houses_at_a_certain_distance_ii;
 
+// #Hard #Graph #Prefix_Sum #Breadth_First_Search
+// #2024_02_28_Time_6_ms_(93.62%)_Space_60_MB_(56.71%)
+
 public class Solution {
     public long[] countOfPairs(int n, int x, int y) {
         long[] result = new long[n];
