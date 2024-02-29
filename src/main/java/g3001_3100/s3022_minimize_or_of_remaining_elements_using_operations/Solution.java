@@ -18,7 +18,6 @@ public class Solution {
                     consecutiveAnd = mask;
                 }
             }
-
             if (mergeCount > k) {
                 ans |= (1 << j);
             }
