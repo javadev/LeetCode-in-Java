@@ -45,7 +45,7 @@ public class Solution {
         getPrime(i + next[0], j + next[1], mat, num, next, primeFreq);
     }
 
-    public boolean isPrime(int num) {
+    private boolean isPrime(int num) {
         if (num == 2) {
             return true;
         }
