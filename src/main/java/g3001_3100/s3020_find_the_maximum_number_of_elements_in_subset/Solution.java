@@ -45,6 +45,8 @@ public class Solution {
             } else {
                 return 1;
             }
-        } else return 1;
+        } else {
+            return 1;
+        }
     }
 }
