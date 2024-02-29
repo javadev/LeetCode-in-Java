@@ -15,7 +15,7 @@ public class Solution {
                 new int[][] {{1, 1}, {-1, -1}, {1, -1}, {-1, 1}, {0, 1}, {0, -1}, {1, 0}, {-1, 0}};
         int m = mat.length;
         int n = mat[0].length;
-        Map<Integer, Integer> primeFreq = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> primeFreq = new HashMap<>();
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 for (int[] next : nexts) {
