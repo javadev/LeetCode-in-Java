@@ -6,7 +6,7 @@ package g3001_3100.s3045_count_prefix_and_suffix_pairs_ii;
 public class Solution {
     public long countPrefixSuffixPairs(String[] words) {
         long ans = 0;
-        boolean visited[] = new boolean[words.length];
+        boolean[] visited = new boolean[words.length];
         for (int i = 0; i < words.length; i++) {
             String p = words[i];
             if (!visited[i]) {

@@ -40,7 +40,8 @@ public class Solution {
 
         public int findLongestPrefix(String word) {
             TrieNode first = root;
-            int i = 0, codePoint;
+            int i = 0;
+            int codePoint;
             while (i < word.length()) {
                 codePoint = word.charAt(i) - '0';
                 if (first.nodes[codePoint] == null) {

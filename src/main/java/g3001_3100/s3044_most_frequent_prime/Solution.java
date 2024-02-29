@@ -13,7 +13,8 @@ public class Solution {
     public int mostFrequentPrime(int[][] mat) {
         int[][] nexts =
                 new int[][] {{1, 1}, {-1, -1}, {1, -1}, {-1, 1}, {0, 1}, {0, -1}, {1, 0}, {-1, 0}};
-        int m = mat.length, n = mat[0].length;
+        int m = mat.length;
+        int n = mat[0].length;
         Map<Integer, Integer> primeFreq = new HashMap<Integer, Integer>();
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
