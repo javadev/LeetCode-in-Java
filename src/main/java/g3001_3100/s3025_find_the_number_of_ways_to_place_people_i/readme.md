@@ -35,7 +35,13 @@ Return _the number of **pairs of points** where you can place Alice and Bob, suc
 
 **Output:** 2
 
-**Explanation:** There are two ways to place Alice and Bob such that Alice will not be sad: - Place Alice at (4, 4) and Bob at (6, 2). - Place Alice at (2, 6) and Bob at (4, 4). You cannot place Alice at (2, 6) and Bob at (6, 2) because the person at (4, 4) will be inside the fence.
+**Explanation:** There are two ways to place Alice and Bob such that Alice will not be sad:
+
+- Place Alice at (4, 4) and Bob at (6, 2).
+
+- Place Alice at (2, 6) and Bob at (4, 4).
+
+You cannot place Alice at (2, 6) and Bob at (6, 2) because the person at (4, 4) will be inside the fence.
 
 **Example 3:**
 
@@ -45,7 +51,15 @@ Return _the number of **pairs of points** where you can place Alice and Bob, suc
 
 **Output:** 2
 
-**Explanation:** There are two ways to place Alice and Bob such that Alice will not be sad: - Place Alice at (1, 1) and Bob at (3, 1). - Place Alice at (1, 3) and Bob at (1, 1). You cannot place Alice at (1, 3) and Bob at (3, 1) because the person at (1, 1) will be on the fence. Note that it does not matter if the fence encloses any area, the first and second fences in the image are valid.
+**Explanation:** There are two ways to place Alice and Bob such that Alice will not be sad:
+
+- Place Alice at (1, 1) and Bob at (3, 1).
+
+- Place Alice at (1, 3) and Bob at (1, 1).
+
+You cannot place Alice at (1, 3) and Bob at (3, 1) because the person at (1, 1) will be on the fence.
+
+Note that it does not matter if the fence encloses any area, the first and second fences in the image are valid.
 
 **Constraints:**
 
