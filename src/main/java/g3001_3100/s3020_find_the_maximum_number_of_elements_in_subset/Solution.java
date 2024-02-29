@@ -18,12 +18,17 @@ public class Solution {
 
         int ans = 0;
         if (map.containsKey(1)) {
-            if (map.get(1) % 2 == 0) ans = map.get(1) - 1;
-            else ans = map.get(1);
+            if (map.get(1) % 2 == 0) {
+                ans = map.get(1) - 1;
+            } else {
+                ans = map.get(1);
+            }
         }
 
         for (int key : map.keySet()) {
-            if (key == 1) continue;
+            if (key == 1) {
+                continue;
+            }
 
             int len = findSeries(map, key);
             ans = Math.max(ans, len);
@@ -35,8 +40,11 @@ public class Solution {
     private int findSeries(Map<Integer, Integer> map, int key) {
         int sqr = key * key;
         if (map.containsKey(sqr)) {
-            if (map.get(key) >= 2) return 2 + findSeries(map, sqr);
-            else return 1;
+            if (map.get(key) >= 2) {
+                return 2 + findSeries(map, sqr);
+            } else {
+                return 1;
+            }
         } else return 1;
     }
 }
