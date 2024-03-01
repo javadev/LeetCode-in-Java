@@ -9,7 +9,9 @@ public class Solution {
         int[] lps = new int[c.length];
         int k;
         for (int i = 1; i < lps.length; i++) {
-            if (c[i] == c[0]) lps[i] = 1;
+            if (c[i] == c[0]) {
+                lps[i] = 1;
+            }
             k = lps[i - 1];
             while (k > 0) {
                 if (c[k] == c[i]) {

@@ -7,7 +7,8 @@ public class Solution {
     public int maxPalindromesAfterOperations(String[] words) {
         int[] ar = new int[26];
         int[] dp = new int[101];
-        int s = 0, p = 0;
+        int s = 0;
+        int p = 0;
         int ans = 0;
         for (String str : words) {
             for (char c : str.toCharArray()) {
