@@ -19,7 +19,9 @@ Return _the **minimum** time greater than zero required for_ `word` _to revert t
 
 **Output:** 2
 
-**Explanation:** At the 1st second, we remove characters "aba" from the prefix of word, and add characters "bac" to the end of word. Thus, word becomes equal to "cababac". At the 2nd second, we remove characters "cab" from the prefix of word, and add "aba" to the end of word. Thus, word becomes equal to "abacaba" and reverts to its initial state. It can be shown that 2 seconds is the minimum time greater than zero required for word to revert to its initial state.
+**Explanation:** At the 1st second, we remove characters "aba" from the prefix of word, and add characters "bac" to the end of word. Thus, word becomes equal to "cababac". At the 2nd second, we remove characters "cab" from the prefix of word, and add "aba" to the end of word. Thus, word becomes equal to "abacaba" and reverts to its initial state.
+
+It can be shown that 2 seconds is the minimum time greater than zero required for word to revert to its initial state.
 
 **Example 2:**
 
@@ -27,7 +29,9 @@ Return _the **minimum** time greater than zero required for_ `word` _to revert t
 
 **Output:** 1
 
-**Explanation:** At the 1st second, we remove characters "abac" from the prefix of word, and add characters "caba" to the end of word. Thus, word becomes equal to "abacaba" and reverts to its initial state. It can be shown that 1 second is the minimum time greater than zero required for word to revert to its initial state.
+**Explanation:** At the 1st second, we remove characters "abac" from the prefix of word, and add characters "caba" to the end of word. Thus, word becomes equal to "abacaba" and reverts to its initial state.
+
+It can be shown that 1 second is the minimum time greater than zero required for word to revert to its initial state.
 
 **Example 3:**
 
@@ -35,7 +39,9 @@ Return _the **minimum** time greater than zero required for_ `word` _to revert t
 
 **Output:** 4
 
-**Explanation:** At every second, we will remove the first 2 characters of word, and add the same characters to the end of word. After 4 seconds, word becomes equal to "abcbabcd" and reverts to its initial state. It can be shown that 4 seconds is the minimum time greater than zero required for word to revert to its initial state.
+**Explanation:** At every second, we will remove the first 2 characters of word, and add the same characters to the end of word. After 4 seconds, word becomes equal to "abcbabcd" and reverts to its initial state.
+
+It can be shown that 4 seconds is the minimum time greater than zero required for word to revert to its initial state.
 
 **Constraints:**
 
