@@ -8,7 +8,6 @@ public class Solution {
         int m = image[0].length;
         int[][] intensity = new int[n][m];
         int[][] count = new int[n][m];
-
         for (int i = 1; i < n - 1; i++) {
             for (int j = 1; j < m - 1; j++) {
                 boolean regionPossible = true;
@@ -41,7 +40,6 @@ public class Solution {
                         || Math.abs(r2c2 - r1c2) > threshold) {
                     regionPossible = false;
                 }
-
                 if (regionPossible) {
                     regionSum /= 9;
                     for (int k = -1; k <= 1; k++) {
@@ -53,7 +51,6 @@ public class Solution {
                 }
             }
         }
-
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (count[i][j] == 0) {
