@@ -13,7 +13,7 @@ class SolutionTest {
 
     @Test
     void minimumTimeToInitialState2() {
-        assertThat(new Solution().minimumTimeToInitialState("abacaba", 4), equalTo(2));
+        assertThat(new Solution().minimumTimeToInitialState("abacaba", 4), equalTo(1));
     }
 
     @Test
