@@ -38,7 +38,9 @@ public class Solution {
                         || Math.abs(r2c1 - r1c1) > threshold
                         || Math.abs(r2c1 - r2c2) > threshold
                         || Math.abs(r2c2 - r2c1) > threshold
-                        || Math.abs(r2c2 - r1c2) > threshold) regionPossible = false;
+                        || Math.abs(r2c2 - r1c2) > threshold) {
+                    regionPossible = false;
+                }
 
                 if (regionPossible) {
                     regionSum /= 9;
