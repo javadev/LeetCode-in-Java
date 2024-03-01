@@ -4,17 +4,19 @@ package g3001_3100.s3033_modify_the_matrix;
 
 public class Solution {
     public int[][] modifiedMatrix(int[][] matrix) {
-        for(int i=0;i<matrix.length;i++){
-            for(int j=0;j<matrix[0].length;j++){
-                if(matrix[i][j]==-1){
-                    int y=0;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (matrix[i][j] == -1) {
+                    int y = 0;
                     for (int[] ints : matrix) {
                         if (ints[j] > y) {
                             y = ints[j];
                         }
                     }
-                    matrix[i][j]=y;
-                }}}
-        return matrix;   
+                    matrix[i][j] = y;
+                }
+            }
+        }
+        return matrix;
     }
 }

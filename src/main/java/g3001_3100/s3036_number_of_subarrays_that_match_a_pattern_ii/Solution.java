@@ -28,7 +28,7 @@ public class Solution {
             if (hash == pHash) {
                 count++;
             }
-            
+
             if (i < n - 1 - m) {
                 hash = hash * 3 - base * (arr[i] + 1) + arr[i + m] + 1;
             }
