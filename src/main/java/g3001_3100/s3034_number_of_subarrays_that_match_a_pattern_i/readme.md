@@ -1,37 +1,40 @@
-3033\. Modify the Matrix
+3034\. Number of Subarrays That Match a Pattern I
 
-Easy
+Medium
 
-Given a **0-indexed** `m x n` integer matrix `matrix`, create a new **0-indexed** matrix called `answer`. Make `answer` equal to `matrix`, then replace each element with the value `-1` with the **maximum** element in its respective column.
+You are given a **0-indexed** integer array `nums` of size `n`, and a **0-indexed** integer array `pattern` of size `m` consisting of integers `-1`, `0`, and `1`.
 
-Return _the matrix_ `answer`.
+A subarray `nums[i..j]` of size `m + 1` is said to match the `pattern` if the following conditions hold for each element `pattern[k]`:
+
+*   `nums[i + k + 1] > nums[i + k]` if `pattern[k] == 1`.
+*   `nums[i + k + 1] == nums[i + k]` if `pattern[k] == 0`.
+*   `nums[i + k + 1] < nums[i + k]` if `pattern[k] == -1`.
+
+Return _the **count** of subarrays in_ `nums` _that match the_ `pattern`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/12/24/matrix1.png)
+**Input:** nums = [1,2,3,4,5,6], pattern = [1,1]
 
-**Input:** matrix = [[1,2,-1],[4,-1,6],[7,8,9]]
+**Output:** 4
 
-**Output:** [[1,2,9],[4,8,6],[7,8,9]]
+**Explanation:** The pattern [1,1] indicates that we are looking for strictly increasing subarrays of size 3. In the array nums, the subarrays [1,2,3], [2,3,4], [3,4,5], and [4,5,6] match this pattern.
 
-**Explanation:** The diagram above shows the elements that are changed (in blue). 
-- We replace the value in the cell [1][1] with the maximum value in the column 1, that is 8. 
-- We replace the value in the cell [0][2] with the maximum value in the column 2, that is 9.
+Hence, there are 4 subarrays in nums that match the pattern. 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/12/24/matrix2.png)
+**Input:** nums = [1,4,4,1,3,5,5,3], pattern = [1,0,-1]
 
-**Input:** matrix = [[3,-1],[5,2]]
+**Output:** 2
 
-**Output:** [[3,2],[5,2]]
+**Explanation:** Here, the pattern [1,0,-1] indicates that we are looking for a sequence where the first number is smaller than the second, the second is equal to the third, and the third is greater than the fourth. In the array nums, the subarrays [1,4,4,1], and [3,5,5,3] match this pattern.
 
-**Explanation:** The diagram above shows the elements that are changed (in blue).
+Hence, there are 2 subarrays in nums that match the pattern. 
 
 **Constraints:**
 
-*   `m == matrix.length`
-*   `n == matrix[i].length`
-*   `2 <= m, n <= 50`
-*   `-1 <= matrix[i][j] <= 100`
-*   The input is generated such that each column contains at least one non-negative integer.
+*   `2 <= n == nums.length <= 100`
+*   <code>1 <= nums[i] <= 10<sup>9</sup></code>
+*   `1 <= m == pattern.length < n`
+*   `-1 <= pattern[i] <= 1`
