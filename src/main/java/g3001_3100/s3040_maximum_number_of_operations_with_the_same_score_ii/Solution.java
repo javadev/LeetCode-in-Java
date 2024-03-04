@@ -30,10 +30,10 @@ public class Solution {
             if (o == null) {
                 return false;
             }
-            if (!(o instanceof Pos po)) {
+            if (!(o instanceof Pos)) {
                 return false;
             }
-            return start == po.start && end == po.end && sum == po.sum;
+            return start == ((Pos) o).start && end == ((Pos) o).end && sum == ((Pos) o).sum;
         }
 
         @Override
@@ -52,11 +52,10 @@ public class Solution {
 
         return maxOps;
     }
-    
+
     private void maxOperations(int start, int end, int sum, int nOps) {
         if (start >= end) {
             return;
-
         }
 
         if ((((end - start) / 2) + nOps) < maxOps) {

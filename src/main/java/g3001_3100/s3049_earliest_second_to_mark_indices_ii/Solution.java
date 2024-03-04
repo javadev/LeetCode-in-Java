@@ -33,7 +33,7 @@ public class Solution {
         }
         sum += n;
         int l = n;
-        int r = ((int)Math.min(sum, m)) + 1;
+        int r = ((int) Math.min(sum, m)) + 1;
         while (l < r) {
             int mid = (l + r) / 2;
             if (check(mid)) {
@@ -43,7 +43,6 @@ public class Solution {
             }
         }
         return l > Math.min(sum, m) ? -1 : l;
-
     }
 
     private boolean check(int idx) {

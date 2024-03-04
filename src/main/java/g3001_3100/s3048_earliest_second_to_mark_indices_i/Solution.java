@@ -7,13 +7,13 @@ import java.util.Arrays;
 public class Solution {
     public int earliestSecondToMarkIndices(int[] nums, int[] changeIndices) {
         int n = nums.length;
-        if(nums.length == 0 || changeIndices.length == 0) {
+        if (nums.length == 0 || changeIndices.length == 0) {
             return 0;
         }
         int[] last = new int[n];
         Arrays.fill(last, -1);
         for (int i = 0; i < changeIndices.length; i++) {
-            changeIndices[i] -= 1; 
+            changeIndices[i] -= 1;
         }
         int low = 0, high = changeIndices.length - 1;
         while (low < high) {
