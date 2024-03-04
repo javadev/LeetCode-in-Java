@@ -64,10 +64,8 @@ public class Solution {
 
         Pos pos = new Pos(start, end, sum);
         Integer posNops = dp.get(pos);
-        if (posNops != null) {
-            if (posNops >= nOps) {
-                return;
-            }
+        if (posNops != null && posNops >= nOps) {
+            return;
         }
         dp.put(pos, nOps);
         if (nums[start] + nums[start + 1] == sum) {
