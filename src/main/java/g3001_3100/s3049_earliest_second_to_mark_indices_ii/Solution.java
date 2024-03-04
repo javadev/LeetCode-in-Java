@@ -9,7 +9,8 @@ import java.util.Queue;
 import java.util.Set;
 
 public class Solution {
-    private int[] nums, changeIndices;
+    private int[] nums;
+    private int[] changeIndices;
     private boolean[] first;
     private long sum;
 
