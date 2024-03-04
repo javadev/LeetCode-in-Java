@@ -16,7 +16,9 @@ Return _the **largest** possible area of a square, or_ `0` _if there **do not** 
 
 **Output:** 1
 
-**Explanation:** A square with side length 1 can fit inside either the intersecting region of rectangle 0 and rectangle 1, or the intersecting region of rectangle 1 and rectangle 2. Hence the largest area is side \* side which is 1 \* 1 == 1. It can be shown that a square with a greater side length can not fit inside any intersecting region.
+**Explanation:** A square with side length 1 can fit inside either the intersecting region of rectangle 0 and rectangle 1, or the intersecting region of rectangle 1 and rectangle 2. Hence the largest area is side \* side which is 1 \* 1 == 1.
+
+It can be shown that a square with a greater side length can not fit inside any intersecting region.
 
 **Example 2:**
 
@@ -26,7 +28,9 @@ Return _the **largest** possible area of a square, or_ `0` _if there **do not** 
 
 **Output:** 1
 
-**Explanation:** A square with side length 1 can fit inside either the intersecting region of rectangle 0 and rectangle 1, the intersecting region of rectangle 1 and rectangle 2, or the intersection region of all 3 rectangles. Hence the largest area is side \* side which is 1 \* 1 == 1. It can be shown that a square with a greater side length can not fit inside any intersecting region. Note that the region can be formed by the intersection of more than 2 rectangles.
+**Explanation:** A square with side length 1 can fit inside either the intersecting region of rectangle 0 and rectangle 1, the intersecting region of rectangle 1 and rectangle 2, or the intersection region of all 3 rectangles. Hence the largest area is side \* side which is 1 \* 1 == 1.
+
+It can be shown that a square with a greater side length can not fit inside any intersecting region. Note that the region can be formed by the intersection of more than 2 rectangles.
 
 **Example 3:**
 
