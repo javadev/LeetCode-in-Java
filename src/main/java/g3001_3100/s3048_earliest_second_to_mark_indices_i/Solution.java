@@ -15,11 +15,15 @@ public class Solution {
         for (int i = 0; i < changeIndices.length; i++) {
             changeIndices[i] -= 1;
         }
-        int low = 0, high = changeIndices.length - 1;
+        int low = 0;
+        int high = changeIndices.length - 1;
         while (low < high) {
             int mid = low + (high - low) / 2;
-            if (isPossible(mid, nums, changeIndices, last)) high = mid;
-            else low = mid + 1;
+            if (isPossible(mid, nums, changeIndices, last)) {
+                high = mid;
+            } else {
+                low = mid + 1;
+            }
         }
         return isPossible(low, nums, changeIndices, last) ? low + 1 : -1;
     }
