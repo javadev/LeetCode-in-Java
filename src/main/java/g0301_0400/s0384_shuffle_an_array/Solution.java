@@ -1,6 +1,6 @@
 package g0301_0400.s0384_shuffle_an_array;
 
-// #Medium #Top_Interview_Questions #Array #Math #Randomized #Algorithm_II_Day_20_Others
+// #Medium #Array #Math #Randomized #Algorithm_II_Day_20_Others
 // #2022_07_13_Time_52_ms_(91.77%)_Space_48.2_MB_(92.20%)
 
 import java.util.Random;

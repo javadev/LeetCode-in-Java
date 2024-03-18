@@ -1,6 +1,6 @@
 package g0201_0300.s0235_lowest_common_ancestor_of_a_binary_search_tree;
 
-// #Easy #Depth_First_Search #Tree #Binary_Tree #Binary_Search_Tree #Data_Structure_I_Day_14_Tree
+// #Medium #Depth_First_Search #Tree #Binary_Tree #Binary_Search_Tree #Data_Structure_I_Day_14_Tree
 // #Level_1_Day_8_Binary_Search_Tree #2022_07_04_Time_4_ms_(100.00%)_Space_43.2_MB_(90.56%)
 
 import com_github_leetcode.TreeNode;
