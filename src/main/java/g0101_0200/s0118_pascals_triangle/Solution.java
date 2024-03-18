@@ -1,7 +1,7 @@
 package g0101_0200.s0118_pascals_triangle;
 
-// #Easy #Top_Interview_Questions #Array #Dynamic_Programming #Data_Structure_I_Day_4_Array
-// #Dynamic_Programming_I_Day_12 #Udemy_Dynamic_Programming
+// #Easy #Top_100_Liked_Questions #Top_Interview_Questions #Array #Dynamic_Programming
+// #Data_Structure_I_Day_4_Array #Dynamic_Programming_I_Day_12 #Udemy_Dynamic_Programming
 // #2022_06_23_Time_1_ms_(67.08%)_Space_42.4_MB_(5.58%)
 
 import java.util.ArrayList;
