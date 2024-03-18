@@ -1,8 +1,7 @@
 package g0201_0300.s0218_the_skyline_problem;
 
-// #Hard #Top_Interview_Questions #Array #Heap_Priority_Queue #Ordered_Set #Divide_and_Conquer
-// #Segment_Tree #Binary_Indexed_Tree #Line_Sweep
-// #2022_07_02_Time_22_ms_(76.93%)_Space_52.3_MB_(45.14%)
+// #Hard #Array #Heap_Priority_Queue #Ordered_Set #Divide_and_Conquer #Segment_Tree
+// #Binary_Indexed_Tree #Line_Sweep #2022_07_02_Time_22_ms_(76.93%)_Space_52.3_MB_(45.14%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

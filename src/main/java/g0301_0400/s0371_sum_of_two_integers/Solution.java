@@ -1,6 +1,6 @@
 package g0301_0400.s0371_sum_of_two_integers;
 
-// #Medium #Top_Interview_Questions #Math #Bit_Manipulation #Udemy_Bit_Manipulation
+// #Medium #Math #Bit_Manipulation #Udemy_Bit_Manipulation
 // #2022_07_12_Time_0_ms_(100.00%)_Space_40.3_MB_(77.27%)
 
 public class Solution {

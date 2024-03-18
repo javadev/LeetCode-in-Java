@@ -1,6 +1,6 @@
 package g0301_0400.s0395_longest_substring_with_at_least_k_repeating_characters;
 
-// #Medium #Top_Interview_Questions #String #Hash_Table #Sliding_Window #Divide_and_Conquer
+// #Medium #String #Hash_Table #Sliding_Window #Divide_and_Conquer
 // #2022_07_15_Time_0_ms_(100.00%)_Space_42.4_MB_(47.47%)
 
 public class Solution {

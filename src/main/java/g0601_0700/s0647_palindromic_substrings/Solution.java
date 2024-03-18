@@ -1,6 +1,6 @@
 package g0601_0700.s0647_palindromic_substrings;
 
-// #Medium #Top_100_Liked_Questions #String #Dynamic_Programming #Big_O_Time_O(n^2)_Space_O(n)
+// #Medium #String #Dynamic_Programming #Big_O_Time_O(n^2)_Space_O(n)
 // #2022_03_21_Time_2_ms_(98.77%)_Space_41.7_MB_(75.10%)
 
 public class Solution {

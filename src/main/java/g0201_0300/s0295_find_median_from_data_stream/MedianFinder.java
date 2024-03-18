@@ -1,8 +1,7 @@
 package g0201_0300.s0295_find_median_from_data_stream;
 
-// #Hard #Top_100_Liked_Questions #Top_Interview_Questions #Sorting #Two_Pointers #Design
-// #Heap_Priority_Queue #Data_Stream #Big_O_Time_O(n*log_n)_Space_O(n)
-// #2022_07_06_Time_151_ms_(80.24%)_Space_125.2_MB_(44.11%)
+// #Hard #Top_100_Liked_Questions #Sorting #Two_Pointers #Design #Heap_Priority_Queue #Data_Stream
+// #Big_O_Time_O(n*log_n)_Space_O(n) #2022_07_06_Time_151_ms_(80.24%)_Space_125.2_MB_(44.11%)
 
 import java.util.PriorityQueue;
 

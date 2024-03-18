@@ -1,8 +1,7 @@
 package g0701_0800.s0763_partition_labels;
 
-// #Medium #Top_100_Liked_Questions #String #Hash_Table #Greedy #Two_Pointers
-// #Data_Structure_II_Day_7_String #Big_O_Time_O(n)_Space_O(1)
-// #2022_03_26_Time_1_ms_(100.00%)_Space_40.3_MB_(98.19%)
+// #Medium #String #Hash_Table #Greedy #Two_Pointers #Data_Structure_II_Day_7_String
+// #Big_O_Time_O(n)_Space_O(1) #2022_03_26_Time_1_ms_(100.00%)_Space_40.3_MB_(98.19%)
 
 import java.util.ArrayList;
 import java.util.List;
