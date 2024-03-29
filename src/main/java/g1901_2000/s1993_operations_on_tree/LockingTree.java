@@ -9,7 +9,7 @@ import java.util.List;
 @SuppressWarnings("unchecked")
 public class LockingTree {
     private List<Integer>[] graph;
-    boolean[] locked;
+    private boolean[] locked;
     private int[] parent;
     private int[] users;
     private int[] control;
