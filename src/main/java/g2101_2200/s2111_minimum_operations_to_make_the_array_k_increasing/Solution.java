@@ -1,45 +1,35 @@
 package g2101_2200.s2111_minimum_operations_to_make_the_array_k_increasing;
 
-// #Hard #Array #Binary_Search #2022_05_31_Time_97_ms_(22.90%)_Space_123.6_MB_(54.96%)
+// #Hard #Array #Binary_Search #2024_03_29_Time_12_ms_(100.00%)_Space_60.7_MB_(31.91%)
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class Solution {
-    public int kIncreasing(int[] a, int k) {
-        int n = a.length;
+    public int kIncreasing(int[] arr, int k) {
+        int n = arr.length;
         int res = 0;
-        for (int s = 0; s < k; s++) {
-            List<Integer> dp = new ArrayList<>();
-            for (int i = s; i < n; i += k) {
-                if (!bsearch(dp, a[i])) {
-                    dp.add(a[i]);
+        int[] dp = new int[n / k + 5];
+        for (int i = 0; i < k; i++) {
+            int lis = 0;
+            Arrays.fill(dp, 0);
+            for (int j = i; j < n; j += k) {
+                int low = 0;
+                int high = lis;
+                while (low < high) {
+                    int mid = (low + high) >> 1;
+                    if (arr[j] < dp[mid]) {
+                        high = mid;
+                    } else {
+                        low = mid + 1;
+                    }
+                }
+                dp[low] = arr[j];
+                if (high == lis) {
+                    lis++;
                 }
             }
-            res += dp.size();
+            res += lis;
         }
         return n - res;
-    }
-
-    private boolean bsearch(List<Integer> dp, int target) {
-        if (dp.isEmpty()) {
-            return false;
-        }
-        int lo = 0;
-        int hi = dp.size() - 1;
-        while (lo < hi) {
-            int mid = lo + (hi - lo) / 2;
-            if (dp.get(mid) <= target) {
-                lo = mid + 1;
-            } else {
-                hi = mid;
-            }
-        }
-
-        if (dp.get(lo) > target) {
-            dp.set(lo, target);
-            return true;
-        }
-        return false;
     }
 }

@@ -1,82 +1,103 @@
 package g1901_2000.s1993_operations_on_tree;
 
 // #Medium #Hash_Table #Depth_First_Search #Breadth_First_Search #Tree #Design
-// #2022_05_19_Time_394_ms_(23.03%)_Space_167.4_MB_(5.26%)
+// #2024_03_29_Time_58_ms_(99.38%)_Space_47.6_MB_(83.13%)
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class LockingTree {
-    private int[][] a;
-    private HashMap<Integer, List<Integer>> map = new HashMap<>();
+    private List<Integer>[] graph;
+    private boolean[] locked;
+    private int[] parent;
+    private int[] users;
+    private int[] control;
 
     public LockingTree(int[] parent) {
-        int l = parent.length;
-        a = new int[l][2];
-        for (int i = 0; i < l; i++) {
-            a[i][0] = parent[i];
-            a[i][1] = -1;
-            map.putIfAbsent(parent[i], new ArrayList<>());
-            List<Integer> p = map.get(parent[i]);
-            p.add(i);
-            map.put(parent[i], p);
+        int n = parent.length;
+        this.parent = parent;
+        graph = new ArrayList[n];
+        for (int i = 0; i < n; i++) {
+            graph[i] = new ArrayList<>();
+        }
+        for (int i = 1; i < n; i++) {
+            graph[parent[i]].add(i);
+        }
+        locked = new boolean[n];
+        users = new int[n];
+        control = new int[n];
+    }
+
+    private void setLock(int id, int user) {
+        locked[id] = true;
+        users[id] = user;
+    }
+
+    private void subNodeUnlock(int id) {
+        for (int child : graph[id]) {
+            locked[child] = false;
+            if (control[child] <= 0) {
+                continue;
+            }
+            control[child] = 0;
+            subNodeUnlock(child);
         }
     }
 
-    public boolean lock(int num, int user) {
-        int userId = a[num][1];
-        if (userId == -1) {
-            a[num][1] = user;
-            return true;
+    public boolean lock(int id, int user) {
+        if (locked[id]) {
+            return false;
         }
-        return false;
+        setLock(id, user);
+        if (control[id] == 0) {
+            int node = parent[id];
+            while (node != -1) {
+                control[node]++;
+                if (locked[node] || control[node] > 1) {
+                    break;
+                }
+                node = parent[node];
+            }
+        }
+        return true;
     }
 
-    public boolean unlock(int num, int user) {
-        int y = a[num][1];
-        if (y == user) {
-            a[num][1] = -1;
-            return true;
+    public boolean unlock(int id, int user) {
+        if (!locked[id] || users[id] != user) {
+            return false;
         }
-        return false;
+        locked[id] = false;
+        if (control[id] == 0) {
+            int node = parent[id];
+            while (node != -1) {
+                control[node]--;
+                if (locked[node] || control[node] >= 1) {
+                    break;
+                }
+                node = parent[node];
+            }
+        }
+        return true;
     }
 
-    public boolean upgrade(int num, int user) {
-        int par = num;
-        while (par >= 0) {
-            int lop = a[par][1];
-            if (lop != -1) {
+    public boolean upgrade(int id, int user) {
+        if (locked[id] || control[id] == 0) {
+            return false;
+        }
+        int cur = parent[id];
+        while (cur != -1) {
+            if (locked[cur]) {
                 return false;
             }
-            par = a[par][0];
+            cur = parent[cur];
         }
-        int f = 0;
-        LinkedList<Integer> que = new LinkedList<>();
-        int[] v = new int[a.length];
-        que.add(num);
-        v[num] = 1;
-        while (!que.isEmpty()) {
-            int t = que.get(0);
-            que.remove(0);
-            List<Integer> p = map.getOrDefault(t, new ArrayList<>());
-            for (int e : p) {
-                if (a[e][1] != -1) {
-                    f = 1;
-                    a[e][1] = -1;
-                }
-                if (v[e] == 0) {
-                    que.add(e);
-                    v[e] = 1;
-                }
-            }
+        setLock(id, user);
+        if (control[id] > 0) {
+            control[id] = 0;
+            subNodeUnlock(id);
         }
-        if (f == 1) {
-            a[num][1] = user;
-            return true;
-        }
-        return false;
+        return true;
     }
 }
 
