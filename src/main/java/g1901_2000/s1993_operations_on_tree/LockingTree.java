@@ -14,9 +14,9 @@ public class LockingTree {
     private int[] users;
     private int[] control;
 
-    public LockingTree(int[] _parent) {
-        int n = _parent.length;
-        parent = _parent;
+    public LockingTree(int[] parent) {
+        int n = parent.length;
+        this.parent = parent;
         graph = new ArrayList[n];
         for (int i = 0; i < n; i++) {
             graph[i] = new ArrayList<>();
