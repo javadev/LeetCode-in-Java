@@ -4,8 +4,9 @@ package g3001_3100.s3067_count_pairs_of_connectable_servers_in_a_weighted_tree_n
 
 import java.util.ArrayList;
 
+@SuppressWarnings("unchecked")
 public class Solution {
-    private ArrayList<Integer> adj[];
+    private ArrayList<Integer>[] adj;
 
     public int[] countPairsOfConnectableServers(int[][] edges, int signalSpeed) {
         int n = edges.length + 1;
@@ -13,19 +14,21 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             adj[i] = new ArrayList<>();
         }
-        for (int edge[] : edges) {
-            int u = edge[0], v = edge[1], w = edge[2];
+        for (int[] edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            int w = edge[2];
             adj[u].add(v);
             adj[v].add(u);
             adj[u].add(w);
             adj[v].add(w);
         }
-        int res[] = new int[n];
+        int[] res = new int[n];
         for (int i = 0; i < n; i++) {
             if (adj[i].size() > 2) {
                 ArrayList<Integer> al = new ArrayList<>();
                 for (int j = 0; j < adj[i].size(); j += 2) {
-                    int cnt[] = new int[1];
+                    int[] cnt = new int[1];
                     dfs(adj[i].get(j), i, adj[i].get(j + 1), cnt, signalSpeed);
                     al.add(cnt[0]);
                 }

@@ -21,7 +21,8 @@ public class Solution {
                 increase = false;
                 break;
             }
-            int min = -1, max = -1;
+            int min = -1;
+            int max = -1;
             if (i < n && (j >= extra.size() || extra.get(j) > nums[i])) {
                 min = nums[i++];
             } else {
@@ -35,8 +36,11 @@ public class Solution {
             steps++;
             long res = min;
             res = 2 * res + max;
-            if (res > Integer.MAX_VALUE) extra.add(Integer.MAX_VALUE);
-            else extra.add((int) res);
+            if (res > Integer.MAX_VALUE) {
+                extra.add(Integer.MAX_VALUE);
+            } else {
+                extra.add((int) res);
+            }
         }
         return steps;
     }
