@@ -54,3 +54,67 @@ Your code will **only** be given the `head` of the original linked list.
 *   `0 <= n <= 1000`
 *   `-10000 <= Node.val <= 10000`
 *   `Node.random` is `null` or is pointing to some node in the linked list.
+
+To solve the "Copy List with Random Pointer" problem in Java with a `Solution` class, we'll use a HashMap to maintain a mapping between the original nodes and their corresponding copied nodes. Below are the steps:
+
+1. **Create a `Solution` class**: Define a class named `Solution` to encapsulate our solution methods.
+
+2. **Create a `copyRandomList` method**: This method takes the head node of the original linked list as input and returns the head node of the copied linked list.
+
+3. **Initialize a HashMap**: Create a HashMap named `nodeMap` to store the mapping between original nodes and their corresponding copied nodes.
+
+4. **Create a deep copy of the list**: Iterate through the original linked list and create a deep copy of each node. For each node `originalNode` in the original linked list:
+   - Create a new node `copyNode` with the same value as `originalNode`.
+   - Put the mapping between `originalNode` and `copyNode` in the `nodeMap`.
+   - Set the `copyNode`'s `next` and `random` pointers accordingly.
+   - Attach the `copyNode` to the copied linked list.
+
+5. **Return the head of the copied linked list**: After creating the deep copy of the entire list, return the head node of the copied linked list.
+
+Here's the Java implementation:
+
+```java
+import java.util.HashMap;
+import java.util.Map;
+
+class Solution {
+    public Node copyRandomList(Node head) {
+        if (head == null) return null; // Check for empty list
+        
+        Map<Node, Node> nodeMap = new HashMap<>(); // Initialize HashMap to store mapping between original and copied nodes
+        
+        // Create a deep copy of each node in the list
+        Node current = head;
+        while (current != null) {
+            Node copyNode = new Node(current.val); // Create a new copy node
+            nodeMap.put(current, copyNode); // Put mapping between original and copied nodes in the map
+            current = current.next; // Move to the next node
+        }
+        
+        // Set the next and random pointers of copied nodes
+        current = head;
+        while (current != null) {
+            Node copyNode = nodeMap.get(current); // Get copied node
+            copyNode.next = nodeMap.getOrDefault(current.next, null); // Set next pointer
+            copyNode.random = nodeMap.getOrDefault(current.random, null); // Set random pointer
+            current = current.next; // Move to the next node
+        }
+        
+        return nodeMap.get(head); // Return the head of the copied linked list
+    }
+    
+    // Definition for a Node
+    class Node {
+        int val;
+        Node next, random;
+        
+        Node(int val) {
+            this.val = val;
+            this.next = null;
+            this.random = null;
+        }
+    }
+}
+```
+
+This implementation follows the steps outlined above and efficiently constructs a deep copy of the linked list with random pointers in Java.
