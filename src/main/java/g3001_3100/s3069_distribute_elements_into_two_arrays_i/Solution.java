@@ -4,7 +4,8 @@ package g3001_3100.s3069_distribute_elements_into_two_arrays_i;
 
 public class Solution {
     public int[] resultArray(int[] nums) {
-        int s = 0, t = 1;
+        int s = 0;
+        int t = 1;
         for (int i = 2; i < nums.length; i++) {
             int p = i;
             if (nums[s] > nums[t]) {
