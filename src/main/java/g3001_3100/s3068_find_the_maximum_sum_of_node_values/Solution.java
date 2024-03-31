@@ -6,7 +6,8 @@ package g3001_3100.s3068_find_the_maximum_sum_of_node_values;
 public class Solution {
     public long maximumValueSum(int[] A, int k, int[][] edges) {
         long res = 0;
-        int d = 1 << 30, c = 0;
+        int d = 1 << 30;
+        int c = 0;
         for (int a : A) {
             int b = a ^ k;
             res += Math.max(a, b);
