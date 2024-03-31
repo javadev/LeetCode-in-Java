@@ -13,16 +13,11 @@ public class Solution {
         int steps = 0;
         Arrays.sort(nums);
         List<Integer> extra = new ArrayList<>();
-        boolean increase = true;
         int i = 0;
         int j = 0;
-        while (increase) {
-            if ((i >= n || nums[i] >= k) && (j >= extra.size() || extra.get(j) >= k)) {
-                increase = false;
-                break;
-            }
-            int min = -1;
-            int max = -1;
+        while ((i < n && nums[i] < k) || (j < extra.size() && extra.get(j) < k)) {
+            int min;
+            int max;
             if (i < n && (j >= extra.size() || extra.get(j) > nums[i])) {
                 min = nums[i++];
             } else {
