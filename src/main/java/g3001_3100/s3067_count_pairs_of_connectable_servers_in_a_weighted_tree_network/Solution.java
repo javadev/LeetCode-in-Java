@@ -42,7 +42,7 @@ public class Solution {
         return res;
     }
 
-    void dfs(int node, int par, int sum, int cnt[], int ss) {
+    void dfs(int node, int par, int sum, int[] cnt, int ss) {
         if (sum % ss == 0) {
             cnt[0]++;
         }
