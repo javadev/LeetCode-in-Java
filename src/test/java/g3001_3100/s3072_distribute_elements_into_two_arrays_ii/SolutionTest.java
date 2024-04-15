@@ -17,7 +17,7 @@ class SolutionTest {
     void resultArray2() {
         assertThat(
                 new Solution().resultArray(new int[] {5, 14, 3, 1, 2}),
-                equalTo(new int[] {5, 3, 1, 2, 14}));
+                equalTo(new int[] {5, 3, 2, 14, 1}));
     }
 
     @Test

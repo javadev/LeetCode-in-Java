@@ -8,7 +8,8 @@ public class Solution {
         int[] sums = new int[n];
         int ans = 0;
         for (int[] ints : grid) {
-            for (int col = 0, sum = 0; col < n; col++) {
+            int sum = 0;
+            for (int col = 0; col < n; col++) {
                 sum += ints[col];
                 sums[col] += sum;
                 if (sums[col] <= k) {

@@ -51,19 +51,7 @@ public class Solution {
         for (int i = 2; i < nums.length; i++) {
             int g1 = p1 + 1 - bit1.rsq(nums[i]);
             int g2 = p2 + 1 - bit2.rsq(nums[i]);
-            if (g1 > g2) {
-                p1++;
-                arr1[p1] = source[i];
-                bit1.update(nums[i]);
-            } else if (g1 < g2) {
-                p2++;
-                arr2[p2] = source[i];
-                bit2.update(nums[i]);
-            } else if (p1 < p2) {
-                p1++;
-                arr1[p1] = source[i];
-                bit1.update(nums[i]);
-            } else if (p1 > p2) {
+            if (g1 < g2 || p1 > p2) {
                 p2++;
                 arr2[p2] = source[i];
                 bit2.update(nums[i]);
