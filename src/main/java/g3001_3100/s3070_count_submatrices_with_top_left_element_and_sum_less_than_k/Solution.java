@@ -11,8 +11,11 @@ public class Solution {
             for (int col = 0, sum = 0; col < n; col++) {
                 sum += ints[col];
                 sums[col] += sum;
-                if (sums[col] <= k) ans++;
-                else break;
+                if (sums[col] <= k) {
+                    ans++;
+                } else {
+                    break;
+                }
             }
         }
         return ans;

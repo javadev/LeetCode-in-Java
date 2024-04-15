@@ -9,7 +9,7 @@ public class Solution {
         for (int j : apple) {
             appleSum += j;
         }
-        int req_capacity = 0;
+        int reqCapacity = 0;
         int max = 0;
         for (int j : capacity) {
             count[j]++;
@@ -19,14 +19,14 @@ public class Solution {
             if (count[i] >= 1) {
                 while (count[i] != 0) {
                     appleSum -= i;
-                    req_capacity++;
+                    reqCapacity++;
                     if (appleSum <= 0) {
-                        return req_capacity;
+                        return reqCapacity;
                     }
                     count[i]--;
                 }
             }
         }
-        return req_capacity;
+        return reqCapacity;
     }
 }
