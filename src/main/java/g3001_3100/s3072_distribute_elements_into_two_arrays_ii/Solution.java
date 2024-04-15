@@ -6,7 +6,7 @@ package g3001_3100.s3072_distribute_elements_into_two_arrays_ii;
 import java.util.Arrays;
 
 public class Solution {
-    static class BIT {
+    private static class BIT {
         private final int[] tree;
 
         public BIT(int size) {
@@ -26,7 +26,6 @@ public class Solution {
                 sum += tree[ind];
                 ind -= lsb(ind);
             }
-
             return sum;
         }
 
@@ -47,7 +46,6 @@ public class Solution {
         bit1.update(nums[0]);
         BIT bit2 = new BIT(nums.length);
         bit2.update(nums[1]);
-
         for (int i = 2; i < nums.length; i++) {
             int g1 = p1 + 1 - bit1.rsq(nums[i]);
             int g2 = p2 + 1 - bit2.rsq(nums[i]);
@@ -61,11 +59,9 @@ public class Solution {
                 bit1.update(nums[i]);
             }
         }
-
         for (int i = p1 + 1; i < arr1.length; i++) {
             arr1[i] = arr2[i - p1 - 1];
         }
-
         return arr1;
     }
 
