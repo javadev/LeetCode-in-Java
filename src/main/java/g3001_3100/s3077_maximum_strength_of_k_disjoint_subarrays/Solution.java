@@ -27,7 +27,9 @@ public class Solution {
                 pm = -pm;
                 dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - 1]) + ((long) k - j) * n[i] * pm;
             }
-            if (max < dp[i][k - 1]) max = dp[i][k - 1];
+            if (max < dp[i][k - 1]) {
+                max = dp[i][k - 1];
+            }
         }
         return max;
     }
