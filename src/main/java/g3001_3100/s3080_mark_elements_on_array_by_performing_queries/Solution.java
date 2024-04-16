@@ -23,15 +23,11 @@ public class Solution {
                         temp[y + s1 + s2] = nums[y + s1];
                         teor[y + s1 + s2] = orig[y + s1];
                         s1++;
-                        continue;
-                    }
-                    if (s1 >= x) {
+                    } else if (s1 >= x) {
                         temp[y + s1 + s2] = nums[y + x + s2];
                         teor[y + s1 + s2] = orig[y + x + s2];
                         s2++;
-                        continue;
-                    }
-                    if (nums[y + s1] <= nums[y + x + s2]) {
+                    } else if (nums[y + s1] <= nums[y + x + s2]) {
                         temp[y + s1 + s2] = nums[y + s1];
                         teor[y + s1 + s2] = orig[y + s1];
                         s1++;
