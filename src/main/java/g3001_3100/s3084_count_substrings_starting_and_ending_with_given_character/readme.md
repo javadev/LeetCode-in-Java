@@ -10,7 +10,7 @@ You are given a string `s` and a character `c`. Return _the total number of subs
 
 **Output:** 6
 
-**Explanation:** Substrings starting and ending with `"a"` are: <code>"**<ins>a</ins>**bada"</code>, <code>"<ins>**aba**</ins>da"</code>, <code>"<ins>**abada**</ins>"</code>, <code>"ab<ins>**a**</ins>da"</code>, <code>"ab<ins>**ada**</ins>"</code>, <code>"abad<ins>**a**</ins>"</code>.
+**Explanation:** Substrings starting and ending with `"a"` are: <code>"<ins>**a**</ins>bada"</code>, <code>"<ins>**aba**</ins>da"</code>, <code>"<ins>**abada**</ins>"</code>, <code>"ab<ins>**a**</ins>da"</code>, <code>"ab<ins>**ada**</ins>"</code>, <code>"abad<ins>**a**</ins>"</code>.
 
 **Example 2:**
 
