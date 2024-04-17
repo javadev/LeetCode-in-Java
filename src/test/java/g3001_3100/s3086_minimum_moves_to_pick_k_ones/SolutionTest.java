@@ -17,4 +17,9 @@ class SolutionTest {
     void minimumMoves2() {
         assertThat(new Solution().minimumMoves(new int[] {0, 0, 0, 0}, 2, 3), equalTo(4L));
     }
+
+    @Test
+    void minimumMoves3() {
+        assertThat(new Solution().minimumMoves(new int[] {1, 0, 1, 0, 1}, 3, 0), equalTo(4L));
+    }
 }
