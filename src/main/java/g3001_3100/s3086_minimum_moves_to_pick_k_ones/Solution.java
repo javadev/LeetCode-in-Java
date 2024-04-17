@@ -26,7 +26,6 @@ public class Solution {
                 return Math.max(0, maxAdjLen - 1) + (k - maxAdjLen) * 2L;
             }
         }
-
         int[] ones = new int[numOne];
         int ind = 0;
         for (int i = 0; i < n; i++) {
@@ -34,7 +33,6 @@ public class Solution {
                 ones[ind++] = i;
             }
         }
-
         long[] preSum = new long[ones.length + 1];
         for (int i = 1; i < preSum.length; i++) {
             preSum[i] = preSum[i - 1] + ones[i - 1];
