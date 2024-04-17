@@ -21,7 +21,7 @@ public class Solution {
         maxAdjLen = Math.min(3, Math.max(maxAdjLen, r - l));
         if (maxAdjLen + maxChanges >= k) {
             if (maxAdjLen >= k) {
-                return k - 1;
+                return k - 1L;
             } else {
                 return Math.max(0, maxAdjLen - 1) + (k - maxAdjLen) * 2L;
             }
