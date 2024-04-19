@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Solution {
-    private final int mod = 1_000_000_007;
+    private static final int MOD = 1_000_000_007;
     private int len;
 
     private int dfs(int lastIdx, int k, int minDiff, Map<Long, Integer> dp, int[] nums) {
@@ -20,7 +20,7 @@ public class Solution {
         }
         int res = 0;
         for (int i = lastIdx + 1; i <= len - k; i++) {
-            res = (res + dfs(i, k - 1, Math.min(minDiff, nums[i] - nums[lastIdx]), dp, nums)) % mod;
+            res = (res + dfs(i, k - 1, Math.min(minDiff, nums[i] - nums[lastIdx]), dp, nums)) % MOD;
         }
         dp.put(key, res);
         return res;
@@ -32,7 +32,7 @@ public class Solution {
         Map<Long, Integer> dp = new HashMap<>();
         int res = 0;
         for (int i = 0; i <= len - k; i++) {
-            res = (res + dfs(i, k - 1, nums[len - 1] - nums[0], dp, nums)) % mod;
+            res = (res + dfs(i, k - 1, nums[len - 1] - nums[0], dp, nums)) % MOD;
         }
         return res;
     }
