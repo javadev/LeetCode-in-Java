@@ -12,7 +12,7 @@ public class Solution {
             sum = sum + digit;
             temp = temp / 10;
         }
-        if (sum !=0 && x % sum == 0) {
+        if (sum != 0 && x % sum == 0) {
             return sum;
         }
         return -1;
