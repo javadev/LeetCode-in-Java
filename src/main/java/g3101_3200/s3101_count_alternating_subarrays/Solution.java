@@ -12,13 +12,13 @@ public class Solution {
             if (nums[end] != nums[end - 1]) {
                 end++;
             } else {
-                length = end - start;
+                length = end - (long) start;
                 count += (length * (length + 1)) / 2;
                 start = end;
                 end++;
             }
         }
-        length = end - start;
+        length = end -(long) start;
         count += (length * (length + 1)) / 2;
         return count;
     }
