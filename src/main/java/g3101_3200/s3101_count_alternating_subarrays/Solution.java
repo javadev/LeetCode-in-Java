@@ -18,7 +18,7 @@ public class Solution {
                 end++;
             }
         }
-        length = end -(long) start;
+        length = end - (long) start;
         count += (length * (length + 1)) / 2;
         return count;
     }
