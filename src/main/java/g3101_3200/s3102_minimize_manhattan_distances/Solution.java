@@ -19,7 +19,8 @@ public class Solution {
         int minDiffIndex = -1;
         for (int i = 0; i < n; i++) {
             if (i != remove) {
-                int sum = points[i][0] + points[i][1], diff = points[i][0] - points[i][1];
+                int sum = points[i][0] + points[i][1];
+                int diff = points[i][0] - points[i][1];
                 if (sum > maxSum) {
                     maxSumIndex = i;
                     maxSum = sum;
