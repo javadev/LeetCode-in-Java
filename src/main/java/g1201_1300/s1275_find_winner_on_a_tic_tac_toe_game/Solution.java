@@ -22,24 +22,22 @@ public class Solution {
     private String wins(String[][] board) {
         for (int i = 0; i < 3; i++) {
             if (board[i][0] == null) {
-                break;
+                continue;
             }
             String str = board[i][0];
             if (str.equals(board[i][1]) && str.equals(board[i][2])) {
                 return getWinner(str);
             }
         }
-
         for (int j = 0; j < 3; j++) {
             if (board[0][j] == null) {
-                break;
+                continue;
             }
             String str = board[0][j];
             if (str.equals(board[1][j]) && str.equals(board[2][j])) {
                 return getWinner(str);
             }
         }
-
         if (board[1][1] == null) {
             return "";
         }
