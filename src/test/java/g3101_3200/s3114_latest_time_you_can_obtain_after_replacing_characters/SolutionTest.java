@@ -25,4 +25,19 @@ class SolutionTest {
     void findLatestTime4() {
         assertThat(new Solution().findLatestTime("08:33"), equalTo("08:33"));
     }
+
+    @Test
+    void findLatestTime5() {
+        assertThat(new Solution().findLatestTime("??:1?"), equalTo("11:19"));
+    }
+
+    @Test
+    void findLatestTime6() {
+        assertThat(new Solution().findLatestTime("04:??"), equalTo("04:59"));
+    }
+
+    @Test
+    void findLatestTime7() {
+        assertThat(new Solution().findLatestTime("?3:12"), equalTo("03:12"));
+    }
 }
