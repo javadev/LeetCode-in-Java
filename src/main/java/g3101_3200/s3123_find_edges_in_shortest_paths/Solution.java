@@ -6,6 +6,7 @@ package g3101_3200.s3123_find_edges_in_shortest_paths;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
+@SuppressWarnings({"java:S135", "java:S2234"})
 public class Solution {
     private int[] edge;
     private int[] weight;
@@ -52,9 +53,9 @@ public class Solution {
             if (u == n - 1) {
                 break;
             }
-            for (int index = head[u]; index != -1; index = next[index]) {
-                int v = edge[index];
-                int w = weight[index];
+            for (int localIndex = head[u]; localIndex != -1; localIndex = next[localIndex]) {
+                int v = edge[localIndex];
+                int w = weight[localIndex];
                 long newDistance = distance + w;
                 if (newDistance < distances[v]) {
                     distances[v] = newDistance;
