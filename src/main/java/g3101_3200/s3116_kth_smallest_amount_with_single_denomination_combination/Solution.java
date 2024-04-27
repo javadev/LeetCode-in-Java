@@ -5,6 +5,7 @@ package g3101_3200.s3116_kth_smallest_amount_with_single_denomination_combinatio
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S1119")
 public class Solution {
     public long findKthSmallest(int[] coins, int k) {
         int minC = Integer.MAX_VALUE;

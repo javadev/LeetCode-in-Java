@@ -30,10 +30,10 @@ public class Solution {
             head[i] = -1;
         }
         index = 0;
-        for (int[] edge : edges) {
-            int u = edge[0];
-            int v = edge[1];
-            int w = edge[2];
+        for (int[] localEdge : edges) {
+            int u = localEdge[0];
+            int v = localEdge[1];
+            int w = localEdge[2];
             add(u, v, w);
             add(v, u, w);
         }

@@ -36,7 +36,7 @@ public class Solution {
             first = second = Integer.MAX_VALUE;
             firstId = secondId = -1;
             for (int i = 0; i < 10; ++i) {
-                int tmp = Integer.MAX_VALUE;
+                int tmp;
                 int fix = n - cnt[j][i];
                 if (i == lastFirstId) {
                     tmp = fix + dp[j - 1][lastSecondId];

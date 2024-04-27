@@ -23,19 +23,17 @@ public class Solution {
                 cost = edge[2];
                 if (dist[src] != -1
                         && dist[src] != Integer.MAX_VALUE
-                        && dist[src] < disappear[src]) {
-                    if (dist[src] + cost < dist[dest]) {
-                        exit = false;
-                        dist[dest] = dist[src] + cost;
-                    }
+                        && dist[src] < disappear[src]
+                        && dist[src] + cost < dist[dest]) {
+                    exit = false;
+                    dist[dest] = dist[src] + cost;
                 }
                 if (dist[dest] != -1
                         && dist[dest] != Integer.MAX_VALUE
-                        && dist[dest] < disappear[dest]) {
-                    if (dist[dest] + cost < dist[src]) {
-                        exit = false;
-                        dist[src] = dist[dest] + cost;
-                    }
+                        && dist[dest] < disappear[dest]
+                        && dist[dest] + cost < dist[src]) {
+                    exit = false;
+                    dist[src] = dist[dest] + cost;
                 }
             }
         }
