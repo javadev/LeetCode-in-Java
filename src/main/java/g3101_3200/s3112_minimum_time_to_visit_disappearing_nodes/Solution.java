@@ -10,7 +10,10 @@ public class Solution {
         int[] dist = new int[n];
         Arrays.fill(dist, Integer.MAX_VALUE);
         boolean exit = false;
-        int i, src, dest, cost;
+        int i;
+        int src;
+        int dest;
+        int cost;
         dist[0] = 0;
         for (i = 0; i < n && !exit; ++i) {
             exit = true;

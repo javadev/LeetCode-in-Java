@@ -14,10 +14,13 @@ public class Solution {
         Arrays.fill(dp, INF);
         dp[0] = 0;
         for (int target : andValues) {
-            int sum = INF, minSum = INF, rightSum = INF;
+            int sum = INF;
+            int minSum = INF;
+            int rightSum = INF;
             int[] leftSum = new int[n + 1];
             leftSum[0] = INF;
-            int left = 0, right = 0;
+            int left = 0;
+            int right = 0;
             int[] nextdp = new int[n + 1];
             nextdp[0] = INF;
             for (int i = 0; i < n; ++i) {

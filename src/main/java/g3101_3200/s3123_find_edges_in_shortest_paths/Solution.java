@@ -26,9 +26,10 @@ public class Solution {
         weight = new int[m << 1];
         next = new int[m << 1];
         head = new int[n];
-        for (int i = 0; i < n; ++i) head[i] = -1;
+        for (int i = 0; i < n; ++i) {
+            head[i] = -1;
+        }
         index = 0;
-
         for (int[] edge : edges) {
             int u = edge[0], v = edge[1], w = edge[2];
             add(u, v, w);
@@ -68,7 +69,9 @@ public class Solution {
 
     private void dfs(long[] distances, int u, int pre, boolean[] ans) {
         for (int index = head[u]; index != -1; index = next[index]) {
-            int v = edge[index], w = weight[index], i = index >> 1;
+            int v = edge[index];
+            int w = weight[index];
+            int i = index >> 1;
             if (distances[v] + w != distances[u]) {
                 continue;
             }

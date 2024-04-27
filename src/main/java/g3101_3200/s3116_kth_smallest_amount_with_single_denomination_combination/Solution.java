@@ -8,7 +8,9 @@ import java.util.Arrays;
 public class Solution {
     public long findKthSmallest(int[] coins, int k) {
         int minC = Integer.MAX_VALUE;
-        for (int c : coins) minC = Math.min(minC, c);
+        for (int c : coins) {
+            minC = Math.min(minC, c);
+        }
         long[] cc = coins(coins);
         long max = (long) minC * k;
         long min = max / coins.length;
@@ -28,7 +30,9 @@ public class Solution {
 
     private long count(long[] coins, long v) {
         long r = 0;
-        for (long c : coins) r += v / c;
+        for (long c : coins) {
+            r += v / c;
+        }
         return r;
     }
 
@@ -39,7 +43,9 @@ public class Solution {
         for (int i = 1; i < coins.length; i++) {
             final int c = coins[i];
             for (int j = 0; j < len; j++) {
-                if (c % coins[j] == 0) continue a;
+                if (c % coins[j] == 0) {
+                    continue a;
+                }
             }
             coins[len++] = c;
         }
