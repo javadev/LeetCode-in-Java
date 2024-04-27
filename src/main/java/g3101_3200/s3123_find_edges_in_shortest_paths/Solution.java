@@ -31,7 +31,9 @@ public class Solution {
         }
         index = 0;
         for (int[] edge : edges) {
-            int u = edge[0], v = edge[1], w = edge[2];
+            int u = edge[0];
+            int v = edge[1];
+            int w = edge[2];
             add(u, v, w);
             add(v, u, w);
         }
@@ -51,7 +53,8 @@ public class Solution {
                 break;
             }
             for (int index = head[u]; index != -1; index = next[index]) {
-                int v = edge[index], w = weight[index];
+                int v = edge[index];
+                int w = weight[index];
                 long newDistance = distance + w;
                 if (newDistance < distances[v]) {
                     distances[v] = newDistance;
