@@ -1,6 +1,6 @@
 package g3101_3200.s3123_find_edges_in_shortest_paths;
 
-// #Hard #Heap_Priority_Queue #Graph #Shortest_Path #Depth_First_Search #Breadth_First_Search
+// #Hard #Depth_First_Search #Breadth_First_Search #Heap_Priority_Queue #Graph #Shortest_Path
 // #2024_04_27_Time_24_ms_(100.00%)_Space_75.2_MB_(88.50%)
 
 import java.util.Arrays;
