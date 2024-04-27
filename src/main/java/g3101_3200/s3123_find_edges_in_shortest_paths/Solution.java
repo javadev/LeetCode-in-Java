@@ -72,10 +72,10 @@ public class Solution {
     }
 
     private void dfs(long[] distances, int u, int pre, boolean[] ans) {
-        for (int index = head[u]; index != -1; index = next[index]) {
-            int v = edge[index];
-            int w = weight[index];
-            int i = index >> 1;
+        for (int localIndex = head[u]; localIndex != -1; localIndex = next[localIndex]) {
+            int v = edge[localIndex];
+            int w = weight[localIndex];
+            int i = localIndex >> 1;
             if (distances[v] + w != distances[u]) {
                 continue;
             }
