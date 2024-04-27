@@ -6,11 +6,11 @@ public class Solution {
     public int maximumPrimeDifference(int[] nums) {
         int n = nums.length;
         int i = 0;
-        while (i < n && !check(nums[i])) {
+        while (i < n && check(nums[i])) {
             i++;
         }
         int j = n - 1;
-        while (j >= 0 && !check(nums[j])) {
+        while (j >= 0 && check(nums[j])) {
             j--;
         }
         return j - i;
@@ -18,13 +18,13 @@ public class Solution {
 
     private boolean check(int n) {
         if (n < 2) {
-            return false;
+            return true;
         }
         for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 }
