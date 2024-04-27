@@ -15,4 +15,9 @@ class SolutionTest {
     void findLatestTime2() {
         assertThat(new Solution().findLatestTime("0?:5?"), equalTo("09:59"));
     }
+
+    @Test
+    void findLatestTime3() {
+        assertThat(new Solution().findLatestTime("?1:?6"), equalTo("11:56"));
+    }
 }
