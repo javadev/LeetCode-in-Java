@@ -4,7 +4,6 @@ package g3101_3200.s3129_find_all_possible_stable_binary_arrays_i;
 
 public class Solution {
     private static final int MODULUS = (int) 1e9 + 7;
-    private static final long MOD_LONG = MODULUS;
 
     private int add(int x, int y) {
         return (x + y) % MODULUS;
@@ -15,7 +14,7 @@ public class Solution {
     }
 
     private int multiply(int x, int y) {
-        return (int) ((long) x * y % MOD_LONG);
+        return (int) ((long) x * y % (long) MODULUS);
     }
 
     public int numberOfStableArrays(int zero, int one, int limit) {
@@ -30,7 +29,7 @@ public class Solution {
         int[] row2;
         row0[0] = 1;
         for (int s = 1, sLim = s - limit; s <= max; s++, sLim++) {
-            row2 = sLim > 0 ? lcn[sLim - 1] : null;
+            row2 = sLim > 0 ? lcn[sLim - 1] : new int[] {};
             row1 = row0;
             row0 = lcn[s];
             int c;
