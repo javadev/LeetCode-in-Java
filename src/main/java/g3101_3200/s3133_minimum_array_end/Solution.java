@@ -4,7 +4,6 @@ package g3101_3200.s3133_minimum_array_end;
 
 public class Solution {
     public long minEnd(int n, int x) {
-        int c = 0;
         n = n - 1;
         int[] xb = new int[64];
         int[] nb = new int[64];

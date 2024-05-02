@@ -5,8 +5,8 @@ package g3101_3200.s3130_find_all_possible_stable_binary_arrays_ii;
 public class Solution {
     private static final int MOD = (int) 1e9 + 7;
     private static final int N = 1000;
-    private static long[] factorial;
-    private static long[] reverse;
+    private long[] factorial;
+    private long[] reverse;
 
     public int numberOfStableArrays(int zero, int one, int limit) {
         if (factorial == null) {
@@ -29,7 +29,12 @@ public class Solution {
             for (int groups1 = Math.max(groups0 - 1, (one + limit - 1) / limit);
                     groups1 <= Math.min(groups0 + 1, one);
                     ++groups1) {
-                long s1 = s[groups1] != 0 ? s[groups1] : (s[groups1] = calc(groups1, one, limit));
+                long s1;
+                if (s[groups1] != 0) {
+                    s1 = s[groups1];
+                } else {
+                    s1 = s[groups1] = calc(groups1, one, limit);
+                }
                 ans = (ans + s0 * s1 * (groups1 == groups0 ? 2 : 1)) % MOD;
             }
         }
@@ -40,7 +45,7 @@ public class Solution {
         long s = 0;
         int sign = 1;
         for (int k = 0; k * limit <= x - groups && k <= groups; k++) {
-            s = (s + (long) sign * comb(groups, k) * comb(x - k * limit - 1, groups - 1)) % MOD;
+            s = (s + sign * comb(groups, k) * comb(x - k * limit - 1, groups - 1)) % MOD;
             sign *= -1;
         }
         return s;

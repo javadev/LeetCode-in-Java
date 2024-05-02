@@ -14,7 +14,7 @@ public class Solution {
     }
 
     private int multiply(int x, int y) {
-        return (int) ((long) x * y % (long) MODULUS);
+        return (int) ((long) x * y % MODULUS);
     }
 
     public int numberOfStableArrays(int zero, int one, int limit) {
