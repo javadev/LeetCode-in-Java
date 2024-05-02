@@ -12,7 +12,8 @@ public class Solution {
             xb[i] = (x >> i) & 1;
             nb[i] = (n >> i) & 1;
         }
-        int i = 0, j = 0;
+        int i = 0;
+        int j = 0;
         while (i < 64) {
             if (xb[i] != 1) {
                 xb[i] = nb[j++];

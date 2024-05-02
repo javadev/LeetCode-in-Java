@@ -27,7 +27,9 @@ public class Solution {
     private boolean check(int[] nums, int max, int target, long k) {
         long count = 0;
         int distinct = 0;
-        int n = nums.length, left = 0, right = 0;
+        int n = nums.length;
+        int left = 0;
+        int right = 0;
         int[] freq = new int[max + 1];
         while (right < n) {
             int x = nums[right++];

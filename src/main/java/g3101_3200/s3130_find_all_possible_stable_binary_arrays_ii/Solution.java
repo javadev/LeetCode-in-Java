@@ -5,7 +5,8 @@ package g3101_3200.s3130_find_all_possible_stable_binary_arrays_ii;
 public class Solution {
     private static final int MOD = (int) 1e9 + 7;
     private static final int N = 1000;
-    private static long[] factorial, reverse;
+    private static long[] factorial;
+    private static long[] reverse;
 
     public int numberOfStableArrays(int zero, int one, int limit) {
         if (factorial == null) {
@@ -51,7 +52,8 @@ public class Solution {
 
     public long getInverse(long n, long mod) {
         long p = mod;
-        long x = 1, y = 0;
+        long x = 1;
+        long y = 0;
         while (p > 0) {
             long quotient = n / p;
             long remainder = n % p;

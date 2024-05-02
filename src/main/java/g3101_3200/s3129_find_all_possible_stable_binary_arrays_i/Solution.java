@@ -25,7 +25,9 @@ public class Solution {
         int max = Math.max(zero, one);
         int min = Math.min(zero, one);
         int[][] lcn = new int[max + 1][max + 1];
-        int[] row0 = lcn[0], row1, row2;
+        int[] row0 = lcn[0];
+        int[] row1;
+        int[] row2;
         row0[0] = 1;
         for (int s = 1, sLim = s - limit; s <= max; s++, sLim++) {
             row2 = sLim > 0 ? lcn[sLim - 1] : null;
