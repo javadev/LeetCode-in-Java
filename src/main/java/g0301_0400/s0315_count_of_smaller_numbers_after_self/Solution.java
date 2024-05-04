@@ -40,6 +40,7 @@ public class Solution {
                 bit[i] += v;
             }
         }
+
         // prefix sum query
         private int ps(int j) {
             int ps = 0;
