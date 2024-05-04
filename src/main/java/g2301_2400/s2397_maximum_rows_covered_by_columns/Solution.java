@@ -7,7 +7,7 @@ public class Solution {
     private int ans = 0;
 
     public int maximumRows(int[][] matrix, int numSelect) {
-        dfs(matrix, /*colIndex=*/ 0, numSelect, /*mask=*/ 0);
+        dfs(matrix, /* colIndex= */ 0, numSelect, /* mask= */ 0);
         return ans;
     }
 

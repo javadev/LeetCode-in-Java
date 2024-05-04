@@ -10,6 +10,7 @@ import java.util.Deque;
 public class MyQueue {
     private Deque<Integer> left;
     private Deque<Integer> right;
+
     // Initialize your data structure here.
     public MyQueue() {
         left = new ArrayDeque<>();

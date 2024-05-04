@@ -15,6 +15,7 @@ public class Solution {
         {{0, -1}, {-1, 0}},
         {{0, 1}, {-1, 0}}
     };
+
     // the idea is you need to check port direction match, you can go to next cell and check whether
     // you can come back.
     public boolean hasValidPath(int[][] grid) {
