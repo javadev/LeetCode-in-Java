@@ -122,7 +122,7 @@ public class Solution {
         solution.printList(result2);
 
         ListNode l5 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
-        ListNode l6 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))));
+        ListNode l6 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));
         ListNode result3 = solution.addTwoNumbers(l5, l6);
         System.out.print("Example 3 Output: ");
         solution.printList(result3);
