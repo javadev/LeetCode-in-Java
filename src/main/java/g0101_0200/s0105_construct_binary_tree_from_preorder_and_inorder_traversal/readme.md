@@ -63,7 +63,7 @@ class Solution {
     }
     
     // Recursive helper method to construct binary tree
-    private TreeNode build(int[] preorder, int[] inorder, int preStart, preEnd, int inStart, int inEnd) {
+    private TreeNode build(int[] preorder, int[] inorder, int preStart, int preEnd, int inStart, int inEnd) {
         if (preStart > preEnd || inStart > inEnd) return null; // Base case
         
         int rootValue = preorder[preStart]; // Root node value
