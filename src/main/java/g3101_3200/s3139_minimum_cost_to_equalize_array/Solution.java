@@ -20,28 +20,24 @@ public class Solution {
             sum += num;
         }
         final int n = nums.length;
-        long total = (max * (long) n) - sum;
+        long total = max * n - sum;
         // When operation one is always better:
         if ((cost1 << 1) <= cost2 || n <= 2) {
-            return (int) ((total * (long) cost1) % LMOD);
+            return (int) (total * cost1 % LMOD);
         }
         // When operation two is moderately better:
         long op1 = Math.max(0L, ((max - min) << 1L) - total);
         long op2 = total - op1;
-        long result = ((op1 + (op2 & 1L)) * (long) cost1) + ((op2 >> 1L) * (long) cost2);
+        long result = (op1 + (op2 & 1L)) * cost1 + (op2 >> 1L) * cost2;
         // When operation two is significantly better:
-        total += op1 / ((long) n - 2L) * (long) n;
-        op1 %= ((long) n - 2L);
+        total += op1 / (n - 2L) * n;
+        op1 %= n - 2L;
         op2 = total - op1;
-        result =
-                Math.min(
-                        result, ((op1 + (op2 & 1L)) * (long) cost1) + ((op2 >> 1L) * (long) cost2));
+        result = Math.min(result, (op1 + (op2 & 1L)) * cost1 + (op2 >> 1L) * cost2);
         // When operation two is always better:
         for (int i = 0; i < 2; ++i) {
             total += n;
-            result =
-                    Math.min(
-                            result, ((total & 1L) * (long) cost1) + ((total >> 1L) * (long) cost2));
+            result = Math.min(result, (total & 1L) * cost1 + (total >> 1L) * cost2);
         }
         return (int) (result % LMOD);
     }
