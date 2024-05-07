@@ -30,29 +30,10 @@ We can obtain a 4-periodic string by picking i = 4 and j = 0. After this operati
 
 We can obtain a 2-periodic string by applying the operations in the table below.
 
-i
-
-j
-
-word
-
-0
-
-2
-
-etetcoleet
-
-4
-
-0
-
-etetetleet
-
-6
-
-0
-
-etetetetet
+    i  j  word
+    0  2  etetcoleet
+    4  0  etetetleet
+    6  0  etetetetet
 
 **Constraints:**
 
