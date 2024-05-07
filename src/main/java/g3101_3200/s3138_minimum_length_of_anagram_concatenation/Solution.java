@@ -23,14 +23,20 @@ public class Solution {
         for (int j = 0; j < factors.size(); j++) {
             int factor = factors.get(j);
             if (factor == 1) {
-                if (sq[0] * n == sq[n - 1]) return 1;
+                if (sq[0] * n == sq[n - 1]) {
+                    return 1;
+                }
             } else {
                 int sum = sq[factor - 1];
                 int start = 0;
                 for (int i = factor - 1; i < n; i += factor) {
-                    if (start + sum != sq[i]) break;
+                    if (start + sum != sq[i]) {
+                        break;
+                    }
                     start += sum;
-                    if (i == n - 1) return factor;
+                    if (i == n - 1) {
+                        return factor;
+                    }
                 }
             }
         }
