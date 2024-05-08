@@ -113,7 +113,7 @@
                         <docletArtifact>
                             <groupId>org.jdrupes.mdoclet</groupId>
                             <artifactId>doclet</artifactId>
-                            <version>4.1.0</version>
+                            <version>4.2.0</version>
                         </docletArtifact>
                         <docletArtifact>
                             <groupId>com.vladsch.flexmark</groupId>
