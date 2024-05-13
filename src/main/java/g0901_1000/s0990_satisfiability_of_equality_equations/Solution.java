@@ -9,7 +9,8 @@ public class Solution {
         if (parent[x] == x) {
             return x;
         }
-        return parent[x] = find(parent[x]);
+        parent[x] = find(parent[x]);
+        return parent[x];
     }
 
     public boolean equationsPossible(String[] equations) {
