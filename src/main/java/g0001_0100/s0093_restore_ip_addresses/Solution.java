@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    private final int SEG_COUNT = 4;
+    private static final int SEG_COUNT = 4;
     private List<String> result = new ArrayList<>();
     private int[] segments = new int[SEG_COUNT];
 
