@@ -1,6 +1,6 @@
 package g2201_2300.s2241_design_an_atm_machine;
 
-// #Medium #Array #Greedy #Design #2022_06_08_Time_192_ms_(24.16%)_Space_120.4_MB_(5.07%)
+// #Medium #Array #Greedy #Design #2024_05_13_Time_55_ms_(94.44%)_Space_48.6_MB_(19.59%)
 
 public class ATM {
     private int[] nominals;
