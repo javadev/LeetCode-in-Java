@@ -16,7 +16,10 @@ public class Solution {
     }
 
     private long sumE(long k) {
-        long res = 0, n = 0, cnt1 = 0, sumI = 0;
+        long res = 0;
+        long n = 0;
+        long cnt1 = 0;
+        long sumI = 0;
         for (long i = 63 - Long.numberOfLeadingZeros(k + 1); i > 0; i--) {
             long c = (cnt1 << i) + (i << (i - 1));
             if (c <= k) {

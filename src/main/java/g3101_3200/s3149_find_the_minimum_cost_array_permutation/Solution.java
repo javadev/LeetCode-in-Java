@@ -7,15 +7,15 @@ import java.util.Arrays;
 
 public class Solution {
     private int findMinScore(int mask, int prevNum, int[] nums, int[][] dp) {
-        int N = nums.length;
-        if (Integer.bitCount(mask) == N) {
+        int n = nums.length;
+        if (Integer.bitCount(mask) == n) {
             return dp[mask][prevNum] = Math.abs(prevNum - nums[0]);
         }
         if (dp[mask][prevNum] != -1) {
             return dp[mask][prevNum];
         }
         int minScore = Integer.MAX_VALUE;
-        for (int currNum = 0; currNum < N; currNum++) {
+        for (int currNum = 0; currNum < n; currNum++) {
             if ((mask >> currNum & 1 ^ 1) == 1) {
                 int currScore =
                         Math.abs(prevNum - nums[currNum])
@@ -26,12 +26,12 @@ public class Solution {
         return dp[mask][prevNum] = minScore;
     }
 
-    private int[] constructMinScorePermutation(int N, int[] nums, int[][] dp) {
-        int[] permutation = new int[N];
+    private int[] constructMinScorePermutation(int n, int[] nums, int[][] dp) {
+        int[] permutation = new int[n];
         int i = 0;
         permutation[i++] = 0;
-        for (int mask = 1, prevNum = 0; i < N; mask |= 1 << prevNum) {
-            for (int currNum = 0; currNum < N; currNum++) {
+        for (int mask = 1, prevNum = 0; i < n; mask |= 1 << prevNum) {
+            for (int currNum = 0; currNum < n; currNum++) {
                 if ((mask >> currNum & 1 ^ 1) == 1) {
                     int currScore =
                             Math.abs(prevNum - nums[currNum]) + dp[mask | 1 << currNum][currNum];
