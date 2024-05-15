@@ -24,7 +24,8 @@ public class Solution {
                 minScore = Math.min(minScore, currScore);
             }
         }
-        return dp[mask][prevNum] = minScore;
+        dp[mask][prevNum] = minScore;
+        return dp[mask][prevNum];
     }
 
     private int[] constructMinScorePermutation(int n, int[] nums, int[][] dp) {
