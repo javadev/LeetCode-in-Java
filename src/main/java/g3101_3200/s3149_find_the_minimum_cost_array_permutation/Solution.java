@@ -48,12 +48,12 @@ public class Solution {
     }
 
     public int[] findPermutation(int[] nums) {
-        int N = nums.length;
-        int[][] dp = new int[1 << N][N];
+        int n = nums.length;
+        int[][] dp = new int[1 << n][n];
         for (int[] row : dp) {
             Arrays.fill(row, -1);
         }
         findMinScore(1, 0, nums, dp);
-        return constructMinScorePermutation(N, nums, dp);
+        return constructMinScorePermutation(n, nums, dp);
     }
 }
