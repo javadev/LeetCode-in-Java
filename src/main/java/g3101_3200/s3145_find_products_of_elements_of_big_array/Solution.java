@@ -20,7 +20,7 @@ public class Solution {
         long n = 0;
         long cnt1 = 0;
         long sumI = 0;
-        for (long i = 63 - Long.numberOfLeadingZeros(k + 1); i > 0; i--) {
+        for (long i = 63L - Long.numberOfLeadingZeros(k + 1); i > 0; i--) {
             long c = (cnt1 << i) + (i << (i - 1));
             if (c <= k) {
                 k -= c;

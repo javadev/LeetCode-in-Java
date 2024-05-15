@@ -9,7 +9,8 @@ public class Solution {
     private int findMinScore(int mask, int prevNum, int[] nums, int[][] dp) {
         int n = nums.length;
         if (Integer.bitCount(mask) == n) {
-            return dp[mask][prevNum] = Math.abs(prevNum - nums[0]);
+            dp[mask][prevNum] = Math.abs(prevNum - nums[0]);
+            return dp[mask][prevNum];
         }
         if (dp[mask][prevNum] != -1) {
             return dp[mask][prevNum];
@@ -30,7 +31,8 @@ public class Solution {
         int[] permutation = new int[n];
         int i = 0;
         permutation[i++] = 0;
-        for (int mask = 1, prevNum = 0; i < n; mask |= 1 << prevNum) {
+        int prevNum = 0;
+        for (int mask = 1; i < n; mask |= 1 << prevNum) {
             for (int currNum = 0; currNum < n; currNum++) {
                 if ((mask >> currNum & 1 ^ 1) == 1) {
                     int currScore =

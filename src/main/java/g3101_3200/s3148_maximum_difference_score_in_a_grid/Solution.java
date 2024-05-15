@@ -5,7 +5,7 @@ package g3101_3200.s3148_maximum_difference_score_in_a_grid;
 import java.util.List;
 
 public class Solution {
-    public static int maxScore(List<List<Integer>> grid) {
+    public int maxScore(List<List<Integer>> grid) {
         int m = grid.size() - 1;
         List<Integer> row = grid.get(m);
         int n = row.size();
