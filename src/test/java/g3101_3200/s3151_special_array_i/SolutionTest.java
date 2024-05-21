@@ -20,4 +20,9 @@ class SolutionTest {
     void isArraySpecial3() {
         assertThat(new Solution().isArraySpecial(new int[] {4, 3, 1, 6}), equalTo(false));
     }
+
+    @Test
+    void isArraySpecial4() {
+        assertThat(new Solution().isArraySpecial(new int[] {2, 10}), equalTo(false));
+    }
 }
