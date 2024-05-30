@@ -5,6 +5,7 @@ package g3101_3200.s3160_find_the_number_of_distinct_colors_among_the_balls;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("java:S1172")
 public class Solution {
     public int[] queryResults(int ignoredLimit, int[][] queries) {
         Map<Integer, Integer> ballToColor = new HashMap<>();
