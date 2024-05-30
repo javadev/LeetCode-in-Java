@@ -68,9 +68,7 @@ public class Solution {
         }
 
         public void max(int n, int[] t) {
-            if (start > n) {
-                return;
-            } else if (end <= n) {
+            if (end <= n) {
                 t[0] = Math.max(t[0], len);
                 if (obstacle) {
                     t[1] = max;

@@ -21,4 +21,13 @@ class SolutionTest {
                         .getResults(new int[][] {{1, 7}, {2, 7, 6}, {1, 2}, {2, 7, 5}, {2, 7, 6}}),
                 equalTo(List.of(true, true, false)));
     }
+
+    @Test
+    void getResults3() {
+        assertThat(
+                new Solution()
+                        .getResults(
+                                new int[][] {{1, 4}, {1, 9}, {2, 15, 4}, {2, 11, 6}, {2, 13, 10}}),
+                equalTo(List.of(true, false, false)));
+    }
 }
