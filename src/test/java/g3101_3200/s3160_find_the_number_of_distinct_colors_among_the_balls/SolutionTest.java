@@ -20,4 +20,12 @@ class SolutionTest {
                         .queryResults(4, new int[][] {{0, 1}, {1, 2}, {2, 2}, {3, 4}, {4, 5}}),
                 equalTo(new int[] {1, 2, 2, 3, 4}));
     }
+
+    @Test
+    void queryResults3() {
+        assertThat(
+                new Solution()
+                        .queryResults(1, new int[][] {{0, 2}, {1, 10}, {0, 10}, {0, 3}, {1, 5}}),
+                equalTo(new int[] {1, 2, 1, 2, 2}));
+    }
 }
