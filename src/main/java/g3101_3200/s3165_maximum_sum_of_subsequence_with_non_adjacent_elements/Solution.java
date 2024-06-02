@@ -50,7 +50,7 @@ public class Solution {
             }
         }
 
-        private static Record[] seg;
+        private final Record[] seg;
         private final int[] nums;
 
         public SegTree(int[] nums) {
@@ -74,7 +74,7 @@ public class Solution {
         }
 
         // merge [2*k+1, 2*k+2] into k
-        private static void merge(int k) {
+        private void merge(int k) {
             seg[k].takeFirstSkipLast =
                     Math.max(
                             seg[2 * k + 1].takeFirstSkipLast + seg[2 * k + 2].skipLast(),
@@ -104,7 +104,7 @@ public class Solution {
             update(idx, val, k, i, j);
         }
 
-        private static void update(int idx, int val, int k, int i, int j) {
+        private void update(int idx, int val, int k, int i, int j) {
             if (i == j) {
                 seg[k].takeFirstTakeLast = val;
                 return;
