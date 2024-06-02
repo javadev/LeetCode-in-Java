@@ -19,107 +19,107 @@ public class Solution {
         }
         return ans;
     }
-}
 
-class SegTree {
-    private static class Record {
-        int takeFirstTakeLast;
-        int takeFirstSkipLast;
-        int skipFirstSkipLast;
-        int skipFirstTakeLast;
+    static class SegTree {
+        private static class Record {
+            int takeFirstTakeLast;
+            int takeFirstSkipLast;
+            int skipFirstSkipLast;
+            int skipFirstTakeLast;
 
-        public Integer getMax() {
-            return Stream.of(
-                            this.takeFirstSkipLast,
-                            this.takeFirstTakeLast,
-                            this.skipFirstSkipLast,
-                            this.skipFirstTakeLast)
-                    .max(Integer::compare)
-                    .orElse(null);
+            public Integer getMax() {
+                return Stream.of(
+                                this.takeFirstSkipLast,
+                                this.takeFirstTakeLast,
+                                this.skipFirstSkipLast,
+                                this.skipFirstTakeLast)
+                        .max(Integer::compare)
+                        .orElse(null);
+            }
+
+            public Integer skipLast() {
+                return Stream.of(this.takeFirstSkipLast, this.skipFirstSkipLast)
+                        .max(Integer::compare)
+                        .orElse(null);
+            }
+
+            public Integer takeLast() {
+                return Stream.of(this.skipFirstTakeLast, this.takeFirstTakeLast)
+                        .max(Integer::compare)
+                        .orElse(null);
+            }
         }
 
-        public Integer skipLast() {
-            return Stream.of(this.takeFirstSkipLast, this.skipFirstSkipLast)
-                    .max(Integer::compare)
-                    .orElse(null);
+        private static Record[] seg;
+        private final int[] nums;
+
+        public SegTree(int[] nums) {
+            this.nums = nums;
+            seg = new Record[4 * nums.length];
+            for (int i = 0; i < 4 * nums.length; ++i) {
+                seg[i] = new Record();
+            }
+            build(0, nums.length - 1, 0);
         }
 
-        public Integer takeLast() {
-            return Stream.of(this.skipFirstTakeLast, this.takeFirstTakeLast)
-                    .max(Integer::compare)
-                    .orElse(null);
+        private void build(int i, int j, int k) {
+            if (i == j) {
+                seg[k].takeFirstTakeLast = nums[i];
+                return;
+            }
+            int mid = (i + j) >> 1;
+            build(i, mid, 2 * k + 1);
+            build(mid + 1, j, 2 * k + 2);
+            merge(k);
         }
-    }
 
-    private static Record[] seg;
-    private final int[] nums;
+        // merge [2*k+1, 2*k+2] into k
+        private static void merge(int k) {
+            seg[k].takeFirstSkipLast =
+                    Math.max(
+                            seg[2 * k + 1].takeFirstSkipLast + seg[2 * k + 2].skipLast(),
+                            seg[2 * k + 1].takeFirstTakeLast + seg[2 * k + 2].skipFirstSkipLast);
 
-    public SegTree(int[] nums) {
-        this.nums = nums;
-        seg = new Record[4 * nums.length];
-        for (int i = 0; i < 4 * nums.length; ++i) {
-            seg[i] = new Record();
+            seg[k].takeFirstTakeLast =
+                    Math.max(
+                            seg[2 * k + 1].takeFirstSkipLast + seg[2 * k + 2].takeLast(),
+                            seg[2 * k + 1].takeFirstTakeLast + seg[2 * k + 2].skipFirstTakeLast);
+
+            seg[k].skipFirstTakeLast =
+                    Math.max(
+                            seg[2 * k + 1].skipFirstSkipLast + seg[2 * k + 2].takeLast(),
+                            seg[2 * k + 1].skipFirstTakeLast + seg[2 * k + 2].skipFirstTakeLast);
+
+            seg[k].skipFirstSkipLast =
+                    Math.max(
+                            seg[2 * k + 1].skipFirstSkipLast + seg[2 * k + 2].skipLast(),
+                            seg[2 * k + 1].skipFirstTakeLast + seg[2 * k + 2].skipFirstSkipLast);
         }
-        build(0, nums.length - 1, 0);
-    }
 
-    private void build(int i, int j, int k) {
-        if (i == j) {
-            seg[k].takeFirstTakeLast = nums[i];
-            return;
+        // child -> parent
+        public void update(int idx, int val) {
+            int i = 0;
+            int j = nums.length - 1;
+            int k = 0;
+            update(idx, val, k, i, j);
         }
-        int mid = (i + j) >> 1;
-        build(i, mid, 2 * k + 1);
-        build(mid + 1, j, 2 * k + 2);
-        merge(k);
-    }
 
-    // merge [2*k+1, 2*k+2] into k
-    private static void merge(int k) {
-        seg[k].takeFirstSkipLast =
-                Math.max(
-                        seg[2 * k + 1].takeFirstSkipLast + seg[2 * k + 2].skipLast(),
-                        seg[2 * k + 1].takeFirstTakeLast + seg[2 * k + 2].skipFirstSkipLast);
-
-        seg[k].takeFirstTakeLast =
-                Math.max(
-                        seg[2 * k + 1].takeFirstSkipLast + seg[2 * k + 2].takeLast(),
-                        seg[2 * k + 1].takeFirstTakeLast + seg[2 * k + 2].skipFirstTakeLast);
-
-        seg[k].skipFirstTakeLast =
-                Math.max(
-                        seg[2 * k + 1].skipFirstSkipLast + seg[2 * k + 2].takeLast(),
-                        seg[2 * k + 1].skipFirstTakeLast + seg[2 * k + 2].skipFirstTakeLast);
-
-        seg[k].skipFirstSkipLast =
-                Math.max(
-                        seg[2 * k + 1].skipFirstSkipLast + seg[2 * k + 2].skipLast(),
-                        seg[2 * k + 1].skipFirstTakeLast + seg[2 * k + 2].skipFirstSkipLast);
-    }
-
-    // child -> parent
-    public void update(int idx, int val) {
-        int i = 0;
-        int j = nums.length - 1;
-        int k = 0;
-        update(idx, val, k, i, j);
-    }
-
-    private static void update(int idx, int val, int k, int i, int j) {
-        if (i == j) {
-            seg[k].takeFirstTakeLast = val;
-            return;
+        private static void update(int idx, int val, int k, int i, int j) {
+            if (i == j) {
+                seg[k].takeFirstTakeLast = val;
+                return;
+            }
+            int mid = (i + j) >> 1;
+            if (idx <= mid) {
+                update(idx, val, 2 * k + 1, i, mid);
+            } else {
+                update(idx, val, 2 * k + 2, mid + 1, j);
+            }
+            merge(k);
         }
-        int mid = (i + j) >> 1;
-        if (idx <= mid) {
-            update(idx, val, 2 * k + 1, i, mid);
-        } else {
-            update(idx, val, 2 * k + 2, mid + 1, j);
-        }
-        merge(k);
-    }
 
-    public int getMax() {
-        return seg[0].getMax();
+        public int getMax() {
+            return seg[0].getMax();
+        }
     }
 }
