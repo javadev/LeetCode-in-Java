@@ -3,13 +3,12 @@ package g3101_3200.s3165_maximum_sum_of_subsequence_with_non_adjacent_elements;
 // #Hard #Array #Dynamic_Programming #Divide_and_Conquer #Segment_Tree
 // #2024_06_02_Time_1927_ms_(87.75%)_Space_82.1_MB_(5.31%)
 
-import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class Solution {
-    private static int MOD = 1_000_000_007;
+    private static final int MOD = 1_000_000_007;
 
     public int maximumSumSubsequence(int[] nums, int[][] queries) {
-        var n = nums.length;
         int ans = 0;
         SegTree segTree = new SegTree(nums);
         for (int[] q : queries) {
@@ -23,43 +22,44 @@ public class Solution {
 }
 
 class SegTree {
-    private class Record {
+    private static class Record {
         int takeFirstTakeLast;
         int takeFirstSkipLast;
         int skipFirstSkipLast;
         int skipFirstTakeLast;
 
         public Integer getMax() {
-            return Arrays.asList(
+            return Stream.of(
                             this.takeFirstSkipLast,
                             this.takeFirstTakeLast,
                             this.skipFirstSkipLast,
                             this.skipFirstTakeLast)
-                    .stream()
                     .max(Integer::compare)
                     .orElse(null);
         }
 
         public Integer skipLast() {
-            return Arrays.asList(this.takeFirstSkipLast, this.skipFirstSkipLast).stream()
+            return Stream.of(this.takeFirstSkipLast, this.skipFirstSkipLast)
                     .max(Integer::compare)
                     .orElse(null);
         }
 
         public Integer takeLast() {
-            return Arrays.asList(this.skipFirstTakeLast, this.takeFirstTakeLast).stream()
+            return Stream.of(this.skipFirstTakeLast, this.takeFirstTakeLast)
                     .max(Integer::compare)
                     .orElse(null);
         }
     }
 
     private static Record[] seg;
-    private static int[] nums;
+    private final int[] nums;
 
     public SegTree(int[] nums) {
         this.nums = nums;
         seg = new Record[4 * nums.length];
-        for (int i = 0; i < 4 * nums.length; ++i) seg[i] = new Record();
+        for (int i = 0; i < 4 * nums.length; ++i) {
+            seg[i] = new Record();
+        }
         build(0, nums.length - 1, 0);
     }
 
