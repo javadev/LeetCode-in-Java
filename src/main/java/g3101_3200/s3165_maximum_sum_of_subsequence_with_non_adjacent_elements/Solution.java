@@ -1,7 +1,7 @@
 package g3101_3200.s3165_maximum_sum_of_subsequence_with_non_adjacent_elements;
 
 // #Hard #Array #Dynamic_Programming #Divide_and_Conquer #Segment_Tree
-// #2024_06_02_Time_1927_ms_(87.75%)_Space_82.1_MB_(5.31%)
+// #2024_06_04_Time_2046_ms_(85.84%)_Space_71.9_MB_(5.09%)
 
 import java.util.stream.Stream;
 
@@ -34,19 +34,19 @@ public class Solution {
                                 this.skipFirstSkipLast,
                                 this.skipFirstTakeLast)
                         .max(Integer::compare)
-                        .orElse(null);
+                        .get();
             }
 
             public Integer skipLast() {
                 return Stream.of(this.takeFirstSkipLast, this.skipFirstSkipLast)
                         .max(Integer::compare)
-                        .orElse(null);
+                        .get();
             }
 
             public Integer takeLast() {
                 return Stream.of(this.skipFirstTakeLast, this.takeFirstTakeLast)
                         .max(Integer::compare)
-                        .orElse(null);
+                        .get();
             }
         }
 
