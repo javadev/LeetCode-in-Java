@@ -29,7 +29,9 @@ public class Solution {
         }
         StringBuilder sb = new StringBuilder();
         for (char c : arr) {
-            if (c != '#') sb.append(c);
+            if (c != '#') {
+                sb.append(c);
+            }
         }
         return sb.toString();
     }
