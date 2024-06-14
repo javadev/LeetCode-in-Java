@@ -52,7 +52,6 @@ public class Solution {
                     break;
                 }
             }
-            last++;
         }
         return maxSum + max;
     }
