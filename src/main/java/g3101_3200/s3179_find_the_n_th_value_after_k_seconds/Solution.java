@@ -16,15 +16,12 @@ public class Solution {
     private int combination(int a, int b) {
         long numerator = 1;
         long denominator = 1;
-
         for (int i = 0; i < b; i++) {
             numerator = (numerator * (a - i)) % mod;
             denominator = (denominator * (i + 1)) % mod;
         }
-
         // Calculate the modular inverse of denominator
         long denominatorInverse = power(denominator, mod - 2);
-
         return (int) ((numerator * denominatorInverse) % mod);
     }
 
