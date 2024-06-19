@@ -4,7 +4,7 @@
     <groupId>com.github.javadev</groupId>
     <artifactId>leetcode-in-java21</artifactId>
     <packaging>jar</packaging>
-    <version>1.32</version>
+    <version>1.33</version>
     <name>leetcode-in-java</name>
     <description>Java-based LeetCode algorithm problem solutions, regularly updated</description>
     <url>https://github.com/javadev/LeetCode-in-Java</url>

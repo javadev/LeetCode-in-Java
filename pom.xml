@@ -4,7 +4,7 @@
     <groupId>com.github.javadev</groupId>
     <artifactId>leetcode-in-java</artifactId>
     <packaging>jar</packaging>
-    <version>1.32-SNAPSHOT</version>
+    <version>1.33-SNAPSHOT</version>
     <name>leetcode-in-java</name>
     <description>Java-based LeetCode algorithm problem solutions, regularly updated</description>
     <url>https://github.com/javadev/LeetCode-in-Java</url>
