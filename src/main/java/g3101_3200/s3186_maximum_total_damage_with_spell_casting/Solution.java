@@ -23,7 +23,7 @@ public class Solution {
         }
         long[] dp = new long[maxPower + 6];
         dp[1] = counts[1];
-        dp[2] = Math.max(counts[2] * 2, dp[1]);
+        dp[2] = Math.max(counts[2] * 2L, dp[1]);
         for (int i = 3; i <= maxPower; i++) {
             dp[i] = Math.max(counts[i] * i + dp[i - 3], Math.max(dp[i - 1], dp[i - 2]));
         }
@@ -44,7 +44,7 @@ public class Solution {
             } else {
                 long curVal =
                         Math.max((long) curPower * count + prevs[3], Math.max(prevs[1], prevs[2]));
-                int diff = Math.min((int) (p - curPower), prevs.length - 1);
+                int diff = Math.min(p - curPower, prevs.length - 1);
                 long nextCurVal = (diff == 1) ? 0 : Math.max(prevs[3], Math.max(curVal, prevs[2]));
                 // Shift the values in prevs[].
                 int k = prevs.length - 1;
