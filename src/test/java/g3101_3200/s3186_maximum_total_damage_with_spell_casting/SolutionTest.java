@@ -15,4 +15,11 @@ class SolutionTest {
     void maximumTotalDamage2() {
         assertThat(new Solution().maximumTotalDamage(new int[] {7, 1, 6, 6}), equalTo(13L));
     }
+
+    @Test
+    void maximumTotalDamage3() {
+        assertThat(
+                new Solution().maximumTotalDamage(new int[] {1_000_001, 1, 6, 6}),
+                equalTo(1000014L));
+    }
 }
