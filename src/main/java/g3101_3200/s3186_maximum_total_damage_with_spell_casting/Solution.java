@@ -49,7 +49,9 @@ public class Solution {
                 // Shift the values in prevs[].
                 int k = prevs.length - 1;
                 if (diff < prevs.length - 1) {
-                    while (k > diff) prevs[k] = prevs[k-- - diff];
+                    while (k > diff) {
+                        prevs[k] = prevs[k-- - diff];
+                    }
                     prevs[k--] = curVal;
                 }
                 while (k > 0) {
