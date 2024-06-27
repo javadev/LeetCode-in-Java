@@ -5,7 +5,7 @@ package g3101_3200.s3193_count_the_number_of_inversions;
 import java.util.Arrays;
 
 public class Solution {
-    private final int mod = 1_000_000_007;
+    private static final int MOD = 1_000_000_007;
 
     public int numberOfPermutations(int n, int[][] r) {
         Arrays.sort(r, (o1, o2) -> o1[0] - o2[0]);
@@ -20,15 +20,15 @@ public class Solution {
         for (int i = 1; i < m.length; i++) {
             m[i][0] = m[i - 1][0];
             for (int j = 1; j <= i; j++) {
-                m[i][j] = (m[i][j] + m[i][j - 1]) % mod;
-                m[i][j] = (m[i][j] + m[i - 1][j]) % mod;
+                m[i][j] = (m[i][j] + m[i][j - 1]) % MOD;
+                m[i][j] = (m[i][j] + m[i - 1][j]) % MOD;
             }
             for (int j = i + 1; j <= r[ri][1]; j++) {
-                m[i][j] = (m[i][j] + m[i][j - 1]) % mod;
-                m[i][j] = (m[i][j] + m[i - 1][j]) % mod;
+                m[i][j] = (m[i][j] + m[i][j - 1]) % MOD;
+                m[i][j] = (m[i][j] + m[i - 1][j]) % MOD;
                 m[i][j] = (m[i][j] - m[i - 1][j - i - 1]);
                 if (m[i][j] < 0) {
-                    m[i][j] += mod;
+                    m[i][j] += MOD;
                 }
             }
             if (r[ri][0] == i) {
@@ -38,7 +38,7 @@ public class Solution {
                 }
                 Arrays.fill(m[i], 0);
                 m[i][r[ri][1]] = 1;
-                a = (a * t) % mod;
+                a = (a * t) % MOD;
                 ri++;
             }
         }

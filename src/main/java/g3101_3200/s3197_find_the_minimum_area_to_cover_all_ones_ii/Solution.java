@@ -2,6 +2,7 @@ package g3101_3200.s3197_find_the_minimum_area_to_cover_all_ones_ii;
 
 // #Hard #Array #Matrix #Enumeration #2024_06_26_Time_10_ms_(99.66%)_Space_44.1_MB_(85.42%)
 
+@SuppressWarnings("java:S135")
 public class Solution {
     // rectangle unit count
     private int[][] ruc;

@@ -9,7 +9,7 @@ public class Solution {
         Arrays.sort(nums);
         double m = 102.0;
         for (int i = 0, l = nums.length; i < l / 2; i++) {
-            m = Math.min(m, nums[i] + nums[l - i - 1]);
+            m = Math.min(m, nums[i] + (double) nums[l - i - 1]);
         }
         return m / 2.0;
     }
