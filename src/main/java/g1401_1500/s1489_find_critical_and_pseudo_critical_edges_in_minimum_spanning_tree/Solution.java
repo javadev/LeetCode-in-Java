@@ -48,9 +48,6 @@ public class Solution {
                     pce.addAll(cur);
                     pce.add(ind);
                 }
-                if (!p) {
-                    System.out.println("Should not reach here");
-                }
             }
         }
         // critical edges

@@ -35,10 +35,12 @@ public class H2O {
             this.h2O = h2O;
         }
 
+        private static void run2() {}
+
         @Override
         public void run() {
             try {
-                h2O.hydrogen(() -> System.out.print('H'));
+                h2O.hydrogen(HydrogenRunnable::run2);
             } catch (InterruptedException ignored) {
                 // ignored
             }
@@ -52,10 +54,12 @@ public class H2O {
             this.h2O = h2O;
         }
 
+        private static void run2() {}
+
         @Override
         public void run() {
             try {
-                h2O.oxygen(() -> System.out.print('O'));
+                h2O.oxygen(OxygenRunnable::run2);
             } catch (InterruptedException ignored) {
                 // ignored
             }
