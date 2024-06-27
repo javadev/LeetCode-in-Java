@@ -41,11 +41,15 @@ public class Solution {
         if (splitVertical) {
             for (int c = c0 + 1; c < c1; c++) {
                 int a1 = minArea(r0, c0, r1, c);
-                if (a1 == 0) continue;
+                if (a1 == 0) {
+                    continue;
+                }
                 int a2 = minArea(r0, c, r1, c1);
-                if (a2 != 0) min = Math.min(min, a1 + a2);
+                if (a2 != 0) {
+                    min = Math.min(min, a1 + a2);
+                }
             }
-        } else
+        } else {
             for (int r = r0 + 1; r < r1; r++) {
                 int a1 = minArea(r0, c0, r, c1);
                 if (a1 == 0) {
@@ -56,6 +60,7 @@ public class Solution {
                     min = Math.min(min, a1 + a2);
                 }
             }
+        }
         return min;
     }
 
@@ -79,9 +84,11 @@ public class Solution {
                     }
                     a2 = minSum2(0, 0, height, c, secondSplitVertical);
                 }
-                if (a2 != Integer.MAX_VALUE) min = Math.min(min, a1 + a2);
+                if (a2 != Integer.MAX_VALUE) {
+                    min = Math.min(min, a1 + a2);
+                }
             }
-        } else
+        } else {
             for (int r = 1; r < height; r++) {
                 int a1;
                 int a2;
@@ -102,6 +109,7 @@ public class Solution {
                     min = Math.min(min, a1 + a2);
                 }
             }
+        }
         return min;
     }
 
