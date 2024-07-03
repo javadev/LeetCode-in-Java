@@ -34,7 +34,6 @@ implementation 'com.github.javadev:leetcode-in-java:1.33'
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
 
 ##
-* [SQL I](#sql-i)
 * [Level 1](#level-1)
 * [Level 2](#level-2)
 * [Udemy](#udemy)
@@ -48,91 +47,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.33'
 * [Programming Skills I](#programming-skills-i)
 * [Programming Skills II](#programming-skills-ii)
 * [Graph Theory I](#graph-theory-i)
-
-### SQL I
-
-#### Day 1 Select
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0595 |[Big Countries](src/main/java/g0501_0600/s0595_big_countries/script.sql)| Easy | Database | 262 | 84.64
-| 1757 |[Recyclable and Low Fat Products](src/main/java/g1701_1800/s1757_recyclable_and_low_fat_products/script.sql)| Easy | Database | 475 | 71.54
-| 0584 |[Find Customer Referee](src/main/java/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database | 531 | 58.63
-| 0183 |[Customers Who Never Order](src/main/java/g0101_0200/s0183_customers_who_never_order/script.sql)| Easy | Database | 376 | 98.73
-
-#### Day 2 Select and Order
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1873 |[Calculate Special Bonus](src/main/java/g1801_1900/s1873_calculate_special_bonus/script.sql)| Easy | Database | 543 | 71.60
-| 0627 |[Swap Salary](src/main/java/g0601_0700/s0627_swap_salary/script.sql)| Easy | Database | 191 | 96.89
-| 0196 |[Delete Duplicate Emails](src/main/java/g0101_0200/s0196_delete_duplicate_emails/script.sql)| Easy | Database | 903 | 48.10
-
-#### Day 3 String Processing Functions
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1667 |[Fix Names in a Table](src/main/java/g1601_1700/s1667_fix_names_in_a_table/script.sql)| Easy | Database | 559 | 80.29
-| 1484 |[Group Sold Products By The Date](src/main/java/g1401_1500/s1484_group_sold_products_by_the_date/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 395 | 77.20
-| 1527 |[Patients With a Condition](src/main/java/g1501_1600/s1527_patients_with_a_condition/script.sql)| Easy | Database | 308 | 66.93
-
-#### Day 4 Union and Select
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1965 |[Employees With Missing Information](src/main/java/g1901_2000/s1965_employees_with_missing_information/script.sql)| Easy | Database | 617 | 30.40
-| 1795 |[Rearrange Products Table](src/main/java/g1701_1800/s1795_rearrange_products_table/script.sql)| Easy | Database | 497 | 64.83
-| 0608 |[Tree Node](src/main/java/g0601_0700/s0608_tree_node/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 347 | 95.17
-| 0176 |[Second Highest Salary](src/main/java/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database | 225 | 73.10
-
-#### Day 5 Union
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0175 |[Combine Two Tables](src/main/java/g0101_0200/s0175_combine_two_tables/script.sql)| Easy | Database | 491 | 32.30
-| 1581 |[Customer Who Visited but Did Not Make Any Transactions](src/main/java/g1501_1600/s1581_customer_who_visited_but_did_not_make_any_transactions/script.sql)| Easy | Database | 1039 | 76.99
-| 1148 |[Article Views I](src/main/java/g1101_1200/s1148_article_views_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 783 | 64.09
-
-#### Day 6 Union
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0197 |[Rising Temperature](src/main/java/g0101_0200/s0197_rising_temperature/script.sql)| Easy | Database | 342 | 93.76
-| 0607 |[Sales Person](src/main/java/g0601_0700/s0607_sales_person/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 1046 | 86.04
-
-#### Day 7 Function
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1141 |[User Activity for the Past 30 Days I](src/main/java/g1101_1200/s1141_user_activity_for_the_past_30_days_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 849 | 72.54
-| 1693 |[Daily Leads and Partners](src/main/java/g1601_1700/s1693_daily_leads_and_partners/script.sql)| Easy | Database | 463 | 78.98
-| 1729 |[Find Followers Count](src/main/java/g1701_1800/s1729_find_followers_count/script.sql)| Easy | Database | 456 | 88.39
-
-#### Day 8 Function
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0586 |[Customer Placing the Largest Number of Orders](src/main/java/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 484 | 66.42
-| 0511 |[Game Play Analysis I](src/main/java/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 586 | 56.94
-| 1890 |[The Latest Login in 2020](src/main/java/g1801_1900/s1890_the_latest_login_in_2020/script.sql)| Easy | Database | 571 | 73.59
-| 1741 |[Find Total Time Spent by Each Employee](src/main/java/g1701_1800/s1741_find_total_time_spent_by_each_employee/script.sql)| Easy | Database | 414 | 93.27
-
-#### Day 9 Control of Flow
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1393 |[Capital Gain/Loss](src/main/java/g1301_1400/s1393_capital_gainloss/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 428 | 92.01
-| 1407 |[Top Travellers](src/main/java/g1401_1500/s1407_top_travellers/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 682 | 70.16
-| 1158 |[Market Analysis I](src/main/java/g1101_1200/s1158_market_analysis_i/script.sql)| Medium | Database | 2511 | 78.92
-
-#### Day 10 Where
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0182 |[Duplicate Emails](src/main/java/g0101_0200/s0182_duplicate_emails/script.sql)| Easy | Database | 303 | 92.08
-| 1050 |[Actors and Directors Who Cooperated At Least Three Times](src/main/java/g1001_1100/s1050_actors_and_directors_who_cooperated_at_least_three_times/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 344 | 76.48
-| 1587 |[Bank Account Summary II](src/main/java/g1501_1600/s1587_bank_account_summary_ii/script.sql)| Easy | Database | 630 | 60.32
-| 1084 |[Sales Analysis III](src/main/java/g1001_1100/s1084_sales_analysis_iii/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 1066 | 69.71
+* [SQL I](#sql-i)
 
 ### Level 1
 
@@ -334,7 +249,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.33'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0416 |[Partition Equal Subset Sum](src/main/java/g0401_0500/s0416_partition_equal_subset_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Big_O_Time_O(n\*sums)_Space_O(n\*sums) | 27 | 94.53
-| 0152 |[Maximum Product Subarray](src/main/java/g0101_0200/s0152_maximum_product_subarray/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Big_O_Time_O(N)_Space_O(1) | 0 | 100.00
+| 0152 |[Maximum Product Subarray](src/main/java/g0101_0200/s0152_maximum_product_subarray/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Big_O_Time_O(N)_Space_O(1) | 1 | 92.31
 
 #### Day 14 Sliding Window/Two Pointer
 
@@ -560,7 +475,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.33'
 | 0118 |[Pascal's Triangle](src/main/java/g0101_0200/s0118_pascals_triangle/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming | 1 | 67.08
 | 0119 |[Pascal's Triangle II](src/main/java/g0101_0200/s0119_pascals_triangle_ii/Solution.java)| Easy | Array, Dynamic_Programming | 0 | 100.00
 | 0139 |[Word Break](src/main/java/g0101_0200/s0139_word_break/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Dynamic_Programming, Trie, Memoization, Big_O_Time_O(M+max\*N)_Space_O(M+N+max) | 2 | 97.08
-| 0152 |[Maximum Product Subarray](src/main/java/g0101_0200/s0152_maximum_product_subarray/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Big_O_Time_O(N)_Space_O(1) | 0 | 100.00
+| 0152 |[Maximum Product Subarray](src/main/java/g0101_0200/s0152_maximum_product_subarray/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Big_O_Time_O(N)_Space_O(1) | 1 | 92.31
 | 0198 |[House Robber](src/main/java/g0101_0200/s0198_house_robber/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 | 0213 |[House Robber II](src/main/java/g0201_0300/s0213_house_robber_ii/Solution.java)| Medium | Array, Dynamic_Programming | 0 | 100.00
 | 0509 |[Fibonacci Number](src/main/java/g0501_0600/s0509_fibonacci_number/Solution.java)| Easy | Dynamic_Programming, Math, Recursion, Memoization | 0 | 100.00
@@ -1390,7 +1305,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.33'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0152 |[Maximum Product Subarray](src/main/java/g0101_0200/s0152_maximum_product_subarray/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Big_O_Time_O(N)_Space_O(1) | 0 | 100.00
+| 0152 |[Maximum Product Subarray](src/main/java/g0101_0200/s0152_maximum_product_subarray/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Big_O_Time_O(N)_Space_O(1) | 1 | 92.31
 | 1567 |[Maximum Length of Subarray With Positive Product](src/main/java/g1501_1600/s1567_maximum_length_of_subarray_with_positive_product/Solution.java)| Medium | Array, Dynamic_Programming, Greedy | 4 | 80.86
 
 #### Day 7
@@ -1843,6 +1758,91 @@ implementation 'com.github.javadev:leetcode-in-java:1.33'
 | 1615 |[Maximal Network Rank](src/main/java/g1601_1700/s1615_maximal_network_rank/Solution.java)| Medium | Graph | 3 | 97.34
 | 0886 |[Possible Bipartition](src/main/java/g0801_0900/s0886_possible_bipartition/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 20 | 80.12
 | 0785 |[Is Graph Bipartite?](src/main/java/g0701_0800/s0785_is_graph_bipartite/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 0 | 100.00
+
+### SQL I
+
+#### Day 1 Select
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0595 |[Big Countries](src/main/java/g0501_0600/s0595_big_countries/script.sql)| Easy | Database | 262 | 84.64
+| 1757 |[Recyclable and Low Fat Products](src/main/java/g1701_1800/s1757_recyclable_and_low_fat_products/script.sql)| Easy | Database | 475 | 71.54
+| 0584 |[Find Customer Referee](src/main/java/g0501_0600/s0584_find_customer_referee/script.sql)| Easy | Database | 531 | 58.63
+| 0183 |[Customers Who Never Order](src/main/java/g0101_0200/s0183_customers_who_never_order/script.sql)| Easy | Database | 376 | 98.73
+
+#### Day 2 Select and Order
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1873 |[Calculate Special Bonus](src/main/java/g1801_1900/s1873_calculate_special_bonus/script.sql)| Easy | Database | 543 | 71.60
+| 0627 |[Swap Salary](src/main/java/g0601_0700/s0627_swap_salary/script.sql)| Easy | Database | 191 | 96.89
+| 0196 |[Delete Duplicate Emails](src/main/java/g0101_0200/s0196_delete_duplicate_emails/script.sql)| Easy | Database | 903 | 48.10
+
+#### Day 3 String Processing Functions
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1667 |[Fix Names in a Table](src/main/java/g1601_1700/s1667_fix_names_in_a_table/script.sql)| Easy | Database | 559 | 80.29
+| 1484 |[Group Sold Products By The Date](src/main/java/g1401_1500/s1484_group_sold_products_by_the_date/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 395 | 77.20
+| 1527 |[Patients With a Condition](src/main/java/g1501_1600/s1527_patients_with_a_condition/script.sql)| Easy | Database | 308 | 66.93
+
+#### Day 4 Union and Select
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1965 |[Employees With Missing Information](src/main/java/g1901_2000/s1965_employees_with_missing_information/script.sql)| Easy | Database | 617 | 30.40
+| 1795 |[Rearrange Products Table](src/main/java/g1701_1800/s1795_rearrange_products_table/script.sql)| Easy | Database | 497 | 64.83
+| 0608 |[Tree Node](src/main/java/g0601_0700/s0608_tree_node/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 347 | 95.17
+| 0176 |[Second Highest Salary](src/main/java/g0101_0200/s0176_second_highest_salary/script.sql)| Medium | Database | 225 | 73.10
+
+#### Day 5 Union
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0175 |[Combine Two Tables](src/main/java/g0101_0200/s0175_combine_two_tables/script.sql)| Easy | Database | 491 | 32.30
+| 1581 |[Customer Who Visited but Did Not Make Any Transactions](src/main/java/g1501_1600/s1581_customer_who_visited_but_did_not_make_any_transactions/script.sql)| Easy | Database | 1039 | 76.99
+| 1148 |[Article Views I](src/main/java/g1101_1200/s1148_article_views_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 783 | 64.09
+
+#### Day 6 Union
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0197 |[Rising Temperature](src/main/java/g0101_0200/s0197_rising_temperature/script.sql)| Easy | Database | 342 | 93.76
+| 0607 |[Sales Person](src/main/java/g0601_0700/s0607_sales_person/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 1046 | 86.04
+
+#### Day 7 Function
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1141 |[User Activity for the Past 30 Days I](src/main/java/g1101_1200/s1141_user_activity_for_the_past_30_days_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 849 | 72.54
+| 1693 |[Daily Leads and Partners](src/main/java/g1601_1700/s1693_daily_leads_and_partners/script.sql)| Easy | Database | 463 | 78.98
+| 1729 |[Find Followers Count](src/main/java/g1701_1800/s1729_find_followers_count/script.sql)| Easy | Database | 456 | 88.39
+
+#### Day 8 Function
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0586 |[Customer Placing the Largest Number of Orders](src/main/java/g0501_0600/s0586_customer_placing_the_largest_number_of_orders/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 484 | 66.42
+| 0511 |[Game Play Analysis I](src/main/java/g0501_0600/s0511_game_play_analysis_i/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 586 | 56.94
+| 1890 |[The Latest Login in 2020](src/main/java/g1801_1900/s1890_the_latest_login_in_2020/script.sql)| Easy | Database | 571 | 73.59
+| 1741 |[Find Total Time Spent by Each Employee](src/main/java/g1701_1800/s1741_find_total_time_spent_by_each_employee/script.sql)| Easy | Database | 414 | 93.27
+
+#### Day 9 Control of Flow
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1393 |[Capital Gain/Loss](src/main/java/g1301_1400/s1393_capital_gainloss/script.sql)| Medium | LeetCode_Curated_SQL_70, Database | 428 | 92.01
+| 1407 |[Top Travellers](src/main/java/g1401_1500/s1407_top_travellers/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 682 | 70.16
+| 1158 |[Market Analysis I](src/main/java/g1101_1200/s1158_market_analysis_i/script.sql)| Medium | Database | 2511 | 78.92
+
+#### Day 10 Where
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0182 |[Duplicate Emails](src/main/java/g0101_0200/s0182_duplicate_emails/script.sql)| Easy | Database | 303 | 92.08
+| 1050 |[Actors and Directors Who Cooperated At Least Three Times](src/main/java/g1001_1100/s1050_actors_and_directors_who_cooperated_at_least_three_times/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 344 | 76.48
+| 1587 |[Bank Account Summary II](src/main/java/g1501_1600/s1587_bank_account_summary_ii/script.sql)| Easy | Database | 630 | 60.32
+| 1084 |[Sales Analysis III](src/main/java/g1001_1100/s1084_sales_analysis_iii/script.sql)| Easy | LeetCode_Curated_SQL_70, Database | 1066 | 69.71
 
 ## Contributing
 Your ideas/fixes/algorithms are more than welcome!
