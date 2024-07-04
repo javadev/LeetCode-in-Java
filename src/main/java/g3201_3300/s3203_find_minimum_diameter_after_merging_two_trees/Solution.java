@@ -25,40 +25,36 @@ public class Solution {
         int d01;
         int[] q = new int[n];
         boolean[] ved = new boolean[n];
-        {
-            int qp = 0;
-            q[qp++] = 0;
-            ved[0] = true;
-            for (int i = 0; i < qp; i++) {
-                int cur = q[i];
-                for (int e : g[cur]) {
-                    if (!ved[e]) {
-                        ved[e] = true;
-                        q[qp++] = e;
-                    }
+        int qp = 0;
+        q[qp++] = 0;
+        ved[0] = true;
+        for (int i = 0; i < qp; i++) {
+            int cur = q[i];
+            for (int e : g[cur]) {
+                if (!ved[e]) {
+                    ved[e] = true;
+                    q[qp++] = e;
                 }
             }
-            f0 = q[n - 1];
         }
-        {
-            int[] d = new int[n];
-            int qp = 0;
-            Arrays.fill(ved, false);
-            q[qp++] = f0;
-            ved[f0] = true;
-            for (int i = 0; i < qp; i++) {
-                int cur = q[i];
-                for (int e : g[cur]) {
-                    if (!ved[e]) {
-                        ved[e] = true;
-                        q[qp++] = e;
-                        d[e] = d[cur] + 1;
-                    }
+        f0 = q[n - 1];
+        int[] d = new int[n];
+        qp = 0;
+        Arrays.fill(ved, false);
+        q[qp++] = f0;
+        ved[f0] = true;
+        for (int i = 0; i < qp; i++) {
+            int cur = q[i];
+            for (int e : g[cur]) {
+                if (!ved[e]) {
+                    ved[e] = true;
+                    q[qp++] = e;
+                    d[e] = d[cur] + 1;
                 }
             }
-            f1 = q[n - 1];
-            d01 = d[f1];
         }
+        f1 = q[n - 1];
+        d01 = d[f1];
         return new int[] {d01, f0, f1};
     }
 
