@@ -18,7 +18,7 @@ public class Solution {
         return ans;
     }
 
-    public static int[] diameter(int[][] g) {
+    private int[] diameter(int[][] g) {
         int n = g.length;
         int f0;
         int f1;
@@ -58,7 +58,7 @@ public class Solution {
         return new int[] {d01, f0, f1};
     }
 
-    public static int[][] packU(int n, int[][] ft) {
+    private int[][] packU(int n, int[][] ft) {
         int[][] g = new int[n][];
         int[] p = new int[n];
         for (int[] u : ft) {
