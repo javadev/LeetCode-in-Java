@@ -12,8 +12,7 @@ public class Solution {
         if (currentEnergy == 0 || currentEnergy < min) {
             return 0;
         }
-        long points = 0;
-        long sum = (long) currentEnergy;
+        long sum = currentEnergy;
         for (int i = n - 1; i >= 0; i--) {
             sum += enemyEnergies[i];
         }
