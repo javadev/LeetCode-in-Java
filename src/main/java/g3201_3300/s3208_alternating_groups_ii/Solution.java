@@ -4,7 +4,9 @@ package g3201_3300.s3208_alternating_groups_ii;
 
 public class Solution {
     public int numberOfAlternatingGroups(int[] colors, int k) {
-        int i = 0, len = 0, total = 0;
+        int i = 0;
+        int len = 0;
+        int total = 0;
         while (i < colors.length - 1) {
             int j = i + 1;
             if (colors[j] != colors[i]) {
@@ -14,7 +16,9 @@ public class Solution {
                     j++;
                     len++;
                 }
-                if (j == colors.length) break;
+                if (j == colors.length) {
+                    break;
+                }
                 total += Math.max(0, (len - k + 1));
             }
             i = j;
@@ -30,7 +34,9 @@ public class Solution {
                 j++;
                 len++;
             }
-            if (j >= k) len -= (j - k + 1);
+            if (j >= k) {
+                len -= (j - k + 1);
+            }
         }
         total += Math.max(0, (len - k + 1));
         return total;
