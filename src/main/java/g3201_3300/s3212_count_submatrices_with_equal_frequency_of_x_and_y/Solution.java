@@ -4,7 +4,6 @@ package g3201_3300.s3212_count_submatrices_with_equal_frequency_of_x_and_y;
 
 public class Solution {
     public int numberOfSubmatrices(char[][] grid) {
-        int m = grid.length;
         int n = grid[0].length;
         int ans = 0;
         int[][] row = new int[n][2];
