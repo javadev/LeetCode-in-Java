@@ -87,8 +87,8 @@ public class Solution {
                     int e = pair.get(1);
                     dm.putIfAbsent(e, new HashMap<>());
                     Map<Integer, Integer> qm = dm.get(e);
-                    int value = qm.getOrDefault(b, Integer.MAX_VALUE));
-                    qm.put(b, Math.min(value, costs[i]));
+                    qm.put(b, qm.getOrDefault(b, Integer.MAX_VALUE));
+                    qm.put(b, Math.min(qm.get(b), costs[i]));
                 }
             }
         }
