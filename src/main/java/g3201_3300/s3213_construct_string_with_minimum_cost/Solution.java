@@ -77,24 +77,8 @@ public class Solution {
                 }
             }
         }
-        Map<Integer, Map<Integer, Integer>> dm = new HashMap<>();
-        for (int i = 0; i < words.length; i++) {
-            String word = words[i];
-            if (word.length() >= 320) {
-                List<List<Integer>> q = find(targetPrefix, target, word);
-                for (List<Integer> pair : q) {
-                    int b = pair.get(0);
-                    int e = pair.get(1);
-                    dm.putIfAbsent(e, new HashMap<>());
-                    Map<Integer, Integer> qm = dm.get(e);
-                    if (qm.containsKey(b)) {
-                        qm.put(b, Math.min(qm.get(b), costs[i]));
-                    } else {
-                        qm.put(b, costs[i]);
-                    }
-                }
-            }
-        }
+        Map<Integer, Map<Integer, Integer>> dm =
+                getIntegerMapMap(target, words, costs, targetPrefix);
         List<NodeCostPair> d = new ArrayList<>();
         d.add(new NodeCostPair(root, 0));
         int[] dp = new int[target.length() + 1];
@@ -115,16 +99,7 @@ public class Solution {
                     q.add(new NodeCostPair(w, cost));
                 }
             }
-            Map<Integer, Integer> qm = dm.getOrDefault(i + 1, Collections.emptyMap());
-            for (Map.Entry<Integer, Integer> entry : qm.entrySet()) {
-                int b = entry.getKey();
-                if (dp[b] >= 0) {
-                    t =
-                            t == null
-                                    ? dp[b] + entry.getValue()
-                                    : Math.min(t, dp[b] + entry.getValue());
-                }
-            }
+            t = getInteger(dm, i, dp, t);
             if (t != null) {
                 dp[i + 1] = t;
                 q.add(new NodeCostPair(root, t));
@@ -132,6 +107,40 @@ public class Solution {
             d = q;
         }
         return dp[target.length()];
+    }
+
+    private Integer getInteger(Map<Integer, Map<Integer, Integer>> dm, int i, int[] dp, Integer t) {
+        Map<Integer, Integer> qm = dm.getOrDefault(i + 1, Collections.emptyMap());
+        for (Map.Entry<Integer, Integer> entry : qm.entrySet()) {
+            int b = entry.getKey();
+            if (dp[b] >= 0) {
+                t = t == null ? dp[b] + entry.getValue() : Math.min(t, dp[b] + entry.getValue());
+            }
+        }
+        return t;
+    }
+
+    private Map<Integer, Map<Integer, Integer>> getIntegerMapMap(
+            String target, String[] words, int[] costs, List<Integer> targetPrefix) {
+        Map<Integer, Map<Integer, Integer>> dm = new HashMap<>();
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            if (word.length() >= 320) {
+                List<List<Integer>> q = find(targetPrefix, target, word);
+                for (List<Integer> pair : q) {
+                    int b = pair.get(0);
+                    int e = pair.get(1);
+                    dm.putIfAbsent(e, new HashMap<>());
+                    Map<Integer, Integer> qm = dm.get(e);
+                    if (qm.containsKey(b)) {
+                        qm.put(b, Math.min(qm.get(b), costs[i]));
+                    } else {
+                        qm.put(b, costs[i]);
+                    }
+                }
+            }
+        }
+        return dm;
     }
 
     private static class Node {
