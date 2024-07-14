@@ -1,62 +1,165 @@
 package g3201_3300.s3213_construct_string_with_minimum_cost;
 
 // #Hard #Array #String #Dynamic_Programming #Suffix_Array
-// #2024_07_09_Time_182_ms_(100.00%)_Space_61.4_MB_(72.97%)
+// #2024_07_13_Time_1907_ms_(5.01%)_Space_100.9_MB_(5.09%)
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Solution {
-    private static int invalid = Integer.MAX_VALUE;
-
-    private static class Node {
-        int cost = -1;
-        Node[] chd = new Node[26];
-    }
-
-    private Node rt;
-
-    public int minimumCost(String target, String[] words, int[] costs) {
-        rt = new Node();
-        int m = words.length;
-        int n = target.length();
-        for (int i = 0; i < m; ++i) {
-            if (words[i].length() <= n) {
-                insert(words[i], costs[i]);
-            }
-        }
-        int[] dp = new int[n + 1];
-        Arrays.fill(dp, invalid);
-        dp[0] = 0;
-        for (int i = 0; i < n; ++i) {
-            if (dp[i] == invalid) {
-                continue;
-            }
-            int nowC = dp[i];
-            Node now = rt;
-            for (int j = i; now != null && j < n; ++j) {
-                int ch = target.charAt(j) - 'a';
-                now = now.chd[ch];
-                if (now != null && now.cost != -1) {
-                    dp[j + 1] = Math.min(dp[j + 1], nowC + now.cost);
+    List<Integer> buildKmpPrefix(String target) {
+        List<Integer> w = new ArrayList<>(Collections.nCopies(target.length(), 0));
+        int k = 0;
+        int i = 1;
+        while (i < target.length()) {
+            if (target.charAt(i) == target.charAt(k)) {
+                k++;
+                w.set(i, k);
+                i++;
+            } else {
+                if (k != 0) {
+                    k = w.get(k - 1);
+                } else {
+                    i++;
                 }
             }
         }
-
-        return dp[n] == invalid ? -1 : dp[n];
+        return w;
     }
 
-    private void insert(String wd, int cst) {
-        int len = wd.length();
-        Node now = rt;
-        for (int i = 0; i < len; ++i) {
-            int ch = wd.charAt(i) - 'a';
-            if (now.chd[ch] == null) {
-                now.chd[ch] = new Node();
+    List<List<Integer>> find(List<Integer> prefix, String target, String w) {
+        List<List<Integer>> result = new ArrayList<>();
+        int m = target.length();
+        int n = w.length();
+        int i = 0;
+        int k = 0;
+        while (i < m) {
+            if (target.charAt(i) == w.charAt(k)) {
+                i++;
+                k++;
             }
-            now = now.chd[ch];
+            if (k == n) {
+                result.add(Arrays.asList(i - k, i));
+                k = prefix.get(k - 1);
+            } else if (i < m && target.charAt(i) != w.charAt(k)) {
+                if (k != 0) {
+                    k = prefix.get(k - 1);
+                } else {
+                    i++;
+                }
+            }
         }
-        if (now.cost == -1 || now.cost > cst) {
-            now.cost = cst;
+        return result;
+    }
+
+    public int minimumCost(String target, String[] words, int[] costs) {
+        List<Integer> targetPrefix = buildKmpPrefix(target);
+        Node root = new Node();
+        for (int j = 0; j < words.length; j++) {
+            String x = words[j];
+            if (x.length() < 320) {
+                Node p = root;
+                for (int i = 0; i < x.length(); i++) {
+                    char c = x.charAt(i);
+                    p.children.putIfAbsent(c, new Node());
+                    p = p.children.get(c);
+                    if (i == x.length() - 1) {
+                        if (p.cost == null) {
+                            p.cost = costs[j];
+                        } else {
+                            p.cost = Math.min(costs[j], p.cost);
+                        }
+                    }
+                }
+            }
+        }
+        Map<Integer, Map<Integer, Integer>> dm =
+                getIntegerMapMap(target, words, costs, targetPrefix);
+        List<NodeCostPair> d = new ArrayList<>();
+        d.add(new NodeCostPair(root, 0));
+        int[] dp = new int[target.length() + 1];
+        Arrays.fill(dp, -1);
+        dp[0] = 0;
+        for (int i = 0; i < target.length(); i++) {
+            char x = target.charAt(i);
+            List<NodeCostPair> q = new ArrayList<>();
+            Integer t = null;
+            for (NodeCostPair pair : d) {
+                Node p = pair.node;
+                int cost = pair.cost;
+                if (p.children.containsKey(x)) {
+                    Node w = p.children.get(x);
+                    if (w.cost != null) {
+                        t = t == null ? cost + w.cost : Math.min(t, cost + w.cost);
+                    }
+                    q.add(new NodeCostPair(w, cost));
+                }
+            }
+            t = getInteger(dm, i, dp, t);
+            if (t != null) {
+                dp[i + 1] = t;
+                q.add(new NodeCostPair(root, t));
+            }
+            d = q;
+        }
+        return dp[target.length()];
+    }
+
+    private Integer getInteger(Map<Integer, Map<Integer, Integer>> dm, int i, int[] dp, Integer t) {
+        Map<Integer, Integer> qm = dm.getOrDefault(i + 1, Collections.emptyMap());
+        for (Map.Entry<Integer, Integer> entry : qm.entrySet()) {
+            int b = entry.getKey();
+            if (dp[b] >= 0) {
+                t = t == null ? dp[b] + entry.getValue() : Math.min(t, dp[b] + entry.getValue());
+            }
+        }
+        return t;
+    }
+
+    private Map<Integer, Map<Integer, Integer>> getIntegerMapMap(
+            String target, String[] words, int[] costs, List<Integer> targetPrefix) {
+        Map<Integer, Map<Integer, Integer>> dm = new HashMap<>();
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            if (word.length() >= 320) {
+                List<List<Integer>> q = find(targetPrefix, target, word);
+                for (List<Integer> pair : q) {
+                    int b = pair.get(0);
+                    int e = pair.get(1);
+                    dm.putIfAbsent(e, new HashMap<>());
+                    Map<Integer, Integer> qm = dm.get(e);
+                    if (qm.containsKey(b)) {
+                        qm.put(b, Math.min(qm.get(b), costs[i]));
+                    } else {
+                        qm.put(b, costs[i]);
+                    }
+                }
+            }
+        }
+        return dm;
+    }
+
+    private static class Node {
+        Map<Character, Node> children;
+        Integer cost;
+
+        public Node() {
+            this.children = new HashMap<>();
+            this.cost = null;
+        }
+    }
+
+    private static class NodeCostPair {
+        Node node;
+        int cost;
+
+        public NodeCostPair(Node node, int cost) {
+            this.node = node;
+            this.cost = cost;
         }
     }
 }
