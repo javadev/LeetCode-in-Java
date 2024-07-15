@@ -1,165 +1,100 @@
 package g3201_3300.s3213_construct_string_with_minimum_cost;
 
 // #Hard #Array #String #Dynamic_Programming #Suffix_Array
-// #2024_07_13_Time_1907_ms_(5.01%)_Space_100.9_MB_(5.09%)
+// #2024_07_15_Time_261_ms_(88.55%)_Space_67.2_MB_(45.91%)
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class Solution {
-    List<Integer> buildKmpPrefix(String target) {
-        List<Integer> w = new ArrayList<>(Collections.nCopies(target.length(), 0));
-        int k = 0;
-        int i = 1;
-        while (i < target.length()) {
-            if (target.charAt(i) == target.charAt(k)) {
-                k++;
-                w.set(i, k);
-                i++;
-            } else {
-                if (k != 0) {
-                    k = w.get(k - 1);
-                } else {
-                    i++;
-                }
-            }
+    private static class ACAutomaton {
+        private static class Node {
+            private char key;
+            private Integer val = null;
+            private int len;
+            private final Node[] next = new Node[26];
+            private Node suffix = null;
+            private Node output = null;
+            private Node parent = null;
         }
-        return w;
-    }
 
-    List<List<Integer>> find(List<Integer> prefix, String target, String w) {
-        List<List<Integer>> result = new ArrayList<>();
-        int m = target.length();
-        int n = w.length();
-        int i = 0;
-        int k = 0;
-        while (i < m) {
-            if (target.charAt(i) == w.charAt(k)) {
-                i++;
-                k++;
+        public Node build(String[] patterns, int[] values) {
+            Node root = new Node();
+            root.suffix = root;
+            root.output = root;
+            for (int i = 0; i < patterns.length; i++) {
+                put(root, patterns[i], values[i]);
             }
-            if (k == n) {
-                result.add(Arrays.asList(i - k, i));
-                k = prefix.get(k - 1);
-            } else if (i < m && target.charAt(i) != w.charAt(k)) {
-                if (k != 0) {
-                    k = prefix.get(k - 1);
+            for (int i = 0; i < root.next.length; i++) {
+                if (root.next[i] == null) {
+                    root.next[i] = root;
                 } else {
-                    i++;
+                    root.next[i].suffix = root;
                 }
             }
+            return root;
         }
-        return result;
+
+        private void put(Node root, String s, int val) {
+            Node node = root;
+            for (char c : s.toCharArray()) {
+                if (node.next[c - 'a'] == null) {
+                    node.next[c - 'a'] = new Node();
+                    node.next[c - 'a'].parent = node;
+                    node.next[c - 'a'].key = c;
+                }
+                node = node.next[c - 'a'];
+            }
+            if (node.val == null || node.val > val) {
+                node.val = val;
+                node.len = s.length();
+            }
+        }
+
+        public Node getOutput(Node node) {
+            if (node.output == null) {
+                Node suffix = getSuffix(node);
+                node.output = suffix.val != null ? suffix : getOutput(suffix);
+            }
+            return node.output;
+        }
+
+        private Node go(Node node, char c) {
+            if (node.next[c - 'a'] == null) {
+                node.next[c - 'a'] = go(getSuffix(node), c);
+            }
+            return node.next[c - 'a'];
+        }
+
+        private Node getSuffix(Node node) {
+            if (node.suffix == null) {
+                node.suffix = go(getSuffix(node.parent), node.key);
+                if (node.suffix.val != null) {
+                    node.output = node.suffix;
+                } else {
+                    node.output = node.suffix.output;
+                }
+            }
+            return node.suffix;
+        }
     }
 
     public int minimumCost(String target, String[] words, int[] costs) {
-        List<Integer> targetPrefix = buildKmpPrefix(target);
-        Node root = new Node();
-        for (int j = 0; j < words.length; j++) {
-            String x = words[j];
-            if (x.length() < 320) {
-                Node p = root;
-                for (int i = 0; i < x.length(); i++) {
-                    char c = x.charAt(i);
-                    p.children.putIfAbsent(c, new Node());
-                    p = p.children.get(c);
-                    if (i == x.length() - 1) {
-                        if (p.cost == null) {
-                            p.cost = costs[j];
-                        } else {
-                            p.cost = Math.min(costs[j], p.cost);
-                        }
-                    }
-                }
-            }
-        }
-        Map<Integer, Map<Integer, Integer>> dm =
-                getIntegerMapMap(target, words, costs, targetPrefix);
-        List<NodeCostPair> d = new ArrayList<>();
-        d.add(new NodeCostPair(root, 0));
+        ACAutomaton ac = new ACAutomaton();
+        ACAutomaton.Node root = ac.build(words, costs);
         int[] dp = new int[target.length() + 1];
-        Arrays.fill(dp, -1);
+        Arrays.fill(dp, Integer.MAX_VALUE / 2);
         dp[0] = 0;
-        for (int i = 0; i < target.length(); i++) {
-            char x = target.charAt(i);
-            List<NodeCostPair> q = new ArrayList<>();
-            Integer t = null;
-            for (NodeCostPair pair : d) {
-                Node p = pair.node;
-                int cost = pair.cost;
-                if (p.children.containsKey(x)) {
-                    Node w = p.children.get(x);
-                    if (w.cost != null) {
-                        t = t == null ? cost + w.cost : Math.min(t, cost + w.cost);
-                    }
-                    q.add(new NodeCostPair(w, cost));
-                }
-            }
-            t = getInteger(dm, i, dp, t);
-            if (t != null) {
-                dp[i + 1] = t;
-                q.add(new NodeCostPair(root, t));
-            }
-            d = q;
-        }
-        return dp[target.length()];
-    }
-
-    private Integer getInteger(Map<Integer, Map<Integer, Integer>> dm, int i, int[] dp, Integer t) {
-        Map<Integer, Integer> qm = dm.getOrDefault(i + 1, Collections.emptyMap());
-        for (Map.Entry<Integer, Integer> entry : qm.entrySet()) {
-            int b = entry.getKey();
-            if (dp[b] >= 0) {
-                t = t == null ? dp[b] + entry.getValue() : Math.min(t, dp[b] + entry.getValue());
-            }
-        }
-        return t;
-    }
-
-    private Map<Integer, Map<Integer, Integer>> getIntegerMapMap(
-            String target, String[] words, int[] costs, List<Integer> targetPrefix) {
-        Map<Integer, Map<Integer, Integer>> dm = new HashMap<>();
-        for (int i = 0; i < words.length; i++) {
-            String word = words[i];
-            if (word.length() >= 320) {
-                List<List<Integer>> q = find(targetPrefix, target, word);
-                for (List<Integer> pair : q) {
-                    int b = pair.get(0);
-                    int e = pair.get(1);
-                    dm.putIfAbsent(e, new HashMap<>());
-                    Map<Integer, Integer> qm = dm.get(e);
-                    if (qm.containsKey(b)) {
-                        qm.put(b, Math.min(qm.get(b), costs[i]));
-                    } else {
-                        qm.put(b, costs[i]);
-                    }
+        ACAutomaton.Node node = root;
+        for (int i = 1; i < dp.length; i++) {
+            node = ac.go(node, target.charAt(i - 1));
+            for (ACAutomaton.Node temp = node;
+                    temp != null && temp != root;
+                    temp = ac.getOutput(temp)) {
+                if (temp.val != null && dp[i - temp.len] < Integer.MAX_VALUE / 2) {
+                    dp[i] = Math.min(dp[i], dp[i - temp.len] + temp.val);
                 }
             }
         }
-        return dm;
-    }
-
-    private static class Node {
-        Map<Character, Node> children;
-        Integer cost;
-
-        public Node() {
-            this.children = new HashMap<>();
-            this.cost = null;
-        }
-    }
-
-    private static class NodeCostPair {
-        Node node;
-        int cost;
-
-        public NodeCostPair(Node node, int cost) {
-            this.node = node;
-            this.cost = cost;
-        }
+        return dp[dp.length - 1] >= Integer.MAX_VALUE / 2 ? -1 : dp[dp.length - 1];
     }
 }
