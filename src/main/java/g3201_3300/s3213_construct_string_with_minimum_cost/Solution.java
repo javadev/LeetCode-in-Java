@@ -86,7 +86,9 @@ public class Solution {
         dp[0] = 0;
         ACAutomaton.Node node = root;
         for (int i = 1; i < dp.length; i++) {
-            node = ac.go(node, target.charAt(i - 1));
+            if (node != null) {
+                node = ac.go(node, target.charAt(i - 1));
+            }
             for (ACAutomaton.Node temp = node;
                     temp != null && temp != root;
                     temp = ac.getOutput(temp)) {
