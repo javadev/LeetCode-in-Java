@@ -1,6 +1,7 @@
 # Write your MySQL query statement below
-# #Medium #Database #2022_06_26_Time_550_ms_(48.44%)_Space_0B_(100.00%)
-select distinct num as ConsecutiveNums from
-(select num, lag(num,1) over(order by id) as l1, lag(num,2) over(order by id) as l2
-from Logs) con_thr
-where num = l1 and num = l2
+# #Medium #Database #2024_07_15_Time_469_ms_(89.19%)_Space_0B_(100.00%)
+SELECT DISTINCT l1.num AS ConsecutiveNums
+FROM Logs l1
+JOIN Logs l2 ON l1.id = l2.id - 1
+JOIN Logs l3 ON l1.id = l3.id - 2
+WHERE l1.num = l2.num AND l2.num = l3.num;
