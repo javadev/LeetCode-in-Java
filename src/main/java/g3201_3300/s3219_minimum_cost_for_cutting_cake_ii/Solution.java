@@ -5,10 +5,10 @@ package g3201_3300.s3219_minimum_cost_for_cutting_cake_ii;
 @SuppressWarnings("java:S1172")
 public class Solution {
     private static final int N = 1001;
-    private int[] horizontalCounts = new int[N];
-    private int[] verticalCounts = new int[N];
 
     public long minimumCost(int m, int n, int[] horizontalCut, int[] verticalCut) {
+        int[] horizontalCounts = new int[N];
+        int[] verticalCounts = new int[N];
         int max = 0;
         for (int x : horizontalCut) {
             if (x > max) {
