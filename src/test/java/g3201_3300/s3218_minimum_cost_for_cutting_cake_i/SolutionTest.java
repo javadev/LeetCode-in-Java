@@ -12,7 +12,7 @@ class SolutionTest {
     }
 
     @Test
-    void minimumCost() {
+    void minimumCost2() {
         assertThat(new Solution().minimumCost(2, 2, new int[] {7}, new int[] {4}), equalTo(15));
     }
 }
