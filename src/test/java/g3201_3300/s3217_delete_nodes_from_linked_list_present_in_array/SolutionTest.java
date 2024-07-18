@@ -13,8 +13,9 @@ class SolutionTest {
                 new Solution()
                         .modifiedList(
                                 new int[] {1, 2, 3},
-                                LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4, 5})),
-                equalTo(LinkedListUtils.contructLinkedList(new int[] {4, 5})));
+                                LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4, 5}))
+                        .toString(),
+                equalTo("4, 5"));
     }
 
     @Test
@@ -23,8 +24,9 @@ class SolutionTest {
                 new Solution()
                         .modifiedList(
                                 new int[] {1},
-                                LinkedListUtils.contructLinkedList(new int[] {1, 2, 1, 2, 1, 2})),
-                equalTo(LinkedListUtils.contructLinkedList(new int[] {2, 2, 2})));
+                                LinkedListUtils.contructLinkedList(new int[] {1, 2, 1, 2, 1, 2}))
+                        .toString(),
+                equalTo("2, 2, 2"));
     }
 
     @Test
@@ -33,7 +35,8 @@ class SolutionTest {
                 new Solution()
                         .modifiedList(
                                 new int[] {5},
-                                LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4})),
-                equalTo(LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4})));
+                                LinkedListUtils.contructLinkedList(new int[] {1, 2, 3, 4}))
+                        .toString(),
+                equalTo("1, 2, 3, 4"));
     }
 }
