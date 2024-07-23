@@ -14,9 +14,10 @@ public class Solution {
         long[] dp32 = new long[n + 1];
         long res = 0;
         for (int i = 0; i < n; ++i) {
-            long sum = 0, pre = 0;
-            for (int j = 0; j < n; ++j) {
-                sum += grid[j][i];
+            long sum = 0;
+            long pre = 0;
+            for (int[] ints : grid) {
+                sum += ints[i];
             }
             for (int j = n - 1; j >= 0; --j) {
                 long s2 = sum;
