@@ -12,10 +12,10 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:[5.10.2,)'
+    testImplementation 'org.junit.jupiter:junit-jupiter:[5.10.3,)'
     testImplementation 'org.hamcrest:hamcrest-core:[2.2,)'
-    testImplementation 'org.zapodot:embedded-db-junit-jupiter:[2.1.1,)'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:[1.10.2,)'
+    testImplementation 'org.zapodot:embedded-db-junit-jupiter:[2.2.0,)'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:[1.10.3,)'
 }
 
 test {
@@ -24,7 +24,7 @@ test {
 }
 
 group = 'com.github.javadev'
-version = '1.33-SNAPSHOT'
+version = '1.34-SNAPSHOT'
 description = 'leetcode-in-java'
 java.sourceCompatibility = JavaVersion.VERSION_17
 
