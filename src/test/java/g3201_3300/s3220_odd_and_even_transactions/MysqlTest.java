@@ -33,8 +33,7 @@ import org.zapodot.junit.db.common.CompatibilityMode;
                         + "INSERT INTO transactions(transaction_id, amount, transaction_date)"
                         + " VALUES (5, 50, '2024-07-02'); "
                         + "INSERT INTO transactions(transaction_id, amount, transaction_date)"
-                        + " VALUES (6, 120, '2024-07-03'); "
-)
+                        + " VALUES (6, 120, '2024-07-03'); ")
 class MysqlTest {
     @Test
     void testScript(@EmbeddedDatabase DataSource dataSource)
