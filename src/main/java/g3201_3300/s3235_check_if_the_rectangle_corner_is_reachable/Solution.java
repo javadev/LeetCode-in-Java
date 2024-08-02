@@ -59,7 +59,9 @@ public class Solution {
                 int x2 = circles[j][0];
                 int y2 = circles[j][1];
                 int r2 = circles[j][2];
-                double dist = Math.sqrt(Math.pow(x1 - x2, 2.0) + Math.pow(y1 - y2, 2.0));
+                double dist =
+                        Math.sqrt(
+                                Math.pow(x1 - (double) x2, 2.0) + Math.pow(y1 - (double) y2, 2.0));
                 if (dist <= (r1 + r2)) {
                     ds.dsu(i, j);
                 }
