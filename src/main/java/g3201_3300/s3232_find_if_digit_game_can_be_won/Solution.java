@@ -14,7 +14,6 @@ public class Solution {
                 ddSum += num;
             }
         }
-
         return sdSum != ddSum;
     }
 }
