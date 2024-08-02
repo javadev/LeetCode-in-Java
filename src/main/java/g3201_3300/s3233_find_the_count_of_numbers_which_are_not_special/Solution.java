@@ -10,7 +10,7 @@ public class Solution {
         List<Integer> primes = sieveOfEratosthenes((int) Math.sqrt(r));
         int specialCount = 0;
 
-        for (int prime : primes) {
+        for (Integer prime : primes) {
             long primeSquare = (long) prime * prime;
             if (primeSquare >= l && primeSquare <= r) {
                 specialCount++;

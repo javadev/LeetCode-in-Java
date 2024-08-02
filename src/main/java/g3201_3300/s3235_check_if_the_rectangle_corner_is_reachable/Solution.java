@@ -5,6 +5,7 @@ package g3201_3300.s3235_check_if_the_rectangle_corner_is_reachable;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public boolean canReachCorner(int x, int y, int[][] circles) {
         int n = circles.length;
@@ -58,7 +59,7 @@ public class Solution {
                 int x2 = circles[j][0];
                 int y2 = circles[j][1];
                 int r2 = circles[j][2];
-                double dist = Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+                double dist = Math.sqrt(Math.pow(x1 - x2, 2.0) + Math.pow(y1 - y2, 2.0));
                 if (dist <= (r1 + r2)) {
                     ds.dsu(i, j);
                 }
@@ -91,7 +92,8 @@ public class Solution {
             if (u == parent[u]) {
                 return u;
             }
-            return parent[u] = findUpar(parent[u]);
+            parent[u] = findUpar(parent[u]);
+            return parent[u];
         }
 
         public void dsu(int u, int v) {

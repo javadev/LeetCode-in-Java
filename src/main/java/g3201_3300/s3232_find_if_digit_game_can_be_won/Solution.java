@@ -4,7 +4,6 @@ package g3201_3300.s3232_find_if_digit_game_can_be_won;
 
 public class Solution {
     public boolean canAliceWin(int[] nums) {
-        int n = nums.length;
         int sdSum = 0;
         int ddSum = 0;
         for (int num : nums) {
