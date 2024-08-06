@@ -25,10 +25,12 @@ public class Solution {
             int v = edges[i][1];
             nxt[j] = head[u];
             head[u] = j;
-            to[j++] = v;
+            to[j] = v;
+            j++;
             nxt[j] = head[v];
             head[v] = j;
-            to[j++] = u;
+            to[j] = u;
+            j++;
         }
         last = new int[n];
         lastNo = new int[n];
@@ -41,7 +43,9 @@ public class Solution {
     }
 
     private void dfs2(int f, int u, int preLast) {
-        for (int e = head[u], v; e != -1; e = nxt[e]) {
+        int e = head[u];
+        int v;
+        while (e != -1) {
             v = to[e];
             if (f != v) {
                 int pl;
@@ -53,11 +57,14 @@ public class Solution {
                 ans[v] = Math.max(ans[v], pl);
                 dfs2(u, v, pl);
             }
+            e = nxt[e];
         }
     }
 
     private void dfs(int f, int u) {
-        for (int e = head[u], v; e != -1; e = nxt[e]) {
+        int e = head[u];
+        int v;
+        while (e != -1) {
             v = to[e];
             if (f != v) {
                 dfs(u, v);
@@ -70,6 +77,7 @@ public class Solution {
                     second[u] = t;
                 }
             }
+            e = nxt[e];
         }
     }
 }

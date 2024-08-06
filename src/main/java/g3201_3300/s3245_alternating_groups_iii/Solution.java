@@ -14,7 +14,7 @@ public class Solution {
                 nex = 2 * n;
             }
             if (pre != -1 && pre < n && --fs[nex - pre] == 0) {
-                ff.unset(nex - pre);
+                ff.unsetPos(nex - pre);
             }
         }
         if (lst.get(ind)) {
@@ -24,7 +24,7 @@ public class Solution {
                 nex = 2 * n;
             }
             if (pre != -1 && pre < n && --fs[nex - pre] == 0) {
-                ff.unset(nex - pre);
+                ff.unsetPos(nex - pre);
             }
         }
         if (lst.get(ind + 1)) {
@@ -34,17 +34,17 @@ public class Solution {
                 nex = 2 * n;
             }
             if (pre != -1 && pre < n && --fs[nex - pre] == 0) {
-                ff.unset(nex - pre);
+                ff.unsetPos(nex - pre);
             }
         }
-        lst.unset(ind);
-        lst.unset(ind + 1);
+        lst.unsetPos(ind);
+        lst.unsetPos(ind + 1);
         c[ind] ^= 1;
         if (ind > 0 && c[ind] != c[ind - 1]) {
-            lst.set(ind);
+            lst.setPos(ind);
         }
         if (ind + 1 < c.length && c[ind + 1] != c[ind]) {
-            lst.set(ind + 1);
+            lst.setPos(ind + 1);
         }
         if (ind > 0) {
             int pre = lst.prev(ind - 1);
@@ -53,7 +53,7 @@ public class Solution {
                 nex = 2 * n;
             }
             if (pre != -1 && pre < n && ++fs[nex - pre] == 1) {
-                ff.set(nex - pre);
+                ff.setPos(nex - pre);
             }
         }
         if (lst.get(ind)) {
@@ -63,7 +63,7 @@ public class Solution {
                 nex = 2 * n;
             }
             if (pre < n && ++fs[nex - pre] == 1) {
-                ff.set(nex - pre);
+                ff.setPos(nex - pre);
             }
         }
         if (lst.get(ind + 1)) {
@@ -73,7 +73,7 @@ public class Solution {
                 nex = 2 * n;
             }
             if (pre < n && ++fs[nex - pre] == 1) {
-                ff.set(nex - pre);
+                ff.setPos(nex - pre);
             }
         }
     }
@@ -87,7 +87,7 @@ public class Solution {
         LST lst = new LST(2 * n + 3);
         for (int i = 1; i < 2 * n; i++) {
             if (c[i] != c[i - 1]) {
-                lst.set(i);
+                lst.setPos(i);
             }
         }
         int[] fs = new int[2 * n + 1];
@@ -99,7 +99,7 @@ public class Solution {
                     ne = 2 * n;
                 }
                 fs[ne - i]++;
-                ff.set(ne - i);
+                ff.setPos(ne - i);
             }
         }
         List<Integer> ans = new ArrayList<>();
@@ -135,26 +135,29 @@ public class Solution {
     }
 
     private static class LST {
-        public long[][] set;
-        public int n;
+        private long[][] set;
+        private int n;
 
         public LST(int n) {
             this.n = n;
             int d = 1;
-            {
-                int m = n;
-                while (m > 1) {
-                    m >>>= 6;
-                    d++;
-                }
-            }
+            d = getD(n, d);
             set = new long[d][];
             for (int i = 0, m = n >>> 6; i < d; i++, m >>>= 6) {
                 set[i] = new long[m + 1];
             }
         }
 
-        public LST set(int pos) {
+        private int getD(int n, int d) {
+            int m = n;
+            while (m > 1) {
+                m >>>= 6;
+                d++;
+            }
+            return d;
+        }
+
+        public LST setPos(int pos) {
             if (pos >= 0 && pos < n) {
                 for (int i = 0; i < set.length; i++, pos >>>= 6) {
                     set[i][pos >>> 6] |= 1L << pos;
@@ -163,7 +166,7 @@ public class Solution {
             return this;
         }
 
-        public LST unset(int pos) {
+        public LST unsetPos(int pos) {
             if (pos >= 0 && pos < n) {
                 for (int i = 0;
                         i < set.length && (i == 0 || set[i - 1][pos] == 0L);
@@ -179,7 +182,8 @@ public class Solution {
         }
 
         public int prev(int pos) {
-            for (int i = 0; i < set.length && pos >= 0; i++, pos >>>= 6, pos--) {
+            int i = 0;
+            while (i < set.length && pos >= 0) {
                 int pre = prev(set[i][pos >>> 6], pos & 63);
                 if (pre != -1) {
                     pos = pos >>> 6 << 6 | pre;
@@ -188,6 +192,9 @@ public class Solution {
                     }
                     return pos;
                 }
+                i++;
+                pos >>>= 6;
+                pos--;
             }
             return -1;
         }
