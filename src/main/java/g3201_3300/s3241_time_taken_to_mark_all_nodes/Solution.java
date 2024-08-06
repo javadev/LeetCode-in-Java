@@ -20,7 +20,9 @@ public class Solution {
         nxt = new int[n << 1];
         to = new int[n << 1];
         Arrays.fill(head, -1);
-        for (int i = 0, j = 2; i < edges.length; i++) {
+        int i = 0;
+        int j = 2;
+        while (i < edges.length) {
             int u = edges[i][0];
             int v = edges[i][1];
             nxt[j] = head[u];
@@ -31,6 +33,7 @@ public class Solution {
             head[v] = j;
             to[j] = u;
             j++;
+            i++;
         }
         last = new int[n];
         lastNo = new int[n];

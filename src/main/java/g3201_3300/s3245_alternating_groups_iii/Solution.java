@@ -208,7 +208,8 @@ public class Solution {
         }
 
         public int next(int pos) {
-            for (int i = 0; i < set.length && pos >>> 6 < set[i].length; i++, pos >>>= 6, pos++) {
+            int i = 0;
+            while (i < set.length && pos >>> 6 < set[i].length) {
                 int nex = next(set[i][pos >>> 6], pos & 63);
                 if (nex != -1) {
                     pos = pos >>> 6 << 6 | nex;
@@ -217,6 +218,9 @@ public class Solution {
                     }
                     return pos;
                 }
+                i++;
+                pos >>>= 6;
+                pos++;
             }
             return -1;
         }
