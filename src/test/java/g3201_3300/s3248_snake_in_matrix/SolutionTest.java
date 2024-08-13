@@ -20,56 +20,56 @@ class SolutionTest {
     }
 
     @Test
-    void testFinalPositionOfSnake_AllCommands() {
+    void testFinalPositionOfSnakeAllCommands() {
         List<String> commands = List.of("UP", "DOWN", "LEFT", "RIGHT");
         int result = new Solution().finalPositionOfSnake(3, commands);
         assertEquals(4, result);
     }
 
     @Test
-    void testFinalPositionOfSnake_OnlyUp() {
+    void testFinalPositionOfSnakeOnlyUp() {
         List<String> commands = List.of("UP", "UP");
         int result = new Solution().finalPositionOfSnake(3, commands);
         assertEquals(0, result);
     }
 
     @Test
-    void testFinalPositionOfSnake_OnlyDown() {
+    void testFinalPositionOfSnakeOnlyDown() {
         List<String> commands = List.of("DOWN", "DOWN");
         int result = new Solution().finalPositionOfSnake(3, commands);
         assertEquals(6, result);
     }
 
     @Test
-    void testFinalPositionOfSnake_OnlyLeft() {
+    void testFinalPositionOfSnakeOnlyLeft() {
         List<String> commands = List.of("LEFT", "LEFT");
         int result = new Solution().finalPositionOfSnake(3, commands);
         assertEquals(0, result);
     }
 
     @Test
-    void testFinalPositionOfSnake_OnlyRight() {
+    void testFinalPositionOfSnakeOnlyRight() {
         List<String> commands = List.of("RIGHT", "RIGHT");
         int result = new Solution().finalPositionOfSnake(3, commands);
         assertEquals(2, result);
     }
 
     @Test
-    void testFinalPositionOfSnake_EmptyCommands() {
+    void testFinalPositionOfSnakeEmptyCommands() {
         List<String> commands = List.of();
         int result = new Solution().finalPositionOfSnake(3, commands);
         assertEquals(0, result);
     }
 
     @Test
-    void testFinalPositionOfSnake_MixedCommands() {
+    void testFinalPositionOfSnakeMixedCommands() {
         List<String> commands = List.of("DOWN", "RIGHT", "UP", "LEFT", "UP", "DOWN", "RIGHT");
         int result = new Solution().finalPositionOfSnake(3, commands);
         assertEquals(4, result);
     }
 
     @Test
-    void testFinalPositionOfSnake_InvalidCommands() {
+    void testFinalPositionOfSnakeInvalidCommands() {
         List<String> commands = List.of("DOWN", "RIGHT", "JUMP", "LEFT", "UP", "DOWN", "RIGHT");
         int result = new Solution().finalPositionOfSnake(3, commands);
         assertEquals(4, result);
