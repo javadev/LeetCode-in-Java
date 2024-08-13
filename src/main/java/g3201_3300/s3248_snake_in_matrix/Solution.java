@@ -11,16 +11,24 @@ public class Solution {
         for (String command : commands) {
             switch (command) {
                 case "UP":
-                    if (x > 0) x--;
+                    if (x > 0) {
+                        x--;
+                    }
                     break;
                 case "DOWN":
-                    if (x < n - 1) x++;
+                    if (x < n - 1) {
+                        x++;
+                    }
                     break;
                 case "LEFT":
-                    if (y > 0) y--;
+                    if (y > 0) {
+                        y--;
+                    }
                     break;
                 case "RIGHT":
-                    if (y < n - 1) y++;
+                    if (y < n - 1) {
+                        y++;
+                    }
                     break;
             }
         }

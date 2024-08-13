@@ -11,7 +11,9 @@ public class Solution {
         for (int i = 1; i < nums.length; i++) {
             currShift = Math.max(currShift, nums[i] - maxShift[i - 1]);
             maxShift[i] = Math.min(maxShift[i - 1], nums[i] - currShift);
-            if (maxShift[i] < 0) return 0;
+            if (maxShift[i] < 0) {
+                return 0;
+            }
         }
         int[][] cases = getAllCases(nums, maxShift);
         return cases[nums.length - 1][maxShift[nums.length - 1]];
