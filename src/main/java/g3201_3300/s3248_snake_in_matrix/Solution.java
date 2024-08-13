@@ -29,6 +29,7 @@ public class Solution {
                     if (y < n - 1) {
                         y++;
                     }
+                default:
                     break;
             }
         }
