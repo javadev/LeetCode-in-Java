@@ -1,6 +1,6 @@
 package g3201_3300.s3235_check_if_the_rectangle_corner_is_reachable;
 
-// #Hard #Array #Math #Union_Find #Geometry #Depth_First_Search #Breadth_First_Search
+// #Hard #Array #Math #Depth_First_Search #Breadth_First_Search #Union_Find #Geometry
 // #2024_08_02_Time_95_ms_(59.46%)_Space_44.8_MB_(94.44%)
 
 import java.util.Arrays;
