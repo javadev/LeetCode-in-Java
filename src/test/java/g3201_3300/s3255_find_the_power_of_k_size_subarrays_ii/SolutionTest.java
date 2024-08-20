@@ -26,4 +26,9 @@ class SolutionTest {
                 new Solution().resultsArray(new int[] {3, 2, 3, 2, 3, 2}, 2),
                 equalTo(new int[] {-1, 3, -1, 3, -1}));
     }
+
+    @Test
+    void resultsArray4() {
+        assertThat(new Solution().resultsArray(new int[] {1}, 1), equalTo(new int[] {1}));
+    }
 }
