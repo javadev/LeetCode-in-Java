@@ -10,7 +10,7 @@ public class Solution {
         int j = 0;
         int one = 0;
         int zero = 0;
-        char ch = '-';
+        char ch;
         while (j < n) {
             ch = s.charAt(j++);
             if (ch == '0') {

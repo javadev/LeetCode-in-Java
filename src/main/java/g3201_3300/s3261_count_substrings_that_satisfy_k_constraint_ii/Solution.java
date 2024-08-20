@@ -41,11 +41,11 @@ public class Solution {
         for (i = 0; i < queries.length; i++) {
             int indexFirst = index[queries[i][0]];
             if (indexFirst > queries[i][1]) {
-                long num = queries[i][1] - queries[i][0] + 1;
+                long num = queries[i][1] - queries[i][0] + 1L;
                 result[i] = ((num) * (num + 1)) / 2;
             } else {
                 result[i] = prefix[queries[i][1]] - prefix[indexFirst];
-                long num = indexFirst - queries[i][0] + 1;
+                long num = indexFirst - queries[i][0] + 1L;
                 result[i] += ((num) * (num + 1)) / 2;
             }
         }
