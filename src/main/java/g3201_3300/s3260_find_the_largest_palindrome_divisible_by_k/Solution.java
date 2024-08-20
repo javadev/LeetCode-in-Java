@@ -38,7 +38,9 @@ public class Solution {
             sc[n - 1] = '5';
         } else if (k == 6) {
             String number = getString(n, sc);
-            if (number != null) return number;
+            if (number != null) {
+                return number;
+            }
         } else if (k == 8) {
             Arrays.fill(sc, '8');
             int i = 3;
