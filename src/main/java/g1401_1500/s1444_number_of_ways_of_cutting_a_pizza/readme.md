@@ -10,7 +10,7 @@ _Return the number of ways of cutting the pizza such that each piece contains **
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2020/04/23/ways_to_cut_apple_1.png)**
+**![](ways_to_cut_apple_1.png)**
 
 **Input:** pizza = ["A..","AAA","..."], k = 3
 

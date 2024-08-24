@@ -25,7 +25,7 @@ Return _the 2D array_ `ans` _containing the paths of the **remaining** folders a
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/19/lc-dupfolder1.jpg)
+![](lc-dupfolder1.jpg)
 
 **Input:** paths = [["a"],["c"],["d"],["a","b"],["c","b"],["d","a"]]
 
@@ -35,7 +35,7 @@ Return _the 2D array_ `ans` _containing the paths of the **remaining** folders a
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/07/19/lc-dupfolder2.jpg)
+![](lc-dupfolder2.jpg)
 
 **Input:** paths = [["a"],["c"],["a","b"],["c","b"],["a","b","x"],["a","b","x","y"],["w"],["w","y"]]
 
@@ -45,7 +45,7 @@ Return _the 2D array_ `ans` _containing the paths of the **remaining** folders a
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/07/19/lc-dupfolder3.jpg)
+![](lc-dupfolder3.jpg)
 
 **Input:** paths = [["a","b"],["c","d"],["c"],["a"]]
 

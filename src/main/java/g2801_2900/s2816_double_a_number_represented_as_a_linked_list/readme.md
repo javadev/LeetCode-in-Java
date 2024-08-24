@@ -8,7 +8,7 @@ Return _the_ `head` _of the linked list after **doubling** it_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/05/28/example.png)
+![](example.png)
 
 **Input:** head = [1,8,9]
 
@@ -18,7 +18,7 @@ Return _the_ `head` _of the linked list after **doubling** it_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/05/28/example2.png)
+![](example2.png)
 
 **Input:** head = [9,9,9]
 

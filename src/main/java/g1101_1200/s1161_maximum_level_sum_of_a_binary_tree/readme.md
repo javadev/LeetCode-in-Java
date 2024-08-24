@@ -8,7 +8,7 @@ Return the **smallest** level `x` such that the sum of all the values of nodes a
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/05/03/capture.JPG)
+![](capture.jpg)
 
 **Input:** root = [1,7,0,7,-8,null,null]
 

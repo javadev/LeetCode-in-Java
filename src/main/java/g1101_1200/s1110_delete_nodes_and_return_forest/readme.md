@@ -10,7 +10,7 @@ Return the roots of the trees in the remaining forest. You may return the result
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/07/01/screen-shot-2019-07-01-at-53836-pm.png)
+![](screen-shot-2019-07-01-at-53836-pm.png)
 
 **Input:** root = [1,2,3,4,5,6,7], to\_delete = [3,5]
 

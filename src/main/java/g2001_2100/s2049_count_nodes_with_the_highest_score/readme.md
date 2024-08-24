@@ -10,7 +10,7 @@ Return _the **number** of nodes that have the **highest score**_.
 
 **Example 1:**
 
-![example-1](https://assets.leetcode.com/uploads/2021/10/03/example-1.png)
+![example-1](example-1.png)
 
 **Input:** parents = [-1,2,0,2,0]
 
@@ -32,7 +32,7 @@ The highest score is 4, and three nodes (node 1, node 3, and node 4) have the hi
 
 **Example 2:**
 
-![example-2](https://assets.leetcode.com/uploads/2021/10/03/example-2.png)
+![example-2](example-2.png)
 
 **Input:** parents = [-1,2,0]
 

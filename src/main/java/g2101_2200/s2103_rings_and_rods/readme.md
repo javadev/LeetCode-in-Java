@@ -15,7 +15,7 @@ Return _the number of rods that have **all three colors** of rings on them._
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/11/23/ex1final.png)
+![](ex1final.png)
 
 **Input:** rings = "B0B6G0R6R0R6G9"
 
@@ -33,7 +33,7 @@ Thus, the number of rods with all three colors is 1.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/11/23/ex2final.png)
+![](ex2final.png)
 
 **Input:** rings = "B0R0G0R9R0B0G0"
 

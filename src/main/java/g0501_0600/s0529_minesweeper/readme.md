@@ -23,7 +23,7 @@ Return _the board after revealing this position according to the following rules
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/10/12/minesweeper_example_1.png)
+![](minesweeper_example_1.png)
 
 **Input:** board = [["E","E","E","E","E"],["E","E","M","E","E"],["E","E","E","E","E"],["E","E","E","E","E"]], click = [3,0]
 
@@ -31,7 +31,7 @@ Return _the board after revealing this position according to the following rules
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2018/10/12/minesweeper_example_2.png)
+![](minesweeper_example_2.png)
 
 **Input:** board = [["B","1","E","1","B"],["B","1","M","1","B"],["B","1","1","1","B"],["B","B","B","B","B"]], click = [1,2]
 

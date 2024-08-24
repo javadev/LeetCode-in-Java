@@ -8,13 +8,13 @@ Given an array `positions` where <code>positions[i] = [x<sub>i</sub>, y<sub>i</s
 
 In other words, you need to choose the position of the service center <code>[x<sub>centre</sub>, y<sub>centre</sub>]</code> such that the following formula is minimized:
 
-![](https://assets.leetcode.com/uploads/2020/06/25/q4_edited.jpg)
+![](q4_edited.jpg)
 
 Answers within <code>10<sup>-5</sup></code> of the actual value will be accepted.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/06/25/q4_e1.jpg)
+![](q4_e1.jpg)
 
 **Input:** positions = [[0,1],[1,0],[1,2],[2,1]]
 
@@ -24,7 +24,7 @@ Answers within <code>10<sup>-5</sup></code> of the actual value will be accepted
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/06/25/q4_e3.jpg)
+![](q4_e3.jpg)
 
 **Input:** positions = [[1,1],[3,3]]
 

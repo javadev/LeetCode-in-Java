@@ -8,7 +8,7 @@ It is **guaranteed** that the node to be deleted is **not a tail node** in the l
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/01/node1.jpg)
+![](node1.jpg)
 
 **Input:** head = [4,5,1,9], node = 5
 
@@ -18,7 +18,7 @@ It is **guaranteed** that the node to be deleted is **not a tail node** in the l
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/09/01/node2.jpg)
+![](node2.jpg)
 
 **Input:** head = [4,5,1,9], node = 1
 

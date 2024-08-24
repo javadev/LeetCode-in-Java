@@ -8,7 +8,7 @@ Answers within <code>10<sup>-5</sup></code> of the actual value will be accepted
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/12/26/sample_1_1673.png)
+![](sample_1_1673.png)
 
 **Input:** hour = 12, minutes = 30
 
@@ -16,7 +16,7 @@ Answers within <code>10<sup>-5</sup></code> of the actual value will be accepted
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/12/26/sample_2_1673.png)
+![](sample_2_1673.png)
 
 **Input:** hour = 3, minutes = 30
 
@@ -24,7 +24,7 @@ Answers within <code>10<sup>-5</sup></code> of the actual value will be accepted
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2019/12/26/sample_3_1673.png)
+![](sample_3_1673.png)
 
 **Input:** hour = 3, minutes = 15
 

@@ -10,7 +10,7 @@ Note that you can return the indices of the edges in any order.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/06/04/ex1.png)
+![](ex1.png)
 
 **Input:** n = 5, edges = [[0,1,1],[1,2,1],[2,3,2],[0,3,2],[0,4,3],[3,4,3],[1,4,6]]
 
@@ -20,7 +20,7 @@ Note that you can return the indices of the edges in any order.
 
 The following figure shows all the possible MSTs:
 
-![](https://assets.leetcode.com/uploads/2020/06/04/msts.png)
+![](msts.png)
 
 Notice that the two edges 0 and 1 appear in all MSTs, therefore they are critical edges, so we return them in the first list of the output.
 
@@ -28,7 +28,7 @@ The edges 2, 3, 4, and 5 are only part of some MSTs, therefore they are consider
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/06/04/ex2.png)
+![](ex2.png)
 
 **Input:** n = 4, edges = [[0,1,1],[1,2,1],[2,3,1],[0,3,1]]
 

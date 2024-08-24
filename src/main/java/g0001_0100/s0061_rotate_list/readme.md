@@ -6,7 +6,7 @@ Given the `head` of a linked list, rotate the list to the right by `k` places.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/13/rotate1.jpg)
+![](rotate1.jpg)
 
 **Input:** head = [1,2,3,4,5], k = 2
 
@@ -14,7 +14,7 @@ Given the `head` of a linked list, rotate the list to the right by `k` places.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/11/13/roate2.jpg)
+![](roate2.jpg)
 
 **Input:** head = [0,1,2], k = 4
 

@@ -8,7 +8,7 @@ You can return the answer in **any order**.
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/06/28/sketch0.png)
+![](sketch0.png)
 
 **Input:** root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, k = 2
 

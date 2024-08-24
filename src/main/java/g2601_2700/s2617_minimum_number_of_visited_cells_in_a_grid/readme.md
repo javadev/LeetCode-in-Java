@@ -13,7 +13,7 @@ Return _the minimum number of cells you need to visit to reach the **bottom-righ
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/01/25/ex1.png)
+![](ex1.png)
 
 **Input:** grid = [[3,4,2,1],[4,2,3,1],[2,1,0,0],[2,4,0,0]]
 
@@ -23,7 +23,7 @@ Return _the minimum number of cells you need to visit to reach the **bottom-righ
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/01/25/ex2.png)
+![](ex2.png)
 
 **Input:** grid = [[3,4,2,1],[4,2,1,1],[2,1,1,0],[3,4,1,0]]
 
@@ -33,7 +33,7 @@ Return _the minimum number of cells you need to visit to reach the **bottom-righ
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2023/01/26/ex3.png)
+![](ex3.png)
 
 **Input:** grid = [[2,1,0],[1,0,0]]
 

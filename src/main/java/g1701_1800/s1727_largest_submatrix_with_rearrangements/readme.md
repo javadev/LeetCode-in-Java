@@ -8,7 +8,7 @@ Return _the area of the largest submatrix within_ `matrix` _where **every** elem
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/12/29/screenshot-2020-12-30-at-40536-pm.png)
+![](screenshot-2020-12-30-at-40536-pm.png)
 
 **Input:** matrix = [[0,0,1],[1,1,1],[1,0,1]]
 
@@ -18,7 +18,7 @@ Return _the area of the largest submatrix within_ `matrix` _where **every** elem
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/12/29/screenshot-2020-12-30-at-40852-pm.png)
+![](screenshot-2020-12-30-at-40852-pm.png)
 
 **Input:** matrix = [[1,0,1,0,1]]
 

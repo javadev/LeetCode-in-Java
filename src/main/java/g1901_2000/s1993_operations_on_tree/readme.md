@@ -22,7 +22,7 @@ Implement the `LockingTree` class:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/29/untitled.png)
+![](untitled.png)
 
 **Input**
 

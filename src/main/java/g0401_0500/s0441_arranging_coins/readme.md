@@ -8,7 +8,7 @@ Given the integer `n`, return _the number of **complete rows** of the staircase 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/09/arrangecoins1-grid.jpg)
+![](arrangecoins1-grid.jpg)
 
 **Input:** n = 5
 
@@ -18,7 +18,7 @@ Given the integer `n`, return _the number of **complete rows** of the staircase 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/04/09/arrangecoins2-grid.jpg)
+![](arrangecoins2-grid.jpg)
 
 **Input:** n = 8
 

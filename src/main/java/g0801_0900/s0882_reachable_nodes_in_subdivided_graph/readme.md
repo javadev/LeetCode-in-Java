@@ -14,7 +14,7 @@ Given the original graph and `maxMoves`, return _the number of nodes that are **
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/01/origfinal.png)
+![](origfinal.png)
 
 **Input:** edges = [[0,1,10],[0,2,1],[1,2,2]], maxMoves = 6, n = 3
 

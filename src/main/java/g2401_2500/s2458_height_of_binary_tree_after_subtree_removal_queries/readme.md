@@ -17,7 +17,7 @@ Return _an array_ `answer` _of size_ `m` _where_ `answer[i]` _is the height of t
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/09/07/binaryytreeedrawio-1.png)
+![](binaryytreeedrawio-1.png)
 
 **Input:** root = [1,3,4,2,null,6,5,null,null,null,null,null,7], queries = [4]
 
@@ -27,7 +27,7 @@ Return _an array_ `answer` _of size_ `m` _where_ `answer[i]` _is the height of t
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/09/07/binaryytreeedrawio-2.png)
+![](binaryytreeedrawio-2.png)
 
 **Input:** root = [5,8,9,2,1,3,7,4,6], queries = [3,2,4,8]
 

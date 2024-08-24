@@ -10,7 +10,7 @@ Return _the **minimum** number of moves required to make every node have **exact
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/01/18/tree1.png)
+![](tree1.png)
 
 **Input:** root = [3,0,0]
 
@@ -20,7 +20,7 @@ Return _the **minimum** number of moves required to make every node have **exact
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/01/18/tree2.png)
+![](tree2.png)
 
 **Input:** root = [0,3,0]
 

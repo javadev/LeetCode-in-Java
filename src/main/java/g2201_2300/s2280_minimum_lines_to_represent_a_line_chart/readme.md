@@ -4,13 +4,13 @@ Medium
 
 You are given a 2D integer array `stockPrices` where <code>stockPrices[i] = [day<sub>i</sub>, price<sub>i</sub>]</code> indicates the price of the stock on day <code>day<sub>i</sub></code> is <code>price<sub>i</sub></code>. A **line chart** is created from the array by plotting the points on an XY plane with the X-axis representing the day and the Y-axis representing the price and connecting adjacent points. One such example is shown below:
 
-![](https://assets.leetcode.com/uploads/2022/03/30/1920px-pushkin_population_historysvg.png)
+![](1920px-pushkin_population_historysvg.png)
 
 Return _the **minimum number of lines** needed to represent the line chart_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/03/30/ex0.png)
+![](ex0.png)
 
 **Input:** stockPrices = [[1,7],[2,6],[3,5],[4,4],[5,4],[6,3],[7,2],[8,1]]
 
@@ -32,7 +32,7 @@ It can be shown that it is not possible to represent the line chart using less t
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/03/30/ex1.png)
+![](ex1.png)
 
 **Input:** stockPrices = [[3,4],[1,2],[7,8],[2,3]]
 

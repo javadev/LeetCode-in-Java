@@ -6,7 +6,7 @@ Given the `root` of a binary search tree, rearrange the tree in **in-order** so 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/17/ex1.jpg)
+![](ex1.jpg)
 
 **Input:** root = [5,3,6,2,4,null,8,1,null,null,null,7,9]
 
@@ -14,7 +14,7 @@ Given the `root` of a binary search tree, rearrange the tree in **in-order** so 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/11/17/ex2.jpg)
+![](ex2.jpg)
 
 **Input:** root = [5,1,7]
 

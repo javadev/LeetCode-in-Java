@@ -31,7 +31,7 @@ Given a `rows x cols` matrix `grid` and two integers `catJump` and `mouseJump`, 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/12/sample_111_1955.png)
+![](sample_111_1955.png)
 
 **Input:** grid = ["####F","#C...","M...."], catJump = 1, mouseJump = 2
 
@@ -41,7 +41,7 @@ Given a `rows x cols` matrix `grid` and two integers `catJump` and `mouseJump`, 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/09/12/sample_2_1955.png)
+![](sample_2_1955.png)
 
 **Input:** grid = ["M.C...F"], catJump = 1, mouseJump = 4
 

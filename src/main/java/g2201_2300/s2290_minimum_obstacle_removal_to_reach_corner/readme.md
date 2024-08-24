@@ -13,7 +13,7 @@ Return _the **minimum** number of **obstacles** to **remove** so you can move fr
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/04/06/example1drawio-1.png)
+![](example1drawio-1.png)
 
 **Input:** grid = [[0,1,1],[1,1,0],[1,1,0]]
 
@@ -27,7 +27,7 @@ Note that there may be other ways to remove 2 obstacles to create a path.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/04/06/example1drawio.png)
+![](example1drawio.png)
 
 **Input:** grid = [[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]]
 

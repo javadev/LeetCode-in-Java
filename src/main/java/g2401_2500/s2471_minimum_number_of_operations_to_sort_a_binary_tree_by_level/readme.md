@@ -12,7 +12,7 @@ The **level** of a node is the number of edges along the path between it and the
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/09/18/image-20220918174006-2.png)
+![](image-20220918174006-2.png)
 
 **Input:** root = [1,4,3,7,6,8,5,null,null,null,null,9,null,10]
 
@@ -27,7 +27,7 @@ We used 3 operations so return 3. It can be proven that 3 is the minimum number 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/09/18/image-20220918174026-3.png)
+![](image-20220918174026-3.png)
 
 **Input:** root = [1,3,2,7,6,5,4]
 
@@ -42,7 +42,7 @@ We used 3 operations so return 3. It can be proven that 3 is the minimum number 
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2022/09/18/image-20220918174052-4.png)
+![](image-20220918174052-4.png)
 
 **Input:** root = [1,2,3,4,5,6]
 

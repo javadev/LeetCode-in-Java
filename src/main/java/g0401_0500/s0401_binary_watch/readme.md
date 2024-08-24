@@ -6,7 +6,7 @@ A binary watch has 4 LEDs on the top which represent the hours (0-11), and the 6
 
 *   For example, the below binary watch reads `"4:51"`.
 
-![](https://assets.leetcode.com/uploads/2021/04/08/binarywatch.jpg)
+![](binarywatch.jpg)
 
 Given an integer `turnedOn` which represents the number of LEDs that are currently on, return _all possible times the watch could represent_. You may return the answer in **any order**.
 

@@ -10,7 +10,7 @@ Given the roots of two binary trees `root1` and `root2`, return `true` if the tw
 
 **Example 1:**
 
-![Flipped Trees Diagram](https://assets.leetcode.com/uploads/2018/11/29/tree_ex.png)
+![Flipped Trees Diagram](tree_ex.png)
 
 **Input:** root1 = [1,2,3,4,5,6,null,null,null,7,8], root2 = [1,3,2,null,6,4,5,null,null,null,null,8,7]
 

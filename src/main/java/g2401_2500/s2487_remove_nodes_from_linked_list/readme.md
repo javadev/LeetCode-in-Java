@@ -10,7 +10,7 @@ Return _the_ `head` _of the modified linked list._
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/02/drawio.png)
+![](drawio.png)
 
 **Input:** head = [5,2,13,3,8]
 

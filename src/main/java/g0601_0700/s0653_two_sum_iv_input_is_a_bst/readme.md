@@ -6,7 +6,7 @@ Given the `root` of a Binary Search Tree and a target number `k`, return _`true`
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/21/sum_tree_1.jpg)
+![](sum_tree_1.jpg)
 
 **Input:** root = [5,3,6,2,4,null,7], k = 9
 
@@ -14,7 +14,7 @@ Given the `root` of a Binary Search Tree and a target number `k`, return _`true`
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/09/21/sum_tree_2.jpg)
+![](sum_tree_2.jpg)
 
 **Input:** root = [5,3,6,2,4,null,7], k = 28
 

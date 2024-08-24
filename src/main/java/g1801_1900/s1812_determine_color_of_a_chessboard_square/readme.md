@@ -4,7 +4,7 @@ Easy
 
 You are given `coordinates`, a string that represents the coordinates of a square of the chessboard. Below is a chessboard for your reference.
 
-![](https://assets.leetcode.com/uploads/2021/02/19/screenshot-2021-02-20-at-22159-pm.png)
+![](screenshot-2021-02-20-at-22159-pm.png)
 
 Return `true` _if the square is white, and_ `false` _if the square is black_.
 

@@ -23,7 +23,7 @@ Return _an array_ `answer` _of length_ `m` _where_ `answer[i]` _is the answer to
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/25/bexample1.png)
+![](bexample1.png)
 
 **Input:** n = 3, queries = [[5,3],[4,7],[2,3]]
 
@@ -39,7 +39,7 @@ Return _an array_ `answer` _of length_ `m` _where_ `answer[i]` _is the answer to
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/10/25/aexample2.png)
+![](aexample2.png)
 
 **Input:** n = 2, queries = [[1,2]]
 

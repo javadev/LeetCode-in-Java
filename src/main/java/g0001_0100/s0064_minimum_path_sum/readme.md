@@ -8,7 +8,7 @@ Given a `m x n` `grid` filled with non-negative numbers, find a path from top le
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/05/minpath.jpg)
+![](minpath.jpg)
 
 **Input:** grid = [[1,3,1],[1,5,1],[4,2,1]]
 

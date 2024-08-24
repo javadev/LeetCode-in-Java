@@ -12,7 +12,7 @@ Given the output `traversal` of this traversal, recover the tree and return _its
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/04/08/recover-a-tree-from-preorder-traversal.png)
+![](recover-a-tree-from-preorder-traversal.png)
 
 **Input:** traversal = "1-2--3--4-5--6--7"
 
@@ -20,7 +20,7 @@ Given the output `traversal` of this traversal, recover the tree and return _its
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/04/11/screen-shot-2019-04-10-at-114101-pm.png)
+![](screen-shot-2019-04-10-at-114101-pm.png)
 
 **Input:** traversal = "1-2--3---4-5--6---7"
 
@@ -28,7 +28,7 @@ Given the output `traversal` of this traversal, recover the tree and return _its
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2019/04/11/screen-shot-2019-04-10-at-114955-pm.png)
+![](screen-shot-2019-04-10-at-114955-pm.png)
 
 **Input:** traversal = "1-401--349---90--88"
 

@@ -8,7 +8,7 @@ Return _the head of the linked list after **swapping** the values of the_ <code>
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/21/linked1.jpg)
+![](linked1.jpg)
 
 **Input:** head = [1,2,3,4,5], k = 2
 

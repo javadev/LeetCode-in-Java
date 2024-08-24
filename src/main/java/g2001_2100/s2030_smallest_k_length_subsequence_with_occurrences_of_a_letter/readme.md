@@ -30,7 +30,7 @@ The lexicographically smallest subsequence among them is "eet".
 
 **Example 2:**
 
-![example-2](https://assets.leetcode.com/uploads/2021/09/13/smallest-k-length-subsequence.png)
+![example-2](smallest-k-length-subsequence.png)
 
 **Input:** s = "leetcode", k = 4, letter = "e", repetition = 2
 

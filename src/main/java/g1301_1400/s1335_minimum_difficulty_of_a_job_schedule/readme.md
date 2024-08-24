@@ -12,7 +12,7 @@ Return _the minimum difficulty of a job schedule_. If you cannot find a schedule
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/01/16/untitled.png)
+![](untitled.png)
 
 **Input:** jobDifficulty = [6,5,4,3,2,1], d = 2
 

@@ -10,7 +10,7 @@ Return _an array_ `answer` _of length_ `n` _where_ `answer[i]` _is the **number 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/29/queue-plane.jpg)
+![](queue-plane.jpg)
 
 **Input:** heights = [10,6,8,5,11,9]
 

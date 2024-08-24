@@ -10,13 +10,13 @@ Return _the minimum cost to make all points connected._ All points are connected
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/26/d.png)
+![](d.png)
 
 **Input:** points = [[0,0],[2,2],[3,10],[5,2],[7,0]]
 
 **Output:** 20
 
-**Explanation:** ![](https://assets.leetcode.com/uploads/2020/08/26/c.png)
+**Explanation:** ![](c.png)
 
 We can connect the points as shown above to get the minimum cost of 20.
 

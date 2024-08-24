@@ -10,7 +10,7 @@ A **star graph** is a subgraph of the given graph having a center node containin
 
 The image below shows star graphs with `3` and `4` neighbors respectively, centered at the blue node.
 
-![](https://assets.leetcode.com/uploads/2022/11/07/max-star-sum-descdrawio.png)
+![](max-star-sum-descdrawio.png)
 
 The **star sum** is the sum of the values of all the nodes present in the star graph.
 
@@ -18,7 +18,7 @@ Given an integer `k`, return _the **maximum star sum** of a star graph containin
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/11/07/max-star-sum-example1drawio.png)
+![](max-star-sum-example1drawio.png)
 
 **Input:** vals = [1,2,3,4,10,-10,-20], edges = [[0,1],[1,2],[1,3],[3,4],[3,5],[3,6]], k = 2
 

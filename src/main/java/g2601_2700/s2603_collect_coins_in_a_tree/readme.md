@@ -15,7 +15,7 @@ Note that if you pass an edge several times, you need to count it into the answe
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/03/01/graph-2.png)
+![](graph-2.png)
 
 **Input:** coins = [1,0,0,0,0,1], edges = [[0,1],[1,2],[2,3],[3,4],[4,5]]
 
@@ -25,7 +25,7 @@ Note that if you pass an edge several times, you need to count it into the answe
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/03/02/graph-4.png)
+![](graph-4.png)
 
 **Input:** coins = [0,0,0,1,1,0,0,1], edges = [[0,1],[0,2],[1,3],[1,4],[2,5],[5,6],[5,7]]
 

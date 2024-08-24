@@ -10,7 +10,7 @@ Return _the length of the **longest path** in the tree such that no pair of **ad
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/03/25/testingdrawio.png)
+![](testingdrawio.png)
 
 **Input:** parent = [-1,0,0,1,1,2], s = "abacbe"
 
@@ -22,7 +22,7 @@ It can be proven that there is no longer path that satisfies the conditions.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/03/25/graph2drawio.png)
+![](graph2drawio.png)
 
 **Input:** parent = [-1,0,0,0], s = "aabc"
 

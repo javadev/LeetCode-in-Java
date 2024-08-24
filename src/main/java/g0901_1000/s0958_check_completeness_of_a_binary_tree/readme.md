@@ -8,7 +8,7 @@ In a **[complete binary tree](http://en.wikipedia.org/wiki/Binary_tree#Types_of_
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/12/15/complete-binary-tree-1.png)
+![](complete-binary-tree-1.png)
 
 **Input:** root = [1,2,3,4,5,6]
 
@@ -18,7 +18,7 @@ In a **[complete binary tree](http://en.wikipedia.org/wiki/Binary_tree#Types_of_
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2018/12/15/complete-binary-tree-2.png)
+![](complete-binary-tree-2.png)
 
 **Input:** root = [1,2,3,4,5,null,7]
 

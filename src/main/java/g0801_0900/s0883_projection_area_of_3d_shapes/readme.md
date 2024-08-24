@@ -14,7 +14,7 @@ Return _the total area of all three projections_.
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/02/shadow.png)
+![](shadow.png)
 
 **Input:** grid = [[1,2],[3,4]]
 

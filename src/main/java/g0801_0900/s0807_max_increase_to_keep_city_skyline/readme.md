@@ -12,7 +12,7 @@ Return _the **maximum total sum** that the height of the buildings can be increa
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/21/807-ex1.png)
+![](807-ex1.png)
 
 **Input:** grid = [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]
 

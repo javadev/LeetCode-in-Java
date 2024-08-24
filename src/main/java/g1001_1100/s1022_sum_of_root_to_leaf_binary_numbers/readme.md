@@ -12,7 +12,7 @@ The test cases are generated so that the answer fits in a **32-bits** integer.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/04/04/sum-of-root-to-leaf-binary-numbers.png)
+![](sum-of-root-to-leaf-binary-numbers.png)
 
 **Input:** root = [1,0,1,0,1,0,1]
 

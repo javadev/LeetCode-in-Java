@@ -18,7 +18,7 @@ Return the **minimum** number of cells that need to be flipped to make **all** r
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/08/01/image.png)
+![](image.png)
 
 **Example 2:**
 
@@ -28,7 +28,7 @@ Return the **minimum** number of cells that need to be flipped to make **all** r
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/07/08/screenshot-from-2024-07-09-01-37-48.png)
+![](screenshot-from-2024-07-09-01-37-48.png)
 
 **Example 3:**
 
@@ -38,7 +38,7 @@ Return the **minimum** number of cells that need to be flipped to make **all** r
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/08/01/screenshot-from-2024-08-01-23-05-26.png)
+![](screenshot-from-2024-08-01-23-05-26.png)
 
 **Constraints:**
 

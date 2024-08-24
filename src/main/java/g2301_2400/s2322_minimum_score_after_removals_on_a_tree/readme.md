@@ -17,7 +17,7 @@ Return _the **minimum** score of any possible pair of edge removals on the given
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/05/03/ex1drawio.png)
+![](ex1drawio.png)
 
 **Input:** nums = [1,5,5,4,11], edges = [[0,1],[1,2],[1,3],[3,4]]
 
@@ -37,7 +37,7 @@ It can be shown that no other pair of removals will obtain a smaller score than 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/05/03/ex2drawio.png)
+![](ex2drawio.png)
 
 **Input:** nums = [5,5,2,4,4,2], edges = [[0,1],[1,2],[5,2],[4,3],[1,3]]
 

@@ -6,7 +6,7 @@ You are given the `root` of a binary tree with `n` nodes, where each node is uni
 
 Any node in the binary tree can be **flipped** by swapping its left and right subtrees. For example, flipping node 1 will have the following effect:
 
-![](https://assets.leetcode.com/uploads/2021/02/15/fliptree.jpg)
+![](fliptree.jpg)
 
 Flip the **smallest** number of nodes so that the **pre-order traversal** of the tree **matches** `voyage`.
 
@@ -14,7 +14,7 @@ Return _a list of the values of all **flipped** nodes. You may return the answer
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/01/02/1219-01.png)
+![](1219-01.png)
 
 **Input:** root = [1,2], voyage = [2,1]
 
@@ -24,7 +24,7 @@ Return _a list of the values of all **flipped** nodes. You may return the answer
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/01/02/1219-02.png)
+![](1219-02.png)
 
 **Input:** root = [1,2,3], voyage = [1,3,2]
 
@@ -34,7 +34,7 @@ Return _a list of the values of all **flipped** nodes. You may return the answer
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2019/01/02/1219-02.png)
+![](1219-02.png)
 
 **Input:** root = [1,2,3], voyage = [1,2,3]
 

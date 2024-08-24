@@ -16,7 +16,7 @@ Return _the last number that remains in_ `nums` _after applying the algorithm._
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/04/13/example1drawio-1.png)
+![](example1drawio-1.png)
 
 **Input:** nums = [1,3,5,2,4,8,2,2]
 

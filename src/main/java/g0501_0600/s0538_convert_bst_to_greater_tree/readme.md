@@ -12,7 +12,7 @@ As a reminder, a _binary search tree_ is a tree that satisfies these constraints
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/05/02/tree.png)
+![](tree.png)
 
 **Input:** root = [4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]
 

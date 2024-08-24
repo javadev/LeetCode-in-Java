@@ -12,7 +12,7 @@ Return _the **maximum** number of minutes you can run all the_ `n` _computers si
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/01/06/example1-fit.png)
+![](example1-fit.png)
 
 **Input:** n = 2, batteries = [3,3,3]
 
@@ -32,7 +32,7 @@ We can run the two computers simultaneously for at most 4 minutes, so we return 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/01/06/example2.png)
+![](example2.png)
 
 **Input:** n = 2, batteries = [1,1,1,1]
 

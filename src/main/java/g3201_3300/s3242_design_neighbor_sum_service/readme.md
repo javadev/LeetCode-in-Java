@@ -10,7 +10,7 @@ Implement the `neighborSum` class:
 *   `int adjacentSum(int value)` returns the **sum** of elements which are adjacent neighbors of `value`, that is either to the top, left, right, or bottom of `value` in `grid`.
 *   `int diagonalSum(int value)` returns the **sum** of elements which are diagonal neighbors of `value`, that is either to the top-left, top-right, bottom-left, or bottom-right of `value` in `grid`.
 
-![](https://assets.leetcode.com/uploads/2024/06/24/design.png)
+![](design.png)
 
 **Example 1:**
 
@@ -24,7 +24,7 @@ Implement the `neighborSum` class:
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/06/24/designexample0.png)**
+**![](designexample0.png)**
 
 *   The adjacent neighbors of 1 are 0, 2, and 4.
 *   The adjacent neighbors of 4 are 1, 3, 5, and 7.
@@ -43,7 +43,7 @@ Implement the `neighborSum` class:
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/06/24/designexample2.png)**
+**![](designexample2.png)**
 
 *   The adjacent neighbors of 15 are 0, 10, 7, and 6.
 *   The diagonal neighbors of 9 are 4, 12, 14, and 15.

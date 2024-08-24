@@ -6,7 +6,7 @@ Given the `root` of a binary tree, return _the sum of values of its deepest leav
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/07/31/1483_ex1.png)
+![](1483_ex1.png)
 
 **Input:** root = [1,2,3,4,5,null,6,7,null,null,null,null,8]
 

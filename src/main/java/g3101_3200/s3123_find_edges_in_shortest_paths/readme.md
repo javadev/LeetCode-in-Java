@@ -12,7 +12,7 @@ Return the array `answer`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2024/03/05/graph35drawio-1.png)
+![](graph35drawio-1.png)
 
 **Input:** n = 6, edges = [[0,1,4],[0,2,1],[1,3,2],[1,4,3],[1,5,1],[2,3,1],[3,5,3],[4,5,2]]
 
@@ -28,7 +28,7 @@ The following are **all** the shortest paths between nodes 0 and 5:
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2024/03/05/graphhhh.png)
+![](graphhhh.png)
 
 **Input:** n = 4, edges = [[2,0,1],[0,1,1],[0,3,4],[3,2,2]]
 

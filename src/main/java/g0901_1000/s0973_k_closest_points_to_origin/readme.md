@@ -10,7 +10,7 @@ You may return the answer in **any order**. The answer is **guaranteed** to be *
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/03/closestplane1.jpg)
+![](closestplane1.jpg)
 
 **Input:** points = [[1,3],[-2,2]], k = 1
 

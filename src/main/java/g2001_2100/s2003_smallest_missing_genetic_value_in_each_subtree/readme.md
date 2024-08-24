@@ -12,7 +12,7 @@ The **subtree** rooted at a node `x` contains node `x` and all of its **descenda
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/23/case-1.png)
+![](case-1.png)
 
 **Input:** parents = [-1,0,0,2], nums = [1,2,3,4]
 
@@ -30,7 +30,7 @@ The **subtree** rooted at a node `x` contains node `x` and all of its **descenda
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/08/23/case-2.png)
+![](case-2.png)
 
 **Input:** parents = [-1,0,1,0,3,3], nums = [5,4,6,2,1,3]
 

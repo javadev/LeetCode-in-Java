@@ -18,7 +18,7 @@ A cell is **adjacent** to another cell if the former is directly north, east, so
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/03/10/ex1new.jpg)
+![](ex1new.jpg)
 
 **Input:** grid = [[0,2,0,0,0,0,0],[0,0,0,2,2,1,0],[0,2,0,0,1,2,0],[0,0,2,2,2,0,2],[0,0,0,0,0,0,0]]
 
@@ -32,7 +32,7 @@ Staying for more than 3 minutes will not allow you to safely reach the safehouse
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/03/10/ex2new2.jpg)
+![](ex2new2.jpg)
 
 **Input:** grid = [[0,0,0,0],[0,1,2,0],[0,2,0,0]]
 
@@ -46,7 +46,7 @@ Thus, -1 is returned.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2022/03/10/ex3new.jpg)
+![](ex3new.jpg)
 
 **Input:** grid = [[0,0,0],[2,2,0],[1,2,0]]
 

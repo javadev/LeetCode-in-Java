@@ -14,7 +14,7 @@ Given a linked list `head`, return _an array of length 2 containing_ `[minDistan
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/10/13/a1.png)
+![](a1.png)
 
 **Input:** head = [3,1]
 
@@ -24,7 +24,7 @@ Given a linked list `head`, return _an array of length 2 containing_ `[minDistan
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/10/13/a2.png)
+![](a2.png)
 
 **Input:** head = [5,3,1,2,5,1,2]
 
@@ -44,7 +44,7 @@ The maximum distance is between the third and the sixth node. maxDistance = 6 - 
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/10/14/a5.png)
+![](a5.png)
 
 **Input:** head = [1,3,2,2,3,2,2,2,7]
 

@@ -14,7 +14,7 @@ Return _an array containing all edges (even unmodified ones) in any order if it 
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2023/04/18/graph.png)**
+**![](graph.png)**
 
 **Input:** n = 5, edges = [[4,1,-1],[2,0,-1],[0,3,-1],[4,3,-1]], source = 0, destination = 1, target = 5
 
@@ -24,7 +24,7 @@ Return _an array containing all edges (even unmodified ones) in any order if it 
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2023/04/18/graph-2.png)**
+**![](graph-2.png)**
 
 **Input:** n = 3, edges = [[0,1,-1],[0,2,5]], source = 0, destination = 2, target = 6
 
@@ -34,7 +34,7 @@ Return _an array containing all edges (even unmodified ones) in any order if it 
 
 **Example 3:**
 
-**![](https://assets.leetcode.com/uploads/2023/04/19/graph-3.png)**
+**![](graph-3.png)**
 
 **Input:** n = 4, edges = [[1,0,4],[1,2,3],[2,3,5],[0,3,-1]], source = 0, destination = 2, target = 6
 

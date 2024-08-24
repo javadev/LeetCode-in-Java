@@ -14,7 +14,7 @@ Given `bottom` and `allowed`, return `true` _if you can build the pyramid all th
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/26/pyramid1-grid.jpg)
+![](pyramid1-grid.jpg)
 
 **Input:** bottom = "BCD", allowed = ["BCC","CDE","CEA","FFF"]
 
@@ -24,7 +24,7 @@ Given `bottom` and `allowed`, return `true` _if you can build the pyramid all th
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/08/26/pyramid2-grid.jpg)
+![](pyramid2-grid.jpg)
 
 **Input:** bottom = "AAAA", allowed = ["AAB","AAC","BCD","BBE","DEF"]
 

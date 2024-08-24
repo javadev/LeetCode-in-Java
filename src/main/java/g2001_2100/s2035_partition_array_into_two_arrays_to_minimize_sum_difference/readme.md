@@ -8,7 +8,7 @@ Return _the **minimum** possible absolute difference_.
 
 **Example 1:**
 
-![example-1](https://assets.leetcode.com/uploads/2021/10/02/ex1.png)
+![example-1](ex1.png)
 
 **Input:** nums = [3,9,7,3]
 
@@ -26,7 +26,7 @@ Return _the **minimum** possible absolute difference_.
 
 **Example 3:**
 
-![example-3](https://assets.leetcode.com/uploads/2021/10/02/ex3.png)
+![example-3](ex3.png)
 
 **Input:** nums = [2,-1,0,4,-2,-9]
 

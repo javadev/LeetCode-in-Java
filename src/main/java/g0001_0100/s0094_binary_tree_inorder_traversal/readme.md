@@ -6,7 +6,7 @@ Given the `root` of a binary tree, return _the inorder traversal of its nodes' v
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg)
+![](inorder_1.jpg)
 
 **Input:** root = [1,null,2,3]
 
@@ -26,7 +26,7 @@ Given the `root` of a binary tree, return _the inorder traversal of its nodes' v
 
 **Example 4:**
 
-![](https://assets.leetcode.com/uploads/2020/09/15/inorder_5.jpg)
+![](inorder_5.jpg)
 
 **Input:** root = [1,2]
 
@@ -34,7 +34,7 @@ Given the `root` of a binary tree, return _the inorder traversal of its nodes' v
 
 **Example 5:**
 
-![](https://assets.leetcode.com/uploads/2020/09/15/inorder_4.jpg)
+![](inorder_4.jpg)
 
 **Input:** root = [1,null,2]
 

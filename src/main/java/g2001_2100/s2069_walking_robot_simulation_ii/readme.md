@@ -20,7 +20,7 @@ Implement the `Robot` class:
 
 **Example 1:**
 
-![example-1](https://assets.leetcode.com/uploads/2021/10/09/example-1.png)
+![example-1](example-1.png)
 
 **Input**
 

@@ -8,7 +8,7 @@ A **falling path with non-zero shifts** is a choice of exactly one element from 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/10/falling-grid.jpg)
+![](falling-grid.jpg)
 
 **Input:** arr = [[1,2,3],[4,5,6],[7,8,9]]
 

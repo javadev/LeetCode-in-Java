@@ -8,7 +8,7 @@ Given `n` non-negative integers <code>a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)
+![](question_11.jpg)
 
 **Input:** height = [1,8,6,2,5,4,8,3,7]
 

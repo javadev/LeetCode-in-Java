@@ -10,7 +10,7 @@ Return _the **minimum** number of semesters needed to take all courses_. The tes
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2020/05/22/leetcode_parallel_courses_1.png)**
+**![](leetcode_parallel_courses_1.png)**
 
 **Input:** n = 4, dependencies = [[2,1],[3,1],[1,4]], k = 2
 
@@ -20,7 +20,7 @@ Return _the **minimum** number of semesters needed to take all courses_. The tes
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2020/05/22/leetcode_parallel_courses_2.png)**
+**![](leetcode_parallel_courses_2.png)**
 
 **Input:** n = 5, dependencies = [[2,1],[3,1],[4,1],[1,5]], k = 2
 

@@ -14,7 +14,7 @@ Return _a boolean array_ `answer`_, where_ `answer[j]` _is the answer to the_ <c
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/01/courses4-1-graph.jpg)
+![](courses4-1-graph.jpg)
 
 **Input:** numCourses = 2, prerequisites = [[1,0]], queries = [[0,1],[1,0]]
 
@@ -32,7 +32,7 @@ Return _a boolean array_ `answer`_, where_ `answer[j]` _is the answer to the_ <c
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/05/01/courses4-3-graph.jpg)
+![](courses4-3-graph.jpg)
 
 **Input:** numCourses = 3, prerequisites = [[1,2],[1,0],[2,0]], queries = [[1,0],[1,2]]
 

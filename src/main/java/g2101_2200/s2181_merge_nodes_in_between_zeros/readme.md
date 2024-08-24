@@ -10,7 +10,7 @@ Return _the_ `head` _of the modified linked list_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/02/02/ex1-1.png)
+![](ex1-1.png)
 
 **Input:** head = [0,3,1,0,4,5,2,0]
 
@@ -26,7 +26,7 @@ The above figure represents the given linked list. The modified list contains
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/02/02/ex2-1.png)
+![](ex2-1.png)
 
 **Input:** head = [0,1,0,3,0,2,2,0]
 

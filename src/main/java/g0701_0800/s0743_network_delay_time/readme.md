@@ -8,7 +8,7 @@ We will send a signal from a given node `k`. Return the time it takes for all th
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/05/23/931_example_1.png)
+![](931_example_1.png)
 
 **Input:** times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, k = 2
 

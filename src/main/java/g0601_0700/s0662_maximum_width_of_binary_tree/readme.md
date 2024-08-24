@@ -12,7 +12,7 @@ It is **guaranteed** that the answer will in the range of **32-bit** signed inte
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/03/width1-tree.jpg)
+![](width1-tree.jpg)
 
 **Input:** root = [1,3,2,5,3,null,9]
 
@@ -22,7 +22,7 @@ It is **guaranteed** that the answer will in the range of **32-bit** signed inte
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/05/03/width2-tree.jpg)
+![](width2-tree.jpg)
 
 **Input:** root = [1,3,null,5,3]
 
@@ -32,7 +32,7 @@ It is **guaranteed** that the answer will in the range of **32-bit** signed inte
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/05/03/width3-tree.jpg)
+![](width3-tree.jpg)
 
 **Input:** root = [1,3,2,5]
 

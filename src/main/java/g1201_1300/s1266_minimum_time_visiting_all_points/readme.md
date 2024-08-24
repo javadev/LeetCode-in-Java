@@ -15,7 +15,7 @@ You can move according to these rules:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/11/14/1626_example_1.PNG)
+![](1626_example_1.png)
 
 **Input:** points = [[1,1],[3,4],[-1,0]]
 

@@ -8,7 +8,7 @@ Given the `root` of a binary tree, return _the length of the longest path, where
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/13/ex1.jpg)
+![](ex1.jpg)
 
 **Input:** root = [5,4,5,1,1,5]
 
@@ -16,7 +16,7 @@ Given the `root` of a binary tree, return _the length of the longest path, where
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/13/ex2.jpg)
+![](ex2.jpg)
 
 **Input:** root = [1,4,5,4,4,5]
 

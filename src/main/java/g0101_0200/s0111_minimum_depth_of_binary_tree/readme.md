@@ -10,7 +10,7 @@ The minimum depth is the number of nodes along the shortest path from the root n
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/12/ex_depth.jpg)
+![](ex_depth.jpg)
 
 **Input:** root = [3,9,20,null,null,15,7]
 

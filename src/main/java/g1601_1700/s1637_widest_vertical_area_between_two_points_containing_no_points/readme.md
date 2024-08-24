@@ -10,7 +10,7 @@ Note that points **on the edge** of a vertical area **are not** considered inclu
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/19/points3.png)
+![](points3.png)
 
 **Input:** points = [[8,7],[9,9],[7,4],[9,7]]
 

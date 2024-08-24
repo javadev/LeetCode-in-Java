@@ -12,7 +12,7 @@ Return _a **2D list** of grid coordinates_ `result` _where_ <code>result[i] = [r
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/08/waterflow-grid.jpg)
+![](waterflow-grid.jpg)
 
 **Input:** heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]
 

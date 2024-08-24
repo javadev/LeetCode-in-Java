@@ -6,7 +6,7 @@ Given a `m x n` matrix `mat` and an integer `threshold`, return _the maximum sid
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/12/05/e1.png)
+![](e1.png)
 
 **Input:** mat = [[1,1,3,2,4,3,2],[1,1,3,2,4,3,2],[1,1,3,2,4,3,2]], threshold = 4
 

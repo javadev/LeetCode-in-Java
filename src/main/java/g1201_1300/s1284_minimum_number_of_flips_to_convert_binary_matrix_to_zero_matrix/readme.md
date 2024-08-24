@@ -12,7 +12,7 @@ A **zero matrix** is a matrix with all cells equal to `0`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/11/28/matrix.png)
+![](matrix.png)
 
 **Input:** mat = [[0,0],[0,1]]
 

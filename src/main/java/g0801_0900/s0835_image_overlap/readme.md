@@ -12,13 +12,13 @@ Return _the largest possible overlap_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/09/overlap1.jpg)
+![](overlap1.jpg)
 
 **Input:** img1 = [[1,1,0],[0,1,0],[0,1,0]], img2 = [[0,0,0],[0,1,1],[0,0,1]]
 
 **Output:** 3
 
-**Explanation:** We translate img1 to right by 1 unit and down by 1 unit. ![](https://assets.leetcode.com/uploads/2020/09/09/overlap_step1.jpg) The number of positions that have a 1 in both images is 3 (shown in red). ![](https://assets.leetcode.com/uploads/2020/09/09/overlap_step2.jpg)
+**Explanation:** We translate img1 to right by 1 unit and down by 1 unit. ![](overlap_step1.jpg) The number of positions that have a 1 in both images is 3 (shown in red). ![](overlap_step2.jpg)
 
 **Example 2:**
 

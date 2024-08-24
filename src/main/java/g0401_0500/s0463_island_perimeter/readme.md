@@ -10,7 +10,7 @@ The island doesn't have "lakes", meaning the water inside isn't connected to the
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/10/12/island.png)
+![](island.png)
 
 **Input:** grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]
 

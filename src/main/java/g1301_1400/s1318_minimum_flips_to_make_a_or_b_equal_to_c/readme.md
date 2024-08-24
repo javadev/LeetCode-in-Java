@@ -7,7 +7,7 @@ Flip operation consists of change **any** single bit 1 to 0 or change the bit 0 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/01/06/sample_3_1676.png)
+![](sample_3_1676.png)
 
 **Input:** a = 2, b = 6, c = 5
 

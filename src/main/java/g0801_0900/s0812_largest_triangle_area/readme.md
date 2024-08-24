@@ -6,7 +6,7 @@ Given an array of points on the **X-Y** plane `points` where <code>points[i] = [
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/04/04/1027.png)
+![](1027.png)
 
 **Input:** points = [[0,0],[0,1],[1,0],[0,2],[2,0]]
 

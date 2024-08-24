@@ -6,7 +6,7 @@ Given the `head` of a singly linked list, reverse the list, and return _the reve
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg)
+![](rev1ex1.jpg)
 
 **Input:** head = [1,2,3,4,5]
 
@@ -14,7 +14,7 @@ Given the `head` of a singly linked list, reverse the list, and return _the reve
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/02/19/rev1ex2.jpg)
+![](rev1ex2.jpg)
 
 **Input:** head = [1,2]
 

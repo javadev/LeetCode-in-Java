@@ -14,7 +14,7 @@ Return _the **longest subsequence repeated**_ `k` _times in string_ `s`_. If mul
 
 **Example 1:**
 
-![example 1](https://assets.leetcode.com/uploads/2021/08/30/longest-subsequence-repeat-k-times.png)
+![example 1](longest-subsequence-repeat-k-times.png)
 
 **Input:** s = "letsleetcode", k = 2
 

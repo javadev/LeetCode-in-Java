@@ -11,7 +11,7 @@ To determine how you "say" a digit string, split it into the **minimal** number 
 
 For example, the saying and conversion for digit string `"3322251"`:
 
-![](https://assets.leetcode.com/uploads/2020/10/23/countandsay.jpg)
+![](countandsay.jpg)
 
 Given a positive integer `n`, return _the_ `nth` _term of the **count-and-say** sequence_.
 

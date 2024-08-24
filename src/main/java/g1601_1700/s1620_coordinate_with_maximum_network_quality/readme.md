@@ -19,7 +19,7 @@ Return _the array_ <code>[c<sub>x</sub>, c<sub>y</sub>]</code> _representing the
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/22/untitled-diagram.png)
+![](untitled-diagram.png)
 
 **Input:** towers = [[1,2,5],[2,1,7],[3,1,9]], radius = 2
 

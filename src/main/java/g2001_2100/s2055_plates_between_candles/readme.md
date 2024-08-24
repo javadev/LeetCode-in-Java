@@ -12,7 +12,7 @@ Return _an integer array_ `answer` _where_ `answer[i]` _is the answer to the_ <c
 
 **Example 1:**
 
-![ex-1](https://assets.leetcode.com/uploads/2021/10/04/ex-1.png)
+![ex-1](ex-1.png)
 
 **Input:** s = "\*\*|\*\*|\*\*\*|", queries = [[2,5],[5,9]]
 
@@ -22,7 +22,7 @@ Return _an integer array_ `answer` _where_ `answer[i]` _is the answer to the_ <c
 
 **Example 2:**
 
-![ex-2](https://assets.leetcode.com/uploads/2021/10/04/ex-2.png)
+![ex-2](ex-2.png)
 
 **Input:** s = "\*\*\*|\*\*|\*\*\*\*\*|\*\*||\*\*|\*", queries = [[1,17],[4,5],[14,17],[5,11],[15,16]]
 

@@ -8,7 +8,7 @@ A region is **captured** by flipping all `'O'`s into `'X'`s in that surrounded r
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/19/xogrid.jpg)
+![](xogrid.jpg)
 
 **Input:** board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
 

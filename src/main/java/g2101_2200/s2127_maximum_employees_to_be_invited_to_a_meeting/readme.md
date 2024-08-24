@@ -10,7 +10,7 @@ Given a **0-indexed** integer array `favorite`, where `favorite[i]` denotes the 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/14/ex1.png)
+![](ex1.png)
 
 **Input:** favorite = [2,2,1,2]
 
@@ -48,7 +48,7 @@ The maximum number of employees that can be invited to the meeting is 3.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/12/14/ex2.png)
+![](ex2.png)
 
 **Input:** favorite = [3,0,1,4,1]
 

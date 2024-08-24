@@ -8,7 +8,7 @@ Return `true` _if the circle and rectangle are overlapped otherwise return_ `fal
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/02/20/sample_4_1728.png)
+![](sample_4_1728.png)
 
 **Input:** radius = 1, xCenter = 0, yCenter = 0, x1 = 1, y1 = -1, x2 = 3, y2 = 1
 
@@ -24,7 +24,7 @@ Return `true` _if the circle and rectangle are overlapped otherwise return_ `fal
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/02/20/sample_2_1728.png)
+![](sample_2_1728.png)
 
 **Input:** radius = 1, xCenter = 0, yCenter = 0, x1 = -1, y1 = 0, x2 = 0, y2 = 1
 

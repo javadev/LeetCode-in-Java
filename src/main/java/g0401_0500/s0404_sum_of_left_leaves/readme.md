@@ -6,7 +6,7 @@ Given the `root` of a binary tree, return the sum of all left leaves.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/08/leftsum-tree.jpg)
+![](leftsum-tree.jpg)
 
 **Input:** root = [3,9,20,null,null,15,7]
 

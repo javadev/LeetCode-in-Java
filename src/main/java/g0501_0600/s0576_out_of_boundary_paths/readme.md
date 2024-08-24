@@ -8,7 +8,7 @@ Given the five integers `m`, `n`, `maxMove`, `startRow`, `startColumn`, return t
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/28/out_of_boundary_paths_1.png)
+![](out_of_boundary_paths_1.png)
 
 **Input:** m = 2, n = 2, maxMove = 2, startRow = 0, startColumn = 0
 
@@ -16,7 +16,7 @@ Given the five integers `m`, `n`, `maxMove`, `startRow`, `startColumn`, return t
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/04/28/out_of_boundary_paths_2.png)
+![](out_of_boundary_paths_2.png)
 
 **Input:** m = 1, n = 3, maxMove = 3, startRow = 0, startColumn = 1
 

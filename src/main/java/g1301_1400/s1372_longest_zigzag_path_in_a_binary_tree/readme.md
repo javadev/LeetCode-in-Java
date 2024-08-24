@@ -17,7 +17,7 @@ Return _the longest **ZigZag** path contained in that tree_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/01/22/sample_1_1702.png)
+![](sample_1_1702.png)
 
 **Input:** root = [1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]
 
@@ -27,7 +27,7 @@ Return _the longest **ZigZag** path contained in that tree_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/01/22/sample_2_1702.png)
+![](sample_2_1702.png)
 
 **Input:** root = [1,1,1,null,1,null,null,1,1,null,1]
 

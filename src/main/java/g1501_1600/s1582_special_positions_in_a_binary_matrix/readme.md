@@ -8,7 +8,7 @@ A position `(i, j)` is called **special** if `mat[i][j] == 1` and all other elem
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/23/special1.jpg)
+![](special1.jpg)
 
 **Input:** mat = [[1,0,0],[0,0,1],[1,0,0]]
 
@@ -18,7 +18,7 @@ A position `(i, j)` is called **special** if `mat[i][j] == 1` and all other elem
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/24/special-grid.jpg)
+![](special-grid.jpg)
 
 **Input:** mat = [[1,0,0],[0,1,0],[0,0,1]]
 

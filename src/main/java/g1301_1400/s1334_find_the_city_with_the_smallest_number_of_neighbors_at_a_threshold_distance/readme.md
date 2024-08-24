@@ -10,7 +10,7 @@ Notice that the distance of a path connecting cities _**i**_ and _**j**_ is equa
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/01/16/find_the_city_01.png)
+![](find_the_city_01.png)
 
 **Input:** n = 4, edges = [[0,1,3],[1,2,1],[1,3,4],[2,3,1]], distanceThreshold = 4
 
@@ -32,7 +32,7 @@ Cities 0 and 3 have 2 neighboring cities at a distanceThreshold = 4, but we have
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/01/16/find_the_city_02.png)
+![](find_the_city_02.png)
 
 **Input:** n = 5, edges = [[0,1,2],[0,4,8],[1,2,3],[1,4,2],[2,3,1],[3,4,1]], distanceThreshold = 2
 

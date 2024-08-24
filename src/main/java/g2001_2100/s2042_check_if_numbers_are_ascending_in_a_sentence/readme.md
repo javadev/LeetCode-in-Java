@@ -12,7 +12,7 @@ Return `true` _if so, or_ `false` _otherwise_.
 
 **Example 1:**
 
-![example-1](https://assets.leetcode.com/uploads/2021/09/30/example1.png)
+![example-1](example1.png)
 
 **Input:** s = "1 box has 3 blue 4 red 6 green and 12 yellow marbles"
 
@@ -30,7 +30,7 @@ Return `true` _if so, or_ `false` _otherwise_.
 
 **Example 3:**
 
-![example-3](https://assets.leetcode.com/uploads/2021/09/30/example3.png)
+![example-3](example3.png)
 
 **Input:** s = "sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s"
 

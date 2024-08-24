@@ -15,7 +15,7 @@ Return _the resulting array_ `answer`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/19/yetgriddrawio.png)
+![](yetgriddrawio.png)
 
 **Input:** grid = [[1,2,3],[2,5,7],[3,5,1]], queries = [5,6,2]
 
@@ -25,7 +25,7 @@ Return _the resulting array_ `answer`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/10/20/yetgriddrawio-2.png)
+![](yetgriddrawio-2.png)
 
 **Input:** grid = [[5,2,1],[1,1,2]], queries = [3]
 

@@ -14,7 +14,7 @@ Return _the **exclusive time** of each function in an array, where the value at 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/04/05/diag1b.png)
+![](diag1b.png)
 
 **Input:** n = 2, logs = ["0:start:0","1:start:2","1:end:5","0:end:6"]
 

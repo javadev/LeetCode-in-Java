@@ -8,7 +8,7 @@ Return the _decimal value_ of the number in the linked list.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/12/05/graph-1.png)
+![](graph-1.png)
 
 **Input:** head = [1,0,1]
 

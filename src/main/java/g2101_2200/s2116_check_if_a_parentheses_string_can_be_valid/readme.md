@@ -17,7 +17,7 @@ Return `true` _if you can make `s` a valid parentheses string_. Otherwise, retur
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/11/06/eg1.png)
+![](eg1.png)
 
 **Input:** s = "))()))", locked = "010100"
 

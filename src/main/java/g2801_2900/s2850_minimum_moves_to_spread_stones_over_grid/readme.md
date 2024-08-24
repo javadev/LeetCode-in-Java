@@ -10,7 +10,7 @@ Return _the **minimum number of moves** required to place one stone in each cell
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/08/23/example1-3.svg)
+![](example1-3.svg)
 
 **Input:** grid = [[1,1,0],[1,1,1],[1,2,1]]
 
@@ -30,7 +30,7 @@ It can be shown that 3 is the minimum number of moves required to place one ston
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/08/23/example2-2.svg)
+![](example2-2.svg)
 
 **Input:** grid = [[1,3,0],[1,0,0],[1,0,3]]
 

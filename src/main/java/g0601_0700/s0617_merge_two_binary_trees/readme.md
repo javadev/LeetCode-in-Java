@@ -12,7 +12,7 @@ Return _the merged tree_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/05/merge.jpg)
+![](merge.jpg)
 
 **Input:** root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
 

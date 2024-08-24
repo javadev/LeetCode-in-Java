@@ -12,7 +12,7 @@ The **height** of a rooted tree is the number of edges on the longest downward p
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/01/e1.jpg)
+![](e1.jpg)
 
 **Input:** n = 4, edges = [[1,0],[1,2],[1,3]]
 
@@ -22,7 +22,7 @@ The **height** of a rooted tree is the number of edges on the longest downward p
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/09/01/e2.jpg)
+![](e2.jpg)
 
 **Input:** n = 6, edges = [[3,0],[3,1],[3,2],[3,4],[5,4]]
 

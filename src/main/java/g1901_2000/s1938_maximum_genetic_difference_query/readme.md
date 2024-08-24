@@ -10,7 +10,7 @@ Return _an array_ `ans` _where_ `ans[i]` _is the answer to the_ <code>i<sup>th</
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/29/c1.png)
+![](c1.png)
 
 **Input:** parents = [-1,0,1,1], queries = [[0,2],[3,2],[2,5]]
 
@@ -26,7 +26,7 @@ Return _an array_ `ans` _where_ `ans[i]` _is the answer to the_ <code>i<sup>th</
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/06/29/c2.png)
+![](c2.png)
 
 **Input:** parents = [3,7,-1,2,0,7,0,2], queries = [[4,6],[1,15],[0,5]]
 

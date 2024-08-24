@@ -13,7 +13,7 @@ Return _the **minimum total cost** for this robot to return home_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/10/11/eg-1.png)
+![](eg-1.png)
 
 **Input:** startPos = [1, 0], homePos = [2, 3], rowCosts = [5, 4, 3], colCosts = [8, 2, 6, 7]
 

@@ -10,7 +10,7 @@ If no such second minimum value exists, output -1 instead.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/15/smbt1.jpg)
+![](smbt1.jpg)
 
 **Input:** root = [2,2,5,null,null,5,7]
 
@@ -20,7 +20,7 @@ If no such second minimum value exists, output -1 instead.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/15/smbt2.jpg)
+![](smbt2.jpg)
 
 **Input:** root = [2,2,2]
 

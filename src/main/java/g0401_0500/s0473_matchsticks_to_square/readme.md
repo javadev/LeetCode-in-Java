@@ -8,7 +8,7 @@ Return `true` if you can make this square and `false` otherwise.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/09/matchsticks1-grid.jpg)
+![](matchsticks1-grid.jpg)
 
 **Input:** matchsticks = [1,1,2,2,2]
 

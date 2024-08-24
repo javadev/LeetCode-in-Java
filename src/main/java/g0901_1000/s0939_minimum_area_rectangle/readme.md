@@ -8,7 +8,7 @@ Return _the minimum area of a rectangle formed from these points, with sides par
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/03/rec1.JPG)
+![](rec1.jpg)
 
 **Input:** points = [[1,1],[1,3],[3,1],[3,3],[2,2]]
 
@@ -16,7 +16,7 @@ Return _the minimum area of a rectangle formed from these points, with sides par
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/08/03/rec2.JPG)
+![](rec2.jpg)
 
 **Input:** points = [[1,1],[1,3],[3,1],[3,3],[4,1],[4,3]]
 

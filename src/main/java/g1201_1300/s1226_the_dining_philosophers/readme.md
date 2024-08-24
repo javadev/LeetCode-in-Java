@@ -10,7 +10,7 @@ Eating is not limited by the remaining amounts of spaghetti or stomach space; an
 
 Design a discipline of behaviour (a concurrent algorithm) such that no philosopher will starve; _i.e._, each can forever continue to alternate between eating and thinking, assuming that no philosopher can know when others may want to eat or think.
 
-![](https://assets.leetcode.com/uploads/2019/09/24/an_illustration_of_the_dining_philosophers_problem.png)
+![](an_illustration_of_the_dining_philosophers_problem.png)
 
 _The problem statement and the image above are taken from [wikipedia.org](https://en.wikipedia.org/wiki/Dining_philosophers_problem)_
 

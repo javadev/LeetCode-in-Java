@@ -13,7 +13,7 @@ Implement the `TreeAncestor` class:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/08/28/1528_ex1.png)
+![](1528_ex1.png)
 
 **Input** ["TreeAncestor", "getKthAncestor", "getKthAncestor", "getKthAncestor"] [[7, [-1, 0, 0, 1, 1, 2, 2]], [3, 1], [5, 2], [6, 3]]
 

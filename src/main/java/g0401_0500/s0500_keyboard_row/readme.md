@@ -10,7 +10,7 @@ In the **American keyboard**:
 *   the second row consists of the characters `"asdfghjkl"`, and
 *   the third row consists of the characters `"zxcvbnm"`.
 
-![](https://assets.leetcode.com/uploads/2018/10/12/keyboard.png)
+![](keyboard.png)
 
 **Example 1:**
 

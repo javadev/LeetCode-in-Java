@@ -14,7 +14,7 @@ Return _an array of size_ `n-1` _where the_ <code>d<sup>th</sup></code> _element
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2020/09/21/p1.png)**
+**![](p1.png)**
 
 **Input:** n = 4, edges = [[1,2],[2,3],[2,4]]
 

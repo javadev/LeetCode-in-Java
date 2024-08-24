@@ -22,7 +22,7 @@ Return _an integer denoting the **maximum** area of a **square-shaped** hole in 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/11/05/screenshot-from-2023-11-05-22-40-25.png)
+![](screenshot-from-2023-11-05-22-40-25.png)
 
 **Input:** n = 2, m = 1, hBars = [2,3], vBars = [2]
 
@@ -46,7 +46,7 @@ Hence, the answer is 4.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/11/04/screenshot-from-2023-11-04-17-01-02.png)
+![](screenshot-from-2023-11-04-17-01-02.png)
 
 **Input:** n = 1, m = 1, hBars = [2], vBars = [2]
 
@@ -68,7 +68,7 @@ Hence, the answer is 4, and it is the maximum possible.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2023/11/05/screenshot-from-2023-11-05-22-33-35.png)
+![](screenshot-from-2023-11-05-22-33-35.png)
 
 **Input:** n = 2, m = 3, hBars = [2,3], vBars = [2,3,4]
 

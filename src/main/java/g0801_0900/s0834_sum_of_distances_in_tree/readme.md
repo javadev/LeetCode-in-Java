@@ -10,7 +10,7 @@ Return an array `answer` of length `n` where `answer[i]` is the sum of the dista
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/23/lc-sumdist1.jpg)
+![](lc-sumdist1.jpg)
 
 **Input:** n = 6, edges = [[0,1],[0,2],[2,3],[2,4],[2,5]]
 
@@ -24,7 +24,7 @@ Hence, answer[0] = 8, and so on.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/07/23/lc-sumdist2.jpg)
+![](lc-sumdist2.jpg)
 
 **Input:** n = 1, edges = []
 
@@ -32,7 +32,7 @@ Hence, answer[0] = 8, and so on.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/07/23/lc-sumdist3.jpg)
+![](lc-sumdist3.jpg)
 
 **Input:** n = 2, edges = [[1,0]]
 

@@ -12,7 +12,7 @@ Return _the_ <code>k<sup>th</sup></code> _**largest** level sum in the tree (not
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/12/14/binaryytreeedrawio-2.png)
+![](binaryytreeedrawio-2.png)
 
 **Input:** root = [5,8,9,2,1,3,7,4,6], k = 2
 
@@ -28,7 +28,7 @@ Return _the_ <code>k<sup>th</sup></code> _**largest** level sum in the tree (not
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/12/14/treedrawio-3.png)
+![](treedrawio-3.png)
 
 **Input:** root = [1,2,null,3], k = 1
 

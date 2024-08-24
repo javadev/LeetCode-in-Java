@@ -13,7 +13,7 @@ Return _the number of 4-directional walks from the starting square to the ending
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/02/lc-unique1.jpg)
+![](lc-unique1.jpg)
 
 **Input:** grid = [[1,0,0,0],[0,0,0,0],[0,0,2,-1]]
 
@@ -27,7 +27,7 @@ Return _the number of 4-directional walks from the starting square to the ending
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/08/02/lc-unique2.jpg)
+![](lc-unique2.jpg)
 
 **Input:** grid = [[1,0,0,0],[0,0,0,0],[0,0,0,2]]
 
@@ -45,7 +45,7 @@ Return _the number of 4-directional walks from the starting square to the ending
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/08/02/lc-unique3-.jpg)
+![](lc-unique3-.jpg)
 
 **Input:** grid = [[0,1],[2,0]]
 

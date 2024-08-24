@@ -8,7 +8,7 @@ Note that once you delete a leaf node with value `target`**,** if its parent nod
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2020/01/09/sample_1_1684.png)**
+**![](sample_1_1684.png)**
 
 **Input:** root = [1,2,3,2,null,2,4], target = 2
 
@@ -18,7 +18,7 @@ Note that once you delete a leaf node with value `target`**,** if its parent nod
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2020/01/09/sample_2_1684.png)**
+**![](sample_2_1684.png)**
 
 **Input:** root = [1,3,3,3,2], target = 3
 
@@ -26,7 +26,7 @@ Note that once you delete a leaf node with value `target`**,** if its parent nod
 
 **Example 3:**
 
-**![](https://assets.leetcode.com/uploads/2020/01/15/sample_3_1684.png)**
+**![](sample_3_1684.png)**
 
 **Input:** root = [1,2,null,2,null,2], target = 2
 

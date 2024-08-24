@@ -12,7 +12,7 @@ A node `u` is an **ancestor** of another node `v` if `u` can reach `v` via a set
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/12/12/e1.png)
+![](e1.png)
 
 **Input:** n = 8, edgeList = [[0,3],[0,4],[1,3],[2,4],[2,7],[3,5],[3,6],[3,7],[4,6]]
 
@@ -36,7 +36,7 @@ The above diagram represents the input graph.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/12/12/e2.png)
+![](e2.png)
 
 **Input:** n = 5, edgeList = [[0,1],[0,2],[0,3],[0,4],[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]
 

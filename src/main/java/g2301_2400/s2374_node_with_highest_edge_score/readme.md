@@ -12,7 +12,7 @@ Return _the node with the highest **edge score**_. If multiple nodes have the sa
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/06/20/image-20220620195403-1.png)
+![](image-20220620195403-1.png)
 
 **Input:** edges = [1,0,0,0,0,7,7,5]
 
@@ -32,7 +32,7 @@ Node 7 has the highest edge score so return 7.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/06/20/image-20220620200212-3.png)
+![](image-20220620200212-3.png)
 
 **Input:** edges = [2,0,0,2]
 

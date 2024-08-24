@@ -19,7 +19,7 @@ The test cases are generated such that:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/09/16/untitled-diagram.jpg)
+![](untitled-diagram.jpg)
 
 **Input:** n = 2, artifacts = [[0,0,0,0],[0,1,1,1]], dig = [[0,0],[0,1]]
 
@@ -29,7 +29,7 @@ The test cases are generated such that:
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/09/16/untitled-diagram-1.jpg)
+![](untitled-diagram-1.jpg)
 
 **Input:** n = 2, artifacts = [[0,0,0,0],[0,1,1,1]], dig = [[0,0],[0,1],[1,1]]
 

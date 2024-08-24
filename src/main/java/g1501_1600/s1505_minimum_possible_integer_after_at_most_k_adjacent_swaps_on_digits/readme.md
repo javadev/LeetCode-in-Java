@@ -8,7 +8,7 @@ Return _the minimum integer you can obtain also as a string_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/06/17/q4_1.jpg)
+![](q4_1.jpg)
 
 **Input:** num = "4321", k = 4
 

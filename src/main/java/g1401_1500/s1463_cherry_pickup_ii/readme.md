@@ -19,7 +19,7 @@ Return _the maximum number of cherries collection using both robots by following
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/04/29/sample_1_1802.png)
+![](sample_1_1802.png)
 
 **Input:** grid = [[3,1,1],[2,5,1],[1,5,5],[2,1,1]]
 
@@ -35,7 +35,7 @@ Total of cherries: 12 + 12 = 24.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/04/23/sample_2_1802.png)
+![](sample_2_1802.png)
 
 **Input:** grid = [[1,0,0,0,0,0,1],[2,0,0,0,0,3,0],[2,0,9,0,0,0,0],[0,3,0,5,4,0,0],[1,0,2,3,0,0,6]]
 

@@ -13,7 +13,7 @@ Return _the number of minutes needed for the entire tree to be infected._
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/06/25/image-20220625231744-1.png)
+![](image-20220625231744-1.png)
 
 **Input:** root = [1,5,3,null,4,10,6,9,2], start = 3
 
@@ -35,7 +35,7 @@ It takes 4 minutes for the whole tree to be infected so we return 4.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/06/25/image-20220625231812-2.png)
+![](image-20220625231812-2.png)
 
 **Input:** root = [1], start = 1
 

@@ -15,7 +15,7 @@ At the stage of rotating the ring to spell the key character `key[i]`:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/10/22/ring.jpg)
+![](ring.jpg)
 
 **Input:** ring = "godding", key = "gd"
 

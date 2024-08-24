@@ -12,7 +12,7 @@ Return _the number of restricted paths from node_ `1` _to node_ `n`. Since that 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/17/restricted_paths_ex1.png)
+![](restricted_paths_ex1.png)
 
 **Input:** n = 5, edges = [[1,2,3],[1,3,3],[2,3,1],[1,4,2],[5,2,2],[3,5,1],[5,4,10]]
 
@@ -28,7 +28,7 @@ Return _the number of restricted paths from node_ `1` _to node_ `n`. Since that 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/02/17/restricted_paths_ex22.png)
+![](restricted_paths_ex22.png)
 
 **Input:** n = 7, edges = [[1,3,1],[4,1,2],[7,3,4],[2,5,3],[5,6,1],[6,7,2],[7,5,3],[2,6,4]]
 

@@ -21,7 +21,7 @@ Return the number of **alternating** groups.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/05/16/image_2024-05-16_23-53-171.png)
+![](image_2024-05-16_23-53-171.png)
 
 **Example 2:**
 
@@ -31,11 +31,11 @@ Return the number of **alternating** groups.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/05/16/image_2024-05-16_23-47-491.png)
+![](image_2024-05-16_23-47-491.png)
 
 Alternating groups:
 
-**![](https://assets.leetcode.com/uploads/2024/05/16/image_2024-05-16_23-50-441.png)**![](https://assets.leetcode.com/uploads/2024/05/16/image_2024-05-16_23-48-211.png)**![](https://assets.leetcode.com/uploads/2024/05/16/image_2024-05-16_23-49-351.png)**
+**![](image_2024-05-16_23-50-441.png)**![](image_2024-05-16_23-48-211.png)**![](image_2024-05-16_23-49-351.png)**
 
 **Constraints:**
 

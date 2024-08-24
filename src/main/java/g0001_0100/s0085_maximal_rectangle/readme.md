@@ -6,7 +6,7 @@ Given a `rows x cols` binary `matrix` filled with `0`'s and `1`'s, find the larg
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg)
+![](maximal.jpg)
 
 **Input:** matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
 

@@ -8,7 +8,7 @@ Given an `m x n` integer `grid`, return _the **size** (i.e., the side length_ `k
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/29/magicsquare-grid.jpg)
+![](magicsquare-grid.jpg)
 
 **Input:** grid = [[7,1,4,5,6],[2,5,1,6,4],[1,5,4,3,2],[1,2,7,3,4]]
 
@@ -26,7 +26,7 @@ Every row sum, column sum, and diagonal sum of this magic square is equal to 12.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/05/29/magicsquare2-grid.jpg)
+![](magicsquare2-grid.jpg)
 
 **Input:** grid = [[5,1,3,1],[9,3,3,1],[1,3,3,8]]
 

@@ -6,7 +6,7 @@ Given a 2D integer array `nums`, return _all elements of_ `nums` _in diagonal or
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/04/08/sample_1_1784.png)
+![](sample_1_1784.png)
 
 **Input:** nums = [[1,2,3],[4,5,6],[7,8,9]]
 
@@ -14,7 +14,7 @@ Given a 2D integer array `nums`, return _all elements of_ `nums` _in diagonal or
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/04/08/sample_2_1784.png)
+![](sample_2_1784.png)
 
 **Input:** nums = [[1,2,3,4,5],[6,7],[8],[9,10,11],[12,13,14,15,16]]
 

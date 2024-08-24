@@ -10,7 +10,7 @@ In this context downward path means a path that starts at some node and goes dow
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2020/02/12/sample_1_1720.png)**
+**![](sample_1_1720.png)**
 
 **Input:** head = [4,2,8], root = [1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]
 
@@ -20,7 +20,7 @@ In this context downward path means a path that starts at some node and goes dow
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2020/02/12/sample_2_1720.png)**
+**![](sample_2_1720.png)**
 
 **Input:** head = [1,4,2,6], root = [1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]
 

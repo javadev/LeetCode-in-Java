@@ -8,7 +8,7 @@ Find the node in the BST that the node's value equals `val` and return the subtr
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/12/tree1.jpg)
+![](tree1.jpg)
 
 **Input:** root = [4,2,7,1,3], val = 2
 
@@ -16,7 +16,7 @@ Find the node in the BST that the node's value equals `val` and return the subtr
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/12/tree2.jpg)
+![](tree2.jpg)
 
 **Input:** root = [4,2,7,1,3], val = 5
 

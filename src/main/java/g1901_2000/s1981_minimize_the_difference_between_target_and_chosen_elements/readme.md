@@ -12,7 +12,7 @@ The **absolute difference** between two numbers `a` and `b` is the absolute valu
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/03/matrix1.png)
+![](matrix1.png)
 
 **Input:** mat = [[1,2,3],[4,5,6],[7,8,9]], target = 13
 
@@ -30,7 +30,7 @@ The sum of the chosen elements is 13, which equals the target, so the absolute d
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/08/03/matrix1-1.png)
+![](matrix1-1.png)
 
 **Input:** mat = [[1],[2],[3]], target = 100
 
@@ -48,7 +48,7 @@ The sum of the chosen elements is 6, and the absolute difference is 94.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/08/03/matrix1-3.png)
+![](matrix1-3.png)
 
 **Input:** mat = [[1,2,9,8,7]], target = 6
 

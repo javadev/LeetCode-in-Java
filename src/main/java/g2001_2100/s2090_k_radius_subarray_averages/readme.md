@@ -14,7 +14,7 @@ The **average** of `x` elements is the sum of the `x` elements divided by `x`, u
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/11/07/eg1.png)
+![](eg1.png)
 
 **Input:** nums = [7,4,3,9,1,8,5,2,6], k = 3
 

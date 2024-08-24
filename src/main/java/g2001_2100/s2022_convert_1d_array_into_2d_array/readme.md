@@ -10,7 +10,7 @@ Return _an_ `m x n` _2D array constructed according to the above procedure, or a
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/26/image-20210826114243-1.png)
+![](image-20210826114243-1.png)
 
 **Input:** original = [1,2,3,4], m = 2, n = 2
 

@@ -8,7 +8,7 @@ Return _the number of good leaf node pairs_ in the tree.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/07/09/e1.jpg)
+![](e1.jpg)
 
 **Input:** root = [1,2,3,null,4], distance = 3
 
@@ -18,7 +18,7 @@ Return _the number of good leaf node pairs_ in the tree.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/07/09/e2.jpg)
+![](e2.jpg)
 
 **Input:** root = [1,2,3,4,5,6,7], distance = 3
 

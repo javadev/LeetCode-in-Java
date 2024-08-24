@@ -21,7 +21,7 @@ If there are multiple ways for Bob to earn the maximum total points, return **an
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/02/24/ex1.jpg)
+![](ex1.jpg)
 
 **Input:** numArrows = 9, aliceArrows = [1,1,0,1,0,0,2,1,0,1,2,0]
 
@@ -31,7 +31,7 @@ If there are multiple ways for Bob to earn the maximum total points, return **an
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/02/24/ex2new.jpg)
+![](ex2new.jpg)
 
 **Input:** numArrows = 3, aliceArrows = [0,0,1,0,0,0,0,0,0,0,0,2]
 

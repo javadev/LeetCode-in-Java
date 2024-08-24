@@ -12,7 +12,7 @@ Initially, all next pointers are set to `NULL`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/02/14/116_sample.png)
+![](116_sample.png)
 
 **Input:** root = [1,2,3,4,5,6,7]
 

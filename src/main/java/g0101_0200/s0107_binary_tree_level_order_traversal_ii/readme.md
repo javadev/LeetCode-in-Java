@@ -6,7 +6,7 @@ Given the `root` of a binary tree, return _the bottom-up level order traversal o
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg)
+![](tree1.jpg)
 
 **Input:** root = [3,9,20,null,null,15,7]
 

@@ -15,7 +15,7 @@ Return _the total number of laser beams in the bank_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/24/laser1.jpg)
+![](laser1.jpg)
 
 **Input:** bank = ["011001","000000","010100","001000"]
 
@@ -45,7 +45,7 @@ This is because the 2<sup>nd</sup> row contains security devices, which breaks t
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/24/laser2.jpg)
+![](laser2.jpg)
 
 **Input:** bank = ["000","111","000"]
 

@@ -12,7 +12,7 @@ Given the `root` of a binary tree, _return_ `true` _if the binary tree is **Even
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/15/sample_1_1966.png)
+![](sample_1_1966.png)
 
 **Input:** root = [1,10,4,3,null,7,9,12,8,6,null,null,2]
 
@@ -32,7 +32,7 @@ Since levels 0 and 2 are all odd and increasing and levels 1 and 3 are all even 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/09/15/sample_2_1966.png)
+![](sample_2_1966.png)
 
 **Input:** root = [5,4,2,3,3,7]
 
@@ -50,7 +50,7 @@ Node values in level 2 must be in strictly increasing order, so the tree is not 
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/09/22/sample_1_333_1966.png)
+![](sample_1_333_1966.png)
 
 **Input:** root = [5,9,1,3,5,7]
 

@@ -14,7 +14,7 @@ Return _a **1-indexed** array_ `result` _of length_ `n` _where_ `result[k]` _rep
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/12/20/example2.png)
+![](example2.png)
 
 **Input:** n = 3, x = 1, y = 3
 
@@ -30,7 +30,7 @@ Return _a **1-indexed** array_ `result` _of length_ `n` _where_ `result[k]` _rep
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/12/20/example3.png)
+![](example3.png)
 
 **Input:** n = 5, x = 2, y = 4
 
@@ -44,7 +44,7 @@ Return _a **1-indexed** array_ `result` _of length_ `n` _where_ `result[k]` _rep
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2023/12/20/example5.png)
+![](example5.png)
 
 **Input:** n = 4, x = 1, y = 1
 

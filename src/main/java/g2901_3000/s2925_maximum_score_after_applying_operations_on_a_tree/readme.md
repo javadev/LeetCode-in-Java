@@ -18,7 +18,7 @@ Return _the **maximum score** you can obtain after performing these operations o
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/10/11/graph-13-1.png)
+![](graph-13-1.png)
 
 **Input:** edges = [[0,1],[0,2],[0,3],[2,4],[4,5]], values = [5,2,5,2,1,1]
 
@@ -28,7 +28,7 @@ Return _the **maximum score** you can obtain after performing these operations o
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/10/11/graph-14-2.png)
+![](graph-14-2.png)
 
 **Input:** edges = [[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]], values = [20,10,9,7,4,3,5]
 

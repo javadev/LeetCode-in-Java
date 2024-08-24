@@ -12,7 +12,7 @@ Return _the **maximum** total value that you can attain after selling_ `orders` 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/05/jj.gif)
+![](jj.gif)
 
 **Input:** inventory = [2,5], orders = 4
 

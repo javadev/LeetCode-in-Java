@@ -11,7 +11,7 @@ Implement the `Solution` class:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/16/getrand-linked-list.jpg)
+![](getrand-linked-list.jpg)
 
 **Input** 
 

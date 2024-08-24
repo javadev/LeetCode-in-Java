@@ -15,7 +15,7 @@ Return _the maximum number of groups (i.e., maximum_ `m`_) into which you can di
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/13/example1.png)
+![](example1.png)
 
 **Input:** n = 6, edges = [[1,2],[1,4],[1,5],[2,6],[2,3],[4,6]]
 

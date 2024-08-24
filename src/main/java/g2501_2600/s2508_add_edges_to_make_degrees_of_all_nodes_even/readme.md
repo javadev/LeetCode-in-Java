@@ -12,7 +12,7 @@ The degree of a node is the number of edges connected to it.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/26/agraphdrawio.png)
+![](agraphdrawio.png)
 
 **Input:** n = 5, edges = [[1,2],[2,3],[3,4],[4,2],[1,4],[2,5]]
 
@@ -22,7 +22,7 @@ The degree of a node is the number of edges connected to it.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/10/26/aagraphdrawio.png)
+![](aagraphdrawio.png)
 
 **Input:** n = 4, edges = [[1,2],[3,4]]
 
@@ -32,7 +32,7 @@ The degree of a node is the number of edges connected to it.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2022/10/26/aaagraphdrawio.png)
+![](aaagraphdrawio.png)
 
 **Input:** n = 4, edges = [[1,2],[1,3],[1,4]]
 

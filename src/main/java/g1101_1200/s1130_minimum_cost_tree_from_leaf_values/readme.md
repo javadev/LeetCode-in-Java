@@ -14,7 +14,7 @@ A node is a **leaf** if and only if it has zero children.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/10/tree1.jpg)
+![](tree1.jpg)
 
 **Input:** arr = [6,2,4]
 
@@ -24,7 +24,7 @@ A node is a **leaf** if and only if it has zero children.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/08/10/tree2.jpg)
+![](tree2.jpg)
 
 **Input:** arr = [4,11]
 

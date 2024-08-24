@@ -8,7 +8,7 @@ Return _the matrix_ `answer`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/12/24/matrix1.png)
+![](matrix1.png)
 
 **Input:** matrix = [[1,2,-1],[4,-1,6],[7,8,9]]
 
@@ -20,7 +20,7 @@ Return _the matrix_ `answer`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/12/24/matrix2.png)
+![](matrix2.png)
 
 **Input:** matrix = [[3,-1],[5,2]]
 

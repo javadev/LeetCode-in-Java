@@ -16,7 +16,7 @@ Return _an_ `n x m` _matrix representing the box after the rotation described ab
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcodewithstones.png)
+![](rotatingtheboxleetcodewithstones.png)
 
 **Input:**
 
@@ -30,7 +30,7 @@ Return _an_ `n x m` _matrix representing the box after the rotation described ab
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcode2withstones.png)
+![](rotatingtheboxleetcode2withstones.png)
 
 **Input:**
 
@@ -46,7 +46,7 @@ Return _an_ `n x m` _matrix representing the box after the rotation described ab
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcode3withstone.png)
+![](rotatingtheboxleetcode3withstone.png)
 
 **Input:**
 

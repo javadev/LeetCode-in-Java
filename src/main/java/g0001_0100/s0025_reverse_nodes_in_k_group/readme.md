@@ -10,7 +10,7 @@ You may not alter the values in the list's nodes, only nodes themselves may be c
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/03/reverse_ex1.jpg)
+![](reverse_ex1.jpg)
 
 **Input:** head = [1,2,3,4,5], k = 2
 
@@ -18,7 +18,7 @@ You may not alter the values in the list's nodes, only nodes themselves may be c
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/03/reverse_ex2.jpg)
+![](reverse_ex2.jpg)
 
 **Input:** head = [1,2,3,4,5], k = 3
 

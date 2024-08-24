@@ -21,7 +21,7 @@ Return _the least number of moves required to reach the square_ <code>n<sup>2</s
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/09/23/snakes.png)
+![](snakes.png)
 
 **Input:** board = [[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,35,-1,-1,13,-1],[-1,-1,-1,-1,-1,-1],[-1,15,-1,-1,-1,-1]]
 

@@ -15,7 +15,7 @@ Return _the constructed matrix_ `res`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/03/print1-tree.jpg)
+![](print1-tree.jpg)
 
 **Input:** root = [1,2]
 
@@ -23,7 +23,7 @@ Return _the constructed matrix_ `res`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/05/03/print2-tree.jpg)
+![](print2-tree.jpg)
 
 **Input:** root = [1,2,3,null,4]
 

@@ -13,7 +13,7 @@ Return _the array_ `answer`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/09/28/bstreeedrawioo.png)
+![](bstreeedrawioo.png)
 
 **Input:** root = [6,2,13,1,4,9,15,null,null,null,null,null,null,14], queries = [2,5,16]
 
@@ -26,7 +26,7 @@ Return _the array_ `answer`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/09/28/bstttreee.png)
+![](bstttreee.png)
 
 **Input:** root = [4,null,9], queries = [3]
 

@@ -8,7 +8,7 @@ Given `n` the number of rows of the grid, return _the number of ways_ you can pa
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/03/26/e1.png)
+![](e1.png)
 
 **Input:** n = 1
 

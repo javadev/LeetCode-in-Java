@@ -10,7 +10,7 @@ Return _the smallest possible total score that you can achieve with some triangu
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/25/shape1.jpg)
+![](shape1.jpg)
 
 **Input:** values = [1,2,3]
 
@@ -20,7 +20,7 @@ Return _the smallest possible total score that you can achieve with some triangu
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/02/25/shape2.jpg)
+![](shape2.jpg)
 
 **Input:** values = [3,7,4,5]
 
@@ -30,7 +30,7 @@ Return _the smallest possible total score that you can achieve with some triangu
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/02/25/shape3.jpg)
+![](shape3.jpg)
 
 **Input:** values = [1,3,1,4,1,5]
 

@@ -10,7 +10,7 @@ Note that in a binary tree, the root node is at the depth `0`, and children of e
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/02/12/q1248-01.png)
+![](q1248-01.png)
 
 **Input:** root = [1,2,3,4], x = 4, y = 3
 
@@ -18,7 +18,7 @@ Note that in a binary tree, the root node is at the depth `0`, and children of e
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/02/12/q1248-02.png)
+![](q1248-02.png)
 
 **Input:** root = [1,2,3,null,4,null,5], x = 5, y = 4
 
@@ -26,7 +26,7 @@ Note that in a binary tree, the root node is at the depth `0`, and children of e
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2019/02/13/q1248-03.png)
+![](q1248-03.png)
 
 **Input:** root = [1,2,3,null,4], x = 2, y = 3
 

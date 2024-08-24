@@ -4,7 +4,7 @@ Medium
 
 There is a regular convex polygon with `n` vertices. The vertices are labeled from `0` to `n - 1` in a clockwise direction, and each vertex has **exactly one monkey**. The following figure shows a convex polygon of `6` vertices.
 
-![](https://assets.leetcode.com/uploads/2023/01/22/hexagon.jpg)
+![](hexagon.jpg)
 
 Each monkey moves simultaneously to a neighboring vertex. A neighboring vertex for a vertex `i` can be:
 

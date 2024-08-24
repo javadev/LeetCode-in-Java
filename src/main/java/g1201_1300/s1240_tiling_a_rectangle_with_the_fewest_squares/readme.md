@@ -6,7 +6,7 @@ Given a rectangle of size `n` x `m`, return _the minimum number of integer-sided
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/10/17/sample_11_1592.png)
+![](sample_11_1592.png)
 
 **Input:** n = 2, m = 3
 
@@ -20,7 +20,7 @@ Given a rectangle of size `n` x `m`, return _the minimum number of integer-sided
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/10/17/sample_22_1592.png)
+![](sample_22_1592.png)
 
 **Input:** n = 5, m = 8
 
@@ -28,7 +28,7 @@ Given a rectangle of size `n` x `m`, return _the minimum number of integer-sided
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2019/10/17/sample_33_1592.png)
+![](sample_33_1592.png)
 
 **Input:** n = 11, m = 13
 

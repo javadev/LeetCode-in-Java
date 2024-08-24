@@ -6,7 +6,7 @@ Merge two sorted linked lists and return it as a **sorted** list. The list shoul
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg)
+![](merge_ex1.jpg)
 
 **Input:** l1 = [1,2,4], l2 = [1,3,4]
 

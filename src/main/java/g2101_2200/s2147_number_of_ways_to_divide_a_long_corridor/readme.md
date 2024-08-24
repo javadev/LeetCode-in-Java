@@ -12,7 +12,7 @@ Return _the number of ways to divide the corridor_. Since the answer may be very
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/04/1.png)
+![](1.png)
 
 **Input:** corridor = "SSPPSPS"
 
@@ -26,7 +26,7 @@ Note that in each of the ways, **each** section has exactly **two** seats.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/04/2.png)
+![](2.png)
 
 **Input:** corridor = "PPSPSP"
 
@@ -38,7 +38,7 @@ Installing any would create some section that does not have exactly two seats.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/12/12/3.png)
+![](3.png)
 
 **Input:** corridor = "S"
 

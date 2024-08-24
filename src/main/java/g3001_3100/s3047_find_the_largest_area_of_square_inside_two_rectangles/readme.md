@@ -10,7 +10,7 @@ Return _the **largest** possible area of a square, or_ `0` _if there **do not** 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2024/01/05/example12.png)
+![](example12.png)
 
 **Input:** bottomLeft = [[1,1],[2,2],[3,1]], topRight = [[3,3],[4,4],[6,6]]
 
@@ -22,7 +22,7 @@ It can be shown that a square with a greater side length can not fit inside any 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2024/01/04/rectanglesexample2.png)
+![](rectanglesexample2.png)
 
 **Input:** bottomLeft = [[1,1],[2,2],[1,2]], topRight = [[3,3],[4,4],[3,4]]
 
@@ -34,7 +34,7 @@ It can be shown that a square with a greater side length can not fit inside any 
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2024/01/04/rectanglesexample3.png)
+![](rectanglesexample3.png)
 
 **Input:** bottomLeft = [[1,1],[3,3],[3,1]], topRight = [[2,2],[4,4],[4,2]]
 

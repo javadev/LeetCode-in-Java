@@ -13,7 +13,7 @@ Return _the minimum cost_ needed to move all the chips to the same position.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/15/chips_e1.jpg)
+![](chips_e1.jpg)
 
 **Input:** position = [1,2,3]
 
@@ -23,7 +23,7 @@ Return _the minimum cost_ needed to move all the chips to the same position.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/08/15/chip_e2.jpg)
+![](chip_e2.jpg)
 
 **Input:** position = [2,2,2,3,3]
 

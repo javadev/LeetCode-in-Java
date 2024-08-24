@@ -6,7 +6,7 @@ Given the `head` of a singly linked list, return `true` if it is a palindrome.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/03/pal1linked-list.jpg)
+![](pal1linked-list.jpg)
 
 **Input:** head = [1,2,2,1]
 
@@ -14,7 +14,7 @@ Given the `head` of a singly linked list, return `true` if it is a palindrome.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/03/03/pal2linked-list.jpg)
+![](pal2linked-list.jpg)
 
 **Input:** head = [1,2]
 

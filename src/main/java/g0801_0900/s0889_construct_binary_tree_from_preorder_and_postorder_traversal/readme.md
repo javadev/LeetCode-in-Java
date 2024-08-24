@@ -8,7 +8,7 @@ If there exist multiple answers, you can **return any** of them.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/24/lc-prepost.jpg)
+![](lc-prepost.jpg)
 
 **Input:** preorder = [1,2,4,5,3,6,7], postorder = [4,5,2,6,7,3,1]
 

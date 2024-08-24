@@ -12,7 +12,7 @@ A cell's **adjacent cells** are the 8 cells around it that share at least one co
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/08/05/example2.svg)
+![](example2.svg)
 
 **Input:** sx = 2, sy = 4, fx = 7, fy = 7, t = 6
 
@@ -22,7 +22,7 @@ A cell's **adjacent cells** are the 8 cells around it that share at least one co
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/08/05/example1.svg)
+![](example1.svg)
 
 **Input:** sx = 3, sy = 1, fx = 7, fy = 3, t = 3
 

@@ -4,7 +4,7 @@ Hard
 
 You are given three integers `n`, `m` and `k`. Consider the following algorithm to find the maximum element of an array of positive integers:
 
-![](https://assets.leetcode.com/uploads/2020/04/02/e.png)
+![](e.png)
 
 You should build the array arr which has the following properties:
 

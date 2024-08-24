@@ -15,7 +15,7 @@ Return _the triangular sum of_ `nums`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/02/22/ex1drawio.png)
+![](ex1drawio.png)
 
 **Input:** nums = [1,2,3,4,5]
 

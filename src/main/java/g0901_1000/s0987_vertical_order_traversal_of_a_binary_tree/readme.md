@@ -12,7 +12,7 @@ Return _the **vertical order traversal** of the binary tree_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/29/vtree1.jpg)
+![](vtree1.jpg)
 
 **Input:** root = [3,9,20,null,null,15,7]
 
@@ -30,7 +30,7 @@ Column 2: Only node 7 is in this column.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/29/vtree2.jpg)
+![](vtree2.jpg)
 
 **Input:** root = [1,2,3,4,5,6,7]
 
@@ -53,7 +53,7 @@ Column 2: Only node 7 is in this column.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/01/29/vtree3.jpg)
+![](vtree3.jpg)
 
 **Input:** root = [1,2,3,4,6,5,7]
 

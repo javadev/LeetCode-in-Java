@@ -10,7 +10,7 @@ Return all critical connections in the network in any order.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/09/03/1537_ex1_2.png)
+![](1537_ex1_2.png)
 
 **Input:** n = 4, connections = [[0,1],[1,2],[2,0],[1,3]]
 

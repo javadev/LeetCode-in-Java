@@ -8,7 +8,7 @@ Two binary trees are considered the same if they are structurally identical, and
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/12/20/ex1.jpg)
+![](ex1.jpg)
 
 **Input:** p = [1,2,3], q = [1,2,3]
 
@@ -16,7 +16,7 @@ Two binary trees are considered the same if they are structurally identical, and
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/12/20/ex2.jpg)
+![](ex2.jpg)
 
 **Input:** p = [1,2], q = [1,null,2]
 
@@ -24,7 +24,7 @@ Two binary trees are considered the same if they are structurally identical, and
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/12/20/ex3.jpg)
+![](ex3.jpg)
 
 **Input:** p = [1,2,1], q = [1,1,2]
 

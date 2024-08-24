@@ -16,7 +16,7 @@ Return the **maximum** _height of the triangle_ that can be achieved.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/06/16/brb.png)
+![](brb.png)
 
 The only possible arrangement is shown above.
 
@@ -28,7 +28,7 @@ The only possible arrangement is shown above.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/06/16/br.png)   
+![](br.png)   
  The only possible arrangement is shown above.
 
 **Example 3:**
@@ -45,7 +45,7 @@ The only possible arrangement is shown above.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/06/16/br.png)   
+![](br.png)   
  The only possible arrangement is shown above.
 
 **Constraints:**

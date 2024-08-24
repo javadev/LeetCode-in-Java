@@ -10,7 +10,7 @@ The distance between the <code>i<sup>th</sup></code> and <code>j<sup>th</sup></c
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/10/31/eg1.png)
+![](eg1.png)
 
 **Input:** colors = [**1**,1,1,**6**,1,1,1]
 
@@ -28,7 +28,7 @@ Note that houses 3 and 6 can also produce the optimal answer.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/10/31/eg2.png)
+![](eg2.png)
 
 **Input:** colors = [**1**,8,3,8,**3**]
 

@@ -28,7 +28,7 @@ Return _a string representing the final state_.
 
 **Example 2:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/05/18/domino.png)
+![](domino.png)
 
 **Input:** dominoes = ".L.R...LR..L.."
 

@@ -22,7 +22,7 @@ A **substring** is a contiguous sequence of characters in a string.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/12/833-ex1.png)
+![](833-ex1.png)
 
 **Input:** s = "abcd", indices = [0, 2], sources = ["a", "cd"], targets = ["eee", "ffff"]
 
@@ -32,7 +32,7 @@ A **substring** is a contiguous sequence of characters in a string.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/06/12/833-ex2-1.png)
+![](833-ex2-1.png)
 
 **Input:** s = "abcd", indices = [0, 2], sources = ["ab","ec"], targets = ["eee","ffff"]
 

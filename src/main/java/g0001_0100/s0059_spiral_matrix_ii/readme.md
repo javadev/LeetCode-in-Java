@@ -6,7 +6,7 @@ Given a positive integer `n`, generate an `n x n` `matrix` filled with elements 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/13/spiraln.jpg)
+![](spiraln.jpg)
 
 **Input:** n = 3
 

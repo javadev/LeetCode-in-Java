@@ -11,7 +11,7 @@ Return _the size of the largest connected component in the graph_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/12/01/ex1.png)
+![](ex1.png)
 
 **Input:** nums = [4,6,15,35]
 
@@ -19,7 +19,7 @@ Return _the size of the largest connected component in the graph_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2018/12/01/ex2.png)
+![](ex2.png)
 
 **Input:** nums = [20,50,9,63]
 
@@ -27,7 +27,7 @@ Return _the size of the largest connected component in the graph_.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2018/12/01/ex3.png)
+![](ex3.png)
 
 **Input:** nums = [2,3,6,7,4,12,21,39]
 

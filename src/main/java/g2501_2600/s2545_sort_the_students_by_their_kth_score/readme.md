@@ -10,7 +10,7 @@ Return _the matrix after sorting it._
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/11/30/example1.png)
+![](example1.png)
 
 **Input:** score = [[10,6,9,1],[7,5,11,2],[4,8,3,15]], k = 2
 
@@ -26,7 +26,7 @@ Return _the matrix after sorting it._
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/11/30/example2.png)
+![](example2.png)
 
 **Input:** score = [[3,4],[5,6]], k = 0
 

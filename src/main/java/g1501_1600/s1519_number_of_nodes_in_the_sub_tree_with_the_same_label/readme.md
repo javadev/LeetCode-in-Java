@@ -12,7 +12,7 @@ A subtree of a tree `T` is the tree consisting of a node in `T` and all of its d
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/07/01/q3e1.jpg)
+![](q3e1.jpg)
 
 **Input:** n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], labels = "abaedcd"
 
@@ -24,7 +24,7 @@ Node 1 has a label 'b'. The sub-tree of node 1 contains nodes 1,4 and 5, as node
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/07/01/q3e2.jpg)
+![](q3e2.jpg)
 
 **Input:** n = 4, edges = [[0,1],[1,2],[0,3]], labels = "bbbb"
 
@@ -40,7 +40,7 @@ The sub-tree of node 0 contains nodes 0, 1, 2 and 3, all with label 'b', thus th
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/07/01/q3e3.jpg)
+![](q3e3.jpg)
 
 **Input:** n = 5, edges = [[0,1],[0,2],[1,3],[0,4]], labels = "aabab"
 

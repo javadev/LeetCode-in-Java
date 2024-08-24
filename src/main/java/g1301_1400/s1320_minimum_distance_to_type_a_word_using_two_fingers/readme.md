@@ -2,7 +2,7 @@
 
 Hard
 
-![](https://assets.leetcode.com/uploads/2020/01/02/leetcode_keyboard.png)
+![](leetcode_keyboard.png)
 
 You have a keyboard layout as shown above in the **X-Y** plane, where each English uppercase letter is located at some coordinate.
 

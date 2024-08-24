@@ -13,7 +13,7 @@ Implement the NumMatrix class:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/14/sum-grid.jpg)
+![](sum-grid.jpg)
 
 **Input**
 

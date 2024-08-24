@@ -9,13 +9,13 @@ A **valid cut** in a circle can be:
 
 Some valid and invalid cuts are shown in the figures below.
 
-![](https://assets.leetcode.com/uploads/2022/10/29/alldrawio.png)
+![](alldrawio.png)
 
 Given the integer `n`, return _the **minimum** number of cuts needed to divide a circle into_ `n` _equal slices_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/24/11drawio.png)
+![](11drawio.png)
 
 **Input:** n = 4
 
@@ -25,7 +25,7 @@ Given the integer `n`, return _the **minimum** number of cuts needed to divide a
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/10/24/22drawio.png)
+![](22drawio.png)
 
 **Input:** n = 3
 

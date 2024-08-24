@@ -12,7 +12,7 @@ Implement the `Graph` class:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/01/11/graph3drawio-2.png)
+![](graph3drawio-2.png)
 
 **Input** ["Graph", "shortestPath", "shortestPath", "addEdge", "shortestPath"] [[4, [[0, 2, 5], [0, 1, 2], [1, 2, 1], [3, 0, 3]]], [3, 2], [0, 3], [[1, 3, 4]], [0, 3]]
 

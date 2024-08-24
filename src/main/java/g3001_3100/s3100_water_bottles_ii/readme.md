@@ -15,7 +15,7 @@ Return _the **maximum** number of water bottles you can drink_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2024/01/28/exampleone1.png)
+![](exampleone1.png)
 
 **Input:** numBottles = 13, numExchange = 6
 
@@ -25,7 +25,7 @@ Return _the **maximum** number of water bottles you can drink_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2024/01/28/example231.png)
+![](example231.png)
 
 **Input:** numBottles = 10, numExchange = 3
 

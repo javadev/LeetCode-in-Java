@@ -15,7 +15,7 @@ Return _the decoded message_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/05/08/ex1new4.jpg)
+![](ex1new4.jpg)
 
 **Input:** key = "the quick brown fox jumps over the lazy dog", message = "vkbs bs t suepuv"
 
@@ -27,7 +27,7 @@ It is obtained by taking the first appearance of each letter in "<ins>**the**</i
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/05/08/ex2new.jpg)
+![](ex2new.jpg)
 
 **Input:** key = "eljuxhpwnyrdgtqkviszcfmabo", message = "zwx hnfx lqantp mnoeius ycgk vcnjrdb"
 

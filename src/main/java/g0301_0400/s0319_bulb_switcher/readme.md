@@ -10,7 +10,7 @@ Return _the number of bulbs that are on after `n` rounds_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/05/bulb.jpg)
+![](bulb.jpg)
 
 **Input:** n = 3
 

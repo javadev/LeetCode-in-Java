@@ -16,7 +16,7 @@ Return _the maximum number of points you can see_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/30/89a07e9b-00ab-4967-976a-c723b2aa8656.png)
+![](89a07e9b-00ab-4967-976a-c723b2aa8656.png)
 
 **Input:** points = [[2,1],[2,2],[3,3]], angle = 90, location = [1,1]
 
@@ -34,7 +34,7 @@ Return _the maximum number of points you can see_.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/09/30/5010bfd3-86e6-465f-ac64-e9df941d2e49.png)
+![](5010bfd3-86e6-465f-ac64-e9df941d2e49.png)
 
 **Input:** points = [[1,0],[2,1]], angle = 13, location = [1,1]
 

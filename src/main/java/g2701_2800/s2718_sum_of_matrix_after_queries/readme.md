@@ -13,7 +13,7 @@ Return _the sum of integers in the matrix after all queries are applied_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/05/11/exm1.png)
+![](exm1.png)
 
 **Input:** n = 3, queries = [[0,0,1],[1,2,2],[0,2,3],[1,0,4]]
 
@@ -23,7 +23,7 @@ Return _the sum of integers in the matrix after all queries are applied_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/05/11/exm2.png)
+![](exm2.png)
 
 **Input:** n = 3, queries = [[0,0,4],[0,1,2],[1,0,1],[0,2,3],[1,2,1]]
 

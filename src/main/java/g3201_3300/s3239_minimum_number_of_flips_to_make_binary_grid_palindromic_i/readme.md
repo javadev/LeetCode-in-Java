@@ -18,7 +18,7 @@ Return the **minimum** number of cells that need to be flipped to make **either*
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/07/07/screenshot-from-2024-07-08-00-20-10.png)
+![](screenshot-from-2024-07-08-00-20-10.png)
 
 Flipping the highlighted cells makes all the rows palindromic.
 
@@ -30,7 +30,7 @@ Flipping the highlighted cells makes all the rows palindromic.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/07/07/screenshot-from-2024-07-08-00-31-23.png)
+![](screenshot-from-2024-07-08-00-31-23.png)
 
 Flipping the highlighted cell makes all the columns palindromic.
 

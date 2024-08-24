@@ -12,7 +12,7 @@ If it cannot be done, return `-1`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/14/domino.png)
+![](domino.png)
 
 **Input:** tops = [2,1,2,4,2,2], bottoms = [5,2,6,2,3,2]
 

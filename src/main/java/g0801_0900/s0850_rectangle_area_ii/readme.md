@@ -10,7 +10,7 @@ Return _the **total area**_. Since the answer may be too large, return it **modu
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/06/06/rectangle_area_ii_pic.png)
+![](rectangle_area_ii_pic.png)
 
 **Input:** rectangles = [[0,0,2,2],[1,0,2,3],[1,0,3,1]]
 

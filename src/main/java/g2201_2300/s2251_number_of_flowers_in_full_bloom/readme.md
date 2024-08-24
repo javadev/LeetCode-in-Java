@@ -8,7 +8,7 @@ Return _an integer array_ `answer` _of size_ `n`_, where_ `answer[i]` _is the **
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/03/02/ex1new.jpg)
+![](ex1new.jpg)
 
 **Input:** flowers = [[1,6],[3,7],[9,12],[4,13]], persons = [2,3,7,11]
 
@@ -18,7 +18,7 @@ Return _an integer array_ `answer` _of size_ `n`_, where_ `answer[i]` _is the **
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/03/02/ex2new.jpg)
+![](ex2new.jpg)
 
 **Input:** flowers = [[1,10],[3,3]], persons = [3,3,2]
 

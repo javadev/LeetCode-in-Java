@@ -11,7 +11,7 @@ Given an integer `n`, return _the **minimum** possible number of boxes touching 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/04/3-boxes.png)
+![](3-boxes.png)
 
 **Input:** n = 3
 
@@ -21,7 +21,7 @@ Given an integer `n`, return _the **minimum** possible number of boxes touching 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/04/4-boxes.png)
+![](4-boxes.png)
 
 **Input:** n = 4
 
@@ -31,7 +31,7 @@ Given an integer `n`, return _the **minimum** possible number of boxes touching 
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/01/04/10-boxes.png)
+![](10-boxes.png)
 
 **Input:** n = 10
 

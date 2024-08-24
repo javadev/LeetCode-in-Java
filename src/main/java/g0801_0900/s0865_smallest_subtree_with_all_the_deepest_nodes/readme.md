@@ -12,7 +12,7 @@ The **subtree** of a node is a tree consisting of that node, plus the set of all
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/01/sketch1.png)
+![](sketch1.png)
 
 **Input:** root = [3,5,1,6,2,0,8,null,null,7,4]
 

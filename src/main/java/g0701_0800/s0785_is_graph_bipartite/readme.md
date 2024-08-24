@@ -15,7 +15,7 @@ Return `true` _if and only if it is **bipartite**_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/21/bi2.jpg)
+![](bi2.jpg)
 
 **Input:** graph = [[1,2,3],[0,2],[0,1,3],[0,2]]
 
@@ -25,7 +25,7 @@ Return `true` _if and only if it is **bipartite**_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/21/bi1.jpg)
+![](bi1.jpg)
 
 **Input:** graph = [[1,3],[0,2],[1,3],[0,2]]
 

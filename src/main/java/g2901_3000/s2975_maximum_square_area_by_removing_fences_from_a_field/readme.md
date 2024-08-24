@@ -14,7 +14,7 @@ Since the answer may be large, return it **modulo** <code>10<sup>9</sup> + 7</co
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/11/05/screenshot-from-2023-11-05-22-40-25.png)
+![](screenshot-from-2023-11-05-22-40-25.png)
 
 **Input:** m = 4, n = 3, hFences = [2,3], vFences = [2]
 
@@ -24,7 +24,7 @@ Since the answer may be large, return it **modulo** <code>10<sup>9</sup> + 7</co
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/11/22/maxsquareareaexample1.png)
+![](maxsquareareaexample1.png)
 
 **Input:** m = 6, n = 7, hFences = [2], vFences = [4]
 

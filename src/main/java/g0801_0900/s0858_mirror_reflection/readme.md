@@ -12,7 +12,7 @@ The test cases are guaranteed so that the ray will meet a receptor eventually.
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/06/18/reflection.png)
+![](reflection.png)
 
 **Input:** p = 2, q = 1
 

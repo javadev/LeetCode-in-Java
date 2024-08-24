@@ -15,7 +15,7 @@ _Return the furthest building index (0-indexed) you can reach if you use the giv
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/27/q4.gif)
+![](q4.gif)
 
 **Input:** heights = [4,2,7,6,9,14,12], bricks = 5, ladders = 1
 

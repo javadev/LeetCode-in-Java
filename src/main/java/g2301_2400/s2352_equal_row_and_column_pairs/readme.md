@@ -8,7 +8,7 @@ A row and column pair is considered equal if they contain the same elements in t
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/06/01/ex1.jpg)
+![](ex1.jpg)
 
 **Input:** grid = [[3,2,1],[1,7,6],[2,7,7]]
 
@@ -20,7 +20,7 @@ A row and column pair is considered equal if they contain the same elements in t
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/06/01/ex2.jpg)
+![](ex2.jpg)
 
 **Input:** grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]
 

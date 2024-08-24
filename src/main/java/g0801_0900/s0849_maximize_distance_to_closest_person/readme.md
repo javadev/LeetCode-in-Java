@@ -12,7 +12,7 @@ Return _that maximum distance to the closest person_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/10/distance.jpg)
+![](distance.jpg)
 
 **Input:** seats = [1,0,0,0,1,0,1]
 

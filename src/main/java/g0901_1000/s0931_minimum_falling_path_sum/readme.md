@@ -8,7 +8,7 @@ A **falling path** starts at any element in the first row and chooses the elemen
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/11/03/failing1-grid.jpg)
+![](failing1-grid.jpg)
 
 **Input:** matrix = [[2,1,3],[6,5,4],[7,8,9]]
 
@@ -18,7 +18,7 @@ A **falling path** starts at any element in the first row and chooses the elemen
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/11/03/failing2-grid.jpg)
+![](failing2-grid.jpg)
 
 **Input:** matrix = [[-19,57],[-40,-5]]
 

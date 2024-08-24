@@ -15,7 +15,7 @@ Return _the **minimum** number of months needed to complete all the courses_.
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2021/10/07/ex1.png)**
+**![](ex1.png)**
 
 **Input:** n = 3, relations = [[1,3],[2,3]], time = [3,2,5]
 
@@ -33,7 +33,7 @@ Thus, the earliest time we can start course 3 is at month 3, and the total time 
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2021/10/07/ex2.png)**
+**![](ex2.png)**
 
 **Input:** n = 5, relations = [[1,5],[2,5],[3,5],[3,4],[4,5]], time = [1,2,3,4,5]
 

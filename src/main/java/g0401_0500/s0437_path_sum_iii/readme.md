@@ -8,7 +8,7 @@ The path does not need to start or end at the root or a leaf, but it must go dow
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/09/pathsum3-1-tree.jpg)
+![](pathsum3-1-tree.jpg)
 
 **Input:** root = [10,5,-3,3,2,null,11,3,-2,null,1], targetSum = 8
 

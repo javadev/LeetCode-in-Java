@@ -28,7 +28,7 @@ Possible arrangements:
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/05/12/arrangements.png)
+![](arrangements.png)
 
 **Input:** n = 2
 

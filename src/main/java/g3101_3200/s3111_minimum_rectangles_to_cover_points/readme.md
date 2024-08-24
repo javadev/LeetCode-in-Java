@@ -14,7 +14,7 @@ Return an integer denoting the **minimum** number of rectangles needed so that e
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2024/03/04/screenshot-from-2024-03-04-20-33-05.png)
+![](screenshot-from-2024-03-04-20-33-05.png)
 
 **Input:** points = [[2,1],[1,0],[1,4],[1,8],[3,5],[4,6]], w = 1
 
@@ -29,7 +29,7 @@ The image above shows one possible placement of rectangles to cover the points:
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2024/03/04/screenshot-from-2024-03-04-18-59-12.png)
+![](screenshot-from-2024-03-04-18-59-12.png)
 
 **Input:** points = [[0,0],[1,1],[2,2],[3,3],[4,4],[5,5],[6,6]], w = 2
 
@@ -45,7 +45,7 @@ The image above shows one possible placement of rectangles to cover the points:
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2024/03/04/screenshot-from-2024-03-04-20-24-03.png)
+![](screenshot-from-2024-03-04-20-24-03.png)
 
 **Input:** points = [[2,3],[1,2]], w = 0
 

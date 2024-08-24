@@ -8,7 +8,7 @@ Given an `n x n` integer matrix `matrix`, return `true` _if the matrix is **vali
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/21/example1drawio.png)
+![](example1drawio.png)
 
 **Input:** matrix = [[1,2,3],[3,1,2],[2,3,1]]
 
@@ -18,7 +18,7 @@ Given an `n x n` integer matrix `matrix`, return `true` _if the matrix is **vali
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/21/example2drawio.png)
+![](example2drawio.png)
 
 **Input:** matrix = [[1,1,1],[1,2,3],[1,2,3]]
 

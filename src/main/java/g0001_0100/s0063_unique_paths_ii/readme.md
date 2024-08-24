@@ -12,7 +12,7 @@ An obstacle and space is marked as `1` and `0` respectively in the grid.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/04/robot1.jpg)
+![](robot1.jpg)
 
 **Input:** obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
 
@@ -22,7 +22,7 @@ An obstacle and space is marked as `1` and `0` respectively in the grid.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/11/04/robot2.jpg)
+![](robot2.jpg)
 
 **Input:** obstacleGrid = [[0,1],[0,0]]
 

@@ -8,7 +8,7 @@ The distance between two adjacent cells is `1`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/24/01-1-grid.jpg)
+![](01-1-grid.jpg)
 
 **Input:** mat = [[0,0,0],[0,1,0],[0,0,0]]
 
@@ -16,7 +16,7 @@ The distance between two adjacent cells is `1`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/04/24/01-2-grid.jpg)
+![](01-2-grid.jpg)
 
 **Input:** mat = [[0,0,0],[0,1,0],[1,1,1]]
 

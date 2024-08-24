@@ -22,7 +22,7 @@ Return _the number of **valid** move combinations_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/09/23/a1.png)
+![](a1.png)
 
 **Input:** pieces = ["rook"], positions = [[1,1]]
 
@@ -32,7 +32,7 @@ Return _the number of **valid** move combinations_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/09/23/a2.png)
+![](a2.png)
 
 **Input:** pieces = ["queen"], positions = [[1,1]]
 
@@ -42,7 +42,7 @@ Return _the number of **valid** move combinations_.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/09/23/a3.png)
+![](a3.png)
 
 **Input:** pieces = ["bishop"], positions = [[4,3]]
 

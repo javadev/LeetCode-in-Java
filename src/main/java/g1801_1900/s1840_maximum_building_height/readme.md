@@ -18,7 +18,7 @@ Return _the **maximum possible height** of the **tallest** building_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/08/ic236-q4-ex1-1.png)
+![](ic236-q4-ex1-1.png)
 
 **Input:** n = 5, restrictions = [[2,1],[4,1]]
 
@@ -28,7 +28,7 @@ Return _the **maximum possible height** of the **tallest** building_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/04/08/ic236-q4-ex2.png)
+![](ic236-q4-ex2.png)
 
 **Input:** n = 6, restrictions = []
 
@@ -38,7 +38,7 @@ Return _the **maximum possible height** of the **tallest** building_.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/04/08/ic236-q4-ex3.png)
+![](ic236-q4-ex3.png)
 
 **Input:** n = 10, restrictions = [[5,3],[2,5],[7,4],[10,3]]
 

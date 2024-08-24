@@ -10,7 +10,7 @@ Two paths are considered different if they do not have exactly the same sequence
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/05/10/griddrawio-4.png)
+![](griddrawio-4.png)
 
 **Input:** grid = [[1,1],[3,4]]
 

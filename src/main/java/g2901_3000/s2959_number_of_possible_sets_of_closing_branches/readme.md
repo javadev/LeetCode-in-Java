@@ -18,7 +18,7 @@ Return _the number of possible sets of closing branches, so that any branch has 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/11/08/example11.png)
+![](example11.png)
 
 **Input:** n = 3, maxDistance = 5, roads = [[0,1,2],[1,2,10],[0,2,10]]
 
@@ -35,7 +35,7 @@ It can be proven, that there are only 5 possible sets of closing branches.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/11/08/example22.png)
+![](example22.png)
 
 **Input:** n = 3, maxDistance = 5, roads = [[0,1,20],[0,1,10],[1,2,2],[0,2,2]]
 

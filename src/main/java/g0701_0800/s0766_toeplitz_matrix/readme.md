@@ -8,7 +8,7 @@ A matrix is **Toeplitz** if every diagonal from top-left to bottom-right has the
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/04/ex1.jpg)
+![](ex1.jpg)
 
 **Input:** matrix = [[1,2,3,4],[5,1,2,3],[9,5,1,2]]
 
@@ -18,7 +18,7 @@ A matrix is **Toeplitz** if every diagonal from top-left to bottom-right has the
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/11/04/ex2.jpg)
+![](ex2.jpg)
 
 **Input:** matrix = [[1,2],[2,2]]
 

@@ -10,7 +10,7 @@ Return _the number of unoccupied cells that are **not** **guarded**._
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/03/10/example1drawio2.png)
+![](example1drawio2.png)
 
 **Input:** m = 4, n = 6, guards = [[0,0],[1,1],[2,3]], walls = [[0,1],[2,2],[1,4]]
 
@@ -20,7 +20,7 @@ Return _the number of unoccupied cells that are **not** **guarded**._
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/03/10/example2drawio.png)
+![](example2drawio.png)
 
 **Input:** m = 3, n = 3, guards = [[1,1]], walls = [[0,1],[1,0],[2,1],[1,2]]
 

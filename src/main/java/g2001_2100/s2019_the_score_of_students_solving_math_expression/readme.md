@@ -17,7 +17,7 @@ Return _the sum of the points of the students_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/09/17/student_solving_math.png)
+![](student_solving_math.png)
 
 **Input:** s = "7+3\*1\*2", answers = [20,13,42]
 

@@ -23,7 +23,7 @@ Return _the_ `k` _highest-ranked items within the price range **sorted** by thei
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/16/example1drawio.png)
+![](example1drawio.png)
 
 **Input:** grid = [[1,2,0,1],[1,3,0,1],[0,2,5,1]], pricing = [2,5], start = [0,0], k = 3
 
@@ -47,7 +47,7 @@ Thus, the 3 highest ranked items in the price range are (0,1), (1,1), and (2,1).
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/16/example2drawio1.png)
+![](example2drawio1.png)
 
 **Input:** grid = [[1,2,0,1],[1,3,3,1],[0,2,5,1]], pricing = [2,3], start = [2,3], k = 2
 
@@ -71,7 +71,7 @@ Thus, the 2 highest ranked items in the price range are (2,1) and (1,2).
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/12/30/example3.png)
+![](example3.png)
 
 **Input:** grid = [[1,1,1],[0,0,1],[2,3,4]], pricing = [2,3], start = [0,0], k = 3
 

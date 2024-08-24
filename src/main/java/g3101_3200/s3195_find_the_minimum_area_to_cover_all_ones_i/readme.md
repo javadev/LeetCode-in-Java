@@ -14,7 +14,7 @@ Return the **minimum** possible area of the rectangle.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/05/08/examplerect0.png)
+![](examplerect0.png)
 
 The smallest rectangle has a height of 2 and a width of 3, so it has an area of `2 * 3 = 6`.
 
@@ -26,7 +26,7 @@ The smallest rectangle has a height of 2 and a width of 3, so it has an area of 
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/05/08/examplerect1.png)
+![](examplerect1.png)
 
 The smallest rectangle has both height and width 1, so its area is `1 * 1 = 1`.
 

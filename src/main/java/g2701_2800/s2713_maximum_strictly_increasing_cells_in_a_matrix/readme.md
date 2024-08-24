@@ -12,7 +12,7 @@ Return _an integer denoting the maximum number of cells that can be visited._
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2023/04/23/diag1drawio.png)**
+**![](diag1drawio.png)**
 
 **Input:** mat = [[3,1],[3,4]]
 
@@ -22,7 +22,7 @@ Return _an integer denoting the maximum number of cells that can be visited._
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2023/04/23/diag3drawio.png)**
+**![](diag3drawio.png)**
 
 **Input:** mat = [[1,1],[1,1]]
 
@@ -32,7 +32,7 @@ Return _an integer denoting the maximum number of cells that can be visited._
 
 **Example 3:**
 
-**![](https://assets.leetcode.com/uploads/2023/04/23/diag4drawio.png)**
+**![](diag4drawio.png)**
 
 **Input:** mat = [[3,1,6],[-9,5,7]]
 

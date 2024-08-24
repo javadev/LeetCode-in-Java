@@ -12,7 +12,7 @@ Given the `head` of a linked list with even length, return _the **maximum twin s
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/03/eg1drawio.png)
+![](eg1drawio.png)
 
 **Input:** head = [5,4,2,1]
 
@@ -28,7 +28,7 @@ Thus, the maximum twin sum of the linked list is 6.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/03/eg2drawio.png)
+![](eg2drawio.png)
 
 **Input:** head = [4,2,2,3]
 
@@ -46,7 +46,7 @@ Thus, the maximum twin sum of the linked list is max(7, 4) = 7.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/12/03/eg3drawio.png)
+![](eg3drawio.png)
 
 **Input:** head = [1,100000]
 

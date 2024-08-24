@@ -6,7 +6,7 @@ Given an `m x n` binary `matrix` filled with `0`'s and `1`'s, _find the largest 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/26/max1grid.jpg)
+![](max1grid.jpg)
 
 **Input:** matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
 
@@ -14,7 +14,7 @@ Given an `m x n` binary `matrix` filled with `0`'s and `1`'s, _find the largest 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/11/26/max2grid.jpg)
+![](max2grid.jpg)
 
 **Input:** matrix = [["0","1"],["1","0"]]
 

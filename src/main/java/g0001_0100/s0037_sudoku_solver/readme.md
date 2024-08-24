@@ -14,7 +14,7 @@ The `'.'` character indicates empty cells.
 
 **Example 1:**
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
+![](250px-sudoku-by-l2g-20050714.svg.png)
 
 **Input:**
 
@@ -42,7 +42,7 @@ The `'.'` character indicates empty cells.
 
 **Explanation:** The input board is shown above and the only valid solution is shown below:
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png) 
+![](250px-sudoku-by-l2g-20050714_solution.svg.png) 
 
 **Constraints:**
 

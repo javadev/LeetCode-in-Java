@@ -10,7 +10,7 @@ Return _the maximum **area** of an island in_ `grid`. If there is no island, ret
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/01/maxarea1-grid.jpg)
+![](maxarea1-grid.jpg)
 
 **Input:** grid = [[0,0,1,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,1,1,0,1,0,0,0,0,0,0,0,0],[0,1,0,0,1,1,0,0,1,0,1,0,0],[0,1,0,0,1,1,0,0,1,1,1,0,0],[0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,1,1,0,0,0,0]]
 

@@ -15,7 +15,7 @@ Note:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2024/03/29/3708-tc1.png)
+![](3708-tc1.png)
 
 **Input:** points = [[2,2],[-1,-2],[-4,4],[-3,1],[3,-3]], s = "abdca"
 
@@ -27,7 +27,7 @@ The square of side length 4 covers two points `points[0]` and `points[1]`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2024/03/29/3708-tc2.png)
+![](3708-tc2.png)
 
 **Input:** points = [[1,1],[-2,-2],[-2,2]], s = "abb"
 

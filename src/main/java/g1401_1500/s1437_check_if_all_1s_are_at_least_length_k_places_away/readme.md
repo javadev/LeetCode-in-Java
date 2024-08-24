@@ -6,7 +6,7 @@ Given an binary array `nums` and an integer `k`, return `true` _if all_ `1`_'s a
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/04/15/sample_1_1791.png)
+![](sample_1_1791.png)
 
 **Input:** nums = [1,0,0,0,1,0,0,1], k = 2
 
@@ -16,7 +16,7 @@ Given an binary array `nums` and an integer `k`, return `true` _if all_ `1`_'s a
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/04/15/sample_2_1791.png)
+![](sample_2_1791.png)
 
 **Input:** nums = [1,0,0,1,0,1], k = 2
 

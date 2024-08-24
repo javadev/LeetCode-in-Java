@@ -12,7 +12,7 @@ If the `reshape` operation with given parameters is possible and legal, output t
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/24/reshape1-grid.jpg)
+![](reshape1-grid.jpg)
 
 **Input:** mat = [[1,2],[3,4]], r = 1, c = 4
 
@@ -20,7 +20,7 @@ If the `reshape` operation with given parameters is possible and legal, output t
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/04/24/reshape2-grid.jpg)
+![](reshape2-grid.jpg)
 
 **Input:** mat = [[1,2],[3,4]], r = 2, c = 4
 

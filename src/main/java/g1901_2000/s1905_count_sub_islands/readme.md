@@ -10,7 +10,7 @@ Return the _**number** of islands in_ `grid2` _that are considered **sub-islands
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/10/test1.png)
+![](test1.png)
 
 **Input:** grid1 = [[1,1,1,0,0],[0,1,1,1,1],[0,0,0,0,0],[1,0,0,0,0],[1,1,0,1,1]], grid2 = [[1,1,1,0,0],[0,0,1,1,1],[0,1,0,0,0],[1,0,1,1,0],[0,1,0,1,0]]
 
@@ -20,7 +20,7 @@ Return the _**number** of islands in_ `grid2` _that are considered **sub-islands
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/06/03/testcasex2.png)
+![](testcasex2.png)
 
 **Input:** grid1 = [[1,0,1,0,1],[1,1,1,1,1],[0,0,0,0,0],[1,1,1,1,1],[1,0,1,0,1]], grid2 = [[0,0,0,0,0],[1,1,1,1,1],[0,1,0,1,0],[0,1,0,1,0],[1,0,0,0,1]]
 

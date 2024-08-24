@@ -19,27 +19,27 @@ A leaf is a node that has no children.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/08/d1.png)
+![](d1.png)
 
 **Input:** trees = [[2,1],[3,2,5],[5,4]]
 
 **Output:** [3,2,5,1,null,4]
 
-**Explanation:** In the first operation, pick i=1 and j=0, and merge trees[0] into trees[1]. Delete trees[0], so trees = [[3,2,5,1],[5,4]]. ![](https://assets.leetcode.com/uploads/2021/06/24/diagram.png) In the second operation, pick i=0 and j=1, and merge trees[1] into trees[0]. Delete trees[1], so trees = [[3,2,5,1,null,4]]. ![](https://assets.leetcode.com/uploads/2021/06/24/diagram-2.png) The resulting tree, shown above, is a valid BST, so return its root.
+**Explanation:** In the first operation, pick i=1 and j=0, and merge trees[0] into trees[1]. Delete trees[0], so trees = [[3,2,5,1],[5,4]]. ![](diagram.png) In the second operation, pick i=0 and j=1, and merge trees[1] into trees[0]. Delete trees[1], so trees = [[3,2,5,1,null,4]]. ![](diagram-2.png) The resulting tree, shown above, is a valid BST, so return its root.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/06/08/d2.png)
+![](d2.png)
 
 **Input:** trees = [[5,3,8],[3,2,6]]
 
 **Output:** []
 
-**Explanation:** Pick i=0 and j=1 and merge trees[1] into trees[0]. Delete trees[1], so trees = [[5,3,8,2,6]]. ![](https://assets.leetcode.com/uploads/2021/06/24/diagram-3.png) The resulting tree is shown above. This is the only valid operation that can be performed, but the resulting tree is not a valid BST, so return null.
+**Explanation:** Pick i=0 and j=1 and merge trees[1] into trees[0]. Delete trees[1], so trees = [[5,3,8,2,6]]. ![](diagram-3.png) The resulting tree is shown above. This is the only valid operation that can be performed, but the resulting tree is not a valid BST, so return null.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/06/08/d3.png)
+![](d3.png)
 
 **Input:** trees = [[5,4],[3]]
 

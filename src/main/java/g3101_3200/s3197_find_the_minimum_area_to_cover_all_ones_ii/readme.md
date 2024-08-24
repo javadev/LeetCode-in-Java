@@ -16,7 +16,7 @@ Return the **minimum** possible sum of the area of these rectangles.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/05/14/example0rect21.png)
+![](example0rect21.png)
 
 *   The 1's at `(0, 0)` and `(1, 0)` are covered by a rectangle of area 2.
 *   The 1's at `(0, 2)` and `(1, 2)` are covered by a rectangle of area 2.
@@ -30,7 +30,7 @@ Return the **minimum** possible sum of the area of these rectangles.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/05/14/example1rect2.png)
+![](example1rect2.png)
 
 *   The 1's at `(0, 0)` and `(0, 2)` are covered by a rectangle of area 3.
 *   The 1 at `(1, 1)` is covered by a rectangle of area 1.

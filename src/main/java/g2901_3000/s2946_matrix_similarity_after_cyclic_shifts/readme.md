@@ -12,7 +12,7 @@ Return `true` _if the initial and final matrix are exactly the same and_ `false`
 
 **Output:** true
 
-**Explanation:** ![](https://assets.leetcode.com/uploads/2023/10/29/similarmatrix.png) Initially, the matrix looks like the first figure. Second figure represents the state of the matrix after one right and left cyclic shifts to even and odd indexed rows. Third figure is the final state of the matrix after two cyclic shifts which is similar to the initial matrix. Therefore, return true.
+**Explanation:** ![](similarmatrix.png) Initially, the matrix looks like the first figure. Second figure represents the state of the matrix after one right and left cyclic shifts to even and odd indexed rows. Third figure is the final state of the matrix after two cyclic shifts which is similar to the initial matrix. Therefore, return true.
 
 **Example 2:**
 

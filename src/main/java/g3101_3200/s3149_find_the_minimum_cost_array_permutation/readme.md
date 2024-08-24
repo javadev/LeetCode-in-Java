@@ -16,7 +16,7 @@ Return the permutation `perm` which has the **minimum** possible score. If _mult
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/04/04/example0gif.gif)**
+**![](example0gif.gif)**
 
 The lexicographically smallest permutation with minimum cost is `[0,1,2]`. The cost of this permutation is `|0 - 0| + |1 - 2| + |2 - 1| = 2`.
 
@@ -28,7 +28,7 @@ The lexicographically smallest permutation with minimum cost is `[0,1,2]`. The c
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/04/04/example1gif.gif)**
+**![](example1gif.gif)**
 
 The lexicographically smallest permutation with minimum cost is `[0,2,1]`. The cost of this permutation is `|0 - 1| + |2 - 2| + |1 - 0| = 2`.
 

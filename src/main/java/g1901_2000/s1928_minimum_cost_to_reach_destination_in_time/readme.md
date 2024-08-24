@@ -12,7 +12,7 @@ Given `maxTime`, `edges`, and `passingFees`, return _the **minimum cost** to com
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/04/leetgraph1-1.png)
+![](leetgraph1-1.png)
 
 **Input:** maxTime = 30, edges = [[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]], passingFees = [5,1,2,20,20,3]
 
@@ -22,7 +22,7 @@ Given `maxTime`, `edges`, and `passingFees`, return _the **minimum cost** to com
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2021/06/04/copy-of-leetgraph1-1.png)**
+**![](copy-of-leetgraph1-1.png)**
 
 **Input:** maxTime = 29, edges = [[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]], passingFees = [5,1,2,20,20,3]
 

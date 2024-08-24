@@ -10,7 +10,7 @@ Return _the **minimum** number of operations to make the grid **uni-value**_. If
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/09/21/gridtxt.png)
+![](gridtxt.png)
 
 **Input:** grid = [[2,4],[6,8]], x = 2
 
@@ -28,7 +28,7 @@ A total of 4 operations were used.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/09/21/gridtxt-1.png)
+![](gridtxt-1.png)
 
 **Input:** grid = [[1,5],[2,3]], x = 1
 
@@ -38,7 +38,7 @@ A total of 4 operations were used.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/09/21/gridtxt-2.png)
+![](gridtxt-2.png)
 
 **Input:** grid = [[1,2],[3,4]], x = 2
 

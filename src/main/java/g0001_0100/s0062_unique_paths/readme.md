@@ -10,7 +10,7 @@ How many possible unique paths are there?
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
+![](robot_maze.png)
 
 **Input:** m = 3, n = 7
 

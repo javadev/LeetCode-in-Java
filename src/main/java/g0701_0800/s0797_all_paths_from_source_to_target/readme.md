@@ -8,7 +8,7 @@ The graph is given as follows: `graph[i]` is a list of all nodes you can visit f
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/28/all_1.jpg)
+![](all_1.jpg)
 
 **Input:** graph = [[1,2],[3],[3],[]]
 
@@ -18,7 +18,7 @@ The graph is given as follows: `graph[i]` is a list of all nodes you can visit f
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/09/28/all_2.jpg)
+![](all_2.jpg)
 
 **Input:** graph = [[4,3,1],[3,2,4],[3],[4],[]]
 

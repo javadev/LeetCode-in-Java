@@ -6,7 +6,7 @@ Given an array of integers `heights` representing the histogram's bar height whe
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/04/histogram.jpg)
+![](histogram.jpg)
 
 **Input:** heights = [2,1,5,6,2,3]
 
@@ -16,7 +16,7 @@ Given an array of integers `heights` representing the histogram's bar height whe
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/04/histogram-1.jpg)
+![](histogram-1.jpg)
 
 **Input:** heights = [2,4]
 

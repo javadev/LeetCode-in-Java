@@ -6,7 +6,7 @@ Given the `root` node of a binary search tree and two integers `low` and `high`,
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/05/bst1.jpg)
+![](bst1.jpg)
 
 **Input:** root = [10,5,15,3,7,null,18], low = 7, high = 15
 
@@ -16,7 +16,7 @@ Given the `root` node of a binary search tree and two integers `low` and `high`,
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/11/05/bst2.jpg)
+![](bst2.jpg)
 
 **Input:** root = [10,5,15,3,7,13,18,1,null,6], low = 6, high = 10
 

@@ -20,7 +20,7 @@ Return _**any** matrix that satisfies the conditions_. If no answer exists, retu
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/07/06/gridosdrawio.png)
+![](gridosdrawio.png)
 
 **Input:** k = 3, rowConditions = [[1,2],[3,2]], colConditions = [[2,1],[3,2]]
 

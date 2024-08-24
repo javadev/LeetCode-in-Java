@@ -15,7 +15,7 @@ The value of `|x|` is defined as:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/08/30/1527_example_1_2.png)
+![](1527_example_1_2.png)
 
 **Input:** neededApples = 1
 

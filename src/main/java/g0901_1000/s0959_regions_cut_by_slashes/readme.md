@@ -10,7 +10,7 @@ Note that backslash characters are escaped, so a `'\'` is represented as `'\\'`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/12/15/1.png)
+![](1.png)
 
 **Input:** grid = [" /","/ "]
 
@@ -18,7 +18,7 @@ Note that backslash characters are escaped, so a `'\'` is represented as `'\\'`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2018/12/15/2.png)
+![](2.png)
 
 **Input:** grid = [" /"," "]
 
@@ -26,7 +26,7 @@ Note that backslash characters are escaped, so a `'\'` is represented as `'\\'`.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2018/12/15/4.png)
+![](4.png)
 
 **Input:** grid = ["/\\\\","\\\\/"]
 

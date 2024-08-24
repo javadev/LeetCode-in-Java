@@ -12,7 +12,7 @@ Return _the **last** day where it is possible to walk from the **top** to the **
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/27/1.png)
+![](1.png)
 
 **Input:** row = 2, col = 2, cells = [[1,1],[2,1],[1,2],[2,2]]
 
@@ -22,7 +22,7 @@ Return _the **last** day where it is possible to walk from the **top** to the **
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/07/27/2.png)
+![](2.png)
 
 **Input:** row = 2, col = 2, cells = [[1,1],[1,2],[2,1],[2,2]]
 
@@ -32,7 +32,7 @@ Return _the **last** day where it is possible to walk from the **top** to the **
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/07/27/3.png)
+![](3.png)
 
 **Input:** row = 3, col = 3, cells = [[1,2],[2,1],[3,3],[2,2],[1,1],[1,3],[2,3],[3,2],[3,1]]
 

@@ -15,7 +15,7 @@ Determine if a `9 x 9` Sudoku board is valid. Only the filled cells need to be v
 
 **Example 1:**
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
+![](250px-sudoku-by-l2g-20050714.svg.png)
 
 **Input:**
 

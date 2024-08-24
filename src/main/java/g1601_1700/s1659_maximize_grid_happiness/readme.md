@@ -17,7 +17,7 @@ The **grid happiness** is the **sum** of each person's happiness. Return _the **
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/05/grid_happiness.png)
+![](grid_happiness.png)
 
 **Input:** m = 2, n = 3, introvertsCount = 1, extrovertsCount = 2
 

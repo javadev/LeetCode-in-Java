@@ -9,7 +9,7 @@ Write an efficient algorithm that searches for a value in an `m x n` matrix. Thi
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/05/mat.jpg)
+![](mat.jpg)
 
 **Input:** matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3
 
@@ -17,7 +17,7 @@ Write an efficient algorithm that searches for a value in an `m x n` matrix. Thi
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/05/mat2.jpg)
+![](mat2.jpg)
 
 **Input:** matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13
 

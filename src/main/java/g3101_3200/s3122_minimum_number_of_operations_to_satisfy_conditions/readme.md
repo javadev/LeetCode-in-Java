@@ -17,7 +17,7 @@ Return the **minimum** number of operations needed.
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/04/15/examplechanged.png)**
+**![](examplechanged.png)**
 
 All the cells in the matrix already satisfy the properties.
 
@@ -29,7 +29,7 @@ All the cells in the matrix already satisfy the properties.
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/03/27/example21.png)**
+**![](example21.png)**
 
 The matrix becomes `[[1,0,1],[1,0,1]]` which satisfies the properties, by doing these 3 operations:
 
@@ -45,7 +45,7 @@ The matrix becomes `[[1,0,1],[1,0,1]]` which satisfies the properties, by doing 
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/03/31/changed.png)
+![](changed.png)
 
 There is a single column. We can change the value to 1 in each cell using 2 operations.
 

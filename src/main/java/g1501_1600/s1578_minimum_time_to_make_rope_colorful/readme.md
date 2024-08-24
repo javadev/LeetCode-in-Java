@@ -10,7 +10,7 @@ Return _the **minimum time** Bob needs to make the rope **colorful**_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/13/ballon1.jpg)
+![](ballon1.jpg)
 
 **Input:** colors = "abaac", neededTime = [1,2,3,4,5]
 
@@ -24,7 +24,7 @@ There are no longer two consecutive balloons of the same color. Total time = 3.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/13/balloon2.jpg)
+![](balloon2.jpg)
 
 **Input:** colors = "abc", neededTime = [1,2,3]
 
@@ -34,7 +34,7 @@ There are no longer two consecutive balloons of the same color. Total time = 3.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/12/13/balloon3.jpg)
+![](balloon3.jpg)
 
 **Input:** colors = "aabaa", neededTime = [1,2,3,4,1]
 

@@ -8,7 +8,7 @@ A node `a` is an ancestor of `b` if either: any child of `a` is equal to `b` or 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/09/tmp-tree.jpg)
+![](tmp-tree.jpg)
 
 **Input:** root = [8,3,10,1,6,null,14,null,null,4,7,13]
 
@@ -25,7 +25,7 @@ Among all possible differences, the maximum value of 7 is obtained by |8 - 1| = 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/11/09/tmp-tree-1.jpg)
+![](tmp-tree-1.jpg)
 
 **Input:** root = [1,null,2,null,0,3]
 

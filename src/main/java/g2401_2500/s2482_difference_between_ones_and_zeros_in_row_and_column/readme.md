@@ -16,7 +16,7 @@ Return _the difference matrix_ `diff`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/11/06/image-20221106171729-5.png)
+![](image-20221106171729-5.png)
 
 **Input:** grid = [[0,1,1],[1,0,1],[0,0,1]]
 
@@ -35,7 +35,7 @@ Return _the difference matrix_ `diff`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/11/06/image-20221106171747-6.png)
+![](image-20221106171747-6.png)
 
 **Input:** grid = [[1,1,1],[1,1,1]]
 

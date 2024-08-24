@@ -8,7 +8,7 @@ Return _the root of the trimmed binary search tree_. Note that the root may chan
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/09/trim1.jpg)
+![](trim1.jpg)
 
 **Input:** root = [1,0,2], low = 1, high = 2
 
@@ -16,7 +16,7 @@ Return _the root of the trimmed binary search tree_. Note that the root may chan
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/09/09/trim2.jpg)
+![](trim2.jpg)
 
 **Input:** root = [3,0,4,null,2,null,null,1], low = 1, high = 3
 

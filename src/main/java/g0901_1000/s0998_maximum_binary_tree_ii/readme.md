@@ -22,7 +22,7 @@ Return `Construct(b)`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/09/maxtree1.JPG)
+![](maxtree1.jpg)
 
 **Input:** root = [4,1,3,null,null,2], val = 5
 
@@ -32,7 +32,7 @@ Return `Construct(b)`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/08/09/maxtree21.JPG)
+![](maxtree21.jpg)
 
 **Input:** root = [5,2,4,null,1], val = 3
 
@@ -42,7 +42,7 @@ Return `Construct(b)`.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/08/09/maxtree3.JPG)
+![](maxtree3.jpg)
 
 **Input:** root = [5,2,3,null,1], val = 4
 

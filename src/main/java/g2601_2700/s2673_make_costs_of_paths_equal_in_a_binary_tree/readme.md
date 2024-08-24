@@ -15,7 +15,7 @@ Return _the **minimum** number of increments you need to make the cost of paths 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/04/04/binaryytreeedrawio-4.png)
+![](binaryytreeedrawio-4.png)
 
 **Input:** n = 7, cost = [1,5,2,2,3,3,1]
 
@@ -33,7 +33,7 @@ It can be shown that this is the minimum answer we can achieve.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/04/04/binaryytreee2drawio.png)
+![](binaryytreee2drawio.png)
 
 **Input:** n = 3, cost = [5,3,3]
 

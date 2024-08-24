@@ -8,7 +8,7 @@ Count and return _the number of maximum integers in the matrix after performing 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/02/ex1.jpg)
+![](ex1.jpg)
 
 **Input:** m = 3, n = 3, ops = [[2,2],[3,3]]
 

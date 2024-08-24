@@ -15,7 +15,7 @@ Note that if a token expires at time `t`, and another action happens on time `t`
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/25/copy-of-pc68_q2.png)
+![](copy-of-pc68_q2.png)
 
 **Input**
 

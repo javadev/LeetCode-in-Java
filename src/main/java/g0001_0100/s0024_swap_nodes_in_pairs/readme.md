@@ -6,7 +6,7 @@ Given a linked list, swap every two adjacent nodes and return its head. You must
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/03/swap_ex1.jpg)
+![](swap_ex1.jpg)
 
 **Input:** head = [1,2,3,4]
 

@@ -18,7 +18,7 @@ An **adjacent** cell of the cell `(r, c)`, is one of the cells `(r, c + 1)`, `(r
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/03/29/example.png)
+![](example.png)
 
 **Input:** grid = [[0,2,1,0],[4,0,0,3],[1,0,0,4],[0,3,2,0]]
 
@@ -28,7 +28,7 @@ An **adjacent** cell of the cell `(r, c)`, is one of the cells `(r, c + 1)`, `(r
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/03/29/example2.png)
+![](example2.png)
 
 **Input:** grid = [[1,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,1]]
 

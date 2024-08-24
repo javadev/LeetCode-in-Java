@@ -10,7 +10,7 @@ Given the integer array `position` and the integer `m`. Return _the required for
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/11/q3v1.jpg)
+![](q3v1.jpg)
 
 **Input:** position = [1,2,3,4,7], m = 3
 

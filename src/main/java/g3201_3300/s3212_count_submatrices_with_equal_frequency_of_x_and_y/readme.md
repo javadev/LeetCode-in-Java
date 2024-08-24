@@ -16,7 +16,7 @@ Given a 2D character matrix `grid`, where `grid[i][j]` is either `'X'`, `'Y'`, o
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/06/07/examplems.png)**
+**![](examplems.png)**
 
 **Example 2:**
 

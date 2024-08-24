@@ -12,7 +12,7 @@ Return _the_ `root` _of the modified tree_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/01/11/example11.png)
+![](example11.png)
 
 **Input:** root = [5,4,9,1,10,null,7]
 
@@ -28,7 +28,7 @@ Return _the_ `root` _of the modified tree_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/01/11/diagram33.png)
+![](diagram33.png)
 
 **Input:** root = [3,1,2]
 

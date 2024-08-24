@@ -8,7 +8,7 @@ Omit all the empty parenthesis pairs that do not affect the one-to-one mapping r
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/03/cons1-tree.jpg)
+![](cons1-tree.jpg)
 
 **Input:** root = [1,2,3,4]
 
@@ -18,7 +18,7 @@ Omit all the empty parenthesis pairs that do not affect the one-to-one mapping r
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/05/03/cons2-tree.jpg)
+![](cons2-tree.jpg)
 
 **Input:** root = [1,2,3,null,4]
 

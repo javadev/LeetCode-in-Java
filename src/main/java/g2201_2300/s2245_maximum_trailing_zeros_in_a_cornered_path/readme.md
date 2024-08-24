@@ -17,7 +17,7 @@ Note:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/03/23/ex1new2.jpg)
+![](ex1new2.jpg)
 
 **Input:** grid = [[23,17,15,3,20],[8,1,20,27,11],[9,4,6,2,21],[40,9,1,10,6],[22,7,4,5,3]]
 
@@ -36,7 +36,7 @@ The grid on the right is not a cornered path as it requires a return to a previo
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/03/25/ex2.jpg)
+![](ex2.jpg)
 
 **Input:** grid = [[4,3,2],[7,6,1],[8,8,8]]
 

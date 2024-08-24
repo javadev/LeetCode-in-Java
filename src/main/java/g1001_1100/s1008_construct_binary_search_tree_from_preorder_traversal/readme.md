@@ -12,7 +12,7 @@ A **preorder traversal** of a binary tree displays the value of the node first, 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/03/06/1266.png)
+![](1266.png)
 
 **Input:** preorder = [8,5,1,7,10,12]
 

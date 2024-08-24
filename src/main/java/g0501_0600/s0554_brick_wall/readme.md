@@ -10,7 +10,7 @@ Given the 2D array `wall` that contains the information about the wall, return _
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/24/cutwall-grid.jpg)
+![](cutwall-grid.jpg)
 
 **Input:** wall = [[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]]
 

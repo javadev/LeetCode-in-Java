@@ -12,7 +12,7 @@ You must solve the problem in `O(1)` extra space complexity and `O(n)` time comp
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/10/oddeven-linked-list.jpg)
+![](oddeven-linked-list.jpg)
 
 **Input:** head = [1,2,3,4,5]
 
@@ -20,7 +20,7 @@ You must solve the problem in `O(1)` extra space complexity and `O(n)` time comp
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/03/10/oddeven2-linked-list.jpg)
+![](oddeven2-linked-list.jpg)
 
 **Input:** head = [2,1,3,5,6,4,7]
 

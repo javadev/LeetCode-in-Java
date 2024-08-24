@@ -6,7 +6,7 @@ Given two integer arrays `preorder` and `inorder` where `preorder` is the preord
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/19/tree.jpg)
+![](tree.jpg)
 
 **Input:** preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
 

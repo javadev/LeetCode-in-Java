@@ -10,7 +10,7 @@ There is a cycle in a linked list if there is some node in the list that can be 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png)
+![](circularlinkedlist.png)
 
 **Input:** head = [3,2,0,-4], pos = 1
 
@@ -20,7 +20,7 @@ There is a cycle in a linked list if there is some node in the list that can be 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png)
+![](circularlinkedlist_test2.png)
 
 **Input:** head = [1,2], pos = 0
 
@@ -30,7 +30,7 @@ There is a cycle in a linked list if there is some node in the list that can be 
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png)
+![](circularlinkedlist_test3.png)
 
 **Input:** head = [1], pos = -1
 

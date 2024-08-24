@@ -16,7 +16,7 @@ Return _the maximum score you can obtain of all possible **valid paths**_. Since
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/07/16/sample_1_1893.png)
+![](sample_1_1893.png)
 
 **Input:** nums1 = [2,4,5,8,10], nums2 = [4,6,8,9]
 

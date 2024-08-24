@@ -17,7 +17,7 @@ Given an integer array `destination` and an integer `k`, return _the_ <code>k<su
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/12/ex1.png)
+![](ex1.png)
 
 **Input:** destination = [2,3], k = 1
 
@@ -27,7 +27,7 @@ Given an integer array `destination` and an integer `k`, return _the_ <code>k<su
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2020/10/12/ex2.png)**
+**![](ex2.png)**
 
 **Input:** destination = [2,3], k = 2
 
@@ -35,7 +35,7 @@ Given an integer array `destination` and an integer `k`, return _the_ <code>k<su
 
 **Example 3:**
 
-**![](https://assets.leetcode.com/uploads/2020/10/12/ex3.png)**
+**![](ex3.png)**
 
 **Input:** destination = [2,3], k = 3
 

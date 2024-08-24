@@ -10,7 +10,7 @@ Given the integer `r`, return _the maximum number of darts that can lie on the d
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/04/29/sample_1_1806.png)
+![](sample_1_1806.png)
 
 **Input:** darts = [[-2,0],[2,0],[0,2],[0,-2]], r = 2
 
@@ -20,7 +20,7 @@ Given the integer `r`, return _the maximum number of darts that can lie on the d
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/04/29/sample_2_1806.png)
+![](sample_2_1806.png)
 
 **Input:** darts = [[-3,0],[3,0],[2,6],[5,4],[0,9],[7,8]], r = 5
 

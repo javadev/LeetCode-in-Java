@@ -16,7 +16,7 @@ Return the **maximum** sum of the cell **values** on which the rooks are placed.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/08/08/rooks2.png)
+![](rooks2.png)
 
 We can place the rooks in the cells `(0, 2)`, `(1, 3)`, and `(2, 1)` for a sum of `1 + 1 + 2 = 4`.
 

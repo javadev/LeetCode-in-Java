@@ -12,7 +12,7 @@ Return _the minimum number of rotations you need to perform to maximize your pro
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/09/wheeldiagram12.png)
+![](wheeldiagram12.png)
 
 **Input:** customers = [8,3], boardingCost = 5, runningCost = 6
 

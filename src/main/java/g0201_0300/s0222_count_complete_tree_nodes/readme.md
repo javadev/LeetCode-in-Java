@@ -10,7 +10,7 @@ Design an algorithm that runs in less than `O(n)` time complexity.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/14/complete.jpg)
+![](complete.jpg)
 
 **Input:** root = [1,2,3,4,5,6]
 

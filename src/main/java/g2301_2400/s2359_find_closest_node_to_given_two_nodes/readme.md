@@ -14,7 +14,7 @@ Note that `edges` may contain cycles.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/06/07/graph4drawio-2.png)
+![](graph4drawio-2.png)
 
 **Input:** edges = [2,2,3,-1], node1 = 0, node2 = 1
 
@@ -26,7 +26,7 @@ The maximum of those two distances is 1. It can be proven that we cannot get a n
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/06/07/graph4drawio-4.png)
+![](graph4drawio-4.png)
 
 **Input:** edges = [1,2,-1], node1 = 0, node2 = 2
 

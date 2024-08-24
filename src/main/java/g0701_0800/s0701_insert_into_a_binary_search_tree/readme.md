@@ -8,13 +8,13 @@ You are given the `root` node of a binary search tree (BST) and a `value` to ins
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/05/insertbst.jpg)
+![](insertbst.jpg)
 
 **Input:** root = [4,2,7,1,3], val = 5
 
 **Output:** [4,2,7,1,3,5]
 
-**Explanation:** Another accepted tree is: ![](https://assets.leetcode.com/uploads/2020/10/05/bst.jpg)
+**Explanation:** Another accepted tree is: ![](bst.jpg)
 
 **Example 2:**
 

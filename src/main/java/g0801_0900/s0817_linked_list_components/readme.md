@@ -8,7 +8,7 @@ Return _the number of connected components in_ `nums` _where two values are conn
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/22/lc-linkedlistcom1.jpg)
+![](lc-linkedlistcom1.jpg)
 
 **Input:** head = [0,1,2,3], nums = [0,1,3]
 
@@ -18,7 +18,7 @@ Return _the number of connected components in_ `nums` _where two values are conn
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/07/22/lc-linkedlistcom2.jpg)
+![](lc-linkedlistcom2.jpg)
 
 **Input:** head = [0,1,2,3,4], nums = [0,3,1,4]
 

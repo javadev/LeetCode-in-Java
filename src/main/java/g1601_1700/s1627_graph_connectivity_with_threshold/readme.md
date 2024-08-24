@@ -14,7 +14,7 @@ Return _an array_ `answer`_, where_ `answer.length == queries.length` _and_ `ans
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/09/ex1.jpg)
+![](ex1.jpg)
 
 **Input:** n = 6, threshold = 2, queries = [[1,4],[2,5],[3,6]]
 
@@ -44,7 +44,7 @@ Using the underlined divisors above the threshold, only cities 3 and 6 share a c
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/10/tmp.jpg)
+![](tmp.jpg)
 
 **Input:** n = 6, threshold = 0, queries = [[4,5],[3,4],[3,2],[2,6],[1,3]]
 
@@ -54,7 +54,7 @@ Using the underlined divisors above the threshold, only cities 3 and 6 share a c
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/10/17/ex3.jpg)
+![](ex3.jpg)
 
 **Input:** n = 5, threshold = 1, queries = [[4,5],[4,5],[3,2],[2,3],[3,4]]
 

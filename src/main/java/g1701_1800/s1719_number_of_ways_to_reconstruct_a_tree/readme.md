@@ -27,7 +27,7 @@ An **ancestor** of a node is any node on the path from the root to that node (ex
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/12/03/trees2.png)
+![](trees2.png)
 
 **Input:** pairs = [[1,2],[2,3]]
 
@@ -37,7 +37,7 @@ An **ancestor** of a node is any node on the path from the root to that node (ex
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/12/03/tree.png)
+![](tree.png)
 
 **Input:** pairs = [[1,2],[2,3],[1,3]]
 

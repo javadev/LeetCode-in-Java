@@ -22,7 +22,7 @@ Return _the number of minutes_ needed to inform all the employees about the urge
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/02/27/graph.png)
+![](graph.png)
 
 **Input:** n = 6, headID = 2, manager = [2,2,-1,2,2,2], informTime = [0,0,1,0,0,0]
 

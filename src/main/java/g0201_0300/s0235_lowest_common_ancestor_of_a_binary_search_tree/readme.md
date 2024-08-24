@@ -8,7 +8,7 @@ According to the [definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png)
+![](binarysearchtree_improved.png)
 
 **Input:** root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
 
@@ -18,7 +18,7 @@ According to the [definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png)
+![](binarysearchtree_improved.png)
 
 **Input:** root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4
 

@@ -6,7 +6,7 @@ Given two binary search trees `root1` and `root2`, return _a list containing all
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/12/18/q2-e1.png)
+![](q2-e1.png)
 
 **Input:** root1 = [2,1,4], root2 = [1,0,3]
 
@@ -14,7 +14,7 @@ Given two binary search trees `root1` and `root2`, return _a list containing all
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/12/18/q2-e5-.png)
+![](q2-e5-.png)
 
 **Input:** root1 = [1,null,8], root2 = [8,1]
 

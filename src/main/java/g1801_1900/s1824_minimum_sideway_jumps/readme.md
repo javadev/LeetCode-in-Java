@@ -18,7 +18,7 @@ Return _the **minimum number of side jumps** the frog needs to reach **any lane*
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/25/ic234-q3-ex1.png)
+![](ic234-q3-ex1.png)
 
 **Input:** obstacles = [0,1,2,3,0]
 
@@ -28,7 +28,7 @@ Return _the **minimum number of side jumps** the frog needs to reach **any lane*
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/03/25/ic234-q3-ex2.png)
+![](ic234-q3-ex2.png)
 
 **Input:** obstacles = [0,1,1,3,3,0]
 
@@ -38,7 +38,7 @@ Return _the **minimum number of side jumps** the frog needs to reach **any lane*
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/03/25/ic234-q3-ex3.png)
+![](ic234-q3-ex3.png)
 
 **Input:** obstacles = [0,2,1,0,3,0]
 

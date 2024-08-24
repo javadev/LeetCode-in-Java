@@ -8,7 +8,7 @@ Return _the **number of pairs** of different nodes that are **unreachable** from
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/05/05/tc-3.png)
+![](tc-3.png)
 
 **Input:** n = 3, edges = [[0,1],[0,2],[1,2]]
 
@@ -20,7 +20,7 @@ Therefore, we return 0.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/05/05/tc-2.png)
+![](tc-2.png)
 
 **Input:** n = 7, edges = [[0,2],[0,5],[2,4],[1,6],[5,4]]
 

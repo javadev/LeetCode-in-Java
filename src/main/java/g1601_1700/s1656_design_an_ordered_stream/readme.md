@@ -13,7 +13,7 @@ Implement the `OrderedStream` class:
 
 **Example:**
 
-**![](https://assets.leetcode.com/uploads/2020/11/10/q1.gif)**
+**![](q1.gif)**
 
 **Input** ["OrderedStream", "insert", "insert", "insert", "insert", "insert"]
 

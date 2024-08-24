@@ -12,7 +12,7 @@ Return _the **maximum** number of edges you can delete, such that every connecte
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/08/26/diagramdrawio.png)
+![](diagramdrawio.png)
 
 **Input:** nums = [6,2,2,2,6], edges = [[0,1],[1,2],[1,3],[3,4]]
 

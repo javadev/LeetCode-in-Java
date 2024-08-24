@@ -8,7 +8,7 @@ A **root-to-leaf** path is a path starting from the root and ending at any leaf 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/18/pathsumii1.jpg)
+![](pathsumii1.jpg)
 
 **Input:** root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22
 
@@ -18,7 +18,7 @@ A **root-to-leaf** path is a path starting from the root and ending at any leaf 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/18/pathsum2.jpg)
+![](pathsum2.jpg)
 
 **Input:** root = [1,2,3], targetSum = 5
 

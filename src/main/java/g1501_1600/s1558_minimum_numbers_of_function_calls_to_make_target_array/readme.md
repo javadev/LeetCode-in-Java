@@ -4,7 +4,7 @@ Medium
 
 You are given an integer array `nums`. You have an integer array `arr` of the same length with all values set to `0` initially. You also have the following `modify` function:
 
-![](https://assets.leetcode.com/uploads/2020/07/10/sample_2_1887.png)
+![](sample_2_1887.png)
 
 You want to use the modify function to covert `arr` to `nums` using the minimum number of calls.
 

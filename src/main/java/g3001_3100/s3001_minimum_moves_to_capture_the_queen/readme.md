@@ -21,7 +21,7 @@ Given that you can only move the white pieces, return _the **minimum** number of
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/12/21/ex1.png)
+![](ex1.png)
 
 **Input:** a = 1, b = 1, c = 8, d = 8, e = 2, f = 3
 
@@ -33,7 +33,7 @@ It is impossible to capture the black queen in less than two moves since it is n
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/12/21/ex2.png)
+![](ex2.png)
 
 **Input:** a = 5, b = 3, c = 3, d = 4, e = 5, f = 2
 

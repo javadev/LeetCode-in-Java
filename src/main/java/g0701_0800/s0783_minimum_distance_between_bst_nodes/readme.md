@@ -6,7 +6,7 @@ Given the `root` of a Binary Search Tree (BST), return _the minimum difference b
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/05/bst1.jpg)
+![](bst1.jpg)
 
 **Input:** root = [4,2,6,1,3]
 
@@ -14,7 +14,7 @@ Given the `root` of a Binary Search Tree (BST), return _the minimum difference b
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/02/05/bst2.jpg)
+![](bst2.jpg)
 
 **Input:** root = [1,0,48,null,null,12,49]
 

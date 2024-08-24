@@ -17,7 +17,7 @@ Here are the rules of Tic-Tac-Toe:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/15/tictactoe1-grid.jpg)
+![](tictactoe1-grid.jpg)
 
 **Input:** board = ["O "," "," "]
 
@@ -27,7 +27,7 @@ Here are the rules of Tic-Tac-Toe:
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/05/15/tictactoe2-grid.jpg)
+![](tictactoe2-grid.jpg)
 
 **Input:** board = ["XOX"," X "," "]
 
@@ -37,7 +37,7 @@ Here are the rules of Tic-Tac-Toe:
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/05/15/tictactoe4-grid.jpg)
+![](tictactoe4-grid.jpg)
 
 **Input:** board = ["XOX","O O","XOX"]
 

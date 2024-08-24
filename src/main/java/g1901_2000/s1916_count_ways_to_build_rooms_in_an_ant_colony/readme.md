@@ -10,7 +10,7 @@ Return _the **number of different orders** you can build all the rooms in_. Sinc
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/19/d1.JPG)
+![](d1.jpg)
 
 **Input:** prevRoom = [-1,0,1]
 
@@ -20,7 +20,7 @@ Return _the **number of different orders** you can build all the rooms in_. Sinc
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2021/06/19/d2.JPG)**
+**![](d2.jpg)**
 
 **Input:** prevRoom = [-1,0,0,1,2]
 

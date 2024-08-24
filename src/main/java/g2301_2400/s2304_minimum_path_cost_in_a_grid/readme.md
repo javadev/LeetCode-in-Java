@@ -10,7 +10,7 @@ The cost of a path in `grid` is the **sum** of all values of cells visited plus 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/04/28/griddrawio-2.png)
+![](griddrawio-2.png)
 
 **Input:** grid = [[5,3],[4,0],[2,1]], moveCost = [[9,8],[1,5],[10,12],[18,6],[2,4],[14,3]]
 

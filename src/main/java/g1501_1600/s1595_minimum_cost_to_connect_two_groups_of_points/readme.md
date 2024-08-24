@@ -10,7 +10,7 @@ Return _the minimum cost it takes to connect the two groups_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/03/ex1.jpg)
+![](ex1.jpg)
 
 **Input:** cost = [[15, 96], [36, 2]]
 
@@ -26,7 +26,7 @@ This results in a total cost of 17.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/09/03/ex2.jpg)
+![](ex2.jpg)
 
 **Input:** cost = [[1, 3, 5], [4, 1, 1], [1, 5, 3]]
 

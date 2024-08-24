@@ -8,7 +8,7 @@ Given an integer `n`, return _the number of distinct solutions to the **n-queens
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/13/queens.jpg)
+![](queens.jpg)
 
 **Input:** n = 4
 

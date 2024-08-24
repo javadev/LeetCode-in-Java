@@ -6,7 +6,7 @@ Given the `head` of a linked list and an integer `val`, remove all the nodes of 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/06/removelinked-list.jpg)
+![](removelinked-list.jpg)
 
 **Input:** head = [1,2,6,3,4,5,6], val = 6
 

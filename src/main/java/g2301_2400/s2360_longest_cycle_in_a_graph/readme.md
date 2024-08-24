@@ -12,7 +12,7 @@ A cycle is a path that starts and ends at the **same** node.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/06/08/graph4drawio-5.png)
+![](graph4drawio-5.png)
 
 **Input:** edges = [3,3,4,2,3]
 
@@ -24,7 +24,7 @@ The length of this cycle is 3, so 3 is returned.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/06/07/graph4drawio-1.png)
+![](graph4drawio-1.png)
 
 **Input:** edges = [2,-1,3,1]
 

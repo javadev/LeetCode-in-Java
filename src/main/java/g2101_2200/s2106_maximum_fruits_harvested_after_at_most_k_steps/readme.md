@@ -10,7 +10,7 @@ Return _the **maximum total number** of fruits you can harvest_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/11/21/1.png)
+![](1.png)
 
 **Input:** fruits = [[2,8],[6,3],[8,6]], startPos = 5, k = 4
 
@@ -26,7 +26,7 @@ You moved 3 steps and harvested 3 + 6 = 9 fruits in total.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/11/21/2.png)
+![](2.png)
 
 **Input:** fruits = [[0,9],[4,1],[5,7],[6,2],[7,4],[10,9]], startPos = 5, k = 4
 
@@ -46,7 +46,7 @@ You moved 1 + 3 = 4 steps and harvested 7 + 1 + 2 + 4 = 14 fruits in total.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/11/21/3.png)
+![](3.png)
 
 **Input:** fruits = [[0,3],[6,4],[8,5]], startPos = 3, k = 2
 

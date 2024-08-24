@@ -8,7 +8,7 @@ You have to rotate the image [**in-place**](https://en.wikipedia.org/wiki/In-pla
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/28/mat1.jpg)
+![](mat1.jpg)
 
 **Input:** matrix = [[1,2,3],[4,5,6],[7,8,9]]
 
@@ -16,7 +16,7 @@ You have to rotate the image [**in-place**](https://en.wikipedia.org/wiki/In-pla
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/08/28/mat2.jpg)
+![](mat2.jpg)
 
 **Input:** matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
 

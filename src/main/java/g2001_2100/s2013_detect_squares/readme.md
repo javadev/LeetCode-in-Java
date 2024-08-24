@@ -17,7 +17,7 @@ Implement the `DetectSquares` class:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/09/01/image.png)
+![](image.png)
 
 **Input** ["DetectSquares", "add", "add", "add", "count", "count", "add", "count"] [[], [[3, 10]], [[11, 2]], [[3, 2]], [[11, 10]], [[14, 8]], [[11, 2]], [[11, 10]]]
 

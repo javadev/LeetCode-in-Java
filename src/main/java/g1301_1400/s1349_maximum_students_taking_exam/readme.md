@@ -10,7 +10,7 @@ Students must be placed in seats in good condition.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/01/29/image.png)
+![](image.png)
 
 **Input:** seats = [["#",".","#","#",".","#"], 
                     [".","#","#","#","#","."], 

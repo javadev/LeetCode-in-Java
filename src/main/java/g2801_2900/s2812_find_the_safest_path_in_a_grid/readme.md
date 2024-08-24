@@ -19,7 +19,7 @@ The **Manhattan distance** between two cells `(a, b)` and `(x, y)` is equal to `
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/07/02/example1.png)
+![](example1.png)
 
 **Input:** grid = [[1,0,0],[0,0,0],[0,0,1]]
 
@@ -29,7 +29,7 @@ The **Manhattan distance** between two cells `(a, b)` and `(x, y)` is equal to `
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/07/02/example2.png)
+![](example2.png)
 
 **Input:** grid = [[0,0,1],[0,0,0],[0,0,0]]
 
@@ -47,7 +47,7 @@ It can be shown that there are no other paths with a higher safeness factor.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2023/07/02/example3.png)
+![](example3.png)
 
 **Input:** grid = [[0,0,0,1],[0,0,0,0],[0,0,0,0],[1,0,0,0]]
 

@@ -14,7 +14,7 @@ Return _an array_ `answer` _where_ `answer[i]` _is the number of **different** n
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/08/31/graaphdrawio-1.png)
+![](graaphdrawio-1.png)
 
 **Input:** edges = [1,2,0,0]
 
@@ -28,7 +28,7 @@ Return _an array_ `answer` _where_ `answer[i]` _is the number of **different** n
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/08/31/graaph2drawio.png)
+![](graaph2drawio.png)
 
 **Input:** edges = [1,2,3,4,0]
 

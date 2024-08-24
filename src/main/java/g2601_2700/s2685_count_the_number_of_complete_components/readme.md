@@ -12,7 +12,7 @@ A connected component is said to be **complete** if there exists an edge between
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2023/04/11/screenshot-from-2023-04-11-23-31-23.png)**
+**![](screenshot-from-2023-04-11-23-31-23.png)**
 
 **Input:** n = 6, edges = [[0,1],[0,2],[1,2],[3,4]]
 
@@ -22,7 +22,7 @@ A connected component is said to be **complete** if there exists an edge between
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2023/04/11/screenshot-from-2023-04-11-23-32-00.png)**
+**![](screenshot-from-2023-04-11-23-32-00.png)**
 
 **Input:** n = 6, edges = [[0,1],[0,2],[1,2],[3,4],[3,5]]
 

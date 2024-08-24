@@ -10,7 +10,7 @@ An **axis-aligned plus sign** of `1`'s of order `k` has some center `grid[r][c] 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/13/plus1-grid.jpg)
+![](plus1-grid.jpg)
 
 **Input:** n = 5, mines = [[4,2]]
 
@@ -20,7 +20,7 @@ An **axis-aligned plus sign** of `1`'s of order `k` has some center `grid[r][c] 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/06/13/plus2-grid.jpg)
+![](plus2-grid.jpg)
 
 **Input:** n = 1, mines = [[0,0]]
 

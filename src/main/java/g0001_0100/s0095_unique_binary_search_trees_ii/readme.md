@@ -6,7 +6,7 @@ Given an integer `n`, return _all the structurally unique **BST'**s (binary sear
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/18/uniquebstn3.jpg)
+![](uniquebstn3.jpg)
 
 **Input:** n = 3
 

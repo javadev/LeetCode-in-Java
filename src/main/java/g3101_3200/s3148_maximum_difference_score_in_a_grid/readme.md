@@ -10,7 +10,7 @@ Return the **maximum** total score you can achieve.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2024/03/14/grid1.png)
+![](grid1.png)
 
 **Input:** grid = [[9,5,7,3],[8,9,6,1],[6,7,14,3],[2,5,3,1]]
 
@@ -26,7 +26,7 @@ The total score is `2 + 7 = 9`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2024/04/08/moregridsdrawio-1.png)
+![](moregridsdrawio-1.png)
 
 **Input:** grid = [[4,3,2],[3,2,1]]
 

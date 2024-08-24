@@ -28,19 +28,19 @@ Return an array `answer` containing the results of the queries of the first type
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/06/03/screenshot-from-2024-06-03-20-14-44.png)**
+**![](screenshot-from-2024-06-03-20-14-44.png)**
 
 First query:
 
 Change `colors[1]` to 0.
 
-![](https://assets.leetcode.com/uploads/2024/06/03/screenshot-from-2024-06-03-20-20-25.png)
+![](screenshot-from-2024-06-03-20-20-25.png)
 
 Second query:
 
 Count of the alternating groups with size 4:
 
-![](https://assets.leetcode.com/uploads/2024/06/03/screenshot-from-2024-06-03-20-25-02-2.png)![](https://assets.leetcode.com/uploads/2024/06/03/screenshot-from-2024-06-03-20-24-12.png)
+![](screenshot-from-2024-06-03-20-25-02-2.png)![](screenshot-from-2024-06-03-20-24-12.png)
 
 **Example 2:**
 
@@ -50,13 +50,13 @@ Count of the alternating groups with size 4:
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/06/03/screenshot-from-2024-06-03-20-35-50.png)
+![](screenshot-from-2024-06-03-20-35-50.png)
 
 First query:
 
 Count of the alternating groups with size 3:
 
-![](https://assets.leetcode.com/uploads/2024/06/03/screenshot-from-2024-06-03-20-37-13.png)![](https://assets.leetcode.com/uploads/2024/06/03/screenshot-from-2024-06-03-20-36-40.png)
+![](screenshot-from-2024-06-03-20-37-13.png)![](screenshot-from-2024-06-03-20-36-40.png)
 
 Second query: `colors` will not change.
 

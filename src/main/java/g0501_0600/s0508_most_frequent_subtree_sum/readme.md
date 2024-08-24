@@ -8,7 +8,7 @@ The **subtree sum** of a node is defined as the sum of all the node values forme
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/24/freq1-tree.jpg)
+![](freq1-tree.jpg)
 
 **Input:** root = [5,2,-3]
 
@@ -16,7 +16,7 @@ The **subtree sum** of a node is defined as the sum of all the node values forme
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/04/24/freq2-tree.jpg)
+![](freq2-tree.jpg)
 
 **Input:** root = [5,2,-5]
 

@@ -18,7 +18,7 @@ Return an array `result` of length `n`, where `result[i]` denotes the number of 
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/04/17/ezgifcom-crop.gif)
+![](ezgifcom-crop.gif)
 
 *   After query 0, ball 1 has color 4.
 *   After query 1, ball 1 has color 4, and ball 2 has color 5.
@@ -33,7 +33,7 @@ Return an array `result` of length `n`, where `result[i]` denotes the number of 
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/04/17/ezgifcom-crop2.gif)**
+**![](ezgifcom-crop2.gif)**
 
 *   After query 0, ball 0 has color 1.
 *   After query 1, ball 0 has color 1, and ball 1 has color 2.

@@ -12,7 +12,7 @@ Return _the **maximum total importance** of all roads possible after assigning t
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/04/07/ex1drawio.png)
+![](ex1drawio.png)
 
 **Input:** n = 5, roads = [[0,1],[1,2],[2,3],[0,2],[1,3],[2,4]]
 
@@ -38,7 +38,7 @@ It can be shown that we cannot obtain a greater total importance than 43.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/04/07/ex2drawio.png)
+![](ex2drawio.png)
 
 **Input:** n = 5, roads = [[0,3],[2,4],[1,3]]
 

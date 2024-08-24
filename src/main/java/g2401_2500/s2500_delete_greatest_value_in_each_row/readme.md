@@ -15,7 +15,7 @@ Return _the answer after performing the operations described above_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/19/q1ex1.jpg)
+![](q1ex1.jpg)
 
 **Input:** grid = [[1,2,4],[3,3,1]]
 
@@ -33,7 +33,7 @@ The final answer = 4 + 3 + 1 = 8.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/10/19/q1ex2.jpg)
+![](q1ex2.jpg)
 
 **Input:** grid = [[10]]
 
