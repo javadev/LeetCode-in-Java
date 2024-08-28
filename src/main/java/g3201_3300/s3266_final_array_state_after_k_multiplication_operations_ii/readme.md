@@ -21,33 +21,14 @@ Return an integer array denoting the _final state_ of `nums` after performing al
 
 **Explanation:**
 
-Operation
-
-Result
-
-After operation 1
-
-[2, 2, 3, 5, 6]
-
-After operation 2
-
-[4, 2, 3, 5, 6]
-
-After operation 3
-
-[4, 4, 3, 5, 6]
-
-After operation 4
-
-[4, 4, 6, 5, 6]
-
-After operation 5
-
-[8, 4, 6, 5, 6]
-
-After applying modulo
-
-[8, 4, 6, 5, 6]
+| Operation               | Result           |
+|-------------------------|------------------|
+| After operation 1       | [2, 2, 3, 5, 6]  |
+| After operation 2       | [4, 2, 3, 5, 6]  |
+| After operation 3       | [4, 4, 3, 5, 6]  |
+| After operation 4       | [4, 4, 6, 5, 6]  |
+| After operation 5       | [8, 4, 6, 5, 6]  |
+| After applying modulo   | [8, 4, 6, 5, 6]  |
 
 **Example 2:**
 
@@ -57,21 +38,11 @@ After applying modulo
 
 **Explanation:**
 
-Operation
-
-Result
-
-After operation 1
-
-[100000, 2000000000]
-
-After operation 2
-
-[100000000000, 2000000000]
-
-After applying modulo
-
-[999999307, 999999993]
+| Operation               | Result               |
+|-------------------------|----------------------|
+| After operation 1       | [100000, 2000000000] |
+| After operation 2       | [100000000000, 2000000000] |
+| After applying modulo   | [999999307, 999999993] |
 
 **Constraints:**
 
