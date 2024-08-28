@@ -11,10 +11,10 @@ import java.util.Set;
 public class Solution {
     public int countPairs(int[] nums) {
         int pairs = 0;
-        Map<Integer, Integer> counts = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> counts = new HashMap<>();
         Arrays.sort(nums);
         for (int num : nums) {
-            Set<Integer> newNums = new HashSet<Integer>();
+            Set<Integer> newNums = new HashSet<>();
             newNums.add(num);
             for (int unit1 = 1, remain1 = num; remain1 > 0; unit1 *= 10, remain1 /= 10) {
                 int digit1 = num / unit1 % 10;
