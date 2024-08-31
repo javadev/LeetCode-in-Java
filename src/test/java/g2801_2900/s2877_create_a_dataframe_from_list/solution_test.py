@@ -2,7 +2,6 @@ import unittest
 import pandas as pd
 from typing import List
 
-# Assuming the function createDataframe is defined as above
 def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
     column_name = ['student_id','age']
     result = pd.DataFrame(student_data, columns=column_name)
