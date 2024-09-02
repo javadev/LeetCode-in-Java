@@ -21,13 +21,10 @@ public class Solution {
 
         @Override
         public int compareTo(Pair p) {
-
             int thisHits = (int) Math.ceil((double) this.health / power);
             int otherHits = (int) Math.ceil((double) p.health / power);
-
             double thisTotalDamage = this.damage * 1.0 / thisHits;
             double otherTotalDamage = p.damage * 1.0 / otherHits;
-
             return Double.compare(otherTotalDamage, thisTotalDamage);
         }
     }
