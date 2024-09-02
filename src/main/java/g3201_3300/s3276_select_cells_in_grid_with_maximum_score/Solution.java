@@ -44,6 +44,7 @@ public class Solution {
             take = Math.max(n + helper(n - 1, mask | (1 << row), list, dp), take);
         }
         int notTake = helper(n - 1, mask, list, dp);
-        return dp[n][mask] = Math.max(take, notTake);
+        dp[n][mask] = Math.max(take, notTake);
+        return dp[n][mask];
     }
 }

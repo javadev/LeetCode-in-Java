@@ -2,6 +2,7 @@ package g3201_3300.s3277_maximum_xor_score_subarray_queries;
 
 // #Hard #2024_09_02_Time_62_ms_(100.00%)_Space_90.5_MB_(100.00%)
 
+@SuppressWarnings("java:S3012")
 public class Solution {
     public int[] maximumSubarrayXor(int[] nums, int[][] queries) {
         int n = nums.length;
