@@ -46,7 +46,6 @@ public class Solution {
             long invalidPermutations = calculatePermutations(freq, n - 1);
             totalPermutations -= invalidPermutations;
         }
-
         return totalPermutations;
     }
 
@@ -80,10 +79,8 @@ public class Solution {
         for (int i = 1; i < n; i++) {
             rem[i] = (rem[i - 1] * 10) % k;
         }
-
         palindromes.clear();
         generatePalindromes(0, n - 1, k, 1, 0, ans, rem);
-
         return palindromes;
     }
 
@@ -95,7 +92,6 @@ public class Solution {
             Arrays.sort(arr);
             st.add(new String(arr));
         }
-
         List<String> v = new ArrayList<>(st);
         long chk = 0;
         for (String str : v) {
