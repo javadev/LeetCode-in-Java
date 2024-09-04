@@ -33,28 +33,6 @@ public class Solution {
         }
 
         @Override
-        public boolean equals(Object o) {
-            if (this == o) {
-                return true;
-            }
-            if (o == null || getClass() != o.getClass()) {
-                return false;
-            }
-            Pair pair = (Pair) o;
-            return key == pair.key && val == pair.val;
-        }
-
-        @Override
-        public int hashCode() {
-            return key ^ val;
-        }
-
-        @Override
-        public String toString() {
-            return "[" + key + " - " + val + "]";
-        }
-
-        @Override
         public int compareTo(Pair p) {
             return val * p.key - key * p.val;
         }
