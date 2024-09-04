@@ -24,8 +24,8 @@ public class Solution {
     }
 
     private static class Pair implements Comparable<Pair> {
-        public int key;
-        public int val;
+        int key;
+        int val;
 
         Pair(int key, int val) {
             this.key = key;
@@ -34,8 +34,14 @@ public class Solution {
 
         @Override
         public boolean equals(Object o) {
-            Pair p1 = (Pair) o;
-            return key == p1.key && val == p1.val;
+            if (this == o) {
+                return true;
+            }
+            if (o == null || getClass() != o.getClass()) {
+                return false;
+            }
+            Pair pair = (Pair) o;
+            return key == pair.key && val == pair.val;
         }
 
         @Override

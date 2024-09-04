@@ -24,8 +24,10 @@ public class Solution {
             boolean[] seen = new boolean[n];
             seen[arr[i][1]] = true;
             int v = arr[i][0];
-            for (i++; i < arr.length && arr[i][0] == v; i++) {
+            i++;
+            while (i < arr.length && arr[i][0] == v) {
                 seen[arr[i][1]] = true;
+                i++;
             }
             int[] next = Arrays.copyOf(dp, dp.length);
             for (int j = 0; j < n; j++) {
