@@ -24,4 +24,12 @@ class SolutionTest {
     void minDamage3() {
         assertThat(new Solution().minDamage(8, new int[] {40}, new int[] {59}), equalTo(320L));
     }
+
+    @Test
+    void equals() {
+        Solution.Pair pair1 = new Solution.Pair(1, 1);
+        Solution.Pair pair2 = new Solution.Pair(1, 1);
+        assertThat(pair1.equals(pair2), equalTo(true));
+        assertThat(pair1.hashCode(), equalTo(993));
+    }
 }
