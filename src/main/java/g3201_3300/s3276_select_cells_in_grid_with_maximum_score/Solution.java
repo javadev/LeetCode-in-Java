@@ -20,7 +20,8 @@ public class Solution {
         }
         Arrays.sort(arr, (a, b) -> b[0] - a[0]);
         int[] dp = new int[1 << n];
-        for (int i = 0; i < arr.length; ) {
+        int i = 0;
+        while (i < arr.length) {
             boolean[] seen = new boolean[n];
             seen[arr[i][1]] = true;
             int v = arr[i][0];
