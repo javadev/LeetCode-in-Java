@@ -1,6 +1,7 @@
 package g3201_3300.s3272_find_the_count_of_good_integers;
 
-// #Hard #2024_09_02_Time_167_ms_(100.00%)_Space_54.5_MB_(100.00%)
+// #Hard #Hash_Table #Math #Enumeration #Combinatorics
+// #2024_09_02_Time_167_ms_(100.00%)_Space_54.5_MB_(100.00%)
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +12,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class Solution {
-    private List<String> palindromes = new ArrayList<>();
+    private final List<String> palindromes = new ArrayList<>();
 
     private long factorial(int n) {
         long res = 1;
@@ -71,9 +72,7 @@ public class Solution {
 
     private List<String> allKPalindromes(int n, int k) {
         StringBuilder ans = new StringBuilder(n);
-        for (int i = 0; i < n; i++) {
-            ans.append('0');
-        }
+        ans.append("0".repeat(Math.max(0, n)));
         int[] rem = new int[n];
         rem[0] = 1;
         for (int i = 1; i < n; i++) {

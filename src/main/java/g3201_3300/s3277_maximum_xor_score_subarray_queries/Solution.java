@@ -1,30 +1,29 @@
 package g3201_3300.s3277_maximum_xor_score_subarray_queries;
 
-// #Hard #2024_09_02_Time_62_ms_(100.00%)_Space_90.5_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #2024_09_04_Time_29_ms_(98.87%)_Space_104.3_MB_(65.54%)
 
-@SuppressWarnings("java:S3012")
 public class Solution {
     public int[] maximumSubarrayXor(int[] nums, int[][] queries) {
         int n = nums.length;
-        int[][] t = new int[n][n];
-        for (int j = 0; j < n; j++) {
-            t[j][j] = nums[j];
+        int[][] dp = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            dp[i][i] = nums[i];
         }
-        for (int j = 1; j < n; j++) {
-            for (int i = 0; i + j < n; i++) {
-                t[i][i + j] = t[i][i + j - 1] ^ t[i + 1][i + j];
+        for (int i = n - 2; i >= 0; i--) {
+            for (int j = i + 1; j < n; j++) {
+                dp[i][j] = dp[i][j - 1] ^ dp[i + 1][j];
             }
         }
-        for (int j = 1; j < n; j++) {
-            for (int i = 0; i + j < n; i++) {
-                t[i][i + j] = Math.max(t[i][i + j], Math.max(t[i][i + j - 1], t[i + 1][i + j]));
+        for (int i = n - 2; i >= 0; i--) {
+            for (int j = i + 1; j < n; j++) {
+                dp[i][j] = Math.max(dp[i][j], Math.max(dp[i][j - 1], dp[i + 1][j]));
             }
         }
-        int[] ans = new int[queries.length];
-        for (int i = 0; i < queries.length; i++) {
-            int l = queries[i][0];
-            int r = queries[i][1];
-            ans[i] = t[l][r];
+        int q = queries.length;
+        int[] ans = new int[q];
+        int time = 0;
+        for (int[] query : queries) {
+            ans[time++] = dp[query[0]][query[1]];
         }
         return ans;
     }

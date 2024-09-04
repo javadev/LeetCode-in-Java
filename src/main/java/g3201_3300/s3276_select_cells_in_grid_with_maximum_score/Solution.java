@@ -1,8 +1,8 @@
 package g3201_3300.s3276_select_cells_in_grid_with_maximum_score;
 
-// #Hard #2024_09_02_Time_36_ms_(100.00%)_Space_48.5_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Matrix #Bit_Manipulation #Bitmask
+// #2024_09_04_Time_6_ms_(99.82%)_Space_44.1_MB_(91.67%)
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -10,41 +10,35 @@ public class Solution {
     public int maxScore(List<List<Integer>> grid) {
         int n = grid.size();
         int m = grid.get(0).size();
-        List<List<Integer>> list = new ArrayList<>();
-        for (int i = 0; i <= 100; i++) {
-            list.add(new ArrayList<>());
-        }
-        int max = 0;
+        int[][] arr = new int[n * m][2];
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                int num = grid.get(i).get(j);
-                list.get(num).add(i);
-                max = Math.max(grid.get(i).get(j), max);
+            List<Integer> l = grid.get(i);
+            for (int j = 0; j < l.size(); j++) {
+                arr[i * m + j][0] = l.get(j);
+                arr[i * m + j][1] = i;
             }
         }
-        int[][] dp = new int[max + 1][(1 << n) * 2 - 1];
-        for (int[] arr : dp) {
-            Arrays.fill(arr, -1);
-        }
-        return helper(max, 0, list, dp);
-    }
-
-    private int helper(int n, int mask, List<List<Integer>> list, int[][] dp) {
-        if (n == 0) {
-            return 0;
-        }
-        if (dp[n][mask] != -1) {
-            return dp[n][mask];
-        }
-        int take = Integer.MIN_VALUE;
-        for (int row : list.get(n)) {
-            if ((mask & (1 << row)) != 0) {
-                continue;
+        Arrays.sort(arr, (a, b) -> b[0] - a[0]);
+        int[] dp = new int[1 << n];
+        for (int i = 0; i < arr.length; ) {
+            boolean[] seen = new boolean[n];
+            seen[arr[i][1]] = true;
+            int v = arr[i][0];
+            for (i++; i < arr.length && arr[i][0] == v; i++) {
+                seen[arr[i][1]] = true;
             }
-            take = Math.max(n + helper(n - 1, mask | (1 << row), list, dp), take);
+            int[] next = Arrays.copyOf(dp, dp.length);
+            for (int j = 0; j < n; j++) {
+                if (seen[j]) {
+                    int and = ((1 << n) - 1) ^ (1 << j);
+                    for (int k = and; k > 0; k = (k - 1) & and) {
+                        next[k | (1 << j)] = Math.max(next[k | (1 << j)], dp[k] + v);
+                    }
+                    next[1 << j] = Math.max(next[1 << j], v);
+                }
+            }
+            dp = next;
         }
-        int notTake = helper(n - 1, mask, list, dp);
-        dp[n][mask] = Math.max(take, notTake);
-        return dp[n][mask];
+        return dp[dp.length - 1];
     }
 }

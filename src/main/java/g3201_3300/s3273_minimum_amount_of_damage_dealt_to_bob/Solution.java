@@ -1,49 +1,56 @@
 package g3201_3300.s3273_minimum_amount_of_damage_dealt_to_bob;
 
-// #Hard #2024_09_02_Time_221_ms_(100.00%)_Space_59.9_MB_(100.00%)
+// #Hard #Array #Sorting #Greedy #2024_09_04_Time_76_ms_(100.00%)_Space_59.5_MB_(61.02%)
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.Arrays;
 
-@SuppressWarnings("java:S1210")
 public class Solution {
-    int total;
-    int power;
+    public long minDamage(int pw, int[] damage, int[] health) {
+        long res = 0;
+        long sum = 0;
+        for (int e : damage) {
+            sum += e;
+        }
+        Pair[] pairs = new Pair[damage.length];
+        for (int e = 0; e < damage.length; e++) {
+            pairs[e] = new Pair(damage[e], (health[e] + pw - 1) / pw);
+        }
+        Arrays.sort(pairs);
+        for (Pair pr : pairs) {
+            res += pr.val * sum;
+            sum -= pr.key;
+        }
+        return res;
+    }
 
-    private class Pair implements Comparable<Pair> {
-        int health;
-        int damage;
+    private static class Pair implements Comparable<Pair> {
+        public int key;
+        public int val;
 
-        Pair(int health, int damage) {
-            this.health = health;
-            this.damage = damage;
+        Pair(int key, int val) {
+            this.key = key;
+            this.val = val;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            Pair p1 = (Pair) o;
+            return key == p1.key && val == p1.val;
+        }
+
+        @Override
+        public int hashCode() {
+            return key ^ val;
+        }
+
+        @Override
+        public String toString() {
+            return "[" + key + " - " + val + "]";
         }
 
         @Override
         public int compareTo(Pair p) {
-            int thisHits = (int) Math.ceil((double) this.health / power);
-            int otherHits = (int) Math.ceil((double) p.health / power);
-            double thisTotalDamage = this.damage * 1.0 / thisHits;
-            double otherTotalDamage = p.damage * 1.0 / otherHits;
-            return Double.compare(otherTotalDamage, thisTotalDamage);
+            return val * p.key - key * p.val;
         }
-    }
-
-    public long minDamage(int power, int[] damage, int[] health) {
-        this.power = power;
-        total = 0;
-        List<Pair> pairs = new ArrayList<>();
-        for (int i = 0; i < damage.length; i++) {
-            pairs.add(new Pair(health[i], damage[i]));
-        }
-        Collections.sort(pairs);
-        long totalDamage = 0;
-        int hitsRequired = 0;
-        for (Pair pair : pairs) {
-            hitsRequired += (int) Math.ceil((double) pair.health / power);
-            totalDamage += (long) hitsRequired * pair.damage;
-        }
-        return totalDamage;
     }
 }
