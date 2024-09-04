@@ -3,8 +3,8 @@ package g3201_3300.s3273_minimum_amount_of_damage_dealt_to_bob;
 // #Hard #Array #Sorting #Greedy #2024_09_04_Time_76_ms_(100.00%)_Space_59.5_MB_(61.02%)
 
 import java.util.Arrays;
-import java.util.Objects;
 
+@SuppressWarnings("java:S1210")
 public class Solution {
     public long minDamage(int pw, int[] damage, int[] health) {
         long res = 0;
@@ -31,23 +31,6 @@ public class Solution {
         Pair(int key, int val) {
             this.key = key;
             this.val = val;
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) {
-                return true;
-            }
-            if (o == null || getClass() != o.getClass()) {
-                return false;
-            }
-            Pair pair = (Pair) o;
-            return key == pair.key && val == pair.val;
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(key, val);
         }
 
         @Override
