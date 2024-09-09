@@ -68,7 +68,8 @@ public class Solution {
             int y = current[1];
             int moves = current[2];
             for (int[] move : KNIGHT_MOVES) {
-                int nx = x + move[0], ny = y + move[1];
+                int nx = x + move[0];
+                int ny = y + move[1];
                 if (nx == x2 && ny == y2) {
                     return moves + 1;
                 }
