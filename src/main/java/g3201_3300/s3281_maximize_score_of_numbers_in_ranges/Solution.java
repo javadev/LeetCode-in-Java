@@ -1,6 +1,7 @@
 package g3201_3300.s3281_maximize_score_of_numbers_in_ranges;
 
-// #Medium #2024_09_09_Time_47_ms_(100.00%)_Space_58.3_MB_(100.00%)
+// #Medium #Array #Sorting #Greedy #Binary_Search
+// #2024_09_09_Time_47_ms_(100.00%)_Space_58.3_MB_(100.00%)
 
 import java.util.Arrays;
 
