@@ -1,6 +1,6 @@
 package g3201_3300.s3283_maximum_number_of_moves_to_kill_all_pawns;
 
-// #Hard #Array #Math #Bit_Manipulation #Bitmask #Game_Theory #Breadth_First_Search
+// #Hard #Array #Math #Breadth_First_Search #Bit_Manipulation #Bitmask #Game_Theory
 // #2024_09_09_Time_250_ms_(98.43%)_Space_50.1_MB_(66.27%)
 
 import java.util.LinkedList;
