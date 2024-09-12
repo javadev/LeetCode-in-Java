@@ -2,7 +2,8 @@ package g0001_0100.s0002_add_two_numbers;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Math #Linked_List #Recursion
 // #Data_Structure_II_Day_10_Linked_List #Programming_Skills_II_Day_15
-// #Big_O_Time_O(max(N,M))_Space_O(max(N,M)) #2024_01_04_Time_1_ms_(100.00%)_Space_44.4_MB_(16.63%)
+// #Big_O_Time_O(max(N,M))_Space_O(max(N,M)) #AI_can_be_used_to_solve_the_task
+// #2024_01_04_Time_1_ms_(100.00%)_Space_44.4_MB_(16.63%)
 
 import com_github_leetcode.ListNode;
 
