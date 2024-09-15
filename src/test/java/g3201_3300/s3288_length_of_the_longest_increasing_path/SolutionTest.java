@@ -32,4 +32,16 @@ class SolutionTest {
                 new Solution().maxPathLength(new int[][] {{8, 8}, {7, 0}, {5, 6}, {9, 1}}, 0),
                 equalTo(2));
     }
+
+    @Test
+    void maxPathLength5() {
+        assertThat(
+                new Solution()
+                        .maxPathLength(
+                                new int[][] {
+                                    {1, 1}, {0, 1}, {5, 4}, {3, 3}, {2, 0}, {1, 4}, {6, 8}
+                                },
+                                6),
+                equalTo(4));
+    }
 }
