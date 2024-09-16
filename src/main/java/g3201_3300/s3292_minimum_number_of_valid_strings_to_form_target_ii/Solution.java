@@ -33,7 +33,9 @@ public class Solution {
                 pi[i1] = j1;
                 i1++;
             }
-            for (int i = 0, j = 0; i < n; i++) {
+            int i = 0;
+            int j = 0;
+            while (i < n) {
                 while (j > 0 && targetChars[i] != wordChars[j]) {
                     j = pi[j - 1];
                 }
@@ -46,6 +48,7 @@ public class Solution {
                         j = pi[j - 1];
                     }
                 }
+                i++;
             }
         }
         for (int i = 0; i < n; i++) {
