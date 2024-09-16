@@ -21,14 +21,17 @@ public class Solution {
             char[] wordChars = word.toCharArray();
             int m = wordChars.length;
             int[] pi = new int[m];
-            for (int i = 1, j = 0; i < m; i++) {
-                while (j > 0 && wordChars[i] != wordChars[j]) {
-                    j = pi[j - 1];
+            int i1 = 1;
+            int j1 = 0;
+            while (i1 < m) {
+                while (j1 > 0 && wordChars[i1] != wordChars[j1]) {
+                    j1 = pi[j1 - 1];
                 }
-                if (wordChars[i] == wordChars[j]) {
-                    j++;
+                if (wordChars[i1] == wordChars[j1]) {
+                    j1++;
                 }
-                pi[i] = j;
+                pi[i1] = j1;
+                i1++;
             }
             for (int i = 0, j = 0; i < n; i++) {
                 while (j > 0 && targetChars[i] != wordChars[j]) {
