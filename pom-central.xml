@@ -4,7 +4,7 @@
     <groupId>com.github.javadev</groupId>
     <artifactId>leetcode-in-java</artifactId>
     <packaging>jar</packaging>
-    <version>1.35</version>
+    <version>1.36</version>
     <name>leetcode-in-java</name>
     <description>Java-based LeetCode algorithm problem solutions, regularly updated</description>
     <url>https://github.com/javadev/LeetCode-in-Java</url>
@@ -61,7 +61,7 @@
                     <dependency>
                         <groupId>org.junit.jupiter</groupId>
                         <artifactId>junit-jupiter-engine</artifactId>
-                        <version>[5.10.3,)</version>
+                        <version>[5.11.0,)</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -149,13 +149,13 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>[5.10.3,)</version>
+            <version>[5.11.0,)</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>[5.10.3,)</version>
+            <version>[5.11.0,)</version>
             <scope>test</scope>
         </dependency>
         <dependency>
