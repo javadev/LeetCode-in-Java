@@ -1,6 +1,7 @@
 package g3201_3300.s3287_find_the_maximum_sequence_value_of_array;
 
-// #Hard #2024_09_15_Time_1140_ms_(100.00%)_Space_285.4_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Bit_Manipulation
+// #2024_09_15_Time_1140_ms_(100.00%)_Space_285.4_MB_(100.00%)
 
 import java.util.HashSet;
 import java.util.Set;

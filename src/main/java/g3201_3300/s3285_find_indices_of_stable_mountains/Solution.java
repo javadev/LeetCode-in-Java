@@ -1,6 +1,6 @@
 package g3201_3300.s3285_find_indices_of_stable_mountains;
 
-// #Easy #2024_09_15_Time_1_ms_(100.00%)_Space_44.5_MB_(100.00%)
+// #Easy #Array #2024_09_15_Time_1_ms_(100.00%)_Space_44.5_MB_(100.00%)
 
 import java.util.ArrayList;
 import java.util.List;
