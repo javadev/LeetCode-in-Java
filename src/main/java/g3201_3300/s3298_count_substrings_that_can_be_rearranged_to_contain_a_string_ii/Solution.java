@@ -13,7 +13,9 @@ public class Solution {
         }
         long ans = 0;
         int needed = temp.length;
-        for (int beg = 0, end = 0; end < n; end++) {
+        int beg = 0;
+        int end = 0;
+        while (end < n) {
             if (f[ar[end] - 97]-- > 0) {
                 needed--;
             }
@@ -25,6 +27,7 @@ public class Solution {
                     needed++;
                 }
             }
+            end++;
         }
         return ans;
     }
