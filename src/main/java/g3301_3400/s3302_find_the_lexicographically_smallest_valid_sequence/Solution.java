@@ -10,30 +10,28 @@ public class Solution {
         int m = word2.length();
         int[] revGreedyMatchInd = new int[m];
         Arrays.fill(revGreedyMatchInd, -1);
-        {
-            int i = n - 1;
-            int j = m - 1;
-            while (j >= 0 && i >= 0) {
-                if (word1.charAt(i) == word2.charAt(j)) {
-                    revGreedyMatchInd[j--] = i;
-                }
-                i--;
+        int i = n - 1;
+        int j = m - 1;
+        while (j >= 0 && i >= 0) {
+            if (word1.charAt(i) == word2.charAt(j)) {
+                revGreedyMatchInd[j--] = i;
             }
+            i--;
         }
         boolean canSkip = true;
-        int j = 0;
-        int i = 0;
-        while (i < n && j < m && m - j <= n - i) {
-            if (word1.charAt(i) == word2.charAt(j)) {
-                revGreedyMatchInd[j++] = i;
-            } else if (canSkip && (j == m - 1 || i < revGreedyMatchInd[j + 1])) {
-                revGreedyMatchInd[j++] = i;
+        int j1 = 0;
+        int i1 = 0;
+        while (i1 < n && j1 < m && m - j1 <= n - i1) {
+            if (word1.charAt(i1) == word2.charAt(j1)) {
+                revGreedyMatchInd[j1++] = i1;
+            } else if (canSkip && (j1 == m - 1 || i1 < revGreedyMatchInd[j1 + 1])) {
+                revGreedyMatchInd[j1++] = i1;
                 canSkip = false;
-            } else if (!canSkip && revGreedyMatchInd[j] == -1) {
+            } else if (!canSkip && revGreedyMatchInd[j1] == -1) {
                 break;
             }
-            i++;
+            i1++;
         }
-        return j == m ? revGreedyMatchInd : new int[0];
+        return j1 == m ? revGreedyMatchInd : new int[0];
     }
 }

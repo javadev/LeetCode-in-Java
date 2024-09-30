@@ -7,7 +7,6 @@ public class Solution {
         if (k == 1) {
             return 'a';
         }
-        int n = operations.length;
         long len = 1;
         long newK = -1;
         int operation = -1;

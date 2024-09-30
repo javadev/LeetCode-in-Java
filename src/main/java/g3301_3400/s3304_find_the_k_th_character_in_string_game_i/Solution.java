@@ -12,7 +12,7 @@ public class Solution {
             s = sb.toString();
             char[] cq = s.toCharArray();
             for (char c1 : cq) {
-                int ascii = (int) c1;
+                int ascii = c1;
                 c1 = (char) (ascii + 1);
                 sb.append(c1);
             }
