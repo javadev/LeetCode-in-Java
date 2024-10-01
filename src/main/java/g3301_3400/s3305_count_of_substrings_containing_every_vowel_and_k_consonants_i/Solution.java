@@ -6,7 +6,7 @@ public class Solution {
     public int countOfSubstrings(String word, int k) {
         char[] arr = word.toCharArray();
         int[] map = new int[26];
-        map['a' - 'a']++;
+        map[0]++;
         map['e' - 'a']++;
         map['i' - 'a']++;
         map['o' - 'a']++;
