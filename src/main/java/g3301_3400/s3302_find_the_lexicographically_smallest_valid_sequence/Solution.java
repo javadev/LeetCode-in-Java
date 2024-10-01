@@ -1,37 +1,49 @@
 package g3301_3400.s3302_find_the_lexicographically_smallest_valid_sequence;
 
-// #Medium #2024_09_30_Time_33_ms_(100.00%)_Space_79.5_MB_(50.00%)
-
-import java.util.Arrays;
+// #Medium #String #Dynamic_Programming #Greedy #Two_Pointers
+// #2024_10_01_Time_21_ms_(97.32%)_Space_74.3_MB_(74.55%)
 
 public class Solution {
     public int[] validSequence(String word1, String word2) {
-        int n = word1.length();
-        int m = word2.length();
-        int[] revGreedyMatchInd = new int[m];
-        Arrays.fill(revGreedyMatchInd, -1);
-        int i = n - 1;
-        int j = m - 1;
-        while (j >= 0 && i >= 0) {
-            if (word1.charAt(i) == word2.charAt(j)) {
-                revGreedyMatchInd[j--] = i;
+        char[] c1 = word1.toCharArray();
+        char[] c2 = word2.toCharArray();
+        int[] dp = new int[c1.length + 1];
+        int j = c2.length - 1;
+        for (int i = c1.length - 1; i >= 0; i--) {
+            if (j >= 0 && c1[i] == c2[j]) {
+                dp[i] = dp[i + 1] + 1;
+                j--;
+            } else {
+                dp[i] = dp[i + 1];
             }
-            i--;
         }
-        boolean canSkip = true;
-        int j1 = 0;
-        int i1 = 0;
-        while (i1 < n && j1 < m && m - j1 <= n - i1) {
-            if (word1.charAt(i1) == word2.charAt(j1)) {
-                revGreedyMatchInd[j1++] = i1;
-            } else if (canSkip && (j1 == m - 1 || i1 < revGreedyMatchInd[j1 + 1])) {
-                revGreedyMatchInd[j1++] = i1;
-                canSkip = false;
-            } else if (!canSkip && revGreedyMatchInd[j1] == -1) {
-                break;
+        int[] ans = new int[c2.length];
+        int i = 0;
+        j = 0;
+        while (i < c1.length && j < c2.length) {
+            if (c1[i] == c2[j]) {
+                ans[j] = i;
+                j++;
+            } else {
+                if (dp[i + 1] >= c2.length - 1 - j) {
+                    ans[j] = i;
+                    j++;
+                    i++;
+                    break;
+                }
             }
-            i1++;
+            i++;
         }
-        return j1 == m ? revGreedyMatchInd : new int[0];
+        if (j < c2.length && i == c1.length) {
+            return new int[0];
+        }
+        while (j < c2.length && i < c1.length) {
+            if (c2[j] == c1[i]) {
+                ans[j] = i;
+                j++;
+            }
+            i++;
+        }
+        return ans;
     }
 }

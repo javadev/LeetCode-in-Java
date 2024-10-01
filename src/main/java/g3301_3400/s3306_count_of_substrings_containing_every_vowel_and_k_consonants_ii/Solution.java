@@ -1,6 +1,7 @@
 package g3301_3400.s3306_count_of_substrings_containing_every_vowel_and_k_consonants_ii;
 
-// #Medium #2024_09_30_Time_341_ms_(100.00%)_Space_46.1_MB_(100.00%)
+// #Medium #String #Hash_Table #Sliding_Window
+// #2024_10_01_Time_340_ms_(44.09%)_Space_46.3_MB_(62.47%)
 
 import java.util.HashMap;
 import java.util.HashSet;

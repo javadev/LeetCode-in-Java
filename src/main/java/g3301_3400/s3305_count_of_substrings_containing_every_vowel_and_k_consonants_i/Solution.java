@@ -1,38 +1,60 @@
 package g3301_3400.s3305_count_of_substrings_containing_every_vowel_and_k_consonants_i;
 
-// #Medium #2024_09_30_Time_1998_ms_(100.00%)_Space_45.5_MB_(50.00%)
-
-import java.util.HashSet;
+// #Medium #String #Hash_Table #Sliding_Window #2024_10_01_Time_2_ms_(99.72%)_Space_42.2_MB_(98.48%)
 
 public class Solution {
     public int countOfSubstrings(String word, int k) {
-        int possibleSubstring = 0;
-        HashSet<Character> vowelContainer = new HashSet<>();
-        String vowel = "aeiou";
-        for (char ch : vowel.toCharArray()) {
-            vowelContainer.add(ch);
-        }
-        for (int i = 0; i < word.length(); i++) {
-            for (int j = i; j < word.length(); j++) {
-                if (checkValid(word, i, j, vowelContainer, k)) {
-                    possibleSubstring++;
+        char[] arr = word.toCharArray();
+        int[] map = new int[26];
+        map['a' - 'a']++;
+        map['e' - 'a']++;
+        map['i' - 'a']++;
+        map['o' - 'a']++;
+        map['u' - 'a']++;
+        int need = 5;
+        int ans = 0;
+        int consCnt = 0;
+        int j = 0;
+        for (int i = 0; i < arr.length; i++) {
+            while (j < arr.length && (need > 0 || consCnt < k)) {
+                if (isVowel(arr[j])) {
+                    map[arr[j] - 'a']--;
+                    if (map[arr[j] - 'a'] == 0) {
+                        need--;
+                    }
+                } else {
+                    consCnt++;
+                }
+                j++;
+            }
+            if (need == 0 && consCnt == k) {
+                ans++;
+                int m = j;
+                while (m < arr.length) {
+                    if (isVowel(arr[m])) {
+                        ans++;
+                    } else {
+                        break;
+                    }
+                    m++;
                 }
             }
-        }
-        return possibleSubstring;
-    }
-
-    private boolean checkValid(
-            String word, int start, int end, HashSet<Character> vowelContainer, int limit) {
-        HashSet<Character> duplicateCheck = new HashSet<>();
-        int consonants = 0;
-        for (int i = start; i <= end; i++) {
-            if (!vowelContainer.contains(word.charAt(i))) {
-                consonants++;
+            if (isVowel(arr[i])) {
+                map[arr[i] - 'a']++;
+                if (map[arr[i] - 'a'] == 1) {
+                    need++;
+                }
             } else {
-                duplicateCheck.add(word.charAt(i));
+                consCnt--;
             }
         }
-        return duplicateCheck.size() == 5 && consonants == limit;
+        return ans;
+    }
+
+    private boolean isVowel(char ch) {
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            return true;
+        }
+        return false;
     }
 }

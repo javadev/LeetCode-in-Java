@@ -1,49 +1,60 @@
 package g3301_3400.s3303_find_the_occurrence_of_first_almost_equal_substring;
 
-// #Hard #2024_09_30_Time_1198_ms_(100.00%)_Space_97.4_MB_(100.00%)
-
-import java.util.HashMap;
-import java.util.Map;
+// #Hard #String #String_Matching #2024_10_01_Time_39_ms_(100.00%)_Space_46.1_MB_(100.00%)
 
 public class Solution {
-    public int minStartingIndex(String s, String p) {
-        Map<Long, Integer> mp = new HashMap<>();
-        long hash = 0;
-        long base = 26;
-        long d = 1;
-        long hashP = 0;
-        long mod = 10000000000283L;
+    public int minStartingIndex(String s, String pattern) {
         int n = s.length();
-        int sz = p.length();
-        // Rolling hash for string s
-        for (int i = 0; i < n; i++) {
-            hash = (hash * base + s.charAt(i)) % mod;
-            if (i >= sz) {
-                hash = (mod + hash - d * s.charAt(i - sz) % mod) % mod;
-            } else {
-                d = d * base % mod;
-            }
-            if (i >= sz - 1 && !mp.containsKey(hash)) {
-                mp.put(hash, i - sz + 1);
-            }
+        int left = 0;
+        int right = 0;
+        int[] f1 = new int[26];
+        int[] f2 = new int[26];
+        for (char ch : pattern.toCharArray()) {
+            f2[ch - 'a']++;
         }
-        // Hash for the pattern p
-        for (int i = 0; i < sz; i++) {
-            hashP = (hashP * base + p.charAt(i)) % mod;
-        }
-        d = 1;
-        int ans = Integer.MAX_VALUE;
-        // Find the minimum index with almost equal string
-        for (int i = sz - 1; i >= 0; i--) {
-            long newhashP = (mod + hashP - d * p.charAt(i) % mod) % mod;
-            for (char a = 'a'; a <= 'z'; a++) {
-                long candidateHash = (newhashP + d * a % mod) % mod;
-                if (mp.containsKey(candidateHash)) {
-                    ans = Math.min(ans, mp.get(candidateHash));
+        while (right < n) {
+            char ch = s.charAt(right);
+            f1[ch - 'a']++;
+            if (right - left + 1 == pattern.length() + 1) {
+                f1[s.charAt(left) - 'a']--;
+                left += 1;
+            }
+            if (right - left + 1 == pattern.length()) {
+                if (check(f1, f2, left, right, s, pattern) == true) {
+                    return left;
                 }
             }
-            d = d * base % mod;
+            right += 1;
         }
-        return ans == Integer.MAX_VALUE ? -1 : ans;
+        return -1;
+    }
+
+    private boolean check(int[] f1, int[] f2, int left, int right, String s, String pattern) {
+        int cnt = 0;
+        for (int i = 0; i < 26; i++) {
+            if (f1[i] != f2[i]) {
+                if ((Math.abs(f1[i] - f2[i]) > 1) || (Math.abs(f1[i] - f2[i]) != 1 && cnt == 2)) {
+                    return false;
+                }
+                cnt += 1;
+            }
+        }
+        cnt = 0;
+        int start = 0;
+        int end = pattern.length() - 1;
+        while (start <= end) {
+            if (s.charAt(start + left) != pattern.charAt(start)) {
+                cnt += 1;
+            }
+            if (start + left != left + end && s.charAt(left + end) != pattern.charAt(end)) {
+                cnt += 1;
+            }
+            if (cnt >= 2) {
+                return false;
+            }
+            start++;
+            end--;
+        }
+        return true;
     }
 }

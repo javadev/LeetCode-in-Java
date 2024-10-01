@@ -1,30 +1,21 @@
 package g3201_3300.s3300_minimum_element_after_replacement_with_digit_sum;
 
-// #Easy #2024_09_30_Time_4_ms_(100.00%)_Space_43.3_MB_(100.00%)
+// #Easy #Array #Math #2024_10_01_Time_1_ms_(100.00%)_Space_42.9_MB_(75.97%)
 
-import java.util.Arrays;
-
-public class Solution {
+class Solution {
     public int minElement(int[] nums) {
-        int n = nums.length;
-        int[] arr = new int[n];
-
-        for (int i = 0; i < n; i++) {
-            int sum = sumOfDigits(nums[i]);
-            arr[i] = sum;
+        int min = Integer.MAX_VALUE;
+        for (int x : nums) {
+            min = Math.min(min, solve(x));
         }
-        Arrays.sort(arr);
-        return arr[0];
+        return min;
     }
 
-    private int sumOfDigits(int num) {
+    private int solve(int x) {
         int sum = 0;
-        if (num <= 9) {
-            return num;
-        }
-        while (num > 0) {
-            sum += num % 10;
-            num /= 10;
+        while (x != 0) {
+            sum += x % 10;
+            x /= 10;
         }
         return sum;
     }
