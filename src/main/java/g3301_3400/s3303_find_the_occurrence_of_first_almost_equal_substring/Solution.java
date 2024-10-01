@@ -19,17 +19,15 @@ public class Solution {
                 f1[s.charAt(left) - 'a']--;
                 left += 1;
             }
-            if (right - left + 1 == pattern.length()) {
-                if (check(f1, f2, left, right, s, pattern) == true) {
-                    return left;
-                }
+            if (right - left + 1 == pattern.length() && check(f1, f2, left, s, pattern)) {
+                return left;
             }
             right += 1;
         }
         return -1;
     }
 
-    private boolean check(int[] f1, int[] f2, int left, int right, String s, String pattern) {
+    private boolean check(int[] f1, int[] f2, int left, String s, String pattern) {
         int cnt = 0;
         for (int i = 0; i < 26; i++) {
             if (f1[i] != f2[i]) {
