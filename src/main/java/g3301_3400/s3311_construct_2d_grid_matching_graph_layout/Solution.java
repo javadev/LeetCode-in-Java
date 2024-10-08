@@ -57,6 +57,11 @@ public class Solution {
         if (row2 >= 0) {
             return getInts(n, st, row2, seen, als);
         }
+        return getInts(n, seen, st, als, cs);
+    }
+
+    private int[][] getInts(int n, boolean[] seen, int st, ArrayList<Integer>[] als, int[] cs) {
+        int[][] res;
         final ArrayList<Integer> al = new ArrayList<>();
         boolean f = true;
         seen[st] = true;
