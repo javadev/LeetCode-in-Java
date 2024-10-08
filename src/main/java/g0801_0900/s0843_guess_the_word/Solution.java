@@ -15,7 +15,7 @@ import java.util.List;
  * }
  */
 public class Solution {
-    interface Master {
+    public interface Master {
         int guess(String word);
     }
 

@@ -69,12 +69,12 @@ public class AllOne {
 
     /* Returns one of the keys with maximal value. */
     public String getMaxKey() {
-        return tail.pre == head ? "" : (String) tail.pre.keySet.iterator().next();
+        return tail.pre == head ? "" : tail.pre.keySet.iterator().next();
     }
 
     /* Returns one of the keys with Minimal value. */
     public String getMinKey() {
-        return head.next == tail ? "" : (String) head.next.keySet.iterator().next();
+        return head.next == tail ? "" : head.next.keySet.iterator().next();
     }
 
     // helper function to make change on given key according to offset

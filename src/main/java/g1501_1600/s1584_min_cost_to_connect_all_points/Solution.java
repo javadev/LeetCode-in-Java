@@ -32,12 +32,13 @@ public class Solution {
         return cost;
     }
 
-    public void constructMST(
+    private void constructMST(
             int[] parent, int[][] points, boolean[] mst, PriorityQueue<Pair> pq, int[] dist) {
         if (!containsFalse(mst)) {
             return;
         }
         Pair newPair = pq.poll();
+        assert newPair != null;
         int pointIndex = newPair.getV();
         mst[pointIndex] = true;
         for (int i = 0; i < parent.length; i++) {
