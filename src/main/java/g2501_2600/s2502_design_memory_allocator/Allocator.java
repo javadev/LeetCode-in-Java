@@ -4,7 +4,7 @@ package g2501_2600.s2502_design_memory_allocator;
 // #2023_03_19_Time_9_ms_(100.00%)_Space_43_MB_(66.82%)
 
 public class Allocator {
-    Node root;
+    private final Node root;
 
     public Allocator(int n) {
         root = new Node(0, n, -1);
@@ -36,7 +36,7 @@ public class Allocator {
         return collapse(root, mID);
     }
 
-    public int collapse(Node cur, int id) {
+    private int collapse(Node cur, int id) {
         // base case
         if (cur == null) {
             return 0;

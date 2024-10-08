@@ -4,6 +4,7 @@ package g2801_2900.s2858_minimum_edge_reversals_so_every_node_is_reachable;
 // #2023_12_19_Time_52_ms_(92.31%)_Space_119.5_MB_(75.38%)
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -22,9 +23,7 @@ public class Solution {
             nexts[v].add(new int[] {-1, u});
         }
         int[] res = new int[n];
-        for (int i = 0; i < n; i++) {
-            res[i] = -1;
-        }
+        Arrays.fill(res, -1);
         res[0] = dfs(nexts, 0, -1);
         Queue<Integer> queue = new LinkedList<>();
         queue.add(0);

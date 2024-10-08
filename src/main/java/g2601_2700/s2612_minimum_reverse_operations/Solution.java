@@ -4,14 +4,13 @@ package g2601_2700.s2612_minimum_reverse_operations;
 // #2023_08_30_Time_19_ms_(100.00%)_Space_59_MB_(78.00%)
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Solution {
     public int[] minReverseOperations(int n, int p, int[] banned, int k) {
         int[] out = new int[n];
-        for (int i = 0; i < n; i++) {
-            out[i] = -1;
-        }
+        Arrays.fill(out, -1);
         for (int node : banned) {
             out[node] = -2;
         }

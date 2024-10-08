@@ -5,9 +5,7 @@ package g3201_3300.s3210_find_the_encrypted_string;
 public class Solution {
     public String getEncryptedString(String s, int k) {
         int n = s.length();
-        k = k % n;
-        StringBuilder str = new StringBuilder(s.substring(k, n));
-        str.append(s.substring(0, k));
-        return str.toString();
+        int localK = k % n;
+        return s.substring(localK, n) + s.substring(0, localK);
     }
 }
