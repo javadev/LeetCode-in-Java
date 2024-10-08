@@ -55,27 +55,7 @@ public class Solution {
             }
         }
         if (row2 >= 0) {
-            res = new int[2][n / 2];
-            res[0][0] = st;
-            res[1][0] = row2;
-            seen[st] = seen[row2] = true;
-            for (int i = 1; i < res[0].length; ++i) {
-                for (int a : als[res[0][i - 1]]) {
-                    if (!seen[a]) {
-                        res[0][i] = a;
-                        seen[a] = true;
-                        break;
-                    }
-                }
-                for (int a : als[res[1][i - 1]]) {
-                    if (!seen[a]) {
-                        res[1][i] = a;
-                        seen[a] = true;
-                        break;
-                    }
-                }
-            }
-            return res;
+            return getInts(n, st, row2, seen, als);
         }
         final ArrayList<Integer> al = new ArrayList<>();
         boolean f = true;
@@ -107,6 +87,31 @@ public class Solution {
                         seen[a] = true;
                         break;
                     }
+                }
+            }
+        }
+        return res;
+    }
+
+    private int[][] getInts(int n, int st, int row2, boolean[] seen, ArrayList<Integer>[] als) {
+        int[][] res;
+        res = new int[2][n / 2];
+        res[0][0] = st;
+        res[1][0] = row2;
+        seen[st] = seen[row2] = true;
+        for (int i = 1; i < res[0].length; ++i) {
+            for (int a : als[res[0][i - 1]]) {
+                if (!seen[a]) {
+                    res[0][i] = a;
+                    seen[a] = true;
+                    break;
+                }
+            }
+            for (int a : als[res[1][i - 1]]) {
+                if (!seen[a]) {
+                    res[1][i] = a;
+                    seen[a] = true;
+                    break;
                 }
             }
         }

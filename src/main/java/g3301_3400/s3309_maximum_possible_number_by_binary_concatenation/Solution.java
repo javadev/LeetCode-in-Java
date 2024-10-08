@@ -23,9 +23,8 @@ public class Solution {
     private void solve(int[] nums, boolean[] visited, int pos, StringBuilder sb) {
         if (pos == nums.length) {
             String val = sb.toString();
-            if (result.length() == val.length() && result.compareTo(val) < 0) {
-                result = val;
-            } else if (val.length() > result.length()) {
+            if ((result.length() == val.length() && result.compareTo(val) < 0)
+                    || val.length() > result.length()) {
                 result = val;
             }
             return;

@@ -19,12 +19,10 @@ public class Solution {
         dfs(k, true);
         Arrays.fill(visited, false);
         for (int i = 0; i < n; i++) {
-            if (!suspicious[i]) {
-                if (dfs2(i)) {
-                    Arrays.fill(visited, false);
-                    dfs(k, false);
-                    break;
-                }
+            if (!suspicious[i] && dfs2(i)) {
+                Arrays.fill(visited, false);
+                dfs(k, false);
+                break;
             }
         }
         ArrayList<Integer> rst = new ArrayList<>();
@@ -64,17 +62,14 @@ public class Solution {
     }
 
     private void pack(int[][] edges, int n) {
-        int m = edges.length;
         int[] adj = new int[n];
         for (int[] edge : edges) {
             adj[edge[0]]++;
         }
-
         graph = new int[n][];
         for (int i = 0; i < n; i++) {
             graph[i] = new int[adj[i]];
         }
-
         for (int[] edge : edges) {
             graph[edge[0]][--adj[edge[0]]] = edge[1];
         }
