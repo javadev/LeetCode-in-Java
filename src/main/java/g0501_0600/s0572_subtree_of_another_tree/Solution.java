@@ -2,7 +2,7 @@ package g0501_0600.s0572_subtree_of_another_tree;
 
 // #Easy #Depth_First_Search #Tree #Binary_Tree #Hash_Function #String_Matching
 // #Algorithm_II_Day_7_Breadth_First_Search_Depth_First_Search
-// #2022_08_10_Time_1_ms_(100.00%)_Space_47.2_MB_(13.44%)
+// #2024_10_11_Time_2_ms_(97.06%)_Space_44.2_MB_(68.85%)
 
 import com_github_leetcode.TreeNode;
 
@@ -22,29 +22,29 @@ import com_github_leetcode.TreeNode;
  * }
  */
 public class Solution {
-    private boolean isSubtreeFound(TreeNode root, TreeNode subRoot) {
-        if (root == null && subRoot == null) {
+    public boolean isSubtree(TreeNode root, TreeNode subRoot) {
+        if (root == null) {
+            return false;
+        }
+        if (traverse(root, subRoot)) {
             return true;
         }
-        if (root == null || subRoot == null) {
-            return false;
-        }
-        if (root.val == subRoot.val) {
-            return isSubtreeFound(root.left, subRoot.left) && isSubtree(root.right, subRoot.right);
-        } else {
-            return false;
-        }
+        return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
     }
 
-    public boolean isSubtree(TreeNode root, TreeNode subRoot) {
+    private boolean traverse(TreeNode root, TreeNode subRoot) {
+        if (root == null && subRoot != null) {
+            return false;
+        }
+        if (root != null && subRoot == null) {
+            return false;
+        }
         if (root == null && subRoot == null) {
             return true;
         }
-        if (root == null || subRoot == null) {
+        if (root.val != subRoot.val) {
             return false;
         }
-        return isSubtreeFound(root, subRoot)
-                || isSubtree(root.left, subRoot)
-                || isSubtree(root.right, subRoot);
+        return traverse(root.left, subRoot.left) && traverse(root.right, subRoot.right);
     }
 }
