@@ -39,7 +39,7 @@ public class Solution {
         if (root != null && subRoot == null) {
             return false;
         }
-        if (root == null && subRoot == null) {
+        if (root == null) {
             return true;
         }
         if (root.val != subRoot.val) {
