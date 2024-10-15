@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeSet;
 
+@SuppressWarnings("java:S1210")
 public class Solution {
     private static class RC implements Comparable<RC> {
         int val;

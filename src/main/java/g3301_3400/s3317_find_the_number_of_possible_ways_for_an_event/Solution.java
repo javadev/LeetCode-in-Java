@@ -4,7 +4,7 @@ package g3301_3400.s3317_find_the_number_of_possible_ways_for_an_event;
 // #2024_10_15_Time_20_ms_(97.08%)_Space_41.6_MB_(97.66%)
 
 public class Solution {
-    static final int MOD = 1_000_000_007;
+    private static final int MOD = 1_000_000_007;
 
     public int numberOfWays(int n, int x, int y) {
         long[] fact = new long[x + 1];
@@ -13,7 +13,7 @@ public class Solution {
             fact[i] = fact[i - 1] * i % MOD;
         }
         long[] invFact = new long[x + 1];
-        invFact[x] = powMod(fact[x], MOD - 2);
+        invFact[x] = powMod(fact[x], MOD - 2L);
         for (int i = x - 1; i >= 0; i--) {
             invFact[i] = invFact[i + 1] * (i + 1) % MOD;
         }

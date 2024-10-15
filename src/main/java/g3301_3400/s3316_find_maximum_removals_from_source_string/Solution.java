@@ -11,7 +11,10 @@ public class Solution {
         int pn = pattern.length();
         int tn = targetIndices.length;
         int[] maxPat = new int[tn + 1];
-        for (int i = 0, di = 0, nextTI = targetIndices[0]; i < sn; i++) {
+        int i = 0;
+        int di = 0;
+        int nextTI = targetIndices[0];
+        while (i < sn) {
             char c = sChars[i];
             if (i == nextTI) {
                 int p = maxPat[di + 1] = maxPat[di];
@@ -32,6 +35,7 @@ public class Solution {
                     }
                 }
             }
+            i++;
         }
         while (maxPat[tn] < pn) {
             tn--;
