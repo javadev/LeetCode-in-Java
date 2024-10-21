@@ -7,7 +7,7 @@ public class Solution {
     private static final int[] SIEVE = new int[MAXI];
     private static boolean precompute = false;
 
-    private void compute() {
+    private static void compute() {
         if (precompute) {
             return;
         }

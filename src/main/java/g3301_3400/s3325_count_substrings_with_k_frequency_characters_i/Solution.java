@@ -3,6 +3,7 @@ package g3301_3400.s3325_count_substrings_with_k_frequency_characters_i;
 // #Medium #2024_10_21_Time_2009_ms_(100.00%)_Space_45.2_MB_(100.00%)
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.PriorityQueue;
 
 public class Solution {
@@ -13,8 +14,8 @@ public class Solution {
             char curr = s.charAt(right);
             map.put(curr, map.getOrDefault(curr, 0) + 1);
             PriorityQueue<Integer> queue = new PriorityQueue<>((a, b) -> b - a);
-            for (char ele : map.keySet()) {
-                queue.offer(map.get(ele));
+            for (Map.Entry<Character, Integer> ele : map.entrySet()) {
+                queue.offer(ele.getValue());
             }
             HashMap<Character, Integer> currMap = new HashMap<>(map);
             for (int left = 0; left <= right; left++) {
