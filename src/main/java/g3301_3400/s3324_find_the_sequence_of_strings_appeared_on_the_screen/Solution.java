@@ -1,6 +1,6 @@
 package g3301_3400.s3324_find_the_sequence_of_strings_appeared_on_the_screen;
 
-// #Medium #2024_10_21_Time_6_ms_(100.00%)_Space_55.6_MB_(100.00%)
+// #Medium #String #Simulation #2024_10_22_Time_6_ms_(92.04%)_Space_55.7_MB_(44.25%)
 
 import java.util.ArrayList;
 import java.util.List;

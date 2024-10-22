@@ -1,38 +1,23 @@
 package g3301_3400.s3325_count_substrings_with_k_frequency_characters_i;
 
-// #Medium #2024_10_21_Time_2009_ms_(100.00%)_Space_45.2_MB_(100.00%)
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.PriorityQueue;
+// #Medium #String #Hash_Table #Sliding_Window #2024_10_22_Time_1_ms_(100.00%)_Space_42_MB_(98.69%)
 
 public class Solution {
     public int numberOfSubstrings(String s, int k) {
-        int charCount = 0;
-        HashMap<Character, Integer> map = new HashMap<>();
-        for (int right = 0; right < s.length(); right++) {
-            char curr = s.charAt(right);
-            map.put(curr, map.getOrDefault(curr, 0) + 1);
-            PriorityQueue<Integer> queue = new PriorityQueue<>((a, b) -> b - a);
-            for (Map.Entry<Character, Integer> ele : map.entrySet()) {
-                queue.offer(ele.getValue());
-            }
-            HashMap<Character, Integer> currMap = new HashMap<>(map);
-            for (int left = 0; left <= right; left++) {
-                int maxEle = queue.peek();
-                if (maxEle < k) {
-                    break;
-                }
-                charCount += 1;
-                char leftChar = s.charAt(left);
-                int leftCharCount = currMap.get(leftChar);
-                currMap.put(leftChar, leftCharCount - 1);
-                queue.remove(leftCharCount);
-                if (leftCharCount > 1) {
-                    queue.offer(leftCharCount - 1);
-                }
+        int left = 0;
+        int result = 0;
+        int[] count = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            count[ch - 'a']++;
+
+            while (count[ch - 'a'] == k) {
+                result += s.length() - i;
+                char atLeft = s.charAt(left);
+                count[atLeft - 'a']--;
+                left++;
             }
         }
-        return charCount;
+        return result;
     }
 }

@@ -1,6 +1,6 @@
 package g3301_3400.s3326_minimum_division_operations_to_make_array_non_decreasing;
 
-// #Medium #2024_10_21_Time_19_ms_(100.00%)_Space_69.1_MB_(100.00%)
+// #Medium #Array #Math #Greedy #Number_Theory #2024_10_22_Time_20_ms_(97.34%)_Space_73.1_MB_(5.03%)
 
 public class Solution {
     private static final int MAXI = 1000001;
