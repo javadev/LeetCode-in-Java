@@ -26,7 +26,7 @@ public class Solution {
         r[x] = ++now;
     }
 
-    private void manacher() {
+    private void matcher() {
         c[0] = '~';
         c[1] = '#';
         for (int i = 1; i <= n; ++i) {
@@ -34,8 +34,12 @@ public class Solution {
             c[2 * i] = stringBuilder.charAt(i - 1);
         }
         for (int i = 1, mid = 0, r = 0; i <= 2 * n + 1; ++i) {
-            if (i <= r) p[i] = Math.min(p[(mid << 1) - i], r - i + 1);
-            while (c[i - p[i]] == c[i + p[i]]) ++p[i];
+            if (i <= r) {
+                p[i] = Math.min(p[(mid << 1) - i], r - i + 1);
+            }
+            while (c[i - p[i]] == c[i + p[i]]) {
+                ++p[i];
+            }
             if (p[i] + i > r) {
                 r = p[i] + i - 1;
                 mid = i;
@@ -57,7 +61,7 @@ public class Solution {
         dfs(0);
         c = new char[2 * n + 10];
         p = new int[2 * n + 10];
-        manacher();
+        matcher();
         boolean[] ans = new boolean[n];
         for (int i = 0; i < n; ++i) {
             int mid = (2 * r[i] - 2 * l[i] + 1) / 2 + 2 * l[i];
