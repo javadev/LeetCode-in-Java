@@ -35,16 +35,16 @@ public class Solution {
         }
         int j = 1;
         int mid = 0;
-        int r = 0;
+        int localR = 0;
         while (j <= 2 * n + 1) {
-            if (j <= r) {
-                p[j] = Math.min(p[(mid << 1) - j], r - j + 1);
+            if (j <= localR) {
+                p[j] = Math.min(p[(mid << 1) - j], localR - j + 1);
             }
             while (c[j - p[j]] == c[j + p[j]]) {
                 ++p[j];
             }
-            if (p[j] + j > r) {
-                r = p[j] + j - 1;
+            if (p[j] + j > localR) {
+                localR = p[j] + j - 1;
                 mid = j;
             }
             ++j;
