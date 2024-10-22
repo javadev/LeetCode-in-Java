@@ -33,17 +33,21 @@ public class Solution {
             c[2 * i + 1] = '#';
             c[2 * i] = stringBuilder.charAt(i - 1);
         }
-        for (int i = 1, mid = 0, r = 0; i <= 2 * n + 1; ++i) {
-            if (i <= r) {
-                p[i] = Math.min(p[(mid << 1) - i], r - i + 1);
+        int j = 1;
+        int mid = 0;
+        int r = 0;
+        while (j <= 2 * n + 1) {
+            if (j <= r) {
+                p[j] = Math.min(p[(mid << 1) - j], r - j + 1);
             }
-            while (c[i - p[i]] == c[i + p[i]]) {
-                ++p[i];
+            while (c[j - p[j]] == c[j + p[j]]) {
+                ++p[j];
             }
-            if (p[i] + i > r) {
-                r = p[i] + i - 1;
-                mid = i;
+            if (p[j] + j > r) {
+                r = p[j] + j - 1;
+                mid = j;
             }
+            ++j;
         }
     }
 
