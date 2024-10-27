@@ -24,21 +24,18 @@ public class Solution {
         }
         long max = 0;
         for (int i = 0; i < n; i++) {
-            long gcd =
-                    i == 0
-                            ? rToL[i + 1][0]
-                            : (i == n - 1 ? lToR[i - 1][0] : gcd(rToL[i + 1][0], lToR[i - 1][0]));
-            max =
-                    Math.max(
-                            max,
-                            gcd
-                                    * (i == 0
-                                            ? rToL[i + 1][1]
-                                            : i == n - 1
-                                                    ? lToR[i - 1][1]
-                                                    : lcm(rToL[i + 1][1], lToR[i - 1][1])));
+            long gcd = i == 0 ? rToL[i + 1][0] : getLong(i, n, lToR, rToL);
+            max = Math.max(max, gcd * (i == 0 ? rToL[i + 1][1] : getaLong(i, n, lToR, rToL)));
         }
         return Math.max(max, rToL[0][0] * rToL[0][1]);
+    }
+
+    private long getaLong(int i, int n, long[][] lToR, long[][] rToL) {
+        return i == n - 1 ? lToR[i - 1][1] : lcm(rToL[i + 1][1], lToR[i - 1][1]);
+    }
+
+    private long getLong(int i, int n, long[][] lToR, long[][] rToL) {
+        return i == n - 1 ? lToR[i - 1][0] : gcd(rToL[i + 1][0], lToR[i - 1][0]);
     }
 
     private long gcd(long a, long b) {
@@ -49,6 +46,6 @@ public class Solution {
     }
 
     private long lcm(long a, long b) {
-        return (a * b) / gcd(a, b);
+        return a * b / gcd(a, b);
     }
 }

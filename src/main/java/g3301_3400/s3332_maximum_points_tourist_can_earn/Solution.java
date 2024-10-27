@@ -24,7 +24,8 @@ public class Solution {
             }
             maxScore = Math.max(maxScore, score + f(day + 1, desCity, stayScore, travelScore));
         }
-        return dp[day][city] = maxScore;
+        dp[day][city] = maxScore;
+        return dp[day][city];
     }
 
     public int maxScore(int n, int k, int[][] stayScore, int[][] travelScore) {

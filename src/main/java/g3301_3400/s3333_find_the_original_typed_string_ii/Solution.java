@@ -32,7 +32,7 @@ public class Solution {
         long[][] dp = new long[m][k - m + 1];
         for (i = 0; i < k - m + 1; i++) {
             if (list.get(m - 1) + i + m > k) {
-                dp[m - 1][i] = list.get(m - 1) - (k - m - i);
+                dp[m - 1][i] = list.get(m - 1) - (long) (k - m - i);
             }
         }
         for (i = m - 2; i >= 0; i--) {
