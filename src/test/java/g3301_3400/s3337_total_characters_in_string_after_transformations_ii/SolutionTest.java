@@ -32,4 +32,30 @@ class SolutionTest {
                                         2, 2, 2, 2, 2, 2)),
                 equalTo(8));
     }
+
+    @Test
+    void lengthAfterTransformations3() {
+        assertThat(
+                new Solution()
+                        .lengthAfterTransformations(
+                                "sutnqlhkolxwjtrunkmaakgfyitzluklnrglpbnknbpdvxccpyupjzqldm",
+                                2826,
+                                List.of(
+                                        9, 1, 6, 3, 2, 7, 8, 10, 8, 3, 9, 5, 10, 8, 10, 2, 2, 9, 10,
+                                        1, 3, 5, 4, 4, 8, 10)),
+                equalTo(557232981));
+    }
+
+    @Test
+    void lengthAfterTransformations4() {
+        assertThat(
+                new Solution()
+                        .lengthAfterTransformations(
+                                "mppgvcssluzhipednraxbdfbyn",
+                                3719,
+                                List.of(
+                                        5, 3, 8, 1, 4, 2, 2, 4, 5, 2, 8, 5, 8, 2, 6, 10, 8, 1, 4, 1,
+                                        7, 4, 2, 4, 7, 5)),
+                equalTo(467065288));
+    }
 }
