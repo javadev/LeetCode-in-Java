@@ -1,73 +1,87 @@
 package g3301_3400.s3337_total_characters_in_string_after_transformations_ii;
 
-// #Hard #2024_10_27_Time_340_ms_(100.00%)_Space_45.1_MB_(100.00%)
+// #Hard #String #Hash_Table #Dynamic_Programming #Math #Counting
+// #2024_10_29_Time_67_ms_(99.31%)_Space_45.4_MB_(45.83%)
 
 import java.util.List;
 
 public class Solution {
-    private static final int MOD = 1_000_000_007;
-    private static final int ALPHABET_SIZE = 26;
+    public static final int MOD = 1000000007;
+    public static final long M2 = (long) MOD * MOD;
+    public static final long BIG = 8L * M2;
 
     public int lengthAfterTransformations(String s, int t, List<Integer> nums) {
-        // Initialize transformation matrix M
-        int[][] matrix = new int[ALPHABET_SIZE][ALPHABET_SIZE];
-        for (int i = 0; i < ALPHABET_SIZE; i++) {
-            int transforms = nums.get(i);
-            for (int j = 0; j < transforms; j++) {
-                matrix[i][(i + j + 1) % ALPHABET_SIZE]++;
+        int[][] m = new int[26][26];
+        for (int i = 0; i < 26; i++) {
+            for (int j = 1; j <= nums.get(i); j++) {
+                m[(i + j) % 26][i]++;
             }
         }
-        // Initialize count array based on string `s`
-        int[] count = new int[ALPHABET_SIZE];
-        for (char ch : s.toCharArray()) {
-            count[ch - 'a']++;
+        int[] v = new int[26];
+        for (char c : s.toCharArray()) {
+            v[c - 'a']++;
         }
-        // Apply matrix exponentiation to get M^t
-        int[][] matrixT = power(matrix, t);
-        // Calculate final character counts after t transformations
-        int[] finalCount = new int[ALPHABET_SIZE];
-        for (int i = 0; i < ALPHABET_SIZE; i++) {
-            for (int j = 0; j < ALPHABET_SIZE; j++) {
-                finalCount[j] =
-                        (int) ((finalCount[j] + ((long) matrixT[i][j] * count[i]) % MOD) % MOD);
-            }
+        v = pow(m, v, t);
+        long ans = 0;
+        for (int x : v) {
+            ans += x;
         }
-        // Calculate total length
-        int totalLength = 0;
-        for (int cnt : finalCount) {
-            totalLength = (totalLength + cnt) % MOD;
-        }
-        return totalLength;
+        return (int) (ans % MOD);
     }
 
-    // Matrix multiplication function
-    private int[][] multiply(int[][] a, int[][] b) {
-        int[][] matrixC = new int[ALPHABET_SIZE][ALPHABET_SIZE];
-        for (int i = 0; i < ALPHABET_SIZE; i++) {
-            for (int j = 0; j < ALPHABET_SIZE; j++) {
-                for (int k = 0; k < ALPHABET_SIZE; k++) {
-                    matrixC[i][j] =
-                            (int) ((matrixC[i][j] + ((long) a[i][k] * b[k][j]) % MOD) % MOD);
+    // A^e*v
+    private int[] pow(int[][] a, int[] v, long e) {
+        for (int i = 0; i < v.length; i++) {
+            if (v[i] >= MOD) {
+                v[i] %= MOD;
+            }
+        }
+        int[][] mul = a;
+        for (; e > 0; e >>>= 1) {
+            if ((e & 1) == 1) {
+                v = mul(mul, v);
+            }
+            mul = p2(mul);
+        }
+        return v;
+    }
+
+    // int matrix*int vector
+    private int[] mul(int[][] a, int[] v) {
+        int m = a.length;
+        int n = v.length;
+        int[] w = new int[m];
+        for (int i = 0; i < m; i++) {
+            long sum = 0;
+            for (int k = 0; k < n; k++) {
+                sum += (long) a[i][k] * v[k];
+                if (sum >= BIG) {
+                    sum -= BIG;
                 }
             }
+            w[i] = (int) (sum % MOD);
         }
-        return matrixC;
+        return w;
     }
 
-    // Matrix exponentiation function
-    private int[][] power(int[][] matrix, int exp) {
-        int[][] result = new int[ALPHABET_SIZE][ALPHABET_SIZE];
-        for (int i = 0; i < ALPHABET_SIZE; i++) {
-            // Identity matrix
-            result[i][i] = 1;
-        }
-        while (exp > 0) {
-            if (exp % 2 == 1) {
-                result = multiply(result, matrix);
+    // int matrix^2 (be careful about negative value)
+    private int[][] p2(int[][] a) {
+        int n = a.length;
+        int[][] c = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            long[] sum = new long[n];
+            for (int k = 0; k < n; k++) {
+                for (int j = 0; j < n; j++) {
+                    sum[j] += (long) a[i][k] * a[k][j];
+                    if (sum[j] >= BIG) {
+                        sum[j] -= BIG;
+                    }
+                }
             }
-            matrix = multiply(matrix, matrix);
-            exp /= 2;
+            for (int j = 0; j < n; j++) {
+                c[i][j] = (int) (sum[j] % MOD);
+            }
         }
-        return result;
+        return c;
     }
 }

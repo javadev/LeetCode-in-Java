@@ -1,6 +1,7 @@
 package g3301_3400.s3336_find_the_number_of_subsequences_with_equal_gcd;
 
-// #Hard #2024_10_27_Time_370_ms_(100.00%)_Space_125.3_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Math #Number_Theory
+// #2024_10_29_Time_408_ms_(50.28%)_Space_114.9_MB_(56.91%)
 
 import java.util.Arrays;
 
