@@ -12,7 +12,7 @@ class ZeroEvenOddTest {
     @Test
     void zeroEvenOdd() throws InterruptedException {
         int[] zeroEvenOddData = {0};
-        IntConsumer consumer = (data) -> zeroEvenOddData[0]++;
+        IntConsumer consumer = data -> zeroEvenOddData[0]++;
         int n = 5;
         ZeroEvenOdd zeroEvenOdd = new ZeroEvenOdd(n);
         Thread firstThread =
