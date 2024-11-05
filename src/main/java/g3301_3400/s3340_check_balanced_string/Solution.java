@@ -1,6 +1,6 @@
 package g3301_3400.s3340_check_balanced_string;
 
-// #Easy #2024_11_04_Time_0_ms_(100.00%)_Space_42.1_MB_(100.00%)
+// #Easy #String #2024_11_05_Time_1_ms_(99.60%)_Space_42_MB_(79.77%)
 
 public class Solution {
     public boolean isBalanced(String num) {

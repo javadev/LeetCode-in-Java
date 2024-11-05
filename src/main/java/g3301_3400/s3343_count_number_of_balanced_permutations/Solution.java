@@ -1,6 +1,7 @@
 package g3301_3400.s3343_count_number_of_balanced_permutations;
 
-// #Hard #2024_11_05_Time_61_ms_(97.56%)_Space_44.3_MB_(100.00%)
+// #Hard #String #Dynamic_Programming #Math #Combinatorics
+// #2024_11_05_Time_64_ms_(85.37%)_Space_44.8_MB_(95.12%)
 
 public class Solution {
     private static final int M = 1000000007;
