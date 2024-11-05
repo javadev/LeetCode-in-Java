@@ -57,7 +57,7 @@ public class Solution {
 
     private long modInverse(long a, int m) {
         long r = 1;
-        long p = m - 2;
+        long p = m - 2L;
         long b = a;
         while (p > 0) {
             if ((p & 1) == 1) {
