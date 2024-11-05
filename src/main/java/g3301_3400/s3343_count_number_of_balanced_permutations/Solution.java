@@ -67,21 +67,21 @@ public class Solution {
         return total;
     }
 
-    private static final List<long[]> ls = new ArrayList<>();
+    private static final List<long[]> LONGS = new ArrayList<>();
 
     static {
-        ls.add(new long[] {1});
+        LONGS.add(new long[] {1});
     }
 
     private static long choose(int a, int b) {
-        while (a >= ls.size()) {
-            long[] prev = ls.get(ls.size() - 1);
+        while (a >= LONGS.size()) {
+            long[] prev = LONGS.get(LONGS.size() - 1);
             long[] next = new long[prev.length + 1];
             for (int i = 0; i < prev.length; i++) {
                 next[i] = (next[i] + prev[i]) % M;
                 next[i + 1] = prev[i];
             }
-            ls.add(next);
+            LONGS.add(next);
         }
         if (a - b < b) {
             b = a - b;
@@ -89,6 +89,6 @@ public class Solution {
         if (b < 0) {
             return 0;
         }
-        return ls.get(a)[b];
+        return LONGS.get(a)[b];
     }
 }
