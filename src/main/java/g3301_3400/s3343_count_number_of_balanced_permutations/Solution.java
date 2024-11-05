@@ -1,94 +1,78 @@
 package g3301_3400.s3343_count_number_of_balanced_permutations;
 
-// #Hard #2024_11_04_Time_182_ms_(100.00%)_Space_45.6_MB_(100.00%)
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+// #Hard #2024_11_05_Time_61_ms_(97.56%)_Space_44.3_MB_(100.00%)
 
 public class Solution {
-    private static final long M = 1000000007;
-    private int[] freq;
+    private static final int M = 1000000007;
 
-    public int countBalancedPermutations(String num) {
-        int[] freq = new int[10];
-        int sum = 0;
-        for (int i = 0; i < num.length(); i++) {
-            int v = num.charAt(i) - '0';
-            freq[v]++;
-            sum += v;
+    public int countBalancedPermutations(String n) {
+        int l = n.length();
+        int ts = 0;
+        int[] c = new int[10];
+        for (char d : n.toCharArray()) {
+            c[d - '0']++;
+            ts += d - '0';
         }
-        if (sum % 2 == 1) {
+        if (ts % 2 != 0) {
             return 0;
         }
-        sum /= 2;
-        this.freq = freq;
-        int evenCount = num.length() / 2;
-        int oddCount = num.length() - evenCount;
-        return (int) countAll(9, evenCount, oddCount, sum, sum);
-    }
-
-    private final Map<Long, Long> cache = new HashMap<>();
-
-    private long countAll(
-            int idx, int evenLeftCount, int oddLeftCount, int evenLeftSum, int oddLeftSum) {
-        if (evenLeftCount < 0 || oddLeftCount < 0 || evenLeftSum < 0 || oddLeftSum < 0) {
-            return 0;
+        int hs = ts / 2;
+        int m = (l + 1) / 2;
+        long[] f = new long[l + 1];
+        f[0] = 1;
+        for (int i = 1; i <= l; i++) {
+            f[i] = f[i - 1] * i % M;
         }
-        if (idx == -1) {
-            if (evenLeftCount == 0 && oddLeftCount == 0) {
-                return 1;
-            }
-            return 0;
+        long[] invF = new long[l + 1];
+        invF[l] = modInverse(f[l], M);
+        for (int i = l - 1; i >= 0; i--) {
+            invF[i] = invF[i + 1] * (i + 1) % M;
         }
-        long key = (((long) evenLeftCount) << 48) + (((long) evenLeftSum) << 32) + idx;
-        if (cache.containsKey(key)) {
-            return cache.get(key);
-        }
-        long total = 0;
-        for (int i = 0; i <= freq[idx]; i++) {
-            int j = freq[idx] - i;
-            long c =
-                    countAll(
-                            idx - 1,
-                            evenLeftCount - i,
-                            oddLeftCount - j,
-                            evenLeftSum - i * idx,
-                            oddLeftSum - j * idx);
-            if (c == 0) {
+        long[][] dp = new long[m + 1][hs + 1];
+        dp[0][0] = 1;
+        for (int d = 0; d <= 9; d++) {
+            if (c[d] == 0) {
                 continue;
             }
-            c = (c * choose(evenLeftCount, i)) % M;
-            c = (c * choose(oddLeftCount, j)) % M;
-            total = (total + c) % M;
-        }
-        cache.put(key, total);
-        return total;
-    }
-
-    private static final List<long[]> LONGS = new ArrayList<>();
-
-    static {
-        LONGS.add(new long[] {1});
-    }
-
-    private static long choose(int a, int b) {
-        while (a >= LONGS.size()) {
-            long[] prev = LONGS.get(LONGS.size() - 1);
-            long[] next = new long[prev.length + 1];
-            for (int i = 0; i < prev.length; i++) {
-                next[i] = (next[i] + prev[i]) % M;
-                next[i + 1] = prev[i];
+            for (int k = m; k >= 0; k--) {
+                for (int s = hs; s >= 0; s--) {
+                    if (dp[k][s] == 0) {
+                        continue;
+                    }
+                    for (int t = 1; t <= c[d] && k + t <= m && s + d * t <= hs; t++) {
+                        dp[k + t][s + d * t] =
+                                (dp[k + t][s + d * t] + dp[k][s] * comb(c[d], t, f, invF, M)) % M;
+                    }
+                }
             }
-            LONGS.add(next);
         }
-        if (a - b < b) {
-            b = a - b;
+        long w = dp[m][hs];
+        long r = f[m] * f[l - m] % M;
+        for (int d = 0; d <= 9; d++) {
+            r = r * invF[c[d]] % M;
         }
-        if (b < 0) {
+        r = r * w % M;
+        return (int) r;
+    }
+
+    private long modInverse(long a, int m) {
+        long r = 1;
+        long p = m - 2;
+        long b = a;
+        while (p > 0) {
+            if ((p & 1) == 1) {
+                r = r * b % m;
+            }
+            b = b * b % m;
+            p >>= 1;
+        }
+        return r;
+    }
+
+    private long comb(int n, int k, long[] f, long[] invF, int m) {
+        if (k > n) {
             return 0;
         }
-        return LONGS.get(a)[b];
+        return f[n] * invF[k] % m * invF[n - k] % m;
     }
 }
