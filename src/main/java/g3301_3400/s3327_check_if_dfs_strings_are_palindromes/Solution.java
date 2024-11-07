@@ -1,6 +1,6 @@
 package g3301_3400.s3327_check_if_dfs_strings_are_palindromes;
 
-// #Hard #Array #String #Hash_Table #Tree #Hash_Function #Depth_First_Search
+// #Hard #Array #String #Hash_Table #Depth_First_Search #Tree #Hash_Function
 // #2024_10_22_Time_159_ms_(90.40%)_Space_93.9_MB_(80.80%)
 
 import java.util.ArrayList;
