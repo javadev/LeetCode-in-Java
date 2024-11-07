@@ -1,6 +1,6 @@
 package g3301_3400.s3310_remove_methods_from_project;
 
-// #Medium #Graph #Depth_First_Search #Breadth_First_Search
+// #Medium #Depth_First_Search #Breadth_First_Search #Graph
 // #2024_10_08_Time_41_ms_(99.76%)_Space_154.8_MB_(55.29%)
 
 import java.util.ArrayList;
