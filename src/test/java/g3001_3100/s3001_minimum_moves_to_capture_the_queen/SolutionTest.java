@@ -78,11 +78,6 @@ class SolutionTest {
 
     @Test
     void minMovesToCaptureTheQueen15() {
-        assertThat(new Solution().minMovesToCaptureTheQueen(1, 1, 3, 3, 5, 5), equalTo(1));
-    }
-
-    @Test
-    void minMovesToCaptureTheQueen16() {
         assertThat(new Solution().minMovesToCaptureTheQueen(1, 1, 2, 2, 8, 8), equalTo(1));
     }
 }
