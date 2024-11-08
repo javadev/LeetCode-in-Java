@@ -50,4 +50,39 @@ class SolutionTest {
     void minMovesToCaptureTheQueen9() {
         assertThat(new Solution().minMovesToCaptureTheQueen(1, 1, 2, 3, 5, 5), equalTo(2));
     }
+
+    @Test
+    void minMovesToCaptureTheQueen10() {
+        assertThat(new Solution().minMovesToCaptureTheQueen(1, 2, 3, 2, 4, 2), equalTo(2));
+    }
+
+    @Test
+    void minMovesToCaptureTheQueen11() {
+        assertThat(new Solution().minMovesToCaptureTheQueen(2, 3, 2, 4, 2, 6), equalTo(2));
+    }
+
+    @Test
+    void minMovesToCaptureTheQueen12() {
+        assertThat(new Solution().minMovesToCaptureTheQueen(1, 1, 3, 3, 4, 4), equalTo(1));
+    }
+
+    @Test
+    void minMovesToCaptureTheQueen13() {
+        assertThat(new Solution().minMovesToCaptureTheQueen(1, 2, 3, 2, 5, 2), equalTo(2));
+    }
+
+    @Test
+    void minMovesToCaptureTheQueen14() {
+        assertThat(new Solution().minMovesToCaptureTheQueen(2, 1, 2, 3, 2, 5), equalTo(2));
+    }
+
+    @Test
+    void minMovesToCaptureTheQueen15() {
+        assertThat(new Solution().minMovesToCaptureTheQueen(1, 1, 3, 3, 5, 5), equalTo(1));
+    }
+
+    @Test
+    void minMovesToCaptureTheQueen16() {
+        assertThat(new Solution().minMovesToCaptureTheQueen(1, 1, 2, 2, 8, 8), equalTo(1));
+    }
 }
