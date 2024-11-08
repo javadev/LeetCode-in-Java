@@ -5,7 +5,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-@SuppressWarnings("java:S5976")
+@SuppressWarnings({"java:S4144", "java:S5976"})
 class SolutionTest {
     @Test
     void findSecretWord() {
@@ -16,13 +16,6 @@ class SolutionTest {
 
     @Test
     void findSecretWord2() {
-        int[] numCalls = new int[] {0};
-        doFindSecretWord(numCalls);
-        assertThat(numCalls[0] > 0, equalTo(true));
-    }
-
-    @Test
-    void findSecretWord3() {
         int[] numCalls = new int[] {0};
         doFindSecretWord(numCalls);
         assertThat(numCalls[0] > 0, equalTo(true));
