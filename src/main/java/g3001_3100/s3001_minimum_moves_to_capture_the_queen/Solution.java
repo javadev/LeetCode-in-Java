@@ -1,21 +1,20 @@
 package g3001_3100.s3001_minimum_moves_to_capture_the_queen;
 
-// #Medium #Array #Enumeration #2024_02_25_Time_0_ms_(100.00%)_Space_40.7_MB_(78.00%)
+// #Medium #Array #Enumeration #2024_11_08_Time_0_ms_(100.00%)_Space_41_MB_(27.27%)
 
 public class Solution {
     public int minMovesToCaptureTheQueen(int a, int b, int c, int d, int e, int f) {
         if (a == e || b == f) {
-            if (a == c && (d > b && d < f || d > f && d < b)) {
+            if (a == e && a == c && ((d - b) * (d - f) < 0)) {
                 return 2;
             }
-            if (b == d && (c > a && c < e || c > e && c < a)) {
+            if (b == f && b == d && ((c - a) * (c - e) < 0)) {
                 return 2;
             }
             return 1;
-        } else if (Math.abs(c - e) == Math.abs(d - f)) {
-            if (Math.abs(a - c) == Math.abs(b - d)
-                    && Math.abs(e - a) == Math.abs(f - b)
-                    && (a > e && a < c || a > c && a < e)) {
+        }
+        if (Math.abs(c - e) == Math.abs(d - f)) {
+            if (Math.abs(c - a) == Math.abs(d - b) && ((b - f) * (b - d) < 0)) {
                 return 2;
             }
             return 1;
