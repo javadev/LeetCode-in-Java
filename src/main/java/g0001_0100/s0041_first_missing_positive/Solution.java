@@ -12,13 +12,11 @@ public class Solution {
                 nums[i] = temp;
             }
         }
-
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != i + 1) {
                 return i + 1;
             }
         }
-
         return nums.length + 1;
     }
 }
