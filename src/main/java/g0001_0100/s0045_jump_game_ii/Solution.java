@@ -4,7 +4,7 @@ package g0001_0100.s0045_jump_game_ii;
 // #Algorithm_II_Day_13_Dynamic_Programming #Dynamic_Programming_I_Day_4
 // #Big_O_Time_O(n)_Space_O(1) #2024_11_10_Time_0_ms_(100.00%)_Space_44.9_MB_(75.73%)
 
-class Solution {
+public class Solution {
     public int jump(int[] nums) {
         if (nums.length == 1) {
             return 0;
@@ -12,7 +12,7 @@ class Solution {
         return minJumps(nums, 0, 0);
     }
 
-    private static int minJumps(int[] nums, int currIndex, int jumpStatus) {
+    private int minJumps(int[] nums, int currIndex, int jumpStatus) {
         if (currIndex + nums[currIndex] >= nums.length - 1) {
             return jumpStatus + 1;
         }
