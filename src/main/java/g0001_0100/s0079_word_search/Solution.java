@@ -5,7 +5,7 @@ package g0001_0100.s0079_word_search;
 // #2024_11_11_Time_64_ms_(98.51%)_Space_41.6_MB_(51.63%)
 
 public class Solution {
-    public boolean exists = false;
+    private boolean exists = false;
 
     public boolean exist(char[][] board, String word) {
         for (int i = 0; i < board.length; i++) {
