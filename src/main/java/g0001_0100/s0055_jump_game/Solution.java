@@ -6,17 +6,15 @@ package g0001_0100.s0055_jump_game;
 
 public class Solution {
     public boolean canJump(int[] nums) {
-        if(nums.length == 1){
+        if (nums.length == 1) {
             return true;
         }
-
-        if(nums[0] == 0){
+        if (nums[0] == 0) {
             return false;
         }
-
-        int fin = nums.length-1; //3
-        for(int i=nums.length-2;i>=0;i--){
-            if((nums[i]+i) >= fin){
+        int fin = nums.length - 1; // 3
+        for (int i = nums.length - 2; i >= 0; i--) {
+            if ((nums[i] + i) >= fin) {
                 fin = i;
             }
         }

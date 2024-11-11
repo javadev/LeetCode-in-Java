@@ -5,18 +5,17 @@ package g0001_0100.s0049_group_anagrams;
 // #Big_O_Time_O(n*k_log_k)_Space_O(n) #2024_11_11_Time_6_ms_(97.61%)_Space_47.7_MB_(69.56%)
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
-        Map<String, List<String>> anagrams= new HashMap<>();
-        for (String word: strs) {
+        Map<String, List<String>> anagrams = new HashMap<>();
+        for (String word : strs) {
             char[] freq = new char[26];
             for (char c : word.toCharArray()) {
-                freq[c - 'a'] ++;
+                freq[c - 'a']++;
             }
             String keyString = new String(freq);
             if (!anagrams.containsKey(keyString)) {

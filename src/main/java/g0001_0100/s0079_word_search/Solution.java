@@ -6,6 +6,7 @@ package g0001_0100.s0079_word_search;
 
 public class Solution {
     public boolean exists = false;
+
     public boolean exist(char[][] board, String word) {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
@@ -14,7 +15,6 @@ public class Solution {
                 }
             }
         }
-
         return exists;
     }
 
@@ -23,31 +23,26 @@ public class Solution {
             exists = true;
             return;
         }
-
         char currentChar = board[i][j];
         char nextChar = word.charAt(wordIndex);
-
         if (i > 0 && board[i - 1][j] == nextChar) {
             // go up
             board[i][j] = '-';
             dfs(board, word, wordIndex + 1, i - 1, j);
             board[i][j] = currentChar;
         }
-
         if (j > 0 && board[i][j - 1] == nextChar) {
             // go left
             board[i][j] = '-';
             dfs(board, word, wordIndex + 1, i, j - 1);
             board[i][j] = currentChar;
         }
-
         if (i < board.length - 1 && board[i + 1][j] == nextChar) {
             // go down
             board[i][j] = '-';
             dfs(board, word, wordIndex + 1, i + 1, j);
             board[i][j] = currentChar;
         }
-
         if (j < board[0].length - 1 && board[i][j + 1] == nextChar) {
             // go right
             board[i][j] = '-';
