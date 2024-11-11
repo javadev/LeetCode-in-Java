@@ -14,8 +14,8 @@ class SolutionTest {
                 equalTo(
                         ArrayUtils.getLists(
                                 new String[][] {
-                                    {".Q..", "...Q", "Q...", "..Q."},
-                                    {"..Q.", "Q...", "...Q", ".Q.."}
+                                    {"..Q.", "Q...", "...Q", ".Q.."},
+                                    {".Q..", "...Q", "Q...", "..Q."}
                                 })));
     }
 

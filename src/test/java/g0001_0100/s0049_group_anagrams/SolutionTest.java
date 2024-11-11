@@ -12,9 +12,9 @@ class SolutionTest {
     @Test
     void groupAnagrams() {
         List<List<String>> expected = new ArrayList<>();
+        expected.add(Arrays.asList("tan", "nat"));
         expected.add(Arrays.asList("eat", "tea", "ate"));
         expected.add(Arrays.asList("bat"));
-        expected.add(Arrays.asList("tan", "nat"));
         List<List<String>> actual =
                 new Solution()
                         .groupAnagrams(new String[] {"eat", "tea", "tan", "ate", "nat", "bat"});
