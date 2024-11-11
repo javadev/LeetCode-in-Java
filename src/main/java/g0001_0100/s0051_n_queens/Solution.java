@@ -10,8 +10,12 @@ import java.util.List;
 public class Solution {
     public List<List<String>> solveNQueens(int n) {
         char[][] board = new char[n][n];
-        for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) board[i][j] = '.';
-        List<List<String>> res = new ArrayList<List<String>>();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                board[i][j] = '.';
+            }
+        }
+        List<List<String>> res = new ArrayList<>();
         int[] leftRow = new int[n];
         int[] upperDiagonal = new int[2 * n - 1];
         int[] lowerDiagonal = new int[2 * n - 1];
@@ -30,7 +34,6 @@ public class Solution {
             res.add(construct(board));
             return;
         }
-
         for (int row = 0; row < board.length; row++) {
             if (leftRow[row] == 0
                     && lowerDiagonal[row + col] == 0
