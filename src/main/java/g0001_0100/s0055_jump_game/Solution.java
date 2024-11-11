@@ -12,7 +12,7 @@ public class Solution {
         if (nums[0] == 0) {
             return false;
         }
-        int fin = nums.length - 1; // 3
+        int fin = nums.length - 1;
         for (int i = nums.length - 2; i >= 0; i--) {
             if ((nums[i] + i) >= fin) {
                 fin = i;
