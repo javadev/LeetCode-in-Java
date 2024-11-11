@@ -4,7 +4,6 @@ package g0001_0100.s0051_n_queens;
 // #2024_11_11_Time_1_ms_(99.77%)_Space_44.8_MB_(61.16%)
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Solution {
@@ -52,7 +51,7 @@ public class Solution {
     }
 
     List<String> construct(char[][] board) {
-        List<String> res = new LinkedList<>();
+        List<String> res = new ArrayList<>();
         for (char[] chars : board) {
             String s = new String(chars);
             res.add(s);
