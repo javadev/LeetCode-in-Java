@@ -1,50 +1,62 @@
 package g0001_0100.s0051_n_queens;
 
 // #Hard #Top_100_Liked_Questions #Array #Backtracking #Big_O_Time_O(N!)_Space_O(N)
-// #2023_08_11_Time_1_ms_(100.00%)_Space_43.6_MB_(97.17%)
+// #2024_11_11_Time_1_ms_(99.77%)_Space_44.8_MB_(61.16%)
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Solution {
     public List<List<String>> solveNQueens(int n) {
-        boolean[] pos = new boolean[n + 2 * n - 1 + 2 * n - 1];
-        int[] pos2 = new int[n];
-        List<List<String>> ans = new ArrayList<>();
-        helper(n, 0, pos, pos2, ans);
-        return ans;
+        char[][] board = new char[n][n];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                board[i][j] = '.';
+            }
+        }
+        List<List<String>> res = new ArrayList<>();
+        int[] leftRow = new int[n];
+        int[] upperDiagonal = new int[2 * n - 1];
+        int[] lowerDiagonal = new int[2 * n - 1];
+        solve(0, board, res, leftRow, lowerDiagonal, upperDiagonal);
+        return res;
     }
 
-    private void helper(int n, int row, boolean[] pos, int[] pos2, List<List<String>> ans) {
-        if (row == n) {
-            construct(n, pos2, ans);
+    void solve(
+            int col,
+            char[][] board,
+            List<List<String>> res,
+            int[] leftRow,
+            int[] lowerDiagonal,
+            int[] upperDiagonal) {
+        if (col == board.length) {
+            res.add(construct(board));
             return;
         }
-        for (int i = 0; i < n; i++) {
-            int index = n + 2 * n - 1 + n - 1 + i - row;
-            if (pos[i] || pos[n + i + row] || pos[index]) {
-                continue;
+        for (int row = 0; row < board.length; row++) {
+            if (leftRow[row] == 0
+                    && lowerDiagonal[row + col] == 0
+                    && upperDiagonal[board.length - 1 + col - row] == 0) {
+                board[row][col] = 'Q';
+                leftRow[row] = 1;
+                lowerDiagonal[row + col] = 1;
+                upperDiagonal[board.length - 1 + col - row] = 1;
+                solve(col + 1, board, res, leftRow, lowerDiagonal, upperDiagonal);
+                board[row][col] = '.';
+                leftRow[row] = 0;
+                lowerDiagonal[row + col] = 0;
+                upperDiagonal[board.length - 1 + col - row] = 0;
             }
-            pos[i] = true;
-            pos[n + i + row] = true;
-            pos[index] = true;
-            pos2[row] = i;
-            helper(n, row + 1, pos, pos2, ans);
-            pos[i] = false;
-            pos[n + i + row] = false;
-            pos[index] = false;
         }
     }
 
-    private void construct(int n, int[] pos, List<List<String>> ans) {
-        List<String> sol = new ArrayList<>();
-        for (int r = 0; r < n; r++) {
-            char[] queenRow = new char[n];
-            Arrays.fill(queenRow, '.');
-            queenRow[pos[r]] = 'Q';
-            sol.add(new String(queenRow));
+    List<String> construct(char[][] board) {
+        List<String> res = new LinkedList<>();
+        for (char[] chars : board) {
+            String s = new String(chars);
+            res.add(s);
         }
-        ans.add(sol);
+        return res;
     }
 }
