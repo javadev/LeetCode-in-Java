@@ -25,7 +25,8 @@ public class Solution {
         }
         int res = 0;
         for (int i = 0; i < n; i++) {
-            int left = Math.max(0, i - k), right = Math.min(n - 1, i + k);
+            int left = Math.max(0, i - k);
+            int right = Math.min(n - 1, i + k);
             int tot = pref[right];
             if (left > 0) {
                 tot -= pref[left - 1];
