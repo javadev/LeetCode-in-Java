@@ -25,14 +25,14 @@ public class Solution {
                 i0 = i;
                 break;
             }
-            leftT[i + 1] = leftT[i] / gcd(leftT[i], s[i] - '0');
+            leftT[i + 1] = leftT[i] / gcd(leftT[i], (long) s[i] - '0');
         }
         if (leftT[n] == 1) {
             return num;
         }
         for (int i = i0; i >= 0; i--) {
             while (++s[i] <= '9') {
-                long tt = leftT[i] / gcd(leftT[i], s[i] - '0');
+                long tt = leftT[i] / gcd(leftT[i], (long) s[i] - '0');
                 for (int j = n - 1; j > i; j--) {
                     if (tt == 1) {
                         s[j] = '1';
