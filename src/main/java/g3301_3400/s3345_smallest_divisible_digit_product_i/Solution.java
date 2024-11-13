@@ -1,23 +1,27 @@
 package g3301_3400.s3345_smallest_divisible_digit_product_i;
 
-// #Easy #2024_11_12_Time_1_ms_(59.15%)_Space_40.5_MB_(98.74%)
+// #Easy #Math #Enumeration #2024_11_13_Time_0_ms_(100.00%)_Space_41.2_MB_(29.77%)
 
 public class Solution {
     public int smallestNumber(int n, int t) {
-        for (int i = n; i < 101; i++) {
-            if (digProduct(i) % t == 0) {
-                return i;
+        int num = -1;
+        int check = n;
+        while (num == -1) {
+            int product = findProduct(check);
+            if (product % t == 0) {
+                num = check;
             }
+            check += 1;
         }
-        return -1;
+        return num;
     }
 
-    private int digProduct(int n) {
-        int pro = 1;
-        while (n > 0) {
-            pro *= n % 10;
-            n /= 10;
+    private int findProduct(int check) {
+        int res = 1;
+        while (check > 0) {
+            res *= check % 10;
+            check = check / 10;
         }
-        return pro;
+        return res;
     }
 }
