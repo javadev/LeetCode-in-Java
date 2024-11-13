@@ -20,4 +20,14 @@ class SolutionTest {
     void smallestNumber3() {
         assertThat(new Solution().smallestNumber("11111", 26L), equalTo("-1"));
     }
+
+    @Test
+    void smallestNumber4() {
+        assertThat(new Solution().smallestNumber("10", 320L), equalTo("588"));
+    }
+
+    @Test
+    void smallestNumber5() {
+        assertThat(new Solution().smallestNumber("19", 2L), equalTo("21"));
+    }
 }
