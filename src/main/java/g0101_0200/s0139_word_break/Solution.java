@@ -24,11 +24,7 @@ public class Solution {
         }
         for (String word : wordDict) {
             int len = word.length();
-            if (i + len > s.length()) {
-                continue;
-            }
-            String subStr = s.substring(i, i + len);
-            if (!subStr.equals(word)) {
+            if (i + len > s.length() || !s.substring(i, i + len).equals(word)) {
                 continue;
             }
             if (dp(s, i + len, wordDict)) {
