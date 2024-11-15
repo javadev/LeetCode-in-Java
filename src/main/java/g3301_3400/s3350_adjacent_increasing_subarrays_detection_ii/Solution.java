@@ -13,7 +13,8 @@ public class Solution {
         }
         int ans = 1;
         int previousLen = Integer.MAX_VALUE;
-        for (int i = 0; i < n; ) {
+        int i = 0;
+        while (i < n) {
             int j = i + 1;
             while (j < n && a[j - 1] < a[j]) {
                 ++j;
