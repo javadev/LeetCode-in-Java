@@ -5,30 +5,33 @@ package g0101_0200.s0139_word_break;
 // #Dynamic_Programming_I_Day_9 #Udemy_Dynamic_Programming #Big_O_Time_O(M+max*N)_Space_O(M+N+max)
 // #2024_11_15_Time_1_ms_(99.42%)_Space_42.1_MB_(80.42%)
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class Solution {
-    Boolean[] memo;
+    private Boolean[] memo;
+
     public boolean wordBreak(String s, List<String> wordDict) {
         memo = new Boolean[s.length() + 1];
         return dp(s, 0, wordDict);
     }
 
-    public boolean dp(String s, int i, List<String> wordDict){
-        if(i == s.length()) return true;
-        if(memo[i] != null) return memo[i];
-        for(String word: wordDict){
+    public boolean dp(String s, int i, List<String> wordDict) {
+        if (i == s.length()) {
+            return true;
+        }
+        if (memo[i] != null) {
+            return memo[i];
+        }
+        for (String word : wordDict) {
             int len = word.length();
-            if(i + len > s.length()){
+            if (i + len > s.length()) {
                 continue;
             }
             String subStr = s.substring(i, i + len);
-            if(!subStr.equals(word)){
+            if (!subStr.equals(word)) {
                 continue;
             }
-            if(dp(s, i + len, wordDict)){
+            if (dp(s, i + len, wordDict)) {
                 memo[i] = true;
                 return true;
             }
