@@ -3,104 +3,67 @@ package g0201_0300.s0208_implement_trie_prefix_tree;
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Hash_Table #Design #Trie
 // #Level_2_Day_16_Design #Udemy_Trie_and_Heap
 // #Big_O_Time_O(word.length())_or_O(prefix.length())_Space_O(N)
-// #2024_11_15_Time_30_ms_(99.78%)_Space_55.1_MB_(72.51%)
-
-import java.util.Arrays;
+// #2024_11_15_Time_32_ms_(95.05%)_Space_54.9_MB_(91.16%)
 
 @SuppressWarnings("java:S1104")
 public class Trie {
-    private boolean ans = false;
-    private final TrieNode[] trees = new TrieNode[26];
+    private final TrieNode root;
+    private boolean startWith;
 
-    TrieNode mapWordToTree(TrieNode t, String word, int i) {
-        char m = word.charAt(i);
-        boolean found = false;
-        TrieNode a = t.nexts[m - 'a'];
-        if (a != null) {
-            if (i != word.length() - 1) {
-                mapWordToTree(a, word, i + 1);
-            } else {
-                a.end = true;
-            }
-            found = true;
+    private static class TrieNode {
+        // Initialize your data structure here.
+        public TrieNode[] children;
+        public boolean isWord;
+
+        public TrieNode() {
+            children = new TrieNode[26];
         }
-        if (!found) {
-            TrieNode prev = t;
-            for (int j = i; j < word.length(); j++) {
-                TrieNode temp = new TrieNode(word.charAt(j));
-                prev.nexts[word.charAt(j) - 'a'] = temp;
-                prev = temp;
-            }
-            prev.end = true;
-        }
-        return t;
     }
 
+    public Trie() {
+        root = new TrieNode();
+    }
+
+    // Inserts a word into the trie.
     public void insert(String word) {
-        char a = word.charAt(0);
-        if (trees[a - 'a'] == null) {
-            TrieNode t = new TrieNode(a);
-            trees[a - 'a'] = t;
-        }
-        if (1 == word.length()) {
-            trees[a - 'a'].end = true;
+        insert(word, root, 0);
+    }
+
+    private void insert(String word, TrieNode root, int idx) {
+        if (idx == word.length()) {
+            root.isWord = true;
             return;
         }
-        trees[a - 'a'] = mapWordToTree(trees[a - 'a'], word, 1);
-    }
-
-    public boolean searchWordInTree(TrieNode t, String word, int i) {
-        char a = word.charAt(i);
-        TrieNode m = t.nexts[a - 'a'];
-        if (m != null) {
-            if (i == word.length() - 1) {
-                ans = true;
-                return m.end;
-            }
-            return searchWordInTree(m, word, i + 1);
+        int index = word.charAt(idx) - 'a';
+        if (root.children[index] == null) {
+            root.children[index] = new TrieNode();
         }
-        return false;
+        insert(word, root.children[index], idx + 1);
     }
 
+    // Returns if the word is in the trie.
     public boolean search(String word) {
-        char a = word.charAt(0);
-        if (trees[a - 'a'] == null) {
-            return false;
-        } else {
-            if (1 == word.length()) {
-                return trees[a - 'a'].end;
-            }
-            return searchWordInTree(trees[a - 'a'], word, 1);
-        }
+        return search(word, root, 0);
     }
 
+    private boolean search(String word, TrieNode root, int idx) {
+        if (idx == word.length()) {
+            startWith = true;
+            return root.isWord;
+        }
+        int index = word.charAt(idx) - 'a';
+        if (root.children[index] == null) {
+            startWith = false;
+            return false;
+        }
+        return search(word, root.children[index], idx + 1);
+    }
+
+    // Returns if there is any word in the trie
+    // that starts with the given prefix.
     public boolean startsWith(String prefix) {
-        char a = prefix.charAt(0);
-        ans = false;
-        if (trees[a - 'a'] == null) {
-            return false;
-        } else {
-            if (1 == prefix.length()) {
-                return true;
-            }
-            searchWordInTree(trees[a - 'a'], prefix, 1);
-        }
-        return ans;
-    }
-
-    static class TrieNode {
-        char val;
-        boolean end = false;
-        TrieNode[] nexts = new TrieNode[26];
-
-        TrieNode(char val) {
-            this.val = val;
-        }
-
-        @Override
-        public String toString() {
-            return val + " " + Arrays.toString(nexts) + " " + end;
-        }
+        search(prefix);
+        return startWith;
     }
 }
 
