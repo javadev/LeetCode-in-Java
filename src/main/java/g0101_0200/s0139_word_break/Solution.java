@@ -3,43 +3,37 @@ package g0101_0200.s0139_word_break;
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #String #Hash_Table
 // #Dynamic_Programming #Trie #Memoization #Algorithm_II_Day_15_Dynamic_Programming
 // #Dynamic_Programming_I_Day_9 #Udemy_Dynamic_Programming #Big_O_Time_O(M+max*N)_Space_O(M+N+max)
-// #2022_06_24_Time_2_ms_(97.08%)_Space_42.1_MB_(90.92%)
+// #2024_11_15_Time_1_ms_(99.42%)_Space_42.1_MB_(80.42%)
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 public class Solution {
+    Boolean[] memo;
     public boolean wordBreak(String s, List<String> wordDict) {
-        Set<String> set = new HashSet<>();
-        int max = 0;
-        boolean[] flag = new boolean[s.length() + 1];
-        for (String st : wordDict) {
-            set.add(st);
-            if (max < st.length()) {
-                max = st.length();
-            }
-        }
-        for (int i = 1; i <= max; i++) {
-            if (dfs(s, 0, i, max, set, flag)) {
-                return true;
-            }
-        }
-        return false;
+        memo = new Boolean[s.length() + 1];
+        return dp(s, 0, wordDict);
     }
 
-    private boolean dfs(String s, int start, int end, int max, Set<String> set, boolean[] flag) {
-        if (!flag[end] && set.contains(s.substring(start, end))) {
-            flag[end] = true;
-            if (end == s.length()) {
+    public boolean dp(String s, int i, List<String> wordDict){
+        if(i == s.length()) return true;
+        if(memo[i] != null) return memo[i];
+        for(String word: wordDict){
+            int len = word.length();
+            if(i + len > s.length()){
+                continue;
+            }
+            String subStr = s.substring(i, i + len);
+            if(!subStr.equals(word)){
+                continue;
+            }
+            if(dp(s, i + len, wordDict)){
+                memo[i] = true;
                 return true;
             }
-            for (int i = 1; i <= max; i++) {
-                if (end + i <= s.length() && dfs(s, end, end + i, max, set, flag)) {
-                    return true;
-                }
-            }
         }
+        memo[i] = false;
         return false;
     }
 }
