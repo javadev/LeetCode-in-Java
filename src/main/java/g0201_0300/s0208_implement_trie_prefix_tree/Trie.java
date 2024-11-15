@@ -11,6 +11,7 @@ import java.util.Arrays;
 public class Trie {
     private boolean ans = false;
     private final TrieNode[] trees = new TrieNode[26];
+
     public Trie() {}
 
     TrieNode mapWordToTree(TrieNode t, String word, int i) {
