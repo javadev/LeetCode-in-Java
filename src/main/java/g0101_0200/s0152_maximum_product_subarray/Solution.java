@@ -6,7 +6,7 @@ package g0101_0200.s0152_maximum_product_subarray;
 
 public class Solution {
     public int maxProduct(int[] nums) {
-        int m = Integer.MIN_VALUE;
+        int overAllMaxProd = Integer.MIN_VALUE;
         int n = nums.length;
         int start = 1;
         int end = 1;
@@ -19,8 +19,8 @@ public class Solution {
             }
             start = start * nums[i];
             end = end * nums[n - i - 1];
-            m = Math.max(m, Math.max(start, end));
+            overAllMaxProd = Math.max(overAllMaxProd, Math.max(start, end));
         }
-        return m;
+        return overAllMaxProd;
     }
 }
