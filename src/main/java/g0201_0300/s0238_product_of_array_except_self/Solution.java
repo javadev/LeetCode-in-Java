@@ -5,7 +5,7 @@ package g0201_0300.s0238_product_of_array_except_self;
 
 public class Solution {
     public int[] productExceptSelf(int[] nums) {
-        int res[] = new int[nums.length];
+        int[] res = new int[nums.length];
         int prefixProduct = 1;
         for (int i = 0; i < nums.length; i++) {
             res[i] = prefixProduct;
