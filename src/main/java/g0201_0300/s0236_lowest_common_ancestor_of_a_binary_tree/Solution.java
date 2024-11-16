@@ -2,7 +2,7 @@ package g0201_0300.s0236_lowest_common_ancestor_of_a_binary_tree;
 
 // #Medium #Top_100_Liked_Questions #Depth_First_Search #Tree #Binary_Tree
 // #Data_Structure_II_Day_18_Tree #Udemy_Tree_Stack_Queue #Big_O_Time_O(n)_Space_O(n)
-// #2024_11_16_Time_6_ms_(100.00%)_Space_44.8_MB_(36.66%)
+// #2024_11_16_Time_6_ms_(100.00%)_Space_44_MB_(98.99%)
 
 import com_github_leetcode.TreeNode;
 
@@ -17,7 +17,10 @@ import com_github_leetcode.TreeNode;
  */
 public class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if (root == null || root == p || root == q) {
+        if (root == null) {
+            return null;
+        }
+        if (root.val == p.val || root.val == q.val) {
             return root;
         }
         TreeNode left = lowestCommonAncestor(root.left, p, q);
@@ -25,6 +28,9 @@ public class Solution {
         if (left != null && right != null) {
             return root;
         }
-        return left != null ? left : right;
+        if (left != null) {
+            return left;
+        }
+        return right;
     }
 }
