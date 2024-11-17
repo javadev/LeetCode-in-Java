@@ -25,9 +25,7 @@ public class Solution {
             }
             for (int i = top; i > -1; i--) {
                 int tempSum = val + arr[i];
-                if (tempSum > sum || set[tempSum]) {
-                    continue;
-                } else {
+                if (tempSum <= sum && !set[tempSum]) {
                     if (tempSum == sum) {
                         return true;
                     }
