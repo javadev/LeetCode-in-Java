@@ -5,6 +5,8 @@ package g0401_0500.s0437_path_sum_iii;
 
 import com_github_leetcode.TreeNode;
 
+import java.util.HashMap;
+
 /*
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -22,7 +24,7 @@ import com_github_leetcode.TreeNode;
  */
 public class Solution {
     public int pathSum(TreeNode root, int targetSum) {
-        Map<Long, Integer> h = new HashMap<>();
+        HashMap<Long, Integer> h = new HashMap<>();
         return dfs(root, targetSum, h, 0L);
     }
 
