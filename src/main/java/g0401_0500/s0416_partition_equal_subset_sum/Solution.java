@@ -17,9 +17,6 @@ public class Solution {
         int[] arr = new int[sum + 2];
         int top = 0;
         for (int val : nums) {
-            if (val == sum) {
-                return true;
-            }
             for (int i = top; i > -1; i--) {
                 int tempSum = val + arr[i];
                 if (tempSum <= sum && !set[tempSum]) {
