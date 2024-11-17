@@ -88,7 +88,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 |-|-|-|-|-|-
 | 0334 |[Increasing Triplet Subsequence](src/main/java/g0301_0400/s0334_increasing_triplet_subsequence/Solution.java)| Medium | Array, Greedy | 2 | 99.33
 | 0238 |[Product of Array Except Self](src/main/java/g0201_0300/s0238_product_of_array_except_self/Solution.java)| Medium | Top_100_Liked_Questions, Array, Prefix_Sum, Big_O_Time_O(n^2)_Space_O(n) | 1 | 99.66
-| 0560 |[Subarray Sum Equals K](src/main/java/g0501_0600/s0560_subarray_sum_equals_k/Solution.java)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Big_O_Time_O(n)_Space_O(n) | 21 | 98.97
+| 0560 |[Subarray Sum Equals K](src/main/java/g0501_0600/s0560_subarray_sum_equals_k/Solution.java)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Big_O_Time_O(n)_Space_O(n) | 22 | 95.17
 
 #### Day 6 String
 
@@ -102,7 +102,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0290 |[Word Pattern](src/main/java/g0201_0300/s0290_word_pattern/Solution.java)| Easy | String, Hash_Table | 1 | 97.26
-| 0763 |[Partition Labels](src/main/java/g0701_0800/s0763_partition_labels/Solution.java)| Medium | String, Hash_Table, Greedy, Two_Pointers, Big_O_Time_O(n)_Space_O(1) | 1 | 100.00
+| 0763 |[Partition Labels](src/main/java/g0701_0800/s0763_partition_labels/Solution.java)| Medium | String, Hash_Table, Greedy, Two_Pointers, Big_O_Time_O(n)_Space_O(1) | 2 | 100.00
 
 #### Day 8 String
 
@@ -197,7 +197,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0215 |[Kth Largest Element in an Array](src/main/java/g0201_0300/s0215_kth_largest_element_in_an_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Quickselect, Big_O_Time_O(n\*log(n))_Space_O(log(n)) | 5 | 70.82
-| 0347 |[Top K Frequent Elements](src/main/java/g0301_0400/s0347_top_k_frequent_elements/Solution.java)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Divide_and_Conquer, Quickselect, Bucket_Sort, Big_O_Time_O(n\*log(n))_Space_O(k) | 9 | 97.93
+| 0347 |[Top K Frequent Elements](src/main/java/g0301_0400/s0347_top_k_frequent_elements/Solution.java)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Divide_and_Conquer, Quickselect, Bucket_Sort, Big_O_Time_O(n\*log(n))_Space_O(k) | 9 | 97.30
 
 #### Day 21 Heap Priority Queue
 
@@ -345,7 +345,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0438 |[Find All Anagrams in a String](src/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n+m)_Space_O(1) | 6 | 99.03
+| 0438 |[Find All Anagrams in a String](src/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n+m)_Space_O(1) | 3 | 99.83
 | 0713 |[Subarray Product Less Than K](src/main/java/g0701_0800/s0713_subarray_product_less_than_k/Solution.java)| Medium | Array, Sliding_Window | 8 | 39.00
 | 0209 |[Minimum Size Subarray Sum](src/main/java/g0201_0300/s0209_minimum_size_subarray_sum/Solution.java)| Medium | Array, Binary_Search, Prefix_Sum, Sliding_Window | 1 | 100.00
 
@@ -433,7 +433,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 1143 |[Longest Common Subsequence](src/main/java/g1101_1200/s1143_longest_common_subsequence/Solution.java)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n\*m)_Space_O(n\*m) | 33 | 46.23
+| 1143 |[Longest Common Subsequence](src/main/java/g1101_1200/s1143_longest_common_subsequence/Solution.java)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n\*m)_Space_O(n\*m) | 19 | 89.05
 | 0583 |[Delete Operation for Two Strings](src/main/java/g0501_0600/s0583_delete_operation_for_two_strings/Solution.java)| Medium | String, Dynamic_Programming | 12 | 79.10
 
 #### Day 18 Dynamic Programming
@@ -825,7 +825,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0392 |[Is Subsequence](src/main/java/g0301_0400/s0392_is_subsequence/Solution.java)| Easy | String, Dynamic_Programming, Two_Pointers | 1 | 93.01
-| 1143 |[Longest Common Subsequence](src/main/java/g1101_1200/s1143_longest_common_subsequence/Solution.java)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n\*m)_Space_O(n\*m) | 33 | 46.23
+| 1143 |[Longest Common Subsequence](src/main/java/g1101_1200/s1143_longest_common_subsequence/Solution.java)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n\*m)_Space_O(n\*m) | 19 | 89.05
 | 0072 |[Edit Distance](src/main/java/g0001_0100/s0072_edit_distance/Solution.java)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n^2)_Space_O(n2) | 3 | 97.19
 
 #### Day 20
@@ -980,7 +980,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0739 |[Daily Temperatures](src/main/java/g0701_0800/s0739_daily_temperatures/Solution.java)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Big_O_Time_O(n)_Space_O(n) | 10 | 94.99
+| 0739 |[Daily Temperatures](src/main/java/g0701_0800/s0739_daily_temperatures/Solution.java)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Big_O_Time_O(n)_Space_O(n) | 8 | 96.83
 | 0058 |[Length of Last Word](src/main/java/g0001_0100/s0058_length_of_last_word/Solution.java)| Easy | String | 0 | 100.00
 
 #### Day 7
@@ -1022,7 +1022,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0438 |[Find All Anagrams in a String](src/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n+m)_Space_O(1) | 6 | 99.03
+| 0438 |[Find All Anagrams in a String](src/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n+m)_Space_O(1) | 3 | 99.83
 | 0713 |[Subarray Product Less Than K](src/main/java/g0701_0800/s0713_subarray_product_less_than_k/Solution.java)| Medium | Array, Sliding_Window | 8 | 39.00
 
 #### Day 13
@@ -1354,7 +1354,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0438 |[Find All Anagrams in a String](src/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n+m)_Space_O(1) | 6 | 99.03
+| 0438 |[Find All Anagrams in a String](src/main/java/g0401_0500/s0438_find_all_anagrams_in_a_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n+m)_Space_O(1) | 3 | 99.83
 | 0424 |[Longest Repeating Character Replacement](src/main/java/g0401_0500/s0424_longest_repeating_character_replacement/Solution.java)| Medium | String, Hash_Table, Sliding_Window | 5 | 95.15
 
 #### Day 13 Hashmap
@@ -1369,7 +1369,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0844 |[Backspace String Compare](src/main/java/g0801_0900/s0844_backspace_string_compare/Solution.java)| Easy | String, Two_Pointers, Stack, Simulation | 0 | 100.00
-| 0394 |[Decode String](src/main/java/g0301_0400/s0394_decode_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Big_O_Time_O(n)_Space_O(n) | 1 | 87.68
+| 0394 |[Decode String](src/main/java/g0301_0400/s0394_decode_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 
 #### Day 15 Heap
 
@@ -1427,8 +1427,8 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0543 |[Diameter of Binary Tree](src/main/java/g0501_0600/s0543_diameter_of_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 1 | 65.86
-| 0437 |[Path Sum III](src/main/java/g0401_0500/s0437_path_sum_iii/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 18 | 45.66
+| 0543 |[Diameter of Binary Tree](src/main/java/g0501_0600/s0543_diameter_of_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
+| 0437 |[Path Sum III](src/main/java/g0401_0500/s0437_path_sum_iii/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 2 | 100.00
 
 #### Day 8 Binary Search
 
@@ -1470,7 +1470,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0416 |[Partition Equal Subset Sum](src/main/java/g0401_0500/s0416_partition_equal_subset_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Big_O_Time_O(n\*sums)_Space_O(n\*sums) | 27 | 94.53
+| 0416 |[Partition Equal Subset Sum](src/main/java/g0401_0500/s0416_partition_equal_subset_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Big_O_Time_O(n\*sums)_Space_O(n\*sums) | 6 | 99.66
 | 0152 |[Maximum Product Subarray](src/main/java/g0101_0200/s0152_maximum_product_subarray/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Big_O_Time_O(N)_Space_O(1) | 1 | 92.74
 
 #### Day 14 Sliding Window/Two Pointer
@@ -1548,7 +1548,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 | 0003 |[Longest Substring Without Repeating Characters](src/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n)_Space_O(1), AI_can_be_used_to_solve_the_task | 2 | 98.59
 | 0020 |[Valid Parentheses](src/main/java/g0001_0100/s0020_valid_parentheses/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, String, Stack, Big_O_Time_O(n)_Space_O(n) | 2 | 97.19
 | 0005 |[Longest Palindromic Substring](src/main/java/g0001_0100/s0005_longest_palindromic_substring/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Big_O_Time_O(n)_Space_O(n) | 7 | 97.82
-| 0394 |[Decode String](src/main/java/g0301_0400/s0394_decode_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Big_O_Time_O(n)_Space_O(n) | 1 | 87.68
+| 0394 |[Decode String](src/main/java/g0301_0400/s0394_decode_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 | 0242 |[Valid Anagram](src/main/java/g0201_0300/s0242_valid_anagram/Solution.java)| Easy | String, Hash_Table, Sorting | 2 | 99.01
 | 0049 |[Group Anagrams](src/main/java/g0001_0100/s0049_group_anagrams/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, String, Hash_Table, Sorting, Big_O_Time_O(n\*k_log_k)_Space_O(n) | 6 | 97.61
 | 0151 |[Reverse Words in a String](src/main/java/g0101_0200/s0151_reverse_words_in_a_string/Solution.java)| Medium | String, Two_Pointers | 2 | 99.94
@@ -1659,7 +1659,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 | 0103 |[Binary Tree Zigzag Level Order Traversal](src/main/java/g0101_0200/s0103_binary_tree_zigzag_level_order_traversal/Solution.java)| Medium | Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree | 1 | 95.00
 | 0108 |[Convert Sorted Array to Binary Search Tree](src/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/Solution.java)| Easy | Top_Interview_Questions, Array, Tree, Binary_Tree, Binary_Search_Tree, Divide_and_Conquer | 0 | 100.00
 | 1008 |[Construct Binary Search Tree from Preorder Traversal](src/main/java/g1001_1100/s1008_construct_binary_search_tree_from_preorder_traversal/Solution.java)| Medium | Array, Tree, Binary_Tree, Stack, Monotonic_Stack, Binary_Search_Tree | 0 | 100.00
-| 0543 |[Diameter of Binary Tree](src/main/java/g0501_0600/s0543_diameter_of_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 1 | 65.86
+| 0543 |[Diameter of Binary Tree](src/main/java/g0501_0600/s0543_diameter_of_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 | 0938 |[Range Sum of BST](src/main/java/g0901_1000/s0938_range_sum_of_bst/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 0 | 100.00
 | 0100 |[Same Tree](src/main/java/g0001_0100/s0100_same_tree/Solution.java)| Easy | Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree | 0 | 100.00
 | 0226 |[Invert Binary Tree](src/main/java/g0201_0300/s0226_invert_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
@@ -1704,7 +1704,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.37'
 | 0070 |[Climbing Stairs](src/main/java/g0001_0100/s0070_climbing_stairs/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 | 0064 |[Minimum Path Sum](src/main/java/g0001_0100/s0064_minimum_path_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix, Big_O_Time_O(m\*n)_Space_O(m\*n) | 1 | 99.73
 | 0300 |[Longest Increasing Subsequence](src/main/java/g0201_0300/s0300_longest_increasing_subsequence/Solution.java)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Binary_Search, Big_O_Time_O(n\*log_n)_Space_O(n) | 3 | 95.75
-| 1143 |[Longest Common Subsequence](src/main/java/g1101_1200/s1143_longest_common_subsequence/Solution.java)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n\*m)_Space_O(n\*m) | 33 | 46.23
+| 1143 |[Longest Common Subsequence](src/main/java/g1101_1200/s1143_longest_common_subsequence/Solution.java)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n\*m)_Space_O(n\*m) | 19 | 89.05
 | 0072 |[Edit Distance](src/main/java/g0001_0100/s0072_edit_distance/Solution.java)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n^2)_Space_O(n2) | 3 | 97.19
 | 0044 |[Wildcard Matching](src/main/java/g0001_0100/s0044_wildcard_matching/Solution.java)| Hard | Top_Interview_Questions, String, Dynamic_Programming, Greedy, Recursion | 2 | 99.87
 | 0010 |[Regular Expression Matching](src/main/java/g0001_0100/s0010_regular_expression_matching/Solution.java)| Hard | Top_Interview_Questions, String, Dynamic_Programming, Recursion, Big_O_Time_O(m\*n)_Space_O(m\*n) | 1 | 100.00
