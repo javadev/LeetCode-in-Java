@@ -17,8 +17,8 @@ public class Solution {
         return solve(nums, sum / 2);
     }
 
-    private int solve(int nums[], int target) {
-        int prev[] = new int[target + 1];
+    private int solve(int[] nums, int target) {
+        int[] prev = new int[target + 1];
         if (nums[0] == 0) {
             prev[0] = 2;
         } else {
@@ -29,7 +29,7 @@ public class Solution {
         }
         int n = nums.length;
         for (int i = 1; i < n; i++) {
-            int curr[] = new int[target + 1];
+            int[] curr = new int[target + 1];
             for (int j = 0; j <= target; j++) {
                 int taken = 0;
                 if (j >= nums[i]) {
