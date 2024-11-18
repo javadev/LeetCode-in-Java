@@ -5,14 +5,14 @@ package g3301_3400.s3357_minimize_the_maximum_adjacent_element_difference;
 public class Solution {
     public int minDifference(int[] nums) {
         int n = nums.length;
-        int max_adj = 0;
+        int maxAdj = 0;
         int mina = Integer.MAX_VALUE;
         int maxb = Integer.MIN_VALUE;
         for (int i = 0; i < n - 1; ++i) {
             int a = nums[i];
             int b = nums[i + 1];
             if (a > 0 && b > 0) {
-                max_adj = Math.max(max_adj, Math.abs(a - b));
+                maxAdj = Math.max(maxAdj, Math.abs(a - b));
             } else if (a > 0 || b > 0) {
                 mina = Math.min(mina, Math.max(a, b));
                 maxb = Math.max(maxb, Math.max(a, b));
@@ -28,7 +28,8 @@ public class Solution {
             while (j < n && nums[j] == -1) {
                 j++;
             }
-            int a = Integer.MAX_VALUE, b = Integer.MIN_VALUE;
+            int a = Integer.MAX_VALUE;
+            int b = Integer.MIN_VALUE;
             if (i > 0) {
                 a = Math.min(a, nums[i - 1]);
                 b = Math.max(b, nums[i - 1]);
@@ -50,6 +51,6 @@ public class Solution {
                 }
             }
         }
-        return Math.max(max_adj, (res + 1) / 2);
+        return Math.max(maxAdj, (res + 1) / 2);
     }
 }
