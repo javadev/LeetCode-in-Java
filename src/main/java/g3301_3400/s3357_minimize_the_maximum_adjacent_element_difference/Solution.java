@@ -18,7 +18,6 @@ public class Solution {
                 maxb = Math.max(maxb, Math.max(a, b));
             }
         }
-
         int res = 0;
         for (int i = 0; i < n; ++i) {
             if ((i > 0 && nums[i - 1] == -1) || nums[i] > 0) {
