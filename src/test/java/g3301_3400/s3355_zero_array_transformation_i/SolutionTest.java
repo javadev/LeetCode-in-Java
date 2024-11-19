@@ -19,4 +19,11 @@ class SolutionTest {
                 new Solution().isZeroArray(new int[] {4, 3, 2, 1}, new int[][] {{1, 3}, {0, 2}}),
                 equalTo(false));
     }
+
+    @Test
+    void isZeroArray3() {
+        assertThat(
+                new Solution().isZeroArray(new int[] {-1, 0, 1}, new int[][] {{1, 3}, {0, 2}}),
+                equalTo(true));
+    }
 }

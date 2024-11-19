@@ -16,4 +16,12 @@ class SolutionTest {
         assertThat(
                 new Solution().countValidSelections(new int[] {2, 3, 4, 0, 4, 1, 0}), equalTo(0));
     }
+
+    @Test
+    void countValidSelections3() {
+        assertThat(
+                new Solution()
+                        .countValidSelections(new int[] {16, 13, 10, 0, 0, 0, 10, 6, 7, 8, 7}),
+                equalTo(3));
+    }
 }

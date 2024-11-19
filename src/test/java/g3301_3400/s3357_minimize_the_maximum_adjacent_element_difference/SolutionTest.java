@@ -20,4 +20,9 @@ class SolutionTest {
     void minDifference3() {
         assertThat(new Solution().minDifference(new int[] {-1, 10, -1, 8}), equalTo(1));
     }
+
+    @Test
+    void minDifference4() {
+        assertThat(new Solution().minDifference(new int[] {14, -1, -1, 46}), equalTo(11));
+    }
 }
