@@ -1,6 +1,6 @@
 package g3301_3400.s3355_zero_array_transformation_i;
 
-// #Medium #2024_11_18_Time_3_ms_(100.00%)_Space_94.7_MB_(100.00%)
+// #Medium #Array #Prefix_Sum #2024_11_19_Time_3_ms_(91.34%)_Space_96_MB_(17.22%)
 
 public class Solution {
     public boolean isZeroArray(int[] nums, int[][] queries) {
