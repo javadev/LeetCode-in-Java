@@ -18,15 +18,8 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher:[1.11.3,)'
 }
 
-testing {
-    suites {
-        test {
-            useJUnitJupiter()
-        }
-    }
-}
-
-tasks.withType(Test).configureEach {
+test {
+    useJUnitPlatform()
     maxParallelForks = Runtime.runtime.availableProcessors()
 }
 
