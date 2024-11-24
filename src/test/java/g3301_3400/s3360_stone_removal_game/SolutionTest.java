@@ -15,4 +15,9 @@ class SolutionTest {
     void canAliceWin2() {
         assertThat(new Solution().canAliceWin(1), equalTo(false));
     }
+
+    @Test
+    void canAliceWin3() {
+        assertThat(new Solution().canAliceWin(19), equalTo(false));
+    }
 }

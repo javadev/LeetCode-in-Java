@@ -9,9 +9,6 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             int ch1 = s.charAt(i) - 'a';
             int ch2 = t.charAt(i) - 'a';
-            if (ch1 == ch2) {
-                continue;
-            }
             int forwardDiff = (ch2 - ch1 + 26) % 26;
             long forwardCost = 0;
             for (int j = 0; j < forwardDiff; j++) {
