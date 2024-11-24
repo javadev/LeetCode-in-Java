@@ -21,9 +21,9 @@ public class Solution {
         long mod = (int) 1e9 + 7L;
         return (int)
                 (((pow(26, n, mod)
-                   - (n + 75) * pow(25, n - 1L, mod)
-                   + (2 * n + 72) * pow(24, n - 1L, mod)
-                   - (n + 23) * pow(23, n - 1L, mod))
+                                                - (n + 75) * pow(25, n - 1L, mod)
+                                                + (2 * n + 72) * pow(24, n - 1L, mod)
+                                                - (n + 23) * pow(23, n - 1L, mod))
                                         % mod
                                 + mod)
                         % mod);
