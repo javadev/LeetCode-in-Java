@@ -13,7 +13,7 @@ public class Solution {
         long res = 0;
         for (int i = 0; i < len; i++) {
             int idx = s.charAt(i) - 'a';
-            res += (i - lastPos[idx]) * (len - i);
+            res += (long) (i - lastPos[idx]) * (len - i);
             lastPos[idx] = i;
         }
         return res;

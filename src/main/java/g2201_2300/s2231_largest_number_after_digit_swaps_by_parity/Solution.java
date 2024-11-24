@@ -32,6 +32,6 @@ public class Solution {
             str[i] = temp;
             str[swapIndex] = tempStr;
         }
-        return Integer.valueOf(new String(str));
+        return Integer.parseInt(new String(str));
     }
 }

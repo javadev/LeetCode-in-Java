@@ -15,7 +15,7 @@ public class Solution {
         }
         for (int i = s.length() - 1; i >= 0; i--) {
             char c = s.charAt(i);
-            k %= length;
+            k %= (int) length;
             if (c >= 48 && c <= 57) {
                 length /= c - '0';
             } else if (k == 0) {

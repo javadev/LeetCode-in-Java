@@ -13,7 +13,7 @@ public class Solution {
         for (int num : nums) {
             int s = 0;
             for (char digit : String.valueOf(num).toCharArray()) {
-                s += Integer.valueOf(digit - '0');
+                s += digit - '0';
             }
             if (!map.containsKey(s)) {
                 map.put(s, num);

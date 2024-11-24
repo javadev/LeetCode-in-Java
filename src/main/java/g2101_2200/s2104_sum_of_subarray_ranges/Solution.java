@@ -17,7 +17,7 @@ public class Solution {
                 int cur = q.removeLast();
                 int left = q.peekLast();
                 int right = i;
-                sum += 1L * (cur - left) * (right - cur) * nums[cur];
+                sum += (long) (cur - left) * (right - cur) * nums[cur];
             }
             q.add(i);
         }
@@ -29,7 +29,7 @@ public class Solution {
                 int cur = q.removeLast();
                 int left = q.peekLast();
                 int right = i;
-                sum -= 1L * (cur - left) * (right - cur) * nums[cur];
+                sum -= (long) (cur - left) * (right - cur) * nums[cur];
             }
             q.add(i);
         }

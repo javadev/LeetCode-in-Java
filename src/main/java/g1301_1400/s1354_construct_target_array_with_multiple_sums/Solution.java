@@ -21,7 +21,7 @@ public class Solution {
                 || target[maxIndex] % remainingSum == 0) {
             return false;
         }
-        target[maxIndex] %= remainingSum;
+        target[maxIndex] %= (int) remainingSum;
         return isPossible(target);
     }
 }

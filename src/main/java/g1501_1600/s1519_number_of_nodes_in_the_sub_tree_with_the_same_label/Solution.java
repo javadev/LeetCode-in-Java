@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Solution {
     public int[] countSubTrees(int n, int[][] edges, String labelsString) {
         int[] labelsCount = new int[n];
-        if (n <= 0 || edges == null || labelsString == null) {
+        if (n == 0 || edges == null || labelsString == null) {
             return labelsCount;
         }
 

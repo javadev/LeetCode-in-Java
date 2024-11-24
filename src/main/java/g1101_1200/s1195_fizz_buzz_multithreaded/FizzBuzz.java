@@ -16,7 +16,7 @@ public class FizzBuzz {
     }
 
     // printFizz.run() outputs "fizz".
-    public void fizz(Runnable printFizz) throws InterruptedException {
+    public void fizz(Runnable printFizz) {
         int i;
         while ((i = count.get()) <= n) {
             if (i % 3 == 0 && i % 5 != 0) {
@@ -27,7 +27,7 @@ public class FizzBuzz {
     }
 
     // printBuzz.run() outputs "buzz".
-    public void buzz(Runnable printBuzz) throws InterruptedException {
+    public void buzz(Runnable printBuzz) {
         int i;
         while ((i = count.get()) <= n) {
             count.get();
@@ -39,7 +39,7 @@ public class FizzBuzz {
     }
 
     // printFizzBuzz.run() outputs "fizzbuzz".
-    public void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
+    public void fizzbuzz(Runnable printFizzBuzz) {
         int i;
         while ((i = count.get()) <= n) {
             if (i % 15 == 0) {
@@ -50,7 +50,7 @@ public class FizzBuzz {
     }
 
     // printNumber.accept(x) outputs "x", where x is an integer.
-    public void number(IntConsumer printNumber) throws InterruptedException {
+    public void number(IntConsumer printNumber) {
         int i;
         while ((i = count.get()) <= n) {
             if (i % 5 != 0 && i % 3 != 0) {

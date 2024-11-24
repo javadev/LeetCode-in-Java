@@ -10,7 +10,7 @@ public class Solution {
         Arrays.fill(res, 'a');
         k -= n;
         while (k > 0) {
-            res[--n] += Math.min(25, k);
+            res[--n] += (char) Math.min(25, k);
             k -= Math.min(25, k);
         }
         return String.valueOf(res);
