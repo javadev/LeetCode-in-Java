@@ -14,25 +14,34 @@ class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz(15);
         new Thread(
                         () -> {
-                            fizzBuzz.fizz(() -> fizz[0]++);
+                            try {
+                                fizzBuzz.fizz(() -> fizz[0]++);
+                            } catch (InterruptedException e) {
+                            }
                         })
                 .start();
         new Thread(
                         () -> {
-                            fizzBuzz.buzz(() -> fizz[0]++);
+                            try {
+                                fizzBuzz.buzz(() -> fizz[0]++);
+                            } catch (InterruptedException e) {
+                            }
                         })
                 .start();
         new Thread(
                         () -> {
-                            fizzBuzz.fizzbuzz(() -> fizz[0]++);
+                            try {
+                                fizzBuzz.fizzbuzz(() -> fizz[0]++);
+                            } catch (InterruptedException e) {
+                            }
                         })
                 .start();
         new Thread(
                         () -> {
-                            fizzBuzz.number(
-                                    value -> {
-                                        fizz[0]++;
-                                    });
+                            try {
+                                fizzBuzz.number(value -> fizz[0]++);
+                            } catch (InterruptedException e) {
+                            }
                         })
                 .start();
         TimeUnit.MILLISECONDS.sleep(2000);
@@ -45,25 +54,34 @@ class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz(5);
         new Thread(
                         () -> {
-                            fizzBuzz.fizz(() -> fizz[0]++);
+                            try {
+                                fizzBuzz.fizz(() -> fizz[0]++);
+                            } catch (InterruptedException e) {
+                            }
                         })
                 .start();
         new Thread(
                         () -> {
-                            fizzBuzz.buzz(() -> fizz[0]++);
+                            try {
+                                fizzBuzz.buzz(() -> fizz[0]++);
+                            } catch (InterruptedException e) {
+                            }
                         })
                 .start();
         new Thread(
                         () -> {
-                            fizzBuzz.fizzbuzz(() -> fizz[0]++);
+                            try {
+                                fizzBuzz.fizzbuzz(() -> fizz[0]++);
+                            } catch (InterruptedException e) {
+                            }
                         })
                 .start();
         new Thread(
                         () -> {
-                            fizzBuzz.number(
-                                    value -> {
-                                        fizz[0]++;
-                                    });
+                            try {
+                                fizzBuzz.number(value -> fizz[0]++);
+                            } catch (InterruptedException e) {
+                            }
                         })
                 .start();
         TimeUnit.MILLISECONDS.sleep(600);
