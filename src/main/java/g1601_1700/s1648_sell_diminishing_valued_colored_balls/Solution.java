@@ -18,7 +18,7 @@ public class Solution {
                 long diff = i == 0 ? inventory[i] : inventory[i] - inventory[i - 1];
                 if (count * diff < orders) {
                     totalValue += (2L * inventory[i] - diff + 1) * diff * count / 2 % mod;
-                    orders -= count * diff;
+                    orders -= (int) (count * diff);
                 } else {
                     diff = orders / count;
                     long remainder = orders % count;

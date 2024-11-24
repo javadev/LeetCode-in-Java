@@ -33,8 +33,8 @@ public class Solution {
                 // if current group has more differences than the totalK, we can only move k of them
                 // to the lower level.
                 if (diffs[i] >= kSum) {
-                    diffs[i] -= kSum;
-                    diffs[i - 1] += kSum;
+                    diffs[i] -= (int) kSum;
+                    diffs[i - 1] += (int) kSum;
                     kSum = 0;
                 } else {
                     // else, we can make this whole group one level lower.

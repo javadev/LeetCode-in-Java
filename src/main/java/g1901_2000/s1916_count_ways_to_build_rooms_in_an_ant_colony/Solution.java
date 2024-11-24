@@ -46,7 +46,7 @@ public class Solution {
         long com = 1;
         for (long[] p : list) {
             long choose = c(cnt, (int) (p[0]));
-            cnt -= p[0];
+            cnt -= (int) p[0];
             com = com * choose;
             com %= MOD;
             com = com * p[1];

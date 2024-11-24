@@ -19,7 +19,7 @@ public class Solution {
             if (req > k) {
                 return false;
             }
-            k -= req;
+            k -= (int) req;
             extraPower[i] += (req);
             if (i + 2 * r + 1 < n) {
                 extraPower[i + 2 * r + 1] -= (req);

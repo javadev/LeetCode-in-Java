@@ -14,7 +14,7 @@ public class Solution {
             return res;
         }
         long sum = 0;
-        long range = 2 * k + 1L;
+        long range = 2L * k + 1L;
         // take sum of all elements from 0 to k*2 index
         for (int i = 0; i <= 2 * k; ++i) {
             sum += nums[i];

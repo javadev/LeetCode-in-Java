@@ -10,13 +10,12 @@ public class CombinationIterator {
     private List<String> list;
     private int index;
     private int combinationLength;
-    private boolean[] visited;
 
     public CombinationIterator(String characters, int combinationLength) {
         this.index = 0;
         this.list = new ArrayList<>();
         this.combinationLength = combinationLength;
-        this.visited = new boolean[characters.length()];
+        boolean[] visited = new boolean[characters.length()];
         buildAllCombinations(characters, 0, new StringBuilder(), visited);
     }
 

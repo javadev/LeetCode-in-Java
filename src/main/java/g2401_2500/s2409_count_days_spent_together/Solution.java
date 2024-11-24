@@ -18,14 +18,14 @@ public class Solution {
         Integer endMonth = Integer.valueOf(ends[0]);
         int res = 0;
         if (startMonth.equals(endMonth)) {
-            res += (Integer.valueOf(ends[1]) - Integer.valueOf(starts[1]) + 1);
+            res += (Integer.parseInt(ends[1]) - Integer.parseInt(starts[1]) + 1);
             return res;
         }
         for (int i = startMonth; i <= endMonth; i++) {
             if (i == endMonth) {
-                res += Integer.valueOf(ends[1]);
+                res += Integer.parseInt(ends[1]);
             } else if (i == startMonth) {
-                res += dates[i] - Integer.valueOf(starts[1]) + 1;
+                res += dates[i] - Integer.parseInt(starts[1]) + 1;
             } else {
                 res += dates[i];
             }

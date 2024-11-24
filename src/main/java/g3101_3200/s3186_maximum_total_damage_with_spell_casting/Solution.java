@@ -25,7 +25,7 @@ public class Solution {
         dp[1] = counts[1];
         dp[2] = Math.max(counts[2] * 2L, dp[1]);
         for (int i = 3; i <= maxPower; i++) {
-            dp[i] = Math.max(counts[i] * i + dp[i - 3], Math.max(dp[i - 1], dp[i - 2]));
+            dp[i] = Math.max((long) counts[i] * i + dp[i - 3], Math.max(dp[i - 1], dp[i - 2]));
         }
         return dp[maxPower];
     }

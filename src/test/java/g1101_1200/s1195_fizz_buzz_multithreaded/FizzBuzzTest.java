@@ -39,10 +39,7 @@ class FizzBuzzTest {
         new Thread(
                         () -> {
                             try {
-                                fizzBuzz.number(
-                                        value -> {
-                                            fizz[0]++;
-                                        });
+                                fizzBuzz.number(value -> fizz[0]++);
                             } catch (InterruptedException e) {
                             }
                         })
@@ -82,10 +79,7 @@ class FizzBuzzTest {
         new Thread(
                         () -> {
                             try {
-                                fizzBuzz.number(
-                                        value -> {
-                                            fizz[0]++;
-                                        });
+                                fizzBuzz.number(value -> fizz[0]++);
                             } catch (InterruptedException e) {
                             }
                         })

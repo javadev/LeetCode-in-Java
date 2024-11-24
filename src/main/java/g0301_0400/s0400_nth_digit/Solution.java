@@ -13,7 +13,7 @@ public class Solution {
         long count = 9;
         int start = 1;
         while (n > len * count) {
-            n -= len * count;
+            n -= (int) (len * count);
             len += 1;
             count *= 10;
             start *= 10;

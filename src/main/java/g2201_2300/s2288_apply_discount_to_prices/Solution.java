@@ -23,7 +23,7 @@ public class Solution {
                     return s;
                 }
                 price *= 10;
-                price += (s.charAt(i) - '0') * (100 - discount);
+                price += (long) (s.charAt(i) - '0') * (100 - discount);
             }
             String stringPrice = String.valueOf(price);
             if (price < 10) {

@@ -32,7 +32,7 @@ public class Solution {
         int mid = l + (h - l) / 2;
         int k = h - l + 1;
         int radius = mid - l;
-        long res = sum[h + 1] - sum[mid + 1] - (sum[mid] - sum[l]) - (1 + radius) * radius;
+        long res = sum[h + 1] - sum[mid + 1] - (sum[mid] - sum[l]) - (long) (1 + radius) * radius;
         if (k % 2 == 0) {
             res = res - arr[mid] - (radius + 1);
         }

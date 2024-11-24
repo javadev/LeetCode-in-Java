@@ -20,7 +20,7 @@ public class Solution {
         int exp = list.size() - 1;
         for (int i = list.size() - 1; i >= 0; i--) {
             if (list.get(i) == 0) {
-                result += Math.pow(2, exp);
+                result += (int) Math.pow(2, exp);
             }
             exp--;
         }
