@@ -14,10 +14,8 @@ public class Solution {
                 for (int j = i; j < i + s; j++) {
                     sum += nums.get(j);
                 }
-                if (sum > 0) {
-                    if (res == -1 || res > sum) {
-                        res = sum;
-                    }
+                if (sum > 0 && (res == -1 || res > sum)) {
+                    res = sum;
                 }
             }
         }

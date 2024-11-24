@@ -32,6 +32,7 @@ public class Solution {
             int v = (int) Math.ceil(nums[i] / 2.0);
             res = Math.min(res, sub(dp, nums, i + 1, k, op1 - 1, op2) + v);
         }
-        return dp[i][op1][op2] = res;
+        dp[i][op1][op2] = res;
+        return res;
     }
 }

@@ -23,7 +23,8 @@ public class Solution {
         for (int[] i : map.get(v)) {
             if (i[0] != from) {
                 long[] next = maximizeSumOfWeights(i[0], v, k, map);
-                sum += Math.max(next[0], next[1] += i[1]);
+                next[1] += i[1];
+                sum += Math.max(next[0], next[1]);
                 if (next[0] < next[1]) {
                     queue.offer(next[1] - next[0]);
                     sum -= queue.size() > k ? queue.poll() : 0;
