@@ -1,36 +1,51 @@
 package g3301_3400.s3367_maximize_sum_of_weights_after_edge_removals;
 
-// #Hard #2024_11_24_Time_147_ms_(100.00%)_Space_142.2_MB_(100.00%)
+// #Hard #2024_11_27_Time_87_ms_(98.35%)_Space_152.7_MB_(18.13%)
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.List;
 import java.util.PriorityQueue;
 
 public class Solution {
+    private List<int[]>[] adj;
+    private int k;
+
     public long maximizeSumOfWeights(int[][] edges, int k) {
-        HashMap<Integer, ArrayList<int[]>> map = new HashMap<>();
-        for (int[] edge : edges) {
-            map.computeIfAbsent(edge[0], t -> new ArrayList<>()).add(new int[] {edge[1], edge[2]});
-            map.computeIfAbsent(edge[1], t -> new ArrayList<>()).add(new int[] {edge[0], edge[2]});
+        int n = edges.length + 1;
+        adj = new List[n];
+        this.k = k;
+        for (int i = 0; i < n; i++) {
+            adj[i] = new ArrayList<>();
         }
-        return maximizeSumOfWeights(0, -1, k, map)[0];
+        for (int[] e : edges) {
+            adj[e[0]].add(e);
+            adj[e[1]].add(e);
+        }
+        return dfs(0, -1)[1];
     }
 
-    private long[] maximizeSumOfWeights(
-            int v, int from, int k, HashMap<Integer, ArrayList<int[]>> map) {
+    private long[] dfs(int v, int parent) {
         long sum = 0;
-        PriorityQueue<Long> queue = new PriorityQueue<>();
-        for (int[] i : map.get(v)) {
-            if (i[0] != from) {
-                long[] next = maximizeSumOfWeights(i[0], v, k, map);
-                next[1] += i[1];
-                sum += Math.max(next[0], next[1]);
-                if (next[0] < next[1]) {
-                    queue.offer(next[1] - next[0]);
-                    sum -= queue.size() > k ? queue.poll() : 0;
-                }
+        PriorityQueue<Long> pq = new PriorityQueue<>();
+        for (int[] e : adj[v]) {
+            int w = e[0] == v ? e[1] : e[0];
+            if (w == parent) {
+                continue;
             }
+            long[] res = dfs(w, v);
+            long max = Math.max(e[2] + res[0], res[1]);
+            sum += max;
+            pq.add(max - res[1]);
         }
-        return new long[] {sum, sum - (queue.size() < k ? 0 : queue.peek())};
+        long[] res = new long[2];
+        while (pq.size() > k) {
+            sum -= pq.poll();
+        }
+        res[1] = sum;
+        while (pq.size() > k - 1) {
+            sum -= pq.poll();
+        }
+        res[0] = sum;
+        return res;
     }
 }
