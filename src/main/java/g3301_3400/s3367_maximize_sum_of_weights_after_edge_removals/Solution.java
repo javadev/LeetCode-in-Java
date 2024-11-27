@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     private List<int[]>[] adj;
     private int k;
