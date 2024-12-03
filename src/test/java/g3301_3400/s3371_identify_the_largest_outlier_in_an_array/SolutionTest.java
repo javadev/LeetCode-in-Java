@@ -20,4 +20,9 @@ class SolutionTest {
     void getLargestOutlier3() {
         assertThat(new Solution().getLargestOutlier(new int[] {1, 1, 1, 1, 1, 5, 5}), equalTo(5));
     }
+
+    @Test
+    void getLargestOutlier4() {
+        assertThat(new Solution().getLargestOutlier(new int[] {-108, -108, -517}), equalTo(-517));
+    }
 }
