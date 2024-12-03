@@ -14,7 +14,7 @@ public class Solution {
         String temp = strs[0];
         int i = 1;
         String cur;
-        while (temp.length() > 0 && i < strs.length) {
+        while (!temp.isEmpty() && i < strs.length) {
             if (temp.length() > strs[i].length()) {
                 temp = temp.substring(0, strs[i].length());
             }

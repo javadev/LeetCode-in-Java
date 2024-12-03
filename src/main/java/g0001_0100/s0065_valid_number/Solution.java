@@ -4,7 +4,7 @@ package g0001_0100.s0065_valid_number;
 
 public class Solution {
     public boolean isNumber(String s) {
-        if (s == null || s.length() == 0) {
+        if (s == null || s.isEmpty()) {
             return false;
         }
         boolean eSeen = false;

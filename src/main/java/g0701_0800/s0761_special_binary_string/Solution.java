@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 
 public class Solution {
     public String makeLargestSpecial(String s) {
-        if (s == null || s.length() == 0 || s.length() == 2) {
+        if (s == null || s.isEmpty() || s.length() == 2) {
             return s;
         }
         PriorityQueue<String> pq = new PriorityQueue<>((a, b) -> b.compareTo(a));
@@ -32,7 +32,7 @@ public class Solution {
         while (!pq.isEmpty()) {
             ans.append(pq.poll());
         }
-        if (ans.length() == 0) {
+        if (ans.isEmpty()) {
             ans.append('1');
             ans.append(makeLargestSpecial(s.substring(1, s.length() - 1)));
             ans.append('0');

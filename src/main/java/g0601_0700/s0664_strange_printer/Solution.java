@@ -4,7 +4,7 @@ package g0601_0700.s0664_strange_printer;
 
 public class Solution {
     public int strangePrinter(String s) {
-        if (s.length() == 0) {
+        if (s.isEmpty()) {
             return 0;
         }
         int[][] dp = new int[s.length()][s.length()];

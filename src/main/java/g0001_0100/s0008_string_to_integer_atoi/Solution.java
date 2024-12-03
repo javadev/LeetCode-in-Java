@@ -4,7 +4,7 @@ package g0001_0100.s0008_string_to_integer_atoi;
 
 public class Solution {
     public int myAtoi(String str) {
-        if (str == null || str.length() == 0) {
+        if (str == null || str.isEmpty()) {
             return 0;
         }
         int i = 0;
