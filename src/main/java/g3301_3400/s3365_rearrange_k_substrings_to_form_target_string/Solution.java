@@ -1,6 +1,6 @@
 package g3301_3400.s3365_rearrange_k_substrings_to_form_target_string;
 
-// #Medium #2024_11_24_Time_61_ms_(100.00%)_Space_49.3_MB_(100.00%)
+// #Medium #String #Hash_Table #Sorting #2024_12_03_Time_59_ms_(94.24%)_Space_49.2_MB_(97.33%)
 
 import java.util.HashMap;
 import java.util.Map;

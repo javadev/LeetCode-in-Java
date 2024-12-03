@@ -1,38 +1,75 @@
 package g3301_3400.s3366_minimum_array_sum;
 
-// #Medium #2024_11_24_Time_66_ms_(100.00%)_Space_55_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #2024_12_03_Time_4_ms_(99.77%)_Space_43_MB_(99.69%)
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
     public int minArraySum(int[] nums, int k, int op1, int op2) {
-        Integer[][][] dp = new Integer[nums.length][op1 + 1][op2 + 1];
-        return sub(dp, nums, 0, k, op1, op2);
+        Arrays.sort(nums);
+        int high = lowerBound(nums, k * 2 - 1);
+        int low = lowerBound(nums, k);
+        int n = nums.length;
+        for (int i = n - 1; i >= high; i--) {
+            if (op1 > 0) {
+                nums[i] = (nums[i] + 1) / 2;
+                op1--;
+            }
+            if (op2 > 0) {
+                nums[i] -= k;
+                op2--;
+            }
+        }
+        Map<Integer, Integer> count = new HashMap<>();
+        int odd = 0;
+        for (int i = low; i < high; i++) {
+            if (op2 > 0) {
+                nums[i] -= k;
+                if (k % 2 > 0 && nums[i] % 2 > 0) {
+                    count.merge(nums[i], 1, Integer::sum);
+                }
+                op2--;
+            } else {
+                odd += nums[i] % 2;
+            }
+        }
+        Arrays.sort(nums, 0, high);
+        int ans = 0;
+        if (k % 2 > 0) {
+            for (int i = high - op1; i < high && odd > 0; i++) {
+                int x = nums[i];
+                if (count.containsKey(x)) {
+                    if (count.merge(x, -1, Integer::sum) == 0) {
+                        count.remove(x);
+                    }
+                    odd--;
+                    ans--;
+                }
+            }
+        }
+        for (int i = high - 1; i >= 0 && op1 > 0; i--) {
+            nums[i] = (nums[i] + 1) / 2;
+            op1--;
+        }
+        for (int x : nums) {
+            ans += x;
+        }
+        return ans;
     }
 
-    private int sub(Integer[][][] dp, int[] nums, int i, int k, int op1, int op2) {
-        if (i == nums.length) {
-            return 0;
-        }
-        if (dp[i][op1][op2] != null) {
-            return dp[i][op1][op2];
-        }
-        int res = sub(dp, nums, i + 1, k, op1, op2) + nums[i];
-        if (nums[i] >= k && op2 > 0) {
-            res = Math.min(res, sub(dp, nums, i + 1, k, op1, op2 - 1) + nums[i] - k);
-            int v = (int) Math.ceil(nums[i] / 2.0);
-            if (v < k) {
-                v = (int) Math.ceil((nums[i] - k) / 2.0);
+    private int lowerBound(int[] nums, int target) {
+        int left = -1;
+        int right = nums.length;
+        while (left + 1 < right) {
+            int mid = (left + right) >>> 1;
+            if (nums[mid] >= target) {
+                right = mid;
             } else {
-                v -= k;
-            }
-            if (op1 > 0) {
-                res = Math.min(res, sub(dp, nums, i + 1, k, op1 - 1, op2 - 1) + v);
+                left = mid;
             }
         }
-        if (op1 > 0) {
-            int v = (int) Math.ceil(nums[i] / 2.0);
-            res = Math.min(res, sub(dp, nums, i + 1, k, op1 - 1, op2) + v);
-        }
-        dp[i][op1][op2] = res;
-        return res;
+        return right;
     }
 }

@@ -1,24 +1,25 @@
 package g3301_3400.s3364_minimum_positive_sum_subarray;
 
-// #Easy #2024_11_24_Time_28_ms_(100.00%)_Space_44.7_MB_(100.00%)
+// #Easy #Array #Prefix_Sum #Sliding_Window #2024_12_03_Time_1_ms_(100.00%)_Space_44.5_MB_(38.75%)
 
 import java.util.List;
 
 public class Solution {
-    public int minimumSumSubarray(List<Integer> nums, int l, int r) {
-        int size = nums.size();
-        int res = -1;
-        for (int s = l; s <= r; s++) {
-            for (int i = 0; i <= size - s; i++) {
-                int sum = 0;
-                for (int j = i; j < i + s; j++) {
-                    sum += nums.get(j);
-                }
-                if (sum > 0 && (res == -1 || res > sum)) {
-                    res = sum;
+    public int minimumSumSubarray(List<Integer> li, int l, int r) {
+        int n = li.size();
+        int min = Integer.MAX_VALUE;
+        int[] a = new int[n + 1];
+        for (int i = 1; i <= n; i++) {
+            a[i] = a[i - 1] + li.get(i - 1);
+        }
+        for (int size = l; size <= r; size++) {
+            for (int i = size - 1; i < n; i++) {
+                int sum = a[i + 1] - a[i + 1 - size];
+                if (sum > 0) {
+                    min = Math.min(min, sum);
                 }
             }
         }
-        return res;
+        return min == Integer.MAX_VALUE ? -1 : min;
     }
 }

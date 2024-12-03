@@ -1,85 +1,70 @@
 package g3301_3400.s3373_maximize_the_number_of_target_nodes_after_connecting_trees_ii;
 
-// #Hard #2024_12_01_Time_447_ms_(100.00%)_Space_173.2_MB_(100.00%)
+// #Hard #Tree #Depth_First_Search #Breadth_First_Search
+// #2024_12_03_Time_26_ms_(98.75%)_Space_114.7_MB_(80.00%)
 
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.Arrays;
 
 public class Solution {
-    private int dfs(int a, HashMap<Integer, HashSet<Integer>> adj, boolean[] mark, int i) {
-        int res = 0;
-        mark[a] = true;
-        if (i % 2 == 0) {
-            res++;
-        }
-        for (int j : adj.get(a)) {
-            if (!mark[j]) {
-                res += dfs(j, adj, mark, i + 1);
-            }
-        }
-        return res;
-    }
-
-    private void sol(
-            int a,
-            HashMap<Integer, HashSet<Integer>> adj,
-            boolean[] mark,
-            int i,
-            int t,
-            int n,
-            int[] res) {
-        mark[a] = true;
-        if (i % 2 == 0) {
-            res[a] = t;
-        } else {
-            res[a] = n - t;
-        }
-        for (int j : adj.get(a)) {
-            if (!mark[j]) {
-                sol(j, adj, mark, i + 1, t, n, res);
-            }
-        }
-    }
-
     public int[] maxTargetNodes(int[][] edges1, int[][] edges2) {
         int n = edges1.length + 1;
+        int[][] g1 = packU(n, edges1);
         int m = edges2.length + 1;
-        HashMap<Integer, HashSet<Integer>> adj1 = new HashMap<>();
-        HashMap<Integer, HashSet<Integer>> adj2 = new HashMap<>();
-        for (int[] i : edges1) {
-            if (adj1.get(i[0]) == null) {
-                adj1.put(i[0], new HashSet<>());
-            }
-            adj1.get(i[0]).add(i[1]);
-            if (adj1.get(i[1]) == null) {
-                adj1.put(i[1], new HashSet<>());
-            }
-            adj1.get(i[1]).add(i[0]);
+        int[][] g2 = packU(m, edges2);
+
+        int[][] p2 = parents(g2, 0);
+        int[] eo2 = new int[2];
+        for (int i = 0; i < m; i++) {
+            eo2[p2[2][i] % 2]++;
         }
-        for (int[] i : edges2) {
-            if (adj2.get(i[0]) == null) {
-                adj2.put(i[0], new HashSet<>());
-            }
-            adj2.get(i[0]).add(i[1]);
-            if (adj2.get(i[1]) == null) {
-                adj2.put(i[1], new HashSet<>());
-            }
-            adj2.get(i[1]).add(i[0]);
+        int max = Math.max(eo2[0], eo2[1]);
+        int[][] p1 = parents(g1, 0);
+        int[] eo1 = new int[2];
+        for (int i = 0; i < n; i++) {
+            eo1[p1[2][i] % 2]++;
         }
-        boolean[] mark1 = new boolean[n];
-        boolean[] mark2 = new boolean[m];
-        int a = dfs(0, adj2, mark2, 0);
-        int b = dfs(0, adj1, mark1, 0);
-        mark1 = new boolean[n];
-        int[] res = new int[n];
-        sol(0, adj1, mark1, 0, b, n, res);
-        for (int i = 0; i < res.length; i++) {
-            if (res[i] != n) {
-                res[i] += Math.max(a, m - a);
-            } else {
-                res[i] += a;
+        int[] ans = new int[n];
+        for (int i = 0; i < n; i++) {
+            ans[i] = eo1[p1[2][i] % 2] + max;
+        }
+        return ans;
+    }
+
+    private int[][] parents(int[][] g, int root) {
+        int n = g.length;
+        int[] par = new int[n];
+        Arrays.fill(par, -1);
+        int[] depth = new int[n];
+        depth[0] = 0;
+        int[] q = new int[n];
+        q[0] = root;
+        for (int p = 0, r = 1; p < r; p++) {
+            int cur = q[p];
+            for (int nex : g[cur]) {
+                if (par[cur] != nex) {
+                    q[r++] = nex;
+                    par[nex] = cur;
+                    depth[nex] = depth[cur] + 1;
+                }
             }
         }
-        return res;
+        return new int[][] {par, q, depth};
+    }
+
+    private int[][] packU(int n, int[][] ft) {
+        int[][] g = new int[n][];
+        int[] p = new int[n];
+        for (int[] u : ft) {
+            p[u[0]]++;
+            p[u[1]]++;
+        }
+        for (int i = 0; i < n; i++) {
+            g[i] = new int[p[i]];
+        }
+        for (int[] u : ft) {
+            g[u[0]][--p[u[0]]] = u[1];
+            g[u[1]][--p[u[1]]] = u[0];
+        }
+        return g;
     }
 }

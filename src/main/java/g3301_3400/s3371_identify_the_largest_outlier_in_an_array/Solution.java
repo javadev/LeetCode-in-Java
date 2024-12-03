@@ -1,33 +1,30 @@
 package g3301_3400.s3371_identify_the_largest_outlier_in_an_array;
 
-// #Medium #2024_12_01_Time_633_ms_(100.00%)_Space_64.5_MB_(100.00%)
-
-import java.util.TreeMap;
+// #Medium #Array #Hash_Table #Counting #Enumeration
+// #2024_12_03_Time_5_ms_(100.00%)_Space_60.6_MB_(33.40%)
 
 public class Solution {
     public int getLargestOutlier(int[] nums) {
+        int[] cnt = new int[2001];
         int sum = 0;
-        for (int num : nums) {
-            sum += num;
+        for (int i : nums) {
+            sum += i;
+            cnt[i + 1000]++;
         }
-        TreeMap<Integer, Integer> frequencyMap = new TreeMap<>();
-        for (int num : nums) {
-            frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
-        }
-        int ans = Integer.MIN_VALUE;
-        for (int num : nums) {
-            if ((sum - num) % 2 == 0) {
-                int target = (sum - num) / 2;
-                frequencyMap.put(num, frequencyMap.get(num) - 1);
-                if (frequencyMap.get(num) == 0) {
-                    frequencyMap.remove(num);
-                }
-                if (frequencyMap.containsKey(target)) {
-                    ans = Math.max(ans, num);
-                }
-                frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
+        for (int i = cnt.length - 1; i >= 0; --i) {
+            int j = i - 1000;
+            if (cnt[i] == 0) {
+                continue;
             }
+            sum -= j;
+            int csum = (sum >> 1) + 1000;
+            cnt[i]--;
+            if (sum % 2 == 0 && csum >= 0 && csum < cnt.length && cnt[csum] > 0) {
+                return j;
+            }
+            sum += j;
+            cnt[i]++;
         }
-        return ans == Integer.MIN_VALUE ? -1 : ans;
+        return 0;
     }
 }
