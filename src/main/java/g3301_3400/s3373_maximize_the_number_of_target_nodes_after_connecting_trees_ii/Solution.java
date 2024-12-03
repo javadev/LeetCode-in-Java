@@ -38,7 +38,9 @@ public class Solution {
         depth[0] = 0;
         int[] q = new int[n];
         q[0] = root;
-        for (int p = 0, r = 1; p < r; p++) {
+        int p = 0;
+        int r = 1;
+        while (p < r) {
             int cur = q[p];
             for (int nex : g[cur]) {
                 if (par[cur] != nex) {
@@ -47,6 +49,7 @@ public class Solution {
                     depth[nex] = depth[cur] + 1;
                 }
             }
+            p++;
         }
         return new int[][] {par, q, depth};
     }

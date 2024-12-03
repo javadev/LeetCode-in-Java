@@ -49,9 +49,8 @@ public class Solution {
                 }
             }
         }
-        for (int i = high - 1; i >= 0 && op1 > 0; i--) {
+        for (int i = high - 1; i >= 0 && op1 > 0; i--, op1--) {
             nums[i] = (nums[i] + 1) / 2;
-            op1--;
         }
         for (int x : nums) {
             ans += x;

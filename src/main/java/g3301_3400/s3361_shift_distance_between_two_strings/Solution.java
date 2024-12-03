@@ -18,12 +18,14 @@ public class Solution {
         }
         for (int i = 0; i < 26; i++) {
             cost = previousCost[i];
-            for (int j = (i == 0 ? 25 : i - 1); j != i; j--) {
+            int j = i == 0 ? 25 : i - 1;
+            while (j != i) {
                 costs[i][j] = Math.min(costs[i][j], cost);
                 cost += previousCost[j];
                 if (j == 0) {
                     j = 26;
                 }
+                j--;
             }
         }
         int n = s.length();
