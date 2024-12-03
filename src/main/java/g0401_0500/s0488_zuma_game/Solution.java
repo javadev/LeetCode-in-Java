@@ -16,10 +16,10 @@ public class Solution {
     }
 
     private int findMinStepDp(String board, String hand, Map<String, Map<String, Integer>> dp) {
-        if (board.length() == 0) {
+        if (board.isEmpty()) {
             return 0;
         }
-        if (hand.length() == 0) {
+        if (hand.isEmpty()) {
             return -1;
         }
         if (dp.get(board) != null && dp.get(board).get(hand) != null) {

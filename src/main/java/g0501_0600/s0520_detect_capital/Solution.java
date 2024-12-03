@@ -4,7 +4,7 @@ package g0501_0600.s0520_detect_capital;
 
 public class Solution {
     public boolean detectCapitalUse(String word) {
-        if (word == null || word.length() == 0) {
+        if (word == null || word.isEmpty()) {
             return false;
         }
         int upper = 0;

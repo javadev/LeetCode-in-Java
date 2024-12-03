@@ -26,7 +26,7 @@ public class Solution {
     }
 
     private String getCommon(String s1, String s2) {
-        if (s1.length() == 0 || s2.length() == 0) {
+        if (s1.isEmpty() || s2.isEmpty()) {
             return "";
         }
         int[] c1c = countChars(s1);

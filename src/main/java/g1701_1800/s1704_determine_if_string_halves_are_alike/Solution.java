@@ -4,7 +4,7 @@ package g1701_1800.s1704_determine_if_string_halves_are_alike;
 
 public class Solution {
     public boolean halvesAreAlike(String s) {
-        if (s.length() < 1) {
+        if (s.isEmpty()) {
             return false;
         }
         return countVowel(0, s.length() / 2, s) == countVowel(s.length() / 2, s.length(), s);

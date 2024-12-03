@@ -5,13 +5,13 @@ package g0401_0500.s0434_number_of_segments_in_a_string;
 public class Solution {
     public int countSegments(String s) {
         s = s.trim();
-        if (s.length() == 0) {
+        if (s.isEmpty()) {
             return 0;
         }
         String[] splitted = s.split(" ");
         int result = 0;
         for (String value : splitted) {
-            if (value.length() > 0) {
+            if (!value.isEmpty()) {
                 result++;
             }
         }

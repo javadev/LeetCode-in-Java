@@ -9,7 +9,7 @@ import java.util.List;
 public class Solution {
     public List<String> addOperators(String num, int target) {
         List<String> res = new ArrayList<>();
-        if (num.length() == 0 || Long.parseLong(num) > Integer.MAX_VALUE) {
+        if (num.isEmpty() || Long.parseLong(num) > Integer.MAX_VALUE) {
             return res;
         }
         char[] list = num.toCharArray();

@@ -66,14 +66,14 @@ public class Solution {
                 folder.calculateHash();
                 builder.append('#');
                 builder.append(foldername);
-                if (folder.folderHash.length() > 0) {
+                if (!folder.folderHash.isEmpty()) {
                     builder.append('(');
                     builder.append(folder.folderHash);
                     builder.append(')');
                 }
             }
             folderHash = builder.toString();
-            if (folderHash.length() > 0) {
+            if (!folderHash.isEmpty()) {
                 ArrayList<Folder> duplicateFolders =
                         duplicates.computeIfAbsent(folderHash, k -> new ArrayList<>());
                 duplicateFolders.add(this);
