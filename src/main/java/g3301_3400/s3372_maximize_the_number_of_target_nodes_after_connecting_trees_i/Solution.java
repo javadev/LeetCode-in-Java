@@ -1,6 +1,6 @@
 package g3301_3400.s3372_maximize_the_number_of_target_nodes_after_connecting_trees_i;
 
-// #Medium #Tree #Depth_First_Search #Breadth_First_Search
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree
 // #2024_12_03_Time_50_ms_(99.49%)_Space_75.7_MB_(5.10%)
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package g3301_3400.s3367_maximize_sum_of_weights_after_edge_removals;
 
-// #Hard #Dynamic_Programming #Tree #Depth_First_Search
+// #Hard #Dynamic_Programming #Depth_First_Search #Tree
 // #2024_12_03_Time_104_ms_(91.49%)_Space_147.1_MB_(58.51%)
 
 import java.util.ArrayList;
