@@ -8,12 +8,14 @@ public class Solution {
         long cost;
         for (int i = 0; i < 26; i++) {
             cost = nextCost[i];
-            for (int j = (i == 25 ? 0 : i + 1); j != i; j++) {
+            int j = i == 25 ? 0 : i + 1;
+            while (j != i) {
                 costs[i][j] = cost;
                 cost += nextCost[j];
                 if (j == 25) {
                     j = -1;
                 }
+                j++;
             }
         }
         for (int i = 0; i < 26; i++) {
