@@ -11,13 +11,13 @@ public class Solution {
         int[][] g1 = packU(n, edges1);
         int m = edges2.length + 1;
         int[][] g2 = packU(m, edges2);
-        int[][] p2 = parents(g2, 0);
+        int[][] p2 = parents(g2);
         int[] eo2 = new int[2];
         for (int i = 0; i < m; i++) {
             eo2[p2[2][i] % 2]++;
         }
         int max = Math.max(eo2[0], eo2[1]);
-        int[][] p1 = parents(g1, 0);
+        int[][] p1 = parents(g1);
         int[] eo1 = new int[2];
         for (int i = 0; i < n; i++) {
             eo1[p1[2][i] % 2]++;
@@ -29,14 +29,14 @@ public class Solution {
         return ans;
     }
 
-    private int[][] parents(int[][] g, int root) {
+    private int[][] parents(int[][] g) {
         int n = g.length;
         int[] par = new int[n];
         Arrays.fill(par, -1);
         int[] depth = new int[n];
         depth[0] = 0;
         int[] q = new int[n];
-        q[0] = root;
+        q[0] = 0;
         int p = 0;
         int r = 1;
         while (p < r) {
