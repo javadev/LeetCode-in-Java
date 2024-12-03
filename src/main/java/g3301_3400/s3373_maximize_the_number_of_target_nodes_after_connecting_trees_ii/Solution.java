@@ -11,7 +11,6 @@ public class Solution {
         int[][] g1 = packU(n, edges1);
         int m = edges2.length + 1;
         int[][] g2 = packU(m, edges2);
-
         int[][] p2 = parents(g2, 0);
         int[] eo2 = new int[2];
         for (int i = 0; i < m; i++) {
