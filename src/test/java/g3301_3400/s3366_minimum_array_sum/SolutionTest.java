@@ -15,4 +15,18 @@ class SolutionTest {
     void minArraySum2() {
         assertThat(new Solution().minArraySum(new int[] {2, 4, 3}, 3, 2, 1), equalTo(3));
     }
+
+    @Test
+    void minArraySum3() {
+        assertThat(
+                new Solution()
+                        .minArraySum(
+                                new int[] {
+                                    1, 3, 5, 7, 9, 12, 12, 12, 13, 15, 15, 15, 16, 17, 19, 20
+                                },
+                                11,
+                                15,
+                                4),
+                equalTo(77));
+    }
 }
