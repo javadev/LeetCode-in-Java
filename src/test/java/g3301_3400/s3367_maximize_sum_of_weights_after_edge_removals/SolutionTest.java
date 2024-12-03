@@ -31,4 +31,11 @@ class SolutionTest {
                                 3),
                 equalTo(65L));
     }
+
+    @Test
+    void maximizeSumOfWeights3() {
+        assertThat(
+                new Solution().maximizeSumOfWeights(new int[][] {{0, 1, 34}, {0, 2, 17}}, 1),
+                equalTo(34L));
+    }
 }
