@@ -6,12 +6,12 @@ SQL Schema
 
 Table: `user_content`
 
-+-------------+---------+
-| Column Name | Type    |
-+-------------+---------+
-| content_id  | int     |
-| content_text| varchar |
-+-------------+---------+
+    +-------------+---------+
+    | Column Name | Type    |
+    +-------------+---------+
+    | content_id  | int     |
+    | content_text| varchar |
+    +-------------+---------+
 content_id is the unique key for this table. Each row contains a unique ID and the corresponding text content. 
 
 Write a solution to transform the text in the `content_text` column by applying the following rules:
@@ -31,25 +31,25 @@ The result format is in the following example.
 
 user\_content table:
 
-+------------+---------------------------------+
-| content_id | content_text                    |
-+------------+---------------------------------+
-| 1          | hello world of SQL              |
-| 2          | the QUICK-brown fox             |
-| 3          | modern-day DATA science         |
-| 4          | web-based FRONT-end development |
-+------------+---------------------------------+ 
+    +------------+---------------------------------+
+    | content_id | content_text                    |
+    +------------+---------------------------------+
+    | 1          | hello world of SQL              |
+    | 2          | the QUICK-brown fox             |
+    | 3          | modern-day DATA science         |
+    | 4          | web-based FRONT-end development |
+    +------------+---------------------------------+ 
 
 **Output:**
 
-+------------+---------------------------------+---------------------------------+
-| content_id | original_text                   | converted_text                  |
-+------------+---------------------------------+---------------------------------+
-| 1          | hello world of SQL              | Hello World Of Sql              |
-| 2          | the QUICK-brown fox             | The Quick-Brown Fox             |
-| 3          | modern-day DATA science         | Modern-Day Data Science         |
-| 4          | web-based FRONT-end development | Web-Based Front-End Development |
-+------------+---------------------------------+---------------------------------+ 
+    +------------+---------------------------------+---------------------------------+
+    | content_id | original_text                   | converted_text                  |
+    +------------+---------------------------------+---------------------------------+
+    | 1          | hello world of SQL              | Hello World Of Sql              |
+    | 2          | the QUICK-brown fox             | The Quick-Brown Fox             |
+    | 3          | modern-day DATA science         | Modern-Day Data Science         |
+    | 4          | web-based FRONT-end development | Web-Based Front-End Development |
+    +------------+---------------------------------+---------------------------------+ 
 
 **Explanation:**
 
