@@ -25,13 +25,13 @@ public class Solution {
             if (parent[u] == u) {
                 return u;
             }
-            return parent[u] = find(parent[u]);
+            parent[u] = find(parent[u]);
+            return parent[u];
         }
 
         public void union(int u, int v) {
             int parentU = find(u);
             int parentV = find(v);
-
             if (parentU != parentV) {
                 totalComponents--;
                 if (rank[parentU] == rank[parentV]) {
