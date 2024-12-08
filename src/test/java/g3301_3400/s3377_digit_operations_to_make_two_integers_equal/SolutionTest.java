@@ -20,4 +20,9 @@ class SolutionTest {
     void minOperations3() {
         assertThat(new Solution().minOperations(6, 2), equalTo(-1));
     }
+
+    @Test
+    void minOperations4() {
+        assertThat(new Solution().minOperations(17, 72), equalTo(-1));
+    }
 }
