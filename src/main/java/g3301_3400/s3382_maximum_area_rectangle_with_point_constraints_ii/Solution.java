@@ -32,8 +32,8 @@ public class Solution {
                         break;
                     }
                     if (y1 == y0 && pair[i + 1].x == pair[i].x && pair[i + 1].y == p1.y) {
-                        long dY = p1.y - y0;
-                        long dX = pair[i].x - p1.x;
+                        long dY = p1.y - (long) y0;
+                        long dX = pair[i].x - (long) p1.x;
                         best = Math.max(dY * dX, best);
                     }
                     if (p1.x != pair[i].x) {
@@ -50,6 +50,7 @@ public class Solution {
         return best;
     }
 
+    @SuppressWarnings("java:S1210")
     private static class Pair implements Comparable<Pair> {
         private final int x;
         private final int y;
