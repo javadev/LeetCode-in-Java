@@ -1,6 +1,7 @@
 package g3301_3400.s3378_count_connected_components_in_lcm_graph;
 
-// #Hard #2024_12_07_Time_48_ms_(100.00%)_Space_59.5_MB_(100.00%)
+// #Hard #Array #Hash_Table #Math #Union_Find #Number_Theory
+// #2024_12_10_Time_68_ms_(67.83%)_Space_59.8_MB_(62.24%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

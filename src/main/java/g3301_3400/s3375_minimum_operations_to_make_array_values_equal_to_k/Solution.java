@@ -1,6 +1,6 @@
 package g3301_3400.s3375_minimum_operations_to_make_array_values_equal_to_k;
 
-// #Easy #2024_12_07_Time_3_ms_(100.00%)_Space_44.5_MB_(100.00%)
+// #Easy #Array #Hash_Table #2024_12_10_Time_3_ms_(78.92%)_Space_44.6_MB_(67.39%)
 
 import java.util.HashSet;
 import java.util.Set;
