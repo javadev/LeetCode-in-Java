@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+@SuppressWarnings("java:S3824")
 public class Solution {
     private double res;
     private Map<String, List<Pair>> map1;
