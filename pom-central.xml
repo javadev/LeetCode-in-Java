@@ -96,7 +96,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.11.1</version>
+                <version>3.11.2</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -118,7 +118,7 @@
                         <docletArtifact>
                             <groupId>com.vladsch.flexmark</groupId>
                             <artifactId>flexmark-all</artifactId>
-                            <version>0.64.0</version>
+                            <version>0.64.8</version>
                         </docletArtifact>
                     </docletArtifacts>
                     <additionalDependencies>
