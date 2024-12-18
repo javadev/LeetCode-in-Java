@@ -20,7 +20,6 @@ public class Solution {
         }
         int minops = 2 * 10000;
         for (int j = 0; j <= max; j++) {
-            int ops = 0;
             int ifdel = 0;
             int ifadd = 0;
             int free = 0;
