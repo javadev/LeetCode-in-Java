@@ -1,6 +1,7 @@
 package g3301_3400.s3387_maximize_amount_after_two_days_of_conversions;
 
-// #Medium #2024_12_15_Time_7_ms_(100.00%)_Space_46.6_MB_(100.00%)
+// #Medium #Array #String #Graph #Depth_First_Search #Breadth_First_Search
+// #2024_12_18_Time_7_ms_(87.88%)_Space_47.5_MB_(43.35%)
 
 import java.util.ArrayList;
 import java.util.HashMap;
