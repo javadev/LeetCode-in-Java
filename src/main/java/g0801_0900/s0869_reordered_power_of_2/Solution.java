@@ -18,31 +18,6 @@ public class Solution {
         return false;
     }
 
-    private int noOfDigits(int n) {
-        if (n == 0) {
-            return 1;
-        }
-        return (int) Math.log10(Math.abs(n)) + 1;
-    }
-
-    private boolean check(int num1, int num2) {
-        int[] num = new int[10];
-        while (num1 > 0) {
-            num[num1 % 10]++;
-            num1 /= 10;
-        }
-        while (num2 > 0) {
-            num[num2 % 10]--;
-            num2 /= 10;
-        }
-        for (int i = 0; i < 10; i++) {
-            if (num[i] != 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
     private int[] countDigits(int num) {
         int[] digitCount = new int[10];
         while (num > 0) {
