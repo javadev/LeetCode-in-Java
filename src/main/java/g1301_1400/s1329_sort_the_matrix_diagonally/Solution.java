@@ -1,41 +1,35 @@
 package g1301_1400.s1329_sort_the_matrix_diagonally;
 
-// #Medium #Array #Sorting #Matrix #2022_03_19_Time_15_ms_(26.03%)_Space_47.7_MB_(56.76%)
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+// #Medium #Array #Sorting #Matrix #2024_12_19_Time_0_ms_(100.00%)_Space_44.7_MB_(81.35%)
 
 public class Solution {
-    public int[][] diagonalSort(int[][] mat) {
-        int m = mat.length;
-        int n = mat[0].length;
-        int[][] sorted = new int[m][n];
-        for (int i = m - 1; i >= 0; i--) {
-            int iCopy = i;
-            List<Integer> list = new ArrayList<>();
-            for (int j = 0; j < n && iCopy < m; j++, iCopy++) {
-                list.add(mat[iCopy][j]);
-            }
-            Collections.sort(list);
-            iCopy = i;
-            for (int j = 0; j < n && iCopy < m; j++, iCopy++) {
-                sorted[iCopy][j] = list.get(j);
-            }
-        }
+    private int[] count = new int[101];
+    private int m;
+    private int n;
 
-        for (int j = n - 1; j > 0; j--) {
-            int jCopy = j;
-            List<Integer> list = new ArrayList<>();
-            for (int i = 0; i < m && jCopy < n; i++, jCopy++) {
-                list.add(mat[i][jCopy]);
-            }
-            Collections.sort(list);
-            jCopy = j;
-            for (int i = 0; i < m && jCopy < n; i++, jCopy++) {
-                sorted[i][jCopy] = list.get(i);
-            }
+    public void search(int[][] mat, int i, int j) {
+        for (int ti = i, tj = j; ti < m && tj < n; ti++, tj++) {
+            count[mat[ti][tj]]++;
         }
-        return sorted;
+        int c = 0;
+        for (int ti = i, tj = j; ti < m && tj < n; ti++, tj++) {
+            while (count[c] == 0) {
+                c++;
+            }
+            mat[ti][tj] = c;
+            count[c]--;
+        }
+    }
+
+    public int[][] diagonalSort(int[][] mat) {
+        m = mat.length;
+        n = mat[0].length;
+        for (int i = 0; i < m; i++) {
+            search(mat, i, 0);
+        }
+        for (int i = 1; i < n; i++) {
+            search(mat, 0, i);
+        }
+        return mat;
     }
 }

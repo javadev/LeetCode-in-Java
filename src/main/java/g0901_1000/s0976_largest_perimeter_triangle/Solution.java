@@ -1,7 +1,7 @@
 package g0901_1000.s0976_largest_perimeter_triangle;
 
 // #Easy #Array #Math #Sorting #Greedy #Programming_Skills_I_Day_3_Conditional_Statements
-// #2022_03_31_Time_12_ms_(26.01%)_Space_53.8_MB_(69.91%)
+// #2024_12_19_Time_7_ms_(99.33%)_Space_45.5_MB_(8.45%)
 
 import java.util.Arrays;
 

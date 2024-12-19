@@ -1,22 +1,31 @@
 package g1401_1500.s1408_string_matching_in_an_array;
 
-// #Easy #String #String_Matching #2022_03_26_Time_8_ms_(24.88%)_Space_43.3_MB_(13.46%)
+// #Easy #String #String_Matching #2024_12_19_Time_1_ms_(100.00%)_Space_42.7_MB_(5.57%)
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class Solution {
     public List<String> stringMatching(String[] words) {
-        Set<String> set = new HashSet<>();
-        for (String word : words) {
-            for (String s : words) {
-                if (!word.equals(s) && word.length() < s.length() && s.contains(word)) {
-                    set.add(word);
-                }
+        List<String> matchedStrings = new ArrayList<>();
+        for (int i = 0; i < words.length; i++) {
+            boolean containsSubstring = checkContains(words, i);
+            if (containsSubstring) {
+                matchedStrings.add(words[i]);
             }
         }
-        return new ArrayList<>(set);
+        return matchedStrings;
+    }
+
+    private boolean checkContains(String[] words, int index) {
+        for (int j = 0; j < words.length; j++) {
+            if (index == j) {
+                continue;
+            }
+            if (words[j].contains(words[index])) {
+                return true;
+            }
+        }
+        return false;
     }
 }

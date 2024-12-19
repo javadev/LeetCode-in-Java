@@ -1,59 +1,60 @@
 package g0801_0900.s0870_advantage_shuffle;
 
-// #Medium #Array #Sorting #Greedy #2022_03_28_Time_188_ms_(28.01%)_Space_116.9_MB_(5.12%)
+// #Medium #Array #Sorting #Greedy #2024_12_19_Time_42_ms_(99.16%)_Space_56.1_MB_(94.94%)
 
-import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Deque;
-import java.util.HashMap;
 import java.util.List;
-import java.util.PriorityQueue;
 
-@SuppressWarnings("java:S5413")
 public class Solution {
     public int[] advantageCount(int[] nums1, int[] nums2) {
-        PriorityQueue<Integer> pque = new PriorityQueue<>();
-        for (int e : nums1) {
-            pque.add(e);
-        }
-        int l = nums1.length;
-        HashMap<Integer, List<Integer>> map = new HashMap<>();
-        int[] n = new int[l];
-        System.arraycopy(nums2, 0, n, 0, l);
-        Arrays.sort(n);
-        Deque<Integer> sta = new ArrayDeque<>();
-        for (int i = 0; i < l && !pque.isEmpty(); i++) {
-            List<Integer> p = map.getOrDefault(n[i], new ArrayList<>());
-            int x = pque.poll();
-            if (x > n[i]) {
-                p.add(x);
-                map.put(n[i], p);
-            } else {
-                while (x <= n[i] && !pque.isEmpty()) {
-                    sta.push(x);
-                    x = pque.poll();
-                }
-                if (x > n[i]) {
-                    p.add(x);
-                    map.put(n[i], p);
-                } else {
-                    sta.push(x);
-                }
-            }
-        }
+        Arrays.sort(nums1);
+        int[] result = new int[nums1.length];
+        int low = 0;
+        boolean[] chosen = new boolean[nums1.length];
         for (int i = 0; i < nums2.length; i++) {
-            List<Integer> p = map.getOrDefault(nums2[i], new ArrayList<>());
-            int t;
-            if (!p.isEmpty()) {
-                t = p.get(0);
-                p.remove(0);
-                map.put(nums2[i], p);
+            int pos = binSearch(nums1, nums2[i], low, chosen);
+            if (pos != -1 && pos < nums1.length) {
+                result[i] = nums1[pos];
+                chosen[pos] = true;
             } else {
-                t = sta.pop();
+                result[i] = -1;
             }
-            nums1[i] = t;
         }
-        return nums1;
+        List<Integer> pos = new ArrayList<>();
+        int i = 0;
+        for (boolean ch : chosen) {
+            if (!ch) {
+                pos.add(i);
+            }
+            i++;
+        }
+        int index = 0;
+        for (i = 0; i < result.length; i++) {
+            if (result[i] == -1) {
+                result[i] = nums1[pos.get(index)];
+                index++;
+            }
+        }
+        return result;
+    }
+
+    private int binSearch(int[] nums, int target, int low, boolean[] chosen) {
+        int high = nums.length - 1;
+        while (high >= low) {
+            int mid = high - (high - low) / 2;
+            if (nums[mid] > target && (mid == 0 || nums[mid - 1] <= target)) {
+                while (mid < nums.length && chosen[mid]) {
+                    mid++;
+                }
+                return mid;
+            }
+            if (nums[mid] > target) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
+        return -1;
     }
 }
