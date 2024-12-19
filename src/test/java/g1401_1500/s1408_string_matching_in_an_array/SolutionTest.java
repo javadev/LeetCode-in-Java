@@ -19,7 +19,7 @@ class SolutionTest {
     void stringMatching2() {
         assertThat(
                 new Solution().stringMatching(new String[] {"leetcode", "et", "code"}),
-                equalTo(Arrays.asList("code", "et")));
+                equalTo(Arrays.asList("et", "code")));
     }
 
     @Test
