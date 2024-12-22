@@ -4,7 +4,7 @@ package g3301_3400.s3394_check_if_grid_can_be_cut_into_sections;
 
 import java.util.Arrays;
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused", "java:S1172"})
 public class Solution {
     public boolean checkValidCuts(int n, int[][] rectangles) {
         int m = rectangles.length;
