@@ -8,25 +8,20 @@ import java.util.List;
 import java.util.Map;
 
 public class Solution {
-
     private static final int MOD = 1000000007;
 
     public int subsequencesWithMiddleMode(int[] a) {
         int n = a.length;
-
         // Create a dictionary to store indices of each number
         Map<Integer, List<Integer>> dict = new HashMap<>();
         for (int i = 0; i < n; i++) {
             dict.computeIfAbsent(a[i], k -> new ArrayList<>()).add(i);
         }
-
         long ans = 0L;
-
         // Iterate over each unique number and its indices
         for (Map.Entry<Integer, List<Integer>> entry : dict.entrySet()) {
             List<Integer> b = entry.getValue();
             int m = b.size();
-
             for (int k = 0; k < m; k++) {
                 int i = b.get(k);
                 int r = m - 1 - k;
