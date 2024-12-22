@@ -5,7 +5,7 @@ package g3301_3400.s3393_count_paths_with_the_given_xor_value;
 import java.util.Arrays;
 
 public class Solution {
-    private final int mod = (int) (1e9 + 7);
+    private static final int MOD = (int) (1e9 + 7);
     private int m = -1;
     private int n = -1;
     private int[][][] dp;
@@ -35,7 +35,7 @@ public class Solution {
         }
         int down = dfs(grid, xorVal, k, i + 1, j);
         int right = dfs(grid, xorVal, k, i, j + 1);
-        dp[i][j][xorVal] = (down + right) % mod;
+        dp[i][j][xorVal] = (down + right) % MOD;
         return dp[i][j][xorVal];
     }
 }

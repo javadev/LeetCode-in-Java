@@ -61,7 +61,9 @@ public class Solution {
                 if (!midEntry.getKey().equals(tmpEntry.getKey())) {
                     List<Integer> c = tmpEntry.getValue();
                     int size = c.size();
-                    for (int k = 0, j = 0; k < m; k++) {
+                    int k = 0;
+                    int j = 0;
+                    while (k < m) {
                         int i = b.get(k);
                         int r = m - 1 - k;
                         int u = i - k;
@@ -114,6 +116,7 @@ public class Solution {
                         dif =
                                 (dif + convert(r, 1) * convert(x, 2) % MOD * convert(y, 1) % MOD)
                                         % MOD;
+                        k++;
                     }
                 }
             }
