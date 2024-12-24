@@ -59,9 +59,6 @@ public class Solution {
 
     private boolean check(int sz, List<Integer> seg, int ops) {
         for (int i : seg) {
-            if (i <= sz) {
-                continue;
-            }
             int x = i / (sz + 1);
             ops -= x;
             if (ops < 0) {
