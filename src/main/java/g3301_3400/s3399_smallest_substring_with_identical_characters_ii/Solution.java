@@ -1,87 +1,73 @@
 package g3301_3400.s3399_smallest_substring_with_identical_characters_ii;
 
-// #Hard #2024_12_24_Time_11_ms_(100.00%)_Space_45.7_MB_(54.55%)
+// #Hard #2024_12_24_Time_15_ms_(99.39%)_Space_45.9_MB_(43.03%)
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
     public int minLength(String s, int numOps) {
-        int l = s.length();
-        int lingyi = 0;
-        int yiling = 0;
-        List<Integer> pq = new ArrayList<>();
-        char thisone = s.charAt(0);
-        int chang = 1;
-        if (thisone == '0') {
-            yiling++;
-        } else {
-            lingyi++;
-        }
-        for (int i = 1; i < l; i++) {
-            char cur = s.charAt(i);
-            if (cur == thisone) {
-                chang++;
-            } else {
-                if (chang >= 2) {
-                    pq.add(chang);
-                }
-                chang = 1;
-                thisone = cur;
+        byte[] b = s.getBytes();
+        int flips1 = 0;
+        int flips2 = 0;
+        for (int i = 0; i < b.length; i++) {
+            byte e1 = (byte) ((i % 2 == 0) ? '0' : '1');
+            byte e2 = (byte) ((i % 2 == 0) ? '1' : '0');
+            if (b[i] != e1) {
+                flips1++;
             }
-            if (i % 2 == 0) {
-                if (cur == '0') {
-                    yiling++;
-                } else {
-                    lingyi++;
-                }
-            } else {
-                if (cur == '0') {
-                    lingyi++;
-                } else {
-                    yiling++;
-                }
+            if (b[i] != e2) {
+                flips2++;
             }
         }
-        if (numOps >= lingyi || numOps >= yiling) {
+        int flips = Math.min(flips1, flips2);
+        if (flips <= numOps) {
             return 1;
         }
-        if (chang >= 2) {
-            pq.add(chang);
-        }
-        int one = -1;
-        int two = -1;
-        for (int cur : pq) {
-            if (cur > one) {
-                two = one;
-                one = cur;
-            } else if (cur > two) {
-                two = cur;
-            }
-        }
-        if (two == -1) {
-            return one / (numOps + 1) > 1 ? one / (numOps + 1) : 2;
-        }
-        if (numOps == 0) {
-            return one;
-        }
-        if (numOps == 1) {
-            return (one / 2 > two) ? (one / 2 == 1 ? 2 : one / 2) : two;
-        }
-        int left = 2;
-        int right = l / (numOps + 1);
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            int sum = 0;
-            for (Integer integer : pq) {
-                sum += integer / (mid + 1);
-            }
-            if (sum <= numOps) {
-                right = mid;
+        List<Integer> seg = new ArrayList<>();
+        int count = 1;
+        int max = 1;
+        for (int i = 1; i < b.length; i++) {
+            if (b[i] != b[i - 1]) {
+                if (count != 1) {
+                    seg.add(count);
+                    max = Math.max(max, count);
+                }
+                count = 1;
             } else {
-                left = mid + 1;
+                count++;
             }
         }
-        return left;
+        if (count != 1) {
+            seg.add(count);
+            max = Math.max(max, count);
+        }
+        int l = 2;
+        int r = max;
+        int res = max;
+        while (l <= r) {
+            int m = l + (r - l) / 2;
+            if (check(m, seg, numOps)) {
+                r = m - 1;
+                res = m;
+            } else {
+                l = m + 1;
+            }
+        }
+        return res;
+    }
+
+    private boolean check(int sz, List<Integer> seg, int ops) {
+        for (int i : seg) {
+            if (i <= sz) {
+                continue;
+            }
+            int x = i / (sz + 1);
+            ops -= x;
+            if (ops < 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }
