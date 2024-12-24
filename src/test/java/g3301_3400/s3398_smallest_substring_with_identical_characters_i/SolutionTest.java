@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void minLength() {
-        assertThat(new Solution().minLength("000001", 1), equalTo(1));
+        assertThat(new Solution().minLength("000001", 1), equalTo(2));
     }
 
     @Test
