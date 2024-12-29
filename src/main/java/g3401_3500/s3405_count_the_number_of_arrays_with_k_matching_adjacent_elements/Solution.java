@@ -3,7 +3,7 @@ package g3401_3500.s3405_count_the_number_of_arrays_with_k_matching_adjacent_ele
 // #Hard #2024_12_29_Time_57_(100.00%)_Space_44.55_(100.00%)
 
 public class Solution {
-    private final static int MOD = (int) (1e9 + 7);
+    private static final int MOD = (int) (1e9 + 7);
 
     public int countGoodArrays(int n, int m, int k) {
         long[] f = new long[n + 1];
