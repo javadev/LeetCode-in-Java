@@ -15,4 +15,9 @@ class SolutionTest {
     void answerString2() {
         assertThat(new Solution().answerString("gggg", 4), equalTo("g"));
     }
+
+    @Test
+    void answerString3() {
+        assertThat(new Solution().answerString("a", 1), equalTo("a"));
+    }
 }

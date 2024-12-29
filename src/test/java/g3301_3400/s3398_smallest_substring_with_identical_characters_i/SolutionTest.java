@@ -20,4 +20,9 @@ class SolutionTest {
     void minLength3() {
         assertThat(new Solution().minLength("0101", 0), equalTo(1));
     }
+
+    @Test
+    void minLength4() {
+        assertThat(new Solution().minLength("000", 2), equalTo(1));
+    }
 }
