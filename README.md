@@ -706,7 +706,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.39'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0976 |[Largest Perimeter Triangle](src/main/java/g0901_1000/s0976_largest_perimeter_triangle/Solution.java)| Easy | Array, Math, Sorting, Greedy | 12 | 26.01
+| 0976 |[Largest Perimeter Triangle](src/main/java/g0901_1000/s0976_largest_perimeter_triangle/Solution.java)| Easy | Array, Math, Sorting, Greedy | 7 | 99.33
 | 1779 |[Find Nearest Point That Has the Same X or Y Coordinate](src/main/java/g1701_1800/s1779_find_nearest_point_that_has_the_same_x_or_y_coordinate/Solution.java)| Easy | Array | 1 | 100.00
 
 #### Day 4 Loop
