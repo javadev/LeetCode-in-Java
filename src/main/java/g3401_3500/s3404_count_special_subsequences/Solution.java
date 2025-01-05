@@ -1,6 +1,7 @@
 package g3401_3500.s3404_count_special_subsequences;
 
-// #Medium #2024_12_29_Time_331_(100.00%)_Space_55.49_(100.00%)
+// #Medium #Array #Combinatorics #Dynamic #Mathematics #Programming
+// #2024_12_29_Time_331_(100.00%)_Space_55.49_(100.00%)
 
 import java.util.HashMap;
 import java.util.Map;

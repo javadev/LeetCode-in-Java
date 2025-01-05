@@ -1,6 +1,7 @@
 package g3301_3400.s3399_smallest_substring_with_identical_characters_ii;
 
-// #Hard #2024_12_24_Time_15_ms_(99.39%)_Space_45.9_MB_(43.03%)
+// #Hard #String #Greedy #Bit_Manipulation #Sliding_Window #Optimization
+// #2024_12_24_Time_15_ms_(99.39%)_Space_45.9_MB_(43.03%)
 
 import java.util.ArrayList;
 import java.util.List;
