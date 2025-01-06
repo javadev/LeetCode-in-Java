@@ -7,18 +7,18 @@ import java.util.Arrays;
 public class Solution {
     private static final int MASK = (1 << 30) - 1;
 
-    public boolean checkValidCuts(int m, int[][] rc) {
-        int n = rc.length;
+    public boolean checkValidCuts(int m, int[][] rectangles) {
+        int n = rectangles.length;
         long[] start = new long[n];
         for (int i = 0; i < n; i++) {
-            start[i] = ((long) rc[i][1] << 32) + rc[i][3];
+            start[i] = ((long) rectangles[i][1] << 32) + rectangles[i][3];
         }
         Arrays.sort(start);
         if (validate(start)) {
             return true;
         }
         for (int i = 0; i < n; i++) {
-            start[i] = ((long) rc[i][0] << 32) + rc[i][2];
+            start[i] = ((long) rectangles[i][0] << 32) + rectangles[i][2];
         }
         Arrays.sort(start);
         return validate(start);
