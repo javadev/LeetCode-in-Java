@@ -1,7 +1,7 @@
 package g3301_3400.s3393_count_paths_with_the_given_xor_value;
 
-// #Medium #Dynamic_Programming #Math #Bit_Manipulation
-// #2024_12_22_Time_83_ms_(100.00%)_Space_57_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #Math #Matrix #Bit_Manipulation
+// #2025_01_06_Time_76_(62.72%)_Space_56.92_(68.41%)
 
 import java.util.Arrays;
 

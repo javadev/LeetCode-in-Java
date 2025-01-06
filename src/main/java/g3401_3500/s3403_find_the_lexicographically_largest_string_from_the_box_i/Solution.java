@@ -1,7 +1,6 @@
 package g3401_3500.s3403_find_the_lexicographically_largest_string_from_the_box_i;
 
-// #Medium #String #Sorting #Greedy #Backtracking #Combinatorics
-// #2024_12_29_Time_5_(100.00%)_Space_45.20_(100.00%)
+// #Medium #String #Two_Pointers #Enumeration #2025_01_06_Time_5_(89.70%)_Space_45.38_(80.39%)
 
 public class Solution {
     public String answerString(String word, int numFriends) {

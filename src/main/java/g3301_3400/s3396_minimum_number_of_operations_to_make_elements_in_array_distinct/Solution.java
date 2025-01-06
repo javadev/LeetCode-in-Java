@@ -1,7 +1,6 @@
 package g3301_3400.s3396_minimum_number_of_operations_to_make_elements_in_array_distinct;
 
-// #Easy #Array #Greedy #Simulation #Distinct #Elements #Operations
-// #2024_12_22_Time_4_ms_(100.00%)_Space_45_MB_(100.00%)
+// #Easy #Array #Greedy #Simulation #2025_01_06_Time_3_(60.47%)_Space_44.61_(50.65%)
 
 import java.util.HashMap;
 import java.util.Map;

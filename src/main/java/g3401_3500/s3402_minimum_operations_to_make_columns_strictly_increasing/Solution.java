@@ -1,7 +1,6 @@
 package g3401_3500.s3402_minimum_operations_to_make_columns_strictly_increasing;
 
-// #Easy #Array #Dynamic_Programming #Greedy #Matrix #Simulation
-// #2024_12_29_Time_1_(100.00%)_Space_44.99_(100.00%)
+// #Easy #Matrix #Simulation #2025_01_06_Time_1_(99.95%)_Space_45.24_(62.37%)
 
 public class Solution {
     public int minimumOperations(int[][] grid) {
