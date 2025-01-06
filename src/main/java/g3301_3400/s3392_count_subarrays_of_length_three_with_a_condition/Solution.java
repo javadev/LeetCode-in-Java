@@ -1,6 +1,6 @@
 package g3301_3400.s3392_count_subarrays_of_length_three_with_a_condition;
 
-// #Easy #Array #Sliding_Window #2024_12_22_Time_1_ms_(100.00%)_Space_45.5_MB_(100.00%)
+// #Easy #Array #2025_01_06_Time_1_(100.00%)_Space_44.87_(93.12%)
 
 public class Solution {
     public int countSubarrays(int[] nums) {

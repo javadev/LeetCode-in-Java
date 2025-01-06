@@ -1,7 +1,7 @@
 package g3301_3400.s3395_subsequences_with_a_unique_middle_mode_i;
 
-// #Hard #Dynamic_Programming #Sliding_Window #Combinatorics #Subsequence
-// #2024_12_22_Time_1115_ms_(100.00%)_Space_45.2_MB_(100.00%)
+// #Hard #Array #Hash_Table #Math #Combinatorics
+// #2025_01_06_Time_1141_(39.01%)_Space_44.78_(100.00%)
 
 import java.util.ArrayList;
 import java.util.HashMap;
