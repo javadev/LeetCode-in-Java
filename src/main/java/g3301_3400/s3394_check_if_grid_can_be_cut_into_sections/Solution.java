@@ -4,6 +4,7 @@ package g3301_3400.s3394_check_if_grid_can_be_cut_into_sections;
 
 import java.util.Arrays;
 
+@SuppressWarnings({"unused", "java:S1172"})
 public class Solution {
     private static final int MASK = (1 << 30) - 1;
 
