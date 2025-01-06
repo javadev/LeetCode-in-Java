@@ -1,6 +1,7 @@
 package g3301_3400.s3398_smallest_substring_with_identical_characters_i;
 
-// #Hard #2024_12_24_Time_1_ms_(100.00%)_Space_42.9_MB_(39.83%)
+// #Hard #String #Greedy #Bit_Manipulation #Sliding_Window #Optimization
+// #2024_12_24_Time_1_ms_(100.00%)_Space_42.9_MB_(39.83%)
 
 public class Solution {
     public int minLength(String s, int ops) {

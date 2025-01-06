@@ -1,6 +1,7 @@
 package g3401_3500.s3405_count_the_number_of_arrays_with_k_matching_adjacent_elements;
 
-// #Hard #2024_12_29_Time_57_(100.00%)_Space_44.55_(100.00%)
+// #Hard #Dynamic_Programming #Combinatorics #Arrays #Mathematics
+// #2024_12_29_Time_57_(100.00%)_Space_44.55_(100.00%)
 
 public class Solution {
     private static final int MOD = (int) (1e9 + 7);
