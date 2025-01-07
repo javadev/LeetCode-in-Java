@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
+@SuppressWarnings("java:S6541")
 public class Solution {
     public int[] maximumWeight(List<List<Integer>> intervals) {
         int n = intervals.size();
@@ -57,7 +58,6 @@ public class Solution {
                     }
                     return Integer.compare(a.x.length, b.x.length);
                 };
-
         for (int i = 0; i < n; i++) {
             dp[i][0] = base;
             for (int k = 1; k <= 4; k++) {
@@ -76,9 +76,8 @@ public class Solution {
         S ans = base;
         for (int k = 1; k <= 4; k++) {
             S candidate = dp[n - 1][k];
-            if (ans.sum < candidate.sum) {
-                ans = candidate;
-            } else if (ans.sum == candidate.sum && cmp.compare(ans, candidate) > 0) {
+            if (ans.sum < candidate.sum
+                    || ans.sum == candidate.sum && cmp.compare(ans, candidate) > 0) {
                 ans = candidate;
             }
         }

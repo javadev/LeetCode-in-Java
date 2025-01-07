@@ -11,25 +11,27 @@ public class Solution {
         int n = coins.length;
         long res = 0;
         long cur = 0;
-        for (int i = 0, j = 0; i < n; ++i) {
-            while (j < n && coins[j][1] <= coins[i][0] + k - 1) {
+        int j = 0;
+        for (int[] ints : coins) {
+            while (j < n && coins[j][1] <= ints[0] + k - 1) {
                 cur += (long) (coins[j][1] - coins[j][0] + 1) * coins[j][2];
                 j++;
             }
             if (j < n) {
-                long part = (long) Math.max(0, coins[i][0] + k - 1 - coins[j][0] + 1) * coins[j][2];
+                long part = (long) Math.max(0, ints[0] + k - 1 - coins[j][0] + 1) * coins[j][2];
                 res = Math.max(res, cur + part);
             }
-            cur -= (long) (coins[i][1] - coins[i][0] + 1) * coins[i][2];
+            cur -= (long) (ints[1] - ints[0] + 1) * ints[2];
         }
         cur = 0;
-        for (int i = 0, j = 0; i < n; ++i) {
-            cur += (long) (coins[i][1] - coins[i][0] + 1) * coins[i][2];
-            while (coins[j][1] < coins[i][1] - k + 1) {
+        j = 0;
+        for (int[] coin : coins) {
+            cur += (long) (coin[1] - coin[0] + 1) * coin[2];
+            while (coins[j][1] < coin[1] - k + 1) {
                 cur -= (long) (coins[j][1] - coins[j][0] + 1) * coins[j][2];
                 j++;
             }
-            long part = (long) Math.max(0, coins[i][1] - k - coins[j][0] + 1) * coins[j][2];
+            long part = (long) Math.max(0, coin[1] - k - coins[j][0] + 1) * coins[j][2];
             res = Math.max(res, cur - part);
         }
         return res;
