@@ -1,6 +1,6 @@
 package g3401_3500.s3408_design_task_manager;
 
-// #Medium #Hash_Table #Design #Ordered_Set #Heap_Priority_Queue
+// #Medium #Hash_Table #Design #Heap_Priority_Queue #Ordered_Set
 // #2025_01_06_Time_349_(100.00%)_Space_152.40_(100.00%)
 
 import java.util.HashMap;
