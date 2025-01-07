@@ -28,7 +28,6 @@ public class Solution {
             prefixMap.put(0L, Math.min(prefixMap.get(0L), prefixSum));
             minPrefix = Math.min(minPrefix, prefixMap.get(0L));
         }
-
         return result;
     }
 }
