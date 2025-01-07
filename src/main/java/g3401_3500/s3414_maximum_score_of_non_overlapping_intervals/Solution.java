@@ -20,7 +20,8 @@ public class Solution {
         Arrays.sort(arr, (a, b) -> Long.compare(a[1], b[1]));
         int[] p = new int[n];
         for (int i = 0; i < n; i++) {
-            int l = 0, r = i - 1;
+            int l = 0;
+            int r = i - 1;
             while (l <= r) {
                 int m = (l + r) >>> 1;
                 if (arr[m][1] < arr[i][0]) {
