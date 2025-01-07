@@ -4,6 +4,7 @@ package g3401_3500.s3412_find_mirror_score_of_a_string;
 
 import java.util.ArrayList;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public long calculateScore(String s) {
         int n = s.length();
