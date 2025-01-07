@@ -27,7 +27,9 @@ public class Solution {
             for (j = 0; j < m; j++) {
                 char ch1 = s.charAt(j + i);
                 char ch2 = k.charAt(j);
-                if (ch1 != ch2) break;
+                if (ch1 != ch2) {
+                    break;
+                }
             }
             if (j == m) {
                 return i + j;

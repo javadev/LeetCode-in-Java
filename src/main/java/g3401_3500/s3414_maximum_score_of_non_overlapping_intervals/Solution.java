@@ -23,8 +23,11 @@ public class Solution {
             int l = 0, r = i - 1;
             while (l <= r) {
                 int m = (l + r) >>> 1;
-                if (arr[m][1] < arr[i][0]) l = m + 1;
-                else r = m - 1;
+                if (arr[m][1] < arr[i][0]) {
+                    l = m + 1;
+                } else {
+                    r = m - 1;
+                }
             }
             p[i] = r;
         }
@@ -43,9 +46,13 @@ public class Solution {
         S[][] dp = new S[n][5];
         Comparator<S> cmp =
                 (a, b) -> {
-                    if (a.sum != b.sum) return a.sum > b.sum ? -1 : 1;
+                    if (a.sum != b.sum) {
+                        return a.sum > b.sum ? -1 : 1;
+                    }
                     for (int i = 0; i < Math.min(a.x.length, b.x.length); i++) {
-                        if (a.x[i] != b.x[i]) return a.x[i] < b.x[i] ? -1 : 1;
+                        if (a.x[i] != b.x[i]) {
+                            return a.x[i] < b.x[i] ? -1 : 1;
+                        }
                     }
                     return Integer.compare(a.x.length, b.x.length);
                 };
@@ -68,8 +75,11 @@ public class Solution {
         S ans = base;
         for (int k = 1; k <= 4; k++) {
             S candidate = dp[n - 1][k];
-            if (ans.sum < candidate.sum) ans = candidate;
-            else if (ans.sum == candidate.sum && cmp.compare(ans, candidate) > 0) ans = candidate;
+            if (ans.sum < candidate.sum) {
+                ans = candidate;
+            } else if (ans.sum == candidate.sum && cmp.compare(ans, candidate) > 0) {
+                ans = candidate;
+            }
         }
         Arrays.sort(ans.x);
         return ans.x;
