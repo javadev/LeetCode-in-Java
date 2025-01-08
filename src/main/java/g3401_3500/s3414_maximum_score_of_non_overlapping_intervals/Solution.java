@@ -17,7 +17,7 @@ public class Solution {
         }
         int[][] dp1 = new int[n][0];
         long[] dp = new long[n];
-        Arrays.sort(ns, (a, b) -> (a[0] - b[0]));
+        Arrays.sort(ns, (a, b) -> a[0] - b[0]);
         for (int k = 0; k < 4; ++k) {
             int[][] dp3 = new int[n][];
             long[] dp2 = new long[n];
