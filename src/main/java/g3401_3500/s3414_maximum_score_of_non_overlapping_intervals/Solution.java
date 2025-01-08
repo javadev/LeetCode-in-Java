@@ -70,12 +70,6 @@ public class Solution {
             }
             i++;
         }
-        if (i < ns1.length) {
-            return 1;
-        }
-        if (i < ns2.length) {
-            return -1;
-        }
         return 0;
     }
 }
