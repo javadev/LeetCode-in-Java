@@ -46,4 +46,20 @@ class SolutionTest {
                                 List.of(List.of(4, 4, 1), List.of(2, 5, 3), List.of(2, 3, 2))),
                 equalTo(new int[] {0, 2}));
     }
+
+    @Test
+    void maximumWeight4() {
+        assertThat(
+                new Solution()
+                        .maximumWeight(
+                                List.of(
+                                        List.of(19, 23, 23),
+                                        List.of(19, 23, 40),
+                                        List.of(1, 16, 31),
+                                        List.of(16, 18, 31),
+                                        List.of(14, 20, 22),
+                                        List.of(14, 22, 5),
+                                        List.of(23, 24, 23))),
+                equalTo(new int[] {1, 2}));
+    }
 }
