@@ -1,94 +1,80 @@
 package g3401_3500.s3414_maximum_score_of_non_overlapping_intervals;
 
 // #Hard #Array #Dynamic_Programming #Sorting #Binary_Search
-// #2025_01_07_Time_63_(94.92%)_Space_88.95_(71.19%)
+// #2025_01_08_Time_64_(95.65%)_Space_74.80_(98.26%)
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 
-@SuppressWarnings("java:S6541")
 public class Solution {
     public int[] maximumWeight(List<List<Integer>> intervals) {
-        int n = intervals.size();
-        int[][] arr = new int[n][4];
-        for (int i = 0; i < n; i++) {
-            arr[i][0] = intervals.get(i).get(0);
-            arr[i][1] = intervals.get(i).get(1);
-            arr[i][2] = intervals.get(i).get(2);
-            arr[i][3] = i;
+        final int n = intervals.size();
+        final int[][] ns = new int[n][];
+        int p = 0;
+        for (List<Integer> li : intervals) {
+            ns[p] = new int[] {li.get(0), li.get(1), li.get(2), p};
+            p++;
         }
-        Arrays.sort(arr, (a, b) -> Long.compare(a[1], b[1]));
-        int[] p = new int[n];
-        for (int i = 0; i < n; i++) {
-            int l = 0;
-            int r = i - 1;
-            while (l <= r) {
-                int m = (l + r) >>> 1;
-                if (arr[m][1] < arr[i][0]) {
-                    l = m + 1;
-                } else {
-                    r = m - 1;
-                }
-            }
-            p[i] = r;
-        }
-
-        class S {
-            long sum;
-            int[] x;
-
-            S(long s, int[] t) {
-                sum = s;
-                x = t;
-            }
-        }
-
-        S base = new S(0, new int[0]);
-        S[][] dp = new S[n][5];
-        Comparator<S> cmp =
-                (a, b) -> {
-                    if (a.sum != b.sum) {
-                        return a.sum > b.sum ? -1 : 1;
+        int[][] dp1 = new int[n][0];
+        long[] dp = new long[n];
+        Arrays.sort(ns, (a, b) -> (a[0] - b[0]));
+        for (int k = 0; k < 4; ++k) {
+            int[][] dp3 = new int[n][];
+            long[] dp2 = new long[n];
+            dp3[n - 1] = new int[] {ns[n - 1][3]};
+            dp2[n - 1] = ns[n - 1][2];
+            for (int i = n - 2; i >= 0; --i) {
+                int l = i + 1, r = n - 1;
+                while (l <= r) {
+                    final int mid = (l + r) >> 1;
+                    if (ns[mid][0] > ns[i][1]) {
+                        r = mid - 1;
+                    } else {
+                        l = mid + 1;
                     }
-                    for (int i = 0; i < Math.min(a.x.length, b.x.length); i++) {
-                        if (a.x[i] != b.x[i]) {
-                            return a.x[i] < b.x[i] ? -1 : 1;
+                }
+                dp2[i] = ns[i][2] + (l < n ? dp[l] : 0);
+                if (i + 1 < n && dp2[i + 1] > dp2[i]) {
+                    dp2[i] = dp2[i + 1];
+                    dp3[i] = dp3[i + 1];
+                } else {
+                    if (l < n) {
+                        dp3[i] = new int[dp1[l].length + 1];
+                        dp3[i][0] = ns[i][3];
+                        for (int j = 0; j < dp1[l].length; ++j) {
+                            dp3[i][j + 1] = dp1[l][j];
                         }
+                        Arrays.sort(dp3[i]);
+                    } else {
+                        dp3[i] = new int[] {ns[i][3]};
                     }
-                    return Integer.compare(a.x.length, b.x.length);
-                };
-        for (int i = 0; i < n; i++) {
-            dp[i][0] = base;
-            for (int k = 1; k <= 4; k++) {
-                S no = (i > 0) ? dp[i - 1][k] : base;
-                long pickVal = arr[i][2] + ((p[i] >= 0) ? dp[p[i]][k - 1].sum : 0);
-                int[] pickPath;
-                if (p[i] >= 0) {
-                    pickPath = merge(dp[p[i]][k - 1].x, arr[i][3]);
-                } else {
-                    pickPath = new int[] {arr[i][3]};
+                    if (i + 1 < n && dp2[i + 1] == dp2[i] && check(dp3[i], dp3[i + 1]) > 0) {
+                        dp3[i] = dp3[i + 1];
+                    }
                 }
-                S pick = new S(pickVal, pickPath);
-                dp[i][k] = (cmp.compare(no, pick) <= 0) ? no : pick;
             }
+            dp = dp2;
+            dp1 = dp3;
         }
-        S ans = base;
-        for (int k = 1; k <= 4; k++) {
-            S candidate = dp[n - 1][k];
-            if (ans.sum < candidate.sum
-                    || ans.sum == candidate.sum && cmp.compare(ans, candidate) > 0) {
-                ans = candidate;
-            }
-        }
-        Arrays.sort(ans.x);
-        return ans.x;
+        return dp1[0];
     }
 
-    private int[] merge(int[] a, int v) {
-        int[] r = new int[a.length + 1];
-        System.arraycopy(a, 0, r, 0, a.length);
-        r[a.length] = v;
-        return r;
+    private int check(final int[] ns1, final int[] ns2) {
+        int i = 0;
+        while (i < ns1.length && i < ns2.length) {
+            if (ns1[i] < ns2[i]) {
+                return -1;
+            } else if (ns1[i] > ns2[i]) {
+                return 1;
+            }
+            i++;
+        }
+        if (i < ns1.length) {
+            return 1;
+        }
+        if (i < ns2.length) {
+            return -1;
+        }
+        return 0;
     }
 }
