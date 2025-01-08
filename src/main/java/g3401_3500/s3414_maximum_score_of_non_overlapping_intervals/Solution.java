@@ -24,7 +24,8 @@ public class Solution {
             dp3[n - 1] = new int[] {ns[n - 1][3]};
             dp2[n - 1] = ns[n - 1][2];
             for (int i = n - 2; i >= 0; --i) {
-                int l = i + 1, r = n - 1;
+                int l = i + 1;
+                int r = n - 1;
                 while (l <= r) {
                     final int mid = (l + r) >> 1;
                     if (ns[mid][0] > ns[i][1]) {
