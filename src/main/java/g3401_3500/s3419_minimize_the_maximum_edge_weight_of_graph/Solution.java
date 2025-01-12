@@ -24,9 +24,10 @@ public class Solution {
             if (find(n, edges, mid)) {
                 ans = mid;
                 h = mid - 1;
-            } else l = mid + 1;
+            } else {
+                l = mid + 1;
+            }
         }
-
         return ans;
     }
 

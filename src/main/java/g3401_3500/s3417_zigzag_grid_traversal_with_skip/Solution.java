@@ -11,7 +11,8 @@ public class Solution {
         int m = grid.length;
         int n = grid[0].length;
         int i = 0;
-        boolean flag = true, skip = false;
+        boolean flag = true;
+        boolean skip = false;
         while (i < m) {
             if (flag) {
                 for (int j = 0; j < n; j++) {
