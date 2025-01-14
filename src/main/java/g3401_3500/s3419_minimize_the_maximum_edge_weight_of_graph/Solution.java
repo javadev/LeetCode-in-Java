@@ -24,7 +24,7 @@ public class Solution {
         int[] distance = new int[n];
         Arrays.fill(distance, Integer.MAX_VALUE);
         distance[0] = 0;
-        if (reversedG[0].size().isEmpty()) {
+        if (reversedG[0].isEmpty()) {
             return -1;
         }
         Queue<Integer> que = new LinkedList<>();
