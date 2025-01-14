@@ -8,10 +8,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-@SuppressWarnings("unchecked")
+@SuppressWarnings({"unchecked", "unused", "java:S1172"})
 public class Solution {
     public int minMaxWeight(int n, int[][] edges, int threshold) {
-        List<int[]>[] graph = new ArrayList[n];
         List<int[]>[] reversedG = new ArrayList[n];
         for (int i = 0; i < n; i++) {
             reversedG[i] = new ArrayList<>();
@@ -25,7 +24,7 @@ public class Solution {
         int[] distance = new int[n];
         Arrays.fill(distance, Integer.MAX_VALUE);
         distance[0] = 0;
-        if (reversedG[0].size() == 0) {
+        if (reversedG[0].size().isEmpty()) {
             return -1;
         }
         Queue<Integer> que = new LinkedList<>();

@@ -15,7 +15,8 @@ public class Solution {
         }
         long res = 0;
         Deque<Integer> q = new ArrayDeque<>();
-        for (int j = 0, i = 0; j < nums.length; ++j) {
+        int i = 0;
+        for (int j = 0; j < nums.length; ++j) {
             while (!q.isEmpty() && nums[q.peekLast()] < nums[j]) {
                 int r = q.pollLast();
                 int l = q.isEmpty() ? i - 1 : q.peekLast();
