@@ -1,6 +1,6 @@
 package g3401_3500.s3420_count_non_decreasing_subarrays_after_k_operations;
 
-// #Hard #2025_01_12_Time_31_(100.00%)_Space_62.21_(100.00%)
+// #Hard #2025_01_14_Time_29_(92.59%)_Space_62.14_(57.41%)
 
 import java.util.ArrayDeque;
 import java.util.Deque;

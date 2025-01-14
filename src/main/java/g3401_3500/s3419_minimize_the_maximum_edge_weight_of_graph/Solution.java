@@ -1,74 +1,54 @@
 package g3401_3500.s3419_minimize_the_maximum_edge_weight_of_graph;
 
-// #Medium #2025_01_12_Time_1014_(100.00%)_Space_114.21_(100.00%)
+// #Medium #2025_01_14_Time_51_(99.43%)_Space_119.08_(34.00%)
 
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-@SuppressWarnings({"unused", "java:S1172"})
+@SuppressWarnings("unchecked")
 public class Solution {
     public int minMaxWeight(int n, int[][] edges, int threshold) {
-        int minW = Integer.MAX_VALUE;
-        int maxW = 0;
-        for (int[] e : edges) {
-            minW = Math.min(minW, e[2]);
-            maxW = Math.max(maxW, e[2]);
-        }
-        int ans = -1;
-        int l = minW;
-        int h = maxW;
-        while (l <= h) {
-            int mid = (l + h) >> 1;
-            if (find(n, edges, mid)) {
-                ans = mid;
-                h = mid - 1;
-            } else {
-                l = mid + 1;
-            }
-        }
-        return ans;
-    }
-
-    private boolean find(int n, int[][] edges, int maxi) {
-        List<List<Integer>> adj = new ArrayList<>();
+        List<int[]>[] graph = new ArrayList[n];
+        List<int[]>[] reversedG = new ArrayList[n];
         for (int i = 0; i < n; i++) {
-            adj.add(new ArrayList<>());
+            reversedG[i] = new ArrayList<>();
         }
-        for (int[] e : edges) {
-            if (e[2] <= maxi) {
-                adj.get(e[0]).add(e[1]);
-            }
+        for (int[] i : edges) {
+            int a = i[0];
+            int b = i[1];
+            int w = i[2];
+            reversedG[b].add(new int[] {a, w});
         }
-        return zero(n, adj);
-    }
-
-    public boolean zero(int n, List<List<Integer>> adj) {
-        List<List<Integer>> rev = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            rev.add(new ArrayList<>());
+        int[] distance = new int[n];
+        Arrays.fill(distance, Integer.MAX_VALUE);
+        distance[0] = 0;
+        if (reversedG[0].size() == 0) {
+            return -1;
         }
-        for (int i = 0; i < n; i++) {
-            for (int nb : adj.get(i)) {
-                rev.get(nb).add(i);
-            }
-        }
-        boolean[] vis = new boolean[n];
-        Queue<Integer> q = new LinkedList<>();
-        q.add(0);
-        int cnt = 1;
-        vis[0] = true;
-        while (!q.isEmpty()) {
-            int curr = q.poll();
-            for (int nb : rev.get(curr)) {
-                if (!vis[nb]) {
-                    vis[nb] = true;
-                    q.add(nb);
-                    cnt++;
+        Queue<Integer> que = new LinkedList<>();
+        que.add(0);
+        while (!que.isEmpty()) {
+            int cur = que.poll();
+            for (int[] next : reversedG[cur]) {
+                int node = next[0];
+                int w = next[1];
+                int nextdis = Math.max(w, distance[cur]);
+                if (nextdis < distance[node]) {
+                    distance[node] = nextdis;
+                    que.add(node);
                 }
             }
         }
-        return cnt == n;
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            if (distance[i] == Integer.MAX_VALUE) {
+                return -1;
+            }
+            ans = Math.max(ans, distance[i]);
+        }
+        return ans;
     }
 }

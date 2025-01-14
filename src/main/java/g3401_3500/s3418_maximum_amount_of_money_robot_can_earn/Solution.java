@@ -1,54 +1,56 @@
 package g3401_3500.s3418_maximum_amount_of_money_robot_can_earn;
 
-// #Medium #2025_01_12_Time_156_(_%)_Space_79.73_(_%)
-
-import java.util.Arrays;
+// #Medium #2025_01_14_Time_12_(99.87%)_Space_71.91_(98.93%)
 
 public class Solution {
-    private int solve(int[][] coins, int r, int c, int i, int j, int skip, int[][][] dp) {
-        if (i == r - 1 && j == c - 1) {
-            if (coins[i][j] < 0 && skip > 0) {
-                return 0;
-            }
-            return coins[i][j];
-        } else if (dp[i][j][skip] != Integer.MIN_VALUE) {
-            return dp[i][j][skip];
-        }
-        int val1 = Integer.MIN_VALUE;
-        int val2 = Integer.MIN_VALUE;
-        if (i < r - 1) {
-            if (coins[i][j] < 0 && skip > 0) {
-                val1 =
-                        Math.max(
-                                solve(coins, r, c, i + 1, j, skip - 1, dp),
-                                coins[i][j] + solve(coins, r, c, i + 1, j, skip, dp));
-            } else {
-                val1 = coins[i][j] + solve(coins, r, c, i + 1, j, skip, dp);
-            }
-        }
-        if (j < c - 1) {
-            if (coins[i][j] < 0 && skip > 0) {
-                val2 =
-                        Math.max(
-                                solve(coins, r, c, i, j + 1, skip - 1, dp),
-                                coins[i][j] + solve(coins, r, c, i, j + 1, skip, dp));
-            } else {
-                val2 = coins[i][j] + solve(coins, r, c, i, j + 1, skip, dp);
-            }
-        }
-
-        return dp[i][j][skip] = Math.max(val1, val2);
-    }
-
     public int maximumAmount(int[][] coins) {
-        int r = coins.length;
-        int c = coins[0].length;
-        int[][][] dp = new int[r][c][3];
-        for (int[][] arr1 : dp) {
-            for (int[] arr2 : arr1) {
-                Arrays.fill(arr2, Integer.MIN_VALUE);
+        int m = coins.length;
+        int n = coins[0].length;
+        int[][] dp = new int[m][n];
+        int[][] dp1 = new int[m][n];
+        int[][] dp2 = new int[m][n];
+        dp[0][0] = coins[0][0];
+        for (int j = 1; j < n; j++) {
+            dp[0][j] = dp[0][j - 1] + coins[0][j];
+        }
+        for (int i = 1; i < m; i++) {
+            dp[i][0] = dp[i - 1][0] + coins[i][0];
+        }
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                dp[i][j] = Math.max(dp[i][j - 1], dp[i - 1][j]) + coins[i][j];
             }
         }
-        return solve(coins, r, c, 0, 0, 2, dp);
+        dp1[0][0] = Math.max(coins[0][0], 0);
+        for (int j = 1; j < n; j++) {
+            dp1[0][j] = Math.max(dp[0][j - 1], dp1[0][j - 1] + coins[0][j]);
+        }
+        for (int i = 1; i < m; i++) {
+            dp1[i][0] = Math.max(dp[i - 1][0], dp1[i - 1][0] + coins[i][0]);
+        }
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                dp1[i][j] =
+                        Math.max(
+                                Math.max(dp[i][j - 1], dp[i - 1][j]),
+                                Math.max(dp1[i][j - 1], dp1[i - 1][j]) + coins[i][j]);
+            }
+        }
+        dp2[0][0] = Math.max(coins[0][0], 0);
+        for (int j = 1; j < n; j++) {
+            dp2[0][j] = Math.max(dp1[0][j - 1], dp2[0][j - 1] + coins[0][j]);
+        }
+        for (int i = 1; i < m; i++) {
+            dp2[i][0] = Math.max(dp1[i - 1][0], dp2[i - 1][0] + coins[i][0]);
+        }
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                dp2[i][j] =
+                        Math.max(
+                                Math.max(dp1[i][j - 1], dp1[i - 1][j]),
+                                Math.max(dp2[i][j - 1], dp2[i - 1][j]) + coins[i][j]);
+            }
+        }
+        return dp2[m - 1][n - 1];
     }
 }
