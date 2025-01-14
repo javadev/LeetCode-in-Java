@@ -2,8 +2,8 @@ package g3401_3500.s3419_minimize_the_maximum_edge_weight_of_graph;
 
 // #Medium #2025_01_14_Time_51_(99.43%)_Space_119.08_(34.00%)
 
-import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
