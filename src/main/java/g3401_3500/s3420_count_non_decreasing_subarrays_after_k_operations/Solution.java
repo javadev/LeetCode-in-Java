@@ -7,14 +7,12 @@ import java.util.Deque;
 
 public class Solution {
     public long countNonDecreasingSubarrays(int[] nums, long k) {
-        // Reverse the array
         int n = nums.length;
         for (int i = 0; i < n / 2; ++i) {
             int temp = nums[i];
             nums[i] = nums[n - 1 - i];
             nums[n - 1 - i] = temp;
         }
-
         long res = 0;
         Deque<Integer> q = new ArrayDeque<>();
         for (int j = 0, i = 0; j < nums.length; ++j) {
