@@ -10,7 +10,6 @@ import java.util.Queue;
 
 @SuppressWarnings({"unchecked", "unused", "java:S1172"})
 public class Solution {
-    private ArrayList<ArrayList<Pair>> adj;
     private ArrayList<ArrayList<Pair>> revadj;
 
     private static class Pair {
@@ -24,7 +23,7 @@ public class Solution {
     }
 
     public int minMaxWeight(int n, int[][] edges, int threshold) {
-        adj = new ArrayList<>();
+        ArrayList<ArrayList<Pair>> adj = new ArrayList<>();
         revadj = new ArrayList<>();
         for (int i = 0; i <= n + 1; i++) {
             adj.add(new ArrayList<>());
@@ -45,7 +44,7 @@ public class Solution {
         dist[0] = 0;
         Queue<Pair> q = new LinkedList<>();
         q.offer(new Pair(0, 0));
-        while (q.size() > 0) {
+        while (!q.isEmpty()) {
             int u = q.peek().node;
             int currMax = q.peek().weight;
             q.poll();
