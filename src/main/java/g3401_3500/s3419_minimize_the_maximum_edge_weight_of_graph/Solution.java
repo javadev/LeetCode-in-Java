@@ -1,53 +1,85 @@
 package g3401_3500.s3419_minimize_the_maximum_edge_weight_of_graph;
 
-// #Medium #2025_01_14_Time_51_(99.43%)_Space_119.08_(34.00%)
+// #Medium #Binary_Search #Graph #Shortest_Path #Depth_First_Search #Breadth_First_Search
+// #2025_01_15_Time_64_(99.28%)_Space_110.17_(57.63%)
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 @SuppressWarnings({"unchecked", "unused", "java:S1172"})
 public class Solution {
+    private ArrayList<ArrayList<Pair>> adj;
+    private ArrayList<ArrayList<Pair>> revadj;
+
+    private static class Pair {
+        int node;
+        int weight;
+
+        public Pair(int node, int weight) {
+            this.node = node;
+            this.weight = weight;
+        }
+    }
+
     public int minMaxWeight(int n, int[][] edges, int threshold) {
-        List<int[]>[] reversedG = new ArrayList[n];
-        for (int i = 0; i < n; i++) {
-            reversedG[i] = new ArrayList<>();
+        adj = new ArrayList<>();
+        revadj = new ArrayList<>();
+        for (int i = 0; i <= n + 1; i++) {
+            adj.add(new ArrayList<>());
+            revadj.add(new ArrayList<>());
         }
-        for (int[] i : edges) {
-            int a = i[0];
-            int b = i[1];
-            int w = i[2];
-            reversedG[b].add(new int[] {a, w});
+        for (int[] edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            int wt = edge[2];
+            adj.get(u).add(new Pair(v, wt));
+            revadj.get(v).add(new Pair(u, wt));
         }
-        int[] distance = new int[n];
-        Arrays.fill(distance, Integer.MAX_VALUE);
-        distance[0] = 0;
-        if (reversedG[0].isEmpty()) {
+        if (!check(n)) {
             return -1;
         }
-        Queue<Integer> que = new LinkedList<>();
-        que.add(0);
-        while (!que.isEmpty()) {
-            int cur = que.poll();
-            for (int[] next : reversedG[cur]) {
-                int node = next[0];
-                int w = next[1];
-                int nextdis = Math.max(w, distance[cur]);
-                if (nextdis < distance[node]) {
-                    distance[node] = nextdis;
-                    que.add(node);
+        int[] dist = new int[n + 1];
+        Arrays.fill(dist, (int) (1e9));
+        dist[0] = 0;
+        Queue<Pair> q = new LinkedList<>();
+        q.offer(new Pair(0, 0));
+        while (q.size() > 0) {
+            int u = q.peek().node;
+            int currMax = q.peek().weight;
+            q.poll();
+            for (int i = 0; i < revadj.get(u).size(); i++) {
+                int v = revadj.get(u).get(i).node;
+                int wt = revadj.get(u).get(i).weight;
+                if (dist[v] > Math.max(wt, currMax)) {
+                    dist[v] = Math.max(wt, currMax);
+                    q.offer(new Pair(v, dist[v]));
                 }
             }
         }
-        int ans = 0;
+        int maxi = dist[0];
         for (int i = 0; i < n; i++) {
-            if (distance[i] == Integer.MAX_VALUE) {
-                return -1;
-            }
-            ans = Math.max(ans, distance[i]);
+            maxi = Math.max(maxi, dist[i]);
         }
-        return ans;
+        return maxi;
+    }
+
+    private boolean check(int n) {
+        int[] vis = new int[n];
+        ArrayList<Integer> nodes = new ArrayList<>();
+        dfs(0, vis, nodes);
+        return nodes.size() == n;
+    }
+
+    private void dfs(int u, int[] vis, ArrayList<Integer> nodes) {
+        nodes.add(u);
+        vis[u] = 1;
+        for (int i = 0; i < revadj.get(u).size(); i++) {
+            int v = revadj.get(u).get(i).node;
+            if (vis[v] == 0) {
+                dfs(v, vis, nodes);
+            }
+        }
     }
 }

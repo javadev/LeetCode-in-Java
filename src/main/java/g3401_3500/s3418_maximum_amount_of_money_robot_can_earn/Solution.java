@@ -1,6 +1,6 @@
 package g3401_3500.s3418_maximum_amount_of_money_robot_can_earn;
 
-// #Medium #2025_01_14_Time_12_(99.87%)_Space_71.91_(98.93%)
+// #Medium #Array #Dynamic_Programming #Matrix #2025_01_15_Time_12_(99.86%)_Space_72.43_(98.47%)
 
 public class Solution {
     public int maximumAmount(int[][] coins) {
