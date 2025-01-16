@@ -16,7 +16,7 @@ Return `true` if such a path exists, and `false` otherwise.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/05/18/example2circle1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3235_check_if_the_rectangle_corner_is_reachable/example2circle1.png)
 
 The black curve shows a possible path between `(0, 0)` and `(3, 4)`.
 
@@ -28,7 +28,7 @@ The black curve shows a possible path between `(0, 0)` and `(3, 4)`.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/05/18/example1circle.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3235_check_if_the_rectangle_corner_is_reachable/example1circle.png)
 
 No path exists from `(0, 0)` to `(3, 3)`.
 
@@ -40,7 +40,7 @@ No path exists from `(0, 0)` to `(3, 3)`.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/05/18/example0circle.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3235_check_if_the_rectangle_corner_is_reachable/example0circle.png)
 
 No path exists from `(0, 0)` to `(3, 3)`.
 
@@ -52,7 +52,7 @@ No path exists from `(0, 0)` to `(3, 3)`.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/07/31/rectangleexample5.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3235_check_if_the_rectangle_corner_is_reachable/rectangleexample5.png)
 
 **Constraints:**
 

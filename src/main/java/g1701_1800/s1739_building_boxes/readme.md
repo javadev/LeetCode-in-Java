@@ -11,7 +11,7 @@ Given an integer `n`, return _the **minimum** possible number of boxes touching 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/04/3-boxes.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1701_1800/s1739_building_boxes/3-boxes.png)
 
 **Input:** n = 3
 
@@ -21,7 +21,7 @@ Given an integer `n`, return _the **minimum** possible number of boxes touching 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/04/4-boxes.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1701_1800/s1739_building_boxes/4-boxes.png)
 
 **Input:** n = 4
 
@@ -31,7 +31,7 @@ Given an integer `n`, return _the **minimum** possible number of boxes touching 
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/01/04/10-boxes.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1701_1800/s1739_building_boxes/10-boxes.png)
 
 **Input:** n = 10
 

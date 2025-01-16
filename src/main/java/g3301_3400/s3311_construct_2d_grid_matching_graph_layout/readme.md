@@ -21,7 +21,7 @@ Return a 2D integer array satisfying the conditions above. If there are multiple
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/08/11/screenshot-from-2024-08-11-14-07-59.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3311_construct_2d_grid_matching_graph_layout/screenshot-from-2024-08-11-14-07-59.png)
 
 **Example 2:**
 
@@ -31,7 +31,7 @@ Return a 2D integer array satisfying the conditions above. If there are multiple
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/08/11/screenshot-from-2024-08-11-14-06-02.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3311_construct_2d_grid_matching_graph_layout/screenshot-from-2024-08-11-14-06-02.png)
 
 **Example 3:**
 
@@ -41,7 +41,7 @@ Return a 2D integer array satisfying the conditions above. If there are multiple
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/08/11/screenshot-from-2024-08-11-14-06-38.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3311_construct_2d_grid_matching_graph_layout/screenshot-from-2024-08-11-14-06-38.png)
 
 **Constraints:**
 

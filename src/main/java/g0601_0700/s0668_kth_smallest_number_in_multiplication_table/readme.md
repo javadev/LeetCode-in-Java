@@ -8,7 +8,7 @@ Given three integers `m`, `n`, and `k`, return _the_ <code>k<sup>th</sup></code>
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/02/multtable1-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0668_kth_smallest_number_in_multiplication_table/multtable1-grid.jpg)
 
 **Input:** m = 3, n = 3, k = 5
 
@@ -18,7 +18,7 @@ Given three integers `m`, `n`, and `k`, return _the_ <code>k<sup>th</sup></code>
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/05/02/multtable2-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0668_kth_smallest_number_in_multiplication_table/multtable2-grid.jpg)
 
 **Input:** m = 2, n = 3, k = 6
 

@@ -6,7 +6,7 @@ You are given an array `coordinates`, `coordinates[i] = [x, y]`, where `[x, y]` 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/10/15/untitled-diagram-2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1232_check_if_it_is_a_straight_line/untitled-diagram-2.jpg)
 
 **Input:** coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]
 
@@ -14,7 +14,7 @@ You are given an array `coordinates`, `coordinates[i] = [x, y]`, where `[x, y]` 
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2019/10/09/untitled-diagram-1.jpg)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1232_check_if_it_is_a_straight_line/untitled-diagram-1.jpg)**
 
 **Input:** coordinates = [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]
 

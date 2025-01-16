@@ -17,7 +17,7 @@ The test cases are generated so that `answer` is unique under the given rules.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/18/rank1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1632_rank_transform_of_a_matrix/rank1.jpg)
 
 **Input:** matrix = [[1,2],[3,4]]
 
@@ -35,7 +35,7 @@ The rank of matrix[1][1] is 3 because matrix[1][1] > matrix[0][1], matrix[1][1] 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/18/rank2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1632_rank_transform_of_a_matrix/rank2.jpg)
 
 **Input:** matrix = [[7,7],[7,7]]
 
@@ -43,7 +43,7 @@ The rank of matrix[1][1] is 3 because matrix[1][1] > matrix[0][1], matrix[1][1] 
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/10/18/rank3.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1632_rank_transform_of_a_matrix/rank3.jpg)
 
 **Input:** matrix = [[20,-21,14],[-19,4,19],[22,-47,24],[-19,4,19]]
 

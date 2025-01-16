@@ -10,7 +10,7 @@ Return _the **maximum sum** of values that you can receive by attending events._
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/10/screenshot-2021-01-11-at-60048-pm.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1701_1800/s1751_maximum_number_of_events_that_can_be_attended_ii/screenshot-2021-01-11-at-60048-pm.png)
 
 **Input:** events = [[1,2,4],[3,4,3],[2,3,1]], k = 2
 
@@ -20,7 +20,7 @@ Return _the **maximum sum** of values that you can receive by attending events._
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/10/screenshot-2021-01-11-at-60150-pm.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1701_1800/s1751_maximum_number_of_events_that_can_be_attended_ii/screenshot-2021-01-11-at-60150-pm.png)
 
 **Input:** events = [[1,2,4],[3,4,3],[2,3,10]], k = 2
 
@@ -30,7 +30,7 @@ Return _the **maximum sum** of values that you can receive by attending events._
 
 **Example 3:**
 
-**![](https://assets.leetcode.com/uploads/2021/01/10/screenshot-2021-01-11-at-60703-pm.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1701_1800/s1751_maximum_number_of_events_that_can_be_attended_ii/screenshot-2021-01-11-at-60703-pm.png)**
 
 **Input:** events = [[1,1,1],[2,2,2],[3,3,3],[4,4,4]], k = 3
 

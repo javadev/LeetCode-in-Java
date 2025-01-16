@@ -8,7 +8,7 @@ The **tilt** of a tree node is the **absolute difference** between the sum of al
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/20/tilt1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0563_binary_tree_tilt/tilt1.jpg)
 
 **Input:** root = [1,2,3]
 
@@ -23,7 +23,7 @@ The **tilt** of a tree node is the **absolute difference** between the sum of al
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/20/tilt2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0563_binary_tree_tilt/tilt2.jpg)
 
 **Input:** root = [4,2,9,3,5,null,7]
 
@@ -41,7 +41,7 @@ The **tilt** of a tree node is the **absolute difference** between the sum of al
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/10/20/tilt3.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0563_binary_tree_tilt/tilt3.jpg)
 
 **Input:** root = [21,7,14,1,1,2,2,3,3]
 

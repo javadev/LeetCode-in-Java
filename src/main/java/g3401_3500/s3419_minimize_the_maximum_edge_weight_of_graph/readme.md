@@ -20,7 +20,7 @@ Return the **minimum** possible value of the **maximum** edge weight after remov
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/12/09/s-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3401_3500/s3419_minimize_the_maximum_edge_weight_of_graph/s-1.png)
 
 Remove the edge `2 -> 0`. The maximum weight among the remaining edges is 1.
 
@@ -42,7 +42,7 @@ It is impossible to reach node 0 from node 2.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/12/09/s2-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3401_3500/s3419_minimize_the_maximum_edge_weight_of_graph/s2-1.png)
 
 Remove the edges `1 -> 3` and `1 -> 4`. The maximum weight among the remaining edges is 2.
 

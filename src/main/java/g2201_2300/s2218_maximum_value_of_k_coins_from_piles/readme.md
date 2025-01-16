@@ -10,7 +10,7 @@ Given a list `piles`, where `piles[i]` is a list of integers denoting the compos
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/11/09/e1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2218_maximum_value_of_k_coins_from_piles/e1.png)
 
 **Input:** piles = [[1,100,3],[7,8,9]], k = 2
 

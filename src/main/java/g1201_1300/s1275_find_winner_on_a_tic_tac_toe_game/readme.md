@@ -17,7 +17,7 @@ You can assume that `moves` is valid (i.e., it follows the rules of **Tic-Tac-To
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/09/22/xo1-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1275_find_winner_on_a_tic_tac_toe_game/xo1-grid.jpg)
 
 **Input:** moves = [[0,0],[2,0],[1,1],[2,1],[2,2]]
 
@@ -27,7 +27,7 @@ You can assume that `moves` is valid (i.e., it follows the rules of **Tic-Tac-To
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/09/22/xo2-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1275_find_winner_on_a_tic_tac_toe_game/xo2-grid.jpg)
 
 **Input:** moves = [[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]
 
@@ -37,7 +37,7 @@ You can assume that `moves` is valid (i.e., it follows the rules of **Tic-Tac-To
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/09/22/xo3-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1275_find_winner_on_a_tic_tac_toe_game/xo3-grid.jpg)
 
 **Input:** moves = [[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]]
 

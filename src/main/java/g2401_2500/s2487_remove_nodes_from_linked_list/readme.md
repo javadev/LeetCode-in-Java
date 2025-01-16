@@ -10,7 +10,7 @@ Return _the_ `head` _of the modified linked list._
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/02/drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2487_remove_nodes_from_linked_list/drawio.png)
 
 **Input:** head = [5,2,13,3,8]
 

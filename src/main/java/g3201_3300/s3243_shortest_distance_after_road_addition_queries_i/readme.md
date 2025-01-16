@@ -18,15 +18,15 @@ Return an array `answer` where for each `i` in the range `[0, queries.length - 1
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/06/28/image8.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3243_shortest_distance_after_road_addition_queries_i/image8.jpg)
 
 After the addition of the road from 2 to 4, the length of the shortest path from 0 to 4 is 3.
 
-![](https://assets.leetcode.com/uploads/2024/06/28/image9.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3243_shortest_distance_after_road_addition_queries_i/image9.jpg)
 
 After the addition of the road from 0 to 2, the length of the shortest path from 0 to 4 is 2.
 
-![](https://assets.leetcode.com/uploads/2024/06/28/image10.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3243_shortest_distance_after_road_addition_queries_i/image10.jpg)
 
 After the addition of the road from 0 to 4, the length of the shortest path from 0 to 4 is 1.
 
@@ -38,11 +38,11 @@ After the addition of the road from 0 to 4, the length of the shortest path from
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/06/28/image11.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3243_shortest_distance_after_road_addition_queries_i/image11.jpg)
 
 After the addition of the road from 0 to 3, the length of the shortest path from 0 to 3 is 1.
 
-![](https://assets.leetcode.com/uploads/2024/06/28/image12.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3243_shortest_distance_after_road_addition_queries_i/image12.jpg)
 
 After the addition of the road from 0 to 2, the length of the shortest path remains 1.
 

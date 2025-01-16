@@ -10,7 +10,7 @@ Return _the **minimum** number of moves required to make every node have **exact
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/01/18/tree1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0979_distribute_coins_in_binary_tree/tree1.png)
 
 **Input:** root = [3,0,0]
 
@@ -20,7 +20,7 @@ Return _the **minimum** number of moves required to make every node have **exact
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/01/18/tree2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0979_distribute_coins_in_binary_tree/tree2.png)
 
 **Input:** root = [0,3,0]
 

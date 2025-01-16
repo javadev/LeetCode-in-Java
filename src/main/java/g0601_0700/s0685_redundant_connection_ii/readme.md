@@ -12,7 +12,7 @@ Return _an edge that can be removed so that the resulting graph is a rooted tree
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/12/20/graph1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0685_redundant_connection_ii/graph1.jpg)
 
 **Input:** edges = [[1,2],[1,3],[2,3]]
 
@@ -20,7 +20,7 @@ Return _an edge that can be removed so that the resulting graph is a rooted tree
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/12/20/graph2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0685_redundant_connection_ii/graph2.jpg)
 
 **Input:** edges = [[1,2],[2,3],[3,4],[4,1],[1,5]]
 

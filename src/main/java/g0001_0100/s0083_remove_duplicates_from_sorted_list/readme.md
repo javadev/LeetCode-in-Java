@@ -6,7 +6,7 @@ Given the `head` of a sorted linked list, _delete all duplicates such that each 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/04/list1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0083_remove_duplicates_from_sorted_list/list1.jpg)
 
 **Input:** head = [1,1,2]
 
@@ -14,7 +14,7 @@ Given the `head` of a sorted linked list, _delete all duplicates such that each 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/04/list2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0083_remove_duplicates_from_sorted_list/list2.jpg)
 
 **Input:** head = [1,1,2,3,3]
 

@@ -8,17 +8,17 @@ A **height-balanced** binary tree is a binary tree in which the depth of the two
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/18/btree1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/btree1.jpg)
 
 **Input:** nums = [-10,-3,0,5,9]
 
 **Output:** [0,-3,9,-10,null,5]
 
-**Explanation:** [0,-10,5,null,-3,null,9] is also accepted: ![](https://assets.leetcode.com/uploads/2021/02/18/btree2.jpg) 
+**Explanation:** [0,-10,5,null,-3,null,9] is also accepted: ![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/btree2.jpg) 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/02/18/btree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/btree.jpg)
 
 **Input:** nums = [1,3]
 

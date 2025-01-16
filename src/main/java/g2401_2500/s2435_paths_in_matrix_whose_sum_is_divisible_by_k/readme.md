@@ -8,7 +8,7 @@ Return _the number of paths where the sum of the elements on the path is divisib
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/08/13/image-20220813183124-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2435_paths_in_matrix_whose_sum_is_divisible_by_k/image-20220813183124-1.png)
 
 **Input:** grid = [[5,2,4],[3,0,5],[0,7,2]], k = 3
 
@@ -18,7 +18,7 @@ Return _the number of paths where the sum of the elements on the path is divisib
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/08/17/image-20220817112930-3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2435_paths_in_matrix_whose_sum_is_divisible_by_k/image-20220817112930-3.png)
 
 **Input:** grid = [[0,0]], k = 5
 
@@ -28,7 +28,7 @@ Return _the number of paths where the sum of the elements on the path is divisib
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2022/08/12/image-20220812224605-3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2435_paths_in_matrix_whose_sum_is_divisible_by_k/image-20220812224605-3.png)
 
 **Input:** grid = [[7,3,4,9],[2,3,6,2],[2,3,7,0]], k = 1
 

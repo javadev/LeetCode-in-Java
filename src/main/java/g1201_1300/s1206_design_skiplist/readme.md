@@ -8,7 +8,7 @@ A **skiplist** is a data structure that takes `O(log(n))` time to add, erase and
 
 For example, we have a Skiplist containing `[30,40,50,60,70,90]` and we want to add `80` and `45` into it. The Skiplist works this way:
 
-![](https://assets.leetcode.com/uploads/2019/09/27/1506_skiplist.gif)  
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1206_design_skiplist/1506_skiplist.gif)  
 Artyom Kalinin [CC BY-SA 3.0], via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Skip_list_add_element-en.gif "Artyom Kalinin [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons")
 
 You can see there are many layers in the Skiplist. Each layer is a sorted linked list. With the help of the top layers, add, erase and search can be faster than `O(n)`. It can be proven that the average time complexity for each operation is `O(log(n))` and space complexity is `O(n)`.

@@ -10,7 +10,7 @@ The test cases are generated so that the answer fits in a 32-bit integer.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/05/07/sample_11_1816.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1478_allocate_mailboxes/sample_11_1816.png)
 
 **Input:** houses = [1,4,8,10,20], k = 3
 
@@ -20,7 +20,7 @@ The test cases are generated so that the answer fits in a 32-bit integer.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/05/07/sample_2_1816.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1478_allocate_mailboxes/sample_2_1816.png)
 
 **Input:** houses = [2,3,5,12,18], k = 2
 

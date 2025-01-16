@@ -10,7 +10,7 @@ Notice that you can return the vertices in any order.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/07/07/untitled22.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1557_minimum_number_of_vertices_to_reach_all_nodes/untitled22.png)
 
 **Input:** n = 6, edges = [[0,1],[0,2],[2,5],[3,4],[4,2]]
 
@@ -20,7 +20,7 @@ Notice that you can return the vertices in any order.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/07/07/untitled.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1557_minimum_number_of_vertices_to_reach_all_nodes/untitled.png)
 
 **Input:** n = 5, edges = [[0,1],[2,1],[3,1],[1,4],[2,4]]
 

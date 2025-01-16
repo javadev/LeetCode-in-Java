@@ -18,7 +18,7 @@ The **skyline** should be represented as a list of "key points" **sorted by thei
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/12/01/merged.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0218_the_skyline_problem/merged.jpg)
 
 **Input:** buildings = [[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]
 

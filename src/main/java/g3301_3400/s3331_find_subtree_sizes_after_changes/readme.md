@@ -24,7 +24,7 @@ A **subtree** of `treeName` is a tree consisting of a node in `treeName` and all
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/08/15/graphex1drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3331_find_subtree_sizes_after_changes/graphex1drawio.png)
 
 The parent of node 3 will change from node 1 to node 0.
 
@@ -36,7 +36,7 @@ The parent of node 3 will change from node 1 to node 0.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/08/20/exgraph2drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3331_find_subtree_sizes_after_changes/exgraph2drawio.png)
 
 The following changes will happen at the same time:
 

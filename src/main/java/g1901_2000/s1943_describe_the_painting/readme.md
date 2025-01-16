@@ -22,7 +22,7 @@ A **half-closed segment** `[a, b)` is the section of the number line between poi
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/18/1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1943_describe_the_painting/1.png)
 
 **Input:** segments = [[1,4,5],[4,7,7],[1,7,9]]
 
@@ -36,7 +36,7 @@ A **half-closed segment** `[a, b)` is the section of the number line between poi
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/06/18/2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1943_describe_the_painting/2.png)
 
 **Input:** segments = [[1,7,9],[6,8,15],[8,10,7]]
 
@@ -54,7 +54,7 @@ A **half-closed segment** `[a, b)` is the section of the number line between poi
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/07/04/c1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1943_describe_the_painting/c1.png)
 
 **Input:** segments = [[1,4,5],[1,4,7],[4,7,1],[4,7,11]]
 

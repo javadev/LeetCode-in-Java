@@ -15,7 +15,7 @@ You can move according to these rules:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/11/14/1626_example_1.PNG)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1266_minimum_time_visiting_all_points/1626_example_1.png)
 
 **Input:** points = [[1,1],[3,4],[-1,0]]
 

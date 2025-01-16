@@ -13,7 +13,7 @@ Return _the **minimum** number of white tiles still visible._
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/02/10/ex1-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2209_minimum_white_tiles_after_covering_with_carpets/ex1-1.png)
 
 **Input:** floor = "10110101", numCarpets = 2, carpetLen = 2
 
@@ -27,7 +27,7 @@ No other way of covering the tiles with the carpets can leave less than 2 white 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/02/10/ex2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2209_minimum_white_tiles_after_covering_with_carpets/ex2.png)
 
 **Input:** floor = "11111", numCarpets = 2, carpetLen = 3
 

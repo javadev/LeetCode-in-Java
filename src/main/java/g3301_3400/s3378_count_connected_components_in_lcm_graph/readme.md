@@ -20,7 +20,7 @@ The term `lcm(a, b)` denotes the **least common multiple** of `a` and `b`.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/10/31/example0.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3378_count_connected_components_in_lcm_graph/example0.png)
 
 The four connected components are `(2, 4)`, `(3)`, `(8)`, `(9)`.
 
@@ -32,7 +32,7 @@ The four connected components are `(2, 4)`, `(3)`, `(8)`, `(9)`.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/10/31/example1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3378_count_connected_components_in_lcm_graph/example1.png)
 
 The two connected components are `(2, 3, 4, 8, 9)`, and `(12)`.
 

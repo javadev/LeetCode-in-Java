@@ -6,7 +6,7 @@ Given the `root` of a binary tree, _check whether it is a mirror of itself_ (i.e
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/19/symtree1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0101_symmetric_tree/symtree1.jpg)
 
 **Input:** root = [1,2,2,3,4,4,3]
 
@@ -14,7 +14,7 @@ Given the `root` of a binary tree, _check whether it is a mirror of itself_ (i.e
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/02/19/symtree2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0101_symmetric_tree/symtree2.jpg)
 
 **Input:** root = [1,2,2,null,3,null,3]
 

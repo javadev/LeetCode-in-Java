@@ -14,7 +14,7 @@ A leaf of a node is a node that has no children.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/01/30/tree1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0988_smallest_string_starting_from_leaf/tree1.png)
 
 **Input:** root = [0,1,2,3,4,3,4]
 
@@ -22,7 +22,7 @@ A leaf of a node is a node that has no children.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/01/30/tree2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0988_smallest_string_starting_from_leaf/tree2.png)
 
 **Input:** root = [25,1,3,1,3,0,2]
 
@@ -30,7 +30,7 @@ A leaf of a node is a node that has no children.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2019/02/01/tree3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0988_smallest_string_starting_from_leaf/tree3.png)
 
 **Input:** root = [2,2,1,null,1,0,null,0]
 

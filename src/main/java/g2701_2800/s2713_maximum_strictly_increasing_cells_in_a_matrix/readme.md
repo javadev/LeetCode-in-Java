@@ -12,7 +12,7 @@ Return _an integer denoting the maximum number of cells that can be visited._
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2023/04/23/diag1drawio.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g2701_2800/s2713_maximum_strictly_increasing_cells_in_a_matrix/diag1drawio.png)**
 
 **Input:** mat = [[3,1],[3,4]]
 
@@ -22,7 +22,7 @@ Return _an integer denoting the maximum number of cells that can be visited._
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2023/04/23/diag3drawio.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g2701_2800/s2713_maximum_strictly_increasing_cells_in_a_matrix/diag3drawio.png)**
 
 **Input:** mat = [[1,1],[1,1]]
 
@@ -32,7 +32,7 @@ Return _an integer denoting the maximum number of cells that can be visited._
 
 **Example 3:**
 
-**![](https://assets.leetcode.com/uploads/2023/04/23/diag4drawio.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g2701_2800/s2713_maximum_strictly_increasing_cells_in_a_matrix/diag4drawio.png)**
 
 **Input:** mat = [[3,1,6],[-9,5,7]]
 

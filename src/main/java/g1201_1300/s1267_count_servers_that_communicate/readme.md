@@ -8,7 +8,7 @@ Return the number of servers that communicate with any other server.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/11/14/untitled-diagram-6.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1267_count_servers_that_communicate/untitled-diagram-6.jpg)
 
 **Input:** grid = [[1,0],[0,1]]
 
@@ -18,7 +18,7 @@ Return the number of servers that communicate with any other server.
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2019/11/13/untitled-diagram-4.jpg)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1267_count_servers_that_communicate/untitled-diagram-4.jpg)**
 
 **Input:** grid = [[1,0],[1,1]]
 
@@ -28,7 +28,7 @@ Return the number of servers that communicate with any other server.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2019/11/14/untitled-diagram-1-3.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1267_count_servers_that_communicate/untitled-diagram-1-3.jpg)
 
 **Input:** grid = [[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]
 

@@ -8,7 +8,7 @@ If there exist multiple answers, you can **return any** of them.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/24/lc-prepost.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0889_construct_binary_tree_from_preorder_and_postorder_traversal/lc-prepost.jpg)
 
 **Input:** preorder = [1,2,4,5,3,6,7], postorder = [4,5,2,6,7,3,1]
 

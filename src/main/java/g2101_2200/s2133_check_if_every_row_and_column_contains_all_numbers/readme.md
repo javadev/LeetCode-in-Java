@@ -8,7 +8,7 @@ Given an `n x n` integer matrix `matrix`, return `true` _if the matrix is **vali
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/21/example1drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2133_check_if_every_row_and_column_contains_all_numbers/example1drawio.png)
 
 **Input:** matrix = [[1,2,3],[3,1,2],[2,3,1]]
 
@@ -18,7 +18,7 @@ Given an `n x n` integer matrix `matrix`, return `true` _if the matrix is **vali
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/21/example2drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2133_check_if_every_row_and_column_contains_all_numbers/example2drawio.png)
 
 **Input:** matrix = [[1,1,1],[1,2,3],[1,2,3]]
 

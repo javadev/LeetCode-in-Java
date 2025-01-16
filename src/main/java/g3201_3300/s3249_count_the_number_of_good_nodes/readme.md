@@ -18,7 +18,7 @@ A **subtree** of `treeName` is a tree consisting of a node in `treeName` and all
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/05/26/tree1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3249_count_the_number_of_good_nodes/tree1.png)
 
 All of the nodes of the given tree are good.
 
@@ -30,7 +30,7 @@ All of the nodes of the given tree are good.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/06/03/screenshot-2024-06-03-193552.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3249_count_the_number_of_good_nodes/screenshot-2024-06-03-193552.png)
 
 There are 6 good nodes in the given tree. They are colored in the image above.
 
@@ -42,7 +42,7 @@ There are 6 good nodes in the given tree. They are colored in the image above.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/08/08/rob.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3249_count_the_number_of_good_nodes/rob.jpg)
 
 All nodes except node 9 are good.
 

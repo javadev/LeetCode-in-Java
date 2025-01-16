@@ -15,7 +15,7 @@ Implement the `Solution` class:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/24/lc-pickrandomrec.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0401_0500/s0497_random_point_in_non_overlapping_rectangles/lc-pickrandomrec.jpg)
 
 **Input** ["Solution", "pick", "pick", "pick", "pick", "pick"] [[[[-2, -2, 1, 1], [2, 2, 4, 6]]], [], [], [], [], []]
 

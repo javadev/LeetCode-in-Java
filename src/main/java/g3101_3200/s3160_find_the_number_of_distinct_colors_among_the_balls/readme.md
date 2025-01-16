@@ -18,7 +18,7 @@ Return an array `result` of length `n`, where `result[i]` denotes the number of 
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/04/17/ezgifcom-crop.gif)
+![](https://leetcode-in-java.github.io/src/main/java/g3101_3200/s3160_find_the_number_of_distinct_colors_among_the_balls/ezgifcom-crop.gif)
 
 *   After query 0, ball 1 has color 4.
 *   After query 1, ball 1 has color 4, and ball 2 has color 5.
@@ -33,7 +33,7 @@ Return an array `result` of length `n`, where `result[i]` denotes the number of 
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/04/17/ezgifcom-crop2.gif)**
+**![](https://leetcode-in-java.github.io/src/main/java/g3101_3200/s3160_find_the_number_of_distinct_colors_among_the_balls/ezgifcom-crop2.gif)**
 
 *   After query 0, ball 0 has color 1.
 *   After query 1, ball 0 has color 1, and ball 1 has color 2.

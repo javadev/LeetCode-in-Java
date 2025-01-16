@@ -17,7 +17,7 @@ Return `true` _if it is possible to fit the stamps while following the given res
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/11/03/ex1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2132_stamping_the_grid/ex1.png)
 
 **Input:** grid = [[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0]], stampHeight = 4, stampWidth = 3
 
@@ -27,7 +27,7 @@ Return `true` _if it is possible to fit the stamps while following the given res
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/11/03/ex2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2132_stamping_the_grid/ex2.png)
 
 **Input:** grid = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]], stampHeight = 2, stampWidth = 2
 

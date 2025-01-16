@@ -16,7 +16,7 @@ Given a 2D character matrix `grid`, where `grid[i][j]` is either `'X'`, `'Y'`, o
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/06/07/examplems.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3212_count_submatrices_with_equal_frequency_of_x_and_y/examplems.png)**
 
 **Example 2:**
 

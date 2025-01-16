@@ -19,7 +19,7 @@ Return _the minimum number of **pushes** to move the box to the target_. If ther
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/11/06/sample_1_1620.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1263_minimum_moves_to_move_a_box_to_their_target_location/sample_1_1620.png)
 
 **Input:**
 

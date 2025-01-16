@@ -12,7 +12,7 @@ Notice that the modulo is performed after getting the maximum product.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/23/product1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1594_maximum_non_negative_product_in_a_matrix/product1.jpg)
 
 **Input:** grid = [[-1,-2,-3],[-2,-3,-3],[-3,-3,-2]]
 
@@ -22,7 +22,7 @@ Notice that the modulo is performed after getting the maximum product.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/23/product2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1594_maximum_non_negative_product_in_a_matrix/product2.jpg)
 
 **Input:** grid = [[1,-2,1],[1,-2,1],[3,-4,1]]
 
@@ -32,7 +32,7 @@ Notice that the modulo is performed after getting the maximum product.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/12/23/product3.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1594_maximum_non_negative_product_in_a_matrix/product3.jpg)
 
 **Input:** grid = [[1,3],[0,-4]]
 

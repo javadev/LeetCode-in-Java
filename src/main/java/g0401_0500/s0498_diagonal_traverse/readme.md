@@ -6,7 +6,7 @@ Given an `m x n` matrix `mat`, return _an array of all the elements of the array
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/10/diag1-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0401_0500/s0498_diagonal_traverse/diag1-grid.jpg)
 
 **Input:** mat = [[1,2,3],[4,5,6],[7,8,9]]
 

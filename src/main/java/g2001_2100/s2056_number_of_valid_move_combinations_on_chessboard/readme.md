@@ -22,7 +22,7 @@ Return _the number of **valid** move combinations_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/09/23/a1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2056_number_of_valid_move_combinations_on_chessboard/a1.png)
 
 **Input:** pieces = ["rook"], positions = [[1,1]]
 
@@ -32,7 +32,7 @@ Return _the number of **valid** move combinations_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/09/23/a2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2056_number_of_valid_move_combinations_on_chessboard/a2.png)
 
 **Input:** pieces = ["queen"], positions = [[1,1]]
 
@@ -42,7 +42,7 @@ Return _the number of **valid** move combinations_.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/09/23/a3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2056_number_of_valid_move_combinations_on_chessboard/a3.png)
 
 **Input:** pieces = ["bishop"], positions = [[4,3]]
 

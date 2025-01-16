@@ -13,7 +13,7 @@ Implement the `TreeAncestor` class:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/08/28/1528_ex1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1483_kth_ancestor_of_a_tree_node/1528_ex1.png)
 
 **Input** ["TreeAncestor", "getKthAncestor", "getKthAncestor", "getKthAncestor"] [[7, [-1, 0, 0, 1, 1, 2, 2]], [3, 1], [5, 2], [6, 3]]
 

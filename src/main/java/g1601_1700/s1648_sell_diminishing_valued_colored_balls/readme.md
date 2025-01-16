@@ -12,7 +12,7 @@ Return _the **maximum** total value that you can attain after selling_ `orders` 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/05/jj.gif)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1648_sell_diminishing_valued_colored_balls/jj.gif)
 
 **Input:** inventory = [2,5], orders = 4
 

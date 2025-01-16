@@ -6,7 +6,7 @@ Given the `root` of a binary tree, return _the zigzag level order traversal of i
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0103_binary_tree_zigzag_level_order_traversal/tree1.jpg)
 
 **Input:** root = [3,9,20,null,null,15,7]
 

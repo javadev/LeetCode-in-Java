@@ -12,7 +12,7 @@ Since the answer may be very large, **return it modulo** <code>10<sup>9</sup> + 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/12/bb.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1569_number_of_ways_to_reorder_array_to_get_same_bst/bb.png)
 
 **Input:** nums = [2,1,3]
 
@@ -22,7 +22,7 @@ Since the answer may be very large, **return it modulo** <code>10<sup>9</sup> + 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/08/12/ex1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1569_number_of_ways_to_reorder_array_to_get_same_bst/ex1.png)
 
 **Input:** nums = [3,4,5,1,2]
 
@@ -38,7 +38,7 @@ Since the answer may be very large, **return it modulo** <code>10<sup>9</sup> + 
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/08/12/ex4.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1569_number_of_ways_to_reorder_array_to_get_same_bst/ex4.png)
 
 **Input:** nums = [1,2,3]
 

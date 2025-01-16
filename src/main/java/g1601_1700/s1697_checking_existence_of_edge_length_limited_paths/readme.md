@@ -10,7 +10,7 @@ Return _a **boolean array**_ `answer`_, where_ `answer.length == queries.length`
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/12/08/h.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1697_checking_existence_of_edge_length_limited_paths/h.png)
 
 **Input:** n = 3, edgeList = [[0,1,2],[1,2,4],[2,0,8],[1,0,16]], queries = [[0,1,2],[0,2,5]]
 
@@ -24,7 +24,7 @@ For the second query, there is a path (0 -> 1 -> 2) of two edges with distances 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/12/08/q.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1697_checking_existence_of_edge_length_limited_paths/q.png)
 
 **Input:** n = 5, edgeList = [[0,1,10],[1,2,5],[2,3,9],[3,4,13]], queries = [[0,4,14],[1,4,13]]
 

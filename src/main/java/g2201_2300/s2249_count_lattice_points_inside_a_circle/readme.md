@@ -11,7 +11,7 @@ Given a 2D integer array `circles` where <code>circles[i] = [x<sub>i</sub>, y<su
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/03/02/exa-11.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2249_count_lattice_points_inside_a_circle/exa-11.png)
 
 **Input:** circles = [[2,2,1]]
 
@@ -29,7 +29,7 @@ Hence, the number of lattice points present inside at least one circle is 5.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/03/02/exa-22.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2249_count_lattice_points_inside_a_circle/exa-22.png)
 
 **Input:** circles = [[2,2,2],[3,4,1]]
 

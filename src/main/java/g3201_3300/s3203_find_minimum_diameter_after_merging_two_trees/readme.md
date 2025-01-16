@@ -10,7 +10,7 @@ Return the **minimum** possible **diameter** of the resulting tree.
 
 The **diameter** of a tree is the length of the _longest_ path between any two nodes in the tree.
 
-**Example 1:**![](https://assets.leetcode.com/uploads/2024/04/22/example11-transformed.png)
+**Example 1:**![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3203_find_minimum_diameter_after_merging_two_trees/example11-transformed.png)
 
 **Input:** edges1 = [[0,1],[0,2],[0,3]], edges2 = [[0,1]]
 
@@ -22,7 +22,7 @@ We can obtain a tree of diameter 3 by connecting node 0 from the first tree with
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2024/04/22/example211.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3203_find_minimum_diameter_after_merging_two_trees/example211.png)
 
 **Input:** edges1 = [[0,1],[0,2],[0,3],[2,4],[2,5],[3,6],[2,7]], edges2 = [[0,1],[0,2],[0,3],[2,4],[2,5],[3,6],[2,7]]
 

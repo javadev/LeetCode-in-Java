@@ -16,7 +16,7 @@ Given the number of friends, `n`, and an integer `k`, return _the winner of the 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/25/ic234-q2-ex11.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1801_1900/s1823_find_the_winner_of_the_circular_game/ic234-q2-ex11.png)
 
 **Input:** n = 5, k = 2
 

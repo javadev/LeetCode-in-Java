@@ -17,7 +17,7 @@ Note that there can be **multiple edges** between the same two nodes.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/08/winword_2021-06-08_00-58-39.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1701_1800/s1782_count_pairs_of_nodes/winword_2021-06-08_00-58-39.png)
 
 **Input:** n = 4, edges = [[1,2],[2,4],[1,3],[2,3],[2,1]], queries = [2,3]
 

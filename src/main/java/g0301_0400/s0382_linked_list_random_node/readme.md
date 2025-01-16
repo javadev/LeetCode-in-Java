@@ -11,7 +11,7 @@ Implement the `Solution` class:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/16/getrand-linked-list.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0382_linked_list_random_node/getrand-linked-list.jpg)
 
 **Input** 
 

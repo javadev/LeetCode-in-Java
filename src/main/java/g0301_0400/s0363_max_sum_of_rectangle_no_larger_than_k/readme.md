@@ -8,7 +8,7 @@ It is **guaranteed** that there will be a rectangle with a sum no larger than `k
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/18/sum-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0363_max_sum_of_rectangle_no_larger_than_k/sum-grid.jpg)
 
 **Input:** matrix = [[1,0,1],[0,-2,3]], k = 2
 

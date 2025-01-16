@@ -6,7 +6,7 @@ Given the `root` of a binary tree, imagine yourself standing on the **right side
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/14/tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0199_binary_tree_right_side_view/tree.jpg)
 
 **Input:** root = [1,2,3,null,5,null,4]
 

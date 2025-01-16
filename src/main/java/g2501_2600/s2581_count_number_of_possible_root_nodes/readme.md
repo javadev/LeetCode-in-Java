@@ -17,7 +17,7 @@ Given the 2D integer arrays `edges`, `guesses` and the integer `k`, return _the 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/12/19/ex-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2581_count_number_of_possible_root_nodes/ex-1.png)
 
 **Input:** edges = [[0,1],[1,2],[1,3],[4,2]], guesses = [[1,3],[0,1],[1,0],[2,4]], k = 3
 
@@ -39,7 +39,7 @@ Considering 0, 1, or 2 as root node leads to 3 correct guesses.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/12/19/ex-2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2581_count_number_of_possible_root_nodes/ex-2.png)
 
 **Input:** edges = [[0,1],[1,2],[2,3],[3,4]], guesses = [[1,0],[3,4],[2,1],[3,2]], k = 1
 

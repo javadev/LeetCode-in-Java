@@ -15,7 +15,7 @@ The value of `|x|` is defined as:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/08/30/1527_example_1_2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1954_minimum_garden_perimeter_to_collect_enough_apples/1527_example_1_2.png)
 
 **Input:** neededApples = 1
 

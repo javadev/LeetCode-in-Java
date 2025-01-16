@@ -10,7 +10,7 @@ Design an algorithm that runs in less than `O(n)` time complexity.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/14/complete.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0222_count_complete_tree_nodes/complete.jpg)
 
 **Input:** root = [1,2,3,4,5,6]
 

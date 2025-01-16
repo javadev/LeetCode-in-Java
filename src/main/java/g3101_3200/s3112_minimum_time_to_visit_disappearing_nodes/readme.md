@@ -12,7 +12,7 @@ Return the array `answer`, with `answer[i]` denoting the **minimum** units of ti
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2024/03/09/example1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3101_3200/s3112_minimum_time_to_visit_disappearing_nodes/example1.png)
 
 **Input:** n = 3, edges = [[0,1,2],[1,2,1],[0,2,4]], disappear = [1,1,5]
 
@@ -28,7 +28,7 @@ We are starting our journey from node 0, and our goal is to find the minimum tim
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2024/03/09/example2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3101_3200/s3112_minimum_time_to_visit_disappearing_nodes/example2.png)
 
 **Input:** n = 3, edges = [[0,1,2],[1,2,1],[0,2,4]], disappear = [1,3,5]
 

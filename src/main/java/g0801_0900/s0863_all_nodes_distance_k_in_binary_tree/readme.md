@@ -8,7 +8,7 @@ You can return the answer in **any order**.
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/06/28/sketch0.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0863_all_nodes_distance_k_in_binary_tree/sketch0.png)
 
 **Input:** root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, k = 2
 

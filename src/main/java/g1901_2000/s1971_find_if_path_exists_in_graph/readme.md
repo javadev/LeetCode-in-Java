@@ -10,7 +10,7 @@ Given `edges` and the integers `n`, `source`, and `destination`, return `true` _
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/14/validpath-ex1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1971_find_if_path_exists_in_graph/validpath-ex1.png)
 
 **Input:** n = 3, edges = [[0,1],[1,2],[2,0]], source = 0, destination = 2
 
@@ -20,7 +20,7 @@ Given `edges` and the integers `n`, `source`, and `destination`, return `true` _
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/08/14/validpath-ex2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1971_find_if_path_exists_in_graph/validpath-ex2.png)
 
 **Input:** n = 6, edges = [[0,1],[0,2],[3,5],[5,4],[4,3]], source = 0, destination = 5
 

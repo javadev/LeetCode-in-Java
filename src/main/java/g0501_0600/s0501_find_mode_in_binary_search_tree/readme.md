@@ -14,7 +14,7 @@ Assume a BST is defined as follows:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/11/mode-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0501_find_mode_in_binary_search_tree/mode-tree.jpg)
 
 **Input:** root = [1,null,2,2]
 

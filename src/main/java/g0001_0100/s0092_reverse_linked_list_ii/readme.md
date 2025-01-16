@@ -6,7 +6,7 @@ Given the `head` of a singly linked list and two integers `left` and `right` whe
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/19/rev2ex2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0092_reverse_linked_list_ii/rev2ex2.jpg)
 
 **Input:** head = [1,2,3,4,5], left = 2, right = 4
 

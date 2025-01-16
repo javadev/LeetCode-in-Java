@@ -10,7 +10,7 @@ Each solution contains a distinct board configuration of the n-queens' placement
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/13/queens.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0051_n_queens/queens.jpg)
 
 **Input:** n = 4
 

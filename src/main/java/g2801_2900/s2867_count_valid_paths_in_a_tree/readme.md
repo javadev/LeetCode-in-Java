@@ -15,7 +15,7 @@ A path `(a, b)` is **valid** if there exists **exactly one** prime number among 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/08/27/example1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2867_count_valid_paths_in_a_tree/example1.png)
 
 **Input:** n = 5, edges = [[1,2],[1,3],[2,4],[2,5]]
 
@@ -31,7 +31,7 @@ It can be shown that there are only 4 valid paths.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/08/27/example2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2867_count_valid_paths_in_a_tree/example2.png)
 
 **Input:** n = 6, edges = [[1,2],[1,3],[2,4],[3,5],[3,6]]
 

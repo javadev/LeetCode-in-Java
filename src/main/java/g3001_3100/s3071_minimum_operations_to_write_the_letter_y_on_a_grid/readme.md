@@ -20,7 +20,7 @@ Return _the **minimum** number of operations needed to write the letter Y on the
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2024/01/22/y2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3001_3100/s3071_minimum_operations_to_write_the_letter_y_on_a_grid/y2.png)
 
 **Input:** grid = [[1,2,2],[1,1,0],[0,1,0]]
 
@@ -30,7 +30,7 @@ Return _the **minimum** number of operations needed to write the letter Y on the
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2024/01/22/y3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3001_3100/s3071_minimum_operations_to_write_the_letter_y_on_a_grid/y3.png)
 
 **Input:** grid = [[0,1,0,1,0],[2,1,0,1,2],[2,2,2,0,1],[2,2,2,2,2],[2,1,2,2,2]]
 

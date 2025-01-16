@@ -8,7 +8,7 @@ Only include the sum of all the elements on the primary diagonal and all the ele
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/14/sample_1911.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1572_matrix_diagonal_sum/sample_1911.png)
 
 **Input:** mat = [[**1**,2,**3**], 
                   [4,**5**,6], 

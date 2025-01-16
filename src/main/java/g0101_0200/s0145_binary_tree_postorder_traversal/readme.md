@@ -6,7 +6,7 @@ Given the `root` of a binary tree, return _the postorder traversal of its nodes'
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/28/pre1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0145_binary_tree_postorder_traversal/pre1.jpg)
 
 **Input:** root = [1,null,2,3]
 
@@ -26,7 +26,7 @@ Given the `root` of a binary tree, return _the postorder traversal of its nodes'
 
 **Example 4:**
 
-![](https://assets.leetcode.com/uploads/2020/08/28/pre3.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0145_binary_tree_postorder_traversal/pre3.jpg)
 
 **Input:** root = [1,2]
 
@@ -34,7 +34,7 @@ Given the `root` of a binary tree, return _the postorder traversal of its nodes'
 
 **Example 5:**
 
-![](https://assets.leetcode.com/uploads/2020/08/28/pre2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0145_binary_tree_postorder_traversal/pre2.jpg)
 
 **Input:** root = [1,null,2]
 

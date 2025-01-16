@@ -14,7 +14,7 @@ Return _the minimum number of liters of fuel to reach the capital city_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/09/22/a4c380025e3ff0c379525e96a7d63a3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2477_minimum_fuel_cost_to_report_to_the_capital/a4c380025e3ff0c379525e96a7d63a3.png)
 
 **Input:** roads = [[0,1],[0,2],[0,3]], seats = 5
 
@@ -29,7 +29,7 @@ It costs 3 liters of fuel at minimum. It can be proven that 3 is the minimum num
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/11/16/2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2477_minimum_fuel_cost_to_report_to_the_capital/2.png)
 
 **Input:** roads = [[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]], seats = 2
 
@@ -49,7 +49,7 @@ It can be proven that 7 is the minimum number of liters of fuel needed.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2022/09/27/efcf7f7be6830b8763639cfd01b690a.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2477_minimum_fuel_cost_to_report_to_the_capital/efcf7f7be6830b8763639cfd01b690a.png)
 
 **Input:** roads = [], seats = 1
 

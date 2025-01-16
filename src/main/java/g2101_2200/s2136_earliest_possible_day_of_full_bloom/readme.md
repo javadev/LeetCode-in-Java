@@ -13,7 +13,7 @@ Return _the **earliest** possible day where **all** seeds are blooming_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/21/1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2136_earliest_possible_day_of_full_bloom/1.png)
 
 **Input:** plantTime = [1,4,3], growTime = [2,3,1]
 
@@ -33,7 +33,7 @@ Thus, on day 9, all the seeds are blooming.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/21/2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2136_earliest_possible_day_of_full_bloom/2.png)
 
 **Input:** plantTime = [1,2,3,2], growTime = [2,1,2,1]
 

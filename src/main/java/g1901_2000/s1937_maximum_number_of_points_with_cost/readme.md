@@ -17,7 +17,7 @@ Return _the **maximum** number of points you can achieve_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/12/screenshot-2021-07-12-at-13-40-26-diagram-drawio-diagrams-net.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1937_maximum_number_of_points_with_cost/screenshot-2021-07-12-at-13-40-26-diagram-drawio-diagrams-net.png)
 
 **Input:** points = [[1,2,3],[1,5,1],[3,1,1]]
 
@@ -35,7 +35,7 @@ Your final score is 11 - 2 = 9.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/07/12/screenshot-2021-07-12-at-13-42-14-diagram-drawio-diagrams-net.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1937_maximum_number_of_points_with_cost/screenshot-2021-07-12-at-13-42-14-diagram-drawio-diagrams-net.png)
 
 **Input:** points = [[1,5],[2,3],[4,2]]
 

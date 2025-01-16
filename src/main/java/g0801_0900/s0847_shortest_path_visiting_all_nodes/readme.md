@@ -8,7 +8,7 @@ Return _the length of the shortest path that visits every node_. You may start a
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/12/shortest1-graph.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0847_shortest_path_visiting_all_nodes/shortest1-graph.jpg)
 
 **Input:** graph = [[1,2,3],[0],[0],[0]]
 
@@ -18,7 +18,7 @@ Return _the length of the shortest path that visits every node_. You may start a
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/05/12/shortest2-graph.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0847_shortest_path_visiting_all_nodes/shortest2-graph.jpg)
 
 **Input:** graph = [[1],[0,2,4],[1,3,4],[2],[1,2]]
 

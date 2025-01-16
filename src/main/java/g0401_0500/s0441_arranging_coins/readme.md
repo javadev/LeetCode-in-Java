@@ -8,7 +8,7 @@ Given the integer `n`, return _the number of **complete rows** of the staircase 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/09/arrangecoins1-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0401_0500/s0441_arranging_coins/arrangecoins1-grid.jpg)
 
 **Input:** n = 5
 
@@ -18,7 +18,7 @@ Given the integer `n`, return _the number of **complete rows** of the staircase 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/04/09/arrangecoins2-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0401_0500/s0441_arranging_coins/arrangecoins2-grid.jpg)
 
 **Input:** n = 8
 

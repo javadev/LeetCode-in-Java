@@ -8,7 +8,7 @@ It is **guaranteed** that the node to be deleted is **not a tail node** in the l
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/01/node1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0237_delete_node_in_a_linked_list/node1.jpg)
 
 **Input:** head = [4,5,1,9], node = 5
 
@@ -18,7 +18,7 @@ It is **guaranteed** that the node to be deleted is **not a tail node** in the l
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/09/01/node2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0237_delete_node_in_a_linked_list/node2.jpg)
 
 **Input:** head = [4,5,1,9], node = 1
 

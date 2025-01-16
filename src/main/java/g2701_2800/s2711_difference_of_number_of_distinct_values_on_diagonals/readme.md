@@ -19,7 +19,7 @@ A cell <code>(r<sub>1</sub>, c<sub>1</sub>)</code> belongs to the top-left diago
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/04/19/ex2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2701_2800/s2711_difference_of_number_of_distinct_values_on_diagonals/ex2.png)
 
 **Input:** grid = [[1,2,3],[3,1,5],[3,2,1]]
 

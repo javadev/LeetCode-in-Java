@@ -12,7 +12,7 @@ A string is a **palindrome** when it reads the same backwards as forwards.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/07/15/treedrawio-8drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2701_2800/s2791_count_paths_that_can_form_a_palindrome_in_a_tree/treedrawio-8drawio.png)
 
 **Input:** parent = [-1,0,0,1,1,2], s = "acaabc"
 

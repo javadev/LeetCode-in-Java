@@ -4,7 +4,7 @@ Easy
 
 There is a special typewriter with lowercase English letters `'a'` to `'z'` arranged in a **circle** with a **pointer**. A character can **only** be typed if the pointer is pointing to that character. The pointer is **initially** pointing to the character `'a'`.
 
-![](https://assets.leetcode.com/uploads/2021/07/31/chart.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1974_minimum_time_to_type_word_using_special_typewriter/chart.jpg)
 
 Each second, you may perform one of the following operations:
 

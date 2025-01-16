@@ -14,7 +14,7 @@ You may assume that `next()` calls will always be valid. That is, there will be 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/12/25/bst-tree.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0173_binary_search_tree_iterator/bst-tree.png)
 
 **Input** ["BSTIterator", "next", "next", "hasNext", "next", "hasNext", "next", "hasNext", "next", "hasNext"] [[[7, 3, 15, null, null, 9, 20]], [], [], [], [], [], [], [], [], []]
 

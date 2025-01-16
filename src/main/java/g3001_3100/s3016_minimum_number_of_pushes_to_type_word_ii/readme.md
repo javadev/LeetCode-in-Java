@@ -12,11 +12,11 @@ Return _the **minimum** number of pushes needed to type_ `word` _after remapping
 
 An example mapping of letters to keys on a telephone keypad is given below. Note that `1`, `*`, `#`, and `0` do **not** map to any letters.
 
-![](https://assets.leetcode.com/uploads/2023/12/26/keypaddesc.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3001_3100/s3016_minimum_number_of_pushes_to_type_word_ii/keypaddesc.png)
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/12/26/keypadv1e1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3001_3100/s3016_minimum_number_of_pushes_to_type_word_ii/keypadv1e1.png)
 
 **Input:** word = "abcde"
 
@@ -40,7 +40,7 @@ It can be shown that no other mapping can provide a lower cost.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/12/26/keypadv2e2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3001_3100/s3016_minimum_number_of_pushes_to_type_word_ii/keypadv2e2.png)
 
 **Input:** word = "xyzxyzxyzxyz"
 
@@ -60,7 +60,7 @@ Note that the key 9 is not mapped to any letter: it is not necessary to map lett
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2023/12/27/keypadv2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3001_3100/s3016_minimum_number_of_pushes_to_type_word_ii/keypadv2.png)
 
 **Input:** word = "aabbccddeeffgghhiiiiii"
 

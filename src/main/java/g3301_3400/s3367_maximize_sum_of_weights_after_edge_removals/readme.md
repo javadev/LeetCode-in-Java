@@ -19,7 +19,7 @@ Return the **maximum** possible sum of weights for the remaining edges after mak
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/10/30/test1drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3367_maximize_sum_of_weights_after_edge_removals/test1drawio.png)
 
 *   Node 2 has edges with 3 other nodes. We remove the edge `[0, 2, 2]`, ensuring that no node has edges with more than `k = 2` nodes.
 *   The sum of weights is 22, and we can't achieve a greater sum. Thus, the answer is 22.

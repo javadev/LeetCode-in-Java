@@ -6,17 +6,17 @@ You are given an `m x n` integer matrix `grid`, where `m` and `n` are both **eve
 
 The matrix is composed of several layers, which is shown in the below image, where each color is its own layer:
 
-![](https://assets.leetcode.com/uploads/2021/06/10/ringofgrid.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1914_cyclically_rotating_a_grid/ringofgrid.png)
 
 A cyclic rotation of the matrix is done by cyclically rotating **each layer** in the matrix. To cyclically rotate a layer once, each element in the layer will take the place of the adjacent element in the **counter-clockwise** direction. An example rotation is shown below:
 
-![](https://assets.leetcode.com/uploads/2021/06/22/explanation_grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1914_cyclically_rotating_a_grid/explanation_grid.jpg)
 
 Return _the matrix after applying_ `k` _cyclic rotations to it_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/19/rod2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1914_cyclically_rotating_a_grid/rod2.png)
 
 **Input:** grid = [[40,10],[30,20]], k = 1
 
@@ -26,7 +26,7 @@ Return _the matrix after applying_ `k` _cyclic rotations to it_.
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2021/06/10/ringofgrid5.png)** **![](https://assets.leetcode.com/uploads/2021/06/10/ringofgrid6.png)** **![](https://assets.leetcode.com/uploads/2021/06/10/ringofgrid7.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1914_cyclically_rotating_a_grid/ringofgrid5.png)** **![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1914_cyclically_rotating_a_grid/ringofgrid6.png)** **![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1914_cyclically_rotating_a_grid/ringofgrid7.png)**
 
 **Input:** grid = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]], k = 2
 

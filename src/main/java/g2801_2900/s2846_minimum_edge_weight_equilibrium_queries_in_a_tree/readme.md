@@ -15,7 +15,7 @@ Return _an array_ `answer` _of length_ `m` _where_ `answer[i]` _is the answer to
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/08/11/graph-6-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2846_minimum_edge_weight_equilibrium_queries_in_a_tree/graph-6-1.png)
 
 **Input:** n = 7, edges = [[0,1,1],[1,2,1],[2,3,1],[3,4,2],[4,5,2],[5,6,2]], queries = [[0,3],[3,6],[2,6],[0,6]]
 
@@ -29,7 +29,7 @@ In the fourth query, we change the weights of edges [0,1], [1,2] and [2,3] to 2.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/08/11/graph-9-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2846_minimum_edge_weight_equilibrium_queries_in_a_tree/graph-9-1.png)
 
 **Input:** n = 8, edges = [[1,2,6],[1,3,4],[2,4,6],[2,5,3],[3,6,6],[3,0,8],[7,0,2]], queries = [[4,6],[0,4],[6,5],[7,4]]
 

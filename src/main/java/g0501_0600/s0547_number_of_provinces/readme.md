@@ -12,7 +12,7 @@ Return _the total number of **provinces**_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/12/24/graph1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0547_number_of_provinces/graph1.jpg)
 
 **Input:** isConnected = [[1,1,0],[1,1,0],[0,0,1]]
 
@@ -20,7 +20,7 @@ Return _the total number of **provinces**_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/12/24/graph2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0547_number_of_provinces/graph2.jpg)
 
 **Input:** isConnected = [[1,0,0],[0,1,0],[0,0,1]]
 

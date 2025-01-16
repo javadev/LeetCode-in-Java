@@ -8,7 +8,7 @@ You should **preserve** the original relative order of the nodes in each of the 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/04/partition.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0086_partition_list/partition.jpg)
 
 **Input:** head = [1,4,3,2,5,2], x = 3
 

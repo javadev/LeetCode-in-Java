@@ -8,7 +8,7 @@ A binary search tree is **balanced** if the depth of the two subtrees of every n
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/10/balance1-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1382_balance_a_binary_search_tree/balance1-tree.jpg)
 
 **Input:** root = [1,null,2,null,3,null,4,null,null]
 
@@ -18,7 +18,7 @@ A binary search tree is **balanced** if the depth of the two subtrees of every n
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/08/10/balanced2-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1382_balance_a_binary_search_tree/balanced2-tree.jpg)
 
 **Input:** root = [2,1,3]
 

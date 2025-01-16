@@ -8,7 +8,7 @@ Return _the minimum number of cameras needed to monitor all nodes of the tree_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/12/29/bst_cameras_01.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0968_binary_tree_cameras/bst_cameras_01.png)
 
 **Input:** root = [0,0,null,0,0]
 
@@ -18,7 +18,7 @@ Return _the minimum number of cameras needed to monitor all nodes of the tree_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2018/12/29/bst_cameras_02.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0968_binary_tree_cameras/bst_cameras_02.png)
 
 **Input:** root = [0,0,null,0,null,0,null,null,0]
 

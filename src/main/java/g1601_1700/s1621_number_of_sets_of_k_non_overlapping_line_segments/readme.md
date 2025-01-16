@@ -8,7 +8,7 @@ Return _the number of ways we can draw_ `k` _non-overlapping line segments__._ S
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/07/ex1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1621_number_of_sets_of_k_non_overlapping_line_segments/ex1.png)
 
 **Input:** n = 4, k = 2
 

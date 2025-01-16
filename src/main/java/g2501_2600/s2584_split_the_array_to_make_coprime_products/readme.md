@@ -14,7 +14,7 @@ Two values `val1` and `val2` are coprime if `gcd(val1, val2) == 1` where `gcd(va
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/12/14/second.PNG)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2584_split_the_array_to_make_coprime_products/second.png)
 
 **Input:** nums = [4,7,8,15,3,5]
 
@@ -24,7 +24,7 @@ Two values `val1` and `val2` are coprime if `gcd(val1, val2) == 1` where `gcd(va
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/12/14/capture.PNG)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2584_split_the_array_to_make_coprime_products/capture.png)
 
 **Input:** nums = [4,7,15,8,3,5]
 

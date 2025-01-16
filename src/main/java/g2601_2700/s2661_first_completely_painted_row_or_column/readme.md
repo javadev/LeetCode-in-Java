@@ -10,7 +10,7 @@ Return _the smallest index_ `i` _at which either a row or a column will be compl
 
 **Example 1:**
 
-![](image explanation for example 1)![image explanation for example 1](https://assets.leetcode.com/uploads/2023/01/18/grid1.jpg)
+![](image explanation for example 1)![image explanation for example 1](https://leetcode-in-java.github.io/src/main/java/g2601_2700/s2661_first_completely_painted_row_or_column/grid1.jpg)
 
 **Input:** arr = [1,3,4,2], mat = [[1,4],[2,3]]
 
@@ -20,7 +20,7 @@ Return _the smallest index_ `i` _at which either a row or a column will be compl
 
 **Example 2:**
 
-![image explanation for example 2](https://assets.leetcode.com/uploads/2023/01/18/grid2.jpg)
+![image explanation for example 2](https://leetcode-in-java.github.io/src/main/java/g2601_2700/s2661_first_completely_painted_row_or_column/grid2.jpg)
 
 **Input:** arr = [2,8,7,4,1,3,5,6,9], mat = [[3,2,5],[1,4,6],[8,7,9]]
 

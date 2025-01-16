@@ -22,7 +22,7 @@ Implement the `LockingTree` class:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/29/untitled.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1993_operations_on_tree/untitled.png)
 
 **Input**
 

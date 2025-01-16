@@ -14,7 +14,7 @@ Return _the minimum number of minutes that must elapse until no cell has a fresh
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/02/16/oranges.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0994_rotting_oranges/oranges.png)
 
 **Input:** grid = [[2,1,1],[1,1,0],[0,1,1]]
 

@@ -15,7 +15,7 @@ Return _the maximum number of groups (i.e., maximum_ `m`_) into which you can di
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/13/example1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2493_divide_nodes_into_the_maximum_number_of_groups/example1.png)
 
 **Input:** n = 6, edges = [[1,2],[1,4],[1,5],[2,6],[2,3],[4,6]]
 

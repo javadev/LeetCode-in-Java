@@ -8,7 +8,7 @@ Return _the minimum integer you can obtain also as a string_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/06/17/q4_1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1505_minimum_possible_integer_after_at_most_k_adjacent_swaps_on_digits/q4_1.jpg)
 
 **Input:** num = "4321", k = 4
 

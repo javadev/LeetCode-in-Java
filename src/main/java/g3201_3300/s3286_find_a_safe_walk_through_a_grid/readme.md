@@ -22,7 +22,7 @@ Return `true` if you can reach the final cell with a health value of 1 or more, 
 
 The final cell can be reached safely by walking along the gray cells below.
 
-![](https://assets.leetcode.com/uploads/2024/08/04/3868_examples_1drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3286_find_a_safe_walk_through_a_grid/3868_examples_1drawio.png)
 
 **Example 2:**
 
@@ -34,7 +34,7 @@ The final cell can be reached safely by walking along the gray cells below.
 
 A minimum of 4 health points is needed to reach the final cell safely.
 
-![](https://assets.leetcode.com/uploads/2024/08/04/3868_examples_2drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3286_find_a_safe_walk_through_a_grid/3868_examples_2drawio.png)
 
 **Example 3:**
 
@@ -46,7 +46,7 @@ A minimum of 4 health points is needed to reach the final cell safely.
 
 The final cell can be reached safely by walking along the gray cells below.
 
-![](https://assets.leetcode.com/uploads/2024/08/04/3868_examples_3drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3286_find_a_safe_walk_through_a_grid/3868_examples_3drawio.png)
 
 Any path that does not go through the cell `(1, 1)` is unsafe since your health will drop to 0 when reaching the final cell.
 

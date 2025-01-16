@@ -22,7 +22,7 @@ Return _the **maximum** net income Alice can have if she travels towards the opt
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/29/eg1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2467_most_profitable_path_in_a_tree/eg1.png)
 
 **Input:** edges = [[0,1],[1,2],[1,3],[3,4]], bob = 3, amount = [-2,4,2,-4,6]
 
@@ -54,7 +54,7 @@ It is not possible for Alice to get a higher net income.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/10/29/eg2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2467_most_profitable_path_in_a_tree/eg2.png)
 
 **Input:** edges = [[0,1]], bob = 1, amount = [-7280,2350]
 

@@ -25,7 +25,7 @@ Return _the 2D array_ `ans` _containing the paths of the **remaining** folders a
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/19/lc-dupfolder1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1948_delete_duplicate_folders_in_system/lc-dupfolder1.jpg)
 
 **Input:** paths = [["a"],["c"],["d"],["a","b"],["c","b"],["d","a"]]
 
@@ -35,7 +35,7 @@ Return _the 2D array_ `ans` _containing the paths of the **remaining** folders a
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/07/19/lc-dupfolder2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1948_delete_duplicate_folders_in_system/lc-dupfolder2.jpg)
 
 **Input:** paths = [["a"],["c"],["a","b"],["c","b"],["a","b","x"],["a","b","x","y"],["w"],["w","y"]]
 
@@ -45,7 +45,7 @@ Return _the 2D array_ `ans` _containing the paths of the **remaining** folders a
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/07/19/lc-dupfolder3.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1948_delete_duplicate_folders_in_system/lc-dupfolder3.jpg)
 
 **Input:** paths = [["a","b"],["c","d"],["c"],["a"]]
 

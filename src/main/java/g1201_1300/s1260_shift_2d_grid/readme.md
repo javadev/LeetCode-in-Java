@@ -14,7 +14,7 @@ Return the _2D grid_ after applying shift operation `k` times.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/11/05/e1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1260_shift_2d_grid/e1.png)
 
 **Input:** `grid` = [[1,2,3],[4,5,6],[7,8,9]], k = 1
 
@@ -22,7 +22,7 @@ Return the _2D grid_ after applying shift operation `k` times.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/11/05/e2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1260_shift_2d_grid/e2.png)
 
 **Input:** `grid` = [[3,8,1,9],[19,7,2,5],[4,6,11,10],[12,0,21,13]], k = 4
 

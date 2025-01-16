@@ -17,7 +17,7 @@ Return `true` if **all** the cells satisfy these conditions, otherwise, return `
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/04/15/examplechanged.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g3101_3200/s3142_check_if_grid_satisfies_conditions/examplechanged.png)**
 
 All the cells in the grid satisfy the conditions.
 
@@ -29,7 +29,7 @@ All the cells in the grid satisfy the conditions.
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/03/27/example21.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g3101_3200/s3142_check_if_grid_satisfies_conditions/example21.png)**
 
 All cells in the first row are equal.
 
@@ -41,7 +41,7 @@ All cells in the first row are equal.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/03/31/changed.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3101_3200/s3142_check_if_grid_satisfies_conditions/changed.png)
 
 Cells in the first column have different values.
 

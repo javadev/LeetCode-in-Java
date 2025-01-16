@@ -24,7 +24,7 @@ Return the **maximum** number of fruits the children can collect from the dungeo
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/10/15/example_1.gif)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3363_find_the_maximum_number_of_fruits_collected/example_1.gif)
 
 In this example:
 

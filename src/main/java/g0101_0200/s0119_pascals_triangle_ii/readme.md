@@ -6,7 +6,7 @@ Given an integer `rowIndex`, return the `rowIndexth` (**0-indexed**) row of the 
 
 In **Pascal's triangle**, each number is the sum of the two numbers directly above it as shown:
 
-![](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0119_pascals_triangle_ii/pascaltriangleanimated2.gif)
 
 **Example 1:**
 

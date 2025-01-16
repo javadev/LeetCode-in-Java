@@ -8,7 +8,7 @@ Given the `root` of a binary tree, return `true` _if the given tree is **uni-val
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/12/28/unival_bst_1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0965_univalued_binary_tree/unival_bst_1.png)
 
 **Input:** root = [1,1,1,1,1,null,1]
 
@@ -16,7 +16,7 @@ Given the `root` of a binary tree, return `true` _if the given tree is **uni-val
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2018/12/28/unival_bst_2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0965_univalued_binary_tree/unival_bst_2.png)
 
 **Input:** root = [2,2,2,5,2]
 

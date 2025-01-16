@@ -6,7 +6,7 @@ On an `n x n` chessboard, a knight starts at the cell `(row, column)` and attemp
 
 A chess knight has eight possible moves it can make, as illustrated below. Each move is two cells in a cardinal direction, then one cell in an orthogonal direction.
 
-![](https://assets.leetcode.com/uploads/2018/10/12/knight.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0688_knight_probability_in_chessboard/knight.png)
 
 Each time the knight is to move, it chooses one of eight possible moves uniformly at random (even if the piece would go off the chessboard) and moves there.
 

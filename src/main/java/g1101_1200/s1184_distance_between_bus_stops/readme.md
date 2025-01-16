@@ -10,7 +10,7 @@ Return the shortest distance between the given `start` and `destination` stops.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/09/03/untitled-diagram-1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1101_1200/s1184_distance_between_bus_stops/untitled-diagram-1.jpg)
 
 **Input:** distance = [1,2,3,4], start = 0, destination = 1
 
@@ -20,7 +20,7 @@ Return the shortest distance between the given `start` and `destination` stops.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/09/03/untitled-diagram-1-1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1101_1200/s1184_distance_between_bus_stops/untitled-diagram-1-1.jpg)
 
 **Input:** distance = [1,2,3,4], start = 0, destination = 2
 
@@ -30,7 +30,7 @@ Return the shortest distance between the given `start` and `destination` stops.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2019/09/03/untitled-diagram-1-2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1101_1200/s1184_distance_between_bus_stops/untitled-diagram-1-2.jpg)
 
 **Input:** distance = [1,2,3,4], start = 0, destination = 3
 

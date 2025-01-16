@@ -10,7 +10,7 @@ Return _the **maximum height** of the stacked_ `cuboids`.
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2019/10/21/image.jpg)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1691_maximum_height_by_stacking_cuboids/image.jpg)**
 
 **Input:** cuboids = [[50,45,20],[95,37,53],[45,23,12]]
 

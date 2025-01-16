@@ -10,7 +10,7 @@ _Return the probability that after `t` seconds the frog is on the vertex `target
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/21/frog1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1377_frog_position_after_t_seconds/frog1.jpg)
 
 **Input:** n = 7, edges = [[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]], t = 2, target = 4
 
@@ -20,7 +20,7 @@ _Return the probability that after `t` seconds the frog is on the vertex `target
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2021/12/21/frog2.jpg)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1377_frog_position_after_t_seconds/frog2.jpg)**
 
 **Input:** n = 7, edges = [[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]], t = 1, target = 7
 

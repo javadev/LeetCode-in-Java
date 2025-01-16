@@ -8,7 +8,7 @@ Given an `m x n` matrix `mat` of integers, sort each **matrix diagonal** in asce
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/01/21/1482_example_1_2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1329_sort_the_matrix_diagonally/1482_example_1_2.png)
 
 **Input:** mat = [[3,3,1,1],[2,2,1,2],[1,1,1,2]]
 

@@ -14,7 +14,7 @@ Return _an array_ `answer` _where_ `answer[i]` _is the number of **different** n
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/08/31/graaphdrawio-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2876_count_visited_nodes_in_a_directed_graph/graaphdrawio-1.png)
 
 **Input:** edges = [1,2,0,0]
 
@@ -28,7 +28,7 @@ Return _an array_ `answer` _where_ `answer[i]` _is the number of **different** n
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/08/31/graaph2drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2876_count_visited_nodes_in_a_directed_graph/graaph2drawio.png)
 
 **Input:** edges = [1,2,3,4,0]
 

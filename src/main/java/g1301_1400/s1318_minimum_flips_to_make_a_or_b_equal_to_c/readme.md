@@ -7,7 +7,7 @@ Flip operation consists of change **any** single bit 1 to 0 or change the bit 0 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/01/06/sample_3_1676.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1318_minimum_flips_to_make_a_or_b_equal_to_c/sample_3_1676.png)
 
 **Input:** a = 2, b = 6, c = 5
 

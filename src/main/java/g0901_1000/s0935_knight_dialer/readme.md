@@ -6,11 +6,11 @@ The chess knight has a **unique movement**, it may move two squares vertically a
 
 A chess knight can move as indicated in the chess diagram below:
 
-![](https://assets.leetcode.com/uploads/2020/08/18/chess.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0935_knight_dialer/chess.jpg)
 
 We have a chess knight and a phone pad as shown below, the knight **can only stand on a numeric cell** (i.e. blue cell).
 
-![](https://assets.leetcode.com/uploads/2020/08/18/phone.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0935_knight_dialer/phone.jpg)
 
 Given an integer `n`, return how many distinct phone numbers of length `n` we can dial.
 

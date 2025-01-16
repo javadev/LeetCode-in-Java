@@ -13,7 +13,7 @@ Implement the NumMatrix class:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/14/sum-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0304_range_sum_query_2d_immutable/sum-grid.jpg)
 
 **Input**
 

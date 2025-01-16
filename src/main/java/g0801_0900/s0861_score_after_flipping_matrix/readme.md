@@ -12,7 +12,7 @@ Return _the highest possible **score** after making any number of **moves** (inc
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/23/lc-toogle1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0861_score_after_flipping_matrix/lc-toogle1.jpg)
 
 **Input:** grid = [[0,0,1,1],[1,0,1,0],[1,1,0,0]]
 

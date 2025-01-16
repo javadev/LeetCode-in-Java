@@ -15,7 +15,7 @@ Return _the maximum number of connecting lines we can draw in this way_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/04/26/142.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1001_1100/s1035_uncrossed_lines/142.png)
 
 **Input:** nums1 = [1,4,2], nums2 = [1,2,4]
 

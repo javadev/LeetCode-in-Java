@@ -24,7 +24,7 @@ A **palindrome** is a string that reads the same forward and backward.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2024/09/01/tree1drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3327_check_if_dfs_strings_are_palindromes/tree1drawio.png)
 
 **Input:** parent = [-1,0,0,1,1,2], s = "aababa"
 
@@ -41,7 +41,7 @@ A **palindrome** is a string that reads the same forward and backward.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2024/09/01/tree2drawio-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3327_check_if_dfs_strings_are_palindromes/tree2drawio-1.png)
 
 **Input:** parent = [-1,0,0,0,0], s = "aabcb"
 

@@ -9,7 +9,7 @@ Write an efficient algorithm that searches for a `target` value in an `m x n` in
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/24/searchgrid2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0240_search_a_2d_matrix_ii/searchgrid2.jpg)
 
 **Input:** matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 5
 
@@ -17,7 +17,7 @@ Write an efficient algorithm that searches for a `target` value in an `m x n` in
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/11/24/searchgrid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0240_search_a_2d_matrix_ii/searchgrid.jpg)
 
 **Input:** matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 20
 

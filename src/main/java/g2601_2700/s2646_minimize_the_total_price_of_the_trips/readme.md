@@ -16,7 +16,7 @@ Return _the minimum total price sum to perform all the given trips_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/03/16/diagram2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2601_2700/s2646_minimize_the_total_price_of_the_trips/diagram2.png)
 
 **Input:** n = 4, edges = [[0,1],[1,2],[1,3]], price = [2,2,10,6], trips = [[0,3],[2,1],[2,3]]
 
@@ -36,7 +36,7 @@ It can be proven, that 23 is the minimum answer that we can achieve.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/03/16/diagram3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2601_2700/s2646_minimize_the_total_price_of_the_trips/diagram3.png)
 
 **Input:** n = 2, edges = [[0,1]], price = [2,2], trips = [[0,0]]
 

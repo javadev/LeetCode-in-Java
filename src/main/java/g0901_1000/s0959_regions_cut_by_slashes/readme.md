@@ -10,7 +10,7 @@ Note that backslash characters are escaped, so a `'\'` is represented as `'\\'`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/12/15/1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0959_regions_cut_by_slashes/1.png)
 
 **Input:** grid = [" /","/ "]
 
@@ -18,7 +18,7 @@ Note that backslash characters are escaped, so a `'\'` is represented as `'\\'`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2018/12/15/2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0959_regions_cut_by_slashes/2.png)
 
 **Input:** grid = [" /"," "]
 
@@ -26,7 +26,7 @@ Note that backslash characters are escaped, so a `'\'` is represented as `'\\'`.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2018/12/15/4.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0959_regions_cut_by_slashes/4.png)
 
 **Input:** grid = ["/\\\\","\\\\/"]
 

@@ -10,7 +10,7 @@ A **full binary tree** is a binary tree where each node has exactly `0` or `2` c
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/22/fivetrees.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0894_all_possible_full_binary_trees/fivetrees.png)
 
 **Input:** n = 7
 

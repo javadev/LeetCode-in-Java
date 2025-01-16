@@ -12,7 +12,7 @@ Return _the **last** day where it is possible to walk from the **top** to the **
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/27/1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1970_last_day_where_you_can_still_cross/1.png)
 
 **Input:** row = 2, col = 2, cells = [[1,1],[2,1],[1,2],[2,2]]
 
@@ -22,7 +22,7 @@ Return _the **last** day where it is possible to walk from the **top** to the **
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/07/27/2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1970_last_day_where_you_can_still_cross/2.png)
 
 **Input:** row = 2, col = 2, cells = [[1,1],[1,2],[2,1],[2,2]]
 
@@ -32,7 +32,7 @@ Return _the **last** day where it is possible to walk from the **top** to the **
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/07/27/3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1970_last_day_where_you_can_still_cross/3.png)
 
 **Input:** row = 3, col = 3, cells = [[1,2],[2,1],[3,3],[2,2],[1,1],[1,3],[2,3],[3,2],[3,1]]
 

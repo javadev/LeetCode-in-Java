@@ -13,7 +13,7 @@ Return any solution if there is more than one solution and return an **empty lis
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2019/09/11/1359_ex1.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1203_sort_items_by_groups_respecting_dependencies/1359_ex1.png)**
 
 **Input:** n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3,6],[],[],[]]
 

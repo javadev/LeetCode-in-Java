@@ -10,7 +10,7 @@ Return _the number of bulbs that are on after `n` rounds_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/05/bulb.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0319_bulb_switcher/bulb.jpg)
 
 **Input:** n = 3
 

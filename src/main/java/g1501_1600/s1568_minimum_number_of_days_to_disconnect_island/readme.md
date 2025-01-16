@@ -12,7 +12,7 @@ Return _the minimum number of days to disconnect the grid_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/24/land1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1568_minimum_number_of_days_to_disconnect_island/land1.jpg)
 
 **Input:** grid = [[0,1,1,0],[0,1,1,0],[0,0,0,0]]
 
@@ -22,7 +22,7 @@ Return _the minimum number of days to disconnect the grid_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/24/land2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1568_minimum_number_of_days_to_disconnect_island/land2.jpg)
 
 **Input:** grid = [[1,1]]
 

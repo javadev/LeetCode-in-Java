@@ -11,7 +11,7 @@ Return _the maximum area of a piece of cake after you cut at each horizontal and
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/05/14/leetcode_max_area_2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1465_maximum_area_of_a_piece_of_cake_after_horizontal_and_vertical_cuts/leetcode_max_area_2.png)
 
 **Input:** h = 5, w = 4, horizontalCuts = [1,2,4], verticalCuts = [1,3]
 
@@ -21,7 +21,7 @@ Return _the maximum area of a piece of cake after you cut at each horizontal and
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/05/14/leetcode_max_area_3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1465_maximum_area_of_a_piece_of_cake_after_horizontal_and_vertical_cuts/leetcode_max_area_3.png)
 
 **Input:** h = 5, w = 4, horizontalCuts = [3,1], verticalCuts = [1]
 

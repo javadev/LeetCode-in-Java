@@ -30,7 +30,7 @@ The query result format is in the following example.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/10/22/tree1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0608_tree_node/tree1.jpg)
 
 **Input:**
 
@@ -67,7 +67,7 @@ Nodes 3, 4, and 5 are leaf nodes because they have parent nodes and they do not 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/10/22/tree2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0608_tree_node/tree2.jpg)
 
 **Input:**
 

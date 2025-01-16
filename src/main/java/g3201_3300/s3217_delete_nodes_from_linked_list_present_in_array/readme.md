@@ -12,7 +12,7 @@ You are given an array of integers `nums` and the `head` of a linked list. Retur
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/06/11/linkedlistexample0.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3217_delete_nodes_from_linked_list_present_in_array/linkedlistexample0.png)**
 
 Remove the nodes with values 1, 2, and 3.
 
@@ -24,7 +24,7 @@ Remove the nodes with values 1, 2, and 3.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/06/11/linkedlistexample1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3217_delete_nodes_from_linked_list_present_in_array/linkedlistexample1.png)
 
 Remove the nodes with value 1.
 
@@ -36,7 +36,7 @@ Remove the nodes with value 1.
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/06/11/linkedlistexample2.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3217_delete_nodes_from_linked_list_present_in_array/linkedlistexample2.png)**
 
 No node has value 5.
 

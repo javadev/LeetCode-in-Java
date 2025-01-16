@@ -12,7 +12,7 @@ Return _the generated matrix_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/05/09/ex1new.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g2301_2400/s2326_spiral_matrix_iv/ex1new.jpg)
 
 **Input:** m = 3, n = 5, head = [3,0,2,6,8,1,7,9,4,2,5,5,0]
 
@@ -24,7 +24,7 @@ Note that the remaining spaces in the matrix are filled with -1.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/05/11/ex2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g2301_2400/s2326_spiral_matrix_iv/ex2.jpg)
 
 **Input:** m = 1, n = 4, head = [0,1,2]
 

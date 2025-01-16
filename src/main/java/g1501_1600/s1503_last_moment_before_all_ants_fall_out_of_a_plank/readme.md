@@ -12,7 +12,7 @@ Given an integer `n` and two integer arrays `left` and `right`, the positions of
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/06/17/ants.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1503_last_moment_before_all_ants_fall_out_of_a_plank/ants.jpg)
 
 **Input:** n = 4, left = [4,3], right = [0,1]
 
@@ -32,7 +32,7 @@ The last moment when an ant was on the plank is t = 4 seconds. After that, it fa
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/06/17/ants2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1503_last_moment_before_all_ants_fall_out_of_a_plank/ants2.jpg)
 
 **Input:** n = 7, left = [], right = [0,1,2,3,4,5,6,7]
 
@@ -42,7 +42,7 @@ The last moment when an ant was on the plank is t = 4 seconds. After that, it fa
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/06/17/ants3.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1503_last_moment_before_all_ants_fall_out_of_a_plank/ants3.jpg)
 
 **Input:** n = 7, left = [0,1,2,3,4,5,6,7], right = []
 

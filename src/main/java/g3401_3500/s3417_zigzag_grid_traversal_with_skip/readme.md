@@ -25,7 +25,7 @@ Return an array of integers `result` containing, **in order**, the value of the 
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/11/23/4012_example0.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g3401_3500/s3417_zigzag_grid_traversal_with_skip/4012_example0.png)**
 
 **Example 2:**
 
@@ -35,7 +35,7 @@ Return an array of integers `result` containing, **in order**, the value of the 
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/11/23/4012_example1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3401_3500/s3417_zigzag_grid_traversal_with_skip/4012_example1.png)
 
 **Example 3:**
 
@@ -45,7 +45,7 @@ Return an array of integers `result` containing, **in order**, the value of the 
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/11/23/4012_example2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3401_3500/s3417_zigzag_grid_traversal_with_skip/4012_example2.png)
 
 **Constraints:**
 

@@ -20,7 +20,7 @@ Return the **maximum area** that you can obtain or -1 if no such rectangle is po
 
 **Explanation:**
 
-**![Example 1 diagram](https://assets.leetcode.com/uploads/2024/11/02/example1.png)**
+**![Example 1 diagram](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3380_maximum_area_rectangle_with_point_constraints_i/example1.png)**
 
 We can make a rectangle with these 4 points as corners and there is no other point that lies inside or on the border. Hence, the maximum possible area would be 4.
 
@@ -32,7 +32,7 @@ We can make a rectangle with these 4 points as corners and there is no other poi
 
 **Explanation:**
 
-**![Example 2 diagram](https://assets.leetcode.com/uploads/2024/11/02/example2.png)**
+**![Example 2 diagram](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3380_maximum_area_rectangle_with_point_constraints_i/example2.png)**
 
 There is only one rectangle possible is with points `[1,1], [1,3], [3,1]` and `[3,3]` but `[2,2]` will always lie inside it. Hence, returning -1.
 
@@ -44,7 +44,7 @@ There is only one rectangle possible is with points `[1,1], [1,3], [3,1]` and `[
 
 **Explanation:**
 
-**![Example 3 diagram](https://assets.leetcode.com/uploads/2024/11/02/example3.png)**
+**![Example 3 diagram](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3380_maximum_area_rectangle_with_point_constraints_i/example3.png)**
 
 The maximum area rectangle is formed by the points `[1,3], [1,2], [3,2], [3,3]`, which has an area of 2. Additionally, the points `[1,1], [1,2], [3,1], [3,2]` also form a valid rectangle with the same area.
 

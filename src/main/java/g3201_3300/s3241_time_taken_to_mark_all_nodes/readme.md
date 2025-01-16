@@ -21,7 +21,7 @@ Return an array `times` where `times[i]` is the time when all nodes get marked i
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/06/01/screenshot-2024-06-02-122236.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3241_time_taken_to_mark_all_nodes/screenshot-2024-06-02-122236.png)
 
 *   For `i = 0`:
     *   Node 1 is marked at `t = 1`, and Node 2 at `t = 2`.
@@ -38,7 +38,7 @@ Return an array `times` where `times[i]` is the time when all nodes get marked i
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/06/01/screenshot-2024-06-02-122249.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3241_time_taken_to_mark_all_nodes/screenshot-2024-06-02-122249.png)
 
 *   For `i = 0`:
     *   Node 1 is marked at `t = 1`.
@@ -53,7 +53,7 @@ Return an array `times` where `times[i]` is the time when all nodes get marked i
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/06/03/screenshot-2024-06-03-210550.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3241_time_taken_to_mark_all_nodes/screenshot-2024-06-03-210550.png)
 
 **Constraints:**
 

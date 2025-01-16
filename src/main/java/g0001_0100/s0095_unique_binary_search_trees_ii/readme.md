@@ -6,7 +6,7 @@ Given an integer `n`, return _all the structurally unique **BST'**s (binary sear
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/18/uniquebstn3.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0095_unique_binary_search_trees_ii/uniquebstn3.jpg)
 
 **Input:** n = 3
 

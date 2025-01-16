@@ -10,7 +10,7 @@ Return _the minimum **effort** required to travel from the top-left cell to the 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/04/ex1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1631_path_with_minimum_effort/ex1.png)
 
 **Input:** heights = [[1,2,2],[3,8,2],[5,3,5]]
 
@@ -20,7 +20,7 @@ Return _the minimum **effort** required to travel from the top-left cell to the 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/04/ex2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1631_path_with_minimum_effort/ex2.png)
 
 **Input:** heights = [[1,2,3],[3,8,4],[5,3,5]]
 
@@ -30,7 +30,7 @@ Return _the minimum **effort** required to travel from the top-left cell to the 
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/10/04/ex3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1631_path_with_minimum_effort/ex3.png)
 
 **Input:** heights = [[1,2,1,1,1],[1,2,1,2,1],[1,2,1,2,1],[1,2,1,2,1],[1,1,1,2,1]]
 

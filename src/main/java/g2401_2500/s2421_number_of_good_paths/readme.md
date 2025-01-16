@@ -17,7 +17,7 @@ Note that a path and its reverse are counted as the **same** path. For example, 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/08/04/f9caaac15b383af9115c5586779dec5.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2421_number_of_good_paths/f9caaac15b383af9115c5586779dec5.png)
 
 **Input:** vals = [1,3,2,1,3], edges = [[0,1],[0,2],[2,3],[2,4]]
 
@@ -33,7 +33,7 @@ Note that 0 -> 2 -> 3 is not a good path because vals[2] > vals[0].
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/08/04/149d3065ec165a71a1b9aec890776ff.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2421_number_of_good_paths/149d3065ec165a71a1b9aec890776ff.png)
 
 **Input:** vals = [1,1,2,2,3], edges = [[0,1],[1,2],[2,3],[2,4]]
 
@@ -45,7 +45,7 @@ There are 2 additional good paths: 0 -> 1 and 2 -> 3.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2022/08/04/31705e22af3d9c0a557459bc7d1b62d.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2421_number_of_good_paths/31705e22af3d9c0a557459bc7d1b62d.png)
 
 **Input:** vals = [1], edges = []
 

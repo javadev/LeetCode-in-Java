@@ -6,7 +6,7 @@ Given the `root` of a binary tree, return _the level order traversal of its node
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0102_binary_tree_level_order_traversal/tree1.jpg)
 
 **Input:** root = [3,9,20,null,null,15,7]
 

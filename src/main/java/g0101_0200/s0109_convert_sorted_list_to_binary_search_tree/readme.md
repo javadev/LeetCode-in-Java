@@ -8,7 +8,7 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/17/linked.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0109_convert_sorted_list_to_binary_search_tree/linked.jpg)
 
 **Input:** head = [-10,-3,0,5,9]
 

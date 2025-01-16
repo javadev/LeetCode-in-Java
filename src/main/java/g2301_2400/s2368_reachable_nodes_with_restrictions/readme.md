@@ -12,7 +12,7 @@ Note that node `0` will **not** be a restricted node.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/06/15/ex1drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2301_2400/s2368_reachable_nodes_with_restrictions/ex1drawio.png)
 
 **Input:** n = 7, edges = [[0,1],[1,2],[3,1],[4,0],[0,5],[5,6]], restricted = [4,5]
 
@@ -22,7 +22,7 @@ Note that node `0` will **not** be a restricted node.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/06/15/ex2drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2301_2400/s2368_reachable_nodes_with_restrictions/ex2drawio.png)
 
 **Input:** n = 7, edges = [[0,1],[0,2],[0,5],[0,4],[3,2],[6,5]], restricted = [4,2,1]
 

@@ -14,7 +14,7 @@ A **leaf** node is a node with no children.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/19/num1tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0129_sum_root_to_leaf_numbers/num1tree.jpg)
 
 **Input:** root = [1,2,3]
 
@@ -24,7 +24,7 @@ A **leaf** node is a node with no children.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/02/19/num2tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0129_sum_root_to_leaf_numbers/num2tree.jpg)
 
 **Input:** root = [4,9,0,5,1]
 

@@ -10,7 +10,7 @@ Return `true` if your path crosses itself, and `false` if it does not.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/14/selfcross1-plane.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0335_self_crossing/selfcross1-plane.jpg)
 
 **Input:** distance = [2,1,1,2]
 
@@ -18,7 +18,7 @@ Return `true` if your path crosses itself, and `false` if it does not.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/03/14/selfcross2-plane.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0335_self_crossing/selfcross2-plane.jpg)
 
 **Input:** distance = [1,2,3,4]
 
@@ -26,7 +26,7 @@ Return `true` if your path crosses itself, and `false` if it does not.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/03/14/selfcross3-plane.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0335_self_crossing/selfcross3-plane.jpg)
 
 **Input:** distance = [1,1,1,1]
 

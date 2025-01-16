@@ -19,7 +19,7 @@ Return a boolean array `results`, where `results[i]` is `true` if you can place 
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/04/22/example0block.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g3101_3200/s3161_block_placement_queries/example0block.png)**
 
 For query 0, place an obstacle at `x = 2`. A block of size at most 2 can be placed before `x = 3`.
 
@@ -31,7 +31,7 @@ For query 0, place an obstacle at `x = 2`. A block of size at most 2 can be plac
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/04/22/example1block.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g3101_3200/s3161_block_placement_queries/example1block.png)**
 
 *   Place an obstacle at `x = 7` for query 0. A block of size at most 7 can be placed before `x = 7`.
 *   Place an obstacle at `x = 2` for query 2. Now, a block of size at most 5 can be placed before `x = 7`, and a block of size at most 2 before `x = 2`.

@@ -12,7 +12,7 @@ You may assume all tickets form at least one valid itinerary. You must use all t
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/14/itinerary1-graph.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0332_reconstruct_itinerary/itinerary1-graph.jpg)
 
 **Input:** tickets = [["MUC","LHR"],["JFK","MUC"],["SFO","SJC"],["LHR","SFO"]]
 
@@ -20,7 +20,7 @@ You may assume all tickets form at least one valid itinerary. You must use all t
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/03/14/itinerary2-graph.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0332_reconstruct_itinerary/itinerary2-graph.jpg)
 
 **Input:** tickets = [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]
 

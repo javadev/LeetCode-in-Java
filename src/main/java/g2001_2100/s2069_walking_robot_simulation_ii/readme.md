@@ -20,7 +20,7 @@ Implement the `Robot` class:
 
 **Example 1:**
 
-![example-1](https://assets.leetcode.com/uploads/2021/10/09/example-1.png)
+![example-1](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2069_walking_robot_simulation_ii/example-1.png)
 
 **Input**
 

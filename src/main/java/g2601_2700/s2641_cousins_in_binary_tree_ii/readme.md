@@ -12,7 +12,7 @@ Return _the_ `root` _of the modified tree_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/01/11/example11.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2601_2700/s2641_cousins_in_binary_tree_ii/example11.png)
 
 **Input:** root = [5,4,9,1,10,null,7]
 
@@ -28,7 +28,7 @@ Return _the_ `root` _of the modified tree_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/01/11/diagram33.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2601_2700/s2641_cousins_in_binary_tree_ii/diagram33.png)
 
 **Input:** root = [3,1,2]
 

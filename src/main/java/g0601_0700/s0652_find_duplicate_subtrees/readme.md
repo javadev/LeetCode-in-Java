@@ -10,7 +10,7 @@ Two trees are **duplicate** if they have the **same structure** with the **same 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/16/e1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0652_find_duplicate_subtrees/e1.jpg)
 
 **Input:** root = [1,2,3,4,null,2,4,null,null,4]
 
@@ -18,7 +18,7 @@ Two trees are **duplicate** if they have the **same structure** with the **same 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/08/16/e2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0652_find_duplicate_subtrees/e2.jpg)
 
 **Input:** root = [2,1,1]
 
@@ -26,7 +26,7 @@ Two trees are **duplicate** if they have the **same structure** with the **same 
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/08/16/e33.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0652_find_duplicate_subtrees/e33.jpg)
 
 **Input:** root = [2,2,2,3,null,3,null]
 

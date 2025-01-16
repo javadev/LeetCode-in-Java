@@ -14,7 +14,7 @@ Return _the total area of all three projections_.
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/02/shadow.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0883_projection_area_of_3d_shapes/shadow.png)
 
 **Input:** grid = [[1,2],[3,4]]
 

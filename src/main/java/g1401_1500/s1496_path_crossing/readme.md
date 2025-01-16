@@ -8,7 +8,7 @@ Return `true` _if the path crosses itself at any point, that is, if at any time 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/06/10/screen-shot-2020-06-10-at-123929-pm.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1496_path_crossing/screen-shot-2020-06-10-at-123929-pm.png)
 
 **Input:** path = "NES"
 
@@ -18,7 +18,7 @@ Return `true` _if the path crosses itself at any point, that is, if at any time 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/06/10/screen-shot-2020-06-10-at-123843-pm.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1496_path_crossing/screen-shot-2020-06-10-at-123843-pm.png)
 
 **Input:** path = "NESWW"
 

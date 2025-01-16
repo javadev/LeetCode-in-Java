@@ -4,7 +4,7 @@ Hard
 
 You are given three integers `n`, `m` and `k`. Consider the following algorithm to find the maximum element of an array of positive integers:
 
-![](https://assets.leetcode.com/uploads/2020/04/02/e.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1420_build_array_where_you_can_find_the_maximum_exactly_k_comparisons/e.png)
 
 You should build the array arr which has the following properties:
 

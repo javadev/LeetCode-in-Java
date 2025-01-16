@@ -12,7 +12,7 @@ Return _the merged tree_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/05/merge.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0617_merge_two_binary_trees/merge.jpg)
 
 **Input:** root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
 

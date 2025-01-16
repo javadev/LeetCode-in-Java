@@ -15,7 +15,7 @@ Return _the triangular sum of_ `nums`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/02/22/ex1drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2221_find_triangular_sum_of_an_array/ex1drawio.png)
 
 **Input:** nums = [1,2,3,4,5]
 

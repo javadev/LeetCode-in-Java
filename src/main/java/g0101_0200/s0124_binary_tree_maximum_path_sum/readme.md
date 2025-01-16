@@ -10,7 +10,7 @@ Given the `root` of a binary tree, return _the maximum **path sum** of any **non
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/13/exx1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0124_binary_tree_maximum_path_sum/exx1.jpg)
 
 **Input:** root = [1,2,3]
 
@@ -20,7 +20,7 @@ Given the `root` of a binary tree, return _the maximum **path sum** of any **non
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/13/exx2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0124_binary_tree_maximum_path_sum/exx2.jpg)
 
 **Input:** root = [-10,9,20,null,null,15,7]
 

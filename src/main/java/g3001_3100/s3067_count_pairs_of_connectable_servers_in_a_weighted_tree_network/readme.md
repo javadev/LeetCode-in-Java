@@ -15,7 +15,7 @@ Return _an integer array_ `count` _of length_ `n` _where_ `count[i]` _is the **n
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2024/01/21/example22.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3001_3100/s3067_count_pairs_of_connectable_servers_in_a_weighted_tree_network/example22.png)
 
 **Input:** edges = [[0,1,1],[1,2,5],[2,3,13],[3,4,9],[4,5,2]], signalSpeed = 1
 
@@ -27,7 +27,7 @@ In the case of the given path graph, count[c] is equal to the number of servers 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2024/01/21/example11.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3001_3100/s3067_count_pairs_of_connectable_servers_in_a_weighted_tree_network/example11.png)
 
 **Input:** edges = [[0,6,3],[6,5,3],[0,3,1],[3,2,7],[3,1,6],[3,4,2]], signalSpeed = 3
 

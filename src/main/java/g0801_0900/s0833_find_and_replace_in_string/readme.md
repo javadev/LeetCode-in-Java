@@ -22,7 +22,7 @@ A **substring** is a contiguous sequence of characters in a string.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/12/833-ex1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0833_find_and_replace_in_string/833-ex1.png)
 
 **Input:** s = "abcd", indices = [0, 2], sources = ["a", "cd"], targets = ["eee", "ffff"]
 
@@ -32,7 +32,7 @@ A **substring** is a contiguous sequence of characters in a string.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/06/12/833-ex2-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0833_find_and_replace_in_string/833-ex2-1.png)
 
 **Input:** s = "abcd", indices = [0, 2], sources = ["ab","ec"], targets = ["eee","ffff"]
 

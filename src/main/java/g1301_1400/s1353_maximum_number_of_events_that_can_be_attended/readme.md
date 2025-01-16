@@ -10,7 +10,7 @@ Return _the maximum number of events you can attend_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/02/05/e1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1353_maximum_number_of_events_that_can_be_attended/e1.png)
 
 **Input:** events = [[1,2],[2,3],[3,4]]
 

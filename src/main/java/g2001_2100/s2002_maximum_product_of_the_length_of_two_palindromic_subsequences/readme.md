@@ -10,7 +10,7 @@ A **subsequence** is a string that can be derived from another string by deletin
 
 **Example 1:**
 
-![example-1](https://assets.leetcode.com/uploads/2021/08/24/two-palindromic-subsequences.png)
+![example-1](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2002_maximum_product_of_the_length_of_two_palindromic_subsequences/two-palindromic-subsequences.png)
 
 **Input:** s = "leetcodecom"
 

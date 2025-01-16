@@ -12,7 +12,7 @@ Return _the matrix_ `mat` _after performing every query._
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/11/24/p2example11.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2536_increment_submatrices_by_one/p2example11.png)
 
 **Input:** n = 3, queries = [[1,1,2,2],[0,0,1,1]]
 
@@ -26,7 +26,7 @@ Return _the matrix_ `mat` _after performing every query._
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/11/24/p2example22.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2536_increment_submatrices_by_one/p2example22.png)
 
 **Input:** n = 2, queries = [[0,0,1,1]]
 

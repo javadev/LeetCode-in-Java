@@ -10,7 +10,7 @@ Return `true` _if there is a cycle in the linked list_. Otherwise, return `false
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0141_linked_list_cycle/circularlinkedlist.png)
 
 **Input:** head = [3,2,0,-4], pos = 1
 
@@ -20,7 +20,7 @@ Return `true` _if there is a cycle in the linked list_. Otherwise, return `false
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0141_linked_list_cycle/circularlinkedlist_test2.png)
 
 **Input:** head = [1,2], pos = 0
 
@@ -30,7 +30,7 @@ Return `true` _if there is a cycle in the linked list_. Otherwise, return `false
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0141_linked_list_cycle/circularlinkedlist_test3.png)
 
 **Input:** head = [1], pos = -1
 

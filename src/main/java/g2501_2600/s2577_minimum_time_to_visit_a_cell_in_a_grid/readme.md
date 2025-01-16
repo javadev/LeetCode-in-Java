@@ -10,7 +10,7 @@ Return _the **minimum** time required in which you can visit the bottom-right ce
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/02/14/yetgriddrawio-8.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2577_minimum_time_to_visit_a_cell_in_a_grid/yetgriddrawio-8.png)
 
 **Input:** grid = [[0,1,3,2],[5,1,2,5],[4,3,8,6]]
 
@@ -30,7 +30,7 @@ The final time is 7. It can be shown that it is the minimum time possible.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/02/14/yetgriddrawio-9.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2577_minimum_time_to_visit_a_cell_in_a_grid/yetgriddrawio-9.png)
 
 **Input:** grid = [[0,2,4],[3,2,1],[1,0,4]]
 

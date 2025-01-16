@@ -16,7 +16,7 @@ Return _the minimum possible height that the total bookshelf can be after placin
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/06/24/shelves.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1101_1200/s1105_filling_bookcase_shelves/shelves.png)
 
 **Input:** books = [[1,1],[2,3],[2,3],[1,1],[1,1],[1,1],[1,2]], shelf\_width = 4
 

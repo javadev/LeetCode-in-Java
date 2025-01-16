@@ -10,7 +10,7 @@ Answers within <code>10<sup>-5</sup></code> of the actual answer will be accepte
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/12/21/1a.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0963_minimum_area_rectangle_ii/1a.png)
 
 **Input:** points = [[1,2],[2,1],[1,0],[0,1]]
 
@@ -20,7 +20,7 @@ Answers within <code>10<sup>-5</sup></code> of the actual answer will be accepte
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2018/12/22/2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0963_minimum_area_rectangle_ii/2.png)
 
 **Input:** points = [[0,1],[2,1],[1,1],[1,0],[2,0]]
 
@@ -30,7 +30,7 @@ Answers within <code>10<sup>-5</sup></code> of the actual answer will be accepte
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2018/12/22/3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0963_minimum_area_rectangle_ii/3.png)
 
 **Input:** points = [[0,3],[1,2],[3,1],[1,3],[2,1]]
 

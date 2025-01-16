@@ -11,7 +11,7 @@ You are given an `m x n` `grid`. Each cell of `grid` represents a street. The st
 *   `5` which means a street connecting the left cell and the upper cell.
 *   `6` which means a street connecting the right cell and the upper cell.
 
-![](https://assets.leetcode.com/uploads/2020/03/05/main.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1391_check_if_there_is_a_valid_path_in_a_grid/main.png)
 
 You will initially start at the street of the upper-left cell `(0, 0)`. A valid path in the grid is a path that starts from the upper left cell `(0, 0)` and ends at the bottom-right cell `(m - 1, n - 1)`. **The path should only follow the streets**.
 
@@ -21,7 +21,7 @@ Return `true` _if there is a valid path in the grid or_ `false` _otherwise_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/03/05/e1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1391_check_if_there_is_a_valid_path_in_a_grid/e1.png)
 
 **Input:** grid = [[2,4,3],[6,5,2]]
 
@@ -31,7 +31,7 @@ Return `true` _if there is a valid path in the grid or_ `false` _otherwise_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/03/05/e2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1391_check_if_there_is_a_valid_path_in_a_grid/e2.png)
 
 **Input:** grid = [[1,2,1],[1,2,1]]
 

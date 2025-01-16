@@ -26,7 +26,7 @@ Return an array of `n` integers `answer`, where `answer[i]` is the **maximum** p
 *   For `i = 3`, connect node 3 from the first tree to node 4 from the second tree.
 *   For `i = 4`, connect node 4 from the first tree to node 4 from the second tree.
 
-![](https://assets.leetcode.com/uploads/2024/09/24/3982-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3372_maximize_the_number_of_target_nodes_after_connecting_trees_i/3982-1.png)
 
 **Example 2:**
 
@@ -38,7 +38,7 @@ Return an array of `n` integers `answer`, where `answer[i]` is the **maximum** p
 
 For every `i`, connect node `i` of the first tree with any node of the second tree.
 
-![](https://assets.leetcode.com/uploads/2024/09/24/3928-2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3372_maximize_the_number_of_target_nodes_after_connecting_trees_i/3928-2.png)
 
 **Constraints:**
 

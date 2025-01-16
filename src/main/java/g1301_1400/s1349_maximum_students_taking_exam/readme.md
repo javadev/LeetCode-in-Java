@@ -10,7 +10,7 @@ Students must be placed in seats in good condition.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/01/29/image.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1349_maximum_students_taking_exam/image.png)
 
 **Input:** seats = [["#",".","#","#",".","#"], 
                     [".","#","#","#","#","."], 

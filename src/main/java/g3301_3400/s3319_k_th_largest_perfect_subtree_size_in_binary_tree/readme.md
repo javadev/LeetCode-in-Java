@@ -16,7 +16,7 @@ A **perfect binary tree** is a tree where all leaves are on the same level, and 
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/10/14/tmpresl95rp-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3319_k_th_largest_perfect_subtree_size_in_binary_tree/tmpresl95rp-1.png)
 
 The roots of the perfect binary subtrees are highlighted in black. Their sizes, in non-increasing order are `[3, 3, 1, 1, 1, 1, 1, 1]`.   
  The <code>2<sup>nd</sup></code> largest size is 3.
@@ -29,7 +29,7 @@ The roots of the perfect binary subtrees are highlighted in black. Their sizes, 
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/10/14/tmp_s508x9e-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3319_k_th_largest_perfect_subtree_size_in_binary_tree/tmp_s508x9e-1.png)
 
 The sizes of the perfect binary subtrees in non-increasing order are `[7, 3, 3, 1, 1, 1, 1]`. The size of the largest perfect binary subtree is 7.
 
@@ -41,7 +41,7 @@ The sizes of the perfect binary subtrees in non-increasing order are `[7, 3, 3, 
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/10/14/tmp74xnmpj4-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3319_k_th_largest_perfect_subtree_size_in_binary_tree/tmp74xnmpj4-1.png)
 
 The sizes of the perfect binary subtrees in non-increasing order are `[1, 1]`. There are fewer than 3 perfect binary subtrees.
 

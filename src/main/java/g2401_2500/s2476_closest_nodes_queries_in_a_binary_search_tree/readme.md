@@ -13,7 +13,7 @@ Return _the array_ `answer`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/09/28/bstreeedrawioo.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2476_closest_nodes_queries_in_a_binary_search_tree/bstreeedrawioo.png)
 
 **Input:** root = [6,2,13,1,4,9,15,null,null,null,null,null,null,14], queries = [2,5,16]
 
@@ -26,7 +26,7 @@ Return _the array_ `answer`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/09/28/bstttreee.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2476_closest_nodes_queries_in_a_binary_search_tree/bstttreee.png)
 
 **Input:** root = [4,null,9], queries = [3]
 

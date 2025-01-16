@@ -8,7 +8,7 @@ The edges of the undirected tree are given in the array `edges`, where <code>edg
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/04/23/min_time_collect_apple_1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1443_minimum_time_to_collect_all_apples_in_a_tree/min_time_collect_apple_1.png)
 
 **Input:** n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,false,true,false,true,true,false]
 
@@ -18,7 +18,7 @@ The edges of the undirected tree are given in the array `edges`, where <code>edg
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/04/23/min_time_collect_apple_2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1443_minimum_time_to_collect_all_apples_in_a_tree/min_time_collect_apple_2.png)
 
 **Input:** n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,false,true,false,false,true,false]
 

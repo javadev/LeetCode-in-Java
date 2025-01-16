@@ -4,7 +4,7 @@ Hard
 
 Given a wooden stick of length `n` units. The stick is labelled from `0` to `n`. For example, a stick of length **6** is labelled as follows:
 
-![](https://assets.leetcode.com/uploads/2020/07/21/statement.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1547_minimum_cost_to_cut_a_stick/statement.jpg)
 
 Given an integer array `cuts` where `cuts[i]` denotes a position you should perform a cut at.
 
@@ -16,13 +16,13 @@ Return _the minimum total cost_ of the cuts.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/07/23/e1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1547_minimum_cost_to_cut_a_stick/e1.jpg)
 
 **Input:** n = 7, cuts = [1,3,4,5]
 
 **Output:** 16
 
-**Explanation:** Using cuts order = [1, 3, 4, 5] as in the input leads to the following scenario: ![](https://assets.leetcode.com/uploads/2020/07/21/e11.jpg)
+**Explanation:** Using cuts order = [1, 3, 4, 5] as in the input leads to the following scenario: ![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1547_minimum_cost_to_cut_a_stick/e11.jpg)
 
 The first cut is done to a rod of length 7 so the cost is 7. The second cut is done to a rod of length 6 (i.e. the second part of the first cut), the third is done to a rod of length 4 and the last cut is to a rod of length 3.
 

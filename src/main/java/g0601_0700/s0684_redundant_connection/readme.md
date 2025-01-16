@@ -10,7 +10,7 @@ Return _an edge that can be removed so that the resulting graph is a tree of_ `n
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/02/reduntant1-1-graph.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0684_redundant_connection/reduntant1-1-graph.jpg)
 
 **Input:** edges = [[1,2],[1,3],[2,3]]
 
@@ -18,7 +18,7 @@ Return _an edge that can be removed so that the resulting graph is a tree of_ `n
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/05/02/reduntant1-2-graph.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0684_redundant_connection/reduntant1-2-graph.jpg)
 
 **Input:** edges = [[1,2],[2,3],[3,4],[1,4],[1,5]]
 

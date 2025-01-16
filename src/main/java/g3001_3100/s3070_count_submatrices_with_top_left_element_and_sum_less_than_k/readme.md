@@ -8,7 +8,7 @@ Return _the **number** of submatrices that contain the top-left element of the_ 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2024/01/01/example1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3001_3100/s3070_count_submatrices_with_top_left_element_and_sum_less_than_k/example1.png)
 
 **Input:** grid = [[7,6,3],[6,6,1]], k = 18
 
@@ -18,7 +18,7 @@ Return _the **number** of submatrices that contain the top-left element of the_ 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2024/01/01/example21.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3001_3100/s3070_count_submatrices_with_top_left_element_and_sum_less_than_k/example21.png)
 
 **Input:** grid = [[7,2,9],[1,5,0],[2,6,6]], k = 20
 

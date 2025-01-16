@@ -8,7 +8,7 @@ _Return the number of **pseudo-palindromic** paths going from the root node to l
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/05/06/palindromic_paths_1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1457_pseudo_palindromic_paths_in_a_binary_tree/palindromic_paths_1.png)
 
 **Input:** root = [2,3,1,3,1,null,1]
 
@@ -18,7 +18,7 @@ _Return the number of **pseudo-palindromic** paths going from the root node to l
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2020/05/07/palindromic_paths_2.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1457_pseudo_palindromic_paths_in_a_binary_tree/palindromic_paths_2.png)**
 
 **Input:** root = [2,1,1,1,3,null,null,null,null,null,1]
 

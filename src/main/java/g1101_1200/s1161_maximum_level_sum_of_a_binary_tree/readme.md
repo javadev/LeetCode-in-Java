@@ -8,7 +8,7 @@ Return the **smallest** level `x` such that the sum of all the values of nodes a
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/05/03/capture.JPG)
+![](https://leetcode-in-java.github.io/src/main/java/g1101_1200/s1161_maximum_level_sum_of_a_binary_tree/capture.jpg)
 
 **Input:** root = [1,7,0,7,-8,null,null]
 

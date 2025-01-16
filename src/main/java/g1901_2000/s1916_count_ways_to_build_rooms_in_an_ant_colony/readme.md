@@ -10,7 +10,7 @@ Return _the **number of different orders** you can build all the rooms in_. Sinc
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/19/d1.JPG)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1916_count_ways_to_build_rooms_in_an_ant_colony/d1.jpg)
 
 **Input:** prevRoom = [-1,0,1]
 
@@ -20,7 +20,7 @@ Return _the **number of different orders** you can build all the rooms in_. Sinc
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2021/06/19/d2.JPG)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1916_count_ways_to_build_rooms_in_an_ant_colony/d2.jpg)**
 
 **Input:** prevRoom = [-1,0,0,1,2]
 

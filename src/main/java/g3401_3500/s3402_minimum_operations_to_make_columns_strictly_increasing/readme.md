@@ -19,7 +19,7 @@ Return the **minimum** number of operations needed to make all columns of `grid`
 *   To make the <code>0<sup>th</sup></code> column strictly increasing, we can apply 3 operations on `grid[1][0]`, 2 operations on `grid[2][0]`, and 6 operations on `grid[3][0]`.
 *   To make the <code>1<sup>st</sup></code> column strictly increasing, we can apply 4 operations on `grid[3][1]`.
 
-![](https://assets.leetcode.com/uploads/2024/11/10/firstexample.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3401_3500/s3402_minimum_operations_to_make_columns_strictly_increasing/firstexample.png)
 
 **Example 2:**
 
@@ -33,7 +33,7 @@ Return the **minimum** number of operations needed to make all columns of `grid`
 *   To make the <code>1<sup>st</sup></code> column strictly increasing, we can apply 2 operations on `grid[1][1]`, and 2 operations on `grid[2][1]`.
 *   To make the <code>2<sup>nd</sup></code> column strictly increasing, we can apply 2 operations on `grid[1][2]`.
 
-![](https://assets.leetcode.com/uploads/2024/11/10/secondexample.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3401_3500/s3402_minimum_operations_to_make_columns_strictly_increasing/secondexample.png)
 
 **Constraints:**
 

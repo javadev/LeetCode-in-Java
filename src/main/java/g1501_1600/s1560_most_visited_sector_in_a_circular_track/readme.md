@@ -10,7 +10,7 @@ Notice that you circulate the track in ascending order of sector numbers in the 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/14/tmp.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1560_most_visited_sector_in_a_circular_track/tmp.jpg)
 
 **Input:** n = 4, rounds = [1,3,1,2]
 

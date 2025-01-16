@@ -10,7 +10,7 @@ Note that the nodes have no values and that we only use the node numbers in this
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/08/23/1503_ex1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1361_validate_binary_tree_nodes/1503_ex1.png)
 
 **Input:** n = 4, leftChild = [1,-1,3,-1], rightChild = [2,-1,-1,-1]
 
@@ -18,7 +18,7 @@ Note that the nodes have no values and that we only use the node numbers in this
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/08/23/1503_ex2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1361_validate_binary_tree_nodes/1503_ex2.png)
 
 **Input:** n = 4, leftChild = [1,-1,3,-1], rightChild = [2,3,-1,-1]
 
@@ -26,7 +26,7 @@ Note that the nodes have no values and that we only use the node numbers in this
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2019/08/23/1503_ex3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1361_validate_binary_tree_nodes/1503_ex3.png)
 
 **Input:** n = 2, leftChild = [1,0], rightChild = [-1,-1]
 

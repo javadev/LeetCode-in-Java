@@ -28,7 +28,7 @@ Return the **minimum** total cost to cut the entire cake into `1 x 1` pieces.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/06/04/ezgifcom-animated-gif-maker-1.gif)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3218_minimum_cost_for_cutting_cake_i/ezgifcom-animated-gif-maker-1.gif)
 
 *   Perform a cut on the vertical line 0 with cost 5, current total cost is 5.
 *   Perform a cut on the horizontal line 0 on `3 x 1` subgrid with cost 1.

@@ -15,7 +15,7 @@ Return _the **maximum points** you can get after collecting the coins from **all
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/09/18/ex1-copy.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2901_3000/s2920_maximum_points_after_collecting_coins_from_all_nodes/ex1-copy.png)
 
 **Input:** edges = [[0,1],[1,2],[2,3]], coins = [10,10,3,3], k = 5
 
@@ -35,7 +35,7 @@ It can be shown that the maximum points we can get after collecting coins from a
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2023/09/18/ex2.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g2901_3000/s2920_maximum_points_after_collecting_coins_from_all_nodes/ex2.png)**
 
 **Input:** edges = [[0,1],[0,2]], coins = [8,4,4], k = 0
 

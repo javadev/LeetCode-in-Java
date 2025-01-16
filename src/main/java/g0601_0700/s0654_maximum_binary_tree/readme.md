@@ -12,7 +12,7 @@ Return _the **maximum binary tree** built from_ `nums`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/12/24/tree1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0654_maximum_binary_tree/tree1.jpg)
 
 **Input:** nums = [3,2,1,6,0,5]
 
@@ -40,7 +40,7 @@ Return _the **maximum binary tree** built from_ `nums`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/12/24/tree2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0654_maximum_binary_tree/tree2.jpg)
 
 **Input:** nums = [3,2,1]
 

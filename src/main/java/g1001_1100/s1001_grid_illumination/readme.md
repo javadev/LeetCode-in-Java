@@ -14,13 +14,13 @@ Return _an array of integers_ `ans`_,_ _where_ `ans[j]` _should be_ `1` _if the 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/19/illu_1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1001_1100/s1001_grid_illumination/illu_1.jpg)
 
 **Input:** n = 5, lamps = [[0,0],[4,4]], queries = [[1,1],[1,0]]
 
 **Output:** [1,0]
 
-**Explanation:** We have the initial grid with all lamps turned off. In the above picture we see the grid after turning on the lamp at grid[0][0] then turning on the lamp at grid[4][4]. The 0<sup>th</sup> query asks if the lamp at grid[1][1] is illuminated or not (the blue square). It is illuminated, so set ans[0] = 1. Then, we turn off all lamps in the red square. ![](https://assets.leetcode.com/uploads/2020/08/19/illu_step1.jpg) The 1<sup>st</sup> query asks if the lamp at grid[1][0] is illuminated or not (the blue square). It is not illuminated, so set ans[1] = 0. Then, we turn off all lamps in the red rectangle. ![](https://assets.leetcode.com/uploads/2020/08/19/illu_step2.jpg)
+**Explanation:** We have the initial grid with all lamps turned off. In the above picture we see the grid after turning on the lamp at grid[0][0] then turning on the lamp at grid[4][4]. The 0<sup>th</sup> query asks if the lamp at grid[1][1] is illuminated or not (the blue square). It is illuminated, so set ans[0] = 1. Then, we turn off all lamps in the red square. ![](https://leetcode-in-java.github.io/src/main/java/g1001_1100/s1001_grid_illumination/illu_step1.jpg) The 1<sup>st</sup> query asks if the lamp at grid[1][0] is illuminated or not (the blue square). It is not illuminated, so set ans[1] = 0. Then, we turn off all lamps in the red rectangle. ![](https://leetcode-in-java.github.io/src/main/java/g1001_1100/s1001_grid_illumination/illu_step2.jpg)
 
 **Example 2:**
 

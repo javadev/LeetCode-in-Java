@@ -10,7 +10,7 @@ The **length** of a path between two nodes is represented by the number of edges
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/06/diamtree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0543_diameter_of_binary_tree/diamtree.jpg)
 
 **Input:** root = [1,2,3,4,5]
 

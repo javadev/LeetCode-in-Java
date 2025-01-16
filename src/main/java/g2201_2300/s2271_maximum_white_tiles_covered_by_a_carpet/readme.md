@@ -10,7 +10,7 @@ Return _the **maximum** number of white tiles that can be covered by the carpet_
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/03/25/example1drawio3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2271_maximum_white_tiles_covered_by_a_carpet/example1drawio3.png)
 
 **Input:** tiles = [[1,5],[10,11],[12,18],[20,25],[30,32]], carpetLen = 10
 
@@ -26,7 +26,7 @@ It can be shown that the carpet cannot cover more than 9 white tiles.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/03/24/example2drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2271_maximum_white_tiles_covered_by_a_carpet/example2drawio.png)
 
 **Input:** tiles = [[10,11],[1,1]], carpetLen = 2
 

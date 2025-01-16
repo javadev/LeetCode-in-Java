@@ -10,7 +10,7 @@ Return _the maximum product of the sums of the two subtrees_. Since the answer m
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/01/21/sample_1_1699.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1339_maximum_product_of_splitted_binary_tree/sample_1_1699.png)
 
 **Input:** root = [1,2,3,4,5,6]
 
@@ -20,7 +20,7 @@ Return _the maximum product of the sums of the two subtrees_. Since the answer m
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/01/21/sample_2_1699.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1339_maximum_product_of_splitted_binary_tree/sample_2_1699.png)
 
 **Input:** root = [1,null,2,3,4,null,null,5,6]
 

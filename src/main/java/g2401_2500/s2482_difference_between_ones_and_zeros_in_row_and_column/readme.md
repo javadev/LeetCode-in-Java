@@ -16,7 +16,7 @@ Return _the difference matrix_ `diff`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/11/06/image-20221106171729-5.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2482_difference_between_ones_and_zeros_in_row_and_column/image-20221106171729-5.png)
 
 **Input:** grid = [[0,1,1],[1,0,1],[0,0,1]]
 
@@ -35,7 +35,7 @@ Return _the difference matrix_ `diff`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/11/06/image-20221106171747-6.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2482_difference_between_ones_and_zeros_in_row_and_column/image-20221106171747-6.png)
 
 **Input:** grid = [[1,1,1],[1,1,1]]
 

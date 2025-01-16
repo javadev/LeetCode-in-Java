@@ -14,7 +14,7 @@ You are the second player. If it is possible to choose such a `y` to ensure you 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/08/01/1480-binary-tree-coloring-game.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1101_1200/s1145_binary_tree_coloring_game/1480-binary-tree-coloring-game.png)
 
 **Input:** root = [1,2,3,4,5,6,7,8,9,10,11], n = 11, x = 3
 

@@ -6,7 +6,7 @@ Given the `root` of a Binary Search Tree (BST), return _the minimum absolute dif
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/05/bst1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0530_minimum_absolute_difference_in_bst/bst1.jpg)
 
 **Input:** root = [4,2,6,1,3]
 
@@ -14,7 +14,7 @@ Given the `root` of a Binary Search Tree (BST), return _the minimum absolute dif
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/02/05/bst2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0530_minimum_absolute_difference_in_bst/bst2.jpg)
 
 **Input:** root = [1,0,48,null,null,12,49]
 

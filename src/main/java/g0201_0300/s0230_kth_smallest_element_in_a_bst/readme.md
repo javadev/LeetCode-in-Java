@@ -6,7 +6,7 @@ Given the `root` of a binary search tree, and an integer `k`, return _the_ <code
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/28/kthtree1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0230_kth_smallest_element_in_a_bst/kthtree1.jpg)
 
 **Input:** root = [3,1,4,null,2], k = 1
 
@@ -14,7 +14,7 @@ Given the `root` of a binary search tree, and an integer `k`, return _the_ <code
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/28/kthtree2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0230_kth_smallest_element_in_a_bst/kthtree2.jpg)
 
 **Input:** root = [5,3,6,2,4,null,null,1], k = 3
 

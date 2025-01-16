@@ -22,7 +22,7 @@ Return _the array_ `answer`_, where_ `answer[i]` _denotes the **minimum** cost o
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/01/31/q4_example1-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3101_3200/s3108_minimum_cost_walk_in_weighted_graph/q4_example1-1.png)
 
 To achieve the cost of 1 in the first query, we need to move on the following edges: `0->1` (weight 7), `1->2` (weight 1), `2->1` (weight 1), `1->3` (weight 7).
 
@@ -36,7 +36,7 @@ In the second query, there is no walk between nodes 3 and 4, so the answer is -1
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/01/31/q4_example2e.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3101_3200/s3108_minimum_cost_walk_in_weighted_graph/q4_example2e.png)
 
 To achieve the cost of 0 in the first query, we need to move on the following edges: `1->2` (weight 1), `2->1` (weight 6), `1->2` (weight 1).
 

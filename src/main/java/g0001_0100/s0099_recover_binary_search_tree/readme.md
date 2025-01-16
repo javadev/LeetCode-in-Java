@@ -6,7 +6,7 @@ You are given the `root` of a binary search tree (BST), where the values of **ex
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/28/recover1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0099_recover_binary_search_tree/recover1.jpg)
 
 **Input:** root = [1,3,null,null,2]
 
@@ -16,7 +16,7 @@ You are given the `root` of a binary search tree (BST), where the values of **ex
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/28/recover2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0099_recover_binary_search_tree/recover2.jpg)
 
 **Input:** root = [3,1,4,null,null,2]
 

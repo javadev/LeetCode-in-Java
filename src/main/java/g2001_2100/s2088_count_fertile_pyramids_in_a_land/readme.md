@@ -16,13 +16,13 @@ An **inverse pyramidal plot** of land can be defined as a set of cells with simi
 
 Some examples of valid and invalid pyramidal (and inverse pyramidal) plots are shown below. Black cells indicate fertile cells.
 
-![](https://assets.leetcode.com/uploads/2021/11/08/image.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2088_count_fertile_pyramids_in_a_land/image.png)
 
 Given a **0-indexed** `m x n` binary matrix `grid` representing the farmland, return _the **total number** of pyramidal and inverse pyramidal plots that can be found in_ `grid`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/22/1.JPG)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2088_count_fertile_pyramids_in_a_land/1.jpg)
 
 **Input:** grid = [[0,1,1,0],[1,1,1,1]]
 
@@ -36,7 +36,7 @@ Hence total number of pyramidal and inverse pyramidal plots is 2 + 0 = 2.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/22/2.JPG)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2088_count_fertile_pyramids_in_a_land/2.jpg)
 
 **Input:** grid = [[1,1,1],[1,1,1]]
 
@@ -48,7 +48,7 @@ Hence the total number of plots is 1 + 1 = 2.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/12/22/3.JPG)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2088_count_fertile_pyramids_in_a_land/3.jpg)
 
 **Input:** grid = [[1,1,1,1,0],[1,1,1,1,1],[1,1,1,1,1],[0,1,0,0,1]]
 

@@ -8,7 +8,7 @@ Return the number of _closed islands_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/10/31/sample_3_1610.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1254_number_of_closed_islands/sample_3_1610.png)
 
 **Input:** grid = [[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]
 
@@ -18,7 +18,7 @@ Return the number of _closed islands_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/10/31/sample_4_1610.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1254_number_of_closed_islands/sample_4_1610.png)
 
 **Input:** grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]
 

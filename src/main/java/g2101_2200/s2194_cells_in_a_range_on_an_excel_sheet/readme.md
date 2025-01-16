@@ -14,7 +14,7 @@ Return _the **list of cells**_ `(x, y)` _such that_ `r1 <= x <= r2` _and_ `c1 <=
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/02/08/ex1drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2194_cells_in_a_range_on_an_excel_sheet/ex1drawio.png)
 
 **Input:** s = "K1:L2"
 
@@ -28,7 +28,7 @@ The red arrows denote the order in which the cells should be presented.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/02/09/exam2drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2194_cells_in_a_range_on_an_excel_sheet/exam2drawio.png)
 
 **Input:** s = "A1:F1"
 

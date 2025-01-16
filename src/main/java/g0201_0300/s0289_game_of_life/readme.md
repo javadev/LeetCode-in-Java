@@ -15,7 +15,7 @@ The next state is created by applying the above rules simultaneously to every ce
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/12/26/grid1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0289_game_of_life/grid1.jpg)
 
 **Input:** board = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]
 
@@ -23,7 +23,7 @@ The next state is created by applying the above rules simultaneously to every ce
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/12/26/grid2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0289_game_of_life/grid2.jpg)
 
 **Input:** board = [[1,1],[1,0]]
 

@@ -15,7 +15,7 @@ Return the **maximum** _total_ number of moves made during the game that Alice c
 
 Note that in one **move,** a chess knight has eight possible positions it can move to, as illustrated below. Each move is two cells in a cardinal direction, then one cell in an orthogonal direction.
 
-![](https://assets.leetcode.com/uploads/2024/08/01/chess_knight.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3283_maximum_number_of_moves_to_kill_all_pawns/chess_knight.jpg)
 
 **Example 1:**
 
@@ -25,7 +25,7 @@ Note that in one **move,** a chess knight has eight possible positions it can mo
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/08/16/gif3.gif)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3283_maximum_number_of_moves_to_kill_all_pawns/gif3.gif)
 
 The knight takes 4 moves to reach the pawn at `(0, 0)`.
 
@@ -37,7 +37,7 @@ The knight takes 4 moves to reach the pawn at `(0, 0)`.
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/08/16/gif4.gif)**
+**![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3283_maximum_number_of_moves_to_kill_all_pawns/gif4.gif)**
 
 *   Alice picks the pawn at `(2, 2)` and captures it in two moves: `(0, 2) -> (1, 4) -> (2, 2)`.
 *   Bob picks the pawn at `(3, 3)` and captures it in two moves: `(2, 2) -> (4, 1) -> (3, 3)`.

@@ -14,7 +14,7 @@ Given `bottom` and `allowed`, return `true` _if you can build the pyramid all th
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/26/pyramid1-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0701_0800/s0756_pyramid_transition_matrix/pyramid1-grid.jpg)
 
 **Input:** bottom = "BCD", allowed = ["BCC","CDE","CEA","FFF"]
 
@@ -24,7 +24,7 @@ Given `bottom` and `allowed`, return `true` _if you can build the pyramid all th
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/08/26/pyramid2-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0701_0800/s0756_pyramid_transition_matrix/pyramid2-grid.jpg)
 
 **Input:** bottom = "AAAA", allowed = ["AAB","AAC","BCD","BBE","DEF"]
 

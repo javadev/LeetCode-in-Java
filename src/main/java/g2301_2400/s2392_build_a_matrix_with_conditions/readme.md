@@ -20,7 +20,7 @@ Return _**any** matrix that satisfies the conditions_. If no answer exists, retu
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/07/06/gridosdrawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2301_2400/s2392_build_a_matrix_with_conditions/gridosdrawio.png)
 
 **Input:** k = 3, rowConditions = [[1,2],[3,2]], colConditions = [[2,1],[3,2]]
 

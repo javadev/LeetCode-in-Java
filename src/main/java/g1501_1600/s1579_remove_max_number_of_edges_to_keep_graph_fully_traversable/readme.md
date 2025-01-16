@@ -14,7 +14,7 @@ Return _the maximum number of edges you can remove, or return_ `-1` _if it's imp
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2020/08/19/ex1.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1579_remove_max_number_of_edges_to_keep_graph_fully_traversable/ex1.png)**
 
 **Input:** n = 4, edges = [[3,1,2],[3,2,3],[1,1,3],[1,2,4],[1,1,2],[2,3,4]]
 
@@ -24,7 +24,7 @@ Return _the maximum number of edges you can remove, or return_ `-1` _if it's imp
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2020/08/19/ex2.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1579_remove_max_number_of_edges_to_keep_graph_fully_traversable/ex2.png)**
 
 **Input:** n = 4, edges = [[3,1,2],[3,2,3],[1,1,4],[2,1,4]]
 
@@ -34,7 +34,7 @@ Return _the maximum number of edges you can remove, or return_ `-1` _if it's imp
 
 **Example 3:**
 
-**![](https://assets.leetcode.com/uploads/2020/08/19/ex3.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1579_remove_max_number_of_edges_to_keep_graph_fully_traversable/ex3.png)**
 
 **Input:** n = 4, edges = [[3,2,3],[1,1,2],[2,3,4]]
 

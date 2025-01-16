@@ -12,7 +12,7 @@ Return _a reference to the same node_ in the `cloned` tree.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/02/21/e1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1379_find_a_corresponding_node_of_a_binary_tree_in_a_clone_of_that_tree/e1.png)
 
 **Input:** tree = [7,4,3,null,null,6,19], target = 3
 
@@ -22,7 +22,7 @@ Return _a reference to the same node_ in the `cloned` tree.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/02/21/e2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1379_find_a_corresponding_node_of_a_binary_tree_in_a_clone_of_that_tree/e2.png)
 
 **Input:** tree = [7], target = 7
 
@@ -30,7 +30,7 @@ Return _a reference to the same node_ in the `cloned` tree.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/02/21/e3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1379_find_a_corresponding_node_of_a_binary_tree_in_a_clone_of_that_tree/e3.png)
 
 **Input:** tree = [8,null,6,null,5,null,4,null,3,null,2,null,1], target = 4
 

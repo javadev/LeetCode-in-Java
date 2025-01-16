@@ -20,7 +20,7 @@ Return _the lowest number of moves to acquire all keys_. If it is impossible, re
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/23/lc-keys2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0864_shortest_path_to_get_all_keys/lc-keys2.jpg)
 
 **Input:** grid = ["@.a.#","###.#","b.A.B"]
 
@@ -30,7 +30,7 @@ Return _the lowest number of moves to acquire all keys_. If it is impossible, re
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/07/23/lc-key2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0864_shortest_path_to_get_all_keys/lc-key2.jpg)
 
 **Input:** grid = ["@..aA","..B#.","....b"]
 
@@ -38,7 +38,7 @@ Return _the lowest number of moves to acquire all keys_. If it is impossible, re
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/07/23/lc-keys3.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0864_shortest_path_to_get_all_keys/lc-keys3.jpg)
 
 **Input:** grid = ["@Aa"]
 

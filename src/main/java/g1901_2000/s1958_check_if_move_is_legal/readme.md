@@ -8,13 +8,13 @@ Each move in this game consists of choosing a free cell and changing it to the c
 
 A **good line** is a line of **three or more cells (including the endpoints)** where the endpoints of the line are **one color**, and the remaining cells in the middle are the **opposite color** (no cells in the line are free). You can find examples for good lines in the figure below:
 
-![](https://assets.leetcode.com/uploads/2021/07/22/goodlines5.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1958_check_if_move_is_legal/goodlines5.png)
 
 Given two integers `rMove` and `cMove` and a character `color` representing the color you are playing as (white or black), return `true` _if changing cell_ `(rMove, cMove)` _to color_ `color` _is a **legal** move, or_ `false` _if it is not legal_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/10/grid11.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1958_check_if_move_is_legal/grid11.png)
 
 **Input:**
 
@@ -34,7 +34,7 @@ Given two integers `rMove` and `cMove` and a character `color` representing the 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/07/10/grid2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1958_check_if_move_is_legal/grid2.png)
 
 **Input:**
 

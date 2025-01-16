@@ -15,7 +15,7 @@ Return _an array_ `coin` _of size_ `n` _such that_ `coin[i]` _is the number of c
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/11/09/screenshot-2023-11-10-012641.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2901_3000/s2973_find_number_of_coins_to_place_in_tree_nodes/screenshot-2023-11-10-012641.png)
 
 **Input:** edges = [[0,1],[0,2],[0,3],[0,4],[0,5]], cost = [1,2,3,4,5,6]
 
@@ -25,7 +25,7 @@ Return _an array_ `coin` _of size_ `n` _such that_ `coin[i]` _is the number of c
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/11/09/screenshot-2023-11-10-012614.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2901_3000/s2973_find_number_of_coins_to_place_in_tree_nodes/screenshot-2023-11-10-012614.png)
 
 **Input:** edges = [[0,1],[0,2],[1,3],[1,4],[1,5],[2,6],[2,7],[2,8]], cost = [1,4,2,3,5,7,8,-4,2]
 
@@ -35,7 +35,7 @@ Return _an array_ `coin` _of size_ `n` _such that_ `coin[i]` _is the number of c
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2023/11/09/screenshot-2023-11-10-012513.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2901_3000/s2973_find_number_of_coins_to_place_in_tree_nodes/screenshot-2023-11-10-012513.png)
 
 **Input:** edges = [[0,1],[0,2]], cost = [1,2,-2]
 

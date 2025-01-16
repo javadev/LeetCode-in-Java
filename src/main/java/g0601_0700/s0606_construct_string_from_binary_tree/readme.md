@@ -8,7 +8,7 @@ Omit all the empty parenthesis pairs that do not affect the one-to-one mapping r
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/03/cons1-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0606_construct_string_from_binary_tree/cons1-tree.jpg)
 
 **Input:** root = [1,2,3,4]
 
@@ -18,7 +18,7 @@ Omit all the empty parenthesis pairs that do not affect the one-to-one mapping r
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/05/03/cons2-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0606_construct_string_from_binary_tree/cons2-tree.jpg)
 
 **Input:** root = [1,2,3,null,4]
 

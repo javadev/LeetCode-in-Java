@@ -10,7 +10,7 @@ If you choose a job that ends at time `X` you will be able to start another job 
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2019/10/10/sample1_1584.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1235_maximum_profit_in_job_scheduling/sample1_1584.png)**
 
 **Input:** startTime = [1,2,3,3], endTime = [3,4,5,6], profit = [50,10,40,70]
 
@@ -20,7 +20,7 @@ If you choose a job that ends at time `X` you will be able to start another job 
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2019/10/10/sample22_1584.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1235_maximum_profit_in_job_scheduling/sample22_1584.png)**
 
 **Input:** startTime = [1,2,3,4,6], endTime = [3,5,10,6,9], profit = [20,20,100,70,60]
 
@@ -30,7 +30,7 @@ If you choose a job that ends at time `X` you will be able to start another job 
 
 **Example 3:**
 
-**![](https://assets.leetcode.com/uploads/2019/10/10/sample3_1584.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1235_maximum_profit_in_job_scheduling/sample3_1584.png)**
 
 **Input:** startTime = [1,1,1], endTime = [2,3,4], profit = [5,6,4]
 

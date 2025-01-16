@@ -14,7 +14,7 @@ Implement the `CBTInserter` class:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/03/lc-treeinsert.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0919_complete_binary_tree_inserter/lc-treeinsert.jpg)
 
 **Input** ["CBTInserter", "insert", "insert", "get\_root"] [[[1, 2]], [3], [4], []]
 

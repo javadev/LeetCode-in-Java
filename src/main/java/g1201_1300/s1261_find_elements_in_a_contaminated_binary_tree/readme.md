@@ -17,7 +17,7 @@ Implement the `FindElements` class:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/11/06/untitled-diagram-4-1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1261_find_elements_in_a_contaminated_binary_tree/untitled-diagram-4-1.jpg)
 
 **Input** ["FindElements","find","find"] [[[-1,null,-1]],[1],[2]]
 
@@ -31,7 +31,7 @@ Implement the `FindElements` class:
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/11/06/untitled-diagram-4.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1261_find_elements_in_a_contaminated_binary_tree/untitled-diagram-4.jpg)
 
 **Input** ["FindElements","find","find","find"] [[[-1,-1,-1,-1,-1]],[1],[3],[5]]
 
@@ -46,7 +46,7 @@ Implement the `FindElements` class:
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2019/11/07/untitled-diagram-4-1-1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1261_find_elements_in_a_contaminated_binary_tree/untitled-diagram-4-1-1.jpg)
 
 **Input** ["FindElements","find","find","find","find"] [[[-1,null,-1,-1,null,-1]],[2],[3],[4],[5]]
 

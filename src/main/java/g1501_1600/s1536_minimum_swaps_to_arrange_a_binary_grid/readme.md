@@ -12,7 +12,7 @@ The main diagonal of a grid is the diagonal that starts at cell `(1, 1)` and end
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/07/28/fw.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1536_minimum_swaps_to_arrange_a_binary_grid/fw.jpg)
 
 **Input:** grid = [[0,0,1],[1,1,0],[1,0,0]]
 
@@ -20,7 +20,7 @@ The main diagonal of a grid is the diagonal that starts at cell `(1, 1)` and end
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/07/16/e2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1536_minimum_swaps_to_arrange_a_binary_grid/e2.jpg)
 
 **Input:** grid = [[0,1,1,0],[0,1,1,0],[0,1,1,0],[0,1,1,0]]
 
@@ -30,7 +30,7 @@ The main diagonal of a grid is the diagonal that starts at cell `(1, 1)` and end
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/07/16/e3.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1536_minimum_swaps_to_arrange_a_binary_grid/e3.jpg)
 
 **Input:** grid = [[1,0,0],[1,1,0],[1,1,1]]
 

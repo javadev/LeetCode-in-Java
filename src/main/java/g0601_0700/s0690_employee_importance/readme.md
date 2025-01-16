@@ -14,7 +14,7 @@ Given an integer `id` that represents an employee's ID, return _the **total** im
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/05/31/emp1-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0690_employee_importance/emp1-tree.jpg)
 
 **Input:** employees = [[1,5,[2,3]],[2,3,[]],[3,3,[]]], id = 1
 
@@ -30,7 +30,7 @@ Thus, the total importance value of employee 1 is 5 + 3 + 3 = 11.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/05/31/emp2-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0690_employee_importance/emp2-tree.jpg)
 
 **Input:** employees = [[1,2,[5]],[5,-3,[]]], id = 5
 

@@ -6,7 +6,7 @@ Given an `m x n` binary matrix `mat`, _return the number of **submatrices** that
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/10/27/ones1-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1504_count_submatrices_with_all_ones/ones1-grid.jpg)
 
 **Input:** mat = [[1,0,1],[1,1,0],[1,1,0]]
 
@@ -28,7 +28,7 @@ Total number of rectangles = 6 + 2 + 3 + 1 + 1 = 13.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/10/27/ones2-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1504_count_submatrices_with_all_ones/ones2-grid.jpg)
 
 **Input:** mat = [[0,1,1,0],[0,1,1,1],[1,1,1,0]]
 

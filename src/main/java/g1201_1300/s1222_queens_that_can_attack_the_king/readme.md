@@ -8,7 +8,7 @@ Given an array of integer coordinates `queens` that represents the positions of 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/10/01/untitled-diagram.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1222_queens_that_can_attack_the_king/untitled-diagram.jpg)
 
 **Input:** queens = [[0,1],[1,0],[4,0],[0,4],[3,3],[2,4]], king = [0,0]
 
@@ -30,7 +30,7 @@ The queen at [2,4] can't attack the king cause it's not in the same row/column/d
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2019/10/01/untitled-diagram-1.jpg)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1222_queens_that_can_attack_the_king/untitled-diagram-1.jpg)**
 
 **Input:** queens = [[0,0],[1,1],[2,2],[3,4],[3,5],[4,4],[4,5]], king = [3,3]
 
@@ -38,7 +38,7 @@ The queen at [2,4] can't attack the king cause it's not in the same row/column/d
 
 **Example 3:**
 
-**![](https://assets.leetcode.com/uploads/2019/10/01/untitled-diagram-2.jpg)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1222_queens_that_can_attack_the_king/untitled-diagram-2.jpg)**
 
 **Input:** queens = [[5,6],[7,7],[2,1],[0,7],[1,6],[5,1],[3,7],[0,3],[4,0],[1,2],[6,3],[5,0],[0,4],[2,2],[1,1],[6,4],[5,4],[0,0],[2,6],[4,5],[5,2],[1,4],[7,5],[2,3],[0,5],[4,2],[1,0],[2,7],[0,1],[4,6],[6,1],[0,6],[4,3],[1,7]], king = [3,4]
 

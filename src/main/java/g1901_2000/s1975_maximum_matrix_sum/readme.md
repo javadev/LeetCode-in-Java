@@ -12,7 +12,7 @@ Your goal is to **maximize** the summation of the matrix's elements. Return _the
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/16/pc79-q2ex1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1975_maximum_matrix_sum/pc79-q2ex1.png)
 
 **Input:** matrix = [[1,-1],[-1,1]]
 
@@ -26,7 +26,7 @@ Your goal is to **maximize** the summation of the matrix's elements. Return _the
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/07/16/pc79-q2ex2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1975_maximum_matrix_sum/pc79-q2ex2.png)
 
 **Input:** matrix = [[1,2,3],[-1,-2,-3],[1,2,3]]
 

@@ -6,7 +6,7 @@ Given two integer arrays `inorder` and `postorder` where `inorder` is the inorde
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/19/tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0106_construct_binary_tree_from_inorder_and_postorder_traversal/tree.jpg)
 
 **Input:** inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]
 

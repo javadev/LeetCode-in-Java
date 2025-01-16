@@ -8,7 +8,7 @@ You are also given three integers `src`, `dst`, and `k`, return _**the cheapest 
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/02/16/995.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0701_0800/s0787_cheapest_flights_within_k_stops/995.png)
 
 **Input:** n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 1
 
@@ -22,7 +22,7 @@ The cheapest price from city `0` to city `2` with at most 1 stop costs 200, as m
 
 **Example 2:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/02/16/995.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0701_0800/s0787_cheapest_flights_within_k_stops/995.png)
 
 **Input:** n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 0
 

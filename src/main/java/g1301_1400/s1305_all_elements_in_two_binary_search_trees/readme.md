@@ -6,7 +6,7 @@ Given two binary search trees `root1` and `root2`, return _a list containing all
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/12/18/q2-e1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1305_all_elements_in_two_binary_search_trees/q2-e1.png)
 
 **Input:** root1 = [2,1,4], root2 = [1,0,3]
 
@@ -14,7 +14,7 @@ Given two binary search trees `root1` and `root2`, return _a list containing all
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/12/18/q2-e5-.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1305_all_elements_in_two_binary_search_trees/q2-e5-.png)
 
 **Input:** root1 = [1,null,8], root2 = [8,1]
 

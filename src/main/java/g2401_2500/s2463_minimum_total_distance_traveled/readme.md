@@ -22,7 +22,7 @@ Return _the minimum total distance traveled by all the robots_. The test cases a
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/09/15/example1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2463_minimum_total_distance_traveled/example1.jpg)
 
 **Input:** robot = [0,4,6], factory = [[2,2],[6,2]]
 
@@ -44,7 +44,7 @@ The total distance is |2 - 0| + |2 - 4| + |6 - 6| = 4. It can be shown that we c
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/09/15/example-2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2463_minimum_total_distance_traveled/example-2.jpg)
 
 **Input:** robot = [1,-1], factory = [[-2,1],[2,1]]
 

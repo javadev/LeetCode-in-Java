@@ -17,7 +17,7 @@ Return _the **maximum score** of a valid node sequence with a length of_ `4`_._ 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/04/15/ex1new3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2242_maximum_score_of_a_node_sequence/ex1new3.png)
 
 **Input:** scores = [5,2,9,8,4], edges = [[0,1],[1,2],[2,3],[0,2],[1,3],[2,4]]
 
@@ -35,7 +35,7 @@ The sequence [0,3,2,4] is not valid since no edge connects nodes 0 and 3.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/03/17/ex2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2242_maximum_score_of_a_node_sequence/ex2.png)
 
 **Input:** scores = [9,20,6,4,11,12], edges = [[0,3],[5,3],[2,4],[1,3]]
 

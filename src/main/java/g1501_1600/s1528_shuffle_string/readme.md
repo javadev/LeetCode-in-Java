@@ -8,7 +8,7 @@ Return _the shuffled string_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/07/09/q1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1528_shuffle_string/q1.jpg)
 
 **Input:** s = "codeleet", `indices` = [4,5,6,7,0,2,1,3]
 

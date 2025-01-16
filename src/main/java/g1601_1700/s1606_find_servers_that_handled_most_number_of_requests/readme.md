@@ -15,7 +15,7 @@ Return _a list containing the IDs (0-indexed) of the **busiest server(s)**_. You
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/08/load-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1606_find_servers_that_handled_most_number_of_requests/load-1.png)
 
 **Input:** k = 3, arrival = [1,2,3,4,5], load = [5,2,3,3,3]
 

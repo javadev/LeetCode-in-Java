@@ -12,7 +12,7 @@ Initially, all next pointers are set to `NULL`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/02/15/117_sample.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0117_populating_next_right_pointers_in_each_node_ii/117_sample.png)
 
 **Input:** root = [1,2,3,4,5,null,7]
 

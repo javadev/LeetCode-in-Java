@@ -10,7 +10,7 @@ Design an algorithm to serialize and deserialize a binary tree. There is no rest
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/15/serdeser.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0297_serialize_and_deserialize_binary_tree/serdeser.jpg)
 
 **Input:** root = [1,2,3,null,null,4,5]
 

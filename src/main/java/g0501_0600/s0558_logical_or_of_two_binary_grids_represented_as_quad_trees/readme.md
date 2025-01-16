@@ -30,7 +30,7 @@ We can construct a Quad-Tree from a two-dimensional area using the following ste
 2.  If the current grid has different values, set `isLeaf` to False and set `val` to any value and divide the current grid into four sub-grids as shown in the photo.
 3.  Recurse for each of the children with the proper sub-grid.
 
-![](https://assets.leetcode.com/uploads/2020/02/11/new_top.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0558_logical_or_of_two_binary_grids_represented_as_quad_trees/new_top.png)
 
 If you want to know more about the Quad-Tree, you can refer to the [wiki](https://en.wikipedia.org/wiki/Quadtree).
 
@@ -44,13 +44,13 @@ If the value of `isLeaf` or `val` is True we represent it as **1** in the list `
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/02/11/qt1.png) ![](https://assets.leetcode.com/uploads/2020/02/11/qt2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0558_logical_or_of_two_binary_grids_represented_as_quad_trees/qt1.png) ![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0558_logical_or_of_two_binary_grids_represented_as_quad_trees/qt2.png)
 
 **Input:** quadTree1 = [[0,1],[1,1],[1,1],[1,0],[1,0]] , quadTree2 = [[0,1],[1,1],[0,1],[1,1],[1,0],null,null,null,null,[1,0],[1,0],[1,1],[1,1]]
 
 **Output:** [[0,0],[1,1],[1,1],[1,1],[1,0]]
 
-**Explanation:** quadTree1 and quadTree2 are shown above. You can see the binary matrix which is represented by each Quad-Tree. If we apply logical bitwise OR on the two binary matrices we get the binary matrix below which is represented by the result Quad-Tree. Notice that the binary matrices shown are only for illustration, you don't have to construct the binary matrix to get the result tree. ![](https://assets.leetcode.com/uploads/2020/02/11/qtr.png) 
+**Explanation:** quadTree1 and quadTree2 are shown above. You can see the binary matrix which is represented by each Quad-Tree. If we apply logical bitwise OR on the two binary matrices we get the binary matrix below which is represented by the result Quad-Tree. Notice that the binary matrices shown are only for illustration, you don't have to construct the binary matrix to get the result tree. ![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0558_logical_or_of_two_binary_grids_represented_as_quad_trees/qtr.png) 
 
 **Example 2:**
 

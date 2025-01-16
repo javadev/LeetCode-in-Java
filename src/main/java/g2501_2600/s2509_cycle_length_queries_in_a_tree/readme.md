@@ -23,7 +23,7 @@ Return _an array_ `answer` _of length_ `m` _where_ `answer[i]` _is the answer to
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/25/bexample1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2509_cycle_length_queries_in_a_tree/bexample1.png)
 
 **Input:** n = 3, queries = [[5,3],[4,7],[2,3]]
 
@@ -39,7 +39,7 @@ Return _an array_ `answer` _of length_ `m` _where_ `answer[i]` _is the answer to
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/10/25/aexample2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2509_cycle_length_queries_in_a_tree/aexample2.png)
 
 **Input:** n = 2, queries = [[1,2]]
 

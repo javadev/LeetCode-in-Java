@@ -6,7 +6,7 @@ Given an `m x n` integer matrix `heightMap` representing the height of each unit
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/08/trap1-3d.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0401_0500/s0407_trapping_rain_water_ii/trap1-3d.jpg)
 
 **Input:** heightMap = [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]]
 
@@ -20,7 +20,7 @@ Given an `m x n` integer matrix `heightMap` representing the height of each unit
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/04/08/trap2-3d.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0401_0500/s0407_trapping_rain_water_ii/trap2-3d.jpg)
 
 **Input:** heightMap = [[3,3,3,3,3],[3,2,2,2,3],[3,2,1,2,3],[3,2,2,2,3],[3,3,3,3,3]]
 

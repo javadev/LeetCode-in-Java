@@ -10,7 +10,7 @@ Two paths are considered different if they do not have exactly the same sequence
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/05/10/griddrawio-4.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2301_2400/s2328_number_of_increasing_paths_in_a_grid/griddrawio-4.png)
 
 **Input:** grid = [[1,1],[3,4]]
 

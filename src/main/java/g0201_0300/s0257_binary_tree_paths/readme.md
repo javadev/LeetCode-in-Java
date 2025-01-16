@@ -8,7 +8,7 @@ A **leaf** is a node with no children.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/12/paths-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0257_binary_tree_paths/paths-tree.jpg)
 
 **Input:** root = [1,2,3,null,5]
 

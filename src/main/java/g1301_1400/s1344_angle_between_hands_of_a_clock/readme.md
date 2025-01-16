@@ -8,7 +8,7 @@ Answers within <code>10<sup>-5</sup></code> of the actual value will be accepted
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/12/26/sample_1_1673.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1344_angle_between_hands_of_a_clock/sample_1_1673.png)
 
 **Input:** hour = 12, minutes = 30
 
@@ -16,7 +16,7 @@ Answers within <code>10<sup>-5</sup></code> of the actual value will be accepted
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/12/26/sample_2_1673.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1344_angle_between_hands_of_a_clock/sample_2_1673.png)
 
 **Input:** hour = 3, minutes = 30
 
@@ -24,7 +24,7 @@ Answers within <code>10<sup>-5</sup></code> of the actual value will be accepted
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2019/12/26/sample_3_1673.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1344_angle_between_hands_of_a_clock/sample_3_1673.png)
 
 **Input:** hour = 3, minutes = 15
 

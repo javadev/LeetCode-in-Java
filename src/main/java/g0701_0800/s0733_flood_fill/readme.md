@@ -12,7 +12,7 @@ Return _the modified image after performing the flood fill_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/01/flood1-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0701_0800/s0733_flood_fill/flood1-grid.jpg)
 
 **Input:** image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, newColor = 2
 

@@ -20,7 +20,7 @@ A **leaf node** is a node that has zero children.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/05/16/example1drawio1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2301_2400/s2331_evaluate_boolean_binary_tree/example1drawio1.png)
 
 **Input:** root = [2,1,3,null,null,0,1]
 

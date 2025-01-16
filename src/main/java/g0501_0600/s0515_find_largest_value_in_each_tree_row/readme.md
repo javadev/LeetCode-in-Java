@@ -6,7 +6,7 @@ Given the `root` of a binary tree, return _an array of the largest value in each
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/21/largest_e1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0501_0600/s0515_find_largest_value_in_each_tree_row/largest_e1.jpg)
 
 **Input:** root = [1,3,2,5,3,null,9]
 

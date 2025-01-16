@@ -10,7 +10,7 @@ Return _an array of coordinates representing the positions of the grid in the or
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/24/example_1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0885_spiral_matrix_iii/example_1.png)
 
 **Input:** rows = 1, cols = 4, rStart = 0, cStart = 0
 
@@ -18,7 +18,7 @@ Return _an array of coordinates representing the positions of the grid in the or
 
 **Example 2:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/24/example_2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0885_spiral_matrix_iii/example_2.png)
 
 **Input:** rows = 5, cols = 6, rStart = 1, cStart = 4
 

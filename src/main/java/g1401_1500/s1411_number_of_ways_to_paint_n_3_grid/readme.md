@@ -8,7 +8,7 @@ Given `n` the number of rows of the grid, return _the number of ways_ you can pa
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/03/26/e1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1411_number_of_ways_to_paint_n_3_grid/e1.png)
 
 **Input:** n = 1
 

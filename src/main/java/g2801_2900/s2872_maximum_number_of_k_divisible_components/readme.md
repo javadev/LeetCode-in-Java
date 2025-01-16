@@ -12,7 +12,7 @@ Return _the **maximum number of components** in any valid split_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/08/07/example12-cropped2svg.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2872_maximum_number_of_k_divisible_components/example12-cropped2svg.jpg)
 
 **Input:** n = 5, edges = [[0,2],[1,2],[1,3],[2,4]], values = [1,8,1,4,4], k = 6
 
@@ -26,7 +26,7 @@ It can be shown that no other valid split has more than 2 connected components.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/08/07/example21svg-1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2872_maximum_number_of_k_divisible_components/example21svg-1.jpg)
 
 **Input:** n = 7, edges = [[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]], values = [3,0,6,1,5,2,1], k = 3
 

@@ -10,7 +10,7 @@ For this problem, a height-balanced binary tree is defined as:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/06/balance_1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0110_balanced_binary_tree/balance_1.jpg)
 
 **Input:** root = [3,9,20,null,null,15,7]
 
@@ -18,7 +18,7 @@ For this problem, a height-balanced binary tree is defined as:
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/06/balance_2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0110_balanced_binary_tree/balance_2.jpg)
 
 **Input:** root = [1,2,2,3,3,null,null,4,4]
 

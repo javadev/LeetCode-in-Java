@@ -14,7 +14,7 @@ Return _the step-by-step directions of the **shortest path** from node_ `s` _to 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/11/15/eg1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2096_step_by_step_directions_from_a_binary_tree_node_to_another/eg1.png)
 
 **Input:** root = [5,1,2,3,null,6,4], startValue = 3, destValue = 6
 
@@ -24,7 +24,7 @@ Return _the step-by-step directions of the **shortest path** from node_ `s` _to 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/11/15/eg2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2096_step_by_step_directions_from_a_binary_tree_node_to_another/eg2.png)
 
 **Input:** root = [2,1], startValue = 2, destValue = 1
 

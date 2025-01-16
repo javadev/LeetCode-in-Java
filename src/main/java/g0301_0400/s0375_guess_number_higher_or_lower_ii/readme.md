@@ -14,7 +14,7 @@ Given a particular `n`, return _the minimum amount of money you need to **guaran
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/10/graph.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0375_guess_number_higher_or_lower_ii/graph.png)
 
 **Input:** n = 10
 

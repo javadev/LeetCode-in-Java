@@ -6,7 +6,7 @@ Given the heads of two singly linked-lists `headA` and `headB`, return _the node
 
 For example, the following two linked lists begin to intersect at node `c1`:
 
-![](https://assets.leetcode.com/uploads/2021/03/05/160_statement.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0160_intersection_of_two_linked_lists/160_statement.png)
 
 The test cases are generated such that there are no cycles anywhere in the entire linked structure.
 
@@ -26,7 +26,7 @@ The judge will then create the linked structure based on these inputs and pass t
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/05/160_example_1_1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0160_intersection_of_two_linked_lists/160_example_1_1.png)
 
 **Input:** intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3
 
@@ -36,7 +36,7 @@ The judge will then create the linked structure based on these inputs and pass t
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/03/05/160_example_2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0160_intersection_of_two_linked_lists/160_example_2.png)
 
 **Input:** intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
 
@@ -46,7 +46,7 @@ The judge will then create the linked structure based on these inputs and pass t
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/03/05/160_example_3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0160_intersection_of_two_linked_lists/160_example_3.png)
 
 **Input:** intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2
 

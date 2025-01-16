@@ -4,7 +4,7 @@ Medium
 
 Alice is texting Bob using her phone. The **mapping** of digits to letters is shown in the figure below.
 
-![](https://assets.leetcode.com/uploads/2022/03/15/1200px-telephone-keypad2svg.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2266_count_number_of_texts/1200px-telephone-keypad2svg.png)
 
 In order to **add** a letter, Alice has to **press** the key of the corresponding digit `i` times, where `i` is the position of the letter in the key.
 

@@ -17,7 +17,7 @@ Return `true` _if you can make `s` a valid parentheses string_. Otherwise, retur
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/11/06/eg1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2116_check_if_a_parentheses_string_can_be_valid/eg1.png)
 
 **Input:** s = "))()))", locked = "010100"
 

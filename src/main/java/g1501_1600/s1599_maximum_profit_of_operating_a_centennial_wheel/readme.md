@@ -12,7 +12,7 @@ Return _the minimum number of rotations you need to perform to maximize your pro
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/09/wheeldiagram12.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1599_maximum_profit_of_operating_a_centennial_wheel/wheeldiagram12.png)
 
 **Input:** customers = [8,3], boardingCost = 5, runningCost = 6
 

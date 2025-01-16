@@ -13,7 +13,7 @@ Given `m`, `n`, and `indices`, return _the **number of odd-valued cells** in the
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/10/30/e1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1252_cells_with_odd_values_in_a_matrix/e1.png)
 
 **Input:** m = 2, n = 3, indices = [[0,1],[1,1]]
 
@@ -27,7 +27,7 @@ The final matrix is [[1,3,1],[1,3,1]], which contains 6 odd numbers.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/10/30/e2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1252_cells_with_odd_values_in_a_matrix/e2.png)
 
 **Input:** m = 2, n = 2, indices = [[1,1],[0,0]]
 

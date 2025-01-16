@@ -4,7 +4,7 @@ Easy
 
 Consider all the leaves of a binary tree, from left to right order, the values of those leaves form a **leaf value sequence**_._
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/16/tree.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0872_leaf_similar_trees/tree.png)
 
 For example, in the given tree above, the leaf value sequence is `(6, 7, 4, 9, 8)`.
 
@@ -14,7 +14,7 @@ Return `true` if and only if the two given trees with head nodes `root1` and `ro
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/03/leaf-similar-1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0872_leaf_similar_trees/leaf-similar-1.jpg)
 
 **Input:** root1 = [3,5,1,6,2,9,8,null,null,7,4], root2 = [3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]
 
@@ -22,7 +22,7 @@ Return `true` if and only if the two given trees with head nodes `root1` and `ro
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/09/03/leaf-similar-2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0872_leaf_similar_trees/leaf-similar-2.jpg)
 
 **Input:** root1 = [1,2,3], root2 = [1,3,2]
 

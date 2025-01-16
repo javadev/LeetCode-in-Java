@@ -9,7 +9,7 @@ There exists an infinitely large two-dimensional grid of uncolored unit cells. Y
 
 Below is a pictorial representation of the state of the grid after minutes 1, 2, and 3.
 
-![](https://assets.leetcode.com/uploads/2023/01/10/example-copy-2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2579_count_total_number_of_colored_cells/example-copy-2.png)
 
 Return _the number of **colored cells** at the end of_ `n` _minutes_.
 

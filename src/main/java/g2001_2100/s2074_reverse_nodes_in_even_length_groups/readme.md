@@ -16,7 +16,7 @@ Note that the length of the last group may be less than or equal to `1 + the len
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/10/25/eg1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2074_reverse_nodes_in_even_length_groups/eg1.png)
 
 **Input:** head = [5,2,6,3,9,1,7,3,8,4]
 
@@ -34,7 +34,7 @@ Note that the length of the last group may be less than or equal to `1 + the len
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/10/25/eg2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2074_reverse_nodes_in_even_length_groups/eg2.png)
 
 **Input:** head = [1,1,0,6]
 
@@ -50,7 +50,7 @@ Note that the length of the last group may be less than or equal to `1 + the len
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/11/17/ex3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2074_reverse_nodes_in_even_length_groups/ex3.png)
 
 **Input:** head = [1,1,0,6,5]
 

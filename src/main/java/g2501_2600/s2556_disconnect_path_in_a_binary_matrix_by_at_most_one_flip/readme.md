@@ -12,7 +12,7 @@ Return `true` _if it is possible to make the matrix disconnect or_ `false` _othe
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/12/07/yetgrid2drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2556_disconnect_path_in_a_binary_matrix_by_at_most_one_flip/yetgrid2drawio.png)
 
 **Input:** grid = [[1,1,1],[1,0,0],[1,1,1]]
 
@@ -24,7 +24,7 @@ We can change the cell shown in the diagram above. There is no path from (0, 0) 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/12/07/yetgrid3drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2556_disconnect_path_in_a_binary_matrix_by_at_most_one_flip/yetgrid3drawio.png)
 
 **Input:** grid = [[1,1,1],[1,0,1],[1,1,1]]
 

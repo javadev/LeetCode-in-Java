@@ -28,7 +28,7 @@ Return _a string representing the final state_.
 
 **Example 2:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/05/18/domino.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0838_push_dominoes/domino.png)
 
 **Input:** dominoes = ".L.R...LR..L.."
 

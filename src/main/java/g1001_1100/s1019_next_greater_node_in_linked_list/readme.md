@@ -10,7 +10,7 @@ Return an integer array `answer` where `answer[i]` is the value of the next grea
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/05/linkedlistnext1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1001_1100/s1019_next_greater_node_in_linked_list/linkedlistnext1.jpg)
 
 **Input:** head = [2,1,5]
 
@@ -18,7 +18,7 @@ Return an integer array `answer` where `answer[i]` is the value of the next grea
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/08/05/linkedlistnext2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1001_1100/s1019_next_greater_node_in_linked_list/linkedlistnext2.jpg)
 
 **Input:** head = [2,7,4,3,5]
 

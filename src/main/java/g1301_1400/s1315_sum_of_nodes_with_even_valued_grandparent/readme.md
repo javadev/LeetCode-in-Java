@@ -8,7 +8,7 @@ A **grandparent** of a node is the parent of its parent if it exists.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/10/even1-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1315_sum_of_nodes_with_even_valued_grandparent/even1-tree.jpg)
 
 **Input:** root = [6,7,8,2,7,1,3,9,null,1,4,null,null,null,5]
 
@@ -18,7 +18,7 @@ A **grandparent** of a node is the parent of its parent if it exists.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/08/10/even2-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1315_sum_of_nodes_with_even_valued_grandparent/even2-tree.jpg)
 
 **Input:** root = [1]
 

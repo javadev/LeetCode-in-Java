@@ -8,7 +8,7 @@ Return `true` _if the value of the root is equal to the **sum** of the values of
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/04/08/graph3drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2236_root_equals_sum_of_children/graph3drawio.png)
 
 **Input:** root = [10,4,6]
 
@@ -20,7 +20,7 @@ Return `true` _if the value of the root is equal to the **sum** of the values of
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/04/08/graph3drawio-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2236_root_equals_sum_of_children/graph3drawio-1.png)
 
 **Input:** root = [5,3,1]
 

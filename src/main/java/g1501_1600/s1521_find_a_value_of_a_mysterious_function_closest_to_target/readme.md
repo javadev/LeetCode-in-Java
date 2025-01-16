@@ -2,7 +2,7 @@
 
 Hard
 
-![](https://assets.leetcode.com/uploads/2020/07/09/change.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1521_find_a_value_of_a_mysterious_function_closest_to_target/change.png)
 
 Winston was given the above mysterious function `func`. He has an integer array `arr` and an integer `target` and he wants to find the values `l` and `r` that make the value `|func(arr, l, r) - target|` minimum possible.
 

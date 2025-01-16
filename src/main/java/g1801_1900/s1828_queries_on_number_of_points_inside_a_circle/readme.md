@@ -12,7 +12,7 @@ Return _an array_ `answer`_, where_ `answer[j]` _is the answer to the_ <code>j<s
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/25/chrome_2021-03-25_22-34-16.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1801_1900/s1828_queries_on_number_of_points_inside_a_circle/chrome_2021-03-25_22-34-16.png)
 
 **Input:** points = [[1,3],[3,3],[5,3],[2,2]], queries = [[2,3,1],[4,3,1],[1,1,2]]
 
@@ -22,7 +22,7 @@ Return _an array_ `answer`_, where_ `answer[j]` _is the answer to the_ <code>j<s
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/03/25/chrome_2021-03-25_22-42-07.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1801_1900/s1828_queries_on_number_of_points_inside_a_circle/chrome_2021-03-25_22-42-07.png)
 
 **Input:** points = [[1,1],[2,2],[3,3],[4,4],[5,5]], queries = [[1,2,2],[2,2,2],[4,3,2],[4,3,3]]
 

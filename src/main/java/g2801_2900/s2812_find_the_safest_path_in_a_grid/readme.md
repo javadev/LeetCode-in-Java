@@ -19,7 +19,7 @@ The **Manhattan distance** between two cells `(a, b)` and `(x, y)` is equal to `
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/07/02/example1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2812_find_the_safest_path_in_a_grid/example1.png)
 
 **Input:** grid = [[1,0,0],[0,0,0],[0,0,1]]
 
@@ -29,7 +29,7 @@ The **Manhattan distance** between two cells `(a, b)` and `(x, y)` is equal to `
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/07/02/example2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2812_find_the_safest_path_in_a_grid/example2.png)
 
 **Input:** grid = [[0,0,1],[0,0,0],[0,0,0]]
 
@@ -47,7 +47,7 @@ It can be shown that there are no other paths with a higher safeness factor.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2023/07/02/example3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2812_find_the_safest_path_in_a_grid/example3.png)
 
 **Input:** grid = [[0,0,0,1],[0,0,0,0],[0,0,0,0],[1,0,0,0]]
 

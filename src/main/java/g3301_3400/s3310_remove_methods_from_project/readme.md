@@ -20,7 +20,7 @@ Return an array containing all the remaining methods after removing all the **su
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/07/18/graph-2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3310_remove_methods_from_project/graph-2.png)
 
 Method 2 and method 1 are suspicious, but they are directly invoked by methods 3 and 0, which are not suspicious. We return all elements without removing anything.
 
@@ -32,7 +32,7 @@ Method 2 and method 1 are suspicious, but they are directly invoked by methods 3
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/07/18/graph-3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3310_remove_methods_from_project/graph-3.png)
 
 Methods 0, 1, and 2 are suspicious and they are not directly invoked by any other method. We can remove them.
 
@@ -44,7 +44,7 @@ Methods 0, 1, and 2 are suspicious and they are not directly invoked by any othe
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/07/20/graph.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3310_remove_methods_from_project/graph.png)
 
 All methods are suspicious. We can remove them.
 

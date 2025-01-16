@@ -18,7 +18,7 @@ Return _an array containing the health of the remaining robots (in the order the
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/05/15/image-20230516011718-12.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2701_2800/s2751_robot_collisions/image-20230516011718-12.png)
 
 **Input:** positions = [5,4,3,2,1], healths = [2,17,9,15,10], directions = "RRRRR"
 
@@ -28,7 +28,7 @@ Return _an array containing the health of the remaining robots (in the order the
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/05/15/image-20230516004433-7.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2701_2800/s2751_robot_collisions/image-20230516004433-7.png)
 
 **Input:** positions = [3,5,2,6], healths = [10,10,15,12], directions = "RLRL"
 
@@ -38,7 +38,7 @@ Return _an array containing the health of the remaining robots (in the order the
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2023/05/15/image-20230516005114-9.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2701_2800/s2751_robot_collisions/image-20230516005114-9.png)
 
 **Input:** positions = [1,2,5,6], healths = [10,10,11,11], directions = "RLRL"
 

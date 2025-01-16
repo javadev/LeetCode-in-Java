@@ -14,7 +14,7 @@ The **level** of a node is the number of edges along the path between it and the
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/07/28/first_case1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2415_reverse_odd_levels_of_binary_tree/first_case1.png)
 
 **Input:** root = [2,3,5,8,13,21,34]
 
@@ -28,7 +28,7 @@ The nodes at level 1 are 3, 5 respectively, which are reversed and become 5, 3.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/07/28/second_case3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2415_reverse_odd_levels_of_binary_tree/second_case3.png)
 
 **Input:** root = [7,13,11]
 

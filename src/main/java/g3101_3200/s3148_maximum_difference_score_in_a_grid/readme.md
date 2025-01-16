@@ -10,7 +10,7 @@ Return the **maximum** total score you can achieve.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2024/03/14/grid1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3101_3200/s3148_maximum_difference_score_in_a_grid/grid1.png)
 
 **Input:** grid = [[9,5,7,3],[8,9,6,1],[6,7,14,3],[2,5,3,1]]
 
@@ -26,7 +26,7 @@ The total score is `2 + 7 = 9`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2024/04/08/moregridsdrawio-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3101_3200/s3148_maximum_difference_score_in_a_grid/moregridsdrawio-1.png)
 
 **Input:** grid = [[4,3,2],[3,2,1]]
 

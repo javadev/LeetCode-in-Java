@@ -15,7 +15,7 @@ Return _an array_ `answer` _of size_ `n` _where_ `answer[i]` _is the column that
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2019/09/26/ball.jpg)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1701_1800/s1706_where_will_the_ball_fall/ball.jpg)**
 
 **Input:** grid = [[1,1,1,-1,-1],[1,1,1,-1,-1],[-1,-1,-1,1,1],[1,1,1,1,-1],[-1,-1,-1,-1,-1]]
 

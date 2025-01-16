@@ -10,7 +10,7 @@ Note that points **on the edge** of a vertical area **are not** considered inclu
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/19/points3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1637_widest_vertical_area_between_two_points_containing_no_points/points3.png)
 
 **Input:** points = [[8,7],[9,9],[7,4],[9,7]]
 

@@ -12,7 +12,7 @@ A **valid BST** is defined as follows:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/12/01/tree1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0098_validate_binary_search_tree/tree1.jpg)
 
 **Input:** root = [2,1,3]
 
@@ -20,7 +20,7 @@ A **valid BST** is defined as follows:
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/12/01/tree2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0098_validate_binary_search_tree/tree2.jpg)
 
 **Input:** root = [5,1,4,null,null,3,6]
 

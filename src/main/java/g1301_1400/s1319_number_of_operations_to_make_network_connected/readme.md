@@ -10,7 +10,7 @@ Return _the minimum number of times you need to do this in order to make all the
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/01/02/sample_1_1677.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1319_number_of_operations_to_make_network_connected/sample_1_1677.png)
 
 **Input:** n = 4, connections = [[0,1],[0,2],[1,2]]
 
@@ -20,7 +20,7 @@ Return _the minimum number of times you need to do this in order to make all the
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/01/02/sample_2_1677.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1319_number_of_operations_to_make_network_connected/sample_2_1677.png)
 
 **Input:** n = 6, connections = [[0,1],[0,2],[0,3],[1,2],[1,3]]
 

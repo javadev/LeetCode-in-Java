@@ -18,7 +18,7 @@ Return _the minimum number of operations needed to go back to the main folder af
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/09/sample_11_1957.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1598_crawler_log_folder/sample_11_1957.png)
 
 **Input:** logs = ["d1/","d2/","../","d21/","./"]
 
@@ -28,7 +28,7 @@ Return _the minimum number of operations needed to go back to the main folder af
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/09/09/sample_22_1957.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1598_crawler_log_folder/sample_22_1957.png)
 
 **Input:** logs = ["d1/","d2/","./","d3/","../","d31/"]
 

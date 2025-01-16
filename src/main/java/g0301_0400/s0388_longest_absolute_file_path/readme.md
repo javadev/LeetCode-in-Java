@@ -4,7 +4,7 @@ Medium
 
 Suppose we have a file system that stores both files and directories. An example of one system is represented in the following picture:
 
-![](https://assets.leetcode.com/uploads/2020/08/28/mdir.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0388_longest_absolute_file_path/mdir.jpg)
 
 Here, we have `dir` as the only directory in the root. `dir` contains two subdirectories, `subdir1` and `subdir2`. `subdir1` contains a file `file1.ext` and subdirectory `subsubdir1`. `subdir2` contains a subdirectory `subsubdir2`, which contains a file `file2.ext`.
 
@@ -33,7 +33,7 @@ Given a string `input` representing the file system in the explained format, ret
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/28/dir1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0388_longest_absolute_file_path/dir1.jpg)
 
 **Input:** input = "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext"
 
@@ -43,7 +43,7 @@ Given a string `input` representing the file system in the explained format, ret
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/08/28/dir2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0388_longest_absolute_file_path/dir2.jpg)
 
 **Input:** input = input = "dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"
 

@@ -16,7 +16,7 @@ Return _a **0-indexed** integer array_ `arr` _of size_ `5` _such that_ `arr[i]` 
 
 **Output:** [3,1,0,0,0]
 
-**Explanation:** The grid looks like this: ![](https://assets.leetcode.com/uploads/2023/06/18/screen-shot-2023-06-18-at-44656-am.png) 
+**Explanation:** The grid looks like this: ![](https://leetcode-in-java.github.io/src/main/java/g2701_2800/s2768_number_of_black_blocks/screen-shot-2023-06-18-at-44656-am.png) 
 
 There is only 1 block with one black cell, and it is the block starting with cell [0,0].
 
@@ -30,7 +30,7 @@ Thus, we return [3,1,0,0,0].
 
 **Output:** [0,2,2,0,0]
 
-**Explanation:** The grid looks like this: ![](https://assets.leetcode.com/uploads/2023/06/18/screen-shot-2023-06-18-at-45018-am.png) 
+**Explanation:** The grid looks like this: ![](https://leetcode-in-java.github.io/src/main/java/g2701_2800/s2768_number_of_black_blocks/screen-shot-2023-06-18-at-45018-am.png) 
 
 There are 2 blocks with two black cells (the ones starting with cell coordinates [0,0] and [0,1]). 
 

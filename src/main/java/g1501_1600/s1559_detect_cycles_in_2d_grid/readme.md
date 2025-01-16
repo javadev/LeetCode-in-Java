@@ -12,27 +12,27 @@ Return `true` if any cycle of the same value exists in `grid`, otherwise, return
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2020/07/15/1.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1559_detect_cycles_in_2d_grid/1.png)**
 
 **Input:** grid = [["a","a","a","a"],["a","b","b","a"],["a","b","b","a"],["a","a","a","a"]]
 
 **Output:** true
 
-**Explanation:** There are two valid cycles shown in different colors in the image below: ![](https://assets.leetcode.com/uploads/2020/07/15/11.png)
+**Explanation:** There are two valid cycles shown in different colors in the image below: ![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1559_detect_cycles_in_2d_grid/11.png)
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2020/07/15/22.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1559_detect_cycles_in_2d_grid/22.png)**
 
 **Input:** grid = [["c","c","c","a"],["c","d","c","c"],["c","c","e","c"],["f","c","c","c"]]
 
 **Output:** true
 
-**Explanation:** There is only one valid cycle highlighted in the image below: ![](https://assets.leetcode.com/uploads/2020/07/15/2.png)
+**Explanation:** There is only one valid cycle highlighted in the image below: ![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1559_detect_cycles_in_2d_grid/2.png)
 
 **Example 3:**
 
-**![](https://assets.leetcode.com/uploads/2020/07/15/3.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1559_detect_cycles_in_2d_grid/3.png)**
 
 **Input:** grid = [["a","b","b"],["b","z","b"],["b","b","a"]]
 

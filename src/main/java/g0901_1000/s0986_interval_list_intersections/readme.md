@@ -12,7 +12,7 @@ The **intersection** of two closed intervals is a set of real numbers that are e
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/01/30/interval1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0986_interval_list_intersections/interval1.png)
 
 **Input:** firstList = [[0,2],[5,10],[13,23],[24,25]], secondList = [[1,5],[8,12],[15,24],[25,26]]
 

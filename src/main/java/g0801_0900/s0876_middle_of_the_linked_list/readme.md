@@ -8,7 +8,7 @@ If there are two middle nodes, return **the second middle** node.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/07/23/lc-midlist1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0876_middle_of_the_linked_list/lc-midlist1.jpg)
 
 **Input:** head = [1,2,3,4,5]
 
@@ -18,7 +18,7 @@ If there are two middle nodes, return **the second middle** node.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/07/23/lc-midlist2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0876_middle_of_the_linked_list/lc-midlist2.jpg)
 
 **Input:** head = [1,2,3,4,5,6]
 

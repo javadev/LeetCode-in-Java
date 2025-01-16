@@ -12,7 +12,7 @@ Recall that:
 
 **Example 1:**
 
-![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/01/sketch1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1101_1200/s1123_lowest_common_ancestor_of_deepest_leaves/sketch1.png)
 
 **Input:** root = [3,5,1,6,2,0,8,null,null,7,4]
 

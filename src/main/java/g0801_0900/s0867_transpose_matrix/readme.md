@@ -6,7 +6,7 @@ Given a 2D integer array `matrix`, return _the **transpose** of_ `matrix`.
 
 The **transpose** of a matrix is the matrix flipped over its main diagonal, switching the matrix's row and column indices.
 
-![](https://assets.leetcode.com/uploads/2021/02/10/hint_transpose.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0867_transpose_matrix/hint_transpose.png)
 
 **Example 1:**
 

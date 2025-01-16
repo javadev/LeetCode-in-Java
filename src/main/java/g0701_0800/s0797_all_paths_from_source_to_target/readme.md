@@ -8,7 +8,7 @@ The graph is given as follows: `graph[i]` is a list of all nodes you can visit f
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/28/all_1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0701_0800/s0797_all_paths_from_source_to_target/all_1.jpg)
 
 **Input:** graph = [[1,2],[3],[3],[]]
 
@@ -18,7 +18,7 @@ The graph is given as follows: `graph[i]` is a list of all nodes you can visit f
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/09/28/all_2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0701_0800/s0797_all_paths_from_source_to_target/all_2.jpg)
 
 **Input:** graph = [[4,3,1],[3,2,4],[3],[4],[]]
 

@@ -22,7 +22,7 @@ Return `Construct(b)`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/08/09/maxtree1.JPG)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0998_maximum_binary_tree_ii/maxtree1.jpg)
 
 **Input:** root = [4,1,3,null,null,2], val = 5
 
@@ -32,7 +32,7 @@ Return `Construct(b)`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/08/09/maxtree21.JPG)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0998_maximum_binary_tree_ii/maxtree21.jpg)
 
 **Input:** root = [5,2,4,null,1], val = 3
 
@@ -42,7 +42,7 @@ Return `Construct(b)`.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/08/09/maxtree3.JPG)
+![](https://leetcode-in-java.github.io/src/main/java/g0901_1000/s0998_maximum_binary_tree_ii/maxtree3.jpg)
 
 **Input:** root = [5,2,3,null,1], val = 4
 

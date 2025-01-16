@@ -11,7 +11,7 @@ Given a 2D integer array `grid` of size `n x n` representing a square matrix, re
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/05/03/ex1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g2301_2400/s2319_check_if_matrix_is_x_matrix/ex1.jpg)
 
 **Input:** grid = [[2,0,0,1],[0,3,1,0],[0,5,2,0],[4,0,0,2]]
 
@@ -25,7 +25,7 @@ Thus, grid is an X-Matrix.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/05/03/ex2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g2301_2400/s2319_check_if_matrix_is_x_matrix/ex2.jpg)
 
 **Input:** grid = [[5,7,0],[0,3,1],[0,5,0]]
 

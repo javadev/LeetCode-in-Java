@@ -14,7 +14,7 @@ Return _the **maximum** possible **cost**_ _amongst all possible root choices_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/12/01/example14.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2538_difference_between_maximum_and_minimum_price_sum/example14.png)
 
 **Input:** n = 6, edges = [[0,1],[1,2],[1,3],[3,4],[3,5]], price = [9,8,7,6,10,5]
 
@@ -30,7 +30,7 @@ The difference between the maximum and minimum price sum is 24. It can be proved
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/11/24/p1_example2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2538_difference_between_maximum_and_minimum_price_sum/p1_example2.png)
 
 **Input:** n = 3, edges = [[0,1],[1,2]], price = [1,1,1]
 

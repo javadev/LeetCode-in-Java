@@ -10,7 +10,7 @@ Given the puzzle board `board`, return _the least number of moves required so th
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/29/slide1-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0701_0800/s0773_sliding_puzzle/slide1-grid.jpg)
 
 **Input:** board = [[1,2,3],[4,0,5]]
 
@@ -20,7 +20,7 @@ Given the puzzle board `board`, return _the least number of moves required so th
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/06/29/slide2-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0701_0800/s0773_sliding_puzzle/slide2-grid.jpg)
 
 **Input:** board = [[1,2,3],[5,4,0]]
 
@@ -30,7 +30,7 @@ Given the puzzle board `board`, return _the least number of moves required so th
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/06/29/slide3-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0701_0800/s0773_sliding_puzzle/slide3-grid.jpg)
 
 **Input:** board = [[4,1,2],[5,0,3]]
 

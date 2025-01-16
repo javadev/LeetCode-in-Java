@@ -2,7 +2,7 @@
 
 Medium
 
-![](https://assets.leetcode.com/uploads/2020/02/14/cinema_seats_1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1386_cinema_seat_allocation/cinema_seats_1.png)
 
 A cinema has `n` rows of seats, numbered from 1 to `n` and there are ten seats in each row, labelled from 1 to 10 as shown in the figure above.
 
@@ -12,7 +12,7 @@ _Return the maximum number of four-person groups you can assign on the cinema se
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/02/14/cinema_seats_3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1386_cinema_seat_allocation/cinema_seats_3.png)
 
 **Input:** n = 3, reservedSeats = [[1,2],[1,3],[1,8],[2,6],[3,1],[3,10]]
 

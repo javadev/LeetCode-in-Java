@@ -8,7 +8,7 @@ A **leaf** is a node with no children.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/18/pathsum1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0112_path_sum/pathsum1.jpg)
 
 **Input:** root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22
 
@@ -16,7 +16,7 @@ A **leaf** is a node with no children.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/18/pathsum2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0112_path_sum/pathsum2.jpg)
 
 **Input:** root = [1,2,3], targetSum = 5
 

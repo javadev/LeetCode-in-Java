@@ -12,7 +12,7 @@ Assume a BST is defined as follows:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/01/30/sample_1_1709.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1373_maximum_sum_bst_in_binary_tree/sample_1_1709.png)
 
 **Input:** root = [1,4,3,2,4,2,5,null,null,null,null,null,null,4,6]
 
@@ -22,7 +22,7 @@ Assume a BST is defined as follows:
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/01/30/sample_2_1709.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1373_maximum_sum_bst_in_binary_tree/sample_2_1709.png)
 
 **Input:** root = [4,3,null,1,2]
 

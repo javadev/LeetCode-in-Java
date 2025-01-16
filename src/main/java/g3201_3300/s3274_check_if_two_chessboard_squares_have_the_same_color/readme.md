@@ -6,7 +6,7 @@ You are given two strings, `coordinate1` and `coordinate2`, representing the coo
 
 Below is the chessboard for reference.
 
-![](https://assets.leetcode.com/uploads/2024/07/17/screenshot-2021-02-20-at-22159-pm.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3274_check_if_two_chessboard_squares_have_the_same_color/screenshot-2021-02-20-at-22159-pm.png)
 
 Return `true` if these two squares have the same color and `false` otherwise.
 

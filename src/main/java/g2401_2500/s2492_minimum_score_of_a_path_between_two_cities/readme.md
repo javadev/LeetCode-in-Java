@@ -16,7 +16,7 @@ Return _the **minimum** possible score of a path between cities_ `1` _and_ `n`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/12/graph11.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2492_minimum_score_of_a_path_between_two_cities/graph11.png)
 
 **Input:** n = 4, roads = [[1,2,9],[2,3,6],[2,4,5],[1,4,7]]
 
@@ -26,7 +26,7 @@ Return _the **minimum** possible score of a path between cities_ `1` _and_ `n`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/10/12/graph22.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2492_minimum_score_of_a_path_between_two_cities/graph22.png)
 
 **Input:** n = 4, roads = [[1,2,2],[1,3,4],[3,4,7]]
 

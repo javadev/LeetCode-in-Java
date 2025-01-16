@@ -10,11 +10,11 @@ Return `true` _if_ `grid` _represents a valid configuration of the knight's move
 
 **Note** that a valid knight move consists of moving two squares vertically and one square horizontally, or two squares horizontally and one square vertically. The figure below illustrates all the possible eight moves of a knight from some cell.
 
-![](https://assets.leetcode.com/uploads/2018/10/12/knight.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2596_check_knight_tour_configuration/knight.png)
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/12/28/yetgriddrawio-5.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2596_check_knight_tour_configuration/yetgriddrawio-5.png)
 
 **Input:** grid = [[0,11,16,5,20],[17,4,19,10,15],[12,1,8,21,6],[3,18,23,14,9],[24,13,2,7,22]]
 
@@ -24,7 +24,7 @@ Return `true` _if_ `grid` _represents a valid configuration of the knight's move
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/12/28/yetgriddrawio-6.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2596_check_knight_tour_configuration/yetgriddrawio-6.png)
 
 **Input:** grid = [[0,3,6],[5,8,1],[2,7,4]]
 

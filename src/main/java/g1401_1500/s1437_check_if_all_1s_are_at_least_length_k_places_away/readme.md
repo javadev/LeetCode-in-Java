@@ -6,7 +6,7 @@ Given an binary array `nums` and an integer `k`, return `true` _if all_ `1`_'s a
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/04/15/sample_1_1791.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1437_check_if_all_1s_are_at_least_length_k_places_away/sample_1_1791.png)
 
 **Input:** nums = [1,0,0,0,1,0,0,1], k = 2
 
@@ -16,7 +16,7 @@ Given an binary array `nums` and an integer `k`, return `true` _if all_ `1`_'s a
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/04/15/sample_2_1791.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1437_check_if_all_1s_are_at_least_length_k_places_away/sample_2_1791.png)
 
 **Input:** nums = [1,0,0,1,0,1], k = 2
 

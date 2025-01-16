@@ -10,7 +10,7 @@ Given the `root` of the binary tree, return _the maximum amount of money the thi
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/10/rob1-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0337_house_robber_iii/rob1-tree.jpg)
 
 **Input:** root = [3,2,3,null,3,null,1]
 
@@ -20,7 +20,7 @@ Given the `root` of the binary tree, return _the maximum amount of money the thi
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/03/10/rob2-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0337_house_robber_iii/rob2-tree.jpg)
 
 **Input:** root = [3,4,5,1,3,null,1]
 

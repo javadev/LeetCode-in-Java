@@ -12,7 +12,7 @@ The **greatest common divisor** of two numbers is the largest positive integer t
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/07/18/ex1_copy.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2807_insert_greatest_common_divisors_in_linked_list/ex1_copy.png)
 
 **Input:** head = [18,6,10,3]
 
@@ -28,7 +28,7 @@ There are no more adjacent nodes, so we return the linked list.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/07/18/ex2_copy1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2807_insert_greatest_common_divisors_in_linked_list/ex2_copy1.png)
 
 **Input:** head = [7]
 

@@ -22,7 +22,7 @@ Return `true` if such cuts can be made; otherwise, return `false`.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/10/23/tt1drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3394_check_if_grid_can_be_cut_into_sections/tt1drawio.png)
 
 The grid is shown in the diagram. We can make horizontal cuts at `y = 2` and `y = 4`. Hence, output is true.
 
@@ -34,7 +34,7 @@ The grid is shown in the diagram. We can make horizontal cuts at `y = 2` and `y 
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/10/23/tc2drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3301_3400/s3394_check_if_grid_can_be_cut_into_sections/tc2drawio.png)
 
 We can make vertical cuts at `x = 2` and `x = 3`. Hence, output is true.
 

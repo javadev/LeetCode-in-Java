@@ -14,7 +14,7 @@ Return _an integer array_ `answer`_, where_ `answer[i]` _is the_ _**minimum** nu
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/08/26/image-20230826221104-3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2858_minimum_edge_reversals_so_every_node_is_reachable/image-20230826221104-3.png)
 
 **Input:** n = 4, edges = [[2,0],[2,1],[1,3]]
 
@@ -40,7 +40,7 @@ So, answer[3] = 2.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/08/26/image-20230826225541-2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2801_2900/s2858_minimum_edge_reversals_so_every_node_is_reachable/image-20230826225541-2.png)
 
 **Input:** n = 3, edges = [[1,2],[2,0]]
 

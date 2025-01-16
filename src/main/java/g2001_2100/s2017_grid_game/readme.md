@@ -12,7 +12,7 @@ The **first** robot wants to **minimize** the number of points collected by the 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/09/08/a1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2017_grid_game/a1.png)
 
 **Input:** grid = [[2,5,4],[1,5,1]]
 
@@ -26,7 +26,7 @@ The second robot will collect 0 + 0 + 4 + 0 = 4 points.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/09/08/a2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2017_grid_game/a2.png)
 
 **Input:** grid = [[3,3,1],[8,5,2]]
 
@@ -40,7 +40,7 @@ The second robot will collect 0 + 3 + 1 + 0 = 4 points.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/09/08/a3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2017_grid_game/a3.png)
 
 **Input:** grid = [[1,3,1,15],[1,3,3,1]]
 

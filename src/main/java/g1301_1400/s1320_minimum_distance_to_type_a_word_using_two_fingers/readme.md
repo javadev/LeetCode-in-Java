@@ -2,7 +2,7 @@
 
 Hard
 
-![](https://assets.leetcode.com/uploads/2020/01/02/leetcode_keyboard.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1320_minimum_distance_to_type_a_word_using_two_fingers/leetcode_keyboard.png)
 
 You have a keyboard layout as shown above in the **X-Y** plane, where each English uppercase letter is located at some coordinate.
 

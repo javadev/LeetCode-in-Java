@@ -12,7 +12,7 @@ The degree of a node is the number of edges connected to it.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/26/agraphdrawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2508_add_edges_to_make_degrees_of_all_nodes_even/agraphdrawio.png)
 
 **Input:** n = 5, edges = [[1,2],[2,3],[3,4],[4,2],[1,4],[2,5]]
 
@@ -22,7 +22,7 @@ The degree of a node is the number of edges connected to it.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/10/26/aagraphdrawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2508_add_edges_to_make_degrees_of_all_nodes_even/aagraphdrawio.png)
 
 **Input:** n = 4, edges = [[1,2],[3,4]]
 
@@ -32,7 +32,7 @@ The degree of a node is the number of edges connected to it.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2022/10/26/aaagraphdrawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2508_add_edges_to_make_degrees_of_all_nodes_even/aaagraphdrawio.png)
 
 **Input:** n = 4, edges = [[1,2],[1,3],[1,4]]
 

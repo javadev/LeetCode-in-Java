@@ -19,7 +19,7 @@ Return _the **earliest second** starting from which the network becomes **idle**
 
 **Example 1:**
 
-![example 1](https://assets.leetcode.com/uploads/2021/09/22/quiet-place-example1.png)
+![example 1](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2039_the_time_when_the_network_becomes_idle/quiet-place-example1.png)
 
 **Input:** edges = [[0,1],[1,2]], patience = [0,2,1]
 
@@ -68,7 +68,7 @@ This is the time when the network becomes idle.
 
 **Example 2:**
 
-![example 2](https://assets.leetcode.com/uploads/2021/09/04/network_a_quiet_place_2.png)
+![example 2](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2039_the_time_when_the_network_becomes_idle/network_a_quiet_place_2.png)
 
 **Input:** edges = [[0,1],[0,2],[1,2]], patience = [0,10,10]
 

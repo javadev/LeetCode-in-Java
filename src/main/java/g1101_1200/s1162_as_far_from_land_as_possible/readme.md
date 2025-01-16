@@ -8,7 +8,7 @@ The distance used in this problem is the Manhattan distance: the distance betwee
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/05/03/1336_ex1.JPG)
+![](https://leetcode-in-java.github.io/src/main/java/g1101_1200/s1162_as_far_from_land_as_possible/1336_ex1.jpg)
 
 **Input:** grid = [[1,0,1],[0,0,0],[1,0,1]]
 
@@ -18,7 +18,7 @@ The distance used in this problem is the Manhattan distance: the distance betwee
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/05/03/1336_ex2.JPG)
+![](https://leetcode-in-java.github.io/src/main/java/g1101_1200/s1162_as_far_from_land_as_possible/1336_ex2.jpg)
 
 **Input:** grid = [[1,0,0],[0,0,0],[0,0,0]]
 

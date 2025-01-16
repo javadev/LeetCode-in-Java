@@ -19,7 +19,7 @@ Return _the minimum cost to make the grid have at least one valid path_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/02/13/grid1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1368_minimum_cost_to_make_at_least_one_valid_path_in_a_grid/grid1.png)
 
 **Input:** grid = [[1,1,1,1],[2,2,2,2],[1,1,1,1],[2,2,2,2]]
 
@@ -29,7 +29,7 @@ Return _the minimum cost to make the grid have at least one valid path_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/02/13/grid2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1368_minimum_cost_to_make_at_least_one_valid_path_in_a_grid/grid2.png)
 
 **Input:** grid = [[1,1,3],[3,2,2],[1,1,4]]
 
@@ -39,7 +39,7 @@ Return _the minimum cost to make the grid have at least one valid path_.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2020/02/13/grid3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1368_minimum_cost_to_make_at_least_one_valid_path_in_a_grid/grid3.png)
 
 **Input:** grid = [[1,2],[4,3]]
 

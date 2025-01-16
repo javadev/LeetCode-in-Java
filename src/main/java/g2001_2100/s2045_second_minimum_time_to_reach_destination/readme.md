@@ -19,7 +19,7 @@ Given `n`, `edges`, `time`, and `change`, return _the **second minimum time** it
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/09/29/e1.png)         ![](https://assets.leetcode.com/uploads/2021/09/29/e2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2045_second_minimum_time_to_reach_destination/e1.png)         ![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2045_second_minimum_time_to_reach_destination/e2.png)
 
 **Input:** n = 5, edges = [[1,2],[1,3],[1,4],[3,4],[4,5]], time = 3, change = 5
 
@@ -57,7 +57,7 @@ Hence the second minimum time is 13 minutes.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/09/29/eg2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2045_second_minimum_time_to_reach_destination/eg2.png)
 
 **Input:** n = 2, edges = [[1,2]], time = 3, change = 2
 

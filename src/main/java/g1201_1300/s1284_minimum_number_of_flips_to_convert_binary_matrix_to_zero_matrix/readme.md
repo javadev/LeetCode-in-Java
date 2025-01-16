@@ -12,7 +12,7 @@ A **zero matrix** is a matrix with all cells equal to `0`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/11/28/matrix.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1284_minimum_number_of_flips_to_convert_binary_matrix_to_zero_matrix/matrix.png)
 
 **Input:** mat = [[0,0],[0,1]]
 

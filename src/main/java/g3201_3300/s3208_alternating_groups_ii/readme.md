@@ -21,11 +21,11 @@ Return the number of **alternating** groups.
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/06/19/screenshot-2024-05-28-183519.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3208_alternating_groups_ii/screenshot-2024-05-28-183519.png)**
 
 Alternating groups:
 
-![](https://assets.leetcode.com/uploads/2024/05/28/screenshot-2024-05-28-182448.png)![](https://assets.leetcode.com/uploads/2024/05/28/screenshot-2024-05-28-182844.png)![](https://assets.leetcode.com/uploads/2024/05/28/screenshot-2024-05-28-183057.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3208_alternating_groups_ii/screenshot-2024-05-28-182448.png)![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3208_alternating_groups_ii/screenshot-2024-05-28-182844.png)![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3208_alternating_groups_ii/screenshot-2024-05-28-183057.png)
 
 **Example 2:**
 
@@ -35,11 +35,11 @@ Alternating groups:
 
 **Explanation:**
 
-**![](https://assets.leetcode.com/uploads/2024/06/19/screenshot-2024-05-28-183907.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3208_alternating_groups_ii/screenshot-2024-05-28-183907.png)**
 
 Alternating groups:
 
-![](https://assets.leetcode.com/uploads/2024/06/19/screenshot-2024-05-28-184128.png)![](https://assets.leetcode.com/uploads/2024/06/19/screenshot-2024-05-28-184240.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3208_alternating_groups_ii/screenshot-2024-05-28-184128.png)![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3208_alternating_groups_ii/screenshot-2024-05-28-184240.png)
 
 **Example 3:**
 
@@ -49,7 +49,7 @@ Alternating groups:
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/06/19/screenshot-2024-05-28-184516.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3208_alternating_groups_ii/screenshot-2024-05-28-184516.png)
 
 **Constraints:**
 

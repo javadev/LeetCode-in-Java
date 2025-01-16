@@ -15,7 +15,7 @@ The adding rule is:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/15/addrow-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0623_add_one_row_to_tree/addrow-tree.jpg)
 
 **Input:** root = [4,2,6,3,1,5], val = 1, depth = 2
 
@@ -23,7 +23,7 @@ The adding rule is:
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/03/11/add2-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0623_add_one_row_to_tree/add2-tree.jpg)
 
 **Input:** root = [4,2,null,3,1], val = 1, depth = 3
 

@@ -19,7 +19,7 @@ Return _the team that will be the **champion** of the tournament if there is a *
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/10/19/graph-3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2901_3000/s2924_find_champion_ii/graph-3.png)
 
 **Input:** n = 3, edges = [[0,1],[1,2]]
 
@@ -29,7 +29,7 @@ Return _the team that will be the **champion** of the tournament if there is a *
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/10/19/graph-4.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2901_3000/s2924_find_champion_ii/graph-4.png)
 
 **Input:** n = 4, edges = [[0,2],[1,3],[1,2]]
 

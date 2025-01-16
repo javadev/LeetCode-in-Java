@@ -19,7 +19,7 @@ Return `true` _if there exists a **valid parentheses string path** in the grid._
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/03/15/example1drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2267_check_if_there_is_a_valid_parentheses_string_path/example1drawio.png)
 
 **Input:** grid = [["(","(","("],[")","(",")"],["(","(",")"],["(","(",")"]]
 
@@ -35,7 +35,7 @@ Note that there may be other valid parentheses string paths.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/03/15/example2drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2267_check_if_there_is_a_valid_parentheses_string_path/example2drawio.png)
 
 **Input:** grid = [[")",")"],["(","("]]
 

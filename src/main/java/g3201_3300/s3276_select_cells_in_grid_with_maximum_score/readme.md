@@ -21,7 +21,7 @@ Return the **maximum** score you can achieve.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/07/29/grid1drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3276_select_cells_in_grid_with_maximum_score/grid1drawio.png)
 
 We can select the cells with values 1, 3, and 4 that are colored above.
 
@@ -33,7 +33,7 @@ We can select the cells with values 1, 3, and 4 that are colored above.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/07/29/grid8_8drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3276_select_cells_in_grid_with_maximum_score/grid8_8drawio.png)
 
 We can select the cells with values 7 and 8 that are colored above.
 

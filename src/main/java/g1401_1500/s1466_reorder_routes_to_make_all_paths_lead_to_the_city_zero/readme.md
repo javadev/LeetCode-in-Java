@@ -14,7 +14,7 @@ It's **guaranteed** that each city can reach city `0` after reorder.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/05/13/sample_1_1819.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero/sample_1_1819.png)
 
 **Input:** n = 6, connections = [[0,1],[1,3],[2,3],[4,0],[4,5]]
 
@@ -24,7 +24,7 @@ It's **guaranteed** that each city can reach city `0` after reorder.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/05/13/sample_2_1819.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1466_reorder_routes_to_make_all_paths_lead_to_the_city_zero/sample_2_1819.png)
 
 **Input:** n = 5, connections = [[1,0],[1,2],[3,2],[3,4]]
 

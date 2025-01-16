@@ -8,7 +8,7 @@ From each cell, you can either move in four directions: left, right, up, or down
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/05/grid1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0329_longest_increasing_path_in_a_matrix/grid1.jpg)
 
 **Input:** matrix = [[9,9,4],[6,6,8],[2,1,1]]
 
@@ -18,7 +18,7 @@ From each cell, you can either move in four directions: left, right, up, or down
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/27/tmp-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0329_longest_increasing_path_in_a_matrix/tmp-grid.jpg)
 
 **Input:** matrix = [[3,4,5],[3,2,6],[2,2,1]]
 

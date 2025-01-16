@@ -12,7 +12,7 @@ Return `true` _if so, or_ `false` _otherwise_.
 
 **Example 1:**
 
-![example-1](https://assets.leetcode.com/uploads/2021/09/30/example1.png)
+![example-1](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2042_check_if_numbers_are_ascending_in_a_sentence/example1.png)
 
 **Input:** s = "1 box has 3 blue 4 red 6 green and 12 yellow marbles"
 
@@ -30,7 +30,7 @@ Return `true` _if so, or_ `false` _otherwise_.
 
 **Example 3:**
 
-![example-3](https://assets.leetcode.com/uploads/2021/09/30/example3.png)
+![example-3](https://leetcode-in-java.github.io/src/main/java/g2001_2100/s2042_check_if_numbers_are_ascending_in_a_sentence/example3.png)
 
 **Input:** s = "sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s"
 

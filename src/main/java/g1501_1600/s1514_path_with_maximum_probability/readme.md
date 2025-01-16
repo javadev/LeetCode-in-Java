@@ -10,7 +10,7 @@ If there is no path from `start` to `end`, **return 0**. Your answer will be acc
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2019/09/20/1558_ex1.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1514_path_with_maximum_probability/1558_ex1.png)**
 
 **Input:** n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.2], start = 0, end = 2
 
@@ -20,7 +20,7 @@ If there is no path from `start` to `end`, **return 0**. Your answer will be acc
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2019/09/20/1558_ex2.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1514_path_with_maximum_probability/1558_ex2.png)**
 
 **Input:** n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.3], start = 0, end = 2
 
@@ -28,7 +28,7 @@ If there is no path from `start` to `end`, **return 0**. Your answer will be acc
 
 **Example 3:**
 
-**![](https://assets.leetcode.com/uploads/2019/09/20/1558_ex3.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1501_1600/s1514_path_with_maximum_probability/1558_ex3.png)**
 
 **Input:** n = 3, edges = [[0,1]], succProb = [0.5], start = 0, end = 2
 

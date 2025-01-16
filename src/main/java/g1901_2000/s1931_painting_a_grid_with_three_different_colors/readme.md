@@ -8,7 +8,7 @@ Return _the number of ways to color the grid with **no two adjacent cells having
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/06/22/colorthegrid.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1931_painting_a_grid_with_three_different_colors/colorthegrid.png)
 
 **Input:** m = 1, n = 1
 
@@ -18,7 +18,7 @@ Return _the number of ways to color the grid with **no two adjacent cells having
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/06/22/copy-of-colorthegrid.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1901_2000/s1931_painting_a_grid_with_three_different_colors/copy-of-colorthegrid.png)
 
 **Input:** m = 1, n = 2
 

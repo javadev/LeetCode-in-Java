@@ -18,7 +18,7 @@ Return the **minimum** number of cells that need to be flipped to make **all** r
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/08/01/image.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3240_minimum_number_of_flips_to_make_binary_grid_palindromic_ii/image.png)
 
 **Example 2:**
 
@@ -28,7 +28,7 @@ Return the **minimum** number of cells that need to be flipped to make **all** r
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/07/08/screenshot-from-2024-07-09-01-37-48.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3240_minimum_number_of_flips_to_make_binary_grid_palindromic_ii/screenshot-from-2024-07-09-01-37-48.png)
 
 **Example 3:**
 
@@ -38,7 +38,7 @@ Return the **minimum** number of cells that need to be flipped to make **all** r
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2024/08/01/screenshot-from-2024-08-01-23-05-26.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3240_minimum_number_of_flips_to_make_binary_grid_palindromic_ii/screenshot-from-2024-08-01-23-05-26.png)
 
 **Constraints:**
 

@@ -8,7 +8,7 @@ You must do it [in place](https://en.wikipedia.org/wiki/In-place_algorithm).
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/08/17/mat1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0073_set_matrix_zeroes/mat1.jpg)
 
 **Input:** matrix = [[1,1,1],[1,0,1],[1,1,1]]
 
@@ -16,7 +16,7 @@ You must do it [in place](https://en.wikipedia.org/wiki/In-place_algorithm).
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/08/17/mat2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0073_set_matrix_zeroes/mat2.jpg)
 
 **Input:** matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
 

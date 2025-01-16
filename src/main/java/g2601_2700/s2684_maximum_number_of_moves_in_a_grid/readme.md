@@ -12,7 +12,7 @@ Return _the **maximum** number of **moves** that you can perform._
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/04/11/yetgriddrawio-10.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2601_2700/s2684_maximum_number_of_moves_in_a_grid/yetgriddrawio-10.png)
 
 **Input:** grid = [[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]
 
@@ -27,7 +27,7 @@ It can be shown that it is the maximum number of moves that can be made.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/04/12/yetgrid4drawio.png) **Input:** grid = [[3,2,4],[2,1,9],[1,1,7]]
+![](https://leetcode-in-java.github.io/src/main/java/g2601_2700/s2684_maximum_number_of_moves_in_a_grid/yetgrid4drawio.png) **Input:** grid = [[3,2,4],[2,1,9],[1,1,7]]
 
 **Output:** 0
 

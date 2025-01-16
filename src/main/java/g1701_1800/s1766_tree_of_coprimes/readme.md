@@ -14,7 +14,7 @@ Return _an array_ `ans` _of size_ `n`, _where_ `ans[i]` _is the closest ancestor
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2021/01/06/untitled-diagram.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1701_1800/s1766_tree_of_coprimes/untitled-diagram.png)**
 
 **Input:** nums = [2,3,3,2], edges = [[0,1],[1,2],[1,3]]
 
@@ -30,7 +30,7 @@ Return _an array_ `ans` _of size_ `n`, _where_ `ans[i]` _is the closest ancestor
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/06/untitled-diagram1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1701_1800/s1766_tree_of_coprimes/untitled-diagram1.png)
 
 **Input:** nums = [5,6,10,2,3,6,15], edges = [[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]]
 

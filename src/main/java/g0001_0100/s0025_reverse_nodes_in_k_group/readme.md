@@ -10,7 +10,7 @@ You may not alter the values in the list's nodes, only nodes themselves may be c
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/03/reverse_ex1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0025_reverse_nodes_in_k_group/reverse_ex1.jpg)
 
 **Input:** head = [1,2,3,4,5], k = 2
 
@@ -18,7 +18,7 @@ You may not alter the values in the list's nodes, only nodes themselves may be c
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/03/reverse_ex2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0025_reverse_nodes_in_k_group/reverse_ex2.jpg)
 
 **Input:** head = [1,2,3,4,5], k = 3
 

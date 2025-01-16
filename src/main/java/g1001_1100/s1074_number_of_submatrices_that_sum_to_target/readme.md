@@ -10,7 +10,7 @@ Two submatrices `(x1, y1, x2, y2)` and `(x1', y1', x2', y2')` are different if t
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/02/mate1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g1001_1100/s1074_number_of_submatrices_that_sum_to_target/mate1.jpg)
 
 **Input:** matrix = [[0,1,0],[1,1,1],[0,1,0]], target = 0
 

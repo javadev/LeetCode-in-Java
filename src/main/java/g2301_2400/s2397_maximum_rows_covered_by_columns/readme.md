@@ -15,7 +15,7 @@ Return _the **maximum** number of rows that can be **covered** by a set of_ `num
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/07/14/rowscovered.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2301_2400/s2397_maximum_rows_covered_by_columns/rowscovered.png)
 
 **Input:** matrix = [[0,0,0],[1,0,1],[0,1,1],[0,0,1]], numSelect = 2
 
@@ -39,7 +39,7 @@ Note that s = {1, 2} will also cover 3 rows, but it can be shown that no more th
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/07/14/rowscovered2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2301_2400/s2397_maximum_rows_covered_by_columns/rowscovered2.png)
 
 **Input:** matrix = [[1],[0]], numSelect = 1
 

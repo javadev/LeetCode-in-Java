@@ -24,7 +24,7 @@ Remember that one minute consists of `60` seconds.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/30/1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2162_minimum_cost_to_set_cooking_time/1.png)
 
 **Input:** startAt = 1, moveCost = 2, pushCost = 1, targetSeconds = 600
 
@@ -52,7 +52,7 @@ The cost is: 2 + 1 + 2 + 1 + 2 + 1 = 9.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/30/2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2162_minimum_cost_to_set_cooking_time/2.png)
 
 **Input:** startAt = 0, moveCost = 1, pushCost = 2, targetSeconds = 76
 

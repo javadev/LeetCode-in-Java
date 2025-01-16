@@ -4,7 +4,7 @@ Medium
 
 One way to serialize a binary tree is to use **preorder traversal**. When we encounter a non-null node, we record the node's value. If it is a null node, we record using a sentinel value such as `'#'`.
 
-![](https://assets.leetcode.com/uploads/2021/03/12/pre-tree.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0331_verify_preorder_serialization_of_a_binary_tree/pre-tree.jpg)
 
 For example, the above binary tree can be serialized to the string `"9,3,4,#,#,1,#,#,2,#,6,#,#"`, where `'#'` represents a null node.
 

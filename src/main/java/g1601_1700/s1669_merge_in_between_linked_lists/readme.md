@@ -8,13 +8,13 @@ Remove `list1`'s nodes from the <code>a<sup>th</sup></code> node to the <code>b<
 
 The blue edges and nodes in the following figure indicate the result:
 
-![](https://assets.leetcode.com/uploads/2020/11/05/fig1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1669_merge_in_between_linked_lists/fig1.png)
 
 _Build the result list and return its head._
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/05/merge_linked_list_ex1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1669_merge_in_between_linked_lists/merge_linked_list_ex1.png)
 
 **Input:** list1 = [0,1,2,3,4,5], a = 3, b = 4, list2 = [1000000,1000001,1000002]
 
@@ -26,7 +26,7 @@ The blue edges and nodes in the above figure indicate the result.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/11/05/merge_linked_list_ex2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1601_1700/s1669_merge_in_between_linked_lists/merge_linked_list_ex2.png)
 
 **Input:** list1 = [0,1,2,3,4,5,6], a = 2, b = 5, list2 = [1000000,1000001,1000002,1000003,1000004]
 

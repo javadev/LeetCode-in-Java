@@ -9,7 +9,7 @@ Given the `root` of a binary tree, flatten the tree into a "linked list":
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/14/flaten.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0114_flatten_binary_tree_to_linked_list/flaten.jpg)
 
 **Input:** root = [1,2,5,3,4,null,6]
 

@@ -15,7 +15,7 @@ Return _the **minimum** number of increments you need to make the cost of paths 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/04/04/binaryytreeedrawio-4.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2601_2700/s2673_make_costs_of_paths_equal_in_a_binary_tree/binaryytreeedrawio-4.png)
 
 **Input:** n = 7, cost = [1,5,2,2,3,3,1]
 
@@ -33,7 +33,7 @@ It can be shown that this is the minimum answer we can achieve.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/04/04/binaryytreee2drawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2601_2700/s2673_make_costs_of_paths_equal_in_a_binary_tree/binaryytreee2drawio.png)
 
 **Input:** n = 3, cost = [5,3,3]
 

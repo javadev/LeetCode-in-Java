@@ -15,7 +15,7 @@ Return _the resulting array_ `answer`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/19/yetgriddrawio.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2503_maximum_number_of_points_from_grid_queries/yetgriddrawio.png)
 
 **Input:** grid = [[1,2,3],[2,5,7],[3,5,1]], queries = [5,6,2]
 
@@ -25,7 +25,7 @@ Return _the resulting array_ `answer`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/10/20/yetgriddrawio-2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2501_2600/s2503_maximum_number_of_points_from_grid_queries/yetgriddrawio-2.png)
 
 **Input:** grid = [[5,2,1],[1,1,2]], queries = [3]
 

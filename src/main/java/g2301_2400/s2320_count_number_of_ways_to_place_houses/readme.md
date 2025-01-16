@@ -28,7 +28,7 @@ Possible arrangements:
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/05/12/arrangements.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2301_2400/s2320_count_number_of_ways_to_place_houses/arrangements.png)
 
 **Input:** n = 2
 

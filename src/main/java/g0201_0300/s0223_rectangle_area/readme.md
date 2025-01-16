@@ -10,7 +10,7 @@ The second rectangle is defined by its **bottom-left** corner `(bx1, by1)` and i
 
 **Example 1:**
 
-![Rectangle Area](https://assets.leetcode.com/uploads/2021/05/08/rectangle-plane.png)
+![Rectangle Area](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0223_rectangle_area/rectangle-plane.png)
 
 **Input:** ax1 = -3, ay1 = 0, ax2 = 3, ay2 = 4, bx1 = 0, by1 = -1, bx2 = 9, by2 = 2
 

@@ -8,7 +8,7 @@ A **debounced** function is a function whose execution is delayed by `t` millise
 
 For example, let's say `t = 50ms`, and the function was called at `30ms`, `60ms`, and `100ms`. The first 2 function calls would be cancelled, and the 3rd function call would be executed at `150ms`. If instead `t = 35ms`, The 1st call would be cancelled, the 2nd would be executed at `95ms`, and the 3rd would be executed at `135ms`.
 
-![Debounce Schematic](https://assets.leetcode.com/uploads/2023/04/08/screen-shot-2023-04-08-at-11048-pm.png)
+![Debounce Schematic](https://leetcode-in-java.github.io/src/main/java/g2601_2700/s2627_debounce/screen-shot-2023-04-08-at-11048-pm.png)
 
 The above diagram shows how debounce will transform events. Each rectangle represents 100ms and the debounce time is 400ms. Each color represents a different set of inputs.
 

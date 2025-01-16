@@ -12,7 +12,7 @@ Return _the total surface area of the resulting shapes_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/01/08/tmp-grid2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0892_surface_area_of_3d_shapes/tmp-grid2.jpg)
 
 **Input:** grid = [[1,2],[3,4]]
 
@@ -20,7 +20,7 @@ Return _the total surface area of the resulting shapes_.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/01/08/tmp-grid4.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0892_surface_area_of_3d_shapes/tmp-grid4.jpg)
 
 **Input:** grid = [[1,1,1],[1,0,1],[1,1,1]]
 
@@ -28,7 +28,7 @@ Return _the total surface area of the resulting shapes_.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/01/08/tmp-grid5.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0892_surface_area_of_3d_shapes/tmp-grid5.jpg)
 
 **Input:** grid = [[2,2,2],[2,1,2],[2,2,2]]
 

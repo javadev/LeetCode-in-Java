@@ -8,7 +8,7 @@ You are given a 2D integer array `edges` where each <code>edges[i] = [u<sub>i</s
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/24/star_graph.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1701_1800/s1791_find_center_of_star_graph/star_graph.png)
 
 **Input:** edges = [[1,2],[2,3],[4,2]]
 

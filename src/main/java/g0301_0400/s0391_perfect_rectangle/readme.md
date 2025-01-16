@@ -8,7 +8,7 @@ Return `true` _if all the rectangles together form an exact cover of a rectangul
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0391_perfect_rectangle/perectrec1-plane.jpg)
 
 **Input:** rectangles = [[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]
 
@@ -18,7 +18,7 @@ Return `true` _if all the rectangles together form an exact cover of a rectangul
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/03/27/perfectrec2-plane.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0391_perfect_rectangle/perfectrec2-plane.jpg)
 
 **Input:** rectangles = [[1,1,2,3],[1,3,2,4],[3,1,4,2],[3,2,4,4]]
 
@@ -28,7 +28,7 @@ Return `true` _if all the rectangles together form an exact cover of a rectangul
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/03/27/perfectrec3-plane.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0391_perfect_rectangle/perfectrec3-plane.jpg)
 
 **Input:** rectangles = [[1,1,3,3],[3,1,4,2],[1,3,2,4],[3,2,4,4]]
 
@@ -38,7 +38,7 @@ Return `true` _if all the rectangles together form an exact cover of a rectangul
 
 **Example 4:**
 
-![](https://assets.leetcode.com/uploads/2021/03/27/perfecrrec4-plane.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0301_0400/s0391_perfect_rectangle/perfecrrec4-plane.jpg)
 
 **Input:** rectangles = [[1,1,3,3],[3,1,4,2],[1,3,2,4],[2,2,4,4]]
 

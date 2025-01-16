@@ -10,7 +10,7 @@ Return _an array containing all the **safe nodes** of the graph_. The answer sho
 
 **Example 1:**
 
-![Illustration of graph](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/03/17/picture1.png)
+![Illustration of graph](https://leetcode-in-java.github.io/src/main/java/g0801_0900/s0802_find_eventual_safe_states/picture1.png)
 
 **Input:** graph = [[1,2],[2,3],[5],[0],[5],[],[]]
 

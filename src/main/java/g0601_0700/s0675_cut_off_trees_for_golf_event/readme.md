@@ -18,7 +18,7 @@ You are guaranteed that no two trees have the same height, and there is at least
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/11/26/trees1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0675_cut_off_trees_for_golf_event/trees1.jpg)
 
 **Input:** forest = [[1,2,3],[0,0,4],[7,6,5]]
 
@@ -28,7 +28,7 @@ You are guaranteed that no two trees have the same height, and there is at least
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/11/26/trees2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0601_0700/s0675_cut_off_trees_for_golf_event/trees2.jpg)
 
 **Input:** forest = [[1,2,3],[0,0,0],[7,6,5]]
 

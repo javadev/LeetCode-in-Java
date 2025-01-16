@@ -4,7 +4,7 @@ Easy
 
 You are given `coordinates`, a string that represents the coordinates of a square of the chessboard. Below is a chessboard for your reference.
 
-![](https://assets.leetcode.com/uploads/2021/02/19/screenshot-2021-02-20-at-22159-pm.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1801_1900/s1812_determine_color_of_a_chessboard_square/screenshot-2021-02-20-at-22159-pm.png)
 
 Return `true` _if the square is white, and_ `false` _if the square is black_.
 

@@ -16,7 +16,7 @@ Return _the grid_ `result`.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/12/21/example0corrected.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3001_3100/s3030_find_the_grid_of_region_average/example0corrected.png)
 
 **Input:** image = [[5,6,7,10],[8,9,10,10],[11,12,13,10]], threshold = 3
 
@@ -26,7 +26,7 @@ Return _the grid_ `result`.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/12/21/example1corrected.png)
+![](https://leetcode-in-java.github.io/src/main/java/g3001_3100/s3030_find_the_grid_of_region_average/example1corrected.png)
 
 **Input:** image = [[10,20,30],[15,25,35],[20,30,40],[25,35,45]], threshold = 12
 

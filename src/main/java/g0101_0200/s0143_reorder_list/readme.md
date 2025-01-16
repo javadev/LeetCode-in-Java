@@ -14,7 +14,7 @@ You may not modify the values in the list's nodes. Only nodes themselves may be 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/04/reorder1linked-list.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0143_reorder_list/reorder1linked-list.jpg)
 
 **Input:** head = [1,2,3,4]
 
@@ -22,7 +22,7 @@ You may not modify the values in the list's nodes. Only nodes themselves may be 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/03/09/reorder2-linked-list.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0101_0200/s0143_reorder_list/reorder2-linked-list.jpg)
 
 **Input:** head = [1,2,3,4,5]
 

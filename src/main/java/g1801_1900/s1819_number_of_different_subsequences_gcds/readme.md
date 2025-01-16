@@ -16,7 +16,7 @@ Return _the **number** of **different** GCDs among all **non-empty** subsequence
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/03/17/image-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1801_1900/s1819_number_of_different_subsequences_gcds/image-1.png)
 
 **Input:** nums = [6,10,3]
 

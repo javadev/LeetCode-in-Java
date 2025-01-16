@@ -15,7 +15,7 @@ Return _the answer after performing the operations described above_.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/10/19/q1ex1.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2500_delete_greatest_value_in_each_row/q1ex1.jpg)
 
 **Input:** grid = [[1,2,4],[3,3,1]]
 
@@ -33,7 +33,7 @@ The final answer = 4 + 3 + 1 = 8.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/10/19/q1ex2.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g2401_2500/s2500_delete_greatest_value_in_each_row/q1ex2.jpg)
 
 **Input:** grid = [[10]]
 

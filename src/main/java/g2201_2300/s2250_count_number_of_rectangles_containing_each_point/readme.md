@@ -12,7 +12,7 @@ The <code>i<sup>th</sup></code> rectangle **contains** the <code>j<sup>th</sup><
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2022/03/02/example1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2250_count_number_of_rectangles_containing_each_point/example1.png)
 
 **Input:** rectangles = [[1,2],[2,3],[2,5]], points = [[2,1],[1,4]]
 
@@ -34,7 +34,7 @@ Therefore, we return [2, 1].
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2022/03/02/example2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2201_2300/s2250_count_number_of_rectangles_containing_each_point/example2.png)
 
 **Input:** rectangles = [[1,1],[2,2],[3,3]], points = [[1,3],[1,1]]
 

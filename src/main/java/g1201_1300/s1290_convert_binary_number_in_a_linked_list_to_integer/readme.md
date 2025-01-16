@@ -8,7 +8,7 @@ Return the _decimal value_ of the number in the linked list.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/12/05/graph-1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1201_1300/s1290_convert_binary_number_in_a_linked_list_to_integer/graph-1.png)
 
 **Input:** head = [1,0,1]
 

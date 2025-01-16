@@ -13,7 +13,7 @@ Given an integer array `slices` that represent the sizes of the pizza slices in 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/02/18/sample_3_1723.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1388_pizza_with_3n_slices/sample_3_1723.png)
 
 **Input:** slices = [1,2,3,4,5,6]
 
@@ -23,7 +23,7 @@ Given an integer array `slices` that represent the sizes of the pizza slices in 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/02/18/sample_4_1723.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1388_pizza_with_3n_slices/sample_4_1723.png)
 
 **Input:** slices = [8,9,8,6,1,1]
 

@@ -8,7 +8,7 @@ According to the [definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2018/12/14/binarytree.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0236_lowest_common_ancestor_of_a_binary_tree/binarytree.png)
 
 **Input:** root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
 
@@ -18,7 +18,7 @@ According to the [definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2018/12/14/binarytree.png)
+![](https://leetcode-in-java.github.io/src/main/java/g0201_0300/s0236_lowest_common_ancestor_of_a_binary_tree/binarytree.png)
 
 **Input:** root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
 

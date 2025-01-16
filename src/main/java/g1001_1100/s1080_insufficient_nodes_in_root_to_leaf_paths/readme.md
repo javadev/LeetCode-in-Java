@@ -10,7 +10,7 @@ A **leaf** is a node with no children.
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2019/06/05/insufficient-11.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1001_1100/s1080_insufficient_nodes_in_root_to_leaf_paths/insufficient-11.png)
 
 **Input:** root = [1,2,3,4,-99,-99,7,8,9,-99,-99,12,13,-99,14], limit = 1
 
@@ -18,7 +18,7 @@ A **leaf** is a node with no children.
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2019/06/05/insufficient-3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1001_1100/s1080_insufficient_nodes_in_root_to_leaf_paths/insufficient-3.png)
 
 **Input:** root = [5,4,8,11,null,17,4,7,1,null,null,5,3], limit = 22
 
@@ -26,7 +26,7 @@ A **leaf** is a node with no children.
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2019/06/11/screen-shot-2019-06-11-at-83301-pm.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1001_1100/s1080_insufficient_nodes_in_root_to_leaf_paths/screen-shot-2019-06-11-at-83301-pm.png)
 
 **Input:** root = [1,2,-3,-5,null,4,null], limit = -1
 

@@ -15,7 +15,7 @@ An **interleaving** of two strings `s` and `t` is a configuration where they are
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/02/interleave.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0001_0100/s0097_interleaving_string/interleave.jpg)
 
 **Input:** s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac"
 

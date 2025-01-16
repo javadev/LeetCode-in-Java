@@ -15,7 +15,7 @@ Return _an array_ `answer` _of length_ `m` _where_ `answer[i]` _is **the number 
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/12/09/1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2120_execution_of_all_suffix_instructions_staying_in_a_grid/1.png)
 
 **Input:** n = 3, startPos = [0,1], s = "RRDDLU"
 
@@ -37,7 +37,7 @@ Return _an array_ `answer` _of length_ `m` _where_ `answer[i]` _is **the number 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/12/09/2.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2120_execution_of_all_suffix_instructions_staying_in_a_grid/2.png)
 
 **Input:** n = 2, startPos = [1,1], s = "LURD"
 
@@ -55,7 +55,7 @@ Return _an array_ `answer` _of length_ `m` _where_ `answer[i]` _is **the number 
 
 **Example 3:**
 
-![](https://assets.leetcode.com/uploads/2021/12/09/3.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2101_2200/s2120_execution_of_all_suffix_instructions_staying_in_a_grid/3.png)
 
 **Input:** n = 1, startPos = [0,0], s = "LRUD"
 

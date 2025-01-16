@@ -12,7 +12,7 @@ Return _the minimum number of taps_ that should be open to water the whole garde
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/01/16/1685_example_1.png)
+![](https://leetcode-in-java.github.io/src/main/java/g1301_1400/s1326_minimum_number_of_taps_to_open_to_water_a_garden/1685_example_1.png)
 
 **Input:** n = 5, ranges = [3,4,1,1,0,0]
 

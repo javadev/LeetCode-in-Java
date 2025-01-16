@@ -8,7 +8,7 @@ Return the number of **good** nodes in the binary tree.
 
 **Example 1:**
 
-**![](https://assets.leetcode.com/uploads/2020/04/02/test_sample_1.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1448_count_good_nodes_in_binary_tree/test_sample_1.png)**
 
 **Input:** root = [3,1,4,3,null,1,5]
 
@@ -26,7 +26,7 @@ Node 3 -> (3,1,3) is the maximum value in the path.
 
 **Example 2:**
 
-**![](https://assets.leetcode.com/uploads/2020/04/02/test_sample_2.png)**
+**![](https://leetcode-in-java.github.io/src/main/java/g1401_1500/s1448_count_good_nodes_in_binary_tree/test_sample_2.png)**
 
 **Input:** root = [3,3,null,4,2]
 

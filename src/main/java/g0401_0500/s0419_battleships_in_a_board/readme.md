@@ -8,7 +8,7 @@ Given an `m x n` matrix `board` where each cell is a battleship `'X'` or empty `
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/04/10/battelship-grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0401_0500/s0419_battleships_in_a_board/battelship-grid.jpg)
 
 **Input:** board = [["X",".",".","X"],[".",".",".","X"],[".",".",".","X"]]
 

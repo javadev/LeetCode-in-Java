@@ -10,7 +10,7 @@ A cycle is a path that starts and ends at the same node, and each edge in the pa
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2023/01/04/cropped.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2601_2700/s2608_shortest_cycle_in_a_graph/cropped.png)
 
 **Input:** n = 7, edges = [[0,1],[1,2],[2,0],[3,4],[4,5],[5,6],[6,3]]
 
@@ -20,7 +20,7 @@ A cycle is a path that starts and ends at the same node, and each edge in the pa
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2023/01/04/croppedagin.png)
+![](https://leetcode-in-java.github.io/src/main/java/g2601_2700/s2608_shortest_cycle_in_a_graph/croppedagin.png)
 
 **Input:** n = 4, edges = [[0,1],[0,2]]
 

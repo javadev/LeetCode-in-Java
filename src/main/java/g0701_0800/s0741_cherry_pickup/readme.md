@@ -17,7 +17,7 @@ Return _the maximum number of cherries you can collect by following the rules be
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/12/14/grid.jpg)
+![](https://leetcode-in-java.github.io/src/main/java/g0701_0800/s0741_cherry_pickup/grid.jpg)
 
 **Input:** grid = [[0,1,-1],[1,0,-1],[1,1,1]]
 
