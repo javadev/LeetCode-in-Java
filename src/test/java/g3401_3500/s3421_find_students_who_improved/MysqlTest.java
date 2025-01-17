@@ -20,22 +20,21 @@ import org.zapodot.junit.db.common.CompatibilityMode;
 @EmbeddedDatabaseTest(
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
-                """
-    CREATE TABLE Scores (
-    student_id INT,
-    subject VARCHAR(50),
-    score INT,
-    exam_date VARCHAR(10)
-);
-insert into Scores (student_id, subject, score, exam_date) values ('101', 'Math', '70', '15-01-2023');
-insert into Scores (student_id, subject, score, exam_date) values ('101', 'Math', '85', '15-02-2023');
-insert into Scores (student_id, subject, score, exam_date) values ('101', 'Physics', '65', '15-01-2023');
-insert into Scores (student_id, subject, score, exam_date) values ('101', 'Physics', '60', '15-02-2023');
-insert into Scores (student_id, subject, score, exam_date) values ('102', 'Math', '80', '15-01-2023');
-insert into Scores (student_id, subject, score, exam_date) values ('102', 'Math', '85', '15-02-2023');
-insert into Scores (student_id, subject, score, exam_date) values ('103', 'Math', '90', '15-01-2023');
-insert into Scores (student_id, subject, score, exam_date) values ('104', 'Physics', '75', '15-01-2023');
-insert into Scores (student_id, subject, score, exam_date) values ('104', 'Physics', '85', '15-02-2023');""")
+                "    CREATE TABLE Scores (\n"
+                        + "    student_id INT,\n"
+                        + "    subject VARCHAR(50),\n"
+                        + "    score INT,\n"
+                        + "    exam_date VARCHAR(10)\n"
+                        + ");\n"
+                        + "insert into Scores (student_id, subject, score, exam_date) values ('101', 'Math', '70', '15-01-2023');\n"
+                        + "insert into Scores (student_id, subject, score, exam_date) values ('101', 'Math', '85', '15-02-2023');\n"
+                        + "insert into Scores (student_id, subject, score, exam_date) values ('101', 'Physics', '65', '15-01-2023');\n"
+                        + "insert into Scores (student_id, subject, score, exam_date) values ('101', 'Physics', '60', '15-02-2023');\n"
+                        + "insert into Scores (student_id, subject, score, exam_date) values ('102', 'Math', '80', '15-01-2023');\n"
+                        + "insert into Scores (student_id, subject, score, exam_date) values ('102', 'Math', '85', '15-02-2023');\n"
+                        + "insert into Scores (student_id, subject, score, exam_date) values ('103', 'Math', '90', '15-01-2023');\n"
+                        + "insert into Scores (student_id, subject, score, exam_date) values ('104', 'Physics', '75', '15-01-2023');\n"
+                        + "insert into Scores (student_id, subject, score, exam_date) values ('104', 'Physics', '85', '15-02-2023');")
 class MysqlTest {
     @Test
     void testScript(@EmbeddedDatabase DataSource dataSource)
