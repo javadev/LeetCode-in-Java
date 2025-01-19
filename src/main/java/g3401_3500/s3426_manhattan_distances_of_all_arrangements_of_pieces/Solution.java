@@ -28,7 +28,7 @@ public class Solution {
     public int distanceSum(int m, int n, int k) {
         long res = 0;
         long mod = 1000000007;
-        long base = comb((long) m * n - 2, k - 2, mod);
+        long base = comb((long) m * n - 2, k - 2L, mod);
         for (int d = 1; d < n; ++d) {
             res = (res + (long) d * (n - d) % mod * m % mod * m % mod) % mod;
         }
