@@ -24,7 +24,9 @@ public class Solution {
             adj[i] = new ArrayList<>();
         }
         for (int[] e : edges) {
-            int u = e[0], v = e[1], w = e[2];
+            int u = e[0];
+            int v = e[1];
+            int w = e[2];
             adj[u].add(new int[] {v, w});
             adj[v].add(new int[] {u, w});
         }
@@ -49,8 +51,11 @@ public class Solution {
     private void buildDist(int u, int parent, int currDist) {
         dist[u] = currDist;
         for (int[] edge : adj[u]) {
-            int v = edge[0], w = edge[1];
-            if (v == parent) continue;
+            int v = edge[0];
+            int w = edge[1];
+            if (v == parent) {
+                continue;
+            }
             buildDist(v, u, currDist + w);
         }
     }
@@ -78,7 +83,9 @@ public class Solution {
         }
         for (int[] edge : adj[u]) {
             int v = edge[0];
-            if (v == parent) continue;
+            if (v == parent) {
+                continue;
+            }
             dfs(v, u);
         }
         pathStack.remove(pathStack.size() - 1);
