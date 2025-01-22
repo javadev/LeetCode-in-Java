@@ -14,33 +14,12 @@ Return the total sum of all elements from the subarray defined for each index in
 
 **Explanation:**
 
-i
-
-Subarray
-
-Sum
-
-0
-
-`nums[0] = [2]`
-
-2
-
-1
-
-`nums[0 ... 1] = [2, 3]`
-
-5
-
-2
-
-`nums[1 ... 2] = [3, 1]`
-
-4
-
-**Total Sum**
-
-11
+| i   | Subarray                     | Sum |
+|-----|------------------------------|-----|
+| 0   | `nums[0] = [2]`              | 2   |
+| 1   | `nums[0 ... 1] = [2, 3]`     | 5   |
+| 2   | `nums[1 ... 2] = [3, 1]`     | 4   |
+| **Total Sum** |                      | 11  |
 
 The total sum is 11. Hence, 11 is the output.
 
@@ -52,40 +31,17 @@ The total sum is 11. Hence, 11 is the output.
 
 **Explanation:**
 
-i
+Here's the HTML table converted to Markdown:
 
-Subarray
+| i   | Subarray                     | Sum |
+|-----|------------------------------|-----|
+| 0   | `nums[0] = [3]`              | 3   |
+| 1   | `nums[0 ... 1] = [3, 1]`     | 4   |
+| 2   | `nums[1 ... 2] = [1, 1]`     | 2   |
+| 3   | `nums[1 ... 3] = [1, 1, 2]`  | 4   |
+| **Total Sum** |                      | 13  |
 
-Sum
-
-0
-
-`nums[0] = [3]`
-
-3
-
-1
-
-`nums[0 ... 1] = [3, 1]`
-
-4
-
-2
-
-`nums[1 ... 2] = [1, 1]`
-
-2
-
-3
-
-`nums[1 ... 3] = [1, 1, 2]`
-
-4
-
-**Total Sum**
-
-13
-
+This Markdown table replicates the structure and content of the original HTML table.
 The total sum is 13. Hence, 13 is the output.
 
 **Constraints:**
