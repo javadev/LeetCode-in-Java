@@ -47,9 +47,6 @@ public class Solution {
     }
 
     private long comb(int n, int r) {
-        if (r < 0 || r > n) {
-            return 0;
-        }
         return fact[n] * invFact[r] % MOD * invFact[n - r] % MOD;
     }
 
