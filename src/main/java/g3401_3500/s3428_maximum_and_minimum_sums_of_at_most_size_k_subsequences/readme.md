@@ -20,65 +20,15 @@ Since the answer may be very large, return it **modulo** <code>10<sup>9</sup> + 
 
 The subsequences of `nums` with at most 2 elements are:
 
-**Subsequence**
-
-Minimum
-
-Maximum
-
-Sum
-
-`[1]`
-
-1
-
-1
-
-2
-
-`[2]`
-
-2
-
-2
-
-4
-
-`[3]`
-
-3
-
-3
-
-6
-
-`[1, 2]`
-
-1
-
-2
-
-3
-
-`[1, 3]`
-
-1
-
-3
-
-4
-
-`[2, 3]`
-
-2
-
-3
-
-5
-
-**Final Total**
-
-24
+| **Subsequence** | Minimum | Maximum | Sum  |
+|-----------------|---------|---------|------|
+| `[1]`           | 1       | 1       | 2    |
+| `[2]`           | 2       | 2       | 4    |
+| `[3]`           | 3       | 3       | 6    |
+| `[1, 2]`        | 1       | 2       | 3    |
+| `[1, 3]`        | 1       | 3       | 4    |
+| `[2, 3]`        | 2       | 3       | 5    |
+| **Final Total** |         |         | 24   |
 
 The output would be 24.
 
