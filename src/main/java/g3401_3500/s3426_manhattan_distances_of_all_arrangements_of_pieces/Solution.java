@@ -1,6 +1,6 @@
 package g3401_3500.s3426_manhattan_distances_of_all_arrangements_of_pieces;
 
-// #Hard #2025_01_19_Time_20_(100.00%)_Space_41.18_(100.00%)
+// #Hard #Math #Combinatorics #2025_01_22_Time_20_(87.92%)_Space_40.82_(98.07%)
 
 public class Solution {
     private long comb(long a, long b, long mod) {

@@ -1,6 +1,6 @@
 package g3401_3500.s3424_minimum_cost_to_make_arrays_identical;
 
-// #Medium #2025_01_19_Time_62_(_%)_Space_57.38_(_%)
+// #Medium #Array #Sorting #Greedy #2025_01_22_Time_60_(98.08%)_Space_57.68_(39.04%)
 
 import java.util.Arrays;
 
