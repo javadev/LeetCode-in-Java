@@ -37,7 +37,7 @@ public class Solution {
                 ans += (long) num * l * r;
             } else {
                 long cnt = (long) (k - r + 1) * r + (long) (l + r - k - 1) * (r + k - l) / 2;
-                ans += (long) num * cnt;
+                ans += num * cnt;
             }
         }
         return ans;
