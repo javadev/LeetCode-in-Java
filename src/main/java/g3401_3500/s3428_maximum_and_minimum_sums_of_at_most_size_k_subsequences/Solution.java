@@ -7,7 +7,8 @@ import java.util.Arrays;
 
 public class Solution {
     private static final int MOD = (int) 1e9 + 7;
-    private static long[] fact, invFact;
+    private long[] fact;
+    private long[] invFact;
 
     public int minMaxSums(int[] nums, int k) {
         int n = nums.length;
@@ -46,14 +47,18 @@ public class Solution {
     }
 
     private long comb(int n, int r) {
-        if (r < 0 || r > n) return 0;
+        if (r < 0 || r > n) {
+            return 0;
+        }
         return fact[n] * invFact[r] % MOD * invFact[n - r] % MOD;
     }
 
     private long pow(long base, int exp) {
         long ans = 1L;
         while (exp > 0) {
-            if ((exp & 1) == 1) ans = (ans * base) % MOD;
+            if ((exp & 1) == 1) {
+                ans = (ans * base) % MOD;
+            }
             base = (base * base) % MOD;
             exp >>= 1;
         }

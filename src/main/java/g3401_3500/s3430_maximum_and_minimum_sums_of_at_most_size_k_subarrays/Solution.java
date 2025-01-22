@@ -13,7 +13,9 @@ public class Solution {
 
     private long solve(int[] nums, int k) {
         int n = nums.length;
-        int[] left = new int[n], right = new int[n], st = new int[n];
+        int[] left = new int[n];
+        int[] right = new int[n];
+        int[] st = new int[n];
         int top = -1;
         for (int i = 0; i < n; i++) {
             int num = nums[i];
@@ -28,7 +30,9 @@ public class Solution {
         }
         long ans = 0;
         for (int i = 0; i < n; i++) {
-            int num = nums[i], l = Math.min(i - left[i], k), r = Math.min(right[i] - i, k);
+            int num = nums[i];
+            int l = Math.min(i - left[i], k);
+            int r = Math.min(right[i] - i, k);
             if (l + r - 1 <= k) {
                 ans += (long) num * l * r;
             } else {
