@@ -1,21 +1,27 @@
 package g3401_3500.s3424_minimum_cost_to_make_arrays_identical;
 
-// #Medium #Array #Sorting #Greedy #2025_01_22_Time_60_(98.08%)_Space_57.68_(39.04%)
+// #Medium #Array #Sorting #Greedy #2025_01_23_Time_20_(98.92%)_Space_57.80_(28.30%)
 
 import java.util.Arrays;
 
 public class Solution {
     public long minCost(int[] arr, int[] brr, long k) {
-        long res1 = 0;
-        long res2 = 0;
-        for (int i = 0; i < arr.length; ++i) {
-            res1 += Math.abs(arr[i] - brr[i]);
+        int n = arr.length;
+        long sum1 = 0;
+        long sum2 = 0;
+        for (int i = 0; i < n; i++) {
+            sum1 += Math.abs(arr[i] - brr[i]);
         }
-        Arrays.sort(arr);
-        Arrays.sort(brr);
-        for (int i = 0; i < arr.length; ++i) {
-            res2 += Math.abs(arr[i] - brr[i]);
+        if (k < sum1) {
+            Arrays.sort(arr);
+            Arrays.sort(brr);
+            sum2 = k;
+            for (int i = 0; i < n; i++) {
+                sum2 += Math.abs(arr[i] - brr[i]);
+            }
+        } else {
+            return sum1;
         }
-        return Math.min(res1, res2 + k);
+        return Math.min(sum1, sum2);
     }
 }
