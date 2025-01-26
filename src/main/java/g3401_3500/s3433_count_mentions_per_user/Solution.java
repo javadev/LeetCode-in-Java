@@ -10,10 +10,10 @@ public class Solution {
                 (a, b) -> {
                     int time1 = Integer.parseInt(a.get(1));
                     int time2 = Integer.parseInt(b.get(1));
-                    if (time1 == time2) {
-                        if (a.get(0).equals("OFFLINE") && b.get(0).equals("MESSAGE")) {
-                            return -1;
-                        }
+                    if (time1 == time2
+                            && a.get(0).equals("OFFLINE")
+                            && b.get(0).equals("MESSAGE")) {
+                        return -1;
                     }
                     return Integer.parseInt(a.get(1)) - Integer.parseInt(b.get(1));
                 });
