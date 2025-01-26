@@ -143,10 +143,8 @@ public class Solution {
             ans.add(tansList);
             return ans;
         }
-
         List<Integer> gm = findMinimalSolutions(wtc, tans, bg, ed);
         int minb = gm.stream().mapToInt(Integer::bitCount).min().getAsInt();
-
         List<Integer> ns = new ArrayList<>();
         for (int i = 0; i < 26; i++) {
             if (tans[i] == 1) {
