@@ -63,7 +63,9 @@ public class Solution {
     private void updateBgEdArrays(List<String> wtc, int[] bg, int[] ed) {
         for (String word : wtc) {
             int l = word.charAt(0) - 'a';
-            if (bg[l] == -1) bg[l] = wtc.indexOf(word);
+            if (bg[l] == -1) {
+                bg[l] = wtc.indexOf(word);
+            }
             ed[l] = wtc.indexOf(word);
         }
     }
@@ -135,11 +137,14 @@ public class Solution {
             List<Integer> chk, List<String> wtc, int[] tans, int[] bg, int[] ed, int[] indg) {
         while (!chk.isEmpty()) {
             int u = chk.remove(chk.size() - 1);
-            if (bg[u] == -1) continue;
-
+            if (bg[u] == -1) {
+                continue;
+            }
             for (int j = bg[u]; j <= ed[u]; j++) {
                 int l = wtc.get(j).charAt(1) - 'a';
-                if (tans[l] == 2) continue;
+                if (tans[l] == 2) {
+                    continue;
+                }
                 indg[l]--;
                 if (indg[l] == 0) {
                     chk.add(l);
