@@ -49,10 +49,7 @@ public class Solution {
                 continue;
             }
             int size = Integer.bitCount(s);
-            if (size > best) {
-                continue;
-            }
-            if (!hasCycle(s)) {
+            if (size <= best && !hasCycle(s)) {
                 if (size < best) {
                     best = size;
                     goodSets.clear();
@@ -83,10 +80,8 @@ public class Solution {
     private boolean hasCycle(int mask) {
         int[] color = new int[m];
         for (int i = 0; i < m; i++) {
-            if (((mask >> i) & 1) == 0 && color[i] == 0) {
-                if (dfs(i, color, mask)) {
-                    return true;
-                }
+            if (((mask >> i) & 1) == 0 && color[i] == 0 && dfs(i, color, mask)) {
+                return true;
             }
         }
         return false;
