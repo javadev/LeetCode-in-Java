@@ -1,6 +1,7 @@
 package g0201_0300.s0289_game_of_life;
 
-// #Medium #Array #Matrix #Simulation #2022_07_06_Time_0_ms_(100.00%)_Space_42.9_MB_(10.73%)
+// #Medium #Array #Matrix #Simulation #Top_Interview_150_Matrix
+// #2022_07_06_Time_0_ms_(100.00%)_Space_42.9_MB_(10.73%)
 
 public class Solution {
     public void gameOfLife(int[][] board) {

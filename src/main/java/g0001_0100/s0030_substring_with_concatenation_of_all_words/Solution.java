@@ -1,6 +1,7 @@
 package g0001_0100.s0030_substring_with_concatenation_of_all_words;
 
-// #Hard #String #Hash_Table #Sliding_Window #2023_08_09_Time_1472_ms_(34.43%)_Space_45_MB_(24.98%)
+// #Hard #String #Hash_Table #Sliding_Window #Top_Interview_150_Sliding_Window
+// #2023_08_09_Time_1472_ms_(34.43%)_Space_45_MB_(24.98%)
 
 import java.util.ArrayList;
 import java.util.HashMap;

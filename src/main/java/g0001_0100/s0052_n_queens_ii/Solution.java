@@ -1,6 +1,7 @@
 package g0001_0100.s0052_n_queens_ii;
 
-// #Hard #Backtracking #2023_08_11_Time_1_ms_(96.99%)_Space_39.8_MB_(38.70%)
+// #Hard #Backtracking #Top_Interview_150_Backtracking #Top_Interview_150_Kadane's_Algorithm
+// #2023_08_11_Time_1_ms_(96.99%)_Space_39.8_MB_(38.70%)
 
 public class Solution {
     public int totalNQueens(int n) {

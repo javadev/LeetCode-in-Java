@@ -2,7 +2,8 @@ package g0101_0200.s0155_min_stack;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Stack #Design
 // #Data_Structure_II_Day_14_Stack_Queue #Programming_Skills_II_Day_18 #Level_2_Day_16_Design
-// #Udemy_Design #Big_O_Time_O(1)_Space_O(N) #2024_11_15_Time_4_ms_(96.54%)_Space_44.5_MB_(84.54%)
+// #Udemy_Design #Top_Interview_150_Stack #Big_O_Time_O(1)_Space_O(N)
+// #2024_11_15_Time_4_ms_(96.54%)_Space_44.5_MB_(84.54%)
 
 public class MinStack {
     private static class Node {

@@ -1,7 +1,8 @@
 package g0901_1000.s0918_maximum_sum_circular_subarray;
 
 // #Medium #Array #Dynamic_Programming #Divide_and_Conquer #Queue #Monotonic_Queue
-// #Dynamic_Programming_I_Day_5 #2022_03_29_Time_3_ms_(92.86%)_Space_64.3_MB_(40.27%)
+// #Dynamic_Programming_I_Day_5 #Top_Interview_150_Kadane's_Algorithm
+// #2022_03_29_Time_3_ms_(92.86%)_Space_64.3_MB_(40.27%)
 
 public class Solution {
     private int kadane(int[] nums, int sign) {

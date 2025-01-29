@@ -1,6 +1,6 @@
 package g0301_0400.s0383_ransom_note;
 
-// #Easy #String #Hash_Table #Counting #Data_Structure_I_Day_6_String
+// #Easy #String #Hash_Table #Counting #Data_Structure_I_Day_6_String #Top_Interview_150_Hashmap
 // #2022_07_13_Time_1_ms_(99.97%)_Space_46_MB_(62.86%)
 
 public class Solution {

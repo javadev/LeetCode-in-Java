@@ -1,8 +1,8 @@
 package g0201_0300.s0236_lowest_common_ancestor_of_a_binary_tree;
 
 // #Medium #Top_100_Liked_Questions #Depth_First_Search #Tree #Binary_Tree
-// #Data_Structure_II_Day_18_Tree #Udemy_Tree_Stack_Queue #Big_O_Time_O(n)_Space_O(n)
-// #2024_11_16_Time_6_ms_(100.00%)_Space_44_MB_(98.99%)
+// #Data_Structure_II_Day_18_Tree #Udemy_Tree_Stack_Queue #Top_Interview_150_Binary_Tree_General
+// #Big_O_Time_O(n)_Space_O(n) #2024_11_16_Time_6_ms_(100.00%)_Space_44_MB_(98.99%)
 
 import com_github_leetcode.TreeNode;
 

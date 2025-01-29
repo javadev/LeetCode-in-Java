@@ -1,6 +1,7 @@
 package g0401_0500.s0452_minimum_number_of_arrows_to_burst_balloons;
 
-// #Medium #Array #Sorting #Greedy #2022_07_18_Time_84_ms_(71.26%)_Space_100.7_MB_(21.68%)
+// #Medium #Array #Sorting #Greedy #Top_Interview_150_Intervals
+// #2022_07_18_Time_84_ms_(71.26%)_Space_100.7_MB_(21.68%)
 
 import java.util.Arrays;
 
