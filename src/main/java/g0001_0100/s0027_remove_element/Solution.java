@@ -1,6 +1,7 @@
 package g0001_0100.s0027_remove_element;
 
-// #Easy #Array #Two_Pointers #2023_08_09_Time_0_ms_(100.00%)_Space_40.9_MB_(87.68%)
+// #Easy #Array #Two_Pointers #Top_Interview_150_Array/String
+// #2023_08_09_Time_0_ms_(100.00%)_Space_40.9_MB_(87.68%)
 
 public class Solution {
     public int removeElement(int[] nums, int val) {

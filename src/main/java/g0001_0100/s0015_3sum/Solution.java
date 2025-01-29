@@ -2,7 +2,8 @@ package g0001_0100.s0015_3sum;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #Sorting #Two_Pointers
 // #Data_Structure_II_Day_1_Array #Algorithm_II_Day_3_Two_Pointers #Udemy_Two_Pointers
-// #Big_O_Time_O(n*log(n))_Space_O(n^2) #2024_11_09_Time_29_ms_(72.02%)_Space_52_MB_(33.13%)
+// #Top_Interview_150_Two_Pointers #Big_O_Time_O(n*log(n))_Space_O(n^2)
+// #2024_11_09_Time_29_ms_(72.02%)_Space_52_MB_(33.13%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

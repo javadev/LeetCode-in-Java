@@ -1,7 +1,7 @@
 package g0101_0200.s0112_path_sum;
 
 // #Easy #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Data_Structure_I_Day_12_Tree
-// #2022_06_23_Time_0_ms_(100.00%)_Space_43.8_MB_(36.11%)
+// #Top_Interview_150_Binary_Tree_General #2022_06_23_Time_0_ms_(100.00%)_Space_43.8_MB_(36.11%)
 
 import com_github_leetcode.TreeNode;
 

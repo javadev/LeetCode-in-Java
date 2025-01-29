@@ -1,7 +1,7 @@
 package g0101_0200.s0106_construct_binary_tree_from_inorder_and_postorder_traversal;
 
 // #Medium #Array #Hash_Table #Tree #Binary_Tree #Divide_and_Conquer
-// #2022_06_22_Time_1_ms_(100.00%)_Space_44.7_MB_(28.54%)
+// #Top_Interview_150_Binary_Tree_General #2022_06_22_Time_1_ms_(100.00%)_Space_44.7_MB_(28.54%)
 
 import com_github_leetcode.TreeNode;
 

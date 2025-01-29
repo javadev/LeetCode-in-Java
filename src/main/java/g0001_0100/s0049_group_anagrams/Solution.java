@@ -2,7 +2,8 @@ package g0001_0100.s0049_group_anagrams;
 
 // #Medium #Top_100_Liked_Questions #Top_Interview_Questions #Array #String #Hash_Table #Sorting
 // #Data_Structure_II_Day_8_String #Programming_Skills_II_Day_11 #Udemy_Strings
-// #Big_O_Time_O(n*k_log_k)_Space_O(n) #2024_11_11_Time_6_ms_(97.61%)_Space_47.7_MB_(69.56%)
+// #Top_Interview_150_Hashmap #Big_O_Time_O(n*k_log_k)_Space_O(n)
+// #2024_11_11_Time_6_ms_(97.61%)_Space_47.7_MB_(69.56%)
 
 import java.util.ArrayList;
 import java.util.HashMap;

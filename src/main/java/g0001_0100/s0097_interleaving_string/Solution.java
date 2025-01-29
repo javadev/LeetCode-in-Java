@@ -1,6 +1,7 @@
 package g0001_0100.s0097_interleaving_string;
 
-// #Medium #String #Dynamic_Programming #2022_06_21_Time_2_ms_(88.01%)_Space_42.1_MB_(73.59%)
+// #Medium #String #Dynamic_Programming #Top_Interview_150_Multidimensional_DP
+// #2022_06_21_Time_2_ms_(88.01%)_Space_42.1_MB_(73.59%)
 
 public class Solution {
     public boolean isInterleave(String s1, String s2, String s3) {

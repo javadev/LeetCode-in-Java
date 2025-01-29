@@ -1,7 +1,7 @@
 package g0001_0100.s0088_merge_sorted_array;
 
 // #Easy #Top_Interview_Questions #Array #Sorting #Two_Pointers #Data_Structure_I_Day_2_Array
-// #2022_06_20_Time_0_ms_(100.00%)_Space_42.7_MB_(55.70%)
+// #Top_Interview_150_Array/String #2022_06_20_Time_0_ms_(100.00%)_Space_42.7_MB_(55.70%)
 
 public class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {

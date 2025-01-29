@@ -1,6 +1,6 @@
 package g0201_0300.s0228_summary_ranges;
 
-// #Easy #Array #2022_07_04_Time_0_ms_(100.00%)_Space_42.7_MB_(15.43%)
+// #Easy #Array #Top_Interview_150_Intervals #2022_07_04_Time_0_ms_(100.00%)_Space_42.7_MB_(15.43%)
 
 import java.util.ArrayList;
 import java.util.List;
