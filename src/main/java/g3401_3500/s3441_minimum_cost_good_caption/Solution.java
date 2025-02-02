@@ -59,8 +59,7 @@ public class Solution {
                                         nextIndex,
                                         nextChar,
                                         blockLen,
-                                        n
-                                );
+                                        n);
                         if (cmp > 0) {
                             nextIndex[i] = i + l;
                             nextChar[i] = bestLetter;
