@@ -4,6 +4,7 @@ package g3401_3500.s3445_maximum_difference_between_even_and_odd_frequency_ii;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int maxDifference(String s, int k) {
         int n = s.length();
