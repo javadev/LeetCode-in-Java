@@ -2,6 +2,7 @@ package g3401_3500.s3441_minimum_cost_good_caption;
 
 // #Hard #2025_02_02_Time_48_(100.00%)_Space_56.37_(100.00%)
 
+@SuppressWarnings({"java:S107", "java:S6541"})
 public class Solution {
     private static final int INF = Integer.MAX_VALUE / 2;
 
