@@ -25,4 +25,9 @@ class SolutionTest {
     void minCostGoodCaption4() {
         assertThat(new Solution().minCostGoodCaption("antwfdps"), equalTo("nnnnnppp"));
     }
+
+    @Test
+    void minCostGoodCaption5() {
+        assertThat(new Solution().minCostGoodCaption("qzlhsvlf"), equalTo("qqqlllll"));
+    }
 }
