@@ -2,14 +2,6 @@
 
 Easy
 
-SQL Schema
-
-* * *
-
-Pandas Schema
-
-* * *
-
 Table: `Users`
 
     +-----------------+---------+
