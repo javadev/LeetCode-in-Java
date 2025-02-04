@@ -1,6 +1,6 @@
 package g3401_3500.s3439_reschedule_meetings_for_maximum_free_time_i;
 
-// #Medium #2025_02_02_Time_2_(_%)_Space_63.63_(_%)
+// #Medium #Array #Greedy #Sliding_Window #2025_02_04_Time_2_(83.15%)_Space_63.84_(13.98%)
 
 public class Solution {
     public int maxFreeTime(int eventTime, int k, int[] startTime, int[] endTime) {

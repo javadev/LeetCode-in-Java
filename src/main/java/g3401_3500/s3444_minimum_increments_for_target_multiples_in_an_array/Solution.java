@@ -1,6 +1,7 @@
 package g3401_3500.s3444_minimum_increments_for_target_multiples_in_an_array;
 
-// #Hard #2025_02_02_Time_47_(100.00%)_Space_47.37_(100.00%)
+// #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Bitmask #Number_Theory
+// #2025_02_04_Time_47_(95.85%)_Space_47.31_(56.40%)
 
 public class Solution {
     public int minimumIncrements(int[] nums, int[] target) {

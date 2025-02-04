@@ -1,6 +1,6 @@
 package g3401_3500.s3438_find_valid_pair_of_adjacent_digits_in_string;
 
-// #Easy #2025_02_02_Time_1_(100.00%)_Space_43.02_(100.00%)
+// #Easy #String #Hash_Table #Counting #2025_02_04_Time_1_(100.00%)_Space_42.83_(94.06%)
 
 import java.util.Arrays;
 
