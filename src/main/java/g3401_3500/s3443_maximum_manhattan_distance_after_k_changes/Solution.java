@@ -4,25 +4,25 @@ package g3401_3500.s3443_maximum_manhattan_distance_after_k_changes;
 
 public class Solution {
     public int maxDistance(String s, int k) {
-        int n = 0;
-        int s = 0;
-        int w = 0;
-        int e = 0;
+        int north = 0;
+        int south = 0;
+        int west = 0;
+        int east = 0;
         int result = 0;
         for (char c : s.toCharArray()) {
             if (c == 'N') {
-                n++;
+                north++;
             } else if (c == 'S') {
-                s++;
+                south++;
             } else if (c == 'E') {
-                e++;
+                east++;
             } else if (c == 'W') {
-                w++;
+                west++;
             }
-            int hMax = Math.max(n, s);
-            int vMax = Math.max(w, e);
-            int hMin = Math.min(n, s);
-            int vMin = Math.min(w, e);
+            int hMax = Math.max(north, south);
+            int vMax = Math.max(west, east);
+            int hMin = Math.min(north, south);
+            int vMin = Math.min(west, east);
             if (hMin + vMin >= k) {
                 int curr = hMax + vMax + k - (hMin + vMin - k);
                 result = Math.max(result, curr);
