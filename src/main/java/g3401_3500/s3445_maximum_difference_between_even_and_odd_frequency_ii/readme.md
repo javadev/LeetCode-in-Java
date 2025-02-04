@@ -2,11 +2,7 @@
 
 Hard
 
-You are given a string `s` and an integer `k`. Your task is to find the **maximum** difference between the frequency of **two** characters, `freq[a] - freq[b]`, in a
-
-substring
-
-`subs` of `s`, such that:
+You are given a string `s` and an integer `k`. Your task is to find the **maximum** difference between the frequency of **two** characters, `freq[a] - freq[b]`, in a **substring** `subs` of `s`, such that:
 
 *   `subs` has a size of **at least** `k`.
 *   Character `a` has an _odd frequency_ in `subs`.
