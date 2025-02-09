@@ -1,7 +1,7 @@
 package g3401_3500.s3414_maximum_score_of_non_overlapping_intervals;
 
 // #Hard #Array #Dynamic_Programming #Sorting #Binary_Search
-// #2025_01_08_Time_64_(95.65%)_Space_74.80_(98.26%)
+// #2025_01_08_Time_64_ms_(95.65%)_Space_74.80_MB_(98.26%)
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,7 +1,7 @@
 package g3401_3500.s3428_maximum_and_minimum_sums_of_at_most_size_k_subsequences;
 
 // #Medium #Array #Dynamic_Programming #Math #Sorting #Combinatorics
-// #2025_01_22_Time_28_(99.74%)_Space_65.01_(35.71%)
+// #2025_01_22_Time_28_ms_(99.74%)_Space_65.01_MB_(35.71%)
 
 import java.util.Arrays;
 

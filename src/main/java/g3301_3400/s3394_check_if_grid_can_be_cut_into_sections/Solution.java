@@ -1,6 +1,6 @@
 package g3301_3400.s3394_check_if_grid_can_be_cut_into_sections;
 
-// #Medium #Geometry #Line_Sweep #2025_01_06_Time_35_(99.66%)_Space_117.96_(80.52%)
+// #Medium #Geometry #Line_Sweep #2025_01_06_Time_35_ms_(99.66%)_Space_117.96_MB_(80.52%)
 
 import java.util.Arrays;
 

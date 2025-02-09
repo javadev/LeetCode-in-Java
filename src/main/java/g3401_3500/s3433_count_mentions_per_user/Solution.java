@@ -1,6 +1,6 @@
 package g3401_3500.s3433_count_mentions_per_user;
 
-// #Medium #Array #Math #Sorting #Simulation #2025_01_28_Time_12_(99.94%)_Space_45.54_(94.71%)
+// #Medium #Array #Math #Sorting #Simulation #2025_01_28_Time_12_ms_(99.94%)_Space_45.54_MB_(94.71%)
 
 import java.util.ArrayList;
 import java.util.List;

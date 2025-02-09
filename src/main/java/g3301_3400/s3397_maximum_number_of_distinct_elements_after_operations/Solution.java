@@ -1,6 +1,6 @@
 package g3301_3400.s3397_maximum_number_of_distinct_elements_after_operations;
 
-// #Medium #Array #Sorting #Greedy #2025_01_06_Time_19_(84.32%)_Space_57.84_(93.53%)
+// #Medium #Array #Sorting #Greedy #2025_01_06_Time_19_ms_(84.32%)_Space_57.84_MB_(93.53%)
 
 import java.util.Arrays;
 

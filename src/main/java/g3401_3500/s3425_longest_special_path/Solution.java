@@ -1,7 +1,7 @@
 package g3401_3500.s3425_longest_special_path;
 
 // #Hard #Array #Hash_Table #Depth_First_Search #Tree #Sliding_Window
-// #2025_01_22_Time_49_(74.66%)_Space_98.04_(44.26%)
+// #2025_01_22_Time_49_ms_(74.66%)_Space_98.04_MB_(44.26%)
 
 import java.util.ArrayList;
 import java.util.Arrays;
