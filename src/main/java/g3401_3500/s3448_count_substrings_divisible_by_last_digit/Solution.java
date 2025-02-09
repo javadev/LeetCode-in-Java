@@ -79,13 +79,17 @@ public class Solution {
     }
 
     private long countDivisibilityBy4(String s, int j) {
-        if (j == 0) return 1;
+        if (j == 0) {
+            return 1;
+        }
         int num = (s.charAt(j - 1) - '0') * 10 + (s.charAt(j) - '0');
         return num % 4 == 0 ? j + 1 : 1;
     }
 
     private long countDivisibilityBy8(String s, int j) {
-        if (j == 0) return 1;
+        if (j == 0) {
+            return 1;
+        }
         if (j == 1) {
             int num = (s.charAt(0) - '0') * 10 + 8;
             return (num % 8 == 0 ? 2 : 1);
