@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("java:S5413")
 public class Solution {
     public int[][] sortMatrix(int[][] matrix) {
         Map<Integer, List<Integer>> diagonalMap = new HashMap<>();

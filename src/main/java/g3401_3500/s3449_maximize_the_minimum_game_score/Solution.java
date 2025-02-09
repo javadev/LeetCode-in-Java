@@ -23,7 +23,7 @@ public class Solution {
                     tr = 0;
                     skip++;
                 } else {
-                    long cur = tr * (long) p;
+                    long cur = tr * p;
                     long ops = (mid - cur + p - 1L) / p;
                     tot += 2 * ops - 1 + skip;
                     tr = Math.max(ops - 1, 0);
