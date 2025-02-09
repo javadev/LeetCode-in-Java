@@ -1,7 +1,7 @@
 package g3401_3500.s3435_frequencies_of_shortest_supersequences;
 
 // #Hard #Array #String #Bit_Manipulation #Graph #Enumeration #Topological_Sort
-// #2025_01_29_Time_16_(95.35%)_Space_45.52_(93.02%)
+// #2025_01_29_Time_16_ms_(95.35%)_Space_45.52_MB_(93.02%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

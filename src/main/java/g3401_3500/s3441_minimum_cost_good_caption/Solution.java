@@ -1,6 +1,6 @@
 package g3401_3500.s3441_minimum_cost_good_caption;
 
-// #Hard #String #Dynamic_Programming #2025_02_04_Time_48_(96.00%)_Space_56.50_(89.33%)
+// #Hard #String #Dynamic_Programming #2025_02_04_Time_48_ms_(96.00%)_Space_56.50_MB_(89.33%)
 
 @SuppressWarnings({"java:S107", "java:S6541"})
 public class Solution {
