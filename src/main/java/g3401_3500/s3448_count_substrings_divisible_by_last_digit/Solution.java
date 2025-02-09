@@ -97,7 +97,7 @@ public class Solution {
         }
         int num3 = (s.charAt(j - 2) - '0') * 100 + (s.charAt(j - 1) - '0') * 10 + 8;
         int num2 = (s.charAt(j - 1) - '0') * 10 + 8;
-        return (num3 % 8 == 0 ? j - 1 : 0) + (num2 % 8 == 0 ? 1 : 0) + 1;
+        return (num3 % 8 == 0 ? j - 1 : 0) + (num2 % 8 == 0 ? 1 : 0) + 1L;
     }
 
     private long countDivisibilityBy7(int j, int[] p7, long[][] freq7, int[] inv7) {
