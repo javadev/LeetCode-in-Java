@@ -35,4 +35,9 @@ class SolutionTest {
     void countSubstrings6() {
         assertThat(new Solution().countSubstrings("04"), equalTo(2L));
     }
+
+    @Test
+    void countSubstrings7() {
+        assertThat(new Solution().countSubstrings("8"), equalTo(1L));
+    }
 }
