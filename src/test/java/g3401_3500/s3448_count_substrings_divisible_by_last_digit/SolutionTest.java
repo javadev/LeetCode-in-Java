@@ -30,4 +30,9 @@ class SolutionTest {
     void countSubstrings5() {
         assertThat(new Solution().countSubstrings("28"), equalTo(2L));
     }
+
+    @Test
+    void countSubstrings6() {
+        assertThat(new Solution().countSubstrings("04"), equalTo(2L));
+    }
 }
