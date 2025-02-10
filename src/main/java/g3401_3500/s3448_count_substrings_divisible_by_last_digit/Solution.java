@@ -1,6 +1,6 @@
 package g3401_3500.s3448_count_substrings_divisible_by_last_digit;
 
-// #Hard #2025_02_09_Time_20_(100.00%)_Space_47.10_(100.00%)
+// #Hard #2025_02_09_Time_20_ms_(100.00%)_Space_47.10_MB_(100.00%)
 
 @SuppressWarnings("java:S107")
 public class Solution {

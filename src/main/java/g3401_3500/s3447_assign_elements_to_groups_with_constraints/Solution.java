@@ -1,6 +1,6 @@
 package g3401_3500.s3447_assign_elements_to_groups_with_constraints;
 
-// #Medium #2025_02_09_Time_527_(_%)_Space_70.23_(_%)
+// #Medium #2025_02_09_Time_527_ms_(_%)_Space_70.23_MB_(_%)
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,6 +1,6 @@
 package g3401_3500.s3446_sort_matrix_by_diagonals;
 
-// #Medium #2025_02_09_Time_9_(100.00%)_Space_45.62_(100.00%)
+// #Medium #2025_02_09_Time_9_ms_(100.00%)_Space_45.62_MB_(100.00%)
 
 import java.util.ArrayList;
 import java.util.Collections;

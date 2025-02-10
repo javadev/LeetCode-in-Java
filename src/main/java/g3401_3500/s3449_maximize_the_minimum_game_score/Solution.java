@@ -1,6 +1,6 @@
 package g3401_3500.s3449_maximize_the_minimum_game_score;
 
-// #Hard #2025_02_09_Time_278_(100.00%)_Space_54.25_(100.00%)
+// #Hard #2025_02_09_Time_278_ms_(100.00%)_Space_54.25_MB_(100.00%)
 
 public class Solution {
     public long maxScore(int[] points, int m) {
