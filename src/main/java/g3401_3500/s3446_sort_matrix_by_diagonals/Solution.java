@@ -1,40 +1,42 @@
 package g3401_3500.s3446_sort_matrix_by_diagonals;
 
-// #Medium #2025_02_09_Time_9_ms_(100.00%)_Space_45.62_MB_(100.00%)
+// #Medium #Array #Sorting #Matrix #2025_02_11_Time_3_ms_(94.47%)_Space_45.46_MB_(95.07%)
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.Arrays;
 
-@SuppressWarnings("java:S5413")
 public class Solution {
-    public int[][] sortMatrix(int[][] matrix) {
-        Map<Integer, List<Integer>> diagonalMap = new HashMap<>();
-        int rows = matrix.length;
-        int cols = matrix[0].length;
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                int key = i - j;
-                diagonalMap.putIfAbsent(key, new ArrayList<>());
-                diagonalMap.get(key).add(matrix[i][j]);
+    public int[][] sortMatrix(int[][] grid) {
+        int top = 0;
+        int left = 0;
+        int right = grid[0].length - 1;
+        while (top < right) {
+            int x = grid[0].length - 1 - left;
+            int[] arr = new int[left + 1];
+            for (int i = top; i <= left; i++) {
+                arr[i] = grid[i][x++];
             }
-        }
-        for (Map.Entry<Integer, List<Integer>> entry : diagonalMap.entrySet()) {
-            List<Integer> values = entry.getValue();
-            if (entry.getKey() < 0) {
-                Collections.sort(values);
-            } else {
-                values.sort(Collections.reverseOrder());
+            Arrays.sort(arr);
+            x = grid[0].length - 1 - left;
+            for (int i = top; i <= left; i++) {
+                grid[i][x++] = arr[i];
             }
+            left++;
+            right--;
         }
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                int key = i - j;
-                matrix[i][j] = diagonalMap.get(key).remove(0);
+        int bottom = grid.length - 1;
+        int x = 0;
+        while (top <= bottom) {
+            int[] arr = new int[bottom + 1];
+            for (int i = 0; i < arr.length; i++) {
+                arr[i] = grid[x + i][i];
             }
+            Arrays.sort(arr);
+            for (int i = 0; i < arr.length; i++) {
+                grid[x + i][i] = arr[arr.length - 1 - i];
+            }
+            bottom--;
+            x++;
         }
-        return matrix;
+        return grid;
     }
 }
