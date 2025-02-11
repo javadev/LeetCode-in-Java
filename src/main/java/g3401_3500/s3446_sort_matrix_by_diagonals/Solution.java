@@ -4,6 +4,7 @@ package g3401_3500.s3446_sort_matrix_by_diagonals;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S3012")
 public class Solution {
     public int[][] sortMatrix(int[][] grid) {
         int top = 0;

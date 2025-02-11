@@ -4,7 +4,7 @@ package g3401_3500.s3449_maximize_the_minimum_game_score;
 
 public class Solution {
     private boolean judge(int[] points, long m, long tgt) {
-        long cur = 0L;
+        long cur;
         long nxt = 0L;
         int n = points.length;
         for (int i = 0; i < n; i++) {

@@ -8,12 +8,11 @@ public class Solution {
     public int[] assignElements(int[] groups, int[] elements) {
         int i;
         int j;
-        int n = (int) (1e5 + 1);
         int maxi = 0;
         for (i = 0; i < groups.length; i++) {
             maxi = Math.max(maxi, groups[i]);
         }
-        n = maxi + 1;
+        int n = maxi + 1;
         int[] arr = new int[n];
         int[] ans = new int[groups.length];
         Arrays.fill(arr, -1);
