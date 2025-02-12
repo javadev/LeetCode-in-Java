@@ -109,10 +109,6 @@ public class Solution {
                 ans -= Math.max(rightLen - groupSize + 1, 0);
                 ans += Math.max(leftLen + rightLen - groupSize + 1, 0);
             }
-        } else if (colors[0] != colors[colors.length - 1]) {
-            // In the special case when there's a single group but the
-            // first and last colors differ, the whole array is counted.
-            ans = colors.length;
         }
         return ans;
     }
