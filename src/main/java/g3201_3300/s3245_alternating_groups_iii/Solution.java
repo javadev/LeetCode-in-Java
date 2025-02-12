@@ -1,245 +1,198 @@
 package g3201_3300.s3245_alternating_groups_iii;
 
-// #Hard #Array #Binary_Indexed_Tree #2024_08_06_Time_36_ms_(82.22%)_Space_70.3_MB_(97.78%)
+// #Hard #Array #Binary_Indexed_Tree #2025_02_12_Time_135_ms_(86.36%)_Space_84.24_MB_(40.91%)
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class Solution {
-    private void go(int ind, LST lst, int[] fs, int n, LST ff, int[] c) {
-        if (ind > 0) {
-            int pre = lst.prev(ind - 1);
-            int nex = lst.next(pre + 1);
-            if (nex == -1) {
-                nex = 2 * n;
-            }
-            if (pre != -1 && pre < n && --fs[nex - pre] == 0) {
-                ff.unsetPos(nex - pre);
-            }
-        }
-        if (lst.get(ind)) {
-            int pre = ind;
-            int nex = lst.next(ind + 1);
-            if (nex == -1) {
-                nex = 2 * n;
-            }
-            if (pre != -1 && pre < n && --fs[nex - pre] == 0) {
-                ff.unsetPos(nex - pre);
+    private static final int SZ = 63333;
+    private static final int OFFSET = SZ - 10;
+    private static final BIT[] BITS = {new BIT(), new BIT()};
+
+    // Binary Indexed Tree (BIT) class.
+    private static class BIT {
+        int[] bs = new int[SZ];
+
+        // Update BIT: add value y to index x.
+        void update(int x, int y) {
+            x = OFFSET - x;
+            for (; x < SZ; x += x & -x) {
+                bs[x] += y;
             }
         }
-        if (lst.get(ind + 1)) {
-            int pre = ind + 1;
-            int nex = lst.next(ind + 2);
-            if (nex == -1) {
-                nex = 2 * n;
+
+        // Query BIT: get the prefix sum up to index x.
+        int query(int x) {
+            x = OFFSET - x;
+            int ans = 0;
+            for (; x > 0; x -= x & -x) {
+                ans += bs[x];
             }
-            if (pre != -1 && pre < n && --fs[nex - pre] == 0) {
-                ff.unsetPos(nex - pre);
-            }
+            return ans;
         }
-        lst.unsetPos(ind);
-        lst.unsetPos(ind + 1);
-        c[ind] ^= 1;
-        if (ind > 0 && c[ind] != c[ind - 1]) {
-            lst.setPos(ind);
-        }
-        if (ind + 1 < c.length && c[ind + 1] != c[ind]) {
-            lst.setPos(ind + 1);
-        }
-        if (ind > 0) {
-            int pre = lst.prev(ind - 1);
-            int nex = lst.next(pre + 1);
-            if (nex == -1) {
-                nex = 2 * n;
-            }
-            if (pre != -1 && pre < n && ++fs[nex - pre] == 1) {
-                ff.setPos(nex - pre);
-            }
-        }
-        if (lst.get(ind)) {
-            int pre = ind;
-            int nex = lst.next(ind + 1);
-            if (nex == -1) {
-                nex = 2 * n;
-            }
-            if (pre < n && ++fs[nex - pre] == 1) {
-                ff.setPos(nex - pre);
-            }
-        }
-        if (lst.get(ind + 1)) {
-            int pre = ind + 1;
-            int nex = lst.next(ind + 2);
-            if (nex == -1) {
-                nex = 2 * n;
-            }
-            if (pre < n && ++fs[nex - pre] == 1) {
-                ff.setPos(nex - pre);
+
+        // Clear BIT values starting from index x.
+        void clear(int x) {
+            x = OFFSET - x;
+            for (; x < SZ; x += x & -x) {
+                bs[x] = 0;
             }
         }
     }
 
-    public List<Integer> numberOfAlternatingGroups(int[] colors, int[][] queries) {
+    // --- BIT wrapper methods ---
+    // Updates both BITs for a given group length.
+    private void edt(int x, int y) {
+        // Second BIT is updated with x * y.
+        BITS[1].update(x, x * y);
+        // First BIT is updated with y.
+        BITS[0].update(x, y);
+    }
+
+    // Combines BIT queries to get the result for a given x.
+    private int qry(int x) {
+        return BITS[1].query(x) + (1 - x) * BITS[0].query(x);
+    }
+
+    // Returns the length of a group from index x to y.
+    private int len(int x, int y) {
+        return y - x + 1;
+    }
+
+    // --- Group operations ---
+    // Removes a group (block) by updating BIT with a negative value.
+    private void removeGroup(int start, int end) {
+        edt(len(start, end), -1);
+    }
+
+    // Adds a group (block) by updating BIT with a positive value.
+    private void addGroup(int start, int end) {
+        edt(len(start, end), 1);
+    }
+
+    // Initializes the alternating groups using the colors array.
+    private void initializeGroups(int[] colors, TreeMap<Integer, Integer> groups) {
         int n = colors.length;
-        int[] c = new int[2 * n];
-        for (int i = 0; i < 2 * n; i++) {
-            c[i] = colors[i % n] ^ (i % 2 == 0 ? 0 : 1);
-        }
-        LST lst = new LST(2 * n + 3);
-        for (int i = 1; i < 2 * n; i++) {
-            if (c[i] != c[i - 1]) {
-                lst.setPos(i);
+        int i = 0;
+        while (i < n) {
+            int r = i;
+            // Determine the end of the current alternating group.
+            while (r < n && (colors[r] + colors[i] + r + i) % 2 == 0) {
+                ++r;
             }
+            // The group spans from index i to r-1.
+            groups.put(i, r - 1);
+            // Update BITs with the length of this group.
+            edt(r - i, 1);
+            // Skip to the end of the current group.
+            i = r - 1;
+            ++i;
         }
-        int[] fs = new int[2 * n + 1];
-        LST ff = new LST(2 * n + 1);
-        for (int i = 0; i < n; i++) {
-            if (lst.get(i)) {
-                int ne = lst.next(i + 1);
-                if (ne == -1) {
-                    ne = 2 * n;
-                }
-                fs[ne - i]++;
-                ff.setPos(ne - i);
-            }
-        }
-        List<Integer> ans = new ArrayList<>();
-        for (int[] q : queries) {
-            if (q[0] == 1) {
-                if (lst.next(0) == -1) {
-                    ans.add(n);
-                } else {
-                    int lans = 0;
-                    for (int i = ff.next(q[1]); i != -1; i = ff.next(i + 1)) {
-                        lans += (i - q[1] + 1) * fs[i];
-                    }
-                    if (c[2 * n - 1] != c[0]) {
-                        int f = lst.next(0);
-                        if (f >= q[1]) {
-                            lans += (f - q[1] + 1);
-                        }
-                    }
-                    ans.add(lans);
-                }
-            } else {
-                int ind = q[1];
-                int val = q[2];
-                if (colors[ind] == val) {
-                    continue;
-                }
-                colors[ind] ^= 1;
-                go(ind, lst, fs, n, ff, c);
-                go(ind + n, lst, fs, n, ff, c);
-            }
+    }
+
+    // Processes a type 1 query: returns the number of alternating groups
+    // of at least the given size.
+    private int processQueryType1(int[] colors, TreeMap<Integer, Integer> groups, int groupSize) {
+        int ans = qry(groupSize);
+        Map.Entry<Integer, Integer> firstGroup = groups.firstEntry();
+        Map.Entry<Integer, Integer> lastGroup = groups.lastEntry();
+        // If there is more than one group and the first and last colors differ,
+        // adjust the answer by "merging" the groups at the boundaries.
+        if (firstGroup != lastGroup && colors[0] != colors[colors.length - 1]) {
+            int leftLen = len(firstGroup.getKey(), firstGroup.getValue());
+            int rightLen = len(lastGroup.getKey(), lastGroup.getValue());
+            ans -= Math.max(leftLen - groupSize + 1, 0);
+            ans -= Math.max(rightLen - groupSize + 1, 0);
+            ans += Math.max(leftLen + rightLen - groupSize + 1, 0);
         }
         return ans;
     }
 
-    private static class LST {
-        private long[][] set;
-        private int n;
-
-        public LST(int n) {
-            this.n = n;
-            int d = 1;
-            d = getD(n, d);
-            set = new long[d][];
-            for (int i = 0, m = n >>> 6; i < d; i++, m >>>= 6) {
-                set[i] = new long[m + 1];
-            }
+    // Processes a type 2 query: updates the color at index x and adjusts groups.
+    private void processQueryType2(
+            int[] colors, TreeMap<Integer, Integer> groups, int x, int newColor) {
+        if (colors[x] == newColor) {
+            return;
         }
-
-        private int getD(int n, int d) {
-            int m = n;
-            while (m > 1) {
-                m >>>= 6;
-                d++;
-            }
-            return d;
-        }
-
-        public LST setPos(int pos) {
-            if (pos >= 0 && pos < n) {
-                for (int i = 0; i < set.length; i++, pos >>>= 6) {
-                    set[i][pos >>> 6] |= 1L << pos;
+        // Update the color at index x.
+        colors[x] = newColor;
+        // Find the group (block) that contains index x.
+        Map.Entry<Integer, Integer> it = groups.floorEntry(x);
+        int l = it.getKey();
+        int r = it.getValue();
+        // Remove the old group from BIT and map.
+        removeGroup(l, r);
+        groups.remove(l);
+        int ml = x;
+        int mr = x;
+        // Process the left side of index x.
+        if (l != x) {
+            groups.put(l, x - 1);
+            addGroup(l, x - 1);
+        } else {
+            if (x > 0 && colors[x] != colors[x - 1]) {
+                it = groups.floorEntry(x - 1);
+                if (it != null) {
+                    ml = it.getKey();
+                    removeGroup(it.getKey(), it.getValue());
+                    groups.remove(it.getKey());
                 }
             }
-            return this;
         }
-
-        public LST unsetPos(int pos) {
-            if (pos >= 0 && pos < n) {
-                for (int i = 0;
-                        i < set.length && (i == 0 || set[i - 1][pos] == 0L);
-                        i++, pos >>>= 6) {
-                    set[i][pos >>> 6] &= ~(1L << pos);
+        // Process the right side of index x.
+        if (r != x) {
+            groups.put(x + 1, r);
+            addGroup(x + 1, r);
+        } else {
+            if (x + 1 < colors.length && colors[x + 1] != colors[x]) {
+                it = groups.ceilingEntry(x + 1);
+                if (it != null) {
+                    mr = it.getValue();
+                    removeGroup(it.getKey(), it.getValue());
+                    groups.remove(it.getKey());
                 }
             }
-            return this;
         }
 
-        public boolean get(int pos) {
-            return pos >= 0 && pos < n && set[0][pos >>> 6] << ~pos < 0;
-        }
+        // Merge the affected groups into one new group.
+        groups.put(ml, mr);
+        addGroup(ml, mr);
+    }
 
-        public int prev(int pos) {
-            int i = 0;
-            while (i < set.length && pos >= 0) {
-                int pre = prev(set[i][pos >>> 6], pos & 63);
-                if (pre != -1) {
-                    pos = pos >>> 6 << 6 | pre;
-                    while (i > 0) {
-                        pos = pos << 6 | 63 - Long.numberOfLeadingZeros(set[--i][pos]);
-                    }
-                    return pos;
-                }
-                i++;
-                pos >>>= 6;
-                pos--;
+    // Clears both BITs. This is done after processing all queries.
+    private void clearAllBITs(int n) {
+        for (int i = 0; i <= n + 2; ++i) {
+            BITS[0].clear(i);
+            BITS[1].clear(i);
+        }
+    }
+
+    // Main function to handle queries on alternating groups.
+    public List<Integer> numberOfAlternatingGroups(int[] colors, int[][] queries) {
+        TreeMap<Integer, Integer> groups = new TreeMap<>();
+        int n = colors.length;
+        List<Integer> results = new ArrayList<>();
+        // Initialize alternating groups.
+        initializeGroups(colors, groups);
+        // Process each query.
+        for (int[] query : queries) {
+            if (query[0] == 1) {
+                // Type 1 query: count alternating groups of at least a given size.
+                int groupSize = query[1];
+                int ans = processQueryType1(colors, groups, groupSize);
+                results.add(ans);
+            } else {
+                // Type 2 query: update the color at a given index.
+                int index = query[1];
+                int newColor = query[2];
+                processQueryType2(colors, groups, index, newColor);
             }
-            return -1;
         }
-
-        private int prev(long set, int n) {
-            long h = set << ~n;
-            if (h == 0L) {
-                return -1;
-            }
-            return -Long.numberOfLeadingZeros(h) + n;
-        }
-
-        public int next(int pos) {
-            int i = 0;
-            while (i < set.length && pos >>> 6 < set[i].length) {
-                int nex = next(set[i][pos >>> 6], pos & 63);
-                if (nex != -1) {
-                    pos = pos >>> 6 << 6 | nex;
-                    while (i > 0) {
-                        pos = pos << 6 | Long.numberOfTrailingZeros(set[--i][pos]);
-                    }
-                    return pos;
-                }
-                i++;
-                pos >>>= 6;
-                pos++;
-            }
-            return -1;
-        }
-
-        private static int next(long set, int n) {
-            long h = set >>> n;
-            if (h == 0L) {
-                return -1;
-            }
-            return Long.numberOfTrailingZeros(h) + n;
-        }
-
-        @Override
-        public String toString() {
-            List<Integer> list = new ArrayList<>();
-            for (int pos = next(0); pos != -1; pos = next(pos + 1)) {
-                list.add(pos);
-            }
-            return list.toString();
-        }
+        // Clear BITs after processing all queries.
+        clearAllBITs(n);
+        return results;
     }
 }
