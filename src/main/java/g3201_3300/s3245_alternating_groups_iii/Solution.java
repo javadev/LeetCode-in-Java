@@ -101,14 +101,12 @@ public class Solution {
         Map.Entry<Integer, Integer> lastGroup = groups.lastEntry();
         // If there is more than one group and the first and last colors differ,
         // adjust the answer by "merging" the groups at the boundaries.
-        if (firstGroup != lastGroup) {
-            if (colors[0] != colors[colors.length - 1]) {
-                int leftLen = len(firstGroup.getKey(), firstGroup.getValue());
-                int rightLen = len(lastGroup.getKey(), lastGroup.getValue());
-                ans -= Math.max(leftLen - groupSize + 1, 0);
-                ans -= Math.max(rightLen - groupSize + 1, 0);
-                ans += Math.max(leftLen + rightLen - groupSize + 1, 0);
-            }
+        if (firstGroup != lastGroup && colors[0] != colors[colors.length - 1]) {
+            int leftLen = len(firstGroup.getKey(), firstGroup.getValue());
+            int rightLen = len(lastGroup.getKey(), lastGroup.getValue());
+            ans -= Math.max(leftLen - groupSize + 1, 0);
+            ans -= Math.max(rightLen - groupSize + 1, 0);
+            ans += Math.max(leftLen + rightLen - groupSize + 1, 0);
         }
         return ans;
     }
