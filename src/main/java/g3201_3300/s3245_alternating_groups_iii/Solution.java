@@ -1,245 +1,168 @@
 package g3201_3300.s3245_alternating_groups_iii;
 
-// #Hard #Array #Binary_Indexed_Tree #2024_08_06_Time_36_ms_(82.22%)_Space_70.3_MB_(97.78%)
+// #Hard #Array #Binary_Indexed_Tree #2025_02_12_Time_135_ms_(86.36%)_Space_84.24_MB_(40.91%)
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class Solution {
-    private void go(int ind, LST lst, int[] fs, int n, LST ff, int[] c) {
-        if (ind > 0) {
-            int pre = lst.prev(ind - 1);
-            int nex = lst.next(pre + 1);
-            if (nex == -1) {
-                nex = 2 * n;
-            }
-            if (pre != -1 && pre < n && --fs[nex - pre] == 0) {
-                ff.unsetPos(nex - pre);
-            }
-        }
-        if (lst.get(ind)) {
-            int pre = ind;
-            int nex = lst.next(ind + 1);
-            if (nex == -1) {
-                nex = 2 * n;
-            }
-            if (pre != -1 && pre < n && --fs[nex - pre] == 0) {
-                ff.unsetPos(nex - pre);
+    private static final int SZ = 63333;
+    private static final int OFFSET = SZ - 10;
+    private static final BIT[] BITS = {new BIT(), new BIT()};
+
+    // Class to represent the Binary Indexed Tree (BIT)
+    private static class BIT {
+        int[] bs = new int[SZ];
+
+        // Update BIT: add value y to index x
+        void update(int x, int y) {
+            x = OFFSET - x;
+            for (; x < SZ; x += x & -x) {
+                bs[x] += y;
             }
         }
-        if (lst.get(ind + 1)) {
-            int pre = ind + 1;
-            int nex = lst.next(ind + 2);
-            if (nex == -1) {
-                nex = 2 * n;
+
+        // Query BIT: get the prefix sum up to index x
+        int query(int x) {
+            x = OFFSET - x;
+            int ans = 0;
+            for (; x > 0; x -= x & -x) {
+                ans += bs[x];
             }
-            if (pre != -1 && pre < n && --fs[nex - pre] == 0) {
-                ff.unsetPos(nex - pre);
-            }
+            return ans;
         }
-        lst.unsetPos(ind);
-        lst.unsetPos(ind + 1);
-        c[ind] ^= 1;
-        if (ind > 0 && c[ind] != c[ind - 1]) {
-            lst.setPos(ind);
-        }
-        if (ind + 1 < c.length && c[ind + 1] != c[ind]) {
-            lst.setPos(ind + 1);
-        }
-        if (ind > 0) {
-            int pre = lst.prev(ind - 1);
-            int nex = lst.next(pre + 1);
-            if (nex == -1) {
-                nex = 2 * n;
-            }
-            if (pre != -1 && pre < n && ++fs[nex - pre] == 1) {
-                ff.setPos(nex - pre);
-            }
-        }
-        if (lst.get(ind)) {
-            int pre = ind;
-            int nex = lst.next(ind + 1);
-            if (nex == -1) {
-                nex = 2 * n;
-            }
-            if (pre < n && ++fs[nex - pre] == 1) {
-                ff.setPos(nex - pre);
-            }
-        }
-        if (lst.get(ind + 1)) {
-            int pre = ind + 1;
-            int nex = lst.next(ind + 2);
-            if (nex == -1) {
-                nex = 2 * n;
-            }
-            if (pre < n && ++fs[nex - pre] == 1) {
-                ff.setPos(nex - pre);
+
+        // Clear BIT values up to index x
+        void clear(int x) {
+            x = OFFSET - x;
+            for (; x < SZ; x += x & -x) {
+                bs[x] = 0;
             }
         }
     }
 
+    // Wrapper functions for updating and querying the BITs
+    private void edt(int x, int y) {
+        // Update second BIT with product of index and value
+        BITS[1].update(x, x * y);
+        // Update first BIT with value
+        BITS[0].update(x, y);
+    }
+
+    private int qry(int x) {
+        // Query BITs and combine results
+        return BITS[1].query(x) + (1 - x) * BITS[0].query(x);
+    }
+
+    // Function to calculate the length between two indices
+    private int len(int x, int y) {
+        return y - x + 1;
+    }
+
+    // Main function to handle the queries
     public List<Integer> numberOfAlternatingGroups(int[] colors, int[][] queries) {
+        // Map to store start and end indices of alternating groups
+        TreeMap<Integer, Integer> c = new TreeMap<>();
         int n = colors.length;
-        int[] c = new int[2 * n];
-        for (int i = 0; i < 2 * n; i++) {
-            c[i] = colors[i % n] ^ (i % 2 == 0 ? 0 : 1);
-        }
-        LST lst = new LST(2 * n + 3);
-        for (int i = 1; i < 2 * n; i++) {
-            if (c[i] != c[i - 1]) {
-                lst.setPos(i);
+        // Initialize alternating groups
+        for (int i = 0; i < colors.length; ++i) {
+            int r = i;
+            // Find end of the current alternating group
+            while (r < colors.length && (colors[r] + colors[i] + r + i) % 2 == 0) {
+                ++r;
             }
+            // Store group boundaries in map
+            c.put(i, r - 1);
+            // Update BITs with new group
+            edt(r - i, 1);
+            // Move to the end of the current group
+            i = r - 1;
         }
-        int[] fs = new int[2 * n + 1];
-        LST ff = new LST(2 * n + 1);
-        for (int i = 0; i < n; i++) {
-            if (lst.get(i)) {
-                int ne = lst.next(i + 1);
-                if (ne == -1) {
-                    ne = 2 * n;
-                }
-                fs[ne - i]++;
-                ff.setPos(ne - i);
-            }
-        }
-        List<Integer> ans = new ArrayList<>();
+        // List to store results for type 1 queries
+        List<Integer> results = new ArrayList<>();
+        // Process each query
         for (int[] q : queries) {
             if (q[0] == 1) {
-                if (lst.next(0) == -1) {
-                    ans.add(n);
-                } else {
-                    int lans = 0;
-                    for (int i = ff.next(q[1]); i != -1; i = ff.next(i + 1)) {
-                        lans += (i - q[1] + 1) * fs[i];
+                // Query type 1: Count alternating groups of a given size
+                int ans = qry(q[1]);
+                Map.Entry<Integer, Integer> a = c.firstEntry();
+                Map.Entry<Integer, Integer> b = c.lastEntry();
+                if (a != b) {
+                    // Check if merging groups is possible
+                    if (colors[0] != colors[colors.length - 1]) {
+                        int l1 = len(a.getKey(), a.getValue());
+                        int l2 = len(b.getKey(), b.getValue());
+                        // Subtract groups that are too small
+                        ans -= Math.max(l1 - q[1] + 1, 0);
+                        ans -= Math.max(l2 - q[1] + 1, 0);
+                        // Add merged group size
+                        ans += Math.max(l1 + l2 - q[1] + 1, 0);
                     }
-                    if (c[2 * n - 1] != c[0]) {
-                        int f = lst.next(0);
-                        if (f >= q[1]) {
-                            lans += (f - q[1] + 1);
-                        }
-                    }
-                    ans.add(lans);
+                } else if (colors[0] != colors[colors.length - 1]) {
+                    // If there's only one group, check if it can span the entire array
+                    ans = n;
                 }
+                // Store result for type 1 query
+                results.add(ans);
             } else {
-                int ind = q[1];
-                int val = q[2];
-                if (colors[ind] == val) {
+                // Query type 2: Update color at a given index
+                int x = q[1];
+                int y = q[2];
+                if (colors[x] == y) {
+                    // If color is already correct, skip update
                     continue;
                 }
-                colors[ind] ^= 1;
-                go(ind, lst, fs, n, ff, c);
-                go(ind + n, lst, fs, n, ff, c);
-            }
-        }
-        return ans;
-    }
-
-    private static class LST {
-        private long[][] set;
-        private int n;
-
-        public LST(int n) {
-            this.n = n;
-            int d = 1;
-            d = getD(n, d);
-            set = new long[d][];
-            for (int i = 0, m = n >>> 6; i < d; i++, m >>>= 6) {
-                set[i] = new long[m + 1];
-            }
-        }
-
-        private int getD(int n, int d) {
-            int m = n;
-            while (m > 1) {
-                m >>>= 6;
-                d++;
-            }
-            return d;
-        }
-
-        public LST setPos(int pos) {
-            if (pos >= 0 && pos < n) {
-                for (int i = 0; i < set.length; i++, pos >>>= 6) {
-                    set[i][pos >>> 6] |= 1L << pos;
-                }
-            }
-            return this;
-        }
-
-        public LST unsetPos(int pos) {
-            if (pos >= 0 && pos < n) {
-                for (int i = 0;
-                        i < set.length && (i == 0 || set[i - 1][pos] == 0L);
-                        i++, pos >>>= 6) {
-                    set[i][pos >>> 6] &= ~(1L << pos);
-                }
-            }
-            return this;
-        }
-
-        public boolean get(int pos) {
-            return pos >= 0 && pos < n && set[0][pos >>> 6] << ~pos < 0;
-        }
-
-        public int prev(int pos) {
-            int i = 0;
-            while (i < set.length && pos >= 0) {
-                int pre = prev(set[i][pos >>> 6], pos & 63);
-                if (pre != -1) {
-                    pos = pos >>> 6 << 6 | pre;
-                    while (i > 0) {
-                        pos = pos << 6 | 63 - Long.numberOfLeadingZeros(set[--i][pos]);
+                // Update color
+                colors[x] = y;
+                // Find the block containing index x
+                Map.Entry<Integer, Integer> it = c.floorEntry(x);
+                assert it != null && it.getKey() <= x && it.getValue() >= x;
+                int l = it.getKey();
+                int r = it.getValue();
+                // Remove the old block
+                edt(len(it.getKey(), it.getValue()), -1);
+                c.remove(it.getKey());
+                int ml = x;
+                int mr = x;
+                // Update or split the affected blocks
+                if (l != ml) {
+                    c.put(l, x - 1);
+                    edt(len(l, x - 1), 1);
+                } else {
+                    if (x > 0 && colors[x] != colors[x - 1]) {
+                        it = c.floorEntry(x - 1);
+                        if (it != null) {
+                            ml = it.getKey();
+                            edt(len(it.getKey(), it.getValue()), -1);
+                            c.remove(it.getKey());
+                        }
                     }
-                    return pos;
                 }
-                i++;
-                pos >>>= 6;
-                pos--;
-            }
-            return -1;
-        }
-
-        private int prev(long set, int n) {
-            long h = set << ~n;
-            if (h == 0L) {
-                return -1;
-            }
-            return -Long.numberOfLeadingZeros(h) + n;
-        }
-
-        public int next(int pos) {
-            int i = 0;
-            while (i < set.length && pos >>> 6 < set[i].length) {
-                int nex = next(set[i][pos >>> 6], pos & 63);
-                if (nex != -1) {
-                    pos = pos >>> 6 << 6 | nex;
-                    while (i > 0) {
-                        pos = pos << 6 | Long.numberOfTrailingZeros(set[--i][pos]);
+                if (r != mr) {
+                    c.put(x + 1, r);
+                    edt(len(x + 1, r), 1);
+                } else {
+                    if (x + 1 < colors.length && colors[x + 1] != colors[x]) {
+                        it = c.ceilingEntry(x + 1);
+                        if (it != null) {
+                            mr = it.getValue();
+                            edt(len(it.getKey(), it.getValue()), -1);
+                            c.remove(it.getKey());
+                        }
                     }
-                    return pos;
                 }
-                i++;
-                pos >>>= 6;
-                pos++;
+                c.put(ml, mr);
+                // Add new or modified block
+                edt(len(ml, mr), 1);
             }
-            return -1;
         }
-
-        private static int next(long set, int n) {
-            long h = set >>> n;
-            if (h == 0L) {
-                return -1;
-            }
-            return Long.numberOfTrailingZeros(h) + n;
+        // Clear BITs after processing all queries
+        for (int i = 0; i <= n + 2; ++i) {
+            BITS[0].clear(i);
+            BITS[1].clear(i);
         }
-
-        @Override
-        public String toString() {
-            List<Integer> list = new ArrayList<>();
-            for (int pos = next(0); pos != -1; pos = next(pos + 1)) {
-                list.add(pos);
-            }
-            return list.toString();
-        }
+        return results;
     }
 }
