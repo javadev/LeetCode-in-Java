@@ -12,11 +12,11 @@ public class Solution {
     private static final int OFFSET = SZ - 10;
     private static final BIT[] BITS = {new BIT(), new BIT()};
 
-    // Class to represent the Binary Indexed Tree (BIT)
+    // Binary Indexed Tree (BIT) class.
     private static class BIT {
         int[] bs = new int[SZ];
 
-        // Update BIT: add value y to index x
+        // Update BIT: add value y to index x.
         void update(int x, int y) {
             x = OFFSET - x;
             for (; x < SZ; x += x & -x) {
@@ -24,7 +24,7 @@ public class Solution {
             }
         }
 
-        // Query BIT: get the prefix sum up to index x
+        // Query BIT: get the prefix sum up to index x.
         int query(int x) {
             x = OFFSET - x;
             int ans = 0;
@@ -34,7 +34,7 @@ public class Solution {
             return ans;
         }
 
-        // Clear BIT values up to index x
+        // Clear BIT values starting from index x.
         void clear(int x) {
             x = OFFSET - x;
             for (; x < SZ; x += x & -x) {
@@ -43,126 +43,162 @@ public class Solution {
         }
     }
 
-    // Wrapper functions for updating and querying the BITs
+    // --- BIT wrapper methods ---
+    // Updates both BITs for a given group length.
     private void edt(int x, int y) {
-        // Update second BIT with product of index and value
+        // Second BIT is updated with x * y.
         BITS[1].update(x, x * y);
-        // Update first BIT with value
+        // First BIT is updated with y.
         BITS[0].update(x, y);
     }
 
+    // Combines BIT queries to get the result for a given x.
     private int qry(int x) {
-        // Query BITs and combine results
         return BITS[1].query(x) + (1 - x) * BITS[0].query(x);
     }
 
-    // Function to calculate the length between two indices
+    // Returns the length of a group from index x to y.
     private int len(int x, int y) {
         return y - x + 1;
     }
 
-    // Main function to handle the queries
-    public List<Integer> numberOfAlternatingGroups(int[] colors, int[][] queries) {
-        // Map to store start and end indices of alternating groups
-        TreeMap<Integer, Integer> c = new TreeMap<>();
+    // --- Group operations ---
+    // Removes a group (block) by updating BIT with a negative value.
+    private void removeGroup(int start, int end) {
+        edt(len(start, end), -1);
+    }
+
+    // Adds a group (block) by updating BIT with a positive value.
+    private void addGroup(int start, int end) {
+        edt(len(start, end), 1);
+    }
+
+    // Initializes the alternating groups using the colors array.
+    private void initializeGroups(int[] colors, TreeMap<Integer, Integer> groups) {
         int n = colors.length;
-        // Initialize alternating groups
-        for (int i = 0; i < colors.length; ++i) {
+        int i = 0;
+        while (i < n) {
             int r = i;
-            // Find end of the current alternating group
-            while (r < colors.length && (colors[r] + colors[i] + r + i) % 2 == 0) {
+            // Determine the end of the current alternating group.
+            while (r < n && (colors[r] + colors[i] + r + i) % 2 == 0) {
                 ++r;
             }
-            // Store group boundaries in map
-            c.put(i, r - 1);
-            // Update BITs with new group
+            // The group spans from index i to r-1.
+            groups.put(i, r - 1);
+            // Update BITs with the length of this group.
             edt(r - i, 1);
-            // Move to the end of the current group
+            // Skip to the end of the current group.
             i = r - 1;
+            ++i;
         }
-        // List to store results for type 1 queries
-        List<Integer> results = new ArrayList<>();
-        // Process each query
-        for (int[] q : queries) {
-            if (q[0] == 1) {
-                // Query type 1: Count alternating groups of a given size
-                int ans = qry(q[1]);
-                Map.Entry<Integer, Integer> a = c.firstEntry();
-                Map.Entry<Integer, Integer> b = c.lastEntry();
-                if (a != b) {
-                    // Check if merging groups is possible
-                    if (colors[0] != colors[colors.length - 1]) {
-                        int l1 = len(a.getKey(), a.getValue());
-                        int l2 = len(b.getKey(), b.getValue());
-                        // Subtract groups that are too small
-                        ans -= Math.max(l1 - q[1] + 1, 0);
-                        ans -= Math.max(l2 - q[1] + 1, 0);
-                        // Add merged group size
-                        ans += Math.max(l1 + l2 - q[1] + 1, 0);
-                    }
-                } else if (colors[0] != colors[colors.length - 1]) {
-                    // If there's only one group, check if it can span the entire array
-                    ans = n;
+    }
+
+    // Processes a type 1 query: returns the number of alternating groups
+    // of at least the given size.
+    private int processQueryType1(int[] colors, TreeMap<Integer, Integer> groups, int groupSize) {
+        int ans = qry(groupSize);
+        Map.Entry<Integer, Integer> firstGroup = groups.firstEntry();
+        Map.Entry<Integer, Integer> lastGroup = groups.lastEntry();
+        // If there is more than one group and the first and last colors differ,
+        // adjust the answer by "merging" the groups at the boundaries.
+        if (firstGroup != lastGroup) {
+            if (colors[0] != colors[colors.length - 1]) {
+                int leftLen = len(firstGroup.getKey(), firstGroup.getValue());
+                int rightLen = len(lastGroup.getKey(), lastGroup.getValue());
+                ans -= Math.max(leftLen - groupSize + 1, 0);
+                ans -= Math.max(rightLen - groupSize + 1, 0);
+                ans += Math.max(leftLen + rightLen - groupSize + 1, 0);
+            }
+        } else if (colors[0] != colors[colors.length - 1]) {
+            // In the special case when there's a single group but the
+            // first and last colors differ, the whole array is counted.
+            ans = colors.length;
+        }
+        return ans;
+    }
+
+    // Processes a type 2 query: updates the color at index x and adjusts groups.
+    private void processQueryType2(
+            int[] colors, TreeMap<Integer, Integer> groups, int x, int newColor) {
+        if (colors[x] == newColor) {
+            return;
+        }
+        // Update the color at index x.
+        colors[x] = newColor;
+        // Find the group (block) that contains index x.
+        Map.Entry<Integer, Integer> it = groups.floorEntry(x);
+        int l = it.getKey();
+        int r = it.getValue();
+        // Remove the old group from BIT and map.
+        removeGroup(l, r);
+        groups.remove(l);
+        int ml = x;
+        int mr = x;
+        // Process the left side of index x.
+        if (l != x) {
+            groups.put(l, x - 1);
+            addGroup(l, x - 1);
+        } else {
+            if (x > 0 && colors[x] != colors[x - 1]) {
+                it = groups.floorEntry(x - 1);
+                if (it != null) {
+                    ml = it.getKey();
+                    removeGroup(it.getKey(), it.getValue());
+                    groups.remove(it.getKey());
                 }
-                // Store result for type 1 query
-                results.add(ans);
-            } else {
-                // Query type 2: Update color at a given index
-                int x = q[1];
-                int y = q[2];
-                if (colors[x] == y) {
-                    // If color is already correct, skip update
-                    continue;
-                }
-                // Update color
-                colors[x] = y;
-                // Find the block containing index x
-                Map.Entry<Integer, Integer> it = c.floorEntry(x);
-                assert it != null && it.getKey() <= x && it.getValue() >= x;
-                int l = it.getKey();
-                int r = it.getValue();
-                // Remove the old block
-                edt(len(it.getKey(), it.getValue()), -1);
-                c.remove(it.getKey());
-                int ml = x;
-                int mr = x;
-                // Update or split the affected blocks
-                if (l != ml) {
-                    c.put(l, x - 1);
-                    edt(len(l, x - 1), 1);
-                } else {
-                    if (x > 0 && colors[x] != colors[x - 1]) {
-                        it = c.floorEntry(x - 1);
-                        if (it != null) {
-                            ml = it.getKey();
-                            edt(len(it.getKey(), it.getValue()), -1);
-                            c.remove(it.getKey());
-                        }
-                    }
-                }
-                if (r != mr) {
-                    c.put(x + 1, r);
-                    edt(len(x + 1, r), 1);
-                } else {
-                    if (x + 1 < colors.length && colors[x + 1] != colors[x]) {
-                        it = c.ceilingEntry(x + 1);
-                        if (it != null) {
-                            mr = it.getValue();
-                            edt(len(it.getKey(), it.getValue()), -1);
-                            c.remove(it.getKey());
-                        }
-                    }
-                }
-                c.put(ml, mr);
-                // Add new or modified block
-                edt(len(ml, mr), 1);
             }
         }
-        // Clear BITs after processing all queries
+        // Process the right side of index x.
+        if (r != x) {
+            groups.put(x + 1, r);
+            addGroup(x + 1, r);
+        } else {
+            if (x + 1 < colors.length && colors[x + 1] != colors[x]) {
+                it = groups.ceilingEntry(x + 1);
+                if (it != null) {
+                    mr = it.getValue();
+                    removeGroup(it.getKey(), it.getValue());
+                    groups.remove(it.getKey());
+                }
+            }
+        }
+
+        // Merge the affected groups into one new group.
+        groups.put(ml, mr);
+        addGroup(ml, mr);
+    }
+
+    // Clears both BITs. This is done after processing all queries.
+    private void clearAllBITs(int n) {
         for (int i = 0; i <= n + 2; ++i) {
             BITS[0].clear(i);
             BITS[1].clear(i);
         }
+    }
+
+    // Main function to handle queries on alternating groups.
+    public List<Integer> numberOfAlternatingGroups(int[] colors, int[][] queries) {
+        TreeMap<Integer, Integer> groups = new TreeMap<>();
+        int n = colors.length;
+        List<Integer> results = new ArrayList<>();
+        // Initialize alternating groups.
+        initializeGroups(colors, groups);
+        // Process each query.
+        for (int[] query : queries) {
+            if (query[0] == 1) {
+                // Type 1 query: count alternating groups of at least a given size.
+                int groupSize = query[1];
+                int ans = processQueryType1(colors, groups, groupSize);
+                results.add(ans);
+            } else {
+                // Type 2 query: update the color at a given index.
+                int index = query[1];
+                int newColor = query[2];
+                processQueryType2(colors, groups, index, newColor);
+            }
+        }
+        // Clear BITs after processing all queries.
+        clearAllBITs(n);
         return results;
     }
 }
