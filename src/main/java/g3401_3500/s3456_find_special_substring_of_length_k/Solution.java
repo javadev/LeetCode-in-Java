@@ -2,6 +2,7 @@ package g3401_3500.s3456_find_special_substring_of_length_k;
 
 // #Easy #2025_02_16_Time_0_ms_(100.00%)_Space_42.05_MB_(100.00%)
 
+@SuppressWarnings("java:S1871")
 public class Solution {
     public boolean hasSpecialSubstring(String s, int k) {
         if (s.length() == k) {

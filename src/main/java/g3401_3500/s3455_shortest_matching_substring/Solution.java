@@ -12,7 +12,9 @@ public class Solution {
         int m = p.length();
         int[] next = new int[m];
         Arrays.fill(next, -1);
-        for (int i = 1, j = -1; i < m; ++i) {
+        int i = 1;
+        int j = -1;
+        while (i < m) {
             while (j != -1 && p.charAt(i) != p.charAt(j + 1)) {
                 j = next[j];
             }
@@ -20,9 +22,12 @@ public class Solution {
                 ++j;
             }
             next[i] = j;
+            ++i;
         }
         List<Integer> match = new ArrayList<>();
-        for (int i = 0, j = -1; i < n; ++i) {
+        i = 0;
+        j = -1;
+        while (i < n) {
             while (j != -1 && s.charAt(i) != p.charAt(j + 1)) {
                 j = next[j];
             }
@@ -33,6 +38,7 @@ public class Solution {
                 match.add(i - m + 1);
                 j = next[j];
             }
+            ++i;
         }
         return match;
     }
