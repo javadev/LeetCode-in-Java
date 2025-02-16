@@ -1,80 +1,95 @@
 package g3401_3500.s3455_shortest_matching_substring;
 
-// #Hard #2025_02_16_Time_976_ms_(100.00%)_Space_45.76_MB_(100.00%)
+// #Hard #2025_02_16_Time_91_ms_(100.00%)_Space_55.37_MB_(100.00%)
 
-@SuppressWarnings("java:S6541")
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Solution {
+    private List<Integer> getMatch(String s, String p) {
+        int n = s.length();
+        int m = p.length();
+        int[] next = new int[m];
+        Arrays.fill(next, -1);
+        for (int i = 1, j = -1; i < m; ++i) {
+            while (j != -1 && p.charAt(i) != p.charAt(j + 1)) {
+                j = next[j];
+            }
+            if (p.charAt(i) == p.charAt(j + 1)) {
+                ++j;
+            }
+            next[i] = j;
+        }
+        List<Integer> match = new ArrayList<>();
+        for (int i = 0, j = -1; i < n; ++i) {
+            while (j != -1 && s.charAt(i) != p.charAt(j + 1)) {
+                j = next[j];
+            }
+            if (s.charAt(i) == p.charAt(j + 1)) {
+                ++j;
+            }
+            if (j == m - 1) {
+                match.add(i - m + 1);
+                j = next[j];
+            }
+        }
+        return match;
+    }
+
     public int shortestMatchingSubstring(String s, String p) {
-        int minLen = Integer.MAX_VALUE;
-        String[] ar = p.split("\\*");
-        int arlen = ar.length;
-        if (arlen == 0) {
+        int n = s.length();
+        int m = p.length();
+        int[] d = {-1, -1, -1, m};
+        for (int i = 0; i < m; ++i) {
+            if (p.charAt(i) == '*') {
+                d[d[1] == -1 ? 1 : 2] = i;
+            }
+        }
+        List<String> subs = new ArrayList<>();
+        for (int i = 0; i < 3; ++i) {
+            if (d[i] + 1 < d[i + 1]) {
+                subs.add(p.substring(d[i] + 1, d[i + 1]));
+            }
+        }
+        int size = subs.size();
+        if (size == 0) {
             return 0;
         }
-        String temp = p.replace("*", "");
-        if (s.contains(temp)) {
-            return temp.length();
+        List<List<Integer>> matches = new ArrayList<>();
+        for (String sub : subs) {
+            matches.add(getMatch(s, sub));
         }
-        int f = s.indexOf(ar[0]);
-        while (f != -1) {
-            int shortLen = Integer.MAX_VALUE;
-            if (arlen > 1) {
-                int sec = s.indexOf(ar[1], f + ar[0].length());
-                while (sec != -1) {
-                    if (ar[0].isEmpty()) {
-                        f = sec;
-                    }
-                    if (arlen > 2) {
-                        int third = s.indexOf(ar[2], sec + ar[1].length());
-                        if (third != -1) {
-                            if (ar[0].isEmpty() && ar[1].isEmpty()) {
-                                f = third;
-                            }
-                            shortLen = third + ar[2].length() - f;
-                            minLen = Math.min(shortLen, minLen);
-                            if (minLen == p.length() - 2) {
-                                return minLen;
-                            }
-                            if (minLen == Integer.MAX_VALUE) {
-                                return -1;
-                            }
-                        }
-                    } else {
-                        shortLen = sec + ar[1].length() - f;
-                        minLen = Math.min(shortLen, minLen);
-                    }
-                    if (minLen == p.length() - 2) {
-                        return minLen;
-                    }
-                    if (ar[1].isEmpty()) {
-                        sec = -1;
-                    } else {
-                        sec = s.indexOf(ar[1], sec + 1);
-                    }
-                    if (minLen == Integer.MAX_VALUE) {
-                        return -1;
-                    }
+        int ans = Integer.MAX_VALUE;
+        int[] ids = new int[size];
+        Arrays.fill(ids, 0);
+        while (ids[size - 1] < matches.get(size - 1).size()) {
+            for (int i = size - 2; i >= 0; --i) {
+                while (ids[i] + 1 < matches.get(i).size()
+                        && matches.get(i).get(ids[i] + 1) + subs.get(i).length()
+                                <= matches.get(i + 1).get(ids[i + 1])) {
+                    ++ids[i];
                 }
-            } else {
-                shortLen = f + ar[0].length() - f;
-                minLen = shortLen;
             }
-            minLen = Math.min(shortLen, minLen);
-            if (minLen == p.length() - 2) {
-                return minLen;
+            boolean valid = true;
+            for (int i = size - 2; i >= 0; --i) {
+                if (ids[i] >= matches.get(i).size()
+                        || matches.get(i).get(ids[i]) + subs.get(i).length()
+                                > matches.get(i + 1).get(ids[i + 1])) {
+                    valid = false;
+                    break;
+                }
             }
-            if (ar[0].isEmpty()) {
-                f = -1;
-            } else {
-                f = s.indexOf(ar[0], f + 1);
+            if (valid) {
+                ans =
+                        Math.min(
+                                ans,
+                                matches.get(size - 1).get(ids[size - 1])
+                                        + subs.get(size - 1).length()
+                                        - matches.get(0).get(ids[0]));
             }
-            if (minLen == Integer.MAX_VALUE) {
-                return -1;
-            }
+            ids[size - 1]++;
         }
-        if (minLen == Integer.MAX_VALUE) {
-            return -1;
-        }
-        return minLen;
+        return ans > n ? -1 : ans;
     }
 }
