@@ -2,6 +2,7 @@ package g3401_3500.s3455_shortest_matching_substring;
 
 // #Hard #2025_02_16_Time_976_ms_(100.00%)_Space_45.76_MB_(100.00%)
 
+@SuppressWarnings("java:S6541")
 public class Solution {
     public int shortestMatchingSubstring(String s, String p) {
         int minLen = Integer.MAX_VALUE;

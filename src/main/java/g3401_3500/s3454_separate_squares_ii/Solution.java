@@ -70,7 +70,8 @@ public class Solution {
         SegmentTree segTree = new SegmentTree(xs);
         double lastY = events[0].y;
         double cumArea = 0.0;
-        for (int i = 0; i < m; ) {
+        int i = 0;
+        while (i < m) {
             double curY = events[i].y;
             if (curY > lastY) {
                 double unionX = segTree.query();
