@@ -1,6 +1,7 @@
 package g3401_3500.s3455_shortest_matching_substring;
 
-// #Hard #2025_02_16_Time_91_ms_(100.00%)_Space_55.37_MB_(100.00%)
+// #Hard #String #Binary_Search #Two_Pointers #String_Matching
+// #2025_02_18_Time_116_ms_(81.44%)_Space_55.28_MB_(88.02%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

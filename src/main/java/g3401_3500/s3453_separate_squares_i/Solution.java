@@ -1,42 +1,34 @@
 package g3401_3500.s3453_separate_squares_i;
 
-// #Medium #2025_02_16_Time_123_ms_(100.00%)_Space_87.97_MB_(_%)
+// #Medium #Array #Binary_Search #2025_02_18_Time_60_ms_(99.96%)_Space_88.58_MB_(26.92%)
 
 public class Solution {
-    private double helper(double line, int[][] squares) {
-        double aAbove = 0;
-        double aBelow = 0;
-        for (int[] square : squares) {
-            int y = square[1];
-            int l = square[2];
-            double total = (double) l * l;
-            if (line <= y) {
-                aAbove += total;
-            } else if (line >= y + l) {
-                aBelow += total;
+    public double separateSquares(int[][] squares) {
+        long hi = 0L;
+        long lo = 1_000_000_000L;
+        for (int[] q : squares) {
+            lo = Math.min(lo, q[1]);
+            hi = Math.max(hi, q[1] + q[2]);
+        }
+        while (lo <= hi) {
+            long mid = (lo + hi) / 2;
+            if (diff(mid, squares) <= 0) {
+                hi = mid - 1;
             } else {
-                // The line intersects the square.
-                double aboveHeight = (y + l) - line;
-                double belowHeight = line - y;
-                aAbove += l * aboveHeight;
-                aBelow += l * belowHeight;
+                lo = mid + 1;
             }
         }
-        return aAbove - aBelow;
+        double diff1 = diff(hi, squares);
+        double diff2 = diff(lo, squares);
+        return (double) hi + diff1 / (diff1 - diff2);
     }
 
-    public double separateSquares(int[][] squares) {
-        double lo = 0;
-        double hi = 2 * 1e9;
-        for (int i = 0; i < 60; i++) {
-            double mid = (lo + hi) / 2.0;
-            double diff = helper(mid, squares);
-            if (diff > 0) {
-                lo = mid;
-            } else {
-                hi = mid;
-            }
+    private double diff(long mid, int[][] squares) {
+        double[] res = new double[2];
+        for (int[] q : squares) {
+            res[0] += Math.min(q[2], Math.max(0, mid - q[1])) * q[2];
+            res[1] += Math.min(q[2], Math.max(0, q[1] + q[2] - mid)) * q[2];
         }
-        return hi;
+        return res[1] - res[0];
     }
 }

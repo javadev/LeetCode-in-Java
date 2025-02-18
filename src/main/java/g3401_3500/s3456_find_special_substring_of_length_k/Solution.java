@@ -1,6 +1,6 @@
 package g3401_3500.s3456_find_special_substring_of_length_k;
 
-// #Easy #2025_02_16_Time_1_ms_(100.00%)_Space_42.25_MB_(100.00%)
+// #Easy #String #2025_02_18_Time_0_ms_(100.00%)_Space_41.93_MB_(99.07%)
 
 @SuppressWarnings("java:S1871")
 public class Solution {

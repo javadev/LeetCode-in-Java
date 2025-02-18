@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# #Hard #2025_02_16_Time_383_ms_(85.47%)_Space_0.0_MB_(100.00%)
+# #Hard #Database #2025_02_18_Time_393_ms_(79.56%)_Space_0.0_MB_(100.00%)
 WITH cte_invalid_ip AS (
     SELECT log_id, ip
     FROM logs

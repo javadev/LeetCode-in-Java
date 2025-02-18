@@ -1,6 +1,6 @@
 package g3401_3500.s3457_eat_pizzas;
 
-// #Medium #2025_02_16_Time_64_ms_(100.00%)_Space_80.85_MB_(100.00%)
+// #Medium #Array #Sorting #Greedy #2025_02_18_Time_63_ms_(40.14%)_Space_81.02_MB_(36.94%)
 
 import java.util.Arrays;
 
