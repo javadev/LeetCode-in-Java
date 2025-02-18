@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("java:S1210")
 public class Solution {
     private static class Event implements Comparable<Event> {
         double y;
@@ -65,7 +66,7 @@ public class Solution {
                 update(2 * idx + 2, mid + 1, r, ql, qr, val);
             }
             if (count[idx] > 0) {
-                len[idx] = x[r + 1] - x[l];
+                len[idx] = x[r + 1] - (double) x[l];
             } else {
                 if (l == r) {
                     len[idx] = 0;

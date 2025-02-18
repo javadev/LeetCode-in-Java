@@ -8,7 +8,7 @@ public class Solution {
         long lo = 1_000_000_000L;
         for (int[] q : squares) {
             lo = Math.min(lo, q[1]);
-            hi = Math.max(hi, q[1] + q[2]);
+            hi = Math.max(hi, q[1] + (long) q[2]);
         }
         while (lo <= hi) {
             long mid = (lo + hi) / 2;
@@ -20,7 +20,7 @@ public class Solution {
         }
         double diff1 = diff(hi, squares);
         double diff2 = diff(lo, squares);
-        return (double) hi + diff1 / (diff1 - diff2);
+        return hi + diff1 / (diff1 - diff2);
     }
 
     private double diff(long mid, int[][] squares) {
