@@ -20,10 +20,8 @@ public class Solution {
             if (flag) {
                 continue;
             }
-            if (start - 1 >= 0 && s.charAt(start) == s.charAt(start - 1)) {
-                start++;
-                end++;
-            } else if (end < s.length() && s.charAt(end) == s.charAt(end - 1)) {
+            if (start - 1 >= 0 && s.charAt(start) == s.charAt(start - 1)
+                    || end < s.length() && s.charAt(end) == s.charAt(end - 1)) {
                 start++;
                 end++;
             } else {

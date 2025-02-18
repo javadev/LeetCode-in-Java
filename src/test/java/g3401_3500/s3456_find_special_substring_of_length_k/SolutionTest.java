@@ -15,4 +15,9 @@ class SolutionTest {
     void hasSpecialSubstring2() {
         assertThat(new Solution().hasSpecialSubstring("abc", 2), equalTo(false));
     }
+
+    @Test
+    void hasSpecialSubstring3() {
+        assertThat(new Solution().hasSpecialSubstring("ccc", 2), equalTo(false));
+    }
 }
