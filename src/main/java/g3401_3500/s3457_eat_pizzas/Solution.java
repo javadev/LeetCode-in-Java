@@ -16,15 +16,14 @@ class Solution {
         int n = m / 4;
         int index = 0;
         for (int x = max; x > 0; --x) {
-            if (count[x] == 0) {
-                continue;
-            }
-            int c = count[x];
-            while (c-- > 0) {
-                pizzas[index++] = x;
-            }
-            if (index >= m / 2) {
-                break;
+            if (count[x] != 0) {
+                int c = count[x];
+                while (c-- > 0) {
+                    pizzas[index++] = x;
+                }
+                if (index >= m / 2) {
+                    break;
+                }
             }
         }
         long ans = 0;
