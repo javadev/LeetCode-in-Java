@@ -74,9 +74,7 @@ public class Solution {
             endingZeros++;
         }
         int[] out = new int[in.length - endingZeros];
-        for (int i = 0; i < out.length; i++) {
-            out[i] = in[i];
-        }
+        System.arraycopy(in, 0, out, 0, out.length);
         return out;
     }
 
