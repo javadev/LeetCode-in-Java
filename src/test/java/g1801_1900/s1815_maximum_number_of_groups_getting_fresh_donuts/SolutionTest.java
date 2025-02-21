@@ -43,4 +43,9 @@ class SolutionTest {
                                 }),
                 equalTo(9));
     }
+
+    @Test
+    void maxHappyGroups5() {
+        assertThat(new Solution().maxHappyGroups(1, new int[] {1, 2, 3}), equalTo(3));
+    }
 }
