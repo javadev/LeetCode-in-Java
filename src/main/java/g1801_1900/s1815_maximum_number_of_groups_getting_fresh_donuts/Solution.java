@@ -38,7 +38,7 @@ public class Solution {
     private int get(int[] ar, int batchSize, int rem, Map<Long, Integer> cache) {
         long hash = 0;
         for (int e : ar) {
-            hash = hash * 69l + e;
+            hash = hash * 69L + e;
         }
         Integer fromCache = cache.get(hash);
         if (fromCache != null) {
