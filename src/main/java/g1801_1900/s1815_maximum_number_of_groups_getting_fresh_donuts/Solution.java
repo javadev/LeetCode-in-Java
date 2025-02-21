@@ -81,10 +81,11 @@ public class Solution {
     }
 
     private boolean zeroed(int[] ar) {
-        for (int e : ar)
+        for (int e : ar) {
             if (e != 0) {
                 return false;
             }
+        }
         return true;
     }
 }
