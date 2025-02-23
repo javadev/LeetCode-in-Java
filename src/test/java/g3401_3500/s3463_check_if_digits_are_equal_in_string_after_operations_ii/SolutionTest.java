@@ -15,4 +15,9 @@ class SolutionTest {
     void hasSameDigits2() {
         assertThat(new Solution().hasSameDigits("34789"), equalTo(false));
     }
+
+    @Test
+    void hasSameDigits3() {
+        assertThat(new Solution().hasSameDigits("3506677"), equalTo(false));
+    }
 }
