@@ -19,4 +19,11 @@ class SolutionTest {
                 new Solution().maxSum(new int[][] {{5, 3, 7}, {8, 2, 6}}, new int[] {2, 2}, 3),
                 equalTo(21L));
     }
+
+    @Test
+    void maxSum3() {
+        assertThat(
+                new Solution().maxSum(new int[][] {{}}, new int[] {2, 2}, 3),
+                equalTo(0L));
+    }
 }
