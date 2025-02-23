@@ -1,39 +1,42 @@
 package g2701_2800.s2747_count_zero_request_servers;
 
 // #Medium #Array #Hash_Table #Sorting #Sliding_Window
-// #2023_09_24_Time_43_ms_(76.92%)_Space_85.7_MB_(63.85%)
+// #2025_02_23_Time_22_ms_(100.00%)_Space_87.21_MB_(63.95%)
 
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
 
 public class Solution {
-    public int[] countServers(int n, int[][] logs, int x, int[] qs) {
-        int m = qs.length;
-        var valIdx = new int[m][2];
+    public int[] countServers(int n, int[][] logs, int x, int[] queries) {
+        Arrays.sort(logs, (a, b) -> a[1] - b[1]);
+        int m = queries.length;
+        int len = logs.length;
+        int[][] qarr = new int[m][];
         for (int i = 0; i < m; i++) {
-            valIdx[i] = new int[] {qs[i], i};
+            qarr[i] = new int[] {i, queries[i]};
         }
-        Arrays.sort(valIdx, Comparator.comparingInt(a -> a[0]));
-        Arrays.sort(logs, Comparator.comparingInt(a -> a[1]));
+        Arrays.sort(qarr, (a, b) -> a[1] - b[1]);
+        int[] ans = new int[m];
+        int[] freq = new int[n + 1];
         int l = 0;
         int r = 0;
-        var res = new int[m];
-        var servCount = new HashMap<Integer, Integer>();
-        for (var q : valIdx) {
-            int rVal = q[0];
-            int lVal = q[0] - x;
-            int i = q[1];
-            while (r < logs.length && logs[r][1] <= rVal) {
-                servCount.merge(logs[r++][0], 1, Integer::sum);
+        int noReq = n;
+        for (int[] q : qarr) {
+            int i = q[0];
+            int t = q[1];
+            while (r < len && logs[r][1] <= t) {
+                if (freq[logs[r][0]]++ == 0) {
+                    noReq--;
+                }
+                r++;
             }
-            while (l < r && logs[l][1] < lVal) {
-                servCount.compute(logs[l][0], (k, v) -> v - 1);
-                servCount.remove(logs[l][0], 0);
+            while (l < len && logs[l][1] < t - x) {
+                if (freq[logs[l][0]]-- == 1) {
+                    noReq++;
+                }
                 l++;
             }
-            res[i] = n - servCount.size();
+            ans[i] = noReq;
         }
-        return res;
+        return ans;
     }
 }
