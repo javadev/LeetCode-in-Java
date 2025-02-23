@@ -22,6 +22,6 @@ class SolutionTest {
 
     @Test
     void maxSum3() {
-        assertThat(new Solution().maxSum(new int[][] {{}}, new int[] {2, 2}, 3), equalTo(0L));
+        assertThat(new Solution().maxSum(new int[][] {}, new int[] {2, 2}, 3), equalTo(0L));
     }
 }
