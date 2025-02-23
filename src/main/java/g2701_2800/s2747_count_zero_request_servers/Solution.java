@@ -17,9 +17,12 @@ public class Solution {
         Arrays.sort(qarr, (a, b) -> a[1] - b[1]);
         int[] ans = new int[m];
         int[] freq = new int[n + 1];
-        int l = 0, r = 0, noReq = n;
+        int l = 0;
+        int r = 0;
+        int noReq = n;
         for (int[] q : qarr) {
-            int i = q[0], t = q[1];
+            int i = q[0];
+            int t = q[1];
             while (r < len && logs[r][1] <= t) {
                 if (freq[logs[r][0]]++ == 0) {
                     noReq--;
