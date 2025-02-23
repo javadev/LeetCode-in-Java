@@ -31,7 +31,7 @@ public class Solution {
             return x;
         }
         if (x == sideLength) {
-            return sideLength + (sideLength - y);
+            return sideLength + (long) (sideLength - y);
         }
         if (y == 0) {
             return 2L * sideLength + (sideLength - x);
