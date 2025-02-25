@@ -35,7 +35,8 @@ public class Solution {
     }
 
     private int get(int[] nums) {
-        int n = nums.length, rs = 0;
+        int n = nums.length;
+        int rs = 0;
         for (int i = 0; i < n; ++i) {
             if (nums[i] == 1) {
                 rs = (rs | (1 << i));
