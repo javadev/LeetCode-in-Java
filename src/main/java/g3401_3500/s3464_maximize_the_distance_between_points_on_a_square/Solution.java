@@ -15,7 +15,7 @@ public class Solution {
             if (y == 0) {
                 c = x;
             } else if (x == side) {
-                c = side + y;
+                c = side + (long) y;
             } else if (y == side) {
                 c = 2L * side + (side - x);
             } else {

@@ -61,7 +61,7 @@ public class Solution {
         int[] xs = f(n - 2);
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
-            arr[i] = (int) (s.charAt(i) - '0');
+            arr[i] = s.charAt(i) - '0';
         }
         int num1 = 0;
         int num2 = 0;

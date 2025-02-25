@@ -9,8 +9,8 @@ public class Solution {
         int k = ch.length - 1;
         while (k != 1) {
             for (int i = 0; i < k; i++) {
-                int a = (int) ch[i] - 48;
-                int b = (int) ch[i + 1] - 48;
+                int a = ch[i] - 48;
+                int b = ch[i + 1] - 48;
                 int d = (a + b) % 10;
                 char c = (char) (d + '0');
                 ch[i] = c;
