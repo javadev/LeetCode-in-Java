@@ -1,34 +1,29 @@
 package g3401_3500.s3462_maximum_sum_with_at_most_k_elements;
 
-// #Medium #2025_02_23_Time_278_ms_(_%)_Space_73.54_MB_(_%)
-
-import java.util.Collections;
-import java.util.PriorityQueue;
+// #Medium #Array #Sorting #Greedy #Matrix #Heap_(Priority_Queue)
+// #2025_02_25_Time_62_ms_(99.82%)_Space_78.09_MB_(20.19%)
 
 public class Solution {
     public long maxSum(int[][] grid, int[] limits, int k) {
-        if (grid.length == 0) {
-            return 0;
+        int l = 0;
+        for (int i = 0; i < limits.length; i++) {
+            l += limits[i];
         }
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
-        PriorityQueue<Integer> temp;
+        int[] dp = new int[l];
+        int a = 0;
         for (int i = 0; i < grid.length; i++) {
-            temp = new PriorityQueue<>(Collections.reverseOrder());
-            for (int j = 0; j < grid[i].length; j++) {
-                temp.add(grid[i][j]);
-            }
-            int cnt = 0;
-            while (!temp.isEmpty() && cnt < limits[i]) {
-                pq.add(temp.poll());
-                cnt += 1;
+            int lim = limits[i];
+            Arrays.sort(grid[i]);
+            for (int j = grid[i].length - lim; j < grid[i].length; j++) {
+                dp[a] = grid[i][j];
+                a++;
             }
         }
-        long result = 0;
-        long count = 0;
-        while (!pq.isEmpty() && count < k) {
-            result += pq.poll();
-            count += 1;
+        Arrays.sort(dp);
+        long sum = 0L;
+        for (int i = l - 1; i >= l - k; i--) {
+            sum += dp[i];
         }
-        return result;
+        return sum;
     }
 }

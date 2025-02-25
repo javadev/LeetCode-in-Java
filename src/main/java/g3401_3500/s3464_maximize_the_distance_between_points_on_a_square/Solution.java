@@ -1,101 +1,79 @@
 package g3401_3500.s3464_maximize_the_distance_between_points_on_a_square;
 
-// #Hard #2025_02_23_Time_222_ms_(100.00%)_Space_52.33_MB_(100.00%)
+// #Hard #Array #Greedy #Binary_Search #2025_02_25_Time_18_ms_(98.51%)_Space_49.78_MB_(46.27%)
 
 import java.util.Arrays;
 
 public class Solution {
-    public int maxDistance(int sideLength, int[][] points, int requiredPoints) {
-        long perimeter = 4L * sideLength;
-        int numPoints = points.length;
-        long[] mappedPositions = new long[numPoints];
-        for (int i = 0; i < numPoints; i++) {
-            mappedPositions[i] = mapToPerimeter(sideLength, points[i][0], points[i][1]);
-        }
-        Arrays.sort(mappedPositions);
-        long low = 0;
-        long high = perimeter;
-        while (low < high) {
-            long mid = (low + high + 1) / 2;
-            if (isValidDistance(mid, requiredPoints, mappedPositions, perimeter)) {
-                low = mid;
+    public int maxDistance(int side, int[][] pts, int k) {
+        int n = pts.length;
+        long[] p = new long[n];
+        for (int i = 0; i < n; i++) {
+            int x = pts[i][0];
+            int y = pts[i][1];
+            long c;
+            if (y == 0) {
+                c = x;
+            } else if (x == side) {
+                c = side + y;
+            } else if (y == side) {
+                c = 2L * side + (side - x);
             } else {
-                high = mid - 1;
+                c = 3L * side + (side - y);
+            }
+            p[i] = c;
+        }
+        Arrays.sort(p);
+        long c = 4L * side;
+        int tot = 2 * n;
+        long[] dArr = new long[tot];
+        for (int i = 0; i < n; i++) {
+            dArr[i] = p[i];
+            dArr[i + n] = p[i] + c;
+        }
+        int lo = 0;
+        int hi = 2 * side;
+        int ans = 0;
+        while (lo <= hi) {
+            int mid = (lo + hi) >>> 1;
+            if (check(mid, dArr, n, k, c)) {
+                ans = mid;
+                lo = mid + 1;
+            } else {
+                hi = mid - 1;
             }
         }
-        return (int) low;
+        return ans;
     }
 
-    private long mapToPerimeter(int sideLength, int x, int y) {
-        if (y == sideLength) {
-            return x;
+    private boolean check(int d, long[] dArr, int n, int k, long c) {
+        int len = dArr.length;
+        int[] nxt = new int[len];
+        int j = 0;
+        for (int i = 0; i < len; i++) {
+            if (j < i + 1) {
+                j = i + 1;
+            }
+            while (j < len && dArr[j] < dArr[i] + d) {
+                j++;
+            }
+            nxt[i] = (j < len) ? j : -1;
         }
-        if (x == sideLength) {
-            return sideLength + (long) (sideLength - y);
-        }
-        if (y == 0) {
-            return 2L * sideLength + (sideLength - x);
-        }
-        return 3L * sideLength + y;
-    }
-
-    private boolean isValidDistance(
-            long minDistance, int requiredPoints, long[] mappedPositions, long perimeter) {
-        int numPoints = mappedPositions.length;
-        long[] extendedPositions = new long[2 * numPoints];
-        for (int i = 0; i < numPoints; i++) {
-            extendedPositions[i] = mappedPositions[i];
-            extendedPositions[i + numPoints] = mappedPositions[i] + perimeter;
-        }
-        for (int i = 0; i < numPoints; i++) {
-            if (canSelectRequiredPoints(
-                    i,
-                    minDistance,
-                    requiredPoints,
-                    mappedPositions,
-                    extendedPositions,
-                    perimeter)) {
+        for (int i = 0; i < n; i++) {
+            int cnt = 1;
+            int cur = i;
+            while (cnt < k) {
+                int nx = nxt[cur];
+                if (nx == -1 || nx >= i + n) {
+                    break;
+                }
+                cur = nx;
+                cnt++;
+            }
+            if (cnt == k && (dArr[i] + c - dArr[cur]) >= d) {
                 return true;
             }
         }
         return false;
-    }
-
-    private boolean canSelectRequiredPoints(
-            int startIndex,
-            long minDistance,
-            int requiredPoints,
-            long[] mappedPositions,
-            long[] extendedPositions,
-            long perimeter) {
-        int selectedCount = 1;
-        long previousPosition = mappedPositions[startIndex];
-        int currentIndex = startIndex;
-        for (int i = 1; i < requiredPoints; i++) {
-            long targetPosition = previousPosition + minDistance;
-            int left = currentIndex + 1;
-            int right = startIndex + mappedPositions.length;
-            int nextIndex = lowerBound(extendedPositions, left, right, targetPosition);
-            if (nextIndex >= right) {
-                return false;
-            }
-            selectedCount++;
-            previousPosition = extendedPositions[nextIndex];
-            currentIndex = nextIndex;
-        }
-        return selectedCount == requiredPoints
-                && (previousPosition - mappedPositions[startIndex] <= perimeter - minDistance);
-    }
-
-    private int lowerBound(long[] arr, int left, int right, long target) {
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (arr[mid] >= target) {
-                right = mid;
-            } else {
-                left = mid + 1;
-            }
-        }
-        return left;
     }
 }

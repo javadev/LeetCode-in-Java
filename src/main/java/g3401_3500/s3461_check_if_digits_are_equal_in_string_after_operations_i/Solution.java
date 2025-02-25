@@ -1,19 +1,22 @@
 package g3401_3500.s3461_check_if_digits_are_equal_in_string_after_operations_i;
 
-// #Easy #2025_02_23_Time_23_ms_(100.00%)_Space_45.51_MB_(100.00%)
+// #Easy #String #Math #Simulation #Number_Theory #Combinatorics
+// #2025_02_25_Time_2_ms_(96.71%)_Space_42.26_MB_(97.03%)
 
 public class Solution {
     public boolean hasSameDigits(String s) {
-        int n = s.length();
-        while (n > 2) {
-            StringBuilder nstr = new StringBuilder();
-            for (int i = 1; i < n; i++) {
-                int next = ((s.charAt(i) - '0') + (s.charAt(i - 1) - '0')) % 10;
-                nstr.append(next);
+        char[] ch = s.toCharArray();
+        int k = ch.length - 1;
+        while (k != 1) {
+            for (int i = 0; i < k; i++) {
+                int a = (int) ch[i] - 48;
+                int b = (int) ch[i + 1] - 48;
+                int d = (a + b) % 10;
+                char c = (char) (d + '0');
+                ch[i] = c;
             }
-            n--;
-            s = nstr.toString();
+            k--;
         }
-        return s.charAt(0) == s.charAt(1);
+        return ch[0] == ch[1];
     }
 }
