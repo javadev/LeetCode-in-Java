@@ -46,7 +46,8 @@ class MysqlTest {
                                     new BufferedReader(
                                                     new FileReader(
                                                             "src/main/java/g3401_3500/"
-                                                                    + "s3465_find_products_with_valid_serial_numbers/script.sql"))
+                                                                    + "s3465_find_products_with_valid_serial_numbers/"
+                                                                    + "script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {
