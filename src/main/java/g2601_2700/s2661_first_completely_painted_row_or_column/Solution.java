@@ -1,39 +1,30 @@
 package g2601_2700.s2661_first_completely_painted_row_or_column;
 
-// #Medium #Array #Hash_Table #Matrix #2023_09_09_Time_22_ms_(85.61%)_Space_64.7_MB_(58.25%)
-
-import java.util.HashMap;
+// #Medium #Array #Hash_Table #Matrix #2025_02_25_Time_2_ms_(100.00%)_Space_57.98_MB_(96.93%)
 
 public class Solution {
     public int firstCompleteIndex(int[] arr, int[][] mat) {
-        HashMap<Integer, Integer> map = new HashMap<>();
+        int[] numMapIndex = new int[mat.length * mat[0].length + 1];
         for (int i = 0; i < arr.length; i++) {
-            map.put(arr[i], i);
+            numMapIndex[arr[i]] = i;
         }
-
-        for (int i = 0; i < mat.length; i++) {
-            for (int j = 0; j < mat[0].length; j++) {
-                mat[i][j] = map.get(mat[i][j]);
-            }
-        }
-
         int ans = Integer.MAX_VALUE;
-        for (int[] ints : mat) {
-            int max = 0;
-            for (int j = 0; j < mat[0].length; j++) {
-                max = Math.max(max, ints[j]);
+        for (int i = 0; i < mat.length; i++) {
+            int rowMin = Integer.MIN_VALUE;
+            for (int i1 = 0; i1 < mat[i].length; i1++) {
+                int index = numMapIndex[mat[i][i1]];
+                rowMin = Math.max(rowMin, index);
             }
-            ans = Math.min(ans, max);
+            ans = Math.min(ans, rowMin);
         }
-
         for (int i = 0; i < mat[0].length; i++) {
-            int max = 0;
-            for (int[] ints : mat) {
-                max = Math.max(max, ints[i]);
+            int colMin = Integer.MIN_VALUE;
+            for (int i1 = 0; i1 < mat.length; i1++) {
+                int index = numMapIndex[mat[i1][i]];
+                colMin = Math.max(colMin, index);
             }
-            ans = Math.min(ans, max);
+            ans = Math.min(ans, colMin);
         }
-
         return ans;
     }
 }
