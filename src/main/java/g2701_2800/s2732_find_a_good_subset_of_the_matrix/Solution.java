@@ -8,10 +8,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Solution {
-    private static int[] arr = new int[32];
+    private int[] arr = new int[32];
 
     public List<Integer> goodSubsetofBinaryMatrix(int[][] grid) {
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         int n = grid.length;
         Arrays.fill(arr, -1);
         for (int i = 0; i < n; ++i) {
