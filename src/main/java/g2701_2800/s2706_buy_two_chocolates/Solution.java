@@ -6,7 +6,6 @@ public class Solution {
     public int buyChoco(int[] prices, int money) {
         int minPrice1 = Integer.MAX_VALUE;
         int minPrice2 = Integer.MAX_VALUE;
-
         for (int price : prices) {
             if (price < minPrice1) {
                 minPrice2 = minPrice1;
@@ -15,9 +14,7 @@ public class Solution {
                 minPrice2 = price;
             }
         }
-
         int totalPrice = minPrice1 + minPrice2;
-
         if (totalPrice > money) {
             return money;
         } else {

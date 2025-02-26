@@ -11,7 +11,6 @@ public class Solution {
         int n = grid[0].length;
         int[][] arrTopLeft = new int[m][n];
         int[][] arrBotRight = new int[m][n];
-
         for (int i = m - 1; i >= 0; i--) {
             int c = 0;
             int r = i;
@@ -21,7 +20,6 @@ public class Solution {
                 set.add(grid[r++][c++]);
             }
         }
-
         for (int i = 1; i < n; i++) {
             int r = 0;
             int c = i;
@@ -31,7 +29,6 @@ public class Solution {
                 set.add(grid[r++][c++]);
             }
         }
-
         for (int i = 0; i < n; i++) {
             int r = m - 1;
             int c = i;
@@ -41,7 +38,6 @@ public class Solution {
                 set.add(grid[r--][c--]);
             }
         }
-
         for (int i = m - 1; i >= 0; i--) {
             int c = n - 1;
             int r = i;
@@ -51,14 +47,12 @@ public class Solution {
                 set.add(grid[r--][c--]);
             }
         }
-
         int[][] result = new int[m][n];
         for (int r = 0; r < m; r++) {
             for (int c = 0; c < n; c++) {
                 result[r][c] = Math.abs(arrTopLeft[r][c] - arrBotRight[r][c]);
             }
         }
-
         return result;
     }
 
