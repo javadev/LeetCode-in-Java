@@ -8,12 +8,10 @@ import java.util.Arrays;
 public class Solution {
     public int matrixSum(int[][] nums) {
         int result = 0;
-
         for (int[] row : nums) {
             Arrays.sort(row);
             reverseArray(row);
         }
-
         for (int i = 0; i < nums[0].length; i++) {
             int max = 0;
             for (int[] num : nums) {
@@ -21,7 +19,6 @@ public class Solution {
             }
             result += max;
         }
-
         return result;
     }
 

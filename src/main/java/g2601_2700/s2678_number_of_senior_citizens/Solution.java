@@ -6,8 +6,8 @@ public class Solution {
     public int countSeniors(String[] details) {
         int count = 0;
         for (String detail : details) {
-            if (((detail.charAt(11) - '0' == 6) && (detail.charAt(12) - '0' > 0))
-                    || (detail.charAt(11) - '0' > 6)) {
+            if ((detail.charAt(11) - '0' == 6 && detail.charAt(12) - '0' > 0)
+                    || detail.charAt(11) - '0' > 6) {
                 count++;
             }
         }
