@@ -1,16 +1,16 @@
 package g3401_3500.s3464_maximize_the_distance_between_points_on_a_square;
 
-// #Hard #Array #Greedy #Binary_Search #2025_02_25_Time_18_ms_(98.51%)_Space_49.78_MB_(46.27%)
+// #Hard #Array #Greedy #Binary_Search #2025_02_27_Time_17_ms_(98.18%)_Space_50.10_MB_(41.82%)
 
 import java.util.Arrays;
 
 public class Solution {
-    public int maxDistance(int side, int[][] pts, int k) {
-        int n = pts.length;
+    public int maxDistance(int side, int[][] points, int k) {
+        int n = points.length;
         long[] p = new long[n];
         for (int i = 0; i < n; i++) {
-            int x = pts[i][0];
-            int y = pts[i][1];
+            int x = points[i][0];
+            int y = points[i][1];
             long c;
             if (y == 0) {
                 c = x;
