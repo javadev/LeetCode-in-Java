@@ -30,21 +30,19 @@ public class Solution {
             return String.join("", java.util.Collections.nCopies(l, "a"));
         }
         for (int i = 0; i < n; i++) {
-            if (str1.charAt(i) == 'F') {
-                if (intervalEquals(word, str2, i, m)) {
-                    boolean fixed = false;
-                    for (int j = m - 1; j >= 0; j--) {
-                        int pos = i + j;
-                        if (free[pos]) {
-                            word[pos] = 'b';
-                            free[pos] = false;
-                            fixed = true;
-                            break;
-                        }
+            if (str1.charAt(i) == 'F' && intervalEquals(word, str2, i, m)) {
+                boolean fixed = false;
+                for (int j = m - 1; j >= 0; j--) {
+                    int pos = i + j;
+                    if (free[pos]) {
+                        word[pos] = 'b';
+                        free[pos] = false;
+                        fixed = true;
+                        break;
                     }
-                    if (!fixed) {
-                        return "";
-                    }
+                }
+                if (!fixed) {
+                    return "";
                 }
             }
         }

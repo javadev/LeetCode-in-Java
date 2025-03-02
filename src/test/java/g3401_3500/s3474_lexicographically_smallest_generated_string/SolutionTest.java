@@ -20,4 +20,9 @@ class SolutionTest {
     void generateString3() {
         assertThat(new Solution().generateString("F", "d"), equalTo("a"));
     }
+
+    @Test
+    void generateString4() {
+        assertThat(new Solution().generateString("TTFFT", "fff"), equalTo(""));
+    }
 }
