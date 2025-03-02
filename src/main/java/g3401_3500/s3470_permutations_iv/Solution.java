@@ -84,7 +84,6 @@ public class Solution {
             return new int[0];
         }
         for (int z = 1; z < n; z++) {
-            boolean taken = false;
             for (int j = 1; j <= n; j++) {
                 if (!used[j] && ((j & 1) != last)) {
                     int odd2 = odd;
@@ -106,13 +105,9 @@ public class Solution {
                         odd = odd2;
                         even = even2;
                         last = cp;
-                        taken = true;
                         break;
                     }
                 }
-            }
-            if (!taken) {
-                return new int[0];
             }
         }
         return ans.stream().mapToInt(i -> i).toArray();
