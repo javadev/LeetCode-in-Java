@@ -1,147 +1,120 @@
 package g3401_3500.s3470_permutations_iv;
 
-// #Hard #2025_03_02_Time_12_ms_(100.00%)_Space_45.94_MB_(100.00%)
+// #Hard #2025_03_02_Time_12_ms_(100.00%)_Space_44.78_MB_(100.00%)
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class Solution {
-    // Define a large constant value to cap calculations and prevent overflow
-    private static final long CAP = 1000000000000001L;
-    // 3D DP array to store precomputed results for dynamic programming
-    private static final long[][][] DP = new long[105][105][3];
+class Solution {
+    private static final long INF = 1_000_000_000_000_000_000L;
 
-    // Initialize DP array with -1 (indicating uncomputed states)
-    static {
-        for (long[][] longs : DP) {
-            for (long[] aLong : longs) {
-                Arrays.fill(aLong, -1);
+    private long helper(int a, int b) {
+        long res = 1;
+        for (int i = 0; i < b; i++) {
+            res *= (a - i);
+            if (res > INF) {
+                return INF;
             }
         }
+        return res;
     }
 
-    // Recursive function to count alternating permutations
-    private long rec(int o, int e, int req) {
-        if (o == 0 && e == 0) {
+    private long solve(int odd, int even, int r, int req) {
+        if (r == 0) {
             return 1;
         }
-        if (DP[o][e][req] != -1) {
-            return DP[o][e][req];
-        }
-        long count = 0;
-        if (req == 2) {
-            if (o > 0) {
-                count = addCapped(count, multiplyCapped(o, rec(o - 1, e, 1)));
-            }
-            if (e > 0) {
-                count = addCapped(count, multiplyCapped(e, rec(o, e - 1, 0)));
-            }
-        } else if (req == 0) {
-            if (o > 0) {
-                count = multiplyCapped(o, rec(o - 1, e, 1));
-            }
+        int nodd;
+        int neven;
+        if (req == 1) {
+            nodd = (r + 1) / 2;
+            neven = r / 2;
         } else {
-            if (e > 0) {
-                count = multiplyCapped(e, rec(o, e - 1, 0));
-            }
+            neven = (r + 1) / 2;
+            nodd = r / 2;
         }
-        DP[o][e][req] = count;
-        return count;
-    }
-
-    // Helper function to prevent overflow when multiplying
-    private long multiplyCapped(long a, long b) {
-        if (b == 0) {
+        if (odd < nodd || even < neven) {
             return 0;
         }
-        if (a >= CAP || b >= CAP || a > CAP / b) {
-            return CAP;
+        long oddways = helper(odd, nodd);
+        long evenways = helper(even, neven);
+        long total = oddways;
+        if (evenways == 0 || total > INF / evenways) {
+            total = INF;
+        } else {
+            total *= evenways;
         }
-        return a * b;
-    }
-
-    // Helper function to prevent overflow when adding
-    private long addCapped(long a, long b) {
-        long res = a + b;
-        return Math.min(res, CAP);
+        return total;
     }
 
     public int[] permute(int n, long k) {
-        // Separate odd and even numbers from 1 to n
-        List<Integer> odds = new ArrayList<>();
-        List<Integer> evens = new ArrayList<>();
-        for (int x = 1; x <= n; x++) {
-            if ((x & 1) == 1) {
-                odds.add(x);
+        List<Integer> ans = new ArrayList<>();
+        boolean first = false;
+        boolean[] used = new boolean[n + 1];
+        int odd = (n + 1) / 2;
+        int even = n / 2;
+        int last = -1;
+        for (int i = 1; i <= n; i++) {
+            if (used[i]) {
+                continue;
+            }
+            int odd2 = odd;
+            int even2 = even;
+            int cp = i & 1;
+            int next = (cp == 1 ? 0 : 1);
+            if (cp == 1) {
+                odd2--;
             } else {
-                evens.add(x);
+                even2--;
+            }
+            int r = n - 1;
+            long cnt = solve(odd2, even2, r, next);
+            if (k > cnt) {
+                k -= cnt;
+            } else {
+                ans.add(i);
+                used[i] = true;
+                odd = odd2;
+                even = even2;
+                last = cp;
+                first = true;
+                break;
             }
         }
-        // Count the number of odd and even elements
-        int oCount = odds.size();
-        int eCount = evens.size();
-        long ansTotal = rec(oCount, eCount, 2);
-        if (k > ansTotal) {
+        if (!first) {
             return new int[0];
         }
-        List<Integer> result = new ArrayList<>();
-        int req = 2;
-        while (oCount + eCount > 0) {
-            List<Integer> candidates = new ArrayList<>();
-            if (req == 2) {
-                int i = 0;
-                int j = 0;
-                while (i < odds.size() || j < evens.size()) {
-                    if (j >= evens.size() || (i < odds.size() && odds.get(i) < evens.get(j))) {
-                        candidates.add(odds.get(i++));
+        for (int z = 1; z < n; z++) {
+            boolean taken = false;
+            for (int j = 1; j <= n; j++) {
+                if (!used[j] && ((j & 1) != last)) {
+                    int odd2 = odd;
+                    int even2 = even;
+                    int cp = j & 1;
+                    if (cp == 1) {
+                        odd2--;
                     } else {
-                        candidates.add(evens.get(j++));
+                        even2--;
+                    }
+                    int r = n - (z + 1);
+                    int next = (cp == 1 ? 0 : 1);
+                    long cnt2 = solve(odd2, even2, r, next);
+                    if (k > cnt2) {
+                        k -= cnt2;
+                    } else {
+                        ans.add(j);
+                        used[j] = true;
+                        odd = odd2;
+                        even = even2;
+                        last = cp;
+                        taken = true;
+                        break;
                     }
                 }
-            } else if (req == 0) {
-                candidates.addAll(odds);
-            } else {
-                candidates.addAll(evens);
             }
-            boolean found = false;
-            for (int num : candidates) {
-                int candidateParity = (num % 2 == 1) ? 0 : 1;
-                if (req != 2 && candidateParity != req) {
-                    continue;
-                }
-                long ways;
-                if (candidateParity == 0) {
-                    ways = rec(oCount - 1, eCount, 1);
-                } else {
-                    ways = rec(oCount, eCount - 1, 0);
-                }
-                if (ways >= k) {
-                    result.add(num);
-                    if (candidateParity == 0) {
-                        odds.remove(Integer.valueOf(num));
-                        oCount--;
-                        req = 1;
-                    } else {
-                        evens.remove(Integer.valueOf(num));
-                        eCount--;
-                        req = 0;
-                    }
-                    found = true;
-                    break;
-                } else {
-                    k -= ways;
-                }
-            }
-            if (!found) {
+            if (!taken) {
                 return new int[0];
             }
         }
-        // Convert result list to array and return
-        int[] ans = new int[result.size()];
-        for (int i = 0; i < result.size(); i++) {
-            ans[i] = result.get(i);
-        }
-        return ans;
+        return ans.stream().mapToInt(i -> i).toArray();
     }
 }
