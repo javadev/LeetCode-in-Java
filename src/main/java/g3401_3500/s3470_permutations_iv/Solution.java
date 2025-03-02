@@ -5,7 +5,8 @@ package g3401_3500.s3470_permutations_iv;
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+@SuppressWarnings("java:S6541")
+public class Solution {
     private static final long INF = 1_000_000_000_000_000_000L;
 
     private long helper(int a, int b) {
@@ -54,30 +55,29 @@ class Solution {
         int even = n / 2;
         int last = -1;
         for (int i = 1; i <= n; i++) {
-            if (used[i]) {
-                continue;
-            }
-            int odd2 = odd;
-            int even2 = even;
-            int cp = i & 1;
-            int next = (cp == 1 ? 0 : 1);
-            if (cp == 1) {
-                odd2--;
-            } else {
-                even2--;
-            }
-            int r = n - 1;
-            long cnt = solve(odd2, even2, r, next);
-            if (k > cnt) {
-                k -= cnt;
-            } else {
-                ans.add(i);
-                used[i] = true;
-                odd = odd2;
-                even = even2;
-                last = cp;
-                first = true;
-                break;
+            if (!used[i]) {
+                int odd2 = odd;
+                int even2 = even;
+                int cp = i & 1;
+                int next = (cp == 1 ? 0 : 1);
+                if (cp == 1) {
+                    odd2--;
+                } else {
+                    even2--;
+                }
+                int r = n - 1;
+                long cnt = solve(odd2, even2, r, next);
+                if (k > cnt) {
+                    k -= cnt;
+                } else {
+                    ans.add(i);
+                    used[i] = true;
+                    odd = odd2;
+                    even = even2;
+                    last = cp;
+                    first = true;
+                    break;
+                }
             }
         }
         if (!first) {
