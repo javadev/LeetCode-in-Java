@@ -23,6 +23,7 @@ public class Solution {
         int res = Math.max(nums[i], nums[i + 1]) + solve(nums, i + 2, last);
         res = Math.min(res, Math.max(nums[i], nums[last]) + solve(nums, i + 2, i + 1));
         res = Math.min(res, Math.max(nums[i + 1], nums[last]) + solve(nums, i + 2, i));
-        return dp[i][last] = res;
+        dp[i][last] = res;
+        return res;
     }
 }

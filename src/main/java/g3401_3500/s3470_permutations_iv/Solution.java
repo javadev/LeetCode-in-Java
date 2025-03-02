@@ -10,11 +10,11 @@ public class Solution {
     // Define a large constant value to cap calculations and prevent overflow
     private static final long CAP = 1000000000000001L;
     // 3D DP array to store precomputed results for dynamic programming
-    private static final long[][][] DP = new long[105][105][3];
+    private final long[][][] dp = new long[105][105][3];
 
     // Initialize DP array with -1 (indicating uncomputed states)
-    static {
-        for (long[][] longs : DP) {
+    {
+        for (long[][] longs : dp) {
             for (long[] aLong : longs) {
                 Arrays.fill(aLong, -1);
             }
@@ -26,8 +26,8 @@ public class Solution {
         if (o == 0 && e == 0) {
             return 1;
         }
-        if (DP[o][e][req] != -1) {
-            return DP[o][e][req];
+        if (dp[o][e][req] != -1) {
+            return dp[o][e][req];
         }
         long count = 0;
         if (req == 2) {
@@ -46,7 +46,7 @@ public class Solution {
                 count = multiplyCapped(e, rec(o, e - 1, 0));
             }
         }
-        DP[o][e][req] = count;
+        dp[o][e][req] = count;
         return count;
     }
 
