@@ -12,7 +12,7 @@ public class Solution {
     private long helper(int a, int b) {
         long res = 1;
         for (int i = 0; i < b; i++) {
-            res *= (a - i);
+            res *= a - i;
             if (res > INF) {
                 return INF;
             }
@@ -24,25 +24,25 @@ public class Solution {
         if (r == 0) {
             return 1;
         }
-        int nodd;
-        int neven;
+        int nOdd;
+        int nEven;
         if (req == 1) {
-            nodd = (r + 1) / 2;
-            neven = r / 2;
+            nOdd = (r + 1) / 2;
+            nEven = r / 2;
         } else {
-            neven = (r + 1) / 2;
-            nodd = r / 2;
+            nEven = (r + 1) / 2;
+            nOdd = r / 2;
         }
-        if (odd < nodd || even < neven) {
+        if (odd < nOdd || even < nEven) {
             return 0;
         }
-        long oddways = helper(odd, nodd);
-        long evenways = helper(even, neven);
-        long total = oddways;
-        if (evenways == 0 || total > INF / evenways) {
+        long oddWays = helper(odd, nOdd);
+        long evenWays = helper(even, nEven);
+        long total = oddWays;
+        if (evenWays == 0 || total > INF / evenWays) {
             total = INF;
         } else {
-            total *= evenways;
+            total *= evenWays;
         }
         return total;
     }
