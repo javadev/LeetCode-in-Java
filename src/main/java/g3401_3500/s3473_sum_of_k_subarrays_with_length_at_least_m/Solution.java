@@ -23,7 +23,7 @@ public class Solution {
             int[] maxPrev = new int[n + 1];
             for (int i = 0; i < n + 1; i++) {
                 maxPrev[i] =
-                        (i == 0)
+                        i == 0
                                 ? dp[0][j - 1] - prefixSum[0]
                                 : Math.max(maxPrev[i - 1], dp[i][j - 1] - prefixSum[i]);
             }
