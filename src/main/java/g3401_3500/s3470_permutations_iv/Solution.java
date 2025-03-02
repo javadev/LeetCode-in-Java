@@ -38,13 +38,9 @@ public class Solution {
                 count = addCapped(count, multiplyCapped(e, rec(o, e - 1, 0)));
             }
         } else if (req == 0) {
-            if (o > 0) {
-                count = multiplyCapped(o, rec(o - 1, e, 1));
-            }
+            if (o > 0) count = multiplyCapped(o, rec(o - 1, e, 1));
         } else {
-            if (e > 0) {
-                count = multiplyCapped(e, rec(o, e - 1, 0));
-            }
+            if (e > 0) count = multiplyCapped(e, rec(o, e - 1, 0));
         }
         dp[o][e][req] = count;
         return count;
