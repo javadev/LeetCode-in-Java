@@ -1339,7 +1339,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.41'
 | 0392 |[Is Subsequence](src/main/java/g0301_0400/s0392_is_subsequence/Solution.java)| Easy | String, Dynamic_Programming, Two_Pointers | 1 | 93.01
 | 0125 |[Valid Palindrome](src/main/java/g0101_0200/s0125_valid_palindrome/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers | 3 | 98.64
 | 0977 |[Squares of a Sorted Array](src/main/java/g0901_1000/s0977_squares_of_a_sorted_array/Solution.java)| Easy | Array, Sorting, Two_Pointers | 1 | 100.00
-| 0026 |[Remove Duplicates from Sorted Array](src/main/java/g0001_0100/s0026_remove_duplicates_from_sorted_array/Solution.java)| Easy | Top_Interview_Questions, Array, Two_Pointers | 1 | 98.56
+| 0026 |[Remove Duplicates from Sorted Array](src/main/java/g0001_0100/s0026_remove_duplicates_from_sorted_array/Solution.java)| Easy | Top_Interview_Questions, Array, Two_Pointers | 0 | 100.00
 | 0042 |[Trapping Rain Water](src/main/java/g0001_0100/s0042_trapping_rain_water/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Two_Pointers, Stack, Monotonic_Stack, Big_O_Time_O(n)_Space_O(1) | 0 | 100.00
 | 0015 |[3Sum](src/main/java/g0001_0100/s0015_3sum/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Two_Pointers, Big_O_Time_O(n\*log(n))_Space_O(n^2) | 29 | 72.02
 
@@ -1488,7 +1488,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.41'
 |-|-|-|-|-|-
 | 0088 |[Merge Sorted Array](src/main/java/g0001_0100/s0088_merge_sorted_array/Solution.java)| Easy | Top_Interview_Questions, Array, Sorting, Two_Pointers | 0 | 100.00
 | 0027 |[Remove Element](src/main/java/g0001_0100/s0027_remove_element/Solution.java)| Easy | Array, Two_Pointers | 0 | 100.00
-| 0026 |[Remove Duplicates from Sorted Array](src/main/java/g0001_0100/s0026_remove_duplicates_from_sorted_array/Solution.java)| Easy | Top_Interview_Questions, Array, Two_Pointers | 1 | 98.56
+| 0026 |[Remove Duplicates from Sorted Array](src/main/java/g0001_0100/s0026_remove_duplicates_from_sorted_array/Solution.java)| Easy | Top_Interview_Questions, Array, Two_Pointers | 0 | 100.00
 | 0080 |[Remove Duplicates from Sorted Array II](src/main/java/g0001_0100/s0080_remove_duplicates_from_sorted_array_ii/Solution.java)| Medium | Array, Two_Pointers | 0 | 100.00
 | 0169 |[Majority Element](src/main/java/g0101_0200/s0169_majority_element/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Sorting, Counting, Divide_and_Conquer, Big_O_Time_O(n)_Space_O(1) | 1 | 99.89
 | 0189 |[Rotate Array](src/main/java/g0101_0200/s0189_rotate_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Math, Two_Pointers, Big_O_Time_O(n)_Space_O(1) | 0 | 100.00
@@ -1525,10 +1525,10 @@ implementation 'com.github.javadev:leetcode-in-java:1.41'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0209 |[Minimum Size Subarray Sum](src/main/java/g0201_0300/s0209_minimum_size_subarray_sum/Solution.java)| Medium | Array, Binary_Search, Prefix_Sum, Sliding_Window | 1 | 100.00
 | 0003 |[Longest Substring Without Repeating Characters](src/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n)_Space_O(1), AI_can_be_used_to_solve_the_task | 2 | 98.59
-| 0030 |[Substring with Concatenation of All Words](src/main/java/g0001_0100/s0030_substring_with_concatenation_of_all_words/Solution.java)| Hard | String, Hash_Table, Sliding_Window | 1472 | 34.43
+| 0030 |[Substring with Concatenation of All Words](src/main/java/g0001_0100/s0030_substring_with_concatenation_of_all_words/Solution.java)| Hard | String, Hash_Table, Sliding_Window | 11 | 97.43
 | 0076 |[Minimum Window Substring](src/main/java/g0001_0100/s0076_minimum_window_substring/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(s.length())_Space_O(1) | 2 | 99.83
+| 0209 |[Minimum Size Subarray Sum](src/main/java/g0201_0300/s0209_minimum_size_subarray_sum/Solution.java)| Medium | Array, Binary_Search, Prefix_Sum, Sliding_Window | 1 | 100.00
 
 #### Top Interview 150 Matrix
 
@@ -1660,7 +1660,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.41'
 | 0077 |[Combinations](src/main/java/g0001_0100/s0077_combinations/Solution.java)| Medium | Backtracking | 11 | 77.40
 | 0046 |[Permutations](src/main/java/g0001_0100/s0046_permutations/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Backtracking, Big_O_Time_O(n\*n!)_Space_O(n+n!) | 1 | 94.08
 | 0039 |[Combination Sum](src/main/java/g0001_0100/s0039_combination_sum/Solution.java)| Medium | Top_100_Liked_Questions, Array, Backtracking, Big_O_Time_O(2^n)_Space_O(n+2^n) | 1 | 99.99
-| 0052 |[N-Queens II](src/main/java/g0001_0100/s0052_n_queens_ii/Solution.java)| Hard | Backtracking | 1 | 96.99
+| 0052 |[N-Queens II](src/main/java/g0001_0100/s0052_n_queens_ii/Solution.java)| Hard | Backtracking | 0 | 100.00
 | 0022 |[Generate Parentheses](src/main/java/g0001_0100/s0022_generate_parentheses/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Backtracking, Big_O_Time_O(2^n)_Space_O(n) | 0 | 100.00
 | 0079 |[Word Search](src/main/java/g0001_0100/s0079_word_search/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Matrix, Backtracking, Big_O_Time_O(4^(m\*n))_Space_O(m\*n) | 64 | 98.51
 
