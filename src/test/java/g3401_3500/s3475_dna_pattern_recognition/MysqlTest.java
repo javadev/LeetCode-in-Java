@@ -56,63 +56,58 @@ class MysqlTest {
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("1"));
-                assertThat(resultSet.getNString(2), equalTo("ATGCTAGCTAGCTAA"));
-                assertThat(resultSet.getNString(3), equalTo("Human"));
-                assertThat(resultSet.getNString(4), equalTo("TRUE"));
-                assertThat(resultSet.getNString(5), equalTo("TRUE"));
-                assertThat(resultSet.getNString(6), equalTo("FALSE"));
-                assertThat(resultSet.getNString(7), equalTo("FALSE"));
+                checkRow(
+                        resultSet, 1, "ATGCTAGCTAGCTAA", "Human", "TRUE", "TRUE", "FALSE", "FALSE");
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("2"));
-                assertThat(resultSet.getNString(2), equalTo("GGGTCAATCATC"));
-                assertThat(resultSet.getNString(3), equalTo("Human"));
-                assertThat(resultSet.getNString(4), equalTo("FALSE"));
-                assertThat(resultSet.getNString(5), equalTo("FALSE"));
-                assertThat(resultSet.getNString(6), equalTo("FALSE"));
-                assertThat(resultSet.getNString(7), equalTo("TRUE"));
+                checkRow(resultSet, 2, "GGGTCAATCATC", "Human", "FALSE", "FALSE", "FALSE", "TRUE");
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("3"));
-                assertThat(resultSet.getNString(2), equalTo("ATATATCGTAGCTA"));
-                assertThat(resultSet.getNString(3), equalTo("Human"));
-                assertThat(resultSet.getNString(4), equalTo("FALSE"));
-                assertThat(resultSet.getNString(5), equalTo("FALSE"));
-                assertThat(resultSet.getNString(6), equalTo("TRUE"));
-                assertThat(resultSet.getNString(7), equalTo("FALSE"));
+                checkRow(
+                        resultSet, 3, "ATATATCGTAGCTA", "Human", "FALSE", "FALSE", "TRUE", "FALSE");
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("4"));
-                assertThat(resultSet.getNString(2), equalTo("ATGGGGTCATCATAA"));
-                assertThat(resultSet.getNString(3), equalTo("Human"));
-                assertThat(resultSet.getNString(4), equalTo("TRUE"));
-                assertThat(resultSet.getNString(5), equalTo("TRUE"));
-                assertThat(resultSet.getNString(6), equalTo("FALSE"));
-                assertThat(resultSet.getNString(7), equalTo("TRUE"));
+                checkRow(resultSet, 4, "ATGGGGTCATCATAA", "Human", "TRUE", "TRUE", "FALSE", "TRUE");
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("5"));
-                assertThat(resultSet.getNString(2), equalTo("TCAGTCAGTCAG"));
-                assertThat(resultSet.getNString(3), equalTo("Human"));
-                assertThat(resultSet.getNString(4), equalTo("FALSE"));
-                assertThat(resultSet.getNString(5), equalTo("FALSE"));
-                assertThat(resultSet.getNString(6), equalTo("FALSE"));
-                assertThat(resultSet.getNString(7), equalTo("FALSE"));
+                checkRow(resultSet, 5, "TCAGTCAGTCAG", "Human", "FALSE", "FALSE", "FALSE", "FALSE");
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("6"));
-                assertThat(resultSet.getNString(2), equalTo("ATATCGCGCTAG"));
-                assertThat(resultSet.getNString(3), equalTo("Zebrafish"));
-                assertThat(resultSet.getNString(4), equalTo("FALSE"));
-                assertThat(resultSet.getNString(5), equalTo("TRUE"));
-                assertThat(resultSet.getNString(6), equalTo("TRUE"));
-                assertThat(resultSet.getNString(7), equalTo("FALSE"));
+                checkRow(
+                        resultSet,
+                        6,
+                        "ATATCGCGCTAG",
+                        "Zebrafish",
+                        "FALSE",
+                        "TRUE",
+                        "TRUE",
+                        "FALSE");
                 assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("7"));
-                assertThat(resultSet.getNString(2), equalTo("CGTATGCGTCGTA"));
-                assertThat(resultSet.getNString(3), equalTo("Zebrafish"));
-                assertThat(resultSet.getNString(4), equalTo("FALSE"));
-                assertThat(resultSet.getNString(5), equalTo("FALSE"));
-                assertThat(resultSet.getNString(6), equalTo("FALSE"));
-                assertThat(resultSet.getNString(7), equalTo("FALSE"));
+                checkRow(
+                        resultSet,
+                        7,
+                        "CGTATGCGTCGTA",
+                        "Zebrafish",
+                        "FALSE",
+                        "FALSE",
+                        "FALSE",
+                        "FALSE");
                 assertThat(resultSet.next(), equalTo(false));
             }
         }
+    }
+
+    private void checkRow(
+            ResultSet resultSet,
+            int sampleId,
+            String dnaSequence,
+            String species,
+            String hasStart,
+            String hasStop,
+            String hasAtat,
+            String hasGgg)
+            throws SQLException {
+        assertThat(resultSet.getInt(1), equalTo(sampleId));
+        assertThat(resultSet.getNString(2), equalTo(dnaSequence));
+        assertThat(resultSet.getNString(3), equalTo(species));
+        assertThat(resultSet.getNString(4), equalTo(hasStart));
+        assertThat(resultSet.getNString(5), equalTo(hasStop));
+        assertThat(resultSet.getNString(6), equalTo(hasAtat));
+        assertThat(resultSet.getNString(7), equalTo(hasGgg));
     }
 }

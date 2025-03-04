@@ -9,5 +9,6 @@ WITH SampleAnalysisCte AS (
     FROM Samples
 )
 
-SELECT * FROM SampleAnalysisCte
-ORDER BY sample_id;
+SELECT sample_id, dna_sequence, species, has_start, has_stop, has_atat, has_ggg
+FROM SampleAnalysisCte
+ORDER BY sample_id ASC;
