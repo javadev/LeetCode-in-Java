@@ -1,51 +1,50 @@
 package g0001_0100.s0030_substring_with_concatenation_of_all_words;
 
 // #Hard #String #Hash_Table #Sliding_Window #Top_Interview_150_Sliding_Window
-// #2023_08_09_Time_1472_ms_(34.43%)_Space_45_MB_(24.98%)
+// #2025_03_04_Time_11_(97.43%)_Space_45.96_(24.38%)
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@SuppressWarnings("java:S127")
 public class Solution {
     public List<Integer> findSubstring(String s, String[] words) {
-        List<Integer> indices = new ArrayList<>();
-        if (words.length == 0) {
-            return indices;
+        List<Integer> ans = new ArrayList<>();
+        int n1 = words[0].length();
+        int n2 = s.length();
+        Map<String, Integer> map1 = new HashMap<>();
+        for (String ch : words) {
+            map1.put(ch, map1.getOrDefault(ch, 0) + 1);
         }
-        // Put each word into a HashMap and calculate word frequency
-        Map<String, Integer> wordMap = new HashMap<>();
-        for (String word : words) {
-            wordMap.put(word, wordMap.getOrDefault(word, 0) + 1);
-        }
-        int wordLength = words[0].length();
-        int window = words.length * wordLength;
-        for (int i = 0; i < wordLength; i++) {
-            // move a word's length each time
-            for (int j = i; j + window <= s.length(); j = j + wordLength) {
-                // get the subStr
-                String subStr = s.substring(j, j + window);
-                Map<String, Integer> map = new HashMap<>();
-                // start from the last word
-                for (int k = words.length - 1; k >= 0; k--) {
-                    // get the word from subStr
-                    String word = subStr.substring(k * wordLength, (k + 1) * wordLength);
-                    int count = map.getOrDefault(word, 0) + 1;
-                    // if the num of the word is greater than wordMap's, move (k * wordLength) and
-                    // break
-                    if (count > wordMap.getOrDefault(word, 0)) {
-                        j = j + k * wordLength;
-                        break;
-                    } else if (k == 0) {
-                        indices.add(j);
-                    } else {
-                        map.put(word, count);
+        for (int i = 0; i < n1; i++) {
+            int left = i;
+            int j = i;
+            int c = 0;
+            Map<String, Integer> map2 = new HashMap<>();
+            while (j + n1 <= n2) {
+                String word1 = s.substring(j, j + n1);
+                j += n1;
+                if (map1.containsKey(word1)) {
+                    map2.put(word1, map2.getOrDefault(word1, 0) + 1);
+                    c++;
+                    while (map2.get(word1) > map1.get(word1)) {
+                        String word2 = s.substring(left, left + n1);
+                        map2.put(word2, map2.get(word2) - 1);
+                        left += n1;
+                        c--;
                     }
+                    if (c == words.length) {
+                        ans.add(left);
+                    }
+                } else {
+                    map2.clear();
+                    c = 0;
+                    left = j;
                 }
             }
         }
-        return indices;
+
+        return ans;
     }
 }
