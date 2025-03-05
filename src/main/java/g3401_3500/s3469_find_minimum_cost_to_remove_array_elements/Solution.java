@@ -1,29 +1,34 @@
 package g3401_3500.s3469_find_minimum_cost_to_remove_array_elements;
 
-// #Medium #2025_03_02_Time_540_ms_(100.00%)_Space_57.03_MB_(100.00%)
+// #Medium #2025_03_05_Time_12_ms_(100.00%)_Space_45.56_MB_(96.22%)
 
 import java.util.Arrays;
 
 public class Solution {
-    private int[][] dp;
+    private static final int INF = (int) 1e9;
 
     public int minCost(int[] nums) {
-        dp = new int[1001][1001];
-        Arrays.stream(dp).forEach(row -> Arrays.fill(row, -1));
-        return solve(nums, 1, 0);
-    }
-
-    private int solve(int[] nums, int i, int last) {
-        if (i + 1 >= nums.length) {
-            return Math.max(nums[last], (i < nums.length ? nums[i] : 0));
+        int n = nums.length;
+        if (n % 2 == 0) {
+            nums = Arrays.copyOf(nums, ++n);
         }
-        if (dp[i][last] != -1) {
-            return dp[i][last];
+        int[] dp = new int[n];
+        for (int j = 1; j < n - 1; j += 2) {
+            int cost1 = INF;
+            int cost2 = INF;
+            int max = Math.max(nums[j], nums[j + 1]);
+            for (int i = 0; i < j; ++i) {
+                cost1 = Math.min(cost1, dp[i] + Math.max(nums[i], nums[j + 1]));
+                cost2 = Math.min(cost2, dp[i] + Math.max(nums[i], nums[j]));
+                dp[i] += max;
+            }
+            dp[j] = cost1;
+            dp[j + 1] = cost2;
         }
-        int res = Math.max(nums[i], nums[i + 1]) + solve(nums, i + 2, last);
-        res = Math.min(res, Math.max(nums[i], nums[last]) + solve(nums, i + 2, i + 1));
-        res = Math.min(res, Math.max(nums[i + 1], nums[last]) + solve(nums, i + 2, i));
-        dp[i][last] = res;
-        return res;
+        int result = INF;
+        for (int i = 0; i < n; ++i) {
+            result = Math.min(result, dp[i] + nums[i]);
+        }
+        return result;
     }
 }
