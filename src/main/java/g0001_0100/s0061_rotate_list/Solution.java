@@ -1,7 +1,7 @@
 package g0001_0100.s0061_rotate_list;
 
 // #Medium #Two_Pointers #Linked_List #Programming_Skills_II_Day_16 #Udemy_Linked_List
-// #Top_Interview_150_Linked_List #2025_03_04_Time_0_(100.00%)_Space_42.42_(78.37%)
+// #Top_Interview_150_Linked_List #2025_03_04_Time_0_ms_(100.00%)_Space_42.42_MB_(78.37%)
 
 import com_github_leetcode.ListNode;
 
