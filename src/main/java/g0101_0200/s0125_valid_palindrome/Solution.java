@@ -1,7 +1,7 @@
 package g0101_0200.s0125_valid_palindrome;
 
 // #Easy #Top_Interview_Questions #String #Two_Pointers #Udemy_Two_Pointers
-// #Top_Interview_150_Two_Pointers #2022_06_23_Time_3_ms_(98.64%)_Space_43.2_MB_(81.23%)
+// #Top_Interview_150_Two_Pointers #2025_03_06_Time_2_ms_(99.11%)_Space_43.15_MB_(70.82%)
 
 public class Solution {
     public boolean isPalindrome(String s) {
