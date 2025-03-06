@@ -1,6 +1,6 @@
 package g3401_3500.s3474_lexicographically_smallest_generated_string;
 
-// #Hard #2025_03_02_Time_16_ms_(100.00%)_Space_45.37_MB_(100.00%)
+// #Hard #String #Greedy #String_Matching #2025_03_06_Time_17_ms_(64.86%)_Space_45.66_MB_(14.59%)
 
 public class Solution {
     public String generateString(String str1, String str2) {

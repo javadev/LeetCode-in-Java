@@ -1,9 +1,9 @@
 package g3401_3500.s3468_find_the_number_of_copy_arrays;
 
-// #Medium #2025_03_02_Time_2_ms_(100.00%)_Space_97.78_MB_(100.00%)
+// #Medium #Array #Math #2025_03_02_Time_2_ms_(100.00%)_Space_97.78_MB_(100.00%)
 
 public class Solution {
-    int countArrays(int[] original, int[][] bounds) {
+    public int countArrays(int[] original, int[][] bounds) {
         int low = bounds[0][0];
         int high = bounds[0][1];
         int ans = high - low + 1;

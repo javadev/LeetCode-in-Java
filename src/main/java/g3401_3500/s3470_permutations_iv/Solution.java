@@ -1,6 +1,7 @@
 package g3401_3500.s3470_permutations_iv;
 
-// #Hard #2025_03_02_Time_12_ms_(100.00%)_Space_44.78_MB_(100.00%)
+// #Hard #Array #Math #Enumeration #Combinatorics
+// #2025_03_06_Time_11_ms_(59.56%)_Space_45.24_MB_(58.67%)
 
 import java.util.ArrayList;
 import java.util.List;

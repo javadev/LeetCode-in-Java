@@ -1,6 +1,6 @@
 package g3401_3500.s3469_find_minimum_cost_to_remove_array_elements;
 
-// #Medium #2025_03_05_Time_12_ms_(100.00%)_Space_45.56_MB_(96.22%)
+// #Medium #Array #Dynamic_Programming #2025_03_06_Time_12_ms_(100.00%)_Space_45.73_MB_(95.77%)
 
 import java.util.Arrays;
 

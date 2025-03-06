@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# #Medium #2025_03_04_Time_645_ms_(100.00%)_Space_0.0_MB_(100.00%)
+# #Medium #Database #2025_03_06_Time_362_ms_(83.49%)_Space_0.0_MB_(100.00%)
 WITH SampleAnalysisCte AS (
     SELECT sample_id, dna_sequence, species,
         dna_sequence REGEXP '^ATG' AS has_start,
