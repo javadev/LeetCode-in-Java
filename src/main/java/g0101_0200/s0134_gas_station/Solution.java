@@ -1,30 +1,22 @@
 package g0101_0200.s0134_gas_station;
 
 // #Medium #Top_Interview_Questions #Array #Greedy #Top_Interview_150_Array/String
-// #2022_06_24_Time_2_ms_(94.26%)_Space_62.5_MB_(87.11%)
+// #2025_03_06_Time_2_ms_(97.52%)_Space_57.00_MB_(5.82%)
 
 public class Solution {
     public int canCompleteCircuit(int[] gas, int[] cost) {
-        int sumGas = 0;
-        int sumCost = 0;
-        int curGas = 0;
-        int result = -1;
+        int index = 0;
+        int total = 0;
+        int current = 0;
         for (int i = 0; i < gas.length; i++) {
-            curGas += gas[i] - cost[i];
-            // re-calculate the starting point
-            if (curGas < 0) {
-                result = -1;
-                curGas = 0;
-            } else if (result == -1) {
-                // set initial starting point
-                result = i;
+            int balance = gas[i] - cost[i];
+            total += balance;
+            current += balance;
+            if (current < 0) {
+                index = i + 1;
+                current = 0;
             }
-            sumGas += gas[i];
-            sumCost += cost[i];
         }
-        if (sumGas < sumCost) {
-            return -1;
-        }
-        return result;
+        return total >= 0 ? index : -1;
     }
 }
