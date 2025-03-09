@@ -1,7 +1,7 @@
 package g0201_0300.s0201_bitwise_and_of_numbers_range;
 
 // #Medium #Bit_Manipulation #Algorithm_II_Day_19_Bit_Manipulation
-// #Top_Interview_150_Bit_Manipulation #2022_06_28_Time_8_ms_(74.15%)_Space_44.4_MB_(39.54%)
+// #Top_Interview_150_Bit_Manipulation #2025_03_09_Time_3_ms_(100.00%)_Space_43.70_MB_(94.56%)
 
 public class Solution {
     private static final int[] MASKS =
