@@ -40,7 +40,7 @@ public class Solution {
             } else {
                 firstEntry.getValue().remove(0);
             }
-            long covered = n - smallestEnd + 1;
+            long covered = n - smallestEnd + 1L;
             totalPossible -= covered;
             if (endPointMap.isEmpty()) {
                 contributions[pairIndex] += covered;
