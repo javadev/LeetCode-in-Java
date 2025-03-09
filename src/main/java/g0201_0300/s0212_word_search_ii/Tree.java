@@ -1,8 +1,5 @@
 package g0201_0300.s0212_word_search_ii;
 
-// #Hard #Top_Interview_Questions #Array #String #Matrix #Backtracking #Trie #Top_Interview_150_Trie
-// #2025_03_09_Time_17_ms_(99.16%)_Space_45.08_MB_(67.05%)
-
 @SuppressWarnings("java:S1104")
 public class Tree {
     private Tree[] children;
