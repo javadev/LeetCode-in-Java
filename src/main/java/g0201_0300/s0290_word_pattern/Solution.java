@@ -1,7 +1,7 @@
 package g0201_0300.s0290_word_pattern;
 
 // #Easy #String #Hash_Table #Data_Structure_II_Day_7_String #Top_Interview_150_Hashmap
-// #2022_07_06_Time_1_ms_(97.26%)_Space_40.4_MB_(85.78%)
+// #2025_03_09_Time_0_ms_(100.00%)_Space_41.27_MB_(92.07%)
 
 import java.util.HashMap;
 import java.util.Map;

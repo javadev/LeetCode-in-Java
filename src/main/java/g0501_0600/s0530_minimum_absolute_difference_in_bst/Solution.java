@@ -1,7 +1,7 @@
 package g0501_0600.s0530_minimum_absolute_difference_in_bst;
 
 // #Easy #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #Binary_Search_Tree
-// #Top_Interview_150_Binary_Search_Tree #2022_07_28_Time_1_ms_(92.05%)_Space_45_MB_(70.03%)
+// #Top_Interview_150_Binary_Search_Tree #2025_03_09_Time_0_ms_(100.00%)_Space_44.75_MB_(31.94%)
 
 import com_github_leetcode.TreeNode;
 
