@@ -1698,7 +1698,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.41'
 |-|-|-|-|-|-
 | 0215 |[Kth Largest Element in an Array](src/main/java/g0201_0300/s0215_kth_largest_element_in_an_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Quickselect, Big_O_Time_O(n\*log(n))_Space_O(log(n)) | 5 | 70.82
 | 0502 |[IPO](src/main/java/g0501_0600/s0502_ipo/Solution.java)| Hard | Array, Sorting, Greedy, Heap_Priority_Queue | 64 | 97.22
-| 0373 |[Find K Pairs with Smallest Sums](src/main/java/g0301_0400/s0373_find_k_pairs_with_smallest_sums/Solution.java)| Medium | Array, Heap_Priority_Queue | 0 | 100.00
+| 0373 |[Find K Pairs with Smallest Sums](src/main/java/g0301_0400/s0373_find_k_pairs_with_smallest_sums/Solution.java)| Medium | Array, Heap_Priority_Queue | 27 | 90.23
 | 0295 |[Find Median from Data Stream](src/main/java/g0201_0300/s0295_find_median_from_data_stream/MedianFinder.java)| Hard | Top_100_Liked_Questions, Sorting, Two_Pointers, Design, Heap_Priority_Queue, Data_Stream, Big_O_Time_O(n\*log_n)_Space_O(n) | 83 | 99.56
 
 #### Top Interview 150 Bit Manipulation
