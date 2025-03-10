@@ -5,7 +5,6 @@ package g3401_3500.s3480_maximize_subarrays_after_removing_one_conflicting_pair;
 
 import java.util.Arrays;
 
-@SuppressWarnings("java:S135")
 public class Solution {
     public long maxSubarrays(int n, int[][] conflictingPairs) {
         long totalSubarrays = (long) n * (n + 1) / 2;
@@ -49,12 +48,9 @@ public class Solution {
         // (If there is no candidate pair at j, h[j] remains n+1.)
         for (int j = 1; j <= n; j++) {
             // no conflicting pair at index j
-            if (h[j] == n + 1) {
-                continue;
-            }
             // Only if removal would change h[j] (i.e. h[j] < d2[j])
             // no alternative candidate exists
-            if (d2[j] == h[j]) {
+            if (h[j] == n + 1 || d2[j] == h[j]) {
                 continue;
             }
             // Simulate removal: new candidate at j becomes d2[j]
