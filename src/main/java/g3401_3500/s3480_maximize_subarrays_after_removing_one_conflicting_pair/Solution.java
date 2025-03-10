@@ -34,7 +34,7 @@ public class Solution {
         for (int i = n - 1; i >= 1; i--) {
             f[i] = Math.min(h[i], f[i + 1]);
         }
-        // calcXAndN(x) returns (n - x + 1) if x <= n, else 0.
+        // forbiddenCount(x) returns (n - x + 1) if x <= n, else 0.
         // This is the number of forbidden subarrays starting at some i when f[i] = x.
         long originalUnion = 0;
         for (int i = 1; i <= n; i++) {
@@ -65,8 +65,8 @@ public class Solution {
             // For i = j, newF[j] = min( newCandidate, f[j+1] ) (which is newCandidate by
             // definition).
             int newFj = newCandidate;
-            // calcXAndN(x) is defined as (n - x + 1) if x<= n, else 0.
-            long delta = calcXAndN(newFj, n) - calcXAndN(f[j], n);
+            // forbiddenCount(x) is defined as (n - x + 1) if x<= n, else 0.
+            long delta = forbiddenCount(newFj, n) - forbiddenCount(f[j], n);
             int cur = newFj;
             // Now update backwards for i = j-1 down to 1.
             for (int i = j - 1; i >= 1; i--) {
@@ -75,7 +75,7 @@ public class Solution {
                 if (newVal == f[i]) {
                     break;
                 }
-                delta += calcXAndN(newVal, n) - calcXAndN(f[i], n);
+                delta += forbiddenCount(newVal, n) - forbiddenCount(f[i], n);
                 cur = newVal;
             }
             long newUnion = originalUnion + delta;
@@ -85,7 +85,7 @@ public class Solution {
         return best;
     }
 
-    private long calcXAndN(int x, int n) {
+    private long forbiddenCount(int x, int n) {
         return x <= n ? (n - x + 1) : 0;
     }
 }
