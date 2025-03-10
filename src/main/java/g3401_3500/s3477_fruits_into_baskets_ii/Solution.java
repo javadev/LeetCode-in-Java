@@ -1,6 +1,7 @@
 package g3401_3500.s3477_fruits_into_baskets_ii;
 
-// #Easy #2025_03_09_Time_2_ms_(100.00%)_Space_45.04_MB_(100.00%)
+// #Easy #Array #Binary_Search #Simulation #Segment_Tree
+// #2025_03_10_Time_2_ms_(100.00%)_Space_43.96_MB_(100.00%)
 
 public class Solution {
     public int numOfUnplacedFruits(int[] fruits, int[] baskets) {

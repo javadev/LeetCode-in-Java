@@ -1,6 +1,7 @@
 package g3401_3500.s3480_maximize_subarrays_after_removing_one_conflicting_pair;
 
-// #Hard #2025_03_09_Time_581_ms_(_%)_Space_163.11_MB_(_%)
+// #Hard #Array #Prefix_Sum #Enumeration #Segment_Tree
+// #2025_03_10_Time_567_ms_(100.00%)_Space_159.65_MB_(50.00%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

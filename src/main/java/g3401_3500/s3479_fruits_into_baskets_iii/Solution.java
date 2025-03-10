@@ -1,6 +1,7 @@
 package g3401_3500.s3479_fruits_into_baskets_iii;
 
-// #Medium #2025_03_09_Time_629_ms_(100.00%)_Space_67.19_MB_(100.00%)
+// #Medium #Array #Binary_Search #Ordered_Set #Segment_Tree
+// #2025_03_10_Time_655_ms_(100.00%)_Space_65.58_MB_(50.00%)
 
 import java.util.ArrayList;
 import java.util.List;
