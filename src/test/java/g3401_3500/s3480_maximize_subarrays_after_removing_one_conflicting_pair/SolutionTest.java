@@ -21,4 +21,11 @@ class SolutionTest {
     void maxSubarrays3() {
         assertThat(new Solution().maxSubarrays(10, new int[][] {{10, 5}, {3, 8}}), equalTo(50L));
     }
+
+    @Test
+    void maxSubarrays4() {
+        assertThat(
+                new Solution().maxSubarrays(25, new int[][] {{9, 7}, {15, 7}, {4, 7}}),
+                equalTo(216L));
+    }
 }
