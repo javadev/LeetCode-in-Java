@@ -5,9 +5,9 @@ package g3401_3500.s3480_maximize_subarrays_after_removing_one_conflicting_pair;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public long maxSubarrays(int n, int[][] conflictingPairs) {
-        int[][] thornibrax = conflictingPairs;
         long totalSubarrays = (long) n * (n + 1) / 2;
         int[] h = new int[n + 1];
         int[] d2 = new int[n + 1];
