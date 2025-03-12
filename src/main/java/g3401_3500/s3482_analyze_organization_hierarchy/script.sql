@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# #Hard #2025_03_11_Time_712_ms_(100.00%)_Space_0.0_MB_(100.00%)
+# #Hard #Database #2025_03_11_Time_712_ms_(100.00%)_Space_0.0_MB_(100.00%)
 with recursive org_hierarchy(orig_employee_id, orig_employee_name, employee_id, employee_name, manager_id, salary, org_level) as
 (
     select employee_id as orig_employee_id,
