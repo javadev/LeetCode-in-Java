@@ -63,68 +63,27 @@ class MysqlTest {
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {
-                assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("1"));
-                assertThat(resultSet.getNString(2), equalTo("Alice"));
-                assertThat(resultSet.getNString(3), equalTo("1"));
-                assertThat(resultSet.getNString(4), equalTo("9"));
-                assertThat(resultSet.getNString(5), equalTo("84500"));
-                assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("3"));
-                assertThat(resultSet.getNString(2), equalTo("Charlie"));
-                assertThat(resultSet.getNString(3), equalTo("2"));
-                assertThat(resultSet.getNString(4), equalTo("4"));
-                assertThat(resultSet.getNString(5), equalTo("41500"));
-                assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("2"));
-                assertThat(resultSet.getNString(2), equalTo("Bob"));
-                assertThat(resultSet.getNString(3), equalTo("2"));
-                assertThat(resultSet.getNString(4), equalTo("3"));
-                assertThat(resultSet.getNString(5), equalTo("31000"));
-                assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("6"));
-                assertThat(resultSet.getNString(2), equalTo("Frank"));
-                assertThat(resultSet.getNString(3), equalTo("3"));
-                assertThat(resultSet.getNString(4), equalTo("2"));
-                assertThat(resultSet.getNString(5), equalTo("23000"));
-                assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("4"));
-                assertThat(resultSet.getNString(2), equalTo("David"));
-                assertThat(resultSet.getNString(3), equalTo("3"));
-                assertThat(resultSet.getNString(4), equalTo("1"));
-                assertThat(resultSet.getNString(5), equalTo("13500"));
-                assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("7"));
-                assertThat(resultSet.getNString(2), equalTo("Grace"));
-                assertThat(resultSet.getNString(3), equalTo("3"));
-                assertThat(resultSet.getNString(4), equalTo("0"));
-                assertThat(resultSet.getNString(5), equalTo("8500"));
-                assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("5"));
-                assertThat(resultSet.getNString(2), equalTo("Eva"));
-                assertThat(resultSet.getNString(3), equalTo("3"));
-                assertThat(resultSet.getNString(4), equalTo("0"));
-                assertThat(resultSet.getNString(5), equalTo("7500"));
-                assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("9"));
-                assertThat(resultSet.getNString(2), equalTo("Ivy"));
-                assertThat(resultSet.getNString(3), equalTo("4"));
-                assertThat(resultSet.getNString(4), equalTo("0"));
-                assertThat(resultSet.getNString(5), equalTo("7000"));
-                assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("10"));
-                assertThat(resultSet.getNString(2), equalTo("Judy"));
-                assertThat(resultSet.getNString(3), equalTo("4"));
-                assertThat(resultSet.getNString(4), equalTo("0"));
-                assertThat(resultSet.getNString(5), equalTo("7000"));
-                assertThat(resultSet.next(), equalTo(true));
-                assertThat(resultSet.getNString(1), equalTo("8"));
-                assertThat(resultSet.getNString(2), equalTo("Hank"));
-                assertThat(resultSet.getNString(3), equalTo("4"));
-                assertThat(resultSet.getNString(4), equalTo("0"));
-                assertThat(resultSet.getNString(5), equalTo("6000"));
+                checkRow(resultSet, new String[] {"1", "Alice", "1", "9", "84500"});
+                checkRow(resultSet, new String[] {"3", "Charlie", "2", "4", "41500"});
+                checkRow(resultSet, new String[] {"2", "Bob", "2", "3", "31000"});
+                checkRow(resultSet, new String[] {"6", "Frank", "3", "2", "23000"});
+                checkRow(resultSet, new String[] {"4", "David", "3", "1", "13500"});
+                checkRow(resultSet, new String[] {"7", "Grace", "3", "0", "8500"});
+                checkRow(resultSet, new String[] {"5", "Eva", "3", "0", "7500"});
+                checkRow(resultSet, new String[] {"9", "Ivy", "4", "0", "7000"});
+                checkRow(resultSet, new String[] {"10", "Judy", "4", "0", "7000"});
+                checkRow(resultSet, new String[] {"8", "Hank", "4", "0", "6000"});
                 assertThat(resultSet.next(), equalTo(false));
             }
         }
+    }
+
+    private static void checkRow(ResultSet resultSet, String[] values) throws SQLException {
+        assertThat(resultSet.next(), equalTo(true));
+        assertThat(resultSet.getNString(1), equalTo(values[0]));
+        assertThat(resultSet.getNString(2), equalTo(values[1]));
+        assertThat(resultSet.getNString(3), equalTo(values[2]));
+        assertThat(resultSet.getNString(4), equalTo(values[3]));
+        assertThat(resultSet.getNString(5), equalTo(values[4]));
     }
 }
