@@ -78,7 +78,7 @@ class MysqlTest {
         }
     }
 
-    private static void checkRow(ResultSet resultSet, String[] values) throws SQLException {
+    private void checkRow(ResultSet resultSet, String[] values) throws SQLException {
         assertThat(resultSet.next(), equalTo(true));
         assertThat(resultSet.getNString(1), equalTo(values[0]));
         assertThat(resultSet.getNString(2), equalTo(values[1]));
