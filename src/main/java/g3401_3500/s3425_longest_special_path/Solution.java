@@ -6,7 +6,7 @@ package g3401_3500.s3425_longest_special_path;
 import java.util.ArrayList;
 import java.util.List;
 
-@SuppressWarnings("unchecked")
+@SuppressWarnings({"java:S107", "unchecked"})
 public class Solution {
     public int[] longestSpecialPath(int[][] edges, int[] nums) {
         int n = edges.length + 1;

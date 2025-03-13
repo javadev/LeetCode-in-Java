@@ -19,4 +19,18 @@ class MKAverageTest {
         obj.addElement(5);
         assertThat(obj.calculateMKAverage(), equalTo(5));
     }
+
+    @Test
+    void mKAverage2() {
+        MKAverage obj = new MKAverage(6, 1);
+        obj.addElement(3);
+        obj.addElement(1);
+        assertThat(obj.calculateMKAverage(), equalTo(-1));
+        obj.addElement(12);
+        assertThat(obj.calculateMKAverage(), equalTo(-1));
+        obj.addElement(5);
+        obj.addElement(3);
+        obj.addElement(4);
+        assertThat(obj.calculateMKAverage(), equalTo(3));
+    }
 }

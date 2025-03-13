@@ -6,13 +6,12 @@ package g1801_1900.s1825_finding_mk_average;
 import java.util.LinkedList;
 import java.util.TreeSet;
 
-@SuppressWarnings("java:S2184")
 public class MKAverage {
-    private int capacity;
-    private int boundary;
-    private int[] nums;
-    private TreeSet<Integer> numSet;
-    private LinkedList<Integer> order;
+    private final int capacity;
+    private final int boundary;
+    private final int[] nums;
+    private final TreeSet<Integer> numSet;
+    private final LinkedList<Integer> order;
 
     public MKAverage(int m, int k) {
         this.capacity = m;
@@ -63,7 +62,9 @@ public class MKAverage {
     }
 }
 
-/**
- * Your MKAverage object will be instantiated and called as such: MKAverage obj = new MKAverage(m,
- * k); obj.addElement(num); int param_2 = obj.calculateMKAverage();
+/*
+ * Your MKAverage object will be instantiated and called as such:
+ * MKAverage obj = new MKAverage(m, k);
+ * obj.addElement(num);
+ * int param_2 = obj.calculateMKAverage();
  */
