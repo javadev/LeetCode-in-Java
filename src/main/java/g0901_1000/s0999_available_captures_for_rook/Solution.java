@@ -1,97 +1,61 @@
 package g0901_1000.s0999_available_captures_for_rook;
 
-// #Easy #Array #Matrix #Simulation #2022_03_31_Time_0_ms_(100.00%)_Space_41.8_MB_(28.74%)
+// #Easy #Array #Matrix #Simulation #2025_03_13_Time_0_ms_(100.00%)_Space_40.75_MB_(94.97%)
 
 @SuppressWarnings("java:S135")
 public class Solution {
-    private int[] directions = new int[] {0, 1, 0, -1, 0};
-
     public int numRookCaptures(char[][] board) {
-        int m = board.length;
-        int n = board[0].length;
-        int rowR = -1;
-        int colR = -1;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
+        // Find the position of the rook
+        int rookRow = -1;
+        int rookCol = -1;
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
                 if (board[i][j] == 'R') {
-                    rowR = i;
-                    colR = j;
+                    rookRow = i;
+                    rookCol = j;
                     break;
                 }
             }
+            if (rookRow != -1) {
+                break;
+            }
         }
-        int[] count = {0};
-        for (int i = 0; i < 4; i++) {
-            int neighborRow = rowR + directions[i];
-            int neighborCol = colR + directions[i + 1];
-            if (neighborRow >= 0
-                    && neighborRow < m
-                    && neighborCol >= 0
-                    && neighborCol < n
-                    && board[neighborRow][neighborCol] != 'B') {
-                if (directions[i] == 0 && directions[i + 1] == 1) {
-                    extracted(board, n, count, neighborRow, neighborCol);
-                } else if (directions[i] == 1 && directions[i + 1] == 0) {
-                    extracted1(board, m, count, neighborRow, neighborCol);
-                } else if (directions[i] == 0 && directions[i + 1] == -1) {
-                    extracted(board, count, neighborRow, neighborCol);
-                } else {
-                    extracted1(board, count, neighborRow, neighborCol);
+        // Define the four directions: up, right, down, left
+        int[][] directions = {
+            // up
+            {-1, 0},
+            // right
+            {0, 1},
+            // down
+            {1, 0},
+            // left
+            {0, -1}
+        };
+        int captureCount = 0;
+        // Check each direction
+        for (int[] dir : directions) {
+            int row = rookRow;
+            int col = rookCol;
+            while (true) {
+                // Move one step in the current direction
+                row += dir[0];
+                col += dir[1];
+                // Check if out of bounds
+                if (row < 0 || row >= 8 || col < 0 || col >= 8) {
+                    break;
                 }
+                // If we hit a bishop, we're blocked
+                if (board[row][col] == 'B') {
+                    break;
+                }
+                // If we hit a pawn, we can capture it and then we're blocked
+                if (board[row][col] == 'p') {
+                    captureCount++;
+                    break;
+                }
+                // Otherwise (empty square), continue in the same direction
             }
         }
-        return count[0];
-    }
-
-    private void extracted(char[][] board, int[] count, int neighborRow, int neighborCol) {
-        while (neighborCol >= 0) {
-            if (board[neighborRow][neighborCol] == 'p') {
-                count[0]++;
-                break;
-            } else if (board[neighborRow][neighborCol] == 'B') {
-                break;
-            } else {
-                neighborCol--;
-            }
-        }
-    }
-
-    private void extracted(char[][] board, int n, int[] count, int neighborRow, int neighborCol) {
-        while (neighborCol < n) {
-            if (board[neighborRow][neighborCol] == 'p') {
-                count[0]++;
-                break;
-            } else if (board[neighborRow][neighborCol] == 'B') {
-                break;
-            } else {
-                neighborCol++;
-            }
-        }
-    }
-
-    private void extracted1(char[][] board, int[] count, int neighborRow, int neighborCol) {
-        while (neighborRow >= 0) {
-            if (board[neighborRow][neighborCol] == 'p') {
-                count[0]++;
-                break;
-            } else if (board[neighborRow][neighborCol] == 'B') {
-                break;
-            } else {
-                neighborRow--;
-            }
-        }
-    }
-
-    private void extracted1(char[][] board, int m, int[] count, int neighborRow, int neighborCol) {
-        while (neighborRow < m) {
-            if (board[neighborRow][neighborCol] == 'p') {
-                count[0]++;
-                break;
-            } else if (board[neighborRow][neighborCol] == 'B') {
-                break;
-            } else {
-                neighborRow++;
-            }
-        }
+        return captureCount;
     }
 }

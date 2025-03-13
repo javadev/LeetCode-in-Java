@@ -1,96 +1,63 @@
 package g3401_3500.s3425_longest_special_path;
 
 // #Hard #Array #Hash_Table #Depth_First_Search #Tree #Sliding_Window
-// #2025_01_22_Time_49_ms_(74.66%)_Space_98.04_MB_(44.26%)
+// #2025_03_13_Time_48_ms_(81.52%)_Space_86.51_MB_(86.87%)
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 
 @SuppressWarnings("unchecked")
 public class Solution {
-    private ArrayList<int[]>[] adj;
-    private int[] nums;
-    private int[] dist;
-    private int[] lastOccur;
-    private ArrayList<Integer> pathStack;
-    private int minIndex;
-    private int maxLen;
-    private int minNodesForMaxLen;
-
     public int[] longestSpecialPath(int[][] edges, int[] nums) {
-        int n = nums.length;
-        this.nums = nums;
-        adj = new ArrayList[n];
+        int n = edges.length + 1;
+        int max = 0;
+        List<int[]>[] adj = new List[n];
         for (int i = 0; i < n; i++) {
             adj[i] = new ArrayList<>();
+            max = Math.max(nums[i], max);
         }
         for (int[] e : edges) {
-            int u = e[0];
-            int v = e[1];
-            int w = e[2];
-            adj[u].add(new int[] {v, w});
-            adj[v].add(new int[] {u, w});
+            adj[e[0]].add(new int[] {e[1], e[2]});
+            adj[e[1]].add(new int[] {e[0], e[2]});
         }
-        dist = new int[n];
-        buildDist(0, -1, 0);
-        int maxVal = 0;
-        for (int val : nums) {
-            if (val > maxVal) {
-                maxVal = val;
-            }
-        }
-        lastOccur = new int[maxVal + 1];
-        Arrays.fill(lastOccur, -1);
-        pathStack = new ArrayList<>();
-        minIndex = 0;
-        maxLen = 0;
-        minNodesForMaxLen = Integer.MAX_VALUE;
-        dfs(0, -1);
-        return new int[] {maxLen, minNodesForMaxLen};
+        int[] dist = new int[n];
+        int[] res = new int[] {0, Integer.MAX_VALUE};
+        int[] st = new int[n + 1];
+        Integer[] seen = new Integer[max + 1];
+        dfs(adj, nums, res, dist, seen, st, 0, -1, 0, 0);
+        return res;
     }
 
-    private void buildDist(int u, int parent, int currDist) {
-        dist[u] = currDist;
-        for (int[] edge : adj[u]) {
-            int v = edge[0];
-            int w = edge[1];
-            if (v == parent) {
+    private void dfs(
+            List<int[]>[] adj,
+            int[] nums,
+            int[] res,
+            int[] dist,
+            Integer[] seen,
+            int[] st,
+            int node,
+            int parent,
+            int start,
+            int pos) {
+        Integer last = seen[nums[node]];
+        if (last != null && last >= start) {
+            start = last + 1;
+        }
+        seen[nums[node]] = pos;
+        st[pos] = node;
+        int len = dist[node] - dist[st[start]];
+        int sz = pos - start + 1;
+        if (res[0] < len || res[0] == len && res[1] > sz) {
+            res[0] = len;
+            res[1] = sz;
+        }
+        for (int[] neighbor : adj[node]) {
+            if (neighbor[0] == parent) {
                 continue;
             }
-            buildDist(v, u, currDist + w);
+            dist[neighbor[0]] = dist[node] + neighbor[1];
+            dfs(adj, nums, res, dist, seen, st, neighbor[0], node, start, pos + 1);
         }
-    }
-
-    private void dfs(int u, int parent) {
-        int stackPos = pathStack.size();
-        pathStack.add(u);
-        int val = nums[u];
-        int oldPos = lastOccur[val];
-        int oldMinIndex = minIndex;
-        lastOccur[val] = stackPos;
-        if (oldPos >= minIndex) {
-            minIndex = oldPos + 1;
-        }
-        if (minIndex <= stackPos) {
-            int ancestor = pathStack.get(minIndex);
-            int pathLength = dist[u] - dist[ancestor];
-            int pathNodes = stackPos - minIndex + 1;
-            if (pathLength > maxLen) {
-                maxLen = pathLength;
-                minNodesForMaxLen = pathNodes;
-            } else if (pathLength == maxLen && pathNodes < minNodesForMaxLen) {
-                minNodesForMaxLen = pathNodes;
-            }
-        }
-        for (int[] edge : adj[u]) {
-            int v = edge[0];
-            if (v == parent) {
-                continue;
-            }
-            dfs(v, u);
-        }
-        pathStack.remove(pathStack.size() - 1);
-        lastOccur[val] = oldPos;
-        minIndex = oldMinIndex;
+        seen[nums[node]] = last;
     }
 }
