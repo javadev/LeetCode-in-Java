@@ -86,7 +86,8 @@ public class Solution {
     }
 
     private int getIndex(int index, int mod) {
-        return index < 0 ? index + mod : index >= mod ? index - mod : index;
+        int result = index >= mod ? index - mod : index;
+        return index < 0 ? index + mod : result;
     }
 
     private static class BIT {
