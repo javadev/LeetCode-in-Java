@@ -42,7 +42,8 @@ public class Solution {
         } else {
             limit = 9;
         }
-        int count = 0, j = 0;
+        int count = 0;
+        int j = 0;
         while (j <= limit) {
             int newTight = 0;
             if (tight == 1 && j == limit) {
