@@ -6,8 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    private int n;
-    private final int maxVal = 50000;
+    private final static int MAX_VAL = 50000;
     private int dupCount;
     private int overCount;
     private long ansLength;
@@ -19,7 +18,7 @@ public class Solution {
     private int[] freq;
 
     public int[] longestSpecialPath(int[][] edges, int[] nums) {
-        this.n = nums.length;
+        int n = nums.length;
         this.nums = nums;
         adj = new ArrayList<>();
         for (int i = 0; i < n; i++) {
@@ -36,7 +35,7 @@ public class Solution {
         // Preallocate DFS chain arrays
         path = new int[n];
         dist = new long[n];
-        freq = new int[maxVal + 1];
+        freq = new int[MAX_VAL + 1];
         ansLength = 0;
         ansNodes = Integer.MAX_VALUE;
         dupCount = 0;

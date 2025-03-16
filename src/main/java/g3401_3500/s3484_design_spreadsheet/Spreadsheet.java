@@ -7,16 +7,16 @@ import java.util.Map;
 
 @SuppressWarnings("unused")
 public class Spreadsheet {
-    private final Map<String, Integer> spreadsheet = new HashMap<>();
+    private final Map<String, Integer> data = new HashMap<>();
 
     public Spreadsheet(int rows) {}
 
     public void setCell(String cell, int value) {
-        spreadsheet.put(cell, value);
+        data.put(cell, value);
     }
 
     public void resetCell(String cell) {
-        spreadsheet.put(cell, 0);
+        data.put(cell, 0);
     }
 
     public int getValue(String formula) {
@@ -25,11 +25,11 @@ public class Spreadsheet {
         String right = formula.substring(index + 1);
         int x =
                 Character.isLetter(left.charAt(0))
-                        ? spreadsheet.getOrDefault(left, 0)
+                        ? data.getOrDefault(left, 0)
                         : Integer.parseInt(left);
         int y =
                 Character.isLetter(right.charAt(0))
-                        ? spreadsheet.getOrDefault(right, 0)
+                        ? data.getOrDefault(right, 0)
                         : Integer.parseInt(right);
         return x + y;
     }
