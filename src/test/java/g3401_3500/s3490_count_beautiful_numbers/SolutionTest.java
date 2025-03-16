@@ -15,4 +15,9 @@ class SolutionTest {
     void beautifulNumbers2() {
         assertThat(new Solution().beautifulNumbers(1, 15), equalTo(10));
     }
+
+    @Test
+    void beautifulNumbers3() {
+        assertThat(new Solution().beautifulNumbers(6725, 270910825), equalTo(178996547));
+    }
 }

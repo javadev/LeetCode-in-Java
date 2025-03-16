@@ -23,7 +23,8 @@ public class Solution {
         if (q[k][0] <= i && i <= q[k][1]) {
             res = Math.min(res, solve(q, i, target - q[k][2], k + 1, dp));
         }
-        return dp[target][k] = res;
+        dp[target][k] = res;
+        return res;
     }
 
     public int minZeroArray(int[] nums, int[][] queries) {

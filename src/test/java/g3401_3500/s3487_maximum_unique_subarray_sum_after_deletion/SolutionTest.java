@@ -20,4 +20,9 @@ class SolutionTest {
     void maxSum3() {
         assertThat(new Solution().maxSum(new int[] {1, 2, -1, -2, 1, 0, -1}), equalTo(3));
     }
+
+    @Test
+    void maxSum4() {
+        assertThat(new Solution().maxSum(new int[] {-100}), equalTo(-100));
+    }
 }

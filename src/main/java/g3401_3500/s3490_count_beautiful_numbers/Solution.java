@@ -10,9 +10,6 @@ public class Solution {
     }
 
     private int countBeautiful(int x) {
-        if (x < 0) {
-            return 0;
-        }
         char[] digits = getCharArray(x);
         HashMap<String, Integer> dp = new HashMap<>();
         return solve(0, 1, 0, 1, digits, dp);
