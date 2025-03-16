@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("java:S107")
 public class Solution {
     public int[] longestSpecialPath(int[][] edges, int[] nums) {
         int[] ans = {0, 1};
