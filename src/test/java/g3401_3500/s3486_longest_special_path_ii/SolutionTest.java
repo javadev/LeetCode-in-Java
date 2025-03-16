@@ -28,4 +28,14 @@ class SolutionTest {
                                 new int[] {1, 1, 0, 2}),
                 equalTo(new int[] {5, 2}));
     }
+
+    @Test
+    void longestSpecialPath3() {
+        assertThat(
+                new Solution()
+                        .longestSpecialPath(
+                                new int[][] {{0, 2, 4}, {1, 2, 10}, {3, 1, 5}},
+                                new int[] {4, 5, 4, 5}),
+                equalTo(new int[] {15, 3}));
+    }
 }
