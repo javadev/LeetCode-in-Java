@@ -37,6 +37,11 @@ public class Solution {
             left.parent[j] = pos[size - 1];
             right.parent[j] = max;
         }
+        return List.of(getBooleans(queries, m, size, left, right, bit));
+    }
+
+    private Boolean[] getBooleans(
+            int[][] queries, int m, int size, UnionFind left, UnionFind right, BIT bit) {
         Boolean[] ans = new Boolean[m - size + 1];
         int index = ans.length - 1;
         for (int i = m - 1; i >= 0; i--) {
@@ -53,7 +58,7 @@ public class Solution {
                 ans[index--] = maxGap >= q[2];
             }
         }
-        return List.of(ans);
+        return ans;
     }
 
     private static final class BIT {
