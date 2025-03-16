@@ -24,6 +24,12 @@ public class Solution {
         UnionFind left = new UnionFind(max + 1);
         UnionFind right = new UnionFind(max + 1);
         BIT bit = new BIT(max);
+        initializePositions(size, pos, bit, left, right, max);
+        return List.of(getBooleans(queries, m, size, left, right, bit));
+    }
+
+    private void initializePositions(
+            int size, int[] pos, BIT bit, UnionFind left, UnionFind right, int max) {
         for (int i = 1; i < size; i++) {
             int pre = pos[i - 1];
             int cur = pos[i];
@@ -37,7 +43,6 @@ public class Solution {
             left.parent[j] = pos[size - 1];
             right.parent[j] = max;
         }
-        return List.of(getBooleans(queries, m, size, left, right, bit));
     }
 
     private Boolean[] getBooleans(
