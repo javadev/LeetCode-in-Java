@@ -93,7 +93,7 @@ public class Solution {
     }
 
     private static final class UnionFind {
-        public int[] parent;
+        private final int[] parent;
 
         public UnionFind(int n) {
             parent = new int[n];
