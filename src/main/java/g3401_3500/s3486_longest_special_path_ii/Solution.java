@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    private final static int MAX_VAL = 50000;
+    private static final int MAX_VAL = 50000;
     private int dupCount;
     private int overCount;
     private long ansLength;
