@@ -1,76 +1,80 @@
 package g3301_3400.s3327_check_if_dfs_strings_are_palindromes;
 
 // #Hard #Array #String #Hash_Table #Depth_First_Search #Tree #Hash_Function
-// #2024_10_22_Time_159_ms_(90.40%)_Space_93.9_MB_(80.80%)
-
-import java.util.ArrayList;
-import java.util.List;
+// #2025_03_16_Time_70_ms_(100.00%)_Space_75.50_MB_(96.67%)
 
 public class Solution {
-    private final List<List<Integer>> e = new ArrayList<>();
-    private final StringBuilder stringBuilder = new StringBuilder();
-    private String s;
-    private int now;
-    private int n;
-    private int[] l;
-    private int[] r;
-    private int[] p;
-    private char[] c;
-
-    private void dfs(int x) {
-        l[x] = now + 1;
-        for (int v : e.get(x)) {
-            dfs(v);
-        }
-        stringBuilder.append(s.charAt(x));
-        r[x] = ++now;
-    }
-
-    private void matcher() {
-        c[0] = '~';
-        c[1] = '#';
-        for (int i = 1; i <= n; ++i) {
-            c[2 * i + 1] = '#';
-            c[2 * i] = stringBuilder.charAt(i - 1);
-        }
-        int j = 1;
-        int mid = 0;
-        int localR = 0;
-        while (j <= 2 * n + 1) {
-            if (j <= localR) {
-                p[j] = Math.min(p[(mid << 1) - j], localR - j + 1);
-            }
-            while (c[j - p[j]] == c[j + p[j]]) {
-                ++p[j];
-            }
-            if (p[j] + j > localR) {
-                localR = p[j] + j - 1;
-                mid = j;
-            }
-            ++j;
-        }
-    }
+    private int time = 0;
+    private byte[] cs;
+    private int[][] graph;
 
     public boolean[] findAnswer(int[] parent, String s) {
-        n = parent.length;
-        this.s = s;
-        for (int i = 0; i < n; ++i) {
-            e.add(new ArrayList<>());
+        int n = s.length();
+        cs = s.getBytes();
+        graph = new int[n][];
+        final int[] childCount = new int[n];
+        for (int i = 1; i < n; i++) {
+            childCount[parent[i]]++;
         }
-        for (int i = 1; i < n; ++i) {
-            e.get(parent[i]).add(i);
+        for (int i = 0; i < n; i++) {
+            graph[i] = new int[childCount[i]];
+            childCount[i] = 0;
         }
-        l = new int[n];
-        r = new int[n];
-        dfs(0);
-        c = new char[2 * n + 10];
-        p = new int[2 * n + 10];
-        matcher();
+        for (int i = 1; i < n; i++) {
+            graph[parent[i]][childCount[parent[i]]++] = i;
+        }
+        byte[] dfsStr = new byte[n];
+        int[] start = new int[n];
+        int[] end = new int[n];
+        dfs(0, dfsStr, start, end);
+        int[] lens = getRadius(dfsStr);
         boolean[] ans = new boolean[n];
-        for (int i = 0; i < n; ++i) {
-            int mid = (2 * r[i] - 2 * l[i] + 1) / 2 + 2 * l[i];
-            ans[i] = p[mid] - 1 >= r[i] - l[i] + 1;
+        for (int i = 0; i < n; i++) {
+            int l = start[i];
+            int r = end[i];
+            int center = l + r + 2;
+            ans[i] = lens[center] >= r - l + 1;
         }
         return ans;
+    }
+
+    private void dfs(int u, byte[] dfsStr, int[] start, int[] end) {
+        start[u] = time;
+        for (int v : graph[u]) {
+            dfs(v, dfsStr, start, end);
+        }
+        dfsStr[time] = cs[u];
+        end[u] = time++;
+    }
+
+    private int[] getRadius(byte[] cs) {
+        int n = cs.length;
+        byte[] t = new byte[2 * n + 3];
+        int m = 0;
+        t[m++] = '@';
+        t[m++] = '#';
+        for (byte c : cs) {
+            t[m++] = c;
+            t[m++] = '#';
+        }
+        t[m++] = '$';
+        int[] lens = new int[m];
+        int center = 0;
+        int right = 0;
+        for (int i = 2; i < m - 2; i++) {
+            int len = 0;
+            if (i < right) {
+                len = Math.min(lens[2 * center - i], right - i);
+            }
+            while (t[i + len + 1] == t[i - len - 1]) {
+                len++;
+            }
+            if (right < i + len) {
+                right = i + len;
+                center = i;
+            }
+            lens[i] = len;
+        }
+        return lens;
     }
 }
