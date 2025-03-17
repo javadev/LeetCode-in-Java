@@ -1,6 +1,6 @@
 package g3401_3500.s3490_count_beautiful_numbers;
 
-// #Hard #2025_03_16_Time_512_ms_(100.00%)_Space_55.59_MB_(100.00%)
+// #Hard #Dynamic_Programming #2025_03_17_Time_523_ms_(100.00%)_Space_55.41_MB_(100.00%)
 
 import java.util.HashMap;
 

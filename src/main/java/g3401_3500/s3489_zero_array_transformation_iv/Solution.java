@@ -1,6 +1,6 @@
 package g3401_3500.s3489_zero_array_transformation_iv;
 
-// #Medium #2025_03_16_Time_136_ms_(100.00%)_Space_55.84_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #2025_03_17_Time_142_ms_(100.00%)_Space_56.22_MB_(100.00%)
 
 import java.util.Arrays;
 

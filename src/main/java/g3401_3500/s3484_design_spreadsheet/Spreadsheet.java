@@ -1,6 +1,7 @@
 package g3401_3500.s3484_design_spreadsheet;
 
-// #Medium #2025_03_16_Time_109_ms_(100.00%)_Space_56.41_MB_(100.00%)
+// #Medium #Array #String #Hash_Table #Matrix #Design
+// #2025_03_17_Time_117_ms_(100.00%)_Space_56.71_MB_(100.00%)
 
 import java.util.HashMap;
 import java.util.Map;

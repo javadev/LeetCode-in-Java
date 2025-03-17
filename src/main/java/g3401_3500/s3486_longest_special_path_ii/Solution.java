@@ -1,6 +1,7 @@
 package g3401_3500.s3486_longest_special_path_ii;
 
-// #Hard #2025_03_16_Time_178_ms_(_%)_Space_102.66_MB_(_%)
+// #Hard #Array #Hash_Table #Tree #Prefix_Sum #Depth_First_Search
+// #2025_03_17_Time_166_ms_(_%)_Space_105.50_MB_(_%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

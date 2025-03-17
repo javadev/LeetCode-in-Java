@@ -1,6 +1,7 @@
 package g3401_3500.s3488_closest_equal_element_queries;
 
-// #Medium #2025_03_16_Time_50_ms_(100.00%)_Space_78.29_MB_(100.00%)
+// #Medium #Array #Hash_Table #Binary_Search
+// #2025_03_17_Time_50_ms_(100.00%)_Space_74.96_MB_(100.00%)
 
 import java.util.ArrayList;
 import java.util.HashMap;

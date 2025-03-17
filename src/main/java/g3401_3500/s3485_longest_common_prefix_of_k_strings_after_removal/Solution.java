@@ -1,6 +1,6 @@
 package g3401_3500.s3485_longest_common_prefix_of_k_strings_after_removal;
 
-// #Hard #2025_03_16_Time_390_ms_(100.00%)_Space_75.60_MB_(100.00%)
+// #Hard #Array #String #Trie #2025_03_17_Time_333_ms_(100.00%)_Space_64.12_MB_(100.00%)
 
 public class Solution {
     private static class TrieNode {
