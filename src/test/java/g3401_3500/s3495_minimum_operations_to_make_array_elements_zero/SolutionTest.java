@@ -15,4 +15,14 @@ class SolutionTest {
     void minOperations2() {
         assertThat(new Solution().minOperations(new int[][] {{2, 6}}), equalTo(4L));
     }
+
+    @Test
+    void minOperations3() {
+        assertThat(new Solution().minOperations(new int[][] {{5, 8}}), equalTo(4L));
+    }
+
+    @Test
+    void minOperations4() {
+        assertThat(new Solution().minOperations(new int[][] {{1, 21}}), equalTo(23L));
+    }
 }
