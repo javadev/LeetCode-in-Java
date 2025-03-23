@@ -18,65 +18,12 @@ Return the **minimum** amount of time required for the potions to be brewed prop
 
 **Explanation:**
 
-Potion Number
-
-Start time
-
-Wizard 0 done by
-
-Wizard 1 done by
-
-Wizard 2 done by
-
-Wizard 3 done by
-
-0
-
-0
-
-5
-
-30
-
-40
-
-60
-
-1
-
-52
-
-53
-
-58
-
-60
-
-64
-
-2
-
-54
-
-58
-
-78
-
-86
-
-102
-
-3
-
-86
-
-88
-
-98
-
-102
-
-110
+| Potion Number | Start time | Wizard 0 done by | Wizard 1 done by | Wizard 2 done by | Wizard 3 done by |
+|--------------|-----------|------------------|------------------|------------------|------------------|
+| 0            | 0         | 5                | 30               | 40               | 60               |
+| 1            | 52        | 53               | 58               | 60               | 64               |
+| 2            | 54        | 58               | 78               | 86               | 102              |
+| 3            | 86        | 88               | 98               | 102              | 110              |
 
 As an example for why wizard 0 cannot start working on the 1<sup>st</sup> potion before time `t = 52`, consider the case where the wizards started preparing the 1<sup>st</sup> potion at time `t = 50`. At time `t = 58`, wizard 2 is done with the 1<sup>st</sup> potion, but wizard 3 will still be working on the 0<sup>th</sup> potion till time `t = 60`.
 
