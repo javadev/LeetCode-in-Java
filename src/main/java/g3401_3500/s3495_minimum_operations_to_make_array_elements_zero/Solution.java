@@ -15,7 +15,7 @@ public class Solution {
             }
             long group;
             if (query[1] < v) {
-                group = query[1] - query[0] + 1;
+                group = query[1] - query[0] + 1L;
                 totalReq += group * req;
                 result += (totalReq + 1) / 2;
                 continue;
