@@ -45,7 +45,7 @@ public class Solution {
 
     private int findp(int x) {
         if (parent[x] != x) {
-            parent[x] = findp(parent[x]); // Path compression
+            parent[x] = findp(parent[x]);
         }
         return parent[x];
     }
