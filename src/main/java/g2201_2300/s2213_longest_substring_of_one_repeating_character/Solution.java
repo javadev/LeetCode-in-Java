@@ -1,93 +1,73 @@
 package g2201_2300.s2213_longest_substring_of_one_repeating_character;
 
 // #Hard #Array #String #Ordered_Set #Segment_Tree
-// #2022_06_12_Time_141_ms_(86.81%)_Space_148.3_MB_(47.22%)
+// #2025_03_25_Time_79_ms_(89.74%)_Space_66.05_MB_(89.74%)
 
 public class Solution {
-    static class TreeNode {
-        int start;
-        int end;
-        char leftChar;
-        int leftCharLen;
-        char rightChar;
-        int rightCharLen;
-        int max;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int start, int end) {
-            this.start = start;
-            this.end = end;
-            left = null;
-            right = null;
-        }
-    }
+    private char[] ca;
 
     public int[] longestRepeating(String s, String queryCharacters, int[] queryIndices) {
-        char[] sChar = s.toCharArray();
-        char[] qChar = queryCharacters.toCharArray();
-        TreeNode root = buildTree(sChar, 0, sChar.length - 1);
-        int[] result = new int[qChar.length];
-        for (int i = 0; i < qChar.length; i++) {
-            updateTree(root, queryIndices[i], qChar[i]);
-            if (root != null) {
-                result[i] = root.max;
-            }
+        ca = s.toCharArray();
+        int[] result = new int[queryIndices.length];
+        SegmentTree root = new SegmentTree(0, ca.length);
+        for (int i = 0; i < queryIndices.length; i++) {
+            ca[queryIndices[i]] = queryCharacters.charAt(i);
+            root.update(queryIndices[i]);
+            result[i] = root.longest;
         }
         return result;
     }
 
-    private TreeNode buildTree(char[] s, int from, int to) {
-        if (from > to) {
-            return null;
-        }
-        TreeNode root = new TreeNode(from, to);
-        if (from == to) {
-            root.max = 1;
-            root.rightChar = root.leftChar = s[from];
-            root.leftCharLen = root.rightCharLen = 1;
-            return root;
-        }
-        int middle = from + (to - from) / 2;
-        root.left = buildTree(s, from, middle);
-        root.right = buildTree(s, middle + 1, to);
-        updateNode(root);
-        return root;
-    }
+    private class SegmentTree {
+        final int start;
+        final int end;
+        int longest;
+        int leftLength;
+        int rightLength;
+        SegmentTree left;
+        SegmentTree right;
 
-    private void updateTree(TreeNode root, int index, char c) {
-        if (root == null || root.start > index || root.end < index) {
-            return;
+        SegmentTree(int start, int end) {
+            this.start = start;
+            this.end = end;
+            if (end - start > 1) {
+                int mid = (start + end) / 2;
+                left = new SegmentTree(start, mid);
+                right = new SegmentTree(mid, end);
+                merge();
+            } else {
+                longest = leftLength = rightLength = 1;
+            }
         }
-        if (root.start == index && root.end == index) {
-            root.leftChar = root.rightChar = c;
-            return;
-        }
-        updateTree(root.left, index, c);
-        updateTree(root.right, index, c);
-        updateNode(root);
-    }
 
-    private void updateNode(TreeNode root) {
-        if (root == null) {
-            return;
+        void update(int index) {
+            if (end - start == 1) {
+                return;
+            }
+            if (index < left.end) {
+                left.update(index);
+            } else {
+                right.update(index);
+            }
+            merge();
         }
-        root.leftChar = root.left.leftChar;
-        root.leftCharLen = root.left.leftCharLen;
-        root.rightChar = root.right.rightChar;
-        root.rightCharLen = root.right.rightCharLen;
-        root.max = Math.max(root.left.max, root.right.max);
-        if (root.left.rightChar == root.right.leftChar) {
-            int len = root.left.rightCharLen + root.right.leftCharLen;
-            if (root.left.leftChar == root.left.rightChar
-                    && root.left.leftCharLen == root.left.end - root.left.start + 1) {
-                root.leftCharLen = len;
+
+        private void merge() {
+            longest = Math.max(left.longest, right.longest);
+            if (ca[left.end - 1] == ca[right.start]) {
+                longest = Math.max(longest, left.rightLength + right.leftLength);
+                leftLength =
+                        (left.leftLength == left.end - left.start)
+                                ? left.leftLength + right.leftLength
+                                : left.leftLength;
+                rightLength =
+                        (right.rightLength == right.end - right.start)
+                                ? right.rightLength + left.rightLength
+                                : right.rightLength;
+            } else {
+                leftLength = left.leftLength;
+                rightLength = right.rightLength;
             }
-            if (root.right.leftChar == root.right.rightChar
-                    && root.right.leftCharLen == root.right.end - root.right.start + 1) {
-                root.rightCharLen = len;
-            }
-            root.max = Math.max(root.max, len);
         }
     }
 }
