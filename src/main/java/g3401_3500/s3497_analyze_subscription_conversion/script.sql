@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# #Medium #2025_03_29_Time_347_ms_(100.00%)_Space_0.0_MB_(100.00%)
+# #Medium #Database #2025_03_29_Time_347_ms_(100.00%)_Space_0.0_MB_(100.00%)
 SELECT 
     ft.user_id,
     ROUND(ft.avg_trial, 2) AS trial_avg_duration,
