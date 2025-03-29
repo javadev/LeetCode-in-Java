@@ -15,4 +15,4 @@ JOIN
      WHERE activity_type = 'paid'
      GROUP BY user_id) pt
 ON ft.user_id = pt.user_id
-ORDER BY ft.user_id;
+ORDER BY ft.user_id ASC;
