@@ -4,6 +4,7 @@ package g3401_3500.s3500_minimum_cost_to_divide_array_into_subarrays;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S107")
 public class Solution {
     public long minimumCost(int[] nums, int[] cost, int k) {
         int n = nums.length;
@@ -49,7 +50,8 @@ public class Solution {
             long val =
                     (prefixNums[j] + (long) k * i) * (prefixCost[j + 1] - prefixCost[index])
                             + rec(j + 1, i + 1, nums, prefixNums, prefixCost, k, memo, bestSplit);
-            return memo[index][i] = val;
+            memo[index][i] = val;
+            return val;
         }
         long best = Long.MAX_VALUE;
         int bestIndex = -1;
