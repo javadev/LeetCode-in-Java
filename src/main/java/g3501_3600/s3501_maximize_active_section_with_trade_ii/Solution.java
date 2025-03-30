@@ -43,7 +43,8 @@ public class Solution {
         }
         List<Integer> result = new ArrayList<>();
         for (int[] query : queries) {
-            int left = query[0], right = query[1];
+            int left = query[0];
+            int right = query[1];
             int leftIndex = binarySearch(segments, left) - 1;
             int rightIndex = binarySearch(segments, right) - 1;
             if (rightIndex - leftIndex + 1 <= 2) {
@@ -73,7 +74,8 @@ public class Solution {
     }
 
     private int binarySearch(List<int[]> segments, int key) {
-        int lo = 0, hi = segments.size();
+        int lo = 0;
+        int hi = segments.size();
         while (lo < hi) {
             int mid = lo + (hi - lo) / 2;
             if (segments.get(mid)[0] > key) {
