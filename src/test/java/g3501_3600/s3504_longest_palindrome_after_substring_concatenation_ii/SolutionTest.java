@@ -25,4 +25,9 @@ class SolutionTest {
     void longestPalindrome4() {
         assertThat(new Solution().longestPalindrome("abcde", "ecdba"), equalTo(5));
     }
+
+    @Test
+    void longestPalindrome5() {
+        assertThat(new Solution().longestPalindrome("xxz", "z"), equalTo(2));
+    }
 }
