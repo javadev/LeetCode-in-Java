@@ -39,4 +39,13 @@ class SolutionTest {
                         .maxActiveSectionsAfterTrade("01010", new int[][] {{0, 3}, {1, 4}, {1, 3}}),
                 equalTo(List.of(4, 4, 2)));
     }
+
+    @Test
+    void maxActiveSectionsAfterTrade5() {
+        assertThat(
+                new Solution()
+                        .maxActiveSectionsAfterTrade(
+                                "10110111", new int[][] {{3, 7}, {4, 6}, {0, 6}}),
+                equalTo(List.of(6, 6, 8)));
+    }
 }
