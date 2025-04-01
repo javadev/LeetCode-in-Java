@@ -1,6 +1,7 @@
 package g3501_3600.s3504_longest_palindrome_after_substring_concatenation_ii;
 
-// #Hard #2025_03_30_Time_21_ms_(100.00%)_Space_56.36_MB_(57.78%)
+// #Hard #String #Dynamic_Programming #Two_Pointers
+// #2025_04_01_Time_25_ms_(99.50%)_Space_52.97_MB_(90.50%)
 
 public class Solution {
     private int[] sPa;

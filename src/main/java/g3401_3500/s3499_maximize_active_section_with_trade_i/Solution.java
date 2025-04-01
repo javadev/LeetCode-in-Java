@@ -1,6 +1,6 @@
 package g3401_3500.s3499_maximize_active_section_with_trade_i;
 
-// #Medium #2025_03_30_Time_55_ms_(100.00%)_Space_45.50_MB_(100.00%)
+// #Medium #String #Enumeration #2025_04_01_Time_54_ms_(97.98%)_Space_45.89_MB_(76.19%)
 
 public class Solution {
     public int maxActiveSectionsAfterTrade(String s) {

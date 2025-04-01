@@ -1,6 +1,7 @@
 package g3501_3600.s3505_minimum_operations_to_make_elements_within_k_subarrays_equal;
 
-// #Hard #2025_03_30_Time_512_ms_(95.52%)_Space_82.02_MB_(14.18%)
+// #Hard #Array #Hash_Table #Dynamic_Programming #Math #Heap_Priority_Queue #Sliding_Window
+// #2025_04_01_Time_547_ms_(77.95%)_Space_82.16_MB_(16.92%)
 
 import java.util.Arrays;
 import java.util.Collections;

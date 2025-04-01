@@ -1,6 +1,7 @@
 package g3501_3600.s3501_maximize_active_section_with_trade_ii;
 
-// #Hard #2025_03_30_Time_260_ms_(100.00%)_Space_119.42_MB_(100.00%)
+// #Hard #Array #String #Binary_Search #Segment_Tree
+// #2025_04_01_Time_256_ms_(63.33%)_Space_106.80_MB_(56.67%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

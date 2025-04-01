@@ -1,37 +1,75 @@
 package g3501_3600.s3503_longest_palindrome_after_substring_concatenation_i;
 
-// #Medium #2025_03_30_Time_389_ms_(56.95%)_Space_45.18_MB_(96.47%)
+// #Medium #String #Dynamic_Programming #Two_Pointers #Enumeration
+// #2025_04_01_Time_30_ms_(97.15%)_Space_42.23_MB_(99.79%)
 
 public class Solution {
     public int longestPalindrome(String s, String t) {
-        int result = 0;
-        for (int i = 0; i <= s.length(); i++) {
-            for (int j = i; j <= s.length(); j++) {
-                String subStrS = s.substring(i, j);
-                for (int k = 0; k <= t.length(); k++) {
-                    for (int l = k; l <= t.length(); l++) {
-                        String subStrT = t.substring(k, l);
-                        String combineStr = subStrS + subStrT;
-                        if (isPalindrome(combineStr)) {
-                            result = Math.max(result, combineStr.length());
+        int maxLen = 0;
+        maxLen = Math.max(maxLen, longestPalindromicSubstring(s));
+        maxLen = Math.max(maxLen, longestPalindromicSubstring(t));
+        int sLen = s.length();
+        int tLen = t.length();
+        for (int i = 0; i < sLen; i++) {
+            for (int j = i; j < sLen; j++) {
+                int m = j - i + 1;
+                for (int k = 0; k < tLen; k++) {
+                    for (int l = k; l < tLen; l++) {
+                        int n = l - k + 1;
+                        int totalLength = m + n;
+                        if (totalLength <= maxLen) {
+                            continue;
+                        }
+                        boolean isPalindrome = true;
+                        for (int p = 0; p < totalLength / 2; p++) {
+                            int q = totalLength - 1 - p;
+                            char c1, c2;
+                            if (p < m) {
+                                c1 = s.charAt(i + p);
+                            } else {
+                                c1 = t.charAt(k + (p - m));
+                            }
+                            if (q < m) {
+                                c2 = s.charAt(i + q);
+                            } else {
+                                c2 = t.charAt(k + (q - m));
+                            }
+                            if (c1 != c2) {
+                                isPalindrome = false;
+                                break;
+                            }
+                        }
+                        if (isPalindrome) {
+                            maxLen = totalLength;
                         }
                     }
                 }
             }
         }
-        return result;
+        return maxLen;
     }
 
-    private boolean isPalindrome(String input) {
-        int left = 0;
-        int right = input.length() - 1;
-        while (left < right) {
-            if (input.charAt(left) != input.charAt(right)) {
-                return false;
+    private int longestPalindromicSubstring(String str) {
+        int max = 0;
+        int len = str.length();
+        for (int i = 0; i < len; i++) {
+            for (int j = i; j < len; j++) {
+                boolean isPalin = true;
+                int left = i;
+                int right = j;
+                while (left < right) {
+                    if (str.charAt(left) != str.charAt(right)) {
+                        isPalin = false;
+                        break;
+                    }
+                    left++;
+                    right--;
+                }
+                if (isPalin) {
+                    max = Math.max(max, j - i + 1);
+                }
             }
-            left++;
-            right--;
         }
-        return true;
+        return max;
     }
 }
