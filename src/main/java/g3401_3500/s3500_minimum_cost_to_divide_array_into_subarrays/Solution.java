@@ -7,7 +7,7 @@ package g3401_3500.s3500_minimum_cost_to_divide_array_into_subarrays;
 public class Solution {
     public long minimumCost(int[] nums, int[] cost, int k) {
         int n = nums.length;
-        long kLong = (long) k;
+        long kLong = k;
         long[] preNums = new long[n + 1];
         long[] preCost = new long[n + 1];
         for (int i = 0; i < n; i++) {
