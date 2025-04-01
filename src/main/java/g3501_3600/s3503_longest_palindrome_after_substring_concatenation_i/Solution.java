@@ -23,7 +23,8 @@ public class Solution {
                         boolean isPalindrome = true;
                         for (int p = 0; p < totalLength / 2; p++) {
                             int q = totalLength - 1 - p;
-                            char c1, c2;
+                            char c1;
+                            char c2;
                             if (p < m) {
                                 c1 = s.charAt(i + p);
                             } else {
