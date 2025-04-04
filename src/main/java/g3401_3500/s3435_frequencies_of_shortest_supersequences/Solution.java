@@ -1,109 +1,113 @@
 package g3401_3500.s3435_frequencies_of_shortest_supersequences;
 
 // #Hard #Array #String #Bit_Manipulation #Graph #Enumeration #Topological_Sort
-// #2025_01_29_Time_16_ms_(95.35%)_Space_45.52_MB_(93.02%)
+// #2025_04_04_Time_20_ms_(97.26%)_Space_45.52_MB_(83.56%)
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
+@SuppressWarnings("unchecked")
 public class Solution {
-    private int m;
-    private int forcedMask;
-    private int[] adj;
-    private char[] idxToChar = new char[26];
-    private int[] charToIdx = new int[26];
-    private boolean[] used = new boolean[26];
+    private int min = Integer.MAX_VALUE;
+    private List<int[]> lists = new ArrayList<>();
 
     public List<List<Integer>> supersequences(String[] words) {
-        Arrays.fill(charToIdx, -1);
-        for (String w : words) {
-            used[w.charAt(0) - 'a'] = true;
-            used[w.charAt(1) - 'a'] = true;
-        }
-        // Map each used letter to an index [0..m-1]
-        for (int c = 0; c < 26; c++) {
-            if (used[c]) {
-                idxToChar[m] = (char) (c + 'a');
-                charToIdx[c] = m++;
+        boolean[][] pairs = new boolean[26][26];
+        int[] counts = new int[26];
+        for (String word : words) {
+            int a = word.charAt(0) - 'a';
+            int b = word.charAt(1) - 'a';
+            if (!pairs[a][b]) {
+                pairs[a][b] = true;
+                counts[a]++;
+                counts[b]++;
             }
         }
-        adj = new int[m];
-        // Build graph and record forced duplicates
-        for (String w : words) {
-            int u = charToIdx[w.charAt(0) - 'a'];
-            int v = charToIdx[w.charAt(1) - 'a'];
-            if (u == v) {
-                forcedMask |= (1 << u);
+        List<Integer>[] links = new ArrayList[26];
+        for (int i = 0; i < 26; i++) {
+            links[i] = new ArrayList<>();
+        }
+        int[] counts1 = new int[26];
+        int[] sides = new int[26];
+        for (int i = 0; i < 26; i++) {
+            for (int j = 0; j < 26; j++) {
+                if (pairs[i][j]) {
+                    links[i].add(j);
+                    counts1[j]++;
+                    sides[i] |= 1;
+                    sides[j] |= 2;
+                }
+            }
+        }
+        int[] arr = new int[26];
+        for (int i = 0; i < 26; i++) {
+            if (counts[i] <= 1) {
+                arr[i] = counts[i];
+            } else if (counts1[i] == 0 || sides[i] != 3) {
+                arr[i] = 1;
+            } else if (pairs[i][i]) {
+                arr[i] = 2;
             } else {
-                adj[u] |= (1 << v);
+                arr[i] = -1;
             }
         }
-        // Try all supersets of forcedMask; keep those that kill all cycles
-        int best = 9999;
-        List<Integer> goodSets = new ArrayList<>();
-        for (int s = 0; s < (1 << m); s++) {
-            if ((s & forcedMask) != forcedMask) {
-                continue;
+        dfs(links, 0, arr, new int[26], 0);
+        List<List<Integer>> res = new ArrayList<>();
+        for (int[] arr1 : lists) {
+            List<Integer> list = new ArrayList<>();
+            for (int n : arr1) {
+                list.add(n);
             }
-            int size = Integer.bitCount(s);
-            if (size <= best && !hasCycle(s)) {
-                if (size < best) {
-                    best = size;
-                    goodSets.clear();
-                }
-                goodSets.add(s);
-            }
+            res.add(list);
         }
-        // Build distinct freq arrays from these sets
-        Set<String> seen = new HashSet<>();
-        List<List<Integer>> ans = new ArrayList<>();
-        for (int s : goodSets) {
-            int[] freq = new int[26];
-            for (int i = 0; i < m; i++) {
-                freq[idxToChar[i] - 'a'] = ((s & (1 << i)) != 0) ? 2 : 1;
-            }
-            String key = Arrays.toString(freq);
-            if (seen.add(key)) {
-                List<Integer> tmp = new ArrayList<>();
-                for (int f : freq) {
-                    tmp.add(f);
-                }
-                ans.add(tmp);
-            }
-        }
-        return ans;
+        return res;
     }
 
-    private boolean hasCycle(int mask) {
-        int[] color = new int[m];
-        for (int i = 0; i < m; i++) {
-            if (((mask >> i) & 1) == 0 && color[i] == 0 && dfs(i, color, mask)) {
-                return true;
-            }
+    private void dfs(List<Integer>[] links, int i, int[] arr1, int[] arr, int n) {
+        if (n > min) {
+            return;
         }
-        return false;
+        if (i == 26) {
+            if (!chk(links, arr)) {
+                return;
+            }
+            if (n < min) {
+                min = n;
+                lists = new ArrayList<>();
+                lists.add(arr.clone());
+            } else if (n == min) {
+                lists.add(arr.clone());
+            }
+            return;
+        }
+        if (arr1[i] >= 0) {
+            arr[i] = arr1[i];
+            dfs(links, i + 1, arr1, arr, n + arr1[i]);
+        } else {
+            arr[i] = 1;
+            dfs(links, i + 1, arr1, arr, n + 1);
+            arr[i] = 2;
+            dfs(links, i + 1, arr1, arr, n + 2);
+        }
     }
 
-    private boolean dfs(int u, int[] color, int mask) {
-        color[u] = 1;
-        int nxt = adj[u];
-        while (nxt != 0) {
-            int v = Integer.numberOfTrailingZeros(nxt);
-            nxt &= (nxt - 1);
-            if (((mask >> v) & 1) == 1) {
-                continue;
+    private boolean chk(List<Integer>[] links, int[] arr) {
+        for (int i = 0; i < 26; i++) {
+            if (arr[i] == 1 && dfs1(links, arr, new boolean[26], i)) {
+                return false;
             }
-            if (color[v] == 1) {
-                return true;
-            }
-            if (color[v] == 0 && dfs(v, color, mask)) {
+        }
+        return true;
+    }
+
+    private boolean dfs1(List<Integer>[] links, int[] arr, boolean[] seens, int i) {
+        seens[i] = true;
+        for (int next : links[i]) {
+            if (arr[next] == 1 && (seens[next] || dfs1(links, arr, seens, next))) {
                 return true;
             }
         }
-        color[u] = 2;
+        seens[i] = false;
         return false;
     }
 }
