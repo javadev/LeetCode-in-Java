@@ -1,74 +1,96 @@
 package g1601_1700.s1659_maximize_grid_happiness;
 
 // #Hard #Dynamic_Programming #Bit_Manipulation #Bitmask #Memoization
-// #2022_04_23_Time_95_ms_(75.00%)_Space_53.1_MB_(58.33%)
+// #2025_04_04_Time_39_ms_(86.36%)_Space_54.76_MB_(72.73%)
 
+@SuppressWarnings("java:S107")
 public class Solution {
-    private int m;
-    private int n;
-    private int[][][][][] dp;
-    private int notPlace = 0;
-    private int intro = 1;
-    private int extro = 2;
-    private int mod;
+    private static final int NONE = 0;
+    private static final int INTROVERT = 1;
+    private static final int EXTROVERT = 2;
 
-    public int getMaxGridHappiness(int m, int n, int introvertsCount, int extrovertsCount) {
-        this.m = m;
-        this.n = n;
-        int numOfState = (int) Math.pow(3, n);
-        this.dp = new int[m][n][introvertsCount + 1][extrovertsCount + 1][numOfState];
-        this.mod = numOfState / 3;
-        return dfs(0, 0, introvertsCount, extrovertsCount, 0);
+    private int maxHappiness(
+            int index,
+            int m,
+            int n,
+            int introverts,
+            int extroverts,
+            int board,
+            int[][][][] dp,
+            int tmask) {
+        if (index >= m * n) {
+            return 0;
+        }
+        if (dp[index][introverts][extroverts][board] != 0) {
+            return dp[index][introverts][extroverts][board];
+        }
+        int introScore = -1;
+        int extroScore = -1;
+        if (introverts > 0) {
+            int newBoard = ((board << 2) | INTROVERT) & tmask;
+            introScore =
+                    120
+                            + adjust(board, INTROVERT, n, index)
+                            + maxHappiness(
+                                    index + 1,
+                                    m,
+                                    n,
+                                    introverts - 1,
+                                    extroverts,
+                                    newBoard,
+                                    dp,
+                                    tmask);
+        }
+        if (extroverts > 0) {
+            int newBoard = ((board << 2) | EXTROVERT) & tmask;
+            extroScore =
+                    40
+                            + adjust(board, EXTROVERT, n, index)
+                            + maxHappiness(
+                                    index + 1,
+                                    m,
+                                    n,
+                                    introverts,
+                                    extroverts - 1,
+                                    newBoard,
+                                    dp,
+                                    tmask);
+        }
+        int newBoard = ((board << 2) | NONE) & tmask;
+        int skip = maxHappiness(index + 1, m, n, introverts, extroverts, newBoard, dp, tmask);
+        dp[index][introverts][extroverts][board] = Math.max(skip, Math.max(introScore, extroScore));
+        return dp[index][introverts][extroverts][board];
     }
 
-    private int dfs(int x, int y, int ic, int ec, int state) {
-        if (x == m) {
-            return 0;
-        } else if (y == n) {
-            return dfs(x + 1, 0, ic, ec, state);
+    private int adjust(int board, int thisIs, int col, int index) {
+        int shiftBy = 2 * (col - 1);
+        int left = board & 0x03;
+        if (index % col == 0) {
+            left = NONE;
         }
-        if (dp[x][y][ic][ec][state] != 0) {
-            return dp[x][y][ic][ec][state];
+        int up = (board >> shiftBy) & 0x03;
+        int[] combination = new int[] {left, up};
+        int adjustment = 0;
+        for (int neighbor : combination) {
+            if (neighbor == NONE) {
+                continue;
+            }
+            if (neighbor == INTROVERT && thisIs == INTROVERT) {
+                adjustment -= 60;
+            } else if (neighbor == INTROVERT && thisIs == EXTROVERT) {
+                adjustment -= 10;
+            } else if (neighbor == EXTROVERT && thisIs == INTROVERT) {
+                adjustment -= 10;
+            } else if (neighbor == EXTROVERT && thisIs == EXTROVERT) {
+                adjustment += 40;
+            }
         }
-        // 1 - not place
-        int max = dfs(x, y + 1, ic, ec, (state % mod) * 3);
-        int up = state / mod;
-        int left = state % 3;
-        // 2 - place intro
-        if (ic > 0) {
-            int temp = 120;
-            if (x > 0 && up != notPlace) {
-                temp -= 30;
-                temp += up == intro ? -30 : 20;
-            }
-            if (y > 0 && left != notPlace) {
-                temp -= 30;
-                temp += left == intro ? -30 : 20;
-            }
-            int nextState = state;
-            nextState %= mod;
-            nextState *= 3;
-            nextState += intro;
-            max = Math.max(max, temp + dfs(x, y + 1, ic - 1, ec, nextState));
-        }
-        // 3 - place extro
-        if (ec > 0) {
-            int temp = 40;
-            if (x > 0 && up != notPlace) {
-                temp += 20;
-                temp += up == intro ? -30 : 20;
-            }
-            if (y > 0 && left != notPlace) {
-                temp += 20;
-                temp += left == intro ? -30 : 20;
-            }
-            int nextState = state;
-            nextState %= mod;
-            nextState *= 3;
-            nextState += extro;
-            max = Math.max(max, temp + dfs(x, y + 1, ic, ec - 1, nextState));
-        }
-        dp[x][y][ic][ec][state] = max;
-        return max;
+        return adjustment;
+    }
+
+    public int getMaxGridHappiness(int m, int n, int introvertsCount, int extrovertsCount) {
+        int[][][][] dp = new int[m * n][introvertsCount + 1][extrovertsCount + 1][(1 << (2 * n))];
+        int tmask = (1 << (2 * n)) - 1;
+        return maxHappiness(0, m, n, introvertsCount, extrovertsCount, 0, dp, tmask);
     }
 }
