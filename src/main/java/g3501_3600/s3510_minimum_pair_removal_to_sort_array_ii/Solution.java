@@ -204,8 +204,8 @@ public class Solution {
     }
 
     private static class LST {
-        public long[][] set;
-        public int n;
+        long[][] set;
+        int n;
 
         public LST(int n) {
             this.n = n;
