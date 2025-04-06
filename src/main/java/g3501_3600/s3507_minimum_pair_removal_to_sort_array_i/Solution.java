@@ -1,6 +1,6 @@
 package g3501_3600.s3507_minimum_pair_removal_to_sort_array_i;
 
-// #Easy #2025_04_06_Time_1_ms_(100.00%)_Space_43.18_MB_(31.56%)
+// #Easy #2025_04_06_Time_1_ms_(100.00%)_Space_43.21_MB_(23.72%)
 
 public class Solution {
     public int minimumPairRemoval(int[] nums) {
