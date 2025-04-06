@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("java:S127")
 public class Solution {
     public int minimumPairRemoval(int[] nums) {
         int n = nums.length;
@@ -64,16 +65,16 @@ public class Solution {
     }
 
     public static class MinHeapL {
-        public long[] hi;
-        public long[] lo;
-        public int[] map;
-        public int[] imap;
-        public int n;
-        public int pos;
-        public static final long INF = Long.MAX_VALUE;
+        static final long INF = Long.MAX_VALUE;
+
+        long[] hi;
+        long[] lo;
+        int[] map;
+        int[] imap;
+        int n;
+        int pos;
 
         public MinHeapL(int m) {
-            // ヒープ配列のサイズは内部実装に合わせて決定
             n = Integer.highestOneBit((m + 1) << 1);
             hi = new long[n];
             lo = new long[n];

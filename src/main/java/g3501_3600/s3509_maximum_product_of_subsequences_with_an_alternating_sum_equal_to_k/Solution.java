@@ -6,6 +6,7 @@ import java.util.BitSet;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("java:S6541")
 public class Solution {
     static class StateKey {
         int prod;

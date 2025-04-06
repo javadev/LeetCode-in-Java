@@ -19,7 +19,8 @@ public class Solution {
             // Merge the pair at index
             int[] newNums = new int[nums.length - 1];
             int j = 0;
-            for (int i = 0; i < nums.length; i++) {
+            int i = 0;
+            while (i < nums.length) {
                 if (i == index) {
                     newNums[j++] = nums[i] + nums[i + 1];
                     // Skip the next one since it's merged
@@ -27,6 +28,7 @@ public class Solution {
                 } else {
                     newNums[j++] = nums[i];
                 }
+                i++;
             }
             nums = newNums;
             operations++;

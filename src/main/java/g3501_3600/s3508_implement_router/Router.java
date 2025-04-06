@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
+@SuppressWarnings("java:S135")
 public class Router {
     private final int size;
     private int cur;
