@@ -40,4 +40,26 @@ class RouterTest {
         // Return [] and remove it from router.
         assertThat(router.forwardPacket(), equalTo(new int[] {}));
     }
+
+    @Test
+    void router3() {
+        // Initialize Router with memoryLimit of 3.
+        Router router = new Router(3);
+        // Packet is added. Return True.
+        assertThat(router.addPacket(1, 4, 6), equalTo(true));
+        // The only packet with destination 0 and timestamp in the inclusive range
+        assertThat(router.getCount(4, 1, 4), equalTo(0));
+    }
+
+    @Test
+    void router4() {
+        // Initialize Router with memoryLimit of 2.
+        Router router = new Router(2);
+        // Packet is added. Return True.
+        assertThat(router.addPacket(2, 5, 1), equalTo(true));
+        // Return [2, 5, 1] and remove it from router.
+        assertThat(router.forwardPacket(), equalTo(new int[] {2, 5, 1}));
+        // The only packet with destination 0 and timestamp in the inclusive range
+        assertThat(router.getCount(5, 1, 1), equalTo(0));
+    }
 }

@@ -5,8 +5,8 @@ package g3501_3600.s3510_minimum_pair_removal_to_sort_array_ii;
 
 public class Solution {
     private static class Segment {
-        private int start;
-        private int end;
+        private final int start;
+        private final int end;
         private Segment left;
         private Segment right;
         private int lIdx;
