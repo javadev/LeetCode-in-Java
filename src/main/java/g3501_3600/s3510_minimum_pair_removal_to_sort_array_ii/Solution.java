@@ -1,6 +1,7 @@
 package g3501_3600.s3510_minimum_pair_removal_to_sort_array_ii;
 
-// #Hard #2025_04_06_Time_478_ms_(100.00%)_Space_62.47_MB_(99.17%)
+// #Hard #Array #Hash_Table #Heap_Priority_Queue #Simulation #Linked_List #Ordered_Set
+// #Doubly_Linked_List #2025_04_09_Time_492_ms_(98.32%)_Space_62.71_MB_(97.48%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

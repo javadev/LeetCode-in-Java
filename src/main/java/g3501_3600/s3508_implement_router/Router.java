@@ -1,6 +1,7 @@
 package g3501_3600.s3508_implement_router;
 
-// #Medium #2025_04_06_Time_157_ms_(99.88%)_Space_115.01_MB_(94.70%)
+// #Medium #Array #Hash_Table #Binary_Search #Design #Ordered_Set #Queue
+// #2025_04_09_Time_137_ms_(100.00%)_Space_116.63_MB_(91.98%)
 
 import java.util.ArrayList;
 import java.util.HashMap;

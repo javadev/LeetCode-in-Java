@@ -1,6 +1,7 @@
 package g3501_3600.s3509_maximum_product_of_subsequences_with_an_alternating_sum_equal_to_k;
 
-// #Hard #2025_04_06_Time_142_ms_(100.00%)_Space_46.26_MB_(93.55%)
+// #Hard #Array #Hash_Table #Dynamic_Programming
+// #2025_04_09_Time_141_ms_(89.52%)_Space_46.06_MB_(99.56%)
 
 import java.util.BitSet;
 import java.util.HashMap;
