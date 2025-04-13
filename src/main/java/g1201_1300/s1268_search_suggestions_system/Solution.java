@@ -1,6 +1,6 @@
 package g1201_1300.s1268_search_suggestions_system;
 
-// #Medium #Array #String #2022_03_14_Time_28_ms_(78.06%)_Space_73.1_MB_(38.32%)
+// #Medium #Array #String #LeetCode_75_Trie #2022_03_14_Time_28_ms_(78.06%)_Space_73.1_MB_(38.32%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

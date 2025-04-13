@@ -1,6 +1,6 @@
 package g2501_2600.s2542_maximum_subsequence_score;
 
-// #Medium #Array #Sorting #Greedy #Heap_Priority_Queue
+// #Medium #Array #Sorting #Greedy #Heap_Priority_Queue #LeetCode_75_Heap/Priority_Queue
 // #2023_05_09_Time_94_ms_(84.75%)_Space_56.5_MB_(81.92%)
 
 import java.util.Arrays;

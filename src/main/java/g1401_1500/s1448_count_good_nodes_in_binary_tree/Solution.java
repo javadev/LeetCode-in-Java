@@ -1,6 +1,6 @@
 package g1401_1500.s1448_count_good_nodes_in_binary_tree;
 
-// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree
+// #Medium #Depth_First_Search #Breadth_First_Search #Tree #Binary_Tree #LeetCode_75_Binary_Tree/DFS
 // #2022_03_28_Time_2_ms_(99.63%)_Space_60.1_MB_(26.46%)
 
 import com_github_leetcode.TreeNode;

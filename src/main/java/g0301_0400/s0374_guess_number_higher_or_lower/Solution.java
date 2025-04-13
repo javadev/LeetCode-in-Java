@@ -1,6 +1,6 @@
 package g0301_0400.s0374_guess_number_higher_or_lower;
 
-// #Easy #Binary_Search #Interactive #Binary_Search_I_Day_1
+// #Easy #Binary_Search #Interactive #LeetCode_75_Binary_Search #Binary_Search_I_Day_1
 // #2022_07_12_Time_0_ms_(100.00%)_Space_40.4_MB_(74.20%)
 
 /*
