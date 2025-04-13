@@ -1,6 +1,7 @@
 package g0901_1000.s0933_number_of_recent_calls;
 
-// #Easy #Design #Queue #Data_Stream #2022_03_30_Time_16_ms_(97.58%)_Space_50.8_MB_(80.12%)
+// #Easy #Design #Queue #Data_Stream #LeetCode_75_Queue
+// #2022_03_30_Time_16_ms_(97.58%)_Space_50.8_MB_(80.12%)
 
 import java.util.LinkedList;
 import java.util.Queue;

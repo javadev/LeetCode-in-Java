@@ -1,6 +1,7 @@
 package g2201_2300.s2215_find_the_difference_of_two_arrays;
 
-// #Easy #Array #Hash_Table #2022_06_09_Time_11_ms_(87.39%)_Space_43.2_MB_(77.06%)
+// #Easy #Array #Hash_Table #LeetCode_75_Hash_Map/Set
+// #2022_06_09_Time_11_ms_(87.39%)_Space_43.2_MB_(77.06%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

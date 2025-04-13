@@ -1,6 +1,6 @@
 package g1301_1400.s1372_longest_zigzag_path_in_a_binary_tree;
 
-// #Medium #Dynamic_Programming #Depth_First_Search #Tree #Binary_Tree
+// #Medium #Dynamic_Programming #Depth_First_Search #Tree #Binary_Tree #LeetCode_75_Binary_Tree/DFS
 // #2022_03_21_Time_9_ms_(64.47%)_Space_74_MB_(56.45%)
 
 import com_github_leetcode.TreeNode;
