@@ -22,7 +22,9 @@ public class Solution {
             adj[i] = new ArrayList<>();
         }
         for (int[] e : edges) {
-            int u = e[0], v = e[1], w = e[2];
+            int u = e[0];
+            int v = e[1];
+            int w = e[2];
             adj[u].add(new int[] {v, w});
             adj[v].add(new int[] {u, w});
         }
@@ -33,11 +35,13 @@ public class Solution {
         depth = new int[n + 1];
         edgeWeight = new int[n + 1];
         dfs(1, 0, 0);
-        Fenw fenw = new Fenw(n);
+        Fen fenw = new Fen(n);
         List<Integer> ansList = new ArrayList<>();
         for (int[] query : queries) {
             if (query[0] == 1) {
-                int u = query[1], v = query[2], newW = query[3];
+                int u = query[1];
+                int v = query[2];
+                int newW = query[3];
                 int child;
                 if (parent[v] == u) {
                     child = v;
@@ -77,11 +81,11 @@ public class Solution {
         out[node] = timer;
     }
 
-    private static class Fenw {
+    private static class Fen {
         int n;
         int[] fenw;
 
-        public Fenw(int n) {
+        public Fen(int n) {
             this.n = n;
             fenw = new int[n + 2];
         }
