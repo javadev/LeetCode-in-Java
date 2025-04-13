@@ -74,7 +74,9 @@ public class Solution {
         for (int[] neighborInfo : adj[node]) {
             int neighbor = neighborInfo[0];
             int w = neighborInfo[1];
-            if (neighbor == par) continue;
+            if (neighbor == par) {
+                continue;
+            }
             edgeWeight[neighbor] = w;
             dfs(neighbor, node, dist + w);
         }
