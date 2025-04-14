@@ -36,7 +36,8 @@ public class Solution {
                 ans = (ans + solve(i + 1, arr, tight & (j == arr[i] ? 1 : 0), base, j, dp));
             }
         }
-        return dp[i][tight][last] = ans;
+        dp[i][tight][last] = ans;
+        return ans;
     }
 
     private char[] subTractOne(char[] arr) {
