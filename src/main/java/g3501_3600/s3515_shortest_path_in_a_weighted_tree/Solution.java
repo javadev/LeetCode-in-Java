@@ -1,7 +1,7 @@
 package g3501_3600.s3515_shortest_path_in_a_weighted_tree;
 
-// #Hard #Array #Tree #Segment_Tree #Binary_Indexed_Tree #Depth_First_Search
-// #2025_04_14_Time_38_ms_(100.00%)_Space_146.46_MB_(100.00%)
+// #Hard #Array #Depth_First_Search #Tree #Segment_Tree #Binary_Indexed_Tree
+// #2025_04_14_Time_38_ms_(100.00%)_Space_146.11_MB_(100.00%)
 
 import java.util.ArrayList;
 import java.util.List;
