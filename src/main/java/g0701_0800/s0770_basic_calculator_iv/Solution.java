@@ -91,7 +91,8 @@ public class Solution {
         List<Term> ans = new ArrayList<>();
         List<Term> buffer = new ArrayList<>();
         buffer.add(new Term(1, new ArrayList<>()));
-        for (int i = a; i <= b; ) {
+        int i = a;
+        while (i <= b) {
             int j = i;
             List<Term> curr;
             if (arr[i] == '(') {
