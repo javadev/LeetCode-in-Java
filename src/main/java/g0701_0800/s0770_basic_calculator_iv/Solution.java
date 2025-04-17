@@ -3,11 +3,11 @@ package g0701_0800.s0770_basic_calculator_iv;
 // #Hard #String #Hash_Table #Math #Stack #Recursion
 // #2025_04_17_Time_8_ms_(95.70%)_Space_45.18_MB_(49.46%)
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -77,7 +77,7 @@ public class Solution {
                 }
             }
         }
-        List<String> ans = new LinkedList<>();
+        List<String> ans = new ArrayList<>();
         for (String k : map.keySet()) {
             ans.add(map.get(k) + k);
         }
@@ -88,9 +88,9 @@ public class Solution {
         if (braces[a] == b) {
             return dewIt(a + 1, b - 1);
         }
-        List<Term> ans = new LinkedList<>();
-        List<Term> buffer = new LinkedList<>();
-        buffer.add(new Term(1, new LinkedList<>()));
+        List<Term> ans = new ArrayList<>();
+        List<Term> buffer = new ArrayList<>();
+        buffer.add(new Term(1, new ArrayList<>()));
         for (int i = a; i <= b; ) {
             int j = i;
             List<Term> curr;
@@ -103,7 +103,7 @@ public class Solution {
                 }
                 String exp = s.substring(i, j);
                 int val = 1;
-                List<String> vars = new LinkedList<>();
+                List<String> vars = new ArrayList<>();
                 if (variables.containsKey(exp)) {
                     val = variables.get(exp);
                 } else if (exp.charAt(0) <= '9') {
@@ -111,20 +111,20 @@ public class Solution {
                 } else {
                     vars.add(exp);
                 }
-                curr = new LinkedList<>();
+                curr = new ArrayList<>();
                 curr.add(new Term(val, vars));
             }
             buffer = multiply(buffer, curr);
             if (j > b || arr[j + 1] == '+' || arr[j + 1] == '-') {
                 ans.addAll(buffer);
-                buffer = new LinkedList<>();
+                buffer = new ArrayList<>();
             }
             if (j < b) {
                 ++j;
                 if (arr[j] == '+') {
-                    buffer.add(new Term(1, new LinkedList<>()));
+                    buffer.add(new Term(1, new ArrayList<>()));
                 } else if (arr[j] == '-') {
-                    buffer.add(new Term(-1, new LinkedList<>()));
+                    buffer.add(new Term(-1, new ArrayList<>()));
                 }
                 j += 2;
             }
@@ -134,7 +134,7 @@ public class Solution {
     }
 
     private List<Term> multiply(List<Term> a, List<Term> b) {
-        List<Term> ans = new LinkedList<>();
+        List<Term> ans = new ArrayList<>();
         for (Term x : a) {
             for (Term y : b) {
                 Term prod = x.clone();
@@ -151,7 +151,7 @@ public class Solution {
 
         public Term(int a, List<String> c) {
             this.coeff = a;
-            vars = new LinkedList<>();
+            vars = new ArrayList<>();
             vars.addAll(c);
         }
 
