@@ -78,8 +78,8 @@ public class Solution {
             }
         }
         List<String> ans = new ArrayList<>();
-        for (String k : map.keySet()) {
-            ans.add(map.get(k) + k);
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            ans.add(entry.getValue() + entry.getKey());
         }
         return ans;
     }
@@ -137,7 +137,7 @@ public class Solution {
         List<Term> ans = new ArrayList<>();
         for (Term x : a) {
             for (Term y : b) {
-                Term prod = x.clone();
+                Term prod = x.copy();
                 prod.multiply(y);
                 ans.add(prod);
             }
@@ -174,7 +174,7 @@ public class Solution {
             }
         }
 
-        public Term clone() {
+        public Term copy() {
             return new Term(coeff, vars);
         }
     }
