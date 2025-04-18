@@ -8,14 +8,14 @@ import java.util.Map;
 
 public class Solution {
     private static final int MOD = (int) 1e9 + 7;
-    private long[] c2 = new long[1001];
+    private final long[] c2 = new long[1001];
 
     public int subsequencesWithMiddleMode(int[] nums) {
         if (c2[2] == 0) {
             c2[0] = c2[1] = 0;
             c2[2] = 1;
             for (int i = 3; i < c2.length; ++i) {
-                c2[i] = i * (i - 1) / 2;
+                c2[i] = (long) i * (i - 1) / 2;
             }
         }
         int n = nums.length;
@@ -59,8 +59,8 @@ public class Solution {
                     ans -=
                             leftY
                                     * rightY
-                                    * (leftX * (right - rightX - rightY)
-                                            + rightX * (left - leftX - leftY));
+                                    * ((long) leftX * (right - rightX - rightY)
+                                            + (long) rightX * (left - leftX - leftY));
                 }
             }
             leftCount[x]++;

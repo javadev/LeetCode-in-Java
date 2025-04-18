@@ -22,7 +22,7 @@ public class Solution {
     private int fun(String s, String k) {
         int n = s.length();
         int m = k.length();
-        int j = 0;
+        int j;
         for (int i = 0; i <= n - m; i++) {
             for (j = 0; j < m; j++) {
                 char ch1 = s.charAt(j + i);

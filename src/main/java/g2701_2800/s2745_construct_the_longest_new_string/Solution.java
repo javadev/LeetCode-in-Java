@@ -5,7 +5,7 @@ package g2701_2800.s2745_construct_the_longest_new_string;
 public class Solution {
     public int longestString(int x, int y, int z) {
         int min = Math.min(x, y);
-        int res = 0;
+        int res;
         if (x == y) {
             res = 2 * min + z;
         } else {

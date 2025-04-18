@@ -32,7 +32,7 @@ public class Solution {
                 b++;
             }
         }
-        int start = 0;
+        int start;
         if (c == capacity) {
             // capcity is full in last bus, find time last passenger might have boarded
             start = Math.min(passengers[p - 1], buses[blen - 1]);

@@ -8,7 +8,7 @@ package g0001_0100.s0045_jump_game_ii;
 public class Solution {
     private int getMax(int[] nums, int l, int r) {
         int max = -1;
-        int curr = -1;
+        int curr;
         for (int i = l; i <= r; i++) {
             curr = i + nums[i];
             max = Math.max(max, curr);
