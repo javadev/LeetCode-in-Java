@@ -10,7 +10,7 @@ public class Solution {
     public int matchPlayersAndTrainers(int[] players, int[] trainers) {
         Arrays.sort(players);
         Arrays.sort(trainers);
-        int i = 0;
+        int i;
         int j = 0;
         int count = 0;
         i = 0;

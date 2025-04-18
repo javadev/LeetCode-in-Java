@@ -5,7 +5,7 @@ package g2401_2500.s2468_split_message_based_on_limit;
 @SuppressWarnings("java:S3518")
 public class Solution {
     public String[] splitMessage(String message, int limit) {
-        int total = 0;
+        int total;
         int running = 0;
         int count;
         int totalReq;

@@ -7,7 +7,7 @@ public class Solution {
     public int secondsToRemoveOccurrences(String s) {
         int lastOne = -1;
         int result = 0;
-        int prevResult = 0;
+        int prevResult;
         int curResult = 0;
         int countOne = 0;
         int countZero = 0;

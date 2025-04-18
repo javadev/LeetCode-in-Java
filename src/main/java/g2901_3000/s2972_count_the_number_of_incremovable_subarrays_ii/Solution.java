@@ -4,7 +4,7 @@ package g2901_3000.s2972_count_the_number_of_incremovable_subarrays_ii;
 
 public class Solution {
     public long incremovableSubarrayCount(int[] nums) {
-        long ans = 0;
+        long ans;
         int n = nums.length;
         int l = 0;
         int r = n - 1;

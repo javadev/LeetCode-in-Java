@@ -22,7 +22,7 @@ public class Solution {
         int[] tmpDeque;
         int[] queue = new int[yLen * xLen];
         int[] root = new int[yLen * xLen];
-        int head = -1;
+        int head;
         int tail = -1;
         int qIdx = -1;
         int end = yLen * xLen - 1;
