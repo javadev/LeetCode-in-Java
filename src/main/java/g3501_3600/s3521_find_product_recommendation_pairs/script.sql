@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# #Medium #Database #2025_04_20_Time_549_ms_(98.52%)_Space_0.0_MB_(100.00%)
+# #Medium #Database #2025_04_22_Time_611_ms_(70.71%)_Space_0.0_MB_(100.00%)
 SELECT
 P1.product_id AS product1_id,
 P2.product_id AS product2_id,
