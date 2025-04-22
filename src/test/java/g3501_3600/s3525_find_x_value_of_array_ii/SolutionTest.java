@@ -35,4 +35,11 @@ class SolutionTest {
                         .resultArray(new int[] {1, 1, 2, 1, 1}, 2, new int[][] {{2, 1, 0, 1}}),
                 equalTo(new int[] {5}));
     }
+
+    @Test
+    void resultArray4() {
+        assertThat(
+                new Solution().resultArray(new int[] {9, 10, 7}, 1, new int[][] {{0, 8, 1, 0}}),
+                equalTo(new int[] {2}));
+    }
 }
