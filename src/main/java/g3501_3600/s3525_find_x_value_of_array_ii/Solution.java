@@ -2,6 +2,8 @@ package g3501_3600.s3525_find_x_value_of_array_ii;
 
 // #Hard #Array #Math #Segment_Tree #2025_04_22_Time_202_ms_(67.11%)_Space_90.39_MB_(46.98%)
 
+import java.util.Arrays;
+
 public class Solution {
     private int n;
     private int k;
