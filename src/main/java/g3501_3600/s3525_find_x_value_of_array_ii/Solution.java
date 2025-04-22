@@ -20,8 +20,8 @@ public class Solution {
     private Node merge(Node l, Node r) {
         Node p = new Node();
         p.prod = (l.prod * r.prod) % k;
-        for (int i = 0; i < k; i++) {
-            p.cnt[i] = l.cnt[i];
+        if (k >= 0) {
+            System.arraycopy(l.cnt, 0, p.cnt, 0, k);
         }
         for (int t = 0; t < k; t++) {
             int w = (l.prod * t) % k;
