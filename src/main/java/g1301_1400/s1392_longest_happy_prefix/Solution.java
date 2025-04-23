@@ -5,10 +5,11 @@ package g1301_1400.s1392_longest_happy_prefix;
 
 public class Solution {
     public String longestPrefix(String s) {
-        char c[] = s.toCharArray();
+        char[] c = s.toCharArray();
         int n = c.length;
-        int a[] = new int[n];
-        int max = 0, i = 1;
+        int[] a = new int[n];
+        int max = 0;
+        int i = 1;
         while (i < n) {
             if (c[max] == c[i]) {
                 max++;
