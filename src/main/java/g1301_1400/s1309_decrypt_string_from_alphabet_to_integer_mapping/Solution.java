@@ -1,54 +1,26 @@
 package g1301_1400.s1309_decrypt_string_from_alphabet_to_integer_mapping;
 
 // #Easy #String #Programming_Skills_I_Day_9_String
-// #2022_03_15_Time_6_ms_(28.25%)_Space_42.6_MB_(29.40%)
-
-import java.util.HashMap;
-import java.util.Map;
+// #2025_04_23_Time_0_ms_(100.00%)_Space_41.42_MB_(89.95%)
 
 public class Solution {
     public String freqAlphabets(String s) {
-        Map<String, String> map = new HashMap<>();
-        map.put("1", "a");
-        map.put("2", "b");
-        map.put("3", "c");
-        map.put("4", "d");
-        map.put("5", "e");
-        map.put("6", "f");
-        map.put("7", "g");
-        map.put("8", "h");
-        map.put("9", "i");
-        map.put("10#", "j");
-        map.put("11#", "k");
-        map.put("12#", "l");
-        map.put("13#", "m");
-        map.put("14#", "n");
-        map.put("15#", "o");
-        map.put("16#", "p");
-        map.put("17#", "q");
-        map.put("18#", "r");
-        map.put("19#", "s");
-        map.put("20#", "t");
-        map.put("21#", "u");
-        map.put("22#", "v");
-        map.put("23#", "w");
-        map.put("24#", "x");
-        map.put("25#", "y");
-        map.put("26#", "z");
-        StringBuilder sb = new StringBuilder();
-        int i = 0;
-        while (i < s.length()) {
-            if ((Integer.parseInt("" + s.charAt(i)) == 1 || Integer.parseInt("" + s.charAt(i)) == 2)
-                    && i + 1 < s.length()
-                    && i + 2 < s.length()
-                    && s.charAt(i + 2) == '#') {
-                sb.append(map.get(s.substring(i, i + 3)));
-                i += 3;
+        StringBuilder builder = new StringBuilder();
+        int i = s.length() - 1;
+        while (i >= 0) {
+            if (s.charAt(i) == '#') {
+                decryptor(builder, i - 1, i - 2, s);
+                i -= 3;
             } else {
-                sb.append(map.get("" + s.charAt(i)));
-                i++;
+                char ch = (char) (s.charAt(i) - '0' + 96);
+                builder.append(ch);
+                i--;
             }
         }
-        return sb.toString();
+        return builder.reverse().toString();
+    }
+
+    private void decryptor(StringBuilder builder, int a, int b, String s) {
+        builder.append((char) (((s.charAt(b) - '0') * 10 + s.charAt(a) - '0') + 96));
     }
 }
