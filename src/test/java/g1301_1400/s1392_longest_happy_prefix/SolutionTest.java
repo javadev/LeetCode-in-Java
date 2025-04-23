@@ -15,4 +15,9 @@ class SolutionTest {
     void longestPrefix2() {
         assertThat(new Solution().longestPrefix("ababab"), equalTo("abab"));
     }
+
+    @Test
+    void longestPrefix3() {
+        assertThat(new Solution().longestPrefix("babbb"), equalTo("b"));
+    }
 }
