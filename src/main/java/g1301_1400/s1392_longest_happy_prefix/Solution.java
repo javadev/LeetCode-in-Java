@@ -1,25 +1,28 @@
 package g1301_1400.s1392_longest_happy_prefix;
 
 // #Hard #String #Hash_Function #String_Matching #Rolling_Hash
-// #2022_03_17_Time_39_ms_(28.37%)_Space_42.6_MB_(94.23%)
+// #2025_04_23_Time_5_ms_(100.00%)_Space_45.92_MB_(23.63%)
 
 public class Solution {
     public String longestPrefix(String s) {
-        int times = 2;
-        long prefixHash = 0;
-        long suffixHash = 0;
-        long multiplier = 1;
-        long len = 0;
-        // use some large prime as a modulo to avoid overflow errors, e.g. 10 ^ 9 + 7.
-        long mod = 1000000007;
-        for (int i = 0; i < s.length() - 1; i++) {
-            prefixHash = (prefixHash * times + s.charAt(i)) % mod;
-            suffixHash = (multiplier * s.charAt(s.length() - i - 1) + suffixHash) % mod;
-            if (prefixHash == suffixHash) {
-                len = (long) i + 1;
+        char c[] = s.toCharArray();
+        int n = c.length;
+        int a[] = new int[n];
+        int max = 0, i = 1;
+        while (i < n) {
+            if (c[max] == c[i]) {
+                max++;
+                a[i] = max;
+                i++;
+            } else {
+                if (max > 0) {
+                    max = a[max - 1];
+                } else {
+                    a[i] = 0;
+                    i++;
+                }
             }
-            multiplier = multiplier * times % mod;
         }
-        return s.substring(0, (int) len);
+        return s.substring(0, a[n - 1]);
     }
 }
