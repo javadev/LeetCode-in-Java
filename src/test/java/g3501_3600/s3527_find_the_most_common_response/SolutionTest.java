@@ -32,4 +32,18 @@ class SolutionTest {
                                         List.of("great", "good"))),
                 equalTo("bad"));
     }
+
+    @Test
+    void findCommonResponse3() {
+        assertThat(
+                new Solution()
+                        .findCommonResponse(
+                                List.of(
+                                        List.of("fed", "vgdb", "w", "zs", "fed"),
+                                        List.of("f", "cz", "pah", "gj", "rpxr", "ugyi"),
+                                        List.of("t", "oja", "c"),
+                                        List.of("ni", "fed", "mcox", "a", "f", "ni", "g"),
+                                        List.of("ybk", "xght", "jje"))),
+                equalTo("f"));
+    }
 }
