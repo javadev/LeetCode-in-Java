@@ -26,23 +26,10 @@ The resulting graph is:
 
 ![](https://assets.leetcode.com/uploads/2025/03/25/4149example1drawio.png)
 
-Query
-
-Shortest Path
-
-Minimum Distance
-
-[0, 3]
-
-0 → 3
-
-1
-
-[2, 4]
-
-2 → 4
-
-1
+| Query  | Shortest Path | Minimum Distance |
+|--------|----------------|------------------|
+| [0, 3] | 0 → 3         | 1                |
+| [2, 4] | 2 → 4         | 1                |
 
 Thus, the output is `[1, 1]`.
 
@@ -58,35 +45,14 @@ The resulting graph is:
 
 ![](https://assets.leetcode.com/uploads/2025/03/25/4149example2drawio.png)
 
-Query
+Here is the equivalent Markdown for the given HTML table:
 
-Shortest Path
-
-Minimum Distance
-
-[0, 1]
-
-0 → 1
-
-1
-
-[0, 2]
-
-0 → 1 → 2
-
-2
-
-[2, 3]
-
-None
-
-\-1
-
-[4, 3]
-
-3 → 4
-
-1
+| Query  | Shortest Path | Minimum Distance |
+|--------|----------------|------------------|
+| [0, 1] | 0 → 1         | 1                |
+| [0, 2] | 0 → 1 → 2     | 2                |
+| [2, 3] | None          | -1               |
+| [4, 3] | 3 → 4         | 1                |
 
 Thus, the output is `[1, 2, -1, 1]`.
 
