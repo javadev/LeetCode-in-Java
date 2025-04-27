@@ -39,10 +39,8 @@ public class Solution {
                     arr[1] = row;
                     mp.put(resp, arr);
                 }
-                if (arr[0] > maxFreq) {
-                    ans = resp;
-                    maxFreq = arr[0];
-                } else if (!ans.equals(resp) && arr[0] == maxFreq && compareStrings(resp, ans)) {
+                if (arr[0] > maxFreq
+                        || !ans.equals(resp) && arr[0] == maxFreq && compareStrings(resp, ans)) {
                     ans = resp;
                     maxFreq = arr[0];
                 }
