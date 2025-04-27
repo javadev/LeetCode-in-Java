@@ -4,6 +4,7 @@ package g3501_3600.s3533_concatenated_divisibility;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S107")
 public class Solution {
     public int[] concatenatedDivisibility(int[] nums, int k) {
         Arrays.sort(nums);

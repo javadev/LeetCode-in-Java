@@ -4,6 +4,7 @@ package g3501_3600.s3534_path_existence_queries_in_a_graph_ii;
 
 import java.util.Arrays;
 
+@SuppressWarnings({"java:S135", "java:S6541"})
 public class Solution {
     public int[] pathExistenceQueries(int n, int[] nums, int maxDiff, int[][] queries) {
         int[] position = new int[n];

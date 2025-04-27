@@ -36,7 +36,8 @@ public class Solution {
                 }
             }
         }
-        return dp[mask] = res;
+        dp[mask] = res;
+        return res;
     }
 
     public int maxProfit(int n, int[][] edges, int[] score) {
