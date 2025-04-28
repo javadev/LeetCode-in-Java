@@ -1,6 +1,7 @@
 package g3501_3600.s3527_find_the_most_common_response;
 
-// #Medium #2025_04_27_Time_94_ms_(100.00%)_Space_211.47_MB_(22.16%)
+// #Medium #Array #String #Hash_Table #Counting
+// #2025_04_28_Time_94_ms_(100.00%)_Space_211.70_MB_(22.07%)
 
 import java.util.HashMap;
 import java.util.List;

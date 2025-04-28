@@ -1,6 +1,6 @@
 package g3501_3600.s3531_count_covered_buildings;
 
-// #Medium #2025_04_27_Time_11_ms_(100.00%)_Space_111.25_MB_(18.45%)
+// #Medium #Array #Hash_Table #Sorting #2025_04_28_Time_12_ms_(100.00%)_Space_111.46_MB_(100.00%)
 
 import java.util.Arrays;
 

@@ -1,6 +1,7 @@
 package g3501_3600.s3533_concatenated_divisibility;
 
-// #Hard #2025_04_27_Time_15_ms_(99.67%)_Space_45.97_MB_(94.68%)
+// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Bitmask
+// #2025_04_28_Time_14_ms_(100.00%)_Space_45.98_MB_(100.00%)
 
 import java.util.Arrays;
 

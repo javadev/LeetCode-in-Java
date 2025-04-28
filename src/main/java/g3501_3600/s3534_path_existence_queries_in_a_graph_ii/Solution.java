@@ -1,6 +1,7 @@
 package g3501_3600.s3534_path_existence_queries_in_a_graph_ii;
 
-// #Hard #2025_04_27_Time_86_ms_(94.64%)_Space_80.87_MB_(100.00%)
+// #Hard #Array #Sorting #Greedy #Binary_Search #Graph
+// #2025_04_28_Time_84_ms_(100.00%)_Space_81.21_MB_(100.00%)
 
 import java.util.Arrays;
 
