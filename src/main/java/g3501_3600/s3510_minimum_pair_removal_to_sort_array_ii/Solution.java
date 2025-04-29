@@ -1,104 +1,112 @@
 package g3501_3600.s3510_minimum_pair_removal_to_sort_array_ii;
 
 // #Hard #Array #Hash_Table #Heap_Priority_Queue #Simulation #Linked_List #Ordered_Set
-// #Doubly_Linked_List #2025_04_09_Time_289_ms_(99.58%)_Space_82.88_MB_(17.23%)
+// #Doubly_Linked_List #2025_04_29_Time_278_ms_(98.94%)_Space_70.90_MB_(68.88%)
+
+import java.util.Arrays;
 
 public class Solution {
-    private static class Segment {
-        private final int start;
-        private final int end;
-        private Segment left;
-        private Segment right;
-        private int lIdx;
-        private long lNum;
-        private int rIdx;
-        private long rNum;
-        private boolean ok;
-        private long minSum;
-        private int li;
-        private int ri;
-
-        public static Segment init(int[] arr) {
-            return new Segment(arr, 0, arr.length - 1);
+    public int minimumPairRemoval(int[] nums) {
+        if (nums.length == 1) {
+            return 0;
         }
-
-        public Segment(int[] arr, int s, int e) {
-            start = s;
-            end = e;
-            if (s >= e) {
-                lIdx = rIdx = s;
-                lNum = rNum = arr[s];
-                minSum = Long.MAX_VALUE;
-                ok = true;
-                return;
+        int size = (int) Math.pow(2, Math.ceil(Math.log(nums.length - 1.0) / Math.log(2)));
+        long[] segment = new long[size * 2 - 1];
+        Arrays.fill(segment, Long.MAX_VALUE);
+        int[] lefts = new int[size * 2 - 1];
+        int[] rights = new int[size * 2 - 1];
+        long[] sums = new long[nums.length];
+        Arrays.fill(sums, Long.MAX_VALUE / 2);
+        int[][] arrIdxToSegIdx = new int[nums.length][];
+        sums[0] = nums[0];
+        int count = 0;
+        arrIdxToSegIdx[0] = new int[] {-1, size - 1};
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] < nums[i - 1]) {
+                count++;
             }
-            int mid = s + ((e - s) >> 1);
-            left = new Segment(arr, s, mid);
-            right = new Segment(arr, mid + 1, e);
-            merge();
+            lefts[size + i - 2] = i - 1;
+            rights[size + i - 2] = i;
+            segment[size + i - 2] = nums[i - 1] + (long) nums[i];
+            arrIdxToSegIdx[i] = new int[] {size + i - 2, size + i - 1};
+            sums[i] = nums[i];
         }
-
-        private void merge() {
-            lIdx = left.lIdx;
-            lNum = left.lNum;
-            rIdx = right.rIdx;
-            rNum = right.rNum;
-            ok = left.ok && right.ok && left.rNum <= right.lNum;
-            minSum = left.minSum;
-            li = left.li;
-            ri = left.ri;
-            if (left.rNum + right.lNum < minSum) {
-                minSum = left.rNum + right.lNum;
-                li = left.rIdx;
-                ri = right.lIdx;
-            }
-            if (right.minSum < minSum) {
-                minSum = right.minSum;
-                li = right.li;
-                ri = right.ri;
-            }
+        arrIdxToSegIdx[nums.length - 1][1] = -1;
+        for (int i = size - 2; i >= 0; i--) {
+            int l = 2 * i + 1;
+            int r = 2 * i + 2;
+            segment[i] = Math.min(segment[l], segment[r]);
         }
-
-        public void update(int i, long n) {
-            if (start <= i && end >= i) {
-                if (start >= end) {
-                    lNum = rNum = n;
-                } else {
-                    left.update(i, n);
-                    right.update(i, n);
-                    merge();
-                }
-            }
-        }
-
-        public Segment remove(int i) {
-            if (start > i || end < i) {
-                return this;
-            } else if (start >= end) {
-                return null;
-            }
-            left = left.remove(i);
-            right = right.remove(i);
-            if (null == left) {
-                return right;
-            } else if (null == right) {
-                return left;
-            }
-            merge();
-            return this;
-        }
+        return getRes(count, segment, lefts, rights, sums, arrIdxToSegIdx);
     }
 
-    public int minimumPairRemoval(int[] nums) {
-        Segment root = Segment.init(nums);
+    private int getRes(
+            int count,
+            long[] segment,
+            int[] lefts,
+            int[] rights,
+            long[] sums,
+            int[][] arrIdxToSegIdx) {
         int res = 0;
-        while (!root.ok) {
-            int l = root.li;
-            int r = root.ri;
-            root.update(l, root.minSum);
-            root = root.remove(r);
+        while (count > 0) {
+            int segIdx = 0;
+            while (2 * segIdx + 1 < segment.length) {
+                int l = 2 * segIdx + 1;
+                int r = 2 * segIdx + 2;
+                if (segment[l] <= segment[r]) {
+                    segIdx = l;
+                } else {
+                    segIdx = r;
+                }
+            }
+            int arrIdxL = lefts[segIdx];
+            int arrIdxR = rights[segIdx];
+            long numL = sums[arrIdxL];
+            long numR = sums[arrIdxR];
+            if (numL > numR) {
+                count--;
+            }
+            long newSum = sums[arrIdxL] = sums[arrIdxL] + sums[arrIdxR];
+            int[] leftPointer = arrIdxToSegIdx[arrIdxL];
+            int[] rightPointer = arrIdxToSegIdx[arrIdxR];
+            int prvSegIdx = leftPointer[0];
+            int nextSegIdx = rightPointer[1];
+            leftPointer[1] = nextSegIdx;
+            if (prvSegIdx != -1) {
+                int l = lefts[prvSegIdx];
+                if (sums[l] > numL && sums[l] <= newSum) {
+                    count--;
+                } else if (sums[l] <= numL && sums[l] > newSum) {
+                    count++;
+                }
+                modify(segment, prvSegIdx, sums[l] + newSum);
+            }
+            if (nextSegIdx != -1) {
+                int r = rights[nextSegIdx];
+                if (numR > sums[r] && newSum <= sums[r]) {
+                    count--;
+                } else if (numR <= sums[r] && newSum > sums[r]) {
+                    count++;
+                }
+                modify(segment, nextSegIdx, newSum + sums[r]);
+                lefts[nextSegIdx] = arrIdxL;
+            }
+            modify(segment, segIdx, Long.MAX_VALUE);
             res++;
         }
         return res;
+    }
+
+    private void modify(long[] segment, int idx, long num) {
+        if (segment[idx] == num) {
+            return;
+        }
+        segment[idx] = num;
+        while (idx != 0) {
+            idx = (idx - 1) / 2;
+            int l = 2 * idx + 1;
+            int r = 2 * idx + 2;
+            segment[idx] = Math.min(segment[l], segment[r]);
+        }
     }
 }
