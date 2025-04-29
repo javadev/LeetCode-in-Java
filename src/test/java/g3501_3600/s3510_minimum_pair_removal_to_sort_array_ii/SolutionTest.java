@@ -27,4 +27,9 @@ class SolutionTest {
                 new Solution().minimumPairRemoval(new int[] {2, 2, -1, 3, -2, 2, 1, 1, 1, 0, -1}),
                 equalTo(9));
     }
+
+    @Test
+    void minimumPairRemoval5() {
+        assertThat(new Solution().minimumPairRemoval(new int[] {5}), equalTo(0));
+    }
 }

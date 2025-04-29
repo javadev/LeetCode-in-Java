@@ -98,6 +98,9 @@ public class Solution {
     }
 
     private void modify(long[] segment, int idx, long num) {
+        if (segment[idx] == num) {
+            return;
+        }
         segment[idx] = num;
         while (idx != 0) {
             idx = (idx - 1) / 2;
