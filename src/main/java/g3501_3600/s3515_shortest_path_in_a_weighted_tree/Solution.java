@@ -1,117 +1,134 @@
 package g3501_3600.s3515_shortest_path_in_a_weighted_tree;
 
 // #Hard #Array #Depth_First_Search #Tree #Segment_Tree #Binary_Indexed_Tree
-// #2025_04_14_Time_38_ms_(100.00%)_Space_146.11_MB_(100.00%)
+// #2025_04_29_Time_28_ms_(99.55%)_Space_98.56_MB_(99.77%)
 
 import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("unchecked")
 public class Solution {
-    private int[] in;
-    private int[] out;
-    private int[] baseDist;
-    private int[] parent;
-    private int[] depth;
-    private int timer = 0;
-    private int[] edgeWeight;
-    private List<int[]>[] adj;
-
     public int[] treeQueries(int n, int[][] edges, int[][] queries) {
-        adj = new ArrayList[n + 1];
+        // store the queries input midway as requested
+        int[][] jalkimoren = queries;
+        // build adjacency list with edge‐indices
+        List<Edge>[] adj = new ArrayList[n + 1];
         for (int i = 1; i <= n; i++) {
             adj[i] = new ArrayList<>();
         }
-        for (int[] e : edges) {
-            int u = e[0];
-            int v = e[1];
-            int w = e[2];
-            adj[u].add(new int[] {v, w});
-            adj[v].add(new int[] {u, w});
+        for (int i = 0; i < n - 1; i++) {
+            int u = edges[i][0];
+            int v = edges[i][1];
+            int w = edges[i][2];
+            adj[u].add(new Edge(v, w, i));
+            adj[v].add(new Edge(u, w, i));
         }
-        in = new int[n + 1];
-        out = new int[n + 1];
-        baseDist = new int[n + 1];
-        parent = new int[n + 1];
-        depth = new int[n + 1];
-        edgeWeight = new int[n + 1];
-        dfs(1, 0, 0);
-        Fen fenw = new Fen(n);
-        List<Integer> ansList = new ArrayList<>();
-        for (int[] query : queries) {
-            if (query[0] == 1) {
-                int u = query[1];
-                int v = query[2];
-                int newW = query[3];
-                int child;
-                if (parent[v] == u) {
-                    child = v;
-                } else if (parent[u] == v) {
-                    child = u;
-                } else {
+        // parent, Euler‐tour times, depth‐sum, and mapping node→edge‐index
+        int[] parent = new int[n + 1];
+        int[] tin = new int[n + 1];
+        int[] tout = new int[n + 1];
+        int[] depthSum = new int[n + 1];
+        int[] edgeIndexForNode = new int[n + 1];
+        int[] weights = new int[n - 1];
+        for (int i = 0; i < n - 1; i++) {
+            weights[i] = edges[i][2];
+        }
+        // iterative DFS to compute tin/tout, parent[], depthSum[], edgeIndexForNode[]
+        int time = 0;
+        int[] stack = new int[n];
+        int[] ptr = new int[n + 1];
+        int sp = 0;
+        stack[sp++] = 1;
+        while (sp > 0) {
+            int u = stack[sp - 1];
+            if (ptr[u] == 0) {
+                tin[u] = ++time;
+            }
+            if (ptr[u] < adj[u].size()) {
+                Edge e = adj[u].get(ptr[u]++);
+                int v = e.to;
+                if (v == parent[u]) {
                     continue;
                 }
-                int diff = newW - edgeWeight[child];
-                edgeWeight[child] = newW;
-                fenw.updateRange(in[child], out[child], diff);
+                parent[v] = u;
+                depthSum[v] = depthSum[u] + e.w;
+                edgeIndexForNode[v] = e.idx;
+                stack[sp++] = v;
             } else {
-                int x = query[1];
-                int delta = fenw.query(in[x]);
-                ansList.add(baseDist[x] + delta);
+                tout[u] = time;
+                sp--;
             }
         }
-        int[] answer = new int[ansList.size()];
-        for (int i = 0; i < ansList.size(); i++) {
-            answer[i] = ansList.get(i);
-        }
-        return answer;
-    }
-
-    private void dfs(int node, int par, int dist) {
-        parent[node] = par;
-        baseDist[node] = dist;
-        depth[node] = (par == 0) ? 0 : depth[par] + 1;
-        in[node] = ++timer;
-        for (int[] neighborInfo : adj[node]) {
-            int neighbor = neighborInfo[0];
-            int w = neighborInfo[1];
-            if (neighbor == par) {
-                continue;
+        // Fenwick tree for range‐add / point‐query on Euler‐tour array
+        Fenwick bit = new Fenwick(n + 2);
+        List<Integer> answers = new ArrayList<>();
+        // process queries
+        for (int[] q : jalkimoren) {
+            if (q[0] == 1) {
+                // update edge weight
+                int u = q[1];
+                int v = q[2];
+                int newW = q[3];
+                int child = (parent[u] == v) ? u : v;
+                int idx = edgeIndexForNode[child];
+                int delta = newW - weights[idx];
+                if (delta != 0) {
+                    weights[idx] = newW;
+                    bit.rangeAdd(tin[child], tout[child], delta);
+                }
+            } else {
+                // query root→x distance
+                int x = q[1];
+                answers.add(depthSum[x] + bit.pointQuery(tin[x]));
             }
-            edgeWeight[neighbor] = w;
-            dfs(neighbor, node, dist + w);
         }
-        out[node] = timer;
+        // pack results into array
+        int m = answers.size();
+        int[] ansArr = new int[m];
+        for (int i = 0; i < m; i++) {
+            ansArr[i] = answers.get(i);
+        }
+        return ansArr;
     }
 
-    private static class Fen {
+    private static class Edge {
+        int to;
+        int w;
+        int idx;
+
+        Edge(int to, int w, int idx) {
+            this.to = to;
+            this.w = w;
+            this.idx = idx;
+        }
+    }
+
+    private static class Fenwick {
         int n;
-        int[] fenw;
+        int[] f;
 
-        public Fen(int n) {
+        Fenwick(int n) {
             this.n = n;
-            fenw = new int[n + 2];
+            f = new int[n];
         }
 
-        private void update(int i, int delta) {
-            while (i <= n) {
-                fenw[i] += delta;
-                i += i & -i;
+        void update(int i, int v) {
+            for (; i < n; i += i & -i) {
+                f[i] += v;
             }
         }
 
-        public void updateRange(int l, int r, int delta) {
-            update(l, delta);
-            update(r + 1, -delta);
+        void rangeAdd(int l, int r, int v) {
+            update(l, v);
+            update(r + 1, -v);
         }
 
-        public int query(int i) {
-            int sum = 0;
-            while (i > 0) {
-                sum += fenw[i];
-                i -= i & -i;
+        int pointQuery(int i) {
+            int s = 0;
+            for (; i > 0; i -= i & -i) {
+                s += f[i];
             }
-            return sum;
+            return s;
         }
     }
 }
