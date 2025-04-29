@@ -13,7 +13,7 @@ Array.prototype.snail = function (rowsCount: number, colsCount: number): number[
         let col = Math.floor(i / rowsCount)
         let row = i % rowsCount
         row = col % 2 === 0 ? row : rowsCount - row - 1
-        if (res[row] === undefined) res[row] = []
+        res[row] = res[row] ?? []
         res[row].push(this[i])
     }
     return res
