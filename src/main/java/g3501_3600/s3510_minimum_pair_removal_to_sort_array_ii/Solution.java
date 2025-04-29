@@ -10,7 +10,7 @@ public class Solution {
         if (nums.length == 1) {
             return 0;
         }
-        int size = (int) Math.pow(2, Math.ceil(Math.log(nums.length - 1) / Math.log(2)));
+        int size = (int) Math.pow(2, Math.ceil(Math.log(nums.length - 1.0) / Math.log(2)));
         long[] segment = new long[size * 2 - 1];
         Arrays.fill(segment, Long.MAX_VALUE);
         int[] lefts = new int[size * 2 - 1];
@@ -18,18 +18,16 @@ public class Solution {
         long[] sums = new long[nums.length];
         Arrays.fill(sums, Long.MAX_VALUE / 2);
         int[][] arrIdxToSegIdx = new int[nums.length][];
-        boolean[] isDecs = new boolean[nums.length];
         sums[0] = nums[0];
         int count = 0;
         arrIdxToSegIdx[0] = new int[] {-1, size - 1};
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] < nums[i - 1]) {
-                isDecs[i] = true;
                 count++;
             }
             lefts[size + i - 2] = i - 1;
             rights[size + i - 2] = i;
-            segment[size + i - 2] = nums[i - 1] + nums[i];
+            segment[size + i - 2] = nums[i - 1] + (long) nums[i];
             arrIdxToSegIdx[i] = new int[] {size + i - 2, size + i - 1};
             sums[i] = nums[i];
         }
@@ -39,6 +37,16 @@ public class Solution {
             int r = 2 * i + 2;
             segment[i] = Math.min(segment[l], segment[r]);
         }
+        return getRes(count, segment, lefts, rights, sums, arrIdxToSegIdx);
+    }
+
+    private int getRes(
+            int count,
+            long[] segment,
+            int[] lefts,
+            int[] rights,
+            long[] sums,
+            int[][] arrIdxToSegIdx) {
         int res = 0;
         while (count > 0) {
             int segIdx = 0;
