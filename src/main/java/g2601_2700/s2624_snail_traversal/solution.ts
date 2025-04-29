@@ -1,4 +1,4 @@
-// #Medium #2023_08_31_Time_175_ms_(92.96%)_Space_64.2_MB_(32.75%)
+// #Medium #2025_04_29_Time_157_ms_(81.82%)_Space_71.07_MB_(18.18%)
 
 declare global {
     interface Array<T> {
@@ -13,7 +13,7 @@ Array.prototype.snail = function (rowsCount: number, colsCount: number): number[
         let col = Math.floor(i / rowsCount)
         let row = i % rowsCount
         row = col % 2 === 0 ? row : rowsCount - row - 1
-        if (res[row] === undefined) res[row] = []
+        res[row] = res[row] ?? []
         res[row].push(this[i])
     }
     return res
