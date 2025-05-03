@@ -1,8 +1,17 @@
 # Read from the file file.txt and print its transposed content to stdout.
-# #Medium #Shell #2022_06_28_Time_630_ms_(28.43%)_Space_3.9_MB_(71.08%)
-wordcount=$(head -1 file.txt | wc -w)
-col_n=1
-while [[ $col_n -le $wordcount ]]; do
-	awk "{ print \$$col_n }" file.txt | paste -sd " "
-	col_n=$((col_n + 1))
-done
+# #Medium #Shell #2025_05_03_Time_61_ms_(88.19%)_Space_4.14_MB_(38.67%)
+awk '
+{
+    for (i = 1; i <= NF; i++) {
+        if (NR == 1) {
+            a[i] = $i
+        } else {
+            a[i] = a[i] " " $i
+        }
+    }
+}
+END {
+    for (i = 1; i <= NF; i++) {
+        print a[i]
+    }
+}' file.txt

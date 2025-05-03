@@ -20,4 +20,9 @@ class SolutionTest {
         TreeNode root = TreeNode.create(Collections.singletonList(0));
         assertThat(new Solution().sumRootToLeaf(root), equalTo(0));
     }
+
+    @Test
+    void sumRootToLeaf3() {
+        assertThat(new Solution().sumRootToLeaf(null), equalTo(0));
+    }
 }
