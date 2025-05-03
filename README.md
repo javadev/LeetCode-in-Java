@@ -34,7 +34,6 @@ implementation 'com.github.javadev:leetcode-in-java:1.43'
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
 
 ##
-* [Binary Search I](#binary-search-i)
 * [Binary Search II](#binary-search-ii)
 * [Dynamic Programming I](#dynamic-programming-i)
 * [Programming Skills I](#programming-skills-i)
@@ -49,91 +48,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.43'
 * [Data Structure II](#data-structure-ii)
 * [Algorithm I](#algorithm-i)
 * [Algorithm II](#algorithm-ii)
-
-### Binary Search I
-
-#### Day 1
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0704 |[Binary Search](src/main/java/g0701_0800/s0704_binary_search/Solution.java)| Easy | Top_100_Liked_Questions, Array, Binary_Search | 0 | 100.00
-| 0374 |[Guess Number Higher or Lower](src/main/java/g0301_0400/s0374_guess_number_higher_or_lower/Solution.java)| Easy | Binary_Search, Interactive, LeetCode_75_Binary_Search | 0 | 100.00
-
-#### Day 2
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0035 |[Search Insert Position](src/main/java/g0001_0100/s0035_search_insert_position/Solution.java)| Easy | Top_100_Liked_Questions, Array, Binary_Search, Big_O_Time_O(log_n)_Space_O(1) | 0 | 100.00
-| 0852 |[Peak Index in a Mountain Array](src/main/java/g0801_0900/s0852_peak_index_in_a_mountain_array/Solution.java)| Medium | Array, Binary_Search | 0 | 100.00
-
-#### Day 3
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0367 |[Valid Perfect Square](src/main/java/g0301_0400/s0367_valid_perfect_square/Solution.java)| Easy | Math, Binary_Search | 0 | 100.00
-| 1385 |[Find the Distance Value Between Two Arrays](src/main/java/g1301_1400/s1385_find_the_distance_value_between_two_arrays/Solution.java)| Easy | Array, Sorting, Binary_Search, Two_Pointers | 5 | 65.78
-
-#### Day 4
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0069 |[Sqrt(x)](src/main/java/g0001_0100/s0069_sqrtx/Solution.java)| Easy | Top_Interview_Questions, Math, Binary_Search | 1 | 86.67
-| 0744 |[Find Smallest Letter Greater Than Target](src/main/java/g0701_0800/s0744_find_smallest_letter_greater_than_target/Solution.java)| Easy | Array, Binary_Search | 0 | 100.00
-
-#### Day 5
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0278 |[First Bad Version](src/main/java/g0201_0300/s0278_first_bad_version/Solution.java)| Easy | Binary_Search, Interactive | 15 | 87.89
-| 0034 |[Find First and Last Position of Element in Sorted Array](src/main/java/g0001_0100/s0034_find_first_and_last_position_of_element_in_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Big_O_Time_O(log_n)_Space_O(1) | 0 | 100.00
-
-#### Day 6
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0441 |[Arranging Coins](src/main/java/g0401_0500/s0441_arranging_coins/Solution.java)| Easy | Math, Binary_Search | 2 | 95.97
-| 1539 |[Kth Missing Positive Number](src/main/java/g1501_1600/s1539_kth_missing_positive_number/Solution.java)| Easy | Array, Binary_Search | 0 | 100.00
-
-#### Day 7
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0167 |[Two Sum II - Input Array Is Sorted](src/main/java/g0101_0200/s0167_two_sum_ii_input_array_is_sorted/Solution.java)| Medium | Array, Binary_Search, Two_Pointers | 2 | 92.62
-| 1608 |[Special Array With X Elements Greater Than or Equal X](src/main/java/g1601_1700/s1608_special_array_with_x_elements_greater_than_or_equal_x/Solution.java)| Easy | Array, Sorting, Binary_Search | 2 | 61.14
-
-#### Day 8
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1351 |[Count Negative Numbers in a Sorted Matrix](src/main/java/g1301_1400/s1351_count_negative_numbers_in_a_sorted_matrix/Solution.java)| Easy | Array, Binary_Search, Matrix | 1 | 49.66
-| 0074 |[Search a 2D Matrix](src/main/java/g0001_0100/s0074_search_a_2d_matrix/Solution.java)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Matrix, Big_O_Time_O(endRow+endCol)_Space_O(1) | 0 | 100.00
-
-#### Day 9
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1337 |[The K Weakest Rows in a Matrix](src/main/java/g1301_1400/s1337_the_k_weakest_rows_in_a_matrix/Solution.java)| Easy | Array, Sorting, Binary_Search, Matrix, Heap_Priority_Queue | 1 | 99.77
-| 1346 |[Check If N and Its Double Exist](src/main/java/g1301_1400/s1346_check_if_n_and_its_double_exist/Solution.java)| Easy | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 1 | 99.64
-
-#### Day 10
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0350 |[Intersection of Two Arrays II](src/main/java/g0301_0400/s0350_intersection_of_two_arrays_ii/Solution.java)| Easy | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 4 | 69.62
-| 0633 |[Sum of Square Numbers](src/main/java/g0601_0700/s0633_sum_of_square_numbers/Solution.java)| Medium | Math, Binary_Search, Two_Pointers | 4 | 82.92
-
-#### Day 11
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 1855 |[Maximum Distance Between a Pair of Values](src/main/java/g1801_1900/s1855_maximum_distance_between_a_pair_of_values/Solution.java)| Medium | Array, Greedy, Binary_Search, Two_Pointers | 4 | 62.20
-| 0033 |[Search in Rotated Sorted Array](src/main/java/g0001_0100/s0033_search_in_rotated_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Big_O_Time_O(log_n)_Space_O(1) | 0 | 100.00
-
-#### Day 12
-
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
-|-|-|-|-|-|-
-| 0153 |[Find Minimum in Rotated Sorted Array](src/main/java/g0101_0200/s0153_find_minimum_in_rotated_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Big_O_Time_O(log_N)_Space_O(log_N) | 0 | 100.00
+* [Binary Search I](#binary-search-i)
 
 ### Binary Search II
 
@@ -498,7 +413,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.43'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0709 |[To Lower Case](src/main/java/g0701_0800/s0709_to_lower_case/Solution.java)| Easy | String | 1 | 71.74
-| 1309 |[Decrypt String from Alphabet to Integer Mapping](src/main/java/g1301_1400/s1309_decrypt_string_from_alphabet_to_integer_mapping/Solution.java)| Easy | String | 6 | 28.25
+| 1309 |[Decrypt String from Alphabet to Integer Mapping](src/main/java/g1301_1400/s1309_decrypt_string_from_alphabet_to_integer_mapping/Solution.java)| Easy | String | 0 | 100.00
 | 0953 |[Verifying an Alien Dictionary](src/main/java/g0901_1000/s0953_verifying_an_alien_dictionary/Solution.java)| Easy | Array, String, Hash_Table | 0 | 100.00
 
 #### Day 10 Linked List and Tree
@@ -2111,6 +2026,91 @@ implementation 'com.github.javadev:leetcode-in-java:1.43'
 |-|-|-|-|-|-
 | 0202 |[Happy Number](src/main/java/g0201_0300/s0202_happy_number/Solution.java)| Easy | Top_Interview_Questions, Hash_Table, Math, Two_Pointers | 0 | 100.00
 | 0149 |[Max Points on a Line](src/main/java/g0101_0200/s0149_max_points_on_a_line/Solution.java)| Hard | Top_Interview_Questions, Array, Hash_Table, Math, Geometry | 7 | 99.18
+
+### Binary Search I
+
+#### Day 1
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0704 |[Binary Search](src/main/java/g0701_0800/s0704_binary_search/Solution.java)| Easy | Top_100_Liked_Questions, Array, Binary_Search | 0 | 100.00
+| 0374 |[Guess Number Higher or Lower](src/main/java/g0301_0400/s0374_guess_number_higher_or_lower/Solution.java)| Easy | Binary_Search, Interactive, LeetCode_75_Binary_Search | 0 | 100.00
+
+#### Day 2
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0035 |[Search Insert Position](src/main/java/g0001_0100/s0035_search_insert_position/Solution.java)| Easy | Top_100_Liked_Questions, Array, Binary_Search, Big_O_Time_O(log_n)_Space_O(1) | 0 | 100.00
+| 0852 |[Peak Index in a Mountain Array](src/main/java/g0801_0900/s0852_peak_index_in_a_mountain_array/Solution.java)| Medium | Array, Binary_Search | 0 | 100.00
+
+#### Day 3
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0367 |[Valid Perfect Square](src/main/java/g0301_0400/s0367_valid_perfect_square/Solution.java)| Easy | Math, Binary_Search | 0 | 100.00
+| 1385 |[Find the Distance Value Between Two Arrays](src/main/java/g1301_1400/s1385_find_the_distance_value_between_two_arrays/Solution.java)| Easy | Array, Sorting, Binary_Search, Two_Pointers | 5 | 65.78
+
+#### Day 4
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0069 |[Sqrt(x)](src/main/java/g0001_0100/s0069_sqrtx/Solution.java)| Easy | Top_Interview_Questions, Math, Binary_Search | 1 | 86.67
+| 0744 |[Find Smallest Letter Greater Than Target](src/main/java/g0701_0800/s0744_find_smallest_letter_greater_than_target/Solution.java)| Easy | Array, Binary_Search | 0 | 100.00
+
+#### Day 5
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0278 |[First Bad Version](src/main/java/g0201_0300/s0278_first_bad_version/Solution.java)| Easy | Binary_Search, Interactive | 15 | 87.89
+| 0034 |[Find First and Last Position of Element in Sorted Array](src/main/java/g0001_0100/s0034_find_first_and_last_position_of_element_in_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Big_O_Time_O(log_n)_Space_O(1) | 0 | 100.00
+
+#### Day 6
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0441 |[Arranging Coins](src/main/java/g0401_0500/s0441_arranging_coins/Solution.java)| Easy | Math, Binary_Search | 2 | 95.97
+| 1539 |[Kth Missing Positive Number](src/main/java/g1501_1600/s1539_kth_missing_positive_number/Solution.java)| Easy | Array, Binary_Search | 0 | 100.00
+
+#### Day 7
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0167 |[Two Sum II - Input Array Is Sorted](src/main/java/g0101_0200/s0167_two_sum_ii_input_array_is_sorted/Solution.java)| Medium | Array, Binary_Search, Two_Pointers | 2 | 92.62
+| 1608 |[Special Array With X Elements Greater Than or Equal X](src/main/java/g1601_1700/s1608_special_array_with_x_elements_greater_than_or_equal_x/Solution.java)| Easy | Array, Sorting, Binary_Search | 2 | 61.14
+
+#### Day 8
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1351 |[Count Negative Numbers in a Sorted Matrix](src/main/java/g1301_1400/s1351_count_negative_numbers_in_a_sorted_matrix/Solution.java)| Easy | Array, Binary_Search, Matrix | 1 | 49.66
+| 0074 |[Search a 2D Matrix](src/main/java/g0001_0100/s0074_search_a_2d_matrix/Solution.java)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Matrix, Big_O_Time_O(endRow+endCol)_Space_O(1) | 0 | 100.00
+
+#### Day 9
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1337 |[The K Weakest Rows in a Matrix](src/main/java/g1301_1400/s1337_the_k_weakest_rows_in_a_matrix/Solution.java)| Easy | Array, Sorting, Binary_Search, Matrix, Heap_Priority_Queue | 1 | 99.77
+| 1346 |[Check If N and Its Double Exist](src/main/java/g1301_1400/s1346_check_if_n_and_its_double_exist/Solution.java)| Easy | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 1 | 99.64
+
+#### Day 10
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0350 |[Intersection of Two Arrays II](src/main/java/g0301_0400/s0350_intersection_of_two_arrays_ii/Solution.java)| Easy | Array, Hash_Table, Sorting, Binary_Search, Two_Pointers | 4 | 69.62
+| 0633 |[Sum of Square Numbers](src/main/java/g0601_0700/s0633_sum_of_square_numbers/Solution.java)| Medium | Math, Binary_Search, Two_Pointers | 4 | 82.92
+
+#### Day 11
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 1855 |[Maximum Distance Between a Pair of Values](src/main/java/g1801_1900/s1855_maximum_distance_between_a_pair_of_values/Solution.java)| Medium | Array, Greedy, Binary_Search, Two_Pointers | 4 | 62.20
+| 0033 |[Search in Rotated Sorted Array](src/main/java/g0001_0100/s0033_search_in_rotated_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Big_O_Time_O(log_n)_Space_O(1) | 0 | 100.00
+
+#### Day 12
+
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
+|-|-|-|-|-|-
+| 0153 |[Find Minimum in Rotated Sorted Array](src/main/java/g0101_0200/s0153_find_minimum_in_rotated_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Big_O_Time_O(log_N)_Space_O(log_N) | 0 | 100.00
 
 ## Contributing
 Your ideas/fixes/algorithms are more than welcome!
