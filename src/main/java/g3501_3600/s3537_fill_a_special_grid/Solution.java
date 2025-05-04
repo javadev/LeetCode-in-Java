@@ -9,7 +9,7 @@ public class Solution {
         }
         int len = (int) Math.pow(2, n);
         int[][] ans = new int[len][len];
-        int[] num = new int[] {(int) Math.pow(2, 2 * n) - 1};
+        int[] num = new int[] {(int) Math.pow(2, 2D * n) - 1};
         backtrack(ans, len, len, 0, 0, num);
         return ans;
     }
