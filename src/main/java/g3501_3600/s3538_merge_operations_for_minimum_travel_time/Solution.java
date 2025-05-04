@@ -19,7 +19,9 @@ public class Solution {
             for (int curr = 0; curr <= k && curr <= i; curr++) {
                 currTime += time[i - curr];
                 for (int used = 0; used <= k; used++) {
-                    if (dp[i][curr][used] == Integer.MAX_VALUE) continue;
+                    if (dp[i][curr][used] == Integer.MAX_VALUE) {
+                        continue;
+                    }
                     for (int next = 0; next <= k - used && next <= n - i - 2; next++) {
                         int nextI = i + next + 1;
                         dp[nextI][next][next + used] =

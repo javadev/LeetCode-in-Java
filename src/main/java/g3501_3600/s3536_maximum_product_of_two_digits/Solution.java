@@ -11,7 +11,9 @@ public class Solution {
         while (n > 0) {
             int a = n % 10;
             if (a > m1) {
-                if (m1 > m2) m2 = m1;
+                if (m1 > m2) {
+                    m2 = m1;
+                }
                 m1 = a;
             } else {
                 if (a > m2) {

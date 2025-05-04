@@ -18,7 +18,8 @@ public class Solution {
                 pow[j][c] = pow[j][c - 1] * nums[j] % MOD;
             }
         }
-        long[][][] dp = new long[m + 1][k + 1][m + 1], next = new long[m + 1][k + 1][m + 1];
+        long[][][] dp = new long[m + 1][k + 1][m + 1];
+        long[][][] next = new long[m + 1][k + 1][m + 1];
         dp[0][0][0] = 1L;
         for (int i = 0; i < n; i++) {
             for (int t = 0; t <= m; t++) {
@@ -29,10 +30,14 @@ public class Solution {
             for (int t = 0; t <= m; t++) {
                 for (int o = 0; o <= k; o++) {
                     for (int c = 0; c <= m; c++) {
-                        if (dp[t][o][c] == 0) continue;
+                        if (dp[t][o][c] == 0) {
+                            continue;
+                        }
                         for (int cc = 0; cc <= m - t; cc++) {
                             int total = c + cc;
-                            if (o + (total & 1) > k) continue;
+                            if (o + (total & 1) > k) {
+                                continue;
+                            }
                             next[t + cc][o + (total & 1)][total >>> 1] =
                                     (next[t + cc][o + (total & 1)][total >>> 1]
                                                     + dp[t][o][c]
