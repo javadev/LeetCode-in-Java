@@ -20,4 +20,14 @@ class SolutionTest {
     void maxProduct3() {
         assertThat(new Solution().maxProduct(124), equalTo(8));
     }
+
+    @Test
+    void maxProduct4() {
+        assertThat(new Solution().maxProduct(453), equalTo(20));
+    }
+
+    @Test
+    void maxProduct5() {
+        assertThat(new Solution().maxProduct(437), equalTo(28));
+    }
 }
