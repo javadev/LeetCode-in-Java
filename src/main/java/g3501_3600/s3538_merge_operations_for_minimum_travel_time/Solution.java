@@ -31,7 +31,6 @@ public class Solution {
                 }
             }
         }
-
         int ans = Integer.MAX_VALUE;
         for (int curr = 0; curr <= k; curr++) {
             ans = Math.min(ans, dp[n - 1][curr][k]);
