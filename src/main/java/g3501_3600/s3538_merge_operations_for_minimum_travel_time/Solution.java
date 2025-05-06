@@ -1,6 +1,7 @@
 package g3501_3600.s3538_merge_operations_for_minimum_travel_time;
 
-// #Hard #2025_05_04_Time_7_ms_(100.00%)_Space_45.31_MB_(79.31%)
+// #Hard #Array #Dynamic_Programming #Prefix_Sum
+// #2025_05_06_Time_7_ms_(99.32%)_Space_45.14_MB_(87.16%)
 
 @SuppressWarnings({"unused", "java:S1172"})
 public class Solution {

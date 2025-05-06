@@ -1,6 +1,7 @@
 package g3501_3600.s3537_fill_a_special_grid;
 
-// #Medium #2025_05_04_Time_2_ms_(100.00%)_Space_87.25_MB_(7.46%)
+// #Medium #Array #Matrix #Divide_and_Conquer
+// #2025_05_06_Time_2_ms_(100.00%)_Space_87.14_MB_(16.42%)
 
 public class Solution {
     public int[][] specialGrid(int n) {

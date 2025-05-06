@@ -1,6 +1,7 @@
 package g3501_3600.s3539_find_sum_of_array_product_of_magical_sequences;
 
-// #Hard #2025_05_04_Time_39_ms_(97.56%)_Space_44.79_MB_(87.80%)
+// #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Bitmask #Combinatorics
+// #2025_05_06_Time_39_ms_(95.71%)_Space_44.58_MB_(98.57%)
 
 import java.util.Arrays;
 
