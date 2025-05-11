@@ -13,7 +13,9 @@ public class Solution {
         }
         int dischar = 0;
         for (int i = 0; i < 26; i++) {
-            if (carr[i] > 0) dischar++;
+            if (carr[i] > 0) {
+                dischar++;
+            }
         }
         while (dischar > k) {
             int minF = Integer.MAX_VALUE;
