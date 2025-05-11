@@ -29,4 +29,9 @@ class SolutionTest {
                 new Solution().canPartitionGrid(new int[][] {{4, 1, 8}, {3, 2, 6}}),
                 equalTo(false));
     }
+
+    @Test
+    void canPartitionGrid5() {
+        assertThat(new Solution().canPartitionGrid(new int[][] {{1}}), equalTo(false));
+    }
 }

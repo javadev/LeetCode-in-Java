@@ -23,4 +23,10 @@ class SolutionTest {
         assertThat(
                 new Solution().maxWeight(3, new int[][] {{0, 1, 6}, {1, 2, 8}}, 1, 6), equalTo(-1));
     }
+
+    @Test
+    void maxWeight4() {
+        assertThat(
+                new Solution().maxWeight(3, new int[][] {{0, 1, 6}, {1, 2, 8}}, 0, 6), equalTo(0));
+    }
 }
