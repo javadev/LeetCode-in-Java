@@ -19,7 +19,8 @@ public class Solution {
             }
             res += getTotalSum(cur, c);
         }
-        return totalSum[cur] = res;
+        totalSum[cur] = res;
+        return res;
     }
 
     private void add(long[][] a, long[][] b) {
