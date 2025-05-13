@@ -34,4 +34,28 @@ class SolutionTest {
     void canPartitionGrid5() {
         assertThat(new Solution().canPartitionGrid(new int[][] {{1}}), equalTo(false));
     }
+
+    @Test
+    void canPartitionGrid6() {
+        assertThat(
+                new Solution().canPartitionGrid(new int[][] {{25372, 100000, 100000}}),
+                equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid7() {
+        assertThat(
+                new Solution().canPartitionGrid(new int[][] {{100000, 100000, 100000, 100000, 1}}),
+                equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid8() {
+        assertThat(new Solution().canPartitionGrid(new int[][] {{55753, 55753}}), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid9() {
+        assertThat(new Solution().canPartitionGrid(new int[][] {{253, 10, 10}}), equalTo(true));
+    }
 }
