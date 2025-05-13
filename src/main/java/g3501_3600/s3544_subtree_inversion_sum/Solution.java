@@ -1,6 +1,7 @@
 package g3501_3600.s3544_subtree_inversion_sum;
 
-// #Hard #2025_05_11_Time_146_ms_(100.00%)_Space_151.77_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Tree #Depth_First_Search
+// #2025_05_13_Time_159_ms_(89.47%)_Space_154.99_MB_(71.05%)
 
 import java.util.ArrayList;
 import java.util.List;

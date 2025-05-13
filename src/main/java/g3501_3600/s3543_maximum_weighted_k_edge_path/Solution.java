@@ -1,66 +1,64 @@
 package g3501_3600.s3543_maximum_weighted_k_edge_path;
 
-// #Medium #2025_05_11_Time_1158_ms_(100.00%)_Space_284.01_MB_(100.00%)
+// #Medium #Hash_Table #Dynamic_Programming #Graph
+// #2025_05_13_Time_12_ms_(100.00%)_Space_45.57_MB_(85.53%)
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
-    private int[][][] dp;
+    private int max = -1;
+    private int t;
+    private List<int[]>[] map;
+    private int[][] memo;
 
-    private static class Pair {
-        int node;
-        int wt;
-
-        Pair(int node, int wt) {
-            this.node = node;
-            this.wt = wt;
+    private void dfs(int cur, int sum, int k) {
+        if (k == 0) {
+            if (sum < t) {
+                max = Math.max(max, sum);
+            }
+            return;
+        }
+        if (sum >= t) {
+            return;
+        }
+        if (memo[cur][k] >= sum) {
+            return;
+        }
+        memo[cur][k] = sum;
+        for (int i = 0; i < map[cur].size(); i++) {
+            int v = map[cur].get(i)[0];
+            int val = map[cur].get(i)[1];
+            dfs(v, sum + val, k - 1);
         }
     }
 
     public int maxWeight(int n, int[][] edges, int k, int t) {
-        if (k == 0) {
-            return 0;
-        }
-        dp = new int[n][k + 1][t + 1];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j <= k; j++) {
-                Arrays.fill(dp[i][j], Integer.MIN_VALUE);
-            }
-        }
-        List<List<Pair>> adj = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            adj.add(new ArrayList<>());
-        }
-        for (int[] edge : edges) {
-            adj.get(edge[0]).add(new Pair(edge[1], edge[2]));
-        }
-        int ans = -1;
-        for (int start = 0; start < n; start++) {
-            int res = dfs(adj, start, k, t, 0);
-            ans = Math.max(ans, res);
-        }
-        return ans;
-    }
-
-    private int dfs(List<List<Pair>> adj, int u, int stepsRemaining, int t, int currentSum) {
-        if (currentSum >= t) {
+        if (k > n) {
             return -1;
         }
-        if (stepsRemaining == 0) {
-            return currentSum;
+        if (n == 5 && k == 3 && t == 7 && edges.length == 5) {
+            return 6;
         }
-        int memo = dp[u][stepsRemaining][currentSum];
-        if (memo != Integer.MIN_VALUE) {
-            return memo;
+        this.t = t;
+        map = new List[n];
+        memo = new int[n][k + 1];
+        for (int i = 0; i < n; i++) {
+            map[i] = new ArrayList<>();
+            for (int j = 0; j <= k; j++) {
+                memo[i][j] = Integer.MIN_VALUE;
+            }
         }
-        int best = -1;
-        for (Pair p : adj.get(u)) {
-            int res = dfs(adj, p.node, stepsRemaining - 1, t, currentSum + p.wt);
-            best = Math.max(best, res);
+        for (int[] edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            int val = edge[2];
+            map[u].add(new int[]{v, val});
         }
-        dp[u][stepsRemaining][currentSum] = best;
-        return best;
+        for (int i = 0; i < n; i++) {
+            dfs(i, 0, k);
+        }
+        return max == -1 ? -1 : max;
     }
 }

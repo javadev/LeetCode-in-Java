@@ -1,6 +1,7 @@
 package g3501_3600.s3547_maximum_sum_of_edge_values_in_a_graph;
 
-// #Hard #2025_05_11_Time_27_ms_(98.41%)_Space_63.02_MB_(98.41%)
+// #Hard #Sorting #Greedy #Graph #Depth_First_Search
+// #2025_05_13_Time_32_ms_(95.35%)_Space_63.82_MB_(98.45%)
 
 import java.util.ArrayList;
 import java.util.Collections;
