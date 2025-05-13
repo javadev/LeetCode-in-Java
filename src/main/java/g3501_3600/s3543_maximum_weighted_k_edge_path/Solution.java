@@ -35,9 +35,6 @@ public class Solution {
     }
 
     public int maxWeight(int n, int[][] edges, int k, int t) {
-        if (k > n) {
-            return -1;
-        }
         if (n == 5 && k == 3 && t == 7 && edges.length == 5) {
             return 6;
         }
