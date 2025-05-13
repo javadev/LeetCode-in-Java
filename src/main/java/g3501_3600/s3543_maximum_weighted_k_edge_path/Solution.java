@@ -54,7 +54,7 @@ public class Solution {
             int u = edge[0];
             int v = edge[1];
             int val = edge[2];
-            map[u].add(new int[]{v, val});
+            map[u].add(new int[] {v, val});
         }
         for (int i = 0; i < n; i++) {
             dfs(i, 0, k);
