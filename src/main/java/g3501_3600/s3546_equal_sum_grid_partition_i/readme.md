@@ -17,7 +17,7 @@ Return `true` if such a partition exists; otherwise return `false`.
 
 **Explanation:**
 
-![](https://assets.leetcode.com/uploads/2025/03/30/lc.png)![](https://assets.leetcode.com/uploads/2025/03/30/lc.jpeg)
+![](https://assets.leetcode.com/uploads/2025/03/30/lc.jpeg)
 
 A horizontal cut between row 0 and row 1 results in two non-empty sections, each with a sum of 5. Thus, the answer is `true`.
 
