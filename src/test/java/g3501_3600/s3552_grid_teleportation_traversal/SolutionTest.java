@@ -27,4 +27,9 @@ class SolutionTest {
     void minMoves4() {
         assertThat(new Solution().minMoves(new String[] {".D", "EH"}), equalTo(2));
     }
+
+    @Test
+    void minMoves5() {
+        assertThat(new Solution().minMoves(new String[] {"."}), equalTo(0));
+    }
 }
