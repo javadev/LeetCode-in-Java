@@ -32,4 +32,9 @@ class SolutionTest {
     void minMoves5() {
         assertThat(new Solution().minMoves(new String[] {"."}), equalTo(0));
     }
+
+    @Test
+    void minMoves6() {
+        assertThat(new Solution().minMoves(new String[] {".", "#"}), equalTo(0));
+    }
 }
