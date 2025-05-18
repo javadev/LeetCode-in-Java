@@ -5,6 +5,7 @@ package g3501_3600.s3552_grid_teleportation_traversal;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Queue;
 
 @SuppressWarnings({"java:S107", "unchecked"})
@@ -76,19 +77,17 @@ public class Solution {
                         && matrix[m - 1].charAt(n - 1) == matrix[0].charAt(0))) {
             return 0;
         }
-
         List<int[]>[] portalsToPositions = initializePortals(m, n, matrix);
         boolean[][] visited = new boolean[m][n];
         Queue<int[]> queue = new LinkedList<>();
         initializeQueue(queue, visited, matrix, portalsToPositions);
-
         int moves = 0;
         while (!queue.isEmpty()) {
             int sz = queue.size();
             while (sz-- > 0) {
                 int[] curr = queue.poll();
                 for (int[] adj : ADJACENT) {
-                    int r = adj[0] + curr[0];
+                    int r = adj[0] + Objects.requireNonNull(curr)[0];
                     int c = adj[1] + curr[1];
                     if (!isValidMove(r, c, m, n, visited, matrix)) {
                         continue;
