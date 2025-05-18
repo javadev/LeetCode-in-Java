@@ -17,4 +17,9 @@ class SolutionTest {
                 new Solution().minMoves(new String[] {".#...", ".#.#.", ".#.#.", "...#."}),
                 equalTo(13));
     }
+
+    @Test
+    void minMoves3() {
+        assertThat(new Solution().minMoves(new String[] {".", "A"}), equalTo(1));
+    }
 }

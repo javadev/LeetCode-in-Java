@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-@SuppressWarnings("unchecked")
+@SuppressWarnings({"java:S107", "unchecked"})
 public class Solution {
     private static final int[][] ADJACENT = new int[][] {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
 
