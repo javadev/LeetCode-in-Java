@@ -8,7 +8,6 @@ import java.util.List;
 
 @SuppressWarnings("unchecked")
 public class Solution {
-    private int p;
     private List<int[]>[] graph;
     private int[] euler;
     private int[] depth;
@@ -18,7 +17,7 @@ public class Solution {
     private long[] dists;
 
     public int[] minimumWeight(int[][] edges, int[][] queries) {
-        p = 0;
+        int p = 0;
         for (int[] e : edges) {
             p = Math.max(p, Math.max(e[0], e[1]));
         }
