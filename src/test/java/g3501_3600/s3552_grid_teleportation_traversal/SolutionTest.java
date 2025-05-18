@@ -35,6 +35,6 @@ class SolutionTest {
 
     @Test
     void minMoves6() {
-        assertThat(new Solution().minMoves(new String[] {".", "#"}), equalTo(0));
+        assertThat(new Solution().minMoves(new String[] {".", "#"}), equalTo(-1));
     }
 }
