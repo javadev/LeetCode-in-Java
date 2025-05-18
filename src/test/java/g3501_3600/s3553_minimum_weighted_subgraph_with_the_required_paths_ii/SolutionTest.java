@@ -23,4 +23,12 @@ class SolutionTest {
                         .minimumWeight(new int[][] {{1, 0, 8}, {0, 2, 7}}, new int[][] {{0, 1, 2}}),
                 equalTo(new int[] {15}));
     }
+
+    @Test
+    void minimumWeight3() {
+        assertThat(
+                new Solution()
+                        .minimumWeight(new int[][] {{1, 0, 4}, {2, 0, 5}}, new int[][] {{1, 0, 2}}),
+                equalTo(new int[] {9}));
+    }
 }
