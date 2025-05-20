@@ -1,6 +1,7 @@
 package g3501_3600.s3552_grid_teleportation_traversal;
 
-// #Medium #2025_05_18_Time_139_ms_(99.44%)_Space_61.40_MB_(98.89%)
+// #Medium #Array #Hash_Table #Breadth_First_Search #Matrix
+// #2025_05_20_Time_146_ms_(98.62%)_Space_60.98_MB_(99.48%)
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -1,6 +1,6 @@
 package g3501_3600.s3551_minimum_swaps_to_sort_by_digit_sum;
 
-// #Medium #2025_05_18_Time_211_ms_(99.38%)_Space_61.54_MB_(92.80%)
+// #Medium #Array #Hash_Table #Sorting #2025_05_20_Time_213_ms_(99.23%)_Space_62.28_MB_(84.68%)
 
 import java.util.Arrays;
 

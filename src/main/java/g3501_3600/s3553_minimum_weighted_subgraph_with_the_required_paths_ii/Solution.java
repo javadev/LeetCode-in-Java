@@ -1,6 +1,6 @@
 package g3501_3600.s3553_minimum_weighted_subgraph_with_the_required_paths_ii;
 
-// #Hard #2025_05_18_Time_79_ms_(99.45%)_Space_109.90_MB_(66.85%)
+// #Hard #Array #Depth_First_Search #Tree #2025_05_20_Time_65_ms_(100.00%)_Space_135.10_MB_(31.63%)
 
 import java.util.ArrayList;
 import java.util.Arrays;
