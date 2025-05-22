@@ -21,5 +21,5 @@ HAVING
     COUNT(DISTINCT pp1.user_id) >= 3
 ORDER BY
     customer_count DESC,
-    category1,
-    category2;
+    category1 ASC,
+    category2 ASC;
