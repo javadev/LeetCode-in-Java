@@ -8,7 +8,8 @@ import java.util.List;
 @SuppressWarnings("unchecked")
 public class Solution {
     private List<Integer>[] adj;
-    private int[] present, future;
+    private int[] present;
+    private int[] future;
     private int budget;
     private static final int MIN_VAL = -1_000_000_000;
 

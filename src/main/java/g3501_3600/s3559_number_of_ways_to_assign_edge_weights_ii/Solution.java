@@ -9,7 +9,7 @@ public class Solution {
     private static final int MOD = 1000000007;
     private List<List<Integer>> adj;
     private int[] level;
-    private int jumps[][];
+    private int[][] jumps;
 
     private void mark(int node, int par) {
         for (int neigh : adj.get(node)) {
@@ -63,7 +63,7 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             adj.add(new ArrayList<>());
         }
-        for (int i[] : edges) {
+        for (int[] i : edges) {
             adj.get(i[0] - 1).add(i[1] - 1);
             adj.get(i[1] - 1).add(i[0] - 1);
         }
@@ -76,13 +76,13 @@ public class Solution {
                 jumps[i][j] = jumps[p][j - 1];
             }
         }
-        int pow[] = new int[n + 1];
+        int[] pow = new int[n + 1];
         pow[0] = 1;
         for (int i = 1; i <= n; i++) {
             pow[i] = (pow[i - 1] * 2) % MOD;
         }
         int q = queries.length;
-        int ans[] = new int[q];
+        int[] ans = new int[q];
         for (int i = 0; i < q; i++) {
             int d = findDist(queries[i][0] - 1, queries[i][1] - 1);
             ans[i] = d > 0 ? pow[d - 1] : 0;

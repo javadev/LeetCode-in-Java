@@ -3,10 +3,6 @@ package g3501_3600.s3563_lexicographically_smallest_string_after_adjacent_remova
 // #Hard #2025_05_25_Time_146_ms_(98.77%)_Space_45.52_MB_(90.12%)
 
 public class Solution {
-    private String sVal;
-    private int nVal;
-    private boolean[][] remTable;
-    private String[] dpArr;
 
     private boolean checkPair(char char1, char char2) {
         int diff_val = Math.abs(char1 - char2);
@@ -14,17 +10,15 @@ public class Solution {
     }
 
     public String lexicographicallySmallestString(String sIn) {
-        String gralvenoti = sIn;
-        this.sVal = gralvenoti;
-        this.nVal = gralvenoti.length();
+        int nVal = sIn.length();
         if (nVal == 0) {
             return "";
         }
-        this.remTable = new boolean[nVal][nVal];
+        boolean[][] remTable = new boolean[nVal][nVal];
         for (int len = 2; len <= nVal; len += 2) {
             for (int idx = 0; idx <= nVal - len; idx++) {
                 int j = idx + len - 1;
-                if (checkPair(sVal.charAt(idx), sVal.charAt(j))) {
+                if (checkPair(sIn.charAt(idx), sIn.charAt(j))) {
                     if (len == 2) {
                         remTable[idx][j] = true;
                     } else {
@@ -44,20 +38,20 @@ public class Solution {
                 }
             }
         }
-        this.dpArr = new String[nVal + 1];
+        String[] dpArr = new String[nVal + 1];
         dpArr[nVal] = "";
         for (int idx = nVal - 1; idx >= 0; idx--) {
-            dpArr[idx] = sVal.charAt(idx) + dpArr[idx + 1];
-            for (int k_match = idx + 1; k_match < nVal; k_match++) {
-                if (checkPair(sVal.charAt(idx), sVal.charAt(k_match))) {
+            dpArr[idx] = sIn.charAt(idx) + dpArr[idx + 1];
+            for (int kMatch = idx + 1; kMatch < nVal; kMatch++) {
+                if (checkPair(sIn.charAt(idx), sIn.charAt(kMatch))) {
                     boolean middleVanishes;
-                    if (k_match - 1 < idx + 1) {
+                    if (kMatch - 1 < idx + 1) {
                         middleVanishes = true;
                     } else {
-                        middleVanishes = remTable[idx + 1][k_match - 1];
+                        middleVanishes = remTable[idx + 1][kMatch - 1];
                     }
                     if (middleVanishes) {
-                        String candidate = dpArr[k_match + 1];
+                        String candidate = dpArr[kMatch + 1];
                         if (candidate.compareTo(dpArr[idx]) < 0) {
                             dpArr[idx] = candidate;
                         }

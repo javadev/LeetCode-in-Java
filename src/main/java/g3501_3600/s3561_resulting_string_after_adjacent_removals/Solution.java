@@ -9,7 +9,8 @@ public class Solution {
         char[] buf = new char[n];
         for (char c : s.toCharArray()) {
             if (p > 0) {
-                int d = buf[p - 1] - c, ad = d < 0 ? -d : d;
+                int d = buf[p - 1] - c;
+                int ad = d < 0 ? -d : d;
                 if (ad == 1 || ad == 25) {
                     p--;
                     continue;
