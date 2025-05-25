@@ -15,7 +15,7 @@ public class Solution {
         int n = edges.length + 1;
         List<List<Integer>> adj = new ArrayList<>();
         for (int i = 0; i <= n; i++) {
-            adj.add(new ArrayList<Integer>());
+            adj.add(new ArrayList<>());
         }
         for (int[] i : edges) {
             adj.get(i[0]).add(i[1]);
@@ -24,7 +24,7 @@ public class Solution {
         int[] l = new int[n + 1];
         int max = 0;
         Arrays.fill(l, -1);
-        Queue<int[]> q = new LinkedList<int[]>();
+        Queue<int[]> q = new LinkedList<>();
         q.offer(new int[] {1, 0});
         l[1] = 0;
         while (!q.isEmpty()) {
