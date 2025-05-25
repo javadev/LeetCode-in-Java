@@ -67,7 +67,7 @@ public class Solution {
             adj.get(i[0] - 1).add(i[1] - 1);
             adj.get(i[1] - 1).add(i[0] - 1);
         }
-        int m = (int) (Math.ceil(Math.log(n - 1) / Math.log(2))) + 1;
+        int m = (int) (Math.ceil(Math.log(n - 1.0) / Math.log(2))) + 1;
         jumps = new int[n][m];
         mark(0, -1);
         for (int j = 1; j < m; j++) {
