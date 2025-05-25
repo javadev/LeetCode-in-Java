@@ -43,12 +43,12 @@ class SolutionTest {
 
     @Test
     void minCuttingCost8() {
-        assertThat(new Solution().minCuttingCost(2, 5, 2), equalTo((5L - 2L) * 2L)); // 6
+        assertThat(new Solution().minCuttingCost(2, 5, 2), equalTo(6L));
     }
 
     @Test
     void minCuttingCost9() {
-        assertThat(new Solution().minCuttingCost(1, 10, 9), equalTo((10L - 9L) * 9L)); // 9
+        assertThat(new Solution().minCuttingCost(1, 10, 9), equalTo(9L));
     }
 
     @Test
