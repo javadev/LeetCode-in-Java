@@ -5,8 +5,8 @@ package g3501_3600.s3563_lexicographically_smallest_string_after_adjacent_remova
 public class Solution {
 
     private boolean checkPair(char char1, char char2) {
-        int diff_val = Math.abs(char1 - char2);
-        return diff_val == 1 || (char1 == 'a' && char2 == 'z') || (char1 == 'z' && char2 == 'a');
+        int diffVal = Math.abs(char1 - char2);
+        return diffVal == 1 || (char1 == 'a' && char2 == 'z') || (char1 == 'z' && char2 == 'a');
     }
 
     public String lexicographicallySmallestString(String sIn) {
@@ -30,8 +30,8 @@ public class Solution {
                 if (remTable[idx][j]) {
                     continue;
                 }
-                for (int p_split = idx + 1; p_split < j; p_split += 2) {
-                    if (remTable[idx][p_split] && remTable[p_split + 1][j]) {
+                for (int pSplit = idx + 1; pSplit < j; pSplit += 2) {
+                    if (remTable[idx][pSplit] && remTable[pSplit + 1][j]) {
                         remTable[idx][j] = true;
                         break;
                     }
