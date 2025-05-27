@@ -4,7 +4,7 @@ package g3501_3600.s3558_number_of_ways_to_assign_edge_weights_i;
 
 public class Solution {
     private static int mod = (int) 1e9 + 7;
-    private static long[] pow2 = new long[100001];
+    private long[] pow2 = new long[100001];
 
     public int assignEdgeWeights(int[][] edges) {
         if (pow2[0] == 0) {
