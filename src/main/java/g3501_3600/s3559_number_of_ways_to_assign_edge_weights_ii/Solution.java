@@ -1,6 +1,7 @@
 package g3501_3600.s3559_number_of_ways_to_assign_edge_weights_ii;
 
-// #Hard #2025_05_25_Time_135_ms_(100.00%)_Space_119.27_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Math #Tree #Depth_First_Search
+// #2025_05_27_Time_138_ms_(64.66%)_Space_133.20_MB_(11.56%)
 
 import java.util.ArrayList;
 import java.util.List;

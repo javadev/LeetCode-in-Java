@@ -1,9 +1,8 @@
 package g3501_3600.s3563_lexicographically_smallest_string_after_adjacent_removals;
 
-// #Hard #2025_05_25_Time_146_ms_(98.77%)_Space_45.52_MB_(90.12%)
+// #Hard #String #Dynamic_Programming #2025_05_27_Time_121_ms_(99.09%)_Space_45.25_MB_(100.00%)
 
 public class Solution {
-
     private boolean checkPair(char char1, char char2) {
         int diffVal = Math.abs(char1 - char2);
         return diffVal == 1 || (char1 == 'a' && char2 == 'z') || (char1 == 'z' && char2 == 'a');

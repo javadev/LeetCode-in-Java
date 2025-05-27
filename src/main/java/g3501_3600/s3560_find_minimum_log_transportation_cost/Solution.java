@@ -1,6 +1,6 @@
 package g3501_3600.s3560_find_minimum_log_transportation_cost;
 
-// #Easy #2025_05_25_Time_0_ms_(100.00%)_Space_41.10_MB_(56.75%)
+// #Easy #Math #2025_05_27_Time_0_ms_(100.00%)_Space_41.50_MB_(10.07%)
 
 public class Solution {
     public long minCuttingCost(int n, int m, int k) {

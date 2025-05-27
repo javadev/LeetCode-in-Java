@@ -1,45 +1,65 @@
 package g3501_3600.s3556_sum_of_largest_prime_substrings;
 
-// #Medium #2025_05_25_Time_21_ms_(100.00%)_Space_42.82_MB_(100.00%)
+// #Medium #String #Hash_Table #Math #Sorting #Number_Theory
+// #2025_05_27_Time_7_ms_(99.93%)_Space_42.77_MB_(98.34%)
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class Solution {
     public long sumOfLargestPrimes(String s) {
-        Set<Long> primeSet = new HashSet<>();
+        Set<Long> set = new HashSet<>();
         int n = s.length();
-        for (int i = 0; i < n; ++i) {
-            long temp = 0;
-            for (int j = i; j < n; ++j) {
-                temp = temp * 10 + (s.charAt(j) - '0');
-                if (isPrime(temp)) {
-                    primeSet.add(temp);
+        long first = -1;
+        long second = -1;
+        long third = -1;
+        for (int i = 0; i < n; i++) {
+            long num = 0;
+            for (int j = i; j < n; j++) {
+                num = num * 10 + (s.charAt(j) - '0');
+                if (i != j && s.charAt(i) == '0') {
+                    break;
+                }
+                if (isPrime(num) && !set.contains(num)) {
+                    set.add(num);
+                    if (num > first) {
+                        third = second;
+                        second = first;
+                        first = num;
+                    } else if (num > second) {
+                        third = second;
+                        second = num;
+                    } else if (num > third) {
+                        third = num;
+                    }
                 }
             }
         }
-        List<Long> primes = new ArrayList<>(primeSet);
-        Collections.sort(primes);
-        int m = primes.size();
-        if (m < 3) {
-            long sum = 0;
-            for (long p : primes) {
-                sum += p;
-            }
-            return sum;
+        long sum = 0;
+        if (first != -1) {
+            sum += first;
         }
-        return primes.get(m - 1) + primes.get(m - 2) + primes.get(m - 3);
+        if (second != -1) {
+            sum += second;
+        }
+        if (third != -1) {
+            sum += third;
+        }
+        return sum;
     }
 
-    private boolean isPrime(long n) {
-        if (n < 2) {
+    public boolean isPrime(long num) {
+        if (num <= 1) {
             return false;
         }
-        for (long i = 2; i * i <= n; ++i) {
-            if (n % i == 0) {
+        if (num == 2 || num == 3) {
+            return true;
+        }
+        if (num % 2 == 0 || num % 3 == 0) {
+            return false;
+        }
+        for (long i = 5; i * i <= num; i += 6) {
+            if (num % i == 0 || num % (i + 2) == 0) {
                 return false;
             }
         }
