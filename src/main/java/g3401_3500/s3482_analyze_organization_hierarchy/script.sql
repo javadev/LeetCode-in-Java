@@ -59,4 +59,4 @@ GROUP BY
     oh.orig_employee_name,
     ch.sub_level
 ORDER BY
-    level ASC, budget DESC, employee_name;
+    level ASC, budget DESC, employee_name ASC;
