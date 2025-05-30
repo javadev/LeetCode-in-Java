@@ -1,43 +1,62 @@
 # Write your MySQL query statement below
-# #Hard #Database #2025_03_11_Time_712_ms_(100.00%)_Space_0.0_MB_(100.00%)
-with recursive org_hierarchy(orig_employee_id, orig_employee_name, employee_id, employee_name, manager_id, salary, org_level) as
-(
-    select employee_id as orig_employee_id,
-    employee_name as orig_employee_name,
+# #Hard #Database #2025_05_30_Time_294_ms_(80.03%)_Space_0.0_MB_(100.00%)
+WITH RECURSIVE org_hierarchy (
+    orig_employee_id,
+    orig_employee_name,
     employee_id,
     employee_name,
     manager_id,
     salary,
-    1 as org_level
-    from Employees
+    org_level
+) AS (
+    SELECT
+        employee_id AS orig_employee_id,
+        employee_name AS orig_employee_name,
+        employee_id,
+        employee_name,
+        manager_id,
+        salary,
+        1 AS org_level
+    FROM Employees
+
     UNION ALL
-    select P.orig_employee_id,
-    P.orig_employee_name,
-    CH.employee_id,
-    CH.employee_name,
-    CH.manager_id,
-    CH.salary,
-    P.org_level + 1
-    from org_hierarchy P, Employees CH
-    where ch.manager_id = P.employee_id
+
+    SELECT
+        P.orig_employee_id,
+        P.orig_employee_name,
+        CH.employee_id,
+        CH.employee_name,
+        CH.manager_id,
+        CH.salary,
+        P.org_level + 1
+    FROM org_hierarchy P
+    JOIN Employees CH ON CH.manager_id = P.employee_id
 ),
-CEO_hierarchy as (
-    select org_hierarchy.employee_id as SUB_employee_id,
-    org_hierarchy.employee_name,
-    org_hierarchy.org_level as sub_level
-    from org_hierarchy, Employees
-    where org_hierarchy.orig_employee_id = Employees.employee_id
-    and Employees.manager_id is null
+CEO_hierarchy (
+    sub_employee_id,
+    employee_name,
+    sub_level
+) AS (
+    SELECT
+        oh.employee_id AS sub_employee_id,
+        oh.employee_name,
+        oh.org_level AS sub_level
+    FROM org_hierarchy oh
+    JOIN Employees e ON oh.orig_employee_id = e.employee_id
+    WHERE e.manager_id IS NULL
 )
-select
-org_hierarchy.ORIG_EMPLOYEE_ID as employee_id,
-org_hierarchy.ORIG_EMPLOYEE_name as employee_name,
-CEO_hierarchy.sub_level as "level",
-count(*) - 1 as team_size,
-sum(org_hierarchy.salary) as budget
-from org_hierarchy, CEO_hierarchy
-where org_hierarchy.ORIG_EMPLOYEE_ID = CEO_hierarchy.SUB_employee_id
-group by org_hierarchy.ORIG_EMPLOYEE_ID,
-org_hierarchy.ORIG_EMPLOYEE_name,
-CEO_hierarchy.sub_level
-order by 3 asc, 5 desc, 2
+
+SELECT
+    oh.orig_employee_id AS employee_id,
+    oh.orig_employee_name AS employee_name,
+    ch.sub_level AS level,
+    COUNT(*) - 1 AS team_size,
+    SUM(oh.salary) AS budget
+FROM org_hierarchy oh
+JOIN CEO_hierarchy ch ON oh.orig_employee_id = ch.sub_employee_id
+GROUP BY
+    oh.orig_employee_id,
+    oh.orig_employee_name,
+    ch.sub_level
+ORDER BY
+    level ASC, budget DESC, employee_name ASC;
