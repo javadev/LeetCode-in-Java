@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeSet;
 
+@SuppressWarnings("java:S6541")
 public class Solution {
     private static final int MAX_VAL = 100005;
     private static boolean[] isPrime = new boolean[MAX_VAL];

@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Queue;
 
+@SuppressWarnings({"java:S135", "java:S6541"})
 public class Solution {
     private static class State {
         int x;
