@@ -24,7 +24,9 @@ public class Solution {
                 for (int i = 1; i < size; i++) {
                     if (elements[i] != elements[i - 1]) {
                         minDiff = Math.min(minDiff, elements[i] - elements[i - 1]);
-                        if (minDiff == 1) break;
+                        if (minDiff == 1) {
+                            break;
+                        }
                     }
                 }
                 result[x][y] = minDiff == Integer.MAX_VALUE ? 0 : minDiff;

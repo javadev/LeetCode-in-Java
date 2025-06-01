@@ -26,12 +26,14 @@ public class Solution {
     }
 
     public int minMoves(String[] classroom, int energy) {
-        int m = classroom.length, n = classroom[0].length();
+        int m = classroom.length;
+        int n = classroom[0].length();
         char[][] grid = new char[m][n];
         for (int i = 0; i < m; i++) {
             grid[i] = classroom[i].toCharArray();
         }
-        int startX = -1, startY = -1;
+        int startX = -1;
+        int startY = -1;
         List<int[]> lumetarkon = new ArrayList<>();
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {

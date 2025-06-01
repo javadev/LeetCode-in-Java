@@ -30,12 +30,12 @@ public class Solution {
 
     private static class SegmentTree {
         Node[] tree;
-        int N;
+        int n;
 
         public SegmentTree(int n) {
-            this.N = n;
-            tree = new Node[4 * N];
-            for (int i = 0; i < 4 * N; i++) {
+            this.n = n;
+            tree = new Node[4 * this.n];
+            for (int i = 0; i < 4 * this.n; i++) {
                 tree[i] = new Node();
             }
         }
@@ -52,11 +52,11 @@ public class Solution {
 
         private void update(int queryStart, int queryEnd, int delta) {
             queryStart = Math.max(1, queryStart);
-            queryEnd = Math.min(N - 1, queryEnd);
+            queryEnd = Math.min(n - 1, queryEnd);
             if (queryStart > queryEnd) {
                 return;
             }
-            update(1, 1, N - 1, queryStart, queryEnd, delta);
+            update(1, 1, n - 1, queryStart, queryEnd, delta);
         }
 
         private void update(
@@ -78,7 +78,7 @@ public class Solution {
         }
 
         public int queryMax() {
-            if (N - 1 < 1) {
+            if (n - 1 < 1) {
                 return 0;
             }
             return tree[1].maxVal;
