@@ -24,7 +24,7 @@ class SolutionTest {
     @Test
     void maximumCount3() {
         assertThat(
-                new Solution().maximumCount(new int[] {2, 34}, new int[][] {{1, 2}, {1, 3}}),
+                new Solution().maximumCount(new int[] {2, 3}, new int[][] {{1, 2}, {1, 3}}),
                 equalTo(new int[] {2, 3}));
     }
 
