@@ -5,7 +5,7 @@ package g3501_3600.s3566_partition_array_into_two_equal_product_subsets;
 public class Solution {
     public boolean checkEqualPartitions(int[] nums, long target) {
         for (int num : nums) {
-            if (target % (long) num != 0) {
+            if (target % num != 0) {
                 return false;
             }
         }
