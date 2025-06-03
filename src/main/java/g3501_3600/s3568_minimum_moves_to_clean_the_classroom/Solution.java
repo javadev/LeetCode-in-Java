@@ -1,6 +1,7 @@
 package g3501_3600.s3568_minimum_moves_to_clean_the_classroom;
 
-// #Medium #2025_06_01_Time_90_ms_(100.00%)_Space_53.82_MB_(99.66%)
+// #Medium #Array #Hash_Table #Breadth_First_Search #Matrix #Bit_Manipulation
+// #2025_06_03_Time_94_ms_(99.86%)_Space_53.76_MB_(99.86%)
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

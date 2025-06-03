@@ -1,6 +1,7 @@
 package g3501_3600.s3566_partition_array_into_two_equal_product_subsets;
 
-// #Medium #2025_06_01_Time_0_ms_(100.00%)_Space_42.01_MB_(78.42%)
+// #Medium #Array #Bit_Manipulation #Recursion #Enumeration
+// #2025_06_03_Time_0_ms_(100.00%)_Space_42.45_MB_(36.66%)
 
 public class Solution {
     public boolean checkEqualPartitions(int[] nums, long target) {

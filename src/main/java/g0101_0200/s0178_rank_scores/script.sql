@@ -7,4 +7,3 @@ FROM
     Scores
 ORDER BY
     Rank ASC;
-

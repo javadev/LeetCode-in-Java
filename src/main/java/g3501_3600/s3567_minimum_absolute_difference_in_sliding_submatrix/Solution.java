@@ -1,6 +1,6 @@
 package g3501_3600.s3567_minimum_absolute_difference_in_sliding_submatrix;
 
-// #Medium #2025_06_01_Time_7_ms_(99.65%)_Space_46.08_MB_(10.21%)
+// #Medium #Array #Sorting #Matrix #2025_06_03_Time_7_ms_(99.69%)_Space_45.24_MB_(99.03%)
 
 import java.util.Arrays;
 

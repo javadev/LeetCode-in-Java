@@ -1,6 +1,7 @@
 package g3501_3600.s3569_maximize_count_of_distinct_primes_after_split;
 
-// #Hard #2025_06_01_Time_294_ms_(96.15%)_Space_76.16_MB_(61.54%)
+// #Hard #Array #Math #Segment_Tree #Number_Theory
+// #2025_06_03_Time_280_ms_(97.30%)_Space_76.62_MB_(52.25%)
 
 import java.util.Arrays;
 import java.util.HashMap;
