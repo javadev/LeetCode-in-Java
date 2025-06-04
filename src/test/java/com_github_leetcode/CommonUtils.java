@@ -6,20 +6,6 @@ import java.util.List;
 
 public class CommonUtils {
 
-    public static void printArray(int[] nums) {
-        for (int i : nums) {
-            System.out.print(i + ", ");
-        }
-        System.out.println();
-    }
-
-    public static void printArray(double[] nums) {
-        for (double i : nums) {
-            System.out.print(i + ", ");
-        }
-        System.out.println();
-    }
-
     public static boolean compareArray(int[] arr1, int[] arr2) {
         for (int i : arr1) {
             boolean include = false;
