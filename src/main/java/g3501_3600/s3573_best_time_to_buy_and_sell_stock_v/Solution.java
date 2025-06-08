@@ -29,7 +29,8 @@ public class Solution {
                 profit = Math.max(profit, f(i + 1, k - 1, 0) - p);
             }
         }
-        return dp[i][k][state] = profit;
+        dp[i][k][state] = profit;
+        return profit;
     }
 
     public long maximumProfit(int[] prices, int k) {
