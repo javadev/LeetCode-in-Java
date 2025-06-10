@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public long maxGCDScore(int[] nums, int k) {
         int mx = 0;
