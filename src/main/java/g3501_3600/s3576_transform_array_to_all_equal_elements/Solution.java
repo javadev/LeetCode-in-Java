@@ -1,6 +1,6 @@
 package g3501_3600.s3576_transform_array_to_all_equal_elements;
 
-// #Medium #2025_06_08_Time_7_ms_(99.86%)_Space_62.66_MB_(5.31%)
+// #Medium #Array #Greedy #2025_06_10_Time_7_ms_(99.81%)_Space_56.56_MB_(99.57%)
 
 import java.util.ArrayList;
 import java.util.List;

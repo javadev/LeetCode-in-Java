@@ -1,91 +1,84 @@
 package g3501_3600.s3575_maximum_good_subtree_score;
 
-// #Hard #2025_06_08_Time_564_ms_(100.00%)_Space_45.22_MB_(100.00%)
+// #Hard #Array #Dynamic_Programming #Depth_First_Search #Tree #Bit_Manipulation #Bitmask
+// #2025_06_10_Time_92_ms_(98.73%)_Space_55.23_MB_(11.71%)
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 @SuppressWarnings("unchecked")
 public class Solution {
-    private long ans;
-    private static final int MOD = 1_000_000_007;
+    private int digits = 10;
+    private int full = 1 << digits;
+    private long neg = Long.MIN_VALUE / 4;
+    private long mod = (long) 1e9 + 7;
+    private List<Integer>[] tree;
+    private int[] val;
+    private int[] mask;
+    private boolean[] isOk;
+    private long res = 0;
 
     public int goodSubtreeSum(int[] vals, int[] par) {
         int n = vals.length;
-        List<Integer>[] adj = new ArrayList[n];
+        val = vals;
+        mask = new int[n];
+        isOk = new boolean[n];
         for (int i = 0; i < n; i++) {
-            adj[i] = new ArrayList<>();
+            int m = 0;
+            int v = vals[i];
+            boolean valid = true;
+            while (v > 0) {
+                int d = v % 10;
+                if (((m >> d) & 1) == 1) {
+                    valid = false;
+                    break;
+                }
+                m |= 1 << d;
+                v /= 10;
+            }
+            mask[i] = m;
+            isOk[i] = valid;
         }
+        tree = new ArrayList[n];
+        Arrays.setAll(tree, ArrayList::new);
+        int root = 0;
         for (int i = 1; i < n; i++) {
-            adj[par[i]].add(i);
+            tree[par[i]].add(i);
         }
-        this.ans = 0;
-        dfs(0, vals, adj);
-        return (int) ((this.ans % MOD + MOD) % MOD);
+        dfs(root);
+        return (int) (res % mod);
     }
 
-    private Map<Integer, Integer> dfs(int u, int[] vals, List<Integer>[] adj) {
-        // du: The DP map for the subtree at node u.
-        // Key: bitmask of digits. Value: max sum for that combination of digits.
-        Map<Integer, Integer> du = new HashMap<>();
-        // Base case: A sum of 0 is possible with an empty set of digits (mask 0).
-        du.put(0, 0);
-        // Process the current node's value.
-        String s = String.valueOf(Math.abs(vals[u]));
-        if (hasUniqueDigits(s)) {
-            int mask = 0;
-            for (char c : s.toCharArray()) {
-                mask |= (1 << (c - '0'));
-            }
-            du.put(mask, vals[u]);
+    private long[] dfs(int u) {
+        long[] dp = new long[full];
+        Arrays.fill(dp, neg);
+        dp[0] = 0;
+        if (isOk[u]) {
+            dp[mask[u]] = val[u];
         }
-        for (int v : adj[u]) {
-            Map<Integer, Integer> dv = dfs(v, vals, adj);
-            Map<Integer, Integer> duSnapshot = new HashMap<>(du);
-            for (Map.Entry<Integer, Integer> entryV : dv.entrySet()) {
-                int mv = entryV.getKey();
-                int sv = entryV.getValue();
-                for (Map.Entry<Integer, Integer> entryU : duSnapshot.entrySet()) {
-                    int mu = entryU.getKey();
-                    int su = entryU.getValue();
-                    // If the digit sets are disjoint (no common bits in masks), we can combine
-                    // them.
-                    if ((mu & mv) == 0) {
-                        int newMask = mu | mv;
-                        int newSum = su + sv;
-                        // Update `du` with the best possible sum for the new combined mask.
-                        du.put(
-                                newMask,
-                                Math.max(du.getOrDefault(newMask, Integer.MIN_VALUE), newSum));
+        for (int v : tree[u]) {
+            long[] child = dfs(v);
+            long[] newDp = Arrays.copyOf(dp, full);
+            for (int m1 = 0; m1 < full; m1++) {
+                if (dp[m1] < 0) {
+                    continue;
+                }
+                int remain = full - 1 - m1;
+                for (int m2 = remain; m2 > 0; m2 = (m2 - 1) & remain) {
+                    if (child[m2] < 0) {
+                        continue;
                     }
+                    int newM = m1 | m2;
+                    newDp[newM] = Math.max(newDp[newM], dp[m1] + child[m2]);
                 }
             }
+            dp = newDp;
         }
-        // After processing all children, the max value in `du` is the "good" sum for the subtree at
-        // u.
-        // Initialize with a very small number to correctly find the maximum, even if sums are
-        // negative.
-        int maxSubtreeSum = Integer.MIN_VALUE;
-        for (int sum : du.values()) {
-            maxSubtreeSum = Math.max(maxSubtreeSum, sum);
+        long best = 0;
+        for (long v : dp) {
+            best = Math.max(best, v);
         }
-        // Add this subtree's best sum to the total answer.
-        // If du is empty (should not happen due to {0:0}), we add 0.
-        this.ans += (maxSubtreeSum == Integer.MIN_VALUE ? 0 : maxSubtreeSum);
-        return du;
-    }
-
-    private boolean hasUniqueDigits(String s) {
-        Set<Character> digits = new HashSet<>();
-        for (char c : s.toCharArray()) {
-            if (!digits.add(c)) {
-                return false;
-            }
-        }
-        return true;
+        res = (res + best) % mod;
+        return dp;
     }
 }

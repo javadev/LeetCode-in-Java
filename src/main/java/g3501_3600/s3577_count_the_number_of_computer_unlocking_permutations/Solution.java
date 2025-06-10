@@ -1,6 +1,7 @@
 package g3501_3600.s3577_count_the_number_of_computer_unlocking_permutations;
 
-// #Medium #2025_06_08_Time_1_ms_(100.00%)_Space_62.08_MB_(35.87%)
+// #Medium #Array #Math #Combinatorics #Brainteaser
+// #2025_06_10_Time_1_ms_(100.00%)_Space_62.24_MB_(22.08%)
 
 public class Solution {
     private static final int MOD = 1_000_000_007;

@@ -1,45 +1,64 @@
 package g3501_3600.s3574_maximize_subarray_gcd_score;
 
-// #Hard #2025_06_08_Time_364_ms_(100.00%)_Space_44.70_MB_(100.00%)
+// #Hard #Array #Math #Enumeration #Number_Theory
+// #2025_06_10_Time_13_ms_(100.00%)_Space_45.07_MB_(78.08%)
 
 public class Solution {
     public long maxGCDScore(int[] nums, int k) {
+        int mx = 0;
+        for (int x : nums) {
+            mx = Math.max(mx, x);
+        }
+        int width = 32 - Integer.numberOfLeadingZeros(mx);
+        List<Integer>[] lowbitPos = new List[width];
+        Arrays.setAll(lowbitPos, i -> new ArrayList<>());
+        int[][] intervals = new int[width + 1][3];
+        int size = 0;
         long ans = 0;
-        int n = nums.length;
-        for (int i = 0; i < n; i++) {
-            long countGCD = 0;
-            long oddCount = 0;
-            long ongoingGCD = 0;
-            for (int j = i; j < n; j++) {
-                long currentGCD = gcd(ongoingGCD, nums[j]);
-                if (currentGCD != ongoingGCD) {
-                    ongoingGCD = currentGCD;
-                    countGCD = 1;
-                } else if (nums[j] == ongoingGCD) {
-                    countGCD++;
+        for (int i = 0; i < nums.length; i++) {
+            int x = nums[i];
+            int tz = Integer.numberOfTrailingZeros(x);
+            lowbitPos[tz].add(i);
+            for (int j = 0; j < size; j++) {
+                intervals[j][0] = gcd(intervals[j][0], x);
+            }
+            intervals[size][0] = x;
+            intervals[size][1] = i - 1;
+            intervals[size][2] = i;
+            size++;
+            int idx = 1;
+            for (int j = 1; j < size; j++) {
+                if (intervals[j][0] != intervals[j - 1][0]) {
+                    intervals[idx][0] = intervals[j][0];
+                    intervals[idx][1] = intervals[j][1];
+                    intervals[idx][2] = intervals[j][2];
+                    idx++;
+                } else {
+                    intervals[idx - 1][2] = intervals[j][2];
                 }
-                if (nums[j] % 2 != 0) {
-                    oddCount++;
+            }
+            size = idx;
+            for (int j = 0; j < size; j++) {
+                int g = intervals[j][0];
+                int l = intervals[j][1];
+                int r = intervals[j][2];
+                ans = Math.max(ans, (long) g * (i - l));
+                List<Integer> pos = lowbitPos[Integer.numberOfTrailingZeros(g)];
+                int minL = pos.size() > k ? Math.max(l, pos.get(pos.size() - k - 1)) : l;
+                if (minL < r) {
+                    ans = Math.max(ans, (long) g * 2 * (i - minL));
                 }
-                int len = j - i + 1;
-                long res = ongoingGCD * len;
-                if (ongoingGCD % 2 != 0) {
-                    if (k >= oddCount) {
-                        res *= 2L;
-                    }
-                } else if (k >= countGCD) {
-                    res *= 2L;
-                }
-                ans = Math.max(ans, res);
             }
         }
         return ans;
     }
 
-    private long gcd(long a, long b) {
-        if (a == 0) {
-            return b;
+    private int gcd(int a, int b) {
+        while (a != 0) {
+            int tmp = a;
+            a = b % a;
+            b = tmp;
         }
-        return gcd(b % a, a);
+        return b;
     }
 }
