@@ -3,8 +3,8 @@ package g3501_3600.s3575_maximum_good_subtree_score;
 // #Hard #Array #Dynamic_Programming #Depth_First_Search #Tree #Bit_Manipulation #Bitmask
 // #2025_06_10_Time_92_ms_(98.73%)_Space_55.23_MB_(11.71%)
 
-import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @SuppressWarnings("unchecked")
