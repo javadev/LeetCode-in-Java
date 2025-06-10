@@ -15,4 +15,9 @@ class SolutionTest {
     void canMakeEqual2() {
         assertThat(new Solution().canMakeEqual(new int[] {-1, -1, -1, 1, 1, 1}, 5), equalTo(false));
     }
+
+    @Test
+    void canMakeEqual3() {
+        assertThat(new Solution().canMakeEqual(new int[] {1}, 3), equalTo(true));
+    }
 }
