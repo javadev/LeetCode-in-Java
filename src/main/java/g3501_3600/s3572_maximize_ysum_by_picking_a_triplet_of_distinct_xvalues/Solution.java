@@ -19,7 +19,6 @@ public class Solution {
             return -1;
         }
         int index2 = -1;
-        int index3 = -1;
         max = -1;
         for (int i = 0; i < y.length; i++) {
             if (y[i] > max && x[i] != x[index]) {
@@ -35,7 +34,6 @@ public class Solution {
         for (int i = 0; i < y.length; i++) {
             if (y[i] > max && x[i] != x[index] && x[i] != x[index2]) {
                 max = y[i];
-                index3 = i;
             }
         }
         if (max == -1) {
