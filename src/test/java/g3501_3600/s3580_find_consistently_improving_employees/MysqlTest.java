@@ -73,7 +73,7 @@ class MysqlTest {
                 assertThat(resultSet.getNString(3), equalTo("2"));
                 assertThat(resultSet.next(), equalTo(true));
                 assertThat(resultSet.getNString(1), equalTo("3"));
-                assertThat(resultSet.getNString(2), equalTo("Alice Johnson"));
+                assertThat(resultSet.getNString(2), equalTo("Carol Davis"));
                 assertThat(resultSet.getNString(3), equalTo("2"));
                 assertThat(resultSet.next(), equalTo(false));
             }
