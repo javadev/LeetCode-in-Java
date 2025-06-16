@@ -2,6 +2,7 @@ package g3501_3600.s3582_generate_tag_for_video_caption;
 
 // #Easy #2025_06_16_Time_12_ms_(100.00%)_Space_45.47_MB_(100.00%)
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public String generateTag(String caption) {
         if (caption.trim().isEmpty()) {

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("java:S2234")
 public class Solution {
     private int log;
     private long[] dist;
