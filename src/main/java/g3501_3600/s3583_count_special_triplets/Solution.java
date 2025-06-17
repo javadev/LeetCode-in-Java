@@ -15,7 +15,7 @@ public class Solution {
         for (int i = 0; i < nums.length; i++) {
             int curr = nums[i];
             long leftCount = curr == 0 ? left[i] - 1 : left[i];
-            long rightCount = sum[curr * 2] - left[i];
+            long rightCount = sum[curr * 2] - (long) left[i];
             if (leftCount != 0 && rightCount != 0) {
                 ans += leftCount * rightCount;
             }
