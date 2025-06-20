@@ -18,7 +18,7 @@ Return the position of the final cell where the snake ends up after executing `c
 
 **Explanation:**
 
-![image](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3248_snake_in_matrix/image01.png)
+![image](https://leetcode-images.github.io/g3201_3300/s3248_snake_in_matrix/image01.png)
 
 **Example 2:**
 
@@ -28,7 +28,7 @@ Return the position of the final cell where the snake ends up after executing `c
 
 **Explanation:**
 
-![image](https://leetcode-in-java.github.io/src/main/java/g3201_3300/s3248_snake_in_matrix/image02.png)
+![image](https://leetcode-images.github.io/g3201_3300/s3248_snake_in_matrix/image02.png)
 
 **Constraints:**
 
