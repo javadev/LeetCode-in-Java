@@ -20,4 +20,40 @@ class SolutionTest {
     void checkPrimeFrequency3() {
         assertThat(new Solution().checkPrimeFrequency(new int[] {2, 2, 2, 4, 4}), equalTo(true));
     }
+
+    @Test
+    void checkPrimeFrequency4() {
+        int[] arr = {7};
+        assertThat(new Solution().checkPrimeFrequency(arr), equalTo(false));
+    }
+
+    @Test
+    void checkPrimeFrequency5() {
+        int[] arr = {2, 2, 2};
+        assertThat(new Solution().checkPrimeFrequency(arr), equalTo(true));
+    }
+
+    @Test
+    void checkPrimeFrequency6() {
+        int[] arr = {4, 4, 4, 4};
+        assertThat(new Solution().checkPrimeFrequency(arr), equalTo(false));
+    }
+
+    @Test
+    void checkPrimeFrequency7() {
+        int[] arr = {2, 3, 3, 3};
+        assertThat(new Solution().checkPrimeFrequency(arr), equalTo(true));
+    }
+
+    @Test
+    void checkPrimeFrequency8() {
+        int[] arr = {2, 3, 4, 5};
+        assertThat(new Solution().checkPrimeFrequency(arr), equalTo(false));
+    }
+
+    @Test
+    void checkPrimeFrequency9() {
+        int[] arr = {1, 10};
+        assertThat(new Solution().checkPrimeFrequency(arr), equalTo(false));
+    }
 }
