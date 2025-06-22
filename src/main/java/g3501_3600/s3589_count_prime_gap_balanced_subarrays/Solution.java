@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.TreeMap;
 
+@SuppressWarnings("java:S5413")
 public class Solution {
     private static final int MAXN = 100005;
     private final boolean[] isPrime;
