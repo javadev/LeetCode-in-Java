@@ -1,7 +1,6 @@
-package g3501_3600.s3591_check_if_any_element_has_prime_frequency;
+package g3501_3600.s3592_inverse_coin_change;
 
-// #Easy #Array #Hash_Table #Math #Counting #Number_Theory
-// #2025_06_23_Time_1_ms_(100.00%)_Space_42.91_MB_(_%)
+// #Easy #Array #Dynamic_Programming #2025_06_23_Time_1_ms_(100.00%)_Space_44.80_MB_(100.00%)
 
 import java.util.ArrayList;
 import java.util.List;
