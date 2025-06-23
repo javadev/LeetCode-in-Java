@@ -1,6 +1,6 @@
 package g3501_3600.s3585_find_weighted_median_node_in_tree;
 
-// #Hard #Array #Dynamic_Programming #Tree #Binary_Search #Depth_First_Search
+// #Hard #Array #Dynamic_Programming #Depth_First_Search #Tree #Binary_Search
 // #2025_06_17_Time_66_ms_(94.96%)_Space_142.62_MB_(49.64%)
 
 import java.util.ArrayList;
