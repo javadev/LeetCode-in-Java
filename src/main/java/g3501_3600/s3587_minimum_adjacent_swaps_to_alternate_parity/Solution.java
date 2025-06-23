@@ -1,6 +1,6 @@
 package g3501_3600.s3587_minimum_adjacent_swaps_to_alternate_parity;
 
-// #Medium #2025_06_22_Time_20_ms_(100.00%)_Space_64.10_MB_(100.00%)
+// #Medium #Array #Greedy #2025_06_23_Time_20_ms_(100.00%)_Space_62.71_MB_(100.00%)
 
 import java.util.ArrayList;
 import java.util.List;

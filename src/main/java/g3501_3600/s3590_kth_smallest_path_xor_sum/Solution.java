@@ -1,6 +1,7 @@
 package g3501_3600.s3590_kth_smallest_path_xor_sum;
 
-// #Hard #2025_06_22_Time_342_ms_(100.00%)_Space_89.24_MB_(100.00%)
+// #Hard #Array #Depth_First_Search #Tree #Ordered_Set
+// #2025_06_23_Time_311_ms_(100.00%)_Space_96.82_MB_(100.00%)
 
 import java.util.ArrayList;
 import java.util.Collections;

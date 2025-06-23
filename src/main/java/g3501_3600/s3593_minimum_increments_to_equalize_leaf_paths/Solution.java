@@ -1,6 +1,7 @@
 package g3501_3600.s3593_minimum_increments_to_equalize_leaf_paths;
 
-// #Medium #2025_06_22_Time_18_ms_(100.00%)_Space_100.49_MB_(69.07%)
+// #Medium #Array #Dynamic_Programming #Depth_First_Search #Tree
+// #2025_06_23_Time_18_ms_(100.00%)_Space_83.71_MB_(100.00%)
 
 import java.util.Arrays;
 

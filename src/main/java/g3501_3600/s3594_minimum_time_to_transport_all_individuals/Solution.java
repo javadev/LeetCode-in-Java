@@ -1,6 +1,7 @@
 package g3501_3600.s3594_minimum_time_to_transport_all_individuals;
 
-// #Hard #2025_06_22_Time_250_ms_(97.41%)_Space_47.70_MB_(88.79%)
+// #Hard #Array #Dynamic_Programming #Bit_Manipulation #Heap_Priority_Queue #Graph #Bitmask
+// #Shortest_Path #2025_06_23_Time_261_ms_(100.00%)_Space_47.18_MB_(100.00%)
 
 import java.util.Arrays;
 import java.util.Comparator;

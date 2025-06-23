@@ -1,6 +1,7 @@
 package g3501_3600.s3589_count_prime_gap_balanced_subarrays;
 
-// #Medium #2025_06_22_Time_414_ms_(100.00%)_Space_55.97_MB_(100.00%)
+// #Medium #Array #Math #Sliding_Window #Queue #Number_Theory #Monotonic_Queue
+// #2025_06_23_Time_407_ms_(100.00%)_Space_56.17_MB_(100.00%)
 
 import java.util.ArrayList;
 import java.util.Arrays;
