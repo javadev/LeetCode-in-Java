@@ -24,7 +24,6 @@ public class Solution {
                 i = j + 1;
                 j = i;
                 node = trie;
-                continue;
             } else {
                 node = node.tries[idx];
                 j++;
