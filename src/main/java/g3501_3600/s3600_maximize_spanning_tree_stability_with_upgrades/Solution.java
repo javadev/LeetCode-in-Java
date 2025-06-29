@@ -38,10 +38,8 @@ public class Solution {
             int v = edge[1];
             int s = edge[2];
             int m = edge[3];
-            if (m == 1) {
-                if (s < t || !uf.union(u, v)) {
-                    return false;
-                }
+            if (m == 1 && (s < t || !uf.union(u, v))) {
+                return false;
             }
         }
         for (int[] edge : edges) {
@@ -61,12 +59,10 @@ public class Solution {
             int v = edge[1];
             int s = edge[2];
             int m = edge[3];
-            if (m == 0 && s >= half && s < t) {
-                if (uf.union(u, v)) {
-                    cost++;
-                    if (cost > k) {
-                        return false;
-                    }
+            if (m == 0 && s >= half && s < t && uf.union(u, v)) {
+                cost++;
+                if (cost > k) {
+                    return false;
                 }
             }
         }
