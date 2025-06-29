@@ -3,8 +3,8 @@ package g3501_3600.s3597_partition_string;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.jupiter.api.Test;
 import java.util.List;
+import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
