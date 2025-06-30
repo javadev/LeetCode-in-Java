@@ -1,6 +1,7 @@
 package g3501_3600.s3599_partition_array_to_minimize_xor;
 
-// #Medium #2025_06_29_Time_141_ms_(89.34%)_Space_45.26_MB_(46.16%)
+// #Medium #Array #Dynamic_Programming #Bit_Manipulation #Prefix_Sum
+// #2025_06_30_Time_144_ms_(100.00%)_Space_44.80_MB_(100.00%)
 
 import java.util.Arrays;
 

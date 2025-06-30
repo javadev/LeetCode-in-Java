@@ -1,6 +1,7 @@
 package g3501_3600.s3600_maximize_spanning_tree_stability_with_upgrades;
 
-// #Hard #2025_06_29_Time_52_ms_(93.75%)_Space_132.77_MB_(40.45%)
+// #Hard #Greedy #Binary_Search #Graph #Union_Find #Minimum_Spanning_Tree
+// #2025_06_30_Time_51_ms_(100.00%)_Space_132.43_MB_(100.00%)
 
 public class Solution {
     public int maxStability(int n, int[][] edges, int k) {

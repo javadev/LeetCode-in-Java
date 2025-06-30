@@ -1,6 +1,7 @@
 package g3501_3600.s3597_partition_string;
 
-// #Medium #2025_06_29_Time_27_ms_(99.70%)_Space_57.45_MB_(6.81%)
+// #Medium #String #Hash_Table #Simulation #Trie
+// #2025_06_30_Time_25_ms_(100.00%)_Space_55.91_MB_(100.00%)
 
 import java.util.ArrayList;
 import java.util.List;
