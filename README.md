@@ -526,7 +526,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0704 |[Binary Search](src/main/java/g0701_0800/s0704_binary_search/Solution.java)| Easy | Top_100_Liked_Questions, Array, Binary_Search | 0 | 100.00
+| 0704 |[Binary Search](src/main/java/g0701_0800/s0704_binary_search/Solution.java)| Easy | Array, Binary_Search | 0 | 100.00
 | 0278 |[First Bad Version](src/main/java/g0201_0300/s0278_first_bad_version/Solution.java)| Easy | Binary_Search, Interactive | 15 | 87.89
 
 #### Day 8 Binary Search Tree
@@ -599,7 +599,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0014 |[Longest Common Prefix](src/main/java/g0001_0100/s0014_longest_common_prefix/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, String | 0 | 100.00
+| 0014 |[Longest Common Prefix](src/main/java/g0001_0100/s0014_longest_common_prefix/Solution.java)| Easy | Top_Interview_Questions, String | 0 | 100.00
 | 0043 |[Multiply Strings](src/main/java/g0001_0100/s0043_multiply_strings/Solution.java)| Medium | String, Math, Simulation | 1 | 100.00
 
 #### Day 3 Linked List
@@ -635,7 +635,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0543 |[Diameter of Binary Tree](src/main/java/g0501_0600/s0543_diameter_of_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
-| 0437 |[Path Sum III](src/main/java/g0401_0500/s0437_path_sum_iii/Solution.java)| Medium | Depth_First_Search, Tree, Binary_Tree, LeetCode_75_Binary_Tree/DFS, Big_O_Time_O(n)_Space_O(n) | 2 | 100.00
+| 0437 |[Path Sum III](src/main/java/g0401_0500/s0437_path_sum_iii/Solution.java)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, LeetCode_75_Binary_Tree/DFS, Big_O_Time_O(n)_Space_O(n) | 2 | 100.00
 
 #### Day 8 Binary Search
 
@@ -648,7 +648,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0108 |[Convert Sorted Array to Binary Search Tree](src/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/Solution.java)| Easy | Top_Interview_Questions, Array, Tree, Binary_Tree, Binary_Search_Tree, Divide_and_Conquer | 0 | 100.00
+| 0108 |[Convert Sorted Array to Binary Search Tree](src/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Tree, Binary_Tree, Binary_Search_Tree, Divide_and_Conquer | 0 | 100.00
 | 0230 |[Kth Smallest Element in a BST](src/main/java/g0201_0300/s0230_kth_smallest_element_in_a_bst/Solution.java)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 | 0173 |[Binary Search Tree Iterator](src/main/java/g0101_0200/s0173_binary_search_tree_iterator/BSTIterator.java)| Medium | Tree, Binary_Tree, Stack, Design, Binary_Search_Tree, Iterator | 15 | 100.00
 
@@ -750,7 +750,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0344 |[Reverse String](src/main/java/g0301_0400/s0344_reverse_string/Solution.java)| Easy | String, Two_Pointers, Recursion | 1 | 99.91
-| 0014 |[Longest Common Prefix](src/main/java/g0001_0100/s0014_longest_common_prefix/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, String | 0 | 100.00
+| 0014 |[Longest Common Prefix](src/main/java/g0001_0100/s0014_longest_common_prefix/Solution.java)| Easy | Top_Interview_Questions, String | 0 | 100.00
 | 0187 |[Repeated DNA Sequences](src/main/java/g0101_0200/s0187_repeated_dna_sequences/Solution.java)| Medium | String, Hash_Table, Bit_Manipulation, Sliding_Window, Hash_Function, Rolling_Hash | 29 | 77.11
 | 0003 |[Longest Substring Without Repeating Characters](src/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n)_Space_O(1), AI_can_be_used_to_solve_the_task | 2 | 98.59
 | 0020 |[Valid Parentheses](src/main/java/g0001_0100/s0020_valid_parentheses/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, String, Stack, Big_O_Time_O(n)_Space_O(n) | 2 | 97.19
@@ -765,7 +765,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0704 |[Binary Search](src/main/java/g0701_0800/s0704_binary_search/Solution.java)| Easy | Top_100_Liked_Questions, Array, Binary_Search | 0 | 100.00
+| 0704 |[Binary Search](src/main/java/g0701_0800/s0704_binary_search/Solution.java)| Easy | Array, Binary_Search | 0 | 100.00
 | 0033 |[Search in Rotated Sorted Array](src/main/java/g0001_0100/s0033_search_in_rotated_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Binary_Search, Big_O_Time_O(log_n)_Space_O(1) | 0 | 100.00
 | 0153 |[Find Minimum in Rotated Sorted Array](src/main/java/g0101_0200/s0153_find_minimum_in_rotated_sorted_array/Solution.java)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Big_O_Time_O(log_N)_Space_O(log_N) | 0 | 100.00
 
@@ -864,7 +864,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 | 0145 |[Binary Tree Postorder Traversal](src/main/java/g0101_0200/s0145_binary_tree_postorder_traversal/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Stack | 1 | 49.11
 | 0102 |[Binary Tree Level Order Traversal](src/main/java/g0101_0200/s0102_binary_tree_level_order_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree, Big_O_Time_O(N)_Space_O(N) | 1 | 91.19
 | 0103 |[Binary Tree Zigzag Level Order Traversal](src/main/java/g0101_0200/s0103_binary_tree_zigzag_level_order_traversal/Solution.java)| Medium | Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree | 0 | 100.00
-| 0108 |[Convert Sorted Array to Binary Search Tree](src/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/Solution.java)| Easy | Top_Interview_Questions, Array, Tree, Binary_Tree, Binary_Search_Tree, Divide_and_Conquer | 0 | 100.00
+| 0108 |[Convert Sorted Array to Binary Search Tree](src/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Tree, Binary_Tree, Binary_Search_Tree, Divide_and_Conquer | 0 | 100.00
 | 1008 |[Construct Binary Search Tree from Preorder Traversal](src/main/java/g1001_1100/s1008_construct_binary_search_tree_from_preorder_traversal/Solution.java)| Medium | Array, Tree, Binary_Tree, Stack, Monotonic_Stack, Binary_Search_Tree | 0 | 100.00
 | 0543 |[Diameter of Binary Tree](src/main/java/g0501_0600/s0543_diameter_of_binary_tree/Solution.java)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 | 0938 |[Range Sum of BST](src/main/java/g0901_1000/s0938_range_sum_of_bst/Solution.java)| Easy | Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree | 0 | 100.00
@@ -968,10 +968,10 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 | 0134 |[Gas Station](src/main/java/g0101_0200/s0134_gas_station/Solution.java)| Medium | Top_Interview_Questions, Array, Greedy | 2 | 97.52
 | 0135 |[Candy](src/main/java/g0101_0200/s0135_candy/Solution.java)| Hard | Array, Greedy | 3 | 83.95
 | 0042 |[Trapping Rain Water](src/main/java/g0001_0100/s0042_trapping_rain_water/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Two_Pointers, Stack, Monotonic_Stack, Big_O_Time_O(n)_Space_O(1) | 0 | 100.00
-| 0013 |[Roman to Integer](src/main/java/g0001_0100/s0013_roman_to_integer/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Math | 2 | 100.00
+| 0013 |[Roman to Integer](src/main/java/g0001_0100/s0013_roman_to_integer/Solution.java)| Easy | Top_Interview_Questions, String, Hash_Table, Math | 2 | 100.00
 | 0012 |[Integer to Roman](src/main/java/g0001_0100/s0012_integer_to_roman/Solution.java)| Medium | String, Hash_Table, Math | 2 | 100.00
 | 0058 |[Length of Last Word](src/main/java/g0001_0100/s0058_length_of_last_word/Solution.java)| Easy | String | 0 | 100.00
-| 0014 |[Longest Common Prefix](src/main/java/g0001_0100/s0014_longest_common_prefix/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, String | 0 | 100.00
+| 0014 |[Longest Common Prefix](src/main/java/g0001_0100/s0014_longest_common_prefix/Solution.java)| Easy | Top_Interview_Questions, String | 0 | 100.00
 | 0151 |[Reverse Words in a String](src/main/java/g0101_0200/s0151_reverse_words_in_a_string/Solution.java)| Medium | String, Two_Pointers, LeetCode_75_Array/String | 2 | 99.69
 | 0006 |[Zigzag Conversion](src/main/java/g0001_0100/s0006_zigzag_conversion/Solution.java)| Medium | String | 2 | 99.71
 | 0028 |[Implement strStr()](src/main/java/g0001_0100/s0028_find_the_index_of_the_first_occurrence_in_a_string/Solution.java)| Easy | Top_Interview_Questions, String, Two_Pointers, String_Matching | 0 | 100.00
@@ -1134,7 +1134,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0108 |[Convert Sorted Array to Binary Search Tree](src/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/Solution.java)| Easy | Top_Interview_Questions, Array, Tree, Binary_Tree, Binary_Search_Tree, Divide_and_Conquer | 0 | 100.00
+| 0108 |[Convert Sorted Array to Binary Search Tree](src/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Tree, Binary_Tree, Binary_Search_Tree, Divide_and_Conquer | 0 | 100.00
 | 0148 |[Sort List](src/main/java/g0101_0200/s0148_sort_list/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Sorting, Two_Pointers, Linked_List, Divide_and_Conquer, Merge_Sort, Big_O_Time_O(log(N))_Space_O(log(N)) | 9 | 93.90
 | 0427 |[Construct Quad Tree](src/main/java/g0401_0500/s0427_construct_quad_tree/Solution.java)| Medium | Array, Tree, Matrix, Divide_and_Conquer | 0 | 100.00
 | 0023 |[Merge k Sorted Lists](src/main/java/g0001_0100/s0023_merge_k_sorted_lists/Solution.java)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Heap_Priority_Queue, Linked_List, Divide_and_Conquer, Merge_Sort, Big_O_Time_O(k\*n\*log(k))_Space_O(log(k)) | 1 | 99.86
@@ -1371,7 +1371,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0290 |[Word Pattern](src/main/java/g0201_0300/s0290_word_pattern/Solution.java)| Easy | String, Hash_Table | 0 | 100.00
-| 0763 |[Partition Labels](src/main/java/g0701_0800/s0763_partition_labels/Solution.java)| Medium | String, Hash_Table, Greedy, Two_Pointers, Big_O_Time_O(n)_Space_O(1) | 2 | 100.00
+| 0763 |[Partition Labels](src/main/java/g0701_0800/s0763_partition_labels/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Greedy, Two_Pointers, Big_O_Time_O(n)_Space_O(1) | 2 | 100.00
 
 #### Day 8 String
 
@@ -1427,7 +1427,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0108 |[Convert Sorted Array to Binary Search Tree](src/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/Solution.java)| Easy | Top_Interview_Questions, Array, Tree, Binary_Tree, Binary_Search_Tree, Divide_and_Conquer | 0 | 100.00
+| 0108 |[Convert Sorted Array to Binary Search Tree](src/main/java/g0101_0200/s0108_convert_sorted_array_to_binary_search_tree/Solution.java)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Array, Tree, Binary_Tree, Binary_Search_Tree, Divide_and_Conquer | 0 | 100.00
 | 0105 |[Construct Binary Tree from Preorder and Inorder Traversal](src/main/java/g0101_0200/s0105_construct_binary_tree_from_preorder_and_inorder_traversal/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Tree, Binary_Tree, Divide_and_Conquer, Big_O_Time_O(N)_Space_O(N) | 1 | 96.33
 | 0103 |[Binary Tree Zigzag Level Order Traversal](src/main/java/g0101_0200/s0103_binary_tree_zigzag_level_order_traversal/Solution.java)| Medium | Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree | 0 | 100.00
 
@@ -1481,7 +1481,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0704 |[Binary Search](src/main/java/g0701_0800/s0704_binary_search/Solution.java)| Easy | Top_100_Liked_Questions, Array, Binary_Search | 0 | 100.00
+| 0704 |[Binary Search](src/main/java/g0701_0800/s0704_binary_search/Solution.java)| Easy | Array, Binary_Search | 0 | 100.00
 | 0278 |[First Bad Version](src/main/java/g0201_0300/s0278_first_bad_version/Solution.java)| Easy | Binary_Search, Interactive | 15 | 87.89
 | 0035 |[Search Insert Position](src/main/java/g0001_0100/s0035_search_insert_position/Solution.java)| Easy | Top_100_Liked_Questions, Array, Binary_Search, Big_O_Time_O(log_n)_Space_O(1) | 0 | 100.00
 
@@ -1518,7 +1518,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0003 |[Longest Substring Without Repeating Characters](src/main/java/g0001_0100/s0003_longest_substring_without_repeating_characters/Solution.java)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n)_Space_O(1), AI_can_be_used_to_solve_the_task | 2 | 98.59
-| 0567 |[Permutation in String](src/main/java/g0501_0600/s0567_permutation_in_string/Solution.java)| Medium | Top_100_Liked_Questions, String, Hash_Table, Two_Pointers, Sliding_Window | 5 | 93.93
+| 0567 |[Permutation in String](src/main/java/g0501_0600/s0567_permutation_in_string/Solution.java)| Medium | String, Hash_Table, Two_Pointers, Sliding_Window | 5 | 93.93
 
 #### Day 7 Breadth First Search Depth First Search
 
@@ -1738,7 +1738,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
-| 0704 |[Binary Search](src/main/java/g0701_0800/s0704_binary_search/Solution.java)| Easy | Top_100_Liked_Questions, Array, Binary_Search | 0 | 100.00
+| 0704 |[Binary Search](src/main/java/g0701_0800/s0704_binary_search/Solution.java)| Easy | Array, Binary_Search | 0 | 100.00
 | 0374 |[Guess Number Higher or Lower](src/main/java/g0301_0400/s0374_guess_number_higher_or_lower/Solution.java)| Easy | Binary_Search, Interactive, LeetCode_75_Binary_Search | 0 | 100.00
 
 #### Day 2
@@ -2110,7 +2110,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.45'
 |-|-|-|-|-|-
 | 0377 |[Combination Sum IV](src/main/java/g0301_0400/s0377_combination_sum_iv/Solution.java)| Medium | Array, Dynamic_Programming | 1 | 92.54
 | 0343 |[Integer Break](src/main/java/g0301_0400/s0343_integer_break/Solution.java)| Medium | Dynamic_Programming, Math | 0 | 100.00
-| 0279 |[Perfect Squares](src/main/java/g0201_0300/s0279_perfect_squares/Solution.java)| Medium | Dynamic_Programming, Math, Breadth_First_Search | 1 | 100.00
+| 0279 |[Perfect Squares](src/main/java/g0201_0300/s0279_perfect_squares/Solution.java)| Medium | Top_100_Liked_Questions, Dynamic_Programming, Math, Breadth_First_Search | 1 | 100.00
 
 ## Contributing
 Your ideas/fixes/algorithms are more than welcome!
