@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class NodeTest {
     @Test
     void constructor() {
-        Node node = new Node();
+        Node node = new Node(0);
         assertThat(node.val, equalTo(0));
         assertThat(node.toString(), equalTo("[[0,null]]"));
     }
@@ -22,18 +22,23 @@ class NodeTest {
 
     @Test
     void constructor3() {
-        Node node = new Node(1, new Node(2), new Node(3));
+        Node node = new Node(1);
+        node.next = new Node(2);
+        node.random = new Node(3);
         assertThat(node.val, equalTo(1));
         assertThat(node.toString(), equalTo("[[1,3],[2,null]]"));
     }
 
     @Test
     void constructor4() {
-        Node node =
-                new Node(
-                        1,
-                        new Node(2, new Node(21), new Node(22)),
-                        new Node(3, null, new Node(32)));
+        Node next = new Node(2);
+        next.next = new Node(21);
+        next.random = new Node(22);
+        Node random = new Node(3);
+        random.random = new Node(32);
+        Node node = new Node(1);
+        node.next = next;
+        node.random = random;
         assertThat(node.val, equalTo(1));
         assertThat(node.toString(), equalTo("[[1,3],[2,2],[21,null]]"));
     }
