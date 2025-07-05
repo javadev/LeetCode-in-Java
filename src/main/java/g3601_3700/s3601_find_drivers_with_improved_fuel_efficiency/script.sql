@@ -23,6 +23,11 @@ WITH main_process AS (
         efficiency_improvement DESC,
         d.driver_name ASC
 )
-SELECT *
+SELECT 
+    driver_id,
+    driver_name,
+    first_half_avg,
+    second_half_avg,
+    efficiency_improvement
 FROM main_process
 WHERE efficiency_improvement > 0;
