@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# #Medium #2025_07_05_Time_521_ms_(62.61%)_Space_0.0_MB_(100.00%)
+# #Medium #Database #2025_07_05_Time_521_ms_(62.61%)_Space_0.0_MB_(100.00%)
 WITH main_process AS (
 	SELECT t.driver_id, d.driver_name, round( AVG(t.distance_km / t.fuel_consumed ), 2) first_half_avg,
 	round(AVG(t1.distance_km / t1.fuel_consumed ) , 2) second_half_avg,
