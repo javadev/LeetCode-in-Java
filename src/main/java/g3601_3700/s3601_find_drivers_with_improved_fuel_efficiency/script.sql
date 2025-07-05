@@ -21,7 +21,7 @@ WITH main_process AS (
         d.driver_name
     ORDER BY 
         efficiency_improvement DESC,
-        d.driver_name
+        d.driver_name ASC
 )
 SELECT *
 FROM main_process
