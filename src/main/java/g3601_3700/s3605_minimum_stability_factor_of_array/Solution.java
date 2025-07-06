@@ -23,7 +23,7 @@ public class Solution {
         }
         int[][] table = new int[maxLog + 1][n];
         buildLogs(logs, n);
-        buildTable(table, nums, logs, n, maxLog);
+        buildTable(table, nums, n, maxLog);
         return binarySearch(nums, maxC, n, logs, table);
     }
 
@@ -35,7 +35,7 @@ public class Solution {
         }
     }
 
-    private void buildTable(int[][] table, int[] nums, int[] ignoredLogs, int n, int maxLog) {
+    private void buildTable(int[][] table, int[] nums, int n, int maxLog) {
         int pos = 0;
         while (pos < n) {
             table[0][pos] = nums[pos];

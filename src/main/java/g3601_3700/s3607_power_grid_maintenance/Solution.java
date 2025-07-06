@@ -29,7 +29,8 @@ public class Solution {
             if (par[u] == u) {
                 return u;
             }
-            return par[u] = find(par[u]);
+            par[u] = find(par[u]);
+            return par[u];
         }
 
         void union(int u, int v) {

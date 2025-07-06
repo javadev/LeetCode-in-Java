@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public List<String> validateCoupons(String[] code, String[] businessLine, boolean[] isActive) {
         List<String> lt = new ArrayList<>();
