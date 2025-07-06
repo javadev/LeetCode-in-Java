@@ -28,4 +28,24 @@ class SolutionTest {
         assertThat(
                 new Solution().minTime(3, new int[][] {{1, 0, 1, 3}, {1, 2, 3, 5}}), equalTo(-1));
     }
+
+    @Test
+    void minTest4() {
+        assertThat(
+                new Solution()
+                        .minTime(
+                                5,
+                                new int[][] {
+                                    {1, 3, 17, 18},
+                                    {1, 3, 0, 7},
+                                    {0, 1, 0, 3},
+                                    {3, 2, 1, 20},
+                                    {1, 2, 25, 25},
+                                    {0, 3, 13, 14},
+                                    {1, 0, 11, 15},
+                                    {0, 4, 19, 21},
+                                    {2, 0, 4, 20}
+                                }),
+                equalTo(20));
+    }
 }
