@@ -5,7 +5,7 @@ package g3601_3700.s3609_minimum_moves_to_reach_target_in_grid;
 public class Solution {
     public int minMoves(int sx, int sy, int tx, int ty) {
         if (sx == 0 && sy == 0) {
-            return (tx == 0 && ty == 0) ? 0 : -1;
+            return tx == 0 && ty == 0 ? 0 : -1;
         }
 
         int res = 0;
