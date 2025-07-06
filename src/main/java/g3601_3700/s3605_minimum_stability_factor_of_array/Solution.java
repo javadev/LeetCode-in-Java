@@ -36,11 +36,7 @@ public class Solution {
     }
 
     private void buildTable(int[][] table, int[] nums, int n, int maxLog) {
-        int pos = 0;
-        while (pos < n) {
-            table[0][pos] = nums[pos];
-            pos++;
-        }
+        System.arraycopy(nums, 0, table[0], 0, n);
         int level = 1;
         while (level <= maxLog) {
             int start = 0;
