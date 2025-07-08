@@ -1,6 +1,7 @@
 package g3601_3700.s3604_minimum_time_to_reach_destination_in_directed_graph;
 
-// #Medium #2025_07_06_Time_5_ms_(100.00%)_Space_102.51_MB_(100.00%)
+// #Medium #Heap_Priority_Queue #Graph #Shortest_Path
+// #2025_07_08_Time_5_ms_(100.00%)_Space_102.82_MB_(98.27%)
 
 import java.util.Arrays;
 

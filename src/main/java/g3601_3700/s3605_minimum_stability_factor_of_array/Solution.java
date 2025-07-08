@@ -1,6 +1,7 @@
 package g3601_3700.s3605_minimum_stability_factor_of_array;
 
-// #Hard #2025_07_06_Time_105_ms_(80.71%)_Space_64.43_MB_(_%)
+// #Hard #Array #Math #Greedy #Binary_Search #Segment_Tree #Number_Theory
+// #2025_07_08_Time_117_ms_(76.55%)_Space_63.59_MB_(36.28%)
 
 public class Solution {
     public int minStable(int[] nums, int maxC) {

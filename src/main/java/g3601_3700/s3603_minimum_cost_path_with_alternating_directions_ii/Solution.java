@@ -1,6 +1,7 @@
 package g3601_3700.s3603_minimum_cost_path_with_alternating_directions_ii;
 
-// #Medium #2025_07_06_Time_7_ms_(99.88%)_Space_64.11_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #Matrix
+// #2025_07_08_Time_6_ms_(100.00%)_Space_64.48_MB_(99.27%)
 
 public class Solution {
     public long minCost(int m, int n, int[][] waitCost) {

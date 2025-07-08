@@ -1,6 +1,7 @@
 package g3601_3700.s3607_power_grid_maintenance;
 
-// #Medium #2025_07_06_Time_74_ms_(97.09%)_Space_131.74_MB_(75.90%)
+// #Medium #Array #Hash_Table #Depth_First_Search #Breadth_First_Search #Heap_Priority_Queue #Graph
+// #Union_Find #Ordered_Set #2025_07_08_Time_84_ms_(94.64%)_Space_131.60_MB_(76.86%)
 
 import java.util.ArrayList;
 import java.util.List;
