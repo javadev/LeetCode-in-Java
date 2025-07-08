@@ -6,7 +6,6 @@ package g0401_0500.s0494_target_sum;
 public class Solution {
     public int findTargetSumWays(int[] nums, int target) {
         int totalSum = 0;
-        int n = nums.length;
         for (int num : nums) {
             totalSum += num;
         }
