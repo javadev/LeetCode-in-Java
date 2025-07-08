@@ -44,13 +44,8 @@ public class Solution {
                             sb.append(' ');
                         }
                         // appending the rest of the required spaces
-                        sb.append(
-                                " "
-                                        .repeat(
-                                                Math.max(
-                                                        0,
-                                                        (maxWidth - lineTotal)
-                                                                / (numWordsOnLine - 1))));
+                        int max = Math.max(0, (maxWidth - lineTotal) / (numWordsOnLine - 1));
+                        sb.append(" ".repeat(max));
                     }
                     // appending the last word of the line
                     sb.append(words[startWord + numWordsOnLine - 1]);
