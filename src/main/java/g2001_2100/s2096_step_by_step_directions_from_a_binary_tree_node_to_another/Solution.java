@@ -15,7 +15,7 @@ public class Solution {
         } else if (n.right != null && find(n.right, val, sb)) {
             sb.append("R");
         }
-        return sb.length() > 0;
+        return !sb.isEmpty();
     }
 
     public String getDirections(TreeNode root, int startValue, int destValue) {
@@ -28,11 +28,6 @@ public class Solution {
         while (i < maxI && s.charAt(s.length() - i - 1) == d.charAt(d.length() - i - 1)) {
             ++i;
         }
-        StringBuilder result = new StringBuilder();
-        for (int j = 0; j < s.length() - i; j++) {
-            result.append("U");
-        }
-        result.append(d.reverse().substring(i));
-        return result.toString();
+        return "U".repeat(Math.max(0, s.length() - i)) + d.reverse().substring(i);
     }
 }

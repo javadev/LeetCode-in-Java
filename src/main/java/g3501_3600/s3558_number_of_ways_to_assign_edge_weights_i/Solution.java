@@ -3,14 +3,14 @@ package g3501_3600.s3558_number_of_ways_to_assign_edge_weights_i;
 // #Medium #Math #Depth_First_Search #Tree #2025_05_27_Time_12_ms_(100.00%)_Space_106.62_MB_(76.01%)
 
 public class Solution {
-    private static int mod = (int) 1e9 + 7;
-    private long[] pow2 = new long[100001];
+    private static final int MOD = (int) 1e9 + 7;
+    private final long[] pow2 = new long[100001];
 
     public int assignEdgeWeights(int[][] edges) {
         if (pow2[0] == 0) {
             pow2[0] = 1;
             for (int i = 1; i < pow2.length; i++) {
-                pow2[i] = (pow2[i - 1] << 1) % mod;
+                pow2[i] = (pow2[i - 1] << 1) % MOD;
             }
         }
         int n = edges.length + 1;

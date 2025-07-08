@@ -9,9 +9,9 @@ public class Solution {
         int m = grid[0].length;
         int[][] dp = new int[m][10];
         int[][] cnt = new int[m][10];
-        for (int i = 0; i < n; ++i) {
+        for (int[] ints : grid) {
             for (int j = 0; j < m; j++) {
-                cnt[j][grid[i][j]]++;
+                cnt[j][ints[j]]++;
             }
         }
         int first = Integer.MAX_VALUE;

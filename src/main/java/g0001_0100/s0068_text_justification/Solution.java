@@ -44,9 +44,13 @@ public class Solution {
                             sb.append(' ');
                         }
                         // appending the rest of the required spaces
-                        for (int k = 0; k < (maxWidth - lineTotal) / (numWordsOnLine - 1); k++) {
-                            sb.append(' ');
-                        }
+                        sb.append(
+                                " "
+                                        .repeat(
+                                                Math.max(
+                                                        0,
+                                                        (maxWidth - lineTotal)
+                                                                / (numWordsOnLine - 1))));
                     }
                     // appending the last word of the line
                     sb.append(words[startWord + numWordsOnLine - 1]);

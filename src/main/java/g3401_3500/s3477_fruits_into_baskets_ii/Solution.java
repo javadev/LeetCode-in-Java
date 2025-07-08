@@ -8,8 +8,8 @@ public class Solution {
         int n = fruits.length;
         int currfruits;
         int count = 0;
-        for (int i = 0; i < n; i++) {
-            currfruits = fruits[i];
+        for (int fruit : fruits) {
+            currfruits = fruit;
             for (int j = 0; j < n; j++) {
                 if (baskets[j] >= currfruits) {
                     count++;

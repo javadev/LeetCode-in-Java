@@ -9,8 +9,8 @@ public class Solution {
             return n;
         }
         int[] a = new int[value];
-        for (int i = 0; i < n; i++) {
-            int k = nums[i] % value;
+        for (int num : nums) {
+            int k = num % value;
             if (k < 0) {
                 k = (value + k) % value;
             }

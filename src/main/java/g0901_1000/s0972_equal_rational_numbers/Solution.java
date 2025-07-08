@@ -29,10 +29,6 @@ public class Solution {
     }
 
     private String repeat(String a) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 100; i++) {
-            sb.append(a);
-        }
-        return sb.toString();
+        return String.valueOf(a).repeat(100);
     }
 }

@@ -27,9 +27,7 @@ public class Solution {
         for (Map.Entry<Integer, List<Character>> freq : reverseMap.entrySet()) {
             List<Character> list = reverseMap.get(freq.getKey());
             for (char c : list) {
-                for (int i = 0; i < freq.getKey(); i++) {
-                    sb.append(c);
-                }
+                sb.append(String.valueOf(c).repeat(Math.max(0, freq.getKey())));
             }
         }
         return sb.toString();

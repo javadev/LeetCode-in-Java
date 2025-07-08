@@ -10,30 +10,30 @@ public class Solution {
         int[] ans = new int[numberOfUsers];
         List<Integer> l = new ArrayList<>();
         int c = 0;
-        for (int i = 0; i < events.size(); i++) {
-            String s = events.get(i).get(0);
-            String ss = events.get(i).get(2);
+        for (List<String> strings : events) {
+            String s = strings.get(0);
+            String ss = strings.get(2);
             if (s.equals("MESSAGE")) {
                 if (ss.equals("ALL") || ss.equals("HERE")) {
                     c++;
                     if (ss.equals("HERE")) {
-                        l.add(Integer.parseInt(events.get(i).get(1)));
+                        l.add(Integer.parseInt(strings.get(1)));
                     }
                 } else {
                     String[] sss = ss.split(" ");
-                    for (int j = 0; j < sss.length; j++) {
-                        int jj = Integer.parseInt(sss[j].substring(2, sss[j].length()));
+                    for (String string : sss) {
+                        int jj = Integer.parseInt(string.substring(2));
                         ans[jj]++;
                     }
                 }
             }
         }
-        for (int i = 0; i < events.size(); i++) {
-            if (events.get(i).get(0).equals("OFFLINE")) {
-                int id = Integer.parseInt(events.get(i).get(2));
-                int a = Integer.parseInt(events.get(i).get(1)) + 60;
-                for (int j = 0; j < l.size(); j++) {
-                    if (l.get(j) >= a - 60 && l.get(j) < a) {
+        for (List<String> event : events) {
+            if (event.get(0).equals("OFFLINE")) {
+                int id = Integer.parseInt(event.get(2));
+                int a = Integer.parseInt(event.get(1)) + 60;
+                for (Integer integer : l) {
+                    if (integer >= a - 60 && integer < a) {
                         ans[id]--;
                     }
                 }

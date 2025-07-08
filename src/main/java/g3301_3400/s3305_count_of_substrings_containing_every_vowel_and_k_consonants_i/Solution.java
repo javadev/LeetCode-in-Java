@@ -15,7 +15,7 @@ public class Solution {
         int ans = 0;
         int consCnt = 0;
         int j = 0;
-        for (int i = 0; i < arr.length; i++) {
+        for (char c : arr) {
             while (j < arr.length && (need > 0 || consCnt < k)) {
                 if (isVowel(arr[j])) {
                     map[arr[j] - 'a']--;
@@ -39,9 +39,9 @@ public class Solution {
                     m++;
                 }
             }
-            if (isVowel(arr[i])) {
-                map[arr[i] - 'a']++;
-                if (map[arr[i] - 'a'] == 1) {
+            if (isVowel(c)) {
+                map[c - 'a']++;
+                if (map[c - 'a'] == 1) {
                     need++;
                 }
             } else {

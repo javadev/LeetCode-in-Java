@@ -7,17 +7,17 @@ import java.util.Arrays;
 public class Solution {
     public boolean canChoose(int[][] groups, int[] nums) {
         int prev = 0;
-        for (int i = 0; i < groups.length; i++) {
-            int[] temp = new int[groups[i].length];
-            if (prev + groups[i].length > nums.length) {
+        for (int[] group : groups) {
+            int[] temp = new int[group.length];
+            if (prev + group.length > nums.length) {
                 return false;
             }
             int index = 0;
             int j;
-            for (j = prev; j < prev + groups[i].length; j++) {
+            for (j = prev; j < prev + group.length; j++) {
                 temp[index++] = nums[j];
             }
-            if (Arrays.equals(temp, groups[i])) {
+            if (Arrays.equals(temp, group)) {
                 prev = j;
                 continue;
             }
@@ -28,7 +28,7 @@ public class Solution {
                     temp[l] = temp[l + 1];
                 }
                 temp[l] = nums[k];
-                if (Arrays.equals(temp, groups[i])) {
+                if (Arrays.equals(temp, group)) {
                     prev = k + 1;
                     break;
                 }

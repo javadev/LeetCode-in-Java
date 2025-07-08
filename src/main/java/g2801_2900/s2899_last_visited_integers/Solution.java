@@ -10,10 +10,10 @@ public class Solution {
         List<String> prevEle = new ArrayList<>();
         List<Integer> res = new ArrayList<>();
         int count = 0;
-        for (int i = 0; i < words.size(); i++) {
-            if (!words.get(i).equals("prev")) {
+        for (String word : words) {
+            if (!word.equals("prev")) {
                 count = 0;
-                prevEle.add(words.get(i));
+                prevEle.add(word);
                 continue;
             }
             if (count >= prevEle.size()) {

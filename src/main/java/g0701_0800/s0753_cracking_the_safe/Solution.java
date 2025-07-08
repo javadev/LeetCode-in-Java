@@ -12,9 +12,7 @@ public class Solution {
         visited[0] = true;
         int visitedCnt = 1;
         StringBuilder crackStr = new StringBuilder();
-        for (int i = 0; i < n; i++) {
-            crackStr.append('0');
-        }
+        crackStr.append("0".repeat(Math.max(0, n)));
         dfsAddPwd(n, k, crackStr, 0, visited, visitedCnt, targetCnt);
         return foundStr;
     }
