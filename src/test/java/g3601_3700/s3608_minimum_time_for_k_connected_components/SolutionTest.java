@@ -20,4 +20,11 @@ class SolutionTest {
     void minTime3() {
         assertThat(new Solution().minTime(3, new int[][] {{0, 2, 5}}, 2), equalTo(0));
     }
+
+    @Test
+    void minTime4() {
+        assertThat(
+                new Solution().minTime(3, new int[][] {{2, 1, 1469}, {1, 0, 5701}}, 2),
+                equalTo(1469));
+    }
 }
