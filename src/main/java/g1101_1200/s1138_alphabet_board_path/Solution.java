@@ -35,9 +35,7 @@ public class Solution {
 
     public StringBuilder helper(String dir, int time) {
         StringBuilder path = new StringBuilder();
-        for (int i = 0; i < time; i++) {
-            path.append(dir);
-        }
+        path.append(String.valueOf(dir).repeat(Math.max(0, time)));
         return path;
     }
 }

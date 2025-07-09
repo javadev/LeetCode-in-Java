@@ -9,15 +9,15 @@ public class Solution {
         long days = 0;
         space++;
         HashMap<Integer, Long> lastOccurence = new HashMap<>();
-        for (int i = 0; i < tasks.length; i++) {
-            if (lastOccurence.containsKey(tasks[i])) {
-                long lastTimeOccurred = lastOccurence.get(tasks[i]);
+        for (int task : tasks) {
+            if (lastOccurence.containsKey(task)) {
+                long lastTimeOccurred = lastOccurence.get(task);
                 long daysDifference = days - lastTimeOccurred;
                 if (daysDifference < space) {
                     days += (space - daysDifference);
                 }
             }
-            lastOccurence.put(tasks[i], days);
+            lastOccurence.put(task, days);
             days++;
         }
         return days;

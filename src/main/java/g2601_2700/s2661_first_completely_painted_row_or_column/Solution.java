@@ -9,18 +9,18 @@ public class Solution {
             numMapIndex[arr[i]] = i;
         }
         int ans = Integer.MAX_VALUE;
-        for (int i = 0; i < mat.length; i++) {
+        for (int[] value : mat) {
             int rowMin = Integer.MIN_VALUE;
-            for (int i1 = 0; i1 < mat[i].length; i1++) {
-                int index = numMapIndex[mat[i][i1]];
+            for (int i : value) {
+                int index = numMapIndex[i];
                 rowMin = Math.max(rowMin, index);
             }
             ans = Math.min(ans, rowMin);
         }
         for (int i = 0; i < mat[0].length; i++) {
             int colMin = Integer.MIN_VALUE;
-            for (int i1 = 0; i1 < mat.length; i1++) {
-                int index = numMapIndex[mat[i1][i]];
+            for (int[] ints : mat) {
+                int index = numMapIndex[ints[i]];
                 colMin = Math.max(colMin, index);
             }
             ans = Math.min(ans, colMin);

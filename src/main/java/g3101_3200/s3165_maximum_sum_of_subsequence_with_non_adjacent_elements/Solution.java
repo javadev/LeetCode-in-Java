@@ -13,8 +13,8 @@ public class Solution {
     public int maximumSumSubsequence(int[] nums, int[][] queries) {
         long[][] tree = build(nums);
         long result = 0;
-        for (int i = 0; i < queries.length; ++i) {
-            result += set(tree, queries[i][0], queries[i][1]);
+        for (int[] query : queries) {
+            result += set(tree, query[0], query[1]);
             result %= MOD;
         }
         return (int) result;

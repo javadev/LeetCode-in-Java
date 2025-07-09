@@ -29,12 +29,12 @@ public class Solution {
         int cut = 0;
         int n = arr.length;
         int max = (int) arr[0] & MASK;
-        for (int i = 0; i < n; i++) {
-            int start = (int) (arr[i] >> 32);
+        for (long l : arr) {
+            int start = (int) (l >> 32);
             if (start >= max && ++cut == 2) {
                 return true;
             }
-            max = Math.max(max, (int) (arr[i] & MASK));
+            max = Math.max(max, (int) (l & MASK));
         }
         return false;
     }

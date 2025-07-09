@@ -36,11 +36,7 @@ public class Codec {
             return;
         }
         String s = Integer.toHexString(root.val + BASE_OFFSET);
-        StringBuilder sb2 = new StringBuilder();
-        for (int i = 0; i < 3 - s.length(); i++) {
-            sb2.append('0');
-        }
-        sb2.append(s);
+        String sb2 = "0".repeat(Math.max(0, 3 - s.length())) + s;
         sb.append(sb2);
         serialize(root.left, sb);
         serialize(root.right, sb);

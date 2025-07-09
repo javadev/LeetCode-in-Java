@@ -11,20 +11,19 @@ public class Solution {
         for (int val : nums2) {
             hm.put(val * k, hm.getOrDefault(val * k, 0) + 1);
         }
-        for (int indx = 0; indx < nums1.length; indx++) {
-            if (nums1[indx] % k != 0) {
+        for (int i : nums1) {
+            if (i % k != 0) {
                 continue;
             }
-            for (int factor = 1; factor * factor <= nums1[indx]; factor++) {
-                if (nums1[indx] % factor != 0) {
+            for (int factor = 1; factor * factor <= i; factor++) {
+                if (i % factor != 0) {
                     continue;
                 }
-                int factor1 = factor;
-                int factor2 = nums1[indx] / factor;
-                if (hm.containsKey(factor1)) {
-                    ans += hm.get(factor1);
+                int factor2 = i / factor;
+                if (hm.containsKey(factor)) {
+                    ans += hm.get(factor);
                 }
-                if (factor1 != factor2 && hm.containsKey(factor2)) {
+                if (factor != factor2 && hm.containsKey(factor2)) {
                     ans += hm.get(factor2);
                 }
             }

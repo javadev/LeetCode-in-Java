@@ -19,14 +19,10 @@ public class Solution {
                 k -= range;
             }
             if (v == 0) {
-                for (int i = 1; i <= n; i++) {
-                    sb.append('H');
-                }
+                sb.append("H".repeat(Math.max(0, n)));
                 break;
             } else if (v == n) {
-                for (int i = 1; i <= v; i++) {
-                    sb.append('V');
-                }
+                sb.append("V".repeat(Math.max(0, v)));
                 break;
             }
         }

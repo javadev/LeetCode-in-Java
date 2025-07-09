@@ -18,16 +18,16 @@ public class Solution {
             map[nums[i]]++;
         }
         int ans = 0;
-        for (int i = 0; i < n; ++i) {
+        for (int num : nums) {
             ans += n - last;
-            map[nums[i]]--;
-            if (map[nums[i]] == 0) {
+            map[num]--;
+            if (map[num] == 0) {
                 int possLast = 0;
-                for (int j = last + 1; j < n && map[nums[i]] == 0; ++j) {
+                for (int j = last + 1; j < n && map[num] == 0; ++j) {
                     map[nums[j]]++;
                     possLast = j;
                 }
-                if (map[nums[i]] > 0) {
+                if (map[num] > 0) {
                     last = possLast;
                 } else {
                     break;

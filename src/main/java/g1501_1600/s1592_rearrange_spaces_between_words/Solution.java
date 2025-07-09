@@ -12,11 +12,7 @@ public class Solution {
         }
         String[] words = text.trim().split("\\s+");
         if (words.length == 1) {
-            StringBuilder sb = new StringBuilder(words[0]);
-            for (int i = 0; i < spaceCount; i++) {
-                sb.append(" ");
-            }
-            return sb.toString();
+            return words[0] + " ".repeat(Math.max(0, spaceCount));
         }
         int trailingSpaces = spaceCount % (words.length - 1);
         int newSpaces = spaceCount / (words.length - 1);
@@ -24,13 +20,9 @@ public class Solution {
         for (int j = 0; j < words.length; j++) {
             sb.append(words[j]);
             if (j < words.length - 1) {
-                for (int i = 0; i < newSpaces; i++) {
-                    sb.append(" ");
-                }
+                sb.append(" ".repeat(Math.max(0, newSpaces)));
             } else {
-                for (int i = 0; i < trailingSpaces; i++) {
-                    sb.append(" ");
-                }
+                sb.append(" ".repeat(Math.max(0, trailingSpaces)));
             }
         }
         return sb.toString();

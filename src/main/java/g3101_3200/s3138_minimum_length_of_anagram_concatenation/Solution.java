@@ -20,8 +20,7 @@ public class Solution {
         }
         List<Integer> factors = getAllFactorsVer2(n);
         Collections.sort(factors);
-        for (int j = 0; j < factors.size(); j++) {
-            int factor = factors.get(j);
+        for (int factor : factors) {
             if (factor == 1) {
                 if (sq[0] * n == sq[n - 1]) {
                     return 1;

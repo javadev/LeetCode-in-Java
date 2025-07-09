@@ -9,10 +9,10 @@ import java.util.List;
 
 @SuppressWarnings("unchecked")
 public class Solution {
-    private int digits = 10;
-    private int full = 1 << digits;
-    private long neg = Long.MIN_VALUE / 4;
-    private long mod = (long) 1e9 + 7;
+    private static final int DIGITS = 10;
+    private static final int FULL = 1 << DIGITS;
+    private static final long NEG = Long.MIN_VALUE / 4;
+    private static final long MOD = (long) 1e9 + 7;
     private List<Integer>[] tree;
     private int[] val;
     private int[] mask;
@@ -47,24 +47,24 @@ public class Solution {
             tree[par[i]].add(i);
         }
         dfs(root);
-        return (int) (res % mod);
+        return (int) (res % MOD);
     }
 
     private long[] dfs(int u) {
-        long[] dp = new long[full];
-        Arrays.fill(dp, neg);
+        long[] dp = new long[FULL];
+        Arrays.fill(dp, NEG);
         dp[0] = 0;
         if (isOk[u]) {
             dp[mask[u]] = val[u];
         }
         for (int v : tree[u]) {
             long[] child = dfs(v);
-            long[] newDp = Arrays.copyOf(dp, full);
-            for (int m1 = 0; m1 < full; m1++) {
+            long[] newDp = Arrays.copyOf(dp, FULL);
+            for (int m1 = 0; m1 < FULL; m1++) {
                 if (dp[m1] < 0) {
                     continue;
                 }
-                int remain = full - 1 - m1;
+                int remain = FULL - 1 - m1;
                 for (int m2 = remain; m2 > 0; m2 = (m2 - 1) & remain) {
                     if (child[m2] < 0) {
                         continue;
@@ -79,7 +79,7 @@ public class Solution {
         for (long v : dp) {
             best = Math.max(best, v);
         }
-        res = (res + best) % mod;
+        res = (res + best) % MOD;
         return dp;
     }
 }
