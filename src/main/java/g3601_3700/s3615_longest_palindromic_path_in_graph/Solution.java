@@ -1,6 +1,7 @@
 package g3601_3700.s3615_longest_palindromic_path_in_graph;
 
-// #Hard #2025_07_14_Time_690_ms_(100.00%)_Space_74.69_MB_(100.00%)
+// #Hard #String #Dynamic_Programming #Bit_Manipulation #Graph
+// #2025_07_14_Time_641_ms_(100.00%)_Space_88.48_MB_(100.00%)
 
 import java.util.ArrayList;
 import java.util.List;

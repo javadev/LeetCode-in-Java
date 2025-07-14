@@ -1,6 +1,7 @@
 package g3601_3700.s3613_minimize_maximum_component_cost;
 
-// #Medium #2025_07_14_Time_36_ms_(100.00%)_Space_88.30_MB_(98.68%)
+// #Medium #Binary_Search #Graph #Union_Find #Sort
+// #2025_07_14_Time_37_ms_(100.00%)_Space_88.50_MB_(98.52%)
 
 public class Solution {
     public int minCost(int ui, int[][] pl, int zx) {
