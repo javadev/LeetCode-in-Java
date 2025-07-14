@@ -21,4 +21,10 @@ class SolutionTest {
         assertThat(
                 new Solution().maxLen(4, new int[][] {{0, 2}, {0, 3}, {3, 1}}, "bbac"), equalTo(3));
     }
+
+    @Test
+    void maxLen4() {
+        assertThat(
+                new Solution().maxLen(3, new int[][] {{2, 0}, {2, 1}}, "mll"), equalTo(2));
+    }
 }
