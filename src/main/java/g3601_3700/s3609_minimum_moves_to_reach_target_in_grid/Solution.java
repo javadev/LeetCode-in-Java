@@ -7,7 +7,6 @@ public class Solution {
         if (sx == 0 && sy == 0) {
             return tx == 0 && ty == 0 ? 0 : -1;
         }
-
         int res = 0;
         while (sx != tx || sy != ty) {
             if (sx > tx || sy > ty) {
