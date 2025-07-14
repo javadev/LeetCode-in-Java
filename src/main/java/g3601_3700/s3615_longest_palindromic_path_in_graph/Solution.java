@@ -5,6 +5,7 @@ package g3601_3700.s3615_longest_palindromic_path_in_graph;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int maxLen(int n, int[][] edges, String labelsStr) {
         char[] labels = labelsStr.toCharArray();
