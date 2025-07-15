@@ -21,53 +21,13 @@ Return the final string `result` after processing all characters in `s`.
 
 **Explanation:**
 
-`i`
-
-`s[i]`
-
-Operation
-
-Current `result`
-
-0
-
-`'a'`
-
-Append `'a'`
-
-`"a"`
-
-1
-
-`'#'`
-
-Duplicate `result`
-
-`"aa"`
-
-2
-
-`'b'`
-
-Append `'b'`
-
-`"aab"`
-
-3
-
-`'%'`
-
-Reverse `result`
-
-`"baa"`
-
-4
-
-`'*'`
-
-Remove the last character
-
-`"ba"`
+| i | s[i]  | Operation                  | Current `result` |
+|---|-------|----------------------------|------------------|
+| 0 | `'a'` | Append `'a'`               | `"a"`            |
+| 1 | `'#'` | Duplicate `result`         | `"aa"`           |
+| 2 | `'b'` | Append `'b'`               | `"aab"`          |
+| 3 | `'%'` | Reverse `result`           | `"baa"`          |
+| 4 | `'*'` | Remove the last character  | `"ba"`           |
 
 Thus, the final `result` is `"ba"`.
 
@@ -79,37 +39,11 @@ Thus, the final `result` is `"ba"`.
 
 **Explanation:**
 
-`i`
-
-`s[i]`
-
-Operation
-
-Current `result`
-
-0
-
-`'z'`
-
-Append `'z'`
-
-`"z"`
-
-1
-
-`'*'`
-
-Remove the last character
-
-`""`
-
-2
-
-`'#'`
-
-Duplicate the string
-
-`""`
+| i | s[i]  | Operation                 | Current `result` |
+|---|-------|---------------------------|------------------|
+| 0 | `'z'` | Append `'z'`              | `"z"`            |
+| 1 | `'*'` | Remove the last character | `""`             |
+| 2 | `'#'` | Duplicate the string      | `""`             |
 
 Thus, the final `result` is `""`.
 
