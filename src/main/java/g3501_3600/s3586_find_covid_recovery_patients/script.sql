@@ -1,6 +1,5 @@
 # Write your MySQL query statement below
 # #Medium #Database #2025_06_19_Time_471_ms_(97.17%)_Space_0.0_MB_(100.00%)
--- mysql
 -- SELECT 
 --     p.patient_id,
 --     p.patient_name,
