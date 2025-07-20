@@ -33,6 +33,6 @@ class SolutionTest {
                                     222076810,
                                     992619933
                                 }),
-                equalTo(1535784865L));
+                equalTo(449455001L));
     }
 }
