@@ -15,4 +15,24 @@ class SolutionTest {
     void splitArray2() {
         assertThat(new Solution().splitArray(new int[] {-1, 5, 7, 0}), equalTo(3L));
     }
+
+    @Test
+    void splitArray3() {
+        assertThat(
+                new Solution()
+                        .splitArray(
+                                new int[] {
+                                    -54818575,
+                                    801071518,
+                                    745054848,
+                                    -415289833,
+                                    161564441,
+                                    706292027,
+                                    306478283,
+                                    943480367,
+                                    222076810,
+                                    992619933
+                                }),
+                equalTo(1535784865L));
+    }
 }
