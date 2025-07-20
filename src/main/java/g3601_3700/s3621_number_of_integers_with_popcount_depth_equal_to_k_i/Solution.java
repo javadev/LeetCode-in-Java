@@ -6,12 +6,8 @@ public class Solution {
     private static final int MX_LN = 61;
     private final long[][] slct = new long[MX_LN][MX_LN];
     private final int[] popHeight = new int[MX_LN];
-    private boolean strt = false;
 
-    private void setup() {
-        if (strt) {
-            return;
-        }
+    public Solution() {
         for (int i = 0; i < MX_LN; i++) {
             slct[i][0] = slct[i][i] = 1;
             for (int j = 1; j < i; j++) {
@@ -22,7 +18,6 @@ public class Solution {
         for (int v = 2; v < MX_LN; v++) {
             popHeight[v] = 1 + popHeight[Long.bitCount(v)];
         }
-        strt = true;
     }
 
     private long countNumbers(long upperLimit, int setBits) {
@@ -53,7 +48,6 @@ public class Solution {
     }
 
     public long popcountDepth(long tillNumber, int depthQuery) {
-        setup();
         if (depthQuery == 0) {
             return tillNumber >= 1 ? 1 : 0;
         }
