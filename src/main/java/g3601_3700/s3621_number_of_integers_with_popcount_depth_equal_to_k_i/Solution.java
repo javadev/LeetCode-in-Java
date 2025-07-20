@@ -4,23 +4,23 @@ package g3601_3700.s3621_number_of_integers_with_popcount_depth_equal_to_k_i;
 
 public class Solution {
     private static final int MX_LN = 61;
-    private static final long[][] SLCT = new long[MX_LN][MX_LN];
-    private static final int[] POP_HGHT = new int[MX_LN];
-    private static boolean strt = false;
+    private final long[][] slct = new long[MX_LN][MX_LN];
+    private final int[] popHeight = new int[MX_LN];
+    private boolean strt = false;
 
     private void setup() {
         if (strt) {
             return;
         }
         for (int i = 0; i < MX_LN; i++) {
-            SLCT[i][0] = SLCT[i][i] = 1;
+            slct[i][0] = slct[i][i] = 1;
             for (int j = 1; j < i; j++) {
-                SLCT[i][j] = SLCT[i - 1][j - 1] + SLCT[i - 1][j];
+                slct[i][j] = slct[i - 1][j - 1] + slct[i - 1][j];
             }
         }
-        POP_HGHT[1] = 0;
+        popHeight[1] = 0;
         for (int v = 2; v < MX_LN; v++) {
-            POP_HGHT[v] = 1 + POP_HGHT[Long.bitCount(v)];
+            popHeight[v] = 1 + popHeight[Long.bitCount(v)];
         }
         strt = true;
     }
@@ -38,7 +38,7 @@ public class Solution {
         for (int pos = len - 1; pos >= 0; pos--) {
             if (((upperLimit >> pos) & 1) == 1) {
                 if (setBits - used <= pos) {
-                    count += SLCT[pos][setBits - used];
+                    count += slct[pos][setBits - used];
                 }
                 used++;
                 if (used > setBits) {
@@ -59,7 +59,7 @@ public class Solution {
         }
         long total = 0;
         for (int ones = 1; ones < MX_LN; ones++) {
-            if (POP_HGHT[ones] == depthQuery - 1) {
+            if (popHeight[ones] == depthQuery - 1) {
                 total += countNumbers(tillNumber, ones);
             }
         }
