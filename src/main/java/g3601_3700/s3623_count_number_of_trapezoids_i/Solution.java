@@ -15,9 +15,9 @@ public class Solution {
         }
         long sum = 0L;
         long sumPairs = 0L;
-        for (int c : map.values()) {
-            if (c > 1) {
-                long pairs = ((long) c * (c - 1) / 2) % mod;
+        for (Integer num : map.values()) {
+            if (num > 1) {
+                long pairs = ((long) num * (num - 1) / 2) % mod;
                 sum = (sum + pairs) % mod;
                 sumPairs = (sumPairs + pairs * pairs % mod) % mod;
             }

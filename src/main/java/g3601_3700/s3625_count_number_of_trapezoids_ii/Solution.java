@@ -101,9 +101,9 @@ public class Solution {
             }
             long s = 0;
             long s2 = 0;
-            for (int c : lines.values()) {
-                s += c;
-                s2 += (long) c * c;
+            for (Integer line : lines.values()) {
+                s += line;
+                s2 += (long) line * line;
             }
             trapezoidsRaw += (s * s - s2) / 2;
         }
@@ -114,9 +114,9 @@ public class Solution {
             }
             long s = 0;
             long s2 = 0;
-            for (int c : mp.values()) {
-                s += c;
-                s2 += (long) c * c;
+            for (Integer num : mp.values()) {
+                s += num;
+                s2 += (long) num * num;
             }
             parallelograms += (s * s - s2) / 2;
         }
