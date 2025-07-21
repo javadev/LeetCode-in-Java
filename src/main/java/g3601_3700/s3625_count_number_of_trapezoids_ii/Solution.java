@@ -121,9 +121,6 @@ public class Solution {
             parallelograms += (s * s - s2) / 2;
         }
         long res = trapezoidsRaw - parallelograms;
-        if (res < 0) {
-            res = 0;
-        }
         return res > Integer.MAX_VALUE ? Integer.MAX_VALUE : (int) res;
     }
 
