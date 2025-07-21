@@ -20,4 +20,21 @@ class SolutionTest {
                 new Solution().countTrapezoids(new int[][] {{0, 0}, {1, 0}, {0, 1}, {2, 1}}),
                 equalTo(1));
     }
+
+    @Test
+    void countTrapezoids3() {
+        assertThat(
+                new Solution()
+                        .countTrapezoids(
+                                new int[][] {
+                                    {71, -89},
+                                    {-75, -89},
+                                    {-9, 11},
+                                    {-24, -89},
+                                    {-51, -89},
+                                    {-77, -89},
+                                    {42, 11}
+                                }),
+                equalTo(10));
+    }
 }
