@@ -1,6 +1,6 @@
 package g3601_3700.s3618_split_array_by_prime_indices;
 
-// #Medium #2025_07_20_Time_3_ms_(100.00%)_Space_62.52_MB_(100.00%)
+// #Medium #Biweekly_Contest_161 #2025_07_22_Time_3_ms_(100.00%)_Space_62.42_MB_(16.27%)
 
 public class Solution {
     public long splitArray(int[] nums) {

@@ -1,6 +1,6 @@
 package g3601_3700.s3621_number_of_integers_with_popcount_depth_equal_to_k_i;
 
-// #Hard #2025_07_20_Time_1_ms_(100.00%)_Space_41.10_MB_(100.00%)
+// #Hard #Biweekly_Contest_161 #2025_07_22_Time_9_ms_(70.67%)_Space_44.98_MB_(38.42%)
 
 public class Solution {
     private static final int MX_LN = 61;

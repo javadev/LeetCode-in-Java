@@ -1,59 +1,102 @@
 package g3601_3700.s3620_network_recovery_pathways;
 
-// #Hard #2025_07_20_Time_18_ms_(100.00%)_Space_120.24_MB_(100.00%)
+// #Hard #Biweekly_Contest_161 #2025_07_22_Time_158_ms_(64.00%)_Space_130.14_MB_(14.77%)
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
-@SuppressWarnings("unchecked")
 public class Solution {
-    private int ans = -1;
-    private int d;
-    private long k = 0;
+    private List<Integer> topologicalSort(int n, List<List<Integer>> g) {
+        int[] indeg = new int[n];
+        for (int i = 0; i < n; ++i) {
+            for (int adj_node : g.get(i)) {
+                indeg[adj_node]++;
+            }
+        }
+        Queue<Integer> q = new LinkedList<>();
+        List<Integer> ts = new ArrayList<>();
+        for (int i = 0; i < n; ++i) {
+            if (indeg[i] == 0) {
+                q.offer(i);
+            }
+        }
+        while (!q.isEmpty()) {
+            int u = q.poll();
+            ts.add(u);
+            for (int v : g.get(u)) {
+                indeg[v]--;
+                if (indeg[v] == 0) {
+                    q.offer(v);
+                }
+            }
+        }
+        return ts;
+    }
+
+    private boolean check(int x, int n, List<List<int[]>> adj, List<Integer> ts, boolean[] online, long k) {
+        long[] d = new long[n];
+        Arrays.fill(d, Long.MAX_VALUE); // Represents INF
+        d[0] = 0;
+        for (int u : ts) {
+            if (d[u] != Long.MAX_VALUE) { // If d[u] is reachable
+                for (int[] p : adj.get(u)) {
+                    int v = p[0];
+                    int c = p[1];
+                    if (c < x || !online[v]) {
+                        continue;
+                    }
+                    if (d[u] + c < d[v]) {
+                        d[v] = d[u] + c;
+                    }
+                }
+            }
+        }
+        return d[n - 1] <= k;
+    }
 
     public int findMaxPathScore(int[][] edges, boolean[] online, long k) {
         int n = online.length;
-        this.k = k;
-        this.d = n - 1;
-        ArrayList<P>[] g = new ArrayList[n];
-        for (int i = 0; i < n; ++i) {
-            g[i] = new ArrayList<>();
+        // Adjacency list for graph with edge weights
+        List<List<int[]>> adj = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            adj.add(new ArrayList<>());
         }
-        for (int[] i : edges) {
-            if (online[i[0]] && online[i[1]]) {
-                g[i[0]].add(new P(i[1], i[2]));
-            }
+        // Adjacency list for topological sort (unweighted graph)
+        List<List<Integer>> g = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            g.add(new ArrayList<>());
         }
-        dfs(g, 0, 0L, Integer.MAX_VALUE);
-        return ans;
-    }
+        for (int[] e : edges) {
+            int u = e[0];
+            int v = e[1];
+            int c = e[2];
+            adj.get(u).add(new int[]{v, c});
+            g.get(u).add(v);
+        }
 
-    private void dfs(ArrayList<P>[] g, int s, long tc, int max) {
-        if (s == d) {
-            if (ans == -1) {
-                ans = max;
+        List<Integer> ts = topologicalSort(n, g);
+
+        // Call the helper method
+        if (!check(0, n, adj, ts, online, k)) {
+            return -1;
+        }
+
+        int l = 0;
+        int h = 0;
+        for (int[] e : edges) {
+            h = Math.max(h, e[2]);
+        }
+        while (l < h) {
+            int md = l + (h - l + 1) / 2;
+            if (check(md, n, adj, ts, online, k)) {
+                l = md;
             } else {
-                ans = Math.max(ans, max);
-            }
-            return;
-        }
-        for (P i : g[s]) {
-            long cost = tc + i.c;
-            if (ans != -1 && ans >= max) {
-                return;
-            }
-            if (cost <= k) {
-                dfs(g, i.d, cost, Math.min(max, i.c));
+                h = md - 1;
             }
         }
-    }
-
-    private static final class P {
-        int d;
-        int c;
-
-        P(int d, int c) {
-            this.d = d;
-            this.c = c;
-        }
+        return l;
     }
 }

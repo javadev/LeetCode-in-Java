@@ -1,6 +1,6 @@
 package g3601_3700.s3622_check_divisibility_by_digit_sum_and_product;
 
-// #Easy #2025_07_20_Time_0_ms_(100.00%)_Space_40.53_MB_(_%)
+// #Easy #Weekly_Contest_459 #2025_07_22_Time_0_ms_(100.00%)_Space_41.36_MB_(8.47%)
 
 public class Solution {
     public boolean checkDivisibility(int n) {
