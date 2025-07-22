@@ -12,8 +12,8 @@ public class Solution {
     private List<Integer> topologicalSort(int n, List<List<Integer>> g) {
         int[] indeg = new int[n];
         for (int i = 0; i < n; ++i) {
-            for (int adj_node : g.get(i)) {
-                indeg[adj_node]++;
+            for (int adjNode : g.get(i)) {
+                indeg[adjNode]++;
             }
         }
         Queue<Integer> q = new LinkedList<>();
@@ -36,12 +36,14 @@ public class Solution {
         return ts;
     }
 
-    private boolean check(int x, int n, List<List<int[]>> adj, List<Integer> ts, boolean[] online, long k) {
+    private boolean check(
+            int x, int n, List<List<int[]>> adj, List<Integer> ts, boolean[] online, long k) {
         long[] d = new long[n];
-        Arrays.fill(d, Long.MAX_VALUE); // Represents INF
+        Arrays.fill(d, Long.MAX_VALUE);
         d[0] = 0;
         for (int u : ts) {
-            if (d[u] != Long.MAX_VALUE) { // If d[u] is reachable
+            // If d[u] is reachable
+            if (d[u] != Long.MAX_VALUE) {
                 for (int[] p : adj.get(u)) {
                     int v = p[0];
                     int c = p[1];
@@ -64,7 +66,6 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             adj.add(new ArrayList<>());
         }
-        // Adjacency list for topological sort (unweighted graph)
         List<List<Integer>> g = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             g.add(new ArrayList<>());
@@ -73,17 +74,13 @@ public class Solution {
             int u = e[0];
             int v = e[1];
             int c = e[2];
-            adj.get(u).add(new int[]{v, c});
+            adj.get(u).add(new int[] {v, c});
             g.get(u).add(v);
         }
-
         List<Integer> ts = topologicalSort(n, g);
-
-        // Call the helper method
         if (!check(0, n, adj, ts, online, k)) {
             return -1;
         }
-
         int l = 0;
         int h = 0;
         for (int[] e : edges) {
