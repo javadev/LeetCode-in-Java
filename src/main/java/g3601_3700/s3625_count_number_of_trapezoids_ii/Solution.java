@@ -1,6 +1,7 @@
 package g3601_3700.s3625_count_number_of_trapezoids_ii;
 
-// #Hard #Weekly_Contest_459 #2025_07_22_Time_372_ms_(97.30%)_Space_154.52_MB_(31.53%)
+// #Hard #Array #Hash_Table #Math #Geometry #Weekly_Contest_459
+// #2025_07_22_Time_347_ms_(99.10%)_Space_131.20_MB_(46.85%)
 
 import java.util.HashMap;
 import java.util.Map;

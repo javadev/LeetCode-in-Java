@@ -1,6 +1,7 @@
 package g3601_3700.s3624_number_of_integers_with_popcount_depth_equal_to_k_ii;
 
-// #Hard #Weekly_Contest_459 #2025_07_22_Time_26_ms_(97.90%)_Space_99.87_MB_(97.09%)
+// #Hard #Array #Segment_Tree #Weekly_Contest_459
+// #2025_07_22_Time_27_ms_(96.44%)_Space_125.92_MB_(24.76%)
 
 import java.util.ArrayList;
 

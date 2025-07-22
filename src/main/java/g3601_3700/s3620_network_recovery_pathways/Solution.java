@@ -1,6 +1,7 @@
 package g3601_3700.s3620_network_recovery_pathways;
 
-// #Hard #Biweekly_Contest_161 #2025_07_22_Time_158_ms_(64.00%)_Space_130.14_MB_(14.77%)
+// #Hard #Array #Dynamic_Programming #Binary_Search #Heap_Priority_Queue #Graph #Topological_Sort
+// #Shortest_Path #Biweekly_Contest_161 #2025_07_22_Time_151_ms_(66.08%)_Space_108.87_MB_(63.77%)
 
 import java.util.ArrayList;
 import java.util.Arrays;
