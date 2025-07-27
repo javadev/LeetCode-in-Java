@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# #Medium #2025_07_25_Time_516_ms_(100.00%)_Space_0.0_MB_(100.00%)
+# #Medium #Database #2025_07_25_Time_516_ms_(100.00%)_Space_0.0_MB_(100.00%)
 WITH store_product_check AS (
     SELECT 
         s.store_id,
