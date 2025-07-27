@@ -20,4 +20,22 @@ class SolutionTest {
     void minJumps3() {
         assertThat(new Solution().minJumps(new int[] {4, 6, 5, 8}), equalTo(3));
     }
+
+    @Test
+    void minJumps4() {
+        assertThat(
+                new Solution()
+                        .minJumps(
+                                new int[] {
+                                    893, 786, 607, 137, 69, 381, 790, 233, 15, 42, 7, 764, 890, 269,
+                                    84, 262, 870, 514, 514, 650, 269, 485, 760, 181, 489, 107, 585,
+                                    428, 862, 563
+                                }),
+                equalTo(21));
+    }
+
+    @Test
+    void minJumps5() {
+        assertThat(new Solution().minJumps(new int[] {4}), equalTo(0));
+    }
 }
