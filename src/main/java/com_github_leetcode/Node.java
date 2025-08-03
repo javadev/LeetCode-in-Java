@@ -2,7 +2,6 @@ package com_github_leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.StringJoiner;
 
 @SuppressWarnings("java:S1104")
 public class Node {
@@ -24,19 +23,32 @@ public class Node {
         this.neighbors = neighbors;
     }
 
+    @Override
     public String toString() {
-        StringJoiner result = new StringJoiner(",", "[", "]");
-        for (Node node : neighbors) {
+        StringBuilder result = new StringBuilder();
+        result.append("[");
+        for (int i = 0; i < neighbors.size(); i++) {
+            Node node = neighbors.get(i);
+            if (i > 0) {
+                result.append(",");
+            }
             if (node.neighbors.isEmpty()) {
-                result.add(String.valueOf(node.val));
+                result.append(node.val);
             } else {
-                StringJoiner result2 = new StringJoiner(",", "[", "]");
-                for (Node nodeItem : node.neighbors) {
-                    result2.add(String.valueOf(nodeItem.val));
+                StringBuilder result2 = new StringBuilder();
+                result2.append("[");
+                for (int j = 0; j < node.neighbors.size(); j++) {
+                    Node nodeItem = node.neighbors.get(j);
+                    if (j > 0) {
+                        result2.append(",");
+                    }
+                    result2.append(nodeItem.val);
                 }
-                result.add(result2.toString());
+                result2.append("]");
+                result.append(result2.toString());
             }
         }
+        result.append("]");
         return result.toString();
     }
 }
