@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 import java.util.TreeSet;
 
 class Solution {
@@ -26,23 +25,6 @@ class Solution {
                 return Integer.compare(this.count, other.count);
             }
             return Integer.compare(other.value, this.value);
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) {
-                return true;
-            }
-            if (o == null || getClass() != o.getClass()) {
-                return false;
-            }
-            FreqPair fp = (FreqPair) o;
-            return count == fp.count && value == fp.value;
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(count, value);
         }
     }
 
