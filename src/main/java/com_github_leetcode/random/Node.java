@@ -1,7 +1,5 @@
 package com_github_leetcode.random;
 
-import java.util.StringJoiner;
-
 @SuppressWarnings("java:S1104")
 public class Node {
     public int val;
@@ -12,34 +10,40 @@ public class Node {
         this.val = val;
     }
 
+    @Override
     public String toString() {
-        StringJoiner result = new StringJoiner(",", "[", "]");
-        StringJoiner result2 = new StringJoiner(",", "[", "]");
-        result2.add(String.valueOf(val));
-        if (random == null) {
-            result2.add("null");
+        StringBuilder result = new StringBuilder();
+        result.append("[");
+        result.append("[");
+        result.append(this.val);
+        result.append(",");
+        if (this.random == null) {
+            result.append("null");
         } else {
-            result2.add(String.valueOf(random.val));
+            result.append(this.random.val);
         }
-        result.add(result2.toString());
-        Node curr = next;
+        result.append("]");
+        Node curr = this.next;
         while (curr != null) {
-            StringJoiner result3 = new StringJoiner(",", "[", "]");
-            result3.add(String.valueOf(curr.val));
+            result.append(",");
+            result.append("[");
+            result.append(curr.val);
+            result.append(",");
             if (curr.random == null) {
-                result3.add("null");
+                result.append("null");
             } else {
                 int randomIndex = 0;
-                Node curr2 = this;
-                while (curr2.next != null && curr2 != curr.random) {
-                    randomIndex += 1;
-                    curr2 = curr2.next;
+                Node indexFinder = this;
+                while (indexFinder.next != null && indexFinder != curr.random) {
+                    randomIndex++;
+                    indexFinder = indexFinder.next;
                 }
-                result3.add(String.valueOf(randomIndex));
+                result.append(randomIndex);
             }
-            result.add(result3.toString());
+            result.append("]");
             curr = curr.next;
         }
+        result.append("]");
         return result.toString();
     }
 }
