@@ -2,8 +2,6 @@ package g3601_3700.s3640_trionic_array_ii;
 
 // #Hard #Weekly_Contest_461 #2025_08_03_Time_4_ms_(100.00%)_Space_58.85_MB_(100.00%)
 
-import java.lang.Math;
-
 public class Solution {
     public long maxSumTrionic(int[] nums) {
         int n = nums.length;
