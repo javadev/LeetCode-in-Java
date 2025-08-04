@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeSet;
 
-class Solution {
+@SuppressWarnings("java:S1210")
+public class Solution {
 
     private static class FreqPair implements Comparable<FreqPair> {
         int count;
