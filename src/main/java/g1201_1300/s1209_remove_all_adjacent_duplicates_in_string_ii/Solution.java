@@ -7,7 +7,7 @@ public class Solution {
         StringBuilder sb = new StringBuilder();
         int dupCount = 0;
         for (int i = 0; i < s.length(); i++) {
-            if (sb.length() != 0 && sb.charAt(sb.length() - 1) == s.charAt(i)) {
+            if (!sb.isEmpty() && sb.charAt(sb.length() - 1) == s.charAt(i)) {
                 dupCount++;
             } else {
                 dupCount = 1;

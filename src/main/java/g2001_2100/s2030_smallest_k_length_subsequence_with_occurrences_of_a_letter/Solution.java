@@ -12,7 +12,7 @@ public class Solution {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < s.length(); count -= s.charAt(i++) == letter ? 1 : 0) {
             while (sb.length() + s.length() > i + k
-                    && sb.length() > 0
+                    && !sb.isEmpty()
                     && s.charAt(i) < sb.charAt(sb.length() - 1)
                     && (sb.charAt(sb.length() - 1) != letter || count != repetition)) {
                 repetition += sb.charAt(sb.length() - 1) == letter ? 1 : 0;

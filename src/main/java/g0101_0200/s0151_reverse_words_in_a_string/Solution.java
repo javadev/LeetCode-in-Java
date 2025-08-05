@@ -17,7 +17,7 @@ public class Solution {
             sb.append(s, start + 1, i + 1);
             i = start - 1;
         }
-        if (sb.length() > 0) {
+        if (!sb.isEmpty()) {
             sb.deleteCharAt(0);
         }
         return sb.toString();
