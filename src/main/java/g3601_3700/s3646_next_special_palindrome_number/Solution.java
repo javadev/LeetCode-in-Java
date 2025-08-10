@@ -56,7 +56,6 @@ public class Solution {
             Collections.sort(half);
             permute(half, 0, v, mid);
         }
-
         Collections.sort(v);
         Set<Long> set = new LinkedHashSet<>(v);
         v.clear();
@@ -77,7 +76,6 @@ public class Solution {
             }
             return;
         }
-
         Set<Character> swapped = new HashSet<>();
         for (int i = start; i < half.size(); i++) {
             if (swapped.contains(half.get(i))) {
