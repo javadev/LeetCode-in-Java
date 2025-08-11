@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Set;
 
 public class Solution {
-    private final static List<Long> SPECIALS = new ArrayList<>();
+    private static final List<Long> SPECIALS = new ArrayList<>();
 
     public long specialPalindrome(long n) {
         if (SPECIALS.isEmpty()) {
