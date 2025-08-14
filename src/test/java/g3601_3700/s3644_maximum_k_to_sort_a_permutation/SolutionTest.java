@@ -20,4 +20,9 @@ class SolutionTest {
     void sortPermutation3() {
         assertThat(new Solution().sortPermutation(new int[] {3, 2, 1, 0}), equalTo(0));
     }
+
+    @Test
+    void sortPermutation4() {
+        assertThat(new Solution().sortPermutation(new int[] {0, 1}), equalTo(0));
+    }
 }
