@@ -1,34 +1,34 @@
 package g3601_3700.s3639_minimum_time_to_activate_string;
 
-// #Medium #Weekly_Contest_461 #2025_08_03_Time_122_ms_(100.00%)_Space_58.43_MB_(100.00%)
-
-import java.util.TreeSet;
+// #Medium #Array #Binary_Search #Weekly_Contest_461
+// #2025_08_14_Time_6_ms_(99.91%)_Space_57.07_MB_(91.05%)
 
 public class Solution {
     public int minTime(String s, int[] order, int k) {
         int n = s.length();
-        // Use a TreeSet to maintain a sorted list of indices
-        TreeSet<Integer> pos = new TreeSet<>();
-        pos.add(-1);
-        pos.add(n);
-        // Iterate through the order of removal
-        int localK = k;
-        for (int t = 0; t < order.length; ++t) {
+        long total = n * (n + 1L) / 2;
+        if (total < k) {
+            return -1;
+        }
+        int[] prev = new int[n + 1];
+        int[] next = new int[n + 1];
+        for (int i = 0; i < n; ++i) {
+            prev[i] = i - 1;
+            next[i] = i + 1;
+        }
+        for (int t = n - 1; t >= 0; t--) {
             int i = order[t];
-            // Find the elements in the sorted set that bracket the current index 'i'
-            // 'r' is the smallest element >= i
-            Integer r = pos.ceiling(i);
-            // 'l' is the largest element <= i
-            Integer l = pos.floor(i);
-            // The 'cost' to remove an item is the product of the distances to its neighbors
-            localK -= (int) ((long) (i - l) * (r - i));
-            pos.add(i);
-            // If the total cost is exhausted, return the current time 't'
-            if (localK <= 0) {
+            int left = prev[i];
+            int right = next[i];
+            total -= (long) (i - left) * (right - i);
+            if (total < k) {
                 return t;
             }
+            if (left >= 0) {
+                next[left] = right;
+            }
+            prev[right] = left;
         }
-        // If all items are removed and k is not exhausted, return -1
-        return -1;
+        return 0;
     }
 }

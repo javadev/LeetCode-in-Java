@@ -1,6 +1,7 @@
 package g3601_3700.s3636_threshold_majority_queries;
 
-// #Hard #Biweekly_Contest_162 #2025_08_06_Time_82_ms_(98.38%)_Space_71.28_MB_(74.76%)
+// #Hard #Array #Hash_Table #Binary_Search #Prefix_Sum #Counting #Divide_and_Conquer
+// #Biweekly_Contest_162 #2025_08_14_Time_83_ms_(96.87%)_Space_71.30_MB_(75.24%)
 
 import java.util.ArrayList;
 import java.util.Arrays;

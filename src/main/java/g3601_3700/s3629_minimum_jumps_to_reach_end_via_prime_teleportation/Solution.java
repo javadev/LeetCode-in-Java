@@ -1,6 +1,7 @@
 package g3601_3700.s3629_minimum_jumps_to_reach_end_via_prime_teleportation;
 
-// #Medium #Weekly_Contest_460 #2025_07_27_Time_116_ms_(99.81%)_Space_76.00_MB_(67.96%)
+// #Medium #Array #Hash_Table #Math #Breadth_First_Search #Number_Theory #Weekly_Contest_460
+// #2025_08_14_Time_112_ms_(99.76%)_Space_76.04_MB_(74.71%)
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

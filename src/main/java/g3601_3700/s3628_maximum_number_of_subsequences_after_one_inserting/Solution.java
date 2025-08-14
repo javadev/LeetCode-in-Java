@@ -1,6 +1,7 @@
 package g3601_3700.s3628_maximum_number_of_subsequences_after_one_inserting;
 
-// #Medium #Weekly_Contest_460 #2025_07_27_Time_12_ms_(100.00%)_Space_45.76_MB_(72.28%)
+// #Medium #String #Dynamic_Programming #Greedy #Prefix_Sum #Weekly_Contest_460
+// #2025_08_14_Time_12_ms_(100.00%)_Space_45.79_MB_(76.82%)
 
 public class Solution {
     public long numOfSubsequences(String s) {
