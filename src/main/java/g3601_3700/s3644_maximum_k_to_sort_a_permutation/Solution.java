@@ -1,6 +1,6 @@
 package g3601_3700.s3644_maximum_k_to_sort_a_permutation;
 
-// #Medium #Weekly_Contest_462 #2025_08_10_Time_1_ms_(100.00%)_Space_62.67_MB_(39.94%)
+// #Medium #Weekly_Contest_462 #2025_08_14_Time_1_ms_(100.00%)_Space_61.65_MB_(71.89%)
 
 public class Solution {
     public int sortPermutation(int[] nums) {

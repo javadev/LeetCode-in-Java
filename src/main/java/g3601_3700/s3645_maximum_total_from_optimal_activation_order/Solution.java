@@ -1,6 +1,7 @@
 package g3601_3700.s3645_maximum_total_from_optimal_activation_order;
 
-// #Medium #Weekly_Contest_462 #2025_08_10_Time_32_ms_(99.42%)_Space_63.82_MB_(35.84%)
+// #Medium #Array #Sorting #Greedy #Two_Pointers #Heap_Priority_Queue #Weekly_Contest_462
+// #2025_08_14_Time_37_ms_(96.20%)_Space_63.84_MB_(42.59%)
 
 import java.util.ArrayList;
 import java.util.Collections;
