@@ -1,6 +1,7 @@
 package g3601_3700.s3634_minimum_removals_to_balance_array;
 
-// #Medium #Biweekly_Contest_162 #2025_08_03_Time_21_ms_(100.00%)_Space_60.28_MB_(100.00%)
+// #Medium #Array #Sorting #Sliding_Window #Biweekly_Contest_162
+// #2025_08_14_Time_20_ms_(99.40%)_Space_60.70_MB_(34.02%)
 
 import java.util.Arrays;
 

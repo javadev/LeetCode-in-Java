@@ -15,4 +15,9 @@ class SolutionTest {
     void isTrionic2() {
         assertThat(new Solution().isTrionic(new int[] {2, 1, 3}), equalTo(false));
     }
+
+    @Test
+    void isTrionic3() {
+        assertThat(new Solution().isTrionic(new int[] {3, 7, 1}), equalTo(false));
+    }
 }
