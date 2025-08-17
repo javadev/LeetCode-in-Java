@@ -47,12 +47,14 @@ class SolutionTest {
     @Test
     void testLargeK() {
         int result = new Solution().minSensors(5, 5, 10);
-        assertThat(result, equalTo(1)); // one sensor covers everything
+        // one sensor covers everything
+        assertThat(result, equalTo(1));
     }
 
     @Test
     void testKZero() {
         int result = new Solution().minSensors(3, 3, 0);
-        assertThat(result, equalTo(9)); // every cell needs a sensor
+        // every cell needs a sensor
+        assertThat(result, equalTo(9));
     }
 }
