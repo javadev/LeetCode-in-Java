@@ -5,7 +5,7 @@ package g3601_3700.s3655_xor_after_range_multiplication_queries_ii;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-@SuppressWarnings("unchecked")
+@SuppressWarnings({"unchecked", "java:S6541"})
 public class Solution {
     private static final int MOD = 1000000007;
 

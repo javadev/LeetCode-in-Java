@@ -5,6 +5,7 @@ package g3601_3700.s3650_minimum_cost_path_with_edge_reversals;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
+@SuppressWarnings({"java:S1210", "java:S2234"})
 public class Solution {
     private static final int INF = Integer.MAX_VALUE / 2 - 1;
     private int cnt;

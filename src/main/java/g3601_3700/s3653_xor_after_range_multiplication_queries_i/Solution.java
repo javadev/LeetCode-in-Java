@@ -22,7 +22,7 @@ public class Solution {
     }
 
     private long modInv(long a) {
-        return modPow(a, MOD - 2);
+        return modPow(a, MOD - 2L);
     }
 
     public int xorAfterQueries(int[] nums, int[][] queries) {
