@@ -1,6 +1,7 @@
 package g3601_3700.s3653_xor_after_range_multiplication_queries_i;
 
-// #Medium #Weekly_Contest_463 #2025_08_17_Time_18_ms_(100.00%)_Space_45.66_MB_(56.67%)
+// #Medium #Array #Simulation #Divide_and_Conquer #Weekly_Contest_463
+// #2025_08_20_Time_19_ms_(99.95%)_Space_45.39_MB_(92.88%)
 
 import java.util.Arrays;
 import java.util.HashMap;
