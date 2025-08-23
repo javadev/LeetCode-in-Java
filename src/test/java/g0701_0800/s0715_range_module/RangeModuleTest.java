@@ -5,7 +5,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-class SolutionTest {
+class RangeModuleTest {
     @Test
     void solutionTest() {
         RangeModule rangeModule = new RangeModule();
