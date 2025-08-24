@@ -30,8 +30,8 @@ public class Solution {
             }
         }
         // Tail walls
-        int leftTail = countRange(walls, r[0] - d[0], r[0] - 1);
-        int rightTail = countRange(walls, r[n - 1] + 1, r[n - 1] + d[n - 1]);
+        int leftTail = countRange(walls, (long) r[0] - d[0], r[0] - 1L);
+        int rightTail = countRange(walls, r[n - 1] + 1L, (long) r[n - 1] + d[n - 1]);
         // Precompute segment ranges
         int segs = n - 1;
         int max = Math.max(0, segs);
