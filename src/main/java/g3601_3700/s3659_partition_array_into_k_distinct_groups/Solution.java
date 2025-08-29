@@ -1,20 +1,24 @@
 package g3601_3700.s3659_partition_array_into_k_distinct_groups;
 
-// #Medium #Weekly_Contest_464 #2025_08_24_Time_81_ms_(100.00%)_Space_62.78_MB_(100.00%)
-
-import java.util.HashMap;
+// #Medium #Weekly_Contest_464 #2025_08_29_Time_2_ms_(100.00%)_Space_55.86_MB_(99.96%)
 
 public class Solution {
     public boolean partitionArray(int[] nums, int k) {
-        HashMap<Integer, Integer> mpp = new HashMap<>();
-        for (int x : nums) {
-            mpp.put(x, mpp.getOrDefault(x, 0) + 1);
+        int n = nums.length;
+        if (n % k != 0) {
+            return false;
         }
-        for (int count : mpp.values()) {
-            if (count > nums.length / k) {
+        int max = 0;
+        for (int x : nums) {
+            max = Math.max(max, x);
+        }
+        int[] count = new int[max + 1];
+        int limit = n / k;
+        for (int x : nums) {
+            if (++count[x] > limit) {
                 return false;
             }
         }
-        return nums.length % k == 0;
+        return true;
     }
 }
