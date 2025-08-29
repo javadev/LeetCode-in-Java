@@ -56,7 +56,7 @@ public class Solution {
         if (i > 0 && walls[i - 1] == arr[j][0]) {
             i--;
         }
-        b = countWallsInRange(walls, i, arr[j][0], arr[j][0] + arr[j][1], arr[j + 1][0]);
+        b = countWallsInRange(walls, i, arr[j][0] + arr[j][1], arr[j + 1][0]);
         i += b;
         j++;
         while (j < arr.length) {
@@ -84,7 +84,7 @@ public class Solution {
         return count;
     }
 
-    private int countWallsInRange(int[] walls, int i, int robotPos, int maxReach, int nextRobot) {
+    private int countWallsInRange(int[] walls, int i, int maxReach, int nextRobot) {
         int count = 0;
         while (i + count < walls.length
                 && walls[i + count] <= maxReach
