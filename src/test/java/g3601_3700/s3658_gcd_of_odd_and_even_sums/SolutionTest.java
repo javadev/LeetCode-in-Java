@@ -15,4 +15,19 @@ class SolutionTest {
     void gcdOfOddEvenSums2() {
         assertThat(new Solution().gcdOfOddEvenSums(5), equalTo(5));
     }
+
+    @Test
+    void gcdOfOddEvenSums3() {
+        assertThat(new Solution().gcdOfOddEvenSums(42), equalTo(42));
+    }
+
+    @Test
+    void gcdOfOddEvenSums4() {
+        assertThat(new Solution().gcdOfOddEvenSums(-42), equalTo(42));
+    }
+
+    @Test
+    void gcdOfOddEvenSums5() {
+        assertThat(new Solution().gcdOfOddEvenSums(0), equalTo(0));
+    }
 }
