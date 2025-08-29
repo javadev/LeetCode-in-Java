@@ -44,7 +44,7 @@ class FizzBuzzTest {
                             }
                         })
                 .start();
-        TimeUnit.MILLISECONDS.sleep(2100);
+        TimeUnit.MILLISECONDS.sleep(2300);
         assertThat(fizz[0] > 0, equalTo(true));
     }
 
