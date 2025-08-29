@@ -18,7 +18,8 @@ public class Solution {
     }
 
     private int handleSingleRobot(int robot, int dist, int[] walls) {
-        int left = 0, right = 0;
+        int left = 0;
+        int right = 0;
         for (int wall : walls) {
             if (wall < robot - dist || wall > robot + dist) {
                 continue;
@@ -96,7 +97,9 @@ public class Solution {
     private int[] processRobotStep(int[][] arr, int[] walls, int j, int i, int a, int b) {
         int l1 = 0;
         int k = i;
-        while (k < walls.length && walls[k] < arr[j][0] - arr[j][1]) k++;
+        while (k < walls.length && walls[k] < arr[j][0] - arr[j][1]) {
+            k++;
+        }
         while (k < walls.length && walls[k] <= arr[j][0]) {
             l1++;
             k++;
