@@ -5,7 +5,6 @@ package g3601_3700.s3661_maximum_walls_destroyed_by_robots;
 import java.util.Arrays;
 import java.util.Comparator;
 
-@SuppressWarnings("java:S6541")
 public class Solution {
     public int maxWalls(int[] robots, int[] distance, int[] walls) {
         if (robots.length == 1) {
