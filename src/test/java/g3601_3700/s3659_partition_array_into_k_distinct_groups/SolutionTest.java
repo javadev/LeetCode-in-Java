@@ -20,4 +20,34 @@ class SolutionTest {
     void partitionArray3() {
         assertThat(new Solution().partitionArray(new int[] {1, 5, 2, 3}, 3), equalTo(false));
     }
+
+    @Test
+    void partitionArray4() {
+        int[] nums = {1, 2, 3, 4, 5};
+        assertThat(new Solution().partitionArray(nums, 2), equalTo(false));
+    }
+
+    @Test
+    void partitionArray5() {
+        int[] nums = {1, 2, 1, 2};
+        assertThat(new Solution().partitionArray(nums, 2), equalTo(true));
+    }
+
+    @Test
+    void partitionArray6() {
+        int[] nums = {1, 1, 1, 2};
+        assertThat(new Solution().partitionArray(nums, 2), equalTo(false));
+    }
+
+    @Test
+    void partitionArray7() {
+        int[] nums = {7};
+        assertThat(new Solution().partitionArray(nums, 1), equalTo(true));
+    }
+
+    @Test
+    void partitionArray8() {
+        int[] nums = {5, 5, 5, 5, 5, 5};
+        assertThat(new Solution().partitionArray(nums, 3), equalTo(false));
+    }
 }
