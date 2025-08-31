@@ -53,7 +53,6 @@ public class Solution {
                 }
             }
         }
-
         // Inclusion–exclusion to get exact gcd counts
         long[] exact = new long[maxV + 1];
         for (int g = maxV; g >= 1; g--) {
@@ -66,7 +65,6 @@ public class Solution {
             }
             exact[g] = s;
         }
-
         long ans = 0;
         for (int g = 1; g <= maxV; g++) {
             if (exact[g] != 0) {
@@ -81,7 +79,6 @@ public class Solution {
 
     private static final class Fenwick {
         private final long[] tree;
-
         Fenwick(int size) {
             this.tree = new long[size];
         }
