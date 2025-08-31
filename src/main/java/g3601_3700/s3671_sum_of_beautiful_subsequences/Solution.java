@@ -79,6 +79,7 @@ public class Solution {
 
     private static final class Fenwick {
         private final long[] tree;
+
         Fenwick(int size) {
             this.tree = new long[size];
         }

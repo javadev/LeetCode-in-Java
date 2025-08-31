@@ -40,6 +40,7 @@ public class Solution {
             ways += f(i + 1, j, 1, grid, n, m, dp);
             ways += f(i, j + 1, 0, grid, n, m, dp);
         }
-        return dp[i][j][dir] = (int) ways % MOD;
+        dp[i][j][dir] = (int) ways % MOD;
+        return dp[i][j][dir];
     }
 }
