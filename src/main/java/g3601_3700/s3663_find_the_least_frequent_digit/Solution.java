@@ -1,27 +1,25 @@
 package g3601_3700.s3663_find_the_least_frequent_digit;
 
-// #Easy #Biweekly_Contest_164 #2025_08_31_Time_4_ms_(100.00%)_Space_41.21_MB_(100.00%)
-
-import java.util.HashMap;
-import java.util.Map;
+// #Easy #Biweekly_Contest_164 #2025_09_06_Time_1_ms_(97.91%)_Space_41.14_MB_(60.27%)
 
 public class Solution {
     public int getLeastFrequentDigit(int n) {
-        String s = String.valueOf(n);
-        int k = s.length();
-        Map<Integer, Integer> freq = new HashMap<>();
-        for (int i = 0; i < k; i++) {
-            int digit = s.charAt(i) - '0';
-            freq.put(digit, freq.getOrDefault(digit, 0) + 1);
+        int[] freq = new int[10];
+        String numStr = String.valueOf(n);
+        for (char c : numStr.toCharArray()) {
+            freq[c - '0']++;
         }
-        int minfreq = Integer.MAX_VALUE;
-        for (Map.Entry<Integer, Integer> it : freq.entrySet()) {
-            minfreq = Math.min(minfreq, it.getValue());
-        }
-        int result = 10;
-        for (Map.Entry<Integer, Integer> it : freq.entrySet()) {
-            if (it.getValue() == minfreq) {
-                result = Math.min(result, it.getKey());
+        int minFreq = Integer.MAX_VALUE;
+        int result = -1;
+        for (int d = 0; d <= 9; d++) {
+            if (freq[d] == 0) {
+                continue;
+            }
+            if (freq[d] < minFreq) {
+                minFreq = freq[d];
+                result = d;
+            } else if (freq[d] == minFreq && d < result) {
+                result = d;
             }
         }
         return result;

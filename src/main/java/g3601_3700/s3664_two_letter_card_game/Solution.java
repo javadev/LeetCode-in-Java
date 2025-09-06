@@ -1,6 +1,6 @@
 package g3601_3700.s3664_two_letter_card_game;
 
-// #Medium #Biweekly_Contest_164 #2025_08_31_Time_8_ms_(99.42%)_Space_60.09_MB_(52.34%)
+// #Medium #Biweekly_Contest_164 #2025_09_06_Time_8_ms_(98.82%)_Space_60.21_MB_(45.56%)
 
 public class Solution {
     public int score(String[] cards, char x) {

@@ -1,62 +1,105 @@
 package g3601_3700.s3666_minimum_operations_to_equalize_binary_string;
 
-// #Hard #Biweekly_Contest_164 #2025_08_31_Time_22_ms_(100.00%)_Space_45.62_MB_(100.00%)
-
-import java.util.ArrayDeque;
-import java.util.Queue;
+// #Hard #Biweekly_Contest_164 #2025_09_06_Time_4_ms_(100.00%)_Space_46.11_MB_(31.99%)
 
 public class Solution {
     public int minOperations(String s, int k) {
-        int zeros = s.chars().map(x -> x == '0' ? 1 : 0).sum();
-        if ((zeros % k) == 0) {
-            return zeros / k;
+        int zero = 0;
+        for (char chr : s.toCharArray()) {
+            zero += '1' - chr;
         }
-        int n = s.length();
-        Queue<Integer> q = new ArrayDeque<>();
-        q.add(zeros);
-        int res = 1;
-        // use bounds for optimization
-        int[][] bounds = new int[2][2];
-        bounds[zeros & 1][0] = bounds[zeros & 1][1] = zeros;
-        bounds[1 - (zeros & 1)][0] = Integer.MAX_VALUE;
-        bounds[1 - (zeros & 1)][1] = Integer.MIN_VALUE;
-        while (!q.isEmpty()) {
-            // find min number of zeros and max number of zeros in this round
-            int minv = Integer.MAX_VALUE;
-            int maxv = Integer.MIN_VALUE;
-            for (int len = q.size(); len > 0; len--) {
-                int h = q.poll();
-                int t = n - h;
-                int x = Math.min(h, k);
-                if (t >= k - x) {
-                    int fst = h - x + (k - x);
-                    minv = Math.min(minv, fst);
-                    maxv = Math.max(maxv, fst);
-                }
-                x = Math.min(t, k);
-                if (h >= k - x) {
-                    int snd = h - (k - x) + x;
-                    minv = Math.min(minv, snd);
-                    maxv = Math.max(maxv, snd);
-                }
+        if (zero % 2 != 0 && k % 2 == 0) {
+            return -1;
+        }
+        if (zero % k == 0) {
+            return zero / k;
+        }
+        if (k % 2 == 0) {
+            return get(zero, s.length(), k);
+        } else {
+            return get1(zero, s.length(), k);
+        }
+    }
+
+    private int get(int zero, int sum, int k) {
+        int l = zero;
+        int r = zero;
+        int res = 0;
+        while (true) {
+            if (l == 0) {
+                return res;
             }
-            // possible children are sequence of equal difference 2
-            int ind = minv & 1;
-            int temp = minv;
-            while (temp <= maxv) {
-                if ((temp % k) == 0) {
-                    return res + temp / k;
-                }
-                if (temp < bounds[ind][0] || temp > bounds[ind][1]) {
-                    q.add(temp);
-                    temp += 2;
-                } else {
-                    temp = bounds[ind][1] + 2;
-                }
+            int lNext;
+            if (l >= k) {
+                lNext = l - k;
+            } else if (r >= k) {
+                lNext = 0;
+            } else {
+                lNext = k - r;
             }
-            bounds[ind][0] = Math.min(bounds[ind][0], minv);
-            bounds[ind][1] = Math.max(bounds[ind][1], maxv);
+            int rNext;
+            int a = sum - r;
+            int b = sum - l;
+            if (a >= k) {
+                rNext = r + k;
+            } else if (b >= k) {
+                rNext = sum;
+            } else {
+                rNext = l + b - (k - b);
+            }
+            if (l == lNext && r == rNext) {
+                break;
+            }
+            if (l > lNext) {
+                l = lNext;
+            }
+            if (r < rNext) {
+                r = rNext;
+            }
             res++;
+        }
+        return -1;
+    }
+
+    private int get1(int zero, int sum, int k) {
+        int[] l = {Integer.MAX_VALUE, zero};
+        int[] r = {Integer.MIN_VALUE, zero};
+        int res = 0;
+        while (true) {
+            int idx1 = res % 2;
+            int idx = 1 - idx1;
+            int lNext;
+            int offset = 1 - l[idx] % 2;
+            if (l[idx] >= k) {
+                lNext = l[idx] - k;
+            } else if (r[idx] >= k) {
+                lNext = offset;
+            } else {
+                lNext = k - r[idx];
+            }
+            int rNext;
+            int a = sum - r[idx];
+            int b = sum - l[idx];
+            if (a >= k) {
+                rNext = r[idx] + k;
+            } else if (b >= k) {
+                rNext = sum - offset;
+            } else {
+                rNext = l[idx] + b - (k - b);
+            }
+            if (l[idx1] == lNext && r[idx1] == rNext) {
+                break;
+            }
+            if (l[idx1] > lNext) {
+                l[idx1] = lNext;
+            }
+            if (r[idx1] < rNext) {
+                r[idx1] = rNext;
+            }
+            res++;
+            if (l[idx1] == 0) {
+                return res;
+            }
         }
         return -1;
     }
