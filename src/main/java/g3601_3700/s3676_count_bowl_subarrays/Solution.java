@@ -15,7 +15,9 @@ public class Solution {
                 int mid = stack.pop();
                 if (!stack.isEmpty()) {
                     int left = stack.peek();
-                    if (Math.min(nums[left], nums[i]) > nums[mid]) ++ans;
+                    if (Math.min(nums[left], nums[i]) > nums[mid]) {
+                        ++ans;
+                    }
                 }
             }
             stack.push(i);

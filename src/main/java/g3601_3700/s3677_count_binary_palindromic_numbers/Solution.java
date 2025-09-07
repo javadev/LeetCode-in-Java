@@ -5,7 +5,9 @@ package g3601_3700.s3677_count_binary_palindromic_numbers;
 public class Solution {
     private long makePalin(long left, boolean odd) {
         long ans = left;
-        if (odd) left = left >> 1;
+        if (odd) {
+            left = left >> 1;
+        }
         while (left > 0) {
             ans = (ans << 1) | (left & 1);
             left = left >> 1;
@@ -14,7 +16,9 @@ public class Solution {
     }
 
     public int countBinaryPalindromes(long n) {
-        if (n == 0) return 1;
+        if (n == 0) {
+            return 1;
+        }
         int len = 64 - Long.numberOfLeadingZeros(n);
         long count = 1;
         for (int i = 1; i < len; i++) {
@@ -25,7 +29,9 @@ public class Solution {
         long prefix = n >> (len - half);
         long palin = makePalin(prefix, len % 2 == 1);
         count += (prefix - (1L << (half - 1)));
-        if (palin <= n) ++count;
+        if (palin <= n) {
+            ++count;
+        }
         return (int) count;
     }
 }

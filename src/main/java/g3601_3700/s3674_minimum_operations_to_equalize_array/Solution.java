@@ -5,7 +5,9 @@ package g3601_3700.s3674_minimum_operations_to_equalize_array;
 public class Solution {
     public int minOperations(int[] nums) {
         for (int num : nums) {
-            if (num != nums[0]) return 1;
+            if (num != nums[0]) {
+                return 1;
+            }
         }
         return 0;
     }
