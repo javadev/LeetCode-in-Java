@@ -20,7 +20,7 @@ import org.zapodot.junit.db.common.CompatibilityMode;
 @EmbeddedDatabaseTest(
         compatibilityMode = CompatibilityMode.MySQL,
         initialSqls =
-                    "CREATE TABLE app_events ("
+                "CREATE TABLE app_events ("
                         + "    event_id INT PRIMARY KEY,"
                         + "    user_id INT NOT NULL,"
                         + "    event_timestamp TIMESTAMP NOT NULL,"
