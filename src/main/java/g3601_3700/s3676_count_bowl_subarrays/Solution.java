@@ -20,6 +20,6 @@ public class Solution {
                 pre = nums[i];
             }
         }
-        return res + 1;
+        return res + 1L;
     }
 }
