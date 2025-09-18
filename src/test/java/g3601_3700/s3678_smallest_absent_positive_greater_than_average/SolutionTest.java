@@ -20,4 +20,9 @@ class SolutionTest {
     void smallestAbsent3() {
         assertThat(new Solution().smallestAbsent(new int[] {4, -1}), equalTo(2));
     }
+
+    @Test
+    void smallestAbsent4() {
+        assertThat(new Solution().smallestAbsent(new int[] {-2, -1}), equalTo(1));
+    }
 }

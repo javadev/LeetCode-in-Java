@@ -17,4 +17,9 @@ class SolutionTest {
                 new Solution().earliestTime(new int[][] {{100, 100}, {100, 100}, {100, 100}}),
                 equalTo(200));
     }
+
+    @Test
+    void earliestTime3() {
+        assertThat(new Solution().earliestTime(new int[][] {{1, 6}}), equalTo(7));
+    }
 }
