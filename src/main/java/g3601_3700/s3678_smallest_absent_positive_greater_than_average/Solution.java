@@ -18,7 +18,14 @@ public class Solution {
         int n = nums.length;
         Arrays.sort(nums);
         avg = sum / n;
-        double j = avg < 0 ? 1 : Math.ceil(avg) == avg ? avg + 1 : Math.ceil(avg);
+        double j;
+        if (avg < 0) {
+            j = 1;
+        } else if (Math.ceil(avg) == avg) {
+            j = avg + 1;
+        } else {
+            j = Math.ceil(avg);
+        }
         for (int i = (int) j; i <= 100; i++) {
             if (!set.contains(i)) {
                 return i;

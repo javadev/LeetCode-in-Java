@@ -4,6 +4,7 @@ package g3601_3700.s3685_subsequence_sum_after_capping_elements;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     private static final int MAX_K = 4001;
     private final boolean[] dp = new boolean[MAX_K];
