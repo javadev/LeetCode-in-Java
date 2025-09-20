@@ -5,8 +5,8 @@ package g3601_3700.s3678_smallest_absent_positive_greater_than_average;
 public class Solution {
     public int smallestAbsent(int[] nums) {
         int sum = 0;
-        for (int i = 0; i < nums.length; i++) {
-            sum += nums[i];
+        for (int j : nums) {
+            sum += j;
         }
         double avg = (double) sum / nums.length;
         int num;
@@ -17,16 +17,14 @@ public class Solution {
         }
         while (true) {
             boolean flag = false;
-            for (int i = 0; i < nums.length; i++) {
-                if (num == nums[i]) {
+            for (int j : nums) {
+                if (num == j) {
                     flag = true;
                     break;
                 }
             }
-            if (!flag) {
-                if (num > avg) {
-                    return num;
-                }
+            if (!flag && num > avg) {
+                return num;
             }
             num++;
         }

@@ -27,9 +27,7 @@ public class Solution {
             n++;
         }
         int[] finl = new int[cnt];
-        for (int i = 0; i < cnt; i++) {
-            finl[i] = arr[i];
-        }
+        System.arraycopy(arr, 0, finl, 0, cnt);
         return finl;
     }
 }
