@@ -1,36 +1,34 @@
 package g3601_3700.s3678_smallest_absent_positive_greater_than_average;
 
-// #Easy #Biweekly_Contest_165 #2025_09_14_Time_10_ms_(100.00%)_Space_45.27_MB_(100.00%)
-
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+// #Easy #Biweekly_Contest_165 #2025_09_20_Time_2_ms_(100.00%)_Space_45.28_MB_(53.71%)
 
 public class Solution {
     public int smallestAbsent(int[] nums) {
-        double avg;
-        double sum = 0;
-        Set<Integer> set = new HashSet<>();
-        for (int num : nums) {
-            sum += num;
-            set.add(num);
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
         }
-        int n = nums.length;
-        Arrays.sort(nums);
-        avg = sum / n;
-        double j;
+        double avg = (double) sum / nums.length;
+        int num;
         if (avg < 0) {
-            j = 1;
-        } else if (Math.ceil(avg) == avg) {
-            j = avg + 1;
+            num = 1;
         } else {
-            j = Math.ceil(avg);
+            num = (int) avg + 1;
         }
-        for (int i = (int) j; i <= 100; i++) {
-            if (!set.contains(i)) {
-                return i;
+        while (true) {
+            boolean flag = false;
+            for (int i = 0; i < nums.length; i++) {
+                if (num == nums[i]) {
+                    flag = true;
+                    break;
+                }
             }
+            if (!flag) {
+                if (num > avg) {
+                    return num;
+                }
+            }
+            num++;
         }
-        return nums[n - 1] + 1;
     }
 }

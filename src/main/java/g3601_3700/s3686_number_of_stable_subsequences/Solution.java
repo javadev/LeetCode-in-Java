@@ -1,6 +1,6 @@
 package g3601_3700.s3686_number_of_stable_subsequences;
 
-// #Hard #Weekly_Contest_467 #2025_09_14_Time_10_ms_(100.00%)_Space_60.00_MB_(100.00%)
+// #Hard #Weekly_Contest_467 #2025_09_20_Time_9_ms_(99.94%)_Space_59.73_MB_(89.70%)
 
 public class Solution {
     private static final long MOD = 1000000007L;

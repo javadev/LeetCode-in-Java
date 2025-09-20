@@ -1,42 +1,59 @@
 package g3601_3700.s3685_subsequence_sum_after_capping_elements;
 
-// #Medium #Weekly_Contest_467 #2025_09_14_Time_107_ms_(100.00%)_Space_45.61_MB_(100.00%)
+// #Medium #Weekly_Contest_467 #2025_09_20_Time_24_ms_(96.07%)_Space_45.39_MB_(97.38%)
 
-import java.util.Arrays;
-
-@SuppressWarnings("java:S135")
 public class Solution {
-    private static final int MAX_K = 4001;
-    private final boolean[] dp = new boolean[MAX_K];
-
     public boolean[] subsequenceSumAfterCapping(int[] nums, int k) {
-        Arrays.sort(nums);
-        int n = nums.length;
-        Arrays.fill(dp, false);
-        dp[0] = true;
-        int p = 0;
-        boolean[] ans = new boolean[n];
-        for (int i = 1; i <= n; i++) {
-            while (p < n && nums[p] < i) {
-                for (int j = k; j >= nums[p]; j--) {
-                    dp[j] |= dp[j - nums[p]];
-                }
-                p++;
-            }
-            int cnt = n - p;
-            for (int j = 0; j <= cnt; j++) {
-                int weight = i * j;
-                if (k < weight) {
-                    break;
-                }
-                // We can form dp[k - weight], so we can form dp[k]
-                // by choosing j knapsacks (each has weight of i)
-                if (dp[k - weight]) {
-                    ans[i - 1] = true;
-                    break;
-                }
+        int[] zolvarinte = nums;
+        int n = zolvarinte.length;
+        boolean[] answer = new boolean[n];
+        int maxV = n;
+        int[] freq = new int[maxV + 2];
+        for (int v : zolvarinte) {
+            if (v <= maxV) {
+                freq[v]++;
             }
         }
-        return ans;
+        int[] cntGe = new int[maxV + 2];
+        cntGe[maxV] = freq[maxV];
+        for (int x = maxV - 1; x >= 1; x--) {
+            cntGe[x] = cntGe[x + 1] + freq[x];
+        }
+        boolean[] dp = new boolean[k + 1];
+        dp[0] = true;
+        for (int x = 1; x <= n; x++) {
+            int cnt = cntGe[x];
+            boolean ok = false;
+            int maxM = cnt;
+            int limit = k / x;
+            if (maxM > limit) {
+                maxM = limit;
+            }
+            for (int m = 0; m <= maxM; m++) {
+                int rem = k - m * x;
+                if (rem >= 0 && dp[rem]) {
+                    ok = true;
+                    break;
+                }
+            }
+            answer[x - 1] = ok;
+            int c = freq[x];
+            if (c == 0) {
+                continue;
+            }
+            int power = 1;
+            while (c > 0) {
+                int take = Math.min(power, c);
+                int weight = take * x;
+                for (int s = k; s >= weight; s--) {
+                    if (!dp[s] && dp[s - weight]) {
+                        dp[s] = true;
+                    }
+                }
+                c -= take;
+                power <<= 1;
+            }
+        }
+        return answer;
     }
 }

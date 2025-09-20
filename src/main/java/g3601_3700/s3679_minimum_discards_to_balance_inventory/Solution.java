@@ -1,30 +1,29 @@
 package g3601_3700.s3679_minimum_discards_to_balance_inventory;
 
-// #Medium #Biweekly_Contest_165 #2025_09_14_Time_30_ms_(100.00%)_Space_61.57_MB_(100.00%)
-
-import java.util.HashMap;
-import java.util.Map;
+// #Medium #Biweekly_Contest_165 #2025_09_20_Time_2_ms_(100.00%)_Space_60.72_MB_(75.43%)
 
 public class Solution {
     public int minArrivalsToDiscard(int[] arrivals, int w, int m) {
         int n = arrivals.length;
-        if (n == 0) {
-            return 0;
-        }
-        Map<Integer, Integer> map = new HashMap<>();
-        int[] kept = new int[n];
         int dis = 0;
+        boolean[] removed = new boolean[n];
+        int maxVal = 0;
+        for (int v : arrivals) {
+            maxVal = Math.max(maxVal, v);
+        }
+        int[] freq = new int[maxVal + 1];
         for (int i = 0; i < n; i++) {
-            int idx = i - w;
-            if (idx >= 0 && kept[idx] == 1) {
-                map.put(arrivals[idx], map.get(arrivals[idx]) - 1);
+            int outIdx = i - w;
+            if (outIdx >= 0 && !removed[outIdx]) {
+                int oldVal = arrivals[outIdx];
+                freq[oldVal]--;
             }
-            int t = arrivals[i];
-            if (map.getOrDefault(t, 0) < m) {
-                kept[i] = 1;
-                map.put(t, map.getOrDefault(t, 0) + 1);
-            } else {
+            int val = arrivals[i];
+            if (freq[val] >= m) {
                 dis++;
+                removed[i] = true;
+            } else {
+                freq[val]++;
             }
         }
         return dis;
