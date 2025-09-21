@@ -13,10 +13,6 @@ public class Solution {
         public SparseTableOp(int[] arr, IntBinaryOperator op) {
             this.op = op;
             int n = arr.length;
-            if (n == 0) {
-                this.table = new int[0][0];
-                return;
-            }
             int maxLog = 31 - Integer.numberOfLeadingZeros(n);
             this.table = new int[n][maxLog + 1];
             for (int i = 0; i < n; i++) {
@@ -30,10 +26,6 @@ public class Solution {
         }
 
         public int query(int left, int right) {
-            if (left > right) {
-                throw new IllegalArgumentException(
-                        "Left index must not be greater than right index.");
-            }
             int length = right - left + 1;
             int k = 31 - Integer.numberOfLeadingZeros(length);
             return op.applyAsInt(table[left][k], table[right - (1 << k) + 1][k]);
@@ -45,7 +37,6 @@ public class Solution {
         if (n == 0 || k == 0) {
             return 0;
         }
-        // Create sparse tables for O(1) min and max range queries
         SparseTableOp smin = new SparseTableOp(nums, Math::min);
         SparseTableOp smax = new SparseTableOp(nums, Math::max);
         PriorityQueue<long[]> pq = new PriorityQueue<>((a, b) -> Long.compare(b[0], a[0]));
