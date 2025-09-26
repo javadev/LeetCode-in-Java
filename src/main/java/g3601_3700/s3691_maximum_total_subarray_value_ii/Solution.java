@@ -1,64 +1,64 @@
 package g3601_3700.s3691_maximum_total_subarray_value_ii;
 
-// #Hard #Weekly_Contest_468 #2025_09_21_Time_200_ms_(100.00%)_Space_68.71_MB_(100.00%)
+// #Hard #Array #Greedy #Heap_Priority_Queue #Segment_Tree #Weekly_Contest_468
+// #2025_09_26_Time_89_ms_(80.08%)_Space_81.62_MB_(23.69%)
 
 import java.util.PriorityQueue;
-import java.util.function.IntBinaryOperator;
 
 public class Solution {
-    private static class SparseTableOp {
-        private final int[][] table;
-        private final IntBinaryOperator op;
+    private static class Sparse {
+        long[][] mn;
+        long[][] mx;
+        int[] log;
 
-        public SparseTableOp(int[] arr, IntBinaryOperator op) {
-            this.op = op;
-            int n = arr.length;
-            int maxLog = 31 - Integer.numberOfLeadingZeros(n);
-            this.table = new int[n][maxLog + 1];
-            for (int i = 0; i < n; i++) {
-                table[i][0] = arr[i];
+        Sparse(int[] a) {
+            int n = a.length;
+            int zerosN = 32 - Integer.numberOfLeadingZeros(n);
+            mn = new long[zerosN][n];
+            mx = new long[zerosN][n];
+            log = new int[n + 1];
+            for (int i = 2; i <= n; i++) {
+                log[i] = log[i / 2] + 1;
             }
-            for (int j = 1; j <= maxLog; j++) {
-                for (int i = 0; i + (1 << j) <= n; i++) {
-                    table[i][j] = op.applyAsInt(table[i][j - 1], table[i + (1 << (j - 1))][j - 1]);
+            for (int i = 0; i < n; i++) {
+                mn[0][i] = mx[0][i] = a[i];
+            }
+            for (int k = 1; k < zerosN; k++) {
+                for (int i = 0; i + (1 << k) <= n; i++) {
+                    mn[k][i] = Math.min(mn[k - 1][i], mn[k - 1][i + (1 << (k - 1))]);
+                    mx[k][i] = Math.max(mx[k - 1][i], mx[k - 1][i + (1 << (k - 1))]);
                 }
             }
         }
 
-        public int query(int left, int right) {
-            int length = right - left + 1;
-            int k = 31 - Integer.numberOfLeadingZeros(length);
-            return op.applyAsInt(table[left][k], table[right - (1 << k) + 1][k]);
+        long getMin(int l, int r) {
+            int k = log[r - l + 1];
+            return Math.min(mn[k][l], mn[k][r - (1 << k) + 1]);
+        }
+
+        long getMax(int l, int r) {
+            int k = log[r - l + 1];
+            return Math.max(mx[k][l], mx[k][r - (1 << k) + 1]);
         }
     }
 
     public long maxTotalValue(int[] nums, int k) {
         int n = nums.length;
-        if (n == 0 || k == 0) {
-            return 0;
-        }
-        SparseTableOp smin = new SparseTableOp(nums, Math::min);
-        SparseTableOp smax = new SparseTableOp(nums, Math::max);
+        Sparse st = new Sparse(nums);
         PriorityQueue<long[]> pq = new PriorityQueue<>((a, b) -> Long.compare(b[0], a[0]));
         for (int i = 0; i < n; i++) {
-            long value = (long) smax.query(i, n - 1) - smin.query(i, n - 1);
-            pq.offer(new long[] {value, i, n - 1});
+            pq.add(new long[] {st.getMax(i, n - 1) - st.getMin(i, n - 1), i, n - 1});
         }
-        long totalValue = 0;
-        for (int i = 0; i < k; i++) {
-            if (pq.isEmpty()) {
-                break;
-            }
-            long[] top = pq.poll();
-            long value = top[0];
-            int start = (int) top[1];
-            int end = (int) top[2];
-            totalValue += value;
-            if (end > start) {
-                long nextValue = (long) smax.query(start, end - 1) - smin.query(start, end - 1);
-                pq.offer(new long[] {nextValue, start, end - 1});
+        long ans = 0;
+        while (k-- > 0 && !pq.isEmpty()) {
+            var cur = pq.poll();
+            ans += cur[0];
+            int l = (int) cur[1];
+            int r = (int) cur[2];
+            if (r - 1 > l) {
+                pq.add(new long[] {st.getMax(l, r - 1) - st.getMin(l, r - 1), l, r - 1});
             }
         }
-        return totalValue;
+        return ans;
     }
 }

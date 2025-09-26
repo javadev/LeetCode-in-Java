@@ -1,6 +1,7 @@
 package g3601_3700.s3671_sum_of_beautiful_subsequences;
 
-// #Hard #Weekly_Contest_465 #2025_09_06_Time_233_ms_(96.31%)_Space_62.03_MB_(69.80%)
+// #Hard #Array #Math #Tree #Number_Theory #Weekly_Contest_465
+// #2025_09_26_Time_232_ms_(92.27%)_Space_56.32_MB_(82.85%)
 
 public class Solution {
     private static final int MOD = 1000000007;

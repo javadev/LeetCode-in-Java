@@ -1,6 +1,7 @@
 package g3601_3700.s3670_maximum_product_of_two_integers_with_no_common_bits;
 
-// #Medium #Weekly_Contest_465 #2025_09_06_Time_151_ms_(99.28%)_Space_64.23_MB_(47.58%)
+// #Medium #Array #Dynamic_Programming #Bit_Manipulation #Weekly_Contest_465
+// #2025_09_26_Time_159_ms_(98.86%)_Space_64.54_MB_(25.90%)
 
 public class Solution {
     public long maxProduct(int[] nums) {

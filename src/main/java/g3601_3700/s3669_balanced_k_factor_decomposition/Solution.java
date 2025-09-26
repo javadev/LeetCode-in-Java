@@ -1,6 +1,7 @@
 package g3601_3700.s3669_balanced_k_factor_decomposition;
 
-// #Medium #Weekly_Contest_465 #2025_09_06_Time_13_ms_(78.36%)_Space_45.64_MB_(10.38%)
+// #Medium #Math #Backtracking #Number_Theory #Weekly_Contest_465
+// #2025_09_26_Time_14_ms_(77.10%)_Space_45.18_MB_(43.88%)
 
 import java.util.ArrayList;
 import java.util.Collections;

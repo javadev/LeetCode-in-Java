@@ -1,6 +1,7 @@
 package g3601_3700.s3689_maximum_total_subarray_value_i;
 
-// #Medium #Weekly_Contest_468 #2025_09_21_Time_1_ms_(100.00%)_Space_55.63_MB_(100.00%)
+// #Medium #Array #Greedy #Weekly_Contest_468
+// #2025_09_26_Time_1_ms_(100.00%)_Space_55.58_MB_(71.81%)
 
 public class Solution {
     public long maxTotalValue(int[] num, int k) {

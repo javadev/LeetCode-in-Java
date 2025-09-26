@@ -1,22 +1,21 @@
 package g3601_3700.s3685_subsequence_sum_after_capping_elements;
 
-// #Medium #Weekly_Contest_467 #2025_09_20_Time_24_ms_(96.07%)_Space_45.39_MB_(97.38%)
+// #Medium #Array #Dynamic_Programming #Sorting #Two_Pointers #Weekly_Contest_467
+// #2025_09_26_Time_24_ms_(96.44%)_Space_45.98_MB_(36.73%)
 
 public class Solution {
     public boolean[] subsequenceSumAfterCapping(int[] nums, int k) {
-        int[] zolvarinte = nums;
-        int n = zolvarinte.length;
+        int n = nums.length;
         boolean[] answer = new boolean[n];
-        int maxV = n;
-        int[] freq = new int[maxV + 2];
-        for (int v : zolvarinte) {
-            if (v <= maxV) {
+        int[] freq = new int[n + 2];
+        for (int v : nums) {
+            if (v <= n) {
                 freq[v]++;
             }
         }
-        int[] cntGe = new int[maxV + 2];
-        cntGe[maxV] = freq[maxV];
-        for (int x = maxV - 1; x >= 1; x--) {
+        int[] cntGe = new int[n + 2];
+        cntGe[n] = freq[n];
+        for (int x = n - 1; x >= 1; x--) {
             cntGe[x] = cntGe[x + 1] + freq[x];
         }
         boolean[] dp = new boolean[k + 1];
