@@ -1,6 +1,7 @@
 package g3601_3700.s3665_twisted_mirror_path_count;
 
-// #Medium #Biweekly_Contest_164 #2025_09_06_Time_28_ms_(100.00%)_Space_86.70_MB_(69.78%)
+// #Medium #Array #Dynamic_Programming #Matrix #Biweekly_Contest_164
+// #2025_09_26_Time_28_ms_(99.81%)_Space_87.43_MB_(62.40%)
 
 public class Solution {
     public int uniquePaths(int[][] grid) {

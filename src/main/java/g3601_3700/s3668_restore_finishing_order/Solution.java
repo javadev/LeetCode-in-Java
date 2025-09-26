@@ -1,6 +1,7 @@
 package g3601_3700.s3668_restore_finishing_order;
 
-// #Easy #Weekly_Contest_465 #2025_09_06_Time_1_ms_(100.00%)_Space_45.18_MB_(44.72%)
+// #Easy #Array #Hash_Table #Weekly_Contest_465
+// #2025_09_26_Time_1_ms_(100.00%)_Space_44.90_MB_(92.68%)
 
 public class Solution {
     public int[] recoverOrder(int[] order, int[] friends) {

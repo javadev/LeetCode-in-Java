@@ -1,6 +1,7 @@
 package g3601_3700.s3661_maximum_walls_destroyed_by_robots;
 
-// #Hard #Weekly_Contest_464 #2025_08_29_Time_88_ms_(99.25%)_Space_68.62_MB_(40.75%)
+// #Hard #Array #Dynamic_Programming #Sorting #Binary_Search #Weekly_Contest_464
+// #2025_09_26_Time_101_ms_(91.89%)_Space_63.31_MB_(79.90%)
 
 import java.util.Arrays;
 import java.util.Comparator;

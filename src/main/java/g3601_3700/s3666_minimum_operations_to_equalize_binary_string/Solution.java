@@ -1,6 +1,7 @@
 package g3601_3700.s3666_minimum_operations_to_equalize_binary_string;
 
-// #Hard #Biweekly_Contest_164 #2025_09_06_Time_6_ms_(83.87%)_Space_45.74_MB_(64.52%)
+// #Hard #String #Hash_Table #Math #Biweekly_Contest_164 #Breadth_First_Search
+// #2025_09_26_Time_6_ms_(85.17%)_Space_45.57_MB_(88.76%)
 
 public class Solution {
     public int minOperations(String s, int k) {

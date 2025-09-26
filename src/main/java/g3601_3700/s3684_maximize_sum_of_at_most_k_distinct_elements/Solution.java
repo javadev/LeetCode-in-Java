@@ -1,6 +1,7 @@
 package g3601_3700.s3684_maximize_sum_of_at_most_k_distinct_elements;
 
-// #Easy #Weekly_Contest_467 #2025_09_20_Time_2_ms_(100.00%)_Space_45.58_MB_(68.55%)
+// #Easy #Array #Hash_Table #Sorting #Greedy #Weekly_Contest_467
+// #2025_09_26_Time_3_ms_(99.92%)_Space_45.48_MB_(84.34%)
 
 import java.util.Arrays;
 

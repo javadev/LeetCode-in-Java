@@ -1,6 +1,7 @@
 package g3601_3700.s3651_minimum_cost_path_with_teleportations;
 
-// #Hard #Biweekly_Contest_163 #2025_08_17_Time_78_ms_(100.00%)_Space_45.52_MB_(97.73%)
+// #Hard #Array #Dynamic_Programming #Matrix #Biweekly_Contest_163
+// #2025_09_26_Time_79_ms_(94.66%)_Space_45.38_MB_(97.96%)
 
 import java.util.Arrays;
 
@@ -60,7 +61,6 @@ public class Solution {
                     prev[grid[i][j]] = Math.min(prev[grid[i][j]], dp[i][j]);
                 }
             }
-            // int currcost = prev[0];
             for (int i = 1; i <= max; i++) {
                 prev[i] = Math.min(prev[i], prev[i - 1]);
             }
