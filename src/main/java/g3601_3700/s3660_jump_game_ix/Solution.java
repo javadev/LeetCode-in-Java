@@ -1,6 +1,7 @@
 package g3601_3700.s3660_jump_game_ix;
 
-// #Medium #Weekly_Contest_464 #2025_08_29_Time_3_ms_(100.00%)_Space_66.47_MB_(70.03%)
+// #Medium #Array #Dynamic_Programming #Weekly_Contest_464
+// #2025_09_26_Time_4_ms_(98.97%)_Space_70.98_MB_(7.99%)
 
 public class Solution {
     public int[] maxValue(int[] nums) {

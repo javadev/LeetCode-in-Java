@@ -1,6 +1,7 @@
 package g3601_3700.s3649_number_of_perfect_pairs;
 
-// #Medium #Biweekly_Contest_163 #2025_08_17_Time_46_ms_(100.00%)_Space_60.00_MB_(100.00%)
+// #Medium #Array #Math #Sorting #Two_Pointers #Biweekly_Contest_163
+// #2025_09_26_Time_44_ms_(71.88%)_Space_59.91_MB_(26.12%)
 
 import java.util.Arrays;
 
