@@ -2,7 +2,7 @@ package g3601_3700.s3693_climbing_stairs_ii;
 
 // #Medium #Biweekly_Contest_166 #2025_09_28_Time_2_ms_(100.00%)_Space_57.06_MB_(100.00%)
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused", "java:S1172"})
 public class Solution {
     public int climbStairs(int n, int[] costs) {
         if (costs.length == 1) {

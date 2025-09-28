@@ -59,6 +59,7 @@ public class Solution {
         if (a == root[a]) {
             return a;
         }
-        return root[a] = findRoot(root[a]);
+        root[a] = findRoot(root[a]);
+        return root[a];
     }
 }
