@@ -7,7 +7,7 @@ public class Solution {
         int i = 1;
         int n = nums.length;
         long suml = nums[0];
-        long sumr = 0;
+        long sumr;
         while (i < n && nums[i] > nums[i - 1]) {
             suml += nums[i];
             i++;
@@ -28,10 +28,10 @@ public class Solution {
         if (suml <= sumr) {
             return sumr - suml;
         } else {
-            if (suml - sumr - 2 * pivot > 0) {
-                return suml - sumr - 2 * pivot;
+            if (suml - sumr - 2L * pivot > 0) {
+                return suml - sumr - 2L * pivot;
             } else {
-                return Math.min(suml - sumr, Math.abs(suml - sumr - 2 * pivot));
+                return Math.min(suml - sumr, Math.abs(suml - sumr - 2L * pivot));
             }
         }
     }
