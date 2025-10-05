@@ -16,7 +16,6 @@ public class Solution {
             digits[i] = (int) (c % 10);
             c = c / 10;
         }
-
         long total = 0;
         long[] extra = {1, 0};
         base = 1;
