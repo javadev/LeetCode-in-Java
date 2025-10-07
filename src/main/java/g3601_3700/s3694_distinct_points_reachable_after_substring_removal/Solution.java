@@ -1,6 +1,7 @@
 package g3601_3700.s3694_distinct_points_reachable_after_substring_removal;
 
-// #Medium #Biweekly_Contest_166 #2025_09_28_Time_37_ms_(100.00%)_Space_46.42_MB_(100.00%)
+// #Medium #String #Hash_Table #Prefix_Sum #Sliding_Window #Biweekly_Contest_166
+// #2025_10_07_Time_38_ms_(97.74%)_Space_46.84_MB_(98.59%)
 
 import java.util.HashSet;
 import java.util.Set;

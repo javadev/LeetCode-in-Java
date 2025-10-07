@@ -1,6 +1,7 @@
 package g3601_3700.s3699_number_of_zigzag_arrays_i;
 
-// #Hard #Weekly_Contest_469 #2025_09_28_Time_198_ms_(99.77%)_Space_43.67_MB_(99.32%)
+// #Hard #Dynamic_Programming #Prefix_Sum #Weekly_Contest_469
+// #2025_10_07_Time_197_ms_(97.34%)_Space_43.41_MB_(92.35%)
 
 import java.util.Arrays;
 

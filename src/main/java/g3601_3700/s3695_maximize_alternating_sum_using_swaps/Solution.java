@@ -1,6 +1,7 @@
 package g3601_3700.s3695_maximize_alternating_sum_using_swaps;
 
-// #Hard #Biweekly_Contest_166 #2025_09_28_Time_27_ms_(99.82%)_Space_106.96_MB_(100.00%)
+// #Hard #Array #Sorting #Greedy #Union_Find #Biweekly_Contest_166
+// #2025_10_07_Time_29_ms_(99.13%)_Space_106.44_MB_(52.69%)
 
 import java.util.ArrayList;
 import java.util.List;

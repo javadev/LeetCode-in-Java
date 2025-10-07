@@ -1,6 +1,7 @@
 package g3601_3700.s3693_climbing_stairs_ii;
 
-// #Medium #Biweekly_Contest_166 #2025_09_28_Time_2_ms_(100.00%)_Space_57.06_MB_(100.00%)
+// #Medium #Array #Dynamic_Programming #Biweekly_Contest_166
+// #2025_10_07_Time_3_ms_(99.74%)_Space_58.06_MB_(96.52%)
 
 @SuppressWarnings({"unused", "java:S1172"})
 public class Solution {
