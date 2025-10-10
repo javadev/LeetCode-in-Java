@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# #Medium #Database #2025_10_10_Time_279_ms_(74.02%)_Space_0.0_MB_(100.00%)
+# #Medium #Database #2025_10_10_Time_281_ms_(71.26%)_Space_0.0_MB_(100.00%)
 SELECT
   customer_id,
   COUNT(order_id) AS total_orders,
