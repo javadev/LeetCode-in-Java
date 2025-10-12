@@ -5,11 +5,10 @@ package g3701_3800.s3709_design_exam_scores_tracker;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("java:S6213")
 public class ExamTracker {
     List<Integer> arr = new ArrayList<>();
     List<Long> psum = new ArrayList<>();
-
-    public ExamTracker() {}
 
     public void record(int time, int score) {
         arr.add(time);
