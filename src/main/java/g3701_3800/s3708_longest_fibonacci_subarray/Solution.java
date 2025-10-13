@@ -1,6 +1,6 @@
 package g3701_3800.s3708_longest_fibonacci_subarray;
 
-// #Medium #Biweekly_Contest_167 #2025_10_12_Time_2_ms_(100.00%)_Space_58.15_MB_(100.00%)
+// #Medium #Biweekly_Contest_167 #2025_10_13_Time_1_ms_(100.00%)_Space_58.20_MB_(81.69%)
 
 public class Solution {
     public int longestSubarray(int[] nums) {

@@ -1,6 +1,6 @@
 package g3701_3800.s3710_maximum_partition_factor;
 
-// #Hard #Biweekly_Contest_167 #2025_10_12_Time_304_ms_(50.00%)_Space_55.99_MB_(50.00%)
+// #Hard #Biweekly_Contest_167 #2025_10_13_Time_305_ms_(50.00%)_Space_55.41_MB_(49.74%)
 
 import java.util.ArrayList;
 import java.util.Comparator;

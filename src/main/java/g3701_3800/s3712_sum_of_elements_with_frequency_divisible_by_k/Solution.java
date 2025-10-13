@@ -1,22 +1,23 @@
 package g3701_3800.s3712_sum_of_elements_with_frequency_divisible_by_k;
 
-// #Easy #Weekly_Contest_471 #2025_10_12_Time_3_ms_(_%)_Space_43.23_MB_(_%)
-
-import java.util.HashMap;
-import java.util.Map;
+// #Easy #Weekly_Contest_471 #2025_10_13_Time_1_ms_(99.96%)_Space_42.21_MB_(100.00%)
 
 public class Solution {
     public int sumDivisibleByK(int[] nums, int k) {
-        Map<Integer, Integer> mp = new HashMap<>();
-        for (int i : nums) {
-            mp.put(i, mp.getOrDefault(i, 0) + 1);
+        int max = 0;
+        int sum = 0;
+        for (int num : nums) {
+            max = Math.max(num, max);
         }
-        int ans = 0;
-        for (Map.Entry<Integer, Integer> e : mp.entrySet()) {
-            if (e.getValue() % k == 0) {
-                ans += e.getKey() * e.getValue();
+        int[] cnt = new int[max + 1];
+        for (int num : nums) {
+            cnt[num]++;
+        }
+        for (int i = 1; i < cnt.length; i++) {
+            if (cnt[i] != 0 && cnt[i] % k == 0) {
+                sum += i * cnt[i];
             }
         }
-        return ans;
+        return sum;
     }
 }

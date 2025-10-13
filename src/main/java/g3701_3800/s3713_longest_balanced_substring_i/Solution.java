@@ -1,6 +1,6 @@
 package g3701_3800.s3713_longest_balanced_substring_i;
 
-// #Medium #Weekly_Contest_471 #2025_10_12_Time_32_ms_(100.00%)_Space_45.70_MB_(50.00%)
+// #Medium #Weekly_Contest_471 #2025_10_13_Time_34_ms_(99.73%)_Space_45.52_MB_(50.00%)
 
 public class Solution {
     public int longestBalanced(String s) {

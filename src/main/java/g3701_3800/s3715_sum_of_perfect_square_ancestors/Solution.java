@@ -1,6 +1,6 @@
 package g3701_3800.s3715_sum_of_perfect_square_ancestors;
 
-// #Hard #Weekly_Contest_471 #2025_10_12_Time_234_ms_(100.00%)_Space_113.24_MB_(100.00%)
+// #Hard #Weekly_Contest_471 #2025_10_13_Time_134_ms_(95.90%)_Space_122.89_MB_(100.00%)
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,58 +8,76 @@ import java.util.List;
 import java.util.Map;
 
 public class Solution {
+    private static final int MAX = 100000;
+    // smallest prime factor
+    private static final int[] SPF = new int[MAX + 1];
+
+    // Precompute smallest prime factors for fast factorization
+    static {
+        for (int i = 2; i <= MAX; i++) {
+            if (SPF[i] == 0) {
+                for (int j = i; j <= MAX; j += i) {
+                    if (SPF[j] == 0) {
+                        SPF[j] = i;
+                    }
+                }
+            }
+        }
+    }
+
     public long sumOfAncestors(int n, int[][] edges, int[] nums) {
-        List<List<Integer>> g = new ArrayList<>();
+        // Build adjacency list
+        List<List<Integer>> adj = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            g.add(new ArrayList<>());
+            adj.add(new ArrayList<>());
         }
         for (int[] e : edges) {
-            g.get(e[0]).add(e[1]);
-            g.get(e[1]).add(e[0]);
+            adj.get(e[0]).add(e[1]);
+            adj.get(e[1]).add(e[0]);
         }
-        long[] k = new long[n];
-        for (int i = 0; i < n; i++) {
-            k[i] = kernel(nums[i]);
-        }
-        Map<Long, Integer> freq = new HashMap<>();
-        long[] ans = new long[1];
-        dfs(0, -1, g, k, freq, ans);
-        return ans[0];
+        // Map to count kernel frequencies along DFS path
+        // kernel fits in int (<= nums[i])
+        Map<Integer, Integer> freq = new HashMap<>();
+        long total = 0L;
+        total += dfs(0, -1, adj, nums, freq);
+        return total;
     }
 
-    private long kernel(long x) {
-        long res = 1;
-        for (long p = 2; p * p <= x; p++) {
-            int odd = 0;
+    private long dfs(
+            int node, int parent, List<List<Integer>> adj, int[] nums, Map<Integer, Integer> freq) {
+        // kernel <= nums[node] <= 1e5 fits int
+        int key = (int) getKernel(nums[node]);
+        int count = freq.getOrDefault(key, 0);
+        long sum = count;
+        freq.put(key, count + 1);
+        for (int nei : adj.get(node)) {
+            if (nei != parent) {
+                sum += dfs(nei, node, adj, nums, freq);
+            }
+        }
+        if (count == 0) {
+            freq.remove(key);
+        } else {
+            freq.put(key, count);
+        }
+        return sum;
+    }
+
+    // Compute square-free kernel using prime factorization parity
+    private long getKernel(int x) {
+        long key = 1;
+        while (x > 1) {
+            int p = SPF[x];
+            int c = 0;
             while (x % p == 0) {
                 x /= p;
-                odd ^= 1;
+                // toggle parity
+                c ^= 1;
             }
-            if (odd == 1) {
-                res *= p;
-            }
-        }
-        if (x > 1) {
-            res *= x;
-        }
-        return res;
-    }
-
-    private void dfs(
-            int u, int p, List<List<Integer>> g, long[] k, Map<Long, Integer> freq, long[] ans) {
-        long ku = k[u];
-        ans[0] += freq.getOrDefault(ku, 0);
-        freq.put(ku, freq.getOrDefault(ku, 0) + 1);
-        for (int v : g.get(u)) {
-            if (v != p) {
-                dfs(v, u, g, k, freq, ans);
+            if (c == 1) {
+                key *= p;
             }
         }
-        int left = freq.get(ku) - 1;
-        if (left == 0) {
-            freq.remove(ku);
-        } else {
-            freq.put(ku, left);
-        }
+        return key;
     }
 }
