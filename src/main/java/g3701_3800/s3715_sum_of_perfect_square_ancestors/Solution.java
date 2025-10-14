@@ -1,6 +1,7 @@
 package g3701_3800.s3715_sum_of_perfect_square_ancestors;
 
-// #Hard #Weekly_Contest_471 #2025_10_13_Time_134_ms_(95.90%)_Space_122.89_MB_(100.00%)
+// #Hard #Array #Hash_Table #Math #Tree #Counting #Number_Theory #Depth_First_Search
+// #Weekly_Contest_471 #2025_10_14_Time_122_ms_(98.09%)_Space_123.31_MB_(49.05%)
 
 import java.util.ArrayList;
 import java.util.HashMap;

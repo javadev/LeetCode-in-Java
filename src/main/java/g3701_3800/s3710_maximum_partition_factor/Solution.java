@@ -1,76 +1,70 @@
 package g3701_3800.s3710_maximum_partition_factor;
 
-// #Hard #Biweekly_Contest_167 #2025_10_13_Time_305_ms_(50.00%)_Space_55.41_MB_(49.74%)
+// #Hard #Array #Binary_Search #Graph #Union_Find #Biweekly_Contest_167 #Depth_First_Search
+// #Breadth_First_Search #2025_10_14_Time_46_ms_(99.31%)_Space_45.31_MB_(84.72%)
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.Arrays;
 
 public class Solution {
-    public int maxPartitionFactor(int[][] arr) {
-        int n = arr.length;
+    public int maxPartitionFactor(int[][] points) {
+        int n = points.length;
         if (n == 2) {
             return 0;
         }
-        // Step 1: Create list of (distance, i, j)
-        List<int[]> edges = new ArrayList<>();
+        int[][] dist = new int[n][n];
+        int maxDist = 0;
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-                int d = Math.abs(arr[i][0] - arr[j][0]) + Math.abs(arr[i][1] - arr[j][1]);
-                edges.add(new int[] {d, i, j});
+                int d =
+                        Math.abs(points[i][0] - points[j][0])
+                                + Math.abs(points[i][1] - points[j][1]);
+                dist[i][j] = dist[j][i] = d;
+                if (d > maxDist) {
+                    maxDist = d;
+                }
             }
         }
-        // Step 2: Sort by distance
-        edges.sort(Comparator.comparingInt(a -> a[0]));
-        // Step 3: Union-Find setup
-        int[] parent = new int[n];
-        int[] weight = new int[n];
+        int low = 0;
+        int high = maxDist;
+        while (low < high) {
+            int mid = low + (high - low + 1) / 2;
+            if (isFeasible(dist, mid)) {
+                low = mid;
+            } else {
+                high = mid - 1;
+            }
+        }
+        return low;
+    }
+
+    private boolean isFeasible(int[][] dist, int t) {
+        int n = dist.length;
+        int[] color = new int[n];
+        Arrays.fill(color, -1);
+        int[] queue = new int[n];
         for (int i = 0; i < n; i++) {
-            parent[i] = i;
-            weight[i] = 1;
-        }
-        Map<Integer, Integer> opp = new HashMap<>();
-        // Step 4: Process edges
-        for (int[] e : edges) {
-            int d = e[0];
-            int i = e[1];
-            int j = e[2];
-            if (find(i, parent) == find(j, parent)) {
-                return d;
+            if (color[i] != -1) {
+                continue;
             }
-            if (opp.containsKey(i)) {
-                union(opp.get(i), j, parent, weight);
+            int head = 0;
+            int tail = 0;
+            queue[tail++] = i;
+            color[i] = 0;
+            while (head < tail) {
+                int u = queue[head++];
+                for (int v = 0; v < n; v++) {
+                    if (u == v || dist[u][v] >= t) {
+                        continue;
+                    }
+                    if (color[v] == -1) {
+                        color[v] = color[u] ^ 1;
+                        queue[tail++] = v;
+                    } else if (color[v] == color[u]) {
+                        return false;
+                    }
+                }
             }
-            if (opp.containsKey(j)) {
-                union(opp.get(j), i, parent, weight);
-            }
-            opp.put(i, j);
-            opp.put(j, i);
         }
-        return edges.get(edges.size() - 1)[0];
-    }
-
-    private int find(int a, int[] parent) {
-        if (parent[a] != a) {
-            parent[a] = find(parent[a], parent);
-        }
-        return parent[a];
-    }
-
-    private void union(int x, int y, int[] parent, int[] weight) {
-        x = find(x, parent);
-        y = find(y, parent);
-        if (x == y) {
-            return;
-        }
-        if (weight[x] < weight[y]) {
-            int temp = x;
-            x = y;
-            y = temp;
-        }
-        weight[y] += weight[x];
-        parent[x] = y;
+        return true;
     }
 }

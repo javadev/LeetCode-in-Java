@@ -1,92 +1,144 @@
 package g3701_3800.s3714_longest_balanced_substring_ii;
 
-// #Medium #Weekly_Contest_471 #2025_10_13_Time_196_ms_(98.70%)_Space_60.59_MB_(100.00%)
+// #Medium #String #Hash_Table #Prefix_Sum #Weekly_Contest_471
+// #2025_10_14_Time_208_ms_(97.43%)_Space_63.96_MB_(74.30%)
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
+    private static final char[] CHARS = {'a', 'b', 'c'};
+    private static final long OFFSET = 100001L;
+    private static final long MULTIPLIER = 200003L;
+
     public int longestBalanced(String s) {
-        int n = s.length();
-        int max1 = 1;
-        int curr = 1;
-        for (int i = 1; i < n; i++) {
+        if (s == null || s.isEmpty()) {
+            return 0;
+        }
+        int maxSameChar = findLongestSameCharSequence(s);
+        int maxTwoChars = findLongestTwoCharBalanced(s);
+        int maxThreeChars = findLongestThreeCharBalanced(s);
+        return Math.max(maxSameChar, Math.max(maxTwoChars, maxThreeChars));
+    }
+
+    private int findLongestSameCharSequence(String s) {
+        int maxLength = 1;
+        int currentLength = 1;
+        for (int i = 1; i < s.length(); i++) {
             if (s.charAt(i) == s.charAt(i - 1)) {
-                curr++;
+                currentLength++;
             } else {
-                max1 = Math.max(max1, curr);
-                curr = 1;
+                maxLength = Math.max(maxLength, currentLength);
+                currentLength = 1;
             }
         }
-        max1 = Math.max(max1, curr);
-        int max2 = 0;
-        char[] chars = {'a', 'b', 'c'};
-        for (int p = 0; p < 3; p++) {
-            char x = chars[p];
-            char y = chars[(p + 1) % 3];
-            char z = chars[(p + 2) % 3];
-            int ii = 0;
-            while (ii < n) {
-                if (s.charAt(ii) == z) {
-                    ii++;
-                    continue;
-                }
-                int start = ii;
-                while (ii < n && s.charAt(ii) != z) {
-                    ii++;
-                }
-                int endd = ii;
-                int lenSeg = endd - start;
-                if (lenSeg < 2) {
-                    continue;
-                }
-                HashMap<Integer, Integer> map2 = new HashMap<>();
-                int diff = 0;
-                map2.put(0, 0);
-                for (int j = start; j < endd; j++) {
-                    char ch = s.charAt(j);
-                    if (ch == x) {
-                        diff += 1;
-                    } else if (ch == y) {
-                        diff -= 1;
-                    }
-                    int localPos = j - start + 1;
-                    Integer prevv = map2.get(diff);
-                    if (prevv != null) {
-                        max2 = Math.max(max2, localPos - prevv);
-                    }
-                    if (!map2.containsKey(diff)) {
-                        map2.put(diff, localPos);
-                    }
-                }
+        return Math.max(maxLength, currentLength);
+    }
+
+    private int findLongestTwoCharBalanced(String s) {
+        int maxLength = 0;
+        for (int p = 0; p < CHARS.length; p++) {
+            char firstChar = CHARS[p];
+            char secondChar = CHARS[(p + 1) % CHARS.length];
+            char excludedChar = CHARS[(p + 2) % CHARS.length];
+            maxLength =
+                    Math.max(
+                            maxLength,
+                            findBalancedInSegments(s, firstChar, secondChar, excludedChar));
+        }
+        return maxLength;
+    }
+
+    private int findBalancedInSegments(
+            String s, char firstChar, char secondChar, char excludedChar) {
+        int maxLength = 0;
+        int index = 0;
+        while (index < s.length()) {
+            if (s.charAt(index) == excludedChar) {
+                index++;
+                continue;
+            }
+            int segmentStart = index;
+            while (index < s.length() && s.charAt(index) != excludedChar) {
+                index++;
+            }
+            int segmentEnd = index;
+            if (segmentEnd - segmentStart >= 2) {
+                maxLength =
+                        Math.max(
+                                maxLength,
+                                findBalancedInRange(
+                                        s, segmentStart, segmentEnd, firstChar, secondChar));
             }
         }
-        int max3 = 0;
-        HashMap<Long, Integer> map3 = new HashMap<>();
-        int d1 = 0;
-        int d2 = 0;
-        long offset = 100001L;
-        long mult = 200003L;
-        long keyy = (d1 + offset) * mult + (d2 + offset);
-        map3.put(keyy, 0);
-        for (int i = 1; i <= n; i++) {
-            char ch = s.charAt(i - 1);
-            if (ch == 'a') {
-                d1 += 1;
-                d2 += 1;
-            } else if (ch == 'b') {
-                d1 -= 1;
-            } else if (ch == 'c') {
-                d2 -= 1;
+        return maxLength;
+    }
+
+    private int findBalancedInRange(String s, int start, int end, char firstChar, char secondChar) {
+        Map<Integer, Integer> differenceMap = new HashMap<>();
+        differenceMap.put(0, 0);
+
+        int difference = 0;
+        int maxLength = 0;
+
+        for (int i = start; i < end; i++) {
+            char currentChar = s.charAt(i);
+
+            if (currentChar == firstChar) {
+                difference++;
+            } else if (currentChar == secondChar) {
+                difference--;
             }
-            keyy = (d1 + offset) * mult + (d2 + offset);
-            Integer prev = map3.get(keyy);
-            if (prev != null) {
-                max3 = Math.max(max3, i - prev);
-            }
-            if (!map3.containsKey(keyy)) {
-                map3.put(keyy, i);
+
+            int position = i - start + 1;
+
+            if (differenceMap.containsKey(difference)) {
+                maxLength = Math.max(maxLength, position - differenceMap.get(difference));
+            } else {
+                differenceMap.put(difference, position);
             }
         }
-        return Math.max(max1, Math.max(max2, max3));
+        return maxLength;
+    }
+
+    private int findLongestThreeCharBalanced(String s) {
+        Map<Long, Integer> stateMap = new HashMap<>();
+        int diff1 = 0;
+        int diff2 = 0;
+        stateMap.put(encodeState(diff1, diff2), 0);
+        int maxLength = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char currentChar = s.charAt(i);
+
+            switch (currentChar) {
+                case 'a':
+                    diff1++;
+                    diff2++;
+                    break;
+                case 'b':
+                    diff1--;
+                    break;
+                case 'c':
+                    diff2--;
+                    break;
+                default:
+                    break;
+            }
+
+            long stateKey = encodeState(diff1, diff2);
+
+            if (stateMap.containsKey(stateKey)) {
+                maxLength = Math.max(maxLength, (i + 1) - stateMap.get(stateKey));
+            } else {
+                stateMap.put(stateKey, i + 1);
+            }
+        }
+
+        return maxLength;
+    }
+
+    /** Encodes two differences into a single long key for HashMap. */
+    private long encodeState(int diff1, int diff2) {
+        return (diff1 + OFFSET) * MULTIPLIER + (diff2 + OFFSET);
     }
 }
