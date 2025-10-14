@@ -19,7 +19,7 @@ public class ExamTracker {
     public void record(int time, int score) {
         ti.add(time);
         long pv = pr.isEmpty() ? 0L : pr.get(pr.size() - 1);
-        pr.add(pv + (long) score);
+        pr.add(pv + score);
     }
 
     public long totalScore(int startTime, int endTime) {
