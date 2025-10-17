@@ -36,7 +36,7 @@ function memoize(fn: Fn): Fn {
 
         let value = fn(...args)
 
-        currentCache.set(args[args.length - 1], value)
+        currentCache.set(args[args.length - 1], value) //NOSONAR
         return value
     }
 }

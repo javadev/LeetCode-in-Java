@@ -24,4 +24,4 @@ Array.prototype.snail = function (rowsCount: number, colsCount: number): number[
  * arr.snail(1,4); // [[1,2,3,4]]
  */
 
-export {}
+export {} //NOSONAR
