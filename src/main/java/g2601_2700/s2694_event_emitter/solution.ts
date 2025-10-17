@@ -32,7 +32,7 @@ class EventEmitter {
 
     emit(eventName: string, args: any[] = []): any[] {
         const res = []
-        this.eventMap.get(eventName)?.forEach((cb) => res.push(cb(...args)))
+        this.eventMap.get(eventName)?.forEach((cb) => res.push(cb(...args))) //NOSONAR
         return res
     }
 }

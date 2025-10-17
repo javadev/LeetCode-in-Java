@@ -23,4 +23,4 @@ Array.prototype.groupBy = function <T>(fn: (item: T) => string) { //NOSONAR
  * [1,2,3].groupBy(String) // {"1":[1],"2":[2],"3":[3]}
  */
 
-export {}
+export {} //NOSONAR

@@ -7,7 +7,7 @@ declare global {
 }
 
 Array.prototype.last = function () { //NOSONAR
-    return this.length !== 0 ? this[this.length - 1] : -1
+    return this.length !== 0 ? this[this.length - 1] : -1 //NOSONAR
 }
 
 /*
@@ -15,4 +15,4 @@ Array.prototype.last = function () { //NOSONAR
  * arr.last(); // 3
  */
 
-export {}
+export {} //NOSONAR

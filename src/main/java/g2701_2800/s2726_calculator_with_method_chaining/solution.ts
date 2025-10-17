@@ -23,7 +23,7 @@ class Calculator {
     }
 
     divide(value: number): Calculator { //NOSONAR
-        if (value === 0) throw Error('Division by zero is not allowed')
+        if (value === 0) throw new Error('Division by zero is not allowed')
         this.init /= value
         return this
     }

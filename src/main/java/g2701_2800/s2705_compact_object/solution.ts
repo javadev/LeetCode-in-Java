@@ -5,7 +5,7 @@ type Obj = Record<any, any>
 function compactObject(obj: Obj): Obj {
     if (Array.isArray(obj)) {
         let retArr = []
-        obj.forEach((e, idx) => {
+        obj.forEach((e, idx) => { //NOSONAR
             if (e) {
                 retArr.push(compactObject(e))
             }
