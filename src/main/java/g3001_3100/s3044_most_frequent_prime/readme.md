@@ -14,7 +14,7 @@ Return _the most frequent prime number **greater** than_ `10` _out of all the nu
 
 **Example 1:**
 
- **![](https://assets.leetcode.com/uploads/2024/02/15/south)** 
+ **![](https://leetcode-images.github.io/g3001_3100/s3044_most_frequent_prime/south.png)** 
 
  **Input:** mat = [[1,1],[9,9],[1,1]]
 
