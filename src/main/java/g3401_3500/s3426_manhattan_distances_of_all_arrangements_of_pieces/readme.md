@@ -22,7 +22,7 @@ The Manhattan Distance between two cells <code>(x<sub>i</sub>, y<sub>i</sub>)</c
 
 The valid arrangements of pieces on the board are:
 
-![](https://assets.leetcode.com/uploads/2024/12/25/4040example1.drawio)![](https://assets.leetcode.com/uploads/2024/12/25/untitled-diagramdrawio.png)
+![](https://leetcode-images.github.io/g3401_3500/s3426_manhattan_distances_of_all_arrangements_of_pieces/untitled-diagramdrawio.png)
 
 *   In the first 4 arrangements, the Manhattan distance between the two pieces is 1.
 *   In the last 2 arrangements, the Manhattan distance between the two pieces is 2.
@@ -39,7 +39,7 @@ Thus, the total Manhattan distance across all valid arrangements is `1 + 1 + 1 +
 
 The valid arrangements of pieces on the board are:
 
-![](https://assets.leetcode.com/uploads/2024/12/25/4040example2drawio.png)
+![](https://leetcode-images.github.io/g3401_3500/s3426_manhattan_distances_of_all_arrangements_of_pieces/4040example2drawio.png)
 
 *   The first and last arrangements have a total Manhattan distance of `1 + 1 + 2 = 4`.
 *   The middle two arrangements have a total Manhattan distance of `1 + 2 + 3 = 6`.

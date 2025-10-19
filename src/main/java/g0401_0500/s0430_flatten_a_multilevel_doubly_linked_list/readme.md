@@ -10,17 +10,17 @@ Return _the_ `head` _of the flattened list. The nodes in the list must have **al
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/11/09/flatten11.jpg)
+![](https://leetcode-images.github.io/g0401_0500/s0430_flatten_a_multilevel_doubly_linked_list/flatten11.jpg)
 
 **Input:** head = [1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]
 
 **Output:** [1,2,3,7,8,11,12,9,10,4,5,6]
 
-**Explanation:** The multilevel linked list in the input is shown. After flattening the multilevel linked list it becomes: ![](https://assets.leetcode.com/uploads/2021/11/09/flatten12.jpg) 
+**Explanation:** The multilevel linked list in the input is shown. After flattening the multilevel linked list it becomes: ![](https://leetcode-images.github.io/g0401_0500/s0430_flatten_a_multilevel_doubly_linked_list/flatten12.jpg) 
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2021/11/09/flatten2.1jpg)
+![](https://leetcode-images.github.io/g0401_0500/s0430_flatten_a_multilevel_doubly_linked_list/flatten21.jpg)
 
 **Input:** head = [1,2,null,3]
 
@@ -31,7 +31,7 @@ Return _the_ `head` _of the flattened list. The nodes in the list must have **al
     The multilevel linked list in the input is shown.
     After flattening the multilevel linked list it becomes:
 
-![](https://assets.leetcode.com/uploads/2021/11/24/list.jpg) 
+![](https://leetcode-images.github.io/g0401_0500/s0430_flatten_a_multilevel_doubly_linked_list/list.jpg) 
 
 **Example 3:**
 
