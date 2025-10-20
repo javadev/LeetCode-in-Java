@@ -15,7 +15,7 @@ public class Solution {
         long ans = 0;
         for (int i = 0; i < n; i++) {
             int p = d.findParent(i);
-            int cnt = map.containsKey(p) ? map.get(p) : 0;
+            int cnt = map.getOrDefault(p, 0);
             ans += i - cnt;
             map.put(p, map.getOrDefault(p, 0) + 1);
         }

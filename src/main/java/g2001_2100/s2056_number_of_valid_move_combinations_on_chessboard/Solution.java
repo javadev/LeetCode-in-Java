@@ -55,7 +55,7 @@ public class Solution {
         return dfs(positions, endPosition, new int[pieces.length], 0);
     }
 
-    private int dfs(int[][] positions, ArrayList[] stop, int[] stopIndex, int cur) {
+    private int dfs(int[][] positions, ArrayList<int[]>[] stop, int[] stopIndex, int cur) {
         if (cur == stopIndex.length) {
             int[][] p = new int[positions.length][2];
             for (int i = 0; i < p.length; i++) {
