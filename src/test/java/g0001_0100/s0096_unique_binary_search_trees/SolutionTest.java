@@ -11,6 +11,7 @@ class SolutionTest {
         assertThat(new Solution().numTrees(3), equalTo(5));
     }
 
+    @Test
     void numTrees2() {
         assertThat(new Solution().numTrees(1), equalTo(1));
     }
