@@ -1,18 +1,20 @@
 package g3701_3800.s3718_smallest_missing_multiple_of_k;
 
-// #Easy #Weekly_Contest_472 #2025_10_19_Time_3_ms_(_%)_Space_43.23_MB_(_%)
-
-import java.util.Arrays;
+// #Easy #Weekly_Contest_472 #2025_10_21_Time_0_ms_(100.00%)_Space_43.07_MB_(95.91%)
 
 public class Solution {
     public int missingMultiple(int[] nums, int k) {
-        Arrays.sort(nums);
-        int x = k;
-        for (int i : nums) {
-            if (i == x) {
-                x += k;
+        for (int i = 1; ; i++) {
+            int curr = i * k;
+            int j;
+            for (j = 0; j < nums.length; j++) {
+                if (nums[j] == curr) {
+                    break;
+                }
+            }
+            if (j == nums.length) {
+                return curr;
             }
         }
-        return x;
     }
 }

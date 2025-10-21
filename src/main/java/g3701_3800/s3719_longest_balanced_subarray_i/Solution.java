@@ -1,24 +1,47 @@
 package g3701_3800.s3719_longest_balanced_subarray_i;
 
-// #Medium #Weekly_Contest_472 #2025_10_19_Time_302_ms_(50.00%)_Space_45.14_MB_(50.00%)
-
-import java.util.HashSet;
+// #Medium #Weekly_Contest_472 #2025_10_21_Time_10_ms_(100.00%)_Space_45.40_MB_(48.93%)
 
 public class Solution {
     public int longestBalanced(int[] nums) {
-        int ans = 0;
         int n = nums.length;
+        int maxVal = 0;
+        for (int v : nums) {
+            if (v > maxVal) {
+                maxVal = v;
+            }
+        }
+        int[] evenMark = new int[maxVal + 1];
+        int[] oddMark = new int[maxVal + 1];
+        int stampEven = 0;
+        int stampOdd = 0;
+        int ans = 0;
         for (int i = 0; i < n; i++) {
-            HashSet<Integer> even = new HashSet<>();
-            HashSet<Integer> odd = new HashSet<>();
+            if (n - i <= ans) {
+                break;
+            }
+            stampEven++;
+            stampOdd++;
+            int distinctEven = 0;
+            int distinctOdd = 0;
             for (int j = i; j < n; j++) {
-                if (nums[j] % 2 == 0) {
-                    even.add(nums[j]);
+                int v = nums[j];
+                if ((v & 1) == 0) {
+                    if (evenMark[v] != stampEven) {
+                        evenMark[v] = stampEven;
+                        distinctEven++;
+                    }
                 } else {
-                    odd.add(nums[j]);
+                    if (oddMark[v] != stampOdd) {
+                        oddMark[v] = stampOdd;
+                        distinctOdd++;
+                    }
                 }
-                if (even.size() == odd.size()) {
-                    ans = Math.max(ans, j - i + 1);
+                if (distinctEven == distinctOdd) {
+                    int len = j - i + 1;
+                    if (len > ans) {
+                        ans = len;
+                    }
                 }
             }
         }
