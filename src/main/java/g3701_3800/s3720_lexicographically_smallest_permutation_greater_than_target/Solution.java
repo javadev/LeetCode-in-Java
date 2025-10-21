@@ -2,6 +2,7 @@ package g3701_3800.s3720_lexicographically_smallest_permutation_greater_than_tar
 
 // #Medium #Weekly_Contest_472 #2025_10_21_Time_2_ms_(96.02%)_Space_43.66_MB_(74.82%)
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public String lexGreaterPermutation(String s, String target) {
         int[] freq = new int[26];
