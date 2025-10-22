@@ -1,6 +1,7 @@
 package g3701_3800.s3721_longest_balanced_subarray_ii;
 
-// #Hard #Weekly_Contest_472 #2025_10_21_Time_267_ms_(59.29%)_Space_61.94_MB_(28.32%)
+// #Hard #Array #Hash_Table #Prefix_Sum #Divide_and_Conquer #Segment_Tree #Weekly_Contest_472
+// #2025_10_22_Time_270_ms_(76.05%)_Space_62.10_MB_(38.78%)
 
 import java.util.HashMap;
 import java.util.Map;
