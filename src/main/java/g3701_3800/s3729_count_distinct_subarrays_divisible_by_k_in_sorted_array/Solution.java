@@ -19,7 +19,9 @@ public class Solution {
         }
         for (int i = 0; i < n; ) {
             int j = i;
-            while (j < n && nums[j] == nums[i]) ++j;
+            while (j < n && nums[j] == nums[i]) {
+                ++j;
+            }
             int l = j - i;
             for (int ll = 1; ll < l; ++ll) {
                 if ((long) ll * nums[i] % k == 0) {
