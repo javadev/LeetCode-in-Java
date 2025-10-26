@@ -17,7 +17,8 @@ public class Solution {
             res += cnt.getOrDefault(pre, 0L);
             cnt.put(pre, cnt.getOrDefault(pre, 0L) + 1L);
         }
-        for (int i = 0; i < n; ) {
+        int i = 0;
+        while (i < n) {
             int j = i;
             while (j < n && nums[j] == nums[i]) {
                 ++j;
