@@ -2,7 +2,7 @@
 
 Medium
 
-Given a string `s`, find the length of the **longest substring** without repeating characters.
+Given a string `s`, find the length of the **longest** **substring** without duplicate characters.
 
 **Example 1:**
 
@@ -10,7 +10,7 @@ Given a string `s`, find the length of the **longest substring** without repeati
 
 **Output:** 3
 
-**Explanation:** The answer is "abc", with the length of 3. 
+**Explanation:** The answer is "abc", with the length of 3. Note that `"bca"` and `"cab"` are also correct answers. 
 
 **Example 2:**
 
@@ -27,12 +27,6 @@ Given a string `s`, find the length of the **longest substring** without repeati
 **Output:** 3
 
 **Explanation:** The answer is "wke", with the length of 3. Notice that the answer must be a substring, "pwke" is a subsequence and not a substring. 
-
-**Example 4:**
-
-**Input:** s = ""
-
-**Output:** 0 
 
 **Constraints:**
 

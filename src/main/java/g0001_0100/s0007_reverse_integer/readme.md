@@ -24,12 +24,6 @@ Given a signed 32-bit integer `x`, return `x` _with its digits reversed_. If rev
 
 **Output:** 21 
 
-**Example 4:**
-
-**Input:** x = 0
-
-**Output:** 0 
-
 **Constraints:**
 
 *   <code>-2<sup>31</sup> <= x <= 2<sup>31</sup> - 1</code>
