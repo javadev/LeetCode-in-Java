@@ -4,37 +4,15 @@ Medium
 
 Seven different symbols represent Roman numerals with the following values:
 
-Symbol
-
-Value
-
-I
-
-1
-
-V
-
-5
-
-X
-
-10
-
-L
-
-50
-
-C
-
-100
-
-D
-
-500
-
-M
-
-1000
+| Symbol | Value |
+|--------|-------|
+| I | 1 |
+| V | 5 |
+| X | 10 |
+| L | 50 |
+| C | 100 |
+| D | 500 |
+| M | 1000 |
 
 Roman numerals are formed by appending the conversions of decimal place values from highest to lowest. Converting a decimal place value into a Roman numeral has the following rules:
 
