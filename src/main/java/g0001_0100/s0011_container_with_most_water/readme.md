@@ -30,7 +30,7 @@ Return _the maximum amount of water a container can store_.
 
 *   `n == height.length`
 *   <code>2 <= n <= 10<sup>5</sup></code>
-*   <code>0 <= height[i] <= 10<sup>4</sup></code
+*   <code>0 <= height[i] <= 10<sup>4</sup></code>
 
 To solve the Container With Most Water problem in Java using a `Solution` class, we'll follow these steps:
 
