@@ -22,22 +22,9 @@ You have to rotate the image [**in-place**](https://en.wikipedia.org/wiki/In-pla
 
 **Output:** [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]] 
 
-**Example 3:**
-
-**Input:** matrix = [[1]]
-
-**Output:** [[1]] 
-
-**Example 4:**
-
-**Input:** matrix = [[1,2],[3,4]]
-
-**Output:** [[3,1],[4,2]] 
-
 **Constraints:**
 
-*   `matrix.length == n`
-*   `matrix[i].length == n`
+*   `n == matrix.length == matrix[i].length`
 *   `1 <= n <= 20`
 *   `-1000 <= matrix[i][j] <= 1000`
 

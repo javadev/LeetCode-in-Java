@@ -2,9 +2,13 @@
 
 Hard
 
-You are given a string `s` and an array of strings `words` of **the same length**. Return all starting indices of substring(s) in `s` that is a concatenation of each word in `words` **exactly once**, **in any order**, and **without any intervening characters**.
+You are given a string `s` and an array of strings `words`. All the strings of `words` are of **the same length**.
 
-You can return the answer in **any order**.
+A **concatenated string** is a string that exactly contains all the strings of any permutation of `words` concatenated.
+
+*   For example, if `words = ["ab","cd","ef"]`, then `"abcdef"`, `"abefcd"`, `"cdabef"`, `"cdefab"`, `"efabcd"`, and `"efcdab"` are all concatenated strings. `"acdbef"` is not a concatenated string because it is not the concatenation of any permutation of `words`.
+
+Return an array of _the starting indices_ of all the concatenated substrings in `s`. You can return the answer in **any order**.
 
 **Example 1:**
 
@@ -12,24 +16,36 @@ You can return the answer in **any order**.
 
 **Output:** [0,9]
 
-**Explanation:** Substrings starting at index 0 and 9 are "barfoo" and "foobar" respectively. The output order does not matter, returning [9,0] is fine too. 
+**Explanation:**
+
+The substring starting at 0 is `"barfoo"`. It is the concatenation of `["bar","foo"]` which is a permutation of `words`.   
+ The substring starting at 9 is `"foobar"`. It is the concatenation of `["foo","bar"]` which is a permutation of `words`.
 
 **Example 2:**
 
 **Input:** s = "wordgoodgoodgoodbestword", words = ["word","good","best","word"]
 
-**Output:** [] 
+**Output:** []
+
+**Explanation:**
+
+There is no concatenated substring.
 
 **Example 3:**
 
 **Input:** s = "barfoofoobarthefoobarman", words = ["bar","foo","the"]
 
-**Output:** [6,9,12] 
+**Output:** [6,9,12]
+
+**Explanation:**
+
+The substring starting at 6 is `"foobarthe"`. It is the concatenation of `["foo","bar","the"]`.   
+ The substring starting at 9 is `"barthefoo"`. It is the concatenation of `["bar","the","foo"]`.   
+ The substring starting at 12 is `"thefoobar"`. It is the concatenation of `["the","foo","bar"]`.
 
 **Constraints:**
 
 *   <code>1 <= s.length <= 10<sup>4</sup></code>
-*   `s` consists of lower-case English letters.
 *   `1 <= words.length <= 5000`
 *   `1 <= words[i].length <= 30`
-*   `words[i]` consists of lower-case English letters.
+*   `s` and `words[i]` consist of lowercase English letters.

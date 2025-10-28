@@ -24,18 +24,6 @@ You must write an algorithm with `O(log n)` runtime complexity.
 
 **Output:** 4 
 
-**Example 4:**
-
-**Input:** nums = [1,3,5,6], target = 0
-
-**Output:** 0 
-
-**Example 5:**
-
-**Input:** nums = [1], target = 0
-
-**Output:** 0 
-
 **Constraints:**
 
 *   <code>1 <= nums.length <= 10<sup>4</sup></code>

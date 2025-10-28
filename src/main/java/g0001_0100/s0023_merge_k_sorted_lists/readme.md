@@ -12,7 +12,7 @@ _Merge all the linked-lists into one sorted linked-list and return it._
 
 **Output:** [1,1,2,3,4,4,5,6]
 
-**Explanation:** The linked-lists are: [ 1->4->5, 1->3->4, 2->6 ] merging them into one sorted list: 1->1->2->3->4->4->5->6 
+**Explanation:** The linked-lists are: [ 1->4->5, 1->3->4, 2->6 ] merging them into one sorted linked list: 1->1->2->3->4->4->5->6 
 
 **Example 2:**
 
@@ -29,11 +29,11 @@ _Merge all the linked-lists into one sorted linked-list and return it._
 **Constraints:**
 
 *   `k == lists.length`
-*   `0 <= k <= 10^4`
+*   <code>0 <= k <= 10<sup>4</sup></code>
 *   `0 <= lists[i].length <= 500`
-*   `-10^4 <= lists[i][j] <= 10^4`
+*   <code>-10<sup>4</sup> <= lists[i][j] <= 10<sup>4</sup></code>
 *   `lists[i]` is sorted in **ascending order**.
-*   The sum of `lists[i].length` won't exceed `10^4`.
+*   The sum of `lists[i].length` will not exceed <code>10<sup>4</sup></code>.
 
 To solve the "Merge k Sorted Lists" problem in Java with a `Solution` class, we can use a priority queue (min-heap) to efficiently merge the lists. Here are the steps:
 

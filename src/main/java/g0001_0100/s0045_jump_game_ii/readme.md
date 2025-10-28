@@ -2,13 +2,14 @@
 
 Medium
 
-Given an array of non-negative integers `nums`, you are initially positioned at the first index of the array.
+You are given a **0-indexed** array of integers `nums` of length `n`. You are initially positioned at index 0.
 
-Each element in the array represents your maximum jump length at that position.
+Each element `nums[i]` represents the maximum length of a forward jump from index `i`. In other words, if you are at index `i`, you can jump to any index `(i + j)` where:
 
-Your goal is to reach the last index in the minimum number of jumps.
+*   `0 <= j <= nums[i]` and
+*   `i + j < n`
 
-You can assume that you can always reach the last index.
+Return _the minimum number of jumps to reach index_ `n - 1`. The test cases are generated such that you can reach index `n - 1`.
 
 **Example 1:**
 
@@ -28,6 +29,7 @@ You can assume that you can always reach the last index.
 
 *   <code>1 <= nums.length <= 10<sup>4</sup></code>
 *   `0 <= nums[i] <= 1000`
+*   It's guaranteed that you can reach `nums[n - 1]`.
 
 To solve the "Jump Game II" problem in Java with a `Solution` class, we can follow these steps:
 

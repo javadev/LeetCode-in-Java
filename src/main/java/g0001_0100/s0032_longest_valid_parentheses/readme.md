@@ -2,7 +2,7 @@
 
 Hard
 
-Given a string containing just the characters `'('` and `')'`, find the length of the longest valid (well-formed) parentheses substring.
+Given a string containing just the characters `'('` and `')'`, return _the length of the longest valid (well-formed) parentheses_ **substring**.
 
 **Example 1:**
 

@@ -2,9 +2,9 @@
 
 Hard
 
-Given a linked list, reverse the nodes of a linked list _k_ at a time and return its modified list.
+Given the `head` of a linked list, reverse the nodes of the list `k` at a time, and return _the modified list_.
 
-_k_ is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of _k_ then left-out nodes, in the end, should remain as it is.
+`k` is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of `k` then left-out nodes, in the end, should remain as it is.
 
 You may not alter the values in the list's nodes, only nodes themselves may be changed.
 
@@ -24,26 +24,13 @@ You may not alter the values in the list's nodes, only nodes themselves may be c
 
 **Output:** [3,2,1,4,5] 
 
-**Example 3:**
-
-**Input:** head = [1,2,3,4,5], k = 1
-
-**Output:** [1,2,3,4,5] 
-
-**Example 4:**
-
-**Input:** head = [1], k = 1
-
-**Output:** [1] 
-
 **Constraints:**
 
-*   The number of nodes in the list is in the range `sz`.
-*   `1 <= sz <= 5000`
+*   The number of nodes in the list is `n`.
+*   `1 <= k <= n <= 5000`
 *   `0 <= Node.val <= 1000`
-*   `1 <= k <= sz`
 
-**Follow-up:** Can you solve the problem in O(1) extra memory space?
+**Follow-up:** Can you solve the problem in `O(1)` extra memory space?
 
 To solve the "Reverse Nodes in k-Group" problem in Java with a `Solution` class, we can reverse the nodes in groups of k using a recursive approach. Here are the steps:
 
