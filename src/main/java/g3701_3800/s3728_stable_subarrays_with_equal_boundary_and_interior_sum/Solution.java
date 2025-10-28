@@ -1,6 +1,6 @@
 package g3701_3800.s3728_stable_subarrays_with_equal_boundary_and_interior_sum;
 
-// #Medium #Weekly_Contest_473 #2025_10_26_Time_124_ms_(100.00%)_Space_62.66_MB_(100.00%)
+// #Medium #Weekly_Contest_473 #2025_10_28_Time_96_ms_(68.14%)_Space_62.66_MB_(83.54%)
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,6 +1,6 @@
 package g3701_3800.s3723_maximize_sum_of_squares_of_digits;
 
-// #Medium #Biweekly_Contest_168 #2025_10_26_Time_8_ms_(99.81%)_Space_45.78_MB_(_%)
+// #Medium #Biweekly_Contest_168 #2025_10_28_Time_14_ms_(99.30%)_Space_46.14_MB_(70.05%)
 
 public class Solution {
     public String maxSumOfSquares(int places, int sum) {

@@ -1,6 +1,6 @@
 package g3701_3800.s3729_count_distinct_subarrays_divisible_by_k_in_sorted_array;
 
-// #Hard #Weekly_Contest_473 #2025_10_26_Time_67_ms_(50.00%)_Space_61.73_MB_(50.00%)
+// #Hard #Weekly_Contest_473 #2025_10_28_Time_61_ms_(88.70%)_Space_60.47_MB_(80.43%)
 
 import java.util.HashMap;
 import java.util.Map;
