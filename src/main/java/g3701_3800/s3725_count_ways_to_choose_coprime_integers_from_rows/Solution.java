@@ -1,6 +1,7 @@
 package g3701_3800.s3725_count_ways_to_choose_coprime_integers_from_rows;
 
-// #Hard #Biweekly_Contest_168 #2025_10_28_Time_30_ms_(93.77%)_Space_47.15_MB_(68.37%)
+// #Hard #Array #Dynamic_Programming #Math #Matrix #Number_Theory #Combinatorics
+// #Biweekly_Contest_168 #2025_10_29_Time_31_ms_(94.07%)_Space_47.74_MB_(49.21%)
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,36 +1,31 @@
 package g3701_3800.s3729_count_distinct_subarrays_divisible_by_k_in_sorted_array;
 
-// #Hard #Weekly_Contest_473 #2025_10_28_Time_61_ms_(88.70%)_Space_60.47_MB_(80.43%)
+// #Hard #Array #Hash_Table #Prefix_Sum #Weekly_Contest_473
+// #2025_10_29_Time_33_ms_(99.78%)_Space_62.35_MB_(50.99%)
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Solution {
     public long numGoodSubarrays(int[] nums, int k) {
-        Map<Integer, Long> cnt = new HashMap<>();
-        cnt.put(0, 1L);
-        int pre = 0;
-        int n = nums.length;
-        long res = 0;
-        for (int a : nums) {
-            pre = (pre + a) % k;
-            res += cnt.getOrDefault(pre, 0L);
-            cnt.put(pre, cnt.getOrDefault(pre, 0L) + 1L);
-        }
-        int i = 0;
-        while (i < n) {
-            int j = i;
-            while (j < n && nums[j] == nums[i]) {
-                ++j;
-            }
-            int l = j - i;
-            for (int ll = 1; ll < l; ++ll) {
-                if ((long) ll * nums[i] % k == 0) {
-                    res -= (l - ll);
+        Map<Integer, Integer> cnt = new HashMap<>(nums.length, 1);
+        cnt.put(0, 1);
+        long sum = 0;
+        int lastStart = 0;
+        long ans = 0;
+        for (int i = 0; i < nums.length; i++) {
+            int x = nums[i];
+            if (i > 0 && x != nums[i - 1]) {
+                long s = sum;
+                for (int t = i - lastStart; t > 0; t--) {
+                    cnt.merge((int) (s % k), 1, Integer::sum);
+                    s -= nums[i - 1];
                 }
+                lastStart = i;
             }
-            i = j;
+            sum += x;
+            ans += cnt.getOrDefault((int) (sum % k), 0);
         }
-        return res;
+        return ans;
     }
 }
