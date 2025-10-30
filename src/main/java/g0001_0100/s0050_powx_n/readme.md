@@ -28,4 +28,6 @@ Implement [pow(x, n)](http://www.cplusplus.com/reference/valarray/pow/), which c
 
 *   `-100.0 < x < 100.0`
 *   <code>-2<sup>31</sup> <= n <= 2<sup>31</sup>-1</code>
+*   `n` is an integer.
+*   Either `x` is not zero or `n > 0`.
 *   <code>-10<sup>4</sup> <= x<sup>n</sup> <= 10<sup>4</sup></code>

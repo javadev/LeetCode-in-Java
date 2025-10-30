@@ -2,9 +2,9 @@
 
 Easy
 
-Given a string `s` consisting of some words separated by some number of spaces, return _the length of the **last** word in the string._
+Given a string `s` consisting of words and spaces, return _the length of the **last** word in the string._
 
-A **word** is a maximal substring consisting of non-space characters only.
+A **word** is a maximal **substring** consisting of non-space characters only.
 
 **Example 1:**
 

@@ -8,6 +8,8 @@ Insert `newInterval` into `intervals` such that `intervals` is still sorted in a
 
 Return `intervals` _after the insertion_.
 
+**Note** that you don't need to modify `intervals` in-place. You can make a new array and return it.
+
 **Example 1:**
 
 **Input:** intervals = [[1,3],[6,9]], newInterval = [2,5]
@@ -20,25 +22,7 @@ Return `intervals` _after the insertion_.
 
 **Output:** [[1,2],[3,10],[12,16]]
 
-**Explanation:** Because the new interval `[4,8]` overlaps with `[3,5],[6,7],[8,10]`.
-
-**Example 3:**
-
-**Input:** intervals = [], newInterval = [5,7]
-
-**Output:** [[5,7]] 
-
-**Example 4:**
-
-**Input:** intervals = [[1,5]], newInterval = [2,3]
-
-**Output:** [[1,5]] 
-
-**Example 5:**
-
-**Input:** intervals = [[1,5]], newInterval = [2,7]
-
-**Output:** [[1,7]] 
+**Explanation:** Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10]. 
 
 **Constraints:**
 
