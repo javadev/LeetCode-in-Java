@@ -2,18 +2,23 @@
 
 Medium
 
-Given a string `path`, which is an **absolute path** (starting with a slash `'/'`) to a file or directory in a Unix-style file system, convert it to the simplified **canonical path**.
+You are given an _absolute_ path for a Unix-style file system, which always begins with a slash `'/'`. Your task is to transform this absolute path into its **simplified canonical path**.
 
-In a Unix-style file system, a period `'.'` refers to the current directory, a double period `'..'` refers to the directory up a level, and any multiple consecutive slashes (i.e. `'//'`) are treated as a single slash `'/'`. For this problem, any other format of periods such as `'...'` are treated as file/directory names.
+The _rules_ of a Unix-style file system are as follows:
 
-The **canonical path** should have the following format:
+*   A single period `'.'` represents the current directory.
+*   A double period `'..'` represents the previous/parent directory.
+*   Multiple consecutive slashes such as `'//'` and `'///'` are treated as a single slash `'/'`.
+*   Any sequence of periods that does **not match** the rules above should be treated as a **valid directory or** **file** **name**. For example, `'...'` and `'....'` are valid directory or file names.
 
-*   The path starts with a single slash `'/'`.
-*   Any two directories are separated by a single slash `'/'`.
-*   The path does not end with a trailing `'/'`.
-*   The path only contains the directories on the path from the root directory to the target file or directory (i.e., no period `'.'` or double period `'..'`)
+The simplified canonical path should follow these _rules_:
 
-Return _the simplified **canonical path**_.
+*   The path must start with a single slash `'/'`.
+*   Directories within the path must be separated by exactly one slash `'/'`.
+*   The path must not end with a slash `'/'`, unless it is the root directory.
+*   The path must not have any single or double periods (`'.'` and `'..'`) used to denote current or parent directories.
+
+Return the **simplified canonical path**.
 
 **Example 1:**
 
@@ -21,29 +26,49 @@ Return _the simplified **canonical path**_.
 
 **Output:** "/home"
 
-**Explanation:** Note that there is no trailing slash after the last directory name. 
+**Explanation:**
+
+The trailing slash should be removed.
 
 **Example 2:**
-
-**Input:** path = "/../"
-
-**Output:** "/"
-
-**Explanation:** Going one level up from the root directory is a no-op, as the root level is the highest level you can go. 
-
-**Example 3:**
 
 **Input:** path = "/home//foo/"
 
 **Output:** "/home/foo"
 
-**Explanation:** In the canonical path, multiple consecutive slashes are replaced by a single one. 
+**Explanation:**
+
+Multiple consecutive slashes are replaced by a single one.
+
+**Example 3:**
+
+**Input:** path = "/home/user/Documents/../Pictures"
+
+**Output:** "/home/user/Pictures"
+
+**Explanation:**
+
+A double period `".."` refers to the directory up a level (the parent directory).
 
 **Example 4:**
 
-**Input:** path = "/a/./b/../../c/"
+**Input:** path = "/../"
 
-**Output:** "/c" 
+**Output:** "/"
+
+**Explanation:**
+
+Going one level up from the root directory is not possible.
+
+**Example 5:**
+
+**Input:** path = "/.../a/../b/c/../d/./"
+
+**Output:** "/.../b/d"
+
+**Explanation:**
+
+`"..."` is a valid name for a directory in this problem.
 
 **Constraints:**
 

@@ -2,17 +2,19 @@
 
 Easy
 
-Given a non-negative integer `x`, compute and return _the square root of_ `x`.
+Given a non-negative integer `x`, return _the square root of_ `x` _rounded down to the nearest integer_. The returned integer should be **non-negative** as well.
 
-Since the return type is an integer, the decimal digits are **truncated**, and only **the integer part** of the result is returned.
+You **must not use** any built-in exponent function or operator.
 
-**Note:** You are not allowed to use any built-in exponent function or operator, such as `pow(x, 0.5)` or `x ** 0.5`.
+*   For example, do not use `pow(x, 0.5)` in c++ or <code>x ** 0.5</code> in python.
 
 **Example 1:**
 
 **Input:** x = 4
 
-**Output:** 2 
+**Output:** 2
+
+**Explanation:** The square root of 4 is 2, so we return 2. 
 
 **Example 2:**
 
@@ -20,7 +22,7 @@ Since the return type is an integer, the decimal digits are **truncated**, and o
 
 **Output:** 2
 
-**Explanation:** The square root of 8 is 2.82842..., and since the decimal part is truncated, 2 is returned.
+**Explanation:** The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned. 
 
 **Constraints:**
 
