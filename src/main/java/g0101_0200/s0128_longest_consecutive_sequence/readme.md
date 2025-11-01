@@ -20,6 +20,12 @@ You must write an algorithm that runs in `O(n)` time.
 
 **Output:** 9 
 
+**Example 3:**
+
+**Input:** nums = [1,0,1,2]
+
+**Output:** 3 
+
 **Constraints:**
 
 *   <code>0 <= nums.length <= 10<sup>5</sup></code>

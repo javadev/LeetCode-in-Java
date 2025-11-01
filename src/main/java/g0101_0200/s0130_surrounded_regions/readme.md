@@ -2,25 +2,31 @@
 
 Medium
 
-Given an `m x n` matrix `board` containing `'X'` and `'O'`, _capture all regions that are 4-directionally surrounded by_ `'X'`.
+You are given an `m x n` matrix `board` containing **letters** `'X'` and `'O'`, **capture regions** that are **surrounded**:
 
-A region is **captured** by flipping all `'O'`s into `'X'`s in that surrounded region.
+*   **Connect**: A cell is connected to adjacent cells horizontally or vertically.
+*   **Region**: To form a region **connect every** `'O'` cell.
+*   **Surround**: The region is surrounded with `'X'` cells if you can **connect the region** with `'X'` cells and none of the region cells are on the edge of the `board`.
+
+To capture a **surrounded region**, replace all `'O'`s with `'X'`s **in-place** within the original board. You do not need to return anything.
 
 **Example 1:**
-
-![](https://assets.leetcode.com/uploads/2021/02/19/xogrid.jpg)
 
 **Input:** board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
 
 **Output:** [["X","X","X","X"],["X","X","X","X"],["X","X","X","X"],["X","O","X","X"]]
 
-**Explanation:** Surrounded regions should not be on the border, which means that any 'O' on the border of the board are not flipped to 'X'. Any 'O' that is not on the border and it is not connected to an 'O' on the border will be flipped to 'X'. Two cells are connected if they are adjacent cells connected horizontally or vertically. 
+**Explanation:**
+
+![](https://assets.leetcode.com/uploads/2021/02/19/xogrid.jpg)
+
+In the above diagram, the bottom region is not captured because it is on the edge of the board and cannot be surrounded.
 
 **Example 2:**
 
 **Input:** board = [["X"]]
 
-**Output:** [["X"]] 
+**Output:** [["X"]]
 
 **Constraints:**
 

@@ -2,7 +2,7 @@
 
 Hard
 
-You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day.
+You are given an array `prices` where `prices[i]` is the price of a given stock on the <code>i<sup>th</sup></code> day.
 
 Find the maximum profit you can achieve. You may complete **at most two transactions**.
 
@@ -31,12 +31,6 @@ Find the maximum profit you can achieve. You may complete **at most two transact
 **Output:** 0
 
 **Explanation:** In this case, no transaction is done, i.e. max profit = 0. 
-
-**Example 4:**
-
-**Input:** prices = [1]
-
-**Output:** 0 
 
 **Constraints:**
 
