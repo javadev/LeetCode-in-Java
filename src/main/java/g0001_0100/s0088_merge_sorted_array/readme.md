@@ -14,7 +14,7 @@ The final sorted array should not be returned by the function, but instead be _s
 
 **Output:** [1,2,2,3,5,6]
 
-**Explanation:** The arrays we are merging are [1,2,3] and [2,5,6]. The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1. 
+**Explanation:** The arrays we are merging are [1,2,3] and [2,5,6]. The result of the merge is [<ins>1</ins>,<ins>2</ins>,2,<ins>3</ins>,5,6] with the underlined elements coming from nums1. 
 
 **Example 2:**
 

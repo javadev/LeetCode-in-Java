@@ -6,39 +6,35 @@ Given the `root` of a binary tree, return _the inorder traversal of its nodes' v
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg)
-
 **Input:** root = [1,null,2,3]
 
-**Output:** [1,3,2] 
+**Output:** [1,3,2]
+
+**Explanation:**
+
+![](https://assets.leetcode.com/uploads/2024/08/29/screenshot-2024-08-29-202743.png)
 
 **Example 2:**
 
-**Input:** root = []
+**Input:** root = [1,2,3,4,5,null,8,null,null,6,7,9]
 
-**Output:** [] 
+**Output:** [4,2,6,5,7,1,3,9,8]
+
+**Explanation:**
+
+![](https://assets.leetcode.com/uploads/2024/08/29/tree_2.png)
 
 **Example 3:**
 
-**Input:** root = [1]
+**Input:** root = []
 
-**Output:** [1] 
+**Output:** []
 
 **Example 4:**
 
-![](https://assets.leetcode.com/uploads/2020/09/15/inorder_5.jpg)
+**Input:** root = [1]
 
-**Input:** root = [1,2]
-
-**Output:** [2,1] 
-
-**Example 5:**
-
-![](https://assets.leetcode.com/uploads/2020/09/15/inorder_4.jpg)
-
-**Input:** root = [1,null,2]
-
-**Output:** [1,2] 
+**Output:** [1]
 
 **Constraints:**
 
