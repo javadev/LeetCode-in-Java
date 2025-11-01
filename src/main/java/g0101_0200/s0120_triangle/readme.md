@@ -19,7 +19,7 @@ For each step, you may move to an adjacent number of the row below. More formall
        3 4
       6 5 7
      4 1 8 3
-     The minimum path sum from top to bottom is 2 + 3 + 5 + 1 = 11 (underlined above). 
+     The minimum path sum from top to bottom is 2 + 3 + 5 + 1 = 11 (underlined above).
 
 **Example 2:**
 

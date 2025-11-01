@@ -52,14 +52,6 @@ The given node will always be the first node with `val = 1`. You must return the
 
 **Explanation:** This an empty graph, it does not have any nodes. 
 
-**Example 4:**
-
-![](https://assets.leetcode.com/uploads/2020/01/07/graph-1.png)
-
-**Input:** adjList = [[2],[1]]
-
-**Output:** [[2],[1]] 
-
 **Constraints:**
 
 *   The number of nodes in the graph is in the range `[0, 100]`.
