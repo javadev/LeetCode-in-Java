@@ -6,23 +6,35 @@ Given the `root` of a binary tree, imagine yourself standing on the **right side
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2021/02/14/tree.jpg)
-
 **Input:** root = [1,2,3,null,5,null,4]
 
-**Output:** [1,3,4] 
+**Output:** [1,3,4]
+
+**Explanation:**
+
+![](https://assets.leetcode.com/uploads/2024/11/24/tmpd5jn43fs-1.png)
 
 **Example 2:**
 
-**Input:** root = [1,null,3]
+**Input:** root = [1,2,3,4,null,null,null,5]
 
-**Output:** [1,3] 
+**Output:** [1,3,4,5]
+
+**Explanation:**
+
+![](https://assets.leetcode.com/uploads/2024/11/24/tmpkpe40xeh-1.png)
 
 **Example 3:**
 
+**Input:** root = [1,null,3]
+
+**Output:** [1,3]
+
+**Example 4:**
+
 **Input:** root = []
 
-**Output:** [] 
+**Output:** []
 
 **Constraints:**
 

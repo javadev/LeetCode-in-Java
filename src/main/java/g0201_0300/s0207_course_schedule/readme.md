@@ -26,7 +26,7 @@ Return `true` if you can finish all courses. Otherwise, return `false`.
 
 **Constraints:**
 
-*   <code>1 <= numCourses <= 10<sup>5</sup></code>
+*   `1 <= numCourses <= 2000`
 *   `0 <= prerequisites.length <= 5000`
 *   `prerequisites[i].length == 2`
 *   <code>0 <= a<sub>i</sub>, b<sub>i</sub> < numCourses</code>

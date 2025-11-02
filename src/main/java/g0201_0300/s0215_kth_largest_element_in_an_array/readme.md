@@ -6,6 +6,8 @@ Given an integer array `nums` and an integer `k`, return _the_ <code>k<sup>th</s
 
 Note that it is the <code>k<sup>th</sup></code> largest element in the sorted order, not the <code>k<sup>th</sup></code> distinct element.
 
+Can you solve it without sorting?
+
 **Example 1:**
 
 **Input:** nums = [3,2,1,5,6,4], k = 2
@@ -20,5 +22,5 @@ Note that it is the <code>k<sup>th</sup></code> largest element in the sorted or
 
 **Constraints:**
 
-*   <code>1 <= k <= nums.length <= 10<sup>4</sup></code>
+*   <code>1 <= k <= nums.length <= 10<sup>5</sup></code>
 *   <code>-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup></code>
