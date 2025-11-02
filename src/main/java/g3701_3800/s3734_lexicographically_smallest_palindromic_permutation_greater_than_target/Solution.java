@@ -5,8 +5,7 @@ package g3701_3800.s3734_lexicographically_smallest_palindromic_permutation_grea
 import java.util.Arrays;
 
 public class Solution {
-    public boolean func(
-            int i, String target, char[] ans, int l, int r, int[] freq, boolean end) {
+    public boolean func(int i, String target, char[] ans, int l, int r, int[] freq, boolean end) {
         if (l > r) {
             return new String(ans).compareTo(target) > 0;
         }
