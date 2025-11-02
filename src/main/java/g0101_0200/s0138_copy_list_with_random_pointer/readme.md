@@ -41,18 +41,10 @@ Your code will **only** be given the `head` of the original linked list.
 
 **Output:** [[3,null],[3,0],[3,null]] 
 
-**Example 4:**
-
-**Input:** head = []
-
-**Output:** []
-
-**Explanation:** The given linked list is empty (null pointer), so return null. 
-
 **Constraints:**
 
 *   `0 <= n <= 1000`
-*   `-10000 <= Node.val <= 10000`
+*   <code>-10<sup>4</sup> <= Node.val <= 10<sup>4</sup></code>
 *   `Node.random` is `null` or is pointing to some node in the linked list.
 
 To solve the "Copy List with Random Pointer" problem in Java with a `Solution` class, we'll use a HashMap to maintain a mapping between the original nodes and their corresponding copied nodes. Below are the steps:

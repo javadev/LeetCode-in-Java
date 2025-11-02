@@ -2,13 +2,18 @@
 
 Medium
 
-Evaluate the value of an arithmetic expression in [Reverse Polish Notation](http://en.wikipedia.org/wiki/Reverse_Polish_notation).
+You are given an array of strings `tokens` that represents an arithmetic expression in a [Reverse Polish Notation](http://en.wikipedia.org/wiki/Reverse_Polish_notation).
 
-Valid operators are `+`, `-`, `*`, and `/`. Each operand may be an integer or another expression.
+Evaluate the expression. Return _an integer that represents the value of the expression_.
 
-**Note** that division between two integers should truncate toward zero.
+**Note** that:
 
-It is guaranteed that the given RPN expression is always valid. That means the expression would always evaluate to a result, and there will not be any division by zero operation.
+*   The valid operators are `'+'`, `'-'`, `'*'`, and `'/'`.
+*   Each operand may be an integer or another expression.
+*   The division between two integers always **truncates toward zero**.
+*   There will not be any division by zero.
+*   The input represents a valid arithmetic expression in a reverse polish notation.
+*   The answer and all the intermediate calculations can be represented in a **32-bit** integer.
 
 **Example 1:**
 

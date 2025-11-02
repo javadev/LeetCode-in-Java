@@ -11,7 +11,7 @@ Notice that **rotating** an array `[a[0], a[1], a[2], ..., a[n-1]]` 1 time resul
 
 Given the sorted rotated array `nums` of **unique** elements, return _the minimum element of this array_.
 
-You must write an algorithm that runs in `O(log n) time.`
+You must write an algorithm that runs in `O(log n) time`.
 
 **Example 1:**
 

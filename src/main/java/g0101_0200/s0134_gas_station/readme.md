@@ -6,7 +6,7 @@ There are `n` gas stations along a circular route, where the amount of gas at th
 
 You have a car with an unlimited gas tank and it costs `cost[i]` of gas to travel from the <code>i<sup>th</sup></code> station to its next <code>(i + 1)<sup>th</sup></code> station. You begin the journey with an empty tank at one of the gas stations.
 
-Given two integer arrays `gas` and `cost`, return _the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return_ `-1`. If there exists a solution, it is **guaranteed** to be **unique**
+Given two integer arrays `gas` and `cost`, return _the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return_ `-1`. If there exists a solution, it is **guaranteed** to be **unique**.
 
 **Example 1:**
 
@@ -41,7 +41,7 @@ Given two integer arrays `gas` and `cost`, return _the starting gas station's in
 
 **Constraints:**
 
-*   `gas.length == n`
-*   `cost.length == n`
+*   `n == gas.length == cost.length`
 *   <code>1 <= n <= 10<sup>5</sup></code>
 *   <code>0 <= gas[i], cost[i] <= 10<sup>4</sup></code>
+*   The input is generated such that the answer is unique.
