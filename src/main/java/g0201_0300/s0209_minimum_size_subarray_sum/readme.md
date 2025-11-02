@@ -2,7 +2,7 @@
 
 Medium
 
-Given an array of positive integers `nums` and a positive integer `target`, return the minimal length of a **contiguous subarray** <code>[nums<sub>l</sub>, nums<sub>l+1</sub>, ..., nums<sub>r-1</sub>, nums<sub>r</sub>]</code> of which the sum is greater than or equal to `target`. If there is no such subarray, return `0` instead.
+Given an array of positive integers `nums` and a positive integer `target`, return _the **minimal length** of a_ **non-empty subarrays** _whose sum is greater than or equal to_ `target`. If there is no such subarray, return `0` instead.
 
 **Example 1:**
 
@@ -28,6 +28,6 @@ Given an array of positive integers `nums` and a positive integer `target`, retu
 
 *   <code>1 <= target <= 10<sup>9</sup></code>
 *   <code>1 <= nums.length <= 10<sup>5</sup></code>
-*   <code>1 <= nums[i] <= 10<sup>5</sup></code>
+*   <code>1 <= nums[i] <= 10<sup>4</sup></code>
 
 **Follow up:** If you have figured out the `O(n)` solution, try coding another solution of which the time complexity is `O(n log(n))`.

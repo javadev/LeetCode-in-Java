@@ -33,7 +33,8 @@ Implement the `WordDictionary` class:
 
 **Constraints:**
 
-*   `1 <= word.length <= 500`
-*   `word` in `addWord` consists lower-case English letters.
-*   `word` in `search` consist of `'.'` or lower-case English letters.
-*   At most `50000` calls will be made to `addWord` and `search`.
+*   `1 <= word.length <= 25`
+*   `word` in `addWord` consists of lowercase English letters.
+*   `word` in `search` consist of `'.'` or lowercase English letters.
+*   There will be at most `2` dots in `word` for `search` queries.
+*   At most <code>10<sup>4</sup></code> calls will be made to `addWord` and `search`.
