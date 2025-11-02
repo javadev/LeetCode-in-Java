@@ -2,7 +2,7 @@
 
 Easy
 
-Given the `head` of a singly linked list, return `true` if it is a palindrome.
+Given the `head` of a singly linked list, return `true` _if it is a_ _palindrome_ _or_ `false` _otherwise_.
 
 **Example 1:**
 
