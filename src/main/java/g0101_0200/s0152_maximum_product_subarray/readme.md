@@ -2,11 +2,11 @@
 
 Medium
 
-Given an integer array `nums`, find a contiguous non-empty subarray within the array that has the largest product, and return _the product_.
+Given an integer array `nums`, find a **non-empty subarrays** that has the largest product, and return _the product_.
 
-It is **guaranteed** that the answer will fit in a **32-bit** integer.
+The test cases are generated so that the answer will fit in a **32-bit** integer.
 
-A **subarray** is a contiguous subsequence of the array.
+**Note** that the product of an array with a single element is the value of that element.
 
 **Example 1:**
 
@@ -28,4 +28,4 @@ A **subarray** is a contiguous subsequence of the array.
 
 *   <code>1 <= nums.length <= 2 * 10<sup>4</sup></code>
 *   `-10 <= nums[i] <= 10`
-*   The product of any prefix or suffix of `nums` is **guaranteed** to fit in a **32-bit** integer.
+*   The product of any subarray of `nums` is **guaranteed** to fit in a **32-bit** integer.
