@@ -2,7 +2,7 @@
 
 Medium
 
-Write an efficient algorithm that searches for a `target` value in an `m x n` integer `matrix`. The `matrix` has the following properties:
+Write an efficient algorithm that searches for a value `target` in an `m x n` integer matrix `matrix`. This matrix has the following properties:
 
 *   Integers in each row are sorted in ascending from left to right.
 *   Integers in each column are sorted in ascending from top to bottom.
