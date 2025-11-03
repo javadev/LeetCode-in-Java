@@ -11,13 +11,13 @@ You start on square `1` of the board. In each move, starting from square `curr`,
 *   If `next` has a snake or ladder, you **must** move to the destination of that snake or ladder. Otherwise, you move to `next`.
 *   The game ends when you reach the square <code>n<sup>2</sup></code>.
 
-A board square on row `r` and column `c` has a snake or ladder if `board[r][c] != -1`. The destination of that snake or ladder is `board[r][c]`. Squares `1` and <code>n<sup>2</sup></code> do not have a snake or ladder.
+A board square on row `r` and column `c` has a snake or ladder if `board[r][c] != -1`. The destination of that snake or ladder is `board[r][c]`. Squares `1` and <code>n<sup>2</sup></code> are not the starting points of any snake or ladder.
 
-Note that you only take a snake or ladder at most once per move. If the destination to a snake or ladder is the start of another snake or ladder, you do **not** follow the subsequent snake or ladder.
+Note that you only take a snake or ladder at most once per dice roll. If the destination to a snake or ladder is the start of another snake or ladder, you do **not** follow the subsequent snake or ladder.
 
 *   For example, suppose the board is `[[-1,4],[-1,3]]`, and on the first move, your destination square is `2`. You follow the ladder to square `3`, but do **not** follow the subsequent ladder to `4`.
 
-Return _the least number of moves required to reach the square_ <code>n<sup>2</sup></code>_. If it is not possible to reach the square, return_ `-1`.
+Return _the least number of dice rolls required to reach the square_ <code>n<sup>2</sup></code>_. If it is not possible to reach the square, return_ `-1`.
 
 **Example 1:**
 
@@ -45,11 +45,11 @@ This is the lowest possible number of moves to reach the last square, so return 
 
 **Input:** board = [[-1,-1],[-1,3]]
 
-**Output:** 1
+**Output:** 1 
 
 **Constraints:**
 
 *   `n == board.length == board[i].length`
 *   `2 <= n <= 20`
-*   `grid[i][j]` is either `-1` or in the range <code>[1, n<sup>2</sup>]</code>.
-*   The squares labeled `1` and <code>n<sup>2</sup></code> do not have any ladders or snakes.
+*   `board[i][j]` is either `-1` or in the range <code>[1, n<sup>2</sup>]</code>.
+*   The squares labeled `1` and <code>n<sup>2</sup></code> are not the starting points of any snake or ladder.

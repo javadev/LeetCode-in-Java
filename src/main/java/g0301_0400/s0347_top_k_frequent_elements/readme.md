@@ -16,9 +16,16 @@ Given an integer array `nums` and an integer `k`, return _the_ `k` _most frequen
 
 **Output:** [1]
 
+**Example 3:**
+
+**Input:** nums = [1,2,1,2,1,2,3,1,3,2], k = 2
+
+**Output:** [1,2]
+
 **Constraints:**
 
 *   <code>1 <= nums.length <= 10<sup>5</sup></code>
+*   <code>-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup></code>
 *   `k` is in the range `[1, the number of unique elements in the array]`.
 *   It is **guaranteed** that the answer is **unique**.
 

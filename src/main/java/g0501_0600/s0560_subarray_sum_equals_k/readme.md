@@ -2,7 +2,9 @@
 
 Medium
 
-Given an array of integers `nums` and an integer `k`, return _the total number of continuous subarrays whose sum equals to `k`_.
+Given an array of integers `nums` and an integer `k`, return _the total number of subarrays whose sum equals to_ `k`.
+
+A subarray is a contiguous **non-empty** sequence of elements within an array.
 
 **Example 1:**
 
