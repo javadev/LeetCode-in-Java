@@ -4,19 +4,19 @@ Easy
 
 Given two strings `s` and `t`, return `true` _if_ `s` _is a **subsequence** of_ `t`_, or_ `false` _otherwise_.
 
-A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `"ace"` is a subsequence of `"abcde"` while `"aec"` is not).
+A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `"ace"` is a subsequence of <code>"<ins>a</ins>b<ins>c</ins>d<ins>e</ins>"</code> while `"aec"` is not).
 
 **Example 1:**
 
 **Input:** s = "abc", t = "ahbgdc"
 
-**Output:** true
+**Output:** true 
 
 **Example 2:**
 
 **Input:** s = "axc", t = "ahbgdc"
 
-**Output:** false
+**Output:** false 
 
 **Constraints:**
 

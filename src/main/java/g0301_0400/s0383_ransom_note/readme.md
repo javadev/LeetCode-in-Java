@@ -2,7 +2,7 @@
 
 Easy
 
-Given two stings `ransomNote` and `magazine`, return `true` if `ransomNote` can be constructed from `magazine` and `false` otherwise.
+Given two strings `ransomNote` and `magazine`, return `true` _if_ `ransomNote` _can be constructed by using the letters from_ `magazine` _and_ `false` _otherwise_.
 
 Each letter in `magazine` can only be used once in `ransomNote`.
 
@@ -10,19 +10,19 @@ Each letter in `magazine` can only be used once in `ransomNote`.
 
 **Input:** ransomNote = "a", magazine = "b"
 
-**Output:** false
+**Output:** false 
 
 **Example 2:**
 
 **Input:** ransomNote = "aa", magazine = "ab"
 
-**Output:** false
+**Output:** false 
 
 **Example 3:**
 
 **Input:** ransomNote = "aa", magazine = "aab"
 
-**Output:** true
+**Output:** true 
 
 **Constraints:**
 

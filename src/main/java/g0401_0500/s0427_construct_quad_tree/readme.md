@@ -2,11 +2,9 @@
 
 Medium
 
-Given a `n * n` matrix `grid` of `0's` and `1's` only. We want to represent the `grid` with a Quad-Tree.
+Given a `n * n` matrix `grid` of `0's` and `1's` only. We want to represent `grid` with a Quad-Tree.
 
-Return _the root of the Quad-Tree_ representing the `grid`.
-
-Notice that you can assign the value of a node to **True** or **False** when `isLeaf` is **False**, and both are **accepted** in the answer.
+Return _the root of the Quad-Tree representing_ `grid`.
 
 A Quad-Tree is a tree data structure in which each internal node has exactly four children. Besides, each node has two attributes:
 
@@ -34,7 +32,7 @@ If you want to know more about the Quad-Tree, you can refer to the [wiki](https:
 
 **Quad-Tree format:**
 
-The output represents the serialized format of a Quad-Tree using level order traversal, where `null` signifies a path terminator where no node exists below.
+You don't need to read this section for solving the problem. This is only if you want to understand the output format here. The output represents the serialized format of a Quad-Tree using level order traversal, where `null` signifies a path terminator where no node exists below.
 
 It is very similar to the serialization of the binary tree. The only difference is that the node is represented as a list `[isLeaf, val]`.
 
