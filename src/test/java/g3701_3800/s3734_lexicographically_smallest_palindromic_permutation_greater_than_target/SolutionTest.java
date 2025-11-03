@@ -95,7 +95,8 @@ class SolutionTest {
         // Branch: l == r with available character
         String target = "a";
         int[] freq = new int[26];
-        freq[0] = 1; // 'a' has frequency 1
+        // 'a' has frequency 1
+        freq[0] = 1;
         char[] ans = new char[1];
 
         boolean result = new Solution().func(0, target, ans, 0, 0, freq, false);
@@ -108,13 +109,15 @@ class SolutionTest {
         // Branch: end = true, finds char with freq > 1
         String target = "ab";
         int[] freq = new int[26];
-        freq[0] = 2; // 'a' can form a pair
+        // 'a' can form a pair
+        freq[0] = 2;
         freq[1] = 0;
         char[] ans = new char[2];
 
         boolean result = new Solution().func(1, target, ans, 0, 1, freq, true);
         assertThat(result, anyOf(equalTo(true), equalTo(false)));
-        assertThat(freq[0], equalTo(2)); // Frequency restored
+        // Frequency restored
+        assertThat(freq[0], equalTo(2));
     }
 
     @Test
