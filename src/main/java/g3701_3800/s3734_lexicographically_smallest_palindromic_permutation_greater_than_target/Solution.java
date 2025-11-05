@@ -1,6 +1,7 @@
 package g3701_3800.s3734_lexicographically_smallest_palindromic_permutation_greater_than_target;
 
-// #Hard #Weekly_Contest_474 #2025_11_02_Time_3_ms_(50.00%)_Space_46.55_MB_(_%)
+// #Hard #String #Two_Pointers #Enumeration #Weekly_Contest_474
+// #2025_11_05_Time_2_ms_(100.00%)_Space_46.34_MB_(84.73%)
 
 import java.util.Arrays;
 
