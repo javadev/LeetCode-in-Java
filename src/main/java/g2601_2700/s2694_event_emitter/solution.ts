@@ -14,7 +14,7 @@ class EventEmitter {
 
     subscribe(eventName: string, callback: Callback): Subscription {
         if (this.eventMap.has(eventName)) {
-            const set = this.eventMap.get(eventName)!
+            const set = this.eventMap.get(eventName)
             set.add(callback)
             this.eventMap.set(eventName, set)
         } else {
