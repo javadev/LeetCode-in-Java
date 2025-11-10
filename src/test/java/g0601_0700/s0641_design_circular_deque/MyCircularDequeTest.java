@@ -25,7 +25,7 @@ class MyCircularDequeTest {
         MyCircularDeque deque = new MyCircularDeque(2);
         assertThat(deque.insertFront(10), equalTo(true));
         assertThat(deque.insertFront(20), equalTo(true));
-        assertThat(deque.insertFront(30), equalTo(false)); // full
+        assertThat(deque.insertFront(30), equalTo(false));
         assertThat(deque.getFront(), equalTo(20));
         assertThat(deque.deleteFront(), equalTo(true));
         assertThat(deque.getFront(), equalTo(10));
