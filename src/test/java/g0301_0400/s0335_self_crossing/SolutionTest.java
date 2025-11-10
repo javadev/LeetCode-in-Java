@@ -73,7 +73,8 @@ class SolutionTest {
 
     @Test
     void isSelfCrossing14() {
-        assertThat(new Solution().isSelfCrossing(new int[] {1, 2, 3, 4, 5, 6, 7, 8}), equalTo(false));
+        assertThat(
+                new Solution().isSelfCrossing(new int[] {1, 2, 3, 4, 5, 6, 7, 8}), equalTo(false));
     }
 
     @Test
