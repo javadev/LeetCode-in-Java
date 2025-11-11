@@ -20,4 +20,39 @@ class SolutionTest {
     void maximumTime3() {
         assertThat(new Solution().maximumTime("1?:22"), equalTo("19:22"));
     }
+
+    @Test
+    void maximumTime4() {
+        assertThat(new Solution().maximumTime("?4:00"), equalTo("14:00"));
+    }
+
+    @Test
+    void maximumTime5() {
+        assertThat(new Solution().maximumTime("??:??"), equalTo("23:59"));
+    }
+
+    @Test
+    void maximumTime6() {
+        assertThat(new Solution().maximumTime("?3:15"), equalTo("23:15"));
+    }
+
+    @Test
+    void maximumTime7() {
+        assertThat(new Solution().maximumTime("2?:45"), equalTo("23:45"));
+    }
+
+    @Test
+    void maximumTime8() {
+        assertThat(new Solution().maximumTime("1?:??"), equalTo("19:59"));
+    }
+
+    @Test
+    void maximumTime9() {
+        assertThat(new Solution().maximumTime("10:?7"), equalTo("10:57"));
+    }
+
+    @Test
+    void maximumTime10() {
+        assertThat(new Solution().maximumTime("22:4?"), equalTo("22:49"));
+    }
 }
