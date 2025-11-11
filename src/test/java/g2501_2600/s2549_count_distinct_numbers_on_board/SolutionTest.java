@@ -15,4 +15,19 @@ class SolutionTest {
     void distinctIntegers2() {
         assertThat(new Solution().distinctIntegers(3), equalTo(2));
     }
+
+    @Test
+    void distinctIntegers3() {
+        assertThat(new Solution().distinctIntegers(1), equalTo(1));
+    }
+
+    @Test
+    void distinctIntegers4() {
+        assertThat(new Solution().distinctIntegers(2), equalTo(1));
+    }
+
+    @Test
+    void distinctIntegers5() {
+        assertThat(new Solution().distinctIntegers(1000), equalTo(999));
+    }
 }
