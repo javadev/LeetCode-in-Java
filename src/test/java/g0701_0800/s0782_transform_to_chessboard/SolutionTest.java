@@ -26,4 +26,72 @@ class SolutionTest {
     void movesToChessboard3() {
         assertThat(new Solution().movesToChessboard(new int[][] {{1, 0}, {1, 0}}), equalTo(-1));
     }
+
+    @Test
+    void movesToChessboard4() {
+        assertThat(
+                new Solution()
+                        .movesToChessboard(
+                                new int[][] {
+                                    {0, 0},
+                                    {0, 1}
+                                }),
+                equalTo(-1));
+    }
+
+    @Test
+    void movesToChessboard5() {
+        assertThat(
+                new Solution()
+                        .movesToChessboard(
+                                new int[][] {
+                                    {1, 1},
+                                    {1, 1}
+                                }),
+                equalTo(-1));
+    }
+
+    @Test
+    void movesToChessboard6() {
+        assertThat(
+                new Solution()
+                        .movesToChessboard(
+                                new int[][] {
+                                    {1, 0},
+                                    {1, 0}
+                                }),
+                equalTo(-1));
+    }
+
+    @Test
+    void movesToChessboard7() {
+        assertThat(
+                new Solution()
+                        .movesToChessboard(
+                                new int[][] {
+                                    {1, 0, 1},
+                                    {0, 1, 0},
+                                    {1, 0, 1}
+                                }),
+                equalTo(0));
+    }
+
+    @Test
+    void movesToChessboard8() {
+        assertThat(
+                new Solution()
+                        .movesToChessboard(
+                                new int[][] {
+                                    {1, 0, 0, 1},
+                                    {0, 1, 1, 0},
+                                    {1, 0, 0, 1},
+                                    {0, 1, 1, 0}
+                                }),
+                equalTo(1));
+    }
+
+    @Test
+    void movesToChessboard9() {
+        assertThat(new Solution().movesToChessboard(new int[][] {{0}}), equalTo(0));
+    }
 }

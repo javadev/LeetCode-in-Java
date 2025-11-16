@@ -20,4 +20,52 @@ class SolutionTest {
     void isRationalEqual3() {
         assertThat(new Solution().isRationalEqual("0.9(9)", "1."), equalTo(true));
     }
+
+    @Test
+    void isRationalEqual4() {
+        assertThat(new Solution().isRationalEqual("3.14", "3.14"), equalTo(true));
+    }
+
+    @Test
+    void isRationalEqual5() {
+        assertThat(new Solution().isRationalEqual("3.14", "3.15"), equalTo(false));
+    }
+
+    @Test
+    void isRationalEqual6() {
+        // 0.(3) = 0.3333...
+        assertThat(new Solution().isRationalEqual("0.(3)", "0.3333333333"), equalTo(false));
+    }
+
+    @Test
+    void isRationalEqual7() {
+        assertThat(new Solution().isRationalEqual("0.(12)", "0.(13)"), equalTo(false));
+    }
+
+    @Test
+    void isRationalEqual8() {
+        // 1.(0) = 1.00000....
+        assertThat(new Solution().isRationalEqual("1.(0)", "1."), equalTo(true));
+    }
+
+    @Test
+    void isRationalEqual9() {
+        // large repeating cycle
+        assertThat(new Solution().isRationalEqual("0.(987654321)", "0.(987654321)"), equalTo(true));
+    }
+
+    @Test
+    void isRationalEqual10() {
+        assertThat(new Solution().isRationalEqual("42", "42"), equalTo(true));
+    }
+
+    @Test
+    void isRationalEqual11() {
+        assertThat(new Solution().isRationalEqual("42", "42.0"), equalTo(true));
+    }
+
+    @Test
+    void isRationalEqual12() {
+        assertThat(new Solution().isRationalEqual("0.(1)", "0.(2)"), equalTo(false));
+    }
 }
