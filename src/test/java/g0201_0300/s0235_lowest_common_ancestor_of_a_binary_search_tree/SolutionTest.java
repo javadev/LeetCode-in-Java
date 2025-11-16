@@ -42,4 +42,36 @@ class SolutionTest {
                         .val,
                 equalTo(2));
     }
+
+    @Test
+    void lowestCommonAncestor4() {
+        TreeNode root = new TreeNode(1);
+        assertThat(
+                new Solution().lowestCommonAncestor(root, new TreeNode(1), new TreeNode(1)).val,
+                equalTo(1));
+    }
+
+    @Test
+    void lowestCommonAncestor5() {
+        TreeNode root = new TreeNode(3, new TreeNode(1), new TreeNode(4));
+        assertThat(
+                new Solution().lowestCommonAncestor(root, new TreeNode(1), new TreeNode(1)).val,
+                equalTo(1));
+    }
+
+    @Test
+    void lowestCommonAncestor6() {
+        TreeNode root = new TreeNode(3, new TreeNode(1), new TreeNode(4));
+        assertThat(
+                new Solution().lowestCommonAncestor(root, new TreeNode(4), new TreeNode(4)).val,
+                equalTo(4));
+    }
+
+    @Test
+    void lowestCommonAncestor7() {
+        TreeNode root = new TreeNode(5, new TreeNode(3), new TreeNode(8));
+        assertThat(
+                new Solution().lowestCommonAncestor(root, new TreeNode(3), new TreeNode(8)).val,
+                equalTo(5));
+    }
 }
