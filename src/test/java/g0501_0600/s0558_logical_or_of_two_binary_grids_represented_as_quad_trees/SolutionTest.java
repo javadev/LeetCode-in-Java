@@ -26,4 +26,52 @@ class SolutionTest {
                 new Solution().intersect(node1, node2).toString(),
                 equalTo("[0,0][1,1][1,1][1,1][1,0]"));
     }
+
+    @Test
+    void intersect2() {
+        Node n1 = new Node(true, true);
+        Node n2 = new Node(true, true);
+        assertThat(new Solution().intersect(n1, n2), equalTo(n1));
+    }
+
+    @Test
+    void intersect3() {
+        Node n1 = new Node(true, true);
+        Node n2 = new Node(false, false);
+        assertThat(new Solution().intersect(n1, n2), equalTo(n1));
+    }
+
+    @Test
+    void intersect4() {
+        Node n1 = new Node(false, false);
+        Node n2 = new Node(true, true);
+        assertThat(new Solution().intersect(n1, n2), equalTo(n2));
+    }
+
+    @Test
+    void intersect5() {
+        Node n1 = new Node(true, false);
+        Node n2 = new Node(true, true);
+        assertThat(new Solution().intersect(n1, n2), equalTo(n2));
+    }
+
+    @Test
+    void intersect6() {
+        Node a = new Node(true, true);
+        Node n1 = new Node(false, false);
+        n1.topLeft = a;
+        n1.topRight = a;
+        n1.bottomLeft = a;
+        n1.bottomRight = a;
+
+        Node n2 = new Node(false, false);
+        n2.topLeft = new Node(true, true);
+        n2.topRight = new Node(true, true);
+        n2.bottomLeft = new Node(true, true);
+        n2.bottomRight = new Node(true, true);
+
+        Node result = new Solution().intersect(n1, n2);
+        assertThat(result.isLeaf, equalTo(true));
+        assertThat(result.val, equalTo(true));
+    }
 }

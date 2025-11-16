@@ -23,4 +23,48 @@ class SolutionTest {
         assertThat(
                 new Solution().findIndices(new int[] {1, 2, 3}, 2, 4), equalTo(new int[] {-1, -1}));
     }
+
+    @Test
+    void findIndices4() {
+        int[] big = new int[100000];
+        assertThat(
+                new Solution().findIndices(big, 1, 1_000_000_000),
+                equalTo(new int[] {49998, 50000}));
+    }
+
+    @Test
+    void findIndices5() {
+        int[] big = new int[100001];
+        assertThat(new Solution().findIndices(big, 2, 100000), equalTo(new int[] {-1, -1}));
+    }
+
+    @Test
+    void findIndices6() {
+        int[] big = new int[100001];
+        assertThat(new Solution().findIndices(big, 5, 1_000_000_000), equalTo(new int[] {-1, -1}));
+    }
+
+    @Test
+    void findIndices7() {
+        assertThat(
+                new Solution().findIndices(new int[] {1, 1, 10}, 1, 5), equalTo(new int[] {0, 2}));
+    }
+
+    @Test
+    void findIndices8() {
+        assertThat(
+                new Solution().findIndices(new int[] {7, 7, 7}, 3, 1), equalTo(new int[] {-1, -1}));
+    }
+
+    @Test
+    void findIndices9() {
+        assertThat(
+                new Solution().findIndices(new int[] {9, 3, 5}, 0, 0), equalTo(new int[] {0, 0}));
+    }
+
+    @Test
+    void findIndices10() {
+        assertThat(
+                new Solution().findIndices(new int[] {3, 10, 3}, 1, 7), equalTo(new int[] {0, 1}));
+    }
 }
