@@ -74,4 +74,69 @@ class SolutionTest {
                                 new int[][] {{2, 40, 2}, {4, 2, 3}, {5, 1, 6}, {7, 8, 9}}),
                 equalTo(true));
     }
+
+    @Test
+    void canPartitionGrid12() {
+        assertThat(
+                new Solution().canPartitionGrid(new int[][] {{1, 5}, {2, 4}, {3, 3}}),
+                equalTo(false));
+    }
+
+    @Test
+    void canPartitionGrid13() {
+        assertThat(new Solution().canPartitionGrid(new int[][] {{1, 1}, {2, 0}}), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid14() {
+        assertThat(new Solution().canPartitionGrid(new int[][] {{5, 2}, {1, 1}}), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid15() {
+        assertThat(new Solution().canPartitionGrid(new int[][] {{4}, {1}, {3}}), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid16() {
+        assertThat(new Solution().canPartitionGrid(new int[][] {{5}, {3}, {2}}), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid17() {
+        assertThat(new Solution().canPartitionGrid(new int[][] {{2, 2, 4}}), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid18() {
+        assertThat(new Solution().canPartitionGrid(new int[][] {{3, 3, 1}}), equalTo(false));
+    }
+
+    @Test
+    void canPartitionGrid19() {
+        int[][] grid = {{100000, 100000}, {100000, 100000}};
+        assertThat(new Solution().canPartitionGrid(grid), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid20() {
+        assertThat(new Solution().canPartitionGrid(new int[][] {{1, 2}, {4, 6}}), equalTo(false));
+    }
+
+    @Test
+    void canPartitionGrid21() {
+        assertThat(new Solution().canPartitionGrid(new int[][] {{1, 2}, {4, 5}}), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid22() {
+        assertThat(new Solution().canPartitionGrid(new int[][] {{9, 1, 8}}), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid23() {
+        assertThat(
+                new Solution().canPartitionGrid(new int[][] {{2, 2}, {2, 2}, {1, 1}}),
+                equalTo(true));
+    }
 }
