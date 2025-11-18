@@ -28,7 +28,7 @@ class SolutionTest {
 
     @Test
     void kItemsWithMaximumSum5() {
-        assertThat(new Solution().kItemsWithMaximumSum(3, 1, 5, 6), equalTo(2));
+        assertThat(new Solution().kItemsWithMaximumSum(3, 1, 5, 6), equalTo(1));
     }
 
     @Test
