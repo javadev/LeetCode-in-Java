@@ -139,4 +139,61 @@ class SolutionTest {
                 new Solution().canPartitionGrid(new int[][] {{2, 2}, {2, 2}, {1, 1}}),
                 equalTo(true));
     }
+
+    @Test
+    void canPartitionGrid24() {
+        Solution solution = new Solution();
+        int[][] grid = {
+            {2, 1},
+            {1, 1}
+        };
+        assertThat(solution.canPartitionGrid(grid), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid2325() {
+        Solution solution = new Solution();
+        int[][] grid = {{1}, {2}, {1}};
+        assertThat(solution.canPartitionGrid(grid), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid26() {
+        Solution solution = new Solution();
+        int[][] grid = {
+            {1, 2},
+            {1, 1}
+        };
+        assertThat(solution.canPartitionGrid(grid), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid27() {
+        Solution solution = new Solution();
+        int[][] grid = {
+            {1, 1, 2},
+            {1, 1, 1}
+        };
+        assertThat(solution.canPartitionGrid(grid), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid28() {
+        Solution solution = new Solution();
+        int[][] grid = {
+            {1, 1},
+            {1, 1}
+        };
+        assertThat(solution.canPartitionGrid(grid), equalTo(true));
+    }
+
+    @Test
+    void canPartitionGrid29() {
+        Solution solution = new Solution();
+        int[][] grid = {
+            {1, 2},
+            {3, 4}
+        };
+        assertThat(solution.canPartitionGrid(grid), equalTo(true));
+    }
 }
