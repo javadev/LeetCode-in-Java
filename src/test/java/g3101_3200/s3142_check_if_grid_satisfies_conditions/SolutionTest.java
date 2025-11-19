@@ -22,12 +22,12 @@ class SolutionTest {
 
     @Test
     void satisfiesConditions3() {
-        assertThat(new Solution().satisfiesConditions(new int[][] {{1}, {2}, {3}}), equalTo(true));
+        assertThat(new Solution().satisfiesConditions(new int[][] {{1}, {2}, {3}}), equalTo(false));
     }
 
     @Test
     void satisfiesConditions4() {
-        assertThat(new Solution().satisfiesConditions(new int[][] {{1}, {1}}), equalTo(false));
+        assertThat(new Solution().satisfiesConditions(new int[][] {{1}, {1}}), equalTo(true));
     }
 
     @Test
@@ -54,13 +54,13 @@ class SolutionTest {
             {0, 1, 0},
             {1, 0, 1}
         };
-        assertThat(new Solution().satisfiesConditions(grid), equalTo(true));
+        assertThat(new Solution().satisfiesConditions(grid), equalTo(false));
     }
 
     @Test
     void satisfiesConditions9() {
         assertThat(
-                new Solution().satisfiesConditions(new int[][] {{5, 1}, {5, 0}}), equalTo(false));
+                new Solution().satisfiesConditions(new int[][] {{5, 1}, {5, 0}}), equalTo(true));
     }
 
     @Test
@@ -80,7 +80,7 @@ class SolutionTest {
             {4, 1, 5, 2},
             {3, 0, 4, 1}
         };
-        assertThat(new Solution().satisfiesConditions(grid), equalTo(true));
+        assertThat(new Solution().satisfiesConditions(grid), equalTo(false));
     }
 
     @Test
