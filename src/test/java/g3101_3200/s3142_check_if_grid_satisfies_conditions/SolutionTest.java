@@ -59,8 +59,7 @@ class SolutionTest {
 
     @Test
     void satisfiesConditions9() {
-        assertThat(
-                new Solution().satisfiesConditions(new int[][] {{5, 1}, {5, 0}}), equalTo(true));
+        assertThat(new Solution().satisfiesConditions(new int[][] {{5, 1}, {5, 0}}), equalTo(true));
     }
 
     @Test
