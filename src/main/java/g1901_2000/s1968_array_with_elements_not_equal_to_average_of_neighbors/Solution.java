@@ -5,6 +5,7 @@ package g1901_2000.s1968_array_with_elements_not_equal_to_average_of_neighbors;
 import java.security.SecureRandom;
 import java.util.Random;
 
+@SuppressWarnings("java:S2119")
 public class Solution {
     public int[] rearrangeArray(int[] nums) {
         Random random = new SecureRandom();
