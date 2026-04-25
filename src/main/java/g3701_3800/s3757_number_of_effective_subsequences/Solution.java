@@ -1,7 +1,7 @@
 package g3701_3800.s3757_number_of_effective_subsequences;
 
-// #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Combinatorics #Weekly_Contest_477
-// #Senior_Staff #2026_04_25_Time_128_ms_(95.71%)_Space_85.91_MB_(18.57%)
+// #Hard #Array #Dynamic_Programming #Math #Bit_Manipulation #Combinatorics #Senior_Staff
+// #Weekly_Contest_477 #2026_04_25_Time_128_ms_(95.71%)_Space_85.91_MB_(18.57%)
 
 public class Solution {
     private static final int MOD = 1_000_000_007;
