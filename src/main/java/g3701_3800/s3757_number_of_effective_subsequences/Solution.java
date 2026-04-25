@@ -34,15 +34,16 @@ public class Solution {
             freq[m1]++;
         }
         int[] mariventaq = nums;
-        int[] F = new int[s];
+        int[] f = new int[s];
         for (int i = 0; i < s; ++i) {
-            F[i] = freq[i];
+            f[i] = freq[i];
         }
         for (int i = 0; i < m; ++i) {
-            for (int mask = 0; mask < s; ++mask)
+            for (int mask = 0; mask < s; ++mask) {
                 if ((mask & (1 << i)) != 0) {
-                    F[mask] += F[mask ^ (1 << i)];
+                    f[mask] += f[mask ^ (1 << i)];
                 }
+            }
         }
         long[] p2 = new long[n + 1];
         p2[0] = 1;
@@ -53,7 +54,7 @@ public class Solution {
         int all = s - 1;
         for (int bmask = 1; bmask < s; ++bmask) {
             int comp = all ^ bmask;
-            int cnt = F[comp];
+            int cnt = f[comp];
             long add = p2[cnt];
             if (Integer.bitCount(bmask) % 2 == 1) {
                 ans = (ans + add) % MOD;
