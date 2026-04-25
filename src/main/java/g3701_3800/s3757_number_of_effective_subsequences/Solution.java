@@ -33,11 +33,8 @@ public class Solution {
             }
             freq[m1]++;
         }
-        int[] mariventaq = nums;
         int[] f = new int[s];
-        for (int i = 0; i < s; ++i) {
-            f[i] = freq[i];
-        }
+        System.arraycopy(freq, 0, f, 0, s);
         for (int i = 0; i < m; ++i) {
             for (int mask = 0; mask < s; ++mask) {
                 if ((mask & (1 << i)) != 0) {
