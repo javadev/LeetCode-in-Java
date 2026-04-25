@@ -1,6 +1,6 @@
 package g3701_3800.s3756_concatenate_non_zero_digits_and_multiply_by_sum_ii;
 
-// #Medium #String #Math #Prefix_Sum #Weekly_Contest_477 #Staff
+// #Medium #String #Math #Prefix_Sum #Staff #Weekly_Contest_477
 // #2026_04_25_Time_14_ms_(100.00%)_Space_131.16_MB_(32.94%)
 
 public class Solution {
