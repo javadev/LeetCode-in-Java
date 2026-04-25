@@ -15,4 +15,9 @@ class SolutionTest {
     void countElements2() {
         assertThat(new Solution().countElements(new int[] {5, 5, 5}, 2), equalTo(0));
     }
+
+    @Test
+    void countElements3() {
+        assertThat(new Solution().countElements(new int[] {5, 5, 5}, 0), equalTo(3));
+    }
 }
