@@ -1,6 +1,7 @@
 package g3701_3800.s3754_concatenate_non_zero_digits_and_multiply_by_sum_i;
 
-// #Easy #Math #Weekly_Contest_477 #2026_04_25_Time_1_ms_(100.00%)_Space_42.50_MB_(73.85%)
+// #Easy #Math #Mid_Level #Weekly_Contest_477
+// #2026_04_25_Time_1_ms_(100.00%)_Space_42.50_MB_(73.85%)
 
 public class Solution {
     public long sumAndMultiply(int n) {
