@@ -32,7 +32,7 @@ Return an array `ans`, where `ans[j]` is the node index of the weighted median f
 
 **Output:** [1,0,2]
 
-**E****xplanation:**
+**Explanation:**
 
 ![](https://assets.leetcode.com/uploads/2025/05/26/screenshot-2025-05-26-at-193610.png)
 

@@ -4,7 +4,7 @@ Medium
 
 You are given an integer array `nums` and an integer `m`.
 
-Return the **maximum** product of the first and last elements of any ****subsequences**** of `nums` of size `m`.
+Return the **maximum** product of the first and last elements of any **subsequences** of `nums` of size `m`.
 
 **Example 1:**
 

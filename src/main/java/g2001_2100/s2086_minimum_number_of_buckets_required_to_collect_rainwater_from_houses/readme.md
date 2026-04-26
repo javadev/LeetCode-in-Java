@@ -2,7 +2,7 @@
 
 Medium
 
-You are given a **0-index****ed** string `street`. Each character in `street` is either `'H'` representing a house or `'.'` representing an empty space.
+You are given a **0-indexed** string `street`. Each character in `street` is either `'H'` representing a house or `'.'` representing an empty space.
 
 You can place buckets on the **empty spaces** to collect rainwater that falls from the adjacent houses. The rainwater from a house at index `i` is collected if a bucket is placed at index `i - 1` **and/or** index `i + 1`. A single bucket, if placed adjacent to two houses, can collect the rainwater from **both** houses.
 

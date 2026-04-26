@@ -4,7 +4,7 @@ Hard
 
 You are given an integer array `nums`.
 
-A ****non-empty subarrays**** of `nums` is called **stable** if it contains **no inversions**, i.e., there is no pair of indices `i < j` such that `nums[i] > nums[j]`.
+A **non-empty subarrays** of `nums` is called **stable** if it contains **no inversions**, i.e., there is no pair of indices `i < j` such that `nums[i] > nums[j]`.
 
 You are also given a **2D integer array** `queries` of length `q`, where each <code>queries[i] = [l<sub>i</sub>, r<sub>i</sub>]</code> represents a query. For each query <code>[l<sub>i</sub>, r<sub>i</sub>]</code>, compute the number of **stable subarrays** that lie entirely within the segment <code>nums[l<sub>i</sub>..r<sub>i</sub>]</code>.
 

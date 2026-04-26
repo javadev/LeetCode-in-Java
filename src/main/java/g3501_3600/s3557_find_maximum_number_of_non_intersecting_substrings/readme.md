@@ -4,7 +4,7 @@ Medium
 
 You are given a string `word`.
 
-Return the **maximum** number of non-intersecting ****substring**** of word that are at **least** four characters long and start and end with the same letter.
+Return the **maximum** number of non-intersecting **substring** of word that are at **least** four characters long and start and end with the same letter.
 
 **Example 1:**
 

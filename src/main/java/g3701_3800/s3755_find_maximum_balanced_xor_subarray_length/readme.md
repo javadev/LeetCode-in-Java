@@ -2,7 +2,7 @@
 
 Medium
 
-Given an integer array `nums`, return the **length** of the **longest **non-empty subarrays**** that has a bitwise XOR of zero and contains an **equal** number of **even** and **odd** numbers. If no such subarray exists, return 0.
+Given an integer array `nums`, return the **length** of the **longest non-empty subarrays** that has a bitwise XOR of zero and contains an **equal** number of **even** and **odd** numbers. If no such subarray exists, return 0.
 
 **Example 1:**
 

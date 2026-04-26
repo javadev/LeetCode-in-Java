@@ -4,7 +4,7 @@ Hard
 
 You are given an integer array `nums` **sorted** in **non-descending** order and a positive integer `k`.
 
-A ****non-empty subarrays**** of `nums` is **good** if the sum of its elements is **divisible** by `k`.
+A **non-empty subarrays** of `nums` is **good** if the sum of its elements is **divisible** by `k`.
 
 Return an integer denoting the number of **distinct** **good** subarrays of `nums`.
 
