@@ -4,7 +4,7 @@ Hard
 
 You are given two strings, `word1` and `word2`, of equal length. You need to transform `word1` into `word2`.
 
-For this, divide `word1` into one or more **contiguous **substring****. For each substring `substr` you can perform the following operations:
+For this, divide `word1` into one or more **contiguous substring**. For each substring `substr` you can perform the following operations:
 
 1.  **Replace:** Replace the character at any one index of `substr` with another lowercase English letter.
     

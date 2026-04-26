@@ -16,7 +16,7 @@ Return the **maximum** possible length of a **palindrome** that can be formed by
 
 **Output:** 3
 
-**Exp****lanation:**
+**Explanation:**
 
 ![](https://assets.leetcode.com/uploads/2025/06/13/screenshot-2025-06-13-at-230714.png)
 

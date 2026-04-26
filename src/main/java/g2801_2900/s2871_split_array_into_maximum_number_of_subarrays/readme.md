@@ -8,7 +8,7 @@ We define the score of subarray `nums[l..r]` such that `l <= r` as `nums[l] AND 
 
 Consider splitting the array into one or more subarrays such that the following conditions are satisfied:
 
-*   **E****ach** element of the array belongs to **exactly** one subarray.
+*   **Each** element of the array belongs to **exactly** one subarray.
 *   The sum of scores of the subarrays is the **minimum** possible.
 
 Return _the **maximum** number of subarrays in a split that satisfies the conditions above._

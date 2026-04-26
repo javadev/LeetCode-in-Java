@@ -8,7 +8,7 @@ A **string** is **k-balanced** if it is **exactly** `k` **consecutive** `'('` fo
 
 For example, if `k = 3`, k-balanced is `"((()))"`.
 
-You must **repeatedly** remove all **non-overlapping k-balanced **substring**** from `s`, and then join the remaining parts. Continue this process until no k-balanced **substring** exists.
+You must **repeatedly** remove all **non-overlapping k-balanced substring** from `s`, and then join the remaining parts. Continue this process until no k-balanced **substring** exists.
 
 Return the final string after all possible removals.
 

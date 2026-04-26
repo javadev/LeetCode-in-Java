@@ -2,7 +2,7 @@
 
 Hard
 
-You are given an integer array `nums` and two integers, `k` and `limit`. Your task is to find a non-empty ****subsequences**** of `nums` that:
+You are given an integer array `nums` and two integers, `k` and `limit`. Your task is to find a non-empty **subsequences** of `nums` that:
 
 *   Has an **alternating sum** equal to `k`.
 *   **Maximizes** the product of all its numbers _without the product exceeding_ `limit`.

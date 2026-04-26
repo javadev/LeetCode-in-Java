@@ -2,7 +2,7 @@
 
 Hard
 
-You are given a **1****\-indexed** array `nums` of `n` integers.
+You are given a **1\-indexed** array `nums` of `n` integers.
 
 A set of numbers is **complete** if the product of every pair of its elements is a perfect square.
 

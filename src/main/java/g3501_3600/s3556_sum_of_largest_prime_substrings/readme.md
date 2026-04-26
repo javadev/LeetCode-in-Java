@@ -2,7 +2,7 @@
 
 Medium
 
-Given a string `s`, find the sum of the **3 largest unique prime numbers** that can be formed using any of its ****substring****.
+Given a string `s`, find the sum of the **3 largest unique prime numbers** that can be formed using any of its **substring**.
 
 Return the **sum** of the three largest unique prime numbers that can be formed. If fewer than three exist, return the sum of **all** available primes. If no prime numbers can be formed, return 0.
 

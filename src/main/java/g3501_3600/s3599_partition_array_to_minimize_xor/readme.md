@@ -4,7 +4,7 @@ Medium
 
 You are given an integer array `nums` and an integer `k`.
 
-Your task is to partition `nums` into `k` non-empty ****non-empty subarrays****. For each subarray, compute the bitwise **XOR** of all its elements.
+Your task is to partition `nums` into `k` non-empty **non-empty subarrays**. For each subarray, compute the bitwise **XOR** of all its elements.
 
 Return the **minimum** possible value of the **maximum XOR** among these `k` subarrays.
 
