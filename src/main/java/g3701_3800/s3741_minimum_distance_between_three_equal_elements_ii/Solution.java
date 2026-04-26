@@ -12,7 +12,6 @@ public class Solution {
         for (int i = 0; i < n + 1; i++) {
             prev1[i] = prev2[i] = -1;
         }
-
         for (int i = 0; i < n; i++) {
             int value = nums[i];
             if (prev2[value] != -1) {
@@ -21,7 +20,9 @@ public class Solution {
             prev2[value] = prev1[value];
             prev1[value] = i;
         }
-        if (ans < 100002) return ans * 2;
+        if (ans < 100002) {
+            return ans * 2;
+        }
         return -1;
     }
 }
