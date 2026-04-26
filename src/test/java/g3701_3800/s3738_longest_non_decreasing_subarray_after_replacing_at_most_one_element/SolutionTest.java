@@ -20,4 +20,9 @@ class SolutionTest {
     void longestSubarray3() {
         assertThat(new Solution().longestSubarray(new int[] {1, 5, 3, 4, 6}), equalTo(5));
     }
+
+    @Test
+    void longestSubarray4() {
+        assertThat(new Solution().longestSubarray(new int[] {1, 5}), equalTo(2));
+    }
 }
