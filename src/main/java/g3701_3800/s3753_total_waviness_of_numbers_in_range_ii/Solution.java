@@ -72,6 +72,7 @@ public class Solution {
                 totalSum += nxt.sum + add * nxt.count;
             }
         }
-        return memo[pos][tight][started][prev2][prev1] = new Pair(totalCount, totalSum);
+        memo[pos][tight][started][prev2][prev1] = new Pair(totalCount, totalSum);
+        return memo[pos][tight][started][prev2][prev1];
     }
 }
