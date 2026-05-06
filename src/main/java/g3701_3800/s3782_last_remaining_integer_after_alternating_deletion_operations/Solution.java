@@ -5,7 +5,7 @@ package g3701_3800.s3782_last_remaining_integer_after_alternating_deletion_opera
 
 public class Solution {
     public long lastInteger(long n) {
-        final long MASK = 0xAAAAAAAAAAAAAAAL;
-        return ((n - 1) & MASK) + 1;
+        final long mask = 0xAAAAAAAAAAAAAAAL;
+        return ((n - 1) & mask) + 1;
     }
 }
