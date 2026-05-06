@@ -1,4 +1,4 @@
-package g3701_3800.s3734_lexicographically_smallest_palindromic_permutation_greater_than_target;
+package g3701_3800.s3777_minimum_deletions_to_make_alternating_substring;
 
 // #Hard #String #Segment_Tree #Senior_Staff #Weekly_Contest_480
 // #2026_05_06_Time_35_ms_(100.00%)_Space_247.99_MB_(90.00%)
