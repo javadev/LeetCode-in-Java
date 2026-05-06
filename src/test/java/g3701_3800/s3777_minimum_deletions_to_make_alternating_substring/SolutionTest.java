@@ -82,7 +82,7 @@ class SolutionTest {
                                 new int[][] {
                                     {2, 0, 4}, {1, 2}, {2, 0, 4}, {1, 0}, {2, 0, 4}, {2, 1, 3}
                                 }),
-                equalTo(new int[] {2, 1, 2, 1}));
+                equalTo(new int[] {2, 2, 1, 1}));
     }
 
     @Test
@@ -93,7 +93,7 @@ class SolutionTest {
                 new Solution()
                         .minDeletions(
                                 "AAAA", new int[][] {{2, 0, 3}, {1, 2}, {2, 0, 3}, {2, 0, 1}}),
-                equalTo(new int[] {3, 2, 1}));
+                equalTo(new int[] {3, 1, 1}));
     }
 
     @Test
