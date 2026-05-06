@@ -24,6 +24,6 @@ class SolutionTest {
     void minDeletions3() {
         assertThat(
                 new Solution().minDeletions("BABA", new int[][] {{2, 0, 3}, {1, 1}, {2, 1, 3}}),
-                equalTo(new int[] {1, 0}));
+                equalTo(new int[] {0, 1}));
     }
 }
