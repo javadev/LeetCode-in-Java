@@ -23,55 +23,11 @@ Your task is to return an integer array `ans`, where `ans[i]` represents the **m
 
 One optimal set of operations:
 
-`nums[i]`
-
-Binary(`nums[i]`)
-
-Nearest   
-Palindrome
-
-Binary   
-(Palindrome)
-
-Operations Required
-
-`ans[i]`
-
-1
-
-1
-
-1
-
-1
-
-Already palindrome
-
-0
-
-2
-
-10
-
-3
-
-11
-
-Increase by 1
-
-1
-
-4
-
-100
-
-3
-
-11
-
-Decrease by 1
-
-1
+| `nums[i]` | Binary(`nums[i]`) | Nearest Palindrome | Binary (Palindrome) | Operations Required | `ans[i]` |
+|---|---|---|---|---|---|
+| 1 | 1 | 1 | 1 | Already palindrome | 0 |
+| 2 | 10 | 3 | 11 | Increase by 1 | 1 |
+| 4 | 100 | 3 | 11 | Decrease by 1 | 1 |
 
 Thus, `ans = [0, 1, 1]`.
 
@@ -85,55 +41,11 @@ Thus, `ans = [0, 1, 1]`.
 
 One optimal set of operations:
 
-`nums[i]`
-
-Binary(`nums[i]`)
-
-Nearest   
-Palindrome
-
-Binary   
-(Palindrome)
-
-Operations Required
-
-`ans[i]`
-
-6
-
-110
-
-5
-
-101
-
-Decrease by 1
-
-1
-
-7
-
-111
-
-7
-
-111
-
-Already palindrome
-
-0
-
-12
-
-1100
-
-15
-
-1111
-
-Increase by 3
-
-3
+| `nums[i]` | Binary(`nums[i]`) | Nearest Palindrome | Binary (Palindrome) | Operations Required | `ans[i]` |
+|---|---|---|---|---|---|
+| 6 | 110 | 5 | 101 | Decrease by 1 | 1 |
+| 7 | 111 | 7 | 111 | Already palindrome | 0 |
+| 12 | 1100 | 15 | 1111 | Increase by 3 | 3 |
 
 Thus, `ans = [1, 0, 3]`.
 
