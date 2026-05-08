@@ -13,7 +13,8 @@ public class Solution {
         int idx = 0;
         Arrays.fill(h, -1);
         for (int[] ed : edges) {
-            int a = ed[0], b = ed[1];
+            int a = ed[0];
+            int b = ed[1];
             e[idx] = b;
             ne[idx] = h[a];
             h[a] = idx++;
