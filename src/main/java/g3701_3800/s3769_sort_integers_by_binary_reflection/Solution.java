@@ -23,7 +23,6 @@ public class Solution {
         while (!minHeap.isEmpty()) {
             sortedByReflection[idx++] = minHeap.poll()[0];
         }
-
         return sortedByReflection;
     }
 
