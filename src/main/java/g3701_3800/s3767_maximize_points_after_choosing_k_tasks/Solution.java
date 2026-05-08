@@ -9,7 +9,7 @@ public class Solution {
     public long maxPoints(int[] technique1, int[] technique2, int k) {
         int n = technique1.length;
         int use2 = n - k;
-        PriorityQueue<Integer> min = new PriorityQueue<Integer>();
+        PriorityQueue<Integer> min = new PriorityQueue<>();
         long ans = 0;
         for (int i = 0; i < n; ++i) {
             int diff = technique2[i] - technique1[i];
