@@ -21,7 +21,7 @@ public class Solution {
             bit.add(nums[i], 1);
             invCount += Math.min(i + 1, k) - bit.presum(nums[i]);
             if (i < k - 1) {
-                continue; 
+                continue;
             }
             ans = Math.min(ans, invCount);
             invCount -= bit.presum(nums[i - k + 1] - 1);
