@@ -22,7 +22,7 @@ public class Solution {
             return -1;
         }
         for (int d = 1; balance[j] < 0; ++d) {
-            long storage = balance[(j + d) % n] + balance[(j - d % n + n) % n];
+            long storage = balance[(j + d) % n] + (long) balance[(j - d % n + n) % n];
             res += Math.min(-balance[j], storage) * d;
             balance[j] += (int) storage;
         }
