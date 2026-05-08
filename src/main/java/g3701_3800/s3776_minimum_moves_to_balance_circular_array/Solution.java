@@ -7,7 +7,8 @@ public class Solution {
     public long minMoves(int[] balance) {
         int n = balance.length;
         int j = -1;
-        long total = 0, res = 0;
+        long total = 0;
+        long res = 0;
         for (int i = 0; i < n; i++) {
             if (balance[i] < 0) {
                 j = i;
