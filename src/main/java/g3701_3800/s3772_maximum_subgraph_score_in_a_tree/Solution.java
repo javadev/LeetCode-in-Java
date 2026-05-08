@@ -17,10 +17,12 @@ public class Solution {
             int b = ed[1];
             e[idx] = b;
             ne[idx] = h[a];
-            h[a] = idx++;
+            h[a] = idx;
+            idx++;
             e[idx] = a;
             ne[idx] = h[b];
-            h[b] = idx++;
+            h[b] = idx;
+            idx++;
         }
         int[] v = new int[n];
         for (int i = 0; i < n; i++) {
