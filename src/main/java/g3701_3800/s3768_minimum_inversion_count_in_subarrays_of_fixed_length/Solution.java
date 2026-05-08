@@ -1,85 +1,60 @@
 package g3701_3800.s3768_minimum_inversion_count_in_subarrays_of_fixed_length;
 
 // #Hard #Array #Sliding_Window #Segment_Tree #Senior_Staff #Biweekly_Contest_171
-// #2026_05_08_Time_181_ms_(75.47%)_Space_199.94_MB_(13.21%)
+// #2026_05_08_Time_157_ms_(94.34%)_Space_125.70_MB_(100.00%)
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Solution {
     public long minInversionCount(int[] nums, int k) {
         int n = nums.length;
-
-        int[] s = nums.clone();
-        Arrays.sort(s);
-        Map<Integer, Integer> rank = new HashMap<>();
-        int r = 1;
-        for (int x : s) {
-            if (!rank.containsKey(x)) {
-                rank.put(x, r++);
-            }
-        }
-
-        int[] c = new int[n];
+        // discretization of coordinates
+        int[] sorted = nums.clone();
+        Arrays.sort(sorted);
         for (int i = 0; i < n; i++) {
-            c[i] = rank.get(nums[i]);
+            nums[i] = Arrays.binarySearch(sorted, nums[i]) + 1;
         }
-
-        int mv = r + 1;
-        Tree t = new Tree(mv);
-
-        long inv = 0;
-        for (int i = 0; i < k; i++) {
-            inv += t.getQuery(c[i] + 1, mv);
-            t.update(c[i], 1);
+        BinaryIndexedTree bit = new BinaryIndexedTree(n);
+        long invCount = 0L;
+        long ans = Long.MAX_VALUE;
+        for (int i = 0; i < n; i++) {
+            bit.add(nums[i], 1);
+            invCount += Math.min(i + 1, k) - bit.presum(nums[i]);
+            if (i < k - 1) {
+               continue; 
+            }
+            ans = Math.min(ans, invCount);
+            invCount -= bit.presum(nums[i - k + 1] - 1);
+            bit.add(nums[i - k + 1], -1);
         }
-
-        long mininv = inv;
-
-        for (int i = k; i < n; i++) {
-            t.update(c[i - k], -1);
-            inv -= t.getQuery(1, c[i - k] - 1);
-
-            inv += t.getQuery(c[i] + 1, mv);
-            t.update(c[i], 1);
-
-            mininv = Math.min(mininv, inv);
-        }
-
-        return mininv;
+        return ans;
     }
 
-    static class Tree {
-        int[] t;
-        int n;
+    private class BinaryIndexedTree {
+        private final int[] tree;
 
-        Tree(int size) {
-            n = size;
-            t = new int[n + 2];
+        public BinaryIndexedTree(int n) {
+            tree = new int[n + 1];
         }
 
-        void update(int i, int v) {
-            while (i < t.length) {
-                t[i] += v;
-                i += i & -i;
+        public void add(int i, int val) {
+            while (i < tree.length) {
+                tree[i] += val;
+                i += lowbit(i);
             }
         }
 
-        int query(int i) {
-            int res = 0;
+        public int presum(int i) {
+            int sum = 0;
             while (i > 0) {
-                res += t[i];
-                i -= i & -i;
+                sum += tree[i];
+                i -= lowbit(i);
             }
-            return res;
+            return sum;
         }
 
-        int getQuery(int l, int r) {
-            if (l > r) {
-                return 0;
-            }
-            return query(r) - query(l - 1);
+        private int lowbit(int n) {
+            return n & (-n);
         }
     }
 }
