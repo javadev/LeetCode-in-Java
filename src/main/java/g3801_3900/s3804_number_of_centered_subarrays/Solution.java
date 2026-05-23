@@ -19,7 +19,6 @@ public class Solution {
                 result += subnums.contains(subsum) ? 1 : 0;
             }
         }
-
         return result;
     }
 }
