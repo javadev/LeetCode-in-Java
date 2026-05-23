@@ -21,26 +21,19 @@ public class Solution {
                 }
             }
         }
-
         int min = Math.min(one, zero);
         long ans = 0;
-
         long costOfFlip = ((long) min * flipCost) * 2;
         long costOfSwap = ((long) min * swapCost);
-
         ans += Math.min(costOfFlip, costOfSwap);
-
         diff -= (min * 2);
         int oddLeft = diff % 2;
         int evenLeft = diff - oddLeft;
-
         long costOfCrossSwap =
                 (((long) (evenLeft / 2) * crossCost) + ((long) (evenLeft / 2) * swapCost));
         long costOfFlipMain = ((long) evenLeft * flipCost);
-
         ans += Math.min(costOfCrossSwap, costOfFlipMain);
         ans += (long) oddLeft * flipCost;
-
         return ans;
     }
 }
