@@ -8,7 +8,6 @@ public class Solution {
         int n = s.length();
         int count = 0;
         int p = 0;
-
         char c1 = s.charAt(p);
         while (p < n && c1 == s.charAt(p)) {
             if (++p % 3 == 1) {
@@ -18,14 +17,12 @@ public class Solution {
         if (p >= n) {
             return count;
         }
-
         char c2 = s.charAt(p);
         while (p < n && (c1 == s.charAt(p) || c2 == s.charAt(p))) {
             if (++p % 3 == 2) {
                 count++;
             }
         }
-
         return count;
     }
 }
