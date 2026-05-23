@@ -2,23 +2,15 @@
 
 Easy
 
-SQL Schema
-
-* * *
-
-Pandas Schema
-
-* * *
-
 Table: prompts
 
-+-------------+---------+
-| Column Name | Type    |
-+-------------+---------+
-| user_id     | int     |
-| prompt      | varchar |
-| tokens      | int     |
-+-------------+---------+
+    +-------------+---------+
+    | Column Name | Type    |
+    +-------------+---------+
+    | user_id     | int     |
+    | prompt      | varchar |
+    | tokens      | int     |
+    +-------------+---------+
 
 (user_id, prompt) is the primary key (unique value) for this table.
 Each row represents a prompt submitted by a user to an AI system along with the number of tokens consumed.
@@ -40,28 +32,28 @@ Input:
 
 prompts table:
 
-+---------+--------------------------+--------+
-| user_id | prompt                   | tokens |
-+---------+--------------------------+--------+
-| 1       | Write a blog outline     | 120    |
-| 1       | Generate SQL query       | 80     |
-| 1       | Summarize an article     | 200    |
-| 2       | Create resume bullet     | 60     |
-| 2       | Improve LinkedIn bio     | 70     |
-| 3       | Explain neural networks  | 300    |
-| 3       | Generate interview Q&A   | 250    |
-| 3       | Write cover letter       | 180    |
-| 3       | Optimize Python code     | 220    |
-+---------+--------------------------+--------+
+    +---------+--------------------------+--------+
+    | user_id | prompt                   | tokens |
+    +---------+--------------------------+--------+
+    | 1       | Write a blog outline     | 120    |
+    | 1       | Generate SQL query       | 80     |
+    | 1       | Summarize an article     | 200    |
+    | 2       | Create resume bullet     | 60     |
+    | 2       | Improve LinkedIn bio     | 70     |
+    | 3       | Explain neural networks  | 300    |
+    | 3       | Generate interview Q&A   | 250    |
+    | 3       | Write cover letter       | 180    |
+    | 3       | Optimize Python code     | 220    |
+    +---------+--------------------------+--------+
 
 Output:
 
-+---------+--------------+------------+
-| user_id | prompt_count | avg_tokens |
-+---------+--------------+------------+
-| 3       | 4            | 237.50     |
-| 1       | 3            | 133.33     |
-+---------+--------------+------------+
+    +---------+--------------+------------+
+    | user_id | prompt_count | avg_tokens |
+    +---------+--------------+------------+
+    | 3       | 4            | 237.50     |
+    | 1       | 3            | 133.33     |
+    +---------+--------------+------------+
 
 Explanation:
 
