@@ -13,7 +13,6 @@ public class Solution {
         for (int[] r : restrictions) {
             a[r[0]] = Math.min(a[r[0]], r[1]);
         }
-
         for (int i = 1; i < n; i++) {
             a[i] = Math.min(a[i], a[i - 1] + diff[i - 1]);
         }
