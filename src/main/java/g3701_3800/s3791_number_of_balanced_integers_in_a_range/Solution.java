@@ -13,7 +13,6 @@ public class Solution {
         if (dp[idx][diff + dp[0].length / 2][tight] != -1) {
             return dp[idx][diff + dp[0].length / 2][tight];
         }
-
         long ans = 0;
         int ub = tight == 1 ? number.charAt(idx) - '0' : 9;
         for (int i = 0; i <= ub; i++) {
@@ -36,13 +35,11 @@ public class Solution {
         int len = number.length();
         long[][][] dp =
                 len % 2 == 1 ? new long[len][(len + 1) * 9 + 1][2] : new long[len][len * 9 + 1][2];
-
         for (long[][] tbl : dp) {
             for (long[] row : tbl) {
                 Arrays.fill(row, -1);
             }
         }
-
         return solve(number, 0, 0, 1, dp);
     }
 
