@@ -23,7 +23,6 @@ public class Solution {
             }
             dp = f(dp, d, r, m, mod);
         }
-
         long res = 0;
         for (long v : dp) {
             res = (res + v) % mod;
