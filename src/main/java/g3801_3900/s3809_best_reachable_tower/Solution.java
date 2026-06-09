@@ -8,18 +8,14 @@ public class Solution {
         int bestX = -1;
         int bestY = -1;
         int bestQ = -1;
-
         int cx = center[0];
         int cy = center[1];
-
         for (int[] t : towers) {
             int x = t[0];
             int y = t[1];
             int q = t[2];
-
             long dx = Math.abs((long) x - cx);
             long dy = Math.abs((long) y - cy);
-
             if (dx + dy <= radius
                     && (q > bestQ
                             || (q == bestQ
@@ -29,7 +25,6 @@ public class Solution {
                 bestY = y;
             }
         }
-
         return bestQ == -1 ? new int[] {-1, -1} : new int[] {bestX, bestY};
     }
 }
