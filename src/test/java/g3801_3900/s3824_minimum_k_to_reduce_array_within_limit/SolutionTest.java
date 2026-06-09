@@ -6,7 +6,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
-
     @Test
     void minimumK() {
         assertThat(new Solution().minimumK(new int[] {3, 7, 5}), equalTo(3));
@@ -22,7 +21,7 @@ class SolutionTest {
         // Single element of value 10: ceil(10/k) <= k => k >= 4 (since 10/4=3 ceil 3, +1 length=4
         // <= 16)
         // Actually: nonPositive = 1 + ceil((10-1)/k+? ); test with simple expected
-        assertThat(new Solution().minimumK(new int[] {10}), equalTo(4));
+        assertThat(new Solution().minimumK(new int[] {10}), equalTo(3));
     }
 
     @Test
@@ -77,7 +76,7 @@ class SolutionTest {
         for (int i = 0; i < 50; i++) {
             nums[i] = i + 1;
         }
-        assertThat(new Solution().minimumK(nums), equalTo(10));
+        assertThat(new Solution().minimumK(nums), equalTo(12));
     }
 
     @Test
@@ -88,7 +87,7 @@ class SolutionTest {
 
     @Test
     void minimumK13() {
-        assertThat(new Solution().minimumK(new int[] {100, 200, 300, 400, 500}), equalTo(15));
+        assertThat(new Solution().minimumK(new int[] {100, 200, 300, 400, 500}), equalTo(12));
     }
 
     @Test
@@ -98,7 +97,7 @@ class SolutionTest {
         // need 1 + ceil(999999/k) <= k*k
         // k=100: 1 + 10000 = 10001, k*k=10000 -> no
         // k=101: 1 + ceil(999999/101)=1+9901=9902, k*k=10201 -> yes
-        assertThat(new Solution().minimumK(nums), equalTo(101));
+        assertThat(new Solution().minimumK(nums), equalTo(100));
     }
 
     @Test
