@@ -21,7 +21,6 @@ public class Solution {
                 mxCap[cost] = cap;
             }
         }
-
         int[] preSum = new int[budget];
         for (int i = 1; i < budget; i++) {
             int rem = Math.min(budget - i - 1, i - 1);
