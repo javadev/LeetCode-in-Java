@@ -2,14 +2,6 @@
 
 Medium
 
-SQL Schema
-
-* * *
-
-Pandas Schema
-
-* * *
-
 Table: `reactions`
 
     +--------------+---------+
