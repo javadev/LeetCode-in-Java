@@ -28,15 +28,11 @@ public class Solution {
             adjList[edge[0]].add(new int[] {edge[1], i});
             adjList[edge[1]].add(new int[] {edge[0], i});
         }
-
         ans = new ArrayList<>();
         visited = new boolean[n];
-
         dfs(0, -1, -1);
-
         // Sort indices as required
         Collections.sort(ans);
-
         // If root is still mismatched, it's impossible (no parent to flip)
         if (mismatch(0)) {
             ans = new ArrayList<>();
@@ -59,7 +55,6 @@ public class Solution {
                 dfs(v[0], u, v[1]);
             }
         }
-
         if (parent != -1 && (mismatch(u))) {
             ans.add(index);
             flips[u]++;
