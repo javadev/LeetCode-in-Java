@@ -10,10 +10,8 @@ public class Solution {
         for (char c : a) {
             rem[c - 'a']++;
         }
-
         int[] cnt = new int[26];
         StringBuilder sb = new StringBuilder();
-
         for (char c : a) {
             rem[c - 'a']--;
             while (!sb.isEmpty()) {
@@ -28,7 +26,6 @@ public class Solution {
             sb.append(c);
             cnt[c - 'a']++;
         }
-
         while (!sb.isEmpty()) {
             int i = sb.length() - 1;
             char c = sb.charAt(i);
@@ -39,7 +36,6 @@ public class Solution {
                 break;
             }
         }
-
         return sb.toString();
     }
 }
