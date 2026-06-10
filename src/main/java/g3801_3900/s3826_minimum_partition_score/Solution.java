@@ -7,7 +7,6 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class Solution {
-
     private long[] prefix;
 
     private boolean isRedundant(Line l1, Line l2, Line l3) {
@@ -18,13 +17,10 @@ public class Solution {
     private Pair solveWithPenalty(long lambda) {
         Deque<Line> dq = new ArrayDeque<>();
         dq.addLast(new Line(0, 0, 0));
-
         long di = 0;
         int pi = 0;
-
         for (int i = 1; i < prefix.length; i++) {
             long x = prefix[i];
-
             // query
             while (dq.size() > 1) {
                 Line first = dq.pollFirst();
@@ -34,13 +30,10 @@ public class Solution {
                     break;
                 }
             }
-
             Line best = dq.peekFirst();
             di = x * x + x + 2 * lambda + best.eval(x);
             pi = best.partition + 1;
-
             Line newLine = new Line(-2 * x, di + x * x - x, pi);
-
             while (dq.size() > 1) {
                 Line last = dq.pollLast();
                 Line secondLast = dq.peekLast();
@@ -51,7 +44,6 @@ public class Solution {
             }
             dq.addLast(newLine);
         }
-
         return new Pair(di, pi);
     }
 
@@ -61,11 +53,9 @@ public class Solution {
         for (int i = 1; i <= n; i++) {
             prefix[i] = prefix[i - 1] + nums[i - 1];
         }
-
         long start = 0;
         long end = (long) 1e15;
         long bestLambda = 0;
-
         while (start <= end) {
             long mid = start + (end - start) / 2;
             Pair res = solveWithPenalty(mid);
@@ -76,7 +66,6 @@ public class Solution {
                 start = mid + 1;
             }
         }
-
         Pair ans = solveWithPenalty(bestLambda);
         return (ans.score - 2L * k * bestLambda) / 2;
     }
