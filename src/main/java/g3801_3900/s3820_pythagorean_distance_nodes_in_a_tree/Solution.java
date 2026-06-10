@@ -13,10 +13,8 @@ public class Solution {
         int[] dist = new int[n];
         Arrays.fill(dist, -1);
         dist[start] = 0;
-
         ArrayDeque<Integer> q = new ArrayDeque<>();
         q.add(start);
-
         while (!q.isEmpty()) {
             int u = q.poll();
             for (int v : adj[u]) {
@@ -41,18 +39,15 @@ public class Solution {
             adj[u].add(v);
             adj[v].add(u);
         }
-
         // Calculate distances from every node to x, y and z
         int[] dx = bfs(n, adj, x);
         int[] dy = bfs(n, adj, y);
         int[] dz = bfs(n, adj, z);
-
         int result = 0;
         for (int i = 0; i < n; i++) {
             long a = dx[i];
             int b = dy[i];
             int c = dz[i];
-
             // Ensure a <= b <= c
             if (a > b) {
                 long t = a;
@@ -69,10 +64,8 @@ public class Solution {
                 a = b;
                 b = (int) t;
             }
-
             result += (a * a + (long) b * b == (long) c * c) ? 1 : 0;
         }
-
         return result;
     }
 }
