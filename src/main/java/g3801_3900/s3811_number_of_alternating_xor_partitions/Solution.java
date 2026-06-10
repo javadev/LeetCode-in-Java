@@ -35,7 +35,6 @@ public class Solution {
             int ct2 = t2;
             int ct3 = t3;
             int ct4 = t4;
-
             if (runningXor == target1) {
                 ct1 += t4 + 1;
                 ct1 %= MOD;
@@ -60,7 +59,6 @@ public class Solution {
                 return ans % MOD;
             }
         }
-
         return 0;
     }
 }
