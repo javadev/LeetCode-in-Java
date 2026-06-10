@@ -8,7 +8,6 @@ public class Solution {
         char[] arr = s.toCharArray();
         int low = 0;
         int high = arr.length - 1;
-
         while (low < high) {
             if (arr[low] >= 'a' && arr[low] <= 'z' && arr[high] >= 'a' && arr[high] <= 'z') {
                 char t = arr[low];
@@ -22,7 +21,6 @@ public class Solution {
                 high--;
             }
         }
-
         int i = 0;
         int j = arr.length - 1;
         while (i < j) {
@@ -38,7 +36,6 @@ public class Solution {
                 j--;
             }
         }
-
         return new String(arr);
     }
 }
