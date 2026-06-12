@@ -15,6 +15,7 @@ public class Solution {
     private String s;
     private String t;
 
+    @SuppressWarnings("unchecked")
     public List<Integer> minimumFlips(int n, int[][] edges, String start, String target) {
         s = start;
         t = target;
