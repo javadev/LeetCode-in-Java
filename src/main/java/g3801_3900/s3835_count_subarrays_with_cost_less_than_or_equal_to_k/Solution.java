@@ -12,15 +12,12 @@ public class Solution {
         ArrayDeque<Integer> minq = new ArrayDeque<>();
         long res = 0;
         int l = 0;
-
         for (int r = 0; r < n; r++) {
             pushMax(maxq, nums, r);
             pushMin(minq, nums, r);
-
             while (l <= r && rangeTooLarge(nums, maxq, minq, l, r, k)) {
                 l = shrinkWindow(maxq, minq, l);
             }
-
             res += (r - l + 1);
         }
         return res;
