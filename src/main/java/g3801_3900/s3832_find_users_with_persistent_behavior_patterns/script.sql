@@ -12,12 +12,13 @@ numbered_activity AS (
         user_id,
         action,
         action_date,
-        DATE_SUB(
-            action_date,
-            INTERVAL ROW_NUMBER() OVER (
+        DATEADD(
+            'DAY',
+            -ROW_NUMBER() OVER (
                 PARTITION BY user_id, action
                 ORDER BY action_date
-            ) DAY
+            ),
+            action_date
         ) AS streak_group
     FROM distinct_activity
 ),
