@@ -13,8 +13,8 @@ public class Solution {
         if (n < m) {
             return maxScore(nums2, nums1, k);
         }
-        long[][] curr = new long[m+1][k+1];
-        long[][] prev = new long[m+1][k+1];
+        long[][] curr = new long[m + 1][k + 1];
+        long[][] prev = new long[m + 1][k + 1];
 
         for (int i = 0; i <= m; i++) {
             Arrays.fill(prev[i], negINF);
@@ -28,9 +28,9 @@ public class Solution {
             }
             for (int j = 1; j <= m; j++) {
                 for (int p = 1; p <= k; p++) {
-                    long option1 = (long) nums1[i-1] * nums2[j-1] + prev[j-1][p-1];
+                    long option1 = (long) nums1[i - 1] * nums2[j - 1] + prev[j - 1][p - 1];
                     long option2 = prev[j][p];
-                    long option3 = curr[j-1][p];
+                    long option3 = curr[j - 1][p];
                     curr[j][p] = Math.max(option1, Math.max(option2, option3));
                 }
             }

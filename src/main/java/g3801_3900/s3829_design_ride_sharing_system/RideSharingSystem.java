@@ -13,7 +13,9 @@ public class RideSharingSystem {
     }
 
     public void addRider(int riderId) {
-        if (cancel.containsKey(riderId)) cancel.remove(riderId);
+        if (cancel.containsKey(riderId)) {
+            cancel.remove(riderId);
+        }
         rider.add(riderId);
     }
 
@@ -22,7 +24,9 @@ public class RideSharingSystem {
     }
 
     public int[] matchDriverWithRider() {
-        while (!rider.isEmpty() && cancel.containsKey(rider.peek())) rider.poll();
+        while (!rider.isEmpty() && cancel.containsKey(rider.peek())) {
+            rider.poll();
+        }
         if (!rider.isEmpty() && !driver.isEmpty()) {
             int[] ans = {driver.peek(), rider.peek()};
             rider.poll();
@@ -37,7 +41,7 @@ public class RideSharingSystem {
     }
 }
 
-/**
+/*
  * Your RideSharingSystem object will be instantiated and called as such:
  * RideSharingSystem obj = new RideSharingSystem();
  * obj.addRider(riderId);
@@ -45,4 +49,3 @@ public class RideSharingSystem {
  * int[] param_3 = obj.matchDriverWithRider();
  * obj.cancelRider(riderId);
  */
-
