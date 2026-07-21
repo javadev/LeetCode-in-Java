@@ -15,12 +15,10 @@ public class Solution {
         }
         long[][] curr = new long[m + 1][k + 1];
         long[][] prev = new long[m + 1][k + 1];
-
         for (int i = 0; i <= m; i++) {
             Arrays.fill(prev[i], negINF);
             prev[i][0] = 0;
         }
-
         for (int i = 1; i <= n; i++) {
             for (long[] row : curr) {
                 Arrays.fill(row, negINF);
@@ -34,7 +32,6 @@ public class Solution {
                     curr[j][p] = Math.max(option1, Math.max(option2, option3));
                 }
             }
-
             long[][] temp = prev;
             prev = curr;
             curr = temp;
