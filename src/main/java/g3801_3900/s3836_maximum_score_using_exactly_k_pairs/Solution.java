@@ -5,6 +5,7 @@ package g3801_3900.s3836_maximum_score_using_exactly_k_pairs;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S2234")
 public class Solution {
     public long maxScore(int[] nums1, int[] nums2, int k) {
         final int n = nums1.length;
