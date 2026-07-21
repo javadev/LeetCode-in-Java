@@ -9,15 +9,11 @@ public class Solution {
         if (nums == null || nums.length < 2) {
             return 0;
         }
-
         State state = new State();
-
         while (state.right < nums.length) {
             int direction = Integer.compare(nums[state.right], nums[state.right - 1]);
-
             processDirection(state, direction);
         }
-
         return state.maxLength;
     }
 
@@ -26,15 +22,12 @@ public class Solution {
             processEqualValues(state);
             return;
         }
-
         boolean currentUp = direction > 0;
-
         if (isRepeatedDirection(state, currentUp)) {
             processRepeatedDirection(state);
         } else {
             processAlternatingDirection(state);
         }
-
         state.up = currentUp;
     }
 
@@ -47,7 +40,6 @@ public class Solution {
             resetToUsedIndex(state);
             return;
         }
-
         state.used = true;
         state.usedIndex = state.right - 1;
         updateMax(state, state.right - state.left);
@@ -56,11 +48,9 @@ public class Solution {
 
     private void processAlternatingDirection(State state) {
         int length = state.right - state.left;
-
         if (!state.used) {
             length++;
         }
-
         updateMax(state, length);
         state.right++;
     }
@@ -70,7 +60,6 @@ public class Solution {
             resetToUsedIndex(state);
             return;
         }
-
         state.used = true;
         state.usedIndex = state.right;
         updateMax(state, state.right - state.left);
