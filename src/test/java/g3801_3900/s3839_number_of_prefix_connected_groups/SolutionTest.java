@@ -9,7 +9,8 @@ class SolutionTest {
     @Test
     void prefixConnected() {
         assertThat(
-                new Solution().prefixConnected(new String[] {"apple", "apply", "banana", "bandit"}, 2),
+                new Solution()
+                        .prefixConnected(new String[] {"apple", "apply", "banana", "bandit"}, 2),
                 equalTo(2));
     }
 
@@ -23,7 +24,8 @@ class SolutionTest {
     @Test
     void prefixConnected3() {
         assertThat(
-                new Solution().prefixConnected(new String[] {"bat", "dog", "dog", "doggy", "bat"}, 3),
+                new Solution()
+                        .prefixConnected(new String[] {"bat", "dog", "dog", "doggy", "bat"}, 3),
                 equalTo(2));
     }
 }

@@ -40,8 +40,8 @@ public class Solution {
         minq.addLast(r);
     }
 
-    private boolean rangeTooLarge(int[] nums, ArrayDeque<Integer> maxq, ArrayDeque<Integer> minq,
-                                  int l, int r, long k) {
+    private boolean rangeTooLarge(
+            int[] nums, ArrayDeque<Integer> maxq, ArrayDeque<Integer> minq, int l, int r, long k) {
         long range = (long) nums[maxq.peekFirst()] - (long) nums[minq.peekFirst()];
         return (r - l + 1) * range > k;
     }

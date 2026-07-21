@@ -13,10 +13,7 @@ public class Solution {
         State state = new State();
 
         while (state.right < nums.length) {
-            int direction = Integer.compare(
-                    nums[state.right],
-                    nums[state.right - 1]
-            );
+            int direction = Integer.compare(nums[state.right], nums[state.right - 1]);
 
             processDirection(state, direction);
         }

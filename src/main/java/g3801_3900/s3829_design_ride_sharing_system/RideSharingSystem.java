@@ -6,10 +6,10 @@ package g3801_3900.s3829_design_ride_sharing_system;
 public class RideSharingSystem {
     java.util.Queue<Integer> rider = new java.util.LinkedList<>();
     java.util.Queue<Integer> driver = new java.util.LinkedList<>();
-    java.util.Map<Integer,Integer> cancel = new java.util.HashMap<>();
+    java.util.Map<Integer, Integer> cancel = new java.util.HashMap<>();
 
     public RideSharingSystem() {
-        //Not use
+        // Not use
     }
 
     public void addRider(int riderId) {
@@ -33,7 +33,7 @@ public class RideSharingSystem {
             driver.poll();
             return ans;
         }
-        return new int[]{-1, -1};
+        return new int[] {-1, -1};
     }
 
     public void cancelRider(int riderId) {

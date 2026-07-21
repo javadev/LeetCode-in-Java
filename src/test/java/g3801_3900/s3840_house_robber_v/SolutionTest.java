@@ -18,6 +18,7 @@ class SolutionTest {
 
     @Test
     void rob3() {
-        assertThat(new Solution().rob(new int[] {10, 1, 3, 9}, new int[] {1, 1, 1, 2}), equalTo(22L));
+        assertThat(
+                new Solution().rob(new int[] {10, 1, 3, 9}, new int[] {1, 1, 1, 2}), equalTo(22L));
     }
 }

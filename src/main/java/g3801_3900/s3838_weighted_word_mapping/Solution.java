@@ -11,7 +11,7 @@ public class Solution {
             for (int i = 0; i < s.length(); i++) {
                 cnt += weights[s.charAt(i) - 'a'];
             }
-            ans.append((char)('a' + (25 - (cnt % 26))));
+            ans.append((char) ('a' + (25 - (cnt % 26))));
         }
         return ans.toString();
     }

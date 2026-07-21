@@ -8,7 +8,8 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void maxScore() {
-        assertThat(new Solution().maxScore(new int[] {1, 3, 2}, new int[] {4, 5, 1}, 2), equalTo(22L));
+        assertThat(
+                new Solution().maxScore(new int[] {1, 3, 2}, new int[] {4, 5, 1}, 2), equalTo(22L));
     }
 
     @Test

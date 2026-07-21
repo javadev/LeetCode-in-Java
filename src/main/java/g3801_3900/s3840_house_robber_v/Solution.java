@@ -24,4 +24,3 @@ public class Solution {
         return Math.max(dp0, dp1);
     }
 }
-
