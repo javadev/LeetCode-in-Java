@@ -58,8 +58,8 @@ class MysqlTest {
                                     new BufferedReader(
                                                     new FileReader(
                                                             "src/main/java/g3801_3900/"
-                                                                    + "s3832_find_users_with_persistent_behavior_patterns/"
-                                                                    + "script.sql"))
+                                                                    + "s3832_find_users_with_persistent_"
+                                                                    + "behavior_patterns/script.sql"))
                                             .lines()
                                             .collect(Collectors.joining("\n"))
                                             .replaceAll("#.*?\\r?\\n", ""))) {
