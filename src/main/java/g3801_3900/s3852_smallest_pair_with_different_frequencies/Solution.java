@@ -6,14 +6,11 @@ package g3801_3900.s3852_smallest_pair_with_different_frequencies;
 public class Solution {
     public int[] minDistinctFreqPair(int[] nums) {
         int[] freq = new int[101];
-
         for (int num : nums) {
             freq[num]++;
         }
-
         int first = -1;
         int second = -1;
-
         for (int i = 1; i <= 100; i++) {
             if (freq[i] != 0) {
                 if (first == -1) {
@@ -24,7 +21,6 @@ public class Solution {
                 }
             }
         }
-
         return second == -1 ? new int[] {-1, -1} : new int[] {first, second};
     }
 }
