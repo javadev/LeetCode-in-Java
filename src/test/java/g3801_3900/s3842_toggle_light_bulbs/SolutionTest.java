@@ -3,9 +3,8 @@ package g3801_3900.s3842_toggle_light_bulbs;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
+import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
