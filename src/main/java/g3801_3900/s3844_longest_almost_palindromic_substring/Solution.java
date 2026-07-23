@@ -11,12 +11,10 @@ public class Solution {
         s = str.toCharArray();
         n = s.length;
         int ans = 0;
-
         for (int i = 0; i < n; i++) {
             ans = Math.max(ans, f(i, i));
             ans = Math.max(ans, f(i, i + 1));
         }
-
         return ans;
     }
 
@@ -25,22 +23,18 @@ public class Solution {
             l--;
             r++;
         }
-
         int l1 = l - 1;
         int r1 = r;
         int l2 = l;
         int r2 = r + 1;
-
         while (l1 >= 0 && r1 < n && s[l1] == s[r1]) {
             l1--;
             r1++;
         }
-
         while (l2 >= 0 && r2 < n && s[l2] == s[r2]) {
             l2--;
             r2++;
         }
-
         return Math.clamp(Math.max(r1 - l1 - 1, r2 - l2 - 1), 0, n);
     }
 }
