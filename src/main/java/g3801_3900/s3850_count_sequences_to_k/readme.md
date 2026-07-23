@@ -26,35 +26,10 @@ Return the count of **distinct** sequences of choices that result in `val == k`.
 
 The following 2 distinct sequences of choices result in `val == k`:
 
-Sequence
-
-Operation on `nums[0]`
-
-Operation on `nums[1]`
-
-Operation on `nums[2]`
-
-Final `val`
-
-1
-
-Multiply: `val = 1 * 2 = 2`
-
-Multiply: `val = 2 * 3 = 6`
-
-Leave `val` unchanged
-
-6
-
-2
-
-Leave `val` unchanged
-
-Multiply: `val = 1 * 3 = 3`
-
-Multiply: `val = 3 * 2 = 6`
-
-6
+| Sequence | Operation on `nums[0]` | Operation on `nums[1]` | Operation on `nums[2]` | Final `val` |
+|----------|-------------------------|-------------------------|-------------------------|-------------|
+| 1 | Multiply: `val = 1 * 2 = 2` | Multiply: `val = 2 * 3 = 6` | Leave `val` unchanged | 6 |
+| 2 | Leave `val` unchanged | Multiply: `val = 1 * 3 = 3` | Multiply: `val = 3 * 2 = 6` | 6 |
 
 **Example 2:**
 
@@ -66,35 +41,10 @@ Multiply: `val = 3 * 2 = 6`
 
 The following 2 distinct sequences of choices result in `val == k`:
 
-Sequence
-
-Operation on `nums[0]`
-
-Operation on `nums[1]`
-
-Operation on `nums[2]`
-
-Final `val`
-
-1
-
-Multiply: `val = 1 * 4 = 4`
-
-Divide: `val = 4 / 6 = 2 / 3`
-
-Multiply: `val = (2 / 3) * 3 = 2`
-
-2
-
-2
-
-Leave `val` unchanged
-
-Multiply: `val = 1 * 6 = 6`
-
-Divide: `val = 6 / 3 = 2`
-
-2
+| Sequence | Operation on `nums[0]` | Operation on `nums[1]` | Operation on `nums[2]` | Final `val` |
+|----------|-------------------------|-------------------------|-------------------------|-------------|
+| 1 | Multiply: `val = 1 * 4 = 4` | Divide: `val = 4 / 6 = 2 / 3` | Multiply: `val = (2 / 3) * 3 = 2` | 2 |
+| 2 | Leave `val` unchanged | Multiply: `val = 1 * 6 = 6` | Divide: `val = 6 / 3 = 2` | 2 |
 
 **Example 3:**
 
@@ -106,37 +56,11 @@ Divide: `val = 6 / 3 = 2`
 
 The following 3 distinct sequences of choices result in `val == k`:
 
-Sequence
-
-Operation on `nums[0]`
-
-Operation on `nums[1]`
-
-Final `val`
-
-1
-
-Multiply: `val = 1 * 1 = 1`
-
-Leave `val` unchanged
-
-1
-
-2
-
-Divide: `val = 1 / 1 = 1`
-
-Leave `val` unchanged
-
-1
-
-3
-
-Leave `val` unchanged
-
-Leave `val` unchanged
-
-1
+| Sequence | Operation on `nums[0]` | Operation on `nums[1]` | Final `val` |
+|----------|-------------------------|-------------------------|-------------|
+| 1 | Multiply: `val = 1 * 1 = 1` | Leave `val` unchanged | 1 |
+| 2 | Divide: `val = 1 / 1 = 1` | Leave `val` unchanged | 1 |
+| 3 | Leave `val` unchanged | Leave `val` unchanged | 1 |
 
 **Constraints:**
 
