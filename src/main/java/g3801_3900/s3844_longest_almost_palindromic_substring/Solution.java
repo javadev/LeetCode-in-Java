@@ -44,4 +44,3 @@ public class Solution {
         return Math.min(n, Math.max(r1 - l1 - 1, r2 - l2 - 1));
     }
 }
-
