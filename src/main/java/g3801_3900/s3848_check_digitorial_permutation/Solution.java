@@ -21,14 +21,12 @@ public class Solution {
         for (int d = 1; d < 10; ++d) {
             factorials[d] = factorials[d - 1] * d;
         }
-
         int digitsSum = 0;
         int x = n;
         do {
             digitsSum += factorials[x % 10];
             x /= 10;
         } while (x != 0);
-
         return Arrays.equals(digitFrequencies(digitsSum), digitFrequencies(n));
     }
 }
