@@ -11,31 +11,30 @@ public class Solution {
     private Map<Double, Integer>[] dp;
 
     private int fun(int[] nums, int pos, double val, double k) {
-        if(pos==nums.length){
-            if(Math.abs(val-k)<=0.000000009){
+        if (pos == nums.length) {
+            if (Math.abs(val - k) <= 0.000000009) {
                 return 1;
             }
             return 0;
         }
 
-        if(dp[pos].containsKey(val)){
+        if (dp[pos].containsKey(val)) {
             return dp[pos].get(val);
         }
 
-        int ret = fun(nums,pos+1,val,k);
-        ret += fun(nums,pos+1,val*nums[pos],k);
-        ret += fun(nums,pos+1,val/nums[pos],k);
+        int ret = fun(nums, pos + 1, val, k);
+        ret += fun(nums, pos + 1, val * nums[pos], k);
+        ret += fun(nums, pos + 1, val / nums[pos], k);
 
-        dp[pos].put(val,ret);
+        dp[pos].put(val, ret);
         return ret;
     }
 
     public int countSequences(int[] nums, long k) {
-        dp= new HashMap[22];
-        for(int i=0;i<22;i++) {
-            dp[i]=new HashMap<>();
+        dp = new HashMap[22];
+        for (int i = 0; i < 22; i++) {
+            dp[i] = new HashMap<>();
         }
-        return fun(nums, 0,1.0,1.00*k);
+        return fun(nums, 0, 1.0, 1.00 * k);
     }
 }
-

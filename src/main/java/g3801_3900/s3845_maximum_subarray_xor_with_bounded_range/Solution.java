@@ -18,7 +18,9 @@ public class Solution {
         TrieNode node = root;
         for (int i = BITS - 1; i >= 0; i--) {
             int bit = (num >> i) & 1;
-            if (node.next[bit] == null) node.next[bit] = new TrieNode();
+            if (node.next[bit] == null) {
+                node.next[bit] = new TrieNode();
+            }
             node = node.next[bit];
             node.count++;
         }
@@ -30,7 +32,9 @@ public class Solution {
             int bit = (num >> i) & 1;
             TrieNode child = node.next[bit];
             child.count--;
-            if (child.count == 0) node.next[bit] = null;
+            if (child.count == 0) {
+                node.next[bit] = null;
+            }
             node = child;
         }
     }
@@ -53,7 +57,9 @@ public class Solution {
     public int maxXor(int[] nums, int k) {
         int n = nums.length;
         int[] prefix = new int[n + 1];
-        for (int i = 0; i < n; i++) prefix[i + 1] = prefix[i] ^ nums[i];
+        for (int i = 0; i < n; i++) {
+            prefix[i + 1] = prefix[i] ^ nums[i];
+        }
 
         Deque<Integer> maxDeque = new ArrayDeque<>();
         Deque<Integer> minDeque = new ArrayDeque<>();
@@ -62,20 +68,24 @@ public class Solution {
         int maxXor = 0;
         int l = 0;
 
-        insert(root, 0); // empty prefix
+        insert(root, 0);
 
         for (int r = 0; r < n; r++) {
             // maintain max deque
-            while (!maxDeque.isEmpty() && nums[r] > nums[maxDeque.peekLast()]) maxDeque.pollLast();
+            while (!maxDeque.isEmpty() && nums[r] > nums[maxDeque.peekLast()]) {
+                maxDeque.pollLast();
+            }
             maxDeque.offerLast(r);
 
             // maintain min deque
-            while (!minDeque.isEmpty() && nums[r] < nums[minDeque.peekLast()]) minDeque.pollLast();
+            while (!minDeque.isEmpty() && nums[r] < nums[minDeque.peekLast()]) {
+                minDeque.pollLast();
+            }
             minDeque.offerLast(r);
 
             // shrink window if max-min > k
-            while (!maxDeque.isEmpty() && !minDeque.isEmpty() &&
-                    nums[maxDeque.peekFirst()] - nums[minDeque.peekFirst()] > k) {
+            while (!maxDeque.isEmpty() && !minDeque.isEmpty()
+                    && nums[maxDeque.peekFirst()] - nums[minDeque.peekFirst()] > k) {
                 remove(root, prefix[l]);
                 l++;
                 if (maxDeque.peekFirst() < l) {
@@ -94,4 +104,3 @@ public class Solution {
         return maxXor;
     }
 }
-

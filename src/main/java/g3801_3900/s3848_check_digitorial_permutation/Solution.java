@@ -6,7 +6,7 @@ package g3801_3900.s3848_check_digitorial_permutation;
 import java.util.Arrays;
 
 public class Solution {
-    static int[] digit_frequencies(int x) {
+    static int[] digitFrequencies(int x) {
         int[] c = new int[10];
         do {
             c[x % 10]++;
@@ -29,7 +29,6 @@ public class Solution {
             x /= 10;
         } while (x != 0);
 
-        return Arrays.equals(digit_frequencies(digitsSum), digit_frequencies(n));
+        return Arrays.equals(digitFrequencies(digitsSum), digitFrequencies(n));
     }
 }
-
