@@ -41,6 +41,6 @@ public class Solution {
             r2++;
         }
 
-        return Math.min(n, Math.max(r1 - l1 - 1, r2 - l2 - 1));
+        return Math.clamp(Math.max(r1 - l1 - 1, r2 - l2 - 1), 0, n);
     }
 }
