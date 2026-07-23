@@ -17,15 +17,12 @@ public class Solution {
             }
             return 0;
         }
-
         if (dp[pos].containsKey(val)) {
             return dp[pos].get(val);
         }
-
         int ret = fun(nums, pos + 1, val, k);
         ret += fun(nums, pos + 1, val * nums[pos], k);
         ret += fun(nums, pos + 1, val / nums[pos], k);
-
         dp[pos].put(val, ret);
         return ret;
     }
