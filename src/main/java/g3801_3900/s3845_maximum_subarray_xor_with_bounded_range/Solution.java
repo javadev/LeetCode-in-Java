@@ -60,29 +60,23 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             prefix[i + 1] = prefix[i] ^ nums[i];
         }
-
         Deque<Integer> maxDeque = new ArrayDeque<>();
         Deque<Integer> minDeque = new ArrayDeque<>();
         TrieNode root = new TrieNode();
-
         int maxXor = 0;
         int l = 0;
-
         insert(root, 0);
-
         for (int r = 0; r < n; r++) {
             // maintain max deque
             while (!maxDeque.isEmpty() && nums[r] > nums[maxDeque.peekLast()]) {
                 maxDeque.pollLast();
             }
             maxDeque.offerLast(r);
-
             // maintain min deque
             while (!minDeque.isEmpty() && nums[r] < nums[minDeque.peekLast()]) {
                 minDeque.pollLast();
             }
             minDeque.offerLast(r);
-
             // shrink window if max-min > k
             while (!maxDeque.isEmpty()
                     && !minDeque.isEmpty()
@@ -96,12 +90,10 @@ public class Solution {
                     minDeque.pollFirst();
                 }
             }
-
             // query and insert prefix[r+1]
             maxXor = Math.max(maxXor, query(root, prefix[r + 1]));
             insert(root, prefix[r + 1]);
         }
-
         return maxXor;
     }
 }
