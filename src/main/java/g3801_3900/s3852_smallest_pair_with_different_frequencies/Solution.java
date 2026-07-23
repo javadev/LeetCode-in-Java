@@ -28,4 +28,3 @@ public class Solution {
         return second == -1 ? new int[] {-1, -1} : new int[] {first, second};
     }
 }
-

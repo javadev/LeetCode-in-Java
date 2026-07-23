@@ -3,8 +3,9 @@ package g3801_3900.s3842_toggle_light_bulbs;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import java.util.Arrays;
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
 
 class SolutionTest {
     @Test
@@ -16,6 +17,7 @@ class SolutionTest {
 
     @Test
     void toggleLightBulbs2() {
-        assertThat(new Solution().toggleLightBulbs(Arrays.asList(100, 100)), equalTo(Arrays.asList()));
+        assertThat(
+                new Solution().toggleLightBulbs(Arrays.asList(100, 100)), equalTo(Arrays.asList()));
     }
 }

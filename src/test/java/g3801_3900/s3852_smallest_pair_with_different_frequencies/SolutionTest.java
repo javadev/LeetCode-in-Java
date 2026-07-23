@@ -8,12 +8,15 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void minDistinctFreqPair() {
-        assertThat(new Solution().minDistinctFreqPair(new int[] {1, 1, 2, 2, 3, 4}), equalTo(new int[] {1, 3}));
+        assertThat(
+                new Solution().minDistinctFreqPair(new int[] {1, 1, 2, 2, 3, 4}),
+                equalTo(new int[] {1, 3}));
     }
 
     @Test
     void minDistinctFreqPair2() {
-        assertThat(new Solution().minDistinctFreqPair(new int[] {1, 5}), equalTo(new int[] {-1, -1}));
+        assertThat(
+                new Solution().minDistinctFreqPair(new int[] {1, 5}), equalTo(new int[] {-1, -1}));
     }
 
     @Test
