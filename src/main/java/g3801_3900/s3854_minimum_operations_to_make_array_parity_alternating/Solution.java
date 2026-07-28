@@ -5,7 +5,9 @@ package g3801_3900.s3854_minimum_operations_to_make_array_parity_alternating;
 
 public class Solution {
     public int[] makeParityAlternating(int[] nums) {
-        if (nums.length == 1) return new int[] {0, 0};
+        if (nums.length == 1) {
+            return new int[] {0, 0};
+        }
         int zero = 0;
         int one = 0;
         for (int i = 0; i < nums.length; i++) {
@@ -23,7 +25,9 @@ public class Solution {
             ans[1] = Math.min(fun(nums, 0), fun(nums, 1));
         } else if (one > zero) {
             ans[1] = fun(nums, 0);
-        } else ans[1] = fun(nums, 1);
+        } else {
+            ans[1] = fun(nums, 1);
+        }
         return ans;
     }
 
