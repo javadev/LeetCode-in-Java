@@ -14,19 +14,15 @@ public class Solution {
             max = Math.max(max, nums[i]);
             prefixGcd[i] = gcd(max, nums[i]);
         }
-
         Arrays.sort(prefixGcd);
-
         long sum = 0;
         int i = 0;
         int j = nums.length - 1;
-
         while (i < j) {
             sum += gcd(prefixGcd[i], prefixGcd[j]);
             i++;
             j--;
         }
-
         return sum;
     }
 
