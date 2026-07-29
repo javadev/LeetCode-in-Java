@@ -9,7 +9,6 @@ public class Solution {
         for (int num : nums) {
             arr[num - 1]++;
         }
-
         for (int num : nums) {
             if (num % 2 == 0 && (arr[num - 1] == 1)) {
                 return num;
