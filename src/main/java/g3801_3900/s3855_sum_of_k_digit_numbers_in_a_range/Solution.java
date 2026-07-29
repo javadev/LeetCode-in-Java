@@ -9,17 +9,13 @@ public class Solution {
     public int sumOfNumbers(int l, int r, int k) {
         long count = r - (long) l + 1;
         long sumRange = (l + r) * count / 2;
-
         long t1 = sumRange % MOD;
         long t2 = power(count, (long) k - 1);
-
         long repunit = (power(10, k) - 1 + MOD) % MOD;
         long inv9 = power(9, (long) MOD - 2);
         long t3 = (repunit * inv9) % MOD;
-
         long ans = (t1 * t2) % MOD;
         ans = (ans * t3) % MOD;
-
         return (int) ans;
     }
 
