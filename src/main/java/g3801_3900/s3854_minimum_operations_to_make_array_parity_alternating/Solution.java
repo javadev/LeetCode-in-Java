@@ -20,7 +20,6 @@ public class Solution {
         }
         int[] ans = new int[2];
         ans[0] = Math.min(one, zero);
-
         if (one == zero) {
             ans[1] = Math.min(fun(nums, 0), fun(nums, 1));
         } else if (one > zero) {
@@ -34,7 +33,6 @@ public class Solution {
     private int fun(int[] nums, int parity) {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
-
         for (int i = 0; i < nums.length; i++) {
             if ((nums[i] & 1) == ((i + parity) & 1)) {
                 max = Math.max(max, nums[i]);
