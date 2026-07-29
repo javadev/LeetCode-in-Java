@@ -17,13 +17,10 @@ public class Solution {
         initBounds(l, r);
         initGood();
         initDp();
-
         long ans = dfs(0, 0, 1, 1);
-
         Set<Long> seen = new HashSet<>();
         addIncreasingNumbers(seen, l, r);
         addDecreasingNumbers(seen, l, r);
-
         return ans + seen.size();
     }
 
@@ -31,9 +28,7 @@ public class Solution {
         String left = Long.toString(l);
         String right = Long.toString(r);
         int n = right.length();
-
         left = "0".repeat(n - left.length()) + left;
-
         low = left.toCharArray();
         high = right.toCharArray();
     }
@@ -47,7 +42,6 @@ public class Solution {
 
     private void initDp() {
         dp = new long[high.length + 1][136][2][2];
-
         for (long[][][] a : dp) {
             for (long[][] b : a) {
                 for (long[] c : b) {
@@ -61,14 +55,12 @@ public class Solution {
         for (int mask = 1; mask < (1 << 9); mask++) {
             long x = 0;
             int sum = 0;
-
             for (int i = 0; i < 9; i++) {
                 if ((mask & (1 << i)) != 0) {
                     x = x * 10 + i + 1;
                     sum += i + 1;
                 }
             }
-
             if (x >= l && x <= r && !good[sum]) {
                 seen.add(x);
             }
@@ -80,11 +72,9 @@ public class Solution {
             long x = 0;
             int sum = 0;
             boolean started = false;
-
             for (int i = 0; i < 10; i++) {
                 if ((mask & (1 << i)) != 0) {
                     int d = 9 - i;
-
                     if (started || d != 0) {
                         started = true;
                         x = x * 10 + d;
@@ -92,7 +82,6 @@ public class Solution {
                     }
                 }
             }
-
             if (started && x >= l && x <= r && !good[sum]) {
                 seen.add(x);
             }
@@ -103,19 +92,15 @@ public class Solution {
         if (pos == high.length) {
             return good[sum] ? 1 : 0;
         }
-
         if (dp[pos][sum][tl][tr] != -1) {
             return dp[pos][sum][tl][tr];
         }
-
         int lo = tl == 1 ? low[pos] - '0' : 0;
         int hi = tr == 1 ? high[pos] - '0' : 9;
-
         long res = 0;
         for (int d = lo; d <= hi; d++) {
             res += dfs(pos + 1, sum + d, nextTight(tl, d, lo), nextTight(tr, d, hi));
         }
-
         dp[pos][sum][tl][tr] = res;
         return res;
     }
@@ -128,21 +113,17 @@ public class Solution {
         if (x < 10) {
             return true;
         }
-
         char[] s = Integer.toString(x).toCharArray();
         boolean inc = true;
         boolean dec = true;
-
         for (int i = 1; i < s.length; i++) {
             if (s[i] <= s[i - 1]) {
                 inc = false;
             }
-
             if (s[i] >= s[i - 1]) {
                 dec = false;
             }
         }
-
         return inc || dec;
     }
 }
