@@ -6,6 +6,7 @@ package g3801_3900.s3859_count_subarrays_with_k_distinct_integers;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("java:S6206")
 public class Solution {
 
     public long countSubarrays(int[] nums, int k, int m) {
@@ -76,7 +77,27 @@ public class Solution {
         return new WindowState(left, p, 0);
     }
 
-    private record WindowState(int left, int p, int valid) {
+    private static final class WindowState {
+        private final int left;
+        private final int p;
+        private final int valid;
 
+        private WindowState(int left, int p, int valid) {
+            this.left = left;
+            this.p = p;
+            this.valid = valid;
+        }
+
+        public int left() {
+            return left;
+        }
+
+        public int p() {
+            return p;
+        }
+
+        public int valid() {
+            return valid;
+        }
     }
 }
