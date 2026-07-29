@@ -12,6 +12,6 @@ class SolutionTest {
 
         assertThat(solution.countCommas(998), equalTo(0L));
         assertThat(solution.countCommas(1002), equalTo(3L));
-        assertThat(solution.countCommas(1_000_000), equalTo(999_003L));
+        assertThat(solution.countCommas(1_000_000), equalTo(999_002L));
     }
 }
