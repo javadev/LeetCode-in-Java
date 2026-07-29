@@ -9,7 +9,6 @@ class SolutionTest {
     @Test
     void mergesClosestRepeatedCharacters() {
         Solution solution = new Solution();
-
         assertThat(solution.mergeCharacters("abca", 3), equalTo("abc"));
         assertThat(solution.mergeCharacters("aabca", 2), equalTo("abca"));
         assertThat(solution.mergeCharacters("yybyzybz", 2), equalTo("ybzybz"));
