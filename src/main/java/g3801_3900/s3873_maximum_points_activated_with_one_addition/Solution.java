@@ -33,7 +33,6 @@ public class Solution {
                 union(parent, size, r, i);
             }
         }
-
         int best1 = 0;
         int best2 = 0;
         for (int i = 0; i < n; i++) {
