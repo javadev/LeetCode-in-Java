@@ -14,16 +14,13 @@ public class Solution {
             if (cnt[idx] > 0) {
                 continue;
             }
-
             result.append(c);
             cnt[idx]++;
-
             if (result.length() > k) {
                 char drop = result.charAt(result.length() - k - 1);
                 cnt[drop - 'a']--;
             }
         }
-
         return result.toString();
     }
 }
