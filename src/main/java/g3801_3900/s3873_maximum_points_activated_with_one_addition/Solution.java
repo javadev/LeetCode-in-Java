@@ -19,8 +19,8 @@ public class Solution {
             parent[i] = i;
             size[i] = 1;
         }
-        Map<Integer, Integer> firstInCol = new HashMap<>(n * 2);
-        Map<Integer, Integer> firstInRow = new HashMap<>(n * 2);
+        Map<Integer, Integer> firstInCol = HashMap.newHashMap(n * 2);
+        Map<Integer, Integer> firstInRow = HashMap.newHashMap(n * 2);
         for (int i = 0; i < n; i++) {
             int col = relays[i][0];
             int row = relays[i][1];

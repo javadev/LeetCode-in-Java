@@ -66,7 +66,7 @@ public class Solution {
     private WindowState trimDuplicates(
             int[] nums, int left, int p, int m, Map<Integer, Integer> map) {
 
-        while (map.size() > 0 && map.get(nums[left]) > m) {
+        while (!map.isEmpty() && map.get(nums[left]) > m) {
             int lv = nums[left];
             map.put(lv, map.get(lv) - 1);
             left++;
@@ -76,27 +76,7 @@ public class Solution {
         return new WindowState(left, p, 0);
     }
 
-    private static final class WindowState {
-        private final int left;
-        private final int p;
-        private final int valid;
+    private record WindowState(int left, int p, int valid) {
 
-        private WindowState(int left, int p, int valid) {
-            this.left = left;
-            this.p = p;
-            this.valid = valid;
-        }
-
-        public int left() {
-            return left;
-        }
-
-        public int p() {
-            return p;
-        }
-
-        public int valid() {
-            return valid;
-        }
     }
 }
