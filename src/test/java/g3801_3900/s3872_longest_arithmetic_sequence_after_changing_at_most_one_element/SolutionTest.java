@@ -16,7 +16,6 @@ class SolutionTest {
         assertThat(new Solution().longestArithmetic(new int[] {1, 2, 6, 7}), equalTo(3));
     }
 
-
     @Test
     void longestArithmetic3() {
         assertThat(new Solution().longestArithmetic(new int[] {1, 3, 5, 7}), equalTo(4));

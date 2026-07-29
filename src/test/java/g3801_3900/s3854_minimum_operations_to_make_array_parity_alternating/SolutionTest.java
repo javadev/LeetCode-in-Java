@@ -15,7 +15,9 @@ class SolutionTest {
 
     @Test
     void makeParityAlternating2() {
-        assertThat(new Solution().makeParityAlternating(new int[] {0, 2, -2}), equalTo(new int[] {1, 3}));
+        assertThat(
+                new Solution().makeParityAlternating(new int[] {0, 2, -2}),
+                equalTo(new int[] {1, 3}));
     }
 
     @Test

@@ -18,6 +18,8 @@ class SolutionTest {
 
     @Test
     void maxActivated3() {
-        assertThat(new Solution().maxActivated(new int[][] {{2, 3}, {2, 2}, {1, 1}, {4, 5}}), equalTo(4));
+        assertThat(
+                new Solution().maxActivated(new int[][] {{2, 3}, {2, 2}, {1, 1}, {4, 5}}),
+                equalTo(4));
     }
 }
