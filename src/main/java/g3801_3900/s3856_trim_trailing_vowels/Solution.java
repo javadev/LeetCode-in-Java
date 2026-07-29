@@ -6,7 +6,6 @@ package g3801_3900.s3856_trim_trailing_vowels;
 public class Solution {
     public String trimTrailingVowels(String s) {
         int i = s.length() - 1;
-
         while (i >= 0
                 && (s.charAt(i) == 'a'
                         || s.charAt(i) == 'e'
@@ -15,7 +14,6 @@ public class Solution {
                         || s.charAt(i) == 'u')) {
             i--;
         }
-
         return s.substring(0, i + 1);
     }
 }
