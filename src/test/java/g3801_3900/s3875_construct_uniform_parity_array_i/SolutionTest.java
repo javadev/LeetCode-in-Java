@@ -7,11 +7,17 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void constructsAUniformParityArrayWhenPossible() {
-        Solution solution = new Solution();
+    void uniformArray() {
+        assertThat(new Solution().uniformArray(new int[] {2, 3}), equalTo(true));
+    }
 
-        assertThat(solution.uniformArray(new int[] {2, 3}), equalTo(true));
-        assertThat(solution.uniformArray(new int[] {4, 6}), equalTo(true));
-        assertThat(solution.uniformArray(new int[] {7}), equalTo(true));
+    @Test
+    void uniformArray2() {
+        assertThat(new Solution().uniformArray(new int[] {4, 6}), equalTo(true));
+    }
+
+    @Test
+    void uniformArray3() {
+        assertThat(new Solution().uniformArray(new int[] {7}), equalTo(true));
     }
 }

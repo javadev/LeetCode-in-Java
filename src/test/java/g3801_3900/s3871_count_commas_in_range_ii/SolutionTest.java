@@ -7,11 +7,17 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void handlesEveryCommaMagnitudeBoundary() {
-        Solution solution = new Solution();
+    void countCommas() {
+        assertThat(new Solution().countCommas(998), equalTo(0L));
+    }
 
-        assertThat(solution.countCommas(998), equalTo(0L));
-        assertThat(solution.countCommas(1002), equalTo(3L));
-        assertThat(solution.countCommas(1_000_000), equalTo(999_002L));
+    @Test
+    void countCommas2() {
+        assertThat(new Solution().countCommas(1002), equalTo(3L));
+    }
+
+    @Test
+    void countCommas3() {
+        assertThat(new Solution().countCommas(1_000_000), equalTo(999_002L));
     }
 }

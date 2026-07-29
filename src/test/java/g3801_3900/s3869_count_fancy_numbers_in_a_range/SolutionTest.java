@@ -7,11 +7,17 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void countsNumbersThatAreGoodOrHaveAGoodDigitSum() {
-        Solution solution = new Solution();
+    void countFancy() {
+        assertThat(new Solution().countFancy(8, 10), equalTo(3L));
+    }
 
-        assertThat(solution.countFancy(8, 10), equalTo(3L));
-        assertThat(solution.countFancy(12340, 12341), equalTo(1L));
-        assertThat(solution.countFancy(123456788, 123456788), equalTo(0L));
+    @Test
+    void countFancy2() {
+        assertThat(new Solution().countFancy(12340, 12341), equalTo(1L));
+    }
+
+    @Test
+    void countFancy3() {
+        assertThat(new Solution().countFancy(123456788, 123456788), equalTo(0L));
     }
 }

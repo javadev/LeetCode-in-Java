@@ -7,11 +7,17 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void sumsGcdsAfterConstructingAndPairingPrefixGcdValues() {
-        Solution solution = new Solution();
+    void gcdSum() {
+        assertThat(new Solution().gcdSum(new int[] {2, 6, 4}), equalTo(2L));
+    }
 
-        assertThat(solution.gcdSum(new int[] {2, 6, 4}), equalTo(2L));
-        assertThat(solution.gcdSum(new int[] {3, 6, 2, 8}), equalTo(5L));
-        assertThat(solution.gcdSum(new int[] {7}), equalTo(0L));
+    @Test
+    void gcdSum2() {
+        assertThat(new Solution().gcdSum(new int[] {3, 6, 2, 8}), equalTo(5L));
+    }
+
+    @Test
+    void gcdSum3() {
+        assertThat(new Solution().gcdSum(new int[] {7}), equalTo(0L));
     }
 }

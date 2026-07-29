@@ -7,10 +7,17 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void mergesClosestRepeatedCharacters() {
-        Solution solution = new Solution();
-        assertThat(solution.mergeCharacters("abca", 3), equalTo("abc"));
-        assertThat(solution.mergeCharacters("aabca", 2), equalTo("abca"));
-        assertThat(solution.mergeCharacters("yybyzybz", 2), equalTo("ybzybz"));
+    void mergeCharacters() {
+        assertThat(new Solution().mergeCharacters("abca", 3), equalTo("abc"));
+    }
+
+    @Test
+    void mergeCharacters2() {
+        assertThat(new Solution().mergeCharacters("aabca", 2), equalTo("abca"));
+    }
+
+    @Test
+    void mergeCharacters3() {
+        assertThat(new Solution().mergeCharacters("yybyzybz", 2), equalTo("ybzybz"));
     }
 }

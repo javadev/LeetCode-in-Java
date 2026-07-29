@@ -7,11 +7,18 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void allowsOneReplacementInEitherDirection() {
-        Solution solution = new Solution();
+    void longestArithmetic() {
+        assertThat(new Solution().longestArithmetic(new int[] {9, 7, 5, 10, 1}), equalTo(5));
+    }
 
-        assertThat(solution.longestArithmetic(new int[] {9, 7, 5, 10, 1}), equalTo(5));
-        assertThat(solution.longestArithmetic(new int[] {1, 2, 6, 7}), equalTo(3));
-        assertThat(solution.longestArithmetic(new int[] {1, 3, 5, 7}), equalTo(4));
+    @Test
+    void longestArithmetic2() {
+        assertThat(new Solution().longestArithmetic(new int[] {1, 2, 6, 7}), equalTo(3));
+    }
+
+
+    @Test
+    void longestArithmetic3() {
+        assertThat(new Solution().longestArithmetic(new int[] {1, 3, 5, 7}), equalTo(4));
     }
 }

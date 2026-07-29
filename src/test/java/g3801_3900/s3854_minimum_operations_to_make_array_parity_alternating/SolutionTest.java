@@ -7,13 +7,19 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void findsMinimumOperationsAndResultingRange() {
-        Solution solution = new Solution();
-
+    void makeParityAlternating() {
         assertThat(
-                solution.makeParityAlternating(new int[] {-2, -3, 1, 4}),
+                new Solution().makeParityAlternating(new int[] {-2, -3, 1, 4}),
                 equalTo(new int[] {2, 6}));
-        assertThat(solution.makeParityAlternating(new int[] {0, 2, -2}), equalTo(new int[] {1, 3}));
-        assertThat(solution.makeParityAlternating(new int[] {7}), equalTo(new int[] {0, 0}));
+    }
+
+    @Test
+    void makeParityAlternating2() {
+        assertThat(new Solution().makeParityAlternating(new int[] {0, 2, -2}), equalTo(new int[] {1, 3}));
+    }
+
+    @Test
+    void makeParityAlternating3() {
+        assertThat(new Solution().makeParityAlternating(new int[] {7}), equalTo(new int[] {0, 0}));
     }
 }
