@@ -7,11 +7,17 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void removesOnlyTrailingVowels() {
-        Solution solution = new Solution();
+    void trimTrailingVowels() {
+        assertThat(new Solution().trimTrailingVowels("idea"), equalTo("id"));
+    }
 
-        assertThat(solution.trimTrailingVowels("idea"), equalTo("id"));
-        assertThat(solution.trimTrailingVowels("day"), equalTo("day"));
-        assertThat(solution.trimTrailingVowels("aeiou"), equalTo(""));
+    @Test
+    void trimTrailingVowels2() {
+        assertThat(new Solution().trimTrailingVowels("day"), equalTo("day"));
+    }
+
+    @Test
+    void trimTrailingVowels3() {
+        assertThat(new Solution().trimTrailingVowels("aeiou"), equalTo(""));
     }
 }

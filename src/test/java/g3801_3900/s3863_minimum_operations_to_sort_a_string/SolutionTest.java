@@ -7,12 +7,22 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void returnsMinimumSortableSubstringOperations() {
-        Solution solution = new Solution();
+    void minOperations() {
+        assertThat(new Solution().minOperations("dog"), equalTo(1));
+    }
 
-        assertThat(solution.minOperations("dog"), equalTo(1));
-        assertThat(solution.minOperations("card"), equalTo(2));
-        assertThat(solution.minOperations("gf"), equalTo(-1));
-        assertThat(solution.minOperations("abc"), equalTo(0));
+    @Test
+    void minOperations2() {
+        assertThat(new Solution().minOperations("card"), equalTo(2));
+    }
+
+    @Test
+    void minOperations3() {
+        assertThat(new Solution().minOperations("gf"), equalTo(-1));
+    }
+
+    @Test
+    void minOperations4() {
+        assertThat(new Solution().minOperations("abc"), equalTo(0));
     }
 }

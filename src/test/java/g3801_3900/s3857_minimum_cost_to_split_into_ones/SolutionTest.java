@@ -7,11 +7,17 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void calculatesMinimumSplitCost() {
-        Solution solution = new Solution();
+    void minCost() {
+        assertThat(new Solution().minCost(1), equalTo(0));
+    }
 
-        assertThat(solution.minCost(1), equalTo(0));
-        assertThat(solution.minCost(3), equalTo(3));
-        assertThat(solution.minCost(4), equalTo(6));
+    @Test
+    void minCost2() {
+        assertThat(new Solution().minCost(3), equalTo(3));
+    }
+
+    @Test
+    void minCost3() {
+        assertThat(new Solution().minCost(4), equalTo(6));
     }
 }

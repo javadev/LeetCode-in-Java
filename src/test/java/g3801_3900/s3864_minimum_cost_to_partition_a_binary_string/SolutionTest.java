@@ -7,11 +7,17 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void findsTheCheapestValidHierarchicalPartition() {
-        Solution solution = new Solution();
+    void minCost() {
+        assertThat(new Solution().minCost("1010", 2, 1), equalTo(6L));
+    }
 
-        assertThat(solution.minCost("1010", 2, 1), equalTo(6L));
-        assertThat(solution.minCost("1010", 3, 10), equalTo(12L));
-        assertThat(solution.minCost("00", 1, 2), equalTo(2L));
+    @Test
+    void minCost2() {
+        assertThat(new Solution().minCost("1010", 3, 10), equalTo(12L));
+    }
+
+    @Test
+    void minCost3() {
+        assertThat(new Solution().minCost("00", 1, 2), equalTo(2L));
     }
 }

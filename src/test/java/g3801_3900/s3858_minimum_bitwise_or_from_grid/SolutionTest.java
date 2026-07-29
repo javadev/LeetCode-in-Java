@@ -7,11 +7,17 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void choosesOneValuePerRowWithTheSmallestOr() {
-        Solution solution = new Solution();
+    void minimumOR() {
+        assertThat(new Solution().minimumOR(new int[][] {{1, 5}, {2, 4}}), equalTo(3));
+    }
 
-        assertThat(solution.minimumOR(new int[][] {{1, 5}, {2, 4}}), equalTo(3));
-        assertThat(solution.minimumOR(new int[][] {{3, 5}, {6, 4}}), equalTo(5));
-        assertThat(solution.minimumOR(new int[][] {{7, 9, 8}}), equalTo(7));
+    @Test
+    void minimumOR2() {
+        assertThat(new Solution().minimumOR(new int[][] {{3, 5}, {6, 4}}), equalTo(5));
+    }
+
+    @Test
+    void minimumOR3() {
+        assertThat(new Solution().minimumOR(new int[][] {{7, 9, 8}}), equalTo(7));
     }
 }

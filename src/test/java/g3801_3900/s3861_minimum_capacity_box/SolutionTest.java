@@ -7,11 +7,17 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void returnsSmallestSuitableCapacityAndItsFirstIndex() {
-        Solution solution = new Solution();
+    void minimumIndex() {
+        assertThat(new Solution().minimumIndex(new int[] {1, 5, 3, 7}, 3), equalTo(2));
+    }
 
-        assertThat(solution.minimumIndex(new int[] {1, 5, 3, 7}, 3), equalTo(2));
-        assertThat(solution.minimumIndex(new int[] {3, 5, 4, 3}, 2), equalTo(0));
-        assertThat(solution.minimumIndex(new int[] {4}, 5), equalTo(-1));
+    @Test
+    void minimumIndex2() {
+        assertThat(new Solution().minimumIndex(new int[] {3, 5, 4, 3}, 2), equalTo(0));
+    }
+
+    @Test
+    void minimumIndex3() {
+        assertThat(new Solution().minimumIndex(new int[] {4}, 5), equalTo(-1));
     }
 }
