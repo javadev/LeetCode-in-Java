@@ -19,24 +19,10 @@ Return an integer denoting the count of **non-empty subarrays** of `nums` such t
 
 The possible subarrays with `k = 2` distinct integers, each appearing at least `m = 2` times are:
 
-Subarray
-
-Distinct   
-numbers
-
-Frequency
-
-[1, 2, 1, 2]
-
-{1, 2} → 2
-
-{1: 2, 2: 2}
-
-[1, 2, 1, 2, 2]
-
-{1, 2} → 2
-
-{1: 2, 2: 3}
+| Subarray | Distinct<br>numbers | Frequency |
+|---|---|---|
+| `[1, 2, 1, 2]` | `{1, 2}` → `2` | `{1: 2, 2: 2}` |
+| `[1, 2, 1, 2, 2]` | `{1, 2}` → `2` | `{1: 2, 2: 3}` |
 
 Thus, the answer is 2.
 
@@ -50,30 +36,11 @@ Thus, the answer is 2.
 
 The possible subarrays with `k = 2` distinct integers, each appearing at least `m = 1` times are:
 
-Subarray
-
-Distinct   
-numbers
-
-Frequency
-
-[3, 1]
-
-{3, 1} → 2
-
-{3: 1, 1: 1}
-
-[1, 2]
-
-{1, 2} → 2
-
-{1: 1, 2: 1}
-
-[2, 4]
-
-{2, 4} → 2
-
-{2: 1, 4: 1}
+| Subarray | Distinct<br>numbers | Frequency |
+|---|---|---|
+| `[3, 1]` | `{3, 1}` → `2` | `{3: 1, 1: 1}` |
+| `[1, 2]` | `{1, 2}` → `2` | `{1: 1, 2: 1}` |
+| `[2, 4]` | `{2, 4}` → `2` | `{2: 1, 4: 1}` |
 
 Thus, the answer is 3.
 

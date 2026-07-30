@@ -31,37 +31,11 @@ The term `gcd(a, b)` denotes the **greatest common divisor** of `a` and `b`.
 
 Construct `prefixGcd`:
 
-`i`
-
-`nums[i]`
-
-<code>mx<sub>i</sub></code>
-
-`prefixGcd[i]`
-
-0
-
-2
-
-2
-
-2
-
-1
-
-6
-
-6
-
-6
-
-2
-
-4
-
-6
-
-2
+| `i` | `nums[i]` | `mx<sub>i</sub>` | `prefixGcd[i]` |
+| --: | --------: | ---------------: | -------------: |
+|   0 |         2 |                2 |              2 |
+|   1 |         6 |                6 |              6 |
+|   2 |         4 |                6 |              2 |
 
 `prefixGcd = [2, 6, 2]`. After sorting, it forms `[2, 2, 6]`.
 
@@ -77,45 +51,12 @@ Pair the smallest and largest elements: `gcd(2, 6) = 2`. The remaining middle el
 
 Construct `prefixGcd`:
 
-`i`
-
-`nums[i]`
-
-<code>mx<sub>i</sub></code>
-
-`prefixGcd[i]`
-
-0
-
-3
-
-3
-
-3
-
-1
-
-6
-
-6
-
-6
-
-2
-
-2
-
-6
-
-2
-
-3
-
-8
-
-8
-
-8
+| `i` | `nums[i]` | `mx<sub>i</sub>` | `prefixGcd[i]` |
+|---:|---:|---:|---:|
+| 0 | 3 | 3 | 3 |
+| 1 | 6 | 6 | 6 |
+| 2 | 2 | 6 | 2 |
+| 3 | 8 | 8 | 8 |
 
 `prefixGcd = [3, 6, 2, 8]`. After sorting, it forms `[2, 3, 6, 8]`.
 

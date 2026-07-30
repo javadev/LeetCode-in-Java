@@ -20,41 +20,10 @@ Return an integer denoting the **minimum** total cost required to split the inte
 
 One optimal set of operations is:
 
-`x`
-
-`a`
-
-`b`
-
-`a + b`
-
-`a * b`
-
-Cost
-
-3
-
-1
-
-2
-
-3
-
-2
-
-2
-
-2
-
-1
-
-1
-
-2
-
-1
-
-1
+| `x` | `a` | `b` | `a + b` | `a * b` | Cost |
+|---:|---:|---:|---:|---:|---:|
+| 3 | 1 | 2 | 3 | 2 | 2 |
+| 2 | 1 | 1 | 2 | 1 | 1 |
 
 Thus, the minimum total cost is `2 + 1 = 3`.
 
@@ -68,53 +37,11 @@ Thus, the minimum total cost is `2 + 1 = 3`.
 
 One optimal set of operations is:
 
-`x`
-
-`a`
-
-`b`
-
-`a + b`
-
-`a * b`
-
-Cost
-
-4
-
-2
-
-2
-
-4
-
-4
-
-4
-
-2
-
-1
-
-1
-
-2
-
-1
-
-1
-
-2
-
-1
-
-1
-
-2
-
-1
-
-1
+| `x` | `a` | `b` | `a + b` | `a * b` | Cost |
+|---:|---:|---:|---:|---:|---:|
+| 4 | 2 | 2 | 4 | 4 | 4 |
+| 2 | 1 | 1 | 2 | 1 | 1 |
+| 2 | 1 | 1 | 2 | 1 | 1 |
 
 Thus, the minimum total cost is `4 + 1 + 1 = 6`.
 
