@@ -44,7 +44,7 @@ public class Solution {
         for (int i = 0; i < m; i++) {
             ind.add(i);
         }
-        ind.sort((a, b) -> queries[b][0] - queries[a][0]);
+        ind.sort((a, b) -> Integer.compare(queries[b][0], queries[a][0]));
         TreeMap<Integer, Integer> values = new TreeMap<>();
         int j = n - 1;
         int[] ans = new int[m];

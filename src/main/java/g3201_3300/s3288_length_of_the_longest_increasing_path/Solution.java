@@ -20,17 +20,17 @@ public class Solution {
         upper.sort(
                 (a, b) -> {
                     if (a[0] == b[0]) {
-                        return b[1] - a[1];
+                        return Integer.compare(b[1], a[1]);
                     } else {
-                        return a[0] - b[0];
+                        return Integer.compare(a[0], b[0]);
                     }
                 });
         lower.sort(
                 (a, b) -> {
                     if (a[0] == b[0]) {
-                        return b[1] - a[1];
+                        return Integer.compare(b[1], a[1]);
                     } else {
-                        return a[0] - b[0];
+                        return Integer.compare(a[0], b[0]);
                     }
                 });
         return longestIncreasingLength(upper) + longestIncreasingLength(lower) + 1;

@@ -11,7 +11,7 @@ public class Solution {
         int n = grid.length;
         int m = grid[0].length;
         int[][] dirs = new int[][] {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-        Queue<State> q = new PriorityQueue<>((a, b) -> a.removed - b.removed);
+        Queue<State> q = new PriorityQueue<>((a, b) -> Integer.compare(a.removed, b.removed));
         q.add(new State(0, 0, 0));
         boolean[][] visited = new boolean[n][m];
         visited[0][0] = true;

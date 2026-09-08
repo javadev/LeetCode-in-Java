@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class Solution {
     public int maxTwoEvents(int[][] events) {
-        Arrays.sort(events, (a, b) -> a[0] - b[0]);
+        Arrays.sort(events, (a, b) -> Integer.compare(a[0], b[0]));
         int[] max = new int[events.length];
         for (int i = events.length - 1; i >= 0; i--) {
             if (i == events.length - 1) {

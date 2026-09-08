@@ -30,7 +30,7 @@ public class Solution {
                 (o1, o2) -> {
                     for (int i = 0; i < 26; i++) {
                         if (o1.count[i] != o2.count[i]) {
-                            return o2.count[i] - o1.count[i];
+                            return Integer.compare(o2.count[i], o1.count[i]);
                         }
                     }
                     return o1.c - o2.c;

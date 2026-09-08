@@ -86,7 +86,7 @@ public class Solution {
 
         @Override
         public int compare(Pair p1, Pair p2) {
-            return p1.dis - p2.dis;
+            return Integer.compare(p1.dis, p2.dis);
         }
     }
 }

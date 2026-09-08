@@ -11,7 +11,7 @@ import java.util.Set;
 
 public class Solution {
     public List<Integer> findAllPeople(int n, int[][] meetings, int firstPerson) {
-        Arrays.sort(meetings, ((a, b) -> a[2] - b[2]));
+        Arrays.sort(meetings, ((a, b) -> Integer.compare(a[2], b[2])));
         UF uf = new UF(n);
         // base
         uf.union(0, firstPerson);

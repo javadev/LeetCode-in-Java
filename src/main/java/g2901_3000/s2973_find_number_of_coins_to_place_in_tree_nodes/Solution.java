@@ -34,12 +34,12 @@ public class Solution {
     private PQX dp(List<List<Integer>> g, int[] cost, int i, int p) {
         if (i >= g.size()) {
             PQX pqx = new PQX();
-            pqx.max = new PriorityQueue<>((a, b) -> b - a);
+            pqx.max = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
             pqx.min = new PriorityQueue<>(Comparator.comparingInt(a -> a));
             return pqx;
         }
         List<Integer> next = g.get(i);
-        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b - a);
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
         PriorityQueue<Integer> pq2 = new PriorityQueue<>(Comparator.comparingInt(a -> a));
         if (cost[i] > 0) {
             pq.add(cost[i]);
@@ -69,7 +69,7 @@ public class Solution {
             int bb = !pq2.isEmpty() ? pq2.poll() : 0;
             result[i] = Math.max(0, (long) a * b * c);
             result[i] = Math.max(result[i], Math.max(0, (long) a * aa * bb));
-            pq = new PriorityQueue<>((x, y) -> y - x);
+            pq = new PriorityQueue<>((x, y) -> Integer.compare(y, x));
             pq.add(a);
             pq.add(b);
             pq.add(c);

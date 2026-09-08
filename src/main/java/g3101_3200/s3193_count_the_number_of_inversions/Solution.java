@@ -8,7 +8,7 @@ public class Solution {
     private static final int MOD = 1_000_000_007;
 
     public int numberOfPermutations(int n, int[][] r) {
-        Arrays.sort(r, (o1, o2) -> o1[0] - o2[0]);
+        Arrays.sort(r, (o1, o2) -> Integer.compare(o1[0], o2[0]));
         if (r[0][0] == 0 && r[0][1] > 0) {
             return 0;
         }

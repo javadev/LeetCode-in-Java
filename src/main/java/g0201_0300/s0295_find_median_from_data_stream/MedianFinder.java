@@ -15,7 +15,7 @@ public class MedianFinder {
 
     // initialize your data structure here.
     public MedianFinder() {
-        maxHeap = new PriorityQueue<>((a, b) -> (b - a));
+        maxHeap = new PriorityQueue<>((a, b) -> (Integer.compare(b, a)));
         minHeap = new PriorityQueue<>();
     }
 

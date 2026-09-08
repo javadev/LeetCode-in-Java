@@ -18,7 +18,7 @@ public class Solution {
                 arr[i * m + j][1] = i;
             }
         }
-        Arrays.sort(arr, (a, b) -> b[0] - a[0]);
+        Arrays.sort(arr, (a, b) -> Integer.compare(b[0], a[0]));
         int[] dp = new int[1 << n];
         int i = 0;
         while (i < arr.length) {

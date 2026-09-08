@@ -27,9 +27,9 @@ public class Solution {
                 nums,
                 (a, b) -> {
                     if (a.val2 == b.val2) {
-                        return a.val1 - b.val1;
+                        return Integer.compare(a.val1, b.val1);
                     }
-                    return a.val2 - b.val2;
+                    return Integer.compare(a.val2, b.val2);
                 });
         long sum = 0;
         long ans = 0;

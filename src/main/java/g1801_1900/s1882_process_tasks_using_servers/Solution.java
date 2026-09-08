@@ -13,7 +13,8 @@ public class Solution {
         for (int i = 0; i < servers.length; i++) {
             serverq.offer(i);
         }
-        PriorityQueue<int[]> activetaskq = new PriorityQueue<>((i1, i2) -> i1[1] - i2[1]);
+        PriorityQueue<int[]> activetaskq =
+                new PriorityQueue<>((i1, i2) -> Integer.compare(i1[1], i2[1]));
         int time = 0;
         int[] res = new int[tasks.length];
         for (int i = 0; i < tasks.length; i++) {

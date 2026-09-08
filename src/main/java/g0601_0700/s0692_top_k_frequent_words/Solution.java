@@ -25,7 +25,7 @@ public class Solution {
                 new TreeSet<>(
                         (e1, e2) -> {
                             if (e1.getValue().intValue() != e2.getValue().intValue()) {
-                                return e2.getValue() - e1.getValue();
+                                return Integer.compare(e2.getValue(), e1.getValue());
                             } else {
                                 return e1.getKey().compareToIgnoreCase(e2.getKey());
                             }

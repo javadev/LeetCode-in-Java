@@ -33,9 +33,9 @@ public class Solution {
                 pairs,
                 (a, b) -> {
                     if (a.sum != b.sum) {
-                        return a.sum - b.sum;
+                        return Integer.compare(a.sum, b.sum);
                     }
-                    return a.value - b.value;
+                    return Integer.compare(a.value, b.value);
                 });
         int[] posMap = new int[n];
         for (int i = 0; i < n; i++) {

@@ -37,7 +37,7 @@ public class Graph {
 
     public int shortestPath(int node1, int node2) {
         PriorityQueue<Pair<Integer, Integer>> minHeap =
-                new PriorityQueue<>((a, b) -> a.getValue() - b.getValue());
+                new PriorityQueue<>((a, b) -> Integer.compare(a.getValue(), b.getValue()));
         int[] distance = new int[adj.size()];
         Arrays.fill(distance, Integer.MAX_VALUE);
         minHeap.add(new Pair<>(node1, 0));

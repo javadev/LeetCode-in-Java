@@ -15,6 +15,7 @@ public class Solution {
 
         public Exp(Exp from) {
             this.exps = new LinkedList<>();
+            this.op = null;
             this.parent = from;
         }
 

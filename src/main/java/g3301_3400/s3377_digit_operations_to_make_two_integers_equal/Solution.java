@@ -24,7 +24,7 @@ public class Solution {
         if (sieve[n]) {
             return -1;
         }
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
         visited[n] = true;
         pq.add(new int[] {n, n});
         while (!pq.isEmpty()) {

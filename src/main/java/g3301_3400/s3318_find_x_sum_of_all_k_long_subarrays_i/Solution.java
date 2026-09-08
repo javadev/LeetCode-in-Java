@@ -27,9 +27,9 @@ public class Solution {
                     new PriorityQueue<>(
                             (a, b) -> {
                                 if (a.freq == b.freq) {
-                                    return b.num - a.num;
+                                    return Integer.compare(b.num, a.num);
                                 }
-                                return b.freq - a.freq;
+                                return Integer.compare(b.freq, a.freq);
                             });
             for (int j = i; j < i + k; j++) {
                 map.put(nums[j], map.getOrDefault(nums[j], 0) + 1);

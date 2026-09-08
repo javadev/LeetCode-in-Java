@@ -16,7 +16,7 @@ public class Solution {
     private final int[][] dir = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
     public int minTimeToReach(int[][] moveTime) {
-        PriorityQueue<Node> pq = new PriorityQueue<>((a, b) -> a.t - b.t);
+        PriorityQueue<Node> pq = new PriorityQueue<>((a, b) -> Integer.compare(a.t, b.t));
         int m = moveTime.length;
         int n = moveTime[0].length;
         Node node = new Node();

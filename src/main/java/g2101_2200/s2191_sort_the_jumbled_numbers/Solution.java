@@ -41,7 +41,7 @@ public class Solution {
                     if (retval != 0) {
                         return retval;
                     }
-                    return a.index - b.index;
+                    return Integer.compare(a.index, b.index);
                 });
         int[] retval = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {

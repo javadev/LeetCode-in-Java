@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class Solution {
     public long maximumCoins(int[][] coins, int k) {
-        Arrays.sort(coins, (a, b) -> a[0] - b[0]);
+        Arrays.sort(coins, (a, b) -> Integer.compare(a[0], b[0]));
         int n = coins.length;
         long res = 0;
         long cur = 0;

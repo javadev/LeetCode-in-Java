@@ -19,9 +19,9 @@ public class Solution {
                 new PriorityQueue<>(
                         (a, b) -> {
                             if (a[1] == b[1]) {
-                                return a[2] - b[2];
+                                return Integer.compare(a[2], b[2]);
                             } else {
-                                return a[1] - b[1];
+                                return Integer.compare(a[1], b[1]);
                             }
                         });
         int time = tasks[0][0];

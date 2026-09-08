@@ -20,9 +20,9 @@ public class Solution {
 
         public int compareTo(RC o) {
             if (cnt != o.cnt) {
-                return cnt - o.cnt;
+                return Integer.compare(cnt, o.cnt);
             }
-            return val - o.val;
+            return Integer.compare(val, o.val);
         }
     }
 

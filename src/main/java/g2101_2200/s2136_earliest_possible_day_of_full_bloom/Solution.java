@@ -37,7 +37,7 @@ public class Solution {
         }
 
         public int compareTo(Seed s) {
-            return this.growTime - s.growTime;
+            return Integer.compare(this.growTime, s.growTime);
         }
     }
 }

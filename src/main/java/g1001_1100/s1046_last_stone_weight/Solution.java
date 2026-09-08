@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 
 public class Solution {
     public int lastStoneWeight(int[] stones) {
-        PriorityQueue<Integer> heap = new PriorityQueue<>((a, b) -> b - a);
+        PriorityQueue<Integer> heap = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
         for (int stone : stones) {
             heap.offer(stone);
         }

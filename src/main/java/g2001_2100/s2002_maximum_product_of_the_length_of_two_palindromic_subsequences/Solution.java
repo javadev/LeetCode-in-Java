@@ -22,7 +22,7 @@ public class Solution {
             recur(chars, new State(i, i, 0, mask), list, visited);
             recur(chars, new State(i, i + 1, 0, mask), list, visited);
         }
-        list.sort((a, b) -> b.cnt - a.cnt);
+        list.sort((a, b) -> Integer.compare(b.cnt, a.cnt));
         int res = 1;
         Set<Integer> explored = new HashSet<>();
         for (int i = 0; i < list.size() - 1; ++i) {

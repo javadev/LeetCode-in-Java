@@ -12,7 +12,7 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             nums[i] = new int[] {nums1.get(i), nums2.get(i)};
         }
-        Arrays.sort(nums, (a, b) -> a[1] - b[1]);
+        Arrays.sort(nums, (a, b) -> Integer.compare(a[1], b[1]));
         int[] dp = new int[n + 1];
         long sum1 = 0;
         long sum2 = 0;

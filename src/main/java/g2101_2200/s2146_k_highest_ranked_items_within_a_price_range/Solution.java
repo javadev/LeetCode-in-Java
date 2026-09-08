@@ -69,9 +69,9 @@ public class Solution {
                     if (distDiff == 0) {
                         int priceDiff = a.price - b.price;
                         if (priceDiff == 0) {
-                            int rowDiff = a.row - b.row;
+                            int rowDiff = Integer.compare(a.row, b.row);
                             if (rowDiff == 0) {
-                                return a.col - b.col;
+                                return Integer.compare(a.col, b.col);
                             }
                             return rowDiff;
                         }

@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 
 public class Solution {
     public int eatenApples(int[] apples, int[] days) {
-        PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
+        PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
         int eatenApples = 0;
         for (int i = 0; i < apples.length || !minHeap.isEmpty(); i++) {
             if (i < apples.length) {

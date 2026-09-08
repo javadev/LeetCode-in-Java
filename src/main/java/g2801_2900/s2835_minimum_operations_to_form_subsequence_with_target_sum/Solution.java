@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 
 public class Solution {
     public int minOperations(List<Integer> nums, int target) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b - a);
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
         long sum = 0;
         long count = 0;
         for (int x : nums) {

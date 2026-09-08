@@ -19,7 +19,7 @@ public class Solution {
         }
 
         public int compareTo(Pair p) {
-            return p.sum - this.sum;
+            return Integer.compare(p.sum, this.sum);
         }
     }
 

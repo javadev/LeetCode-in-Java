@@ -7,14 +7,14 @@ import java.util.Arrays;
 
 public class Solution {
     public int[] countServers(int n, int[][] logs, int x, int[] queries) {
-        Arrays.sort(logs, (a, b) -> a[1] - b[1]);
+        Arrays.sort(logs, (a, b) -> Integer.compare(a[1], b[1]));
         int m = queries.length;
         int len = logs.length;
         int[][] qarr = new int[m][];
         for (int i = 0; i < m; i++) {
             qarr[i] = new int[] {i, queries[i]};
         }
-        Arrays.sort(qarr, (a, b) -> a[1] - b[1]);
+        Arrays.sort(qarr, (a, b) -> Integer.compare(a[1], b[1]));
         int[] ans = new int[m];
         int[] freq = new int[n + 1];
         int l = 0;

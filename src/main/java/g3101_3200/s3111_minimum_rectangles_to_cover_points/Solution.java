@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Solution {
     public int minRectanglesToCoverPoints(int[][] points, int w) {
-        Arrays.sort(points, (a, b) -> a[0] - b[0]);
+        Arrays.sort(points, (a, b) -> Integer.compare(a[0], b[0]));
         int res = 0;
         int last = -1;
         for (int[] a : points) {

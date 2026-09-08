@@ -10,7 +10,8 @@ public class Solution {
     public int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
         PriorityQueue<int[]> minCapital =
                 new PriorityQueue<>(Comparator.comparingInt((int[] a) -> a[1]));
-        PriorityQueue<int[]> maxProfit = new PriorityQueue<>((int[] a, int[] b) -> b[0] - a[0]);
+        PriorityQueue<int[]> maxProfit =
+                new PriorityQueue<>((int[] a, int[] b) -> Integer.compare(b[0], a[0]));
         for (int i = 0; i < profits.length; i++) {
             if (w >= capital[i]) {
                 maxProfit.offer(new int[] {profits[i], capital[i]});

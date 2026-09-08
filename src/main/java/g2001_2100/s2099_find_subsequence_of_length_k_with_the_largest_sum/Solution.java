@@ -15,7 +15,7 @@ public class Solution {
         // Loop from 0 to n-1 and add element in result if set contains those index
         // For ex. set has index 3,5,6 Just add those element. Order will be maintained
         // We are defining the min priority queue
-        PriorityQueue<int[]> q = new PriorityQueue<>((a, b) -> (a[0] - b[0]));
+        PriorityQueue<int[]> q = new PriorityQueue<>((a, b) -> (Integer.compare(a[0], b[0])));
         // Add element with index to priority queue
         for (int i = 0; i < nums.length; i++) {
             q.offer(new int[] {nums[i], i});

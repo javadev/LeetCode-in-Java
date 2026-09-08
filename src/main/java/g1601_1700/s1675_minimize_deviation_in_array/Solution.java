@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 
 public class Solution {
     public int minimumDeviation(int[] nums) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b - a);
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
         int min = Integer.MAX_VALUE;
         for (int num : nums) {
             if (num % 2 == 1) {

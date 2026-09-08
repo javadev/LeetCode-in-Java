@@ -13,11 +13,11 @@ public class Solution {
                 new TreeSet<>(
                         (o1, o2) -> {
                             if (o1[0] != o2[0]) {
-                                return o1[0] - o2[0];
+                                return Integer.compare(o1[0], o2[0]);
                             } else {
                                 for (int i = 1; i < o1.length; i++) {
                                     if (o1[i] != o2[i]) {
-                                        return o1[i] - o2[i];
+                                        return Integer.compare(o1[i], o2[i]);
                                     }
                                 }
                                 return 0;

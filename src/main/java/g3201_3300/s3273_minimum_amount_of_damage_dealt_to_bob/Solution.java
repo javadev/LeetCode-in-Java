@@ -35,7 +35,7 @@ public class Solution {
 
         @Override
         public int compareTo(Pair p) {
-            return val * p.key - key * p.val;
+            return Long.compare((long) val * p.key, (long) key * p.val);
         }
     }
 }

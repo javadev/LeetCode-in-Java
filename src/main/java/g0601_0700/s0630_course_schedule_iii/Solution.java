@@ -9,13 +9,13 @@ import java.util.PriorityQueue;
 public class Solution {
     public int scheduleCourse(int[][] courses) {
         // Sort the courses based on their deadline date.
-        Arrays.sort(courses, (a, b) -> a[1] - b[1]);
+        Arrays.sort(courses, (a, b) -> Integer.compare(a[1], b[1]));
         // Only the duration is stored. We don't care which course
         // is the longest, we only care about the total courses can
         // be taken.
         // If the question wants the course ids to be returned.
         // Consider use a Pair<Duration, CourseId> int pair.
-        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b - a);
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
         // Total time consumed.
         int time = 0;
         // At the given time `course`, the overall "time limit" is

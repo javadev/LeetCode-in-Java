@@ -19,7 +19,7 @@ public class Solution {
 
     public int getNumberOfBacklogOrders(int[][] orders) {
         PriorityQueue<Order> sell = new PriorityQueue<>(Comparator.comparingInt(a -> a.price));
-        PriorityQueue<Order> buy = new PriorityQueue<>((a, b) -> b.price - a.price);
+        PriorityQueue<Order> buy = new PriorityQueue<>((a, b) -> Integer.compare(b.price, a.price));
         for (int[] order : orders) {
             int price = order[0];
             int amount = order[1];

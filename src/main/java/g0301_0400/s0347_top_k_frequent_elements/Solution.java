@@ -12,7 +12,7 @@ public class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         Arrays.sort(nums);
         // Min heap of <number, frequency>
-        Queue<int[]> queue = new PriorityQueue<>(k + 1, (a, b) -> (a[1] - b[1]));
+        Queue<int[]> queue = new PriorityQueue<>(k + 1, (a, b) -> (Integer.compare(a[1], b[1])));
         // Filter with min heap
         int j = 0;
         for (int i = 0; i <= nums.length; i++) {

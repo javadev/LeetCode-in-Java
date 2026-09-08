@@ -8,8 +8,8 @@ import java.util.PriorityQueue;
 
 public class Solution {
     public int maxRemoval(int[] nums, int[][] queries) {
-        Arrays.sort(queries, (a, b) -> a[0] - b[0]);
-        PriorityQueue<Integer> last = new PriorityQueue<>((a, b) -> b - a);
+        Arrays.sort(queries, (a, b) -> Integer.compare(a[0], b[0]));
+        PriorityQueue<Integer> last = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
         int[] diffs = new int[nums.length + 1];
         int idx = 0;
         int cur = 0;

@@ -20,7 +20,7 @@ public class Solution {
 
         @Override
         public int compareTo(Cell other) {
-            return value - other.value;
+            return Integer.compare(value, other.value);
         }
 
         @Override

@@ -35,7 +35,7 @@ public class Solution {
             if (r != i) {
                 continue;
             }
-            list[i].sort((a, b) -> a - b);
+            list[i].sort(Integer::compare);
             for (int j = 0; j < list[i].size(); j++) {
                 result += (long) list[i].get(j) * (j < oddCount[r] ? -1 : 1);
             }

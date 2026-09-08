@@ -10,7 +10,7 @@ public class Solution {
         if (stockPrices.length == 1) {
             return 0;
         }
-        Arrays.sort(stockPrices, (a, b) -> a[0] - b[0]);
+        Arrays.sort(stockPrices, (a, b) -> Integer.compare(a[0], b[0]));
         // multiply with 1.0 to make it double and multiply with 100 for making it big so that
         // difference won't come out to be very less and after division it become 0.
         // failing for one of the case without multiply 100

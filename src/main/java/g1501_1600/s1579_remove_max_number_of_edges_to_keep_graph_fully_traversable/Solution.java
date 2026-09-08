@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Solution {
     public int maxNumEdgesToRemove(int n, int[][] edges) {
-        Arrays.sort(edges, (a, b) -> (b[0] - a[0]));
+        Arrays.sort(edges, (a, b) -> (Integer.compare(b[0], a[0])));
         int[] alice = new int[n + 1];
         int[] rankAlice = new int[n + 1];
         int[] bob = new int[n + 1];

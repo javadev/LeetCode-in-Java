@@ -21,7 +21,7 @@ public class Solution {
         }
 
         public int compareTo(Triplet obj) {
-            return this.value - obj.value;
+            return Integer.compare(this.value, obj.value);
         }
     }
 

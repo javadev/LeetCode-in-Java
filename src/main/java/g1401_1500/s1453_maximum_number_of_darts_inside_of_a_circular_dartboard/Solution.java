@@ -19,10 +19,9 @@ public class Solution {
 
         @Override
         public int compareTo(Angle o) {
-            if (a > o.a) {
-                return 1;
-            } else if (a < o.a) {
-                return -1;
+            int angleComparison = Double.compare(a, o.a);
+            if (angleComparison != 0) {
+                return angleComparison;
             } else if (enter == o.enter) {
                 return 0;
             } else if (enter) {

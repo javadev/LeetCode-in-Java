@@ -9,7 +9,7 @@ public class Solution {
     public long minimumDifference(int[] nums) {
         int n = nums.length / 3;
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
         long[] leftMemo = new long[nums.length];
         long[] rightMemo = new long[nums.length];
         long current = 0L;

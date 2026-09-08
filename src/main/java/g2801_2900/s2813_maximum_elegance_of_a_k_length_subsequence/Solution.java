@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class Solution {
     public long findMaximumElegance(int[][] items, int k) {
-        Arrays.sort(items, (a, b) -> b[0] - a[0]);
+        Arrays.sort(items, (a, b) -> Integer.compare(b[0], a[0]));
         int n = items.length;
         boolean[] vis = new boolean[n];
         ArrayDeque<Long> arr = new ArrayDeque<>();

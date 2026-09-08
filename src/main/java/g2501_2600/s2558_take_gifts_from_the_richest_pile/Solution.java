@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 
 public class Solution {
     public long pickGifts(int[] gifts, int k) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> (b - a));
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> (Integer.compare(b, a)));
         long res = 0;
         for (int gift : gifts) {
             pq.add(gift);

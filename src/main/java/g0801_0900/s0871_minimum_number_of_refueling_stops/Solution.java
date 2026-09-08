@@ -12,7 +12,7 @@ public class Solution {
         } else if (stations == null || stations.length == 0) {
             return -1;
         }
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> b[1] - a[1]);
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(b[1], a[1]));
         int start = 0;
         int end = stations.length;
         int currentFuel = startFuel;
