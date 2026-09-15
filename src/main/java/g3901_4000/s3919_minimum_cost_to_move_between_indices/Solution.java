@@ -15,7 +15,7 @@ public class Solution {
             if (left <= right) {
                 prefixSum[i + 1] = prefixSum[i] + right;
                 suffixSum[i] = suffixSum[i - 1] + 1;
-            } else if (left > right) {
+            } else {
                 prefixSum[i + 1] = prefixSum[i] + 1;
                 suffixSum[i] = suffixSum[i - 1] + left;
             }
