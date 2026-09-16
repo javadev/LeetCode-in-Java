@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void maxFixedPoints() {
-        assertThat(new Solution().maxFixedPoints(new int[] {0, 1, 2}), equalTo(2));
+        assertThat(new Solution().maxFixedPoints(new int[] {0, 2, 1}), equalTo(2));
     }
 
     @Test
