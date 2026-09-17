@@ -47,7 +47,9 @@ public class Solution {
                 if (angle[i] > mid) {
                     min = mid;
                     mid = angle[i];
-                } else min = angle[i];
+                } else {
+                    min = angle[i];
+                }
             }
         }
         angle[0] = min;

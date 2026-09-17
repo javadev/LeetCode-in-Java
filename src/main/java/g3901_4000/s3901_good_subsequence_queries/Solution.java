@@ -30,8 +30,12 @@ public class Solution {
             // 2. O(1) tracking for validCount (No segment tree needed for this!)
             boolean wasValid = (nums[idx] % p == 0);
             boolean isValid = (value % p == 0);
-            if (wasValid && !isValid) validCount--;
-            if (!wasValid && isValid) validCount++;
+            if (wasValid && !isValid) {
+                validCount--;
+            }
+            if (!wasValid && isValid) {
+                validCount++;
+            }
 
             // Update the original array to keep track of the old values
             nums[idx] = value;
@@ -61,7 +65,9 @@ public class Solution {
                                 break;
                             }
                         }
-                        if (flag) ans++;
+                        if (flag) {
+                            ans++;
+                        }
                     }
                 }
             }

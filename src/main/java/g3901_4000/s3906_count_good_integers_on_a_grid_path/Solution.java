@@ -43,8 +43,12 @@ public class Solution {
     public long countGoodIntegersOnPath(long l, long r, String s) {
         a = new StringBuilder(String.valueOf(l));
         b = new StringBuilder(String.valueOf(r));
-        while (b.length() < 16) b.insert(0, '0');
-        while (a.length() < 16) a.insert(0, '0');
+        while (b.length() < 16) {
+            b.insert(0, '0');
+        }
+        while (a.length() < 16) {
+            a.insert(0, '0');
+        }
         arr = new boolean[16];
         arr[0] = true;
         int i = 0;

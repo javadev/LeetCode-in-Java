@@ -32,19 +32,25 @@ public class Solution {
                 int valIdxPrefix = nums[i - k];
                 long valPrefix = valley[i - k];
                 for (int idx = valIdxPrefix; idx <= maxVal; idx += idx & -idx) {
-                    if (valPrefix > prefixBitTree[idx]) prefixBitTree[idx] = valPrefix;
+                    if (valPrefix > prefixBitTree[idx]) {
+                        prefixBitTree[idx] = valPrefix;
+                    }
                 }
                 int valIdxSuffix = maxVal - nums[i - k] + 1;
                 long valSuffix = peak[i - k];
                 for (int idx = valIdxSuffix; idx <= maxVal; idx += idx & -idx) {
-                    if (valSuffix > suffixBitTree[idx]) suffixBitTree[idx] = valSuffix;
+                    if (valSuffix > suffixBitTree[idx]) {
+                        suffixBitTree[idx] = valSuffix;
+                    }
                 }
             }
             // Find max alternating sum if nums[i] is the current peak (needs previous valley <
             // nums[i])
             long maxPrevValley = 0;
             for (int q = nums[i] - 1; q > 0; q -= q & -q) {
-                if (prefixBitTree[q] > maxPrevValley) maxPrevValley = prefixBitTree[q];
+                if (prefixBitTree[q] > maxPrevValley) {
+                    maxPrevValley = prefixBitTree[q];
+                }
             }
             // A length-1 subsequence is also strictly alternating
             peak[i] = nums[i] + maxPrevValley;
