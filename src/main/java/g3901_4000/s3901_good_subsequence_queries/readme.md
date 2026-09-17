@@ -25,35 +25,11 @@ The term `gcd(a, b)` denotes the **greatest common divisor** of `a` and `b`.
 
 **Explanation:**
 
-i
+| i | `[ind_i, val_i]` | Operation | Updated `nums` | Any good Subsequence |
+|---:|---|---|---|---|
+| 0 | `[0, 3]` | Update `nums[0]` to `3` | `[3, 8, 12, 16]` | No, as no subsequence has GCD exactly `p = 2` |
+| 1 | `[2, 6]` | Update `nums[2]` to `6` | `[3, 8, 6, 16]` | Yes, subsequence `[8, 6]` has GCD exactly `p = 2` |
 
-<code>[ind<sub>i</sub>, val<sub>i</sub>]</code>
-
-Operation
-
-Updated `nums`
-
-Any good Subsequence
-
-0
-
-`[0, 3]`
-
-Update `nums[0]` to `3`
-
-`[3, 8, 12, 16]`
-
-No, as no subsequence has GCD exactly `p = 2`
-
-1
-
-`[2, 6]`
-
-Update `nums[2]` to `6`
-
-`[3, 8, 6, 16]`
-
-Yes, subsequence `[8, 6]` has GCD exactly `p = 2`
 
 Thus, the answer is 1.
 
@@ -65,45 +41,11 @@ Thus, the answer is 1.
 
 **Explanation:**
 
-i
-
-<code>[ind<sub>i</sub>, val<sub>i</sub>]</code>
-
-Operation
-
-Updated `nums`
-
-Any good Subsequence
-
-0
-
-`[0, 6]`
-
-Update `nums[0]` to `6`
-
-`[6, 5, 7, 8]`
-
-No, as no subsequence has GCD exactly `p = 3`
-
-1
-
-`[1, 9]`
-
-Update `nums[1]` to `9`
-
-`[6, 9, 7, 8]`
-
-Yes, subsequence `[6, 9]` has GCD exactly `p = 3`
-
-2
-
-`[2, 3]`
-
-Update `nums[2]` to `3`
-
-`[6, 9, 3, 8]`
-
-Yes, subsequence `[6, 9, 3]` has GCD exactly `p = 3`
+| i | `[ind_i, val_i]` | Operation | Updated `nums` | Any good Subsequence |
+|---:|---|---|---|---|
+| 0 | `[0, 6]` | Update `nums[0]` to `6` | `[6, 5, 7, 8]` | No, as no subsequence has GCD exactly `p = 3` |
+| 1 | `[1, 9]` | Update `nums[1]` to `9` | `[6, 9, 7, 8]` | Yes, subsequence `[6, 9]` has GCD exactly `p = 3` |
+| 2 | `[2, 3]` | Update `nums[2]` to `3` | `[6, 9, 3, 8]` | Yes, subsequence `[6, 9, 3]` has GCD exactly `p = 3` |
 
 Thus, the answer is 2.
 
@@ -115,35 +57,10 @@ Thus, the answer is 2.
 
 **Explanation:**
 
-i
-
-<code>[ind<sub>i</sub>, val<sub>i</sub>]</code>
-
-Operation
-
-Updated `nums`
-
-Any good Subsequence
-
-0
-
-`[1, 4]`
-
-Update `nums[1]` to `4`
-
-`[5, 4, 9]`
-
-No, as no subsequence has GCD exactly `p = 2`
-
-1
-
-`[2, 8]`
-
-Update `nums[2]` to `8`
-
-`[5, 4, 8]`
-
-No, as no subsequence has GCD exactly `p = 2`
+| i | `[ind_i, val_i]` | Operation | Updated `nums` | Any good Subsequence |
+|---:|---|---|---|---|
+| 0 | `[1, 4]` | Update `nums[1]` to `4` | `[5, 4, 9]` | No, as no subsequence has GCD exactly `p = 2` |
+| 1 | `[2, 8]` | Update `nums[2]` to `8` | `[5, 4, 8]` | No, as no subsequence has GCD exactly `p = 2` |
 
 Thus, the answer is 0.
 

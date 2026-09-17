@@ -22,69 +22,15 @@ Return an integer representing the number of **non-empty** subsets `s` of nodes 
 
 **Explanation:**
 
-`s`
-
-connected?
-
-sum of node values
-
-counted?
-
-`[0]`
-
-Yes
-
-1
-
-No
-
-`[1]`
-
-Yes
-
-0
-
-Yes
-
-`[2]`
-
-Yes
-
-1
-
-No
-
-`[0,1]`
-
-Yes
-
-1
-
-No
-
-`[0,2]`
-
-No, node 0 and node 2 are disconnected.
-
-2
-
-No
-
-`[1,2]`
-
-Yes
-
-1
-
-No
-
-`[0,1,2]`
-
-Yes
-
-2
-
-Yes
+| `s` | connected? | sum of node values | counted? |
+|---|---|---:|---|
+| `[0]` | Yes | 1 | No |
+| `[1]` | Yes | 0 | Yes |
+| `[2]` | Yes | 1 | No |
+| `[0,1]` | Yes | 1 | No |
+| `[0,2]` | No, node 0 and node 2 are disconnected. | 2 | No |
+| `[1,2]` | Yes | 1 | No |
+| `[0,1,2]` | Yes | 2 | Yes |
 
 **Example 2:**
 
@@ -94,21 +40,9 @@ Yes
 
 **Explanation:**
 
-`s`
-
-connected?
-
-sum of node values
-
-counted?
-
-`[0]`
-
-Yes
-
-1
-
-No
+| `s` | connected? | sum of node values | counted? |
+|---|---|---:|---|
+| `[0]` | Yes | 1 | No |
 
 **Constraints:**
 

@@ -27,37 +27,12 @@ Return an integer representing the number of good integers in the range `[l, r]`
 
 The grid for `x = 8`:
 
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-8
+|  |  |  |  |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 8 |
 
 *   Path: `(0,0) → (1,0) → (2,0) → (3,0) → (3,1) → (3,2) → (3,3)`
 *   The sequence of digits visited is `[0, 0, 0, 0, 0, 0, 8]`.
@@ -65,74 +40,24 @@ The grid for `x = 8`:
 
 The grid for `x = 9`:
 
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-9
+|  |  |  |  |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 9 |
 
 *   The sequence of digits visited is `[0, 0, 0, 0, 0, 0, 9]`.
 *   As the sequence of digits visited is non-decreasing, 9 is a good integer.
 
 The grid for `x = 10`:
 
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-1
-
-0
+|  |  |  |  |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 |
 
 *   The sequence of digits visited is `[0, 0, 0, 0, 0, 1, 0]`.
 *   As the sequence of digits visited is not non-decreasing, 10 is not a good integer.
@@ -148,37 +73,12 @@ The grid for `x = 10`:
 
 The grid for `x = 123456789`:
 
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
+|  |  |  |  |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 1 |
+| 2 | 3 | 4 | 5 |
+| 6 | 7 | 8 | 9 |
 
 *   Path: `(0,0) → (1,0) → (2,0) → (2,1) → (2,2) → (3,2) → (3,3)`
 *   The sequence of digits visited is `[0, 0, 2, 3, 4, 8, 9]`.
@@ -186,37 +86,12 @@ The grid for `x = 123456789`:
 
 The grid for `x = 123456790`:
 
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-0
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-9
-
-0
+|  |  |  |  |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | 1 |
+| 2 | 3 | 4 | 5 |
+| 6 | 7 | 9 | 0 |
 
 *   The sequence of digits visited is `[0, 0, 2, 3, 4, 9, 0]`.
 *   As the sequence of digits visited is not non-decreasing, 123456790 is not a good integer.
@@ -232,37 +107,12 @@ The grid for `x = 123456790`:
 
 The grid for `x = 1288561398769758`:
 
-1
-
-2
-
-8
-
-8
-
-5
-
-6
-
-1
-
-3
-
-9
-
-8
-
-7
-
-6
-
-9
-
-7
-
-5
-
-8
+|  |  |  |  |
+|---|---|---|---|
+| 1 | 2 | 8 | 8 |
+| 5 | 6 | 1 | 3 |
+| 9 | 8 | 7 | 6 |
+| 9 | 7 | 5 | 8 |
 
 *   Path: `(0,0) → (0,1) → (0,2) → (0,3) → (1,3) → (2,3) → (3,3)`
 *   The sequence of digits visited is `[1, 2, 8, 8, 3, 6, 8]`.

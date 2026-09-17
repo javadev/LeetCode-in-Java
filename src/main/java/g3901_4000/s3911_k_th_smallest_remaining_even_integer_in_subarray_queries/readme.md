@@ -23,63 +23,11 @@ Return an integer array `ans`, where `ans[i]` is the result for the <code>i<sup>
 
 **Explanation:**
 
-`i`
-
-`queries[i]`
-
-<code>nums[l<sub>i</sub>..r<sub>i</sub>]</code>
-
-Removed   
-Evens
-
-Remaining   
-Evens
-
-<code>k<sub>i</sub></code>
-
-`ans[i]`
-
-0
-
-[0, 2, 1]
-
-[1, 4, 7]
-
-[4]
-
-2, 6, 8, ...
-
-1
-
-2
-
-1
-
-[1, 1, 2]
-
-[4]
-
-[4]
-
-2, 6, 8, ...
-
-2
-
-6
-
-2
-
-[0, 0, 3]
-
-[1]
-
-[]
-
-2, 4, 6, ...
-
-3
-
-6
+| `i` | `queries[i]` | `nums[l_i..r_i]` | Removed Evens | Remaining Evens | `k_i` | `ans[i]` |
+|---:|---|---|---|---|---:|---:|
+| 0 | `[0, 2, 1]` | `[1, 4, 7]` | `[4]` | 2, 6, 8, ... | 1 | 2 |
+| 1 | `[1, 1, 2]` | `[4]` | `[4]` | 2, 6, 8, ... | 2 | 6 |
+| 2 | `[0, 0, 3]` | `[1]` | `[]` | 2, 4, 6, ... | 3 | 6 |
 
 Thus, `ans = [2, 6, 6]`.
 
@@ -91,63 +39,11 @@ Thus, `ans = [2, 6, 6]`.
 
 **Explanation:**
 
-`i`
-
-`queries[i]`
-
-<code>nums[l<sub>i</sub>..r<sub>i</sub>]</code>
-
-Removed   
-Evens
-
-Remaining   
-Evens
-
-<code>k<sub>i</sub></code>
-
-`ans[i]`
-
-0
-
-[0, 1, 2]
-
-[2, 5]
-
-[2]
-
-4, 6, 8, ...
-
-2
-
-6
-
-1
-
-[1, 2, 1]
-
-[5, 8]
-
-[8]
-
-2, 4, 6, ...
-
-1
-
-2
-
-2
-
-[0, 2, 4]
-
-[2, 5, 8]
-
-[2, 8]
-
-4, 6, 10, 12, ...
-
-4
-
-12
+| `i` | `queries[i]` | `nums[l_i..r_i]` | Removed Evens | Remaining Evens | `k_i` | `ans[i]` |
+|---:|---|---|---|---|---:|---:|
+| 0 | `[0, 1, 2]` | `[2, 5]` | `[2]` | 4, 6, 8, ... | 2 | 6 |
+| 1 | `[1, 2, 1]` | `[5, 8]` | `[8]` | 2, 4, 6, ... | 1 | 2 |
+| 2 | `[0, 2, 4]` | `[2, 5, 8]` | `[2, 8]` | 4, 6, 10, 12, ... | 4 | 12 |
 
 Thus, `ans = [6, 2, 12]`.
 
@@ -159,49 +55,10 @@ Thus, `ans = [6, 2, 12]`.
 
 **Explanation:**
 
-`i`
-
-`queries[i]`
-
-<code>nums[l<sub>i</sub>..r<sub>i</sub>]</code>
-
-Removed   
-Evens
-
-Remaining   
-Evens
-
-<code>k<sub>i</sub></code>
-
-`ans[i]`
-
-0
-
-[0, 1, 1]
-
-[3, 6]
-
-[6]
-
-2, 4, 8, ...
-
-1
-
-2
-
-1
-
-[1, 1, 3]
-
-[6]
-
-[6]
-
-2, 4, 8, ...
-
-3
-
-8
+| `i` | `queries[i]` | `nums[l_i..r_i]` | Removed Evens | Remaining Evens | `k_i` | `ans[i]` |
+|---:|---|---|---|---|---:|---:|
+| 0 | `[0, 1, 1]` | `[3, 6]` | `[6]` | 2, 4, 8, ... | 1 | 2 |
+| 1 | `[1, 1, 3]` | `[6]` | `[6]` | 2, 4, 8, ... | 3 | 8 |
 
 Thus, `ans = [2, 8]`.
 
