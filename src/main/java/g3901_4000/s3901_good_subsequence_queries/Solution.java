@@ -71,11 +71,17 @@ public class Solution {
 
     // Iterative Range Query [l, r] inclusive
     private int query(int l, int r, int n) {
-        if (l > r) {return 0;}
+        if (l > r) {
+            return 0;
+        }
         int res = 0;
         for (l += n, r += n + 1; l < r; l >>= 1, r >>= 1) {
-            if ((l & 1) == 1) {res = gcd(res, tree[l++]);}
-            if ((r & 1) == 1) {res = gcd(res, tree[--r]);}
+            if ((l & 1) == 1) {
+                res = gcd(res, tree[l++]);
+            }
+            if ((r & 1) == 1) {
+                res = gcd(res, tree[--r]);
+            }
         }
         return res;
     }

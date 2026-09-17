@@ -3,9 +3,8 @@ package g3901_4000.s3912_valid_elements_in_an_array;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.List;
+import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test

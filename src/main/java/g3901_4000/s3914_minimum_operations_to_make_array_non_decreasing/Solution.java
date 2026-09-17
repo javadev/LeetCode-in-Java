@@ -8,9 +8,8 @@ public class Solution {
         int n = nums.length;
         long ans = 0;
         for (int i = 1; i < n; ++i) {
-            ans += Math.max(nums[i-1]-nums[i],0);
+            ans += Math.max(nums[i - 1] - nums[i], 0);
         }
         return ans;
     }
 }
-

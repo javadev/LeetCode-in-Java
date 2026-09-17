@@ -24,15 +24,24 @@ public class Solution {
         }
         int zeros = (2 * n + 1 - bal) / 2;
         int maxLength = 2 * Math.min(zeros, n - zeros);
-        for(int i = 1; i <= n && ans < maxLength; i++) {
+        for (int i = 1; i <= n && ans < maxLength; i++) {
             bal += (('1' ^ arr[i - 1]) << 1) - 1;
-            if(i - balIndex[bal] > ans) {ans = i - balIndex[bal];}
-            if(balIndex[bal - 2] < i - maxLength) {balIndex[bal - 2] = nextIndex[balIndex[bal - 2]];}
-            if(i - balIndex[bal - 2] > ans) {ans = i - balIndex[bal - 2];}
-            if(balIndex[bal + 2] < i - maxLength) {balIndex[bal + 2] = nextIndex[balIndex[bal + 2]];}
-            if(i - balIndex[bal + 2] > ans) {ans = i - balIndex[bal + 2];}
+            if (i - balIndex[bal] > ans) {
+                ans = i - balIndex[bal];
+            }
+            if (balIndex[bal - 2] < i - maxLength) {
+                balIndex[bal - 2] = nextIndex[balIndex[bal - 2]];
+            }
+            if (i - balIndex[bal - 2] > ans) {
+                ans = i - balIndex[bal - 2];
+            }
+            if (balIndex[bal + 2] < i - maxLength) {
+                balIndex[bal + 2] = nextIndex[balIndex[bal + 2]];
+            }
+            if (i - balIndex[bal + 2] > ans) {
+                ans = i - balIndex[bal + 2];
+            }
         }
         return ans;
     }
 }
-

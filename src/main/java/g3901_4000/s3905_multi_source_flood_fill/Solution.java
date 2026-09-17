@@ -40,7 +40,7 @@ public class Solution {
                         grid[nr][nc] = color;
                         q[tail++] = nextIdx;
                     } else if (dist[nextIdx] == d + 1 && (color > grid[nr][nc])) {
-                            grid[nr][nc] = color;
+                        grid[nr][nc] = color;
                     }
                 }
             }
@@ -48,4 +48,3 @@ public class Solution {
         return grid;
     }
 }
-

@@ -8,14 +8,14 @@ public class Solution {
         long asc = 0;
         long desc = 0;
         int i;
-        for(i=0; i < nums.length-1; i++) {
+        for (i = 0; i < nums.length - 1; i++) {
             asc += nums[i];
-            if(nums[i]>nums[i+1]) {
+            if (nums[i] > nums[i + 1]) {
                 break;
             }
         }
         for (; i < nums.length; i++) {
-            desc+=nums[i];
+            desc += nums[i];
         }
         if (asc == desc) {
             return -1;
@@ -23,4 +23,3 @@ public class Solution {
         return asc > desc ? 0 : 1;
     }
 }
-

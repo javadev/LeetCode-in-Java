@@ -16,12 +16,16 @@ public class Solution {
             }
         }
         List<int[]> x = new ArrayList<>();
-        for (int i = 0; i < 26 ; i++) {
+        for (int i = 0; i < 26; i++) {
             if (freq[i] > 0) {
                 x.add(new int[] {i, freq[i]});
             }
         }
-        x.sort((a,b) -> b[1] - a[1] == 0 ? s.indexOf((char) (a[0] + 'a')) - s.indexOf((char) (b[0] +'a')) : b[1] - a[1]);
+        x.sort(
+                (a, b) ->
+                        b[1] - a[1] == 0
+                                ? s.indexOf((char) (a[0] + 'a')) - s.indexOf((char) (b[0] + 'a'))
+                                : b[1] - a[1]);
         int i = 0;
         for (int[] f : x) {
             while (f[1] > 0) {
@@ -36,4 +40,3 @@ public class Solution {
         return new String(ch);
     }
 }
-

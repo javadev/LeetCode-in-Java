@@ -40,14 +40,16 @@ public class Solution {
                     if (valSuffix > suffixBitTree[idx]) suffixBitTree[idx] = valSuffix;
                 }
             }
-            // Find max alternating sum if nums[i] is the current peak (needs previous valley < nums[i])
+            // Find max alternating sum if nums[i] is the current peak (needs previous valley <
+            // nums[i])
             long maxPrevValley = 0;
             for (int q = nums[i] - 1; q > 0; q -= q & -q) {
                 if (prefixBitTree[q] > maxPrevValley) maxPrevValley = prefixBitTree[q];
             }
             // A length-1 subsequence is also strictly alternating
             peak[i] = nums[i] + maxPrevValley;
-            // Find max alternating sum if nums[i] is the current valley (needs previous peak > nums[i])
+            // Find max alternating sum if nums[i] is the current valley (needs previous peak >
+            // nums[i])
             long maxPrevPeak = 0;
             for (int q = maxVal - nums[i]; q > 0; q -= q & -q) {
                 if (suffixBitTree[q] > maxPrevPeak) {
@@ -67,4 +69,3 @@ public class Solution {
         return maxScore;
     }
 }
-

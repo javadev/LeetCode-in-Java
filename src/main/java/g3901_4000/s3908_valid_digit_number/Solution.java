@@ -6,14 +6,14 @@ package g3901_4000.s3908_valid_digit_number;
 public class Solution {
     public boolean validDigit(int n, int x) {
         boolean value = false;
-        while (n>0) {
+        while (n > 0) {
             int rem = n % 10;
             n /= 10;
             if (rem == x) {
                 value = true;
             }
-            if (n==0 && rem==x) {
-                value=false;
+            if (n == 0 && rem == x) {
+                value = false;
             }
         }
         return value;

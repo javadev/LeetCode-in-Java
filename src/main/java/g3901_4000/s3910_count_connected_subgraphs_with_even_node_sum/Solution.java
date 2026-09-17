@@ -38,8 +38,7 @@ public class Solution {
             long candidateMask,
             long excludedMask,
             int parity,
-            long allowedMask
-    ) {
+            long allowedMask) {
         if (parity == 0) {
             validCount++;
         }
@@ -48,17 +47,19 @@ public class Solution {
             int currentNode = Long.numberOfTrailingZeros(currentBit);
             candidateMask ^= currentBit;
             long nextSelectedMask = selectedMask | currentBit;
-            long nextCandidateMask = candidateMask
-                    | (graph[currentNode] & allowedMask & ~nextSelectedMask & ~excludedMask);
+            long nextCandidateMask =
+                    candidateMask
+                            | (graph[currentNode]
+                                    & allowedMask
+                                    & ~nextSelectedMask
+                                    & ~excludedMask);
             search(
                     nextSelectedMask,
                     nextCandidateMask,
                     excludedMask,
                     parity ^ (nums[currentNode] & 1),
-                    allowedMask
-            );
+                    allowedMask);
             excludedMask |= currentBit;
         }
     }
 }
-
