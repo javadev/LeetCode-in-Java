@@ -26,22 +26,22 @@ public class Solution {
             // third segment
             if (upperCnt - remove < k) {
                 ans[q] = 2 * (k + remove);
-                continue;
-            }
-            // middle segment
-            int s = l;
-            int e = r;
-            while (s <= e) {
-                int m = s + (e - s) / 2;
-                int u = nums[m] / 2;
-                int rem = prefix[m + 1] - prefix[l];
-                if (u - rem < k) {
-                    s = m + 1;
-                } else {
-                    e = m - 1;
+            } else {
+                // middle segment
+                int s = l;
+                int e = r;
+                while (s <= e) {
+                    int m = s + (e - s) / 2;
+                    int u = nums[m] / 2;
+                    int rem = prefix[m + 1] - prefix[l];
+                    if (u - rem < k) {
+                        s = m + 1;
+                    } else {
+                        e = m - 1;
+                    }
                 }
+                ans[q] = 2 * (k + (prefix[s] - prefix[l]));
             }
-            ans[q] = 2 * (k + (prefix[s] - prefix[l]));
         }
         return ans;
     }

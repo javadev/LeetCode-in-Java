@@ -26,13 +26,12 @@ public class Solution {
             int ntl = (tl == 1 && digit == lb) ? 1 : 0;
             int ntu = (tu == 1 && digit == ub) ? 1 : 0;
             if (arr[idx] || prev == 10) {
-                if (prev != 10 && digit < prev) {
-                    continue;
+                if (prev == 10 || digit >= prev) {
+                    res += rec(idx + 1, ntl, ntu, digit);
                 }
-                res += rec(idx + 1, ntl, ntu, digit);
-                continue;
+            } else {
+                res += rec(idx + 1, ntl, ntu, prev);
             }
-            res += rec(idx + 1, ntl, ntu, prev);
         }
         if (tl == 0 && tu == 0) {
             dp[idx][prev] = res;
