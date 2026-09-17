@@ -58,7 +58,7 @@ class SolutionTest {
 
     @Test
     void maxFixedPoints11() {
-        assertThat(new Solution().maxFixedPoints(new int[] {0, 2, 2, 3}), equalTo(2));
+        assertThat(new Solution().maxFixedPoints(new int[] {0, 2, 2, 3}), equalTo(3));
     }
 
     @Test
@@ -93,16 +93,16 @@ class SolutionTest {
 
     @Test
     void maxFixedPoints18() {
-        assertThat(new Solution().maxFixedPoints(new int[] {0, 2, 3, 1, 4}), equalTo(3));
+        assertThat(new Solution().maxFixedPoints(new int[] {0, 2, 3, 1, 4}), equalTo(2));
     }
 
     @Test
     void maxFixedPoints19() {
-        assertThat(new Solution().maxFixedPoints(new int[] {0, 1, 3, 2, 4}), equalTo(4));
+        assertThat(new Solution().maxFixedPoints(new int[] {0, 1, 3, 2, 4}), equalTo(3));
     }
 
     @Test
     void maxFixedPoints20() {
-        assertThat(new Solution().maxFixedPoints(new int[] {0, 2, 1, 4, 3, 5}), equalTo(4));
+        assertThat(new Solution().maxFixedPoints(new int[] {0, 2, 1, 4, 3, 5}), equalTo(3));
     }
 }
