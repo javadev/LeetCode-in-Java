@@ -1,6 +1,6 @@
 package g3701_3800.s3786_total_sum_of_interaction_cost_in_tree_groups;
 
-// #Hard #Array #Tree #Senior_Staff #Weekly_Contest_481 #Depth_First_Search
+// #Hard #Array #Depth_First_Search #Tree #Senior_Staff #Weekly_Contest_481
 // #2026_05_22_Time_82_ms_(90.67%)_Space_296.78_MB_(21.33%)
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package g3801_3900.s3820_pythagorean_distance_nodes_in_a_tree;
 
-// #Medium #Tree #Staff #Weekly_Contest_486 #Breadth_First_Search
+// #Medium #Breadth_First_Search #Tree #Staff #Weekly_Contest_486
 // #2026_06_09_Time_96_ms_(90.83%)_Space_234.88_MB_(70.83%)
 
 import java.util.ArrayDeque;

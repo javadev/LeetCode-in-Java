@@ -1,6 +1,6 @@
 package g3801_3900.s3887_incremental_even_weighted_cycle_queries;
 
-// #Hard #Senior_Staff #Weekly_Contest_495 #Union_Find #Graph_Theory
+// #Hard #Union_Find #Senior_Staff #Graph_Theory #Weekly_Contest_495
 // #2026_08_13_Time_18_ms_(100.00%)_Space_262.39_MB_(65.96%)
 
 public class Solution {

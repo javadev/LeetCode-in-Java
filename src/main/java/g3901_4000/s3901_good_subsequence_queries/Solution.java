@@ -1,6 +1,6 @@
 package g3901_4000.s3901_good_subsequence_queries;
 
-// #Hard #Array #Math #Segment_Tree #Number_Theory #Weekly_Contest_497 #Principal
+// #Hard #Array #Math #Segment_Tree #Number_Theory #Principal #Weekly_Contest_497
 // #2026_09_17_Time_20_ms_(100.00%)_Space_133.27_MB_(34.15%)
 
 public class Solution {
@@ -36,7 +36,6 @@ public class Solution {
             if (!wasValid && isValid) {
                 validCount++;
             }
-
             // Update the original array to keep track of the old values
             nums[idx] = value;
             // Point update for the Iterative Tree

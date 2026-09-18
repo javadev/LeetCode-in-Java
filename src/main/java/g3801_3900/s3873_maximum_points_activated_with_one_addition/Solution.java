@@ -1,6 +1,6 @@
 package g3801_3900.s3873_maximum_points_activated_with_one_addition;
 
-// #Hard #Array #Hash_Table #Senior_Staff #Weekly_Contest_493 #Union_Find
+// #Hard #Array #Hash_Table #Union_Find #Senior_Staff #Weekly_Contest_493
 // #2026_07_28_Time_36_ms_(97.50%)_Space_210.60_MB_(92.50%)
 
 import java.util.HashMap;

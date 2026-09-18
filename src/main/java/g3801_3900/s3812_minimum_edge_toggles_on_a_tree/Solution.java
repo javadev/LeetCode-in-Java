@@ -1,7 +1,7 @@
 package g3801_3900.s3812_minimum_edge_toggles_on_a_tree;
 
-// #Hard #Sorting #Tree #Topological_Sort #Senior_Staff #Depth_First_Search #Biweekly_Contest_174
-// #Graph_Theory #2026_06_09_Time_89_ms_(86.67%)_Space_303.92_MB_(28.33%)
+// #Hard #Sorting #Depth_First_Search #Tree #Topological_Sort #Senior_Staff #Graph_Theory
+// #Biweekly_Contest_174 #2026_06_09_Time_89_ms_(86.67%)_Space_303.92_MB_(28.33%)
 
 import java.util.ArrayList;
 import java.util.Collections;

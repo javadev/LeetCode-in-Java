@@ -1,7 +1,7 @@
 package g3801_3900.s3841_palindromic_path_queries_in_a_tree;
 
-// #Hard #Array #String #Tree #Bit_Manipulation #Divide_and_Conquer #Segment_Tree
-// #Biweekly_Contest_176 #Principal #Depth_First_Search
+// #Hard #Array #String #Depth_First_Search #Tree #Bit_Manipulation #Divide_and_Conquer
+// #Segment_Tree #Principal #Biweekly_Contest_176
 // #2026_07_22_Time_65_ms_(100.00%)_Space_185.61_MB_(96.67%)
 
 import java.util.ArrayList;
