@@ -1,6 +1,6 @@
 package g3701_3800.s3743_maximize_cyclic_partition_score;
 
-// #Hard #Array #Dynamic_Programming #Weekly_Contest_475 #Principal
+// #Hard #Array #Dynamic_Programming #Principal #Weekly_Contest_475
 // #2026_04_26_Time_40_ms_(96.15%)_Space_120.45_MB_(7.69%)
 
 public class Solution {

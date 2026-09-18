@@ -1,5 +1,5 @@
-# #Medium #2026_06_09_Time_290_ms_(87.69%)_Space_0.0_MB_(100.00%)
 # Write your MySQL query statement below
+# #Medium #2026_06_09_Time_290_ms_(87.69%)_Space_0.0_MB_(100.00%)
 WITH user_selection AS
 (SELECT
     user_id,

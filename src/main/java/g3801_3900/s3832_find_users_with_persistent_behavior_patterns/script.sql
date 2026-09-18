@@ -1,5 +1,5 @@
-# #Hard #2026_07_21_Time_367_ms_(16.77%)_Space_0.0_MB_(100.00%)
 # Write your MySQL query statement below
+# #Hard #2026_07_21_Time_367_ms_(16.77%)_Space_0.0_MB_(100.00%)
 WITH distinct_activity AS (
     SELECT DISTINCT
         user_id,

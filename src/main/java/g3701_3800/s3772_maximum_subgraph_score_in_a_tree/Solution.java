@@ -1,6 +1,6 @@
 package g3701_3800.s3772_maximum_subgraph_score_in_a_tree;
 
-// #Hard #Array #Dynamic_Programming #Tree #Senior_Staff #Weekly_Contest_479 #Depth_First_Search
+// #Hard #Array #Dynamic_Programming #Depth_First_Search #Tree #Senior_Staff #Weekly_Contest_479
 // #2026_05_08_Time_35_ms_(100.00%)_Space_279.46_MB_(74.36%)
 
 import java.util.Arrays;

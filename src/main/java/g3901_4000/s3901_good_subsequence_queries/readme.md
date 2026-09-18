@@ -30,7 +30,6 @@ The term `gcd(a, b)` denotes the **greatest common divisor** of `a` and `b`.
 | 0 | `[0, 3]` | Update `nums[0]` to `3` | `[3, 8, 12, 16]` | No, as no subsequence has GCD exactly `p = 2` |
 | 1 | `[2, 6]` | Update `nums[2]` to `6` | `[3, 8, 6, 16]` | Yes, subsequence `[8, 6]` has GCD exactly `p = 2` |
 
-
 Thus, the answer is 1.
 
 **Example 2:**

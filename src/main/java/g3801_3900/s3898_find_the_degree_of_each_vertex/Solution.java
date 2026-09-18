@@ -1,6 +1,6 @@
 package g3801_3900.s3898_find_the_degree_of_each_vertex;
 
-// #Easy #Array #Matrix #Mid_Level #Graph_Theory #Weekly_Contest_497
+// #Easy #Array #Matrix #Mid_Level #Weekly_Contest_497 #Graph_Theory
 // #2026_08_13_Time_1_ms_(100.00%)_Space_48.48_MB_(42.57%)
 
 public class Solution {

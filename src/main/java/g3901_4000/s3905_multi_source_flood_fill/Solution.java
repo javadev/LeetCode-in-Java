@@ -1,6 +1,6 @@
 package g3901_4000.s3905_multi_source_flood_fill;
 
-// #Medium #Array #Matrix #Staff #Weekly_Contest_498 #Breadth_First_Search
+// #Medium #Array #Breadth_First_Search #Matrix #Staff #Weekly_Contest_498
 // #2026_09_17_Time_33_ms_(100.00%)_Space_90.55_MB_(100.00%)
 
 import java.util.Arrays;
