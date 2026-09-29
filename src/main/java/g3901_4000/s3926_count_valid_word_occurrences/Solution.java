@@ -7,14 +7,11 @@ public class Solution {
     public int[] countWordOccurrences(String[] chunks, String[] queries) {
         Trie trie = new Trie();
         trie.fill(chunks);
-
         int n = queries.length;
         int[] result = new int[n];
-
         for (int k = 0; k < n; k++) {
             result[k] = trie.count(queries[k]);
         }
-
         return result;
     }
 
@@ -25,49 +22,37 @@ public class Solution {
         private void fill(String[] chunks) {
             Trie node = this;
             char last = '@';
-
             for (int j = 0; j < chunks.length; j++) {
                 String chunk = chunks[j];
-
                 for (int k = 0; k < chunk.length(); k++) {
                     char c = processCharacter(chunk, k, j, chunks, last);
-
                     node = addCharacter(node, c);
                     node = finalizeWordIfNeeded(node, c);
-
                     last = c;
                 }
             }
-
             incrementCountIfNeeded(node);
         }
 
         private char processCharacter(
                 String chunk, int index, int chunkIndex, String[] chunks, char last) {
-
             char c = chunk.charAt(index);
-
             if (c == '-') {
                 char next = getNextCharacter(chunk, index, chunkIndex, chunks);
-
                 if (!isLetter(last) || !isLetter(next)) {
                     return '@';
                 }
             }
-
             return c;
         }
 
         private char getNextCharacter(String chunk, int index, int chunkIndex, String[] chunks) {
-
             if (index < chunk.length() - 1) {
                 return chunk.charAt(index + 1);
             }
-
             if (chunkIndex < chunks.length - 1) {
                 return chunks[chunkIndex + 1].charAt(0);
             }
-
             return '@';
         }
 
@@ -75,13 +60,10 @@ public class Solution {
             if (!isValidCharacter(c)) {
                 return node;
             }
-
             int index = getIndex(c);
-
             if (node.children[index] == null) {
                 node.children[index] = new Trie();
             }
-
             return node.children[index];
         }
 
@@ -89,7 +71,6 @@ public class Solution {
             if (isValidCharacter(c)) {
                 return node;
             }
-
             incrementCountIfNeeded(node);
             return this;
         }
@@ -107,17 +88,13 @@ public class Solution {
         private int count(String s) {
             int n = s.length();
             Trie node = this;
-
             for (int k = 0; k < n; k++) {
                 int i = getIndex(s.charAt(k));
-
                 if (node.children[i] == null) {
                     return 0;
                 }
-
                 node = node.children[i];
             }
-
             return node.count;
         }
 
