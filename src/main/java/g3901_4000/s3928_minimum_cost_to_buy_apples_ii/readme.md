@@ -29,65 +29,10 @@ Return an integer array `ans` of length `n`, where `ans[i]` is the **minimum** t
 
 ![](https://assets.leetcode.com/uploads/2025/08/22/screenshot-2025-08-23-at-23341-am.png)
 
-Shop `i`
-
-`prices[i]`
-
-Shop `j`
-
-`prices[j]`
-
-<code>cost<sub>i</sub></code>
-
-<code>tax<sub>i</sub></code>
-
-Travel cost
-
-Return cost
-
-Total
-
-Minimum
-
-0
-
-8
-
-1
-
-3
-
-1
-
-2
-
-1
-
-`1 * 2 = 2`
-
-`1 + 2 + 3 = 6`
-
-`min(8, 6) = 6`
-
-1
-
-3
-
-0
-
-8
-
-1
-
-2
-
-1
-
-`1 * 2 = 2`
-
-`1 + 2 + 8 = 11`
-
-`min(3, 11) = 3`
+| Shop `i` | `prices[i]` | Shop `j` | `prices[j]` | `costᵢ` | `taxᵢ` | Travel cost | Return cost |            Total |          Minimum |
+| -------: | ----------: | -------: | ----------: | ------: | -----: | ----------: | ----------: | ---------------: | ---------------: |
+|        0 |           8 |        1 |           3 |       1 |      2 |           1 | `1 * 2 = 2` |  `1 + 2 + 3 = 6` |  `min(8, 6) = 6` |
+|        1 |           3 |        0 |           8 |       1 |      2 |           1 | `1 * 2 = 2` | `1 + 2 + 8 = 11` | `min(3, 11) = 3` |
 
 Thus, the answer is `[6, 3]`.
 
@@ -101,85 +46,11 @@ Thus, the answer is `[6, 3]`.
 
 ![](https://assets.leetcode.com/uploads/2025/08/22/screenshot-2025-08-23-at-23736-am.png)
 
-Shop `i`
-
-`prices[i]`
-
-Shop `j`
-
-`prices[j]`
-
-<code>cost<sub>i</sub></code>
-
-<code>tax<sub>i</sub></code>
-
-Travel cost
-
-Return cost
-
-Total
-
-Minimum
-
-0
-
-9
-
-1
-
-4
-
-1
-
-3
-
-1
-
-`1 * 3 = 3`
-
-`1 + 3 + 4 = 8`
-
-`min(9, 8) = 8`
-
-1
-
-4
-
-2
-
-6
-
-4
-
-2
-
-4
-
-`4 * 2 = 8`
-
-`4 + 8 + 6 = 18`
-
-`min(4, 18) = 4`
-
-2
-
-6
-
-1
-
-4
-
-4
-
-2
-
-4
-
-`4 * 2 = 8`
-
-`4 + 8 + 4 = 16`
-
-`min(6, 16) = 6`
+| Shop `i` | `prices[i]` | Shop `j` | `prices[j]` | `costᵢ` | `taxᵢ` | Travel cost | Return cost |            Total |          Minimum |
+| -------: | ----------: | -------: | ----------: | ------: | -----: | ----------: | ----------: | ---------------: | ---------------: |
+|        0 |           9 |        1 |           4 |       1 |      3 |           1 | `1 * 3 = 3` |  `1 + 3 + 4 = 8` |  `min(9, 8) = 8` |
+|        1 |           4 |        2 |           6 |       4 |      2 |           4 | `4 * 2 = 8` | `4 + 8 + 6 = 18` | `min(4, 18) = 4` |
+|        2 |           6 |        1 |           4 |       4 |      2 |           4 | `4 * 2 = 8` | `4 + 8 + 4 = 16` | `min(6, 16) = 6` |
 
 Thus, the answer is `[8, 4, 6]`.
 
@@ -193,85 +64,11 @@ Thus, the answer is `[8, 4, 6]`.
 
 ![](https://assets.leetcode.com/uploads/2025/08/22/screenshot-2025-08-23-at-24644-am.png)
 
-Shop `i`
-
-`prices[i]`
-
-Shop `j`
-
-`prices[j]`
-
-<code>cost<sub>i</sub></code>
-
-<code>tax<sub>i</sub></code>
-
-Travel cost
-
-Return cost
-
-Total
-
-Minimum
-
-0
-
-10
-
-2
-
-1
-
-1
-
-3
-
-1
-
-`1 * 3 = 3`
-
-`1 + 3 + 1 = 5`
-
-`min(10, 5) = 5`
-
-1
-
-11
-
-2
-
-1
-
-3
-
-4
-
-3
-
-`3 * 4 = 12`
-
-`3 + 12 + 1 = 16`
-
-`min(11, 16) = 11`
-
-2
-
-1
-
-0
-
-10
-
-1
-
-3
-
-1
-
-`1 * 3 = 3`
-
-`1 + 3 + 10 = 14`
-
-`min(1, 14) = 1`
+| Shop `i` | `prices[i]` | Shop `j` | `prices[j]` | `costᵢ` | `taxᵢ` | Travel cost |  Return cost |             Total |            Minimum |
+| -------: | ----------: | -------: | ----------: | ------: | -----: | ----------: | -----------: | ----------------: | -----------------: |
+|        0 |          10 |        2 |           1 |       1 |      3 |           1 |  `1 * 3 = 3` |   `1 + 3 + 1 = 5` |   `min(10, 5) = 5` |
+|        1 |          11 |        2 |           1 |       3 |      4 |           3 | `3 * 4 = 12` | `3 + 12 + 1 = 16` | `min(11, 16) = 11` |
+|        2 |           1 |        0 |          10 |       1 |      3 |           1 |  `1 * 3 = 3` | `1 + 3 + 10 = 14` |   `min(1, 14) = 1` |
 
 Thus, the answer is `[5, 11, 1]`.
 
