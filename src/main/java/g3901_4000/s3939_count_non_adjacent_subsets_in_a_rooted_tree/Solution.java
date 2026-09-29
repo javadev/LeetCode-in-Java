@@ -20,7 +20,7 @@ public class Solution {
         long[][][] dp = new long[n][2][k];
         dfs(0, h, to, nx, nums, k, dp);
 
-        return getResult(dp, k);
+        return getResult(dp);
     }
 
     private void buildTree(int[] parent, int[] h, int[] to, int[] nx) {
@@ -126,7 +126,7 @@ public class Solution {
         }
     }
 
-    private int getResult(long[][][] dp, int k) {
+    private int getResult(long[][][] dp) {
         long result = dp[0][0][0] + dp[0][1][0];
         result %= MOD;
         result = (result - 1 + MOD) % MOD;

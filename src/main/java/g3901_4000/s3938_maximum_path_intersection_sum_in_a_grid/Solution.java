@@ -16,18 +16,18 @@ public class Solution {
         }
         // 2. Modified Kadane's for Rows (Minimum length 2)
         for (int[] ints : grid) {
-            int cur_sum = ints[0];
+            int currentSum = ints[0];
             for (int j = 1; j < n; j++) {
-                ans = Math.max(ans, cur_sum + ints[j]);
-                cur_sum = Math.max(ints[j], cur_sum + ints[j]);
+                ans = Math.max(ans, currentSum + ints[j]);
+                currentSum = Math.max(ints[j], currentSum + ints[j]);
             }
         }
         // 3. Modified Kadane's for Columns (Minimum length 2)
         for (int j = 0; j < n; j++) {
-            int cur_sum = grid[0][j];
+            int currentSum = grid[0][j];
             for (int i = 1; i < m; i++) {
-                ans = Math.max(ans, cur_sum + grid[i][j]);
-                cur_sum = Math.max(grid[i][j], cur_sum + grid[i][j]);
+                ans = Math.max(ans, currentSum + grid[i][j]);
+                currentSum = Math.max(grid[i][j], currentSum + grid[i][j]);
             }
         }
         return ans;
