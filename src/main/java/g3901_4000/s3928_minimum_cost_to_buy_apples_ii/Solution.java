@@ -33,16 +33,16 @@ public class Solution {
         dist[src] = 0L;
         PriorityQueue<Distance> pq = new PriorityQueue<>();
         pq.offer(new Distance(src, dist[src]));
-        while (!pq.isEmpty() && pq.peek().dist() <= maxPrice) {
+        while (!pq.isEmpty() && pq.peek().dist <= maxPrice) {
             Distance distance = pq.poll();
-            if (distance.dist() > dist[distance.node()]) {
+            if (distance.dist > dist[distance.node]) {
                 continue;
             }
-            for (Edge edge : adj.get(distance.node())) {
-                long d = forward ? edge.forward() : edge.backward();
-                if (dist[edge.node()] > dist[distance.node()] + d) {
-                    dist[edge.node()] = dist[distance.node()] + d;
-                    pq.offer(new Distance(edge.node(), dist[edge.node()]));
+            for (Edge edge : adj.get(distance.node)) {
+                long d = forward ? edge.forward : edge.backward;
+                if (dist[edge.node] > dist[distance.node] + d) {
+                    dist[edge.node] = dist[distance.node] + d;
+                    pq.offer(new Distance(edge.node, dist[edge.node]));
                 }
             }
         }
@@ -62,13 +62,31 @@ public class Solution {
         }
         return adj;
     }
-}
 
-record Edge(int node, long forward, long backward) {}
+    private static final class Edge {
+        private final int node;
+        private final long forward;
+        private final long backward;
 
-record Distance(int node, long dist) implements Comparable<Distance> {
-    @Override
-    public int compareTo(Distance other) {
-        return Long.compare(this.dist, other.dist);
+        private Edge(int node, long forward, long backward) {
+            this.node = node;
+            this.forward = forward;
+            this.backward = backward;
+        }
+    }
+
+    private static final class Distance implements Comparable<Distance> {
+        private final int node;
+        private final long dist;
+
+        private Distance(int node, long dist) {
+            this.node = node;
+            this.dist = dist;
+        }
+
+        @Override
+        public int compareTo(Distance other) {
+            return Long.compare(this.dist, other.dist);
+        }
     }
 }
