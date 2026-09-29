@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.PriorityQueue;
 
+@SuppressWarnings("java:S1210")
 public class Solution {
     public int[] minCost(int n, int[] prices, int[][] roads) {
         List<List<Edge>> adj = adjacency(n, roads);
