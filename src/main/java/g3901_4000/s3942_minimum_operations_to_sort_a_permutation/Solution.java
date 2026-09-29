@@ -38,7 +38,9 @@ public class Solution {
             int b = Math.min(nums.length - zeroIdx, zeroIdx + 2);
             if (ans == -1) {
                 ans = b;
-            } else ans = Math.min(ans, b);
+            } else {
+                ans = Math.min(ans, b);
+            }
         }
         return ans;
     }

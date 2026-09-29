@@ -143,5 +143,15 @@ public class Solution {
         return result;
     }
 
-    private record QueryResult(int nextIndex, long globalOffset, Integer answer) {}
+    private static final class QueryResult {
+        private final int nextIndex;
+        private final long globalOffset;
+        private final Integer answer;
+
+        private QueryResult(int nextIndex, long globalOffset, Integer answer) {
+            this.nextIndex = nextIndex;
+            this.globalOffset = globalOffset;
+            this.answer = answer;
+        }
+    }
 }

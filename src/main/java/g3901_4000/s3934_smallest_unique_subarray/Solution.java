@@ -111,6 +111,12 @@ public class Solution {
         }
     }
 
+    private void buildPrefixCounts(int[] count, int classes) {
+        for (int i = 1; i < classes; i++) {
+            count[i] += count[i - 1];
+        }
+    }
+
     private int assignInitialRanks(int[] a, int[] sa, int[] rank) {
 
         int classes = 1;
@@ -167,12 +173,6 @@ public class Solution {
         for (int i = m - 1; i >= 0; i--) {
             int x = data.tmpSa[i];
             data.sa[--data.count[data.rank[x]]] = x;
-        }
-    }
-
-    private void buildPrefixCounts(int[] count, int classes) {
-        for (int i = 1; i < classes; i++) {
-            count[i] += count[i - 1];
         }
     }
 
