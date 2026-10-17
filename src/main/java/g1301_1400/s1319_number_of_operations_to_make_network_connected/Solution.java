@@ -1,59 +1,53 @@
 package g1301_1400.s1319_number_of_operations_to_make_network_connected;
 
 // #Medium #Depth_First_Search #Breadth_First_Search #Graph #Union_Find
-// #Graph_Theory_I_Day_8_Standard_Traversal #2022_03_19_Time_9_ms_(67.64%)_Space_64.6_MB_(49.60%)
-
-import java.util.Arrays;
+// #Graph_Theory_I_Day_8_Standard_Traversal #2026_10_17_Time_4_ms_(88.52%)_Space_65.60_MB_(82.35%)
 
 public class Solution {
-
-    private static final int IMPOSSIBLE_TO_CONNECT = -1;
-    private int disconnectedComputers;
     private int[] parent;
     private int[] rank;
+    private int components = 0;
+    private int extra = 0;
 
-    public int makeConnected(int totalNumberOfComputers, int[][] connections) {
-        if (connections.length < totalNumberOfComputers - 1) {
-            return IMPOSSIBLE_TO_CONNECT;
+    private int findPar(int node) {
+        if (parent[node] == node) {
+            return node;
         }
-
-        disconnectedComputers = totalNumberOfComputers;
-        rank = new int[totalNumberOfComputers];
-        parent = new int[totalNumberOfComputers];
-        Arrays.setAll(parent, intFromZero -> intFromZero++);
-
-        for (final int[] connection : connections) {
-            unionFind(connection[0], connection[1]);
-        }
-
-        return disconnectedComputers - 1;
+        parent[node] = findPar(parent[node]);
+        return parent[node];
     }
 
-    private void unionFind(int first, int second) {
-        int parentFirst = findParent(first);
-        int parentSecond = findParent(second);
-
-        if (parentFirst != parentSecond) {
-            joinByRank(parentFirst, parentSecond);
-            disconnectedComputers--;
+    private void union(int u, int v) {
+        int up = findPar(u);
+        int vp = findPar(v);
+        if (up == vp) {
+            extra++;
+            return;
         }
-    }
-
-    private int findParent(int index) {
-        if (parent[index] != index) {
-            parent[index] = findParent(parent[index]);
-        }
-        return parent[index];
-    }
-
-    private void joinByRank(int first, int second) {
-        if (rank[first] < rank[second]) {
-            parent[first] = second;
-        } else if (rank[second] < rank[first]) {
-            parent[second] = first;
+        components--;
+        if (rank[up] < rank[vp]) {
+            parent[up] = vp;
+        } else if (rank[up] > rank[vp]) {
+            parent[vp] = up;
         } else {
-            parent[first] = second;
-            rank[second]++;
+            parent[vp] = up;
+            rank[up]++;
         }
+    }
+
+    public int makeConnected(int n, int[][] connections) {
+        if (connections.length < n - 1) {
+            return -1;
+        }
+        parent = new int[n];
+        rank = new int[n];
+        components = n;
+        for (int i = 0; i < n; i++) {
+            parent[i] = i;
+        }
+        for (int[] edge : connections) {
+            union(edge[0], edge[1]);
+        }
+        return components - 1;
     }
 }
