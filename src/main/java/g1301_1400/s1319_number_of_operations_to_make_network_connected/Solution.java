@@ -13,7 +13,8 @@ public class Solution {
         if (parent[node] == node) {
             return node;
         }
-        return parent[node] = findPar(parent[node]);
+        parent[node] = findPar(parent[node]);
+        return parent[node];
     }
 
     private void union(int u, int v) {
