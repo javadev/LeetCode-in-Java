@@ -2,7 +2,7 @@
 
 Easy
 
-Given two non-negative integers `low` and `high`. Return the _count of odd numbers between_ `low` _and_ `high`_ (inclusive)_.
+Given two non-negative integers `low` and `high`. Return the _count of odd numbers between_ `low` _and_ `high` _(inclusive)_.
 
 **Example 1:**
 
