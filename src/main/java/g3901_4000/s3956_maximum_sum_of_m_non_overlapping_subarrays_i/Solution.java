@@ -41,22 +41,18 @@ public class Solution {
                     }
                     dq[tail++] = add;
                 }
-
                 int left = i - r;
                 while (head < tail && dq[head] < left) {
                     head++;
                 }
-
                 if (head < tail) {
                     int s = dq[head];
                     curr[i] = Math.max(curr[i], pre[i] + prev[s] - pre[s]);
                 }
             }
-
             res = Math.max(res, curr[n]);
             prev = curr;
         }
-
         return res;
     }
 }
