@@ -16,7 +16,6 @@ public class Solution {
                 min = item[1];
             }
         }
-
         int[] temp = new int[n + 1];
         for (int i = 1; i <= n; i++) {
             if (count[i] > 0) {
@@ -27,7 +26,6 @@ public class Solution {
                 temp[i] = m;
             }
         }
-
         long[] deal = new long[n];
         int dealcount = 0;
         long limit = min * 2;
@@ -41,7 +39,6 @@ public class Solution {
                 }
             }
         }
-
         Arrays.sort(deal, 0, dealcount);
         long total = 0;
         for (int i = 0; i < dealcount; i++) {
