@@ -9,7 +9,6 @@ public class Solution {
         int[] suffixMex = new int[n];
         boolean[] seen = new boolean[n + 2];
         int currMex = 0;
-
         for (int i = n - 1; i >= 0; i--) {
             if (nums[i] < n + 2) {
                 seen[nums[i]] = true;
@@ -19,18 +18,14 @@ public class Solution {
             }
             suffixMex[i] = currMex;
         }
-
         int[] result = new int[n];
         int resIdx = 0;
-
         int[] seenAtStep = new int[n + 2];
         int stepCounter = 0;
-
         int i = 0;
         while (i < n) {
             int m = suffixMex[i];
             result[resIdx++] = m;
-
             if (m == 0) {
                 i++;
             } else {
@@ -50,7 +45,6 @@ public class Solution {
                 }
             }
         }
-
         int[] finalResult = new int[resIdx];
         System.arraycopy(result, 0, finalResult, 0, resIdx);
         return finalResult;
