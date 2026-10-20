@@ -24,7 +24,6 @@ public class Solution {
         val = new long[n + 1];
         cnt = new int[n + 1];
         dq = new int[n + 2];
-
         long lo = 0;
         long hi = 20000000000L;
         long ansLambda = hi;
@@ -50,33 +49,25 @@ public class Solution {
         final long neg = Long.MIN_VALUE / 4;
         val[0] = neg;
         cnt[0] = 0;
-
         int head = 0;
         int tail = 0;
-
         for (int i = 1; i <= n; i++) {
             int j = i - l;
-
             if (j >= 0) {
                 tail = addCandidate(j, head, tail);
             }
-
             head = removeExpiredCandidates(head, tail, i - r);
-
             long bestV = val[i - 1];
             int bestC = cnt[i - 1];
-
             if (tail > head) {
                 int b = dq[head];
                 long cand = normalizedValue(b) - pre[b] + pre[i] - lambda;
                 int candC = normalizedCount(b) + 1;
-
                 if (isBetter(cand, candC, bestV, bestC)) {
                     bestV = cand;
                     bestC = candC;
                 }
             }
-
             val[i] = bestV;
             cnt[i] = bestC;
         }
@@ -85,19 +76,16 @@ public class Solution {
     private int addCandidate(int j, int head, int tail) {
         long key = normalizedValue(j) - pre[j];
         int candidateCount = normalizedCount(j);
-
         while (tail > head) {
             int t = dq[tail - 1];
             long tailKey = normalizedValue(t) - pre[t];
             int tailCount = normalizedCount(t);
-
             if (tailKey < key || (tailKey == key && tailCount >= candidateCount)) {
                 tail--;
             } else {
                 break;
             }
         }
-
         dq[tail++] = j;
         return tail;
     }
