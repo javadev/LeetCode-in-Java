@@ -25,14 +25,22 @@ public class Solution {
                 ps += x;
                 pc++;
             }
-            if (x > mele) mele = x;
+            if (x > mele) {
+                mele = x;
+            }
         }
-        if (pc == 0) return mele;
+        if (pc == 0) {
+            return mele;
+        }
         int mpiw = 0;
         int cpos = 0;
         for (int i = 0; i < n; i++) {
-            if (nums[i] > 0) cpos++;
-            if (i >= pc && nums[i - pc] > 0) cpos--;
+            if (nums[i] > 0) {
+                cpos++;
+            }
+            if (i >= pc && nums[i - pc] > 0) {
+                cpos--;
+            }
             if (i >= pc - 1 && cpos > mpiw) {
                 mpiw = cpos;
             }
@@ -66,12 +74,16 @@ public class Solution {
                 int mid = map[j];
                 ife[mid]++;
                 sum += nums[j];
-                if (mid < mi) mi = mid;
+                if (mid < mi) {
+                    mi = mid;
+                }
                 while (mo >= 0 && t[mo] == ife[mo]) {
                     mo--;
                 }
                 if (mo < 0 || v[mi] >= v[mo]) {
-                    if (sum > ma) ma = sum;
+                    if (sum > ma) {
+                        ma = sum;
+                    }
                     continue;
                 }
                 if (sum + (long) k * (v[mo] - v[mi]) <= ma) {
@@ -87,7 +99,9 @@ public class Solution {
                     if (inl == 0) {
                         inl = ife[++lp];
                     } else if (outr == 0) {
-                        if (--r >= 0) outr = t[r] - ife[r];
+                        if (--r >= 0) {
+                            outr = t[r] - ife[r];
+                        }
                     } else if (v[lp] >= v[r]) {
                         break;
                     } else {
