@@ -7,12 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-
     public int maxScore(int[] nums, int maxVal) {
         int max = findMax(nums, maxVal);
         int[] cnt = countNumbers(nums, max);
         int[] groupCnt = buildGroupCounts(cnt, max);
-
         int best = findBestAboveMaxVal(max, maxVal, cnt, groupCnt);
         return findBestWithinMaxVal(maxVal, cnt, groupCnt, best);
     }
@@ -37,44 +35,35 @@ public class Solution {
 
     private int[] buildGroupCounts(int[] cnt, int max) {
         int[] groupCnt = new int[max + 1];
-
         for (int i = 1; i <= max; i++) {
             for (int j = 1; j * i <= max; j++) {
                 groupCnt[i] += cnt[j * i];
             }
         }
-
         return groupCnt;
     }
 
     private int findBestAboveMaxVal(int max, int maxVal, int[] cnt, int[] groupCnt) {
         int best = -1;
-
         for (int i = max; i > maxVal; i--) {
             if (cnt[i] == 0) {
                 continue;
             }
-
             int change = countConflict(i, groupCnt);
             best = Math.max(best, i - change + 1);
         }
-
         return best;
     }
 
     private int findBestWithinMaxVal(int maxVal, int[] cnt, int[] groupCnt, int best) {
-
         for (int i = maxVal; i > 0; i--) {
             if (best != -1 && i <= best) {
                 break;
             }
-
             int change = countConflict(i, groupCnt);
             change = adjustChange(i, change, cnt);
-
             best = Math.max(best, i - change);
         }
-
         return best;
     }
 
@@ -82,11 +71,9 @@ public class Solution {
         if (change > 0 && cnt[target] != 0) {
             change--;
         }
-
         if (change == 0 && cnt[target] == 0) {
             change++;
         }
-
         return change;
     }
 
@@ -94,28 +81,22 @@ public class Solution {
         List<Integer> primeFactors = getFactor(target);
         int change = 0;
         int subsetCount = 1 << primeFactors.size();
-
         for (int mask = 1; mask < subsetCount; mask++) {
             change += calculateSubsetContribution(mask, primeFactors, groupCnt);
         }
-
         return change;
     }
 
     private int calculateSubsetContribution(int mask, List<Integer> primeFactors, int[] groupCnt) {
-
         int product = 1;
         int bits = 0;
-
         for (int k = 0; k < primeFactors.size(); k++) {
             if ((mask & (1 << k)) == 0) {
                 continue;
             }
-
             bits++;
             product *= primeFactors.get(k);
         }
-
         int contribution = groupCnt[product];
         return bits % 2 == 1 ? contribution : -contribution;
     }
@@ -123,22 +104,18 @@ public class Solution {
     private List<Integer> getFactor(long number) {
         long n = number;
         List<Integer> primeFactors = new ArrayList<>();
-
         for (int i = 2; i <= n / i; i++) {
             if (n % i != 0) {
                 continue;
             }
-
             primeFactors.add(i);
             while (n % i == 0) {
                 n /= i;
             }
         }
-
         if (n > 1) {
             primeFactors.add((int) n);
         }
-
         return primeFactors;
     }
 }
