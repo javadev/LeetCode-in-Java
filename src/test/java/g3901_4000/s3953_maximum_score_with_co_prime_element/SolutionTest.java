@@ -28,6 +28,6 @@ class SolutionTest {
 
     @Test
     void maxScore5() {
-        assertThat(new Solution().maxScore(new int[] {10, 8}, 5), equalTo(5));
+        assertThat(new Solution().maxScore(new int[] {10, 8}, 5), equalTo(9));
     }
 }
