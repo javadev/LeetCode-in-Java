@@ -20,4 +20,9 @@ class SolutionTest {
     void getLength3() {
         assertThat(new Solution().getLength(new int[] {1, 2, 3, 4}), equalTo(1));
     }
+
+    @Test
+    void getLength4() {
+        assertThat(new Solution().getLength(new int[] {1, 1}), equalTo(2));
+    }
 }

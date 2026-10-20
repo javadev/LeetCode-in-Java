@@ -172,7 +172,7 @@ public class Solution {
         return result;
     }
 
-    private static final class SwapContext {
+    static final class SwapContext {
         private final int[] values;
         private final int[] included;
         private final int[] totalCounts;

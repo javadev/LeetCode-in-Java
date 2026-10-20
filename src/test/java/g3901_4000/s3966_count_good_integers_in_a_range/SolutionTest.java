@@ -15,4 +15,19 @@ class SolutionTest {
     void goodIntegers2() {
         assertThat(new Solution().goodIntegers(201, 204, 2), equalTo(2L));
     }
+
+    @Test
+    void goodIntegers3() {
+        assertThat(new Solution().goodIntegers(10, 22, 0), equalTo(2L));
+    }
+
+    @Test
+    void goodIntegers4() {
+        assertThat(new Solution().goodIntegers(10, 10, 1), equalTo(1L));
+    }
+
+    @Test
+    void goodIntegers5() {
+        assertThat(new Solution().goodIntegers(10, 1000, 9), equalTo(991L));
+    }
 }

@@ -15,4 +15,9 @@ class SolutionTest {
     void checkGoodInteger2() {
         assertThat(new Solution().checkGoodInteger(19), equalTo(true));
     }
+
+    @Test
+    void checkGoodInteger3() {
+        assertThat(new Solution().checkGoodInteger(99), equalTo(true));
+    }
 }

@@ -15,4 +15,9 @@ class SolutionTest {
     void maxDistance2() {
         assertThat(new Solution().maxDistance("U_R"), equalTo(3));
     }
+
+    @Test
+    void maxDistance3() {
+        assertThat(new Solution().maxDistance("UD"), equalTo(0));
+    }
 }

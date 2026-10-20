@@ -25,4 +25,9 @@ class SolutionTest {
     void maximumSum4() {
         assertThat(new Solution().maximumSum(new int[] {-3, -4, -1}, 2, 1, 2), equalTo(-1L));
     }
+
+    @Test
+    void maximumSum5() {
+        assertThat(new Solution().maximumSum(new int[] {1, 2, 3, 4, 5}, 2, 1, 1), equalTo(9L));
+    }
 }

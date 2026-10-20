@@ -20,4 +20,9 @@ class SolutionTest {
     void maximumMEX3() {
         assertThat(new Solution().maximumMEX(new int[] {3, 1}), equalTo(new int[] {0, 0}));
     }
+
+    @Test
+    void maximumMEX4() {
+        assertThat(new Solution().maximumMEX(new int[] {0}), equalTo(new int[] {1}));
+    }
 }

@@ -15,4 +15,9 @@ class SolutionTest {
     void consecutiveSetBits2() {
         assertThat(new Solution().consecutiveSetBits(5), equalTo(false));
     }
+
+    @Test
+    void consecutiveSetBits3() {
+        assertThat(new Solution().consecutiveSetBits(3), equalTo(true));
+    }
 }

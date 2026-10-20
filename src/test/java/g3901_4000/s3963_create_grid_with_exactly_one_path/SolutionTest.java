@@ -20,4 +20,9 @@ class SolutionTest {
     void createGrid3() {
         assertThat(new Solution().createGrid(1, 4), equalTo(new String[] {"...."}));
     }
+
+    @Test
+    void createGrid4() {
+        assertThat(new Solution().createGrid(1, 1), equalTo(new String[] {"."}));
+    }
 }

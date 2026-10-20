@@ -22,4 +22,11 @@ class SolutionTest {
                                 35),
                 equalTo(7));
     }
+
+    @Test
+    void maximumSaleItems3() {
+        assertThat(
+                new Solution().maximumSaleItems(new int[][] {{1, 6}, {2, 4}, {3, 5}}, 6),
+                equalTo(2));
+    }
 }

@@ -4,7 +4,7 @@ package g3901_4000.s3966_count_good_integers_in_a_range;
 // #2026_10_20_Time_3_ms_(100.00%)_Space_42.43_MB_(100.00%)
 
 public class Solution {
-    private static final Long[][][][] DP = new Long[16][2][10][10];
+    private final Long[][][][] dp = new Long[16][2][10][10];
     private final int[] digits = new int[16];
 
     public long goodIntegers(long l, long r, int k) {
@@ -24,8 +24,8 @@ public class Solution {
         if (index == -1) {
             return 1;
         }
-        if (!isMaxDigit && DP[index][isLeadingZero][pre][k] != null) {
-            return DP[index][isLeadingZero][pre][k];
+        if (!isMaxDigit && dp[index][isLeadingZero][pre][k] != null) {
+            return dp[index][isLeadingZero][pre][k];
         }
         int maxDigit = isMaxDigit ? digits[index] : 9;
         long result = 0;
@@ -41,7 +41,7 @@ public class Solution {
             }
         }
         if (!isMaxDigit) {
-            DP[index][isLeadingZero][pre][k] = result;
+            dp[index][isLeadingZero][pre][k] = result;
         }
         return result;
     }

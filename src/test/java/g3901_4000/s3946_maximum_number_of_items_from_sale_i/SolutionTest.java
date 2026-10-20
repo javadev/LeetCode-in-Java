@@ -20,4 +20,9 @@ class SolutionTest {
                         .maximumSaleItems(new int[][] {{2, 4}, {3, 2}, {4, 1}, {6, 4}, {12, 4}}, 8),
                 equalTo(10));
     }
+
+    @Test
+    void maximumSaleItems3() {
+        assertThat(new Solution().maximumSaleItems(new int[][] {{1, 1}}, 1), equalTo(1));
+    }
 }

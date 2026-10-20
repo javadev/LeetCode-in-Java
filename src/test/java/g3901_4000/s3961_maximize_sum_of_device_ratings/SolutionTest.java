@@ -20,4 +20,9 @@ class SolutionTest {
     void maxRatings3() {
         assertThat(new Solution().maxRatings(new int[][] {{5, 5, 5}, {1, 1, 1}}), equalTo(6L));
     }
+
+    @Test
+    void maxRatings4() {
+        assertThat(new Solution().maxRatings(new int[][] {{4}, {7}, {1}}), equalTo(12L));
+    }
 }

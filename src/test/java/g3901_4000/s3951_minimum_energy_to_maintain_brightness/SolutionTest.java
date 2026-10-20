@@ -20,4 +20,9 @@ class SolutionTest {
     void minEnergy3() {
         assertThat(new Solution().minEnergy(4, 2, new int[][] {{1, 3}, {2, 4}}), equalTo(4L));
     }
+
+    @Test
+    void minEnergy4() {
+        assertThat(new Solution().minEnergy(3, 1, new int[][] {{5, 6}, {0, 1}}), equalTo(4L));
+    }
 }

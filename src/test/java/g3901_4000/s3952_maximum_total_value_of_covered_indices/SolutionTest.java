@@ -20,4 +20,9 @@ class SolutionTest {
     void maxTotal3() {
         assertThat(new Solution().maxTotal(new int[] {9, 3, 5}, "011"), equalTo(14L));
     }
+
+    @Test
+    void maxTotal4() {
+        assertThat(new Solution().maxTotal(new int[] {3}, "1"), equalTo(3L));
+    }
 }

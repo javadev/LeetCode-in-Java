@@ -15,4 +15,9 @@ class SolutionTest {
     void minLights2() {
         assertThat(new Solution().minLights(new int[] {0, 0, 0, 2, 0}), equalTo(1));
     }
+
+    @Test
+    void minLights3() {
+        assertThat(new Solution().minLights(new int[] {1, 0}), equalTo(0));
+    }
 }

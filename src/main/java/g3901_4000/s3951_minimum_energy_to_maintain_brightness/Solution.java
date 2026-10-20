@@ -5,9 +5,10 @@ package g3901_4000.s3951_minimum_energy_to_maintain_brightness;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S1172")
 public class Solution {
     public long minEnergy(int n, int brightness, int[][] intervals) {
-        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
         int st = 0;
         int ed = -1;
         int tot = 0;

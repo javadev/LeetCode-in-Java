@@ -18,4 +18,9 @@ class SolutionTest {
     void generateValidStrings2() {
         assertThat(new Solution().generateValidStrings(1, 0), equalTo(Arrays.asList("0", "1")));
     }
+
+    @Test
+    void generateValidStrings3() {
+        assertThat(new Solution().generateValidStrings(2, 0), equalTo(Arrays.asList("00", "10")));
+    }
 }

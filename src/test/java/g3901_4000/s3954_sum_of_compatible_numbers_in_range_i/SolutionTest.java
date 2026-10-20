@@ -15,4 +15,9 @@ class SolutionTest {
     void sumOfGoodIntegers2() {
         assertThat(new Solution().sumOfGoodIntegers(5, 1), equalTo(0));
     }
+
+    @Test
+    void sumOfGoodIntegers3() {
+        assertThat(new Solution().sumOfGoodIntegers(1, 1), equalTo(2));
+    }
 }
