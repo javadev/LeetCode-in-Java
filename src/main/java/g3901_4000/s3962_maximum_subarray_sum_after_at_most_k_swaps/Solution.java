@@ -172,19 +172,29 @@ public class Solution {
         return result;
     }
 
-    private record SwapContext(int[] values, int[] included, int[] totalCounts) {
+    private static final class SwapContext {
+        private final int[] values;
+        private final int[] included;
+        private final int[] totalCounts;
+
+        SwapContext(int[] values, int[] included, int[] totalCounts) {
+            this.values = values;
+            this.included = included;
+            this.totalCounts = totalCounts;
+        }
 
         @Override
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if (!(obj instanceof SwapContext(int[] values1, int[] included1, int[] counts))) {
+            if (!(obj instanceof SwapContext)) {
                 return false;
             }
-            return Arrays.equals(values, values1)
-                    && Arrays.equals(included, included1)
-                    && Arrays.equals(totalCounts, counts);
+            SwapContext other = (SwapContext) obj;
+            return Arrays.equals(values, other.values)
+                    && Arrays.equals(included, other.included)
+                    && Arrays.equals(totalCounts, other.totalCounts);
         }
 
         @Override
@@ -207,5 +217,15 @@ public class Solution {
         }
     }
 
-    private record PositiveInfo(int count, long sum, long maxElement) {}
+    private static final class PositiveInfo {
+        private final int count;
+        private final long sum;
+        private final long maxElement;
+
+        PositiveInfo(int count, long sum, long maxElement) {
+            this.count = count;
+            this.sum = sum;
+            this.maxElement = maxElement;
+        }
+    }
 }
