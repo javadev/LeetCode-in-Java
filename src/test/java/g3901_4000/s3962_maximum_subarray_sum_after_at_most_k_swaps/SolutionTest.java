@@ -28,8 +28,7 @@ class SolutionTest {
 
     @Test
     void maxSum5() {
-        assertThat(
-                new Solution().maxSum(new int[] {1, -10, 1, -10, 1, -10, 1}, 1), equalTo(3L));
+        assertThat(new Solution().maxSum(new int[] {1, -10, 1, -10, 1, -10, 1}, 1), equalTo(3L));
     }
 
     @Test
