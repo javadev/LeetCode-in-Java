@@ -24,7 +24,8 @@ public class Solution {
         }
         long[] finish = new long[n];
         int[] queue = new int[n];
-        int head = 0, tail = 0;
+        int head = 0;
+        int tail = 0;
         for (int i = 0; i < n; i++) {
             if (outDegree[i] == 0) {
                 queue[tail++] = i;
