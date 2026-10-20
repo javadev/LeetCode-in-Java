@@ -9,7 +9,8 @@ public class Solution {
     public long maxSum(int[] nums, int k) {
         int n = nums.length;
         if (k == 0) {
-            long max = nums[0], cur = nums[0];
+            long max = nums[0];
+            long cur = nums[0];
             for (int i = 1; i < n; i++) {
                 cur = Math.max((long) nums[i], cur + nums[i]);
                 max = Math.max(max, cur);
@@ -27,7 +28,8 @@ public class Solution {
             if (x > mele) mele = x;
         }
         if (pc == 0) return mele;
-        int mpiw = 0, cpos = 0;
+        int mpiw = 0;
+        int cpos = 0;
         for (int i = 0; i < n; i++) {
             if (nums[i] > 0) cpos++;
             if (i >= pc && nums[i - pc] > 0) cpos--;
@@ -79,7 +81,8 @@ public class Solution {
                 int swaps = 0;
                 int lp = mi;
                 int r = mo;
-                int inl = ife[lp], outr = r >= 0 ? t[r] - ife[r] : 0;
+                int inl = ife[lp];
+                int outr = r >= 0 ? t[r] - ife[r] : 0;
                 while (swaps < k && lp < r) {
                     if (inl == 0) {
                         inl = ife[++lp];
