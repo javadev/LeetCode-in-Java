@@ -10,13 +10,13 @@ class SolutionTest {
     void finishTime() {
         assertThat(
                 new Solution().finishTime(3, new int[][] {{0, 1}, {1, 2}}, new int[] {9, 5, 3}),
-                equalTo(17));
+                equalTo(17L));
     }
 
     @Test
     void finishTime2() {
         assertThat(
                 new Solution().finishTime(3, new int[][] {{0, 1}, {0, 2}}, new int[] {4, 7, 6}),
-                equalTo(12));
+                equalTo(12L));
     }
 }
