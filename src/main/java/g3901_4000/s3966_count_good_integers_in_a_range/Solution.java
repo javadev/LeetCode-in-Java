@@ -30,7 +30,7 @@ public class Solution {
         int maxDigit = isMaxDigit ? digits[index] : 9;
         long result = 0;
         for (int d = 0; d <= maxDigit; d++) {
-            if (isLeadingZero == 1 || Math.abs(d - pre) <= k)
+            if (isLeadingZero == 1 || Math.abs(d - pre) <= k) {
                 result +=
                         dfs(
                                 index - 1,
@@ -38,6 +38,7 @@ public class Solution {
                                 isLeadingZero == 1 && d == 0 ? 1 : 0,
                                 isMaxDigit && d == maxDigit,
                                 k);
+            }
         }
         if (!isMaxDigit) {
             DP[index][isLeadingZero][pre][k] = result;

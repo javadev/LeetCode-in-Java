@@ -13,7 +13,9 @@ public class Solution {
         int tot = 0;
         for (var a : intervals) {
             if (a[0] <= ed) {
-                if (a[1] > ed) ed = a[1];
+                if (a[1] > ed) {
+                    ed = a[1];
+                }
             } else {
                 tot += ed - st + 1;
                 st = a[0];

@@ -18,7 +18,9 @@ public class Solution {
         this.l = l;
         this.r = r;
         pre = new long[n + 1];
-        for (int i = 0; i < n; i++) pre[i + 1] = pre[i] + nums[i];
+        for (int i = 0; i < n; i++) {
+            pre[i + 1] = pre[i] + nums[i];
+        }
         val = new long[n + 1];
         cnt = new int[n + 1];
         dq = new int[n + 2];
@@ -27,14 +29,18 @@ public class Solution {
         long hi = 20000000000L;
         long ansLambda = hi;
         solve(0);
-        if (cnt[n] <= m) return val[n];
+        if (cnt[n] <= m) {
+            return val[n];
+        }
         while (lo <= hi) {
             long mid = lo + (hi - lo) / 2;
             solve(mid);
             if (cnt[n] <= m) {
                 ansLambda = mid;
                 hi = mid - 1;
-            } else lo = mid + 1;
+            } else {
+                lo = mid + 1;
+            }
         }
         solve(ansLambda);
         return val[n] + ansLambda * m;
