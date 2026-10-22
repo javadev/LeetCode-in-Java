@@ -1,6 +1,7 @@
 package g3901_4000.s3965_finish_time_of_tasks_i;
 
-// #Medium #Array #Dynamic_Programming #Tree #Staff #Depth_First_Search #Biweekly_Contest_185
+// #Array #Dynamic_Programming #Tree #Staff #Depth_First_Search #Biweekly_Contest_185
+// #2026_10_22_Time_9_ms_(99.36%)_Space_207.04_MB_(96.15%)
 
 public class Solution {
     public long finishTime(int n, int[][] edges, int[] baseTime) {
