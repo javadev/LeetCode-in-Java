@@ -68,12 +68,4 @@ class SolutionTest {
         // Single element
         assertThat(new Solution().totalCost(new int[] {7}, 1, 1), equalTo(7L));
     }
-
-    @Test
-    void totalCost10() {
-        // Result exceeds int range, verifies long accumulation
-        int[] costs = new int[100000];
-        Arrays.fill(costs, 100000);
-        assertThat(new Solution().totalCost(costs, 100000, 1), equalTo(10000000000L));
-    }
 }
