@@ -1,6 +1,6 @@
 package g3901_4000.s3924_minimum_threshold_path_with_limited_heavy_edges;
 
-// #Hard #Binary_Search #Senior_Staff #Biweekly_Contest_182 #Breadth_First_Search #Graph_Theory
+// #Hard #Breadth_First_Search #Binary_Search #Graph_Theory #Senior_Staff #Biweekly_Contest_182
 // #2026_09_29_Time_30_ms_(98.28%)_Space_47.81_MB_(58.62%)
 
 import java.util.ArrayDeque;

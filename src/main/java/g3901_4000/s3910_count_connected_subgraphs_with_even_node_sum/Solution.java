@@ -1,7 +1,7 @@
 package g3901_4000.s3910_count_connected_subgraphs_with_even_node_sum;
 
 // #Hard #Array #Depth_First_Search #Breadth_First_Search #Bit_Manipulation #Union_Find #Enumeration
-// #Senior_Staff #Graph_Theory #Biweekly_Contest_181
+// #Graph_Theory #Senior_Staff #Biweekly_Contest_181
 // #2026_09_18_Time_2_ms_(100.00%)_Space_46.57_MB_(85.71%)
 
 public class Solution {
