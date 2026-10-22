@@ -1,6 +1,6 @@
 package g3901_4000.s3928_minimum_cost_to_buy_apples_ii;
 
-// #Hard #Array #Heap_Priority_Queue #Shortest_Path #Senior_Staff #Graph_Theory #Weekly_Contest_501
+// #Hard #Array #Heap_Priority_Queue #Shortest_Path #Graph_Theory #Senior_Staff #Weekly_Contest_501
 // #2026_09_29_Time_694_ms_(97.40%)_Space_49.62_MB_(84.42%)
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package g3701_3800.s3762_minimum_operations_to_equalize_subarrays;
 
-// #Hard #Array #Math #Binary_Search #Segment_Tree #Weekly_Contest_478 #Principal
+// #Hard #Array #Math #Binary_Search #Segment_Tree #Principal #Weekly_Contest_478
 // #2026_05_08_Time_528_ms_(100.00%)_Space_267.97_MB_(76.92%)
 
 import java.util.ArrayList;

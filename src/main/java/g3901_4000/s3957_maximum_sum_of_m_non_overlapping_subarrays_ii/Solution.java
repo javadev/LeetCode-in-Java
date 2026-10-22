@@ -1,7 +1,7 @@
 package g3901_4000.s3957_maximum_sum_of_m_non_overlapping_subarrays_ii;
 
 // #Hard #Array #Dynamic_Programming #Binary_Search #Prefix_Sum #Sliding_Window #Queue
-// #Monotonic_Queue #Weekly_Contest_505 #Principal
+// #Monotonic_Queue #Principal #Weekly_Contest_505
 // #2026_10_20_Time_98_ms_(93.55%)_Space_104.56_MB_(90.32%)
 
 public class Solution {

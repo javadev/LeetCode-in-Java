@@ -1,6 +1,6 @@
 package g3901_4000.s3939_count_non_adjacent_subsets_in_a_rooted_tree;
 
-// #Hard #Array #Dynamic_Programming #Tree #Senior_Staff #Biweekly_Contest_183 #Depth_First_Search
+// #Hard #Array #Dynamic_Programming #Depth_First_Search #Tree #Senior_Staff #Biweekly_Contest_183
 // #2026_09_29_Time_83_ms_(94.12%)_Space_49.60_MB_(29.41%)
 
 import java.util.Arrays;
