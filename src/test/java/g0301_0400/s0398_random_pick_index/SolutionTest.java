@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void pick() {
-        int[] input = new int[] {1, 2, 3, 3, 3};
+        int[] input = {1, 2, 3, 3, 3};
         Solution solution = new Solution(input);
         assertThat(Arrays.asList(2, 3, 4).contains(solution.pick(3)), equalTo(true));
         assertThat(solution.pick(1), equalTo(0));
@@ -21,7 +21,7 @@ class SolutionTest {
 
     @Test
     void pick2() {
-        int[] input = new int[] {7, -2, 5, 0};
+        int[] input = {7, -2, 5, 0};
         Solution solution = new Solution(input);
         assertThat(solution.pick(7), equalTo(0));
         assertThat(solution.pick(-2), equalTo(1));
@@ -31,7 +31,7 @@ class SolutionTest {
 
     @Test
     void pick3() {
-        int[] input = new int[] {4, 1, 4, 2, 4, 4};
+        int[] input = {4, 1, 4, 2, 4, 4};
         Solution solution = new Solution(input);
         List<Integer> expected = Arrays.asList(0, 2, 4, 5);
         Set<Integer> picked = new HashSet<>();
