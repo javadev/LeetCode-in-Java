@@ -4,7 +4,7 @@
     <groupId>com.github.javadev</groupId>
     <artifactId>leetcode-in-java</artifactId>
     <packaging>jar</packaging>
-    <version>1.49</version>
+    <version>1.50</version>
     <name>leetcode-in-java</name>
     <description>Java-based LeetCode algorithm problem solutions, regularly updated</description>
     <url>https://github.com/javadev/LeetCode-in-Java</url>
@@ -96,7 +96,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.11.2</version>
+                <version>3.12.0</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -107,13 +107,20 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <source>25</source>
+                    <disableNoFonts>true</disableNoFonts>
+                    <links>
+                        <link>
+                            https://docs.oracle.com/en/java/javase/25/docs/api/
+                        </link>
+                    </links>
                     <useStandardDocletOptions>true</useStandardDocletOptions>
                     <doclet>org.jdrupes.mdoclet.MDoclet</doclet>
                     <docletArtifacts>
                         <docletArtifact>
                             <groupId>org.jdrupes.mdoclet</groupId>
                             <artifactId>doclet</artifactId>
-                            <version>3.1.0</version>
+                            <version>4.2.0</version>
                         </docletArtifact>
                         <docletArtifact>
                             <groupId>com.vladsch.flexmark</groupId>
@@ -125,7 +132,13 @@
                     </additionalDependencies>
                     <additionalJOptions>
                         <additionalJOption>-J--add-exports=jdk.javadoc/jdk.javadoc.internal.tool=ALL-UNNAMED</additionalJOption>
+                        <additionalJOption>-J--add-exports=jdk.javadoc/jdk.javadoc.internal.doclets.toolkit=ALL-UNNAMED</additionalJOption>
+                        <additionalJOption>-J--add-opens=jdk.javadoc/jdk.javadoc.internal.doclets.toolkit.resources.releases=ALL-UNNAMED</additionalJOption>
                         <additionalJOption>-J--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED</additionalJOption>
+                        <additionalJOption>-J--add-exports=jdk.compiler/com.sun.tools.doclint=ALL-UNNAMED</additionalJOption>
+                        <additionalJOption>-J--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED</additionalJOption>
+                        <additionalJOption>-J--add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED</additionalJOption>
+                        <additionalJOption>-J--add-exports=jdk.compiler/com.sun.tools.javac.model=ALL-UNNAMED</additionalJOption>
                     </additionalJOptions>
                 </configuration>
             </plugin>
