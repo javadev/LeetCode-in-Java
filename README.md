@@ -19,7 +19,7 @@ To configure your Maven project, add the following code to your pom.xml file:
   <dependency>
     <groupId>com.github.javadev</groupId>
     <artifactId>leetcode-in-java</artifactId>
-    <version>1.49</version>
+    <version>1.50</version>
   </dependency>
   ...
 </dependencies>
@@ -28,7 +28,7 @@ To configure your Maven project, add the following code to your pom.xml file:
 Gradle configuration:
 
 ```groovy
-implementation 'com.github.javadev:leetcode-in-java:1.49'
+implementation 'com.github.javadev:leetcode-in-java:1.50'
 ```
 
 > ["For coding interview preparation, LeetCode is one of the best online resource providing a rich library of more than 300 real coding interview questions for you to practice from using one of the 7 supported languages - C, C++, Java, Python, C#, JavaScript, Ruby."](https://www.quora.com/How-effective-is-Leetcode-for-preparing-for-technical-interviews)
@@ -345,7 +345,7 @@ implementation 'com.github.javadev:leetcode-in-java:1.49'
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0547 |[Number of Provinces](src/main/java/g0501_0600/s0547_number_of_provinces/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find, LeetCode_75_Graphs/DFS | 2 | 69.51
-| 1319 |[Number of Operations to Make Network Connected](src/main/java/g1301_1400/s1319_number_of_operations_to_make_network_connected/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 9 | 67.64
+| 1319 |[Number of Operations to Make Network Connected](src/main/java/g1301_1400/s1319_number_of_operations_to_make_network_connected/Solution.java)| Medium | Depth_First_Search, Breadth_First_Search, Graph, Union_Find | 4 | 88.52
 
 #### Day 9 Standard Traversal
 
