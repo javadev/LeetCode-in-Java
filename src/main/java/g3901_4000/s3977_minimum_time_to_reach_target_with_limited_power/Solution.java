@@ -14,15 +14,12 @@ public class Solution {
 
         Graph(int n, int[][] edges) {
             int m = edges.length;
-
             head = new int[n];
             next = new int[m + 1];
             to = new int[m + 1];
             time = new int[m + 1];
-
             for (int i = 0; i < m; i++) {
                 int u = edges[i][0];
-
                 to[i + 1] = edges[i][1];
                 time[i + 1] = edges[i][2];
                 next[i + 1] = head[u];
@@ -39,47 +36,35 @@ public class Solution {
             if (++size == heap.length) {
                 heap = Arrays.copyOf(heap, heap.length << 1);
             }
-
             int j = size;
-
             while (j > 1) {
                 int p = j >>> 1;
-
                 if (heap[p] <= value) {
                     break;
                 }
-
                 heap[j] = heap[p];
                 j = p;
             }
-
             heap[j] = value;
         }
 
         long pop() {
             long result = heap[1];
             long val = heap[size--];
-
             int i = 1;
-
             while ((i << 1) <= size) {
                 int left = i << 1;
                 int right = left + 1;
-
                 int min = right <= size && heap[right] < heap[left] ? right : left;
-
                 if (val <= heap[min]) {
                     break;
                 }
-
                 heap[i] = heap[min];
                 i = min;
             }
-
             if (size > 0) {
                 heap[i] = val;
             }
-
             return result;
         }
 
@@ -121,7 +106,6 @@ public class Solution {
         for (int e = graph.head[u]; e != 0; e = graph.next[e]) {
             long nextPacked =
                     ((currTime + graph.time[e]) << 22) | (nextPowerComp << 11) | graph.to[e];
-
             pq.push(nextPacked);
         }
     }
