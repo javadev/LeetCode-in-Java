@@ -55,7 +55,6 @@ public class Solution {
             int totalCh = getNextCharCount(nd.ch, labels[nd.city], labels[nextCity]);
             if (nd.city != nextCity && totalCh <= k) {
                 long totalWeight = nd.w + nbr[1];
-
                 pq.add(new Node(nextCity, totalWeight, totalCh));
             }
         }
