@@ -6,6 +6,7 @@ package g3901_4000.s3969_valid_subarrays_with_matching_sum_digits_i;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class Solution {
     public int countValidSubarrays(int[] nums, int x) {
         int n = nums.length;
