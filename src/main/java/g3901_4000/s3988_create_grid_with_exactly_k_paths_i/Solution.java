@@ -6,7 +6,6 @@ package g3901_4000.s3988_create_grid_with_exactly_k_paths_i;
 import java.util.Arrays;
 
 public class Solution {
-
     public String[] createGrid(int m, int n, int k) {
         int[] dimensions = getDimensions(m, n, k);
         if (dimensions.length == 0) {
@@ -15,7 +14,6 @@ public class Solution {
         int dm = dimensions[0];
         int dn = dimensions[1];
         char[][] grid = initializeGrid(m, n);
-
         createRequiredPaths(grid, dm, dn);
         addObstacles(grid, dm, dn, k);
         connectRemainingGrid(grid, m, n, dm, dn);
