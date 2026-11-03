@@ -38,7 +38,6 @@ public class Solution {
                 r = right;
             }
         }
-
         return ans;
     }
 
@@ -70,7 +69,6 @@ public class Solution {
                 }
             }
         }
-
         return ans;
     }
 
@@ -78,7 +76,6 @@ public class Solution {
         while (i - k - 1 >= 0 && i + k < nums.length && nums[i - k - 1] == nums[i + k]) {
             k++;
         }
-
         return k;
     }
 
