@@ -24,7 +24,6 @@ public class Solution {
             updateMatches(word2, m2, tc);
             calculateS1(s1, dp, m1, wl1, wl2);
             calculateS2(s2, s1, nextDp, dp, m2, wl1, wl2);
-
             int[][] temp = dp;
             dp = nextDp;
             nextDp = temp;
