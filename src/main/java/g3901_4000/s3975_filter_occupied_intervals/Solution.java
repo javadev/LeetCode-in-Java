@@ -21,7 +21,6 @@ public class Solution {
                 if (first < freeStart) {
                     intervals.add(new int[] {first, freeStart - 1});
                 }
-
                 if (second > freeEnd) {
                     intervals.add(new int[] {freeEnd + 1, second});
                 }
