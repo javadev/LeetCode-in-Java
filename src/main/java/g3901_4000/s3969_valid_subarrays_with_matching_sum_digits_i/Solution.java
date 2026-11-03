@@ -29,7 +29,7 @@ public class Solution {
             if (i > 0) {
                 long k = pre[i];
                 int r = (int) (((k - x) % 10 + 10) % 10);
-                List list = isit[r];
+                List<Long> list = isit[r];
                 for (long[] j : interval) {
                     long a = k - j[1];
                     long b = k - j[0];
@@ -53,7 +53,9 @@ public class Solution {
             int m = (l + h) >>> 1;
             if (list.get(m) < k) {
                 l = m + 1;
-            } else h = m;
+            } else {
+                h = m;
+            }
         }
         return l;
     }
