@@ -1,33 +1,28 @@
 package g1401_1500.s1425_constrained_subsequence_sum;
 
 // #Hard #Array #Dynamic_Programming #Heap_Priority_Queue #Sliding_Window #Queue #Monotonic_Queue
-// #2022_03_28_Time_69_ms_(30.52%)_Space_129.5_MB_(19.86%)
-
-import java.util.LinkedList;
+// #2026_11_03_Time_13_ms_(99.66%)_Space_114.11_MB_(40.14%)
 
 public class Solution {
     public int constrainedSubsetSum(int[] nums, int k) {
         int n = nums.length;
-        int res = Integer.MIN_VALUE;
-        LinkedList<int[]> mono = new LinkedList<>();
-
+        int[] deque = new int[n];
+        int front = 0;
+        int rear = 0;
+        int ans = nums[0];
         for (int i = 0; i < n; i++) {
-            int take = nums[i];
-
-            while (!mono.isEmpty() && i - mono.getFirst()[0] > k) {
-                mono.removeFirst();
+            while (front < rear && deque[front] < i - k) {
+                front++;
             }
-            if (!mono.isEmpty()) {
-                int mx = Math.max(0, mono.getFirst()[1]);
-                take += mx;
+            if (front < rear && nums[deque[front]] > 0) {
+                nums[i] += nums[deque[front]];
             }
-            while (!mono.isEmpty() && take > mono.getLast()[1]) {
-                mono.removeLast();
+            ans = Math.max(ans, nums[i]);
+            while (front < rear && nums[deque[rear - 1]] <= nums[i]) {
+                rear--;
             }
-
-            mono.add(new int[] {i, take});
-            res = Math.max(res, take);
+            deque[rear++] = i;
         }
-        return res;
+        return ans;
     }
 }
