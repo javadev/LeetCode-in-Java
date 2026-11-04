@@ -164,4 +164,23 @@ class SolutionTest {
                                 4),
                 equalTo(new long[] {4, 3}));
     }
+
+    @Test
+    void minTimeMaxPower13() {
+        assertThat(
+                new Solution()
+                        .minTimeMaxPower(
+                                5,
+                                new int[][] {
+                                    {4, 4, 9}, {0, 2, 2}, {4, 1, 1}, {0, 2, 9}, {0, 4, 1},
+                                    {3, 4, 5}, {2, 1, 5}, {0, 0, 6}, {2, 4, 10}, {3, 4, 8},
+                                    {2, 3, 3}, {0, 1, 1}, {4, 0, 5}, {0, 3, 4}, {0, 1, 10},
+                                    {0, 0, 1}, {0, 2, 7}, {2, 0, 10}, {2, 0, 10}, {0, 3, 9}
+                                },
+                                5,
+                                new int[] {4, 2, 1, 4, 2},
+                                0,
+                                4),
+                equalTo(new long[] {1, 1}));
+    }
 }
