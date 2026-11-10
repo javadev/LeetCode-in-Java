@@ -22,29 +22,11 @@ Return the **minimum** total cost to reach step `n`.
 
 One optimal path is `0 → 1 → 2 → 4`
 
-Jump
-
-Cost Calculation
-
-Cost
-
-0 → 1
-
-<code>costs[1] + (1 - 0)<sup>2</sup> = 1 + 1</code>
-
-2
-
-1 → 2
-
-<code>costs[2] + (2 - 1)<sup>2</sup> = 2 + 1</code>
-
-3
-
-2 → 4
-
-<code>costs[4] + (4 - 2)<sup>2</sup> = 4 + 4</code>
-
-8
+| Jump | Cost Calculation | Cost |
+| --- | --- | --- |
+| 0 → 1 | <code>costs[1] + (1 - 0)<sup>2</sup> = 1 + 1</code> | 2 |
+| 1 → 2 | <code>costs[2] + (2 - 1)<sup>2</sup> = 2 + 1</code> | 3 |
+| 2 → 4 | <code>costs[4] + (4 - 2)<sup>2</sup> = 4 + 4</code> | 8 |
 
 Thus, the minimum total cost is `2 + 3 + 8 = 13`
 
@@ -58,23 +40,10 @@ Thus, the minimum total cost is `2 + 3 + 8 = 13`
 
 One optimal path is `0 → 2 → 4`
 
-Jump
-
-Cost Calculation
-
-Cost
-
-0 → 2
-
-<code>costs[2] + (2 - 0)<sup>2</sup> = 1 + 4</code>
-
-5
-
-2 → 4
-
-<code>costs[4] + (4 - 2)<sup>2</sup> = 2 + 4</code>
-
-6
+| Jump | Cost Calculation | Cost |
+| --- | --- | --- |
+| 0 → 2 | <code>costs[2] + (2 - 0)<sup>2</sup> = 1 + 4</code> | 5 |
+| 2 → 4 | <code>costs[4] + (4 - 2)<sup>2</sup> = 2 + 4</code> | 6 |
 
 Thus, the minimum total cost is `5 + 6 = 11`
 
