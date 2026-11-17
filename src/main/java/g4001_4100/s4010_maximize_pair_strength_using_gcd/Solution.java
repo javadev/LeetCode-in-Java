@@ -5,6 +5,7 @@ package g4001_4100.s4010_maximize_pair_strength_using_gcd;
 
 import java.util.Arrays;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     private int gcd(int n, int m) {
         while (m != 0) {

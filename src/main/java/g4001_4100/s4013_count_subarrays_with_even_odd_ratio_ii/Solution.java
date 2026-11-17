@@ -3,6 +3,7 @@ package g4001_4100.s4013_count_subarrays_with_even_odd_ratio_ii;
 // #Hard #Array #Prefix_Sum #Divide_and_Conquer #Segment_Tree #Binary_Indexed_Tree #Merge_Sort
 // #Senior_Staff #Weekly_Contest_513 #2026_11_17_Time_14_ms_(98.28%)_Space_58.65_MB_(65.52%)
 
+@SuppressWarnings("java:S2234")
 public class Solution {
     public long countRatioSubarrays(int[] nums, int a, int b) {
         int n = nums.length;

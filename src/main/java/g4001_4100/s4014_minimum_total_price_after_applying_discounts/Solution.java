@@ -23,7 +23,7 @@ public class Solution {
         int i = pos(price, maxprice);
         int j = pos(discount, 100);
         while (i > 0) {
-            ans += (double) i - (i * j) / 100.0;
+            ans += i - (i * j) / 100.0;
             i = pos(price, i);
             j = pos(discount, j);
         }
