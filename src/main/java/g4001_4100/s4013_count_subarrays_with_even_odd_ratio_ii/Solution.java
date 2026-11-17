@@ -13,7 +13,6 @@ public class Solution {
             sum += nums[i] % 2 == 1 ? a : -b;
             arr[i + 1] = temp[i + 1] = sum;
         }
-
         return mergeSort(0, n, arr, temp);
     }
 
