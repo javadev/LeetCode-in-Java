@@ -6,6 +6,7 @@ package g3901_4000.s3995_minimum_cost_to_convert_string_iii;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int minCost(String source, String target, List<List<String>> rules, int[] costs) {
         int n = source.length();
