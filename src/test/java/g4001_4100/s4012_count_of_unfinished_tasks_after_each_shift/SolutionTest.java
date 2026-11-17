@@ -23,7 +23,7 @@ class SolutionTest {
     @Test
     void countTasks3() {
         assertThat(
-                new Solution().countTasks(new int[] {2, 4}, new int[] {3, 6, 1}),
+                new Solution().countTasks(new int[] {4, 2}, new int[] {3, 6, 1}),
                 equalTo(new int[] {2, 0, 2}));
     }
 }
