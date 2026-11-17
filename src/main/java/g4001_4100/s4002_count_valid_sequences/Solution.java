@@ -27,7 +27,7 @@ public class Solution {
             res = res * (n - i + 1) % MOD;
             den = den * i % MOD;
         }
-        return res * power(den, MOD - 2) % MOD;
+        return res * power(den, MOD - 2L) % MOD;
     }
 
     public int countValidSequences(int n, int k) {

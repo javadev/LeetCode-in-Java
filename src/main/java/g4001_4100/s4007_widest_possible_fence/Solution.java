@@ -24,7 +24,7 @@ public class Solution {
     }
 
     private static int getMax(int n, int[] nums, int[] freq) {
-        Map<Integer, Integer> fence = new HashMap<>(n * n);
+        Map<Integer, Integer> fence = HashMap.newHashMap(n * n);
         int max = 1;
         for (int right = 0; right < n; ++right) {
             int curr = nums[right];

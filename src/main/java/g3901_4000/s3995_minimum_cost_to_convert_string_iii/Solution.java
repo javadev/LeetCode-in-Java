@@ -42,10 +42,8 @@ public class Solution {
             if (dp[i] == in) {
                 continue;
             }
-            if (source.charAt(i) == target.charAt(i)) {
-                if (dp[i] < dp[i + 1]) {
-                    dp[i + 1] = dp[i];
-                }
+            if (source.charAt(i) == target.charAt(i) && dp[i] < dp[i + 1]) {
+                dp[i + 1] = dp[i];
             }
             for (int k = 0; k < m; k++) {
                 int l = len[k];

@@ -8,6 +8,6 @@ public class Solution {
         if (n == 1) {
             return s;
         }
-        return (long) s + (long) (n / 2) * (m - 1) + 1;
+        return s + (long) (n / 2) * (m - 1) + 1;
     }
 }
