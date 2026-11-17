@@ -7,7 +7,19 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void minInitialStrength() {
+        assertThat(
+                new Solution()
+                        .minInitialStrength(new int[] {5, 10, 15}, new int[][] {{1, 1, 10}}),
+                equalTo(30L));
+    }
+
+    @Test
+    void minInitialStrength2() {
+        assertThat(
+                new Solution()
+                        .minInitialStrength(
+                                new int[] {5, 10, 15}, new int[][] {{1, 2, 10}, {1, 2, 5}}),
+                equalTo(5L));
     }
 }

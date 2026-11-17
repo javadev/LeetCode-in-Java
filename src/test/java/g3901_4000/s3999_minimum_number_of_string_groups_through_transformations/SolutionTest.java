@@ -7,7 +7,26 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void minimumGroups() {
+        assertThat(new Solution().minimumGroups(new String[] {"ntgwz", "zwntg"}), equalTo(1));
+    }
+
+    @Test
+    void minimumGroups2() {
+        assertThat(
+                new Solution()
+                        .minimumGroups(new String[] {"abc", "cab", "bac", "acb", "bca", "cba"}),
+                equalTo(3));
+    }
+
+    @Test
+    void minimumGroups3() {
+        assertThat(
+                new Solution()
+                        .minimumGroups(
+                                new String[] {
+                                    "leet", "abb", "bab", "deed", "edde", "code", "bba"
+                                }),
+                equalTo(5));
     }
 }

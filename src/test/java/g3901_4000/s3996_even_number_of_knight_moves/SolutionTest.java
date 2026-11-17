@@ -7,7 +7,12 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void canReach() {
+        assertThat(new Solution().canReach(new int[] {1, 1}, new int[] {2, 2}), equalTo(true));
+    }
+
+    @Test
+    void canReach2() {
+        assertThat(new Solution().canReach(new int[] {4, 5}, new int[] {6, 6}), equalTo(false));
     }
 }

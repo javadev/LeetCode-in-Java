@@ -7,7 +7,12 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void countValidPrefixes() {
+        assertThat(new Solution().countValidPrefixes("00101"), equalTo(3));
+    }
+
+    @Test
+    void countValidPrefixes2() {
+        assertThat(new Solution().countValidPrefixes("101"), equalTo(3));
     }
 }

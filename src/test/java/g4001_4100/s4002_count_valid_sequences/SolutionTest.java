@@ -7,7 +7,17 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void countValidSequences() {
+        assertThat(new Solution().countValidSequences(5, 3), equalTo(3));
+    }
+
+    @Test
+    void countValidSequences2() {
+        assertThat(new Solution().countValidSequences(3, 2), equalTo(2));
+    }
+
+    @Test
+    void countValidSequences3() {
+        assertThat(new Solution().countValidSequences(5, 5), equalTo(0));
     }
 }

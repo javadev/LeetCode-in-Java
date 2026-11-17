@@ -7,7 +7,13 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void maximumWidth() {
+        assertThat(
+                new Solution().maximumWidth(new int[] {1, 3, 2, 5, 7, 5, 4, 2, 1}), equalTo(4));
+    }
+
+    @Test
+    void maximumWidth2() {
+        assertThat(new Solution().maximumWidth(new int[] {2, 3, 7}), equalTo(1));
     }
 }

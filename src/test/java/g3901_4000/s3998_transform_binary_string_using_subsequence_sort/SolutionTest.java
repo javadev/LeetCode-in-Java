@@ -7,7 +7,23 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void transformStr() {
+        assertThat(
+                new Solution().transformStr("101", new String[] {"1?1", "0?1", "0?0"}),
+                equalTo(new boolean[] {true, true, false}));
+    }
+
+    @Test
+    void transformStr2() {
+        assertThat(
+                new Solution().transformStr("1100", new String[] {"0011", "11?1", "1?1?"}),
+                equalTo(new boolean[] {true, false, true}));
+    }
+
+    @Test
+    void transformStr3() {
+        assertThat(
+                new Solution().transformStr("1010", new String[] {"0011"}),
+                equalTo(new boolean[] {true}));
     }
 }

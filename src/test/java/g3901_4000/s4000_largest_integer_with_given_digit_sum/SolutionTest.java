@@ -7,7 +7,17 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
     @Test
-    void test() {
-        assertThat(new Solution().decode(""), equalTo(""));
+    void largestInteger() {
+        assertThat(new Solution().largestInteger(2, 9), equalTo(90));
+    }
+
+    @Test
+    void largestInteger2() {
+        assertThat(new Solution().largestInteger(2, 19), equalTo(-1));
+    }
+
+    @Test
+    void largestInteger3() {
+        assertThat(new Solution().largestInteger(5, 0), equalTo(0));
     }
 }
