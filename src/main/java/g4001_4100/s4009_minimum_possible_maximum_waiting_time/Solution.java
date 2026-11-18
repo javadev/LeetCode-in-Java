@@ -1,5 +1,8 @@
 package g4001_4100.s4009_minimum_possible_maximum_waiting_time;
 
+// #Hard #Array #Dynamic_Programming #Memoization #Senior_Staff #Biweekly_Contest_188
+// #2026_11_18_Time_39_ms_(97.73%)_Space_46.82_MB_(75.00%)
+
 public class Solution {
     public int minMaxWaitingTime(int[] demand, int[] fuel) {
         int result = solve(0, fuel[0], fuel[1], 0, 0, demand, new java.util.HashMap<>());
