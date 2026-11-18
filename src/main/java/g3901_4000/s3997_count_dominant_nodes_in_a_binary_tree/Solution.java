@@ -1,6 +1,6 @@
 package g3901_4000.s3997_count_dominant_nodes_in_a_binary_tree;
 
-// #Medium #Tree #Binary_Tree #Senior #Weekly_Contest_511 #Depth_First_Search
+// #Medium #Depth_First_Search #Tree #Binary_Tree #Senior #Weekly_Contest_511
 // #2026_11_17_Time_7_ms_(95.22%)_Space_172.70_MB_(86.01%)
 
 import com_github_leetcode.TreeNode;
