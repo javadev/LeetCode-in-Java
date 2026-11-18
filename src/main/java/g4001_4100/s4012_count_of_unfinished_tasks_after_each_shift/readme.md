@@ -18,7 +18,7 @@ A task is **unfinished** if it has not been fully completed. This includes a tas
 
 Return an integer array `ans` where `ans[j]` is the number of **unfinished** tasks immediately after the <code>j<sup>th</sup></code> shift.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** tasks = [1,4,4], shifts = [9,1,4]
 

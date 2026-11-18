@@ -14,7 +14,7 @@ You may perform the following operation any number of times (including zero):
 
 Return a boolean array `ans`, where `ans[i]` is `true` if it's possible to replace all `'?'` in `strs[i]` with `'0'` or `'1'` and transform `s` into the resulting string using the allowed operation above, otherwise return `false`.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** s = "101", strs = ["1?1","0?1","0?0"]
 

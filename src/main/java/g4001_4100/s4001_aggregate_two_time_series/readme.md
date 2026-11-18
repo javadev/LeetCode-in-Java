@@ -17,7 +17,7 @@ The **aggregated series** is formed by summing the corresponding values from bot
 
 Return the **aggregated series** as a 2D integer array of `[timestamp, summedValue]` pairs, sorted in **strictly increasing** order of timestamp.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** series1 = [[1,3],[4,1]], series2 = [[2,2],[5,2]]
 

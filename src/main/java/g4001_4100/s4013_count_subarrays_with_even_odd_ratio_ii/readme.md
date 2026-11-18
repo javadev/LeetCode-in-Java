@@ -18,7 +18,7 @@ A subarray is considered **valid** if:
 
 Return the number of valid subarrays in `nums`.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** nums = [1,2,1,2], a = 3, b = 2
 

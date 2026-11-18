@@ -8,7 +8,7 @@ Choose exactly one pair of distinct indices `i` and `j`. The strength of the pai
 
 Return the maximum strength over all possible pairs.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** nums = [2,3,5]
 

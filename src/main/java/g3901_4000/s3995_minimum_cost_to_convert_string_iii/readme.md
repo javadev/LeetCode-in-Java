@@ -18,7 +18,7 @@ Since every <code>pattern<sub>i</sub></code> and <code>replacement<sub>i</sub></
 
 Return the **minimum** total cost required to transform `source` into `target`. If it is impossible, return -1.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** source = "hello", target = "world", rules = [["he","wo"],["llo","rld"]], costs = [3,4]
 

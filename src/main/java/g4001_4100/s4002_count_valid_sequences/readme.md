@@ -13,7 +13,7 @@ Return the number of valid sequences. Since the answer may be very large, return
 
 Two sequences are considered **different** if they differ at any index. For example, `[1, 1, 2]` and `[1, 2, 1]` are considered different sequences.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** n = 5, k = 3
 

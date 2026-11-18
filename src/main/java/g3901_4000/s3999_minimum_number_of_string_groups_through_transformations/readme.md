@@ -20,7 +20,7 @@ Partition `words` into the **minimum** number of groups such that:
 
 Return an integer denoting the **minimum** number of groups.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** words = ["ntgwz","zwntg"]
 

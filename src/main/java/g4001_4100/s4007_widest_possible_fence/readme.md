@@ -10,7 +10,7 @@ You may either use a plank as is, or combine **exactly** two distinct original p
 
 Return the **maximum possible width** of the fence that can be built.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** planks = [1,3,2,5,7,5,4,2,1]
 
