@@ -16,7 +16,7 @@ In one **adjacent swap**, you may swap two **neighboring** elements of `nums`.
 
 Return the **minimum number** of adjacent swaps required to make `nums` good. Since the answer may be very large, return it **modulo** <code>10<sup>9</sup> + 7</code>.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** nums = [1,3,2,4,5,6], a = 3, b = 4
 

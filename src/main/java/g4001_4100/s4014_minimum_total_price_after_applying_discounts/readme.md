@@ -16,7 +16,7 @@ If a discount of `d` percent is applied to an item with price `p`, its final pri
 
 Return the **minimum** possible sum of final prices after assigning discounts optimally. Answers within <code>10<sup>-5</sup></code> of the actual answer will be accepted.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** prices = [10,30,21], discounts = [50,60]
 

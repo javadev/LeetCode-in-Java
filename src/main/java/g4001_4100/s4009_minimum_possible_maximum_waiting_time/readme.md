@@ -21,7 +21,7 @@ The **waiting time** of a car is the time between when it becomes allowed to sta
 
 Return the **minimum** possible value of the **maximum** waiting time among all served cars over all assignments that **maximize** the number of served cars. If no car can be served, return -1.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** demand = [6,8,4,6,5], fuel = [16,13]
 

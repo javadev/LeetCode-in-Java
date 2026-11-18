@@ -18,7 +18,7 @@ Return the **minimum** initial strength required to defeat all monsters.
 
 Note: The temporary bonus is used only to determine whether the current monster can be defeated. It does not otherwise change your current strength.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** monsters = [5,10,15], boosts = [[1,1,10]]
 

@@ -10,7 +10,7 @@ Return `true` if a knight can move from `start` to `target` in an **even** numbe
 
 ![](https://assets.leetcode.com/uploads/2018/10/12/knight.png)
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** start = [1,1], target = [2,2]
 

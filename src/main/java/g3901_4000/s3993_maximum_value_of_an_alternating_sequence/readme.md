@@ -16,7 +16,7 @@ A sequence of length 1 is considered alternating.
 
 Return the **maximum** possible element that can appear in any valid sequence.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** n = 4, s = 3, m = 5
 

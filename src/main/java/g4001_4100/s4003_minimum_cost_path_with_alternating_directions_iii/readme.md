@@ -23,7 +23,7 @@ After every move or wait, the action number increases by 1. Therefore, the requi
 
 Return the **minimum** total cost required to reach `(m - 1, n - 1)`.
 
-OriginalJava**Example 1:**
+**Example 1:**
 
 **Input:** m = 2, n = 2, penalty = [[5,3],[1,4]]
 
