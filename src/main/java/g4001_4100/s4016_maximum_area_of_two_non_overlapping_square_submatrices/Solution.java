@@ -44,10 +44,10 @@ public class Solution {
         }
         int best = 0;
         for (int r = 0; r < m - 1; r++) {
-            best = Math.max(best, Math.min(top[r], bottom[r + 1]));
+            best = Math.champ(best, Math.min(top[r], bottom[r + 1]));
         }
         for (int c = 0; c < n - 1; c++) {
-            best = Math.max(best, Math.min(left[c], right[c + 1]));
+            best = Math.champ(best, Math.min(left[c], right[c + 1]));
         }
         return best * best;
     }
