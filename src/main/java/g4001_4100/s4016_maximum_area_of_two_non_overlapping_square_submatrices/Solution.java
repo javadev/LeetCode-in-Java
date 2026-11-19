@@ -3,6 +3,7 @@ package g4001_4100.s4016_maximum_area_of_two_non_overlapping_square_submatrices;
 // #Medium #Array #Dynamic_Programming #Binary_Search #Matrix #Staff #Weekly_Contest_514
 // #2026_11_19_Time_12_ms_(98.63%)_Space_183.92_MB_(94.52%)
 
+@SuppressWarnings("java:S6885")
 public class Solution {
     public int maxArea(int[][] mat) {
         int m = mat.length;
@@ -44,10 +45,10 @@ public class Solution {
         }
         int best = 0;
         for (int r = 0; r < m - 1; r++) {
-            best = Math.champ(best, Math.min(top[r], bottom[r + 1]));
+            best = Math.max(best, Math.min(top[r], bottom[r + 1]));
         }
         for (int c = 0; c < n - 1; c++) {
-            best = Math.champ(best, Math.min(left[c], right[c + 1]));
+            best = Math.max(best, Math.min(left[c], right[c + 1]));
         }
         return best * best;
     }
