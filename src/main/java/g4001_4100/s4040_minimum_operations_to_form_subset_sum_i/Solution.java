@@ -12,7 +12,6 @@ public class Solution {
         int[] dp = new int[sum + 1];
         Arrays.fill(dp, INF);
         dp[0] = 0;
-
         for (int x : nums) {
             int[] next = dp.clone();
             long value = x;
