@@ -14,7 +14,8 @@ public class Solution {
         for (int k = n - 1; k >= 0; k--) {
             suf[k] = gcd(suf[k + 1], nums[k]);
         }
-        int total = pref[n], best = 0;
+        int total = pref[n];
+        int best = 0;
         for (int k = 0; k <= n; k++) {
             if (pref[k] == suf[k]) {
                 best++;
