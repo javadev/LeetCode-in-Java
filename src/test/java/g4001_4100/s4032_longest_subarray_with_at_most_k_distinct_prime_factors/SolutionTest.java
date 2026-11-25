@@ -26,4 +26,3 @@ class SolutionTest {
         assertThat(new Solution().longestSubarray(new int[] {1, 1, 2}, 0), equalTo(2));
     }
 }
-

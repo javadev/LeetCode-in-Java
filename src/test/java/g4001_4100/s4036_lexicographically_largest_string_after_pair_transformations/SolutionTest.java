@@ -7,12 +7,13 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void largestString() {
-        assertArrayEquals(new String[] {"a", "ba", ""}, new Solution().largestString(new int[] {1, 3, 0}));
+        assertArrayEquals(
+                new String[] {"a", "ba", ""}, new Solution().largestString(new int[] {1, 3, 0}));
     }
 
     @Test
     void largestString2() {
-        assertArrayEquals(new String[] {"za"}, new Solution().largestString(new int[] {(1 << 25) | 1}));
+        assertArrayEquals(
+                new String[] {"za"}, new Solution().largestString(new int[] {(1 << 25) | 1}));
     }
 }
-

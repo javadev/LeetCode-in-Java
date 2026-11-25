@@ -26,4 +26,3 @@ class SolutionTest {
         assertThat(new Solution().countRotations("abab", 1), equalTo(0));
     }
 }
-

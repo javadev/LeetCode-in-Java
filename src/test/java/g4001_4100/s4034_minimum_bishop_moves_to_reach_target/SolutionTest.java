@@ -26,4 +26,3 @@ class SolutionTest {
         assertThat(new Solution().minBishopMoves(new int[] {0, 0}, new int[] {1, 0}), equalTo(-1));
     }
 }
-

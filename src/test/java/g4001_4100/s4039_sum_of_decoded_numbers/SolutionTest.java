@@ -21,4 +21,3 @@ class SolutionTest {
         assertThat(new Solution().sumDecoded(new long[] {}), equalTo(0));
     }
 }
-

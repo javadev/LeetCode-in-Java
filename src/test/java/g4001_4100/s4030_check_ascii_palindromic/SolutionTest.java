@@ -26,7 +26,3 @@ class SolutionTest {
         assertThat(new Solution().isPalindromic("ab"), equalTo(false));
     }
 }
-
-
-
-

@@ -21,4 +21,3 @@ class SolutionTest {
         assertThat(new Solution().countSpecialIntegers(new int[] {}), equalTo(0));
     }
 }
-

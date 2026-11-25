@@ -41,4 +41,3 @@ class SolutionTest {
         assertThat(new Solution().kthDigit(20), equalTo(1));
     }
 }
-

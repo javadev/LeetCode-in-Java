@@ -26,4 +26,3 @@ class SolutionTest {
         assertThat(new Solution().elevatorRequests(10, 5, new int[] {7, 9}), equalTo(6L));
     }
 }
-

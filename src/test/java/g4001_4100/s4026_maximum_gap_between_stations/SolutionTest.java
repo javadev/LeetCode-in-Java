@@ -21,4 +21,3 @@ class SolutionTest {
         assertThat(new Solution().maximumGap("a", "anything"), equalTo(0));
     }
 }
-

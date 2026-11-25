@@ -8,7 +8,8 @@ import org.junit.jupiter.api.Test;
 class SolutionTest {
     @Test
     void minPenalty() {
-        assertThat(new Solution().minPenalty(10, new int[] {3, 5}, new int[] {1, 2, 8}), equalTo(2));
+        assertThat(
+                new Solution().minPenalty(10, new int[] {3, 5}, new int[] {1, 2, 8}), equalTo(2));
     }
 
     @Test
@@ -21,4 +22,3 @@ class SolutionTest {
         assertThat(new Solution().minPenalty(10, new int[] {3}, new int[] {13, 18}), equalTo(7));
     }
 }
-

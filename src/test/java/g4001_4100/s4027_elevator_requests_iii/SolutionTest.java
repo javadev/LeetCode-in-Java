@@ -13,7 +13,8 @@ class SolutionTest {
 
     @Test
     void elevatorRequests2() {
-        assertThat(new Solution().elevatorRequests(10, 5, new int[][] {{0, 5}, {0, 5}}), equalTo(0L));
+        assertThat(
+                new Solution().elevatorRequests(10, 5, new int[][] {{0, 5}, {0, 5}}), equalTo(0L));
     }
 
     @Test
@@ -21,4 +22,3 @@ class SolutionTest {
         assertThat(new Solution().elevatorRequests(10, 5, new int[][] {{0, 7}}), equalTo(2L));
     }
 }
-

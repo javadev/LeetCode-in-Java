@@ -21,4 +21,3 @@ class SolutionTest {
         assertThat(new Solution().maxValidSplits(new int[] {5}), equalTo(0));
     }
 }
-

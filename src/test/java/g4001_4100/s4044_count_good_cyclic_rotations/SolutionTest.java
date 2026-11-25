@@ -26,4 +26,3 @@ class SolutionTest {
         assertThat(new Solution().countGoodRotations(new int[] {7}), equalTo(0));
     }
 }
-

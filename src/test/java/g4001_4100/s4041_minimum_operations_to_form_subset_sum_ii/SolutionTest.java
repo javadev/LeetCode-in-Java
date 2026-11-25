@@ -26,4 +26,3 @@ class SolutionTest {
         assertThat(new Solution().minOperations(new int[] {}, 1), equalTo(-1));
     }
 }
-
