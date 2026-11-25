@@ -3,6 +3,7 @@ package g4001_4100.s4037_maximum_valid_split_positions_ii;
 // #Hard #Array #Math #Enumeration #Number_Theory #Principal #Biweekly_Contest_190
 // #2026_11_25_Time_12_ms_(95.65%)_Space_120.92_MB_(69.57%)
 
+@SuppressWarnings("java:S135")
 public class Solution {
     public int maxValidSplits(int[] nums) {
         int n = nums.length;

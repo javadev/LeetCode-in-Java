@@ -4,7 +4,7 @@ package g4001_4100.s4023_elevator_requests_ii;
 // #2026_11_25_Time_26_ms_(100.00%)_Space_69.24_MB_(79.07%)
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 @SuppressWarnings("java:S1172")
@@ -19,8 +19,8 @@ public class Solution {
                 r.add(x - start);
             }
         }
-        Collections.sort(l);
-        Collections.sort(r);
+        l.sort(Comparator.naturalOrder());
+        r.sort(Comparator.naturalOrder());
         int a = l.size();
         int b = r.size();
         int t = a + b;
