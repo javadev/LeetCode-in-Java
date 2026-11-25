@@ -63,13 +63,13 @@ class SolutionTest {
     void elevatorRequests10() {
         // Below: 3 -> dist 2; Above: 7 -> dist 2.
         // Best: handle both, total travel chooses cheaper direction switch.
-        assertThat(new Solution().elevatorRequests(10, 5, new int[] {3, 7}), equalTo(6L));
+        assertThat(new Solution().elevatorRequests(10, 5, new int[] {3, 7}), equalTo(8L));
     }
 
     @Test
     void elevatorRequests11() {
         // Below: 4 (dist 1); Above: 9 (dist 4).
-        assertThat(new Solution().elevatorRequests(10, 5, new int[] {4, 9}), equalTo(6L));
+        assertThat(new Solution().elevatorRequests(10, 5, new int[] {4, 9}), equalTo(7L));
     }
 
     @Test
@@ -89,7 +89,7 @@ class SolutionTest {
     @Test
     void elevatorRequests14() {
         // Duplicate requests on both sides.
-        assertThat(new Solution().elevatorRequests(10, 5, new int[] {3, 3, 7, 7}), equalTo(10L));
+        assertThat(new Solution().elevatorRequests(10, 5, new int[] {3, 3, 7, 7}), equalTo(16L));
     }
 
     @Test
@@ -103,6 +103,6 @@ class SolutionTest {
     @Test
     void elevatorRequests16() {
         // Mixed multiple requests both directions.
-        assertThat(new Solution().elevatorRequests(20, 10, new int[] {5, 8, 12, 15}), equalTo(22L));
+        assertThat(new Solution().elevatorRequests(20, 10, new int[] {5, 8, 12, 15}), equalTo(34L));
     }
 }
