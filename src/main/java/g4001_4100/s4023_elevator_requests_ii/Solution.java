@@ -46,7 +46,7 @@ public class Solution {
         }
         for (int i = 1; i <= a; i++) {
             for (int j = 1; j <= b; j++) {
-                long w = t - i - j + 1l;
+                long w = t - i - j + 1L;
                 long p = inf;
                 if (i >= 2) {
                     p = dl[i - 1][j] + (x[i] - x[i - 1]) * w;
