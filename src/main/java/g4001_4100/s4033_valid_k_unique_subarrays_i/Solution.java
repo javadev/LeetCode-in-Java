@@ -17,7 +17,6 @@ public class Solution {
             maxNum = Math.max(maxNum, nums[i]);
             prefixXor[i + 1] = prefixXor[i] ^ nums[i];
         }
-
         int[][] sortedQueries = new int[queries.length][];
         int queriesCount = this.sortQueries(nums, k, prefixXor, queries, sortedQueries);
         boolean[] result = new boolean[queries.length];
@@ -45,7 +44,6 @@ public class Solution {
             }
             result[query[2]] = countDistinct == k && countOdd == 0;
         }
-
         return result;
     }
 
