@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+@SuppressWarnings("java:S1172")
 public class Solution {
     public long elevatorRequests(int n, int start, int[] requests) {
         List<Integer> l = new ArrayList<>();
@@ -45,7 +46,7 @@ public class Solution {
         }
         for (int i = 1; i <= a; i++) {
             for (int j = 1; j <= b; j++) {
-                long w = t - i - j + 1;
+                long w = t - i - j + 1l;
                 long p = inf;
                 if (i >= 2) {
                     p = dl[i - 1][j] + (x[i] - x[i - 1]) * w;

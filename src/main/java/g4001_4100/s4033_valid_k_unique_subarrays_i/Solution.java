@@ -69,7 +69,7 @@ public class Solution {
                     if (o1[3] == o2[3]) {
                         return o1[3] % 2 == 0 ? o1[1] - o2[1] : o2[1] - o1[1];
                     } else {
-                        return o1[3] - o2[3];
+                        return Integer.compare(o1[3], o2[3]);
                     }
                 });
         return queriesCount;
