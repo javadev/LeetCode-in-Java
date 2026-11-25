@@ -13,7 +13,6 @@ public class Solution {
         for (int i : arrivalTime) {
             int r = i % period;
             int curr = period - r;
-
             if (r >= greenMax) {
                 ans = Math.max(ans, curr);
             }
