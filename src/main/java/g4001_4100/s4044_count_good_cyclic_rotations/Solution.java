@@ -20,7 +20,9 @@ public class Solution {
             rightsum = rightsum - nums[right] + nums[left];
             left++;
             right++;
-            if (leftsum != rightsum) count++;
+            if (leftsum != rightsum) {
+                count++;
+            }
         }
         return count;
     }

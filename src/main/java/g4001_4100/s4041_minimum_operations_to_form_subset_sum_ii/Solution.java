@@ -21,7 +21,9 @@ public class Solution {
                 int t = v;
                 int m = 0;
                 while (t <= sum) {
-                    if (k + m < cost[t]) cost[t] = k + m;
+                    if (k + m < cost[t]) {
+                        cost[t] = k + m;
+                    }
                     t *= 2;
                     m++;
                 }
@@ -36,7 +38,9 @@ public class Solution {
                 }
                 for (int j = sum; j >= t; j--) {
                     int cur = dp[j - t] + c;
-                    if (cur < ndp[j]) ndp[j] = cur;
+                    if (cur < ndp[j]) {
+                        ndp[j] = cur;
+                    }
                 }
             }
             dp = ndp;
