@@ -12,6 +12,10 @@ public class Solution {
                 same++;
             }
         }
-        return k == same - 1 ? same : k == same ? n - same : 0;
+        if (k == same - 1) {
+            return same;
+        } else {
+            return k == same ? n - same : 0;
+        }
     }
 }

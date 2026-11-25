@@ -3,9 +3,9 @@ package g4001_4100.s4027_elevator_requests_iii;
 // #Hard #Array #Dynamic_Programming #Sorting #Bit_Manipulation #Bitmask #Senior_Staff
 // #Weekly_Contest_515 #2026_11_25_Time_3_ms_(98.11%)_Space_44.46_MB_(92.45%)
 
+@SuppressWarnings("java:S1172")
 public class Solution {
     public long elevatorRequests(int n, int start, int[][] requests) {
-        int m = requests.length;
         return solve(start, 0L, 0, requests);
     }
 

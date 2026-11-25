@@ -5,16 +5,16 @@ package g4001_4100.s4024_nearest_available_drone;
 
 public class Solution {
     public int nearestDrone(int[][] drones, int[] target) {
-        int ri = -1;
-        for (int i = 0, l = drones.length, x = target[0], y = target[1], rv = Integer.MAX_VALUE, d;
-                i < l;
-                i++) {
-            d = Math.abs(x - drones[i][0]) + Math.abs(y - drones[i][1]);
-            if (d < rv && d <= drones[i][2]) {
-                rv = d;
-                ri = i;
+        int min = Integer.MAX_VALUE;
+        int idx = -1;
+        for (int i = 0; i < drones.length; i++) {
+            int[] d = drones[i];
+            int dist = Math.abs(target[0] - d[0]) + Math.abs(target[1] - d[1]);
+            if (dist <= d[2] && min > dist) {
+                min = dist;
+                idx = i;
             }
         }
-        return ri;
+        return idx;
     }
 }
