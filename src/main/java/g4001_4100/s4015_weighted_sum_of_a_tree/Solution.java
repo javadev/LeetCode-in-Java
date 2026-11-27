@@ -1,6 +1,6 @@
 package g4001_4100.s4015_weighted_sum_of_a_tree;
 
-// #Medium #Array #Tree #Senior #Weekly_Contest_514 #Depth_First_Search
+// #Medium #Array #Depth_First_Search #Tree #Senior #Weekly_Contest_514
 // #2026_11_19_Time_5_ms_(100.00%)_Space_107.29_MB_(94.38%)
 
 public class Solution {
